@@ -44,4 +44,5 @@ def decorate(proposal: dict, overlay: dict[str, dict]) -> dict:
     out["sources"] = _sources(proposal, entry)
     out["pending"] = stages.is_pending(proposal)
     out["stage"] = stages.stage_of(proposal, used=bool(used))
+    out["outcome"] = stages.outcome_of(proposal)
     return out

@@ -32,6 +32,10 @@ def _read_funds(path: Path) -> list[dict]:
     return payload
 
 
+def _fund_slug(label: str) -> str:
+    return (label or "unknown").strip().lower().replace(" ", "-")
+
+
 def harvest(cache_dir: Path = CACHE_DIR) -> None:
     cache_dir = Path(cache_dir)
     proposals = api.fetch_all_proposals()
@@ -56,25 +60,54 @@ def build(
     known = roster.load_roster(data_dir / "roster.json")
     ov = overlay.load_overlay(data_dir / "overlay.json")
 
-    matched = [p for p in raw if known.match(p)]
-    decorated = [overlay.decorate(p, ov) for p in matched]
-    # 一次情報リンクを持たないものは出力しない（Global Constraints）
-    decorated = [d for d in decorated if d["sources"]]
+    decorated = []
+    for p in raw:
+        d = overlay.decorate(p, ov)
+        # 一次情報リンクを持たないものは出力しない（Global Constraints）
+        if not d["sources"]:
+            continue
+        d["jp"] = known.match(p)
+        decorated.append(d)
 
     labels = profiles.fund_order(funds)
     profs = profiles.build_profiles(decorated, labels)
 
+    by_fund: dict[str, list[dict]] = {}
+    for d in decorated:
+        label = (d.get("fund") or {}).get("label") or "unknown"
+        by_fund.setdefault(label, []).append(d)
+
+    prop_dir = out_dir / "proposals"
+    index = []
+    seen_labels = set()
+    for label in labels:
+        rows = by_fund.get(label, [])
+        slug = _fund_slug(label)
+        _write(prop_dir / f"{slug}.json", rows)
+        index.append({"fund": label, "file": f"{slug}.json", "count": len(rows)})
+        seen_labels.add(label)
+    for label in sorted(set(by_fund) - seen_labels):
+        rows = by_fund[label]
+        slug = _fund_slug(label)
+        _write(prop_dir / f"{slug}.json", rows)
+        index.append({"fund": label, "file": f"{slug}.json", "count": len(rows)})
+    _write(prop_dir / "index.json", index)
+
     counts = Counter(str(d["stage"]) for d in decorated)
+    outcome_counts = Counter(d["outcome"] for d in decorated if d["outcome"])
     meta = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "total_proposals": len(raw),
-        "roster_proposals": len(decorated),
+        "proposers": len(profs),
+        "jp_proposals": sum(1 for d in decorated if d["jp"]),
         "funds": labels,
         "stage_counts": {str(s): counts.get(str(s), 0) for s in (1, 2, 3, 4)},
         "pending_used": sum(1 for d in decorated if d["stage"] >= 2 and d["used"] is None),
+        "outcome_counts": {
+            name: outcome_counts.get(name, 0) for name in ("withdrawn", "terminated", "paused")
+        },
     }
 
-    _write(out_dir / "proposals.json", decorated)
     _write(out_dir / "profiles.json", profs)
     _write(out_dir / "meta.json", meta)
     return {"proposals": decorated, "profiles": profs, "meta": meta}

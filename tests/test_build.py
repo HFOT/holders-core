@@ -46,25 +46,56 @@ def make_tree(tmp_path):
     return cache, data, out
 
 
-def test_build_keeps_only_roster_matches(tmp_path):
+def test_build_keeps_all_proposals_not_just_roster(tmp_path):
     cache, data, out = make_tree(tmp_path)
     result = build.build(cache, data, out)
-    assert [p["id"] for p in result["proposals"]] == ["p1"]
+    assert sorted(p["id"] for p in result["proposals"]) == ["p1", "p2"]
 
 
-def test_build_writes_three_files(tmp_path):
+def test_roster_match_becomes_a_tag(tmp_path):
+    cache, data, out = make_tree(tmp_path)
+    rows = {p["id"]: p for p in build.build(cache, data, out)["proposals"]}
+    assert rows["p1"]["jp"] is True
+    assert rows["p2"]["jp"] is False
+
+
+def test_proposals_are_sharded_by_fund(tmp_path):
     cache, data, out = make_tree(tmp_path)
     build.build(cache, data, out)
-    for name in ("proposals.json", "profiles.json", "meta.json"):
-        assert (out / name).exists()
+    index = json.loads((out / "proposals" / "index.json").read_text(encoding="utf-8"))
+    by_fund = {e["fund"]: e for e in index}
+    assert by_fund["Fund 13"]["count"] == 2
+    assert by_fund["Fund 15"]["count"] == 0
+    rows = json.loads(
+        (out / "proposals" / by_fund["Fund 13"]["file"]).read_text(encoding="utf-8")
+    )
+    assert sorted(r["id"] for r in rows) == ["p1", "p2"]
+
+
+def test_build_writes_index_and_profiles_and_meta(tmp_path):
+    cache, data, out = make_tree(tmp_path)
+    build.build(cache, data, out)
+    assert (out / "proposals" / "index.json").exists()
+    assert (out / "profiles.json").exists()
+    assert (out / "meta.json").exists()
+    assert not (out / "proposals.json").exists()
+
+
+def test_meta_reports_jp_and_outcomes(tmp_path):
+    cache, data, out = make_tree(tmp_path)
+    meta = build.build(cache, data, out)["meta"]
+    assert meta["jp_proposals"] == 1
+    assert meta["proposers"] == 2
+    assert meta["outcome_counts"] == {"withdrawn": 0, "terminated": 0, "paused": 0}
+    assert "roster_proposals" not in meta
 
 
 def test_meta_counts(tmp_path):
     cache, data, out = make_tree(tmp_path)
     meta = build.build(cache, data, out)["meta"]
     assert meta["total_proposals"] == 2
-    assert meta["roster_proposals"] == 1
-    assert meta["stage_counts"] == {"1": 0, "2": 0, "3": 1, "4": 0}
+    assert meta["jp_proposals"] == 1
+    assert meta["stage_counts"] == {"1": 1, "2": 0, "3": 1, "4": 0}
     assert meta["pending_used"] == 1
     assert meta["funds"] == ["Fund 15", "Fund 14", "Fund 13"]
 
@@ -81,7 +112,9 @@ def test_proposal_without_sources_is_dropped(tmp_path):
     raw = json.loads((cache / "proposals_raw.json").read_text(encoding="utf-8"))
     raw[0]["link"] = None
     write(cache / "proposals_raw.json", raw)
-    assert build.build(cache, data, out)["proposals"] == []
+    ids = [p["id"] for p in build.build(cache, data, out)["proposals"]]
+    assert "p1" not in ids
+    assert ids == ["p2"]
 
 
 def test_candidates_excludes_already_rostered(tmp_path):

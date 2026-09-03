@@ -68,3 +68,13 @@ def test_note_defaults_to_empty_string():
 def test_original_keys_are_preserved():
     d = overlay.decorate(prop(title="Hello"), {})
     assert d["title"] == "Hello"
+
+
+def test_outcome_is_carried():
+    d = overlay.decorate(prop(funding_status="funded", status="terminated"), {})
+    assert d["outcome"] == "terminated"
+    assert d["stage"] == 2
+
+
+def test_outcome_is_none_for_ordinary_proposal():
+    assert overlay.decorate(prop(), {})["outcome"] is None

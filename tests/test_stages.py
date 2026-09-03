@@ -44,3 +44,42 @@ def test_used_overlay_cannot_skip_delivery():
 
 def test_labels_cover_all_stages():
     assert set(stages.STAGE_LABELS) == {1, 2, 3, 4}
+
+
+def test_leftover_is_stage_2():
+    assert stages.stage_of(p(funding_status="leftover", status="in_progress")) == 2
+
+
+def test_leftover_complete_is_stage_3():
+    assert stages.stage_of(p(funding_status="leftover", status="complete")) == 3
+
+
+def test_outcome_none_by_default():
+    assert stages.outcome_of(p()) is None
+
+
+def test_outcome_withdrawn_from_funding_status():
+    assert stages.outcome_of(p(funding_status="withdrawn")) == "withdrawn"
+
+
+def test_outcome_withdrawn_from_status():
+    assert stages.outcome_of(p(status="withdrawn")) == "withdrawn"
+
+
+def test_outcome_terminated():
+    assert stages.outcome_of(p(funding_status="funded", status="terminated")) == "terminated"
+
+
+def test_outcome_paused():
+    assert stages.outcome_of(p(funding_status="funded", status="paused")) == "paused"
+
+
+def test_terminated_keeps_stage_2():
+    # outcome は段階を上書きしない。②に到達した事実を消さない
+    prop = p(funding_status="funded", status="terminated")
+    assert stages.stage_of(prop) == 2
+    assert stages.outcome_of(prop) == "terminated"
+
+
+def test_outcome_labels_cover_all_values():
+    assert set(stages.OUTCOME_LABELS) == {"withdrawn", "terminated", "paused"}

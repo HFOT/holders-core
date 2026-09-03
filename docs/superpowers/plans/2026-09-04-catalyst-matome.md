@@ -18,7 +18,8 @@ spec: `C:\holders-core\docs\superpowers\specs\2026-09-04-holders-core-design.md`
 - **成果の型（技術型 / 信頼型）に優劣を付けない。** 並べるだけ
 - **段階①〜④の番号を全項目に付す**
 - **④（使われているか）は API に存在しない。** 手動 overlay でのみ付与し、未記入は「保留」として出す。推測で埋めない
-- **日本語圏の判定は名簿（roster）による。** 本文言語での自動判定はしない（全提案が英語で書かれているため機能しない）
+- **対象は全件（撤回 2026-09-04）。** 当初「日本語圏に絞る」としていたが撤回した。理由は (1) 原則9「一点に執着しない」に自分で反していた (2) 実測で規模の問題が消えた（表示用記録498B/件、Fund分割で最大797KB） (3) 絞っていたら `leftover` 29件・`terminated`/`paused` 8件を見落としていた
+- **名簿（roster）はゲートではなくタグ。** 日本語圏は絞り込みの一つ。本文言語での自動判定はしない（全提案が英語で書かれているため機能しない）
 - **月次の編集作業を発生させる機能を作らない。** 更新は Fund 単位
 - **API は 1 リクエストにつき 0.3 秒以上あける。** クロールは 475 ページ
 
@@ -30,9 +31,13 @@ spec: `C:\holders-core\docs\superpowers\specs\2026-09-04-holders-core-design.md`
 | 総件数 | 11,385 件 / `per_page` は 24 固定（変更不可・指定すると 500） |
 | 総ページ | 475 |
 | 効くパラメータ | `page`, `search` のみ（`fund` / `status` / `per_page` は無視される） |
-| funds | `https://www.catalystexplorer.com/api/funds` 配列を直接返す（`data` ラッパー無し）。Fund 2〜15 |
-| `funding_status` | `not_approved` / `funded` / `over_budget` / `pending` |
-| `status` | `unfunded` / `pending` / `in_progress` / `complete` |
+| funds | `https://www.catalystexplorer.com/api/funds` `{"data": [...], "links", "meta"}` の封筒付きで返る。Fund 2〜15（14件）。**訂正 2026-09-04: 当初「配列を直接返す」と記載したが誤り。`api.fetch_funds` が封筒を剥がして list を返す** |
+| `funding_status` | 全11,385件の実測: `not_approved` 6638 / `funded` 2188 / `over_budget` 1997 / `pending` 518 / **`leftover` 29** / `withdrawn` 5 / 欠損 10 |
+| `status` | `unfunded` 8557 / `complete` 1488 / `in_progress` 805 / `pending` 524 / **`terminated` 4** / **`paused` 4** / `onboarding` 2 / `withdrawn` 1 |
+| **`leftover` の意味** | **実質「採択」。29件すべて `amount_received > 0`、うち15件が `complete`。②として扱う** |
+| `terminated` / `paused` | 全件 `funding_status: funded`。②に到達済み。「静かな消滅」の実データ |
+| 規模 | 提案者 5,699名 / 全件が一次情報リンクを持つ（sources フィルタは1件も落とさない） |
+| 出力サイズ | 表示用記録 498B/件、全体5MB。Fund分割で最大 797KB（Fund 13, 1639件） |
 
 proposal の主な項目: `id`(uuid) / `title` / `slug` / `amount_requested` / `amount_received` / `status` / `funding_status` / `funded_at` / `ideascale_link` / `projectcatalyst_io_link` / `link` / `users`(配列) / `fund`{`label`,`title`,`id`} / `campaign`{`title`}
 
