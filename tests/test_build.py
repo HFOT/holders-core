@@ -154,3 +154,15 @@ def test_build_unwraps_funds_envelope_from_cache(tmp_path):
     )
     meta = build.build(cache, data, out)["meta"]
     assert meta["funds"] == ["Fund 15", "Fund 14", "Fund 13"]
+
+
+def test_profiles_file_drops_proposal_ids_and_tags_jp(tmp_path):
+    cache, data, out = make_tree(tmp_path)
+    result = build.build(cache, data, out)
+    written = json.loads((out / "profiles.json").read_text(encoding="utf-8"))
+    by_id = {r["user_id"]: r for r in written}
+    assert "proposal_ids" not in by_id["u1"]
+    assert by_id["u1"]["jp"] is True
+    assert by_id["u9"]["jp"] is False
+    # 戻り値には残っている
+    assert "proposal_ids" in result["profiles"][0]

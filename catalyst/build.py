@@ -64,6 +64,26 @@ def _display(row: dict) -> dict:
     return out
 
 
+PROFILE_DROP_FIELDS = ("proposal_ids",)
+
+
+def _profile_rows(profs: list[dict], decorated: list[dict]) -> list[dict]:
+    """書き出し用のプロフィール。proposal_ids を落とし、jp タグを付ける。"""
+    jp_users: set[str] = set()
+    for d in decorated:
+        if not d.get("jp"):
+            continue
+        for u in d.get("users") or []:
+            if u.get("id"):
+                jp_users.add(u["id"])
+    rows = []
+    for p in profs:
+        row = {k: v for k, v in p.items() if k not in PROFILE_DROP_FIELDS}
+        row["jp"] = p["user_id"] in jp_users
+        rows.append(row)
+    return rows
+
+
 def harvest(cache_dir: Path = CACHE_DIR) -> None:
     cache_dir = Path(cache_dir)
     proposals = api.fetch_all_proposals()
@@ -136,7 +156,7 @@ def build(
         },
     }
 
-    _write(out_dir / "profiles.json", profs)
+    _write(out_dir / "profiles.json", _profile_rows(profs, decorated))
     _write(out_dir / "meta.json", meta)
     return {"proposals": decorated, "profiles": profs, "meta": meta}
 
