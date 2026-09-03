@@ -51,4 +51,7 @@ def fetch_all_proposals(**kw: Any) -> list[dict]:
 
 
 def fetch_funds(*, fetch: Callable[..., Any] = fetch_json) -> list[dict]:
-    return fetch(FUNDS_URL)
+    payload = fetch(FUNDS_URL)
+    if isinstance(payload, dict):
+        return payload.get("data") or []
+    return payload

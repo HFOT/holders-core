@@ -47,3 +47,18 @@ def test_fetch_funds_returns_bare_list():
         return [{"label": "Fund 15"}, {"label": "Fund 14"}]
 
     assert api.fetch_funds(fetch=fake_fetch) == [{"label": "Fund 15"}, {"label": "Fund 14"}]
+
+
+def test_fetch_funds_unwraps_data_envelope():
+    def fake_fetch(url, *, opener=None):
+        assert url == api.FUNDS_URL
+        return {"data": [{"label": "Fund 15"}], "links": {}, "meta": {}}
+
+    assert api.fetch_funds(fetch=fake_fetch) == [{"label": "Fund 15"}]
+
+
+def test_fetch_funds_missing_data_key_yields_empty_list():
+    def fake_fetch(url, *, opener=None):
+        return {"links": {}, "meta": {}}
+
+    assert api.fetch_funds(fetch=fake_fetch) == []
