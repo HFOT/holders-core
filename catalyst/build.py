@@ -36,6 +36,34 @@ def _fund_slug(label: str) -> str:
     return (label or "unknown").strip().lower().replace(" ", "-")
 
 
+DISPLAY_FIELDS = (
+    "id",
+    "title",
+    "stage",
+    "pending",
+    "used",
+    "outcome",
+    "outcome_type",
+    "note",
+    "sources",
+    "jp",
+    "funding_status",
+    "status",
+    "amount_requested",
+    "amount_received",
+)
+
+
+def _display(row: dict) -> dict:
+    """シャードに書く表示用レコード。生の長文フィールドは載せない。"""
+    out = {k: row.get(k) for k in DISPLAY_FIELDS}
+    out["fund"] = {"label": (row.get("fund") or {}).get("label")}
+    out["users"] = [
+        {"id": u.get("id"), "name": roster.display_name(u)} for u in (row.get("users") or [])
+    ]
+    return out
+
+
 def harvest(cache_dir: Path = CACHE_DIR) -> None:
     cache_dir = Path(cache_dir)
     proposals = api.fetch_all_proposals()
@@ -83,13 +111,13 @@ def build(
     for label in labels:
         rows = by_fund.get(label, [])
         slug = _fund_slug(label)
-        _write(prop_dir / f"{slug}.json", rows)
+        _write(prop_dir / f"{slug}.json", [_display(d) for d in rows])
         index.append({"fund": label, "file": f"{slug}.json", "count": len(rows)})
         seen_labels.add(label)
     for label in sorted(set(by_fund) - seen_labels):
         rows = by_fund[label]
         slug = _fund_slug(label)
-        _write(prop_dir / f"{slug}.json", rows)
+        _write(prop_dir / f"{slug}.json", [_display(d) for d in rows])
         index.append({"fund": label, "file": f"{slug}.json", "count": len(rows)})
     _write(prop_dir / "index.json", index)
 

@@ -72,6 +72,25 @@ def test_proposals_are_sharded_by_fund(tmp_path):
     assert sorted(r["id"] for r in rows) == ["p1", "p2"]
 
 
+def test_shards_carry_display_records_not_raw(tmp_path):
+    cache, data, out = make_tree(tmp_path)
+    raw = json.loads((cache / "proposals_raw.json").read_text(encoding="utf-8"))
+    raw[0]["content"] = "x" * 5000
+    raw[0]["problem"] = "y" * 5000
+    write(cache / "proposals_raw.json", raw)
+    build.build(cache, data, out)
+    index = json.loads((out / "proposals" / "index.json").read_text(encoding="utf-8"))
+    f13 = next(e for e in index if e["fund"] == "Fund 13")
+    rows = json.loads((out / "proposals" / f13["file"]).read_text(encoding="utf-8"))
+    row = next(r for r in rows if r["id"] == "p1")
+    assert "content" not in row
+    assert "problem" not in row
+    assert row["title"] == "Japanese Voter Survey"
+    assert row["fund"] == {"label": "Fund 13"}
+    assert row["users"] == [{"id": "u1", "name": "taro"}]
+    assert row["sources"] == ["https://x/p1"]
+
+
 def test_build_writes_index_and_profiles_and_meta(tmp_path):
     cache, data, out = make_tree(tmp_path)
     build.build(cache, data, out)
