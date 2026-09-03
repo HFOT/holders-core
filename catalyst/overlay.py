@@ -8,6 +8,12 @@ from . import stages
 
 PRIMARY_LINK_FIELDS = ("link", "ideascale_link", "projectcatalyst_io_link")
 
+ALLOWED_SCHEMES = ("http://", "https://")
+
+
+def is_safe_url(url: object) -> bool:
+    return isinstance(url, str) and url.strip().lower().startswith(ALLOWED_SCHEMES)
+
 
 def load_overlay(path: str | Path) -> dict[str, dict]:
     raw = json.loads(Path(path).read_text(encoding="utf-8"))
@@ -22,9 +28,11 @@ def _sources(proposal: dict, entry: dict) -> list[str]:
     urls: list[str] = []
     for field in PRIMARY_LINK_FIELDS:
         url = proposal.get(field)
-        if url:
+        if is_safe_url(url):
             urls.append(url)
-    urls.extend(entry.get("sources") or [])
+    for url in entry.get("sources") or []:
+        if is_safe_url(url):
+            urls.append(url)
     seen: set[str] = set()
     out: list[str] = []
     for u in urls:

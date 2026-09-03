@@ -78,3 +78,22 @@ def test_outcome_is_carried():
 
 def test_outcome_is_none_for_ordinary_proposal():
     assert overlay.decorate(prop(), {})["outcome"] is None
+
+
+def test_javascript_url_is_rejected():
+    p = prop(link="javascript:alert(1)", ideascale_link="https://ok/")
+    assert overlay.decorate(p, {})["sources"] == ["https://ok/"]
+
+
+def test_data_url_from_overlay_is_rejected():
+    d = overlay.decorate(prop(link="https://ok/"), {"p1": {"sources": ["data:text/html,x"]}})
+    assert d["sources"] == ["https://ok/"]
+
+
+def test_none_and_empty_overlay_sources_are_dropped():
+    d = overlay.decorate(prop(link="https://ok/"), {"p1": {"sources": [None, "", "https://b/"]}})
+    assert d["sources"] == ["https://ok/", "https://b/"]
+
+
+def test_proposal_with_only_unsafe_links_has_no_sources():
+    assert overlay.decorate(prop(link="javascript:alert(1)"), {})["sources"] == []

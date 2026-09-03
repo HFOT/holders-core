@@ -54,14 +54,16 @@ function filteredProposals() {
 
 function proposalHtml(d) {
   const hold = d.stage >= 2 && d.used === null;
-  const parts = [`<span class="stage s${d.stage}">${STAGE_TEXT[d.stage]}</span>`];
+  const parts = [`<span class="stage s${esc(d.stage)}">${STAGE_TEXT[d.stage]}</span>`];
   if (hold) parts.push(`<span class="hold">保留</span>`);
   if (d.outcome) parts.push(`<span class="oc">${esc(OUTCOMES[d.outcome] || d.outcome)}</span>`);
   if (d.jp) parts.push(`<span class="jp">日本語圏</span>`);
   if (d.outcome_type)
     parts.push(`<span class="type">${esc(TYPES[d.outcome_type] || d.outcome_type)}</span>`);
   const who = (d.users || []).map((u) => esc(u.name || "?")).join(", ");
+  const safe = (u) => typeof u === "string" && /^https?:\/\//i.test(u.trim());
   const links = (d.sources || [])
+    .filter(safe)
     .map((u, i) => `<a href="${esc(u)}" rel="noopener" target="_blank">一次情報 ${i + 1}</a>`)
     .join("");
   return `<li>
