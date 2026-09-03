@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Catalyst まとめ — holders CORE</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Catalyst まとめ<span class="sub">LEDGER</span></h1>
+  <p id="meta" class="meta">読み込み中…</p>
+  <p id="outcomes" class="meta"></p>
+  <p class="legend">
+    <span class="stage s1">① 提案</span>
+    <span class="stage s2">② 採択</span>
+    <span class="stage s3">③ 納品</span>
+    <span class="stage s4">④ 使用</span>
+    <span class="hold">保留 = ④が未記入</span>
+    <span class="oc">取り下げ / 打ち切り / 中断 は段階とは別の軸</span>
+  </p>
+</header>
+
+<nav class="tabs">
+  <button id="tab-proposals" class="tab on">提案</button>
+  <button id="tab-profiles" class="tab">提案者</button>
+</nav>
+
+<main>
+  <section id="view-proposals">
+    <div class="controls">
+      <label>Fund <select id="fund"></select></label>
+      <label>段階
+        <select id="stage">
+          <option value="">すべて</option>
+          <option value="1">① 提案</option>
+          <option value="2">② 採択</option>
+          <option value="3">③ 納品</option>
+          <option value="4">④ 使用</option>
+        </select>
+      </label>
+      <label>転帰
+        <select id="outcome">
+          <option value="">すべて</option>
+          <option value="withdrawn">取り下げ</option>
+          <option value="terminated">打ち切り</option>
+          <option value="paused">中断</option>
+        </select>
+      </label>
+      <label><input type="checkbox" id="jp-only"> 日本語圏のみ</label>
+      <input type="search" id="q" placeholder="タイトル・提案者で絞る">
+      <span id="count" class="count"></span>
+    </div>
+    <ul id="proposals" class="proposals"></ul>
+    <button id="more" class="more" hidden>さらに表示</button>
+  </section>
+
+  <section id="view-profiles" hidden>
+    <div class="controls">
+      <label><input type="checkbox" id="jp-only-p"> 日本語圏のみ</label>
+      <input type="search" id="qp" placeholder="提案者名で絞る">
+      <span id="countp" class="count"></span>
+    </div>
+    <table id="profiles">
+      <thead><tr>
+        <th>提案者</th><th>提案</th><th>採択</th><th>納品</th><th>使用</th>
+        <th>受領額</th><th>参加 Fund</th><th>形</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table>
+    <button id="morep" class="more" hidden>さらに表示</button>
+  </section>
+</main>
+
+<footer>
+  <p>数字はすべて Catalyst Explorer の公開データに由来する。④（使われているか）は API に存在しないため手動記録であり、未記入は「保留」と表示される。推測では埋めていない。</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
