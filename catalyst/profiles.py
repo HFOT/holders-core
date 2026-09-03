@@ -1,6 +1,8 @@
 """提案者ごとの集計。分類は件数から機械的に決まる記述子であって評価ではない。"""
 from __future__ import annotations
 
+from .roster import display_name
+
 PATTERNS = {
     "delivering": "納品あり",
     "fade_out": "採択後に静止",
@@ -27,7 +29,7 @@ def build_profiles(decorated: list[dict], fund_labels: list[str]) -> list[dict]:
                 uid,
                 {
                     "user_id": uid,
-                    "username": user.get("username") or "",
+                    "username": display_name(user),
                     "proposed": 0,
                     "funded": 0,
                     "delivered": 0,

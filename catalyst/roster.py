@@ -10,6 +10,11 @@ DEFAULT_KEYWORDS = ["japan", "japanese", "tokyo", "osaka", "nippon", "nihon"]
 SEARCH_FIELDS = ("title", "problem", "solution", "excerpt")
 
 
+def display_name(user: dict) -> str:
+    """提案者の表示名。API は username を埋めず name を使う。"""
+    return (user.get("name") or user.get("username") or "").strip()
+
+
 @dataclass
 class Roster:
     user_ids: set[str] = field(default_factory=set)
@@ -22,8 +27,11 @@ class Roster:
         for user in proposal.get("users") or []:
             if user.get("id") in self.user_ids:
                 return True
-            name = (user.get("username") or "").strip().lower()
+            name = display_name(user).lower()
             if name and name in self.usernames:
+                return True
+            alt = (user.get("username") or "").strip().lower()
+            if alt and alt in self.usernames:
                 return True
         return False
 

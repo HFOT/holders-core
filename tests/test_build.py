@@ -88,3 +88,17 @@ def test_candidates_excludes_already_rostered(tmp_path):
     cache, data, out = make_tree(tmp_path)
     got = build.candidates(cache, data)
     assert [c["id"] for c in got] == []
+
+
+def test_build_unwraps_funds_envelope_from_cache(tmp_path):
+    cache, data, out = make_tree(tmp_path)
+    write(
+        cache / "funds_raw.json",
+        {
+            "data": [{"label": "Fund 15"}, {"label": "Fund 14"}, {"label": "Fund 13"}],
+            "links": {},
+            "meta": {},
+        },
+    )
+    meta = build.build(cache, data, out)["meta"]
+    assert meta["funds"] == ["Fund 15", "Fund 14", "Fund 13"]

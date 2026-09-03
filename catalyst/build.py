@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import api, overlay, profiles, roster
+from .roster import display_name
 
 ROOT = Path(__file__).resolve().parent.parent
 CACHE_DIR = ROOT / "data" / "cache"
@@ -22,6 +23,13 @@ def _read(path: Path):
 def _write(path: Path, obj) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(obj, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def _read_funds(path: Path) -> list[dict]:
+    payload = _read(path)
+    if isinstance(payload, dict):
+        return payload.get("data") or []
+    return payload
 
 
 def harvest(cache_dir: Path = CACHE_DIR) -> None:
@@ -44,7 +52,7 @@ def build(
 ) -> dict:
     cache_dir, data_dir, out_dir = Path(cache_dir), Path(data_dir), Path(out_dir)
     raw = _read(cache_dir / "proposals_raw.json")
-    funds = _read(cache_dir / "funds_raw.json")
+    funds = _read_funds(cache_dir / "funds_raw.json")
     known = roster.load_roster(data_dir / "roster.json")
     ov = overlay.load_overlay(data_dir / "overlay.json")
 
@@ -73,13 +81,17 @@ def build(
 
 
 def main(argv: list[str]) -> int:
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except (AttributeError, OSError):
+        pass
     cmd = argv[1] if len(argv) > 1 else "build"
     if cmd == "harvest":
         harvest()
     elif cmd == "candidates":
         for c in candidates():
             users = ", ".join(
-                f"{u.get('username') or '?'}({u.get('id')})" for u in c.get("users") or []
+                f"{display_name(u) or '?'}({u.get('id')})" for u in c.get("users") or []
             )
             print(f"{c['fund']['label']}\t{c['title'][:60]}\t{users}")
     elif cmd == "build":

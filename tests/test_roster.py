@@ -24,6 +24,28 @@ def test_match_by_username_is_case_insensitive():
     assert r.match(prop(users=[{"id": "u9", "username": "TARO"}])) is True
 
 
+def test_match_by_name_field():
+    r = roster.Roster(user_ids=set(), usernames={"taro yamada"}, proposal_ids=set())
+    assert r.match(prop(users=[{"id": "u9", "name": "Taro Yamada"}])) is True
+
+
+def test_match_by_username_field_still_works_when_name_absent():
+    r = roster.Roster(user_ids=set(), usernames={"taro"}, proposal_ids=set())
+    assert r.match(prop(users=[{"id": "u9", "username": "taro"}])) is True
+
+
+def test_display_name_prefers_name_over_username():
+    assert roster.display_name({"name": "Taro Yamada", "username": "taro"}) == "Taro Yamada"
+
+
+def test_display_name_falls_back_to_username():
+    assert roster.display_name({"username": "taro"}) == "taro"
+
+
+def test_display_name_empty_for_neither():
+    assert roster.display_name({}) == ""
+
+
 def test_match_by_explicit_proposal_id():
     r = roster.Roster(user_ids=set(), usernames=set(), proposal_ids={"p42"})
     assert r.match(prop(pid="p42")) is True
