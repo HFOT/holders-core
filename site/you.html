@@ -99,12 +99,14 @@ DRep     この一票をチェーン全体の中でどう置くか</pre>
     </div>
 
     <p class="map-lead">この層の中心はここ。<strong>今のこのサイトは、ほとんどの属性に対して何も持っていない。</strong>
-      LEDGER は Catalyst まとめ1つだけ、MAP は薄い、SPO health と DRep terminal は未公開。それを正確に書く。</p>
+      LEDGER に組み込まれているのは Catalyst まとめ1つだけ、MAP は薄い。
+      分散と意思の計器は外部サイトとして公開されているが、このサイトの台帳には取り込んでいない。それを正確に書く。</p>
 
     <ul class="map-rules">
       <li>枠の線は状態を表す。実線＝このサイトに材料がある／破線＝今このサイトには無い／点線＝このサイトでは扱わない。</li>
       <li>線種は優劣ではない。無いことも情報なので、あるものと同じ濃さで書く。</li>
-      <li>外部サイトは薦めない。ここに無いものは、ここに無いとだけ書く。</li>
+      <li>外部サイトを比較したり薦めたりはしない。ここに無いものは、ここに無いとだけ書く。
+        ただしこのサイト自身の計器が別のサイトで公開されている場合は、その所在を書く。</li>
     </ul>
 
     <ul class="have-l">
@@ -115,7 +117,7 @@ DRep     この一票をチェーン全体の中でどう置くか</pre>
           <p class="have-k">今このサイトにあるもの</p>
           <p class="have-v">Catalyst の提案・採択・納品の記録（<a href="catalyst.html">LEDGER</a>）。誰が何を納めたかを確認できる。</p>
           <p class="have-k">無いもの</p>
-          <p class="have-v">投票中の議案一覧、委任先の比較。DRep terminal が未公開のため無い。</p>
+          <p class="have-v">投票中の議案一覧、委任先の比較。<a href="https://hfot.github.io/drep-terminal-v6/" target="_blank" rel="noopener noreferrer">DRep Governance Terminal</a> は外部サイトとして公開されているが、このサイトには取り込んでいない。</p>
         </div>
       </li>
 
@@ -163,9 +165,11 @@ DRep     この一票をチェーン全体の中でどう置くか</pre>
         <p class="have-n">信念型</p>
         <div class="have-b">
           <p class="have-k">今このサイトにあるもの</p>
-          <p class="have-v">分散の実態を測る材料。ただし三計器のうち1つしか接続されていない。</p>
+          <p class="have-v">分散の実態を測る材料。分散の計器は
+            <a href="https://hfot.github.io/cardano-relay-health/" target="_blank" rel="noopener noreferrer">Relay Health Ranking</a>と<a href="https://hfot.github.io/spo-onchain-alive/" target="_blank" rel="noopener noreferrer">SPO Onchain Alive</a>、
+            意思の計器は<a href="https://hfot.github.io/drep-terminal-v6/" target="_blank" rel="noopener noreferrer">DRep Governance Terminal</a>として、いずれも外部サイトで公開されている。</p>
           <p class="have-k">無いもの</p>
-          <p class="have-v">SPO health（未公開）と DRep terminal（未公開）。</p>
+          <p class="have-v">この二つをこのサイトの台帳に取り込んだもの。三計器のうち本体に組み込まれているのは金の計器だけで、分散と意思は別のサイトを開いて読むことになる。</p>
         </div>
       </li>
 
@@ -243,9 +247,10 @@ DRep     この一票をチェーン全体の中でどう置くか</pre>
 
     <h3 class="map-h3">材料の対応表</h3>
     <p class="map-lead">六つとも揃う場所が今どこにも無い、というのがこのサイトの出発点だが、
-      <strong>このサイト自身もまだ揃っていない。六つの材料に対して、供給できている層は3つ。</strong>
-      MAP／TIDE、MAP／FUEL、LEDGER／Catalyst まとめ。この3つで六つのうち四つの問いを埋め、
-      残る二つ（分散の実態・過去の同種の提案）には材料が無い。</p>
+      <strong>このサイト自身もまだ揃っていない。六つの材料に対して、このサイトが供給できている層は3つ。</strong>
+      MAP／TIDE、MAP／FUEL、LEDGER／Catalyst まとめ。この3つで六つのうち四つの問いを埋める。
+      五つめ（分散の実態）は外部サイトで読めるが、このサイトには取り込んでいない。
+      残る一つ（過去の同種の提案）には、どこにも材料が無い。</p>
 
     <ul class="mats">
       <li class="mat mat-on">
@@ -263,10 +268,10 @@ DRep     この一票をチェーン全体の中でどう置くか</pre>
         <p class="mat-s">LEDGER ／ Catalyst まとめ</p>
         <p class="mat-a"><a href="catalyst.html">catalyst.html</a></p>
       </li>
-      <li class="mat mat-off">
+      <li class="mat mat-on">
         <p class="mat-q">分散は実際どうなっているか</p>
-        <p class="mat-s">LEDGER ／ SPO health</p>
-        <p class="mat-a">未接続（手元にあるが未公開）</p>
+        <p class="mat-s">外部サイト ／ Relay Health Ranking</p>
+        <p class="mat-a"><a href="https://hfot.github.io/cardano-relay-health/" target="_blank" rel="noopener noreferrer">hfot.github.io/cardano-relay-health</a></p>
       </li>
       <li class="mat mat-off">
         <p class="mat-q">過去の同種の提案はどうなったか</p>

@@ -1,10 +1,11 @@
 /* holders CORE 入口 — 数字を差し込むだけ。推測では埋めない。 */
 
-// 計器の一覧。計器が増えたらここに足す。接続済みの数はここから数える。
+// 計器の一覧。計器が増えたらここに足す。本体に組み込んだ数はここから数える。
+// where: "builtin" = このサイトの本体 ／ "external" = 外部サイトとして公開
 const INSTRUMENTS = [
-  { key: "money",  label: "Catalyst まとめ", status: "connected" },
-  { key: "spo",    label: "SPO health",      status: "unpublished" },
-  { key: "drep",   label: "DRep terminal",   status: "unpublished" },
+  { key: "money", label: "Catalyst まとめ",            where: "builtin"  },
+  { key: "spo",   label: "Relay Health Ranking",       where: "external" },
+  { key: "drep",  label: "DRep Governance Terminal",   where: "external" },
 ];
 
 const esc = (s) =>
@@ -18,8 +19,8 @@ const FAIL = "読み込み失敗";
 
 function renderInstruments() {
   const total = INSTRUMENTS.length;
-  const connected = INSTRUMENTS.filter((i) => i.status === "connected").length;
-  $("fig-connected").textContent = `${connected} / ${total}`;
+  const builtin = INSTRUMENTS.filter((i) => i.where === "builtin").length;
+  $("fig-connected").textContent = `${builtin} / ${total}`;
 }
 
 function renderMeta(meta) {
