@@ -397,3 +397,131 @@ footer p {
     scroll-behavior: auto !important;
   }
 }
+
+/* ==========================================================================
+   入口（index.html）— 何があるか、何が無いか。
+   区別は線種で行う。実線＝接続済み／破線＝繋がっていない。色相は使わない。
+   ========================================================================== */
+
+.backlink { margin: 0 0 20px; font-size: 13px; }
+
+.home-hero { padding: 96px 0 72px; }
+.home-hero .lede { margin-bottom: 48px; }
+
+.here-say {
+  margin: 0 0 32px;
+  max-width: 42em;
+  font-size: 17px;
+  color: var(--fg);
+}
+.here-say span { font-variant-numeric: tabular-nums; font-weight: 600; }
+
+.home-hero .figures {
+  grid-template-columns: repeat(3, max-content);
+  gap: 28px 72px;
+}
+.home-hero .fig-n { color: var(--fg); }
+.home-hero .fig-l { color: var(--fg-2); }
+
+/* ---------- 三層 ---------- */
+
+.layers { padding: 8px 0 0; }
+
+.layer {
+  background: var(--bg-sub);
+  border-radius: 18px;
+  padding: 28px 28px 24px;
+  margin-bottom: 16px;
+}
+.layer-on   { border: 1px solid var(--hairline); }
+.layer-none { border: 1px dashed var(--hairline); }
+
+.layer-h {
+  display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.layer-h h2 {
+  margin: 0;
+  font-size: 22px; font-weight: 600;
+  letter-spacing: .02em;
+}
+.layer-jp { font-size: 13px; color: var(--fg-2); }
+.layer-st { margin-left: auto; }
+
+.layer-d {
+  margin: 0 0 8px;
+  max-width: 46em;
+  font-size: 14px;
+  color: var(--fg-2);
+}
+.layer-d:last-child { margin-bottom: 0; }
+
+/* ---------- 計器 ---------- */
+
+.insts { list-style: none; margin: 0; padding: 0; }
+
+.inst {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr) max-content;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin-bottom: 10px;
+}
+.inst:last-child { margin-bottom: 0; }
+.inst-on  { border: 1px solid var(--hairline); }
+.inst-off { border: 1px dashed var(--hairline); }
+
+.inst-k {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 40px; height: 26px; padding: 0 8px;
+  border-radius: 8px;
+  background: var(--chip);
+  font-size: 12px;
+  color: var(--fg-2);
+}
+
+.inst-b { min-width: 0; }
+.inst-t {
+  display: block;
+  font-size: 17px; font-weight: 600; letter-spacing: -.01em;
+  overflow-wrap: anywhere;
+}
+.inst-off .inst-t { color: var(--fg-2); cursor: default; text-decoration: none; }
+.inst-d {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--fg-2);
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+.inst-st { flex: none; }
+
+/* ---------- 原則 ---------- */
+
+.rules { margin-top: 64px; background: var(--bg-sub); }
+.rules-in { padding-top: 32px; padding-bottom: 32px; }
+.rules ul { margin: 0; padding: 0; list-style: none; }
+.rules li {
+  margin: 0;
+  padding: 6px 0;
+  max-width: 46em;
+  font-size: 14px;
+  color: var(--fg-2);
+}
+
+.rules + footer { margin-top: 0; }
+footer p + p { margin-top: 8px; }
+
+@media (max-width: 720px) {
+  .home-hero { padding: 48px 0 40px; }
+  .home-hero .figures { grid-template-columns: 1fr; gap: 24px; }
+  .here-say { font-size: 16px; }
+  .layer { padding: 22px 20px 20px; }
+  .layer-h h2 { font-size: 20px; }
+  .layer-st { margin-left: 0; }
+  .inst { grid-template-columns: max-content minmax(0, 1fr); }
+  .inst-st { grid-column: 2; }
+}
