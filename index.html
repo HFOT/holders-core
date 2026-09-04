@@ -3,37 +3,38 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Catalyst まとめ — holders CORE</title>
-<meta name="description" content="Cardano Project Catalyst の提案・採択・納品・使用を、一次情報とともに記録する台帳。">
+<title>holders CORE</title>
+<meta name="description" content="価格を追うのをやめて、季節を読むための場所。今どこが埋まっていて、どこが埋まっていないかを述べる。">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="topbar">
   <div class="wrap topbar-in">
-    <span class="mark">Catalyst まとめ</span>
-    <span class="mark-sub">holders CORE</span>
+    <span class="mark">holders CORE</span>
   </div>
 </div>
 
-<header class="hero">
+<header class="hero home-hero">
   <div class="wrap">
-    <h1>Catalyst まとめ</h1>
-    <p class="lede">Cardano Project Catalyst の提案・採択・納品・使用を、一次情報とともに記録する。</p>
+    <h1>holders CORE</h1>
+    <p class="lede">価格を追うのをやめて、季節を読むための場所。<br>
+      ホルダーと DRep が「今、何に時間と一票を使えばいいか」を判断するための材料置き場。</p>
 
-    <div class="figures" id="figures">
+    <p class="here-say" id="here-say">LEDGER の三計器のうち、本体に接続されているのは <span id="here-n">—</span>つ。</p>
+
+    <div class="figures">
+      <div class="fig">
+        <div class="fig-n" id="fig-connected">—</div>
+        <div class="fig-l">接続済みの計器</div>
+      </div>
       <div class="fig">
         <div class="fig-n" id="fig-proposals">—</div>
-        <div class="fig-l">提案</div>
+        <div class="fig-l">記録されている提案</div>
       </div>
       <div class="fig">
-        <div class="fig-n" id="fig-proposers">—</div>
-        <div class="fig-l">提案者</div>
-      </div>
-      <div class="fig fig-lead">
         <div class="fig-n" id="fig-pending">—</div>
-        <div class="fig-l">④未記入</div>
-        <p class="fig-note">採択された提案のうち、それが実際に使われたかどうかを誰も記録していない件数。このサイトは自分の欠落を最初に示す。</p>
+        <div class="fig-l">未記入の ④</div>
       </div>
     </div>
 
@@ -41,114 +42,84 @@
   </div>
 </header>
 
-<section class="legend">
-  <div class="wrap legend-in">
-    <div class="legend-row">
-      <span class="badge stage">① 提案</span>
-      <span class="badge stage">② 採択</span>
-      <span class="badge stage">③ 納品</span>
-      <span class="badge stage">④ 使用</span>
-      <span class="legend-t">段階は記録上の位置であり、達成度でも評価でもない。</span>
+<main class="wrap layers">
+
+  <section class="layer layer-on">
+    <div class="layer-h">
+      <h2>LEDGER</h2>
+      <span class="layer-jp">本体</span>
+      <span class="badge stage layer-st">一部接続</span>
     </div>
-    <div class="legend-row">
-      <span class="badge hold">保留</span>
-      <span class="legend-t">保留 ＝ ④が未記入。使われていないという意味ではない。</span>
+
+    <ul class="insts">
+      <li class="inst inst-on">
+        <span class="inst-k">金</span>
+        <div class="inst-b">
+          <a class="inst-t" href="catalyst.html">Catalyst まとめ</a>
+          <p class="inst-d">提案 <span id="i-proposals">—</span>件・提案者 <span id="i-proposers">—</span>名・④未記入 <span id="i-pending">—</span>件</p>
+        </div>
+        <span class="badge stage inst-st">接続済み</span>
+      </li>
+
+      <li class="inst inst-off">
+        <span class="inst-k">分散</span>
+        <div class="inst-b">
+          <span class="inst-t">SPO health</span>
+          <p class="inst-d">リレー健全性ランキング ／ SPO Onchain Alive</p>
+        </div>
+        <span class="badge hold inst-st">手元にあるが未公開</span>
+      </li>
+
+      <li class="inst inst-off">
+        <span class="inst-k">意思</span>
+        <div class="inst-b">
+          <span class="inst-t">DRep terminal</span>
+          <p class="inst-d">評議会</p>
+        </div>
+        <span class="badge hold inst-st">手元にあるが未公開</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="layer layer-none">
+    <div class="layer-h">
+      <h2>MAP</h2>
+      <span class="layer-jp">読み方</span>
+      <span class="badge hold layer-st">未着手</span>
     </div>
-    <div class="legend-row">
-      <span class="badge unused">未使用</span>
-      <span class="legend-t">未使用 ＝ 使われていないと記録した。確定した事実であり、保留とは異なる。</span>
+    <p class="layer-d">TIDE（潮位・外因）／ FUEL（六燃料と他チェーン）</p>
+    <p class="layer-d">年〜季節でしか変えない層。台帳を作ってみないと、ここに何を書くべきかも分からない。</p>
+  </section>
+
+  <section class="layer layer-none">
+    <div class="layer-h">
+      <h2>YOU</h2>
+      <span class="layer-jp">入口</span>
+      <span class="badge hold layer-st">未着手</span>
     </div>
-    <div class="legend-row">
-      <span class="badge oc">取り下げ</span>
-      <span class="badge oc">打ち切り</span>
-      <span class="badge oc">中断</span>
-      <span class="legend-t">転帰は段階とは別の軸。段階を打ち消さない。</span>
-    </div>
+    <p class="layer-d">holder の属性別の入口 ／ DRep 向けの rationale 五軸</p>
+  </section>
+
+</main>
+
+<section class="rules">
+  <div class="wrap rules-in">
+    <ul>
+      <li>確定した事実だけ載せる。予定・ロードマップ・匂わせは載せない。</li>
+      <li>無いものは「無い」と表示する。空白を期待で埋めない。</li>
+      <li>人ではなく形を記録する。優劣は付けない。</li>
+      <li>めったに更新しない。更新圧が嘘を生む。</li>
+    </ul>
   </div>
 </section>
 
-<nav class="tabsbar">
-  <div class="wrap">
-    <div class="seg seg-tabs" id="tabseg" style="--n:2;--i:0" role="tablist">
-      <span class="seg-pill" aria-hidden="true"></span>
-      <button id="tab-proposals" class="seg-btn on" role="tab" aria-selected="true" aria-controls="view-proposals">提案</button>
-      <button id="tab-profiles" class="seg-btn" role="tab" aria-selected="false" aria-controls="view-profiles">提案者</button>
-    </div>
-  </div>
-</nav>
-
-<main class="wrap">
-  <section id="view-proposals" role="tabpanel" aria-labelledby="tab-proposals">
-
-    <div class="stagebar">
-      <div class="seg seg-stage" id="stageseg" style="--n:5;--i:0" role="group" aria-label="段階で絞る">
-        <span class="seg-pill" aria-hidden="true"></span>
-        <button class="seg-btn on" data-stage="">すべて</button>
-        <button class="seg-btn" data-stage="1">① 提案</button>
-        <button class="seg-btn" data-stage="2">② 採択</button>
-        <button class="seg-btn" data-stage="3">③ 納品</button>
-        <button class="seg-btn" data-stage="4">④ 使用</button>
-      </div>
-      <input type="hidden" id="stage" value="">
-    </div>
-
-    <div class="controls">
-      <select id="fund" aria-label="Fund"></select>
-      <select id="outcome" aria-label="転帰">
-        <option value="">転帰：すべて</option>
-        <option value="withdrawn">取り下げ</option>
-        <option value="terminated">打ち切り</option>
-        <option value="paused">中断</option>
-      </select>
-      <input type="search" id="q" placeholder="タイトル・提案者で絞る" aria-label="タイトル・提案者で絞る">
-      <label class="check" id="jp-wrap">
-        <input type="checkbox" id="jp-only"> 日本語圏のみ
-        <span class="check-note" id="jp-note" hidden>名簿が未登録のため使用できない</span>
-      </label>
-      <span id="count" class="count"></span>
-    </div>
-
-    <p id="empty" class="empty" hidden>該当なし。この Fund には条件に合う提案がない。</p>
-    <ul id="proposals" class="proposals"></ul>
-    <button id="more" class="more" hidden>さらに表示</button>
-  </section>
-
-  <section id="view-profiles" role="tabpanel" aria-labelledby="tab-profiles" hidden>
-    <div class="controls">
-      <input type="search" id="qp" placeholder="提案者名で絞る" aria-label="提案者名で絞る">
-      <label class="check" id="jp-wrap-p">
-        <input type="checkbox" id="jp-only-p"> 日本語圏のみ
-        <span class="check-note" id="jp-note-p" hidden>名簿が未登録のため使用できない</span>
-      </label>
-      <span id="countp" class="count"></span>
-    </div>
-
-    <p id="emptyp" class="empty" hidden>該当なし。条件に合う提案者がいない。</p>
-    <div class="tablewrap">
-      <table id="profiles">
-        <thead><tr>
-          <th scope="col">提案者</th>
-          <th scope="col" class="num">提案</th>
-          <th scope="col" class="num">採択</th>
-          <th scope="col" class="num">納品</th>
-          <th scope="col" class="num">使用</th>
-          <th scope="col" class="num">受領額</th>
-          <th scope="col">参加 Fund</th>
-          <th scope="col">形</th>
-        </tr></thead>
-        <tbody></tbody>
-      </table>
-    </div>
-    <button id="morep" class="more" hidden>さらに表示</button>
-  </section>
-</main>
-
 <footer>
   <div class="wrap">
-    <p>数字はすべて Catalyst Explorer の公開データに由来する。④（使われているか）は API に存在しないため手動記録であり、未記入は「保留」と表示される。推測では埋めていない。共著提案の受領額は各著者に満額を計上している（提案者間で合算すると重複する）。</p>
+    <p>holders CORE は holder のために作られているが、holder の味方をするのではない。<br>
+      holder が見るべきものを見せる。それは時に holder に不利な数字になる。</p>
   </div>
 </footer>
 
-<script src="app.js"></script>
+<script src="home.js"></script>
 </body>
 </html>
