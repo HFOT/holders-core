@@ -525,3 +525,231 @@ footer p + p { margin-top: 8px; }
   .inst { grid-template-columns: max-content minmax(0, 1fr); }
   .inst-st { grid-column: 2; }
 }
+
+/* ==========================================================================
+   MAP（map.html）— 読み方の層。
+   区別は線種で行う。実線＝起きたこと（記録）／破線＝まだ起きていないこと／
+   点線＝計測ではないもの。色相で優劣を作らない。
+   ========================================================================== */
+
+.map-main { padding: 8px 0 0; }
+
+.map-sec {
+  padding: 40px 0 8px;
+  border-top: 1px solid var(--hairline);
+}
+.map-sec:first-child { border-top: 0; padding-top: 8px; }
+
+.map-h {
+  display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.map-h h2 {
+  margin: 0;
+  font-size: 22px; font-weight: 600;
+  letter-spacing: .02em;
+}
+
+.map-h3 {
+  margin: 40px 0 14px;
+  font-size: 15px; font-weight: 600;
+  color: var(--fg);
+}
+
+.map-lead {
+  margin: 0 0 16px;
+  max-width: 46em;
+  font-size: 15px;
+  color: var(--fg-2);
+}
+.map-lead strong { color: var(--fg); font-weight: 600; }
+
+.map-rules { margin: 0 0 32px; padding: 0; list-style: none; }
+.map-rules li {
+  padding: 4px 0;
+  max-width: 46em;
+  font-size: 13px;
+  color: var(--fg-3);
+}
+
+/* ---------- TIDE の系列 ---------- */
+
+.tide-s {
+  background: var(--bg-sub);
+  border: 1px solid var(--hairline);
+  border-radius: 18px;
+  padding: 24px 24px 20px;
+  margin-bottom: 16px;
+}
+
+.tide-n {
+  margin: 0;
+  font-size: 17px; font-weight: 600; letter-spacing: -.01em;
+}
+.tide-note {
+  margin: 4px 0 18px;
+  font-size: 13px;
+  color: var(--fg-3);
+  overflow-wrap: anywhere;
+}
+
+.tide-l { list-style: none; margin: 0; padding: 0; }
+
+.tide-e {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 4px 20px;
+  padding: 14px 0;
+  border-top: 1px solid var(--hairline);
+}
+.tide-e:first-child { border-top: 0; padding-top: 0; }
+
+.tide-d {
+  font-size: 13px;
+  color: var(--fg-3);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.tide-b { min-width: 0; }
+.tide-w {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.tide-src {
+  margin: 8px 0 0;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+.tide-src .sep { padding: 0 8px; opacity: .5; color: var(--fg-3); }
+
+/* まだ起きていないこと — 破線。欄が埋まっていないことを形で示す。 */
+.tide-state {
+  margin-top: 18px;
+  border: 1px dashed var(--hairline);
+  border-radius: 14px;
+  padding: 16px 18px;
+  background: var(--bg);
+}
+.tide-state-h {
+  margin: 0 0 8px;
+  font-size: 13px; font-weight: 600;
+  color: var(--fg);
+}
+.tide-state-l { margin: 0; padding: 0; list-style: none; }
+.tide-state-l li {
+  padding: 3px 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--fg-2);
+  overflow-wrap: anywhere;
+}
+
+.map-pair {
+  margin: 20px 0 0;
+  max-width: 46em;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--fg);
+}
+
+/* ---------- 交点 ---------- */
+
+.map-flow {
+  margin: 0 0 20px;
+  padding: 20px;
+  background: var(--bg-sub);
+  border: 1px solid var(--hairline);
+  border-radius: 18px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--fg-2);
+  white-space: pre;
+  font-variant-numeric: tabular-nums;
+}
+
+.map-go { margin: 20px 0 8px; font-size: 15px; }
+
+/* ---------- 六燃料 ---------- */
+
+.fuels { list-style: none; margin: 0; padding: 0; }
+
+.fuel-i {
+  display: grid;
+  grid-template-columns: 8em minmax(0, 1fr) max-content;
+  gap: 4px 20px;
+  align-items: baseline;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.fuel-k { font-size: 14px; font-weight: 600; }
+.fuel-b { font-size: 14px; color: var(--fg-2); overflow-wrap: anywhere; }
+.fuel-w { font-size: 12px; color: var(--fg-3); white-space: nowrap; }
+
+/* ---------- 横並びの表 ---------- */
+
+table.matrix { font-size: 14px; }
+table.matrix th, table.matrix td { padding: 10px 14px 10px 0; }
+table.matrix th.mk, table.matrix td.mk { text-align: center; padding-right: 0; min-width: 4.5em; }
+table.matrix th.chain, table.matrix td.chain {
+  font-size: 14px; font-weight: 600; color: var(--fg); white-space: nowrap;
+}
+table.matrix td.mk { font-size: 15px; color: var(--fg); }
+table.matrix td.num { color: var(--fg-2); white-space: nowrap; }
+
+.map-legend { list-style: none; margin: 14px 0 0; padding: 0; }
+.map-legend li {
+  padding: 4px 0;
+  max-width: 46em;
+  font-size: 13px;
+  color: var(--fg-2);
+}
+.map-legend strong { color: var(--fg); font-weight: 600; }
+.mk { display: inline-block; min-width: 1.4em; text-align: center; color: var(--fg); }
+
+/* 計測ではないもの — 点線。段階や記録とは軸が違うことを形で示す。 */
+.map-caveat {
+  margin: 24px 0 0;
+  border: 1px dotted var(--hairline);
+  border-radius: 14px;
+  padding: 16px 18px;
+  background: var(--bg-sub);
+}
+.map-caveat p {
+  margin: 0;
+  max-width: 46em;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--fg-2);
+}
+.map-caveat p + p { margin-top: 8px; }
+
+/* ---------- 視野の分布 ---------- */
+
+.spread { list-style: none; margin: 0; padding: 0; }
+.spread-i {
+  display: grid;
+  grid-template-columns: 8em minmax(0, 1fr);
+  gap: 4px 20px;
+  align-items: baseline;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.spread-n { font-size: 14px; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.spread-t { font-size: 14px; color: var(--fg-2); }
+
+.hero-foot .sep { padding: 0 8px; opacity: .5; }
+
+@media (max-width: 720px) {
+  .map-sec { padding-top: 32px; }
+  .map-h h2 { font-size: 20px; }
+  .tide-s { padding: 20px 18px 18px; }
+  .tide-e { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+  .fuel-i { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .fuel-w { white-space: normal; }
+  .spread-i { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+}
