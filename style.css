@@ -425,7 +425,7 @@ footer p {
 
 /* ---------- 三層 ---------- */
 
-.layers { padding: 8px 0 0; }
+.layers { padding-top: 8px; }
 
 .layer {
   background: var(--bg-sub);
@@ -434,7 +434,6 @@ footer p {
   margin-bottom: 16px;
 }
 .layer-on   { border: 1px solid var(--hairline); }
-.layer-none { border: 1px dashed var(--hairline); }
 
 .layer-h {
   display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
@@ -489,7 +488,7 @@ footer p {
   font-size: 17px; font-weight: 600; letter-spacing: -.01em;
   overflow-wrap: anywhere;
 }
-.inst-off .inst-t { color: var(--fg-2); cursor: default; text-decoration: none; }
+.inst-off .inst-t { color: var(--fg); cursor: default; text-decoration: none; }
 .inst-d {
   margin: 4px 0 0;
   font-size: 13px;
@@ -532,7 +531,7 @@ footer p + p { margin-top: 8px; }
    点線＝計測ではないもの。色相で優劣を作らない。
    ========================================================================== */
 
-.map-main { padding: 8px 0 0; }
+.map-main { padding-top: 8px; }
 
 .map-sec {
   padding: 40px 0 8px;
