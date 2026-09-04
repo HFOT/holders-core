@@ -166,3 +166,20 @@ def test_profiles_file_drops_proposal_ids_and_tags_jp(tmp_path):
     assert by_id["u9"]["jp"] is False
     # 戻り値には残っている
     assert "proposal_ids" in result["profiles"][0]
+
+
+def test_total_proposals_matches_shard_sum(tmp_path):
+    cache, data, out = make_tree(tmp_path)
+    result = build.build(cache, data, out)
+    meta = result["meta"]
+    index = json.loads((out / "proposals" / "index.json").read_text(encoding="utf-8"))
+    assert meta["total_proposals"] == sum(e["count"] for e in index)
+
+
+def test_build_raises_when_funds_have_no_labels(tmp_path):
+    import pytest
+
+    cache, data, out = make_tree(tmp_path)
+    write(cache / "funds_raw.json", {"data": [], "links": {}, "meta": {}})
+    with pytest.raises(ValueError):
+        build.build(cache, data, out)

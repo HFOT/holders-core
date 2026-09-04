@@ -8,12 +8,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from . import api, overlay, profiles, roster
-from .roster import display_name
 
 ROOT = Path(__file__).resolve().parent.parent
 CACHE_DIR = ROOT / "data" / "cache"
 DATA_DIR = ROOT / "data"
-OUT_DIR = ROOT / "data" / "out"
+OUT_DIR = ROOT / "site" / "data"
 
 
 def _read(path: Path):
@@ -118,6 +117,11 @@ def build(
         decorated.append(d)
 
     labels = profiles.fund_order(funds)
+    if not labels:
+        raise ValueError(
+            "funds_raw.json から Fund ラベルが1件も取れない。"
+            "分類が誤って fade_out に倒れるため中止する。harvest をやり直すこと。"
+        )
     profs = profiles.build_profiles(decorated, labels)
 
     by_fund: dict[str, list[dict]] = {}
@@ -145,7 +149,7 @@ def build(
     outcome_counts = Counter(d["outcome"] for d in decorated if d["outcome"])
     meta = {
         "generated_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-        "total_proposals": len(raw),
+        "total_proposals": len(decorated),
         "proposers": len(profs),
         "jp_proposals": sum(1 for d in decorated if d["jp"]),
         "funds": labels,
@@ -172,7 +176,7 @@ def main(argv: list[str]) -> int:
     elif cmd == "candidates":
         for c in candidates():
             users = ", ".join(
-                f"{display_name(u) or '?'}({u.get('id')})" for u in c.get("users") or []
+                f"{roster.display_name(u) or '?'}({u.get('id')})" for u in c.get("users") or []
             )
             print(f"{c['fund']['label']}\t{c['title'][:60]}\t{users}")
     elif cmd == "build":

@@ -8,11 +8,14 @@ STAGE_LABELS = {
     4: "④ 使用",
 }
 
-FUNDED = "funded"
 PENDING = "pending"
 COMPLETE = "complete"
 
 FUNDED_STATUSES = frozenset({"funded", "leftover"})
+# 資金が出た証拠。ラベルだけでは足りない（not_approved でも入金・納品済みの実例が95件ある）
+FUNDED_EVIDENCE_STATUSES = frozenset(
+    {"in_progress", "complete", "onboarding", "terminated", "paused"}
+)
 
 WITHDRAWN = "withdrawn"
 TERMINATED = "terminated"
@@ -29,8 +32,20 @@ def is_pending(proposal: dict) -> bool:
     return proposal.get("funding_status") == PENDING
 
 
+def was_funded(proposal: dict) -> bool:
+    """②に到達したか。ラベル・進捗・入金のいずれかが資金の証拠になる。"""
+    if proposal.get("funding_status") in FUNDED_STATUSES:
+        return True
+    if proposal.get("status") in FUNDED_EVIDENCE_STATUSES:
+        return True
+    try:
+        return (proposal.get("amount_received") or 0) > 0
+    except TypeError:
+        return False
+
+
 def stage_of(proposal: dict, *, used: bool = False) -> int:
-    if proposal.get("funding_status") not in FUNDED_STATUSES:
+    if not was_funded(proposal):
         return 1
     if proposal.get("status") != COMPLETE:
         return 2
