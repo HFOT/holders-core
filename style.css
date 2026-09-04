@@ -354,6 +354,31 @@ td.funds { font-size: 12px; color: var(--fg-3); white-space: normal; min-width: 
 td.pattern { font-size: 13px; color: var(--fg-2); }
 tbody tr:hover { background: var(--bg-sub); }
 
+/* ---------- 記述子の定義（形の決め方） ---------- */
+/* .defs は .wrap の子。padding ショートハンドは横の余白を潰すので使わない。 */
+.defs {
+  margin: 8px 0 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+}
+.defs-h {
+  margin: 0 0 8px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -.01em;
+}
+.defs-lead, .defs-note {
+  margin: 0 0 12px;
+  max-width: 52em;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--fg-2);
+}
+.defs-note { margin: 12px 0 0; color: var(--fg-3); }
+.defs-t { margin: 0; }
+
 /* ---------- footer ---------- */
 
 footer {
@@ -521,7 +546,6 @@ footer p {
 }
 .inst:last-child { margin-bottom: 0; }
 .inst-on  { border: 1px solid var(--hairline); }
-.inst-off { border: 1px dashed var(--hairline); }
 
 .inst-k {
   display: inline-flex; align-items: center; justify-content: center;
@@ -538,7 +562,6 @@ footer p {
   font-size: 17px; font-weight: 600; letter-spacing: -.01em;
   overflow-wrap: anywhere;
 }
-.inst-off .inst-t { color: var(--fg); cursor: default; text-decoration: none; }
 .inst-d {
   margin: 4px 0 0;
   font-size: 13px;
@@ -547,6 +570,12 @@ footer p {
   overflow-wrap: anywhere;
 }
 .inst-st { flex: none; }
+/* 本体 / 外部サイト の別。状態ではなく置き場所なので線も色も足さない。 */
+.inst-where {
+  font-size: 12px;
+  color: var(--fg-3);
+  white-space: nowrap;
+}
 
 /* ---------- 原則 ---------- */
 
