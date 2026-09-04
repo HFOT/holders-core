@@ -405,55 +405,105 @@ footer p {
 
 .backlink { margin: 0 0 20px; font-size: 13px; }
 
-.home-hero { padding: 96px 0 72px; }
-.home-hero .lede { margin-bottom: 48px; }
+.home-hero { padding: 96px 0 64px; }
 
-.here-say {
-  margin: 0 0 32px;
-  max-width: 42em;
-  font-size: 17px;
+/* 主役は文である。数字はその下に等しく three 並ぶ。 */
+.statement {
+  margin: 0 0 56px;
+  max-width: 34em;
+  font-size: 21px;
+  line-height: 1.75;
+  letter-spacing: -.01em;
   color: var(--fg);
 }
-.here-say span { font-variant-numeric: tabular-nums; font-weight: 600; }
 
 .home-hero .figures {
   grid-template-columns: repeat(3, max-content);
   gap: 28px 72px;
 }
-.home-hero .fig-n { color: var(--fg); }
+.home-hero .fig-n { color: var(--fg); font-size: 34px; }
 .home-hero .fig-l { color: var(--fg-2); }
 
-/* ---------- 三層 ---------- */
-
-.layers { padding-top: 8px; }
-
-.layer {
-  background: var(--bg-sub);
-  border-radius: 18px;
-  padding: 28px 28px 24px;
-  margin-bottom: 16px;
-}
-.layer-on   { border: 1px solid var(--hairline); }
-
-.layer-h {
-  display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-.layer-h h2 {
-  margin: 0;
-  font-size: 22px; font-weight: 600;
-  letter-spacing: .02em;
-}
 .layer-jp { font-size: 13px; color: var(--fg-2); }
-.layer-st { margin-left: auto; }
 
-.layer-d {
-  margin: 0 0 8px;
-  max-width: 46em;
-  font-size: 14px;
-  color: var(--fg-2);
+/* ---------- 入口（三つの扉） ---------- */
+/* 三つは同格。大きさ・枠・並び順で優劣を作らない。 */
+
+.home-main { padding-top: 8px; padding-bottom: 8px; }
+
+.doors {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
 }
-.layer-d:last-child { margin-bottom: 0; }
+
+.door {
+  position: relative;
+  background: var(--bg-sub);
+  border: 1px solid var(--hairline);
+  border-radius: 18px;
+}
+.door::after {
+  content: "";
+  position: absolute; inset: 0;
+  border-radius: 18px;
+  background: var(--chip);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 150ms linear;
+}
+.door:hover::after { opacity: 1; }
+
+/* 扉全体が一つのリンク。押せる範囲と見えている範囲を一致させる。 */
+.door-a {
+  position: relative; z-index: 1;
+  display: block;
+  color: inherit;
+  padding: 32px 30px 30px;
+  border-radius: 18px;
+}
+.door-a:hover { text-decoration: none; }
+
+.door-h {
+  display: block;
+  font-size: 26px; font-weight: 600;
+  letter-spacing: -.02em;
+  line-height: 1.3;
+  color: var(--fg);
+}
+.door-sub {
+  display: block;
+  margin-top: 8px;
+  font-size: 12px;
+  letter-spacing: .06em;
+  color: var(--fg-3);
+}
+.door-d {
+  display: block;
+  margin: 18px 0 0;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--fg-2);
+  overflow-wrap: anywhere;
+}
+
+/* ---------- 現在地 ---------- */
+
+.status {
+  margin-top: 72px;
+  padding-top: 40px;
+  border-top: 1px solid var(--hairline);
+}
+
+.status-note {
+  margin: 16px 0 0;
+  max-width: 46em;
+  font-size: 13px;
+  color: var(--fg-3);
+}
 
 /* ---------- 計器 ---------- */
 
@@ -517,10 +567,12 @@ footer p + p { margin-top: 8px; }
 @media (max-width: 720px) {
   .home-hero { padding: 48px 0 40px; }
   .home-hero .figures { grid-template-columns: 1fr; gap: 24px; }
-  .here-say { font-size: 16px; }
-  .layer { padding: 22px 20px 20px; }
-  .layer-h h2 { font-size: 20px; }
-  .layer-st { margin-left: 0; }
+  .home-hero .fig-n { font-size: 32px; }
+  .statement { margin-bottom: 40px; font-size: 18px; }
+  .doors { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .door-a { padding: 24px 22px 22px; }
+  .door-h { font-size: 22px; }
+  .status { margin-top: 48px; padding-top: 32px; }
   .inst { grid-template-columns: max-content minmax(0, 1fr); }
   .inst-st { grid-column: 2; }
 }

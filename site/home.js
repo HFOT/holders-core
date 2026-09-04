@@ -20,7 +20,6 @@ function renderInstruments() {
   const total = INSTRUMENTS.length;
   const connected = INSTRUMENTS.filter((i) => i.status === "connected").length;
   $("fig-connected").textContent = `${connected} / ${total}`;
-  $("here-n").textContent = String(connected);
 }
 
 function renderMeta(meta) {

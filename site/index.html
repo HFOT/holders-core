@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>holders CORE</title>
-<meta name="description" content="価格を追うのをやめて、季節を読むための場所。今どこが埋まっていて、どこが埋まっていないかを述べる。">
+<meta name="description" content="期待ではなく、起きたことだけを記録する。Cardano の資金・制度・関わり方を、一次情報とともに確認できる場所。">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,23 +18,21 @@
 <header class="hero home-hero">
   <div class="wrap">
     <h1>holders CORE</h1>
-    <p class="lede">価格を追うのをやめて、季節を読むための場所。<br>
-      ホルダーと DRep が「今、何に時間と一票を使えばいいか」を判断するための材料置き場。</p>
-
-    <p class="here-say" id="here-say">LEDGER の三計器のうち、本体に接続されているのは <span id="here-n">—</span>つ。</p>
+    <p class="statement">期待ではなく、起きたことだけを記録する。<br>
+      Cardano の資金・制度・関わり方を、一次情報とともに確認できる場所。</p>
 
     <div class="figures">
       <div class="fig">
-        <div class="fig-n" id="fig-connected">—</div>
-        <div class="fig-l">接続済みの計器</div>
-      </div>
-      <div class="fig">
         <div class="fig-n" id="fig-proposals">—</div>
-        <div class="fig-l">記録されている提案</div>
+        <div class="fig-l">記録した提案</div>
       </div>
       <div class="fig">
         <div class="fig-n" id="fig-pending">—</div>
         <div class="fig-l">未記入の ④</div>
+      </div>
+      <div class="fig">
+        <div class="fig-n" id="fig-connected">—</div>
+        <div class="fig-l">接続済みの計器</div>
       </div>
     </div>
 
@@ -42,13 +40,38 @@
   </div>
 </header>
 
-<main class="wrap layers">
+<main class="wrap home-main">
 
-  <section class="layer layer-on">
-    <div class="layer-h">
-      <h2>LEDGER</h2>
-      <span class="layer-jp">本体</span>
-      <span class="badge stage layer-st">一部接続</span>
+  <ul class="doors">
+    <li class="door">
+      <a class="door-a" href="catalyst.html">
+        <span class="door-h">台帳を見る</span>
+        <span class="door-sub">LEDGER — 金の計器</span>
+        <span class="door-d">誰がいくら得て、何を納めたか。11,385件の提案が ①提案 →②採択 →③納品 →④使用 のどこで止まっているかを、一次情報付きで確認できる。</span>
+      </a>
+    </li>
+
+    <li class="door">
+      <a class="door-a" href="map.html">
+        <span class="door-h">外の力を見る</span>
+        <span class="door-sub">MAP — 読み方の層</span>
+        <span class="door-d">CLARITY法案と ADA ETF が、いま実際にどこまで進んだか。前進と成立を混ぜずに記録している。</span>
+      </a>
+    </li>
+
+    <li class="door">
+      <a class="door-a" href="you.html">
+        <span class="door-h">自分の入口を探す</span>
+        <span class="door-sub">YOU — 入口の層</span>
+        <span class="door-d">6つの属性それぞれに、このサイトに材料があるか無いかを書いている。</span>
+      </a>
+    </li>
+  </ul>
+
+  <section class="status">
+    <div class="map-h">
+      <h2>現在地</h2>
+      <span class="layer-jp">三つの計器のうち、本体に接続されているもの</span>
     </div>
 
     <ul class="insts">
@@ -79,26 +102,8 @@
         <span class="badge hold inst-st">手元にあるが未公開</span>
       </li>
     </ul>
-  </section>
 
-  <section class="layer layer-on">
-    <div class="layer-h">
-      <h2><a href="map.html">MAP</a></h2>
-      <span class="layer-jp">読み方</span>
-      <span class="badge stage layer-st">公開</span>
-    </div>
-    <p class="layer-d"><a href="map.html">TIDE（潮位・外因）／ FUEL（六燃料と他チェーン）</a></p>
-    <p class="layer-d">年〜季節でしか変えない層。計器ではないので、上の接続数には数えない。</p>
-  </section>
-
-  <section class="layer layer-on">
-    <div class="layer-h">
-      <h2><a href="you.html">YOU</a></h2>
-      <span class="layer-jp">入口</span>
-      <span class="badge stage layer-st">公開</span>
-    </div>
-    <p class="layer-d"><a href="you.html">holder の属性別の入口 ／ DRep 向けの rationale 五軸</a></p>
-    <p class="layer-d">属性ごとに、今このサイトに何があって何が無いかを書く層。計器ではないので、上の接続数には数えない。</p>
+    <p class="status-note">MAP と YOU は層であって計器ではない。だから上の接続数には数えない。</p>
   </section>
 
 </main>
