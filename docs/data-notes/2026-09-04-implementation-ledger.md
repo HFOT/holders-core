@@ -37,3 +37,8 @@ FINAL FIX WAVE: 5件すべて ADDRESSED、新規破壊なし、78/78 pass (commi
   - 全件回帰テスト tests/test_stages_corpus.py 新設（2行フィクスチャがこの欠陥を2度素通りさせたため）
 Task 8: デザイン刷新 dispatched（CORN 指示「アップルのようなおしゃれなサイト」）。ブリーフに「洗練＝情報を減らす」を禁止として明記
 Task 8: complete (commit 11d25b6..3b99deb, review clean — 指摘ゼロ)。バッジは色を使わず線種で3軸を区別（段階=実線/保留=破線/転帰=点線/未使用=塗り）
+Task 9: holders CORE 入口 (f313de3) — 三層と三計器の現在地。未公開2計器は「手元にあるが未公開」でリンクにしない
+Task 10: MAP層 (ce97c5a) — TIDE(CLARITY法案3件/ADA ETF3件、一次情報は govinfo・clerk.house.gov・SEC EDGAR まで到達) + FUEL。実装者が「9月採決予定」の記載を鉄則違反として自主的に却下
+Task 11: YOU層 (c0cdf50) — 属性6つ/属性別の有無/DRep rationale五軸。実装者がブリーフの「3つがリンク」を実数4つに訂正（数字合わせの嘘を拒否）
+SITE FINAL REVIEW (opus): Critical 1 = 入口フッターが「holder のために」を目的として掲げていた（俺のブリーフ由来。設計書の自戒に違反、you.html と矛盾）+ padding shorthand によるガター消失 + 未公開計器名の減光
+SITE FIX WAVE: 6件すべて修正・実測検証済 (1609b56)。4ページのインセットが 375px/1400px で完全一致、未公開計器名が --fg に復帰
