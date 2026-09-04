@@ -4,76 +4,149 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Catalyst まとめ — holders CORE</title>
+<meta name="description" content="Cardano Project Catalyst の提案・採択・納品・使用を、一次情報とともに記録する台帳。">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>Catalyst まとめ<span class="sub">LEDGER</span></h1>
-  <p id="meta" class="meta">読み込み中…</p>
-  <p id="outcomes" class="meta"></p>
-  <p class="legend">
-    <span class="stage s1">① 提案</span>
-    <span class="stage s2">② 採択</span>
-    <span class="stage s3">③ 納品</span>
-    <span class="stage s4">④ 使用</span>
-    <span class="hold">保留 = ④が未記入</span>
-    <span class="oc">取り下げ / 打ち切り / 中断 は段階とは別の軸</span>
-  </p>
+
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <span class="mark">Catalyst まとめ</span>
+    <span class="mark-sub">holders CORE</span>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Catalyst まとめ</h1>
+    <p class="lede">Cardano Project Catalyst の提案・採択・納品・使用を、一次情報とともに記録する。</p>
+
+    <div class="figures" id="figures">
+      <div class="fig">
+        <div class="fig-n" id="fig-proposals">—</div>
+        <div class="fig-l">提案</div>
+      </div>
+      <div class="fig">
+        <div class="fig-n" id="fig-proposers">—</div>
+        <div class="fig-l">提案者</div>
+      </div>
+      <div class="fig fig-lead">
+        <div class="fig-n" id="fig-pending">—</div>
+        <div class="fig-l">④未記入</div>
+        <p class="fig-note">採択された提案のうち、それが実際に使われたかどうかを誰も記録していない件数。このサイトは自分の欠落を最初に示す。</p>
+      </div>
+    </div>
+
+    <p class="hero-foot" id="hero-foot">読み込み中…</p>
+  </div>
 </header>
 
-<nav class="tabs">
-  <button id="tab-proposals" class="tab on">提案</button>
-  <button id="tab-profiles" class="tab">提案者</button>
+<section class="legend">
+  <div class="wrap legend-in">
+    <div class="legend-row">
+      <span class="badge stage">① 提案</span>
+      <span class="badge stage">② 採択</span>
+      <span class="badge stage">③ 納品</span>
+      <span class="badge stage">④ 使用</span>
+      <span class="legend-t">段階は記録上の位置であり、達成度でも評価でもない。</span>
+    </div>
+    <div class="legend-row">
+      <span class="badge hold">保留</span>
+      <span class="legend-t">保留 ＝ ④が未記入。使われていないという意味ではない。</span>
+    </div>
+    <div class="legend-row">
+      <span class="badge unused">未使用</span>
+      <span class="legend-t">未使用 ＝ 使われていないと記録した。確定した事実であり、保留とは異なる。</span>
+    </div>
+    <div class="legend-row">
+      <span class="badge oc">取り下げ</span>
+      <span class="badge oc">打ち切り</span>
+      <span class="badge oc">中断</span>
+      <span class="legend-t">転帰は段階とは別の軸。段階を打ち消さない。</span>
+    </div>
+  </div>
+</section>
+
+<nav class="tabsbar">
+  <div class="wrap">
+    <div class="seg seg-tabs" id="tabseg" style="--n:2;--i:0" role="tablist">
+      <span class="seg-pill" aria-hidden="true"></span>
+      <button id="tab-proposals" class="seg-btn on" role="tab" aria-selected="true" aria-controls="view-proposals">提案</button>
+      <button id="tab-profiles" class="seg-btn" role="tab" aria-selected="false" aria-controls="view-profiles">提案者</button>
+    </div>
+  </div>
 </nav>
 
-<main>
-  <section id="view-proposals">
+<main class="wrap">
+  <section id="view-proposals" role="tabpanel" aria-labelledby="tab-proposals">
+
+    <div class="stagebar">
+      <div class="seg seg-stage" id="stageseg" style="--n:5;--i:0" role="group" aria-label="段階で絞る">
+        <span class="seg-pill" aria-hidden="true"></span>
+        <button class="seg-btn on" data-stage="">すべて</button>
+        <button class="seg-btn" data-stage="1">① 提案</button>
+        <button class="seg-btn" data-stage="2">② 採択</button>
+        <button class="seg-btn" data-stage="3">③ 納品</button>
+        <button class="seg-btn" data-stage="4">④ 使用</button>
+      </div>
+      <input type="hidden" id="stage" value="">
+    </div>
+
     <div class="controls">
-      <label>Fund <select id="fund"></select></label>
-      <label>段階
-        <select id="stage">
-          <option value="">すべて</option>
-          <option value="1">① 提案</option>
-          <option value="2">② 採択</option>
-          <option value="3">③ 納品</option>
-          <option value="4">④ 使用</option>
-        </select>
+      <select id="fund" aria-label="Fund"></select>
+      <select id="outcome" aria-label="転帰">
+        <option value="">転帰：すべて</option>
+        <option value="withdrawn">取り下げ</option>
+        <option value="terminated">打ち切り</option>
+        <option value="paused">中断</option>
+      </select>
+      <input type="search" id="q" placeholder="タイトル・提案者で絞る" aria-label="タイトル・提案者で絞る">
+      <label class="check" id="jp-wrap">
+        <input type="checkbox" id="jp-only"> 日本語圏のみ
+        <span class="check-note" id="jp-note" hidden>名簿が未登録のため使用できない</span>
       </label>
-      <label>転帰
-        <select id="outcome">
-          <option value="">すべて</option>
-          <option value="withdrawn">取り下げ</option>
-          <option value="terminated">打ち切り</option>
-          <option value="paused">中断</option>
-        </select>
-      </label>
-      <label><input type="checkbox" id="jp-only"> 日本語圏のみ</label>
-      <input type="search" id="q" placeholder="タイトル・提案者で絞る">
       <span id="count" class="count"></span>
     </div>
+
+    <p id="empty" class="empty" hidden>該当なし。この Fund には条件に合う提案がない。</p>
     <ul id="proposals" class="proposals"></ul>
     <button id="more" class="more" hidden>さらに表示</button>
   </section>
 
-  <section id="view-profiles" hidden>
+  <section id="view-profiles" role="tabpanel" aria-labelledby="tab-profiles" hidden>
     <div class="controls">
-      <label><input type="checkbox" id="jp-only-p"> 日本語圏のみ</label>
-      <input type="search" id="qp" placeholder="提案者名で絞る">
+      <input type="search" id="qp" placeholder="提案者名で絞る" aria-label="提案者名で絞る">
+      <label class="check" id="jp-wrap-p">
+        <input type="checkbox" id="jp-only-p"> 日本語圏のみ
+        <span class="check-note" id="jp-note-p" hidden>名簿が未登録のため使用できない</span>
+      </label>
       <span id="countp" class="count"></span>
     </div>
-    <table id="profiles">
-      <thead><tr>
-        <th>提案者</th><th>提案</th><th>採択</th><th>納品</th><th>使用</th>
-        <th>受領額</th><th>参加 Fund</th><th>形</th>
-      </tr></thead>
-      <tbody></tbody>
-    </table>
+
+    <p id="emptyp" class="empty" hidden>該当なし。条件に合う提案者がいない。</p>
+    <div class="tablewrap">
+      <table id="profiles">
+        <thead><tr>
+          <th scope="col">提案者</th>
+          <th scope="col" class="num">提案</th>
+          <th scope="col" class="num">採択</th>
+          <th scope="col" class="num">納品</th>
+          <th scope="col" class="num">使用</th>
+          <th scope="col" class="num">受領額</th>
+          <th scope="col">参加 Fund</th>
+          <th scope="col">形</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
     <button id="morep" class="more" hidden>さらに表示</button>
   </section>
 </main>
 
 <footer>
-  <p>数字はすべて Catalyst Explorer の公開データに由来する。④（使われているか）は API に存在しないため手動記録であり、未記入は「保留」と表示される。推測では埋めていない。共著提案の受領額は各著者に満額を計上している（提案者間で合算すると重複する）。</p>
+  <div class="wrap">
+    <p>数字はすべて Catalyst Explorer の公開データに由来する。④（使われているか）は API に存在しないため手動記録であり、未記入は「保留」と表示される。推測では埋めていない。共著提案の受領額は各著者に満額を計上している（提案者間で合算すると重複する）。</p>
+  </div>
 </footer>
 
 <script src="app.js"></script>
