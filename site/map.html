@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MAP — holders CORE / 読み方の層</title>
+<meta name="description" content="TIDE（潮位・外因）と FUEL（六燃料と他チェーン）。全チェーンに等しくかかるものと、チェーンごとに違うもの。年〜季節でしか動かさない層。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <span class="mark">MAP</span>
+    <span class="mark-sub">holders CORE</span>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="backlink"><a href="index.html">← holders CORE</a></p>
+    <h1>MAP</h1>
+    <p class="lede">読み方の層。外から等しくかかる力（TIDE）と、チェーンごとに違う燃え方（FUEL）を分けて置く。</p>
+    <p class="hero-foot">最終確認 <time id="reviewed" datetime="2026-09-04">—</time><span class="sep">／</span>この層は年〜季節でしか動かさない。月次で更新し始めたら、設計が壊れている合図。</p>
+  </div>
+</header>
+
+<main class="wrap map-main">
+
+  <!-- ================= TIDE ================= -->
+
+  <section class="map-sec" id="sec-tide">
+    <div class="map-h">
+      <h2>TIDE</h2>
+      <span class="layer-jp">潮位・外因</span>
+    </div>
+
+    <p class="map-lead">ここに載る力は<strong>全チェーンに等しくかかる。つまり、ここで差はつかない。</strong>
+      米国の法制度や上場商品の枠組みは、Cardano にだけ効くものではない。潮が満ちれば全部が浮く。</p>
+
+    <ul class="map-rules">
+      <li>書けるのは「何が起きたか」だけ。強気・弱気のような読みは書かない。</li>
+      <li>動くのは離散的な出来事があったときだけ。日々の値動きは扱わない。</li>
+      <li>各項目に日付と情報源を付ける。取得して内容を確認できなかったものは載せない。</li>
+      <li>まだ起きていないことは「まだ起きていない」と書く。</li>
+    </ul>
+
+    <div id="tide"></div>
+
+    <p class="map-pair" id="pairline">—</p>
+  </section>
+
+  <!-- ================= 交点 ================= -->
+
+  <section class="map-sec" id="sec-cross">
+    <div class="map-h">
+      <h2>交点</h2>
+      <span class="layer-jp">潮が満ちた時、根は育っていたか</span>
+    </div>
+
+    <p class="map-lead">TIDE と FUEL は混ぜてはいけない。片方は外から等しくかかる力で、片方はチェーンごとの中身だからだ。</p>
+
+    <pre class="map-flow">潮が来る  →  全部が上がる  →  調整が入る
+                                  ↓
+                      ここで「選ばれるもの」と「戻るもの」に分かれる
+                                  ↓
+              分けるのは、根が育っていたかどうか</pre>
+
+    <p class="map-lead">上げ相場では全部が上がるから、根の差は見えない。調整で初めて見える。
+      だから調整の前に根を見ておく必要がある。それが LEDGER の存在理由。</p>
+
+    <p class="map-go"><a href="catalyst.html">LEDGER — Catalyst まとめへ →</a></p>
+  </section>
+
+  <!-- ================= FUEL ================= -->
+
+  <section class="map-sec" id="sec-fuel">
+    <div class="map-h">
+      <h2>FUEL</h2>
+      <span class="layer-jp">六燃料と他チェーン</span>
+    </div>
+
+    <p class="map-lead">チェーンが動くとき、何が燃えているのか。粒度は一般的な動きでよく、速報性は要らない。
+      これは性格の地図であり、順位表ではない。</p>
+
+    <h3 class="map-h3">六燃料</h3>
+    <ul class="fuels" id="fuels"></ul>
+
+    <h3 class="map-h3">他チェーン横並び</h3>
+    <div class="tablewrap">
+      <table class="matrix" id="matrix"></table>
+    </div>
+
+    <ul class="map-legend">
+      <li><span class="mk">●</span>強く燃えている</li>
+      <li><span class="mk">○</span>燃えている</li>
+      <li><span class="mk">·</span>ほとんど燃えていない</li>
+      <li>点灯数は <span class="mk">●</span> と <span class="mk">○</span> を1つと数えたもの。<strong>多いほど良い、ではない。</strong>点灯が多い状態は下の分布では「過熱」に当たる。</li>
+    </ul>
+
+    <div class="map-caveat">
+      <p>この表は一次情報に基づく計測ではなく、一般的な傾向の要約である。
+        台帳（LEDGER）の数字とは性格が違う。年単位でしか更新しない。</p>
+      <p>Cardano の物語欄が薄いことも、そのまま出している。弱点を隠すと地図の意味が消える。</p>
+    </div>
+
+    <h3 class="map-h3">視野の分布</h3>
+    <p class="map-lead">同じ表は、そのチェーンの偏りの指標としても読める。
+      目的は移動の促進ではなく、自分の属性の相対化。ほとんどの人はこれを見ても移動しない。移動しないと分かった上で置いている。</p>
+    <ul class="spread" id="spread"></ul>
+  </section>
+
+</main>
+
+<section class="rules">
+  <div class="wrap rules-in">
+    <ul>
+      <li>TIDE は起きたことだけを書く。起きていないことは、起きていないと書く。</li>
+      <li>FUEL は要約であって計測ではない。台帳と同じ重さで読ませない。</li>
+      <li>チェーンに順位を付けない。点灯数が多いことは良いことではない。</li>
+      <li>この層はめったに更新しない。更新圧が嘘を生む。</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>MAP は薄いままにしておく層である。台帳が厚く、地図が薄い。<br>
+      その厚さの比率そのものが、このサイトの主張になっている。</p>
+  </div>
+</footer>
+
+<script src="map.js"></script>
+</body>
+</html>
