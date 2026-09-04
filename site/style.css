@@ -753,3 +753,145 @@ table.matrix td.num { color: var(--fg-2); white-space: nowrap; }
   .fuel-w { white-space: normal; }
   .spread-i { grid-template-columns: minmax(0, 1fr); gap: 2px; }
 }
+
+/* ==========================================================================
+   YOU（you.html）— 入口の層。
+   区別は線種で行う。実線＝このサイトに材料がある／破線＝今このサイトには無い／
+   点線＝このサイトでは扱わない。色相で優劣を作らない。
+   「無い」欄も、あるものと同じ大きさ・同じ濃さで書く。無いことも情報である。
+   ========================================================================== */
+
+/* ---------- 六属性 ---------- */
+/* 六つとも同じ枠・同じ文字サイズ。順番による強弱を付けない。 */
+
+.types {
+  list-style: none;
+  margin: 0 0 8px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.type {
+  background: var(--bg-sub);
+  border: 1px solid var(--hairline);
+  border-radius: 18px;
+  padding: 20px 22px;
+}
+.type-n {
+  margin: 0 0 10px;
+  font-size: 17px; font-weight: 600; letter-spacing: -.01em;
+  color: var(--fg);
+}
+.type-f {
+  margin: 0 0 6px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--fg);
+  overflow-wrap: anywhere;
+}
+.type-w {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--fg-2);
+  overflow-wrap: anywhere;
+}
+
+/* ---------- あるもの／無いもの ---------- */
+
+.have-l { list-style: none; margin: 0; padding: 0; }
+
+.have {
+  display: grid;
+  grid-template-columns: 7em minmax(0, 1fr);
+  gap: 4px 24px;
+  background: var(--bg-sub);
+  border-radius: 18px;
+  padding: 22px 24px;
+  margin-bottom: 12px;
+}
+.have:last-child { margin-bottom: 0; }
+
+.have-yes   { border: 1px solid var(--hairline); }
+.have-no    { border: 1px dashed var(--hairline); }
+.have-never { border: 1px dotted var(--hairline); }
+
+.have-n {
+  margin: 0;
+  font-size: 17px; font-weight: 600; letter-spacing: -.01em;
+  color: var(--fg);
+  white-space: nowrap;
+}
+.have-b { min-width: 0; }
+.have-k {
+  margin: 0 0 2px;
+  font-size: 12px;
+  color: var(--fg-3);
+}
+.have-v {
+  margin: 0 0 14px;
+  max-width: 46em;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--fg);
+  overflow-wrap: anywhere;
+}
+.have-v:last-child { margin-bottom: 0; }
+.have-v strong { font-weight: 600; color: var(--fg); }
+
+/* ---------- DRep の材料対応表 ---------- */
+
+.mats { list-style: none; margin: 0; padding: 0; }
+
+.mat {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, .9fr) max-content;
+  gap: 4px 20px;
+  align-items: baseline;
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  background: var(--bg-sub);
+}
+.mat:last-child { margin-bottom: 0; }
+.mat-on  { border: 1px solid var(--hairline); }
+.mat-off { border: 1px dashed var(--hairline); }
+
+.mat-q {
+  margin: 0;
+  font-size: 15px;
+  color: var(--fg);
+  overflow-wrap: anywhere;
+}
+.mat-s {
+  margin: 0;
+  font-size: 13px;
+  color: var(--fg-2);
+  overflow-wrap: anywhere;
+}
+.mat-a {
+  margin: 0;
+  font-size: 14px;
+  color: var(--fg);
+  white-space: nowrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 720px) {
+  .types { grid-template-columns: minmax(0, 1fr); }
+  .type { padding: 18px 20px; }
+  .have { grid-template-columns: minmax(0, 1fr); gap: 12px; padding: 20px; }
+  .have-n { white-space: normal; }
+  .mat { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .mat-a { white-space: normal; }
+}
+
+/* 文章を入れる表は折り返す（横スクロールの幅を短くするため）。 */
+table.matrix.wrapcells td, table.matrix.wrapcells th { white-space: normal; }
+table.matrix.wrapcells td.chain { min-width: 8em; }
+table.matrix.wrapcells td:last-child { min-width: 16em; }
+
+/* 固定ヘッダ（48px）の下にアンカー先が隠れないようにする。 */
+#tide, #fuel { scroll-margin-top: 64px; }
