@@ -98,7 +98,7 @@ const TIDE = [
 ];
 
 const TIDE_PAIR =
-  "どちらも「要件は前に進んだが、成立も申請もしていない」状態にある。" +
+  "どちらも「要件は前に進んだが、成立も、有効な申請の存続もしていない」状態にある。" +
   "前進と成立は別のことであり、このサイトは起きたことだけを記録する。";
 
 /* ------------------------------------------------------------------ *
@@ -139,11 +139,15 @@ const $ = (id) => document.getElementById(id);
 
 const lit = (marks) => marks.filter((m) => m === "●" || m === "○").length;
 
+const safeUrl = (u) => typeof u === "string" && /^https?:\/\//i.test(u.trim());
+
 function srcLinks(list) {
   if (!list || !list.length) return "";
+  const items = list.filter((s) => safeUrl(s.url));
+  if (!items.length) return "";
   return (
     '<p class="tide-src">' +
-    list
+    items
       .map(
         (s) =>
           `<a href="${esc(s.url)}" rel="noreferrer noopener" target="_blank">${esc(s.label)}</a>`
