@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>地域 — holders CORE / LEDGER 地域の層</title>
+<meta name="description" content="Catalyst の採択プロジェクトを世界地図から国ごとに辿る。金額順・完了順に並べ替え、提案者名と一次情報まで降りられる。">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css?v=person-rank-1">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap topbar-in">
+    <span class="mark">地域</span>
+    <span class="mark-sub">holders CORE</span>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="backlink"><a href="catalyst.html">← Catalyst まとめ</a></p>
+    <h1>地域</h1>
+    <p class="lede">採択されたプロジェクトを、世界地図から国ごとに辿る。国を押すと一覧が出て、金額順・完了順に並べ替えられる。</p>
+
+    <div class="figures">
+      <div class="fig">
+        <div class="fig-n" id="fig-rows">—</div>
+        <div class="fig-l">国の記録があるプロジェクト</div>
+      </div>
+      <div class="fig">
+        <div class="fig-n" id="fig-countries">—</div>
+        <div class="fig-l">記録に現れる国</div>
+      </div>
+      <div class="fig fig-lead">
+        <div class="fig-n" id="fig-unplaced">—</div>
+        <div class="fig-l">台帳のうち地域が分からない件数</div>
+        <p class="fig-note">台帳 <span id="n-total">—</span> 件のうち、国の記録を持つのは projectcatalyst.io に載る採択分だけ。残りは地図に一つも載らない。このサイトは自分の欠落を最初に示す。</p>
+      </div>
+    </div>
+
+    <p class="hero-foot" id="hero-foot">読み込み中…</p>
+  </div>
+</header>
+
+<main class="wrap map-main">
+
+  <!-- ================= 地図 + 一覧 ================= -->
+
+  <section class="map-sec" id="sec-app">
+    <div class="map-h">
+      <h2>地図</h2>
+      <span class="layer-jp">国を押すと、左にその国の一覧が出る</span>
+    </div>
+
+    <div class="rg-frame" id="appframe">
+      <aside class="rg-side" id="side">
+        <div class="rg-shead">
+          <div class="rg-place">
+            <button type="button" id="back" class="rg-back" hidden>← 世界</button>
+            <span class="rg-place-n" id="place">世界</span>
+            <span class="rg-place-c" id="place-count"></span>
+            <span class="rg-lang" role="group" aria-label="国名の表示">
+              <button type="button" class="rg-langb on" data-lang="ja">日本語</button>
+              <button type="button" class="rg-langb" data-lang="en">EN</button>
+            </span>
+          </div>
+          <div class="rg-mode" role="group" aria-label="一覧の単位">
+            <button type="button" class="rg-modeb on" data-mode="places">国・プロジェクト</button>
+            <button type="button" class="rg-modeb" data-mode="people">人物</button>
+          </div>
+          <input type="search" id="pq" placeholder="プロジェクト名・人物名・タグで絞る" aria-label="プロジェクト名・人物名・タグで絞る">
+          <div class="rg-controls">
+            <select id="sort" aria-label="並べ替え">
+              <option value="dist">配分済み額の大きい順</option>
+              <option value="req">申請額の大きい順</option>
+              <option value="done">完了の新しい順</option>
+              <option value="yes">投票 Yes の多い順</option>
+              <option value="fund">Fund の新しい順</option>
+            </select>
+            <select id="stf" aria-label="状態で絞る">
+              <option value="">状態: すべて</option>
+              <option value="Completed">完了</option>
+              <option value="Active">進行中</option>
+              <option value="Cancelled">中止</option>
+            </select>
+          </div>
+          <div class="rg-cur" id="curwrap" hidden>
+            <button type="button" class="rg-curb on" data-cur="ADA">ADA</button>
+            <button type="button" class="rg-curb" data-cur="USD">USD</button>
+            <span class="rg-cur-note">F9 以前は USD、F10 以降は ADA。換算はしない。通貨ごとに読む。</span>
+          </div>
+          <div class="rg-summary" id="summary"></div>
+        </div>
+        <ul class="rg-plist" id="plist"></ul>
+        <p class="rg-pempty" id="pempty" hidden>該当なし。条件に合う記録が無い。</p>
+        <button type="button" class="rg-pmore" id="pmore" hidden>さらに表示</button>
+
+        <div class="rg-pview" id="pview" hidden></div>
+      </aside>
+
+      <div class="rg-mappane" id="mapwrap">
+        <svg id="map" role="img" aria-labelledby="map-title" aria-describedby="map-desc"></svg>
+        <span id="map-title" hidden>Catalyst の採択の地域分布</span>
+        <span id="map-desc" hidden>国ごとの記録を濃さで表した世界地図。国を押すと左の一覧が絞り込まれる。</span>
+        <div class="rg-metric">
+          <div class="seg seg-metric" id="metricseg" style="--n:4;--i:0" role="group" aria-label="地図が表すもの">
+            <span class="seg-pill" aria-hidden="true"></span>
+            <button class="seg-btn on" data-metric="funded">採択</button>
+            <button class="seg-btn" data-metric="completed">完了</button>
+            <button class="seg-btn" data-metric="cancelled">中止</button>
+            <button class="seg-btn" data-metric="dist">配分額</button>
+          </div>
+        </div>
+        <div class="rg-zoom">
+          <button type="button" id="z-in" aria-label="拡大">＋</button>
+          <button type="button" id="z-out" aria-label="縮小">−</button>
+          <button type="button" id="z-all">全体</button>
+          <button type="button" id="z-full">全画面</button>
+        </div>
+        <div class="rg-jump" id="jump"></div>
+        <div class="rg-tip" id="tip" hidden></div>
+      </div>
+    </div>
+
+    <ul class="map-legend" id="legend"></ul>
+    <p class="rg-offmap" id="offmap"></p>
+  </section>
+
+  <!-- ================= 数が合わない ================= -->
+
+  <section class="map-sec" id="sec-gap">
+    <div class="map-h">
+      <h2>数が合わない</h2>
+      <span class="layer-jp">同じものを数えた四つの数</span>
+    </div>
+
+    <p class="map-lead">「採択された提案は何件か」に対して、出どころごとに違う数が出る。
+      どれが正しいかはここでは決めない。<strong>合わないことが記録である。</strong></p>
+
+    <div class="tablewrap">
+      <table class="matrix wrapcells" id="gap"></table>
+    </div>
+
+    <h3 class="map-h3">公式データに入っているもの</h3>
+    <p class="map-lead">以下は公式の配信データをそのまま読んで機械的に検出したものである。名寄せも修正もしていない。</p>
+    <ul class="rg-defects" id="defects"></ul>
+
+    <div class="map-caveat">
+      <p>公式マップは大陸を選んでから国を見る作りなので、大陸の値と国の合計が食い違っていても画面には出てこない。
+        ここでは全部を一枚に置いているだけで、新しい計算はしていない。</p>
+      <p>この欄は公式マップを責めるためのものではない。<strong>地域の層がこの精度でしか存在しないという事実</strong>を、台帳と同じ重さで読ませないために置いている。</p>
+    </div>
+  </section>
+
+  <!-- ================= 一覧 ================= -->
+
+  <section class="map-sec" id="sec-list">
+    <div class="map-h">
+      <h2>国の一覧</h2>
+      <span class="layer-jp">公式マップの全行</span>
+    </div>
+
+    <p class="map-lead">公式の配信データにある <span id="n-rows">—</span> 行を、一行も落とさずに並べている。
+      印の付いた行も消していない。配分額は USD。</p>
+
+    <div class="tablewrap">
+      <table id="countries">
+        <thead><tr>
+          <th scope="col">国</th>
+          <th scope="col">地域</th>
+          <th scope="col" class="num">採択</th>
+          <th scope="col" class="num">完了</th>
+          <th scope="col" class="num">進行中</th>
+          <th scope="col" class="num">中止</th>
+          <th scope="col" class="num">配分額</th>
+          <th scope="col">印</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<section class="rules">
+  <div class="wrap rules-in">
+    <ul>
+      <li>地域は台帳ではない。台帳と同じ重さで読ませない。</li>
+      <li>公式の値は書き換えない。壊れているものは印を付けて、そのまま出す。</li>
+      <li>提案の位置は国までしか記録が無い。無い精度を描かない。</li>
+      <li>地域に順位を付けない。件数が多いことは良いことではない。</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>プロジェクトの国・状態・金額・投票は <a href="https://projectcatalyst.io" target="_blank" rel="noopener noreferrer">projectcatalyst.io</a> の公開データ（公式 global map と同じ CMS）に由来する。提案者名は <a href="https://www.catalystexplorer.com" target="_blank" rel="noopener noreferrer">Catalyst Explorer</a> の台帳データを、公式ページへのリンク一致で突き合わせたもの。一致しなかったものは名前なしのまま出している。</p>
+    <p>国境の形は <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener noreferrer">Natural Earth</a>（パブリックドメイン）の 1:50m 国境データによる。投影は Miller cylindrical、緯度は ±85 度で切り、南極は描いていない。国境の引き方はどの地図データにも立場が含まれる。ここでは Natural Earth の表記をそのまま使い、書き換えていない。</p>
+    <p>事実の誤りを見つけたら、記録として残る形で受け取る: <a href="https://github.com/HFOT/holders-core/issues" target="_blank" rel="noopener noreferrer">GitHub Issues</a></p>
+  </div>
+</footer>
+
+<script src="region.js?v=person-rank-1"></script>
+</body>
+</html>

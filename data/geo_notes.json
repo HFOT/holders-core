@@ -1,0 +1,19 @@
+{
+  "_comment": "公式 global map の国一覧に対する手動の注記。名前を書き換えるためのものではなく、印を付けるためのもの。自動では判定できないものだけをここに置く。重複・表記ゆれ・大陸名の混入は catalyst/geo.py が自動で検出するので、ここには書かない。",
+  "_reviewed": "2026-09-05",
+  "notes": {
+    "texas": ["not_a_country"]
+  },
+
+  "_aliases_comment": "公式マップの国名 → Natural Earth の国名。地図上のどの形に対応するかを人が確認して置いた対応表であり、公式側の名前は書き換えない。ここに無い名前はそのまま Natural Earth の名前として照合する。照合できなければ地図に置かず、置けなかったことを画面に出す。",
+  "aliases": {
+    "USA": "United States of America",
+    "Czech Republic": "Czechia",
+    "Czech republic": "Czechia",
+    "Democratic Republic of Congo": "Dem. Rep. Congo",
+    "British Virgin Islands": "British Virgin Is.",
+    "Cayman Islands": "Cayman Is.",
+    "Marshall Islands": "Marshall Is.",
+    "St. Vincent": "St. Vin. and Gren."
+  }
+}
