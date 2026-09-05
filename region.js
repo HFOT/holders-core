@@ -425,6 +425,10 @@ function renderPlist() {
           <span class="rg-pi-s">採択 ${num(g.funded)}・完了 ${num(g.completed)}・中止 ${num(
           g.cancelled
         )}</span>
+          <span class="rg-ci-actions">
+            <button type="button" class="rg-ci-action" data-country-view="people">調達額順で見る</button>
+            <button type="button" class="rg-ci-action" data-country-view="projects">projectを見る</button>
+          </span>
         </li>`
       )
       .join("");
@@ -1356,6 +1360,32 @@ function wireControls() {
     renderProject();
   };
   $("plist").addEventListener("click", (ev) => {
+    const countryAction = ev.target.closest(".rg-ci-action");
+    if (countryAction) {
+      const li = countryAction.closest(".rg-ci");
+      const people = countryAction.dataset.countryView === "people";
+      state.mode = people ? "people" : "places";
+      state.person = null;
+      state.project = null;
+      state.shown = PAGE;
+      if (people) {
+        state.sort = "dist";
+        $("sort").value = "dist";
+      }
+      document.querySelectorAll(".rg-modeb").forEach((b) =>
+        b.classList.toggle("on", b.dataset.mode === state.mode)
+      );
+      if (li.dataset.shape) {
+        pickShape(li.dataset.shape);
+      } else {
+        state.shape = null;
+        state.countryOnly = li.dataset.country;
+        for (const el of document.querySelectorAll(".rg-sh.on")) el.classList.remove("on");
+        renderProject();
+        renderPlist();
+      }
+      return;
+    }
     const li = ev.target.closest(".rg-pi, .rg-ci, .rg-person");
     if (li) activate(li);
   });
