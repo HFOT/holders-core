@@ -1,0 +1,61 @@
+/* Catalyst Detailed Map — TOP 専用。
+   地図の見た目は region.html 側（共用 style.css）が持つ。ここは触らない。 */
+
+:root {
+  --cm-bg: #0b0f14;
+  --cm-fg: #e8eef5;
+  --cm-dim: #8fa3b8;
+  --cm-line: rgba(255, 255, 255, .12);
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--cm-bg);
+  color: var(--cm-fg);
+  font: 16px/1.9 system-ui, -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+.cm-wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
+
+/* ① ヒーロー */
+.cm-hero { position: relative; min-height: 100vh; }
+.cm-hero-map {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+.cm-hero-copy {
+  position: relative;
+  pointer-events: none;               /* 地図の操作を邪魔しない */
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 12vh 24px 0;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, .85);
+}
+.cm-hero-copy a { pointer-events: auto; }
+.cm-hero-copy h1 {
+  font-size: clamp(1.9rem, 4.6vw, 3.4rem);
+  line-height: 1.35;
+  margin: 0 0 1.2em;
+  font-weight: 700;
+}
+.cm-lead { font-size: clamp(1.2rem, 2.6vw, 1.9rem); margin: 1.6em 0; }
+.cm-cta {
+  pointer-events: auto;
+  display: inline-block;
+  padding: .9em 2.2em;
+  border: 1px solid var(--cm-line);
+  border-radius: 999px;
+  color: var(--cm-fg);
+  text-decoration: none;
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, .06);
+}
+.cm-cta:hover { background: rgba(255, 255, 255, .12); }
+
+/* ② 計器 */
+.cm-figures { padding: 14vh 0; border-top: 1px solid var(--cm-line); }
+.cm-fig-row { display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center; }
+.cm-fig { text-align: center; }
+.cm-fig b { display: block; font-size: clamp(2rem, 6vw, 4rem); font-weight: 700; }
+.cm-fig span { color: var(--cm-dim); font-size: .95rem; }
