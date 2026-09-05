@@ -1,0 +1,82 @@
+{
+  "title": "SIDAN - Delegator Feedback System for DRep Voting",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "・Team setup: developers/advisors confirmed with roles, responsibilities, and meeting/on-call cadence.\n・Communications: public announcement, community channel (Discord/Telegram), X/Twitter post, contributor guidelines.\n・Project planning: GitHub Projects roadmap with milestones, labeled issue/PR templates, initial delivery plan.",
+      "criteria": "・Repo: public repo live with LICENSE committed and visible.\n・Communications: announcement post published (link in repo), community channel invite in README.\n・Project planning: GitHub Projects board active with milestones and actionable issues linked to this milestone.",
+      "report": "A. Output: Team setup: developers/advisors confirmed with roles, responsibilities, and meeting/on-call cadence.\nAcceptance criteria: Cadence meeting minute on role and responsibilities discussions and decision\nEvidence: https://docs.google.com/document/d/1dKzm95EOuCw58ZwUFruOgA62-qWk9gGX/edit\nB. Output: Communications: public announcement, community channel (Discord/Telegram), X/Twitter post, contributor guidelines\nAcceptance criteria: Communications: announcement post published (link in repo), community channel invite in README\nEvidence: https://github.com/sidan-lab/drep-delegator-feedback-system (it also shows the announcement post discord channel and discord invite link)\nC. Output: Project planning: GitHub Projects roadmap with milestones, labeled issue/PR templates, initial delivery plan.\nAcceptance criteria: Project planning: GitHub Projects board active with milestones and actionable issues linked to this milestone.\nEvidence: https://github.com/sidan-lab/drep-delegator-feedback-system/projects?query=is%3Aopen\nD. Output: Communications: public announcement, community channel (Discord/Telegram), X/Twitter post, contributor guidelines.\nAcceptance criteria: Repo: public repo live with LICENSE committed and visible.\nEvidence: https://github.com/sidan-lab/drep-delegator-feedback-system (it also shows LICENSE file and CONTRIBUTING.md)\nE. Output: Communications: public announcement, community channel (Discord/Telegram), X/Twitter post, contributor guidelines\nAcceptance criteria: Small consolidated report on the above milestone achievements\nEvidence: https://discord.com/channels/1166784293805228061/1441817121909903370/1444932285710340269\nF. Output: Legal entity established and operational (shown in Hong Kong Business Registration Certificate)\nAcceptance criteria: N.A.\nEvidence: https://drive.google.com/file/d/1ZnB0N7VKdW-yBIzrjRQgfWtJTTS8ETr-/view?usp=drive_link",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 12
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 20000,
+      "promise": "・Collect the feature requirement of the DRep management web platform\n・Design the DRep management web platform\n・Development of the web platform, showing active governance action and build with voting feature\n・Mock data visualization of community sentiment, to be collected through discord bot",
+      "criteria": "・A curated list of features to be built in the DRep management web platform\n・Design of the UIUX of the DRep web platform\n・A workable web platform for DRep voting on active governance proposals\n・Successful visualization of mock community sentiment data\n・Passed test scenarios covering DRep voting (Yes & No & Abstain) on governance actions",
+      "report": "A. Output: Collect the feature requirement of the DRep management web platform\nAcceptance criteria: A curated list of features to be built in the DRep management web platform\nEvidence: List of features are being documented in https://github.com/sidan-lab/drep-delegator-feedback-system/blob/main/doc/milestone-2.md\nB. Output: Design the DRep management web platform\nAcceptance criteria: Design of the UIUX of the DRep web platform\nEvidence: UIUX of the DRep web platform is being documented in https://github.com/sidan-lab/drep-delegator-feedback-system/blob/main/doc/milestone-2.md\nC. Output: Development of the web platform, showing active governance action and build with voting feature\nAcceptance criteria: A workable web platform for DRep voting on active governance proposals\nEvidence: Public link to the developed code on SIDAN Lab Github --> https://github.com/sidan-lab/drep-delegator-feedback-system\nD. Output: Mock data visualization of community sentiment, to be collected through discord bot\nAcceptance criteria: Passed test scenarios covering DRep voting (Yes & No & Abstain) on governance actions \nEvidence: Public link to documented expected output of governance action voting (Yes & No & Abstain) and visualized mock community sentiment data in web platform in github --> https://github.com/sidan-lab/drep-delegator-feedback-system/blob/main/doc/milestone-2.md\nE. Output: Development of the web platform, showing active governance action and build with voting feature\nAcceptance criteria: A workable web platform for DRep voting on active governance proposals\nEvidence: Video demo on the DRep voting on governance actions and visualization of mock community sentiment data (local environment) is being shown in https://www.youtube.com/watch?v=EGzKCMcuPBw\nF. Output: Public link to post on Twitter/X to inform the Public\nAcceptance criteria: Public link to post on Twitter/X to inform the Public\nEvidence: https://x.com/sidan_lab/status/1999070313330737227\nG: Output: Link to SIDAN La",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 16,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 20000,
+      "promise": "・Delegators can vote and express opinion on discord\n・The delegators voting statistics will be recorded\n・The delegator voting statistics are channel to web platform for voting consideration, and notify community on voting result",
+      "criteria": "・Develop and integrate discord bot to allow delegator voting\n・Integrate actual delegator voting statistics are channel to web platform for voting consideration\n・Integrate web platform to publish voting decision with rationale to discord automatically\n・Passed test scenarios covering (1) update from delegator voting statistics in discord to web platform; (2) update from web platform governance action DRep voting decision (and rationale if provided) to respective discord channel",
+      "report": "Resubmit the same POA based on the POA reviewer's comment in the previous POA review (You can resubmit the same PoA , once previous PoA gets approval.):\nA. Output: Delegators can vote and express opinion on discord\nAcceptance criteria: Develop and integrate discord bot to allow delegator voting\nEvidence: The demo video has included a demonstration of voting and commenting in discord channel as a discord user (verified delegator). Demo video link in https://www.youtube.com/watch?v=uUDj0dPdNm8.\nB. Output: The delegators voting statistics will be recorded\nAcceptance criteria: Integrate actual delegator voting statistics are channel to web platform for voting consideration\nEvidence: The demo video has included a demonstration of syncing the delegators' votes and comments to web platform (proposal details page) for DRep's voting consideration. Demo video link in https://www.youtube.com/watch?v=uUDj0dPdNm8.\nC. Output: The delegator voting statistics are channel to web platform for voting consideration, and notify community on voting result\nAcceptance criteria: Integrate web platform to publish voting decision with rationale to discord automatically\nEvidence: The demo video has included a demonstration of publishing DRep's voting decision and link to rationale to the respective discord post after the DRep has made a vote on web platform. Demo video link in https://www.youtube.com/watch?v=uUDj0dPdNm8.\nD. Output: Delegators can vote and express opinion on discord; The delegators voting statistics will be recorded; The delegator voting statistics are channel to web platform for voting consideration, and notify community on voting result\nAcceptance criteria: Passed test scenarios covering (1) update from delegator voting statistics in discord to web platform; (2) update from web platform governance action DRep voting decision (and rationale if provided) to respective discord channel\nEvidence: The whole testing flow of the test scenarios has been documented in https://sidan.not",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 16,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 20000,
+      "promise": "・Collect feedback from community DReps on how to effectively displaying information assisting voting\n・Enhance the web platform with basic information for easier consumption of relevant info for voting",
+      "criteria": "・A curated list of information to be displayed in the DRep management web platform\n・Develop the visualization of the information collected from DReps suggestion, showing current voting statistics\n・Develop any other features apart from information display as suggested by community",
+      "report": "A. Output: Collect feedback from community DReps on how to effectively displaying information assisting voting\nAcceptance criteria: A curated list of information to be displayed in the DRep management web platform\nEvidence: The curated list of information being displayed in the DRep Management Web Platform is shown in https://github.com/sidan-lab/drep-delegator-feedback-system/blob/main/doc/milestone-4.md. You could find the the information in the list in https://delegator-gov.sidan.io/.\nB. Output: Enhance the web platform with basic information for easier consumption of relevant info for voting\nAcceptance criteria: Develop the visualization of the information collected from DReps suggestion, showing current voting statistics\nEvidence: Link to the documented report mentioning where were the enhancement suggested and what enhancement was done in https://sidan.notion.site/SIDAN-Delegator-Feedback-System-For-DRep-Voting-Milestone-4-Documented-report-2edc299fe9af80be9b77e4d7fb147621. You could find the the information in the list in https://delegator-gov.sidan.io/.\nC. Output: Enhance the web platform with basic information for easier consumption of relevant info for voting\nAcceptance criteria: Develop any other features apart from information display as suggested by community\nEvidence: The video demo of the enhancement feature are being published in https://www.youtube.com/watch?v=0SchC4ud7o8\nD. Output: Public link to post on Twitter/X to inform the Public\nAcceptance criteria: Public link to post on Twitter/X to inform the Public\nEvidence: https://x.com/sidan_lab/status/2019714218514415890?s=20\nE. Output: Developed code on SIDAN Lab Github\nAcceptance criteria: Developed code on SIDAN Lab Github\nEvidence: https://github.com/sidan-lab/drep-delegator-feedback-system/tree/main\nF. Output: Link to SIDAN Lab discord on announcement\nAcceptance criteria: Link to SIDAN Lab discord on announcement\nEvidence: https://discord.com/channels/1166784293805228061/1441345925950996615/14692",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 18,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 20000,
+      "promise": "・Wrap the proposal delivery, compile the full product description\n・Summarize the findings obtained from interacting with DReps in the process\n・Document the workflow or guidance on others whoever want to deploy the whole set of development to its respected community",
+      "criteria": "・Provide documentation on the SIDAN - Delegator feedback system for DRep voting.\n・Also setup contribution guidelines for further collaboration across the community\n・The Delegator feedback system's testing should cover at least 2 governance actions, demonstrating the platform is functional as expected\n・Prepare the close-out report\n・Prepare the close-out video",
+      "report": "A. Output: Wrap the proposal delivery, compile the full product description\nAcceptance criteria: Provide documentation on the SIDAN - Delegator feedback system for DRep voting.\nEvidence: \nThe full product description is documented across the following files in the public GitHub repository:\n・System Overview & Architecture - https://github.com/sidan-lab/drep-delegator-feedback-system/blob/main/README.md: Project goals, architecture diagram, tech stack, repository structure, local development setup, and deployment references.\n・Full Product Description - https://github.com/sidan-lab/drep-delegator-feedback-system/blob/main/frontend/docs/01-project-description.md: Comprehensive feature documentation including governance dashboard, NCL tracking, wallet integration, DRep registration workflow, delegator sentiment system, data models, API integration, and user flows.\n・API Documentation - https://github.com/sidan-lab/drep-delegator-feedback-system/blob/main/api/docs/swagger.json: OpenAPI 3.0 specification for all API endpoints. Also available as interactive Swagger UI at the deployed API's /api-docs route.\n\nB. Output: Summarize the findings obtained from interacting with DReps in the process\nAcceptance criteria: Provide documentation on the SIDAN - Delegator feedback system for DRep voting.\nEvidence: \n・DRep & Community Feature Suggestions - https://github.com/sidan-lab/drep-delegator-feedback-system/blob/main/doc/milestone-4.md: Documents two feature enhancements directly suggested through DRep and community interaction:\n・a. Voting Deadline Alerts & Reminders - Proactive notifications when proposal voting deadlines approach, with configurable alert thresholds (7 days, 3 days, 1 day before expiry) and push via Discord DM or web notification.\n・b. DRep Draft Rationale Publishing - Addresses the gap where DReps only published their voting decision after voting on-chain. Adds a \"Draft Vote Intent\" feature enabling two-way dialogue with delegators before decisions are finalized.\n・",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 36,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・ヘッダーパーサのサポートを追加\n・ブロックパーサーのサポートを追加\n・メタデータパーサのサポートを追加\n・証人パーサーのサポートを追加",
+      "criteria": "・公開 GitHub PR で実装・検証できると、関連したコミットを出力します。\n・レポに提供されているGitHub PR Link - https://github.com/StricaHQ/cardano-codec",
+      "report": "下記の機能を実施\n・ヘッダーパーサのサポートを追加\n・ブロックパーサーのサポートを追加\n・メタデータパーサのサポートを追加\n・証人パーサーのサポートを追加\n\nGitHub PR - https://github.com/StricaHQ/cardano-codec/pull/1/files"
+    },
+    {
+      "no": 2,
+      "promise": "・取引パーサのサポートを追加\n・証明書パーサ(dRep reg、deleg、DRep deReg、その他のConway消去証明書)のサポートを追加\n・プロトコルパラメータパーサのサポートを追加",
+      "criteria": "・公開 GitHub PR で実装・検証できると、関連したコミットを出力します。\n・レポに提供されているGitHub PR Link - https://github.com/StricaHQ/cardano-codec",
+      "report": "下記の機能を実施\n・取引パーサのサポートを追加\n・新しいガバナンス証明書のパーサのサポートを追加\n・プロトコルパラメータパーサの型を追加\n\nGitHub PR - https://github.com/StricaHQ/cardano-codec/pull/2/files"
+    },
+    {
+      "no": 3,
+      "promise": "・投票手続パーサーのサポートを追加\n・提案手続パーサ(govアクション)のサポートを追加\n・プロトコルパラメータパーサのサポートを追加",
+      "criteria": "・公開 GitHub PR で実装・検証できると、関連したコミットを出力します。\n・レポに提供されているGitHub PR Link - https://github.com/StricaHQ/cardano-codec",
+      "report": "Gov関連のパーサのサポートを追加しました。\n・投票手続パーサーのサポート\n・提案手続パーサ(govアクション)のサポート\n・新しいプロトコルパラムパーサーのサポート\n\nGitHub PR - https://github.com/StricaHQ/cardano-codec/pull/3"
+    },
+    {
+      "no": 4,
+      "promise": "・NPMリリース\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・更新されたドキュメントリンク\n・NPM(提供:リンク)でリリースされた新バージョン\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "・すべてのマイルストーンが達成され、npmに新しいバージョンのライブラリがリリースされます。\n・npmにlib v2.0.1をリリース - https://www.npmjs.com/package/@stricahq/cardano-codec\n・ドキュメント更新 - https://docs.strica.io/lib/cardano-codec/index.html\n・動画を閉じる - https://youtu.be/Z5QjeZewjHU\n・終了報告 - https://drive.google.com/file/d/1R6X0MfyzaoW-Sghu3 Ox1tUrG4oPHd D/view?usp=drive link"
+    }
+  ]
+}

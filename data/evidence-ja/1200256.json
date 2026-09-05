@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "コンテキスト: スマートコントラクトウォレットバックエンドは、スマートコントラクト(オンチェーン)、関連するオフチェーンコード、サーバーコードを含むライブラリで、Cardanoブロックチェーン用のスマートコントラクトベースの暗号通貨ウォレットを実行します。 Cardanoウォレット(ブラウザ拡張)は、ライブラリを利用することができます。\nタスク: スマートコントラクトのドキュメントを作成して、正確に何をするかを指定します。 また、スマートコントラクトウォレットバックエンドを使用するウォレット開発者に利用可能なAPIの説明を作成します。\n出力:\n・スマートコントラクトウォレットの仕様をプロデュース\n・スマートコントラクトウォレットAPIドキュメントの生成",
+      "criteria": "・リポにスマートコントラクトウォレットの仕様が確認できます\n・スマートコントラクトウォレット API ドキュメントは、リポジトリで見つけることができます",
+      "report": "スマートコントラクトのドキュメンテーションを作成しました。 また、スマートコントラクトウォレットバックエンドを使用するウォレット開発者に利用可能なAPIの説明を完了しました。\nスマートコントラクトウォレットの仕様を制作\nhttps://docs.zkfold.io/other-zkapps/wallet-backend/\nスマートコントラクトウォレット API ドキュメントの作成\nCIP-30 ウォレット API:\nhttps://docs.zkfold.io/other-zkapps/wallet-backend/#cip-30-wallet-api\nシンボリックウォレットAPI\nhttps://docs.zkfold.io/other-zkapps/wallet-backend/#symbolic-wallet-api"
+    },
+    {
+      "no": 2,
+      "promise": "コンテキスト: スマートコントラクトウォレットバックエンドは、スマートコントラクト(オンチェーン)、関連するオフチェーンコード、サーバーコードを含むライブラリで、Cardanoブロックチェーン用のスマートコントラクトベースの暗号通貨ウォレットを実行します。 Cardanoウォレット(ブラウザ拡張)は、ライブラリを利用することができます。\nタスク:スマートコントラクトウォレットバックエンドのCIP-30インターフェイスを実行します。\n出力:\n・CIP-30スマートコントラクトウォレットバックエンドプロトタイプの構築",
+      "criteria": "CIP-30スマートコントラクトウォレットバックエンドプロトタイプは、リポジトリに見つけることができます",
+      "report": "タスク:\nスマートコントラクトウォレットバックエンド用のCIP-30インターフェイスを作成しました。\n出力:\nビルドCIP-30スマートコントラクトウォレットバックエンドプロトタイプは、当社のリポジトリで見つけることができます。\nhttps://github.com/zkFold/smart-contract-wallet"
+    },
+    {
+      "no": 3,
+      "promise": "コンテキスト: スマートコントラクトウォレットバックエンドは、スマートコントラクト(オンチェーン)、関連するオフチェーンコード、サーバーコードを含むライブラリで、Cardanoブロックチェーン用のスマートコントラクトベースの暗号通貨ウォレットを実行します。 Cardanoウォレット(ブラウザ拡張)は、ライブラリを利用することができます。\nタスク:スマートコントラクトウォレット機能のプロトタイプを実装します。 これらの機能のスマートコントラクト(オンチェーン)コードを作成する必要があります。\n出力:\n・汎用zkLogin機能プロトタイプ(ハッセル)の構築\n・バベル料金機能プロトタイプの構築(ハッセル)\n・スポンサードトランザクション機能プロトタイプの構築(ハッセル)\n・完全マルチユーザトランザクション機能プロトタイプ(Haskell)",
+      "criteria": "・一般的なzkLogin機能プロトタイプ(Haskell)は、リポジトリで見つけることができます\n・babel 手数料機能プロトタイプ(Haskell)は、リポジトリで見つけることができます\n・スポンサードトランザクション機能プロトタイプ(Haskell)は、レポで見つけることができます\n・複数ユーザのトランザクション機能のプロトタイプ(Haskell)は、リポジトリで見つけることができます",
+      "report": "スマートコントラクトウォレットの機能のプロトタイプを以下に実装しました。\n一般的なzkLogin機能プロトタイプ(Haskell)の構築\nhttps://github.com/zkFold/zkfold-base/blob/main/symbolic-cardano/src/ZkFold/Symbolic/Cardano/Contracts/ZkLogin.hs\nバイベル料金機能プロトタイプ(ハッセル)の構築\nhttps://github.com/zkFold/zkfold-base/blob/main/symbolic-cardano/src/ZkFold/Symbolic/Cardano/Contracts/BabelFees.hs\nスポンサードトランザクション機能のプロトタイプ(ハッセル)の構築\nhttps://github.com/zkFold/zkfold-base/blob/main/symbolic-cardano/src/ZkFold/Symbolic/Cardano/Contracts/後援Tx.hs\n完全マルチユーザートランザクション機能プロトタイプ(ハッセル)\nhttps://github.com/zkFold/zkfold-base/blob/main/symbolic-cardano/src/ZkFold/Symbolic/Cardano/Contracts/BatchTransfer.hs"
+    },
+    {
+      "no": 4,
+      "promise": "コンテキスト: スマートコントラクトウォレットバックエンドは、スマートコントラクト(オンチェーン)、関連するオフチェーンコード、サーバーコードを含むライブラリで、Cardanoブロックチェーン用のスマートコントラクトベースの暗号通貨ウォレットを実行します。 Cardanoウォレット(ブラウザ拡張)は、ライブラリを利用することができます。\nタスク:2つの具体的なオプションでzkLogin機能を完成させます。\n出力:\n・完全なzkLogin機能 - Google\n・完全なzkLogin機能 - Twitch",
+      "criteria": "・zkLogin 機能 - Google はリポジトリで見つけることができます\n・zkLogin 機能 - Twitch はリポジトリで見つけることができます",
+      "report": "GoogleとTwitch用のzkLogin機能を完成しました。 下記のリンクをご覧ください。\n・https://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/JWT.hs\n・https://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/JWT/Google.hs\n・https://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/JWT/Twitch.hs\n・https://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/JWT/RS256.hs\n・https://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/JWT/Utils.hs"
+    },
+    {
+      "no": 5,
+      "promise": "コンテキスト: スマートコントラクトウォレットバックエンドは、スマートコントラクト(オンチェーン)、関連するオフチェーンコード、サーバーコードを含むライブラリで、Cardanoブロックチェーン用のスマートコントラクトベースの暗号通貨ウォレットを実行します。 Cardanoウォレット(ブラウザ拡張)は、ライブラリを利用することができます。\nタスク: ウォレットのスマートコントラクトに機能を統合します。 ウォレットのスマートコントラクト(オンチェーン)を変更し、関連するオフチェーンコードを作成する必要があります。\n出力:\n・ウォレットのスマートコントラクトに機能を統合:zkLogin\n・ウォレットのスマートコントラクトに機能を統合:マルチユーザートランザクション\n・ウォレットのスマートコントラクトに機能を統合:バイベル料金とスポンサー取引",
+      "criteria": "・ウォレットのスマートコントラクト: zkLogin 機能は、リポジトリに見つけることができます\n・ウォレットスマートコントラクト:マルチユーザートランザクション機能がリポジトリに表示\n・ウォレットスマートコントラクト:バベルフィーとスポンサードトランザクション機能がリポジトリに見つけることができます",
+      "report": "プロジェクトのマイルストーン5を完成しました。 このマイルストーンの出力は、バッチトランザクション、バベルフィー、スポンサードトランザクションの3つの機能を実装するサーバーコードです。\nバッチ処理コードは、以下を参照できます。\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/Smart%20Wallet/Batch.hs\nbabel 手数料とスポンサード トランザクション コードはこちら:\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/Smart%20Wallet/スポンサー.hs\nスマートコントラクトコードは、\nhttps://github.com/zkFold/zkfold-cardano/blob/main/zkfold-cardanoscripts/src/ZkFold/Cardano/UPLC/Wallet.hs\nウォレットのスマートコントラクトは、3つの機能をすべて完全にサポートしています."
+    },
+    {
+      "no": 6,
+      "promise": "コンテキスト: スマートコントラクトウォレットバックエンドは、スマートコントラクト(オンチェーン)、関連するオフチェーンコード、サーバーコードを含むライブラリで、Cardanoブロックチェーン用のスマートコントラクトベースの暗号通貨ウォレットを実行します。 Cardanoウォレット(ブラウザ拡張)は、ライブラリを利用することができます。\nタスク: 特定の機能はバックエンドサーバも必要です。 最終的なマイルストーンとして、スマートコントラクトウォレットバックエンドのシンプルなバックエンドサーバを実装しています。 また、クローズアウトレポートを制作いたします。\n出力:\n・マルチユーザトランザクション・バッチラーの構築(バックエンド・サーバー)\n・スポンサードトランザクションバックエンドサーバの構築\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "弊社のGitHub(https://github.com/zkFold/)で、バッチャー、バックエンドサーバー、ビデオ、およびレポートへのリンクが公開されています。\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "最後のマイルストーンを完成し、前回のコメントを承認しました(最終ビデオにチャレンジ、学習、成果を追加)\n・マルチユーザートランザクションのバッチラー(バックエンドサーバ): https://github.com/zkFold/project-catalyst-reports/blob/main/Smart%20Wallet/Batch.hs\n・スポンサードトランザクションバックエンドサーバーの構築:https://github.com/zkFold/project-catalyst-reports/blob/main/Smart%20Wallet/Sponsor.hs\n・最終クローズアウトレポート https://github.com/zkFold/project-catalyst-reports/blob/dffc981477a9f2fa79822e09732c70a121714141414/Smart%20Wallet/1200256%20%20zkFold %20Smart%20Contract%20Wallet%20Backend%20%20%20クローズ%20%20%20%20%20%20%20%20report.pdf\n・最終クローズアウトビデオ: https://youtu.be/xZxmiRPWdIE (メイン) https://youtu.be/dwz1kVVcbPo (オプション)\n・Xの投稿へのリンク: https://x.com/zkFold/status/1909524663408918945"
+    }
+  ]
+}

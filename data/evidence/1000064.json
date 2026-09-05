@@ -1,0 +1,46 @@
+{
+  "title": "Development of a Cardano DApp and extensive documentation of each step along the way",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 6000,
+      "promise": "・Scope Document: A comprehensive outline detailing the project's goals, objectives, and deliverables.\n・User Stories: A set of narratives capturing the needs and wants of the end-users.\n・Use Cases and UML diagrams: Visual workflows depicting the DApp’s functional behaviour and structure. \n・Use Case Diagrams: These help in identifying the different actors (users, other systems, or DApps) and their interactions with the DApp. This can show how a user might initiate a transaction, query the blockchain, or interact with smart contracts.\n・Class Diagrams: Useful for detailing the structure of smart contracts, including their attributes, operations, and the relationships between them. This could illustrate token standards (like ERC-20 or ERC-721), or more intricate contract relationships.\n・Sequence Diagrams: These can depict the interactions over time between users, the DApp, external systems, and the underlying blockchain. This might show the sequence of calls to a smart contract function, how events are emitted, or how off-chain components interact with the blockchain.\n・Activity Diagrams: These capture the dynamic behavior and flow within the system. They can be utilized to show the flow",
+      "criteria": "・The Scope Document must delineate the project's parameters, objectives, and deliverables.\n・User Stories must encompass all potential DApp user interactions.\n・Use Cases should be paired with UML diagrams, depicting precise workflows of the DApp.",
+      "report": "The documentation is available at : https://gitlab.com/mariusgeorgescu1/c-a-r-d-a-n-o-raffles",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 6000,
+      "promise": "・Smart Contracts written in Plutus: Customized contracts facilitating the DApp's required functions.\n・Preliminary Test Suites: A combination of unit tests and property-based tests tailored for the written smart contracts.\n・Haddock Documentation: Initial documentation of the smart contracts using Haddock.\n・Samples of transaction construction using cardano-cli.",
+      "criteria": "・Smart contracts must be deployable and functional on the Cardano testnet.\n・Unit and property-based tests must execute without errors.\n・Haddock documentation should be detailed, covering all facets of the smart contracts.",
+      "report": "Source code and documentation available on : https://github.com/mariusgeorgescu/raffleize \nImproved DApp design in order to leverage CIP-68 Dynamic NFTs features.\nOnchain Code : \n・2 Smart Contracts and 1 Minting Policy implemented in PlutusTx.: ( src/RaffleizeDApp/OnChain/* )\n\nOffchain Code: \n・Transaction Building implemented using atlas-framework : ( src/RaffleizeDApp/TxBuilding/* )\n・Unit tests implemented using plutus-simple-model and atlas: ( src/RaffleizeDApp/Tests/* )\n\nRe-written functional documentation for redesigned app. (README.md)\nAll facets of the smart contracts documented, including mindmap diagrams for transcation building. (README.md)",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "11",
+      "cost": 8000,
+      "promise": "・Off-chain Code in Haskell: Code to bridge onchain contracts with user interfaces.\n・Complete Haddock Documentation: Documentation encompassing both onchain and offchain code.\n・API Specs: Detailed specification of the DApp's API.\n・Release Guide: Comprehensive instructions for deployment, operation, and troubleshooting.\n・Walkthrough Videos: Multimedia content elucidating DApp functionalities.",
+      "criteria": "・Offchain Haskell scripts must integrate flawlessly with onchain Plutus contracts.\n・All tests should pass, indicating full DApp functionality.\n・Haddock documentation should be exhaustive, covering every part of the project.\n・API Specs and Release Guide should be clear and actionable.\n・Walkthrough videos need to be comprehensible, covering all the content.",
+      "report": "Project Closeout Report for 1000064\nName of project and Project URL on IdeaScale/Fund\nDevelopment of a Cardano DApp and extensive documentation of each step along the way\nhttps://cardano.ideascale.com/c/idea/105248\nYour Project Number\n[1000064]\nName of project manager\nMarius Georgescu\nDate project started\n[01.10.2023]\nDate project completed\n[15.07.2024]\nList of challenge KPIs and how the project addressed them\n\n・Educational Tool: This DApp can serve as an open-source and extensively documented exemplar, providing a comprehensive learning resource for individuals and entities interested in building on the Cardano blockchain.\n・Operational DApp: Beyond its educational value, RAFFLEIZE C-A-R-D-A-N-A is intended to be a fully functioning DApp running on the Cardano mainnet, achieving the objectives like the ones listed below.\n\nList of project KPIs and how the project addressed them\n\n・Decentralized Trust: The commit and reveal scheme ensures that the process of picking a winner is transparent and verifiable, thus fostering trust among participants.\n・Privacy Preservation & Inclusive Participation: By leveraging dynamic NFTs (using CIP-0068 Datum Metadata Standard) , Raffleize participation rights are tied to NFTs not to addresses.\n・Enhanced Liquidity: Tokenizing raffle ownership and tickets makes these assets more liquid. Owners can easily trade or sell their stakes or participation rights on various platforms, not limited to the original DApp. \n・Recursive Raffle Opportunities: (Raffles of Raffles) Owners can create raffles for their raffle stakes or tickets, adding a recursive layer of engagement. This not only multiplies the opportunities for users to engage with the platform but also introduces a novel concept of raffle chains, where one can win a stake in another raffle, thereby increasing the excitement and engagement levels.\n\nKey achievements \n\n・Functional Documentation:\n・Software Requirements Specification based on IEEE 830, and ISO/IEC/IEEE 29148:\n・PlantUML & Merma",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 15,
+      "cut": true
+    }
+  ]
+}

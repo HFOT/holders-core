@@ -1,0 +1,76 @@
+{
+  "title": "MLabs - Browser-based Wallet for Developers & Testers",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 37660,
+      "promise": "・A basic browser extension with cardano-transaction-library bundled in\n・A test suite that we can use to automate workflows using headless browsers\n・A simple interface that allows to paste a mnemonic phrase or a private key and get a set of addresses listed on the screen",
+      "criteria": "・The browser extension can be installed from file\n・The test suite can demonstrate running the addon in graphic mode and entering some valid private key data into the browser extension field\n・An installable browser extension for chromium-based browsers is provided, that implements these features:\n\n・Deriving addresses from a private key. It will contain an input field for the private key, which, when filled with valid data, will output a number of addresses below. The addon will be used just to show that we’ve got the bundling process right and are ready to extend the addon with functionality",
+      "report": "For this Proof of Achievement we have delivered - \n\nOutputs and links to Evidence: \n\n<a href=\"https://objects.githubusercontent.com/github-production-repository-file-5c1aeb/699767830/13417666?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231127T054231Z&X-Amz-Expires=300&X-Amz-Signature=5739ab5b80a9d820dd9e7ba2b7761a100f923901225aa1c6712626e2a507a8f1&X-Amz-SignedHeaders=host&actor_id=41335589&key_id=0&repo_id=699767830&response-content-disposition=attachment%3Bfilename%3Dmilestone-1.zip&response-content-type=application%2Fzip]\" rel=\"noopener noreferrer\" target=\"_blank\">milestone-1.zip (extension download)\nhttps://objects.githubusercontent.com/github-production-repository-file-5c1aeb/699767830/13417666?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231127%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231127T054231Z&X-Amz-Expires=300&X-Amz-Signature=5739ab5b80a9d820dd9e7ba2b7761a100f923901225aa1c6712626e2a507a8f1&X-Amz-SignedHeaders=host&actor_id=41335589&key_id=0&repo_id=699767830&response-content-disposition=attachment%3Bfilename%3Dmilestone-1.zip&response-content-type=application%2Fzip\n\nHere are the extension installation instructions from the README.md:\n# Installation\n\nThe extensions can only be loaded in development mode as they are not uploaded\nto the extension stores (Mozilla Addons/Chrome Webstore).\n\n- Chrome:\n - Go to extensions page, and turn the `Developer Mode` switch on.\n - Drag and drop `<extension-name>.crx` into the extensions page.\n - If the drag and drop seem to be not working:\n - I experienced this issue on Linux (Gnome Wayland).\n - Try dragging it onto the page, if no overlay appears, drop it back where you dragged it from.\n - Repeat this a few times. Should get it working after 2-3 tries.\n - If you drop without the overlay visible, the file will get downloaded instead of getting installed.\n When you click on the download entry, it will show y",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 50214,
+      "promise": "・Making it possible to connect to a query layer (Blockfrost, Ogmios + Kupo)\n・Implementation of CIP-30 interface",
+      "criteria": "・CIP-30 interface can be used to interact with dApps\n・Blockfrost or Ogmios+Kupo can be used as a backend for the extension.",
+      "report": "OUTPUTS\n-Connection to a query layer\n-Implementation of CIP-30 interface\n\nACCEPTANCE CRITERIA\n-CIP-30 interface supports DApp interaction as seen in the accompanying video and code commits\n-Query layer can be used as a backend for the extension as seen in the accompanying video\n\nEVIDENCE\n-The listed commit introduces a comprehensive CIP-30 entrypoint, designed to facilitate compatibility with the Nami wallet and similar Cardano wallets. It provides the foundational infrastructure for injecting this compatibility into web pages via a browser extension. \n\nhttps://github.com/mlabs-haskell/cardano-dev-wallet/commit/27983083b659be309f93e56e06e0c2de5404abe3\nhttps://github.com/mlabs-haskell/cardano-dev-wallet/commit/e7b1639a32a877182e9ba0c217dd5d006baf35b0\n\n-The listed video (video only, no audio) demonstrates configuring a backend (Blockfrost), connecting to a dApp (SundaeSwap), and submitting a transaction. Note: the video is image only, no audio.\nhttps://www.youtube.com/watch?v=_e65H65yOaU",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 50214,
+      "promise": "・Ability to mock and save/load the wallet state, overwriting “true” on-chain state with fixed values\n・Manual collateral selection",
+      "criteria": "・The wallet provides an interface to mock (forcibly override) real wallet state with “overlays” (exact name is TBD) that can be saved and loaded, effectively allowing to feed arbitrary fake data to dApps to facilitate testing\n・The wallet provides a way to manually select collateral UTxOs",
+      "report": "OUTPUTS\n-Ability to mock and save/load wallet state\n-Manual collateral selection\nACCEPTANCE CRITERIA\n-The wallet provides an interface to mock real wallet states with \"overlays\" that can be saved and loaded, effectively allowing the feeding of arbitrary fake data to dApps to facilitate testing\n-The wallet provides a way to manually select collateral UTxOs\nEVIDENCE\n-The listed video (image only, no audio) demonstrates saving/loading wallet state as well as the manual collateral selection, and of course, the updated browser extension:\nhttps://www.youtube.com/watch?v=_e65H65yOaU\n-commit demonstrates this functionality:\nhttps://github.com/mlabs-haskell/cardano-dev-wallet/commit/27983083b659be309f93e56e06e0c2de5404abe3\nhttps://github.com/mlabs-haskell/cardano-dev-wallet/commit/e7b1639a32a877182e9ba0c217dd5d006baf35b0\n-extension published to Chrome Web Store\nhttps://chromewebstore.google.com/detail/cardano-dev-wallet/afnjoihjkimddgemefealgkefejaigme\n-extension published to Mozilla Add-Ons\nhttps://addons.mozilla.org/en-US/firefox/addon/cardano-dev-wallet/",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 50214,
+      "promise": "・Implementation of CIP-30 call logging feature, including payloads for easy debugging\n・Implementation of Plutip integration (ability to start local Cardano testnet clusters with the help of plutip-server running on a user's PC). It will be possible to specify the amount and distribution of ADA the wallet should be funded with initially.",
+      "criteria": "・CIP-30 call logs can be inspected in the extension\n・Tests can be run on a plutip cluster via the wallet extension",
+      "report": "OUTPUTS \n-implementation of CIP-30 call logging feature\n-Plutip integration NOTE - video demo of this integration added to EVIDENCE section\n\nACCEPTANCE CRITERIA\n-CIP-30 call logs can be inspected in the extension\n-tests can be run on a plutip cluster\n\nEVIDENCE\n-A listed video (image only, no audio) demonstrates: A) the display of logs @ 2:40\n\nhttps://www.youtube.com/watch?v=_e65H65yOaU\n\n-A listed video demonstrates B) the Plutip workflow\n\nhttps://www.youtube.com/watch?v=uRJaOBiCfoU\n\n-Commits further demonstrate this functionality:\n\nhttps://github.com/mlabs-haskell/cardano-dev-wallet/commit/27983083b659be309f93e56e06e0c2de5404abe3\n\nhttps://github.com/mlabs-haskell/cardano-dev-wallet/commit/e7b1639a32a877182e9ba0c217dd5d006baf35b0\n\n-extension published to Chrome Web Store\n\nhttps://chromewebstore.google.com/detail/cardano-dev-wallet/afnjoihjkimddgemefealgkefejaigme\n\n-extension published to Mozilla Add-Ons\n\nhttps://addons.mozilla.org/en-US/firefox/addon/cardano-dev-wallet/\n\n-A clearer example of the Plutip workflow with the wallet extension running Plutip tests\n\nhttps://www.youtube.com/watch?v=sadb9SuBSCk7",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 7
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 62768,
+      "promise": "・User documentation (user guide)\n・Public version releases (Chrome Web Store and Firefox Browser Addons)\n・Announce of the release on social media\n・Bugfixes and improvements as a response to user feedback",
+      "criteria": "・User documentation is available on the web\n・A public release is uploaded to Chrome Web Store and Firefox Browser Addons\n・The release is announced on social media\n・The problems noticed by the users are addressed, or, in case it is not feasible or possible, an explanation is given",
+      "report": "Evidence of Milestone Completion:\n\nPer the milestone outputs and acceptance criteria, we have produced the following for the Final Milestone\n\nA link to the docs: \n- https://github.com/mlabs-haskell/cardano-dev-wallet/blob/master/guide/Readme.md\n\nLinks to the public releases:\n- https://addons.mozilla.org/en-US/firefox/addon/cardano-dev-wallet/\n- https://chromewebstore.google.com/detail/cardano-dev-wallet/afnjoihjkimddgemefealgkefejaigme?pli=1\n\nLink to social media posts:\n- https://x.com/MLabs10/status/1813244384869294165\n\nA list of issues/requests from the users:\n\nWe improved the following things as per user feedback\n\n- UI/UX\n * Added separators for identifying different UTxOs faster\n * Auto activate accounts and network backends when added when there are no other accounts or network backends.\n\n- Feature: Custom endpoint support for blockfrost.\n\nPreviously we only supported the default blockfrost instance.\n- Bug fix: Some dApps treat the API object as a bag of functions, which by the spec can be any object. This causes SundaeSwap and possibly more dApps to hang. We changed our API object to be a bag of functions instead of a class instance.\n- Bug fix: Sync the overrides in `getUtxos()` with the `getBalance()` call.\n\ndApps get token balances through either the `getUtxo()` call and summing the token balance themselves or using the `getBalance()` call to have the wallet calculate them.\n\nOur UI supports mocking the token balances through the UTxO list, but it was not reflected in the `getBalance()`. The `getBalance()` call is now changed to be the sum of balances from the `getUtxos()` call, unless separately overriden.\n\nFull code hosted on GitHub \n\nhttps://github.com/mlabs-haskell/cardano-dev-wallet\n\nClose-out report and video\n\nhttps://youtu.be/JJvMrgagkCY\nhttps://drive.google.com/file/d/1WHCFU00OfnOON3QKg9ikY2TBRsrMCf8n/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

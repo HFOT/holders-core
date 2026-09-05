@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・資料ダウンロード\n・ゲームデモデザインモックアップ\n・コードリポジトリ",
+      "criteria": "ドキュメンテーションでは、タスクリスト内のタスクは、Unity アプリケーションで minting の流れを作成するとインラインで表示されます。 設計とモックアップは、この流れを明確に示す必要があります.",
+      "report": "このリポジトリで作成されるタスクリスト、モックアップの設計:\nhttps://github.com/FutureFest/NMKR-Studio-Unity-SDK"
+    },
+    {
+      "no": 2,
+      "promise": "・ユニットパッケージ\n・Githubリポジトリ\n・ドキュメント",
+      "criteria": "Unityパッケージには、支払いを容易にし、Unityアプリケーション内でのマイニングを行うために必要なすべての要件が含まれている必要があります.",
+      "report": "Unityの開発者として、これらの2つのスクリプトは、支払いとミントの責任を負います。\n最小化 API: https://github.com/FutureFest/NMKR-Studio-Unity-SDK/blob/main/Runtime/Scripts/Api/NmkrApiMint.cs\n支払い API: https://github.com/FutureFest/NMKR-Studio-Unity-SDK/blob/main/Runtime/Scripts/Api/NmkrApiPaymentTransactions.cs\nこれらの関数をプロジェクト内で呼び出すだけで、作業が取れます。\nこのUnityパッケージをプロジェクトに統合するには、開発者は次の手順を実行できます。\n・GitHubからのCopyパッケージURL\n・https://github.com/FutureFest/NMKR-Studio-Unity-SDK > コード > ローカル > HTTPS > コピー git URL\n・またはこれをコピー:https://github.com/FutureFest/NMKR-Studio-Unity-SDK.git\n・Unityプロジェクトにパッケージをインポートする\n・Unityプロジェクトのパッケージマネージャーへ\n・「+」ボタンを左上隅にある「パッケージマニガー」ウィンドウでクリック\n・「git URLからパッケージを追加」をクリック\n・git URLを貼り付け、「追加」をクリックします。\n・Projectビューのpackageフォルダの下にあるパッケージ\n・パッケージの設置と使用準備が整っています!"
+    },
+    {
+      "no": 3,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ\n・NMKR Unity SDKのGithubリポジトリ\n・新延長書類\n・virtualvenues.ioでホストされているNMKR拡張子へのリンク\n・利用状況を把握する動画\n・将来のフェストxr Xアカウントからこの機能を実証するXの投稿",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n・仮想Venues サイトでアカウントを作成できるユーザで、NMKR Unity SDK を フード下に使用している NMKR 拡張機能を追加し、支払いとマイニングをショーケースできます。\n・Githubリポジトリにアクセスし、独自のプロジェクトにNMKR Unity SDKを使用する",
+      "report": "最終クローズアウトレポートへのリンク:\nhttps://drive.google.com/file/d/18RiSvmSYcG-cSaxcL2hXeLLxng4iTeQ/view?usp=drive link\n最終クローズアウトビデオへのリンク:\nhttps://vimeo.com/1197272220?fl=tl&fe=ec\nNMKR Unity SDKのGithubリポジトリ\nhttps://github.com/FutureFest/NMKR-Studio-Unity-SDK\n新しい拡張のためのドキュメント\nhttps://virtualvenues.io/dashboard/?tab=plugins\n\"NMKR\" のドキュメンテーションは詳細を見る\nビデオは使用法を示す\nhttps://x.com/futurefestxr/status/2061332895957127221?s=20\nクローズアウトビデオで見た\nvirtualvenues.io の拡張子へのリンク\nhttps://virtualvenues.io/dashboard/?tab=plugins\nFuturefestxr Xアカウントからこの機能をデモするXに投稿\nhttps://x.com/futurefestxr/status/2061332895957127221?s=20"
+    }
+  ]
+}

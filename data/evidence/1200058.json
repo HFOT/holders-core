@@ -1,0 +1,75 @@
+{
+  "title": "Cardano Laboratory: A Development and Testing Environment for Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 40000,
+      "promise": "・Project setup, with Apache 2.0 Open source licence\n・Initial UI Code with header and footer\n・key-pair generation elements and wallet address UI\n・Implement key pair generation and generate wallet address",
+      "criteria": "GitHub PR with the below line items implemented,\n・Vuejs project setup\n・laboratory header and footer\n・Key-Pair generation code is added\n・Wallet address generation and UI code are added\n・Apache 2.0 open source license added",
+      "report": "Implemented below items as part of Milestone 1 of Cardano Laboratory, this milestone has setup configuration and basic project structure deliverables, please see below,\n・open source github repo - Cardano Lab\n・Vuejs project setup\n・Added setup code for tests\n・Configured build and linting\n・implemented basic project UI layout\n・Added Key-Pair generation code\n・Wallet address generation and UI code are added\n・Apache 2.0 open source license added\n・Deployed the current version for review (only for review, not ready for production)\n\nURL - https://cardanolab.dev\nPull Request - (commit link as its the fist commit) https://github.com/StricaHQ/cardano-lab/commit/871a84a338796ec7738e6819968b809672ee7048\nFooter PR - https://github.com/StricaHQ/cardano-lab/pull/1\nGitHub - https://github.com/StricaHQ/cardano-lab",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 60000,
+      "promise": "・Develop the functionality to create and sign transactions for both mainnet and testnet.\n・Develop UI for creating and signing transactions\n・Support for adding transaction details, including inputs, and outputs with ADA and token amounts.\n・Implement transaction submission to the Cardano blockchain.",
+      "criteria": "Screenshots of the developed UI along with relevant public github PR with code as below,\nRelevant Code\n・A GitHub PR which adds the code required for the mentioned outputs, as below,\n・Code for creating and signing transactions, mainnet and testnet\n・UI code for transaction building - adding inputs, outputs, ADA, and tokens\n・Code for submitting a transaction to Cardano blockchain",
+      "report": "Implemented below items as part of Milestone 2 of Cardano Laboratory,\n・added transaction builder UI and functionality\n・added transaction signing UI and functionality\n・added feature to add inputs, outputs, and tokens in transaction\n・added feature to submit transaction to mainnet or preprod testnet, along with custom submit endpoint\n・Deployed the current version for review\n\nURL - https://cardanolab.dev\nThe Lab is built for developers, hence we also created a demo video for the above features end to end, please see below\nDemo Video - https://youtu.be/MQhmkI7onXQ\nPull Requests,\n・https://github.com/StricaHQ/cardano-lab/pull/3\n・https://github.com/StricaHQ/cardano-lab/pull/4\n・https://github.com/StricaHQ/cardano-lab/pull/5\n・https://github.com/StricaHQ/cardano-lab/pull/7\n・https://github.com/StricaHQ/cardano-lab/pull/8\n・https://github.com/StricaHQ/cardano-lab/pull/9\n\nGitHub - https://github.com/StricaHQ/cardano-lab",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 18
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 40000,
+      "promise": "・Add support for adding certificates for stake registration and delegation.\n・Add support for minting native tokens with NativeScript",
+      "criteria": "Screenshots of the developed UI along with relevant public github PR with code as below,\nGitHub PR with code that implements the outputs, as below,\n・UI and code for adding stake registration certificate\n・UI and code for adding delegation certificate\n・UI and code for adding token minting support (with NativeScript)",
+      "report": "Implemented below items as part of Milestone 3 of Cardano Laboratory,\n・added stake registration certificate UI and functionality\n・added stakepool delegation UI and functionality\n・added support for token minting via nativescript(multisig/timelock scripts)\n・Deployed the current version for review\n\nURL - https://cardanolab.dev\nThe Lab is built for developers, hence we also created a demo video for the above features end-to-end, please see below\nDemo Video - https://youtu.be/V66Z_EP5w1M\nPull Requests,\n・https://github.com/StricaHQ/cardano-lab/pull/10\n・https://github.com/StricaHQ/cardano-lab/pull/11\n・https://github.com/StricaHQ/cardano-lab/pull/13\n\nGitHub - https://github.com/StricaHQ/cardano-lab",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 12
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 30000,
+      "promise": "・Integrate decode CBOR functionality for viewing transaction content\n・Export transaction CBOR feature with UI",
+      "criteria": "Screenshots of the developed UI along with relevant public github PR with code as below,\nA GitHub PR which adds the code required for the mentioned outputs, as below,\n・Code and UI for importing CBOR transactions and viewing their contents\n・Code and UI for exporting transactions from the laboratory to CBOR",
+      "report": "Implemented below items as part of Milestone 4 of Cardano Laboratory,\n・decode cardano transaction CBOR to view its content\n・export a built transaction from lab as CBOR\n\nURL - https://cardanolab.dev\nWe have prepared a PDF file with screenshots and steps to demo above features, the features are already live on the URL above.\nCBOR Feature PDF - https://drive.google.com/file/d/17lTVIchkBXckzIxALhFZzEZGzHh98-5I/view?usp=sharing\nPull Requests,\n・https://github.com/StricaHQ/cardano-lab/pull/15\n\nGitHub - https://github.com/StricaHQ/cardano-lab",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 30000,
+      "promise": "・test cases\n・deployed on a public URL\n・Final close-out report\n・Final closeout video",
+      "criteria": "・GitHub PR provided with test cases\n・Public URL provided where the laboratory is deployed\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "・Test cases added\n・https://github.com/StricaHQ/cardano-lab/pull/18\n・Deployed the laboratory on a public domain here\n・https://cardanolab.dev\n・Close Out Video\n・https://youtu.be/63VwmHImJ4o\n・Close Out Report\n・https://drive.google.com/file/d/1jcw35Eh4meKAzwXJWL32cdnpHe7fBuDk/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

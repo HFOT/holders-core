@@ -1,0 +1,45 @@
+{
+  "title": "Real-World Asset (RWA) backed On-Chain Lending and Auctioning Protocol",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 22500,
+      "promise": "・A detailed project initiation document outlining the scope, objectives, and timeline of the PoC.\n・A comprehensive requirements and specifications document that includes the functional and non-functional requirements of the auction protocol.\n・High-level architectural design of the PoC, including initial smart contract outlines and initial user interface drafts.",
+      "criteria": "・Project initiation document with a detailed plan of action for the UI.\n・Requirements and specifications document .\n・Architectural design that meets the basic needs for a PoC.",
+      "report": "Initiation, Requirements and specifications document - https://elderly-hammer-b9c.notion.site/Requirements-and-Specifications-Document-Real-World-Asset-RWA-backed-On-Chain-Lending-and-Auction-e1bafc4bac5546a581be45fc118b2b59?pvs=4\nArchitectural design document - https://elderly-hammer-b9c.notion.site/High-Level-Architectural-Design-Document-a5e8e7b826054d3cbd78b6a5d632d868?pvs=4\nInitial mockups of the user interface figma design - https://www.figma.com/design/lB6980whlB13Ci7e1seWUA/Trivolve-(Copy)?node-id=0-1&node-type=CANVAS&t=iRoTbRwOZjxch6nQ-0\nPlease note that we have decided to use Notion for documentation instead of google docs for better readability of code and diagrams.",
+      "kinds": [
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 22500,
+      "promise": "・A functional prototype of the auction protocol developed on the Preprod, demonstrating core functionalities such as bid submission and auction settlement.\n・Basic tests to ensure the integrity of core components.\n・Early-stage user interface connected to the backend logic, focusing on simplicity and functionality for the PoC.",
+      "criteria": "・Prototype capable of conducting basic auction processes without major bugs.\n・Deployed Pre-Pod Smart Contract Link and Public PoC deployment links.",
+      "report": "The prototype of the RWA-backed On-chain Lending and Auctioning Protocol has been developed on the Preprod Network demonstrating key functionalities:\n・Listing with a minimum bid, multiple competitive bids, finalizing the auction with the highest bid and canceling the listing if no bids are received.\n・Collateralized lending process, including collateral deposit, loan issuance, and repayment.\n・Loan default process and the lender claiming the collateral in case of default.\n\nA detailed testing report with all test cases and their preprod transactions links can be found here - https://elderly-hammer-b9c.notion.site/Test-Report-for-RWA-backed-On-chain-Lending-and-Auctioning-Protocol-111e8a72de3680fd870ddbdbfe90b9c6?pvs=4\nLow Fidelity Prototype Link - https://rwa-lending-app.vercel.app/",
+      "kinds": [
+        "live",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "・Fully integrated PoC deployed on the Cardano Preprod.\n・Project close-out report summarizing the PoC development, outcomes, lessons learned, and recommendations for future phases.\n・A promotional video that highlights the PoC's features, benefits, and potential impact on the auctioning of RWAs.",
+      "criteria": "・Fully integrated PoC deployed on the Cardano Preprod.\n・Project close-out report summarizing the PoC development, outcomes, lessons learned, and recommendations for future phases.\n・A closeout/promotional video that highlights the PoC's features, benefits, and potential impact on the auctioning of RWAs.",
+      "report": "Fully Integrated PoC with Smart Contracts on Preprod: https://rwa-lending-app-ts-d5zw.vercel.app/\nAuctioning Smart Contract: https://preprod.cardanoscan.io/address/addr_test1wrm0xclunt0tvglrj3n9pws57n8dtu43grnr68pzypggxhg0y50f9\nLending Smart Contract: https://preprod.cardanoscan.io/address/addr_test1wpzxt38qzfwg2fru4mwjs0asr4xlr9em7k4z8p4k8rmt0hc7hvx8c\nRWA Auctioning and Lending PoC platform Working Demo Promotional Videos: https://drive.google.com/drive/folders/1OV_iQBw596DKwFDNuwvZhaQIf83rwzci?usp=sharing\nProject Closeout Report: https://docs.google.com/document/d/1CjunFkQMM7mUQGMNP5oBYyB2MrgsKeecNGtrvQoH7PY/edit?usp=sharing\nProject Closeout Report in PDF Format: https://drive.google.com/file/d/1okO7dq4F1l1JScoRrZHr8KDvVNofkZCG/view?usp=sharing\nProject Closeout Video: https://youtu.be/Izy2QDXck10",
+      "kinds": [
+        "chain",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 15
+    }
+  ]
+}

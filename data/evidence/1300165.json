@@ -1,0 +1,69 @@
+{
+  "title": "PyCardano Evolution: Embracing the Chang Hardfork",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 50000,
+      "promise": "・Implementation of DRep-related features in PyCardano\n・Unit tests for DRep functionality\n・Technical documentation for DRep implementation",
+      "criteria": "・Complete DRep registration and voting functionality\n・All DRep-related unit tests passing\n・Unit tests pass with at least 85% code coverage\n・Documentation explains new/updated code",
+      "report": "GitHub Repository with Updated Codebase\nhttps://docs.google.com/document/d/1fGt3ZBzH3FjF_l-TI-0Va4r2CLx_3n03Vuu916yDD4A/edit?tab=t.0\nUnit Test Coverage \nhttps://docs.google.com/document/d/1mtvkHgAPUzOAoLKJ4cGnWbR5ARBGAA36XP8SUfNq9Rk/edit?tab=t.0\nUpdated Developer Documentation \nhttps://docs.google.com/document/d/1oN3jwp4VQPxsix07hGK9vxXUXh9gsDOd6sDhn8I1tpo/edit?tab=t.0\nTechnical Documentation\nhttps://docs.google.com/document/d/1pQbAkiaCTj-o2FRqlIl7pgEb5LRD4s118vOu3DRsC3g/edit?tab=t.0#heading=h.q3fghdknjb6x",
+      "kinds": [
+        "doc"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 50000,
+      "promise": "・Implementation of Chang protocol serialization changes\n・Unit tests for serialization functionality\n・Technical documentation for serialization implementation",
+      "criteria": "・Complete Chang protocol serialization changes implemented\n・All serialization-related unit tests passing\n・Unit tests pass with at least 85% code coverage\n・Documentation explains new/updated code",
+      "report": "GitHub Repository with Updated Codebase\nhttps://docs.google.com/document/d/16Sy-Vx8y3dB1kOWfKwclAaFxXYz4QDvrgrL7VlQJ6Tg/edit?usp=sharing\nUnit test results for serialization functionality\nhttps://docs.google.com/document/d/1XetFdohLcbYhjDn7NeByS2UD6fC9CcTv3L_NHO07Nds/edit?usp=sharing \nDocumentation in code (docstrings/comments)\nhttps://docs.google.com/document/d/1_Av-Ud_IepDZBO5FRIotoAg6PaDiBNlYJQM_1YVKwao/edit?usp=sharing \nTechnical documentation\nhttps://docs.google.com/document/d/1r2Xaqr1HK5kTRxJaLw26PO0jqr-v284gNNzLh2RqxnY/edit?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 30000,
+      "promise": "・Integration test suite covering all major PyCardano functionalities\n・Testnet environment mirroring Cardano mainnet post-Chang hardfork\n・Comprehensive test documentation and result reports",
+      "criteria": "・Integration tests cover all new PyCardano features\n・All integration tests pass on the testnet environment\n・Successful DRep-related transaction creation, submission, and validation on testnet\n・Test documentation clearly explains the coverage and results",
+      "report": "Integration test suite in GitHub repository\nhttps://docs.google.com/document/d/1nHS-25a2Xy3Hulid79sUPU5TsHe6g1HT9gRUODiAs2o/edit?usp=sharing \nProof of DRep transaction functionality\nhttps://docs.google.com/document/d/1NyUDhOxzxxKbA8N8amrVD_vUxZWWQuXjwxT6gZgW6mk/edit?usp=sharing \nIntegration test report (plain text document) showing the mapping of each new integration test to a DRep feature\nhttps://docs.google.com/document/d/1eujshYeNrA5qDkKIvC25F10wBZynYG1euTDTXWgEjWs/edit?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 30000,
+      "promise": "・Written tutorial for all major protocol changes, e.g. DRep, new serialization format, using PyCardano\n・Video tutorial demonstrating all major protocol changes, e.g. DRep, new serialization format",
+      "criteria": "・Written tutorial provides clear, step-by-step guidance for implementing all major protocol changes, e.g. DRep, new serialization format\n・Video tutorial (5-10 minutes) clearly demonstrates all major protocol changes, e.g. DRep, new serialization format,",
+      "report": "Comprehensive written tutorial published in GitHub repository/ ReadTheDocs (the link to the full example at the end of the tutorial has been fixed): \nhttps://pycardano.readthedocs.io/en/latest/guides/governance.html\nA video tutorial that clearly demonstrates all major protocol changes, e.g. DRep, new serialization format, published on YouTube:\nhttps://www.youtube.com/watch?v=ZPjlVcjYhqM",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 40000,
+      "promise": "・Project Close-out Report (2-3 pages) covering all required sections\n・Project Close-out Video (2-5 minutes, 720p/1080p)",
+      "criteria": "・Close-out report addresses all required sections including KPIs, achievements, and next steps\n・Video demonstrates working PyCardano functionality with Chang hardfork features\n・Documentation covers all new features with clear examples\n・All project deliverables are publicly accessible",
+      "report": "・Published Close-out Report: https://docs.google.com/document/d/1Uk6xsK2GPsc69476TGDxcvREjFHcsUvWIpHtA1Y6Svo/edit?usp=sharing\n・Public video link (YouTube/Vimeo) demonstrating project achievements: https://www.youtube.com/watch?v=hlyuUBtdyps \n・Documentation available on ReadTheDocs or GitHub: https://pycardano.readthedocs.io/en/latest/guides/governance.html \n・Repository of example code and tutorials: https://github.com/Python-Cardano/pycardano/blob/main/examples/more_examples/13_governance.py\n・All milestone deliverables from previous phases completed and documented. All previous milestones have been completed: https://milestones.projectcatalyst.io/projects/1300165/",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

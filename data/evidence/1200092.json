@@ -1,0 +1,62 @@
+{
+  "title": "Decentralised Batcher Framework with DAO governance",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 43500,
+      "promise": "・Architecture documentation: A detailed report that outlines the information flow and system requirements when:\n・DAO members vote for batchers (issuing, revoking of licenses)\n・Batchers fulfill orders (checking licenses)\n・Licences are revoked/expire\n・Licences are issued and distributed/claimed\n・Smart contract infrastructure: Definition of the necessary smart contracts and their functionalities for assigning batcher rights to entities through issuance/revocation of licence tokens based on onchain governance.",
+      "criteria": "・Documentation is easily understandable and concise. Further, it includes detailed information about the interaction with the Cardano blockchain and how non-technical users can interact with the smart contracts (in a later step this will be extended through the website interface) \n・Smart contract design is capable of assigning batching licenses to entities based on utility token governance (on-chain vote from staked tokens)",
+      "report": "Hi, thank you for the feedback and for taking the time to review our submission. We have extended the report significantly to include more specifications and illustrations. We have also added more details about the two documents below and specified which acceptance criteria is addressed in each section of the report.\nReport: https://drive.google.com/file/d/1kqG4Wf8VjNVmwgCyZfEtoaDSiz_7hWM5/view?usp=sharing\nThe report includes a general overview of how we plan to establish DAO governance through batchers, as well as the technical details of how this can be achieved. The answers to the acceptance criteria can be found in these sections:\n・DAO members vote for batchers (issuing, revoking of licenses): Sections 2.1.2 and 2.1.3\n・Batchers fulfill orders (checking licenses): Visualization in Section 2.1.1; technical details in Sections 3.5.1 and 3.5.2\n・Licenses are revoked or expire: Explained as part of the smart contract framework in Sections 3.1–3.4\n・Licenses are issued and distributed/claimed: Also explained as part of the smart contract framework in Sections 3.1–3.4\n\nMoreover, the report outlines the technical framework for batcher monitoring, which we will deliver in the next milestone.\nGitHub: https://github.com/MuesliSwapTeam/batcher-dao-governance\nThis repository includes the license consumer contract that allows for the creation of batcher licenses as an extension of our on-chain DAO platform. The README provides details on how to build the smart contracts. Additionally, we have included off-chain code and unit tests to verify that the smart contracts work, as well as an example of how a batcher can issue a license. The exact interplay of the different smart contract modules is described in Section 3.4 (technical details) of the report.\nPlease note: Based on the feedback from the reviewer we extended the GitHub Readme with additional instructions and included an Executive Summary in our report.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "14",
+      "cost": 43500,
+      "promise": "・Preliminary front-end offering ability to vote on batchers\n・Preliminary back-end that handles requests from front-end and interacts with smart contracts\n・Fully developed smart contracts that handle governed batching rights via transactions initiated by the backend",
+      "criteria": "・An instance of the front end is hosted and publicly available (accessible through the worldwide web) -\n・On the frontend the user can vote on a batcher and see their vote stored on the blockchain - this will be shown on the interface with necessary explanation for the user\n・Backend is sufficiently developed to handle voting. Further, backend documentation will be continuously updated so all API request and response schemas are known to the public.\n・Smart contract is deployed onchain (preprod testnet) and is integrated successfully with the backend.",
+      "report": "Resubmission of the milestone already approved by the reviewers (due to timeline change)\nDear Catalyst Reviewers,\nOur frontend with the matchmaker license voting is available here: https://preprod.dao.muesliswap.com/matchmakers\nWe have integrated this process into our existing DAO frontend. To obtain tMILK and explore the other features, we would like to refer you to our testnet DAO guide: https://docs.google.com/document/d/1Svac5slZiuwEcoAwO9p1JkqsjC5MfeAqPVsXUa_ZHjg/edit?usp=sharing\nTo provide a clearer picture of the entire setup and how it fits into our current infrastructure, we created a documentation video explaining how the matchmaker licenses, governance, and other components interact, and how we integrated them together: https://drive.google.com/file/d/1zLMFfb_ScqRvqCQ5RZwl2rXVHFKp2wFt/view?usp=sharing\nIn addition, we updated the README.md to include example transactions: https://github.com/MuesliSwapTeam/batcher-dao-governance/blob/main/README.md\nFor your convenience, we have also included the transactions here: \nUser:\n・Add Vote for Batcher License (Request) https://preprod.cardanoscan.io/transaction/63e4c72fee7354560d67b4ddcd3b6b0bfa8fb13231ff9987ec5c90084e277270?tab=utxo\n・Revoke Vote for Batcher License (Request) https://preprod.cardanoscan.io/transaction/97af107145fb7f1702bd728be2c042b1e94ba4c6ab8154b0f9d1fbeda063b085\n\nDAO Processor (interact with governance UTXO):\n・Add Vote for Batcher License (Processing) https://preprod.cardanoscan.io/transaction/0205ca6d1583c51ccf00e73911a588c818415a3aa7edbc871ec649bf8aa723de\n・Revoke Vote for Batcher License (Processing)\n・ https://preprod.cardanoscan.io/transaction/eaa2d6ebe124f8ec53869a6202684a5b92efede9401ed3c3fe5cd6c7614c3bfb?tab=utxo\n\nTransactions for License Issuance: \n・https://preprod.cardanoscan.io/transaction/08e63a710ae8e5e13cf55f70a271d97a759f5bde5b68d9c5412a035bfc3ad2ac?tab=utxo\n\nOur backend processes the blockchain data and delivers it to our frontend. The backend schema is publicly available here: http",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 22,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "15",
+      "cost": 36250,
+      "promise": "・Front-end: Monitoring of various important metrics related to batching rights, such as spread distribution, total profit, volume. Clear indication to the user that the batcher is/is not aligned with their responsibilities under DAO governance.\n・Back-end: Automatic tracking of transactions handled by the batcher, including parsing of information used to calculate the above and monitor batcher performance.",
+      "criteria": "・Front-end is further built up to allow the user to easily monitor the activity of the batcher and assess their performance.\n・Back-end is developed further to allow monitoring of the blockchain and provide endpoints to access the information related to batcher performance. Provided documentation should make this capability clear.",
+      "report": "Dear Reviewers,\nPlease find the documents for our PoA below. We have released the new testnet frontend, which includes the Matchmaker governance and monitoring features, available at: https://preprod.dao.muesliswap.com\nWe have also created detailed GitBook documentation for the DAO Matchmaker features, available here https://docs.muesliswap.com/dao/matchmaker-governance\nThe documentation includes the following subpages:\n・DAO Matchmaker Voting: https://docs.muesliswap.com/dao/matchmaker-governance/matchmaker-voting\n・DAO Matchmaker Monitoring: https://docs.muesliswap.com/dao/matchmaker-governance/matchmaker-monitoring\n\nMoreover, we have made the code public through two separate repositories. First, we developed an analytics backend to actively monitor and analyze all data. This code, along with our voting smart contract, is available here: https://github.com/MuesliSwapTeam/batcher-dao-governance/tree/main/dao-monitoring-backend\nFor your convenience, we have also deployed this backend (including endpoint documentation) here: https://dao-batcher-monitoring.muesliswap.com/docs\nFor the frontend, we integrated the Matchmaker functionality into our open-source DAO frontend. A dedicated release containing this functionality can be found in the branch release/matchmaker. https://github.com/MuesliSwapTeam/dao-governance-dashboard/tree/release/matchmaker\nAs mentioned, this version is deployed at https://preprod.dao.muesliswap.com using the batcher monitoring analytics backend shared above.\nThank you very much.\nBest Regards,\nMuesliSwap Team",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 16
+    },
+    {
+      "no": 4,
+      "month": "16",
+      "cost": 21750,
+      "promise": "・Final close-out report (summarising previous work) \n・Final close-out video\n・A detailed technical documentation that clearly demonstrates: (This part is necessary to ensure other developers can use it for their DAO)\n・For new DAOs that want to use the framework: How to set up a governed batcher license distribution system using our new tech stack.\n・To a DAO member that's wants to use it: How to vote for a batcher and monitor their performance to ensure that batching rights are held by those that provide the most benefit to the DAO.",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・The documentation will be produced with easy to follow instruction for DAO operator and DAO member",
+      "report": "A. Output:\nFinal close-out report and final close-out video\nAcceptance Criteria:\n・Final close-out report summarising previous work\n・Final close-out video\n・Detailed technical documentation\n\nEvidence:\n・Close-out report: https://drive.google.com/file/d/1QN9WcyZFulZXVUtYzePiujZi72TmgD6k/view?usp=sharing\n・Close-out video: https://www.youtube.com/watch?v=Z32f2E_XKfM&feature=youtu.be\n\nB. Output:\nDetailed technical documentation clearly demonstrating instructions for:\na.) DAO Members\nb.) Developers\nAcceptance Criteria:\nThe documentation is produced with easy-to-follow instructions for DAO operators and DAO members.\nEvidence:\n・DAO user documentation: https://docs.muesliswap.com/dao/matchmaker-governance-user\n・DAO developer documentation: https://docs.muesliswap.com/dao/matchmaker-governance-developer\n\nAdditionally, specific setup instructions can be found in the relevant repositories:\n・Frontend GitHub: https://github.com/MuesliSwapTeam/dao-governance-dashboard/tree/release/matchmaker\n・Batcher Monitoring Backend GitHub: https://github.com/MuesliSwapTeam/batcher-dao-governance\n\nFor your convenience, the accessible beta website is available here:\nhttps://preprod.dao.muesliswap.com\nThank you very much, and we wish you all a great start to the new year.\nBest regards,\nChris",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "title": "Smart Contract based On-chain Random Number Generation (RNG) Library",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 24000,
+      "promise": "・Design and documentation for a Verifiable Onchain RNG Algorithm compatible with python, javascript and typescript.\n・Architectural designs for smart contracts for Onchain RNG and Oracle RNG Data Feed.",
+      "criteria": "・Completion of RNG algorithm design and smart contract architecture, documented and compatible with current standards.\n・Successful setup of project infrastructure. (Github Repository)",
+      "report": "Design documents and architectural plans:\nPlease find the complete architecture and design document here: https://faint-albacore-c32.notion.site/Technical-Documentation-On-Chain-Random-Number-Generation-Library-for-Cardano-Blockchain-8b002ecb0d9d4122a1c876c284e6988c?pvs=4\nLinks to repositories and gitbook documentations. (Proof of setup of project's infrastructure)\n・Gitbook: https://nucast.gitbook.io/sc-based-on-chain-rng\n・RNG Seed Contract: https://github.com/Nucastio/randomness-seed-contract\n・RNG Oracle Contract: https://github.com/Nucastio/rng-oracle-contract \n・RNG API: https://github.com/Nucastio/rng-api \n・RNG Python Lib: https://github.com/Nucastio/rng-python-lib \n・RNG JS/TS lib: https://github.com/Nucastio/rng-ts-lib",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 14
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 24000,
+      "promise": "・Developed smart contracts for Onchain RNG and the RNG Data Feed Oracle.\n・Implemented Verifiable Onchain RNG Algorithm.\n・Sharing regular updates via Github and Twitter about the contributions made by our team.",
+      "criteria": "・Successful development and initial testing of smart contracts and RNG algorithm on testnet.\n・Functionality and security standards were met.\n・Weekly post about the updates we have done to the GitHub repo to our community via GitHub and Discord.",
+      "report": "Code repositories:\nThe following repositories has been updated with the codebase needed for the library.\n・https://github.com/Nucastio/rng-oracle-contract\n・https://github.com/Nucastio/randomness-seed-contract\n・https://github.com/Nucastio/rng-ts-lib\n・https://github.com/Nucastio/rng-python-lib\n・https://github.com/Nucastio/rng-api\n\nUpdate documentation and deployment on testnet (Public Address):\nThe old documentation has been updated with implementation of code and testnet deployment: https://elderly-hammer-b9c.notion.site/Smart-Contract-based-On-chain-Random-Number-Generation-RNG-Library-for-Cardano-c352bf17b8064fc6a10595dce3be0a90\n・Testnet Deployment: https://preprod.cardanoscan.io/address/addr_test1wpzugdruxq4zgqeyuxu973usdzld7zcv87xgshcs0ypu4tcqxt2q3\n・Randomness Seed Tx: https://preprod.cardanoscan.io/transaction/c13eea9566af91ed3c7860721dcf830d89c1d66c892f16ab97648d059333fa4c\n・Contract Address: https://preprod.cardanoscan.io/address/addr_test1wqa3uhsdlg04w3eu8tqylngsrtfse6n05sv7e23gmfp0x9ct30h9r\n・Publisher DID: https://preprod.cardanoscan.io/transaction/c6bdefa1adc5c3bcc1026ba7486a4670c34ff77976918f627daf852e3ca3b9ca?tab=utxo\n・First Publish Transaction: https://preprod.cardanoscan.io/transaction/c5df06397c487649a817ffe17132926478ece1cbcd013a7a40202af1058902c1?tab=utxo\n・Subsequent Publish Transaction: https://preprod.cardanoscan.io/transaction/31a2e4fe7ade13b338ebb62a79b92676a03bc4ebd3b0291b7e73d4604fd0713d?tab=utxo\n\nScreenshots and links to the GitHub and Discord updates:\nhttps://imgur.com/a/hLafT5D\nhttps://twitter.com/NucastIO/status/1783128108695982290",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 27
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 10000,
+      "promise": "・Comprehensive testing of smart contracts, backend APIs, and frontend integrations.\n・Functional, security, and compatibility testing with prompt issue resolution.\n・Testing will cover the smart contract responsible for generating random numbers, ensuring the desired output is achieved. The test will be conducted on a large lottery pool on Cardano, in partnership with https://alpha.lottery.lovelaceclub.com/.\n・Sharing regular updates via Github and Twitter about the contributions made by our team.",
+      "criteria": "・All components thoroughly tested and any identified issues resolved.\n・Successfully validated for deployment on the main network\n・Weekly post about the updates we have done to the GitHub repo to our community via GitHub and Discord.",
+      "report": "Testing documentation: https://docs.google.com/document/d/1fzlwtI2MSh4B0RnpiwjFnv1fSj-ar33r0aoTNshPfZs/edit#heading=h.3s5euuqluyjg\nNote: We have updated the doc and explained about the Expected Randomness Criteria ensuring the quality of the random number generation and the outputs in the library adherence to the criteria.\nAdded Short explanatory details about the transactions involved in the Testing process.\nTesting issues updates:\n・API Access Point Update: The mainnet API access point from Blockfrost has been updated to resolve deployment issues.\n・Library Updates: Minor refactorings have been applied to enhance performance and compatibility.\n\nUpdates:\n・Github Commits to fix testing issues: https://imgur.com/a/J4Q6fAx\n・Discord Announcement: https://imgur.com/XOErxXK\n・Twitter Announcement: https://imgur.com/MWMYvm7\n・Tweet link: https://x.com/lovelaceclubnft/status/1793995398496850069?s=46&t=gq_wqNDoj9OJ5FOqUQjmRQ",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 22000,
+      "promise": "・Opensourcing the project and update developer documentation with usage examples.\n・Launch of the Smart Contract based On-chain RNG Library.\n・Marketing efforts to promote the library and collect user feedback for continual enhancements. (Announcement Tweet, Tweets with our early adopters, Live stream demonstrating libraries' functionalities).\n・Final project report and video including Key Performance Indicators (KPIs) and achievements.\n・Three Tutorial videos on how to use the library for python, javascript and typescript.\n・Sharing regular updates via Github and Twitter about the contributions made by our team.\n・Taking community involvement into consideration through contributions and feedback.",
+      "criteria": "・The project is publicly available and well-documented for developer use.\n・Successful library launch and effective promotional activities. (Announcement Tweet, Tweets with our early adopters, Live stream demonstrating libraries' functionalities)\n・Detailed final report and video reflecting on the project's successes.\n・Three tutorial videos on how to use the library for python, javascript and typescript.\n・Weekly post about the updates we have done to the GitHub repo to our community via GitHub and Discord.\n・Implementing relevant changes that have been brought up by the community through discord",
+      "report": "Launch Announcement and Community Engagements with positive feedback from the Opensource Community of Cardano: \n・https://x.com/LovelaceClubNFT/status/1812800648213152228\n・https://x.com/ItsDave_ADA/status/1813118203918266700\n・https://x.com/MicahAlexKenda1/status/1813121183841415365\n\nPublic Livestream Tutorial of RNG Library usage with implementation example on Python, TS and JS: https://live.nucast.io/rngtutorial\nRNG Library Links:\n・https://www.npmjs.com/package/rng-ts-lib\n・https://pypi.org/project/py-rng-lib/\n\nGitHub Repositories:\n・RNG Seed Contract: https://github.com/Nucastio/randomness-seed-contract\n・RNG Oracle Contract: https://github.com/Nucastio/rng-oracle-contract\n・RNG API: https://github.com/Nucastio/rng-api\n・RNG Python Lib: https://github.com/Nucastio/rng-python-lib\n・RNG JS/TS lib: https://github.com/Nucastio/rng-ts-lib\n\nCommunity Engagements:\n・GitHub Commits: https://imgur.com/a/J4Q6fAx\n・Discord Announcement: https://imgur.com/XOErxXK\n・Twitter Announcement: https://imgur.com/MWMYvm7\n・Tweet link: https://x.com/lovelaceclubnft/status/1793995398496850069?s=46&t=gq_wqNDoj9OJ5FOqUQjmRQ\n・Launch Announcement: https://x.com/LovelaceClubNFT/status/1812800648213152228\n\nOpensource Usage Examples and Tutorials:\n・Python Example repo - https://github.com/Nucastio/rng-py-example\n・TS Example repo - https://github.com/Nucastio/rng-ts-example\n・JS Dice game example repo https://github.com/Nucastio/rng-js-example\n・RNG CLI in Typescript Tutorial: https://drive.google.com/file/d/1HQwUwSXt8yU0GddnQ9dxtzUQtiGv5-6b/view?usp=sharing\n・RNG Dice Game in Javascript Tutorial: https://drive.google.com/file/d/1kJtGw4Nqr-tAW_w2cx79Go-_2JsLm3Jt/view?usp=sharing\n・RNG CLI in Python Tutorial: https://drive.google.com/file/d/1nmd_jnJGKQe1yu3gj7Xpw8fntvIh9rNP/view?usp=sharing\n\nProject Close-out Report - https://docs.google.com/document/d/1XHqEWl5kOAUCDkO2uqubRXstneX5VaIvIyX1W0ciWAg/edit?usp=sharing\nProject Close-out Video - https://youtu.be/qx4LAuRlAvk",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 56,
+      "cut": true
+    }
+  ]
+}

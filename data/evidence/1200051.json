@@ -1,0 +1,63 @@
+{
+  "title": "Cardano DAO Governance Dashboard: Voting & Treasury",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 33600,
+      "promise": "・Frontend UI/UX design \n・setup of the initial development environment, including creation of core technical specifications",
+      "criteria": "・UI designs for a fully functional DAO governance dashboard (including UX workflow)\n・successful environment setup",
+      "report": "Detailed Design Report: we compiled a report that shows our designs and explanations with it: https://drive.google.com/file/d/1tYCLaAoOWmkLvL_gNkwjH-AeR8HgRMTB/view?usp=sharing\nGitHub Repository: we created a GitHub repository with a Readme file that explains the technical setup and what tools we want to use: https://github.com/MuesliSwapTeam/muesliswap-onchain-governance-dashboard",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 33600,
+      "promise": "Implementation of essential dashboard functionalities such as Cardano wallet connection, proposal viewing, voting mechanisms, and basic treasury management",
+      "criteria": "working demo website with basic features and cardano wallet connector",
+      "report": "Github repository with detailed README and code for the dashboad: https://github.com/MuesliSwapTeam/dao-governance-dashboard/tree/main\nWe deployed the frontend for your convenience here: https://preprod.dao.muesliswap.com\nMoreover, we created a usage guide to explain some parts of the DAO frontend: https://drive.google.com/file/d/192n_MNteFASnD4hd-Zx7Dt3kzmjyX6YB/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 5
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 28000,
+      "promise": "・Full integration with the MuesliSwap DAO Smart Contract (SC) framework\n・adding the remaining features to the frontend (including token staking functionality, viewing voting results, treasury overview)",
+      "criteria": "・Successful integration with the SC framework and working demo on testnet.",
+      "report": "Dear Reviewer Team, \nwe have uploaded the new version of our testnet to Github. \nWe have made the website accessible on https://preprod.dao.muesliswap.com \nThe code is accessible in our Github repository together with a detailed README.md https://github.com/MuesliSwapTeam/dao-governance-dashboard\nMoreover, I updated our usage guide for you: https://docs.google.com/document/d/1Svac5slZiuwEcoAwO9p1JkqsjC5MfeAqPVsXUa_ZHjg/edit?usp=sharing\nMoreover, I included some example transactions linking to Cardano scan showcasing the different functionalities \n・Stake tMILK in the DAO Governance contract https://preprod.cardanoscan.io/transaction/371b95d4bd5aef4f8a977178f44a92a153b2aedc9989254ae4c7e17c795a38fb\n・Unstake tMILK in the DAO Governance contract (transaction checks if stake is not participating in current votes) https://preprod.cardanoscan.io/transaction/79e77b13767390356fa455267de808fb5d030f7bd67373d0f0eb018bac485d2d\n・Participate in Governance Vote (Tally) with staked tMILK: https://preprod.cardanoscan.io/transaction/78e200cb3a97609c9813bc46b8b4b61d7fd5bce3f2c5fc09fdd8117153a75032\n・Create Tally (i.e. use the current DAO (governance thread)) and create a proposal by executing the contract and creating a tally that is linked to the Governance Thread: https://preprod.cardanoscan.io/transaction/6a5bda466672f2e4c91d363d6b9ed060acbfff268ea6ce7a50f6b0b7b6180307?tab=utxo",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 14
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 16800,
+      "promise": "・Final close-out report\n・Final closeout video\n・Deployment of the final dashboard on Cardano mainnet\n・collection and implementation of community feedback",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Stable mainnet operation\n・community feedback collected",
+      "report": "Dear Reviewers,\nWe are happy to share that we have completed the project and successfully released our current interface version as a beta on the Cardano Mainnet. Below, you can find links to all our milestone deliverables:\n・Final Catalyst CloseOut Report: https://drive.google.com/file/d/1rswcqYAlI5GqbpCrumB5vMQIS85kyp_S/view?usp=sharing\n・Final Catalyst CloseOut Video: https://youtu.be/v4Pg33Q_FFQ\n・Link to mainnet website: beta.dao.muesliswap.com / Preprod version still accessible at (preprod.dao.muesliswap.com)\n・Final Project Code on GitHub: https://github.com/MuesliSwapTeam/dao-governance-dashboard (please check latest commit for all our improvements + including feedback adjustments and mainnet preparations)\n・We created a Google Form to collect Commuity Feedback https://docs.google.com/forms/d/e/1FAIpQLScj9z3YUiRCxi61DKasSOjA1-uJQhL81eQgf44oTAKoPasrtg/viewform, which we also released on our X channel https://x.com/MuesliSwapTeam/status/1967515875398885804 - we summarised all collected feedback in a feedback report we wrote: https://drive.google.com/file/d/1ZChu0KCuUiNAZwUfE91UvWpFB54iOi7s/view?usp=share_link\n\nBest Regards, \nMuesliSwap Team",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "title": "Onboarding solution via bank transfer - Rampy",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25000,
+      "promise": "Crafting the framework and technical infrastructure. This includes selecting a technologies, security protocols, compliance measures, and scalability solutions to ensure a secure and efficient exchange process. Implementing services infrastructure which are required in the background to operate as finance intermediary.\nThe available output is going to be a public api and documentation. User can authenticate, lookup available pairs and create an order. The API serves as the fundamental cornerstone of Rampy.",
+      "criteria": "・Documentation is accessible\n・API is accessible\n・Users get access to the api with the provided client key\n・Users can lookup available pairs (EUR -> ADA etc.)\n・Users can create orders for available pairs",
+      "report": "・Dokumentation & API: https://api.rampy.io\n・Client Key: f31420e3b83e8ba282d9cbe0\n\nThe Video shows how the api can be used to create a challenge or orders, lookup pairs, orders, and create a new JWT token. https://drive.proton.me/urls/087D8WQNF4#YTOv2cTktPM7",
+      "kinds": [
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 25000,
+      "promise": "Website with wallet connector to securely sign-in and interact with Rampy.\nThe dApp provides access to Rampy via wallet connection. A user has to connect and sign a message to verify the ownership of the linked wallet to successfully sign-in. After successfully signing-in the user will be walked through the flow to create an order to buy ADA with EUR via bank transfer.",
+      "criteria": "・Website offers a wallet connection\n・Sign-in to Rampy by verifying ownership of the wallet by signing a message\n・Users are able to create, read and delete orders",
+      "report": "dApp is available at https://app.rampy.io or https://rampy.app.\nVideo demonstrating the dApp https://drive.google.com/file/d/1omYqRs0PuVD1lN6-JMddnDB7oHSb-ox1/view?usp=drive_link\nupdate: the link should be accessible for anybody now. I am sorry for the wrong access level. \nAcceptance Criteria shown in the video:\n・Wallet connection\n・Signing a message to verify ownership of the wallet\n・Create, Read and delete orders after signing in\n\nHappy testing.",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "A simulation service for bank transfers and internally simulate compliance and exchange activities. Users can simulate a bank transfer by decided the origin bank account - IBAN and Name -, the amount in EUR and the purpose of the transfer. If the user has an associated order rampy is going to send funds to the users wallet.",
+      "criteria": "・Users can simulate a bank transfer.\n・Users receive tokens in their testnet wallet after simulating a valid bank transfer which can be linked to an order.",
+      "report": "Simulation API: https://api.rampy.io/doc#/Simulation\nSimulation Website: https://app.rampy.io/simulation\nVideo to showcase the simulation with valid transaction on Cardano Preview https://drive.google.com/file/d/1NY3DZGmx4T4XVgULvTll1G9z9n15zNgG/view",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 25000,
+      "promise": "This final milestone includes further refinement of the web app, gathering and displaying past transactions - history - per user. Downloading the history will also be available in a common format - for example CSV or JSON.\nThe final output for this milestone will be the Proof-of-Project-Report as well as the Proof-of-Demonstration video to showcase the web app.",
+      "criteria": "・Users can lookup and download their past transactions after sign-in to the dApp\n・WebApp and API is publicly available and anybody can try it\n・Proof-of-Project-Report\n・Proof-of-Demonstration-Video",
+      "report": "・API: https://api.rampy.io\n・App: https://app.rampy.io\n\nThe Close Report Video shows the feature to download history (operations) as json. \n・Proof-of-Project Report: https://docs.google.com/document/d/1IRcO3nU4Mav8P-RY0roVXRTUFrFK9Jm5js9dFXYHayo/edit?usp=sharing\n・Proof-of-Demonstration-Video: https://www.youtube.com/watch?v=z7n0pXyR7QU",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

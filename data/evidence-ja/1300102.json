@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・完成したCardano HTLCスマートコントラクトコードリポジトリ\n・完了Bitcoin HTLCスクリプトリポジトリ\n・両契約のセキュリティ監査報告、監査するコードは、AIKENスマートコントラクトとBitcoinのスクリプトです",
+      "criteria": "・レジストは、アイケン州のCardanoスマートコントラクトを含む\n・リポジトリはスクリプトでBitcoin契約を禁じます\n・コードの監査報告\n\n監査役は、Anastasia Labs、Sundae Labs、Certik、Valum Labsの間で選ばれた第三者になる予定です。\n監査役は、監査役の入手可能性によって決まっているため、監査役は選任できません。\n監査は契約の完全なコードをカバーします\nプロジェクトは、MITライセンスの下でオープンソースになります",
+      "report": "FluidSwap スマートコントラクトが完成し、レビューの下にある:\nリポジトリ全体は次のようになります。\nhttps://github.com/FluidTokens/ft-cardano-fluidswaps-sc/tree/main\n現在進行中の監査の事前報告が含まれています。\n・ホワイトペーパー報告:リンク\n・ビットコイン契約:リンク\n・Cardano契約:リンク\n・公式監査人による初期監査リンク、監査人は、ビットコイン、Cardanoへの貢献、他の監査人からの可用性の欠如のために彼の専門的経験のために選ばれました\n・Auditは、そのフォーマット/表現インタフェースの最終バージョンで、現在、契約で見つかった問題の修正を行っています。\n\nリポジトリはオープンソースであり、次のマイルストーンで監査が完了します\n初回監査を審査者として追加"
+    },
+    {
+      "no": 2,
+      "promise": "・Cardano HTLCスマートコントラクトコード完成\n・EVM HTLC 受託コード完成\n・カーダノの固着契約と無傷契約の双方のセキュリティ監査報告",
+      "criteria": "・Cardano HTLCコードのアイケンスマートコントラクトのリポジトリ\n・Repository には EVM の固着契約が含まれています\n・リポジトリ内の両方の契約のセキュリティ監査レポート\n\n監査役は、Anastasia Labs、Sundae Labs、Certik、Valum Labsの間で選ばれた第三者になる予定です。\n監査役は、監査役の入手可能性によって決まっているため、監査役は選任できません。\n監査は契約の完全なコードをカバーします\nプロジェクトは、MITライセンスの下でオープンソースになります",
+      "report": "FluidSwap スマートコントラクトが完成し、レビューの下にある:\nリポジトリ全体は次のようになります。\nhttps://github.com/FluidTokens/ft-cardano-fluidswaps-sc/tree/main\n最終的な監査と新しいスマートコントラクトが含まれています。\n・ホワイトペーパー報告:リンク\n・ビットコイン契約:リンク\n・Cardano契約:リンク\n・イーサリアムスマートコントラクト:リンク\n・公式監査人による最終監査リンク、監査人は、ビットコイン、Cardanoへの貢献、他の監査人からの可用性の欠如のために、彼の専門家の経験のために選ばれた、監査日が更新されました\n・Audit は最終化され、すべての問題が修正されていると述べています\n・次のマイルストーンのリクエスト変更が承認されました\n\nリポジトリはオープンソースであり、次のマイルストーンでは、フロントエンドがそれと相互作用するようになります"
+    },
+    {
+      "no": 3,
+      "promise": "・原子スワップ用機能性フロントエンドインターフェース\n・Testnet上でのCardanoとEVM契約との統合\n・ユーザのドキュメントとテストガイド.",
+      "criteria": "・アトミックスワップ機能フロントエンドインターフェイスへのリンク\n・フロントエンドは、ユーザーがCardano、Metamaskウォレット、Xverseウォレットを使用して接続し、プラットフォームに接続されている他のユーザーとアトミックスワップを実行するWebサイトを含みます\n・Meetmaskとeternlウォレットを使用してtestnet上でCardanoとEVM契約を統合\n・ユーザーとしてのスワップの実行方法を説明するレポジトリに関するユーザードキュメンテーションとテストガイド、ウォレットの接続、他のユーザーとのやり取り\n\nテストフェーズは、DiscordとTwitterで公開テストネットリンクを共有し始めます, プラットフォームで再生するユーザーに招待, 賞金なし",
+      "report": "パブリックテストネットが発表されました:\nhttps://x.com/FluidTokens/status/2014375593819730096\nLiquidtokensドメインに基づくパブリックtestnetリンク:\nhttps://fluid-swap-dev.fluidtokens.com/\nドキュメント:\nhttps://github.com/FluidTokens/ft-cardano-fluidswaps-sc/blob/main/FluidSwap Docs.md\n公共のReadme:\nhttps://github.com/FluidTokens/ft-cardano-fluidswaps-sc/blob/main/README.md\nユーザーは、Ethereum の Cardano、Testnet3、Bitcoin および Sepolia testnet で testnet のプレビューを使用できます。\n\nライブストリームのビデオチュートリアルは、次の日に追加されますが、これは追加になります、我々は2月にメインネットでライブに行く予定です"
+    },
+    {
+      "no": 4,
+      "promise": "・メインネット上でCardano HTLC と EVM 契約を廃止\n・ユーザーにアクセス可能なライブフロントエンドインターフェイス。\n・イベントやマーケティングキャンペーンを実施し、プラットフォームを推進\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・Platformはライブ配信、リンク提供\n・メインネットの使用・試験\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n・動画や投稿でTwitterでのマーケティング、コンテンツへのリンク共有\n・FludTokens ambasadors を使ったyoutubeマーケティング動画へのリンク",
+      "report": "公開文書:\n\nhttps://github.com/FluidTokens/ft-cardano-fluidswaps-sc/blob/main/FluidSwap Docs.md\n\nGitHubリポジトリ(スマートコントラクト):\n\nhttps://github.com/FluidTokens/ft-cardano-fluidswaps-sc\n\nパブリック README:\n\nhttps://github.com/FluidTokens/ft-cardano-fluidswaps-sc/blob/main/README.md\n\nテストネット上の最初の原子スワップ(お知らせ):\n\nhttps://x.com/FluidTokens/status/2000981697672696122\n\nメインネット上の最初の原子スワップ(お知らせ):\n\nhttps://x.com/FluidTokens/status/2037244182130020532\n\nビデオデモ: https://youtu.be/gLg3HIOE0LM\n\nライブビデオデモ: https://x.com/elraulito/status/2001324294908035477\n\nクローズアウトビデオ: https://youtu.be/hrUwx3pKQbM\ngithubリンクでホストされているPDF形式のクローズアウトレポート\n\nユーザーテストスワップ: https://x.com/silversoul8668/status/2024473201238299061\n\nライブメインネットプラットフォーム: http://fluid-swap.fluidtokens.com/\n\n最終監査リンク\nこのコードは、M2以降に更新され、上記の最終監査によって監査され、コードバージョンの監査はコミットハッシュです。\nebb1ca5aeaed43ffe02d6ec0c7435240d17b9c13\n\n最後のコミットcf50edf86ffce037a2337ea834bc7d11a7079b56は、いくつかの触媒文書をプッシュし、テストの最新の値と契約のためのいくつかのテストをアップグレードしました、スマートコントラクトコードは正確に同じであり、コントラクトのバイトコードhttps://github.com/FluidTokens/ft-cardano-fluidswaps-sc/blo/b/blut/mainp/jsonのファイルをチェックすることによって、この検証可能です。\n\nリポジトリの次のコミットは、触媒、レポート、および監査PDFの追加文書でした"
+    }
+  ]
+}

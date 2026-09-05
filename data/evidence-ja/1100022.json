@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "アイケン・オープンソース・スマート・コントラクト・ライブラリ内の一連の標準契約を開発し、実施する:\n- マーケットプレース(買い、更新、キャンセル、購入)\n- スワップ(入金、キャンセル)\n- Escrow(リスト、支払い、レポート、紛争、クレーム)\n- ヴェストリング\n- ギフトカード",
+      "criteria": "・各契約の成功実装\n・パステストと検証を受託します。\n・各契約の書類作成、アクセス可能.",
+      "report": "アイケンワークスペースおよびTxビルダーを含むマイルストーン1の5つの契約のそれぞれは、当社のGithubリポジトリで見つけることができます。 追加すると、Webサイトwww.meshjs.devでもドキュメントを見つけることができます。\n・市場:\n\nhttps://github.com/MeshJS/mesh/tree/main/packages/contracts/src/marketplace\nhttps://meshjs.dev/smart-contracts/marketplace をフォロー\n- スワップ/支払いスプリッタ:\nhttps://github.com/MeshJS/mesh/tree/main/packages/contracts/src/payment-splitter\nhttps://meshjs.dev/smart-contracts/payment-splitter の使い方\n- エスクロー\nhttps://github.com/MeshJS/mesh/tree/main/packages/contracts/src/escrow\nhttps://meshjs.dev/smart-contracts/escrow\n- ヴェストリング\nhttps://github.com/MeshJS/mesh/tree/main/packages/contracts/src/vesting\nhttps://meshjs.dev/smart-contracts/vesting\n- ギフトカード\nhttps://github.com/MeshJS/mesh/tree/main/packages/contracts/src/giftcard\nhttps://meshjs.dev/smart-contracts/giftcard\n\nライブラリの使用を実証するビデオ:\nhttps://www.loom.com/share/1ad229892186475ab4c13c1609173c130?sid=312de321-522d-4b8c-99af-15fd169358ff"
+    },
+    {
+      "no": 2,
+      "promise": "アイケンオープンソースのスマートコントラクトライブラリ内の高度な機能を示す複雑な契約のセットの実装。\n- スマートコントラクト NFT マイニング\n- アプリOracleデザインパターン\n- コンテンツオーナーシップガイド",
+      "criteria": "・各複合契約の徹底的な実施\n・パステストと検証を受託します。\n・各コンプレックス契約の文書作成、アクセス可能.",
+      "report": "Milestone 2には、Oracle Design パターンごとに NFT マイニング、コンテンツの所有権を含む高度なスマートコントラクトが含まれています。 各契約には、アクスルスクリプト、アイケンワークスペース、Txビルダーが含まれており、リンクされたGithubリポジトリで見つけることができます。 また、Webサイトwww.meshjs.devでも、MeshJSと完全なドキュメントの詳細をご覧いただけます。\nライブラリの使用を実証するビデオ:\nhttps://www.dropbox.com/scl/fi/lmrpn9h6dj0g83f3c1iko/Copy-aikenlib-m2.mov?rlkey=36fy2m9ixglmv3fnc5w4ek43f&st=sfbgbys5&dl=0\n\nスマートな契約の記述:\n・コンテンツ所有権:\n・ドキュメント: https://meshjs.dev/smart-contracts/content-ownership\n・Githubリポジトリ:https://github.com/MeshJS/mesh/tree/main/packages/mesh-contract/src/content-ownership\n\nOracleの設計パターンが含まれています:\n・セットアップ Oracle UTXO: NFT を、真理の単一ソースとして機能する datum をロックする軌道契約に送信します。\n・コンテンツレジストリの作成\n・所有権登録簿の作成\n・Oracleデータの取得:レジストリの現在の状態を取得する\n・Mintユーザートークン: ミントトークンなので、ユーザーはコンテンツを作成できます\n・コンテンツを作成する:コンテンツをレジストリに添付する\n・コンテンツの入手:レジストリからコンテンツデータを取り消す\n・スマートコントラクト NFT マイニング:\n・ドキュメント: https://meshjs.dev/smart-contracts/plutus-nft\n・Githubリポジトリ:https://github.com/MeshJS/mesh/tree/main/packages/mesh-contract/src/plutus-nft\n\nOracleの設計パターンが含まれています:\n・セットアップオラクル:オラクルを設定するためのワンタイムマイニングポリシー\n・Mint Token: トークン名がカウンターで増分されるようにするミントNFT\n・Oracleデータの取得:現在のNFTインデックスやその他の情報を取得するため、現在のOracleデータの取得"
+    },
+    {
+      "no": 3,
+      "promise": "アイケン・オープンソース・スマート・コントラクト・ライブラリ内の一組の意図的に悪い契約を作成して、開発者のための学習リソースとして機能します。\n- マイルストーン1の契約を使用して5つの教育資料を準備し、共通の間違いとそれを壊して下さい\n- これらの共通の間違いを覆い、契約を修理するために2つの研修会があり、記録しました",
+      "criteria": "・各悪い契約の成功実装。\n・パステストを実施し、特定の課題を展示します。\n・欠陥や潜在的な修正を詳細に文書化して、アクセス可能.",
+      "report": "ディール MR,\nリクエストされた変更に対応するリポジトリを更新しました。\n1. ドキュメントとデモリンク:\nそれぞれ5つの「悪い契約」には、以下を含むREADMEが含まれます。\n・この契約は、教育目的のために作成された悪い契約のリストの一部であることを警告します。\n・本契約を具体的に説明し、説明するワークショップの記録を直接リンクします。\n・ドキュメントの追加:\n・各エラーの動作メカニズム\n・エラーを修正する方法を詳述したソースコード。\n・「aiken check」コマンドで受託試験の証拠\n\n2. ワークショップ\nどちらのワークショップも、これらの契約から分析および学習する方法について詳しく紹介します。 また、Gimbalabs & Andamio Aiken Learningコースに組み込まれています。これにより、開発者のための追加の構造とコンテキストを提供します。\n・Youtubeプレイリスト:https://youtube.com/playlist?list=PLCCIAmutGEbemjDkJQLy4nouU9UccK4wq&si=OyqvlxZB7ERYQHb \n・Andamioプラットフォーム:https://app.andamio.io/course/aiken-pbl-2024\n\n3. リソース:\n・更新契約:\n・アンバウンドバリュー\n・無限ミント\n・不十分なステークコントロール\n・ロックされた価値\n・ダブル満足度脆弱性\n・ワークショップ録画(Gimbalabs Aikenラーニングコースにも組み込まれています)\n・ワークショップ1\n・ワークショップ2\n・リポジトリの概要:\n・https://github.com/MeshJS/mesh/tree/main/packages/mesh-contract#list-of-bad-contract"
+    },
+    {
+      "no": 4,
+      "promise": "この最終マイルストーンには、すべてのクローズアウトとプロジェクト完了活動が含まれます。\n出力には、プロジェクト完了ビデオと完了レポートが含まれます.",
+      "criteria": "・完成映像\n・終了報告",
+      "report": "レポートを閉じる: https://docs.google.com/document/d/1xLxBYmSD6ETHI qypZoZ65k9LiS79Z WLFGxYfWZJTA/edit?usp=sharing\nビデオを閉じる: https://vimeo.com/1077062487?share=copy"
+    }
+  ]
+}

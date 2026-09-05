@@ -1,0 +1,62 @@
+{
+  "title": "by Txpipe - White-label e-Commerce Platform on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 29975,
+      "promise": "A. A technical architecture document describing the overall system design, including diagrams of the main components and their interactions.\nB. Publicly available source-code containing the initial project scaffold, with stub implementations for all major system components.\nC. A functioning CI/CD workflow to build and test the source-code throughout the whole development process.",
+      "criteria": "A1. The architecture document is published publicly, reflects the full scope of the proposal, and includes diagrams of the main components and their interactions.\nB1. The public repository contains the initial project scaffold with stub modules for each major component described in the architecture document.\nC1. A CI/CD workflow is active in the repository and successfully builds/tests the scaffold in preparation for further development.",
+      "report": "A2. Link to the published architecture document in the project repository.\nhttps://github.com/tx3-lang/tx3-ecommerce-template/tree/main/docs/architecture\nB2. Link to the public GitHub repository containing the open-source code.\nhttps://github.com/tx3-lang/tx3-ecommerce-template\nC2. Link to a successful CI/CD run in the repository.\nhttps://github.com/tx3-lang/tx3-ecommerce-template/actions\nD2. Video walkthrough of the designed architecture.\nhttps://youtu.be/bPToXUC-8_I",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 27477,
+      "promise": "A. A white-label, web-based storefront component that enables catalog browsing, product selection and checkout initiation. \nB. A web-based back-office component that allows users to create and manage online stores.\nC. A crypto-native checkout module supporting ADA and Cardano native assets via Cardano wallets.\nD. User-guide documentation describing how to use the basic features delivered in this milestone.",
+      "criteria": "A1. The storefront component can be run by users and supports catalog browsing, product selection, and checkout initiation.\nB1. The back-office can be run by users and allows the creation and management of online stores, with at least 2 test stores created as part of the validation process.\nC1. The crypto-native checkout module processes payments using ADA and Cardano native assets, with at least 2 successful test transactions executed as part of the validation process.\nD1. The user-guide documentation is publicly available and accurately describes how to use all basic features delivered in th",
+      "report": "A2. Link to a public instance of the web-based storefront.\nhttps://tx3-ecommerce-template.vercel.app/ \nB2. Link to 2 test stores created as part of the validation process.\nhttps://tx3-ecommerce-template.vercel.app/\nhttps://buidler-fest-gift-store.vercel.app/\nC2. Link to 2 successful test transactions executed as part of the validation process.\nhttps://preview.cexplorer.io/tx/bddf13faa9de42bddc0c65167e42e4af39128ac29182a75cdeb69bf8a75da955\nhttps://preview.cexplorer.io/tx/cacc93946b31485e1d12685e7a7388cb6401589701775f870df18ef505cfe96a\nD2. Link to the user-guide documentation covering all basic features.\nhttps://github.com/tx3-lang/tx3-ecommerce-template/blob/main/docs/USER_GUIDE.md\nE2. Link to the public repository containing the source code for all deliverables.\nhttps://github.com/tx3-lang/tx3-ecommerce-template\n\nVideo walkthrough:\nhttps://youtu.be/0oLr9DDy0yE",
+      "kinds": [
+        "chain",
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 16,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 27477,
+      "promise": "A. An on-chain traceability feature that records key store order events as immutable transaction data.\nB. An on-chain escrow contract that holds funds between buyer and seller until released by a shipping-related event.\nC. An on-chain reputation feature that provides badge tokens that reflect buyer and seller interactions with the system.\nD. Documentation describing how the advanced on-chain features work.",
+      "criteria": "A1. The order traceability feature successfully generates on-chain transactions that record data from key store order events.\nB1. The escrow contract holds funds on-chain between buyer and seller and can be released using a shipping-related trigger, demonstrated through at least 2 tested escrow release scenarios.\nC1. The reputation feature generates reputation metrics from buyer and seller interactions recorded on-chain, demonstrated through issuance of at least 2 test badge tokens.\nD1. Documentation explaining how to deploy and use the advanced on-chain features is publicly available.",
+      "report": "A2. Video walkthrough showcasing the order traceability feature and the resulting on-chain transactions.\nhttps://youtu.be/mR06_ILzt3E\n\nB2. Link to on-chain transactions for the 2 tested escrow release scenarios.\n- c75e1c458f5bbe613d308e38d15cc9275b691c510f74b33d4ece626baef774f4\n- 76a3a8471d47004d8d67b29949bba149644c3de8194c8f08c9cee8e5de02f225\n\nC2. Link to on-chain transactions for the 2 test badge tokens issued.\n- cd20867329ed6457dbc61f464e7a18832e8902d5a7497a76dc440cb6ab40b745\n- 83886f27e8b57a7a4a1af914bb0ed329146b571b88c1ced807cb32add9e3ff03\n\nD2. Link to documentation explaining how to deploy and use all advanced features.\nhttps://github.com/tx3-lang/tx3-ecommerce-template/blob/main/docs/USER_GUIDE.md\n\nE2. Link to the public repository containing the source code for the advanced on-chain features.\nhttps://github.com/tx3-lang/tx3-ecommerce-template",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 14988,
+      "promise": "A. Publicly available source code for the complete e-commerce platform\nB. Publicly available documentation covering all delivered components.\nC. A close-out video showcasing the final output of the project.\nD. A close-out report describing the project process and final outcomes.",
+      "criteria": "A1. The complete e-commerce platform can be successfully used to create and manage online stores with the features specified in the proposal.\nB1. The documentation enables developers to set up and use the delivered components without additional guidance.\nC1. The close-out video follows Catalyst guidelines.\nD1. The close-out report follows Catalyst guidelines.",
+      "report": "A2. Link to source-code available in our Github repository: https://github.com/tx3-lang/tx3-ecommerce-template\nB2. Link to documentation website: https://github.com/tx3-lang/tx3-ecommerce-template/tree/main#\nC2. Link to close out video uploaded to YouTube: https://youtu.be/NzNG1QzINU0?si=9Km_n0xMilhyzPc_\nD2. Link to close out report uploaded to Google drive: https://drive.google.com/file/d/1awAyfnl_3ziIeVMZoCSftx2N6GCHKzz3/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

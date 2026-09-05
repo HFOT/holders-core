@@ -1,0 +1,59 @@
+{
+  "title": "VeriScript - On-chain source code verification",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 19440,
+      "promise": "・A detailed technical documentation defining the VeriScript fundamentals, high-level description and in-depth inner workings of smart contracts, VeriScript reputation system and other necessary information",
+      "criteria": "・The documentation provides a detailed explanation of the product's structure and functionality\n・The documentation contains transaction diagrams and definitions of necessary data types like: Datum, Redeemer, Parameters",
+      "report": "A. \nOutput: \n・A detailed technical documentation defining the VeriScript fundamentals, high-level description and in-depth inner workings of smart contracts, VeriScript reputation system and other necessary information\n\nAcceptance criteria: \n・The documentation provides a detailed explanation of the product's structure and functionality\n・The documentation contains transaction diagrams and definitions of necessary data types like: Datum, Redeemer, Parameters\n\nEvidence: \n・The VeriScript repository is accessible at https://github.com/CardanoProphet/veriscript\n・The technical documentation is published at the following link as a PDF file: https://github.com/CardanoProphet/veriscript/blob/main/docs/veriscript.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 19440,
+      "promise": "・Deliver the smart contract source code\n・Provide inline code documentation for each function\n・Update documentation with a \"build\" section, that explains how to build the smart contracts",
+      "criteria": "・The smart contracts are accessible to the public in the GitHub repository and they build without errors\n・Inline code documentation is provided for each smart contract function\n・Documentation contains the new \"build\" section containing the build instructions",
+      "report": "A. Output: Deliver the smart contract source code\nAcceptance criteria: The smart contracts are accessible to the public in the GitHub repository and they build without errors\nEvidence: The full smart contract source code is published in the project's repository at https://github.com/CardanoProphet/veriscript (more specifically here: https://github.com/CardanoProphet/veriscript/tree/main/contracts )\n\nB. Output: Provide inline code documentation for each function\nAcceptance criteria: Inline code documentation is provided for each smart contract function\nEvidence: The inline code documentation can be seen inside the smart contract files present in the project's repository at https://github.com/CardanoProphet/veriscript (more specifically here: https://github.com/CardanoProphet/veriscript/tree/main/contracts )\n\nC. Output: Update documentation with a \"build\" section, that explains how to build the smart contracts\nAcceptance criteria: Documentation contains the new \"build\" section containing the build instructions\nEvidence: New \"build\" section of the documentation is available in the project's repository at https://github.com/CardanoProphet/veriscript (more specifically here: https://github.com/CardanoProphet/veriscript/blob/main/contracts/README.md )",
+      "kinds": [
+        "code"
+      ],
+      "links": 9
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 19440,
+      "promise": "・Develop the website's backend code to store the required data and handle user requests\n・Design and implement the website's frontend to provide a user-friendly interface for viewing and submitting attestations\n・Create a Dockerfile to facilitate deployment and ensure project reproducibility",
+      "criteria": "・The website backend can be run locally on a development machine without problems\n・The website frontend can be run locally on a development machine without problems\n・The Dockerfile sets up both services, allowing users to execute core actions (Attestation, Counter-Attestation, Minting of the Signer token)",
+      "report": "A. Output: Develop the website's backend code to store the required data and handle user requests\nAcceptance criteria: The website backend can be run locally on a development machine without problems\nEvidence: The project's backend code is publicly available in the open-source repository at https://github.com/CardanoProphet/veriscript (more specifically here: https://github.com/CardanoProphet/veriscript/tree/main/backend )\n\nB. Output: Design and implement the website's frontend to provide a user-friendly interface for viewing and submitting attestations\nAcceptance criteria: The website frontend can be run locally on a development machine without problems\nEvidence: The project's frontend code is publicly available in the open-source repository at https://github.com/CardanoProphet/veriscript (more specifically here: https://github.com/CardanoProphet/veriscript/tree/main/frontend )\n\nC. Output: Create a Dockerfile to facilitate deployment and ensure project reproducibility\nAcceptance criteria: The Dockerfile sets up both services, allowing users to execute core actions (Attestation, Counter-Attestation, Minting of the Signer token)\nEvidence: The Dockerfile is publicly available in the open-source repository at https://github.com/CardanoProphet/veriscript (more specifically: docker-compose.yml, Frontend Dockerfile, Backend Dockerfile )\n\nAdditional:\nM2 milestone review requested us to provide in M3 the transaction hashes as a proof of this working. Here are on-chain TX hashes for all the core actions:\nMinting of signer token: 627083e7752b59b9c86dd27bf3cd2c022da92aca29efc824aae5adbb0a968f48\nCreate Attestation/Counter-Attestation: 5e0221a2c191279426af3f5eba0fcd28674a0dbe5ad5e812a9e06935df8541f3\nAttest to existing Attestation/Counter-Attestation: c12624324ce7829aa48790af85115821eff3de6a0812bcdfe96d3a053956dd68\nRetire Attestation: ee0f82273f2a17b5f8a1e38f1c488fc2075e38e6a2b24be5afb02263dbb399b9",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 14
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 19440,
+      "promise": "・Deploy the VeriScript platform at https://veriscript.org\n・Conduct a public user test\n・Optimize the platform based on user feedback\n・Final close-out report\n・Final close-out video",
+      "criteria": "・VeriScript platform is publicly accessible at https://veriscript.org, without performance issues or loading errors.\n・The number of test participants/form respondents is at least 10 and the average user satisfaction (communicated via the score in the form) is at least 75%.\n・Reported bug and improvement requests are resolved.\n・Final close-out report is publicly available\n・The close-out report clearly describes the project from start to finish, including setup details, and milestone achievements\n・Complying with the requirements specified in the Catalyst documentation, here: https://docs.projectc",
+      "report": "A. Output: Deploy the VeriScript platform at https://veriscript.org\nAcceptance criteria: VeriScript platform is publicly accessible at https://veriscript.org, without performance issues or loading errors.\nEvidence: Link to the VeriScript platform: https://veriscript.org\n\nB. Output: Conduct a public user test\nAcceptance criteria: The number of test participants/form respondents is at least 10 and the average user satisfaction (communicated via the score in the form) is at least 75%.\nEvidence: Link to an XLS file containing feedback from users who participated in the test, also with the link to the survey Google Form. Link to the XLS: https://github.com/CardanoProphet/veriscript/blob/main/feedback_form_responses.xlsx / CSV version: https://github.com/CardanoProphet/veriscript/blob/main/feedback_form_responses.csv Link to the survey: https://forms.gle/1Y3S2MyXoXQzdmw5A + Based on the last PoA submission feedback, here is additionally a direct Google Sheets export of the answers: https://docs.google.com/spreadsheets/d/11y4Mwjv7PlvvC6UfA7F5pohOZ_9rZXqg-4wJMEW3wzA/edit?usp=sharing\n\nC. Output: Optimize the platform based on user feedback\nAcceptance criteria: Reported bug and improvement requests are resolved.\nEvidence: Link to the optimization report, containing user suggestions, issues reported, and how they were addressed. Link to the optimization report: https://github.com/CardanoProphet/veriscript/blob/main/optimization_report.md\n\nD. Output: Final close-out report\nAcceptance criteria: Final close-out report is publicly available\nEvidence: Link to final close-out report published on Medium and shared on X at https://x.com/CardanoProphet. Link to the close-out report: https://medium.com/@cardanoprophet/veriscript-project-close-out-report-7a1bb3b71ef8 Link to the post staring it on X: https://x.com/CardanoProphet/status/2058894640586051927 + Based on the last PoA submission feedback, here is additionally a PDF version of the Project Close-Out Report document: https://gith",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 24,
+      "cut": true
+    }
+  ]
+}

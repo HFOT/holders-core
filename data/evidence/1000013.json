@@ -1,0 +1,68 @@
+{
+  "title": "Anastasia Labs - The Trifecta of Data Structures: Merkle Trees, Tries, and Linked Lists for Cutting-Edge Contracts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 35000,
+      "promise": "A MerkleTree implementation library is written for Plutarch and Aiken.\nAn example of a validator script to validate and showcase the MerkleTree library implementation\nA MerkleTree unit test is implemented",
+      "criteria": "・MerkleTree library is implemented\n・MerkleTree unit testing is implemented\n・Example validator script is implemented",
+      "report": "We have:\n・MerkleTree implementation library written for Plutarch and Aiken.\n・An example of a validator script to validate and showcase the MerkleTree library implementation\n・A MerkleTree unit test implemented\n\nMerkleTree in Plutarch: https://github.com/Anastasia-Labs/plutarch-merkle-tree\nMerkleTree in Aiken: https://github.com/Anastasia-Labs/aiken-merkle-tree",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 35000,
+      "promise": "・A Linked List implementation library is written for Plutarch and Aiken.\n・An example of a validator script to validate and showcase the Linked List library implementation\n・A Linked List unit test is implemented",
+      "criteria": "・Linked List library is implemented\n・Linked List unit testing is implemented\n・Example validator script is implemented",
+      "report": "We have:\n・A Linked List implementation library written for Plutarch and Aiken.\n・An example of a validator script to validate and showcase the Linked List library implementation\n・A Linked List unit test implemented\n\nLinked List in Plutarch: https://github.com/Anastasia-Labs/plutarch-linked-list\nLinked List in Aiken: https://github.com/Anastasia-Labs/aiken-linked-list\nExcuse us for the last PoA - we left plutarc-linked-list repo private by accident, now everything should be available now",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 35000,
+      "promise": "・A Trie implementation library is written for Plutarch and Aiken.\n・An example of a validator script to validate and showcase the Trie library implementation\n・A Trie unit test is implemented",
+      "criteria": "・Trie library is implemented\n・Trie unit testing is implemented\n・Example validator script is implemented",
+      "report": "We have completed our trie implementation in Aiken and Plutarch\nPlutarch - https://github.com/Anastasia-Labs/plutarch-trie\nAiken - https://github.com/Anastasia-Labs/aiken-trie\nBoth trie libraries compile successfully and we have detailed instructions on running the tests are provided. Unit tests are provided in the test folders (https://github.com/Anastasia-Labs/plutarch-trie/tree/main/test and https://github.com/Anastasia-Labs/aiken-trie/tree/main/tests)\n*With visual representation added in our github repo for easier understanding",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 35000,
+      "promise": "A design specification document outlining each of the three design patterns (Merkle Tree, Linked List, Tries)",
+      "criteria": "・Documentation for Merkle Tree:\n・Detailed documentation explaining the concept and usage of Merkle Trees in Cardano\n・Clear and concise instructions on how to implement Merkle Trees in Cardano's scripting languages (Aiken and Plutarch)\n・Documentation is organized, well-structured, and easy to understand\n・Documentation for Trie:\n・Comprehensive documentation outlining the purpose and functionality of Tries in Cardano's scripting languages.\n・Step-by-step instructions on how to integrate Trie data structures into Cardano smart contracts using Aiken and Plutarch.\n・Real-world examples illustrating th",
+      "report": "We are delivering a design specification document outlining each of the three design patterns (Merkle Tree, Linked List, Tries)\nThe document can be found on our github\nhttps://anastasia-labs.github.io/data-structures",
+      "kinds": [
+        "live"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 98374,
+      "promise": "・Code published for Merkle Trees, Tries, and Linked Lists implementations in Cardano's Aiken and Plutarch scripting languages to public repository - https://github.com/Anastasia-Labs/data-structures.\n・Comprehensive Documentation created in Phase 3 is integrated into the code repositories. The documentation is easily accessible alongside the codebase and include clear instructions, examples, and use cases.\n・Project Closeout Video that summarizes the achievements of the project\n・Project Closeout Report",
+      "criteria": "・Code Repositories:\n・The code for Merkle Trees, Tries, and Linked Lists implementations is publicly accessible on https://github.com/Anastasia-Labs/data-structures\n・Code repositories include detailed README files providing instructions on how to clone, build, and use the code.\n・Proper versioning and tagging is applied to the codebase for tracking progress and updates.\n・Comprehensive Documentation:\n・The documentation for Merkle Trees, Tries, and Linked Lists is integrated into https://github.com/Anastasia-Labs/data-structures\n・Documentation should remain up-to-date and be easily accessible alon",
+      "report": "We are happy and proud to submit PoA for Milestone 5 - our Closeout video is on YouTube now :)\nGitHub commit to https://github.com/Anastasia-Labs/data-structures with: public code repositories for Merkle Trees, Tries, and Linked Lists implementations: https://github.com/Anastasia-Labs/data-structures\nComprehensive Documentation on https://github.com/Anastasia-Labs/data-structures: https://github.com/Anastasia-Labs/data-structures/blob/main/README.md\nLink to Project closeout Video: https://youtu.be/a4PdqEjHIEY\nLink to Project closeout report: https://github.com/Anastasia-Labs/project-close-out-reports/blob/main/f10-trifecta-of-data-structures-closeout-report/trifecta-of-data-structures.pdf",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    }
+  ]
+}

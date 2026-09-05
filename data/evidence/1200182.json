@@ -1,0 +1,58 @@
+{
+  "title": "OTOKEN System - Yield Bearing Token System for Cardano DeFi",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "The system design specification is a detailed overview of the OToken Framework foundational components powering the protocol. It explains the system's architecture, its key functionalities and primary features. This output document produced will serve as the blueprint for developing the smart contracts and off-chain infrastructure necessary to operate the system.",
+      "criteria": "The system design specification will consist of a technical document crafted by both the Optim Labs developers and financial engineers that presents an outline of the system for a technical audience to familiarize themselves with the overarching system logic. This document will: \n・Give an overview of the system by listing it's primary functionalities and features\n・Describe each component of the system in detail outlining individual functionality\n・Describe how each component of the system interacts with other components \n・Describe how the system's smart contracts integrate with other protocols",
+      "report": "Link to GitHub natural language repository where initial System Design Specification is published with all listed System Design Specification requirements:\n・https://github.com/OptimFinance/public-documents/blob/main/OTOKEN%20High%20Level%20Specification.pdf\n\n・Give an overview of the system by listing its primary functionalities and features\n・Page 1\n・OTOKEN Core\n・Describe each component of the system in detail outlining individual functionality\n・Page 2\n・High Level Overview Of Core System Components\n・OTOKEN Policy\n・Staking AMO\n・Collateral Management AMO\n・Describe how each component of the system interacts with other components \n・Page 4\n・System Approach To Non-Base Assets\n・Flash Minting\n・Multiple OTOKENS\n・Describe how the system's smart contracts integrate with other protocols by detailing what considerations must be made (if any) for secure integrations at both the smart contract level as well as economic considerations (asset liquidity, collateral types, oracle feeds, etc.) \n・Pages 2-3\n・Extensions Beyond Core\n・DEX AMO\n・Stake Auction AMO\n・Borrowing AMO (Future Spec / Not Included in Implementation)\n・Lending AMO ((Future Spec / Not Included in Implementation)",
+      "kinds": [
+        "code"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 90000,
+      "promise": "This informational Gitbook repository will abstract away the technicalities of the underlying OToken Framework in order to provide resources for learning and understanding the optimal assets and strategies to leverage the system. It will provide financial engineering guidelines and outline considerations necessary to create successful yield bearing tokens for the ecosystem, including suggested use cases and best practices for managing reserve assets.",
+      "criteria": "The OToken Guidelines and Documentation will be hosted, organized and easily accessible on the existing Optim GitBook repository. It will provide information on the following:\n・Understanding the optimal asset types for this system and their qualities\n・Outline general considerations necessary to create successful yield bearing tokens \n・ Describe use cases and strategies through which people can leverage the OToken system\n・List best practices for the ongoing management of reserve assets after asset creation",
+      "report": "The OToken Guidelines and Documentation will be hosted, organized and easily accessible on the existing Optim GitBook repository. It will provide information on the following:\n・Understanding the optimal asset types for this system and their qualities\n・Introduction\n・https://optim-finance.gitbook.io/optim-finance/otoken-framework/introduction\n・Key Benefits\n・https://optim-finance.gitbook.io/optim-finance/otoken-framework/introduction/key-benefits\n・Who is it for?\n・https://optim-finance.gitbook.io/optim-finance/otoken-framework/introduction/who-is-it-for\n・Inspirations & Applications\n・https://optim-finance.gitbook.io/optim-finance/otoken-framework/introduction/inspirations-and-applications\n・Vision\n・https://optim-finance.gitbook.io/optim-finance/otoken-framework/vision\n・Key Pillars of the OToken Framework\n・https://optim-finance.gitbook.io/optim-finance/otoken-framework/vision/key-pillars-of-the-otoken-framework\n・Future Directions & Opportunities\n・https://optim-finance.gitbook.io/optim-finance/otoken-framework/vision/future-directions-and-opportunities\n・An Invitation to Innovate\n・https://optim-finance.gitbook.io/optim-finance/otoken-framework/vision/an-invitation-to-innovate\n・Outline general considerations necessary to create successful yield bearing tokens \n・What is the OToken Framework?\n・https://optim-finance.gitbook.io/optim-finance/otoken-framework/framework\n・Key Concepts\n・https://optim-finance.gitbook.io/optim-finance/otoken-framework/framework/key-concepts\n・Beyond OADA and OUSD\n・https://optim-finance.gitbook.io/optim-finance/otoken-framework/framework/otokens\n・System Architecture\n・https://optim-finance.gitbook.io/optim-finance/otoken-framework/system-architecture\n・OTOKEN Policy\n・https://optim-finance.gitbook.io/optim-finance/otoken-framework/system-architecture/otoken-policy\n・Staking AMO\n・https://optim-finance.gitbook.io/optim-finance/otoken-framework/system-architecture/staking-amo\n・Collateral Management AMO\n・https://optim-finance.gitbook.io/optim-finance/otoken-fram",
+      "kinds": [
+        "doc"
+      ],
+      "links": 56,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 75000,
+      "promise": "The technical specification from the first milestone will be implemented using Aiken and/or PlutusV3, the leading Cardano smart contract programming languages in the ecosystem, to develop the core sets of smart contracts for the OToken Framework. The number of smart contracts will be determined by the scope of the system as it is implemented, and it’s based on the developers preferred method of organizing their codebase. The entire logic of the system could be implemented into just one smart contract, but it could also be better organized by splitting into smaller components. Our developers will use leading software engineering best practices when deciding the optimal number of smart contracts to best encapsulate the entirety of the system.\nThis open sourced codebase will be deployed on a private testnet or on a the mainnet with limited assets for internal verification and thorough testing of system logic, core mechanisms and key components. A video walkthrough describing the general functionalities of these smart contracts will be presented where the lead developer will explain a high level overview of the OToken system for Catalyst reviewers and other non-technical audiences to f",
+      "criteria": "Open sourced Aiken or Plutus V3 codebase that implements core system design specification components.\nVideo of code walkthrough to describe the smart contract mechanism and working live interactions of a private testnet or limited-asset mainnet deployment for non-technical Milestone Reviewers and the broader Catalyst community to understand the scope of the system. This code walkthrough will include:\n・Overview of the entire OToken Framework system and its core mechanics.\n・Individual component description, explaining detailed functionality and how it fits into the whole system.\n・Overview of int",
+      "report": "OUSD Milestone 3 Submission\n・Aiken codebase implementation of the OUSD architecture\n・https://github.com/OptimFinance/clean-code/tree/cotoken\n・Video of code walkthrough to describe the smart contract components\n・https://drive.google.com/file/d/1ySQ4CUD6uXRdGmsGEXPv3tM0eKayVnpC/view?usp=sharing\n\nExplanations\n・OToken Framework system composability \n・File:\n・https://github.com/OptimFinance/clean-code/blob/cotoken/otoken/validators/deposit_amo.ak\n・Timestamp:\n・1:05\n・Individual component core mechanics and interactions with system processes\n・Deposit/Withdrawal mechanism\n・Files:\n・https://github.com/OptimFinance/clean-code/blob/cotoken/otoken/validators/deposit_amo.ak\n・https://github.com/OptimFinance/clean-code/blob/cotoken/otoken/validators/staking_amo.ak\n・Timestamp:\n・2:26\n・16:40\n・Duration locking mechanism \n・Files:\n・https://github.com/OptimFinance/clean-code/blob/cotoken/otoken/validators/otoken_policy.ak\n・https://github.com/OptimFinance/clean-code/blob/cotoken/otoken/validators/otoken_rule.ak\n・Timestamp:\n・8:25\n・Yield accrual logic and collateral asset liquidity\n・File:\n・https://github.com/OptimFinance/clean-code/blob/cotoken/otoken/validators/collateral_amo.ak\n・https://github.com/OptimFinance/clean-code/blob/cotoken/otoken/validators/sotoken_rule.ak\n・Timestamp:\n・6:50\n・14:38\n・Technical specifications referenced in the video:\n・OToken Framework Specification\n・https://github.com/OptimFinance/public-documents/blob/main/OTOKEN%20High%20Level%20Specification.pdf",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 20,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 15000,
+      "promise": "In order to ensure the safety, security and robustness of the OToken system, Optim Labs will launch a bug bounty program to incentivize community developers and security researchers to verify the codebase and smart contracts before a live deployment is launched. There will be a $20k USD worth of ADA (at current market price at time of announcement) prize pool for bugs that are properly identified and reported to the Optim lead developer. Outputs will include:\n・Bug Bounty Program announcement and participation guidelines.\n・Announcement of Bug Bounty Program conclusion and publishing a report detailing \n・A report of any findings, corrections or updates made to the codebase will be aggregated and made publicly available with the rest of Optim’s past audits and security reports.",
+      "criteria": "・A medium article announcing the bug bounty and outlining its rules and terms of participation will be used to officially start the program.\n・Announcement of Bug Bounty program completion summarizing any pertinent information about the program’s execution.\n・A report with any findings if any are found will be available for public dissemination at this time.",
+      "report": "・Link to Medium article announcement of bug bounty program and participation guidelines.\n・https://optim-labs.medium.com/oada-bug-bounty-113f50e26578\n・Link to Social Media announcements of program completion where report is also initially shared.\n・https://x.com/optimfi/status/1800924418476265564?s=46\n・https://x.com/optimfi/status/1802737731963089211?s=46\n・Link to report document hosted in GitHub or GitBook for posterity with the rest of our audit reports.\n・https://optim-finance.gitbook.io/optim-finance/otoken-framework/bug-bounty-program",
+      "kinds": [
+        "doc",
+        "social"
+      ],
+      "links": 8
+    }
+  ]
+}

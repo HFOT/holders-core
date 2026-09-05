@@ -1,0 +1,61 @@
+{
+  "title": "The first Plastic Credit ReFi Protocol with USDM",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 45000,
+      "promise": "• Smart contract development and implementation in test environment, Policy script definition for liquidity pool, GitHub repository setup and initial code upload.\n• The Smart Contract will:\n• Register the value of the roadmap and the wallet address linked to the roadmap. \n• Track plastic credits related to roadmap and reflect a progress. \n• When a plastic credit is sold, transfer tokens corresponding to plastic credit sales to allow the transfer of plastic credits from issuer to buyer. \n• Account for the plastic credits sold as they relate to a roadmap. \n• Account for the funds corresponding to the plastic credits sold. \n• Provide a progress for roadmaps. \n• When the plastic credits required to fund the roadmaps are sold, release the USDM to the creator and lender.\n• Create automated tests for policy scripts \n• Policy scripts automations for deployment",
+      "criteria": "• Policy scripts of the protocol in github \n• Automated Tests for the policy scripts \n• Policy scripts automations for deployment \n• Smart Contract will function accordinly:\n• Register the value of the roadmap and the wallet address linked to the roadmap. \n• Track plastic credits related to roadmap and Showcase a progress. \n• When a plastic credit is sold, transfer tokens corresponding to plastic credit sales to allow the transfer of plastic credits from issuer to buyer. \n• Account for the plastic credits sold as they relate to a roadmap. \n• Account for the funds corresponding to the plastic c",
+      "report": "Updated the Readme Document With the role of USDM Stable coin: https://github.com/Plastiks-io/refi-protocol/tree/main\n\nSmart contract address In perprod testnet: addr_test1wza00f6zecqlep3vxa78hc29weyet7hd3xlj8sz6awjts2q34k334\n\nGithub link for the project : \nhttps://github.com/Plastiks-io/refi-protocol\n\nPolicy scripts of the protocol in github Smart contract code: https://github.com/Plastiks-io/refi-protocol/tree/main/smart-contract\n\nTest Case and Test Report\nhttps://github.com/Plastiks-io/refi-protocol/tree/main/smart-contract/test\nhttps://github.com/Plastiks-io/refi-protocol/tree/main/backend/test\nhttps://nozamagreen.sharepoint.com/:b:/s/Nozama-external/EV2_8EqpT5FAjWxQylhhq3IBBp-72n7hJyGApl0mrKwA8g?e=RvFTc8\nTest Transaction hash of how USDM being transferred after completion of roadmap: d52d27538d8faead63f35bada8859eac3eb979e939a370a66b446ed456a42d91\n-Test Transaction hash in Cardano explorer: https://preprod.cexplorer.io/tx/d52d27538d8faead63f35bada8859eac3eb979e939a370a66b446ed456a42d91\nAsset ID for USDM used for testing TestNet:e8f329da44fb66d033d26a566b0f9f743493b0cf18458c051ac442615553444d\nCardano explorer link for Asset ID: https://preprod.cexplorer.io/asset/asset18qcfcc0u2qp7rmuu0332j99tt6szkwv0hv4xsf\n\nGithub link for Screenshots: \nhttps://github.com/Plastiks-io/refi-protocol/tree/main/screenshots",
+      "kinds": [
+        "chain",
+        "code",
+        "other"
+      ],
+      "links": 9,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 42000,
+      "promise": "・ Create the UI integration for the lender, that interacts with the smart contracts, where the user can lend the money and get the profit once the resource has been bought \n・Backend integration with smart contracts",
+      "criteria": "• UI for lenders working with Cardano wallets \n• Backend to handle the connectivity between the smart contracts and the UI, and deploy in the test environment \n• The UI and Backend will allow for the user to:\n• Register the value of the roadmap and the wallet address linked to the roadmap. \n• Track plastic credits related to roadmap and Showcase a progress bar. \n• View that when a plastic credit is sold, transfer tokens corresponding to plastic credit sales to allow the transfer of plastic credits from issuer to buyer. \n• View that the amount plastic credits sold as they relate to a roadmap.",
+      "report": "Updated Source code Repository on Github \n https://github.com/Plastiks-io/refi-protocol \n Smart Contract updated source code \n https://github.com/Plastiks-io/refi-protocol/tree/main/smart-contract/src \n Smart Contract Test Cases \n https://github.com/Plastiks-io/refi-protocol/tree/main/smart-contract/test \n Backend and service source Code \n https://github.com/Plastiks-io/refi-protocol/tree/main/backend/src \n Test Cases \n https://github.com/Plastiks-io/refi-protocol/tree/main/backend/test \n UI/Front-end Source Code \n http://github.com/Plastiks-io/refi-protocol/tree/main/frontend/src \n UI Screenshots updated \n https://github.com/Plastiks-io/refi-protocol/tree/main/screenshots \n \n Video showcasing: \n how the UI works \n how the Back end works \n How smart contract work with a plastic credit from a recovery entity. \nUI explaination ReFI dAPP.mp4",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 15,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 30000,
+      "promise": "・Create a dashboard to see the activity of the protocol where everybody can see what is going on. \n・ETL process to Extract, Transform and Load information from the web3 to the platform \n・Design of the dashboard \n・Testnet integration of the dashboard / user interface\n・Dashboard will allow user to view the plastic credit sales, roadmap completion, token return and USDM release.",
+      "criteria": "· Full design with interaction description \n· Dashboard in production \n・Full design with interaction description \n・The goal of this milestone is to produce a fully funcionning PUBLIC dashboard that will allow any user to view the plastic credit sales, roadmap completion, token return and USDM released. \n・User can connect their wallet and see the stats regarding how much plastic it was sold if it is a recovery entity and the amount earned if it is a lender",
+      "report": "Fully functioning PUBLIC dashboard link: https://www.plastiks.app/\nIt includes the plastic credit sales, roadmap completion, token return and USDM released. \n \nAlso, we hosted the API on http://13.200.155.72/api\n•Updated Github link https://github.com/Plastiks-io/refi-protocol\n \n• Test Cases \nFront-End - refi_milestone3_frontend_test_case.pdf \nBack-end refi_milestone3_backend_test_case.pdf \n• Video: ReFi dAPP walkthrough\nDemonstrating that a user can connect to the application with a CARDANO wallet. There are different type of uses, PRE- Plastic Recover Entity, Plastiks Token Holder, Admin \nThe video shows the entire Flow from wallet connection to transaction completion. \n• Overview Document for Milestone 3: refi_milestone3",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 11
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 33000,
+      "promise": "・Documentation and support for the onboarding of the platform \n・Adding monitoring and alerts \n・Documentation for the Plastiks use case and general information about how the platform works for another cases \n・Fixing and maintenance after the platform has run for a bit \n・Closing Video \n・Final close-out report \n・Final closeout video",
+      "criteria": "· Policy scripts deployed and configured for the Plastiks use case \n· Onboarding of stakeholders, lenders, and recovery entities \n· Initial real-world testing and optimization breakdown \n· Full technical documentation \n· Closing video that explains what the application is and how to use it with a tutorial.\n· Video made for recovery entities.\n· Video made for buyers of plastic credits\n· Video made for Web3 community. \n· Final adjustments and bug fixes breakdown \n· Final closeout report is publicly available \n· Final closeout video is publicly available",
+      "report": "Onedrive folder\nDocumentation:\n・Technical Documentation: https://github.com/Plastiks-io/refi-protocol/blob/main/Readme.md \n\nVideos:\n・Plastiks - The ReFi dApp Tutorial.mp4\n・Plastiks - Recovery Entities - How to Create a Plastic Credit.mp4\n・Plastiks - How to Buy a Plastic Credit.mp4\n・Plastiks - Web3 Full Flow.mp4\n\nRepository and link\n・GitHub Repository: https://github.com/Plastiks-io/refi-protocol \n・Fully Functional Public Dashboard: https://www.plastiks.app/ \n\nClose out\n・Project Catalyst Close-out Report F13 2025.pdf\n\nYoutube Video: Close-out video",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 13
+    }
+  ]
+}

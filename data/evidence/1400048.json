@@ -1,0 +1,46 @@
+{
+  "title": "DRep DAO Platform",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 9000,
+      "promise": "Output 1: Finding the DReps who will participate in defining the DAO Concept. The group of DReps will discuss via chat and video calls to define the details. There will be at least 10 DReps that will participate (at the moment, I have 13 DReps in the chat - me included). \n\nOutput 2: DRep DAO Concept Document: A comprehensive concept document describing the overall operational mechanism of the DRep DAO. This document will include detailed explanations of:\n\n- DAO roles and responsibilities\n- Governance structure and operational processes\n- DAO cycles and decision-making flows\n- Voting mechanisms (funding votes, internal votes, etc.)\n- Committee election process (if applicable)\n- Rules for fund distribution and treasury management\n- Application options and implementation principles\n\nOutput 3: Milestone report detailing the progress and results.",
+      "criteria": "Acceptance criteria 1: The list of DReps participating in the initial debate (X names and IDs).\nAcceptance criteria 2: A publicly available document describing the DAO concept with details described in Output 2. \nThere will be no kind of DRep voting regarding the final document. There will only be a list of DReps that actively contributed.\nAcceptance criteria 3: A publicly available document describing the progress and results.",
+      "report": "I have put all the proofs into a single document, as it makes no sense to split it. Hope it does not matter. If yes, let me know.\n\nA. Output: List of participants, including X handle and DRep ID.\nAcceptance criteria: There are 27 members in the chat group (Jack from Intersect, CF members, a former Catalyst member, etc.). You can find 18 DRep IDs. \nEvidence: https://docs.google.com/document/d/1vttLDD6P_85zDgowx8q5418RDLVSM9JqcVaR75GJqU0/edit?usp=sharing\n\nB. Output: Document with DRep DAO concept. \nAcceptance criteria: You can find links to meeting minutes, multiple documents, and basic principles, rules, and concepts, as DReps wished. I hope I have described it sufficiently to prove that I know how to continue with the project. I could theoretically provide more info, but I believe you can find it in the links. Moreover, the detailed design is to be delivered in the next milestone. \nEvidence: https://docs.google.com/document/d/1vttLDD6P_85zDgowx8q5418RDLVSM9JqcVaR75GJqU0/edit?usp=sharing\n\nC. Output: Progress and Results\nAcceptance criteria: At the end of the document, I described the progress and results. I concluded that I know how to progress. \nEvidence: https://docs.google.com/document/d/1vttLDD6P_85zDgowx8q5418RDLVSM9JqcVaR75GJqU0/edit?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 27000,
+      "promise": "Output 1: Based on the DAO concept document, the coordinator creates the low-level design that will contain:\nThe roles that can use the platform and their rights will be described:\n* viewers - anyone with a Cardano wallet can see the data,\n* DReps - can freely log in at any time and start voting on proposals,\n* submitters - after meeting the entry conditions (to be defined in milestone 1), they can submit proposals\n\nDescription of principles: The entry rules for all roles will be described in detail. The basic rules of the DAO will be described - i.e., the DAO mission, voting rules, deadlines, form of communication with teams, responsibility for the operation of the platform, form of voting, publication of results, and distribution of funds.\nAt this stage, the team will know what funding method the DReps have agreed on. The team will research and propose a plan to implement the funding process (distribution). It can be on-chain, via Intersect, or other methods.\nFlow charts and diagrams: The life cycle of roles will be defined (e.g., how a DRep can opt in and out of the DAO), the life cycle of proposals from submission to distribution of funds (or rejection), the voting process, the",
+      "criteria": "Acceptance criteria 1: A set of publicly available documents that will describe the details listed in Output 1.\nAs listed in Output 1, these are: roles, flow charts and/or diagrams, a list of db tables, and technologies.\n\nAcceptance criteria 2: A publicly available document describing the progress and results.",
+      "report": "Milestone 2 progress report:\nhttps://docs.google.com/document/d/1Q0MzCKWiaDAFMWVZcqWDM8vvtqcBJ7yPES67QRM4eys/edit?usp=sharing\n\nDesing V1:\nhttps://docs.google.com/document/d/1ahSnyfqwSROREZZJNFhAGIQZ4tDIket19w_O_ODgwIw/edit?usp=sharing\n\nDesing V2:\nhttps://drive.google.com/file/d/1aMzHWFPKdHrrOwfbTHtvjv6-W1-JX2j0/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 28000,
+      "promise": "Output 1: A publicly available application will be developed.\nUsers will be able to log in and submit test governance actions. DReps can vote on governance actions—simulating real decision-making. The purpose of this milestone is to battle-test the platform - meaning verify the functionality defined in Milestone 1.\n・ All roles can log in.\n・ A proposal can be submitted.\n・ DReps can vote.\n・ Voting results are visible.\n・ Link to the public GitHub with the source code of the project will be available for both the frontend and the backend.\n\nThe application will be available at least on the Cardano test-net.",
+      "criteria": "Acceptance criteria 1: Full-stack DRep DAO Prototype:\n・ Users can log in to the platform and use it based on their role (viewer, DRep, proposer).\n・ Proposals will be able to be submitted and viewed.\n・ DReps will be able to comment on proposals.\n・ DReps can vote on proposals.\n・ Results will be visible.\n・ Test cases pass successfully, confirming the DAO proposal is working. \n\nAcceptance criteria 2: Public Deployment on (at least) Testnet:\n・ The DRep DAO app is publicly accessible via a working URL with the features described in Milestones 1 and 2 - except for the distribution of funds.\n・ There w",
+      "report": "You can find details in the following document: https://docs.google.com/document/d/1e1ZsFQYaBpHNoHI4ZHelJp1rkXgz-a9z9XGSVeUKgCc/edit?usp=sharing\n\nThe platform is available here: https://drepdao.176-102-64-240.sslip.io/\n\nI created a round (ROUND 2) that is in the submission phase. You can submit a proposal. To do so: 1) Register as a submitter, 2) Wait for approval from the board, 3) Once approved, submit your proposal.\nhttps://drepdao.176-102-64-240.sslip.io/?view=rounds&round=d1ab96be-e45f-456b-b8c1-69dfcb351b11\n\nNOTE: I will do my best to watch the new requests. I approve anyone who is requesting to be a new submitter. If I do not respond in time (I can be with my kids on vacation), just contact me via email satucha@seznam.cz. \n\nAfter logging in with a Cardano wallet (Preprod), users can view all public info. Just use the link above and try it. \nI published the source code under the MIT license: https://github.com/innovation-and-growth-dao/platform\nOn the GitHub repo, you can find docs, architecture details, test report, etc.\n\nI have shot the video. You can see me voting in Round 1 on a submitted funding proposal (submitted by Ivan big Submitter): https://youtu.be/1HbvzmRLaMs\nYou can find my vote as a regular viewer (you do not need to apply to be a DAO member or submitter). \nYou can find architecture details here: https://github.com/innovation-and-growth-dao/platform/blob/main/docs/ARCHITECTURE.md\nProgress and result is described in the doc above - the very first link.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    }
+  ]
+}

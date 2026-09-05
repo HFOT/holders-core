@@ -1,0 +1,47 @@
+{
+  "title": "Simple Node Sharing on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 10740,
+      "promise": "・Detailed Node Analysis & Theoretical Framework: Comprehensive documentation providing insights into the Node’s structure, capabilities, and a systematic representation of the tool’s proposed interaction and functionalities with the Node. \n・Operational Minimal Viable Product: A functional prototype emphasizing the essential features and potential of the tool, demonstrative of its basic interactions with the Node. \n・Development Constraint Insights: A well-structured document listing the limitations, challenges, and potential solutions encountered during the development of the MVP.",
+      "criteria": "・Detailing and Clarity: Clear, detailed, and well-documented analysis and theoretical framework reflecting the practical and feasible interactions between the tool and the Node. \n・MVP Functionality and Interaction: The MVP should effectively demonstrate the outlined functionalities and interactions with the Node, as per the theoretical framework. \n・Constraint Identification and Documentation: A thorough and clear list of any issues, limitations, or constraints discovered during development, along with possible resolutions or suggestions.",
+      "report": "According to the feedback on my previous submission I received, I added a section called `MVP Functionality`, showing how to use the MVP and its basic function working.\nYou can find the report at: https://github.com/MuesliSwapLabs/muesliswap-sockets-across-machines/blob/main/reports/1/report.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 10740,
+      "promise": "・Optimized & Enhanced Tool: A refined version of the prototype, having undergone thorough fine-tuning and optimization, ready to be tested in limited production environments. \n・Detailed Documentation: Comprehensive documentation outlining the functionality, interactions, optimizations made, and instructions for use, facilitating user understanding and engagement.",
+      "criteria": "・Operational Tool: The tool should operate seamlessly, exhibiting optimized performance and enhanced usability, with every feature functioning as intended without glitches. \n・Comprehensive Documentation: Clear, concise, and detailed instructions and documentation should be provided, enabling users to understand and utilize the tool effectively. \n・Video Demonstration: A clear and comprehensive video demonstration of the tool’s functionalities and interactions should be provided, showcasing the tool’s capabilities and user interface.",
+      "report": "Proof of Achievement for Milestone 2: Final Product Development and Fine-tuning\nWe are pleased to submit the following evidence for the completion of Milestone 2, demonstrating that we have met all the specified requirements and acceptance criteria.\nOptimized & Enhanced Tool\nWe have released a refined version of the prototype, transitioning from a simple bash script to an extensive Python toolchain. This new version has undergone thorough fine-tuning and optimization, making it ready to be tested in limited production environments.\n・Release Version: Beta Release v0.9\n・GitHub Repository: MuesliSwap Sockets Across Machines\n\nKey Enhancements:\n・Automatic Error Recovery: The tool now automatically detects and recovers from errors such as already mapped ports or unexpected disconnects, minimizing user intervention.\n・Security & Reliability: Utilizes SSH for secure tunneling, ensuring encrypted and authenticated communication between client and server.\n・User-Friendly Experience: Requires minimal setup; the tool works out-of-the-box with default settings, streamlining the user experience.\n・Comes-with-Batteries: Bundled with all necessary dependencies, eliminating the need for additional user setup.\n\nComprehensive Documentation\nThe public repository contains thorough documentation and detailed instructions, enabling users to set up and utilize the tool effectively.\n・README: Detailed installation, setup, and usage instructions are provided in the README.md.\n・Contributing Guide: The README.md additionally outlines how users can engage with the project, report issues, and contribute.\n・Release Notes: The Beta Release v0.9 Notes detail the enhancements made, demonstrating the refinement and readiness of the tool for limited production use.\n・Troubleshooting Guide: Common issues and resolutions are documented to assist users in resolving problems independently.\n\nVideo Demonstration of Functionality\nA video showcasing the tool’s functionality and interactions with the Cardano Nodeser",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 17,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 14320,
+      "promise": "・Final Optimized Product: A polished, reliable, and efficient tool, incorporating all the advanced optimizations and refinements, ready for wider use. \n・Structured Beta Program: A comprehensive beta program enabling users to interact with the tool, assess its functionalities, and provide feedback on its performance and utility. \n・Updated Documentation: Clear, concise, and detailed instructions and documentation reflecting all the final features, optimizations, and use-cases, enabling seamless user experience.",
+      "criteria": "・Product Reliability and Efficiency: The final product should exhibit seamless operation, robustness, and optimized performance in varied environments, with all features functioning as intended. \n・Comprehensive and Clear Documentation: The final documentation should provide detailed, clear, and accurate instructions and information on the tool, facilitating easy understanding and usage by the community. \n・Successful Beta Program Execution: The beta program should be well-received by all participants, with active participation from the community, yielding constructive feedback and insights for",
+      "report": "Closing Out Report: Public Beta Recap & Final Release\nProject Overview\nThe MuesliSwap Sockets Across Machines project has reached its final milestone, completing the Public Beta Launch phase. This phase prioritized delivering an optimized, reliable, and user-friendly tool designed to streamline remote socket handling for Cardano developers. Based on extensive user feedback, the product has been refined with advanced optimizations, flexible configuration options, and detailed documentation, preparing it for broader release.\nMilestone Deliverables\n1. Final Optimized Product:\n・ Extensive optimizations ensure the tool is efficient, robust, and reliable across different environments.\n・ User feedback prompted the addition of optional sudo usage via environment variables, improved argument handling, and clear guidance on supported mapping scenarios, enhancing usability and accessibility.\n\n2. Structured Beta Program:\n・ A successful beta program allowed users to explore the tool, assess its functionalities, and provide constructive feedback, which shaped the final refinements. \n・ Documentation of beta feedback and corresponding adjustments can be found here: Beta Program Report\n・ Link to collected feedback: Beta Feedback Spreadsheet\n\n3. Updated Documentation:\n・The documentation has been fully updated to provide clear and concise instructions on installation, usage, and troubleshooting, with special attention to optional sudo configurations and supported usage scenarios.\n\nMilestone Acceptance Criteria\n1. Product Reliability and Efficiency:\n・ Final product meets expected performance standards, providing smooth operation and reliability in diverse environments.\n・ All features are fully operational, with improved handling of complex setups and configurations based on user feedback.\n\n2. Comprehensive and Clear Documentation:\n・The updated documentation ensures a smooth onboarding experience, with detailed instructions covering every major feature and configuration.\n\n3. Successful",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    }
+  ]
+}

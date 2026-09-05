@@ -1,0 +1,18 @@
+{
+  "title": "P2P-DeFi Protocols: Cardano-Loans",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 13200,
+      "promise": "Cardano-Loans contracts refactored from PlutusTx to Aiken.\nThe following (new) features will be implemented:\n・Minimum payments (negotiable term intervals)\n・Compounding OR Fixed interest payments (negotiable yes/no + term intervals)\n・Unbonded Repayments: Bond owners (i.e. the lender) can update the address that the borrower must make repayments to.\n・Support for script-based staking credentials (as opposed to pubkey staking credentials)\n\nAdditionally, the following features may be implemented, subject to time/feasibility constraints:\n・Refinance-able debt: this likely would require its own contract, but would allow borrowers to trustlessly advertise their desire to refinance an open loan to prospective lenders. This would also allow renegotiations with the current lender. \n・Multi-Asset Loans: borrowers may be able to borrow multiple assets in a single loan\n・Linkable Credit History: By introducing new Beacon Tokens, it may be possible to link together previously unrelated/pseudonymous borrower IDs into a set of related (but still pseudonymous) IDs, at the borrower's discretion.\n\nRegardless of our success implementing the second set of features, we will produce documentation discussing",
+      "criteria": "Aiken branch merged into main branch with all of the first set of features implemented, plus documentation discussing the success or failure of the second set, plus their future directions.\nComprehensive tests and benchmarking results will be provided as well.",
+      "report": "All key deliverables discussed in this milestone proposal have been successfully implemented, as well as the multi-asset loan feature in the secondary \"maybe\" feature set, merged to the [main branch]1]. The entire project has been refactored to Aiken.\nSee the associated [changelog][2] for a full list of changes. It contains a list of successfully implemented features, reflecting the outputs specified in the Milestone. [Tests][3] are found in the associated link.\nBenchmarks can be found in the [BENCHMARKS][4] section.\nNOTE: Our original proposal involved Cardano-Loans (1100225) being a subset of the broader proposal to continue development of the P2P-DeFi Family (1100226). As per our discussion with the Catalyst Team, we have distinguished this PoA (1100225) from the PoA for (1100226) to more accurately reflect the deliverables for each proposal. Specifically, we do not include the written documentation \"Getting Started\" instructions for this PoA, as it was not within the scope of the original milestone. Going forward and as discussed previously, there will be a significant divergence in the substance of PoAs for the two projects, reflecting the (similar) divergence in milestone deliverables.\n[1]: https://github.com/fallen-icarus/cardano-loans \"Main\"\n[2]: https://github.com/fallen-icarus/cardano-loans/blob/main/CHANGELOG.md \"Changelog\"\n[3]: https://github.com/fallen-icarus/cardano-loans/tree/main/test \"Tests\"\n[4]: https://github.com/fallen-icarus/cardano-loans/blob/main/Benchmarks.md \"Benchmarks\"",
+      "kinds": [
+        "code"
+      ],
+      "links": 4,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Cardano in MetaMask",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40421,
+      "promise": "・Integrate Cardano interop library in Cardano Snap codebase\n・Implement core logic - Decoding and parsing of tx\n・Implement confirmation flow for basic ADA transactions + change outputs",
+      "criteria": "・Cardano interop library is integrated in Cardano Snap and required functionalities can be used (primarily parsing)\n・Cardano Snap can decode and parse Cardano transactions\n・Cardano Snap can parse and present flow for basic ADA transfer transaction with change outputs",
+      "report": "Links to PRs with workpackages code:\n= https://github.com/nufi-official/nufi-snap/pull/29\nNOTE: this repo is currently private and access can be granted to reviewers (please share Github account so we can invite you)\n\nScreenshots of workpackages:\nhttps://drive.google.com/drive/folders/1_MismVK3Hls56xZrbwWu_tZmFSBRq2Fw?usp=sharing\n\nVideo evidence of workpackages functionality demonstrated in testnet environment using MetaMask Flask:\n= https://drive.google.com/file/d/1_G8y-MHS9VbFfx6JIGIczNPFvG2LN0uz/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60631,
+      "promise": "・Implement flows for transaction Certificates\n・Implement flows for transaction Tx metadata\n・Implement flows for transaction Message signing\n・Implement flows for transaction Native assets\n・Design and implement UI",
+      "criteria": "・Cardano Snap can parse and present transactions Certificates to the user\n・Cardano Snap can parse and present Tx metadata to the user\n・Cardano Snap can parse and present Message Signing requests to the user\n・Cardano Snap can parse and present native assets in transactions to the user\n・Cardano Snap has sufficient UI design for all user flows (similar to HW wallets)",
+      "report": "Links to PRs with workpackages code:\nhttps://github.com/nufi-official/nufi-snap/pull/67\nhttps://github.com/nufi-official/nufi-snap/pull/37\nhttps://github.com/nufi-official/nufi-snap/pull/31\nhttps://github.com/nufi-official/nufi-snap/pull/66\nhttps://github.com/nufi-official/nufi-snap/pull/68\nhttps://github.com/nufi-official/nufi-snap/pull/64\nhttps://github.com/nufi-official/nufi-snap/pull/58\n\nVideo evidence of workpackages functionality demonstrated:\nhttps://drive.google.com/file/d/16CYryl1dyuZ9BjP8cG_lbAkyVMU3yBeG/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 16
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40421,
+      "promise": "・Code audit from MetaMask accredited auditor\n・Implementation of all audit findings",
+      "criteria": "・Audit report of whole Cardano Snap codebase stating that there are no critical vulnerabilities in the code\n・PR fixing all relevant audit findings is available and merged into codebase",
+      "report": "Audit report:\nhttps://sayfer.io/audits/metamask-snap-audit-report-for-nufi/\nLink to GitHub PR fixing all audit findings:\nhttps://github.com/nufi-official/nufi-snap/commit/8bd00d34ef58f147bd1864ab3b9ab6369948aa57",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 30316,
+      "promise": "・Integration documentation for dApps\n・Snap released in MetaMask Snap store\n・Creation and execution of communication plan",
+      "criteria": "・Integration documentation for Cardano Snap widget is publicly available\n・Cardano Snap is publicly available on MetaMask Snap store\n・Communication plan is created and executed",
+      "report": "Integration documents:\nhttps://nufi.gitbook.io/developer-docs/metamask-snap-cardano-wallet/overview\nCardano Wallet in Snaps Directory:\nhttps://snaps.metamask.io/snap/npm/nufi/cardano-metamask-snap/\nCommunication plan:\nhttps://docs.google.com/document/d/1ijh6g8FLZM_TaGMIxlrYRcjaoiuZGHGXNbVsrjp9dbQ/edit?usp=sharing",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 30316,
+      "promise": "・Catalyst closeout video and project closing report",
+      "criteria": "We will consider the video and report complete after submitting both to the Catalyst team",
+      "report": "Close out video:\nhttps://youtu.be/SNsWvnyqqD4\nClose out report:\nhttps://docs.google.com/document/d/1kiM6hT9zt4REDsJwe2MlL14ngea1-yStYTZrFsO9R54/edit?usp=sharing",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "title": "Mesh Software as a Service",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "・Deploy cloud infrastructure\n・Open source implementation on MeshJS GitHub",
+      "criteria": "・Fully deployed cloud infrastructure\n・Licence cloud infrastructure under an open source license on MeshJS github",
+      "report": "Hey there milestone reviewers & anyone following our proposal implementation 🙂\nHere we are, reporting on the successful completion of our first Milestone of this proposal.\nThe milestone outcomes have been stated as:\n・Fully deployed cloud infrastructure\n・License cloud infrastructure under an open source license on MeshJS github\n\nAnd here we go:\n・Fully deployed cloud infrastructure\n・Has been successfully completed and is available on our Mesh Github at: \n・https://github.com/MeshJS/mesh-saas/blob/main/backend/yaci/src/index.ts\n\n・License cloud infrastructure under an open source license on MeshJS github\n・The cloud infrastructure has been added under an open source license which you can find at:\n・https://github.com/MeshJS/mesh-saas\n\nAnd that's already it, short and concise. \nWe are working on Milestone 2 now.",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 20000,
+      "promise": "・Server application code - exposing the json to transaction endpoint\n・Server application code - Mesh utils\n・Open source implementation on GitHub",
+      "criteria": "・Finalised Server application code - exposing the json to transaction endpoint\n・Finalised Server application code - Mesh utils\n・All code licensed under open source licenses on MeshJS github",
+      "report": "Milestone Report\n\nHey there Milestone reviewers. We apologise for the heavy delay on this milestone, guess we simply had a little bit too much on our todo list and had a few challenges in delivering this Milestone. Anyway, here we are, getting back on track with the proposal and are glad to have completed the second Milestone.\nThe acceptance criteria have been stated as:\n・Finalised Server application code - exposing the json to transaction endpoint\n・Finalised Server application code - Mesh utils\n・All code licensed under open source licenses on MeshJS github\n\nHere the evidence of the completion.\nFinalised Server application code - exposing the json to transaction endpoint\n\n・the server application code which exposes the json to transaction endpoint has been successfully completed, find the respective code at:\n・https://github.com/MeshJS/mesh-saas/blob/main/backend/express/src/controllers/usersJsonToTxController/usersJsonToTxController.ts\n\nFinalised Server application code - Mesh utils\n\n・the server application code at Mesh utils has been finalised and completed, find the respective code at:\n・https://github.com/MeshJS/mesh-saas/tree/main/backend/express/src/controllers/usersMeshUtilitiesController\n\nAll code licensed under open source licenses on MeshJS github\n\n・All code is hosted under the MeshJS/mesh-saas repository which is set under an Apache 2.0 open source licence,\n・find the repository at: https://github.com/MeshJS/mesh-saas/tree/main\n・find the respective open source licence at: https://github.com/MeshJS/mesh-saas/tree/main?tab=Apache-2.0-1-ov-file#readme\n・We hope that all work done satisfies the review and assessment criteria.",
+      "kinds": [
+        "code"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 20000,
+      "promise": "Server application code - user-defined transaction building (what parameters are supplied, how to get info) -> expose dedicated endpoints for customized transactions.\nOpen source implementation on GitHub",
+      "criteria": "・Finalised Server application code - user-defined transaction building (what parameters are supplied, how to get info) -> expose dedicated endpoints for customized transactions (Note: the code has to be seen more as a developer tools, not end user tool. These transaction building is used to support frameworks and projects that has not have access to cardano serialization where developers / projects can define a certain JSON format, to build those transactions.)\n・All code licensed under open source licenses on MeshJS github",
+      "report": "Mesh Software as a Service: Milestone 3 Report\nThe deliverables of this milestone have been stated such as:\n・Finalised Server application code - user-defined transaction building (what parameters are supplied, how to get info) -> expose dedicated endpoints for customized transactions (Note: the code has to be seen more as a developer tools, not end user tool. These transaction building is used to support frameworks and projects that has not have access to cardano serialization where developers / projects can define a certain JSON format, to build those transactions.)\n・All code licensed under open source licenses on MeshJS github \n\nAnd here our report on each item\nFinalised Server application code\nTo create a user-defined transaction is being made easy whereby the user simply defines the custom transaction in the form of JSON. Our hosted endpoint will convert the JSON to a valid Cardano transaction and return the transaction CBOR. This is useful for developers who want to build transactions on any platform and this method does not need to integrate with any Cardano library.\nFor instance, developers create a transaction defined in JSON like:\n{\n \"inputs\": [\n {\n \"type\": \"PubKey\",\n \"txIn\": {\n \"txHash\": \"e93177a68356dc4bfdec2ec8ac48efe4c43c2d8a5fa8a9ebbc4437943c695438\",\n \"txIndex\": 0,\n \"amount\": [{ \"unit\": \"lovelace\", \"quantity\": \"2833223\" }],\n \"address\": \"addr_test1qr3a9rrclgf9rx90lmll2qnfzfwgrw35ukvgjrk36pmlzu0jemqwylc286744g0tnqkrvu0dkl8r48k0upkfmg7mncpqf0672w\"\n }\n },\n {\n \"type\": \"PubKey\",\n \"txIn\": {\n \"txHash\": \"fb9324c5461693f729b0a7fdab1646a79b8f439b50dc9bc85458d3ee1ca2b40b\",\n \"txIndex\": 0,\n \"amount\": [{ \"unit\": \"lovelace\", \"quantity\": \"2306918390\" }],\n \"address\": \"addr_test1qr3a9rrclgf9rx90lmll2qnfzfwgrw35ukvgjrk36pmlzu0jemqwylc286744g0tnqkrvu0dkl8r48k0upkfmg7mncpqf0672w\"\n }\n }\n ],\n \"changeAddress\": \"addr_test1qr3a9rrclgf9rx90lmll2qnfzfwgrw35ukvgjrk36pmlzu0jemqwylc286744g0tnqkrvu0dkl8r48k0upkfmg7mncpqf0672w\",\n \"selectionConfig\": {\n \"threshold\": \"0\",\n \"strategy\": \"ex",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 20000,
+      "promise": "・Server application code - hosted wallet / private key for signing\n・Open source implementation on GitHub",
+      "criteria": "・Finalised Server application code - hosted wallet / private key for signing\n・Public url on MeshJS Github at: https://github.com/MeshJS \n・Code licensed under open source licence on MeshJS GitHub\n\n(Note: the code has to be seen more as a developer tools, not end user tool. These transaction building is used to support frameworks and projects that has not have access to cardano serialization where developers / projects can define a certain JSON format, to build those transactions.)",
+      "report": "Hey there everyone following on the progress of this proposal. \nHere we are reporting the completion of the 4th Milestone, the acceptance criteria for this milestone have been:\n・1) Finalised Server application code - hosted wallet / private key for signing\n・2) Public url on MeshJS Github at: https://github.com/MeshJS \n・3) Code licensed under open source licence on MeshJS GitHub\n\n1) Finalised Server application code\n\nThere are 2 types of wallet:\n・user-controlled wallet\n・developer-controlled wallet\n\nUser-controlled wallet\nUsers can create a non-custodial wallet using social logins, no extra software or mnemonic phrases required.\nFor developers, it is easy to intergrate too. Here is an example of how to use the user-controlled wallet:\nimport {\n InitWeb3WalletOptions,\n Web3Wallet,\n} from \"@meshsdk/web3-sdk\";\nimport { BlockfrostProvider } from \"@meshsdk/provider\";\nconst provider = new BlockfrostProvider('YOUR-API-KEY');\nconst _options: InitWeb3WalletOptions = {\n networkId: 0, // 0: testnet, 1: mainnet\n fetcher: provider,\n submitter: provider,\n projectId: \"your_project_id\",\n};\nconst wallet = await Web3Wallet.enable(_options);\n\nDeveloper controlled wallet\nDevelopers can create wallets on behalf of users, and manage the private keys. Here is an example of how to use the developer-controlled wallet:\nimport { Web3Sdk } from \"@meshsdk/web3-sdk\";\nconst sdk = new Web3Sdk({\n projectId: \"11111111-2222-3333-4444-555555555555\",\n apiKey: \"11111111-2222-3333-4444-555555555555\",\n networkId: 0, // 0: testnet, 1: mainnet\n privateKey: \"ENTITY_SECRET_PRIVATE_KEY_HERE\",\n});\nconst wallet = await sdk.wallet.createWallet();\n\nWallet API\nHere are a few endpoints you can use with the wallet:\nGet change address\nGet a change address for the wallet.\nconst changeAddress = await wallet.getChangeAddress();\n\nGet wallet's UTXO\nGet all UTXOs for the wallet.\nconst utxos = await wallet.getUtxos();\n\nSign transaction\nconst signedTx = await wallet.signTx(tx, partialSign?);\n\n2) Public url on MeshJS Github\n\nAll",
+      "kinds": [
+        "code"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 20000,
+      "promise": "・Final close-out report\n・Final closeout video\n・A detailed report on what has been done\n・All source codes are made public\n・A Twitter thread to inform public",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Finalised a detailed report on what has been done\n・All code licensed under open source licenses on MeshJS github \n・Completed Twitter (X) thread to inform public",
+      "report": "Hey there Milestone Reviewers and everyone else following the progress of this proposal.\nHere we are, reporting on the successful completion of the last Milestone, successfully closing the Proposal.\nThe acceptance criteria for this Milestone had been stated as:\n・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Finalised a detailed report on what has been done\n・All code licensed under open source licenses on MeshJS github \n・Completed Twitter (X) thread to inform public\n\nAnd here the evidence of the completion on all objectives:\nClose Out Report\nThe Close out report has been completed accessible at:\nhttps://drive.google.com/file/d/14g7b2WqJMsiRlRrZWiPXQOKtDOEP5F3Y/view?usp=sharing \nClose out video\nThe close out video has been completed and is accessible at \nhttps://youtu.be/M-vHqBJUzis \nFinalised detailed report\nA more detailed report on the context and challenges can be found at:\nhttps://docs.google.com/document/d/1697XL0wNih4u2NlI_xc_qeKw2HBrIp5_R2kd8PFoluA/edit?usp=sharing \nOpen source license\nAs planned, all project code is licensed under an Apache 2.0 Open source license, available at\nhttps://github.com/MeshJS/mesh-saas?tab=Apache-2.0-1-ov-file#readme \nComplete twitter thread\nA summary of the work has been published on twitter and can be found at:\nhttps://x.com/meshsdk/status/1939533718697464246",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

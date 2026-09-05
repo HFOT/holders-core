@@ -1,0 +1,60 @@
+{
+  "title": "Credit Card Gateway",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 25714,
+      "promise": "Set up the NextJS skeleton with a front end and a back end\n・Create a front-end with a sample product page for users to purchase goods\n・Create a back-end that will receive and process payment confirmation from the payment processor\n\nNextJS front and back end need to be able to connect to public Cardano indexers to monitor the status of transactions and submit new transactions. (e.g. Koios or Maestro) If a public indexer is not available, then create a docker-compose yaml files to run cardan-node, cardano-db-sync, cardano-graphql and cardano-wallet on the server to read existing transactions and to submit new transactions.\nWe will test the ability to use public indexers to monitor and submit transactions and only proceed to a custom docker-compose set-up if the test is not successful\nThe front end product page will focus on demonstrating of how to add a button \"Pay with Credit Card\" to a website for the client to pay for an NFT. Other features of a webshop, such as feedback forms and pricing options, are not in the scope of the proposal. The proposal addresses \"how\" to add a Credit Card Gateway so clients can pay for goods and services, and not the design of the webshop or security b",
+      "criteria": "A front-end in NextJs framework with a sample product and a button to purchase and pay with a Credit Card. When a user clicks that button a new window should appear from the payment processor where the user needs to complete KYC. At the first milestone only the window needs to pop up, the connection to the payment processor and KYC will be done in milestone 3.\nThe front-end of NextJS needs to be able to periodically query the blockchain if a transaction exists\nThe back-end of NextJS needs to be able to accept REST requests from the payment processors via an API endpoint\nThe frequency of the fr",
+      "report": "Please see attached the video with evidence of milestone completion:\nhttps://youtu.be/Vil4z8S_hZE\n\nThe codebase has been open sourced at the github repo:\nhttps://github.com/dynamicstrategies/cardano-card-gateway",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 25714,
+      "promise": "Create additional back-end services, outside of NextJs, to monitor the status of payments:\n・A MongoDB database that keeps the status of a product throughout its life. Starting with payment initiated, to payment received, to token sent and finally, token received in the user wallet. An example MongoDB schema will be provided for the services that interact with the MongoDB to track the payment status. The code in the backend service that communicated with MongoDB using the schema will be commented.\n・A back-end service that monitors the EVM chain index for transactions and confirms that payment has been received. This is in addition to the back-end service in NextJs to double-check payment confirmations and reduce the risk of fraud. Importantly that this is a redundancy backup for the NextJS backed end. The logic is as follows: The NextJS backend will receive payment status from the payment processor through the REST API endpoint, if however this service were to fail (e.g. server downtime which renders the REST API endpoint temporarily unusable) then the service that queries the EVM would be able to confirm that the transactions has come through, the payment would be considered comple",
+      "criteria": "・A docker-compose service running a MongoDB. A sample docker-compose file will be provided with commends on how to launch on the server.\n・A backend service as a NodeJS daemon running in a separate docker container that monitors the status of payments and update the MongoDB database when payment has been sent to the EVM smart contract. The description of how the service works will be provided in the user guide.\n・If we identify that the functionality of existing public indexers is not sufficient for our use-case (e.g. Koios and Maestro) then we will create a docker-compose file that the user can",
+      "report": "POA for Milestone 1 has been approved\n\nPlease see attached the video with evidence of Milestone 2 completion:\nhttps://youtu.be/YPU5TZxkAMk\n\nThe codebase has been open sourced at the github repo:\nhttps://github.com/dynamicstrategies/cardano-card-gateway",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "7",
+      "cost": 25714,
+      "promise": "・Create a smart contract template that links to the policy id of assets on Cardano and into where the payment processor will transfer the payments. This will be an ERC20 token that mints a token once payment has been received. It inherits the security guarantees of an ERC20 token template.\n・Guide how to launch and the smart contract on an EVM chain using Remix, how to monitor its balance and withdraw from the smart contract into the developer’s wallet. The smart contract is queried for available funds to withdraw using Remix and funds that are available can be withdrawn to an EVM wallet using Metamask.",
+      "criteria": "・A template smart contract that references the asset on the Cardano blockchain. When the payment processor sends the payment to this smart contract on an EVM chain the smart contract mints a temporary token on the EVM chain and this gives a queue to send the user the token on the Cardano chain. A smart contract that has a reference to the PoliciID and Name of the asset on Carano, that accepts a payment and mints an ERC20 token.\n・A tutorial with code example showing how to launch the smart contract on an EVM chain using Remixn and perform operations to retrieve funds from the smart contract",
+      "report": "POA for Milestone 1 and 2 has been approved\nPlease see attached the video with evidence of Milestone 3 completion:\nhttps://youtu.be/HnvguImV96A\nThe codebase has been open sourced at the github repo:\nhttps://github.com/dynamicstrategies/cardano-card-gateway",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 25715,
+      "promise": "Set up the payment processor\n・User guide on how to set-up crypto keys\n・Configure the keys in the front end and back end\n・Register the EVM smart contract OBI with the payment processor\n・FAQ on the commercial arrangement\n\nWe will use Wert.io as the payment processor",
+      "criteria": "・A guide on how to onboard onto a payment processor.\n・The guide will include how to set up the crypto keys and how to update the front and the back end - this ensures that only a particular backend can initiate payments. Then how the EVM smart contract needs to be registered with the payment processor to ensure that payments are only sent to the authorized smart contract\n\nA closeout report will be provided with summary of the deliverables and a video walkthrough on how to set up the payment processing on a demo website running the NextJS framworke.",
+      "report": "Project Closeout\nProject Closeout pdf report: https://chocolate-lorilyn-71.tiiny.site/\nProject Closeout video: https://youtu.be/aMwdNJJvGOg\n\nMilestone 4 deliverables\nOutput of the Milestone specific deliverables have been added to the section 2.4 of the github repo https://github.com/dynamicstrategies/cardano-card-gateway/\n2.4.1 - Setting-up crypto keys\n2.4.2 - Configure the keys in the front end and back end\n2.4.3 - Register the Smart Contract OBI\n2.4.4 - FAQ on the commercial arrangement",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "プロジェクトチームを組み立て、役割と責任を定義する\nカルダノ生態系における既存のフィッシング脅威、詐欺、およびリスクの詳細な景観分析を実施\n脅威検出、収集、解析のためのAI/MLモデルの研究開発を開始",
+      "criteria": "アウトカム:プロジェクトの方向性をクリアし、潜在的なリスクを特定し、課題をクリアします。 AI/MLモデルの開発を導く脅威の風景の詳細な理解。\n\nチーム情報、名前、連絡先情報、背景情報、役割の組み立て",
+      "report": "こんにちは触媒チーム:\nマイルストーン1に十分なと確信しています。 報告書では、計画の進め方、ロードマップ、AI/MLの研究、およびユーザーの旅を共有しています。\n\nパブリックドライブリンク: https://drive.google.com/drive/u/1/folders/1RX-RnlSl7DvI-8Ev1GQcD4ejeqfj GUx\nドライブは、進行中の進捗状況を保存するために使用します。 現在、ブランディングの企画、研究、始まりを挙げています。\n計画報告:https://docs.google.com/document/d/1p4iDFyg2 8uCNOFY8u9QObhJHIN T3LzNeVSRSM-7M4/edit\nウェブサイト:https://www.cardanoshield.com/\nTwitter: https://twitter.com/CardanoShield\n\nお問い合わせ!"
+    },
+    {
+      "no": 2,
+      "promise": "研究成果に基づく初期AI/MLモデルの開発\nモデルの反復的なテストそして精製\nCardanoウォレットとの統合に必要なAPIを定義する",
+      "criteria": "Outcomes: 潜在的な脅威を特定し、フラグを立てる機能的なAI/MLモデルで、強化されたウォレットセキュリティに貢献します.",
+      "report": "MLモデルとクラシファイアはこちら:\nhttps://github.com/adabox-aio/cardano-shield/tree/main/ml\n\nこれは、新しいデータセットでモデルを訓練するためのコードです。\nhttps://github.com/adabox-aio/cardano-shield/blob/main/train.py\n\nリスクアセスメント(MLモデルを訓練するためにも使用されます)は、次のことができます。\nhttp://api.cardanoshield.com:8081/swagger-ui/index.html#/cardano-shield-controller/txScan\n\nユーザーがgithubでレポートと更新ができるブラックリスト&ホワイトリスト\nhttps://github.com/adabox-aio/cardano-shield/tree/main/blacklists\nhttps://github.com/adabox-aio/cardano-shield/tree/main/whitelists\n\nCardano Shieldは、フィッシングや安全を考慮した URL をテストするために、Random Forest ML モデルを使用して、データセットは、これらのチェックを実行したときに、Cardano Ecosystem のコンテキストを考慮に入れ、調整されました。 また、Cardano Shieldは、任意のトランザクションに対して複数のテストを実施しました。 API のトランザクションのリスクレベルを分類する Id を通過します。\nカルダノ シールドはまた、Twitterとそのウェブサイトを介して、その進捗とともにコミュニティを更新\n1月更新: https://twitter.com/CardanoShield/status/1742220419870990718\nブログ: https://www.cardanoshield.com/updates/cardano-shield-january-update"
+    },
+    {
+      "no": 3,
+      "promise": "Cardanoウォレットと統合するための堅牢なAPIエンドポイントの設計と開発\nシームレスな統合と機能性を確保するために徹底したテストを実施",
+      "criteria": "Cardanoウォレットがリアルタイムの脅威検出とユーザー保護に使用できるセキュアで機能的なAPI。\nAPI は、GitLab で利用可能なドキュメントがあり、関心のあるパーティーへのアクセス方法について説明します。\nGitLabはオープンソースで、誰でもプロジェクトとやり取りし、それをフォークし、貢献し、テストなどを可能にします.",
+      "report": "GeroやBeginなどのウォレットは、Cardano ShieldのAPIを利用しています。\n・Gero Wallet: https://twitter.com/GeroWallet/status/1749854208088523083\n・Begin Wallet: https://twitter.com/BeginWallet/status/1753747587625283910\n\nプロジェクトのGithub:https://github.com/adabox-aio/cardano-shield\nCardano ShieldのAPIエンドポイントを使用する方法については、https://docs.cardanoshield.com/cardano-shield-apiをご覧ください"
+    },
+    {
+      "no": 4,
+      "promise": "ユーザーからデータを収集するためのフィードバックシステムの設計と開発\nフィードバックシステムを脅威検出モデルと統合し、時間をかけて学習し改善することができます\n期待どおりに動作するようにフィードバックシステムをテスト",
+      "criteria": "ユーザ認証データから学習できるシステムで、AI/MLモデルの継続的な改善に貢献します。\n期待される製品は、ユーザーがナビゲートしているサイトを監視するWebブラウザ拡張です。 この製品は、インタラクティブなUIを介して、悪意のあるサイトのユーザーに通知します。 UI内では、ユーザーがナビゲートしているユーザーを通知します。もし以前に存在していた場合、またはそうでないと、URLとのやり取りを継続する危険性がわかります。 CardanoShieldを利用しているユーザーが増えるにつれて、より正確な情報を提供します。 ユーザーが選択できます",
+      "report": "ユーザーがカルダノシールドによって詐欺としてマークされたサイトに到達したときに警告を示すビデオ。\nまた、ビデオは、ユーザーは、テキストや画像の形での証拠を、また一般的な説明として、安全または確認し、提供するために、ウェブサイトを報告することができます。\nhttps://drive.google.com/file/d/103 Z2XnmhxQD4OQf7u8yjNhuU7es69Gj/view?usp=sharing\n\nレポートを提出すると、GitHubのチケットがレビューされますが、フィッシングスキャンの結果は継続的なトレーニングのためにMLデータセットに入ります。\nhttps://github.com/adabox-aio/cardano-shield/blob/main/ml/dataset/PhishingDataset.arff"
+    },
+    {
+      "no": 5,
+      "promise": "CardanoShieldソリューションをCardanoウォレットにリリース\nウォレット開発者やユーザーからのフィードバックを収集し、ソリューションを改善\n実際のデータとフィードバックに基づいてAI/MLモデルを飛躍的に改善・更新",
+      "criteria": "Cardanoエコシステムにおける脅威検出とユーザー保護のための完全に機能的で堅牢なソリューションで、継続的な学習と改善のための機能を備えています。\nウェブブラウザの拡張機能を持つ最終的なソリューションは、ダウンロードしてやり取りすることができます。 ユーザーがサイトに移動すると、拡張機能のUIがユーザーのデバイスにポップアップし、サイトに関連する情報にはリスクレベル、以前のインタラクションが含まれます。 さらに、dApp がリクエスト wh をリクエストする正確な量について、ユーザーが十分に通知できるように、比較的改善された UX でトランザクションに関する情報が提供されます",
+      "report": "Googleドライブバージョン: https://docs.google.com/document/d/1DFinHcmDa1h 1j1bynX6LfFmNtFAlsUAyMlKie02dFQ/edit?tab=t.0\nこのレポートでは、過去12か月にわたってCardano Shieldの開発と展開をまとめました。 この期間中、当社のウォレットパートナーやユーザーから貴重なフィードバックと要件が集まり、その改善に貢献しています。\nCardano Shieldは、Cardanoウォレットの柔軟な統合オプションを提供しています。 維持された API エンドポイントで、データ表示のマイナーなフロントエンドの調整だけを必要とするか、セルフホスト用のオープンソースプロジェクトをフォークすることで実装できます。\nオープンソースのイニシアチブとして、Cardano ShieldはAPIエンドポイントを利用してもコストを削減しません。\nCardanoの盾の主特徴:\n場合のリンクでビデオデモンストレーション付きZipファイルでは動作しません: https://drive.google.com/file/d/1MW9IfmJPXLbHnmTxUz6wGTvRcz5KXQ5Q/view?usp=sharing\n・ユーザーエクスペリエンスの署名の強化:\n\n・動画実証:取引概要例\n\n・著名なウェブサイトの警告とブロック:\n\n・動画実証:サイトブロック例\n\n・アプリ内ユーザーレポート:\n\n・動画実証:レポートサイト例\n\n・詐欺トークンタグ:\n\n・動画デモ:詐欺トークン例\n\nリソース:\n・Github:https://github.com/adabox-aio/cardano-shield\n・ドキュメント:https://docs.cardanoshield.com\n・Gero Dashboard - Cardano Shieldをダウンロード\n\nフィードバックとアップデート:\n・ユーザーフィードバック(過去12か月):Cardano Shieldのフィードバックとレビュー\n・ウォレットフィードバック(ウォレット開始): お問い合わせ\n・ポストランチアップデート: コミット履歴(機械学習による主に自動化されたブラックリストとホワイトリストの更新)\n\n外部プルリクエスト: クローズドプルリクエスト"
+    }
+  ]
+}

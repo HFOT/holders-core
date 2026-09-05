@@ -1,0 +1,63 @@
+{
+  "title": "Clarity DAO Treasury Defi Integrations",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 23000,
+      "promise": "Engage in discussions with the team behind various defi protocols to validate and clarify the technical feasibility of integration.",
+      "criteria": "Conduct a technical assessment of integration requirements and compatibility with the Clarity Protocol.﻿﻿",
+      "report": "Evidence of milestone\n・[ ] Research on DeFi protocols and their integration capabilities.\n・[ ] Project plan and roadmap outlining the scope, objectives, and timeline of the integration project.\n・[ ] Technical feasibility assessment report, including findings, recommendations, and potential challenges.\n・[ ] To provide a technical specification document of how it is possible to integrate treasury swaps for DAOs.\n\nAbstract\nThe DAO Treasury Swap functionality allows DAO members to propose and vote on swapping some of the tokens from the DAO-managed treasury on a Cardano decentralized exchange without any custodial or trusted parties.\nImplementation\nA DAO-managed treasury allows for proposals to be created that initiate arbitrary withdrawals that can also include datum in one or more of the outputs. The Token Swap Proposal Effect will be a specialized version of a treasury withdrawal that will create a swap order on DEX batching address.\nA DAO member will select how much of a given token they want to swap, and decide on the usual swap order parameters like accepted price, slippage, etc. After the proposal is created, DAO members can vote on the proposal as they would for any other Agora proposal.\nLimitations\nBecause of Cardano’s limited composability, the DEX to be integrated with a treasury token swap system must match the following criteria:\n・Use of batchers\n・Ability to attach output datum to the swap output\n\n(1) is not strictly necessary but it makes implementation of the protocol simpler. Also, every Cardano DEX is already using a batching model, so this is not a limitation for the proposal. (2) is more restrictive - because all script-owned UTxOs on Cardano must have some datum, it is necessary to instruct a batcher to include it in the swap output, otherwise swapped tokens would be unspendable.\nOrder Cancellation\nPrice volatility is a concern for a token swapping system. Since there is a substantial delay before selecting target price and slippage and the swap bein",
+      "kinds": [
+        "other"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 23000,
+      "promise": "Design and develop a user-friendly interface for creating templated proposals within the Clarity Protocol.",
+      "criteria": "With an understanding of exactly what inputs the onchain proposal will need and what logic is needed to support the smart contract template proposal functionality, design a front end interface which will be a user friendly way to interact with this DAO treasury defi integration.",
+      "report": "We are very excited to have completed this milestone to bring a user-friendly way for people to collectively decide asset swaps onchain. Below is the documentation and interface video for the automatically executing treasury swap proposal we are close to developing.\n\nEvidence:\n・Documentation: https://docs.clarity.vote/new-features/asset-swaps\n・﻿Interface: https://youtu.be/gZEv5BYL9tI",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 23000,
+      "promise": "Develop and implement the necessary APIs and endpoints to enable seamless integration with the front-end interface.",
+      "criteria": "Test and validate the API functionality and ensure compatibility with the existing Clarity Protocol infrastructure.",
+      "report": "Hey guys, this video shows that this API is working in order to have treasury swaps within DAOs on Cardano. There is not a public github link to this API because as mentioned in the proposals this proposal is not open source (https://projectcatalyst.io/funds/10/daos-cardano/clarity-dao-treasury-defi-integrations). We have released and revealed this API to our developers which you can see working in the demo video which satisfies this milestone.\nHappy to finally get this proposal finished. This video shows that this API is working in order to have treasury swaps within DAOs on Cardano. (https://projectcatalyst.io/funds/10/daos-cardano/clarity-dao-treasury-defi-integrations).\nWe have released and revealed this API to our developers which you can see working in the demo video. We can invite you to the repo for you to check it out.\nThe milestone’s purpose is to expose an API that our developers can use which has clearly happened since it is being used in the app.\nFor this PoA we have developed and implemented the necessary APIs and endpoints to enable seamless integration with the front-end interface. The milestone is accomplished through a usable endpoint to accomplish an automatically executing treasury swap after a DAO vote.\nWe have tested and validated the API functionality and ensured compatibility with the existing Clarity Protocol infrastructure. You can see the video as proof!\nWe have included the API documentation below as well!\nDemo video of the treasury swap feature: https://youtu.be/l87-_b0_UFo?si=2fDrovNoF0YZdPZr\nAPI Documentation:\ndeclare function createProposal(url: string, wallet: Wallet, request: CreateProposal): Promise<CreateProposalResult>;\ntype CreateProposalResult = {\n submitResult: TransactionSubmitResult;\n id: ProposalId;\n};\ntype CreateProposal = {\n user: User;\n dao: Dao;\n governor: GyTxOutRef;\n stake: GyTxOutRef;\n outcomes: Array<Outcome>;\n};\ntype GyTxOutRef = string;\ntype Outcome = Array<Effect>;\ntype Effect = EffectGovernorMutation | EffectTre",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 23000,
+      "promise": "Build and integrate frontend with APIs enabling on-chain treasury swaps for DAOs, testing of this feature, and documentation of this feature.",
+      "criteria": "Ability for a user to create an onchain proposal from a user friendly front end which allows for an autonomous treasury swap after an onchain vote.",
+      "report": "Hi guys below is the close out report and all related evidence for this final milestone. I was not sure what format was best, so I just pasted everything in here.\nClose out report:\n・Name of project and Project URL on IdeaScale/Fund\n・Clarity DAO Treasury Defi Integrations\n・Your Project Number\n・1000053\n・Name of project manager\n・Logan Panchot\n・Date project started\n・December 2023\n・Date project completed\n・March 2025\n・List of challenge KPIs and how the project addressed them\n・We submitted this proposal in the DAO <3 Cardano Section. This section was asking “How can we make Cardano the go-to choice for building DAOs? What tools can we provide to enable effective DAO's Creation & Operation”\n・Key Metrics Include:\n・Number of Communities engaged in collaboration using Cardano DAO creation tools.\n・We addressed this by adding this feature to our feature rich DAO tooling platform serving over 200 communities and integrating with Sundaeswap to increase the people engaged in collaboration using Cardano DAO creation tools. \n・Amount of ADA coming from DAOs transaction fees after the solutions on this challenge get implemented (> than the challenge's allocated fund amount)\n・With our tooling and this feature, we are enabling the simple creation of onchain entities that gain transaction fees for the network by storing treasury transactions, governance transactions, and voting transactions onchain.\n・Number of DAOs that use Cardano as governance/management chain in 6 months.\n・From when we started tracking our metrics in April of 2024, the DAO leveraging our tools increased from 76 to 215. (https://www.clarity.vote/daoDashboard) \n・Number of DAO toolset/frameworks available for DAO Ops (>1).\n・We are one of the toolsets/frameworks available to DAOs.\n・List of project KPIs and how the project addressed them\n・Our KPIs: Number of DAO Treasuries Participating in DeFi, Total Value Locked (TVL) of Assets Participating in DeFi from DAO Treasuries, User Feedback and Satisfaction Community Engagement",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 16,
+      "cut": true
+    }
+  ]
+}

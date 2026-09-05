@@ -1,0 +1,44 @@
+{
+  "title": "Zero-Knowledge Privacy Protocol for DeFi Lending and Borrowing on Cardano (open source)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 55500,
+      "promise": "・Conduct short survey to gather ecosystem needs regarding the protocol components and features\n・System architecture document, that outlines:\n・zk-SNARK integration for collateral verification, loan issuance, and repayment\n・Smart contract design for locking/unlocking collateral, verifying zk-proofs, and automating loan repayment\n・Technical flow diagrams for collateral verification, loan transactions, and repayments using zk-SNARKs.",
+      "criteria": "・At least 10 survey responses\n・Architecture document must outline: \n・How zk-SNARKs will protect sensitive financial data and ensure private transactions.\n・Smart contract design must include zk-SNARK-based verification mechanisms for collateral and loan management.\n・Protocol needs to be modular and scalable and easy to implement\n・Proposed design and architecture reviewed by one external expert.",
+      "report": "Here is our UPDATED Milestone 1 POA document:\nhttps://docs.google.com/document/d/1cMg0dmwjoTUpP9SSy8Lryxb0cdgB0nyCJnw617k3eUA/edit?usp=sharing\n・Changes were made in chapter 3.2.1 (new reference to how the ZK Lending Smart Contract will handle the interest payment)\n・A new appendix B (about the entire interest payment process) was added\n\nThe document now includes:\n・Architecture Design:\n・ZK Setup: PLONK\n・Smart Contract Layer\n・Off-Chain Layer\n・Integration Layer\n・Ecosystem Survey + Results\n・External Report (incl. Expert Bio)\n・Appendix (incl. Interest Payment Section)\n\nLink to Github repository: https://github.com/TrustLevel/ZK-Defi-Protocol/tree/main",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 55500,
+      "promise": "・Smart contracts (in Aiken) that manage collateral locking/unlocking and loan issuance. This includes:\n・contracts that allow for loan repayments.\n・Integration of interest payments .\n・Test cases for each Smart Contract\n・Documentation for each Smart Contract, including Flowcharts for smart contract logic\n・Video demonstrating the results of the milestone",
+      "criteria": "・Functional Smart contracts must allow for collateral verification, loan repayment, interest payment and loan issuance.\n・Smart contracts must be \n・tested and verifiable on testnet\n・run in reasonable time\n・Documentation and Flowcharts must explain each Smart Contracts in a comprehensible manner\n・Video must demonstrate milestone results in a comprehensible manner",
+      "report": "Here is the updated document (v2) for the M2 reporting:\nhttps://docs.google.com/document/d/11QrOcAajDYRgz7Zebqrjgg7A3fR1ZLhD4KZkRb99Q6U/edit?usp=sharing\n-> Changes to v1: Added Aiken Benchmarks\n\nThe report includes now:\n・Smart Contract Components & Logic (incl. Flowcharts) for:\n・Collateral Management\n・Redemption & Issuance, incl. Interest Payment\n・Link to the Github Repository for the:\n・Onchain Module\n・Offchain Module\n・also includes link to this document with the tests, etc.\n・Guide to verify our demonstration on the blockchain\n・Screenshot of tests results (which is also part of the Video)\n・Screenshots of benchmarks (including explanation and link to new files)\n・Link to the loom video that walks you through this report",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 37000,
+      "promise": "・zk-SNARK-based proof generation for the each protocol component, including collateral verification, loan initiation, and repayments.\n・Functional zk-SNARK-based proof generation library for use in private lending and borrowing transactions, demonstrating real-world scenarios.\n・Testing and validation of zk-SNARK proofs to ensure they are verifiable on-chain without revealing the underlying details.\n・Detailed documentation of the protocol and zk-proof generation mechanism.",
+      "criteria": "・zk-SNARK proofs must allow for private verification of collateral and loan transactions.\n・zk-SNARK library must allow private lending and borrowing transactions \n・Test cases must perform transactions and verifications in a reasonable time.\n・Documentation must be comprehensible and cover the entire zk proof generation",
+      "report": "Repository: https://github.com/TrustLevel/ZK-Defi-Protocol ('main')\nOn-chain zk-SNARK (Groth16 / BLS12-381) verification is implemented and proven live on Cardano Preprod: a full deposit → borrow → repay → unlock cycle where each borrow, repay and unlock is authorized by a Groth16 proof verified inside the Aiken validator, without revealing the prover's secret witness to the chain.\n\nA. Output: zk-SNARK-based proof generation for each protocol component — collateral verification, loan initiation, and repayments.\nAcceptance criteria: zk-SNARK proofs allow for private verification of collateral and loan transactions (the secret witness is never revealed to the chain).\nEvidence:\n・Circuit: https://github.com/TrustLevel/ZK-Defi-Protocol/blob/main/circuits/collateral_proof.circom\n・Off-chain proof generation (borrow / repay / unlock): https://github.com/TrustLevel/ZK-Defi-Protocol/tree/main/offchain/cli/v5\n・Live Preprod txs, proof verified on-chain (valid_contract: true): Borrow https://preprod.cardanoscan.io/transaction/19d9016ad95c3c410e8d66ce469a3f5e4cf2b329380555993fa1028110bb2b37 · Repay https://preprod.cardanoscan.io/transaction/8b934c059ab1d352f47277181bb871875907dd34c5506b1e75ac7a8e44a76cf6 · Unlock https://preprod.cardanoscan.io/transaction/24281542de3ab7e71e5a683917bd053d5a698ae2dfbf8daac0cf2346771ed609\n\nB. Output: Functional zk-SNARK proof-generation library for use in private lending and borrowing transactions.\nAcceptance criteria: The zk-SNARK library allows private lending and borrowing transactions (full deposit → borrow → repay → unlock cycle).\nEvidence:\n・Groth16 / BLS12-381 library — circom circuit + committed keys + Poseidon255, with on-chain verification via modulo-p/ak-381: https://github.com/TrustLevel/ZK-Defi-Protocol/tree/main/circuits and https://github.com/TrustLevel/ZK-Defi-Protocol/blob/main/contracts/lib/zk.ak\n・Turnkey from a fresh clone: cd circuits && npm install && npm test → 9/9 passing (https://github.com/TrustLevel/ZK-Defi-Protocol/blob/mai",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 36,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "UPLC用の機能コマンドラインデバッガ",
+      "criteria": "DebuggerはUPLCコードのステップバイステップの実行を可能にします\nスコープで条件を表示し、コマンドでスタックを呼び出す機能\n標準開発環境で使用可能",
+      "report": "GitHubリポジトリへのリンク:https://github.com/SundaeSwap-finance/gastronomy\n使用と機能のドキュメンテーション: githubのReadmeへのリンク https://github.com/SundaeSwap-finance/gastronomy/blob/5a470f54620cc5ead05dfd657e1fb96df1b78bb2/README.md\nビデオ実証のリンク: https://www.youtube.com/watch?v=Cm8OPQ1UOvw"
+    },
+    {
+      "no": 2,
+      "promise": "- タイムトラベル(ステップバックワード)機能を備えたコマンドラインデバッガーを強化",
+      "criteria": "- UPLCの実行で前後に進む能力\n- 過去および現在の状態の正確な表示\n- 既存のコマンドラインツールとのシームレスな統合",
+      "report": "GitHubリポジトリへのリンク:https://github.com/SundaeSwap-finance/gastronomy\n使用と機能のドキュメンテーション: githubでReadmeへのリンク - https://github.com/SundaeSwap-finance/gastronomy/blob/5a470f54620cc5ead05dfd657e1fb96df1b78bb2/README.md\nビデオ実証のリンク: https://www.youtube.com/watch?v=2JCEehEAe1I"
+    },
+    {
+      "no": 3,
+      "promise": "UPLCデバッガ用のスタンドアローンアプリケーションまたはWebインターフェイス\nよく知られているアイケンタイプのためのカスタム可視化\nAikenコードとUPLCノードを関連付ける",
+      "criteria": "デバッグプロセスの視覚表現\n後方に前進/ステップのための制御を用いるユーザー フレンドリー インターフェイス\n主要なブラウザやオペレーティングシステムとの互換性\nどのアイケンコードが指定された UPLC ノードを生成したかを確認できます",
+      "report": "ビジュアルデバッグ、アイケンタイプのカスタムビジュアライゼーション、UPLCノード・ツー・コード・アソシエーション用のスタンドアロン・アプリケーションの作成を含む、Milstone 3の完成を提出してください。\n配達可能:\n・Standalone Application/Web App: https://github.com/SundaeSwap-finance/gastronomy/releases/tag/v0.5.1\n・オープンソースコードリポジトリ:https://github.com/SundaeSwap-finance/gastronomy\n・Video Walkthrough: https://youtu.be/U5AeHp4Dpv0?si=dpUky5l6-1xnirtn\n\nこの投稿は、主要なプラットフォームと互換性のあるビジュアルデバッガの成功した実装を示しています."
+    },
+    {
+      "no": 4,
+      "promise": "ターゲット市場に展開するフルオペレーション製品。\n最終報告書およびプロダクト使用のビデオ ウォークスルー.",
+      "criteria": "製品は完全に機能的であり、以前のすべてのマイルストーンを達成するために構築された機能に満足しています。ターゲット市場にアクセスでき、重要なバグが無料です.",
+      "report": "この最終クローズアウトレポートでは、UPLC Debuggerプロジェクトから達成、主要な学習、および詳細な証拠を要約します。\nプロジェクトを通し、Plutus および Aiken 開発者のための機能的なデバッグツールを正常に開発およびデプロイし、UPLC コードのデバッグに重要な非効率性を対処しました。 デバッガーは、ステップスルーの実行、状態の検査、さらにはタイムトラベルのデバッグを可能にし、従来のデバッギング方法よりも大きな改善をもたらします。\n最終報告書は、デバッガのパフォーマンス、ユーザビリティ、インパクトに関する特定のデータと、その機能を示すドキュメントとウォークスルービデオを提供します。\n明快さと透明性を確保するために、プロジェクトの成功に対する追加の証拠と説明を提示しました。\n・Debugger Functionality: このツールは、開発者がUPLCの実行、スコープ変数の検査、および実行履歴のバックトラックのデバッグの複雑さを軽減することができます。\n・アイケンインテグレーション: デバッガは、UPLCの実行を元のアイケンコードに戻し、開発者がソースレベルでエラーを識別するのに役立ちます。\n・ユーザビリティと採用:デバッガはオープンソース、文書化、既存の開発ワークフローへのシームレスな統合のために設計されており、開発者が採用しやすいようにします。\n\nプロジェクトの成功は、フルオペレーション製品、マイルストーンの投稿の承認、およびツールをテストした開発者から受け取った正のフィードバックの配信によって証明されます。 この投稿は、元の提案で概説された期待を満たし、Cardanoスマートコントラクト開発エコシステムに価値ある資産を提供します。\n支持証拠\n・最終クローズアウトレポート:https://drive.google.com/file/d/1E5R30JHa5eiRkJysRiRBdY0aiv31c8yq/view?usp=sharing\n・GitHubリポジトリ:https://github.com/SundaeSwap-finance/gastronomy\n・サイト:https://sundae.fi/products/gastronomy\n・動画公開:https://youtu.be/grlhdfeRJDk\n・ユーザーストーリーとドキュメント:h"
+    }
+  ]
+}

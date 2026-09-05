@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・CNT市場向けボンディングカーブの選定、製品や正当化のために使用される技術に関する文書化\n・長期製品ロードマップ、完全総合MVPロードマップ.",
+      "criteria": "・製品開発に必要な技術や、CNT市場やなぜボンディングカーブが適しているのかを明確に説明するPDFファイルドキュメント。\n・本製品のロードマップを提示するPDFドキュメント.",
+      "report": "Githubにアップロードされたドキュメント:\nhttps://github.com/Snek-coin/snekdotfun-catalyst/tree/main"
+    },
+    {
+      "no": 2,
+      "promise": "1.アイケン州のボンディングカーブプールスマートコントラクトの開発と最終化\n・アイケンフレームワークを用いたボンディングカーブプールのスマートコントラクトの設計、実装、テストを完了し、全ての機能が運用・確保されます。\n\n2. 注文スマートコントラクトをアイケンで完了\n・アイケンのオーダースマートコントラクトの開発と厳格なテストを行い、すべての指定された要件を満たし、効率的に実行します。\n\n3. オーダーを処理するためのバッチシステムの設計と展開\n・複数の注文を集約し、処理するスプラッシュ DEX アーキテクチャに基づく一括システムを作成し、効率と信頼性を最適化します。\n\n注意: バッチシステムは、Splash DEXシステムに基づいており、実証済みのアーキテクチャを活用し、拡張性と効率性を高めます.",
+      "criteria": "1. ボンディングカーブプールスマートコントラクト\n・ボンディングカーブプールのスマートコントラクトのユニットテストは、エラーなしで動作するようにパスしなければなりません。\n\n2. スマートコントラクトの注文\n・注文スマートコントラクトのユニットテストは、その機能と信頼性を検証し、通過しなければなりません。\n\n3. バッチ システム\n・バッチシステムは、期待どおりに注文を処理し、複数の注文を効率的にそして正確に処理する能力を実証しなければなりません.",
+      "report": "レポート:https://docs.google.com/document/d/1l9le17IHpNYfoFbfBDDlJAG0snJOsGSRMtx3G8hEngA/edit?usp=sharing\n公開 GH に追加: https://github.com/Snek-coin/snekdotfun-catalyst\n動画は こちら: https://youtu.be/FzvikF6AM4Q\n\nのオンチェーン エクスプローラの証拠:\n- ボンディングカーブプールの展開:\n[CardanoScan](https://cardanoscan.io/transaction/b752f988e0bed856b09992bacf39e7f1f34a6cde4e90a5a35500375aaa67d66bb?tab=tokenmint)\n\n- トークンを購入する(ADA → トークン):\n[配置](https://cardanoscan.io/transaction/98d8e1985b72068fc1d3846af39756567a0eef1fdd053e490b7b590d9528c6f5)\n(https://cardanoscan.io/transaction/682a63cb59c93c77a18af4dbb4ea60ac1f6a04152e57aadf67612ae5ff671da8)\n\n- トークンを販売(トークン → ADA):\n[配置](https://cardanoscan.io/transaction/287615f7243424cbe356da30bb25207088ef691f4d4d9c4033a37b6977efe833)\n[終了](https://cardanoscan.io/transaction/6362e8cf4a935a85a8b033ffc60ac5677a4abce8cfa34ae5a9f408ef232f225c)"
+    },
+    {
+      "no": 3,
+      "promise": "A. API仕様のドキュメント\n・PDF形式の詳細なAPI仕様書、すべてのエンドポイントのアウトライン、サポートされているHTTPメソッド、および必要なデータ形式を提供します。\n\nB. 次のバックエンド機能の実装:\n・開始トークンの一覧:起動したトークンをすべて取得および表示する方法を実装します。\n・トークンのリーセント取引:特定のトークンの最近の取引や取引を取得し表示する方法を開発する。\n・トークンの配布(株主): 異なるアドレス間でトークン保有の分布を示す方法を作成します。\n・Candlestickチャート:トークン価格履歴の燭台チャートを生成し表示する方法を実装します.",
+      "criteria": "APIドキュメント\nドキュメントは、すべての API エンドポイント、サポートされている HTTP メソッド、および必要なデータフォーマットを含む PDF 形式と英語でなければなりません。\nドキュメントは、開発者にとって完全な理解が必要です。\n\nバックエンド機能の実装\n各機能は仕様書に従って実施され、特定の性能および正確さの条件を満たします。\n1. 開始されたトークンのリスト: 正確なデータですべての起動されたトークンを表示する必要があります。\n2. トークンの最近の取引:最近の取引を正しく取得し、表示する必要があります。\n3. トークン(ホルダー)の配布:tを示す必要があります",
+      "report": "API ドキュメント: https://drive.google.com/file/d/1H07bXKEWtUC SZCxQVPkDl-ljewYEmWe/view?usp=sharing\nビデオ: https://drive.google.com/file/d/1PGH2dmuTbjP-SEQm9AtmR9hQJb7U WlR/view\nカールリクエスト: https://drive.google.com/file/d/1OMK7c508thyVsVYst2Mp4MGCeGyd2T1M/view?usp=sharing"
+    }
+  ]
+}

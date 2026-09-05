@@ -1,0 +1,67 @@
+{
+  "title": "Breeze - Trading Bot Framework",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 41000,
+      "promise": "TypeScript package with the ability to instantiate Breeze with a set of strategies. Each strategy is fed data provided by Iris, and allows DEX orders to be placed on the Cardano blockchain.",
+      "criteria": "A set of user provided strategies can be loaded into Breeze, and fed live DEX data from Iris.",
+      "report": "This is starting to get ridiculous. I have verified this link multiple times with team members, and outside of my logged in Gmail account. Generating a new share link results in the same URL. Try a different browser or load the link in incognito. Other reviewers were able to access the link, this is an issue on your side. It could probably be due to language translation if you have that enabled.\nGoogle Drive Link : https://drive.google.com/drive/folders/1nK9OLBWV5vdRyl-_-q5K5tlwHSOLL3Hb?usp=sharing\nNOTE : The code files need to be downloaded & viewed in a text editor. Google Drive does not display the code files within Drive.\nContains a screenshot of Breeze logs loading a test strategy named 'Redeemer'. These logs also indicate services being booted.\nThe 'code-files' folder contains the base package of the project.\nFor the last reviewer - The Drive link has been verified & does work, please COPY & PASTE the whole link. If you look at the link you posted, the end of the URL is different \"?usp=shared\" VS \"?usp=sharing\". Ensure the end of the URL matches the link above.\nThe code is not hosted on Github because the project is not open source at the moment, it is still in development & will be open-sourced in a later milestone.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 31000,
+      "promise": "・Suite of common technical indicators, which work off of OHLCV ticks.\n・Twilio & Slack integrations, along with tying in relevant notification triggers into the framework.\n・Auto-Cancellation/Take Profit jobs to automatically trigger closing orders",
+      "criteria": "・Orders placed by Breeze are automatically cancelled when the order is not settled after a specific time limit provided in the Breeze config. Ex: 60 minutes\n・Assets bought through Breeze are automatically sold when the overall trade has an un-realized profit amount specified in the Breeze config. Ex: 5%\n・On failures for either of the above, Breeze will continue to retry until the expected result is obtained. This assumes there are no underlying issues/bugs within Breeze itself.",
+      "report": "Google Drive Link : https://drive.google.com/drive/folders/1ed6Cx2xCiL5BjMuH-Qt0d7pQ7_b4Ar3s?usp=sharing\nNOTE : The code files need to be downloaded & viewed in a text editor. Google Drive does not display the code files within Drive.\nNOTE : Twilio notifications had to be cancelled due to new restrictions around sending SMS notifications from projects. There is no workaround to this. If something changes, I will add Twilio/Text message notifications within Breeze.\nContains a screenshot of Slack notifications & logs cancelling an order.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 44000,
+      "promise": "・Vue.js/TypeScript front-end to trigger & manage backtests.\n・API for CRUD (Create, Read, Update, Delete) operations on backtests for front-end calls.\n・Connector websocket for front-end to trigger backtests. This includes setting up messaging types & client/server communications.",
+      "criteria": "Developers can trigger backtests from the front-end, which pulls historic data provided by Iris, and is fed into the desired strategy. Once the backtest is complete, the front-end displays the backtesting results & any orders placed.",
+      "report": "Google Drive Link : https://drive.google.com/drive/folders/1iHrDYcX3Iyw1j4Z4DymOS24oM3hOtd8y?usp=sharing\nNOTE : The code files need to be downloaded & viewed in a text editor. Google Drive does not display the code files within Drive.\n\nDrive folder contains a screenshot of the backtest logs, a recording of running a backtest, and the related code files. The code files under the 'api' folder are the necessary services for the front-end to connect to the breeze instance.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 31900,
+      "promise": "・Documentation of Breeze setup steps, strategy creation, and backtesting API endpoints for open-sourcing. This also includes NPM repository creation/setup for publishing.\n・Automated end-to-end tests for Breeze framework & data injections.",
+      "criteria": "Documentation provides all necessary steps in utilizing Breeze. The project also includes automated testing to check for possible bugs that may arise during open-source development.",
+      "report": "Google Drive Link : https://drive.google.com/drive/folders/1u9lIqZtYnJBsa5E-VmB3GaAdaJry6Eft?usp=sharing\nRepository : https://github.com/Sluder/breeze\nNOTE : The code files need to be downloaded & viewed in a text editor. Google Drive does not display the code files within Drive.\nNOTE FOR REFUSER : The files are in .TS format because they are files containing code. I have included .txt files in the Google Drive. Either or, the above note says to open the files in a text editor. Either file type will work in a text editor. Read the whole POA.\n\nDrive folder contains automated tests in the test folder, and the README in markdown. Both are also in the repository.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 26100,
+      "promise": "・Final close-out report\n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Closeout Video - https://www.youtube.com/watch?v=GBgsVDTfNVY \nCloseout Report - https://docs.google.com/document/d/1WvTdz49ThA0ewfcsNLWAJIwfkEH5CK4Um7v1Fz382kI/edit?usp=sharing",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

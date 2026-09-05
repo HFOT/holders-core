@@ -1,0 +1,43 @@
+{
+  "title": "Unified Open Source DEX Analytics For Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 22500,
+      "promise": "・Comprehensive analysis of the order processing smart contract systems of the major DEXes on Cardano. This includes (but is not limited to) MuesliSwap, Minswap, SundaeSwap, Wingriders, and VyFI. The analysis will contain information about expected input and output datums, batcher implementations and possible edge case conditions for each of the mentioned DEXes.",
+      "criteria": "・A completed report detailing the analysis of smart contracts as described above.",
+      "report": "A research report covering an analysis (transaction/datum structure, off-chain components, etc.) of the following DEXes/protocols has been published:\n・MuesliSwap Hybrid-DEX\n・Minswap v1\n・Minswap Stableswap\n・Minswap v2\n・SundaeSwap v1\n・SundaeSwap v3\n・WingRiders v1\n・WingRiders v2\n・VyFi\n・Spectrum v1\n\nThe report can be found in the public repository: https://github.com/MuesliSwapTeam/muesliswap-dex-analytics/blob/main/report/main.pdf\nAn announcement via the MuesliSwap X account has been made here: https://x.com/MuesliSwapTeam/status/1873670090614284758",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 22500,
+      "promise": "・Refactoring and documentation of essential code from our existing closed-source system to an open-source repository. (We already own closed-source code that we will open-source and use as a basis for this open-source tool.)\n・Expansion of support for currently supported DEX protocols (MuesliSwap, Minswap, SundaeSwap) to all Cardano DEXes that according to DefiLlama at the time of milestone submission have TVL >$100k (those are, in addition to the above: Splash, Wingriders, TeddySwap, VyFI), improvements and bug fixes based on insights gathered from the first milestone.",
+      "criteria": "・Fully functional analytics API with following features (last trades, user history, price history, DEX volume analysis).\n・Improved support for all major DEX protocols (namely those with TVL >$100k, as specified above in the Outputs section) with enhancements based on findings from the previous milestone (such as handling all transactions correctly without heuristics where possible).\n・Documentation outlining the database schema and API endpoints.",
+      "report": "In this milestone we provide:\n・GitHub repository with working codebase (under GNU General Public License): https://github.com/MuesliSwapTeam/muesliswap-dex-analytics\n・API docs as part of the GitHub repository: see PDF version here, or run the server as described in README and check the '/docs' endpoint for an interactive API dashboard",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "・Deployment scripts and performance enhancements to ensure straightforward installation and operation for most (technical) users.\n・Implementation of unit tests to ensure all parts of the software work correctly and reliably.\n・Addition of advanced analytical features, such as identifying specific transaction types such as arbitrage transactions (and/or other analytical features depending on the demand from Cardano developers).\n・Brief narrated video demonstrating the straightforward installation and operation to show (especially to non-technical users) that the software works correctly and reliably.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・The software can be easily installed and used by the average Cardano developer.\n・The test cases cover all core functionality and are passing.\n・The new API accurately detects specific types of transactions and DEX interactions.\n・Brief narrated demo video for non-technical users is publicly available.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "We provide the following evidence:\n・deployment scripts in repository\n・various improvements and bugfixes for codebase (see e.g. commits c82e333, 36eca49. db13645, 19d9df3 in above repository)\n・unit tests (see also demo in the walk-through video and automated CI tests in GitHub repository)\n・addition of more advanced API features: implemented a \"high-value\" trades feature that allows users to inspect only relevant trades above certain amount thresholds, see respective commit\n・narrated video showing the project setup and querier + API operation demo (including unit tests)\n・final close-out video\n・final close-out report",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 13
+    }
+  ]
+}

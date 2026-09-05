@@ -1,0 +1,76 @@
+{
+  "title": "Mesh New Features to Improve Developer experience and Cardano Adoption",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "Mesh <> CIP 45: Deploy Meerkat Integration\nMesh Wallet: Create browser wallets endpoints\nMesh Wallet: Create a Yaci support development\nImplement open source implementation on GitHub",
+      "criteria": "Finalised Mesh <> CIP 45: Deploy Meerkat Integration\nFinalised Mesh Wallet: Create browser wallets endpoints\nFinalised Mesh Wallet: Create a Yaci support development\nFinalised open source implementation on GitHub",
+      "report": "Hello Milestone reviewers.\nWe are glad to report on the successful completion of Milestone 1.\n\nThe stated Acceptance criteria has been accomplished, here the expected url's to the work done.\n・Public url to the github repository for Mesh <> CIP 45: Deploy Meerkat Integration\n・https://github.com/MeshJS/mesh/pull/413 and https://meshjs.dev/react/ui-components\n\n・Public url to the github repository for Mesh Wallet: Create browser wallets endpoints\n・https://github.com/MeshJS/mesh/blob/main/packages/mesh-wallet/src/mesh/index.ts \n\n・Public url to the github repository for Mesh Wallet: Create a Yaci support development\n・https://github.com/MeshJS/mesh/blob/main/packages/mesh-provider/src/yaci.ts \n\n・All code licensed under open source licenses on the MeshJS github\n・https://github.com/MeshJS/mesh/blob/main/LICENSE.md",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 11
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 50000,
+      "promise": "Mesh <> CIP 45: Set up dApp peer module\nMesh Wallet: Finalise all wallet endpoints\nMesh Wallet: Create a Yaci support development\nImplement open source implementation on GitHub",
+      "criteria": "Finalised Mesh <> CIP 45: Set up dApp peer module\nFinalised Mesh Wallet: Finalise all wallet endpoints\nFinalised Mesh Wallet: Yaci support development\nAll code licensed under open source licenses on the MeshJS github",
+      "report": "Hello Milestone Reviewers.\nWe are glad to report on the successful completion of the second milestone of the proposal.\nThe Acceptance Criteria had been stated as:\n・Finalised Mesh <> CIP 45: Set up dApp peer module\n・Finalised Mesh Wallet: Finalise all wallet endpoints\n・Finalised Mesh Wallet: Yaci support development\n・All code licensed under open source licenses on the MeshJS github\n\nAnd here the evidence of milestone completion.\nFinalised Mesh <> CIP 45: Set up dApp peer module\nHere is a demo of how CIP 45 work and-to-end using the latest React UI component. Screenshot at: https://github.com/MeshJS/funding/blob/main/catalyst-fund12/new-features/milestone2.md \nFinalised Mesh Wallet: Finalise all wallet endpoints\nWallet endpoints have been completed and can be found at: https://meshjs.dev/apis/wallets/meshwallet \nFinalised Mesh Wallet: Yaci support development\nMesh Wallet is fully compatible with Yaci node. All transaction (with custom protocol parameters) can be signed by Mesh Wallet: https://meshjs.dev/yaci/transactions\nAll code licensed under open source licenses on the MeshJS github\nAll code is hosted under the repositories at https://github.com/MeshJS/mesh/tree/main and https://github.com/MeshJS/mesh-saas , both with an active Apache 2.0 open source license, which can be found at:\n・https://github.com/MeshJS/mesh?tab=Apache-2.0-1-ov-file#readme \n・https://github.com/MeshJS/mesh-saas?tab=Apache-2.0-1-ov-file#readme\n\nWe hope our work and report finds you well and will be approved. For any questions, feel free to reach out on:\nEmail: hello@meshjs.dev\nDiscord: https://discord.gg/hCbuZGwr2B",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 15
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 50000,
+      "promise": "Modular CSL lib: Creating interface for current CSL logic and prepare all necessary functions in CSL package\nImprove error messages\nMesh Wallet: Yaci support development\nMesh <> CIP 45 Documentation\nImplement open source implementation on GitHub",
+      "criteria": "Finalised Modular CSL lib: Creating interface for current CSL logic and prepare all necessary functions in CSL package\nFinalised Improve error messages\nFinalised Mesh Wallet: Yaci support development\nFinalised Mesh <> CIP 45 Documentation\nAll code licensed under open source licenses on the MeshJS github",
+      "report": "# Milestone 3 Report\nHey there Milestone reviewers, voters and everyone following our proposal progress.\nOur devs shipping some extra hours to bring our proposal on track since we got slightly in delay with our planned deliverables for November 2023. \nWe are glad to have catched up, and we are just finished to complete all deliverables of Milestone 3.\n\nThe Acceptance criteria had been stated as:\n・Finalised Modular CSL lib: Creating interface for current CSL logic and prepare all necessary functions in CSL package\n・Finalised Improve error messages\n・Finalised Mesh Wallet: Yaci support development\n・Finalised Mesh <> CIP 45 Documentation\n・All code licensed under open source licenses on the MeshJS github\n\nAnd here, our evidence of the successfuly completed work.\n\n## Finalised Modular CSL lib: Creating interface for current CSL logic and prepare all necessary functions in CSL package\n\nIn order to enable support for modular serialization libraries, we implemented [IMeshTxSerializer](https://github.com/MeshJS/mesh/blob/main/packages/mesh-common/src/interfaces/serializer.ts), which is a common interface for all serialization libraries.\nThen, we implemented [CSLSerializer](https://github.com/MeshJS/mesh/blob/main/packages/mesh-core-csl/src/core/serializer.ts) which contains all the necessary serialization functions to use the CSL library.\nIn the same way, we implemented [CardanoSDKSerializer](https://github.com/MeshJS/mesh/blob/main/packages/mesh-core-cst/src/serializer/index.ts), which interface with cardano-sdk library.\n\n## Finalised Improve error messages\n\nPreviously, parsing WasmError was incorrect.\nIn order to improve error messages, we introduced a new type called `WasmResult, which turns the error into a JS object on WASM. Doing so allows us to get error messages from Rust libraries.\nSee [source code](https://github.com/sidan-lab/whisky/blob/91fe72d50243bfbf07030cfdc3ac5950c6c21a5e/packages/sidan-csl-rs/src/wasm/txbuilder.rs#L36).\n\n## Finalised Mesh Wallet: Yaci suppor",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 40000,
+      "promise": "Modular CSL lib: Refactor to dependency injection pattern and integrate with new pattern\nMesh Wallet: Yaci support development\nMesh Wallet: Documentation\nModular CSL lib: Documentation\nAll code licensed under open source licenses on the MeshJS github",
+      "criteria": "Finalised Modular CSL lib: Refactor to dependency injection pattern and integrate with new pattern\nFinalised Mesh Wallet: Yaci support development\nFinalised Mesh Wallet: Documentation\nFinalised Modular CSL lib: Documentation\nAll code licensed under open source licenses on the MeshJS github",
+      "report": "Milestone 4 Report\n\nHey there Milestone reviewers, voters and anyone follwoing the progress of our proposal. We are gald to also have completed Milestone 4 of the proposal, now being fully on track with previous delays.\nOur Milestone acceptance criteria has been stated as:\n・Finalised Modular CSL lib: Refactor to dependency injection pattern and integrate with new pattern\n・Finalised Mesh Wallet: Yaci support development\n・Finalised Mesh Wallet: Documentation\n・Finalised Modular CSL lib: Documentation\n・All code licensed under open source licenses on the MeshJS github\n・Here our proof-of-achievement for the completion of the milestone outcomes.\n\nFinalised Modular CSL lib: Refactor to dependency injection pattern and integrate with new pattern\n\nBoth CSLSerializer and CardanoSDKSerializer have been implemented with dependency injection pattern. CSLSerializer is feature complete and CardanoSDKSerializer is currently undergoing beta testing.\n・CSLSerializer: https://github.com/MeshJS/mesh/blob/main/packages/mesh-core-csl/src/core/serializer.ts\n・CardanoSDKSerializer: https://github.com/MeshJS/mesh/blob/main/packages/mesh-core-cst/src/serializer/index.ts\n\nFinalised Mesh Wallet: Yaci support development\n\nThe Yaci Provider is completed and its documentation can be found on MeshJS website which includes all the methods, their descriptions and live demos, making it easy and effective for developers to use for their own projects.\n・https://meshjs.dev/providers/yaci\n\nFinalised Mesh Wallet: Documentation\n\nFull Mesh-wallet is completed and the documentation can be found on MeshJS website which includes all the methods, their descriptions and live demos.\n・https://meshjs.dev/apis/wallets/meshwallet\n\nFinalised Modular CSL lib: Documentation\n\nFull Modular CSL lib documentation is completed as well, the documentation can be found on MeshJS website where users can specify either CSLSerializer or CardanoSDKSerializer or their own custom serializer.\n・Documentation: https://meshjs.dev/apis/txbuil",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 26,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 30000,
+      "promise": "・Final close-out report\n・Final closeout video\n・A detailed report on what has been done\n・All source codes are made public\n・A Twitter thread to inform public\n・Conduct a post-survey to gather developer feedback",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Finalised detailed report on what has been done\n・Finalised source codes made public\n・Finalised Twitter thread to inform public\n・Finalised survey to gather developer feedback",
+      "report": "Milestone 5 Report\nHey there Milestone reviewers, builders and anyone who is following our proposal progress.\nHere the successful deliverables from the fifth and final Milestone with which we complete and close the proposal.\nAchievements & Development Progress\nAt the first milestone, we integrated CIP 45, enabling seamless transaction metadata creation that aligns with Cardano standards. Alongside, the Meerkat support implementation ensured compatibility with established dApp infrastructure. To enhance user interactions, we developed browser wallet endpoints that streamline dApp-to-wallet communication. Another key step was the early-stage development of Yaci support for more flexible backend wallet operations.\nEnabled:\nCIP 45 Integration & Meerkat Support: Makes it easier for devs to create transaction metadata that aligns with Cardano standards.\n・Browser Wallet Endpoints: Enables seamless dApp-to-wallet communication, making user interactions smoother.\n・Yaci Support (Initial Development): A step toward more flexible backend options for wallet operations.\n\nhttps://github.com/MeshJS/governance/blob/main/funding/catalyst-fund12/new-features/milestone1.md\nThe second milestone focused on expanding capabilities. A major highlight was the development of the dApp peer module for CIP 45, which allows developers to integrate peer-to-peer interactions without having to build custom solutions. We also finalized all wallet endpoints, making Mesh Wallet more reliable and complete. Yaci support saw further progress, enhancing its role as an alternative backend solution for wallet interactions.\nEnabled:\ndApp Peer Module for CIP 45: Lets developers integrate peer-to-peer interactions without reinventing the wheel.\n・Finalized Wallet Endpoints: More complete and stable wallet interaction API.\n・Yaci Integration Progress: Expanding backend support beyond traditional solutions.\n\nhttps://github.com/MeshJS/governance/blob/main/funding/catalyst-fund12/new-features/milestone2.md\nThe third",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 28,
+      "cut": true
+    }
+  ]
+}

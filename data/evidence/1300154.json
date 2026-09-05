@@ -1,0 +1,79 @@
+{
+  "title": "Open-Source Smart Contract Library for Midnight: Catalyzing Midnight's Developer Ecosystem with Ready-to-Use Smart Contracts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "10",
+      "cost": 53128,
+      "promise": "Milestone 1 has the following outputs (deliverables):\n・Open-source escrow smart contracts for Midnight on GitHub\n・Video walk-through of the code",
+      "criteria": "The deliverables are considered “accepted” when they meet the following criteria:\n・Open-source escrow smart contracts went through contract logic unit testing, performance optimization, and adhere to best practices.\n・Open-source escrow smart contracts are publicly accessible\n・The video walk-through demonstrates that the following actions can be done with the smart contracts\n・User A can deposit funds into the escrow\n・User B can connect their wallet to register the receiving address\n・User A can authorize the release of funds from the escrow\n・User B can receive the released funds\n・A video with a",
+      "report": "Title: Escrow Smart Contracts\nOutputs\nMilestone 1 has the following outputs (deliverables):\n・Open-source escrow smart contracts for Midnight on GitHub\n・Video walk-through of the code\n\nAcceptance criteria\nThe deliverables are considered “accepted” when they meet the following criteria.\n・Open-source escrow smart contracts are publicly accessible → Yes\n・The video walk-through demonstrates that the following actions can be done with the smart contracts\n・User A can deposit funds into the escrow → Yes\n・User B can connect their wallet to register the receiving address → Yes\n・User A can authorize the release of funds from the escrow → Yes\n・User B can receive the released funds → Yes\n・A video with a resolution of at least 1280 x 720p → Yes\n・The main language of the video will be English → Yes\n\nEvidence of Milestone completion\n・GitHub repository URL containing the open-source escrow smart contracts.\n\nhttps://github.com/socious-io/midnight-escrow/\n・YouTube video URL of the walk-through demonstration.\n\nhttps://youtu.be/B0D79P8pxRU\nSupplementary resource (not part of the acceptance criteria)\nDocumentation and User Guide (work in progress): https://socious.gitbook.io/midnight-smart-contract-library\nExample Dapp: https://github.com/socious-io/midnight-escrow/tree/main/example-dapp",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "12",
+      "cost": 42462,
+      "promise": "Milestone 2 has the following outputs (deliverables):\n・Open-source dispute resolution smart contracts for Midnight on GitHub\n・Video walk-through of the code",
+      "criteria": "The acceptance criteria for this milestone are as follows:\n・Open-source dispute resolution smart contracts went through contract logic unit testing, performance optimization, and adhere to best practices.\n・Open-source dispute resolution smart contracts are publicly accessible\n・The video walk-through demonstrates that the following actions can be done with the smart contracts\n・Judges can maintain anonymity\n・Three selected judges can cast votes\n・A decision is reached with a 2/3 majority\n・The prevailing party receives the funds released from escrow\n・A video with a resolution of at least 1280 x 72",
+      "report": "Evidence of Milestone completion\n・GitHub repository URL containing the open-source escrow smart contracts.\n\nhttps://github.com/socious-io/midnight-escrow/\n・YouTube video URL of the walk-through demonstration.\n\nhttps://youtu.be/b0Q-eg3cncs\nSupplementary resource (not part of the acceptance criteria)\nDocumentation and User Guide (work in progress): https://socious.gitbook.io/midnight-smart-contract-library/dispute-resolution\nExample Dapp: https://github.com/socious-io/midnight-escrow/tree/main/example-dapp",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "15",
+      "cost": 50667,
+      "promise": "Milestone 3 has the following outputs (deliverables):\n・Open-source crowdfunding smart contracts for Midnight on GitHub\n・Video walk-through of the code",
+      "criteria": "The acceptance criteria for this milestone are as follows:\n・Open-source crowdfunding smart contracts went through contract logic unit testing, performance optimization, and adhere to best practices.\n・Open-source crowdfunding smart contracts are publicly accessible.\n・The video walk-through demonstrates that the following actions can be done with the smart contracts\n・Explanation of how:\n・Users can connect their wallets\n・Users can select a project and contribute tokens\n・The crowdfunding platform deducts a fee\n・Project owners can link a wallet to receive funds\n・Projects receive donations minus the",
+      "report": "Evidence of Milestone completion\n・GitHub repository URL containing the open-source escrow smart contracts.\n\nhttps://github.com/socious-io/midnight-fund\n・YouTube video URL of the walk-through demonstration.\n\nhttps://youtu.be/BvtIi6_vG2c\nSupplementary resource (not part of the acceptance criteria)\nDocumentation and User Guide (work in progress): https://socious.gitbook.io/midnight-smart-contract-library/crowdfunding",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "16",
+      "cost": 23743,
+      "promise": "Milestone 4 includes the following key outputs / deliverables:\n・A publicly-available website hosting the developed smart contracts as well as the documentation and tutorials.\n・Create a comprehensive documentation that serves as a user guide for the three types of developed smart contracts\n・Escrow smart contracts\n・Dispute resolution smart contracts\n・Crowdfunding smart contracts\n・Produce and publish tutorials for developers using the smart contracts.",
+      "criteria": "・The website must:\n・Be publicly available\n・Include the three developed smart contracts with examples of how these contracts can be used and customizable templates\n・Include in-depth tutorials for each type of smart contract, user guides for each type of developed contract, with links leading to GitHub repositories containing the code for these smart contracts.\n・The tutorials on the website must:\n・Be publicly accessible\n・Explain each developed smart contract\n・Be published in English\n・The documentation must include:\n・In-depth explanations of the three types of developed smart contracts\n・Tips and",
+      "report": "・Video walk-through\n\nhttps://youtu.be/N1sy9Pk3CMY\n・URL or link to the website\n\nhttps://socious.gitbook.io/midnight-smart-contract-library\n・Links to the GitHub repository\n\nhttps://github.com/socious-io/midnight-escrow/ : Escrow and Dispute Resolution\nhttps://github.com/socious-io/midnight-fund: Crowdfunding\n・Notion link containing the documentation\n\nhttps://shinid.notion.site/Gitbook-Documentation-3023d106030b80bd89e9ef9d460be566?source=copy_link\n・URL or links leading to tutorials for developers using the smart contracts\n\nhttps://socious.gitbook.io/midnight-smart-contract-library",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "17",
+      "cost": 30000,
+      "promise": "・Final close-out report\n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Close-out report (PDF file): https://drive.google.com/file/d/1YJiYwEeFLUnV8GVQPIhuTq-lGx4pBIr4/view?usp=sharing\nClose-out video: https://youtu.be/yqWpsYDQ7eM",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

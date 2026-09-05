@@ -1,0 +1,55 @@
+{
+  "title": "CHARLI3 - Cardano integrated Side-Chain Oracle built on Substrate",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "We already have a guiding goal for this project: solving the block limitations using a partner chain. This milestone is all about organizing the team and defining the guiding research questions, scope, and timeline for the project. The ultimate goal of this project is to output a feasibility report, project plan for proof of concept, and public report on our research findings. With those penultimate goals in mind, this milestone begins with defining how we will get to that endpoint. \n\nFor this milestone, the outputs are the following:\n・Team member assigned to research\n・Preliminary research guiding questions refined and methodology decided upon by team\n・Research divided amongst team based on experience and skillset\n・Research timeline provided\n・Research commences",
+      "criteria": "・A project team is assigned\n・Guiding research questions provided\n・Work assigned to team members and timeline is created\n・Research phase begins",
+      "report": "Please find all the ACs in this medium article: \nhttps://oraclecharli3.medium.com/catalyst-milestone-update-partnerchain-research-59f24d450989\n\nTL;DR update\nThe team has already completed: guiding research questions, research, feasibility report, and have a functioning sidechain connected to Cardano already... we are just behind submitting proof of achievements. Will submit M2/M3 in the next 1.5 weeks.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "Context: Milestone 1 outputs all the research questions, so it is contained in the output for that milestone. The feasibility report that is output for this milestone addresses those questions. Milestone 3 outputs an implementation plan (or we call it a proof of concept plan to recommend an implementation or action resulting from the research).\nOUTPUT: Research on topics described in the original proposal and amended during milestone 1 conducted the output of which is a document titled, \"Feasibility Plan\"; the feasibility plan is the result of research by the team and addresses the following questions (meaning there are non-final conclusions reached on these topics)\n・Can Charli3's current, fully native, Cardano based oracle solution overcome the block time limitation?\n・Can a Cardano based oracle solution overcome the block time limitation using a partner-chain or side-chain or another solution?\n・Additional research questions defined in milestone 1 (for the purposes of this milestone, I don't think it is reasonable to list every research question we will address -- the general strategy from the original proposal is address 1/2 and all related questions... either a partner-chain/side",
+      "criteria": "Feasibility Report completed: All questions defined in milestone 1 (original proposal topics, amended questions, and everything set from milestone 1 are addressed in the report)",
+      "report": "Here is a medium article that addresses all of the outputs for this milestone and includes a feasibility report in PDF format.\nhttps://oraclecharli3.medium.com/catalyst-update-oracle-side-chain-5c27eaa3fec9\nReviewer Notes: \n・All questions defined in milestone 1 are immediately addressed in the medium article, but to iterate the answers and focus of the research here they are again (Answers to the outputs required).\n・No, see below.\n・No, there is no solution that will overcome the block time limitation in the sense that a value can be posted prior to 20 seconds on the chain. Whether an oracle is built on EVM, cosmos, IOG partnerchain, or wherever, this limitation remains.\n・Can there be data rate optimizations when building a solution on Substrate and connecting with Cardano via the IOG Partnerchain? Yes. Could there be sub-second data value updates. Yes. Would protocols need to consume these sub-second values via API (or off-chain) then receive verification/validation by oracle nodes 20 seconds later? Yes. \n・Is it feasible to build the Charli3 oracle on Substrate? Yes.\n・Are there additional questions requiring the implementation left unanswered until a full implementation is attempted? Yes, that's why you see [WIP] for some answers. Again, these are not requirements for the milestone.\n・The research team at Txpipe, after their initial analysis during the feasibility phase, have decided that building on the IOG partnerchain is a feasible option to achieve maximum data rate optimizations. \n\nPlease find within the Feasibility Report ADDITIONAL QUESTIONS (e.g. not part of the guiding questions from the original milestone, nor requiring answers for this milestone). \nThe approach the research team took was to literally code/build and test a POC of the oracle solution on Substrate. As they progressed they were able to provide answers to the questions in the feasibility report. Once all the answers are completed in the report, the implementation will be complete. Put another w",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 5000,
+      "promise": "Context: Milestone 1 defines the research project and sets the questions, methodology, and roadmap. Milestone 2 produces a feasibility research report as the output of research pursued per terms set in milestone 1.\nMilestone 3 Output: \n・POC Implementation Report that contains:\n・Recommendation(s) on what/how to build a solution (either partnerchain/sidechain/other solution) based on the progress made in milestones 1/2 and the previous \"Feasibility Research Report\"; in the event that the research results in no solution possible, we will recommend creative solutions that get closest to the desired result\n・Implementation Plan: \n・Summary of what solution is recommended\n・Next step implementation plan: scope and requirements for pursuing such a project\n・Technical skills of team capable of delivering the project\n・Implementation timeline estimate\n・Detailed description of the proposed architecture",
+      "criteria": "Proof of concept (POC) Implementation Report completed; addresses the following\n\n・POC Implementation Report that contains:\n・Recommendation(s) on what/how to build a solution (either partnerchain/sidechain/other solution) based on the progress made in milestones 1/2 and the previous \"Feasibility Research Report\"; in the event that the research results in no solution possible, we will recommend creative solutions that get closest to the desired result\n・Implementation Plan: \n・Summary of what solution is recommended\n・Next step implementation plan: scope and requirements for pursuing such a project",
+      "report": "Please find everything required for this milestone in this PDF document: https://drive.google.com/file/d/1F2nKQuUj7n8O1x-P4Igj7-E9Qy14gYqk/view?usp=sharing\n\nIncluded in the PDF is a \"Project 1200080 POC Implementation Plan\" that is input for project 1200080. \n\nAlthough we worked on several \"POCs\" in order to answer the research questions, we never committed to an output of a working POC for this project. It is well beyond the scope and budget to produce that. Instead the implementation plan is the output from all that hard work. The section titled POC Implementation Plan will become the statement of milestones for the implementation of this research in the upcoming 1200080 funded project.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 35000,
+      "promise": "・Final Research Paper that includes all research deliverables from previous milestones. This paper will Include team info, methodology, and research questions from milestone 1, Includes Feasibility Report from milestone 2, Includes POC Implementation Plan from milestone 3\n・Catalyst close-out report AND ALL NECESSARY REQUIREMENTS BY CATALYST FOR SUCH A REPORT (e.g. videos, forms, and etc... AC requires catalyst to accept the close out report so by definition we need to complete that anyways...)",
+      "criteria": "・Final Research Paper published; Final Research Paper that includes all research deliverables from previous milestones. This paper will Include team info, methodology, and research questions from milestone 1, Includes Feasibility Report from milestone 2, Includes POC Implementation Plan from milestone 3\n・Close-out report with all necessary material submitted to project catalyst team, and accepted.",
+      "report": "Final research Article: https://drive.google.com/file/d/1geOEkfxsa-GDrAgS3LVBoQVH2ZzD-04_/view?usp=sharing\n・Updated to include Feasibility Report and Implementation Plan \n\nClose-out Video: https://drive.google.com/file/d/1C4nEnVjwWLpgeZtYW0qsUeqIqQHfE7hM/view?usp=sharing\nClose-out Report : https://drive.google.com/file/d/1PiR8A6j-86X9LXi0RiRrqsVwPFEe2BTL/view?usp=drive_link",
+      "kinds": [
+        "doc"
+      ],
+      "links": 6
+    }
+  ]
+}

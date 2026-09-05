@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "ソリューションが最大に住む必要がある要件を指定する書面.",
+      "criteria": "潜在的な実装の全体的な設計。 利用する言語とライブラリのリスト.",
+      "report": "https://github.com/paideiadao/paideia-cardano-contracts/blob/main/basic-dao-spec.pdf\n必要に応じて、プロジェクトが利用する言語/ライブラリのリストを追加しました。 更新されたPDFの一番下にあります。 お問い合わせ!"
+    },
+    {
+      "no": 2,
+      "promise": "有効なオープンソース契約.",
+      "criteria": "ガバナンストークンの所有者が提案書を作成することを可能にする契約。\n契約は、ガバナンストークンの所有者が提案に投票できるようにします.",
+      "report": "https://www.youtube.com/watch?v=8xVwXybNtKY\nこのビデオでは、マイルストーン1の仕様に従って構築されたすべての契約について説明します。 ユニットテストは契約の機能性を証明するために作成され、ビデオで実行して8:45を通過することができます。 ユニットテストはこちら:\nhttps://github.com/paideiadao/paideia-cardano-contracts/blob/main/dao contracts/lib/dao contracts/tests.ak\nここにすべての契約で完全なリポジトリにアクセス:\nhttps://github.com/paideiadao/paideia-cardano-contracts/ja"
+    },
+    {
+      "no": 3,
+      "promise": "有効なオープンソース契約",
+      "criteria": "取引条件\n契約は、渡された提案に基づいて財務省から支出することができます.",
+      "report": "レビュー拒否に関するNite: GitHubにログインして429エラーを解決する必要があります。 GitHubでレート制限を受けている理由はわかりませんが、リポジトリに問題はありません。 それらのエラーを GitHub サポート で解決するには、 GitHub サポートが必要です。\n\n現在のマイルストーンのyoutubeビデオ概要は次のとおりです。\nhttps://www.youtube.com/watch?v=Nb4XcWWAdvM\nそしてここにコードです\nhttps://github.com/paideiadao/paideia-cardano-contracts/ja\nお問い合わせ!"
+    },
+    {
+      "no": 4,
+      "promise": "オープンソースのオフチェーンコード",
+      "criteria": "契約の妥当性を証明するために意図されている規則的なオフチェーンコード:\n- 提案の作成。\n- 投票。\n- Treasuryの支出.",
+      "report": "ここでは、投票が処理されていることを実証するビデオです。 もともとはコマンドラインインターフェースでオフチェーン側を行なうように意図したのですが、先に進んでフロントエンドを完全に機能させることにしました。 よりアクセスしやすいようにしたいと思っていたし、ローカルマシンで実行できる人。 このページは、テスト(テストネット上)に何かを生じさせる可能性があります。\nhttps://www.youtube.com/watch?v=pM1USHL438A\nそしてここにGPLライセンスですべてのコードがあります。\nhttps://github.com/paideiadao/paideia-cardano-contracts/ja\nドキュメントはマイルストーン5で完了します."
+    },
+    {
+      "no": 5,
+      "promise": "オンチェーンコードとオフチェーンコードの完全なドキュメントで、無料で使用できます。\n生成されたコードの各行は、オープンソースであり、GPLライセンスの下で公開されます。\nYouTube.comに投稿された動画を閉じる",
+      "criteria": "オンチェーン契約の理解と使用をサポートするドキュメント。\nオフチェーンコードの理解と使用をサポートするドキュメント。\nHLRのマイルストーン1から成る結論。\nテストネット取引の成功.",
+      "report": "リクエストしたように、f11-close-out-revised.md をアップデートして、いくつかの見出しが欠落していたことを確認しました。 クローズアウトビデオでしたが、ドキュメントのクローズにも含まれていませんでした。 現況中です。 プロジェクトの完了後、この要約を数か月後に配信する問題がある場合は、Catalystチームと協議します。 私たちが独自のKPIに満足していたが、Catalyst定義されたものには対処されていないため、追加作業の予期しない量でした。\n次回もレビューにお時間をいただきありがとうございました!\n参照に必要なリンクは次のとおりです。\nA. クローズアウト要約: https://github.com/paideiadao/paideia-cardano-contracts/blob/main/f11-close-out-revised.md\nB. デモビデオ: https://www.youtube.com/watch?v=pM1USHL438A\nC. クローズアウトビデオ: https://www.youtube.com/watch?v=azO9lFTHmbc"
+    }
+  ]
+}

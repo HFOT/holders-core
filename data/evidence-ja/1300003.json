@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・研究・準備ツール:プロジェクトの実装手順を調査し、正確なロードマップを提供します。 AIトレーニングモデルとシステム運用フロー図の選択オプションを提供します。\n・Govtools、IntersectのソースからCardanoガバナンスに関するデータの収集と処理:Cardano Constitution、CIP 1694、Cardanoガバナンスの概念などのドキュメント...",
+      "criteria": "・チャットボット開発からプロジェクトロードマップ分析テーブル、Telegramへの統合、各作業項目にチャットボットの展開、想定時間、各作業に必要な説明など\n・チャットボットのトレーニングモデルを選択するためのシステム運用フローチャートと基準\n・加工したデータソースの合成、データのフィルタリング、抽出(テキストファイル)",
+      "report": "Dear MRメンバーは、プロジェクトのマイルストーン1の結果です。\n・プロジェクト実装ロードマップ解析ファイル:https://docs.google.com/spreadsheets/d/1DfAFGHYa9qh2EwagEsfpADBVqSa0fq-MkebXPwOINKE/edit?usp=sharing\n・チャットボットトレーニングモデルを選択するためのシステム運用フロー図と基準へのリンク: https://docs.google.com/document/d/1OqJxpFksisHeOqVy5XEskYWyNq3rFIrMD3IvV-mQH0k/edit?usp=sharing\n・加工データへのリンク(データスクレイピング方式) https://drive.google.com/drive/folders/1OXjDoN-Lz V VcahfIaxHUznQdJYz1S7?usp=drive link"
+    },
+    {
+      "no": 2,
+      "promise": "・加工データからAIチャットボットを構築:フィルタリングデータと訓練データ\n・データの適正化、精度向上\n・チャットボットとしてTelegramに統合 ロゴ、背景、フォント、アイコンを追加することでチャットボットのUIを改善\n・テストと改善 - 研究者、テスター、開発者として5名で、チャットボットのテストに参加するコミュニティの最低15名が参加",
+      "criteria": "・質問に答えるチャットボットの完全トレーニングと構築\n・完全なデータの改良、すべてのリストされた精度と損失の指標が完全に文書化され、トレーニングと検証データセット、BLEU(バイリンガル評価のUnderstudy)、シーケンス損失(CTC損失)、およびROUGE、METEOR、クロスエントロピーの損失、平均的な平方されたエラー(MSE)または絶対エラー(EMAE)などの冗長措置が測定されるように、意図したメトリックから許容される閾値を満たし、\n・テレグラムチャットボットインターフェイスは、任意のフォーマットエラーなしで明確に提示されます\n・テストインのドキュメント",
+      "report": "Dear MRメンバーは、プロジェクトのマイルストーン2の結果です。 (2)\n・動画はAIのトレーニングモデルを提示し、動作メカニズムをシミュレートします。\n\nhttps://drive.google.com/file/d/1nijbort4vdUgUReBWE0K2nYSl9AYtpPj/view?usp=sharing\n・データの改良と精度の改善に関する文書の報告の進捗:\n\nhttps://bbo.gitbook.io/bbo technical documentation/model-evaluation-report\n・Telegramでチャットボットへのリンク\n\nhttps://t.me/知事CardanoBot\n・試験・改善進捗報告へのリンク\n\nhttps://bbo.gitbook.io/bbo technical documentation/testing-demo\n・Githubへのリンク\n\nhttps://github.com/ADA-BAMBOO/AI CHATBOT\nhttps://github.com/ADA-BAMBOO/Interface ChatbotBBO\nhttps://github.com/ADA-BAMBOO/API ChatBot BBO"
+    },
+    {
+      "no": 3,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ\n・実際の環境で安定的に操作できるTelegramプラットフォーム上のDeployチャットボット\n・チャットボットを使ってドキュメントを作成\n・プロジェクトをオープンソース化するためのGithub\n・複数のプラットフォーム間でチャットボットマーケティングの取り組みが含まれている場合があります。\n\n・テレグラム:カルダノエコトーク\n・X:竹研究室\n・Facebook:Cardanoニュース - ADA竹\n・アジア、LATAM、SWARM、インターセクトなどのカルノコミュニティ.",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n・Telegram chatbotは、チャットボットを使用する際の問題もなく、質問の難しさに応じて5〜20秒以内に回答を送信し、複数のユーザーを同時に使用し、常にオンラインである\n・チャットボットの利用方法に関する文書化により、視聴者の明確で分かりやすいプレゼンテーションが可能\n・GithubオープンソースプロジェクトとCardano開発者コミュニティへのコードコントリビュート\n・Cardanoコミュニティへのマーケティング活動の推進 保証最小2kビュー、200の相互作用",
+      "report": "Dear MRメンバーは、プロジェクトのマイルストーン3の結果です。\n・最終報告書へのリンク\n\nhttps://bbo.gitbook.io/bbo technical documentation/project-close-out-report\n・最終クローズアウト映像へのリンク\n\nhttps://www.youtube.com/watch?v=7sqWE9HXOlA&t=1\n・チャットボットの利用方法に関するドキュメントへのリンク\n\nhttps://bbo.gitbook.io/bbo technical documentation/chatbot-user-guide\n・プロジェクトのGithubページへのリンク\n\nコードベース: https://github.com/ADA-BAMBOO/AI CHATBOT\nインターフェイス: https://github.com/ADA-BAMBOO/Interface ChatbotBBO\nAPI: https://github.com/ADA-BAMBOO/API ChatBot BBO\n・Cardanoコミュニティのプロダクトマーケティングの証拠へのリンク、チャットボットの展開をユーザーに表示し、チャットボットをアクションでリンク\n\nhttps://docs.google.com/spreadsheets/d/1BOsVR7 M8egCbg714R7IUQmICRko10zMPwdNMgHWbjs/edit?usp=sharing\nhttps://t.me/知事CardanoBot\n・AIチャットボット応答時間結果の証明\n\nhttps://drive.google.com/drive/folders/1hROWSD8pNLAIL7BTFWKMSfPDG8yqR4wL?usp=drive link\n・ユーザー活動の推進\n\nhttps://docs.google.com/document/d/15UkQdHNGjzW3cJmA8DT4cVdndElDPi9Xgajx6TlOKlA/edit?usp=sharing"
+    }
+  ]
+}

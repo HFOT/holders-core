@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・ヘッドライフサイクルの基本: openHead() と closeHead() とイベントサブスクリプションの Browser-native TypeScript SDK 。\n・ヘッドオープン/クローズ、ドキュメントサイトで使用されるメインネット/testnet txs に署名するためのウォレット統合(CIP-30ブラウザウォレット).",
+      "criteria": "・ブラウザからテストネット上にハイドラヘッドを開閉するビデオフォーマットでデモを行い、ウォレットプロンプトと成功した確認が記録されます。\n・SDKは、タイプされたAPIやスニペットなど、v0.1.0として公開しました。\n・Docsサイトは、入門、ヘッドベーシック、ウォレットセットアップページでライブ",
+      "report": "ハイドラ・マーガーのM1にPoAを提出するのを幸せに\n\nA. 出力: ヘッドライフサイクルの基本を持つブラウザネイティブタイプスクリプトSDK: openHead() と closeHead() とイベントサブスクリプション。\n受諾条件: Docs サイトは、入門、ヘッド ベーシック、ウォレットのセットアップ ページでライブ\n証拠: https://github.com/no-witness-labs/hydra-sdk/blob/catalyst/milestone-1/milestone-1/milestone-1.md\nB. 出力: ウォレットの統合(CIP-30ブラウザウォレット)は、ヘッドのオープン/クローズ、ドキュメントサイトで使用されるメインネット/テストネットのtxを署名します。\n受諾条件: ブラウザからテストネットでハイドラヘッドを開閉するビデオフォーマットでデモ、ウォレットプロンプトと成功した確認が記録されています。\n証拠: https://youtu.be/4kr-3EuYZ10\n証拠: https://github.com/no-witness-labs/hydra-sdk\n\nRepo は https://github.com/no-witness-labs/hydra-sdk にあります。\nブラウザとCLI:https://github.com/no-witness-labs/hydra-sdk/blob/catalyst/milestone-1/milestones/milestone-1.md\nデモ付きのビデオは、https://youtu.be/4kr-3EuYZ10で見つけることができます\nドキュメントサイト:https://no-witness-labs.github.io/hydra-sdk/docs/"
+    },
+    {
+      "no": 2,
+      "promise": "・Hydraトランザクションの送信とHydra UTXOのクエリを型応答とストリーミングの更新で実装します。\n・WebアプリからフルヘッドのライフサイクルコントロールをSDKにコミット/ファンアウトヘルパーを追加。\n・開発例:実行可能なサンプル(transfer、mint/burn、シンプルな状態更新)、テストネット検証とエラー処理.",
+      "criteria": "ハイドラ提出試験\n・Automated test は、ライブハイドラヘッドに成功したトランザクション投稿を実証します。\n・動画形式での証拠には、トランザクションログや端末出力が有効なトランザクションの送信とHydraヘッド内の確認を含み、予想されるオンチェーンエフェクト(例えば、UTXOはHydra環境内で表示された変更)を生成します。\n\nUTXO クエリ精度\n・Hydra ヘッドに対するクエリーは、トランザクション後に予想される状態にマッチする UTXO データを正しく返します。\n\nブラウザのデモ機能\n・ブラウザベースのデモが利用可能で、ユーザーは以下が可能になります。\n・ヒドロを抑える",
+      "report": "A. 出力: [出力Aとして配達されたもの]\nHydraトランザクションの送信とHydra UTXOのクエリを実装し、型応答とストリーミングの更新を行います。\n受入条件: [出力Aの補完基準]\n自動化されたテストは、ライブハイドラヘッドに成功したトランザクションの送信を実証します。\n証拠: [出力Aとその受諾基準を確認するリンク]\nhttps://www.youtube.com/watch?v=9zrmpwSzaQ0\n\nB. 出力: [出力Bとして配達されたもの]\nウェブアプリからフルヘッドライフサイクル制御用のSDKにコミット/ファンアウトヘルパーを追加しました。\n受諾基準:[B出力の完了基準]\nHydra の頭部に対する Queries は、トランザクション後に予想される状態に一致する UTXO データを正しく返します。\n証拠: [出力Bとその受諾基準を確認するリンク]\nhttps://www.youtube.com/watch?v=I-Yw0Oj2Xz8\n\nC. 出力: [出力Cとして渡されたもの]\n開発者の例: testnet の検証とエラー処理による実行可能なサンプル(transfer、mint/burn、シンプルな状態更新)。\n受入条件:[出力Cの補完基準]\nHydra トランザクションの送信と UTXO クエリを示す CLI コマンド (PDF レポートで配信されるスクリーンショット) のデモ。\n証拠: [出力Cとその受諾基準を確認するリンク]\nCLIコマンドのビデオデモ:https://www.youtube.com/watch?v=OllmffucaIs\nhttps://drive.google.com/file/d/17iaLjFISXiarHV2yzlmG7Y K1ZEkbNSK/view?usp=sharing\n\nD. 出力: [出力Dとして配達されたもの]\nGitHub repo は v0.2.0 のタグです。\n受入条件:[出力Dの補完基準]\nv0.2.0 タグは github の最新のタグとして受け入れられます\n証拠: [出力Dとその受諾基準を確認するリンク]\nhttps://github.com/no-witness-labs/hydra-sdk/releases/tag/v0.2.0"
+    },
+    {
+      "no": 3,
+      "promise": "・シームレスなデータアクセスのためのHydraProviderインターフェイスの定義\n・クロスブラウザ(Chromium/Firefox/WebKit)とクロスプラットフォーム(Linux/Mac/Windows)を含む包括的なテストネットのテスト\n・参考文献(ガイド、トラブルシューティング)",
+      "criteria": "・少なくとも2つのプロバイダアダプタの作業\n・自動互換性行列パスとレジリエンステスト(ドロップ/リスタートアジダノード、ウォレット再接続)パス。\n・プロバイダのドキュメントとデモアプリのURLでv0.3.0を消去する\n・ドキュメントには、HydraProviderとシームレスなデータアクセスを使用する方法を含むv0.3.0からのすべての新機能が含まれている必要があります",
+      "report": "A. 出力: シームレスなデータアクセスのための HydraProvider インターフェイスを定義します。\n受諾条件:provider docs とデモアプリ URL で v0.3.0 をリリース\n証拠: https://github.com/no-witness-labs/hydra-sdk/releases/tag/v0.3.0\nB. 出力:クロスブラウザ(Chromium/Firefox/WebKit)およびクロスプラットフォーム(Linux/Mac/Windows)を含む包括的なテストネットテスト\n受諾条件:自動互換行列パスとレジリエンステスト(ドロップ/リスタートアジダノード、ウォレット再接続)パス。\n証拠: https://www.youtube.com/watch?v=9zrmpwSzaQ0\nC. 出力: 精製された文書(ガイド、トラブルシューティング)\n受諾条件: ドキュメンテーションには、HydraProvider およびシームレスなデータアクセスを使用する方法を含む v0.3.0 のすべての新しい機能が含まれている必要があります。\n証拠:\nプロバイダー: https://no-witness-labs.github.io/hydra-sdk/docs/providers/providers\nテスト: https://no-witness-labs.github.io/hydra-sdk/docs/providers/testing\n制限: https://no-witness-labs.github.io/hydra-sdk/docs/providers/limits\n生産チェックリスト: https://no-witness-labs.github.io/hydra-sdk/docs/providers/production-checklist\nD. 出力: ホストされたデモアプリ URL は、プロバイダのスワップと回復動作を実証します。\n証拠: http://178.63.100.104/\nE. 出力:クロスブラウザのレポートを含むテストネットのテストは見つけることができます\n証拠: https://github.com/no-witness-labs/hydra-sdk/actions/runs/28190608296"
+    },
+    {
+      "no": 4,
+      "promise": "・v1.0.0 リリースは、バージョンアップされた API、変更ログ、署名済みのアーティファクトでnpmに公開\n・完全なドキュメント:APIリファレンス、ガイド、例、および「独自のHydraアプリの構築」チュートリアル\n・開発プロセス、学習、今後の作業の推奨事項に関する報告書の公開\n・Xアカウントの全ての開発とアップデートを定期的に共有: https://x.com/nowitnesslabs\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・npm i hydra-manager をインストール v1.0.0\n・Demoアプリは、ドキュメントへのリンクや、エンドツーエンドフローを展示します。\n・Docsサイトには、リリースノート、バージョンアップAPI、および例が含まれます。\n・学習とデモで受けた解答レポート\n・クローズアウトレポートには、プロジェクト全体の展開のためのX-Socialのトータルインタラクションが含まれています\n・最終クローズアウトレポートは、プロジェクト触媒ファンド14のガイドラインに従って公開および書面によるものです。\n・最終クローズアウト映像は、Project Catalyst Fund14のガイドラインに従って公開・掲載されています",
+      "report": "A. 出力: v1.0.0 リリースは、バージョン化された API、変更ログ、および署名されたアーティファクトで npm に公開\n受諾基準:npm i hydra-manager は v1.0.0 をインストールします。\n証拠:npm i @no-witness-labs/hydra-sdk → 署名付きnpmの1.0.0\nB. アウトプット:APIリファレンス、ガイド、例、および「独自のHydraアプリのビルド」チュートリアル\nアクセシビリティ基準:Docsサイトには、リリースノート、バージョンアップされたAPI、および例が含まれます。\n証拠: https://no-witness-labs.github.io/hydra-sdk/docs/\nC. 出力:独自のHydraアプリガイドを作成\n受諾の基準:独自のHydraアプリガイドを作成することはすぐに利用できます\n証拠: https://no-witness-labs.github.io/hydra-sdk/docs/tutorial/\nD. アウトプット: 開発プロセス、教習、今後の作業の推奨事項をカバーするクローズアウトレポートには、X-社会的相互作用の合計が含まれており、プロジェクト触媒基金14のガイドラインに従って公に利用でき、書かれています\n受諾条件:学習したレッスンとデモで提供されるクローズアウトレポート\n証拠: https://github.com/no-witness-labs/hydra-sdk/releases/download/v1.0.0/Hydra-Manager-1400085-Closeout-Report.pdf\nE. 出力: 最終的な閉鎖のビデオ\n受諾条件:最終クローズアウトビデオは、プロジェクト触媒ファンド14のガイドラインに従って公開され、書かれています\n証拠: https://youtu.be/Th3 NDU4itQ - この動画はyoutube.comに公開されています"
+    }
+  ]
+}

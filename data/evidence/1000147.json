@@ -1,0 +1,31 @@
+{
+  "title": "Paper Wallet Change Receipts - ( We have minimum viable products! )",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 13500,
+      "promise": "In this phase, Moneta and MintMatrix will outline the technical architecture of the system design. Additionally, MintMatrix shall deliver the preliminary scripts to automatically generate the wallets as well as sample templates. \nDeliverables:\n・PDF/DOC: System design document\n・Scripts: python + bash to generate wallets\n・PDF/PNG: A base paper wallet template design",
+      "criteria": "Requirements:\n・Python script shall produce PDF or PNG files of wallet template\n・PDF or PNG files generated from python script shall include wallet/redemption information\n・Bash script shall generate new wallet seed phrases\n・Test scripts shall validate scripts work as intended\n・An end user shall be able to redeem Cardano or native asset from the generated paper wallet",
+      "report": "・Code Delivery + Paper Wallet Template (Open Repository): https://github.com/MintMatrix/paper-wallet-printer\n・Wallet Generation Demonstration: https://youtu.be/FQhC8-pufAc\n・System Overview Document: https://docs.google.com/document/d/1lTCWTvjNVqNOUrmqLhBFuDKnrXcvwMN8yQGLiU5tNsw/edit?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 13500,
+      "promise": "Moneta will be responsible for developing a device where a business owner has the ability to punch in numbers into a keypad and print out a QR code. The QR code can be a simple link for now, as full system integration will come in the next milestone. The original proposal intended integration with their Clover app, however many unforeseen obstacles led to deprecation of their application. As a result, Moneta has pivoted to constructing their own custom hardware for full granular control of the entire system.\nDeliverable:\n・A custom point-of-sale device built from a raspberry pi with an input keypad that can connect to wifi and print QR codes using a thermal printer",
+      "criteria": "Requirements\n・A user shall be able to input a desired amount to issue digitally using a keypad\n・A screen shall show the user's input\n・A user shall be able to print out a QR code\n・The user input shall be print out",
+      "report": "Moneta completed development of QR code printer with keypad and display.\nDemo Video: https://www.youtube.com/watch?v=Qda4C13onvA\n\nNext step will be to make the QR code redeemable with Cardano.",
+      "kinds": [
+        "video"
+      ],
+      "links": 1
+    }
+  ]
+}

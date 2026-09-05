@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・フレキシブルな料金構成、ビルトイン・ストラスリー、ザップ・イン、ザップ・アウトをサポートするプール・スマート・コントラクト。\n・コンパイルの完了や動画の完成\n・プールスマートコントラクトのドキュメント。\n・プールスマートコントラクトのユニットテスト",
+      "criteria": "・プールスマートコントラクトは、オープンソースのGitHubリポジトリで提供されます。\n・プールスマートコントラクトは、プールNFTトークンをマイニングすることで、新しいプール、スワップ、提供、流動性を撤回し、自己資金を引き出し、プールに寄付することができます。 プール作成者はスワップと財務手数料を制御でき、契約はzap-insとzap-outsをサポートしています。\n・プールのスマートコントラクトは、提供されたビルのドキュメントを追って、エラーや警告が存在しないというビデオショーを正常にコンパイルし、ビデオショーを成功させました。 ビデオはまた、すべてのユニットテストが通過していることを示しています\n・文書化には、期待される入力、出力、および",
+      "report": "証拠:\n・プールスマートコントラクトコードでGithubリポジトリへのリンク:https://github.com/WingRiders/rapid-dex-contracts\n・ビルドの指示へのリンクと、成功したコンパイルとユニットテストを渡すビデオ:\n・手順: https://github.com/WingRiders/rapid-dex-contracts/blob/master/README.md\n・録画: https://github.com/WingRiders/rapid-dex-contracts/blob/master/build-test-recording.gif\n・文書化されたスマートコントラクトへのリンク:https://github.com/WingRiders/rapid-dex-contracts/blob/master/validators/pool.ak"
+    },
+    {
+      "no": 2,
+      "promise": "・コア DEX 操作用のユーティリティーメソッドを公開する初期 SDK パッケージで、外部プロジェクトへの統合に適しています。\n・モジュール構造下で内部アーキテクチャを更新。\n・SDKドキュメント\n・SDKパッケージの公開、映像の公開\n・一般的なワークフローでSDKの使用を実証する実装(既存のフロントエンドを例として使用)\n・インタラクションのSDKや、インタラクションの動画などを使ったCLIツール.",
+      "criteria": "・SDKはオープンソースのGitHubリポジトリでご利用いただけます。\n・建築図とリポジトリ構造は、モジュール式の内部アーキテクチャを明確に分離したコンポーネントに反映します。\n・SDKのドキュメントには、各メソッドの明確な例が含まれています。\n・SDKパッケージをインストール可能で、動画表示が可能。\n・レファレンス実装では、SDK 呼び出しによるエンドツーエンドの実行や、モックやテストネットのデータで実行できます。\n・CLI ツールは、SDK がサポートするワークフローや、動画表示などを実行できます.",
+      "report": "・GitHubリポジトリへのリンク:https://github.com/WingRiders/rapid-dex/tree/main/sdk\n・更新されたアーキテクチャ図へのリンク: https://github.com/WingRiders/rapid-dex/blob/main/docs/architecture.md\n・SDKパッケージのドキュメントへのリンク:\n・コア: https://github.com/WingRiders/rapid-dex/tree/main/sdk/core\n・React: https://github.com/WingRiders/rapid-dex/tree/main/sdk/react\n・SDKパッケージの公開や、動画の配信の成功事例へのリンク:\n・コア: https://www.npmjs.com/package/@wingriders/rapid-dex-sdk-core\n・React: https://www.npmjs.com/package/@wingriders/rapid-dex-sdk-react\n・動画:https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-2-sdk-installation.mp4\n・ワークフローを正常に実行する参照実装の記録されたデモへのリンク: https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-2-sdk-reference-implementation.mp4\n・CLIツールのソースリポジトリと成功した実行のビデオを開くリンク:\n・リポジトリ: https://github.com/WingRiders/rapid-dex/tree/main/sdk/core/src/cli\n・動画:https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-2-cli-demonstration.mp4"
+    },
+    {
+      "no": 3,
+      "promise": "・SDKメソッドを追加または更新して、M1で提供される3つのプロトコルレベルの機能をサポート。\n・tRPC API エンドポイントを提供するサービスの更新をバックエンドします。\n・フロントエンドの更新により、バックエンドやSDKによる新機能とのエンドツーエンドのやり取りが可能.",
+      "criteria": "・フロントエンドは、テストネット上で3つのプロトコルレベルの機能を含むワークフローを正常に実行できます。\n・TRPCのエンドポイントは、期待した結果が返り、無効な入力を優雅に処理します。\n・SDKは、直接契約を要求することなく、新しい機能とやり取りするための、開発者に優しい方法を公開しています。\n・CI/CDパイプラインへの変更、文書化、統合.",
+      "report": "・SDK/FE/BE コードと関連するコミットのリポジトリへのリンク:\n・リポジトリ: https://github.com/WingRiders/rapid-dex\n・新機能を実装するコミット: https://github.com/WingRiders/rapid-dex/compare/16ba4eb5fd27585e4509c7962b345ffebf9151...メイン\n・SDKパッケージの更新とバックエンドのデプロイログ:\n・SKDパッケージの更新:https://github.com/WingRiders/rapid-dex/tree/main/sdk\n・バックエンド展開 https://github.com/WingRiders/rapid-dex/actions/runs/22303679554 (ログを参照するには、いくつかのステップをクリックしてください)\n・テストネット上の機能とフロントエンドの相互作用を示すスクリーンショットと録音:\n・コンフィギュラブルなスワップ手数料とtreasuryで新しいプールの創造: https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-3-new-pool.png\n・プールにスワップ手数料と理由を設定したスワッピング: https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-3-swap.png\n・ZapIn: https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-3-zap-in.png\n・ZapOut: https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-3-zap-out.png\n・出典:https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-3-withdraw-treasury.png\n・動画:https://youtu.be/ClL-Rds Rl4\n・新しいエンドポイントで更新されたAPIドキュメントへのリンクが共有されます。 ドキュメントには、Milstone 3 の更新のために行われた主な変更を説明するセクションがあります。\n・API ドキュメント: https://github.com/WingRiders/rapid-dex/blob/main/backend/api.md\n・マイルストーン3用修正: https://github.com/WingRiders/rapid-dex/blob/main/backend/api.md#response-type-changes-for-flexible-swap-fees-treasury-fees-and-zap-inout\n・バックエンド、SDK、フロントエンドのインテグレーションを自動テスト結果を渡す\n.・自動テスト結果: https://github.com/WingRiders/rapid-dex/actions/runs/22303679550/job/64517457681 ('Run test' をクリックしてどのテストが実行されたかを確認します)\n・アプリケーションへのリンク:https://rapid-dex."
+    },
+    {
+      "no": 4,
+      "promise": "・KPISの触媒と対処方法に関する2/3ページプロジェクトのクローズアウトレポート\n・プロジェクトの成果と成果物をクリアするショートプロジェクトクローズアウトビデオ.",
+      "criteria": "・プロジェクトクローズアウトレポートPDFは、一般に共有され、触媒要件に準拠しています。\n・プロジェクト中にキーパフォーマンス指標(KPI)を選定\n・KPIがどのように出会ったのか、なぜそうでなかったのかを説明します。\n・商品・サービスの次期計画を概説する。\n・プロジェクトの成果や成果物を解き明かすプロジェクトクローズアウトビデオは、一般に共有され、触媒要件に準拠しています.",
+      "report": "プロジェクトRapid DEX:Mainnet-Ready、Butter-Free、Advanced機能に関するすべての関連リンクをご覧ください。\nプロジェクトクローズアウトレポートへのリンク:\nhttps://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/project-close-out-report.pdf\nクローズアウトビデオへのリンク:\nhttps://www.youtube.com/watch?v=nfC3jKDGc9c\nその他の関連するプロジェクトソースまたは文書へのリンク:\nアプリケーション: 急速な DEX アプリ\nメインリポジトリ: GitHub – 急速デックス\nドキュメント\n・建築文書\n・APIドキュメント\n・建物の指示\n\n証拠とテスト\n・コンパイル&テスト録画\n・デモビデオ\n・トランザクションチェインテスト\n\n最高の点、\nWingRidersチーム(編集)"
+    }
+  ]
+}

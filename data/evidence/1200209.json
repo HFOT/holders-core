@@ -1,0 +1,74 @@
+{
+  "title": "Snekx: Cardano’s Best Platform to Kickstart and Promote New Communities and Digital Assets",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "・UX/UI design for the various components of the platform.\n・Token minting capabilities directly on Snekx with the new website.\n・New tokens alerts are integrated with SNEKbot and Snekx.",
+      "criteria": "Detailed UX/UI Customization Options\n・Ensure that the UI design clearly defines service selection and customization options for all future features, with specific focus on usability and user experience.\n\nToken Creation Feature\n・Implement and verify a feature that allows users to create new tokens swiftly and accurately, with all necessary functionalities and user interface elements working as intended.\n\nHomepage Implementation\n・Develop a new homepage that effectively showcases Snekx services and platform statistics, ensuring it is informative and visually appealing.\n\nComprehensive Internal Tes",
+      "report": "https://www.figma.com/design/8vWCU7SG4h5iknqOUb1ysC/%F0%9F%90%8D-Snek?node-id=4874-496\nInternal testing report\nWe will demonstrate the full flow of a person using SnekX from minting a token, experiencing the twitter post coverage, the verifications on GitHub and then creating a pool with the token and burning partial of the LP tokens they received.\nPayment transaction hash: 7df48f3178d40f333a2681fb8e13238164e6498cbd7131fe760fea778ffc9385 \nSuccesful mint transaction hash:\n510ea5096af235fb76989dd20cfcb4cb396ec9614903e80a6952d8f56571751a\n<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA4QAAALGCAYAAAAdqV/oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFxEAABcRAcom8z8AAP+lSURBVHhe7L0FfFzXmb/f//52t+1ut93iltsUw9gkbdq0KSTllJnCzHGYHTLEzMwMkllmZrYsW8wsCy0Gv//zPaOxZXkkS7YcS5rn6edbWZqZe+/ce2PPo/ec97zHAAAAAAAAICxBCAEAAAAAAMIUhBAAAAAAACBMQQgBAAAAAADCFIQQAAAAAAAgTEEIAQAAAAAAwhSEEAAAAAAAIExBCAEAAAAAAMIUhBAAAAAAACBMQQgBAAAAAADCFIQQAAAAAAAgTEEIAQAAAAAAwhSEEAAAAAAAIExBCAEAAAAAAMIUhBAAAAAAACBMQQgBAAAAAADCFIQQAAAAAAAgTEEIAQAAAAAAwhSEEAAAAAAAIExBCAEAAAAAAMIUhBAAAAAAACBMQQgBAAAAAADCFIQQAAAAAAAgTEEIAQAAAAAAwhSEEAAAAAAAIExBCAEAAAAAAMIUhBAAAAAAACBMQQgBAAAAAADCFIQQAAAAAAAgTEEIAQAAAAAAwhSEEAAAAAAAIExBCAEA4JxQV19vJWXllltQZAVFpe77hsZHAAAAoLOAEAIAnGcaGhq8NKVl5lp6Vl6rSc3ItezcQquqrml8declx72n2YvW2fO9x9mgcfMtv7Ck8REAAADoLCCEAADnmfLyKpswK8p6DZth/UfPsX6t5O2h023s9KWWnJ5jx44da9xC5yTNCezQiZH2lwffsKfeGGVZTmQ7O/lHSmzj9gO2bM0O27r7sFVUVDU+AgAA0D1BCAEAzjPZeYX2Qu9xdttjve2OJ/raPx552/75aK+Q+cO9r9mTr420/TFJ1tDQuYUwO7/QpkeutqedDPYbNcfLVmcnNinDSflce/atsTZyyiIrKCxtfAQAAKB7ghACAJxHVOU7lJhmL78zwR58fpANHDvPS9TkuStCZuyMpTZv6UbLzCno9BXC8opKO5yYbhu2HbBd++Otoqq68ZHOS0x8qr0+eJo9/OIQGzhmbpeQWAAAgLMBIQQAOI/U1tXZ1j2H7PleY63H66Ns5/5Y//OqmtoWUmPVtXXWcIwGLeeC+JRMe3vYTHvslWE2ZHyEFZeUNz4CAADQPUEIAQDOI5VV1Ra1fqc9+/YYe2PQNItPzmh85NxQ62RS+1TUBTRIVVWNlZaVW3HpUd8ZtKKy2knnyRVIVSQr3fPKjlZYSWm5lZVX+u9bqlTq53V19VbtRLbG7bf58/SY9qNjqW84Ibg17vnlFVX+OBT9Wa9vifr6Bt9kR9vRvlqrnKqBT3V1rdtvlX9ukFp3LNrG3phEe3PwdC+EqhCmZ+VbpTtGnbeW0NBdvfa",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 75000,
+      "promise": "Establishment of Token Trading Pool\n・Successfully establish token trading pools on Splash, Sundae V3, and Minswap V2, ensuring they are fully operational and integrated with the platform.\n\nIntegration of New Pool Alerts\n・Implement and integrate new pool alert functionalities between SNEKbot and Snekx, providing users with real-time notifications about new token pools. (As this feature already exists in the SNEKbot infrastructure)",
+      "criteria": "Successful Pool Creation\n・The feature must allow users to create a token pool on the DEX swiftly and successfully, with at least 95% of pool creation attempts completing without errors.\n\nFunctionality and Performance Testing\n・Internal testing must confirm that all functionalities perform correctly in at least 95% of test cases.\n・Each function within the pool creation feature must be tested 10 times, with a success rate of 100% in these trials.\n・Performance metrics should show that the pool creation process takes no longer than 30-60 seconds under normal conditions. (Subject to conditions)\n\nUse",
+      "report": "Video demonstration of token pool creations:\nhttps://streamable.com/c0gzva\nFeature is now live on this page and functioning perfectly:\nhttps://snekx.io/pool",
+      "kinds": [
+        "other"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 60000,
+      "promise": "・Seamless burning and/or locking of liquidity pool tokens for a fraud-proof launch.\n・New LP burn alerts are integrated with SNEKbot and Snekx.\n・Metadata changes are integrated directly on the app without the need of third party assistance.",
+      "criteria": "Functionality and Performance of LP Token Management\n・The system must enable users to burn or lock their LP tokens with a success rate of 95% or higher, measured through multiple (10+) test cases.\n・Burning or locking LP tokens should complete within 10-60 seconds in 90% of the test cases.\n\nAccuracy and Reliability of LP Burn Alerts\n・LP burn alerts integrated with SNEKbot and Snekx must function correctly in 95% of test scenarios, sending notifications within 5 seconds of the burn event.\n\nEfficiency of Metadata Changes\n・The app must allow users to make metadata changes (ticker, description, tok",
+      "report": "Documentation showing Internal testing reports validating functionality and resolving bugs:\nhttps://docs.google.com/document/d/1bnIdva_KgcCx4nHwJJVwBLLgQhE00ASI/edit?usp=drive_link&ouid=106505023671181718365&rtpof=true&sd=true\n\nVideo proof showing the metadata changes and alerts:\nhttps://streamable.com/i0b170\n\nVideo proof showing the LP token burning:\nhttps://streamable.com/ncwwdf",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 45000,
+      "promise": "Development and Integration of Customized Snapshot Tool\n・Create and integrate a user-friendly tool that allows users to take customized snapshots of blockchain data. \n・This tool should enable users to select specific criteria for snapshots, such as address balances or transaction histories, and download the results in a CSV format without third-party assistance.\n\nDevelopment and Integration of Airdrop Tool\n・Develop and integrate a tool that enables users to plan and execute large-scale airdrops from a CSV file containing a list of addresses. \n・The tool should support automated distribution of tokens based on the provided list and criteria, ensuring efficient and error-free airdrops.",
+      "criteria": "Functionality of Customized Snapshot Tool\n・The snapshot tool must allow users to create customized snapshots with specific criteria and download the results as a CSV file. \n・This functionality should be tested with at least 100 test cases, achieving a 95% success rate in generating accurate snapshots.\n\nEfficiency and Reliability of Airdrop Tool\n・The airdrop tool must enable users to plan and execute airdrops using a CSV file with a success rate of 95% or higher, validated through 100 test cases. \n・The tool should complete the airdrop process within a predefined time frame (e.g., within 10 minu",
+      "report": "Airdrop tool user testing attached below:\nhttps://docs.google.com/document/d/15ByEaiwcS8EFhB_rOdKBLdz-OVBvCRt4/edit?usp=sharing&ouid=106505023671181718365&rtpof=true&sd=true\nAirdrops:\nhttps://drive.google.com/file/d/1LVIvDZYTeNgIbq37ozgjOK5kVk9bb41F/view?usp=sharing\nhttps://drive.google.com/file/d/1_v9zMzzPugHO-y1skoy4eaXXE6bfDTBU/view?usp=sharing\nhttps://drive.google.com/file/d/1FLkj68Z2TXuFZ9Ng-al3iWH_MIkMMjP1/view?usp=sharing\nhttps://drive.google.com/file/d/1N9Z-YouMOuxlvy400lCetVeANhlebHv-/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 45000,
+      "promise": "・Final close-out report\n・Final closeout video\n・Complete and Optimized Platform: The platform is fully operational with all intended features including advanced token minting capabilities, security enhancements, and user-friendly interfaces.\n・Comprehensive Ecosystem Integrations: Successful integration with multiple Cardano DEXes and trusted partners, ensuring broad market access and functionality.\n・Community and Support Infrastructure: A fully developed support system to aid users and promote continuous engagement.",
+      "criteria": "Final Closeout Report and Video\n・The final closeout report and closeout video must be publicly available on the GitHub and to the Catalyst team.\n\nPlatform Performance\n・The platform must demonstrate high performance with specific metrics:\n・Token Minting Speed: Token minting operations must complete within 5-60 seconds in 95% of test cases.\n・Error-Free Operations: Token minting must be error-free in 98% of test cases across varied conditions, including high network traffic and low latency environments.\n・Security: The platform must pass a comprehensive security audit, confirming that there are no",
+      "report": "Audit completion and proof:\nhttps://docs.google.com/document/d/1PmG_9pTBHtEnH1zVS4ZAO_c30stnAay0X43DROq8jmw/edit?usp=sharing\n\nOperational readiness report:\nhttps://docs.google.com/document/d/1on7noV8Vg25x7a0LC55R453_ivocDEhGMi7z2h0yl_I/edit?usp=sharing\n\nFinal closeout report & user feedback compilation:\nhttps://docs.google.com/document/d/1_UrmUiCd7nCC-CyZhJZxUzoxRaz2Rj87U7dAfLLJRUA/edit?usp=sharing\n\nPartnership with DexHunter:\nhttps://docs.google.com/document/d/1gz7XUk1NNn-ka9FjSfa7hS0jXSfa2lT6GJGBVpA0YCw/edit?usp=sharing\n\nPartnership with SundaeSwap:\nhttps://docs.google.com/document/d/1MnKYE859KDE-CP4T2qfIm4uPn7ggkMQjs1BTBLpzcuA/edit?usp=sharing\n\nPartnership with Splash:\nhttps://docs.google.com/document/d/1l5e3GBulPOpycbERouaRpRqE8kXh5r5sV3RTBFPmjCs/edit?usp=sharing\n\nFinal closeout video uploaded to YT:\nhttps://www.youtube.com/watch?v=WdWsQhqv-AM",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 7,
+      "cut": true
+    }
+  ]
+}

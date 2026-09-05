@@ -1,0 +1,47 @@
+{
+  "title": "Zero-Knowledge (zkSNARK) Voting Protocol on Cardano for DAO Governance [open source]",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 53250,
+      "promise": "・Define the cryptographic primitives and protocols (zk-SNARKs setup).\n・Architecture of the protocol layout and interactions, including:\n・Voter Registration and Anonymity\n・Voting Process\n・Vote Tallying and Verification\n・Outline system infrastructure and user interface design.",
+      "criteria": "・Complete and approved architecture document, including:\n・the complete on-chain voting and validation process.\n・the complete off-chain / backend calculations.\n・Complete and approved cryptographic specifications.\n・Positive evaluation of design prototypes for User interfaces.",
+      "report": "You can find the Milestone 1 Report in the link below, including:\n・zk-SNARK Setup\n・Cryptographic Specifications\n・Protocol Layout for on-chain & off-chain processes:\n・Voter Registration & Anonymity\n・Voting Process\n・Vote Tallying and Verification\n・Off-chain calculations\n・System Architecture & Tech Stack\n・UI Design Mockups\n\nhttps://docs.google.com/document/d/14NLnu0QGxD6YWsk0KHPoVVaD9Q6yDiLMB17vhFQdhJU/edit?usp=sharing\n\n-> The report is also published on our website: https://docs.trustlevel.io/received-grants/cardano",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "14",
+      "cost": 53250,
+      "promise": "Updated SOM according to approved change request of Nov 13:\nAdvanced ZK protocol (build on “Semaphore”) + fully tested smart contracts (in Aiken)\nImplement zk setup:\n・zk-SNARK Circuits: Create cryptographic circuits specifically for voting that verifies both voter eligibility and the correctness of their vote without revealing their identity or choices.\n・Proof Generation and Verification: Integrate semaphore library* for creating and verifying zk-SNARK proofs.\n\nImplement Smart Contracts:\n・Voter Registration Contract: Registration of voters by verifying their zk-SNARK proofs of eligibility and issuing zk-based credentials for voting.\n・Voting & Tally Contract: Verifies zk-SNARK proofs that confirm a valid vote according to the voter’s credential and records the vote anonymously and aggregates votes and computes the final results.\n\nUpdate documentation:\n・An updated system design that reflects the revised approach\n・A brief description of Semaphore along with its technical specification file\n\n*Semaphore was an early POC for zk proofs on Cardano, which has a basic structure that is perfect for voting and whose trusted setup design significantly increases the security of the voting app.",
+      "criteria": "・Tested and validated zk-SNARK setup, including:\n・zk-SNARK circuits\n・On-chain & off-chain mechanism of proof generation & verification\n・Tested and validated smart contracts, including:\n・Voter Registration Contract\n・Voting & Tally Contract\n・Above components are implemented according to the design from phase 1.",
+      "report": "Dear Community,\nbelow are our M2 POAs, including our overview document:\nhttps://docs.google.com/document/d/14TS2ODcyqXMT5ce3pKT1Dq92KxyWrp5CJGhPEgx4IV4/edit?usp=sharing\n\nA. Output: Implement zk setup\nAcceptance criteria: Tested and validated zk-SNARK setup\nEvidence:\n・Semaphore circuits: modp-semaphore-bls12381/circuits\n・Prover and verification keys derived from the MPC: keys\n・Video demonstration: https://drive.google.com/file/d/1cCHhGV2ZIgaxYcJDU46f7n8gfgF7yhxh/view?usp=sharing\n\nB. Output: Implement Smart Contracts\nAcceptance criteria: Tested and validated smart contracts\nEvidence:\n・Folders for on-chain code: \n・Voting App: https://github.com/TrustLevel/ZK-Voting-App/tree/main/src/on-chain\n・Semaphore: https://github.com/Modulo-P/Cardano-Semaphore/blob/main/validators/semaphore.ak\n・Full documentation: https://github.com/TrustLevel/ZK-Voting-App/blob/main/design/SMART_CONTRACT_SPECIFICATION.md\n・Video demonstration of tests: https://drive.google.com/file/d/1PG_UZYGXmJyBAqbyBTOMVujC1twwUaql/view?usp=sharing\n\nC. Output: Update documentation\nAcceptance criteria: \n・An updated system design that reflects the revised approach\n・A brief description of Semaphore along with its technical specification file\n\nEvidence:\n・Updated System Design:\n・https://github.com/TrustLevel/ZK-Voting-App/blob/main/design/SYSTEM_DESIGN.md \n・Semaphore Specifications:\n・https://github.com/Modulo-P/Cardano-Semaphore/blob/main/docs/Research/Research-Semaphore-Modp-09-2024.pdf",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 14
+    },
+    {
+      "no": 3,
+      "month": "15",
+      "cost": 35500,
+      "promise": "Updated SOM according to approved change request of Nov 13:\n\nDeployed application - ready for public testing in Milestone 4\nTasks:\n・Create a frontend for users to create a voting event and to participate in voting events\n・Deploy and host application\n・Integrate backend systems for off-chain computations, this includes:\n・Off-Chain Server: We need to host the APIs for off-chain computations like generating or verifying zk-SNARK proofs and handling data that should not be stored on-chain for privacy reasons.\n・On-chain Interaction Layer to submit transactions to the blockchain, monitor contract events, and query blockchain state.\n・Database Management: We need to store the records of voters and votes.",
+      "criteria": "・Initial version of the zk voting app ready for testing (M4), including:\n・Deployed and hosted frontend & backend\n・On-chain Interactions\n・Off-chain computations\n・Fully functional backend server setup for zk-SNARK proof generation, including:\n・Database management\n・Implemented Cryptographic primitives\n・Above components are implemented according to the design from phase 1.",
+      "report": "Project: ZK Voting App — Cardano-based zero-knowledge anonymous voting\nMilestone 3: Hosted Application (Deployed application — ready for public testing in Milestone 4)\nRepository : https://github.com/TrustLevel/ZK-Voting-App (branch `preview`)\n---\n## Deliverable summary\nThe initial version of the zk voting app is deployed, hosted, and functionally complete, ready for public testing in Milestone 4. \n\n| Surface | URL |\n| Hosted frontend | https://vote.trustlevel.io |\n| Hosted backend API | https://api.vote.trustlevel.io |\n| Source (this milestone) | https://github.com/TrustLevel/ZK-Voting-App/tree/preview |\n| Walkthrough video (simple voting) | https://youtu.be/b8HeAZMSW6s |\n| Walkthrough video (weighted voting) | https://www.youtube.com/watch?v=EuaH2kGwe_0 |\n\nA full end-to-end vote has been confirmed in production: in-browser proof generation → backend MPF nullifier insertion → on-chain proof verification + MPF root check + vote tally. All on-chain tx are on Cardano Preprod Testnet:\n\n 1. Group-NFT Mint: https://preprod.cardanoscan.io/transaction/eb0814806fdae20b1b5bef4427e2f4c1ee00c64ff018ec4f8f046263011a1272\n 2. Semaphore + Voting-NFT Mint — 18:52 CEST:\nhttps://preprod.cardanoscan.io/transaction/381eb4506edf88b1942c3f836a6d4d3285d2f9e348b1b2b8950d1c6866675ebb\n 3. Anonymous Vote (ZK-Proof + Nullifier) — 19:07:17 CEST, 2 Redeemer, Fee 2.10 ₳, Block 4829762:\nhttps://preprod.cardanoscan.io/transaction/3dd103810b62bc628065d42bb81957638fdcd9d890568968236c35344afcb0e7\n---\n\n## Response to Milestone 3 review feedback\nMilestone 3 is the initial release — a deployed, functionally complete application. Advanced\ndevelopment, including refined error handling and further UX polish, is scoped for Milestone 4\n(public testing). Each point raised in the review has nonetheless been addressed:\n\n1. Unit test coverage (backend, tx builder). On-chain validators and the ZK module already\nhad coverage. We added backend unit tests for the auth and voting-event services, plus a\ntransaction-bui",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 36,
+      "cut": true
+    }
+  ]
+}

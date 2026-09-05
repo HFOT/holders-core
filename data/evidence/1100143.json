@@ -1,0 +1,77 @@
+{
+  "title": "Githoney by TxPipe: Dev bounty system using Marlowe contracts, deep integration with Github",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "- A fee mechanism that allows to charge a small amount for each bounty processed\n- A fully branded frontend describing the product and onboarding instructions\n- A support channel for end-users to resolve questions and issues",
+      "criteria": "- Any end-user is able to run the complete lifecycle of a bounty using the services and information publicly available.\n- Reviewer can check on the documentation how the on-chain fee mechanism works.",
+      "report": "Milestone Outputs:\n\nA fee mechanism that allows to charge a small amount for each bounty processed\nFor the sustainability of the product we added two fees. \nFirst, a very small fixed feed of 2 ADA when the bounty is initiated. \nSecondly, a fee of 5% upon the successful completion of the bounty - i.e. if the bounty is not completed, and the Pull Request of the Contributor is not merged, then no fee is paid. \nA fully branded frontend describing the product and onboarding instructions\n\nWe have edited the look and feel of the documentation site so that it looks more premium and polished. The documentation site is visible here: https://docs.githoney.io/ . The documentation describes the product and how to use it in detail. Furthermore, we made minor enhancements to our home page visible here: https://githoney.io/ , which gives a high level overview of the product. \n\nA support channel for end-users to resolve questions and issues\n\nWe have set up 2 support channels.\n・In the form of a Discord channel on TxPipe’s Discord server. Can be found here: https://discord.gg/ZTHcHUy5HY . Our homepage links to said Discord channel.\n・Support email on our home page. \n\nAdded a screenshot below of how one could access our support from the info provided on our landing page https://githoney.io/ . \n\nAcceptance criteria:\n\nAny end-user is able to run the complete lifecycle of a bounty using the services and information publicly available.\n\nGiven the information and steps detailed in the documentation page , as well as on the home page of GitHoney, the user should have all the necessary information to be able to install GitHoney, create a bounty, deposit the reward, accept the bounty and claim the bounty. The reviewer can verify that this has happened successfully on the mainnet here: https://mainnet.marlowescan.com/contractView?tab=info&contractId=3439cd2be958b6fb44d3e7c32bb82a168522683f3f2dfd4dd27fb9ed56da531e%231 . Note the transaction’s tab of MarloweScan. \nWe would like to highlight that M",
+      "kinds": [
+        "other"
+      ],
+      "links": 39,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 59188,
+      "promise": "- An automated system to announce new bounties on a dedicated githoney Twitter account.\n- A frontend for showcasing bounties, aiding contributors in finding opportunities.\n- Source code of key components publicly available\n- An initial communication campaign through social media\n- A monitoring system to keep tracking of business metrics",
+      "criteria": "- Any user is able monitor bounty announcements via the corresponding Twitter account\n- Any user is able to browse bounties using Githoney's frontend\n- A reviewer is able to appreciate the communication campaign in social channels\n- Possible to view few key metrics of GitHoney's usage publicly",
+      "report": "Milestone Outputs:\nAn automated system to announce new bounties on a dedicated githoney Twitter account. \nTweets are visible here: https://x.com/sweetgithoney \nA frontend for showcasing bounties, aiding contributors in finding opportunities.\nThe frontend has seen a lot of progress. It has been completely redesigned and built from ground-up: https://githoney.io/bounties \nSource code of key components publicly available\nSmart Contract: https://github.com/githoney-io/githoney-smart-contract \nGitHub bot: https://github.com/githoney-io/bot \nDocumentation: https://github.com/githoney-io/documentation \n(Deprecated) Marlowe smart contract: https://github.com/githoney-io/marlowe-contract\nA monitoring system to keep tracking of business metrics\nVisible on the front page (scroll down): https://githoney.io/ \n\nEvidence of Milestone Completion:\nA short video showcasing the way the automated bounties publication system works\nhttps://drive.google.com/file/d/1I5GyNzdJl_t0cvWcL_CtO2btm9MZpByS/view?usp=sharing \n\nA publicly accessible frontend where bounties can be seen\nhttps://githoney.io/bounties \nA report showcasing the communication campaign\nA Twitter account has been set up here: https://x.com/sweetgithoney \nThe announcement tweet: https://x.com/sweetgithoney/status/1824462884815983063 , which got 10 likes and 3 retweets, including from https://twitter.com/txpipe_tools account. \nWe created a Discord channel: https://discord.com/channels/946071061567529010/1199117205942579270 and have connected there with Intersect and other interested parties. \nThis week on 22nd of August there is a planned demo of GitHoney on Discord. Here is the tweet for the announcement: https://x.com/sweetgithoney/status/1825522578607186297 \n\nSource code of key components publicly available located at \nhttps://github.com/githoney-io\n\nSmart Contract: https://github.com/githoney-io/githoney-smart-contract \nGitHub bot: https://github.com/githoney-io/bot \nDocumentation: https://github.com/githoney-io/documentatio",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 38,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 59188,
+      "promise": "- A reputation tracking system that keeps records of bounty metrics for each of the actors involved in the process (quantity, fulfilled vs incomplete, time-to-complete, etc)\n- A frontend interface to expose the reputation of maintainers and contributors (a leaderboard and a profile page)",
+      "criteria": "- A properly working reputation tracking system\n- View the reputation of maintainers and contributors on the frontend of GitHoney",
+      "report": "Milestone Outputs:\nA reputation tracking system that keeps records of bounty metrics for each of the actors involved in the process (quantity, fulfilled vs incomplete, time-to-complete, etc) \nWe have implemented a reputation system, the details of which can be viewed here: https://docs.githoney.io/reputation_system . \nA frontend interface to expose the reputation of maintainers and contributors (a leaderboard and a profile page)\nLeaderboard: https://githoney.io/leaderboard \nRandom profile page can be navigated to from the leaderboard, but here is also a link to one of our developer’s profile page: https://githoney.io/users/20 \nAs you can see the reputation is visible both in the leaderboard, as well as in the profile page. \nEvidence of Milestone Completion:\nA video showcasing the way the reputation system works\nhttps://youtu.be/jj30XKV_GkE?si=ma7tIENHV1lZqRjG\n\nAn publicly accesible frontend where reputation of maintainers and contributors is exposed\nLeaderboard: https://githoney.io/leaderboard \nRandom profile page can be navigated to from the leaderboard, but here is also a link to one of our developer’s profile page: https://githoney.io/users/20 \nAs you can see the reputation is visible both in the leaderboard, as well as in the profile page. \nSource code of the key components with the new features included located at https://github.com/githoney-io",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 14
+    },
+    {
+      "no": 4,
+      "month": "11",
+      "cost": 59189,
+      "promise": "・Explore collaboration with Catalyst team to integrate Githoney bounties as a mechanism to fund open-source development tasks.\n・Explore collaboration with IOG & the Marlowe team to promote the use of Githoney in related open-source projects.\n・Explore collaboration with CF to promote the use of Githoney in related open-source projects.\n・A badge system that delivers specific NFT to actors of the system that have completed certain achievements (eg: 1st completed bounty, bounty fulfilled within 1 week, etc).\n・A frontend that provides visibility of the different badge types and explains rules to gain them.\n・﻿﻿Add profile pages that display badges owned by each actor.",
+      "criteria": "・Engage in exploratory dialogue with at least 1 representative from IOG, Catalyst, CF, and Intersect to introduce the Githoney project.\n・A technical reviewer is able to inspect on-chain activity to appreciate badge tokens being sent to bounty participants.\n・Any user is able to browse profile pages and their corresponding badges using Githoney's frontend.\n・At least 1 Contributor has received a NFT badge",
+      "report": "- A report describing the results of the different initiatives involving external collaborators.\nPromoting GitHoney Among Major Cardano Organizations\nTxPipe has been actively advocating for GitHoney as an innovative and transparent bounty management solution across key stakeholders within the Cardano ecosystem. Below is an overview of our outreach efforts and engagements:\nEngagement with Project Catalyst\nWe introduced GitHoney to the Project Catalyst team as a potential tool to enhance transparency and accountability in managing funded projects. A formal email was sent, highlighting GitHoney’s alignment with Catalyst’s goals. We are currently awaiting a formal response. Additionally, we had in-person discussions with Kriss Baird, a Catalyst team member, during the Cardano Summit event in Buenos Aires (November 2024). The project was well-received, and we encouraged its consideration as a valuable tool for Catalyst.\nOutreach to IOG (Input Output Global)\nWe reached out to IOG, emphasizing GitHoney’s potential to drive broader community engagement, particularly among students and developers. A formal proposal was sent to Robertino Martinez, lead of IOG’s education team, outlining how GitHoney can inspire students to contribute to open-source projects while gaining valuable hands-on experience. We met Robertino in Buenos Aires (October 2024) and discussed the project further. The reception was very positive, and we are now awaiting IOG’s formal feedback.\nPromotion within PRAGMA\nAs an active member of PRAGMA, TxPipe has been promoting GitHoney’s adoption within the organization. During the Cardano Summit in Buenos Aires (November 2024), we introduced the project to Kriss Gianelloni, CEO of BlinkLabs and a founding member of PRAGMA, demonstrating GitHoney’s potential to streamline workflows and support collaborative projects. We are optimistic about integrating GitHoney into PRAGMA’s operations in the coming months, leveraging our position within the organization to drive",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "12",
+      "cost": 44571,
+      "promise": "- An MVP version of the Githoney system",
+      "criteria": "- A reviewer is able to appreciate all of the improvements described in this proposal using the publicly available Githoney interfaces (github bot, frontend, twitter, etc).\n- A reviewer is able to appreciate the level of usage of Githoney by reading the report and watching the summary video.",
+      "report": "We are excited to share that the project has been finalized, with all outputs delivered. \nPlease find below the closeout report and other key links for assessment:\nCloseout Report\ndrive.google.com/file/d/1ovS_0LO5AZ0P5EBuJ1Qe0sRDB3SiekCg/view?usp=sharing \nCloseout Video\nhttps://youtu.be/EwS98uZ5RwE\nWebsite\ngithoney.io/ \nDocumentation\ndocs.githoney.io/ \nSource Code\ngithub.com/githoney-io \nThanks!",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

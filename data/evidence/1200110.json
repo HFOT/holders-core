@@ -1,0 +1,60 @@
+{
+  "title": "Fractionalize RWAs into Native Tokens on Cardano (open source, no-code solution)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "Completion of written requirements for (i) the user interface features, flows, and user experience, and (ii) smart contract functionality and configuration.",
+      "criteria": "Requirements must clearly and completely encompass the full range of the user experience, with examples of key workflows from beginning to end across at least 3 use cases. \nKey workflows include: \n・Vault formation: Vaults are user-configurable smart contracts (\"SC\") that allow users to send on-chain assets (NFTs, FTs) to the SC, to be locked until certain criteria are met, or until the transaction is cancelled. Users who establish the Vault SCs are the \"Admin\" users of each vault. \n・Fractionalization: The process by which 3rd party users will send ADA to the SC and receive newly minted fractio",
+      "report": "Based on your feedback, we have updated the format of requirements to be publicly listed from our Github page. \nPlease find the requirements at the following links.\n・Completion of written requirements for (i) the user interface features, flows, and user experience: https://github.com/L4VA-Technologies-Inc/reqs/wiki/Frontend-Requirements\n・Completion of written requirements for (ii) smart contract functionality and configuration\n・Vault Formation Guidelines: https://github.com/L4VA-Technologies-Inc/reqs/wiki/Vault-Formation\n・API Introductions & Standards: https://github.com/L4VA-Technologies-Inc/reqs/wiki/api_intro\n\nIn addition we are documenting requirements and best practices for the entire application across this bookstack page at https://docs.l4va.com for your reference.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 25000,
+      "promise": "Completion of front-end prototype web interface.",
+      "criteria": "Clickable web based user interface, which can successfully demonstrate configuration actions in the UI and be ready for integration of smart contracts.",
+      "report": "Hello, apologies that the links didn’t work before. All should work now. \n…\nHello Reviewers! \nWe have completed the front-end of the prototype web interface and launched a clickable prototype demonstrating the capabilities of the L4VA protocol web appilcation. You can access the clickable prototype @ https://l4va.cryptounity.space/.\nWe have also completed a demo video showing how the intended functionality works. Due to size constraints we have broken the video into two. Here are the links: \n 1 L4VA Front-end Demo 1\n 2 L4VA Front-end Demo 2\nWe are also providing the Github links to the entire project HERE (showing we have already completed 213 commits) and the github links to the front end pages HERE. \nPlease let us know if you have any questions or comments and we will answer ASAP!\nThanks you for your time and consideration!\nRob and L4VA Team.",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 30000,
+      "promise": "Completed smart contract code, commit of smart contracts and integration into the front end, launching of the test-net in Beta publicly to the community.",
+      "criteria": "Smart contracts must be able to successfully complete transactions using all variations of configurations in pre-prod, then must be tested successfully by the community in test-net beta phase with over 25 contracts being created and over 100 transactions successfully completing. By completing 100 transactions in the smart contracts, showing tADA being sent to the SC address and receiving the test fungible tokens minted as a result of the smart contracts executing, and providing links to the transaction logs, this will demonstrate that successful operation of the smart contracts.",
+      "report": "According to our milestone outputs and the acceptance criteria, as well as the evidence of milestone completion, please see below! Thank you!!!\n\n・We have pushed Smart Contract vault code to our public Github here: https://github.com/L4VA-Technologies-Inc/vault-contract\n・We have pushed our webapp client code to our public Github here: https://github.com/L4VA-Technologies-Inc/l4va-client\n・We have created successfully over 25 vaults on Testnet here: https://github.com/L4VA-Technologies-Inc/l4va-client/wiki/Testnet-Vaults-List\n・We have completed over 100 transactions here: https://github.com/L4VA-Technologies-Inc/l4va-client/wiki/Testnet-Transactions-List\n・We have a video showing the full flow of the vaults creating tokens on the front end and claiming the tokens here: https://drive.google.com/file/d/1-MriF3ME-tHB7A32s5NQ9GVAx24ca7Go/view?usp=sharing\n・We have also completed over 66 bug fixes, which you can view in a google sheet linked here: https://github.com/L4VA-Technologies-Inc/l4va-client/wiki/Testnet-Fixes-List",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "17",
+      "cost": 25000,
+      "promise": "・Final close-out report\n・Final closeout video\n・Protocol goes live on the mainnet",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Protocol goes live on the mainnet with over 5 successful mainnet contracts in the first month and 100 successful transactions",
+      "report": "A. Output: Final Closeout Report\nAcceptance criteria: Final Closeout Report is publicly available\nEvidence: https://drive.google.com/file/d/17GGOdTBN_dBY1u6JMYdfVC2fSlCizdrs/view?usp=sharing\nB. Output: Final Closeout Video\nAcceptance criteria: Final Closeout Video is publicly available\nEvidence: https://www.youtube.com/watch?v=xtgUX7o50r0&feature=youtu.be\nC. Output: Protocol goes live on mainnet\nAcceptance criteria: Protocol goes live on the mainnet with over 5 successful mainnet contracts in the first month and 100 successful transactions\nEvidence: \n5 Vaults on Mainnet: https://github.com/L4VA-Technologies-Inc/l4va-client/wiki/Mainnet-Vaults\n100 Transactions on Mainnet: https://github.com/L4VA-Technologies-Inc/l4va-client/wiki/Mainnet-Transactions",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

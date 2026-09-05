@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・cardano-data-lite(CDL)ライブラリの実装\n・CDLのユニットテスト\n・CI設定\n・CDLの文書化",
+      "criteria": "・CDLは@cardano-sdk/coreから適応し、使用事例に適応したシリアライズコードを含むライブラリが完成しました。\n・CSLとのデータ変換と型ネーミングに類似したCDLインターフェースを追加\n・レポにユニットテストが存在する\n・CIの統合\n・基本文書の提示",
+      "report": "CDLライブラリの実装\nカルダノドメイン型シリアライゼーションを実装するCatalystの提案では、CDDLからJavaScript/TypeScriptまでのコード生成、マニュアルの実装、またはプロジェクトのCardano-js-sdkからシリアル化コードを適応させる3つの可能なアプローチが議論されました。\n提案書とマイルストーンの声明を書く時でも、Cardano-js-sdk を適応させると、最も有望なパスになるように見えました。開発中は、これが最善の行動コースではないと明らかにしました。 そのため、コード生成の恩恵にこのアプローチが落ちました。\nCDLプロジェクトは3つの部分で構成されます:\n・コードジェネレータ(conway-cddl/codegen の下に設置)\n・自動生成されるYAML仕様のセットですが、マニュアル追加と必要に応じて変更(Conway-cddlのYAMLファイルとして利用可能)。 これらは、Cardanoトランザクションの構造を指定し、コード生成ツールの基本です。\n・最新の生成されたコードと必要なランタイムモジュール(src) 最終的なシステムにインストールされるため、実際のCDLライブラリです。\n\nCDLのユニットテスト\nCardano Data Liteライブラリには2つのテストスイートがあり、テスト/シリアル化とテスト/ APIで確認できます。 Milestone 1 に最も関連したのは後者で、CDL ライブラリが提供するメソッドの型のシグネチャと、Cardano Serialization Library の最新版のゴミ収集バージョン、または CSL (\"@emurgo/cardano-serialization-lib-nodejs-gc\": \"^12.1\")\ntest/api にある API テストスイートは、'npm run test-api' コマンドで実行できます。 CDL のインターフェイスは CSL とほとんど互換性があることを示しています。 テスト スイートはテストできます:\n・クラスをissing:CSLで利用できるクラスはCDLで欠落します。\n.・Missing メソッド: CSL クラスで使用できるメソッドが、同等の CDL クラスで欠落しています。\n・互換性のない方法署名:CSLと比較してCDLに互換性のないシグネチャを持つ方法。 E.g: 異なる戻りタイプ、異なる数のパラメータ"
+    },
+    {
+      "no": 2,
+      "promise": "・CSLではなくCTLでのCDLの使用\n・CTLにおけるMinOutputAdaCalculator代替の増幅",
+      "criteria": "・Cardano-transaction-library が Cardano-serialization-library を使用しなくなった\n・ドメインタイプのシリアライズは、カルダノデータライトで行います。\n・CTL のメンションは CTL のドキュメントから削除されます(変更ログを除く)",
+      "report": "MS 2\n受容体基準\n・CTL は、Cardano-serialization-lib を使用しなくなった\n・ドメインタイプのシリアライズは、カルダノデータライトで行います。\n・CTL のメンションは CTL のドキュメントから削除されます(変更ログを除く)\n\nマイルストーン完了の証拠\n・GitHubリポジトリと関連コミットへのリンク\n\n配送可能\n実証するプルリクエスト\n・CTL は CSL を使用しておりません。\n・CTL ドキュメントから CSL のメンションを削除\n\nPR: https://github.com/Plutonomicon/cardano-transaction-lib/pull/1678 コミット: https://github.com/Plutonomicon/cardano-transaction-lib/commit/e209542ad5ac664ce8cc94705834069da7c011\nシリアル化のためにCardano Data Liteを使用するPurescript Cardanoタイプを更新するPR:https://github.com/mlabs-haskell/purescript-cardano-types/pull/21\nCSLに依存するCTLの依存関係に関するPR:\n・cardano-hd-wallet: https://github.com/mlabs-haskell/purescript-cardano-hd-wallet/pull/4\n・cardano-transaction-builder: https://github.com/mlabs-haskell/purescript-cardano-transaction-builder/pull/7\n・cardano-provider: https://github.com/mlabs-haskell/purescript-cardano-provider/pull/3\n・cardano-block フロスト・プロペラ https://github.com/mlabs-haskell/purescript-cardano-block フロスト・プロペラ/pull/2\n・cardano-kupmios-provider: https://github.com/mlabs-haskell/purescript-cardano-kupmios-provider/pull/2"
+    },
+    {
+      "no": 3,
+      "promise": "・ApplyArgs(uplc-apply-args)を実装したPureScriptパッケージ\n・フィックスチャーテスト",
+      "criteria": "・ApplyArgs 用のPureScriptパッケージ\n・バウンティング命令を含む文書更新\n・CTLから新しいパッケージへ移行したapplyArgsテスト\n・新しいPureScriptパッケージで利用可能なフィックスチャーテストは、適切な機能を示しています",
+      "report": "受容体基準\n・ApplyArgsのPurescriptパッケージ\n・バウンティング命令を含む文書化の更新\n・CTLから新しいパッケージへ移行したapplyArgsテスト\n・新しいPureScriptパッケージで利用可能なフィックスチャーテストは、適切な機能を示しています。\n\nマイルストーン完成の証拠\n・GitHubリポジトリと関連コミットへのリンク\n\n配送可能\nリポ https://github.com/mlabs-haskell/purescript-uplc-apply-args\nプルリクエスト https://github.com/Plutonomicon/cardano-transaction-lib/pull/1627\nコミット https://github.com/Plutonomicon/cardano-transaction-lib/pull/1627/commits https://github.com/mlabs-haskell/purescript-uplc-apply-args/commits/master/\n備品のテスト https://github.com/mlabs-haskell/purescript-uplc-apply-args/blob/master/test/Main.purs\nドキュメント更新 https://github.com/Plutonomicon/cardano-transaction-lib/pull/1627/commits/baa9b8070b2d4558f6d6fc5cc2eae79daf712b66\n束縛プロセス自体が変更されていないため、束縛プロセスのドキュメントの更新はありません."
+    },
+    {
+      "no": 4,
+      "promise": "Cip30Mock は CTL の外で別の PureScript パッケージで利用できます",
+      "criteria": "CIP30Mock機能に対応したPureScriptパッケージ",
+      "report": "CTLコアのライブラリ依存性を示すメッセージの移動。\n受容体基準\nCip30Mock 機能に CTL に対応した PureScript パッケージが作成されます。\nマイルストーン完成の証拠\nGitHubリポジトリと関連するコミットへのリンク。\n配送可能\nリポ\nhttps://github.com/mlabs-haskell/purescript-cip30-mock\nプルリクエスト\nhttps://github.com/Plutonomicon/cardano-transaction-lib/pull/1629\nコミット\nhttps://github.com/Plutonomicon/cardano-transaction-lib/pull/1629/commits\nhttps://github.com/mlabs-haskell/purescript-cip30-mock/commits/master/"
+    },
+    {
+      "no": 5,
+      "promise": "Bundling 用の WebAssembly を使用しない CTL バージョン\nクローズアウトレポート\nクローズアウトビデオ",
+      "criteria": "・この証拠は、CTL ベースのプロジェクトを WebAssembly なしでバンドルすることができることを実証します。なぜなら、パッケージが別のプロジェクトに移動することなく、CTL - のみを使用していれば\n・クローズアウトレポートは、Catalystナレッジベースで概説されている事項を徹底的にカバー:https://docs.projectcatalyst.io/fund-documentation/fund10-docs/funded-project-reporting-guideline/project-closeout-report-and-project-closeout-video-pcr-and-pcv\n・ショートビデオレポートでは、ナレッジベース要件に沿ってプロジェクトの成果と成果を概説",
+      "report": "マイルストーン・コンプリケーションの発生\nコミット:\nhttps://github.com/mlabs-haskell/ctl-no-wasm-template/commit/40bacb9c52908c59b909ff313e2ddb680e359118\n\nクローズアウトレポート:\nhttps://drive.google.com/file/d/1iLKTkJFYUTuAeoHklSVuocBCTgecL0ck/view?usp=sharing\n\nクローズアウトビデオ:\nhttps://www.youtube.com/watch?v=iuNgN QtLu8"
+    }
+  ]
+}

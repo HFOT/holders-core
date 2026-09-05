@@ -1,0 +1,74 @@
+{
+  "title": "DAO Governance x Atala PRISM - By MuesliSwap",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 43600,
+      "promise": "This milestone covers the research part of the project. The output will consist of a document outlining our findings and proposed solutions regarding the following aspects:\n・Conceptually sketch integration of Atala PRISM DID into current off-chain voting system\n・Design & outline basic functionality that needs to be provided by treasury contract and protocol parameter update interface\n・Comprehensive comparison, in-depth code review, and testing of existing on-chain governance solutions\n・Planning integration of new governance components into existing off-chain voting platform developed by us in Fund9",
+      "criteria": "There exists a publicly accessible document (e.g. blog post) outlining the results described under above outputs section, i.e., sketch of DID integration into current off-chain voting system, smart contract requirements, functionality and security (e.g. against double DID usage). The document should further contain a comparison of our proposed DID solution with existing voting systems outlining the advantages of DID integration, and future extensions should be discussed. From this document, it should become clear how we will approach the implementation of our solution in the milestones to come",
+      "report": "The promised report has been made publicly available within the following GitHub repository:\nhttps://github.com/MuesliSwapTeam/muesliswap-atala-onchain-governance\nThe document contains the required results as described in the \"Acceptance Criteria\", i.e., i.e., a sketch of DID integration into current off-chain and the newly built on-chain voting system, smart contract requirements, as well as a comparison of our proposed solution with existing voting systems. We hope that from this document, it becomes clear how we will approach the implementation of our solution in the milestones to come, and why certain design decisions have been made.",
+      "kinds": [
+        "code"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 43600,
+      "promise": "・Snapshot mechanism implementation for the election process\n・Development of backend infrastructure for DID support\n・Frontend support for DID",
+      "criteria": "The described frontend & backend components have been tested (using unit and property based test) to interact as desired, i.e. they provide the functionality described in the first milestone (i.e. exact output depends on results of this previous milestone).",
+      "report": "The promised components have been developed and published in our open-source repositories as described below. A video demo of our Atala PRISM Authentication NFT minting tool can be found here: Catalyst Milestone: Atala Prism DID Authentication DEMO.\nImportant Notes: \n・Tests are available and can be run as described here in the README (in response to a previous review saying that there are no tests available).\n・An issue that existed in previously deployed versions of our demo that led to unexpected crashes in certain countries has now been resolved. The demo can be tested here.\n\nThe code is contained in two repositories:\n・muesliswap-atala-onchain-governance contains the components required for the backend infrastructure as well as frontend support for DID. For a detailed description of the developed components and their purpose, see the README of this repository. Importantly, we remark that while this repository does contain automated tests of the authentication system, we did not (as originally specified in the Milestone declaration) include property based tests at this point. This is because as described in Milestone 1, the design of our architecture (unlike initially planned) involves the ProofSpace platform. Testing some parts of our implementation would therefore require a freshly issued authentication token obtained via 2-FA through the ProofSpace App which makes it somewhat unsuitable for larger-scale automated testing in the form of property-based tests. However, we have made an effort to nevertheless provide unit and integration tests for some components for which this is possible (partially also facilitated by mock data where this was appropriate). The tests use the `pytest` framework and can be run as described in the \"#Running Tests\" section of the updated README in muesliswap-atala-onchain-governance.\n・cardano-secure-off-chain-voting/tree/require-did has been added as a new branch to our off-chain voting solution from Catalyst Fund 9. The newly developed",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 43600,
+      "promise": "・Implementation of the treasury contract itself.\n・Development of off-chain backend infrastructure for interaction with the smart contract.\n・Testing and internal security audit.",
+      "criteria": "Tests show successful smart-contract interactions (on testnet). Internal audit shows no critical vulnerabilities.",
+      "report": "This milestone requires the following deliverables:\n・a treasury smart contract\n・off-chain infrastructure for interacting with the treasury smart contract\n・testing and an internal security audit\n\nThe above components have been developed and published as follows:\n・The treasury and respective on-chain voting/governance contracts are contained in the 'onchain' part of the muesliswap-atala-onchain-governance repository.\n・Off-chain code for constructing the respective transactions is contained in the 'offchain' part of above repository.\n・The interaction of above 'onchain' and 'offchain' components have been tested and proof for this is provided in the form of preprod example transaction, see links in the 'Demo' section of the README, as well as a detailed testing report which can be found here. This report in particular contains the description of our tests ensuring important properties such as:\n・No user can vote twice, i.e., multiple calls with single wallets is idempotent and does not increase the vote counting.\n・A description of meta-information contained in the tally datum giving the guarantee to the user and 3rd parties that the user has voted and that her vote is taken into account accordingly.\n・The internal security audit has been conducted. All discovered issues have been resolved subsequently. A report on the findings and the auditing process can be found here. Commits resolving the discovered issues are referenced in this audit report.\n\nCompared to previous submissions for this Milestone 3, the following changes have been made to address the reviewers' feedback:\n・previous issues with the demo website have been resolved (see already Milestone 2)\n・CI via GitHub actions has been added for automated test execution\n・additional property-based tests of treasury SC components have been added",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 43600,
+      "promise": "・Adjustment of existing on-chain voting solutions to the project's requirements (in terms of backend and smart contracts).\n・Integration of on-chain elections into the existing off-chain voting platform.\n・Testing and internal security audit.",
+      "criteria": "First test elections can be successfully conducted via the described integration. Internal security audit passed with no critical findings.",
+      "report": "In this milestone, we have put together a complete DID voting system, integrating backend, on-chain, and UI components. Concretely, the new elements we deliver are:\n・Adjustment of an existing on-chain voting solution (the MuesliSwap on-chain DAO system) to this project: see code for adjusted on-chain backend and on-chain DAO frontend.\n・Integration of on-chain elections into the adapted voting platform (which is immediate, as the MuesliSwap DAO is now already an on-chain system).\n・Internal security audit passed, and tests have been conducted on-chain: See our new detailed report on this, which includes a UI demo and links to on-chain transactions from the DID-based test elections.\n\nAddressing the reviewers' feedback from the previous submission:\n・Thanks for clarifying, I see now what you meant. I fixed it in the code instead of creating the symlink - seems a bit cleaner. See latest commit here.",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "26",
+      "cost": 43600,
+      "promise": "・Integration of parameter updates into one or multiple widely used open-source DeFi protocols (to be selected).\n・Changes to smart contracts, testing, and implementation of required off-chain tooling.\n・Testing and internal security audit. As per updated milestone, mock DIDs will be used that can be implemented via any DID provider/system in the future, once this is available again.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Example transactions on testnet conducting the described parameter update can be constructed successfully as a result of a test election. Internal audit does not reveal any remaining critical issues with the involved smart contracts.\n・Documentation and tutorials for facilitating adoption and understanding is created and publicly made available.\n・Tweets and a blog post engaging with the Cardano community have been published.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "For this final milestone, we provide the following:\n・Implementation of DAO-governed parameter update mechanism: see updated off- and on-chain code in contributed in this commit (code is published under GPLv3 license).\n・Example transactions on preprod testnet demonstrating the newly implemented functionality:\n・DAO tally creation (for parameter update)\n・Vote in above tally\n・AMM (automated market maker) pool creation\n・pool parameter update\n・Report of internal audit of the smart contracts.\n・Tutorials and guides for users.\n・Documentation & setup tutorial for the DAO/DID system.\n・Blog post publication on MuesliSwap's Medium account.\n・Announcement to MuesliSwap community via X post.\n・Close-out report.\n・Close-out video including updated demo with Mock DID authentication.\n\nCompared to the previous submission we have addressed the following:\n・As seen from the latest 6 commits in the repo, we have identified and fixed several issues (due to updates in serialization lib, etc.) in the Mock-DID demo page which should now be working again. We have implemented a toggle so that the demo can be used both in mainnet and preprod testnet. And the demo section in the close-out video has been updated accordingly.",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 13
+    }
+  ]
+}

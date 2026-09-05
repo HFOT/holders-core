@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "NestJSによるバックエンド開発\n・ハイドラヘッド、カルダノアカウント、コンテナの状態を管理するための増幅バックエンドサービス。\n・RESTful API を UI と CLI の統合に提供します。\n\nHydra Node 管理のための Docker の統合\n・Dockerodeライブラリを統合し、ハイドラノードコンテナをバックエンドから直接起動、停止、監視します。\n・失敗したノードの自動クリーンアップと回復をサポートします。\n\nMySQLとRedisのステート管理\n・MySQL (アカウント、Hydra ヘッド情報、ログ) で永続的なデータを保存します。\n・頻繁にアクセスしたデータをキャッシュし、応答時間を改善するためにRedisを使用します。\n\nCardano アカウント API\n・新しいCardanoアカウント(vkey/skey)を生成し、残高を確認し、アカウントをノードに割り当てるAPIを作成します。\n・PreprodとMainnet環境の両立性を確保.",
+      "criteria": "1。 Backend(NestJS)は、Cardanoアカウント、Hydraノード、コンテナの状態を管理するREST APIを提供します。\n2. Dockerの統合により、ハイドラノードコンテナをバックエンドから直接作成、停止、監視できます。\n3。 ヘッド情報とCardanoアカウントデータは、MySQLに保存されます。ただし、Hydraノードの状態、キー、ログは永続および回復のためにローカルデバイスボリュームに保存されます。\n4。 すべての API は、テスト条件の下で安定した性能を持つ Postman または Swagger を使用して自動統合テストを渡します。\n* /hydra-main/create-account — 新しいCardanoアカウントを作成する\n* /hydra-main/list-account — リスト",
+      "report": "1。 バックエンドソースコード、構造化されたモジュール、インストールガイドを含む公開GitHubリポジトリ。 サイトマップ\nGitHub 公開: https://github.com/Vtechcom/hydra-hexcore\nインストールガイド: https://github.com/Vtechcom/hydra-hexcore/blob/master/README.md\nApi バックエンド: https://api.hexcore.io.vn/api-docs\n2. Hydraの頭部の作成およびCardanoの記述の結合プロセスを示すビデオ デモ。\nhttps://youtu.be/rmc7z3LFnAs\n3. .env の設定ファイル(環境固有の変数)をローカル/testnet デプロイメントに例します。\nhttps://github.com/Vtechcom/hydra-hexcore/blob/master/.env.example\n4. 自動化されたテスト データおよび記録されたテスト結果は安定した API の機能を実証します。\nhttps://github.com/Vtechcom/hydra-hexcore/actions/runs/20163732845/job/57882243249\nhttps://vtechcom.github.io/hydra-hexcore/e2e-reports/"
+    },
+    {
+      "no": 2,
+      "promise": "Nuxt 3 による UI 開発 (Vue 3)\n・REST 経由でバックエンド API に接続されたレスポンシブな Web UI を構築します。\n・ハイドラ管理用のUIコンポーネントの増幅が可能\n\nHydra の頭部およびアカウント管理インターフェイス\n・Cardanoアカウントの管理、Hydra ヘッドの初期化、コンテナの状態の監視を行うインターフェイス\n・API ポーリングまたは WebSocket によるリアルタイムステータス更新\n\nロールベースのログインシステム\n・Admin、Developer、Viewer の3つのロールによる増幅認証\n・重要な業務に対するロールベースの制限\n\nモックアップによるレスポンシブデザイン\n・デスクトップ、タブレット、モバイルに対応したフルレスポンシブレイアウトの設計・実装\n・事前承認されたワイヤーフレームまたはモックアップに基づくUI設計.",
+      "criteria": "・UIは、マイルストーン#1からすべてのバックエンドAPIと正常にやり取りします。\n・Hydraヘッドやコンテナの状態(実行、停止など)をリアルタイムで実行する表示リスト\n・ログイン/ログアウト機能は、正しいロールベースの権限で確実に動作します。\n・Cardanoアカウント管理UI:\n\n・既存のCardanoアカウントをアドレスと残高で一覧表示します。\n・API(/hydra-main/create-account)で新規アカウントを作成する許可\n・ノード情報やアカウント情報の表示\n・API ポーリングや WebSocket で動的にデータ更新を行います.",
+      "report": "1。 フロントエンドの公開GitHubリポジトリ、Vercelまたはプライベートテストサーバーにデプロイ。\nhttps://github.com/Vtechcom/hexcore-ui\n2. 完全なUIの流れを示すデモビデオ(ヘッドの作成、ログの表示、アカウントの管理)。\nhttps://youtu.be/UVLB2k6NEwc\n3. .figma ファイルまたはスクリーンショットとして提供される最終的なインターフェイスの設計。\nhttps://github.com/Vtechcom/hexcore-ui/blob/master/docs/hexcore-ui-screenshots.md\n4. 生きているテストのために利用できる場合の老化のデモ リンク。\nHexcore-Ui デモ: https://hexcore.io.vn/\nユーザー名: 管理者\nパスワード: Strongpassword123"
+    },
+    {
+      "no": 3,
+      "promise": "NGINX 逆プロキシ構成\n・ホスト名やパスに基づいて、NGINXを設定し、ロードバランシングとSSL/TLS対応で各Hydraノードにトラフィックをルーティングします。\n・ノード数の変更時に動的設定を解除します。\n\nHydraのエンドポイントのための基本的なセキュリティレイヤー\n・特定のIPアドレスからのみアクセスを許可するIPホワイトリスト\n・APIキーまたはJWT認証を有効にして、Hydra APIコールのセキュリティを強化します。\n・分析や侵入検知の全てのアクセス要求をログに記録します。\n\nCLIツール開発 - hexcore-cli\n・ハイドラ対応 コマンドラインから直接ヘッド管理:新しいヘッドの作成、ヘッドの停止、リストの状態の一覧作成、ログの表示\n・ヘッド(例、参加者数、タイムアウト構成)の初期化時にカスタムパラメータをサポート。\n・複数のヘッドを同時に管理できるバッチスクリプト機能を提供します。\n\n高度なロギングシステム\n・CLI 内で直接リアルタイムログストリーミングを統合し、ノードまたはヘッドでフィルタリングを行います。\n・ログをJSONやテキストファイルにエクスポートしてオフライン解析を行います.",
+      "criteria": "完全なCLIの機能\n・hexcore-cli は、UI で利用可能なすべてのアクションを実行できます。新しいヘッドの作成、ヘッドの停止、ステータスの表示、およびログの取得。\n・CLI コマンドは、即時のフィードバックを返し、無効な操作のために、明確なエラーメッセージを提供しなければなりません。\n\nハイドラエンドポイントのゲートウェイセキュリティ\n・NGINX逆プロキシは確実に動作し、不正なリクエストをブロックします。\n・IPホワイトリストは正しく機能し、設定されたアドレスのみを許可します。\n・APIキー/JWT(有効な場合)は、アクセスを許可する前に正常に検証する必要があります。\n\n負荷処理とスケーラビリティ\n・複数のヘッドコンキュを作成・管理できるストレステストを実行可能",
+      "report": "・リンク公開CLIソースコード https://github.com/Vtechcom/hexcore-cli\n・リンクドキュメンテーション:https://github.com/Vtechcom/hexcore-cli/blob/main/README.md\n・リンクサンプル構成ファイル:https://github.com/Vtechcom/hydra-hexcore/blob/master/docs/proposal/ms3/hexcore-proxy.nginx.conf\n・デモ動画(「不正なリクエストをブロックし、有効なものだけを許可する」) : https://youtu.be/iUou-naYgEE"
+    },
+    {
+      "no": 4,
+      "promise": "最終プロジェクトレポート(プロジェクトクローズアウトレポート)\n・プロジェクトスコープ、開発プロセス、展開詳細、課題、ソリューションに関する詳細なレポート\n\nRecapビデオ\n・バックエンド、フロントエンド、CLI、ゲートウェイコンポーネントを含むシステムの完全なビデオウォークスルー。\n\n技術的な洞察とコミュニティの貢献\n・ハイドラ開発者向け技術学習、最適化、推奨事項をまとめました。\n・Hydra Coreまたは関連するオープンソースリポジトリに提出された文書の寄稿.",
+      "criteria": "・Catalystの審査者によるすべての文書およびビデオコンテンツの提出および承認\n・Final Public GitHub リポジトリには、完全な、機能的なコードが含まれている。\n・Hydra/Cardanoコミュニティの他の開発者にとって、文書化は再使用可能で有益です.",
+      "report": "1. プロジェクトクローズアウトレポート(PDF)\n完全なプロジェクトライフサイクルに関する詳細な最終報告書:\n・プロジェクトタイムラインとキーマイルストーン\n・チームの役割と責任\n・進捗追跡方法論\n・技術・運用上の課題が発生した...\n\nPDF レポート: https://github.com/Vtechcom/hydra-hexcore/blob/master/docs/proposal/ms4/Hydra%20Hexcore%20-%20Project%20クローズアウト%20Report.pdf\n2. 最終的なRecapのビデオ\n短いビデオまとめ:\n・コア開発フェーズ\n・システム導入・試験\n・最終結果と納品値...\n\nYouTube動画:https://www.youtube.com/watch?v=VXRY2HokP-4\n3. 公開ソースコードとドキュメント\nすべてのプロジェクト成果物は、明確なインストールと使用手順で完全にオープンソースです。\n・Hexcore(コアエンジン):https://github.com/Vtechcom/hydra-hexcore\n・Hexcore ドキュメンテーション: https://github.com/Vtechcom/hydra-hexcore/blob/master/README.md\n・Hexcore UI: https://github.com/Vtechcom/hexcore-ui\n・Hexcore UI ドキュメンテーションとスクリーンショット: https://github.com/Vtechcom/hexcore-ui/blob/master/docs/hexcore-ui-screenshots.md\n・Hydra CLI ツール: https://github.com/Vtechcom/hexcore-cli\n・Hydra CLIドキュメンテーション: https://github.com/Vtechcom/hexcore-cli/blob/main/README.md\n\n4. 技術の貢献要約(PDF)\n書面による報告要約:\n・主な技術貢献\n・ハイドラコア開発と一体化したインタラクションと改良\n・GitHubの問題...\n\n技術的な貢献 概要: https://github.com/Vtechcom/hydra-hexcore/blob/master/docs/proposal/ms4/Technical%20Contribution%20Summary%20Report%20-%20Vtechcom%20Team%20Team%20.pdf"
+    }
+  ]
+}

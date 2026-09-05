@@ -1,0 +1,72 @@
+{
+  "title": "MLabs - Cardano-Transaction-Library Evolution",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40714,
+      "promise": "All outputs are related to Cardano Transaction Library:\n・Dependency version updates: Ogmios, Kupo, Blockfrost, cardano-db-sync and library dependencies should be on their latest major versions\n・PureScript compiler version should be updated to the latest minor version (i.e. 0.15.X)\n・Esbuild should be available as a bundler, instead of WebPack\n・Pick-up stale PRs from community",
+      "criteria": "・Major versions of dependencies (Ogmios, Kupo, Blockfrost, cardano-db-sync, our wrappers for cardano-serialization-lib) are set to the latest available versions, or, in case that it is not possible or unreasonable to do for some reason, an explanation should be given as a text file.\n・PureScript compiler version is set to 0.15.X, where X is the latest release number\n・Esbuild binary is available in the development shell, the project scripts use Esbuild by default. WebPack may be still available as an option, or removed entirely.\n・Stale PRs are merged or rejected.",
+      "report": "Our Milestone PoA report is hosted here in this Google doc, with the contents copy and pasted below.:\n\n CTL Evolution report\n\nOutputs\n\nDependency version updates: Ogmios, Kupo, Blockfrost, cardano-db-sync and library dependencies should be on their latest major versions\n \nHere’s a list of versions from commit 018406c3ebfcffd90ce04aab3ea9c1479ab7f318:\n\n・Cardano-node: 8.1.1: https://github.com/Plutonomicon/cardano-transaction-lib/blob/018406c3ebfcffd90ce04aab3ea9c1479ab7f318/flake.nix#L31\n・Ogmios: v6.0.0: \n\nhttps://github.com/Plutonomicon/cardano-transaction-lib/blob/018406c3ebfcffd90ce04aab3ea9c1479ab7f318/flake.nix#L44\n・Kupo: v2.2.0:\n\nhttps://github.com/Plutonomicon/cardano-transaction-lib/blob/018406c3ebfcffd90ce04aab3ea9c1479ab7f318/flake.nix#L55\n・Blockfrost: v1.7.0:\n\nhttps://github.com/Plutonomicon/cardano-transaction-lib/blob/018406c3ebfcffd90ce04aab3ea9c1479ab7f318/flake.nix#L70\n・cardano-db-sync: 13.1.0.0\n\nhttps://github.com/Plutonomicon/cardano-transaction-lib/blob/018406c3ebfcffd90ce04aab3ea9c1479ab7f318/flake.nix#L71\n \n Library version updates are available at a feature branch for the PureScript compiler update (`dshuiski/purs-0.15-migration`) that is yet unmerged as well (it is blocked by the dependency update PR, because we want to first update the dependencies and release a new version, so that the users can still be up-to-date without the need to migrate all their code to the new PureScript language version): https://github.com/Plutonomicon/cardano-transaction-lib/pull/1521\n We use a fairly recent PureScript library package set for the new version of PS compiler:\n・https://github.com/Plutonomicon/cardano-transaction-lib/blob/49766d535b1fdb58ab4311f718a6f65024772377/packages.dhall#L108\n\n Additionally, updating Blockfrost version allowed us to address a piece of technical debt:\n・Provide additional utxos to Blockfrost evaluateTx, Handle AdditionalUtxoOverlap error - https://github.com/Plutonomicon/cardano-transaction-lib/pull/1544 \n\nPureScript compiler versi",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 43,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 27142,
+      "promise": "・Removal of CIP-30-related (wallet interaction) code from CTL and creation of a new package that CTL will use as a dependency.",
+      "criteria": "・A new package that implements a CIP-30 connector is created and set as CTL’s dependency.",
+      "report": "CIP-30 wrapper packages\nWe have created two CIP-30 wrapper packages as a result of the second milestone.\n\nThe first is https://github.com/mlabs-haskell/purescript-cip30 - which was forked from Anton Kholomiov’s (a former MLabs employee) personal repo.\n\nThe following changes have been made since the fork:\n・https://github.com/mlabs-haskell/purescript-cip30/pull/5 - added Nix-based CI setup, to adapt the repo to automation standards of MLabs\n・https://github.com/mlabs-haskell/purescript-cip30/pull/4\n・Added PureScript wrappers for newly introduced CIP-30 methods: getExtensions / getSupportedExtensions \n・made WalletName a type synonym instead of newtype and got rid of mentions of particular wallets in the library code\n・Switched to untagged-union in FFI\n\nThe second package, created from scratch, is https://github.com/mlabs-haskell/purescript-cip30-typesafe\n\nIt is a wrapper on top of purescript-cip30 that takes care of error responses from the CIP-30 API, and forces the user to explicitly handle them.\nThe motivation for a separate package is that not all users of purescript-cip30 care about error variants.\nFor us, however, type safety does matter.\n\nThis PR https://github.com/Plutonomicon/cardano-transaction-lib/pull/1583 introduced the use of purescript-cip30 and purescript-cip30-typesafe to cardano-transaction-lib.\n\nLinks to commits with the final versions:\n\nhttps://github.com/mlabs-haskell/purescript-cip30/commit/8f1b34b48825fcec5e9c67f33e255770b1e0bc45\n\nhttps://github.com/mlabs-haskell/purescript-cip30-typesafe/commit/d72e51fbc0255eb3246c9132d295de7f65e16a99\n\nhttps://github.com/Plutonomicon/cardano-transaction-lib/commit/e23ff270b3013db769c0dba1e7cfb284f4517a82",
+      "kinds": [
+        "code"
+      ],
+      "links": 16
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 45238,
+      "promise": "・Since the beginning, we have been using our own, manually written PureScript bindings for cardano-serialization-lib (CSL for short). But since we created them, a better PureScript wrapper library has appeared - https://github.com/mlabs-haskell/purescript-cardano-serialization-lib The output of this milestone is the removal of our bindings and inclusion of this library as a replacement. \n・We noticed that sometimes it makes sense to use domain types of CTL separately from the CTL itself. Currently, there is no way to depend only on the types. The outputs of this milestone are two packages: for cardano-domain and plutus-domain types.",
+      "criteria": "・There is no CSL wrapper code left in CTL. All conversion operations use purescript-cardano-serialization-lib.\n・Two new repositories with PureScript packages are created: for Cardano domain types and Plutus domain types.",
+      "report": "CTL Milestone report - PoA3\n\nOutputs \n\n-Removal of our own manual PureScript bindings for purescript-cardano-serialization-lib\n-Two new packages: cardano-domain and plutus-domain types\n\nAcceptance Criteria\n\n-no CSL wrapper code left in CTL\n-two new repositories with PureScript packages\n\nEvidence of Milestones\n\nLink to plutus-domain types repository\nhttps://github.com/mlabs-haskell/purescript-plutus-types\n\nLink to Cardano-domain types repository\nhttps://github.com/mlabs-haskell/purescript-cardano-types\n\nLinks showing CSL wrapper code has been removed from CTL in favor of purescript-cardano-serialization-lib. Also shows use of plutus-types and cardano-types.\nhttps://github.com/Plutonomicon/cardano-transaction-lib/pull/1614\nhttps://github.com/Plutonomicon/cardano-transaction-lib/blob/develop/packages.dhall\nhttps://github.com/Plutonomicon/cardano-transaction-lib/blob/develop/spago-packages.nix",
+      "kinds": [
+        "code"
+      ],
+      "links": 5
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 67857,
+      "promise": "・Reworked constraints interface that addresses the problems described in the proposals.\n・Better error messages - human-readable text instead of cryptic names. Better error message documentation - suggestions what to do for some of the messages should be added to the docs.\n・Better time-related APIs, as described in the proposal.\n・Major release version that will be used for later support.",
+      "criteria": "・The new constraints interface is provided. It may be called something else (not “constraints”, because we find the name confusing, and also to not mix the old and the new version). Conceptually, it must fill in the same place in the library - a set of functions to facilitate building a transaction.\n・There are no more error-type values that don’t have human-readable descriptions. Documentation for the error messages is provided in a separate new document in the repo.\n・Time-related APIs are reworked - they should allow operating in both POSIXTime and slot domains - this covers the constraints i",
+      "report": "The delivery of this milestone corresponds to CTL v9.0.0 (commit 7bc136f833b00453cc0a48bbf9a5b5360b7d731d):\nhttps://github.com/Plutonomicon/cardano-transaction-lib/tree/v9.0.0\nEvidence of milestone completion:\n\n・A link to a commit where the new interface is implemented. A documentation file with a written description of every constraint.\n\nThe new interface, which we named “builder”, is located in its own separate package:\nhttps://github.com/mlabs-haskell/purescript-cardano-transaction-builder\nCTL depends on this package:\nhttps://github.com/Plutonomicon/cardano-transaction-lib/blob/7bc136f833b00453cc0a48bbf9a5b5360b7d731d/spago.dhall#L25\nThe documentation is located here:\nhttps://plutonomicon.github.io/cardano-transaction-lib/Cardano.Transaction.Builder.html\n・A link to a commit and links to a set of functions within this commit, that implement conversion from cryptic error names to human-readable strings. Links to documentation where error messages are described.\n\nThe list of commits:\nhttps://github.com/Plutonomicon/cardano-transaction-lib/pull/1545/commits\nThe explanations for error meanings are located right in the pretty printing functions, so that the user does not have to look up any additional info.\nHuman-readable text for BalanceTxError:\nhttps://github.com/Plutonomicon/cardano-transaction-lib/blob/6ad58558368b079cb10ce109b55f8ba250b0ec69/src/Internal/BalanceTx/Error.purs#L94\nFor MkUnbalancedTxError:\nhttps://github.com/Plutonomicon/cardano-transaction-lib/blob/6ad58558368b079cb10ce109b55f8ba250b0ec69/src/Internal/ProcessConstraints/Error.purs#L78\n\n・A link to a commit where the new APIs are implemented.\n\nHere is the list of commits: https://github.com/Plutonomicon/cardano-transaction-lib/pull/1542/commits\nThe new functions:\ngetCurrentEra: https://github.com/Plutonomicon/cardano-transaction-lib/blob/8407fa4280fd71fa2dfc87666a2e3d5dcc2c4c4a/src/Contract/Time.purs#L119\nnormalizeTimeInterval:\nhttps://github.com/Plutonomicon/cardano-transaction-lib/blob/8407fa4280fd7",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 22,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 45239,
+      "promise": "・CTL dependency updates\n・User feedback processing\n・A tagged CTL release on Github, containing: The code with combined changes from all the milestones; Documentation, supporting these changes\n・A release video showcasing the work",
+      "criteria": "・The library is kept up to date with the most recent releases of software it depends on.\n・All user feedback (GitHub issues) provided by the general public, including bug reports, is addressed. Bugs introduced while working on this scope are fixed, or, in case it is impossible or unfeasible to fix some of the shortcomings, a written justification is provided. If there is no user feedback (no problems discovered), this output should be considered accepted.",
+      "report": "EVIDENCE OF MILESTONE COMPLETION\n1. A list of most recent dependency versions and a commit link where it is shown that CTL at a given revision uses them.\npurescript-cip30 v1.0.1: https://github.com/mlabs-haskell/purescript-cip30/releases/tag/v1.0.1\npurescript-cip30-typesafe v1.0.0: https://github.com/mlabs-haskell/purescript-cip30-typesafe/releases/tag/v1.0.0\npurescript-cardano-types v3.0.0: https://github.com/mlabs-haskell/purescript-cardano-types/releases/tag/v3.0.0\npurescript-plutus-types v1.0.1: https://github.com/mlabs-haskell/purescript-plutus-types/releases/tag/v1.0.1\npurescript-cardano-serialization-lib v2.0.0: https://github.com/mlabs-haskell/purescript-cardano-serialization-lib/releases/tag/v2.0.0\npurescript-cardano-transaction-builder v2.0.0: https://github.com/mlabs-haskell/purescript-cardano-transaction-builder/releases/tag/v2.0.0\nThe latest version of CTL, v9.3.1, includes the dependencies listed above, each at the correct version specified.\nLink to the commit: https://github.com/Plutonomicon/cardano-transaction-lib/commit/be434c41d80bb10d25825ed247d81f630f2d6b89\n2. A list of GitHub issues: closed with a fix if a change was made, or open with a justification provided if fixing is impossible / unfeasible.\nThe following issues have been successfully resolved within the scope of the project:\n1. Switch from Data.BigInt to JS.BigInt #1472 (https://github.com/Plutonomicon/cardano-transaction-lib/issues/1472)\n2. Update affjax v12 to v13 #1430 (https://github.com/Plutonomicon/cardano-transaction-lib/issues/1430)\n3. Change generation: too many outputs problem #1530 (https://github.com/Plutonomicon/cardano-transaction-lib/issues/1530)\n4. Can’t run multiple Plutip clusters as kupos share the same %TMP%/kupo-db directory #1570 (https://github.com/Plutonomicon/cardano-transaction-lib/issues/1570)\n5. Simplify bundling process #1588 (https://github.com/Plutonomicon/cardano-transaction-lib/issues/1588)\n6. Improve ogmios balance error’s wording #1529 (https://github.co",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 27,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・「要求事項」は、どのようなユースケースをサポートしたいかを文書化します。\n・「DeNS Architecture」は、主要なアーキテクチャのコンポーネントと実装オプションを記述しています。 ここでは、Oracle、bind/powerdnsの統合、プロトコルインデックス、UI(clis/guisなど)について説明しています.",
+      "criteria": "前のセクションの文書出力は、プロジェクトの要件とアーキテクチャの明確な考えを提供するために十分である必要があります.",
+      "report": "インフォメーション\n「DeNS の要件」と「DeNS アーキテクチャ」のドキュメントが作成され、レビュアーの利便性と参照の容易さを単一のファイルにまとめました。\n\nアクセプタンス・クリテリア\nドキュメントは、プロジェクトの要件とアーキテクチャの明確なアイデアを提供します。\n\nソリューション\nドキュメンテーション - 単一のファイルに組み込まれる - プロジェクトリポジトリで利用できます。\nhttps://github.com/mlabs-haskell/DeNS/blob/sean/report/doc/ArchitectureAndRequirements.md"
+    },
+    {
+      "no": 2,
+      "promise": "プロトコルで使用するバリデータ、ダタム、データ構造などのドラフト仕様を含む、DNS のオンチェーンプロトコルのアウトラインを設計します。\n・オンチェーンプロトコルのドラフト実装 これは最終的な実装ではないかもしれませんが、(設計文書への相対的な)完了し、テストスイート(おそらくユニットテストのみ)を持っている必要があります.",
+      "criteria": "・設計文書は、オンチェーンアーキテクチャの完全かつ実行可能な仕様を明らかにします。\n・オンチェーンバリデータとデータ構造の実装が完了し、仕様に準じます。\n・実装には、設計の基本的な実行可能性を示すテストスイートが含まれています.",
+      "report": "マイルストーン・エヴィデンス\nこの外部リポジトリの幸せなパスのテストと関連するオンチェーンコードが含まれます。 依存関係が非互換で、ディレクトリ構造を維持し、プロジェクト目標に git 関連のタスクオーソゴンラルの大きなスワスを避けるため、テストは外部リポジトリに配置されました\n<テスト>\nhttps://github.com/mlabs-haskell/dens-onchain-tests\n<onchain コード>\nhttps://github.com/mlabs-haskell/dens-onchain-tests/tree/master/src/Onchain\n設計仕様は、実際にMilstone1で共有したデザインドキュメントに含まれています。\nhttps://github.com/mlabs-haskell/DeNS/blob/main/doc/Architecture.md"
+    },
+    {
+      "no": 3,
+      "promise": "DeNS に関連する Cardano トランザクションをリスニングし、リレーショナルデータベースを出力するパッケージ。 これは、DNS分析などの他のアプリケーションのための主要なクエリレイヤーとして機能します(これは、セキュリティ関連のアプリケーションに特に有用であることを期待しています)が、従来のDNSサービスの統合が行われるデータベースとして機能します.",
+      "criteria": "上記のパッケージは、テストネットトランザクションをクエリ/インデックスすることで、DNSレコードのリレーショナルデータベースを出力することができます.",
+      "report": "ここにホストされているMilstone 3のPoAレポートをご覧ください:\nhttps://mlabs-haskell.github.io/DeNS/docs/catalyst-reports/milestone-3/"
+    },
+    {
+      "no": 4,
+      "promise": "・DeNS取引をビルドできる「offchain」(ほとんどのdappsよりもかなり充実しています)コンポーネントで、CLI、GUI、APIを通じてユーザーに公開することができます。\n・最小限に、プロトコルとのやりとりを有意にするために使用できる基本的なDeNS CLIユーティリティ.",
+      "criteria": "オフチェーンコンポーネントを使用したCLIコンポーネントは、DeNSトランザクションの構築や、プロトコルとのやりとりが可能である(フレーズの定義は「うまくやりとりする」)。最初の数マイルストーンの設計文書の出力から評価者に明確である.",
+      "report": "ここにホストされているマイルストーン4のPoAレポートをご覧ください。\nhttps://mlabs-haskell.github.io/DeNS/docs/catalyst-reports/milestone-4/"
+    },
+    {
+      "no": 5,
+      "promise": "・ユーザー向けに展開対応のパッケージやコンテナ(Nix/Docker)を配布\n・DNSコンポーネントの各コンポーネントに、適用/有用性のある黄金のテストを含む試験\n・ユーザー向けドキュメントとサンプルの提供\n・実行中のサービス(正確な性質は、設計上の決定、暫定的に:DeNS “ローカルリゾルバ”)は、ユーザーが統合して、システムを使用して名前解決クエリを実行することができます.",
+      "criteria": "・パッケージ/コンテナを適切に設定し、DeNSプロトコルとやり取りするユーザがデプロイできます。\n・テストスイートは広範囲で、すべてのテストパスです。\n・利用者がプロトコルとやり取りするために、文書化が明確で、徹底的に、十分である。\n・実際に動作するサービス.",
+      "report": "今回紹介したMilstone FinalのPoAレポートをご覧ください。\n\nhttps://mlabs-haskell.github.io/DeNS/docs/catalyst-reports/final-milestone/\n\n当社のクローズアウトレポート:\n\nhttps://drive.google.com/file/d/1JDabJY7ERhmPjUq9bSTH-VYHq6NYGvMa/view?usp=sharing\n\n私達の閉鎖ビデオ:\n\nhttps://www.youtube.com/watch?v= JK kiDhnTM"
+    }
+  ]
+}

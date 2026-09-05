@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・サンプルユースケース(例:@ada-to-min)の関連ルーティングスクリプトを用いた機能的なスマートビーコン試作。\n・基本的なスキーマを含むスマートビーコンの作成とデプロイの方法を説明するドキュメント。\n・コードと例のスクリプトでGitHubリポジトリ.",
+      "criteria": "・クリアなドキュメントで試作をしています。\n・Cardano testnetのプロトタイプの成功展開。\n・プロトタイプを試した開発者やコミュニティメンバーからの肯定的なフィードバック.",
+      "report": "マイルストーン1の3つの基準をすべて保有\n・サンプルユースケース(例:@ada-to-min)の関連ルーティングスクリプトを用いた機能的なスマートビーコン試作。\n・基本的なスキーマを含むスマートビーコンの作成とデプロイの方法を説明するドキュメント。\n・コードと例のスクリプトでGitHubリポジトリ。\n\nすべてのコード、ドキュメント、および使用方法が github リポジトリにあります。\nhttps://github.com/Anastasia-Labs/smart-handles"
+    },
+    {
+      "no": 2,
+      "promise": "・ADA-to-min ルーティングスマートコントラクト用のOffchain SDKを開発\n・洗練されたスマートBeaconフレームワークで、ルーティングスクリプトを改善しました。\n・より先進的なユースケースやシナリオをカバーするために文書化が拡大\n・追加例のスクリプトは汎用性を示す.",
+      "criteria": "・オフカインSDKの完成と対応\n・洗練されたユーザーフレンドリーなスマートBeaconフレームワーク。\n・より複雑なインタラクションに対応するドキュメント\n・異なるシナリオで複数の例のスクリプトを成功させる",
+      "report": "オフチェーンSDKを完成し、https://github.com/Anastasia-Labs/smart-handles-offchainで利用可能\ntestne トランザクション README.md とともに、Preprod testnet で testnet トランザクションを表示した詳細なドキュメントがあります。\nTestnet トランザクション:\n・登録住所:https://preprod.cexplorer.io/tx/073641112c7b7c645521d1aca3650989bdc0bf06ae36e2e74287e015dcc99\n・バッチスワップリクエスト: https://preprod.cexplorer.io/tx/afa0b004e0679cbfb8879a71cbad7f061b362a68ca314c2d6a907e93d9cbd14a\n・ルーティングエージェントによるバッチスワップ: https://preprod.cexplorer.io/tx/b34377eb875b47b9c66ed710d986baece744194e86ebb8c27286e8e50177045a"
+    },
+    {
+      "no": 3,
+      "promise": "・スマートビーコンフレームワークにおける分散型ルーティングエージェントのプロトタイプ実装\n・分散型ルーティングエージェントの仕組みを説明する文書化\n・分散型ルーティングを実証するサンプルユースケース.",
+      "criteria": "・スマートコントラクトとオフチェーンSDKのルーティングでプロトタイプが正常に動作\n・分散型ルーティングエージェントをフレームワークに統合\n・分散型ルーティング剤の概念と利点を説明する文書化。\n・分散型ルーティングシナリオの実証.",
+      "report": "スマートなBeacons触媒の提案のためにM3を提出するProud。 このPoAでは、以下のとおりgithubリポジトリを用意しました。\n・ルーティングエージェントの実行方法(動画あり)\n・分散型ルーティングエージェントによる更新フレームワーク\n・レポジトリ内に分散型ルーティングエージェントの機能を発揮するTestnet取引。\n・分散型ルーティング・プロセスとルーティング・エージェントの実行方法に関する指示を明らかにする文書化\n\nリポジトリへのリンク:https://github.com/Anastasia-Labs/smart-handles-agent/blob/main/README.md\n\nあなたのフィードバックをありがとう:)\nこのPoAに必要な文書を追加しました。 あなたが見つけるレポで\n• ルーティングエージェントを実行する方法は、エージェントのレポの下にありますが、スマートハンドルの #off-chain-tools と #using-routing-contract の手順では、詳細な手順を持つ2つの関連リポジトリへのリンクがあります。\nhttps://github.com/Anastasia-Labs/smart-handles?tab=readme-ov-file#off-chain-tools\nhttps://github.com/Anastasia-Labs/smart-handles?tab=readme-ovfile#using-routing-contract\n•Testnet取引は、分散型ルーティングエージェントの機能を実証します。 これらは、スマートハンドルオフチェーンリポジトリで述べられています。これにより、リーダーが含まれている例のパッケージのドキュメントを指しています。\nhttps://github.com/Anastasia-Labs/smart-handles-offchain/blob/main/example/README.md"
+    },
+    {
+      "no": 4,
+      "promise": "・堅牢なルーティングスクリプトと関連するスキーマの形での教材\n・オープンソースウォレットを代わって統合を支援するPRを作成\n・スマートビーコンと統合する方法に関する開発者やウォレットプロバイダの包括的なドキュメント。\n・ウォレット用のサンプル統合スクリプト。\n・プロジェクトクローズアウトレポート\n・プロジェクトクローズアウト動画",
+      "criteria": "・教材費はIOHK開発者体験ワーキンググループが対象\n・文書化が明確に書かれ、スマートビーコンの実装と使用方法に関する十分な情報を提供\n・https://github.com/Anastasia-Labs/smart-handles で利用可能な統合の詳細なアクセス可能なドキュメント\n・プロジェクトクローズアウトレポートを提出\n・プロジェクトクローズアウト映像を提出",
+      "report": "Smart Beacons の提案のために最終マイルストーンを提出してくださったことを誇りに思います。 ここでは、M4のために持っているもの\nプロジェクトクローズアウトビデオ: https://youtu.be/CM6CUAHma6I\nプロジェクトクローズアウトレポート:https://github.com/Anastasia-Labs/project-close-out-reports/blob/main/f10-smart-handles-closeout-report/smart-handles-close-out-report.pdf\nオープンソースのCardanoウォレットでスマートBeaconの統合のためのPR - ゲームチェンジャー: https://github.com/GameChangerFinance/gamechanger.wallet/pull/12\n完全な設計文書:\n• onchain: https://github.com/Anastasia-Labs/smart-handles\n•オフチェーンSDK:https://github.com/Anastasia-Labs/smart-handles-offchain"
+    }
+  ]
+}

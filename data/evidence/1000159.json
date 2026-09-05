@@ -1,0 +1,75 @@
+{
+  "title": "Scrolls - Develop and deploy Custom GraphQL chain indexes",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 41429,
+      "promise": "Integrate Deno / WASM runtime into Scrolls pipeline\nAdapt processing logic for Map / Reduce operations\nAdapt storage backend to accept custom schemas",
+      "criteria": "A new version of Scrolls that support custom indexing of custom schemas by enabling developers to plugin the map / reduce logic without having to deal with any of the common boilerplate.",
+      "report": "Milestone Outputs:\n\n・Integrate Deno / WASM runtime into Scrolls pipeline\n・Successfully incorporated Deno / WASM runtime into the Scrolls pipeline, ensuring seamless compatibility and efficient execution.\n・Adapt processing logic for Map / Reduce operations\n・Implemented modifications in the processing logic to facilitate Map / Reduce operations, enhancing the versatility of data processing within Scrolls.\n・Adapt storage backend to accept custom schemas\n・Successfully adjusted the storage backend to accommodate custom schemas, providing developers the flexibility to define and use their own data structures.\n\nAcceptance Criteria:\n\nThe success of Milestone 1 is determined by the following criteria:\n・New Version of Scrolls: A new version of Scrolls has been developed and released, capable of supporting custom indexing for custom schemas.\n・Plug-and-Play Map / Reduce Logic: Developers can seamlessly integrate their own Map / Reduce logic without dealing with common boilerplate code, simplifying the development process.\n\nEvidence of Milestone Completion:\n\nThe publicly available source code of the official codebase can be found in TxPipe organization in the Scrolls repository:\nhttps://github.com/txpipe/scrolls\nA relevant fork of the repository that has been used for prototyping the solution can be found in the Alethea organization:\nhttps://github.com/alethea-io/scrolls-dolos\nThe following PR are relevant for the analysis of the changes for this milestone. They point to either the Scrolls repository or other upstream dependencies:\n・https://github.com/txpipe/scrolls/pull/151\n・https://github.com/txpipe/scrolls/pull/152\n・https://github.com/txpipe/scrolls/pull/154\n・https://github.com/txpipe/scrolls/pull/155\n・https://github.com/txpipe/pallas/pull/284\n・https://github.com/txpipe/pallas/pull/259\n・https://github.com/txpipe/pallas/pull/234\n・https://github.com/txpipe/pallas/pull/195\n・https://github.com/txpipe/pallas/pull/184\n・https://github.com/construkts/gasket-rs/pull/15\n・https://github",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 30,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 33750,
+      "promise": "・Implement Typescript library for Map / Reduce definition\n・Implement Rust library for Map / Reduce definition\n・Implement a CLI (command line interace) for scaffolding indexer code\n・Prepare documentation and tutorials",
+      "criteria": "Developer have documentation and tools to create Map / Reduce algorithms in Typescript and Rust langauges that can be executed by Scrolls to create chain indexes",
+      "report": "To provide concrete evidence of milestone completion, the Scrolls project has:\nPublicly Available Libraries:\n・Released publicly available Typescript and Rust libraries supporting the creation of Map/Reduce logic. The documentation for how to interact with these libraries can be found here:\n・https://txpipe.github.io/scrolls/reducers \n\nCLI Binary Release:\n・Released the binary version of the CLI, enabling the scaffolding of codebase structures for new indexers using Typescript and Rust languages which can be downloaded here:\n・https://github.com/txpipe/scrolls/releases \n\nDocumentation and Code Repository:\n・Published documentation on how to build Scrolls-compatible Map/Reduce algorithms in Typescript and Rust, accessible at the public repository of the project located here: https://github.com/txpipe/scrolls\n・The rendered version of the documentation can be found here: https://txpipe.github.io/scrolls \n\nVideo Summary:\n・Two short videos, one summarizing the achievements of the milestone and the other showcasing a DEMO have been shared as part of the Proof of Achievement (PoA).",
+      "kinds": [
+        "code",
+        "doc",
+        "live"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 33750,
+      "promise": "Implement Go library for Map / Reduce definition\nImplement Python library for Map / Reduce definition\nImplement a CLI (command line interace) for scaffolding indexer code\nPrepare documentation and tutorials",
+      "criteria": "Developer have documentation and tools to create Map / Reduce algorithms in Go and Python langauges that can be executed by Scrolls to create chain indexes",
+      "report": "Scrolls - Milestone 3 completion\n\nAcceptance Criteria Fulfillment\nThe Scrolls project Milestone 3 completion has successfully fulfilled the acceptance criteria\nEvidence of Milestone Completion\nTo provide concrete evidence of milestone completion, the Scrolls project has:\nPublicly Available Libraries:\nReleased publicly available Go and Python libraries supporting the creation of Map/Reduce logic. The documentation for how to interact with these libraries can be found here:\nhttps://txpipe.github.io/scrolls/reducers \nCLI Binary Release:\nReleased the binary version of the CLI, enabling the scaffolding of codebase structures for new indexers using Go and Python languages which can be downloaded here:\nhttps://github.com/txpipe/scrolls/releases \nDocumentation and Code Repository:\nPublished documentation on how to build Scrolls-compatible Map/Reduce algorithms in Go and Python, accessible at the public repository of the project located here: \n﻿https://github.com/txpipe/scrolls/tree/sdk \nThe rendered version of the documentation can be found here:\nhttps://txpipe.github.io/scrolls \nVideo Summary:\nA short video summarizing the achievements of the milestone has been shared as part of the Proof of Achievement (PoA). The video is publicly available",
+      "kinds": [
+        "code",
+        "doc",
+        "live"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 50354,
+      "promise": "Implement GraphQL server to serve custom schemas\nCreate end-to-end examples",
+      "criteria": "A flexible mechanism to query custom indexes using a well-known and popular mechanism (GraphQL)",
+      "report": "Implement GraphQL server to serve custom schemas\nCreate end-to-end examples\n\nWe have created a example of a GraphQL server that serves custom schema \nhttps://github.com/txpipe/asteria/blob/523823b198b56a5960bfe6ff790c68546056bd57/backend/src/main.rs#L128\nIn this example it serves as a backend for UTxO based game called Project Asteria\nThe data comes from onchain actions indexed via Oura \nhttps://github.com/txpipe/oura/blob/67cc38151cc06014d52b6a73cbf74ae659c28ef4/examples/postgresql/daemon.toml\nWe then project raw UTxO CBOR into meaningful postgres schema / tables, like the position of the objects within the game using Mumak Postgres Extension \nhttps://github.com/txpipe/mumak/\nWith that we are able to do amazing capabilities like allowing via GraphQL doing a search algorithm (using Mahan Distance to detect objects within a certain radius for example)\n\nEvidence of milestone completion \nPublicly available source code under Apache license of a GraphQL server that allows access to custom indexes defined in Scrolls.\nhttps://github.com/txpipe/asteria/tree/main/backend",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 9
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 48574,
+      "promise": "Add Scrolls as a new extension in Demeter.run\nAllow provisioning of new indexers by uploading the map / reduce definition\nProvide automatic provision of GraphQL endpoints for each indexer",
+      "criteria": "Cardano devs have access to a hosted solution that allows them to deploy custom indexes without any kind of effort outside of their own use-case.",
+      "report": "Closeout report can be found here:\nhttps://docs.google.com/document/d/1Jq6ev3dbeJco6gzVjPKx776KrCfZ9pBEYtRYLsyeRgU/edit?usp=sharing\nCloseout vide can be found here:\nhttps://youtu.be/Pn6cyA2i39k?feature=shared\nPublicly available access to the Scrolls feature in Demeter.run can be found here:\nhttps://demeter.run/ports \nSource code repository for the Demeter integration of the Scrolls indexer:\nhttps://github.com/demeter-run/ext-cardano-scrolls\nSource code repository for the Scrolls backend and SDK:\nhttps://github.com/txpipe/scrolls/tree/sdk",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "HLabs: typescript cardano-node / network layer - \\*runtime independent\\* server and client implementations of the ouroboros miniprotocols",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "・abstract socket for runtime independent library\n・multiplexer messages handlers\n・multiplexer events",
+      "criteria": "the library provides an abstract interface to connect to a \"socket like\" component for communication with the other peer.\nmessages received via the socket are parsed and split according to the specification based on the headers, so that the multiplexer can recognize the intended mini protocol\nevent based interface to notify the single mini protocols on new messages",
+      "report": "reporting the evidence section:\n・a \"SocketLike\" abstraction\n・functions for multiplexer messages\n・Multiplexer class\n\nyou can find the \"SocketLike\" implementation here\nall the functions related to multiplexer messages here\nand a Multiplexer class here (handling socket and dispatching events based on the miniprotocol)",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60000,
+      "promise": "Cbor serialization and deserialization, according to the `IntersectMBO/ouroboros-network` cddl definitions, for all the mini protocols messages.\nspecifically:\n・block-fetch\n・chain-sync\n・handshake\n・keep-alive\n・local-state-query\n・local-tx-monitor\n・peer-sharing\n・tx-submission",
+      "criteria": "The library is able to parse and encode messages for each mini protocol.\nspecifically:\n・block-fetch\n・chain-sync\n・handshake\n・keep-alive\n・local-state-query\n・local-tx-monitor\n・peer-sharing\n・tx-submission",
+      "report": "The structure of `src/protocols` in the repository looks like this\n\n```\nprotocols\n ├── block-fetch\n ├── chain-sync\n ├── handshake\n ├── index.ts\n ├── interfaces\n ├── keep-alive\n ├── local-state-query\n ├── local-tx-monitor\n ├── local-tx-submit\n ├── peer-sharing\n ├── tx-submission\n ├── types\n └── utils\n```\n\neach of the entry (except `index.ts`) is a directory, with the exception of `types`, `utils` and `interfaces`, each corresponds to an ouroboros miniprotocol.\n\nin each of the miniprotocol directory you will find a `messages` folder, there you will find all the messages implementations relative to the protocol (and possibly additional data if the specific protocol requires it)\n\nfor example `src/protocols/handshake/messages` looks like this\n\n```\nmessages\n├── HandshakeAcceptVersion.ts\n├── HandshakeMessage.ts\n├── HandshakeProposeVersion.ts\n├── HandshakeQueryReply.ts\n├── HandshakeRefuse.ts\n├── index.ts\n└── RefuseReason\n ├── index.ts\n ├── RefuseReasonHandshakeDecodeError.ts\n ├── RefuseReasonRefuse.ts\n ├── RefuseReason.ts\n └── RefuseReasonVersionMismatch.ts\n```\n\neach of the entry (except `index.ts`) is a specific kind of message of the handshake miniprotocol, with respective serialization and de-serialization functions\n\nhere are the direct links to the subfolders corresponding to each protocol\n\nblock-fetch\nchain-sync\nhandshake\nkeep-alive\nlocal-state-query\nlocal-tx-monitor\npeer-sharing\ntx-submission\n\nin each of these you will find the `messages` sub folder, where the relative implementations are present",
+      "kinds": [
+        "code"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40000,
+      "promise": "classes for each mini protocol to handle the multiplexer client messages.\nspecifically the following mini protocol clients will be implemented:\n・block-fetch\n・chain-sync\n・handshake\n・keep-alive\n・local-state-query\n・local-tx-monitor\n・peer-sharing\n・tx-submission",
+      "criteria": "each of the implemented classes covers events to receive messages from the server and implements methods to send messages to the server.\nspecifically the following mini protocol clients will be implemented:\n・block-fetch\n・chain-sync\n・handshake\n・keep-alive\n・local-state-query\n・local-tx-monitor\n・peer-sharing\n・tx-submission",
+      "report": "The structure of the repo is the same as the one described in the previous milestone PoA.\nThis time, instead of the `messages` sub folder, the focus is on the files that end in `...Client.ts`\neach of those files exports a class that represents the client implementation of the respective miniprotocol.\nthe clients handle all the messages relative to the miniprotocol that come from the multiplexer, and provide a Promise-based interface, as well as an event-based\nhere are the direct links to the subfolders corresponding to each protocol\nblock-fetch\nchain-sync\nhandshake\nkeep-alive\nlocal-state-query\nlocal-tx-monitor\npeer-sharing\ntx-submission",
+      "kinds": [
+        "code"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 50000,
+      "promise": "classes for each mini protocol to handle the multiplexer server messages.\nspecifically the following mini protocol servers will be implemented:\n・block-fetch\n・chain-sync\n・handshake\n・keep-alive\n・local-state-query\n・local-tx-monitor\n・peer-sharing\n・tx-submission",
+      "criteria": "each of the implemented classes covers events to receive messages from the clients or other servers and implements methods to send messages to the other peers\nspecifically the following mini protocol servers will be implemented:\n・block-fetch\n・chain-sync\n・handshake\n・keep-alive\n・local-state-query\n・local-tx-monitor\n・peer-sharing\n・tx-submission",
+      "report": "The structure of the repo is the same as the one described in the previous milestones PoA.\nThis time the focus is on the files that end in `...Server.ts`\neach of those files exports a class that represents the server implementation of the respective miniprotocol.\nthe clients handle all the messages relative to the miniprotocol that come from the multiplexer, these are usually a bit more complex if compared to the respective clients, because they need to access infos from the cardano-node (this being the server)\nthey still provide a Promise-based interface, as well as an event-based\nhere are the direct links to the subfolders corresponding to each protocol\nblock-fetch\nchain-sync\nhandshake\nkeep-alive\nlocal-state-query\nlocal-tx-monitor\npeer-sharing\ntx-submission",
+      "kinds": [
+        "code"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 30000,
+      "promise": "video showing the work funded via this proposal and tweet mentioning it for visibility\nand a written close out report explaining what was accomplished",
+      "criteria": "the video and report can be easily found by anyone interested in it",
+      "report": "close-out video: https://youtu.be/IuwwICdcS8A\nclose-out report: https://github.com/HarmonicLabs/catalyst-close-reports/blob/main/1100160-ouroboros-miniprotocols-ts/README.md\nTweet for visibility: https://x.com/MicheleHarmonic/status/1910719290744971372",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

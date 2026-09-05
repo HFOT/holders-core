@@ -1,0 +1,63 @@
+{
+  "title": "The Malama Project: Distributed Hawaii Carbon Credits on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "1. Project blueprint detailing blockchain architecture and integration strategy.\n2. UI/UX design prototypes for the platform.\na. Clear information pertaining to carbon sequestration methods\nb. The ability for farmers to easily sign up and begin earning rewards for their carbon-increasing efforts.\nc. The ability for farmers to see their created carbon efforts on-chain. \n3. Documentation on the process for minting tokens based on farmers' sequestration efforts from The Malama Project app.\na. More detailed information about the project's goals, design, and function can be found at https://github.com/Malama-Project/milestones/.",
+      "criteria": "1. Approval of technical specifications by the project team.\n2. UI/UX designs meeting predefined usability standards.\n3. Detailed documentation on the token minting process reviewed and approved by the project team.",
+      "report": "This Report is simply an overview of the Proof of Achievements for Milestone 1. \nA link to the full Blueprint is Located at: https://github.com/Malama-Project/milestones/blob/main/Project%20Blueprint.md\nA link to the figma Board is Located at: https://www.figma.com/design/ZSyYCkYvMpWP9bGn9rGcbd/MalamaProjectFigma?m=auto&t=imLHg2TfdEQZDjUb-6\nA link to a visual representation of the Project Architecture is Located at: https://miro.com/app/board/uXjVLTv6Crs=/?share_link_id=932311592987\nAnother copy of the this report can be found at: https://github.com/Malama-Project/milestones/blob/main/milestone1poa.md\n\n# Malama Project Milestone 1 Outputs:\n**1. Project Blueprint Detailing Blockchain Architecture and Integration Strategy**:\n We have defined the initial blockchain architecture and integration strategy for The Malama Project. \n We have organized our project into four main pillars:\n - 1a. Fully operational stake pool. All wallet creation, tx, and minting are performed using the stake pool. \n - 2b. MongoDB. We use MongoDB for off-chain storage, and asset management before they go on-chain.\n - 3c. A react/ts frontend to allow user input.\n - 4c. Fastify Server. We use the Fastify server to facilitate communication between the stake pool, front-end, and MongoDB.\n**2. UI/UX Design Prototypes for the Platform**:\nLINK TO FIGMA: https://www.figma.com/design/ZSyYCkYvMpWP9bGn9rGcbd/MalamaProjectFigma?m=auto&t=imLHg2TfdEQZDjUb-6\n Carbon Sequestration Methods Information:\n The UI will include clear information on current carbon sequestration methods accessible through the user's profile via a dashboard. Currently: \n - A. IMO Creation \n - B. Biochar Application \n Information related to carbon-increasing efforts is saved in the MongoDB until approved for credit creation/and minted by a board vote.\n We are starting with IMO (Indigenous Micro-Organism creation) and applying biochar. \n Other methods will be added as approved by the project. \n \n**2b. Easy Signup for Farmers**:\n When Farm",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "1. Marketing and community engagement report.\n2. Technical feasibility study report.\n3. Workshops with local landowners.",
+      "criteria": "1. Documentation of established market interest and community support.\na. This will include input from landowners of what tools are needed to record carbon-increasing work\nb. Input of landowners on what changes are needed to increase usability of website\nc. Report of these landowner changes.(Will be reflected in github commits)\n2. Successful initial testing results confirming technical viability.\na. Implementations of the landowner's recommended changes.\nb. Documenting any technical difficulties/suggested changes arising from the implemented landowner changes. \n3. Positive feedback from commun",
+      "report": "MALAMA Project - Milestone 2 Resubmission\nCatalyst Proposal: #1200230\nDate: February 2025\nOVERVIEW\nDuring Milestone 2, the MALAMA Project continued refining its Cardano-based carbon tracking solution, leveraging feedback from local landowners (Paul & Jeffery), government representatives, and the broader Cardano community. This resubmission provides structured documentation, direct links, and photographic evidence, addressing reviewer requests for clarity and transparency. We also developed a mobile-friendly approach for our upcoming dashboard, ensuring landowners can manage parcels and log data on the go.\nKEY UPDATES & CHANGES\n・Structured Evidence & Direct Links\n\n・Each major deliverable (Marketing, Technical Feasibility, Workshops, Farm Tours) is in a dedicated Markdown file with its own GitHub link.\n\n・Detailed Farm Tours\n\n・Provided dates, attendees, feedback, and photos for the Oct 17 Jeffrey Farm Tour and Oct 17 Paul Farm Tour, clarifying how on-site equipment and processes informed the platform’s design.\n\n・Website & App\n\n・Created malamaproject.org (explanatory site) with plain-language guides for carbon credit generation and daily data logging.\n・app.malamaproject.org remains our functional environment for credit creation and land parcel management.\n\n・Mobile-Friendly Dashboard\n\n・Began integrating mobile-focused UI/UX, shown in our screenshots and a live prototype at:\n・https://malama-labs-nana.vercel.app\n・Addresses landowner feedback for easy, in-field data updates.\n\nKEY MILESTONE 2 DOCUMENTS\n・Marketing and Community Engagement Report\n\n・Summarizes outreach efforts, website updates, and validated market interest.\n・View on GitHub:\n・https://github.com/Malama-Project/milestones/blob/main/Marketing_Community_Engagement/MarketingandCommunityEngagementReport.md\n\n・Technical Feasibility Study Report\n\n・Explores our project’s on-chain design, smart contract logic, and next steps for open-sourcing.\n・View on GitHub:\n・https://github.com/Malama-Project/milestones/blob/main/Techni",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 20000,
+      "promise": "1. Beta version of The Malama Project platform.\n2. Pilot testing report with user feedback.\n3. Ongoing legal compliance documentation.",
+      "criteria": "1. Beta version of The Malama Project platform.\na. Usable website for community members to test\nb. Public-facing github page to track progress at: https://github.com/Malama-Project/milestones\n2. Pilot testing report with user feedback.\na. Feedback from local farmer pilot testing describing changes needed to improve usability.(with minimum of 400 acres) \n3. Ongoing legal compliance documentation.\na. update from the legal team with efforts completed to make the Malama Project an actual entity.",
+      "report": "Malama Project — Milestone 3: Proof of Achievement (POA)\n Date: April 2025\n Live Beta: https://app.malamaproject.org\n Milestone Tracker: https://github.com/Malama-Project/milestones\n・Beta Version of The Malama Project Platform\n\na. Usable Website for Community Members to Test\n The beta platform is now publicly live and fully functional:\n https://app.malamaproject.org\nThis release incorporates user feedback and introduces tools that directly support regenerative land practices. Platform capabilities include:\n・Selection of land parcels via TMK or interactive mapping.\n・Creation of Efforts (e.g., Soil Testing, Biochar Creation, Biochar Application, Micro-Piling).\n・On-chain minting of efforts using CIP-68 compliant NFTs.\n・Real-time display of effort metadata via the interactive map.\n・Transaction hash notifications after each mint.\n・User profiles link directly to CardanoScan for verification (Example).\n\nb. Public-Facing GitHub Page to Track Progress\n https://github.com/Malama-Project/milestones\n Includes development updates, design assets, feedback integration, and legal documents.\n・Highlighted Feature Updates (Since Milestone 2)\n\nUpdated Dashboard\n・Efforts Created Over Time: Line chart showing user engagement trends.\n・Credits by Category: Bar graph displaying issuance of on-chain carbon credits.\n\nDark Mode Dashboard:\n https://github.com/Malama-Project/milestones/blob/main/UI.UX/Beta_UI_Updates/dkDashb.png\nLight Mode Dashboard:\n https://github.com/Malama-Project/milestones/blob/main/UI.UX/Beta_UI_Updates/lgDashb.png\nInteractive Effort Map\n・Displays all published efforts, filterable by type.\n・Selecting an effort reveals metadata: feedstock, transport, moisture, fuel, and reactor data.\n・Highlighted boxes provide visual clarity and improved usability.\n\nLight Mode Map:\n https://github.com/Malama-Project/milestones/blob/main/UI.UX/Beta_UI_Updates/lteffortmap.png\nDark Mode Map:\n https://github.com/Malama-Project/milestones/blob/main/UI.UX/Beta_UI_Updates/dkeffortmap.png\nOn-Chain",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 37,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 20000,
+      "promise": "・Conduct full-scale in house testing of the platform’s functionalities, including stress tests and security audits.\n・Prepare comprehensive documentation of the project’s design, implementation, and outcomes.\n・Promotional material conveying outcomes and process used. \n・Final closeout report is publicly available at https://github.com/Malama-Project/milestones/",
+      "criteria": "1. Conduct full-scale in house testing of the platform’s functionalities, including landowners suggestions.\n a. Ensure all landowner requests have been addressed \n b. Activity of changes and updates reflected in github commits \n2. Prepare comprehensive documentation of the project’s design, implementation, and outcomes.\n a. This is available at: https://github.com/Malama-Project/milestones/blob/main/M%C4%80LAMA%20Whitepaper.pdf\n and will be updated with the outcomes of this proposal \n3. Promotional material conveying outcomes and process used. \n a. Promotional videos and infographics conveying",
+      "report": "Malama Project - Project Catalyst Fund 12 Close-out Summary\nProject Name:\n Mālama Project - Distributed Hawaii Carbon Credits on Cardano\nProject Number:\n 1200230\nIdeaScale URL:\n Malama Project IdeaScale\nProject Manager:\n Jeffrey Wise (CEO)\nStart Date:\n September 2024\nCompletion Date:\n April 2025\nChallenge KPIs Addressed:\n・Blockchain Adoption: Targeted farmer workshops enhanced blockchain adoption.\n・Democratizing Carbon Credits: Launched a simple, accessible carbon-credit platform (app.malamaproject.org).\n・Transparency: Used CIP-68 NFTs for clear, verifiable on-chain credit records.\n\nProject KPIs Achieved:\n・Successfully delivered a working beta platform with integrated farmer feedback.\n・Community workshops guided direct UX and feature improvements.\n・Comprehensive project documentation hosted on GitHub Milestones.\n\nKey Achievements:\n・Farmer workshops significantly shaped the platform.\n・IoT sensor integration enabled real-time blockchain data.\n・Advanced towards Puro carbon credit pre-certification.\n・Created malamacarbon.com for farmer education.\n\nLessons Learned:\n・ADA market volatility posed budget and resource challenges.\n・Clear farmer-focused communication was crucial.\n・Managed reviewer expectations through careful scope management.\n\nNext Steps:\n・Cross-chain minting capability.\n・DID/KYC system for farmer verification.\n・Expansion of IoT sensors for data collection.\n・Securing funding through SAFE round for scalability and resilience.\n\nFinal Thoughts:\n The Mālama Project successfully combined blockchain with sustainable agriculture, benefiting local Hawaiian farmers. We are grateful for Project Catalyst's support and community collaboration.\nKey Project Links:\n・Whitepaper\n・Project Repository\n・Educational Website\n・Promotional Materials\n\nIPFS Video Links:\n・Dagwell Biochar Inoculation\n・Dagwell Biochar Video Part 2\n\nFinal Close-out Video:\n Watch on Vimeo",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 11,
+      "cut": true
+    }
+  ]
+}

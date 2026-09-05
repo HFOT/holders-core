@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "• stakeによるトップDReps\n• 自身のstakeによる上のDReps\n• ブロック数 最上位の SPO で区切られた/埋め込まれた\n• 常にトップのDRepsによってキャスト/添付/許可された投票の数(出席参加)\n• 常にトップのabstained/missed DReps(および彼らのstake)\n• 常にエポック/アットあたりのほとんどのスロットを逃したトップSPO\n•委任者数によるトップDReps\n•最も大きい単一の委任による上のDReps\n•鉱山およびvoting力の上の委任\n• 最大のシングル委任によるトッププール\n•最も高い平均のstakeによる上のDReps/pools\n• 余白/固定報酬/ブースによる株式の配布",
+      "criteria": "・出力にリストされているすべての分析データは、Cexplorer.io上で公開可能です(事前作成またはプレビューインスタンスを最小限に)\n・Cexplorerの公式Xアカウントの発表",
+      "report": "・Cexplorerインスタンスへのリンク:ログイン:cex パスワード:thisissocool\n\nPOOLリスト、DREPリスト、またはANALYTICSメニューでほとんどの機能を利用できます。 より簡単なナビゲーションのために、いくつかの機能:\n• stakeによるトップDReps\nhttps://preprod-stage.cexplorer.io/drep?sort=desc&order=power\n• 自身のstakeによる上のDReps\nhttps://preprod-stage.cexplorer.io/drep?sort=desc&order=own の\n• ブロック数 最上位の SPO で区切られた/埋め込まれた\nhttps://preprod-stage.cexplorer.io/analytics/pool?tab=pool issues\n•すべてのDRepsのために利用可能なすべてのDRepsでトップDRepsによってキャスト/添付/許可された投票の数(governance参加)\nhttps://preprod-stage.cexplorer.io/drep/drep1yle2vhc5g0de4rr2k739f8taxj5e66cq5ypv78w8xh7sgv0x0lu\n•すべてのDRepsのために利用できるすべての回でトップのabstained/missed DReps(および彼らのstake)細部\nhttps://preprod-stage.cexplorer.io/drep/drep1yle2vhc5g0de4rr2k739f8taxj5e66cq5ypv78w8xh7sgv0x0lu\n•委任者数によるトップDReps\nhttps://preprod-stage.cexplorer.io/drep?sort=desc&order=delegator\n•鉱山およびvoting力の上の委任\nhttps://preprod-stage.cexplorer.io/analytics/account?tab=top addresses\n•最大のシングル委任によるトッププール\nhttps://preprod-stage.cexplorer.io/analytics/account?tab=top staking accounts\n•最も高い平均のstakeによる上のDReps/pools\nhttps://preprod-stage.cexplorer.io/pool?sort=desc&order=average stake\nhttps://preprod-stage.cexplorer.io/drep?sort=desc&order=average stake\n\n2. 新機能が発表されたX投稿へのリンク."
+    },
+    {
+      "no": 2,
+      "promise": "• デリゲーターとステークの最大数のトップマージン\n• pledgeによるstakeの配分\n• すべてのプール/ フィードバック\n•すべてのプール/ドライブごとの平均のstake\n• DReps である SPO のリスト\n• DReps ではない SPO のリスト\n• SPO ではない DReps のリスト\n•同時にSPOであるDRepsの投票力(%)。\n• DReps であるトップ SPO\n•DRepsではないトップSPO\n•SPOではないトップDReps\n•SPOとDRepの役割で同じ組織に委任する委任者のリスト",
+      "criteria": "・出力にリストされているすべての分析データは、Cexplorer.io上で公開可能です(事前作成またはプレビューインスタンスを最小限に)\n・Cexplorerの公式Xアカウントの発表",
+      "report": "機能が一般に閲覧できるCexplorerインスタンスへのリンク: ログイン: cex パスワード: thisissocool\nX 投稿が新機能を発表\n\n• デリゲーターとステークの最大数のトップマージン\nhttps://preprod-stage.cexplorer.io/pool?order=top margins with delegators\n\n• pledgeによるstakeの配分\nhttps://preprod-stage.cexplorer.io/pool?sort=desc&order=average stake\n\n• すべてのプール/ フィードバック\nhttps://preprod-stage.cexplorer.io/analytics/pool?tab=average pools ディレクティブ\nhttps://preprod-stage.cexplorer.io/drep?tab=analytics\n\n•すべてのプール/ドライブごとの平均のstake\nhttps://preprod-stage.cexplorer.io/analytics/pool?tab=average pools ディレクティブ\nhttps://preprod-stage.cexplorer.io/drep?tab=analytics\n\n• DReps である SPO のリスト\nhttps://preprod-stage.cexplorer.io/pool?is drep=1\n\n• DReps ではない SPO のリスト\nhttps://preprod-stage.cexplorer.io/pool?is drep=2\n\n• SPO ではない DReps のリスト\nhttps://preprod-stage.cexplorer.io/drep?is drep=1\n\n• SPO である DReps のリスト\nhttps://preprod-stage.cexplorer.io/drep?is drep=1\n\n•同時にSPOであるDRepsの投票力(%)。\nhttps://preprod-stage.cexplorer.io/drep?tab=analytics"
+    },
+    {
+      "no": 3,
+      "promise": "•異なるエンティティティに委任を好む委任者のリスト\n•SPOではなくDRepsに委任されたStake\n•DRepsではないSPOに委任されたStake\n•SPOとDRepsの両方のエンティティティに委任されたStake\n•エポック当たりのミントと投票力の委任を変更する委任者の数\n•エポック/エポック当たりの電力と嘔吐の委任を変更するStake\n•epochごとの豊富なリストの変更\n•活動的な投票のわずかな50%/60%/70%/80%の議決のDReps(SPOの役割のregardless)の数\n• SPO および活動的な投票の Stake の 50%/60%/70%/80% の投票の優位性がある DReps の数。\n•活動的な投票Stakeの50%/60%/70%/80%の議決のDReps (誰がSPOsではないです)の数\n• ブロック生成(中本)および委任者数の50%の優位のSPOs/groupsの数\n• 退任したDRepsおよびそのような委任者の数に委任されたStake",
+      "criteria": "・出力にリストされているすべての分析データは、Cexplorer.io上で公開可能です(事前作成またはプレビューインスタンスを最小限に)\n・Cexplorerの公式Xアカウントの発表",
+      "report": "ステージング環境\nログイン: cex\nパスワード: thisissocool\nコミュニティへの進捗状況を示すX投稿\n\n•異なるエンティティティに委任を好む委任者のリスト\nhttps://preprod-stage.cexplorer.io/live-delegations\n•SPOではなくDRepsに委任されたStake\nhttps://preprod-stage.cexplorer.io/drep?spo=NO\n•DRepsではないSPOに委任されたStake\nhttps://preprod-stage.cexplorer.io/pool?is drep=2\n•SPOとDRepsの両方のエンティティティに委任されたStake\nhttps://preprod-stage.cexplorer.io/pool?is drep=1\nhttps://preprod-stage.cexplorer.io/drep?spo=はい\n•エポック当たりのミントと投票力の委任を変更する委任者の数\nhttps://preprod-stage.cexplorer.io/drep?tab=analytics\n• 投票権力の委任を変更するStake\nhttps://preprod-stage.cexplorer.io/drep?tab=analytics\n•epochごとの豊富なリストの変更\nhttps://preprod-stage.cexplorer.io/analytics/account?tab=top staking accounts\nhttps://preprod-stage.cexplorer.io/analytics/account?tab=top addresses\n•活動的な投票のわずかな50%/60%/70%/80%の議決のDReps(SPOの役割のregardless)の数\nhttps://preprod-stage.cexplorer.io/drep?sort=desc&order=power\n• SPO および活動的な投票の Stake の 50%/60%/70%/80% の投票の優位性がある DReps の数。\nhttps://preprod-stage.cexplorer.io/drep?sort=desc&order=power&spo=はい\n•活動的な投票Stakeの50%/60%/70%/80%の議決のDReps (誰がSPOsではないです)の数\nhttps://preprod-stage.cexplorer.io/drep?sort=desc&order=power&spo=NO\n• ブロック生成(中本)および委任者数の50%の優位のSPOs/groupsの数\nhttps://preprod-stage.cexplorer.io/gov/power-thresholds\n• 退任したDRepsおよびそのような委任者の数に委任されたStake\nhttps://preprod-stage.cexplorer.io/drep/deregistrations"
+    },
+    {
+      "no": 4,
+      "promise": "・過去のマイルストーンからの全ての出力は、メインネットで終了し、ライブ\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・メインネットとバグフリーの出力\n・最終報告書は一般公開\n・最終クローズアウト映像を公開",
+      "report": "最終マイルストーンは、プロジェクト中にすべての出力を合計します。\n\nmainnet とバグフリーで出力される:\nhttps://beta.cexplorer.io/\n\n最終報告書は公開されています:\nhttps://docs.google.com/document/d/1Y4Uymj D05rqKretfzkExW3p3v2cPkMOEgPGmlwmcPg\n\n最終クローズアウトビデオは公開されています:\nhttps://vimeo.com/1102213273"
+    }
+  ]
+}

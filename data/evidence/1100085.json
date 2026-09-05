@@ -1,0 +1,75 @@
+{
+  "title": "CareBlock: Empowering secure healthcare transactions by Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 25000,
+      "promise": "・Define detailed system requirements and specifications.\n・Develop architectural design for the blockchain-based healthcare insurance system.\n・Establish protocols for secure data handling and smart contract functionality.",
+      "criteria": "1. Detailed System Requirements and Specifications:\n・Provide documentation for all functional and non-functional system requirements.\n・Specify at least 10 user interactions, system behaviors, data processing procedures, and performance metrics.\n\n2. Architectural Design of Blockchain-Based Healthcare Insurance System:\n・Develop a comprehensive design illustrating system components and interactions.\n・Include architectural diagrams for scalability, security, and interoperability, with at least 5 components.\n\n3. Protocols for Secure Data Handling and Smart Contracts:\n・Define protocols ensuring secu",
+      "report": "1. Detailed System Requirements and Specifications:\n・Document details are written at this link\n・Summary of system requirements includes:\n・Login/Register\n・Manage personal information\n・Make an appointment (Patient)\n・Work schedule allocation (Admin)\n・Doctor management (Admin)\n・Medication management (Admin)\n・Manager examination packages (Admin)\n・Bill payment (Patient)\n・Statistics of medical examination history\n・Export Examination results (Doctor)\n\n2. Architectural Design of Blockchain-Based Healthcare Insurance System:\n・The system is designed according to the C4 model. Details at this link\n・System design summary includes the following components:\n・Account Component\n・Appointment Component\n・Schedule Component\n・Medicine Component\n・Diagnostic Component\n\n3. Protocols for Secure Data Handling and Smart Contracts:\n・Details about Smart Contract are written at this link\n・Workflow summary: \n\n・Request: The patient requests an appointment.\n・Accept: The healthcare provider accepts the appointment.\n・Create: The system creates a treatment record for the patient.\n・Upload to IPFS: Treatment information is uploaded to IPFS.\n・Upload to Cardano Node: Treatment information is uploaded to the Cardano node.\n\nSummary of Provided Documents:\n・System Requirements and Specifications Document: [link]\n・Architectural Design C4 Mode: [link]\n・Smart Contracts Design: [link]\n・GitHub Repository web: [link]\n・GitHub Repository service: [link] (C4 model and System specifications are included in contents 5 and 6)\n・GitHub Repository EHR Smart Contract: [link]",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 9,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 20000,
+      "promise": "・Implement the initial version of the system, including decentralized EHR and smart contract logic.\n・Conduct internal testing to identify and address any bugs or issues.\n・Develop a user-friendly interface for policyholders and healthcare providers.",
+      "criteria": "1. Implement the initial version of the system, including decentralized EHR and smart contract logic.\n・Adhere to security and privacy standards.\n・Implement access controls for authorized user interaction.\n・Enable secure sharing and updating of health records.\n\n2. Conduct internal testing to identify and address any bugs or issues.\n・Conduct testing on all system components, aiming for at least 95% test coverage.\n・Address and resolve at least 90% of reported bugs and issues before deployment.\n・Successfully deploy codebase to Bitbucket repository.\n\n3. Develop a user-friendly interface for policyh",
+      "report": "*We apologize for the delay and any errors caused by our submitter. While Bitbucket serves as a repository, we are actively managing this project on GitHub. Please refer to the GitHub links for the latest updates.\n1. Implement the initial version of the system, including decentralized EHR and smart contract logic.\n・Documentation of security measures [link]\n・Test results showing secure data sharing.[link]\n\n2. Conduct internal testing to identify and address any bugs or issues.\n・Our total functionality consists of 20 functions including:\n\n・Register\n・Login\n・Logout\n・Make an Appointment\n・View Appointment Histories\n・Update personal information\n・Manage Schedules\n・Make a Diagnostic\n・Export Result as PDF\n・Send Results to Patient\n・Update Organization Information\n・Department Management\n・Team Members Management\n・Grant Permission to Doctor\n・Select Examination Package for Doctor\n・Examination Types Management\n・Examination Packages Management\n・Appointment Histories\n・Invite Doctor to Join the Organization\n・Specialist Management\n\n-> We tested all 20 functions with 215 Testcases executed and achieved 100% system wide test coverage, all bugs were resolved 100%. The test report records the test cases at this [link].\n・Link to the project source code on GitHub:\n・Front-end repository: [link]\n・Back-end repository: [link]\n\n3. Develop a user-friendly interface for policyholders and healthcare providers.\n・Screenshots of the interface matching the design: [link]\n・Our website available at: careblock.app\n・Link video demo: [link]",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 20000,
+      "promise": "・Initiate a small-scale pilot program in collaboration with selected healthcare institutions and a group of policyholders.\n・Gather feedback from participants to refine and improve the system.\n・Evaluate the performance, security, and usability of the platform.",
+      "criteria": "1. Initiate a small-scale pilot program in collaboration with selected healthcare institutions and a group of policyholders.\n・Successfully establish partnerships with healthcare institutions and policyholders.\n・Begin the pilot program within the specified timeframe and scope.\n\n2. Gather feedback from participants to refine and improve the system.\n・Collect comprehensive feedback from participants regarding system functionality, usability, and any areas for improvement.\n・Collect feedback from participants through surveys or interviews within 2 months of launching the pilot program.\n\n3. Evaluate",
+      "report": "*If you need any clarification, please message in the Discussion section so we can provide more information quickly.\n1. Initiate a small-scale pilot program in collaboration with selected healthcare institutions and a group of policyholders.\n・Signed agreements with partners and policyholders. [Link]\n・Meeting minutes: notes from our first meeting [Link]\n・CareBlock Pilot Project Presentation [Link]\n・Contract of cooperation between Fubon Life Vietnam and Tuan Phong consulting and service company limited. (Both companies are operating in Vietnam, so the cooperation documents will be entirely in Vietnamese) [Link]\n\n2. Gather feedback from participants to refine and improve the system.\n2.1. Gather feedback from participants:\n・Through the Google Forms link, refine and improve the system. [Link]\n・Through the Google Forms link to refine and improve the system, extend the time from 14/04/2025 to 27/04/2025 [Link] \n・Healthcare transaction by Cardano preprod network from 14/04/2025 to 27/04/2025 [Link]\n\n2.2. Analyze and compile data:\n・Evaluate the effectiveness of the system. [Link]\n・Evaluate the effectiveness of the system, extend the time from 14/04/2025 to 27/04/2025 [Link]\n\n3. Evaluate the performance, security, and usability of the platform.\n・Report documenting response times and system stability during load testing, along with confirmation of successful completion of the load testing. [Link]\n・Security document [Link]",
+      "kinds": [
+        "doc"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "11",
+      "cost": 20000,
+      "promise": "・Launch the full-scale deployment of the blockchain-based healthcare insurance system.\n・Integrate community governance features, allowing policyholders to actively participate in decision-making.\n・Conduct outreach and educational campaigns to promote adoption within the wider community.",
+      "criteria": "1. Launch the full-scale deployment of the blockchain-based healthcare insurance system.\n・The system operates smoothly and effectively.\n・It can handle a large number of users.\n・Ensure the safety and security of healthcare information.\n\n2. Integrate community governance features, allowing policyholders to actively participate in decision-making.\n・Establish mechanisms for community voting or feedback.\n・Resolve conflicts based on community input.\n\n3. Conduct outreach and educational campaigns to promote adoption within the wider community.\n・Provide instructional materials for the user community.",
+      "report": "1. Launch the full-scale deployment of the blockchain-based healthcare insurance system.\n・Overview of deployment on AWS and system flow. Link\n・Provide documentation proving the deployment of the system. Link\n・Demonstrate the actual operation of the system. Link\n・Present feedback or data from users. Link\n\n2. Integrate community governance features, allowing policyholders to actively participate in decision-making.\n・Present the integrated community governance features within the system. Link\n・Provide documentation describing these features and feedback. Link\n\n3. Conduct outreach and educational campaigns to promote adoption within the wider community.\n・Marketing strategy and results. Link\n・Present the results of outreach and educational campaigns. Link\n・Introduce materials used in these campaigns. Link\n・Provide data or statistics on the effectiveness of the campaigns. Link",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "12",
+      "cost": 15000,
+      "promise": "・Data Compilation and Cleaning.\n・Close-out report document.\n・Close-out video.",
+      "criteria": "1. Data Compilation and Cleaning:\n・Gather all relevant project data, ensuring completeness and accuracy.\n・Cleanse the data to remove inconsistencies and errors, ensuring high-quality analysis.\n\n2. Close-out report document:\n・Summarize project outcomes in a comprehensive report.\n・The report includes information such as: works sheet, highlights, KPIs set, links related to the project.\n\n3. Close-out video:\n・Present a summary of the close-out report in a video uploaded on YouTube\n・Includes 1 slide prepared for presentation",
+      "report": "1. Data Compilation and Cleaning:\n・Project Comprehensive Documentation and Data Compilation Report. Link\n\n2. Close-out report document:\n・The finalized close-out report document. Link\n\n3. Close-out video:\n・The close-out report in a video uploaded on YouTube. Link\n・1 slide prepared for presentation. Link",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

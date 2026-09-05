@@ -1,0 +1,55 @@
+{
+  "title": "MLabs - Pisa-Fees: Decentralized Fee Trading Smart Contract",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 18209,
+      "promise": "Concretifying Pisa Protocol specification with white paper writing and Researching technical development stack for implementation.",
+      "criteria": "Concise written documents about chain validators’ expected behaviours and their validation rules. This will include technical commentary via Haddock that will outline the validation criteria.",
+      "report": "Please find our updated PDF spec here which we believe now appropriately addresses point C.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 29730,
+      "promise": "Bootstrapping the on chain validator project with reproducible build systems, CI, and development stack. Writing action Pisa Protocol smart contracts according to proposed plan",
+      "criteria": "On chain smart contracts implemented according to specification written in the previous milestone.",
+      "report": "EVIDENCE\nHere is a link to the private repo for review:\n\nhttps://github.com/mlabs-haskell/pisa-fees\n\nAnd in particular the onchain code:\nhttps://github.com/mlabs-haskell/pisa-fees/blob/master/pisa-fees-onchain/PisaFees.hs",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25270,
+      "promise": "Developing off chain adapters and interfaces to interact with written on chain smart contracts. Using made off chain application to create first transaction using Pisa Protocol.",
+      "criteria": "Offchain codebase implemented aptly to interface with the developed on chain validators from the previous milestone. Made the first demo transaction that shows the use of Pisa Protocol.",
+      "report": "Please find our PoA report for M3 here will the dead link updated:\n\nhttps://docs.google.com/document/d/17Cyj43k3ej1JIZictkCGFdJ-VjMwAvOIKlMZNL05zHs/edit?tab=t.0",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 26791,
+      "promise": "・Final close-out report\n・Final closeout video\n・Integration into Atlas Backend smart contract. End to end Plutip testing.",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Made the first demo transaction that shows the use of Pisa Protocol fee.",
+      "report": "Thank you for the review - though, it seems there was some confusion. There was no requirement in milestone 3 for a video and we only tagged our closeout video, intended to meet the requirements here, for thoroughness/convenience sake. We'd like for it to be accepted as the project closeout video if possible. Thank you.\n---\nLink to final closeout report\n・https://docs.google.com/document/d/1ZRuJ-JYV0kpUsl7_1ul4XHW71HyKNo8mRoRIyP1Lh-I/edit?tab=t.0\n\nLink to final closeout video\n・https://www.youtube.com/watch?v=Qie-wOjwNqY\n\nOff chain Codebase and transaction hash of a transaction that uses fees via the Pisa Protocol.\n・see closeout report",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

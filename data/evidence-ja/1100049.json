@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "GitHub Repository: 開発者スタジオプロジェクト用の初期ソースコードとドキュメントを含むパブリックリポジトリ。\nDockerfile:Cardano Node、Cardano Wallet、Cardano-cli、db-sync 用の Docker イメージを自動的に作成するファイル。\nDocker Compose Configuration: 複数のコンテナ Docker アプリケーションを定義して実行するためのファイル.",
+      "criteria": "最初の GitHub リポジトリは一般にアクセス可能です。\nDockerfile はエラーなしでビルドする必要があります。\nDocker Compose の設定は Docker イメージを正しく統合し、実行時にエラーを投げてはいけません.",
+      "report": "最初のマイルストーンをお届けいたします。\n・GitHub Repository link: 開発者 Studio プロジェクトと Docker Compose Configurations の Dockerfile の初期ソースコードとドキュメントを含むパブリックリポジトリ。\n・動画の利用方法\n\nリンク:\n・GitHub: https://github.com/protofire/Cardano-Developer-Studio\n・動画デモ:\n・https://screenrec.com/share/clvRKSCDyj\n・https://screenrec.com/share/UyBtZcihrQ\n・https://screenrec.com/share/TwFGznZ6y"
+    },
+    {
+      "no": 2,
+      "promise": "開発環境 Dockerfile: あらかじめ設定された開発環境で Docker イメージを構築するためのファイル。\nVS コード DevContainer 構成: VS コード内の Docker 環境をロードするための設定ファイル.",
+      "criteria": "開発環境のDockerfileはエラーなしでビルドする必要があります。\n開発環境は、必要なツールで完全に機能する必要があります。\nVSコードDevContainerは、Docker環境を正常にロードして実行する必要があります.",
+      "report": "2番目のマイルストーンをお届けいたします。\n\n・開発環境 Dockerfile: あらかじめ設定された開発環境で Docker イメージを構築するためのファイル。\n・VS コード DevContainer の設定: VS コード内の Docker 環境の読み込みをサポートする設定ファイル。\n・利用方法・解説動画\n\nリンク:\n・GitHub: https://github.com/protofire/Cardano-Developer-Studio\n・動画デモ:https://screenrec.com/share/5YeqGzsmji"
+    },
+    {
+      "no": 3,
+      "promise": "CLI Toolkit: Dockerコンテナ、サービス、ユーティリティを管理するためのコマンドラインインターフェイスツールキット。\nCLI ツールキットの使用に関する詳細なドキュメント.",
+      "criteria": "お問い合わせ Toolkitはエラーなしで動作するはずです。\nドキュメントは、開発者にとって理解しやすく、実用的なものでなければなりません.",
+      "report": "3番目のマイルストーンをお届けいたします。\n・CLI Toolkit:Dockerコンテナ、サービス、ユーティリティの管理のためのコマンドラインインターフェイスツールキット。\n・CLIツールキットの使用状況について説明するドキュメント\n\nリンク:\n・GitHub: https://github.com/protofire/Cardano-Developer-Studio\n・3:30の動画デモはこちら"
+    },
+    {
+      "no": 4,
+      "promise": "オフチェーンとオンチェーン機能用の Haskell ライブラリを作成します。\nスクリプトを評価し、リソース消費を評価する機能を実行します。\n包括的なテストファイルでスマートコントラクトの例のスイートを開発します。\nライブラリと例のスマートコントラクトを使用する方法のステップガイドでステップを書く",
+      "criteria": "開発者に参考資料や、スマートコントラクトの作成にインスピレーションを与えてください。\n平均的なユーザーは、ステップガイドによって提供されるすべての環境で例を設定し、実行できるようにする必要があります.",
+      "report": "次の文書で4マイルストーンをお届けいたします。\nhttps://docs.google.com/document/d/1-m2ScmbRiqkNaDPqRhmSpb8Bj4hQkjIrMYPFNHaCq3M/edit#heading=h.jzo3b0o8v4h6"
+    },
+    {
+      "no": 5,
+      "promise": "展開プロセスを自動化するためのアクションとスクリプトの設計と実装。\nDocker Hub にアップロードできるプロダクション対応画像を作成します。\nビルドとアップロードプロセスを GitHub で自動化します。\nドキュメンテーション:自動化スクリプトを使用して、画像をデプロイするためのガイド。\nプロジェクトクローズアウトレポート\nプロジェクトクローズアウトビデオ",
+      "criteria": "自動化スクリプトはエラーなしで実行する必要があります。\n生産イメージは正常に生成されるべきです。\nオートメーションは、新しいリリースでトリガーし、画像をDocker Hubにアップロードする必要があります.",
+      "report": "第5と最終マイルストーンをお届けいたします。\n・マイルストーン5文書\n・プロジェクトクローズアップレポート\n・プロジェクトクローズアップ動画"
+    }
+  ]
+}

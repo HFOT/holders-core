@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・メッシュ Devtools のウェブサイトにすべての cquisitor 機能を移行\n・cquisitor機能の完全かつ互換性のある変更を行う依存性を更新する",
+      "criteria": "・開発完了:網のデベロッパーのウェブサイトにすべてのcquisitor機能を移行\n・完成品開発:キシター機能の完全かつ変化に対応した依存性を更新",
+      "report": "マイルストーン1レポート\n\nマイルストーンのレビュアーや、提案の進捗状況を追って他の誰がフォローアップします。\n初期のスケジュールの直後には、主に課題や問題のかなりの負荷に陥ること(ある程度のことは、私たちが実際に考えるよりも難しくなっている)だけでなく、あまりにも多くのことをやっています。 とにかく、ここには、最初のマイルストーンの成功した完了について報告しています。\n\nマイルストーンの結果は次のように述べています。\n- 完全な開発:網のDevtoolsのウェブサイトにすべてのcquisitorの特徴を緩和して下さい\n- 完全な開発: 完全なcquisitorの特徴を作る依存性を更新し、互換性がある変更して下さい\n- メッシュgithubリポジトリのコードへのパブリックリンク\n- メッシュgithubでオープンソースライセンスを開くためのパブリックリンク\n\nそしてここにあなたのレビューのための準備ができた成果物。\nすべての cquisitor 機能は、Mesh devtools のウェブサイトに移行します。, 依存関係が更新され、cquisitor の準備ができ、互換性, すべてが今、稼働中, 開発者の準備:\n・https://cloud.meshjs.dev/cquisitor\n\nメッシュ github のそれぞれのオープンソース コードは、次の点で確認できます。\n・ https://github.com/MeshJS/mesh-saas/blob/main/LICENSE\n\nrepo のオープンソースライセンス自体は、以下で確認できます。\n・https://github.com/MeshJS/mesh-saas/blob/main/LICENSE\n\n追加コードも利用可能:\n・https://github.com/cardanium/cquisitor-lib\n\nそして、それで、すべてのコードを見つけ、あなたの承認の価値を働かせてほしいと願って、それを得るのは簡単です^^。\n今後もスケジュールを振り返り、この提案のさらなるマイルストーンの成果を上げていきます。\n次のマイルストーンでご確認いただき、ありがとうございます."
+    },
+    {
+      "no": 2,
+      "promise": "・部分相-1検証用のRustモジュールを開発\n・一般的な検証問題のエラーメッセージを識別し、定義する\n・各エラーを修正するための説明やヒントを提供",
+      "criteria": "・完全な開発: 部分フェーズ-1 検証用の Rust モジュールを開発\n・完成した開発:共通検証問題のエラーメッセージを識別し、定義する\n・完成開発:各エラーを修正するための説明とヒントを提供",
+      "report": "マイルストーン2レポート\n\nマイルストーンのレビュアーや、提案の進捗状況を追って他の誰がフォローアップします。\n初期のスケジュールを過ぎても、課題や課題がいくつかあります。 とにかく、ここには、最初のマイルストーンの成功した完了について報告しています。\nマイルストーンの結果は次のように述べています。\n・部分相-1検証用のRustモジュールを開発\n・一般的な検証問題のエラーメッセージを識別し、定義する\n・各エラーを修正するための説明やヒントを提供\n\nそしてここに成果物の完全なレポートを出力します。\n配達可能:\n\n部分フェーズ-1 検証用の Rust モジュールを開発\n\n部分的なフェーズのためのRustモジュールの開発 - 1検証が正常に完了しました。 デプロイされたコードは:\n・https://github.com/MeshJS/cquisitor-lib/tree/main/src/validators/phase 1\n\n共通の検証問題に対するエラーメッセージの特定と定義\n\n一般的なバリデータの問題に対するエラーメッセージを特定し、定義します。\n・https://github.com/MeshJS/cquisitor-lib/blob/main/src/validators/phase 1/errors.rs\n\n各エラーを修正するための説明とヒントを提供\n\nエラーを修正するための説明とヒントは、同じソースのそれぞれのエラー例で追加されました。\n・https://github.com/MeshJS/cquisitor-lib/blob/main/src/validators/phase 1/hints.rs\n\nオープンソースライセンス\n\n関連するすべてのコードは、Apache 2.0 のオープンソースライセンスの下で割り当てられました。\n・講師:https://github.com/MeshJS/cquisitor/tree/main?tab=Apache-2.0-1-ov-file#readme\n・Cquisitor Library: https://github.com/MeshJS/cquisitor-lib?tab=Apache-2.0-1-ov-file#readme\n\nエルス\n\nCquisitor dev インターフェイス: https://cloud.meshjs.dev/cquisitor"
+    },
+    {
+      "no": 3,
+      "promise": "・フェーズ2検証用のRustモジュールを開発\n・Plutusスクリプト実行用のaiken-uplcでモジュールを統合",
+      "criteria": "・開発完了:フェーズ2検証用のRustモジュールを開発\n・完成した開発:Plutusスクリプトの実行のためにaiken-uplcでモジュールを統合",
+      "report": "マイルストーンのレビュアーや、提案の進捗状況を追って他の誰がフォローアップします。\nここでは、第3マイルストーンの成功完了について報告しています。\n\nマイルストーンの結果は次のように述べています。\n- 完全な開発:フェーズ2検証のためのRustモジュールを開発して下さい\n- 完全な開発:Plutusスクリプトの実行のためのaiken-uplcとモジュールを統合して下さい\n\nそしてここに成果物の完全なレポートを出力します。\n\n1) 部分的なフェーズ-2 の検証のための Rust モジュールを開発して下さい\n部分的なフェーズのためのRustモジュールの開発 - 2検証が正常に完了しました。 デプロイされたコードは:\n- https://github.com/meshjs/cquisitor-lib/blob/main/src/validators/phase 2/validation.rs\n2) Plutusスクリプト実行用のaiken-uplcでモジュールを統合\nPlutus スクリプトの実行のための aiken-uplc を持つモジュールの統合が完了しました。それぞれのコードは次のようになります。\n- https://github.com/meshjs/cquisitor-lib/tree/main/src/validators/phase 2\n\nオープンソースライセンス\n関連するすべてのコードは、Apache 2.0 のオープンソースライセンスの下で割り当てられました。\n- Cquisitor: https://github.com/MeshJS/cquisitor/tree/main?tab=Apache-2.0-1-ov-file#readme\n- Cquisitorライブラリ: https://github.com/MeshJS/cquisitor-lib?tab=Apache-2.0-1-ov-file#readme\n\nエルス\nCquisitor dev インターフェイス: https://cloud.meshjs.dev/cquisitor\nメッシュ github の提案報告: https://github.com/MeshJS/governance/tree/main/funding/catalyst-fund13/cquisitor"
+    },
+    {
+      "no": 4,
+      "promise": "・ウィスキーとMesh.jsとの統合\n・Mesh.jsの詳細なエラーメッセージの拡大",
+      "criteria": "・完全な開発: 部分的なフェーズ-1 およびフェーズ-2 の検証のためのモジュールは Whisky および Mesh.js と統合されます\n・開発完了:Mesh.jsの詳細なエラーメッセージ",
+      "report": "# マイルストーン4レポート\n\nこんにちはマイルストーンの審査者と、この提案のプロセスに従う他の誰が。\nここでは、このマイルストーンを閉じる成功を提出します。\n\nこのマイルストーンの完成基準は以下の通りです。\n\n・ウィスキーとMesh.jsとの統合\n・Mesh.jsの詳細なエラーメッセージの拡大\n\nそしてここにそれぞれの成果物:\n\n##Whiskyとメッシュとの統合\n\nMesh Cquisitor - Whiskyインテグレーションが完了しました。このインテグレーションを導入したそれぞれのプルリクエストは、次のようになります。\n・https://github.com/sidan-lab/whisky/pull/152\n・https://github.com/MeshJS/mesh/pull/736\n\n## Mesh.js の詳細なエラーメッセージを実装する\nメッシュのエラーメッセージが完成し、次の手順で確認できます。\n・https://github.com/MeshJS/mesh/blob/b1e9a26396c65450eec9a6a151e7620746683a78/packages/mesh-core-csl/test/utils/validator.test.ts#L165\n\nそれぞれの cquisitor-lib リポジトリでエラーメッセージの例を確認できます。\n・https://github.com/MeshJS/cquisitor-lib/blob/main/src/validators/phase 1/errors.rs\n・https://github.com/MeshJS/cquisitor-lib/blob/main/src/validators/phase 1/hints.rs\n\n## エルス\nCquisitor dev インターフェイス: https://cloud.meshjs.dev/cquisitor\nそしてそれは、短く、精密です。\n次のマイルストーンで見る"
+    },
+    {
+      "no": 5,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ\n・deploy web UI を https://cloud.meshjs.dev/\n・updated Meshjs ドキュメント",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n・開発完了:Web UIをhttps://cloud.meshjs.dev/にデプロイ\n・Successfully 更新されたメッシュ ドキュメント",
+      "report": "マイルストーン5レポート\n\nそれでもこの提案の進捗をフォローしている皆さん、お礼申し上げます。 そこで、この提案の最終マイルストーンの完成について報告しています。すべての目的が達成され、すべての成果物が出荷され、利用可能なことを報告して喜んでいます。\nこの最終マイルストーンを閉鎖するための受諾基準は以下の通りです。\n・最終報告書へのリンク\n・最終クローズアウト映像へのリンク\n・メッシュ github リポジトリのデプロイされたコードへの公開 URL\n・メッシュ github のプロジェクトの公開 url アクティブ オープンソース ライセンス\n\nそしてここにすべての成果物の詳細...\n報告書を閉じる\n\n報告書が完成し、異なる場所で見つけることができます。\n・PDF: https://drive.google.com/file/d/1bF0MZwoypg0QZSGScPt8QTlEwpuwqGVb/view?usp=sharing\n\n完了 クローズ アウト ビデオ\n\nクローズアウトビデオが完了し、このリンクを介してyoutubeで利用可能です:\n・https://youtu.be/Fgwv1CtBelg\n\nメッシュ github リポジトリのデプロイされたコードへの公開 URL\n\nデプロイされたコードは、次の方法でメッシュ github にアクセスできます。\n・https://github.com/MeshJS/cquisitor-lib\n・https://github.com/MeshJS/cquisitor\n\nうまく更新されたメッシュ ドキュメント\n\nCquisitorのそれぞれのドキュメントは、このコミットを介して完了しました\n・https://github.com/MeshJS/cquisitor-lib/commit/13049cfd951a5fb89f3771d301fde224835e46f0 docs は次のように利用できます。\n・https://github.com/MeshJS/cquisitor-lib/blob/main/API DOCUMENTATION.md\n\nメッシュ github のプロジェクトのパブリック url アクティブ オープンソース ライセンス\n\nそれぞれのリポジトリは、Apache 2.0 ライセンスの下でライセンスされています。\n・https://github.com/MeshJS/cquisitor-lib?tab=Apache-2.0-1-ovfile#readme\n・https://github.com/MeshJS/cquisitor?tab=Apache-2.0-1-ovfile#readme\n\nそして、それはそれです 🙂 すべてが完了し、完了します。 全員が参加し、アイデアから現実、投票者、査読者、管理者、開発者への提案を得るのに役立ちました"
+    }
+  ]
+}

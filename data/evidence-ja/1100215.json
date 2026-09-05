@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "最初のマイルストーンでは、出力には以下が含まれます。\n・Pythonツールの設計とアーキテクチャ\n\npython ツールに必要な正確な機能を定義して、リンクプラットフォームとツール内で利用可能なさまざまな機能を構造化する方法を明確にしています。 設計とアーキテクチャを含むこのテクニカルホワイトペーパーは、GitHubで公開されます.",
+      "criteria": "リンクプロトコル(利用可能な機能、Pythonプログラムの構造など、設計選択の正当化を含む)と相互作用するPythonツールの設計とアーキテクチャを外部にホワイトペーパー",
+      "report": "親愛なる審査官,\n最後のフィードバックラウンドで提案したように、Catalystチーム(承認済み)で変更リクエストを実行しました。 このようにタイムラインを調整できるので、\nマイルストーン1では、GitHubリポジトリ(https://github.com/LinkageDevTeam/linkage-finance-python-tool/tree/main)でWhitepaperをPDFとして見つけることができます。\n素敵な一日を過ごし、あなたの助けを借りてありがとう.\nベストガード、\nリンケージファイナンスチーム"
+    },
+    {
+      "no": 2,
+      "promise": "2番目のマイルストーンでは、開発されたPythonツールを、定義されたアーキテクチャで提供し、その信頼性と機能性を保証する包括的なテスト結果を提供します。 試験結果は報告書の形式になります。\n出力 (3):\n・開発したフィソンツールのデリバリー\n・包括的な試験結果\n・試験結果報告",
+      "criteria": "・リンクファイナンススマートコントラクトと対話するpythonツール\n・ python ツールをテストし、 python ツールが定義されたテストで正しく動作していることを示すために、テストが実行されていることを示すレポート (これは正しいトランザクションの構築、 utxo 管理、プロトコルとの相互作用を含みます)",
+      "report": "ディール MRs,\nPython ツールの開発を終了し、GitHub リポジトリでリリースしました。 https://github.com/LinkageDevTeam/linkage-finance-python-tool/tree/main\nツールを使用するすべての関連情報を含むREADMEファイルを追加しました: https://github.com/LinkageDevTeam/linkage-finance-python-tool/tree/main\nまた、パイソンツールのテストスイートを書いて、テストレポートに結果を書きました。https://github.com/LinkageDevTeam/linkage-finance-python-tool/blob/main/TEST REPORT.md\n弊社のツールの使用を実装するには、リンクファイナンスファンドプロトコルの圧縮版で複数のトランザクションを作成しました。\n1. リンケージファンド工場の作成 https://preprod.cardanoscan.io/transaction/f9a5a2afb8538de173dbc38639daf67d70323958808e3b96e70a025a\n2. トークンファンドの作成 https://preprod.cardanoscan.io/transaction/d1e26d897b0ab2f50a33a5b697a112528420724184683a68af1ac7d50281b6e7\n3. トークンファンドにトークンを追加 https://preprod.cardanoscan.io/transaction/db2603d62c789d7dedce447812d68c37534ed0c0cd353246559f4a41c87376ec\n4. 作成したファンドから資金を引き出す https://preprod.cardanoscan.io/transaction/473c06757d9b979aaab306f4bffcab7a5a62883d6beadbd8e48dcf6528d173da\n5。 募金トークンロイヤルティhttps://preprod.cardanoscan.io/transaction/d99eaa79cb55ad02089af9b7a8c40174ebb4ad503c1da0fcf692071b1a7398d5"
+    },
+    {
+      "no": 3,
+      "promise": "3番目のマイルストーンのコンテキストでは、Pythonツールの使用法、API、および統合ガイドラインを詳述する包括的なドキュメントが出力されます。\n・Pythonツールの使い方を文書化し、プラットフォームとやり取りする(ウォレット、プロトコルの設定、すべての機能の説明など)\n・LinkageとCardanoの開発者コミュニティとの積極的なエンゲージメント(使い方を説明する媒体記事、ドキュメントとツールのツイート、開発者サポートを提供するDiscordフォーラム)",
+      "criteria": "・文書化には、リンクファイナンス(荷物、場所、緊急出金)のすべてのプロトコル機能と、ウォレットを正しく統合する方法が含まれます。\n・pythonツールの仕組み、Discordチャンネルのコミュニティとのやりとり、ツイートのアナウンスツールを詳しく解説",
+      "report": "親愛なる査読者,\nマイルストーンを完成し、結果を共有して満足しています。 指定された要件に加えて、クローズアウトレポートとクローズアウトビデオを作成しました。\n・クローズアウトレポート:https://drive.google.com/file/d/1lXb c0Ugwai AweyZwo9kDtqFTZMBx1W/view?usp=sharing\n・クローズアウトビデオ(YouTubeにアップロード): https://www.youtube.com/watch?v=NIpKqCDV4iw&feature=youtu.be\n\nGitHub: https://github.com/LinkageDevTeam/linkage-finance-python-tool でツールのオープンソースコードが見つかります。\nまた、開発者向けの新しい利用ガイドを追加して、ツールの仕組みや使い方をよりよく理解できるようにしました。\nhttps://github.com/LinkageDevTeam/linkage-finance-python-tool/blob/main/LINKAGE FINANCE USER GUIDE.md\nまた、コミュニティへのツールを公に発表するために必要な資料を作成しました。\n・ツール紹介媒体:https://medium.com/@LinkageFinance/5b6cf189731c\n・Xは、当社のコミュニティにツールを発表: https://x.com/LinkageFinance/status/1966528193814286662\n・Discordサーバーの開発者サポート/フィードバック(#linkage-python-tool)用のDiscordチャンネル:https://discord.gg/VPEJhggDry\n\nベストガード、\nリンケージファイナンスチーム"
+    }
+  ]
+}

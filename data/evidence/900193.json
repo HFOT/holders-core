@@ -1,0 +1,43 @@
+{
+  "title": "Spectrum.Network | Layer 2 for DeFi",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 62400,
+      "promise": "(A) Networking layer of the Spectrum Network is implemented (code is written);\n(B) Unit tests for the networking layer;\n(C) Integration tests for the networking layer.",
+      "criteria": "(A) The networking layer of Spectrum Node is able to do peer ranking based on reputation, negotiate protocols and their versions to use with peers.",
+      "report": "Check our open source code here: https://github.com/spectrum-finance/spectrum\n\n(Milestone A) Networking layer of the Spectrum Network is implemented (code is written)\nResults: The networking layer was successfully implemented\nCheck the folder: https://github.com/spectrum-finance/spectrum/tree/master/spectrum-network\nYou can also check how it works by cloning the repository and running a `cargo run` command in terminal\n\n(Milestone B) Unit tests for the networking layer\nAll the tests are in this folder:https://github.com/spectrum-finance/spectrum/tree/master/spectrum-network/tests\nYou can also check how it works by cloning the repository and running a `cargo test` command in terminal\n\n(Milestone C) Integration tests for the networking layer.\nAll the tests are in this folder: https://github.com/spectrum-finance/spectrum/tree/master/spectrum-network/tests\nYou can also check how it works by cloning the repository and running a `cargo test` command in terminal",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 93600,
+      "promise": "(A) The document which describes the protocol used by Spectrum Network nodes agree on the set of valid cross-chain transactions.",
+      "criteria": "(A) The resulting document clearly describes the protocol allowing spectrum nodes to reach a consensus on a set of valid cross-chain transactions.",
+      "report": "TL;DR\nYou can find all the specifications here is this repository folder: https://github.com/spectrum-finance/spectrum/tree/spec/docs/whitepaper/src\n\nDetails\nWhile working on this milestone we resolved the following tasks:\n1. Researched and recorded the lottery specification -- https://github.com/spectrum-finance/spectrum/pull/14/files\n2. Researched the cryptography needed for the protocol implementation -- the source text is closed for now. (attached pdf in the last monthly report: \"Aggregation and Verification for Handel in Spectrum Setting\")\n3. Protocol design -- https://github.com/spectrum-finance/spectrum/blob/spec/docs/whitepaper/src/system-design.tex\n4. System model -- https://github.com/spectrum-finance/spectrum/blob/spec/docs/whitepaper/src/system-model.tex\n5. Implemented Handel aggregation protocol -- https://github.com/spectrum-finance/spectrum/pull/17/files (a part of the 3rd milestone)\n\nAlso there are several drafts that will be merged very soon (under review now):\n1. STF draft - https://github.com/spectrum-finance/spectrum/pull/16\n2. Improved lottery draft - https://github.com/spectrum-finance/spectrum/pull/18",
+      "kinds": [
+        "code"
+      ],
+      "links": 7
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 52000,
+      "promise": "(A) At the end of this stage, we have a piece of software built on top of Spectrum Networking layer that implements the protocol described in the second milestone + integration tests that checks the ability of the network to reach consensus on a set of test transactions.",
+      "criteria": "(A) The consensus layer is implemented according to the specification from the second milestone. Protocol features and properties are covered with unit tests. Also, a runnable integration test demonstrates a simple network reaching a consensus on a set of test transactions.",
+      "report": "We implemented core consensus protocol modules:\n\n✔️ Scalable signature aggregation crypto (based on MuSig and optimized for tree-based overlays). Links:\n· https://github.com/spectrum-finance/spectrum/pull/23\n· https://github.com/spectrum-finance/spectrum/pull/30\n✔️ Handel aggregation round behavior (https://arxiv.org/pdf/1906.05132v1.pdf) and Sigma aggregation network behavior as a whole. Links:\n· https://github.com/spectrum-finance/spectrum/pull/25\n· https://github.com/spectrum-finance/spectrum/pull/19\n✔️ Discovery behavior + IT tests. Responsible for peer discovery. Links:\n· https://github.com/spectrum-finance/spectrum/pull/34\n✔️ Diffusion behavior + IT tests.  Responsible for nodes synchronization.\n· https://github.com/spectrum-finance/spectrum/pull/37\n\n✔️ All integration tests are available here:\nhttps://github.com/spectrum-finance/spectrum/blob/master/spectrum-network/tests/integration_tests/mod.rs\n-----\nAlso, We resolved everything what IO reviewer mentioned in the PoA sheet last month. So in addition to our previous Milestone 3 PoA:\n\n✔️ Added more tests for the {crypto} module. Links:\n· https://github.com/spectrum-finance/spectrum/blob/master/spectrum-vrf/src/tests.rs\n· https://github.com/spectrum-finance/spectrum/blob/5a5eaabbb32e28d680770fad42cd9d5e529b70f7/spectrum-network/src/protocol_handler/sigma_aggregation/crypto.rs#L191\n✔️ MuSig implemenation\n· https://github.com/spectrum-finance/spectrum/blob/master/spectrum-network/src/protocol_handler/sigma_aggregation/crypto.rs\n✔️ Aggregation of MuSig implemenation\n· https://github.com/spectrum-finance/spectrum/blob/master/spectrum-network/src/protocol_handler/sigma_aggregation.rs\n🔄 Consensus Layer [in progress]. The research for the consensus layer took longer than we expected. We had to test a bit more hypotheses to get the desired result. At the moment, the research phase is completed and we only need to finish the implementation. We would greatly appreciate it if you could approve the completion of this Miles",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 13,
+      "cut": true
+    }
+  ]
+}

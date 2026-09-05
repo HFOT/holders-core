@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・ハッシュコンスリング(コード、レポジトリリンク)を使用して、ハスケルのIRデータ構造の実装。\n・構造体型チェッカー\n・Covenant IRをプログラム的に構築する機能を含む Haskell ライブラリ\n・DiataxisフレームワークのReferenceとExplanationに焦点を合わせ、3のライブラリのHackage出版物。\n・タイプチェッカーとビルド機能の正しい機能の実証試験.",
+      "criteria": "・Covenantのスタンドアローンライブラリは、上記のすべての機能を含みます。\n・Plutus や Nix に依存しないライブラリ\n・Hackageにライブラリをアップロードしました。\n・このライブラリは、PVPに限らず、標準の Haskell idioms に従います。\n・ライブラリは、ライブラリが構築可能であることを確認し、すべてのテストをティア1 GHCプラットフォームに渡します.",
+      "report": "マイルストーン完成の証拠\n\nライブラリ、ドキュメント、CI でコードリポジトリへのリンク\nhttps://github.com/mlabs-haskell/covenant/\n\nIR構造と基本操作を示すショートデモ動画\nhttps://www.youtube.com/watch?v=WXGEb2d kBY\n\n公開されたライブラリのハッカジへのリンク - これは、公開されていないことができないので、審査官によって承認された1回メインにプッシュされます\nhttps://hackage.haskell.org/package/covenant-1.0.0/candidate"
+    },
+    {
+      "no": 2,
+      "promise": "・マイルストーン1ライブラリで化合物の種類を定義する方法を実装します。\n・この実装では、Behm-Berrarducciエンコーディングを使用して、マイルストーン1型システムと互換性があります。\n・ベースファンクターのサポートを追加し、後工程の排除形態をターナートータルで実現します。\n・その定義の一部として化合物データ型用のエンコーディング(SOPとデータ)の仕様書を収録します。 データエンコーディングのさまざまな戦略も選択できます。\n・Plutus ledgerが要求する全ての化合物データ型、特にV3を実装します。\n・マイルストーン1の型システムが全てのPlutusのプリミティブ操作とレジャーデータ型で正しく動作するようにテストを追加します。\n・マイルストーン1ライブラリへの拡張は、Haddocks として文書化されます。\n・マイルストーン1のCIは、ポイント3で指定されたテストを実行するために拡張されます。\n・ハッカジの拡張ライブラリをアップデートとして公開します.",
+      "criteria": "・Milestone 1 ライブラリは、化合物の種類を定義する能力を得ました\n・Boehm-Berrarducciエンコーディングは、マイルストーン1型システムとの互換性に使用されます。\n・ベースファンクター対応\n・データ型(SOPとデータ)のエンコードを指定できます。 さらに、データエンコーディングの異なる戦略が実装されています。\n・V3 Plutus ledger API で必要なすべての化合物データタイプは、Milstone 1 ライブラリに存在します。\n・Plutusのプリミティブ操作とレジャーデータタイプの両方で、Criterion 1と2の機能性のテストが存在し、パスします。\n・ハドックは、すべての拡張子tを文書化しています",
+      "report": "ビデオ デモ:\nhttps://youtu.be/X0FIETsbxfk\n\nリポへのリンク\nhttps://github.com/mlabs-haskell/covenant\n\nCI の実行へのリンク\nhttps://github.com/mlabs-haskell/covenant/actions/runs/16306716991\n\nハックへのリンク\nhttps://hackage.haskell.org/package/covenant-1.1.0/candidate"
+    },
+    {
+      "no": 3,
+      "promise": "・Covenant ASG でマイストーン 1 と 2 ライブラリを拡張し、導入(creating)と消去(パターンマッチングとフォールディング)の両方の値をサポートします。\n・折り畳みは、再帰法、特異的な異形法を使用します。\n・既存化合物再帰型、整数型、Plutusコア型をベースとするファンクターが付属します。\n・これらのフォームがASG構造(つまり「エンドツーエンド」)の方法で正しく動作するようにテストを追加します。\n・これらの拡張子をHaddocksとして文書化します。\n・マイルストーン1と2のCIは、ポイント2で指定したテストを実行するために拡張されます。\n・ハッカジの拡張ライブラリをアップデートとして公開します.",
+      "criteria": "・ミレストン1と2のライブラリは、ASGの導入と排除の形態を得ています。\n・再帰方式の排除形態は存在し、異形化作用を使用する。\n・既存の化合物再帰型のための基礎ファンクター、ならびにIntegerおよびByteStringが存在します。\n・このマイルストーンの機能性やパスにASG構造を用いたテストを追加しました。\n・このマイルストーンに追加されたパブリック・ファスメント・新機能のHaddockのドキュメントが存在します。\n・マイルストーン1と2のCIは、このマイルストーンで追加された新しいテストを実行します。\n・アップデートとしてハッカジに拡張ライブラリが公開されました.",
+      "report": "1. 導入および除去の形態のための図書館の論理の短いデモのビデオ。\nhttps://youtu.be/JyIKdOtmmnM\n\n2。 このマイルストーンの実行と通過の新しいテストの短いデモビデオ。\nhttps://youtu.be/JyIKdOtmmnM\n\n3。 このマイルストーンで実装されているすべての機能と、Haddockコメントでコードリポジトリへのリンク。\nhttps://github.com/mlabs-haskell/covenant/\n\n4。 成功したCIへのリンクは、メインブランチに対して実行します。\nhttps://github.com/mlabs-haskell/covenant/actions/runs/17253373583\n\n5. 更新されたライブラリのハッカジへのリンク。\nhttps://hackage.haskell.org/package/covenant-1.2.0/candidate"
+    },
+    {
+      "no": 4,
+      "promise": "・当社は、JSON ベースのコベントテキストフォームの仕様書を、マイルストーン 1 から 3 までのライブラリに実装します。\n・仕様の実装のためのテストで使用するために設計された少なくとも2つの適合例を提供します。\n・マイルストーン1から3までのライブラリの一部としてテストを行います。\n・新しいパブリック・フェーシング機能により、コードにHaddockコメントがあります.",
+      "criteria": "・シリアルフォームのコンフォーマンスケースが2つ以上存在します。\n・全ての適合ケースは、誤りなく正しく劣化します。\n・マイストーン1～3のライブラリへの拡張として、コベントのシリアライズとデシリアライズのハスケルの実装\n・Milstones 1 から 3 のライブラリの CI は、コンフォーマンス ケースを実行し、継続してパスできるようにします。\n・このマイルストーンからの新しいパブリックフェーシング機能のHaddockコメントが存在します.",
+      "report": "マイルストーン・エヴィデンス\n新しい機能性と適合性を実証するショートビデオ、テストの通過。\nhttps://youtu.be/kWKZ3bf2gsI\n\nメインブランチに対して実行される成功したCIへのリンク。\nhttps://github.com/mlabs-haskell/covenant/actions/runs/18298769341\n\nこのマイルストーンで実装されているすべての機能と、Haddockコメントでコードリポジトリへのリンク。\nhttps://hackage.haskell.org/package/covenant-1.3.0/candidate"
+    },
+    {
+      "no": 5,
+      "promise": "・マイストン4で指定されているコベナントシリアルフォームをシリアル化したUPLCにトランスレーションできるc2uplcを定義します。\n・マイルストーン4のコンフォーマンスケースを使用して、c2uplcが正しく動作することを確認します。\n・c2uplcは、使用説明書付きCLIを持ちます。\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・CovenantのシリアルフォームからUPLCを生成するための実行可能 Plutusに依存しているため、Covenantの残りの部分から別のリポジトリにすることができます。\n・実行可能は、Covenantシリアルフォームへのパスを受け付けます。\n・実行可能で、有効なコヴェナントのシリアルフォームを与えられた場合、コヴェナントのシリアルフォームによって意図された実行セマンティックスが一致する有効なUPLCを排出します。\n・実行可能で、無効なコベントシリアルフォームを与えられた場合、翻訳は行いません。 代わりに、明確で適切なメッセージでエラーが発生します。\n・マイルストーン4のコンフォーマンスケースはすべて、実行を使用して正しく翻訳します",
+      "report": "A. 出力: UPLCへのCovenantをtranslatres C2uplcの実行可能\n受諾条件:実行可能はCovenantからUPLCを発生させます;Covenantのserailの形態への道を受け入れて下さい;出力されたUPLCの執行のセマンティックはCovenantのシリアル フォームによって意図したそれらに一致します;実行可能は無効なCovenantの翻訳を行ないません。 Note: 実行可能ビルド方法が README に追加されていることに注意してください (Run `cabal build exe:c2uplc` でビルドします)。 実行するには、`cabal exec c2uplc` を使用します。\n証拠: https://github.com/mlabs-haskell/c2uplc\nB. 出力: 適合の場合\n受諾条件: 適合症例は実行可能を使用して正しく翻訳します\n証拠: https://www.youtube.com/watch?v=fnjOcLd0M E\nC. 出力: c2uplc の CLI\n受諾の基準: c2uplc CLI は存在し、指示として助けのテキストを持っています\n証拠: https://www.youtube.com/watch?v=ZWbDdlrXbAs\nD.出力:クローズアウトレポート\n受諾の基準:最終的な閉鎖のレポートは一般に利用できます\n証拠: https://drive.google.com/file/d/1QURKnYNvrRU0xKsF7hBhjiZ38icBFiUg/view?usp=sharing\nE. 出力: 最終的な閉鎖のビデオ\n受諾の基準: 最終的な閉鎖のビデオは一般に利用できます\n証拠: https://www.youtube.com/watch?v=80I-AWJsTgo"
+    }
+  ]
+}

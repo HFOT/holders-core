@@ -1,0 +1,89 @@
+{
+  "title": "NFT Guild: Open-Source NFT Swap Templates (Phase 2)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 33281,
+      "promise": "This milestone will result in a thorough understanding of the user needs and a research base to build the randomiser engine.\n・User stories and use-cases for the collector and project owner personas.\n・Preliminary research on smart contract randomiser engine requirements and potential solutions.",
+      "criteria": "・Completion of user stories and use-cases for the collector and project owner personas.\n・Completed preliminary research report with potential solutions for smart contract randomiser engine.",
+      "report": "1. User Stories:\n Miro Board: https://miro.com/app/board/uXjVKcs8AcE=/?share_link_id=743854163142 \n PDF: https://drive.google.com/file/d/1SEKBwzWMAIcatORQ8dyIcf7TAXU2JtzO/view?usp=drive_link\n 2. Preliminary Research Report: https://drive.google.com/file/d/1UIVIG5YkAoxnl--gAxGFNh8hSc9BFsuG/view?usp=sharing",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 33281,
+      "promise": "A user-friendly interface for randomised NFT swapping will be produced during this milestone. The smart contract randomiser engine specifications will also be finalised.\n・Design the front-end user interface (UI) based on the user stories for the collector and project owner personas.\n・Develop the front-end code according to the UI/UX design.\n・Completion of the specifications for the smart contract randomiser engine.",
+      "criteria": "・Completion of UI/UX design.\n・Front-end code has been developed\n・Completed specifications document for the smart contract randomiser engine.",
+      "report": "1.Video demo of the UI design: https://youtu.be/gEYwruV8qfg\n2.Front-end code that integrates with the back-end system has been posted to the project’s GitHub: https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates\n Direct links to new elements in the Github repository for the random functionality:\nhttps://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/blob/main/dapp/src/views/random.pug\nhttps://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/blob/main/dapp/src/routes/random.js\nhttps://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/blob/main/dapp/public/stylesheets/styles-random.css\nhttps://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/tree/main/dapp/public/images\n3. Document containing the final specifications for the smart contract randomiser engine: https://drive.google.com/file/d/1AYQsEvePEG0kAWfPiJEn7KDtJxg4_C3k/view?usp=drive_link",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 14
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 33281,
+      "promise": "・The dapp architecture is internally designed and documented in the project’s GitHub repo. The dapp architecture is a concise documentation containing an overall description of the complete dapp web functionality we are going to develop and deliver after M5. The architecture documentation describes the needed components and how they are going to interact with each other, but no code is part of this document. Only the description.\n・Development of the initial and untested version of the full web dapp code (without smart contracts). The draft front end code from M2 is further developed and new back end code that can be run on a web server is developed according to the architecture documentation. This version of the dapp is not tested. Buttons might only display a message instead of actually doing anything and dialogs might be empty. The main goal is to have an initial dapp ready to connect with the smart contracts we start to develop in M4.",
+      "criteria": "・Version 1.0 of the dapp architecture published on the project’s Github page.\n・Initial version of the dapp code is published to the project’s GitHub page. Initial code means that UX/UI design “look and feel” have been implemented and buttons either display real content or at least a message box that this is not yet available. Everything interacting with the smart contracts will only display errors or simply be circumvented as the smart contracts aren’t started before M4.",
+      "report": "1. Dapp architecture design document: https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/blob/main/docs/platform/Architecture%20overview%20for%20the%20Random%20Swap%20dApp.pdf\n 2. Dapp code:\n Commits overview (all project commits are commented and briefly explained):\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/commits\n New code:\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/tree/main/dapp/public\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/tree/main/dapp/src\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/tree/main/dapp",
+      "kinds": [
+        "code"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 33281,
+      "promise": "・Design the random NFT swap smart contract and validator architecture, incorporating the findings from the research report.\n・Develop and publish the open-source smart contract code.\n・Conduct UI/UX usability testing and iterate based on potential feedback.",
+      "criteria": "・Completion of the random NFT swap smart contract design.\n・Initial smart contracts published to the open-source repository on GitHub.\n・Usability feedback has been solicited from the community.",
+      "report": "1\n The initial smart contract code has been published to the project’s repo:\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates\n More specifically, the smart contract code for random swaps can be found in:\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/blob/main/smart-contracts/RandomSwap.hs\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/blob/main/smart-contracts/RandomSwapQueue.hs\n \n 2\n The final version of the Architecture documentation has been published to the project’s GitHub and is available here:\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/blob/main/docs/platform/Architecture%20overview%20for%20the%20Random%20Swap%20dApp.pdf\n \n 3\n NFT-Guild: Open-Source NFT Swap Infrastructure - Usability Testing Report - September 2024\n https://drive.google.com/file/d/1rhdIs0hSvW64FEF71b8L-PFevGVE0b9-/view?usp=sharing\n \n Demo of the NFT Random Swap Pools pre-release Alpha for Usability Testing\n https://youtu.be/IhHsHMkDyik\n \n Random Swaps Feedback Form\n https://forms.gle/8CirGFGGfjY9GaBS8\n \n Responses to Feedback Form\n https://docs.google.com/spreadsheets/d/1jPQo8yGsuB4zxRDxZRjo36vo1_0Q0u1MlhCK7Bw16ko/edit?usp=sharing\n \n Usability Testing with Zachary Soesbee (aka. Cash) - CEO of Anvil Development Agency & WayUp Cardano NFT Marketplace\n https://youtu.be/d5pU7BzBFZY\n \n Usability Testing with Peter Wolcott, a core member of the NFT Guild, not involved in this project.\n https://youtu.be/xSAxnzBWVEA\n \n General Feedback Request (NFT Guild Discord Server)\n https://www.dropbox.com/scl/fi/ecrrv1lku32mrwfdz4m4v/Screenshot-2024-09-07-at-15.03.55.png?rlkey=9wa8t29r8d1p894hbdxb4v4g6&dl=0\n Evidence that feedback has been solicited for a second time in the NFT Guild Discord Server on September 16\n https://www.dropbox.com/scl/fi/rr8tiyuuc6qw48v89520k/Screenshot-2024-09-16-at-23.49.34.png?rlkey=emxnj7xn02hu8hyu6adhulk2y&dl=0\n General Feedback Request (Trybbles Discord Server - Trybbles is the project that we will use as a fi",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 26,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 33281,
+      "promise": "Upon completion of this milestone the Cardano ecosystem will have access to tested open-source smart contract templates for random NFT swapping. \n・Integration of the smart contract code into the dapp completed.\n・Conduct comprehensive testing to ensure code correctness of open-source dapp and smart contract code.\n・Finalise comprehensive documentation for the smart contract code and all integration aspects of the project.",
+      "criteria": "・Open-source smart contract design and code is completed for random NFT swaps on Cardano.\n・Successful tests with no critical issues.\n・Documentation is available for review by the milestone reviewers and the wider Cardano community.",
+      "report": "All the updated code, documentation and test results, including the final smart contract code has been published to the project’s repo in our latest commit:\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/commit/d15cf5e5e9a5dcfddc093e4ae3a4b9b9df7dcd61\n \n 1\n The final version of the smart contract code is located in these files:\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/blob/main/smart-contracts/RandomSwap.hs\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/blob/main/smart-contracts/RandomSwapQueue.hs\n \n 2\n Extensive tests have been performed and the results have been published to the project’s GitHub and are available here:\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/blob/main/docs/platform/Testing%20the%20RandomSwap%20contract.pdf\n \n 3\n Comprehensive documentation has been written and re-written and is available in these files:\n \n In the instruction file for the installation of the dapp:\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/blob/main/docs/install.md\n \n In the repo’s main README, updated as part of the latest commit:\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/blob/main/README.md\n \n In the readme file of the smart contracts:\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/blob/main/smart-contracts/readme.txt\n \n In the source code of the smart contracts, as extensive code annotations:\n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/blob/main/smart-contracts/RandomSwap.hs \n https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates/blob/main/smart-contracts/RandomSwapQueue.hs",
+      "kinds": [
+        "code"
+      ],
+      "links": 18
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 33281,
+      "promise": "Our project's completion will enable secure and efficient random NFT swaps on Cardano.\n・Deploy a demo project on Cardano mainnet.\n・Promote the project to the Cardano community on Twitter, Discord and YouTube.\n・Monitor usage and feedback for potential improvements.\n・Produce and submit the project close-out report and video.",
+      "criteria": "・Successful project deployment with no critical issues.\n・Successful promotion activities on Twitter, Discord and YouTube.\n・Usage and feedback document compiled.\n・Submit the project close-out report and video.",
+      "report": "1\nTrybbles Random Swaps Contract Activity: https://adastat.net/addresses/addr1w8dk8vcd2x49yxa8958lguqhklvk623rhfn3u4gnfexyz3slnrz6h\nTrybbles Swap Pool Cardano Mainnet Concept dApp: https://bit.ly/Trybbles-Random-Swap\nProject GitHub: https://github.com/NFT-Guild/NFT-Swap-Infrastructure-Templates\n\n 2\n For the launch of the templates/concept dapp we made a total of 13 promotional posts so far, across social media platforms on both the NFT Guild (https://x.com/the_nft_guild) and the Trybbles (https://x.com/trybbles) accounts, YouTube channel (https://www.youtube.com/@trybbles) and Discord servers (NFT Guild: https://discord.gg/7HCxDryPHk ; Trybbles: https://discord.gg/AwEnRpRdcV).\n Screenshots here: https://drive.google.com/drive/folders/1HZWfojs1sTDtuFEdte3w0arXHrvJ5kVJ?usp=drive_link\n \n 3\n Trybbles Random Swap Launch Monitoring & Feedback Report:\n https://drive.google.com/file/d/1wX3PZtu7KPxpwdfoSMUd7FhkhQlWc5J_/view?usp=drive_link\n \n 4\n Close-out report: https://drive.google.com/file/d/1Pn_xGTz7cUQm8lbDAvcqqGf342MlRBEv/view?usp=drive_link\n Close-out video: https://youtu.be/mOE15p9Xeis",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 24
+    }
+  ]
+}

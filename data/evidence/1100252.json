@@ -1,0 +1,76 @@
+{
+  "title": "Scalus – multiplatform Scala implementation of Cardano Plutus",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 40000,
+      "promise": "Scala Compiler Plugin implementation that compiles a subset of Scala 3 to Cardano UPLC.",
+      "criteria": "Scala Compiler Plugin implementation that compiles a subset of Scala 3 to Cardano UPLC. \nIt provides sensible and friendly error messages.\nThere are tests that cover all supported Scala features that can be compiled to UPLC.",
+      "report": "Scala Compiler Plugin\nThere is a Scala Compiler Plugin implementation on GitHub that implements the functionality on the project GitHub\nhttps://github.com/nau/scalus/blob/e331157a2ce67838326624bfc8cc42d08d0f88a7/scalus-plugin/src/main/scala/scalus/SIRCompiler.scala\nScala Compiler Plugin Tests\nThere are tests that cover Scala features supported for compilation on GitHub:\nhttps://github.com/nau/scalus/blob/e331157a2ce67838326624bfc8cc42d08d0f88a7/jvm/src/test/scala/scalus/CompilerPluginToSIRSpec.scala\nDocumentation and Tutorials\nHere is a TutorialSpec file showing on how to compile Scala 3 to UPLC.\nHere is also an official site of the project: https://scalus.org\nHere is current documentation of the project: https://scalus.org/docs/Tutorial\nScalus Contracts Examples\nPreimage Validator\nMinting Policity Validator",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 12
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 40000,
+      "promise": "Plutus v1/v2 builtins implementation for JVM and JavaScript platforms.\nUPLC script evaluation and execution cost calculation implementation for JVM and JavaScript platforms.",
+      "criteria": "Plutus v1/v2 builtins implemented according to Plutus specification and work on JVM and JavaScript platforms.\nScalus can perform Script Execution Budget calculation according to PlutusV2 specs.\nThere are unit and/or property tests that cover that functionality.",
+      "report": "Plutus v1/v2 builtins\nPlutus v1/v2 builtins implemented according to Plutus specification and work on JVM and JavaScript platforms.\nHere are Scala sources that implement v1/v2 builtins for both JVM and JavaScript platforms:\nhttps://github.com/nau/scalus/blob/v0.8.2/shared/src/main/scala/scalus/uplc/Builtin.scala\nhttps://github.com/nau/scalus/blob/v0.8.2/shared/src/main/scala/scalus/builtin/Builtins.scala\nHere is JVM platfrom specific code:\nhttps://github.com/nau/scalus/blob/v0.8.2/jvm/src/main/scala/scalus/builtin/PlatformSpecific.scala\nAnd here is JavaScript platform specific code:\nhttps://github.com/nau/scalus/blob/v0.8.2/js/src/main/scala/scalus/builtin/PlatformSpecific.scala\nScript Execution Budget calculation\nHere are Script Execution Budget calculation implementation files. These are common for JVM/JavaScript platforms:\nhttps://github.com/nau/scalus/blob/v0.8.2/shared/src/main/scala/scalus/uplc/eval/BuiltinCostModel.scala\nhttps://github.com/nau/scalus/blob/v0.8.2/shared/src/main/scala/scalus/uplc/eval/CostModel.scala\nhttps://github.com/nau/scalus/blob/v0.8.2/shared/src/main/scala/scalus/uplc/eval/MemoryUsage.scala\nThis are the tests that use Plutus Conformance Test files and run Scalus implementation of Plutus CEK machine and check agains their expected values:\nhttps://github.com/nau/scalus/blob/master/shared/src/test/scala/scalus/uplc/eval/PlutusConformanceSpec.scala\nhttps://github.com/IntersectMBO/plutus/tree/master/plutus-conformance\nThe Plutus Conformance tests also contain expected execution budgets, like here:\nhttps://github.com/IntersectMBO/plutus/blob/master/plutus-conformance/test-cases/uplc/evaluation/builtin/semantics/addInteger/addInteger1/addInteger1.uplc.budget.expected\nYou may see here that Scalus tests also check that the execution budgets match:\nhttps://github.com/nau/scalus/blob/8a600dbde896f2e85723a4b335a935abbdc3e885/shared/src/test/scala/scalus/uplc/eval/PlutusConformanceSpec.scala#L431\nHere are more tests for cost execution functionality",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 30,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 40000,
+      "promise": "Scalus Standard Library contains a set of most used functionality for building smart contracts.\nUnit/property tests and documentation for each function.\nScalaCheck Property-based framework for testing Scalus smart contracts.",
+      "criteria": "Scalus Standard Library contains a set of most used functionality for building smart contracts.\nThere are unit/property tests and documentation for each function.\nImplemented ScalaCheck Property-based framework for testing Scalus smart contracts.",
+      "report": "Scalus Standard Library implementation is on Scalus GitHub: \n・all the stdlib is here: https://github.com/nau/scalus/tree/v0.11.0/scalus-core/shared/src/main/scala/scalus/prelude\n・List: https://github.com/nau/scalus/blob/v0.11.0/scalus-core/shared/src/main/scala/scalus/prelude/List.scala\n・Option: https://github.com/nau/scalus/blob/v0.11.0/scalus-core/shared/src/main/scala/scalus/prelude/Option.scala\n・BLS12-381 G1 functions: https://github.com/nau/scalus/blob/v0.11.0/scalus-core/shared/src/main/scala/scalus/prelude/crypto/bls12_381/G1.scala\n・common functions: https://github.com/nau/scalus/blob/v0.11.0/scalus-core/shared/src/main/scala/scalus/prelude/Prelude.scala\n\nHere are tests for stdlib functionality\n・ListTest: https://github.com/nau/scalus/blob/v0.11.0/scalus-core/shared/src/test/scala/scalus/prelude/ListTest.scala\n・OptionTest: https://github.com/nau/scalus/blob/v0.11.0/scalus-core/shared/src/test/scala/scalus/prelude/OptionTest.scala\n・other tests are here: https://github.com/nau/scalus/blob/v0.11.0/scalus-core/shared/src/test/scala/scalus/prelude\n\nScalaCheck Property-based framework for testing Scalus smart contracts implementation on the project GitHub\nHere are implementation of ScalaCheck Arbitrary instances for Cardano Ledger types and Plutus V1 and Plutus V2 Script Context types needed for testing Scalus smart contracts using ScalaCheck property-based testing framework:\n\n・https://github.com/nau/scalus/blob/v0.11.0/scalus-core/shared/src/test/scala/scalus/cardano/ledger/ArbitraryInstances.scala\n・https://github.com/nau/scalus/blob/v0.11.0/scalus-core/shared/src/test/scala/scalus/cardano/address/ArbitraryInstances.scala\n・https://github.com/nau/scalus/blob/v0.11.0/scalus-core/shared/src/test/scala/scalus/ledger/api/v1/ArbitraryInstances.scala\n・https://github.com/nau/scalus/blob/v0.11.0/scalus-core/shared/src/test/scala/scalus/ledger/api/v2/ArbitraryInstances.scala\n・https://github.com/nau/scalus/blob/v0.11.0/scalus-core/shared/src/test/scala/scalus/ledger/api/v3/A",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 46,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 40000,
+      "promise": "CIP-0057 Plutus Blueprint generation.\nTypeScript bindings for script serialization/construction/execution/cost/evaluation.\nJava API for script serialization/construction/execution/cost/evaluation.\nScalus JAR files published to Maven Central.\nScalus TypeScript bindings and JS packages published to NPM.",
+      "criteria": "Scalus can generate CIP-0057 Plutus Blueprint specifications for smart contracts.\nTypeScript bindings for script serialization, construction, cost calculation and evaluation implemented.\nJava API for script serialization, construction, cost calculation and evaluation implemented.\nScalus JAR files published to Maven Central.\nScalus TypeScript bindings and JS packages published to NPM.",
+      "report": "TypeScript bindings for script serialization, construction, cost calculation and evaluation implementation on GitHub.\nHere are the TypeScript bindings for library script evaluation and cost calculation APIs: \nhttps://github.com/nau/scalus/blob/v0.11.0/scalus-core/js/src/main/npm/scalus.d.ts\nExample of TypeScript bindings usage on Node.js:\nhttps://github.com/nau/scalus/blob/v0.11.0/scalus-examples/js/src/main/ts/evaluate.ts\nJava API for script serialization, construction, cost calculation and evaluation implementation on GitHub.\nJava API for library script evaluation and cost calculation APIs are the same as Scala is interoperable with Java on JVM. In the following demo I demonstate a Java example using Scalus on JVM.\nHere are examples of library usage:\n・Java/JVM example: https://github.com/nau/scalus/blob/v0.11.0/scalus-examples/jvm/src/main/java/scalus/examples/PlutusVMExample.java\n\nHere's a link to ScalaDoc API documentation: https://scalus.org/api/scalus/uplc/eval/PlutusVM.html\nLinks to Scalus JAR files on Maven Central\nLink on Maven Central with Java version of the library: https://central.sonatype.com/artifact/org.scalus/scalus_3\nLinks to Scalus JS packages on NPM\nLink to NPM Scalus library: https://www.npmjs.com/package/scalus\nCIP-0057 Plutus Blueprint generation implementation on GitHub\nHere's the Blueprint generation implementation:\nhttps://github.com/nau/scalus/blob/v0.11.0/scalus-core/shared/src/main/scala/scalus/cardano/plutus/contract/blueprint/Blueprint.scala\nhttps://github.com/nau/scalus/blob/v0.11.0/scalus-core/shared/src/main/scala/scalus/cardano/plutus/contract/blueprint/PlutusDataSchema.scala\nand tests:\nhttps://github.com/nau/scalus/blob/v0.11.0/scalus-core/shared/src/test/scala/scalus/cardano/plutus/contract/blueprint/BlueprintTest.scala\nAnd here are examples of usage for HTLC and PaymentSplitter contracts:\nhttps://github.com/nau/scalus/blob/v0.11.0/scalus-examples/jvm/src/main/scala/scalus/examples/HtlcValidator.scala#L100\nhttps://github.com/nau/",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 23,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "9",
+      "cost": 40000,
+      "promise": "Scalus Starter Project\nScalus Demeter.run template\nDocumentation, examples, tutorials published on Scalus project site\nProject Closeout Report and a Project Closeout Video",
+      "criteria": "Scalus Starter Project implemented\nScalus Demeter.run template implemented\nDocumentation, examples, tutorials published on Scalus project site https://scalus.org\nA Project Closeout report is submitted\nA Project Closeout video is submitted",
+      "report": "Scalus — Milestone 5 Proof of Achievements\nScalus Starter Project\nScalus Starter Project implementation on GitHub:\nhttps://github.com/lantr-io/scalus-starter\nThe starter project provides a ready-to-use template for developers to quickly start building Cardano smart contracts with Scalus. It includes example smart contracts, build configuration, testing setup, and comprehensive documentation.\nScalus Demeter.run Template\nScalus Demeter.run template implementation on GitHub:\nhttps://github.com/txpipe/awesome-starter-kits/pull/64\nThe Demeter.run template has been fully implemented and submitted to the txpipe/awesome-starter-kits repository. The PR has been open for 3 months awaiting merge by the Demeter.run platform maintainers. The template is complete and ready for use.\nDocumentation, Examples, Tutorials Published on Scalus.org\nDocumentation website: https://scalus.org\nAPI documentation: https://scalus.org/api/index.html\nGitHub repository with extensive examples and README: https://github.com/nau/scalus\nExample smart contracts and usage:\n・HTLC Validator: https://github.com/nau/scalus/blob/v0.13.0/scalus-examples/jvm/src/main/scala/scalus/examples/htlc/HtlcValidator.scala\n・Vault Contract: https://github.com/nau/scalus/blob/v0.13.0/scalus-examples/jvm/src/main/scala/scalus/examples/vault/VaultValidator.scala\n・AdaStream Project: https://github.com/nau/adastream\n\nThe website includes getting started guides, tutorials, API reference, and multiple real-world smart contract examples demonstrating Scalus usage across JVM, JavaScript, and Native platforms.\nProject Closeout Report Submitted\nProject Closeout Report\nThe report documents:\n・Complete Scala to UPLC compiler implementation\n・Full Plutus V1, V2, and V3 support\n・Multiplatform deployment (JVM, JavaScript, Native)\n・100% budget accuracy validated against ~100,000 mainnet scripts\n・Real-world adoption by Binocular, Hydrozoa, Cosmex, and AdaStream projects\n・Community metrics: 100+ GitHub stars, 170+ Discord members, 18+ contri",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 33,
+      "cut": true
+    }
+  ]
+}

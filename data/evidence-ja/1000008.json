@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・ベスノードでカルダノ署名を検証するための準備済み契約\n・evmアカウントと工場のスマートコントラクトを抽象化し、カルダノアドレスで縛られたアドレスに決定的に展開するスマートコントラクト\n・契約者との連絡を取り戻すサービス\n・カスタムプロバイダーをブラウザウィンドウオブジェクトに注入し、evmプロバイダとCardanoウォレット間でブリッジとして機能するnpmパッケージ。\n\nすべての部分は、統合テストに含まれている必要があります.",
+      "criteria": "統合テストは、統合されているすべての部品をカバーし、以下のすべての使用例をカバーします。\n・ネイティブ通貨の送金経路\n・第三者のスマートコントラクトの実行の幸せなパス\n・万全の潜在障害経路",
+      "report": "このコードは、https://github.com/dcSpark/wrapped-smartcontracts/tree/main のオープンソースです。\n以下が含まれます:\n・ベスノードのカルダノ署名を検証するための準備済み契約\n・evmアカウントと工場のスマートコントラクトを抽象化するためのスマートコントラクト\n・バックエンドサービス\n・カスタムプロバイダーを注入するnpmパッケージ https://www.npmjs.com/package/milkomeda-wsc-provider\n\n渡るテストへのリンクはこちら:\nhttps://github.com/dcSpark/wrapped-smartcontracts/actions/runs/7512703308/job/20453669760\n\n便利なスクリーンショットはこちら: https://drive.google.com/file/d/1rSgjVHWUB5R8l4Ett o0ODOFjCZQ0R9a/view?usp=sharing"
+    },
+    {
+      "no": 2,
+      "promise": "ミルクオメガダ側にガスを払うことを可能にするメカニズムを実装します。 バックエンドサービスは、Milkomeda取引の元の支払い者であり、保証された払い戻しが必要です.",
+      "criteria": "統合テストで覆われたガスの払い戻しの正しい計算.",
+      "report": "コードは、オープンソースリポジトリ(https://github.com/dcSpark/wrapped-smartcontracts/tree/main/packages)にあります。\n渡るテストと共有スクリーンショット:\nhttps://drive.google.com/file/d/18ViiUjQM KzakG2WcxgCiBSSdKHtnYUG/view?usp=sharing\nまた、次のマイルストーンを3rdパーティでこの機能をテストする監査の最終バージョンに送信しました."
+    },
+    {
+      "no": 3,
+      "promise": "インフラ全体を覆う監査 これは、事前コンパイル契約、固着契約、バックエンドサービスおよび提供者npmパッケージを含みます。 監査はまた、トランザクションのためのガスを返金する発明されたメカニズムをカバーしました。 発見への救済.",
+      "criteria": "すべてのユーザが脆弱性に直面している問題を修正",
+      "report": "オリジナル:\nこれは、Arbitrary Executionによる包まれたスマートコントラクトへの監査です。https://drive.google.com/file/d/1k-4 ozGGzxOVlnDFqHkMjzwzgU8M40eK/view?usp=sharing(監査中に起きたすべての問題が修正された最終バージョン)。 コードベースはコースのオープンソースであり、ここで見つけることができます: https://github.com/dcSpark/wrapped-smartcontracts\n\nコメント:\nアポロジー。 洗礼を読んだ後、クリアランスを使わなければならないということは明らかになりました。 「監査中に起きたすべての問題が修正された場所」の代わりに、「...私たちは、ユーザーの資金に影響を与える可能性のあるすべてのセキュリティの問題を修正しました。 今日と同様に、ユーザーの資金をリスク(なし)に乗せる脆弱性は認識せず、また、検閲者のユーザーの行動を検閲する方法はありません。\nまた、取得した3つのポイント(有料)にも対処します。\nH01:この問題の感覚を作るために、Malmeda Wrapperのスマートコントラクトがどのように機能するかを簡潔に説明します。 プロキシスマートコントラクトは、特定のCardano(ed25519)プライベートキーを使用して署名されたトランザクションから「注文」のみを取ることができるEVMにデプロイされます。 ユーザーのスマートコントラクトの展開は決定的であるため、安全です。 このスマートコントラクトは、Cardanoウォレットを通じてユーザーが管理できるウォレットに似ています。 UXを改善するために、スマートコントラクトを包まれたため、ユーザのトランザクションをブロードキャストするために、バッチラー(Oracle)も許可します。 以前に述べたように、トランザクションはユーザーによって署名され、Bender/Oracleはそれらをブロードキャストし、ユーザーが追加された非常に小さな手数料を取ります。 ユーザーは、必要に応じて、常にトランザクション自体を放送することができます。\n問題に戻る: \"[H01] 時間の許容誤差 -OF-CHECK TO TIME-OF-\n使用方法.この問題は、OracleとOracleのみのためです。 ユーザーの資金は、いかなる方法においてもリスクを負いません。 この問題は、Oracleソフトウェア(私たちによって実行)がトランザクションを放送する際にレース条件を持つことができるということです"
+    },
+    {
+      "no": 4,
+      "promise": "ラップされたスマートコントラクト(WSC)との相互作用を簡素化するTypeScriptライブラリ。 このライブラリは、レイヤー1(L1)環境を離れることなく、サイドチェーンまたはレイヤー2(L2)ネットワーク上でスマートコントラクトを実行できます",
+      "criteria": "開発者にC1 DAppsにラップされたスマートコントラクトを統合するためのシームレスで直感的な方法を提供します.",
+      "report": "WSCLib は、https://github.com/dcSpark/wrapped-smartcontracts/tree/main/packages/milkomeda-wsc を最終生成し、オープンソース化しました。 このライブラリは、TangleSwap、SNEK、Blueshiftなどの複数のプロジェクトで使われています。 npmパッケージへのリンクはこちら: https://www.npmjs.com/package/milkomeda-wsc"
+    },
+    {
+      "no": 5,
+      "promise": "Milkomeda-WSC Lib の上に構築された React コンポーネントライブラリ。 このライブラリは、L1 ユーザーが WSC と簡単にやり取りできるようにするユーザーのエクスペリエンスの推奨形式を提供しています。 Milkomeda-WSC Lib DApp開発者の統合により、シームレスに統合されます。\nお問い合わせ.",
+      "criteria": "UIライブラリは、必要な手順とプロンプトを統合するための2つの明示的なソリューションを提供する必要があります。\n・DAppのフロントエンドに、プロンプトとアクションがシームレスに埋め込まれる場所。\n・フロントエンドから開くことのできるウォレットのようなインターフェイスでユーザーを提示するほか.",
+      "report": "これは、ラップされたスマートコントラクト(WSC)のためのライブラリを統合するのは簡単です。 https://github.com/dcSpark/wrapped-smartcontracts/tree/main/packages/milkomeda-wsc-ui そして、ここで使いやすい例: https://github.com/dcSpark/wrapped-smartcontracts/tree/main/packages/milkomeda-wsc-next-example\n\nTangleSwapのチームによって既に生産で使用されました"
+    },
+    {
+      "no": 6,
+      "promise": "・2つのMilomameda C1 EVM DAppsとラップされたスマートコントラクト(WSC)技術をうまく統合し、ターゲットを絞ったマーケティングキャンペーンを通じて統合を促進します。\n・ラップされたスマートコントラクトテクノロジーとの統合:開発チームと連携し、WSCテクノロジーを2つのMilomeda C1 EVM DAppに統合\n・マーケティングキャンペーン:インテグレーション前に、マルチチャネルマーケティングキャンペーンを開始し、今後の機能に関する意識と興奮を創出します。 ソーシャルメディアの発表、ブログ投稿、Twitterのスペースが含まれます。\n\nプロジェクトクローズレポート:\n・PDFレポート\n・ビデオレポート",
+      "criteria": "・メインネット上でのSuccessfulインテグレーション:WSC技術が完全に統合され、メインネット上で2つのMalomeda C1 EVM DAppsで機能することを確認します。\n・マーケティング・アナウンス:マーケティング・キャンペーンで予定されている様々なプラットフォームで成功を収めた統合を発表\n・エンドユーザードキュメンテーション: エンドユーザー向けの包括的なガイドとFAQを提供して、新しいWSC機能の利用方法を理解します。\n・Developerドキュメンテーション:WSC-UI-Libを用いたWSC技術の統合において、他のMilkomedaプロジェクトを支援するための詳細な技術文書を作成します。\n・PCR-videにアクセスできるコミュニティ",
+      "report": "更新リンク(PDF): https://drive.google.com/file/d/1HLYg QvG7mh6HmGw BXTUvysZM8dni1d/view?usp=sharing\nポア:\n・動画の修正 https://vimeo.com/940522379\n・Audit Wrap smart contract-final-report.pdf\n・コードベース https://github.com/dcSpark/wrapped-smartcontracts\n・Developer Docs https://docs.milkomeda.com/cardano/wrapped-smart-contracts\n・パートナーインテグレーション動画 https://www.youtube.com/watch?v=vFD9jwd4fOY\n・ソーシャルリンクPoA:\n・https://x.com/DjedAlliance/status/1717145815699865788\n・https://x.com/Milkomeda com/status/1740887696514674849\n・https://x.com/Milkomeda com/status/1735455764050030736\n・https://x.com/blueshiftfi/status/1697232842068197739\n・https://x.com/blueshiftfi/status/1696916609686757844"
+    }
+  ]
+}

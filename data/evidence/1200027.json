@@ -1,0 +1,90 @@
+{
+  "title": "Anastasia Labs - Midgard: Cardano Layer 2",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "L2 Network and Consensus mechanisms:\nDefine the network topology and consensus algorithm for the Layer 2.\n・Communication protocol between L1 and L2\n・L2 transaction handling\n・Detail the process of transaction initiation and validation on L2.\n・Outline mechanism for handling failed transactions or rollbacks.\n・Network parameterization configurations for L2 nodes.\n・Data storage and retrieval mechanisms L2 nodes.\n\nSpecify the mechanism for data storage and retrieval on the Layer 2.\n・Economic Model\n・Provide overview of fee structure for transactions, and participant incentives. \n・Security Model\n・Describe rules for the registration of the validator set.",
+      "criteria": "The specification must be such that Midgard inherits the economic security of the Cardano L1.\nThis includes a precise explanation of how Midgard handles malicious majority stake attacks and replay attacks.",
+      "report": "We have all of our technical specifications are consolidated in a single document:\nhttps://drive.google.com/file/d/1-_89bQO2qGErFuws9Ir9dpk2knjVeoJy/view?usp=sharing\nIn response to the reviewers’ request, we have added a “protocol security” section to the technical specification document. It elaborates our answers from the original proof-of-achievement regarding how Midgard handles malicious majority stake attacks and replay attacks. Please see Appendix C.2.\nWe are also grateful to the reviewers for their suggestions on further improvements to Midgard’s documentation (diagrams, examples, comparisons with other L2s, FAQs, Github access). We’ll work toward incorporating them into our project over the course of the next several months.\nORIGINAL POA\nWe are happy and proud to submit the first Milestone of this proposal.\nWe have all of our technical specifications are consolidated in a single document: [old link]\nIn our submitted document we included all of the outputs for Milestone 1:\n• Output 1.1. Communication protocol between L1 and L2\nMidgard’s L2 consensus protocol operates via a collection of smart contracts on L1 and a data availability layer. These smart contracts implement the mechanisms by which L1-based user events are generated, operators’ L2 blocks are sequenced and confirmed in the L1 state queue, and fraudulent blocks are removed.\n• Output 1.2. L2 transaction handling\nAt any given time, L2 transactions are sent by users directly to the current operator via a publicly accessible API. We describe this in the specification section 2.2.\n• Output 1.3. Detail the process of transaction initiation and validation on L2.\nTransaction validation is handled optimistically in Midgard. This means that the current operator gathers all the transactions received via the L2 API (and those ordered via L1) into a block and commits the block’s header to the Midgard state queue on L1. We describe this in the introduction section of the specification.\n• Output 1.4. Outline mecha",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "16",
+      "cost": 150000,
+      "promise": "・Technical specifications of Midgard smart contract on the Cardano Layer 1\n・Detailed protocol invariants\n・Transaction diagrams for each Midgard contract interaction\n\nThis differs from the original proposal because the Midgard protocol has progressed significantly since the original design and has been improved greatly to inherit maximal security from the Cardano L1",
+      "criteria": "・Technical specifications of Midgard smart contracts with detailed invariants such that the implementation of the smart contracts can be completely derived from the specification ie. the technical specification is complete and comprehensive\n・Transaction diagrams for each Midgard smart contract interaction are complete in such that they depict the complete transaction including all inputs, outputs, minted values, stake rewarding certificates, and script parameters (redeemer/datum)",
+      "report": "We are proud to submit the proof of achievement for the second milestone of this project!\nThe Midgard technical specifications are now kept up-to-date at this link:\nhttps://anastasia-labs.github.io/midgard/midgard.pdf\nAs Github shows, a substantial amount of work has occurred in the Midgard project since the previous milestone’s submission in Jan 2025:\nhttps://github.com/Anastasia-Labs/midgard/compare/c945928..dd282c5\nWith respect to the specifications (the focus of this milestone), since milestone 1, we have:\n・Defined the Midgard protocol invariants, the negative consequences of them failing to hold, and how the current Midgard design enforces the invariants (appendix C.1).\n・\n\n・Fully specified the onchain logic for these consensus protocol components:\n・Deposit (sections 1.3, 2.1)\n・Transaction order (sections 1.5, 2.3)\n・Withdrawal order (sections 1.4, 2.4)\n・Witness staking script (section 2.5)\n・Settlement queue (sections 1.7, 3.6) and its interactions with other components (sections 3.2, 3.4)\n・Escape hatch (section 3.5)\n・Reserve (section 3.7)\n・Payout accumulator (sections 2.4, 3.7)\n・Fraud proof catalogue (sections 4.1, 4.3)\n・Clarified, improved, and fixed errors in the ledger rules chapter (5).\n・\n\n・Specified the Mithril-based multi-signature approach for Midgard’s data availability layer, as an alternative that will be feasible earlier than the Leios-blobs based approach.\n・Described every transaction used by the Midgard protocol with diagrams and explanations, clarifying the inputs, outputs, minted values, staking certificates, and script parameters used. This includes the interaction of each transaction with the onchain scripts it invokes. See appendix B.\n\nWith the above changes, we believe that we have met the required milestone outputs:\n・“Technical specifications of Midgard smart contract on Cardano Layer 1.” This output is met because Midgard’s onchain smart contracts on L1 are now fully specified in the specification chapters 1–5.\n・“Detailed protocol invariants",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "17",
+      "cost": 150000,
+      "promise": "Implementation of the below contracts:\n・Fraud proof contracts\n・Midgard state management contracts\n\nThis differs from the original proposal because the Midgard protocol has progressed significantly since the original design and has been improved greatly to inherit maximal security from the Cardano L1.\nMany of the previous outputs have already been completed or they are no longer relevant for Midgard.\nit is not specified yet what these two contracts will implement and we will specify in detail on the M2 with the architecture specifications.",
+      "criteria": "・Midgard smart contracts published on Github\n・Midgard contracts compiled successfully and unit tests demonstrating functionality and correctness",
+      "report": "A. Output: Fraud Proof Contracts\nB. Output: Midgard state management contracts\nAcceptance criteria: Midgard smart contracts published on Github & Midgard contracts compiled successfully and unit tests demonstrating functionality and correctness\nEvidence: \nFraud proof smart contracts published on Github github.com/anastasia-labs\nmidgard/onchain/aiken/validators/fraud-proofs at main · Anastasia-Labs/midgard\nUnit tests:\nmidgard/onchain/aiken/lib/midgard/tests.ak at unit-tests · Anastasia-Labs/midgard\nmidgard/onchain/plutarch/src/Testing/TransactionProofs.hs at main · Anastasia-Labs/midgard\nmidgard/onchain/plutarch/src/Testing/MerklePatriciaForestry.hs at main · Anastasia-Labs/midgard\nMidgard contracts compiled successfully screenshots verifying such are provided below:\nhttps://imgur.com/a/HdvOJRs\nhttps://imgur.com/a/noE3AWa\nInstructions on how to build the contracts:\nFor the Aiken contracts, run `aiken build` to build the contracts, and `aiken check` to run the tests.\nFor the Plutarch contracts cd into the Plutarch directory and run:\n`nix develop` \nAnd run the tests with:\n`cabal test all`",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "18",
+      "cost": 25000,
+      "promise": "・Midgard outbox smart contract \n・Midgard inbox smart contract\n\nThe checkpoint mechanism evolved greatly to inherit more security from the Cardano L1 then what was possible in the original milestone\nThe event inbox is the set of events received from the L1 blockchain by the Midgard L2.\nThe block producer will receive a list of events from the L1 by some relayer, and then include the merkle root of the events in the block header.\nThere are two types of events that can be received from the L1:\nMessages - these contain arbitrary information sent from Cardano L1 to the Midgard L2. This information can be used to move assets from Cardano to Midgard or to communicate other information about events on Cardano to Midgard. \nTransactions - These are transactions that are submitted on the Cardano L1 that must be executed in the Midgard L2. This \"Forced Transaction Inclusion\" is a security feature that allows participants of the Midgard network to access their funds in the (unlikely) event that Midgard block production is compromised or malicious, e.g. the block producer is censoring transactions. This is one of the powerful mechanisms through which Midgard inherits Cardano's security.\nThe Midg",
+      "criteria": "・Midgard outbox and inbox smart contracts published on Github\n・Midgard outbox and inbox smart contracts compile successfully show in the documentation and video demonstration.\n・Unit tests demonstrating functionality and correctness of Midgard inbox and outbox smart contracts",
+      "report": "We are pleased to submit the Proof of Achievement for Milestone 4 of the Midgard: Cardano Layer 2 project.\nMilestone 4 delivers the on-chain smart contracts that govern how users interact with the Midgard Layer 2 from Layer 1 (Cardano preprod). The inbox contracts handle user deposits and transaction orders entering the L2; the outbox contracts govern withdrawals and settlement of finalized L2 state back to L1. All contracts are implemented in Aiken (Plutus v3) and have been deployed and exercised on Cardano preprod across the 2026-04-25 operator/state-commitment run and the 2026-05-08 withdrawal/payout run.\nA. Output: Deposit Contract (Inbox)\nUsers can lock ADA and native assets into the Midgard L2 via a validated deposit transaction. Contract deployed on Cardano preprod testnet.\nAcceptance criteria: Contract is published on GitHub, compiles successfully, and users can submit verified deposit transactions to the Midgard inbox on preprod.\nEvidence: Source code — https://github.com/Anastasia-Labs/midgard/blob/367ede9ae356ef4da0f0fb45b7eedc59c64585d6/onchain/aiken/validators/user-events/deposit.ak | Preprod contract address: addr_test1wpuzy7pa0a2n5fddn5vuzua07nha28pug9l2w8l9v3vlxsg8mw2hg | On-chain deposit tx (2026-04-25): https://preprod.cardanoscan.io/transaction?id=637291210692b6b00edf9f09acf11a8fdd25c75eca4115c0f0ec718676c5528a\nB. Output: Transaction Order Contract (Inbox)\nUsers can submit L2 transactions via the tx-order contract, which queues them for inclusion in the next L2 block. Phase 1 (deserialization) and phase 2 validations are applied on receipt. Contract deployed on preprod.\nAcceptance criteria: Contract is published on GitHub, compiles successfully, and tx-order submissions are validated and accepted by the Midgard node on preprod.\nEvidence: Source code — https://github.com/Anastasia-Labs/midgard/blob/367ede9ae356ef4da0f0fb45b7eedc59c64585d6/onchain/aiken/validators/user-events/tx-order.ak | Preprod contract address: addr_test1wryh5c33n27qu9nu4smrd9a3",
+      "kinds": [
+        "chain",
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 29,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "19",
+      "cost": 25000,
+      "promise": "・Network parameterization configurations\n・Layer 2 toolkit for managing node services\n・Docker infrastructure for deployment and management of Layer 2 nodes\n・API provider service for data retrieval and submission\n\nThis differs from the original proposal because the Midgard protocol has progressed significantly since the original design and has been improved greatly to inherit maximal security from the Cardano L1",
+      "criteria": "・Successful implementation and approval of network parameterization - the chosen parameters should be secure and reliable in such that they do not result in network outages under non-malicious user activity\n・Successful deployment and management of Layer 2 nodes using Docker\n・Successful implementation and approval of Provider services - such that Midgard transactions can be successfully queried via at least one web API",
+      "report": "We are pleased to submit the Proof of Achievement for Milestone 5 of the Midgard: Cardano Layer 2 project.\nMilestone 5 delivers the Midgard Node MVP requirements listed in the Catalyst portal: network parameterization configurations, the Layer 2 toolkit for managing node services, Docker infrastructure for deployment and management of Layer 2 nodes, and an API provider service for data retrieval and transaction submission. The node connects to Cardano L1 through Kupmios or Blockfrost, monitors user-event contract addresses, batches L2 transactions into blocks, commits state to the on-chain state queue, and exposes a REST API. On 2026-04-25 the node drove a full protocol run on Cardano preprod, producing two state commitments and a state merge.\nA. Output: Network Parameterization Configurations\nConfiguration files and parameter sources define the network, L1 provider, persistence, operator, and protocol settings used by the Midgard node. The Docker and local run paths both start from the published environment and config sources.\nAcceptance criteria: Network parameterization is implemented in the repository and can be reviewed through the published configuration files and protocol parameter sources. The preprod protocol run demonstrates that the chosen parameters supported node operation without non-malicious-user outage during the cited test run.\nEvidence: Environment parameter template — https://github.com/Anastasia-Labs/midgard/blob/367ede9ae356ef4da0f0fb45b7eedc59c64585d6/demo/midgard-node/.env.example | Runtime config service — https://github.com/Anastasia-Labs/midgard/blob/367ede9ae356ef4da0f0fb45b7eedc59c64585d6/demo/midgard-node/src/services/config.ts | SDK protocol parameters — https://github.com/Anastasia-Labs/midgard/blob/367ede9ae356ef4da0f0fb45b7eedc59c64585d6/demo/midgard-sdk/src/protocol-parameters.ts | On-chain protocol parameters — https://github.com/Anastasia-Labs/midgard/blob/367ede9ae356ef4da0f0fb45b7eedc59c64585d6/onchain/aiken/lib/midgard/protoco",
+      "kinds": [
+        "chain",
+        "code",
+        "live"
+      ],
+      "links": 47,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "20",
+      "cost": 75000,
+      "promise": "・Final close-out report containing detailed retrospective analysis of our work and progress throughout development of Midgard including challenges that we ran into and how we were able to address them, including lessons or key takeaways we got throughout the development lifecycle \n・Final closeout video - demonstration of Midgard MVP together with reflection of our work",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "We are pleased to submit the final Proof of Achievement for Milestone 6, Project Close out, for Midgard: Cardano Layer 2, Project ID 1200027.\nA. Output: Final close-out report\nWe have prepared a final close-out report for Midgard: Cardano Layer 2. The report summarizes the project objectives, completed milestone outputs, MVP implementation, public evidence, implementation challenges, key lessons learned, and recommended next steps after the Catalyst-funded milestone scope.\nAcceptance criteria: The final close-out report is publicly available.\nEvidence:\nFinal close-out report:\nhttps://github.com/Anastasia-Labs/midgard/blob/tx-validation/Midgard%20Project%20Close-Out%20Report.pdf\nMidgard GitHub repository:https://github.com/Anastasia-Labs/midgard/tree/tx-validation\nPinned implementation evidence used for final milestone review:https://github.com/Anastasia-Labs/midgard/tree/367ede9ae356ef4da0f0fb45b7eedc59c64585d6\nMidgard technical specification:\nhttps://anastasia-labs.github.io/midgard/midgard.pdf\nB. Output: Final close-out video\nWe have published a final close-out video demonstrating the Midgard MVP and reflecting on the work completed throughout the project.\nAcceptance criteria: The final close-out video is publicly available and existing on Github within the close-out report.\nEvidence:\nFinal close-out video:\nhttps://www.youtube.com/watch?v=I8G4bFlBN5Q",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

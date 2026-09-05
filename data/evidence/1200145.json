@@ -1,0 +1,61 @@
+{
+  "title": "Maternal Mortality Crisis Solution - DoulaID: an identity app",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "In this first milestone we will produce and deliver the following:\n・The architecture design of the DoulaID Medicaid guide web app: we will provide a technical design of the webapp components as it should be developed. It will include a list of features and functionalities that the system will provide. \n・Flow of operation: we will provide a document and diagram on how users interact with the Doulaid webapp Medicaid guide.\n・Project planning and task allocation: based on items 1 and 2, we will define and plan each individual development and operational task using an Agile methodology and will be published in the GitHub repository issue tracker and project management tool.",
+      "criteria": "The milestone should be accepted when all deliverables defined above are completed. The goal is to have clearly defined:\n・what is going to be developed. That is the architecture design of the system\n・how users will interact with DoulaID. That is the flow of operation\n・how we are going to implement in terms of developer resources allocation. That is the project planning per se\n\nItem 1 and 2 will be more technical, however an overall review should be enough to understand the architecture at a high level. Item 3 is just the detailed planning of task for the next milestones.",
+      "report": "Milestone OutputsIn this first milestone we will produce and deliver the following:\n・The architecture design of the DoulaID Medicaid guide web app: we will provide a technical design of the webapp components as it should be developed. It will include a list of features and functionalities that the system will provide.\n・See Overview diagram https://github.com/roots-id/DoulaID/blob/main/DESIGN.md#ecosystem\n・See Architecture reqs https://github.com/roots-id/DoulaID/blob/main/DESIGN.md#architecture\n・Flow of operation: we will provide a document and diagram on how users interact with the Doulaid webapp Medicaid guide.\n・See the static guide here https://www.doulaid.com/our-mission/maryland-medicaid/medicaid-reimbursement-eligibility\n・See Flow of events https://github.com/roots-id/DoulaID/blob/main/DESIGN.md#flow-of-events\n・See the UX designs https://github.com/roots-id/DoulaID/blob/main/DESIGN.md#ux-designs\n・See the future (after the webapp implementation in this concept) mobile UX designs here https://www.doulaid.com/doulaid-app\n・Project planning and task allocation: based on items 1 and 2, we will define and plan each individual development and operational task using an Agile methodology and will be published in the GitHub repository issue tracker and project management tool.\n・See project roadmap https://github.com/orgs/roots-id/projects/33/views/3\n・See milestones list https://github.com/roots-id/DoulaID/milestones?direction=asc&sort=due_date&state=open\n\nAcceptance criteriaThe milestone should be accepted when all deliverables defined above are completed. The goal is to have clearly defined:\n・what is going to be developed. That is the architecture design of the system\n\n・See Overview diagram https://github.com/roots-id/DoulaID/blob/main/DESIGN.md#ecosystem\n・See Architecture reqs https://github.com/roots-id/DoulaID/blob/main/DESIGN.md#architecture\n\n・how users will interact with DoulaID. That is the flow of operation\n\n・See the static guide here https://www.doulaid.com/our-",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 46,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "In this milestones we will be developing the first working prototype of the DoulaID webapp based on the design produced in the first milestone. The prototype should allow the user to interact with the DoulaID webapp based in the operational flows defined. As a first prototype, it shouldn't be considered an MVP; that improvement is part of milestone 3.\nOpen source code will be available to use in the project Github repository with some basic instructions.",
+      "criteria": "The prototype delivered in this milestone should be able to demo at least 70% of the features defines in milestone 1. As a first prototype, it's not expected to be production ready and running and demoing may require manual procedures. The goal is to validate the initial design and a final product can be delivered in the milestone. \nThe prototype delivered should be considered as the first iteration of a product, that will be improved towards an MVP in the next milestone.",
+      "report": "Milestone Outputs\nIn this second milestone we have produced and delivered the following:\nIn this milestones we developed the first working prototype of the DoulaID webapp based on the design produced in the first milestone. The prototype allows the user to interact with the DoulaID webapp based in the operational flows defined. As a first prototype, it shouldn't be considered an MVP; that improvement is part of milestone 3.\nSee the demo video and demo app instructions in our repo. We have created logins for the two reviewers, if they want to interact with the app after watching the video:\nThe following are credentials for reviewers:\n・User 1 email: fokove3130@pixdd.com password: 12345678\n・User 2 email: ladesit411@matmayer.com password: 12345678\n\nAs always the open source code will be available to use in the project Github repository with some basic instructions.\nAs always you can see our Project progress:\n・See project roadmap progress\n・See milestones list progress\n・For reference, here is the original static guide that we are making into an app",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "The goal of this milestones is to deliver a MVP (minimum viable product) based on the design of milestone 1 and the prototype delivered in milestone 2. This step is an iteration process of improvement of the prototype, where the rest the features defined in milestone 1 should be implemented and most of the issues detected while testing should be resolved. \nThe MVP url will be published in a live cloud instance in the next milestone.",
+      "criteria": "The MVP delivered in this milestone should be able to demo all the features defined in milestone 1 and should behave stable during tests. As a first MVP some errors may be detected but shouldn't stop the service to run. The goal is to have a product ready to be deployed in a cloud instance in the next milestone.",
+      "report": "This is the POA for the F12 funded work, which is a follow-on to the F11 completed proposal:\nThe live cloud instance app is now live here. Anyone can sign up and follow the process. But we also supply a video guide below for reviewers and interested parties.\nWe have done several rounds of testing, fixes and deployments for all features and bugs.\nWe have onboarded 5+ Doulas as testers and they are providing feedback regarding the process. See our onboarding intro video here.\nWe have completed all milestones in our repository",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 15000,
+      "promise": "The output of this milestone is a deployed cloud instance of the MVP delivered in milestone 3. The instance will be deployed in AWS. The goal is to have a live DoulaID webapp ready to be tested by anyone and validate its functionalities. The real usage of the product will guide us for future improvements.\nThis milestones is the wrap up of the project where final documentation is produces as well as the requested final closeout report and a project closeout video.\n・Final close-out report\n・Final closeout video",
+      "criteria": "The readiness of the deployment in AWS that can be tested will be the acceptance criteria. The verification can be performed by a set of test that were made available for the MVP, that in this case it should be executed in the live environment. \nFinal documentation will be available in the webapp and the reception of the closeout report and video. \n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "We have completed all KPIs and Milestones as specified and provide the following evidence:\nThe evidence is the Live Cloud Deployment (AWS) ✅ Complete DoulaID Web App. Additionally, a Closeout Video/Podcast ✅ Complete\nVideo/Podcast should be delivered demonstrating how the live environment passes the guide requirements.\nThe DoulaID Web App url will be provided and the Closeout Report ✅ Complete Published publicly in our github and as a PDF and the closeout video will be published.\nFinal Documentation ✅ Complete is available within the app and at our github repository",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

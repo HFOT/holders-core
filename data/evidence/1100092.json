@@ -1,0 +1,72 @@
+{
+  "title": "CHARLI3 - Off-Chain & CNT Price Feeds (Community feed expansion)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 45000,
+      "promise": "・Hire or contract front-end developer (we have short-listed ones already as soon as we got funded)\n・Design 2 options for allowing users of portal.charli3.io to interact with and vote on new community price feeds (free data feeds); either a forum and/or a DAO mechanism to vote on which price feeds our team should allocate the rest of the funding towards. -- implementation is next milestone",
+      "criteria": "・Front-end developer contracted/hired\n・Minimum one design for portal.charli3.io to allow community members to vote on price feeds (use of the rest of the funds and remaining older funds)",
+      "report": "We hired a full stack developer with front-end experience with other Cardano projects as a full-time contractor: https://www.linkedin.com/in/talhahussain7/ .\nWorking with our team he created multiple mock-ups of for our portal to add the community section. He designed a version with just a voting section in the forum, an external link to Clarity to vote on issues there. We are moving forward implementing one of the designs with both a forum voting mechanism that requires C3 token and an external DAO link. \nHere is a video/demo of multiple design mock-ups to allow community members to vote, it was recorded by Talha our new hire as evidence that he is working on the project! https://vimeo.com/935739429?share=copy\nCompleted outputs:\n・2+ design mock-ups\n・Front-end dev hired",
+      "kinds": [
+        "social",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 90000,
+      "promise": "・Implementation of the design from milestone 1 that includes a dao/forum for the Cardano community to better engage with the charli3 team to request certain price feeds\n・Launch 5 feeds\n・Current community price feeds located at portal.charli3.io are maintained and continue to run",
+      "criteria": "Forum/dao design is implemented and live on portal.charli3.io website.\n5 additional price feeds are launched",
+      "report": "In order to achieve this milestone, we needed to implement either a forum or DAO voting section and launch 5 feeds from pre-proposal. \n・Since project launch, we've launched the following feeds NEWM/USD NMKR/ADA BOOK/USD ADA/CHF and ADA/EURO; these can be viewed here: https://portal.charli3.io/dev/feeds\n・Our ecosystem has enjoyed a 100% uptime with only 7 feed updates delayed by more than 20 seconds in the entire history of our service (Launched Oct 2022); view full report here on performance to date: https://drive.google.com/file/d/17iKhoHtAgVzTy5xjiCB0_y8fl5OwXC7t/view\n・Please find the updated forum/dao voting section on our developer portal here: https://portal.charli3.io/dev/community/forum\n\nUPDATED: Forum\nOur milestone requires either a forum with a voting section OR a DAO voting section, but not necessarily both. \nTo access the forum voting section, please do the following:\na. goto the website URL to find two tabs \"Public Discussions\" and \"Charli3-DAO Community\" \nNote that the Charli3-DAO Community section will have a \"lock symbol\" on it until you connect your wallet holding C3 Token.\nb. Select \"Charli3-DAO Community\" and users MUST input their wallet to proceed -- access to this section is restricted to only token holders. \nNote that the lock will be \"unlocked\" and you will get a notice that you have successfully entered the section\nUpon entering the section you will find at least one poll to illustrate the functionality.\n\nPlease note that this is a temporary solution with limited functionality (e.g. MVP) until we employ a third party solution like Clarity. It is likely the forum and voting will change in the next iteration to support temperature checks and discussions. Voting is limited to Yes/No questions at this time.",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "14",
+      "cost": 75000,
+      "promise": "・Launch a total of 5 new price feeds (for a total of 10 overall) and create support systems to scale at high uptimes enabling unlocking of milestone 4\n・Engage with community using a DAO and voting mechanism",
+      "criteria": "・5 new oracle price feeds are launched\n・DAO Created and first vote is completed with over 200 responses",
+      "report": "DELIVERABLE 1: DAO + Vote\nThe Charli3 team created a DAO in the summer of 2024, directly after submitting milestone 2 POA, and ran a temperature check with the newly formed DAO allowing them to vote on the clarity/summons platform to approve/deny us putting in a change request for the project (Reducing feed launches from 25 to 5 ensuring high demand feeds stay up for longer).\n=====================EVIDENCE OF REQUIREMENT CHANGE AND VOTE WITH 200+ SUBMISSIONS===========================\nVOTE OUTCOME: Community voted to change output 2 from 25 feeds to 5 feeds.\nVOTE EVIDENCE: https://drive.google.com/file/d/17oPA_ms9Mc17d0PalAwOaCJE8wvC9xpB/view?usp=sharing\n///////////////////\nNEW OUTPUTS REQUIRED/COMPLETED\n・278 Total DAO members\n・272 Votes to change requirements, 1 vote against, several abstaining\n・Temperature check with community passes to move forward with a change request to reduce feed launch from 25 to 5\n\n//////////////////\nMEDIUM ARTICLE: https://oraclecharli3.medium.com/c3-catalyst-update-community-data-feeds-fund-058ba47eef2e\n \n \nDELIVERABLE 2: Price Feed Launches\nThis milestone period lasted from May 2024 to June 2025. During this time we launched 5 feeds on mainnet for milestone 3. The mainnet details are available below. From the period Sep 8 2025 to Jan 30 2025, we ran 10 total feeds on mainnet (feeds launched from milestones 1-3). Since Jan 30 2025, some feeds have converted to pre-production or have been terminated for several reason (financial, lack of demand, or etc.). The details of such changes are part of the deliverables in Milestone 4. The change request document contains precise financial details and costs associated with the oracle price feeds.\nSep 8 2025 – Jan 30 2025: 10 feeds remain live on mainnet during the milestone period.\nNote that the costs for running a pre-production oracle network is lower than a mainnet feed, but there are fees required to pay node operators for server usage and incentive to run the network; additionally some communi",
+      "kinds": [
+        "chain",
+        "doc",
+        "other"
+      ],
+      "links": 46,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "15",
+      "cost": 45000,
+      "promise": "・Maintain previously launched project price feeds for 8 months from the time they are initially launched; feeds may be reduced or shut down if overbudget, in such an event the details are included in a report\n\n・Maintain alert and monitoring support systems to ensure 99.5% uptime of ecosystem",
+      "criteria": "・Oracle price feeds are active for 8 months from the time they are initially launched; feeds may be reduced or shut down if overbudget, in such an event the details are included in a report\n\n・Report created detailing any reduction in feeds, costs during the period, and number of updates",
+      "report": "Public Feed Report (PDF): https://drive.google.com/file/d/1lDrFxBbtq91udyKyiVbgaYsviceiNT6b/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "16",
+      "cost": 45000,
+      "promise": "・Final close-out report\n・Final close-out video\n・Donation function added to portal.charli3.io so the community can directly fund feeds they want to remain active\n・Create Final Feed Report showing what funds are available to support the oracle price feeds and an estimate for how long they can be supported for by Charli3",
+      "criteria": "・Final close-out report approved by Catalyst\n・Final close-out video approved by Catalyst\n・Report created and uploaded to a public link for review\n・Donation function added to portal.charli3.io",
+      "report": "・Final close-out report: https://drive.google.com/file/d/1PGDD0EUrBupZK_0VNFKLUnvhBA3Jpd14/view?usp=drive_link\n・Final close-out video: https://vimeo.com/1107246321/aaf98e19a5?ts=484992&share=copy\n・Donation mechanism on portal.charli3.io: https://portal.charli3.io/dev/community/support\n・Final Feed Report: https://drive.google.com/file/d/1FkuABG5FPrmbeAsqE3EI3xyhS_h3O3Pq/view?usp=drive_link\n\nTL;DR for next steps of the project\n・Migrate feeds to new partnerchain solution where costs are reduced 70%+. The relaunch is planned during Oct-Dec 2025 with 10-100 feeds running for at least 6 months longer. We've added 1.3M tokens to the fund to attempt this extension.",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 9
+    }
+  ]
+}

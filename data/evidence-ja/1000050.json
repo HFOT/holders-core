@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・仕様書のオンチェーン形式を完了\n・CIPを提案するステータスに移行するために必要な手順を完了します.",
+      "criteria": "・Githubのオンチェーンフォーマット仕様を確認できます。\n・CIP が CIP GitHub で提案されたステータスに CIP が移動したことを確認できます.",
+      "report": "このマイルストーンの目標は次のとおりです。\n・仕様書のオンチェーン形式を完了\n・CIPを提案するステータスに移行するために必要な手順を完了します。\n\n仕様のオンチェーンフォーマットの変更が完了します。\nhttps://github.com/Crypto2099/CIPs/tree/token-registration/CIP-0088\nこのコミットで表されます。\nhttps://github.com/cardano-foundation/CIPs/pull/467/commits/f6c1d690b0ce095f14decc0dcb514b54c317042c\n同じコミットは、CIP を提案するステータスに移動するために必要な最終ステップも表します。 現在CIP-88仕様をご提案し、承認をお待ちしています。\nCrypto2099 は、31 コミットを Cardano の設立にマージしたい:Crypto2099 のマスター:token-registration"
+    },
+    {
+      "no": 2,
+      "promise": "・登録用のコンセプトチェーン・インデックスの作成\n・署名を承諾する。\n・オープンソースのツールとしてこれを消去します.",
+      "criteria": "・Chain Indexerのコードを含むGitHubを確認できます。\n・審査官は、シグネチャが検証されていることを見ることができます。\n・審査官は、許容オープンソースライセンスのライセンスを確認することができます.",
+      "report": "このマイルストーンは、次の3つの証拠に関与しています。\n・登録用のコンセプトチェーン・インデックスの作成\n・署名を承諾する。\n・オープンソースのツールとしてこれを消去します。\n\nここでは、アクションの検証を含むプロセス全体のビデオを見ることができます。 https://youtu.be/tmZGmD98dDE\nこの github のリンクでオープンソース ツーリングを見ることができます: https://github.com/VeriGlyph"
+    },
+    {
+      "no": 3,
+      "promise": "・最終仕様は、トークン(NFT&FT)プロジェクトおよびdAppsで公開・共有されます。\n・完了時にプロトコルを実装する意図の文字を署名し、5つのプロジェクト(出版社や消費者)の最小限からコミュニティの受け入れを受け取る。\n・少なくとも1(一)プロジェクトはメインネット上でのチェーン登録を完了し、有効な検証可能な署名を持っています。\n・VeriGlyphブランドのソフトウェアの公開可能なバージョンを公開し、または公開されたデータを検証できるようにします.",
+      "criteria": "・標準が「ファイナル」の形で公開され、公開されているという証拠を参照してください。\n・署名された文字の意図の証明を見る\n・Cardanoメインネットのシステムでプロジェクトが1つ以上始まっていることを確認してください。\n・メタデータの公開と検証のための公開可能なプラットフォームを訪問します.",
+      "report": "・A. 出力:最終仕様は、トークン(NFT&FT)プロジェクトおよびdAppsと公開されます。\n・A. 受諾基準:標準が「ファイナル」フォームに公開され、一般に循環されているという証拠を参照してください。\n・A.証拠:\n・CIP-88: https://cips.cardano.org/cip/CIP-88\n・CIP-151: https://cips.cardano.org/cip/CIP-151\n・B. アウトプット: 完了時にプロトコルを実装するために意図の文字を署名することにより、少なくとも5つのプロジェクト(出版社や消費者)からコミュニティの受け入れを受け取ります。\n・B. 受諾基準: 意図の署名文字の証明を参照してください。\n・B. 証拠:\n・Four(4)の人気プロジェクトからIntentのレター:https://drive.google.com/file/d/1rJgajebnrp32QCTX0O1JQ-DR0Kkl3eff/view?usp=sharing\n・Koios Public APIによるCIP-151のサポートのドキュメント:https://api.koios.rest/#get-/pool calidus keys\n・Cardano-SignerによるCIP-88/CIP-151のサポート文書化:https://github.com/gitmachtl/cardano-signer?tab=readme-ov-file#cip-88v2-calidus-pool-key-mode\n・C. アウトプット: 少なくとも 1 (一) プロジェクトはメインネット上のチェーン登録を完了し、有効で検証可能なシグネチャを持っています。\n・C. 受諾基準: 公開可能なプラットフォームを使用して検証できる登録オンチェーンのトランザクションへのリンク。\n・C. 証拠:\n・スペースコイン(CIP-88): https://cardanoscan.io/transaction/cbfb59ea27f24984ce61b0892f6c453cb941f6d5d2c64b014d6fecb6ecb5f0fb\n・ATADA Stake プール (CIP-151): https://cardanoscan.io/transaction/a9ee535d97a837f599d772d33add07c7bfea2f44895dfc97c23bb68b9672dd10\n・上記は、次の出力で検証できます。\n・D. アウトプット: 公開されたデータを公開および/または検証するプロジェクトを可能にするために、VeriGlyph ブランドのソフトウェアの公開可能なバージョンを起動します。\n・D.受諾条件: 公開されたプラットフォームにアクセスし、メタデータの検証を行います。\n・D. 証拠:\n・出版(CIP-88): https://nexus.veriglyph.io\n・出版(CIP-151):https://github.com/gitmachtl/cardano-signer?tab=readme-ov-file#cip"
+    },
+    {
+      "no": 4,
+      "promise": "CIP アクティブ - CIP プロセスを完了し、CIP をアクティブな状態に移動します。 プロジェクトクローズアウトレポートとビデオ",
+      "criteria": "CIP が CIP の github 経由でアクティブな CIP であることが確認できます。 プロジェクトクローズアウトレポートとビデオは、査読者に利用可能です.",
+      "report": "クローズアウトレポートを更新し、最新の拒絶リクエストとしてクローズアウトビデオへのリンクを含む。\nA. 出力:CIPsは活動的な状態に移動しました\nA. 受諾の基準:CIPは活動的な状態に動きます\nA. 証拠:CIPは、このプルリクエストごとにエディタ本体にアクティブなステータスを提出しました:https://github.com/cardano-foundation/CIPs/pull/1115\nB. 出力: ビデオを閉めて下さい\nB. 受諾の基準:ビデオを見る\nB. 証拠: https://youtu.be/laBNM7RSFbs\nC. 出力: レポートを閉じる\nC. 受諾基準: 報告書を閉じる\nC. 証拠: https://drive.google.com/file/d/133btv-GuWb-xAWoOzJAUe XoDNZdWk/view?usp=sharing"
+    }
+  ]
+}

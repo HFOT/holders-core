@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "タブのトランザクション詳細ページでMarlowe契約のデコードされたダムビューを追加します。\nmarlowe datumビューには以下が含まれます\n・txページのMarloweタブ\n・JSON構造のデコルドダムをマロウ仕様\n・tx を示すヘッダのラベルに Marlowe スクリプトが含まれる",
+      "criteria": "マーロウ・ダタムビューは、以下の項目でトランザクションページのタブ内で実装され、表示します。\n・Marloweスクリプトを含むトランザクションページのMarloweタブを見ることができます。\n・JSON形式でデコードされたMarlowe datumを見ることができます。\n・ tx が Marlowe tx を含んでいるトランザクションページヘッダーのラベルを見ることができます",
+      "report": "統合マイルストーン1は、以下の機能を備えています。\n・Marlowe タブは、Marlowe コントラクトが使用されるトランザクションページに追加\n・Marlowe Tabは契約のJSON構造を示しています\n・トランザクションヘッダは、トランザクションがマーロウ契約実行を持っていることを示すアイコンを持っています\n\nビデオ録画: https://youtu.be/rTFrPZ1Cpaw\nマイルストーンの証拠としてメインネット自体に機能が搭載されているので、以下のいくつかの取引を参照してください。\nhttps://cardanoscan.io/transaction/1215521d0e5766879f8cfa476e5861ccf726e23fd024053bf01d2289774b3418?tab=marlowe https://cardanoscan.io/transaction/b4bcc6f0506888d75ea0d5f1c9b7c3fabca50c0119e244e05f8caf9cedadd7?tab=marlowe https://cardanoscan.io/transaction/74dcda332b41db7182a625fc1c0612d0c433ce3874b0f17877da698fa698fa4078ac7?tab=marlowe https://cardanoscan.io/transaction/2be9db7e2c908d25ab17f081b7aeb79ae6d6cb2ae12102cf7bbd85d02a50af53?tab=marlowe https://cardanoscan.io/transaction/dcde5e04d5a9077276f4128fcb307953acced6b510a5a63313e652e5d63bd3b06?tab=marlowe"
+    },
+    {
+      "no": 2,
+      "promise": "すべてのMarlowe契約取引をリストするCardanoscanの専用ページ\nリストページには以下のような機能が含まれています。\n・マーロウトランザクションID(txページ)\n・ADA及びトークン量\n・ブロック高さ/スロット詳細\n・エポック番号",
+      "criteria": "提供されたスクリーンショットを介して実装および検証可能なMarlowe契約リストページ\n・MarloweトランザクションIDが確認できます\n・取引中のADAまたはトークンの量を確認できます\n・トランザクションブロックの高さとスロット番号が確認できます。\n・エポック番号が見える",
+      "report": "下記のように統合されたマイルストーン2の特徴、\n・Cardanoscan(マーロー取引)の上場ページ\n・マーロウ契約ID\n・トランザクションID\n・ブロック/スロット詳細\n・エポック番号\n・契約件数\n\nビデオ録画: https://youtu.be/Nh6M9n3Xk5A\nマイルストーンの証拠としてメインネット自体に機能が搭載されているので、以下のいくつかの取引を参照してください。\n・https://cardanoscan.io/marloweContracts"
+    },
+    {
+      "no": 3,
+      "promise": "・Marloweの実行内容と関連取引のリストを表示するページを作成\n・Marlowe契約コードビューのセクションを作成する\n・ページは契約の詳細を表示する必要があります。例えば、tx ID、ブロックの詳細",
+      "criteria": "マーロー契約詳細ページを実装し、スクリーンショットを介して検証\n・マーロウの契約ページは、関連するトランザクションIDで確認できます\n・Marlowe契約コードをご覧いただけます\n・トランザクションブロックの高さ、tx ID の詳細は確認できます",
+      "report": "下記のように統合されたマイルストーン3の特徴、\n・マーロウ契約詳細ページ\n・マーロウコードビュー追加\n・詳細ページでは、tx id、ブロックの高さ、epoch などの tx の詳細が表示されます。\n・関連取引の表示\n\nビデオ録画: https://youtu.be/NTgXVWEWvqc\nマイルストーンの証拠としてメインネット自体に機能が搭載されているので、以下のいくつかの取引を参照してください。\n・https://cardanoscan.io/marlowe/fbb1a39851f3a1988112a41cdbfd9286ecf232675905586f6d6566e17bdea9df\n・https://cardanoscan.io/marlowe/ccba0886f7ea1bd8c49a51bc3ea3091c40bc6880693f28cccab13962d70638"
+    },
+    {
+      "no": 4,
+      "promise": "・メインネットでマロウサポートをDeploy\n・クローズアウトレポートとビデオ",
+      "criteria": "・メインネット上に展開し、メインネットエクスプローラURLで検証可能なMarloweサポート",
+      "report": "プロジェクトのマイルストーンが全て完了し、メインネット上に展開されると、以下のURLがいくつかあります。\nhttps://cardanoscan.io/marloweContracts/ja\nhttps://cardanoscan.io/transaction/1215521d0e5766879f8cfa476e5861ccf726e23fd024053bf01d2289774b3418?tab=marlowe\nhttps://cardanoscan.io/transaction/b4bcc6f0506888d75ea0d5f1c9b7c3fabca50c0119e244e05f8caf9cedadd7?tab=marlowe\nhttps://cardanoscan.io/marlowe/fbb1a39851f3a1988112a41cdbfd9286ecf232675905586f6d6566e17bdea9df\nhttps://cardanoscan.io/marlowe/ccba0886f7ea1bd8c49a51bc3ea3091c40bc6880693f28cccab13962d70638\nプロジェクトクローズ レポート - https://drive.google.com/file/d/1-I0DsRZAD s6-S6b-cA5o3d5rRT 2OsR/view?usp=sharing\nPorject 閉じる ビデオ - https://youtu.be/0XhBL6wVJnw"
+    }
+  ]
+}

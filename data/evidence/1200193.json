@@ -1,0 +1,69 @@
+{
+  "title": "Redesign of Catalyst's proposal review system and methodology [by TrustLevel, Photrek & Lidonation]",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "A detailed report summarizing the findings, challenges, and opportunities associated with each system component. This includes:\n・System requirements according to the current state of research and best practice. \n・Community feedback about the current process\n・Establishing the baseline of the qualitative and quantitative impact metrics determined in the proposal:\n・Correlation Between Proposal Ratings and Project Outcomes \n・Quality of Reviews\n・Reviewer Engagement\n・Project Success Rate \n・Allocation of up to 20,000 ADA for community input.",
+      "criteria": "・Research Findings on System Components: Comprehensive documentation of research outcomes for peer-review processes, reputation scoring mechanisms, incentive strategies, and impact assessment methods.\n・Summary of Proposal Reviewing Requirements: Document outlining the specific needs and criteria for the proposal reviewing system within Catalyst.\n・Community Engagement Report: Summary of feedback and suggestions collected from the Catalyst community regarding the proposal review system.",
+      "report": "1) Main Document, including:\n・Community Report\n・Research Report\n・Requirements for Catalyst\n\nhttps://docs.google.com/document/d/15mImi5Pd6PR5vKqgmruqqnJnqugMAwfeR7dvmAcgxbA/edit?usp=sharing\n2) Baseline Parameters:\nhttps://docs.google.com/document/d/1jrB6gBQVskrck_b6iFX-hp5Mtf1Qe-efyKdzjrjIcuQ/edit?usp=sharing\n3) Dework Bounty Board:\nhttps://app.dework.xyz/i/1Jho61Dx2xMN3Ia830Fzgh\n4) Report is also published on our website:\nhttps://docs.trustlevel.io/received-grants/cardano",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60000,
+      "promise": "・A comprehensive architecture diagram that provides a visual and functional blueprint of the entire system. This includes the following layers as described in the proposal:\n・Presentation Layer\n・Application Layer\n・Data Layer\n・Integration layer\n・Detailed design documents for each component of the system, including data flow diagrams and interface designs.\n・Bounties for Community Input of 15,000 ADA.",
+      "criteria": "・Comprehensive system specifications and architecture documentation.\n・Protocol for the peer-review process that includes domain-specific expertise, a two-track review mechanism, and panel reviews to enhance the evaluation quality of proposals.\n・Dynamic algorithms to calculate proposal ratings, track reviewer reputation scores, and develop an incentive system for rewarding high-quality contributions.\n・Framework design for impact assessments that combines objective and subjective evaluations, providing a holistic view of the real-world efficacy of funded projects.",
+      "report": "The following is the main document of the M2 POA:\nhttps://docs.google.com/document/d/135KbzyFkGZI8m-x9u4Cr-Vrn1vPY-niyTbkPZH-wKx0/edit?usp=sharing\nThis includes the following chapters:\n・Overall Tool Description\n・Architecture Documentation for:\n・User Interface (incl. Mockups on Github)\n・Data Layer (incl. Dataflow Diagrams on Github)\n・Application Layer (incl. Data Models for Proposal Assignment, Proposal Ratings & Reputation Scores)\n・Integration Layer (incl. Catalyst Explorer API)\n・Additional Features (incl. Impact Assessment Framework)\n\nThe report is also available on our Gitbook page: https://docs.trustlevel.io/tools-and-apps/grant-review-tool\nDeWork link for community contribution: https://app.dework.xyz/i/3S26fC8fyNqK1AV5ceQt93",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40000,
+      "promise": "・Fully functional prototypes for each major component of the system.\n・Comprehensive testing reports that detail each prototype and document any issues or challenges encountered during the prototyping phase.",
+      "criteria": "・Prototype Development Documentation: Detailed records of the development process for each prototype, including code repositories.\n・Functional Prototypes: Deployable versions of each system component, ready for internal testing.\n・Testing Reports: Documents summarizing the testing methodologies, results, and any modifications made to the prototypes based on testing outcomes.",
+      "report": "Here is our POV for Milestone 3:\n ✅ Fully functional and already deployed prototype:\n・Published codebase on GitHub repository with complete source code: https://github.com/TrustLevel/Grant_Review_Tool\n・Deployed backend service with REST API and MongoDB integration\n・Deployed frontend built with Next.js and Tailwind CSS\n\n ✅ Complete tool documentation:\n・./docs/deployment/installation.md with detailed setup manual\n・./docs/developer-guide/api-reference.md covering all system endpoints\n・./docs/developer-guide/algorithms.md detailing model logic\n・./docs/admin-guide/user-management.md for system operations\n\n ✅ Testing reports:\n・ ./tests/README.md with 5 categories and 15+ test scripts\n・ Test coverage for core functionality, authentication, workflows, and database operations\n・ Testing methodologies documented with execution procedures\n\nFull Video Tour:\n・Complete Frontend Demo: https://drive.google.com/file/d/1ZG9_rA2tLk_zLyCRn563YBM-NR0pDNPr/view?usp=sharing\n・Code & Test Walkthrough: https://drive.google.com/file/d/1--A4Mjupsb2sRiWCy_qzv-2gvGVLjE7-/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 10000,
+      "promise": "・Updated Prototypes: Revised prototypes that address feedback from the initial tests.\n・Community Testing Report: A detailed report that summarizes the feedback from community testing, analyzes usability data, and suggests further improvements. This includes updated quantitative and qualitative feedback on the impact metrics as described in M1.\n・Bounty program for community contributions: 5,000 ADA",
+      "criteria": "・Updated system prototypes incorporating improvements.\n・Community testing report detailing user feedback, usability issues, and performance.",
+      "report": "Dear MR,\nthe following document contains all outputs and evidence for Milestone 4, including a video walkthrough and links to all documentation:\n・https://docs.google.com/document/d/1MN_qbeagPyRrk18iQE9DRFRxhdtXCf5SSgOuuL0XSw0/edit?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 30000,
+      "promise": "・A fully operational system that is ready to integrate with Project Catalyst (or Catalyst Voices).\n・Recommendations for future enhancements or related projects must be well-documented and agreed upon by the project team and stakeholders.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available and:\n・summarizes the project journey, achievements, and next steps.\n・includes implementation details, integration outcomes, challenges encountered, lessons learned, and future recommendations.\n・Final closeout video is publicly available.\n・A fully operational system that is ready to integrate with Project Catalyst (or Catalyst Voices).",
+      "report": "We’re happy to share our close-out report with the community:\n・Link to Report: 1200193 Close-Out-Report\n・Link to Video: https://vimeo.com/1134645065?share=copy&fl=sv&fe=ci\n\nNote to MR regarding the “Integration with Catalyst” part:\nThe integration part has already been completed and fully documented in Milestone 3, and it was already live during the community testing phase of Milestone 4.",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

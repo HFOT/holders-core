@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "プラットフォームと全体的なアーキテクチャのすべての要件を説明する文書",
+      "criteria": "システムの明確なアーキテクチャと要件",
+      "report": "プラットフォームと全体的なアーキテクチャのすべての要件を説明する文書:\nhttps://docs.google.com/document/d/188QkENBo dRJW5T-r0XovLt7RaMwXY3Br90oZ2l9XqE/edit"
+    },
+    {
+      "no": 2,
+      "promise": "要件と試験の50%のスマートコントラクトで、少なくとも機能の半分を検証",
+      "criteria": "要件と試験の50%のスマートコントラクトで、少なくとも機能の半分を検証",
+      "report": "このレポートでは、アセットのフラクショナル化、テストネットのscの展開、テストシュート結果、githubリポジトリのスクリーンショット、ブランドの新しいUIの問題に対処するための提案されたソリューションを紹介します。\n当社のソリューションは、Canonical Smart Contracts の使用に基づいており、特定のアセットの異なるバージョンを 1 つのキャノンバージョンに統合することができます。 当社のソリューションの主要コンポーネントは、TokenMergerとCanoncialToken契約です。 TokenMerger は、特定のアセットの異なるバージョン間の変換契約として機能する ERC1967Proxy 契約です。これは、フラグメンドトークンと、その同じアセットのキャノンバージョンを指します。 TokenMerger は、Fragmented トークンの各アセットのホワイトリストを持っています。 これにより、アセットの単一バージョンが存在し、異なるトークン間での流動性フラグメンテーションの問題を解決し、ユーザーエクスペリエンスを向上させることができます。\n\nTokenMerger 契約には、addFragmentedToken、removeFragmentedToken、setConvertingToCanonicalState、setConvertingToFragmentedState、mintCanonicalToken、setAddingDelay、setCommission、およびresourceCommission などのいくつかの管理機能があります。 また、transformToCanonical、transformToFragmented、getAllFragmentedTokens、getAllCanonicalTokens、getAllTreasuryTokens、およびtransformCommissionなどのいくつかのビューなどのユーザー機能があります。\n\nMilkomeda C1 Devnet の社内テスト用の testnet スマートコントラクトをデプロイし、これまでに達成したテストに関するドキュメントを提供しました。 今回のレポートでは、テストスイートの結果が収録されています.また、当社のリポジトリ(PoM4)からスクリーンショットを追加し、プロジェクトの完了時にスタンドアローンDAppとして機能するUIのスクリーンショット(プロジェクト要件ではありませんので、有益な目的のために共有しています)を追加しました。\n\nここでは、PoM2 raport docs をご覧ください: https://docs.google.com/document/d/1-rOFUoa-tbvqAtX7k-ngkBemuQ91nbN8eF4RdkHe8/edit#heading=h.ya9safjv6il8"
+    },
+    {
+      "no": 3,
+      "promise": "完全なスマートコントラクトの実装",
+      "criteria": "完全なスマートコントラクトの実装",
+      "report": "報告書は、スマートコントラクト、DApp(UI&UX)、および提案の試験スイートの面について、計画されたバックログの完了を発表しました。 チームは、橋(ERC20s)に代表される断片資産のホワイトリストを維持し、ユーザーがこれらの資産を提出し、リターンで正式版を受け取ることを可能にする、正式なコンバータースマートコントラクトを開発しました。\nレポートでは、資産の追加とホワイトリストされたブリッジの制御を制御するマルチシグスマートコントラクト、実装契約、管理者、および手数料に関連する2つのパラメーターで開始される TokenMergerProxy を含む、ビジネス要件について説明します。 報告書は、橋梁や資産、合成資産の創出、規範資産の事前採掘、資産の可搬性転換の遅延についても議論する。\n\n報告書は、すべてのシナリオのMilomada C1デベロネット契約とテストの成功した展開を発表し、次の2週間で公開リリースのためのチームの計画によって締結されます。\n\nレポート:\nhttps://docs.google.com/document/d/1gs3 M4-A6yZd71QvLHKNPW CFyrk8TD6WhZ1HrTbg/edit?usp=sharing\nショートDAppウォークスルー:\nhttps://drive.google.com/file/d/1EYsFoAnSqB5DPdRPfsb8bxR2BbGESiFm/view?usp=share link"
+    },
+    {
+      "no": 4,
+      "promise": "新規契約を生成することにより、資産の僅か化を解決するスマートコントラクトBetter UX と Milkomeda C1 の安全な USDC",
+      "criteria": "第三者監査役によるセキュリティ監査",
+      "report": "私たちは、スマートコントラクトベースのトークンマーガーソリューションの開発のための助成金提案の最終証拠を提示することを喜んでいます。 過去数ヶ月に渡り、プロジェクトの目的に合った総合的かつ堅牢なソリューションをお届けするチームです。\n\nマイルストーン証拠の証拠 - 監査レポート:\nhttps://drive.google.com/file/d/1lvQYNUBRmT4Ho-ZFx-cLyBCjKTRA6n9-/view?usp=sharing\nトークンマーガーリポジトリの監査アドレス: https://drive.google.com/file/d/1sRYVESiBrDaWmhdXfe7qKl5ay8ZdCcwE/view?usp=share link"
+    }
+  ]
+}

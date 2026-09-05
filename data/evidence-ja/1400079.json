@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "マスミネットワークのAIエージェントが、既存の分散型アイデンティティ(DID)基準(W3C DID、検証可能な認証、KERI)を組み換えずに活用できる包括的なアーキテクチャ仕様文書の開発。 この仕様は、必須インターフェイスを正式に定義します。\n・DIDをウォレットに結合する方法\n・エージェントインタラクションで本人確認を行う方法\n・評判、コンプライアンス状況(例、KYC/KYB)、技術的な専門知識の発行、消費など、認証資格(VC)の認証方法\n\n仕様は、エコシステム全体でエージェントの発見、信頼、評判のシステムの基盤を提供します。\nスコープの明確化\nこのマイルストーンは、完全な最終仕様文書を提供します。\n・仕様(仕様): Agent Identity Framework の完全アーキテクチャ、データモデル、API エンドポイントを定義する正式なドキュメント。\n・Identity Flows 詳細: 仕様は、以下の重要なフローを完全に定義します。\n・壁の結合の流れ: Masumi Agent のウォレットを W3C DID または KERI 識別子にリンクするための完全な暗号化および API シーケンス。\n・\n\n・認証フロー: 完全な API シーケンス、データ構造",
+      "criteria": "・特定公開:最終的で包括的なアーキテクチャ仕様文書が公開され、エージェントのバインディング、発行、検証に必要なAPI、データモデル、および暗号基準を詳述します。\n・Wallet Binding の定義: 仕様には、必要なオンチェーン監査可能なイベント構造を含む、ウォレット結合フローの完全な正式な定義が含まれています(該当する場合)。\n・VC 検証 定義: 仕様には、必要なスキーマを含む、クレデンシャル検証フローの完全で正式な定義(エージェントの評判 VC など)、および 泣",
+      "report": "ワークショップライブストリーム: https://www.youtube.com/live/FqlzdFSI0OI?si=JVOym6oRV4G2JPeK\n技術仕様書: https://c-ipfs-gw.nmkr.io/ipfs/QmUyycApKYkuaqE5Rakw8hVytRGJ6vCoA2qPi7q9nevpj\nプレゼンテーション: https://c-ipfs-gw.nmkr.io/ipfs/QmSybRzadPY1npcLP4E7QmenZSpy4H8kDoeLs6qLCRcQWx"
+    },
+    {
+      "no": 2,
+      "promise": "開発者向けSDKやツーリングのリリースで、DID機能や資格認証をエージェントに簡単に埋め込むことができ、採用障壁を下げる。 これらのSDKは、DIDの解像度とクレデンシャル検証の複雑さを抽象化し、エージェントをDID(または潜在的に他のIdentity Standards)にリンクするための既定のAPIを提供し、エージェントツーエージェントの相互作用中にそれらを要求/検証します。\nSDKは、ドキュメント、チュートリアル、およびオンボーディングガイドが付属し、どの開発者も数週間以内に信頼できるアイデンティティを追加できることを確認します。\n規模の細部:\n・対応言語:SDKは、少なくとも1つの主要なプログラミング言語で提供されます:Pythonと/またはJavaScript/TypeScript。\n・APIに含まれる:エージェントを識別子にリンクするためのAPI、およびA2Aインタラクション中にVCをリクエスト、保持、検証するためのコア機能。\n・Templates に含まれる: リリースには、サポートされている言語ごとにテンプレートエージェントのアプリケーションが含まれており、受信トレイの ID 統合を実証します.",
+      "criteria": "・マルチ言語SDKの可用性:Masumi Identity SDKが公開され、Python(PyPI経由)やJavaScript/TypeScript(npm経由)で公開されています。\n・コア API 機能: 両言語の SDK には、正常に動作する機能が含まれています。\n・Masumi Agent ウォレットを DID/KERI 識別子に接続します。\n・エージェント・ツー・エージェント・インタラクションにおける検証可能な認証(VC)の要求と検証\n・ドキュメント: API リファレンスのドキュメンテーション、ステップバイステップのチュートリアル、開発者のオンボーディングガイドなど、必要なすべてのドキュメントが公開されます。\n・外部統合検証: lea",
+      "report": "・SDKパッケージ公開リンク https://www.npmjs.com/package/@masumi network/identity-sdk\n・オープンソースリポジトリ:https://github.com/masumi-network/masumi-identity-sdk\n・テンプレート: https://github.com/masumi-network/masumi-identity-sdk/tree/main/examples/template-agent\n・完全なドキュメントスイートリンク:https://masumi-identity-sdk-docs-8lhm9.ondigitalocean.app/get-started\n・外部連携事例:https://www.masumi.network/blogs/verifiable-identity-for-the-gwi-agent"
+    }
+  ]
+}

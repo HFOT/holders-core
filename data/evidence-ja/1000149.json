@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "以下の契約を開発・実施\n・単元資産の取得契約: これらの契約により、ユーザーはデジタルアセットを収集し、参加者間で報酬を公平に分配することができます。\n・リニアベスティング契約: 私達の安全な線形vestingの契約は指定の時間枠に資産を次第に解放するための信頼できるメカニズムを提供するカスタム化の選択を提供します。\n・ダイレクトオファー:当社の契約により、ダイレクトオファー機能による資産のピアツーピア取引を容易に",
+      "criteria": "契約締結",
+      "report": "当社は、以下の契約を策定し、実施しております。\n・単元資産の取得契約: これらの契約により、ユーザーはデジタルアセットを収集し、参加者間で報酬を公平に分配することができます。\n・リニアベスティング契約: 私達の安全な線形vestingの契約は指定の時間枠に資産を次第に解放するための信頼できるメカニズムを提供するカスタム化の選択を提供します。\n・ダイレクトオファー:当社の契約は、ダイレクトオファー機能による資産のピアツーピア取引を容易にします(PoAを提出した直後に文書と統合されたコミット)\n\nすべての契約は、当社のgithubで見つけることができます。\nhttps://github.com/Anastasia-Labs/plug-n-play-contracts"
+    },
+    {
+      "no": 2,
+      "promise": "次の契約のOffchain SDKを開発し、実装します。\n・単価信託受取契約\n・リニアベスティング契約\n・ダイレクトオファー",
+      "criteria": "以下のオフチェーンSDKが完成し、使用可能\n・単価信託受取契約\n・リニアベスティング契約\n・ダイレクトオファー",
+      "report": "以下のオフチェーンSDKが完成し、使用可能\n・単価信託受取契約\n・リニアベスティング契約\n・ダイレクトオファー\n\n契約ごとにSDKが見つかります。\nhttps://github.com/Anastasia-Labs/plug-n-play-contracts?tab=readme-ov-file#sdks"
+    },
+    {
+      "no": 3,
+      "promise": "オフチェーンSDKとの以下の契約は、マエストロと統合\n・単価信託受取契約\n・リニアベスティング契約\n・ダイレクトオファー",
+      "criteria": "Maestro API エンドポイントは、Maestro Platform で利用できます",
+      "report": "マイルストーン3のPOAを提出して喜んで誇りに思っています - 再び壊れたリンクを申し訳ありません(私たちのリポジトリはプライベートに滞在しましたが、今、彼らはレビューするためにコミュニティのために公開されています)\nオフチェーンSDKとの以下の契約は、マエストロと統合\n・単価信託受取契約\n・リニアベスティング契約\n・ダイレクトオファー\n\nAnastasia LabsスマートコントラクトのMaestroドキュメントへのリンク:\n・単価信託契約 - https://docs.gomaestro.org/Cardano/ManagedContracts/SingleAssetStaking/Introduction\n・リニアベスティング契約 - https://docs.gomaestro.org/Cardano/ManagedContracts/LinearVesting/Introduction\n・直接オファー - https://docs.gomaestro.org/Cardano/ManagedContracts/DirectSwap/Introduction\n\nAnastasia Labs Githubリポジトリと、スマートコントラクト用のオフチェーンSDKと連携:\n・シングルアセットステーク契約 - https://github.com/Anastasia-Labs/single-asset-staking-offchain.git\n・リニアベスティング契約 - https://github.com/Anastasia-Labs/linear-vesting-offchain.git\n・ダイレクトオファー - https://github.com/Anastasia-Labs/direct-offer-offer-offchain.git\n\nすべての Maestro API エンドポイントの例を以下に示します。\n・単価信託契約 - https://docs.gomaestro.org/Cardano/ManagedContracts/SingleAssetStaking/sas-create-config\n・リニアベスティング契約 - https://docs.gomaestro.org/Cardano/ManagedContracts/LinearVesting/vesting-collect-assets\n・直接オファー - https://docs.gomaestro.org/Cardano/ManagedContracts/DirectSwap/dswap-cancel-offer"
+    },
+    {
+      "no": 4,
+      "promise": "ユニットテストは、次の契約のMaestro APIエンドポイントで行われます。\n・単価信託受取契約\n・リニアベスティング契約\n・ダイレクトオファー",
+      "criteria": "単位のテストのサンプルは検証を渡っています",
+      "report": "検証を通過するユニットテストサンプルで新しいPOAを提出してください。\nテストは、各スマートコントラクトテストフォルダに見つけることができます。\n・シングルアセットステーク契約 - https://github.com/Anastasia-Labs/single-asset-staking-offchain/tree/main/test\n・リニアベスティング契約 - https://github.com/Anastasia-Labs/linear-vesting-offchain/tree/main/test\n・ダイレクトオファー - https://github.com/Anastasia-Labs/direct-offer-offer-offchain/tree/main/test\n\n実験を再現する方法を示すビデオフォーマットのテスト例:\n・シングルアセットステーク契約 - https://github.com/Anastasia-Labs/single-asset-staking-offchain?tab=readme-ov-file#running-tests\n・リニアベスティング契約 - https://github.com/Anastasia-Labs/linear-vesting-offchain?tab=readme-ov-file#running-tests\n・直接オファー - https://github.com/Anastasia-Labs/direct-offer-offer-offchain?tab=readme-ov-file#running-tests"
+    },
+    {
+      "no": 5,
+      "promise": "API エンドポイントを使用して、Maesstro で SC を構成および作成する方法に関する詳細な手順を説明します.",
+      "criteria": "ドキュメンテーションは、各実装の高レベルのアプローチとともに明確に書かれています",
+      "report": "私たちは、私たちのPlug N Play触媒の提案のために最後のマイルストーンを提出するために超満足しています:)\n・プロジェクトクローズアウト動画 https://www.loom.com/share/fac72c947fdc449aa7b53866d5a8eb10?sid=aded6ed2-c031-49ce-a119-c667d0496505\n・プロジェクトクローズアウトレポート https://drive.google.com/file/d/1u l7cOyle7RVMMX8CljS8ZLhgmHOb7/view?usp=sharing\n・ドキュメント\n\nAnastasia LabsスマートコントラクトのMaestroドキュメントへのリンク:\n・単価信託契約 - https://docs.gomaestro.org/Cardano/ManagedContracts/SingleAssetStaking/Introduction\n・リニアベスティング契約 - https://docs.gomaestro.org/Cardano/ManagedContracts/LinearVesting/Introduction\n・直接オファー - https://docs.gomaestro.org/Cardano/ManagedContracts/DirectSwap/Introduction"
+    }
+  ]
+}

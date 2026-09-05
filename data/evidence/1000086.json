@@ -1,0 +1,79 @@
+{
+  "title": "Fixing Nintendo's Problem: Unlocking a Multi-million Dollar NFC/NFT Authentication Market for the Cardano Ecosystem with Open-Source [Cardano Warriors + dcSpark]",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "During Milestone 1, our primary goal is to establish a solid foundation for the project. To achieve this, we will develop a detailed project framework which will include timelines, roles, and responsibilities. We will be investigating current mobile authentication models, with a special focus on their strengths and weaknesses. Moreover, we will assess technologies that are most suitable for NFC-NFT integration, as well as the potential challenges they might pose. We will identify and list NFC devices that align with our project's needs. A crucial aspect will be documenting a specific use case that will serve as the basis for NFC-NFT authentication. Concerning security, we will address and document potential threats and how we plan to mitigate them. We will define the exact requirements for NFC-NFT authentication. Finally, based on our research and evaluations, we will select potential vendors that match our credibility and product quality criteria.",
+      "criteria": "The successful completion of Milestone 1 will be marked by the presence of a clearly defined project structure, ready to guide subsequent stages. We anticipate having a list of mobile authentication models, each with an analysis of its strengths and weaknesses. It will be essential to have a comprehensive report detailing the technologies chosen for the project and the reasons behind these choices. We should identify at least three potential NFC devices, accompanied by technical specifications and compatibility notes. The chosen use case for NFC-NFT authentication must be clearly documented, a",
+      "report": "Follows the document report regarding M1 as a POA.\nhttps://docs.google.com/document/d/1QKrMO-EQ8mdwJDUSnibvOxKB9r2pv5MRENBgRxDibYg",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 145000,
+      "promise": "During Milestone 2, our main objective will be to advance from the foundational work of Milestone 1. We will focus on conducting essential software and hardware tests related to NFC capabilities, emphasizing security aspects like message signing and anti-cloning techniques. Concurrently, we'll embark on initial steps towards developing a proof-of-concept, grounded on our previously documented use case. As the project progresses, relevant documentation will be refined, and our planning strategies will be adjusted in line with emerging insights and findings.",
+      "criteria": "For the successful completion of Milestone 2, the following criteria must be met: A functioning NFC PoC prototype based on the use case defined in Milestone 1 should be developed and tested. Detailed test results should showcase the NFC's capabilities, emphasizing security measures like message signing and anti-cloning techniques. The existing project documentation must be refined and updated to reflect insights gained during the PoC development phase. Lastly, there should be clear feedback from the team about challenges encountered, and proposed solutions or future strategies.",
+      "report": "Hello esteemed reviewers, here is our new submission with a document restructuring to facilitate interpretation of our evidances.\nCheers =]\nhttps://docs.google.com/document/d/1P9ecqy1Eu2rNB_LatUi_IGrAkDb7IUFAL0IOOH8ANOw/edit",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 64365,
+      "promise": "During Milestone 3, our principal endeavor will be the exploration, testing, and development of the NFT integration into the PoC initiated in Milestone 2. This phase will have a emphasis on understanding and integrating Cardano's NFT standards for authentication. The exploration will further branch out into Cardano transactions and wallet components. Concurrent with these activities, we will be updating the project documentation to include new findings and considerations emerging from the integration. To ensure our product's efficacy and user-centricity, we will conduct preliminary tests with a select group of users, gathering feedback to refine our integration further. This milestone serves as a critical juncture wherein we'll assess if there's a need for any adjustments to the final milestones.",
+      "criteria": "To deem Milestone 3 successful, several criteria must be met. First, the NFT integration with the PoC should be demonstrable and function as per the Cardano NFT standards for authentication. Secondly, evidence of understanding and integration of Cardano transactions and wallet components must be present. The project documentation needs to be updated to encapsulate all the new insights and processes from this stage. Furthermore, feedback from the select user group should be collected and documented, noting the strengths, weaknesses, and areas of improvement in our current approach. Lastly, an e",
+      "report": "Hello dear Reviwers, this is our PoA for M3. This Milestone was super special for us, we're really happy with the progress of the project and our POC is working and delivering SoulBound =]\n\nhttps://docs.google.com/document/d/17vZFZBfdAFkvWe6WWVaBx-DJ_dWnDYPuiwiWXqTbLGc/edit?usp=drivesdk",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 64365,
+      "promise": "For Milestone 4, our focus will be on refining the mobile SDK based on insights derived from the PoC in Milestone 3. Our efforts will include the development and integration of a challenge-response authentication querying the metadata of an NFT. Alongside, we will also implement the capability of returning signed transactions to the network using the private key contained in the NFC. This will be achieved through comprehensive integration with wallets and other relevant APIs.",
+      "criteria": "The success criteria for Milestone 4 include a fully functional mobile SDK capable of challenge-response authentication utilizing NFT metadata. The SDK should also have the ability to return signed transactions to the network using the NFC-contained private key. Seamless integration with wallets or APIs should be evident, ensuring the SDK's efficiency.",
+      "report": "Hi everyone, sorry the document is open now. \nhttps://docs.google.com/document/d/1hP164mc6x0Uh1bXFo8kJljlRAthVaKszYw42noa4m7k/edit\n﻿",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 5,
+      "month": "10",
+      "cost": 64365,
+      "promise": "In Milestone 5, we aim to further the work of the previous milestone by refining SDK experience and compatibility. There will be both web and mobile versions of the SDK developed. Parallelly, development will kick off for a mobile template application that leverages the SDK, showcasing its potential and utility. Moreover, the concept of \"SoulBound\" will be explored, cryptographically linking the NFT with the NFC chip, aligning with the challenge-response concept from the previous milestone.",
+      "criteria": "For Milestone 5 to be successful, the SDK should be functionally operational on both web and mobile platforms. The mobile template application should be in its preliminary phase, distinctly demonstrating the advantages and features of the SDK. The SoulBound concept must be integrated, showcasing the cryptographic linkage between NFT and NFC.",
+      "report": "Hi guys, thank you for the feedback. We added a compilation of the SDK specific for mobile to demonstrate the capabilities of the code base. \nWe also recorded a video to show the installation process and we added an option to download the APK from our GitHub repo.\nhttps://docs.google.com/document/d/1Et_hP-L8KulSRYdR6H6pBcmffmgsT8hqkD0evTTSYxQ/edit",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 6,
+      "month": "12",
+      "cost": 74000,
+      "promise": "Milestone 6 is project's wrap-up. This includes more testing of all developed components, generating reports, and updating all project documents. A user manual will be created, elucidating the functionalities and operation of the SDK and the mobile template application, as also a fast deploy expierece of the PoC. The culmination of the project will be marked by a contacting potential partners, a launch event, followed by active community engagement to gather feedback and insights.",
+      "criteria": "For the successful conclusion of Milestone 6, all developed components, including the SDK and the mobile template app, should undergo thorough testing and validation. Comprehensive project documentation, updated to the latest stage, must be ready. The user manual should be complete, and community engagement initiatives should be in place, with feedback being actively collected and documented.",
+      "report": "Dear reviwers, here is our Milestone 6 reporting, containing the Final Milostone 6, and aditional video evidence requested by Catalyst team. \nThank you for following me on this journey!\nhttps://docs.google.com/document/d/18wK21eaW9OryD80NEvd2M3LI8OFrRXpwAzdmmJzqcmo/edit?usp=drivesdk",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    }
+  ]
+}

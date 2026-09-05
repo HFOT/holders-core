@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "ブロックチェーンストレージ:ブロックの保存と取得のサポート\nブロックチェーンストレージ:UTxOの保存と取得のサポート\nブロックチェーンストレージ:プール&ステーク登録/登録解除の保存と取得のサポート\nブロックチェーンストレージ:パラメータの変更を保存および取得するためのサポート",
+      "criteria": "すべてのコード関連の出力は、対応するGitHubの問題(チケット)の仕様に応じて完了し、実装する必要があります。\nすべてのコードの変更は、メインブランチにマージされる前に指定されたチームメンバーによって審査および承認されなければなりません。\nマイルストーンに関連する各GitHubの問題は、関連するタスクの完了時に「終了」または「完了」としてマークする必要があります.",
+      "report": "Cardanoノード、マイルストーン1:完了\nブロックチェーンストレージを実装し、ブロック、UTxO、プール、ステーク登録の取得、および対応するチケットで指定されたパラメータ変更が確立されました。 これは、指定されたチームメンバーからの承認によるコード出力、自動テスト、およびコードレビューによって証明されます。 GitHub Milestone 1の課題(別名チケット)をプロジェクトボードで追跡できます。ここでは、https://github.com/orgs/blinklabs-io/projects/16/views/1 で、Milstone 1の問題が発見され、その仕様とコード、各問題内のプルリクエストをリンクして調べることができます。 全てのマイルストーン1枚のチケットが完売しました。 対応する使用文書を追加し、ここで見つけることができます: https://github.com/blinklabs-io/dingo"
+    },
+    {
+      "no": 2,
+      "promise": "Ouroboros NtN ChainSyncミニプロトコルを実装\nOuroboros NtNの実装:TxSubmissionミニプロトコル\nOuroboros NtNの実装: ピアシャーリングミニプロトコル\nOuroboros NtN を実装: BlockFetch mini-protocol\n接続マネージャの統合を実装",
+      "criteria": "すべてのコード関連の出力は、対応するGitHubの問題(チケット)の仕様に応じて完了し、実装する必要があります。\nすべてのコードの変更は、メインブランチにマージされる前に指定されたチームメンバーによって審査および承認されなければなりません。\nマイルストーンに関連する各GitHubの問題は、関連するタスクの完了時に「終了」または「完了」としてマークする必要があります.",
+      "report": "Ouroboros ノード・ツー・ノード・サポートが実装され、Chainsync、TxSubmission、ピアシェアリング、blockfetch mini-protocols のサポートが確立され、対応するチケットで指定された接続マネージャの統合も確立されました。 これは、指定されたチームメンバーからの承認によるコード出力、自動テスト、およびコードレビューによって証明されます。 これらはすべて、プロジェクトボードの GitHub Milestone 2 の問題 (aka ticket) によって追跡できます。ここでは、https://github.com/orgs/blinklabs-io/projects/16/views/1 で、Milstone 2 の問題が発見され、その仕様とコード、各問題内のプルリクエストをリンクして調べることができます。 全てのマイルストーン2枚のチケットが完売しました。 対応する使用文書を追加し、ここで見つけることができます: https://github.com/blinklabs-io/dingo"
+    },
+    {
+      "no": 3,
+      "promise": "Ouroboros NtC LocalTxSubmission mini-protocol を実装\nOuroboros NtC LocalTxMonitorミニプロトコルを実装\nOuroboros NtC LocalStateQueryミニプロトコルを実装\nOuroboros NtC ChainSyncミニプロトコルを実装\nUTxO RPC API の実装",
+      "criteria": "すべてのコード関連の出力は、対応するGitHubの問題やチケットの仕様に応じて完了して実装する必要があります。\nすべてのコードの変更は、メインブランチにマージされる前に指定されたチームメンバーによって審査および承認されなければなりません。\nマイルストーンに関連する各GitHubの問題は、関連するタスクの完了時に「終了」または「完了」としてマークする必要があります.",
+      "report": "マイルストーン3:Cardanoノードを完成させる\nOuroboros ノード・ツー・クライアント・サポートは、LocalTxSubmission、LocalTxMonitor、LocalStateQuery、chainsync mini-protocols の実装とサポートを実装し、対応するチケットで指定された UTxO RPC API の実装が確立されました。 たとえば、LocalStateQuery の問題は、提供されたものの制限を規定しています。さらに、TODO がコードで規定しています。 これらの制限は、この資金提供された提案の範囲であるトランザクションビルディングには必要ありません。 次のマイルストーンは、取引の構築と提出のためにこれに基づいて構築します。 後日追加機能を追加するための追加機能のリポジトリで発行されます。\nこれは、指定されたチームメンバーからの承認によるコード出力、自動テスト、およびコードレビューによって証明されます。 このすべては、プロジェクトボードのGitHub Milestone 3の問題(別名チケット)によって追跡できます。ここでは、https://github.com/orgs/blinklabs-io/projects/16/views/1、Milstone 3の問題が発見され、その仕様とコード、各問題内のプルリクエストをリンクして調べることができます。 全てのマイルストーン3枚のチケットが完売しました。 対応する使用文書を追加し、ここで見つけることができます: https://github.com/blinklabs-io/dingo"
+    },
+    {
+      "no": 4,
+      "promise": "Tx 送信ゲートウェイ LocalTxSubmission サーバと API の実装\n保存されたデータに対するTx送信ゲートウェイの検証を実施\nTx 送信ゲートウェイ NtN 通信 TxSubmission の実装\nノードを使用してトランザクションの構築と送信をデモ",
+      "criteria": "すべてのコード関連の出力は、対応するGitHubの問題やチケットの仕様に応じて完了して実装する必要があります。\nすべてのコードの変更は、メインブランチにマージされる前に指定されたチームメンバーによって審査および承認されなければなりません。\nマイルストーンに関連する各GitHubの問題は、関連するタスクの完了時に「終了」または「完了」としてマークする必要があります.",
+      "report": "Milestone 4: Cardanoノードを完成させる\nLocalTxSubmission サーバと API で Tx の送信ゲートウェイが実装され、対応するチケットで指定された保存されたデータに対する検証が行われます。 これは、指定されたチームメンバーからの承認によるコード出力、自動テスト、およびコードレビューによって証明されます。 デモは、当社のノードを使用してトランザクションを構築し、送信できるようになりました。https://youtu.be/uVsQKxVaH-k\nGitHub Milestone 4の課題(別名チケット)をプロジェクトボードで追跡できます。ここではhttps://github.com/orgs/blinklabs-io/projects/16/views/1、Milstone 4の問題が見つかり、その仕様とコード、各問題内のプルリクエストをリンクして調べることができます。 全てのマイルストーン4枚のチケットが完売しました。 対応する使用文書を追加し、ここで見つけることができます: https://github.com/blinklabs-io/dingo"
+    },
+    {
+      "no": 5,
+      "promise": "プロジェクトクローズアウトレポート\nプロジェクトクローズアウトビデオ",
+      "criteria": "包括的なプロジェクトクローズアウトレポート\n包括的なプロジェクトクローズアウトビデオ",
+      "report": "当社のクローズアウトレポートはこちら: https://docs.google.com/document/d/1OPGfoJxsk8zHrZiTZnNwJq8PfzKOMZ2-MJ1P9BBHGbM/edit?usp=sharing\nクローズアウトビデオはこちら: https://youtu.be/vw6lhmToc0E\nソースコード: https://github.com/blinklabs-io/dingo\nデモ: https://youtu.be/uVsQKxVaH-k"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "title": "Message signing for Trezor and Ledger (CIP-8, CIP30)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "1) We will develop the code and prepare PRs for off-chain message signing for Trezor firmware and for Trezor Connect (integration layer). \n2) The PRs will be reviewed internally and by Trezor security team and will be ready for the release process.",
+      "criteria": "1) A compiled version of our Trezor firmware can sign off-chain messages as specified in CIP-8 and CIP30.\n2) The PRs are submitted to Trezor Github repository and reviewed by Trezor. All issues and comments from code review are resolved.",
+      "report": "PR for Trezor firmware https://github.com/trezor/trezor-firmware/pull/3509\nPR for Trezor connect https://github.com/trezor/trezor-suite/pull/10970\nDemo video - ASCII message confirmation flow https://drive.google.com/file/d/1x1ewOvVK8ZyZ4Qqklh9kMV0aUqK2w5DJ/view?usp=sharing\nDemo video - non-ASCII message confirmation flow https://drive.google.com/file/d/17H3tn4RhLPR499oYx41E9yG-PkriI7SD/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 81000,
+      "promise": "1) We will develop the code and prepare PRs for off-chain message signing for Ledger cardano BOLOS application and for cardano-ledger-js (integration layer). \n2) The PRs will be reviewed internally and ready for security review by the external auditor",
+      "criteria": "1) A compiled version of our Ledger firmware can sign off-chain messages as specified in CIP-8 and CIP30.\n2) The PRs are submitted to the Ledger Github (Ledger app) and Vacuumlabs LedgerJS (Cardano-ledger-JS) repositories ready to be reviewed by the external auditor.",
+      "report": "We finalized Ledger portion of work quite some time ago. As we also already passed the audit (Milestone 4), we are now waiting for Ledger to release (Milestone 5). Unfortunately, Ledger is very slow with reviewing and releasing nowadays.\nProofs:\n1) Demonstration video:\nSign ASCII message: https://drive.google.com/file/d/1cal3Ol7IC9Rhjlwi0C20x0VnKwL6uhM9/view?usp=drive_link\nSign Hashed Hex message: https://drive.google.com/file/d/1qYXJAetI440s21tX3lENNFuEGe0vHQk8/view?usp=drive_link\n2) Links:\nLedger app PR: https://github.com/LedgerHQ/app-cardano/pull/69/commits\n[Ledger has not merged Conway into develop yet, so this will eventually be rebased; auditors have finished their job and did not find any actual vulnerabilities; Ledger is now processing the auditor report]\n\nLedgerjs PR: https://github.com/vacuumlabs/ledgerjs-cardano-shelley/pull/205\n\nLedgerjs pre-release: https://github.com/vacuumlabs/ledgerjs-cardano-shelley/releases/tag/v7.1.1",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 32708,
+      "promise": "1) Integrate off-chain message signing functionality of Ledger and Trezor with cardano-hw-cli tool https://github.com/vacuumlabs/cardano-hw-cli\nNote: Milestones 3,4,5 may be delivered in mixed order as they contain external dependencies that are not under our control (external auditor availability, Trezor and Ledger review and release process speed, etc.)",
+      "criteria": "1) A compiled version of our updated cardano-hw-cli tool can sign off-chain messages as specified in CIP-8 and CIP30 with both Ledger and Trezor.",
+      "report": "We finalized the support for message signing in cardano-hw-cli. This was also successfully tested by M Lang using his suite for stake pool operators https://github.com/gitmachtl/cardano-signer\nProofs:\n1) PR - https://github.com/vacuumlabs/cardano-hw-cli/pull/175/files\n2) Videos\nLedger - https://drive.google.com/file/d/1sdxfANVxF8TYdswP7BlTYvUmZU3pdjBv/view?usp=sharing\nTrezor - https://drive.google.com/file/d/1VAZWAyKn87taFyB8Nkee4TVeDtqZ4b8q/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 43091,
+      "promise": "1) An audit report of Ledger CIP-8/CIP-30 implementation from a Ledger-approved code auditor.",
+      "criteria": "1) All critical and major findings will be either fixed or we will obtain written approval from Ledger that the finding can be ignored.",
+      "report": "Milestone 3 was now completed so I am resubmitting this.\n\nAudit for the Ledger app implementation was successfully finished and we are now waiting for Ledger to release.\n1) Audit report https://drive.google.com/file/d/1ni0AjhEd9Sp-dlcmEn3C29tP-S-lTuU2/view?usp=sharing\n2) Fixes:\nhttps://github.com/LedgerHQ/app-cardano/pull/69/commits/d42d012970c4255173cf08990cae5676c7fc91aa\nhttps://github.com/LedgerHQ/app-cardano/pull/69/commits/01ae3874040f9f8db50dcaa7a88c17b2cbbfd0b3\nhttps://github.com/LedgerHQ/app-cardano/pull/69/commits/8d4c3448f63538069e875f60bbb133c4dcf194be",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 5
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 40906,
+      "promise": "・The functionality is released in production on Trezor\n・The functionality is released in production on Ledger.\n・The closeout video is delivered to Catalyst team",
+      "criteria": "・The functionality is released in production on Trezor and can be tested with some dApp.\n・The functionality is released in production on Ledger and can be tested with some dApp.\n・The video contains all aspects defined by Catalyst + the demonstration of points 1 and 2.",
+      "report": "Dear reviewers, please see attached documentation for final milestone. We have been waiting for Trezor to release this for almost 18 months. They finally released this in September.\nCloseout report: https://drive.google.com/file/d/1bPOQ1avU5I0Fc39gDIU_zOo57IQ7ekqe/view?usp=sharing\nCloseout video: https://www.youtube.com/watch?v=5RiD-SaofIQ",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

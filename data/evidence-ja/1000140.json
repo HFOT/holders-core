@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "初期の展開インフラとコンフィギュレーションを簡素化し、以下の達成を実現します。\n・各拠点を上下にセットアップ・構成\n・cardanoノード\n・cardano db-sync\n・cardano-submit-api(カルダノ・サブミット・api)\n・郵便物\n・ブロックフロスト\n・作業コンテナの構築\n・既存のドッカーとkubernetesファイルからパラメータを抽出し調整\n・不足しているプロパティを追加し、既存のプロパティを修正\n・欠損コンフィグの作成\n・コンテナをパラメータ化し、コンポースファイルを作成する\n・一般的な特性をevn値に引き出す\n・パラメータが渡る方法の統一\n・コンテナの依存関係と接続の定義\n・実行中のスクリプトとosレベルコマンドの調整\n・kubernetesの設定\n・作業用ドッカーをkuberneters configに変換する\n・ネットワーク、デプロイメント、ストレージなどのコンフィグが不足している追加\n・エルムチャート\n・docerコンポースとkubernetesコンフィグのコンフィグベースの構築",
+      "criteria": "オープンソースが確実にブロックフロストと関連サービス(cardano-submit-api、postgres)を生産構成で起動する展開インフラ.",
+      "report": "[NEWアップデート2:デッドリンクを削除するために更新]\n[更新1:更新されたデモゴーグルドライブリンク]\nオープンソースリポジトリは、セットアップ、ノード、ドキュメント、作業コンテナ、コンフィグ、およびシェルムチャートがすべて見つけられる場所に位置しています。\nhttps://github.com/ikigai-github/ikigai-blockfrost-config\nDocker-compose デプロイメント: https://github.com/ikigai-github/ikigai-blockfrost-config/blob/main/compose/README.md\nHelm: https://github.com/ikigai-github/ikigai-block フロストコンフィグ/blob/main/helm/block フロスト/README.md\nブロックフロスト API サービスは、このデプロイメント(その完全性の証明と能力の実証)上で実行できます。\n前の投稿には、トランザクションを提出するために使用されることを意味し、ウェブサイトのリンクではなかったリンクが含まれています。 利便性のため、CBORトランザクションを送信する必要はありませんので、下記の動画をご覧ください。 ハッピーデー!\nhttps://drive.google.com/file/d/15VpBOTdGJ70Db BPm4SoJ9NAgGdEE0Mx/view\nアクションで API を参照するためにリンクをクリックしたい場合は、ここで動作するその出力を見ることができます: https://b-ryo.com/api/v0/blocks/latest."
+    },
+    {
+      "no": 2,
+      "promise": "出力は、インスタンスの信頼性とパフォーマンスの改善を追加した GitHub リポジトリへの多くのコミットメントになります。 これらのコミットは、信頼性と性能を向上させるために作り出す試みを説明します.",
+      "criteria": "変更は、展開のパフォーマンスに対する実証可能な、定量的な改善をもたらすべきです。 今のところ、私たちが作る正確な変更は不明です。 このマイルストーンでは、デプロイメント設定でスティンカーを行い、パフォーマンス/信頼性を向上させる結果にどのような変化が生じているかを確認します.",
+      "report": "更新リンク\n改善、リンク、ビデオ、スクリーンショットの書き込み: https://docs.google.com/document/d/1eQjU-nwY38mQOI5dlOAZrW2J3k9uBRnYAmPBZ2QFl5o/edit?usp=sharing\nすべてのマイルストーン2素材のフォルダ https://drive.google.com/drive/u/0/folders/1j-zgbzhdcOHSWhCBQs4izUnoMH8Pj0Y8"
+    },
+    {
+      "no": 3,
+      "promise": "お客様からのフィードバックを収集するために、ツールの開発者やユーザーとのアンケートを実施します。 出力は、ユーザーが提起した懸念に対処するための当社の計画として得られたフィードバックのコンパイルになります.",
+      "criteria": "意図した結果は、ユーザーフィードバックを収集することです。そのため、現在の展開とやりとりするときに、どの種類の改善ユーザーが望むか、どのような痛みのポイントを持っているかを見ることができます。 受諾基準は、有用な実用的なフィードバックのコンパイルです。 実際に展開をしていた開発者から5つの応答を得るための最善の努力をします.",
+      "report": "フィードバックをアップロードして、実際のフィードバックとフィードバックに対する応答とアドレスへの計画がより明確になります。 また、パイチャートでパッケージの使用を示す別のスクリーンショットを追加しました。\nhttps://docs.google.com/document/d/1hbE-3aYpWUmFVKlNd2qbNXE 6G1xZVqkTjCcHZ8r4o/edit"
+    },
+    {
+      "no": 4,
+      "promise": "構成されたBlockFrostインスタンスのセットアップとデプロイのための強力なドキュメント。 ドキュメントはGitHubのマークアップ言語で記述されます。 出力には、プロジェクトのクローズアウトレポートとプロジェクトのクローズアウトビデオも含まれます.",
+      "criteria": "コミュニティの開発者が簡単に使用できるように、デプロイメント手順を単純に記述するドキュメント。 ドキュメントには、デプロイに必要なすべてのステップが含まれます。 また、クローズアウトのレポートとクローズアウトの動画を配信する必要があります.",
+      "report": "オープンソースリポジトリ: https://github.com/ikigai-github/ikigai-blockfrost-config\n概要のビデオへのリンク: https://www.youtube.com/watch?v=OISBfAspNBM\n詳細はこちら: https://docs.google.com/document/d/1eEYW1jDyFtChEQMphclv0z7eEVagiwwhf7Tdv5fjb2A/edit?usp=sharing"
+    }
+  ]
+}

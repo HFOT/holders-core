@@ -1,0 +1,72 @@
+{
+  "title": "HLabs: typescript cardano-node / ledger - cardano-ledger-ts and cbor multi ledger support",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 60000,
+      "promise": "The scope of the project is to maintain and upgrade the cardano-ledger-ts repository in order to be able to support all the Cardano Era.\nWith this milestone, we need to modify some functions in the code to allow the library to behave deterministically; in other words, it always behaves the same as the Haskell equivalent.\nIn order to do this, the main functions to be changed are the \"fromCbor\" and \"toCbor\" functions for each of the already present data types.",
+      "criteria": "once a given CBOR (data) is given to a function modified in this milestone, the hash of that data is the exact same the we would have obtained if we used the Haskell implementation.\nThe only way that this is proven for a piece of code is via some tests, this is standard practice in the industry.",
+      "report": "here is a video demonstrating that in the latest version of cardano-ledger-ts the \"fromCbor\" and \"toCbor\" method are now able to remember the original bytes, and are deterministic: \nhttps://www.youtube.com/watch?v=ZKwPY_qzlJw\n\nalso here I provide\nTweet announcing cbor package 1.4.0: https://x.com/hlabs_tech/status/1855411410034926015\ncbor repo: https://github.com/HarmonicLabs/cbor\ncardano-ledger-ts repo: https://github.com/HarmonicLabs/cardano-ledger-ts",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "14",
+      "cost": 60000,
+      "promise": "The scope of the project is to maintain and upgrade the cardano-ledger-ts repository in order to be able to support all the Cardano Era.\nWith this milestone we extend support for data structures already defined for all eras starting from Byron\nThis implies transactions and all the other required fields according the the IntersectMBO/cardano-ledger cddl present in the various eras.\nsome of them are\n・TxBody\n・TxOut\n・Address\n・Value\n・Metadata\n・etc...\n\nfor a exhaustive list please see check IntersectMBO/cardano-ledger CDDL's",
+      "criteria": "The newly introduced data types respect the same properties explained in the previous milestone;\nfor the seek of completeness:\nGiven a CBOR (piece of data) that is a valid structure for one of the data types defined in the IntersectMBO/cardano-ledger CDDL, producing the hash of the constructed structure will return the same exact result we can expect by the current Haskell implementation.",
+      "report": "Here is the video going through what as been achieved with this milestone: https://youtu.be/UzhnFyeWmbA",
+      "kinds": [
+        "video"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "16",
+      "cost": 90000,
+      "promise": "extend support for data structures NOT already defined for all eras starting from Byron\nThis implies blocks and anything else not yet implemented according the the IntersectMBO/cardano-ledger cddl present in the various eras.\nsome of them are\n・blocks\n・headers\n・block bodies\n・etc...\n\nfor a exhaustive list please see check IntersectMBO/cardano-ledger CDDL's",
+      "criteria": "the library will support all types defined in all eras cddl files of the `IntersectMBO/cardano-ledger` repository\nthe new types specified above will be implemented, for the seek of completeness, these include:\nsome of them are\n・blocks\n・headers\n・block bodies\n・etc...\n\nThis includes cbor serialization and deserialization.\nafter milestone completion ANY piece of data on the current Cardano blockchain will be recognized, implying it will be possible to take the raw bytes and construct and in-memory representation of the data stored on chain.\njust like the previous milestone, but this time focusing",
+      "report": "A video showcasing the milestone completion can be found here: https://youtu.be/S5V_bM3OChM\n\nhere is the cardano-ledger-ts repo, where the changes where made: https://github.com/HarmonicLabs/cardano-ledger-ts",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "17",
+      "cost": 45000,
+      "promise": "What has been produced in the previous milestones will be used in practice in a prototype cardano-node implementation.\nIn other words:\nThe code produced so far will be used with some other code (already approved in other proposals) to do the work it is supposed to do.\nIn particular:\nThe data received from the network component (aka. blocks and transactions received from other nodes) will be validated using the code of this module.\nBased on the necessities for the new prototype cardano-node, this module might receive some adjustments.",
+      "criteria": "The code produced so far is used to verify the blocks received by the node.\nThe code will accept data that is correct, and reject data that is not correct.\nTests in the cardano-node will demonstrate this particular behaviour.",
+      "report": "The video in the following link showcases the integration of the updated cardano ledger in the typescript implementation of the cardano node:\nhttps://youtu.be/dMAHXbYiR38\nIn the video, this first version of the node is run, and it is explained where the new code of the ledger runs in particular (and succeeds)\n\nlink to the cardano node repository: https://github.com/HarmonicLabs/gerolamo\nlink to the cardano-ledger-ts repository: https://github.com/HarmonicLabs/cardano-ledger-ts",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "18",
+      "cost": 45000,
+      "promise": "video showing the work funded via this proposal and tweet mentioning it for visibility\nand a written close out report explaining what was accomplished",
+      "criteria": "the video and report can be easily found by anyone interested in it",
+      "report": "closeout video: https://youtu.be/a8xTyZzghw4\ncloseout report: https://github.com/HarmonicLabs/catalyst-close-reports/tree/main/1100159-ledger-ts\ntweet for visibility: https://x.com/MicheleHarmonic/status/1985430179183837540",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

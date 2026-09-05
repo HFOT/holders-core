@@ -1,0 +1,76 @@
+{
+  "title": "Anastasia Labs - Lucid Evolution: Redefining Off-Chain Transactions in Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 60000,
+      "promise": "・List of Outstanding PRs: Compile a comprehensive list of all outstanding Pull Requests (PRs) on the official Lucid repository that have not been reviewed or merged.\n・Evaluation and Fixing: Assess the code changes proposed in each PR and identify any issues, conflicts, or improvements needed.\n・Updated Fork: Apply necessary fixes to ensure compatibility with the maintained fork and resolve any conflicts that may arise during the merging process.\n・Merged PRs: Actively review, test, and merge the identified PRs from the main Lucid repository into the maintained fork.",
+      "criteria": "Anastasia Labs will not be able to work on official Lucid github repository, as the owner is Alas (not responding to any communication, not just from us but from anyone in the Cardano ecosystem).\nWhat we are doing is forking the lucid repository and continuing maintenance of it from there, upgrading it, removing all issues, and approving pull requests.\nThis new repository is called lucid evolution as stated in the proposal.\n・Comprehensive list of all outstanding Pull Requests (PRs) on the official Lucid repository that have not been reviewed or merged are compiled.\n・Code changes are assessed i",
+      "report": "We are happy to submit PoA for Milestone one with completely redone reporting.\nWe have a report with list of all PRs that have not been reviewed or merged, including details such as PR number, title, author, and date created with direct links\nSummary report highlighting the findings from the evaluation process, with specific mentions of issues addressed or improvements made\nLog or record of PRs that have been successfully reviewed, tested, and merged into the maintained for\nAll reports can be found at https://github.com/Anastasia-Labs/lucid-evolution/tree/catalyst-documentation\nWe have also uploaded them to our Google Drive for easier access. Hopefully this is enough for Milestone 1 PoA\nhttps://drive.google.com/drive/folders/1paE5bqopm1ULwlalki6X1jxoeMCNvYAO?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 60000,
+      "promise": "・Missing Functions Identified: comprehensive analysis of the Lucid framework to identify gaps in utility and convenience functions that hinder efficient development.\n・Function Design: Design proposal outlining the new utility functions to be implemented, with a focus on simplifying common design patterns, such as passing indices in the transaction redeemer.\n・Implementation: Code and integrate the proposed utility functions into the Lucid framework to streamline tasks like sorting inputs by TxOutRef's, indexing, and balancing.\n・Testing Suite: Develop a robust testing suite to ensure the functionality, correctness, and efficiency of the newly implemented utility functions.",
+      "criteria": "・Missing Functions are Identified: comprehensive analysis of the Lucid framework is done and gaps in utility and convenience functions are identified\n・New utility functions are implemented for common design patterns.\n・Extra functions are integrated into Lucid framework like sorting inputs by TxOutRef's, indexing, and balancing.\n・Testing Suite is developed for robust testing to ensure the functionality, correctness, and efficiency of the newly implemented utility functions.",
+      "report": "We are happy to submit our Proof Of Achievements for Milestone 2, for better readability we have a dedicated report in each evidence group.\n\nReport 1 - Gap Identification: \nDocumenting the analysis conducted on the Lucid framework, highlighting identified gaps in utility and convenience functions \nhttps://drive.google.com/file/d/1IcIlkvJs5FAB5qwaBuWqDNUqRsKMrP-x/view?usp=sharing\n\nReport 2 - Utility Functions:\nOutlining the new utility functions, including descriptions of their intended purpose, input parameters, expected behavior, and potential use cases\nRepository commits or code snapshots demonstrating the implementation of the proposed utility functions within the Lucid framework\nhttps://drive.google.com/file/d/15sBKyrTVFFC_E_MtcweaiyC1RRb1KNVt/view?usp=sharing\n\nReport 3 - Testing Suite:\nTest cases and scripts developed to validate the functionality, correctness, and efficiency of the utility functions, covering various - scenarios and edge cases\nTest results showcased in an automated terminal run with each passing test package\nhttps://drive.google.com/file/d/1db46vf_D6gyziq6IAsYkWBfzfQXrk-zc/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 40000,
+      "promise": "・Modified Lucid Documentation:\n・Clear and concise documentation reflecting changes and improvements.\n・Comprehensive guidance for developers using Lucid.\n・Technical Specifications for Conway Support: A detailed document outlining the technical requirements and functionalities related to Conway support in Lucid.\n・A reference guide for developers implementing Conway functions using Lucid.",
+      "criteria": "・Modified Lucid Documentation and guidance is readily available\n・Clear and concise documentation reflecting changes and improvements can be found in Anastasia Labs github repo.\n・Finished technical documentation for Conway Support: A detailed document outlining the technical requirements and functionalities related to Conway support in Lucid can be found in Anastasia Labs github repo.\n・A reference guide for developers implementing Conway functions using Lucid is finished and readily available.\n・A Comprehensive guidance for developers on how to use Lucid is readily avaliable",
+      "report": "1. \"Updated documentation files or documents clearly highlighting changes and improvements made to the Lucid documentation\":\nOur updated documentation showcases how Lucid Evolution works, highlights changes compared to the legacy Lucid library, and provides information on all possible endpoints of our library. \nThe updated documentation page can be found at https://anastasia-labs.github.io/lucid-evolution. \nThis link serves as an entry point to a documentation structure that encapsulates everything about lucid-evolution in one central place. The landing page serves as way to give an overview of the library. The detailed documentation on how to use the library with a range of use-cases can be found under \"Documentation\".\n\n2. \"Detailed technical document outlining the requirements and functionalities related to Conway support in Lucid\":\nA general report talking about our documentation structure and the changes from the legacy library:\nhttps://github.com/Anastasia-Labs/lucid-evolution/blob/catalyst-documentation/catalyst/Milestone%203/Milestone%203%20-%20Documentation%20Refinement%20and%20Technical%20Specifications/Milestone%203%20-%20Documentation%20Refinement%20and%20Technical%20Specifications.pdf\nand a document specifically for Conway era requirements and overview of functions:\nhttps://github.com/Anastasia-Labs/lucid-evolution/blob/24f9978e4c8ff48c05a5fa8dab9c929cf21e0f2f/catalyst/Milestone%203/Milestone%203%20-%20Conway%20Era/Milestone%203%20-%20Conway%20Era.pdf\n\n3. \"Comprehensive reference guide providing developers with clear instructions and examples for implementing Conway functions using Lucid\":\nFor this evidence we have prepared https://anastasia-labs.github.io/lucid-evolution/documentation/deep-dives/conway-era. \nThis document provides the descriptions and purpose of our Conway Era endpoints and should serve as a walkthrough of concepts. We dive deeper on how to implement these also in the following video content\n\n4. \" Code examples in a short video style de",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 10000,
+      "promise": "・Rigorous testing of SanchoNet features integrated with Lucid.\n・Identification and resolution of any bugs or issues.\n・Polished SanchoNet Features:\n・Fine-tuning and optimization of SanchoNet features for optimal performance.\n・Ensured a smooth and user-friendly experience for developers using Lucid.",
+      "criteria": "・Documentation with verified functionality and reliability of SanchoNet features within Lucid.\n・Integration that enhances the overall user experience is optimized and polished.\n・Lucid's efficacy in diverse applications on the Cardano blockchain is ensured by documenting performance benchmark results comparing the optimized SanchoNet features with current version of Lucid(https://github.com/spacebudz/lucid/releases/tag/0.10.7), demonstrating improvements.",
+      "report": "We’ve restructured our submission style and updated lucid evolution with optimisations and benchmarked the comparison data. These changes are all tested under our test cases, which you can read more about in the 1. report. \nIn the second report we showcase the successful test execution of our test cases which run both on the preview and preprod networks at all times with each library update. \nThis can be verified easily by visiting https://github.com/Anastasia-Labs/lucid-evolution/commits/main/ and checking the build status of new commits or personally running the tests by cloning the repository. Alternatively the report contains a video and a gif showcasing the successful runs.\nFor ease of information accessibility, we made separate documents/reports for each item on the evidence to concentrate relevant information together for readers.\nAll Milestone 4 deliverables containing the proofs/descriptions are also centralised in a single GitHub location:\nhttps://github.com/Anastasia-Labs/lucid-evolution/tree/catalyst/catalyst/Milestone%204 \n1 - \"Document with test cases covering various aspects of SanchoNet features, such as functionality, performance, and integration with Lucid\":\nhttps://github.com/Anastasia-Labs/lucid-evolution/blob/catalyst/catalyst/Milestone%204/Milestone%204%20-%20SanchoNet%20Feature%20Implementation%20and%20Testing.pdf\n2 - \"Test execution reports documenting the results of testing, including pass/fail status, identified issues, and any necessary follow-up actions taken\"\nhttps://github.com/Anastasia-Labs/lucid-evolution/blob/catalyst/catalyst/Milestone%204/Milestone%204%20-%20Test%20Execution%20Results.pdf\n3 - \"Document with records of bug resolution activities, including bug fixes implemented, code changes made, and testing/validation of fixes.Verification reports confirming the successful resolution of identified bugs or issues \"\nhttps://github.com/Anastasia-Labs/lucid-evolution/blob/catalyst/catalyst/Milestone%204/Milestone%204%20-%20Bug%20Identi",
+      "kinds": [
+        "code"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 30000,
+      "promise": "・Latest Cardano Multiplatform Library (CML) from the DCSpark repository is synced with Lucid Evolution\n・Identification and resolution of any bugs or issues.\n・Polished SanchoNet Features:\n・Fine-tuning and optimization of SanchoNet features for optimal performance.\n・Project Closeout Report\n・﻿﻿﻿﻿Project Closeout Video",
+      "criteria": "・Documentation with verified functionality and reliability of SanchoNet features within Lucid.\n・Lucid Evolution is updated to synchronize with the latest Cardano Multiplatform Library (CML) from the DCSpark repository.\n・An optimized and polished integration that enhances the overall user experience.\n・Seamless post-upgrade and addition functionality, ensuring Lucid's efficacy in diverse applications on the Cardano blockchain.\n・Project Closeout Report is submitted\n・﻿﻿﻿﻿Project Closeout Video is submitted",
+      "report": "Name of the project: Anastasia Labs - Lucid Evolution: Redefining Off-Chain Transactions in Cardano\nProject Catalyst Fund 11 proposal\nLink to Project Catalyst proposal page: https://projectcatalyst.io/funds/11/cardano-open-developers/anastasia-labs-lucid-evolution-redefining-off-chain-transactions-in-cardano\nLink to Ideascale proposal page: https://cardano.ideascale.com/c/cardano/idea/112414\n------------------------------------------------------------------------------------------------------------\nSince the start of lucid evolution libraries journey, today at the final milestone we are proud to say numerous top dApps in the Cardano ecosystem rely on the evolution library. We provide developers and the community with answers on how to resolve their issues for integrating or how to design their off-chain approach everyday in our dedicated channels.\nEvidences:\n1 - \"Provided documentation and reports detailing the testing process conducted on SanchoNet features integrated with Lucid\"\n-> https://github.com/Anastasia-Labs/lucid-evolution/blob/catalyst/catalyst/Milestone%205/Milestone%205%20-%20%20SanchoNet%20Features%20Testing%20Process/Milestone%205%20-%20%20SanchoNet%20Features%20Testing%20Process.pdf\n2 - \"Presented evidence of successful integration between SanchoNet features and the Lucid platform, such as video demonstrating functionality within the integrated environment is available\"\n-> As it can be observed also in our test result in the library all planned SanchoNet features are available on Lucid evolution and we present our video evidence where we touch up on core concepts and then showcase Sanchonet features https://www.youtube.com/watch?v=aCV7XzyMUNw&t=47s\n3 - \"Provided documentation detailing Lucid Evolution aligns seamlessly with the latest advancements in Cardano's CML\n-> https://github.com/Anastasia-Labs/lucid-evolution/blob/catalyst/catalyst/Milestone%205/Milestone%205%20-%20%20CML%20Sync/Milestone%205%20-%20%20CML%20Sync.pdf\n4 - \"A bug tracking log or",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 30,
+      "cut": true
+    }
+  ]
+}

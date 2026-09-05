@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・プロジェクト構成\n・開発ツールの設定\n・WASMの基本バインディングとトランザクションサポートで@hydra-sdk/cardano-wasmパッケージを作成。\n・Cardano-wasmと統合したウォレット操作で@hydra-sdk/coreパッケージを作成します。\n・パッケージのベーシックなAPIドキュメントを作成\n・Cardano-wasmとコアの初期ユニットテストの実施.",
+      "criteria": "1. プロジェクトの構成\n・プロジェクト構造を構成し、正常に構築します。\n・pnpm-workspaceを含む。 yaml、ターボ.json、およびrootのtsconfig.json。\n・リポジトリはモノレポ規格に従い、ライニングを通過します。\n\n2. 開発ツールのセットアップ\n・ESLint, Prettier, Tailwind, Vitest の設定と機能\n・pnpm lint と pnpm テストを実行すると、エラーなしで正常に完了します。\n\n3. @hydra-sdk/cardano-wasmのパッケージ\n・Cardano のシリアル化ライブラリを使用して、基本的な WASM のバインディングを提供します。\n・Cardano Preprod Testnet上で簡単なトランザクション(send/receive ADAまたはトークン)を作成、署名、および送信できます。\n・",
+      "report": "1. 公開GitHubリポジトリ:\n・コードベースが含まれています。... : https://github.com/Vtechcom/hydra-sdk\n・テスト結果とCIログが80%以上のパスレートを確認\n\nhttps://github.com/Vtechcom/hydra-sdk/actions/runs/19660125613/job/56304692722\nhttps://github.com/Vtechcom/hydra-sdk/actions/runs/19660125613/job/56304815924\n2. ドキュメントサイト:\n・公開文書:https://hydrasdk.com/\n・Cardano-wasm と core: https://hydrasdk.com/api の両方の API リファレンスを表示\n\n3. 公表されたnpmのパッケージ:\n・@hydra-sdk/cardano-wasm: https://www.npmjs.com/package/@hydra-sdk/cardano-wasm/v/0.0.3\n・@hydra-sdk/cardano-core: https://www.npmjs.com/package/@hydra-sdk/core/v/1.0.2\n\n4. ビデオ定義:\n・https://youtu.be/WioA13KUpno"
+    },
+    {
+      "no": 2,
+      "promise": "・@hydra-sdk/transactionパッケージ\n・取引構築・署名のための@hydra-sdk/cardano-wasmとの統合\n・スマートコントラクトトランザクションサポート(プルタススクリプトコール、ミント/バーン)\n・トランザクションモジュールのAPIドキュメント。\n・トランザクションフローのユニットテストと統合テスト。\n・取引の作成と提出を示すデモビデオ.",
+      "criteria": "1. @hydra-sdk/transactionパッケージ\n・Cardano-wasmを使用してCardanoトランザクションを構築、署名、シリアル化するためのユーティリティを提供します。\n・ADAとネイティブトークンをCardano Preprod Testnetに送信するサポート\n・解読・検証できる有効なCBORトランザクション出力を検証します。\n・スマートコントラクト取引ビルド(プルタススクリプト参照、償還、ダタム)を含みます。\n\n2. Cardano-wasmとの統合\n・トランザクションは、Preprod Testnet にシリアル化および送信できます。\n・ADAトランスファー、トークントランスファー、簡単な契約コールを含むテスト取引。\n・取引ハッシュやログを含む証拠.",
+      "report": "1. トランザクションモジュールのGitHubリポジトリ:https://github.com/Vtechcom/hydra-sdk/tree/master/packages/hydra-transaction\n試験結果: https://github.com/Vtechcom/hydra-sdk/pull/22#issuecomment-3631393751 https://vtechcom.github.io/hydra-sdk/test-reports///.\n2. 公開npmのパッケージ:\n@hydra-sdk/transaction: https://www.npmjs.com/package/@hydra-sdk/transaction/v/1.0.2\n3. 成功したtestnetトランザクションを示すビデオデモンストレーション:\nhttps://youtu.be/0C0TbWKcZrs?si=HzdKDJi64fKcFDCw"
+    },
+    {
+      "no": 3,
+      "promise": "・@hydra-sdk/bridge パッケージ\n・Hydra ノードと hexcore-proxy との統合\n・Hydraヘッドに署名されたトランザクションを送信サポート\n・イベントハンドリング(SnapshotConfirmed, HeadIsOpenなど)\n・ブリッジインテグレーションの API ドキュメントを詳細化\n・ハイドラ取引におけるユニットテストと統合テスト\n・ハイドラヘッドによるデモ映像配信\n\n(このマイルストーンは、Hydra Nodeに直接接続するコンポーネントであるブリッジモジュールにのみ焦点を合わせています。\n他のモジュールは省略されません。\n・マイルストーン1で@hydra-sdk/core(マルチシグ、ウォレット)が完成しました。\n・@hydra-sdk/cardano-wasm は、マイルストーン2の取引モジュールに統合されました。\n・トランザクションモジュール(Milestone 2)には、スマートコントラクトとミント/バーン機能が搭載されています。\n\nこの再編により、各マイルストーンが明確なスコープを持ち、評価を行い、SDKの実際の開発進捗状況を正確に反映させることが保証されます",
+      "criteria": "1. @hydra-sdk/bridgeのパッケージ\n・WebSocket や HTTP クライアントを Hydra ノードに接続します。\n・署名されたトランザクションをアクティブハイドラヘッドに送信できます。\n・ノードから確認(SnapshotConfirmed)を受信します。\n・ハンドル接続、再接続、エラー状態。\n\n2. hexcore-proxyとの統合\n・Bridge は、SDK ノードと Hydra ノード間でのトランザクションを中継するために hexcore-proxy と通信します。\n・成功メッセージ交換と取引伝搬確認のログ\n\n3. ドキュメント\n・https://hydrasdk.com/\n・Peer-reviewed、バージョン管理、インテグレーションガイドとコードの試験",
+      "report": "1. GitHub リポジトリの更新をブリッジで公開:\n・ブリッジモジュール: https://github.com/Vtechcom/hydra-sdk/tree/master/packages/hydra-bridge\n・試験結果 100% 合格: https://github.com/Vtechcom/hydra-sdk/actions/runs/19660322774/job/56305393179\n\n2.公開npmパッケージ:\n・@hydra-sdk/bridge: https://www.npmjs.com/package/@hydra-sdk/bridge/v/1.0.3\n\n橋およびプロキシによるHydraトランザクションの3.Videoデモ:\n・https://youtu.be/jrMYEAR1JZQ?si=N5yxV-FVKYlA2AkA"
+    },
+    {
+      "no": 4,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ\n・ドキュメントサイトおよび利用ガイド(README、APIリファレンス、チュートリアル)の完成\n・SDKパッケージ全体でのパフォーマンス最適化\n・モジュール(コア、トランザクション、ブリッジ)全体の完全統合とテストカバレッジ。\n・最終SDKパッケージをnpmに公開\n・GitHubの課題によるFeedbackコレクションメカニズム.",
+      "criteria": "1. プロジェクトクローズアウトレポート(PCR)提供\n・2～3ページで書かれた要約会議の公式PCR構造:\n・Challenge KPIとプロジェクト KPI\n・結果の達成方法\n・主な成果と学習\n・コラボレーションと生態系のエンゲージメント\n・次のステップとスケーリングロードマップ\n・Evidenceセクションに含まれている公開アクセス可能なリンク\n・Catalyst PCRガイドラインに準拠した形式とコンテンツ\n\n2. プロジェクトクローズアウトビデオ(PCV)公開\n・2～5分高品質(720p～1080p)動画\n・作業用ソフトウェア出力(SDK用ショーケース)\n・資金調達対象範囲、達成、学習、次の行動を含む\n・パブリックo",
+      "report": "・最終クローズアウトレポートへのリンク: https://drive.google.com/file/d/1NLMvI7QBSyGWEl9f4HqCzi0ggAmocKnA/view?usp=sharing\n・最終クローズアウト映像へのリンク: https://youtu.be/eQ-G-2dtjCk?si=33XR6tMxyC2IbGW4\n・タイムライン、チームロール、進捗追跡、課題など、プロジェクトプロセスの詳細なPDFレポート: https://drive.google.com/file/d/1OPmsVg9ahJjy0TJ pOgBzkQAElVCUrdV/view?usp=sharing\n・Final recap ビデオの要約開発、展開、結果。 : : : https://youtu.be/uC-3VzGClPI?si=8q6THXAFzFUZUWz6\n・ドキュメントサイト: https://hydrasdk.com/guides + https://hydrasdk.com/api\n・GitHubリポジトリ:https://github.com/Vtechcom/hydra-sdk/\n・npm パッケージ:\n\n・@hydra-sdk/core: https://www.npmjs.com/package/@hydra-sdk/core\n・@hydra-sdk/transaction: https://www.npmjs.com/package/@hydra-sdk/transaction\n・@hydra-sdk/bridge: https://www.npmjs.com/package/@hydra-sdk/bridge"
+    }
+  ]
+}

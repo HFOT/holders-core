@@ -1,0 +1,49 @@
+{
+  "title": "Indonesia CAR-dano: An Immutable History Record System for Pre-Owned Automotive Transactions in Indonesia [PHASE 1: DEVELOPMENT]",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 16000,
+      "promise": "・Comprehensive research documentation on blockchain solutions for car inspection reports, including various Cardano frameworks.\n・Initial architecture design document detailing the platform's technical framework, including database schema and smart contract specifications.\n・Prototype of the used car inspection report system, including basic input/output functions.\n・Progress documentation including team collaboration records, findings, and technical exploration.",
+      "criteria": "・Research documentation is clear, detailed, and addresses potential risks, challenges, and solutions.\n・Architecture design is well-structured, peer-reviewed, and approved by the project advisors.\n・The prototype demonstrates a basic yet functional car inspection record system, with test data successfully stored and retrieved.\n・Formal and written agreement with the partner company for collaborating in the project.",
+      "report": "The team has managed to do thorough research with the partnering company and has managed to come to an agreement on the system design. We have received approval as well from our technical advisors. \nAll of the milestones output can be accessed in the drive below.\nhttps://drive.google.com/drive/folders/1BeULOMAIKiRyqEAduv_Ly42e1UoDjczm?usp=sharing\nWe also have uploaded Youtube videos of how each systems are going to be implemented (prototypes).\n・Frontend: https://youtu.be/NVeGaH-hevs\n・Backend: https://youtu.be/jZxf9TQfJ0Y\n・UI/UX (Research): https://youtu.be/8Hw7GI_Upuw",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 18000,
+      "promise": "Inspector Mobile Application (Flutter): A fully functional mobile application for PT Inspeksi Mobil Jogja's inspectors to conduct and submit digital reports from the field. This replaces their paper-based process. The application will be distributed through external download (all devices used by the inspectors are Android).\nInternal Verification Dashboard (Web): A secure internal web dashboard for the PT Inspeksi Mobil Jogja team. This system allows for the review, management, and quality assurance of submitted inspection reports before they are committed to the blockchain.\nPublic Data Platform (Web): The public-facing website where end-users can search for and view the final, verified car inspection histories. This platform will feature a robust backend integrated with the Blockfrost API for on-chain data retrieval.\nBlockfrost API Integration: Full integration with the Blockfrost API to anchor data (e.g., report hashes and metadata) onto the Cardano testnet. This approach replaces the initial plan for custom Plutus smart contracts, opting for a more mature, secure, and industry-standard method for this use case.\nComprehensive Documentation: Full technical documentation in Github a",
+      "criteria": "Inspector Workflow: Inspectors can successfully log in, fill out, and submit inspection reports using the mobile application.\nInternal Verification: The PT Inspeksi Mobil Jogja team can view, manage, and approve/reject submitted reports via the internal dashboard.\nOn-Chain Transaction: An approved report from the internal dashboard successfully triggers a transaction that immutably records the report's hash and key metadata on the Cardano testnet via the Blockfrost API.\nPublic Data Retrieval: The public-facing platform can successfully query the Cardano testnet (via Blockfrost) and accurately",
+      "report": "This is the new and revised Proof of Achievement. There was some changes to the codes after the submission which resulted in the bug. The pin has now been updated as well. Sorry for the mistake. Better formatting in the PoA submission as well.\nYou can view the complete data for the Proof of Achievement here:\nhttps://docs.google.com/spreadsheets/d/1J2uaTETDs4o-ALaIFq47facUYau-7nhjB6savdNxvYo/edit?gid=952674242#gid=952674242\n・Inspector Workflow: \n・APK file: app.inspeksimobil.id (pin: 123456) or https://github.com/CAR-dano/form-app/releases/download/v2.2.7/palapa_inspeksi-v2.2.7+37-debug.apk for the direct link - Download the debug version for the reviewer. The data will be entered on https://staging-cari.inspeksimobil.id - [REVISED & UPDATED PIN || Added direct link to prevent misdownload]\n・Video demonstration: https://drive.google.com/file/d/1DSqUcnb0po0OGCWt_-HO2oz52SEXLGBN/view?usp=sharing \n・Note: In the newest iteration, there is an authentication system for the app. For the review, we're currently turning it off. If the auth system accidentally gets pushed, please let me know.\n・Internal Verification: \n・Link: https://staging-cari.inspeksimobil.id/ [BUG CLEARED || There was a rate limit problem, hence the failure of the pagination]\n・Username ProjectCatalystUser\n・Email ProjectCatalystUser@inspeksimobil.id\n・Password PCUser1234\n・Role Admin\n・Username pentest2reviewer\n・Email pentest2reviewer@gmail.com\n・Password pentest2reviewer\n・Role Reviewer\n・Username pentest3customer\n・Email pentest3customer@gmail.com\n・Password pentest3customer\n・Role Customer\n・Full video demonstration: https://drive.google.com/drive/folders/1c4zxwp19Lfpr7xCX97OdkvavClh39-Zp?usp=sharing \n・Timestamp:\n\n・Log in dashboard:https://drive.google.com/file/d/1kJteyg-HWV8KFnuItVj_nyy8uORt5Fy7/view?usp=sharing (0:00 - 0:53)\n・View report:https://drive.google.com/file/d/1PJXN-HV_2v_aIstufB-g_VHbyrc-F_ss/view?usp=sharing (0:00 - 3:31)\n・Approve report: https://drive.google.com/file/d/1PJXN-HV_2v_aIstufB-g_VHbyrc-F_ss/",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 53,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 26000,
+      "promise": "・Fully operational platform deployed on the Cardano mainnet.\n・Open-source release of the project codebase under the MIT license (or other license depending on agreement with partner company).\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Platform deployed on the Cardano mainnet, accessible to users.\n・Codebase shared on GitHub with appropriate licensing.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Proof of Achievement for Final Milestone\n1) Mainnet Deployment\n・Network: Cardano Mainnet\n・Deployment/Address: addr1q87nxru0k3jng3c44nayxlhe04dpc608lkrqj2q996mfam2xh0ntn0sylh08pvgzgr08m9cxn2pyz24qg4araszjkyzs0lpmuh\n・Public Access Link: https://cari.inspeksimobil.id\n・Revision 1 (10/09/2025): Booking system fixed\n\n2) Open-Source Code Release\n・GitHub Repository: https://github.com/orgs/CAR-dano/repositories\n・License: MIT\n\n3) Final Close-Out Report\n・Public Report Link (PDF/HTML): https://docs.google.com/document/d/1l4zNdgf6-Qr9t4D1zGSJd_z7ejfunKShO6vZhBkvs94/edit?usp=sharing\n\n4) Final Close-Out Video\n・Public Video Link: https://youtu.be/-a_33g5DJJY?si=JsPQ-jZU7s_o2mZK\n・Revision 1 (10/09/2025): Added walkthrough and blurred private information for Youtube.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Blaze: Tools for Handling and Managing Script Deployments",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 15000,
+      "promise": "・Declarative / type-safe utilities for script deployment\n・Utility functions for easing the deployment of scripts to the network\n・System to reconcile declarative goals with chain cache",
+      "criteria": "・Declarative utilities are implemented and type-safe in TypeScript\n・Script deployment functions work as expected on test networks\n・Chain cache reconciliation system is functional and efficient\n・All developed functions are thoroughly unit tested\n・Initial documentation for usage is available",
+      "report": "A. Output: Type-safe script deployment utility.\nAcceptance criteria: The milestone requires declarative, type-safe utilities for script deployment and utility functions for deploying scripts to the network.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200042/m1.md#code-evidence\nB. Output: Script-reference lookup and chain-cache reconciliation.\nAcceptance criteria: The milestone requires a system to reconcile declarative goals with chain cache, with functional and efficient chain-cache reconciliation.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200042/m1.md#code-evidence\nC. Output: Script deployment test evidence.\nAcceptance criteria: The milestone requires unit tests and script deployment functions working on test networks.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200042/m1.md#test-evidence\nD. Output: Usage documentation and changelog evidence.\nAcceptance criteria: The milestone requires usage documentation and evidence that the relevant deployment work is recorded.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200042/m1.md#documentation-and-changelog-evidence\nE. Output: Public review evidence.\nAcceptance criteria: The milestone requires code review comments from at least two senior Cardano developers.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200042/m1.md#peer-review-evidence",
+      "kinds": [
+        "code"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 15000,
+      "promise": "・Standards for managing deployed scripts\n・Functions for script versioning and updating\n・Utilities for script referencing and dependency management\n・Examples of use in Continuous Deployment (CD) pipelines",
+      "criteria": "・Script management standards are well-defined and documented\n・Versioning system allows for smooth script updates\n・Referencing system efficiently manages script dependencies\n・CD examples successfully demonstrate automated script deployment\n・All new features are covered by unit and integration tests",
+      "report": "A. Output: Standards for managing deployed scripts.\nAcceptance criteria: Script management standards are well-defined and documented.\nEvidence: The standard (identifiers, versioning rules, record statuses, audit output, and dependency management) is documented at https://blaze.butane.dev/deploy/guides/script-management (source: https://github.com/butaneprotocol/blaze-cardano/blob/main/packages/blaze-deploy/docs/guides/script-management.md) and encoded in the types at https://github.com/butaneprotocol/blaze-cardano/blob/main/packages/blaze-deploy/src/types.ts\nB. Output: Functions for script versioning and updating.\nAcceptance criteria: The versioning system allows for smooth script updates, with test results showing successful versioning and updating.\nEvidence: Version comparison, patch increments, and supersede handling are in https://github.com/butaneprotocol/blaze-cardano/blob/main/packages/blaze-deploy/src/manage.ts. Replacement of a live script and retention of the superseded record are tested in https://github.com/butaneprotocol/blaze-cardano/blob/main/packages/blaze-deploy/tests/deploy.test.ts and end to end against the emulator in https://github.com/butaneprotocol/blaze-cardano/blob/main/packages/blaze-deploy/tests/emulator.test.ts\nC. Output: Utilities for script referencing and dependency management.\nAcceptance criteria: The referencing system efficiently manages script dependencies.\nEvidence: A deployment manifest declares every script an application depends on, pinned by name, version, and script hash. The planner reconciles that declaration against live chain state and decides per script whether to reuse, deploy, replace, or retire: https://github.com/butaneprotocol/blaze-cardano/blob/main/packages/blaze-deploy/src/planner.ts and https://github.com/butaneprotocol/blaze-cardano/blob/main/packages/blaze-deploy/src/manifest.ts. Reference lookup uses Blockfrost's native script-reference index rather than address scans: https://github.com/butaneprotocol/blaze-",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 30,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 30000,
+      "promise": "・Final close-out report\n・Final closeout video\n・Fully integrated script deployment and management system\n・Comprehensive documentation and usage guides\n・Real-world application demonstrations\n・CI/CD pipeline for the Blaze SDK including new features",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・The entire system works seamlessly from end-to-end\n・Documentation covers all aspects of script deployment and management\n・At least two real-world applications successfully use the system\n・CI/CD pipeline automates testing and release of new features\n・The system is compatible with major Cardano development tools",
+      "report": "A. Output: Final close-out report.\nAcceptance criteria: A public close-out report summarizes the work completed across all three milestones, the results against the proposal goals and KPIs, key achievements, lessons learned, adoption, and next steps.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200042/closeout-report.md\nB. Output: Final close-out video.\nAcceptance criteria: A public close-out video presents the completed project, the deployment and management system, its real-world use, and the final project outcomes.\nEvidence: https://youtu.be/ZgaYz_r-rk8\nC. Output: Fully integrated script deployment and management system.\nAcceptance criteria: The released `@blaze-cardano/deploy` package supports declarative deployment manifests, deterministic manifest hashing, reconciliation, deployment execution, cache snapshots, versioning, replacement, retirement, and superseded deployment history. It works end to end with Blaze and supports the documented Cardano providers and Aiken workflow.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200042/m3.md#repository-evidence, https://github.com/butaneprotocol/blaze-cardano/tree/main/packages/blaze-deploy, and https://www.npmjs.com/package/@blaze-cardano/deploy/v/0.1.1\nD. Output: Comprehensive documentation and usage guides.\nAcceptance criteria: Published documentation covers script deployment, managed deployment workflows, versioning and supersession, CI/CD integration, provider compatibility, and use with an Aiken application.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200042/m3.md#repository-evidence, https://blaze.butane.dev/deploy/guides/script-deployment, https://blaze.butane.dev/deploy/guides/script-management, https://blaze.butane.dev/deploy/guides/ci-cd, and https://blaze.butane.dev/deploy/guides/provider-compatibility\nE. Output: Real-world application demonstrations.\nAcceptance criteria: At least two real-worl",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 32,
+      "cut": true
+    }
+  ]
+}

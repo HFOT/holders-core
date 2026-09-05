@@ -1,0 +1,58 @@
+{
+  "title": "Hotel Guest Identity Verification and Check-in",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 26000,
+      "promise": "・User Interface (UI) Mockups\n・Technical Design Document\n・Data Flow Diagrams\n・System Architecture Design\n・Smart Contract Specifications",
+      "criteria": "・UI Design Mockups prepared\n・﻿Technical Design prepared",
+      "report": "Hotel Guest App: UI Design and Tech Design\nWe are delayed in submitting this milestone however we progressed greatly in development which includes deliverables from future milestones. Delay \n1.User Interface (UI) Mockups\nhttps://www.figma.com/design/61ehJWtKjjwdaOrjO9eYNG/Designs?node-id=20143-237&m=dev\n\n2.Technical Design Document - High Level as well Low Level Design Documents \n System Architecture Design\n HLD - High Level Design\n https://drive.google.com/file/d/1Jn56evCnr9p7qjRB02dcX8ttaQ0rLw0y/view?usp=sharing\n Tech Diagram\n https://drive.google.com/file/d/1sj4xNi0nCES02PGtO4ZWhG5IHWwdfIyd/view?usp=sharing\n Data Flow Diagrams\n LLD - Low Level Design\n https://drive.google.com/file/d/1JAz6LvKzTJ6_isoJJN43jS-SPew2gNSY/view?usp=sharing\n Smart Contract Specification\n https://drive.google.com/file/d/1YiKJx2dO5xFoM1fpccvhNWHfrerXrM6K/view?usp=sharing\nNote: Revised the POA with Figma link. Next Milestone 2 is about development and we shall be demonstrating working prototype for functionalities committed in Milestone 2.",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 26000,
+      "promise": "・Development of User Interfaces for the concept\n・Development of Services for functionalities as per technical design\n・Smart Contracts Writing",
+      "criteria": "・A working Prototype with limited functionalities\n・Online check-in\n・Kiosk check-in\n・A short video of application demo for ready functionailities",
+      "report": "apologies, the server was stopped, now it is on and the link is working.\n-----------------------------------\nWe have developed a working Prototype for hotel Online check-in and Kiosk check-in functionalities .\nHere is link for demo https://cloud10hospitality.com/guest/89db16cb-475b-492b-978a-657ae8630c2c\nfor this demo to use, one should create a sample reservation, though it is not in scope we have developed an user interface to make booking so testing become easy\nhttps://cloud10hospitality.com/booking/\nFor Kiosk Kiosk check-in- https://cloud10hospitality.com/guest/scanner ( user will receive the QR code in email, which is required to complete kiosk check in)\nApplication demo for ready functionalities, a short video : https://www.canva.com/design/DAGnUwCtDIw/F6qzCyJ-fEwcfmukNN2nfw/watch\nAlso, you will find a documentation for the entire process of booking and pre-check-in https://drive.google.com/file/d/1fmzzFANpQM4OciHPehFn6eSX8eoFKAVC/view?usp=sharing\nWe have also produced documentation on smart contract and relevant test report in this folder\nhttps://drive.google.com/drive/folders/1nW4xFundPEYStChZJESJIK3OuJMMPP2d?usp=sharing\nWe have put Smart Contract code in Public Github repository. \nhttps://github.com/AIQUANT-Tech/HGE_SC\nOther source code like web services for functionalities is not open source however we are available to show the source code to the reviewer if they want to have a look on a google meet or zoom session.",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 14
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 26000,
+      "promise": "・Smart Contract integration with application\n・SSID integration with application\n・Functionality Development - Online Check-out\n・Functionality Development - ADA Payment integration with the application",
+      "criteria": "Full Working Prototype integrated with blockchain on testnet with following functionalities\n・Online check-in\n・Kiosk check-in\n・Payments\n・Online Check-out\n\nA video of application demo",
+      "report": "all the functionalities for the Hotel Guest App are implemented.\nHere are links to evidences\n・Link of working prototype including all the functionalities - \n・A demo booking link to initiate the process - this is done to facilitate a booking for demo purpose. https://booking.cloud10hospitality.com/booking make a booking for current date as checking date and need to put a valid email to receive link for check-in process. In real implementation bookings will be generated from hotel booking engine or online travel agencies. Current logic trigger check-in link for when check-in date is within 24 hours. The time is configurable by Hotel/property. \n・Once the booking is done using above link, a link is received in email, follow the link for rest of the check-in process.\n・Link for SSID wallet https://booking.cloud10hospitality.com/wallet \n・ Link to Video for the application demo showing all the functionalities developed. https://www.canva.com/design/DAGxPt6mhYw/48qWwG6tKoL_cJHnLlyqKQ/watch\n・Link to Smart Contract repository https://github.com/AIQUANT-Tech/HGE_SC ( Smart Contract code repository is public, all other code is private repository)",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 14100,
+      "promise": "・Final Closeout Report\n・Project Closeout Video\n・User Documentsation",
+      "criteria": "・Final Closeout Report is submiited\n・Project Closeout Video is submiited\n・User Manual to use the application is prepared",
+      "report": "A. Output: Final Closeout Report\nAcceptance criteria: Final Closeout Report is submiited\nEvidence: Final Closeout Report is uploaded, link : https://drive.google.com/file/d/1TXn9pRpnUsoKcOtpjoS3KjSP22zJNZod/view?usp=sharing\nB. Output: Project Closeout Video\nAcceptance criteria: Project Closeout Video is submiited\nEvidence: Project Closeout Video is hosted on youtube and link is shared : Hotel Guest Identity Verification and Check-in\nC. Output: User Documentsation\nAcceptance criteria: User Manual to use the application is prepared\nEvidence: Link for User Manual to use the application: https://drive.google.com/file/d/1IePSqJHI8vMP-lFwsBxV8GwdDREKU6qQ/view?usp=sharing",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

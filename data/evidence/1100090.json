@@ -1,0 +1,76 @@
+{
+  "title": "CHARLI3 - \"pull oracle\" real-time price feeds on request (On Demand Validation service MVP)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "・Project team is assembled\n・Design and research is conducted \n・Review current architecture mechanism and create report detailing limitations\n・Research feasible options for enhancing our current triggering mechanism to pull data from user input\n・(optional) Contract a protocol to develop a use-case using their protocol (both Liqwid and Indigo expressed interests in this solution in the past, we intend to approach them and others to gauge desire to partner); there are several teams we can work with but can also design a simple protocol solution to call our network using the new mechanism\n・Implementation plan completed including epics, tickets, etc.\n・Timeline for Implementation defined",
+      "criteria": "・Team is assigned to project\n・Design and research tickets are assigned to team members and completed\n・A project implementation plan is completed along with the tickets/roadmap defined\n・(Optional) partner with protocol to create a use-case",
+      "report": "https://oraclecharli3.medium.com/charli3s-odv-catalyst-reporting-milestone-1-e90f7b218382\nThe above medium article contains: \n・Information on the project team including External team members that are supporting us\n・Summary of design and research completed by the team (as much as we can provide while protecting our IP and security)\n・Detailed information on the roadmap for implementing the design with descriptions of the planned tickets\n\nTo date our team is making significant progress on milestone 2 and are ahead of schedule despite a late report for M1. A working MVP is due in the next weekly sprint :)",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 90000,
+      "promise": "・Complete project tickets/work defined in milestone 1\n・Create documentation and SDK\n・Build a functioning use-case prototype with a partner/or dummy solution on pre-production",
+      "criteria": "Working MVP in pre-production that allows a user to call our network, request data, and receive the appropriate data on-chain on the next block update.",
+      "report": "Please find a medium article with all the content/output for this milestone: https://oraclecharli3.medium.com/charli3-odv-mvp-complete-a59fe734e7c6\n\nSummary of outputs\n・<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAABbElEQVR4Ae3bsU4CYRDEcRsxodZE8Q0BbS258l5MwESJNL6HOfrPKdhyxeBcwk5mkn9F98sGIOSuPM/zPM/zPI+xG/SEtuiAWpEOaIOWaDIWziP6RK14OzSjX44ITvTBvqRn1MRaMIHeBIE2TKBBEGhgArWkKmtJBjKQgQxkIANd/Aw0NVC+O7RHvYFynHasN1COE/UGynGiXgOIjxOtdIH4OGJAfBwxID6OGBAfRwiIjyMARMCpCjRF5+72Dzhd5R+rHfpC92NeTlWgLl5PkQg4RYBynBSJgFMGKMNJkQg4lYFeUDuFRMCpBXQOEgGnDtA/kPg4xT7m2y/tCd9zKgOdviTC5RQEIiAFjh4QASlw9IAISIEjCURAWvmf1UDKcQwUSDmOgWLdMcxA7BnIQAYykIEM5EcRvplAW0GgNRNoKQg0ZwJN0E4I5x1dI+pmgSSA84BG2QQt0LrYG/eAXtGccjme53me53me9wPjPWZWjhktAQAAAABJRU5ErkJggg==\" alt=\"ticked\" height=\"17.599999999999998px\" width=\"17.599999999999998px\">Complete work from milestone 1\n・<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAABbElEQVR4Ae3bsU4CYRDEcRsxodZE8Q0BbS258l5MwESJNL6HOfrPKdhyxeBcwk5mkn9F98sGIOSuPM/zPM/zPI+xG/SEtuiAWpEOaIOWaDIWziP6RK14OzSjX44ITvTBvqRn1MRaMIHeBIE2TKBBEGhgArWkKmtJBjKQgQxkIANd/Aw0NVC+O7RHvYFynHasN1COE/UGynGiXgOIjxOtdIH4OGJAfBwxID6OGBAfRwiIjyMARMCpCjRF5+72Dzhd5R+rHfpC92NeTlWgLl5PkQg4RYBynBSJgFMGKMNJkQg4lYFeUDuFRMCpBXQOEgGnDtA/kPg4xT7m2y/tCd9zKgOdviTC5RQEIiAFjh4QASlw9IAISIEjCURAWvmf1UDKcQwUSDmOgWLdMcxA7BnIQAYykIEM5EcRvplAW0GgNRNoKQg0ZwJN0E4I5x1dI+pmgSSA84BG2QQt0LrYG/eAXtGccjme53me53me9wPjPWZWjhktAQAAAABJRU5ErkJggg==\" alt=\"ticked\" height=\"17.599999999999998px\" width=\"17.599999999999998px\">Create documentation and SDK (public to view) \n・<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAABbElEQVR4Ae3bsU4CYRDEcRsxodZE8Q0BbS258l5MwESJNL6HOfrPKdhyxeBcwk5mkn9F98sGIOSuPM/zPM/zPI+xG/SEtuiAWpEOaIOWaDIWziP6RK14OzSjX44ITvTBvqRn1MRaMIHeBIE2TKBBEGhgArWkKmtJBjKQgQxkIANd/Aw0NVC+O7RHvYFynHasN1COE/UGynGiXgOIjxOtdIH4OGJAfBwxID6OGBAfRwiIjyMARMCpCjRF5+72Dzhd5R+rHfpC92NeTlWgLl5PkQg4RYBynBSJgFMGKMNJkQg4lYFeUDuFRMCpBXQOEgGnDtA/kPg4xT7",
+      "kinds": [
+        "chain",
+        "code",
+        "doc"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 75000,
+      "promise": "・Build test cases\n・Conduct an internal end-to-end audit with security in mind\n・Remedy issues and rebuild if anything is found in the audit\n・Decide on partner to launch mainnet use-case (and if none is found determine dummy use-case)",
+      "criteria": "・Test cases completed\n・Audit (internal) completed with remedies completed\n・Partner for creating a use-case defined and project to launch on mainnet defined",
+      "report": "Updated: Swap contract link since last submission, thanks!\nFor this milestone, the Charli3 team needed to create test cases, run and complete those tests, conduct an internal audit to identify issues and provide remedies. Additionally, the milestone requires we specify a partner or dummy use-case for launching the fourth milestone on mainnet. We've decided on the dummy use-case (details below). \nThe PDF Internal Audit Report below presents screenshots and details of our test cases, showing them passing/completed, and remedies for any issues found during the process. \nOutputs:\n・INTERNAL AUDIT/TEST CASES/REMEDIES: Click here to download a PDF Internal Audit Report; https://drive.google.com/file/d/1WMLlFjnOGMU0Z7VOaLEYUoaG4amuRG7N/view?usp=sharing\n・DUMMY USE-CASE: Dummy use-case for Final Milestone (this was already presented in milestone 3 and we plan to launch this on mainnet for the next milestone -- we are in discussions with a partner that may replace the dummy example, but for all intents and purposes this is the use case that will be the final output for this project): A sample contract provides funds and data requirements to a wallet that initiates a C3 Network to pull data from sources as per requirements and put them on-chain. \n\nDemo video of Dummy Use-case\nDocumentation and SDK for Dummy use-case\nPreprod Dummy use-case contract\nPreprod Dummy use-case swap contract",
+      "kinds": [
+        "chain",
+        "code",
+        "doc"
+      ],
+      "links": 7
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 15000,
+      "promise": "・Implement a mainnet version of the solution\n・Integrate with partner solution in (1) pre-production then (2) mainnet OR;\n・Create a dummy use-case\n・Integrate with use-case on mainnet",
+      "criteria": "There is variability as to the outputs of this milestone depending on whether we select a partner or create a dummy use-case (create a simple defi protocol/contract to interact with our oracle solution feature): \nTwo options for outputs (based on previous milestone results)\nPartner:\n・Integrated with partner use-case on pre-production\n・Integrated with partner use-case on mainnet\n・MVP Implemented on mainnet\n\nDummy use:\n・Create dummy-use case\n・Designed\n・Implemented on staging then pre-prod\n・Integrated with Dummy use-case on pre-production\n・Integrated with partner use-case on mainnet\n・MVP Implemen",
+      "report": "Medium article: https://oraclecharli3.medium.com/pull-oracle-main-net-progress-report-8adf465c1ad4\nThe article contains a detailed architectural design summary with flowchart diagrams. Links to mainnet and preproduction versions of the functioning service.\nEverything required for this POA is in the medium article, but to save time here are quick links:\n\nMainnet\nDemo Video showing on-chain results\nContract address (Odv-oracle-contract)\nGithub Repo with Swap Contract Demo\n\nPre-Production\nOn-chain results on Preproduction Pre-production “ODV” contract\nSwap contract",
+      "kinds": [
+        "chain",
+        "code",
+        "doc"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 45000,
+      "promise": "Submit close-out for catalyst with all necessary material: report, video, email to catalyst, etc. everything that is required for a catalyst to accept a project as \"closed out\".",
+      "criteria": "MVP functioning as expected on mainnet\nClose-out materials submitted to catalyst and accepted by catalyst team (this includes all material required by the catalyst team and all processes such as a report, video, emailing it to the right people, and etc.)",
+      "report": "Medium Article: https://oraclecharli3.medium.com/pull-oracle-completion-odv-a9df625dc337\nClose out report: https://drive.google.com/file/d/1duQkmxmWVVEyPKI6Gy9NExH9AHA7nvoh/view?usp=drive_link\nClose out video: https://vimeo.com/1027914477/d080937653?share=copy\n\nInteractive Use-case: https://github.com/Charli3-Official/swap-demo-contract\nDocumentation for Interactive use-case: https://github.com/Charli3-Official/swap-demo-contract/blob/main/swap_demo_contract/docs/odv-request.org\nDemo video showing output of project: https://drive.google.com/file/d/1trqOYkJ5BL6NJQnGPo1OCRigboIU0T8I/view\nOn-chain mainnet output of demo: https://cexplorer.io/address/addr1w93vmc4m23cc6j507lhjf2duqxpjp5mdfey3fs767etxxjcyfmfv3/tx#data",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

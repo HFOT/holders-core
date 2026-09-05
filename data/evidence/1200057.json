@@ -1,0 +1,75 @@
+{
+  "title": "Cardano GPT + PlutusTutor: A personalised AI Assistant for learning Plutus",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 45000,
+      "promise": "・Research leading to 1 document of the architecture and structure of the project\n・The design and architecture of PlutusTutor are finalized, signed and accepted by the project manager and dev team for the project.\n・1 Basic user interface (UI) containing at least 3 pages of UI for PlutusTutor implemented.",
+      "criteria": "・Documentation of the development and project pathway is clear and easy to understand\n・Approval of PlutusTutor design and architecture from the development team, with justifications given.\n・Functional UI prototype of PlutusTutor demonstrating core features, the UI should be clear and easy to implement. The PM and dev will fill a survey to indicate this is clear.",
+      "report": "Hi new second reviewer, the link got expired as I had submitted it over a month earlier, I have howver uploaded a new link to the front end and have added more details to the project pathway and structure\n\nA document containing the project pathway and structure: https://docs.google.com/document/d/12zNl6odEOE7zSNRp1P5BgejT9Hd9BRelCe5TPdr41pQ/edit?usp=sharing\nAn architectural design of the tech stack : https://drive.google.com/file/d/1ZXZBScvlUqb2glOynuNTTcFYHkUhIRt-/view?usp=sharing\nA figma interface of the designed UI: https://www.figma.com/design/aQBCldkDZvfkLEJzXsNXEm/Bananin-test?node-id=44-3439&t=bmi6RZb13yjJRFQx-1\nFrontend Integration\nhttps://v0-cardano-ai-gfb0pu.vercel.app/\nA link to the survey containing the signed approvals by the dev team with their justifications as well as cear acceptance that the UI is easy and clear for implementation. https://docs.google.com/spreadsheets/d/1izQ00k_V-uIbwyqujayyzDmpPAxLXdSoqxTugFtGzW0/edit?usp=sharing\nAll the necessary documents, designs and links to the Figma will be populated in this github repo https://github.com/ubiodee/plutustutor \nNote: We went a step further beyond just providing a basic figma but making into a front end interface for easy interaction, so reviewers can get exactly the feel and experience of the design we are going to use",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 12
+    },
+    {
+      "no": 2,
+      "month": "14",
+      "cost": 45000,
+      "promise": "・Curated dataset for training, openly accessible for the community.\n・Initial machine learning models implemented and open-sourced.\n・Prototypical API structure for integration.",
+      "criteria": "・Approval from 3-5 Cardano developers on the relevance and inclusivity of the training dataset.\n・Transparent sharing of initial models and dataset for community scrutiny.\n・Prototypical API structure accessible and documented for potential adaptability.",
+      "report": "・Link to github link with the curated data sets populated on the https://github.com/ubiodee/plutustutor the direct link to the dataset can be found here https://github.com/ubiodee/plutustutor/blob/main/TRAINING_DATA_PLUTUS.json\n・Video recording of the performance or outputs of the trained model: https://drive.google.com/file/d/1cq5FoFgvPCRdVGUXj5JZQKspSeLUZ0A3/view?usp=sharing\n・A video prototyped showing how the endpoints will interact when finally integrated: https://drive.google.com/file/d/1UfpSSEga7CNyCT__0ps9U9T5sGwjHciw/view?usp=sharing\n・A list of the developers who consented to the relevance of the datasets: https://docs.google.com/spreadsheets/d/181Jie4fiSOBF_Gune4OhTwNdVSVshVDJD6oddbumWWE/edit?usp=sharing\n\nEXTRA:\n・Link to finetuned model on huggingface: https://huggingface.co/ubiodee/Plutus_Tutor_new\n・link to huggingface space on limited tokens: https://huggingface.co/spaces/Remostart/Cardano_Personalised_Tutor",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 13
+    },
+    {
+      "no": 3,
+      "month": "15",
+      "cost": 30000,
+      "promise": "・Adaptive learning algorithm integrated into PlutusTutor.\n・Real-time feedback mechanism implemented.\n・Interactive Plutus coding exercises available in PlutusTutor.",
+      "criteria": "・AI tutor demonstrates adaptive learning capabilities, with the capacity to recommend different contents and learning methods to different users.\n・Real-time feedback is provided for Plutus code snippets, highlighting errors and suggesting improvements. A screenshot showing the different results and performance of the model, and places to compiled into a reportmprove will be \n・Users can interact with interactive Plutus coding exercises, reinforcing key concept, this is limited to the created interface",
+      "report": "A. Output: [What was delivered as Output A]: Videos Showing the adaptive algorithm at work on different adapted profiles\nAcceptance criteria: [Completion criteria for Output A]: The video shows the model generatig differnt contents for different user profiles\nEvidence: [Link to verify Output A and its Acceptance criteria]: https://www.canva.com/design/DAG_GKqrrw0/jlRfwLJx80G2vog1hb336g/watch?utm_content=DAG_GKqrrw0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2120bc441d\nhttps://www.canva.com/design/DAG_GPKTdAY/_k9Q1n_4_-SGX5601bZJ6A/watch?utm_content=DAG_GPKTdAY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h4a5a391e2a\nhttps://drive.google.com/file/d/1O1AX8GUmcxiPFQjp5J3FFWFv2XJCxFW3/view?usp=sharing\nB. Output: [What was delivered as Output B]: In the Full Demo Video, the feedback mechanism is demonstrated\nAcceptance criteria: [Completion criteria for Output B]: Users can report where feedback is not optimal\nEvidence: [Link to verify Output B and its Acceptance criteria]: https://drive.google.com/file/d/1NfePbaWn2bWMWK2laXeQb8f3dmX-U2Up/view?usp=sharing\nhttps://drive.google.com/file/d/12t69d4aEBLGpqN8oGqHym3rjs_8EeJQY/view?usp=sharing\nC. Output: [What was delivered as Output C]: Video shows that coding examples are generated by he model for teaching making it not just theoritical or full of text\nAcceptance criteria: [Completion criteria for Output C]: Codes generated can be used by the learner for practise\nEvidence: [Link to verify Output C and its Acceptance criteria]: https://drive.google.com/file/d/1NfePbaWn2bWMWK2laXeQb8f3dmX-U2Up/view?usp=sharing\n\nN/B: \nReviewer 1 asked for a video specifically for the feedback, as the video demo on that side was too short. I have done that and added to the evidence, and resubmitted. That's the only change\nEXTRA EVIDENCE\nTo aid reveiewer(s) I have added the link to the production website so beyond videos reviewers can also test how the integraed model works in real time\nhttps:",
+      "kinds": [
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "16",
+      "cost": 20000,
+      "promise": "・Beta version of PlutusTutor available to select users.\n・Feedback collected from beta testers for iterative improvements.\n・Iteration plan based on beta test feedback.",
+      "criteria": "・atleast 10 feedback collected from developers and potential students who constitute beta testers on the usefulness and effectiveness of PlutusTutor.\n・Clear insights gathered from beta test feedback for improving PlutusTutor.\n・Iteration plan developed based on beta test results",
+      "report": "A. Output: [What was delivered as Output A]: All the gathered feedback from beta testers\nAcceptance criteria: [Completion criteria for Output A]: Feedback was more than 10 users\nEvidence: [Link to verify Output A and its Acceptance criteria]: https://github.com/ubiodee/plutustutor/blob/main/Responses.pdf\nB. Output: [What was delivered as Output B]: A report created from the feedbacks received\nAcceptance criteria: [Completion criteria for Output B]: Report contains insight and action plans based on captured responses\nEvidence: [Link to verify Output B and its Acceptance criteria]: https://github.com/ubiodee/plutustutor/blob/main/Action_Plan_for_Platform_Improvement.pdf\nC. Output: [What was delivered as Output C]: Future plans based on Received feedback\nAcceptance criteria: [Completion criteria for Output C]: A future plan report\nEvidence: [Link to verify Output C and its Acceptance criteria]; https://github.com/ubiodee/plutustutor/blob/main/Future_Development_Plan.pdf\n\nN/B:\nThe vercel has been linked to a web domain www.web3learn.xyz\nA video link of how the platform works can be seen on this link https://drive.google.com/file/d/1Cz6diExgBRsreWjhG10D96ck5t_5MGde/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 7
+    },
+    {
+      "no": 5,
+      "month": "17",
+      "cost": 40000,
+      "promise": "・Final close-out report\n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "https://drive.google.com/file/d/1_t4CnPTDESDz4UqcMKyaHQTsFxNUZTGA/view?usp=sharing\nhttps://youtu.be/ACFUwuyfnHw",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

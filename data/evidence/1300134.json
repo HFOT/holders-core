@@ -1,0 +1,72 @@
+{
+  "title": "Mesh: Cquisitor - Transaction Investigation Tool",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40000,
+      "promise": "・Migrate all cquisitor features to Mesh Devtools website\n・Update the dependency which make cquisitor feature complete and chang compatible",
+      "criteria": "・Completed Development: Migrate all cquisitor features to Mesh Devtools website\n・Completed Development: Update the dependency which make cquisitor feature complete and chang compatible",
+      "report": "Milestone 1 Report\n\nHello Milestone Reviewers and anyone else following up with the progress of the proposal.\nWe are definitely a bit after the initial schedule, mainly due to running into quite load of challenges and issues (sometimes things are harder than we think indeed) as well as having sometimes too much to do. Anyway, here we are, reporting on the successful completion of the first milestone.\n\nThe milestone outcomes have been stated as:\n- Completed Development: Migrate all cquisitor features to Mesh Devtools website\n- Completed Development: Update the dependency which make cquisitor feature complete and chang compatible\n- Public links to the code on mesh github repository\n- Public link to open source license on mesh github\n\nAnd here the deliverables, ready for your review.\nAll cquisitor features are migrated to Mesh devtools website, dependencies have been updated to get cquisitor ready and chang-compatible, everything is now up and running, ready for developers at:\n・https://cloud.meshjs.dev/cquisitor\n\nThe respective open source code on mesh github can be found at:\n・ https://github.com/MeshJS/mesh-saas/blob/main/LICENSE\n\nThe open source license itself for the repo, can be found at:\n・https://github.com/MeshJS/mesh-saas/blob/main/LICENSE\n\nAdditional code as well available on:\n・https://github.com/cardananium/cquisitor-lib\n\nAnd thats it, we hope you find all code and work worth your approval, wasnt easy to get that up ^^.\nWe continue to get back on schedule and work is in progress on the deliverables of the further milestones of this proposals.\nThanks for reviewing and hope to see you at the next milestone.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 40000,
+      "promise": "・Develop the Rust module for partial phase-1 validation\n・Identify and define error messages for common validation issues\n・Provide explanations and hints for fixing each error",
+      "criteria": "・Completed Development: Develop the Rust module for partial phase-1 validation\n・Completed Development: Identify and define error messages for common validation issues\n・Completed Development: Provide explanations and hints for fixing each error",
+      "report": "Milestone 2 Report\n\nHello Milestone Reviewers and anyone else following up with the progress of the proposal.\nWe are still a bit after the initial schedule, mainly due to running into a few more challenges and issues. Anyway, here we are, reporting on the successful completion of the first milestone.\nThe milestone outcomes have been stated as:\n・Develop the Rust module for partial phase-1 validation\n・Identify and define error messages for common validation issues\n・Provide explanations and hints for fixing each error\n\nAnd here out reports on the completion of the deliverables:\nDeliverables:\n\nDevelop the Rust module for partial phase-1 validation\n\nThe development of the Rust module for partial phase - 1 validation has been successfully completed. The deployed code can be found at:\n・https://github.com/MeshJS/cquisitor-lib/tree/main/src/validators/phase_1\n\nIdentify and define error messages for common validation issues\n\nWe identified and defined error messages for common validator issues and listed them at:\n・https://github.com/MeshJS/cquisitor-lib/blob/main/src/validators/phase_1/errors.rs\n\nProvide explanations and hints for fixing each error\n\nExplanations and hints for fixing the errors have been added at the respective error examples at the same source at;\n・https://github.com/MeshJS/cquisitor-lib/blob/main/src/validators/phase_1/hints.rs\n\nOpen Source licence\n\nAll related code has been assigned under Apache 2.0 open-source licensed\n・Cquisitor: https://github.com/MeshJS/cquisitor/tree/main?tab=Apache-2.0-1-ov-file#readme\n・Cquisitor Library: https://github.com/MeshJS/cquisitor-lib?tab=Apache-2.0-1-ov-file#readme\n\nElse\n\nCquisitor dev interface: https://cloud.meshjs.dev/cquisitor",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 12
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40000,
+      "promise": "・Develop the Rust module for phase-2 validation\n・Integrate the module with aiken-uplc for Plutus script execution",
+      "criteria": "・Completed Development: Develop the Rust module for phase-2 validation\n・Completed Development: Integrate the module with aiken-uplc for Plutus script execution",
+      "report": "Hello Milestone Reviewers and anyone else following up with the progress of the proposal.\nHere we are, reporting on the successful completion of the third Milestone.\n\nThe milestone outcomes have been stated as:\n- Completed Development: Develop the Rust module for phase-2 validation\n- Completed Development: Integrate the module with aiken-uplc for Plutus script execution\n\nAnd here out reports on the completion of the deliverables:\n\n1) Develop the Rust module for partial phase-2 validation\nThe development of the Rust module for partial phase - 2 validation has been successfully completed. The deployed code can be found at:\n- https://github.com/meshjs/cquisitor-lib/blob/main/src/validators/phase_2/validation.rs\n2) Integrate the module with aiken-uplc for Plutus script execution\nThe integration of the module with the aiken-uplc for Plutus script execution has been completed, the respective code can be found at:\n- https://github.com/meshjs/cquisitor-lib/tree/main/src/validators/phase_2\n\nOpen Source licence\nAll related code has been assigned under an Apache 2.0 open-source licensed\n- Cquisitor: https://github.com/MeshJS/cquisitor/tree/main?tab=Apache-2.0-1-ov-file#readme \n- Cquisitor Library: https://github.com/MeshJS/cquisitor-lib?tab=Apache-2.0-1-ov-file#readme\n\nElse\nCquisitor dev interface: https://cloud.meshjs.dev/cquisitor\nProposal reports on Mesh github: https://github.com/MeshJS/governance/tree/main/funding/catalyst-fund13/cquisitor",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 12
+    },
+    {
+      "no": 4,
+      "month": "9",
+      "cost": 40000,
+      "promise": "・Integration with Whisky and Mesh.js\n・Implement detailed error messages for Mesh.js",
+      "criteria": "・Completed Development: Modules for partial phase-1 and phase-2 validation is integrated with Whisky and Mesh.js\n・Completed Development: detailed error messages for Mesh.js",
+      "report": "# Milestone 4 Report\n\nHello Milestone reviewers and anyone else who is following the process of this proposal.\nHere we are, submitting the successful close out of this milestone.\n\nThe Completion criteria for this milestone has been stated as:\n\n・Integration with Whisky and Mesh.js\n・Implement detailed error messages for Mesh.js\n\nAnd here the respective deliverables:\n\n### Integration with Whisky and Mesh\n\nThe Mesh Cquisitor - Whisky integration has been completed, the respective pull request which introduced the integration can be found at:\n・https://github.com/sidan-lab/whisky/pull/152 \n・https://github.com/MeshJS/mesh/pull/736 \n\n## Implement detailed error messages for Mesh.js\nThe error messages for Mesh have been completed and can be found at:\n・https://github.com/MeshJS/mesh/blob/b1e9a26396c65450eec9a6a151e7620746683a78/packages/mesh-core-csl/test/utils/validator.test.ts#L165 \n\nFurther error message examples can be found in the respective cquisitor-lib repository at:\n・https://github.com/MeshJS/cquisitor-lib/blob/main/src/validators/phase_1/errors.rs \n・https://github.com/MeshJS/cquisitor-lib/blob/main/src/validators/phase_1/hints.rs \n\n## Else\nCquisitor dev interface: https://cloud.meshjs.dev/cquisitor\nAnd that's it, short and precise.\nSee you at the next Milestone",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 13
+    },
+    {
+      "no": 5,
+      "month": "10",
+      "cost": 40000,
+      "promise": "・Final close-out report\n・Final closeout video\n・deploy web UI to https://cloud.meshjs.dev/\n・updated meshjs docs",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Completed Development: deploy web UI to https://cloud.meshjs.dev/\n・Successfully updated meshjs docs",
+      "report": "Milestone 5 Report\n\nHey there and happy day everyone who is still following the progress of this proposal, glad to have you with us. So, here we are reporting on the completion of the final milestone of this proposal, we are glad to report that all objectives have been accomplished and all deliverables are shipped and available.\nThe acceptance criteria for closing this final milestone has been stated as:\n・Link to final closeout report\n・Link to final closeout video\n・Public url of to the deployed code on mesh github repository\n・Public url active open source licence of the project on mesh github\n\nAnd here details on all deliverables…\nCompleted Close Out Report\n\nThe close out report has been completed and can be found at different locations:\n・PDF: https://drive.google.com/file/d/1bF0MZwoypg0QZSGScPt8QTlEwpuwqGVb/view?usp=sharing\n\nCompleted Close Out Video\n\nThe close out video has been completed and is available on youtube via this link:\n・https://youtu.be/Fgwv1CtBelg\n\nPublic url of to the deployed code on mesh github repository\n\nThe deployed code can be accessed on mesh github via:\n・https://github.com/MeshJS/cquisitor-lib\n・https://github.com/MeshJS/cquisitor\n\nSuccessfully updated meshjs docs\n\nThe respective docs for Cquisitor have been completed via this commit\n・https://github.com/MeshJS/cquisitor-lib/commit/13049cfd951a5fb89f3771d301fde224835e46f0 The docs are now available at:\n・https://github.com/MeshJS/cquisitor-lib/blob/main/API_DOCUMENTATION.md\n\nPublic url active open source licence of the project on mesh github\n\nThe respective repositories have been licenced under Apache 2.0 licences which can be verified at:\n・https://github.com/MeshJS/cquisitor-lib?tab=Apache-2.0-1-ov-file#readme\n・https://github.com/MeshJS/cquisitor?tab=Apache-2.0-1-ov-file#readme\n\nAnd that's it 🙂 Everything is done and completed. Thanks to everyone who participated and helped to get the proposal from idea to reality, voters, reviewers, admins and devs, from which everyone played their part in the",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 16,
+      "cut": true
+    }
+  ]
+}

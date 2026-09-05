@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・プロジェクトのアーキテクチャと構造の1つの文書を研究\n・PlutusTutorの設計とアーキテクチャは、プロジェクトマネージャーと開発チームによって最終決定、署名、承認されます。\n・1 PlutusTutor が実装した UI の少なくとも 3 ページを含む基本的なユーザーインターフェイス(UI).",
+      "criteria": "・開発・プロジェクトパスウェイの文書化が明確で分かりやすく\n・開発チームによるPlutusTutorの設計とアーキテクチャの承認、正当化\n・PlutusTutorのファンクションUIプロトタイプはコア機能を実証し、UIはクリアで簡単に実装できます。 PM と dev は、これを明確に表示するためにアンケートを記入します.",
+      "report": "こんにちは、新しい2次審査官、リンクは1か月前に提出したので期限が切れました、私はフロントエンドに新しいリンクをアップロードし、プロジェクトパスウェイと構造の詳細を追加しました\n\nプロジェクトパスウェイと構造を含むドキュメント: https://docs.google.com/document/d/12zNl6odEOE7zSNRp1P5BgejT9Hd9BRelCe5TPdr41pQ/edit?usp=sharing\n技術の積み重ねの建築設計:https://drive.google.com/file/d/1ZXZBScvlUqb2glOynuNTTcFYHkUhIRt-/view?usp=sharing\n設計されたUIのfigmaインターフェイス:https://www.figma.com/design/aQBCldkDZvfkLEJzXEm/Bananin-test?node-id=4439&t=bmi6RZb13yjJRFQx-1\nフロントエンドの統合\nhttps://v0-cardano-ai-gfb0pu.vercel.app/\n開発者チームが署名した承認を含むアンケートへのリンクと、UIの実装が容易で明確であることを認識する。 https://docs.google.com/spreadsheets/d/1izQ00k V-uIbwyqujayzDmpPAxLXdSoqxTugFtGzW0/edit?usp=sharing\nFigma に必要なすべてのドキュメント、デザイン、リンクは、この github repo https://github.com/ubiodee/plututor でポップアップ表示されます。\n注意: 基本的なfigmaを提供しているだけでなく、フロントエンドインターフェイスに簡単なやりとりをするだけでなく、レビュー担当者は、私たちが使用しようとしているデザインの感触と経験を正確に得ることができます"
+    },
+    {
+      "no": 2,
+      "promise": "・トレーニングのためのデータセットをキュレーションし、コミュニティのためにオープンにアクセス可能。\n・機械学習モデルの実装とオープンソース\n・統合のためのプロトタイピングAPI構造.",
+      "criteria": "・訓練データセットの関連性および包括性に関する3-5 Cardano開発者からの承認。\n・コミュニティスクラッチの初期モデルとデータセットの透明性共有\n・潜在的な適応性のためにアクセス可能で文書化されたAPI構造.",
+      "report": "・ https://github.com/ubiodee/plututor で入力されたキュレーションされたデータセットと github へのリンクへのリンクは、データセットへの直接リンクが https://github.com/ubiodee/plutustutor/blob/main/TRAINING DATA PLUTUS.json にあります。\n・訓練されたモデルのパフォーマンスや出力のビデオ録画: https://drive.google.com/file/d/1cq5FoFgvPCRdVGUXj5JZQKspSeLUZ0A3/view?usp=sharing\n・最終統合時にエンドポイントがどのように相互作用するかを示すビデオプロトタイプ: https://drive.google.com/file/d/1UfpSSEga7CNyCT   0ps9U9T5sGwjHciw/view?usp=sharing\n・データセットの関連性に同意した開発者のリスト: https://docs.google.com/spreadsheets/d/181Jie4fiSOBF Gune4OhTwNdVSVshVDJD6oddbumWWE/edit?usp=sharing\n\nエクストラ:\n・ハッギング面の微細なモデルへのリンク: https://huggingface.co/ubiodee/Plutus Tutor new\n・限られたトークンに抱っこスペースへのリンク: https://huggingface.co/spaces/Remostart/Cardano Personalised Tutor をフォロー"
+    },
+    {
+      "no": 3,
+      "promise": "・PlutusTutorに統合した適応学習アルゴリズム\n・リアルタイムフィードバック機構導入\n・PlutusTutorで利用可能なインタラクティブなPlutusコーディング演習.",
+      "criteria": "・AIチューターは適応学習能力を発揮し、異なるコンテンツや学習方法を異なるユーザーに推奨する能力を備えています。\n・Plutusコードスニペットのリアルタイムフィードバックを提供、エラーを強調し、改善を提案します。 モデルの異なる結果とパフォーマンスを示すスクリーンショット、およびレポート作成にコンパイルする場所は、\n・ユーザーは、インタラクティブなPlutusコーディング演習、キーコンセプトを再構築することで、作成されたインターフェイスに限られます",
+      "report": "A. 出力: [出力Aとして配達されたもの]: ビデオ 異なる適応プロファイルで作業中の適応アルゴリズムを表示\n受諾条件: [出力Aの補完基準]: ビデオは、異なるユーザープロファイルのためのモデルのgeneratig異なるコンテンツを示しています\n証拠: [出力Aとその受諾基準を検証するリンク]: https://www.canva.com/design/DAG GKqrrw0/jlRfwLJx80G2vog1hb336g/watch?utm content=DAG GKqrrw0&utm campaign=designshare&utm medium=link2&utm source=uniquelinks&utm source=uniquelinks&IlIdbc1hb441\nhttps://www.canva.com/design/DAG GPKTdAY/ k9Q1n 4 -SGX5601bZJ6A/watch?utm content=DAG GPKTdAY&utm campaign=designshare&utm medium=link2&utm source=uniquelinks&utlId=h4a5a391e2a\nhttps://drive.google.com/file/d/1O1AX8GUmcxiPFQjp5J3FFWFv2XJCxFW3/view?usp=sharing\nB. 出力: [出力Bとして配達されたもの]: フルデモビデオでは、フィードバックメカニズムが実証されています\n受諾条件:[出力Bの完了基準]: ユーザーは、フィードバックが最適でない場所を報告することができます\n証拠: [出力Bとその受諾基準を確認するリンク]: https://drive.google.com/file/d/1NfePbaWn2bWMWK2laXeQb8f3dmX-U2Up/view?usp=sharing\nhttps://drive.google.com/file/d/12t69d4aEBLGpqN8oGqHym3rjs 8EeJQY/view?usp=sharing\nC.出力:[出力Cとして渡されたもの]: テキストの理論的または完全なだけでなく、それを教えるためのモデルで例をコーディングするビデオショー\n受諾条件: [出力Cの補完基準]: 生成されるコードは、学習者によって使用することができる\n証拠: [出力Cとその受諾基準を確認するリンク]: https://drive.google.com/file/d/1NfePbaWn2bWMWK2laXeQb8f3dmX-U2Up/view?usp=sharing\n\nN/B:\nレビュアー1は、その側のビデオのデモがあまり短くなかったので、フィードバックのために具体的にビデオを求めました.証拠に追加して、再提出しました。 それは唯一の変更です\nエクストラ・エビデンス\nReveiewer(s) を支援するため、制作ウェブサイトへのリンクを追加して、ビデオレビューを上回るだけで、統合モデルがリアルタイムでどのように機能するかをテストできます。\n詳細はこちら"
+    },
+    {
+      "no": 4,
+      "promise": "・PlutusTutor のベータ版は、ユーザーを選択することができます。\n・ベータテスターから回収した、反復改善のためのフィードバック\n・ベータテストフィードバックに基づく反復計画.",
+      "criteria": "・PlutusTutorの有用性と有効性に関するベータテスターを構成する開発者や潜在的な学生から収集された10件のフィードバック。\n・ベータテストのフィードバックから収集したインサイトをクリアし、PlutusTutorを改善します。\n・β試験結果に基づく反復計画",
+      "report": "A. 出力: [出力Aとして配達されたもの]: ベータテスターから集められたすべてのフィードバック\n受諾条件: [出力Aの完了基準]: フィードバックは10人以上でした\n証拠: [出力Aとその受諾基準を確認するリンク]: https://github.com/ubiodee/plututor/blob/main/Responses.pdf\nB. 出力: [出力Bとして配達されたもの]: フィードバックから得られたレポート\n受容基準:[出力Bの補完基準]: レポートには、キャプチャされた応答に基づいて、インサイトと行動計画が含まれています\n証拠: [出力Bとその受諾基準を確認するリンク]: https://github.com/ubiodee/plututor/blob/main/Action Plan for Platform Improvement.pdf\nC.出力:[出力Cとして渡されたもの]: フィードバックに基づく将来の計画\n受容基準:[出力Cの補完基準]:将来の計画報告書\n証拠: [出力Cとその受諾基準を確認するリンク]; https://github.com/ubiodee/plututor/blob/main/Future Development Plan.pdf\n\nN/B:\nvercel は web ドメイン www.web3learn.xyz にリンクされています。\nこのリンクでプラットフォームがどのように動作するかのビデオリンク https://drive.google.com/file/d/1Cz6diExgBRsreWjhG10D96ck5t 5MGde/view?usp=sharing"
+    },
+    {
+      "no": 5,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "https://drive.google.com/file/d/1 t4CnPTDESDz4UqcMKyaHQTsFxNUZTGA/view?usp=sharing\nhttps://youtu.be/ACFUwuyfnHw"
+    }
+  ]
+}

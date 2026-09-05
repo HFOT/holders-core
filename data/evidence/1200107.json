@@ -1,0 +1,64 @@
+{
+  "title": "Enhancing the L-Earning Bazaar Platform and Onboarding New Personas",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 36190,
+      "promise": "Milestone 1 includes the following key activities\n・Stakeholder interviews and analysis\n・Research on what is needed for the project from a technical perspective\n・On-boarding work of teachers in the Cardano ecosystem\n・Preparation of a detailed action plan for this project\n・Summarising and writing a summary on 1-4",
+      "criteria": "【1.Stakeholder interviews and analysis】\n\nThe name of the organisation interviewed and the initials of the person in charge are given, and the recorded interview is summarised and can be verified in the report.\n⚪︎Interview with high schools (One or Two) :\nWhat is the key to adopt our platform using in the school　\nAre there any barriers to its use in schools?\nWhat classes are in demand?\n⚪︎Interview with Local Government (or who are trying to revitalize the local region ) (Three organizations):\n Necessary functions\n Confirming ease of use and difficulties of use for local government-related peopl",
+      "report": "For Milestone 1, we've resubmitted a document. See the attached Link below.\n(Access rights to Google spreadsheets and Google docs have been changed.\nA notation is also included in the Document about passwords.）\nhttps://docs.google.com/document/d/1nV2Z9s0bXhm2MZ0Xga2A87m2gdqv2lGGLNs5TY8MlAU/edit?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 33095,
+      "promise": "Milestone 2 will include the following key activities\n・Idearate generation for UI/UX update\n・User interviews\n・Finalisation of UI/UX design\n・Updating the UI/UX\n・Creating a walkthrough video of the completed UI/UX",
+      "criteria": "・Community members have access to the updated UI/UX walkthrough YouTube video.\n・Community members have access to the user interview results and the updated features via google document or Notion\n\nThis UI/UX design includes basically the following features.\n・At the end of class, teachers can mint NFT badges for students who have completed the class as proof of completion.\n・Classes can be bought with ADA\n・Students can buy classes with a credit card.\n・Even students who buy with a credit card can check their completion certificate NFT after the course.\n\nUser Interview\n Goal: Ensure that people who",
+      "report": "Enhancing the L-Earning Bazaar Platform and Onboarding New Personas- Milestone 2 POA\nDesign Walkthrough Video and Figma\nYouTube public video walk-through: https://youtu.be/QhIwXgwWuO4\nFigma link: https://www.figma.com/design/bLsx1aTHpt87HQIzeYqvL1/Enhancing-the-L-Earning-Bazaar-Platform-and-Onboarding-New-Personas---Milestone-2?node-id=0-1&t=gZSXTbBE1dJytZlU-1\nNMKR Credit card payment demo and explanation: https://docs.nmkr.io/nmkr-studio/set-up-sales/nmkr-pay/fiat-eth-and-sol-payment\nUser Interviews Result\nInterview overview\nL-Earning Bazaar: Interview Report on Payment & Wallet Connection\n— Incorporating Additional User Feedback —\n1. Background (Purpose & Environment of the Interviews)\nInterview Participants\n•Existing beta users (those who have experienced the ADA-based point prepayment method and mandatory wallet connection)\n•New users (including blockchain beginners, university students, instructors, English speakers, parent-child users, etc.)\nObjectives of the Interviews\n・Identify specific areas for improvement in the existing flow (prepaid points + mandatory wallet connection).\n・Gather expectations and concerns regarding new policies such as credit card payments and optional wallet connection.\n・Understand additional feature requests (organizing course categories, more granular review functions, DAO tool integrations, etc.) to explore the platform’s extensibility.\n\nTest Environment\nWebsite Deployment (Staging & Beta testing) (Cardano preprod testnet)\n•Demonstration of the existing UI and mock-ups of upcoming credit card payment UI\nInterview Method\nConducted via online video calls / in-person sessions\nUsers were shown the UI screens and walkthrough videos, then asked for their feedback\nInterview Results\nThe full interview results were recorded in this google sheet (note that there are two tabs). The names of the participants were shortened to initials for anonimity.\n2. Newly Added User Feedback\n1.“Right now, we can only leave comments and reviews on a per-class",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "16",
+      "cost": 61190,
+      "promise": "Milestone 3 includes the following key development activities:\n・Back-end development\n・Blockchain development\n・Unit testing\n・Manual testing\n・Bug fixing\n・Deployment\n・Documentation\n\nThese steps allow the functionality to be developed and a GitHub repository (public) to be made available to community members.\nAt the same time, the following sales, marketing, and hearings will be conducted.\n・Selling to local authorities and schools by participating in events related to the Region Link project.\n・Perform sales to relevant local authorities with SBI connections\n・Surveying schools to find out what demand there is for educational materials\n・Conduct free test lessons in local authorities and schools\n・Prepare a Marketing report on 1~4.",
+      "criteria": "Community members can review the source code, which is published on GitHub (open source).\n・Database modification to rely on ADA prices rather that points\n\n (The current database is managed by points, so it should be managed by ADAs.)\n・Integrate a wallet that accepts credit card payment for Ada\n\n （Integrate custodial wallets to accept credit card payments. \n We will determine the specification details through Milestone１ stakeholder interviews and technical research .)\n・Enable NFTs minting for class completion\n・Enable tokens minting as rewards\n・Unit testing, Manual testing (lead by several dev)",
+      "report": "Catalyst Fund 12 – Project ID F12-1200107\nMilestone 3 Completion Report\nDate: 2026-01-26\n\nExecutive Summary\nAll scope items and deliverables defined for Milestone 3 have been fully completed, validated, and integrated into the project codebase and operational processes. No open blockers, technical debt specific to this milestone, or unresolved risks remain. The project is on schedule as per the milestone change and aligned with the originally approved Catalyst proposal.\n\nDeliverables & Status\n- Code Features: 100%\n- Open source: https://github.com/nicolasayotte/lbazaar/releases/tag/catalyst%2Ff12%2Fmilestone-3\n- Unit Test Results: docs/test-reports/*\n・NMKR tests video: https://www.youtube.com/watch?v=ySbeN1e1GM4\n・API tests video: https://www.youtube.com/watch?v=MiKdPWGPsOM\n・Web3 tests video: https://www.youtube.com/watch?v=YmR91zg_jXg\n\n- Bug fixing report: we only added features this time around\n- Database / Migrations: Applied & verified\n- Service Integrations (Cardano / NMKR / Blockfrost)\n- Factories & Tests: Added for new functionalities, all pass\n- Documentation: Updated in `docs/` directory (including this report)\n- Configuration & ENV Samples: In sync with new requirements\n\nMarketing report:\nHere is the [report](https://docs.google.com/document/d/10n--BNIvElVkGkmVX0UV8OIQ67eEfc1Y1OyC8pKFrWw/edit?usp=sharing) and the questions asked in the survey, although not always answered exactly, were:\n\n1. What do you think about this platform, which allows users to learn global knowledge and share insights from people working in local communities?\n2. What are your thoughts on this learning platform where students can earn income by selling what they have learned through experiential learning?\n3. Would you like to introduce this platform in your school?\n4. If there are any potential obstacles to implementing it, please let us know.\n5. If you have any other comments or requests, please share them.\n\nVerification & Evidence\n- Release tag: catalyst/f12/milestone-3\n- Tests: php",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "17",
+      "cost": 64048,
+      "promise": "Outputs.\n・Front-end development\n・Integration testing\n・Manual testing\n・End To End testing\n・Bug fixing\n・Deployment\n・Documentation\n・Recording of product demo videos.\n\n　　　\nAt the same time, the following sales, marketing, and hearings will be conducted.\n・Selling to local authorities and schools by participating in events related to the Region Link project.\n・Perform sales to relevant local authorities with SBI connections\n・Surveying schools to find out what demand there is for educational materials\n・Conduct free test lessons in local authorities and schools\n・Prepare a written report on 1~4.",
+      "criteria": "We will update to:\n・Modify the prices of classes to be in ADA\n・Remove UI related to points\n・Implement the designed UI for the NFT minting for class completion\n・Implement the designed UI for token rewards\n・Verify / fix any wallet flow\n・Implement Stripe for credit card payments for class purchases (Japan-compliant implementation), including integration + testing + documentation.\n\nProduct demo video includes the user experience like below:\n・Students can buy classes with ADA\n・Students can buy classes using credit card via Stripe\n・Students can receive NFTs as completion of the class (if teachers se",
+      "report": "LE BAZAAR — MILESTONE 4 PROOF OF ACHIEVEMENT\n\nEXECUTIVE SUMMARY\n\nAll scope items and deliverables defined for Milestone 4 have been completed, validated, and integrated into the project codebase and operational processes. The front-end has been built out for ADA pricing, NFT certificate minting, token rewards, and wallet flows; a Japan-compliant Stripe credit-card payment path has been implemented with integration tests and documentation; the legacy points UI has been fully removed; the platform is deployed and accessible; and a YouTube walkthrough demonstrates all six required user stories. No open blockers or unresolved risks remain.\n\nThe staging project is live at: https://stage.l-e-bazaar.com/\n\n------------------------------------------------------------\n\nA. OUTPUT: FRONT-END DEVELOPMENT — ADA PRICING, POINTS REMOVAL, NFT & TOKEN REWARD UI, WALLET FLOWS\n\nAcceptance Criteria:\n\n- Class prices are displayed in ADA (not points or fiat).\n- All UI related to \"points\" has been removed.\n- The NFT minting UI for class completion matches the designed mockups.\n- The token rewards UI matches the designed mockups.\n- The wallet flow (CIP-30 connect, sign, disconnect/reconnect) is verified and fixed.\n\nEvidence:\n\n- Source code (release tag): https://github.com/nicolasayotte/lbazaar/releases/tag/catalyst%2Ff12%2Fm4\n- YouTube product demo (all 6 user stories): https://www.youtube.com/watch?v=dB1We3hFz6Y\n- Acceptance-criteria checklist (in-repo): docs/catalyst/F12-1200107/milestone-4-checklist.md\n- Architecture & flows: docs/architecture.md, docs/data-flows.md\n\n------------------------------------------------------------\n\nB. OUTPUT: STRIPE CREDIT CARD PAYMENTS — JAPAN-COMPLIANT INTEGRATION, TESTS, AND DOCUMENTATION\n\nAcceptance Criteria:\n\n- Students can buy classes using a credit card via Stripe.\n- The Stripe integration is Japan-compliant.\n- The Stripe payment flow has integration tests.\n- The Stripe integration is documented.\n\nEvidence:\n\n- Source code (release tag): https://githu",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 15,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "title": "Wanchain - Cardano From Metamask: Buy CNTs from Ethereum!",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "One component of this proposal leverages Smart Beacon Scripts on Cardano. Smart Beacon Scripts are essentially AdaHandles for Smart Contract addresses. Through the use of a Smart Beacon Script, interactions with DApps without going through centralised front-ends or manually building smart contract transactions are possible. While this proposal will result in a tool that will make it possible for users to trigger any logic on Cardano from their EVM wallets, we will demonstrate a single implementation: swapping for a CNT directly from an EVM chain using an EVM wallet. This requires a Smart Beacon Script that will execute an asset swap on a DEX on Cardano.\nThe output for Milestone 1 is a Smart Beacon Script that will execute an asset swap on a DEX on Cardano.",
+      "criteria": "Demonstrate that the Smart Beacon Script can execute an asset swap on a DEX on Cardano.",
+      "report": "Link: https://github.com/wanchain/cardanoCatalyst/tree/main/milestone1\nThe above is a link to Wanchain's github repository containing the code for the Smart Beacon Script. This code has been made open source via Apache License, Version 2.0.\nThe Smart Beacon Script code included in the above repository executes an asset swap on a DEX on Cardano. Specifically, it swaps tUSDC to tHOSKY on Minswap. Though not explicitly required for this Milestone, we've included some on-chain results below to demonstrate that the Smart Beacon Script can execute an asset swap on a DEX on Cardano.\n・Multiple swap requests, submitted by the user in a single transaction: 357ed9fb96a4751a247236f5550ca159098d2d019ec9989f4a471f36cb7d0027\n・Multiple routing performed by the agent in a single transaction: 8c7dc90f95486d66caa216d2e29ec68dc4f5d50cff3428ba469ee3877736b633",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 86700,
+      "promise": "The Smart Beacon Script that will execute an asset swap on a DEX on Cardano needs to receive specific datum. Wanchain’s cross-chain solution will be modified to give it the capability to pass specific datum inputted on an EVM chain to a specific Smart Beacon Script on Cardano. Amongst other things, specific datum includes things like “the user’s wallet address on the EVM chain.”\nThe output for Milestone 2 is the capability to pass specific datum from an EVM chain to Cardano using Wanchain.",
+      "criteria": "Demonstrate the capability to pass specific datum inputted on an EVM chain to Cardano using Wanchain and that the datum on both chains matches.",
+      "report": "Link: https://github.com/wanchain/cardanoCatalyst/tree/main/milestone2\nFor Milestone 2, the acceptance criteria required the evidence to:\n・demonstrate the capability to pass data/datum from an EVM chain to Cardano; and\n・show that the data/datum on both chains match.\n\nEvidence 1a: https://testnet.wanscan.org/tx/0xb0fb9ff5a31122d0de385a799cf7dccab35a5a3bfbdc524df762727de2e99fc9?cc=false\n・This is the on-chain transaction record for a WAN to ADA cross-chain swap. WAN is an asset on the Wanchain L1 Blockchain, an EVM-compatible blockchain. ADA is an asset on Cardano.\n・This transaction proves that the capability to pass specific data/datum from an EVM chain to Cardano has been achieved.\n・This transaction was initiated on the Wanchain L1 Blockchain (an EVM-compatible blockchain) and indicates that WAN has been transferred to Cardano and that some specific data/datum was emitted. This proves that data/datum was emitted on the EVM chain. Note that this data/datum includes the sending address (07b2e0a113fD1E3ca765C217F5c4efA28d22eeDF) and that the transaction’s hash is b0fb9ff5a31122d0de385a799cf7dccab35a5a3bfbdc524df762727de2e99fc9.\n・A screenshot is included in the github, for convenience.\n\nEvidence 1b: https://preprod.cexplorer.io/tx/37dd8eca74bd572ec744ab38753b34c8ebb539197530057080e0ce9b5159eac2/\n・This is the corresponding on-chain transaction record on Cardano. This confirms that WAN has been minted on Cardano and proves that the data/datum was received on Cardano.\n\nEvidence 2: https://preprod.cexplorer.io/datum/5f257bf0c3e12fa46d71de4817aec6975b7c4bda263c74aa681dd4216c57a342\n・This is the data/datum detail on Cardano. Note that this data/datum also includes the sending address (07b2e0a113fD1E3ca765C217F5c4efA28d22eeDF) and that original transaction’s hash (b0fb9ff5a31122d0de385a799cf7dccab35a5a3bfbdc524df762727de2e99fc9). This shows that the data/datum on both the EVM chain and Cardano match.\n・A screenshot is included in the github, for convenience.",
+      "kinds": [
+        "chain",
+        "code",
+        "other"
+      ],
+      "links": 7
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 69500,
+      "promise": "With both a Smart Beacon Script that will execute an asset swap on a DEX on Cardano and a mechanism to pass specific datum from an EVM chain to Cardano already in place, we now need to combine the two. In other words, the Smart Beacon Script needs to be triggered without manual intervention beyond the initial transaction on the EVM chain.\n﻿The output for Milestone 3 is the mechanism to trigger a Smart Beacon Script on Cardano by signing a transaction on an EVM chain.",
+      "criteria": "Demonstrate that a transaction on an EVM chain can pass specific datum to a Smart Beacon Script on Cardano, thereby triggering it to execute an asset swap on a DEX on Cardano.",
+      "report": "Link to PoA details: https://github.com/wanchain/cardanoCatalyst/tree/main/project-1100288/milestone3\nLink to open-sourced code: https://github.com/wanchain/cardanoCatalyst/tree/main/project-1100288/cardano-cross-router\nFor Milestone 3, the acceptance criteria required the evidence to:\n・demonstrate that a transaction on an EVM chain can pass data/datum to a Smart Beacon Script on Cardano, which then triggers an asset swap on a Cardano DEX.\n\nEvidence 1a: https://testnet.wanscan.org/tx/0xb0fb9ff5a31122d0de385a799cf7dccab35a5a3bfbdc524df762727de2e99fc9\n・This is the on-chain transaction record for a WAN to ADA cross-chain swap. It is the same transaction record as in Milestone 2\n・The receiving address is on Cardano is addr_test1wqpdn49yjqj2ukqe8y7ljdf4z2vg2g7efl9aft3mvy6wrtghj6r64, a Smart Beacon Script address\n・A screenshot is included in the github for convenience.\n\nEvidence 1b: https://preprod.cardanoscan.io/transaction/37dd8eca74bd572ec744ab38753b34c8ebb539197530057080e0ce9b5159eac2\n・This is the corresponding on-chain transaction record on Cardano. It is the same transaction record as in Milestone 2.\n・Upon receiving data/datum (demonstrated in Milestone 2), WAN is minted and sent to addr_test1wqpdn49yjqj2ukqe8y7ljdf4z2vg2g7efl9aft3mvy6wrtghj6r64, the Smart Beacon Script address identified as the receiving address on Cardano.\n\nEvidence 1c: https://preprod.cexplorer.io/tx/00d5df1d964fbca3a773d49953d5809d4d558cda9924ff4aee743fc04f91b2be\n・This is an on-chain transaction record showing the WAN on Cardano moving to addr_test1wrdf2f2x8pq3wwk3yv936ksmt59rz94mm66yzge8zj9pk7s0kjph3, a Minswap address. Minswap is a Cardano DEX.\n\nEvidence 1d: https://preprod.cexplorer.io/tx/9770aa081d17094004445f9fcb0efe769bd52d9c0183adaa83cd2ba0486ed0c9\n・This is an on-chain transaction record showing that WAN has been swapped for ADA on Minswap.",
+      "kinds": [
+        "chain",
+        "code",
+        "other"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 14450,
+      "promise": "Triggering a Smart Beacon Script that will execute an asset swap on a DEX on Cardano by signing a transaction on an EVM chain is only half the process. Once the asset swap on a DEX on Cardano is completed, a Smart Beacon Script on Cardano needs to trigger a cross-chain transaction to bridge the traded-for asset back to the user’s wallet address on the EVM chain. This way, the user only ever needs to interact with their EVM wallet on the EVM chain.\nThe output for Milestone 4 is the mechanism to enable a Smart Beacon Script on Cardano to trigger a cross-chain transaction to bridge assets from Cardano to an EVM chain.",
+      "criteria": "Demonstrate that a Smart Beacon Script on Cardano can trigger a cross-chain transaction to bridge assets from Cardano to an EVM chain.",
+      "report": "Link to PoA details: https://github.com/wanchain/cardanoCatalyst/tree/main/project-1100288/milestone4\nLink to open-sourced code: https://github.com/wanchain/cardanoCatalyst/tree/main/project-1100288/cardano-cross-router\nFor Milestone 4, the acceptance criteria required the evidence to:\n・demonstrate that a smart beacon script on Cardano can trigger a cross-chain transaction to bridge assets from Cardano to an EVM chain.\n\nEvidence 1a: https://preprod.cexplorer.io/tx/9770aa081d17094004445f9fcb0efe769bd52d9c0183adaa83cd2ba0486ed0c9\n・This is an on-chain transaction record showing that WAN has been swapped for ADA on Minswap. It is the same transaction record as in Milestone 3.\n・After swapping WAN to ADA (demonstrated in Milestone 3), the ADA is sent to addr_test1wqvsdtcc8fdvwm8frpa3juk70dpfzz4p9j3nn7f3dekj82gfq0qx7, a Smart Beacon Script address.\n\nEvidence 1b: https://preprod.cexplorer.io/tx/56bbe9e9fe0d8195365b03e6a15b8c2c1068dbcacd283ff676e9296dac975cba\n・This is an on-chain transaction record showing that the ADA obtained from swapping WAN to ADA on Minswap has been transferred to the Wanchain L1 Blockchain (an EVM-compatible blockchain) via a cross-chain transaction.\n\nEvidence 1c: https://testnet.wanscan.org/tx/0xa0620a26b201fa184a31d3a8115551689421ac16c5cf6703106c3f5e615039c6\n・This is the corresponding transaction record for the cross-chain transaction. The initiating transaction hash (56bbe9e9fe0d8195365b03e6a15b8c2c1068dbcacd283ff676e9296dac975cba) matches the transaction record in Evidence 1b.\n・This transaction record also proves that the wallet (0x07b2e0a113fD1E3ca765C217F5c4efA28d22eeDF) that initiated the original WAN to ADA cross-chain swap (the sending address in Milestone 2) is the same wallet that received the ADA.",
+      "kinds": [
+        "chain",
+        "code",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 43350,
+      "promise": "At this stage, we have already demonstrated that a transaction on an EVM chain can pass specific datum to a Smart Beacon Script on Cardano, thereby triggering it to execute an asset swap on a DEX on Cardano. We have also demonstrated that a Smart Beacon Script on Cardano can trigger a cross-chain transaction to bridge assets from Cardano to an EVM chain. Now we need to combine the two.\n﻿The output for the Final Milestone is the mechanism to trigger a Smart Beacon Script on Cardano, which then executes an asset swap on a DEX on Cardano, which then triggers a cross-chain transaction to bridge the traded-for asset from Cardano to an EVM chain, simply by signing a transaction on an EVM chain.",
+      "criteria": "Demonstrate that a transaction on an EVM chain can trigger a Smart Beacon Script on Cardano, which then executes an asset swap on a DEX on Cardano, which then triggers a cross-chain transaction to bridge the traded-for asset from Cardano to the user’s wallet address on an EVM chain.",
+      "report": "For the Final Milestone, the acceptance criteria required that a transaction on an EVM chain can trigger a Smart Beacon Script on Cardano, which then executes an asset swap on a DEX on Cardano, which then triggers a cross-chain transaction to bridge the traded-for asset from Cardano to the user’s wallet address on an EVM chain. Also required:\n・A final report.\n・A final closeout video and video demonstration.\n・A publicly available demo.\n\n・Link to the Final Report on GitHub: https://github.com/wanchain/cardanoCatalyst/tree/main/project-1100288/milestone5 \n・Link to the final closeout video and video demonstration on Vimeo: https://vimeo.com/1101169208 \n・Link to secondary demonstration video conducted on Ethereum Sepolia: https://vimeo.com/1114854792\n・Link to the publicly available demo: https://wan-bridge-preview-git-dev-dapp-wanchain.vercel.app/AssetBridge?group=dev_247\n\nThe open-sourced smart contracts can be found here: https://github.com/wanchain/cardanoCatalyst/tree/main/project-1100288/cardano-cross-router\nNotes to reviewers: \n・With this tool, there is no need to connect any Cardano wallet. You only need to connect your EVM wallet (Metamask).\n・We've edited the text in the final written report as it was causing confusion. The proposal is fully delivered and usable by the end users/developers. The previously mentioned \"scalability\" issue may have been the wrong choice of words. What we were trying to communicate is that the smart routers themselves require a non-negligible amount of development work to adjust them to a specific application. Smart routers are a dependency of this proposal -- they are not developed by Wanchain/in the scope of this proposal. There is no \"scalability\" issue with the tool itself, built for this proposal. It can be used by end users and any project can use it with their application now.\n・In the final closeout video, we had previously mentioned that the Wanchain team will provide ongoing technical support to any project that wants to integ",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    }
+  ]
+}

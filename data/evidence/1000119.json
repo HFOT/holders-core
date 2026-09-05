@@ -1,0 +1,77 @@
+{
+  "title": "MLabs - Congested Testnet",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 22714,
+      "promise": "During the initial analysis, research will be conducted to determine the actual load on mainnet during peak periods of congestion in the past. This will later be used to simulate this load as closely as possible on the congested testnet.\nThe high-level design of the testnet will also be completed.\nOutputs:\n・Report on the distribution of transactions during recent congestion periods.\n・Design document.",
+      "criteria": "・The report clearly displays the distribution of transaction sizes, number of transactions, and any other relevant metrics such as CPU and memory usage (if available).\n・The design document outlines the various components of the congested testnet and how the testnet will operate.",
+      "report": "Outputs:\n\nPer the milestone document, we produced:\n\nA report on congestion periods\nhttps://github.com/mlabs-haskell/congested-testnet/blob/node-1.35/docs/congestion-statistics.md\n\nA Design document \nhttps://github.com/mlabs-haskell/congested-testnet/blob/node-1.35/docs/design.md\n\nAcceptance:\n\nOur congestion report includes the parameters relied upon for the analysis and the distribution of tx sizes, limit memory and limit CPU steps. See the report for graphics.\n\nAlso, our design document clearly outlines how the testnet will operate.\n\nEvidence:\n\nAlongside the links to the reports shared above, the report commits include\n\nhttps://github.com/mlabs-haskell/congested-testnet/commit/b002aea906bce3534dde412a96ed33782b6b86af\n\nhttps://github.com/mlabs-haskell/congested-testnet/commit/5d1bace9c58d30abfca09964bbe40115a2814f4b\n\nAnd the PRs merged to date:\nhttps://github.com/mlabs-haskell/congested-testnet/pulls?q=is%3Apr+is%3Aclosed",
+      "kinds": [
+        "code"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 68142,
+      "promise": "This phase will consist of creating a testnet that is configured to match the mainnet as closely as possible, as well as any necessary functionality for simulating transactions (in order to create congestion on the testnet).\nThe testnet will then be made publicly accessible along with any documentation that developers would need in order to utilize the testnet for testing their DApps.\nOutputs:\n・A publically accessible testnet that replicates congested conditions on mainnet.\n・A test-ADA faucet.\n・Source code and documentation for utilizing the testnet.",
+      "criteria": "The testnet is publicly accessible.\nDevelopers are able to obtain test-ADA from the faucet.\nDevelopers are able to successfully submit transactions on the testnet.\nThe testnet behaves similar to the mainnet under heavy load, allowing developers to simulate how their DApps behave under such conditions.\nDocumentation clearly explains how to utilize the testnet.\nThe core functions of the testnet are covered in a test suite (faucet, simulated congestion, and transaction submission)",
+      "report": "OUTPUTS\nLink to commit that satisfies the above acceptance criteria in the https://github.com/mlabs-haskell/congested-testnet repository, including documentation in the README describing all steps required to obtain test ADA from the faucet and submit transactions.\n・https://github.com/mlabs-haskell/congested-testnet/tree/a8378f836a57f572bba4e0ce9fb92cae477677c3\n\nVideo demo of the congested testnet and how to use it (below).\nLink to social media post announcing the availability of the congested testnet (below).\n\nACCEPTANCE CRITERIA\nThe testnet is publicly accessible.\n・Instructions for accessing are included in the repository README.\n\nDevelopers are able to obtain test-ADA from the faucet.\n・Instructions for obtaining test-ADA are included in the repository README.\n\nDevelopers are able to successfully submit transactions on the testnet.\n・Instructions for submitting transactions are included in the repository README.\n\nThe testnet behaves similarly to the mainnet under heavy load, allowing developers to simulate how their DApps behave under such conditions.\n・The spammer bot is continually posting transactions to simulate peak load.\n・This can be verified by querying for cardano_node_metrics_txsInMempool_int at http://congested-testnet.staging.mlabs.city:9090/\n\nThe documentation clearly explains how to utilize the testnet.\n・All required steps are outlined in the repository README.\n\nThe core functions of the testnet are covered in a test suite (faucet, simulated congestion, and transaction submission)\n・Basic tests are included in https://github.com/mlabs-haskell/congested-testnet/blob/master/tests/tests.bats\n・Repository README explains how to run the tests.\n・There is also Prometheus monitoring in place with statistics available at http://congested-testnet.staging.mlabs.city:9090/\n\nEVIDENCE\nLink to commit that satisfies the above acceptance criteria in the https://github.com/mlabs-haskell/congested-testnet repository, including documentation in the README describing all step",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 9,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 68142,
+      "promise": "This phase will be focussed on improving the stability of the testnet, ensuring that it remains highly-available and operating as expected. Any major issues reported will also be addressed.\nOutputs:\n・Improvements to the stability and availability of the testnet.\n・Continual hosting, monitoring, maintenance, and bug fixes (first 3 months of a total 6 month maintenance period)",
+      "criteria": "・The testnet remains accessible throughout the duration of this milestone (first 3 months of the 6-month maintenance period) with at least 99% uptime for this 3 month period.\n・The testnet remains stable and operating as expected.\n・Any major issues reported by the community are triaged and dealt with according to importance/severity.",
+      "report": "Please find our PoA3 report at the link below. Note, per the reviewer's feedback, we added a section to the end detailing the improvements made.\nhttps://github.com/mlabs-haskell/congested-testnet/issues/10",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "16",
+      "cost": 34071,
+      "promise": "This phase will be focussed on increasing the adoption of the congested testnet, with the aim of full decentralization.\nOutputs:\n・A roadmap for community engagement and adoption of the testnet.\n・Active communication with the SPO and developer community.\n・Continued hosting and maintenance of the testnet (months 4 through 5 of a 6 month maintenance period).",
+      "criteria": "The roadmap clearly outlines a strategy for moving from a centralized, MLabs hosted testnet, to a decentralized testnet maintained by the SPO community. Interested SPOs will receive some marketing/promotional support on social media from us and will also benefit from community good will. That said, because SPOs are independent business operators we cannot guarantee that any number will be interested.\nThe roadmap is made public.\nSPOs and Cardano developers have been engaged and are aware of the congested testnet. We have released a series of 10 marketing posts across several channels promoting",
+      "report": "EVIDENCE OF MILESTONE COMPLETION\n\nPublic roadmap:\nhttps://docs.google.com/document/d/1zvnts3VLkoQNGlWWNmjIRHb1FyYI2_fCeESk0lfLpec/edit?usp=sharing\n\nList of committed SPOs:\n- 30 SPOs were reached out to and 9 responded in meaningful dialogue around hosting and 6 joined our TG suppport channel\n- None currently committed to maintaining\n\nSocial Media posts:\nTwitter:\n・https://x.com/MLabs10/status/1900213700340179143\n・https://x.com/MLabs10/status/1912842341771301335\n・https://x.com/MLabs10/status/1914276345661858192\n\nLinkedIn:\n・https://www.linkedin.com/feed/update/urn:li:activity:7313138041307475969/\n\nYouTube:\n・https://youtu.be/3miwCiEV0FI\n\nTelegram communities:\n・https://t.me/c/1556514618/10825\n・https://t.me/DeveloperEcosystem/2008\n\nDiscord:\n・https://discord.com/channels/826816523368005654/868025141668503582/1362416011550392530\n・https://discord.com/channels/1136727663583698984/1136727664036692103/1363811719608008906\n・https://discord.com/channels/386191477333557248/397539471702360084/1364120728928256064\n\nNOTE: we also have a Telegram support channel we have been engaging SPOs\nhttps://t.me/+3kNyHmpMwGc2ZDA1\n\nUptime report:\nhttps://github.com/mlabs-haskell/congested-testnet/issues/23",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "17",
+      "cost": 34071,
+      "promise": "The final phase of this project will consist of achieving full decentralization of the testnet (where it will be maintained by the SPO community going forward), as well as providing the necessary closeout report and video. Please note that full decentralization and long-term maintenance ultimately depend on community adoption; like all Project Catalyst projects, this initiative has a finite scope and budget with only so many resources to apply toward that end.\n Outputs:\n・A smooth transition and full handover of the congested testnet to the SPO community (contingent upon community interest).\n・A public announcement once the testnet is no longer being hosted by MLabs (and is either being hosted by the community in a decentralized fashion or is available to host locally)\n・Project closeout report.\n・Project closeout video.\n\nNote on Formal Agreements:\nWe will not have a formal agreement with the SPO community as this was never part of the original proposal or the approved Change Request. Should there be interest in establishing a formal agreement in the future, it would require a separate Catalyst proposal to secure additional resources. If there is sufficient community interest, we may p",
+      "criteria": "・The congested testnet is maintained by multiple SPOs, or MLabs has otherwise exhausted all reasonable options for gaining traction among community members and establishing full decentralization. Successful adoption of a network relies on third parties and adoption rate directly cannot be used to access pass or failure.\n・The public has been informed that MLabs is no longer maintaining the testnet, and it has been moved toward full decentralization (or instructions for local hosting are available if there is no community interest in public hosting).\n・After any handover of hosting, there are cle",
+      "report": "::UPDATE::\nAs a reminder, outreach and engagement were part of the previous milestone where we reached out to the number of SPOs and promoted in accordance with the terms previously agreed upon with the milestone reviewers. We have actually configured the project to be self-hosted in this milestone and feel that this is actually a better development approach for teams.\nThat said, we can provide some more documentation about the outreach process if the reviewers can please provide throwaway emails in the discussion tab. We will need to keep these private.\n----\nEvidence of Milestone Completion\n-List of any SPOs actively maintaining the congested testnet (or link to instructions on how to host it locally).\nSPOs did not express an interest in hosting the Congested Testnet. We have configured the project for self-hosting and included instructions:\n・https://github.com/mlabs-haskell/congested-testnet\n\n-Link to social media post that announces the decentralization of the congested testnet (or provides details on how to host it locally).\n・https://x.com/MLabs10/status/1925438832054583433\n\n-Closeout video and report covering all required details\n・https://youtu.be/H7nFScDYJKU\n・https://drive.google.com/file/d/1Mn93qNMWPz6Bn70hm2KUyN_GYOSP-v2Q/view?usp=sharing\n\n-As evidence of incentivization, our outreach and social media posts will emphasize the benefits of maintaining the congested testnet (e.g., hands-on experience, community collaboration, fulfilling role in the decentralization of Cardano, potential technical advantages, etc.), providing an incentive for SPOs to take ownership and ensure its continuity.\n・https://x.com/MLabs10/status/1925438832054583433\n\nSee also:\nTwitter:\n・https://x.com/MLabs10/status/1900213700340179143\n・https://x.com/MLabs10/status/1912842341771301335\n・https://x.com/MLabs10/status/1914276345661858192\n・https://x.com/MLabs10/status/1925438832054583433\n\nLinkedIn:\n・https://www.linkedin.com/feed/update/urn:li:activity:7313138041307475969/\n\nYT:\n・https://youtu.b",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 32,
+      "cut": true
+    }
+  ]
+}

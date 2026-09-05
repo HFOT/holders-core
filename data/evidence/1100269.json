@@ -1,0 +1,61 @@
+{
+  "title": "Sundae Labs Next-Gen UPLC Debugger with Aiken Integration",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 42000,
+      "promise": "A functional command-line debugger for UPLC",
+      "criteria": "Debugger allows for the execution of UPLC code step-by-step\nCapability to display terms in scope and call stack on command\nUsable in a standard development environment",
+      "report": "Link to GitHub repository: https://github.com/SundaeSwap-finance/gastronomy\nDocumentation of usage and capabilities: Link to Readme on github https://github.com/SundaeSwap-finance/gastronomy/blob/5a470f54620cc5ead05dfd657e1fb96df1b78bb2/README.md\nLink to Video Demonstration: https://www.youtube.com/watch?v=Cm8OPQ1UOvw",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 42000,
+      "promise": "- Enhanced command-line debugger with time-travel (step-backward) functionality",
+      "criteria": "- Ability to step both forward and backward in the UPLC execution\n- Accurate display of past and present states\n- Seamless integration with the existing command-line tool",
+      "report": "Link to GitHub repository: https://github.com/SundaeSwap-finance/gastronomy\nDocumentation of usage and capabilities: Link to Readme on github - https://github.com/SundaeSwap-finance/gastronomy/blob/5a470f54620cc5ead05dfd657e1fb96df1b78bb2/README.md\nLink to Video Demonstration: https://www.youtube.com/watch?v=2JCEehEAe1I",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 35000,
+      "promise": "A standalone application or web interface for the UPLC debugger\nCustom visualizations for well known Aiken types\nAssociate UPLC nodes with Aiken code",
+      "criteria": "Visual representation of the debugging process\nUser-friendly interface with controls for advancing/stepping backward\nCompatibility with major browsers and/or operating systems\nAbility to see which Aiken code generated a given UPLC node, if any",
+      "report": "We are pleased to submit the completion of Milestone 3, which includes the creation of a standalone application for visual debugging, custom visualizations for Aiken types, and UPLC node-to-code association.\nDeliverables:\n・Standalone Application/Web App: https://github.com/SundaeSwap-finance/gastronomy/releases/tag/v0.5.1\n・Open-Sourced Code Repository: https://github.com/SundaeSwap-finance/gastronomy\n・Video Walkthrough: https://youtu.be/U5AeHp4Dpv0?si=dpUky5l6-1xnirtn\n\nThis submission demonstrates the successful implementation of a user-friendly visual debugger compatible with major platforms.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 21000,
+      "promise": "Fully operational product deployed in the target market.\nFinal report and video walk-through of product use.",
+      "criteria": "Product is fully functional and satisfies the functionality built to accomplish all previous milestones, is made accessible to the target market, and free of critical bugs.",
+      "report": "This final closeout report summarizes the accomplishments, key learnings, and detailed evidence from the UPLC Debugger project.\nThroughout the project, we successfully developed and deployed a fully functional debugging tool for Plutus and Aiken developers, addressing key inefficiencies in debugging UPLC code. The debugger enables step-through execution, state inspection, and even time-travel debugging, providing a major improvement over traditional debugging methods.\nThe final report provides specific data on the debugger’s performance, usability, and impact, as well as documentation and a walk-through video that demonstrate its capabilities.\nTo ensure clarity and transparency, we have included additional evidence and explanations for the project’s success in meeting its goals:\n・Debugger Functionality: The tool allows developers to step through UPLC execution, inspect scope variables, and backtrack through execution history, reducing debugging complexity.\n・Aiken Integration: The debugger successfully maps UPLC execution back to its original Aiken code, helping developers identify errors at the source level.\n・Usability and Adoption: The debugger is open-source, well-documented, and designed for seamless integration into existing development workflows, making it easy for developers to adopt.\n\nThe success of the project is evidenced by the delivery of a fully operational product, the approval of the milestone submission, and the positive feedback received from developers who have tested the tool. This submission meets the expectations outlined in our original proposal and provides a valuable asset to the Cardano smart contract development ecosystem.\nSupporting Evidence\n・Final Closeout Report: https://drive.google.com/file/d/1E5R30JHa5eiRkJysRiRBdY0aiv31c8yq/view?usp=sharing\n・GitHub Repository: https://github.com/SundaeSwap-finance/gastronomy\n・Website: https://sundae.fi/products/gastronomy\n・Closeout Video: https://youtu.be/grlhdfeRJDk\n・User Stories and Documentation: h",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 15,
+      "cut": true
+    }
+  ]
+}

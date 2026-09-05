@@ -1,0 +1,59 @@
+{
+  "title": "cDPT-1: An Open-Source Cardano Development AI Assistant",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 35000,
+      "promise": "・Establish the project infrastructure on AWS.\n・Initiate integration with Anthropic’s Claude v3 and AWS Lambda.\n・Begin compilation of the knowledge base for Cardano development resources.",
+      "criteria": "・Successful setup of AWS environments and configuration of necessary services.\n・Integration with Claude v3 is established for initial NLP capabilities.\n・Initial set of development resources is compiled and formatted in the knowledge base.\n・This initial set of development resources will include documentation from sources such as Cardano Foundation, Aiken, and others which may aide users in developing their first smart contract.",
+      "report": "・Configuration logs from AWS and setup documentation.\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/Lambda/index.mjs\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/Lambda/bedrockUtils.mjs\n・https://www.youtube.com/watch?v=GrPL9UUZN7I\n・Screenshots or logs demonstrating successful API calls to Claude v3.\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/LambdaLogs_2024-08-01%20164444.png\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/log-events-viewer-result2.csv\n・A preliminary version of the knowledge base accessible on the project repository.\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/s3_urls.txt",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 38000,
+      "promise": "・Expand the knowledge base with comprehensive Cardano development tools, languages, SDKs, APIs, and best practices.\n・Fully integrate the expanded knowledge base with the AI system for query handling.",
+      "criteria": "・The knowledge base includes a broad range of Cardano development resources. Including, but not limited to:\n・Aiken-lang repositories\n・Cardano Foundation repositories\n・Maestro repositories\n・The AI system seamlessly retrieves and utilizes information from the knowledge base to answer queries.",
+      "report": "・A detailed report of the knowledge base content and its sources.\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/CDPT-1%20Detailed%20Documentation%20Outline.pdf\n・Demonstrations (video/screenshots) of cDPT-1 effectively fetching and displaying accurate information in response to developer queries.\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/Milestone-2_PoA_video_demonstrations.txt\n・Milestone 2 Evidence (PoA) - Aiken 'Hello World!' Tutorial - https://www.youtube.com/watch?v=tDaMuk055iw\n・Milestone 2 Evidence (PoA) - Cardano APIs - https://youtu.be/RjXGicdDXHc\n・Additional Evidence Requested - Multiple requests both inside AWS Console and on index.html test page: https://www.youtube.com/watch?v=QdKYCNd_sVM",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "・Implement comprehensive security protocols to prevent prompt injection and jailbreaking of the AI.\n・Develop and integrate input/output sanitation and output validation checks.\n・Conduct thorough security checks and audits to ensure the robustness of the AI against various security threats.",
+      "criteria": "・The AI system successfully identifies and mitigates attempts at prompt injection and jailbreaking.\n・All inputs and outputs are effectively sanitized and validated without affecting the system's performance or user experience.\n・The system passes all security audits with no critical vulnerabilities found.",
+      "report": "The AI system successfully identifies and mitigates attempts at prompt injection and jailbreaking.\n・https://youtu.be/Zq0F5sWE9DY\n\nAll inputs and outputs are effectively sanitized and validated without affecting the system's performance or user experience.\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/Materials/ProjectCatalyst_PoAs/Milestone3/Milestone3_Evidence_Security-log-events-test-case-results.10.8.24.csv\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/Materials/ProjectCatalyst_PoAs/Milestone3/%23%23%23%20cDPT-1%20Test%20Cases%20for%20Input%20Sanitization%20and%20Validation.txt\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/Materials/ProjectCatalyst_PoAs/Milestone3/Milestone3_Evidence_SanitizationFunctions.png\n\nThe system passes all security audits with no critical vulnerabilities found.\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/Materials/ProjectCatalyst_PoAs/Milestone3/Milestone3_Evidence_Security-log-events-test-case-results.10.8.24.csv\n\nThis video serves as an explanation of the demonstrated code content for a better general understanding. We also review thorough reports that log the detail of the tests performed, as well as their results.\n・https://www.youtube.com/watch?v=R3Ixm1Q6zIY",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 29059,
+      "promise": "・Final close-out report\n・Final closeout video\n・Officially launch the AI Assistant to the public.\n・Implement community feedback mechanisms and begin active engagement strategies.\n・Gather initial user feedback and make adjustments based on community input.",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・The AI Assistant is live and accessible to users without significant issues.\n・Feedback mechanisms are in place and collecting user insights.\n・Initial user feedback is collected and reviewed for improvements.\n・A minimum of 25 unique users will be surveyed on their experience.",
+      "report": "・Link to final closeout report\n・https://docs.google.com/document/d/1kNbpqZIGXRF9pb8NtrcbzgSuHMORivgG7Sx0kxlSSa8/edit?usp=sharing\n・Link to final closeout video\n・https://www.youtube.com/watch?v=FjxAtpXNDWE\n・Public URL of cDPT-1 and launch announcement posts.\n・https://www.cardevia.ai/guest\n・https://x.com/fluxpointstudio/status/1850610300942434704\n・Feedback collection tools set up and initial feedback summary report.\n・https://docs.google.com/spreadsheets/d/1lQ51CA4tDp-ndKYT_IGVovvVaXn5ujjdPl9F3-5SkFI/edit?usp=sharing\n・handles/wallets removed for privacy",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

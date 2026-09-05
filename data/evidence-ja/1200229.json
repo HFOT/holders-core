@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・プロジェクト足場を含む公開ソースコード\n・関連するAPIインターフェースを含むレジストリコンポーネントのスタブ\n・関連するコマンドインタフェースを含むCLIコンポーネントのスタブ\n・関連するAPIインターフェースを含むライブラリコンポーネントのスタブ",
+      "criteria": "・レジストリコンポーネントのインターフェイスは、機能要件を満たします\n・CLI コンポーネントのインターフェースは、機能要件に適合\n・ライブラリコンポーネントのインターフェイスは、機能要件にマッチします\n\n機能要件は、プロジェクトの読み出し(パーマリンク)にリストされ、アイデアスケール提案に記載されているものと一致します.",
+      "report": "MS1の目標を達成しました。\n・プロジェクトスキャフォールドを含むソースコードは、Githubリポジトリで公開しています。\n・関連するAPIインターフェースを含むレジストリコンポーネントのスタブはソースコードの一部として利用できます。\n・関連するコマンドインタフェースを含むCLIコンポーネントのスタブはソースコードの一部として利用できます。\n・ソースコードの一部として、関連するAPIインターフェースを含むライブラリコンポーネントのスタブが利用できます。\n・マイルストーンに関連したコードのウォークスルーがYouTubeで利用可能です."
+    },
+    {
+      "no": 2,
+      "promise": "・市販のレジストリコンポーネントのソースコード\n・作業レジストリのクラウドホストバージョンへのアクセス\n・レジストリを実行するために使用できる共用のドッカーイメージ\n・公開可能なドキュメントでインストール手順を表示",
+      "criteria": "・青写真ファイルは、利用可能なAPIを使用してレジストリに公開することができます\n・レジストリで利用可能な青写真ファイルは、APIを使用して検索することができます\n・青写真メタデータと関連したオンチェーンデータが、APIを使ってクエリできます",
+      "report": "Telchar プロジェクトの Milestone 2 に関連付けられた成果物へのリンクは下記をご覧ください。\n・Githubリポジトリ(https://github.com/txpipe/telchar)で利用可能なソースコード\n・Githubパッケージ:https://github.com/orgs/txpipe/packages?repo name=telchar\n・レジストリのクラウドホストバージョンへのURL:https://registry.telchar.sh/\n・カスタムウェブサイトで公開されたドキュメント:https://telchar.sh/\n・利用可能なAPIを使用してレジストリの使用を示すビデオ:https://youtu.be/ApQMjIoSUqk"
+    },
+    {
+      "no": 3,
+      "promise": "・Rustのコードゲンモジュールのソースコードを公開\n・Codgenに使用できるCLIアプリケーションのバイナリリリース。\n・Rustアプリケーションの依存性として使用できる公開ライブラリ\n・モジュールのインターフェースの公開文書\n・青写真ファイルから自動的に生成されるコードの例",
+      "criteria": "・CLIは、サポートされているフレームワークのオフチェーンコードを生成するために使用できる\n・生成されたコードは、バリデータ(別名:ビルドtxs)とうまくやり取りするために使用できます。\n\nサポートされているフレームワークのリストは、要件リスト(permalink)で利用でき、提案に記載されているものと一致します.",
+      "report": "Telchar プロジェクトの Milestone 3 に関連付けられた成果物へのリンクは下記をご覧ください。\n・Githubリポジトリ(https://github.com/txpipe/telchar)で利用可能なソースコード\n・crates.io https://crates.io/crates/telchar-codegen にて公開\n・docs.rs https://docs.rs/telchar-codegen/0.1.1 で公開されたドキュメント\n・Githubリリースセクション https://github.com/txpipe/telchar/releases で公開\n・Githubリポジトリ(https://github.com/txpipe/telchar/tree/main/codegen/examples/types)の一部として利用可能なCodegenの例出力\n・コードゲン機能の活用事例を動画で紹介 https://youtu.be/EI5Js7OZRJc"
+    },
+    {
+      "no": 4,
+      "promise": "・青写真レジストリと対話できるCLIコンポーネント\n・CLIインタラクションに対応したレジストリコンポーネント\n・レジストリにアップロードされたオープンソースの青写真ファイルのいくつかの例",
+      "criteria": "・CLIはローカルの青写真ファイルを公開するために使用できる\n・CLI は名前でブループリントファイルを取得するために使用できます",
+      "report": "マイルストーンの出力\n\n・青写真レジストリと対話できるCLIコンポーネント\n・CLIインタラクションに対応したレジストリコンポーネント\n・レジストリにアップロードされたオープンソースの青写真ファイルのいくつかの例\n\n受諾条件\n\n・CLIはローカルの青写真ファイルを公開するために使用できる\n・CLI は名前でブループリントファイルを取得するために使用できます\n\nマイルストーン完了の証拠\n\n・Githubリポジトリで利用可能なソースコード\n・https://github.com/txpipe/telchar\n・GithubリリースセクションでBinaryリリース\n・https://github.com/txpipe/telchar/releases\n・レジストリのクラウドホストバージョンへのURL\n・https://registry.telchar.sh/\n・青写真レジストリのクラウドホストバージョンの青写真ファイルへのリンク\n・https://registry.telchar.sh/dapp/txpipe/asteria\n・https://registry.telchar.sh/dapp/sundae/contracts\n・https://registry.telchar.sh/dapp/jpg-store/marketplace\n・https://registry.telchar.sh/dapp/hydra/hydra-plutus\n・https://registry.telchar.sh/dapp/githoney/contract\n・Githubパッケージで使用可能なDockerイメージ\n・https://github.com/orgs/txpipe/packages?repo name=telchar\n・カスタムサイトに掲載されたドキュメント\n・https://telchar.sh/\n・CLIの使用状況を把握し、レジストリからファイルを公開/取得するビデオ\n・https://youtu.be/yprg89kMyJY"
+    },
+    {
+      "no": 5,
+      "promise": "・完全なツールチェーンの利用可能なソースコード\n・Rustアプリケーションの依存性として使用できる公開ライブラリ\n・モジュールのインターフェースの公開文書\n・プロジェクトの最終出力を示すビデオ\n・プロジェクトプロセスと成果を記述する最終報告書",
+      "criteria": "・最終的なツールチェーンは、公開、検索、コードゲンブループリントファイルに使用できます\n・最終ビデオは、触媒要件に準拠\n・最終報告書は、触媒要件に準拠",
+      "report": "・Githubリポジトリで利用可能なソースコード\n・https://github.com/txpipe/telchar\n・レジストリのクラウドホストバージョンへのリンク\n・https://registry.telchar.sh\n・ドキュメントサイトへのリンク\n・https://telchar.sh\n・crates.ioで公開されている\n・https://crates.io/crates/telcharcodegen\n・docs.rsで公開されたドキュメント\n・https://docs.rs/telchar-codegen/latest/telchar codegen\n・YouTubeにアップロードした動画を閉じるリンク\n・https://youtu.be/1FlSDDB5ZI0\n・報告書を閉じるリンク\n・https://drive.google.com/file/d/1 tQ U3Z2SGzDJVhzBPWeYIGC4l Ze9lc/view?usp=sharing"
+    }
+  ]
+}

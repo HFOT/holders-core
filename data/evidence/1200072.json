@@ -1,0 +1,75 @@
+{
+  "title": "Cardano.Sync | A .NET/C# Indexing Framework for Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 57000,
+      "promise": "Broaden the functionality of Cardano.Sync to make it more versatile and robust, including exposing additional Cardano blockchain details such as withdrawal certificates and stake pool certificates as part of a wider range of enhancements.\nThis includes but not limited to:\n・Exposing Complete CDDL equivalent fields / data to Cardano.Sync block event\n・Blocks\n・Txs\n・Inputs\n・Utxos\n・Certificates\n・Datum\n・Script Reference\n・Withdrawals\n・Metadata\n・Minting\n・Implement Common General Reducers\n・BlockBySlot Reducer\n・TxBySlot Reducer\n・UtxoByAddress Reducer\n・TransactionOutputs Reducer\n・TransactionInputs Reducer\n・Implement Common use-case dApp Reducers\n・SundaePriceByTokenReducer\n・MinswapPriceByTokenReducer\n・JpgPriceByAssetReducer\n・SplashPriceByTokenReducer\n・Implement Common dApp Datums Serialization datastructures\n・SundaeLiquidityPool Datum\n・MinswapLiquidityPool Datum\n・JpgListing Datum\n・SplashLiquidity Datum",
+      "criteria": "Developer is able to install .NET nuget package for Cardano.Sync and follow a tutorial on how to use these framework features to develop a basic cardano indexing app and API.\n\nIt will showcase compatiblity with standard .NET tools like ASP.NET and Entity Framework",
+      "report": "Proof of Achievement for Milestone 1: Comprehensive Library Enhancement\nWe are excited to present the Proof of Achievement for Milestone 1, \"Comprehensive Library Enhancement.\" During the course of this project, we have rebranded our library to Argus, a .NET Indexing Library. This milestone has been successfully completed, fulfilling all the specified Outputs, Acceptance Criteria, and Evidence of Milestone Completion.\nProject Rebranding:\n・Previous Name: Cardano.Sync\n・New Name: Argus - A .NET Indexing Library\n\nThe rebranding reflects our commitment to providing a more comprehensive and versatile indexing solution for the Cardano blockchain within the .NET ecosystem.\nMilestone Outputs:\nWe have significantly enhanced the functionality of Argus, making it more versatile and robust. We have implemented everything we promised and even more, providing developers with extensive tools to interact with the Cardano blockchain.\nExposure of Complete CDDL Equivalent Fields/Data:\n・We have fully exposed all CDDL equivalent fields and data structures, enabling comprehensive access to blockchain details. This includes blocks, transactions, inputs, UTXOs, certificates, datum, script references, withdrawals, metadata, minting information, and additional data elements that enhance the developer experience.\n\nImplementation of General and Use-case Specific Reducers:\n・Beyond the initial scope, we have implemented a suite of general reducers and common use-case dApp reducers. These tools simplify data processing and enable developers to build more efficient and powerful applications.\n・Please note: A token Subject in Cardano generally means (PolicyId + AssetName) and hence the JpgPriceByAssetReducer was renamed to JpgPriceBySubjectReducer, the name has changed but logically they function the same. It can be found here.\n・Please note: UtxoByAddressReducer, TransactionInputsReducer and TransactionOutputsReducer have been merged into one effiecient reducer (It can be found here). \n・This is becau",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 57000,
+      "promise": "Objective: Improve the stability and performance of Cardano.Sync, ensuring that the newly integrated features and the broader enhancements from Milestone 1 operate efficiently and reliably under various conditions.\nDeliverables:\n・Source code updates featuring stability improvements and performance optimizations to handle increased loads and complex queries efficiently.\n・A comprehensive performance report that details benchmarks, optimizations implemented, and results of stress testing to ensure robust operation.",
+      "criteria": "・The source code will be updated to include enhancements focused on performance and stability.\n・All changes, benchmarks, and test results will be documented comprehensively. This documentation will include:\n・Changelog: A link to the updated released code detailing all the stability and performance improvements.\n・Test Reports: Access to the benchmark, optimization, and stress test reports for verification and review.",
+      "report": "We have updated the source code to improve performance and stability as well as adding more features for completeness of the framework. However while it has become more stable, robust and feaure complete, there has been performance penalties that has accrued. The details are contained the summary report below.\nLink to github release with update source code: \n・Releases: https://github.com/SAIB-Inc/Argus/releases\n・Commits: https://github.com/SAIB-Inc/Argus/commits/main/\n\nLink to a summary report document of the result of the benchmark, optimization and stress test.\n・Summary Report: https://saibph-my.sharepoint.com/:w:/g/personal/kathea_mayol_saib_dev/Eaw6M7DQqxBGoI3iMXkGNtUBCEToB4wWLihtLB12E64PvA?rtime=GFYfFOo53Ug",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 9500,
+      "promise": "The milestone will produce a globally competitive project website that details the key features and capabilities of the Cardano.Sync framework. The website will be designed to be simple, elegant, and aesthetically pleasing.\n\nThis milestone will also produce a comprehensive documentation website for Cardano.Sync. The documentation will cover the basic features of the framework, detailing how it works and explaining the Cardano data structures and their flow through the framework. The documentation will be structured to help developers understand and utilize Cardano.Sync effectively.\nDetails of the Documentation:\n・Overview of Cardano.Sync:\n・Introduction to the framework\n・Key features and benefits\n・Documentation of Exposed CDDL Equivalent Fields/Data in Cardano.Sync Block Event:\n・Explanation of blocks\n・Detailed descriptions of transactions (Txs)\n・Inputs\n・UTXOs\n・Certificates\n・Datum\n・Script Reference\n・Withdrawals\n・Metadata\n・Minting\n・Usage Guides for Common General Reducers:\n・BlockBySlot Reducer\n・TxBySlot Reducer\n・UtxoByAddress Reducer\n・TransactionOutputs Reducer\n・TransactionInputs Reducer\n・Usage Guides for Common Use-case dApp Reducers:\n・SundaePriceByTokenReducer\n・MinswapPriceByTokenRed",
+      "criteria": "A reviewer will be able to visit the website and confirm that it accurately lists and highlights the proposed features of Cardano.Sync, including:\n・A .NET / C# Indexing Framework for Cardano\n・A set of common toolsets that allow developers to work with Cardano data and dApp data\n・Example usage of the framework\n\nDocumentation\n・A developer must be able to successfully follow the tutorials and examples provided to set up and run a basic indexer using Cardano.Sync.\n・A developer must be able to build and deploy a basic API using the framework and its documentation.",
+      "report": "Argus (formerly Cardano.Sync) - Project Catalyst Milestone 3 Submission\n\nWe are pleased to announce the successful completion of Milestone 3 with the launch of our comprehensive documentation portal.\n\nWebsite: https://docs.saib.dev/\nDocumentation: https://docs.saib.dev/docs/argus/getting-started/overview\nMilestone Achievements\nDuring the development of Argus, we identified the need for complementary tools to create a complete blockchain development ecosystem. Our documentation portal now serves as a centralized knowledge hub for Argus and its companion tools developed by SAIB Inc:\n 1. Comprehensive Argus Documentation:\n - Complete technical specifications of Cardano data structures with .NET mappings\n - Detailed guides for built-in reducers (BlockBySlot, TxBySlot, UtxoByAddress, etc.)\n - In-depth documentation for DApp-specific reducers (SundaeSwap, Minswap, JPG Store, Splash DEX)\n - Step-by-step API building instructions with query optimization techniques\n - Clear configuration guides with detailed parameter explanations\n 2. Integrated Ecosystem Approach:\n - Coherent documentation showing how Argus interfaces with Chrysalis for CBOR processing\n - Clear explanation of component relationships within the SAIB toolkit\n - Practical examples demonstrating cross-tool workflows\n 3. Developer-Focused Content:\n - Production-ready code examples with proper error handling\n - Detailed database models with field explanations\n - Progressive learning path from basic concepts to advanced implementations\n - Visual architecture diagrams illustrating component relationships\n 4. Real-World Application Focus:\n - Practical implementation patterns for common use cases\n - Detailed explanations of on-chain datum structures for popular DApps\n - Performance optimization guidance for production deployments\nThe documentation has been structured to support developers at all levels of blockchain experience, making Cardano development accessible to mainstream .NET developers while providing the te",
+      "kinds": [
+        "other"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "14",
+      "cost": 9500,
+      "promise": "Execute the official launch of the updated Cardano.Sync website and its comprehensive documentation. This milestone is designed to effectively introduce the library to a wider audience, facilitate community engagement, and begin gathering user feedback.\n・Official launch of the Cardano.Sync website and the full documentation suite, including tutorials, use cases, and sample projects.\n・Organized launch events such as webinars, live Q&A sessions, and online workshops, which will serve to educate potential users and stakeholders about the features and benefits of Cardano.Sync.\n・Initial marketing campaign executed across various channels to raise awareness and promote usage among the target audience.\n・Community engagement report summarizing the reception, feedback, and interaction metrics from the community, providing insights into the initial impact and areas for potential improvement.",
+      "criteria": "・We will officially launch the updated Cardano.Sync website, including comprehensive documentation with tutorials, use cases, and sample projects.\n・We will conduct at least 2 launch events, such as webinars, live Q&A sessions, and online workshops focused on Cardano.Sync. Each event will aim for 5 - 10 attendees.\n・We will provide a report summarizing the reception, feedback, and interaction metrics from the community, including:\n・Engagement rate (likes, shares, comments)\n・Feedback collected (surveys, polls)\n・Interaction metrics (clicks, views, participation)\n・Minimal requirements: 1,000 people",
+      "report": "A. Output: Official launch of the Cardano.Sync website and the full documentation suite, including tutorials, use cases, and sample projects.\nAcceptance criteria: Argus website was successfully launched, with it containing comprehensive documentation with tutorials, use cases, and sample projects.\nEvidence: \n・Link to official website (docs.saib.dev)\n・Link to official documentation page\n・Link to official github repository\n\nB. Output: Organized launch events such as webinars, live Q&A sessions, and online workshops.\nAcceptance criteria: We will conduct at least 2 launch events, such as webinars, live Q&A sessions, and online workshops focused on Cardano.Sync. Each event will aim for 5 - 10 attendees.\nEvidence: \n・Link to Webinar Event 1 - Pioneering Web3: Exploring Blockchain, Cardano, and Developer Tooling [Stream | Facebook Live]\n・Number of attendees: 74\n・Link to Webinar Event 2 - From Code to Creation: Argus — The Cardano Blockchain Indexer for .NET [Stream | Facebook Live]\n・Number of attendees: 58\n\nC. Output: Initial marketing campaign executed across various channels and community engagement report summarizing the reception, feedback, and interaction metrics from the community.\nAcceptance criteria: \n・Report is provided summarizing reception, engagement rates, feedback, and interaction metrics.\n・1,000 people reached and a 10% engagement rate\n\nEvidence: \n・Community Engagement Report",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "15",
+      "cost": 57000,
+      "promise": "Final Close-Out Report:\n・Summary of milestone activities, achievements, and outcomes\n・Metrics and results (engagement metrics, feedback, performance indicators)\n・Challenges and solutions\n・Lessons learned\n・Next steps and recommendations\n\nFinal Close-Out Video/Presentation:\n・Overview of the project and milestone\n・Key achievements and milestones\n・Metrics and results (visual representation)\n・Challenges and solutions\n・Lessons learned\n・Future plans",
+      "criteria": "Final Close-Out Report:\n・Document all activities and tasks completed during the milestone.\n・Summarize key achievements and milestones reached.\n・Include metrics and results (engagement metrics, feedback, performance indicators).\n・Address challenges faced and solutions implemented.\n・Compile lessons learned.\n・Provide next steps and recommendations.\n\nFinal Close-Out Video/Presentation:\n・Create a video overview of the project and milestone.\n・Highlight key achievements and milestones.\n・Present metrics and results with visual representation.\n・Discuss challenges faced and solutions implemented.\n・Share",
+      "report": "We are excited to announce the completion of our Final Milestone deliverables:\nA. Output: Final Close-Out Report\nAcceptance criteria: \nThe report:\n・ Documents all activities and tasks completed during the milestone.\n・Summarize key achievements and milestones reached.\n・Include metrics and results (engagement metrics, feedback, performance indicators).\n・Address challenges faced and solutions implemented.\n・Compile lessons learned.\n・Provide next steps and recommendations.\n\nEvidence: \n・Final Close-Out Report \n・This is a shorter, summarized report to align with Catalyst guidelines\n・Argus Milestone Achievements Report\n・This is a detailed report to cover the above acceptance criteria\n\nB. Output: Final Close-Out Video/Presentation:\nAcceptance criteria: \nThe report:\n・Create a video overview of the project and milestone.\n・Highlight key achievements and milestones.\n・Present metrics and results with visual representation.\n・Discuss challenges faced and solutions implemented.\n・Share lessons learned.\n・Outline future plans.\n\nEvidence: \n・Final Close-Out Video\n・Final Close-Out Presentation Slide",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    }
+  ]
+}

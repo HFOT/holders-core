@@ -1,0 +1,76 @@
+{
+  "title": "Marlowe - Decentralized Oracle Integration",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25000,
+      "promise": "Study Charli3 oracle feeds and (possibly) other COOP-compatible feeds.\nDesign middleware smart contract for interacting with Charli3 oracle feeds (and possibly others) and Marlowe contracts.",
+      "criteria": "The document is publicly available and describes Charli3 oracle feed (and possibly others) format and the design of smart contract for connecting with Marlowe contracts.",
+      "report": "Milestone goals and proofs of completion\n\n・Study Charli3 oracle feeds and (possibly) other COOP-compatible feeds.\n\nDesign middleware smart contract for interacting with Charli3 oracle feeds (and possibly others) and Marlowe contracts.\nThe result of this work is a document explaining how oracles can be used in Marlowe and a deep analysis of how to implement the service for Charli3 and Orcfax oracle providers. \nThe structure is as follows: \n・Section 1 introduces oracles and the possibility to use them on Marlowe. \n・Section 2 explains in detail how Marlowe validation works. \n・Section 3 contains the proposed system design for integrating Marlowe contracts with decentralized oracle services\n・3.1 the specification of the off-chain component of this service, \n・3.2 the specification of Charli3 and Orfax utxo feeds in subsection \n・3.3 a detailed description of the on-chain component\n\nIt’s important to mention that the proposed design is based on the previous work described in https://github.com/input-output-hk/marlowe-plutus/blob/main/marlowe-plutus/charli3.md\n\nThe output document is publicly available here: https://docs.google.com/document/d/1MxVhplkNRDPFw5DgCLjYQVwwZKJQnmaSidBcahs8ldE/\nNext Steps\n\nAs we move forward, we will proceed with the following milestones, building the middleware between Marlowe contracts and oracle services (Charli3 and Orfax), which we call Marlowe Oracle Service (MOS). The immediate next step is to build the watching mechanism for finding the contracts waiting for an oracle resolution and the necessary transaction building. The deep analysis and design we did in this milestone gives us the necessary confidence that we’ll have no issues for completing the next step in time.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 70400,
+      "promise": "Develop chain watch mechanism and filtering of Marlowe contracts\nDevelop transaction building logic for Charli3 feeds (and possibly other COOP-compatible feeds)",
+      "criteria": "The implemented backend is capable of connecting Charli3 oracle feeds (and possibly other COOP-compatible feeds) with Marlowe contracts requesting those feeds (no on-chain validation)",
+      "report": "We are pleased to announce the successful completion of Milestone #2 for the Marlowe Decentralized Oracle Integration Catalyst project. \nMilestone goals and proofs of completion\n\n・Develop chain watch mechanism and filtering of Marlowe contracts\n\nAs we presented in the design document built on milestone 1, the chain watch mechanism and filtering of Marlowe contracts is implemented on a service that we call Marlowe Oracle Service (MOS). We fully developed this service and it’s publicly available here:\nhttps://github.com/marlowe-contrib/marlowe-oracle-service\nThe MOS is in charge of watching and filtering Marlowe contracts waiting for oracle information, querying the necessary sources of truth and building the corresponding transactions to insert the information into the contract. These three identified purposes were designed and implemented in three modules: Scan, Feed and Tx. \nThe Scan module is in charge of watching for Marlowe contracts containing a Choice Action with a special name indicating that the information to receive comes from an oracle. \nThe first step was to develop this using an offchain component as the source of truth: Coingecko. It was implemented on this issue: \nhttps://github.com/marlowe-contrib/marlowe-oracle-service/issues/5\nThen, we proceed to implement the scan module for the two onchain sources of truth: Charli3 and Orcfax. Issues:\nhttps://github.com/marlowe-contrib/marlowe-oracle-service/issues/41\nhttps://github.com/marlowe-contrib/marlowe-oracle-service/issues/65\nThe work for implementing the queries to the oracle information was tracked on these issues:\nhttps://github.com/marlowe-contrib/marlowe-oracle-service/issues/7\nhttps://github.com/marlowe-contrib/marlowe-oracle-service/issues/8\nhttps://github.com/marlowe-contrib/marlowe-oracle-service/issues/66\n\n 2. Develop transaction building logic for Charli3 feeds (and possibly other COOP-compatible feeds)\n\nThe Tx module is in charge of building the necessary transaction that resolve the oracle c",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 25,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 70400,
+      "promise": "Develop Aiken on-chain validator for Charli3 feeds\nDevelop Aiken on-chain validator for COOP-compatible feeds (subject to progress of the Orcfax project)",
+      "criteria": "Aiken code implementing all the on-chain validations.\nA backend capable of executing an end-to-end flow of the oracle feed integration, submitting transactions to preprod testnet.",
+      "report": "Marlowe - Decentralized Oracle Integration - Milestone #3 report\n\nWe are pleased to announce the successful completion of Milestone #3 for the Marlowe Decentralized Oracle Integration Catalyst project. \n\nMilestone goals and proofs of completion\n\n・Develop Aiken on-chain validators for Charli3 and Orcfax (COOP) feeds\n\nIn the design document, we presented all the checks a bridge validator must have to ensure the provided feed is trustworthy. Due to the distinct nature of the feeds and oracles, some validator’s functions are particular to each feed and/or oracle, and others are more general. We designed everything in such a way that we can reuse most of the validations. In this sense, we have implemented two bridge validators: one for ADAUSD/Charli3 and another for ADAUSD/Orcfax. Both of these validators share most of the general validations. The only difference between them is the \"lookup and parsing\" of the feed. It is worth noting that this particular approach allows an easy implementation of new validators. As part of our development process, we included a concise set of tests covering both positive and negative cases.\n\nThe work for implementing all the checks related to each validator was tracked on these issues:\nhttps://github.com/marlowe-contrib/marlowe-oracle-service/issues/80\nhttps://github.com/marlowe-contrib/marlowe-oracle-service/issues/81\nhttps://github.com/marlowe-contrib/marlowe-oracle-service/issues/82\nhttps://github.com/marlowe-contrib/marlowe-oracle-service/issues/83\nhttps://github.com/marlowe-contrib/marlowe-oracle-service/issues/88\n\n 2.Improve bridge validator deploy and scaffolding for examples\n\nTo test the complete flow in a real scenario, in addition to the goals we described for the original proposal, we added two command line interpreter functionalities. These allow the deployment as a reference script of any of the bridge validators, Charli3 or Orcfax. We also improved the previous functionality to work smoothly with the new validators. This ma",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 19,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 33500,
+      "promise": "Package backend components for distribution (Docker image, binary release)\nPublish documentation site and examples",
+      "criteria": "Package backend components for distribution (Docker image, binary release)\nPublish documentation site and examples that will include:\n・useful theoretical knowledge\n・thorough working knowledge\n・key learning points\n・practical steps for users",
+      "report": "We are pleased to announce that Milestone #4 for the Marlowe Decentralized Oracle Integration Catalyst project has been successfully completed. \nMilestone goals and proofs of completion\n1.Package backend components for distribution\nThe complete Marlowe Oracle integration has two main components: the Marlowe Apply Service (MAS) and the Marlowe Oracle Service (MOS). We dockerized both services and created a docker-compose script that allows for easy execution of both services. Even more, given that the MAS doesn’t require any particular configuration, it was pushed to the docker hub. Besides that, the MOS has other execution options documented in the corresponding README.\nThe main issue tracking this work was:\nhttps://github.com/marlowe-contrib/marlowe-oracle-service/issues/101\n\n2.Publish documentation\nIn total, we wrote three new documents in addition to improving the previous ones to make them cohesive with the new ones. Related to the original documentation, we thoroughly reviewed the guides on deploying an instance of the MOS, creation of examples, and deploying of all the necessary “UTxO architecture” related to the bridge UTxOs. In the new documents, we wrote a complete guide on extending the MOS implementation with new Oracles and Feeds. This involves creating a new bridge validator (document) and including support for resolving any choice asking for this new feed (document). Lastly, we wrote a quick known feeds guide that summarizes the current feed support of the MOS and which is the correct nomenclature to use in any Marlowe Contract (document).\nThe main issues tracking this work are these:\nhttps://github.com/marlowe-contrib/marlowe-oracle-service/issues/17\nhttps://github.com/marlowe-contrib/marlowe-oracle-service/issues/86\nhttps://github.com/marlowe-contrib/marlowe-oracle-service/issues/103\n\n3.Minor improvements\n\nWhile writing documentation and implementing examples, we found some minor issues that were fixed. Also, we improved the bridge validator deployme",
+      "kinds": [
+        "code"
+      ],
+      "links": 17,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 36414,
+      "promise": "Gather on-chain metrics\nGather Github repository metrics\nPrepare and share final report",
+      "criteria": "Gathering On-Chain Metrics:\nOn-chain metrics are successfully retrieved, covering relevant aspects such as transaction throughput, smart contract execution details, and any other on-chain performance indicators deemed significant for project evaluation.\nGathering Github Repository Metrics:\nGithub repository metrics, encompassing stars, traffic, visitors, and issues created, are accurately collected and analyzed.\nPreparing and Sharing Final Report:\nThe final report is meticulously compiled, providing a comprehensive overview of project achievements and insights gathered from both on-chain and G",
+      "report": "Name of project and Project URL on Ideascale/Fund\nMarlowe - Decentralized Oracle Integration\nhttps://cardano.ideascale.com/c/idea/105569\n\nChallenge\nDeveloper Ecosystem - The Evolution\n\nName of project manager\nEmmanuel Gunther\n\nDate project started\nOctober 20, 2023\n\nDate project completed\nMarch 15, 2024\n\nKey achievements\nTechnical\nWe successfully designed and implemented a way to integrate oracles in any Marlowe contract. To accomplish this, we needed to research, improve, and implement some in-house solutions for different parts of the Marlowe Oracle Service (MOS).\n\nThe final version of the MOS supports three different oracles: CoinGecko, Charli3, and Orcfax, the last two decentralized oracles. One of the main goals of the design and implementation was the capability of adding new oracles without the need to change the implementation. This was achieved completely. We end up with a good design that allows the integration of new oracles by performing minor code updates.\n\nIn addition to the MOS, one of the big accomplishments was the design and implementation of the Marlowe Apply Service (MAS). The Marlowe Runtime already comes with application functionality that allows the application of inputs to any Marlowe Contract. Still, there is a main problem related to the system we were building: It balances the transaction after applying inputs. We need a lot more flexibility given that besides the application of inputs, we wanted to include other UTxO and make some payments to the transaction. To tackle this, we extracted some core functionality from the Marlowe Runtime and implemented our own version of the input application. This new service takes a Marlowe Contract and the inputs to be applied and retrieves the minimal information needed to build a transaction that can resolve some inputs in the corresponding Marlowe Contract.\n\nFinally, we made improvements on the marlowe-ts-sdk. At the date of development, the library missed some relevant endpoints that we needed to res",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 19,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "title": "Cardano DeFi SDK - Dexter & Iris V2",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 15000,
+      "promise": "Delivery of the initial SDK NPM package scaffold containing foundational modules, along with a TypeScript API/indexer project including dependencies, project structure, and configuration files to support further development.",
+      "criteria": "The SDK package installs via NPM without errors, contains initial class and interface definitions, and the API project runs locally with required dependencies. Repository setup must follow documented folder structures.",
+      "report": "A. Output: Delivery of the initial SDK NPM package scaffold containing foundational modules\nAcceptance criteria: The SDK package installs via NPM without errors\nEvidence: NPM package published to a test registry: https://www.npmjs.com/package/@3rd-eye-labs/dexter-v2\nB. Output: TypeScript API/indexer project including dependencies, project structure, and configuration files to support further development.\nAcceptance criteria: API project runs locally with required dependencies.\nEvidence: GitHub repository: SDK Repository (README included) - https://github.com/3rd-Eye-Labs/dexter-v2\nEvidence: API Setup (Extending Iris) - https://github.com/IndigoProtocol/iris/pull/10\nC. Output: Video showing the Initial project running locally\nAcceptance criteria: YouTube Video\nEvidence: Video - https://www.youtube.com/watch?v=DN--kK8IT10",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "Functional REST API exposing read-only endpoints for supported integrations, along with a fully operational on-chain indexer populating a MySQL or similar database with normalized Cardano DeFi protocol data.\nList of supported integrations:\n・Minswap v1\n・Minswap v2\n・Muesliswap\n・Splash\n・SundaeSwap\n・SundaeSwap v3\n・WingRiders v1\n・WingRiders v2\n・Indigo Protocol\n・Liqwid\n・Bodega",
+      "criteria": "API endpoints return valid, structured JSON matching documentation, indexer pulls and updates live on-chain data without errors, and database schema supports all proposed integrations. Must pass integration tests.",
+      "report": "All files - https://drive.google.com/drive/folders/1KBtXSHLn6jAQDRHCujH09Y3q96vTHSrX?usp=sharing\nLive API demonstration - https://drive.google.com/file/d/1vSVCb93eAJgD_XzWvFVISiEUlFy6W-xc/view?usp=sharing\nPostman collection - https://drive.google.com/file/d/1kt9FNJf61D7Dt-5dMfYTyrDo3NTkyi1e/view?usp=sharing\nDatabase schema export - https://drive.google.com/file/d/1M8ZwuNaVdAQv5kfiluhrQsINTUI8uuXO/view?usp=sharing\nGitHub repository updates - https://github.com/IndigoProtocol/iris/pull/10\nScreenshots - https://drive.google.com/drive/folders/1e9nxOEMFnnitXu7F533Q34C0kl6zrlA6?usp=sharing\nIntegration Tests - https://drive.google.com/drive/folders/1O6csFrO1FtVfEz7N0LEqiL-V-gN_RHn6?usp=drive_link",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 14
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "A TypeScript SDK capable of fetching API data, building, and submitting Cardano transactions for all supported DeFi integrations. Includes automated unit tests and developer-friendly function interfaces.\nComprehensive API and SDK documentation in Markdown format, detailing installation, setup, usage, and extension points. Manual testing report ensuring integration safety. All code pushed to a public GitHub repo.\nList of supported integrations:\n・Minswap v1\n・Minswap v2\n・Muesliswap\n・Splash\n・SundaeSwap\n・SundaeSwap v3\n・WingRiders v1\n・WingRiders v2\n・Indigo\n・Liqwid\n・Bodega",
+      "criteria": "All SDK methods function as documented, can successfully interact with live Cardano DeFi protocols, and pass automated tests. Transaction submissions must be confirmed on-chain (either Mainnet or Preprod) during testing.\nDocumentation must be complete, accurate, and usable by a third party to replicate setup and usage. Manual tests must confirm no loss of funds risk. GitHub repo must be open and accessible without restrictions.",
+      "report": "Notes have been updated, we appreciate the feedback.\n\nUpdated Video Walkthrough - https://drive.google.com/file/d/1tOjs525y1U4i_HgknRWDGkQh6qA4fVhe/view?usp=sharing\nExample transactions - https://docs.google.com/document/d/1eOWIa5djuu6jTvjPWWj_8h3OExfg_MHsasvDvOWUQ9w/edit?usp=sharing\n\nNotes :\n・Iris contains a retry mechanism for finding pools. There is the possibility where bad states were created. Whether through DEX internal testing, or a wrong Tx was picked up by Iris. This can happen, however Iris has the protections in place to not store these states. See AmmOperationHandler.ts line 142\n・We are not adding tests calling live production endpoints, as a public accessible instance does not exist. Only internally hosted instances. So tests between Dexter & Iris are not possible, however we have added tests that work with the similar types between the two. This is suffice since the iris-sdk returns these exact same types.\n・Test script commit (This was not pushed initially due to it containing a seed-phrase. This is now removed, so the test will fail unless you manually set one.) - https://github.com/3rd-Eye-Labs/dexter-v2/commit/272fbcff5db4ac3c99c3fd73dcece8d316a8979f\n・The openapi.yaml API spec was corrected.\n・Retested the Cardano Token Registry, and corrected one possible issue where the token could not be found. If you still see errors for this, please check you are using a valid Github Token.\n\nSubmissions :\nAll files : https://drive.google.com/drive/folders/1t1VNxwc8g2hYV-ACYTrxTxvXrPFyQ6Pf?usp=drive_link\nSuccessful Tests / Testing Notes : https://docs.google.com/document/d/1eOWIa5djuu6jTvjPWWj_8h3OExfg_MHsasvDvOWUQ9w/edit?usp=drive_link\nGithub Repo : https://github.com/3rd-Eye-Labs/dexter-v2\nMIT License: https://github.com/3rd-Eye-Labs/dexter-v2/blob/main/LICENSE\nDocumentation (Also in Repo) : https://drive.google.com/file/d/1ZFghsp5QZoVXqBJbOS4BHDtGnAKCZThJ/view?usp=drive_link\n・NPM Publication : https://www.npmjs.com/package/@3rd-eye-labs/dexter-v2\n\nSafety and",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 18,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 25000,
+      "promise": "A polished 2–3 page written Close‑out Report summarizing KPIs (both challenge-level and project-level), key achievements, learnings, next steps, plus project metadata (e.g., project name, ID, manager, start/end dates, and resource links). Also, a public (YouTube or Vimeo) 2–5 minute Close‑out Video, in 720p or 1080p, demonstrating the project’s achievements, deliverables, technical solutions, and how funding was employed.",
+      "criteria": "Report will include:\n・Project name, URL, project number, manager, start and completion dates;\n・Challenge and project KPIs, outcomes addressed or unmet;\n・Achievements (especially around collaboration/engagement), learnings, next-stage plans, final reflections, and links to relevant sources/documents;\n・A working, accessible link to the Close‑out Video.\n\nVideo will:\n・Be public and in 720p or 1080p quality;\n・Be 2–5 minutes long;\n・Clearly demonstrate outputs—like the API/SDK functionality—or otherwise make the work visible;\n・Contextualize the challenge, approach, funded solution, and outcome, align",
+      "report": "Closeout Video - https://www.youtube.com/watch?v=q-KvN1wgRyQ\nCloseout Report (Markdown) - https://drive.google.com/file/d/1pd5-J0uP2zgWrXIiFG4xFvDFmDpmfRH_/view?usp=sharing\nCloseout Report (Doc) - https://docs.google.com/document/d/1qmRq4OK22mYMu-SivYQNBHWsh8t8h2JoRAZk1UuCERA/edit?usp=sharing",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 3,
+      "cut": true
+    }
+  ]
+}

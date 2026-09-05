@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "このマイルストーンは、単一のノード内での決済処理を開始するためのインフラを含みます。\n以下が含まれます:\n・ユーザーと残高のテストセットでノードを開始\n・本試験利用者による支払いの送受信\n・取引のプライバシーを保証するためにブラインド署名スキームを導入する。\n・プロトコルとブラインドシグネチャの暗号化方法を説明する文書化。\n\nこの時点で、このプロジェクトは、同じノード内のユーザー間でプライベートな支払いを信頼できないようにすることができます。\nこれはVaultやCardanoブロックチェーン自体への接続は含まれていません.",
+      "criteria": "このマイルストーンの目標は、アプリケーションが固く、正しくトランザクションを処理する場合に達成することができます.",
+      "report": "1.Litepaper:https://github.com/mugraph-payments/mugraph/blob/main/README.md\n2. a. 実行可能なデモ(動画):https://www.youtube.com/watch?v=JNGbhwHSCT4\n2. b. 実行可能なデモ(コマンド):\n実行ノード: argo run -p mugraph-node server --secret-key 6381e09e4c213b00a4230cda56e495ded886702075201abd0d15418d90a80c0e\nシミュレーターを実行して下さい:貨物操業-pのmugraphのシミュレーター\n3. 実行可能なドッカー:https://hub.docker.com/r/mugraphpayments/mugraph\nhttps://github.com/mugraph-payments/mugraph で利用可能なコード"
+    },
+    {
+      "no": 2,
+      "promise": "このマイルストーンは、Cardanoからアセットをコミットし、ノードにコミットできるようにすることです。\n以下が含まれます:\n・資産をVaultに入金するAIKENスマートコントラクト\n・Vaultから資産を撤退するAIKENスマートコントラクト、以前にそれを認めたノード",
+      "criteria": "このマイルストーンは、ユーザーが(testnet) Cardano Walletから実行中のノードに資金をコミットし、コミットできるとみなすことができます.",
+      "report": "1. https://github.com/mugraph-payments/mugraph/tree/main/validator で利用可能なスマートコントラクトコード\n2. ユーザの Testnet トランザクションをコミットし、ネットワークにコミットします。\n- トランザクションを展開する(参照UTXOを作成します):\nhttps://preview.cardanoscan.io/transaction/cf33cb81d0afa1fd173d341d3b582aad39169ee7db3ec035043e34e2ed1ab0ef\n- 預金取引:\nhttps://preview.cardanoscan.io/transaction/38aed674743f8247ac61070030680859e83dac5ff165c6b5afa50c59dae14e35\n- トランザクションを撤退することは、通常の転送であり、スマートコントラクトは使用されません."
+    },
+    {
+      "no": 3,
+      "promise": "3番目のマイルストーンは、Cardanoブロックチェーンを介してクロスノード決済を実行することで、ユーザーは異なるノード間で残高を転送することができます。\nこのマイルストーンには、プロトコルへの拡張として構築された転送を行うためのメカニズムが含まれています。\n以下が含まれます:\n- これらの転送を作るメカニズム。\n- 別のノードから資金の転送に関する新しいノードを通知する方法.",
+      "criteria": "ユーザーが1つのノードから別のノードへ資金を変換できると、このマイルストーンは完了とみなされます.",
+      "report": "1. 実行可能なコード: https://github.com/mugraph-payments/mugraph\n2. ドキュメント: https://github.com/mugraph-payments/mugraph/blob/main/README.md\n3. ビデオのデモ: https://youtu.be/MBfk0jv1WpU"
+    },
+    {
+      "no": 4,
+      "promise": "マイルストーン4は、ネットワークとやり取りするために使用されるモバイルウォレットについてです。\nウォレットがリリースされた後、ユーザーは次のようになります。\n・QRコードやメッセージで資金を送受信.",
+      "criteria": "このマイルストーンは、ユーザーがインストールできる(apk または TestFlight 経由)、QR コード、メッセージを介して資金を保持し、支払いを送受信できるモバイルアプリケーションで完了することができます.",
+      "report": "1。 アプリケーションの作業と支払いを送信するためのビデオデモ\n- ワレツページツアー:https://youtube.com/shorts/BlTnLjXZm8w?feature=share\n- ウォレットウォークスルー:https://youtube.com/shorts/Q1lhv3dxN7s?feature=share\n- 2つのウォレットの支払いデモ:https://youtube.com/shorts/L8SwMAeN7a0?feature=share\n\n2. ユーザーがインストールするためのダウンロード可能なAPK(およびTestFlight)\nリリース(.apk pra Android、.ipa pra iOS): https://github.com/mugraph-payments/mugraph/releases/tag/v0.1"
+    }
+  ]
+}

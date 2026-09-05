@@ -1,0 +1,95 @@
+{
+  "title": "Sundae Labs Automated Price Discovery",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 52000,
+      "promise": "Note to reviewer: Please engage with us the DAO's <3 Cardano Telegram group Daniel set up so we can talk through this. We should not have to change our proposal due to constraints built into the milestone tracker. We're trying to work in good faith here to ensure we're clear with deliverables and our intent. \nOutputs:\nComprehensive Market Research Report that includes:\nKey insights on investor needs\nStrengths and weaknesses of existing solutions\nProject stakeholder requirements.",
+      "criteria": "The research report will contain recommendations and guidelines to inform the design and features of the Proof of Concept (PoC).",
+      "report": "Market Research Report: https://sundaeswap-finance.medium.com/token-launch-market-research-report-0c3992d58890\nDownload link for pdf of report located at bottom of Medium post.\nTwitter announcement: https://twitter.com/SundaeSwap/status/1725564936435442000\nDiscord Community Announcement: https://discord.com/channels/830939534174453800/830948250298875905/1175123774165766185",
+      "kinds": [
+        "doc",
+        "social"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 52000,
+      "promise": "Note: this Milestone combines Milestones 2 & 3 from our original proposal\nA working PoC for automated price discovery platform\nFeedback and data gathered from testing of live automated product discovery platform.",
+      "criteria": "The PoC adequately demonstrates the feasibility of our proposed solution by allowing a test token to be launched and interacted with by users.",
+      "report": "Public testnet release: https://app.preview.sundae.fi/#/discover\nTwitter testnet announcement: https://twitter.com/SundaeSwap/status/1725564937395908820\nDiscord testnet announcement: https://drive.google.com/file/d/1GZ8vfEKc-o1avXptfvHeaASPD8yZOb5f/view?usp=sharing\nVideo walkthrough as part of our Monthly YT video: https://www.youtube.com/watch?v=L-A932UP8C0&t=485s\nUser feedback captured (ongoing): https://docs.google.com/document/d/1itAJeLJRd3KvsVe_H4-QK6UhF6Pm_JI9O0aYog_Ld9A/edit#heading=h.7ffemnebho0a\nAdditionally, we found through user interviews that in general that the concept of Liquidity Bootstrap Events itself requires a bit of explanation and education. For that, we decided to implement a guided walk-through feature that users can enable/disable and experience a step-by-step tutorial on participating in a Taste Test. While it wasn't necessarily part of the project's stated scope, we feel it was worth the extra effort to build to alleviate any future confusion for users trying to participate in Taste Tests.\nYou can check out the Taste Test with the walk-through guides enabled here: https://app.v3.preview.sundae.fi/#/discover?guide=ttexpl",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 52000,
+      "promise": "・Feedback and data from pilot testing\n・Proof of partnership in the form of a formal partnership agreement\n・Pilot testing report",
+      "criteria": "Pilot test is publicly launched with our first customer.",
+      "report": "Signed contract: https://drive.google.com/file/d/1vxXZqAxAky85qnm_haCi3QdKRLNurada/view?usp=drive_link\nTwitter announcement: https://x.com/SundaeSwap/status/1773447390172680287\nYouTube video profiling the product and teasing the first campaign: https://www.youtube.com/watch?v=ZH6O5Xq5p9Q",
+      "kinds": [
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 52000,
+      "promise": "・Identify a set of improvements to be made to the contracts, the backend infrastructure, and frontend user experience, based on user feedback during the first launch. Implement and merge these improvements.\n・The final output of this stage is a production-ready platform.",
+      "criteria": "Real world user feedback is collected, prioritized, and a reasonable subset implemented.",
+      "report": "Note to reviewers: This is the same submission that was previously submitted. A member of the team inadvertently marked the discovery-service GitHub repo, linked below, as private and it has since been made public again, and will continue to remain public. Our apologies for the confusion.\nEvidence of Milestone 4 Completion:\n・Feedback Documentation:\n・Detailed documentation containing feedback collected from end users during the first launch, specifically from the Clarity DAO team:\n・ Message from Clarity DAO Team\n・Screenshots of feedback received from Clarity Discord\n・Screenshot of feedback request in Clarity Discord: Feedback Request\n・https://drive.google.com/file/d/11q7Shi3kZ3jcCuMOb_qpFzApd5XolCfd/view?usp=sharing\n・https://drive.google.com/file/d/1T4PBbWNcKb6Bq-Gam0qWAW9hX-M7n0Ui/view?usp=sharing \n・Implementation Evidence:\n・Feature request and corresponding PR Screenshot:\n・Representation of how much ADA has been deposited over time: PR #991\n・https://drive.google.com/file/d/1D1Hc702QfU6vBIQjJ7OzCJDjVw5FxxC1/view?usp=sharing \n・Detailed list of most recent transactions: PR #992\n・https://drive.google.com/file/d/1Bk_i5dK2wzKkSrB_qgergpKPZgHgv5BJ/view?usp=sharing \n・Roadmap for future plans: PR #1016, PR #1049, and PR #685\n・https://drive.google.com/file/d/1FdcCP9T_OIChLyaA--A9GfiGWWXoizLW/view?usp=sharing https://drive.google.com/file/d/1fpM4vKyc1dsbHDwZyBI1nEAsJnpq4ouX/view?usp=sharing \n・https://drive.google.com/file/d/1Hkrf_vx00Tr3Unja3o8uR57ilc-Yk5gr/view?usp=sharing https://drive.google.com/file/d/178WpdkfiO7M6xSiAYCve-ClXlx_0rFc1/view?usp=sharing \n・Partner Carousel: PR #1016\n・https://drive.google.com/file/d/1E8NkEsTS6lb4hjZQa2rzIMCNIAQqYTJw/view?usp=sharing \n・Vesting Schedule: PR #1049\n・https://drive.google.com/file/d/1lME4wsGr4h9AGcVjKMPnpG1CUeQPhKSb/view?usp=sharing \n・Customizable Theming: PR #957, PR #958, and PR #961\n・https://drive.google.com/file/d/10OO_XBLxtdjm1vm8qhpYIV0y2Nsgppg2/view?usp=sharing \n・https://drive.google.com/file/d/1W7FHgA0nAtqoJ4dRDx0fRZ7azSQbZ",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 46,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 52000,
+      "promise": "・Conduct a second token launch with another client, leveraging the full production platform with committed improvements from the initial token launch.\n・Formal announcements on our public channels about the launch.",
+      "criteria": "The platform is live and operational within the Cardano ecosystem and being used by a second token launch partner.",
+      "report": "Thank you for your diligence and thoroughness in reviewing the milestones for our project. We appreciate the constructive feedback provided throughout the process.\nWith the recent approval of Milestone 4, we are resubmitting the evidence for Milestone 5, which had already received your tentative approval pending the resolution of the previous milestone:\n・Formal Statement of Work with REITCircles: \n・https://drive.google.com/file/d/1f7-D-mGoQE1BVHPQp376iSvtzW7Yc6oX/view?usp=sharing \n・Final Smart Contract Source Code: \n・https://github.com/Anastasia-Labs/discovery\n・Twitter Post About Second Campaign:\n・https://twitter.com/SundaeSwap/status/1784587873460826306\n・YouTube Walkthrough:\n・https://www.youtube.com/watch?v=ZH6O5Xq5p9Q\n\nWe look forward to finalizing Milestone 5 and appreciate your positive feedback on this submission. Please let us know if there are any further questions or clarifications needed.\nThank you again for your attention and support.",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 50000,
+      "promise": "Data on platform performance, liquidity, price stability, and user feedback from our two pilot launches.\nProject video, project documentation, project source code.",
+      "criteria": "Platform is launched publicly and accessible to 3rd parties interested in launching tokens.\nPublic links to project, documentation, source code and open source license.",
+      "report": "This final closeout report summarizes the accomplishments, key learnings, and detailed evidence from the Sundae Labs Automated Price Discovery project.\nThroughout the project, we successfully conducted Liquidity Bootstrapping Events (LBEs) for Clarity and REIT, achieving the intended goals of fair and transparent price discovery while generating significant liquidity. The final report contains specific data on platform performance, liquidity trends, price stability, and user feedback gathered during these events, as requested in the feedback we received.\nIn response to the reviewers' request for clarification, we have provided screenshots, quantitative data, and additional context for each of the key metrics:\n・Platform Performance: API response times, liquidity data, and usage metrics are thoroughly detailed in the report.\n・User Engagement: We conducted multiple AMAs, gathered user feedback, and have included specific metrics around participation in these community activities.\n・Price Stability and Liquidity: Charts and data visualizations are provided in the report to showcase the price and liquidity trends during the LBEs, highlighting the effectiveness of the \"Taste Test\" platform.\n\nThe project's success is evidenced by the completion of two LBEs, the lessons learned, and the refinements implemented. We believe this submission meets the reviewer's expectations and demonstrates that \"Taste Test\" has accomplished its primary objectives.\nSupporting Evidence:\n・Final Closeout Report: https://drive.google.com/file/d/1HiV1OxTrXX-W7Dw0H2VK-QaFzSJx607_/view?usp=sharing \n・GitHub Repository: https://github.com/Anastasia-Labs/discovery\n・Closeout Video:https://www.youtube.com/watch?v=VwJuP1CXiTo\n・Public Link to Project with Source/Documentation/License: https://sundae.fi/catalyst-proposals/automated-price-disco\n・Links to concluded Clarity and REIT Taste Tests\n・https://app.sundae.fi/taste-test/clarity\n・https://app.sundae.fi/taste-test/reitcircles\n・Links to Twitter and Discord a",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 18,
+      "cut": true
+    }
+  ]
+}

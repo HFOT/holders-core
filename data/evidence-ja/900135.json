@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "液体のステーキングのSolidityの契約、テストおよびNPMのパッケージ。 システムがどのように機能するかに関するドキュメンテーションが格納されます。 固着固有の側面に関する基本的な文書も出力として提供されます.",
+      "criteria": "スマートコントラクトは、すべてのテストケースとバインディングを NPM に渡します。 実行されるテストはカバーします:\n- ADA預金\n- 報酬の獲得\n- 報酬の撤退.",
+      "report": "Milkomeda Liquid Staking devnets の最初の内部テストの成功した完了を報告できることを嬉しく思います。\n\nスマートな契約およびテスト:液体のステーキングの固着の契約はMilomeda c1-devnetで開発され、徹底的にテストされ、すべてのテスト ケースを渡しました。 ADAの預金、報酬の獲得、および報酬の出金などの重要な機能に関するテスト。 対応するバインディングはNPMパッケージに公開され、将来の開発のための簡単な統合を保証します。\nhttps://www.npmjs.com/package/@dcspark/milkomeda-liquid-staking\n当社のチームは、液体ステーキング(カルダノプール→ミルクオメガブリッジ→ミルクオメガEVM)のブリッジサイド実装ですべてのQAテストスイートをカバーするために今準備しています。\nドキュメンテーション:包括的なドキュメンテーションは、包括的なシステム操作とSolidity固有の側面の両方を詳細に作成されています。 これは、液体のステーキング契約のメカニズムを理解するか、それに基づいて構築するために探している人のための有用なリソースとして役立ちます。\nhttps://github.com/dcSpark/milkomeda-documentation/tree/liquid-staking/docs/cardano/liquid-staking\n\nMainnet リリースの準備: 成功した devnet テストを投稿します。, 私たちのチームは今、メインネットリリースの準備の最終段階にあります。.\n\nこの証拠のマイルストーンの遅延報告に誠意をこめてお詫び申し上げます。 当社のチームは、すべての要件を満たし、橋と契約の両面で徹底的なテストを実施し、NPMの展開を成功させています。 そこで、次のPoMを提出する予定です."
+    },
+    {
+      "no": 2,
+      "promise": "ArbitraryExecution により、Solidity 契約に関する監査報告を行います。\nhttps://www.arbitraryexecution.com/",
+      "criteria": "監査が完了し、発見された問題が対処されました",
+      "report": "包括的なスマートコントラクト監査の結果を発表してくださっています。 詳細なレポートでは、当社の厳格なテスト手順を紹介し、スムーズなメインネットリリースの準備として、EVM Liquid Stakingプロジェクトの安全性と信頼性を保証します。\n\n監査:\nhttps://www.milkomeda.com/docs/liquid-staking-final-report-updated.pdf"
+    },
+    {
+      "no": 3,
+      "promise": "ADAをステーキングし、ミルクオメガダバリデータとブリッジコードへの報酬を引き出すためのサポートを追加",
+      "criteria": "CardanoのDAOによって獲得されたステーキング報酬は、サイドチェーン所有者に正しく支払われます",
+      "report": "[間違ったプロジェクトIDによる再送信]\n\n旅程で重要なマイルストーンを発表しよう! エポック 82 では、Cardano Stake プールからの報酬の受付を成功させました。 これらの報酬は、Milkomeda Bridge を通じて EVM Liquid Staking にシームレスに配布されています。 私たちのベータテスターは、これらの報酬をミルクオメガダ液体ステーキングDAppから直接主張しました。\n\nこのマイルストーンの証拠を否定できないようにするため、Liquid Staking DAppを介して報酬クレームプロセスを実証するビデオを記録しました。 ユーザーのウォレットにstMADA値が増加しているのを見ることができます。\n\nその他:\nCardano 側 - https://preprod.cexplorer.io/pool/pool1nfwteq3rsk6uzxwncj7vdaqggkd263n038hf6xhwrj92v0cs48x/rewards#data <-After Epoch 81 945.68 は Bridge staking アドレスに配布されました)\nhttps://explorer-devnet-cardano-evm.c1.milkomeda.com/tx/0x2cd9860b714919e4fb0f3369c2f5e426e6ed5a4ea283994f6ac9e647324689a2 <- 移行 945.683157 ADA ミルクオメガ橋から液体スキャニングプールからの報酬\n\nまた、Liquid Staking docs の初期バージョンを提示いたします。 今後は、8月初週に液体ステーク契約の円滑な公開を確実にするために、ガイドの精錬と強化を続けていきます!\nDocs: https://milkomeda-documentation-derbwkxhz-nhaga.vercel.app/ (docs.milkomeda.com よりリリース)\n\nビデオへのリンク: https://drive.google.com/file/d/17RTzThSmDwVjyRgI9UCQmUrZtqUQkzYI/view?usp=sharing"
+    },
+    {
+      "no": 4,
+      "promise": "ミルクメダC1の液体のステーキングサポート\n彼らのミルクADAで素晴らしい報酬を獲得",
+      "criteria": "液体のステーキング契約と相互作用するためのWebインターフェイスを作成します。 インターフェイスは、ユーザーがミルクADAをstMilkADAを受け取ることを可能にします。 サンゴ礁の報酬は、生態系のアプリケーションで使用する能力を除外するものではありません.",
+      "report": "ミルクメダ液ステーキのメインネット公開発売がスタートするのをお知らせします。 私たちの開発チームは、Cardano Mainnetの液体のステーキングプロトコルとMilkomedaブリッジを統合し、公式リリースは8月の最後の週にスレートされています。\n\nエコシステムをさらに拡大し、最近、ミルクメダ・カルダノ・ステークプールを設立しました。 詳しくはこちらをご覧ください。\nhttps://cexplorer.io/pool/pool1gq07hfmull6etsr23l36cvwgfkym6jq2dz5vz4y446yat70t\n\nPoM4の出力:\nウェブサイト: 液体ステーク - Milkomeda(メインネットリリースが近日公開):\nhttps://liquidstaking-dev.milkomeda.com/\n契約: ミルクオメガダ契約アドレス\n0xC0DB209F2D84706710a50AE410033B30c0F47192\n監査レポート:最終液体ステークレポート https://www.milkomeda.com/docs/liquid-staking-final-report-updated.pdf\n\n機能に深いダイビングのために、当社のミルクオメガダ液体ステークDApp Walkthroughをご覧ください\nhttps://drive.google.com/file/d/1YVgevGTQbmxLQAURVpLn8OWFmIIV21yY/view?usp=sharing\n\n今後数週間で、メインネットでLiquid Stakingを起動するだけでなく、堅牢なマーケティングキャンペーンを開始し、開発者やエンドユーザーのための包括的なドキュメントをロールアウトするだけでなく、そうではありません。 メインネット展開後、PCRをシェアします."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "MLabs - Efficient Contract Upgrades with Yielding Tx Pattern",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 49983,
+      "promise": "-Design document outlining the purpose, architecture, and components of the library\n-Specification document describing the soundness of the design approach",
+      "criteria": "-Design document provides a coherent overview of the of the library and includes visual representations such as transaction diagrams\n-Specification document clearly describes the soundness of the design approach",
+      "report": "NOTE\n\nWe received a rejection with this submission, however, we are resubmitting it because the reviewer seemed to be referencing a project other than ours - or at least referencing a separate repo via the link provided and pointing to an issue that was not clear.\n\nPer the reviewer:\n\"Thank you for your PoA M1 submission. I notice that the transaction diagram as per this link <https://github.com/naddison36/tx2uml> appears to be modeled on an Ethereum structure. To fulfill your acceptance criteria, please provide a Cardano-specific transaction diagram Once created, please specify its location within the design document.\"\n\nIf this is not simply an oversight, please provide further information/description about the issue including links to where in our YTxP repo that matter lies. That way we can understand clearly and address it if it is not just an oversight.\n\n---------\n\nEVIDENCE\n\n-Collection of markdown documents in a publicly available GitHub repository comprising the design document. See these documents:\n\nhttps://github.com/mlabs-haskell/ytxp-lib/blob/master/docs/README.md\nhttps://github.com/mlabs-haskell/ytxp-lib/blob/master/docs/control-scripts/README.md\nhttps://github.com/mlabs-haskell/ytxp-lib/blob/master/docs/types/README.md\n-Collection of markdown documents in a publicly available GitHub repository comprising the specification document. See the files contained throughout these project directories:\n\nhttps://github.com/mlabs-haskell/ytxp-lib/tree/master/docs/control-scripts/yielding\nhttps://github.com/mlabs-haskell/ytxp-lib/tree/master/docs/flows\nhttps://github.com/mlabs-haskell/ytxp-lib/tree/master/docs/templates",
+      "kinds": [
+        "code"
+      ],
+      "links": 7
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 59978,
+      "promise": "A fully configured GH repo with\n-Necessary nix flakes integrations\n-Makefile\n-Code formatting\n-Hercules CI\n-Haddock for automated documentation",
+      "criteria": "-Repo is properly initialized and structured\n-Makefile successfully builds the library\n-Code formatting is consistent\n-Hercules CI successfully and reliably runs\n-Haddock documentation is accessible",
+      "report": "EVIDENCE\n\n1) Link to repo containing a completed setup. \nhttps://github.com/mlabs-haskell/ytxp-lib\n\nNotice that it contains a full configuration including a Makefile that successfully builds the library as well as the Haddock documentation. The Makefile also handles code formatting and linting:\nhttps://github.com/mlabs-haskell/ytxp-lib/blob/master/Makefile\n\nIt also contains Nix Flakes integrations such as Hercules CI and Haddock. The flake.nix file defines how these workflows are managed by our main Nix configuration.\nhttps://github.com/mlabs-haskell/ytxp-lib/blob/master/flake.nix\n\n2)Hercules CI output incorporated into the repo.\n\nTo see CI working you can just review a recent commit:\nhttps://github.com/mlabs-haskell/ytxp-lib/commit/a85b3727c4abd0420d68e549db7d1da6ee0ce090\n\nOr navigate to the dashboard. All CI jobs can be seen on the dashboard - note that some are not related to this proposal scope. \nhttps://hercules-ci.com/github/mlabs-haskell/ytxp-lib\n\n3)Link to Haddock documentation.\nHosted Haddock documentation is available here:\n\nhttps://mlabs-haskell.github.io/ytxp-lib/\n\n4)Summary report outlining the accomplishments:\nA summary report is available here:\n\nhttps://docs.google.com/document/d/1iUc62kshFxr-aeDou0N8OPB9mMxQlZht/edit?usp=sharing&ouid=114449812889313478738&rtpof=true&sd=true",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 7
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 39986,
+      "promise": "-Library containing YTxP types, along with instances for serialization, pretty printing, and testing, that correspond both to `cardano-api` and `plutus-ledger-api` types, sufficient to support development of YTxP-style protocols in many on-chain languages (plutus-tx, plutarch) and off-chain frameworks (sc-tools, atlas)\n-Round-trip and serialization golden tests\n-Documentation",
+      "criteria": "-Library components must be fully functional, supporting YTxP type serialization, deserialization, and pretty printing capabilities.\n-Library should pass all round-trip and serialization tests with proper error handling.\n-Documentation should cover all YTxP types provided by the library and also cover setup and configuration. \n-Library must be compatible with both cardano-api and plutus-ledger-api.",
+      "report": ":: UPDATES ::\nInvalid/Malformed Data\nThe ScriptExporter uses Ply, which in turn leverages the cardano-binary and plutus-ledger-api libraries for serialization and deserialization. These packages are maintained by Intersect and would be the best sources to refer to for such test cases.\n\n:: UPDATES ::\nEnhanced Documentation\nWe have significantly improved our documentation to provide detailed explanations of each YTxP type as well as comprehensive setup and configuration instructions. You can now review our publicly hosted Haddock documentation at:\n\nhttps://mlabs-haskell.github.io/ytxp-sdk/\n\nDeprecation of ControlParameters.hs and Adoption of Ply\nRegarding the deprecated ControlParameters.hs module, which was originally designed to bundle the YieldingScript with the SDKParams to represent what was compiled (see here for more information: https://github.com/mlabs-haskell/ytxp-lib/tree/master/docs/types#control-parameters), we have transitioned to using the ScriptExport type from the liqwid-script-export module (https://github.com/input-output-hk/xsy-liqwid-libs/tree/main/liqwid-script-export). This approach leverages Ply to manage serialization and deserialization, thereby eliminating the need for the previous ControlParameters-based functionality, and it does not affect compatibility with cardano-api or plutus-ledger-api, as the exported yielding scripts—functionally identical to the previous outputs—can be used seamlessly with these libraries (for example, see this exported JSON output: https://github.com/mlabs-haskell/ytxp-lib/blob/master/exported-scripts/ytxp-stakeValidator.json).\n\n:: EVIDENCE ::\n\nCode Repositories and Documentation: \n\nLinks to the publicly available GitHub repository containing the ytxp-sdk library codebase.\n\nThe main repo is of course available here https://github.com/mlabs-haskell/ytxp-sdk and serves as the main evidence.\n\nThe most relevant links therein for this milestone are:\n\nYTxP types alongside instance for serialization, pretty-printing etc",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 19993,
+      "promise": "Development of the primary components of the ytxp-lib core library, including:\n・Yielding scripts: scripts (validators, minting policies, and staking validators) that are compiled against application-specific currency symbols and are capable of yielding to a set of authorized scripts\n・Module Integration: Proper integration of all modules (Validators, Minting Policies, Helpers, etc.) to ensure seamless interaction within the library.\n・Command line utility to read in a JSON file containing application-specific scripts to be wrapped and emit the YTxP control scripts",
+      "criteria": "-Comprehensive Implementation: Each component and YieldingScripts\n-Module Compatibility: All modules should be integrated properly, demonstrating seamless interaction and data flow between the components without any conflicts or errors.\n-Code Integrity and Style: The implementation should follow best coding practices.\n-Testsuite and documentation: detailed documentation describing the modular design pattern, test suite testing happy path performance and potential attacks",
+      "report": ":: UPDATES ::\nA video demonstration of our test suit passing as intended\nhttps://www.youtube.com/watch?v=XtkYljgB8tM\n \n:: EVIDENCE ::\nDirect links to the publicly-available open-source ytxp-lib library\n-main repo:\nhttps://github.com/mlabs-haskell/ytxp-lib\n\n-yielding scripts & utils. These files contain Plutarch implementations of yieldingV (yielding validator), yieldingMP, yieldingSV and the core logic used by all of them (yieldingHelper) as well as linker functions to apply application-specific params. The separation keeps script templates, core logic, and parameterization separate while the linking functions in YTxP.hs provide proper module integration.\nhttps://github.com/mlabs-haskell/ytxp-lib/blob/master/ytxp-plutarch/src/Cardano/YTxP/Control/Yielding/Scripts.hs\nhttps://github.com/mlabs-haskell/ytxp-lib/blob/master/ytxp-plutarch/src/Cardano/YTxP/Control/Yielding/Helper.hs\nhttps://github.com/mlabs-haskell/ytxp-lib/blob/master/ytxp-plutarch/src/Cardano/YTxP.hs\n\n-command line utility which supports generating scripts from JSON files as well as optional tracing\nhttps://github.com/mlabs-haskell/ytxp-lib/blob/master/ytxp-plutarch/app/export/Main.hs\n\nSummary report outlining the accomplishments\nhttps://docs.google.com/document/d/1uy3TJWCi7m6jDptd7OTcS4tiJdYnUOLZ/edit?usp=sharing&ouid=114449812889313478738&rtpof=true&sd=true",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 7
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 29992,
+      "promise": "Comprehensive testing and detailed documentation for both the ytxp-lib and ytxp-sdk libraries, ensuring they meet operational standards and are user-friendly for developers. This will include:\n-API documentation\n-Tutorial Guides and How-Tos\n-A video demonstration and closeout report",
+      "criteria": "-Test Coverage: On-chain tests for the core library -Documentation Clarity and Completeness: Documentation must be clear, comprehensive, and technically accurate.\n-Tutorial Usability: Tutorials must guide new users through setting up and discuss deployment approaches\n-Closeout Report: Video demonstration and report as required by the Catalyst rule book.",
+      "report": "EVIDENCE\n\n-Direct links to the documentation and guides\nhttps://github.com/mlabs-haskell/ytxp-lib/tree/edgr/m3?tab=readme-ov-file#ytxp-executable\n\n-Direct links to the test suite\nhttps://github.com/mlabs-haskell/ytxp-lib/tree/edgr/m3/ytxp-plutarch/test\nhttps://github.com/mlabs-haskell/ytxp-sdk/blob/master/ytxp-sdk/test/Main.hs\n\n-Link to closeout report and closeout video posted to YouTube.\nhttps://www.youtube.com/watch?v=ekpltuosC6g\nhttps://drive.google.com/file/d/1RE68PLyGtBZm3u4TebvvRu0BcG73lr9e/view?usp=sharing\n\n-Summary report outlining the accomplishments\nhttps://docs.google.com/document/d/1mVwCkByAtbWmv2jGJtoNF3mPU0sjDu0u/edit?usp=sharing&ouid=114449812889313478738&rtpof=true&sd=true",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

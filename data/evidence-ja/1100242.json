@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "活動:\nスコープと目的を定義するプロジェクトイニシアチブ(すべての3 CardanoBIドメインが対象となります:コア、アナリティクス、パートナー)\nSDKの詳細な技術要件を収集する(当社のJavascript SDKの開始点)。\n包括的なSDKアーキテクチャと設計計画の作成\n必要なツールとライブラリで Python 開発環境を設定します.",
+      "criteria": "明確な目的とスコープを持つよくドキュメント化されたプロジェクト計画:\n・Githubプロジェクトは、詳細なタスク、マイルストーン、ロードマップ、優先ボードで構成されています。\n・Python 3 SDKの設計、開発、テスト、リリースをカバー\n・Python 3 SDK のスコープは、Node.js/Javascript SDK (既にリリース済み) に似ており、CardanoBI API Instance が公開するエンドポイントをすべてカバーします。 当社のコアドメイン、当社のBIドメイン、およびパートナードメインからすべてのエンドポイント\n・テストタスクには、各エンドポイントのユニットテスト、統合テスト、パフォーマンステストが含まれます",
+      "report": "こんにちはチーム、\nM1のマイルストーン完了の証拠を詳述する.pptx文書は、下記のリンクをご覧ください。\nhttps://github.com/cardanobi/ProjectCatalyst/tree/master/Fund11/1100242-Python-SDK/M1\nベスト,\nトーマス"
+    },
+    {
+      "no": 2,
+      "promise": "活動:\n・SDKのコア機能を開発:\n\n・認証・認可(JWTトークン)\n・SDKがCardanoBI API Instancesに到達できるようにするRest API Connectivity\n・CardanoBI APIエンドポイントごとに実行境界を確保する物流処理ユニット\n\n・上記開発項目のテストユニット",
+      "criteria": "すべてのユニットテストが成功しています.",
+      "report": "こんにちはチーム、\n下記のリンクから、M2のマイルストーン完了の証拠を詳述するGoogle Docをご覧ください。\nhttps://docs.google.com/current/d/12qIh6jtRxivO1Q64nqY0yickVCouLnviIHV1v q9hFA/edit?usp=sharing\n\nさらに、次の項目についてより記述的な情報をご提供いただくために第2次審査者の要求に従って、これらの活動が行われる正確なコード行番号へのリンクは下記をご覧ください。\n・認証・認可(JWTトークン):\n\nhttps://github.com/cardanobi/cardanobi-python/blob/master/utils/api client.py#L28\nTalkEnglishのオフライン版をダウンロードし、8000を超える音声ファイルと800ページを超えるレッスンで英語漬けになって、もっと速く英語を話せるように勉強しよう。そうすれば、インターネットに接続していなくても勉強ができ、MP3プレーヤーを使っていつでも音声ファイルを聞くことができます。英語ダウンロードのページにいって、今日さっそくダウンロードしましょう!\n・SDKがCardanoBI API Instancesに到達できるようにするRest API Connectivity:\n\nhttps://github.com/cardanobi/cardanobi-python/blob/master/utils/api client.py#L42\nTalkEnglishのオフライン版をダウンロードし、8000を超える音声ファイルと800ページを超えるレッスンで英語漬けになって、もっと速く英語を話せるように勉強しよう。そうすれば、インターネットに接続していなくても勉強ができ、MP3プレーヤーを使っていつでも音声ファイルを聞くことができます。英語ダウンロードのページにいって、今日さっそくダウンロードしましょう!\n・物流処理ユニット:\n\nすべての処理単位は2つのファイルで見つけることができます:\nhttps://github.com/cardanobi/cardanobi-python/blob/master/domains/core.py\nhttps://github.com/cardanobi/cardanobi-python/blob/master/domains/bi.py\nこれらのファイルでは、各 CardanoBI API エンドポイントに REST 呼び出しを実際に実行する全ての関数/処理ユニットがあります。\n\nこの助けを借りてほしい。\nベスト,\n\nトーマス"
+    },
+    {
+      "no": 3,
+      "promise": "活動:\nインテグレーションやパフォーマンステストなどの広範なテストを実施します。\nセットアップガイドやAPIリファレンスなど、包括的なドキュメントを作成します。\n実際の利用事例の提供\nコミュニティのフィードバックのためにベータ版を解放して下さい。\nSDKの公式バージョンを立ち上げる.",
+      "criteria": "CardanoBI APIとの統合が成功し、厳しいテストで実証されています。\n高いコードカバレッジと解決された問題で渡るすべてのテスト。\nさまざまなユーザーレベル(docs.cardanobi.io)の完全かつアクセス可能なドキュメント。\n肯定的なコミュニティフィードバックとベータ版リリースからの懸念に対処しました。\n安定的かつ公正なリリース.",
+      "report": "こんにちはチーム、\n\nプロジェクトのクローズアウトレポートへのリンクは下記をご覧ください。\nhttps://docs.google.com/document/d/1todHO1RnkmgM5wyerHD3kyZhT5end24PtMPWvlo7yZU/edit?usp=sharing\n\nプロジェクトのクローズアウトビデオへのリンクは下記をご覧ください。\nhttps://www.youtube.com/watch?v=viwjwqe4WYs\n\nPCR の詳細は、最終マイルストーンによるアクセダンス基準を検証するための具体的な証拠は次のとおりです。\n\n1.Integrationテスト結果(スクリプトと出力)\nスクリプト: https://github.com/cardanobi/cardanobi-python/tree/master/test\n出力: https://github.com/cardanobi/cardanobi-python/tree/master/test/output\n\n2. ドキュメントへのリンク (docs.cardanobi.io) は、Python 3 のコードのサンプルを示しています\n例:https://docs.cardanobi.io/docs/core-domain/Accounts/\n\n3.Python SDKのgithubリポジトリへのリンク\nhttps://github.com/cardanobi/cardanobi-python/tree/master\n\n4.SDKの使用方法を説明するチュートリアルへのリンク。\nhttps://docs.cardanobi.io/docs/tutorials/python-sdk-tutorial\n\n私たちのコミュニティへのコミュニケーションの面では、専用のブログをご覧ください。\nhttps://docs.cardanobi.io/blog/python-rust-sdks\nhttps://docs.cardanobi.io/blog/python-rust-tutorials\n\nベスト,\nトーマス"
+    }
+  ]
+}

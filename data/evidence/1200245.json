@@ -1,0 +1,66 @@
+{
+  "title": "Wanchain's Cardano Bridge Audit",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "A formal agreement with external auditing team.",
+      "criteria": "An external auditing team has agreed to audit Wanchain’s Cardano Bridge’s Haskell smart contracts on-chain code. Wanchain provides the external auditing team with all the information and documentation necessary to conduct the audit.",
+      "report": "Milestone Outputs: A formal agreement with external auditing team.\nEvidence of milestone completion: The external auditor will issue a formal document certifying that they have been engaged to audit Wanchain’s Cardano Bridge’s Haskell smart contracts on-chain code. Wanchain will publish this document on Twitter or Github.\nProof of Achievement: Wanchain published a formal document on X/Twitter. The document was issued by the external auditor and certifies that they have been engaged to audit Wanchain's Cardano Bridge on-chain code.",
+      "kinds": [
+        "social"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 75000,
+      "promise": "An initial audit of Wanchain’s Cardano Bridge’s Haskell smart contracts on-chain code, conducted by the external auditing team.",
+      "criteria": "The external auditing team conducts a line-by-line review of Wanchain’s Cardano Bridge’s Haskell smart contracts on-chain code. Initial feedback from the external audit team is received.",
+      "report": "For Milestone 2, the acceptance criteria required that:\n・the external auditing team conduct a line-by-line review of Wanchain’s Cardano Bridge’s Haskell smart contracts on-chain code.\n\nA summary post, published on Github, listing the total number of found issues and their designation can be found here: https://github.com/wanchain/cardanoCatalyst/tree/main/project-1200245/milestone2",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 50000,
+      "promise": "Updated audit from the external auditing team that includes feedback about any new code meant to resolve specific found issues.",
+      "criteria": "The external auditing team conducts a line-by-line review of Wanchain’s Cardano Bridge’s Haskell smart contracts on-chain code, including any new code meant to resolve specific found issues. Updated feedback from the external audit team is received. This back and forth continues at least until no issues designated as \"Critical\" remain.",
+      "report": "For Milestone 3, the acceptance criteria required that:\n・the external auditing team conduct a line-by-line review of Wanchain’s Cardano Bridge’s Haskell smart contracts on-chain code until no unresolved issues designated as \"Critical\" remained.\n\nA summary post, published on Github, listing all findings, their designation, and their status can be found here: https://github.com/wanchain/cardanoCatalyst/tree/main/project-1200245/milestone3",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 12500,
+      "promise": "A summary audit report and open source, audited Haskell smart contracts.",
+      "criteria": "With the audit completed, the audited Haskell smart contracts that power Wanchain's Cardano Bridge will be open source via Apache License, Version 2.0 or similar license.",
+      "report": "For Milestone 4, the acceptance criteria required that:\n・the audit be completed;\n・the audited Haskell smart contracts that power Wanchain's Cardano Bridge be made open source.\n\nThe summary audit report can be found here: https://github.com/wanchain/cardanoCatalyst/blob/main/project-1200245/milestone4/Audit%20Report%20Summary%20-%20TxPipe.pdf\nThe open-sourced smart contracts can be found here: https://github.com/wanchain/cardano-crosschain-evo",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 37500,
+      "promise": "A project closeout report published on Medium or Github and a final closeout video uploaded to YouTube or Vimeo.",
+      "criteria": "Wanchain will publish a project closeout report and final closeout video to provide a summary of the project, including but not limited to:\n・Name of project\n・Project URL on IdeaScale/Fund\n・Project Number\n・Name of project manager\n・Project starting date\n・Project finishing date\n・Deliverables and evidence\n・Number of identified issues and their designation\n・Number of unresolved issues and their designation\n・Final thoughts/comments",
+      "report": "For the Final Miletone, the acceptance criteria required that a project closeout report be published on Medium or Github and that a final closeout video be uploaded to YouTube or Vimeo.\n・Link to the project closeout report on GitHub: https://github.com/wanchain/cardanoCatalyst/blob/main/project-1200245/milestone5/README.md\n・Link to the final closeout video on YouTube: https://www.youtube.com/watch?v=er8EBISDTV0",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

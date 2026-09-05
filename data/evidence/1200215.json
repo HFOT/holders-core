@@ -1,0 +1,71 @@
+{
+  "title": "Staking Basket Bot Open-source",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 50000,
+      "promise": "Staking Baskets are a Cardano smart-contract that allows you to delegate to over 100 SPOs at the same time. This stake distribution needs to be updated based on the Basket creators selection. There's no currently no automated process for this.\nIn this milestone we'll create a techincal specification that automates transactions that Basket creators need to submit every epoch for efficient Basket operation. This technical specification will detail what features the Staking Basket bot has, and how it connects to the Cardano smart-contract.",
+      "criteria": "Acceptance Criteria:\n・Must submit a technical specification that details what features the Staking Basket bot will have.\n・This specification must also detail how it connects to the Cardano smart-contract.",
+      "report": "Here is the Staking Basket bot technical specification: \nhttps://drive.google.com/file/d/14rhrCNxwMKMuuzyaKBalbl4P2p6OxbCF/view?usp=drive_link",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 50000,
+      "promise": "The Staking Basket smart-contract allows users to deposit ADA into it for multi-delegation. Basket creators need to rebalance the ADA equally among all of the SPOs that are in the Basket.\nIn this milestone we'll create endpoints that allow someone to rebalance the stakepool. These endpoints will be created in TypeScript. After a user selects a predefined list of SPOs this endpoint can be called using that list to rebalance the stake in the Basket to the predefined list. As these are the two most important importants, we will label this the MVP of the Staking Basket bot.\nStaking Baskets also need to have the exchange rate updated once per epoch. This exchange rate is already in the datums of the smart-contract. We're creating an endpoint in TypeScript to update the exchange rate.\nTo show these inputs working in action, we'll also output a video that shows them working. We'll also output some text to show what these endpoints do, and how they interact with the Basket.",
+      "criteria": "Acceptance Criteria:\n・Video showing us using the update exchange rate endpoint, and the rebalancing endpoint. This will rebalance the stake in the Basket, and update the exchange rate.\n・We'll submit on-chain evidence of the exchange rate updating, and the stake rebalancing in the Basket.\n・We must submit some text to reviewers that shows how these inputs work, and how they are integrated with the smart-contract.",
+      "report": "・Link to a video showing the two endpoints in action \n・https://www.youtube.com/watch?v=U5xlxhAW-Ew\n・Link to on-chain evidence of the Staking Basket stake rebalance that's shown in the video Cardano's preview network.\n・https://preview.cexplorer.io/tx/bbe5d2adc5aacd892e0f71abdf25f0ee739f547a26d7d4e2a07ca1820e8f3dc2\n・https://preview.cexplorer.io/tx/62e1081dce075482b41c1898de46f14cf44f5893d09d3cef7716ea0b618034a8\n・https://preview.cexplorer.io/tx/13c9ccc0215f98bf6fb995e052bb14e443b8059aca06074ac3bd811f1ed9fedf\n・Link to on-chain evidence on Cardano's preview network of a Staking Basket exchange rate update that's shown in the video. This evidence will be linked to a Cardano blockchain explorer on Cardano's preview network.\n・https://preview.cexplorer.io/tx/799eba4aa9e68041a0a015b1fdeb851ea60baddb464aa683afc062e0e89bcc39\n・Link to a PDF file that shows reviewers what these typescript endpoints do, and explains how they can be integrated with the Staking Basket smart-contract. \n・https://drive.google.com/file/d/14rhrCNxwMKMuuzyaKBalbl4P2p6OxbCF/view?usp=drive_link",
+      "kinds": [
+        "chain",
+        "doc",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 50000,
+      "promise": "Staking Baskets have a feature that allows them to lock the Basket. The time that it's locked is a predefined integer determined by the user. Locking is important before updating the exchange rate, or rebalancing the Basket. Locking beforehand makes sure no SPO loses staking rewards, and that the exchange rate is valid.\nFor this milestone we're going to create TypeScript endpoints for locking/unlocking Staking Baskets. These endpoints will eventually all be used for the bot in a later milestone.",
+      "criteria": "Acceptance:\n・Video showing us calling the endpoint to lock, and unlock the Basket. When calling this endpoint a transaction must be submitted, and the Basket must unlock, or lock.\n・Must submit on-chain evidence of locking, and unlocking the Basket that correlates with the video.",
+      "report": "Dear Catalyst reviewer, here is the PoA.\n・Youtube video showcasing how the smart contract works: https://youtu.be/6EpSJFekjBg\n・Link to tx that locks the basket: https://adastat.net/transactions/c7878df0ba55706374a30c489938a7832547b33b9054c9d6508df6b710eae509\n・Link to tx that unlocks the basket: https://adastat.net/transactions/591a641756560b3da3c8bae8479c04672c3c9b81a77eb426d7b401feed8bba46",
+      "kinds": [
+        "chain",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 20000,
+      "promise": "In this milestone we'll take all of the endpoints that we've created so far and write some code that calls them automatically.\nStaking Baskets must rebalance once per epoch, and update the exchange rate once per epoch. To do both of these transactions the Basket needs to lock first. We're going to output code that does this automatically and get it running on Cardano's preview network with a real Staking Basket. The code will lock the Basket, then rebalance the ADA, and then update the exchange rate automatically.\nOutputs:\n・Working Staking Basket bot code on Cardano's preview network.\n・Video showing the bot running with a real Staking Basket.",
+      "criteria": "Acceptance:\n・Must create a bot that automatically calls all endpoints created so far to update the exchange rate, lock the basket, and rebalance the stake within the Basket.\n・Must submit a video showing the bot working, and explain how it works with on-chain evidence shown in video.\n・Must submit on-chain evidence of the bot completing these tasks that corresponds with the video mentioned above.",
+      "report": "Dear Catalyst Reviewers,\nPlease find the PoA below: \n・Demo of the bot: https://youtu.be/8Bvy2r232mQ\n・On-chain proof 1: https://cexplorer.io/tx/2e434b777180e99834e71eceaa673070a643cc3154fe34b653fcca5d5ed0d0ef\n・On-chain poof 2: https://cexplorer.io/tx/3349d908229a1dda1309a2ae3d4f9180adfeff9da8dc916b4fe816d0567c07c4",
+      "kinds": [
+        "chain",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 30000,
+      "promise": "Now that the Staking Basket bot is completed, we're going to write documentation on how to use it and open-source the code.\nOutputs:\n・Final close-out report\n・Final closeout video\n・Staking Basket Bot Code Open-source on Github\n・Documentation showing how to use Staking Basket Bot",
+      "criteria": "Acceptance:\n・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Staking Basket Bot code must be open-sourced and publicly available.\n・There must be documentation for the Staking Basket code publicly available.",
+      "report": "Hello, \nPlease find the PoA below:\nFinal close-up report in PDF form: https://drive.google.com/file/d/1yNZrR1EhZUq49_QiW0xhkpE-2meORzIa/view?usp=drive_link \nFinal close-up video link on YouTube: https://youtu.be/MHbnw0-VcXU\nGithub Staking Basket Bot link (open-sourced): https://github.com/atma-community/staking-baskets-bot\nLink to the platform: www.atrium.io",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "title": "zkFold x zkPass: Bring zkPass to Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40000,
+      "promise": "Context: zkPass on Cardano is a smart contract that enables developers to post, verify, and utilize zkPass oracle attestations on the Cardano blockchain. It is a tool that makes new types of DApps possible on Cardano.\nTask: Create documentation for the smart contract, specifying what exactly it does. Additionally, we create the description of the API available to smart contract developers that want to use zkPass on Cardano.\nOutputs:\n・Smart contract specification (pdf)\n・API documentation (pdf)",
+      "criteria": "・Smart contract specification (pdf) can be found in the repo\n・API documentation (pdf) can be found in the repo",
+      "report": "We have created the documentation for the smart contract, specifying what exactly it does. Additionally, we have created the description of the API available to smart contract developers that want to use zkPass on Cardano.\nSmart contract specification:\nhttps://docs.zkfold.io/other-zkapps/zkpass/\nAPI documentation:\nhttps://docs.zkfold.io/other-zkapps/zkpass/#api",
+      "kinds": [
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 40000,
+      "promise": "Context: zkPass on Cardano is a smart contract that enables developers to post, verify, and utilize zkPass oracle attestations on the Cardano blockchain. It is a tool that makes new types of DApps possible on Cardano.\nTask: Implement the smart contract prototype (zkPass oracle).\nOutputs:\n・Smart contract prototype (Haskell)",
+      "criteria": "・Smart contract prototype (Haskell) can be found in our repo",
+      "report": "We have implemented the smart contract prototype (zkPass oracle) which can be found in our repo:\nOutputs:\n・https://github.com/zkFold/zkfold-base/blob/main/symbolic-cardano/src/ZkFold/Symbolic/Cardano/Contracts/ZkPass.hs",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 75000,
+      "promise": "Context: zkPass on Cardano is a smart contract that enables developers to post, verify, and utilize zkPass oracle attestations on the Cardano blockchain. It is a tool that makes new types of DApps possible on Cardano.\nTask: Implement the code to construct transactions for the smart contract.\nOutputs:\n・Off-chain code prototype (Haskell)",
+      "criteria": "・Off-chain code prototype (Haskell) can be found in our repo",
+      "report": "We have Implemented the code to construct transactions for the smart contract, which can be found in our repo:\nOutputs\n・https://github.com/zkFold/zkpass-cardano",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 45000,
+      "promise": "Context: zkPass on Cardano is a smart contract that enables developers to post, verify, and utilize zkPass oracle attestations on the Cardano blockchain. It is a tool that makes new types of DApps possible on Cardano.\nTask: Adapt the transaction building (off-chain) code to run in the browser.\nOutputs:\n・Client-side (browser) transaction building code",
+      "criteria": "・Client-side (browser) transaction building code can be found in our repo",
+      "report": "We have completed Milestone 4!\n\nWe have created a repository containing the frontend (client-side) code of the zkPass integration:\nhttps://github.com/zkFold/zkpass-client\nThe core API functions of the integration are implemented here:\nhttps://github.com/zkFold/zkpass-client/blob/main/src/components/ZkPassApp.tsx\n\nBesides that, we have implemented the backend server to support the client-side part:\nhttps://github.com/zkFold/zkpass-cardano\nSpecifically, we have completed the following update to the code:\nhttps://github.com/zkFold/zkpass-cardano/pull/7/files",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 50000,
+      "promise": "Context: zkPass on Cardano is a smart contract that enables developers to post, verify, and utilize zkPass oracle attestations on the Cardano blockchain. It is a tool that makes new types of DApps possible on Cardano.\nTask: Adapt the blockchain quiering code to run in the browser. We adjust the smart contract code based on the feedback from zkPass. Additionally, we make the necessary corrections to the off-chain code. Finally, we produce the close-out report.\nOutputs:\n・Client-side (browser) blockchain querying code\n・Finalized smart contract code (Haskell)\n・Finalized JS/TS library\n・Final close-out report (pdf)\n・Final closeout video",
+      "criteria": "・Client-side (browser) blockchain querying code is publicly available and can be found in our repo\n・Finalized smart contract code (Haskell) is publicly available and can be found in our repo\n・Finalized JS/TS library is publicly available and can be found in our repo\n・Final close-out report (pdf) is publicly available and can be found in our repo\n・Final close-out video can be found in our repo and is publicly available",
+      "report": "We have completed the final milestone!\n・\n\n・Link to Client-side (browser) blockchain querying code: https://github.com/zkFold/capital-quiz/blob/main/src/App.tsx\n・Link to Finalized smart contract code (Haskell): https://github.com/zkFold/zkpass-cardano/blob/main/src/ZkPass/Cardano/UPLC/ZkPassToken.hs\n・Link to Finalized JS/TS library: https://github.com/zkFold/zkpass-client\n・Link to our X post: https://x.com/zkFold/status/1929522424875196782\n・Link to final closeout report: https://github.com/zkFold/zkpass-cardano/blob/main/src/ZkPass/1200255%20-%20zkFold%20x%20zkPass%20Bring%20zkPass%20to%20Cardano%20-%20Close%20out%20report.pdf\n・Link to final closeout video: https://youtu.be/LDsLXax1hp0?si=GtTEgYBmLg5305kl",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

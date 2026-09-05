@@ -1,0 +1,49 @@
+{
+  "title": "SeerBOT: The next generation trading platform on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 22358,
+      "promise": "・Documentation covers backend APIs, User flow, Data flow\n・Documentation of technical analysis with in-depth research on trading algorithms\n・Documentation of features will deploy\n・Document of system architecture covering backend, AI model requirements, and third-party integrations.\n・UI design of product",
+      "criteria": "・The document must clearly describe the project overview and the features to be implemented.\n・The document should include System architecture documentation, AI modules, and third-party integrations.\n・The document must specify the technical analysis indicators to be implemented with clear performance benchmarks\n・The interface design must clearly display the key features (swap, and AI assistant) and the technical analysis indicators used on the interface.",
+      "report": "A. Output: (1) Documentation covers backend APIs, User flow, Data flow; (2) features will be deployed; (3) system architecture covering backend, AI model requirements,\nAcceptance criteria: (1) The document must clearly describe the project overview and the features to be implemented; (2) include System architecture documentation\nEvidence: All documentation about the feature, backend APIs, user flow, data flow, and technical analysis are public on a ReadMe on the GitHub repository\nB. Output: (1) Document of technical analysis with in-depth research on trading algorithms; (2) AI model requirements and third-party integrations.\nAcceptance criteria: (1) The document must specify the technical analysis indicators to be implemented with clear performance benchmarks, (2) include AI modules and third-party integrations plan.\nEvidence: The algorithm summary and integration plan will be presented in Google Docs (public)\nC. Output: UI design of product\nAcceptance criteria: The interface design must clearly display the key features (swap and AI assistant) and the technical analysis indicators used on the interface.\nEvidence: The UI design will be published as a link via Figma.",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 22358,
+      "promise": "Develop a secure and scalable backend infrastructure that includes core functions, and integrate the AI Assistant with real-time data capabilities. The core functions are:\n・User authentication and session handling (refers to the process where users connect their wallet and sign a Message Signature to verify ownership of their wallet address)\n・Transaction processing / swap execution flow\n・Endpoints for technical-analysis and AI queries (returning data through your API)\n・Collect tokens price and calculate signal\n・Data serving through API service\n・Provide data for AI assistance\n\nComplete the product MVP, including the following components:\n・Data collection via Minswap’s API and SDK\n・AI Assistant feature\n・Integration with Lace wallet (or Eternl wallet)\n・Swap feature\n・User interface",
+      "criteria": "・The backend functions will be validated through working endpoints and test transactions\n・Fully functional backend API, secure, scalable, and able to use\n・The AI Assistant feature and technical analysis tools function properly without major bugs\n・Successfully connects the Lace or Eternl wallet on the platform\n・The swap feature operates with at least two trading pairs on mainnet (or testnet)\n・The user interface is built based on the design",
+      "report": "A. Output: Develop a secure and scalable backend infrastructure that includes core functions: (1) User authentication and session handling; (2) Transaction processing & swap execution flow; (3) Endpoints for technical-analysis and AI queries; (4) Collect tokens price and calculate signal; (5) Data serving through API service; (6); Provide data for AI assistance\nAcceptance criteria: (1) The backend functions will be validated through working endpoints and test transactions; (2) Fully functional backend API, secure, scalable, and usable; (3) Successfully connects to the Lace or Eternl wallet\nEvidence: (1) Provide an API demonstration showing a backend endpoint performing a transaction or returning AI or technical-analysis data (Link to API domain and technical analysis data); (2) Public API endpoint documentation with working endpoints (no password) and video demonstrating endpoint calls with working endpoints and API example (JSON)\nB. Output: Complete the product MVP, including (1) Data collection via Minswap’s API and SDK; (2) Swap and AI Assistant feature; (3) Integration with Lace wallet or Eternl wallet; (4) User interface\nAcceptance criteria: (1) The AI Assistant feature and technical analysis tools function properly without major bugs; (2) Successfully connects the Lace or Eternl wallet on the platform; (3) The swap feature operates with at least two trading pairs on mainnet\nEvidence: (1) MVP product link with functional features (connect wallet, swap, technical analysis) and an interface based on the design; (2) Product demo video demonstrating the features, connect wallet, and provide a link to the swap transaction in video (order_tx_id and execution_tx_id); (3) GitHub link referencing the use of Minswap’s API",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 29810,
+      "promise": "・Launch the trading platform publicly on Cardano mainnet\n・Achieve at least 500 on-chain transactions\n・Collect user feedback from at least 50 users\n・Monitor performance of technical analysis and AI Assistant\n・List of optimizations after collected feedback\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Stable mainnet performance, verification of ≥ 500 transactions within the first month, and 50 user feedback entries\n・The project is publicly shared with the Cardano community through Telegram and Discord groups\n・Transactions generated by SeerBOT demonstrate that users can actually use the product and create transactions, which can be verified via Cardano Scan\n・The total user feedback score must reach at least 4 out of 5\n・Ensure smooth AI interaction, accurate technical analysis,\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "A. Output: (1) Launch the trading platform publicly on Cardano mainnet; (2) Achieve at least 500 on-chain transactions ad collect user feedback from at least 50 users\nAcceptance criteria: (1) The project is publicly shared with the Cardano community through Telegram and Discord groups; (2) Stable mainnet performance, verification of ≥ 500 transactions within the first month, and 50 user feedback entries\nEvidence: (1) SeerBOT product link when on mainnet; (2) Screenshots of posts from groups (X, Discord, Telegram); (3) Summary link of transactions generated by SeerBOT on Cardano Scan and Summary link of user feedback forms about SeerBOT\n\nB. Output: Monitor performance of technical analysis and AI Assistant, and List of optimizations after collecting feedback\nAcceptance criteria: Ensure smooth AI interaction, accurate technical analysis, and the total user feedback score must reach at least 4 out of 5\nEvidence: Cardano Explorer transaction data (proving transaction counts and success rate). Summary link of user feedback forms about SeerBOT and The GitHub link to the list of optimization measures implemented after collecting user feedback.\n\nC. Output: Final close-out report and Final closeout video\nAcceptance criteria: Final closeout report and final closeout video are publicly available\nEvidence: Link to final closeout report and final closeout video",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 9
+    }
+  ]
+}

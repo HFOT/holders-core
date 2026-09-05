@@ -1,0 +1,91 @@
+{
+  "title": "Gimbalabs Research: \"Contribution Treasury System\" Model",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 26471,
+      "promise": "1) System Deployment. \n2) Funding the Treasury. \n3) Monthly activity report.",
+      "criteria": "1) The information queried from the Treasury Contract's Script Address of the deployed system corresponds to the funds allocated to fund the Treasury. \n2) Monthly report providing detailed information on the activity that took place in the system. Of special attention will be the flow of funds described in the report vs. the transaction history queried independently by the Community.",
+      "report": "1) The Script Address of the Treasury Contract of the deployed system must be reported, to track the funds secured in the Treasury. \n\n・The Script Address of the Treasury contract corresponds to the Gimbalabs Treasury: addr1z9563wuln5hwr8yrspwx0lz030k9g6gryd8c2077qmv9tacdu706suvddaa3zf095hfjgnxfex3xuwut8m4nshyjmxfsd24ahd \n\n・ According to Milestone 1, item \"Funding the Treasury\" (funds that go directly to the treasury), of the section \"[BUDGET & COSTS] Please provide a cost breakdown of the proposed work and resources\" of the original proposal in Ideascale (https://projectcatalyst.io/funds/11/cardano-open-ecosystem/gimbalabs-research-contribution-treasury-system-model), the amount in ADA the Gimbalabs treasury should have in custody is 14706 ADA.\n\n・In the dashboard \"Milestones Recap\" of this milestones platform can be verified that the amount of funds distributed last month for Milestone 1 was 80% of the funds related to the budget of the original Ideascale proposal.\n\n・In consequence, the real amount that was put in custody in the Gimbalabs treasury was: 14706 ADA * 0.8 = 11764 ADA \n\n \n・Going into Cardanoscan and querying the script address of the Treasury in mainnet, will display the following transaction (among other test transactions aiming to test the Treasury system):\n\n Date: Apr 2, 2024 12:56:19 PM, \n TxHash: 877c8f1f582877626db8b577a5d39e9d05a99220143dbb70f12936ab245ac097\n Amount in ADA: 11760\n Amount in Gimbals (Gimbalabs native token): 7096 \n \n Once there, If you click in the TxHash, you will confirm in the section UTxOs the following:\n - you'll find among the Outputs the Script Address of the Gimbalabs Treasury with the amounts mentioned previously,\n - you'll confirm that the Script Address effectively corresponds to a Scritp Address, not a wallet address. So in effect, the funds are in custody of a Script Adress.\n\n2) Link to the monthly report detailing the activity that took place in the system and showing the progress of the research.\n\nIn an organization",
+      "kinds": [
+        "chain",
+        "other",
+        "video"
+      ],
+      "links": 22,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 26471,
+      "promise": "1) Funding the Treasury. \n2) Monthly activity report.",
+      "criteria": "1) The information queried from the Treasury Contract's Script Address of the deployed system corresponds to the funds allocated to fund the Treasury. \n2) Monthly report providing detailed information on the activity that took place in the system. Of special attention will be the flow of funds described in the report vs. the transaction history queried independently by the Community.",
+      "report": "Thank you for taking the time to review our milestone submission.\nDate of the report: May 08th, 2024\nMonth to report: April, 2024. \n\n1) The Script Address of the Treasury Contract of the deployed system must be reported, to track the funds secured in the Treasury. \n\n・The Script Address of the Treasury contract corresponding to the Gimbalabs Treasury is the same as provided for Milestone 1: addr1z9563wuln5hwr8yrspwx0lz030k9g6gryd8c2077qmv9tacdu706suvddaa3zf095hfjgnxfex3xuwut8m4nshyjmxfsd24ahd\n\n・Querying the Script Address in an explorer such as Cardanoscan (on Mainnet) shows that the total balance there is 11760 ADA. That is the same amount logged by the transaction on Apr 2, 2024 12:56:19 PM; TxHash: 877c8f1f582877626db8b577a5d39e9d05a999922220143dbb70f12936ab245ac097; Amount in ADA: 11760, when the Gimbalabs Treasury was opened. So in conclusion, for the present milestone, there was no movement of funds. If the same checks performed in Milestone 1 are run again for this milestone, the above results will be produced. \n\n・The Gimbalabs Treasury instance, that can be accessed through the url https://gimbalabs-prototype.andamio.io/, logs 11750 ADA. That information is consistent with that gathered via Cardanoscan. \n\nDetail really important to consider: the Milestone 1 PoA was presented for us on April 4, 2024. At April 22th, it was approve by the Catalyst Team. However, today, May 08th, 2024, the payment corresponding to the previous Milestone has not been disbursed yet. That’s the reason why the Treasury Contract’s Script Address and the Gimbalabs Treasury instance don’t reflect additional inflow of funds.\n\n \n2) Link to the monthly report detailing the activity that took place in the system and showing the progress of the research.\n\nIn a nutshell, it can be stated that the reason there has been no movement of funds in the Gimbalabs treasury is because the activity has been concentrated in the organizational domain. Intentionally, this should be emphasized, given that t",
+      "kinds": [
+        "chain",
+        "other",
+        "video"
+      ],
+      "links": 29,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 26471,
+      "promise": "1) Funding the Treasury. \n2) Monthly activity report.",
+      "criteria": "1) The information queried from the Treasury Contract's Script Address of the deployed system corresponds to the funds allocated to fund the Treasury. \n2) Monthly report providing detailed information on the activity that took place in the system. Of special attention will be the flow of funds described in the report vs. the transaction history queried independently by the Community.",
+      "report": "Thank you for taking the time to review our milestone submission.\nMonth to report: May, 2024. \n\n1) The Script Address of the Treasury Contract of the deployed system must be reported, to track the funds secured in the Treasury. \n\nThe Script Address of the Treasury contract corresponding to the Gimbalabs Treasury is the same as provided for Milestones 1 and 2: addr1z9563wuln5hwr8yrspwx0lz030k9g6gryd8c2077qmv9tacdu706suvddaa3zf095hfjgnxfex3xuwut8m4nshyjmxfsd24ahd\nIn the following spreadsheet you can track the volume of approved and paid projects. This spreadsheet is built from information queried directly in Cardanoscan, using the Gimbalabs Treasury Script Address: https://docs.google.com/spreadsheets/d/1nSmOmjRHuUvByAotwSmjrZ-R00ljRlf9F5wFVUnFcfA/edit?usp=sharing\nBesides being able to follow the flow of funds, watching the following video (https://youtu.be/e4jiC_vIoB4?si=3blHjVgdxQYwM5Vh&t=3842) it is possible to identify how the projects in the spreadsheet are connected with the task table of the approved proposal hosted in Notion. This is exactly the kind of dialogue that occurs between the off-chain governance activity and the on-chain execution activity. \nNote: by accessing the prototype of the Gimbalabs contribution platform through the url: https://gimbalabs-prototype.andamio.io/ , you may notice that the amount of ADA in the Treasury is much lower than the amount reported in the spreadsheet. It should be remembered that this milestone is reporting activity for the month of May 2024. Consulting the Treasury script address in a explorer such as Cardanoscan will allow you to study the transactions that have taken place in June 2024. \n\n2. Monthly report detailing the activity that took place in the system and showing the progress of the research.\n\nGENERAL CONTEXT\n\nWe have established an architecture for participation, decision making and execution based on two layers:\n・an off-chain Governance protocol based on web2 organizational tools (Zoom meetings, Notion) and",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 26471,
+      "promise": "1) Funding the Treasury. \n2) Monthly activity report.",
+      "criteria": "1) The information queried from the Treasury Contract's Script Address of the deployed system corresponds to the funds allocated to fund the Treasury. \n2) Monthly report providing detailed information on the activity that took place in the system. Of special attention will be the flow of funds described in the report vs. the transaction history queried independently by the Community.",
+      "report": "Thank you for taking the time to review our milestone submission.\nMonth to report: June 2024. \n1) The Script Address of the Treasury Contract of the deployed system must be reported, to track the funds secured in the Treasury. \n\nThe Script Address of the Treasury contract corresponding to the Gimbalabs Treasury is the same as provided for previous Milestones: addr1z9563wuln5hwr8yrspwx0lz030k9g6gryd8c2077qmv9tacdu706suvddaa3zf095hfjgnxfex3xuwut8m4nshyjmxfsd24ahd\nIn the following spreadsheet you can track the volume of approved and paid projects. This spreadsheet is built from information queried directly in Cardanoscan, using the Gimbalabs Treasury Script Address: https://docs.google.com/spreadsheets/d/1nSmOmjRHuUvByAotwSmjrZ-R00ljRlf9F5wFVUnFcfA/edit?usp=sharing\n\n2. Monthly report detailing the activity that took place in the system and showing the progress of the research.\n\nWith still three months to continue collecting and analyzing information relevant to the research, a first draft V0.1 of the research document has begun to be formulated: https://docs.google.com/document/d/1ktd--rh70Et2k_UmGN2rOKE8i67El2hdKSfhcPbzyJ4/edit?usp=sharing\nPrimarily, this document lays out the general structure of the research to be delivered at the close of this project.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 26471,
+      "promise": "1) Funding the Treasury. \n2) Monthly activity report.",
+      "criteria": "1) The information queried from the Treasury Contract's Script Address of the deployed system corresponds to the funds allocated to fund the Treasury. \n2) Monthly report providing detailed information on the activity that took place in the system. Of special attention will be the flow of funds described in the report vs. the transaction history queried independently by the Community.",
+      "report": "Thank you for taking the time to review our milestone submission.\n1) The Script Address of the Treasury Contract of the deployed system must be reported, to track the funds secured in the Treasury. \n\nThe Script Address of the Treasury contract corresponding to the Gimbalabs Treasury is the same as provided for previous Milestones: addr1z9563wuln5hwr8yrspwx0lz030k9g6gryd8c2077qmv9tacdu706suvddaa3zf095hfjgnxfex3xuwut8m4nshyjmxfsd24ahd\nIn the following spreadsheet you can track the volume of approved and paid projects. This spreadsheet is built from information queried directly in Cardanoscan, using the Gimbalabs Treasury Script Address: https://docs.google.com/spreadsheets/d/1nSmOmjRHuUvByAotwSmjrZ-R00ljRlf9F5wFVUnFcfA/edit?usp=sharing\nYou can compare the final balance in the spreadsheet with the final balance in the Gimbalabs Contributor Platform at https://gimbalabs-prototype.andamio.io/ (Treasury where the funds are locked).\n\n2. Report detailing the activity that took place in the system and showing the progress of the research.\n\nWe have moved the research paper to the official Gimbalabs github repo at: https://github.com/gimbalabs/research-osc-model-for-cardano-orgs/blob/main/Gimbalabs%20Research_%20Open%20Source%20Contribution%20Model%20%20for%20Cardano%20Organizations.pdf \nAfter months of effort and thorough data analysis, we have identified the key insights necessary to develop a contribution model tailored to the startups and projects within the Cardano ecosystem. While some additional refinement is needed in the Results and Conclusions sections of the document, it is already at a stage where it can serve as a foundation for understanding and implementing the proposed model.\nOver the coming weeks, we will finalize the research paper and present it for your review and consideration.",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 7
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 26471,
+      "promise": "1) Funding the Treasury. \n2) Comprehensive documentation describing the researched model. \n3) Closing report.",
+      "criteria": "1) The information queried from the Treasury Contract's Script Address of the deployed system corresponds to the funds allocated to fund the Treasury. \n2) The document describing the researched model allows the understanding of the model and its installation at the local level. \n3) Closing report that follows Catalyst guidelines. Of special attention will be the flow of funds described in the report vs. the transaction history queried independently by the Community.",
+      "report": "Thank you for taking the time to review our final milestone submission.\n1) The Script Address of the Treasury Contract of the deployed system must be reported, to track the funds secured in the Treasury. \n\nThe Script Address of the Treasury contract corresponding to the Gimbalabs Treasury is the same as provided for previous Milestones: addr1z9563wuln5hwr8yrspwx0lz030k9g6gryd8c2077qmv9tacdu706suvddaa3zf095hfjgnxfex3xuwut8m4nshyjmxfsd24ahd\nIn the following spreadsheet, you can track the volume of approved and paid projects. This spreadsheet is built from information queried directly in Cardanoscan, using the Gimbalabs Treasury Script Address: https://docs.google.com/spreadsheets/d/1nSmOmjRHuUvByAotwSmjrZ-R00ljRlf9F5wFVUnFcfA/edit?usp=sharing\nYou can compare the final balance in the spreadsheet with the final balance in the Gimbalabs Contributor Platform at https://gimbalabs-prototype.andamio.io/ (Treasury where the funds are locked).\n\n2. Comprehensive documentation describing the researched model and the procedure to install it at local level by Cardano startups and other stakeholders. \n\nYou will find the research paper in the official Gimbalabs github repo at: https://github.com/gimbalabs/research-osc-model-for-cardano-orgs/blob/main/Gimbalabs%20Research_%20Open%20Source%20Contribution%20Model%20%20for%20Cardano%20Organizations.pdf \nThe document describes the logic behind the model studied, the procedure to be followed for its implementation, and the preliminary results that can be expected from it.\n\n3) Closing report in text and video format that follows Catalyst guidelines.\n\nLink to the Closing report: https://docs.google.com/document/d/1Nzcjj1g3ZdiVZDJR5bDdt2nc6DNohSYGD98N1yjw7TA/edit?usp=sharing\nLink to the Closing video: https://youtu.be/6Fy2af54CCc?si=iLl23-zd2S-f5ZvY",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "title": "Cardano Native Token Dex Price Indexer in Kotlin",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 22500,
+      "promise": "・Release of a system containing the foundational software architecture and providing the core requirement of generating and persisting price data\n・At least 1x (one) UTXO resolver external interface module\n・At least 1x (one) token metadata external interface module\n・At least 3x (three) DEX classifier(s)",
+      "criteria": "・1.1 Can generate and persist latest price data from at least three (3) DEX's trading activity?\n・1.2 Can generate and persist historical price candles data from at least three (3) DEX's trading activity?",
+      "report": "The link below is a report containing all evidence including links to outputs and internal report links to software verification (unit and integration test) and validation (comparison with another DEX) results which demonstrate acceptance criteria and milestone completion evidence.\nhttps://edgxtech.github.io/docs/Catalyst_Project_1200061_KotlinPriceIndexer_Report_Milestone1_signed.pdf",
+      "kinds": [
+        "live"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 22500,
+      "promise": "・Release of a system containing the foundational software architecture and providing the core requirements of generating and persisting price data and enabling query of data\n・At least 2x (two) UTXO resolver external interface modules\n・At least 1x (one) token metadata external interface module\n・At least 4x (four) DEX classifier(s)",
+      "criteria": "・2.1 User can query latest price data?\n・2.2 User can query historical price candles data?",
+      "report": "The link below is a report containing evidence for Milestone 2. The report also contains updated Milestone 1 evidence. Inside there are links to artefacts generated and test results which demonstrate acceptance criteria.\nhttps://edgxtech.github.io/docs/Catalyst_Project_1200061_KotlinPriceIndexer_Report_Milestone2_signed.pdf",
+      "kinds": [
+        "live"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 30000,
+      "promise": "・Software capable of suitable performance for the intended operating environment\n・Final close-out report\n・Final closeout video",
+      "criteria": "・3.1 User can install the software\n・3.2 User can run the software\n・3.3 User can maintain the software\n・Final closeout video is publicly available\n・Final closeout report is publicly available",
+      "report": "Below are links to the final milestone report containing test results demonstrating acceptance criteria for milestone 3, Project Close-out Report and Project Close-out Video. \n・Milestone 3 Report: https://edgxtech.github.io/docs/Catalyst_Project_1200061_KotlinPriceIndexer_Report_Milestone3_signed.pdf\n・Project Close-out Report: https://edgxtech.github.io/docs/Catalyst_Project_1200061_KotlinPriceIndexer_Report_Close-Out_signed.pdf\n・Project Close-out Video: YouTube: “Project Catalyst | Fund 12 | Close-Out Video | Kotlin Price Indexer”, https://youtu.be/l61mwZat6Io",
+      "kinds": [
+        "live",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

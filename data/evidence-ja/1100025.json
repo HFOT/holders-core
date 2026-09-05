@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "以下の契約を開発・実施\n・Plutusを使用したアップグレード可能なマルチサイン(マルチシグ)スマートコントラクトにより、権限のあるメンバーがあらかじめ定義されたしきい値内で資産取引を実行できます。 この契約は、資産の安全な支出を実証する必要があります, サイダーのしきい値のシームレスな調整, ユーザビリティを耐えるためのサイダーの動的追加または除去\n・Plutusを利用したサブスクリプション決済スマートコントラクトを開発し、ユーザーはウォレットから直接決済を容易に管理できます",
+      "criteria": "アップグレード可能な多署名性スマート契約の受諾基準:\n・資産の証券化: 資産取引が許可された会員によってのみ実行できることを確認するスマートコントラクトの実証\n・サイダー閾値のシームレスな調整:認証メンバーがセキュリティを損なうことなく、サイダーのしきい値を調整できるように機能の実装の実証。\n・署名者の動的追加または削除:必要に応じて署名者を動的に追加または削除するためのスマートコントラクトの機能のショーケース。\n\nサブスクリプション支払いスマート契約の受諾基準:\n・Rを快適に管理",
+      "report": "マイルストーンを当社の提案から受け継ぐ\nアップグレード可能なマルチ署名スマートコントラクトレポート - https://drive.google.com/file/d/1BFH4m80XlFwLX5ckgdDBo3kYbQoqvrNq/view?usp=sharing\nここに私達は見つけることができます:\n● 認定メンバーが実行する成功した資産取引を示すドキュメントで、拒否された不正取引の証拠とともにhttps://github.com/Anastasia-Labs/plug-n-play-contracts で利用可能です。\n● スマートコントラクト内のサイダーのしきい値を調整するプロセスを照らすドキュメンテーションは、\nhttps://github.com/Anastasia-Labs/aiken-upgradable-multisig\n● 多署名契約から署名者を動的に追加または削除するための手順を文書化できます。\nhttps://github.com/Anastasia-Labs/aiken-upgradable-multisig\n\nサブスクリプション決済スマートコントラクトレポート - https://drive.google.com/file/d/1cimhNc8p3ZKFZU6uyLBzfYrxkrGSUh2h/view?usp=sharing\nお問い合わせ\n•スマートコントラクトによる支払いの再処理の努力のない管理を詳述するドキュメント\n• 包括的なユニットテスト結果と支払いサブスクリプションスマートコントラクトの機能性と信頼性を確認するドキュメント\n•契約および文書は利用できます\nhttps://github.com/Anastasia-Labs/payment-subscription"
+    },
+    {
+      "no": 2,
+      "promise": "・特定のマルチシグ契約とサブスクリプション決済スマートコントラクトに合わせたオフチェーンSDKの構造、コンポーネント、および機能に関する包括的な設計文書。\n・設計文書に記載されている設計仕様に従って、実装されたオフチェーンSDKのコードベース。\n・SDKの共通開発環境や言語の活用と統合に関する文書化\n・SDKで実施した厳格なテストを実証し、信頼性と有効性を保証します.",
+      "criteria": "・設計文書は、特定のマルチシグ契約とサブスクリプション決済スマートコントラクトに合わせて、オフチェーンSDKの構造、コンポーネント、および相互作用を明確に定義しなければなりません。\n・実装したSDKは、設計文書に記載されている設計仕様に密接に遵守する必要があります。\n・SDKの機能は、指定された多重契約とのシームレスなやり取りを可能にし、開発者の使いやすさを確保しなければなりません。\n・テスト結果は、SDKが信頼性と有効性の特定基準を満たしていることを実証する必要があります.",
+      "report": "マイルストーン2をプレゼントいたします。 この PoA には\n・マルチシグ契約のオフチェーンSDKの構造と機能性を詳述する包括的な設計文書 https://github.com/Anastasia-Labs/aiken-multisig-offchain\n・マルチシグ契約用のオフチェーンSDKを実装し、使用方法と統合に関するドキュメントをhttps://github.com/Anastasia-Labs/aiken-multisig-offchain?tab=readme-ov-file#usage-exampleで利用できます。\n・テストレポートは、特定された問題やバグ、マルチシグ契約の解像度など、テストの結果をまとめています。https://github.com/Anastasia-Labs/aiken-multisig-offchain/tree/main/test\n・決済契約のオフチェーンSDKの構造と機能性を詳述する包括的な設計文書。https://github.com/Anastasia-Labs/payment-subscription-offchain?tab=readme-ov-file#usage-example で利用可能です。\n・決済サブスクリプション用オフチェーンSDKの導入、https://github.com/Anastasia-Labs/payment-subscription-offchain\n・テストレポートは、特定された問題やバグ、支払いサブスクリプション契約の解像度など、テストの結果をまとめています。https://github.com/Anastasia-Labs/payment-subscription-offchain/tree/main/test"
+    },
+    {
+      "no": 3,
+      "promise": "オフチェーンSDKとともに、以下の契約をMaesstroと統合\n・アップグレード可能なマルチサイン(マルチシグ)スマートコントラクトが統合され、https://www.gomaestro.org/smart-contractsで使用可能です。\n・サブスクリプション決済スマートコントラクトが統合され、https://www.gomaestro.org/smart-contractsで使用可能です",
+      "criteria": "Maestro API エンドポイントは、両方の Maestro プラットフォームを通じて利用できます。\n・アップグレード可能なマルチサイン(マルチシグ)スマートコントラクトと https://www.gomaestro.org/smart-contracts で使用可能\n・サブスクリプション決済スマートコントラクトとhttps://www.gomaestro.org/smart-contractsで使用可能",
+      "report": "マイルストーン3をPlugとPlay 2.0に提出してください\nここでは、両方の契約がライブであり、APIエンドポイントでgomaestro.orgにデプロイされていることを証明しています。\nhttps://www.gomaestro.org/smart-contracts.org/smart-contracts\nサブスクリプションサービス文書\nhttps://www.postman.com/go-maestro/maestro-api/request/eyp6awq/create-a-subscription-service\n多重契約文書\nhttps://www.postman.com/go-maestro/maestro-api/request/worc22v/initiate-a-multisig-contract\n\nまた、Maestro API エンドポイントの使用方法に関する契約とガイドの広範な説明をビデオに提供しています。\nサブスクリプションのビデオガイド\nhttps://www.youtube.com/watch?v=G-lBB6MX3lg\nマルチシグビデオガイド\nhttps://www.youtube.com/watch?v=AtnnbzBWB-I"
+    },
+    {
+      "no": 4,
+      "promise": "・APIエンドポイントをターゲットとする統合テストケースを開発:\n・マエストロ内の多重スマートコントラクト\n・Maestro内でのサブスクリプション決済スマートコントラクト\n・通常の機能性、エッジケース、エラー処理など、様々なシナリオを試験ケースでカバー。\n・統合テストを実行し、結果を解釈するための指示を提供するドキュメント.",
+      "criteria": "・インテグレーションテストケースは、指定された契約に関連するすべての API エンドポイントをカバーし、期待値とエッジケースの動作を検証します。\n・テストケースは明確で理解しやすい方法で書かれており、テストシナリオや期待される結果の詳細な説明があります。\n・ドキュメントは、統合テストを実行し、結果を解釈する方法について、開発者に明確な指示を提供します.",
+      "report": "マイルストーン 4 の PoA を提出:\n・インテグレーションテストの一般的なレポートの決定結果 - https://github.com/Anastasia-Labs/project-close-out-reports/blob/main/f11-plug-and-play-02-closeout-report/Milestone%204/main.pdf\n・マルチシグスマートコントラクトのテストレポート - https://github.com/Anastasia-Labs/aiken-multisig-offchain/blob/integration-testing/TEST-README.md\n・サブスクリプションスマートコントラクトのテストレポート - https://github.com/Anastasia-Labs/payment-subscription-offchain/blob/integration-testing/TEST-README.md\n・マルチシグスマートコントラクトとサブスクリプション決済スマートコントラクトに関連するAPIエンドポイントを対象とする統合テストケースは、https://github.com/Anastasia-Labs/aiken-multisig-offchain/tree/main/test で確認できます。\n・テストケースのドキュメントは、テストアプローチのカバレッジと完全性に関するインサイトを提供します。 https://github.com/Anastasia-Labs/aiken-multisig-offchain/tree/main/test#running-tests\n・インテグレーションテストの結果を実証するログやレポート(パス/失敗状況を含む) - https://github.com/Anastasia-Labs/aiken-multisig-offchain/blob/main/assets/images/multisif-tests.png"
+    },
+    {
+      "no": 5,
+      "promise": "・APIエンドポイントを使用して、MaestroでSCを構成および作成する方法に関する詳細な手順を記述します。\n・プロジェクトクローズアウトレポート\n・プロジェクトクローズアウト動画",
+      "criteria": "・各実装の高水準のアプローチとともに文書化が明確に書かれている\n・プロジェクトクローズアウトレポート\n・プロジェクトクローズアウト動画",
+      "report": "この提案のために最終マイルストーンを提出することを誇りに思います。\nプロジェクトクローズアウトレポート:https://github.com/Anastasia-Labs/project-close-out-reports/blob/main/f11-plug-and-play-02-closeout-report/Milestone%205/plug-and-play-02.pdf\nプロジェクトクローズアウトビデオ: https://www.youtube.com/watch?v= lMovZI BJ8\nマルチシグ契約ガイド:https://github.com/Anastasia-Labs/aiken-multisig-offchain/blob/main/docs/multisig-maestro-api.pdf\n支払いサブスクリプション契約ガイド:https://github.com/Anastasia-Labs/payment-subscription-offchain/blob/main/docs/subscription-maestro-api.pdf"
+    }
+  ]
+}

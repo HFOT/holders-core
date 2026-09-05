@@ -1,0 +1,18 @@
+{
+  "title": "Cardano Bond Exchange: Trading Zero-Coupon Bond (RWA)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 10000,
+      "promise": "・Requirements document defining functional scope, user stories, and success metrics for a testnet-ready bond DEX\n・Technical architecture diagrams describing all layers: Smart contract components and front-end integration\n・High-fidelity UI/UX mockups for bond trading flows including create order, view order book and trade, view history",
+      "criteria": "・Requirements and technical architecture documents are complete and internally approved by the dev team for feasibility.\n・Architecture documents cover all core DEX modules and specifies on-chain/off-chain interactions.\n・UI/UX mockups must cover all user stories flows, ensuring that user journeys are clear, intuitive, and testable.",
+      "report": "Thank you for the review. We have updated the submitted documents to address the pending points:\n1. Requirements document\nWe added a clearer explanation of what the Bond DEX is, the meaning of PT as Principal Token, the protocol utility, and more detailed user stories with concrete user motivations.\n2. UI/UX mockups\nWe clarified that the My Account screen covers the history view by showing the PT positions the user has purchased or currently owns.\nFrom this screen, users can also access update and cancel actions through action buttons/icons.\n3. Technical Architecture Diagrams\nWe also updated the Front-end Integration section to include My Account and reflect its role in history and order management.\n\nA. Output: Document defining functional scope, user stories, and success metrics.\nAcceptance criteria: Requirements and technical architecture documents are complete and internally approved by the dev team.\nEvidence: https://github.com/haiphan1309/Catalyst/blob/main/TDD_Trade_Zero_Coupon_Bond_Onchain.pdf \n\nB. Output: Technical architecture diagrams describing all layers: Smart contract components and front-end integration.\nAcceptance criteria: Architecture documents cover all core DEX modules and specifies on-chain/off-chain interactions.\nEvidence: https://github.com/haiphan1309/Catalyst/blob/main/Architecture_Diagrams_Trade_Zero_Coupon.pdf\n\nC. Output: High-fidelity UI/UX mockups for bond trading flows including create order, view order book and trade, view history.\nAcceptance criteria: UI/UX mockups must cover all user stories flows.\nEvidence: https://www.figma.com/design/B7Wop7VpNjBHmOGrLeCk0X/Trade-Zero-Coupon?node-id=0-1&p=f&t=njczOLvJ5BLsg8lY-0",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6
+    }
+  ]
+}

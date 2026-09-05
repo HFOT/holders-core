@@ -1,0 +1,79 @@
+{
+  "title": "GameChanger: open-sourcing now to help CIP30 spec upgrade",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 59999,
+      "promise": "(A) A wallet-side code update to detach more from wallet the schema and documentation generation to allow all milestones workflows\n(B) Redesign relevant descriptions with the creation of markdown generator helpers\n(C) Add missing or improve descriptions on some functions, properties and definitions\n(D) Optional miscellaneous schema improvements derived from the process, like refactors, definition changes, etc..\n(E) Create auxiliar documentation about GCScript DSL Language Syntax",
+      "criteria": "(A) Wallet will be able to generate and export the schema and the documentation files\non the schema-based-documentation:\n(B) Relevant descriptions will present basic rich text features and not just plain text\n(C) Relevant functions, properties and definitions will have more and better descriptions\n(D) Other miscellaneous schema improvements (optional)\n(E) Documentation will be provided to understand how to code on GCScript",
+      "report": "Outputs:\nAll files and new documentation content on our official documentation repository. It has been redesigned with a General Documentation section that will be populated with all the new content created for this Catalyst process.\n(A) A wallet-side code update to detach more from wallet the schema and documentation generation to allow all milestones workflows: All API documentation HTML files were published as a standalone snapshot for this milestone. We kindly offer also a milestone \"zero\" snapshot for comparison purposes. Remember that you can also access the latest hosted in-wallet API documentation here\n(B) Redesign relevant descriptions with the creation of markdown generator helpers: Specifically all Inline Scripting Language functions or \"inline macros\" definitions were completely redesigned as part of the schema itself, and a new markdown documentation system creates the new descriptions based on function names, arguments and types. A new namespace system has been introduced for them as well.\n(C) Add missing or improve descriptions on some functions, properties and definitions: More than 525 references on GCScript functions in schema has been updated with missing titles, descriptions and types based on targetted schemas, fixing 525 references in documentation as well. Also specific descriptions, types and titles has been added to some properties (and referenced definitions). Some examples: Condition Provider, Wallet Setup Layer, all Inline Macro References, etc.. Added the missing language reserved return() and fail() macro definitions.\n(D) Optional miscellaneous schema improvements derived from the process, like refactors, definition changes: All typos were fixed on descriptions and other parts of the schema, some property names were fixed after this like submitTxs.mode.sequential option. Fixed some misleading descriptions like with script.return.mode options. Introduced a new fine-grained syntax error detection for Inline Macros to allow for better macr",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 15,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 59999,
+      "promise": "(A) Add missing or improve descriptions on some functions, properties and definitions\n(B) Add missing or improve examples on some functions, properties and definitions\n(C) Optional miscellaneous schema improvements derived from the process, like refactors, definition changes, etc..\n(D) Create auxiliar documentation about Transactions",
+      "criteria": "(A) Relevant functions, properties and definitions will have more or better descriptions\n(B) Relevant functions, properties and definitions will have more or better usage examples\n(C) Other miscellaneous schema improvements (optional)\n(D) Documentation will be provided to understand how to create Cardano Transactions",
+      "report": "(A) Improved descriptions on some functions, properties and definitions\n・data\n・plutusData\n・plutusScript\n・nativeScript\n・certificate\n・buildTx\n・signTxs\n・submitTxs\n・importAsData\n・importAsScript\n\n(B) Add missing or improve examples on some functions, properties and definitions\n77 examples were added across the 38 function definitions:\n・api: 3 examples\n・script: 3 examples\n・importAsData: 1 example\n・importAsScript: 2 examples\n・macro: 3 examples\n・walletGenerator: 1 example\n・buildTx: 4 examples\n・signTxs: 3 examples\n・submitTxs: 3 examples\n・decrypt: 2 examples\n・encrypt: 2 examples\n・verifySignatureWithAddress: 2 examples\n・signDataWithAddress: 2 examples\n・plutusData: 4 examples\n・plutusScript: 2 examples\n・nativeScript: 3 examples\n・certificate: 6 examples\n・buildAddress: 4 examples\n・deriveKeys: 1 example\n・getStakingPublicKey: 1 example\n・getSpendingPublicKey: 1 example\n・getName: 1 example\n・getMainIdentity: 1 example\n・getCurrentIdentity: 1 example\n・getMainAddress: 1 example\n・getCurrentAddress: 1 example\n・getCurrentSlot: 1 example\n・buildFsTxs: 3 examples\n・searchFs: 3 examples\n・data: 2 examples\n・enableTerminalMode: 1 example\n・saveConfig: 3 examples\n・loadConfig: 3 examples\n・setCurrentWorkspace: 1 example\n・getAddresses: 4 examples\n・getPublicKeys: 3 examples\n・await: 2 examples\n\n(C) Optional miscellaneous schema improvements derived from the process, like refactors, definition changes, etc..\nMade a cleanup of items that were not used on runtime or was causing issues with documentation generation\n・on FileSystemPathMap removed 3 properties\n・10 properties on WorkspaceCreationParams and other Workspace layer type definitions\n・2 breaking changes were introduced with matching changes on runtime resolvers\n・awaitTx, submitTx, and signTx deprecations applied on definition and runtime.\n・Removed title option on MultisSigProvider import mode and runtime resolver adapted for this as well\n\nApplied deprecation flags to\n・functions like awaitTx, submitTx, and signTx,\n・properties like onSuccessURL, onPending",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 65,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 39999,
+      "promise": "(A) Create auxiliar documentation about Workspaces\n(B) Optional miscellaneous schema improvements derived from the process\n(C) Gather community feedback, make reasonable updates based on it",
+      "criteria": "(A) Documentation will be provided to understand how to create Cardano Workspaces\n(B) Other miscellaneous schema improvements (optional)\n(C) Feedback will be gathered from community and reasonable updates will be made",
+      "report": "After first batch of feedback was received and updates made after it, this is the last large milestone of the project:\n(A) Create auxiliary documentation about Workspaces\nA new general documentation section about Workspaces was created with these pages\n・Overview\n・Quick Start\n・Keys\n・Addresses\n・Personal Account Wallets\n・Multisig Wallets\n\nAdded videos (.gif) and screenshots in order to learn how to execute, debug and check the results of the example code (example).\nAdded extra Multi-signature Transactions documentation page to cross-reference Multisig Wallets page.\n(B) Optional miscellaneous schema improvements derived from the process\nintroduced an index.html page to serve as documentation table of contents and it's json definition as a technical file manifest for developers. \nUpdated descriptions, added general doc links on these definitions:\n・index\n・setCurrentWorkspace\n・loadConfig\n・saveConfig\n・buildTx\n・signTxs\n・submitTxs\n・script\n・macro\n\nUpdated all permission definitions, now special properties are only included when required, to reduce file size and simplify definitions. Introduced stage-scoped properties.\nImproved definitions of these permissions\n・setCurrentWorkspace\n・executeExternalScript\n・useExternalData\n・loadConfig\n・saveConfig\n\nadded descriptions on these shared (internal) definitions:\n・keyDerivation\n・ScriptPubKey\n・ScriptTimelockStart\n・ScriptTimelockExpiry\n・ScriptAny\n・ScriptAtLeastN\n・NativeScript\n・PlutusScript\n・PlutusData\n・StakeRegistration\n・StakeDeregistration\n・StakeDelegation\n・Certificate\n・Asset\n・MintAsset\n\nUpdated API documentation links across all repository pointing to the new table of contents index.html\nAdded See also link references on all 74 general documentation examples across 13 pages based on consumed API functions (example)\n(C) Gather community feedback, make reasonable updates based on it\nDeveloper feedback was obtained by launching a quite ambitious survey on repository, Discord and in-wallet ads, asking users to read at least 2 pages of the new",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 33,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 10000,
+      "promise": "(A) Create auxiliar documentation about Inline Macros Syntax\n(B) Optional miscellaneous schema improvements derived from the process\n(C) Gather community feedback, make reasonable updates based on it",
+      "criteria": "(A) Documentation will be provided to understand how to code GCScript Inline Macros\n(B) Other miscellaneous schema improvements (optional)\n(C) Feedback will be gathered from community and reasonable updates will be made",
+      "report": "A workshop in Buenos Aires was the perfect place to ask for survey participation, so now we are including some Latin American feedback and last updates were made after this specific experience. \n(A) Create auxiliary documentation about Inline Macros Syntax\nA new general documentation page under the GCScript DSL section was created:\n・GCScript on Steroids: with Inline Scripting Language (ISL)\n\n(B) Optional miscellaneous schema improvements derived from the process\nexposed on API documentation index page all internal definitions, like types and function argument structures.\nadded descriptions on these internal definitions:\n・NativeScriptName\n・NativeScriptPubKeyHash\n・NativeScriptPubKeyName\n・NativeScriptTimelockStart\n・NativeScriptTimelockExpiry\n・NativeScriptAll\n・NativeScriptAny\n・NativeScriptAtLeastN\n・KeyDerivationParams\n・PasswordProvider\n・ScriptReturnModes\n・MultiSigProvider\n・PreprocessorPasswordProvider\n・NativeScriptBuilderParams\n\non general documentation:\n・added references to general docs in API docs index page\n・added references to API docs in general docs\n・added general doc links on these definitions: lang.html \n・added execution budget calculation and smart contract debugging sections on smart contracts page\n・added guidance on how to decode/decompress the responses from the wallet\n・added an example dapp and video tutorial on how to work with QR codes on hardware devices and how to reduce the generated QR/URLs using GCFS\n・fixed several grammatical errors and typos\n・added links to general documentation on main README.md file\n\nOptimization and minification of schema file for final milestone:\n・created a separate workflow to produce a minified schema file for faster wallet load times\n・from 1,5MB to 475,3 KiB\n・most descriptions were truncated\n・all examples removed\n・all whitespace removed\n・other minor changes to reduce output size\n\nCode examples fixed:\n・GCFS example signing permissions fixed\n・Stake Delegation example syntax error fixed\n・Stake Withdrawal example syntax error fi",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 34,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 30002,
+      "promise": "(A) The full JSON Schema file/files with the already provided documentation\n(B) A LICENSE.md file to formally release the JSON schema file/files and the documentation as open source under the MIT license\n(C) A closeout video, a closeout report or form as required by Catalyst team",
+      "criteria": "(A) An improved JSON schema will be published\n(B) JSON schema and documentation will be released as open source\n(C) Project will finish with a proper video to the community",
+      "report": "(A) The full JSON Schema file/files with the already provided documentation\nA new README.md file points the reader to the different schema output formats and API documentation\n(B) A LICENSE.md file to formally release the JSON schema file/files and the documentation as open source under the MIT license\n(C) A closeout video, a closeout report or form as required by Catalyst team",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

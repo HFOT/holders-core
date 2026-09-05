@@ -1,0 +1,61 @@
+{
+  "title": "d-FCT (Decentralized Fact-Checking Toolkit): A Cardano-Based Ecosystem for Transparent, Community-Driven Fact Verification",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "Technical report with smart contract design and platform architecture\nWe will write a technical report discussing the overall platform architecture, including Web2’s backend (Python) and frontend (ReactJS) components, as well as the proposed on-chain approach. This report will outline use cases and requirements, along with functionality and objectives of smart contracts in the platform. The on-chain approach will focus on discussing operations that require immutability and decentralization. That is, registering contribution scoring (topic creation, evidence and content submission, voting on topic claims, reviewing claims, etc.), reward distribution (ensuring contributors are compensated based on verified contribution scores), governance mechanisms, among others.\nOff-chain components will discuss how to handle resource-intensive tasks and dynamic operations. Fact-checking analysis, content processing including AI and human review workflows, will be conducted off-chain, with results fed into on-chain when appropriate. Data assets, media files, and detailed claim descriptions, will be stored on Web2 services (i.e., triplestores, databases, and storage services) with future plans for u",
+      "criteria": "Report document contains key technical aspects including the platform architecture and the design of smart contracts on Cardano, discussing how to handle provenance, contribution scoring, reward distribution, and voting mechanisms.",
+      "report": "Technical Report document with smart contract design and platform architecture available on the project Github repository:\nhttps://github.com/mobr-ai/dfct-cardano/blob/main/docs/TechnicalReport-M1.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 45000,
+      "promise": "Provenance, or the verification of the origin and history of the content, is crucial for the d-FCT platform. In this milestone, we will implement smart contract (output 1) and backend features (output 2) to ensure the authenticity and traceability of contributions made by users. In the smart contract side, this involves creating components to log transactions with submission's history using blockchain immutability, tracking user inputs, votes, and evidence provided for each fact-checked item. This will use Cardano’s blockchain to ensure transparency and accountability across the verification process. The use cases and programming language used to implement the smart contract will be defined in the Milestone 1 technical report. The backend features include server-side endpoints and components for keeping necessary metadata described in the Milestone 1 technical report in a relational database (i.e. postgresql).\n・smart contract for provenance\n・backend features for provenance",
+      "criteria": "・Smart contract has mechanisms supporting verification of the origin and history of each topic, claim, and content.\n・The backend features are capable to ensure the authenticity and traceability of contributions by users, through the use of the smart contract [1]",
+      "report": "Thank you for your feedback.\n\nTo clarify, the provenance smart contract has indeed been deployed to the Cardano testnet and is visible at the following address:\n https://preview.cardanoscan.io/address/addr_test1wzfcmppd845y7dfye0pzt0ptwypzadctn2d8qzax7srmgkqd6xzy0\n\nAdditionally, the provenance token minted by the contract can be verified here:\n https://preview.cardanoscan.io/token/ba620a995810f982de2a8994901335bda7fa041eeec1ae32dc57edfa444643?address=addr_test1vzrunnjf9zgt930ahtvgaugavwuu2t50gf2v4twyjt2c0ms3yr3uj\nThe minting transaction and on-chain details (including minted amount and usage) are publicly available through the explorer.\n\nPlutus source files for both the provenance and mint contracts are located at:\n https://github.com/mobr-ai/dfct-cardano/tree/main/backend/assets\n\nAll code, backend infrastructure, and a detailed video walkthrough (including testnet tADA requests and contract interactions) are available here: https://drive.google.com/file/d/1sjnw-TVAP0KK91rJ2Klsn1Et79sYExjE/view\n\nThank you for your time and support.",
+      "kinds": [
+        "chain",
+        "code",
+        "doc"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 45000,
+      "promise": "Governance is a critical part of ensuring d-FCT remains a decentralized, community-driven platform. We will implement a governance smart contract (Output 1) and voting mechanisms (Output 2) that allow users to influence key decisions. This includes implementing backend and frontend components that enable users to vote on fact-checking processes, platform rules, and updates to the scoring and reward system. We will also implement a reputation system to weigh votes based on user expertise and contribution history. The use cases and programming language used to implement the smart contract will be defined in the Milestone 1 technical report.\n・smart contract for governance\n・frontend and backend features for governance",
+      "criteria": "・smart contract has governance functionalities that allow users to influence key decisions, including platform rules, and updates to the scoring and reward system\n・frontend and backend components enable users to vote on fact-checking processes, platform rules, and updates to the scoring and reward system",
+      "report": "As requested by MRs here is the current deployment link we are working on: https://dfc.to/\nFor now, login can be achieved using Lace or Eternl wallets.\nThe governance smart contract is implemented and tested with cardano-cli. We are developing the interaction features in the frontend with the Lucid library. DFC tokens are needed to interact with the contract, which can be minted through the process described in README.md.\n\nPrevious message:\n\n1. GitHub repo:\nhttps://github.com/mobr-ai/dfct-cardano \n2. Smart Contract for Governance (Plutus):\nImplemented and deployed on Cardano testnet, enables proposal submission, voting, and setting parameters like voting period, authorized proposal admins (PKHs), and minimum DFC tokens amount to participate.\nSmart contract deployed to the Cardano testnet and is visible at the following address (Cardanoscan): https://preview.cardanoscan.io/address/7026e45fc3b6e08f71ae1e728233b437af57f23e8adbc027dbebc924f5 \nSource code: https://github.com/mobr-ai/dfct-cardano/tree/main/smart-contract \n3. Governance Backend (Python):\nFastAPI backend supports governance operations with endpoints for proposal submission, voting, and setting parameters like voting period, proposal admins, and minimum DFC tokens amount, and interaction with the blockchain.\nSource code: https://github.com/mobr-ai/dfct-cardano/tree/main/backend\n4. Governance Frontend (React):\nPrototype UI under development to enable submitting and participating on governance proposals.\n5. Testing:\nOff-chain and on-chain (unit and integration) tests available and documented in the repo’s README.\n6. Walkthrough video (bonus)\nsmart contract build + tests + testnet run + frontend features\nhttps://drive.google.com/file/d/1vQ59iUlVWmMgFr1Xao5QfD7opKmSZ20Y/view \nThank you for your time and support.",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 12
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 30000,
+      "promise": "・Final close-out report\n・Final closeout video\n・dFCT MVP",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・MVP with fact checking, including provenance and governance capabilities available on https://www.dfc.to",
+      "report": "Dear Catalyst Team,\nWe are pleased to submit the final milestone. As outlined in the milestone requirements, we have completed and made publicly available the following deliverables:\n・Final close-out report detailing project achievements, KPIs, learnings, and next steps. Accessible at: https://github.com/mobr-ai/dfct-cardano/blob/main/docs/Project%20Close-out%20Report.pdf \n・Final close-out video demonstrating the MVP, its features, and project outcomes. Accessible at: https://youtu.be/jdnXWIeVVYQ \n・dFCT MVP deployed with fact-checking, provenance tracking, and governance capabilities. Accessible at: https://www.dfc.to\n\nWe thank Project Catalyst for the support that made this development possible and look forward to continuing to build and enhance the Cardano ecosystem.\nKind regards,\nMOBR team",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

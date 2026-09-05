@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "- 課題のルールを強化するアイケンオンチェーンバリデータセット\n- 課題のルールを説明するドキュメント\n- 事前に定義された異なる相互作用で実行される例のトランザクション",
+      "criteria": "- 技術的な査読者/開発者は挑戦の規則を理解することができます\n- テストネットでトランザクションを実行することで、オンチェーンロジックの実現可能性が確認されました",
+      "report": "「Asteria Catalyst」プロジェクトで「Milstone #1」の成功を収めました。\nマイルストーンのゴールと完了の証明\n課題のルールを説明するドキュメント\nアステリアチャレンジのルールを定義しました。 ドキュメントには、ゲーム概要、コンポーネント、プレイルールの包括的な説明が含まれています。\nhttps://github.com/txpipe/asteria/blob/main/rules.md\n課題のルールを強化するアイケンオンチェーンバリデータセット\nゲームのソースコードを実装する前に、技術設計を記述するドキュメントを書いています。 これは、関連するすべてのutxoの仕様が含まれています, 各バリデータのためのすべてのチェックのトランザクション図と説明.\nhttps://github.com/txpipe/asteria/blob/main/onchain/docs/mvp-design/design.md\n次に、ここで見つけることができるオンチェーンアイケンコードを実装しました。\nhttps://github.com/txpipe/asteria/tree/main/onchain/src\n既存のデモンストレーションで実行されるトランザクション例\n- Asteria トランザクションを作成する:\nhttps://preprod.cexplorer.io/tx/9a284655d63d64a1d179755442625ab6eafda098e3ce4175ab499b030f9102f2\n- Pellet トランザクションを作成する:\nhttps://preprod.cexplorer.io/tx/f86cd01d1372e4818ca017e9aa046597d3530e6272e029200eff4c0e9375772c\n- シップトランザクションを作成する:\nhttps://preprod.cexplorer.io/tx/c40015a8acfd131b3bdd9cd19e146aca14f8bcd5426495e253b19ae0bb5a55\n- 船舶取引の移動:\nhttps://preprod.cexplorer.io/tx/ceea9d447cc6395285a2c13ed271023bf02c795a21cacff8e4028c3577674594\n動画: https://youtu.be/egaK8WRNSAE?feature=shared\n次のステップ\nすでにマイルストーン1の設計と実装の目標を達成しました。また、いくつかの取引を事前に作成します.次のステップは、ゲームのランダムグリッドを作成するためのアルゴリズムを開発し、それらを実装し、それを探索する方法を説明するコンクリートマップを準備し、文書を提出することで構成されています。\n目標を達成できると確信しています."
+    },
+    {
+      "no": 2,
+      "promise": "・課題にランダム2Dマップを生成できるスクリプト\n・マップのオンチェーンを提出するために使用できるスクリプト\n・プレプロドネットワークの初期マップ\n・チェーンマップの探索方法を説明するドキュメント",
+      "criteria": "- テクニカルレビュアー/開発者は、スクリプトを使用して独自のマップを生成することができます\n- 地図生成手順の実現性は、サンプルマップの提出によってテストネットに確認されています",
+      "report": "マイルストーン完成の証拠\n地図生成スクリプトのソースコード\nランダムなペレット パラメータで csv ファイルを書き込み/読み込みするヘルパー関数:\nhttps://github.com/txpipe/asteria/blob/main/offchain/tests/admin/pellets/utils.ts\n特定のパラメータでサンプリング関数を呼び出すスクリプトは、csv を記述します。\nhttps://github.com/txpipe/asteria/blob/main/offchain/tests/admin/pellets/sample-pellets.ts\nペレット パラメータで csv を読み、ペレット オンチェーン (次の項目のオフチェーン関数を呼び出します):\nhttps://github.com/txpipe/asteria/blob/main/offchain/tests/admin/pellets/create-pellets.ts\nペレットを作るためのオフチェーン機能:\nhttps://github.com/txpipe/asteria/blob/main/offchain/transactions/admin/pellets/create-pellets.ts\nAsteria を作成するスクリプト(次の項目のオフチェーン関数を呼び出します):\nhttps://github.com/txpipe/asteria/blob/main/offchain/tests/admin/asteria/create-asteria.ts\nAsteria を作るための Offchain 関数:\nhttps://github.com/txpipe/asteria/blob/main/offchain/transactions/admin/asteria/create-asteria.ts\nオンチェーンマップの探索方法を説明するドキュメント\nhttps://github.com/txpipe/asteria/pull/63\n地図を生成する方法を示すビデオ\nhttps://youtu.be/1AXtyngqBJI (日本語)\n\nパブリックエクスプローラのサンプル取引へのリンク\nアステリアを作成する:\nhttps://preprod.cexplorer.io/tx/e4f2a894bb2d721eb7f8a16bd036094a7409fb76e67843904bb1961fe46cda87\nペレットを作成する:\nhttps://preprod.cexplorer.io/tx/eca5165af45091e4050de1979c61e4b55656652fad661f03f8197f401a51e17d\n\nGimbalabsによるプロジェクトを示す追加情報\nhttps://youtu.be/Q3U5ZEFqfUQ?si=03nh5tN5g-r2Yj-j"
+    },
+    {
+      "no": 3,
+      "promise": "- チャレンジのエントリーポイントとして役立つウェブフロントエンド\n- リアルタイムで船舶の位置を示すための基本的な地図可視化\n- チャレンジに参加する方法についての詳細な手順",
+      "criteria": "- 開発者は、チャレンジフロントエンドを閲覧して参加する方法を理解することができます\n- ビジュアルマップを見て、ゲームの状態を把握することができます",
+      "report": "- チャレンジへのエントリーポイントとして役立つ公開ウェブサイト\nasteria.txpipe.ioでアクセス可能なパブリック・フェーシング・ウェブサイトは、Asteriaチャレンジのメインエントリーポイントとして機能します。 アステリアのゲームプレイ体験の目的とユニークな要素を説明するゲームの概要を提示するランディングページが含まれています。\n- ゲームの状態を示す公開地図の視覚化\n地図ビジュアライザ、asteria.txpipe.io/map で利用可能な、チャレンジの現在のステータスを追跡および表示します。 このコンポーネントは、すべてのアクティブな参加者(船とパイロット)の位置と、燃料ペレットや報酬ゾーンなどのゲーム内要素の場所を視覚化します。\n- エンドユーザー ドキュメンテーション、チャレンジへの参加方法\n詳細なユーザードキュメンテーションは、asteria.txpipe.io/how-to-playで提供されます。これには、ステップバイステップの手順でチャレンジに参加し、参加する方法、ゲーム固有の言語とメカニックを明らかにするための用語の用語集が提供されます。\n\n現行のゲームデータは、昨年のカルダノ・ブイドラー・フェストで行われたテストチャレンジに、イベント参加者と対応しています."
+    },
+    {
+      "no": 4,
+      "promise": "- 調査結果および適用された変更を記述するオンチェーン コードのための監査。\n- 正式なチャレンジがメインネットで公開\n- スポンサーから入金されたオンチェーンからのすべての報酬\n- TxPipeに利用可能なすべてのソーシャルメディアチャネルを介してチャレンジの通信",
+      "criteria": "・メインネットや開発者が参加できる課題\n- ソーシャルメディアでの課題に対する合理的な意識\n- スポンサー報酬は、オンチェーンに入金されています",
+      "report": "- オンチェーンコードでの監査実行のレポート\nhttps://drive.google.com/file/d/1lBFjO4WPb58CGe28ktuCAwYVjTqYDr-W/view?usp=sharing\n- パブリックWebサイトでは、メインネット参加の指示が表示されます\nhttps://asteria.txpipe.io/\n- TxPipeが公開投稿へのリンクで行われたコミュニケーションの取り組みに関する報告\nゲームのプレイと報酬をXに詳しく記載した専用のスレッドと、400を超えるエンゲージメントを上回るメインアナウンスポストが届きました。 また、TxPipeのセッション中に、レア・エボで正式に発表されたチャレンジは、フルルームの聴衆でした。 TxPipe Discordサーバーでは、Asteria専用のチャネルが作成され、開発の更新とライブメインネットチャレンジをカバーする1,000以上のメッセージが生成されました。\nゲームプレイと報酬を説明するXのスレッド\nTxPipeのDiscordサーバーの専用チャネル\n- 報酬預金を示すパブリックエクスプローラーのメインネット取引へのリンク\n10k ADAのメインネットチャレンジ報酬\n他のスポンサーからの報酬"
+    },
+    {
+      "no": 5,
+      "promise": "- これまでの参加メトリック(開発者、アクティビティ、進捗、勝者)を示す詳細なレポート\n- Catalystのガイドラインに従うクローズアウトビデオ\n- 触媒ガイドラインに従うクローズアウトレポート\n- 一般に利用可能なソースコードを含むすべてのアーティファクトのカスタムビルドチャレンジ",
+      "criteria": "- 提供された情報は、審査者がチャレンジへの参加を評価することを可能にします\n- クローズアウトビデオでは、審査者やコミュニティが最終提案の出力を高く評価することができます\n- クローズアウトレポートは、審査者が最終的な提案のプロセスと結果を理解することを可能にします\n- ソースコードには、必要に応じてチャレンジを再現するために必要なすべてのアーティファクトが含まれています",
+      "report": "- Googleドライブにアップロードされた参加メトリックレポート\nAsteria への参加メトリックは、専用のリーダーボード (https://asteria.txpipe.io/leaderboard) にあります。\n・所有する船舶の総数 = 35 がPoA の提出時に\n・各船の地図の中央に準ずる距離\n・近距離から最近距離までの参加者のランキング\n\n\nまた、以下の取り組み指標についても検討することができます。\n・TxPipeとサンティアゴのXの発表と800以上のエンゲージメント\n・10 カルダノプロジェクトがメインネットチャレンジのCNTを獲得\n・26 星と 6 フォーク の アステリア オープンソース リポジトリ\n・Discord専用チャンネルで1000以上のメッセージ\n\n- Googleドライブにアップロードされたクローズアウトレポート\nhttps://drive.google.com/file/d/1NgygzLezEM-PNFRkMVEsvZlZEk   pd0/view?usp=sharing\n\n- Googleドライブにアップロードされた短いサマリービデオ\nhttps://youtu.be/5z3OSggGUvU\n\n- https://github.com で公開可能なソースコード\n主な用途 ソースコード https://github.com/txpipe/asteria\n参加スターターキット https://github.com/txpipe/asteria-starter-kit\n\n- すべてのアーティファクトはオープンソースです: https://github.com/txpipe/asteria?tab=Apache-2.0-1-ov-file\nオンチェーンバリデータコード https://github.com/txpipe/asteria/tree/main/onchain/src\n地図生成コード https://github.com/txpipe/asteria/tree/main/offchain/scripts\nドキュメント https://github.com/txpipe/asteria/tree/main/docs\nビジュアルアセット https://github.com/txpipe/asteria/tree/main/frontend"
+    }
+  ]
+}

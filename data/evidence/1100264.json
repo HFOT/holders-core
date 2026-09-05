@@ -1,0 +1,69 @@
+{
+  "title": "Staking Basket Multi-Delegation Contract Open-Source",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 59999,
+      "promise": "This milestone will output the Staking Basket technical specification. This smart-contract will allow users to deposit ADA into the smart-contract that delegates to multiple stakepools at the same time.\n\nThis specification will detail how anyone can use this code to create a Basket with their own list of stakepool hashes. They can determine the total number of pools the Basket delegates to, take a fee from the Basket, and add/remove pools epoch to epoch. This smart-contract allows addresses to deposit ADA and mints Basket tokens to the depositing address. These Basket tokens can be used to withdraw ADA + Staking rewards from the Basket. This smart-contract can delegate the ADA deposits to over 100 stakepools at the same time.\n\nWhile this is purely a technical specification, a reviewer is asking us to clarify what network this smart-contract will be on to be approved. This smart-contract will be live on Cardano's preview network.",
+      "criteria": "This milestone should be accepted given that we provide a technical specification for the Staking Basket smart-contract.\n\nFor this milestone to be accepted, the technical specification should detail the exact functionality of the smart-contract mentioned in the output.",
+      "report": "Here is a link to the PDF file that is a technical specification for the Staking Basket smart-contract:\nhttps://docs.google.com/document/d/1KxwoRnckRXEGE9p_twNO8-rnTp2W5C_sDpXb4CXPQAc/edit?usp=sharing\nThis technical specification is not a guide on how to create a Staking Basket, as that will not be possible until milestone 4. This technical specification shows that users can use this contract to create a Staking Basket that delegates to multiple pools using the code that's build from this technical specification. However, it does not show how to create a Basket. In the github in milestone four, there will be a page that someone can create locally that allows Basket creation.\n\nA reviewer mentioned a guide for using the code is needed for this first milestone output. We will expand upon this to ensure a better UX when working with the contract. However if you have technical knowledge and the contract code this guide is sufficient. \n# Atrium\n\n## Onchain\n\n### Editing `onchain`\n\nIt is important, that any changes that change generated scripts are going to be incompatible with currently running baskets. \nNote, that changing onchain code haskell comments, or rearranging haskell code may also affect generated scripts, as Plutarch refer to source line numbers in it's error traces.\n\n## Offchain\n\n### How to run contracts using Eternl wallet:\n\nYou must have webpack dev server started:\n```\natrium/offchain$ make dev-browser\n```\nWhen runned, dev browser will print out URL of a webpage from which you can interact with Atrium smart contracts using `preview` testnet\n\nEternl wallet setup:\n- you must have Eternl wallet connected\n- collateral must be set\n- single-address option must be turned on\n\n### How to add a dependency package (from `pursuit`):\n```\natrium/offchain$ spago install <package-name>\natrium/offchain$ make spago2nix\natrium/offchain$ make build\n```\nFor example, let's add a package `purescript-console`:\n```\natrium/offchain$ spago install console\natrium/offchain$ make spago2ni",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 59999,
+      "promise": "In this milestone we’ll show a Staking Basket that delegates to 50 different stakepools at the same time, and allows users to deposit/withdraw into the Basket on our front-end.",
+      "criteria": "This milestone should be accepted given that we show a real Staking Basket on-chain that delegates to 50 different stakepool operators on Cardano’s preview network. It should only be accepted given that this Staking Basket is connected to our front-end that allows users to deposit/withdraw.",
+      "report": "There are multiple transactions when you create a Staking Basket smart-contract. Here are the links to a Staking Basket smart-contract being created on Cardano's preview network:\nhttps://preview.cardanoscan.io/transaction/df744cdfb5ea5e7b48cc6476c6b5e075e5e1c40c13cab866bd8bf11d11a18636\nhttps://preview.cardanoscan.io/transaction/4ac8569afb671b55eec05b78116fbe28582ed328f1d45e94bf990385a2255df6\nhttps://preview.cardanoscan.io/transaction/fbd656060b0e2d4613cc11de437bccc555adf3f68201d414a50992ca5e65aa7c\nA reviewer denied this submission requesting proof of 50 different pools being delegated to, we apologize for not making this more clear for you.\nHere's a link to a blockchain explorer that shows the 50 different pools that are being delegated to current:\nhttps://preview.cexplorer.io/stake/stake_test17z4ss3wv6uq9unr3clzevs9tqvn2emmrlp23as8tecu64tqcjrjt4/delegation#data\nLink to video:\nhttps://youtu.be/e7yFveU-1PI\nDeposit Transaction: https://preview.cardanoscan.io/transaction/027fcc011e8d390cbb01c7bcd9a65a57aa0b7e682788e51fa95b0095d86e7e39\nWithdraw transaction:\nhttps://preview.cardanoscan.io/transaction/b7d94f6fb3ce9528db1a217fcbdaf28f21013d2fe8a83c38c20f644d79a6617c\nYou can deposit/withdraw now by creating a wallet on Cardano's preview network, and going to https://alpha.atrium.io. Once you're there go to Staking, and then Staking Baskets. You will then be able to deposit into Diffusion.\n\nNote to reviewers: Staking Basket DAO does not bottleneck this proposal. Everything required for POA is listed above, if you have other questions, please submit to the discussion.",
+      "kinds": [
+        "chain",
+        "other",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40000,
+      "promise": "In this milestone we’ll submit the Staking Basket audit report. This audit will ensure that the Staking Basket code was completed correctly, and that the smart-contract is secure.\n\nWe're working with an auditing firm Anastasia Labs. They've done multiple audits in this ecosystem and will ensure this smart-contract is secure. This audit will verify that it's impossible for the contract to be hacked, it'll verify that all of the features mentioned in the technical specification are possible.",
+      "criteria": "This milestone should be accepted given that we provide a real audit report from a third party that specializes on Cardano’s smart-contract language audits.\n\nThis audit report needs to detail any issues found during the audit. The audit will also detail any small improvements that could be added to reduce fees, and ensure the contract works as Cardano's parameters change from DAO votes.",
+      "report": "Atrium Labs engaged Anastasia Labs to evaluate and conduct a security assessment of its Atrium protocol. All code revision was performed following industry best practices.\nPhases of code auditing activities include the following:\n• Planning – Customer goals are gathered.\n• Discovery – Perform code review to identify potential vulnerabilities, weak areas, and\nexploits.\n• Attack – Confirm potential vulnerabilities through testing and perform additional dis-\ncovery upon new access.\n• Reporting – Document all found vulnerabilities.\n\nThe engineering team has also conducted a comprehensive review of protocol optimiza-\ntion strategies.\n\nFindings - You can read detailed overviews of findings by clicking the link to the audit report below.\nID-301 Insufficient field level datum comparisons . . . . . . . . . . . . . . . . . . . . . . 9\nID-302 Hard-coded Minimum Ada Constant . . . . . . . . . . . . . . . . . . . . . . . . . 10\nID-101 Optimization: Unnecessary Plutarch Level Functions . . . . . . . . . . . . . . 11\nID-102 Optimization: Avoid Maybe types in on-chain code . . . . . . . . . . . . . . . . 12\nID-103 Optimization: Prefer consolidated fast-fail logic over perrorIfFalse . . . . . 13\n\nYou can view the entire detailed audit report by clicking this link: https://drive.google.com/file/d/13UQwVOIng3PlunWS6Ul9l9bZqWbiyKyN/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 10000,
+      "promise": "In this milestone we’ll move all of the files needed for the smart-contract into a private github, and start preparing documentation so that anyone can understand how to use our open-source code.\n\nThis documentation will explain how to create the Staking Basket smart-contract on a Cardano network. It will also explain the features of the smart-contract, and what ability users/Basket admins have.",
+      "criteria": "This fourth milestone should be accepted given that we provide detailed documentation about our smart-contract and how it works in a private github. To accept this milestone the documentation needs to explain to technical users how to create a Staking Basket, and the features associated with the Basket.",
+      "report": "Dear Catalyst reviewers, here is a report with all the screenshots showing the github repository and all the code. Also, the request to the code repo was granted. Submission number 3\nhttps://drive.google.com/drive/folders/18HXGV17XkZhkBFb3qR0O6bgQ9GNAM8eu",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 30001,
+      "promise": "In this milestone we’ll open-source the Staking Basket smart-contract for anyone on Cardano to use in their own protocols. This smart-contract will allow depositers to delegate to multiple stakepools at the same time. This smart-contract can change the pool composition epoch to epoch.",
+      "criteria": "The final milestone should be accepted only after we open-source the smart-contract for anyone to use. This smart-contract must allow users to delegate to multiple pools at the same time.",
+      "report": "Dear Catalyst reviewers, \nPlease find the proof of the achievement for the final milestone in this proposal: \nClose-up report: https://drive.google.com/file/d/1Fre6AETJDpt26sP8T2Zki1p4a6EOy5fv/view?usp=sharing\nClose-up video: https://youtu.be/AViuH1_0LC8",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

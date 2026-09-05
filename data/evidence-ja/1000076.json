@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・パイマからパイマエンジンのコードベースにAvailブロックチェーンの状態を解析する方法を追加し、パイマのファンネルシステムを拡張し、パイマエンジンのドキュメントで文書化する方法を追加",
+      "criteria": "Paimaのコードベースに「Avail Funnel」を実装",
+      "report": "Paima Funnel(オープンソース)のコードベースを更新しました。https://github.com/PaimaStudios/paima-engine/tree/master/packages/engine/paima-funnel\n\nまた、コードをファネル情報https://docs.paimastudios.com/home/react-to-events/funnel-types/introに使用するために必要な文書を追加しました。\n\nそこで、Avail と互換性のあるべき複数のソース(ドキュメントに記載)からファネルを接続できるようになりました。 これで、Avail 側からデータ抽出器を実装して Paima に接続する必要があります."
+    },
+    {
+      "no": 2,
+      "promise": "Paima BatcherシステムにAvailウォレットのサポートを追加",
+      "criteria": "・Availウォレットは、TxsをAvailに投稿するために、バッカーで使用できる",
+      "report": "**Context:** Paima Studiosは、Midnight Foundationに統合され、Paima EngineはEffectStreamとして再ブランドされました。 コードベース全体をスクラッチから書き換える - これは3番目のバージョンです。 フィードバックに耳を傾け、より良い慣行に従い、全体的な品質を向上させました。 これらのイベントは、今の成果をあげていますが、現在、すべてが更新されています。 当初は Avail のみの統合が **dual サポート** として配信されました。 EffectStream は、同じ文法の下で Avail と Celestia の両方の汎用 DA のプリミティブを出荷\n**A. 出力: DA レイヤーは、取引を投稿するためのバッカーでサポート**\n受諾基準:DAレイヤーにトランザクションを投稿できるウォレット/バッチャー。 Celestia のバッチャー投稿として配信: バッカーはユーザーの取引を集計し、データ可用性のために Celestia に投稿します。 Batcher は Celestia ライトノードを使用して投稿を行います。 これは、元々「Avail Wallet Support」と同一の目的を果たし、DA層に一括取引を投稿します。\n証拠:\n- テンプレート:https://github.com/effectstream/effectstream/tree/v-next-bun-start/templates/zswap-da\n- (元のコード参照は `github.com/PaimaStudios/paima-engine` - 再ブランドで動くコード)\n- Avail は https://www.npmjs.com/package/@effectstream/wallets および Docs を https://effectstream.github.io/docs/home/chains/avail でサポートしています。\n\n**B. 出力: DAの統合を説明するブログ投稿とドキュメント**\n受諾基準:Celestia DAの統合、アーキテクチャ、およびローカルで実行する方法を説明する公開文書。\n証拠:\n- ブログ投稿: https://effectstream.github.io/docs/blog/celestia-data-availability\n- スクリーンショット: バッチ処理ログ、DBテーブル、パイプライン監視(ブログの5スクリーンショット)\n- (元のドキュメント URL は `docs.paimastudios.com/home/react-to-events/funnel-types/intro` - のドキュメントは、再ブランドで移動しました)\n- ドキュメントCelestia:https://effectstream.github.io/docs/home/chains/celestia\n\n**C. 出力: DA の統合のビデオ デモ**\n受容性 cri"
+    },
+    {
+      "no": 3,
+      "promise": "・ 開発者が dApp のどの部分が DA 層に及ぶか、決済層(またはどちらかに行くことができる)を選択する簡単な方法をサポート",
+      "criteria": "・パマの新機能により、特定のアプリのデータが保存される場所の指定が容易",
+      "report": "お問い合わせ\n1. ビデオ - レイヤー選択デモ\nhttps://youtu.be/rDNAqkEpi7I\n\n2. コード - すべてのプリミティブ (各プリミティブ = 1 つの層の選択):\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src\n\n3. Availの一般的なプリミティブ(DAオプション):\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src/avail-generic\n3.B Celestiaの一般的な原始的(DAオプション):\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src/celestia-generic\n\n4。 zswap-daテンプレート(作業例は1つの州機械の決済チェーンプリミティブとDAプリミティブを混合):\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/zswap-da\n\n5. 文書:\nパート1 - アーキテクチャ:https://effectstream.github.io/docs/blog/celestia-data-availability\nパート2 - DA対決済を使用する際、インデックスパターンで: https://effectstream.github.io/docs/blog/data-availability-part-2\nCardano チェーン参照(補面端のプリミティブを補う): https://effectstream.github.io/docs/home/chains/cardano\nサポートされているチェーンへの切り替え: https://effectstream.github.io/docs/home/chains\n\n--------------------------------------------------------------------------------\nコンテンツとノート\n[メッセージの送信] カタリスト・ディレクションは、このプロジェクトに関する次の声明について検討し、チケット#9527で記録しました\n・リブランド Paima は EffectStream として再ブランドし、 Midnight Foundation の一部です。リンクは、これらのエンティティティティの名称で表示されることがあります。\n・スコープ 審査者の場合:マイルストーンと成果物は、承認された受諾基準に対して評価されるべきです.各投稿の内容は、査読者評価の対象であり、例またはさらなる実装は、承認以来、Cardanoエコシステムの技術的進化を反映している可能性があります。\n・CrossChain: EffectStream は、Cardano と Midnight にフォーカスしたオープンソースのマルチチェーンフレームワークで、他のチェーンとの統合です。 ログイン"
+    },
+    {
+      "no": 4,
+      "promise": "・DAレイヤーを使用する際の微妙性を文書化",
+      "criteria": "・Avail のような DA レイヤーを使用するのは、常にゲームの明確な勝利ではありません。そのため、Paima のドキュメントは、どのユースケースが最も意味があり、正しく設計とコストの両方で意味を覆うかについて非常に明確にする必要があります",
+      "report": "注意:このプロジェクトへのタイムラインが短いため、このマイルストーンが承認される前に提出しました。 これは、Cardano指令と協議し、PoAの最後に正式な声明が追加されました。 このマイルストーンは完全に独立しており、M2とM3のいずれかの方法に依存しません。\nブリーフ\nデータ・アベイラビリティ・レイヤー(設計とコスト・インプリケーション)を使用してデータ・アベイラビリティ・レイヤーを使用する際のこのマイルストーン・ドキュメントは、作業アプリの決定を実証します。 ガイダンス:DAは、主要なチェーンハッシュによって固定されている多くの小さなパブリックレコード、大きなblobs、およびコールドストレージのための適切なツールです - 分権化が重要であるが、パーレコード決済価格が意味しませんワークロード。 DAは、単一の高値取引、リアルタイムの可視性、プライベートデータの間違ったツールです。 そして DA の blob はインデックス化されるとのみ有用です: ドキュメントは、最小のステート・トランスレーション・シェイプ、パー・レコードのインデックス作成、出土、デコード・失敗の許容範囲をカバーしています。 働いた例は、ZSwap: 提供(高ボリューム、一般、分散型)は、Celestiaに行き、完了と残高は、決済チェーンで解決します。 Avail と Celestia は、同じ EffectStream のプリミティブ・文法の下で交換可能です。当初は、Avail 専用のサポートがデュアル・サポートとして提供され、オープンソースと完全です。Cardano コミュニティの Celestia に焦点を合わせています。Cardano は、UTxORPC によるファーストクラスの決済オプションです。そのため、レイヤー・セレクションはコンフィクションによってデータの一部となります。\n\nお問い合わせ\n\n1. ビデオ - 行動の決定行列\nhttps://youtu.be/iADC2ahZmXs\n\n2. ドキュメント:\nパート2 - DAレイヤーを使用するとき、投稿したものをインデックスする方法:\nhttps://effectstream.github.io/docs/blog/data-availability-part-2\nパート1 - アーキテクチャ:\nhttps://effectstream.github.io/docs/blog/celestia-data-availability\n\n3. コード:\nAvail 汎用プリミティブ (DA オプション):\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src/avail-generic\nCelestiaの一般的な原始的(代表的なgra"
+    },
+    {
+      "no": 5,
+      "promise": "Cardano と Avail ステートを 1 つのミニゲームに結合するテンプレートを実装します。 プロジェクトクローズレポート(ビデオとPDFレポート)も共有されます.",
+      "criteria": "・ Avail システムを実装し、Cardano 状態と組み合わせるテンプレートの公開リリース",
+      "report": "注意:このプロジェクトへのタイムラインが短いため、このマイルストーンが承認される前に提出しました。 これは、Cardano指令と協議し、PoAの最後に正式な声明が追加されました\n注2: 仕様およびフィードバックに従って文書およびビデオを更新しました\nブリーフ\nこれは、Catalystの提案のためのプロジェクトクローズレポートです 1000076, 「利用可能なアプリやゲームは、まだ可用性と安全性を最大化しながら、安く機能するために大量のデータを必要とする」, そのマイルストーンを渡って配信. このプロジェクトでは、EffectStream 開発者がデータパスレイヤー選択をしました。各アプリのデータは、ソースを宣言するプリミティブを構成することでルーティングされます。これは、UTxORPC 経由での決済、Avail および Celestia によるデータの可用性を宣言するものです。そのため、決済レイヤーと DA レイヤー間のデータの移動は、アプリの書き換えではなく、設定変更です。 働いた例は、決済がオンチェーンにとどまる一方で、大量のオファーがCelestiaに行くZSwap DAアプリです。 クローズアウト動画(YouTube)とクローズアウトレポート(PDF)は以下のとおりです。\nお問い合わせ\n\n1. クローズアウトビデオ\nhttps://youtu.be/QH2gkNcwKK0\n2. クローズアウトレポート\nhttps://drive.google.com/file/d/1mBEs5Wb7MkyzK1NaWFCGJFra qFy3QTp/view?usp=sharing\n3. オープンソースのコード\nzswap-daテンプレートCardano + ZKテンプレート\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/zswap-da\n\n--------------------------------------------------------------------------------\nコンテンツとノート\n\nCatalyst の方向性は、このプロジェクトに関する次の声明をレビューし、チケット #9527 の下で記録しました。\n\n・リブランド Paima は EffectStream として再ブランドし、 Midnight Foundation の一部です。リンクは、これらのエンティティティティの名称で表示されることがあります。\n・スコープ.審査者の場合:マイルストーンと成果物は、承認された受諾基準に対して評価されるべきです。 各投稿の内容は、査読者評価の対象であり、例やさらなる実装は、Cardano ecosysteの技術的進化を反映している可能性があります"
+    }
+  ]
+}

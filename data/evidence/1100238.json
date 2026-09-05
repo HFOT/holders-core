@@ -1,0 +1,60 @@
+{
+  "title": "PRISM Verifiable Credential badges",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 19760,
+      "promise": "・Conduct research on comparable projects within other identity ecosystems and produce a write-up of the results. While we believe we have a decent architecture, we try to make the proposal as much aligned with existing standards as possible.\n・Perform an architectural evaluation of the current design with consideration of the learning from other projects which may exists. In case we find an alternative architectural approach we’d like to keep the door open for a potential change request to achieve the same goal with a slightly revised architecture and components, if these means we can improve the overal impact of this concept, without reducing the promised feature set.\n・Establish a GitHub repository with documentation on the project plan, including a README.md.\n・License the project under Apache 2.0 to ensure open-source availability.\n・Create a structured project stub, including basic API endpoints and frontend pages for the different modules.\n・Develop foundational code blocks for handling W3C Credentials, including issuance and verification processes.\n・Implement initial test suites and tests for core functionalities concerning credential handling and credential verification.",
+      "criteria": "・A GitHub repository is established, containing a README and a comparison of similar projects in different identity ecosystems which may exist. Depending on the outcome of the research, there will also be an discussion on the different architecural options.\n・The project is officially open-sourced under the Apache 2.0 license.\n・Initial coding efforts for managing W3C Credentials and verification are underway and visible through GitHub commits.\n・A dedicated test project within the repository includes multiple tests covering essential functionalities.",
+      "report": "[Note to reviewer: Links are all the same. Updated document on research and evaluation to fix issues and expand. Happy to go into more detail if needed.]\n・The Github repository: https://github.com/bsandmann/blocktrust.CredentialBadges\n・Readme file: https://github.com/bsandmann/blocktrust.CredentialBadges/blob/master/README.md\n・The Research and Architecural evaluation: https://github.com/bsandmann/blocktrust.CredentialBadges/blob/master/Documentation/M1_Research_and_Evaluation.md\n・The project is licensed as Apache 2.0 as seen in the repo\n・Code can been seen in the repo\n・A test-project is also contain in the repo. Screenshot of the UnitTests: https://github.com/bsandmann/blocktrust.CredentialBadges/blob/master/Documentation/M1_UnitTestsScreenshot.jpg\n・To further demonstrate the progress we made a short video going through the current prototype: https://youtu.be/TvsCdHw-oXQ",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 29640,
+      "promise": "・Develop a basic website with user login functionality (account management, password reset, etc.)\n・Implement code to manage different user roles (the owner of the credential (holder), who wants to publish a credential and the signer of an already prepared credential).\n・Create a user interfaces for the credentials owners (holders) to register, create credential templates, and send these to potential signers, in case the credentials isn’t already signed.\n・Establish an user interface for signers to accept prepared credentials from the future owners (holders) of a credential who want to embedd the credential on thier website.\n・Design a basic verification API and webpage for credential verification, which is linked by the embedded credentials.\n・Provide JavaScript snippets for credential display on websites and links to the verification page.\n・Launch a demo website to test and demonstrate the general concept.\n・Unit tests for the new code",
+      "criteria": "・Continuous contributions to the GitHub repository are visible.\n・A functional demo website is available for public access, showcasing the MVP.\n・A 3-5min video demonstrates the development progress and functionality of the MVP on the demo website.",
+      "report": "Link to Github: https://github.com/bsandmann/blocktrust.CredentialBadges\nLink to the demo website(s): https://credentials.blocktrust.dev https://badges.blocktrust.dev\nLink to the video: https://youtu.be/tII-QUqV4kM\nLink to the Demo-Credential shown in the video (at the bottom of the page): https://blocktrust.dev/webcredentials",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "8",
+      "cost": 29640,
+      "promise": "・Enhance the existing MVP, focusing on security improvements, trustable credential verification, and user separation.\n・Develop a domain-verification service to restrict credential presentation to predefined domains.\n・Implement CDN and caching strategies for efficient credential delivery.\n・Create basic customization options for JavaScript snippets in the portal.\n・Design and prepare credential templates for use.\n・Unit tests for the new code",
+      "criteria": "・Continuous updates are made to the GitHub repository.\n・The demo website has evolved, incorporating improvements and new features from this milestone.\n・A new 5 min video details the application's current state, demonstrating new features and improvements.",
+      "report": "The video: https://youtu.be/CEtgDPVoijY\nThe Github repo: https://github.com/bsandmann/blocktrust.CredentialBadges\nFeel free to add issues here for the next milestone: https://github.com/bsandmann/blocktrust.CredentialBadges/issues\nThe demo is running on: https://badges.blocktrust.dev/\nIf you need a credential you can create one here: https://credentials.blocktrust.dev/ (See the last video for explanations) or just copy this credential from here: https://raw.githubusercontent.com/bsandmann/blocktrust.CredentialBadges/refs/heads/master/Documentation/example1.md\nThe sample-page in the video is here: https://www.codedata.solutions/demo/credentials.html",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 14
+    },
+    {
+      "no": 4,
+      "month": "9",
+      "cost": 19760,
+      "promise": "・Generate documentation explaining the concept, credential embedding processes, and verification.\n・All bugs and problems to be found at this stage will be publicly managed on GitHubs Issue tracker\n・Integrate embedded credentials on at least two external websites for demonstration purposes.",
+      "criteria": "・A user-friendly and publicly accessible website is available, guiding users through the credential embedding process.\n・A 5-10min video provides a step-by-step guide on embedding and verifying credentials.\n・Links to at least two external websites demonstrating the embedded credentials are provided.\n・Project documentation is available on GitHub, outlining project objectives and a Howto\n・A hosted instance of the application is available for everyone to try out",
+      "report": "Final milestone.\nThe project is here on Github: https://github.com/bsandmann/blocktrust.CredentialBadges\nDocumentation page: https://docs.badges.blocktrust.dev/\nClose-out report: https://nxtcloud.codedata.solutions/s/zQMoWD53yTH24Y3\nClose-out video: https://youtu.be/ejJipDKdvbk\nHosted instances of the application: https://credentials.blocktrust.dev/ and https://badges.blocktrust.dev/\nVideo showcasing the application / step-by-step video: https://youtu.be/QgOi2EtLlGg\nSome example badges: https://docs.badges.blocktrust.dev/credential-examples.html\nTwo other pages with badges: \nhttps://www.codedata.solutions/\nhttps://www.deutscher-architektur-verlag.de/ (scroll to the end)",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 20
+    }
+  ]
+}

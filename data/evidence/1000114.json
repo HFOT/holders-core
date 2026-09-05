@@ -1,0 +1,83 @@
+{
+  "title": "MLabs - Cardano Game Engine Wallet - Godot Integration",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 74642,
+      "promise": "・Research write-up on Godot 4’s extension systems, explaining cons and pros for the current project. It should explain why developing a full SDK compared to just a wallet is feasible or not.\n・Proof-of-concept integration of either CTL / Lucid (if developing a SDK is feasible) or CSL (if only developing a light wallet is feasible). The POC should consist of a demo that shows: GDScript code calling into the integrated codebase and performing one of its intended functions. The POC may showcase trivial and incomplete functionality, it is only intended to demonstrate that calling into the chosen library and obtaining results is possible. The POC may run only in the Godot editor (and not in exported games) and in a single operating system (as opposed to all supported OS). Portability is a later goal and the POC should not be judged based on this.\n・Paima integration design based on conversations with dcSpark.\n\nAs previously communicated in a Change Request form with the Catalyst team, this project will have a delayed start of 1 month, otherwise, starting in November. This only affects the project timeline moderately, and does not affect the budget or scope of our deliverables.",
+      "criteria": "・The write-up should explain why developing a full SDK compared to just a wallet is feasible or not.\n・The POC must show the execution of function calls from GDScript into the chosen library returning their intended results. The POC may showcase trivial and incomplete functionality, it is only intended to demonstrate that calling into the chosen library and obtaining results is possible. The POC may run only in the Godot editor (and not in exported games) and in a single operating system (as opposed to all supported OS). Portability is a later goal and the POC should not be judged based on this",
+      "report": "We have a PR that contains the \"Evidence of milestone completeion\"\nhttps://github.com/mlabs-haskell/godot-cardano/pull/6\n\nMore specifically a document detailing technical decisison:\n\nhttps://github.com/mlabs-haskell/godot-cardano/blob/17f9431c9a909a4f1c298fd893d84464fb3d8b95/docs/M1_PoA-Research-Report.pdf\n\nAnd a POC:\n\nhttps://github.com/mlabs-haskell/godot-cardano/blob/17f9431c9a909a4f1c298fd893d84464fb3d8b95/README.md\n\nhttps://github.com/mlabs-haskell/godot-cardano/blob/17f9431c9a909a4f1c298fd893d84464fb3d8b95/csl_demo/main.gd",
+      "kinds": [
+        "code"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 81428,
+      "promise": "・A development environment / build system set up that allows the software to be compiled and run on the following target systems: PC/Windows, PC/GNU+Linux. As a proof of this, the POC developed on the previous milestone should run on both platforms. Furthermore, it should run on both the editor and the final exported game.",
+      "criteria": "・The POC shown before should run on all the target systems, both in the editor and as an exported game.",
+      "report": "EVIDENCE OF MILESTONE TWO OUTPUTS\nWindows/Linux Build and Windows Demo\n- the PR including editor/export builds for Windows/Linux has been merged.\nhttps://github.com/mlabs-haskell/godot-cardano/pull/21\n- a Windows version demo is also available\nhttps://github.com/mlabs-haskell/godot-cardano/releases",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 113095,
+      "promise": "・Basic single-address wallet functionality: randomly generating a seed phrase, generating an address, allowing the user to sign balanced transactions, balance-sign-and-submit wallet-to-wallet transactions.\n・(OPTIONAL): If it was determined that an SDK could be built at the end of the first milestone, then the following functionality must also be implemented: query utxos and addresses in the blockchain, balance and submit transactions involving scripts (not only wallet-to-wallet transactions).",
+      "criteria": "・These features should be implemented: seed phrase generation and importing, wallet locking and unlocking with a password, address generation based on seed phrase, transaction signing, wallet-to-wallet transaction creation, and transaction submission.\n・All implemented functionalities must pass rigorous testing without critical bugs or issues.",
+      "report": "Milestone 3 Proof of Achievement\nMilestone outputs\nThe following features have been implemented in Rust and are accessible within the Godot engine:\n・Generating and importing single-address wallets\n・Encrypting and storing generated wallets to the user data directory\n・Balancing, signing, and submitting transactions\n\nIn addition, based on the conclusion in Milestone 1 that an SDK was viable, we have provided the following features:\n・UTxO querying for wallet and script addresses via Blockfrost\n・Including Plutus scripts and evaluating the transaction for validity and fee calculation\n・Producing and consuming Plutus script inputs\n・Minting Cardano native tokens from Plutus scripts\n\nThe above features can be tested manually via the demo app provided, while more thorough testing is available by running the integration tests as described in the README document (https://github.com/mlabs-haskell/godot-cardano?tab=readme-ov-file#run-integration-test). \n\nTest results\nThe test suite should complete after 3-5 minutes and success should be indicated in the console output. The transactions can be viewed in a Preview blockchain explorer. For example:\nFunding transaction (https://preview.cexplorer.io/tx/8b93edbe57a8c9ec50ef8c523432e977767b52db8e616ecfec6ef07825293b20)\nReturn transaction (https://preview.cexplorer.io/tx/67b01c1cdab4a803e799681f79baf26760ab52cfe8703a4ccf2565503bf1a19c)\n\nIn the above transactions, funds are sent to multiple temporary addresses to run SDK feature tests in parallel, after which they are collected and returned to the primary address. Corresponding transactions should be visible for your own wallet after having run the test suite successfully.\n\nExample feature testing transactions:\nPlutus script input spending (https://preview.cexplorer.io/tx/255a8952ca76c3fafc30a974f7054499bd4aa74e08aa230cb03ee880b6dad10e)\nPlutus token minting(https://preview.cexplorer.io/tx/7b1643785c18063b5f327db2b38bf4c9399b4154521a6c2b3038e1c77357723c)\n\nPull requests for this milestone\nAd",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 20,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 81428,
+      "promise": "Ergonomic and user-friendly API for the functionality described in milestone 3 (read point 2).",
+      "criteria": "・All of the functionality should be accessible from the editor and/or GDScript API.\n・Each implemented Node should be documented with its purpose and examples of use.\n・Their public properties and methods should be documented as well\n・A test suite should cover all of the use cases",
+      "report": "OUTPUTS\nErgonomic and user-friendly API for the functionality described in milestone 4.\n\nACCEPTANCE CRITERIA\nAll of the functionality should be accessible from the editor and/or GDScript API.\n--The functionality described in Milestone 4 is accessible via the editor. See the demo tutorial in the project README\n\nEach implemented Node should be documented with its purpose and examples of use. Their public properties and methods should be documented as well\n--Team members have included automated documentation generation\n\nA test suite should cover all of the use cases \n--A comprehensive test suite using the Gut testing framework was added that thoroughly tests the available use cases. Results can be viewed by running the integration test (see README).\n\nEVIDENCE\n-Newly committed code modules for the developed API\nhttps://github.com/mlabs-haskell/godot-cardano/pull/66\nhttps://github.com/mlabs-haskell/godot-cardano/pull/64\nhttps://github.com/mlabs-haskell/godot-cardano/pull/65\n\n-Test results showcasing successful execution of all features - these results can be seen by running `$ nix run .#preview-integration-test` (You need Nix installed with flakes enabled)\nhttps://github.com/mlabs-haskell/godot-cardano/blob/main/test/test.gd\n\n-Automated documentation\nhttps://github.com/mlabs-haskell/godot-cardano/pull/62",
+      "kinds": [
+        "code"
+      ],
+      "links": 5
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 81428,
+      "promise": "Detailed, comprehensive, and user-friendly documentation and descriptive use case examples. All of the API implemented in the previous milestone should be used in the provided examples, which should be runnable as well.",
+      "criteria": "There should be runnable examples with user-friendly documentation for the following use cases:\n・Creating a user wallet\n・Signing and submitting a transaction\n・Transferring an asset to a user provided address\n\nAll of these use cases should make use of the API developed in the previous milestone. Other compelling use cases may be provided as well.",
+      "report": "OUTPUTS\nUser-friendly documentation and use case examples\n\nACCEPTANCE CRITERIA:\nUse case demonstrating:\n- Creating a wallet\n- Signing and submitting a transaction\n- Transferring an asset\n\nEVIDENCE\nOutputs:\n\nA new, complete example of an item shop under the shop-demo folder. It showcases most of the features of our SDK and can be used as a starter point for any interested developer.\n\nA tutorial for the shop, located in https://github.com/mlabs-haskell/godot-cardano/blob/main/docs/Shop%20Tutorial.md .\n\nPull requests and Issues for this milestone\n\n-Integration test setup\nhttps://github.com/mlabs-haskell/godot-cardano/issues/35\nhttps://github.com/mlabs-haskell/godot-cardano/pull/46\n\n-documentation\nhttps://github.com/mlabs-haskell/godot-cardano/issues/37\nhttps://github.com/mlabs-haskell/godot-cardano/pull/62/\nhttps://github.com/mlabs-haskell/godot-cardano/pull/73\nhttps://github.com/mlabs-haskell/godot-cardano/issues/50\nhttps://github.com/mlabs-haskell/godot-cardano/pull/73\n\n-new shop demo (includes wallet creation, signing and submitting a transaction, and transferring an asset meeting the acceptance criteria)\nhttps://github.com/mlabs-haskell/godot-cardano/issues/48\nhttps://github.com/mlabs-haskell/godot-cardano/issues/56\nhttps://github.com/mlabs-haskell/godot-cardano/pull/68\nhttps://github.com/mlabs-haskell/godot-cardano/pull/71\nhttps://github.com/mlabs-haskell/godot-cardano/pull/78",
+      "kinds": [
+        "code"
+      ],
+      "links": 13
+    },
+    {
+      "no": 6,
+      "month": "8",
+      "cost": 115359,
+      "promise": "A modified Paima engine that allows developers to create systems for players to sign and submit transactions.",
+      "criteria": "・All of the functionality should be accessible from the API.\n・Each implemented function should be documented with its purpose and examples of use.\n・A test suite should cover all of the use cases.",
+      "report": "The output for this milestone is a modified Paima engine that allows developers to create systems for players to sign and submit transactions. As per the acceptance criteria, all the functionality is accessible from the API, functions are properly documented and the use cases have been appropriately tested.\nEVIDENCE OF MILESTONE COMPLETION\nOutputs:\n* Newly committed code modules for the developed API.\nAvailable as new add'ons \"cip-30-callbacks\" and \"paima-middleware\" under the addon/@mlabs-haskell folder.\nAll functionality is provided by these two addons:\n 1. \"cip-30-callbacks\" is used to register godot-cardano as a CIP-30 compatible wallet in the browser window.\n 2. \"paima-middleware\" provides functions for logging into Paima and querying the round executor component of the Paima framework\n\n# Note on documentation:\nDetailed documentation on each class and method is provided as inline comments in the relevant files. Documentation is provided as GDScript doc comments so all public classes intended to be used by the final user can be queried inside the engine. Specifically, for the files inside the folders \"cip-30-callbacks\" and \"paima-middleware\", a description of the class is provided at the top level of the file, along with descriptions throughout the files for each of the functions intended to be used by the user.\n \n* Test results showcasing successful execution of all features.\nA Godot project based on Paima's open world template was created, showcasing the use of the entirety of the API. A demonstration\nof it is made in the close-out video https://www.youtube.com/watch?v=YuFD4gi2Qnc.\nA README file is provided under paima-demo with instruction to set up all the different Paima components needed and the setup for exporting the demo to the web.\nIssues and Pull requests for this milestone:\nIssue: https://github.com/mlabs-haskell/godot-cardano/issues/53\nPR: https://github.com/mlabs-haskell/godot-cardano/pull/74\n﻿\nCLOSE-OUT REPORT\nThe close-out report is available in",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "title": "Marlowe Enhanced: Tailored Contracts with Intuitive Design",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 25000,
+      "promise": "Side Note: Milestone #1 in the Schedule of Milestones (SOM) matches Milestones 1 and 2 combined from the Catalyst proposal. This alignment was suggested by the Catalyst team to ensure all milestones fit within the default milestone framework provided.\n・Test Marlowe TS-SDK (Address feature). Participants will be represented as addressess. Constructs that will be used in the contract include Contracts, Observations, Actions, Values, Payee, Party(Address), Token and Bounds.\n・Bug detection and resolution follow-up discussions.\n・Integrate one smart contract using Marlowe language (Address feature) and test web integration.\n・First design/iteration of how the user will interact with the smart contract.",
+      "criteria": "・Marlowe TS-SDK address feature tested, this includes seamless integration with web App and user successfully interacting with the smart contract. Bug detection details and dicussions will be included on the Github repository.\n・One Marlowe Smart contract with Address feature implemented.\n・Web Application deployed using Cardano PreProd Network for user Interaction with Smart Contracts (The prototype is not yet deployed therefore we don’t have yet the actual link, but this link will be provided for review)",
+      "report": "We are pleased to announce that all outputs related to our first milestone have been successfully completed. Detailed information can be found in the GitHub documentation at marlowe-web-integration/README.md at main · Erickrs2/marlowe-web-integration (github.com). \nThe documentation includes an introduction to Marlowe, an overview of our roadmap, a list of discussions and bugs encountered during testing the TypeScript SDK, and an explanation of the framework we used for designing, creating, testing, and integrating our smart contracts.\nWe are excited to share that we have already made this output available to the entire Cardano and Marlowe community. This marks the first time a complete end-to-end example of a Marlowe smart contract, utilizing the latest features—Runtime 1.0, TS-SDK 0.4, and Next.js 14 app router framework—has been demonstrated. We are proud of this initial achievement.\nThe deployed Dapp can be found here: https://marlowe-web-integration.vercel.app/\nA live demontration of the Dapp can be found here: https://1drv.ms/v/s!Aj-l_yQM34m5j6oGPx2qjJtnvSI6TQ?e=duV3UZ\nTx Proof: Contract - 454a7637c211e0cbb9a07eae9a9ed9eb8065e008553fa2db636d3cae2d0bf818#1 (marlowescan.com)\nNext we provide a summary of the outputs, for a detailed explanation please check the documentation provided above.\n・Test Marlowe TS-SDK: We have tested 3 smart contracts using CLI commads, TS-SDK, and web integration with Next (deposit test, buy me a coffe, and fund my project) https://github.com/Erickrs2/marlowe-web-integration/blob/main/marlowe-contracts-cli/src/fund-my-project/fund-my-project-flow.ts\n・Bug Detection and resolution: We have listed all discussions and bugs found during testing. Discussions with Marlowe during TS-SDK Testing · Erickrs2/marlowe-web-integration · Discussion #17 (github.com)\n・Integrate one smart contract and test web integration: We have tested a complete web integration, contract manipulation and UI&UX. This example is included in the Dapp example. The code ca",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 23000,
+      "promise": "Side Note: Milestone #2 in the Schedule of Milestones (SOM) matches Milestones 3 from the Catalyst proposal. This alignment was suggested by the Catalyst team to ensure all milestones fit within the default milestone framework provided.\n・Test Marlowe TS-SDK (Roles and Open-Roles features). Participants will be represented as Roles and Open-Roles. Constructs that will be used in the contract include Contracts, Observations, Actions, Values, Payee, Party(Roles and Open-Roles), Token and Bounds.\n・Bug detection and resolution follow-up discussions.\n・Integrate two smart contract using Marlowe language (Roles and Open-Roles features) and test web integration.\n・Revised design/iteration of how the user will interact with the smart contract based on users feedback.",
+      "criteria": "・Marlowe TS-SDK Roles and Open-Roles features tested., this includes seamless integration with web App and user successfully interacting with the smart contract. Bug detection details and dicussions will be included on the Github repository.\n・One Marlowe Smart contract with Roles-feature implemented.\n・One Marlowe Smart Contract with Open-Roles feature implemented.\n・The Web App deployed on Milestone 1 will be updated with the functionality from Milestone 2. (The prototype is not yet deployed therefore we don’t have yet the actual link, but this link will be provided for review)\n・A walkthrough v",
+      "report": "We are pleased to announce that all outputs related to our second milestone have been successfully completed. Detailed information can be found in the GitHub documentation at:\nmarlowe-web-integration/README.md at main · ErickRomeroDev/marlowe-web-integration (github.com)\nDuring milestones one and two, we established a standardized procedure for contract creation and implementation. This will expedite future iterations, meeting the expectations of Marlowe for creating fast and secure contracts once all testing and implementation processes are in place.\nThe documentation includes the continuation of our roadmap, an extended list of discussions and bugs encountered during testing the TypeScript SDK, and an explanation of the framework we used for designing, creating, testing, and integrating our smart contracts using Nodejs and Next.js\nWe are happy to announce that this output is now available to the entire Cardano and Marlowe community. Additionally, we will be presenting the project outputs at a blockchain conference in Rio de Janeiro. As a result, we are speeding up the implementation of this project, and milestone 3 is nearly complete. The contracts of milestone 3 have already been implemented and tested and are now awaiting web integration. You can find the deployed Dapp here: https://example-dapp-seven.vercel.app/\n・Live Dapp demonstration for the community can be found here for contract “Fund my project”: Link\n・Live Dapp demonstration for the community can be found here for contract “Giftcard”: Link\n・Live Dapp demonstration for the community can be found here for contract “Vesting”: Link\n・Tx Proof for contract “Fund my project”: Contract - 859a56b593e439baf2ddc628b99788b139d17ac056ec878a320bbb1eb9ca0fc6#1 (marlowescan.com)\n・Tx Proof for contract “Giftcard”: Contract - 71e1da743b8802346e19880507fe7ce9a7a096be007fcfb31f75764b1d27fb0e#1 (marlowescan.com)\n・Tx Proof for contract “Vesting”: Contract - 468ef8abe6f4b0587aeb2dcbbba4fb736ccecb26b8e6ab133a4797a9c9ac7ff6#1 (",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "social"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "7",
+      "cost": 23000,
+      "promise": "Side Note: Milestone #3 in the Schedule of Milestones (SOM) matches Milestones #5 and part of Milestone #4 from the Catalyst proposal. There are several types of Oracles, role-based Oracles are ready for TS-SDK testing and implementation. This proposal has added an extra step on Milestone #4 (SOM) to include data-feeds Oracles analysis that are being currently developed by IOG and TxPipe. This alignment was suggested by the Catalyst team to ensure all milestones fit within the default milestone framework provided.\n・Test Marlowe TS-SDK (Merklelization and Roles-based oracles features). Oracles will be represented as Open-Roles. Constructs that will be used in the contract include Contracts, Observations, Actions, Values, Payee, Party, Token and Bounds.\n・Bug detection and resolution follow-up discussions.\n・Integrate two smart contract using Marlowe language (Merklelization and Roles-based oracles - Mediators and Auditors) and test web integration.\n・Revised design/iteration of how the user will interact with the smart contract based on users feedback.",
+      "criteria": "・Marlowe TS-SDK Merklelization features tested, this includes seamless integration with web App and user successfully interacting with the smart contract. Bug detection details and dicussions will be included on the Github repository.\n・Marlowe TS-SDK Role-based Oracles features (Mediators and Auditors) tested, this includes seamless integration with web App and user successfully interacting with the smart contract. Bug detection details and dicussions will be included on the Github repository.\n・One Marlowe Smart contract with Merklelization implemented.\n・One Marlowe Smart Contract with Role-ba",
+      "report": "We are pleased to announce that all outputs related to our third milestone have been successfully completed. Detailed information can be found in the GitHub documentation at \nmarlowe-web-integration/README.md at main · ErickRomeroDev/marlowe-web-integration (github.com) \nDuring milestone three, we tested and fully integrated new features such as Merklelization, annotation, and the use of custom oracles. With Merklelization, we were able to include contract steps accommodating up to 7 payments. Annotations allowed us to efficiently filter between roles-address and open-role actions. Additionally, we implemented custom oracles, allowing the selection of an auditor by choice.\nThe documentation includes the continuation of our roadmap, an extended list of discussions and bugs encountered during testing the TypeScript SDK, and an explanation of the framework we used for designing, creating, testing, and integrating our smart contracts using Nodejs and Next.js\nYou can find the deployed Dapp here: https://marlowe.eddalabs.io/\n· A live demonstration of the Dapp can be found here for contract “Escrow” with a successful payment: marlowe-Escrow-Success.mp4\n· A live demonstration of the Dapp can be found here for contract “Escrow” with the contract cancelled by the auditor: marlowe-Escrow-Auditor-cancel.mp4\n· A live demonstration of the Dapp can be found here for contract “Payment Splitter” with a successful payment: marlowe-Payment-Splitter-Success.mp4\n· A live demonstration of the Dapp can be found here for contract “Payment Splitter” with the contract cancelled by the auditor: marlowe-Payment-Splitter-Auditor-cancel.mp4\n· Tx Proof for contract “Escrow” with a successful payment: Contract - 687ab1752222509570a14ca67d1c5ca809deb592f1ed9561dfd552b169072b0b#1 (marlowescan.com)\n· Tx Proof for contract “Escrow” with the contract cancelled by the auditor: Contract - 07bad6d73ab88f5d0f458d819257d3cdd766aca1a0b8cd0008f1d75ae1fd8e7f#1 (marlowescan.com)\n· Tx Proof for contract “Payment",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 13750,
+      "promise": "Side Note: Milestone #4 in the Schedule of Milestones (SOM) matches Milestone #4 and more from the Catalyst proposal. There are several types of Oracles, role-based Oracles are ready for TS-SDK testing and implementation. This proposal has added an extra step on Milestone #4 (SOM) to include data-feeds Oracles analysis that are being currently developed by IOG and TxPipe. This alignment was suggested by the Catalyst team to ensure all milestones fit within the default milestone framework provided.\n・Comparative Analysis of different open-source autonomous data-feed Oracles implementations",
+      "criteria": "・Successful Oracle Solution Selection: Identify and document the best-performing Oracle solutions for data feeds, justified through a comprehensive analysis results.",
+      "report": "We are happy to inform you that we have successfully completed all the milestones of the project. We are pleased with the outcomes and have attached the close-out video and report for your review. Additionally, we have included an Oracle architecture analysis for integrating with Marlowe smart contracts. The close-out report and oracle analysis were included on the Github as well.\nGitHub repo: ErickRomeroDev/marlowe-web-integration (github.com)\nClose-out report: Close-out report.pdf\nClose-out video: https://youtu.be/4ZzZHQnTb3w\nOracle Analysis report: Oracle Analysis report.pdf",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

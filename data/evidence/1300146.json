@@ -1,0 +1,67 @@
+{
+  "title": "Next-Gen DAOs: On-Chain Delegation, Hierarchies & Reputation",
+  "ms": [
+    {
+      "no": 1,
+      "month": "12",
+      "cost": 40500,
+      "promise": "・On-Chain Implementation:\n・Develop smart contracts for the on-chain delegation mechanism. \n・Include functions for delegating, revoking, and updating delegation relationships.\n・Ensure that delegation is transparent and verifiable on-chain.\n・Off-Chain Infrastructure:\n・Develop APIs to facilitate interaction with the delegation smart contracts.\n・Create intuitive web interfaces allowing users to easily delegate and manage their voting power.\n・Develop dashboard displaying delegation statuses and histories.",
+      "criteria": "・On-Chain:\n・Deployment of delegation smart contracts on a testnet.\n・Successful on-chain delegation transactions in test scenarios.\n・Off-Chain:\n・Functional user interface allowing users to delegate voting power.\n・APIs for interaction with delegation contracts.",
+      "report": "On-Chain Delegation implementation\nWe have successfully implemented and deployed the delegation mechanism on the Cardano preprod testnet. Our smart contracts allow users to delegate their voting power in a secure and fully transparent on-chain way.\nTo delegate, users must lock (stake) their governance tokens in the smart contract and select a delegatee (the person who will receive the voting power) and a time period. While the tokens are locked, the delegatee receives delegation tokens, which allow them to vote using the delegated voting power.\nEach delegation has a fixed end time chosen by the user. After this time period ends, the user can unlock their tokens and regain full control of their voting power. If the user wants to unlock earlier, they must first recover the delegation tokens from the delegatee. This ensures that voting power cannot be used and withdrawn at the same time.\nUsers can also update or revoke their delegation. All delegation actions are recorded and verifiable on-chain.\nThe following testnet transactions demonstrate the full delegation lifecycle:\nOpen Delegated Staking Position: https://preprod.cardanoscan.io/transaction/559dd3047951ab70663dd2e54e59422d35860abdc2fc8e59da78b9ee989243b9\nUpdate Delegated Staking Position: https://preprod.cardanoscan.io/transaction/4c5f9009f8f52ca8df864c94ab321b7368f0f3292994d04208f1c4697766cf6d\nRevoke Delegated Staking Position: https://preprod.cardanoscan.io/transaction/d48ef3dfcf4a1d21cdac8695e4d67078c3c7d8fb202a97a5185d62e9e81ee169 \nOn-Chain, Off-Chain, and Backend Infrastructure\nThe complete on-chain smart contract code, along with backend infrastructure and off-chain components, has been developed and published in our public GitHub repository:\nGitHub repository: https://github.com/MuesliSwapTeam/dao-onchain-governance\nThe implementation builds on our open-source DAO governance framework and includes enhancements specific to this Catalyst milestone. These enhancements include delegation logic in the smart co",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "13",
+      "cost": 40500,
+      "promise": "・On-Chain Infrastructure\n・Develop smart contracts supporting hierarchical DAOs and sub-DAOs.\n・Implement customizable governance parameters for each sub-DAO (e.g., voting thresholds, durations).\n・Establish on-chain permission controls governing interactions between the main DAO and sub-DAOs.\n・Off-Chain Infrastructure:\n・Build management tools and interfaces for creating and managing sub-DAOs.\n・Implement dashboards displaying real-time data on sub-DAO activities, proposals, and voting results.\n・Provide APIs for interacting with sub-DAO functionalities and retrieving data.",
+      "criteria": "・On-Chain:\n・Deployment of hierarchical DAO contracts on a testnet.\n・Successful creation and governance operations within sub-DAOs.\n・Off-Chain:\n・User interfaces for managing sub-DAOs.\n・Documentation on setting up and interacting with hierarchical DAOs.",
+      "report": "Interface (Frontend)\nThe SubDAO governance interface is fully implemented and publicly accessible.\nYou can explore the codebase and interact with the live pre-production deployment:\n・Interface Repository (Frontend Code): https://github.com/MuesliSwapTeam/dao-governance-dashboard/tree/release/subDao\n・Live Demo (Preprod Environment): https://preprod.dao.muesliswap.com\n\nThis interface enables users to seamlessly participate in governance workflows, including proposal creation, voting, and SubDAO management.\nOn-Chain + Backend\nThe full governance logic - including backend services and smart contracts is available here\n・DAO On-Chain Governance Repository: https://github.com/MuesliSwapTeam/dao-onchain-governance/commits/M2/\n・DAO API that also includes SubDao functionality: https://preprod.api.dao.muesliswap.com/docs\n\nThis repository contains the implementation of:\n・Proposal lifecycle management\n・Voting mechanisms\n・SubDAO creation logic\n・Staking and tallying systems\n\nEducational Resources\nTo support onboarding and provide a clear understanding of the SubDAO model, we’ve created a dedicated video guide:\n・SubDAO Explanation Video: https://drive.google.com/file/d/1o1cjUMbwzj4Okzu-jT7Fy5wouAH-4mLI/view?usp=sharing\n\nEnd-to-End Governance Flow (On-Chain Transactions)\nIn addition, we provide a complete example of the governance lifecycle executed on-chain in the preprod environment:\n・Governance Thread Creation: https://preprod.cexplorer.io/tx/4ac40fc1edb673da40ca3aa17874bdee624b8f1f7880a612da0df1807c6e1dfb\n・SubDAO Tally Creation: https://preprod.cexplorer.io/tx/0371b1a90ebacb0e62a6cafae6eedb37bbffe47e8c87abadc686fd96c00e4312\n・Voter Staking: https://preprod.cexplorer.io/tx/5d6f5170e18ca0a6f8fc53dbce5824ab9265d55cc5d4ea7defe02e9a44ed432a\n・Vote Casting in SubDAO Tally: https://preprod.cexplorer.io/tx/d15cef893a73bf3f32cea1b4cef2db72e71e9b61b2ca9dde0bb5c0ced4a952a3\n・SubDAO Creation from Winning Proposal: https://preprod.cexplorer.io/tx/00b8ba06d5b32d9e3b08d5c5a79eb196dd4f2713617f60e3",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 20,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "15",
+      "cost": 33750,
+      "promise": "・On-Chain Implementation:\n・Implement smart contracts that track and update user reputation scores based on their participation and contributions.\n・Integrate mechanisms where reputation scores influence voting power within the DAO.\n・Off-Chain Infrastructure:\n・Develop analytics tools and interfaces for monitoring reputation metrics.\n・Create interfaces displaying individual reputation scores, contribution histories, and overall rankings.",
+      "criteria": "・On-Chain:\n・Deployment of reputation-enabled contracts on a testnet.\n・Verification of reputation influencing voting power.\n・Off-Chain:\n・Interfaces displaying user reputation and contributions.\n・Tools for tracking and updating reputation scores.",
+      "report": "We have extended our frontend, backend and our smart contract with the necessary feature to enable reputation voting. \n・The smart contract code can be found here: https://github.com/MuesliSwapTeam/dao-onchain-governance/tree/M3 \n・In addition, we provide the following cardano preprod testnet transactions\n\n・Gov thread init - bootstraps a fresh governance threads https://preprod.cexplorer.io/tx/9438ab509ac76df8835c66e15e1d64770e09f264de16411c230ede2386f22f9c\n・Create tally - opens a new tally in the thread. https://preprod.cexplorer.io/tx/38ad3e681dea4ba5fc9b77bffd9dab3f2afed5dc7769b9aec78ca27ef054f080\n・Staking init - opens a staking position for the voter, locking governance tokens at the staking contract https://preprod.cexplorer.io/tx/14ee279fcfd2dd044ed362a078a56e0c76671cb43f1f3d5f557e162e0b184aa9\n・Vote - casts a vote in the tally, records the participation in the staking datum https://preprod.cexplorer.io/tx/35eb351703a86530f21b2f3a05e8ada12029b73ca0e60b8bc57f8e4968bb133f\n・Mint reputation - after the tally ended, consumes the ended participation to mint one reputation token into the staking UTxO https://preprod.cexplorer.io/tx/53864736393898aa5d80e40857c6ae8a5f8c3a19651800c96fe49d8a89dbde4c\n・Close staking - withdraws the staking position (including the freshly minted reputation token) back to the voter wallet. https://preprod.cexplorer.io/tx/7ebfc28f5d563eba0a53599caaec94b3593b91e16a764f374d4c8ca3e53f5810\n・Re-open staking with reputation - creates a new staking position that includes the reputation token in its UTxO https://preprod.cexplorer.io/tx/d4c24c194e687b115f2d1eb38fdf57a84be629acb00c10802d67a22e5e363365\n・ New tally - opens a second tally in the same gov thread to demonstrate voting with reputation https://preprod.cexplorer.io/tx/2f17ebf550a31a95223290b1a6f5e30aceaf0e4b9d23377bad1838fbc191fcb7\n・Vote with reputation - votes in the new tally; the reputation token in the staking UTxO supplies the voting weight. https://preprod.cexplorer.io/tx/10ab1bba1d16e76d68",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 30,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "16",
+      "cost": 20250,
+      "promise": "・Compile a comprehensive report covering all aspects of the project, including development processes, challenges faced, solutions implemented, and outcomes achieved (part of it is the final closeout report)\n・Produce demo video highlighting the key features, demonstrations, and potential future directions of the project. (final closeout video)",
+      "criteria": "・Submission of detailed final report covering all aspects of the project.\n・Creation of a summary video.\n\n・",
+      "report": "A. Output: Compile a comprehensive report covering all aspects of the project, including development processes, challenges faced, solutions implemented, and outcomes achieved (part of it is the final closeout report)\nAcceptance criteria: Submission of detailed final report covering all aspects of the project.\nEvidence: We have created a detailed final report as PDF that explains all design choices, code implementation and shows all achievements: https://drive.google.com/file/d/1HPC8A3RZ9-y1n7WJ0ncypSU_A3osCuO2/view?usp=sharing\n\nB. Output: Final Close-Out Report\nAcceptance criteria: Catalyst Close-Out Report \nEvidence: Report as PDF https://drive.google.com/file/d/116ol7GH7Se5rMhowizD-TBeN1mSjcuvv/view?usp=sharing\n\nC. Output: Final Close-Out Video\nAcceptance criteria: Catalyst Close-Out Video\nEvidence: https://youtu.be/Z5_dumnwhQE",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "title": "DeltaDeFi: Pioneering High-Frequency Trading on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "Objective: Establish a solid foundation for the project by setting up the necessary infrastructure, assembling the team, and defining project management practices.\nTeam Formation\n・Set up legal and administrative frameworks.\n・Core team members confirmed and publicly announced.\n\nProject Management Tools Setup\n・Establishment of project management tools and systems to organize and track project progress.",
+      "criteria": "Team Formation Completed\n・Set up a legal entity\n・All core team members confirmed and publicly announced. A list of team members will be provided.\n\nProject Management Tools Established\n・Google sheet or Github set up for project management, display the tasks and the status of tasks (Not started, In progress, Complete, Backlog). Tasks and roles will be assigned to team members and displayed publicly\n・Set up backend service hosting account\n・Set up Github link for DeltaDeFi",
+      "report": "Team Formation\n・Legal entity established. A public link or screenshot will be provided to view the legal entity established.\n・https://drive.google.com/file/d/1MDNlPE1oV4upLempVgNhoXihXbIj9rAo/view?usp=sharing\n・A list of core team members with roles will be provided with a public link on SIDAN Lab dedicated Discord Channel.\n・https://drive.google.com/file/d/1sFntxS7HSc6tfY8g7UpNF3aDpRZRKhIm/view?usp=sharing\n\nProject Management Tools Setup\n・Google sheet or Github will be set up. A public link will be provided and announce in SIDAN Discord group under DeltaDeFi channel.\n・https://docs.google.com/spreadsheets/d/1BduhPvTqNi897oCbZRjsTjf0VHtjJykBU-yUSa4pJis/edit?usp=sharing\n・Announcement in Discord: https://drive.google.com/file/d/1E9fxJ-c9MyBm4klrzUxwBz5KAmRd41AB/view?usp=sharing\n・A screenshot of the backend service hosting account will be provided. (NOTE: Billing details, and address will be hidden as payment details are highly confidential and we are avoiding all the potential risks of scams or fraud)\n・https://drive.google.com/file/d/1f6N4X4z8SlvdX5Ncm9huJcSM7YpJY4YS/view?usp=sharing\n\nGithub link of DeltaDeFi will be provided\n・https://github.com/deltadefi-protocol",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 12
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60000,
+      "promise": "Objective: Fine-tune and confirm the initial draft on technical architecture from F11 research.\nTechnical Architecture Document\n・Detailed documentation of the system architecture, including both off-chain and on-chain components.\n・Comprehensive diagrams illustrating the architecture, data flow, and component interactions.\n\nSmart Contract Design Document\n・Detailed logic and structure of the smart contracts, including pseudocode and flow diagrams.\n・Specifications for smart contract functions and interactions with the DeltaDeFi platform.\n\nUI/UX Design Documentation\n・Initial wireframes and mockups detailing the user interface and experience of the platform.",
+      "criteria": "Clear and Understandable Diagrams\n・All architecture and design diagrams should be clear, and well-labeled.\n・Diagrams represent the system's structure and data flow.\n\nTechnical Architecture Document Completed and Reviewed\n・The document should cover the system architecture, including detailed diagrams and descriptions of the on-chain and off-chain component\n\nFull Documentation on Smart Contract Logic\n・The document should provide a description of the smart contract logic and structure.\n\nUI/UX Design Documentation\n・The documentation should include wireframes and mockups",
+      "report": "Technical Architecture Document:\nThe public gitbook documentation (https://docs.deltadefi.io/project-catalyst-f12-milestone-reporting/technical-architecture) illustrates the technical architecture of DeltaDeFi including both off-chain and on-chain components. In response to the comment from Catalyst Team reviewer, I have supplemented the system architecture illustrating both off-chain and on-chain components of DeltaDeFi.\nSmart Contract Design Document:\nThe public gitbook documentation (https://docs.deltadefi.io/project-catalyst-f12-milestone-reporting/smart-contract-design-document) illustrates the detailed logic and structure of the smart contracts. In response to the comment from Catalyst Team reviewer, I have supplemented the detailed logic, structure and pseudocode for DeltaDeFi.\nUI/UX Design Document:\nThe public gitbook documentation (https://docs.deltadefi.io/project-catalyst-f12-milestone-reporting/user-flow-diagram-and-wireframes) illustrates the wireframes and mockups detailing the user interface and experience of the platform.",
+      "kinds": [
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 60000,
+      "promise": "Objective: Design and develop DeltaDeFi Cardano smart contracts\nSmart Contract Development\n・Develop smart contract source code with documentation.\n\nSmart Contract Specification Document\n・Overview of the smart contracts and script specification\n\nOpen Source Repository\n・Public GitHub repository with the smart contract source code and basic documentation.\n\nAudit Engagement\n・Complete the preparation for either a commercial audit or a community-driven audit",
+      "criteria": "Smart Contract Development\n・Functional source code with comments and documentation.\n\nSmart Contract Specification Document Completed\n・The document provides an overview of smart contracts and script specification\n\nOpen Source Repository Created\n・Repository is publicly accessible on GitHub with relevant files and basic documentation.\n\nAudit Engagement\n・Approach commercial auditors or initiate community-driven audit to ensure basic security and correctness.",
+      "report": "Smart Contract Source Code & Open Source Repository: https://github.com/deltadefi-protocol/aiken-virtual-dex\nSmart Contract Specification Document: https://github.com/deltadefi-protocol/aiken-virtual-dex/tree/main/specs\nCommunity Audit Evidence: \nScreenshots shown in https://docs.google.com/document/d/1xayG3aeC18FdBuJPa9nf3sNcpUJ1Iue7rqkh92kWFAw/edit?tab=t.0 related to deltadefi-mvp channel shows there are couple of comments on deltadefi smart contract for the past 2 weeks community audit event. Our engineer has managed to commit fix on those issues. These evidence shows the audit engagement evidence.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 45000,
+      "promise": "API Source Code\n・Develop API source code for accessing and trading on DeltaDeFi with basic documentation.\n\nAPI Documentation\n・Documentation covering the API endpoints, setup, usage, and examples.\n\nOpen Source Repository\n・Public GitHub repository with the API source code and detailed documentation.",
+      "criteria": "API Source Code Developed\n・Functional source code with basic comments and documentation.\n\nAPI Documentation Completed\n・Documentation provides an overview of the API, including endpoint descriptions, usage instructions, and examples.\n\nOpen Source Repository Created\n・Repository is publicly accessible on GitHub with all relevant files and detailed documentation.",
+      "report": "Regarding feedback from catalyst team on milestone 2, I believe it might be a mistake by catalyst team reviewer to request for same evidence again during milestone 4 review. The comments are mostly same wordings I have seen in milestone 2 review in which I have already supplemented the missing evidence and received approval on milestone 2 proof of achievement reviews. Please let me know if there is any misunderstanding here. Thanks a lot!\nRegarding feedback from catalyst team on milestone 4, please find below responses::\nRegarding the documentation of the API related to overview of the API, endpoint description, usage instructions, and examples, I have revised the swagger.yaml file to supplement all these information. The revised swagger.yaml file includes below information for each api function:\n・API path e.g. /accounts/signin\n・API method e.g. post\n・Summary (A short sentence summarising the api objective)\n・Description (A short paragraph illustrating the api usage instructions)\n・Parameter (if the api requires request parameter, the swagger doc illustrates the data type and provide an example of it)\n・responses (The swagger doc illustrate the example response of successful and unsuccessful api request)\n・Schema of the parameters are shown in the swagger doc as well\n\nRegarding the documentation of the public repository, I have revised the readme.file to reflect the overview of the repo. It should be sufficient enough for public users to understand the repo structure and navigate the repo efficiently to utilize the api functions.\nPlease find the revised materials in:\nswagger.yaml file: https://github.com/deltadefi-protocol/deltadefi-backend/blob/master/internal/api/swagger.yaml\nreadme file: https://github.com/deltadefi-protocol/deltadefi-backend/tree/master",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 30000,
+      "promise": "Website Frontend Design\n・Design the UI/UX for the DeltaDeFi platform, including wireframes and mockups.\n\nWebsite Frontend Development\n・Develop the website frontend based on the UI/UX design.\n\nWebsite Deployment\n・Deploy the website to a public domain, making it accessible to users.",
+      "criteria": "Website Frontend Design Completed\n・Finalized UI/UX design with wireframes and mockups.\n\nWebsite Frontend Developed\n・Developed website frontend with essential features.\n\nWebsite Deployed to Public Domain\n・Live and publicly accessible website",
+      "report": "Please find the evidence of milestone completion in https://docs.google.com/document/d/1lykAi5SvD8Zi0g8V_AWU6UXlHQ4_TquhsWbA4PuCuUI/edit?tab=t.0.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 6,
+      "month": "14",
+      "cost": 45000,
+      "promise": "Smart Contract Deployment\n・Deploy the developed smart contracts on the Cardano preproduction testnet.\n\nBackend and Frontend Integration\n・Integrate the deployed smart contracts with the backend services.\n・Ensure the frontend website is functional and interacts correctly with the backend and smart contracts.\n\nAPI Service Deployment\n・Deploy the API service that allows interaction with the DeltaDeFi platform.\n\nFinal Close-out Report and video\n・Final close-out report\n・Final closeout video",
+      "criteria": "Smart Contract Deployment Completed\n・Smart contracts are deployed and operational on the Cardano preproduction testnet.\n\nBackend and Frontend Fully Integrated\n・The backend services are integrated with the deployed smart contracts, and the frontend website is functional.\n・Users can perform necessary actions through the website that interacts with the backend and smart contracts.\n\nAPI Service Deployed and Functional\n・The API service is deployed and allows interaction with the DeltaDeFi platform.\n・API endpoints are operational and provide the necessary functionalities.\n\nFinal Close-out Report and",
+      "report": "[Resubmitted POA based on the reviewers' feedback]\nSmart Contract Deployment:\n・Transaction IDs or Links to the smart contracts on the Cardano preproduction testnet\n\n・APPVAULT_SPEND: 03fadf38750b7c90902286e083924b8837c86ee96e54d82dc101a15701f5ebc1\n・APPDEPOSITREQUEST_MINT: d4dc6ca99616a73edafa77602f33670a58f4fe61b76a043307efad9dba90dc5c\n・APPDEPOSITREQUEST_SPEND: f952a21d49443c13a63ea5ecf9f22fa8d16337c468fbf58e31f6f73fa2dfec9b\n・DEXACCOUNTBALANCE_SPEND: 5fde15ee7dbee50dbdea46fcff34700810cee3260eb1c78a6375ae804b4c8bd4\n・DEXORDERBOOK_SPEND: 3798b056eecd06f7ce900b8d332f4b236a112176aefb053d6aebc30775decb11\n・ACCOUNTOPERATION_APPDEPOSIT: f2279a6f91f2341f88e512ca56d190badfeac7e7a52812855464f03ed8662114\n・ACCOUNTOPERATION_APPWITHDRAWAL: de545edb93fc67d47a7b7b5c734dcd23a46fc205b6350930ddd9e578d21f49b2\n\n・Screenshots or logs showing successful deployment and integration\n・Please find the detailed proof in the smart contract deployment and integration verification under https://docs.deltadefi.io/faq/project-catalyst-f12-milestone-reporting/frontend-and-backend-and-smart-contract-integration-process-and-functionalities-testing. It shows the key steps to verify the every single smart contract deployment and integration using user wallet, cardano explorer and cquisitor.\n\nBackend and Frontend Integration:\n・Screenshots or video demonstrating the integration between the frontend and backend: \n・https://www.youtube.com/watch?v=jmaohJlfuM4. It shows a parallel view of backend log and frontend network tab log to validate the frontend and backend integration\n・Description of the integration process and functionalities tested. The description will be well documented. URL will be public and provided: \n・https://docs.deltadefi.io/faq/project-catalyst-f12-milestone-reporting/frontend-and-backend-and-smart-contract-integration-process-and-functionalities-testing. It shows how a user can verify if the frontend is submitting and receiving correct requests and response to and from DeltaDefi backend by ver",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 20,
+      "cut": true
+    }
+  ]
+}

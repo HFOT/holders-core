@@ -1,0 +1,88 @@
+{
+  "title": "Bitcoin Runes on Cardano via Rosen Bridge",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 50000,
+      "promise": "・Deep-dive investigation of Runes protocol and compatibility with current Bitcoin Rosen Bridge Designs and Architecture\n・Selection of implementation method (seen outline of potential 3 options here for review)\n・Bridge integration design based on the selected method\n・Investigation of libraries, data sources, infrastructures, and special requirements of Runes integration",
+      "criteria": "・Documentation about the selected method and its requirements on Rosen Bridge Github.\n・X Space to discuss potential solutions with the community (with recording link to be provided upon submission of Milestone 1).",
+      "report": "Attached are two articles from Medium. One covering the initial design scope. The second covers using the proposed solution as a theoretical extension to use address outputs to create an extended UTXO based metadata extension to the Runes protocol to enhance the utility of Runes. \nhttps://curiaregiscrypto.medium.com/extending-bitcoin-runes-into-new-environments-via-rosen-bridge-a2081f3c0287\nhttps://curiaregiscrypto.medium.com/rosen-bridges-solution-can-it-enrich-bitcoin-runes-with-metadata-and-beyond-882b821856ef\nIn the X space we cover the Runes protocol, our implementation, as well as potential challenges of working on Bitcoin. \nhttps://x.com/ergo_platform/status/1891715902128677185?s=46\nThis github document states the design of Bitcoin Runes integration into Rosen Bridge and and describes the selected approach. \nhttps://github.com/rosen-bridge/Catalyst-Fund12/blob/master/F12-%20catalyst%20milestone%201.md",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 70000,
+      "promise": "・Initial and standalone implementation of the Runes lock and transfer transaction on bitcoin\n・Initial and standalone design and implementation of Ergo side contracts (if needed, for example is needed for method 1 but not required for method 2 and 3)\n・Test lock transactions: Test is independent of the bridge, to ensure this type of transaction is possible, Runes can be transferred and bridging data can be transmitted/acquired.",
+      "criteria": "・Sample transactions to show Runes and bridging data transfer (depending on the selected method could be one or a few transactions on Bitcoin and/or Ergo blockchains - which acts as the routing network for Cardano).\n・Code snippets for Runes and bridging data transfer and fetching data from the transaction",
+      "report": "The following is an In Depth overview of a transaction. \nhttps://mempool.space/tx/ac16759cc66ad1f4b9fe49e068d979728302ed6fb566d94665c76a654a93eeb2\nAn article can be found on Medium covering the step by step process and how this follows our design pattern. \nhttps://curiaregiscrypto.medium.com/diving-in-integrating-runes-into-rosen-bridge-be41e338a56a\nA github repository can be found covering the details as well. \nhttps://github.com/rosen-bridge/Catalyst-Fund12/blob/master/F12-%20catalyst%20milestone%202.md",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 70000,
+      "promise": "Implementation of required modules to add Runes support to Rosen bridge, including:\n・Implementation of the bridge and transaction scanner\n・Multisig solution for guards one BTC side\n・Transaction agreement in the system (e.g if you need to index runes and working working with the limitations of Bitcoin architecture)",
+      "criteria": "・All modules will be open-sourced and code available on the Rosen Bridge Github\n・Medium Article Published breaking down the updated transaction scanner, multisig solution implementation and Transaction agreement system.",
+      "report": "Content: All modules have been open sourced. \nThe code is available on the github link below. \nhttps://github.com/rosen-bridge/Catalyst-Fund12/blob/master/F12-%20catalyst%20milestone%203.md\nAn article breaking down the updates, solutions, and libraries modified is below. \nhttps://curiaregiscrypto.medium.com/integrating-bitcoin-runes-into-rosen-bridge-a-deep-dive-into-key-modules-edb8fd145df7",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 70000,
+      "promise": "Build around Bitcoin and integrate the existing modules:\n・Integration into the watcher modules (i.e scanners, event reporting, rewards and distribution)\n・Integration into guard modules (i.e event verification, multi-sig, rewards and distribution)",
+      "criteria": "・All modules will be open-sourced and code available on the Rosen Bridge Github\n・Medium Article Published covering integration and updated sequence flow chart of Runes Bridging.",
+      "report": "# Bitcoin Runes Integration in Rosen Bridge\nThis document outlines the integration of Bitcoin Runes modules into the Rosen Bridge.\n## Contents\n- [Updates on Rosen Chains](#updates-on-rosen-chains)\n- [Bitcoin Runes Integration](#bitcoin-runes-integration)\n - [Watcher Service](#watcher-service)\n - [Guard Service](#guard-service)\n## Updates on Rosen Chains\n[Rosen Chains](https://github.com/rosen-bridge/rosen-chains) is the primary dependency of the Guard service, where all chain-specific functions and behaviors are implemented. In the previous milestone, this module was integrated. However, during testing, several potential issues were identified, leading to a restructuring of the module to address them.\nRunes protocol utilizes the `OP_RETURN` UTxOs on Bitcoin to write protocol data, such as transfer details. In the previous structure of Rosen Chains, every Rune in the input had to be specified during the transfer (using the `edict` field). However, the `OP_RETURN` UTxOs on Bitcoin have a soft limit of 80 bytes (i.e., transactions with `OP_RETURN` data exceeding 80 bytes will not be propagated by the nodes). Although having fewer Runes in inputs was aimed by the design, this was still a potential issue and impossible to avoid.\nAnother issue involved the first UTxO. Rosen sends user assets using the first box (or UTxO) in the transaction. On the other hand, the Runes protocol specifies that when spending a Runes UTxO, if no Runes protocol data is provided, all Runes are sent to the first non-`OP_RETURN` UTxO. To align with Runes specification, the change assets for Runes should ideally be in the first UTxO.\nTo address these issues, the structure was updated to follow these rules (specific to Bitcoin Runes):\n- Each transaction should transfer only one Rune. For transferring multiple Runes, multiple transactions should be generated (the only exception is the Cold Storage type, which sends assets to the Cold address).\n- UTxOs containing Runes should have the minimum UTxO v",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 30000,
+      "promise": "・Changes in UI to accommodate BTC and Rune transfers on the existing application (i.e select BTC as destination or origin chain, view transaction outputs on the Rosen explorer, etc…). \n・Bitcoin wallet Dapp connector for Runes or other approaches to enable users to sign bitcoin transaction and transfer Runes to Rosen's wallet (through Dapp connector or external wallets)",
+      "criteria": "・UI codes in Rosen Github\n・Screenshots of UI to be shared in a separate document submitted for this milestone.",
+      "report": "・UI codes in Rosen Github\n・Screenshots of UI to be shared in a separate document submitted for this milestone. \n\n・Please note, there is not a way to attach a document in this UI. However screenshots have been added and can be seen on the github link along with the code. \n\nhttps://github.com/rosen-bridge/Catalyst-Fund12/blob/master/F12-%20catalyst%20milestone%206.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 60000,
+      "promise": "・Deployment of watchers and guards in order to test the Runes bridge integration\n・CoHost X Space with Runes Projects Highlighting Runes Bridging to Cardano\n・Integrate 3 Runes Projects into Rosen Bridge and successfully bridge to Cardano\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Watchers and guards are live in the test environment (could be mainnet or testnets)\n・Example of sample transfers including all necessary transactions\n・CoHost X Space with Runes Projects Highlighting Runes Bridging to Cardano\n・Integrate 3 Runes Projects into Rosen Bridge and successfully bridge to Cardano\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "・A. Output:Deployment of watchers and guards in order to test the Runes bridge integration. \n\nAcceptance criteria: Everything is live on mainnet and functioning. \nEvidence: Rosen.tech https://github.com/rosen-bridge/Catalyst-Fund12/blob/master/F12-%20catalyst%20milestone%206.md\n・B. Output:CoHost X Space with Runes Projects Highlighting Runes Bridging to Cardano\n\nAcceptance criteria: X Space Hosted With Major Runes Projects \nEvidence: https://x.com/i/spaces/1OdJrOpOBDlxX/peek?s=20\n・C. Output: Integrate 3 Runes Projects into Rosen Bridge and successfully bridge to Cardano\n\nAcceptance criteria: Projects bridged successfully to Cardano \nEvidence: Fully Documented Below https://github.com/rosen-bridge/Catalyst-Fund12/blob/master/F12-%20catalyst%20milestone%206.md\n・D. Output: Final close-out report\n\nAcceptance criteria: Medium Article Overcoming Obstacles as well as Github F12 M6 \nEvidence: https://github.com/rosen-bridge/Catalyst-Fund12/blob/master/F12-%20catalyst%20milestone%206.md\nhttps://curiaregiscrypto.medium.com/integrating-bitcoin-runes-into-rosen-bridge-overcoming-challenges-for-seamless-bridging-3cfe11cb774e\n・E. Output: Final closeout video\n\nAcceptance criteria: Video Posted Online\nEvidence: https://youtu.be/7t1xleHGiis\n\nI have written up a new Close Out Report here: https://curiaregiscrypto.medium.com/bitcoin-runes-on-cardano-via-rosen-bridge-project-close-out-report-7bb048f8316d?postPublishedType=initial",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

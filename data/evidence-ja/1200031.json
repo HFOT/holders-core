@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・プロジェクトプラン\n・技術依存関係の一覧や、それぞれが利用し、互いにやり取りする方法の説明\n・移行されるスマートコントラクトと取引を特定する\n・ライブ展開計画\n・チームの役割と定義された責任\n・潜在的なソリューションと課題に関する初期研究報告",
+      "criteria": "・チーム全員が承認したプロジェクトプラン\n・技術依存関係の一覧や、それぞれが利用し、互いにやり取りする方法の説明\n・依存関係への文書化マッピング\n・本プロジェクトで使用するツールをテストして検討しているリスト\n・移行されるスマートコントラクトと取引を特定する\n・Cardano preprod でテスト中の契約情報を公開\n・ライブ展開計画\n・プロジェクト計画承認のための承諾プロセスの動画録画\n・チームメンバーを割り当て、オンボード\n・チームによる検討・検証",
+      "report": "以前のPDFの切断を固定するための達成の証明を返金することは、文書の最後にコンテンツになります。 プロジェクトの計画と研究報告の両方が確認されています。 また、以前に提出されたチームバイオと責任は、プロジェクト計画に含まれています。\nAndamio サイドチェーンキックオフミーティング録画: https://drive.google.com/file/d/1oXZoCWcmFfuDr4sJipVIq8DUW7PXtyIa/view?usp=drive link\nAndamio Sidechain Kickoffミーティングトランスクリプト: https://docs.google.com/document/d/1kv92-Ai0sWrsMAt8Gj2IezkIwgPH2ixaLxpjBaorXAY/edit?usp=drive link and chat transcript: https://docs.google.com/document/d/1kv92-Ai0sWrsMAt8Gj0sWrMAt8Gi0sWrMAt8GjBarXAiXAi2GjBaorXAY/edit?usp=drive link and chat transcript: https://document/d.google.google.google.com/document/d/d/d/d/d/d/d/d/d/d/d/d/d/d/d/d/d/d/d/d/1kv92-Ai0sKv92-Ai0sKv92-Ai0sKv92-Ai0sWv92-Ai0sWr\nAndamio Sidechainプロジェクト計画、バイオ、ロール、チーム編成を含む: https://drive.google.com/file/d/1LS7t-eK2EFJdTYzMJnl-HuENsnxMqFNT/view?usp=drive link\nAndamio Sidechain Research Report: https://drive.google.com/file/d/1Dp1BfA7f4M6jia0xMDBgifJE5FdmeB0v/view?usp=drive link"
+    },
+    {
+      "no": 2,
+      "promise": "・クラウドサーバー上に構築された目的のサイドチェーン・カーダノネットワークインフラ\n・選択したクラウドプロバイダのリスト\n・ノード構成とインフラ要件の記述\n・サーバの運用コストを推定\n・サイドチェーンアーキテクチャの設計文書を詳細に。 このドキュメントには以下が含まれます。\n・ロールス(オンチェーン)\n・スマートコントラクト\n・設定とパラメーター\n・トランザクションと予想される出力",
+      "criteria": "・インフラの運用・基本機能テスト\n・基本的なチェーンクエリは、想定したメタデータと取引を示す\n・スマートコントラクトは、スクリプトとフロントエンドで実行して動作していることを確認することができます\n・試験\n・トランザクションテスト - メインネット対サイドチェーンから出力とログを比較\n・差異や問題の指摘\n・技術チームや利害関係者が認めたSidechainアーキテクチャ設計\n・承認取得に利用する承諾プロセスへの動画リンクが提供されます",
+      "report": "1) クラウドサーバーでインフラストラクチャの運用を示す短いビデオまたはスクリーンショット\n・サーバーダッシュボード\n・ノードの状態\n・トランザクションログ\n\n2)建築設計文書へのリンク\n3) 設計文書のチームの承認を示すために、合意の決定の記録と会議のノートへのリンク\n提出された証拠:\n1) ビデオ: https://drive.google.com/file/d/1IgYnCUjZ8vpx8vYM870u6M7jyLac6YEw/view?usp=sharing\n2)建築文書:https://drive.google.com/file/d/1kc50vQ1Z-VPlvti3TFwVJZdJccY0WEL/view?usp=sharing\n3) 設計文書の承認の会議ノート:https://docs.google.com/document/d/1LMRG6t3gUnXF7WwkOTfYDZV4TXS6hQh8-WvJE/edit?tab=t.0\n退会: 建築レビューと同意プロセスの録音にリンクを追加する: https://app.fireflies.ai/view/Sidechain-Architecture-Review:cBX7QIHRPtJsM0GX"
+    },
+    {
+      "no": 3,
+      "promise": "・スマートコントラクトの採用と目的のサイドチェーン上のテストデータを初期化\n・Andamioテスト契約の試験\n・ランダム/モックデータの利用\n・展開結果報告\n・サイドチェーンスマートコントラクトを用いたフロントエンドテストと相互作用\n・Andamioコントリビュータートークンをクエリする能力\n・送金取引\n・Andamio Treasury Adminトークンをクエリする機能\n・資金取引の追加\n・プロジェクト取引の公開\n・Andamio Escrow Reviewerトークンをクエリする機能\n・約束取引の承認\n・メインネットからの逸脱に関する報告\n・フィーズの違い\n・Sidechain特定プロバイダ/api情報",
+      "criteria": "・目的のサイドチェーンやドキュメントにスマートコントラクトをデプロイするような展開や機能が必要\n・展開結果報告\n・サイドチェーンへの展開に必要な変更をリスト\n・展開ログを表示\n・トークンメタデータのクエリ結果を表示\n・メインネットとの差異に関するエラー、問題、観察に関する報告",
+      "report": "このマイルストーンでは、Andamioスマートコントラクトがサイドチェーンに展開され、展開とテストの結果がレポートに表示されます。\n目的のサイドチェーンの実験は、メインネットと比較してトランザクションの実行、スマートコントラクトの動作、または全体的な機能に重大な偏差を明らかにした。 想定どおりに実施されたAndamioの全ての契約と、注目すべき矛盾のない相互作用。\nサイドチェーンの決済時間が大幅に短縮されたことが観察された1つのキーの区別。 トランザクションは、メインネットと比較して、より迅速に確認および最終決定され、全体的な効率と応答性を改善しました。 また、一般的に料金が下がり、予想範囲内に残っているため、予期しない行動は導入しなかった。\n全体的に、サイドチェーンは、改善されたトランザクション速度と効率性から恩恵を受けながら、メインネット契約の実行をうまくレプリカしました。\nレポートとスクリーンショットのフォルダー: https://github.com/Andamio-Platform/Sidechain-Playground/tree/main/Results\n展開結果報告: https://github.com/Andamio-Platform/Sidechain-Playground/blob/main/Results/Report.md\nサイドチェーン比較へのメインネット: https://github.com/Andamio-Platform/Sidechain-Playground/blob/main/Results/mainnet-comparision.md"
+    },
+    {
+      "no": 4,
+      "promise": "・性能、課題、フィードバックに関するテストレポート\n・テスト結果に基づくサイドチェーンとスマートコントラクトの実装を更新\n・最終プロジェクト報告\n・動画を閉じる\n・次のステップと今後の行動計画の文書化",
+      "criteria": "・試験中に特定された気候問題は、さらなる調査のために解決または文書化されます\n・サイドチェーンを示すテスターからの肯定的なフィードバックは性能および機能性を満たします\n・最終プロジェクト報告\n・次のステップと将来の行動計画のドキュメンテーションを含め、Andamioクライアントが使用するためのプラットフォームにサイドチェーンを持参する計画を含みます。 それ以外の場合は、サイドチェーン技術で進む経路を探索するために、他の実験的なアベニューを含めることができます。\n・動画を閉じる",
+      "report": "最終的なマイルストーン達成の証拠:\n・結果文書のテストリンク\n・https://github.com/Andamio-Platform/Sidechain-Playground/blob/main/Results/Report.md\n・スマートコントラクトがサイドチェーン上で適切に機能するために必要な変更に関するメモへのリンク\n・技術報告:https://drive.google.com/file/d/1VRbKtQ7uig0X7nrZPvwFP6tDbvyjWHyR/view?usp=drive link\n・スマートコントラクトの変更は不要 すべてのスマートコントラクトは、変更なしでサイドチェーンで機能しました。 非常に良いニュース!\n・最終報告書へのリンク\n・https://drive.google.com/file/d/1yg8diBKj1awTudVOsMQtiTEujiXLNVOE/view?usp=sharing\n・新しいクローズアウト動画へのリンクで更新\n・次のステップと行動計画を含む\n・最終クローズアウトレポート、セクションを参照してください。**上記の製品またはサービスの次のステップ。\n・最終クローズアウト映像へのリンク:\n・https://www.youtube.com/watch?v=Ce8aduI9Vpg\n・クローズアウト動画が長すぎて問題に取り組むのが新着です。 5分以内\n・公開モードでYouTubeにアップロードした1080p品質で再処理した動画も\n\n補足レトロスペクティブビデオ(詳細を望む人のためのクローズアウトへの補足)\n・https://www.youtube.com/watch?v=Ws JyFU52Mk\n・ボヌス・メニアル:これは、元のクローズアウト・ビデオ(長すぎた)で、プロジェクトに対するより長いフォーマットの反射に興味がある場合はここに含まれています."
+    }
+  ]
+}

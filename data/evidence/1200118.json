@@ -1,0 +1,58 @@
+{
+  "title": "Gluon Stablecoin Protocol - Research Paper and Formal Verification",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "・Section of a technical paper, describing the protocol.",
+      "criteria": "・Each protocol operation should be clearly mathematically defined. \n・﻿The definitions should specify which assets are provided by the user and which assets are given to the user.",
+      "report": "Link to a draft of the paper: https://drive.google.com/file/d/1j32_tVEk8V8KHNML8gBbFwVSjnhBU2jq/view?usp=drive_link \nLook for Section 2 (\"Protocol Description\") in pages 1 and 2 of the paper. As required by the acceptance criteria, this section contains:\n・Clear mathematical definitions of the protocol's 4 operations, shown in Tables 1, 2 and 3. \n・﻿For each of the 4 operations, a mathematical specification of which assets are provided by the user (in the second column of the tables) and which assets are given to the user (in the third column of the table). \n\nThere is also a numbered list in the left column of the first page, describing the asset exchanges more informally, in plain English.\nPlease note that all other sections besides Section 2 are outside the scope of this milestone. Please disregard them in this milestone. Although implementation and deployment are out of this Catalyst project's scope, a beta version of the Gluon protocol is already live at https://gluon.gold . The reviewers are welcome to try it.\nThank you!\nDr. Bruno Woltzenlogel Paleo (a.k.a Zahnentferner)",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 30000,
+      "promise": "・Paper section containing the stability theorems and their mathematical proofs.",
+      "criteria": "・The proofs should have a similar level of mathematical detail as the proofs found in the Djed paper.\n・As for which theorems we are going to state and prove, we will try to prove the same theorems that we have proven for Djed. However, because Gluon is different and, in some ways, more complex than Djed, we might need to adapt the statements of some theorems to Gluon's context and some theorems might not be provable at all for Gluon. In cases when a theorem that was provable for Djed is not provable for Gluon, we will provide a short explanation (of up to half a page) explaining why this is th",
+      "report": "Update: apologies for the inaccessible link in our previous PoA. We have replaced the inaccessible link by an accessible one below.\n=======\nWe are pleased to report that we have completed this milestone! The proofs of theorems 1 and 2 were much harder than expected, but we overcame the challenges. Six of Djed's eight theorems turned out to be provable for Gluon, whereas two were unprovable.\nHere is the evidence of milestone completion:\n・Link to a draft of the paper, where the 6 provable theorems and their proofs are stated in section 3: https://drive.google.com/file/d/1ZrK5Odp5jFG8_HQUkGDC09WSGOxM7zGM/view?usp=drive_link\n・Link to a Google Doc explaining why Djed's theorems 5 and 8 are unprovable for Gluon: https://docs.google.com/document/d/1EfBOmC8IoGxSu7SNZ2ZY9PbSIToHoXusJ5t14tzxhkU/edit?tab=t.0",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 25000,
+      "promise": "・Formal proofs of the stability theorems.",
+      "criteria": "・The formal proofs should be done in a tool such as Coq, Isabelle, Agda, Z3, Lustre or similar automated/interactive theorem proving tool.\n・If a proof is not formalizable (e.g. due to limitations of the available tools), we will provide a short explanation (up to half a page) explaining why it is not formalizable.",
+      "report": "We are pleased to report that we have concluded the formalization of the proofs of the stability theorems in the interactive theorem prover Rocq (previously known as Coq). As required, as evidence of milestone completion, we make the source code of the formal proofs publicly available at this repo: \nhttps://github.com/StabilityNexus/Gluon-Formalization-Coq/tree/main/Formalization\n\nFurthermore, we have gone beyond the minimum requirements for milestone completion by writing 5 pages about the formalization work, in section 4 of the paper available here (https://drive.google.com/file/d/1Zc2wby_JpM_gxiaoknx_Y-3oZNkjKQKP/view?usp=sharing). section 5 of the paper also discusses why some theorems that were provable for Djed are not provable for Gluon, as required.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 15000,
+      "promise": "・Final close-out report\n・Final closeout video\n・Complete paper, with the following new sections: Introduction, Related Work and Conclusion.",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・The paper should be available in a public academic paper repository such as eprint or arxiv.",
+      "report": "We are pleased to report that we have completed this project. This final milestone's outputs are:\n・Complete paper: https://eprint.iacr.org/2025/1372\n・Final close-out report: https://drive.google.com/file/d/11hQF9RVleF1l64Nj_g5Uod9aZIbcMY8J/view?usp=sharing\n・Final close-out video: https://youtu.be/vjoWkeaJfFs\n\nThe paper now has \"Introduction\", \"Related Work\" and \"Conclusion\" sections and is available in the public academic paper repository eprint, as required by the acceptance criteria.\nThe final close-out report and video satisfy the requirements stated in catalyst's documentation (https://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv).\nWe are thankful and grateful to the Cardano Community for supporting this research project with a Catalyst grant. We look forward to seeing Cardano users benefitting from Gluon Gold (https://gluon.gold) through the Rosen Bridge.",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

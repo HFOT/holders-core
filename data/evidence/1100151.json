@@ -1,0 +1,74 @@
+{
+  "title": "gRPC ❤️ Cardano: A streaming API for Cardano using Dolos by TxPipe",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 37498,
+      "promise": "- Publicly available source code of the improved Dolos component including all of the required endpoints.\n- A binary release of the improved Dolos component including all of the required endpoints.\n- Documentation and instructions on how to interact with each of the newly available gRPC endpoints in Dolos.",
+      "criteria": "A developer is able to install the binary release of Dolos and follow the provided instructions to make gRPC calls to each of the newly created endpoints (watch, build, submit modules) using a generic gRPC client",
+      "report": "We are pleased to announce the successful completion of Milestone #1 for the Dolos gRPC Catalyst project. This consists in the implementation of the remaining gRPC (or UTxO RPC) endpoints for all the modules, namely the submit, sync, watch and query (formerly called \"build\") modules.\nWe are proud of the rapid progress made during this milestone and are sincerely excited about opening up this working prototype of Dolos for feedback from the community.\nMilestone goals and Evidence of Completion\n・Source code: publicly available source code of the improved Dolos component including all of the required endpoints:\n・https://github.com/txpipe/dolos/tree/main/src/serve/grpc\n・https://github.com/txpipe/dolos/tree/main/src/querydb \n・Binary release: a binary release of the improved Dolos component including all of the required endpoints:\n・https://github.com/txpipe/dolos/releases/tag/v0.8.0 \n・Documentation: documentation and instructions on how to interact with each of the newly available gRPC endpoints in Dolos\n・https://dolos.txpipe.io/apis/grpc \n・https://utxorpc.org/introduction\n・Milestone summary video: A social post was published from the main developer describing the feature. It including technical details and short demo video:\n・https://x.com/santicarmuega/status/1786351572802269476 \n\nNext Steps\nIn the upcoming milestone, we will provide library packages for different programming languages of interest (Node.js, Rust, Python, etc.), in the corresponding package manager registries (respectively, npm, crates.io, pypi, etc.). Each of these libraries will be accompanied with suitable documentation and installation instructions for each of the client SDKs.\nWe believe the outcomes of the upcoming milestone might considerably impact mainstream adoption of Dolos as data node and streaming API for Cardano developers to leverage in their dApp projects. It is known that Cardano has evolved to the point where dApps are implemented in a variety of different languages (like the aforementio",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 37673,
+      "promise": "- publicly available library packages for each of the client SDKs published on the corresponding package manager registries (eg: npm, crates.io, pypi, etc)\n- documentation and instructions on how to install and use the client SDK in each of the available languages.\n- publicly available source code for the client SDKs in each of the available languages.",
+      "criteria": "A developer is able to follow the available instructions to install the client libraries in their own project and execute remote call to the gRPC endpoints of the API without having to interact with low-level protocol details.",
+      "report": "- Links to publicly accessible libraries in the corresponding package manager registries\n・Rust: https://crates.io/crates/utxorpc\n・Node: https://www.npmjs.com/package/@utxorpc/sdk?activeTab=readme\n・Go: https://pkg.go.dev/github.com/utxorpc/go-sdk\n・Python: https://pypi.org/project/utxorpc/ \n\n- Link to documentation with usage instructions for each library\nDocumentation on how to install the SDKs can be found on the documentation. \nWe built examples of how to use each SDK on each language’s repo.\n・Rust: https://github.com/utxorpc/rust-sdk/tree/main/examples\n・Node: https://github.com/utxorpc/node-sdk/blob/main/examples/follow-tip.ts\n・Go: https://github.com/utxorpc/go-sdk/blob/main/examples/sync/main.go\n・Python: https://github.com/utxorpc/python-sdk/tree/main/examples\n\n- Links to source-code repositories containing the logic for each client library\n・Rust: https://github.com/utxorpc/rust-sdk/\n・Node: https://github.com/utxorpc/node-sdk\n・Go: https://github.com/utxorpc/go-sdk\n・Python: https://github.com/utxorpc/python-sdk/tree/main",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 26
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 37673,
+      "promise": "- Automate provision and monitoring of Dolos instances on Kubernetes clusters\n- Automate API access configuration in developer projects\n- Rollout the infrastructure to currently active Demeter clusters",
+      "criteria": "A developer is able to follow the available instructions to execute remote calls to the gRPC endpoints in Demeter without having to install any kind of server-side component.",
+      "report": "Link source-code for Kubernetes provisioning scripts (fixed)\n・https://github.com/demeter-run/ext-cardano-utxorpc/tree/main/bootstrap \n\nLink to usage documentation for Demeter users\n・https://docs.demeter.run/ports/utxo-rpc \n\nVideo showing how to enable and access the API using Demeter platform\n・https://youtu.be/6uJ5O4KuOiI \n・https://youtu.be/_6D1qJHMcPA ﻿",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 37674,
+      "promise": "- Publicly available source code in a forked repository Translucent and MeshJS libraries that includes a gRPC provider\n- Documentation including simple examples of how to configure each of the libraries to use the newly added gRPC providers",
+      "criteria": "A developer is able to use existing frameworks in the ecosystem (Translucent, MeshJS) that use the new gRPC endpoints as backend providers with very little change required",
+      "report": "Since the approval of the Catalyst proposal, the landscape of transaction building libraries has shifted. The Translucent project has been deprecated in favor of a new library called “Blaze” (evidence here). Our new provider implementation focuses on Blaze (49 stars at the moment of writing) because we consider that it matches what the developer community wants\n﻿\nBlaze\nThe code for our new provider lives in the following Blaze repo on the Butane repository: \nhttps://github.com/butaneprotocol/blaze-cardano/blob/main/packages/blaze-query/src/u5c.ts \nDocumentation with instructions and examples showing how to use the new gRPC backend provider can be found here: \nhttps://github.com/butaneprotocol/blaze-cardano/blob/main/examples/u5c/index.ts \n\nMesh\nThe code for our new provider lives in the following Mesh fork on the TxPipe repository: \nhttps://github.com/txpipe/mesh/blob/9e3e37455e098fcce58c8da1736ccdd9079ffef2/packages/mesh-provider/src/u5c.ts\nDocumentation with instructions and examples showing how to use the new gRPC backend provider can be found here: \nhttps://github.com/txpipe/mesh/blob/9e3e37455e098fcce58c8da1736ccdd9079ffef2/packages/mesh-provider/test/u5c/test.ts",
+      "kinds": [
+        "code"
+      ],
+      "links": 9
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 26564,
+      "promise": "- a video summarizing the process and results of the whole project.\n- publicly available source-code containing all artifacts produced throughout the project.\n- written report describing the development process and any relevant findings.\n- quantitative report showing any available usage metrics of the API hosted in Demeter platform.",
+      "criteria": "- a technical reviewer / developer is able to assess the validity of the source code with reasonable accuracy\n- a reviewer is able to audit the delivered artifacts ensuring that all required tasks have been completed.\n- a reviewer is able to appreciate the usage of the API hosted in the Demeter platform.",
+      "report": "We're very proud to submit this final milestone with our close out report and video. The following links provide the required evidence of completion.\nLink to the Github repository containing the source code for the UTxO RPC interface specifications and codegen workflows:\nhttps://github.com/utxorpc/spec \nLink to the rendered documentation website containing a human-readable version of the specification and developer guiding material: \nhttps://utxorpc.org \nLink to the Github repository containing the source code for the Dolos Cardano Data node, including the integration with the gRPC interface:\nhttps://github.com/txpipe/dolos \nLink to Demeter platform where the entry point for accessing the UTxO RPC service is available:\nhttps://demeter.run/ports/cardano-utxorpc \nLink to the quantitative report showing usage of the UTxO RPC endpoints in the Demeter platform for the last 20 days:\nhttps://docs.google.com/document/d/1yMRe5P9RS6AFJKLLMG6mHfHrlsf78s1ismjov9chPf0/edit?usp=sharing \nLink to Close-out video:\nhttps://youtu.be/h9ZwOaoxBkk \nLink to Close-out report:\nhttps://docs.google.com/document/d/1726vyOb1KYcl4gWAQ0KSYYXv9akRbDv8txHagN_PU0w/edit?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

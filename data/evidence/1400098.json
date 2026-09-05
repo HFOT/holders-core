@@ -1,0 +1,48 @@
+{
+  "title": "Plutus Debugger VSCode Plugin",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 18000,
+      "promise": "・A functional breakpoint debugger core engine integrated into the VSCode environment, supporting Plutus V2/V3 scripts.\n・A transaction emulation engine capable of simulating basic on-chain conditions for common validator types (e.g., NFT minting, basic multisig).\n・A foundational test suite with test scripts covering the core validator scenarios, achieving 90% code coverage for the debugger engine.\n・A pre-release GitHub repository (v0.1.0) containing all source code, build instructions, and the initial test suite.",
+      "criteria": "1.The debugger successfully pauses and resumes execution at 100% of defined breakpoints across ≥50 validator test scripts.\n2.The emulator accurately simulates on-chain conditions with <5 ms average timing deviation across ≥10 test scenarios (NFT minting, multisig, DEX swaps, staking, etc.).\n3.Achieves ≥90% line and branch coverage for the core debugging and emulation modules; all tests pass successfully.\n4.Source code publicly released under open-source license, tagged v0.1.0, including README and build instructions.",
+      "report": "Plutus Debugger VSCode Plugin is a Visual Studio Code extension that allows developers to debug Plutus V2/V3 smart contracts using breakpoints and simulate transactions locally. It includes a transaction emulator, test cases with over 90% coverage, and is publicly released as v0.1.0 with source code and documentation on GitHub.\n・Live Debugging with Breakpoints : https://youtu.be/sOK8N5Mpz58\n・Transaction Simulation in VSCode: https://youtu.be/ZMVcNNrigwc\n・Simulation Logs, Results, and Test Report (PDF): https://github.com/kwired/Plutus-Debugger-VSCode-Plugin/tree/main/docs/Simulation%20result\n・Testing and Coverage Report (PDF): https://github.com/kwired/Plutus-Debugger-VSCode-Plugin/tree/main/docs/coverage_report\n・Public GitHub Release (v0.1.0): https://github.com/Kwired/Plutus-Debugger-VSCode-Plugin/releases/tag/v0.1.0",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 18000,
+      "promise": "1.VSCode Extension Published - The vscode extension publicly available on the official Marketplace.\n2.Gas Profiler Module - Provides heatmap visualization that highlights the top 3 most resource-intensive operations (CPU/memory) using the Plutus V2/V3 cost model, enabling developers to optimize scripts efficiently.\n3.Mock Wallet Generator - Allows address creation, transaction signing, and local simulation.\n4.Automated Testnet Deployment - The automated testnet pipeline deployment completes the deployment workflow (building -> balancing -> submitting) within 3 minutes(95th percentile).",
+      "criteria": "1.The VSCode extension installed by at least 50 beta tester without errors across Windows, Linux, with ≥90% installation success rate confirmed via user surveys..\n2.The gas profiler identifies and visualizes top 3 costly operations across at least 10 validator scripts, validated against Cardano cost metrics.\n3.The mock wallet performs transaction signing and execution reliably inside the extension interface.\n4.The automated testnet pipeline completes full deployment and transaction confirmation within 3 minutes (95th percentile).",
+      "report": "1.VSCode Extension – https://open-vsx.org/extension/kwired/plutus-debugger \n https://marketplace.visualstudio.com/items?itemName=kwired.plutus-debugger\n Survey result: https://github.com/Kwired/Plutus-Debugger-VSCode-Plugin/blob/main/docs/survey.pdf\n2.Gas Profiler – https://youtu.be/-5ET8qyQeMg\n Report: https://github.com/Kwired/Plutus-Debugger-VSCode-Plugin/blob/main/docs/Report%20Gas%20Profiler%20.pdf\n3.Mock Wallet – https://youtu.be/pdH8s_vHiBM\n4. Automated Pipeline – \n a) Three successful Cardano testnet transactions explorer links:\n 1) https://preprod.cardanoscan.io/transaction/24c467f1ec4ab25f339724bc3d67fe48a473e9e99c90b41bef6455d36a7a67b6\n 2)https://preprod.cardanoscan.io/transaction/d30f2b7998604aa5a8ff797961a5029e687f858de78ab888ba0e9bcdbd6ff0f7\n 3) https://preprod.cardanoscan.io/transaction/e674f0a42697c5e86a4137dca65f38a57c12e2c3c80fb775d89819290ce529d6\n b) Benchmark summary: https://github.com/Kwired/Plutus-Debugger-VSCode-Plugin/blob/main/docs/benchmark_summary.md\n 3) Logs in the screenshots: https://github.com/Kwired/Plutus-Debugger-VSCode-Plugin/tree/main/docs/logs",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 22
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 24000,
+      "promise": "・Final close-out report\n・Final closeout video\n\n・Comprehensive Documentation Portal: \n・A publicly accessible GitHub Pages site hosting API references\n・ troubleshooting guides \n・FAQs for the Plutus Debugger VSCode Plugin.\n・Security Audit Report.\n・Interactive Tutorials: \n・A series of video tutorials (hosted on YouTube)\n・interactive Jupyter/Colab notebooks covering breakpoint debugging and gas profiling for Plutus V2/V3.\n・Community Workshop: \n・A live, online workshop to launch the tool to the community, including presentation slides and sample code for attendees (live on youtube).",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・For Documentation Portal: The site is live and achieves over 1,000 unique weekly active users for two consecutive weeks. User feedback from GitHub Discussions indicates the guides resolve common issues.\n・For Security Audit Report: A finalized report that shows the zero critical vulnerability of the extension.\n・For Interactive Tutorials: 90% of participants can successfully debug script independently, verified through task completion and short quizzes.\n・For Community Workshop: The workshop is held live wit",
+      "report": "Final Closeout Report\nhttps://github.com/Kwired/Plutus-Debugger-VSCode-Plugin/blob/main/docs/sur/final_closeout_report.pdf\nFinal Closeout Video\nhttps://youtu.be/7rKYqu4upSo\nDocumentation Portal\nhttps://kwired.github.io/Plutus-Debugger-VSCode-Plugin/\nDocumentation Analytics\nhttps://github.com/Kwired/Plutus-Debugger-VSCode-Plugin/blob/main/docs/sur/analytics.pdf\nSecurity Audit Report\nhttps://github.com/Kwired/Plutus-Debugger-VSCode-Plugin/blob/main/docs/sur/Security_Audit_Report.pdf\nInteractive Tutorials — YouTube\nhttps://www.youtube.com/playlist?list=PLRgDZ-VTHOrY\nInteractive Tutorials — Jupyter Notebooks\nhttps://github.com/Kwired/Plutus-Debugger-VSCode-Plugin/tree/main/tutorials\nQuiz Results\nhttps://github.com/Kwired/Plutus-Debugger-VSCode-Plugin/blob/main/docs/sur/Qu.pdf\nParticipant Feedback\nhttps://github.com/Kwired/Plutus-Debugger-VSCode-Plugin/blob/main/docs/sur/feedb.pdf\nCommunity Workshop\nhttps://youtube.com/live/DSBEHYquJas?feature=share\nWorkshop Analytics\nhttps://github.com/Kwired/Plutus-Debugger-VSCode-Plugin/blob/main/docs/sur/liveanalytics.pdf",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 22,
+      "cut": true
+    }
+  ]
+}

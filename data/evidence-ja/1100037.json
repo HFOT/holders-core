@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・リブソジウムと統合する暗号化モジュール用のCソースコード。\n・モジュールソースコードの包括的なドキュメント\n・MISRAコンプライアンスチェック、ユニットテスト、Valgrindメモリチェックを含む初期品質保証レポート.",
+      "criteria": "・Module は、Cardano 要件に準拠して、暗号化操作のための libsodium と統合します。\n・Cソースコードは、MISRA規格に準拠し、よく文書化され、初期テストとValgrindチェックを渡します.",
+      "report": "Dear Catalystプロジェクトレビューチーム、\nCardano CプロジェクトでMilstone 1の完了を詳述するドキュメントをお伝えします。 成果の証明(PoA)は、暗号化モジュールの開発と初期の品質保証を含む、私たちが達成した成果物について説明しています。\n以下のリンクからドキュメントにアクセスすることができます。\nhttps://github.com/Biglup/cardano-c/blob/main/project catalyst/m01 poa/PROOF OF ACHIVEMENT.md\nこの文書には、ソースコード、ドキュメント、MISRAコンプライアンスレポート、ユニットテストカバレッジレポート、Valgrindメモリチェック結果へのリンクが含まれています。\nお客様からのご意見・ご要望等、ご意見・ご要望等ございましたら、お気軽にお問い合わせ下さい。\n今後とも宜しくお願い申し上げます。 あなたのレビューとフィードバックをお待ちしています。\n最高の点、\nログイン"
+    },
+    {
+      "no": 2,
+      "promise": "・Cardanoアドレスのエンコーディングとデコードをサポートするモジュール用のCソースコード。\n・モジュールソースコードの包括的なドキュメント\n・試験結果、MISRA順守、Valgrindチェックを含む品質保証報告書を更新しました.",
+      "criteria": "・バイロンとシェリーの時代を横断したアドレスエンコーディング/デコードを認証\n・C ソースコードは MISRA 規格を満たし、すべてのテストと Valgrind メモリチェックを渡します.",
+      "report": "Dear Catalystプロジェクトレビューチーム、\nCardano CプロジェクトでMilstone 2の完了を詳細に説明するドキュメントをお伝えします。 [CIP-019 ](https://cips.cardano.org/cip/CIP-19) のすべてのアドレスエンコーディングとデコードの成果物について説明しています。\n・Byronアドレス\n・拠点所在地\n・エンタープライズアドレス\n・ポイントアドレス\n・リワードアドレス\n\n以下のリンクからドキュメントにアクセスすることができます。\nhttps://github.com/Biglup/cardano-c/blob/main/project catalyst/m02 poa/PROOF OF ACHIVEMENT.md\nこの文書には、ソースコード、ドキュメント、MISRAコンプライアンスレポート、ユニットテストカバレッジレポート、Valgrindメモリチェック結果へのリンクが含まれています。\nお客様からのご意見・ご要望等、ご意見・ご要望等ございましたら、お気軽にお問い合わせ下さい。\n今後とも宜しくお願い申し上げます。 あなたのレビューとフィードバックをお待ちしています。\n最高の点、\nログイン"
+    },
+    {
+      "no": 3,
+      "promise": "・サポートされているCardano構造/タイプに対するCBORシリアライズ/デシリアライズを実施するCソースコード\n・テスト、MISRAコンプライアンスチェック、Valgrindメモリ管理チェックなど、品質保証の開始.",
+      "criteria": "・すべてのカルダノ構造のシリアル化/デシリアライゼーションの成功は、https://github.com/IntersectMBO/cardano-ledger/blob/master/eras/conway/impl/cddl-files/conway.cddl で指定されたすべての消去のトランザクションを構築するために必要な。\n・Cソースコードのドキュメンテーション、MISRA準拠、Valgrindチェックの清掃.",
+      "report": "Dear Catalystプロジェクトレビューチーム、\nCardano Cプロジェクトでは、Milstone 3の完了を詳細に説明するドキュメントを共有しています。 達成の証拠(PoA)は、コンウェイの時代までのタイプのためのCBORのシリアライズ/デシリアライゼーションの成果を概説します。\n・アセットID\n・asset id list\n・アセットマップ\n・アセット名\n・asset name list\n・アセット名/マップ\n・multi asset\n・政治 id list\n・補助データ\n・metadatum\n・metadatum kind\n・metadatum label list\n・metadatum list\n・metadatum map\n・plutus v1 script list\n・plutus v2 script list\n・plutus v3 script list\n・transaction metadata\n・auth committee hot cert は、\n・cert type\n・認証\n・認証設定\n・genesis key delegation cert\n・ミル・サート\n・mir cert pot type\n・mir cert type\n・mir to pot cert\n・mir to stake creds cert\n・pool registration cert(プール)\n・pool retirement cert(プール)\n・登録 drep cert\n・登録証明書\n・resign committee cold cert\n・stake delegation cert\n・stake deregistration cert\n・stake registration cert\n・stake registration delegation cert\n・stake vote delegation cert\n・stake vote registration delegation cert\n・unregister drep cert\n・登録解除 cert\n・update drep cert\n・vote delegation cert\n・vote registration delegation cert\n・アンカー\n・大ヒット\n・資格\n・credential type\n・ダタム\n・ダントタイプ\n・ドレス\n・drep type\n・ex units\n・governance action id\n・network id\n・protocol version\n・reward address list\n・ユニット インターバル\n・タキソ\nサイトマップ\n・constr plutus data\n・plutus data\n・plutus data kind\n・plutus list\n・プルタスマップ\n・ipv4\n・ipv6\n・multi host name relay\n・プール・メタデータ\n・プール所有者\n・pool params\n・リレー\nリレータイプ\n・リレー\n・single host addr relay(シンジル)\n・single host name relay(シンジル)\n・コミティー\n・committee members map について\n・施設\n・credential set\n・governance action type\n・hard fork initiation action\n・info action\n・new constitution action\n・no confidence action\n・parameter change action\n・proposal procedure\n・proposal procedure set\n・treasury withdrawals action\n・update committee action\n・コストモデル\n・costmdls\n・drep voting thresholds\n・ex unit prices\n・pool voting thresholds\n・proposed param"
+    },
+    {
+      "no": 4,
+      "promise": "・取引ビルダー用のCソースコードは、Conwayまでの有効なCardanoトランザクションのすべての種類を作成できます。\n\n・住所(ADA・原資産)間の価値譲渡\n・Plutusスクリプト(Plutus V3まで)で保護されている出力の終了。\n・Plutusスクリプト(Plutus V3)を使用した資産のマイニング\n・ネイティブスクリプトから守られている出力の終了\n・ネイティブスクリプトを使用したアセットのマイニング\n・Conway時代の利用可能なすべての証明書をhttps://github.com/IntersectMBO/cardano-ledger/blob/master/eras/conway/impl/cddl-files/conway.cddl#L275-L293で指定します。\n・補助データをトランザクションに割り当てます。\n・テスト、MISRA準拠検証、Valgrindメモリ管理チェックを含む品質保証報告書.",
+      "criteria": "・Transaction Builderは、Conway時代までのCardanoのすべてのトランザクションタイプの作成をサポートし、テストで検証されています。 試験カバレッジカバー:\n\n・住所(ADA・原資産)間の価値譲渡\n・Plutusスクリプト(Plutus V3まで)で保護されている出力の終了。\n・Plutusスクリプト(Plutus V3)を使用した資産のマイニング\n・ネイティブスクリプトから守られている出力の終了\n・ネイティブスクリプトを使用したアセットのマイニング\n・Conway時代の利用可能なすべての証明書を https://github.com/IntersectMBO/cardano-ledger/blob/master/eras/conway/impl/cddl-files/conway.cddl",
+      "report": "触媒プロジェクトレビューチーム、\nCardano Cプロジェクトで、Milstone 4の完了を詳述するドキュメントをお伝えします。 達成の証拠(PoA)は、高レベルのトランザクションビルダーの成果物について説明しています。\n・アドレス間での値を転送する\n・Plutusスクリプト(Plutus V3)でガードしている出力をスペンド\n・Plutusスクリプトを用いたMintアセット(Plutus V3)\n・ネイティブスクリプトから守られている出力をスペンド\n・ネイティブスクリプトを用いたMintアセット\n・Conway時代の利用可能なすべての証明書を発行\n・補助データをトランザクションに添付\n\n以下のリンクからドキュメントにアクセスすることができます。\nhttps://github.com/Biglup/cardano-c/blob/main/project catalyst/m04 poa/PROOF OF ACHIVEMENT.md\nこの文書には、ソースコード、ドキュメント、MISRAコンプライアンスレポート、ユニットテストカバレッジレポート、Valgrindメモリチェック結果、実用的な例へのリンクが含まれています。\nお客様からのご意見・ご要望等、ご意見・ご要望等ございましたら、お気軽にお問い合わせ下さい。\n今後とも宜しくお願い申し上げます。 あなたのレビューとフィードバックをお待ちしています。\n最高の点、\nログイン"
+    },
+    {
+      "no": 5,
+      "promise": "・すべての開発モジュールの包括的なコードドキュメント。\n・MISRA-c 2012規格に準拠した詳細な報告\n・試験室は80%以上を上回る試験室です。\n・Valgrind(または類似)は、メモリ管理能力の実証を報告します。\n・プロジェクトクローズアウトレポート\n・プロジェクトクローズアウト動画",
+      "criteria": "・すべてのコードの完全かつクリアなドキュメント\n・MISRA-c 2012の完全準拠、警告なし\n・ユニットテストカバレッジ、メモリ管理対象の達成.",
+      "report": "触媒プロジェクトレビューチーム、\nカルダノCプロジェクトで最後のマイルストーンの完成を詳述するドキュメントをお伝えします。 達成の証拠(PoA)は、プロジェクトの終了のための成果物の最後のセットを概説します。\n・すべての開発モジュールの包括的なコードドキュメント。\n・MISRA-c 2012規格に準拠した詳細な報告\n・試験室は80%以上を上回る試験室です。\n・Valgrind(または類似)は、メモリ管理能力の実証を報告します。\n・プロジェクトクローズアウトレポート\n・プロジェクトクローズアウト動画\n\n以下のリンクからドキュメントにアクセスすることができます。\nhttps://github.com/Biglup/cardano-c/blob/main/project catalyst/final poa/PROOF OF ACHIVEMENT.md\nこの文書には、ソースコード、ドキュメント、MISRAコンプライアンスレポート、ユニットテストカバレッジレポート、Valgrindメモリチェック結果、実用的な例へのリンクが含まれています。\nさらに、このマイルストーンは、プロジェクトクローズアウトレポートとビデオの両方をリクエストしたように含まれています。\n・休みの報告:https://docs.google.com/document/d/1nBfPQ10V 28ubKZkpqAhtJANqMQvMqNNsBlOPUFB97Y/\n・クローズアウト動画 https://www.youtube.com/watch?v=NdU-Sy2LAsU\n\nお客様からのご意見・ご要望等、ご意見・ご要望等ございましたら、お気軽にお問い合わせ下さい。\n今後とも宜しくお願い申し上げます。 あなたのレビューとフィードバックをお待ちしています。\n最高の点、\nログイン"
+    }
+  ]
+}

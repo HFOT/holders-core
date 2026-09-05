@@ -1,0 +1,84 @@
+{
+  "title": "[nftcdn.io] Open Source JavaScript NFT Media Viewer/Player (music, video, 3D, etc.)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 32559,
+      "promise": "・image/png, image/gif, image/webp and image/jpeg viewing integration within the open source JavaScript library\n・Video of working example of this capability in practice as evidence for non-technical reviewers",
+      "criteria": "・Image files are able to be displayed using the open source JavaScript library\n・Video shows the released library's capability with a working example",
+      "report": "Outputs:\n・Open source JavaScript NFT Media Viewer/Player : https://github.com/nftcdn/media-player\n・Video showing its capabilities: https://www.youtube.com/watch?v=W-vi9lfW2wU\n\nAcceptance Criteria:\n・Images files are supported as described in the documentation overview and supported media types.\n・The video images section shows how all the expected image formats are supported.\n\nEvidence of Milestone completion\n・The library is open source (as proved by its MIT license) and publicly available in the expected GitHub repository.\n・The video published on YouTube shows working examples of the library expected capabilities including all expected image types (image/png, image/gif, image/webp and image/jpeg).",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 32559,
+      "promise": "・Text/HTML file viewing integration within the open source JavaScript library\n・Video of working example of this capability in practice as evidence for non-technical reviewers",
+      "criteria": "・Text/HTML files are able to be displayed using the open source JavaScript library\n・Video shows the released library's capability with a working example",
+      "report": "Outputs:\n・Open source JavaScript NFT Media Viewer/Player : https://github.com/nftcdn/media-player\n・Video showing its capabilities: https://www.youtube.com/watch?v=W-vi9lfW2wU\n\nAcceptance Criteria:\n・Text/HTML files are supported as described in the documentation overview and supported media types.\n・The video text/html section shows how the expected web format is supported.\n\nEvidence of Milestone completion\n・The library is open source (as proved by its MIT license) and publicly available in the expected GitHub repository.\n・The video published on YouTube shows working examples of the library expected capabilities including text/html documents.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 32559,
+      "promise": "・Model/gltf and model/glb file viewing integration within the open source JavaScript library\n・Video of working example of this capability in practice as evidence for non-technical reviewers",
+      "criteria": "・3D model files are able to be displayed using the open source JavaScript library\n・Video shows the released library's capability with a working example",
+      "report": "Outputs:\n・Open source JavaScript NFT Media Viewer/Player : https://github.com/nftcdn/media-player\n・Video showing its capabilities: https://www.youtube.com/watch?v=W-vi9lfW2wU\n\nAcceptance Criteria:\n・3D glTF models are supported as described in the documentation overview and supported media types.\n・The video glTF section shows how the expected 3D model format is supported.\n\nEvidence of Milestone completion\n・The library is open source (as proved by its MIT license) and publicly available in the expected GitHub repository.\n・The video published on YouTube shows working examples of the library expected capabilities including glTF (model/gltf+json) and GLB (model/gltf-binary) support.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 32559,
+      "promise": "・Application/PDF and text/plain file viewing integration within the open source JavaScript library\n・Video of working example of this capability in practice as evidence for non-technical reviewers",
+      "criteria": "・Document files are able to be displayed using the open source JavaScript library\n・Video shows the released library's capability with a working example",
+      "report": "Outputs:\n・Open source JavaScript NFT Media Viewer/Player : https://github.com/nftcdn/media-player\n・Videos showing its capabilities: \n・overview and support for images, web documents and 3d models (milestones 1+2+3)\n・support for audio, PDF, text and video files (milestones 4+5+6)\n\nAcceptance Criteria:\n・PDF and plain text files are supported as described in the documentation overview and supported media types.\n・The video update shows PDF and plain text documents support.\n\nEvidence of Milestone completion\n・The library is open source (as proved by its MIT license) and publicly available in the expected GitHub repository.\n・The video published on YouTube shows working examples of the library expected capabilities including PDF (application/pdf) and plain text (text/plain) support.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "10",
+      "cost": 32559,
+      "promise": "・Audio/wav, audio/mpeg, audio/x-flac file playing integration within the open source JavaScript library\n・Video of working example of this capability in practice as evidence for non-technical reviewers",
+      "criteria": "・Audio files are able to be played using the open source JavaScript library\n・Video shows the released library's capability with a working example",
+      "report": "Outputs:\n・Open source JavaScript NFT Media Viewer/Player : https://github.com/nftcdn/media-player\n・Videos showing its capabilities: \n・overview and support for images, web documents and 3d models (milestones 1+2+3)\n・support for audio, PDF, text and video files (milestones 4+5+6)\n\nAcceptance Criteria:\n・Audio files are supported as described in the documentation overview and supported media types.\n・The video update shows audio/wav, audio/mpeg (mp3) and audio/x-flac (FLAC) support.\n\nEvidence of Milestone completion\n・The library is open source (as proved by its MIT license) and publicly available in the expected GitHub repository.\n・The video published on YouTube shows working examples of the library expected capabilities including audio (audio/wav, audio/mpeg, audio/x-flac) support.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 6,
+      "month": "11",
+      "cost": 32554,
+      "promise": "・Video/mp4 file playing/viewing integration within the open source JavaScript library\n・Open source documentation introducing how to use the library and providing API details\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Video files are able to be played using the open source JavaScript library\n・Publication of full open source JavaScript library on GitHub\n・Documentation is included in the repository and includes details on the published library (how to use & API details)\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Outputs:\n・Open source JavaScript NFT Media Viewer/Player : https://github.com/nftcdn/media-player\n・NPM package release\n・Videos showing its capabilities:\n・overview and support for images, web documents and 3d models (milestones 1+2+3)\n・support for audio, PDF, text and video files (milestones 4+5+6)\n・close out report\n・close out video\n\nAcceptance Criteria:\n・MP4 Video files are supported as described in the documentation overview and supported media types.\n・The video update shows video/mp4 support.\n・The close out report is publicly available at https://nftcdn.io/doc/nftcdn-media-player_close-out.pdf.\n・The close out video is publicly available at https://www.youtube.com/watch?v=q-iKmz3zFjc.\n\nEvidence of Milestone completion\n・The library is open source (as proved by its MIT license) and publicly available in the expected GitHub repository.\n・The video published on YouTube shows working examples of the library expected capabilities including video (video/mp4) support.\n・Public links to close out report and video have been provided.",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 15
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "title": "CHARLI3: Live API with all Cardano DEX aggregated data",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 74025,
+      "promise": "・Configure Charli3 Dendrite to extract all raw liquidity pool and trading activity data from supported Cardano DEXs once per block\n・Implement test extraction of raw data from 100% of the minimum supported DEXs\n\nUsing Charli3 Dendrite, configure raw data extraction from all supported Charli3 Dendrite DEXs.\n・Minimum Supported DEXs:\n・VyFi\n・Minswap\n・Muesliswap\n・Spectrum\n・Sundae\n・Wingriders\n・Axo\n・Genius Yield\n・Full Live updated list here: https://charli3-official.github.io/charli3-dendrite/ (may include more support in the future)",
+      "criteria": "All raw data (DEX Order books trading activity and Liquidity Pool data) is extracted from 100% of the minimum supported Cardano DEXs once per block.\nTeam is able to show at least 2 blocks worth of raw data extracted from 100% of the supported DEXs.\n・Minimum Reported / Supported DEXs:\n・VyFi\n・Minswap\n・Muesliswap\n・Spectrum\n・Sundae\n・Wingriders\n・Axo\n・Genius Yield\n・Full Live updated list here: https://charli3-official.github.io/charli3-dendrite/ (may include more support in the future)",
+      "report": "Thanks for the feedback -- we've created a visual aid for the demo video to showcase each DEX: https://vimeo.com/1054325392/81d8296ad9?share=copy\nView the output of the raw data here: http://wgg8kws0kscks0woo000cw8w.167.235.164.240.sslip.io/\nDescription: \nWe use Charli3 Dendrite to extract all raw data for every supported DEX except AXO who did not provide contract information to our team so we have to rely on their API. The front-end we created selects 5 random updates from each DEX to demo that we are gathering information every block. What you are seeing is the last slot of a block (once all slots in a block are complete, we aggregate the price from all pools/etc and show you the price). We are actively working with AXO to hopefully get details on all their contracts (these are not public).",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 74025,
+      "promise": "・Create database and integrate with Charli3 Dendrite configuration from milestone 1\n・Process data in the database to provide aggregate current (last block) CNT price data (live price data updated per block)\n・Create API endpoint to call and receive data",
+      "criteria": "・Team can demonstrate API call request is made to database and the request is successfully returned with the expected desired aggregate current CNT live price data (the price on the last block)\n・Team can demonstrate 10 successful call requests for different 10 tokens randomly selected from the top 30 of taptools.io by trading volume",
+      "report": "Please a demo video showing 10 successful api calls for randomly selected tokens from taptools: https://drive.google.com/file/d/1NjSzWWjDkWgQRgbmdoS2asGfvxCediti/view?usp=drivesdk",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 49351,
+      "promise": "In addition the live price data updated per block completed in milestone 2, this milestone expands the processed data to include historical data. \nEnhance the database by processing data into the following categories for consumption via the API endpoint:\n・Historical pool data\n・Trading Volume\n・5 minute period blocks of trading volume data for each token in ADA or USD\n・Hourly period blocks of trading volume data for each token in ADA or USD\n・Daily period blocks of trading volume data for each token in ADA or USD\n・TVL\n・5 minute period blocks of TVL of pools in ADA or USD\n・Hourly period blocks of TVL of pools in ADA or USD\n・Daily price period blocks of TVL of pools in ADA or USD\n・Historical Price Data\n・5 minute price of token in ADA or USD (data that can support 5 min period charts)\n・Daily price of token in ADA or USD (data that can support daily charts)\n・Hourly price of token in ADA or USD (data that can support hourly charts)\n・Additional (optional) Data\n・In addition the previously listed data points we may include others, but as a minimum the above will be delivered in this milestone",
+      "criteria": "・Able to call database using API endpoint and receive:\n・Historical pool data\n・Trading Volume\n・5 minute period blocks of trading volume data for each token in ADA or USD\n・Hourly period blocks of trading volume data for each token in ADA or USD\n・Daily period blocks of trading volume data for each token in ADA or USD\n・TVL\n・5 minute period blocks of TVL of pools in ADA or USD\n・Hourly period blocks of TVL of pools in ADA or USD\n・Daily price period blocks of TVL of pools in ADA or USD\n・Historical Price Data\n・5 minute price of token in ADA or USD (data that can support 5 min period charts)\n・Daily pri",
+      "report": "Demo Video: https://vimeo.com/manage/videos/1082943984\nThe video above contains all the requirements for the output.",
+      "kinds": [
+        "video"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 12337,
+      "promise": "・Creating YAML / Documentation\n・Design basic landing page (UI/UX) to find documentation and generate API keys \n・Create API key generation tool\n\nNote that this milestone is a UI/UX design phase that does not include live API keys and access to the database.",
+      "criteria": "・Documentation completed\n・Test Landing page completed\n・End-users can access test website\n・End-users can obtain dummy API key through the API generator\n・End-users can access documentation\n・\n\nNote that this milestone is a UI/UX design phase that does not include live API keys and access to the database.",
+      "report": "In this milestone we designed our main API page with a test api key generation function. \nLink to test environment page: https://cta-charli3-portal.vercel.app/\nDummy API key to play with limited use API endpoint (functionality might be limited this is an additional evidence not required for milestone but worth sharing:\nhttps://cta-charli3-portal.vercel.app/sign-in\nemail: milestone@testing.com\npassword: 123456789\n\nTest site features:\n・documentation for API available to review (active updates by team may still occur)\n・test site with design for production version; note that some graphics may not appear perfectly and some buttons may not work as the team actively continues updates on the test version\n・Test API key generation function requiring a signup. Note the key is non production and does not function to pull data.\n\nnext milestone we move everything to production and go live!",
+      "kinds": [
+        "live"
+      ],
+      "links": 3
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 37012,
+      "promise": "・Final close-out report\n・Final closeout video\n・Deploy live landing page on publicly accessible website\n・Deploy Database and API service using Cardano main-net data, ready for use by end-users",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・End-user is able to goto the landing page, get a live API key, and start using the full functionality of the service\n・Full functionality is defined as calling the database and receiving the data points required from previous milestones",
+      "report": "Close out Video: https://vimeo.com/1099466906/2cee300410?ts=264452&share=copy\nClose out Report: https://drive.google.com/file/d/1K1xELLenu_qIJV39jCodOvpl46PBktN8/view?usp=sharing\nLive Website: https://charli3.io/api\nTechnical Demonstration video: https://drive.google.com/file/d/1WQc81wkXBC9wxpb8Cl-h3RsyY-_3iBks/view",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

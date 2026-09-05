@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Hyperledger Identusのベースインターフェイスとアーキテクチャを定義し、プロジェクトのベース構造を設定することで始めます。その後、VDRパブリックAPIとDriverのインターフェースのドキュメントの作成と構築を開始する必要があります。\nドライバーは最後の平和であり、Cardano 固有のものが IOHK リポジトリ(VS) に、より一般的な実装 (database) および VDR コンポーネントが、Hyperledger リポジトリー下に表示されます。\nGITHUBマークダウンのAPI仕様、ハイペレージャー傘下(https://github.com/hyperledger/identus-vdr)",
+      "criteria": "・オープンHyperLedgerリポジトリのVDR仕様のパブリックバージョンのDeliver\n・Hyperledger Identus Labの一環として、Linux財団が主催する毎週のコミュニティコールの仕様を提示します。 コミュニティコールを録音し、仕様書を提示し、ワークショップの発表を行います。\n・アーキテクチャとVDRの仕様を展示するために特定のワークショップを主催し、Hyperledgerでこのワークショップを組織し、アーキテクチャと仕様を提示し、ユーザーからのフィードバックを集め、周りを上げる可能性がある疑いを解決します.",
+      "report": "マイルストーン1のスコープでは、次のことを配信しました。\n・VDRシステム技術仕様\n・Cardano PRISM VDR仕様\n・IOGのIdentusチームとアーキテクチャ会議で両方の仕様を開示し、明確にしました。\n・IdentusコミュニティミーティングでVDR仕様を提示し、ディスカッションとピアレビューを行います。\n・YouTubeリンク\n・Zoom <a href=\"https://zoom.us/rec/play/UxCP-6KvQGp6OryjO5PqtwKFL 4PiiYl6c9kSnK4LrY4x75O0Yt---vOUxUoAjkIKnttqXV5W.bjJqDx6gyQFzVTGCアクセスRY4X75O0LrYt-vOUXUxUkIKntt-VKnttqXVXV5WvQ&AvQR&AvR&AvR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQR&AQ\n・VDR(in-memory)のサンプルコードは、PoCとデモを同じリポジトリに配信しました。\n\n計画されたワークショップは、現在のフェーズで議論する特別なトピックがないため、次のマイルストーンに移動する必要があります。\nチームは、2番目のマイルストーンと3番目のマイルストーンの準備活動を始めました。\n・2つの仕様のPoC(実際のVDRと実際のCardanoドライバ)\n・PoCのフィードバックに基づく仕様の明確化"
+    },
+    {
+      "no": 2,
+      "promise": "このフェーズでは、VDR コンポーネントを Agent API に統合し、Cloud Agent リポジトリで利用できる API エンドポイントを通じて公開します。\n出力には、クラウドエージェントのVDRインターフェイスのモックされた実装が含まれます。 データベースを使用してリソースを格納するドライバ API の新しい実装を作成します。 それでも、CardanoブロックチェーンをVDRとして使用していません。 ドライバ仕様の更新されたドキュメントは、VDRリポジトリとDocsポータルの中にあります。\nクラウドエージェントリポジトリ: https://github.com/hyperledger/identus-cloud-agent\nVDRリポジトリ: https://github.com/hyperledger/identus-vdr\nDocsポータル: https://github.com/hyperledger/identus-docs",
+      "criteria": "・VDR仕様をクラウドエージェントに統合(Identus https://github.com/orgs/hyperledger/teams/identus-maintainers のコードメンテナーによって承認)\n・クラウドエージェントのテストカバレッジを追加し、VDRインターフェイスを公開する新しいメソッドをカバー\n・火曜日に行われたHyperledgerコミュニティコール(火曜日3PM UTC)での作業を事前に確認",
+      "report": "VDRライブラリをHyledger Identus Cloud Agentに統合し、API経由での機能を公開し、包括的なドキュメントとチュートリアルを組み合わせました。\nドキュメント\n\nアーキテクチャの概要、API の使用状況、および HTTP のバインディングを含む VDR の包括的なユーザーおよび開発者の文書は一般に公開されています: Hyperledger Identus VDR ドキュメント。\nビデオ実証\n\n録画デモを準備しました。\n・VDRはクラウドエージェントに統合\n・APIによるエントリの作成、読み込み、更新、検証\n・VDRエンドポイントを用いたテストフロー例\n\nここをクリック: マイルストーン2のビデオ録画 7月8日、タイムスタンプ0919にIdentusコミュニティコールで実証\nコード配信可能\n\n次のコミットは、VDRの実装と統合をHyledger Identus Cloud Agentに実証します。\nVDRインテグレーション: VDRをクラウドエージェントに統合し、RESTエンドポイントを公開し、CRUDと検証操作を有効にします: ハイパーレッジャー・インシデント/クラウド・エージェント#1591\nVDR チュートリアル: 実用的な例で VDR API を使用して開発者を導くためのステップバイステップのチュートリアルの追加: hyperledger-identus/cloud-agent#1598"
+    },
+    {
+      "no": 3,
+      "promise": "VDR仕様のラッピングアップドキュメントを作成し、VDRを異なるドライバ(この場合、Cardanoドライバ)を使用して別のネットワーク(testnet、mainnet)に指す方法を文書化します。\nまた、Cardano VDRドライバーを使用して、異なるネットワークのために設定し、Cardanoからリソースを保存および取得するために使用するために、同じ目的のためにワークショップを行います.",
+      "criteria": "・Cardanoドライバの仕様とドキュメントは、Hyperledger Identus VDRリポジトリ https://github.com/hyperledger/identus-vdr で公開されます。\n・Cardanoドライバの仕様は、Identusメンテナーズhttps://github.com/orgs/hyperledger/teams/identus-maintainersによって審査、承認、マージされます。\n・Cardano VDRの実際のコードと実装をホスティングするリポジトリ(iohk)は、GithubのHyperledgerメンテナーによって承認され、作業の実装を検証するためのいくつかのテストシナリオを含みます。\n・Linux Foundation D で公開および録音されたワークショップの作成と整理",
+      "report": "Identus エンジニアは、Project Catalyst の第 3 マイルストーンを完成させました。Cardano の Identus の検証可能なデータレジストリ。\nマイルストーンの対応する出力は以下の通りです。\n1. Cardano VDRの指定\nチームは、PRISM VDR ドライバーが Cardano ブロックチェーンとやりとりする際の正式な仕様を策定しました。 この仕様は公開されています。\n・ドライバーの運用要件(例、解決、提出、検証など)\n・入力/出力タイプおよびデータエンコーディングフォーマットの期待\n・Ledgerモデル解釈\n・エラー処理とステータス報告\n\n仕様URL:Cardano VDR仕様\n2. 運転者の実装\n上記仕様に従って、Cardano VDRドライバーをフル導入しました。 ドライバーは:\n・オープンソースのIdentusエコシステムの一部\n・DIDストレージ操作(作成、更新、非アクティブ化)をCardano Ledgerに送信可能\n・PRISMエージェントやツーリングに統合するためのモジュール式 Scala ライブラリとして構築され、VDR データのインデックスは Rust をマイクロサービスとして実装しています。\n\n実装リポジトリ、JVM ターゲットプラットフォーム用の Scala で: prism-vdr-driver\n実装リポジトリ、Rust でインデックス化と REST API エンドポイントでデータを取得: neoprism\nVDR REST API エンドポイントの API 仕様を開く: openapi\n主なコンポーネント:\n・ドライバインターフェイスとレジャー設定ロジック\n・CardanoのSubmitter導入\n・オパレーションレゾラー\n・DIDコアとのコーデックとフォーマットの互換性\n・VDRデータインデックス\n・VDR REST API 仕様\n\n3. テストの適用範囲\nVDR ドライバーは、NeoPrism プロジェクト内で統合およびテストされており、VDR データエントリを含む Cardano での DID 相互作用のエンドツーエンドのテストハーネスとして機能しています。\n関連するテスト スイート:\n・作成ストレージOperationSuite.scala\n・Cardano VDRによる有効かつ無効なストレージ操作のコピー\n\nテスト実行のCI証拠:CI実行結果\n4. コミュニティプレゼンテーション\nチームは、Cardano VDRの仕様およびその公式に提示しました"
+    },
+    {
+      "no": 4,
+      "promise": "Identus VDRの仕様、データベースドライバ、Cardanoドライバに関するすべてのドキュメントをラップおよびレビューします。\n当社のドキュメントポータル https://hyperledger.github.io/identus-docs/ には、VDR、そのアーキテクチャ、ドライバー、およびワークショップ固有のすべてのものをカバーするための仕様が含まれます。\nチームは、ワークショップやコミュニティの呼び出しを通じてコミュニティからのフィードバックを集め、VDRのFAQセクションを含めます。 Cardano VDR を使用して、Identus でアプリケーションを作成および開発する誰でも簡単にドキュメントを作成できるようにします。 ネットワーク(testnet、mainnet)を切り替えて、Hyperledger Identusワークショップ(Githubで利用可能)にリンクする方法について、私たちは本当に明確にしなければなりません",
+      "criteria": "Hyperledgerで\n・Identus のメンテナチームレビューは、Hyperledger のリポジトリ内のすべての新しい仕様のフィードバックを集め、ユーザーによる提案を改善しました。\n・Identusメンテナーは、火曜日(録画)コミュニティコール(火曜日3PM UTC)にてワークショップを開催いたします。\n・Identus メンテナーは、VDR のパブリック、録画、および https://hyperledger.github.io/identus の主なリポジトリで利用可能なすべてのワークショップを構成します。\n・VDRアーキテクチャワークショップでは、VDRワークのリソースの取得と保存方法について、シーケンス図で紹介・説明\n・VDRデータベースドライバワークショップ: ショーケース",
+      "report": "A. 出力: Hyperledger VDRの指定は見直し、更新しました\n受諾基準: Identus のメンテナチームは、Hyperledger リポジトリ内のすべての新しい VDR 仕様をレビューし、コミュニティのフィードバック主導的な改善を組み込む。\n証拠:\n・VDRシステム技術仕様\n・Cardano VDR仕様\n\nB. 出力:Hyledger Identus Weekly Callで発表されたVDRワークショップ\n受諾基準:Identusメンテナーは、火曜日(3 PM UTC)コミュニティコール中にVDRワークショップを発表し、一般に公開されています。\n証拠:\n・Hyperledger Identusミーティングノートと録音\n・コミュニティ録画(VDRセクション開始～7:00)\n\nC. 出力:すべてのVDRの研修会は公共および永久に出版しました\n受諾基準:Hyledger Identusリポジトリで公開されているVDRのワークショップ録画、構成ガイド、指示、およびデモ。\n証拠:\n・VDRドキュメント(公開アクセス)\n・SlideDeck:VDRドライバ例とウォークスルー\n・クラウドエージェントVDR統合PR\n\nD. 出力: IOHK/Hyledgerのガバナンスの下でホストされ、受け入れられるCardano VDRの運転者\n受諾基準: Cardano VDR ドライバーの実装は、IOG のリポジトリの下に維持され、Rust & Scala インターフェイスやインデックスツールを含む Hyperledger メンテナーによって承認されます。\n証拠:\n・Scala VDRドライバーリポジトリ\n・NeoPrism Rustの実装とREST API\n・VDR API OpenAPI仕様\n・Prism Node VDR の統合\n\nE. 出力: エンドツーエンドの例の実証 Cardano ベースの VDR の決断\n受諾条件:CardanoのエンドツーエンドでVDRの機能を示す例 — リソースの作成、公開、および解決。\n証拠:\n・PRISMドライバースライドプレゼンテーションによるデモ\n・コミュニティ録画(VDRセクション開始〜18:00)"
+    },
+    {
+      "no": 5,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "A. 出力:最終クローズアウトレポートへのリンク\n受諾の基準:最終的な閉鎖のレポートは一般に利用できます\n証拠: 最終クローズアウトレポートへのリンクは、Identus Platform のドキュメントポータルで公開されます。\nB. 出力:最終クローズアウトビデオへのリンク\n受諾の基準: 最終的な閉鎖のビデオは一般に利用できます\n証拠:Identusコミュニティ会議で最終クローズアウトビデオが録画され、YouTubeで利用可能"
+    }
+  ]
+}

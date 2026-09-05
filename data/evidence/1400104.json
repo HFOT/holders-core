@@ -1,0 +1,59 @@
+{
+  "title": "Rapid DEX: Mainnet-Ready, Batcher-Free & Advanced Features",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "・The pool smart contract that support flexible fee configuration, built-in treasury, and zap-ins and zap-outs.\n・Compile instructions and a video of a successful compilation.\n・The pool smart contract documentation.\n・Unit tests for the pool smart contract",
+      "criteria": "・The pool smart contract is provided in the open source GitHub repo.\n・The pool smart contract allows minting pool NFT tokens to create new pools, swapping, providing and withdrawing liquidity, withdrawing treasury and donating to the pool. The pool creator can control the swap and treasury fees, and the contract supports zap-ins and zap-outs.\n・The pool smart contract successfully compiles and a video shows that by following the provided building docs and that no errors nor warnings are present. The video also shows that all unit tests pass\n・Documentation includes expected inputs, outputs, and",
+      "report": "Evidence:\n・A link to a Github repo with the pool smart contract code: https://github.com/WingRiders/rapid-dex-contracts\n・A link to the build instructions and a video demonstrating a successful compilation and passing unit tests:\n・Instructions: https://github.com/WingRiders/rapid-dex-contracts/blob/master/README.md\n・Recording: https://github.com/WingRiders/rapid-dex-contracts/blob/master/build-test-recording.gif\n・A link to the documented smart contract: https://github.com/WingRiders/rapid-dex-contracts/blob/master/validators/pool.ak",
+      "kinds": [
+        "code"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 30000,
+      "promise": "・Initial SDK package exposing utility methods for core DEX operations, suitable for integration in external projects.\n・Updated internal architecture under a modular structure, with clearly separated components.\n・SDK documentation.\n・Published SDK package and a video showcasing installation.\n・Reference implementation demonstrating SDK usage in typical workflows (using existing frontend as example).\n・CLI tool using SDK for on-chain interactions and a video of successful interactions.",
+      "criteria": "・SDK is available in open source GitHub repo.\n・Architecture diagram and repository structure reflect a modular internal architecture with clearly separated components.\n・SDK documentation includes clear examples for each included method.\n・SDK package is installable and the video shows that.\n・Reference implementation can run end-to-end using SDK calls, with mocked or testnet data.\n・CLI tool can perform workflows supported by SDK and a video shows that.",
+      "report": "・Link to GitHub repo with SDK: https://github.com/WingRiders/rapid-dex/tree/main/sdk\n・Link to the updated architecture diagram highlighting the modularized structure: https://github.com/WingRiders/rapid-dex/blob/main/docs/architecture.md\n・Link to SDK package documentation:\n・Core: https://github.com/WingRiders/rapid-dex/tree/main/sdk/core\n・React: https://github.com/WingRiders/rapid-dex/tree/main/sdk/react\n・Link to published SDK package and the video showcasing successful installation:\n・Core: https://www.npmjs.com/package/@wingriders/rapid-dex-sdk-core\n・React: https://www.npmjs.com/package/@wingriders/rapid-dex-sdk-react\n・Video: https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-2-sdk-installation.mp4\n・Link to Recorded demo of reference implementation executing workflows successfully: https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-2-sdk-reference-implementation.mp4\n・Link to open source repository for CLI tool and a video of successful execution:\n・Repository: https://github.com/WingRiders/rapid-dex/tree/main/sdk/core/src/cli\n・Video: https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-2-cli-demonstration.mp4",
+      "kinds": [
+        "code"
+      ],
+      "links": 20
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 25000,
+      "promise": "・SDK methods added or updated to support the three protocol-level features delivered in M1.\n・Backend service updates to provide tRPC API endpoints for these features.\n・Frontend updates enabling end-to-end interaction with the new features via backend and SDK.",
+      "criteria": "・Frontend can successfully execute workflows involving the three protocol-level features on testnet.\n・Backend tRPC endpoints return expected results and handle invalid input gracefully.\n・SDK exposes developer-friendly methods for interacting with the new features without requiring direct contract calls.\n・All changes are tested, documented, and integrated into CI/CD pipelines.",
+      "report": "・Links to the repository with the SDK/FE/BE code and to the relevant commits:\n・Repository: https://github.com/WingRiders/rapid-dex\n・Commits which implements the new features: https://github.com/WingRiders/rapid-dex/compare/16ba4eb5fd27585e4509c7962b345ffebf9f9151...main\n・Updated SDK package and backend deployment logs:\n・Updated SKD packages: https://github.com/WingRiders/rapid-dex/tree/main/sdk\n・Backend deployment https://github.com/WingRiders/rapid-dex/actions/runs/22303679554 (click on some step to see the logs)\n・Screenshots and recordings showing frontend interaction with the features on testnet:\n・Creation of a new pool with configurable swap fees and treasury: https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-3-new-pool.png\n・Swap on a pool with configured swap fee and treasury: https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-3-swap.png\n・ZapIn: https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-3-zap-in.png\n・ZapOut: https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-3-zap-out.png\n・Withdraw treasury: https://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/milestone-3-withdraw-treasury.png\n・Video: https://youtu.be/ClL-Rds_Rl4\n・A link to the API documentation updated with new endpoints is shared. The documentation has a section describing the main modification made for the Milestone 3 update:\n・API documentation: https://github.com/WingRiders/rapid-dex/blob/main/backend/api.md\n・Modifications made for Milestone 3: https://github.com/WingRiders/rapid-dex/blob/main/backend/api.md#response-type-changes-for-flexible-swap-fees-treasury-fees-and-zap-inout\n・Passing automated test results covering backend, SDK, and frontend integration.\n・Automated tests results: https://github.com/WingRiders/rapid-dex/actions/runs/22303679550/job/64517457681 (click on 'Run test' to see which tests were run)\n・Link to the application: https://rapid-dex.",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 28,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 15000,
+      "promise": "・A 2/3 page project close-out report listing the catalyst KPIS and how they were addressed.\n・A short project close-out video outlining the project achievements and deliverables.",
+      "criteria": "・A project close-out report pdf is shared publicly and complies with the catalyst requirements:\n・Lists Key Performance Indicators (KPIs) achieved during the project,\n・Explains how the KPIs were met or why they weren’t.\n・Outlines next-stage plans for the product or service.\n・A project close-out video outlining the project achievements and deliverables is shared publicly and complies with the catalyst requirements.",
+      "report": "Please find below all relevant links for the project Rapid DEX: Mainnet-Ready, Batcher-Free & Advanced Features.\nLink to Project Close-out Report:\nhttps://github.com/WingRiders/rapid-dex/blob/main/catalyst-evidence/f14/project-close-out-report.pdf\nLink to Close-out Video:\nhttps://www.youtube.com/watch?v=nfC3jKDGc9c\nLinks to Other Relevant Project Sources or Documents:\nApplication: Rapid DEX App\nMain Repository: GitHub – rapid-dex\nDocumentation\n・Architecture Docs\n・API Documentation\n・Build Instructions\n\nEvidence & Testing\n・Compilation & Tests Recording\n・Demo Video\n・Transaction Chaining Test\n\nBest regards,\nWingRiders team (edited)",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

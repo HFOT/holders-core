@@ -1,0 +1,62 @@
+{
+  "title": "Mithril - Open-source contributor",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 17435,
+      "promise": "Confirm approach and collaboration with Mithril’s core development team, including the generation of a commitment document outlining mutual expectations.\nIn case the initial approach to Mithril's core team encounters challenges, define a contingency plan for independent collaboration.\nReach out to potential candidates, assess their competency, and select the most suitable candidate.\nExecute the onboarding process, ensuring alignment with the commitment document generated with Mithril's core team.",
+      "criteria": "Successful Commitment Document: A commitment document, mutually agreed upon by the project and Mithril's core development team, should be generated and documented.\nContingency Plan for Independent Collaboration: In the event that direct collaboration with Mithril's core team encounters challenges, a well-defined contingency plan for independent collaboration should be outlined. This plan should detail alternative strategies, resources, and timelines.\nThe Candidate will selected as the result of a fair and comprehensive selection process\nThe on-boarding is complete and contributor is ready and",
+      "report": "Introduction:\nThis report documents the successful completion of Milestone 1 for TxPipe's participation as an open-source contributor to the Mithril project. The milestone primarily focused on establishing the foundation for collaboration, including the commitment between the project team and Mithril's core development team, a comprehensive contingency plan for potential challenges, and the onboarding process.\n1. Commitment Document:\nThe finalized Commitment Document has been successfully created and agreed upon by both the TxPipe project team and Mithril's core development team. This document outlines the terms, expectations, and responsibilities of each party in this collaborative effort. You can access the Commitment Document here.\n2. Contingency Plan Documentation:\nThe Contingency Plan Documentation has been diligently prepared, detailing alternative strategies, resources, and timelines in case direct collaboration with Mithril's core team encounters challenges. This document ensures a proactive approach to overcoming potential hurdles. You can review the Contingency Plan Documentation here.\n3. Contributor Selection Rationale and Onboarding Process:\nA comprehensive text document has been compiled to provide insight into the rationale behind the selection of our contributor, Alexander Falcucci, and the successful completion of the onboarding process. This document sheds light on the contributor's technical competence, adaptability, leadership experience, and the successful assimilation into the Mithril project. You can find the text document here.\n4. Proof-of-Onboarding Commit:\nAs evidence of the completion of the onboarding process, Alexander Falcucci has made a commit to the Mithril project repository. This commit signifies his active participation and integration into the project. You can verify the commit here.\n5. Document Repository:\nAll the aforementioned documents, including the Commitment Document, Contingency Plan Documentation, Contributor Selection Rat",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 43071,
+      "promise": "Survey health form contributor’s perspective\nSurvey health form core team perspective\nPrepare and release contribution report",
+      "criteria": "A net-positive contribution to the overall development quality and performance of the Mithril project is expected during the initial two months of analysis. This contribution will encompass a minimum of one pull request per month to the main repository, featuring significant additions. Positive engagement with the community via the #Mithril channel in the Txpipe Discord server will also be recognized as a valuable contribution to the project. The report will incorporate the outcomes of the surveys detailed in the output section, along with the contributions made. You can find the report at htt",
+      "report": "The culmination of the second milestone for the Mithril project represents a notable progress in our goal to contribute to the Mithril project and, at the same time, make it more accessible for future external contributions. This report provides a comprehensive overview of the milestone's outcomes and evidence of completion to aid the evaluation of the acceptance criteria.\nEvidence of Milestone Completion\nIn this report and video overview, we go over the activity that the selected developer, Alexsander Falcucci, has executed as part of his involvement with the Mithril codebase.\nAlexsander's direct contributions to the Mithril codebase are a testament to the project's collaborative nature. His main assignment consists of enhancing the interaction between Mithril and the Cardano Node by using Ouroboros protocols (TCP communication) directly instead of having to use the Cardano CLI through a shell process.\nThe complexity and length of this issue is large, so the team decided to divide it into smaller change units that can be merged independently. Alexsander has completed and merged 2 of these tasks which can be evaluated in the following pull-requests:\n・Mithril Pull Request #1348 - enhance mithril/cardano node communication\n・Mithril Pull Request #1403 - get datums using pallas observer \n\nThese enhancements also required changes on an upstream related library called Pallas. Alexsander has engaged on extended to the Pallas project, where he successfully implemented changes and submitted the following pull requests:\n・Pallas Pull Request #341 - Implement UTxO by Address local state query\n・Pallas Pull Request #340 - add stake distribution local state query\n・Pallas Pull Request #335 - add cbor decoder for HardForkQuery\n・Pallas Pull Request #333 - fix: add missing feature gate flag to tokio dependency\n・Pallas Pull Request #322 - add get_current_pparams local state query\n\nConclusion\nThe successful completion of Milestone 2 not only showcases a tangible improvement on the Mithr",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 43071,
+      "promise": "Survey health form contributor’s perspective\nSurvey health form core team perspective\nPrepare and release contribution report",
+      "criteria": "A net-positive contribution to the overall development quality and performance of the Mithril project is expected during the second two months of analysis. This contribution will encompass a minimum of one pull request per month to the main repository, featuring significant additions. Positive engagement with the community via the #Mithril channel in the Txpipe Discord server will also be recognized as a valuable contribution to the project. The report will incorporate the outcomes of the surveys detailed in the output section, along with the contributions made. You can find the report at http",
+      "report": "The culmination of the third milestone for the Mithril project represents a notable progress in our goal to contribute to the Mithril project and, at the same time, make it more accessible for future external contributions. This report provides a comprehensive overview of the milestone's outcomes and evidence of completion to aid the evaluation of the acceptance criteria.\nEvidence of Milestone Completion\nIn this report and video overview, we go over the activity that the selected developer, Alexsander Falcucci, has executed as part of his involvement with the Mithril codebase.\nAlexsander's direct contributions to the Mithril codebase are a testament to the project's collaborative nature. His main assignment consists of enhancing the interaction between Mithril and the Cardano Node by using Ouroboros protocols (TCP communication) directly instead of having to use the Cardano CLI through a shell process.\nAlexsander has completed and merged 4 of these tasks which can be evaluated in the following pull-requests:\n・Mithril Pull Request #1522 - feat: implement and calculate the current key period using pallas\n・Mithril Pull Request #1513-add pallas stake snapshots integration\n・Mithril Pull Request #1541-feat: implement and calculate the current key period using pallas\n・Mithril Pull Request #1576-feat: refactor get_kes_period to create isolated new queries \n\nThese enhancements also required changes on an upstream related library called Pallas. Alexsander has engaged on extended to the Pallas project, where he successfully implemented changes and submitted the following pull requests:\n・Pallas Pull Request #413 • feat: implement GetCBOR local state query\n・Pallas Pull Request #407- implement GetGenesisConfig local state query\n・Pallas Pull Request #396 - fix: support multiple pools search in stake snapshot local state query\n・Pallas Pull Request #394 - feat: implement stake snapshot local state query\n\nCore team Evaluation of contributor's work\nPlease note that the core team's fee",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 9,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 39994,
+      "promise": "Survey overall success from contributor’s perspective\nSurvey overall success from core team perspective\nPrepare and release final contribution report\nDiscuss continuation alternatives and contributor rotation",
+      "criteria": "A net-positive contribution to the overall development quality and performance of the Mitrhil project is expected during the third two months of analysis. This contribution will encompass a minimum of one pull request per month to the main repository, featuring significant additions. Positive engagement with the community via the #Mitrhil channel in the Txpipe Discord server will also be recognized as a valuable contribution to the project. The report will incorporate the outcomes of the surveys detailed in the output section, along with the contributions made. You can find the report at https",
+      "report": "The culmination of the final milestone for the Mithril project represents a closure in our goal to contribute to the Mithril project. This report provides a comprehensive overview of the milestone's outcomes and evidence of completion of the current project funded by catalyst on Fund 10\nEvidence of Milestone Completion\nIn this report and video overview, we go over the activity that the selected developer, Alexsander Falcucci, has executed as part of his involvement with the Mithril codebase.\nAlexsander's direct contributions to the Mithril codebase are a testament to the project's collaborative nature. His main assignment consists of enhancing the interaction between Mithril and the Cardano Node by using Ouroboros protocols (TCP communication) directly instead of having to use the Cardano CLI through a shell process.\nAlexsander has completed and merged 1 of these tasks which can be evaluated in the following pull-requests:\n・Feat: add get_current_chain_point function to fetch chain point information\n\nFinal Report\nName of project and Project URL on IdeaScale/Fund\nMithril - Open-source contributor\nhttps://cardano.ideascale.com/c/idea/105113\n\nYour Project Number\n1000112\n\nName of project manager\nSantiago Carmuega\n\nDate project started\nOctober 20, 2023\n\nDate project completed\nMay 20, 2024\n\nList of challenge KPIs and how the project addressed them\n\nIncrease in the Number and Quality of Open-Source Projects\n・The involvement of the external Rust developer led to the contributed to the overall quality and diversity of Mithrill projects.\n\nIncrease in Open-Source Contributions and Maintainers\n\n・The project saw a significant increase in contributions from both the external Rust developer and other community members who were inspired to participate. This also resulted in a rise in the number of maintainers for the Mithril project.\n\nIncrease in the Visibility of Open-Source Projects\n\n・The initiative helped raise awareness and visibility of the Mithril project and other related ope",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 7,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "title": "MidnightZK Data-Marketplace for Authentic Human Data: Nuauth",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "Software Requirements Specification (SRS)\n・Defines functional/non-functional requirements for all proposal components:\n・ZK content stamping protocol\n・Licensing smart contracts\n・Human Intelligence Data Marketplace (frontend & backend)\n・Attribute-Based Encryption (ABE) module\n・Includes architecture diagrams, user stories, acceptance criteria, and traceability matrix.\n\nTechnical Feasibility Study\n・Evaluates ZK-proof and ABE implementation on Cardano testnet.\n・Identifies technical dependencies and constraints.\n\nProject Plan & Risk Register\n・Timeline, task breakdown, and mitigation strategies for all deliverables.",
+      "criteria": "SRS covers all components from the funded proposal (ZK, Licensing, Marketplace, ABE).\nFeasibility study confirms technical viability for ZK and ABE.\nProject Plan includes timeline details of all planned project tasks",
+      "report": "A. Output: Software Requirements Specification (SRS)\nWhat was delivered:\nA complete Software Requirements Specification (SRS) document defining the functional and non-functional requirements for all funded components of the project.\nThe SRS covers:\n・Zero-Knowledge (ZK) content stamping protocol\n・Licensing smart contracts\n・Human Intelligence Data Marketplace (frontend & backend)\n・Attribute-Based Encryption (ABE) module\n・Architecture overview, user stories, acceptance criteria, and traceability\n\nAcceptance criteria:\nSRS covers all components from the funded proposal (ZK, Licensing, Marketplace, ABE).\nEvidence:\nhttps://github.com/Nucastio/MidnightZK-Data-Marketplace-for-Authentic-Human-Data-Nuauth/blob/main/Software_Requirements_Specification_MidnightZK_Data-Marketplace_for_Authentic_Human_Data.pdf\nB. Output: Technical Feasibility Study\nWhat was delivered:\nA technical feasibility study included within the SRS evaluating the viability of implementing Zero-Knowledge proofs and Attribute-Based Encryption on Cardano and Midnight ZK. The study analyzes architectural constraints, off-chain/on-chain separation, and implementation considerations.\nAcceptance criteria:\nFeasibility study confirms technical viability for ZK proofs and ABE implementation on Cardano.\nEvidence:\nhttps://github.com/Nucastio/MidnightZK-Data-Marketplace-for-Authentic-Human-Data-Nuauth/blob/main/Software_Requirements_Specification_MidnightZK_Data-Marketplace_for_Authentic_Human_Data.pdf\nC. Output: Project Plan & Risk Register\nWhat was delivered:\nAn 8-week project plan outlining task breakdown, timeline, and ownership across all deliverables, along with a risk register identifying key technical and delivery risks and corresponding mitigation strategies.\nAcceptance criteria:\nProject plan includes timeline details of all planned project tasks.\nEvidence:\nProject plan, Gantt chart, and risk register are produced as part of the milestone documentation and referenced within the SRS.",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 20000,
+      "promise": "Technical Design Document (TDD)\n・Prepared high-level architecture and detailed technical design for:\n・ZK content stamping protocol\n・Licensing smart contracts\n・Decentralized IP repository\n・Attribute-Based Encryption (ABE) module\n・Human Intelligence Data Marketplace integration\n・Includes architecture diagrams, data flows, and component interfaces.\n\nCore Module Prototypes\n・Initial implementation of:\n・IP repository\n・ZK stamping logic\n・Licensing automation\n・ABE-based access control\n・Deployed in sandbox/testnet environment.\n\nInternal Test Environment & Demo\n・Sandbox setup demonstrating:\n・Creator flow: content registration, stamping, licensing\n・AI Developer flow: encrypted data access via ABE",
+      "criteria": "TDD prepared covering all listed components and integration points.\nCore module prototypes function as specified on Cardano testnet.\nSandbox demo shows complete backend workflow for both Creator and AI Developer flows.\nNo major technical issues blocking next milestone.",
+      "report": "A. Output: Technical Design Document (TDD)\nAcceptance criteria:\nTDD prepared covering all listed components and integration points, including:\n・ZK content stamping protocol\n・Licensing smart contracts\n・Decentralized IP repository\n・Attribute-Based Encryption (ABE) module\n・Human Intelligence Data Marketplace integration\n・Architecture diagrams, data flows, and component interfaces\n\nEvidence:\n・TDD Document:\n・https://github.com/Nucastio/MidnightZK-Data-Marketplace-for-Authentic-Human-Data-Nuauth/blob/main/docs/TDD.md\n\nB. Output: Core Module Prototypes (Cardano + Midnight Integration)\nAcceptance criteria:\nCore module prototypes function as specified on Cardano testnet and Midnight Preview, including:\n・IP repository\n・ZK stamping logic\n・Licensing automation\n・ABE-based access control\n\nEvidence:\nCardano Preprod Transactions\n(View using Cardanoscan – Preprod network)\n・Stamp tx (CIP-20, label 674):\n・70245e6549249362781c0b6647a491eaa7b044397fa0672670da65a319701400\n・Proves dataset commitment anchored on public ledger\n・License listing lock tx:\n・d6997651e432c00a9c2406d940e1f9c1efa2cd1ea8b8c13bdfc2acfae9557279\n・Proves listing UTxO created via Plutus V3\n・License purchase tx:\n・ed712aedf2a38b56b6d8e339302f233b06f7274963cd08512472af859eb5cf68\n・Proves validator execution and successful purchase logic\n\nC. Output: ZK Stamping & Midnight Contract Execution\nAcceptance criteria:\nZK stamping protocol successfully executed with L1 anchor binding and contract interaction on Midnight.\nEvidence:\nMidnight Preview Network Transactions\n(View using 1am Explorer or Midnight Explorer – Preview network)\n・https://explorer.1am.xyz/\n・https://preview.midnightexplorer.com/\n\nMidnight Preview Network:\n・DUST Registration Tx:\n・00d8dacc3ba8968e44433e53cdbd480031170d1a582cc55169e6bcb71bb0256f52\n・Confirms wallet fee balancing setup\n・Contract Deployment:\n・Address: 8579a214e9cfd1ccd50308db93bc865706030210832dc46dac3a6c23d34d5632\n・Tx Hash: 15f33b7f3a9df52db99057a5839a987c5e2c83908c83924070c7a552c35f0a82\n・Block Height: 1",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "Functional MVP Deployment (Cardano Testnet)\n・Public deployment of the Human Intelligence Data Marketplace MVP, demonstrating:\n・ZK-based content stamping and verification\n・Licensing smart contracts for data use\n・Attribute-Based Encryption (ABE) access controls\n・Accessible to test users (creators and AI developers).\n\nTechnical Documentation & User Guides\n・Complete documentation for all components:\n・Backend modules (ZK, licensing, ABE)\n・Marketplace frontend and APIs\n・Setup, usage, and developer integration instructions.\n\nOpen-Source Release\n・Public GitHub repository containing full project code (backend, frontend, contracts).\n・Released under MIT License.\n\nFinal Project Report & Video\n・Summary of objectives, deliverables, and outcomes.\n・Walkthrough video of the live MVP on Cardano testnet.",
+      "criteria": "Marketplace MVP deployed and accessible on Cardano testnet.\nZK stamping, licensing, and ABE functions operational in end-to-end demo.\nTechnical documentation and setup instructions complete and public.\nSource code published under MIT License in a public repository.\nFinal closeout report and video prepared and publicly available.",
+      "report": "A. Output: Functional MVP Deployment \nAcceptance criteria: Marketplace MVP deployed and accessible on Cardano testnet. ZK stamping, licensing, and ABE functions operational in end-to-end demo.\nEvidence:\n・Live MVP Backend (API + Swagger Docs): https://promotes-wherever-tide-rules.trycloudflare.com/docs\n・Live MVP Frontend (Marketplace UI): https://perl-news-favors-physics.trycloudflare.com\n・End-to-end demo video: https://github.com/Nucastio/MidnightZK-Data-Marketplace-for-Authentic-Human-Data-Nuauth/blob/main/demo-nuauth-e2e.mp4\n・Backend API source: https://github.com/Nucastio/MidnightZK-Data-Marketplace-for-Authentic-Human-Data-Nuauth/blob/main/backend/api/main.ts\n・Frontend source: https://github.com/Nucastio/MidnightZK-Data-Marketplace-for-Authentic-Human-Data-Nuauth/tree/main/ui\n・Full pipeline: dataset registration → on-chain stamping → Midnight ZK attestation (proveCreatorStamp + bindL1Stamp) → Plutus V3 license listing → license purchase → ABE-gated decryption\n\nCardano Preprod Transaction Evidence:\n・CIP-20 Stamp tx: 3cf1e3bf675f16a015fefa8198ea252b58378bdcfce177692b3e94ee685992a8 — https://preprod.cardanoscan.io/transaction/3cf1e3bf675f16a015fefa8198ea252b58378bdcfce177692b3e94ee685992a8\n・License Purchase tx: 49d8fda93f2a8ef3f900a9032e2ed040eb1d1d1bcae480958c7941254ae4ca3e — https://preprod.cardanoscan.io/transaction/49d8fda93f2a8ef3f900a9032e2ed040eb1d1d1bcae480958c7941254ae4ca3e\n\nMidnight ZK Transaction Evidence:\n・Contract address: 253780ec4b84a1314d8c27e06c6da2d6002c4eb6eff0c41a38327a92b8135e87\n・proveCreatorStamp tx: 5d36c93d8b5f64498090f728b935df57f3710c097fe341f1c873d393541d8089\n・bindL1Stamp tx: 1ac37d85ea0a077d2faf7c19c1a474ce9b9cace3917262aaf430464e30d2b4e4\n・L1 anchor digest: af6d02aba35a7d52397eb50bc7fac03763fce736023775ba34c74fda343cbe9a\n\nB. Output: Technical Documentation & User Guides\nAcceptance criteria: Technical documentation and setup instructions complete and public.\nEvidence:\n・Documentation folder (11 documents): https://github.com/Nucastio/Midni",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 38,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "title": "Cardano Analytics Platform powered by LLM",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 25000,
+      "promise": "・Ontology for Cardano ecosystem\n・Technical report with CAP use cases, existing glossaries and ontologies.\n・Functional knowledge base and API\n・Knowledge Base API tests\n\nThe technical report (output 2) will describe use cases, identifying relevant queries, data types and their purpose, along with extraction and visualization strategies. It will cover queries and necessary data to support answering them, for instance:\n・“What were the largest ADA transactions in the last 24 hours?”\n・“How many wallets hold over 200,000 ADA?”\n・“Plot a bar chart showing monthly smart contract deployments in the last year.”",
+      "criteria": "・Ontology is comprehensive, covering key concepts and relationships within the Cardano ecosystem\n・Technical report identifying CAP use cases, existing glossaries, related existing ontologies and knowledge-oriented applications within the Cardano space\n・Knowledge base components are functional, allowing for the storage and retrieval of ontology-aligned data\n・Tests cover basic Knowledge Base operations",
+      "report": "We have updated CAP’s README.md file to include details about how to set up macOS, Linux (Ubuntu), and WSL2 (** not officially supported **) environments. We also created a walkthrough video illustrating the installation and testing with docker compose.\n\nBelow is the list with the agreed outputs (plus the walkthrough video).\n1. Ontology is available on project github repository\nOntology Definition: https://github.com/mobr-ai/cap/blob/main/src/ontologies/cardano.ttl\nOntology Documentation (source code): https://github.com/mobr-ai/cap/blob/main/documentation/\nOntology Documentation (live website): https://mobr.ai/cardano \n2. Technical report is available on project github repository\nhttps://github.com/mobr-ai/cap/blob/main/documentation/pdf/technical_report.pdf\n3. Functional knowledge base and API are available on project github repository\nSource code: https://github.com/mobr-ai/cap/tree/main/src/cap\nHow to run the platform: https://github.com/mobr-ai/cap/blob/main/README.md\n4. Knowledge Base API tests are available on project github repository\nSource code: https://github.com/mobr-ai/cap/tree/main/src/tests\nHow to run tests: https://github.com/mobr-ai/cap/blob/main/README.md\n5. Walkthrough video\nVideo showing how to install CAP and run tests using docker compose on macOS:\nhttps://drive.google.com/file/d/1KIYR1lgSsd8qCCSjePzgPHWicfxL0RRa/view?usp=share_link",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 18
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 37500,
+      "promise": "CAP will use features from cardano-node, db-sync, and APIs to extract data from the cardano network. CAP needs to extract data (output 1) from the Cardano network to structure it in a triplestore to support semantic search. In this sense, the data must be aligned (output 2) according to the ontology delivered on Milestone 1. The data extraction, transformation and loading into the knowledge base delivered on Milestone 1 will be performed by ETLs pipelines (output 3). We will create tests (output 4) to assert if the implemented mechanisms are performing according to the expected behaviour. That is, extracted data is correctly retrieved and injected in the Knowledge Base according to the ontology definition.\n・Basic data extraction from the Cardano network\n・Extraction components and ontology alignment mechanisms\n・ETL pipelines for transforming and loading data\n・Data extraction and ETL pipelines tests",
+      "criteria": "・Data extraction mechanisms\n・support the data described in CAP use cases, data types, and data model documented in Milestone 1 technical report \n・are successfully extracting data from the Cardano network according to available tests (output 4)\n・Data extraction components have ontology alignment mechanisms according to the data types and data model documented in Milestone 1 technical report\n・ETL pipelines are transforming and loading data into the Knowledge Base according to available tests (output 4)\n・Data extraction and ETL pipelines tests cover the data types and data model documented in Mil",
+      "report": "Dear Catalyst Team,\nWe are pleased to submit the deliverables for Milestone 2. This milestone focused on implementing and testing the data extraction, ontology alignment, and ETL mechanisms required to populate the semantic knowledge base with data from the Cardano network.\n\nMilestone 2 Deliverables (Outputs):\n1. Data Extraction Mechanisms – Components utilizing `cardano-db-sync` to extract the data.\n2. Ontology Alignment Mechanisms – Components ensuring that extracted data is structured in accordance with the ontology delivered in Milestone 1.\n3. ETL Pipelines – Pipelines for orchestrating data extraction, transforming and loading extracted data into the knowledge base.\n4. Tests – tests validating that data is correctly extracted, transformed, and aligned with the ontology.\n5. Video Walkthrough (bonus) – Available at: https://drive.google.com/file/d/1abX0FFlzOBuuKQ69AFEj5zZFaWLZfotB/ \n\nDeliverables 1-4 are available in our project’s GitHub repository: http://github.com/mobr-ai/cap \n\nWe look forward to your review and feedback.\n\n﻿Kind regards,\nMOBR team",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "8",
+      "cost": 37500,
+      "promise": "・LLM-based query engine\n・API for processing natural language queries\n・Documentation for querying the system via natural language\n・Walkthrough video",
+      "criteria": "・LLM-based query engine supports natural language queries such as the ones described in use cases documented in Milestone 1 technical report \n・API supports the natural language queries such as the ones described in use cases documented in Milestone 1 technical report\n・Documentation shows how to query the system via natural language\n・Walkthrough video shows how to query the system via natural language",
+      "report": "Dear reviewers and Catalyst team,\nWe’ve completed M3: LLM Query Engine Development.\nDeliverables:\nLLM-based query engine\n・LLM Model: https://ollama.com/mobr/cap\n・LLM Client Code: https://github.com/mobr-ai/cap/blob/main/src/cap/services/ollama_client.py\n・Integration of the LLM client code and API for natural language queries can be found on CAP’s repository: https://github.com/mobr-ai/cap \n\nAPI for processing natural language queries\n・https://github.com/mobr-ai/cap/blob/main/src/cap/api/nl_query.py\n\nDocumentation for querying the system via natural language\n・https://github.com/mobr-ai/cap/blob/main/documentation/nl_queries/natural_language.md\n\nWalkthrough video\n・https://drive.google.com/file/d/1ic_Oc0qSU7rQ42CkoaU4P9KAEmxKkZJ4/view?usp=share_link \n\nKind regards.\nMOBR Systems team.",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 12
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 25000,
+      "promise": "・Designed user interface for data visualization\n・Backend features to manage dashboard components\n・Dashboard documentation",
+      "criteria": "・Dashboard is functional\n・Dashboard allows users to interact with and visualize data\n・Dashboard UI components such as charts, graphs, and tables are integrated, facilitating customizable dashboard creation\n・Backend features is capable of managing dashboard components\n・Dashboard documentation provides clear instructions for users and developers",
+      "report": "A. Output: Designed user interface for data visualization\nAcceptance criteria:\n・Dashboard UI is functional\n・Users can interact with and visualize data\n・Charts, graphs, and tables are integrated\n・Dashboard supports customizable layout via pinned artifacts\n\nEvidence:\n・Frontend code (UI + visualization components):\n・ https://github.com/mobr-ai/cap-frontend\n・Live verification (alpha deployment):\n・Go to https://cap.mobr.ai\n・For now, either log in via Google OAuth or Cardano wallet (Lace, Eternl, Flint, Nami, etc.). Account creation is disabled and redirects to waiting list registration.\n・Run any artifact-generating query, e.g.:\n・“Plot a pie chart for the top 1% ADA holders vs total supply.”\n・“Bar chart of monthly multi-assets created in 2021.”\n・“List the latest 5 blocks.”\n・“Line chart of monthly transactions and outputs.”\n\nB. Output: Backend features to manage dashboard components\nAcceptance criteria:\n・Backend supports basic operations for dashboard components\n・Dashboard items persist user-generated artifacts (tables, charts)\n・Integrated with authentication and user-specific dashboards\n\nEvidence:\n・API endpoints for dashboard management:\n・ https://github.com/mobr-ai/cap/blob/main/src/cap/api/dashboard.py\n・Database models and ORM schema:\n・ https://github.com/mobr-ai/cap/tree/main/src/cap/database\n・Live verification (alpha deployment):\n・ https://cap.mobr.ai\n・ (Pin an artifact to confirm backend persistence.)\n\nC. Output: Dashboard documentation\nAcceptance criteria:\n・Documentation explains how users and developers interact with the dashboard\n・Instructions for creating visualizations and pinning artifacts\n・Setup and usage guides for dashboard components\n\nEvidence:\n・Dashboard documentation (Frontend Guide):\n・ https://github.com/mobr-ai/cap-frontend/blob/main/docs/FRONTEND_GUIDE.md\n・Main project README (usage, setup, workflow):\n・https://github.com/mobr-ai/cap-frontend/blob/main/README.md\n\nD. Bonus evidence (not specified as deliverable, but included):\n・Video walkthrough showing",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 22,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "11",
+      "cost": 25000,
+      "promise": "・Tests for the entire system and APIs\n・Documentation explaining how to run the tests\n・Final close-out report\n・Final closeout video",
+      "criteria": "・System and APIs passes all tests\n・Documentation explains how to execute the tests in a comprehensive way\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Dear Catalyst team, here is the PoA for the final milestone. \nAs requested, we added a test execution report, as well as screen capture videos of every test execution.\nA. Output: Tests for the entire system and APIs\nAcceptance criteria:\n・System and APIs pass all tests\n・Tests cover system behavior comprehensively\n\nEvidence:\n・Full test suite available in the project GitHub repository:\n・ https://github.com/mobr-ai/cap/tree/main/src/tests\n\nB. Output: Documentation explaining how to run and execute the tests\nAcceptance criteria:\n・Documentation clearly explains how to execute the tests\n・Documentation is available on the project GitHub repository\n\nEvidence:\n・Test execution report:\n・https://github.com/mobr-ai/cap/blob/main/documentation/pdf/test-run-report.pdf\n・Test documentation:\n・ https://github.com/mobr-ai/cap/blob/main/documentation/tests/tests.md\n・Test execution (screen capture):\n・https://drive.google.com/drive/folders/1YOgNsGgml2HxG9ECxJDOJahLMk0QgmMa?usp=sharing\n\nC. Output: Final close-out report\nAcceptance criteria:\n・The final close-out report is publicly available\n・Document summarizes project outcomes and milestone results\n\nEvidence:\n・Final close-out report (PDF):\n・ https://github.com/mobr-ai/cap/blob/c89a1702fbf3f9a1471d93dc2e86969cfa57e59c/documentation/pdf/project_closeout_report.pdf\n\nD. Output: Final closeout video\nAcceptance criteria:\n・Final closeout video is publicly available\n・Video summarizes the completed system, achievements, and final deliverables\n\nEvidence:\n・Public video link:\n・ https://www.youtube.com/watch?v=nRsa_qiGhN0",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

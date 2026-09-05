@@ -1,0 +1,59 @@
+{
+  "title": "Ecosystem Marketplace - Open Source & Audit",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 36000,
+      "promise": "Smart contracts are a unique form of computer code, in that once deployed to an immutable blockchain they are difficult to update. In the case of Cardano, the smart contract's code is also used to derive the address used to interact with it. Changing the code therefore results in a new address, which could make it difficult for applications interacting with the smart contract, as assets held in UTxOs of the original address may be unavailable from the new smart contract iteration and corresponding address.\n\nFor this reason any bugs that could pose a risk to the security of a smart contract need to be detected and addressed prior to deployment. Code audits allow specialised teams to detect potential bugs or vulnerabilities in smart contracts that may not have been identified by the original development team. As the marketplace smart contracts used in this project have been open sourced, anyone who wishes to use them as part of their own application will benefit from knowing that they have been audited for potential security risks.\n\nThis milestone will result in the smart contracts used for the ecosystem marketplace application (available at https://github.com/empowa-io/ecosystem-mar",
+      "criteria": "Ideally reading the audit report provided by the auditing company, with their findings and confirmation that necessary corrections have been made to the smart contract code, will be sufficient to achieve acceptance that the output for this milestone has been properly delivered. If however the report is too complex for Catalyst reviewers to determine for themselves whether the milestone output has been properly completed, then contact details for the auditing firm will be made available so the reviewers can interview the firm to establish whether the proposed output has been achieved. If the re",
+      "report": "The smart contracts audit was completed by Anastasia Labs.\nThey identified 9 areas in the code that needed review, with varying severity ratings. There were 1 Major, 3 Minor and 5 Informational findings. Issues that required action were corrected and Anastasia Labs reviewed the updates to confirm the issues identified were resolved in the updated code.\nTo confirm the completion of this milestone, the final audit report is now available on the project's open source GitHub repo, at https://github.com/empowa-io/ecosystem-marketplace/blob/main/audit/anastasia-labs-audit-report.pdf\nIf the reviewers have any questions about the completeness of this audit, then please feel free to contact me for a follow up discussion.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 36000,
+      "promise": "When developing application code, many programmers like to test that their code is resulting in the expected outputs before deploying it and getting support requests from users due to problems they experience. In order to do so, a common approach is to use testing frameworks that allow execution of the code to be scripted (a programmatic way of providing inputs to the application code) so that different input variations can be tested easier than doing so manually. By simplifying the execution of tests using different inputs, various scenarios can be tested to see how the application code responds. This might include deliberately supplying incorrect inputs, to ensure that the code can properly deal with unusual interactions and not cause data to be impacted unexpectedly when doing so. This is sometimes referred to as testing for both the \"happy path\" and the \"sad path\", as testing for unexpected or invalid user interactions is often more important than testing for when a user interacts with the application in the expected way.\n\nThe output for this milestone will be two or more test scripts that execute the smart contract code to determine how it responds to different data inputs and",
+      "criteria": "If the Catalyst reviewers are not able to determine by inspecting the test scripts submitted to the open source code repository using the commit information supplied, whether we have sufficiently achieved the objectives identified in this milestone's output description, then a meeting will be scheduled with one of the developers who was involved in creating the test scripts so the reviewers can interview them to help understand it better. If the reviewers are still not satisfied following these two signoff steps, then the Catalyst team will be approached to provide mediation.",
+      "report": "Tests for the marketplace smart contracts have now been submitted to the repository for anyone to use. What is included with these tests is able to be reviewed in the description of the pull request used to submit the tests, which can be seen at https://github.com/empowa-io/ecosystem-marketplace/pull/5.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "A live implementation of the ecosystem marketplace this project aims to open source is available to use at https://preprod.empowa.app/nft-collections/. The application code for this instance of the marketplace has been branded/themed according to Empowa’s platform. In order to open source this off-chain part of the application, the existing code has to be modified so that it has a generic “white labelled” interface.\n\nThis milestone output will see the addition of this white labelled code to the ecosystem marketplace GitHub code repository, at https://github.com/empowa-io/ecosystem-marketplace.",
+      "criteria": "If the Catalyst reviewers are not able to determine by inspecting the white labelled off-chain code submitted to the open source code repository using the commit information supplied, whether we have sufficiently achieved the objectives identified in this milestone's output description, then a meeting will be scheduled with one of the developers who was involved in creating the white labelled off-chain code so the reviewers can interview them to help understand it better. If the reviewers are still not satisfied following these two signoff steps, then the Catalyst team will be approached to pr",
+      "report": "A white labelled version of the off-chain application code is now available in a new repository at https://github.com/empowa-io/ecosystem-marketplace-app",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 18000,
+      "promise": "Once all the application code and test scripts needed to deploy a version of the ecosystem marketplace has been committed to the open source GitHub code repository (at https://github.com/empowa-io/ecosystem-marketplace), documentation for how to configure, deploy and use the smart contracts and off-chain application code specific to the deployers needs will be made available.\n\nThe output for this milestone will therefore be the addition of the deployment documentation to the open source GitHub code repository above.\n\nA close out report/video will also be provided that documents what has been delivered as part of the entire project.",
+      "criteria": "If the Catalyst reviewers are not able to determine by reading the deployment documentation submitted to the open source code repository using the commit information supplied, whether we have sufficiently achieved the objectives identified in this milestone's output description, then a meeting will be scheduled with one of the devops engineers who was involved in creating the deployment documentation so the reviewers can interview them to help understand it better. If the reviewers are still not satisfied following these two signoff steps, then the Catalyst team will be approached to provide m",
+      "report": "The code for this project has been split into 2 repositories, as follows:\nSmart Contracts - https://github.com/Vaka-Consulting/ecosystem-marketplace-contracts\nOff-chain Application - https://github.com/Vaka-Consulting/ecosystem-marketplace-app\n\nThese repositories provide documentation on how to configure and deploy an instance of the ecosystem marketplace. An example instance is able to be deployed using the Docker compose files provided, although developers are encouraged to tailor their instance to suit their infrastructure requirements/platform. A demo instance (running on PreProd) has also been deployed to https://marketplace-app.dev.vakaconsulting.io/ for milestone reviewers to assess.\n\nFinally, a video which shows what has been delivered as well as a deployment walkthrough is available at https://drive.google.com/file/d/1OxaLQOyhyydEomsGhWD5uUYvrRJXMAHl/view \n\nThe close-out report (which includes a link to the close-out video) for this project is available https://drive.google.com/file/d/10R10wbBXFNgbc0B-8vIJSwk23XdeYJDD",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 5,
+      "cut": true
+    }
+  ]
+}

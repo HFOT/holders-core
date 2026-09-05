@@ -1,0 +1,73 @@
+{
+  "title": "Optim OADA OPEN: Local, Open Source OADA Frontend for Developers",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "This milestone involves finalizing the OADA frontend codebase for open source release by removing any proprietary or sensitive information and enhancing security measures. Where appropriate code commentary will be made to facilitate understanding for developers. Through an internal code review, the development team will identify any existing vulnerabilities or inefficiencies, producing a list of recommended mitigations to ensure that the codebase aligns with best practices for open source distribution.\n・Detailed Design Specification Document",
+      "criteria": "・Detailed Design Specification Document\n・The internal audit confirms that all sensitive or proprietary data has been fully removed or anonymized from the codebase, and that there are no vulnerabilities in the codebase. The accompanying report will outline the scope, process, findings and any potential corrective actions taken in the implementation of this internal code review.\n・In addition, code commentary must be in place so that third-party developers can understand project architecture and functionality.\n・Adheres to open source best practices, evidenced by a coherent folder structure, a wel",
+      "report": "Open Source Repository Link\n・A publicly accessible GitHub repository containing the prepared codebase and commentary\n・https://github.com/OptimFinance/oada-ui\n・Link to Internal Audit report described in the previous section.\n・https://github.com/OptimFinance/oada-ui/blob/master/CodeReviewReport.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60000,
+      "promise": "Under this milestone, developer friendly documentation will be created to ensure seamless integration and usage of the OADA Open project. This documentation will include step by step setup guides for the frontend, detailed developer manuals that cover the codebase’s architecture and key functionalities, and an API reference outlining how to interact with the OADA backend. The goal is to offer clarity and accessibility to developers with varying experience levels and facilitate efficient onboarding.\n・Detailed setup and installation guides.\n・Developer manuals covering key functionalities.\n・API documentation for interacting with the OADA backend.",
+      "criteria": "・Detailed setup and installation guides\n・Complete guide for installing the repository and start building with it, troubleshooting or FAQ sections addressing common potential issues.\n・Developer manuals covering key functionalities\n・Document explaining all core functionalities of the OADA Open project for developers to learn the entire system’s logic.\n・API documentation for interacting with the OADA backend\n・Explains how to interact with the OADA smart contracts from the front end implementation",
+      "report": "・Detailed setup and installation guides.\n・Setup\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/setup\n・Installation\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/setup/installation\n・Development Workflow\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/setup/development-workflow\n・Troubleshooting\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/setup/troubleshooting\n・Development Tips\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/setup/development-tips\n・Open Source Contributions\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/setup/open-source-contributions\n・FAQ\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/setup/faq\n・Developer manuals covering key functionalities.\n・Key Functionalities\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/key-functionalities\n・Wallet Integration\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/key-functionalities/wallet-integration\n・Dashboard\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/key-functionalities/dashboard\n・Transaction Management\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/key-functionalities/transaction-management\n・UTxO Management\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/key-functionalities/transaction-management/utxo-management\n・Transaction Creation and Conversion\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/key-functionalities/transaction-management/transaction-creation-and-conversion\n・Transaction Monitoring\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/key-functionalities/transaction-management/transaction-monitoring\n・Real-time Updates\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/key-functionalities/real-time-updates\n・Portfolio Value Tracking\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/key-functionalities/real-time-updates/portfolio-value-tracking\n・Transaction Status Monitoring\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/key-functionalities/real-time-updates/tran",
+      "kinds": [
+        "doc"
+      ],
+      "links": 52,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40000,
+      "promise": "This milestone centers on developing a series of accessible tutorials that guide developers through common tasks and workflows, ranging from initial setup to more advanced customization and integration scenarios. Tutorials will feature clear explanations, practical examples, and screenshots or code snippets to illustrate key points. Additionally, example projects will be provided, demonstrating various ways to integrate or extend the OADA protocol.\n・Tutorial series covering basic to advanced topics.\n・Example projects demonstrating customization and extensions.",
+      "criteria": "・Tutorial series covering basic to advanced topics\n・Step by step tutorials that do not assume extensive prior knowledge, allowing even novice developers to follow along successfully. These tutorials should address basic installation and configuration of the OADA frontend, fundamental usage of the OADA protocol, advanced customization or integration. \n・Example projects demonstrating customization and extensions\n・An example project on testnet or mainnet beta should show at least one customization or extension of the protocol via the front end.",
+      "report": "・Published Tutorials\n・A dedicated section in the GitBook documentation or a standalone repository containing step by step guides in written format.\n・Tutorials\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/tutorials\n・Environment Setup and Installation\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/tutorials/environment-setup-and-installation\n・Understanding the Project Structure\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/tutorials/understanding-the-project-structure\n・Basic Configuration and Customization\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/tutorials/basic-configuration-and-customization\n・Working with Components\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/tutorials/working-with-components\n・State Management and Data Flow\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/tutorials/state-management-and-data-flow\n・Wallet Integration and State Management\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/tutorials/wallet-integration-and-state-management\n・Smart Contract Integration\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/tutorials/smart-contract-integration\n・Advanced UI Customization\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/tutorials/advanced-ui-customization\n・Testing and Quality Assurance\n・https://optim-finance.gitbook.io/optim-finance/oada-ui/tutorials/testing-and-quality-assurance\n・Working Example Repositories\n・Public GitHub links to an example project\n・https://github.com/OptimFinance/oada-ui/tree/yield-donation\n・README with developer guidelines\n・https://github.com/OptimFinance/oada-ui/blob/yield-donation/README.md\n・Repo feature additions to OADA Open Master branch template\n・https://github.com/OptimFinance/oada-ui/compare/yield-donation?expand=1",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 13
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 10000,
+      "promise": "In this milestone, official communication channels will be set up to encourage community engagement, provide technical support, and foster open collaboration. Platforms such as a dedicated channel on the Optim Discord server will be created so that developers, end users, and contributors can interact directly with the project team and with one another. Clear participation guidelines will accompany these support channels, defining community standards and expectations. \n・Official community forum or Discord server.\n・Guidelines for community participation and support.",
+      "criteria": "・Official community forum or Discord server.\n・A publicly accessible community forum or chat server must be launched, tested by a small group of initial members or moderators for usability. Visibility is essential, so the forum or chat server must be linked or referenced across official documentation and repositories, reinforcing it as the primary hub for OADA community interaction.\n・Ticketing System in place for support cases to be further escalated and formalized \n・Guidelines for community participation and support.\n・Community guidelines will be publicly posted, ensuring that newcomers unders",
+      "report": "Live Community Links\n・Active invitation URL to Discord (or forum URL) that is publicly accessible.\n・https://discord.gg/FqEyNDXt\n\nCommunity Guidelines Document\n・Posted within the forum or chat server, outlining rules and support protocols.\n・https://drive.google.com/file/d/1qUw_XgON2ZXqR4ZsYaaI9PhSRleWj8QL/view?usp=sharing\n\nScreenshots of Optim Discord Ticketing System \n・Screenshots in the form of JPEG files showing most recent tickets and team responses. For privacy reasons the participants and text will be marked out but it will be clear these are recent tickets in the Optim Finance Discord.\n・https://drive.google.com/file/d/1VFNGjpqgNh7842ktm3mRErpeoEIyLuMn/view?usp=sharing",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 30000,
+      "promise": "This milestone marks the official release of the open source codebase and documentation to the wider public, coupled with a promotional campaign to stimulate engagement within the Cardano and DeFi ecosystems. Public repositories will be updated or published, and announcements will be made through blogs, social media, or community channels, highlighting the project’s launch and encouraging developers and users to explore the new resources. By emphasizing the benefits, use cases, and collaborative opportunities of the OADA Open project, this promotion aims to drive adoption and strengthen the community.\n・Public repositories on GitHub or similar platforms.\n・Announcement through blogs, social media, and community channels.\n・Project Close-out Report\n・Project Close-out Video",
+      "criteria": "・Public repositories on GitHub or similar platforms.\n・Repositories are publicly accessible and clearly versioned or tagged to indicate their readiness for general use.\n・Announcement through blogs, social media, and community channels.\n・Onboarding resources clearly directing developers to documentation, support channels, and any other essential information must be included in the announcements, ensuring that newcomers know where to find these resources..\n・Project Close-out Report\n・Written summary listing KPIs and how they were addressed and what the next stage plans are with the product or serv",
+      "report": "GitHub Release \n・https://github.com/OptimFinance/oada-ui\n\nAnnouncement Records\n・Medium: https://optim-labs.medium.com/oada-open-c3f2dec6bd3d\n・Twitter: https://x.com/optimfi/status/2084503546322444717?s=46\n\nProject Close-out Report and Project Close-out Video\n・Close Out Report:\n・https://drive.google.com/file/d/1no51aSbOiikRAdZA8p9QkubJekIEDf8I/view?usp=sharing\n・Close Out Video:\n・https://drive.google.com/file/d/10jb3_i1S7hAf-U97AZRLujLNfg0GJn6A/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 6,
+      "cut": true
+    }
+  ]
+}

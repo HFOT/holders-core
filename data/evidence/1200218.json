@@ -1,0 +1,60 @@
+{
+  "title": "Support DRep to connect Delegators (CIP-1694)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "+ Project Outline Document with development plan describing goal, scope, and plan to run this project\n+ Requirement document about user interface and experience design\n+ High-level design documentation outlining project architecture.",
+      "criteria": "+ Project Outline Document with development plan has to include:\n + Project summary\n + Project objective\n + Scope\n + Methodology\n + Development Plan\n+ The Requirement document has to include\n + Figma file about user interface (UI) design\n + Detail document describing UI\n+ High-level design documentation outlining project architecture has to include:\n + High-level Architecture\n + Details of components and Module\n + Workflow of data\n + System interactions\n + Resource Allocation",
+      "report": "- Link to Project Outline Document with development plan\n・https://github.com/thuchintran/Tempo-DRep/blob/main/Project%20Outline%20Document.pdf\n\n- Links to requirement document\n・Figma link: https://www.figma.com/design/ody9FGRB5u3dVDeD5EsKXJ/Tempo-DRep?node-id=50-6045&node-type=section&t=37HckyPUcWF2gB7h-0\n・https://github.com/thuchintran/Tempo-DRep/blob/main/Requirement%20document.pdf\n\n- Link to high-level design documentation outlining project architecture.\n・https://github.com/thuchintran/Tempo-DRep/blob/main/System%20Architecture%20Overview.pdf\n\nNoted that: we use the word \"internal poll\" In DRep's Community instead of proposal to avoid confusion with the proposal on Cardano",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 30000,
+      "promise": "- Deploy the platform on SanchoNet Testnet including features:\n + DRep Registration\n + DRep Profiles\n + DRep Listing\n + Delegator delegation\n + Proposal creation and voting, comment on proposals in the DRep community with their delegators\n- The features have been fully tested by successfully executing the defined test cases.",
+      "criteria": "- The features fully implement all the defined test cases.\n- ADA holders are capable of performing all the features listed in Outputs on the SanchoNet environment.",
+      "report": "・Link access to live platform in Sanchonet Testnet: https://sanchonet.tempo.vote/\n・We added more features than we originally defined, so you might see some that fall outside the scope of this proposal. Please ignore them.\n・Report on the execution results of the test cases for the features: https://docs.google.com/spreadsheets/d/1H9a5bWNuNoSLNAfynxud8J2tnll1Hlp3/edit?gid=1115219174#gid=1115219174",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 30000,
+      "promise": "- Launch the platform and share the public link to communities\n- Promote the platform through social media and other channels to encourage users to try it and provide feedback",
+      "criteria": "- At least 3 DReps onboard on our platform and at least 3 created proposals in their community",
+      "report": "・Link access to live platform on Mainnet: https://tempo.vote/\n・We added more features than we originally defined, so you might see some that fall outside the scope of this proposal. Please ignore them.\n・Links to the platform's social media account: \n・X Platform: https://x.com/tempo_vote\n・Telegram: t.me/tempo_vote\n・Report showing the number of DReps onboarded and the number of proposals created in their community:https://docs.google.com/spreadsheets/d/165Xfqo1EP6sSivFFNkkEZsB04x7tKl6q/edit?gid=978725521#gid=978725521\n\nLink project on github: https://github.com/users/thuchintran/projects/4",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 20000,
+      "promise": "- Live Tempo support for DRep webiste\n- Final closeout report\n- Final closeout video",
+      "criteria": "- The website and video are accessible, and the solution described in the IdeaScale proposal is implemented.\n- The video must be easy to understand and provide helpful information for both delegators and DReps",
+      "report": "Hello,\nThank you for your previous review and feedback.\nFollowing your comment, I have revised and updated the Close-out Report to fully align with the Catalyst Project Close-out Report and Project Close-out Video (PCR & PCV) guidelines. In particular, I have:\n・Added a clear section on Challenge KPIs and explained how the project addressed each KPI.\n・Added a detailed section on Project KPIs and how they were achieved across all milestones.\n・Re-structured the report using the official headings recommended by Catalyst.\n\nThe updated Close-out Report is available here:\nhttps://docs.google.com/document/d/1wiz2N-yyTHqNtfRk2tWKhazgSP6NhukOkQOXPxM9DP8/edit?usp=sharing\nBelow is the consolidated Proof of Achievement for the Final Milestone:\nA. Output: Live Tempo Support for the DRep Website\nAcceptance criteria:\n・The live website is accessible and support features are available for DReps and delegators.\n・The solution described in the IdeaScale proposal is implemented.\n\nEvidence:\n・Live platform: https://tempo.vote\n\nB. Output: Final Close-out Report\nAcceptance criteria:\n・A complete close-out report summarizing all milestones, achievements, evidence, lessons learned, and next steps.\n・he document must follow Catalyst reporting guidelines.\n\nEvidence:\n・Final close-out report (public): https://docs.google.com/document/d/1wiz2N-yyTHqNtfRk2tWKhazgSP6NhukOkQOXPxM9DP8/edit?usp=sharing\n\nC. Output: Final Close-out Video\nAcceptance criteria:\n・The video must be public, easy to understand, and provide helpful information for both delegators and DReps.\n\nEvidence:\n・Final close-out video: https://youtu.be/VYpP9DgnNKo\n\nI believe this revised submission now fully meets the Catalyst requirements for the Final Milestone.\nThank you very much for your time and for reviewing the updated Proof of Achievement.\n\nBest regards,\nNguyen Thi An\nTempo Team",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

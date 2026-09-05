@@ -1,0 +1,80 @@
+{
+  "title": "Ephemeral Cardano DevNets by TxPipe",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 39428,
+      "promise": "・Publicly available source-code containing the project scaffold: A foundational structure of the codebase, consisting of the basic code skeleton that will be built upon as the project progresses.\n・A stub of the runtime engine: A placeholder of the artifacts required to boot and execute a devnet. This component will not be functional at this stage, but it will serve as foundation for further development.\n・A stub of the language model: A placeholder of the artifacts required to describe and parse the language model. This component will not be functional at this stage, but it will serve as a foundation for further development.\n・A stub of the CLI main command entry-points: A simple, preliminary version of the command-line interface (CLI) binary. This binary will be an executable file that users can run directly from their command line.",
+      "criteria": "・The source-code is suitable for further feature development\n・The codebase follows established coding conventions and best practices for a Rust project (cargo fmt and cargo clippy show no warnings).\n・The repository has a CI pipeline that runs code checks on each pull-request commit.\n・The repository shows instructions for developer contributions, release procedure and bug reporting.\n・The runtime engine has a suitable public API interface\n・There's a Rust crate that compiles into a library holding the public API interface\n・There's an entry-point in the library for triggering a devnet from a confi",
+      "report": "・Link to source-code publicly-available in a Github repository that includes all of the milestone's outputs\n・https://github.com/tx3-lang\n・https://github.com/tx3-lang/tx3\n\n・Link to README in the repository containing required instructions / documentation for a developer to assess the structure of the codebase\n・https://github.com/tx3-lang/tx3/blob/main/README.md\n\n・Link to examples of Github Actions showing valid executions of the CI pipeline that demonstrate the existence of automatic code checks\n・https://github.com/tx3-lang/trix/actions/runs/14799399880/\n\n・Link to API reference documentation showing the entry-points and other artifacts of the runtime engine public api surface\n・https://docs.txpipe.io/tx3\n・https://github.com/txpipe/dolos\n・https://github.com/txpipe/dolos/blob/main/src/sync/emulator.rs\n\n・Link to an example snippet of the new language and the output result of parsing the snippe\n・https://github.com/tx3-lang/tx3/tree/main/examples\n・https://docs.txpipe.io/tx3\n\n・Link to binary release and install procedures that allows a user / developer to install the CLI component locally.\n・https://github.com/tx3-lang/up/releases/latest",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 20,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 39428,
+      "promise": "・Publicly available source-code containing the milestone features: Source code publicly available, encapsulating all the milestone features developed till that point. This will ensure transparency and open collaboration, while allowing the community and other developers to contribute, audit, or modify as per their needs. This code will be hosted on a public repository, adhering to Apache 2.0 license.\n・Specs for a declarative language capable of defining test scenarios: The definition of a new language that allows developers to declare transaction sequences and the expected outputs. These specs will not executable at this stage since they need a runtime that will be developed on following milestones.\n・Examples of test scenarios defined using the new language: A set of examples that show diverse testing scenarios with the goal of showcasing all the capabilities of the language.\n・Documentation of how to leverage the new language: Comprehensive documentation that will serve as guidance and reference for developers that want to build their own testing scenarios.",
+      "criteria": "・The provided source-code is comprehensive\n・The code includes the specs for the new language\n・The code includes different test scenarios\n・The code includes documentation for the new language\n・Integrations tests in the code repository execute successfully\n・The code is public and committed under Apache 2.0 license\n・A developer is able to define a new test scenario in the new language following the specs\n・The specs provides all primitives and artifacts required to describe test scenarios\n・The initial state (balances) can be declared as part of the test scenario\n・A sequence of transactions can be",
+      "report": "・Link to source-code available in the Github repository\n\n https://github.com/tx3-lang/\n https://github.com/tx3-lang/tx3\n https://github.com/tx3-lang/trix \n\n・Link to the part of the codebase that defines the language specs\n\n https://github.com/tx3-lang/tx3/tree/main/crates/tx3-lang/src\n\n・Link to the part of the codebase where the example test scenarios are defined\n\n https://github.com/tx3-lang/tx3/tree/main/examples\n https://github.com/tx3-lang/tx3/blob/main/examples/transfer.tx3\n\n・Link to documentation site describing the new language\n\n https://docs.txpipe.io/tx3/language \n https://docs.txpipe.io/tx3/tooling/testing \n\n・Link to Github actions execution showing integration test successful execution\n\n https://github.com/tx3-lang/trix/tree/main/.github\n https://github.com/tx3-lang/trix/actions/runs/15397415410\n\n・Link to video showcasing the new features developed for this milestone\n\n https://youtu.be/mKSDode5ROA",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 22,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 39428,
+      "promise": "・Publicly available source-code containing the milestone features: Source code publicly available, encapsulating all the milestone features developed till that point. This will ensure transparency and open collaboration, while allowing the community and other developers to contribute, audit, or modify as per their needs. This code will be hosted on a public repository, adhering to Apache 2.0 license.\n・A runtime component capable of executing test scenarios: A library that is able to take a test scenario described using the language developed in MS2 and execute the required steps while evaluating the outcome.\n・A CLI tool to serve as entry-point for the runtime: A command-line executable capable of loading a test scenario from a file and triggering the execution runtime. This CLI will leverage the specs and parsing mechanism from MS2 and the runtime developed in the current milestone.\n・Documentation on how to use the runtime: Comprehensive documentation describing how the runtime works and how to use the CLI to trigger the test scenarios. This documentation will build on top of the existing documentation from MS2.",
+      "criteria": "・The provided source-code is comprehensive\n・The code includes the specs for the new language\n・The code includes different test scenarios\n・The code includes documentation for the new language\n・Integrations tests in the code repository execute successfully\n・The code is public and committed under Apache 2.0 license\n・A developer can use the new runtime to execute test scenarios\n・The CLI accepts a source file containing the test scenario description\n・The runtime takes a reasonable amount of time to process and returns a report.\n・Transactions run against predetermined ledger data.\n・Cardano phase-1 a",
+      "report": "Link to source-code available in the Github repository.\nhttps://github.com/tx3-lang/trix\n\nLink to the part of the codebase where the runtime is implemented.\nhttps://github.com/tx3-lang/trix/blob/main/src/commands/test.rs\n\nLink to new binary release of the CLI containing the features developed for this milestone.\nhttps://github.com/tx3-lang/trix/releases/latest\n\nLink to documentation website.\nhttps://docs.txpipe.io/tx3/tooling/testing\nhttps://docs.txpipe.io/tx3/tooling/trix#trix-test\n\nLink to Github actions execution showing integration test successful execution.\nhttps://github.com/tx3-lang/trix/actions/workflows/test.yml\n\nLink to video showcasing the new features developed for this milestone.\nhttps://youtu.be/kIHra6tv8TY",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "9",
+      "cost": 39428,
+      "promise": "・Publicly available source-code containing the milestone features: Source code publicly available, encapsulating all the milestone features developed till that point. This will ensure transparency and open collaboration, while allowing the community and other developers to contribute, audit, or modify as per their needs. This code will be hosted on a public repository, adhering to Apache 2.0 license.\n・A tool to generate test scenarios from on-chain data: New commands in the existing CLI that allow users to select transactions and ledger data from existing networks (mainnet, preprod, preview) and turn them into test scenarios that will replicate given activity.\n・An easy to install binary release of the complete toolchain: A new release of all the binary artifacts developed throughout the different milestones, nicely packaged for easy installation on Linux, MacOS and Windows.\n・Documentation on how to install the toolchain: An update to the existing documentation showing a step-by-step guide of how to install the toolchain (CLI + Runtime).",
+      "criteria": "・The provided source-code is comprehensive\n・The repository includes the complete source-code developed in current and previous milestones.\n・A CI pipeline automates the process of building the whole system from the codebase.\n・Integrations tests in the code repository execute successfully.\n・The code is public and committed under Apache 2.0 license.\n・A developer can create test scenarios from on-chain data\n・The CLI allows developers to choose a sequence of transactions by passing their hash\n・The CLI support the well-known Cardano networks: Mainnet, PreProd, Preview.\n・The CLI is able to generate t",
+      "report": "・Link to source-code available in the Github repository.\n\n https://github.com/tx3-lang/trix \n https://github.com/tx3-lang/trix/tree/main/src/commands/devnet \n・Link to documentation containing the install instructions\n\n https://docs.txpipe.io/tx3/installation \n https://docs.txpipe.io/tx3/tooling/devnet \n・Link to Github actions execution showing integration test successful execution\n\n https://github.com/tx3-lang/trix/actions/workflows/test.yml \n・Link to video showcasing the new features developed for this milestone.\n\n https://youtu.be/DLNw5fveb98",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "10",
+      "cost": 39431,
+      "promise": "・Publicly available source-code of the complete proposal: Source code publicly available, encapsulating all the features for this proposal. This will ensure transparency and open collaboration, while allowing the community and other developers to contribute, audit, or modify as per their needs. This code will be hosted on a public repository, adhering to Apache 2.0 license.\n・Fully-featured binary release and install scripts: A tagged released of the feature-complete toolchain for all major operating systems: macOS, Windows, and Linux. It entails the complete tool containing all of the features described in previous milestones.\n・Revised documentation website with install and usage instructions: A comprehensive documentation website that has been revised and preliminar feedback from users has been applied.\n・A closeout video showcasing the final output of the project.\n・A closeout report describing the project process and outcome.",
+      "criteria": "・The final toolchain matches the features presented in the proposal\n・The provided features match the presented proposal\n・A declarative language to define the test scenarios.\n・A runtime engine that executes test scenario and logs the steps of the process.\n・A reporting component that evaluates and presents the outcome of the test execution.\n・A log / tracing gathering mechanism to persist fine-grained information about the test executions.\n・An utility to create test scenarios from existing network (mainnet, preprod, preview).\n・The provided documentation is comprehensive\n・It includes install instr",
+      "report": "Source-code available in the Github repository\nhttps://github.com/tx3-lang/\nhttps://github.com/tx3-lang/tx3\nhttps://github.com/tx3-lang/trix \n\nLink to documentation site\nhttps://docs.txpipe.io/tx3\n\nLink to closeout video uploaded to Youtube\nhttps://www.youtube.com/watch?v=tebtVktFXpY \n\nLink to closeout report uploaded to Google drive\nhttps://drive.google.com/file/d/1sKepwRukLhUDYXo9FPLUVckMV_M-J2Cq/view?usp=sharing \nThe final report reflects the expected impact as defined at the time of proposal submission, particularly with respect to developer experience, operational complexity, and automation for transaction testing. It provides verifiable evidence of the project’s key outcomes, including the public release of the tool under the Apache 2.0 license, comprehensive documentation and usage examples, and delivery of a runtime engine built on Dolos.\nThe report also highlights concrete achievements and insights that emerged during execution, such as integration into the broader Tx3 toolkit ecosystem, open-source contributions, and proactive developer workshops led by TxPipe across multiple community events. At the time of close-out, the project’s impact is primarily reflected in the successful delivery and availability of the tool as originally proposed, while early qualitative feedback is already being collected through community channels and ongoing direct developer support via TxPipe’s Discord.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    }
+  ]
+}

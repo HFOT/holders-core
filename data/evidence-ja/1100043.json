@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・自動展開によるリポジトリ設定\n・NextJS skeleton は、基本的なユーザーフローでウェブサイトを閲覧\n・ユーザーデータを保存するためのバックエンド\n・未来のUX/UIのワイヤーフレームの設計が付いているFigma",
+      "criteria": "Vercel に接続された Github リポジトリ。 デプロイされたウェブサイトには、基本的なユーザー登録とウォレット接続フローが必要です。 バックエンドはユーザーデータを保存できます。 図間は、次の開発フェーズのワイヤフレーム設計が含まれています.",
+      "report": "設計ワイヤーフレームの現在の公衆版:\nhttps://www.figma.com/file/46HPrNpX4gUnp6WZQtJDAV/Bug-Bounty-%2F-Publiclink?type=design&node-id=0%3A1&mode=design&t=8B3bIntOE0ed4Vt9-1\nプロジェクトのGithub:\nhttps://github.com/vacuumlabs/bug-bounty\nオンボーディングフロー(ソーシャル、メール、ウォレット接続)を運用しているウェブサイトの展開:\nhttps://bug-bounty-mocha.vercel.app/"
+    },
+    {
+      "no": 2,
+      "promise": "この段階の出力は、UI自体が設計されているところ、線枠の設計(視覚設計のないUXの流れ)から視覚設計に移ります。 フロントエンドの開発者は、ウェブサイト上でこれを実装する予定です。 並行して、私たちは、アーキテクチャの準備を経るバックエンドの部分に取り組み、PoCフェーズだけでなく将来のフェーズで作業できるようにします.",
+      "criteria": "・Figmaは、少なくとも2つのUXフローの1つのために設計されたビジュアルUI要素とウェブサイトのサブページ(自発的なハンターフローまたはバグ賞金を提供するプロジェクトの流れ)が含まれています。\n・Website は、この UX フローでテスト可能なブランチを開発しています。\n・バックエンドアーキテクチャ提案",
+      "report": "自分のコードを提出するプロジェクトのためのUXフローは準備が整います。\n\nデザインを含む図間へのリンク\n・https://www.figma.com/design/hBFtbjRFoeXl1eKBk9dLyx/Bug-Bounty-%2F-public-link-UI?node-id=0-1&t=4nyMX7TmVn6FrGXk-0\n\nウェブサイトの開発ブランチ展開へのリンク\n・https://bug-bounty-mocha.vercel.app/\n\nGithubリポジトリに追加されたバックエンドアーキテクチャ図\n・https://github.com/vacuumlabs/bug-bounty/blob/main/architecture-diagram.png\n・https://github.com/vacuumlabs/bug-bounty/blob/main/src/server/db/diagram/db-diagram.svg\n・https://github.com/vacuumlabs/bug-bounty/blob/main/README.md"
+    },
+    {
+      "no": 3,
+      "promise": "マイルストーン3の出力は、フロントエンドの確定に焦点を合わせています。 配送先:\n・Figma で欠落している UI 要素をすべて表示\n・ウェブサイト上の全てのデザインを実装",
+      "criteria": "・Figma ビジュアル UI の設計は、すべての UX フロー、すべての Web サイトのコンポーネント、サブページで完了します。\n・ビジュアル要素はウェブサイトのテスト展開に代表される",
+      "report": "フル UX が実装され、モックされたデータを使用してウェブサイト上でクリック可能:\n・https://bug-bounty-mocha.vercel.app/\n\n最終的なFigmaの設計:\n・https://www.figma.com/design/hBFtbjRFoeXl1eKBk9dLyx/Bug-Bounty-%2F-public-link-UI?node-id=0-1&t=fBgyt0ZnhS7AHik8-0"
+    }
+  ]
+}

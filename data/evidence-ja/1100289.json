@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "公開コードベースを作成し、公開GitHubリポジトリに公開しました。 ローカルでプルしてビルドできるSDKのソースコードになります。 組み込みSDKは、預金、出金、借入金、返済、清算といったこれらのアクションのトランザクションボディを構築します",
+      "criteria": "このマイルストーンの成果物は、デベロッパとユーザーは、デファイの貸与および借入金プロトコルの4つのコア機能を最大限に活用することができます。 このマイルストーンの終わりまでに、次の状態は、成功した配信のための受諾基準の一部として達成されます。\n・レンフィSDK ユーザーはコードをプルしてアプリをビルドすることができます。\n・レンフィSDKユーザーは、オンチェーン取引を入金、撤退、借入金、返済、清算することができます.",
+      "report": "預金/出金/借入金/返済/株式のコード作成トランザクション本体のコードベースで公開github\nhttps://github.com/lenfiLabs/lenfi-sdk/releases/tag/v0.0.5\nTwitter投稿 GithubとDenoのリンクを共有します。\nhttps://twitter.com/Lenfi公式/status/1831326998104354973\n\n追加: https://www.npmjs.com/package/lenfi-sdk"
+    },
+    {
+      "no": 2,
+      "promise": "バッチ実行アクション。 SDK ユーザーは、プールが忙しいときにプロトコルのバッチャーとして機能することができます。 実行するには: 入金/出金/借入金/借入金/買戻しの注文を一括手数料.",
+      "criteria": "このマイルストーンの成果物は、デベロッパとユーザが、デファイレンディングと借用プロトコルの4つのコア機能を、バッチラーを使って完全に活用できるようにします。 このマイルストーンの終わりまでに、次の状態は、成功した配信のための受諾基準の一部として達成されます。\n・Lenfi SDK ユーザーは、コードをプルし、バッチラーを構築することができます。\n・Lenfi SDK ユーザーは、オンチェーン・バッチ・トランザクションを入金、退出、借入金、返済、液化することができます.",
+      "report": "預金/引き出し/借入金/返済のコード作成トランザクション バッチ ボディのコード ベースのパブリック github\nhttps://github.com/lenfiLabs/lenfi-sdk\nTwitter投稿 GithubとDenoのリンクを共有します。\nhttps://x.com/Lenfi公式/status/1834529194245537959\n追加: https://www.npmjs.com/package/lenfi-sdk"
+    },
+    {
+      "no": 3,
+      "promise": "公開 GitHub リポジトリのパブリック コードベースに追加します。 このマイルストーンの加算は、Stake Pool にプール/削除 プール/デリゲートを生成します。 ユーザーは、これらの行動のためにトランザクションボディを構築することができます.",
+      "criteria": "このマイルストーンの成果物は、デベロッパとユーザーは、デファイの貸与および借入金プロトコルの追加機能を最大限に活用することができます。 このマイルストーンの終わりまでに、次の状態は、成功した配信のための受諾基準の一部として達成されます。\n・Lenfi SDK ユーザーは、オンチェーントランザクションを作成して、Stake Pool/Delete Pool/Delegate を Stake Pool に作成および送信できます",
+      "report": "Lenfi SDK ユーザーは、オンチェーントランザクションを作成して、Stake Pool/Delete Pool/Delegate を Stake Pool に作成できます。\nツイート: https://x.com/Lenfiofficial/status/1848645385180340699\nリンク: https://deno.land/x/lenfijs@v.1.0.1\nhttps://www.npmjs.com/package/lenfi-sdk\nhttps://github.com/lenfiLabs/lenfi-sdk"
+    },
+    {
+      "no": 4,
+      "promise": "SDK は、ユーザーが使用するための完全準備と機能です。\nプロジェクト触媒プログラム完了のコミュニティへの最終報告書.",
+      "criteria": "・バージョン1.0.1で公開されたNPMライブラリ\n・Denoライブラリはバージョン1.0.1で公開\n・プロジェクト触媒プログラムの完成に関する最終報告書がコミュニティに発表されましたか?",
+      "report": "・SDK公開 https://www.npmjs.com/package/lenfi-sdk\n・Denoライブラリ https://deno.land/x/lenfijs@v.1.0.1\n・すべてのアクションを実行するチュートリアルビデオ:https://www.youtube.com/watch?v=kOHes5y6uME\n・Githubで利用可能な全てのアクションを実行する例:https://npm.io/package/lenfi-sdk\n・プロジェクトクローズアウトレポートへのリンク(更新版第3版): https://github.com/lenfiLabs/materials/blob/main/Lenfi-SDK-Project-Catalyst-Finalization-Report-3.pdf\n・プロジェクト・クローズアウト・ビデオへのリンク(現時点では未登録で、コミュニティとの最初のビデオを公開し共有しているため、複数の時間をシェアしないように承認した後に同じことをします)。 https://youtu.be/-xofCoKZqJk"
+    }
+  ]
+}

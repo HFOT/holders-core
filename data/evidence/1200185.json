@@ -1,0 +1,74 @@
+{
+  "title": "Plutus and Haskell Extension Integrated within Visual Studio Code IDE",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 42000,
+      "promise": "Preparing a detailed document containing\nScope and design for following features to be built in later milestones\n・Syntax Highlighting and Code Completion\n・Cardano Blockchain Explorer API Integration\n・Smart Contract Deployment/Connecting Node from VS Code\n・Wallet Management - example Creating Wallet \n・Debugging Tools\n\nUI/UX design mockup will be prepared for a feature where applicable and included in the document.",
+      "criteria": "A Document is made available including Scope and design for following features\n・Syntax Highlighting and Code Completion\n・Cardano Blockchain Explorer API Integration\n・Smart Contract Deployment/Connecting Node from VS Code\n・Wallet Management - example Creating Wallet \n・Debugging Tools\n\nUI/UX design mockup is included in the document as required for any feature.",
+      "report": "----------------------------------------------\nWe thank you for all your constructive feedback. Thanks to reviewer 1 for approving it.\nWe are resubmitting revised POA for Milestone 1 based on reviewer 2 feedback. However we find some of the statement are not correct like \"The platform, as you submitted, replicates functionality already offered by standard Visual Studio tools without providing any meaningful enhancement.\" This statement is not correct. We are developers and we have proposed it based on our own experience and other developers feedback that even basic support of Haskell and Plutus development in not available in VS Code.\nWe shall attempt to make Cardano development support within VS Code as sophisticated as possible. However we believe even the basic support of functionalities we listed in our proposal and integrating external tool in VS code can make huge positive impact on Cardano Development Ecosystem. And that is our proposal.\nWe agree that expecting innovation beyond what is listed in proposal is not wrong however the proposal is about enabling Cardano Developers with basic tools. You give example of Cardano-cli having feature like Switching between preprod, preview, and mainnet, yes, it is available in Cardano-CLI however not there in VS Code and that is key point. Our proposal is lot of developers use VS Code and the new developers using vs code want to start with Cardano, they don't find this feature within VS Code.\n\nChanges Log\n\nPage no. 8 to 10: added, API key requirement, its Implementation plan in vs code in more details for clarity. Also added screenshots from Figma for more clarity.\nPage no. 17: Updated Smart contract deployment section adding more details and Figma screenshot for better understanding and clarity. \nPage no. 18 to 22: Added dataflow diagram for smart contract deployment and updated wallet management section for more clarity.\nPage no. 22 to 24: updated Debugging section for better clarity and understanding.\nPage 25 to 30: F",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 42000,
+      "promise": "Objective in this milestone is to develop two major plugin/extension for Visual Studio Code for Plutus and Haskell Developers. Based on scope document detailing we shall develop following \nOutputs:\n・Develop Extension for VS Code IDE for Syntax Highlighting and Code Completion \n・Integrate Cardano Blockchain Explorer API within VS Code IDE",
+      "criteria": "・Syntax Highlighting and Code Completion extension is available on VS Code IDE\n・Cardano Blockchain Explorer API is integrated within VS Code IDE",
+      "report": "Based on your recent feedback, here it is revised Milestone 2 POA.\nThe CardanoVSC extension is available for developers to download from the VS code Market place.\n・GitHub public repository was created in M1, we have uploaded source code and test cases for the outputs\n・Syntax Highlighting and Code Completion\n・Cardano Blockchain Explorer API Integration\n\nGitHub Link https://github.com/AIQUANT-Tech/CardanoVSC/tree/main/cardanovsc\n・The plugin including the two functionalities has been submitted to VS code Marketplace and it is listed there. \n・Link for Code Completion main file https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc/src/completion.ts\n・Link for CardanoScan API Integration main file https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc/src/config/cardanoApiIntegration.ts\n・Link to folder for Syntax highlighting https://github.com/AIQUANT-Tech/CardanoVSC/tree/main/cardanovsc/syntaxes\n\nHere is approved CardanoVSC extension link https://marketplace.visualstudio.com/items?itemName=AIQUANT-TECHNOLOGIES.cardanovsc\n・We are submitting here a short video showing Unit Test Cases Run confirming functionalities are working\n\nHere is publicly accessible video link CardanoVSC M2 - Code completion and Code Highlight, Cardano Scan API\nScreenshots taken for functionalities developed are added in readme file https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/README.md",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 13
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 42000,
+      "promise": "Outputs:\nFollowing two Plug-in for VS Code IDE are developed\n・Smart Contract Deployment from VS Code IDE\n・Wallet Management - example Creating Wallet",
+      "criteria": "・Smart Contract Deployment is possible directly from VS Code IDE\n・Wallet Management is available within VS Code IDE",
+      "report": "Thanks lot for feedback, re-submitting based on feedback.\n・Screenshot link fixed\n・added direct link to the code for each functionality\n\n=====================\n1. Publicly accessible Link to Source Code Repository, GitHub for the two functionalities mentioned in Outputs: https://github.com/AIQUANT-Tech/CardanoVSC\n Cardano Node Connection: \n https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc/src/config/cardanoNodeIntegration.ts\n Wallet Management: \n https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc/src/implementation/implementation.ts\n Smart Contract Deployment On chain: \n https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc/src/implementation/deployment.ts \n\nTest Cases for CardanoVSC : \n https://github.com/AIQUANT-Tech/CardanoVSC/tree/main/cardanovsc/src/test \n2. Publicly accessible Links to Visual Studio Market Place containing the plug-in as mentioned in outputs : https://marketplace.visualstudio.com/items?itemName=AIQUANT-TECHNOLOGIES.cardanovsc\n3. Publicly accessible Links to Screenshots and a short video demonstrations of the Runtime functionalities:\n3.1 Video: https://youtu.be/TK6s5f11FpQ\n3.2 Readme file With Screenshots for the functionalities: https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/README.md\n -All Screenshots used as per functionality: https://github.com/AIQUANT-Tech/CardanoVSC/tree/main/cardanovsc/docs",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 18
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 42000,
+      "promise": "・Source Code Debugging Extension for Plutus and Haskell Developers is developed to be used within VS Code IDE\n・User Documentation with example for Developers to use all the functionalities build\n\n・Syntax Highlighting and Code Completion\n・Cardano Blockchain Explorer API Integration\n・Smart Contract Deployment from VS Code\n・Wallet Management \n・Source Code Debugging Extension",
+      "criteria": "・Source Code Debugging Extension is developed and available on Visual Studio Marketplace \n・Debugging Extension is operational for detecting errors and suggesting possible fix\n・User Documentation with examples is available for Developers to use all the functionalities developed",
+      "report": "1.Publicly accessible Link to Source Code Repository, GitHub for the Debugging Extension functionality :\nhttps://github.com/AIQUANT-Tech/CardanoVSC/tree/main/cardanovsc_debugger\nFeature wise Code can be found in the repository more accurately these main files\nDebug Adapter: https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc_debugger/src/debugAdapter.ts\nDiagonostic Feature: https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc_debugger/src/diagnostics.ts\nMain Extension ts code: https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc_debugger/src/extension.ts\n\n2.Publicly accessible Links to Visual Studio Market Place containing the Debugging Extension :\nhttps://marketplace.visualstudio.com/items?itemName=AIQUANT-TECHNOLOGIES.cardanovsc-debugger\n\n3.Publicly accessible Links to Screenshots and a short video demonstrations of the debugging in runtime. :\nScreenshots for debugger: https://github.com/AIQUANT-Tech/CardanoVSC/tree/main/cardanovsc_debugger/images\nVideo link: https://youtu.be/WNB6YTAnn_8\n\n4.Publicly accessible Links to User Documentation with examples\nCardanoVSC_debugger User Documentation with screenshot examples\n https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc_debugger/README.md\nCardanoVSC User Documentation with examples:\n https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/README.md\n\nCardanoVSC Debugger Unit Test cases : https://github.com/AIQUANT-Tech/CardanoVSC/tree/main/cardanovsc_debugger/src/test",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 20
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 29700,
+      "promise": "・Final close-out report\n・Final closeout video\n・Educational Tutorials for each functionality\n・*As some of the deliverables like documentation and publishing extension on Visual Studio Market place is already covered in previous milestones, this milestone includes Final Clouseout Reports and educational tutorials publishing.",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Educational Tutorials are published on Youtube for the functionalities developed\n\n・Syntax Highlighting and Code Completion\n・Cardano Blockchain Explorer API Integration\n・Smart Contract Deployment from VS Code\n・Wallet Management \n・Source Code Debugging Extension",
+      "report": "We are happy to complete the propject successfully and submit project closeout video and report.\nA key highlight is that both extensions developed are approved and published on the VS Code Marketplace and have already achieved a strong number of downloads.\n\n・Link to final closeout report. CardanoVSC - Closeout Report.pdf \n・Link to final closeout video. https://youtu.be/101HTrP8f4Y \n・Publicly accessible Link to Educational Tutorials on Youtube https://www.youtube.com/watch?v=rx_rsa5ITXY \n・Other Education Video also done during earlier milstones as well\n\n・Syntax Highlighting and Code completion feature(Milestone 2): https://www.youtube.com/watch?v=rtSJ2EIjlg4&feature=youtu.be\n・Smart Contract Deployment & Wallet management feature(Milestone 3): https://www.youtube.com/watch?v=TK6s5f11FpQ\n・Debugging feature(Milestone 4): https://www.youtube.com/watch?v=WNB6YTAnn_8",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 11
+    }
+  ]
+}

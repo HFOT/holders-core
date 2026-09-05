@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "このマイルストーンの出力は、https://github.com/cardano-foundation/CIPs へのプルリクエストとなります。 ダップがマルチシグウォレットに接続することを可能にする新しいコネクタの完全な仕様を要求します.",
+      "criteria": "API の仕様は:A である必要があります: このコネクタは、(api.signTx() および api.signData()) を除く CIP-30 コネクタで現在可能なすべての操作を許可しなければなりません。 コネクターは、接続された mulisig ウォレットの仕様に準拠したトランザクションを作成するために必要な接続 dApp を提供するエンドポイントを提供する必要があります.",
+      "report": "「マイルストーン完了の証拠」に記載されているように、このリンクは、オープンプルリクエストへのリンクです。\nhttps://github.com/cardano-foundation/CIPs/pull/617\n\n私はCIPエディタ会議に参加し、合意がある\nA) 提案されたコネクターはよく書かれます\nB) この機能は、CIP-30 の拡張として実装するのが最善です。\n\nこの最後に、Milstone 2に変更をリクエストすると、機能がウィンドウの下には含まれなくなります。 CardanoMultisigがウィンドウに注入されます。 他のCIP-30コネクターと同じcardano。\n\nまた、すぐに参照実装に取り組んでいきます."
+    },
+    {
+      "no": 2,
+      "promise": "このステップの出力は、ブラウザにウィンドウの下の新しいコネクタを注入するGoogle Chromeの拡張となります。 MultisigCardanoの名前空間。\n\nこのアプリケーションをインストールする際に、ユーザーがdappに接続するアカウントを選択できるようにする必要があります。 dapps は、ユーザーがアクセスしたアカウントをウォレットに接続できるようにする必要があります.",
+      "criteria": "クロームストアでご使用いただく必要があり、新しいコネクタをフル導入してください.",
+      "report": "コネクターはChromeの店に住んでいます:https://chromewebstore.google.com/detail/bro-clan-companion-extens/mdnadibcilebgfdkadlhegdpgpglljmn\nさらに、私はクロームストアから承認を待っていた間、最初のMutisig専用アプリを作成しました、あなたはできるためにmint.broclan.ioでそれにアクセスし、画像を追加することができますhttps://github.com/leo42/Bro-mint/blob/main/README.mdの指示に従ってください\n最後に、「マイルストーン完了の証拠」で説明したように、https://github.com/leo42/CIP-30-Extencion-MockAppにあるmock-appを作成しました。このアプリは、すべてのエンドポイントを問い合わせ、画面上のテキストとして、生のCBOR値を返します。\n\n送信UnsignedTx、getCompletedTx および submitTx をテストするため トランザクションを送信すると、getCompleted が表示されるボタンが現れます。ウォレットにすべてのシグネチャを追加する必要があります(送信をクリックせずに)、getCompleted をクリックして mockApp に送信します。\n\nbeta.broclan.io内のマルチシグウォレットを作成する必要があるコネクターを使用することに注意してください"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "title": "HLabs: typescript cardano-node / consensus (node prototype) - NodeJS target runtime relay node",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 50000,
+      "promise": "・managing connections from other nodes in the network\n・parse headers in the receiving chain-sync messages\n・parse bodies in the receiving block-fetch messages\n・test for correctness, especially for header hashes",
+      "criteria": "a new repository is created on HarmonicLabs' github for ouroboros-consensus-ts\nthe code in the repo includes the outputs specified above, in particular:\n・is aware and can handle connections with peers\n・can parse incoming messages\n・does not alterate the data to preserve hases",
+      "report": "a video showing what has been implemented to meet the first milestone is present here: https://youtu.be/p5EdgaUbeIQ\nalso, the github repositories shown in the video are:\n\nhttps://github.com/HarmonicLabs/cnode-ts-poc (directly used for the code of the video)\n\nhttps://github.com/HarmonicLabs/gerolamo (to be used in the future videos once more stable)",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "14",
+      "cost": 60000,
+      "promise": "It will be possible to load the ledger state from snapshot\nthe ledger state will be used to validate headers of the chain (stake distribution etc.)\n\ntest cases will cover:\n・writing to ledger state\n・reading ledger state\n・header validation",
+      "criteria": "・the node now provides a sub-comand to load the ledger state from a snapshot\n・test cases will emulate a ledger state and validate headers based on that ledger state",
+      "report": "The video showcasing the milestone completition: https://youtu.be/WgnIMtrmxYE\nThere is also an X post showcasing header validation: https://x.com/MicheleHarmonic/status/1944154204102160677\nspecific github commit used in the video: https://github.com/HarmonicLabs/gerolamo/commit/5541528a4fb440e9f388d14a90c65e20a5e8fb54",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "16",
+      "cost": 90000,
+      "promise": "the node can use everything implemented in the previous milestones to:\n・verify incoming blocks \n・select the honest chain based on known blocks and ledger state.\n・of course appropriate unit tests are also an output of the milestone.\n\nthe node can follow many chains, handle soft forks, and stay on the honest chain.",
+      "criteria": "the node can follow many chains, handle soft forks, and stay on the honest chain.",
+      "report": "here is the video showcasing the current node performing chain selection and the implementation of the volatile db: https://youtu.be/B76yiK_XlrY\nWe are currently testing the node by just running it as it was shown in the video\nWe cannot produce forks on our own (that depends on the blockchain) here is attached an image of one time we found a fork and handled it successfully: https://postimg.cc/vg7KfxYK",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "17",
+      "cost": 55000,
+      "promise": "The node now stores historical data and accepts and validates transactions.\nThis is the minimum viable node for dApps.",
+      "criteria": "To make sure the outputs above are valid\nThe node should:\n・always follow the longest chain\n・keep track of possible soft forks that in the future might become the longest chain\n・reject any forks longer than the security parameter k (about 36 hours)",
+      "report": "Just like the previous milestone, we are currently testing the node by just running it as shown in the video.\n\nhere is the video showcasing the current node implementation: https://youtu.be/u9vjIYEB7ho\n\nIn the video we showcase how we can retrieve historical blocks (which proves the blocks are stored in the immutable db)\nthe video also shows how we can submit and validate transaction through the node and propagate to other nodes.\n\nThese are the basic functionalities that are needed for a minimum viable node.\n\nOf course there is still work to do that is not covered in this project, but with this milestone we get gerolamo significantly closer to production.\n\n(apologies for the \"acceptance criteria\" section, it would seem the one that would be of the previous milestone are shown here)",
+      "kinds": [
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "18",
+      "cost": 45000,
+      "promise": "close out report and close out video",
+      "criteria": "the report and the video can be found by whom is interested",
+      "report": "comprehensive video showcasing the current state of gerolamo: https://youtu.be/tGVThP6r95Q\n\ncloseout report: https://github.com/HarmonicLabs/catalyst-close-reports/blob/main/1100158-consensus-ts/README.md",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

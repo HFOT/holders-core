@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・インポート/エクスポートロジックと小規模擬似トランザクション検証のテスト完了\n・試験コードの整形・整列を行います。\n・ピサプロトコルのユーティリティ機能のテスト\n・オンチェーンコードベースの最適化による内部レビューを行います.",
+      "criteria": "・テストスイート、すべてのテスト通過、擬似トランザクション検証。\n・プロトコルスクリプトのエクスポートとインポートのテストは、オンチェーンとオフチェーンのコードベース間で一貫しています。\n・想定される行動とサンプル取引が整列されます。\n・インポート/エクスポート用のスクリプトは、オンチェーンとオフチェーンのコードベース間で一貫しています.",
+      "report": ":: 更新情報 ::\n両方の査読者は、今、リポジトリアクセスを持っている必要があります。 お問い合わせ\nお問い合わせ\nマイルストーン1のPoAレポートはこちらからご覧ください。\nhttps://github.com/mlabs-haskell/pisa-fees/blob/master/milestone-reports/milestone-1.md"
+    },
+    {
+      "no": 2,
+      "promise": "・REST または WebSocket API は Pisa Fees UTXOs の提供するように設計されています。\n・インデキサの性能をベンチマークし、最適化します。\n・ラウンドロビンUTXO選択などの効率的なインデックスキャッシング機構が実装されています。\n・機能性・信頼性確保のために、APIテストを実施\n・アトラス、CTL対応",
+      "criteria": "・Pisa Fees UTXOsのAPIデザインを完成し、文書化\n・すべての API エンドポイントがリストされ、文書化されます。\n・インデキサのベンチマークは性能向上を発揮します。 オフチェーンサーバで起動インデックスとトランザクションバランサに取り込む時間を測定します。\n・ラウンドロビン UTXO の選定、実装、検証など、実装の仕組み\n・Indexer API は、位置クエリやトランザクションバランシングなどの機能をテストし、正しい結果と一貫した結果を返すようにします。\n・CTLとAトラスのプロトコルの公開ライブラリ",
+      "report": ":: 更新情報 ::\nラウンドロビンキャッシュのアプローチにより、UTxO のコンテンツを減らすことが重要なセキュリティ上の懸念を引き起こしたと判断しました。 更新されたPoA2レポートの「使用位置キャッシュと回転」をご覧ください。\n-------------------\n\nマイルストーンPoA2はこちらからご覧ください。\nhttps://github.com/mlabs-haskell/pisa-fees/blob/master/milestone-reports/milestone-2.md"
+    },
+    {
+      "no": 3,
+      "promise": "Pisa の手数料プロトコルは、Pisa Fees でユーザーが使用できる各アクションのサンプルトランザクションを Pisa Fees に送信することにより、実際の Cardano ネットワーク(または Plutip によって提供されるレプリカネットワーク)に意図されているように動作します.",
+      "criteria": "Testnet、CLBのテストワークフローを提供:\n・プロトコルを自動的に起動し、ポジションを作成\n・Pisa Fees が実際の Cardano ノード環境で意図したように動作するプロトコルインタラクションを実行します。 具体的に:\n・利用者によるポジションの作成・削除が可能\n・スワプは意図どおりに発生\n・アタックベクターは、\n・提供されたテストログによって証明されるもの\n・ローカルノードテストスイートを再現するガイド",
+      "report": ":: 更新情報 ::\nアクセスを今すぐ追加してください。\nお問い合わせ\nマイルストーン3 PoAレポートはこちら\nhttps://github.com/mlabs-haskell/pisa-fees/blob/master/milestone-reports/milestone-3.md"
+    },
+    {
+      "no": 4,
+      "promise": "有料ポジション向けAPIコールの動画デモ\nAPIドキュメント\n関連する試験結果のビデオ実証",
+      "criteria": "・動画デモンストレーションは、テストスイートとテストスイートの結果を、正確に作成する位置を検証します。\n・チェーン・フォロワーが正しくキャッシュし、API をホストすることで、Pisa プロトコル API によって一貫した結果が取得され、オフ・チェーン・フレームワークが利用するオフ・チェーン・フレームワークのデータを提供\n・Pisa Fees API の API ドキュメントを公開し、統合ガイドを提供",
+      "report": ":: 更新情報 ::\n\n@Jeremy-l3 では、リポジトリへのアクセスができるようになりました。\n\nお問い合わせ\n\nパブリック ピサ手数料 API で、料金の一覧を照会 - この API へのリンク\nhttps://mlabs-haskell.github.io/pisa-fees/pisa-api/integration-guide.html\n\nAPI を使用した例のクエリを含むドキュメント\nhttps://github.com/mlabs-haskell/pisa-fees/blob/master/milestone-reports/milestone-4.md\n\nAPI クエリとテスト スイートの出力を示す非公開のビデオ実証\n上記レポートをご覧ください."
+    },
+    {
+      "no": 5,
+      "promise": "生成されたコードベースの第三者レビューにより、バグや悪用を解消し、より良いコミュニティの信頼を築きます.",
+      "criteria": "第三者監査人から監査レポートを提供 バグや悪用が発見された場合は、パッチを当てる必要があります。 識別された脆弱性、バグ、または悪用が解決され、透明性の修正の文書化された要約.",
+      "report": ":: 更新情報 ::\n監査レポートを見つけるには、リンクをフォローし、右上の「PDFの表示」ボタンをクリックします。\nhttps://skynet.certik.com/projects/mlabs#code-security\n\n「閲覧検索」ボタンをクリックすると、監査結果が表示されます。\nお問い合わせ\n一般に公開されている監査レポート\nhttps://skynet.certik.com/projects/mlabs#code-security\n\n発見された問題の修正を報告する。\n報告書に記載された問題 - 詳細は「PDFを見る」をクリックしてください."
+    },
+    {
+      "no": 6,
+      "promise": "・Pisa Feesの機能の一部を公開する完全にやりとりできるWebインターフェイスで、新しい手数料ポジションを開いたり、手数料ポジションを破棄したり、ポジションパラメータを変更したり、プロトコル上の異なるポジションをクエリしたりできます。 ウェブインターフェイスのウォークスルービデオ。\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・作業ウェブサイトは、価値を照会し、ピサの手数料とやり取りする簡単な方法を提供します。\n・新しい料金のポジションを開く\n・料金所の閉鎖\n・ポジションパラメータの変更\n・プロトコル上の異なる位置をクエリする\n・ウォークスルービデオは、Webインターフェイスのすべての機能を示しています\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "下記の資料をご覧ください。\n公開可能なWebアプリケーション\nhttps://admin.feesaswap.io/\nhttps://www.feesaswap.io/\n\nウェブサイトのリポジトリは、レビューのために個人的に共有\nhttps://github.com/mlabs-haskell/pisa-fees/blob/bc29418599f36dbbece20a0e6fd6d5f82f0ef2d3/milestone-reports/milestone-6.md\n\nビデオまたはスクリーンショットは、ウェブサイトの機能を表示します\n-MFinal デモ\nhttps://www.youtube.com/watch?v=Py9MuT8tWwg\n-MFinal の配信可能な更新のビデオ\nhttps://www.youtube.com/watch?v=AUGMXGkNepA\n\n最終報告書へのリンク\nhttps://drive.google.com/file/d/17UBf0lR oS4F5Ls3MrvRisgGypURLZMd/view?usp=sharing\n\n最終クローズアウトビデオへのリンク\nhttps://www.youtube.com/watch?v=3AxwQEgxct0"
+    }
+  ]
+}

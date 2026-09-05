@@ -1,0 +1,68 @@
+{
+  "title": "Dandelion-lite: Decentralized nodes for dummies for GameChanger, Gimbalabs, Roundtable and devs",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 50000,
+      "promise": "Planning document published in JSON format\nAlready completed maintenance. See work done in this github repository. \nhttps://github.com/GameChangerFinance/dandelion-lite",
+      "criteria": "JSON document is complete and can be found in github repository\nRunning Dandelion services: Overview page is working with links to services",
+      "report": "View project planning document here:https://github.com/M2tec/F13-Dandelion-lite/blob/master/project-outline.json\nNodes are operational (https://preprod-sunflower.m2tec.nl/, https://mainnet-sunflower.m2tec.nl/)\nDandelion-lite repo is set to public. https://github.com/GameChangerFinance/dandelion-lite.git",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 50000,
+      "promise": "Onboarding people to be DNOs (6 to 12 people)\nRepo is now public https://github.com/GameChangerFinance/dandelion-lite",
+      "criteria": "A list of working endpoints will be provided where Dandelion services can be found. The list will consist of 6 to 12 links to both preprod and mainnet.",
+      "report": "Hi we have 6 users up and running and more coming. You can check availability here:\nhttps://dandelion.m2tec.nl/m2\nI have updated the file as specified for verification \nhttps://github.com/M2tec/F13-Dandelion-lite/blob/master/dno-list.json",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 30000,
+      "promise": "Build course material consisting of modules (see acceptance criteria) using Student Learning targets. It will follow a \"Project based learning approach practiced at Gimbalabs. For examples of this see: https://app.andamio.io/course",
+      "criteria": "Course will be available on the F13 github repository in html form. \nIt will consist of the following modules:\n・Step by step guide about how to setup a node.\n・Overview of currently running services\n・Ogmios\n・Cardano Token Registry\n・Cardano GraphQL\n・Koios (koios-artifacts)\n・Dandelion PostGREST\n・Unimatrix\n・Manifest\n・Statistics\n・Introduction into docker and maintenance tasks.\n・Podman overview and maintanance.\n・Guide about how to add new services.\n\nStudents will already need to have basic sysadmin tasks. Course will use Ubuntu server as OS.",
+      "report": "Dear reviewer,\nThe course is now available at the following link:\nhttps://github.com/M2tec/F13-Dandelion-lite/blob/master/education/index.html\nEasiest way to access the educational content is to git clone the site and open the index file with a web browser \ngit clone https://github.com/M2tec/F13-Dandelion-lite.git",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 35000,
+      "promise": "This project will provide longer term maintenance to API services and addition of new services. Goal is to 3 additional people. As described by the acceptance criteria. This effort will be run from Gimbalabs governance platform. Click the link to find the driver which has also led to this proposal. Maintenance work is open to everyone who is interested in taking up tasks.",
+      "criteria": "・A group has been formed providing future maintenance. Goal is to add 3 people for maintenance tasks.\n・Amount of 20,000 ADA has been deposited into the treasury. (Amount will later build up to 60,000 after receiving the funding to do this)\n・Work will be conducted following the tasklist. Tasks can change but evidence of working collaboration will be when 4 tasks are completed following the tasklist. See examples of tasks. \n・Plomin hardfork upgrade compatibility. \n・Blockfrost integration.\n・Userinterface cleanup.\n・Dandelion onboarding a new user.",
+      "report": "Dear reviewer, Please review the following as evidence of completing this milestone \nTreasurey address containing at least 20,000 ADA See: addr1qyuzn3mjk9lgq3uxt7mct9wcek0s30jlev4jx8t8v8jlpt60dxle7mtqgtt9p6nl379g65rgvrmytrs3umu4grje6zdst0ya29\nTasklist with completions: https://github.com/M2tec/F13-Dandelion-lite/blob/master/dandelion-dao.json\nNew users: 5 certificates of course completion available on the Cardano blockchain. (Graphql Query will be provided here: https://github.com/M2tec/F13-Dandelion-lite/blob/master/maintainer-certificates.sh)\n3 new team members have submitted patches. To dandelion lite github repository. (https://github.com/GameChangerFinance/dandelion-lite) URL with github links: https://github.com/M2tec/F13-Dandelion-lite/blob/master/new-contributors.json\nBest regards,\nMaarten",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 34000,
+      "promise": "・Evaluation meeting\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Evaluation meeting has been completed\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Dear reviewer, With this I submit the materials to close out this project. I made a spelling error in the video I like to correct. Sorry about this, see V3\nClose-out report. \nhttps://github.com/M2tec/F13-Dandelion-lite/blob/master/1300078_Catalyst_F13-Closeout-Report_Dandelion-lite.pdf\nClose-out video V3\nhttps://youtu.be/X6T2c03SrI4\nEvaluation meeting\nhttps://youtu.be/biBLF3KC000",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

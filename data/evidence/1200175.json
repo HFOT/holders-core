@@ -1,0 +1,71 @@
+{
+  "title": "OpShin Audit",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "The team will establish a communication channel and outline the main project.\n・Defined Project Scope: A detailed document outlining the project's goals, deliverables, resources, and constraints.\n・Detailed Audit Objectives: A comprehensive list of audit objectives, including specific areas of focus\n・Audit Timeline: Includes all key milestones, deadlines, and dependencies for each audit phase.\n・Established Communication Channels and Project Management Tools: Creation of dedicated communication channels (e.g., Discord) for internal team discussions, stakeholder communication, and community updates",
+      "criteria": "・Project Scope Document: The project scope document is completed\n・Validation of Audit Objectives: The audit objectives are defined\n・Finalization of Audit Timeline: The timeline is agreed with the auditing team\n・Setup of Communication Channels and Project Management Tools: All communication channels are tested and operational",
+      "report": "For Milestone 1 we provide an extensive report that covers all parts of the deliverables for Milestone 1:\n・Signed Project Scope Document: The report contains the project scope (Section 2) and is signed by auditor and project team (last page)\n・Approved Audit Objectives: The audit objective is contained in Section 3\n・Confirmed Audit Timeline: The audit timeline is contained in Section 4. The document is signed by the auditor and the project team to confirm this timeline (last page)\n・Operational Communication Channels and Project Management Tools: Screenshots of the communication channels showing active participation are provided in Section 5\n\nThe audit agreement report is publicly and permanently accessible through this link on GitHub: https://github.com/OpShin/OpshinAudit/blob/main/Audit%20Agreement%20-%20Milestone%201.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 50000,
+      "promise": "The audit team will compile a detailed analysis report identifying vulnerabilities and areas for improvement in OpShin language codebase. This analysis is more high level and can be supported by automated analysis tools, unit tests and manual assessments.",
+      "criteria": "・Completion and Submission of Analysis Report: The detailed analysis report is completed and submitted, including the following:\n・Quantitative Metrics: Number of vulnerabilities found (categorized by severity: critical, high, medium, low). \n・Code Coverage Percentage: Percentage of code covered by unit tests\n・Number of Manual Review Findings: Total count of manual review findings, categorized by type (e.g., security, performance, maintainability).\n・Recommendations for Improvements: A list of prioritized recommendations based on the findings, with a clear plan for addressing critical issues.",
+      "report": "The audit has now been completed. An extensive document, outlining the project, code coverage, some qualitative analysis and a number of discovered performance and correctness issues with rectification recommendations are presented in this report on GitHub:\nhttps://github.com/Anastasia-Labs/opshin-audit/blob/4bd754e7c1d3f020864fd85de940dc15d787b493/catalyst_docs/milestone2/milestone2_langanalysis.md\nThe OpShin team has proofread these submissions and acknowledges them as significant, elaborate and well-founded.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 50000,
+      "promise": "The audit team compiles a documented list of edge cases relevant to OpShin smart contract development. They also propose strategies for resolving identified cases that can be applied to future iterations of the language. The work will be conducted mostly manually, accompanied with tailored analysis tools.",
+      "criteria": "・Quantification of Edge Cases: The list includes a specified number of edge cases (e.g., a minimum of 5 unique edge cases), each thoroughly described and categorized.\n・Validation by Development: The list of edge cases and proposed resolutions is reviewed and validated by OpShin team",
+      "report": "Milestone 3 now has been successfully completed. Attached is a link to the edge-case document, outlining 9 unique edge-cases (exceeding the minimum of 5 documented in the acceptance criteria), including detailed test cases and resolution suggestions, and reviewed by the OpShin team.\n\nThis fulfills both acceptance criteria:\n・The list includes at least the specified number of edge cases\n・The list was validated by the OpShin team\n\nhttps://github.com/Anastasia-Labs/opshin-audit/blob/milestone3-progress/catalyst_docs/milestone3/milestone3-edgecases.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 30000,
+      "promise": "The audit team compiles a comprehensive audit report detailing identified vulnerabilities, recommended fixes, and best practices for OpShin development.\n\nMeanwhile, the OpShin team works on described issues and integrates feedback on them into the codebase, adds their approval for the reported issues and feedback for the final report.",
+      "criteria": "Completion of Audit Report: The audit report is completed and includes:\n・Quantitative Breakdown of Vulnerabilities: All vulnerabilities identified, with each categorized by severity.\n・Detailed Recommendations: A specific fix or mitigation strategy provided for each identified vulnerability.\n・Incorporation of Best Practices: Best practice recommendations relevant to OpShin development.\n\nOpShin Team Feedback and Integration:\n・Feedback Collection: Written feedback from the OpShin team is collected and added to the report.\n・Codebase Integration: Evidence that the OpShin team has addressed all crit",
+      "report": "In this milestone we release the final milestone report draft and fix the critical issues reported. Please find our concrete outputs for the milestone below:\n\nDraft audit report\n\nThe draft audit report was compiled by Anastasia Labs and publicly released in the opshin-audit repository. It is annotated with the response from the OpShin team for each reported issue.\nhttps://github.com/Anastasia-Labs/opshin-audit/blob/milestone4-progress/catalyst_docs/milestone4/milestone4-draft-audit-report.pdf\n\nBugfixes of High Severity and Critical Reported Bugs\n\nThe OpShin Team addressed all the High Severity and Critical findings in the audit and submitted Pull Requests to resolve them. They are tagged with audit v1 and shown in the public OpShin repository as follows:\nhttps://github.com/OpShin/opshin/pulls?q=is%3Apr+label%3A%22audit+v1%22\n\nThe complete list of High Severity and Critical findings and their resolution status with more detailed commentary from the team is shown in this sheet:\nhttps://docs.google.com/spreadsheets/d/1PU1EwOGX58f5BgJM3NxUvrZmagzjX7m62vHueSp64Qo/edit?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 50000,
+      "promise": "・Public dissemination of the finalized audit report, including presentation of findings and recommendations to the Cardano community.\n・Resolution of remaining medium and low-priority findings of the report.\n・Final close-out report\n・Final closeout video",
+      "criteria": "Dissemination of Audit Report:\n・Publication: The audit report is published on at least three relevant platforms, including the official Cardano forum, GitHub, and a widely-used blockchain community blog (e.g., Medium).\n・Community Engagement: The audit findings are presented at on Twitter\n・Social Media Metrics: The report’s publication is announced on social media channels, aiming for at least 100 engagements (likes, shares, comments) across platforms like Twitter and LinkedIn.\n\nResolution of Findings:\n・Pull Requests and Documentation: All pull requests or documented remarks related to the reso",
+      "report": "We have successfully completed the OpShin audit:\nThe latest release contains all suggested bug fixes, or documentation of the bugs and a short comment about how the issue was addressed inside the audit report.\nOpShin Release: https://github.com/OpShin/opshin/releases/tag/0.25.0\nOpShin Audit Report: https://github.com/Anastasia-Labs/opshin-audit/blob/milestone5-progress/catalyst_docs/milestone5/milestone5-final-audit-report.pdf\nWe shared the audit update on the main OpShin communication channels\nTwitter: https://x.com/OpShinDev/status/1974011626186498538\nReddit: https://www.reddit.com/r/CardanoDevelopers/comments/1nwsm8e/opshin_audit_concluded_release_0250/\nAcross all these posts we have gathered over 130 likes, 10 comments and 40 reposts, demonstrating signficant interest from the community and exceeding our goals of 100 engagements.\nAll changes are merged into the latest release\nLink to Pull Requests: https://github.com/OpShin/opshin/pulls?q=is%3Apr+label%3A%22audit+v1%22+\nNote that many more changes were directly pushed to dev. A complete list of changes is documented in the final audit report: https://github.com/Anastasia-Labs/opshin-audit/blob/milestone5-progress/catalyst_docs/milestone5/milestone5-final-audit-report.pdf\nThe closeout report and video are completed\nLink to final closeout Report: https://github.com/Anastasia-Labs/project-close-out-reports/blob/d1ebcfbc2ca88efadae87c163dac8ab03a1bcbbf/f12-opshin-audit-closeout-report/opshin-close-out-report.pdf\nLink to final closeout Video: https://youtu.be/dQzK5gSLOxU\nUpdates to last submission: Fixed the links to social media and added engagement numbers",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    }
+  ]
+}

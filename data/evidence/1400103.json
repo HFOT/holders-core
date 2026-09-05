@@ -1,0 +1,63 @@
+{
+  "title": "Quex oracles",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25000,
+      "promise": "This is prototyping milestone. The goal is to provide the first implementation of TEE-based oracles on Cardano. The outputs are\n・The instance of Intel Trust Domain capable of producing signed data for Cardano delivery and parsing\n・The set of tools for TD attestation and verification provided by Quex\n・Set of Plutus smart-contracts capable of receiving the data emitted by TD, storing it and providing the client contracts access with it",
+      "criteria": "・The TD attestation and verification tools can be used to attest the TD in question\n・The Trust domain source code is published\n・Quex contracts on Cardano are capable of accepting and validating the data from the TD\n・Test consumer contract is capable of fetching the data from Quex contracts",
+      "report": "A. Output: The instance of Intel Trust Domain capable of producing signed data for Cardano delivery and parsing\nAcceptance criteria: The Trust domain source code is published\nEvidence: The source code of TD is published (https://github.com/quex-tech/quex-v1-signer/tree/plutus). And offchain part for data parsing and delivery (https://github.com/quex-tech/cardano-oracle/tree/main/off-chain). \n\nB. Output: The set of tools for TD attestation and verification provided by Quex\nAcceptance criteria: The TD attestation and verification tools can be used to attest the TD in question \nEvidence: The source code of TD is published (https://github.com/quex-tech/quex-v1-signer/tree/plutus) and can be attested using the set of published Quex tools (https://verify.quex.tech/). All Cardano-related artifacts are available at https://github.com/quex-tech/cardano-oracle-artifacts.\n\nC. Output: Set of Plutus smart-contracts capable of receiving the data emitted by TD, storing it and providing the client contracts access with it\nAcceptance criteria: Quex contracts on Cardano are capable of accepting and validating the data from the TD. Test consumer contract is capable of fetching the data from Quex contracts\nEvidence: The source code of the core contracts (https://github.com/quex-tech/cardano-oracle/tree/main/on-chain). Data delivery from TD to the blockchain together with its validation by the contracts (https://preview.cardanoscan.io/transaction/738ce1fc08f1fdbc5ba427c46ac392ac893918cc355ae8bddf62de72da5bf6af). Data consumption by the test client contract (https://preview.cardanoscan.io/transaction/51f1ae8c7e12a0a8df14002f87bdc5f8d9db1bbd7e0eb0da71df00511172371d)",
+      "kinds": [
+        "chain",
+        "code",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 25000,
+      "promise": "The goal of the milestone is to create the tokenomics and token-based indexing mechanics for Quex. The outputs are\n・The document describing the tokenomics of Quex oraclese on Cardano, including the incentivization measures and indexing of the data outputs\n・Implementation of this mechanics in the contracts",
+      "criteria": "・The document containing tokenomics and indexing mechanics is published on-line\n・The source code of the smart-contracts for the testnet is upgraded to incorporate these changes",
+      "report": "A. Output: Tokenomics and token-based indexing mechanics documentation for Quex oracles on Cardano\nAcceptance criteria: The document describing the tokenomics of Quex oracles on Cardano, including incentivization measures and indexing of data outputs, is published online\nEvidence: https://github.com/quex-tech/cardano-oracle/blob/main/tokens.md\nB. Output: Smart contracts implementing token minting mechanics for oracle pools and oracle responses\nAcceptance criteria: The source code of the smart contracts for the testnet is upgraded to incorporate token minting for oracle pool creation and oracle response indexing\nEvidence:\n・Oracle Response Validator (mints response tokens): https://github.com/quex-tech/cardano-oracle/blob/main/on-chain/src/OracleResponseValidator.hs\n・Single Oracle Pool Validator (mints pool tokens): https://github.com/quex-tech/cardano-oracle/blob/main/on-chain/src/SingleOraclePoolValidator.hs\n・Pool token minting transaction (testnet): https://preview.cardanoscan.io/transaction/208bc40dd2556737a46e2b49b80659095b414c5fc1d0755a31b4dfcb1aac0f6c\n・Response token minting transaction (testnet): https://preview.cardanoscan.io/transaction/01ef642b35635f6e1de77334c8b94d7f1df339227fb56f651dbd09f804715fe8",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "The goal of the milestone is twofold. First, develop the infrastructure necessary for data relay between Trust Domains and the blockchain. Second, develop the mechanics allowing clients to query the necessary data from the oracles solely by the on-chain requests. The outputs are\n・The relay services providing the datafeeds for the testnets on a push-based basis\n・The monitoring service for the on-chain requests\n・Adaptation of the smart-contract code for the on-chain requests",
+      "criteria": "The relays are not supposed to be trusted by Quex design. They are part of the internal Quex infra. Hence, we do not plan to make their source code public. The maximum damage which can be caused by a malicious relay is downtime, but not data theft/corruption. Therefore, this milestone is accepted if the relay infra fulfills its functions, no matter how\n・The test datafeed is created on Quex contracts, which is updated at a prescribed rate\n・The pull-based contract methods and infra are deployed. Namely, once a client submits a transaction with the data request, the TEE-signed data response is se",
+      "report": "A. Output: Relay services providing the datafeeds for the testnet on a push-based basis\n Acceptance criteria: The test datafeed is created on Quex contracts, which is updated at a prescribed rate\n Evidence: The push-based datafeed delivering ADA/USDT price (100,000,000 ADA in USDT from api.binance.com) with hourly updates: https://preview.cardanoscan.io/token/c093ca8bc5318cb767219cc1907aa03120ba696fb3293b48069e5edc44727ea4f259a5db180f71a6771bed655b9b9d4bc73dccf2e7ee4fe8c1fc8f92?tab=transactions. Each transaction creates a UTxO with the price data in its datum.\n B. Output: Monitoring service for on-chain requests and adaptation of the smart-contract code for on-chain pull-based queries\n Acceptance criteria: The pull-based contract methods and infra are deployed. Once a client submits a transaction with the data request, the TEE-signed data response is sent from the TD to the blockchain\n Evidence: Pull-based request validator: https://github.com/quex-tech/cardano-oracle/blob/main/on-chain/src/OracleRequestValidator.hs. On-chain request transaction for ADA-USDT price: https://preview.cardanoscan.io/transaction/680fbb2235197379f9d5007435c9652d4589cfa243d53989eb0743b2f5273a37. Oracle response transaction: https://preview.cardanoscan.io/transaction/b9f19b655e4d9ae39bf7d8e4b3f394f44484262b2a137789b9a1e0a89cb44c9d\n C. Output: Documentation on request mechanics\n Acceptance criteria: Documentation describing how to create on-chain data requests is published\n Evidence: Documentation on request mechanics and how to create an on-chain request: https://github.com/quex-tech/cardano-oracle/blob/main/request-mechanics.md",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 25000,
+      "promise": "・Security audit of the Quex contracts\n・Mainnet deploy of the contracts and services\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Audit report is publically available\n・Quex contracts are in Cardano Mainnet\n・Quex infra is operational for the mainnet\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "A. Output: Security audit of the Quex smart contracts\nAcceptance criteria: The audit report is publicly available\nEvidence: Audit report (0 Critical, 1 High, 4 Medium, 5 Low, 8 Informational) and threat model: https://github.com/quex-tech/cardano-oracle/blob/main/audit/audit-376f9abd.pdf, https://github.com/quex-tech/cardano-oracle/blob/main/audit/THREAT_MODEL.md. We have reviewed and acknowledged the findings; in the current single-operator setup (the relayer is run solely by Quex) the residual risk is very limited, and the relayer-trust findings will be revisited before opening the relayer set to third parties. As a bonus beyond the grant scope, we also open-sourced the reusable audit toolkit used here: https://github.com/quex-tech/plutus-auditor\nB. Output: Mainnet deployment of the Quex contracts and services\nAcceptance criteria: The Quex contracts are on Cardano mainnet and the infrastructure is operational, serving pull-based requests with TEE-signed responses\nEvidence: Validators on mainnet: responses addr1w8qf8j5tc5ccedm8yxwvryr65qcjpwnfd7ejjw6gq609ahqxexh26, requests addr1w90wmmcx3fd2yxrd4jn895qs98pul3u9pcqd5wzm45ldeygmj9mdl. On-chain request for ADA/USDT price: https://cardanoscan.io/transaction/61461e0689218cff82a001e7d17062b6c5d11cc9cf1ab340acff6a7f56eacf66, and the TEE-signed oracle response: https://cardanoscan.io/transaction/2eab26b09f13e43d89867942dacece5925ae81b4d530529b4237ae2ef0ecab9c. User guide (sections \"Generate a wallet\" and \"Create and manage pending requests\"): https://github.com/quex-tech/cardano-oracle/blob/main/off-chain/README.md. Launch announcement: https://x.com/quex_tech/status/2060750713949487265\nC. Output: Final close-out report\nAcceptance criteria: The final close-out report is publicly available\nEvidence: https://drive.google.com/file/d/16JM4LDAA6vlRqpr5VLhBRbR5HWc7gE0e/view?usp=sharing\nD. Output: Final closeout video\nAcceptance criteria: The final closeout video is publicly available\nEvidence: Live mainnet demo video (request ->",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 9,
+      "cut": true
+    }
+  ]
+}

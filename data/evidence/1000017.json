@@ -1,0 +1,57 @@
+{
+  "title": "Blockfrost SDKs refresh",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 10000,
+      "promise": "We will produce a list of most used SDKs within the Blockfrost ecosystem.",
+      "criteria": "A list of the accepted SDKs for the refresh selected by usage.",
+      "report": "The list of the SDKs that are nominated for the update according to the average number of monthly user.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "The 5 top selected SDKs will be updated to latest releases of the Blockfrost API, making them up-to-date.",
+      "criteria": "Opened change requests to selected top 5 SDKs with up to date code changes that also list what new features and endpoints were added.",
+      "report": "The following are pull requests with the changes for the SDK that are updated.\n・blockfrost-go https://github.com/blockfrost/blockfrost-go/pull/70\n・blockfrost-rust https://github.com/blockfrost/blockfrost-rust/pull/42\n・blockfrost-js https://github.com/blockfrost/blockfrost-js/pulls\n・blockfrost-haskell https://github.com/blockfrost/blockfrost-haskell/pull/43 https://github.com/blockfrost/blockfrost-haskell/pull/39 \n・blockfrost-python https://github.com/blockfrost/blockfrost-python/pull/37\n\nThese are already tested by us, we are leaving it up for the community to test it too.\nMore information about the specific changes are directly specified in the pull request itself. The code changes are there too. Given the technical nature of the change, we tried to provide a more human friendly output in the PRs. If there is any specific question or if something is not clear, feel free to comment on the PR itself (that way more people who might have the same question can see it and we adjust it).",
+      "kinds": [
+        "code"
+      ],
+      "links": 11
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 10000,
+      "promise": "The output is the possible feedback by the community on these propose code changes.",
+      "criteria": "We have left the community with at least a week of feedback time on each change.",
+      "report": "We shared the links, asking for community feedback on reddit and shared it to twitter too. Apparently it is not suitable content for stackexchange and got removed, but on cardano reddit it had more than 1000 views (!), so we are happy with the reach.\n・https://www.reddit.com/r/CardanoDevelopers/comments/18fv1u4/blockfrost_sdk_updates_feedback/\n・https://twitter.com/blockfrost_io/status/1734210032886051231\n\nWe even did receive feedback on the Golang SDK by Jean-Baptiste Pinalie (thank you so much!) who actually did find a bug in the upgrade, see https://github.com/blockfrost/blockfrost-go/pull/70.",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 100000,
+      "promise": "The final stable release of the SDKs.",
+      "criteria": "SDKs has a new version released.",
+      "report": "・Close out report\n・Close out video\n\nReleases:\n・blockfrost-rust 1.0.0\n・blockfrost-haskell 0.9.0.0\n・blockfrost-python 0.6.0\n・blockfrost-go 0.2.0\n・blockfrost-js 5.5.0",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

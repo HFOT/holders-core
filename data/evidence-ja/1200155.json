@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・安定したプールとV2流動性プールの歴史的価格データを収集・保存する仕組み\n・歴史的情報へのスムーズなアクセスを保証する効率的なデータストレージおよび検索システム。\n・過去のデータデータの完全性を保護するため、データのセキュリティプロトコル.",
+      "criteria": "・Cardanoノードから直接安定してV2流動性プールを獲得し、PostgresQLデータベースに保存するインデックスを完成\n・特定の流動性プールの最新のプール価格と歴史的価格にアクセスするための機能を完了",
+      "report": "特にRepos、例などのMilstone 1のドキュメントは次のとおりです。 https://github.com/minswap/sdk/blob/main/docs/database-indexer.md\nSDK の GitHub リンクはこちら: https://github.com/minswap/sdk"
+    },
+    {
+      "no": 2,
+      "promise": "・Minswap StableswapとAMM V2スマートコントラクトと相互作用するためのセキュアかつ効率的なオフチェーン方式。\n・通信チャネルとプロトコルをセキュアにし、オフチェーンサービスとスマートコントラクト間の安全なやり取りを保証します。\n・既存のスマートコントラクトインフラとの互換性と相互運用性の向上.",
+      "criteria": "・StableswapとAMM V2スマートコントラクトと相互作用する機能を完了します。\n・Stableswap:Minswap Batcherの手数料割引とともに安定スワップ注文を作成するクラスを公開\n・AMM V2:V2スマートコントラクトで新しい流動性プールを作成するクラスを公開し、Minswap Batcher手数料割引とともに注文",
+      "report": "特にRepos、例などのMilstone 2の更新されたドキュメントは次のとおりです。 https://github.com/minswap/sdk/blob/main/docs/transaction.md\nSDK の GitHub リンクはこちら: https://github.com/minswap/sdk\nプールクリエイションの一例を挙げたバージョンです。 そのため、プール・クリエイションのButter Feeは、実装された注文を行うための割引のみを持っていません。\nセキュリティ部分のため:\n・HTTPSを使用してブロックフロストとやり取りします。これは、署名されたトランザクションが暗号化されたトランザクションであり、中間攻撃の人には不可能です。\n・クライアント側またはコールドウォレットに秘密鍵を保存し、トランザクション署名をブロックフロストに送信するだけです。\n・ホットウォレットを利用しているユーザの場合、プライベートキーは暗号化されたまま保存されます。つまり、プライベートキーを復号化してトランザクションに署名する必要があります"
+    },
+    {
+      "no": 3,
+      "promise": "・AMM V2プロトコル内で期限切れの注文を自動的に追跡およびキャンセルするオフチェーン監視サービス。\n・LBE V2スマートコントラクトと合理化された相互作用のためのオフチェーン統合方法.",
+      "criteria": "・AMM V2プロトコル内で期限切れの注文を自動的に追跡およびキャンセルできるプログラムを完了\n・LBE V2スマートコントラクトと相互作用する機能を完了します。\n・新しいLBE V2イベントを作成し、その通貨のパフォーマンスを管理し、ランチャーボウルイベント終了後に清算プールに液体を転送\n・LBE V2イベントに参加する",
+      "report": "1. 期限切れの順序のモニター:\n- オフチェーンコンポーネントを追跡し、期限切れの注文をキャンセル: https://github.com/minswap/sdk/blob/main/docs/dex-transaction.md#4-off-chain-component-to-track-and-cancel-the-expired-orders\n2. LBE V2スマートコントラクト(ドキュメント概要:https://github.com/minswap/sdk/blob/main/docs/lbe-v2/lbe-v2.md)と相互作用する機能:\n- 新しいLBE V2イベントを作成します。 https://github.com/minswap/sdk/blob/main/docs/lbe-v2/lbe-v2.md#create-event\n- 通貨のパフォーマンスを管理: https://github.com/minswap/sdk/blob/main/docs/lbe-v2/lbe-v2.md#add-sellerincrease-concurrency-performance\n- 起動ボウルイベントが終了した後、液体を新しい流動性プールに転送: https://github.com/minswap/sdk/blob/main/docs/lbe-v2/lbe-v2.md#run-lbe-v2-worker\n- LBE V2 イベントに参加する: https://github.com/minswap/sdk/blob/main/docs/lbe-v2/lbe-v2.md#create-order"
+    },
+    {
+      "no": 4,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ\n・新しいSDK機能のドキュメント\n・新規SDK機能の活用事例",
+      "criteria": "・SDKは一般の方でもアクセス可能\n・SDKは、i.e.と互換性があり、その上に構築し、開発目的のために使用することができます。\n・SDKは機能的かつ円滑に意図した作業を行います\n・クローズアウトレポートとビデオが公開",
+      "report": "・SDKは、こちらから公開可能です。\n・SDKは機能的であり、意図した作業を円滑に行います。 証拠と説明は、下記のクローズアウトレポートに含まれています。\n・クローズアウトレポートはこちら\n・クローズアウト動画はこちら\n・Catalystの提出コミットでGithub Repoにアクセスすることができます"
+    }
+  ]
+}

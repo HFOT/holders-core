@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "- PostgreSQL 拡張用のソースコード\n- Cardano CBORデータと相互作用できるプロジェクションとフィルタ機能\n- PostgreSQL インスタンスにインストール可能な拡張子のバイナリリリース\n- 拡張子をインストールする方法の手順\n- 利用可能な機能のそれぞれを使用する方法の指示\n-例のユースケースを示す簡単なデモビデオ",
+      "criteria": "- 技術的な査読者/開発者は提供された指示に従って延長を取付けることができます。\n- テクニカルレビュアー/デベロッパは、拡張子が提供するカスタムプロジェクション&フィルタを使用して、適切なPostgreSQLインスタンスに対してクエリを実行できます.",
+      "report": "マイルストーンの出力:\n- PostgreSQL 拡張用のソースコード\nMumak拡張ソースコードはこちら\n- Cardano CBORデータと相互作用できるプロジェクションとフィルタ機能\nプロジェクト: これらの機能は、CBORエンコードされたブロックチェーンデータから特定の情報を抽出するように設計されています。 トランザクション入力、出力、トランザクションの合計ADA出力、トランザクションに関連するメタデータなど、特定のデータポイントを取得できます。 CBORデータに直接アクセスし、デコードすることで、PostgreSQL内で保存されたブロックチェーンデータから貴重なインサイトを分析し、抽出する強力な手段を提供します。\n\nフィルター: フィルターはユーザーがCBORデータに条件を適用し、特定の条件に基づいてデータセットを効果的に絞り込むことを可能にする専門にされた機能です。 たとえば、フィルタは特定のアドレスを含むトランザクションを識別したり、特定のポリシーのトークンをマイニングしたり、特定のバリデーション間隔でトランザクションを処理したりすることができます。 フィルターは、ユーザーが特定の要件を満たすブロックチェーンデータのサブセットに集中できるようにすることで、クエリ機能を強化し、クエリの効率と関連性を改善します。\n\n- PostgreSQL インスタンスにインストール可能な拡張子のバイナリリリース\nMumak PostgreSQL の拡張子は、 mumak.sql, mumak.control, mumak.so の3つのキーファイルで構成されます。 これらのファイルは、リポジトリのリリースページで利用可能なアーカイブにまとめられています。\n- 拡張子をインストールする方法の手順\nマザークのpostgres拡張子をここにインストールする方法に関する包括的なドキュメントを提供しています。\n- 利用可能な機能のそれぞれを使用する方法の指示\n現在のバージョンの mumak で利用可能な機能のリストを提供します。\n.受諾の基準:\n- 技術的な査読者/開発者は提供された指示に従って延長を取付けることができます。\n- 技術的な査読者/開発者は適切なPostgreSQLに対してクエリを実行できます"
+    },
+    {
+      "no": 2,
+      "promise": "- Mumak機能を活用したCardanoブロック構造を保存するためのリレーショナルDBスキーマ\n- Mumak機能を活用するメインネットブロックを含む最新の利用可能な画期的なデータセット\n- OuraとMithrilを使用して、ブロックデータセットを作成および更新するためのインジェクションツール。\n- Mumakを使用して提示されたデータセットのスナップショットを照会する方法を示す簡単なビデオ",
+      "criteria": "- 技術的な査読者/開発者はdbのスキーマを点検し、提示された構造を理解することができます。\n- PostgreSQL と Mumak を使用して、提示されたデータセットのスナップショットを PostgreSQL と Mumak を使用して、オンチェーンデータを探索することができます.",
+      "report": "マイルストーンの出力\n- Mumak機能を活用したCardanoブロック構造を保存するためのリレーショナルDBスキーマ\nmumakブロックデータベースのリレーションスキーマはこちら: https://github.com/txpipe/mumak/blob/main/init-db.sh\n- Mumak機能を活用するメインネットブロックを含む最新の利用可能な画期的なデータセット\nデータセットは、既読のpostgresインスタンスに mumak をインストールして接続することで見つけることができます。\n下の接続文字列:\nPGPASSWORD=V9OYt9ANMTQyIjowPmJZiQ==psql --port 5432 --host=mumak-m0.demeter.run --ユーザー名dmtr mumak1vrqw92qwc79dw094tav3yj4wm52ezvrv cardano-mainnet\n- OuraとMithrilを使用して、ブロックデータセットを作成および更新するためのインジェクションツール。\n弊社では、Mithrilをデータソースとしてサポートしています。https://github.com/txpipe/oura/pull/795\nマイルストーン完了の証拠\n- Cardanoブロック構造用のSQLスキーマ作成スクリプト\nhttps://github.com/txpipe/mumak/blob/main/init-db.sh\n- 配信データまでメインネットデータのSQLスナップショット\nPGPASSWORD=V9OYt9ANMTQyIjowPmJZiQ==psql --port 5432 --host=mumak-m0.demeter.run --ユーザー名dmtr mumak1vrqw92qwc79dw094tav3yj4wm52ezvrv cardano-mainnet\n- Oura / Mithrilを活用して新しいスナップショットを生成する方法に関する指示\nmithril ソースの mya 設定が必要です:\nhttps://github.com/txpipe/oura/blob/dbcb6186b0bf5deecca6adeedf3b24e853682eab/examples/mithril/daemon.toml\nconfig ファイルのセットアップが完了したら、aa を 通常のように実行します。\n- 提示されたスナップショットをクエリする方法のデモビデオへのリンク\n動画はこちら: mumak block query.mp4"
+    },
+    {
+      "no": 3,
+      "promise": "- Mumak機能を活用したCardanoトランザクション構造を保存するためのリレーショナルDBスキーマ\n- Mumak機能を活用したメインネット取引を含む最新の利用可能な画期的なデータセット\n- OuraとMithrilを使ってトランザクションデータセットを作成および更新するインジェクションツール。\n- Mumakを使用して提示されたデータセットを照会する方法を示す簡単なビデオ",
+      "criteria": "テクニカルレビュアー/開発者は、db スキーマを調べ、提示された構造を理解することができます。\nPostgreSQL と Mumak を使って提示されたデータセットを PostgreSQL や Mumak でクエリして、オンチェーンデータを探索することができます.",
+      "report": "マイルストーンの出力\nMumak機能を活用したCardanoトランザクション構造を保存するためのリレーショナルDBスキーマ\nmumakトランザクションデータベースのリレーションスキーマは次のようになります。https://github.com/txpipe/mumak/blob/main/init-db.sh\nMumak機能を活用したメインネット取引を含む最新の利用可能な画期的なデータセット\nデータセットは、既読のpostgresインスタンスに mumak をインストールして接続することで見つけることができます。\n下の接続文字列:\nPGPASSWORD=V9OYt9ANMTQyIjowPmJZiQ==psql --port 5432 --host=mumak-m0.demeter.run --ユーザー名dmtr mumak1vrqw92qwc79dw094tav3yj4wm52ezvrv cardano-mainnet\nOura と Mithril を使用して、トランザクションデータセットの作成と更新を行います。\n弊社では、Mithrilをデータソースとしてサポートしています。https://github.com/txpipe/oura/pull/795\nMumakを使用して提示されたデータセットを照会する方法を実証する簡単なビデオ\nhttps://drive.google.com/file/d/1PH8ywakjwZafeFOj8NCzbfwomcdRU-hX/view?usp=sharing\nマイルストーン完了の証拠\n- Cardano Tx構造用のSQLスキーマ作成スクリプト\nhttps://github.com/txpipe/mumak/blob/main/init-db.sh\n- 配信データまでメインネットデータのSQLスナップショット\nPGPASSWORD=V9OYt9ANMTQyIjowPmJZiQ==psql --port 5432 --host=mumak-m0.demeter.run --ユーザー名dmtr mumak1vrqw92qwc79dw094tav3yj4wm52ezvrv cardano-mainnet\n- Oura / Mithrilを活用して新しいスナップショットを生成する方法に関する指示\nmithril ソースの mya 設定が必要です:\nhttps://github.com/txpipe/oura/blob/dbcb6186b0bf5deecca6adeedf3b24e853682eab/examples/mithril/daemon.toml\nconfig ファイルのセットアップが完了したら、aa を 通常のように実行します。\n- Mumakを使用して提示されたデータセットを照会する方法のデモビデオへのリンク\nhttps://drive.google.com/file/d/1PH8ywakjwZafeFOj8NCzbfwomcdRU-hX/view?usp=sharing"
+    },
+    {
+      "no": 4,
+      "promise": "- Demeterプラットフォームを通じてMumakインスタンスを既に暫定して利用可能\n- Demeter を使用してインスタンスをクエリする方法に関する指示と文書",
+      "criteria": "技術的な査読者/開発者は、あらゆる種類のサーバー側コンポーネントを規定することなく、Demeterサービスを使用してMumakデータセットからデータを問い合わせることができます",
+      "report": "- Demeter の Mumak インスタンスに接続する方法に関するドキュメントへのリンク\nhttps://docs.demeter.run/ports/mumak ディレクティブ\n- Demeter の Mumak インスタンスからデータを接続および照会する方法の例をビデオで示します\nhttps://youtu.be/3UPKhDUY5A4"
+    },
+    {
+      "no": 5,
+      "promise": "- Mumak PostgreSQL の拡張子の完全なソースコード\n- ファイル拡張子のバイナリリリースバージョンは、ダウンロードする準備ができています\n- Mumak拡張子をインストールする方法に関する完全な指示\n- Mumakデータセット用のスキーマと最新のスナップショットを備えたSQLスクリプト\n- 開発者が独自のデータセットを維持できるインジェクションツール\n- 機能のリリース以来、Demeterを介して使用メトリックを詳述するレポート\n- ツールを提示し、開発プロセスを説明するビデオ",
+      "criteria": "- テクニカルレビュアー/開発者は、パブリックに利用可能なアーティファクトを使用して、Mumak拡張とデータセットの独自のバージョンです。\n- 技術的なレビュー/開発者は、提供されたインジェクションツールを使用して、Mumakデータセットの独自のバージョンを作成することができます。\n- レビュアーは、すべての必要なタスクが完了していることを確認する開発プロセスを監査することができます.",
+      "report": "クローズアウトレポートはこちら:\nhttps://docs.google.com/document/d/1dQTX-MLmg8rTadVH li7wOaZb5lvd8uHZS7FO GMOWQ/edit?tab=t.0\n\nMumak PostgreSQL 拡張の公開ソースコードリポジトリへのリンク:\nhttps://github.com/txpipe/mumak\n- PostgreSQL の拡張機能のインストールと使用方法に関する公開可能なドキュメントへのリンク:\nhttps://github.com/txpipe/mumak/blob/main/docs/INSTALL.md\n- ブロックとTxのデータセットをプロビジョニングするためのSQLスキーマ作成スクリプト:\nhttps://github.com/txpipe/mumak/blob/main/init-db.sh\n- レポートの配信日までのブロックとTxデータセットのSQLスナップショット:\nデータセットは、既読のpostgresインスタンスに mumak をインストールして接続することで見つけることができます。 下の接続文字列:\nPGPASSWORD=V9OYt9ANMTQyIjowPmJZiQ==psql --port 5432 --host=mumak-m0.demeter.run --ユーザー名dmtr mumak1vrqw92qwc79dw094tav3yj4wm52ezvrv cardano-mainnet\n- Mumakデータセット(ブロック/txs)を維持するための摂取ツールのバイナリリリースと使用説明書:\nhttps://github.com/txpipe/mumak/blob/main/docs/BOOTSTRAP.md\n- Demeter.runから収集される主要な使用法のメトリックを要約するレポート:\nhttps://drive.google.com/file/d/1lPbdSnWYOWLLdtaGuVx4lHj2W6RvRwG/view?usp=sharing\nhttps://drive.google.com/file/d/18rxYR1m0wCVZDlaK1uW6HIpd34IZfWFH/view?usp=sharing\n\n- Mumak PostgreSQL の拡張機能と開発プロセスについてビデオが紹介されています。 拡張機能、機能性、および基礎技術に関するインサイトを提供します。\nhttps://youtu.be/O4YJOQghu8c"
+    }
+  ]
+}

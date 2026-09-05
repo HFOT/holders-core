@@ -1,0 +1,62 @@
+{
+  "title": "HaskLedger, An EDSL for Scalable Cardano Sidechains",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "We will deliver a detailed analysis of the current Cardano smart contract ecosystem, pinpointing both gaps and opportunities for optimization and expansion. This milestone will include the formation of a project team, comprising professionals with a diverse skill set in blockchain technology, Haskell programming, and open-source hardware optimization.\nWe will also provide a detailed documentation and configuration of Software and Hardware Infrastructure setup",
+      "criteria": "・The ecosystem analysis report will comprehensively cover existing smart contract tools, platforms, and performance bottlenecks within the Cardano ecosystem, offering actionable insights for HaskLedger's intervention.\n・The team assembly document will detail the expertise, responsibilities, and contribution scope of each team member, ensuring a well-rounded and capable project team.\n・The Software and Hardware Infrastructure and configuration details will be outlined for seamless functioning of the project.",
+      "report": "Milestone 1 : Ecosystem Analysis, Gap Identification, Infrastructure Setup, and Team Assembly\n﻿Milestone Overview:\nMilestone 1 was meticulously designed to provide a comprehensive analysis of the current Cardano smart contract ecosystem, identify both gaps and opportunities for optimization and expansion and assemble a project team with diverse expertise in blockchain technology, Haskell programming and open-source hardware optimization. Additionally, we aimed to provide detailed documentation and configuration of the software and hardware infrastructure setup essential for the seamless functioning of the project.\nAchievements:\n・Ecosystem Analysis and Gap Identification: We have conducted an in-depth analysis of the Cardano ecosystem, which is now documented in our report. This document covers existing smart contract tools, platforms, and highlights performance bottlenecks within the ecosystem, offering actionable insights for HaskLedger's intervention. Document Link: Cardano Ecosystem Analysis\n・Team Assembly: Our team assembly is also documented and details the expertise, responsibilities and contribution scope of each team member, ensuring a well-rounded and capable project team is in place to drive the project forward. Kindly refer link for team member details - https://www.notion.so/konmadao/Cardano-Ecosystem-Analysis-140aea1d536b49479c175654656bd77a?pvs=4#4f84f6d0f1c24f51bdfe1a712d70daba\n・Read our Join Statement for better understanding of how to involve in the project - https://www.notion.so/konmadao/Cardano-Ecosystem-Analysis-140aea1d536b49479c175654656bd77a?pvs=4#22c731d5efd14b2ba7f6c4e397de94a5\n・Infrastructure Setup: Configuration details for the Software and Hardware Infrastructure setup have been outlined, ensuring the project's tools and systems are optimised for development and testing. Details of equipment purchase is available in this drive. Some hardware are in transit. As soon as we receive the hardware, we will be sharing further evidences. - https",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "19",
+      "cost": 50000,
+      "promise": "This Milestone is a combined milestone of Milestone 2 and 3 mentioned in the proposal which is spread across 2 months. This Milestone will thus include - Initial Design, Framework Development, Design Document Completion and Expert Collaboration. \nIn this Milestone the Development of HaskLedger's foundational design and framework will be encapsulated in a design document. This document will outline the proposed architecture, including key components and their interactions, to support scalable and efficient smart contract execution on Cardano. Once the design document is ready, we will be reaching out to Experts in Blockchain and Haskell both from Cardano Foundation, Project Catalyst and external experts as deemed fit.",
+      "criteria": "・The design document will clearly articulate the architecture, expected performance improvements, and compatibility considerations with existing Cardano infrastructure and open-source hardware.\n・It will serve as a comprehensive guide for subsequent development phases, ensuring alignment with project goals.\n・List of experts and meeting schedules along with the minutes of the meeting and a documentation with the outcomes of these meeting will provide clarity on the projects progress.",
+      "report": "The design document for HaskLedger has been completed and submitted to our GitHub repository. This document encapsulates the foundational design and framework for HaskLedger, outlining the proposed architecture, key components, and their interactions after considerating feedbacks provided by experts.\n・GitHub Repository: HaskLedger GitHub\n・Design Document : This document represents the finalized architectural blueprint after MLabs’ technical review. \n\nCommentary on Architectural Decisions\n\nArchitecture:\n・The updated design defines a clear and auditable end-to-end architecture for HaskLedger.\n・It integrates a typed Haskell EDSL that compiles validator logic into a deterministic Plutus Core subset, a modular off-chain/sidechain runtime built on actor pipelines for scalable execution, and a gateway service that bridges off-chain computation with Cardano Layer-1 for transaction submission and checkpointing.\n・The architecture emphasizes clean separation of concerns—the EDSL governs on-chain semantics, the worker runtime handles scalable off-chain logic, and the gateway provides the policy boundary for L1 interaction.\n・ Additional layers ensure reproducibility and portability across architectures (x86_64, aarch64, and riscv64 via QEMU), while preserving future extensibility for formal methods, sidechain protocols, and optional hardware acceleration.\n\nExpected Performance Improvements:\n・The design achieves predictable performance through an actor-based concurrency model with bounded queues, task sharding, and back-pressure control.\n・Critical operations such as cryptographic primitives and data serialization are optimized through deterministic Rust FFI modules, delivering measurable speedups while maintaining reproducibility and type safety.\n・Explicit performance metrics—boot-to-ready time, p95 latency, throughput under load, and STM contention rates—are defined and linked to reproducible benchmarks.\n・Together, these improvements aim to raise throughput, lower latency, and s",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "21",
+      "cost": 50000,
+      "promise": "An initial version of HaskLedger, incorporating core functionalities as defined in the design document. This development phase focuses on implementing the essential features that underpin HaskLedger's value proposition, including scalability enhancements and open hardware compatibility.\nThis version will enable the development and deployment of smart contracts on the Cardano blockchain using the EDSL.",
+      "criteria": "Core Functionalities Implementation: The initial version must implement the core functionalities of HaskLedger, including but not limited to:\n・Syntax and semantics for defining smart contracts.\n・Integration capabilities with Cardano's blockchain for deploying and executing smart contracts.\n・Optimization for open-source hardware to ensure wide compatibility and efficiency.\n\nSmart Contract Compilation and Deployment: The EDSL must be able to compile a smart contract into Plutus Core (or an equivalent format compatible with Cardano) and demonstrate successful deployment and execution on a Cardano",
+      "report": "https://github.com/KonmaORG/HaskLedger/blob/main/F-11-Milestone-3-POA-Core-Functionality-Development.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "22",
+      "cost": 10000,
+      "promise": "A fully functional HaskLedger prototype ready for internal testing. This prototype will demonstrate HaskLedger's capabilities in a controlled environment, simulating real-world conditions to assess performance, scalability, and hardware compatibility.",
+      "criteria": "・The prototype will successfully execute smart contracts on Cardano, showcasing improvements in transaction throughput and efficiency.\n・Internal testing results will validate the prototype's operational effectiveness and highlight areas for further optimization.",
+      "report": "HaskLedger does not alter Cardano’s consensus rules, block frequency or aggregate network capacity. What it demonstrably improves is the amount of Cardano’s fixed block execution budget consumed by each equivalent validation. Lower resource consumption allows more equivalent validating transactions to fit within the same protocol-defined block budget and reduces the execution component of transaction fees.\nAll benchmark code, baseline contracts, methodology, raw measurements and reproduction instructions are publicly available in the updated repository:\nhttps://github.com/KonmaORG/HaskLedger/blob/main/F-11-Milestone-4-Prototype-Development-and-Internal-Testing.md\nVideo:\nhttps://drive.google.com/file/d/1YxsfksK8i5yn1sVuGS-GSZX6RDj60Hz1/view?usp=sharing\nPrototype Code:\nhttps://github.com/KonmaORG/HaskLedger\nTest Reports:\nhttps://github.com/KonmaORG/HaskLedger/tree/main/deploy-out\nThe benchmark can be independently reproduced through the documented haskledger-bench and PlutusTx baseline commands. The harness exits with an error if a validator rejects the positive-case input, preventing results from being generated from silently failing scripts.\nThe earlier review stated that it was not possible to assess whether the throughput and efficiency acceptance criterion had been met. It is now possible to assess it directly, quantitatively and independently.\nThe missing evidence is no longer presented as an assumption, projection or narrative claim. It is measured against the standard Cardano Haskell toolchain, derived from the applicable block execution limits, published in the repository and reproducible by the reviewer.\nWe therefore respectfully request that the milestone be reassessed against the precise acceptance criterion and the new evidence supplied.\nShould any concern remain, we would appreciate it being identified as a specific issue with the benchmark methodology, contract equivalence, calculations or reproducibility, so that it can be evaluated objectively. A gene",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 8,
+      "cut": true
+    }
+  ]
+}

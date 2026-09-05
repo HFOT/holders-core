@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・Web3ポータルを設計するために、現在のAfrocharts.comプラットフォームとその技術的インフラの分析を実施\n・マイルストーン、成果物、タイムラインなど、詳細なプロジェクトプランを開発\n・タスク・責任ボードの作成\n・Githubアカウントを開き、開発を開始",
+      "criteria": "・Afrochartsプラットフォーム分析を文書化\n・プロジェクト要件、マイルストーン、タイムラインの文書化\n・ユーザーストーリーとチームタスクと責任を明確にアジャイルボード上で定義\n・GitHubリポジトリ作成",
+      "report": "プロジェクトGithubリポジトリでホストされているドキュメントに直接リンクします。\nマイルストーン1 - 初期化\nドキュメント\nセットアップレポート - Afrocharts.comプラットフォーム分析セットアップを含む初期設計に関する情報\nAfrocharts Partner API Doc - 許可された API を使用して Afrocharts.com プラットフォームと統合するためのドキュメント\nプロジェクトステータスレポート - 現在のプロジェクトステータス\nプロジェクトタイムライン - プロジェクトロードマップ、タイムライン、および責任\nNotion Kanban Board - このプロジェクトのすべてのタスク、ストーリー、およびエピックスのボード"
+    },
+    {
+      "no": 2,
+      "promise": "・AfroChartsチームと連携して、新しいNFT-gated機能をAfrocharts.comに統合\n・シームレスな統合に必要な API とインターフェイスの実装\n・Afrocharts.comプラットフォームで5-10の戦略的アーティストパートナーをターゲットに、初期ポータルの立ち上げに参加します.",
+      "criteria": "・5-10人のアーティストが選ばれる歌を歌い、発表の準備をする。\n・testnetバックエンドサイト(web3ポータル)にアクセス可能\n・ユーザーは、Cardanoウォレットに接続し、曲NFTをミント\n・アーティストの曲NFTを保持している場合のみ、制限されたアーティストページにアクセスすることができます",
+      "report": "Catalyst Fund 11 審査者へ\n私はValtの業績の証明を提出することを喜んでいます — マイルストーン2:すべてのマイルストーンの出力が配信され、すべての受諾基準が検証可能なオンチェーンとオンウェブの証拠に満足していることを実証する開発。 このマイルストーンの完全な証拠パックは、github.com/Awen-online/valt/tree/main/docs/M2 Development で GitHub リポジトリに住んでいます。\nコンテキスト — AfroCharts → スタンドアロン ヴァルトポータル: マイルストーン 2 出力は、NFT-gating を afrocharts.com に統合することでフレーム化されました。 開発中に AfroCharts パートナー API は非機能 (api.afrocharts.com/v1/songs は、致命的なサーバー側データベースエラーで HTTP 200 を返します) となったため、スタンドアロン、自所有の Web3 ポータル — バルト (valt.digital) — は、すべてのグレードのアクセダンスの基準と証拠要件を独立して満たします。 等級付けされた用語は、プラットフォームアグノスティックです。 参照なし afrocharts.com.\n以下は、要件に応じて要求マッピングです。\n出力1 — NFT-gated Web3アーティストポータル、Cardano testnetにライブ\n受け入れられる規準 満たされた:\n・testnet「web3ポータル」は公開しています。\n・ユーザーは、Cardanoウォレットを接続し、曲NFTをミントトすることができます。\n・アーティストの曲NFTを保持している場合に限り、制限されたアーティストページにアクセスすることができます。\n\n証拠:\n・ライブポータル:https://www.valt.digital\n・Wallet接続+全オンチェーンミントフロー — 接続、NMKRチェックアウト、確認、処理、ミント&配送(スクリーンショットS1、E2、E10a-E10d)、E7の所有版\n・「Valt」は、ホルダーと非ホルダーのロックを解除しました。https://www.valt.digital/artist/mie/(スクリーンショットE6、S2)\n・オンチェーン・プルーフ — リリース・ソング NFT は、ポリシー bf5a88ac の下でオンチェーンを縮小...: preprod.cardanoscan.io/tokenPolicy/bf5a88ac...\n・全スクリーンショット + 業績証明 PDF: github.com/Awen-online/valt/tree/main/docs/M2 Development\n\n出力2 — シームレスな統合のための API とインターフェイス\n受諾の規準 満たされた:ポータル間の働く統合インターフェイス、"
+    },
+    {
+      "no": 3,
+      "promise": "・機能・機能の受託試験\n・バグや問題の特定・解決\n・セキュリティ監査を実施し、安全・完全性を確保するために必要な対策を実施\n・ユーザーのフィードバックを収集し、試験結果に基づく改善を実施",
+      "criteria": "・試験・バグ修正完了\n・自動サイバーセキュリティツール(NodeZero等)による脆弱性チェックを全て通過\n・チームが文書化したマニュアルセキュリティ評価を全て通過\n・さらなる改善のために収集・分析したユーザーフィードバック",
+      "report": "Catalyst Fund 11 審査者へ\n私はValt Milestone 3の業績の証明を提出することを喜んでいます:すべてのマイルストーンの出力が配信され、すべての受諾基準が検証可能な証拠に満足していることを実証し、実装とプレランチ。 このマイルストーンの完全な証拠パックは、github.com/Awen-online/valt/tree/main/docs/M3 Implementation で GitHub リポジトリに住んでいます。\n以下は、要件に応じて要求マッピングです。\n出力A:特徴および機能のテストを実施して下さい\n・受容性基準を満たした:試験完了 最初の自動テストスイートパス(15テスト/25アサーション)は、プレフィックスコードに対して失敗すると証明され、php -lはすべてのツリーをクリアします。\n・証拠:M3テスト&バグ修正レポート:github.com/Awen-online/valt/blob/main/docs/M3 Implementation/M3 Test and Bugfix Report.pdf\n・テストスイートとCIワークフロー: github.com/Awen-online/valt/tree/main/tests および .github/workflows/ci.yml\n・コンポーザーインストール&ベンダー/bin/phpunit (expect: OK, 15 test, 25 assertion) で再生成します。\n\n出力B:バグや問題を特定し解決する\n・受容性基準を満たした:バグ修正完了。 6つの欠陥の6つは、文書化された根本的な原因で解決しました。\n・証拠:M3テスト&バグ修正レポート、§5:github.com/Awen-online/valt/blob/main/docs/M3 Implementation/M3 Test and Bugfix Report.pdf\n・リポジトリ(plugin valt-platform 2.0.3): github.com/Awen-online/valt\n\n出力C:セキュリティ監査を実行し、安全と完全性を確保するために必要な対策を実施\n・受容性基準を満たした:自動脆弱性チェック(NodeZero または類似): semgrep (0 正正)と自律的なスタイルの評価(PASS: 0 基質的、0 高)を渡します.また、修正された上流以来、2つの重要なCardanoPressの問題を発見し、責任をもって開示したウォレット層レビューを含む手動評価を渡します。\n・証拠:M3セキュリティ監査レポート:github.com/Awen-online/valt/blob/main/docs/M3 Implementation/M3 Security "
+    }
+  ]
+}

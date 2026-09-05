@@ -1,0 +1,75 @@
+{
+  "title": "Lenfi V2 Aiken Audit + Bug Bounty",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 52000,
+      "promise": "Lenfi V2 code is built in the Aiken programming language, and we need to find the auditor which is capable of auditing in this language.\nOutputs:\n・Finding the auditor who will complete the audit\n・Sign the documents for audit\n・Start the auditing process",
+      "criteria": "・Has the auditor, capable of auditing code in Aiken, been chosen?\n・Does the auditor that was chosen have the credibility in the Cardano community?\n・Has the agreement for the pricing has been achieved?\n・Has the auditor started the auditing process and if not, when will be the start date?",
+      "report": "We have started the Audit back in August, just after applying to the project catalyst, where we used our personal funds at first to initiate the audit process, just not to wait for the results of the Catalyst and start the auditing then. We have been communicating this narrative all the way through, and the transaction in August is the proof of the start of the audit.\nWe have chose Anastasia Labs because they are a team of great developers with proof of record, there were almost none of the auditors to choose from, because the coding language is new and not many auditing firms are willing to perform audit in this language, where Anastasia Labs showed professionalism in the communication process with the Lenfi team. \n・Link to the medium article which shows which auditor has started the auditing process\n・Link to a telegram announcement that the audit has started\n・Link to the transaction on cardanoscan (or other) showing that the first audit phase has started.\n\nResults:\n・https://medium.com/@lenfi/lenfi-kicks-off-external-audit-conducted-by-anastasia-labs-303b75325a24\n・https://t.me/lenfiannouncements/198\n・https://cardanoscan.io/transaction/b65364bc58887a1ac81a6f892e60583c97123c3a8878589bacf06c584b1fd417",
+      "kinds": [
+        "chain",
+        "doc",
+        "social"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 53000,
+      "promise": "Because we have already started the audit, we can Opensource the code which will be available to the public.\nOutputs of Milestone 2:\n・Audit report of halfway done audit, provided by the auditor, which will show the current progress and initial auditing phase.\n・Lenfi V2 code written in Aiken is publicly available.",
+      "criteria": "・ An Audit Report that provides an audit of the Lenfi V2 code and highlights the vulnerabilities found. It would be even better if the report should also show the fixing of the audit and the findings are addressed.\n・ Access to the Lenfi V2 code for a regular Cardano user",
+      "report": "The initial audit half stage has passed, here are the promised outcomes:\n・Link to the audit report by the auditor: https://github.com/lenfiLabs/materials/blob/main/Anastasia_Labs____Lenfi_Audit_Draft.pdf \n・Link to the Lenfi V2 code: https://github.com/lenfiLabs/lenfi-smart-contracts",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 43000,
+      "promise": "After we have received the first Audit report, developers can fix the found vulnerabilities (if there is any) following the guidance provided by the auditor.\nOutputs:\n・Modified and improved smart contracts based on the audit findings.\n・Presenting detailed documentation for the smart contracts for users and developers.",
+      "criteria": "・Modified and improved smart contracts are being sent back to the auditor, for them to continue with the auditing process.\n・Updated code details in the previously open sourced code library.",
+      "report": "We understand the concerns regarding the chronological order of our PoA submissions and the timelines of our developments. We have added the detailed Lenfi documentation of findings in the audit addressed.\nWe have started the audit before the very start of the Catalyst program, you can check in the PoA 1 or here: https://medium.com/@lenfi/lenfi-kicks-off-external-audit-conducted-by-anastasia-labs-303b75325a24 \nThe observation that our actions for PoA 3 may seem prematurely concluded stems from our commitment to addressing feedback efficiently. Our archived, yet unapproved PoA for Milestone 3, was updated as per reviewers' requests, which may explain any perceived discrepancies in the timeline.\nOutputs fro Milestone 3:\n・Modified and improved smart contracts based on the audit findings: https://github.com/lenfiLabs/lenfi-smart-contracts/tree/pre-mainnet\n・Presenting detailed documentation for the smart contracts for users and developers: https://docs.google.com/document/d/1J8g6oOBbk3arcKxcKKB2BHwiyUQc0Yv3wugkoc-nzWQ/edit?usp=sharing\n・Approval from the developer that all the issues and vulnerabilities find in prior Auditing report has been addressed: https://t.me/lenficommunity/116650\n\nExtra: Acknowledgement of issues fixed was communicated by a lead dev in a form of extended live youtube stream, the time frame for acknowledgement would be from 3:50 to 4:20, then the rest of the video was moving on and explaining how those finding changed the architecture of the protocol. https://www.youtube.com/watch?v=UwS3FWD5VII&ab_channel=Lenfi.",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 53000,
+      "promise": "In this milestone, we are receiving the final results of the audit from the auditor, which will demonstrate that there are currently no vulnerabilities found. When the audit is finished, we are able to start the bug bounty program, which will invite all Cardano ecosystem developers to participate and improve the security of the code.\nOutputs:\n・Final report by the auditor. The Auditing Report should state that the code has been fixed, reviewed and without any known vulnerabilities.\n・The start of the Bug bounty program",
+      "criteria": "・Auditing Report from the auditor\n・Code is being pushed to the github library with all improvements merged\n・Bug bounty rules have been defined and communicated to the community, inviting to participate",
+      "report": "・Link to the Final Auditing Report: https://github.com/lenfiLabs/materials/blob/main/anastasiaLabs-audit-final.pdf\n・Link to the Opensourced Code: https://github.com/lenfiLabs/lenfi-smart-contracts/tree/pre-mainnet\n・Link to the Gitbook where Bug Bounty rules have been defined: https://lenfi.gitbook.io/docs/bug-bounty\n・Link to the Twitter (X) link + Medium article announcing that the Bug Bounty program has started and inviting developers to participate: https://twitter.com/LenfiOfficial/status/1755568792896197031 ; https://medium.com/@lenfi/lenfi-v2-to-begin-community-driven-bug-bounty-program-now-c2d312203df2",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 5
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 64000,
+      "promise": "We have audited and open-sourced our V1 code one year ago, and within that year we had a Bug Bounty program, where 0 vulnerabilities have been found with the help of the Bug Bounty, thats why, if the Bug Bounty will end up empty again, we have committed to complete another Audit, where the Bug Bounty funds will be able to cover only small portion of the whole Auditing costs.\nOutcomes of this milestone:\n1.(If there is any vulnerabilities found) The Bug Bounty program results. \n 1 (Alternative, if no vulnerabilities found) The results of Bug Bounty and the announcement of the upcoming audit.\n 1.2 (Alternative if no vulnerabilities found) Announcement of who is going to perform the audit and when.\n2.Final report to the community of Project Catalyst program completion",
+      "criteria": "・Has the bug bounty results been announced to the community?\n・Has the Final report about Project Catalyst program completion has been announced to the community?",
+      "report": "・Link to the Bug bounty results. (Or alternative: Link to the Bug Bounty results and Link to the upcoming additional audit announcement) \n・https://x.com/LenfiOfficial/status/1844715967101734982\n・https://medium.com/@lenfi/lenfi-successfully-concludes-its-bug-bounty-program-e317df3967b2\n・Link to Project Closeout Report \n・https://github.com/lenfiLabs/materials/blob/main/Lenfi-V2-Aiken-Audit%2BBug-Bounty-Report.pdf (fixed by following the requirements)\n・https://x.com/LenfiOfficial/status/1849479548204921142\n・https://t.me/lenfiannouncements/221\n・Link to Project Closeout Video.\n・https://www.youtube.com/watch?v=T6vM4h4f52o&feature=youtu.be",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

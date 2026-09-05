@@ -1,0 +1,49 @@
+{
+  "title": "OpShin Bug Bountys - Squashing Bugs in Python Smart Contracts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 10000,
+      "promise": "For this project to begin, a few core questions need to be clarified regarding the structuring of payments and the categorization of bug bounties. Moreover the exact scope of the program needs to be clarified and some examples set. The result of this setup phase should be a document outlining\n・Explanatory texts: Scope and purpose of the bug bounty program, eligibility criteria\n・A classification of different bug types\n・Examples and details on how to claim a bug bounty\n・A research report on how other projects (like gitcoin) structure and advertise their bounties\n・Lessons learnt from point 4 and potential additional points arising from there\n\nThe document should clarify how the bug bounty program is structured (from the administrative point of view) and how to participate (from a user point of view).",
+      "criteria": "The document outlined in the evidence section will be publicly accessible and shared with the reviewers and community for review. It needs to contain all sections outlined in the Outputs section. Each section should contain at least around 1-2 pages of information (no hard limit, but expecting that this will be about the amount of detail to be produced).",
+      "report": "The core questions and outline of the bug bounty program have been consolidated and compiled into a report. This report is publicly accessible in the OpShin repository and will be announced as we started allocating prizes to issues on the OpShin repository. We provide a rough outline on the expected rewards for some example issues (past and present) and detail the criteria for eligibility in the project. Moreover we look closer at GitPay and GitCoin and analyze how these projects incentivize community contributions.\n\nThe report is available at this link:\nhttps://github.com/OpShin/opshin/blob/f34d1f073f793add15927f666761d6d7d65e10b4/BUG_BOUNTY.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 13260,
+      "promise": "・The document of Milestone 1 is updated with concrete rewards for each type of bug with a reward between 200 and 4000 ADA (depending on complexity of the task)\n・10-20 of the issues in the OpShin codebase will be annotated with a reward value based on the outcome of the previous step\n・The valuation for issues will be announced via Twitter, Reddit and Discord, the primary channels for communication for Cardano development\n・Over the next month feedback on the valuation is collected and re-evaluation will be considered.",
+      "criteria": "The list outlined in the evidence section is correctly shared. The range of 200 - 4000 ADA for bug bounties is kept. If Pull Requests for claiming a bounty are shared, a corresponding Cardano transaction has to be referenced that proves correct payouts.",
+      "report": "We are glad to report that phase 1 of the bug bounty program has been completed. The evidence per milestone report is listed below:\n\n1: The completed document with concrete reward amounts can be found here:\n\nhttps://github.com/OpShin/opshin/blob/main/BUG_BOUNTY.md\n\n2: The annotated bug bounty issues are visible when filtering the opshin issues by bug bounty. Examples and links are also in the above document:\n\nhttps://github.com/OpShin/opshin/issues?q=is%3Aissue+label%3A%22bb%3A+major%22%2C%22bb%3A+minor%22%2C%22bb%3A+medium%22%2C%22bb%3A+vulnerability%22\n\n3: The announcements for the bug bounty:\n\nX:\n\nhttps://x.com/OpShinDev/status/1778512862983385239\n\nhttps://x.com/OpShinDev/status/1778813577316520403\n\nhttps://x.com/OpShinDev/status/1812859612325892422\n\nReddit:\n\nhttps://www.reddit.com/r/CardanoDevelopers/comments/1e4l3aa/opshin_bug_bounty_project_has_launched/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button\n\nhttps://www.reddit.com/r/cardano/comments/1e4l6jy/opshin_bug_bounty_project_has_launched/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button\n\nDiscord:\nGoogle doc with screenshots: https://docs.google.com/document/d/1e-3WCloAoOCCTUEHmUhuyIZ5LPoOhs2-samZ0OF88_I/edit?usp=sharing\nhttps://discord.com/channels/826816523368005654/868025141668503582/1262716046989590569\n\nhttps://discord.com/channels/949404918903631923/951580912821358642/1262716292008382464\n\nhttps://discord.com/channels/1077870759667580929/1081506049380585492/1262715662384627805\n\nhttps://discord.com/channels/946071061567529010/1116457081386569820/1262716196923506730\n\n4: Feedback and closed issues:\n\nhttps://github.com/OpShin/opshin/pull/372\n\nhttps://github.com/OpShin/opshin/issues/346\n\nOne great result of the bug bounty is the opshin playground that went live a few weeks ago:\n\nhttps://x.com/OpShinDev/status/1808573336169107590\n\nWe are glad to report that phase 1 of the bug bounty program has been completed. The evidence per milest",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 29,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 20940,
+      "promise": "・Existing issues are adjusted based on feedback from the community.\n・All remaining issues in the OpShin codebase are evaluated and allocated a bug bounty. \n・The allocation of bug bounties is shared through Twitter, Reddit and Discord\n・Claimed bug bounties are paid out correctly\n・Project Closeout Report and Video as defined by the Catalyst Documentation\n\nAt the end of this Milestone it might be that some Bounties remain unclaimed. The Bug Bounty program will remain open beyond the end of the last Milestone until all bounties have been claimed/all funds have been paid out. If certain bounties are not claimed because they are considered too complex for the allocated amount, the amount may be adjusted or the fund moved to new/other issues open on the repository.",
+      "criteria": "・All steps outlined in the evidence section are complete and shared in the PoA. \n・There should be a significant list of new bounties. \n・It may be that no previously allocated issues have to be adjusted.\n・The bounties have to be correctly paid out",
+      "report": "List of adjusted existing issues:\nThere was only one change requested, for the Issue #343, the bug bounty was too low according to the original annotation (which was based on a dependency bump). Therefore the bounty was increased from 100 ADA to 500 ADA.\nhttps://github.com/OpShin/opshin/issues/343\nList of newly allocated bug bounties:\nThe following bounties have been added since the second milestone:\nhttps://github.com/OpShin/opshin/issues/395\nhttps://github.com/OpShin/opshin/issues/369\nhttps://github.com/OpShin/opshin/issues/368\nhttps://github.com/OpShin/opshin/issues/165\nhttps://github.com/OpShin/opshin/issues/167\nhttps://github.com/OpShin/opshin/issues/68\nhttps://github.com/OpShin/opshin/issues/79\nhttps://github.com/OpShin/opshin/issues/54\nLinks for public announcements:\nhttps://x.com/OpShinDev/status/1826180072123797707\nhttps://www.reddit.com/r/CardanoDevelopers/comments/1exkno7/opshin_bug_bounty_just_added_a_bunch_of_new/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button\nhttps://docs.google.com/document/d/1e3Rc9ZwE6e0fv54QIeOShZ6zu19Nwulm5G6DaPv7Mzg/edit?usp=sharing\nList of completed bug bounties:\nThe link to the payment tx is the last comment in each thread.\nhttps://github.com/OpShin/opshin/pull/394\nhttps://github.com/OpShin/opshin/pull/393\nhttps://github.com/OpShin/opshin/pull/389\nhttps://github.com/OpShin/opshin/pull/386\nhttps://github.com/OpShin/opshin/pull/372\nCloseout report:\nhttps://docs.google.com/document/d/1BhiQh4mMXWS6-LsIdx6_mfffoTCMzHcBM0kW-kCrKfo/edit?usp=sharing\nCloseout video:\nhttps://youtu.be/UkBtzJeUKvA",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 19
+    }
+  ]
+}

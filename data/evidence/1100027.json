@@ -1,0 +1,79 @@
+{
+  "title": "Anvil - Open Source - Metadata Validator",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 25000,
+      "promise": "Scoping:\n・In order to properly capture the outputs for later milestones, a clearly documented plan will need to be created.\n\nDevelopment:\n・This project will need it's own Github repository to host the validator codebase, and capture updates to the codebase.\n\nUI/UX:\n・Ease of use and easily digestible content is critical to the success of this project. In order to accomplish this we will need to create a wireframe that embodies our intent.",
+      "criteria": "Scoping:\n・Scoping Document - Google Docs\n・Scope should outline development lift and timelines for each step of development\n・Scope should include research\n・Scope should include functionality goals\n・Outline what standard metadata should look like\n・Outline what we are auditing within the metadata\n・Outline how we plan on conforming incorrect metadata -> standard\n\nDevelopment:\n・Open Github Repository specific to the open-source codebase that will be:\n・Available to the public for use\n・Used within the Anvil Metadata Validator Tool\n\nUI/UX:\n・Design and Creation of UI/UX wireframes, with base content ap",
+      "report": "Scoping Document:\nhttps://docs.google.com/document/d/1MUAfm7kqfEN1GKSBWmxxY246ayO9E_HqzQrb0rtusC8\nGithub Repository:\nhttps://github.com/Cardano-Forge/Meta-DevKit\nInitial Wireframes:\nhttps://drive.google.com/file/d/1PZjKlOyMh-ZQywJwwP71J0XIZ64ViyhL/view",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 20000,
+      "promise": "Scoping:\n・We will need to finalize the outputs and content of our Scoping document\n\nMarketing:\n・A plan for Marketing strategies will need to be created. \n・Our platform will need a name\n\nUI/UX:\n・Final Wireframes for content, layout, and design will need to be completed in this milestone",
+      "criteria": "Scoping:\nFinalize Scoping Document - Google Docs:\n・Goal is to finalize development hours and schedule for development\n・Finalize all other information in the document as previously discussed in Milestone 1: Research results, functionality goals, metadata standard, metadata audit criteria, and conforming metadata to the outlined standards.\n\nMarketing:\nMarketing Plan - Google Docs:\n・Create marketing plan for Final Product and Tooling\n・Outline marketing goals and objectives\n・Clearly state analytics, tools, and data we will use to exemplify marketing efforts\n・Create name and branding for Product\n\nU",
+      "report": "Evidence of milestone completion:\nThis document outlines the completion of key milestones for our project. Below are the detailed sections for Scoping V2, Marketing, and UI/UX, each documented appropriately through Google docs and high-fidelity wireframes.\nScoping V2: \nGoogle doc\nMarketing:\nGoogle doc\nUI/UX:\nWireframe - High fidelity V1",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 45000,
+      "promise": "Platform/Development: \nIn order to validate our ideals, we will need to create an Alpha Platform to showcase the base features and functionalities of what we have planned in our Scoping Document\n・This should include the first iteration of the single use metadata input validation\n\nTesting:\n・We will need to test internally and document the results.\n・This feedback should be well documented inside of a new Google Doc, specifically for feedback.\n\nDocumentation:\n・Documentation for the open source tooling will be required. We will need to create the first version of this before pushing the codebase on to our Github Repository.",
+      "criteria": "Platform/Development: \n・Create Alpha platform based on Scoping Document as well as Wireframe UI/UX. This will showcase the validator performing it's base functionality and allow us to run the subsequent testing required. \n\nTesting:\n・Create a new document to record internal testing results and outline expected changes.\n\nDocumentation:\n・Create a new document for instructions(first draft); include examples, formalize processes for integration, and outline requirements for use. This will later be uploaded to Gitbooks or similar application.",
+      "report": "Evidence of milestone completion:\nIn accordance with this milestone, we created an alpha version of the platform, based on the wireframes. We were able to test it with prototype data and ensure that the base functionality is working without bugs. We documented the entire teams feedback on the Google Doc. One of our co-founders also did a video to show the product working at it's base level. The new documentation has also been documented below.\nPlatform/Development: \n・Alpha Platform\n・Video of Alpha Platform \n\nTesting:\n・Link to Testing Feedback Document - Specific to testing results and feedback\n\nDocumentation:\n・First Link to Documentation \n・Second Link to Documentation",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 22000,
+      "promise": "Feedback Review and Implementation: \n・We will also need to increase our testing pool to reflect the feedback of real users. These users will be selected based on their interest in the product and their feedback will be added to the documentation for testing results\n・As a team we will need to review the feedback from the previous milestone in addition to the new feedback from the extended user pool. \n\nPlatform/Development:\n・Our Github repository will need to be updated to reflect the progress made on the open source developer tooling with the feedback received from the Feedback review document applied. \n・Feedback will need to be implemented to the platform in preparation for the full platform release.\n\nInitial Marketing Push:\n・At this phase of the project, the initial marketing push of our tooling and platform, outlined in our Marketing plan document, will need to commence. This should include initial reporting from the Anvil Twitter account, showing progress of the tooling and platform.",
+      "criteria": "Feedback Review and Implementation: \n・Select users to test our product based on experience in the space, technical capabilities, and users with no experience using these tools whatsoever. We plan on hitting a wide variety of testers and hope to receive feedback from 10-20 different participants. \n・Team will review the outlined documentation and make addressable points for the next phase of development.\n\nPlatform/Development:\n・Update Github repository to current progress of tooling, all feedback applied.\n\nInitial Marketing Push:\n・Follow the plan from the Marketing Document outlined in Milestone",
+      "report": "Evidence of milestone completion:\nIn accordance with this milestone, we updated the platform based on last milestones feedback and prepared for our 2 week public Beta test. We documented all of the feedback in a google document. We began marketing the product on X(Twitter) to push adoption to both the platform and the GitHub repository.\nFeedback Review and Implementation:\n・Link to platform showing all relevant feedback from last milestone completed Metadraft\n\nPlatform/Development: \n・Updated GitHub Repository\n・Feedback Document Beta Test - Specific to testing results and feedback\n\nInitial Marketing Push:\n・Marketing Results Document",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 48000,
+      "promise": "Platform Release: \n・As of this time, our platform should be finalized and ready for public use/release. It should align with our goals laid out in our Scoping Document and be fully functional.\n・In addition to our platform release, the open source tooling needs to be published on Github. \n\nFinal Marketing:\n・This step should signify commencement of our final marketing plan, outlined in Milestone 2. Shall include preliminary dates for platform release and description of features. There will need to be content created around the use and capabilities of the platform. We will need to leverage the Anvil Twitter for this step as well. \n\nFinal Documentation:\n・All feedback needs to be reviewed and adhered to our final documentation on how to use the tooling. This should be published on Gitbooks or an equivalent documentation service. \n\nAcceptance:\n・Need to meet all of the goals and milestones of the proposal, conduct closing report, and create closing video.",
+      "criteria": "Platform Release: \n・Publish the platform live for public use.\n・Publish the final open source code on Github Repository. \n\nFinal Marketing:\n・Finalize Marketing and push towards goals outlined in the Marketing Document. \n・Capture analytics and data to exemplify the efforts and effectiveness of our plan. These data points should be from Anvil’s Twitter Analytics. We will make a 2-3 more posts on Twitter from the Anvil account, outlining the launch date and feature sets of the platform. We expect these to get 1000 views each. This will also include design work around the posts themselves, so they",
+      "report": "Evidence of Final Milestone completion:\nIn accordance with this milestone, we updated the platform based on last milestones feedback and prepared for live launch. Additionally, we were able to finalize marketing efforts, create a video showing the use of the product and functionality, \nPlatform Release:\n・Link to platform showing all relevant feedback from last milestone completed. Finalized platform Metadraft\n・Link to Github Repository \n\nFinal Marketing Push:\n・Final Marketing Push \n・Marketing Goals Recap\n\nFinal Documentation: \n・Documentation *used Github natively for documentation, all included in repo*\n\nAcceptance:\n・Closeout Report\n・Closeout Video",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 7,
+      "cut": true
+    }
+  ]
+}

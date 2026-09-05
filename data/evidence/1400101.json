@@ -1,0 +1,59 @@
+{
+  "title": "Prisma DIDs: Decentralized IDs for Verifiable Contributions",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 22500,
+      "promise": "A. Co-design documentation with 3 pilot organisations\nB. 1 Technical specification document published\nC. UX design mock-ups for core functionality\nD. 1 Cardano integration plan\nE. Summary report of key ideas and requirements from the co-design process.",
+      "criteria": "A1: All pilot organizations provide positive feedback on co-design outcomes.\nB1: The technical specification is approved by the technical team.\nC1: The UX mock-ups meet accessibility standards and user requirements.\nD1: The integration plan addresses all identified dependencies.\nE1: The summary report of key ideas and requirements from the co-design process is complete and approved.",
+      "report": "A. Output: Co-design documentation with 3 pilot organisations\nAcceptance criteria: All pilot organizations provide positive feedback on co-design outcomes.\nEvidence: https://github.com/prisma-collective/enrol/blob/main/misc/catalyst_m1/PrismaDIDs%20Co-Design%20Q%26A..pdf\nB. Output: 1 Technical specification document published\nAcceptance criteria: The technical specification is approved by the technical team.\nEvidence: https://github.com/prisma-collective/enrol/blob/main/misc/catalyst_m1/Prisma_DIDs_Technical_Specification.pdf\nC. Output: UX design mock-ups for core functionality\nAcceptance criteria: The UX mock-ups meet accessibility standards and user requirements.\nEvidence: https://github.com/prisma-collective/enrol/blob/main/misc/catalyst_m1/PrismaDIDs%201st%20Mockups%20and%20UX.pdf\nD. Output: 1 Cardano integration plan\nAcceptance criteria: The integration plan addresses all identified dependencies.\nEvidence: https://github.com/prisma-collective/enrol/blob/main/misc/catalyst_m1/Prisma_DIDs_Cardano_Integration_Plan_v1.pdf\nE. Output: Summary report of key ideas and requirements from the co-design process.\nAcceptance criteria: The summary report of key ideas and requirements from the co-design process is complete and approved.\nEvidence: https://github.com/prisma-collective/enrol/blob/main/misc/catalyst_m1/PrismaDIDs-Co-Design-Summary-Report..pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 22500,
+      "promise": "A: DID registration system via WalletConnect\nB: Verifiable Credential issuance and verification modules\nC: Privacy settings interface with selective disclosure controls\nD: Basic user interface for DID management\nE: 1 API documentation for all developed modules",
+      "criteria": "A1: Successful DID's issuance to at least 15 participants, including onboarding to first use. \nB1: VC issuance and verification working correctly. \nC1: Privacy panel allows selective disclosure. \nD1: User interface allows intuitive DID management for users and organisations. \nE1: API documentation for all developed modules is complete and approved.",
+      "report": "A. Output: DID registration system via WalletConnect\nAcceptance criteria: Successful DID issuance to at least 15 participants, including onboarding to first use.\nEvidence:\n・Functional deployment on Cardano testnet showing the DID registration system via WalletConnect:\n・https://dids-dashboard-production.up.railway.app (DIDs)\n・https://vcs-dashboard-production.up.railway.app/credentials (VCs)\n・20 DIDs created, by various collaborators: \n・https://airtable.com/appivPJCmhlz4OZHO/shrCojshEPaI1z4Q9 \n\nB. Output: Verifiable Credential issuance and verification modules\nAcceptance criteria: VC issuance and verification working correctly.\nEvidence:\n・Code repository containing all modules, including the Verifiable Credential issuance and verification modules:\n・https://github.com/prisma-collective/Dids\n\nC. Output: Privacy settings interface with selective disclosure controls\nAcceptance criteria: Privacy panel allows selective disclosure.\nEvidence:\n・https://youtu.be/uDSpbrn828o\n\nD. Output: Basic user interface for DID management\nAcceptance criteria: User interface allows intuitive DID management for users and organisations.\nEvidence:\n・https://youtu.be/w86RPFpbwPM\n\nE. Output: API documentation for all developed modules\nAcceptance criteria: API documentation for all developed modules is complete and approved.\nEvidence:\n・Code repository/documentation containing the API documentation for all developed modules:\n・https://github.com/prisma-collective/Dids/blob/main/documentation/API.md",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 14
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 18750,
+      "promise": "A: Security audit report, with a trusted Third-party.\nB: Pilot implementation report & feedback analysis document.\nC: Comprehensive test plan and test cases used during the testing phase.\nD: Updated documentation reflecting all changes and improvements made during refinement.\nE: Publicly accessible prototype (MVP).",
+      "criteria": "A1: The Security Audit Report is completed by a trusted third-party and contains no critical vulnerabilities.\nB1: The Pilot Implementation Report is complete, and the feedback analysis has been incorporated into the product.\nC1: The Comprehensive Test Plan and test cases have been executed with a 100% success rate.\nD1: The updated documentation accurately reflects all changes and improvements made during refinement.\nE1: The publicly accessible prototype (MVP) is live and meets the technical specifications.",
+      "report": "A. Output: Infrastructure and platform architecture security audit\nAcceptance criteria: An external review report confirming the security, structural integrity, and absence of critical vulnerabilities in the Prisma DIDs platform implementation and infrastructure.\nEvidence: https://github.com/prisma-collective/dids/blob/main/documentation/PRISMA_DIDs_Security_Audit_Report.pdf \n(The audit was conducted by ReFaz, a Brazilian Web3 infrastructure and impact capital studio specializing in navigating technical and regulatory complexities for sophisticated Web3 products).\n\nB. Output: Pilot implementation report & feedback analysis document.\nAcceptance criteria: The Pilot Implementation Report is complete, and the feedback analysis has been incorporated into the product.\nEvidence: \n・https://github.com/prisma-collective/dids/blob/main/documentation/IMPLEMENTATION_REPORT.md\n・https://github.com/prisma-collective/dids/blob/main/documentation/FEEDBACK_ANALYSIS_FROM_IMPLEMENTATION_REPORT.md\n\nC. Output: Comprehensive test plan and test cases used during the testing phase.\nAcceptance criteria: The Comprehensive Test Plan and test cases have been executed with a 100% success rate.\nEvidence: https://github.com/prisma-collective/dids/blob/main/documentation/TEST_PLAN.md\n\nD. Output: Updated documentation reflecting all changes and improvements made during refinement.\nAcceptance criteria: The updated documentation accurately reflects all changes and improvements made during refinement.\nEvidence: https://github.com/prisma-collective/dids/tree/main/documentation\n\nE. Output: Publicly accessible prototype (MVP).\nAcceptance criteria: The publicly accessible prototype (MVP) is live and meets the technical specifications.\nEvidence: \n・DIDs: https://dids-dashboard-production.up.railway.app/\n・VCs: https://vcs-dashboard-production.up.railway.app/",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 14
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 11250,
+      "promise": "A: Final close-out report (PCR).\nB: Final closeout video (PCV).\nC: Community onboarding materials, Feedback channels established.\nD: 1 User guide/manual for prototype navigation and features.\nE: 1 Summary of community feedback and ideas gathered during the onboarding process.",
+      "criteria": "A1: The Final Close-out Report (PCR) meets all Project Catalyst format and content requirements.\nB1: The Final Close-out Video (PCV) meets all Project Catalyst format and content requirements (2-5 min, 720p/1080p, public).\nC1: Community onboarding materials are complete, and feedback channels are active and moderated.\nD1: The User Guide/Manual is complete and covers prototype navigation and features.\nE1: The Summary of Community Feedback is complete and has been published.",
+      "report": "A. Output: Final close-out report (PCR).\nAcceptance criteria: The Final Close-out Report (PCR) meets all Project Catalyst format and content requirements.\nEvidence: PCR\nB. Output: Final closeout video (PCV).\nAcceptance criteria: The Final Close-out Video (PCV) meets all Project Catalyst format and content requirements (2-5 min, 720p/1080p, public).\nEvidence: PCV\nC. Output: Community onboarding materials, Feedback channels established.\nAcceptance criteria: Community onboarding materials are complete, and feedback channels are active and moderated.\nEvidence: Onboarding app; Feedback channel screenshot 1; Feedback channel screenshot 2; Feedback channel screenshot 3; Feedback channel screenshot 4\nD. Output: 1 User guide/manual for prototype navigation and features.\nAcceptance criteria: The User Guide/Manual is complete and covers prototype navigation and features.\nEvidence: User Guide\nE. Output: 1 Summary of community feedback and ideas gathered during the onboarding process.\nAcceptance criteria: The Summary of Community Feedback is complete and has been published.\nEvidence: Community Feedback Summary",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 9
+    }
+  ]
+}

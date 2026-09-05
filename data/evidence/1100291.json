@@ -1,0 +1,70 @@
+{
+  "title": "Wolfram Marlowe Smart Contract Execution",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 60000,
+      "promise": "The notebook published on a public repository will be the single output, which will show the interaction of the Plutus Smart Contract deployed on Testnet. To get this final completed step, we must do the following intermediary steps (these ste;ps indicate how we get to the completed, published plutus smart contract, but are not outputs themselves): \n・Setup the Plutus environment for development\n・Design the Plutus smart contract\n・Define contract constraints to ensure a trust-less protocol for financial applications\n・Define contract payment mechanism\n・Define the refund mechanism\n・Develop the Plutus smart contract\n・Publish the Plutus smart contract",
+      "criteria": "The notebook's ability to trigger a transaction on the Plutus Smart Contract through an interaction documented within it.",
+      "report": "Repository:\nhttps://github.com/WolframBlockchainLabs/MarloweSC-Execution\n\nVideo demo:\nhttps://drive.google.com/file/d/1JslLSHjdjLs-kZJN6XqN2H_9Tk5tay7q/view?usp=drive_link",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 75627,
+      "promise": "Completion of a simple application smart contract that demonstrates the functionality of the harvester service by monitoring a testnet address. To get this final completed step, we must do the following intermediary steps (these steps indicate how we get to the completed Harvester service, but are not outputs themselves):\n・Review Marlowe transaction serialization process\n・Develop a Wolfram Language script to harvest UTXOs at the smart contract address\n・Connection to data provider service Wolfram Price Feed Infrastructure.\n・Develop a mechanism to submit a transaction that fulfills the data request\n・Notebook as a demonstration of the Harvester service",
+      "criteria": "Simple application smart contract that demonstrates the harvester service returns the requested values.",
+      "report": "Video demo:\nhttps://drive.google.com/file/d/1uiEp0YD1Lj2T9uSFXgyTmxYYMgqLkZY5/view?usp=drive_link\nHarvester Service code:\nhttps://github.com/WolframBlockchainLabs/MarloweSC-Execution/tree/main/OracleValidator\nReal-Time pricing database:\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure\nThe license in this repo is MIT which is also open source and is les restrictive than the Apache license.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 70000,
+      "promise": "Notebook and documentation of the Marlowe Smart contract available on a public repository that shows the complete flow of the Provider Smart contract and the Harvester service on Testnet. To get this final completed step, we must do the following intermediary steps (these steps indicate how we get to the completed flow of the Provider smart contract and the harvester service on Testnet, but are not outputs themselves): \n・Define a User Contract in Marlowe\n・Review Marlowe block components\n・Define user constraints to interact with the service\n・Implementation of the Marlowe contract\n・Test the Marlowe project\n・Use a Jupyter notebook as a demonstration\n・Publish the Marlowe Notebook\n・Documentation",
+      "criteria": "The acceptance criterion for this output is that the notebook must be publicly accessible and clearly demonstrate the entire operational flow of both the Provider Smart Contract and the Harvester service on the Testnet, with one example.",
+      "report": "Video showcasing the complete flow of the Provider Smart contract and the Harvester service on Testnet:\nhttps://drive.google.com/file/d/1GbXANd0WWRZzjLk_ExQ7lrM2FU9d8J9L/view?usp=drive_link",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 45000,
+      "promise": "A PDF report of the audit which has a comprehensive review of the smart contract logic, accompanied by a detailed list of recommended security improvements, and verification that these improvements have been thoroughly debated and potentially added into the smart contract.",
+      "criteria": "PDF report contains a section for review of the smart contract logic, a section for recommendations for security improvements and a section of the debated improvements or verifications of implementations.",
+      "report": "Walkthrough video:\nhttps://drive.google.com/file/d/1n-osJbtbm6iXRpWqpyHotLQv3xPvlh8v/view?usp=drive_link\nAudit report:\nhttps://github.com/WolframBlockchainLabs/MarloweSC-Execution/blob/milestone4/MilestoneFour/tweag-audit-wolfram-oracle.pdf\nAudit Response: Here we describe all the implemented improvements with their respective commit.\nhttps://github.com/WolframBlockchainLabs/MarloweSC-Execution/blob/milestone4/MilestoneFour/ResponseToAuditReport.md",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 44230,
+      "promise": "PDF report documenting the completion of the four milestones: 1) Plutus Smart contract 2) Development of Harvester 3) Test Using Marlowe, 4) Audit",
+      "criteria": "PDF report contains evidence and links to the Plutus testnet smart contract, evidence of the completed development of the Harvester Service, an example test using Marlowe and the PDF report of the Audit.",
+      "report": "・Closeout Report: https://drive.google.com/file/d/1W6A3GJORbmTkN-RRUdCRO8IANyNga7A4/view?usp=drive_link\n・Repository: https://github.com/WolframBlockchainLabs/MarloweSC-Execution\n・Intro to Technical review: https://youtu.be/72K-4oIpqRI\n・Demo: https://drive.google.com/file/d/12Psn-eslqZSJSrHgnEOsAAB4RDbdcKNp/view\n・Full Technical Review: https://youtu.be/q4U11hNlIDg\n・Real-Time pricing database: https://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure\n・Audit report: https://github.com/WolframBlockchainLabs/MarloweSC-Execution/blob/milestone4/MilestoneFour/tweag-audit-wolfram-oracle.pdf\n・Audit Response: Here we describe all the implemented improvements with their respective commit. https://github.com/WolframBlockchainLabs/MarloweSC-Execution/blob/milestone4/MilestoneFour/ResponseToAuditReport.md",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 16
+    }
+  ]
+}

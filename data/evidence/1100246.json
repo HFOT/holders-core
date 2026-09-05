@@ -1,0 +1,60 @@
+{
+  "title": "Reputation Scores for Catalyst Proposers & Reviewers [by Lidonation & TrustLevel]",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "Conduct a comprehensive analysis of previous funding rounds (up to Fund 10) using data from Catalyst Testnet, Ideascale Platform, Milestone Reporting, Community Reviewing data, and more (if available):\n・Comparative analysis linking reviews with voting results and proposal outcomes.\n・Development of a knowledge graph and network analysis to identify quality reviewers and voters.",
+      "criteria": "・Completion of a detailed report summarizing the findings.\n・Demonstration of the knowledge graph and network analysis.",
+      "report": "Dear Reviewers and Catalyst team,\nbelow is the revised version of our M1 Report:\nhttps://docs.google.com/document/d/1zSbcMgSx68jl1zpH9wgluEcpJaoGvVDCrRCakF9rzT8/edit?usp=sharing\n\nPlease read our reaction to the refusal of the first version first, to better understand our progress and our approach:\n1. ”Conduct a comprehensive analysis of previous funding rounds (up to Fund 10) using data from Catalyst Testnet, Ideascale Platform, Milestone Reporting, Community Reviewing data, and more (if available)\" - only Funds8-10 were taken into account, what about Funds2-7? Also there is no indication of leveraging any platform other than Community Reviewing data.\n→ Re ‘data from different platforms’:\n・Milestone Portal: Data from the Milestone Reporting Portal was used for Fund 10 analysis (see ‘proposal spreadsheet’). \n・Testnet/Ideascale: We wanted to link reviewers from different rounds to measure their consistency over funds, but this data is not accessible for us.\n\n→ Re ‘analysis of different funds’\n・We have added some more analysis, but early funds had different processes or lack of clear metrics, so they have no use for this POC.\n\n2. ”Comparative analysis linking reviews with voting results and proposal outcomes\" - this should be a part of comprehensive report but there is no mention about voting results at all.\n→ Re ‘voting results’: relevant data is not accessible (explained in the report), but we have at least added our approach in the Appendix, but couldn't back it with real data.\n3 .“Publish report of findings on Trustlevel.io (with links to our Gitbook and other platforms, where it will be shared)\" - report is not published on Trustlevel.io, not on Gitbook, nor on Github\n→ Re: It was already shared on Github, now added to docs.trustlevel.io as well. \n4. “Completion of a detailed report summarizing the findings.\" - only Feasibility was analyzed, Dominik mentioned about doing more research on Impact.\n→ Re 'Feasibility': Yes, feasibility is ‘the’ indicator for the POC b",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "Develop a proof of concept (POC) framework to generate reputation scores for the [proposal, reviewer] role, serving as a template for other Catalyst roles.\n・Functional reputation generation framework\n・Integration of reputation into the lidonation catalyst explorer tool.",
+      "criteria": "・Successful implementation and functionality testing of the reputation generation framework.\n・Integration of reputation batches into the catalyst explorer tool.",
+      "report": "Dear MR, below is the evidence of our Milestone 2 POA (all links should work now):\n・Published Framework and Documentation:\n・Google Link: https://docs.google.com/document/d/1wUmoMfy7tzuVv10pLgERUSnLng84MwI7fr9Hm5kB0_w/edit?usp=sharing\n・Github Link: https://github.com/TrustLevel/ProjectCatalyst_Reputation_Scores_POC\n・Integration of reputation scores and batches into the Catalyst Explorer (v2):\n・Reviewer Profile Page: https://www.catalystexplorer.com/en/ideascale-profiles/g1wbp3jy1r/reviews\n・Proposal Review Overview Page: https://www.catalystexplorer.com/en/reviews\n\nNote to MR and the Community:\nThis milestone was delayed because we decided to wait for the release of Catalyst Explorer v2 before implementing the POC. This decision was made to avoid duplication of work, since if we had integrated it with the previous version (v1), we would have had to do it again when v2 was introduced. Waiting for the release of v2 ensures that the reputation system is built into the latest platform architecture and can be developed further in the long term.",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "20",
+      "cost": 25000,
+      "promise": "Conduct testing of the reputation system, gather feedback from the community, and make necessary optimizations for accuracy.\n・Output: Feedback analysis and optimization recommendations.",
+      "criteria": "・Host 2 sessions on \"Cardano over Coffee\" (on X) to collect feedback from community members on the usability and effectiveness of the reputation system.\n・Update the Lidonation tool with at least 1 of suggested optimizations based on testing and feedback.",
+      "report": "A. Output & Acceptance criteria: Test & Update of Reputation Framework\nEvidence: \n・Google Doc: https://docs.google.com/document/d/1XneKnNcm717duYoGIUvw0iW16z2lXb2Ekq2VYV9-jLY/edit?usp=sharing\n・Github: https://github.com/TrustLevel/ProjectCatalyst_Reputation_Scores_POC\n\nB. Output & Acceptance criteria : 2 Community Feedback Sessions on X\nEvidence: Hosted spaces (with a total of over 150 participants):\n・1: https://x.com/i/spaces/1jMJgRyBQwPGL/peek?s=20\n・2: https://x.com/LidoNation/status/1969007061758275809\n\nAdditionally, we provided information about the spaces in the Cardano Forum:\n・Cardano Over Coffee “October 29th” Episode Recap - General Discussions\n\nC. Output & Acceptance criteria: Updated the design of the reputation scores on Lidonation's Catalyst Explorer based on feedback from the community. \nEvidence: \n・Explanation (Chapter 3.2): https://docs.google.com/document/d/1XneKnNcm717duYoGIUvw0iW16z2lXb2Ekq2VYV9-jLY/edit?usp=sharing\n・The link leads to the corresponding page: https://www.catalystexplorer.com/en/reviews?p=3",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 12
+    },
+    {
+      "no": 4,
+      "month": "21",
+      "cost": 15000,
+      "promise": "This final milestone includes all close-out and project completion activities. \nOutputs will include \n・a project completion video and the completion report. \n・a survey on whether the introduction of reputation scores on lidonation would have a positive impact on voting behavior or what further improvements are desired. \n\nAdditionally we can demonstrate all deliverables and outputs in a town hall meeting.",
+      "criteria": "・Completed close out video\n・Completed close out report\n・Overall positive feedback in the survey",
+      "report": "A. Output & Acceptance criteria: Close-out Report\nEvidence: https://docs.google.com/document/d/11by6QFhSNgZxndYEqpnEj4B-uEGypOpRG3fqkHDdGTU/edit?usp=sharing\n\nB. Output & Acceptance criteria: Close-out Video\nEvidence: https://vimeo.com/1138930923?share=copy&fl=sv&fe=ci\n\nC. Output: Survey on whether the introduction of reputation scores on lidonation would have a positive impact on voting behavior or what further improvements are desired.\nAcceptance criteria: Overall positive feedback in the survey\nEvidence: Survey Results (incl. link to survey form)",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

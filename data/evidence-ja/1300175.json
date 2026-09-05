@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Cardano の仕様と Haskell のコードベースで、10 から 30 までのレジャー検証ルールをリストする構造化されたドキュメントを生成します。\n・Amaruチームと連携して、どのルールが実装準備できるかを識別します。\n・将来の作業のためのパターンを確立するための1つの検証ルールを実装し、テストします.",
+      "criteria": "・仕様書、 Haskell コードベース、説明書の参照で検証ルールの整合を完了しました。\n・検証ルールの実装とテストを成功させる。\n・AMARUチームから成功完了確認の承認.",
+      "report": "マイルストーン1:タスクと初期実装のオンボーディング\nマイルストーンの出力:\n・Amaruチームと連携し、検証ルールを実装準備します。\n・将来の作業のためのパターンを確立するために1つの検証ルールを実装し、テストしました。\n\n受諾の基準:\n・Cardanoの仕様、Haskellのコードベース、説明を参照して、10～30の検証ルールをクリアした文書を完成しました。\n・BlockSizeMismatch の検証ルールを正常に実装し、テストしました。\n・AMARUチームから成功完了確認の承認\n\nマイルストーン完成の証拠:\n・評価ルール文書とディスカッション: https://github.com/pragma-org/amaru/discussions/203\n・拡大ルール:BlockSizeMismatch in PR #145\n・試験カバレッジ:PR#191に導入\n・Formal Acknowledgment: Formal Acknowledgment: GitHubのプルリクエスト#145とAmaru Discordを介して@KtorZによって提供。\n\nこのマイルストーンは、バリデーションロジックを文書化し、Amaruコア開発者と共同で実装基準を検証することで、将来の貢献のための基盤を確立しています."
+    },
+    {
+      "no": 2,
+      "promise": "・マイストン1の特定検証ルールの1分の1の増幅と試験。\n・プロジェクトニーズに合わせたアライメントを確保するためのAmaruチームとの連携.",
+      "criteria": "・Amaruチームに提出し、レビューしたルールを実装するためのPR\n・Amaruチームより承認完了確認.",
+      "report": "Amaru Ledger Validation Rules 付与のマイルストーン2 を提出してください。 必須の出力、受諾基準、および完了のエビデンスが含まれているため、事前にマイルストーン1の提出と一致するようにフォーマットされています。 コンテンツは、Catalystの報告ガイドラインとGitHub、デモビデオ、およびAmaruコアチームからの正式な承認へのリンクを組み込んでいます。\nマイルストーン2:Ledger Ruleの実装の最初のセット\nマイルストーンの出力:\n・マイストーン1の特定検証ルールの1分の1を増量し、テスト\n・プロジェクトニーズに合わせてアライメントを徹底するためにAMARUチームと連携\n\n受諾の基準:\n・Amaruチームが提出し、審査するルールを実装するためのプルリクエスト(PR)。\n・Amaruチームより承認完了確認\n\nマイルストーン完成の証拠:\n・実施規則(第3項11項)\n・TooManyExユニット\n・導入:https://github.com/pragma-org/amaru/pull/110\n・テストカバレッジ:https://github.com/pragma-org/amaru/pull/191\n・未知入力\n・導入:https://github.com/pragma-org/amaru/pull/158\n・テストカバレッジ:https://github.com/pragma-org/amaru/pull/199\n・非公開RefInputs\n・導入:https://github.com/pragma-org/amaru/pull/145\n・テストカバレッジ:https://github.com/pragma-org/amaru/pull/199\n・フォーマルアクノレッジメント:\n・Amaruチームから登録確認書:https://drive.google.com/file/d/1gpK6AfkZiFsuUKHTNXpByk718M 77Rd9/view?usp=sharing\n・GitHubとPragma DiscordによるAmaruチームリードによる承認\n・進捗報告ビデオ:\n・YouTubeリンク\n・Pragma Discord 証拠\n・Pragma Discord(Discordアカウントが必要です): https://discord.gg/nX2M5snQ\n・直接リンク:https://discord.com/channels/1202416088776712253/1225810754041806958/1400221943218700370\n・Pragma Discordでのアップデートのスクリーンショット:https://drive.google.com/file/d/1AuXV7AdONm5hL lBw6xDP0 Wg0L94cGc/view?usp=sharing\n\nこのマイルストーンは、Amaruプロジェクトの最初の3を完了するための重要な技術的進歩をマークします"
+    },
+    {
+      "no": 3,
+      "promise": "・特定検証規則第3項の施行及び試験\n・フィードバックやコードレビューに基づく適切な改善.",
+      "criteria": "・AmaruチームによるPRの提出と審査\n・成功する実装の確認.",
+      "report": "Amaru Ledger Validation Rules のマイルストーン 3 を提出してください。 このレポートは、以前のマイルストーンで使用される同じ構造で必要な出力、受諾基準、および支持証拠を提供します。 本資料は、触媒報告ガイドラインと併せて、GitHubへのリンク、デモビデオ、Amaruコアチームからの正式な確認を記載しております。\nMilestone 3: Ledger Ruleの実装の2番目のセット\n\nマイルストーンの出力:\n・マイストーン1の特定検証ルールの1分の1を増量し、テスト\n・プロジェクトニーズに合わせてアライメントを徹底するためにAMARUチームと連携\n\n受諾の基準:\n\n・Amaruチームが提出し、審査するルールを実装するためのプルリクエスト(PR)。\n・Amaruチームより承認完了確認\n\nマイルストーン完成の証拠:\n\n・実施規則(第3項11項)\n・無効出力::ToSmall\n・初期実装:PR #145\n・移転・更新:PR #209\n・試験カバレッジ初導入:PR #191\n・未知担保 パスワード\n・導入:PR #158\n・試験カバレッジ:PR #199\n・CollateralReturnUnderflow\n・試験カバレッジ:PR #199\n・フォーマルアクノレッジメント:\n・Amaruチームからの登録確認書:https://drive.google.com/file/d/1R5IU2t-ONNQo56eAmFxGUnelPHKtB6YW/view?usp=sharing\n・GitHubとPragma Discord経由のAmaruチームリードによる承認(スクリーンショット:https://drive.google.com/file/d/1exi-XvFR2id3njCC5 0Oq5py8dmJyj3/view?usp=sharing)\n・進捗報告ビデオ:\n・YouTubeリンク\n・Pragma Discord 証拠\n・Pragma Discord(Discordアカウントが必要です): https://discord.gg/NWkYV5gM\n・直接リンク:https://discord.com/channels/1202416088776712253/1225810754041806958/1421121473074167808\n・Pragma Discordでのアップデートのスクリーンショット:https://drive.google.com/file/d/1Gn6RXOvXswAO4rmy9sNg5vqFLv-5iOvj/view?usp=sharing\n\nこのマイルストーンは、Amaruプロジェクトの継続的な技術進歩を表し、検証ルールの2番目のグループを完了します"
+    },
+    {
+      "no": 4,
+      "promise": "・特定検証規則第3項の最終段階の増幅及び試験\n・レビューのフィードバックをもとにした改良・調整.",
+      "criteria": "・応募作品の最終ロット数と承認\n・完成作品のAmaruチーム検証.",
+      "report": "A. 出力: [出力Aとして配達されたもの]\n実装、レビュー主導の改良、マージ、検証、パブリックレポートなど、Amaru Ledgerプロジェクトのためのレジャー検証ルールの実装の最終セットが完了しました。\nこのマイルストーンは、計画されたバリデーションルールセットの最終3分の1を配信し、11の合計特定ルールの4つをカバーしています。\n・無効なKeyWitness:Missing必須KeyWitnesses\n・無効なKeyWitness:無効なSignatures\n・InvalidBootstrapWitness:MissingrequiredBootstrapWitness\n・InvalidBootstrapWitness\n\nプルレビューとディスカッションでは、ルールの論理、エラー処理、および構造に適用されていました。特にvkeyの証人やブートストラップの証人検証や関連するエラーケースの周りに。 これらの調整は、プロジェクトのバリデーション・フレームワークとの修正とアライメントを確保するためにマージする前に組み込まれていました。\nこの出力には以下が含まれます。\n・ルールの実装\n・試験・ログ検証\n・レビュー主導の改良\n・PRマージ\n・メンテナンス確認\n・Amaruチームサインオフ\n・公開報告・実証\n\n受入条件: [出力Aの補完基準]\n・ GitHub のプルリクエストの最終バッチは、提出された検証ルール、レビュー、およびマージのリクエストです。\n・PRレビュープロセス中にリビューアとメンテナのフィードバック。\n・Amaruチームが提供する完成作品の検証と検証\n\n証拠: [出力Aとその受諾基準を確認するリンク]\n・最終的な検証ルールの増幅+マージ(テストとログ付き)\n・PR #155 — https://github.com/pragma-org/amaru/pull/155\n・ vkey の目撃者と boottrap の目撃エラー処理のリファクタリングロジックとマージ:\n・PR #132 — https://github.com/pragma-org/amaru/pull/132\n・プロジェクトディスカッションで完了した検証のメインテナー確認:\n・https://github.com/pragma-org/amaru/discusions/203#discussioncomment-15127708\n・確認のスクリーンショットを貼る(審査者都合上)\n・https://drive.google.com/file/d/1Jes-bhg8IBWR7NYpy kqBqg1oe8pxnDS/vi"
+    },
+    {
+      "no": 5,
+      "promise": "・ユニット、インテグレーション、コンフォーマンステストによる実装ルールの評価\n・最終プロジェクトの成果と今後の提言をまとめました.",
+      "criteria": "・Amaruチームによる最終検査完了・審査\n・書類作成・手渡工程確認.",
+      "report": "A. 出力:このプロジェクトは、マイルストーンスコープと一致して次の出力を配信しました。\n・Amaru Rustノード内で実施されたレジャー検証ルールの評価、統合および適合テストを含む。\n・最終プロジェクトレポートは、開発の貢献、試験結果、および主要な学習をまとめました。\n\n受諾基準:このマイルストーンの受入基準は以下のとおりです。\n・Amaruチームによる最終テスト完了・審査\n・実装されたレジャールールには、ユニット、インテグレーション、コンフォーマンステスト、完成前のAmaruチームによるレビューが伴いました。\n・書類作成・手渡工程確認\n・隔週の報告、マイルストーンの文書化、最終プロジェクト報告書の作成\n・プロジェクトの成果をまとめ、知識の伝達を確実にするために、クローズアウトレポートとウォークスルービデオが制作されました。\n\n証拠:次の証拠は、出力と受諾基準の完了を示しています。\n・最終プロジェクト報告\n・最終プロジェクトレポート:https://drive.google.com/file/d/1Aqns-kE2yfvkOW39S6Wx7ZsYe3e8nVH9/view?usp=sharing\n・Amaru GitHubリポジトリにアップロード:https://github.com/pragma-org/amaru/discussions/203#discussioncomment-16296980\n・ビデオウォークスルー\n・プロジェクト成果をまとめたパブリック・ウォークスルー: https://www.youtube.com/watch?v=qLppqkW80F8\n・Pragma Discordで共有:(要事前登録、招待https://discord.gg/sf5s48MUx4) https://discord.com/channels/1202416088776712253/1225810754041806958/1463588073261760748\n・審査の都合の通知のスクリーンショット: https://drive.google.com/file/d/1lqTl2kXfvQySjAzyUCZ-S9C0y KwSQzD/view?usp=sharing\n・GitHubリポジトリと投稿\n・Amaru リポジトリ: https://github.com/pragma-org/amaru\n・関連する実装の議論/貢献:https://github.com/pragma-org/amaru/discussions/203#discussioncomment-15127708\n・レビュー者の利便性のためのGH承認のスクリーンショット:https://drive.google.com/file/d/1VdnKFKV5tPOxS4rDp D0UdXIh2v5uibI/view?usp=sharin"
+    }
+  ]
+}

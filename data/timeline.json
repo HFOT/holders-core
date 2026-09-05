@@ -1,0 +1,709 @@
+{
+  "stages": [
+    {
+      "key": "submit",
+      "label": "募集"
+    },
+    {
+      "key": "review",
+      "label": "レビュー"
+    },
+    {
+      "key": "vote",
+      "label": "投票"
+    },
+    {
+      "key": "result",
+      "label": "結果発表"
+    },
+    {
+      "key": "onboard",
+      "label": "着手"
+    }
+  ],
+  "funds": [
+    {
+      "id": "1",
+      "name": "Fund1 (pilot)",
+      "launch": "2020-08-01",
+      "phase": "onboarding",
+      "active": false,
+      "marks": {},
+      "available": [],
+      "distributed": [
+        {
+          "v": 2342511000000,
+          "exp": 6,
+          "code": "ADA"
+        }
+      ],
+      "proposals": 56,
+      "funded": 0,
+      "completed": 0,
+      "cancelled": 0
+    },
+    {
+      "id": "2",
+      "name": "Fund2",
+      "launch": "2020-09-01",
+      "phase": "onboarding",
+      "active": false,
+      "marks": {
+        "submit": {
+          "from": "2020-12-01",
+          "to": "",
+          "src": "manual"
+        },
+        "vote": {
+          "from": "2021-01-06",
+          "to": "2021-01-13",
+          "src": "manual"
+        },
+        "result": {
+          "at": "2021-01-15",
+          "src": "manual"
+        }
+      },
+      "available": [
+        {
+          "v": 20000000,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "distributed": [
+        {
+          "v": 20073168,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "proposals": 78,
+      "funded": 11,
+      "completed": 9,
+      "cancelled": 2
+    },
+    {
+      "id": "3",
+      "name": "Fund3",
+      "launch": "2021-01-01",
+      "phase": "onboarding",
+      "active": false,
+      "marks": {
+        "submit": {
+          "from": "2021-01-11",
+          "to": "",
+          "src": "manual"
+        },
+        "vote": {
+          "from": "2021-02-19",
+          "to": "2021-03-05",
+          "src": "manual"
+        },
+        "result": {
+          "at": "2021-04-01",
+          "src": "manual"
+        }
+      },
+      "available": [
+        {
+          "v": 90000000,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "distributed": [
+        {
+          "v": 39948500,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "proposals": 150,
+      "funded": 21,
+      "completed": 16,
+      "cancelled": 5
+    },
+    {
+      "id": "4",
+      "name": "Fund4",
+      "launch": "2021-02-01",
+      "phase": "onboarding",
+      "active": false,
+      "marks": {
+        "submit": {
+          "from": "2021-04-01",
+          "to": "",
+          "src": "manual"
+        },
+        "vote": {
+          "from": "2021-06-15",
+          "to": "2021-06-28",
+          "src": "manual"
+        },
+        "result": {
+          "at": "2021-07-02",
+          "src": "manual"
+        }
+      },
+      "available": [
+        {
+          "v": 120000000,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "distributed": [
+        {
+          "v": 75409700,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "proposals": 277,
+      "funded": 51,
+      "completed": 40,
+      "cancelled": 11
+    },
+    {
+      "id": "5",
+      "name": "Fund5",
+      "launch": "2021-03-01",
+      "phase": "onboarding",
+      "active": false,
+      "marks": {
+        "submit": {
+          "from": "2021-06-15",
+          "to": "",
+          "src": "manual"
+        },
+        "vote": {
+          "from": "2021-07-22",
+          "to": "2021-08-05",
+          "src": "manual"
+        },
+        "result": {
+          "at": "2021-08-09",
+          "src": "manual"
+        }
+      },
+      "available": [
+        {
+          "v": 170000000,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "distributed": [
+        {
+          "v": 161470400,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "proposals": 267,
+      "funded": 69,
+      "completed": 59,
+      "cancelled": 10
+    },
+    {
+      "id": "6",
+      "name": "Fund6",
+      "launch": "2021-08-01",
+      "phase": "onboarding",
+      "active": false,
+      "marks": {
+        "submit": {
+          "from": "2021-09-01",
+          "to": "",
+          "src": "manual"
+        },
+        "vote": {
+          "from": "2021-10-07",
+          "to": "2021-10-21",
+          "src": "manual"
+        },
+        "result": {
+          "at": "2021-11-15",
+          "src": "manual"
+        }
+      },
+      "available": [
+        {
+          "v": 330000000,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "distributed": [
+        {
+          "v": 318467800,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "proposals": 711,
+      "funded": 151,
+      "completed": 122,
+      "cancelled": 29
+    },
+    {
+      "id": "7",
+      "name": "Fund7",
+      "launch": "2021-11-01",
+      "phase": "onboarding",
+      "active": false,
+      "marks": {
+        "submit": {
+          "from": "2021-11-15",
+          "to": "",
+          "src": "manual"
+        },
+        "vote": {
+          "from": "2022-01-20",
+          "to": "2022-02-03",
+          "src": "manual"
+        },
+        "result": {
+          "at": "2022-02-10",
+          "src": "manual"
+        }
+      },
+      "available": [
+        {
+          "v": 650000000,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "distributed": [
+        {
+          "v": 594871040,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "proposals": 936,
+      "funded": 264,
+      "completed": 217,
+      "cancelled": 47
+    },
+    {
+      "id": "8",
+      "name": "Fund8",
+      "launch": "2022-02-01",
+      "phase": "onboarding",
+      "active": false,
+      "marks": {
+        "submit": {
+          "from": "2022-03-01",
+          "to": "",
+          "src": "manual"
+        },
+        "vote": {
+          "from": "2022-04-21",
+          "to": "2022-05-05",
+          "src": "manual"
+        },
+        "result": {
+          "at": "2022-06-01",
+          "src": "manual"
+        }
+      },
+      "available": [
+        {
+          "v": 1280000000,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "distributed": [
+        {
+          "v": 1232136999,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "proposals": 1134,
+      "funded": 367,
+      "completed": 306,
+      "cancelled": 61
+    },
+    {
+      "id": "9",
+      "name": "Fund9",
+      "launch": "2022-06-01",
+      "phase": "onboarding",
+      "active": false,
+      "marks": {
+        "submit": {
+          "from": "2022-06-15",
+          "to": "",
+          "src": "manual"
+        },
+        "vote": {
+          "from": "2022-09-05",
+          "to": "2022-09-19",
+          "src": "manual"
+        },
+        "result": {
+          "at": "2022-10-01",
+          "src": "manual"
+        }
+      },
+      "available": [
+        {
+          "v": 1300000000,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "distributed": [
+        {
+          "v": 1204050904,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "proposals": 1166,
+      "funded": 207,
+      "completed": 178,
+      "cancelled": 29
+    },
+    {
+      "id": "10",
+      "name": "Fund10",
+      "launch": "2023-07-13",
+      "phase": "onboarding",
+      "active": false,
+      "marks": {
+        "submit": {
+          "from": "2023-07-01",
+          "to": "2023-08-03",
+          "src": "manual"
+        },
+        "vote": {
+          "from": "2023-08-31",
+          "to": "2023-09-14",
+          "src": "manual"
+        },
+        "result": {
+          "at": "2023-10-01",
+          "src": "manual"
+        }
+      },
+      "available": [
+        {
+          "v": 46590000000000,
+          "exp": 6,
+          "code": "ADA"
+        },
+        {
+          "v": 1141920900,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "distributed": [
+        {
+          "v": 40473522900000,
+          "exp": 6,
+          "code": "ADA"
+        },
+        {
+          "v": 992006041,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "proposals": 1467,
+      "funded": 192,
+      "completed": 163,
+      "cancelled": 18
+    },
+    {
+      "id": "11",
+      "name": "Fund11",
+      "launch": "2023-11-30",
+      "phase": "onboarding",
+      "active": false,
+      "marks": {
+        "submit": {
+          "from": "2023-12-14",
+          "to": "2024-01-04",
+          "src": "official"
+        },
+        "vote": {
+          "from": "2024-01-25",
+          "to": "2024-02-08",
+          "src": "manual"
+        },
+        "result": {
+          "at": "2024-02-08",
+          "src": "manual"
+        }
+      },
+      "available": [
+        {
+          "v": 46500000000000,
+          "exp": 6,
+          "code": "ADA"
+        },
+        {
+          "v": 2826735000,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "distributed": [
+        {
+          "v": 42332788010000,
+          "exp": 6,
+          "code": "ADA"
+        },
+        {
+          "v": 2573410180,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "proposals": 920,
+      "funded": 300,
+      "completed": 243,
+      "cancelled": 20
+    },
+    {
+      "id": "12",
+      "name": "Fund12",
+      "launch": "2024-04-16",
+      "phase": "onboarding",
+      "active": false,
+      "marks": {
+        "submit": {
+          "from": "2024-04-29",
+          "to": "2024-05-09",
+          "src": "official"
+        },
+        "vote": {
+          "from": "2024-06-27",
+          "to": "2024-07-11",
+          "src": "official"
+        },
+        "result": {
+          "at": "2024-07-16",
+          "src": "official"
+        },
+        "onboard": {
+          "at": "2024-07-24",
+          "src": "official"
+        }
+      },
+      "available": [
+        {
+          "v": 46500000000000,
+          "exp": 6,
+          "code": "ADA"
+        },
+        {
+          "v": 2037630000,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "distributed": [
+        {
+          "v": 39884803190000,
+          "exp": 6,
+          "code": "ADA"
+        },
+        {
+          "v": 1747752073,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "proposals": 1205,
+      "funded": 258,
+      "completed": 186,
+      "cancelled": 28
+    },
+    {
+      "id": "13",
+      "name": "Fund13",
+      "launch": "2024-09-25",
+      "phase": "onboarding",
+      "active": false,
+      "marks": {
+        "submit": {
+          "from": "2024-09-26",
+          "to": "2024-10-10",
+          "src": "official"
+        },
+        "vote": {
+          "from": "2024-11-27",
+          "to": "2024-12-12",
+          "src": "official"
+        },
+        "result": {
+          "at": "2024-12-16",
+          "src": "official"
+        },
+        "onboard": {
+          "at": "2024-12-20",
+          "src": "official"
+        }
+      },
+      "available": [
+        {
+          "v": 46500000000000,
+          "exp": 6,
+          "code": "ADA"
+        },
+        {
+          "v": 4877850000,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "distributed": [
+        {
+          "v": 36401538940000,
+          "exp": 6,
+          "code": "ADA"
+        },
+        {
+          "v": 3818521433,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "proposals": 1639,
+      "funded": 199,
+      "completed": 134,
+      "cancelled": 4
+    },
+    {
+      "id": "14",
+      "name": "Fund14",
+      "launch": "2025-06-09",
+      "phase": "onboarding",
+      "active": false,
+      "marks": {
+        "submit": {
+          "from": "2025-07-31",
+          "to": "2025-08-18",
+          "src": "official"
+        },
+        "vote": {
+          "from": "2025-09-22",
+          "to": "2025-10-06",
+          "src": "official"
+        },
+        "result": {
+          "at": "2025-10-13",
+          "src": "official"
+        },
+        "onboard": {
+          "at": "2025-10-15",
+          "src": "official"
+        }
+      },
+      "available": [
+        {
+          "v": 18600000000000,
+          "exp": 6,
+          "code": "ADA"
+        },
+        {
+          "v": 1261638000,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "distributed": [
+        {
+          "v": 10670166010000,
+          "exp": 6,
+          "code": "ADA"
+        },
+        {
+          "v": 723757359,
+          "exp": 2,
+          "code": "USD"
+        }
+      ],
+      "proposals": 1283,
+      "funded": 131,
+      "completed": 49,
+      "cancelled": 5
+    },
+    {
+      "id": "15",
+      "name": "Fund15",
+      "launch": "2025-11-05",
+      "phase": "communityReviewEnd",
+      "active": true,
+      "marks": {
+        "submit": {
+          "from": "2025-11-11",
+          "to": "2025-11-27",
+          "src": "official"
+        },
+        "vote": {
+          "from": "2027-01-13",
+          "to": "2027-01-27",
+          "src": "official"
+        },
+        "result": {
+          "at": "2027-03-29",
+          "src": "official"
+        },
+        "onboard": {
+          "at": "2027-03-31",
+          "src": "official"
+        }
+      },
+      "available": [
+        {
+          "v": 18500000000000,
+          "exp": 6,
+          "code": "ADA"
+        },
+        {
+          "v": 1279855000,
+          "exp": 2,
+          "code": "USD"
+        },
+        {
+          "v": 25000000,
+          "exp": 2,
+          "code": "USDM"
+        }
+      ],
+      "distributed": [
+        {
+          "v": 0,
+          "exp": 6,
+          "code": "ADA"
+        },
+        {
+          "v": 0,
+          "exp": 2,
+          "code": "USD"
+        },
+        {
+          "v": 0,
+          "exp": 2,
+          "code": "USDM"
+        }
+      ],
+      "proposals": 0,
+      "funded": 0,
+      "completed": 0,
+      "cancelled": 0
+    }
+  ],
+  "from": "2020-08-01",
+  "to": "2027-03-31",
+  "note": "公式ページの日付を優先し、無いところだけ手動記録（Catalyst Japan 由来）で補っている。埋められない段階は空のまま。"
+}

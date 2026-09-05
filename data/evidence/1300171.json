@@ -1,0 +1,56 @@
+{
+  "title": "SIDAN | KnightSafe - Self-custodial Vault for DeFi Trading",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 37500,
+      "promise": "Objective:\nEstablish a solid foundation for the project by setting up the necessary infrastructure, assembling the team, and defining project management practices.\n・Legal and administrative frameworks established.\n・Core team members and advisors confirmed.\n・Project management tools and systems set up.",
+      "criteria": "Acceptance Criteria:\n・Legal entity established\n・Public announcement of core team members and advisors.\n・Project management tools and systems implemented for tracking milestones and activities, indicating tasks timeline, and roles of responsibilities.",
+      "report": "Documentation of the legal entity setup (e.g., registration certificate or equivalent). A public link to the documentation will be provided\nhttps://drive.google.com/file/d/1WDQjHvr5VyS5eRRQwPg8hPDqVuPGaGe6/view?usp=drive_link\n\nPublic announcement link will be provided on SIDAN Lab Discord channel\nhttps://discord.com/channels/1166784293805228061/1346154440327172106/1346167412722110556\n\nPublic project management link will be provided (It could be either one of Google sheet, Trello, or Notion depending on whichever is convenient to track)\nhttps://docs.google.com/spreadsheets/d/1CDP-e9uktFim68QG-JCe50_eOR5YRKxZsY-9RUZ760I/edit?usp=sharing",
+      "kinds": [
+        "doc",
+        "social"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 37500,
+      "promise": "Objective:\nDevelop the initial architectural framework to guide the development of the solution.\n・User interaction workflows defined.\n・Initial architectural diagrams prepared.",
+      "criteria": "Acceptance Criteria:\n・Architecture design documents completed.\n・User workflow diagrams and system interaction flows finalized.",
+      "report": "We have completed the architecture design, the initial user workflow diagrams, and the system interaction flows. All documents have been thoroughly prepared to meet the specified milestone outputs and acceptance criteria and are now available on our GitHub repository for public viewing and feedback.\nArchitecture Design: https://github.com/knight-safe/defi-trading-vault/blob/main/docs/ArchitectureDesign.pdf\nUser workflow diagrams and system interaction flows: https://github.com/knight-safe/defi-trading-vault/blob/main/docs/UserWorkflowAndSystemInteractionFlows.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 37500,
+      "promise": "Objective:\nDesign and develop smart contracts at a prototype level.\n・Develop smart contract source code with documentation\n・Overview of the smart contracts and script specification",
+      "criteria": "Acceptance Criteria:\n・Develop smart contract source code:\n・Data Flow Validation: The smart contract will demonstrate the ability to process inputs, perform logical operations, and output results\n・Script Execution Validity: Smart contract scripts compile, execute, and validate transactions\n・Test Cases for Core Logic: Functional source code will include test cases to validate key logical flows, ensuring that the core functionality behaves as designed.\n・A document detailing the overview of smart contracts and script specifications.",
+      "report": "We have completed the prototype-level design and development of the smart contract. The data flow and script execution have been properly compiled, tested, and validated. Supporting documentation has been prepared in accordance with the specified milestone outputs and acceptance criteria. All relevant materials are now available on our public GitHub repository for open access and community feedback.\n・Smart Contract Repository: Smart_contract\n・Smart Contract Documentation & Readme: Documentation.md\n・Test Cases for Core Logic Readme: Accessible via the GitHub repository",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 37500,
+      "promise": "Objective:\nDeploy the solution on Cardano preproduction testnet, mainnet, and complete final reporting.\n・Deploy smart contracts and frontend on Cardano preproduction testnet and mainnet\n・Ensure the frontend website is functional and interacts correctly with the backend and smart contracts.\n・Final close-out report\n・Final closeout video",
+      "criteria": "Acceptance Criteria:\n・Smart contracts are deployed on the Cardano preproduction testnet and mainnet.\n・Users can perform actions from the user flow stated in milestone 2 through the website\n・Close-out report submission\n・Close-out video submission",
+      "report": "We have completed the smart contract deployment, the website with the features for users to interact with, a close-out report documentation as well as the close-out video. All documents have been thoroughly prepared to meet the specified milestone outputs and acceptance criteria and are now available on our GitHub repository for public viewing and feedback.\n・A public Github link for smart contract deployment: https://github.com/knight-safe/defi-trading-vault/tree/main/smart_contract\n・A public link for the website with the features: https://self-custodial-vault.knightsafe.io/\n・The close-out report document: https://github.com/knight-safe/defi-trading-vault/blob/main/docs/CloseOutReport.pdf\n・The close-out video on vimeo including the demo for the user interaction: https://vimeo.com/1094284378/0a3632730b",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

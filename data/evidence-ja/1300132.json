@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・Cardanoでの決済スマートコントラクト\n・AIエージェント登録のオンチェーンレジストリ",
+      "criteria": "支払のスマートな契約:\n・Githubコードリポジトリ 誰にもアクセシブルで実行可能\n・Cardanoscanでスマートコントラクトトランザクションを明らかに表示\n\nAIエージェント登録のためのオンチェーンレジストリ:\n・Githubコードリポジトリ 誰にもアクセシブルで実行可能\n・スマートコントラクトトランザクション+エージェントトークンは、Cardanoscanで明確に表示\n\nビデオ:\n・動画は、Github Repoのセットアップ方法と取引の意味について説明しています",
+      "report": "動画(スタート): https://www.youtube.com/watch?v=01FbSsyava4\nレジストリスマートコントラクトGithub:https://github.com/nftmakerio/masumi-payment-service/tree/main/smart-contracts/registry\nレジストリスマートコントラクトCardanoscan:https://preprod.cardanoscan.io/tokenPolicy/c7842ba56912a2df2e1b89f8e11751c6ec2318520f4d312423a272\n決済スマートコントラクトGithub:https://github.com/nftmakerio/masumi-payment-service/tree/main/smart-contracts/payment\n支払いスマートコントラクトCardanoscan:https://preprod.cardanoscan.io/address/addr test1wr3hvt2hw89l6ay85lr0f2nr80tckrnpjr808dxhq39xksvw7mx8?tab=transactions\n\nボーナス:\nマスミエクスプローラ: https://explorer.masumi.network/"
+    },
+    {
+      "no": 2,
+      "promise": "・スマートコントラクト、ブロックチェーンサービス、およびAgentics AIノード間のアーキテクチャ図のアウトライン化\n・長期的スケーラビリティのための潜在的な層2アーキテクチャの評価レポート.",
+      "criteria": "建築図:\n・スマートコントラクト、ブロックチェーンサービス、およびAgentics AIノード間の相互作用を示す、ラベル付きの図。\n・データフロー、トリガー、キーコンポーネントを含む。\n・高分解能(SVG/PDF)を簡略化(1-2ページ)で配信。\n\nレイヤー2スケーラビリティレポート:\n・少なくとも3層2ソリューション(ハイドラ、zkRollups、Optimistic Rollupsなど)の比較\n・スケーラビリティ、セキュリティ、コスト、統合の容易さを考慮した。\n・トレードオフの推奨事項\n・専門書(PDF/DOCX)にて配信.",
+      "report": "ビデオ(ここから開始): https://www.youtube.com/watch?v=aV6Kj9m9TWA\nドキュメントとダイアグラム: https://docs.masumi.network/\nL2評価: https://drive.google.com/file/d/1-d4XAlUSkjr59biplJgdSEws8r7BjvY/view?usp=sharing"
+    },
+    {
+      "no": 3,
+      "promise": "スタンドアローンブロックチェーンサービスは、エージェントのAIノードと並行して、オンチェーンのAIエージェントの相互作用を可能にします.",
+      "criteria": "マスミノードは、並列またはスタンドアローンで実行できるよりも、スタンドアロンサービス(または複数の)に分割されます。\n・Registryサービス(オンチェーンからデータを問い合わせる)\n・決済サービス(オンチェーンとの連動)\n・管理者インターフェイス(フロントエンド)\n\nこれらのノードの機能性を実証するために、ノードのそれぞれの意図した相互作用が可能であることを検証します。\n・Masumi Node サービスの動画デモ、主要機能をすべて表示(ローカル アドミン インターフェイスとの API 呼び出しとやり取り)\n\n審査者または第三者のユーザーは、Masumi Nodeをテストすることができます",
+      "report": "ビデオ(ここに開始): https://youtu.be/HxM0vJn9hPQ\nドキュメント: https://docs.masumi.network/get-started/installation\nGithub Repo Masumiの支払サービス:https://github.com/masumi-network/masumi-payment-service\nGithub Repo Masumiレジストリサービス:https://github.com/masumi-network/masumi-registry-service\nGithub Repo Masumi PIP CrewAI Pip パッケージ: https://github.com/masumi-network/pip-masumi-crewai\nGithub Repo 例の統合: https://github.com/masumi-network/crewai-selling-tutorial"
+    },
+    {
+      "no": 4,
+      "promise": "・マスミネットワークのビジョン、技術ロードマップ、戦略を詳しく掲載\n・ユーザーとパートナーをつなぐプロジェクトサイト.",
+      "criteria": "1. 完全なLitepaper\n・プロジェクトビジョン、技術アーキテクチャ、ユースケースを縮小\n・明確なロードマップ、トークンユーティリティ(トークンがある場合)、チーム、市場機会を提供します。\n・独自の価値提案、ガバナンスモデル、スケーラビリティを強調する。\n・コミュニティへの関心のある透明性とアライメントの確保\n\n2.プロジェクト詳細とステークホルダー情報によるライブウェブサイトの立ち上げ\n・プロジェクト情報やアップデートのメインハブとしてサーブ\n・プロジェクト目標、技術スタック、マイルストーンタイムラインの特長\n・パートナー、アドバイザー、コアチームメンバーのプロファイルをestabliに含める",
+      "report": "ありがとうございました! 私たちは、この提案とCatalystのCatalystの一部であることを感謝しています。\n\n私は、マイルストーン・レビュアーNr4が誤って出力を承認または誤って削除したと信じているので、私はここで私は再び達成の同じ証拠を認めています。\n私はまた、指摘したい:私たちは明らかにこのマイルストーンを打ち抜きました。\n1つのウェブサイトを提出する代わりに、3つのウェブサイト+ 3つのドキュメントのウェブサイト+ 1エクスプローラのウェブサイトを提出しました。\n1つのlitepaperを提出する代わりに、2 + 1プレゼンテーションを提出しました。\nビデオを追加しました。\n今度は私達は細部及び絶対ニピッキングを論議しなければなりません。\nこれは、Cardanoの低成長であり、さらには、チームを強制することによって、プロジェクトの成功を危険にさらす限り、資金調達の詳細と遅延に関連しないものに取り組んでいます。\n私たちのナンバー1の焦点は、このプロジェクトを成功させるべきではありません。\n\n詳細は、こちらでオリジナルの投稿を行ってください。\n\n動画(スタート): https://www.youtube.com/watch?v=HWCTHPIKMYM\nウェブサイト:https://www.masumi.network/\nドキュメント: https://docs.masumi.network/\nSokosumi ウェブサイト: https://www.sokosumi.com/\nSokosumi Docs: https://docs.sokosumi.com/\nKodosumi ウェブサイト:https://www.kodosumi.io/\nKodosumi Docs: https://docs.kodosumi.io/\nエクスプローラのウェブサイト:https://explorer.masumi.network/\n初期のホワイトペーパー: https://cdn.prod.website-files.com/67879c5d48bf5ddaad9ec54f/678edde967d8ed0688e619cf Masumi WhitePaper 1.pdf\n更新されたLitepaper:https://cdn.prod.website-files.com/67879c5d48bf5ddaad9ec54f/68c478fb0ce410a4c9895d Masumi%20Litepaper%20-%2012.09.2025.pdf\nプレゼンテーション: https://cdn.prod.website-files.com/67879c5d48bf5ddaad9ec54f/678f79a438499636604b74f8 Masumi%20Network Davos%20Presentation 20250121.pdf\n\nマイルストーン・レビュアーNr4の各ポイントを見るには、承認されていません。\nお問い合わせ\n受諾基準2:明確なロードマップ、トークンユーティリティ(トークンがある場合)、チームおよび市場機会を提供する - 承認されていない\n・ロードマップ: ドーク"
+    },
+    {
+      "no": 5,
+      "promise": "AIエージェントの出力と意思決定をオンチェーンで記録し、透明性と説明責任を確保するサービス.",
+      "criteria": "カーダノテストネットでAI出力された機能性が確実にオンチェーンを記録しました.",
+      "report": "以前のマイルストーンがすべての査読者とCatalystチームによって承認されたため、今すぐ退会しました。 余分な仕事のための謝罪! わたしは、私の意図ではなく、わたしは見過ごせよ。\n動画(スタート): https://www.youtube.com/watch?v=-BZyaLJAJew\nトランザクションを示すMasumi Explorer:https://explorer.masumi.network/\nCardanoscanのスマートコントラクトアドレス: https://cardanoscan.io/address/71bd2adb685621e224aae7571cb6bd8f0beb0fdd31875eb3a27feee6c0\nコードリポジトリ: https://github.com/orgs/masumi-network/repositories\nコード監査: https://github.com/masumi-network/masumi-payment-service/blob/main/audits/Masumi-Payment-Service-Audit-April-2025.pdf\n取引はCardanoの出力をログアウト: https://cardanoscan.io/transaction/0a98ab360c8ef8df16bb27ffc660ccf5b34a8b42d5de068c1ef46585078a88ec"
+    },
+    {
+      "no": 6,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ\n・パイロットプロジェクトを企業のPDF形式、ハイライト、文書化等で検討\n\n審査者への注意: パイロットプロジェクトが起こった「証拠」です。 他に何を置くかわからない :D",
+      "criteria": "・最終報告書はPDFとして公開\n・YouTubeにて最終クローズアウト動画を公開\n・パイロットプロジェクトを社内で調査、強調、文書化することで、パブリックリンクからPDFへ\n・ケーススタディは、顧客がMasumiをどのように使用したか、それで何をしたかを正確に解明しやすい形式で書かれています。\n・ケーススタディには、エンタープライズ顧客からの声が含まれています\n・ケーススタディには、実際の実装の検証のためのオンチェーントランザクションハッシュの展開ログが含まれています\n・ケーススタディでは、成果や知見がわかります",
+      "report": "親愛なる査読者,\n最終的なレポートを含む、この業績の証明に必要な証拠を添付してください。\n\nドライブフォルダ: https://drive.google.com/drive/folders/1J4XGz1RdM1q7ve6Nl0Hh8UFJaXKkz926?usp=sharing\n含まれるもの:\npdfとしてクローズアウトレポート: https://drive.google.com/drive/folders/1J4XGz1RdM1q7ve6Nl0Hh8UFJaXKkz926?usp=sharing\nYTにアップロードされたクローズアウトビデオ: https://www.youtube.com/watch?v=ETlvXFNGd8M\nCase-Study: https://drive.google.com/file/d/1z43ICiCMs6Yk7301bPK9lKMsv-Ih08Vz/view?usp=drive link\n結果のオーケストレーション: https://drive.google.com/file/d/1OFW3LAUX3TZrfE8xtnFrMbNTJv-kwJrB/view?usp=drive link\nマイルストーン完了: https://drive.google.com/file/d/1DHU9e0TvSx-Qc9GAIOSPrITpBHsXoY5R/view?usp=drive link\n\n私はこのクローズアウトレポートの5分の制限を上回ったことを知っていますが、この広範囲なプロジェクトでは、必要な情報を最小限に抑え、重要なコンテキストを提供しなければなりませんでした。 お問い合わせ\nご不明な点がございましたら、お気軽にお問い合わせください。\nありがとうございます."
+    }
+  ]
+}

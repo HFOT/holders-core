@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Https://github.com/Cardano-After-Dark/hydra-poc のソースコードとドキュメント\n・実現可能性調査に関する記事へのリンク\n・スマートコントラクトの普及",
+      "criteria": "テストネットスマートコントラクトの実装可能性を検証します。\n・参加者数の資金をロックし、ゲームを始める\n・ハイドラでゲーム内取引を直接実行可能\n・ゲーム結果に応じてゲームの結論で資金をリースする",
+      "report": "GitHub Repo https://github.com/Cardano-After-Dark/hydra-poc/tree/blog でマイルストーンの出力が利用できます。\n・可能性研究による芸術性 : docs/blog/ms1.md\n・スマートコントラクトの普及 -->スマートコントラクトの展開\n\nこの記事では、testnetスマートコントラクトを実装することも可能です。\n・ファンズロック --> はい、可愛らしい\n・Hydra上のアプリ内取引のパーフォーム --> ms1.mdのセクション「Real-World Technical Insights」を参照してください。\n・アプリケーションプロトコルが終了したときに資金を解放 --> ms1.md セクション \"Looking Forward\"を参照してください。\n\nマイルストーン完了の証拠として、次のリソースを生成しました。\n・実現可能性調査によるアーティクル:ms1.md参照\n・ハイドラのスマートコントラクト処理取引の普及 -->スマートコントラクトのドリフト\n・Hydra PoC実装のソースコード --> スクリプトを見る\n・動画レポート --> YouTubeビデオハイドラPoC M1を参照してください。\n\n追加コンテンツとして、\n・プロジェクトの説明\n・チュートリアル1:Cardano Hydra PoC ファーストラン\n・チュートリアル2:カルダノ・ヒドラ・ポック・ローカル(YouTube動画で使われているサメチュートリアル)\n\n以前のレビューのリクエストに関連して、新しく追加されたセクションと記事の新しい変更を参照してください。\n・参考: YouTubeのプレイリスト「Hydra PoC - Cardano上でインタラクティブなdAppの構築」を追加\n・トランザクションハッシュの可視性:L2(Hydra)の相互作用が起こるため、トランザクションハッシュはL1(Cardano preprod)ネットワークで表示されませんので、ハイドラヘッドを閉じると失われた。\n・トランザクションヘス: 必要なトランザクションアドレスの例を示します(Cardanoscan preprod でチェックしてください)。\n・commit tx: f4153075975bbea7d0563a93b9b734697f8e958a981c81d7593c0154bd5d3d\n・fanout tx: 1bb72e262b3d9f629bf6855cce484f4ba9a75e24728b65b4ba9422439f662547:"
+    },
+    {
+      "no": 2,
+      "promise": "Https://github.com/Cardano-After-Dark/hydra-poc のソースコードとドキュメント\n・実現可能性調査に関する記事へのリンク\n・暗号交換の実施",
+      "criteria": "カレイドスコープ紙に提示されているものと同様のハイドラを使用してグループ暗号プロトコルを実装する可能性を検証します。\n・参加者同士の交換をすることで、共有鍵に合意\n・参加者が暗号化を実行できるように(他人に通知)\n・解読(他者への通知)を行う参加者の有効",
+      "report": "この PoA の結果は、当社の hydra-poc GitHub リポジトリの ms02 と YouTube チャンネルで利用できます。\nこのPoAでは、以下を提出しています。\n出力:\n・実現可能性調査に関する記事へのリンク\n・暗号交換の実施\n\n受諾条件\nカレイドスコープ紙に提示されているものと同様のハイドラを使用してグループ暗号プロトコルを実装する可能性を検証します。\n・参加者同士の交換をすることで、共有鍵に合意\n・参加者が暗号化を実行できるように(他人に通知)\n・解読(他者への通知)を行う参加者の有効\n\nYouTube動画を見て記事を読むことで上記を確認することができます\nマイルストーン完成の証拠\nエントリー 以下のアーティファクトが公開されます。\n・Feasibilityの勉強に関するリンク\n・GitHubのHydraによる暗号化プロトコルの普及\n・GitHubでHydra PoC実装のソースコード\n・実装を説明する記事の動画へのリンク"
+    },
+    {
+      "no": 3,
+      "promise": "Https://github.com/Cardano-After-Dark/hydra-poc のソースコードとドキュメント\n・トランザクションハンドリング(M1)と暗号実装(M2)のPoCをカバーし、実現可能性調査に関する記事へのリンク。\n・取引処理(M1)と暗号実装(M2)のPoCをカバーする暗号交換の普及。 (このマイルストーンは2つの以前の研究に依存しているため、統合の実装にコミットしないと注意します).",
+      "criteria": "・症例調査結果発表記事の消去\n・PoCに遭遇した問題\n・ソースコードへのリンクに関する問題を解決するために使用されるアプローチを提示\n・研究成果発表\n・負の場合:ブロックの問題の強調と定義\n・ポジティブケース:記事の作業液PoCを提示\n・ケーススタディで作成したソースコードを全て読み出し、リリース\n・ハイドラとのゲーム内コミュニケーション取引\n・HydraによるCryptographicプロトコルの実装",
+      "report": "マイルストーンの出力\n・実現可能性調査に関する記事へのリンク\n・取引処理(M1)と暗号実装(M2)のPoCをカバーする暗号交換の普及。 (このマイルストーンは2つの以前の研究に依存しているため、統合の実装にコミットしないと注意します)。\n・/src/tictactoe-demo.ts 取引フロー(M1)\n・/src/xor-crypto-demo.ts 暗号化と鍵交換 (M2)\n\n受諾条件\n・症例調査結果発表記事の消去\n・PoCに遭遇した問題\n・ソースコードへのリンクに関する問題を解決するために使用されるアプローチを提示\n・研究成果発表\n・負の場合:ブロックの問題の強調と定義\n・ポジティブケース:記事の作業液PoCを提示\n・ケーススタディで作成したソースコードを全て読み出し、リリース\n・ハイドラとのゲーム内コミュニケーション取引\n・HydraによるCryptographicプロトコルの実装\n\nマイルストーン完了の証拠\n・Feasibilityに関する研究を含むアーティクル:\n・2つのPoCの概要\n・各々にPoCの統合方法に関する分析\n・他のハイドラインテグレータ/インタラクティブアプリの実装者に対する学習\n・将来の研究の場の拡充"
+    },
+    {
+      "no": 4,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウト動画 https://www.youtube.com/@cardanoafterdark\n・https://github.com/Cardano-After-Dark/hydra-poc のソースコードと記事",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n・ソースコードの公開や、ケーススタディを詳述する記事\n・Article1:取引を用いたアプリ通信\n・Article2:暗号化プロトコルの実装\n・Article3: 可能性研究の概要.\n・実装を介したドキュメントの削除.",
+      "report": "プロジェクトクローズアウトレポート\nマイルストーンの出力\n・最終クローズアウトレポートはhttps://github.com/Cardano-After-Dark/hydra-poc/blob/main/docs/blog/\n・Final closeout 動画は https://www.youtube.com/@cardanoafterdark\n・ソースコードと記事は https://github.com/Cardano-After-Dark/hydra-poc で利用できます。\n\n受諾条件\n・最終報告書は一般公開→ https://github.com/Cardano-After-Dark/hydra-poc/blob/main/docs/blog/close-out.md\n・最終クローズアウト映像は一般公開→ https://www.youtube.com/watch?v=GLbdjFRHsLE\n・ソースコードの公開や、ケーススタディを詳述する記事\n・Article1 - 取引を用いたアプリ通信:https://cardanoafterdark.io/app-communication-using-transactions/\n・Article2 - 暗号化プロトコルの実装:https://cardanoafterdark.io/cryptographic-protocol-implementation/\n・Article3 - Feasibility Study 概要: https://cardanoafterdark.io/feasibility-study-overview/\n・ソースコード - https://github.com/Cardano-After-Dark/hydra-poc/tree/main\n・実装を介したドキュメントの復元: https://github.com/Cardano-After-Dark/hydra-poc/tree/main\n\nマイルストーン完了の証拠\n・最終報告書へのリンク → https://github.com/Cardano-After-Dark/hydra-poc/blob/main/docs/blog/close-out.md\n・最終クローズアウト映像へのリンク → https://www.youtube.com/watch?v=GLbdjFRHsLE\n・ケーススタディ記事や動画は公開中→ https://cardanoafterdark.io/blog/\n\n投稿者:\n言うと、End-Dateが間違っていたし、修正されています - 素晴らしいキャッチ。 Start-Date は、遅延により14.04.2025に最初のバッチを受け取ったので、しかし正しいです。 大変お世話になりました."
+    }
+  ]
+}

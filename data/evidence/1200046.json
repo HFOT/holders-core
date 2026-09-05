@@ -1,0 +1,78 @@
+{
+  "title": "BTC/ETH smart accounts on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "Repository with code and explanation. The publicly accessible repository on FluidTokens GitHub contains all the files and code snippets to integrate BTC Addresses in the ordinary use of Cardano transactions and smart contracts. In this repository, the community will find a Cardano smart contract that behaves as smart account, allowing the Bitcoin wallet to interact with Cardano. In other words, the BTC wallet is interacting with a Cardano smart contract (smart account) that interacts with Cardano users and other smart contracts.\nThe code is based on Plutus V2, eventually written in Aiken and Lucid.\nThe ReadMe file of the same repository contains a clear explanation on how to use the code provided to allow BTC Accounts in dApps.",
+      "criteria": "The repository contains the code to integrate BTC Accounts with the explanations on how to do it. Users are able to read and use the code, following the steps in the explanation file.\nAn example of Cardano transaction executed from a BTC wallet is provided.",
+      "report": "The first milestone is completed and we were able to interact with Cardano using a Bitcoin wallet, here the results:\n・Youtube video explaining the code link\n・Repository with the code of the smart contract link\n・Transaction of interaction from the bitcoin account to the cardano contract link\n・The readme file that explains the code link \n・Added a step by step guide in the readme, cloning the repo, installing aiken, using the bitcoin publickey of the user to the contract to generate the Cardano address, in the milestone number 2 there will be the frontend in order to users that have no dev skills to interact with this project\n・Added the documentation regarding the ECDSA offchain signature used, the user is signing the transaction willing to do on Cardano using a bitcoin wallet, then this can be used to propagate the transaction on Cardano\n\nThe wallet used in this example was XVerse, a bitcoin hot wallet used to sign the transaction to interact with Cardano smart contract",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 85799,
+      "promise": "In a subdomain of FluidTokens.com website, we create a user-friendly interface where the users can use Bitcoin wallets to execute some examples of Cardano token transfers and to interact with a Cardano smart contract. This is the demo of the code developed in Milestone 1.\nThe Bitcoin wallet will send Cardano tokens in a transaction through the Cardano smart contract (smart account) without the need of downloading any Cardano wallet. It will also be able to interact with a Cardano smart contract.",
+      "criteria": "User can connect their BTC wallet and execute a token transfer from the demo interface as result of the implementation of the code delivered in Milestone 1. Behind the scenes, the BTC wallet connects to the user Cardano smart account (a smart contract) and transfers tokens from it or interacts with a Cardano smart contract.\nThe link to the demo is added as example in the ReadMe of the project repository.",
+      "report": "The proof of achievement for milestone 2 is completed now:\n・Platform to interact with the smart contract with Bitcoin wallet link\n・Readme in the repository updated with link of platform \n・Repository link: https://github.com/FluidTokens/ft-cardano-btc-eth-accounts/tree/main\n・Added in the readme more detailed docs about the wallets compatible\n・Link of compatible Bitcoin wallets Xverse MagicEden Unisat Leather\n・Live Demo link\n\nWe already got 10 users that tested the platform and are interacting with cardano using bitcoin wallets\n\nBItcoin wallets supported:\n\nXVerse\n・Website: https://xverse.app\n・Supported Networks: Bitcoin, Bitcoin Ordinals (Layer 2), Stacks\n・Details: XVerse is a multi-network wallet focused on Bitcoin and its ecosystem, offering support for both Bitcoin transactions and Layer 2 solutions like Ordinals.\n\nUnisat\n・Website: https://unisat.io\n・Supported Networks: Bitcoin, Bitcoin Ordinals\n・Details: Unisat is a web-based wallet tailored for Bitcoin and Ordinals, emphasizing simplicity and fast transactions on the Bitcoin network.\n\nLeather\n・Website: https://leather.io\n・Supported Networks: Bitcoin, Bitcoin Ordinals\n・Details: Leather is a Bitcoin-focused wallet offering secure storage and transaction capabilities, with added support for Ordinals.\n\nMagic Eden\n・Website: https://magiceden.io\n・Supported Networks: Bitcoin, Ethereum, Solana, Polygon\n・Details: Primarily known as a marketplace, Magic Eden also offers wallet services with multi-chain support, enabling transactions across various blockchains.\n\nOKX\n・Website: https://www.okx.com\n・Supported Networks: Bitcoin, Ethereum, Solana, Avalanche, and more\n・Details: OKX is a versatile platform offering wallet services along with trading and staking capabilities, supporting a wide range of networks.",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 18
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 68000,
+      "promise": "Repository with code and explanation. The publicly accessible repository on FluidTokens GitHub contains all the files and code snippets to integrate ETH Addresses in the ordinary use of Cardano transactions and smart contracts. In this repository, the community will find a Cardano smart contract that behaves as smart account, allowing the Ethereum wallet to interact with Cardano. In other words, the ETH wallet is interacting with a Cardano smart contract (smart account) that interacts with Cardano users and other smart contracts.\nThe code is based on Plutus V3, eventually written in Aiken and Lucid.\nThe ReadMe file of the same repository is expanded to contain a clear explanation on how to use the code provided to allow ETH Accounts in dApps.",
+      "criteria": "The repository contains the code to integrate ETH Accounts with the explanations on how to do it. Users are able to read and use the code, following the steps in the explanation file.\n\nAn example of Cardano transaction executed from a ETH wallet is provided.",
+      "report": "・Explanation video link\n・ETH compatible contract on Aiken link\n・Current smart account frontend link\n・Transaction on testnet using the contract link \n・Updated repository: link\n・Updated readme: link\n\nChanged the notes to be in english to be more readable\nAdded in the readme link and reference to the evm side\nEVM wallets are working but frontend is in progress, is next milestone scope.",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 14300,
+      "promise": "In a subdomain of FluidTokens.com website, we create a user-friendly interface where the users can use Ethereum wallets to execute some examples of Cardano token transfers and to interact with a Cardano smart contract. This is the demo of the code developed in Milestone 3.\nThe Eth wallet will send Cardano tokens in a transaction through the Cardano smart contract (smart account) without the need of downloading any Cardano wallet. It will also be able to interact with a Cardano smart contract.",
+      "criteria": "User can connect their ETH wallet and execute a token transfer from the demo interface as result of the implementation of the code delivered in Milestone 3. Behind the scenes, the Eth wallet connects to the user Cardano smart account (a smart contract) and transfers tokens from it or interacts with a Cardano smart contract.\nThe link to the demo is added as example in the ReadMe of the project repository.",
+      "report": "The proof of achievement for milestone 2 is completed now:\n・Platform to interact with the smart contract with Ethereum wallet link\n・Readme in the repository updated with link of platform \n・Repository link: https://github.com/FluidTokens/ft-cardano-btc-eth-accounts/tree/main\n・Added in the readme more detailed docs about the wallets compatible\n・Link of compatible Eteherum wallets Metamask MagicEden \n・Live Demo link\n\nWe already got 4 users that tested the platform and are interacting with cardano using etherum wallets\nEteherum wallets supported:\nMetamask\n・Website: https://metamask.io/\n・Supported Networks: Etherum, Polygon, Base\n・Details: Metamask is the most popular etherum wallet and is compatible with any EVM chain\n\nMagic Eden\n・Website: https://magiceden.io\n・Supported Networks: Bitcoin, Ethereum, Solana, Polygon\n・Details: Primarily known as a marketplace, Magic Eden also offers wallet services with multi-chain support, enabling transactions across various blockchains.\n\nThe milestone has been resubmitted since there was an error in interaction, reviewers can now setup a wallet using metamaks or magiceden, get some tADA and send them around",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 11
+    },
+    {
+      "no": 5,
+      "month": "9",
+      "cost": 42901,
+      "promise": "・A subdomain of FluidTokens.com unifies the demo dApps developed in Milestones 2 and 4, allowing the user to use Bitcoin or Ethereum wallets to execute some examples of Cardano token transfers and to interact with a Cardano smart contract. As explained in previous Milestones, here the token transfers always happen throught the Cardano smart contract (smart account)\n・Final close-out report\n・Final closeout video",
+      "criteria": "・User can connect their BTC or ETH wallet and execute a token transfer and interact with a Cardano smart contract from the demo interface. The link to the demo is added as example in the ReadMe of the project repository.\n・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Links to the Cardano transactions executed from a BTC and ETH wallets are provided\n・Instructional video on how to use the full solution from the user perspective",
+      "report": "The proof of achievement for final milestone is completed now:\n・Mainnet link \n・Closeout report link\n・Demo & Closeout video link\n・Repository link \n・Audit link \n・Cardano transaction from bitcoin wallet link Send ADA\n・Cardano transaction from ethereum wallet link (Send USDCx)\n・Social teasing and announcement link",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

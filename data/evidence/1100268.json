@@ -1,0 +1,32 @@
+{
+  "title": "Sundae Labs Comprehensive Specification Development for Gummiworm Protocol on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "A document outlining the roles of different actors within the Gummiworm protocol\nA description of the software components involved\nA description of the user-flows for deposit, transact, contest, and withdrawal",
+      "criteria": "The document should comprehensively cover all anticipated actors and software components with clear definitions and roles\nThe document should outline the security argument for the soundness of the protocol",
+      "report": "Milestone Outputs:\n・Document Draft Completion:\n・A draft document has been completed, outlining the roles of actors, software components, and user flows (deposit, transact, contest, withdrawal) for the Gummiworm protocol.\n・Comprehensive Coverage:\n・The draft comprehensively defines actors, software components, and their interactions, fulfilling the milestone requirements.\n・Security Argument:\n・The document includes an initial security argument, outlining key considerations for the soundness of the protocol.\n\nEvidence of Completion:\n・The draft document is available for review via a private Google Drive link, shared in the discussion section.\n・As per the milestone requirements, the draft is not required to be made public at this time. A public version of the specification will be made available as part of Milestone 2.\n・Members of the community outside the project team have agreed to review the draft, and we’ve publicly acknowledged and thanked them via our announcements on Twitter and Discord, as evidenced by the links below.\n\nSupporting Links:\n・https://x.com/SundaeSwap/status/1844455753488478453\n・https://discord.com/channels/830939534174453800/830948250298875905/1294015169856278620",
+      "kinds": [
+        "social"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "26",
+      "cost": 30000,
+      "promise": "Extend the specification to cover file and wire formats for the relevant communication protocols",
+      "criteria": "The specifications should be clear, technically sound, and align with industry standards where applicable.\nThe specifications should detail the message and file formats, and the benefits of the choices made in designing those formats.\nThe specification will follow the standard specification format that we use for all of our whitepapers and other specification documents, the template for which can be found here: https://drive.google.com/file/d/1kk3szwu7Y9xaY4bOvt4fDsB2dpCxa55q/view?usp=sharing",
+      "report": "A. Output: Extend the specification to cover file and wire formats for the relevant communication protocols\nAcceptance criteria: The specifications should be clear, technically sound, and align with industry standards where applicable.\nThe specifications should detail the message and file formats, and the benefits of the choices made in designing those formats.\nThe specification will follow the standard specification format that we use for all of our whitepapers and other specification documents, the template for which can be found here: https://drive.google.com/file/d/1kk3szwu7Y9xaY4bOvt4fDsB2dpCxa55q/view?usp=sharing\nEvidence: \nWe’ve published the latest specification update covering detailed communication protocols and wire transport formats for the Gummiworm architecture.\nThis milestone includes:\n• Message and file format specifications\n• Wire transport format details\n• Design rationale and protocol considerations\n• Alignment with relevant industry standards where applicable\nThe document is now available for public review and technical validation:\nhttps://gummiworm.net/whitepaper/introduction \nWe welcome community feedback and peer review as development continues.\n・Specification section ready for peer review and technical validation. Relevant sections within the published whitepaper:\n・Network topology and information flow (peer-network) — peer message types, replicated log mechanics, `Wire format` subsection.\n・User requests and Sugar Rush commands — user-facing command and request schemas.\n・Cardano initialization — bootstrap and head configuration file formats.\n・Sugar Rush encryption — payload encryption wire format.\n・Cardano EUTXO as L2 — L2 payload format for the Cardano EUTXO ledger plug-in.\n・Public access and announcement.\n・Whitepaper published at https://gummiworm.net/whitepaper/introduction.\n・Announcement on the Sundae Labs Twitter account: https://x.com/SundaeSwap/status/2060425938156806487 .\n・Announcement in the community Discord (Discord account require",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 12,
+      "cut": true
+    }
+  ]
+}

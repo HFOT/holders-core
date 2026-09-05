@@ -1,0 +1,55 @@
+{
+  "title": "Ledger Live Cardano Integration Maintenance",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 30000,
+      "promise": "This is a maintenance proposal and does not have a specific output defined. Maintenance for Cardano integration will require our team to produce pull requests on the Ledger Live GitHub repo. We also communicate with the Ledger team on various topics regarding Cardano on their Discord server.\nHowever, we plan to complete the items below by Q1 2025.\n・Temporarily disable automatic reward withdrawal to avoid issues transitioning into the Plomin HF Era.\n・Enable automatic reward withdrawal after Plomin HF, including testing.\n・Upgrade relevant codebase to support Plomin HF. (Conway #2 era)",
+      "criteria": "・Our response time usually is 24 hours and resolved within 5 working days, the release also depends on the testing and release cycle of Ledger Live.\n・Public GitHub pull request produced by our team on the Ledger Live repo for bug fixes and new upgrades.",
+      "report": "Targeted deliverables achieved within the expected time. The below items were implemented.\n1 - Disabled auto staking-reward withdrawal before the Plomin HF\n-> https://github.com/LedgerHQ/ledger-live/pull/8770\n-> https://github.com/LedgerHQ/ledger-live/pull/8812\n2 - Enable Auto Reward Withdrawal along with Auto Abstain Drep Delegation\n-> https://github.com/LedgerHQ/ledger-live/pull/9276\n-> https://github.com/LedgerHQ/ledger-live/pull/9412\n3 - Upgraded relevant packages and new certificates (Part of PR above, see the commit below)\n-> https://github.com/LedgerHQ/ledger-live/pull/9276/commits/d0550019b2e608197b6d4e4f61cf3527dc38eeae\n4 - Written Test cases extensive test cases\n-> https://github.com/LedgerHQ/ledger-live/pull/9276/commits/759845e4ab177d724340a8c0e957dbf662b9d41d\n\nSummary\nDisabled auto-staking reward withdrawal before Plomin HF for a smooth transition and to avoid locked wallets. After Plomin HF added Auto Abstain Drep delegation for all Ledger Live users in order to enable staking reward withdrawal. Enabled auto staking reward withdrawal as a native feature of Ledger Live. Written test cases for the newly added upgrades.\n\nReported Issues\nNo reported issues during this period.\n\nKnowledge Sharing with Ledger team\nWe held multiple discussions with Ledger team on their Discord and a few video meetings. We covered wide range of upgrade requirements and Plomin HF related features. Shared information on Drep, staking reward related changes, and actions that must be taken to enable Ledger Live to be a functional Cardano wallet after the HF. We also discussed the new Cardano governance and its features.",
+      "kinds": [
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 30000,
+      "promise": "This is a maintenance proposal and does not have a specific output defined. Maintenance for Cardano integration will require our team to produce pull requests on the Ledger Live GitHub repo. We also communicate with the Ledger team on various topics regarding Cardano on their Discord server.\nHowever, we plan to complete at least the items below during Q2 2025.\n・Upgrade stake registration certificate to the new Conway era format\n・Upgrade stake de-registration certificate to the new Conway era format\n・update supported Cardano Native tokens in sync with the Cardano Nano app\n\nAny other ad-hoc basis maintenance activity",
+      "criteria": "・Our response time usually is 24 hours and resolved within 5 working days, the release also depends on the testing and release cycle of Ledger Live.\n・Public GitHub pull request produced by our team on the Ledger Live repo for bug fixes and new upgrades.",
+      "report": "Code Delivery\nBelow are the items we deliveried as part of this milestone,\n1 - Upgrade stake registration certificate to use Conway Era certificates,\nand\n2 - Upgrade stake de-registration (unstake) certifiate to use Conway era certificates,\n(both above items are part of the PRs below together)\n-> https://github.com/LedgerHQ/ledger-live/pull/10607\n-> https://github.com/LedgerHQ/ledger-live/pull/10813\n3 - Update supported tokens in Ledger Live with the new supported tokens from nano app\n-> https://github.com/LedgerHQ/ledger-live/pull/10937\n\nSummary\nStaking registration and de-registration certificates are deprecated, and new certificate formats are introduced in the conway era. Both old and new certificate formats are compatible as of now but it was required to upgrade to the new certificates for better compatibility and the support for the old certificates (transaction format) would not be compatible with next hf. In this milestone we have upgrades the deprecated certificates to the new conway era ceritificate specification.\nWe have also updated the supported token list in Ledger Live.\n\nReported Issues\n1 User can not see part of their wallet balance after staking\n -> This was an issue on the user side and not a bug within Ledger Live. User had lost the ledger nano device and was trying to import the wallet using cli tools. We helped user recover their wallet succesfully without using a ledger device.\n2. User reported an issue while trying to generate receive address.\n -> We helped debug the error and it was an issue from the nano app side and not Ledger Live. This was the only one such report and it was never reported again.\n\nKnowledge Sharing with Ledger team\nWe had extensive discussions with the new Ledger Live team lead on Cardano address specifications. The discussion covered various types of Cardano addresses, including signature requirements for transactions, staking addresses, and non-signature-required staking keys as part of a Cardano address. The signature",
+      "kinds": [
+        "code"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "8",
+      "cost": 25000,
+      "promise": "This proposal is only funded for 6 months of the maintenance. However, we are including an additional 3 months of maintenance without any additional budget. This milestone is the additional 3 months, Q3 2025.\nMaintenance for Cardano integration will require our team to produce pull requests on the Ledger Live GitHub repo. We also communicate with the Ledger team on various topics regarding Cardano on their Discord server.\nWe plan to complete the items below during Q3 2025.\n・continued - update supported Cardano Native tokens in sync with the Cardano Nano app\n・Update spendable balance to display wallet balance including available reward balance\n・Any ad-hoc basis maintenance activity",
+      "criteria": "・Our response time usually is 24 hours and resolved within 5 working days, the release also depends on the testing and release cycle of Ledger Live.\n・Public GitHub pull request produced by our team on the Ledger Live repo for bug fixes and new upgrades.",
+      "report": "Code Delivery\nBelow are the items we deliveried as part of this milestone,\n1 - Updated spendable balance to include available staking rewards, if the wallet is delegated to a dRep\n2 - No new tokens added in nano app to sync with Ledger Live, hence this task was not needed.\nGitHub PR - https://github.com/LedgerHQ/ledger-live/pull/12362\nSummary\nIn this milestone we have updated the users wallet balance UI to also include staking rewards. Rewards are auto withdrawan when doing a transaction so the spendable balance kept updating, but there are instances where user does not do any transaction and staking rewards keep accumulating. So in order to show the upto date spendable balance we have added staking rewards as part of spendable balance as it is spendable when user does a transaction. \nReported Issues\n\n1. Some users were unable to unstake wallet\n -> There was a bug where user's staking deposit was syncing as 0 instead of 2 ADA, and hence the un-stake functionality was not working, it was fixed within 24 hours of the report.\n2. Users unable to submit transactions\n -> when there were high load of failing tx, our transaction submission service was not able to cope and wad restarting, we fixed this issue within 24 hours of the report.\nKnowledge Sharing with Ledger team\nApart from this milestone, we are in the process of discussing Cardano dRep delegation updates within Ledger Live.",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "9",
+      "cost": 15000,
+      "promise": "・Final close-out report\n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "・Close Out Report - https://drive.google.com/file/d/13QvxA3VUpfacWpqmGjI3DFQvklQf1fqG/view?usp=sharing\n・Close Out Video - https://youtu.be/kMWtzR6LIXs",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

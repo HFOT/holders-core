@@ -1,0 +1,85 @@
+{
+  "title": "Cardano Partnerchain SuperNode by TxPipe",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 33118,
+      "promise": "・A set of stubs of the main system components to serve as placeholders for further development. The main system components are: Kubernetes operator, Management Web UI, Management CLI, API Interface.\n・A CI/CD workflow to build and test the source-code throughout the whole development process of the system. At this initial stage, the pipeline will build and execute the dummy artifacts and tests provided by each of the available stubs.\n・Developer documentation for further development of the system. This includes: developer guidelines, local environment instructions, CI pipeline description / usage.",
+      "criteria": "・All components are ready for further development by replacing stubs with real implementations.\n・A CI/CD pipeline is in place to build / test the different components.\n・Repository contains instructions for further development.\n・Repository source-code shows its licensed under Apache 2.0 license.",
+      "report": "The SuperNode project is in progress, and goals for milestone 1 have been achieved:\n・Publicly available source-code containing the project scaffold that includes the required component stubs.\n\n https://github.com/txpipe/metis \n・Github actions representing the CI/CD pipeline embedded in the same repository with logs of previous executions.\n\n https://github.com/txpipe/metis/actions \n・Markdown files ((eg: README.md) within the repository containing the developer documentation.\n\n https://github.com/txpipe/metis/blob/main/README.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "8",
+      "cost": 33118,
+      "promise": "・Off-chain code for interacting with partnerchain contracts\n・UI for SPOs to onboard a partnerchain\n・UI for SPOs to track partnerchain membership status",
+      "criteria": "・An SPO is able to use the UI to join a partnerchain (testnet environment)\n・An SPO is able to use the UI to view existing partnerchain memberships",
+      "report": "・Publicly available source-code containing off-chain / UI code\n\n https://github.com/txpipe/metis/tree/main/frontends\n https://github.com/txpipe/metis/blob/main/frontend/tx3/main.tx3\n・Video showing how to interact with the UI\n\n https://youtu.be/3B3wKv2o3NQ\n・On-chain transactions on Cardano show the corresponding interactions\n\n https://preview.cexplorer.io/tx/d8de28ecd5d668712661fc83ad74290c989d443978347cfbb3715797270acd0e",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 33118,
+      "promise": "・Substrate node provisioning script using Helm charts\n・Custom OCI-based Helm chart registry for partnerchains\n・Metric scraping and storage mechanism\n・Staging environment with example nodes",
+      "criteria": "・An SPO is able to provision a Substrate partnerchain node using a Helm chart from our provided registry\n・Health & activity metrics from a provisioned node are available for querying",
+      "report": "・Publicly available source-code containing infrastructure scripts\n\n https://github.com/txpipe/metis/tree/main/extensions\n・Link to OCI-based Helm registry that contains an example chart for a partnerchain\n\n Please run the following cURL request to query the registry:\ncurl -s -X POST https://supernode.store/v2/_zot/ext/search -H \"Content-Type: application/json\" -d '{ \"query\": \"{ RepoListWithNewestImage( requestedPage: { limit: 10, offset: 0, sortBy: ALPHABETIC_ASC }) { Page { TotalCount ItemCount } Results { Name NewestImage { Tag DownloadCount LastUpdated Description } } } }\" }' | jq\n・Video showing a walkthrough of the running staging environment\n\n https://youtu.be/EAJR4iJXpBo",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 33118,
+      "promise": "・UI for provisioning new Substrate node\n・UI for monitoring running Substrate nodes\n・UI for discovering available partnerchains",
+      "criteria": "・An SPO is able to use the UI to provision a new partnerchain node\n・An SPO is able to use the UI to monitor running nodes\n・An SPO is able to use the UI to browse available partnerchains",
+      "report": "・Publicly available source-code of the developed UI components\n\nhttps://github.com/txpipe/metis/tree/main/frontends/dashboard\n・Video showing a walkthrough of how to use the available UI\n\nhttps://youtu.be/jgltu0DlKpY",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "11",
+      "cost": 33118,
+      "promise": "・Stand-alone install package for the SuperNode\n・Script for deployment on cloud provider\n・Documentation site with setup & usage instructions",
+      "criteria": "・An SPO is able to install the SuperNode by following the docs\n・An SPO is able to deploy the SuperNode to their cloud provider account\n・An SPO is able to operate the SuperNode by following the docs",
+      "report": "・Publicly available source-code of deployment scripts\n\nhttps://github.com/txpipe/metis/tree/main/bootstrap\n・Video showing a walkthrough of how to install the SuperNode\n\nhttps://youtu.be/VEplcoH32GQ\n・Publicly available documentation site\n\nhttps://github.com/txpipe/metis/tree/main/bootstrap#readme",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 6,
+      "month": "12",
+      "cost": 33123,
+      "promise": "・publicly available source-code of the complete system\n・publicly available documentation site with setup & usage instructions\n・a closeout video showcasing the final output of the project\n・a closeout report describing the project process and outcome",
+      "criteria": "・the system includes the features described in the proposal's scope\n・the closeout video complies with Catalyst requirements\n・the closeout report complies with Catalyst requirements",
+      "report": "Source-code available in the Github repository\nhttps://github.com/txpipe/metis\n\nPublic documentation site\nhttps://github.com/txpipe/metis/blob/main/README.md\n\nCloseout video uploaded to YouTube\nhttps://www.youtube.com/watch?v=u3cBA9bEoJc\n\nCloseout report uploaded to Google drive\nhttps://drive.google.com/file/d/1XZjWtiqWF4-SXhqQi9h5QhWRT4vx1zuJ/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "title": "Cardano Privacy Layer: Zero-Knowledge Proof-Based Membership Verification and Anonymous Voting & Signaling PoC.",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 28571,
+      "promise": "Originally, this protocol is being developed on the Ethereum Blockchain; therefore the first step is to do a technical study of the revamping of the protocol to Cardano. This consist in: \n・Workflow design. Design the workflow of the protocol to be used in the context of the EUTxO model in contrast to the Account model that Semaphore originally uses.\n・Elliptic curve adaptation. The Zero-Knowledge proof technology that the Semaphore uses is based on elliptic curve cryptography. Therefore, it is necessary to study the adaptation of the circuits from the BN254 curve used in Ethereum to the BLS12-381 that will be used in Cardano in the next Plutus V3.\n\nOutput: \n・Technical document: A technical document summarizing the findings and conclusions derived from the first phase of the research.",
+      "criteria": "The document outlines a clear and coherent explanation of the protocol design and circuit adaptation.",
+      "report": "The technical document summarazing the results of our research phase 1 is included in the following link:\nhttps://github.com/Modulo-P/Cardano-Semaphore/blob/main/Research-Semaphore-Modp-06-2024.pdf\nAs a summary, the document consists of three chapters: \n・In the first chapter the Semaphore protocol is introduced and explained in general terms.\n・In the second chapter the Semaphore protocol is deeply analyzed.\n・In the third chapter we discuss the adaptation of the protocol and outline a first iteration of this process.\n\nThe relevant part for the output criteria that includes the protocol design and the elliptic curve adaptation is present mainly in the third chapter.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 28571,
+      "promise": "In a second milestone we will research about the rest of the points needed for the technical study document:\n・Smart contract prototyping. A prototype of the base contracts of the Semaphore protocol will be designed.\n・Setup ceremony security plan and considerations. The Semaphore protocol uses the Groth16 SNARK variant which requires a trusted setup in order to generate valid proofs. To generate the setup values, a multi-party ceremony has to be made, so we have to organize this setup in such a way that no security is compromised. \n\nOutput: \n・Technical document. A technical document summarizing the findings and conclusions derived from the second phase of the research.\n・Pseudo-code: Minimally, a pseudo-code that implements the base contracts of the Semaphore protocol in Cardano. Optionally, an implementation of this pseudo-code in Aiken.",
+      "criteria": "The document outlines a clear and coherent explanation of the prototyping and security consideration. And the document includes the pseudo-code of the Semaphore base contracts in a coherent manner with the protocol design given in the first phase.",
+      "report": "[Edit]\nAs requested chapter 4 can be found in this link:\nhttps://github.com/Modulo-P/Cardano-Semaphore/blob/main/Research-Semaphore-Chapter4.pdf\n[Output 1]\nThe research on the setup phase, along with the ceremony guidelines and security considerations, can be found in the fourth chapter of the document. The document covers some key topics:\n・What a trusted setup is and why it is important.\n・The challenge of adapting the setup and circuits to the BLS12-381 curve supported by Cardano.\n・The two phases required to conduct a setup ceremony.\n・The plan and guidelines for the ceremony that will take place in the next milestone.\n\nThe document is located in the following repository:\nhttps://github.com/Modulo-P/Cardano-Semaphore/blob/main/Research-Semaphore-Modp-09-2024.pdf\n[Output 2]\nIn this milestone, we surpassed the goal of creating a mere schematical prototype and are fully working toward achieving the first iteration of the protocol, following the specifications in the third Chapter.\nThe first important component of this proposal is the smart contract. The contract implements all the constraints specified in the third chapter (Protocol adaptation), now we are performing tests on the contract. The code can be found in this github repo in the 'validators/semaphore.ak' file:\nhttps://github.com/Modulo-P/Cardano-Semaphore\nThe second important component is the circuit that we adapted to make it work with the BLS12-381 curve: \nhttps://github.com/Modulo-P/modp-semaphore-bls12381/blob/main/packages/circuits/circuits/semaphore.circom\nAlso we are advancing on some of the off-chain code to build the Semaphore transactions: \nhttps://github.com/Modulo-P/modp-semaphore-bls12381/tree/main/packages/typescript/src\n[Update]\nIt is worth noting that, the protocol design of the Chapter III has been updated with some changes. New validator constraints have been specified in the document.",
+      "kinds": [
+        "code"
+      ],
+      "links": 5
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 14285,
+      "promise": "We will need to do a trusted setup ceremony of the Semaphore circuits for the BLS12-381 curve, which is a multi-party process where different participants contribute with secret values to the Setup phase of the SNARK scheme. This will require a preparation: Wrap-up the needed software to generate the secret values for each party.\nOutput:\n・Ceremony software: A GitHub repository containing the software and resources required for the setup ceremony.\n・Record of the test ceremony: A document with evidence of the completion of the test ceremony.\n・Explanatory and guide video of the setup ceremony. A video with an explanation of the trusted setup and a general overview of the process. Also it must show how to contribute to the process and what to expect while participating on it.",
+      "criteria": "The software given must achieve a successful test-ceremony with at least 3 individuals. This means that we can succesfully generate the prover-key and verification-key to construct the cryptographic proofs. Also the record and video must explain and show clearly and in a coherently manner a setup ceremony.",
+      "report": "We completed the preparation of the trusted setup ceremony. \n・Software\n\nWe created a npm package with the software that will be used to accomplish the ceremony. The instructions about how to download the software and the source code can be found in the link. \nhttps://www.npmjs.com/package/@modulo-p/phase2cli\n・Guides and information\n\nWe did a guide that explains how to contribute to the ceremony: \nhttps://github.com/Modulo-P/Cardano-Semaphore/blob/main/docs/Ceremony/contribution.md\nAlso there is a video that explains and show how to install the software and contribute to the ceremony: \nhttps://www.youtube.com/watch?v=US3Tg3c5rK4\n・Test ceremony document\n\nWe uploaded a document that details the ceremony that we simulated, which includes records of the contributions made along with the derived keys. \nhttps://github.com/Modulo-P/Cardano-Semaphore/blob/main/docs/Ceremony/test_outputs/Ceremony_document.pdf",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 28573,
+      "promise": "Educate about the process and coordinate the parties to contribute to the ceremony.\nOutput: \n・Key pair. After the completion of the setup ceremony, a pair of proof and verification keys will be generated; these are essential for constructing proofs related to the circuits of the Semaphore protocol.\n・Ceremony document. A document with evidence of the completion of the ceremony and metrics of the process. \n・Close-out report: A report with the summary and conclusions of the proposal.\n・Close-out video: A video with the summary and conclusions of the proposal.",
+      "criteria": "・The setup ceremony is considered successful if at least one individual destroys their secret contribution. Therefore with a number of 15 individuals it is a reasonable margin to consider it secure. Nevertheless, the budget considers a maximum of 50 paid participants. \n・The ceremony record clearly documents the setup ceremony, it must include a list and metrics of participants, the material that explains the process to the participants and the cryptographical data results from the process. \n・The close-out report and video clearly summarize the project and its conclusion in coherence with actua",
+      "report": "Here are the outputs and the proof of evidence below.\n・The public keys. These are the public keys derived from the phase-2 trusted setup (Ceremony) done in December. The file contains both the prover and verification keys. \n\n Evidence of output (1): https://github.com/Modulo-P/Cardano-Semaphore/tree/main/keys\n・The ceremony document. This is the ceremony document that explains how the trusted was done and its conclutions.\n\n Evidence of output (2): https://github.com/Modulo-P/Cardano-Semaphore/blob/main/docs/Ceremony/Cardano%20Semaphore%20%7C%20Official%20Ceremony%20-%20December%202024/Final%20Ceremony%20Document..pdf\n・Close-out report.\n\n Evidence of output (3): https://github.com/Modulo-P/Cardano-Semaphore/blob/main/docs/Ceremony/Cardano%20Semaphore%20%7C%20Official%20Ceremony%20-%20December%202024/Close-out%20report%20%231100066.pdf\n・Clouse-out video.\n\n Evidence of output (4): https://www.youtube.com/watch?v=9rn8Q35DZV8",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    }
+  ]
+}

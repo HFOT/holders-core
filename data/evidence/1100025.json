@@ -1,0 +1,69 @@
+{
+  "title": "Anastasia Labs X Maestro - Plug ‘n Play 2.0",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "Develop and implement the following contracts\n・upgradable multisignature (multisig) smart contract using Plutus that enables authorized members to execute asset transactions within predefined thresholds. This contract should demonstrate secure spending of assets, seamless adjustment of signer thresholds, and dynamic addition or removal of signers for enduring usability\n・Develop a subscription payments smart contract using Plutus which enables users to effortlessly manage recurring payments directly from their wallets",
+      "criteria": "Acceptance Criteria for Upgradable Multisignature Smart Contract:\n・Secure Spending of Assets: Demonstration of the smart contract ensuring that asset transactions can only be executed by authorized members.\n・Seamless Adjustment of Signer Thresholds: Demonstration of implementation of functionality allowing authorized members to adjust signer thresholds without compromising security.\n・Dynamic Addition or Removal of Signers: Showcase of smart contract's capability to add or remove signers dynamically as needed.\n\nAcceptance Criteria for Subscription Payments Smart Contract:\n・Effortlessly Manage R",
+      "report": "Resubmiting Milestone one of our proposal\nUpgradable Multisignature Smart Contract Report - https://drive.google.com/file/d/1BFH4m80XlFwLX5ckgdDBo3kYbQoqvrNq/view?usp=sharing\nHere we can find:\n● Documentation showcasing successful asset transactions executed by authorized members, along with evidence of rejected unauthorized transactions is available on https://github.com/Anastasia-Labs/plug-n-play-contracts.\n● Documentation illustrating the process of adjusting signer thresholds within the smart contract is available at\nhttps://github.com/Anastasia-Labs/aiken-upgradable-multisig\n● Documentation outlining the procedure for dynamically adding or removing signers from the multisignature contract is available at\nhttps://github.com/Anastasia-Labs/aiken-upgradable-multisig\n\nSubscription Payments Smart Contract Report - https://drive.google.com/file/d/1cimhNc8p3ZKFZU6uyLBzfYrxkrGSUh2h/view?usp=sharing\nHere we can find\n• Documentation detailing the effortless management of recurring payments through smart contracts \n• Comprehensive unit testing results and documentation verifying the functionality and reliability of the payment subscription smart contract\n• Contracts and documentation are available at \nhttps://github.com/Anastasia-Labs/payment-subscription",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 90000,
+      "promise": "・Comprehensive design document outlining the structure, components, and functionalities of the Offchain SDKs tailored to the specified multisig contracts and subscription payments smart contract.\n・Codebase of the implemented Offchain SDKs, organized according to the design specifications outlined in the design document.\n・Documentation detailing the usage and integration of the SDKs with common development environments and languages.\n・Test cases and results demonstrating rigorous testing conducted on the SDKs to ensure their reliability and effectiveness.",
+      "criteria": "・The design document must clearly define the structure, components, and interactions of the Offchain SDKs, specifically tailored to the specified multisig contracts and subscription payments smart contract.\n・The implemented SDKs should closely adhere to the design specifications outlined in the design document.\n・SDK functionalities must enable seamless interaction with the specified multisig contracts, ensuring ease of use for developers.\n・Test results should demonstrate that the SDKs meet the specified criteria for reliability and effectiveness.",
+      "report": "We are happy to submit Milestone 2 for this proposal. This PoA contains\n・Comprehensive design document detailing the structure and functionalities of the Offchain SDKs for Multisig contracts and is available at https://github.com/Anastasia-Labs/aiken-multisig-offchain\n・Implemented Offchain SDKs for Multisig contracts, along with documentation on usage and integration is available at https://github.com/Anastasia-Labs/aiken-multisig-offchain?tab=readme-ov-file#usage-example\n・Test reports summarising the results of testing, including any identified issues or bugs and their resolutions for Multisig contracts is available at https://github.com/Anastasia-Labs/aiken-multisig-offchain/tree/main/test\n・Comprehensive design document detailing the structure and functionalities of the Offchain SDKs for payment subscription contracts and is available at https://github.com/Anastasia-Labs/payment-subscription-offchain?tab=readme-ov-file#usage-example\n・Implemented Offchain SDK for payment subscription and is available at https://github.com/Anastasia-Labs/payment-subscription-offchain\n・Test reports summarising the results of testing, including any identified issues or bugs and their resolutions for payment subscription contracts is available at https://github.com/Anastasia-Labs/payment-subscription-offchain/tree/main/test",
+      "kinds": [
+        "code"
+      ],
+      "links": 12
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 75000,
+      "promise": "The following contracts onchain code along with offchain SDKs are integrated with Maestro\n・upgradable multisignature (multisig) smart contract is integrated and ready to use at https://www.gomaestro.org/smart-contracts\n・subscription payments smart contract is integrated and ready to use at https://www.gomaestro.org/smart-contracts",
+      "criteria": "Maestro API endpoints are available through Maestro Platform for both \n・upgradable multisignature (multisig) smart contract and ready to use at https://www.gomaestro.org/smart-contracts\n・subscription payments smart contract and ready to use at https://www.gomaestro.org/smart-contracts",
+      "report": "We are happy to submit Milestone 3 for Plug and Play 2.0\nHere we are submitting proof that both contracts are live and deployed on gomaestro.org with API endpoints \nhttps://www.gomaestro.org/smart-contracts\nSubscription service documentation\nhttps://www.postman.com/go-maestro/maestro-api/request/eyp6awq/create-a-subscription-service\nMultisig contract documentation\nhttps://www.postman.com/go-maestro/maestro-api/request/worc22v/initiate-a-multisig-contract\n\nWe are also providing video with extensive explanation of both contracts and guide on how to use Maestro API endpoints\nSubscription video guide\nhttps://www.youtube.com/watch?v=G-lBB6MX3lg\nMultiSig video guide\nhttps://www.youtube.com/watch?v=AtnnbzBWB-I",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 15000,
+      "promise": "・Developed integration test cases specifically targeting the API Endpoints associated with: \n・multisig smart contract within Maestro\n・subscription payments smart contract within Maestro.\n・Test cases cover various scenarios, including normal functionality, edge cases, and error handling.\n・Documentation providing instructions for running the integration tests and interpreting the results.",
+      "criteria": "・Integration test cases cover all API Endpoints associated with the specified contracts, verifying both expected and edge-case behaviors.\n・Test cases are written in a clear and understandable manner, with detailed descriptions of test scenarios and expected outcomes.\n・Documentation provides clear instructions for developers on how to run the integration tests and interpret the results.",
+      "report": "Submitting PoA for Milestone 4:\n・general report demostrationg results of integration testing - https://github.com/Anastasia-Labs/project-close-out-reports/blob/main/f11-plug-and-play-02-closeout-report/Milestone%204/main.pdf\n・test report for the Multisig Smart Contract - https://github.com/Anastasia-Labs/aiken-multisig-offchain/blob/integration-testing/TEST-README.md\n・test report for Subscription Smart Contract - https://github.com/Anastasia-Labs/payment-subscription-offchain/blob/integration-testing/TEST-README.md\n・integration test cases targeting the API Endpoints associated with the multisig smart contract and subscription payments smart contract can be found at https://github.com/Anastasia-Labs/aiken-multisig-offchain/tree/main/test\n・Test case documentation providing insights into the coverage and thoroughness of the testing approach - https://github.com/Anastasia-Labs/aiken-multisig-offchain/tree/main/test#running-tests\n・Execution logs or reports demonstrating the results of integration testing, including pass/fail status - https://github.com/Anastasia-Labs/aiken-multisig-offchain/blob/main/assets/images/multisif-tests.png",
+      "kinds": [
+        "code"
+      ],
+      "links": 12
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 45000,
+      "promise": "・Documentation with detailed instructions on how to use API endpoints to compose and create SC with Maestro.\n・Project Closeout Report\n・﻿Project Closeout Video",
+      "criteria": "・Documentation is clearly written along with a high level approach of each implementation\n・Project Closeout Report\n・﻿Project Closeout Video",
+      "report": "We are proud to submit our final milestone for this proposal:\nProject Closeout Report: https://github.com/Anastasia-Labs/project-close-out-reports/blob/main/f11-plug-and-play-02-closeout-report/Milestone%205/plug-and-play-02.pdf\nProject Closeout Video: https://www.youtube.com/watch?v=_lMovZI_BJ8\nMultisig Contract How To Guide: https://github.com/Anastasia-Labs/aiken-multisig-offchain/blob/main/docs/multisig-maestro-api.pdf\nPayment Subscription Contract How To Guide: https://github.com/Anastasia-Labs/payment-subscription-offchain/blob/main/docs/subscription-maestro-api.pdf",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

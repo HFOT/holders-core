@@ -1,0 +1,44 @@
+{
+  "title": "Cardano Lightning Network (Phase 1) - Payment Gateways",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 14580,
+      "promise": "・A blog post on our our analysis of bitcoin lightning with particular focus on comparing the context of bitcoin with cardano\n・Architectural Decision Records. This is wheere points raised in the blog post will see a more technical and detailed treatment\n・Full spec of the protocol for payment channels and composition of them.",
+      "criteria": "・Blog post on our analysis of bitcoin lightning\n・Architectural Decision Records which will sum up the discussions and conclusions.\n・Spec of the protocol clearly explains the reasoning (some proofs on the paper) behind it which allows to asses correctness.\n・Spec of the protocol includes the API of the smart contract specification.",
+      "report": "We fixed the typo in the URL (protcol -> protocol) *but* actually we also reworked and improved L2 spec on the way. Sorry for the delay but we were forced to switch a bit our focus to the F13 related activities:\n\n* The L1 spec: https://github.com/cardano-lightning/cardano-lightning/blob/main/docs/design/l1-spec.md\n\n* The blog post about Bitcoin Lightning Network in the context of Cardano Lightning design: https://cardano-lightning.org/blog/bitcoin-lightning-channel-design/\n\n* The set of ADRS: https://github.com/cardano-lightning/cardano-lightning/tree/main/docs/adrs\n\n* The L2 peer protocol spec: https://github.com/cardano-lightning/cardano-lightning/blob/main/docs/design/l2-peer-protocol-spec.md",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "15",
+      "cost": 16524,
+      "promise": "・An implementation of smart contract(s)\n・A suite of tests with reasonable coverage of the smart contract(s)\n・Benchmarks of the smart contract(s) that indicate the exunits under \"typical\" use.",
+      "criteria": "・The smart contract(s) is an implements the protocol spec (milestone 1).\n・Tests cover each part of the SC lifecycle. \n・All tests of the test suite run. (A nix flake is provided with comprehensive devshell. A README will explain how to run these otherwise but without guarantees on robustness) \n・All benchmarks run. \n・Explanation and evidence of how the benchmark numbers translate to tx capabilities / constraints ie estimate typical costs and throughput of txs.",
+      "report": "A. \nOutput: An implementation of smart contract(s)\nAcceptance criteria: The smart contract(s) is an implements the protocol spec (milestone 1).\nEvidence: An implementation of smart contract(s):\n * https://github.com/cardano-lightning/cardano-lightning/tree/main/aik/lib/cl\n * Most of the logic is in `step.aik` and `main.aik`\n\nB.\nOutput: A suite of tests with reasonable coverage of the smart contract(s)\nAcceptance criteria:\n * Tests cover each part of the SC lifecycle.\n * All tests of the test suite run. (A nix flake is provided with comprehensive devshell. A README will explain how to run these otherwise but without guarantees on robustness)\nEvidence: A suite of tests with reasonable coverage of the smart contract(s):\n * https://github.com/cardano-lightning/cardano-lightning/tree/main/aik/lib/cl/tests/benchmarks\n * Most of the test logic is in `gen.aik` and in `main.aik`\n * Instructions to run tests are in the README: https://github.com/cardano-lightning/cardano-lightning/tree/main/aik#testing\n\nC.\n Output: Benchmarks of the smart contract(s) that indicate the exunits under \"typical\" use.\nAcceptance criteria:\n * All benchmarks run.\n * Explanation and evidence of how the benchmark numbers translate to tx capabilities / constraints ie estimate typical costs and throughput of txs.\nEvidence: Benchmarks of the smart contract(s) that indicate the exunits under \"typical\" use:\n * The same directory as the benchmarks above: https://github.com/cardano-lightning/cardano-lightning/tree/main/aik/lib/cl/tests/benchmarks\n * Summary of the results is in the README here: https://github.com/cardano-lightning/cardano-lightning/tree/main/aik/bench",
+      "kinds": [
+        "code"
+      ],
+      "links": 5
+    },
+    {
+      "no": 3,
+      "month": "17",
+      "cost": 29160,
+      "promise": "・Spec of L2 System architecture. Including\n・Component mapping diagram \n・An explanation of each component, what id does, for whom and how it relates to the other components. \n・API specs in an appropriate form eg Protobuf and/or OpenApi\n・Distinction between core and auxiliary aspects of spec. \n・Flagging any aspect (such as the establishing of specific constant values) that will need to be established empirically. For example, how long to hold channels open. \n・Explicit descriptions of the requirements of interactions with L1 in terms of read/ store (ie chain indexer) and write ie submit txs\n・Blog post : Exposition on possible different user behaviour with respect to the protocol. For example: A user that only spends and has low resources vs a gateway aiming for high bidirectional throughput. This will act as an intro/signposting article to the spec.\n・Architectural Decision Records will record why some options were deemed _not_ suitable (and why we choose others instead).\n\nIt is our aspiration that the spec is clear and comprehensive. So much so that third parties will be able to develop implementations and integrations of the protocol without awaiting and consulting our own implementa",
+      "criteria": "・A (versioned) spec document(s) in the form of (or part of) a website (possibly single page). Including (and these are as above):\n・Component mapping diagram\n・An explanation of each component, what id does, for whom and how it relates to the other components.\n・API specs in an appropriate form eg Protobuf and/or OpenApi\n・Distinction between core and auxiliary aspects of spec.\n・Flagging any aspect (such as the establishing of specific constant values) that will need to be established empirically. For example, how long to hold channels open.\n・Explicit descriptions of the requirements of interactio",
+      "report": "I want to make a few upfront clarifications. We actually went far beyond the original scope of the milestone as its goal was only to produce a design and specs. We actually implemented and not only prototyped most of the specs which are presented below:\n\n * A fully working backend edge node which allows hopping of payments between between Cardano Lightning and Bitcoin Lightning network: https://github.com/cardano-lightning/konduit\n\n * A still not released PWA (progressive web app) which allows users to interact with that backend edge node and perform payments:\n\n * Code: https://github.com/cardano-lightning/konduit-js\n\n * Deployment: https://app.konduit.channel/\n\n * Webpage: https://konduit.channel/\n\nGiven that extended scope we decided to create a bunch of new repositories but all of them reside under `cardano-lightning` organization. Some of the artifacts which we deliver as a part of this milestone are spread across those other repositories.\n\nA.\n Output: Component mapping diagram\n Acceptance criteria: A spec document in the form of a website.\n Evidence: https://github.com/cardano-lightning/cardano-lightning/blob/main/docs/design/l2-spec/components/gateway.svg\n\nB.\n Output: An explanation of each component, what id does, for whom and how it relates to the other components.\n Acceptance criteria: A spec document in the form of a website.\n Evidence: https://github.com/cardano-lightning/cardano-lightning/blob/main/docs/design/l2-spec/components/gateway.md\n\nC.\n Output:\n * API specs in an appropriate form eg Protobuf and/or OpenApi\n * Distinction between core and auxiliary aspects of spec.\n * Flagging any aspect (such as the establishing of specific constant values) that will need to be established empirically. For example, how long to hold channels open.\n Acceptance criteria: A spec document in the form of a website.\n Evidence:\n * Specs:\n * Initial version L2 spec version (which was submitted in the milestone 1): https://github.com/cardano-lightning/cardano-lightning/blo",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 14,
+      "cut": true
+    }
+  ]
+}

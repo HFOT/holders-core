@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "1つのオペレーティングシステム(AndroidまたはIOS)用の完了したウォレット統合コードを備えたオープンソースリポジトリ。 次のマイルストーンは、2番目のオペレーティングシステムに焦点を当てます.",
+      "criteria": "Yoroi と同じモバイルデバイスで実行されているアプリは、ユーザーがトランザクションに署名するためにユーザーを要求するために Yoroi ウォレットとやり取りすることができます。その後、トランザクションが署名され、ブロックチェーンに送信されます.",
+      "report": "このマイルストーンは、Yoroi Walletと同じモバイルデバイスで実行されているiOSアプリを達成し、Yoroi Walletとシームレスに連携して、トランザクションに署名してスマートコントラクトとやり取りします。 通常のトランザクション署名プロセスとユーザー確認を経て、トランザクションは署名され、ブロックチェーンに提出されます。 トランザクションをコントラクトに送ったり、コントラクトからやり直したりするのもサポートします。\n\nYoroi Walletを使用してスマートコントラクトとやり取りするデモiOSアプリを保存するビデオ:\nhttps://youtu.be/AJpkn94gqc4\n\nfeature/contract-spend ブランチで完了したウォレット統合コードを持つオープンソースリポジトリ:\nhttps://github.com/bricktowers/yoroi/tree/feature/contract-spend\n\nデモ中に作成されたトランザクション:\nhttps://preprod.cardanoscan.io/transaction/b57747c11e885674f3b6c20cf87496f1261867390e2543e623ec453aaf8bd0a9\nhttps://preprod.cardanoscan.io/transaction/1f188769b1ff47d20e412f02fe56a79eaae016e2da0d7a0eea2a77b53d5a040"
+    },
+    {
+      "no": 2,
+      "promise": "2ndオペレーティングシステム用の完了したウォレット統合コードを備えたオープンソースリポジトリ。 リポジトリには、このマイルストーンを完了した後、AndroidとiOSの両方をサポートするコードが含まれています.",
+      "criteria": "Yoroi と同じモバイルデバイスで実行されているアプリは、ユーザーがトランザクションに署名するためにユーザーを要求するために Yoroi ウォレットとやり取りすることができます。その後、トランザクションが署名され、ブロックチェーンに送信されます。 iOSとAndroidの両方がサポートされています.",
+      "report": "このマイルストーンは、Yoroi Walletと同じモバイルデバイスで実行されているAndroidアプリを達成し、Yoroi Walletとシームレスに連携して、トランザクションに署名してスマートコントラクトとやり取りします。 通常のトランザクション署名プロセスとユーザー確認を経て、トランザクションは署名され、ブロックチェーンに提出されます。 トランザクションをコントラクトに送ったり、コントラクトからやり直したりするのもサポートします。\nYoroi Walletを使用してスマートコントラクトと相互作用する保存デモAndroidアプリを示すビデオ:\nhttps://youtu.be/ygR lZHCuag\nfeature/contract-spend ブランチで完了したウォレット統合コードを持つオープンソースリポジトリ:\nhttps://github.com/bricktowers/yoroi/tree/feature/contract-spend\nデモ中に作成されたトランザクション:\nhttps://preprod.cardanoscan.io/transaction/f01fa05e1793f97a2509949fdff77045441d957facd2b9caa2ad94fa0276d653\nhttps://preprod.cardanoscan.io/transaction/e3c926592ebfcc1b01d3b347d60a9c350c4eb09c977acf0d955181bc4df153e"
+    },
+    {
+      "no": 3,
+      "promise": "・公開GitHubリポジトリに統合を使用するコード例\n・公開GitHubリポジトリにモバイルdAppsをYoroiと統合する方法に関するドキュメント\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・コード例を公開しています。\n・書類の公開\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "この業績の証明は、最終的なマイルストーン、「例とドキュメント」をカバーしています。 プロジェクトを完了します。マイルストーン1と2は、それぞれiOSとAndroid用のモバイル署名統合を提供し、このマイルストーンは、ドキュメント、コードの例、クローズアウトレポート、および他の開発者が使用できるクローズアウトビデオを提供します。\n下記の公開リポジトリ(Apache-2.0)で全ての資料が公開されています。\n\nA. 出力: 公開 GitHub リポジトリで統合を使用する方法を示すコード例。\n受諾条件:コード例は公開しています。\n証拠: https://github.com/bricktowers/yoroi/tree/feature/contract-spend/examples\nリポジトリには、マイルストーン1とマイルストーン2のデモンストレーションを記録するために使用されるモバイルアプリケーションの例が含まれており、ビルドと実行手順は、サポートされている各ユースケースをカバーする統合レシピとともに、ADAの支払いをリクエストし、リンクでADAの支払いをリクエストし、契約費を要求し、ウォレットブラウザでdAppを起動します。 各レシピは、リンクと開くウォレット画面を構成するコードを示しています。 起動されたiOSシミュレータまたはAndroidエミュレータへの深いリンクを発行するためのシェルスクリプトが含まれているため、フローは物理的なデバイスなしで練習することができます。\nレシピ: https://github.com/bricktowers/yoroi/tree/feature/contract-spend/docs/mobile-dapp-integration/recipes\n\nB. 出力: 公開 GitHub リポジトリの Yoroi とモバイル dApps を統合する方法に関するドキュメント。\n受諾の基準:文書は公開されています。\n証拠: https://github.com/bricktowers/yoroi/tree/feature/contract-spend/docs/mobile-dapp-integration\nドキュメントは、統合モデル、クイックスタート、yoroi:// および https://yoroi-wallet.com/w1 スキームの完全なリンク参照、転送/request/contract-spend ユースケースの完全なパラメーター参照、リダイレクトによる呼び出し dApp への戻りパス ユニバーサルリンクとアプリリンクの設定を含むため、,"
+    }
+  ]
+}

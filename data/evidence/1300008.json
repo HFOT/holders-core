@@ -1,0 +1,58 @@
+{
+  "title": "[HTLABS] 5 Project templates combining blockchain and internet of things",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 10000,
+      "promise": "・Analysis of Requirements and Functions for 5 IoT Projects\n・Analysis of Current Issues and How Cardano Can Solve Them:\n・List of Required Devices and Hardware Components",
+      "criteria": "・Completion of the report on IoT project requirements and functions, highlighting technical and functional needs for integration.\n・A detailed analysis of current IoT integration issues and how Cardano can solve them.\n・A comprehensive list of required hardware components with clear descriptions and usage instructions.",
+      "report": "Thank you for your support. We would like to submit out PoA of MS1 with these below deliverables:\n・Analysis of Requirements and Functions for 5 IoT Projects\n・Analysis of Current Issues and How Cardano Can Solve Them:\n・List of Required Devices and Hardware Components (Usage instructions added)\n\nAll these evidences are available at our github\nWe appreciate that you could take a moment to review and approve. \nThank you <3",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "14",
+      "cost": 10000,
+      "promise": "・Detailed architectural documentation for integrating Cardano with IoT, including components and data flow for all 5 Project templates.\n・A basic working prototype with functionalities such as data transmission, validation, and storage on the blockchain for all 5 Project templates.\n・Development and deployment guide for the prototype for all 5 Project templates.",
+      "criteria": "・Completed architectural document clearly describing the system and integration process for all 5 projects\n・A stable prototype successfully performing data transmission, validation, and storage for all 5 projects\n・Source code free of critical errors, accompanied by detailed instructions.",
+      "report": "A. Output: System architecture documents with data flow diagrams for all 5 IoT–Cardano projects\nAcceptance criteria: Each document includes system overview, component architecture diagram, data flow diagrams for all major operations, smart contract design (Aiken/Plutus v3), technology stack breakdown, and security considerations.\nEvidence:\n・IoT1 - DHT22 Sensor Data\n・IoT2 - Smart Lock State Sync\n・IoT3 - Vending Machines\n・IoT4 - Student NFC Identity\n・IoT5 - QR Code Supply Chain\n\nB. Output: Working prototypes with demonstration videos showing real-time IoT-to-Cardano data flow for all 5 projects\nAcceptance criteria: Each video demonstrates hardware setup, real-time data collection from sensors/devices, data transmission to Cardano blockchain, on-chain validation and storage confirmation, and data retrieval/verification.\nEvidence:\n・IoT1 - DHT22 Sensor Data\n・IoT2 - Smart Lock State Sync\n・IoT3 - Vending Machines\n・IoT4 - Student NFC Identity\n・IoT5 - QR Code Supply Chain\n\nC. Output: Public repository with full source code, deployment guides, and implementation instructions for all 5 projects\nAcceptance criteria: Each project includes step-by-step installation/configuration instructions, full source code with dependencies, environment variable templates (.env.example), smart contract source code (Aiken validators), and hardware wiring diagrams.\nEvidence:\n・GitHub Repository - cardano-iot-example\n・IoT1 README | TypeScript, Python, Mesh SDK, Blockfrost\n・IoT2 README | Aiken, TypeScript, Bun, Mesh SDK\n・IoT3 README | C++, PlatformIO, ArduinoJson, TinyCBOR\n・IoT4 README | Python, PyCardano, NFC (PN532), CIP-25\n・IoT5 README | Next.js, Aiken, Mesh SDK, CIP-68\n\nAll evidence is publicly available at:\n・Source code repo: https://github.com/htlabs-xyz/cardano-iot-example\n・PoA documentation: https://github.com/htlabs-xyz/Project-Catalyst/tree/main/1300008/Milestone%202",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 20
+    },
+    {
+      "no": 3,
+      "month": "17",
+      "cost": 7000,
+      "promise": "・Testing Logs: Images and videos capturing evidence of the testing process\n・Issue Resolution Document: Documentation of identified issues, their causes, and proposed solutions. \n・Performance Metrics Report: Comparison of performance before and after optimizations, showing key metrics. \n\n All the deliverables mentioned above will be applied to each of 5 Project templates.",
+      "criteria": "・The prototype performs stably and efficiently in real-world testing scenarios. \n・Issues are identified, with clear cause analysis and solutions. \n・Optimizations lead to measurable improvements in performance and reliability.",
+      "report": "A. Output: Testing logs (images and videos capturing evidence of the testing process) for all 5 IoT–Cardano projects\nAcceptance criteria: The prototype performs stably and efficiently in real-world testing scenarios. Each testing log includes the test environment, a structured test-case table (expected result / actual result / status), real-world scenario execution, reliability runs with explicit run counts, and links to supporting evidence (demonstration video, Cardano transaction hash, serial-monitor / terminal log).\nEvidence:\n・IoT1 - DHT22 Sensor Data · Demo video\n・IoT2 - Smart Lock State Sync · Demo video\n・IoT3 - Vending Machines · Demo video\n・IoT4 - Student NFC Identity · Demo video\n・IoT5 - QR Code Supply Chain · Demo video\n\nB. Output: Issue Resolution Documents (identified issues, their causes, and proposed solutions) for all 5 IoT–Cardano projects\nAcceptance criteria: Issues are identified with clear cause analysis and solutions. Each document includes issue identification, severity classification, observed symptom, root-cause analysis, the applied fix or optimization, and verification evidence (re-test, transaction hash, or runtime log) proving the issue is resolved.\nEvidence:\n・IoT1 - DHT22 Sensor Data\n・IoT2 - Smart Lock State Sync\n・IoT3 - Vending Machines\n・IoT4 - Student NFC Identity\n・IoT5 - QR Code Supply Chain\n\nC. Output: Performance Metrics Reports (comparison of performance before and after optimizations) for all 5 IoT–Cardano projects\nAcceptance criteria: Optimizations lead to measurable improvements in performance and reliability. Each report includes a before/after metrics table with the measurement method and an evidence link, plus a reliability table (run count / passed / success rate) for the key real-world scenarios.\nEvidence:\n・IoT1 - DHT22 Sensor Data\n・IoT2 - Smart Lock State Sync\n・IoT3 - Vending Machines\n・IoT4 - Student NFC Identity\n・IoT5 - QR Code Supply Chain\n\nAll evidence is publicly available at:\n・Source code repo: https://github.com/htlabs",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "18",
+      "cost": 8857,
+      "promise": "・Publish 2 Posts: Post about the project on forums like forum.cardano.org, Medium, Dev.to, and Daily.dev. Document community feedback (comments, likes, shares).\n・Engage in Discussions: Actively participate in discussions on both the forum posts and the GitHub repository discussions, answering questions and providing clarifications about the project.\n・Collaborate with IoT & Blockchain Projects: Support and collaborate with IoT and blockchain projects that are facing challenges, providing help and guidance based on your project’s learnings.\n・Final Report and Video: Summarize the project’s achievements, challenges, and impact.",
+      "criteria": "・At least 2 detailed posts published on relevant forums, providing an overview of the project and its outcomes.\n・Active participation in both forum post discussions and GitHub repository discussions, with clear contributions and responses to community questions and suggestions.\n・Collaboration with IoT and blockchain projects, demonstrated by offering assistance, support, or solutions to challenges faced by these projects.\n・Completion of the final close-out report and video, summarizing project achievements, challenges, and impact.",
+      "report": "A. Output: Published two detailed project articles on DEV Community and distributed both through daily.dev. Documented community feedback includes comments, reactions, and upvotes.\n Evidence: Community posts and feedback evidence \n\nB. Output: Participated in the article and GitHub discussions, answered technical questions, reviewed five GitHub issues, and merged four corrective pull requests.\n Evidence: Community discussions and contributions evidence\n\nC. Output: Collaborated with UniSolar/eSolar and provided technical guidance on offline telemetry, gateway architecture, device identity, signing, data aggregation, CIP-68 updates, transaction frequency, and remote maintenance.\n Evidence: \n・Public eSolar collaboration recording\n・Timestamped collaboration evidence and technical findings\n\nD. Output: Project Close-out Report (PCR) & Output: Project Close-out Video (PCV)\nEvidence:\n・Project Completion Report PDF\n・Project Completion Video \n\nAll evidence is publicly available at:\n・PoA documentation: https://github.com/htlabs-xyz/Project-Catalyst/tree/main/1300008/Milestone%204\n・Project source code: https://github.com/htlabs-xyz/cardano-iot-example",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 11
+    }
+  ]
+}

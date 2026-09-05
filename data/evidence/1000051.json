@@ -1,0 +1,43 @@
+{
+  "title": "Clarity <> NMKR: Governance Token Creation Integration",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 9000,
+      "promise": "Collaborate with NMKR to define the technical specifications, API integration points, and data exchange mechanisms.",
+      "criteria": "Evidence of having a clear plan of integration to allow easy governance token creation using NMKR technology.\nCreate a written report that outlines each step needed to complete integration with NMKR APIs to allow for governance token creation.",
+      "report": "NMKR API Integration\nOverview\nDetailed below is a technical outline of the planned integration between the Clarity Protocol and NMKR APIs. NMKR offers two APIs that could potentially be used to mint governance tokens for a DAO: NMKR Mint API and NMKR Studio API.\nNMKR Mint API is designed for individual NFTs or small collections of no more than 15 NFTs. As a result, it is not suitable for the minting of governance tokens. This means that the Clarity Protocol will integrate with the NMKR Studio API.\nThe NMKR Studio API provides all of the necessary functionality to mint and manage governance tokens for a DAO. This proposal specifically covers the minting of governance tokens. Distribution of the minted governance tokens will be the responsibility of the DAO creator.\nTechnical Outline\nThe below outline details the planned integrations between the Clarity Protocol and the NMKR Studio API. This outline was developed based on the following 3 exercises:\n・Review of the NMKR Studio API documentation\n・Evaluation of the NMKR Studio API Swagger\n・Preliminary testing of the NMKR Studio API through Postman\n\nDevelop frontend NMKR Studio Widget for DAO Admin Page\nThis widget will consist of the following components:\n・Button to create NMKR Studio project\n・Will open a form that the DAO creator will complete. This will include the necessary fields to mint a governance token through NMKR Studio\n・Button to mint governance tokens through NMKR Studio\n・Will open a widget to allow the DAO creator to select the number of governance tokens to mint\n・Display of basic info for the governance tokens\n・Button that links to the NMKR Studio Project portal. This will provide DAO creators access to more advanced tools to manage their governance tokens.\n\nCreate API Key in NMKR Studio for Testnet\nPrior to launching on Mainnet, all integration testing will be conducted on Testnet. The Clarity Protocol will have 1 NMKR Studio Testnet API key that all DAOs use.\nCreate general backend function to handle reque",
+      "kinds": [
+        "other"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 9000,
+      "promise": "Develop a user-friendly interface on the Clarity Platform that enables DAO creators to configure and customize governance tokens using the NMKR integration.",
+      "criteria": "Evidence of a front-end interface interacting with NMKR APIs to enable creation of governance tokens.\nUsers will be able to interact with a front end to create a governance token for their organization.",
+      "report": "Here is a video that showcases the integration with NMKR on the testnet. https://streamyard.com/mgzpzsgekgut\n\nPlease let me know if you need any more evidence.",
+      "kinds": [
+        "other"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 12000,
+      "promise": "Conduct comprehensive testing to ensure the seamless interaction between the Clarity Platform and NMKR integration, validating token creation, distribution mechanisms, and governance functionality.",
+      "criteria": "Concrete evidence that the integration is working as expected.\nThis will mean testing the integration from the front end to ensure that the creation of a governance token is a non technical and simple process.",
+      "report": "Hey guys, both of the feedbacks were positive but one of you still refused it.\nResubmitting here.\nHere is the link to the close out report: https://docs.google.com/document/d/149nynCd8r9n2K6B4FaeiGuDJADLBczgVxVgID95fF4Q/edit?usp=sharing\nHere is the Close Out video: https://www.youtube.com/watch?v=B1vHPAdvYcE",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

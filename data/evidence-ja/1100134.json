@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "保険ポリシーおよび投資家スクリプトのライフサイクルに関する完全なドキュメント。\nこれは両方として提示されます:\n1。 gitbooksウェブサイトと\n2. stately.aiでモックを実行している状態のマシン図\n",
+      "criteria": "Gitbooksのウェブサイトは、分散型の保険ポリシーがオンチェーンで発行できるかを十分に理解しなければなりません。\n契約条件は、誰が評価、処理、満たすすべての可能な結果のために解釈される方法。\nまた、提供されたステートチャートを介して、ウェブサイト自体でこれらのワークフローのシミュレーションを実行することもできます.",
+      "report": "ここでは、このマイルストーンの証拠を供給するドキュメントを見つけることができます: https://docs.fida.finance\nチェーンにポリシーを導入する(最初の拒絶の理解による)方法の高レベルな概要は、こちらで確認できます。\nhttps://docs.fida.finance/usage/issuing-a-policy\n\nまた、2つの契約状態遷移図に複数のリンクがあります。\nフィダポリシー契約(https://stately.ai/registry/editor/2dd90700-b45e-481b-ac2f-f21c7c869a4d?machineId=5f88546f-aac3-4c8a-a749-ec97a28e060c&mode=Simulate)\n投資家ポートフォリオ契約(https://stately.ai/registry/editor/2dd90700-b45e-481b-ac2f-f21c869a4d?machineId=c254a6f1-2527-4a59-9cee-1a59b5c9d4ad&mode=Simulate)"
+    },
+    {
+      "no": 2,
+      "promise": "本投資法人は、本投資法人が保有する保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、各種保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、保険会社、\nこのマイルストーンでは、保険ポリシースクリプトのライフサイクルのバリデータの完全なセットを提供します。\nこれにより、Cardano testnetに記録された以前のマイルストーンからの状態遷移の証拠と、確認のためにgitbooksサイトに文書化されます.",
+      "criteria": "最終的なものではありませんが、以下のような操作が可能です。\n・fundPolicy(カードToPurchase)\n・retractPolicyFunding(カードToReturn)\n・cancelPolicy(リーソン)\n・活動方針()\n・payPolicyPremium(ammount)\n・issuePolicyClaim (ammount, 理由)\n・expirePolicy()\n・issueFinalPolicyClaim(時限、理由)",
+      "report": "アプリケーション全体で述べたように、一部の名前とプロセスは、元の投稿で述べたものとは異なるものになるかもしれません。 何が起きたのか、まさにこのことです。 我々はまだ同じ機能を提供していますが、我々は、プロトコルがCardanoで使用されていることを理解するためのより良いトレードオフを持っている別の抽象/モデルを発見しました.\nつまり、中間構造を導入しました。ポリシー保持者と投資家の間で仲介する別のスクリプトアドレスである「ピギーバンク」です。 これは、ポリシー側で取り扱われたスクリプトと、投資側で取り扱われたスクリプトが別々に取り扱われているかどうかをチェックして、いくつかの重複であることが表示されることを避けることができました。 ピギーバンクの抽象化の導入により、両側からアクションを検証するスクリプトの1セットがあります。\n私たちは、本質的に契約の完全なオンチェーンスイートで何を書かれています。 スマートコントラクトスイートのオープンソースのコードベースに加えて、この2番目のマイルストーン2のスコープに応じたオンチェーン取引の次のセット!\n新しい Fida ポリシーを作成する:\n・メイクニューポリシー\n\nhttps://preview.cardanoscan.io/transaction/dee425d869bfcf1d07f3f9dbe20556128760cd753707e4aa9ee7a976c0eeed50\nid でポリシーを取得する:\n・get-policy\n\n該当なし\nFidaカードを購入:\n・ブイフィダカード\n\nhttps://preview.cardanoscan.io/transaction/0fbde0f12458c81f5a3d33fed886dffcf5d9023b4d8b05f295a711d9973f8a\n与えられた財布で保険ポリシーを支払う:\n・ペイ・フォー・ポリシー\n\nhttps://preview.cardanoscan.io/transaction/a27dfbd3d6ff77640d82da52996ac413103c9df2fed49f40a5cdd6125b36b347\n売る Fida カード:\n・セルフィーダカード\n\nhttps://preview.cardanoscan.io/transaction/ef2146f513cb8334076621c2f6c1fa6ec2e4c622840bf0283447d96d60\n完全な資金調達(OnRiskに行く):\n・完全資金調達\n\nhttps://preview.cardanoscan.io/transaction/d6fc3a17e088a1f6c748a34f422cf0f7c1e101daa67038d9599ab7335245da1f\nOnRisk契約のクレームプロセスを開始:\n・お問合わせ\n\nhttps://https://"
+    },
+    {
+      "no": 3,
+      "promise": "本投資法人は、本投資法人が保有する有限責任のうち、本投資法人は、本投資法人が保有する有限責任のうち、本投資法人は、本投資法人が保有する有限責任者に対して、本投資法人の責任を負います。\nこのマイルストーンでは、投資家スクリプトのライフサイクルのバリデータの完全なセットを提供します。\nこれにより、Cardano testnetに記録された以前のマイルストーンからの状態遷移の証拠と、確認のためにgitbooksサイトに文書化されます.",
+      "criteria": "投資家のスクリプトはすべて実装され、保険ポリシーは、testnetのすべての状態に見つけることができます。\ngitbooksウェブサイトのドキュメントは、この新しい契約の周りのパラメータの詳細を提供するために拡張されます。\n最終的なものではありませんが、次の操作は可能です。\n・buyCards(カードToBuy)\n・cancelPurchase(カードtoReturn)\n・recievePremium()\n・payPolicyClaim(マウント)\n・unlockPolicyCollateral(expriedPolicy)",
+      "report": "最後に、Webプロトタイプの全ての作業の後、これに戻り、準備をまとめました。\ngitbook サイトの詳細は、https://docs.fida.finance/usage/command-line-interface/claims-management をご覧ください。\nビデオウォークスルー: https://drive.google.com/file/d/1-5X0Kx88IMN3sJ5veg8LbPxAhtjfKKhN/view?usp=sharing\nチェーンに記録されたすべての新しいトランザクションの短いリストは次のとおりです。\n行動 : 取引\n・fail-claim: 9612a86dd61\n・免責条項:bc537db8d4d 9ed730db98a\n・前売: 0aea116de2f 127a5af1dfc\n・有効期限:7680acc7b8f\n・アンロック担保: 3ebc5bf6929 3c48434a3ad\n\n最後に、すべてのドキュメントへのリンクは次のとおりです。 https://drive.google.com/drive/folders/1gRdqzbYd1H3N7EMaLqsWmJ-qaC7Si2-u?usp=sharing\nお問い合わせ!"
+    },
+    {
+      "no": 4,
+      "promise": "コマンドラインインターフェイスを実行して、契約を作成したり、プレミアムを支払い、投資したり、デプロイされたテストネットスクリプトを使用してクレームを収集したりするためのドキュメント。\nまた、最終クローズアウトレポートとクローズアウトビデオは、gitbooksページのセクションとして提供されます。\nクローズアウトレポートには、プロジェクトの結論と達成されたものと、コミュニティがプロジェクトの成果を迅速に理解できるようにする簡単なクローズアウトビデオへのリンクが含まれています。\n要約では最終出力は次のようになります。\n・ドキュメントサイトをアップデートし、すべてのサポート文書をこの点で更新\n・Command line(cli) 実行可能で、全てのオンチェーン・フィダ機能を実行できます。\n・Catalystの要件に応じて、クローズアウトレポート(更新された文書の別々のPDFおよびセクションとして)\n・提供資金で達成されるすべてのものを説明する触媒の要件に従ってビデオを閉じます.",
+      "criteria": "クローズアウトレポートに加えて、最終的なマイルストーンには、循環型クライムファイルが含まれます。これにより、カルダノコミュニティは分散型保険で実験を開始することができます。\ncli を以下のように使うことができます。\n・方針の作成、\n・方針に則り、\n・保険料の支払い・回収\n・方針に申し立て、受理\n・政策終了時に資金を開放する。\n\nクローズアウトビデオは、正確な触媒要件を満たすように作られます。 Catalystの要件と競合していない限り、機能とinvのビルドアウトで達成されるすべての説明を持っている必要があります",
+      "report": "ついに、そこまでです!\ngitbook サイトの詳細は、https://docs.fida.finance/usage/command-line-interface/claims-management をご覧ください。\nクローズアウトレポートはこちら: https://docs.google.com/document/d/18NybPGECdzclJacKi1CO5R5QJUVAufueFgkvszrYmrA/edit?usp=sharing\nクローズアウトビデオウォークスルー: https://youtu.be/Q7akiG-cses\nチェーンに記録されたすべての新しいトランザクションの短いリストは次のとおりです。\n行動 : 取引\n・終了:85f26e26880869a1639\n・回収返済:b2bf97515948ab312310\n・小包: 9303ac0e242d16c8226f\n・返金保証:\n・6c56d8a1c795d66668c2\n・939e4d7a6a996c9f5194\n・85e6b687278517227fd3\n\n最後に、すべてのドキュメントへのリンクは次のとおりです。 https://drive.google.com/drive/folders/18OGOAqgJm8aNfhJARBO8VPmzNacekYa?usp=drive link\ngithubのCliの公開リリースは次のとおりです。 https://github.com/fida-services/fida-contracts/releases/tag/0.0.4"
+    }
+  ]
+}

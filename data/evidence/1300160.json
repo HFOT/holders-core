@@ -1,0 +1,60 @@
+{
+  "title": "Powers of Tau: Cardano Zero-Knowledge Setup Ceremony event | Encoins <> Modulo-p",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 26143,
+      "promise": "This milestone will achieve the necessary steps to conduce a Groth-16 trusted setup ceremony in its first phase. This includes: \n・A program script to facilitate contributions to the repository.\n・A document outlining the process and guidelines for participation.\n・A document detailing the schedule and organization specifics of the ceremony.",
+      "criteria": "・The software must enable participants to submit contributions to the ceremony. This means that the participant will be able to provide a secret input to the multi-party computation process (the ceremony), and as a result produce a challenge file (a file that will serve as input for the next contribution).\n・The documentation must clearly explain the process and provide detailed instructions for participation. This means a clear step by step instructions about how to contribute.\n・The document must briefly explain the ceremony and its objectives, provide a schedule indicating when it will start",
+      "report": "Dear Reviewers,\nWe have carefully revised the Ceremony & Contribution Guidelines document and corrected issues. The current version reflects these improvements to ensure clarity and ease of use for reviewers and contributors.\nAs part of Milestone 1, we are pleased to submit the following outputs: \nScript \nThe script required to run the ceremony is already included in the repository, at the root level: https://github.com/AgustinBadi/powersoftau \nContribution and Ceremony Guidelines \nThe Contribution Guidelines and the Ceremony Guidelines are combined in a single document, which can be accessed here: https://github.com/AgustinBadi/powersoftau/blob/master/Docs/Ceremony_%26_Contribution_Guidelines.md\nThis document covers both the contribution process and the ceremony rules in detail. \nWe sincerely thank you for your time and consideration in reviewing our submission. \nRegarding the delay in this delivery, the reason was that we initially worked with p0tion, the tool we previously used to run the ceremony in Phase 2. However, since the PSE team discontinued its maintenance, we decided to rebuild the process from scratch together with former members of the original team. (This is the old one https://github.com/privacy-ethereum/p0tion and this is our new project https://github.com/p0tion-tools/brebaje)",
+      "kinds": [
+        "code"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 26143,
+      "promise": "In this milestone we will arrange a Groth-16 trusted Setup ceremony in its first phase (The perpetual powers of Tau). The project managers will organize and coordinate the contributors of the ceremony. This milestone is very related to the first milestone since participants will use the software provided to contribute to the process. The outputs of this milestone will be:\n・A document that details how the ceremony was executed.\n・A transcript of the ceremony. The transcript is a technical document automatically produced by the software, that specify the cryptographic outputs at each iteration of the ceremony.",
+      "criteria": "・A minimum of 30 participants contributed to the ceremony.\n・The document clearly explains the process of executing the ceremony. This means giving an overview of the ceremony execution; explain the procedure used to coordinate the contributions; explain the software used in the process; specify the contributions made and a final comment with a conclusion of the ceremony. \n・The transcript will have to include all the relevant cryptographic outputs of each contribution.",
+      "report": "Dear reviewers,\nWe are submitting the evidence for Milestone 2 – Execution of the Ceremony of the project Perpetual Powers of Tau for Cardano.\nThis milestone consisted of organizing and executing the ceremony in which contributors generated cryptographic outputs using the provided software. The goal was to ensure a transparent, verifiable, and community-driven setup for the Groth16 proving system on Cardano.\nDocument detailing the ceremony process\nhttps://docs.google.com/document/d/1ECPqnCjy8XBIPoqsS2ps1Q47OLoak5WUmryUAfX6So0/edit?tab=t.0 \nTranscript of the ceremony\nhttps://github.com/p0tion-tools/cardano-ppot/blob/main/0040_matiwinnetou_response/pot23_0040_record.txt \nParticipants\nhttps://github.com/p0tion-tools/cardano-ppot/tree/main\nSocial Media \nhttps://docs.google.com/document/d/1Z32856X_2VNj9f-PvmKLiJaBxqwMzcsMdRCUnNmYaps/edit?tab=t.0\n\nBest regards,\nThe Perpetual Powers of Tau Team",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 21784,
+      "promise": "This milestone aims to achieve a first iteration of the web-application that will host, arrange and interface ceremonies in phase-2. The idea is that project that require conducting phase-2 ceremonies has facilities to execute this ceremonies and develop with the Groth-16 protocol seamlessly. This implies a basic web application which allows:\n\n・A website that provides educational resources to accomplish a ceremony, tools to conduct a ceremony and a page where ceremony events can be arranged.",
+      "criteria": "The website must address the following conditions: \n・Include a web application that allows users to create new ceremonies and submit contributions.\n・A table that shows past and current ceremonies. Also, the table should include references or links to get the results of the ceremonies.\n・Displays the relevant data, resources and results of the ceremony done in the second milestone.\n・Include relevant educational resources for developers about Zero-Knowledge proofs and ceremonies.",
+      "report": "Content:\nA. Output:\nP0tion Platform - First Iteration\nWe have built a prototype of the Brebaje platform, a trusted setup management system and a informational site of Zero-Knowledge technology. Some features have achieved a full implementation at the frontend level, others remain at a backend level.\nThe frontend features are (Fully Implemented).\n・ Ceremony Management: Create, configure, and announce new trusted setup ceremonies with customizable parameters including timing, penalties, and circuit uploading.\n・Authentication System: Secure GitHub OAuth integration for user registration and authentication\n・Educational Content Hub: Curated educational resources and blog posts about zero-knowledge proofs, trusted setup ceremonies, and cryptographic concepts.\n・Cardano PPOT Showcase: Dedicated section displaying comprehensive results and statistics from the Cardano Perpetual Powers of Tau ceremony\n・Ceremony Discovery: Intuitive navigation and exploration interface for browsing active and historical ceremonies\n・Coordinator Dashboard: Administrative interface for ceremony coordinators to manage projects, participants, and ceremonies.\n\n The backend provides:\nCore API Services\n・RESTful API Architecture: Complete NestJS-based API with OpenAPI documentation\n・Database Management: SQLite/PostgreSQL integration with Sequelize ORM for scalable data persistence\n・User & Project Management: Comprehensive user profiles, project organization, and role-based access control\n・Ceremony Lifecycle Management: Ceremony state management (SCHEDULED → OPENED → CLOSED → FINALIZED)\n\n File Storage & Circuit Management\n・Circuit Upload System: Secure file upload handling with validation for circuit files up to 100MB\n・AWS S3 Integration: Scalable cloud storage for ceremony artifacts and participant contributions\n\nVerification instances\n・AWS EC2 Instance Management: Automated provisioning and configuration of verification instances\n\n Ceremony Coordination Engine\n・Participant Queue Management: Automated p",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 13071,
+      "promise": "・The final iteration of the web-application. This includes improvements on the interface and aesthetics of the website; shows educational resources and tools to develop with Zero-Knowledge; the possibility to authenticate and identify ceremony participants with their social networks or their Cardano wallet.\n・Complete project report summarizing all activities, technical findings, and key learnings.\n・Final close-out report.\n・Final closeout video.",
+      "criteria": "・The web-application satisfies the features mentioned above.\n・The project report clearly summarizes the process, the conclusions and key learnings.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Dear Reviewers,\nWe are pleased to submit the final milestone of the project “Powers of Tau: Cardano Zero-Knowledge Setup Ceremony event | Encoins <> Modulo-p”.\nIn this submission we provide the final iteration of the platform and all the closing deliverables, as specified in the approved scope.\nBelow we detail each output, its acceptance criteria, and the corresponding public evidence.\nA. Output:\nThe final iteration of the web-application including improvements on the interface and aesthetics of the website, educational Zero-Knowledge resources and tools, and authentication via social networks or Cardano wallet.\nAcceptance criteria:\nThe web-application satisfies the features mentioned above.\nEvidence:\nThe website of the platform:\nhttps://brebaje.duckdns.org/\nB. Output:\nComplete project report summarizing all activities, technical findings, and key learnings.\nAcceptance criteria:\nThe project report clearly summarizes the process, the conclusions, and key learnings.\nEvidence:\nThe project report:\nhttps://docs.google.com/document/d/1D936pQL8Zh-bssYI0GyxgyeufsWc9YDqRsNI0zaFfrc/edit?tab=t.0#heading=h.2cmbux5jw1tn\nC. Output:\nFinal close-out report.\nAcceptance criteria:\nFinal closeout report is publicly available.\nEvidence:\nLink to final closeout report (GitHub repository with ceremony data and final materials):\nhttps://github.com/p0tion-tools/cardano-ppot\nD. Output:\nFinal closeout video.\nAcceptance criteria:\nFinal closeout video is publicly available.\nEvidence:\nLink to final closeout video:\nhttps://www.youtube.com/watch?v=F6SWDSRHV_w\nClosing\nWe confirm that all acceptance criteria defined for this final milestone have been fully satisfied and that all deliverables are publicly available.\nThank you very much for your time, your review, and for the support provided throughout the execution of this project.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "title": "Onboarding Ethereum & EVM Ecosystems to Cardano via Rosen Bridge",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Research:\n・In-depth analysis of existing EVM bridge solutions\n・Identifying potential security risks for EVM bridging \n・Understanding the unique requirements of the Cardano and Ethereum ecosystems for Rosen Bridge to be deployed.\n\nPreparation:\n・Setting up the necessary infrastructure and tools for development, including software licenses, server costs, and other technical resources.\n\nDesign:\n・Development of architectural plans and protocols for the bridge, ensuring robust security and efficient functionality. \n・This includes the creation of technical specifications and design documents.",
+      "criteria": "Evidence that analysis has been conducted and consolidated in an easy-to-digest format as follows:\n・Research: Document write up on the project Github, with sections for this phase including (a) Analysis of existing EVM bridge solutions, (b) summary of the potential risks associated with EVM bridging, (c) understanding the unique requirements to deliver a working solution between Cardano and ETH. \n\n・Preparation: Document write up on the project Github, outlining the necessary tools and infrastructure required for this deployment. \n\n・Design: Document write up on the project Github - with key sec",
+      "report": "Additional Response for Research Phase - based on Reviewers Requests\nUnique Requirements to deliver a Working Solution between Cardano and Eth\nSince Rosen bridge is an Ergo-centric bridge (done in a way to reduce security issues, by having smart contracts on one side instead of two) and almost all of the logic is being handled on Ergo, there are minimal consideration or requirement to be considered between connected chains, including Cardano and Ethereum/EVM.\nThe only constraint and unique requirement that we encountered connecting to Ethereum is that in Ethereum the decimals is 18, and this requires special consideration. \nBased on Rosen's design, we issue the total supply of a token on Ergo and Cardano. \nCardano's best practice is 6 decimals (technically it can be higher though) and Ergo supports maximum of 10^18 tokens, so we cannot issue the Ethereum tokens on Ergo and Cardano considering all of their decimals. Therefor, we're truncating 9 out of 18 decimals of decimals of Ethereum tokens.\nAll other components based on research have indicated that the various modules once re-worked will be compatible with the Eth requirements. \n------------------------------------------------------------------------------------------\nOverview:\nAs part of this first milestone the team conducted a deep-dive in the compatibility of the Rosen Bridge with Ethereum and other EVM Ecosystems. It was split into 3 parts - research, preparation and a design phase. The following links below provide the evidence that these phases were completed.\n1. Submission of key findings from research phase\nSee Full Evidence of Milestone via the following Github LINK\nThe team has drafted a full report covering several topics including:\n・Why do bridges fail?\n・Reasons for Hacks on Cryptocurrency Bridges\n・Reflections and Lessons Learned\n・Deep-dive #1 into the Wormhole Bridge Hack (including an incident overview, analysis and reflections) \n・Deep-dive #2 into the Nomad Bridge Hack (including an incident overv",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 165000,
+      "promise": "・Module Development: Building core components such as scanners, verification methods, and communication channels. This involves coding, debugging, and initial unit testing.\n\n・Integration Testing: Ensuring that individual modules work seamlessly together. This includes the allocation of resources for comprehensive testing environments.\n\n・Quality Assurance: Rigorous testing to identify and fix bugs, and to validate the functionality of the modules against the design specifications.",
+      "criteria": "・Module Development: Source code of the core components are made publicly available on the project Github. There should be links for (a) scanners, (b) verification methods and (c) communication channels. \n\n・Integration Testing: Evidence of comprehensive integration testing sessions - this should include a summary of at least 3 in-depth testing sessions and outputs from them. \n\n・Quality Assurance: Rigorous testing to identify and fix bugs to be evidenced through specific code updates and changes. These examples will be summarized and published in the project github.",
+      "report": "Overview:\nThis milestone was split up into 3 key parts. \n・Module Development: Building core components such as scanners, verification methods, and communication channels. This involves coding, debugging, and initial unit testing.\n・Integration Testing: Ensuring that individual modules work seamlessly together. This includes the allocation of resources for comprehensive testing environments.\n・Quality Assurance: Rigorous testing to identify and fix bugs, and to validate the functionality of the modules against the design specifications.\n\nThe evidence required include the following below:\n﻿ \nEvidence #1 - Core modules available on Rosen Github\nThe following document states the chain-specific modules of the Rosen Bridge and describes their approach for Ethereum and other EVM-based blockchains. \n\nYou can read the full github write-up here: https://github.com/rosen-bridge/Catalyst-Fund11/blob/master/F11-M2-EVM%20and%20Ethereum%20Modules%20in%20Rosen%20Bridge.md\n\nEach module has its own explanation, summary and link to the github implementation:\n\n・Scanner: Implementation: GitHub\n・Observation Extractor: (Abstract Observation Extractor Class: GitHub, Implementation: GitHub)\n・Rosen Extractor: Implementation: GitHub\n・Abstract Chain: Implementation: GitHub\n\nEvidence #2 - Post on X around integration testing, quality assurance and the status\nhttps://x.com/RosenBridge_erg/status/1793681089489416300",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 9
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 100000,
+      "promise": "・Development of Multisig Mechanism: Creating a secure multi-signature system for both hot and cold wallets, crucial for enhancing the security of cross-chain transactions.\n\n・Security Testing: Extensive testing of the multisig system to ensure it is hack-proof and meets high-security standards.\n\n﻿﻿\n・Integration: Seamlessly integrating the multisig system with the existing bridge infrastructure.",
+      "criteria": "・Development of Multisig Mechanism: Source code of the multi-sig components are made publicly available on the project Github.\n\n・Security Testing: Evidence of comprehensive security testing sessions - this should include a summary of at least 2 in-depth testing sessions and outputs from them. \n\n・Integration: Evidence of integration of the multisig system - this will include adding UI/UX screenshots and example testnet transactions with explanations submitted to the Github.",
+      "report": "Addressing feedback from the Reviewers: \nUI/UX Screenshots for Multi-Sig Module:\nLink - https://github.com/rosen-bridge/Catalyst-Fund11/tree/master/screenshots\nThe multisig logic and application is in the underlying layers of the system and is in almost all scenarios will be handled automatically. Hence there is not a direct UI/UX for this module. \nHowever, as the multi-sig is done via the Guards, we have provided the UI/UX for multi-signatures when a manual signing scenario is required. You can find two screenshots of the UI Guard dashboard to demonstrate that this module is functional:\n・Eth Guard Manual Signature - https://github.com/rosen-bridge/Catalyst-Fund11/blob/master/screenshots/eth-manual-multisig-txn.jpeg\n・Cardano Guard Manual Signature - https://github.com/rosen-bridge/Catalyst-Fund11/blob/master/screenshots/cardano-manual-multisig-txn.jpeg\n\n----------------------------------------------------------------\nOverview: \nThe key goal of this milestone was to develop the necessary multi-sig capabilities for the EVM bridge. \nEvidence: Multi Sig Code on the Rosen Github\n https://github.com/rosen-bridge/Catalyst-Fund11/blob/master/F11-M3-Multisig%20Implementation%20for%20EVM%20and%20Bitcoin.md\nIn this link above, you can review the detailed summary of this milestone 3. \nIt breaks it into several sections including:\nOverview of Multi-Sig Mechanisms: A (t, n) threshold signature scheme (TSS) is a cryptographic protocol that enables a group of n participants to collectively sign documents or transactions. \n・There exist several signature schemes that can be extended to a threshold version, such as ECDSA, Schnorr, and BLS. We have opted for the ECDSA version of TSS due to its native support in Bitcoin and EVM ecosystems. \n\n[Development of Multi Sig Modules Phase] Overview of TSS\n・This project implements a multi-party {t, n}-threshold ECDSA (Elliptic Curve Digital Signature Algorithm) and EdDSA (Edwards-curve Digital Signature Algorithm) using a similar methodology.\n\n[",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 15,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 100000,
+      "promise": "・Code Integration: Merging the developed modules with the existing Rosen Bridge codebase. This includes ensuring compatibility and efficient performance.\n\n・UI/UX Development: Designing and implementing user interfaces and user experiences for both watchers and guards, enhancing usability and accessibility.\n\n﻿﻿\n・Final Testing: Conducting end-to-end tests to ensure all components work harmoniously.",
+      "criteria": "・Code integration to existing code base: Evidence of integrated code is open source and submitted to the Rosen Bridge Github.\n\n・UI/UX Development: UI/UX screens are shared with the community at submitted to the Github. \n\n・Final testing: evidence of end-to-end testing of component working together through testnet transactions. This should include a write up and explanation of the various testnet transaction IDs and what is happening.",
+      "report": "Re-submission notes:\n・Links incorrect - We have fixed the links to the github commits and repos. If you want to check the source of truth for the github commits and repositories - please refer to the Github link here.\n\n・Code License: The repositories have been set to a cc0-1.0 license. The milestone itself says that we need to make the code publicly available. This license meets the Open Source Definition. We didn't specify the exact type of license and cc0-1.0 meets these open standards - including:\n・Freedom to Use, Modify, and Distribute: allows anyone to use, modify, and distribute the work, which meets the OSD's requirements for free redistribution and the availability of source code.\n・Freedom from Restrictions: CC0-1.0 imposes no restrictions on how the work can be used.\n・Permissive Nature: CC0-1.0 allows derivative works and does not impose copyleft (reciprocity) requirements, which are common in open-source licenses but not required. \n・Waiver of Copyright\n\nThank you for quickly reviewing the submission and will wait for further feedback and clarification if required\n\nMilestone 4: Integration of Modules into Current Code Base\nOverview: There are 3 main components associated with the completion of this module. These include:\n・Integration of the code into the existing Rosen Bridge codebase\n・Designing the new UI/UX interface for watchers and guards for the EVM bridge\n・Conduct end to end tests of these new components\n\nEvidence of M4 Completion:\nMilestone 4.1: Integration of core modules into the codebase:\nFor Milestone 4, the focus was primarily on the integration of the modules completed in M2 and M3 into the core code-base. Some of these modules built in M2 and M3 included the scanners, verification methods, communication channels and the multisig components.\n These modules as part of Milestone 4 have been integrated into the Rosen Services & Rosen App; which include the Watcher, Guard and UI. \nWatcher Service Evidence: \nKey integrations included:\n・Enabling Ethe",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 17,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 27500,
+      "promise": "・Code audits\n・Testnet Deployment: Launching the bridge on testnets to simulate real-world usage and identify any unforeseen issues.\n・Community Testing: Engaging with the community for beta testing, gathering feedback, and making necessary adjustments.",
+      "criteria": "・Code audits: Evidence that a code audit has been completed by a reputable developer in the community. \n\n・Community testing: Beta testing has been conducted by a select number of community members (at least 30 members onboarded as testing cohort). Notes and takeaways from this testing period should be summarised and submitted on the Rosen Bridge Github. \n\n・Testnet deployment:, Evidenced through testnet transactions and explanations of the various example txn IDs.",
+      "report": "Re-submission of M5\nI have copied the JSON file into a word document so you can see the outputs. \n・JSON Link - here\n・Outputs copied into word document Link - here\n\nMilestone 5: Testing and Deployment on Testnets\nOverview: \nThere are 3 main components associated with the completion of this module. These include:\n・Evidence of code audits completed by a reputable developer in the community\n・Conduct community testing\n・Deployment of an operational testnet \n\nEvidence of Code Audits:\nThe team took 2 approaches to the auditing of the code. Formal code audits by a professional auditing firm and by a community developer. \nStrategy 1: Professional Paid Code Audit\nThe first was a comprehensive audit from a reputable auditing firm Smart State. The two receipts for this stage include:\n・The contract invoice which was paid - see invoice here.\n・The code audit report - Link. In this audit several vulnerabilities were identified and addressed. The relevant github commits for each of these fixes have been linked. \n・[Fixed] Malicious sender can exploit “/tss/sign” (in src/api/tss.ts) endpoint to block submitting of transactions in Cardano - Link\n・[Fixed] API endpoints are not rate limited - Link\n・[Fixed] Vulnerable dependencies - Link \n\nStrategy 2: Community Developer Audits\nThe code has been audited by a community developer Voru Jack. This is his github repository - Link. Here is a summary of these commits that have been made.\n・Rosen UI commits - Link\n・Rosen Watcher commits - Link\n・Rosen Rosenet commits - Link\n・Rosen Health Checks commits - Link\n・Rosen Notification commits - Link\n・Rosen Guard commits - Link\n・There are several other audits and changes he has requested which can be found here in his github repo. \n\nCommunity Testing Portal:\n・Evidence of community group and sign up link via Telegram - Link\n・Google Form Sign up - Link\n・The testnet was live using this link [NO LONGER ACTIVE as ROSEN ETH BRIDGE IS LIVE at TIME OF SUBMISSION] https://communitytest.rosen.tech/\n\nEvidence of Comm",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 74,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 82500,
+      "promise": "・Documentation: Preparing comprehensive documentation for developers and users, detailing the bridge's functionality and usage\n\n・Mainnet Launch: Rolling out the bridge on the Cardano and Ethereum mainnets, marking the project's culmination.\n\n・Monitoring Tools: Setting up systems to monitor the bridge's performance and security in real-time.\n\n・Post-Launch Support: Allocating resources for immediate support and maintenance post-launch to ensure smooth operation.\n\n・Close out report and video.",
+      "criteria": "・Documentation: Summary of all the links and documentation around the bridge functionality is consolidated and submitted to the Rosen Bridge Github. \n\n・Mainnet Launch: Bridge is live on mainnet and real-life transaction IDs are shared. \n\n・Monitoring Tools: Monitoring tools such as # of guards and volumes are live. Link to these tools to be made available to the public. \n\n・Post-Launch Support: Evidence of post main-net support - including making fixes or adjustments based on community feedback post launch.",
+      "report": "Final Milestone: Deployment on Mainnet\nOverview: \nThere are 4 main components associated with the completion of this module. These include:\n・Final documentation to be provided on the Rosen Bridge Github & Finalized code-base is submitted and made available on the Rosen Bridge Github.\n・Rosen Bridge is live between Ethereum and Cardano on the mainnet\n・Systems to monitor the bridge's performance and security in real-time are deployed.\n・Close out report and video. \n\nEvidence of Final Documentation and Code-Base on Github:\nIn order for the launch to go-ahead, there were key steps that were taken:\n・Guards update - set up github link here.\n・Watcher service update - Link & Github link here (for docker deployment)\n\nAll documentation required for set up for watchers and guards are on the Rosen Bridge github here.\nThe final source-code has been licensed under the Creative Commons Zero v1.0 Universal License which enables anyone to view it, modify it and distribute it. CC0-1.0 also imposes no restriction on how the work can be used and does not impose copyright. \nFinal Source code and the repositories found here.\n\nEvidence of Rosen Bridge Live between Ethereum and Cardano:\nThe Rosen Bridge is now live on mainnet. You can currently bridge assets (including Cardano Native Tokens) from Cardano to Ethereum. The link to the Dapp is here: https://app.rosen.tech/.\n\nOther supporting evidence includes:\n・Official Tweet from Rosen Bridge Account - Link\n・Tweet of Snek being bridged - Link & 2nd Link\n・Tweet from Sundae about integrating Rosen Bridge - Link\n・Evidence of community watchers and guards - Link\n\nThere are a number of other tweets on the official Rosen Bridge X (Twitter) account for reference here.\n\nEvidence of systems to monitor bridge’s performance and security\nSeveral new updates took place for Guards and Watchers as the system upgraded to enable Ethereum bridging. You can view some evidence here:\n・Tweet from Rosen Bridge account for Watcher Version upgrades to v2.5.0- Link\n・Tw",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 36,
+      "cut": true
+    }
+  ]
+}

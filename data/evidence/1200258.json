@@ -1,0 +1,57 @@
+{
+  "title": "µgraph: Instant, Untraceable Payments in Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "16",
+      "cost": 60000,
+      "promise": "This milestone includes the infrastructure to start processing payments inside a single node.\nThis includes:\n・Starting the node with a testing set of users and balances\n・Send and receive payments through these test users\n・Implement the Blind Signature scheme to guarantee transaction privacy.\n・Documentation explaining how both the protocol and the cryptography for the blind signatures works.\n\nAt this point, the project will be complete enough to be able to trustlessly send private payments between users inside the same node.\nThis does not (yet) include Vaults or the connection to the Cardano blockchain itself.",
+      "criteria": "The goal for this milestone can be considered achieved if the application is solid, properly processing transactions.",
+      "report": "1. Litepaper : https://github.com/mugraph-payments/mugraph/blob/main/README.md\n2. a. Runnable demo (Video): https://www.youtube.com/watch?v=JNGbhwHSCT4\n2. b. Runnable demo (Command):\nRun Node: argo run -p mugraph-node server --secret-key 6381e09e4c213b00a4230cda56e495ded886702075201abd0d15418d90a80c0e\nRun Simulator: cargo run -p mugraph-simulator\n3. Runnable docker : https://hub.docker.com/r/mugraphpayments/mugraph\nCode available on https://github.com/mugraph-payments/mugraph",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "17",
+      "cost": 60000,
+      "promise": "This milestone is to allow assets from Cardano to be commited and de-commited to the nodes.\nThis includes:\n・Aiken Smart Contracts to deposit assets into a Vault\n・Aiken Smart Contracts to withdraw assets from a Vault, with the node acknowledging it previously",
+      "criteria": "This milestone can be considered completed once users can commit and de-commit funds from their (testnet) Cardano Wallet into a running node.",
+      "report": "1. Smart contract code available at https://github.com/mugraph-payments/mugraph/tree/main/validator\n2. Testnet transactions for an user both commiting and decommiting to the network.\n- Deploy Transaction (creates the reference UTXO):\nhttps://preview.cardanoscan.io/transaction/cf33cb81d0afa1fd173d341d3b582aad39169ee7db3ec035043e34e2ed1ab0ef\n- Deposit Transaction: \nhttps://preview.cardanoscan.io/transaction/38aed674743f8247ac61070030680859e83dac5ff165c6b5afa50c59dae14e35\n- Withdraw transaction is a normal transfer, no smart contracts is used.",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "18",
+      "cost": 90000,
+      "promise": "The third milestone is to implement Cross-node payments through the Cardano blockchain, allowing users to transfer balances between different nodes.\nThis milestone includes the mechanism to make those transfers, built as an extension to the protocol.\nThis includes:\n- The mechanism to make those transfers.\n- A way to notify the new node about the transfer of funds from another node.",
+      "criteria": "This milestone can be considered completed once an user can transact funds from one node to another.",
+      "report": "1. Runnable code: https://github.com/mugraph-payments/mugraph\n2. Documentation: https://github.com/mugraph-payments/mugraph/blob/main/README.md\n3. Video demonstrating: https://youtu.be/MBfk0jv1WpU",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "19",
+      "cost": 45000,
+      "promise": "Milestone 4 is about the Mobile Wallet, used for interacting with the network.\nAfter the wallet is released, users will be able to:\n・Send and receive funds via QR Codes or messages.",
+      "criteria": "This milestone can be considered completed once users can install (via an apk or TestFlight) a mobile application that can hold funds and send/receive payments via QR Codes, messages.",
+      "report": "1. A video demonstration of the application working and sending payments\n- Walllets pages tour: https://youtube.com/shorts/BlTnLjXZm8w?feature=share\n- Wallet Walkthrough: https://youtube.com/shorts/Q1lhv3dxN7s?feature=share\n- Two Wallet Payment demo: https://youtube.com/shorts/L8SwMAeN7a0?feature=share\n\n2. Downloadable apks (and TestFlight) for users to install\nRelease (.apk pra Android, .ipa pra iOS): https://github.com/mugraph-payments/mugraph/releases/tag/v0.1",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

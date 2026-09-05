@@ -1,0 +1,87 @@
+{
+  "title": "Alternative Catalyst voting schemes with new crypto protocols by IOG Research, Photrek, and the Catalyst Team",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "A list of recommended voting schemes and tallying rules for Catalyst-specific use cases of blockchain decision making and literature surveys for them.\n\nDeliverables:\n1. Recording of Project Initiation Kick-off meeting.\n2. The academic literature survey on voting power distribution schemes and tallying rules, with a summary of Catalyst-specific decision-making use cases.\n3. The list of voting power distribution schemes (including time-staked weighting, square-root (quadratic), and other ones suggested by the community) and tallying rules (including preferential voting, ranked choice and spend voting, the Borda count) recommended for further consideration. \n4. The selected schemes for analysis on the next stages will be taken from this list.",
+      "criteria": "Acceptance Criteria: \n1. Minutes are provided with summarized project plan including a timeline of tasks and RACI (responsible, accountable, consulted, informed) \n2. The use-cases match the existing understanding of role-based interactions used in Catalyst\n3. The proposed shortlist of potential voting power distribution schemes and tallying rules is aligned with the Catalyst use-cases and with clear definition of the schema and measurable efficiency criteria for participants",
+      "report": "We hope that the reviewers enjoy the content below and we would like to invite you to join us at the town hall presentation in May. \nPlease find below the deliverables for Milestone 1:\n・Recording of Project Initiation Kick-off meeting including description of tasks and responsible owners\n・Recorded syncs and updates: \n・April 17, 2024: literature review for the shortlisted voting schemes.\n・April 16, 2024: Slides from kick off including project plan\n・March 20, 2024: roles for Catalyst participants, voting scenarios, voting power distribution and tallying rules (written down and generalized after our previous call) - to have approved approaches for the research.\n・The academic literature survey on voting power distribution schemes and tallying rules with a summary of Catalyst-specific decision-making use cases, including the list of voting power distribution schemes and tallying rules recommended for further consideration:\n・Photrek report\n・Veritas team report\n・Please note the public demonstration of Milestone 1 research outputs is scheduled for May 15th or May 22nd at Catalyst Town Hall and after Town hall. This will be uploaded to Catalyst Youtube Playlist",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 7
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 140000,
+      "promise": "Given a shortlist of potential voting schemes, provided at the previous step, this milestone outputs a final list of selected voting schemes. The list will include 3-5 voting schemes for further deep analysis and prototyping.\nDeliverables:\n1. A document that includes:\n - description of the selected voting schemes, \n - rationale for the selection,\n - preliminary analyses of the privacy-preserving features that can be implemented for the selected schemes.\n2. A seminar presenting the selected voting schemes.",
+      "criteria": "1. A document that defines the final list of selected voting schemes is provided. The document should contain a description of the schemes and rationale for their selection. The document should be available online for everyone to review and comment.\n2. A seminar is held to present the outcomes of the milestone.",
+      "report": "Milestone outputs correspond to the acceptance criteria for Milestone 2. Documents are open for public comments. \n・Photrel report: \n\nPhotrek IOG AltVote Analysis 2024May23.pdf\n・Veritas team report: \n\nReport: Milestone 2\nSeminar Presentation delivered at Catalyst Town Hall, 24 July 2024:\n https://docs.google.com/presentation/d/1V3thtyCNtQr6t8bz0qsKk8moROHG3-zObOqe8m96Tcw/edit?usp=sharing\nRecording:\nhttps://drive.google.com/file/d/1XyZKEPozBXeh1CUvC4xmIIt_PC01xmJh/view?usp=drive_link",
+      "kinds": [
+        "doc"
+      ],
+      "links": 5
+    },
+    {
+      "no": 3,
+      "month": "7",
+      "cost": 95000,
+      "promise": "Analyses of the properties of the selected voting schemes. Construction of the privacy-preserving cryptographic protocols that realize the selected voting schemes.\nDeliverables:\n1. A document containing analyses of the properties of at least two of the selected voting schemes. \n2. A document that describes the achievability and potential complexity of privacy-preserving cryptographic voting protocol(s) for the selected voting schemes, the model and the construction of privacy-preserving cryptographic voting protocol(s) for at least one among the selected voting schemes",
+      "criteria": "1. A document (to be a part of the future research paper) with analyses of properties is available online for everyone to review and comment. The document provides deep analyses of at least two of the selected voting schemes.\n2. A document (to be a part of the future research paper) that describes the model and the construction of the privacy-preserving cryptographic voting protocol(s)\n3. At least one seminar is held to present the outcomes of the research.",
+      "report": "New section to the Veritas report\n 1. Properties of the proposed draft protocol.\nThis explanation is already included in our presentation slides and in the townhall presentation. \nAs the milestone acceptance criteria only states \"the model and the construction\", we didn't overload the report, although we’d like to thank the reviewer as it seems it's a good idea to give the properties in the M3 report too - this really helps for community members understand the results.\nOn the comments reL Photrek report: the Veritas reports fully cover the milestone deliverables.\nThanks again for valuable comments, they were delivered to the team and will be taken into account by them. At the same time, these reports are supplementary and are not required by the milestone acceptance criteria at all.\nCatalyst Veritas report 1 - Analysis of the selected voting schemes\nhttps://docs.google.com/document/d/11BYpnOaLoOCfh5NMMCDsHMmnrI33CMqKswXKZQiyctc/edit?usp=sharing\nCatalyst Veritas report 2 - Privacy-preserving voting scheme: a draft of the cryptographic privacy preserving voting protocol\nhttps://docs.google.com/document/d/1_TFXj2qcHTl5WUBibUko1i9HMdhhdTFqaWXVTX7fHPg/edit?usp=sharing\nPhotrek report 1 - Catalyst Alternative Voting. Analysis of Literature\nhttps://drive.google.com/file/d/1x5u_q4D6kYjxAJNCPl33ajSZRGZNlfXM/view?usp=sharing\nPhotrek report 2 - Literature review on QV and correlation: Foundations\nhttps://drive.google.com/file/d/1x_zSmPaWCKnnY0rV49KT2dzIOBvsjG4t/view?usp=sharing\nSlide deck (joint) for the town hall presentation\nhttps://docs.google.com/presentation/d/1ouePxvvQVqQKiaTlxOswWLn3kMjZJwDZ871N6va3Sic/edit?usp=sharing\nAfterTown Hall Recording\nhttps://drive.google.com/file/d/1tP8loPQJ1sXZnBwKnVU9nB0fdjGdNT7N/view?usp=drive_link",
+      "kinds": [
+        "doc"
+      ],
+      "links": 12
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 90000,
+      "promise": "Draft of the main parts of the research papers and partial implementation of the developed voting protocol(s)\n\nDeliverables:\n1. A draft: main proofs of properties of the selected voting schemes.\n2. A draft: main proofs of properties of the privacy-preserving cryptographic voting protocols for selected voting schemes with achievable efficient cryptographic support.\n3. A repo: partial implementation of the privacy-preserving cryptographic voting protocols.",
+      "criteria": "1. Drafts of the research papers: main proofs of properties of the selected voting schemes; the privacy-preserving cryptographic voting protocols that are developed for selected voting schemes: the construction and security proofs.\n2. Architecture reasonably satisfies the high level requirements of Hermes/Athena and Catalyst Voices technical specifications (project Catalyst will produce a statement on the potential applicability, practical usage, and integration of the research into Hermes/Athena and Catalyst Voices).\n3. Repo contains partial implementation of the privacy-preserving cryptograp",
+      "report": "Dear Milestone reviewers, please find below the committed deliverable outputs and thank you for your reviews. You were duly correct not to approve this as no statement regarding alignment of the QV approach to the Catalyst voting stack was provided. This is now corrected and included as 2a. \nThank you for your consideration, \nKriss Baird\n・Drafts of the research paper on selected voting schemes with analysis and supporting evidence of their properties.\n・Drafts of research paper on developed privacy preserving cryptographic voting protocol describing the construction and security proofs of the protocol.\n・PUBLIC Mitigation of Whales influence in F14\n・Repository with prototypes of the implemented privacy preserving cryptographic voting protocols and their benchmarks.\n・Recorded minutes with:\n\n・explanation of the selected voting schemes, their properties and relevance for Catalyst \n・and slides used during the explanation;\n・Demonstration and explanation of the implemented prototypes and benchmarking results for the developed privacy preserving cryptographic voting protocols.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "11",
+      "cost": 25000,
+      "promise": "Preprints of the research papers and prototype implementation, a draft report that summarizes research outcomes and provides recommendation on the application of the voting schemes in Catalyst\nDeliverables:\n1. A draft report: properties of the selected voting schemes for Catalyst, comparison and recommendations for selection depending on input requirements\n2. A public preprint of the research paper on the analysis of the voting schemes\n3. A public preprint of the research paper on the developed privacy-preserving cryptographic voting protocols\n4. Prototype implementations of the privacy-preserving cryptographic voting protocols and their benchmarks\n5. A seminar that explain the results above",
+      "criteria": "1. Publicly available preprints and a list of conferences or journals for submission, if it is aligned with the submission privacy of the conference or a journal. The papers should include analyses of all selected voting schemes. The cryptographic privacy-preserving protocols should be designed for corresponding voting schemes.\n2. The report should contain an overall comparison and recommendations on the application of the analysed voting schemes in Catalyst.\n3. The publicly available Github repository containing prototypes of the implemented privacy-preserving cryptographic voting protocols a",
+      "report": "Hi there Catalyst Milestone reviewers, \nPlease find below the updated milestone submission with the outstanding seminar contents included. We hope this meets your expectations and are happy to answer any questions you might have with the evidence provided. \n・A report: properties of the selected voting schemes for Catalyst, comparison and recommendations for selection depending on input requirements\n・The research preprints are published: \n\n・the preprint of the research paper on the analysis of the voting schemes\n・a public preprint of the research paper on the developed privacy-preserving cryptographic voting protocols\n\n3, The repository with prototype implementations is available online.\n4 . Recorded minutes with:\n・ Explanation of the results\n・ Demonstration and explanation of the implemented prototypes and benchmarking results\n\n5 . Recorded seminar at Catalyst Town Hall, May 14th\n[Future of Catalyst Voting & panel discussion segment at 09:11 - 54mins] \n[Presentation slides]",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "12",
+      "cost": 75000,
+      "promise": "The report on the selected voting schemes and reccomendations on their application, final versions of the preprints with the research outcomes.\nDeliverables:\n1. The finished report on the selected set of the voting schemes for Catalyst, comparison and recommendations for selection depending on the use case.\n2. The research paper on analysis of the voting schemes submitted to the conference or journal (the preprint is publicly available).\n3. The research paper on privacy-preserving cryptographic voting protocols for selected voting schemes submitted to the conference or journal (the preprint is publicly available).\n4. The prototype implementation of the implemented privacy-preserving cryptographic voting protocols for selected voting schemes and their benchmarks.\n5. Video review of the voting scheme comparison, cryptographic protocols for them and prototype operation demo.\n6. Project Completion Report and Project Completion video",
+      "criteria": "1. The report describes in detail pros and cons of each of the selected voting schemes and for which use cases they suit best.\n2. The two research papers on voting schemes and cryptographic privacy-preserving protocols contain analyses of the corresponding schemes, their properties, and the security guarantees they provide.\n3. The prototype implementations of privacy-preserving cryptographic protocols for voting schemes is finished, tested, and benchmarked. The instructions on how to run tests and benchmarks are provided",
+      "report": "Hello MRs, please accept the final milestone Project Completion for the the Alternative Voting project. Hope you're as excited to see QV in F14 demonstrated as we all are. \nThank you to Photrek and IOG Research for all the hard work, the deliverables are as follows: \n・The finished report on the selected set of the voting schemes for Catalyst, comparison and recommendations for selection depending on the use case: final milestone report_2.pdf \n・The research paper on analysis of the voting schemes submitted to the conference or journal (the preprint is publicly available): \n・The paper is submitted to https://www.nature.com/palcomms/, the preprint is available here: Enhancing Decentralization in Blockchain Decision-Making Through... \n・The research paper on privacy-preserving cryptographic voting protocols for selected voting schemes submitted to the conference or journal (the preprint is publicly available):\n・The paper is submitted to IEEE Transactions on Dependable and Secure Computing, the preprint is available here: https://eprint.iacr.org/2025/803.pdf.\n・The prototype implementation of the implemented privacy-preserving cryptographic voting protocols for selected voting schemes and their benchmarks: GitHub - input-output-hk/catalyst-split-stake-voting-prototype: Prototype of the split-stake voting protocol \n・Video review of the voting scheme comparison, cryptographic protocols for them and prototype operation demo (here are the slides used in the video review). \n・Project Completion Report and Project Completion video.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 13
+    }
+  ]
+}

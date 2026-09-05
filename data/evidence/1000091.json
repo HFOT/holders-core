@@ -1,0 +1,92 @@
+{
+  "title": "Help NMKR to continue operations & develop NFT Infrastructure",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Rationale: The whole idea of this proposal is to help NMKR generate revenue while going through the bear market and keeping the \"details of implementation\" relatively lean so that, as a startup, we can keep operating without being bound to a strict plan that would hinder any innovation.\nBecause of this, we set 3 key milestones:\n・Enhancement of NMKR Roadmap\n・Open Sourcing NMKR Studio\n・Onboarding more businesses to Cardano\n\nNow, unfortunately, 3 aren't enough for this milestone-based funding model, so we're stretching them to 6...\nAnd since apparently my idea of a simple technical plan is too little planning for the reviewer, we decided to skip the plan altogether because honestly it's not really necessary for the actual deployment of anything we're planning anyways and we'll just literally split up the 3 milestones into 6.\n\nSo, let's begin.\nMilestone Nr. 1 Output (taken from Milestone 1 \"Enhancement of NMKR Roadmap\" from the IdeaScale submission):\n・CIP 68 Integration: CIP68 is integrated and available to everyone in NMKR Studio\n\nThe remaining parts two parts of this enhancement are:\n・Integration of additional Storage Solutions\n・Plugin Support\n\nwhich will both be addressed in Milesto",
+      "criteria": "・User can register in NMKR Studio & mint an NFT using CIP68\n\nNote: The enhancement of current roadmap is already outlined specifically in Ideascale. It's:\n・Implement CIP-68\n・Integrate more decentralized storage solutions\n・Add plugin support\n\nThese are the three things that will be part of the roadmap (and in this and the next milestone)\nIn this specific milestone the competition of the first item of the roadmap is the goal.",
+      "report": "The Milestone M1: Integration of CIP-68 into NMKR Studio mainnet has been accomplished as planned.\nWe added the controls for it in NMKR Studio in the project settings when creating a new project.\nWe also added a feature that allows to select a custodial wallet (which is also a new addition to NMKR Ecosystem) to receive the reference token.\nPlease find attached two screenshots, or log in to https://studio.nmkr.io/ and try it out yourself. \nhttps://c-ipfs-gw.nmkr.io/ipfs/QmZs7JyaPfLKgQzQHxwFiuKep6tercwNTQ3Sv8fVYCHwae\nhttps://c-ipfs-gw.nmkr.io/ipfs/QmZqN9qgfJHVv1X37RYCZ1GRsjdUhc24wSQbjCEbAB5Hqv\n\nNew additional proof:\nGuide in our docs + video tutorial embedded https://docs.nmkr.io/nmkr-studio/token/metadata/cip-68\nOur website and blog is currently under construction, will change it appearance and visibility on the website soon:\nhttps://www.nmkr.io/blog/unlocking-the-future-nmkr-studio-integrates-cip-68-for-dynamic-asset-metadata-on-cardano",
+      "kinds": [
+        "other"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 180000,
+      "promise": "・Integrate more decentralized storage solutions: In NMKR Studio users will be able to choose to store their NFTs on more than just IPFS (the currently supported storage solution)\n・Documentation for above on docs.nmkr.io\n・Add plugin support: In NMKR Studio there will be a designated page for Plugins, where third-party products & tools that are to some degree connected with NMKR are highlighted",
+      "criteria": "・Is it possible for users to choose a different storage solution rather than just IPFS?\n・Is it possible for users to learn more about this feature by going to the NMKR Docs?\n・Is it possible for users to visit a page in NMKR Studio that highlights different third-party lugins that are somehow connected to the NMKR ecosystem?",
+      "report": "Update Proof of Achievement M2\n\nAdditional storage solutions:\nFor a short time, we had to temporarily remove the Iagon support from the interface, but it is back up already.\n\nI also updated the video in the documentation about how to create a project and included the set up of Iagon as storage solution.\nHere is the link to the topic in the docs with the video (voice over is following soon)\nhttps://docs.nmkr.io/nmkr-studio/project/create\n\nPlugin support:\nAbout the screenshots with nftpal integration.\nAs you have two layergroups in nftpal with each 50 NFTs, it will create 100 NFTs in total. \nThe idea of the layergroups is that you can have layering of different characters within the same project.\n\nAbout the reviewer that had issues with the log-in,\ncould you please open a ticket here, so we can unlock your account as soon as possible: nmkr.io/support\nAn account can lock due to many failed log-in attemps for example.\n\nThank you.",
+      "kinds": [
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 45000,
+      "promise": "To recap, the goal in general is:\n・Develop a business outreach program.\n・Initiate partnerships with businesses interested in NFTs.\n・Offer support to onboarded businesses.\n\nIn this Milestone, we'll be focusing on:\n・Develop a business outreach program.\n\nTo do that we will do\n・Research in what such a business outreach program could and should look like\n・Then we will formulate a specific plan on how we will structure & launch the program based on our findings\n\nThis milestone is heavily research based and the outputs can vary, so please bear with the lack of details. If we go too much into detail, we might jeopardize the whole idea.",
+      "criteria": "・A written plan that outlines the business outreach program\n・In this plan, it will be clear why we've chosen to go down the route we are going down and what the rational behind the decision is.",
+      "report": "We are pleased to submit the proof of achievement for this milestone.\nThe objective of this milestone is to develop a business outreach program designed to initiate new partnerships with businesses. While NMKR already provides support to onboarded businesses - often leading to new partnerships through word-of-mouth referrals - this milestone emphasizes a proactive approach. Specifically, we focused on:\n・Developing a business outreach program to actively reach out to new partners, projects, and businesses.\n\nTo achieve this, we conducted thorough research to determine what an effective business outreach program should entail. Based on our findings, we formulated a detailed plan outlining how we will structure and launch the program, as detailed below.\nThis plan articulates the business outreach strategy, explaining the chosen approach and the rationale behind our decisions.\nThe comprehensive plan is documented as a file, available here: Outreach and business plan NMKR_ final\nAs per your revision, we have specified in the document in which milestone we will deliver information on the progress on the objectives of item 2, and in which milestones we will deliver the deliverables of item 6. We also appreciate your feedback, that the budget in the plan (section 8) was in USD while the project funding is in ADA. For the sake of consistency, we have of course adjusted the plan.\n------------------------------------------------------------------------------------------------------------------------\nBusiness Plan and Outreach Program for Onboarding Businesses to Cardano via NMKR\n1. Executive Summary\nNMKR is a premier platform empowering businesses to create, manage, and mint Non-Fungible Tokens (NFTs) and Fungible Tokens (FTs) on blockchains like Cardano and Solana. Having minted over 2 million NFTs on Cardano, NMKR offers intuitive tools, such as NMKR Studio, to tokenize digital assets and Real-World Assets (RWAs) for diverse applications. While NMKR supports RWA tokenization",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 30000,
+      "promise": "・The previously created business onboarding program gets launched\n・We collect data & publicise data about the efficiency of the program",
+      "criteria": "・The previously created business onboarding program gets launched\n・Since we don't know what exactly the program will look like yet we can only assume but one assumption is that its going to have a public launch on the nmkr.io website + some social media announcements\n・Another assumption is that there will be an onboarding flow for businesses going through the program\n・There will be more points but as I said, its not clear yet and research + planning based which will happen in a previous milestone\n・We collect data & publicise data about the efficiency of the program\n・This data will be publicise",
+      "report": "We are pleased to submit the proof of achievement for this milestone.\nThe objective of this milestone is to track and report on the progress, and impact, of the “business outreach and onboarding initiative”, launched in January 2024 and submitted in the previous milestone. We only stealth launched our plan at the time with a blog post, because we wanted to have a reference for our goal without advertising and hype. The blog post from January 2024 here.\nI explain the structure of the program in this Video.\nAfter we had set the Business Plan and Outreach Program, we created our Market Research Strategy.\nOur following Survey Report outlines the success of our strategy. \nWe are also happy to share our success with the community in our blog as well as on social media: \n------------------------------------------------------------------------------------------------------------------------\nSurvey Report: Detailed Analysis of NMKR’s Success in 2024\nThis survey report provides a comprehensive analysis of NMKR’s notable success stories and strategic advancements throughout 2024. It highlights NMKR's commitment to empowering the Web3 ecosystem, particularly on the Cardano blockchain, and specifically assesses its progress against the objectives and deliverables outlined in the \"Outreach and business plan for Onboarding Businesses to Cardano via NMKR\" (implemented in January 2024).\n\n1. Key Business Onboarding and Enterprise Adoption (Primary Objective & Quantifiable Goals)\nNMKR has demonstrated significant success in onboarding businesses and enterprises in 2024, solidifying its position as a leading provider of blockchain solutions, and making substantial progress towards its primary objective of onboarding businesses to Cardano.\n・Strategic Investment by EMURGO (March 18, 2024): A crucial highlight of 2024 was the strategic investment by EMURGO, a major player in the Cardano ecosystem. This investment is set to propel NMKR's scaling efforts, including the development of a secu",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 42,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "25",
+      "cost": 180000,
+      "promise": "・Prepare the codebase for open sourcing, ensuring all sensitive and proprietary information (such as API Keys, information about private people that have previously worked on the repository and maybe don't want to be named, etc.) removed\n・Do research & choose a fitting open-source license\n・Launch the open-source repo, inviting developers to contribute.",
+      "criteria": "・NMKR Studio is fully open sourced & available on Github.\n・The Github repository is linked to from the official NMKR website, to make it easily reachable\n・NMKR Studio Open-Source process documentation: general considerations, scope of the process (which components, libraries, dependencies, information, etc, were made open source), which components, libraries, dependencies, information, were left out of the process and why, security considerations, etc.\n・Documentation related to the research related to the Output “research & choose a fitting open-source license”.",
+      "report": "Most recent update:\nThe change request because of the delay was made and approved by catalyst. The following is the exact same PoA that the reviewers already approved before. Thank you for reviewing.\nPrevious update:\nhttps://docs.nmkr.io/ Article moved very prominently to the top as requested by the reviewer.\nPrevious update:\nI am hereby resubmitting the exact same Proof of Achievement again, because I believe Milestone Reviewer has incorrectly disapproved or misunderstood the Outputs and for the approval required evidence.\nOur deliverables fully satisfy the original acceptance criteria, and the feedback appears to introduce requirements not specified in the initial milestone documentation.\nThe feedback goes beyond the specified milestone requirements and attempts to dictate internal business decisions regarding our website structure and documentation organization, which are not part of the original evaluation criteria. This is slowing growth of Cardano and even going as far as risking success of projects by forcing the teams to work on things that are not relevant by nitpicking on details & delaying funding.\nUpdates:\nWe now feature the open-source state of Studio very prominently on our nmkr.io landing-page (screenshot)\nIn our Docs you can find a whole dedicated section with the licensing research details and the open-source documentation.\nhttps://docs.nmkr.io/nmkr-studio/nmkr-studio-is-open-source\nFurther, announcements about it are now part of our monthly and weekly community updates on twitter.\nhttps://x.com/nmkr_io/status/1977305570286948668\nhttps://x.com/nmkr_io/status/1977803125047337338\nWe will also include the blog entry with all its details (https://www.nmkr.io/blog/nmkr-studio-is-now-open-source) in our posts.\nPlease approve this milestone as all required deliverables have been delivered according to the acceptance criteria.\nThank you.\nNMKR Studio Fully Open Sourced & Available on GitHub\nRepository: https://github.com/nftmakerio/NMKR-Studio\n・Complete code",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 21,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "26",
+      "cost": 90000,
+      "promise": "To recap, the main goals of the proposal are:\n・Enhancing the Current Roadmap: We aim to further improve the user experience on our platform through the implementation of CIP-68, the integration of more decentralized storage solutions, and the addition of plugin support.\n・Open Sourcing NMKR Studio: We plan to create a more collaborative and innovative environment by making NMKR Studio open source, allowing developers worldwide to contribute to our platform.\n・Onboarding More Businesses to Cardano: Our ultimate objective is to grow the Cardano ecosystem by attracting more businesses to use the Cardano blockchain for their NFT projects.\n\nIn this last delivery we focus on documenting the outcome of the 3 main goals.\nThis will be done in form of \n・A written report\n・A video report\n\nNote to reviewers: I have extended the timeline of this milestone to twelve months. If you want, I can extend the other milestones as well, so that i makes sense.\nI've outlined my reasoning for wanting the funds as soon as possible in Milestone nr.1. I think it poses a critical risk if we have to spread it over 12 months. But if we can submit milestones earlier (as I think we should be to, based on what I read",
+      "criteria": "Since the above has already been accepted at this point by previous milestones, we will focus on reporting on the overall metrics & KPIs of this:\n・How many users of CIP68 in NMKR Studio\n・How many Plugins are available?\n・How many businesses got onboarded through the business outreach program?\n・How many NFTs have been minted since begin of this proposal?\n・How many files are stored on alternative storage solutions?\n・How many Open Source Contributions to NMKR Studio have we seen?\n・And more\n\nThe main acceptance criteria of this milestone is:\n・Does the written report exist?\n・Does the video report ex",
+      "report": "As the previous milestone is signed off now. Please find the same PoA here again resubmitted.\nThank you for reviewing.\n\nProject Close-out Report\nName of project and Project URL on IdeaScale/Fund\nProject Name: Help NMKR to Continue Operations & Develop NFT Infrastructure\n Project URL: https://projectcatalyst.io/funds/10/f10-developer-ecosystem-the-evolution/help-nmkr-to-continue-operations-and-develop-nft-infrastructure \nYour Project Number\nProject Number: 1000091\nName of project manager\nProject Manager: Phil Isenmann\nDate project started\nStart Date: October 8, 2023\nDate project completed\nCompletion Date: October 26, 2025\nList of challenge KPIs and how the project addressed them\nStrategic KPIs and Implementation\nKPI 1: Enhance Developer Tools and Infrastructure\nImplementation Strategy:\n・CIP-68 Integration: Integrated CIP-68 into NMKR Studio mainnet enabling dynamic metadata updates for NFTs, with custodial wallet support (new addition to NMKR Ecosystem)\n・Decentralized Storage: Implemented decentralized storage solutions by reinstating Iagon support\n・Plugin Ecosystem: Added plugin support with NFTpal for layered NFT generation\n・Automation Workflows: Full Zapier integration for complex automation workflows\n・Multi-Token Payment System: Revolutionary multi-token payment system implemented allowing users to pay for any NFT mint using any Cardano native token, with automatic DEX conversion via DexHunter integration for optimal rates. Complete technical implementation included controls in project settings and reference token management\n・Asset Tokenization: Templatized RWA and digital asset tokenization\n\nOutcomes Achieved:\n・2,823 NFTs minted across 64 projects using CIP-68\n・7 total plugins accessible in Studio supporting 1,000+ projects since implementation ( Adamail, Adamail mailinglist, Vault3 tokengateing, cardanopress payment, launchpage template integration, NFTpal Layering and metadata creation, paper wallets)\n・Further plugin/integration: Zapier Automation integration",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 25,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "title": "Koios Rust Client Library",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 11100,
+      "promise": "・Setup of the Rust project and configuration of the development environment.\n・Implementation of fundamental functionalities within the library to connect to the Koios API and handle HTTP requests and JSON parsing. This includes core API services such as Network and Block.\n・Basic authentication mechanisms for accessing protected endpoints.",
+      "criteria": "・Successful setup of the Rust library structure.\n・Ability to connect to the Koios API and fetch data for Network and Block endpoints.\n・Code is reviewed and committed to the GitHub repository. Can bee seen in https://github.com/justmert/koios.rs",
+      "report": "Milestone 1 - Proof of Achievement\n\nNote: The project has been implemented completely (not only this milestone, but all milestones).\nGithub Repository (complete implementation): https://github.com/justmert/koios.rs\nPackage Release: https://crates.io/crates/koios-sdk\nDocumentation: https://docs.rs/koios-sdk/\nProof of All Tests Passing (82 test function): https://github.com/justmert/koios.rs/actions/runs/13017600885/job/36310519783#step:6:366\n\nProject Overview\n\nThe first milestone focused on establishing the foundational structure of the Koios Rust SDK and implementing core API functionality. The work completed includes setting up the project architecture, implementing basic client functionality, and developing core API endpoints.\n1. Project Setup and Structure\n\n・Initialized the Rust project with proper cargo configuration\n・Set up the development environment with necessary dependencies\n・Established project structure following Rust best practices\n・Configured CI/CD pipeline for automated testing and builds\n\nEvidence:\n・Project structure: https://github.com/justmert/koios.rs/tree/master/src\n・Cargo.toml configuration: https://github.com/justmert/koios.rs/blob/master/Cargo.toml\n\n2. Core Client Implementation\n\n・Developed the base HTTP client with proper error handling\n・Implemented rate limiting functionality\n・Added authentication support for JWT tokens\n・Created builder pattern for flexible client configuration\n\nEvidence:\n・Client implementation: https://github.com/justmert/koios.rs/blob/master/src/client/mod.rs\n・Rate limiting: https://github.com/justmert/koios.rs/blob/master/src/client/rate_limit.rs\n・Client builder: https://github.com/justmert/koios.rs/blob/master/src/client/builder.rs\n\n3. Network API Implementation\n\nSuccessfully implemented the Network API endpoints:\n・Get tip information\n・Fetch genesis parameters\n・Query network totals\n・Retrieve protocol parameters\n\nEvidence:\n・Network API implementation: https://github.com/justmert/koios.rs/blob/master/src/api/network.rs\n・Net",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 38,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 11100,
+      "promise": "・Development of additional API functionalities: Transactions, Stake Account, Address, and Asset endpoints.\n・Implementation of comprehensive error handling and unit tests to ensure the robustness of the library.",
+      "criteria": "・Library successfully handles API calls across the newly added functionalities without errors.\n・Unit tests are developed for new functionalities and successfully pass.",
+      "report": "Milestone 2 - Proof of Achievement\nNote: The project has been implemented completely (not only this milestone, but all milestones).\nGithub Repository (complete implementation): https://github.com/justmert/koios.rs\nPackage Release: https://crates.io/crates/koios-sdk\nDocumentation: https://docs.rs/koios-sdk/\nProof of All Tests Passing (82 test function): https://github.com/justmert/koios.rs/actions/runs/13017600885/job/36310519783#step:6:366\nProject Overview\nThe second milestone focused on expanding the Koios SDK's functionality by implementing additional core API endpoints and enhancing the testing infrastructure. This phase added comprehensive support for Transactions, Stake Accounts, Addresses, and Assets.\n1. Transaction API Implementation\nImplemented complete transaction-related endpoints:\n・Transaction information retrieval\n・CBOR data handling\n・Transaction metadata\n・UTxO processing\n・Submit transaction functionality\n\nEvidence:\n・Transaction implementation: https://github.com/justmert/koios.rs/blob/master/src/api/transaction.rs\n・Transaction models: https://github.com/justmert/koios.rs/blob/master/src/models/transaction.rs\n\n2. Stake Account API Implementation\nAdded comprehensive stake account functionality:\n・Account information retrieval\n・Reward history\n・Registration/deregistration tracking\n・Delegation history\n・Account updates\n\nEvidence:\n・Account implementation: https://github.com/justmert/koios.rs/blob/master/src/api/account.rs\n・Account models: https://github.com/justmert/koios.rs/blob/master/src/models/account.rs\n\n3. Address API Implementation\nCompleted address-related functionality:\n・Address information queries\n・UTxO lookup\n・Transaction history\n・Asset balance checking\n・Credential verification\n\nEvidence:\n・Address implementation: https://github.com/justmert/koios.rs/blob/master/src/api/address.rs\n・Address models: https://github.com/justmert/koios.rs/blob/master/src/models/address.rs\n\n4. Asset API Implementation\nDeveloped comprehensive asset handling:\n・Asset informati",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 42,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 14800,
+      "promise": "・Integration of the remaining functionalities such as Pool, Script, and advanced queries.\n・Development of detailed documentation and usage examples for using the library.\n・Final testing to ensure compatibility and performance across all supported features.\n・Packaging and releasing the library on crates.io for easy installation and broad accessibility.\n・Achieving over 100 total downloads (from Cargo and GitHub Releases) within the first 3 months of the library’s first release.\n・Final close-out report.\n・Final closeout video.",
+      "criteria": "・Complete functionality of the library with all planned endpoints integrated.\n・Comprehensive documentation that allows developers to easily understand implementation and utilization of the library.\n・All modules and features pass final integration.\n・Documentation and tutorials are comprehensive, clearly written, and easily accessible to developers.\n・Library achieves minimum of 100 total downloads across Cargo and GitHub Releases within 3 months of initial release.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Final Milestone - Proof of Achievement\nProject Overview\nThe final milestone represents the completion of the Koios Rust SDK, implementing all remaining functionalities, comprehensive documentation, and successful publication. This milestone demonstrates the full realization of a production-ready Rust library for interacting with the Cardano blockchain through the Koios API.\n1. Complete API Implementation\nPool API Integration\n・Pool list and information retrieval\n・Stake snapshot handling\n・Delegator management\n・Pool updates and history\n・Metadata handling\n\nEvidence:\n・Pool implementation: https://github.com/justmert/koios.rs/blob/master/src/api/pool.rs\n・Pool models: https://github.com/justmert/koios.rs/blob/master/src/models/pool.rs\n\nScript API Integration\n・Script information retrieval\n・Plutus script handling\n・Native script support\n・Datum management\n・Redeemer processing\n\nEvidence:\n・Script implementation: https://github.com/justmert/koios.rs/blob/master/src/api/script.rs\n・Script models: https://github.com/justmert/koios.rs/blob/master/src/models/script.rs\n\nGovernance API Integration\n・DRep handling\n・Proposal management\n・Committee support\n・Voting procedures\n\nEvidence:\n・Governance implementation: https://github.com/justmert/koios.rs/blob/master/src/api/governance.rs\n・Governance models: https://github.com/justmert/koios.rs/blob/master/src/models/governance.rs\n\n2. Documentation and Examples\n・Comprehensive API documentation\n・Integration examples\n・Type documentation\n\nEvidence:\n・Documentation: https://docs.rs/koios-sdk\n・README: https://github.com/justmert/koios.rs/blob/master/README.md\n\n3. Testing and Quality Assurance\n・End-to-end testing\n・Integration testing\n・Error scenario coverage\n・CI/CD pipeline verification\n\nEvidence:\n・Test suite: https://github.com/justmert/koios.rs/tree/master/tests\n・CI/CD: https://github.com/justmert/koios.rs/tree/master/.github/workflows\n・See all tests passing: https://github.com/justmert/koios.rs/actions/runs/13017600885/job/36310519783#step:6:366\n\n4. P",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 40,
+      "cut": true
+    }
+  ]
+}

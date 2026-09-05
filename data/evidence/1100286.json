@@ -1,0 +1,66 @@
+{
+  "title": "VAULT3 - Admin dashboard to manage token-gated content",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 50200,
+      "promise": "・Project Infrastructure\n・Codebase setup\n・CI/CD\n・Automatic testing\n・Database\n・Account login, and base UI for admin dashboard",
+      "criteria": "Infrastructure setup and available on a private GitHub repo. Account creation and login implemented to access the admin dashboard when a user has created a token gate (space) on VAULT3.",
+      "report": "We set the project's infrastructure, codebase, CI/CD, and automatic testing on our private GitHub Repository. Please let us know to whom should we grant access to review it since the repository is private.\nVAULT3 uses a MongoDB instance, and the account login and base UI for the admin dashboard are live here. When a user connects his/her wallet and signs a message to log in on VAULT3, we create an account in our database that is associated with all token gates created by this user. The admin dashboard is only accessible after the user signs in using a Cardano CIP-30 wallet, and it will display all created token gates by the user in the next milestone.\nWe made two minor changes to the milestone deliverables:\n・We moved the initial repository to a dedicated one for VAULT3\n\n old: \"https://github.com/geniish-protocol/vault\"\n new: \"https://github.com/vault3-io\".\n・We changed the endpoint where the admin dashboard will be hosted\n\n old: \"dev.vault3.io/dashboard\".\n new: \"app.vault3.io\".",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 41800,
+      "promise": "・Support viewing, editing, and deleting token gates (spaces).",
+      "criteria": "Users that have created token gates (spaces) on VAULT3 can view, modify, and delete them using the admin dashboard.",
+      "report": "We released a working product of the admin dashboard to view, create, edit, and delete spaces (token gates).\nHowever, We changed the endpoint where the admin dashboard will be hosted\n old: dev.vault3.io/dashboard\n new: app.vault3.io",
+      "kinds": [
+        "other"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 41800,
+      "promise": "・Support viewing, adding, editing, and deleting files and access conditions for a token gate (space)",
+      "criteria": "Files and access conditions of a token gate (space) can be viewed, added, modified, and deleted by their authenticated owners using the admin dashboard.",
+      "report": "We released a working product of the admin dashboard to view, add, edit, and delete files and access conditions for a token gate (space). \nAs stated before, We changed the endpoint where the admin dashboard will be hosted\n old: dev.vault3.io/dashboard\n new: app.vault3.io",
+      "kinds": [
+        "other"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 41800,
+      "promise": "・Wallet interactions in a token gate (successful and unsuccessful unlocks, and call-to-action interactions for spaces)\n・Current data hosting duration and costs",
+      "criteria": "Authenticated token gate admins can review key performance metrics and hosting costs of their active spaces.",
+      "report": "We released a working beta product of the admin dashboard to view key performance metrics for each space and in total, including wallet interactions (successful and unsuccessful unlocks), and call-to-action interactions.\nWith this milestone, we released a beta version that will be publicly announced to the Cardano community. We changed the endpoint where the admin dashboard will be hosted\n new: beta.app.vault3.io\nThe costs for each space are shown on the space's \"Metrics\" tab. This will be our initial base hosting price per space, but we will introduce a proper subscription model afterward.\nPlease note that the \"Wallet Connections\" metric shows the total amount of attempted wallet connections per space or in total. This doesn't reflect if they were unique wallets. If our community asks for this feature during the beta phase, we will gladly add it to our metrics view.\nDisclaimer: We are still considering different business models for VAULT3. Ideally, we will implement the pricing model as soon as we gather enough traction metrics from this Beta release to better understand how our solution is used by the Cardano ecosystem. Meanwhile, VAULT3 will remain 100% free for the community to use and enjoy.",
+      "kinds": [],
+      "links": 0
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 41800,
+      "promise": "・Releasing beta version of the product\n・Bug fixing and refinements\n・Public release\n・Project Close-Out Video\n・Project Close-Out Report",
+      "criteria": "VAULT3's Admin dashboard is publicly available on the platform and can be used to manage any created token gate (space), access conditions, its' content, and view relevant traction metrics. A close-out video and report are publicly available on a VAULT3 token gate.",
+      "report": "We launched a beta version of the admin dashboard for 10 weeks under beta.app.vault3.io to gather feedback and fix bugs. Now we released the production version of our admin dashboard under https://app.vault3.io.\nClose-out video product demo: https://youtu.be/uZT5TpPXEPk\nClose-out video product final thoughts: https://youtu.be/3pMUibj7deE\nClose-out report: https://docs.google.com/document/d/1Z9eAEr17XHkULMqhLnUv34u53TrgcZ161ILhWrHw01A/edit?tab=t.0\nThe close-out video and report are hosted on: https://vault3.io/space/catalyst-vault3-admin-dashboard",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 11
+    }
+  ]
+}

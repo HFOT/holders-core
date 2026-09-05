@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・PoCのスコープ、目的、タイムラインを除外する詳細なプロジェクトイニシアチブ文書。\n・オークションプロトコルの機能的および非機能的要件を含む包括的な要件と仕様文書。\n・初期スマートコントラクトの輪郭や初期ユーザーインターフェイスのドラフトなど、PoCの高レベルの建築設計.",
+      "criteria": "・UIのアクションを詳細に計画したプロジェクトイニシアチブ文書。\n・お問い合わせ・仕様書\n・PoCの基本ニーズに合った建築設計.",
+      "report": "開始、要件と仕様文書 - https://elderly-hammer-b9c.notion.site/requirements-and-Specifications-Document-Real-World-Asset-RWA-backed-On-Chain-Lending-and-Auction-e1bafc4bac5546a581be45fc118b2b59?pvs=4\n建築設計文書 - https://elderly-hammer-b9c.notion.site/High-Level-Architectural-Design-Document-a5e8e7b826054d3cbd78b6a5d632d868?pvs=4\nユーザーインターフェイスfigmaの設計の初期のモックアップ - https://www.figma.com/design/lB6980whlB13Ci7e1seWUA/Trivolve-(Copy)?node-id=0-1&node-type=CANVAS&t=iRoTbRwOZjxch6nQ-0\nコードや図の読みやすさを良くするために、Google ドキュメントの代わりに Notion を使用することにしました."
+    },
+    {
+      "no": 2,
+      "promise": "・入札提出やオークション決済などのコア機能の実証、Preprodで開発されたオークションプロトコルの機能試作。\n・コアコンポーネントの完全性を確保するための基礎テスト\n・バックエンドロジックに接続された階層のユーザーインターフェイスで、PoCのシンプルさと機能性を重視しています.",
+      "criteria": "・主要なバグのない基本的なオークションプロセスを実施できる試作\n・前PodスマートコントラクトリンクとパブリックPoC展開のリンクを廃止.",
+      "report": "RWA-backed On-chain Lending およびオークションプロトコルのプロトタイプは、Preprod Network 実証済みの主要な機能を開発しています。\n・最低入札、複数の競争入札、最高入札でオークションを確定し、入札が届かない場合はリストをキャンセルします。\n・担保付借入金、貸付発行、返済を含む貸渡手続き\n・既定のプロセスとレンダはデフォルトの場合の担保を主張します。\n\nすべてのテストケースと前処理されたトランザクションリンクの詳細なテストレポートは、こちらで見つけることができます - https://elderly-hammer-b9c.notion.site/Test-Report-for-RWA-backed-On-chain-Lending-and-Auction-Protocol-111e8a72de3680fd870ddbfe90b9c6?pvs=4\n低忠実度プロトタイプリンク - https://rwa-lending-app.vercel.app/"
+    },
+    {
+      "no": 3,
+      "promise": "・Cardano Preprod に PoC をフル統合\n・今後のフェーズのPoC開発、結果、学習したレッスン、推奨事項をまとめたプロジェクトクローズアウトレポート。\n・RWAsのオークションにPoCの機能、利点、潜在的な影響を強調するプロモーションビデオ.",
+      "criteria": "・Cardano Preprod に PoC をフル統合\n・今後のフェーズのPoC開発、結果、学習したレッスン、推奨事項をまとめたプロジェクトクローズアウトレポート。\n・PoCの機能、利点、RWAsのオークションへの潜在的な影響を強調するクローズアウト/プロモーションビデオ.",
+      "report": "プリプロドのスマートコントラクトと完全に統合されたPoC: https://rwa-lending-app-ts-d5zw.vercel.app/\nオークションスマートコントラクト: https://preprod.cardanoscan.io/address/addr test1wrm0xclunt0tvglrj3n9pws57n8dtu43grnr68pzypggxhg0y50f9\n融資スマートコントラクト https://preprod.cardanoscan.io/address/addr test1wpzxt38qzfwg2fru4mwjs0asr4xlr9em7k4z8p4k8rmt0hc7hvx8c\nRWA オークションと Lending PoC プラットフォームの作業デモプロモーション ビデオ: https://drive.google.com/drive/folders/1OV iQBw596DKwFDNuwvZhaQIf83rwzci?usp=sharing\nプロジェクトクローズアウトレポート:https://docs.google.com/document/d/1CjunFkQMM7mUQGMNP5oBYYB2MrgsKeecNGtrvQoH7PY/edit?usp=sharing\nPDF形式のプロジェクトクローズアウトレポート:https://drive.google.com/file/d/1okO7dq4F1l1JScoRrZHr8KDvVNofkZCG/view?usp=sharing\nプロジェクトクローズアウトビデオ: https://youtu.be/Izy2QDXck10"
+    }
+  ]
+}

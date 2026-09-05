@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "ハイドラの取引サポートをKuberライブラリに統合するための詳細なプロジェクト計画、タイムライン、およびテクニカルデザイン仕様.",
+      "criteria": "・プロジェクトプランは、Githubリポジトリに1つ以上の問題やMarkdownドキュメントとして公開されています。\n・プロジェクトプランには以下が含まれます。\n・統合スコープ\n・実装するAPI/JSON RPCの一覧:\n・クエリAPI\n・クエリーUtxos(アドレス別)\n・ケリー・ウトキソス(txIn)\n・ケリーチップ\n・queryプロトコルパラメータ\n・ケリー・ヒダ州(utxo commiting, ready, fanout, closed)\n・kuberトランザクションのスペックをサポートするトランザクションビルドAPI\n・Hydra リレー API\n・ヘッド初期化、\n・UTxOsのコミット\n・推奨事項\n・ヘッドクローズ\n・金融取引\n・通勤\n・タイムライン\n・特定リスク・課題\n・個々のAPIのGithubの問題",
+      "report": "プロジェクト計画と技術設計文書\n>> プロジェクト計画:https://dquadrant.github.io/kuber/hydra docusaurus/docs/milestones\n>> 建築ドキュメント:https://dquadrant.github.io/kuber/hydra docusaurus/docs/architecture\n>> Github プロジェクト: https://github.com/orgs/dQuadrant/projects/2\nGithubリポジトリ\nhttps://github.com/dquadrant/kuber"
+    },
+    {
+      "no": 2,
+      "promise": "KuberのHydraヘッド管理機能の実装:\n・ヘッドの初期化、UTxOsのコミット/デコンパイル、アボット、クエリUTxOs、コミットステータスの確認\n・未加工取引の構築、署名、提出\n・クローズ、コンテスト、ファンアウトアクション\n・上記すべての実装機能のテストカバレッジ.",
+      "criteria": "・Kuberライブラリのコードベース(https://github.com/dquadrant/kuber)を更新\n・リポジトリに公開されたテスト結果は、問題やマークダウンファイルとして表示されます。\n・導入試験が成功.",
+      "report": "Kuber の新しいバージョンがリリースされ、このマイルストーンの完成をマークします。\nリリース: v4.0.0-rc1\nリンク: https://github.com/dQuadrant/kuber/releases/tag/v4.0.0-rc1\n\nDocker イメージ\nまた、Docker のイメージを公開し、セットアップが容易になりました。\n- kuber-hydra : https://hub.docker.com/r/dquadrant/kuber-hydra\n- kuber : https://hub.docker.com/r/dquadrant/kuber\n\nクライアントライブラリ\nクライアントライブラリの変更を行なう必要があり、アップデートを解放します。\n- kuber-clientのベースライブラリを更新:libcardano-wallet\nバージョン: v2.2.13, リンク: https://www.npmjs.com/package/libcardano-wallet/v/2.2.13\n- kuber-clientの更新\nバージョン: v3.3.5, リンク: https://www.npmjs.com/package/kuber-client/v/3.3.5\n\nチュートリアル\nこのマイルストーンで指定されたものよりも多くのチュートリアルを用意しました。\n- https://dquadrant.github.io/kuber/hydra docusaurus/docs/hydra-js-client/getting-started/\n\n試験結果(更新)\n- https://dquadrant.github.io/kuber/test-reports/hydra/\n\n最後の投稿からログを変更する:\n- Kuber クライアントは v3.3.0 → v3.3.5 から更新\n- コンテストおよび中止のためのテストを追加し、decommitのバグを修正\n- 更新されたテスト結果ダッシュボード"
+    },
+    {
+      "no": 3,
+      "promise": "ドキュメント:\n・KuberのドキュメントサイトにHydraセクションを追加しました。https://kuberide.com/kuber/docs/intro\n・ヒドラに似た例\n・セットアップ手順\n・kuberトランザクションの仕様をサポートするトランザクションビルドAPI、例を含む正しいプロトコルパラメータでトランザクションを構築します。\n・クエリAPI(クエリ:アドレス&txIn、チップ、プロトコルパラメータ、Hydra state(utxo commiting、準備、ファンアウト、クローズ)によるUtxos)\n・チュートリアル:\n・ハイドラヘッド→ミントトークン→ハイドラヘッドを閉じる\n・ハイドラヘッド→バーントークン→ハイドラヘッドを閉じる\n・ハイドラヘッドを開く → スクリプトに支払う → ハイドラヘッドを閉じる\n・ハイドラヘッドを開く→100以上の新しいアドレス(それぞれに少なくとも2アダを支払う)→ハイドラヘッドを閉じる(できればこれは可能です)\n\nコミュニティのエンゲージメント:\n・Kuber Discordチャンネルで主に\n・KuberのHydraサポートのDiscord発表\n・クバー・ディスコのメンバーからのフィードバックをプライベートで受ける\n・KuberのHydraサポートのTwitter/X発表\n\nNote: 実装が変更を必要とする場合、ドキュメントとチュートリアルの一部が変更される場合があります.",
+      "criteria": "・ヒドラのドキュメントはhttps://kuberide.com/kuber/docs/introで公開しています。\n・KuberのHydraサポートのDiscord発表\n・KuberのHydraサポートのTwitter発表\n・コミュニティは、Github のフィードバック/コメントをフィードバック/メッセージで作成しました。 また、フィードバックに基づいて代わって作成しました。\n・少なくとも5人のアクティブなkuberユーザーがフィードバックのために連絡",
+      "report": "マイルストーン完了の証拠要件\n・GitHubやプロジェクトWebサイトのチュートリアルを含むドキュメントを公開\n・KuberのHydraサポートのDiscord発表へのリンク\n・KuberのHydraサポートのTwitter発表へのリンク\n・コミュニティはGithubのフィードバック/コメントをフィードバック/メッセージで作成しました。 また、フィードバックに基づいて代わって作成しました。\n・コミュニティメンバーとの会話のリンクやスクリーンショット(事前の承諾)\n\nコメント アドレス\n・Kuber Discordサーバーへの招待状共有\n・Githubの問題として報告されたアドレス送信フィードバック\n・Kuberide.comの更新 メニューオプションとして必要なすべてのドキュメントを直接表示できるようになりました。\n\nエビデンス\nサイトマップ\n・Github: https://github.com/dQuadrant/kuber/tree/master/kuber-hydra\n・Github(クライアント): https://github.com/sireto/kuber-client-js\n・ドキュメント/チュートリアル:https://dquadrant.github.io/kuber/hydra docusaurus/docs/hydra-js-client/getting-started\n・KuberIde.com : https://kuberide.com/kuber/hydra/getting-started/\n\n障害報告\nサーバー招待: https://discord.gg/dNspVh3n\n・https://discord.com/channels/971341272776331264/1096020312061120574/1406949201765466193\n・https://discord.com/channels/971341272776331264/1096020312061120574/1470685789032550547\n\n< =\" =\" =\" =\" =\" =\" 42 42 42 42 + 42 42 42 42 + 42 42 42 42 42 42 42 42 42 42 42 42 42 42 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41 41"
+    },
+    {
+      "no": 4,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ\n・Hydra-enabled Kuber Libraryのデモ映像を放映.",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n・Hydra-enabled Kuber Libraryのデモ映像にリンクします.",
+      "report": "プロジェクトクローズアウトレポート [更新]\nhttps://drive.google.com/file/d/1ez2-ZB1gLZhB od0-pQG79nKALuD IP3/view?usp=sharing\n\nプロジェクトクローズアウトビデオ:\nhttps://youtu.be/nR1BiAYpzBw\n\nデモのビデオ:\nhttps://youtu.be/EEjq033LRM"
+    }
+  ]
+}

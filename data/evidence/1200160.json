@@ -1,0 +1,62 @@
+{
+  "title": "NMKR SDK for Godot",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "・The first version of the plugin for Godot will be released, which will include all the necessary underlying code. Also, the first set of API endpoints provided by NMKR will be implemented with this release.\n・Minimal example application implemented using at least one of the available endpoint wrapper functions. The goal of this demo app is to show the user how to set up the plugin and access its wrapper functions.\n・Full documentation for all the implemented functions in the NMKR SDK will be available directly in the Godot game engine as soon as the plugin is activated\n・Setup instructions are provided in the README.md file, together with a copy of the plugin documentation (that is also accessible inside the Godot game engine) for users' reference",
+      "criteria": "・The minimal example application works and shows actual data, retrieved using the NMKR API. Please notice that it will be necessary for the users to add their NMKR API key in the project settings for accessing the plugin and testing the code.\n・Correct integration with the Godot game engine internal documentation system\n・Updated README.md file in the root of the project repository",
+      "report": "Dear reviewers, I'm happy to submit the Proof of Achievement for Milestone 1.\nWhile the goal for the first milestone was to provide a working but incomplete version of the plugin, I decided to put extra effort and already implemented all of the available NMKR API endpoints, because a lot of time will be required to fully debug the code, creating the test framework planned for Milestone 2, and, most importantly, develop the example game that is planned for Milestones 3 and 4.\nThe code available in the official Github repository contains the minimal example application mentioned in the Acceptance criteria, documentation is available directly in the Godot game engine, and the README.md file is updated with code examples, setup instructions, and a list of all the available endpoints divided by category.\nTo show the output of my work, I recorded a video that goes through all the points mentioned in the Milestone Outputs, so that you don't have to install the Godot game engine and define an NMKR API key just to check if the code works.\n\nLinks:\nOfficial repository: https://github.com/Odiobill/NmkrGodot\nRecorded video: https://youtu.be/zYt-qpAeA-0",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 20000,
+      "promise": "・Release of the first completed version of the NMKR plugin for Godot\n・Release of the second example application: a frontend to test most of the available NMKR API endpoints, where the user can type the necessary parameters in the input fields and check the results provided by NMKR\n・All the bugs found in the plugin during the development of the second example application have been fixed\n・Full documentation for the NMKR SDK will be available directly in the Godot game engine as soon as the plugin is activated for all the implemented functions\n・Updated README.md file to reflect the documentation provided inside the Godot engine for the NMKR plugin.",
+      "criteria": "・The plugin provides wrapper functions for all the available NMKR API endpoints\n・The new example application works and shows actual data, which can be retrieved using most of the available NMKR API endpoints, using a GUI frontend \n・Correct integration with the Godot game engine internal documentation system\n・The README.md file contains a copy of the documentation also available in the Godot engine for the plugin, for users' reference. It will also contain the link to the explainer video mentioned in the \"Evidence of milestone completion\"",
+      "report": "Dear reviewers, thank you very much for the remarks about the previous submission.\nIndeed, the video link was missing in the README.md files, and I added it: it's the same video I recorded for the previous Milestone, which also shows how to set up the plugin.\nRegarding the bug-fixing, luckily the code was pretty robust and the only required changes were due to different return types that some of the NMKR API endpoints provide. There are no specific commits for those changes, but I instead added them with the same commits I pushed while building the second example application, for example, this one:\n・Commit 3cb0c86\n\n---\nDear reviewers, I'm happy to submit the Proof of Achievement for Milestone 2.\nThe main goal for this milestone was to complete the plugin and implement all the API endpoints provided by the NMKR API. As you already know, this was achieved during Milestone 1, but developing the second example application allowed me to catch and fix several bugs.\nThe code published to the official Github repository contains the second example application mentioned in the Acceptance criteria: a test framework that can be used to try all the available API endpoints and see the result, as a JSON output, that the user will get by calling the wanted functions. The documentation is available directly in the Godot game engine, and the README.md file is updated with code examples, setup instructions, and a list of all the available endpoints divided by category.\nTo show the output of my work, I recorded a video that goes through all the points mentioned in the Milestone Outputs, so that you don't have to install the Godot game engine and define an NMKR API key just to check if the code works.\nLinks:\nOfficial repository: https://github.com/Odiobill/NmkrGodot\nRecorded video: https://youtu.be/KKHQffrKURc",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 7
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 20000,
+      "promise": "・Release of the first, incomplete alpha version of the example game\n・Bug fixing the NMKR SDK for Godot plugin with use-case scenarios",
+      "criteria": "The alpha version of the example game runs without crashing. The main goal for this release is to show the basic \"web3\" features, that will be necessary for integrating the upcoming functionalities in the full version of the game, which will be completed with the final milestone.\nThe minimal subset of features is the following:\n・Wallet ownership verification: the user will be requested to send a small amount of ADA to a specific address, which will be immediately refunded (minus the transaction fee)\n・Selection of the game assets suitable for the game. Those can be either a minimal subset of al",
+      "report": "Dear Reviewers, I’m resubmitting the PoA for Milestone 3 after the request of a Catalyst Reviewer, who asked to remove any reference to the Close-out video and report, which should be included only in the final milestone.\nSince the same PoA was already approved before, I just removed those references and instead added a short, different video to show the implementation of the features required in this milestone, while leaving all the rest as it was before.\n\nDue to issues that emerged while trying to work with the previously selected graphics artists, assigned to deliver both the graphics required for the example game and its NFT collection, until recent times, it was not possible to deliver two of the required acceptance criteria, because there was the need to create the above-mentioned NFT collection.\nFortunately, this did not affect other parts of the project, needed in the Final Milestone, and I was able to complete all the requirements for both the remaining milestones shortly after the new graphic artist delivered the necessary assets.\nMilestone 3 required two outputs:\nOutput 1: Release of the first, incomplete alpha version of the example game\nThe defined Acceptance Criteria required the release of an incomplete version of the game, which implemented the following Web3-related tasks:\n・Minting a custom NFT from a new policy ID, created for this game\n・Wallet ownership verification\n・Selection of the game assets from the wallet\n\nThe example game source code, with all the available art, is hosted in a dedicated repository, available at https://github.com/Odiobill/YASG\nThis location is also referenced in the README.md file of the main plugin repository: https://github.com/Odiobill/NmkrGodot/blob/main/README.md\nThe script that takes care of task 1 is:\nhttps://github.com/Odiobill/YASG/blob/main/scenes/loading/loading.gd\nTasks 2 and 3 are both delegated to the menu scene, managed by this script:\nhttps://github.com/Odiobill/YASG/blob/main/scenes/menu/menu.gd\nAs mentione",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 18,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 20000,
+      "promise": "・Release of the full version of the example game. It will be a \"snake clone\" but with different features compared to the original one.\n・All the found bugs in the \"NMKR SDK for Godot\" plugin are fixed\n・Final close-out report\n・Final closeout video",
+      "criteria": "・The example game can be built for multiple platforms\n・Depending on the player's assets, there will be different graphics and features (like speed or \"resistance\") for the snake controlled by the player. The player will be allowed to choose which assets to use for the game (custom NFT, or already existing tokens like $SNEK)\n・A playable version of the game is available for download from a specific web page\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Dear Catalyst reviewers, I’m happy to submit the Proof of Achievements for the Final Milestone. As kindly requested, I'm now providing the Close-out Report in PDF format for archiving purposes.\n\nThe required outputs were the following:\n1 - Release of the full version of the example game. It will be a \"snake clone\" but with different features compared to the original one.\nAs per the submitted \"Acceptance criteria\" and \"Evidence of milestone completion\", it should be possible to build the game for multiple platforms: it should be available for at least 3 of the following: Linux, Mac, Windows, and Web. As mentioned in the Proof of Achievement for Milestone 3, the example game for the NMKR SDK for Godot has been released and it is available for Linux, Windows, and Web.\nBuilds for Linux and Windows are available as “releases” in the GitHub repository: https://github.com/Odiobill/YASG/releases \nA web version is playable at the following address: https://rookiez.org/yasg/\nIt was also required that depending on the player's assets, there will be different graphics and features (like speed or \"resistance\") for the snake controlled by the player: the player is allowed to choose which assets to use for the game, and it's possible to use either one of the custom NFTs or already existing tokens: $SNEK and $VIPER.\nDepending on the selected asset, the look of the snake will change, and it will have different characteristics: several skills can be improved depending on the metadata stored with the NFTs. The game's main menu shows a recap of the skills for each asset, rated in stars for Agility, Efficiency, and Resistance.\nYou can check the Close-out Video for a visual representation of those features: https://youtu.be/bcVj_lub2UM \n2 - All the found bugs in the \"NMKR SDK for Godot\" plugin are fixed\nAs mentioned in the Proof of Achievement submitted for Milestone 3 (the two final milestones were developed in parallel for the most part), developing the example game allowed me to find",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    }
+  ]
+}

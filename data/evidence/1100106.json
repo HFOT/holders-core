@@ -1,0 +1,46 @@
+{
+  "title": "Dandelion PostgREST GUI for developers and students",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 7515,
+      "promise": "Grant context: \nA developer UI tool for fetching data from Cardano blockchain through Dandelion PostgREST APIs. An API UI tools allow developers and students to fetch, analize and build upon the data and functions the API provides. Dandelion Community Service is a free set of APIs for developers and students to fetch Cardano ledger data. PostgREST is server that exposes a Postgres Database as RESTfull API.\nMilestone context: \nFirst milestone\nOutputs: \n・a public Github repository fork of the UI tool project, probably called Dandelion Explorer,\n・containing the full open source code of the UI tool pre-adapted for Cardano by connecting it to Dandelion APIs PostgREST API endpoint",
+      "criteria": "The existance of the public github repository with the working code",
+      "report": "Outputs: \n・a public Github repository fork of the UI tool project, called Dandelion Explorer,\n・containing the full open source code of the UI tool pre-adapted for Cardano by connecting it to Dandelion APIs PostgREST API endpoint\n・Images are included on the README.md file, also with installing instructions\n・For reviewers: we kindly offer a quick deployed version of the tool for your auditing purposes \n\nSummary:\n- preconfigured for dandelion\n- mainnet and preprod databases\n- help tool configured now by config file\n- added PostgREST guide as help tool\n- created a quick GET copy-to-clipboard component for current query\n- adapted table rendering to show datums and tx metadata properly\n- customized public files\n- build included in repo for github pages and fast deployment\n- disabled user authentication\n- disabled db write access related features\n- disabled login ui\n- disabled custom biological db export formats\n- customized a basic readme\n- other minor stuff",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 7515,
+      "promise": "Grant context: \nA developer UI tool for fetching data from Cardano blockchain through Dandelion PostgREST APIs. An API UI tools allow developers and students to fetch, analize and build upon the data and functions the API provides. Dandelion Community Service is a free set of APIs for developers and students to fetch Cardano ledger data. PostgREST is server that exposes a Postgres Database as RESTfull API.\nMilestone context: \nThe full working code has been delivered already on Milestone 1\nOutputs: \n・Basic documentation on how to start the application and some queries that a user can run on Dandelion PostgREST API. \n・Deployment of the built UI tool as an online free service.",
+      "criteria": "The existance of the public documentation on the repository and the existance of the working online tool as a free service.",
+      "report": "Outputs:\n・Basic documentation\n・on how to install and start the application\n・and some queries that a user can run on Dandelion PostgREST API.\n・it's key features has been described with screenshots to showcase the tool\n・and a Github Pages version is also available here\n・Official deployment of the built UI tool as an online free service\n\nSummary:\n・documentation was created and updated with up-to-date screenshots and made some file cleanups\n・fixed typo on \"publicDbAcessType\" property across the code and configuration files and other minor fixes.\n・hided from left side panel listing all tables and views that are not currently allowed on Dandelion due to permission constrains, more specifically all the non cardano-db-sync tables. Otherwise those would be listed and offered as available by UI but user queries over them will fail.\n・as requested by our reviewers Query Builder implementation has been modified in such a way that there is no more default condition enforcement on buttons by default while still inner default condition is applied in order to normalize URLs and keep them valid. Previous behavior was not a bug, but a confusing feature of this component. We did our best to keep it functional from inside while taking care of user experience. Also it's library had to be updated for these reasons.\n・as requested by our reviewers there is now more than one option to sort the table data:\n・a hint on column names informs better how to toggle column sorting (Shift-Left Click toggles ascending, descending and disables local table sorting)\n・we have also implemented a way to sort results from source rather than only rely on UI table sorting which is confusing and and not accurate enough on many cases. An Extra Query text field on Query Builder options now allows for adding custom PostgREST expressions for example for enforcing sorting even on user defined format results which won't ever be possible to sort smartly through a UI component. Also Extra Query can help running advanced",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 10022,
+      "promise": "Grant context: \nA developer UI tool for fetching data from Cardano blockchain through Dandelion PostgREST APIs. An API UI tools allow developers and students to fetch, analize and build upon the data and functions the API provides. Dandelion Community Service is a free set of APIs for developers and students to fetch Cardano ledger data. PostgREST is server that exposes a Postgres Database as RESTfull API.\nMilestone context: \nThe full working code, documentation and the free online deployed UI tool has been delivered already on Milestones 1 and 2\nOutputs: \n・A closeout video, a closeout report or form as required by Catalyst\n・An extra video to provide guidance and educational service to the developer and student community, sharing:\n・A UI tool showcase\n・How to explore the Dandelion PostgREST API through the UI tool\n・How to run same explored queries but through code (using Curl and/or NodeJs most likely)",
+      "criteria": "The existance of the closeout video, the extra video and the existance of the closeout form or report required by Catalyst\nThe working status of the UI tool shown on the 2 video outputs and the potencial of the extra video to contribute to lower the entry barrier for new builders by providing basic educational content using the UI tool.",
+      "report": "Outputs:\n・Closeout Report: https://drive.google.com/file/d/1m40JBxFsB_dPU0DSFf5KcXiPYSxuDpkX/view?usp=sharing\n・Closeout Video: https://www.youtube.com/watch?v=uxaJAsW7m3U\n・Educational video: https://www.youtube.com/watch?v=qyv5YDiCF7c\n・with an introduction and context about the ecosystem of tools\n・tool showcase\n・example bash script\n・example nodejs javascript code\n・invite to join the Dandelion Network",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・ネイティブトークン(1トークン = 1単位のデポジットアセットを交換する権利を、運動間隔でストライキで交換する)オプションのファイナライズされたバリデータとマイニングポリシー。\n・アーリーキャンセルパス: ライターは、預金の初期のロックを解除するために、任意の未売のオプショントークン(構成可能カットオフのために)を燃やすことができます。\n・管理者NFT(フラットおよび/または%手数料)で特定された参照ダムを使用した動的料金設定。検索手数料はゼロになります。\n・評価ノート+プルタスV3および/またはアイケンの試作ブランチ(コードサイズ/コストを比較するためにアイケンに少なくとも1つのスクリプトをポート)。\n\nフルユニット/プロパティテスト(バウンダリ時間、価格/アマウントインバリアント、部分的なフィリング、キャンセル安全、および料金インバリアントを含む).",
+      "criteria": "・Validatorは、正しいストライキ、アセット/アマウント、妥当性間隔、および手数料デビットルーティングを強制します。 マイナスポリシーは、オプションごとに1:1のデポジットロックを保証します。 初期キャンセルルールのバイパスなし(ライターのみ;未売のみ;カットオフ前に)。\n・ダイナミクスの手数料は、参照UTXO(変更への再雇用なし)から読み込まれます。 構成されている場合は、手数料は無料です。\n・100%テストパス率;プロパティテストカバーエッジケース(スタート/エンドスロット境界;ゼロ流動性;誤った資産;間違った署名;手数料が欠落/変更)。\n・Txハッシュでテストネットの展開と実行(issue/exercise/retrieve/early-cancel)",
+      "report": "公開 GitHub: オンチェーンコード + テスト; README 説明パラメーターと手数料の設定.\nhttps://github.com/geniusyield/options-contracts\nTestnet tx hashes: 少なくとも (a) mint+issue, (b) を実行します。, (c) 取得後 expiry, (d) 切断前の初期キャンセル.\nhttps://github.com/geniusyield/options-contracts/blob/main/TESTNET.md\n脅威と緩和を記述する短い監査/readinessメモ(内部レビュー)。\nhttps://github.com/geniusyield/options-contracts/blob/main/AUDIT.md\nAiken/Plutus V3 解析 doc + (最小限) プロトタイプ Aiken スクリプト コスト比較.\nAiken/PlutusV3解析ドキュメント\nhttps://github.com/geniusyield/options-contracts/blob/main/AIKEN ANALYSIS.md\nAikenのプロトタイプ — + mintのバリデータを使う\nhttps://github.com/geniusyield/options-contracts/blob/main/aiken/validators/option.ak\n共有タイプ\nhttps://github.com/geniusyield/options-contracts/blob/main/aiken/lib/geniusyield/options/types.ak\nサイズとExUnitのベンチマーク比較\nhttps://github.com/geniusyield/options-contracts/blob/main/aiken/BENCHMARK.md"
+    },
+    {
+      "no": 2,
+      "promise": "・Hardened Haskell ビルダー: createOption、 executeOption、recoverOption、および新しいキャンセルUnexercisedOption。\n・REST API エンドポイント(GET リスト、POST create/execute/retrieve/cancel) ウォレット署名の署名なしの txs を返す。Aトラス PAB への配線。\n・ウォレット接続(CIP‐30)でエンドツーエンドフローのWeb UIが最小限に抑えられます。 → 練習 → 取得 → 初期キャンセル.",
+      "criteria": "・すべてのフローに対して正しい取引を返し、無効な署名/無効/保証条件を拒否します。\n・UIは、testnetウォレットを使用してオプションを作成および練習することができます。ライフサイクルの状態(起動しない / アクティブ / Expired)を示しています。\n・入力UTxOsとダタムデコードをトレースするログと観察性、APIドキュメントを公開。\n\nショートロードテスト(Atlasキューストレステスト)は、以下が必要です。\n・3〜5分以上30の連続txビルドリクエストを送信します\n・ tx-build 応答率 ≥ 95% を達成\n・重大な障害(クラッシュ、未処理例外、キューデッドロック)なし.",
+      "report": "パブリック: https://drive.google.com/drive/folders/1LgOeAQerEushW24Re3NFOGQ DABykjfj?usp=sharing\nM2-委託パッケージ/\n\n├── README.md\n\n├── 01 evidence doc/MILESTONE-2.md\n\n├── 02 test results/\n\n│ ├── api-test-report.md\n\n│ └──ロードテストレポート\n\n├── 03 screenshots/\n\n└── 04 test scripts/"
+    },
+    {
+      "no": 3,
+      "promise": "・オプションシリーズごとにCIP-68準拠のリファレンスNFTをオンチェーンフィールドで生成するためのマイニングポリシーを拡張します。\n・預金 policy、預金 asset、Payment policy、Payment asset、Strike、start slot、end slot、type(put/call)、cancellable(bool)、 fee cfg ref(policy/id)。\n・メタデータの改良は、対応するウォレット(例:Nami/Eternl)のオンチェーンとレンダーで取得可能です.",
+      "criteria": "・CIP‐68 構造検証; メタデータは、少なくとも 1 つのウォレットとトークンエクスプローラーで正しく表示します。\n・cancellable フラグと手数料参照を含む全メタデータで最小2つの異なるオプションシリーズ。\n・ メタデータ JSON がリポジトリにチェックした例。オプションの SVG レンダラは、クイックビジュアル “option badge” を生成します.",
+      "report": "Catalyst Milestone 3 再サブミッション — シリーズ 2 の証拠を追加しました。\n\n2つ目のCIP-68オプションシリーズ(M3シリーズ-2、ADA→GENSコール・ストライキ0.55・非キャンセル)がCardanoプレビューテストネットで採掘されました\nトランザクションハッシュ 20fd27b109ebfc6a6dd888d746fcb054d0e8314eb2b7ad5a2a4df6c5f00d0e81(ブロック4,281,747、valid contract:true)。 このシリーズは、AnyMint と同じポリシーの下でペアリングされた CIP-68 参照 NFT とユーザ NFT を指し、28 バイト ボディ 94e35fca...2c0d を共有し、CIP-67 ラベルの接頭辞 0x000643b0 (ref) と 0x000de140 (user) のみが異なります。 on-chain インライン datum には、cancellable を含むすべての必須フィールドが含まれている: 0 (false — は、 Series 1 の cancellable と区別します: 1) と fee cfg ref: \"(オンチェーンデフォルト noFeeConfigNft)。 完全な証拠 — トランザクションハッシュ、アセットID、デコードされたメタデータJSON、およびエクスプローラリンク — は、公開リポジトリで web-options/MILESTONE-3.md §9 で公開されます。\n\nhttps://github.com/geniusyield/cardano-options-catalyst-m2/blob/main/web-options/MILESTONE-3.md"
+    }
+  ]
+}

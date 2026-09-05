@@ -1,0 +1,70 @@
+{
+  "title": "Anti-Counterfeiting System Integrating with Cardano Blockchain",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 60000,
+      "promise": "1. Requirements Documentation: Define functional and non-functional requirements for migrating the system to the Cardano blockchain.\n2. System Architecture Design: Develop a detailed architecture for integrating Cardano blockchain with the existing platform, including on-chain and off-chain components.\n﻿﻿Migration Plan: Create a project plan detailing the tasks, timeline, and responsibilities for the migration process.",
+      "criteria": "1. Requirements Documentation:\n・Clearly addresses the migration to Cardano blockchain.\n・Reviewed and approved by stakeholders via signed document or email confirmation.\n\n2. System Architecture Design:\n・High-level Architecture: Overview of major system components and their relationships.\n・Components and Modules: Functions and interactions of each module.\n・Data Workflow: Step-by-step flow of data, including on-chain and off-chain processes.\n・System Interactions: Communication between components (e.g., APIs, QR code systems).\n・Resource Allocation: Distribution of resources across the system.\n\n3.",
+      "report": "Milestone 1 Submission – Cardano Anti-Counterfeit System\n\nWe hereby submit the core documentation for Milestone 1 as committed. All materials are publicly accessible via GitHub:\n1. Requirements Documentation\n・Product Requirements\n\n2. Technical Design Documentation\n・High-level Architecture\n・Components & Modules\n・Data Workflow\n・System Interactions\n・Resource Allocation\n\n3. Project Management\n・GitHub Project Board\n\nPlease review the provided links for full details. All deliverables align with the approved milestone scope.",
+      "kinds": [
+        "code"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 60000,
+      "promise": "1. Data Migration: Successfully transfer transaction data from MySQL to on-chain while maintaining MySQL as the indexer layer\n2. Blockchain System: Backend fully operational for data logging and retrieval.\n3. User Documentation: Provide usage guides for administrators.",
+      "criteria": "1. Data Migration:\n・Successfully migrate transactions data to the Cardano blockchain without errors.\n・Data migration results are validated through test logs and approved by the technical team.\n\n2. Blockchain System:\n・Backend system supports stable data logging and retrieval.\n\n3. User Documentation:\n・Usage guides approved by the technical team.",
+      "report": "1. Data Migration\n・Transaction data migrated from MySQL to the Cardano blockchain (testnet).\n・Cross-verification performed using three log files:\n・Migration Log: records on-chain transactions from off-chain data.\n・Product Creation Log (Off-chain): tracks product creation for consistency checks.\n・Anti-counterfeit Activation Log (Off-chain): verifies activation events against blockchain records.\n\nEvidence links:\n・Migration log link\n・Product creation log link\n・Anti-counterfeit activation log link\n\n2. Blockchain System\n・Backend operates stably, supporting on-chain logging and data retrieval.\n・Test reports confirm no critical errors.\n\nEvidence link:\n・Test report link\n\n3. User Documentation\n・Administrator guide completed.\n\nEvidence link:\n・Admin documentation link\n\n4. Video Demonstration\nThe following video demonstrates the integration between iCheck CMS and the Cardano blockchain, including:\n・Activating Cardano for an enterprise\n・Offchain data logging\n・Submitting transactions from offchain to onchain\n・Verifying onchain data via API and Cardanoscan\n\nVideo link:\n・[Demo] iCheck CMS & Cardano Blockchain Integration",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "8",
+      "cost": 40000,
+      "promise": "1. Core System Prototype: Develop functional front-end and back-end prototypes integrating blockchain-based authentication.\n2. QR Code Integration: Enable QR code functionality for product data retrieval stored on the blockchain.﻿﻿﻿﻿﻿\n3. System Testing: Conduct internal testing to ensure stability and basic functionality of the core system.",
+      "criteria": "1. Core System Prototype:\n・Prototypes for front-end and back-end are functional and demonstrate successful interaction with blockchain.\n\n2. QR Code Integration:\n・QR codes successfully retrieve product data for test products stored on the blockchain.\n\n3. System Testing:\n・Internal testing confirms system stability, with at least 90% test cases passing without critical errors.",
+      "report": "1. Core System Prototype\nFunctional front-end and back-end prototypes have been developed and integrated with the Cardano blockchain, enabling product data interaction and verification.\n2. QR Code Integration\nQR code functionality has been implemented to retrieve product data stored on the blockchain for test products.\n3. System Testing\nInternal testing was conducted to validate system stability and core functionality, with the majority of test cases passing successfully.\nEvidence links:\n・Demo video link: Link\n・System screenshots: Link\n・Test plan: Link\n・Test cases: Link",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 10000,
+      "promise": "1. On-chain Cost Optimization: Optimize batching processes to reduce on-chain storage costs.\n\n2. Pilot System: Deploy the system in a test environment with a small group of users.\n\n3. User Feedback: Collect and analyze user feedback on the new system.",
+      "criteria": "1. On-chain Cost Optimization: On-chain storage costs reduced by implementing batching processes, confirmed through transaction logs.\n\n2. Pilot System: System successfully deployed in a test environment.\n\n3. User Feedback: Basic feedback collected from pilot users, highlighting key insights for improvement.",
+      "report": "1. On-chain Cost Optimization \n・We have successfully implemented and optimized the Batching mechanism. This process consolidates multiple product data records into a single on-chain transaction to minimize ADA fees.\n・Evidence: Link\n\n2. Pilot System Deployment\n・The system is fully operational in a live test environment.\n・Direct Link to System: [https://qrcheck.icheck.vn]\n・Username: 0968745895\n・Password: 123456\n・Evidence: Link\n\n3. User Feedback Collection\n・Methodology:\n・Direct interviews with pilot users.\n・Observation during trial usage.\n・Manual note-taking by support/product team.\n・Basic feedback forms after completing trial scenarios.\n・Evidence: Link",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 5
+    },
+    {
+      "no": 5,
+      "month": "11",
+      "cost": 30000,
+      "promise": "1. Final Closeout Video: A video recording summarizing the process and results of the whole project.\n2. Final Closeout Report: Written report describing the development process and any relevant findings.\n3. Publicly source-code: Publicly available source-code containing all artifacts produced throughout the project.",
+      "criteria": "1. Final Closeout Video:\n・Video highlights key achievements and insights from the project.\n\n2. Final Closeout Report:\n・Report includes detailed documentation of the project’s objectives, outputs, results, and lessons learned.\n・The report is made publicly available for the Cardano community.\n\n3. Publicly Available Source Code:\n・All project artifacts and source code are hosted on GitHub or a similar platform.\n・﻿Repository includes clear documentation for setup and usage.",
+      "report": "1. Final Closeout Video\n・A video recording summarizing the entire process, key achievements, and results of the project.\n・The video highlights insights and technical milestones reached.\n・Evidence (YouTube Link): Link\n\n2. Final Closeout Report\n・A comprehensive written report documenting project objectives, outputs, and lessons learned.\n・Detailed documentation made publicly available for the Cardano community.\n・Evidence: Link\n\n3. Publicly Available Source Code\n・Full source code containing all artifacts produced throughout the project.\n・Hosted on GitHub with clear documentation for setup and usage (README.md).\n・Evidence: Link",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "- 自動化テストフレームワークのための全体的なアーキテクチャ設計:プログラミング言語(少なくともアイケンサポート)、オンチェーン/オフチェーン作業、サポートされるテストの種類(少なくともe2eテストは、デプロイされたスマートコントラクトをサポート)、ワークフローとサブモジュールの高いレベル設計、選択したテックスタック...\n- コースの目標を定義し、ターゲットオーディエンスのニーズと期待に応えます。\n- モジュール、トピック、学習活動のシーケンスを含むコース構造の設計.",
+      "criteria": "- 建築設計文書:\n+ 問題の記述および解決の提案\n+ サブモジュールの高レベル設計\n+ 自動化テストが関与するスマートコントラクト開発ワークフロー\n+ サポートされているプログラミング言語、サポートされているテストタイプ、オンチェーン/オフチェーンテストのサポートに関する情報: 導入されたスマートコントラクトに対する少なくともアイケン言語とエンドツーエンドのテストをサポート\n+ 選択する理由を含む技術スタックを選択します。\n+ フレームワークとその反復の重要なコンポーネント\n- コースの計画:\n+ ゴール、観客、期待\n+ モジュール、topi によるコース構造",
+      "report": "上記の受諾基準に記載されている情報を含む詳細なアーキテクチャ設計で文書へのパブリックリンク\n・https://github.com/catalyst-cardano/smartcontract-automation-testing-framework/blob/main/doc/architecture design.pdf\n\n「アイケンは全く言及していない」とコメントしています。 しかし、SOMの状態は「少なくともアイケン語でサポートする」。 しかし、私たちはお互いの情報を誤解しているかもしれません。\n「スマートコントラクト」のテストは、ブラックボックスのテストで行います。 私たちの目標は、アイケン、ハスケル、オプシンなど、あらゆる言語で書かれたスマートコントラクトをテストするためにテストスクリプトを書くことをサポートするTypeScriptを使用してフレームワークを開発することです。\nそこで、このコメントの審査を、当社の業績の証明に関して再考することを願っています。\n\n上記受入資格で説明したコースプランへのリンク(更新)\n・https://github.com/catalyst-cardano/smartcontract-automation-framework/blob/main/doc/plan of course.pdf"
+    },
+    {
+      "no": 2,
+      "promise": "- コアオートメーションテストフレームワークの実装されたすべてのコンポーネントと開発、以下を含む。\n+ 複数の入力データから同じシナリオの複数のテストケースを生成するのに役立つテストケース生成フレームワークをテストし、スプレッドシートまたはCSVファイルに保存\n+ トランザクションビルダーモジュールで、テスト実行エンジンでトランザクションの準備が整いました。 このモジュールはCSVファイルからの多数の入力データローディングの少なくとも簡単な取引およびスマートな契約の相互作用を支えます\n+ 特定のデプロイされた dApp に対して、すべての定義済みのテスト ケースを実行するのに役立ちます実行エンジンをテストする\n- ショートユーザーガイドの例(フルユーザーガイドは、フルラーニングコースで次のマイルストーンで実施されます)",
+      "criteria": "- すべてのコンポーネントが実装され、実際のシナリオで動作します: 少なくとも次のコンポーネントが含まれます:\n+ テストケース生成フレームワーク:複数の入力データから同じシナリオの複数のテストケースを生成するためのツール, スプレッドシートまたはCSVファイルに保存\n+ トランザクションビルダーモジュールで、テスト実行エンジンでトランザクションの準備が整いました。\n+ 特定のデプロイされた dApp に対して、すべての定義済みのテスト ケースを実行するのに役立ちます実行エンジンをテストする\n- 自動化テストを書くためのフレームワークを使用する短いユーザーガイド\n- sのためのサンプル テスト セット",
+      "report": "オープンソースライセンス\n主・触媒cardano/smartcontract-automation-testing-framework/LICENSEのsmartcontract-automation-testing-framework\n- プロジェクトへのパブリックリンク\n・Git Repo: https://github.com/catalyst-cardano/smartcontract-automation-testing-framework\n・プロジェクト管理:https://github.com/orgs/catalyst-cardano/projects/6\n\n- ユーザーのための公開リンクは、自動化テストを書くためのフレームワークを使用する方法を導きます、フレームワークのすべてのコンポーネントをカバーします。\nhttps://github.com/catalyst-cardano/smartcontract-automation-testing-framework/blob/main/CardaTestX/README.md\n- フレームワークがどのように機能するかを示すビデオ\n・セットアップガイドライン&ビルドとテスト取引サンプル: https://www.youtube.com/watch?v=PsKeBGHPGhY\n\n詳細なステップバイステップの手順で字幕を追加しました。\n- ドキュメントでサンプルテストセット用のパブリックリポジトリ\n・スマートコントラクトサンプル: https://github.com/catalyst-cardano/smartcontract-automation-testing-framework/tree/main/CardaTestX/aiken-smart-contract\n・ TestCase サンプル: https://github.com/catalyst-cardano/smartcontract-automation-testing-framework/blob/main/CardaTestX/src/tests/test-cases/tc vesting.xlsx\n・テストスイートは、テストケースから変換されました: https://github.com/catalyst-cardano/smartcontract-automation-testing-framework/blob/main/CardaTestX/src/tests/test-suites/ts vesting success.ts"
+    }
+  ]
+}

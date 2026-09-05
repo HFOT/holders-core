@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・プラットフォームの各種コンポーネントのUX/UI設計\n・Snekxで直接トークンマイニング機能が新しいWebサイトに。\n・SNEKbotとSnekxで新しいトークンアラートが統合されます.",
+      "criteria": "詳細なUX/UIカスタマイズオプション\n・UIデザインは、ユーザビリティとユーザーエクスペリエンスに焦点を合わせ、将来のすべての機能のサービス選択とカスタマイズオプションを明確に定義します。\n\nトークン作成機能\n・ユーザーが新しいトークンを迅速かつ正確に作成できる機能の実装と検証、必要に応じて機能とユーザーインターフェイスの要素を意図どおりに機能します。\n\nホームページの実装\n・Snekxのサービスやプラットフォームの統計を効果的に表示する新しいホームページを開発し、情報的かつ視覚的にアピールすることを確認します。\n\n包括的な内部テス",
+      "report": "https://www.figma.com/design/8vWCU7SG4h5iknqOUb1ysC/%F0%9F%90%8D-Snek?node=4874-496\n内部試験報告書\nトークンを採掘し、Twitterのポストカバレッジ、GitHubで検証を行い、トークンでプールを作成し、受け取ったLPトークンの一部を燃やすと、SnekXを使用して人のフルフローを実証します。\n取引ハッシュ: 7df48f3178d40f333a2681fb8e13238164e6498cbd7131fe760fea778ffc9385\nSuccesfulミントトランザクションハッシュ:\n510ea5096af235fb76989dd20cfcb4cb396ec9614903e80a6952d8f56571751a\nQAAAQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&AQ&APzmh85NxQ62RS+1TUBTRIVVWNlZaVW3HpUd8ZtKKy2knnyRVIVSQr3fPKjlZYSWm5lZVX+u9bqlTq53V19VbbtRLbf58/SY9qNjqW84Ibg17vnlFVVX+OBT9WaVK9bqlT9bqlTqLTqLTqLTq53V19VBVBbtRLbtRLbf58VJQVNjqWVNQRVVNQRVNQRVNVNVNQVNQVNQVNVNVNQVNQRVNQRVNQRVNQRVNVNVNVNVNVNVNQVNVNQRVNVNQRVNVNVNQVKVNVNQVNQVNQVNVNVNVNVNV"
+    },
+    {
+      "no": 2,
+      "promise": "トークン取引プールの設立\n・Splash、Sundae V3、Minswap V2にトークン取引プールを成功させ、プラットフォームと完全に運用し統合できるようにします。\n\n新しいプールアラートの統合\n・SNEKbot と Snekx 間で新しいプールアラート機能を導入し、新規トークンプールに関するリアルタイム通知をユーザーに提供します。 (SNEKbotインフラに既に存在する機能として)",
+      "criteria": "成功したプールの創造\n・この機能により、ユーザーはDEXのトークンプールを迅速かつ正常に作成できるようにし、少なくとも95%のプール作成がエラーなしで完了しようとします。\n\n機能性・性能試験\n・内部試験は、試験ケースの95%以上で全ての機能が正しく動作していることを確認しなければなりません。\n・プール作成機能内の各機能が10回テストされなければならない。\n・性能メトリックは、プール作成プロセスが通常の条件下で30〜60秒以上かかることを示す必要があります。 (条件への注入)\n\n使用条件",
+      "report": "トークンプールの作成のビデオデモ:\nhttps://streamable.com/c0gzva\n特徴は今このページに住んでいて、完全に機能します:\nhttps://snekx.io/pool(スネクックス)"
+    },
+    {
+      "no": 3,
+      "promise": "・耐圧防爆発射のための流動性プールトークンの燃焼および/またはロック。\n・SNEKbotとSnekxで新しいLPバーンアラートが統合\n・個人データの変更は、第三者の援助を必要としない状態でアプリに直接統合されます.",
+      "criteria": "LPトークン管理の機能性と性能\n・ユーザーは、LPトークンを95%以上の成功率で燃やしたり、ロックしたりし、複数の(10+)テストケースで測定したりする必要があります。\n・LPトークンの取得またはロックは、テストケースの90%で10〜60秒以内に完了する必要があります。\n\nLPバーンアラートの精度と信頼性\n・SNEKbotとSnekxと統合したLPバーンアラートは、テストシナリオの95%で正しく機能し、バーンイベントの5秒以内に通知を送信しなければなりません。\n\nメタデータ変更の効率化\n・アプリは、ユーザーがメタデータ変更(ticker、説明、tok)できるようにする必要があります",
+      "report": "内部テストレポートの有効性とバグの解決を示すドキュメンテーション:\nhttps://docs.google.com/document/d/1bnIdva KgcCx4nHwJVwBLLgQhE00ASI/edit?usp=drive link&ouid=106505023671181718365&rtpof=true&sd=true\n\nメタデータの変更とアラートを表示するビデオの証拠:\nhttps://streamable.com/i0b170\n\nLPトークンの燃焼を示すビデオ証拠:\nhttps://streamable.com/ncwwdf"
+    },
+    {
+      "no": 4,
+      "promise": "カスタマイズされたスナップショットツールの開発と統合\n・ユーザーがブロックチェーンデータのカスタマイズされたスナップショットを撮ることを可能にするユーザーフレンドリーなツールを作成および統合します。\n・このツールは、アドレス残高やトランザクション履歴などのスナップショットの特定の基準を選択し、第三者の援助なしにCSV形式で結果をダウンロードすることができます。\n\nエアドロップツールの開発と統合\n・利用者がアドレスのリストを含むCSVファイルから大規模エアドロップを計画・実行できるツールの開発・統合\n・提供されたリストや基準に基づいてトークンの自動配布をサポートし、効率的でエラーのないエアドロップを保証します.",
+      "criteria": "カスタマイズされたスナップショットツールの機能\n・スナップショットツールは、特定の基準でカスタマイズされたスナップショットを作成し、結果をCSVファイルとしてダウンロードできるようにする必要があります。\n・この機能は、少なくとも100個のテストケースでテストし、正確なスナップショットを生成する95%の成功率を達成する必要があります。\n\nエアドロップツールの効率性と信頼性\n・エアドロップツールは、CSVファイルを使用して、95%以上の成功率でエアドロップを計画・実行し、100個のテストケースで検証する必要があります。\n・このツールは、あらかじめ定義された時間枠内にエアドロッププロセスを完了する必要があります(例えば、10分以内)",
+      "report": "エアドロップツールのユーザテストは以下に添付されています:\nhttps://docs.google.com/document/d/15ByEaiwcS8EFhB rOdKBLdz-OVBvCRt4/edit?usp=sharing&ouid=106505023671181718365&rtpof=true&sd=true\nエアドロップ:\nhttps://drive.google.com/file/d/1LVIvDZYTeNgIbq37ozgjOK5kVk9bb41F/view?usp=sharing\nhttps://drive.google.com/file/d/1 v9zMzzPugHO-y1skoy4eaXE6bfDTBU/view?usp=sharing\nhttps://drive.google.com/file/d/1FLkj68Z2TXuFZ9Ng-al3iWH MIkMMjP1/view?usp=sharing\nhttps://drive.google.com/file/d/1N9Z-YouMOuxlvy400lCetVeANhlebHv/view?usp=sharing"
+    },
+    {
+      "no": 5,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ\n・プラットフォームの完成と最適化: プラットフォームは、高度なトークンマイニング機能、セキュリティの強化、ユーザーフレンドリーなインターフェイスなど、すべての意図された機能で完全に操作できます。\n・包括的なエコシステム・インテグレーション:複数のCardano DEXと信頼できるパートナーとの緊密な統合により、幅広い市場へのアクセスと機能性を実現します。\n・コミュニティとサポートインフラ:ユーザーを援助し、継続的なエンゲージメントを促進するための完全開発支援システム.",
+      "criteria": "最終クローズアウトレポートとビデオ\n・最終クローズアウトレポートとクローズアウトビデオは、GitHubとCatalystチームで公開されている必要があります。\n\nプラットフォームのパフォーマンス\n・プラットフォームは、特定のメトリックで高い性能を発揮しなければなりません。\n・トークンの最小化速度:テストケースの95%で5〜60秒以内にトークンの最小化操作を完了する必要があります。\n・エラーフリー操作:トークンマイニングは、高ネットワークトラフィックと低レイテンシー環境を含む、さまざまな条件でテストケースの98%でエラーフリーでなければなりません。\n・セキュリティ: プラットフォームは、包括的なセキュリティ監査を渡す必要があります",
+      "report": "監査の完了および証拠:\nhttps://docs.google.com/document/d/1PmG 9pTBHtEnH1zVS4ZAO c30stnAay0X43DROq8jmw/edit?usp=sharing\n\n運用準備報告書:\nhttps://docs.google.com/document/d/1on7noV8Vg25x7a0LC55R453 ivocDEhGMi7z2h0yl I/edit?usp=sharing\n\n最終クローズアウトレポート&ユーザーフィードバックコンパイル:\nhttps://docs.google.com/document/d/1 UrmUiCd7nCC-CyZhJZxUzoxRaz2Rj87U7dAfLLJRUA/edit?usp=sharing\n\nDexHunterとのパートナーシップ:\nhttps://docs.google.com/document/d/1gz7XUk1NNnn-ka9FjSfa7hS0jXSfa2lT6GJGBVpA0YCw/edit?usp=sharing\n\nSundaeSwapとのパートナーシップ:\nhttps://docs.google.com/document/d/1MnKYE859KDE-CP4T2qfIm4uPn7ggkMQjs1BTBLpzcuA/edit?usp=sharing\n\nSplashとのパートナーシップ:\nhttps://docs.google.com/document/d/1l5e3GBulPOpycbERouaRpRqE8kXh5r5sV3RTBFPmjCs/edit?usp=sharing\n\nYTにアップロードされた最終クローズアウトビデオ:\nhttps://www.youtube.com/watch?v=WdWsQhqv-AM"
+    }
+  ]
+}

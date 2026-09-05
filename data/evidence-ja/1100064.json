@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "LocalTxSubmission クライアントサポート\nLocalStateQuery クライアントサポート\nChainSync クライアントサポート",
+      "criteria": "すべてのコード関連の出力は、対応するGitHubの問題やチケットの仕様に応じて完了して実装する必要があります。\nすべてのコードの変更は、メインブランチにマージされる前に指定されたチームメンバーによって審査および承認されなければなりません。\nマイルストーンに関連する各GitHubの問題は、関連するタスクの完了時に「終了」または「完了」としてマークする必要があります.",
+      "report": "Cardano ノード API: Milestone 1: 完了\nLocalStateQuery、ChainSync、LocalTxSubmission の対応するチケットでクライアントのサポートが指定されています。 これは、指定されたチームメンバーからの承認によるコード出力、自動テスト、およびコードレビューによって証明されます。 これらはすべて、当社のカンバンボードの GitHub Milestone 1 の問題 (aka ticket) によって追跡できます。ここでは、https://github.com/orgs/blinklabs-io/projects/9/views/2 で、Milstone 1 の問題が発見され、各問題内でリンクされている仕様とコードが検討できます。 全てのマイルストーン1枚のチケットが完売しました。 対応する使用文書を追加し、ここに見つけることができます: https://github.com/blinklabs-io/cardano-node-api"
+    },
+    {
+      "no": 2,
+      "promise": "REST による LocalTxMonitor のエンドポイント\nREST による LocalTxSubmission のエンドポイント\nREST による LocalStateQuery のエンドポイント\nWebSocketにアップグレードしてREST経由でChainSyncのエンドポイント",
+      "criteria": "すべてのコード関連の出力は、対応するGitHubの問題やチケットの仕様に応じて完了して実装する必要があります。\nすべてのコードの変更は、メインブランチにマージされる前に指定されたチームメンバーによって審査および承認されなければなりません。\nマイルストーンに関連する各GitHubの問題は、関連するタスクの完了時に「終了」または「完了」としてマークする必要があります.",
+      "report": "Cardano ノード API: Milestone 2: 完了\nLocalTxMonitor、LocalTxSubmission、LocalStateQuery、ChainSyncの対応するチケットでエンドポイントが指定されています。 これは、指定されたチームメンバーからの承認によるコード出力、自動テスト、およびコードレビューによって証明されます。 GitHub Milestone 2の課題(別名チケット)をプロジェクトボードで追跡できます。ここではhttps://github.com/orgs/blinklabs-io/projects/9/views/2 で、Milstone 2の問題が見つかり、仕様とコード、各問題内のプルリクエストをリンクして調べることができます。 全てのマイルストーン2枚のチケットが完売しました。 対応する使用文書を追加し、ここに見つけることができます: https://github.com/blinklabs-io/cardano-node-api"
+    },
+    {
+      "no": 3,
+      "promise": "UTxORPC 仕様の検証とテスト\n実装に関する他のUTxORPCの利害関係者との調整\nUTxORPC用のGo SDKを作成する\ngRPCによるLocalTxMonitorのエンドポイント\ngRPCによるLocalTxSubmissionのエンドポイント\ngRPC による LocalStateQuery のエンドポイント\nGRPCによるChainSyncのエンドポイント",
+      "criteria": "すべてのコード関連の出力は、対応するGitHubの問題やチケットの仕様に応じて完了して実装する必要があります。\nすべてのコードの変更は、メインブランチにマージされる前に指定されたチームメンバーによって審査および承認されなければなりません。\nマイルストーンに関連する各GitHubの問題は、関連するタスクの完了時に「終了」または「完了」としてマークする必要があります.",
+      "report": "Cardano Node API: マイルストーン 3: 完了\ngRPC API は、指定されたエンドポイントとともに、SDK の検証、テスト、作成のために、対応するチケットで指定されたように実装されています。 これは、指定されたチームメンバーからの承認によるコード出力、自動テスト、およびコードレビューによって証明されます。 GitHub Milestone 3の課題(別名チケット)をプロジェクトボードで追跡できます。https://github.com/orgs/blinklabs-io/projects/9/views/2では、Milstone 3の問題が見つかり、仕様とコード、各問題内のプルリクエストをリンクして調べることができます。 全てのマイルストーン3枚のチケットが完売しました。 対応する使用文書を追加し、ここに見つけることができます: https://github.com/blinklabs-io/cardano-node-api"
+    },
+    {
+      "no": 4,
+      "promise": "仕様に対する結果の検証と検証\nDolos などの他のサポートされているエコシステムサービスに対するテスト\nAPI 用のクライアント SDK の作成\n少なくとも1つのサンプル塗布\npkg.go.dev のドキュメント\nCardano開発者ポータルのドキュメント\nTwitter、YouTubeなどによるコミュニティアウトリーチ.",
+      "criteria": "すべてのコード関連の出力は、対応するGitHubの問題やチケットの仕様に応じて完了して実装する必要があります。\nすべてのコードの変更は、メインブランチにマージされる前に指定されたチームメンバーによって審査および承認されなければなりません。\nマイルストーンに関連する各GitHubの問題は、関連するタスクの完了時に「終了」または「完了」としてマークする必要があります.",
+      "report": "(1)当社は、UTxO RPC仕様の異なるコンポーネントを実行し、対応する問題に示すように結果の検証と検証を実行しています。 すぐに働いたものではなく、問題が生成された(マイルストーンの問題で)、解決されたことがわかります。\n(2)私たちは、他のサポートされているエコシステムサービス、Dolos、問題の発見を目的としたテストを完了しました。 Dolosはベースラインでした。 UTxO RPC 仕様の Go 実装である UTxO RPC から Go SDK を使用して、 Dolos と Cardano Node API の両方に対してテストします。\n(3) 上記2つのSDKは、UTxO RPCインターフェースのhttps://github.com/utxorpc/go-sdkで提供され、このプロジェクトリポジトリにあるとRESTインターフェイスに使用されます。\n発行は、指定されたチームメンバーからの承認を得て、コード出力、文書化されたテスト、および(該当する)コードレビューの証拠を提供します。\n(4)当社のサンプルアプリケーションは、YouTubeで公開デモを提示し、app.blinklabs.ioで誰にでも使用できる\n(5)(6) 対応する使用文書を追加し、https://github.com/blinklabs-io/cardano-node-api. 指定されたように、外部のドキュメントは https://pkg.go.dev/github.com/utxorpc/go-sdk と Cardano Node API の Builder Tools で見つけることができます。\n(7) コミュニティのアウトリーチは、@Catalyst OnX によって再ツイートする YouTube や Twitter で確認できます。\nプロジェクトボードのGitHub Milestone 4の問題(aka ticket)で追跡できます。https://github.com/orgs/blinklabs-io/projects/9/views/2 全てのマイルストーン4枚のチケットが完売しました."
+    },
+    {
+      "no": 5,
+      "promise": "プロジェクトクローズアウトレポート\nプロジェクトクローズアウトビデオ",
+      "criteria": "プロジェクトのクローズアウトレポートには、プロジェクトの目的と達成目標のエビデンスに関する包括的な要約が含まれる必要があります。 プロジェクトのクローズアウトビデオは、プロジェクトの旅の視覚的な概要を提供し、終了し始めて、主要な成果を強調し、ネット製品を展示する必要があります。開発者のドキュメントを備えた機能の完全なライブラリ.",
+      "report": "当社のクローズアウトレポートはこちら: https://docs.google.com/document/d/1tjMuocV3P4Zf-nxJlJuXFTJmxzOagbFSf6TSNwPp2LI/edit?usp=sharing\nクローズアウトビデオはこちら: https://youtu.be/L0xywGabhac\nソースコード: https://github.com/blinklabs-io/cardano-node-api & https://github.com/utxorpc/go-sdk\nサンプルアプリケーション: app.blinklabs.io"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "スタンドアローンGithubリポジトリに公開されていない/ハッキーデザインパターンの堅牢なドキュメント、Plutonomicon、開発者ポータル、アイケンドドキュメント、およびPlutarchドキュメンテーションなどの既存のデベロッパードキュメンテーションへのas-well-as.",
+      "criteria": "以下のデザインパターンは、Anastasia Labs Githubリポジトリに明確に書かれ、公開されています\n・出金ゼロのコツを使って、バリデータを使うためのトランザクションレベルの検証\n・分注ポリシーでバリデータを使うためのトランザクションレベルの検証\n・不良品との入力・出力インデックス作成\n・厳格な検証チェック\n・PlutusTypeEnum のレディーマー - Enums の簡単なレディーマーのための効率的なデータエンコーディング。\n・txInfoMint を正規化して 0 の lovelace 値を取り除く\n・妥当性範囲の正常化.",
+      "report": "Anastasia Labs Githubリポジトリに以下のデザインパターンを明記し、公開しています。\n・出金ゼロのコツを使って、バリデータを使うためのトランザクションレベルの検証\n・分注ポリシーでバリデータを使うためのトランザクションレベルの検証\n・不良品との入力・出力インデックス作成\n・厳格な検証チェック\n・PlutusTypeEnum のレディーマー - Enums の簡単なレディーマーのための効率的なデータエンコーディング。\n・txInfoMint を正規化して 0 の lovelace 値を取り除く\n・妥当性範囲の正常化\n\nデザインパッタのすべてのドキュメントは、https://github.com/Anastasia-Labs/design-patterns にあります"
+    },
+    {
+      "no": 2,
+      "promise": "読みやすさを犠牲にすることなく、不直感的なデザインパターンとハッキーな効率のトリックを適用し、繰り返しボイラープレートのトンを書く必要はありません.",
+      "criteria": "「アイケン」で書かれたデザインパターンは、Anastasia Labs Githubに掲載されました。\n・出金ゼロのコツを使って、バリデータを使うためのトランザクションレベルの検証\n・分注ポリシーでバリデータを使うためのトランザクションレベルの検証\n・不良品との入力・出力インデックス作成\n・厳格な検証チェック\n・PlutusTypeEnum のレディーマー - Enums の簡単なレディーマーのための効率的なデータエンコーディング。\n・txInfoMint を正規化して 0 の lovelace 値を取り除く\n・妥当性範囲の正常化.",
+      "report": "設計パターンのドキュメンテーションでアイケンライブラリが利用できます。\nhttps://github.com/Anastasia-Labs/aiken-design-patterns\nここでは、すべてのdesingパターンを持つフォルダへの直接リンクです: https://github.com/Anastasia-Labs/aiken-design-patterns/tree/main/lib/aiken-design-patterns\nここでは、アイケンコードで特定のデザインパターへのリンクです: https://github.com/Anastasia-Labs/aiken-design-patterns/blob/main/lib/aiken-design-patterns/multi-utxo-indexer-one-to-many.ak\nここでは、すべてのデザインパターンの使用例へのリンクです: https://github.com/Anastasia-Labs/aiken-design-patterns/tree/main/validators\nマイルストーン3でテストが来る"
+    },
+    {
+      "no": 3,
+      "promise": "ユーザーは、読みやすさを犠牲にすることなく、比類のない設計パターンとハッキー効率のトリックを適用し、繰り返しボイラープレートのトンを書く必要はありません.",
+      "criteria": "Plutarchで書かれた以下のデザインパターンがAnastasia Labs Githubに掲載されました\n・出金ゼロのコツを使って、バリデータを使うためのトランザクションレベルの検証\n・分注ポリシーでバリデータを使うためのトランザクションレベルの検証\n・不良品との入力・出力インデックス作成\n・厳格な検証チェック\n・PlutusTypeEnum のレディーマー - Enums の簡単なレディーマーのための効率的なデータエンコーディング。\n・txInfoMint を正規化して 0 の lovelace 値を取り除く\n・妥当性範囲の正常化.",
+      "report": "設計パターンのドキュメントを持つPlutarchライブラリは、\nhttps://github.com/Anastasia-Labs/plutarch-design-patterns\nここでは、すべてのデザインパターンを持つフォルダへの直接リンクです: https://github.com/Anastasia-Labs/plutarch-design-patterns/tree/main/src/Plutarch\nここでは、Plutarchコードで特定の設計パターンへのリンクです: https://github.com/Anastasia-Labs/plutarch-design-patterns/blob/main/src/Plutarch/MerkelizedValidator.hs\nここでは、すべての設計パターンの使用例へのリンクです。 https://github.com/Anastasia-Labs/plutarch-design-patterns/blob/main/src/Plutarch/MerkelizedValidator.hs"
+    },
+    {
+      "no": 4,
+      "promise": "ラッパー機能の実装が技術的仕様に準拠していることを保証するユニットテストとプロパティベースのテストのシリーズ.",
+      "criteria": "・ユニットテストカバレッジ:ユニットテストの受入基準は、90%などの特定のレベルのコードカバレッジを達成し、コードベースの重要な部分がテストされるようにします。\n・適正な試験成功: プロパティベースのテストの受諾基準は、ラッパーライブラリに指定されたプロパティとインバリアントが、さまざまな生成されたテストケースに満足していることを実証します。\n・テスト文書の完全性: ユニットテストとプロパティベースのテストのドキュメントは、テストの明確な説明を含む、完了する必要があります",
+      "report": "マイルストーン4にPoAを提出してください!\nPoA には以下が含まれます:\n1) テストと実行方法:\nこれらは、Anastasia Labs の GitHub リポジトリに公開され、テストスイートと個別のリポジトリ README.md セクションのレポートで両方のテストを実行する方法に関する明確な指示が書かれています。\n「テストスイート」レポート:アイケン(ページ2)、プルクアーク(ページ54)\nAiken GitHubリポジトリ: https://github.com/Anastasia-Labs/aiken-design-patterns/blob/main/README.md\nPlutarch GitHubリポジトリ: https://github.com/Anastasia-Labs/plutarch-design-patterns/blob/main/README.md\n2)試験結果の証拠\n成功したテストランは、私たちがGIFとして準備したターミナルランを介して観察することができ、私たちのすべてのテストが通過するショーケース。 あるいは、各コミットのGitHubアクションセクションでは、Github CI ワークフローの表示の一部であるため、これらのリポジトリにプッシュしました。\nGIF Testrun - Aiken: https://github.com/Anastasia-Labs/aiken-design-patterns/blob/main/assets/images/aiken-design-patterns.gif\nGIF Testrun - Plutarch: https://github.com/Anastasia-Labs/plutarch-design-patterns/blob/test/property-based-tests/assets/images/plutarch-design-patterns.gif\nより多くの証拠は、各リポジトリのREADMEで見つかった開発者の環境をセットアップし、結果を見るために自分自身のテストを実行するためのガイドラインに従って収集することができます。\n3) ドキュメント\n豊富なテストスイートをご用意しており、よく文書化される必要があり、パターンの理解を深めています。 各テストで何が起こっているかを個別に理解するには、メインリポジトリを参照することをお勧めします: https://github.com/Anastasia-Labs/design-patterns. これらのパターンの理解を深めるため、高いレベルの概要から各コンセプトを説明します。\nドキュメントへのリンク PDF: https://drive.google.com/file/d/1Oju4cMF7jrIjh5VbIueTyp45T45g1159/view?usp=sharing"
+    },
+    {
+      "no": 5,
+      "promise": "プロジェクトやカルダノスマートコントラクト開発者から得られるメトリックとフィードバックを示すレポート。\nコミュニティから受け取ったフィードバックでライブラリを改善",
+      "criteria": "報告書は明確に書かれています\nレポートでは、コミュニティが受け取るフィードバックが表示されます\nコミュニティからのフィードバックはライブラリに反映されます",
+      "report": "私達は私達の設計パターン提案のための最終的なマイルストーンを提出するために幸せ、誇りに思っています\n以下は、次のレポートをご覧ください。\n・マイルストーン完成の証拠\n・報告書内のライブラリーに適用される改善の証拠\n\nGoogleドライブ:https://drive.google.com/file/d/1gKgsBJkzJyjKZ-DEe6zjfGp 3Ik8YcAL/view?usp=sharing\nクローズアウトビデオ: https://youtu.be/k6ovQpRyUOM"
+    }
+  ]
+}

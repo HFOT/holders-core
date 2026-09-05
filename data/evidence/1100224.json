@@ -1,0 +1,79 @@
+{
+  "title": "Optimized Smart Contracts and Infrastructure for interoperable protocols on Cardano: VISTA",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 67909,
+      "promise": "The contract must be capable of minting and burning tokens, with CIP-68 metadata support, while showing evidence that the deployment parameters allow for a \"permission\" requirement mandatory for minting and optional for burning. This contract allows for dynamic token generation under a common policy as controlled and directed by some regulating agency while optionally allowing any and all holders to burn the tokens to remove them from the UTxO set at will in the future.\n\n・Publish the open source contents of the Smart Contract\n・Publish contract usage documentation\n・Publish evidence of contract audit and refinement\n・Publish contract test suite\n・Publish contract example usage code (Test network compatible)",
+      "criteria": "・The reviewer will view the submitted video.\n・The video submitted will showcase permissioned token minting on the Cardano blockchain.\n\nThe video will demonstrate the use of the contract including:\n・Cloning the contract repository and configuring parameters\n・Deploying the contract to a Cardano testnet\n・Executing a minting transaction (User A) with permission granted by an external authority (User B)\n・Executing a burning transaction (User A) with no permission required\n・Executing a burning transaction (User A) with permission granted by an external authority (User B)\n・The reviewer will view the",
+      "report": "Resubmission — Milestone 1 Permissioned Minting\nDear Catalyst Milestone Review Team,\nWe are resubmitting Milestone 1 — Permissioned Token Minting because the Google Drive link you cited in your feedback ( https://drive.google.com/file/d/15RCimR12OMbzNhQONOzkyQ0gjPOEsi5g/view ) refers to our approved Change Request for Milestones 2 – 5, not to Milestone 1. The scope, deliverables, and timeline of Milestone 1 remain exactly as originally approved and are now fully complete.\nUnless you require additional modifications, we respectfully request approval of Milestone 1 so the project can remain on schedule.\nEvidence of Completion\nMilestone 1 deliverable package (unchanged)\n・Demonstration video: https://www.youtube.com/watch?v=-Sr1DjK2AaI\n・Smart-contract branch (includes audit): https://github.com/vista-foundation/smart-contracts/tree/permissioned-mint-burn\n・Pre-production transactions\n\n・Mint — burn restricted to admin: 5f4c18007eb50484cae397b9c8793341d8a0cc2b682c74e7d5d7935c3fab5860\n・Burn — burn restricted to admin: 7b945d639389658eb2bbe9b702975f07a4d9653aedcb7dede675532754012cec\n・Mint — burn permitted to holders: ea075e321f0bebcb8e2557b968a818b4fe73801cdb2676c1bcfac26d554ad0e0\n・Burn — burn permitted to holders: ce8e0aa3dc367ee9e3879632cab9c9612fdb20238eedfb05c6dd9d8c61c7e96f\n\nPlease let us know if any further information is required. We appreciate your timely review and look forward to your approval.\nBest regards,\nAgrow Labs Team",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "20",
+      "cost": 75000,
+      "promise": "Create and release an open-source, public-utility smart contract that facilitates custodial asset transfer within the Cardano ecosystem. The contract must enable an asset to move from User A to User B through the custody of Entity C, governed by transparent and verifiable rules.\n・Publish the open-source smart contract enabling asset transfer from User A to User B through the custody of Entity C\n・Publish contract usage documentation.\n・Publish a complete contract test suite.\n・Publish example usage code (Cardano testnet compatible).",
+      "criteria": "The reviewer will validate this milestone by watching the submitted demonstration video and replicating the documented steps. The video will show:\n・Cloning the contract repository.\n・Deploying the contract to a Cardano testnet.\n・Executing a locking transaction where Party A deposits funds into the contract.\n・Executing an unlock transaction where Party A withdraws funds prior to delivery.\n・Executing an unlock transaction where Party B receives funds through Entity C (custodian).\n・Executing an unlock transaction where Party B refuses delivery and funds are returned to Party A.\n\nThe reviewer will",
+      "report": "Updated Proof of Achievement Resubmission\nThis milestone delivers a fully implemented Custodial Transfer smart contract deployed and executed on the Cardano preview network, including verified on-chain execution, integrated Aiken-based testing, public repository access, and a full functional demonstration of all custodial transfer flows. Reviewers can independently verify contract behavior through live on-chain preview transactions, local test execution using the Aiken CLI, and documented testing scenarios within the repository.\n1. Updated Demonstration Video\nPrimary Demo Video: YouTube: https://youtu.be/E6XwWJfaWu4\n2. On-Chain Preview Deployment and Execution Evidence\nThe contract was deployed and executed on Cardano Preview network with the following verified transactions:\nInitial Deposit Transaction (Contract Address Initialization): https://preview.cardanoscan.io/transaction/90419bdc3afeda766d93f0ca4e2fc1a8e4289d28f080a0d5ee6378cac04b601c\nThis transaction initializes the script address with UTxO and is functionally the on-chain deployment step for a Cardano validator.\nFirst On-Chain Contract Execution (Spending Transaction): https://preview.cardanoscan.io/transaction/2852580f34858d6c53211728e409ccabdecbc1dc8f254822f093671ec28e642d\nThis transaction successfully executes the custodial transfer logic on Cardano Preview network.\nTogether, these two transactions demonstrate full on-chain deployment and live execution of the contract logic.\n3. Repository and Testing Documentation\nFull Repository: https://github.com/vista-foundation/smart-contracts/tree/custodial-transfer/custodial-transfer\nAiken Validator and Integrated Tests: https://github.com/vista-foundation/smart-contracts/blob/eda4d66273809e0847ef429fed81866bc1f8a546/custodial-transfer/validators/custodial_transfer.ak#L203\nAiken test functions are defined directly in the validator file beginning at line 203. These tests validate the contract logic using Aiken’s native test system.\nUpdated README with Explicit Te",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "21",
+      "cost": 50000,
+      "promise": "Develop and publish open-source, public utility smart contract for escrow services on the Cardano blockchain\n・Develop and publish an open-source smart contract for escrow services on the Cardano blockchain.\n・The contract must be capable of holding user assets for a defined period of time and releasing them only when specified unlock conditions are met.\n・Publish the open-source contents of the smart contract.\n・Publish contract usage documentation.\n・Publish a complete contract test suite.\n・Publish example usage code (Cardano testnet compatible).",
+      "criteria": "The reviewer will validate this milestone by watching the submitted demonstration video, which will show:\n・Cloning the contract repository.\n・Deploying the contract to a Cardano testnet.\n・Locking assets into the escrow contract.\n・Unlocking assets by user withdrawal.\n・Unlocking assets based on time-lock or key-based conditions.\n\nThe reviewer will also confirm that all required outputs are available on GitHub, including:\n・Contract source code\n・Documentation\n・Example code\n・Test code\n\nFinally, the reviewer may independently clone the repository and run the example code to reproduce the behaviors sh",
+      "report": "Proof Of Achievement\nThank you to the reviewers for your time and consideration. This Proof of Achievement is submitted for Milestone 3, Escrow Contract. Below, you will find a summary of the delivered contract capabilities, followed by the exact verification actions available to reviewers and the supporting evidence.\nThis milestone involved the development and publication of an open-source, public utility smart contract for escrow services on the Cardano blockchain.\nAs per the Milestone Outputs, this contract enables the following:\n・A smart contract capable of holding user assets for a defined period of time and releasing them only when specified unlock conditions are met.\n・Publish this code as open source\n・Develop contract on and for Cardano Blockchain\n・Publish the open-source contents of the smart contract.\n・Publish contract usage documentation.\n・Publish a contract test suite.\n・Publish example usage code.\n\nTo verify the above, the Catalyst reviewers will be able to do the following:\n・Clone the contract repo\n・Deploy the contract to Cardano Testnet\n・Lock assets into the escrow contract.\n・Unlock assets by user withdrawal.\n・Unlock assets based on time-lock or key-based conditions.\n・View “Demo Video” as proof of completion.\n\nFor more information on how to implement, please refer to the official GitHub documentation.\n・Github link: https://github.com/vista-foundation/smart-contracts/tree/escrow-services/escrow-services\n・﻿Youtube: https://youtu.be/GKFwAwQnWIw",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "22",
+      "cost": 29725,
+      "promise": "This is an additional milestone that had to be added to bring the proposal into line with the Catalyst 5-Milestone requirement and was not part of our plan as each of the previous milestones (M1-3) already include documentation and auditing. We have created this additional milestone to perform additional, final review and audit of the code before project completion.\nThe team will conduct a final review, audit, and revision (if needed) of all smart contracts and address any remaining gaps in:\n・Test cases\n・Business logic\n・Documentation\n・Examples\n\nMilestone output will be a final internal audit and documentation review report and and any requisite updates or changes to the code that may be discovered during the final review.",
+      "criteria": "・The reviewer will watch a video summarizing review and audit results and outcomes\n・The reviewer will be able to see audit and review results and accompanying documentation published on GitHub",
+      "report": "Proof of Achievement: Final Review & Audit Milestone\nThe following submission represents the completion of an additional milestone added to align the proposal 1100224 milestone 4. This milestone was created to perform a final, comprehensive review and audit of the project’s smart contracts before project completion.\nSubmission Contents:\n・A summary of three audit reports, detailing test cases, business logic, documentation, and examples.\n・GitHub repository link containing the final reviewed and updated code.\n・A video summarizing the review and audit results.\n・Google Drive Link to original audit reports for full reference.\n\nMilestone Completion Evidence:\n・GitHub Repository: https://github.com/vista-foundation/smart-contracts\n・YouTube Video: https://youtu.be/HntCzVviTSY\n・Full Audits: https://drive.google.com/drive/folders/19o6HxKmbnwVQC4dorgKZp0Y9GB6qWKfe?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "23",
+      "cost": 47633,
+      "promise": "For project closeout we will address any lingering gaps in documentation and prepare our project closeout presentation (video + document).\n・Complete final closeout documentation and publication",
+      "criteria": "・The reviewer will watch Project Closeout Video\n・The reviewer will read Project Closeout PDF\n・The reviewer will be able to see all contracts and accompanying documentation published to GitHub",
+      "report": "Proof of Achievement: Project Closeout (Resubmission)\nThank you to the Catalyst community reviewers who supported us throughout the proposal process, and to the admin team reviewing this submission. We are resubmitting Proposal 1100224 for final milestone closeout.\nWe have reviewed the reviewer feedback and the official PCR and PCV requirements as stated in the Project Catalyst Knowledge Base (https://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv). We believe our submission fully satisfies all stated requirements. Below we address both reviewer concerns directly, followed by a point-by-point mapping of each guideline to where it is met in our deliverables.\nAddressing Reviewer Feedback\nReviewer 1, \"Catalyst sign-off for the previous milestone still appears to be pending.\" This has since been resolved. All prior milestones are now approved and visible in the Milestone Module.\nReviewer 2, \"The PCR and PCV don't adhere to the requirements… The final report could stay as well, but is different from PCR.\" We respectfully disagree. Our closeout document is structured as a PCR and addresses every required element outlined in the Knowledge Base. We provide a detailed mapping below. If there is a specific requirement the reviewer believes is unmet, we welcome that feedback so we can address it directly.\nPCR Requirements: Closeout Report\nThe Knowledge Base states the PCR should include: (1) a summary of deliverables, (2) whether success metrics/KPIs were addressed or not, and (3) next stage plans including commercialization and further funding.\nRegarding the summary of deliverables, this is covered in Section 4, \"Project Specific KPIs Addressed,\" which provides a full mapping of each proposed deliverable to what was delivered, including the Escrow Contract, Custodial Transfer, and Permissioned Minting.\nRegarding KPIs and success metrics, these are addressed in Section 3, \"Challenge KPIs Addressed,\" and",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 10,
+      "cut": true
+    }
+  ]
+}

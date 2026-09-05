@@ -1,0 +1,62 @@
+{
+  "title": "CHARLI3 - Open Source Multi-DEX SDK: A Pythonic Gateway to Decentralized Exchanges on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 24000,
+      "promise": "・Deliverables: Allocate team to project, complement with contractors if required\n・Outputs: Epics, tickets, and team are ready to deliver project\n・Intended outcomes: begin work on milestone two of developing a fully functional open source Python Multi-DEX SDK.",
+      "criteria": "Team is assigned to tickets with an estimated velocity that completes all planned work within the project timeline.",
+      "report": "The Charli3 core team is collaborating with the https://steelswap.io/ team to deliver this project. \n\nMedium Article: \nPlease find a progress update with a snapshot of our Kanban project board in this medium article: https://oraclecharli3.medium.com/catalyst-progress-report-dexaggregator-in-python-847e5acb3c8c\nMedium article updated with resubmission details\n\nTeam: \nProject Lead: Robert Hever, co-founder of Charli3 Oracles https://www.linkedin.com/in/robhever/\nDeveloper (https://steelswap.io/ team): https://github.com/theeldermillenial\nDeveloper (Charli3 team): https://github.com/talhahussain7\nDeveloper (Charli3 team): https://github.com/bhatt-deep\nAnastasia Labs and Mlabs is not involved in this project. Metalamp.io is not involved in this project to date, but we may leverage their team for future milestones.\n\nTimeline: on schedule or ahead of schedule\nExpected Delays: We expect to complete the project on time. DEXs may adjust their integration requirements or update their systems during build and that could cause delays. As of this report, no changes are expected on the DEX side. \nWork completed\nPlease find a progress update with a snapshot of our Kanban project board in this medium article: https://oraclecharli3.medium.com/catalyst-progress-report-dexaggregator-in-python-847e5acb3c8c\nBreakdown:\nEPICS: MVP (completed) + Testing Suite (in-progress) + Integrated MVP for public use (in-progress)\nBug fixes (4+ weeks of tickets)\nIntegrations (2 weeks of tickets)\nTime to completion (ETA July 2024). \nBriefing of Project update: \nThe project is ahead of schedule with a working MVP already completed. The upcoming work includes mostly bug fixes, integrations with DEXs, and testing. We expect a public repo available in a month with all our progress to date. A decision on open source licensing will be made in the interim. Tentatively, we are selecting a license that allows builders to use the solution commercially without any fees as we believe that best echos the ethos of Ca",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 15,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 24000,
+      "promise": "Python-based Multi-DEX SDK, Integration with SundaeSwap and other major DEXs.\n・Define SDK Architecture\n・Implement SDK Interfaces and Models\n・Prototype Integration with SundaeSwap\n・Integration with Other Major DEXs on the Cardano Network\n・Code Refinement and Testing\n\n・Open source code pushed to the public repository including passing test cases.\n・A fully functional open source Python Multi-DEX SDK.",
+      "criteria": "・Repo is publicly available with all code for public to review\n・Fully functional SDK is available in the repo",
+      "report": "Please view the public github repository here: https://github.com/Charli3-Official/charli3-dendrite\nThe repo contains open source (MIT License) code, downloadable SDK, supported DEXs and other information, and lastly a directory of tests/test cases for review. There is documentation that our team is enhancing for the next milestone.\nMedium article (public):\nhttps://oraclecharli3.medium.com/charli3-opens-dendrite-be334cec1cfe",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 4000,
+      "promise": "Documentation that explains how to use the SDK including examples and tutorials along with the comprehensive SDK documentation.",
+      "criteria": "SDK documentation is available in the Github repo or linked to a public source for viewing.\nOpen source license prepared and included for public viewing",
+      "report": "・The team has released a full version of the documentation here: https://charli3-official.github.io/charli3-dendrite/\n・SDK Available at the Github Repo: https://github.com/Charli3-Official/charli3-dendrite\n・Open source license (MIT License): https://github.com/Charli3-Official/charli3-dendrite/blob/main/LICENSE\n\nThose three links above are public and provide everything you'd need to use the open source solution.\nWe are calling the product \"Dendrite\". Thank you :)",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 28000,
+      "promise": "Open source licensing provided\nCreate and submit Close-out report for project inlcluding all necessary videos etc.",
+      "criteria": "Open source license prepared and included for public viewing\nClose-out report and all necessary material submitted to catalyst",
+      "report": "・Close out video: https://vimeo.com/1027902607/7bc45b6598?share=copy\n・Close out Report: https://drive.google.com/file/d/1OoqSZOItu6RN-gEtnMKVvXTsbUZQ7pi9/view?usp=sharing\n・Open Source License (MIT): https://github.com/Charli3-Official/charli3-dendrite/blob/main/LICENSE\n\nExtra information:\nGithub Repo: https://github.com/Charli3-Official/charli3-dendrite\nDocumentation: https://charli3-official.github.io/charli3-dendrite/\n\nCharli3 Dendrite currently supports the following Cardano DEXs:\n・Minswap\n・MuesliSwap\n・Spectrum\n・SundaeSwap\n・VyFi\n・WingRiders\n・GeniusYield\n・Axo\n\nKey Features\n・🔄 Multi-DEX Support: Integrate with Minswap, MuesliSwap, Spectrum, SundaeSwap, VyFi, GeniusYield, Axo, and WingRiders\n・💧 Liquidity Pool Data: Fetch and analyze pool information across different DEXs\n・💱 Swap Operations: Execute token swaps with ease\n・🧩 Flexible Asset Handling: Manage various asset types and pool states efficiently\n・🔗 On-chain Data Integration: Connect with DB-sync, BlockFrost, and Ogmios/Kupo\n・🛠 Extensible Architecture: Easily add support for new DEXs and features",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

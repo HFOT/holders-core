@@ -1,0 +1,47 @@
+{
+  "title": "Erlang SDK for Blockfrost API",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 2000,
+      "promise": "The output of this milestone is to have a working SDK to fetch data from Blockfrost in the Erlang languange. In this milestone we will release the code for testing up to the public. We do not expect to see much usage, as it will be in beta, for testing and probably not much people will use it in production. People will be able to follow up the progress on Github. The links will be shared with community on Github, Twitter of Blockfrost, Reddit of CardanoDevelopers and StackExchange.",
+      "criteria": "A working demo script that will use the Erlang SDK will be part of the source code.",
+      "report": "・Github repository blockfrost-erlang (source code, documentation and the script snipped in the Usage)\n・Twitter post\n・CardanoDevelopers reddit post",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 7000,
+      "promise": "The output of this milestone is going to be a set of erlang tests that are going to be testing the endpoints implemented in Milestone 1.",
+      "criteria": "An open source set of tests that can be run by Github action that are testing the above.",
+      "report": "・Link to a successful test suite run in Github actions",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "2",
+      "cost": 21000,
+      "promise": "After leaving the code for community testing, addressing all issues, a final release will be crafted. This release and its accoucement will be shared on Github, Twitter of Blockfrost, Reddit of CardanoDevelopers and StackExchange. The links to the engagement will be provided in the update.",
+      "criteria": "No outstanding issues in the Github, which anyone from the community can fill, final code released. The link to the release will also include the number of usage of this SDK during the testing phase.",
+      "report": "1) The link to announcements:\n・twitter\n・reddit\n\n2) No outstanding issues on the github\n3) Latest release is 0.1.1 with over 112 installations during the beta phrase\nClosing video and close out report.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

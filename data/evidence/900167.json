@@ -1,0 +1,61 @@
+{
+  "title": "OpenSource MetaMask<=>â‚ł Integration",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 27600,
+      "promise": "(A) User research for the feature and front-end development \n(B) UI design for front-end development\n(C) Implement WalletConnect/MetaMask and ETH funding bounties on Snapbrillia",
+      "criteria": "(A) UX flows for feature and front-end development \n(B) High fidelity wireframes for front-end development\n(C) Demo of Completed Milestone",
+      "report": "The evidence shows significant progress toward completing these goals. We are about 58.8% there and have completed 10 of 17 major tasks. Additionally, one major task is currently in progress. There is also a video demonstration of the successful delivery of Statement of Milestones #1 for this project.\n\nPlease see details here: https://docs.google.com/document/d/18F7wTSxezymcXXYiHrI0OjRoaT_u7bNvvJUVe2IM8os/",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 27600,
+      "promise": "(A) Research ETH-to-₳DA Implementation Challenges\n(B) Research & Outreach for ETH-to-₳DA Techstack Partnerships\n(C) Implement ETH-to-₳DA Service on Snapbrillia",
+      "criteria": "(A) Insights for  ETH-to-₳DA Implementation Challenges\n(B) Establish 2 ETH-to-₳DA Techstack Partnerships\n(C) Demo of Completed Milestone",
+      "report": "This is an entirely FREE and open-source tool for any Cardano project to use ETH-to-ADA service to quickly swap ETH-to-ADA right on their website or web app with an already integrated MetaMask via WalletConnect and Cardano wallets via CIP30.\n\nWe have made significant progress toward completing this project's goals. We are about 94.1% there and have completed 16 of 17 major tasks. The one last task is currently in progress and is nearly completed for 100% completion. There are also video demonstrations of Proof of Achievement for completing all milestones for this project, only missing the close-out video and close-out project report. Here is the pending project close-out report that’s still a work in progress: https://docs.google.com/document/d/1HKoJb1mzTBri01rtQyVLnWMoRENUTU7jHsXw9Z8sFQQ/edit\n\nMilestone 2 - Acceptance Criteria\n(A) Insights for ETH-to-₳DA Implementation Challenges\n(B) Establish 2 ETH-to-₳DA Techstack Partnerships\n(C) Demo of Completed Milestone\n\n--\n\n(A) Some of the challenges we faced were how we could facilitate an ETH-to-ADA swap while still providing a good user experience. Most service offerings we found required extra unnecessary steps, such as having a specific wallet or web extension. These options were not viable because they took the user out of a flow that required too much dependence on other wallets, extensions, etc., to work correctly. Also, a user will have to install these extra services to perform an action that will create more confusion and decrease user experience. We want to provide an easy way for this bridge to happen that doesn’t require extra steps unless the user wants to do so.\n\n(B) We met with many technical teams for potential integration into our tech stack. We only found one partner that allowed us to fully implement the flow a user will have to take to complete a programmatic swap from ETH-to-ADA. We chose this partnership strategically with our users in mind; less confusion equals better ease of use, more transactions",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 27600,
+      "promise": "(A) Research integration challenges of ETH-to-₳DA Service into WalletConnect/MetaMask on Snapbrillia\n(B) Lead WalletConnet/MetaMask working group on ETH-to-₳DA missing research\n(C) Integrate ETH-to-₳DA Service into WalletConnect/MetaMask on Snapbrillia",
+      "criteria": "(A) Insights for integration challenges of ETH-to-₳DA Service into WalletConnect/MetaMask on Snapbrillia\n(B) Demo of ETH-to-₳DA Service into WalletConnect/MetaMask on Snapbrillia\n(C) Demo of Completed Milestone",
+      "report": "This is an entirely FREE and open-source tool for any Cardano project to use ETH-to-ADA service to quickly swap ETH-to-ADA right on their website or web app with an already integrated MetaMask via WalletConnect and Cardano wallets via CIP30.\n\nWe have made significant progress toward completing this project's goals. We are about 94.1% there and have completed 16 of 17 major tasks. The one last task is currently in progress and is nearly completed for 100% completion. There are also video demonstrations of Proof of Achievement for completing all milestones for this project, only missing the close-out video and close-out project report. Here is the pending project close-out report that’s still a work in progress: https://docs.google.com/document/d/1HKoJb1mzTBri01rtQyVLnWMoRENUTU7jHsXw9Z8sFQQ/edit\n\nMilestone 3 - Acceptance Criteria\n(A) Insights for integration challenges of ETH-to-₳DA Service into WalletConnect/MetaMask on Snapbrillia\n(B) Demo of ETH-to-₳DA Service into WalletConnect/MetaMask on Snapbrillia\n(C) Demo of Completed Milestone\n\n--\n\n(A) After talking with potential partnerships and different technical teams about the problem of integrating a programmatic swap into WalletConnect/MetaMask, we found that it works better to flip this model by allowing these connections to perform a swap within our Snapbrillia wallet. This allows a user to connect external wallets to swap within our wallet instead of having them go elsewhere to perform the transaction. This also allows more access to many different WalletConnect wallets to be swapped into Cardano. It was challenging to reach this conclusion because all the teams we talked to had a single way of thinking while we focused on making it less confusing for the user. Adoption and ease of use is our primary goal which isn’t as easy as it sounds, but we have made tremendous strides to help ensure more possible transactions overall.\n\nPlease refer to the demo video for more clarity and details.\n\n(B) The demo link is here: h",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 9200,
+      "promise": "Fully functioning MVPThe project allows for users to have basic interoperability between MetaMask and CIP30 wallets using WalletConnect on Snapbrillia.\n\nThis project's final capabilities will provide demonstrable frameworks and technologies to enable Cardano projects and teams to accept ETH and receive payments in ADA in their CIP30 Cardano Wallets based solutions through added ETH-to-₳DA functionality.",
+      "criteria": "The demonstration of capabilities has shown the MVP functionality",
+      "report": "This is an entirely FREE, plug-and-play, and open-source tool for any Cardano project to use ETH-to-ADA service to quickly swap ETH-to-ADA right on their website or web app with an already integrated MetaMask via WalletConnect and Cardano wallets via CIP30.\n\nWe have made significant progress toward completing this project's goals. We are about 94.1% there and have completed 16 of 17 major tasks. The one last task is currently in progress and is nearly completed for 100% completion. There are also video demonstrations of Proof of Achievement for completing all milestones for this project, only missing the close-out video and close-out project report. Here is the pending project close-out report that’s still a work in progress: https://docs.google.com/document/d/1HKoJb1mzTBri01rtQyVLnWMoRENUTU7jHsXw9Z8sFQQ/edit\n\n--\n\nMilestone Final - Acceptance Criteria\nThe demonstration of capabilities has shown the MVP functionality\n\n(A) As demonstrated in the demo video here: https://youtu.be/OWFg1TZyoCo\n\n--\n\nAnyone can integrate this plug-and-play and open-source solution as an iframe (a couple of lines of code) into their website or web app to use this completely FREE ETH-ADA service with MetaMask via WalletConnect and other Cardano wallets via CIP30 that we are releasing for the community:\n\n \n\n--\n\nMilestone Final - Evidence of Milestone Completion\n(A) Demo and any insights will be recorded and posted to the Snapbrillia Youtube channel and shared in the corresponding monthly report\n(B) Links to Open-Source GitHub Repositories featuring ETH-to-₳DA Service in WalletConnect/MetaMask\n\n--\n\n(A) As demonstrated in the demo video here: https://youtu.be/OWFg1TZyoCo\n\nInsights are shared in the videos and our monthly progress reports.\n\n(B) The open-source GitHub repository for these projects can be found here https://github.com/Snapbrillia/crypto-swap and here: https://github.com/Snapbrillia/crypto-topup\n\nPlease see Proof of Achievements of Milestones and Monthly Progress Report details her",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    }
+  ]
+}

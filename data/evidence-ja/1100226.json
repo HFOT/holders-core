@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Cardano-Loans は PlutusTx から Aiken へ再構築された契約です。\n次の機能(新機能)を実装します。\n・最小限の支払い(交渉可能な期間間隔)\n・統合または固定利息支払い(交渉可能 はい/なし + 期間間隔)\n・返金不可:債券所有者(貸主)は、借主が返済しなければならないアドレスを更新することができます。\n・スクリプトベースのステーキング資格のサポート(パブキーのステーキング資格とは対照的)\n\nまた、次のような機能が実装され、時間/フィージビリティの制約があります。\n・借入金可能債務:これは、独自の契約を必要とする可能性が高いが、借り手は、見込み客への融資を借り換えるという欲求を信頼して宣伝することを可能にします。 また、現在の貸し手との交渉も可能です。\n・マルチアセットローン:借り手は、複数の資産を1つのローンで借りることができる\n・リンク可能なクレジット履歴:新しいBeaconトークンを導入することにより、以前に無関係/匿名の借受人IDを関連する一組(ただし無疑的)IDにまとめ、借主の裁量でリンクすることができます。\n\n*second**の機能を実装する成功に関係なく、ドキュメントの議論を生成します",
+      "criteria": "・Aikenブランチは、実装されたすべての機能のメインブランチにマージされ、さらに2番目のセットの成功や失敗について説明するドキュメントに加えて、将来の指示。\n・文書化は、効率性(リソース利用率の低い)とv1→v2契約の機能セットの利益を明らかに反映します\n・Githubでは、受容体が明確で理解しやすい文書でマークされています。 ユーザーと開発者は、",
+      "report": "このマイルストーンの提案で議論されたすべての重要な成果物が正常に実装されているだけでなく、セカンド「maybe」機能のマルチアセットローン機能がセットされ、[メインブランチ]1にマージしました。 プロジェクト全体をアイケンに再構築しました。 実装されていない機能や実装されていない機能の議論は、 [future考察](2) セクションで見つけることができます。\n関連する[changelog][3]を参照してください。 Milestoneで指定された出力を反映した、実装済みの機能のリストが含まれています。 [Tests][4] は、関連するリンクにあります。\nベンチマークは [BENCHMARKS][5] セクションで見つけることができます。 スタート&インストール手順は[here](6)\n[1]: https://github.com/fallen-icarus/cardano-loans 「メイン」\n[2]: https://github.com/fallen-icarus/cardano-loans?tab=readme-ov-file#future-considerations\n[3]: https://github.com/fallen-icarus/cardano-loans/blob/main/CHANGELOG.md 「Changelog」\n[4]: https://github.com/fallen-icarus/cardano-loans/tree/main/test 「テスト」\n[5]: https://github.com/fallen-icarus/cardano-loans/blob/main/Benchmarks.md 「ベンチマーク」\n[6]: https://github.com/fallen-icarus/cardano-loans/blob/main/GettingStarted.md"
+    },
+    {
+      "no": 2,
+      "promise": "Cardano-Options は PlutusTx から Aiken へ再構築された契約です。\n次の機能(新機能)を実装します。\n・スクリプトベースの決済アドレス:オプションライターが、パブキーアドレスに加えて、スクリプトアドレスへの支払いを受け取ることを可能にします。 現在、これは追加のロジックが必要ですが、Plutus Coreの今後のアップデートで強化するのがはるかに簡単です。\n・契約IDの取得 トークン: 現在、ContractIDの1つは、オプションがエクササイズされるとバーンされ、もう1つは出力の1つに含まれています。 Cardano-Options V2では、ダブルの満足度は、両方のcontractIDトークンを燃やすことができ、UTxO /トークンの肥大化を緩和することができます。\n・有利なminUTxO預金:現在、minUTxO預金は、オプションのライフサイクルで特定のUTxOのためにハードコードされます。 V2 は、余分な datum フィールド + ロジックを使用して、預金コストを下げる変数預金を有効にします。\n・複数のオプションを使用:V2は、同じトランザクションの異なるライターから複数のオプションを購入し、互換性を高め、全体的なコストを削減することができます。\n・Option Writingの統合:現在、オプションライターは2つの別々の取引でオプションを「準備」する必要があります",
+      "criteria": "・Aikenブランチは、Cardano-Optionsリポジトリのメインに統合され、すべての変更は、V1上の明確な進捗状況を文書化、理解しやすく、および指標化する必要があります。\n・利用者/開発者は、提供したチュートリアル/デモからCardano-Options V2を十分に活用できるはずです.",
+      "report": "このマイルストーンの提案で議論されたすべての重要な成果物は、本支店に成功して統合されています。 プロジェクト全体をアイケンに再構築しました。 実装された機能の議論は、機能ディスカッションセクションで見つけることができます。\n関連する変更履歴は、変更の完全なリストを参照してください。 Milestoneで指定された出力を反映した、実装済みの機能のリストが含まれています。 マイルストーン完了の証拠への具体的なリンクは次のとおりです。\n・V2契約コード:https://github.com/fallen-icarus/cardano-options/tree/main/aiken\n・Protocolのドキュメントと仕様:https://github.com/fallen-icarus/cardano-options?tab=readme-ov-file#specification\n・テスト&ベンチマーク: https://github.com/fallen-icarus/cardano-options/tree/main/test と https://github.com/fallen-icarus/cardano-options/blob/main/Benchmarks.md\n・チュートリアル/デモ: https://github.com/fallen-icarus/cardano-options/blob/main/GettingStarted.md"
+    },
+    {
+      "no": 3,
+      "promise": "Cardano-Aftermarket は PlutusTx から Aiken へ再構築された契約です。\n次の機能(新機能)を実装します。\n・複数の販売をUpdating: V2 は 1 つの Tx の複数のリストの販売パラメータ(すなわち価格)を更新する機能を追加し、効率を改善し、全体的なコストを削減します。\n・バッチ(マルチアセット)販売:現在、1つのNFTのみを「販売」UTXOに販売できます。V2は、同じポリシーIDの複数のNFTを単一の「販売」UTXOに有効にします。 プロトコルの効率性を高め、コストを削減します。\n・Bids:特にアート、ゲーム、またはメンバーシップに関連するユニークなNFTのアフターマーケットプロトコルの重要な特徴。 V2は、見込み客が売主の市場アドレスに「入札」UTxOsを送ることができる「入札」を有効にすることができます。\n・スクリプトベースの支払い:V2は、売主が優先する決済アドレスを選ぶ際の柔軟性を可能にします。\n\n追加機能または最適化は、R&Dの後に実装できます。\n・V2のコストと効率性の改善を反映したテストとベンチマークの徹底は、Cardano-Aftermarket V2のライフサイクルのすべての部分、および新しい機能の議論だけでなく、任意のチャイルドのために文書化されます",
+      "criteria": "・Aiken ブランチは、Cardano-Aftermarket リポジトリのメインブランチに統合され、すべての前述の機能を実装しました。\n・文書化および更新された仕様は、効率(リソース使用率の低い)およびv1 -> v2契約の機能セットで、明らかに利益を反映します\n・ユーザー/開発者は、提供されているチュートリアル/デモからCardano-Aftermarket V2プロトコルをフル活用できるようにする必要があります",
+      "report": "このマイルストーンの提案で議論されたすべての重要な成果物は、本支店に成功して統合されています。 プロジェクト全体をアイケンに再構築しました。 実装された機能の議論は、機能ディスカッションセクションで見つけることができます。\n関連する変更履歴は、変更の完全なリストを参照してください。 Milestoneで指定された出力を反映した、実装済みの機能のリストが含まれています。 マイルストーン完了の証拠への具体的なリンクは次のとおりです。\n・V2契約コード:https://github.com/fallen-icarus/cardano-aftermarket/tree/main/aiken\n・Protocolのドキュメントと仕様:https://github.com/fallen-icarus/cardano-aftermarket?tab=readme-ov-file#specification\n・テスト&ベンチマーク:https://github.com/fallen-icarus/cardano-aftermarket/tree/main/test and https://github.com/fallen-icarus/cardano-aftermarket/blob/main/Benchmarks.md\n・はじめるドキュメント:https://github.com/fallen-icarus/cardano-aftermarket/blob/main/GettingStarted.md"
+    },
+    {
+      "no": 4,
+      "promise": "P2P-DeFiプロトコルスイートとのやりとりのためのデスクトップクライアントGUIが作成されます。\nフィーチャー:\n・チェーンインデックス作成(ブロックフロスト、コオオスなど)のAPIエンドポイントを修正\n・UTxOsの選定・管理、ワークフローの進め、状態の管理のためのトランザクションビルダー。\n・プロトコルのライフサイクルの1つ以上で従事しているアドレス/UTxOのステータスを確認するためのビューアモジュール。\n\nGUIは、P2P-DeFiファミリーとやり取りするために特別に設計されたミニマルな「財布」です。 デスクトップのクライアント開発は、特に敵対的な環境で、ネットワークのスタンドポイントから、以前よりも柔軟/強烈なブラウザベースのアプリよりも高い優先順位です。\nまた、GUIを介してP2P-DeFiプロトコルスイート全体の使用に関するビデオ+書かれたチュートリアル/デモを作成します。 複数のプロトコルを使用して、各プロトコルを個別に、各プロトコル内の構成、および高度な構成/ワークフローの簡単な使用を監視します。 ベンチマークはマルチプロトコルのTx構成で提供されます。\n注意: GUIは本質的に元の提案で述べたCLIプログラムの上に包まれたフロントエンドです。 エンドユーザーではなく、デベロッパーのCLIプログラムも含まれます",
+      "criteria": "GUI は、P2P-DeFi プロトコル スイートとやり取りするための効果的なフロントエンドとして機能し、CLI を使用しない、または使用できない非技術的なユーザーのためのバリアツーエントリーを下げることができます。 ビデオとベンチマークは、ユーザーが同じワークフロー(およびスループット)を実証するようにフォローして再現できるようにする必要があります.",
+      "report": "このマイルストーンの提案で議論されたすべての重要な成果物は、本支店に成功して統合されています。 実装された機能の議論は、READMEセクションで見つけることができます。\n関連する変更履歴は、変更の完全なリストを参照してください。 Milestoneで指定された出力を反映した、実装済みの機能のリストが含まれています。 マイルストーン完了の証拠への具体的なリンクは次のとおりです。\n・ソースコード https://github.com/fallen-icarus/p2p-wallet/tree/main/app\n・Linux x86 AppImage: https://github.com/fallen-icarus/p2p-wallet/releases/tag/0.2.5\n・インストール手順: https://github.com/fallen-icarus/p2p-wallet?tab=readme-ov-file#installing\n・初回デモ動画:https://www.youtube.com/watch?v=lB1czpijpag\n・その他デモ映像を含むチャンネル:https://www.youtube.com/@fallen-icarus-ada"
+    },
+    {
+      "no": 5,
+      "promise": "プロジェクトのクローズアウトビデオとレポートは、プロジェクトの達成と将来の指示をまとめます。\nさらに、「P2P-DeFi Manifesto」を重ねた論文は、プロトコルスイートを1つの高レベルのアーキテクチャと哲学的な概要文書にまとめます。 プロジェクトの raison d'être として機能します。, 将来の方向/検討のためのガイドとして.",
+      "criteria": "本論文は、P2P-DeFiプロトコルファミリーを作成するために行った原則と理想を明らかにします。 ブロックチェーン業界における完全に信頼できないP2P DeFiプロトコルの重要性、実現可能性、およびダウンライトの必要性を強調し、Cardanoがそのようなエコシステムにとって理想的なプラットフォームである理由。 紙は、最初から最後まで一緒にプロジェクトを結びつける、クローズアウトビデオ/レポートの非常に拡大バージョンとして考えられることができます.",
+      "report": "このプロジェクトでは、すべてのマイルストーンの達成の証明を成功させ、提供しました。 このプロジェクトでは、関連するすべてのリポジトリで作業を継続し、Catalystは今日どこにいるかをブートストラップしてもらいたいという機会に感謝しています。\nクローズアウトレポート: https://github.com/zhekson1/catalyst-f11/blob/main/closeout report.md\nクローズアウトビデオ: https://youtu.be/hOFtwCz9Aak\nP2P-DeFi マニフェスト: https://github.com/fallen-icarus/meditations-blog/tree/main/The%20DeFi%20Hypothesis"
+    }
+  ]
+}

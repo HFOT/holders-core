@@ -1,0 +1,57 @@
+{
+  "title": "Preparing for the bull run: The foundation for fast, cheap and composable DeFi",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Off-chain orders must be able to reach executors, thus a configurable relay node that anyone could set up is required. Such a node will be implemented in Rust and supplied as part of the framework.\n\n1. Rust implementation of the Off-chain Relay.\n2. Unit test coverage for the implementation.\n3. Documentation of the codebase.",
+      "criteria": "1. Code is written and a pull request is submitted to an open GitHub repository that we will create for this project.\n2. Code is covered with unit tests and they are accessible via open GitHub repository.\n3. The code base is documented and accessible in the form of Markdown files via the open GitHub repository.",
+      "report": "We haven’t submitted a pull request yet because we want to keep this feature in the development branch. However, the whole logic is implemented and tested. We hope this will not be a reason for rejection at this milestone.\nThe implementation, tests (each file contains tests inside following Rust development best practices), and documentation for the relay are located in the following folder of our off-chain execution engine monorepo:\nhttps://github.com/splashprotocol/splash-offchain-multiplatform/tree/develop/intent-relay",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 90000,
+      "promise": "According to the specifications described in the white paper, implement the AA smart contract.\n\n1. Aiken implementation of the Autonomous Account Smart Contract.\n2. Unit test coverage for the smart contract.\n3. Documentation of the codebase.",
+      "criteria": "1. Code is written and a pull request is submitted to an open GitHub repository that we will create for this project.\n2. Code is covered with unit tests and they are accessible via open GitHub repository.\n3. The code base is documented and accessible in the form of Markdown files via the open GitHub repository.",
+      "report": "We named our Autonomous Account (AA) abstraction Aleph.\nThe repository contains the Aiken code for the AA smart contract implementation, which consists of a set of smart contracts. The main logic is located in this folder:\nhttps://github.com/splashprotocol/aleph/tree/main/validators\nAll unit tests are written and can be found in the following directory of the repository, identifiable by the .test suffix:\nhttps://github.com/splashprotocol/aleph/tree/main/validators\nThe documentation, provided in PDF format, is included in the repository and explains how the system works:\nhttps://github.com/splashprotocol/aleph/blob/main/spec/aleph.pdf\n\n--\nAdditions according to the previous comments.\n・The M1 was successfully closed\n\nThe confusion with witness tests was caused by test file naming. We renamed the test files so the structure looks consistent. Check in this folder. You can find the changes made here in this pull request. We also added more tests for witness covering it in depth.",
+      "kinds": [
+        "code"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 75000,
+      "promise": "According to the specifications described in the white paper, implement the code base for Green Orders.\n\n1. Aiken implementation of Green Orders.\n2. Support Green Orders in off-chain code (Rust).\n3. Documentation of the codebase.",
+      "criteria": "1. Code is written and a pull request is submitted to an open GitHub repository that we will create for this project.\n2. Code is covered with unit tests and they are accessible via open GitHub repository.\n3. The code base is documented and accessible in the form of Markdown files via the open GitHub repository.",
+      "report": "New Proof of Achievement for Milestone 3\n\nA. Output: Green Orders validator integration and deployed validator references\n\nAcceptance criteria: The Green Orders codebase includes the validator-facing data model and preprod deployment references required to execute Green Orders against Royalty V1 pools. The delivered code includes Aiken-compatible intention encoding, Aleph account validator integration, batch witness integration, and Royalty V1 pool validator references used by the off-chain agent and the demo scripts.\n\nEvidence:\n- Green Order / Aleph intention model and Aiken-compatible CBOR encoding: https://github.com/splashprotocol/green-order-offchain-agent/blob/green-order-agent-bootstrap/bloom-offchain-cardano/src/orders/green.rs\n- Deployed preprod validator references for `royaltyPoolLedgerFixed`, `alephAccount`, and `alephBatchWitness`: https://github.com/splashprotocol/green-order-offchain-agent/blob/green-order-agent-bootstrap/green-order-cardano-agent/resources/preprod.deployment.json\n- Deployment loader that wires the Royalty V1 pool and Aleph validators into the agent runtime: https://github.com/splashprotocol/green-order-offchain-agent/blob/green-order-agent-bootstrap/green-order-cardano-agent/src/deployment.rs\n\nB. Output: Rust off-chain Green Orders agent\n\nAcceptance criteria: The Rust off-chain agent accepts signed Green Order intents, binds observed Aleph accounts, indexes account state, plans full-fill and partial-fill execution, tracks Merkle Patricia Forest account-store transitions, and executes orders against Royalty V1 pools. The implementation is available through the public milestone branch.\n\nEvidence:\n- Agent entry point and execution wiring: https://github.com/splashprotocol/green-order-offchain-agent/blob/green-order-agent-bootstrap/green-order-cardano-agent/src/main.rs\n- HTTP intent ingestion, validation, and admission API: https://github.com/splashprotocol/green-order-offchain-agent/blob/green-order-agent-bootstrap/green-order-cardano-a",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 34,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 15000,
+      "promise": "The SDK is the interface for developers to make such operations as sign, submit, and monitor. It is needed for easier integration with the system.\n\n1. SDK codebase with necessary functionalities for integration.\n2. Unit test coverage for the SDK.\n3. SDK documentation published on GitHub and GitBook.",
+      "criteria": "1. Code is written and a pull request is submitted to an open GitHub repository that we will create for this project.\n2. Code is covered with unit tests and they are accessible via open GitHub repository.\n3. The code base is documented and accessible in the form of Markdown files via the open GitHub repository.",
+      "report": "New Proof of Achievement for Milestone 4\n\nMilestone title: SDK development\n\nMilestone Output 1 — SDK codebase with necessary functionalities for integration\n\nDescription: The delivered TypeScript SDK is the developer-facing integration layer for Green Orders. It provides helpers to build wire-compatible Green Order intent payloads, compute the Aleph-compatible intention digest, sign intents through an injected wallet/signer, submit signed intents to a Green Order agent, bind Aleph accounts, query account status, fetch account summaries, query readiness, and monitor the agent. The milestone branch also includes the Green Order agent HTTP routes required by the SDK, including submit, bind, account status, account summary, and monitoring endpoints.\n\nEvidence:\n- Public milestone branch: https://github.com/splashprotocol/green-order-offchain-agent/tree/sdk-api\n- TypeScript SDK package: https://github.com/splashprotocol/green-order-offchain-agent/tree/sdk-api/sdk/typescript\n- SDK package manifest and scripts: https://github.com/splashprotocol/green-order-offchain-agent/blob/sdk-api/sdk/typescript/package.json\n- SDK public exports: https://github.com/splashprotocol/green-order-offchain-agent/blob/sdk-api/sdk/typescript/src/index.ts\n- Agent HTTP client with submit, bind, status, account, readiness, and monitoring methods: https://github.com/splashprotocol/green-order-offchain-agent/blob/sdk-api/sdk/typescript/src/client.ts\n- Green Order intent building, Aleph intention CBOR/digest, and signing helpers: https://github.com/splashprotocol/green-order-offchain-agent/blob/sdk-api/sdk/typescript/src/intent.ts\n- HMAC request signing helpers for operator HTTP API protection: https://github.com/splashprotocol/green-order-offchain-agent/blob/sdk-api/sdk/typescript/src/hmac.ts\n- Account binding and account-status payload helpers: https://github.com/splashprotocol/green-order-offchain-agent/blob/sdk-api/sdk/typescript/src/account.ts\n- Agent HTTP routes for `POST /intents`, `POST /accou",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 40,
+      "cut": true
+    }
+  ]
+}

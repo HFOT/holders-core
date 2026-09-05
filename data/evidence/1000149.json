@@ -1,0 +1,68 @@
+{
+  "title": "Plug-and-play Smart Contract API: a game-changing platform to deploy open-source contracts instantly",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 30000,
+      "promise": "Develop and implement the following contracts\n・Single Asset Staking Contracts: These contracts enable users to collectively stake their digital assets and fairly distribute rewards among participants.\n・Linear Vesting Contracts: Our secure linear vesting contracts offer customization options, providing a reliable mechanism for releasing assets gradually over a specified timeframe.\n・Direct Offer: Our contract facilitates peer-to-peer trading of assets through the Direct Offer feature",
+      "criteria": "Contracts are implemented",
+      "report": "We have developed and implement the following contracts\n・Single Asset Staking Contracts: These contracts enable users to collectively stake their digital assets and fairly distribute rewards among participants.\n・Linear Vesting Contracts: Our secure linear vesting contracts offer customization options, providing a reliable mechanism for releasing assets gradually over a specified timeframe.\n・Direct Offer: Our contract facilitates peer-to-peer trading of assets through the Direct Offer feature (merged commit with the documentation as it was moved just after we submitted PoA :)\n\nAll contracts can be found on our github: \nhttps://github.com/Anastasia-Labs/plug-n-play-contracts",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 30000,
+      "promise": "Develop and implement Offchain SDKs for the following contracts:\n・Single Asset Staking Contracts\n・Linear Vesting Contracts\n・Direct Offer",
+      "criteria": "The following Offchain SDK are completed and available for use\n・Single Asset Staking Contracts\n・Linear Vesting Contracts\n・Direct Offer",
+      "report": "The following Offchain SDK are completed and available for use\n・Single Asset Staking Contracts\n・Linear Vesting Contracts\n・Direct Offer\n\nWe can find SDK for every contract at:\nhttps://github.com/Anastasia-Labs/plug-n-play-contracts?tab=readme-ov-file#sdks",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 35000,
+      "promise": "The following contracts along with offchain SDKs are integrated with Maestro\n・Single Asset Staking Contracts\n・Linear Vesting Contracts\n・Direct Offer",
+      "criteria": "Maestro API endpoints are available through Maestro Platform",
+      "report": "Happy and proud to submit POA for Milestone 3 - again sorry for the broken links (our repos stayed private - but now they are public for community to review)\nThe following contracts along with offchain SDKs are integrated with Maestro\n・Single Asset Staking Contracts\n・Linear Vesting Contracts\n・Direct Offer\n\nLink to Maestro documentation of Anastasia Labs Smart Contracts:\n・Single Asset Staking Contracts - https://docs.gomaestro.org/Cardano/ManagedContracts/SingleAssetStaking/Introduction\n・Linear Vesting Contracts - https://docs.gomaestro.org/Cardano/ManagedContracts/LinearVesting/Introduction\n・Direct Offer - https://docs.gomaestro.org/Cardano/ManagedContracts/DirectSwap/Introduction\n\nLink to Anastasia Labs Github repository with offchain SDKs for the Smart Contracts:\n・Single Asset Staking Contracts - https://github.com/Anastasia-Labs/single-asset-staking-offchain.git\n・Linear Vesting Contracts - https://github.com/Anastasia-Labs/linear-vesting-offchain.git\n・Direct Offer - https://github.com/Anastasia-Labs/direct-offer-offchain.git\n\nAll the Maestro API endpoints examples are provided on: \n・Single Asset Staking Contracts - https://docs.gomaestro.org/Cardano/ManagedContracts/SingleAssetStaking/sas-create-config\n・Linear Vesting Contracts - https://docs.gomaestro.org/Cardano/ManagedContracts/LinearVesting/vesting-collect-assets\n・Direct Offer - https://docs.gomaestro.org/Cardano/ManagedContracts/DirectSwap/dswap-cancel-offer",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 9
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 35000,
+      "promise": "Unit testing is made for Maestro API Endpoints of the following contracts:\n・Single Asset Staking Contracts\n・Linear Vesting Contracts\n・Direct Offer",
+      "criteria": "Unit Testing samples are passing validation",
+      "report": "We are happy to submit a new POA with Unit Testing samples which are passing validation.\nTests can be found in each smart contract test folder:\n・Single Asset Staking Contracts - https://github.com/Anastasia-Labs/single-asset-staking-offchain/tree/main/test\n・Linear Vesting Contracts - https://github.com/Anastasia-Labs/linear-vesting-offchain/tree/main/test\n・Direct Offer - https://github.com/Anastasia-Labs/direct-offer-offchain/tree/main/test\n\nTesting examples in video format showing how to replicate testing:\n・Single Asset Staking Contracts - https://github.com/Anastasia-Labs/single-asset-staking-offchain?tab=readme-ov-file#running-tests\n・Linear Vesting Contracts - https://github.com/Anastasia-Labs/linear-vesting-offchain?tab=readme-ov-file#running-tests\n・Direct Offer - https://github.com/Anastasia-Labs/direct-offer-offchain?tab=readme-ov-file#running-tests",
+      "kinds": [
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 60666,
+      "promise": "Documentation with detailed instructions on how to use API endpoints to compose and create SC with Maestro.",
+      "criteria": "Documentation is clearly written along with a high level approach of each implementation",
+      "report": "We are super happy to submit the last milestone for our Plug N Play Catalyst proposal :)\n・Project closeout video: https://www.loom.com/share/fac72c947fdc449aa7b53866d5a8eb10?sid=aded6ed2-c031-49ce-a119-c667d0496505\n・Project closeout report: https://drive.google.com/file/d/1u_l7c-cOyle7RVMMX8CljS8ZLhgmHOb7/view?usp=sharing\n・Documentation\n\nLink to Maestro documentation of Anastasia Labs Smart Contracts:\n・Single Asset Staking Contracts - https://docs.gomaestro.org/Cardano/ManagedContracts/SingleAssetStaking/Introduction\n・Linear Vesting Contracts - https://docs.gomaestro.org/Cardano/ManagedContracts/LinearVesting/Introduction\n・Direct Offer - https://docs.gomaestro.org/Cardano/ManagedContracts/DirectSwap/Introduction",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

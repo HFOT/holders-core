@@ -1,0 +1,76 @@
+{
+  "title": "AI Assistant for Governance: Empowering Team-Based dReps",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 18000,
+      "promise": "We will create a roadmap detailing the tasks and actions for our AI agent. Some tasks and actions may include, but are not limited to: \n・Summarizing key points of proposals.\n・Identifying potential impacts (economic, social, technical, and environmental if Photrek's experience is applicable).\n・Highlighting relevant sections of the Cardano constitution.\n・Analyzing the proposed organizational design of the project: Team size and composition, Decision-making process and Incentive structures.\n・Providing data-driven insights and recommendations to guide informed decision-making.\n\nWe may also receive further suggestions from the community regarding other actions the AI agent could do. Guided by the community feedback, we may adjust our roadmap to add additional tasks and actions for the AI Agent, focused on the actions most demanded by the community.",
+      "criteria": "Roadmap created detailing all the tasks and actions that the AI Agent can assume is aligned with the proposed list (above) of capabilities. Anything missing from the above list must have clear justification as to why the actions is not fit for an AI agent role, additional tasks and actions are also permitted with justification of the need.",
+      "report": "Here is the proof of achievement for Milestone 1.\nAdditional references:\nMeeting Notes (viewable to public)\nMiro Board",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 17000,
+      "promise": "We will use a framework designed to help developers build applications that combine large language models (LLMs) with other sources of computation or knowledge. ​​It allows efficient integration of different LLMs, which can help compare models and choose the best one for a specific use case. Additionally, the framework is designed to manage complex workflows and interactions between LLMs and external tools or databases, which is beneficial for implementing data collection, analysis, and feedback integration.\nLLM that will be considered include:\n\n• OpenAI’s GPT-4: Suitable for natural language understanding and generation tasks.\n• Anthropic’s Claude: Known for safe and aligned language model outputs.\n• Cohere’s Command R: Designed for retrieval-augmented generation tasks.\n• Local Models (like LLaMA, Falcon, etc.): These can be deployed locally to have more control over data privacy and customization.\n\nWe should make a comparison between at least 3 AI models based on the following benchmarking for acceptance:\n• Accuracy: How well the model summarizes, evaluates, and analyzes proposals without losing essential details.\n• Response Time: How fast the model processes tasks.\n• Alignment w",
+      "criteria": "・Different AI models are compared and one or more is selected.\n・Structured data relevant to dRep responsibilities is collected.",
+      "report": "Here is our Milestone 2 PoA Report",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 36000,
+      "promise": "Configure the agent’s capabilities to perform the first level of support services as designated in the roadmap. Initial demo is developed.",
+      "criteria": "AI agent can successfully complete at least one task in a controlled environment.\nTo evaluate the outputs, we consider the following measurable KPIs:\n• Accuracy: How accurately the AI performs tasks, such as summarizing or evaluating proposals (target above 85%).\n• Response Time: Time it takes the AI agent to complete a task (e.g., less than 7 seconds per task).\n• Error Rate: Percentage of outputs that require manual correction (should aim for <10%).\n\n The LLM’s response should:\n• Be concise and accurate.\n• Provide clear, actionable insights for decision-making (e.g., feasibility analysis, bud",
+      "report": "Milestone 3 Report\nAdditional References:\nDemo Video\nGitHub",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 36000,
+      "promise": "Complete the configuration of the AI model to fulfill the functions outlined in the specification document. Here, we should gather community feedback through meetings and/or surveys to evaluate the AI agent's performance. This may help find bugs and potential weak points we should address and ensure the AI agent development continues to align with the community's needs.",
+      "criteria": "AI agents can successfully complete at least 80% of the tasks in a controlled environment as laid out in the roadmap, following the community feedback.In this milestone, we consider the following measurable KPIs:\n•Task Completion Rate: Percentage of tasks the AI agent completes successfully (80%).\n•Community Satisfaction: Percentage of community members satisfied with the AI's performance (e.g., survey results showing over 60% satisfaction).\n• Accuracy: How accurately the AI performs tasks, such as summarizing or evaluating proposals (target above 85%).\n• Response Time: Time it takes the AI ag",
+      "report": "Milestone 4 Report\nReferences\nDemo Video \nScript from Conversation with AI Agent: Script\nGitHub\nX Space",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 43000,
+      "promise": "・Final close-out report reporting on AI Agent's integration into working circles (real-world environment) and feedback is given on the process.\n・Final closeout video demonstrating the integration of AI Agent with a working circle.",
+      "criteria": "・Final closeout report is publicly available documenting the ability of an agent to integrate with a working circle.\n・Final closeout video is publicly available demonstrating a circle meeting with an agent.",
+      "report": "Close out Report: https://docs.google.com/document/d/1hwzPFZXh7J4EgRKxKHKT9xKWOGJB9wNHmCcKPq_7A5A/edit?usp=sharing \nVideo: https://youtu.be/FBQe4Sl-Xg0\nAI Agent: https://ai.photrek.io/",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

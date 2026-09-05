@@ -1,0 +1,68 @@
+{
+  "title": "Do you want a Go Cardano node? Because this is how you get a Go Cardano node!",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 58360,
+      "promise": "Blockchain storage: support for storing and retrieving blocks\nBlockchain storage: support for storing and retrieving UTxO's\nBlockchain storage: support for storing and retrieving pool & stake registration/de-registration\nBlockchain storage: support for storing and retrieving parameter changes",
+      "criteria": "All code-related outputs must be completed and implemented according to any specifications in the corresponding GitHub issues (tickets).\nAll code changes must be reviewed and approved by designated team members before being merged into the main branch.\nEach GitHub issue associated with the milestone must be marked as \"closed\" or \"done\" upon completion of the related task.",
+      "report": "Go Cardano node, Milestone 1: complete\nThe blockchain storage has been implemented and support for storing and retrieving blocks, UTxOs, pool and stake registrations, and parameter changes have been established as specified in their corresponding tickets. This is evidenced by the code output, automated testing where applicable, and code reviews with approvals from a designated team member. All of this can be traced by the GitHub Milestone 1 issues (aka tickets) in our project board, here: https://github.com/orgs/blinklabs-io/projects/16/views/1, where Milestone 1 issues can be found and their specifications and code, linked pull requests within each issue, can be examined. All Milestone 1 tickets have been completed and closed. Corresponding usage documentation has been added and can be found here: https://github.com/blinklabs-io/dingo",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 58360,
+      "promise": "Implement Ouroboros NtN ChainSync mini-protocol\nImplement Ouroboros NtN: TxSubmission mini-protocol \nImplement Ouroboros NtN: Peersharing mini-protocol\nImplement Ouroboros NtN: BlockFetch mini-protocol\nImplement Connection Manager integration",
+      "criteria": "All code-related outputs must be completed and implemented according to any specifications in the corresponding GitHub issues (tickets).\nAll code changes must be reviewed and approved by designated team members before being merged into the main branch.\nEach GitHub issue associated with the milestone must be marked as \"closed\" or \"done\" upon completion of the related task.",
+      "report": "The Ouroboros node-to-node support has been implemented and support for the chainsync, TxSubmission, peersharing and blockfetch mini-protocols have been established as well as the connection manager integration as specified in their corresponding tickets. This is evidenced by the code output, automated testing where applicable, and code reviews with approvals from a designated team member. All of this can be traced by the GitHub Milestone 2 issues (aka tickets) in our project board, here: https://github.com/orgs/blinklabs-io/projects/16/views/1, where Milestone 2 issues can be found and their specifications and code, linked pull requests within each issue, can be examined. All Milestone 2 tickets have been completed and closed. Corresponding usage documentation has been added and can be found here: https://github.com/blinklabs-io/dingo",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 58360,
+      "promise": "Implement Ouroboros NtC LocalTxSubmission mini-protocol\nImplement Ouroboros NtC LocalTxMonitor mini-protocol\nImplement Ouroboros NtC LocalStateQuery mini-protocol\nImplement Ouroboros NtC ChainSync mini-protocol\nImplement UTxO RPC API",
+      "criteria": "All code-related outputs must be completed and implemented according to any specifications in the corresponding GitHub issues or tickets.\nAll code changes must be reviewed and approved by designated team members before being merged into the main branch.\nEach GitHub issue associated with the milestone must be marked as \"closed\" or \"done\" upon completion of the related task.",
+      "report": "Milestone 3: Go Cardano node complete\nThe Ouroboros node-to-client support has been implemented and support for the LocalTxSubmission, LocalTxMonitor, LocalStateQuery and chainsync mini-protocols have been established, as well as the UTxO RPC API implementation, as specified in their corresponding tickets. Please note for example, the LocalStateQuery issue specifies the limitations of what will be provided, further evidenced by the TODO in code. These limitations are not necessary for transaction building, which is the scope of this funded proposal. The next milestone builds upon this for building and submitting transactions. Issues will be created in the repo for additional functionality to be added at a later date.\nThis is evidenced by the code output, automated testing where applicable, and code reviews with approvals from a designated team member. All of this can be traced by the GitHub Milestone 3 issues (aka tickets) in our project board, here: https://github.com/orgs/blinklabs-io/projects/16/views/1, where Milestone 3 issues can be found and their specifications and code, linked pull requests within each issue, can be examined. All Milestone 3 tickets have been completed and closed. Corresponding usage documentation has been added and can be found here: https://github.com/blinklabs-io/dingo",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 58360,
+      "promise": "Implement Tx submission gateway LocalTxSubmission server and API\nImplement Tx submission gateway Validation against stored data\nImplement Tx submission gateway NtN communication TxSubmission\nDemo constructing and sending Transaction using our node",
+      "criteria": "All code-related outputs must be completed and implemented according to any specifications in the corresponding GitHub issues or tickets.\nAll code changes must be reviewed and approved by designated team members before being merged into the main branch.\nEach GitHub issue associated with the milestone must be marked as \"closed\" or \"done\" upon completion of the related task.",
+      "report": "Milestone 4: Go Cardano node complete\nThe Tx submission gateways have been implemented for LocalTxSubmission server and API, Validation against stored data as specified in their corresponding tickets. This is evidenced by the code output, automated testing where applicable, and code reviews with approvals from a designated team member. A demo is now available, constructing and sending a transaction using our node, and can be viewed at: https://youtu.be/uVsQKxVaH-k\nAll of this can be traced by the GitHub Milestone 4 issues (aka tickets) in our project board, here: https://github.com/orgs/blinklabs-io/projects/16/views/1, where Milestone 4 issues can be found and their specifications and code, linked pull requests within each issue, can be examined. All Milestone 4 tickets have been completed and closed. Corresponding usage documentation has been added and can be found here: https://github.com/blinklabs-io/dingo",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 58360,
+      "promise": "Project Closeout Report \nProject Closeout Video",
+      "criteria": "Comprehensive Project Closeout Report \nComprehensive Project Closeout Video",
+      "report": "Our closeout report can be found here: https://docs.google.com/document/d/1OPGfoJxsk8zHrZiTZnNwJq8PfzKOMZ2-MJ1P9BBHGbM/edit?usp=sharing\nOur closeout video can be found here: https://youtu.be/vw6lhmToc0E\n﻿Source Code: https://github.com/blinklabs-io/dingo\nDemo: https://youtu.be/uVsQKxVaH-k",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

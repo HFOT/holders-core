@@ -1,0 +1,70 @@
+{
+  "title": "Staking Basket Ecosystem - Explorer for multi-delegation portfolios",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "The first milestone for the Staking Basket Ecosystem will output the design for the Basket list view. This list view will show the stats of each of multiple Staking Baskets. These stats will allow users to determine what Basket they would like to deposit to.\n\nThis page will be an overview of all of the Baskets that are currently live.",
+      "criteria": "This milestone should be accepted given that we provide a design for an easy to use front-end interface that allows users on Cardano to find and select multiple Baskets. This Basket explorer needs to display multiple Baskets with different stats/opportunities for users.",
+      "report": "Hello there. I am resubmitting this proof of achievement as I feel something went unnoticed by the Catalyst reviewer as we received two approvals from milestone reviewers and delivered what was being asked of us.\nThe final reviewer mentioned that no evidence was submitted, however two links to the images were submitted in our report. Here they are again:\nTile view\nList view\nThe statistics included for this portion of the basket list view are the number of pools, the tokens attached as rewards to the basket, and the number of repeats (which shows the number of pools you have already allocated some amount of ada to). The reason that this page has these stats on it, and not much larger detailed breakdowns of the pools performance metrics and pool breakdown is because those are featured in the Baskets Profile pages, and not a part of this milestone. This is an ecosystem list view, providing quick easy access to the world of Staking Baskets allowing them to ascertain which baskets would be explored further and which baskets they would like to explore further. Two see what a basket page would look like, please see the link below to find one already build for the Diffusion Basket:\nhttps://alpha.atrium.io/staking/diffusion\nThis satisfies the requirement for this milestone, it shows the visual design for this proposal and sees us ready to begin on the next stage. If this is not suitable please advise what more you would like to see from us, however at this stage, this is the visual design which is ready to be passed on to the development team for production.\nMany thanks for your time",
+      "kinds": [
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 90000,
+      "promise": "The second milestone for the Staking Basket Ecosystem will output the design for creating your own Basket. This will allow users to create their Staking Basket with their own list of stake pools. We’ll output a Basket management design for basket owners to as well.\nThis design will allow you to create your own Basket, you'll be able to upload your token image, chose the list of stakepools, set Basket parameters.\nWe'll also create another design for the Basket management page. This Basket management page will allow users to edit their Basket's parameters like stakepool composition, fees and more.",
+      "criteria": "This milestone should be accepted given that we provide an accessible design that allows people to easily create their own Staking Baskets. This milestone output must also include a page that allows people to easily manage their Basket's fees, stakepool composition, and rewards.",
+      "report": "The link below contains a dropbox folder including images of the UI design for both the 'Create a Basket' and 'Manage your Basket' interface outlined in this milestone.\nhttps://www.dropbox.com/scl/fo/xfvxyya6e1ohrk9p1ff4o/AAl4CjQbhjEmkQRknf_mkTs?rlkey=0r9flucg8pjrwcltl8q20tsyp&dl=0\nThe UI shows the forms which will feature 4 stages:\n・Creation/Details\n・Adding Pools\n・Adding Administrators\n・Finalising\n\nThe Creation form and the Management form are similar, with some small changes which reflect the uneditable fields once a Basket has been created.\nPlease ask if anything is unclear, and I can provide increased clarity.\nThank you for your time",
+      "kinds": [
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 75000,
+      "promise": "The third milestone will output a working Staking Basket Ecosystem page on our internal site connected to Cardano’s preview network.\n\nThis milestone will also output a second working Staking Basket on Cardano's preview network on top of the Diffusion Staking Basket. Using our testnet application, users will be able to come to the Basket overview page and select between two different Baskets. These Baskets will have live stats on them that are being pulled from Cardano's preview network live.",
+      "criteria": "This milestone should be accepted once we’ve connected our Staking Basket ecosystem design to Cardano’s preview network with two different Staking Baskets listed. This milestone should also only be accepted given that we provide a video that shows the Basket ecosystem in app, with commentary that explains the stats and what's happening on the blockchain.",
+      "report": "We've built a working Staking Basket Ecosystem page on the internal version of our site. We've also created a second Staking Basket live on Cardano's preview network to integrate directly in our dashboard. We've taken some screenshots, and a video that shows us depositing, and analyzing both Staking Baskets.\n\nThe video we created, and all photos that we've taken are in this folder:\nhttps://drive.google.com/drive/folders/1Og8bwHyzvbmbQl1mzY-9iLZP_-1HRzor?usp=sharing\n\nTransaction for second Basket creation on-chain:\nhttps://preview.cardanoscan.io/transaction/ccd6b7e8640dd17058f53496fea73ed130cccd87de2703f911a4fa3fbe6b4b04\nTransaction for making 10 SPO tokens(used to delegate to multiple pools):\nhttps://preview.cardanoscan.io/transaction/cdedf74f53f6ae9e41dda74b898330398996b40b7d0e0d3c1f21516610b24fa0\nTransaction for delegating to ten SPOs at the same time:\nhttps://preview.cardanoscan.io/transaction/73d38afa7a1c6c70a9ea8b6c269cee2d1c7553e7420362fbee357959e2103df6\nThis is the transaction ID of the deposit into Staking Baskets that you see in the video linked above. You can see this ADA is deposited into a script addressed, and then eventually split a crossed multiple pools.\nhttps://preview.cardanoscan.io/transaction/4ba38c8d15643a29f570d9a901a50fecaa21ec4ec871d6fdeaf743085b14cd44",
+      "kinds": [
+        "chain",
+        "doc"
+      ],
+      "links": 5
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 15000,
+      "promise": "The fourth milestone will output a working Staking Basket creation page, and a Basket management page on Cardano's preview network.\n\nThis Staking Basket creation page will allow people to create a Staking Basket that delegates to multiple stakepools on Cardano's preview network. They'll be able to upload an image for the Basket token, they'll also be able to upload a background image for their Basket page on the site. Basket creators can also select their own fees, and stakepool operators that the Basket delegates to on Cardano's preview network.",
+      "criteria": "This milestone should be accepted after we’ve connected our Staking Basket creation page to the Cardano’s preview network, and it allows you to create a Staking Basket with your own composition of stake pools.\n\nThis Basket creation page must allow users to select a Basket token image, a background image, their Basket tokens name, fees, and stakepool composition.",
+      "report": "Dear reviewers,\nHere are the materials we promised:\n・link to video that depicts the staking basket creation record by one of our devs: https://drive.google.com/file/d/1sYTA3SIEdDFk9GEjwjqVFOjMP4Zrr50K/view?usp=drive_link\n・Links to on chain transactions seen on the video:\n・initialize basket tx: https://preview.cexplorer.io/tx/ba073c5441a2a7b7a1780509a455041e634b1d5b047e4bafeae71fe12d69e380\n・create pools tx: https://preview.cexplorer.io/tx/a00fd50b5f12de2147bfde8277a841d85280f0d1810e0c9b4e2e9ca2c6676d34\n・register pools tx: https://preview.cexplorer.io/tx/5a6c7e461bb2df93cc43750dd7b9a5b002d24ccfd9d5c7780767cef1e4115644\n\nAs you can see the Staking Basket creation allows users to create a Staking Basket that delegates to multiple stakepools on Cardano's preview network. \nUsers are also able to upload an image for the Basket token, upload a background image, select fees or stakepool operators.\nPlease make sure to set the video to 720p so it would be easy to see whats in it. \nPlease be aware of the fact that 30-60s gaps between transactions are the wait time for the TXs to make it on-chain",
+      "kinds": [
+        "chain",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 45000,
+      "promise": "The final milestone for this proposal will have both the Staking Basket list view, and create your own Basket on testnet for anyone to try with their test ADA.\n\nThis final milestone will also output a close-out report, and video. This close out report will detail all of the work we've done so far, the challenges we had, and what we've learned. It will also detail how many users have tested the app on tesnet, and some of the feedback those users provided.\n\nThe close-out video will detail some of the details we mentioned in the close-out report, while also taking a look at the Staking Basket ecosystem live on Cardano's preview network.",
+      "criteria": "This milestone should be accepted once you can go to our live testnet on Cardano’s preview network and see the list of Staking Baskets, and the create your own Basket page.\n\nThis milestone also should only be accepted given that we provide a close-out report, and video.",
+      "report": "Close-up report: https://drive.google.com/file/d/1ZWoVXR5FL1sbDNKm5plzZeTzDt2-Wu9U/view?usp=sharing \nLink to the instance of the platform for Catalyst: https://atrium-front-catalyst.vercel.app/ Password: catalyst\nPlease note that the Atrium.io is currently down since the Alpha has ended. Please use the link and password provided. \nPlease use preview-network not pre-prod as pre-prod blockchain is no longer supported. More details in the video. https://youtu.be/-hNYcwO4GX4",
+      "kinds": [
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

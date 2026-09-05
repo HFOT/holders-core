@@ -1,0 +1,80 @@
+{
+  "title": "Cardano Swift - SDK for Apple Development (Cardano Serialization Library x Rust)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 50000,
+      "promise": "・Hard Forked Code Repository (Cardno Swift) published on GITHub\n・Hard Fork Updates to the SDK to include Proof of Concept (POC):\n・Integration of Cardano Multiplatform Serialisation Library\n・Integration of Plutus Transaction parsing \n・Integration of Plutus Transaction signing\n・Project Implementation Plan covering resourcing and key dates, integration tests etc\n・Visual Diagrams depicting SDK integration architecture, to support further detailed design, and marketing efforts",
+      "criteria": "Hard Fork Completed (GitHub Merge)\nHard Fork Updates completed and tested \n・ 100% Unit test pass\n・Integration tests with Tokeo Pay passed demonstrating real application value\n\nProject Implementation Plan Published\n・Implementation plan correctly reflects Catalyst proposal signed off milestones\n\nArchitecture Infographics produced",
+      "report": "Hello. \nChange of Scope (Increase)\nAfter technical commencement of the project, it was discovered that the changes due to the multiple Hardforks to the CSL library were so invasive that the original Swift.Cardano library could not be upgraded. Over 90% of the code (due to the complex architecture of this low-level library was throw away. \nAs such, the library has been rebuilt from ground up. As per below, we have renamed, published and branded a new library called \"CardanoKit. This library still utilises Emurgo's Cardano Multiplatform serialization library (RUST), however the scope of technical work increased dramatically.\nThis has been the major reason for the delay in progressing through this project. However, we are now well into the final phases, and will update the subsequent milestones accordingly. \nHard Forked Repository (Now a new not a hard forked repository)\nA new CardanoKit library has been created here.\nIntegration of CSL\nThe CardanoKit and its Tokeo developed dependency, CSL Kit, expose the latest stable version of Emurgo's Cardano Serialisation Library v14.1.2. This includes an updated FFI, and C/Swift Cardano translation layer, and application layer abstraction via CardanoKit library.\nImplementation Plan\nSee build plan here​\nPublished Test Summary Report. (Tests now cover a subset of tests of the new library, rather than extensive tests across the original)\nSee test summary report and example app here. https://github.com/TokeoPay/CardanoKit in the repo there is an example directory showing the example app and test files. \nA test plan has also been summarised on our Git Docs here: https://gitbook.tokeo.io/tokeo/technical-information/cardanokit/catalyst-fund-12\n100% Test pass. \nKey tests:\n・Parse bech32 cardano address string\n・Convert address to Hex\n・Convert address back to bech32\n\nMarketing\nPromotional marketing on this project via X Post has been done here https://x.com/Tokeo_io/status/1936082787481567343​",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 7
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 40000,
+      "promise": "・ Technical Design Paper which includes\n\n - Swift / Application technical specification\n - Wallet creation\n - Data signing\n - Basic TX Build\n - Script TX Build\n - Multi-asset transaction building\n - UTXO Optimisation\n - Minting\n - Staking\n - DRep\n - Identity\n - Cardano Multiplatform Serialisation Library\n - Dapp Integration (CIP 30)\n・Transaction parsing\n・Data signing (Dapp Connectivity)\n\n・Feedback Summary Report\n・Detailing feedback received (if any)\n・Details of action on feedback.\n\nNotes\n・The design will also confirm which items are in scope as part of each proposal milestone specifically. Some items may be brought forward, if possible, following upon detailed technical review.",
+      "criteria": "Design is successfully reviewed by project team\n・Technical design determined to meet project requirements and goals\n・Design determined to be technically sound\n\nDesign is published, and made available for feedback by the public.\nAll feedback is incorporated, and Design signed off by Tokeo project sponsors / leads",
+      "report": "Technical Design Paper\nDesign of CardanoKit can be found here: https://github.com/TokeoPay/CardanoKit/blob/main/TechnicalDesign.md X Post: https://x.com/Tokeo_io/status/1940827261088993577 Blog: https://tokeo.io/blog/cardanokit-by-tokeo-technical-design-and-feedback/\n\n** resubmission note: Design has been updated with missing titles (not all were formal), but ultimately a version issue with what was published. So please see updated design. \nVideo / Progress Report\nX Post: https://x.com/Tokeo_io/status/1940827258400505898 Blog: https://tokeo.io/blog/tokeo-completes-milestone-2-cardanokit-technical-design-video-community-feedback/\nFeedback Report\nFeedback and progress report published: https://gitbook.tokeo.io/tokeo/technical-information/cardanokit/catalyst-fund-12\nNo feedback received however the document has been internally reviewed, and technical proof of concept has been validated (M1)\nProject Sponsor Sign Off\nThis document is a formal commitment by the key Tokeo team, from commercial & technical, acknowledging the scope & resource requirment of this project, and a commitment to delivery. It was always anticipated that there may be unkowns with this type of work, and as such, a document like this is a formal line in the sand, and commitment to delivery. \nEvidence of this is found: https://gitbook.tokeo.io/tokeo/technical-information/cardanokit/catalyst-fund-12 under the title \"Project Design - Sponsor Sign Off\"\n\nAdditional Note: \nAppreciate your feedback from both milestone reviews. We're genuinely excited to complete this library for both Tokeo and broader public! With respect to M1 test coverage, the initial proposal was to upgrade the Swift.Cardano Kit and execute the 50-odd tests, to prove a successful upgrade of the CSL, and that any breakages were fixed. Ie, a baseline. \nHowever, due to the fact that an ground-up-rebuild of this library is necessary, the tests, albeit a few now prove that the architecture and codebase are working as intended, and ready to be",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "13",
+      "cost": 30000,
+      "promise": "Updates to the SDK TO include:\n・Re-implement Cardano Swift by modernising / upgrading to Swift 6\n・Expose refactored and Cardano Multiplatform Library via new implementation of Rust / Swift Interface\n・Refactoring and redesign of initial features.\n・Implement baseline MVP feature API's:\n・- Wallet creation\n・- Data signing\n・- Basic TX Build\n・- Staking\n\nTest Summary Report\n・Unit Tests\n・Integration Tests (Tokeo Pay)\n\nTest Summary Video\n・Explaining results of the test to both technical and non technical audience\n・Communicate the value of the SDK progress to community and potential consumers of the SDK\n\nNotes:\nThe Cardano Multiplatform Serialisation Library is now a preferred alternative to the Cardano CSL Library, and therefore has changed from the initial proposal. \n\nThis Milestone includes a subset of the full features to be built. Feature items not listed in this Milestone, but listed in the design will be implemented as part of Milestone 4.\n\nAdditional Notes:\nREL: Change Request (10-July 2025 APPROVED)\nThis resubmission of Milestones is for the above change request whereby the dates of these deliverables were moved. \nThis Milestone (3) has already been completed and approved.\nDue to sy",
+      "criteria": "Code merged via GitHub\nSuccessful Unit Tests (100%)\nSuccessful Integration Tests (100%)\nTest Summary Video Created & Published.",
+      "report": "As an FYI, the following POA was previously approved: \n\nEvidence of Completion:\n・Published test summary report: https://tokeo.gitbook.io/tokeo/tokeo/technical-information/cardanokit/catalyst-fund-12#milestone-3-complete\n・Successful Unit Tests (100%) : See report (Yes)\n・Video / Marketing: https://tokeo.io/blog/cardanokit-milestone-3-production-ready-swift-sdk-for-cardano/, https://x.com/Tokeo_io/status/1950600837891498079",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "14",
+      "cost": 40000,
+      "promise": "Updates to the SDK TO include:\n・ Dapp Integration\n・Transaction parsing & validation\n・Data signing (Dapp Connectivity)\n・ Script TX Build\n・ Multi-asset transaction building\n・ UTXO Optimisation\n・ Minting\n・ DRep\n・ Identity\n\nTest Summary Report\n・Unit Tests\n・Integration Tests (Tokeo Pay)\n\nTest Summary Video / Socialed\n・Creation of a short and longer form walkthrough video of the test summary report\n・Ensuring that both technical and non technical audience can appreciate the value of the SDK\n\nAdditional Notes:\nREL: Change Request (10-July 2025 APPROVED)\nThis resubmission of Milestones is for the above change request whereby the dates of these deliverables were moved. \nThis Milestone (4) has already been completed and we are ready to submit Proof of Achievement,\nDue to system limitations I was not able to modify to an appropriate date, so for the record. This resubmission should have the date: Sep-2025.",
+      "criteria": "Code merged via GitHub\nSuccessful Unit Tests (100%)\nSuccessful Integration Tests (100%)\nTest summary video published",
+      "report": "Initial Submission\nCode merged via GitHub: https://github.com/TokeoPay/CardanoKit\nSuccessful Unit Tests (100%): Test Summary Report (https://tokeo.gitbook.io/tokeo/tokeo/technical-information/cardanokit/catalyst-fund-12#milestone-4-complete) + Github tests\nSuccessful Integration Tests (100%) : Test Summary Report (https://tokeo.gitbook.io/tokeo/tokeo/technical-information/cardanokit/catalyst-fund-12#milestone-4-complete) + Github tests with the Demo App\nTest summary video published : https://tokeo.io/blog/cardanokit-milestone-4-beta-release-with-application-ready-features/ and https://x.com/Tokeo_io/status/1962709249798349186\nResponse to Rejection Feedback\nThere was a specific test case that covered delegation to \"Always Obstain\" in order to claim rewards. \nThis test is called: \"test_signing_a_drep_and_stake_withdrawal_txn\". (https://github.com/TokeoPay/CardanoKit/blob/main/Tests/CardanoKitTests/CardanoWalletTesting.swift)\n This in effect shows the transaction building capabilities and parsing capabilities with respect to DPREP primitives have been built, and tested. \nI appreciate that there could be more explicit test cases delivered around the DREP functionality however it was intended that the final suite of tests, along with the demo-application being made public (also demostrating all DREP / tx functionality) will be delivered with Milestone 5. These are currently being worked on. Further, in light of being a full rebuild i would kindly ask that this position is considered acceptable. \nIrrespective, the full suite of tests is being worked on and a code commit over the coming day or two will have these included. Appreciate your time in the review.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "15",
+      "cost": 40000,
+      "promise": "GITHub Merge: Finalisation of SDK of all features \nTest Summary Report\n Unit Tests\n Integration Test\nDocumentation\n Sample App\n Public Documentation\nMarketing\n Close Out Report (Physical)\n Close Out Report (Video)\nSocial Advertising \n・Syndication of close out reports\n・Syndication of videos\n\nDeveloper Outreach\nCode based used in Tokeo\nAdditional Notes:\nREL: Change Request (10-July 2025 APPROVED)\nThis resubmission of Milestones is for the above change request whereby the dates of these deliverables were moved. \nThis Milestone (5) has already been completed and we are ready to submit Proof of Achievement,\nDue to system limitations I was not able to modify to an appropriate date, so for the record. This resubmission should have the date: Oct-2025.",
+      "criteria": "Code merged via GitHub\nSuccessful Unit Tests (100%)\nSuccessful Integration Tests (100%)\nDocumentation Published\n・Git Hub\n・tokeopay.io\n\nSample App Published\n・Git Hub\n\nSDK used by Tokeo Pay and published.\nClose Out Reports (Video) conforms to the requirements Catalyst knowledge base.\nMarketing Executed\n・A series of 2-4 tweets promoting close out reports on Twitter\n・Syndication of video, interviews (if possible) with Cardano content creators",
+      "report": "Published Test Summary Report\nhttps://tokeo.io/blog/cardanokit-milestone-5-final-completion-report/\nhttps://tokeo.gitbook.io/tokeo/tokeo/technical-information/cardanokit/catalyst-fund-12\nClose Out Report\nhttps://tokeo.gitbook.io/tokeo/tokeo/technical-information/cardanokit/close-out-report\nClose Out Video\nhttps://www.youtube.com/watch?v=BN5Y8uVuKxQ\nhttps://tokeo.io/blog/cardanokit-milestone-5-final-completion-report/\nGitHub / CardanoKit\nhttps://github.com/TokeoPay/CardanoKit\nDemo App Published (Git)\nhttps://github.com/TokeoPay/CardanoKit-Example\nMarketing Executed\nhttps://x.com/Tokeo_io/status/1973786606260957575\nSDK used in Tokeopay App \nAnnounced in video, (Incorporated into Tokeo, and tested as per test summary report. \nSubmission Notes:\nBroken links in the close out report have been rectified\nI feel an edit on my initial submission may have not gone through, but above, I have explicitly detailed links to the close out report and the video. \nClose Out Video Uploaded to You Tube! https://www.youtube.com/watch?v=BN5Y8uVuKxQ\nThanks again for your review.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 11
+    }
+  ]
+}

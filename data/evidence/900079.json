@@ -1,0 +1,70 @@
+{
+  "title": "dcSpark (the company iteslf)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 100000,
+      "promise": "Flint iOS App NFT section where it displays compatible Cardano NFTs",
+      "criteria": "iOS App adds NFT section where it displays compatible Cardano NFTs",
+      "report": "We have now successfully reintroduced the NFT Gallery feature to Flint wallet for iOS devices! Updating to at least version 1.23.0 will give users this functionality and allow to view and browse all their Cardano-compatible NFTs in Flint Wallet by simply tapping the image icon at the bottom of Flint.\nNFTs with the same policy ID are also now grouped together for better organization and a clean look.\nClicking on an NFT opens that NFT on its own page, enlarging the image and includes a link to the Cardano explorer. Now Flint provides the support for gifs and video NFTs. \n\nWe have also upgraded our code regarding IPFS to provide a more stable and faster NFT viewing experience inside Flint Wallet.\nFlint Wallet on iOS now includes the same NFT viewing capabilities as our Android version.\nLink to Blogpost: https://medium.com/dcspark/flints-recent-updates-ada-handle-support-nfts-on-ios-and-more-f0a68e3aaf96\nScreenshots:\nhttps://drive.google.com/file/d/1g54bEu-JjiGexf8TtXLH_cg_Qj7A6hQ5/view?usp=sharing\nhttps://drive.google.com/file/d/1vjXwrjTa64zUwmEy-ryaLxfeg3WtKKsh/view?usp=sharing\nhttps://drive.google.com/file/d/1-0_Q89xiTz5A9dt01SoaDwLFq2NBM3hC/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 100000,
+      "promise": "New education section on Flint where blockchain concepts are explained",
+      "criteria": "Education section on Flint is added for mobile and web",
+      "report": "Report: Flint Wallet Release 1.27.0\n\nThe latest release of Flint Wallet, version 1.27.0, includes a brand new section called Flint Education. This section is designed to help our users learn more about Flint, Milkomeda (Cardano Sidechain), and the general concepts of blockchain technology.\n\nThe Flint Education section includes a variety of resources, such as video tutorials, an FAQ section, and tips for safe usage of blockchain. These resources are intended to help users understand the basics of blockchain and how Flint and Milkomeda fit into the larger ecosystem.\n\nIn addition to the Flint Education section, version 1.27.0 also includes several bug fixes and performance improvements.\n\nThe Flint Education feature was developed as part of a grant received by the company, which enabled us to invest in creating educational materials and resources for our users. Our goal is to empower users to understand and make the most of the Flint Wallet and Milkomeda.\n\nWe believe that the Flint Education section will be a valuable resource for our users, and we are excited to continue to develop and improve it in future releases.\n\nPlease let us know if you have any feedback or suggestions for the Flint Education section or any other aspect of the Flint Wallet.\n\nSincerely,\nThe Flint Wallet Team\n\nLink to screenshots as a PoE: https://drive.google.com/drive/folders/1VhV5SB7eqxShBbiReh_4i16iX5u31jS2?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 100000,
+      "promise": "Biometrics and Hardware Wallet on Flint Mobile iOS and Android",
+      "criteria": "You can use phone biometrics and Ledger with Bluetooth with Flint Wallet",
+      "report": "In this PoM3 report, we are pleased to provide an update on the successful delivery of the two key functionalities for Flint. Although these functionalities were delivered in previous months, we have chosen to report on them now in order to maintain a logical and coherent order of reporting, as outlined in the PoM Reporting Plan. Our team is currently working diligently to achieve the next goal, which is to integrate EVM Smart-Contract support for Flint. This will be in addition to the already integrated Milkomede and send and receive functionalities.\n\nPoM3 Deliverables:\nBiometrics For Flint Mobile\nBiometric unlocking for Flint mobile was released in late November. Since then you’ve been able to use your face or your fingerprint to effortlessly unlock Flint mobile on Android and iOS devices.\n\nYou can also use your biometrics to sign a transaction instead of having to enter your spending password! This makes the mobile Flint experience one of the most effortless and secure in the Cardano ecosystem, allowing you to quickly and easily interact with the Cardano blockchain.\nhttps://medium.com/dcspark/what-a-year-a-look-back-at-flint-in-2022-dec8a687f64f\n\nHardware Wallet Support\nBluetooth Hardware Wallet Support: Both the mobile and desktop versions of Flint wallet now support Bluetooth connections for the Ledger Nano X hardware wallet. Increasing the speed and ease with which users can use their tokens secured in cold storage.\nhttps://medium.com/dcspark/flint-wallet-on-mobile-now-supports-bluetooth-ledger-f07a04f6edce\n\nScreenshots attached: https://docs.google.com/document/d/1vO4gPap_9oKQukhS9xinuFAi6d3iNV1q284MsmguoK4/edit#",
+      "kinds": [
+        "doc"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 99000,
+      "promise": "Flint (Web, iOS and Android) allows to interact with EVM smart-contracts on Milkomeda",
+      "criteria": "Flint (Web, iOS and Android) allows users to interact with the top EVM smart-contracts on Milkomeda.",
+      "report": "We are proud to announce that we completed dcSpark (the company itself) proposal with the Flint Release 2.7.0. \n\nFlint browser extension and mobile in-app browser allow seamless interaction with web applications. To interact with Flint, EVM DApps developers can now access the provider object that is injected into the browser by Flint. This provider object is globally available at window.evmproviders.flint and provides access to the latest Flint functionality. \n\nFlint EVM DApp integration guide (This documentation provides comprehensive information on the provider and its functionalities): \nhttps://github.com/dcSpark/milkomeda-documentation/blob/paulccari/add-flint-connector-guide/docs/cardano/for-developers/integrate-flint-wallet-dapps.mdx\n\nUsers can interact with EVM smart contracts from Flint (PoA) \nProof of Evidence (video): https://drive.google.com/file/d/1gFiJytmOsP2O0fA1WtwOKdkoECIu9kpW/view?usp=sharing\n\nTwitter Announcement: \nhttps://twitter.com/flintwallet/status/1639718385855483905?s=46&t=9B8e-zBUB8TJcDC6gnFwbQ",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "23",
+      "cost": 1000,
+      "promise": "That Catalyst can be self sustainable by funding companies and projects without spending resources and actually making money.That Catalyst can be self sustainable by funding companies and projects without spending resources and actually making money.",
+      "criteria": "Funds are returned with the specified interested to a given address owned by the Cardano protocol and specified by a CIP",
+      "report": "Closing report: https://docs.google.com/document/d/1lHodQlnwplCub5wRRM0ybJZx-GM1jranQuILixNu4vg/edit?tab=t.0#heading=h.2rvsp6wvc1zi\nClosing video: https://vimeo.com/1125748020\nProof:\n・CIP Proposal: CIP-269: Treasury Donations\n・SDK Release: dcSpark/cardano-multiplatform-lib – Release 6.2.0\n・Public Announcement: Sebastien Guillemot – Twitter Thread (April 6, 2025)\n\nTransaction Verification:\nTransaction ID: a857cf3967fb2919336410ac411a65d57443798a24465a395053d53f6b13\nBlock: 11703226\nAmount Donated: ₳685,165.824878\nFee: ₳0.170649\n(updated: video updated, twitter link and links fixed)",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

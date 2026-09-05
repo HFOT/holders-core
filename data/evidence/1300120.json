@@ -1,0 +1,61 @@
+{
+  "title": "Janus Wallet: Simplified Cardano Onboarding with ZK Proof",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 37500,
+      "promise": "・Research report about the feasibility of implementing a ZKProof wallet controlled by username and password.\n・Architectural design document to implement a ZKProof wallet controlled by username and password.",
+      "criteria": "・Research report confirming the technical viability for implementing an on-chain ZK Proof Protocol on Cardano. Report will contains:\n・Explanation of what is ZK Proofs and its relevance to blockchain security and privacy \n・Description of different ZK Proof protocols (e.g Groth16, Plonk etc) along with the final selection that better fit into Cardano with a corresponding justification\n・Assessment of potential security benefits and vulnerabilities introduced by ZK Proofs specific for Janus Wallet\n・Scalability considerations related to execution Units (memory and computation) of the on-chain valid",
+      "report": "Proof of Achievement – Milestone Completion\nMilestone Outputs\n・Research Report – A comprehensive analysis of the feasibility of implementing a ZKProof wallet controlled by username and password.\n・Architectural Design Document – A structured design outlining how the ZKProof wallet will function, including smart contract interactions and security considerations.\n\nAcceptance Criteria & Completion Evidence\n✅ Research Report on ZKProof Wallet Feasibility\nThe research report, now published in the open-source repository, confirms the technical viability of implementing an on-chain ZK Proof protocol on Cardano. It includes:\n・Introduction to ZK Proofs – Explanation of their importance for blockchain security and privacy.\n・Comparison of ZK Proof Protocols – Analysis of Groth16, Plonk, and others, with a final selection justified for Cardano compatibility.\n・Security Assessment for Janus Wallet – Evaluation of how ZK Proofs impact security, including benefits and potential vulnerabilities.\n・Scalability Considerations – Review of execution unit limits (memory and computation) for on-chain validation.\n・Security Measures – Proposed safeguards to ensure user data and wallet integrity.\n\n📄 Research Report Link: GitHub Repository\n✅ Architectural Design Document for the ZKProof Wallet\nThe architectural design document details the structural approach to implementing the wallet, including:\n・Product Scope & Architectural Needs – Defines the requirements for a successful ZKProof wallet.\n・High-Level Diagrams – Illustrates system architecture, including smart contract interactions and ZKProof mechanisms.\n・Component Breakdown – Detailed descriptions of the frontend, smart contracts, and ZKProof modules.\n\n📄 Architectural Design Document Link: GitHub Repository\n✅ Public Post Confirming Milestone Completion\nA summary of the research findings has been shared publicly:\n 📢 Twitter Post: @leobelizquierdo – (tweet)",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 45000,
+      "promise": "・Smart contract(s) validating ZKProofs generated from username and password on Cardano preview\n・Test suite covering the functionality of the smart contracts.\n・Integration of the smart contract(s) with off-chain infrastructure to provide a functional wallet.\n・Documentation of the integration process and codebase.",
+      "criteria": "・Smart contract(s) validated ZKPoofs for the following wallet actions:\n・Spend UTxOs: janus wallet build transactions where some inputs are the wallet's smart contract address holding user funds\n・Register and Delegate: janus wallet build transactions from the wallet's smart contract address that register and delegate to a stake pool at the same time\n・Delegate: janus wallet build transactions from the wallet's smart contract address that delegate to a stake pool\n・Withdraw: janus wallet build transactions that withdraw rewards generated from staking to a specific stake pool\n・Smart contracts pass",
+      "report": "Milestone Outputs\n・Smart contract(s) validating ZKProofs generated from username and password on Cardano preview - A Total of 2 smart contracts where implemented one for storing the ZK Verification Key and another that validate different wallet operations such as: spend funds, register and delegate to pool, delegate to representative, and withdraw rewards earned from delegating to stake pool/s.\n・Test suite covering the functionality of the smart contracts - Test suite for smart contract functions like, spend, validate, delegate etc\n・Integration of the smart contract(s) with off-chain infrastructure to provide a functional wallet - Several HTTP API endpoints providing integration with off-chain code to perform functions supported for on-chain smart contracts\n・Documentation of the integration process and codebase - M2 readme.md file guiding on the entire process from creating the ZKProof circuit, compiling and deploying it, to details of how create user, and perform different wallet’s actions such as: spend funds, delegate to stake pool and representatives, etc\n\nAcceptance Criteria & Completion Evidence\n✅ Smart contract(s) validated ZKPoofs for the following wallet actions\nThe source code, available in the open-source repository, contains the functionalities needed to perform on-chain ZK Proof validations and off-chain transactions building on Cardano. It includes:\n・Spend UTxOs: janus wallet build transactions where inputs are the wallet's smart contract address holding user funds. See more details here. Here is onchain evidence\n・Register and Delegate: janus wallet builds transactions from the wallet's smart contract address that register and delegate to a stake pool at the same time. See more details here. Here is onchain evidence\n・Delegate: janus wallet builds transactions from the wallet's smart contract address that delegate to a stake pool. See more details here. Here is onchain evidence\n・Withdraw: janus wallet build transactions that withdraw rewards generated f",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 23,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 45000,
+      "promise": "・Functional prototype for core wallet functionalities on Cardano preprod\n・Documentation of the prototype setup and usage instructions.\n・User feedback report summarizing results and identified issues.\n・Updated prototype addressing user feedback",
+      "criteria": "・Prototype is an operational application (browser plugin or website) covering the following functionalities.\n・wallet creation, \n・send/receive transactions\n・register and delegate to stake pool\n・withdraw stake pool rewards\n・user change/update password\n・Guide to follow in order to setup the application and use the core functionalities\n・At least 10 users test the prototype, providing actionable feedback.\n・Changes on application product of addressing user feedback won't break any existing functionality",
+      "report": "✅ Milestone Outputs\nFunctional prototype for core wallet functionalities on Cardano Preprod\nA working prototype of the Janus zk-wallet is now live and accessible via web browser. The application demonstrates a password-based smart wallet fully operational on the Cardano Preprod network. It includes:\n・Wallet Creation: Users create an account by choosing a unique username and password. Behind the scenes, a zk-SNARK proof is generated and linked to a smart contract UTxO that holds user funds.\n・Send/Receive Transactions: Users can spend UTxOs by generating a valid ZKProof and submitting the transaction via the website. Wallets can also receive ADA by sharing their smart contract address.\n・Register & Delegate to Stake Pool: Users register their stake key and delegate to a stake pool of choice or to a DRep (in line with Chang upgrade).\n・Withdraw Rewards: Users can withdraw staking rewards using ZKProof-authenticated transactions. Delegation to DRep is required to meet governance conditions for withdrawals.\n・Change/Update Password: Password changes are supported through the generation of a new proof and verification key. The user's wallet address is updated accordingly, worth mentioning that after successful update any scheduled or incoming transfers (e.g stake pool delegation rewards) with the old wallet address will be lost.\n\nAll of the above actions are executed through transactions built by the frontend app and signed via ZKProofs without using seed phrases or private keys.\nIn order to create a new account in the app you'll need a Cardano Preprod wallet (Eternl, VESPR or Lace) with enough funds to cover a transaction fee (~0.5ADA) plus NFT UTxO (~2ADA). Also please make sure if using Eternl that the dapp connector (top right corner, you may need to switch to Pro mode to see it) is green (enabled).\nIf you want to test it with an existing account you can login with the credentials bellow:\nUsername: Janus-Preprod#01\nPassword: Supersecret-preprod-01!\n🔗 Prototype Web Applic",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 22500,
+      "promise": "・Functional wallet deployed on Cardano mainnet.\n・Project Close-out Report detailing achievements, challenges, and user feedback.\n・Project Close-out Video showcasing wallet functionalities and user interactions.",
+      "criteria": "・Wallet application is publicly available and operational on Cardano mainnet allowing to:\n・Wallet creation\n・Send/receive transactions\n・Register and delegate to stake pool\n・Withdraw stake pool rewards\n・User change/update password\n・Final closeout report is publicly available detailing achievements, challenges, and user feedback\n・Final closeout video is publicly available showcasing wallet functionalities and user interactions",
+      "report": "✅ Milestone Outputs\nFunctional zk-wallet deployed on Cardano Mainnet and Preprod\nThe Janus wallet is now fully deployed and operational on Cardano mainnet and preprod. This release represents the culmination of all prior development phases, transitioning from preprod to a production-ready environment. The application enables users to interact securely with Cardano using password-based authentication through zero-knowledge proofs, eliminating the need for traditional seed phrases.\nThe deployed wallet supports the following functionalities:\n・Wallet Creation: Users can create a password-based wallet linked to an on-chain NFT identity.\n・Send/Receive Transactions: Users can perform secure ADA transactions validated via ZKProofs.\n・Register & Delegate: Integration with Cardano delegation and governance features allows delegation to a stake pool or DRep.\n・Withdraw Rewards: Stake pool rewards can be withdrawn directly from the wallet interface.\n・Change/Update Password: Users can securely update their wallet password.\n\n🔗 Mainnet Wallet: https://januswallet.xyz/\n🔗 Preprod Wallet: https://preprod.januswallet.xyz/\n📄 Project Close-out Report\nThe final project report summarizes the entire development process, from concept through deployment. It includes:\n・Achievements and implemented functionalities\n・Technical challenges and their resolutions\n・Lessons learned across testing, UX design, and deployment\n・Next steps, product roadmap and sustainability\n\n📄 Final Report:https://github.com/leobel/janus-wallet/blob/main/FINAL-REPORT.md\n🎥 Project Close-out Video\n A walkthrough video demonstrates the wallet’s live functionality, including wallet creation, transaction signing, send and receive funds, delegations, withdraws and password updates.\n🎥 Video Demonstration: https://www.youtube.com/watch?v=sUqTIeuMycA",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

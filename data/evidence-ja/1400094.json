@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・複数の DEX プロトコル間での流動性プールの作成をサポートする、ランチャーパッドのスマートコントラクトを拡張。\n・コンパイルの手順とスクリーンショットのコンパイル。\n・スマートコントラクトやテスト結果のスクリーンショットを覆うテスト.",
+      "criteria": "・オープンソースのGitHubリポジトリにスマートコントラクトを提供\n・Cardano DEXプロトコルを2つ以上サポート\n・スマートコントラクトのコンパイルとスクリーンショットの表示が正常に完了します。\n・すべてのテストパスとスクリーンショットが表示される.",
+      "report": "スマートコントラクトコードでGitHubリポジトリへのリンクです。\nhttps://github.com/WingRiders/launchpad-contracts\n\nコンパイル手順へのリンクと成功したコンパイルのスクリーンショット\nhttps://github.com/WingRiders/launchpad-contracts/blob/master/README.md#setting-up\nhttps://github.com/WingRiders/launchpad-contracts/blob/master/catalyst-imgs/compilation.png\n\nすべてのテストが通過するテストとスクリーンショットを実行する方法についての手順へのリンクです。\nhttps://github.com/WingRiders/launchpad-contracts/blob/master/README.md#setting-up\nhttps://github.com/WingRiders/launchpad-contracts/blob/master/catalyst-imgs/tests.png"
+    },
+    {
+      "no": 2,
+      "promise": "・フロントエンドUIでマルチDEX起動が可能\n・起動設定の保存と検索のためのサービスを終了します。\n・APIドキュメントをバックエンドします。\n・バックエンドサービスやテスト結果のスクリーンショットを覆うテスト\n・フロントエンドUIにより、ユーザーが起動に貢献できます。\n・取引署名のウォレット統合\n・オンチェーン実行をオーケストラとするランチャーパッドエージェントサービス。\n・エージェントサービスやテスト結果のスクリーンショットを覆うテスト.",
+      "criteria": "・Issuers は、UI で複数の DEX 起動を完全に設定して起動できます。\n・フロントエンドは、発行者の構成にマッチする署名のために有効な単一トランザクションを生成します。\n・バックエンド API ドキュメントには、エンドポイントの説明とサンプルペイロードが含まれます。\n・すべてのバックエンドテストパスとスクリーンショットが表示される。\n・利用者は、所定のフロントエンドを用いて起動パッドに貢献することができます。\n・ユーザーは、起動パッドが終了する前に貢献を撤回することができます。\n・UIは、少なくとも2つの主要なCardanoウォレットで動作します。\n・ランチャーパッドのエージェントサービスは、オンチェーンの実行を成功させる。\n・すべてのエージェントテストパスとスクリーンショットが表示される.",
+      "report": "・デモビデオへのリンクで、テストネットでマルチDEXをフル起動:\n・概要: https://youtu.be/MSn1nbhmdq8\n・新規トークンの立ち上げ:https://youtu.be/fRyioVaY6 M\n・リポジトリをバックエンドにリンクし、「実行方法」と環境設定手順(README): https://github.com/WingRiders/multi-dex-launchpad/tree/main/backend\n・API ドキュメントへのリンク: https://github.com/WingRiders/multi-dex-launchpad/blob/main/backend/api.md\n・バックエンドテストを実行する方法についての手順へのリンク、CI は、すべてのテストが渡された、バックエンドテストを渡すスクリーンショットを実行します。\n・手順: https://github.com/WingRiders/multi-dex-launchpad?tab=readme-ov-file#run-tests\n・CI: https://github.com/WingRiders/multi-dex-launchpad/actions/runs/22299924657/job/64505020899\n・スクリーンショット: https://github.com/WingRiders/multi-dex-launchpad/blob/main/catalyst-evidence/milestone-2/backend-tests.png\n・コントリビューショントランザクションのハッシュにtestnetとBlockエクスプローラのリンクに関するユーザー貢献を示すショートクリップ(またはメインビデオのタイムコード)へのリンク:\n・動画:https://youtu.be/3V7zFZeoQkY\n・transaction: https://preprod.cardanoscan.io/transaction/ff9bb84e1d4d98100df1890ac2fb41c88612d165c931d30ec6872693bb739d20?tab=utxo\n・コントリビュート・トランザクション・ハッシュに、testnetとBlockエクスプローラのリンクでユーザー・コントリビューション・引き出しを示すショート・クリップ(またはメイン・ビデオのタイムコード)へのリンク:\n・動画:https://youtu.be/KA6ARr8znpA\n・transaction: https://preprod.cardanoscan.io/transaction/478ea06b2bab1286ae2d1c1356646f28f089728a076a614f596690e49b5c54bd?tab=utxo\n・2つの主要なCardanoウォレットで成功した署名を示すリンク(またはメインビデオのタイムコード):\n・Eternl: https://youtu.be/3V7zFZeoQkY\n・レース: https://youtu.be/eniq7kDkfq0\n・Tx IDを提出したエージェント・ログ(public gist または file): https://github.com/WingRiders/multi-dex-launchpad/blob/main/catalyst-evidence/milestone-2/agent-logs.log\n・エージェントテストの実行方法に関するリンク、CI は、すべてのエージェントのテストが渡されたすべてのエージェントのテストを示すリンクを実行します。\n・手順: https"
+    },
+    {
+      "no": 3,
+      "promise": "・マルチDEXの起動パッドの完全公開テストネットバージョン。\n・トークン発行者、コントリビューター、開発者の文書化.",
+      "criteria": "・Testnet Launchpadインスタンスは、トライアルの起動のために公開ユーザーにアクセスすることができます。\n・文書化には、起動、マルチDEXの割り当ての設定、起動パッドとのやりとりの事例が含まれています。\n・複数設定でテストネットで完了したマルチDEXを3つ以上起動します.",
+      "report": "・最終GitHubリポジトリへのリンク:https://github.com/WingRiders/multi-dex-launchpad\n・一般アクセス可能なtestnet展開URL:https://multi-dex-launchpad.staging.wingriders.com/\n・テストネットの記録されたデモは、複数のDEX割り当てで起動します。 https://www.youtube.com/watch?v=Uu2wb-o8CWk\n・GitHub リポジトリまたは docs サイトの最終発行者と開発者のドキュメントへのリンクをホストしました。\n・ユーザーマニュアル: https://github.com/WingRiders/multi-dex-launchpad/blob/main/frontend/user-manual/user-manual.md\n・コントリビューターのマニュアル: https://github.com/WingRiders/multi-dex-launchpad/blob/main/frontend/user-manual/contribute.md\n・トークン発行者:https://github.com/WingRiders/multi-dex-launchpad/blob/main/frontend/user-manual/create-new-launch.md\n・開発者の文書:https://github.com/WingRiders/multi-dex-launchpad/blob/main/README.md"
+    },
+    {
+      "no": 4,
+      "promise": "・A 2/3 まとめ「Project Close-out Report」を書いています。\n・ショートビデオ「Project Close-out Video」.",
+      "criteria": "・プロジェクトクローズアウトレポート’:\n・プロジェクト中にキーパフォーマンス指標(KPI)を選定\n・KPIがどのように出会ったのか、なぜそうでなかったのかを説明します。\n・商品・サービスの次期計画を概説する。\n・「Project Close-out Video」は、プロジェクトの成果と成果を裏付けるものです.",
+      "report": "親愛なる査読者,\nすべてのDEXのプロジェクトOne Launchpadの関連リンクは以下をご覧ください。Cardanoのトークンをデプロイします。\nプロジェクトクローズアウトレポートへのリンク:\nhttps://github.com/WingRiders/multi-dex-launchpad/blob/main/catalyst-evidence/project-close-out-report.pdf\nクローズアウトビデオへのリンク:https://www.youtube.com/watch?v=uI5 phoUxkU\nその他の関連するプロジェクトソースまたは文書へのリンク:\nプロジェクト\n・マルチDEX Launchpadアプリ\n・主なリポジトリ\n・スマートコントラクトリポジトリ\n\nドキュメント\n・ユーザーマニュアル\n・コントリビューターガイド\n・新しいトークンの発売方法\n・開発文書\n\n証拠とテスト\n・概要デモ\n・トークン起動デモの作成\n・Milestone 3デモビデオ"
+    }
+  ]
+}

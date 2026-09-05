@@ -1,0 +1,71 @@
+{
+  "title": "Open-Source Library for DeFi Smart Contracts in Aiken",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "・Description: Initiate the project by establishing foundational structures and engaging with the Cardano community for input and collaboration.\n・Activities: Engagement with the Cardano DeFi community to get feedback, gather requirements, and promote participation.",
+      "criteria": "1) Collecting community feedback via Google Form about what kind of Defi contracts are most desired to make the library as useful as possible for the DeFI projects:\n・At least 6 types of contract desired by the community. \n・At least 1 more team will contribute to the development.\n\n2) As part of the requirements, we will create the templates that can be used for a standardised development of the contracts and usage in the library.",
+      "report": "Here is the document with the POA, including all relevant links to Google Forms, Github and other documents:\nhttps://docs.google.com/document/d/1xNq3jymLZaATMJIadrc8Ixy-muyNILGB_9IB020R_FU/edit?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60000,
+      "promise": "General information:\n・In the 1st milestone, community feedback will be gathered and used to determine the DeFI smart contracts (at least 6) that we will develop for this library in Aiken.\n・In each milestones 2, 3 and 4, 1/3 of the contracts will be developed.\n\nActivities for milestone 2:\nFirst set (1/3) of DeFi smart contracts included:\n・Write the contracts in Aiken.\n・Create blueprint for Tx builder. \n・Conduct testing.\n・Write documentation for easy use for developers.",
+      "criteria": "・Successful implementation of each contract.\n・Contracts pass testing and validation.\n・Documentation for each contract is created and accessible.",
+      "report": "For Milestone 2 we have finished the first two smart contracts (incl. off-chain code) as defined in Milestone 1:\n・Collateral management logic\n・Issuance & redemption logic (aka lending pool management)\n\nBelow you will find the POA:\n・Onchain-Code (incl. Aiken Workspace and Validators):\n・https://github.com/TrustLevel/defi-library-onchain\n・Offchain-Code (to demonstrate the smart contracts):\n・https://github.com/TrustLevel/defi-library-offchain\n・Video to demonstrate the successful testing & validation of the smart contracts\n・https://www.loom.com/share/486476bf042044228c4f2bc9e6ed61e5?sid=499286ad-7cd1-4a46-87ec-6502e5f2119d\n・Guide to validate example transactions:\n・https://docs.google.com/document/d/1LHfntMahMkTQSiDWL9s7RhweHyoUj0uL_3AD5r2LO98/edit?usp=sharing\n\nNote to MR comment:\nPlease note that the launch of the library on Mesh is not planned until the last milestone. We are designing the library so that most contracts have links to each other. See M2, for example, where collateral and issuance/redemption logic can be used together. We will do the same with M3, where Liquidation and Oracle integration can be linked to the contracts from M2, and so on. An immediate launch would mean a lot of duplicate work until we get to the final version. For this reason, we have planned to use the Github documentation as POA for M2-M4 first and only the entire launch in M5.",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40000,
+      "promise": "General information:\n・In the 1st milestone, community feedback will be gathered and used to determine the DeFI smart contracts (at least 6) that we will develop for this library in Aiken.\n・In each milestones 2, 3 and 4, 1/3 of the contracts will be developed.\n\nActivities for milestone 3:\nSecond set (1/3) of DeFi smart contracts included:\n・Write the contracts in Aiken.\n・Create blueprint for Tx builder. \n・Conduct testing.\n・Write documentation for easy use for developers.",
+      "criteria": "・Successful implementation of each contract.\n・Contracts pass testing and validation.\n・Documentation for each contract is created and accessible",
+      "report": "For Milestone 3 we have developed the next set of two smart contracts (incl. off-chain code) as defined in Milestone 1:\n・Price Oracle Contract\n・Ownership and Custody Contract (named \"position registry\" in the library)\n\nBelow you will find the POA:\nhttps://docs.google.com/document/d/1UhVY6VaC7bRjRUMcCwdRUdiM4i4I-18ww9VyAP1xaYM/edit?usp=sharing\n\nNote to MR:\nIn this document, you will also find the POA for Milestone 4 (liquidation and audit contracts), since we have already completed the last development phase as well. After approval of M3 we will submit the same document again for M4.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 10000,
+      "promise": "General information:\n・In the 1st milestone, community feedback will be gathered and used to determine the DeFI smart contracts (at least 6) that we will develop for this library in Aiken.\n・In each milestones 2, 3 and 4, 1/3 of the contracts will be developed.\n\nActivities for milestone 4:\nLast set (1/3) of DeFi smart contracts included:\n・Write the contracts in Aiken.\n・Create blueprint for Tx builder. \n・Conduct testing.\n・Write documentation for easy use for developers.",
+      "criteria": "・Successful implementation of each contract.\n・Contracts pass testing and validation.\n・Documentation for each contract is created and accessible",
+      "report": "For Milestone 4 we have developed the last set of two smart contracts (incl. off-chain code) as defined in Milestone 1:\n・Liquidation Contract\n・Protocol Audit and Reporting Contract\n\nBelow you will find the POA:\n・https://docs.google.com/document/d/1UFUcwIUS19HHRLmTLFBif8nYnrIMKBRXNkDHOMb28O8/edit?usp=sharing\n\nNote to MR:\nAs mentioned in the POA for Milestone 3, this is the same document as for Milestone 3, but it already contains the POA for both Milestones 3 and 4.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 30000,
+      "promise": "・Official launch of the library.\n・Marketing activities to raise awareness of the library.\n・Host live demos as launch event.\n・Final close-out report.\n・Final closeout video.",
+      "criteria": "・Conducted marketing activities and launch event (online live demo).\n・Final closeout report is publicly available.\n・Final closeout video is publicly available.",
+      "report": "Dear Community, here is our updated POA of the Final Milestone.\nNote to Catalyst Admin: The requested POA to the live demo was already on the linked page in the previous POA version, but now we have added a direct link.\n\nA. Output & Acceptance Criteria : Official Launch of Library\nEvidence: \n・Access to library: \n・https://github.com/TrustLevel/DeFi-Lending-Smart-Contracts\n・Official launch of the library (release note)\n・https://github.com/TrustLevel/DeFi-Lending-Smart-Contracts/releases/tag/v1.0.0\n\nB. Output & Acceptance criteria: Conducted Marketing Activities and Launch event (online live demo)\nEvidence: \n・Twitter: \n・https://x.com/andamioseb/status/1987958892207161541\n・Telegram: \n・https://t.me/c/1556514618/11939\n・https://t.me/Cardano/860154\n・https://t.me/cardano_engchat/32772\n・Discord:\n・https://discord.com/channels/1136727663583698984/1158760831203430470/1437520259794997278\n・Cardano Forum:\n・https://forum.cardano.org/t/release-open-source-defi-smart-contract-library-build-lending-protocols-faster-on-cardano/151129?u=sebastian_pabon\n・Recording of online live demo:\n・Landing page: https://github.com/TrustLevel/DeFi-Lending-Smart-Contracts/blob/main/docs/RUN_DEMO.md\n・Direct link to recording: https://vimeo.com/1133432262?share=copy&fl=sv&fe=ci\n\nC. Output & Acceptance criteria: Close-out report\nEvidence: \n・Link to report: https://docs.google.com/document/d/15gn6KweTssPuhvTCZBPeY3iUznLnG9Ui6EvEmd7lhUU/edit?usp=sharing\n\nD. Output & Acceptance criteria: Close-out video\nEvidence: \n・Link to video: https://vimeo.com/1135313432?share=copy&fl=sv&fe=ci",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 21
+    }
+  ]
+}

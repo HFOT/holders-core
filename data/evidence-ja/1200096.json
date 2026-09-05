@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "目的: チームを組み立て、プロジェクト管理慣行を定義する、オンボーディングの提案.",
+      "criteria": "・コアチームメンバーとアドバイザーの役割と責任を確認します。 チームメンバーやアドバイザーにタスクを割り当てる\n・プロジェクト管理ツールの設定、タスクの表示、タスクのステータス(起動しない、進行中、完了、バックログ)",
+      "report": "・コアチームメンバーとアドバイザーの一覧は、SIDAN Lab専用のDiscord Channelの公開リンクにてご提供いたします。\n・https://drive.google.com/file/d/1k0P8T9etyZ3UjrwVGbi9fJkEVaKz0n6O/view?usp=drive link\n・SIDAN Lab専用のDiscord Channelで設定したプロジェクト管理ツールとシステムのレビューをご覧いただけます。 プロジェクト管理ツールは、Github や Google シートで、より便利です。\n・https://docs.google.com/spreadsheets/d/17Mvr4rvdbWGFJrJd aUhezvFJo0bGSxkxIEeogYgr3o/edit?usp=sharing\n・Discord お知らせ:https://drive.google.com/file/d/1hVc8CyNezFTZ12SU4ubNnrVCwauCklGj/view?usp=drive link\n・Github: https://github.com/deltadefi-protocol"
+    },
+    {
+      "no": 2,
+      "promise": "Objective: Python および Typescript で DeltaDeFi SDK を開発し、公開します",
+      "criteria": "・Python SDKの開発\n・Python SDKのドキュメントを準備し公開する\n・Typescript SDKの開発\n・Typescript SDK のドキュメントを事前に公開",
+      "report": "バックエンドのAPIを再生成したため、マイルストーンの進捗を遅らせるために申し訳ありません。 バックエンド API を再訪した後、SDK を見直しました。\n公開の github リポジトリで更新された python と typescript SDK とデモの出力が見つかります。\nTypescript SDK: https://github.com/deltadefi-protocol/typescript-sdk\nPython SDK: https://github.com/deltadefi-protocol/python-sdk\nsdks-demo: https://github.com/deltadefi-protocol/sdks-demo\nsdks-demo では、SDK の出力例のスクリーンショットがあります。\nPython SDK: https://github.com/deltadefi-protocol/sdks-demo/tree/main/python/demo-output\n・accounts.png は、アカウント関連の API の出力例を示します。\n・markets.png は、市場関連の API の出力例を示します。\n・orders.png は、注文関連の API の出力例を示します。\n\nTypescript SDK: https://github.com/deltadefi-protocol/sdks-demo/tree/main/typescript/demo-output\n・accounts 1.png は、アカウント関連の API の出力例を示します。\n・accounts 2.png は、アカウント関連の API の出力例を示します。\n・markets.png は、市場関連の API の出力例を示します。\n・orders.png は、注文関連の API の出力例を示します"
+    },
+    {
+      "no": 3,
+      "promise": "Objective:GolangとRustでDeltaDeFi SDKを開発および公開する",
+      "criteria": "・Golang SDKの開発\n・Golang SDK のドキュメントを準備し公開する\n・Rust SDKの開発\n・Typescript SDK のドキュメントを事前に公開",
+      "report": "退会ノート\n\n親愛なるレビュー担当者、ドキュメントが欠落していることを思い出させるためにのおかげで、私は彼が主に読み書きを押していないことを発見しました。 また、この機会は、rust と golang sdk の両方でインライン ドキュメントを供給するなど、ドキュメントをさらに切り出しました。 同一のリンクから退会してください\n\n参加申し込み\n\n更新された Rust および Golang SDK およびデモの出力は、以下の公開 github リポジトリで確認してください。\nRust SDK: https://github.com/deltadefi-protocol/rust-sdk\nGolang SDK: https://github.com/deltadefi-protocol/go-sdk\nsdks-demo: https://github.com/deltadefi-protocol/sdks-demo\nsdks-demo では、SDK の出力例のスクリーンショットがあります。\nRust SDK: https://github.com/deltadefi-protocol/sdks-demo/tree/main/rust/demo-output\n・accounts.png は、アカウント関連の API の出力例を示します。\n・markets.png は、市場関連の API の出力例を示します。\n・orders.png は、注文関連の API の出力例を示します。\n\nGolang SDK: https://github.com/deltadefi-protocol/sdks-demo/tree/main/go/demo output\n・accounts.png は、アカウント関連の API の出力例を示します。\n・markets.png は、市場関連の API の出力例を示します。\n・orders.png は、注文関連の API の出力例を示します"
+    },
+    {
+      "no": 4,
+      "promise": "目的:取引ボットの設計とアーキテクチャ\nプロフェッショナルトレーダーとのパートナーシップ\n・取引ボットの設計と開発を案内するために、複数の専門トレーダーとのコラボレーションを確立します。\n\n貿易ボット設計文書\n・取引ボットのアーキテクチャを記述する設計文書。\n・基本的な取引戦略の記述とカスタマイズ方法\n・取引ボットを実行するためのユーザーエクスペリエンスの設計.",
+      "criteria": "・トレーディングボットのデザインの準備(a)専門トレーダー(s)とのコラボレーションを確立する。\n・基本的取引戦略の研究・設計 取引戦略とロジックは、ドキュメントに記述およびリストされます。\n・ユーザーが戦略を簡単に変更できるパターンで取引ボットを設計\n・推奨ボット実行方法やクラウド展開方法の設計\n・デザインの説明やガイドをリンクして公開します",
+      "report": "退会ノート\n・異なるリンクに沿って追加の説明で退会。 提出がまだ不十分と見なされていなければ、より詳細な説明を提供してください。 お問い合わせ\n\n参加申し込み\n専門商社とのパートナーシップについて SIDAN Lab専用Discordチャンネルにて発表いたします。 公開リンクが提供されます\n・https://discord.com/channels/1166784293805228061/1183106376537477180/1418116209978773574 - あなたはまだdiscordに参加しなかった場合は、このリンクはアクセスできませんでした。 sidan ラボのdiscord - https://discord.gg/2VgKDrSxe9 に参加してください。 メッセージは議論の下の → deltadefi.\n・https://github.com/deltadefi-protocol/sdks-demo/blob/main/trading-bot/collab-announcement.png - sidan labのdiscordに加わった場合のアナウンスメッセージのスクリーンショット。\n\n取引ボットのロジックに関する完全なドキュメント、独自の取引戦略をカスタマイズする方法。 ドキュメントへのアクセスは公開されます。\n・ sdks-demo の docs パス (https://github.com/deltadefi-protocol/sdks-demo/tree/main/trading-bot/docs) で完全なドキュメントが提供されます。\n・カスタマイズ方法 - https://github.com/deltadefi-protocol/sdks-demo/blob/main/trading-bot/CONFIG.md\n\n取引ボットを実行する方法についての予想されるユーザーエクスペリエンスの説明。 予想されるユーザー体験を閲覧するために公開リンクを配布します。\n・取引ボットを実行する方法に関する正確な指示を含むユーザーガイド - https://github.com/deltadefi-protocol/sdks-demo/blob/main/trading-bot/docs/02-user-guide.md"
+    },
+    {
+      "no": 5,
+      "promise": "Objective: 完全なドキュメントで、Python の取引ボットパッケージを公開する",
+      "criteria": "・専門商社の協力を得て、Pythonでの取引ボットの開発\n・取引ボットに関するドキュメントの事前公開\n・AWS、GCPなど、クラウドの1つに例の展開スクリプトを準備する",
+      "report": "更新されたデモビデオは、説明文でご確認ください。\n・Githubのオープンソース取引ボットパッケージソースコードを開く\n・https://github.com/deltadefi-protocol/sdks-demo/tree/main/trading-bot\n・Python取引ボットに関する完全な開発者文書\n・https://github.com/deltadefi-protocol/sdks-demo/tree/main/trading-bot/docs\n・ワーキング展開スクリプト\n・https://github.com/deltadefi-protocol/sdks-demo/blob/main/trading-bot/build-and-deploy-gcp.sh\n・GitHubリポジトリコードに基づいてスクリプトが動作していることを説明するスクリーンキャスト/ビデオ\n・https://www.youtube.com/watch?v=EuOAmtabgz8"
+    },
+    {
+      "no": 6,
+      "promise": "・目的:取引ボットの利用をデモするために材料のセットを用意する\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・DeltaDeFiで取引する方法についてビデオを公開\n・DeltaDeFi上で取引するために取引ボットを使用しての正確な流れを実証するホストライブセッション\n・プロジェクトのクローズアウトレポートとビデオの準備\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "取引ボットデモンストレーションのパブリックセッションの録画とDeltaDeFi取引ボットの使用状況を歩くための公開ビデオ:\n・ライブセッションの録画:https://www.youtube.com/watch?v=Z6YLTBbdT3A (この録画は、DeltaDeFi取引ボットの使用もカバー)\n・Writtenデモ:https://github.com/deltadefi-protocol/sdks-demo/blob/main/trading-bot/docs/user-demonstration.md\n\n最終報告書へのリンク\n・https://docs.google.com/document/d/1uUIkUTuTW0 5AnIRAW3l5sgcaGOerPmq3p0z6YCuZZM/edit?tab=t.0\n\n最終クローズアウトビデオへのリンク\n・https://youtu.be/4 cssVdBd2w"
+    }
+  ]
+}

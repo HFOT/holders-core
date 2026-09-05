@@ -1,0 +1,82 @@
+{
+  "title": "MLabs: Pisa-Fees: Enabling Decentralized Fee Trading on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 74730,
+      "promise": "・Testing for importation/exportation logic and small-scale pseudo-transaction validation is completed.\n・Code formatting and linting for testing code is done. \n・Utility functions for Pisa Protocol are tested. \n・Internal review of the on-chain codebase with optimizations is performed.",
+      "criteria": "・Testing suite, with all test passing, pseudo-transaction validation.\n・Tests for exportation and importation of protocol scripts are consistent between on-chain and off-chain codebase. \n・Sample transactions are aligned with expected behavior. \n・Scripts for importation/exportation are consistent between on-chain and off-chain codebases.",
+      "report": ":: UPDATES ::\nBoth reviewers should have repo access now. Thank you!\n---\nPlease find our PoA report for milestone 1 here:\nhttps://github.com/mlabs-haskell/pisa-fees/blob/master/milestone-reports/milestone-1.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 99993,
+      "promise": "・A REST or WebSocket API is designed to serve Pisa Fees UTXOs. \n・Indexer performance is benchmarked and optimized. \n・Efficient indexer caching mechanisms, such as round-robin UTXO selection, are implemented. \n・API tests are conducted to ensure functionality and reliability.\n・Atlas and CTL will be supported",
+      "criteria": "・The API design for serving Pisa Fees UTXOs is completed and documented. \n・All API endpoints will be listed and documented.\n・Indexer benchmarks demonstrate improved performance. We will measure the time it takes to startup indexer and transaction balancer in the offchain server.\n・Caching mechanisms, such as round-robin UTXO selection, are implemented and verified. \n・Indexer API passes all functional tests which will test functionalities like position query and transaction balancing, ensuring it returns correct and consistent results.\n・Publicly available library for CTL and Atlas for protocol-s",
+      "report": ":: UPDATES ::\nWe determined that the round-robin caching approach to reducing UTxO contention resulted in significant security concerns. Please see the \"Used positions caching and rotation\" of our updated PoA2 report.\n---------\n\nPlease find our Milestone PoA2 here:\nhttps://github.com/mlabs-haskell/pisa-fees/blob/master/milestone-reports/milestone-2.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 89986,
+      "promise": "Demonstrate Pisa fees protocol is working as intended on actual Cardano networks (or its replica network like the one provided by Plutip) by submitting sample transactions for each possible action the user can use on Pisa Fees.",
+      "criteria": "Provide testing workflow on testnet, CLB that would:\n・Automatically launch the protocol and create positions\n・Perform protocol interactions to demonstrate that Pisa Fees works as intended in an actual Cardano node environment. Specifically:\n・Positions can be created and removed by users\n・Swaps occur as intended \n・Attack vectors are protected against\n・Is evidenced by the provided testing logs\n・Guides to reproducing local node testing suite",
+      "report": ":: UPDATE :: \nAccess should be added now.\n--\nPlease find our Milestone 3 PoA report here:\nhttps://github.com/mlabs-haskell/pisa-fees/blob/master/milestone-reports/milestone-3.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 74995,
+      "promise": "Video demonstration of API call for Fee positions\nAPI Documentation \nVideo Demonstration of related tests results",
+      "criteria": "・Video demonstration clearly shows results of testsuite & testsuite reliably validates that positions are accurately created\n・Consistent results are obtained by the Pisa protocol API by validating that the chain follower correctly caches and hosts the API to provide data for fee positions for off-chain frameworks to use\n・API documentation for Pisa Fees API is publicly available and provides integration guides",
+      "report": ":: UPDATE ::\n\n@Jeremy-l3 should have access to the repo now.\n\n-------\n\nPublic Pisa fee API to query a list of fee positions - link to this API\nhttps://mlabs-haskell.github.io/pisa-fees/pisa-api/integration-guide.html\n\nDocument containing example queries for using the API\nhttps://github.com/mlabs-haskell/pisa-fees/blob/master/milestone-reports/milestone-4.md\n\nNon-public video Demonstration showing API Query and test suite output\nSee report above for link.",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 74995,
+      "promise": "Third party review of produced codebase to fix possible bugs or exploits and build better community trust.",
+      "criteria": "Provide audit reports from renown third party auditors. Any iIf any bug or exploit is discovered, they must be patched. Any identified vulnerabilities, bugs, or exploits are resolved, with a documented summary of fixes for transparency.",
+      "report": ":: UPDATE ::\nTo find the audit report, please follow the link and click the “View PDF” button toward the top right:\nhttps://skynet.certik.com/projects/mlabs#code-security\n\nAudit findings are available by clicking the “View Findings” button.\n-------\nPublicly available renowned audit reports\nhttps://skynet.certik.com/projects/mlabs#code-security\n\nReport documenting fixes for any discovered issues, if any.\nIssues addressed in the report - click \"View PDF\" for details.",
+      "kinds": [
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 6,
+      "month": "9",
+      "cost": 84994,
+      "promise": "・A fully interactable web interface that exposes some functionalities of Pisa Fees such as opening a new fee position, discarding a fee position, changing position parameters, and querying different positions on the protocol. A walkthrough video of the web interface.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Working websites provide an easy way to query values and interact with Pisa fees without needing to manually build transactions from scratch.\n・opening a new fee position\n・closing a fee position \n・changing position parameters\n・and querying different positions on the protocol\n・A walkthrough video demonstrates all functionalities of the web interface\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Please find out the closeout materials available here:\nPublicly available web applications\nhttps://admin.feesaswap.io/\nhttps://www.feesaswap.io/\n\nWebsite repository shared privately for reviewers \nhttps://github.com/mlabs-haskell/pisa-fees/blob/bc29418599f36dbbece20a0e6fd6d5f82f0ef2d3/milestone-reports/milestone-6.md\n\nVideo or screenshots showcasing website functionality\n-MFinal Demo\nhttps://www.youtube.com/watch?v=Py9MuT8tWwg\n-MFinal Deliverables Update Video\nhttps://www.youtube.com/watch?v=AUGMXGkNepA\n\nLink to final closeout report\nhttps://drive.google.com/file/d/17UBf0lR_oS4F5Ls3MrvRisgGypURLZMd/view?usp=sharing\n\nLink to final closeout video\nhttps://www.youtube.com/watch?v=3AxwQEgxct0",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

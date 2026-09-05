@@ -1,0 +1,69 @@
+{
+  "title": "Indigo Iris: DEX API & Indexer",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 60000,
+      "promise": "Completion of integration for DEX Indexers including Minswap, WingRiders, SundaeSwap, VyFinance, MuesliSwap, and Spectrum.\nWith the indexed data, we can begin to work on a REST API to interface with the DEX data.\nFor this milestone, code to index DEX-related orders & liquidity pools updates. At the very least, a TypeScript project containing the 6 DEX indexers, along with data implementations to store the indexed data.",
+      "criteria": "Indexers to filter out DEX-related data for the following DEXs: Minswap, WingRiders, SundaeSwap, VyFinance, MuesliSwap, and Spectrum. The data to be indexed contains liquidity pool reserve updates, swaps, deposits, withdrawals, and zap orders. Along with these orders, statuses on their lifecycle must also be indexed. All of the indexed data must be stored relationally in a MySQL database to ease the development of the next milestone to produce a REST API.",
+      "report": "Link to necessary files on Google Drive: https://drive.google.com/drive/folders/1OK4pkpQaYWkxXuURyA7KtXDGeOi4tgDA?usp=sharing\nNOTE : Google Drive will show a \"Video is unplayable\" error. The files are not video files, Google Drive does not know how to read them. You will need to download the files from Google Drive, and open the code files in a text editor. \nClick the link to view the code files related to the DEX analyzers. The code files are written in Typescript and will have a \".ts\" file ending. You can view these files in any code viewer or text editor.\nThere are also screenshots of the indexed data to verify the database dump in the \"screenshots\" folder.\n\"Data Dump.sql\" contains a MySQL dump of all indexed data from Iris. You can load this file into a test database to view the indexed data.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 60000,
+      "promise": "Complete endpoints for pulling swaps, deposits, withdrawals, along with flexible endpoints for grabbing liquidity pool historic states & current price data. API controllers to respond to API requests - Provide screenshots and any necessary diagrams of code in which responds to client requests for each needed controller.",
+      "criteria": "・All indexed data can be read through an endpoint on the API.\n・Each endpoint formats the data in JSON format, and follows REST API standards.\n・Each endpoint responds in a timely manner (less than 1 second) & does not impose any performance issues.",
+      "report": "API related files https://drive.google.com/drive/folders/1Sf5-KBZ6r-vrc4fcsX12TzA5HJA2G73Y?usp=sharing\nNOTE : Google Drive will show a \"Video is unplayable\" error. The files are not video files, Google Drive does not know how to read them. You will need to download the files from Google Drive, and open the code files in a text editor.\nThe files include the API controllers & response resource files under the \"api\" directory, along with the OpenAPI HTML file for endpoint documentation. You can also view the OpenAPI documentation https://app.swaggerhub.com/apis/zsluder/Iris/1.0.0\nTo view the files in the \"api\" folder, you will need to download them and open them in a text editor.",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 35000,
+      "promise": "・Automated test files for each implemented DEX indexers. Each DEX indexer has its own testing file to keep the code clean, and maintainable when developing more tests. Each test file contains tests for parsing correct & incorrect transactions.\n・Automated test files for event listeners when saving data to a database. The necessary test files will test correctness when validating found DEX operations & checks against malformed data before saving to a database.",
+      "criteria": "・All implemented logic within the indexers have automated tests to check against edge cases & correctly indexed data. Each DEX indexer is tested against indexing relevant & non-relevant transactions.\n・All data indexed is validated through automated tests to check for malformed data or missing data. After transactions are indexed, they must be validated for correctness on the data pulled from on-chain before saving to a database. These validations must include tests for storing data against the database data types.",
+      "report": "Test related files : https://drive.google.com/drive/folders/193GTJ3ATNbpRyN_YlG1rpcNfeR0JHkJD?usp=sharing\nPublic Github repository : https://github.com/IndigoProtocol/iris\nNOTE : Google Drive will show a \"Video is unplayable\" error. The files are not video files, Google Drive does not know how to read them. You will need to download the files from Google Drive, and open the code files in a text editor.\nTo view the files ending is '.ts', you will need to download them and open them in a text editor.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 15000,
+      "promise": "・Documentation on installing & setting up the indexer/API through a separate project.\n・Custom indexers & API controllers documentation when running the instances as a subproject or as standalones. Separate markdown documents to ease later maintenance of these documents.\n・Documentation on how to run necessary automated tests when contributing to the project. This documentation also provides commands on how to run individual test files.\n・A project README.md as an initial viewpoint when reviewing documentation. This README is accessible on the Github repository.",
+      "criteria": "・Install & setup documentation must provide standard NPM setup when using Iris as a subproject to allow expandability, or a standalone instance by running the indexer & API on their own. \n・When using Iris as a subproject as another, necessary documentation must be provided to display how to add custom API controllers & indexers when running the instances.\n・Documentation is completed on how to run automated tests so users can manually check for any failures during open-source contributions. A standard test run command is enough to document how to run automated tests.",
+      "report": "Link to public documentation : https://github.com/IndigoProtocol/iris\nLink to API documentation : https://github.com/IndigoProtocol/iris/blob/master/docs/openapi.yaml\nLink to setup documentation : https://github.com/IndigoProtocol/iris/blob/master/README.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 30000,
+      "promise": "・AWS instance set up to host the Iris indexer websocket feeds.\n・Security policies in place to prevent Denial of Service attacks (Cap users at 60 requests a second)\n・Separate AWS instance to host API with server specifications to keep < 50% load under 1000 API requests a second.\n・Public accessible domains pointing to the hosted instances.",
+      "criteria": "・Instances running the API & websocket feed must be accessible to the public through a public domain. \n・Hosted instances must keep < 50% load under 1000 API requests a second.\n・API endpoints & websocket can be accessed & tested through a request client.",
+      "report": "Closeout Video : https://www.youtube.com/watch?v=YjjW6QL6nxs \nCloseout Report : https://docs.google.com/document/d/1VsEQVGw0TUUH64qBkmK6htSPcAgS9mTMN2LZx9IJ8y4/edit?usp=sharing\n\nServer stats / Recording : https://drive.google.com/drive/folders/1UboZos2jKC4p_Pvpe2SxRlq4MZPmDOTA?usp=sharing\nExample API endpoint : https://iris.indigoprotocol.io/api/sync (You can copy this into your browser)\nIris websocket URL : https://iris-ws.indigoprotocol.io/\nNotes : \n・You will not be able to see data through your browser for the websocket URL. You will need a websocket connect if you want to validate this URL. However, the API can be validated through the example endpoint above.\n・The Google drive link above provides an image capture of the server load under expected load, and a recording displaying 3 example endpoints using the public API\n・You can view possible endpoints to test through the API documentation : https://app.swaggerhub.com/apis/zsluder/Iris/1.0.0",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

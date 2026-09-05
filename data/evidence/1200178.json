@@ -1,0 +1,80 @@
+{
+  "title": "Orcfax Explorer: Improving \"Trust But Verify\"",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 47100,
+      "promise": "Orcfax will develop a dashboard page on the Orcfax Explorer that utilizes highly informative visualizations to aid users. These new visualizations may include (but are not limited to):\n・Orcfax feed price charts (eg ADA-USD)\n・state change timelines (eg the life cycle of data)\n・data provenance (eg methods for verifying authenticity)",
+      "criteria": "This milestone will conclude with the successful passing of all visualization test cases:\n・The dashboard must display dynamic price charts which are informed by orcfax feed publications.\n・The dashboard must give users the ability to follow each step of the oracle data lifecycle (from collection to publication)\n・The dashboard must allow users to verify authenticity through easy to use widgets",
+      "report": "What we promised:\nOrcfax will develop a dashboard page on the Orcfax Explorer that utilizes highly informative visualizations to aid users. These new visualizations may include (but are not limited to):\n* Orcfax feed price charts (eg ADA-USD)\n* state change timelines (eg the life cycle of data)\n* data provenance (eg methods for verifying authenticity)\nThese upgrades were to be published on our public Orcfax GitHub along with source code and tests:\n\nWhat we delivered:\n7 new Orcfax Explorer features! What follows is a mapping of what was promised for Milestone 1 to the newly integrated explorer features. Links will direct readers to our public github explorer repo where we provide additional context and the relevant code enhancements for each.\n・Orcfax feed price charts\n・Feeds list page\n・Feed details page\n・Feed price charts\n・State change timelines\n・Show calculation details on UI\n・Data provenance\n・Display sources\n・Show collection details on UI\n・Show validation details on UI\n\nWe have also published the announcement for our explorer feature upgrade on our docs, X, and Discord.\nThese Orcfax Explorer upgrades give users an enhanced ability to verify the authenticity and provenance of the collected data. While this information has been present within our archival packages from the beginning, these enhancements aid users by surfacing the salient archival details and visualizing them in a more accessible manner.\nFor test cases, we have recorded a walkthrough of explorer.orcfax.io so that users can see how the new features work in tandem to deliver an incredible explorer experience. This walkthrough also serves as a resource for users looking to better understand the upgrades within the context of the explorer UI.\nWhat’s more, our team has been able to make this progress ahead of the first f12 funding disbursement which took place the beginning of October 2024; this diligence means that our team has been able to stay on track with our proposed timeline despite administrative de",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 47100,
+      "promise": "Orcfax will develop a new feature for the Orcfax Explorer which allows users to download and read the audit log package for a given fact statement.",
+      "criteria": "This milestone will conclude with the successful passing of the audit package download test case:\n・A test user must be able to select and download their target audit package.\n・The audit package must include a static archive explorer in order to aid in sense-making.\n・The static archive explorer should mimic the user experience of the Orcfax Explorer\n・The audit package must display the same archival records as the Orcfax explorer in order two allow a test user to corroborate what is seen on the Explorer.",
+      "report": "What we promised:\nOrcfax will develop a new feature for the Orcfax Explorer which allows users to download and read the audit log package for a given fact statement. These upgrades were to be published on our public Orcfax GitHub along with source code, tests, and user documentation to aid in use.\n\nWhat we delivered:\nThe ability for users to download specific fact statements and view them, along with archival information, offline on their own computers! These two new features are now included in the public github explorer repo where we provide additional context and the relevant code enhancements for each.\n\nWe have also published the announcement for our explorer feature upgrade on X and Discord.\n\nFor test cases, we have recorded a walkthrough of explorer.orcfax.io so that users can see how the new features work in tandem to deliver an incredible Explorer Viewer experience. This walkthrough also serves as a resource for users looking to better understand the upgrades within the context of the explorer UI.",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 51880,
+      "promise": "A dashboard page on the Orcfax Explorer that displays information about Orcfax network activity in real time, including (but not limited to):\n・validator node participation statistics\n・network health",
+      "criteria": "This milestone will conclude with the successful passing of the real-time status monitoring feature test cases:\n・The system must dynamically display statistics relating to how each node within the network is participating; this may include, but is not limited to:\n・The system should identify which node published most recently.\n・The system should identify the feed which a node most recently published to.\n・The system should display the total number of publications for each node.\n・The system must display updates in real time relating to the overall health of the Orcfax network (eg Identifying any",
+      "report": "What we promised:\nOrcfax will develop new features for the Orcfax Explorer which results in new dynamic displays; the new features will enhance the existing dashboard page on the Orcfax Explorer so that it displays information about Orcfax network activity in real time, including (but not limited to):\n • validator node participation statistics\n • network health.\nThese upgrades were to be published on our public Orcfax GitHub along with source code, tests, and user documentation to aid in use.\n\nWhat we delivered:\nThe new feature set for the explorer brings the following changes:\n\n・The dashboard now has a section which dynamically displays statistics relating to node participation \n・Identifies when each node last published.\n・Identifies the feed each node last published to.\n・Identifies the total number of publications (i.e. Facts) for each node.\n・Provides the status/health of each node.\n\nThese two new features are now included in the public github explorer repo where we provide additional context and the relevant code enhancements for each. These changes have also been documented on in our docs.\n\nFor test cases, we have recorded a walkthrough of explorer.orcfax.io so that users can see how the new features work in tandem to deliver an incredible Explorer Viewer experience. This walkthrough also serves as a resource for users looking to better understand the upgrades within the context of the explorer UI.",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 9130,
+      "promise": "Orcfax will develop a new Orcfax Explorer feature which notifies users in the event of a network issue, and provides users with links to incident reports.",
+      "criteria": "This milestone will conclude with creation of documentation which explains how incidents are recorded and reported in the Orcfax Explorer, and with the successful passing of the network incident-reporting test cases:\n・The system must provide real time notifications of network related incidents\n・A test user must be able to use a network incident notification to navigate to a formal report of the incident",
+      "report": "What we promised:\nOrcfax will develop a new Orcfax Explorer feature which notifies users in the event of a network issue, and provides users with links to incident reports.\nThese upgrades were to be published on our public Orcfax GitHub along with source code, tests, and user documentation to aid in use.\n\nWhat we delivered:\nThe new feature set for the explorer brings the following changes:\n・Adds a landing page to a Status Dashboard with key statistics: https://github.com/orcfax/status.orcfax.io/issues/3\n・Adds “Incidents” to Status Dashboard\n・Adds “Network Updates” to Status Dashboard\n・Adds an RSS Feed Url Builder to Status Dashboard\n・Allows Orcfax to Serve Orcfax RSS Feed from Status App\n・Provides an index of Sources for the Orcfax RSS Feed\n\nThese two new features are now included in the public github explorer repo where we provide additional context and the relevant code enhancements for each. These changes have also been documented on in our docs.\n\nFor test cases, we have recorded a walkthrough of explorer.orcfax.io so that users can see how the new features work in tandem to deliver an incredible Explorer Viewer experience. This walkthrough also serves as a resource for users looking to better understand the upgrades within the context of the explorer UI.",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 9
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 27390,
+      "promise": "Orcfax will provide the following in order to close out the project:\n・Final close-out report\n・Final closeout video, which includes a walkthrough of Explorer",
+      "criteria": "The following will be accepted by the Project Catalyst team:\n・Final closeout report (which will be made publicly available)\n・Final closeout video (which will be made publicly available)",
+      "report": "Project Close-out Report\nName of project and Project URL on IdeaScale/Fund\nOrcfax\nhttps://projectcatalyst.io/funds/12/cardano-use-cases-product/orcfax-explorer-improving-trust-but-verify\nYour Project Number\n1200178\nName of project manager\nChristian Koch\nDate project started\nAugust 12, 2024\nDate project completed\nFebruary 27, 2025\nList of challenge KPIs and how the project addressed them\n・Improved Data Accessibility: Orcfax has surfaced additional data points on its Explorer from on-chain data and archival packages which were not available previously; these data points have also been made easily accessible to users in order to promote accessibility.\n・Enhanced Transparency: In addition to the above, which also increases overall transparency of the Orcfax solution, we have also added new distribution channels for network operations and fault conditions so that users may more clearly monitor the health and operation of the Orcfax network.\n・Improved Real-Time Network Awareness: We have increased the number of real-time status features on the Explorer to include: Realtime Network Status Alert and Incident Updates. These realtime updates to the Explorer are not prominently displayed for users on the Explorer dashboard.\n\nList of project KPIs and how the project addressed them\nOrcfax committed to the following KPI in our milestones:\n・To develop a dashboard page on the Orcfax Explorer that utilizes highly informative visualizations to aid users.\n・To develop a new feature for the Orcfax Explorer which allows users to download and read the audit log package for a given fact statement\n・To develop new features for the Orcfax Explorer which results in new dynamic displays for network health and validator participation\n・To develop an Orcfax Explorer feature which notifies users in the event of a network issue, and provides users with links to incident reports.\n\nHow Orcfax addressed each of these, and the outcome of the work, is described below.\nFor informative Explorer visualizatio",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 41,
+      "cut": true
+    }
+  ]
+}

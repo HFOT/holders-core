@@ -1,0 +1,98 @@
+{
+  "title": "Enable apps and games built in the Cardano ecosystem to leverage ZK cryptography for privacy and scalability",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Add a way to parse Mina blockstate state from Paima to the Paima Engine codebase by extending the Paima Funnel system and documenting it in the Paima engine docs",
+      "criteria": "Implement a “Mina Funnel” in to the Paima codebase",
+      "report": "Video: https://drive.google.com/file/d/1NTqK-11UV4kmOE2TPFSCqkz5VVxBv07E/view?usp=sharing\nMina funnel docs: https://docs.paimastudios.com/home/react-to-events/funnel-types/mina-funnel\nMina primitive docs: https://docs.paimastudios.com/home/react-to-events/primitive-catalogue/mina/generic\nMina funnel code: https://github.com/PaimaStudios/paima-engine/pull/343",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 75000,
+      "promise": "Add Mina wallet support to both Paima itself as well as the batcher system",
+      "criteria": "Mina wallets able to be used for both external users and batchers",
+      "report": "Video: https://drive.google.com/file/d/1T-FcwSBeREGVj6dT57mU2_bMrDpX8hmT/view?usp=sharing\nDocs: https://docs.paimastudios.com/home/multichain-support/wallet-layer/introduction/\nAnnouncement tweet: https://twitter.com/PaimaStudios/status/1783573986951000445\nCodebase: https://github.com/PaimaStudios/paima-engine/pull/355",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 75000,
+      "promise": "Implement a template that combines Cardano and Mina state into a single minigame",
+      "criteria": "Public release of a template that implements the Mina system and combines it with Cardano state",
+      "report": "In response to PoA comments:\nThank you for the review. We delivered the original requirement - a template that combines Cardano state with ZK privacy - and want to be clear on the Cardano and Mina original fit:\n(A) The deliverable is Cardano state plus ZK. The Private DelegationVoting template weights governance votes by Cardano stake delegation and keeps ballots private with ZK proofs: a voter proves delegation eligibility without revealing their pool or their vote. Cardano stake delegation is the heart of the template.\n(B) Mina was not replaced with Midnight, rather BOTH are implemented, but Midnight a deeper Cardano fit. The milestone originally named Mina; we delivered both (Cardano state + ZK privacy) on Mina and Midnight. Midnight is a Cardano partner chain - built on Input-Output's Partner Chains framework, Cardano SPOs can become its validators, and 100% of Midnight's NIGHT tokens are live and useful only on Cardano as a native token - so it provides the same ZK-native privacy as Mina but with deeper integration into the Cardano ecosystem, making it the natural ZK partner chain. EffectStream is multi-chain by design, so the ZK chain is a configuration choice, not an app-logic rewrite.\n(C) We have aligned with Catalyst Direction on the focus - how this contributes to the Cardano community and how it aligns with the proposal (see the notes below, recorded under ticket #9527). The live demo runs on Midnight because of the cost of maintaining servers, but native Cardano tokens now pay for user interactions - Cardano is the economic engine.\nWe have updated the information; the demo and write-up are linked below.\n\nBrief:\nPrivate Delegation Voting - the Cardano <> ZK template. Governance votes are weighted by Cardano stake delegation; ballots stay private through Mina or Midnight ZK proofs. A voter proves they are eligible (delegating to a qualifying pool) and casts a vote without revealing the pool or the choice. This is exactly the milestone's intent - combining",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 15,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 75000,
+      "promise": "Implement a way to compute ZK proofs locally without settling to a ZK chain like Mina",
+      "criteria": "a module in Paima to support creating and updating these ZK proofs",
+      "report": "NOTE: Due to short timelines for this project, we have submitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA. This milestone is totally independent and does not depend in any way on previous milestones.\nIn response to previous PoA comments:\nMina and Midnight, both implementations exist - the original Mina integration as the milestone specified (open source in the Paima Engine codebase) and the Midnight re-implementation, which is the deeper Cardano fit (Midnight is a Cardano partner chain; NIGHT is a Cardano native token, and Cardano SPOs validate blocks). We want to generate value for Cardano, so we are presenting Midnight first, with real support for Mina.\nBRIEF\nThis milestone delivers local (client-side) computation of ZK proofs: players generate zero-knowledge proofs on their own device, in the browser - no centralised proof server in the loop. Each proof takes around ten seconds on consumer hardware and is included on-chain about twenty seconds after submission; what lands on-chain is the shielded transcript (inputs, commitments, nullifiers), never the private values. Because proving is local there is no backend to trust or pay for, and the private inputs never leave the player's machine. The capability ships in production: Kachina Kolosseum's private equipment/move proofs and Dust-2-Dust's multi-circuit roguelike proofs are both generated in-browser. As with the rest of this project, the ZK layer is Midnight - a Cardano partner chain - and both implementations (the original Mina path and the Midnight path) are open source.\nLINKS TO REVIEW\n\n1. Video - private equipment choice proven locally (~10s per proof) landing on-chain\nhttps://youtu.be/6QbEeLCSn-U\n\n2. OPTIONAL Live games generating proofs in the browser\nNote at the moment of this post we are conducting server migrations. \nhttps://kachina.midnight.fun/\nhttps://dust2dust.midnight.fun/\n\n3. Code:\nhttps://",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 17,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 75000,
+      "promise": "Implement a template (or modification of a previous template) that uses this local proof generation technique",
+      "criteria": "Public release of a game template that implements the functionality",
+      "report": "In response to PoA comments: \n[I] Thanks for the remainder. Link to soclal: https://x.com/paimastudios/status/2071466657617420322?s=46&t=iOvIkTYfqyMAe2lbLFslhg\n[II] The Mina implementation was delivered as originally specified and is open source, as you can see in the files; but we additionally delivered a fully working Midnight implementation, which is the better fit for Cardano and the community future, since Midnight is a Cardano partner chain, shares its validators/SPOs generates value to the community - this is why we focus on a bit more on the Midnight side. The rebranding / name change is reflected in the notes. We have also updated the documentation and video.\nThank you for the feedback.\nBRIEF\nThis milestone delivers a game template with local, browser-side ZK proof generation and a frontend anyone can run locally. It was built two ways: the Mina implementation named in the proposal (open source, preserved for reference), and a Midnight implementation - the deeper Cardano fit, since Midnight is Cardano's ZK partner chain and NIGHT is a Cardano native token. The ZK chain is a configuration choice in EffectStream, not an app rewrite, so both run the same template code. The Midnight build ships as the Werewolf and Go Fish templates - Compact contracts with proofs computed client-side in the browser - validated at production scale by other live games.\nLINKS TO REVIEW \n1. Video - local ZK proof generation in the template, Go Fish + Werewolf\nhttps://youtu.be/XjGOVIDkvBU\n\n2. Code - the templates (open source):\nWerewolf (Midnight + EffectStream, browser proofs):\nhttps://github.com/effectstream/werewolf-game\nWerewolf Compact contract (ZK circuits run client-side):\nhttps://github.com/effectstream/werewolf-game/tree/main/packages/shared/contracts/midnight/contract-werewolf/src\nGo Fish (ZK Mental Poker):\nhttps://github.com/effectstream/go-fish\nOriginal Mina implementation (as named in the proposal):\nhttps://github.com/PaimaStudios/paima-game-templates/pull/74\n\n3. Write-",
+      "kinds": [
+        "code",
+        "live",
+        "social",
+        "video"
+      ],
+      "links": 17,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 75000,
+      "promise": "Project Close Report:\n・pdf report\n・video report\n・Public release of the Template with proof generation technique",
+      "criteria": "・Community with the access to all templates we generated",
+      "report": "In response to the POA Comments\na. The \"Optional\" was a note for reviewers, as it was previously included as part of the previous milestones.\nb. Sorry for the bad AI voice, we are trying to get it right \nc. All the previous milestones are now signed off.\nThanks for your reviews and feedback :)\n\nNOTE FOR REVIEWERS no further changes from last submissions for here bellow.\nBRIEF\nThis is the Project Close Report for Catalyst proposal 1000075, \"Enable apps and games built in the Cardano ecosystem to leverage Z cryptography for privacy and scalability\". The project delivered ZK for the Cardano ecosystem end to end: a template combining Cardano stake delegation with private voting (delivered on both the original Mina path and on Midnight, Cardano's ZK partner chain), local in-browser proof generation, and production ZK games (Kachina, Dust-2-Dust, Go Fish). The close-out video and report are below.\n\nLINKS TO REVIEW\n1. Close-out video \nhttps://youtu.be/dmpfg5L4C8s\n\n2. Close-out report \nhttps://drive.google.com/file/d/1yWISAga5x6bboO1jMvXSM6cSo-IO2ZZ0/view?usp=sharing\n\n3. Open-source code, write-ups: (OPTIONAL)\nZK-Cardano (Private Delegation Voting) template\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/zk-cardano\nLocal Proof generation Examples WASM (also in milestones)\nhttps://github.com/effectstream/kachina-colosseum/blob/1f1f6947a602e2dbecc0c0094cd57bee94a9e6c7/frontend/src/phaser/src/wasm-proof-provider.ts#L6\nWrite-up (and templates links)\nhttps://effectstream.github.io/docs/blog/mina-zk-integration\n\n----------------------------------------------------------------\nCOMMENTS AND NOTES\n\nCatalyst Direction has reviewed and agreed on the following statement regarding this project and recorded under ticket #9527:\n・Rebrand. Paima has rebranded as EffectStream and is part of the Midnight Foundation; links might now appear under the name of either of these entities. \n・Scope. For reviewers: milestones and deliverables should be evaluated against the approved",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 10,
+      "cut": true
+    }
+  ]
+}

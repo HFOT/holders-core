@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・さまざまなCardanoフレームワークを含む、車検報告のためのブロックチェーンソリューションに関する包括的な研究文書。\n・プラットフォームの技術的フレームワークを詳述する初期アーキテクチャ設計文書(データベーススキーマやスマートコントラクト仕様など)\n・中古車検査報告制度の試作、基本入出力機能など\n・チームコラボレーションレコード、調査結果、技術調査などの進捗文書.",
+      "criteria": "・研究文書は明確で詳細で、潜在的なリスク、課題、およびソリューションを解決します。\n・アーキテクチュア・デザインは、プロジェクト・アドバイザーが適切に構造化、対面見直し、承認されています。\n・プロトタイプは、試験データが正常に保存され、取得し、基本的な機能的な車の検査記録システムを実証します。\n・プロジェクト内でのコラボレーションのためのパートナー企業との共同・書面による合意.",
+      "report": "パートナー企業との徹底的な研究を行い、システム設計に関する合意に取り組む。 当社のテクニカルアドバイザーの承認を受けています。\nマイルストーンの出力はすべて、以下のドライブでアクセスできます。\nhttps://drive.google.com/drive/folders/1BeULOMAIKiRyqEAduv Ly42e1UoDjczm?usp=sharing\nまた、各システムが実装される方法(プロトタイプ)のYoutube動画をアップロードしました。\n・フロントエンド: https://youtu.be/NVeGaH-hevs\n・バックエンド: https://youtu.be/jZxf9TQfJ0Y\n・UI/UX(リサーチ): https://youtu.be/8Hw7GI Upuw"
+    },
+    {
+      "no": 2,
+      "promise": "Inspector Mobile Application(Flutter):PT Inspeksi Mobil Jogjaの検査官がフィールドからデジタルレポートを実行および送信するための完全機能モバイルアプリケーション。 紙ベースのプロセスを置き換えます。 外部ダウンロード(検査官が使用する全てのデバイスはAndroid)で配布されます。\n内部検証ダッシュボード(Web):PT Inspeksi Mobil Jogjaチーム用の安全な内部Webダッシュボード。 このシステムは、ブロックチェーンにコミットする前に、提出された検査報告書のレビュー、管理、および品質保証を可能にします。\nパブリックデータプラットフォーム(Web): エンドユーザが最終確認された車の点検履歴を検索し、確認できる公開に直面しているウェブサイト。 このプラットフォームは、オンチェーンのデータ検索のためのBlockfrost APIと統合された堅牢なバックエンドを備えています。\nブロックフロスト API の統合: ブロックフロスト API との完全な統合により、Cardano の testnet にデータ (例、レポートハッシュ、メタデータ) をアンカーします。 このアプローチは、カスタムPlutusスマートコントラクトの初期計画を置き換えます。このユースケースでは、より成熟、安全、業界標準の方法を選択します。\n包括的なドキュメント: Github で完全な技術的な文書",
+      "criteria": "インスペクタワークフロー:インスペクタは、モバイルアプリケーションを使用して、検査レポートを正常にログイン、記入、送信することができます。\n内部検証:PT Inspeksi Mobil Jogjaチームは、内部ダッシュボードを介して提出されたレポートを表示、管理、および承認することができます。\n取引: 内部ダッシュボードから承認されたレポートは、ブロックフロストAPIを介してCardanoテストネットでレポートのハッシュとキーメタデータを誤って記録するトランザクションを正常にトリガーします。\nパブリック・データ・リトリバル:パブリック・フェーシング・プラットフォームは、Cardanoのテストネット(ブロック・フロスト経由)を正常に照会でき、正確に",
+      "report": "これは、新規および改訂された業績の証明です。 投稿後のコードに変更があったので、バグが発生しました。 ピンが更新されました。 お問い合わせ PoA投稿のフォーマットも向上します。\n業績の証明のための完全なデータを見ることができます:\nhttps://docs.google.com/spreadsheets/d/1J2uateTDs4o-ALaIFq47facUYau-7nhjB6savdNxvYo/edit?gid=952674242#gid=952674242\n・インスペクタワークフロー:\n・apkファイル: app.inspeksimobil.id (pin: 123456) または https://github.com/CAR-dano/form-app/releases/download/v2.2.7/palapa inspeksi-v2.2.7+37-debug.apk 直接リンク - デバッグ版をダウンロードします。 データは https://staging-cari.inspeksimobil.id に入力されます。 - [Revised & UPDATED PIN ||誤読防止の直接リンクを追加]\n・動画デモ:https://drive.google.com/file/d/1DSqUcnb0po0OGCWt -HO2oz52SEXLGBN/view?usp=sharing\n・注記:最新の反復では、アプリの認証システムがあります。 審査のため、現在オフにしています。 authシステムが誤って押し込まれた場合は、お知らせください。\n・内部検証:\n・リンク: https://staging-cari.inspeksimobil.id/ [BUG CLEARED || レート制限の問題があったので、ペジネーションの失敗はありました。\n・ユーザー名 プロジェクトCatalystUser\n・Email ProjectCatalystUser@inspeksimobil.id\n・パスワードPCUser1234\n・ロール管理者\n・ユーザー名 pentest2reviewer\n・Email pentest2reviewer@gmail.com\n・パスワード pentest2reviewer\n・ロールレビュアー\n・ユーザー名 pentest3customer\n・Email pentest3customer@gmail.com\n・パスワード pentest3customer\n・ロール顧客\n・フルビデオデモ https://drive.google.com/drive/folders/1c4zxwp19Lfpr7xCX97OdkvavClh39-Zp?usp=sharing\n・タイムスタンプ:\n\n・ダッシュボードにログイン:https://drive.google.com/file/d/1kJteyg-HWV8KFnuItVj nyy8uORt5Fy7/view?usp=sharing (0:00 - 0:53)\n・アクセスレポート:https://drive.google.com/file/d/1PJXN-HV 2v aIstufB-g VHbyrc-F ss/view?usp=sharing (0:00 - 3:31)\n・レポートの承認:https://drive.google.com/file/d/1PJXN-HV 2v aIstufB-g VHbyrc-F s/"
+    },
+    {
+      "no": 3,
+      "promise": "・Cardanoメインネット上に展開されたフルな運用プラットフォーム。\n・MITライセンスに基づくプロジェクト・コードベースのオープン・ソース・リリース(またはパートナー企業との契約によるその他のライセンス)\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・Cardanoメインネット上に展開されたプラットフォームで、アクセス可能。\n・GitHubで共有するコードベースは、適切なライセンスで共有されます。\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "最終的なマイルストーンの達成の証拠\n1)メインネット展開\n・ネットワーク:Cardano Mainnet\n・Deployment/Address:addr1q87nxru0k3jng3c44nayxlhe04dpc608lkrqj2q996mfam2xh0ntn0sylh08pvgzgr08m9cxn2pyz24qg4araszjkyz0lpmuh\n・公開アクセスリンク https://cari.inspeksimobil.id\n・改訂1(10/09/2025):予約システム固定\n\n2) オープンソースコードリリース\n・GitHubリポジトリ:https://github.com/orgs/CAR-dano/repositories\n・ライセンス:MIT\n\n3)最終クローズアウトレポート\n・公開報告リンク(PDF/HTML) https://docs.google.com/document/d/1l4zNdgf6-Qr9t4D1zGSJd z7ejfunKShO6vZhBkvs94/edit?usp=sharing\n\n4)最終クローズアウトビデオ\n・パブリックビデオリンク https://youtu.be/-a 33g5DJJY?si=JsPQ-jZU7s o2mZK\n・改訂1(10/09/2025):Youtube用のウォークスルーとブルーレイドプライベート情報を追加しました."
+    }
+  ]
+}

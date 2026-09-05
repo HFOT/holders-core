@@ -1,0 +1,33 @@
+{
+  "title": "Masumi AI Agent Network 2.0 by Serviceplan Group",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 75000,
+      "promise": "Development of a comprehensive Architecture Specification Document that enables AI Agents on the Masumi Network to leverage existing Decentralized Identity (DID) standards (W3C DID, Verifiable Credentials, KERI) without reinventing identity models. This specification will formally define the required interfaces for:\n・How agents bind DIDs to their wallets.\n・How identity is verified across agent interactions.\n・How Verifiable Credentials (VCs) such as reputation, compliance status (e.g., KYC/KYB), or technical expertise are issued and consumed.\n\nThe specification will provide the foundation for agent discovery, trust, and reputational systems across the ecosystem.\nScope Clarification\nThis milestone delivers the complete, finalized specification document.\n・Specification (Specs): A formal document defining the complete architecture, data models, and API endpoints for the Agent Identity Framework.\n・Identity Flows Detailed: The specification will fully define the following critical flows:\n・Wallet Binding Flow: The full cryptographic and API sequence for linking a Masumi Agent's wallet to a W3C DID or KERI identifier.\n・\n\n・Credential Verification Flow: The full API sequence, data structure",
+      "criteria": "・Specification Published: The final, comprehensive Architecture Specification Document is publicly published, detailing the required APIs, data models, and cryptographic standards for Agent binding, issuance, and verification.\n・Wallet Binding Defined: The specification contains the complete, formal definition of the Wallet Binding Flow, including required on-chain auditable event structures (if applicable).\n・VC Verification Defined: The specification contains the complete, formal definition of the Credential Verification Flow, including required schemas (e.g., for Agent Reputation VCs) and cry",
+      "report": "Technical Workshop Livestream: https://www.youtube.com/live/FqlzdFSI0OI?si=JVOym6oRV4G2JPeK\nTechnical Specification Document: https://c-ipfs-gw.nmkr.io/ipfs/QmUUyycApKYkuaqE5Rakw8hVytRGJ6vCoA2qPi7q9nevpj\nPresentation: https://c-ipfs-gw.nmkr.io/ipfs/QmSybRzadPY1npcLP4E7QmenZSpy4H8kDoeLs6qLCRcQWx",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 270000,
+      "promise": "Release of developer-friendly SDKs and tooling that make it easy to embed DID functionality and credential verification into agents, lowering the barrier for adoption. These SDKs will abstract away the complexity of DID resolution and credential verification, providing ready-to-use APIs for linking agents to DIDs (or potentially other Identity Standards), and requesting/verifying them during agent-to-agent interactions. \nThe SDK will come with documentation, tutorials, and onboarding guides, ensuring that any developer can add trusted identity to their agents in minutes rather than weeks.\nScope Details:\n・Supported Languages: The SDK is delivered in at least one major programming language: Python and/or JavaScript/TypeScript.\n・APIs Included: APIs for linking agents to identities, and core functions to request, hold, and verify VCs during A2A interactions.\n・Templates Included: The release includes a template agent application for each supported language to demonstrate out-of-the-box identity integration.",
+      "criteria": "・Multi-Language SDK Availability: The Masumi Identity SDK is released and publicly available in Python (e.g., via PyPI) and/or JavaScript/TypeScript (e.g., via npm).\n・Core API Functionality: The SDK in both languages contains functions that successfully perform:\n・Linking a Masumi Agent wallet to a DID/KERI identifier.\n・Requesting and verifying a Verifiable Credential (VC) in an agent-to-agent interaction.\n・Documentation: All required documentation is published, including API reference documentation, step-by-step tutorials, and developer onboarding guides.\n・External Integration Verified: At lea",
+      "report": "・SDK Package Publication Links: https://www.npmjs.com/package/@masumi_network/identity-sdk\n・Open-Source Repository:https://github.com/masumi-network/masumi-identity-sdk \n・Template: https://github.com/masumi-network/masumi-identity-sdk/tree/main/examples/template-agent\n・Complete Documentation Suite Links: https://masumi-identity-sdk-docs-8lhm9.ondigitalocean.app/get-started\n・External Integration Case Study: https://www.masumi.network/blogs/verifiable-identity-for-the-gwi-agent",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 5,
+      "cut": true
+    }
+  ]
+}

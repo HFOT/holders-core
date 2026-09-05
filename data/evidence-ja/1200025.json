@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・Rustのピアディスカバリモジュールの公開ソースコード\n・Rustアプリケーションの依存性として使用できる公開ライブラリ\n・モジュールのインターフェースの公開文書\n・ベンチマークと統合試験結果の報告",
+      "criteria": "・新たに作成したモジュールは、オンチェーンリレー登録からネットワークピアを発見する方法を提供します。\n・新たに作成したモジュールは、ピアシェアリングのミニプロトコルを使用して、ブートストラップのピアからネットワークピアを発見する方法を提供します.",
+      "report": "ソースコードは、GitHubリポジトリ(https://github.com/txpipe/pallas)で利用可能です。\nこのリンクでは、Rust crate が crates.io に公開されています。https://crates.io/crates/pallas/1.0.0-alpha.2\nドキュメントは docs.rs で公開され、ここで見つけることができます: https://docs.rs/pallas/1.0.0-alpha.2/pallas/\nGitHub Actions で自動 CI のテストレポートが公開されました。https://github.com/txpipe/pallas/actions/runs/14798997559\nYouTubeでピアディスカバリー機能を紹介する動画:https://www.youtube.com/watch?v=zbHccxrvEt4"
+    },
+    {
+      "no": 2,
+      "promise": "・Rustのアウトバウンドルーティングモジュールの公開ソースコード\n・Rustアプリケーションの依存性として使用できる公開ライブラリ\n・モジュールのインターフェースの公開文書\n・ベンチマークと統合試験結果の報告",
+      "criteria": "・新たに作成されたコンポーネントは、異なるヒューリスティックを使用してピアへのアウトバウンドトラフィックを管理し、全体的なトラフィックを最適化します.",
+      "report": "ソースコードは、GitHubリポジトリ(https://github.com/txpipe/pallas)で利用可能です。\nこのリンクでは、Rust crate が crates.io に公開されています。https://crates.io/crates/pallas/1.0.0-alpha.2\nドキュメントは docs.rs で公開され、ここで見つけることができます: https://docs.rs/pallas/1.0.0-alpha.2/pallas/\nGitHub Actions で自動 CI のテストレポートが公開されました。https://github.com/txpipe/pallas/actions/runs/14798997559\nYouTubeでアウトバウンドルーティング機構を提示する動画:https://www.youtube.com/watch?v=35dlPge3wOI"
+    },
+    {
+      "no": 3,
+      "promise": "・Rustのインバウンドモニターモジュールの公開ソースコード\n・Rustアプリケーションの依存性として使用できる公開ライブラリ\n・モジュールのインターフェースの公開文書\n・ベンチマークと統合試験結果の報告",
+      "criteria": "・新しく作成したコンポーネントは、インバウンド接続を監視し、レート制限/回転を強制することができます.",
+      "report": "A. 出力:pallas-network2モジュールで実装されたインバウンド監視メカニズムのソースコード。\n受諾条件: 実装は、一般にアクセス可能で、正常にビルドされ、リポジトリ内の関連するネットワークと監視ロジックが含まれています。\n証拠: https://github.com/txpipe/pallas/tree/main/pallas-network2\nB. 出力:PalasライブラリのRustのクレートを公開。\n受諾条件: crate は、crates.io で、外部プロジェクトによる依存性としてダウンロードして使用できるバージョンアップされたリリースで利用できます。\n証拠:\nhttps://crates.io/crates/pallas-network2 (特定のp2pモジュール)\nhttps://crates.io/crates/pallas/1.0.0-alpha.6 (p2pモジュールを含むroot crate)\nC. 出力:Palas の Crate の公開 API の文書。\n受諾の基準: ドキュメントはソースコードから生成され、オンラインでアクセス可能で、モジュール、タイプ、および使用量を記述します。\n証拠:\nhttps://docs.rs/pallas/1.0.0-alpha.6/pallas/network2/index.html (特定のp2pモジュール)\nhttps://docs.rs/pallas/1.0.0-alpha.6/pallas/(p2pモジュールを含むroot crate)\nD. 出力: 実装の検証を自動化したテスト実行レポート。\n受諾条件: 継続的インテグレーションの実行は、テストの実行を成功させ、渡されたコードに関連するステップを構築します。\n証拠:\n試験実行の人読み可能なレポート\nテスト実行を含むCI実行ログ(結果の3rdパーティの証拠として)\nE. 出力: 操作のインバウンドの監視のメカニズムを示す実証のビデオ。\n受諾条件: 公開アクセス可能なビデオは、実装された監視メカニズムの機能と動作を実証します。\n証拠: https://youtu.be/vlsWsYbGDs?si=ZeZc3Kqwusc2YHC1"
+    },
+    {
+      "no": 4,
+      "promise": "・Rustの完全p2pモジュール用の公開ソースコード\n・Rustアプリケーションの依存性として使用できる公開ライブラリ\n・モジュールのインターフェースの公開文書\n・プロジェクトの最終出力を示すビデオのクローズアウト\n・プロジェクトプロセスと結果を説明するレポートを閉じる",
+      "criteria": "・最終モジュールは、Cardanoと互換性のあるP2Pネットワークレイヤーを提供\n・最終ビデオは、触媒要件に準拠\n・最終報告書は、触媒要件に準拠",
+      "report": "A. 出力: Rust で実装されている P2P ネットワーキング モジュールのソースコード\n・受容基準: 実装は一般にアクセス可能で、正常にビルドされ、関連するネットワークロジックが含まれています。\n・証拠: https://github.com/txpipe/pallas\n\nB. 出力:ネットワーキング モジュールのための公表された錆の木枠\n・受容基準:クレートはクレートで利用可能です。 io と外部プロジェクトによる依存性として使用できる\n・証拠: https://crates.io/crates/pallas/1.0.0-alpha.6\n\nC. 出力: 公開 API ドキュメント\n・受容基準: ドキュメントはソースコードから生成され、オンラインでアクセス可能で、モジュール、タイプ、使用方法の説明\n・証拠: https://docs.rs/pallas/1.0.0-alpha.6/pallas/network2/index.html\n\nD. 出力: 実装の検証を自動化したテストレポート\n・受容基準:継続的インテグレーションが実行されると、テストとビルド手順の実行が成功\n・証拠: https://docs.google.com/document/d/1VBHdog kUD96qqq44ZEvjrIsbq43XElNUFtegknFJE/edit?usp=sharing\n\nE. 出力: P2P のネットワーキング モジュールの機能を示すクローズアウトのビデオ\n・受容基準: 公開アクセス可能なビデオは、実装されたシステムの動作と機能を示す\n・証拠: https://youtu.be/W4oytWNXhJY?si=dXR98gqWVN6oNaHC\n\nF. 出力: プロジェクト結果と成果物を説明するクローズアウトレポート\n・受容基準:プロジェクトスコープ、実装、結果のまとめた公開アクセス可能な書き込みレポート\n・証拠: https://docs.google.com/document/d/1xtncDX3lpymVIxuYTfKlVK0ErCMtLrrw7Q3-als1Jl4/edit?usp=sharing"
+    }
+  ]
+}

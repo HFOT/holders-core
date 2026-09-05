@@ -1,0 +1,59 @@
+{
+  "title": "Orcfax staking: rewarding good behaviour",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 29670,
+      "promise": "Orcfax will produce a qualitative research report which evaluates current Web3 staking protocols and tools available to Cardano projects",
+      "criteria": "Orcfax will have published qualitative research that investigates existing staking protocols and tools available to the Cardano ecosystem.\n\nOrcfax approaches this research with limited pre-knowledge and hopes that the initial literature review will guide the remainder of the research process. The successful completion of the research report will be evidenced by the thoughtful conveyance of the research question(s) and source material which may direct the development of an Orcfax proof-of-concept.",
+      "report": "What we Promised:\nOrcfax will produce a qualitative research report which evaluates current Web3 staking protocols and tools available to Cardano projects. This research and its findings were to be published on our public Orcfax GitHub repository.\nWhat we delivered:\nOrcfax has conducted limited research which investigates a sample set of staking protocols, and this can be found within our public GitHub repository which links out to the pdf containing research findings. This research was executed with a limited initial understanding of the staking protocol landscape, but it is our hope that this exercise will inform future development by Orcfax.\nAbstract\nThis paper provides a brief comparison of various staking protocols across\ndifferent blockchain networks and an assessment of each against an initial\nunderstanding of system requirements identified by Orcfax, which seeks to\nascertain whether an existing solution, as a drop in solution for Orcfax,\nadequately meets its needs. However, it was found that no single staking\nprotocol from the sample set fully meets all requirements outlined in the\nOrcfax Staking Protocol Requirements; each protocol was found to have its\nstrengths, but they collectively fall short of the preliminary system\nrequirements in one or more critical areas.\nWhile there are a multitude of staking protocols in operation, this\npaper has analyzed a limited sample which is meant to be representative;\nincluded in this assessment are the staking protocols utilized by: Algorand,\nAvalanche, Bitcoin Lightning, Cardano, Cosmos, and Ethereum. Each protocol's\nmechanism for staking, rewards, and penalties are examined in light of Orcfax\npriorities for network security, equitable participation, and long term\ndecentralization in order to better understand each protocol's features and\nthe implications of use for Orcfax participants.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 29670,
+      "promise": "Orcfax will produce the following:\n\n・Economic model report\n・Use case descriptions\n・Network architecture diagrams",
+      "criteria": "This milestone will conclude with the successful completion of all design outputs:\n・The economic model report will aim to concretize the understood costs of development and implementation, with the goal of suggesting a viable economic model to be utilized within a cardano proof-of-concept.\n・Use case descriptions will further flesh out the kinds of projects which may stand to benefit from implementing staking mechanics.\n・Network architecture diagrams will not only aim to illustrate how a cardano proof-of-concept would conceptually fit within the Orcfax solution, but also the various components",
+      "report": "What we Promised:\nOrcfax will publish insights into the economic impacts of integrating a staking mechanism into its solution. Use case descriptions will also be provided, along with complementary architecture diagrams.\n\nWhat we delivered:\nOrcfax has published a document to its public GitHub repository which addresses all required aspects through detailed economic modeling, use case exploration, and network architecture descriptions.\nThe document aligns well with the stated milestone completion requirements for the following reasons:\n\n1. Use Case Descriptions:\n・Project Beneficiaries: The document outlines a range of projects that could benefit from staking mechanisms extending beyond the Orcfax oracle use case. The modular design of this project, where the staking PoC as an output of milestone 3 can be used independently of our consensus PoC, supports broader utility and applicability. Specific use cases for staking, such as decentralized service provision are clearly articulated, which demonstrates adaptability for other decentralized applications; this content can be found in:\n・2.1 Specific considerations for Staking\n\n2. Network Architecture Diagrams:\n・Conceptual Fit within Orcfax Solution: With some unknowns still present prior to settling on final design, we rely on textual descriptions to convey current understandings of PoC design after research objectives were met in the last milestone. Where possible, diagrams and formula have been provided. Diagrams have also been provided for areas where design has already begun ahead of the milestone 3 start; this content can be found in:\n・3.1 Staking components overview\n\n3. Economic considerations:\n・Concretization of Costs: The document explores the economic implications of participating in the network, including initial costs for validators (NFT and token acquisition) and infrastructure costs; this content can be found in:\n・5. Participation costs\n・Viable Economic Model: The analysis discusses potential profit and loss s",
+      "kinds": [
+        "other"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "15",
+      "cost": 24725,
+      "promise": "Orcfax will produce software code that demonstrates how a validator node operator can:\n・deposit testFACT stake\n・receive testFACT rewards\n・have testFACT slashed for non-conformant behaviour",
+      "criteria": "Orcfax will consider the above outputs successfully developed after each has successful passed test cases:\n・A test node operator must be able to deposit testFACT as stake\n・The system must be able to submit testFACT rewards\n・A test node operator must successfully receive testFACT rewards\n・The system must be able to slash test node operator stake\n・A test node operator must successfully have their stake slashed",
+      "report": "What we promised:\nOrcfax will produce software code that demonstrates the following functionality:\n・Ability to deposit assets (e.g. testFACT) as stake\n・Ability to receive rewards\n・Ability to slash participants\n\nWhat we delivered:\nOrcfax has delivered a PoC in this milestone which meets the requirements set out. The PoC has been open sourced and can be found here with guides for using the PoC; this repo also contains the deliverables required in previous milestones so that users may benefit from both research and development components.\nFor test cases, we have recorded a walkthrough of the PoC so that users can see demonstrations of the functionality.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "16",
+      "cost": 14835,
+      "promise": "Upon successful completion of the project deliverables, including:\n・A research report evaluating current Web3 staking protocols and tools available to Cardano projects;\n・An economic model report;\n・Use case descriptions;\n・Network architecture diagrams;\n・And a proof-of-concept which demonstrates how a validator node operator can deposit testFACT stake, receive testFACT rewards and be slashed testFACT for non-conformant behaviour.\n\nOrcfax will conclude the project by producing the final close-out report and closeout video.",
+      "criteria": "Upon successful completion of previous milestones, the following will be accepted by the Project Catalyst team as evidence that Orcfax has met its project obligations:\n・Final closeout report (which will be made publicly available)\n・Final closeout video (which will be made publicly available)",
+      "report": "A. Output: A research report evaluating current Web3 staking protocols and tools available to Cardano projects\nAcceptance criteria: Orcfax will have published qualitative research that investigates existing staking protocols and tools available to the Cardano ecosystem.\nEvidence: https://github.com/orcfax/docs/blob/main/docs/project-catalyst/wallis-koch--2024--a-comparative-analysis-staking.md\n\nB. Output: An economic model report\nAcceptance criteria: The economic model report will aim to concretize the understood costs of development and implementation, with the goal of suggesting a viable economic model to be utilized within a cardano proof-of-concept.\nEvidence: Orcfax published a document to its public GitHub repository which addressed all Milestone 2 requirements, including economic consideration such as:\n・Concretization of Costs: The document explores the economic implications of participating in the network, including initial costs for validators (NFT and token acquisition) and infrastructure costs; this content can be found in: 5. Participation costs\n・Viable Economic Model: The analysis discusses potential profit and loss scenarios for validators, focusing on maintaining decentralized integrity through economic incentives and disincentives. Slashing mechanisms and rewards tied to service quality highlight a robust, sustainable model; the economic considerations also investigate expected rewards for validators, and how Orcfax intends to pay them. This content can be found in:\n・3. Orcfax staking: rewarding good behaviour\n・6. Rewards\n\nC. Output: Use case descriptions\nAcceptance criteria: Use case descriptions will further flesh out the kinds of projects which may stand to benefit from implementing staking mechanics.\nEvidence: Orcfax published a document to its public GitHub repository which addressed all Milestone 2 requirements, including use case descriptions. The document outlines a range of projects that could benefit from staking mechanisms extending beyond",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 16,
+      "cut": true
+    }
+  ]
+}

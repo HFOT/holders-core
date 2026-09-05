@@ -1,0 +1,84 @@
+{
+  "title": "Subbit.xyz : Cardano's featherweight L2 | With Real World Application | Kompact.io x Orcfax Collab",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 26667,
+      "promise": "Spec. Smart contract with fuzz tests. Benchmarks. \nThe benchmarks will be \"good enough\" approximations of \"typical txs\" and provide, a) evidence txs are within current ledger limits and b) ball park figure for tx costs",
+      "criteria": "SC aligns with spec. SC builds. Tests succeed. Benchmarks run.\nThe output of benchmarks are numbers providing evidence of the feasibility and costing of \"typical txs\" \nThere are at least 10 tests, with some covering positive conditions, some negative. This is a poor proxy in lieu of a good measure. We are aiming for a \"sensible\" amount of tests - a too subjective a criteria. I believe Aiken team has expressed the desire to provide coverage stats on testing but this does not yet exist and I doubt it will in the near future.",
+      "report": "Contextualising blog post: https://subbit.xyz/posts/subbit-takes-the-bench.html\nSpec: https://github.com/kompact-io/subbit-xyz/blob/main/docs/design/l1-spec.md\nADRs: https://github.com/kompact-io/subbit-xyz/tree/main/docs/adrs\nSC aka validator : https://github.com/kompact-io/subbit-xyz/tree/main/aik",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 26666,
+      "promise": "Tx building code and tests.\nThe spec outlines what types of txs should be build-able. These make up the transitions of the subbit channel lifecycle for \"typical txs\" (as opposed to exotic txs where the user wishes to also include conditions legal yet irrelevant to subbit, eg split an output value between 2 different addresses). The tx building code is an implementation of this part of the spec. \nTests will provide some coverage of successful txs, as well as failing txs. It (clearly) will not be exhaustive.",
+      "criteria": "Feature aligns with Spec. Tests succeed\nAt least 1 correctly succeeding test for each \"tx type\" \nAt least 1 correctly failing test for each \"tx type\"\nDemonstration of complete lifecycle on a testnet (or mainnet)",
+      "report": "Contextualising blog post including annotate txs of lifecycle, and list of tests meeting M2 acceptance criteria : https://subbit.xyz/posts/building-txs.html\nCode : https://github.com/kompact-io/subbit-xyz/tree/main/js",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 20000,
+      "promise": "SDK, and a How-To guide on wrapping an existing service with Subbit.xyz\nM2 Tx building outputs components of managing a subbit channel. \nM3 extends M2 output with a set of functions and/or services that facilitate the integration of subbit ie a subbit SDK. \n**An appropriate form this takes is not yet known.**\nBoth client and server (ie consumer and provider) require persistent state including signing keys, and an l1 interface for monitoring channels as well as building and submitting txs. There is not a one-size-fits-all answer to this since it depends on the execution context for each. \nWe presume that the client and server interact via http requests (although the core of subbit is agnostic to transport. Snail mail would also work). Perhaps subbit can act as \"middleware\" both sides leaving the application otherwise untouched. However it is likely that for only the most basic applications (eg where the cost of a request can be deduced by regex on the url) will the application and costings be so decoupled. \nThe term \"SDK\" is, on reflection, suboptimal. There is no compiler, which according to various blogs is a typical part of what forms an SDK. However, neither \"API\" nor \"library\"",
+      "criteria": "1 - A (sub)repo of \"code to facilitate subbit integration\"\n* Any and All tests run\n* Documentation present for key aspects \n2 - Demo app\nClear build instructions. Builds successfully. \nClear instructions for executables and how to run demo. \nDemo scripts run with either a faux L1 or against a testnet/mainnet. \nAt least four executable scripts: without subbit, with subbit, with evil client, with evil server. \nScripts with subbit output information on final state/ state change and indicate cost of scenario.\nA blog post-esque piece explaining what the:\n* what the app does without subbit\n* the mod",
+      "report": "・Summary: https://subbit.xyz/posts/reintro-to-subbit-man.html\n・Gentler intro: https://subbit.xyz/posts/intro-to-subbit-man.html\n・Project repo: https://github.com/kompact-io/subbit-xyz/commit/310db3ed948c8e9f0ec5e3953483d17cc24f6e08\n・SubbitMan: https://github.com/kompact-io/subbit-man-js/\n・AccMan: https://github.com/kompact-io/acc-man\n・NowDB: https://github.com/kompact-io/now-db\n\n***NowDB is the app***. \nFull instructions on how to run it are in the repo. Although I strongly recommend starting with the blog post in order to have a better context.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 40000,
+      "promise": "Orcfax integration: payment solution based on Subbit\nOrcfax is an oracle service provider for the cardano blockchain. Orcfax clients are typically dapps. They request oracle data, aka fact statements, to be made available on the Cardano blockchain. \nTypically the relationship reflects that appropriate to Subbit: there is a consumer and a provider in which the consumer is repeatedly making small requests of service over a period of time. \nThe output is real world application using subbit. \nA client can:\n* view channel state and manage channel (ie open, fund, close, drain).\n* place orders for fact statements\n* see historical orders.\nA provider can:\n* view subscriber channels\n* handle orders.\nIt is likely the output has components that are web based guis, although we reserve the option to use a cli based interface if its deemed more appropriate.\nClients will likely wish to place orders programmatically as well as manually. The output should address this.",
+      "criteria": "* A requirements document that reflects on Orcfax clients reported needs (particularly wrt integrating the orcfax payment solution with their product and programmatic orders) \n* Other high level design documents including a component diagram, ER or similar \n* The app handles the required feature set outlined above. \n* Early iteration has been used by beta users with feedback given.",
+      "report": "* Requirements and design documentation (including diagrams): \nhttps://github.com/orcfax/subbit-man-js/blob/main/docs/architecture.md\nhttps://github.com/orcfax/subbit-man-js/blob/main/docs/design.md\n* Video demo supporting app functionality:\n https://youtu.be/ng8SFAgkQC8?si=y7Jf1-ggoi812L47\n* Beta feedback and how it has been leveraged to improved design: \n﻿https://github.com/orcfax/subbit-man-js/blob/main/docs/beta-feedback.md",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 9
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 14167,
+      "promise": "Open sourcing the Orcfax integration as a real world application.\nThis is not just: change repo setting, git add OS license. \nOpen sourcing includes that, but is really about making the code accessible to any interested party. \nThe readme will outline the overall repo layout, and the pre-req dependencies (eg `node + vite`), and the key commands for building, testing and running (eg `pnpm i && pnpm test && pnpm server`). \nIt will also contain an explanation of expected resources and how to acquire/ run them (eg blockfrost key, ogmios/kupo) and signposting to where a user can find out more about these. \nThe output includes a blog post-esque piece that introduces and tours the code. \nThe piece contains reflects on the design decisions made (in place of any more formal ADR) and comments on possible alternatives and extensions.",
+      "criteria": "* README as described above with all commands working as expected. \n* README points at introductory piece\n* Repo has a standard open source license, contributing guidelines, and changelog (which initially may be empty).\nIf contributing guidelines include linters or precommit hooks, the code base passes these. \n* Introductory piece contains links back to hosted code - to the line level where appropriate \n* Introductory piece reflects on the design decisions made (in place of any more formal ADR) and comments on possible alternatives and extensions.",
+      "report": "* README: https://github.com/orcfax/on-demand/blob/main/README.md\nas described above with all commands working as expected, and with a pointer to the introductory piece.\n* Open source repo: https://github.com/orcfax/on-demand\n* Introductory piece: https://github.com/orcfax/on-demand/blob/main/docs/code-tour.md\nwith links back to hosted code and reflections on the design decisions made",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 22500,
+      "promise": "・Final close-out report\n・Final closeout video\n\nKey outputs: Project coherence, Expanded awareness.\nReview all previous output and code to realign any drift (eg stale docs _etc_).\nActively promoting the potential of Subbit.xyz to the Cardano community and beyond.",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n\nSubbit github repo is maintained: \n* Any changes have been coherently propagated (including changelog) \n* gh issues and prs have been engaged if not fully resolved\n\nA best endeavor is placed on promoting a subbit workshop. It would likely rely on an already captivated, or captive, audience. A thin layer of mid-level infra is not the sexiest draw. Obvious contenders would be Buidler Fest events (but note - even then I was present at a talk that consisted only of me, the speaker, and one of the organizers .",
+      "report": "・Close out report with video link attached : https://subbit.xyz/posts/closeout.html\n\n> Review all previous output and code to realign any drift \nWe did not foresee this would end up meaning a full stack rewrite in the wake of the hardfork. That is what it became. \nThere is CHANGELOG: https://github.com/kompact-io/subbit-xyz/blob/main/CHANGELOG.md\n> A best endeavor is placed on promoting a subbit workshop. It would likely rely on an already captivated, or captive, audience. \nThis was always ambitious. Our talk for buidlerfest Argentina was unfortunately rejected. \n> Demonstration of outreach: A CRM-esque document \n(to be shared privately?) \n\nWe hope that our weaker desired evidence on some fronts is compensated for by our over delivery on others.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 2,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "パフォーマンスを比較するために、さまざまな言語で実装されるバリデータの仕様書を書いてください.",
+      "criteria": "プロトコルの高レベルな概要を提供する仕様文書は、バリデータの設計と必要なチェックを完全に記述します.",
+      "report": "出力:\nLaTeX のバリデーターを記述するバリデーターで記述するバリデーターの仕様は、SOM で説明したパフォーマンスを比較するために、さまざまな言語で実行されます。\n\n受諾:\n当社の仕様書は、当社のSOMで概説されているバリデータの設計とチェックの高レベルのプロトコルの概要と説明を提供します。\n\n証拠:\n\nLaTeXで書かれたプロジェクトバリデータのためのEvergreen仕様文書\nhttps://mlabs-haskell.github.io/uplc-benchmark/specifications.html\n\nそしてLaTeXコードはGHリポジトリでホストされています\nhttps://github.com/mlabs-haskell/uplc-benchmark/tree/master/specifications"
+    },
+    {
+      "no": 2,
+      "promise": "Plutarch のマイルストーンからドキュメントで指定されたバリデータを実行します.",
+      "criteria": "実装されたPlutarchバリデータは、仕様文書から高レベルの概要と、実装されたバリデータチェックと、技術的な仕様に一致します.",
+      "report": "インフォメーション\nマイルストーンで提供されるLaTeXバリデータ仕様を利用すると、チームメンバーはすぐにPlutarchの2つのデリバリーを実装できるようになりました。 迅速な配達のペース - 休日の季節に関するスタッフの懸念のために調整 - 実装は、実際にスケジュール(12月11日を併合)の先を配達しました。 それにもかかわらず、これはオリジナルのアイデアスケールの提案と当社のマイルストーンの2つのステートメント文書で実現可能な詳細です。\n\nアクセプタンス・クリテリア\n以下にリンクしている PR で見ることができるように、 merge には複数の構成とビルド管理ファイルなどがあります。また、Plutarch 実装のソースコードファイルも重要になります。 LaTeX の仕様ファイルで説明したのは、最初のProf of Achievement の一部です。 Haskell ファイルは、Plutarch を使用して書かれているバリデータスクリプトの実装 - 単純な例のプロトコル、NFT マーケットプレースを含みます。 リーダーは、この例のプロトコルは、複数のオンチェーン言語で実装され、最も実行言語を識別するためにベンチマークされたことをリコールします。\n\nマイルストーンの受諾条件による 2つのドキュメンテーション、デベロッパは、このPlutarchの実装が仕様設計と実装されたバリデータチェックと、技術的仕様にもマッチしています。\n\nソリューション\nこのマイルストーンの完成度を比較したファイルと、当社の業績の証明はこちら\nhttps://github.com/mlabs-haskell/uplc-benchmark/pull/13/files\nそして、チームメンバーのハードワークに先立ち、スケジュールを先取りできると嬉しいです."
+    },
+    {
+      "no": 3,
+      "promise": "リファレンスの実装をテストする包括的な言語アグノスティックテストフレームワークを開発し、他の言語で実装をテストするために後で使用されます.",
+      "criteria": "Plutarch検証の実装は、テストスイートを通過しています.",
+      "report": "インフォメーション\n\n参照実装をテストするための包括的な言語アグノスティックフレームワーク\n\nアクセプタンス・クリテリア\n\nPlutarch検証実装はテストスイートを渡します\n\nソリューション\n\nGitHubのリンク:\n\nhttps://github.com/mlabs-haskell/uplc-benchmark/pull/20\n\n成功した実行から出力されるコマンドライン:\n\nUPLCのベンチマーク\nパンフレット\nNFTマーケットプレイス\n買う:OK\nInvalid は 1 つを購入します。 - datum: OK\nInvalid 買う 1 - ハッシュ datum: OK\n無効な購入1 - あまりにも少しを支払う:OK\n無効な購入1 - あまりにも多くの支払い:OK\n無効な購入1 - ジャンクで支払う:OK\n無効な購入1 - 支払いなし:OK\nキャンセル:OK\nキャンセル - 間違ったキー: OK\nキャンセルキーなし:OK\n技 g研\nLP マイニングポリシー\n有効なミント - 1つのNFT:OK\n有効なミント - 2つのNFT:OK\n無効なミント - NFT を費やさない: OK\n無効なミント - 2つのNFTの1つ:OK\n無効なミント - 間違った NFT の名前: OK\nNFT マイニングポリシー\n有効なミント:OK\n無効なミント - 1 つ以上のミント: OK\n無効なミント - 無効な名前: OK\n無効ミント - 初期費用なし:OK\nInvalid ミント - 初期使用間違った ID: OK\nInvalid ミント - 初期使用間違った idx: OK\nInvalid mint - 初期使用 idx 以上 255: OK\nプールのバリデータ\nスワップ\n有効なスワップ - BのA:OK\n有効なスワップ-AのためのB:OK\n無効なスワップ - 手数料なし:OK\n無効なスワップ - NFT を盗む: OK\n無効なスワップ - datum なし: OK\n無効なスワップ - 変更された datum: OK\nInvalid Swap - ユニットダタム:OK\n無効なスワップ - プール:OK\nInvalid Swap - 自己出力なし:OK\nデポジット\n有効な沈殿物:OK\n無効な預金 - ミントしかしデポジットなし:OK\n無効な沈殿物-十分に沈殿物無し:OK\n無効な預金 - NFTを盗む:OK\n無効な預金 -  datum なし: OK\n無効な入金 - 変更された datum: OK\nフィードバック\n有効な撤退:OK\n無効な退出 - ミントしかし撤退なし:OK\n無効な退出 - あまりにも多くの撤退:OK\n無効な退出 - NFT を盗む: OK\n無効な退出 - datum なし: OK\n無効な退出 - 変更されたdatum:OK"
+    },
+    {
+      "no": 4,
+      "promise": "パフォーマンスを比較するために、アイケン、PlutusTx、Opshin言語を使用して参照Plutarchの実装と等しい仕様からバリデータを実行します。 すべての実装を同じテストスイートに差し込むことで、同等性を確保します.",
+      "criteria": "Aiken、PlutusTx、Opshinの代替バリデータの実装は、テストスイートを通過しています.",
+      "report": "ソリューション\n\nPoA4の証拠として、これらのリンクを参照してください。\n\nMonorepo:\n\nhttps://github.com/mlabs-haskell/uplc-benchmark\n\nランニングアイケン:\n\nhttps://github.com/mlabs-haskell/uplc-benchmark/tree/master/implementations/aiken#usage\n\nPlutusTx を実行:\n\nhttps://github.com/mlabs-haskell/uplc-benchmark/tree/master/implementations/plutus-tx#usage\n\n動くopshin:\n\nhttps://github.com/mlabs-haskell/uplc-benchmark/tree/master/implementations/opshin#usage\n\n実行テスト:\n\nhttps://github.com/mlabs-haskell/uplc-benchmark/tree/master/tests#usage\n\nここでは、テストスイートから出力されます。\n\nhttps://drive.google.com/file/d/15pF5CQRhHSFCCYrRCwBlLtVLB-ulv-7Y/view?usp=sharing\n\nドキュメンタリー:\n\nレビュアーのフィードバックごとにドキュメントを拡大しました。\n\nhttps://github.com/mlabs-haskell/uplc-benchmark/pull/40"
+    },
+    {
+      "no": 5,
+      "promise": "自動パイプラインを開発し、ベンチマークとテストスイートを実行し、パフォーマンスレポートをコンパイルし、プロジェクトのウェブサイト上で公開します.",
+      "criteria": "Plutarch、アイケン、PlutusTx、およびOpshinの実装のパフォーマンスは、Plutus Validatorの代表的な例としてバリデータの仕様を選択するための合理を比較し、報告しています.",
+      "report": "ソリューション\n\nパフォーマンスレポート、方法論のあるウェブサイト:\n\nhttps://mlabs-haskell.github.io/uplc-benchmark/introduction.html\n\n結果と結果のWebサイトのビデオウォークスルー:\n\nhttps://www.youtube.com/watch?v=xIAo43WU5fg\n\n書面によるクローズアウトレポート:\n\nhttps://drive.google.com/drive/folders/1xxdL- eq76RQDXhqFlGXcPMkNILC6oP7?usp=sharing"
+    }
+  ]
+}

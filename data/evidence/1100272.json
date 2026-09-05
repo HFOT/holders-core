@@ -1,0 +1,62 @@
+{
+  "title": "Sync.Land | Metaverse & Video Game Music Licensing (Awen)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "・An initial design document outlining a high-level project lifecycle, including roadmap and timeline\n・An agile board for user stories and team tasks\n・Infrastructure setup completed.\n・A GitHub repository where code and documentation will be hosted",
+      "criteria": "・The initial design document is clearly written and provides enough detail for next milestone to begin\n・The use stories and team tasks are clearly defined\n・Successful completion of infrastructure setup (ie NMKR and CardanoPress)\n・There is a GitHub repository created",
+      "report": "The following list are direct links to documents hosted in our project Github repository.\nMilestone 1 - Initialization\nDocuments\n﻿Design Document - information about initial design, including infrastructure setup\nProject Status Report - Current project status\nProject Timeline - project roadmap, timeline, and responsibilities\nNotion Kanban Board - board of all tasks, stories, and epics for this project",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 25000,
+      "promise": "・Develop the marketplace architecture and basic features\n・Pilot users selection & marketing documentation prepared.\n・Users are able to upload songs to the marketplace\n・Test the first sync license NFT transaction\n・GitHub repository of code and documentation",
+      "criteria": "・Test case: a user can register and upload a song to the marketplace\n・Test case: a simple Cardano transaction of an NFT that includes metadata for a sync license\n・Pilot user selection strategy outlined\n・The documentation is clearly written",
+      "report": "The following list are direct links to documents hosted in our project Github repository.\nMilestone 2 - Development\n\nProject Status Report - Current project status\nProject Timeline - project roadmap, timeline, and responsibilities\nPilot Marketing Document - information about pilot users selection & marketing setup\nTest Case: Sync NFT License Metadata - a simple Cardano transaction of an NFT on Cardano's Pre-production Network that includes metadata for a sync license\nTest Case: User Registration & Song Upload - a user can register and upload a song to the marketplace",
+      "kinds": [
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "20",
+      "cost": 20000,
+      "promise": "・Publicly announce the launch of the marketplace\n・Launch the public website\n・Proof of concept implementation of the marketplace API\n・Official launch surveys and user engagement executed.\n・Updated GitHub and documentation, including API specs",
+      "criteria": "・A public website is available and can pass test cases\n・Test case: A public user can purchase an NFT containing the sync license\n・Full operational status of the user feedback mechanism.\n・Execution of official launch surveys and user engagement.\n・The documentation is clearly written",
+      "report": "To the Catalyst Fund 11 reviewers,\nI am pleased to submit the Proof of Achievement for Sync.Land — Milestone 3: Marketplace Launch & API Development, demonstrating that all milestone outputs have been delivered and all acceptance criteria have been satisfied with verifiable on-chain and on-web evidence. The complete evidence pack for this milestone lives in the GitHub repository at github.com/Awen-online/sync.land/tree/main/docs/M3_Marketplace.\nBelow is the requirement-by-requirement mapping.\nOutput 1 — Publicly announce the launch of the marketplace\n・Acceptance Criterion satisfied: Public, dated announcements published across the Awen brand channels.\n・Evidence:\n・awen.online news post: https://awen.online/news/sync-land-launches-awens-peer-to-peer-music-licensing-platform-goes-live/\n・X / Twitter: https://x.com/awen_online/status/2069076274098606574\n・LinkedIn: https://www.linkedin.com/posts/awenonline_the-wait-is-over-syncland-is-live-activity-7474841972634165248-u4_y\n・Instagram: https://www.instagram.com/p/DZ5Iym_ks9i/\n\nOutput 2 — Launch the public website\n・Acceptance Criterion satisfied: A public website is available and can pass test cases.\n・Evidence:\n・Live marketplace: https://sync.land\n・Marketplace visual tour (homepage, song browse, song page, album page) is documented in Section 1 of SyncLand_Marketplace_and_OnChain_Evidence_M3.pdf: github.com/Awen-online/sync.land/blob/main/docs/M3_Marketplace/SyncLand_Marketplace_and_OnChain_Evidence_M3.pdf\n\nOutput 3 — Proof of concept implementation of the marketplace API\n・Acceptance Criterion satisfied: A public user can purchase an NFT containing the sync license; the implementation is documented and externally callable.\n・Evidence:\n・End-to-end screen recording (~4 min, Cardano preprod): github.com/Awen-online/sync.land/blob/main/docs/M3_Marketplace/Test_Case_-_NFT_License_Purchase.mp4\n・Unlisted YouTube mirror for redundancy: https://www.youtube.com/watch?v=yt-R_F1wTGM\n・Canonical on-chain provenance for the demonstrated mi",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "21",
+      "cost": 20000,
+      "promise": "・User feedback including surveys and other metrics\n・Updated functionality for marketplace including any bug fixes\n・The API module is publicly launched\n・Updated GitHub and documentation",
+      "criteria": "・User feedback is gathered, analyzed, and put into a document\n・Marketplace updates, including bugfixes, are clearly displayed in the documentation\n・Test case: An external application is able to verify a sync license via public API\n・The documentation is clearly written",
+      "report": "To the Catalyst Fund 11 reviewers,\nI am pleased to submit the Proof of Achievement for Sync.Land - Milestone 4: Marketplace Updates & API Launch, demonstrating that all milestone outputs have been delivered and all acceptance criteria have been satisfied with verifiable on-web and on-chain evidence. The complete evidence pack for this milestone lives in the GitHub repository at https://github.com/Awen-online/sync.land/tree/main/docs/M4_API.\nEvery Cardano transaction, policy and asset referenced below is on the Cardano preprod testnet, not mainnet, the same network used for the Milestone 3 demonstration.\nBelow is the requirement-by-requirement mapping.\nOUTPUT 1 - User feedback including surveys and other metrics\nAcceptance Criterion satisfied: User feedback is gathered, analyzed, and put into a document.\nEvidence:\n・SyncLand_User_Feedback_Report_M4.pdf, covering four instrumented feedback channels and the figures read from production on 2026-09-01.\n・The report closes a request-to-usage loop inside a single reporting window: the largest feature request in the survey data shipped, and the resulting open briefs board is public at sync.land/briefs\n\nOUTPUT 2 - Updated functionality for the marketplace, including bug fixes\nAcceptance Criterion satisfied: Marketplace updates, including bugfixes, are clearly displayed in the documentation.\nEvidence:\n・SyncLand_Marketplace_Updates_M4.pdf, the changelog for 2026-06-23 to 2026-09-01, with every change carrying the commit hash that implements it.\n・Visible in production: sync.land/licensing and sync.land/free-sync-license\n\nOUTPUT 3 - The API module is publicly launched\nAcceptance Criterion satisfied: Test case, an external application is able to verify a sync license via public API.\nEvidence:\n・The successful API request. Public and unauthenticated, openable by a reviewer with no token, account, or contact with us: licenses/12277/verify. Returns \"Island Vibe\" by Creepzz under the Sync.Land Free Sync License, nft_verified: true, and",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 22,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "title": "PRISM analytics platform",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 15000,
+      "promise": "The development of the analytics application consists of multiple parts in the backend: a custom PRISM-Node (previously called “Node-Connector” In the architectural diagrams), which reads the blockchains and extracts all PRISM operations. A backend for the analytics-platform which calculates statistical information and provides endpoints to query the extracted PRISM operations. And lastly a frontend application which displays the operations, statistical data and offers advanced functionality to interact with the PRISM data. Together they form the analytics-application.\n(A) Development of a PRISM Node with the capability to read the blockchain and parse the PRISM operations on the blockchain (on PreProduction network)\n(B) Development of a analytics-application with a web-frontend which is able to display the PRISM operations found by the node.\n(C) Development of a feature inside the analytics-application which is also able to do a basic statistical analysis.",
+      "criteria": "(A) + (B) : A working website which displays all the PRISM blocks found on the PreProduction network in near real-time.\n(C): The Website also offers basic statistical information. E.g., number of PRISM transaction in the last 30 days.",
+      "report": "Video which shows the working website and the goals (A)+(B), (C).\nLink to the video: https://youtu.be/8E6oIwqrmkQ\nLink to the website: https://analytics.blocktrust.dev",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 15000,
+      "promise": "(A) A registration-page to register as a new user with an email (maybe also a DID).\n(B) Button and interface to log in as a registered user.\n(C ) Page only visible to registered users which allows you to select a subset of DIDs, group them and tag (name) them.\n(D) Page only visible to registered users to upload Verifiable credentials to store them.\n(E) Page with additional statistical information which were not available in Milestone 1 (e.g., statistical information about the tagged DIDs)",
+      "criteria": "(A) + (B) A user can register and log in.\n(C) The user is able to track certain DIDs over time. The user can tag (name) and group those DIDs to not lose track of them. This is only available to registered users.\n(D) The user can also upload Verifiable Credentials. This is the foundation for Milestone 3.\n(E) Based on the tagged DIDs the user is able to retrieve additional statistical information.",
+      "report": "Evidence: https://youtu.be/41oUeA8xUe8\nLInked is a video (8min), showing:\n(A) + (B) The registration process using either email or SignIn with DID. The complete Sign-In process is demoed\n(C) + (D) In a 'Sessions View' DIDs, VC and Presenations can be stored, named (tagged) and grouped\n(E) Additional information can be resolved for a DID, including new ones, not available before.",
+      "kinds": [
+        "video"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 15000,
+      "promise": "The graph-view is the most important, but also most complicated, feature. It will be delivered in two steps. First, in this milestone, a simple UI which displays the graph correctly. In the next milestone, we’ll take the feedback and learnings and refine the graph-view, while also adding features. The application should still be ready for usage for the general public at the time of finishing this milestone.\n(A) A resolver which calculates the relationship between DIDs based on a list of DIDs and VCs.\n(B) A webpage which displays the relationship between DIDs and VCs as a graph or similar mechanism to get a visual overview over the connections.\n(C) A user-specific storage of selected DIDs and VCs to display them in a graph.\n(D) Possibilities to extend or reduce an already created graph with new DIDs and VCs.",
+      "criteria": "(A) + (B): A website which shows a graph based on a preselected set of DIDs and VCs.\n(C) Features to save the graph and reload the graph after reloading the page.\n(D) Features to expand the graph by adding additional DIDs or VCs in the user-interface.",
+      "report": "The video is a bit longer that expected, given a bit of insight of what happend over the last months. It also covers the Acceptance criteria A-D.\nA video is provided here: https://youtu.be/MgHTbQ6yVOM\nTo try the application on your own go here: https://analyticsplatform.azurewebsites.net/",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 15000,
+      "promise": "With this milestone, we’ll be refining the graph view depending on the user feedback and add features. The app can be used all the time by the public while the development continues in the background.\n(A) If public trust registries are deployed by a third party and they have a public API those will integrated into the application.\n(B) Refinement of the user-interface. The graph view is expected to need some improvements. Other parts of the application will also likely get a UI-overall.\n(C) If PRISM (v1) is available on the mainnet at the time of the milestone, the application will also show PRISM operations on the mainnet.",
+      "criteria": "(A)\tIf a public trust-registry is provided by IOG (Atala PRISM team), the trust registry will be integrated into the app: DIDs that are in the trust-registry will be marked. At the time of writing (Oct. 2022), IOG is determined to built that trust registry, but details are currently missing.\n(B)\tComparing to milestone 3 there will be changes to the UI. Also the interface will provide additional features. (e.g. add additional DIDs in the graph-view itself).\n(C)\tIf parties are able to write PRISM (v1) operations to the mainnet, they will be shown. A user can then switch between mainnet and prepr",
+      "report": "Video as described in the output section, containing evidence for A, B, and C:\nhttps://youtu.be/STPH5BUQ64o\nWebsites: \nhttps://analyticsplatform.azurewebsites.net (You can simply register and sign in)\nhttps://analytics.blocktrust.dev \nhttps://bt-analytics-mainnet.azurewebsites.net/",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "19",
+      "cost": 15300,
+      "promise": "The project will provide developers and other interested parties a live view on what is happening on the Cardano blockchain regarding PRISM operations. Developers will be able to see when they are creating DIDs, businesses will be able to track the activity of DIDs they are doing business with and the Cardano-community will get a good estimate of how PRISM is doing: is it really used by the MoE, DISH and others?A working web-application with detailed information on the inner workings and usage of Atala PRISM. This information is not available anywhere else.",
+      "criteria": "A video is created going over the main capabilities of the platform as a whole, including the statistic overview as well as the analytics (graph) view.\nThe application is accessible under https://analytics.blocktrust.dev providing a portal to the statistics pages (for PRISM preprod and mainnet) as well as the analytics (graph) application. A user can register and do the same things as are demonstrated in the video.\nThe portal will also allow access to a documentation site, which helps people better interpret the statistics as well as understand how to use the analytics (graph) application with",
+      "report": "Evidence for the final milestone:\n・Video going through the full application and also explaining the challenges and future plans for the application: https://youtu.be/fZUQ7rJMbk4\n・Link to the portal is working as intended: https://analytics.blocktrust.dev\n・External documentation page: https://docs.analytics.blocktrust.dev/\n・Blog post on the development: https://blocktrust.dev/blog\n・Presentation of the analytics platform occurred multiple times over the lifetime of the project, since a page with statistics has been online for nearly two years. Recently presentations occurred here:\n・https://lf-hyperledger.atlassian.net/wiki/spaces/Identus/pages/19334630/2024+-+05+-+21\n・ https://www.youtube.com/watch?v=_Dz0KC-XuHE&t=2516s\n・As well as on June, 2th (?) with. Sadly, I wasn’t able to find a recording for that.\n\n \n\nAttached also the close-out report\n--------------------------------\nClose-out Report: PRISM Analytics Platform\nProject ID: 900174\n \nStart Date: November 7, 2022 \nFinish Date: October 6, 2024 \nLink to IdeaScale: https://cardano.ideascale.com/a/dtd/419421-48088\n \nKey Performance Indicator (KPI):\n- Provide insights into on-chain adoption: \n The PRISM Analytics Platform delivered comprehensive statistics over nearly two years, offering insight into adoption trends on-chain. By leveraging knowledge of how decentralized identifiers (DIDs) worked for PRISM v1 and v2, users could track ongoing developments. This project became well-known and frequently referenced within the community, as there is no comparable application.\n \nAchievements:\n- The platform helped multiple developers better understand the processes behind DIDs, especially since most aspects of how DIDs are written to the blockchain remain closed-source (except for our tools).\n- The data and graphing tools were showcased in multiple community calls, and at the most recent Internet Identity Workshop (IIW) conference, where they reached industry leaders.\n \nKey Learnings: \n- The project faced challenges, particul",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 22,
+      "cut": true
+    }
+  ]
+}

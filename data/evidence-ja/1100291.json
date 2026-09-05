@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "公開リポジトリに公開されたノートは、テストネット上に展開されたプルタス・スマート・コントラクトの相互作用を示す単一の出力になります。 この最終完了ステップを取得するには、次の仲介手順を実行しなければなりません(これらのste;psは、完成した、公開されたプルタススマートコントラクトを取得する方法を示しますが、それ自体は出力されません)。\n・開発のためのプルタス環境の設定\n・プルタススマートコントラクトの設計\n・金融アプリケーションの信頼性のないプロトコルを確保するための取引制約\n・契約決済メカニズムの定義\n・返金メカニズムの定義\n・プルタススマートコントラクトの開発\n・Plutusスマートコントラクトの公開",
+      "criteria": "ノートブックは、Plutus Smart Contract 上でトランザクションを内部で文書化したインタラクションでトリガーする機能です.",
+      "report": "リポジトリ:\nhttps://github.com/WolframBlockchainLabs/MarloweSC-Execution\n\nビデオ デモ:\nhttps://drive.google.com/file/d/1JslLSHjdjLs-kZJN6XqN2H 9Tk5tay7q/view?usp=drive link"
+    },
+    {
+      "no": 2,
+      "promise": "テストネットアドレスを監視することにより、収穫サービスの機能性を実証する簡単なアプリケーションスマートコントラクトの完成。 この最終完了ステップを取得するには、次の手順を実行しなければなりません(この手順では、完成したRecovererサービスを取得する方法を示しますが、それ自体は出力されません)。\n・Marloweトランザクションのシリアル化プロセスの見直し\n・スマートコントラクトアドレスでUTXOを収穫するためにWolfram言語スクリプトを開発\n・データプロバイダサービスへの接続 Wolfram 価格フィードインフラ\n・データ要求を満たす取引を提出する仕組みを開発\n・ハーベスターサービスのデモとしてのノート",
+      "criteria": "収穫機サービスを示すシンプルなアプリケーションスマートコントラクトは、要求された値を返します.",
+      "report": "ビデオ デモ:\nhttps://drive.google.com/file/d/1uiEp0YD1Lj2T9uSFXgyTmxYMgqLkZY5/view?usp=drive link\n収穫者サービス コード:\nhttps://github.com/WolframBlockchainLabs/MarloweSC-Execution/tree/main/OracleValidator\nリアルタイム価格データベース:\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure\nこのリポジトリのライセンスは、オープンソースであり、Apacheライセンスよりも制限されているMITです."
+    },
+    {
+      "no": 3,
+      "promise": "公開リポジトリで利用可能なMarlowe Smartコントラクトのノートとドキュメントは、プロバイダのスマートコントラクトの完全なフローと、TestnetのRecovererサービスを表示します。 この最終完了ステップを取得するには、次の仲介手順を実行しなければなりません(これらの手順では、プロバイダのスマートコントラクトの完了したフローと、Testnetの収穫機サービスを取得する方法を示しますが、それ自体は出力されません)。\n・Marloweのユーザー契約の定義\n・Marloweブロックコンポーネントの見直し\n・サービスとやり取りするユーザー制約の定義\n・マーロウ契約の拡大\n・Marloweプロジェクトのテスト\n・ジュピターノートをデモンストとして使用\n・Marlowe Notebookを公開\n・ドキュメント",
+      "criteria": "この出力の受諾基準は、ノートブックが一般にアクセス可能で、プロバイダのスマートコントラクトとTestnetのハーベスターサービスの両方の運用フロー全体を明確に示す必要があることです.",
+      "report": "プロバイダーのスマートコントラクトの完全フローと、TestnetのRecovererサービスを示すビデオ:\nhttps://drive.google.com/file/d/1GbXANd0WWRZzjLk ExQ7lrM2FU9d8J9L/view?usp=drive link"
+    },
+    {
+      "no": 4,
+      "promise": "スマートコントラクトロジックの包括的な見直しをした監査のPDFレポートで、推奨されるセキュリティ改善の詳細なリストを伴って、これらの改善が徹底的に劣化し、スマートコントラクトに潜在的に追加されたことを検証します.",
+      "criteria": "PDFレポートには、スマートコントラクトロジックのレビュー、セキュリティ改善の推奨事項と、劣化した改善のセクション、実装の検証に関するセクションが含まれています.",
+      "report": "Walkthroughのビデオ:\nhttps://drive.google.com/file/d/1n-osJbtbm6iXRpWqpyHotLQv3xPvlh8v/view?usp=drive link\n監査報告:\nhttps://github.com/WolframBlockchainLabs/MarloweSC-Execution/blob/milestone4/MilestoneFour/tweag-audit-wolfram-oracle.pdf\n監査レスポンス: 実装されたすべての改善を各コミットに記述します。\nhttps://github.com/WolframBlockchainLabs/MarloweSC-Execution/blob/milestone4/MilestoneFour/ResponseToAuditReport.md"
+    },
+    {
+      "no": 5,
+      "promise": "PDFレポートは、4つのマイルストーンの完了を文書化: 1) プルタス・スマート・コントラクト 2) 収穫機の開発 3) マーローを用いたテスト 4) 監査",
+      "criteria": "PDFレポートには、Plutus testnetスマートコントラクトの証拠とリンク、Recoverer Serviceの完成した開発の証拠、Marloweと監査のPDFレポートを使用したサンプルテストが含まれています.",
+      "report": "・クローズアウトレポート:https://drive.google.com/file/d/1W6A3GJORbmTkN-RRUdCRO8IANyNga7A4/view?usp=drive link\n・リポジトリ: https://github.com/WolframBlockchainLabs/MarloweSC-Execution\n・テクニカルレビュー入門:https://youtu.be/72K-4oIpqRI\n・デモ: https://drive.google.com/file/d/12Psn-eslqZSJSrHgnEOsAAB4RDbdcKNp/view\n・フルテクニカルレビュー:https://youtu.be/q4U11hNlIDg\n・リアルタイム価格データベース: https://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure\n・監査報告:https://github.com/WolframBlockchainLabs/MarloweSC-Execution/blob/milestone4/MilestoneFour/tweag-audit-wolfram-oracle.pdf\n・Audit Response: 実装されたすべての改善を各コミットに記述します。 https://github.com/WolframBlockchainLabs/MarloweSC-Execution/blob/milestone4/MilestoneFour/ResponseToAuditReport.md"
+    }
+  ]
+}

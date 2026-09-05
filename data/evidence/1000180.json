@@ -1,0 +1,88 @@
+{
+  "title": "Sundae Labs Hydra Transaction Stream Plugin",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "An Architectural Decision Record (ADR) describing a detailed plan to expose and integrate the hydra event stream with other ecosystem plugins",
+      "criteria": "The ADR follows the Hydra teams standard format; it has been reviewed by the team, and any feedback has been addressed, and the ADR has been merged.",
+      "report": "Merged ADR PR: https://github.com/input-output-hk/hydra/pull/1157\nActual ADR: https://github.com/SundaeSwap-finance/hydra/blob/d96faca5893a073eff4dda8d0dd15655210a31f7/docs/adr/2023-11-07_029-event-source-sink.md\nTwitter post: https://twitter.com/SundaeSwap/status/1735381856353231291\nDiscord announcement: https://discord.com/channels/830939534174453800/830948250298875905/1184941743574089869",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 176400,
+      "promise": "A merged PR to the hydra code base that supports a new set of configuration options for directing where the event stream gets persisted.",
+      "criteria": "Any code review feedback from the Hydra team has been addressed and the pull request has been merged. The new configuration options allow someone to persist the event stream to a file; or write the event stream to an arbitrary unix socket; or to multiple difference sinks.",
+      "report": "Merged Github PR: https://github.com/input-output-hk/hydra/pull/1351\nYT Demo: https://www.youtube.com/watch?v=o_fJ3Dgz61U\nTwitter post: https://twitter.com/SundaeSwap/status/1770106574033518851\nDiscord announcement: https://discord.com/channels/830939534174453800/830948250298875905/1219665568857063564",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 84150,
+      "promise": "A new open source project maintained by sundae labs. This project provides a binary that can be run, and read from the unix socket shared with the Hydra server, to consume the sequence of events, and produce a fascimile of the Ogmios API.",
+      "criteria": "The service provides at a minimum the v6 websocket APIs for chainsync and transaction submission; Any relevant data from the hydra head is passed through to the Ogmios API. Any details that don't make sense in a Hydra head are either stubbed out with sensible defaults, or return errors. We will evaluate the ledger state queries and mempool monitoring to decide if they make sense in the context of Hydra, and either implement, stub out, or error as appropriate. All this behavior is clearly documented.",
+      "report": "This milestone delivers a plugin that reads from the Unix socket shared with the Hydra server and exposes APIs compatible with the Ogmios v6 WebSocket interface. The service enables chainsync and transaction submission functionality for Hydra heads, creating a seamless integration pathway for developers.\nAcceptance Criteria\n・The service implements v6 WebSocket APIs for chainsync and transaction submission.\n・Relevant data from the Hydra head is passed through to the Ogmios API.\n・Mempool queries were evaluated and deemed unnecessary, as Hydra signs snapshots immediately, making the concept of a mempool redundant due to near-instant transaction confirmation.\n・Ledger state queries, including stake snapshots, were also evaluated and determined not to be applicable, as these features are not tracked or relevant within a Hydra head.\n\nEvidence of Milestone Completion:\n・GitHub Repository: https://github.com/SundaeSwap-finance/hydra-ogmios\n・API Documentation: https://github.com/SundaeSwap-finance/hydra-ogmios/blob/main/README.md\n・Video Demonstration: https://www.youtube.com/watch?v=JlDB0BwfkIw",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 84150,
+      "promise": "A pull request to the open source \"Scrolls\" project that implements a new \"source\", reading from the unix socket backed by the hydra event stream above.",
+      "criteria": "This PR is opened, and any feedback from the maintainer is addressed. Since the project maintainer may choose not to merge the PR, the PR may be either closed, merged, or have no response from the maintainer for 10 days. The PR implements the feature, allowing indexing of transactions, UTXOs, etc. from a hydra node.",
+      "report": "・Link to the Pull Request:\n\n・PR implementing the new \"source\" feature in the Scrolls project: https://github.com/txpipe/scrolls/pull/172\n\n・Community Announcement Links:\n\n・Twitter Announcement (includes video demo): https://x.com/SundaeSwap/status/1869756376450207991\n・Discord Announcement: https://discord.com/channels/830939534174453800/830948250298875905/1319715046179344405",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 50000,
+      "promise": "Solicited feedback from at least 3 different community members who might have a use for the integrations above; An evaluation of this feedback, and if relevant, any applicable changes to the API or usage based on that feedback.\nFrom this feedback, we will author a set of user stories to implement the suggested features/changes.",
+      "criteria": "Any reasonably achievable feedback has been addressed and submitted as a pull request to either the Hydra node or the Scrolls project, or merged into the Ogmios fascimile service.\nEach of the user stories authored based on the community feedback has been implemented, documented and accepted as part of the pull request by the Hydra Team.",
+      "report": "Milestone 5: Solicit and implement feedback related to these two integrations\nThis milestone focused on gathering and implementing feedback from the developer community on the Hydra transaction streaming plugin. Our goal was to evaluate the developer experience and integration challenges related to the Hydra node extension, the Ogmios event server prototype, and Scrolls log source, and to improve the tooling and documentation accordingly.\nCommunity Feedback Collection\nWe solicited public feedback through a Google Form distributed to the Cardano builder community. Three experienced contributors provided thoughtful insights:\n・Sebastian Nagel (Ncōding)\n・Juan Magan Valero (TxPipe)\n・Matthias Benkort (Cardano Foundation / @KtorZ)\n\nAll three respondents confirmed the relevance of these tools to their workflows and shared suggestions such as:\n・Expanding the documentation and examples for the EventSource and EventSink interfaces\n・Improving modularity to support more flexible consumption of streamed data\n・Interest in deeper Scrolls integration as a potential downstream consumer\n\nThe full responses are available here:\n https://docs.google.com/spreadsheets/d/1hAN6CEMMnRtuTirxXd6A68CBXFgOAb-ANvgvQ8t9Jms/edit?usp=sharing\nImplementation\nWe authored user stories based on the collected feedback and implemented changes across the codebase. These changes focused on streamlining event handling, improving modularity, and publishing developer-facing documentation and examples.\nWork related to this milestone is reflected in the following Hydra repository PRs and issues:\n・https://github.com/cardano-scaling/hydra/pull/1000 – Initial groundwork\n・https://github.com/cardano-scaling/hydra/pull/1348 – Event system refactor\n・https://github.com/cardano-scaling/hydra/pull/1351 – Milestone 2 core logic\n・https://github.com/cardano-scaling/hydra/issues/1618 – Use case for API server as event sink\n・https://github.com/cardano-scaling/hydra/pull/1808 – Streamed events with constant memory\n・https://github",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 18,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 118300,
+      "promise": "・Final project video report\n・Close-out report \n・Completed documentation, open source repository and appropriate licensing.\n・Hosted and recorded Webinar with Q&A about the project (in lieu of formal live conference talk, which we still plan to seek out opportunities to apply for). \n・Medium write-up about the project.",
+      "criteria": "Above outputs are posted publicly on our site, with links to Github repository and YT video.",
+      "report": "We have completed the final milestone for the Hydra Transaction Stream Plugin project. This work delivers a pluggable event-stream architecture for the Hydra node, enabling developers to directly integrate Hydra transactions and events into their own tools and workflows without modifying Hydra’s core logic.\nKey deliverables:\n・Fully implemented plugin framework with documented EventSource and EventSink interfaces\n・Real-world integrations including:\n・Hydra Ogmios – Ogmios API served directly from a Hydra node over a binary unix socket\n・Scrolls integration – Hydra event streams consumed by TxPipe’s Scrolls indexing framework\n・S3 sink – Event persistence to Amazon S3 (adaptable for other blob storage)\n・Architectural Decision Record (ADR) formalizing design principles and implementation approach\n・Robust developer documentation and examples for extending the plugin\n\nPublic resources:\n・Medium article: https://sundaeswap-finance.medium.com/building-the-hydra-transaction-stream-plugin-expanding-cardanos-layer-2-potential-aa84caf0dc95\n・Twitter: https://x.com/SundaeSwap/status/1956352759172608236\n・Discord: https://discord.com/channels/830939534174453800/830948250298875905/1407018162188455956\n・GitHub repository: https://github.com/cardano-scaling/hydra\n・Recording of Webinar: https://www.youtube.com/watch?v=0IDNMUuoTBE\n\n﻿\nThe full close-out report: https://drive.google.com/file/d/1RKEwQ8EmNAFdXDAT8A9CPkKhfNVYoZk5/view?usp=sharing\nCloseout Video: https://youtu.be/bmxWvTdE6q8",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

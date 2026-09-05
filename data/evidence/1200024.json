@@ -1,0 +1,30 @@
+{
+  "title": "AIKEN ZKP standards library for Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 39928,
+      "promise": "・ Technical Specifications for the ZKP Library\n・Rationale: Motivation for the library; how we decided what to implement.\n・Functionalities: What specific ZKP features will be supported.\n・Implementation: How the functionality will be technically supported﻿\n・Initial commits to the GitHub repository, including\n・README file that outlines the project's scope and objectives.\n・License document that defines usage rights.\n・Contributor guidelines to encourage and guide community involvement.\n・Core architectural code that establishes the basic framework for ongoing development",
+      "criteria": "・Initial Commits to the GitHub Repository\n・Readme File: Contains an overview of the project and information on how to contribute\n・License File: Specifies the open-source license type.\n・Contribution Guide: Details process for contributing to the project.\n・﻿Technical Specification: Provides a description of the library's implementations, and the rationale behind the project's scope.",
+      "report": "The following evidence demonstrates the successful completion of Milestone 1:\n・Initial Commits to the GitHub Repository: Establishing the foundational codebase for the project. View Commits\n・Readme File: Providing an overview of the project, including its purpose, scope, and guidance for contributors. View Readme\n・License File: Documenting the open-source license type under which the project is distributed. View License\n・Contribution Guide: Outlining detailed instructions for contributing to the project, encouraging community involvement. View Contribution Guide\n・Technical Specification: Offering a detailed description of the library's implementations and the rationale behind the project's scope and functionality. View Technical Specification\n\nWe also want to take a moment to sincerely thank the reviewers for taking the time to review this proposal and evaluate the proof of achievement for this milestone. Your feedback and support are invaluable.",
+      "kinds": [
+        "code"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 39928,
+      "promise": "・Develop the ZKP library such that it may be used to verify ZKPs constructed off-chain.\n・The codebase will include essential functionality for the verification of ZKPs, ensuring they meet the specific security and performance requirements of applications on the Cardano blockchain. The scope of functionality will be limited to the scope of the technical specification provided in M1",
+      "criteria": "Development of Library and Integration of Cryptographic Primitives:\n・The scope of the technical specification should be fully addressed with the library serving its implementation purpose. At this time basic proof of concepts should be able to be demonstrated, even though tests are not complete at this time.\n・Ensure the implementation adheres to the latest standards and is capable of securely verifying zero-knowledge proofs",
+      "report": "Response to Reviewer Feedback\n\nThank you for your thoughtful reviews of our Milestone 2 submission. Below, we address both the approved and not approved feedback:\nApproved Feedback: We appreciate your recognition of the core functionality and validation of our proof-of-concept. We will include more detailed performance benchmarks and expand our test coverage documentation in our upcoming Initial Testing and Developer Feedback Phase (Milestone 3).\nNot Approved Feedback: We acknowledge concerns about partial and untested implementations of Groth16, PLONK, and Bulletproofs verifiers.\n・Clarification: Foundational code for each protocol is in place. We recognize that the full verifier implementations and corresponding test coverage are ongoing.\n・Remediation: Our Initial Testing and Developer Feedback Phase (Milestone 3) will address these gaps by:\n・Completing and testing the Groth16, PLONK, and Bulletproofs verifiers\n・Providing comprehensive unit tests for all code paths\n・Utilizing property-based testing through the Aiken Fuzzing library\n・Documenting test results and performance benchmarks\n\nWe appreciate the feedback and remain committed to a transparent and high-quality release. We look forward to demonstrating our progress during the Initial Testing and Developer Feedback Phase.\nProof of Achievement Submission\nMilestone 2: Core Functionality Development\nThis submission confirms the successful completion of Milestone 2 – Core Functionality Development. The ZKP library demonstrates foundational functionality, integrates key cryptographic components, and includes proof-of-concept verifiers to support off-chain constructed zero-knowledge proofs.\nKey Accomplishments\n・ZKP Library Implementation: The library provides infrastructure for verifying zero-knowledge proofs constructed off-chain. It aligns with the technical specifications defined in Milestone 1 and is designed for integration with Cardano smart contracts.\n・Proof-of-Concept Demonstrations: Working demonstrations val",
+      "kinds": [
+        "code"
+      ],
+      "links": 4,
+      "cut": true
+    }
+  ]
+}

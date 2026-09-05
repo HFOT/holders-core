@@ -1,0 +1,54 @@
+{
+  "title": "BaFin Audited Cardano Smart Contract for compliant Real World Asset Tokenization by NMKR, FluidTokens & IAMX",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "1. Legal analysis of the requirements for a smart contract under the Electronic Securities Act (eWpG).\n \n 2. Analysis of current Cardano smart contracts and identification of the specific requirements for BaFin compliance under the Electronic Securities Act (eWpG).\n \n 3. Project plan, including timelines and resources for BaFin compliant Cardano Smart Contract under the Electronic Securities Act (eWpG).",
+      "criteria": "1. re legal analysis: \n a) Documentation of the mandatory information in the Crypto Securities Register eWpG.\n b) Documentation of the required data when subscribing to a crypto security and initial entry in the crypto securities register. \n c) Documentation of the required data collection when instructions are issued by authorized persons. Identification data of authorized and acquiring persons.\n d) In total you can expect about 10 pages in writing. Format: PDF.\n \n 2. re analysis current Cardano smart contracts\n a) What are the specific requirements based on the eWpG that Cardano smart contra",
+      "report": "The Proof of Achievement for 1100033 Milestone 1 includes “Acceptance criteria legal analysis eWpG, smart contracts and project plan”.\nUpload URL: https://github.com/IAMXID/BaFin-Audited-Cardano-Smart-Contract",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 20000,
+      "promise": "1. Initial discussion with the BaFin regarding the requirements for a compliant smart contract on Cardano under the Electronic Securities Act (eWpG).\n \n Clarification to your comments:\n \n 1. There is no preaudit of the BaFin. The acceptance of the BaFin regarding the Smart Contract is a tokenization project accepted by the BaFin and published here: https://www.bafin.de/DE/PublikationenDaten/Datenbanken/Kryptowertpapiere/kryptowerte_node.html\n \n 2. Team assembly: If there is a change to the current team assembly roles based on the dialog with the BaFin, we will document this in this milestone. As stated in the proposal regarding team assembly: team intern available, like blockchain developers, legal experts, and compliance specialists.",
+      "criteria": "1. Deliver minutes of the meeting of the Initial discussion with the BaFin regarding the requirements for a compliant smart contract on Cardano under the Electronic Securities Act (eWpG).\n 2. In total, you can expect about 10 pages of writing. Format: PDF.",
+      "report": "The Proof of Achievement for 1100033 Milestone 2 has been uploaded for review:\n\nUpload URL: https://github.com/IAMXID/BaFin-Audited-Cardano-Smart-Contract/blob/main/1100033%20Milestone%202%20Acceptance%20criteria%20v1-3.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 39000,
+      "promise": "1. Development of a \"beta smart contract\" on Cardano to meet under the Electronic Securities Act (eWpG) and deliver a code-repository.\n \n 2. Review by experts for an internal review of a \"beta smart contract\" on Cardano to meet under the Electronic Securities Act (eWpG).\n \n Clarification to your comments:\n \n 1. We are doing an internal expert review.\n \n 2. And yes: we are reading the requirements and trying to align with the central requirements of the law before going for the audit.",
+      "criteria": "1. re \"beta smart contract\" on Cardano to meet under the Electronic Securities Act (eWpG):\n Provide the code for this contract on GitHub and deliver a code-repository.\n \n 2. re review: Deliver minutes of the meeting regarding the review of the beta smart contract\".\n You can expect 3 pages of writing. Format: PDF.",
+      "report": "Proof of Achievement for Milestone 3, 1100033:\n\n1. \"beta smart contract\" on Cardano to meet under the Electronic Securities Act (eWpG)\na. Code repository in GitHub\nURL: https://github.com/FluidTokens/fn-bafin-cardano-sc\n\n2. Review: \"Deliver minutes of the meeting regarding the review of the beta smart contract\"\na. Review\nURL https://github.com/tim-heidfeld/BaFin-Smart-Contract-Review-Cardano",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "24",
+      "cost": 60000,
+      "promise": "1. Pentest-Report on \"beta smart contract\" on Cardano to meet under the Electronic Securities Act (eWpG). Explanation: A penetration test for a smart contract is like a security check to find and fix weak spots in the contract's code before bad people can exploit them. It involves trying to break into the contract in a safe way to see how serious the weak spots are and giving advice on how to make them stronger. This process is very important for keeping the contract and the digital assets it handles safe from attacks.\n \n 2. Modify the \"beta smart contract\" on Cardano to meet under the Electronic Securities Act (eWpG) based on the Pentest-Report.\n \n Clarification to your comments:\n \n 1. The is no preaudit of the BaFin. The acceptance of the BaFin regarding the Smart Contract is a tokenization project accepted by the BaFin and published here: https://www.bafin.de/DE/PublikationenDaten/Datenbanken/Kryptowertpapiere/kryptowerte_node.html",
+      "criteria": "1. re Pentest-Report: Provide the Pentrest-Report. You can expect 5 pages in writing. Format: PDF.\n \n 2. re modification: Provide the code for this modified smart contract in GitHub.\n \n Clarification: \n 1. We will provide a testing report that includes summarized testing criteria and changes, and where the changes can be found in the repo (penetration test), and\n \n 2. alongside the updated code itself, we will show that the outputs for this milestone have been achieved. We will deliver a dedicated code repo with a SC, and a report featuring an expert review meeting.",
+      "report": "A. Output: Pentest-Report on \"beta smart contract\" on Cardano\nAcceptance criteria: The penetration testing report includes summarized testing criteria and required changes\nEvidence: The penetration testing report has been produced two times: the first time to show the findings and the criteria, the second time to ensure suggestions have been implemented or acknowledged. You can find both versions here: https://github.com/FluidTokens/fn-bafin-cardano-sc/tree/main/documents/pentesting\nThe documents now include the website URL of the auditors as requested by the Catalyst reviewers.\n\nB. Output: Smart contract updated to implement the Pentest-Report findings \nAcceptance criteria: The smart contract code includes suggested improvements, in particular the unit tests.\nEvidence: You can find the unit tests, the only strongly suggested improvement to the codebase, here: https://github.com/FluidTokens/fn-bafin-cardano-sc/blob/main/lib/tests.ak",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    }
+  ]
+}

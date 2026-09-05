@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Vault の預金、合成アセットの aka 'receipts' を 実装するために必要なスマートコントラクトの GitHub リポジトリ、および 'locking' メカニズムを staking します。 これは、柔軟な資産の範囲のための預金「ボルト」として機能するモジュラーアーキテクチャです。 アイケンのプログラミング言語でコードを生成します。 このマイルストーンは、コアミント、レシート、ステークの初期スマートコントラクト開発を、GitHubリポジトリを凍結し、監査プロセスの準備を完了することによって実現しました",
+      "criteria": "・ストラテジーボルトアーキテクチャのアイケンコードベース実装\n\n・資金の流れ\n・出金・退出機構\n・Durationロック機構\n・Yield accrual ロジック\n\n・スマートコントラクトのコンポーネントを記述し、非技術的なマイルストーン レビュアーと、Catalyst コミュニティがシステムの範囲を理解するためのプライベートな testnet デプロイメントのライブインタラクションを動作させるためのコードウォークスルーのビデオ.",
+      "report": "ストラテジーボルトマイルストーン 1 提出\n・ストラテジーボルトアーキテクチャのアイケンコードベース実装\n・https://github.com/OptimFinance/clean-code\n・スマートコントラクトコンポーネントを記述するためのコードウォークスルーの動画\n・https://drive.google.com/file/d/1BoVWA1QqSK4xXCIonW83mMfrh1CjlxNQ/view?usp=sharing\n\n解説\n・資金の流れ\n・ファイル:\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/deposit amo.ak\n・タイムスタンプ:\n・2:26\n・出金・退出機構\n・ファイル:\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/deposit amo.ak\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/staking amo.ak\n・タイムスタンプ:\n・2:26\n・16:40\n・Durationロック機構\n・ファイル:\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/otoken policy.ak\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/otoken rule.ak\n・タイムスタンプ:\n・8:25\n・Yield accrual ロジック\n・ファイル:\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/collateral amo.ak\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/sotoken rule.ak\n・タイムスタンプ:\n・6:50\n・14:38\n・動画で参照される技術仕様:\n・OToken戦略ボルト\n・https://github.com/OptimFinance/public-documents/blob/main/OTOKEN%20High%20Level%20Specification.pdf\n・OADA戦略Vault\n・https://github.com/OptimFinance/public-documents/blob/main/The OADA System.pdf"
+    },
+    {
+      "no": 2,
+      "promise": "Optim Labs GitHub リポジトリでホストされている React、NextJS または類似のフレームワークで、dApps UI の初期フィグマとフロントエンドの実装。 戦略Vaultsシステムと対面するユーザーエクスペリエンスを最大限に高めるために、直感的でよく設計されたフロントエンドが開発されます。 マイルストーン1で定義されたコードスコープのフロントエンドとベーシックのオンチェーンdAppは、プライベートテストネット上でホストされます.",
+      "criteria": "・UX/UIのフィグマスケッチと反復\n・Figmaユーザーインターフェースのフロントエンドコードベース\n・プライベートテストネット展開",
+      "report": "ストラテジーボルトマイルストーン2 提出\n・フィグマボードへのリンク、またはフィグマ反復プロセスのスクリーンショットを集計するドキュメントへのリンク(プラットフォームの許可を共有する場合には問題が発生します)。\n・https://www.figma.com/design/BdECvmuzH0ZtY2VJRyO9Eg/Optim-Vault?t=OHBxL6XmrQx2fWM7-1\n・ GitHub リポジトリのフロントエンドのコードベースへのリンク、または既にホストされている場合のライブウェブサイトの実装へのリンク。\n・https://app.optim.finance/dashboard\n・作業用プライベートテストネットdAppインタラクションのビデオウォークスルーへのリンク\n・https://drive.google.com/file/d/1V4WR1vd5-oSkQBDqiv0JGlRERDBlU-6A/view?usp=sharinghttps://drive.google.com/file/d/1V4WR1vd5-oSkQBDqiv0JGlRERDBlU-6A/view?usp=sharinghttps://drive.google.com/file/d/1V4WR1vd5vd5-oSkQBDqiv0JGlRERDBlU-6A/view?usp=sharing"
+    },
+    {
+      "no": 3,
+      "promise": "私たちは、プライベートテストネットの環境からのフィードバックを取り、このフィードバックに基づいてUX / UIにアップグレードを行います。 これは、提案に基づいてユーザーエクスペリエンスを有意に改善する機能を追加するために、また、必要ではないかもしれません。 少なくとも 5-10 DAO のメンバーからの詳細なフィードバックは、私たちが改善するユーザー ジャーニーでコンパイルされ、文書化されます",
+      "criteria": "・DAOのDeFiパワーユーザーから5-10のテストネットのUX/UIフィードバックを詳細化\n・UX/UIの改善と機能拡張が可能",
+      "report": "・UX/UIフィードバックに関する5-10規格の文書へのリンク\n・https://drive.google.com/file/d/1UOF8zPwtDCFUaady0t8QNLv4rEB35jK3/view?usp=sharing\n\n・更新された Figma UI のレンダリングの前後にリンクして、画面が変化し、フィードバックを通知した後、それぞれのフィードバックに基づいて変更を表示\n・https://drive.google.com/file/d/1UOF8zPwtDCFUaady0t8QNLv4rEB35jK3/view?usp=sharing\n・(ファイルは1つにまとめられたもの)"
+    },
+    {
+      "no": 4,
+      "promise": "UX/UIは、プライベートテストネットからのフィードバックで更新され、基本的なdAppは、より広いオーディエンスとコミュニティからのより広範な期待されたフィードバックのためのパブリックテストネットに展開されます。 Figma とフロントエンドのコードが更新され、すべての変更を反映し、より大きな公開の testnet ローンチで反映されるように準備が整いました.",
+      "criteria": "・UX/UIの改善により、フロントエンドのコードを更新\n・フィードバック用に公開されたテストネット統合",
+      "report": "・Githubリポジトリへのリンクは、フロントエンドのコードを更新し、148ファイルで履歴をコミットして+9309ラインを追加し、-1330ラインを削除\n・https://github.com/OptimFinance/oada-ui\n・https://github.com/OptimFinance/oada-ui/commit/8ee174a2bfb0710d51386e8f318c1577c\n\n・公開展開へのリンク\n・https://app.optim.finance/dashboard\n\n・公開dAppインタラクションとプロジェクト概要のビデオウォークスルー\n・https://drive.google.com/file/d/1V4WR1vd5-oSkQBDqiv0JGlRERDBlU-6A/view\n・0:00 - リード開発者紹介\n・0:11 - Mock UIの概要とウォークスルー\n・0:58 - OToken 戦略 Vault ユーザーの機能面\n・1:35 - ミントインターフェイスとトランザクションプロセス\n・2:21 - エクスプローラートランザクションの確認をブロックする\n・2:46 - Stake/Strategy Vault デポジット、同等株式マイニング\n・3:08 - トランザクション UTXOs ウォークスルー\n・3:53 - エクスプローラートランザクションの確認をブロック\n・4:18 - インタラクティブUIフィードバックの改善\n・4:57 - Unstake/Strategy Vault 出金プロセス、手数料およびキュー容量\n・5:14 - トランザクション UTXOs ウォークスルー\n・6:15 - エクスプローラートランザクションの確認をブロック\n・6:24 - DApp要約\n\n・プロジェクトクローズアウトレポート\n・https://drive.google.com/file/d/1dd5EL8f85SFnOQqq-neiadwquOcl8Wzy7/view?usp=sharing\n\n・プロジェクトクローズアウトビデオ\n・https://www.youtube.com/watch?v=uRsqmktxRnE\n・動画はアプリのデモ動画と編集し、7分以内に動画を配信"
+    }
+  ]
+}

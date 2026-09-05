@@ -1,0 +1,63 @@
+{
+  "title": "Aiken Online IDE to Develop, Build, Run, Test, Deploy smart contracts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 25000,
+      "promise": "- Develop core features of the Online Aiken IDE based, including:\n + Code editor with syntax highlighting for Aiken language\n + Integrated Aiken compiler for real-time compilation and error reporting.\n- Implement Aiken code build and run test (Unit Test) based directly in web UI\n- User authentication and Aiken code stored on the cloud, user can share the Aiken to others",
+      "criteria": "- The IDE is accessible via a public link with all the working core features.\n- A introduction video of the online IDE\n- A public user guide explaining how to use the IDE and how to run the Aiken script with unit test\n- Users can write Aiken scripts and run test cases (unit tests) using the Online Aiken IDE.\n- Users can store Aiken code on the cloud and share the link to others\n- The Git repository of the project will be made public from milestone 2 instead of milestone 1, because we want to apply reduced workflow for fast release in this milestone and skip a lot of Git flow practices. We will",
+      "report": "1. Public link to the working online IDE: https://danolearn.com/en/ucode/ . Select “New μCode” -> Select “Aiken” language \n2. Public link to the introduction video: \n・Complete an Aiken exercises: https://youtu.be/rnuR3atGHEU \n・Write code snippet & send to the other: https://youtu.be/hlwZ0ras5_k \n\n3. Public link to the user guide document illustrating the core features:\n・Guide for How to run Aiken scripts with unit tests (Added): https://danolearn.com/en/blog/how-to-run-aiken-scripts-with-unit-tests-4036 \n・Guide for creating Aiken coding exercises: https://danolearn.com/en/blog/creating-aiken-exercises-with-automated-test-on-danolearn-3940 \n・Guide for using the IDE to run Aiken script: https://danolearn.com/en/blog/how-to-solve-aiken-problem-on-danolearn-4028 \n\n4. Document with text and screenshots explaining verification of core features: Included above\n5. Note:\n・The version of Aiken we used is aiken-lang 1.0.20-alpha, aiken-lang/stdlib 1.6.0. You may catch the 'cannot compile' error if you use the higher version. Here is example of the code using the specified versions above https://danolearn.com/en/ucode/quick-sort-63763 \n・Syntax highlighting works for some functions, such as 'use', 'quicksort', and 'let before', as shown in the code snippet, but it is not comprehensive. Significant customization will be required in the next milestone. For now, this milestone focuses on demonstrating a functional MVP",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 30000,
+      "promise": "Project setup with public Git repo and full CI/CD workflow\nFeatures for creating, storing, and sharing projects:\n- Users can create new projects (with multiple files & folders) within the IDE\n- Projects are stored in the server with version history\n- Users can share projects with others via a public or private link\nEnable users to clone shared projects:\n- Users can clone projects shared by others directly into their workspace\nProvide detailed documentation for project management:\n- Comprehensive documentation on how to use project management features, including creating, storing, sharing, and cloning projects.\n- Tutorials and guides demonstrating the project management workflow.",
+      "criteria": "- Public Git repo and the code commits, activities, and releases history in the Git repository match the development progress of the create, store, and share code features.\n- Full CI/CD workflow running for the project\n- Users can create, store, and share projects.\n- Users can clone shared projects.\n- Comprehensive user documentation and tutorials are available.\n- The IDE is accessible via a public link with fully functional project management features.\n- A document detailing how to verify the project management features, including screenshots or images demonstrating each feature.",
+      "report": "Updated: \n・Add video for guiding commit and sync Code: LINK\n・Summary, for syncing code:\n・Owner must commit and push code \n・Invitee must reopen IDE by closing current tab and click Open IDE button again\n\nEvidences:\n1/ Public link to Git Repo with updated progress\n・https://gitlab.com/aiken-ide\n\n2/ Links to CI/CD setup and pipelines runned\n・Backend: https://gitlab.com/aiken-ide/backend/-/pipelines\n・Frontend: https://gitlab.com/aiken-ide/frontend/-/pipelines\n\n3/ Public link to the online IDE with updates of project management features\n・https://ide.danolearn.com\n\n4/ Public link to introduction video for the updated version of the Online IDE\n・https://drive.google.com/file/d/14oWyDKzN3dQNU-Aidpreb06r-7aM9qFf/view?usp=drive_link\n・https://drive.google.com/file/d/12VcJuki2u_p4rzkzGKdTRQP03WrPYLP2/view?usp=drive_link ---> Video for Commit and Sync Code\n\n5/ Public link to user guide for the online IDE, including the project management features\n・https://danolearn.com/en/blog/aiken-ide-user-guide-4047\n\n6/ Document explaining how to verify project management features with text and screenshots\n・https://danolearn.com/en/blog/aiken-ide-user-guide-4047",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 17
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 30000,
+      "promise": "Develop support for Aiken script creation and deployment:\n- Tools and features to write and deploy Aiken scripts.\n- Integration with blockchain for onchain deployment.\nImplement testing and deployment processes:\n- Provide a robust environment for testing scripts before deployment.\n- Simplified deployment process to deploy scripts directly to the blockchain.\nProvide detailed documentation for onchain deployment:\n- Comprehensive guides and tutorials on how to develop, test, and deploy Aiken scripts onchain.\nAcquire early users for feedbacks collection",
+      "criteria": "- Users can deploy dApps directly onchain from the IDE.\n- The deployed smart contracts are functional and can be interacted with onchain.\n- Comprehensive documentation for the deployment process.\n- Public link for the updated IDE with fully functional onchain deployment features.\n- A document detailing how to verify the onchain deployment features, including screenshots or images demonstrating each feature.\n- Acquire 50+ users and collect 30+ feedbacks.\n- The code commits, activities, and releases history in the Git repository match the development progress of the onchain deployment feature of",
+      "report": "- Public link to the onchain deployment interface.\n https://ide.danolearn.com/ \n- Screenshots demonstrating the onchain deployment features.\n Detail in docs\n- User guide for onchain deployment.\n Blog: https://danolearn.com/en/blog/aiken-ide-deploy-smart-contract-guide-4104 \n Video: [M3] - Aiken IDE - DEMO.mp4\n- Document explaining how to verify onchain deployment features with images.\n Detail how to check result at cardanoscan.io in the end of video: Aiken IDE\n- Report on users and feedbacks collected\n Detail in docs\n- Public link to Git Repo with updated progress\n・https://gitlab.com/aiken-ide",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 15000,
+      "promise": "- Open public git repo of the IDE with standard open source project guideline (license, README, contribution guidellines...)\n- Acquire real users\n- User Feedback collection via git repo, and directly on the feedback feature on the IDE online\n- Implement tracking and monitoring of the usage & performance metrics\n- Advanced Aiken E2E Testing right on the IDE: an integrated tool to write, generate, build transactions, and execute tests on-chain. To clarify, E2E here means testing on-chain smart contracts, as full business logic, instead of unit tests; and \"advanced\" here means the integrated tool include multiple functions: write tests manually, generate tests from csv, build transactions and execute on-chain.\n- Final close-out report\n- Final closeout video",
+      "criteria": "- All features of the IDE working as expected, including create, store, share projects, develop, build, test, deploy Aiken smart contracts\n- Guideline and samples about writing advanced Aiken E2E Testing right on the IDE, with features described in the output section above\n- A comprehensive user guide for all the features\n- A user feedback mechanism is implemented within the IDE\n- Reach 100+ users\n- Reach 100+ projects created\n- Collected 50+ feedbacks\n- Final closeout report is publicly available\n- Final closeout video is publicly available",
+      "report": "1. Link to Git repository that contains all the required documentation and the source code of the IDE\nhttps://gitlab.com/aiken-ide2. Link to guideline and all the samples for writing advanced Aiken E2E Testing right on the IDE\nhttps://danolearn.com/en/blog/aiken-online-ide-user-guide-4186 (Section 5: E2E Testing)3. Public link to the final version of the IDE\nhttps://ide.danolearn.com4. Public link to the comprehensive user guide\nhttps://danolearn.com/en/blog/aiken-online-ide-user-guide-41865. Reports about users, projects and feedbacks\nhttps://ide.danolearn.com/monitorAccess is restricted to admin accounts. Reviewer accounts have been granted admin access and can further grant access to additional team members as needed.6. Link to final closeout report\nhttps://gitlab.com/aiken-ide/backend/-/raw/master/docs/CLOSEOUT_REPORT.pdf7. Link to final closeout video\nhttps://youtu.be/X5fTpf6bw_k",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

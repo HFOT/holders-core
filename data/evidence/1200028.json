@@ -1,0 +1,31 @@
+{
+  "title": "Anastasia Labs - Smart Contract Formal Verification Framework",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 40000,
+      "promise": "Basic CEK machine implementation in Coq.",
+      "criteria": "・The project is available in a public repo, continuous integration is running and a simple example uplc program (not a fully working validator) can be evaluated.\n・Video explaining the current milestone output(s) is created",
+      "report": "We are happy to submit Milestone 1 with basic CEK machine implementation in Coq.\nWe are submitting our repo which has continuous integration is running and a simple example UPLC program can be evaluated.\nWe also have a video explaining the outputs for easier review by the community.\nLink to the repo: https://github.com/Anastasia-Labs/formal-verification\nVideo explanation: https://youtu.be/srEPiyU8jQI",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 40000,
+      "promise": "Implementation of the basic (non-cryptographic) builtin functions.\nThe basic builtint functions:\n・Integer funcitons:\n・addInteger\n・subtractInteger\n・multiplyInteger\n・divideInteger\n・modInteger\n・quotientInteger\n・remainderInteger\n・equalsInteger\n・lessThanInteger\n・lessThanEqualsInteger\n・ByteString functions:\n・appendByteString\n・consByteString\n・sliceByteString\n・lengthOfByteString\n・indexByteString\n・equalsByteString\n・lessThanByteString\n・lessThanEqualsByteString\n・String functions:\n・appendString\n・equalsString\n・encodeUtf8\n・decodeUtf8\n・Boolean functions:\n・ifThenElse\n\nTrace functions:\n・trace\n\nData functions:\n・chooseUnit\n・fstPair\n・sndPair\n・chooseList\n・mkCons\n・headList\n・tailList\n・nullList\n・chooseData\n・constrData\n・mapData\n・listData\n・iData\n・bData\n・unConstrData\n・unMapData\n・unListData\n・unIData\n・unBData\n・equalsData\n・mkPairData\n・mkNilData\n・mkNilPairData",
+      "criteria": "The basic builtin functions are implemented and can be found in public repository at https://github.com/anastasia-Labs/formal-verification",
+      "report": "We are happy to submit Milestone 2 for this Project Catalyst proposal.\nWe have implementation of the basic (non-cryptographic) builtin functions.\nThe basic builtint functions:\n・Integer funcitons:\n・addInteger\n・subtractInteger\n・multiplyInteger\n・divideInteger\n・modInteger\n・quotientInteger\n・remainderInteger\n・equalsInteger\n・lessThanInteger\n・lessThanEqualsInteger\n・ByteString functions:\n・appendByteString\n・consByteString\n・sliceByteString\n・lengthOfByteString\n・indexByteString\n・equalsByteString\n・lessThanByteString\n・lessThanEqualsByteString\n・String functions:\n・appendString\n・equalsString\n・encodeUtf8\n・decodeUtf8\n・Boolean functions:\n・ifThenElse\n\nTrace functions:\n・trace\n\nData functions:\n・chooseUnit\n・fstPair\n・sndPair\n・chooseList\n・mkCons\n・headList\n・tailList\n・nullList\n・chooseData\n・constrData\n・mapData\n・listData\n・iData\n・bData\n・unConstrData\n・unMapData\n・unListData\n・unIData\n・unBData\n・equalsData\n・mkPairData\n・mkNilData\n・mkNilPairData\n\nAll the basic builtin functions are implemented and can be found in public repository at https://github.com/anastasia-Labs/formal-verification\nWe have also prepared a presentation of this milestone in a video format for easier review:\nhttps://youtu.be/o1RM0EglfVA",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

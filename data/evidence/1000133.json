@@ -1,0 +1,45 @@
+{
+  "title": "NMKR Unity SDK",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 18000,
+      "promise": "・Requirements Documentation\n・Game demo design mockup\n・Code Repository",
+      "criteria": "Documentation should show that the tasks in the task list are in-line with creating a flow of minting with a Unity application. Designs and mockups should clearly indicate this flow.",
+      "report": "Design mockups, task list created on this repo:\nhttps://github.com/FutureFest/NMKR-Studio-Unity-SDK",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 18000,
+      "promise": "・Unity package\n・Github Repository\n・Documentation",
+      "criteria": "Unity package should contain all the necessary requirements to facilitate payments and minting from within a Unity application.",
+      "report": "As a Unity developer, these two scripts are responsible for the payments and minting:\nMinting API: https://github.com/FutureFest/NMKR-Studio-Unity-SDK/blob/main/Runtime/Scripts/Api/NmkrApiMint.cs\nPayments API: https://github.com/FutureFest/NMKR-Studio-Unity-SDK/blob/main/Runtime/Scripts/Api/NmkrApiPaymentTransactions.cs\nThey would just need to call these functions in their project to get it working.\nTo integrate this Unity package into their project, developers could follow these steps:\n・Copy package URL from GitHub\n・Go to https://github.com/FutureFest/NMKR-Studio-Unity-SDK > Code > Local > HTTPS > Copy git URL\n・or copy this: https://github.com/FutureFest/NMKR-Studio-Unity-SDK.git\n・Import package into Unity project\n・Go to your Unity project’s Package Manager\n・Click ‘+’ button at top left corner of Package Manger window\n・Click “Add package from git URL…”\n・Paste the git URL and click “Add”\n・Package should be under Packages folder in Project view\n・Package should be installed and ready to use!",
+      "kinds": [
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "17",
+      "cost": 24000,
+      "promise": "・Final close-out report\n・Final closeout video\n・Github Repository for NMKR Unity SDK\n・Documentation for new Extension\n・Link to the NMKR extension hosted on virtualvenues.io\n・Video showcasing the usage\n・Post on X demonstrating this feature from the futurefestxr X account",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・A user should be able to create an account on the VirtualVenues website, add the NMKR extension(which uses the NMKR Unity SDK under the hood), and showcase payments and minting.\n・A user should be able to go to the Github Repository and use the NMKR Unity SDK for their own projects",
+      "report": "Link to final closeout report:\nhttps://drive.google.com/file/d/18RiSsvmSYcG-cSaxcL2hXeLLxng4iTeQ/view?usp=drive_link\nLink to final closeout video:\nhttps://vimeo.com/1197272220?fl=tl&fe=ec\nGithub Repository for NMKR Unity SDK\nhttps://github.com/FutureFest/NMKR-Studio-Unity-SDK\nDocumentation for new Extension\nhttps://virtualvenues.io/dashboard/?tab=plugins\nDocumentation in \"NMKR\" see details\nVideo showcasing the usage\nhttps://x.com/futurefestxr/status/2061332895957127221?s=20\nand seen in the closeout video\nLink to the extension on virtualvenues.io\nhttps://virtualvenues.io/dashboard/?tab=plugins\nPost on X demonstrating this feature from the futurefestxr X account\nhttps://x.com/futurefestxr/status/2061332895957127221?s=20",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

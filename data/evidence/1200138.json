@@ -1,0 +1,73 @@
+{
+  "title": "Lace Anatomy: Tx Viewer and Builder by TxPipe",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 45000,
+      "promise": "Implementation of an MVP for a webapp that is able to draw a transaction from a CBOR or a tx hash making the necessary queries to some blockchain indexer.",
+      "criteria": "The webapp can read a CBOR or a tx hash and display the diagram of a transaction with arrows for inputs and outputs, showing in a user-friendly way the main information: utxos’ value and datums, minted and burned tokens, tx fees, among others.",
+      "report": "Milestone goals and proofs of completion\n\nA web app that can draw a transaction from a CBOR or a tx hash. \n\nWe implemented a web app that can read a CBOR or a Transaction Hash and display the diagram of a transaction represented with a box with lines for inputs and outputs. The source code is publicly available in the following repository:\nhttps://github.com/txpipe-shop/cardano-graphical-tx\nMilestone 1 was divided into two main stages:\nThe first stage focuses on functionality developed from a CBOR:\n・First, we added and refactored the initial prototype that was presented during the proposal submission phase.\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/1\n・Next, we added a panel to display transaction related information, such as the hash, fee, minting/burning details, among other data.\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/2 https://github.com/txpipe-shop/cardano-graphical-tx/issues/3\n・Then, we included information about reference inputs.\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/4 \n・We also added a feature to name transactions (or assign an alias).\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/5 \n・Finally, we added a panel to display information about UTxOs. Previously, only the UTxO reference for inputs was shown. \n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/6 \nThe second stage focuses on the same functionality developed, but drawing from a transaction hash. To achieve this, we integrated an indexer, which, in our case, was Blockfrost, after a quick research into different possible options. Either way, everything is more or less modular to a later integration of other indexers.\n https://github.com/txpipe-shop/cardano-graphical-tx/issues/7 \n・With Blockfrost integration, we implemented the functionality to display the transaction diagram based on the transaction hash.\n\n https://github.com/txpipe-shop/cardano-graphical-tx/issues/10 \n・Furthermore, given the inputs of a CBOR are represe",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 26,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 40000,
+      "promise": "UX design for adapting the existing Lace Anatomy webpage adding the necessary sections to include the graphic view of transactions. \n﻿Lace Anatomy webapp including the graphic viewer deployed and publicly available.",
+      "criteria": "The Lace Anatomy webpage includes the tx graphic viewer integrated into the UI. \n﻿A user can read and learn about tx components, together with their graphical representation.",
+      "report": "We have developed a web application that adheres to the existing Lace Anatomy style guidelines, featuring a graphic viewer for transactions. The app has been deployed and made publicly accessible.\nKey achievements:\n・Adapted the web app to follow the design of the existing Lace Anatomy webpage\n・Integrated the dissect transactions functionality\n・Refined the overall design so that the draw and dissect operations now share the same data structures\n・Deployed the application\n\nThe source code for this milestone is publicly available in the following repository: https://github.com/txpipe-shop/cardano-graphical-tx\nMilestone 2 was divided into two main stages:\nThe first stage focuses on adapting the existing code:\n・First, we added dissect functionality to retrieve transaction information from CBOR\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/26\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/48\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/49\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/46\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/47\n・Then, we Implemented error management for missing information during transaction searches.\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/62\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/43\n・Finally, we refactored the web page to include a landing page\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/38\n\nThe second stage focuses on deploying the code and making it publicly available.\n https://github.com/txpipe-shop/cardano-graphical-tx/issues/27\n・First, we created a docker image and then configured it to host it using demeter, the link where you can find the deployed web page is as follows:\n\n https://3000-existing-laughter-9dreix.us1.demeter.run/\nThe following video shows the functionalities developed on milestone 2: \n﻿https://youtu.be/Zr2mFQHb6Vo",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 24
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 35000,
+      "promise": "Definition of a DSL capable of specifying a Cardano transaction. \nDocumentation describing precisely the language and boilerplate of the implementation of a parser.",
+      "criteria": "The user or Cardano developer is able to write sentences in the defined Domain Specific Language that specify Cardano transactions.",
+      "report": "DSL capable of specifying a Cardano transaction. \nWe have created the documentation precisely describing the language to specify Cardano transactions that can later be used to generate a compliance CBOR and implemented the language data types. The previously mentioned documentation can be found in the repository:\nhttps://github.com/txpipe-shop/cardano-graphical-tx/blob/main/docs/specification.md \nKey achievements:\n・Definition of DSL\n・JSON Schema\n・Examples of transactions written in the DSL\n・Prototype of parser using the JSON Schema\n・PoC interface to try the prototype\n\nTo define the DSL, an iteration was performed over a simple example: transferring ADA from one wallet to another. In this way, the most important sections of the transaction were defined: the definition of inputs and outputs.\nThe example was then iterated upon to expand the language's expressiveness, defining how to describe inputs and outputs. Other sections were also identified, such as fees, minting, withdrawals, and even sections that are irrelevant or imperceptible in a CBOR, like names (for inputs, outputs, or the transaction itself), among others.\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/68 https://github.com/txpipe-shop/cardano-graphical-tx/issues/69\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/73\nAfter the specification was done, we defined a JSON Schema to aid the checking the syntaxis of transactions written on the DSL.\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/71\nA video-demo was recorded showing the main uses of the DSL.\nVideo",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 11
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 40000,
+      "promise": "Implementation of a parser/code-generator for reading a tx spec written in the DSL and producing a CBOR.",
+      "criteria": "A sentence in the DSL can be parsed and a CBOR is generated.",
+      "report": "1- A parser for reading a tx spec written in the DSL and producing a CBOR. \n\nWe have developed and implemented a parser and translation function for transactions written in the domain-specific language (DSL). This functionality enables the generation of CBOR representations, which can be displayed in either hexadecimal or diagnostic notation, providing flexibility for further analysis.\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/77\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/79\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/80\n\nIn the previous milestone we defined the DSL, with which we can now build transactions and parse them in a simple way. Then, the result of these transactions can be displayed using the previously developed grapher. The web application was adjusted to facilitate this type of operations.\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/85\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/84\n\nWe also identify cases that can't be directly written as CBOR and implement appropriate case management. These cases were also properly documented.\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/78\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/81\n\nOnce the implementation was completed, tests were performed on the functions that parse the CBOR to ensure its correct working.\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/82\n\n2-A video-demo was recorded showing the main uses of the DSL.\n\nhttps://youtu.be/5-c2tF_etSE",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 18
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 39375,
+      "promise": "・UI design and integration of CBOR generator from the DSL into the Lace Anatomy webpage. \n・Deployment of integrated version of Lace Anatomy webapp. Final report.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・The Lace Anatomy webapp containing features for displaying tx graphics and building a tx from the designed DSL is publicly available.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Closing Report: https://drive.google.com/file/d/1L62LpMPPtLCli0YJb0aSA25nTqqYU4Tq/view?usp=sharing\nClosing Video: https://youtu.be/f68NznQYzYY?si=QlccE6OJavsIp4bE\nWebApp: https://laceanatomy.com/",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

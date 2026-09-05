@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "DIDの生成:\nNuNetネットワーク内のすべてのエンティティティティティは、組織、ユーザー、および機械で、Cardanoウォレットから派生する独自の分散識別子(DID)を安全に、独自に生成できます。\n規格の承諾:\n生成された DID は、W3C DID 規格に準拠し、Nunet 内の信頼性と標準化された識別を保証します.",
+      "criteria": "Cardanoウォレット機能からDIDを生成するためのコードは、Nunetコードベースで実装されています。 それは渡るべきです\n・ユニットテスト、\n・インテグレーションテスト\n・機能の一般的なユーザー視点を表す受容性テスト\n\nDIDの生成プロセスと基本使用ガイドラインを上書きする英語で明確に記述します。 完全なコードベースとドキュメントは、Nunet GitLabリポジトリ(https://gitlab.com/nunet)で公開されています。\nこの機能はメインブランチに統合され、マイナーまたはメジャープロトコルリリースに含まれています.",
+      "report": "ソリューション\nNunetプロトコル内のCardano Eternlウォレットの統合。 この統合により、次の機能が追加されました。\n・NuNetネットワーク内のエンティティティティティは、Eternlウォレットを使用して独自のW3C準拠の分散型識別子(DID)を生成できます。\n・Eternl Wallet は機能を生成するために使用できます\n・Eternl Wallet は、ネットワーク内の他のピアに機能を提供することができます。\n\n注意:NuNetのネットワーク通信は、NuActor Systemが、UCANモデルのDIDに固定された、細かい機能を利用するゼロトラストシステムによって供給されます。 このマイルストーンにより、Cardano Eternl Wallet は、Nunet ネットワーク内の安全なやり取りに必要な ID 管理、認証、認証に使用されます。\n\n受容体基準\nデバイス管理サービス(DMS)Gitlabリポジトリで、NunetのコードベースとMR #1190を融合しました。 また、DMS の最新のメジャーリリースには v0.9.0 も含まれています。\n必要なテストは首尾よくクリアされています\n・パイプラインで実行されるユニットテスト\n・受容・インテグレーションテストを手動で実施\n\n必要書類の作成と公開Gitlabリポジトリで利用可能\n\nエビデンス\n実装のマージリクエスト:\nhttps://gitlab.com/nunet/device-management-service/-/merge requests/1190\nDMS 0.9.0リリース\nhttps://gitlab.com/nunet/device-management-service/-/releases/r0.9.0\nドキュメント\nEternl CLIツールのREADME\nhttps://gitlab.com/nunet/dev-tools/eternl-cli/-/blob/main/README.md?ref type=heads\nCardano Eternl Walletの統合を使用するREADME\nhttps://gitlab.com/nunet/device-management-service/-/blob/main/docs/wallets/README.md?ref type=heads\nユニットテスト\nhttps://gitlab.com/nunet/device-management-service/-/jobs/12417884066\nアクセダンス&インテグレーションテスト\n機能全体を示すビデオ録画はこちら\nhttps://gitlab.com/nunet/device-management-service/-/blob/main/docs/wallets/README.md?ref type=heads#demonstration-video"
+    },
+    {
+      "no": 2,
+      "promise": "NuNet プロトコルに統合された複数の DID メソッドのサポート\n互換性は、Cardanoエコシステム(例えば、Hyperledger Identus、KERI、またはAndamio)で使用される少なくとも1つの分散型アイデンティティソリューションで保証されています.",
+      "criteria": "機能が実装され、すべてのユニット、インテグレーション、アクセプションテストがパスされます。 アクセダンステストは、自己優先アイデンティティ(SSI)ソリューションを実装するためのユーザー行動を表します\nドキュメントは英語で書かれており、\n・DID統合とSSIソリューションのオーバービュー\n・設定・利用ガイドライン\n\nコードベースとドキュメントは、NuNet Gitlab リポジトリ(https://gitlab.com/nunet)で公開的にアクセス可能です",
+      "report": "ソリューション\nNunetプロトコル内でのprismメソッドの統合。\nPRISMは、分散型アイデンティティ管理を提供するCardanoブロックチェーン上で動作するDIDメソッドです。 この統合により、次の機能が追加されました。\n・PRISMのアイデンティティの作成・管理\n・PRISM DIDでUCANトークンを署名\n・PRISM の署名による UCAN トークンの検証\n・「プリズム」と「キー・アイデンティティ」の相互運用\n\nこれは、Hyperledger Identus SSIソリューションとの互換性を確立します。\n注意:NuNetのネットワーク通信は、NuActor Systemが、UCANモデルのDIDに固定された、細かい機能を利用するゼロトラストシステムによって供給されます。 このマイルストーンでは、Nunetネットワーク内の安全なインタラクションに必要なID管理、認証、認証に使用できるようにしました。\n\n受容体基準\nデバイス管理サービス(DMS)のGitlabリポジトリで、NunetコードベースとMR #1215を組み合わせています。\n必要なテストは首尾よくクリアされています\n・パイプラインで実行されるユニットテスト\n・受容・インテグレーションテストを手動で実施\n\n必要書類の作成と公開Gitlabリポジトリで利用可能\n\nエビデンス\n実装のマージリクエスト:\nhttps://gitlab.com/nunet/device-management-service/-/merge request/1215\nドキュメント\nhttps://gitlab.com/nunet/device-management-service/-/blob/main/prism/PRISM UCAN DOCUMENTATION.md\nユニットテスト\nhttps://gitlab.com/nunet/device-management-service/-/jobs/12881199303\nアクセダンス&インテグレーションテスト\n機能全体を示すビデオ録画はこちら\nhttps://gitlab.com/nunet/device-management-service/-/blob/main/prism/PRISM UCAN DOCUMENTATION.md#demonstration-video"
+    },
+    {
+      "no": 3,
+      "promise": "前のマイルストーン(例えば、Hyperledger Identus、KERI、またはAndamio)がサポートする分散型アイデンティティ(DID)ソリューションの分析。\n少なくとも1つの分散型アイデンティティソリューションのための統合アーキテクチャとロードマップの設計。\nNuNet インフラストラクチャリソースで利用できる青写真と関連文書の設計.",
+      "criteria": "(1) 1-3 の分散型アイデンティティ・ソリューションで評価する包括的な分析レポートは、以前に確立された DID メソッドと互換性があり、機能の詳細な技術的評価、制限、および統合要件; (2) フェーズド・実装のロードマップ・提案; (3) 提案されたアーキテクチャは、既存のオープンソースのコンプライアンス・フレームワークと検証基準をサポートし、NuNet プロトコルと技術的に準拠しています.",
+      "report": "ソリューション\nNeoPrism ノードの統合を NuNet プロトコルと、Hyperledger Identus SDK と NuNet Device Management Service (DMS) 間の相互運用性を検証する POC 実装に完了しました。 これは、NuNetエコシステム内のHyperledger Identusベースのアイデンティティを使用するための技術的実現性と統合設計を示しています。\n公開されたGitlabの問題で、完了したすべての関連作業を文書化しました。 以下が含まれます:\n・Hyperledger Identus SSIソリューションの分析により、その検証可能なデータレジストリ(VDR)として、アイデンティティ生成とCardanoのprismメソッドを使用します。\n・インテグレーションに関して考慮される内部ディスカッションとアプローチ\n・Hyperledger Identusが利用するNeoPrismノードとの統合に向けた基礎作業の検討\n・技術的実現可能性と統合設計を確立する POC 実装への参照\n\nNote: デバイス管理サービス(DMS)は、NuNetプロトコルのコアコンポーネントです。 詳しくはこちらをご覧ください。\n\n受容体基準\nHyperledger Identusの分散型アイデンティティソリューションの分析\nhttps://gitlab.com/nunet/device-management-service/-/issues/1256#analysis\nNuNetプロトコルとの統合\nhttps://gitlab.com/nunet/device-management-service/-/issues/1256#integration-within-nunet-protocol\nすべての作業は、オープンソースのコンプライアンス・フレームワークと検証基準に基づいており、NuNetプロトコルに準拠しています。 必要な文書を作成して、公開Gitlabリポジトリで利用できます。\n\nエビデンス\nこの公開Gitlabの問題で作業を文書化するサマリーレポートが確認できます\nhttps://gitlab.com/nunet/device-management-service/-/issues/1256"
+    },
+    {
+      "no": 4,
+      "promise": "詳細な技術分析、統合要件、NuNetプロトコルとオープンソースのコンプライアンスフレームワークとのアライメントを含む、選択した分散型アイデンティティ(DID)ソリューションの評価をコンパイルするレポート。 配送可能:\n・最終クローズアウトレポートの検索、ロードマップ、推奨事項をまとめました。\n・Final Close-out 結果、主要な洞察、および次のステップを示すビデオ",
+      "criteria": "実装ロードマップに最終クローズアウトレポートの完成と公開リリース。 提案されたアーキテクチャは、NuNet プロトコルと既存のオープンソースの検証基準に技術的に準拠すべきです。\n・最終クローズアウトレポートは一般公開しており、Catalyst Fund14のガイドラインに従って書かれています。\n・最終クローズアウト映像は、Catalyst Fund14のガイドラインに従って公開・作成",
+      "report": "ソリューション\n・前回のマイルストーンで行われた全ての作業をまとめた最終報告書を閉じます。 また、ロードマップと次の手順も含まれます。\n・最終クローズアウトビデオ\n\n受容体基準\n最終クローズアウトレポートは、NuNetのGoogleドライブのPDF形式で利用可能です。 実装ロードマップを含みます:\nhttps://drive.google.com/file/d/1pjJBRFQh3w0uwqfFPjvcVF7VRpiW04hz/view?usp=sharing\nNuNet YouTube チャンネルで公開されている動画です。\nアーキテクチャはオープンソースの検証基準に基づいており、NuNetプロトコルと技術的に準拠しています。\nエビデンス\nレポートを閉じる\nhttps://drive.google.com/file/d/1pjJBRFQh3w0uwqfFPjvcVF7VRpiW04hz/view?usp=sharing\nビデオを閉じる\nhttps://www.youtube.com/watch?v=wI8MYjx -Js"
+    }
+  ]
+}

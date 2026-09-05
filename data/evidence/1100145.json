@@ -1,0 +1,70 @@
+{
+  "title": "Google wallet - Web3 Single Sign-on by NuFi",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 59010,
+      "promise": "・Integrate fiat on/off-ramp (Research, implementation, testing)\n・Add asset management functionality: Transaction history (Research, implementation, testing)\n・Implement Settings screen in Widget; at least fiat currency settings option (Research, implementation, testing)\n・Hire a lawyer to help with the creation of Terms & Conditions and usage policy documents",
+      "criteria": "The new functionality works properly inside the wallet widget and a lawyer has been commissioned to create the T&Cs and documentation",
+      "report": "In the folder linked below, you can find video evidence of the Milestone outputs working properly inside the SSO wallet widget.\nThe videos demonstrate on and off ramp functionality (i.e. buy and sell ADA), wallet transaction history, and settings. Included in this folder is also the Terms and Conditions document created by the law firm Sparring.\nhttps://drive.google.com/drive/folders/13pmMHlL_yutZ7xQ9BY0iTxljIn-K2873?usp=sharing\n\n-> Testing On/Off Ramp\nhttps://sdk-example.nu.fi/?nufiDomain=https://wallet-staging.nu.fi\nNote that you will not be able to test Dapp transactions as the Dapp does not support mainnet network\n-> Testing settings screen, change currency, tx history, pending transactions\nhttps://sdk-example.nu.fi \nNote that you will not be able to test On/Off ramp and DEX integration as Dapp runs on preprod network",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 59010,
+      "promise": "・Integrate Cardano DEX aggregator (Research, implementation, testing)\n・Add asset management functionality: Pending/completed transaction status tracking (Research, implementation, testing)\n・Enable seed phrase backup functionality (Research, implementation, testing)",
+      "criteria": "The new functionality works as intended inside the wallet widget",
+      "report": "In the folder linked below, you can find video evidence of the Milestone outputs working properly inside the SSO wallet widget.\nThe videos demonstrate Cardano DEX aggregator functionality, transactions + status tracking, and seed phrase backup functionality.\nhttps://drive.google.com/drive/folders/1bqYP9McSQTYsQwXSLdt34w9W1NYKzEoQ?usp=sharing\n\n-> Testing DEX aggregator and seed phrase backup functionality\nhttps://sdk-example.nu.fi/?nufiDomain=https://wallet-staging.nu.fi\nNote that you will not be able to test Dapp transactions as the Dapp does not support mainnet network\n-> Testing transactions and transaction statuses\nhttps://sdk-example.nu.fi \nNote that you will not be able to test On/Off ramp and DEX integration as Dapp runs on preprod network",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 59010,
+      "promise": "・Optimize the widget experience for use on mobile web-dApps (Research, implementation, testing)\n・Create documentation - Create how-to documentation for users and integration docs for developers\n・Dashboard for dApps with basic usage statistics for the dApp (Research, implementation, testing)\n・Collect feedback - from users with for example incentivized social media campaign and from dApps who have integrated or are interested to integrate the solution",
+      "criteria": "The dashboard functionality works as intended and the wallet widget's UX for mobile devices is optimized. We will consider feedback collection complete when we have engaged with multiple Cardano projects and service users. Documentation will be considered completed when it is published.",
+      "report": "Please find below links to evidence for each milestone output:\n“Optimize the widget experience for use on mobile web-dApps” and develop “dashboard for dApps”\n・Mobile optimization and dashboard functionality is demonstrated in this video here: https://drive.google.com/file/d/1CJC-s1ngTo2_xS5ZRMtzg2gi6YvhT0lf/view?usp=sharing\n・Dashboard functionality referenced in developer documentation here\n・Mobile optimization referenced in developer documentation here\n・You can test the Widget’s mobile optimization first-hand using a mobile device at https://wingriders.com\n\n“Create how-to documentation for users and integration docs for developers”\n・User documentation: https://support.nu.fi/support/solutions/80000463776\n・Developer documentation: https://nufi.gitbook.io/developer-docs/nuficonnect-single-sign-on-sdk-for-cardano-dapps/overview\n\n“Collect feedback”\n・See columns A and B in the document linked below to see the feedback collected from users and DApps along with our findings regarding each point: https://drive.google.com/file/d/1ia4GDFIUmzN-1ECfIVwul-yiROGiXjOP/view?usp=sharing",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 12
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 59010,
+      "promise": "・Refactor SDK to enable customizations by dApps and enable customization of widget appearance, position, logo, ability to \"feature\" a token or NFT in the asset list (Research, implementation, testing)\n・Add asset management functionality: Non-blocking transactions (Research, implementation, testing)\n・Research capability and prepare PoC for mobile apps widget (document, link to PoC/experiment)\n・Make improvements to the SSO service based on feedback from dApps and users (Research, implementation, testing)",
+      "criteria": "The service's SDK has been re-factored and improvements made to the service based on previously-collected feedback. New wallet functionality works as intended and a PoC has been created for mobile apps widget.",
+      "report": "Please find below links to evidence for each milestone output:\n“Refactor SDK to enable customizations” and “Add asset management functionality: Non-blocking transactions”\n・Customizations and asset management functionality is demonstrated in this video here: https://drive.google.com/file/d/1HOpebpg64eAy1tagLtg3Fw-nn-MAE_Bg/view?usp=sharing\n・Customization also referenced in developer documentation here\n・You can test Widget customization and non-blocking transactions first-hand at https://app.vyfi.io/\n\n“Research capability and prepare PoC for mobile apps widget”\n・Link to report: https://drive.google.com/file/d/1ZO6ySD4F-mqFokioBpLUOxMlZExS6cMc/view?usp=sharing\n\n“Make improvements to the SSO service based on feedback”\n・See the document linked below for information on feedback collected from users with details, where appropriate, of the improvements or new features implemented as a result: https://drive.google.com/file/d/1ia4GDFIUmzN-1ECfIVwul-yiROGiXjOP/view?usp=sharing",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 9
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 59013,
+      "promise": "・Create and submit closeout video and report\n・Confirmation of release of all functionalities in production environment",
+      "criteria": "We will consider the video and report complete after submitting both to the Catalyst team.",
+      "report": "Closeout video:\nhttps://youtu.be/RGEBl4JfSuk\nCloseout report:\nhttps://docs.google.com/document/d/1TVShZnN_dxcm7NW8GRBa2CoFJ3i1QTTjNpUdE7yXZQg/edit?usp=sharing",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

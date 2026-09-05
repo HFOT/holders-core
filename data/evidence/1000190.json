@@ -1,0 +1,85 @@
+{
+  "title": "Winter Protocol: Open-Source Traceability & Real World Asset Tokenization",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 60000,
+      "promise": "・Create github library under open-source standards\n・Define the scope and requirements for the modular components library\n・Identify and design tokenization schemas\n・Identify and design traceability schemas\n・Develop tokenization and traceability tooling\n・Create a simple explorer and viewer for on-chain assets\n・Test and iterate on the modular components\n・Document the usage and integration of the library",
+      "criteria": "Library of the following components:\n・Tokenization schemas on the Winter Protocol Github (to be made public as a draft version)\n・Traceability schemas on the Winter Protocol Github (to be made public as a draft version)\n・Tokenization and traceability tooling\n・Explorer and viewer for on-chain assets",
+      "report": "Milestone 1 Overview\nThe goal of Milestone 1 was to make a step-change progress in the development of an open-source framework for the Winter Protocol - a tokenization and traceability protocol. As part of this milestone, key outputs were completed. These include:\n\n・Completion of the first iteration of smart contracts\n・Open source library, complete with positive tests, available on github and npm\n・Documentation of the winter protocol and respective library \n・Tokenization and traceability schemas available on the documentation website\n・Competed design of explorer and on-chain asset viewer \n\nOpen Source Github Library + Documentation\n\nThe two core deliverables for this section include the following: \n・Deliverable - Open Source Github Library - LINK\n・Deliverable - Documentation - LINK\n\nThis library contains helper functions which interact with our smart contracts that facilitate immutable traceability on Cardano.\n\nFor more information on the docs:\n・A summary can be found here: https://palmyra-docs.vercel.app/docs/cardano/winter\n・Usage of library can be found here: https://palmyra-docs.vercel.app/docs/cardano/event\n・Smart Contract Repo with docs: https://github.com/zenGate-Global/winter-cardano-contracts\n\nIdentify and design tokenization and traceability schemas\n\nOverview and brief:\nIn the world of countless blockchains, the extended UTXO model on Cardano shines as a robust system for monitoring commodities. \n\nImagine a journey where every step of a product's lifecycle is meticulously recorded. This journey is characterized by key moments: aggregation, where diverse commodities are brought together in harmony, and transformation, the pivotal points where these items undergo a significant change. \n\nAggregation is nothing but the consolidation of items, this can be simply represented on-chain through several inputs combining to one output. Similarly, transformation involves the convergence of items and/or the application of a process upon them. In both scenarios, the deta",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 27,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 50000,
+      "promise": "・Determine the required functionalities for the APIs\n・Design and develop APIs for server-side integration\n・Design and develop APIs for client-side integration\n・Ensure compatibility with languages such as Scala, TypeScript, and React\n・Test the APIs for functionality and compatibility\n・Provide documentation and examples for API usage",
+      "criteria": "・Components are developed that will be available to use server side or client side.\n・APIs are created which are capable of being used with languages such as Scala, typescript and react",
+      "report": "Building APIs for easy front end integration\n\nCore Deliverable API Testing - Demo \n\nPlease see this video which demonstrates all backend capabilities.\nhttps://drive.google.com/file/d/1tIgY6b2WfYVjYR2k6IUkVkFNVboX8uyD/view?usp=sharing\n\nMilestone 2 Supplementary Evidence and Outputs:\n\nDetermining the required functionalities for the APIs & Compatibility with Languages:\nThe backend API is built to work with the winter cardano library (Github Link). It contains end-to-end code to singleton mint, perform contract recreation, and contract spend. The backend processes all transactions with a centralized wallet, while maintaining scalability. It also indexes data to a database for convenience. Clients can communicate with the backend via REST API, allowing any languages to leverage it. \n\nUpdated Documentation (demonstrating Milestone 4 progress - which is about documentation)- LINK to most recent documentation (noting that Milestone 4 requires us to finish the documentation, we are just attaching it here as it provides some useful context to the project).\n\nAs a reminder, \n・Singleton Mint: This represents the creation of an object/commodity or it can also represent an event. Data is written to the utxo guarded by the smart contract which contains the freshly minted singleton (tracking) token.\n\n・Contract Recreation: This represents an error correction of an object or event. A new utxo holding the original singleton and lovelace value is made from the inputs of the original one. Contract preserves protocol version and signers. It also makes sure the original transaction is always referenced. The data reference portion is required to change since recreation is only done for corrections.\n\n・Contract Spend: This represents a decommission of an object or event. The singleton token is burned.\n・\n\nTechnical Details and Considerations:\n\nThe backend is written using the Nest.js framework with TypeScript and the Node.js runtime.\n\nNest.js was chosen for its modularity and scalability, whi",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 45000,
+      "promise": "・Identify key use cases for template libraries (e.g tracing agricultural products, tracing supply chains, tokenizing commodities, etc...)\n・Develop templates and examples for each various use-case\n・Document the templates and provide usage guidelines\n・Test and refine the templates based on feedback\n・Test and validate the plug and play solution",
+      "criteria": "・Develop templates that aim for various key use cases so that projects don't have to start from scratch when creating their solution\n・Develop documentation and explanation for the various templates than can be leveraged\n・Develop a plug and play, easy to use version of the protocol which will create solutions with limited coding requirements",
+      "report": "Re-submission Notes:\nThank you for taking a look and quickly providing feedback on the PoA. Please see the following changes based on the requests:\n・Re-written the Evidence 1 section. I have changed the approach from information around these sectors, to evidence around who we work with and why its important to have traceability.\n\n \n・Information around the test and refine process: the team behind the Winter Protocol has worked for a number of years already in the commodities sector and have worked directly with stakeholders in these sectors on traceability solutions. Some examples of customers that we consulted include those that already use the Palmyra Platform for direct trade. Some examples include:\n・Kyle Curry from Natures Nectar (Zambian Honey) - https://palmyra.app/listing/trading/bio/biz_01HRVGSMGJHZGN47GT299A86Q9\n\n・Simon Bell from AMBA Estate (Sri Lankan Tea) - https://palmyra.app/listing/trading/bio/biz_01HREKGC6DQ3ZWN8EBF27RHX9Z\n\n・Udena Wickremasooriya from Kaley Teas (Sri Lanka Tea) - https://palmyra.app/listing/trading/bio/biz_01HR9FCCWHH2S0JBHA34449J5B\n\n・Bespice (Sri Lankan Spice Exporter) - https://palmyra.app/listing/trading/bio/biz_01HS040N31YTJS2ZRJ1578WC1D\n\n・Our ability to quickly develop these templates and understand what we need to capture is from our many years working in these commodity markets. We did however, consultant the producers and various other experts to ensure that we are aligned. \n・We are currently proactivley working with all our producers on the Palmyra Platform to capture this data. Further we have a pilot with a Honey Producer as well. All of this has allowed us to understand and curate these templates. \n\nGeneral Outputs:\nFor this milestone, there are several outputs. The evidence outlined for these outputs include:\n・Example templates to provided on the Winter Protocol Github\n・Documentation and explanation for the various templates to be provided as sections in the Winter Protocol Github. \n・Write up the plug and play solution pu",
+      "kinds": [
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 21,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 15000,
+      "promise": "・Provide comprehensive documentation for the code libraries\n・Document developer resources and best practices\n・Provide deployment resources and guidelines\n・Organize the documentation in a user-friendly manner\n・Establish a knowledge base for common questions and issues",
+      "criteria": "・Full documentation suite including information on code libraries, developer resources and deployment resources",
+      "report": "M4 Re-submission notes:\n#3 July Submission 2025 Comments (30th July):\nDear reviewers - we have addressed the prior feedback. I have tried to stick to the formatting you both used in your questions. Thanks you in advance;\n1) The evidence for Milestone \"Documentation on the Winter Protocol Github\" was supposed to be delivered. Instead, there is a link to an external site, so no documentation (or its history) is in the repository.\nPlease find the 3 github repo's that contain all documentation. We have added (as well as migrated some of the old documentation in the external link over to the github as requested). \n・Winter-Cardano-Contracts (the smart contracts used for the traceability protocol). https://github.com/zenGate-Global/winter-cardano-contracts - additions to the readme has been completed.\n\n・Winter-Cardano is a library (it uses compiled contracts from winter-cardano-contracts) The Github repo is https://github.com/zenGate-Global/winter-cardano/tree/main - details on how this repo is detailed in the updated ReadMe section.\n\n・Winter-Backend (is the entire service which builds, submits, and indexes transactions to the database. The backend uses the winter-cardano library). The GitHub Repo is https://github.com/zenGate-Global/winter-backend-cardano - readme is up to date.\n\n2) Also, the readme in the Winter Protocol Smart contracts can't be considered as a comprehensive code documentation.\nhttps://github.com/zenGate-Global/winter-cardano-contracts - readme in the Contracts Repo has now been updated with more detail. \n\n3) Developer resources and best practice documents is missing. Please update the documentation and push it to the Winter Protocol Github.\nBest practices can be found in two locations on Github. \n・Best practices for Winter Backend Repo here - https://github.com/zenGate-Global/winter-backend-cardano/blob/main/docs/BEST-PRACTICES.md\n\n・Best practices for Winter Cardano Contracts found in the readme section - https://github.com/zenGate-Global/winter-cardano",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 48,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 30000,
+      "promise": "・Create a step-by-step sandboxing manual for project integration\n・Create a community early adopters group\n・Create a community auditor group\n・Develop educational materials to explain the toolkit's features\n・Gather feedback and address common challenges in the integration process",
+      "criteria": "・Create a simple sandboxing manual aimed at creating step by step instructions for projects looking to utilize the solution\n・Engage the community and provide some educational materials on the toolkit available",
+      "report": "Resubmission\nPublic Youtube Link for Closeout Video - https://www.youtube.com/watch?v=z6wE4OXnn8Q\nA. Output: Public Sandbox & Step-by-Step Integration Manual\nAcceptance criteria:\nCreate a simple sandboxing manual aimed at creating step-by-step instructions for projects looking to utilize the solution.\nEvidence:\nPublic Sandbox: Winter API Swagger\nEducation Material: Creating Your First Record\n\nThe sandbox allows developers to:\n・Interact with live API endpoints\n・Submit test records\n・Inspect responses\n・Test without wallet setup\n\nThe guide provides:\n・Step-by-step request creation\n・Payload examples\n・Explanation of immutability and record structure\n・Instructions for testing endpoints\n\nThis satisfies the requirement for a publicly accessible sandbox and integration manual.\nB. Output: Community Early Adopter & Auditor Group\nAcceptance criteria:\nEngage the community and provide visible communication channels for interaction.\nEvidence:\nThis evidence required creating a community group. The Discord platform was used for simplicity since it is already being used for managing the PALM community and marketing, anyone in the server is free to engage and try out the winter protocol. \n\n・winter-protocol channel on discord\n\nAny adopters or companies looking to use Winter or test the traceability protocol can ask us questions and get help to set up their own instances of Winter. Within this channel:\n・Developers can ask integration questions\n・Early adopters can test the sandbox\n・Community auditors can review implementation logic\n・Discussions are publicly visible\n\nC. Output: Educational Materials & Developer Guides\nAcceptance criteria:\nDevelop educational materials to explain the toolkit's features and integration process.\nEvidence:\n・Winter Protocol GitHub Documentation: https://palmyra-docs.vercel.app/docs/winter-protocol\n・winter-cardano (SDK): https://github.com/zenGate-Global/winter-cardano\n・winter-cardano-contracts: https://github.com/zenGate-Global/winter-cardano-contracts\n・winter-b",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 25,
+      "cut": true
+    }
+  ]
+}

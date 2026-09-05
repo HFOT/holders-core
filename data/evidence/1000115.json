@@ -1,0 +1,69 @@
+{
+  "title": "MLabs - Cardano Onchain Languages Benchmark",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 54286,
+      "promise": "Write a specification of validator that will be later implemented in various languages to compare their performance.",
+      "criteria": "Specification document that provides a high level overview of the protocol, fully describes design and required checks of the validator is published.",
+      "report": "Outputs:\nValidator specifications written in LaTeX describing validators to be implemented later in various languages to compare performance as outlined in our SoM.\n\nAcceptance:\nOur specification document provides the high-level protocol overview and explanation of the validator design and checks as outlined in our SoM.\n\nEvidence:\n\nEvergreen specification documents for project validators written in LaTeX\nhttps://mlabs-haskell.github.io/uplc-benchmark/specifications.html\n\nAnd the LaTeX code is hosted in a GH repo\nhttps://github.com/mlabs-haskell/uplc-benchmark/tree/master/specifications",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 54286,
+      "promise": "Implement a validator specified in the document from milestone one in Plutarch.",
+      "criteria": "The implemented Plutarch validator matches the high-level overview from the specification document and implemented validator checks match the technical specification.",
+      "report": "OUTPUTS\nUsing the LaTeX validator specification delivered in milestone one, team members were able to quickly implement our milestone two delivery, a Plutarch implementation. Due to our quick pace of delivery - and adjusted for staffing concerns around the holiday season - the implementation was actually delivered notably ahead of schedule (merged Dec 11th). Nevertheless, this is the deliverable detailed in our original Ideascale proposal and our milestone two statement document.\n\nACCEPTANCE CRITERIA \nAs can be seen in the PR linked below, the merge contains several configuration and build management files and, more importantly, source code files for the Plutarch implementation. As described in the LaTeX specification file delivered as part of our first Proof of Achievement, the Haskell files contain the implementation of a validator script - written using Plutarch - for a simple example protocol, an NFT marketplace. The reader will recall that this example protocol will be implemented in several on-chain languages and benchmarked to identify the most performant languages.\n\nPer the Acceptance criteria of our Milestone Two documentation, developers have ensured this Plutarch implementation matches the specification design and implemented validator checks that match the technical specification as well.\n\nEVIDENCE\nThe files comprising the completion of this milestone, and our proof of achievement can be found here\nhttps://github.com/mlabs-haskell/uplc-benchmark/pull/13/files\nAnd which we are happy to say we were able to deliver ahead of schedule owing to the hard work of our team members.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 54286,
+      "promise": "Develop a comprehensive, language-agnostic test framework that will test the reference implementation, and will be used later on to test implementations in other languages to show the equivalence of implementations.",
+      "criteria": "Plutarch validation implementation is passing the test suite.",
+      "report": "OUTPUTS\n\nA comprehensive, language-agnostic framework for testing the reference implementation\n\nACCEPTANCE CRITERIA\n\nPlutarch validation implementation passes test suite\n\nEVIDENCE\n\nGitHub link:\n\nhttps://github.com/mlabs-haskell/uplc-benchmark/pull/20\n\nCommand line output from successful run:\n\nUPLC Benchmark\n Plutarch\n NFT Marketplace\n Buy one: OK\n Invalid buy one - no datum: OK\n Invalid buy one - hash datum: OK\n Invalid buy one - pay too little: OK\n Invalid buy one - pay too much: OK\n Invalid buy one - pay with junk: OK\n Invalid buy one - no payment: OK\n Cancel one: OK\n Cancel one - wrong key: OK\n Cancel one - no key: OK\n DEX\n LP Minting Policy\n Valid mint - one NFT: OK\n Valid mint - two NFTs: OK\n Invalid mint - don't spend NFT: OK\n Invalid mint - one of two NFTs: OK\n Invalid mint - wrong NFT name: OK\n NFT Minting Policy\n Valid mint: OK\n Invalid mint - more than one minted: OK\n Invalid mint - invalid name: OK\n Invalid mint - no initial spend: OK\n Invalid mint - initial spend wrong id: OK\n Invalid mint - initial spend wrong idx: OK\n Invalid mint - initial spend idx over 255: OK\n Pool Validator\n Swap\n Valid Swap - A for B: OK\n Valid Swap - B for A: OK\n Invalid Swap - no fee: OK\n Invalid Swap - steal NFT: OK\n Invalid Swap - no datum: OK\n Invalid Swap - modified datum: OK\n Invalid Swap - unit datum: OK\n Invalid Swap - drain pool: OK\n Invalid Swap - no self output: OK\n Deposit\n Valid Deposit: OK\n Invalid Deposit - mint but no deposit: OK\n Invalid Deposit - not deposit enough: OK\n Invalid Deposit - steal NFT: OK\n Invalid Deposit - no datum: OK\n Invalid Deposit - modified datum: OK\n Withdraw\n Valid Withdraw: OK\n Invalid Withdraw - mint but no withdraw: OK\n Invalid Withdraw - withdraw too much: OK\n Invalid Withdraw - steal NFT: OK\n Invalid Withdraw - no datum: OK\n Invalid Withdraw - modified datum: OK",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 67856,
+      "promise": "Implement the validator from the specification that is equivalent to the reference Plutarch implementation using Aiken, PlutusTx, and Opshin languages in order to compare the performance. Ensure the equivalence by plugging all implementations to the same test suite.",
+      "criteria": "Alternative validator implementations in Aiken, PlutusTx, and Opshin are passing the test suite.",
+      "report": "EVIDENCE \n\nPlease see these links as evidence for our PoA4:\n\nMonorepo: \n\nhttps://github.com/mlabs-haskell/uplc-benchmark\n\nRunning aiken: \n\nhttps://github.com/mlabs-haskell/uplc-benchmark/tree/master/implementations/aiken#usage\n\nRunning PlutusTx: \n\nhttps://github.com/mlabs-haskell/uplc-benchmark/tree/master/implementations/plutus-tx#usage\n\nRunning opshin: \n\nhttps://github.com/mlabs-haskell/uplc-benchmark/tree/master/implementations/opshin#usage\n\nRunning tests: \n\nhttps://github.com/mlabs-haskell/uplc-benchmark/tree/master/tests#usage\n\nHere is output from our test suite reproduced here:\n\nhttps://drive.google.com/file/d/15pF5CQRhHSFCCYrRCwBlLtVLB-ulv-7Y/view?usp=sharing\n\nDocumentaion: \n\nWe have expanded the documentation per reviewer feedback:\n\nhttps://github.com/mlabs-haskell/uplc-benchmark/pull/40",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 7
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 40716,
+      "promise": "Develop an automated pipeline to run the benchmarks and test suite, compile the performance report and publish it on the project’s website.",
+      "criteria": "Performance of implementations in Plutarch, Aiken, PlutusTx, and Opshin is compared and reported, rationale for choosing the specification of validator as representative example of Plutus validator.",
+      "report": "EVIDENCE\n\nWebsite with performance report, methodology:\n\nhttps://mlabs-haskell.github.io/uplc-benchmark/introduction.html\n\nA video walkthrough of results and the website with results:\n\nhttps://www.youtube.com/watch?v=xIAo43WU5fg\n\nA written closeout report:\n\nhttps://drive.google.com/drive/folders/1xxdL-_eq76RQDXhqFlGXcPMkNILC6oP7?usp=sharing",
+      "kinds": [
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

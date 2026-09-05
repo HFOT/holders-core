@@ -1,0 +1,46 @@
+{
+  "title": "Open Source Python Tool for Linkage Finance Smart Contract Interaction",
+  "ms": [
+    {
+      "no": 1,
+      "month": "16",
+      "cost": 10500,
+      "promise": "For the first milestone, our output will include: \n・the design and architecture of the Python tool\n\nWe are defining the exact features needed for the python tool to correctly interact with the linkage platform and how to structure the different functions available within the tool. This technical white paper that includes the design and architecture will then be published on our GitHub.",
+      "criteria": "Whitepaper outlining the design and architecture of the Python tool to interact with the linkage protocol (including available functions, structure of python program etc. and justification of design choices)",
+      "report": "Dear reviewers,\nas suggested in the last feedback round we performed a change request with the Catalyst Team (that has been approved). As you can see we adjusted the timeline now accordingly.\nFor milestone1 you can find our whitepaper as PDF in our GitHub repository: https://github.com/LinkageDevTeam/linkage-finance-python-tool/tree/main\nHave a nice day and thank you for your help. \nBest Regards,\nLinkage Finance Team",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "17",
+      "cost": 10500,
+      "promise": "For the second milestone, we aim to deliver the developed Python tool as per the defined architecture, along with comprehensive testing results ensuring its reliability and functionality. Testing results will be in the form of a report.\nOutputs (3): \n・delivery of the developed Phython Tool\n・comprehensive testing results\n・Report about the testing results",
+      "criteria": "・python tool interacting with the linkage finance smart contracts\n・report showing what tests have been performed to test the python tool and shows that the python tool works correctly for the defined tests (this includes correct transaction building, utxo management, interaction with the protocol)",
+      "report": "Dear MRs, \nwe have now finished the development of our python tool and released it in our GitHub repository: https://github.com/LinkageDevTeam/linkage-finance-python-tool/tree/main\nWe have added a README file that contains all relevant information for using the tool: https://github.com/LinkageDevTeam/linkage-finance-python-tool/tree/main\nMoreover, we have written a test suite for our python tool and wrote the results into a test report: https://github.com/LinkageDevTeam/linkage-finance-python-tool/blob/main/TEST_REPORT.md\nTo exemplify the usage of our tools we have created multiple transaction at the compressed version of the linkage finance fund protocol. \n1. Creating the Linkage Fund Factory https://preprod.cardanoscan.io/transaction/f9a5a2afb853838de173dbc38639daf67d70323958808e3bbe8d3b96e70a025a\n2. Creating a Token Fund https://preprod.cardanoscan.io/transaction/d1e26d897b0ab2f50a33a5b697a112528420724184683a68af1ac7d50281b6e7\n3. Add tokens to the Token Fund https://preprod.cardanoscan.io/transaction/db2603d62c789d7dedce447812d68c37534ed0c0cd353246559f4a41c87376ec\n4. Withdraw funds from the created fund https://preprod.cardanoscan.io/transaction/473c06757d9b979aaab306f4bffcab7a5a62883d6beadbd8e48dcf6528d173da\n5. Collect Fund Token Royalty https://preprod.cardanoscan.io/transaction/d99eaa79cb55ad02089af9b7a8c40174ebb4ad503c1da0fcf692071b1a7398d5",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 16
+    },
+    {
+      "no": 3,
+      "month": "18",
+      "cost": 14000,
+      "promise": "In the context of the third milestone, the outputs will encompass comprehensive documentation detailing the Python tool's usage, API, and integration guidelines. \n・Documentation outlining the usage of the Python tool to interact with the platform (including how to integrate your wallet, protocol setup, explanation of all features) \n・Active engagement with the Linkage and Cardano developer community (Medium article explaining usage, tweet announcing documentation and tool, Discord forum to provide developer support)",
+      "criteria": "・Documentation should include all protocol features of linkage finance (cancel, place, emergency withdraw) and how to correctly integrate your wallet\n・Medium article explaining in detail how the python tool works, Discord channel to interact with community, Tweet announcing tool",
+      "report": "Dear Reviewers,\nWe have now finished the milestone and are happy to share our results. In addition to the specified requirements, we have created a close-out report and a close-out video, which are publicly accessible:\n・Close-Out Report: https://drive.google.com/file/d/1lXb_c0Ugwai_AWeyZwo9kDtqFTZMBx1W/view?usp=sharing\n・Close-Out Video (uploaded to YouTube): https://www.youtube.com/watch?v=NIpKqCDV4iw&feature=youtu.be\n\nThe open-source code of our tool can be found on GitHub: https://github.com/LinkageDevTeam/linkage-finance-python-tool.\nWe have also added a new Usage Guide for Developers to help them better understand how the tool works and how to use it:\nhttps://github.com/LinkageDevTeam/linkage-finance-python-tool/blob/main/LINKAGE_FINANCE_USER_GUIDE.md\nMoreover, we have created the necessary material to publicly announce our tool to the community:\n・Medium article introducing the tool: https://medium.com/@LinkageFinance/5b6cf189731c\n・X post announcing the tool to our community: https://x.com/LinkageFinance/status/1966528193814286662\n・Discord channel for developer support/feedback (#linkage-python-tool) in our Discord server: https://discord.gg/VPEJhggDry\n\nBest Regards,\nLinkage Finance Team",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

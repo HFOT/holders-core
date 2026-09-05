@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "CardanoJ Librariesの4つの主要な建物のブロックかそば屋の部品が造られるあります。\n・ダム・デシリアライゼーションとデシリアライゼーション\n・スクリプト取引を支えるトランザクションビルダー\n・スクリプト取引の自動手数料見積\n・Plutusスクリプトでロックされた資金の送金",
+      "criteria": "出力のそれぞれには以下のとおりです\n・CadanoJソースコード\n・Readmeファイルを含むドキュメント\n・試験結果を確認するユニットテストケース。\n\nまた、コードが動作していることを確認するために、サンプルユニットテストケースが実行されている短いビデオが表示されます.",
+      "report": "CardanoJはJava開発者がJavaでオフチェーンコードを書くためのライブラリです。そのため、dAppsを高速に書き込むことができます。\n再利用可能なライブラリを作成することは、常に困難な作業であり、私たちが考えたよりも少し時間がかかりました。 カルダノJのビルドブロックの詳細な研究開発と開発を行なっている2か月間、弊社ではハードな作業をしてきました。\n証拠は次のとおりです。\nCardanoJ GitHub Repository Link:CardanoJの4つの主要なビルディングブロックコンポーネントのコードが含まれています。\nhttps://github.com/CardanoJ/cardanoJ\nreadmeファイルを含むドキュメンテーション: 開発に関する基本的なドキュメントを含むReadmeファイルには、これまでのところ、コードを使用する方法が含まれています。\nhttps://github.com/CardanoJ/cardanoJ/blob/cardanoj-cli/README.md\nUnit Test Cases を持つ GitHub リポジトリのリンク: これは、メインのCardanoJリポジトリの一部であり、ユニットテストケースを持っています。\nhttps://github.com/CardanoJ/cardanoJ/tree/cardanoj-cli/src/test/java/com/cardanoJ\nコードを確認するビデオが機能しています。\n実行中のコードを提示し、それが動作していることを確認する短いビデオです。\nhttps://www.youtube.com/watch?v=xklcwo6 GHk\nこのビデオリンクは、Readme.mdファイルでも、場所 https://github.com/CardanoJ/cardanoJ/blob/cardanoj-cli/README.md に追加されます。\nまずは、API ドキュメンテーションや SDK 開発など、次の一連の成果物について、とても楽しみにしています."
+    },
+    {
+      "no": 2,
+      "promise": "・CardanoJ の場合、開発者がスクリプトトランザクションを作成するために Java API のドキュメントが作成されます。\n\n機能の防御\n必須入力と\n出力可能.",
+      "criteria": "・CardanoJ の Java API ドキュメントは、\n\n機能の防御\n必須入力と'\n出力可能。\n・APIのドキュメントを使用したサンプルプログラムや、動作確認",
+      "report": "CardanoJ API のドキュメントは、開発者向けに作成および作成されます。 API のドキュメントは包括的であり、さまざまな関数の定義、必須入力、および可能なアウトプットを含みます。\nエビデンス\n・APIドキュメントへのリンク https://github.com/CardanoJ/cardanoJ/tree/cardanoj-api-documentation\n・APIのドキュメントの使用状況を把握し、確認する動画 https://www.youtube.com/watch?v=CrMZbuiwQsss ビデオは少し長くなりますが、すべての API ドキュメントとその使用が含まれています。 API ドキュメントの Readme ファイルにビデオリンクも含まれています."
+    },
+    {
+      "no": 3,
+      "promise": "Plutus Java SDK は、開発者がプロジェクトを作成、テスト、管理するための6つのソースコードライブラリ機能を以下に含めて開発されます。\n・dApp環境設定とシミュレーションのためのヘルパー機能\n・ローカルテストネットを立ち上げ、管理するコマンドラインインターフェース(CLI)\n・dAppプロジェクトをブートストラップするCLI\n・ウォレットを作成・管理するCLI\n・dAppsの構築とテストを行うCLI\n・Plutusスクリプトをブロックチェーンに展開するCLI",
+      "criteria": "Plutus Java SDK は、以下の 6 つのソースコードライブラリ機能を含むように開発されています。\n・dApp環境設定とシミュレーションのためのヘルパー機能\n・ローカルテストネットを立ち上げ、管理するコマンドラインインターフェース(CLI)\n・dAppプロジェクトをブートストラップするCLI\n・ウォレットを作成・管理するCLI\n・dAppsの構築とテストを行うCLI\n・Plutusスクリプトをブロックチェーンに展開するCLI\n\nまた、上記では、ユニットテストケースが動作していることを確認します。 サンプルテストケースを覆う短いビデオが実行されます.",
+      "report": "CardanoJはJava開発者がJavaでオフチェーンコードを書くためのライブラリです。そのため、dAppsを高速に書き込むことができます。\n証拠は次のとおりです。\nCardanoJ GitHubリポジトリリンク:\nhttps://github.com/CardanoJ/cardanoJ/tree/cardanoj-sdk\nこのリポジトリには、次の機能のためのSDKが含まれています\ndApp環境のセットアップとシミュレーションのためのヘルパー関数\nローカルtestnetを起動し、管理するコマンドラインインターフェイス(CLI)\ndApp プロジェクトをブートストラップするCLI\nウォレットの作成と管理を行うCLI\ndApps の構築とテストを行う CLI\nPlutusスクリプトをブロックチェーンにデプロイするCLI\n\nコードを実演するためには、テストケースのあるショートビデオが用意されています。\nhttps://youtu.be/ZpgTwbHTHQU\n\nreadmeファイルを含むドキュメンテーション: 開発に関する基本的なドキュメントとコードの使用方法を含むReadmeファイル。\nhttps://github.com/CardanoJ/cardanoJ/tree/cardanoj-sdk\nreadme ファイルにビデオリンクも追加します。\nこのプロジェクトを完成させ、次のマイルストーンで最終的な成果物とクローズアウトレポートを提出するのを楽しみにしています."
+    },
+    {
+      "no": 4,
+      "promise": "・2つの教育dAppsは、実際の作業dAppsでライブラリを使用する方法を示すことで、より広い聴衆のためのJavaライブラリを使用して構築されています。\n\nバックエンドは、CVardanoJ API および SDK を使用して構築されます。\nWeb UIは、教育dAppを実証するために構築されています\ndAppsの設計とアーキテクチャに関する包括的なドキュメント\ndAppの構築に関する詳細なブログ投稿\n・最終報告書\n・クローズアウトビデオ",
+      "criteria": "・Javaライブラリで2つの教育dAppが構築されています。\n\ndApps Backend は、CardanoJ API および SDK を使用してビルドされます。\ndApps Web UIは、教育dAppを実証するために構築されています\ndApps デザインとアーキテクチャに関する包括的なドキュメント\nCardanoJでdAppをビルドする方法をブログ投稿\n・最終報告書\n・クローズアウトビデオ",
+      "report": "・CardanoJ を使用した2つの機能教育アプリ\n\nコードとドキュメント\nCardanoJ Dapp 1: https://github.com/CardanoJ/cardanoJ/tree/cardanoj-dapp/dapp-1\nCardanoJ Dapp 2: https://github.com/CardanoJ/cardanoJ/tree/cardanoj-dapp/dapp-2\nWeb UIリンクは、教育dAppsを閲覧するために利用できます\n(dapp のサンプルでホストされているリンクは、審査官がチェックするリンクです。) 開発者は、レビューが完了した後に、これらの2つのリンクがホストされますので、いつでもGithubからコードを得ることができます。\nhttp://16.171.145.142:3000/ DAPP1\nhttp://56.228.1.44:3000/ DAPP2\n\n・ブログ投稿リンク\n\n中: https://medium.com/@aditya.solanki 90860/how-to-build-cardano-dapps-with-cardanoj-a-java-sdk-for-bl...\nLinkdin: https://www.linkedin.com/posts/aiquant how-to-build-cardano-dapps-with-cardanoj-active-7376853900...\n\n・最終報告書\n\nhttps://drive.google.com/file/d/1NuhdXRAcMhZbNbaGEJnROCYFRrCGUmTD/view?usp=sharing\n\n・クローズアウトビデオ\n\nカーダノJ PCV"
+    }
+  ]
+}

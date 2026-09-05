@@ -1,0 +1,76 @@
+{
+  "title": "CardanoShield: Protecting Cardano Wallet Users",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 50000,
+      "promise": "Assemble the project team, define roles and responsibilities\nConduct a detailed landscape analysis of existing phishing threats, scams, and risks in the Cardano ecosystem\nBegin research and development of AI/ML models for threat detection, gathering and analyzing threat data",
+      "criteria": "Outcomes: Clear understanding of the project's direction, identified potential risks, and challenges. A detailed understanding of the threats landscape to guide the development of the AI/ML model.\n\nAssembled team information, name, contact info, background info, and roles",
+      "report": "Hello Catalyst Team:\nWe have the documentation together we believe is sufficient for Milestone 1. In the report is share the plan moving forward, roadmap, AI/ML research, and user journeys.\n\nPublic drive link: https://drive.google.com/drive/u/1/folders/1RX-RnlSl7DvI-8Ev1GQcD4ejeqfj_GUx\nThe drive will be used to store our ongoing progress. Currently is contains our planning, research, and beginnings of the branding\nPlan Report: https://docs.google.com/document/d/1p4iDFyg2_8uCNOFY8u9QObhJHIN_T3LzNeVSRSM-7M4/edit\nWebsite: https://www.cardanoshield.com/\nTwitter: https://twitter.com/CardanoShield\n\nThank you!",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 50000,
+      "promise": "Develop the initial AI/ML model, based on research findings\nIterative testing and refining of the model\nDefine APIs necessary for integration with Cardano wallets",
+      "criteria": "Outcomes: A functional AI/ML model capable of identifying and flagging potential threats, contributing to enhanced wallet security.",
+      "report": "The ML model and classifier can be found here:\nhttps://github.com/adabox-aio/cardano-shield/tree/main/ml\n\nThis is the code for training the model with new datasets:\nhttps://github.com/adabox-aio/cardano-shield/blob/main/train.py\n\nThe Risk assessment (which will also be used to train an ML model) can be found here:\nhttp://api.cardanoshield.com:8081/swagger-ui/index.html#/cardano-shield-controller/txScan\n\nBlacklists & Whitelists where users can report and update via github\nhttps://github.com/adabox-aio/cardano-shield/tree/main/blacklists\nhttps://github.com/adabox-aio/cardano-shield/tree/main/whitelists\n\nCardano Shield is using the Random Forest ML model to test URLs if they are considered phishing or safe to browse, the dataset was tweaked to and takes the Cardano Ecosystem context into consideration when running these checks. In addition, Cardano Shield has implemented several tests against any transaction Id that goes through our API’s to classify the risk level of those transactions.\nCardano Shield also updated the community with its progress via twitter and its website\nJanuary Update: https://twitter.com/CardanoShield/status/1742220419870990718\nBlog: https://www.cardanoshield.com/updates/cardano-shield-january-update",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 7
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 50000,
+      "promise": "Design and develop robust API endpoints for integration with Cardano wallets\nConduct thorough testing to ensure seamless integration and functionality",
+      "criteria": "Secure, functional APIs that Cardano wallets can utilize for real-time threat detection and user protection.\nThe API is accessible to any interested party there is documentation available in the GitLab describing to any interested party how to gain access.\nThe GitLab is open source allowing anyone to interact with the project, fork it, contribute, test, etc.",
+      "report": "Wallets such as Gero and Begin are already utilizing Cardano Shield's API: \n・Gero Wallet: https://twitter.com/GeroWallet/status/1749854208088523083\n・Begin Wallet: https://twitter.com/BeginWallet/status/1753747587625283910\n\nGithub of the project: https://github.com/adabox-aio/cardano-shield\nDocumentation on how to use Cardano Shield's API endpoints can be found here: https://docs.cardanoshield.com/cardano-shield-api",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "11",
+      "cost": 50000,
+      "promise": "Design and develop a feedback system to gather data from users\nIntegrate the feedback system with the threat detection model, allowing it to learn and improve over time\nTest the feedback system to ensure it operates as expected",
+      "criteria": "A system capable of learning from user-provided data, contributing to the continuous improvement of the AI/ML model.\nThe expected product is a web browser extension that monitors what sites a user is navigating to. The product will inform the user of malicious sites via an interactive UI. Within the UI it will inform the user where they are navigating to, if they have been there before or not, how risky it is perceived to continue interacting with the URL. As more and more users are using CardanoShield the warnings, and information will more provide more accurate information. A user can select",
+      "report": "A video showcasing the warning when a user reaches a site marked as a scam by Cardano Shield.\nThe video also demonstrates that the user can report the website as either safe or not sure and provide evidence in the form of text or images, as well as a general description.\nhttps://drive.google.com/file/d/103_Z2XnmhxQD4OQf7u8yjNhuU7es69Gj/view?usp=sharing\n\nSubmitting the report opens a ticket on GitHub to be reviewed, but regardless, the results of the phishing scan enter the ML dataset for continued training.\nhttps://github.com/adabox-aio/cardano-shield/blob/main/ml/dataset/PhishingDataset.arff",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "12",
+      "cost": 50000,
+      "promise": "Release the CardanoShield solution to Cardano wallets\nCollect feedback from wallet developers and users to refine and improve the solution\nIteratively improve and update the AI/ML model based on real-world data and feedback",
+      "criteria": "A fully functional and robust solution for threat detection and user protection in the Cardano ecosystem, with capabilities for continuous learning and improvement.\nThe final solution with be a web browser extension users can download and interact with. When a user navigates to a site the UI of the extension will pop up on the user's device to provide information related to the site include risk level, previous interactions. Additionally information will be provided about a transaction in an relatively improved UX so that the user is well informed about the exact amount the dApp is requests wh",
+      "report": "Google Drive Version: https://docs.google.com/document/d/1DFinHcmDa1h_1j1bynX6LfFmNtFAlsUAyMlKie02dFQ/edit?tab=t.0\nThis report summarizes the development and deployment of Cardano Shield over the past 12 months. During this period, valuable feedback and requirements have been gathered from our wallet partners and users, contributing to its refinement.\nCardano Shield offers flexible integration options for any Cardano wallet. It can be implemented either through a maintained API endpoint, requiring only minor front-end adjustments for data display, or by forking the open-source project for self-hosting.\nAs an open-source initiative, Cardano Shield incurs no cost, even when utilizing our API endpoints.\nKey Features of Cardano Shield: \nZip file with video demonstration in case links below do not work: https://drive.google.com/file/d/1MW9IfmJPXLbHnmTxUz6wGTvRcz5KXQ5Q/view?usp=sharing\n・Enhanced Transaction Signing User Experience:\n\n・Video Demonstration: Transaction Summary Example\n\n・Malicious Website Warning and Blocking:\n\n・Video Demonstration: Site Blocking Example\n\n・In-App User Reporting:\n\n・Video Demonstration: Report Site Example\n\n・Scam Token Tagging:\n\n・Video Demonstration: Scam Tokens Example\n\nResources:\n・Public Github: https://github.com/adabox-aio/cardano-shield\n・Documentation: https://docs.cardanoshield.com\n・Download Gero Dashboard - Cardano Shield Included\n\nFeedback and Updates:\n・User Feedback (Past 12 Months): Cardano Shield Feedback & Reviews\n・Wallet Feedback (Begin Wallet): Yet to be provided\n・Post-Launch Updates: Commits History (Primarily automated blacklist and whitelist updates via machine learning)\n\nExternal Pull Requests: Closed Pull Requests",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 14,
+      "cut": true
+    }
+  ]
+}

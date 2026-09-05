@@ -1,0 +1,46 @@
+{
+  "title": "Python SDK for CardanoBI API",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 5985,
+      "promise": "Activities:\nProject initiation, including defining the scope and objectives (All 3 CardanoBI Domain will be covered: Core, Analytics, Partner)\nGathering detailed technical requirements for the SDK (starting point being our Javascript SDK).\nCreating a comprehensive SDK architecture and design plan.\nSetting up the Python development environment with necessary tools and libraries.",
+      "criteria": "A well-documented project plan with clear objectives and scope including:\n・A Github Project comprise of detailed tasks, milestones, roadmap and a priority board\n・Tasks will cover the design, development, testing and release of the Python 3 SDK\n・The scope of the Python 3 SDK will be similar to our Node.js/Javascript SDK (already released) and will cover all endpoints exposed by the CardanoBI API Instance. Namely all endpoints from our Core Domain, our BI Domain and our Partner Domain\n・Testing tasks will include unit testing, integration testing and performance testing of each endpoint from our",
+      "report": "Hi Team, \nPlease find in the link below, the .pptx document detailing the evidence of milestone completion of M1:\nhttps://github.com/cardanobi/ProjectCatalyst/tree/master/Fund11/1100242-Python-SDK/M1\nBest,\nThomas",
+      "kinds": [
+        "code"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 5985,
+      "promise": "Activities:\n・Developing the core functionalities of the SDK which include:\n\n・Authentication and Authorization (JWT Token)\n・Rest API Connectivity to allow the SDK to reach the CardanoBI API Instances\n・Logical processing units that will ensure an execution boundary for each of the CardanoBI API Endpoints\n\n・Unit testing the above development items",
+      "criteria": "All Unit Tests are successful.",
+      "report": "Hi Team,\nPlease find in the link below, the Google Doc detailing the evidence of milestone completion of M2:\nhttps://docs.google.com/presentation/d/12qIh6jtRxivO1Q64nqY0yickVCouLnviIHV1v_q9hFA/edit?usp=sharing\n\nFurthermore, following the 2nd reviewer's request to be provided with more descriptive information about the following items, please find below links to the precise code line numbers where those activities are performed:\n・Authentication and Authorization (JWT Token):\n\nhttps://github.com/cardanobi/cardanobi-python/blob/master/utils/api_client.py#L28\nExplanation: the getAccessToken function request a Bearen Token (JWT Token) to the CardanoBI Identity base urls as defined here: https://github.com/cardanobi/cardanobi-python/blob/master/utils/constants.py , to complete this request it issues a POST request and passes the auth token (which is the concatenation of the user's API Key and Secret.\n・Rest API Connectivity to allow the SDK to reach the CardanoBI API Instances:\n\nhttps://github.com/cardanobi/cardanobi-python/blob/master/utils/api_client.py#L42\nExplanation: the getRequest function prepares the headers of the request to include the Bearer Token prepared by getAccessToken, then is performs a GET against the CardanoBI endpoints base urls as defined here: https://github.com/cardanobi/cardanobi-python/blob/master/utils/constants.py\n・Logical processing units: \n\nAll processing units can be found in 2 files:\nhttps://github.com/cardanobi/cardanobi-python/blob/master/domains/core.py\nhttps://github.com/cardanobi/cardanobi-python/blob/master/domains/bi.py\nIn these files you'll find all the functions / processing units that actually perform the REST call to each CardanoBI API endpoints.\n\nHope this helps.\nBest,\n\nThomas",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 13
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 7980,
+      "promise": "Activities:\nConducting extensive testing, including integration, and performance tests.\nCreating comprehensive documentation, including setup guides and API references.\nProviding real-world usage examples.\nReleasing a beta version for community feedback.\nLaunching the official version of the SDK.",
+      "criteria": "Successful integration with CardanoBI API, demonstrated through rigorous testing.\nAll tests passing with high code coverage and resolved issues.\nComplete and accessible documentation for various user levels (docs.cardanobi.io).\nPositive community feedback and addressed concerns from the beta release.\nStable and well-communicated official release.",
+      "report": "Hi Team,\n\nPlease find below the link to our Project Close-out Report:\nhttps://docs.google.com/document/d/1todHO1RnkmgM5wyerHD3kyZhT5end24PtMPWvlo7yZU/edit?usp=sharing\n\nPlease find below the link to our Project Close-out Video:\nhttps://www.youtube.com/watch?v=viwjwqe4WYs\n\nFurther to the PCR, here are the specific evidences to validate the Acceptance Criteria as per the Final Milestone:\n\n1.Integration test results (scripts and outputs)\n scripts: https://github.com/cardanobi/cardanobi-python/tree/master/test\n output: https://github.com/cardanobi/cardanobi-python/tree/master/test/output\n\n2.Link to documentation (docs.cardanobi.io) shows Python 3 code samples\n example: https://docs.cardanobi.io/docs/core-domain/Accounts/\n\n3.Link to the github repository for the Python SDK\n https://github.com/cardanobi/cardanobi-python/tree/master\n\n4.Link to tutorial describing how to use the SDK.\n https://docs.cardanobi.io/docs/tutorials/python-sdk-tutorial\n\nIn terms of communication to our community please find below dedicated blogs:\n https://docs.cardanobi.io/blog/python-rust-sdks\n https://docs.cardanobi.io/blog/python-rust-tutorials\n\nBest,\nThomas",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 18
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "title": "TangoCrypto: Open Source Cardano API and Webhooks",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 50000,
+      "promise": "Infrastructure setup for development: Set up the necessary infrastructure to start the development and testing. This involves deploying cardano nodes, DBsync and Postgres, Redis, configuring networking and storage.\nAPI Gateway Layer: Develop an API gateway layer that acts as an interface for interacting with the minting platform. This layer handles incoming requests, performs rate limiting, authentication and authorization, and forwards requests to the appropriate services.",
+      "criteria": "・Development environment ready for developers.\n・API scaffolding deployed in the development environment.\n・API gateway Rate limiter interceptor imposing rate limit using Redis and a token bucket algorithm. \n・API gateway Authentication interceptor verifying API keys.",
+      "report": "Proof of Achievement: Milestone Outputs\nWe are delighted to present the successful completion of the milestone outputs as outlined in the project plan. Below is a comprehensive summary of our achievements, including evidence of milestone completion:\n1 - Infrastructure Setup for Development:\n・Cardano Nodes Deployment\n・DBsync and Postgres Installation\n・Redis Configuration\n・Networking and Storage Configuration\n\nEvidence: Video demonstration showcasing the running instances of Cardano nodes, DBsync, Postgres, Redis, and networking/storage configuration.\n2 - API Gateway Layer:\n・Development of API Gateway Layer: Our team has developed custom API gateway.\n・Rate Limiting Implementation: The API gateway is equipped with a rate limiter interceptor that effectively imposes rate limits on incoming requests using Redis and a token bucket algorithm.\n・Authentication and Authorization: Authentication interceptor has been implemented to verify API keys, ensuring secure access to the platform.\n・Forwarding Requests: The API gateway efficiently forwards incoming requests to the appropriate services based on defined routing rules.\n\nEvidence: Video demonstration illustrating the functionality of the API gateway, including rate limiting, authentication, and request forwarding.\nAcceptance Criteria:\n・Development Environment Readiness: The development environment has been set up and is ready for use by developers.\n・API Scaffolding Deployment: The API scaffolding has been deployed in the development environment, providing a foundation for further development.\n・Rate Limiter Interceptor: The API gateway effectively enforces rate limits using Redis and a token bucket algorithm.\n・Authentication Interceptor: API key authentication is successfully implemented and verified by the authentication interceptor.\n\nEvidence of Milestone Completion:\n・Video demonstration: https://youtu.be/1FfugYsRWWY\n・Code repository: https://github.com/tango-crypto/cardano-api/tree/open-source\n\nIn conclusion, all milestone",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 50000,
+      "promise": "API endpoints:\nAddresses\n・Retrieve address summary\n・Retrieve address summary\n・List address coin selection\n・List address assets\n・List address asset UTXOs\n・List address transactions\n\nTransactions\n・Retrieve Transaction \n・List transaction UTXOs \n・List transaction scripts \n・List transaction collaterals \n・List transaction assets mints\n・Retrieve transaction metadata\n・Submit a transaction:\n・Evaluate a transaction \n・Build a transaction \n\nScripts\n・Retrieve a script\n・List script redeemers\n・Retrieve datum\n\nWallet\n・Retrieve wallet summary\n・List wallet addresses:\n・List stake addresses coin selection\n\nBlocks\n・Retrieve latest block\n・Retrieve block\n・List block transactions\n\nAssets\n・Retrieve asset\n・List asset addresses\n\nPolicy\n・List assets by policy\n\nEpochs\n・Retrieve protocol parameters\n・Retrieve current epoch information\n\nPools\n・Retrieve stake pool metadata\n・List stake pool delegations",
+      "criteria": "Data layer source code on Github, API tests, and documentation.",
+      "report": "We are pleased to announce the successful achievement of the milestone outputs as specified in the project plan. Below is a detailed summary of our accomplishments, along with proof of milestone completion:\n1- Data layer source code on Github, API tests, and documentation.\nhttps://github.com/tango-crypto/cardano-api\n2- SQL queries on Github for transactions, scripts, wallets, blocks, assets, policies, epochs, and pools.\nhttps://github.com/tango-crypto/cardano-api-queries\n3 - Nestjs project on Github with the API routes.\nhttps://github.com/tango-crypto/cardano-api/tree/main/src\nAPI endpoints:\nAddresses\n・Retrieve address summary\n・List address coin selection\n・List address assets\n・List address asset UTXOs\n・List address transactions\n\nTransactions\n・Retrieve Transaction\n・List transaction UTXOs\n・List transaction scripts\n・List transaction collaterals\n・List transaction assets mints\n・Retrieve transaction metadata\n・Submit a transaction:\n・Evaluate a transaction\n・Build a transaction\n\nScripts\n・Retrieve a script\n・List script redeemers\n・Retrieve datum\n\nWallet\n・Retrieve wallet summary\n・List wallet addresses:\n・List stake addresses coin selection\n\nBlocks\n・Retrieve latest block\n・Retrieve block\n・List block transactions\n\nAssets\n・Retrieve asset\n・List asset addresses\n\nPolicy\n・List assets by policy\n\nEpochs\n・Retrieve protocol parameters\n・Retrieve current epoch information\n\nPools\n・Retrieve stake pool metadata\n・List stake pool delegations\n\n4- Public Docker image on DockerHub.\nhttps://hub.docker.com/r/javiertc86/cardano-api\n5- Video showcasing the API queries working and showing blockchain data.\nhttps://youtu.be/dVRq-9BVw2E\nConclusion\nTo summarize, we have successfully achieved all milestone outputs and met the acceptance criteria, as shown in the accompanying video. The open-source status of our code, along with the operational infrastructure and running instances of various components, confirms the successful completion of this milestone. We are thrilled with the progress and look forward to m",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "Key activities: \n・Payments\n・Block\n・Transaction\n・Epoch\n・Delegation\n・Asset Activity",
+      "criteria": "Webhooks for Payments, Blocks, Transactions, Epoch, Delegation, Asset Activity",
+      "report": "Milestone 3 Report\nAcceptance Criteria\nThe successful delivery of open-source code for capturing Webhooks related to:\n・Payments\n・Blocks\n・Transactions\n・Epoch\n・Delegation\n・Asset Activity\n\nEvidence of Milestone Completion\nThe completion of this milestone is demonstrated through the open-source code and documentation available in the respective repositories. The provided resources include the implementation of Webhooks capturing various Cardano-related events and their integration with Kafka for event handling and notification delivery.\nCardano-api\n・Repository: Cardano-api\n・Description: The main repository containing the Cardano API, which serves as the foundation for the project. The Readme documentation provides detailed instructions on setting up and utilizing the API.\n\ncardano-events\n・Repository: cardano-events\n・Description: This repository contains the code for listening to Ogmios and writing events to Kafka. It ensures that all significant Cardano events are captured and forwarded to the Kafka message broker for further processing.\n\ncardano-webhooks\n・Repository: cardano-webhooks\n・Description: This repository focuses on consuming events from Kafka and sending notifications to users. It facilitates the delivery of real-time updates about Cardano events to the relevant stakeholders.\n\nVideo Demonstration\n・Link: Demo Video\n\nConclusion\nThe successful delivery of Milestone 3 is evidenced by the availability of open-source code and comprehensive documentation in the specified repositories. The implemented Webhooks capture essential Cardano events, and the integration with Kafka ensures efficient event processing and notification delivery. This milestone’s completion aligns with the project plan and sets a solid foundation for future developments.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 18750,
+      "promise": "・Docker images to be deployed and Helm chart. \n・Documentation with instructions for deployment and usage.",
+      "criteria": "The docker image can be deployed on any container orchestrator like ECR, Kubernetes, or Docker Swarm.",
+      "report": "Milestone Outputs\nDocker images to be deployed and Helm chart.\n・Cardano API: https://hub.docker.com/r/javiertc86/cardano-api\n・Cardano Events: https://hub.docker.com/r/javiertc86/cardano-events\n・Cardano Webhooks: https://hub.docker.com/r/javiertc86/cardano-webhooks\n\nDocumentation with instructions for deployment and usage.\nAcceptance criteria\n・The docker image can be deployed on any container orchestrator like ECR, Kubernetes, or Docker Swarm.\n\nEvidence of milestone completion\nSource code on Github for Helm chart and documentation\n・Cardano API Helm Chart: https://github.com/tango-crypto/cardano-api-helm-chart\n・Cardano Events Helm Chart: https://github.com/tango-crypto/cardano-events-helm-chart\n・Cardano Webhooks Helm Chart: https://github.com/tango-crypto/cardano-webhooks-helm-chart\n\nDemo Video:\nhttps://youtu.be/mFASbBhx1u8\nConclusion\nA demo video has been provided, showing how to deploy the Docker images on ECS.\nThis report confirms that all outputs, acceptance criteria, and evidence of completion for Milestone 4 have been successfully delivered.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 14
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 26250,
+      "promise": "・Project Closure Report\n・Demo how to set up and deploy API and webhooks\n・Showcase video using of API and webhooks",
+      "criteria": "・Project Closure Report has been submitted in shape and form.\n・Demo effectively explaining how to set up both the API and webhooks to start using it.\n・Interactive video showcasing all capabilities for both the API and webhooks. Showcasing how to trigger webhooks in response to a payment.",
+      "report": "TangoCrypto: Open Source Cardano API and Webhooks - F11 Project Closeout Report\nhttps://docs.google.com/document/d/19NI_GtU5MA0V9HYWGXiXZVQIkRUUovLZFb8N95hLY_E/edit?usp=sharing\nTangoCrypto: Open Source Cardano API and Webhooks - F11 Project Closeout Report Video\nhttps://www.youtube.com/watch?v=crlqfP0Xbbk\nGitHub Repositories:\n・Cardano API\n・Cardano API Queries\n・Cardano Events\n・Cardano Webhooks\n・Cardano API Helm Chart\n・Cardano Events Helm Chart\n・Cardano Webhooks Helm Chart\n\nDocker Images:\n・Cardano API Docker Image\n・Cardano Events Docker Image\n・Cardano Webhooks Docker Image\n\nVideo Demonstrations:\n・API Gateway\n・Cardano API\n・Webhooks\n・Helm Charts and Docker images",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 18
+    }
+  ]
+}

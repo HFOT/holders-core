@@ -1,0 +1,104 @@
+{
+  "title": "Cardano UTXO DB Abstraction",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25479,
+      "promise": "Documentation on project requirements and objectives.\nDevelopment environment set up.\nDatabase schema design for SQL.\nInitial synchronization mechanisms and API integration.\nBasic script validator that will hold a datum to use as example entity to test and show the synchronization between the blockchain and the database.",
+      "criteria": "Documentation of the project requirements and objectives completed. The documentation will be comprehensive, easy to understand, and accessible to both technical and non-technical community members.\nDevelopment environment set up prepared and ready to use as scaffold for a generic project. \nDatabase schema designed and running with a Mongo DB engine. \nInitial synchronization mechanisms and API integration working as expected using the example smart contract and its datum.",
+      "report": "We are pleased to deliver the first milestone:\n・GitHub Repository: A public repository containing:\n・Documentation of project requirements and objectives.\n・Development environment set up.\n・Database schema design for SQL.\n・Initial synchronization mechanisms and API integration.\n・Basic script validator that will hold a datum to use as an example entity to test and show the synchronization between the blockchain and the database.\n・How to use & explanatory videos \n\nLinks:\n・GitHub: https://github.com/protofire/Cardano-SmartDB\n・Video Demo:\n・https://screenrec.com/share/opGm3Rz1DH\n・https://screenrec.com/share/JRmkpnK63r",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 25479,
+      "promise": "Designed REST API endpoints for accessing and reading the database.\nAPI documentation that covers all endpoints, request/response formats, error codes, and usage examples. This documentation will be easily accessible and understandable to developers of all skill levels interested in integrating with the database system.\nImplemented routes, controllers, and middleware for the REST API.\nIntegrated authentication and authorization mechanisms. We will use https://next-auth.js.org/ as main session manager, and JWT with Lucid to create a signed token to verify the user session in the backend. \nTested and validated the functionality of the REST API.",
+      "criteria": "REST API endpoints designed and implemented. \nJson file with all the Swagger documentation accessible in the public GitHub repository.\nAuthentication and authorization mechanisms integrated. \nREST API functionality successfully tested and validated.",
+      "report": "We are pleased to deliver the first milestone:\n・Designed REST API endpoints for accessing and reading the database.\n・API documentation that covers all endpoints, request/response formats, error codes, and usage examples.\n・Implemented routes, controllers, and middleware for the REST API.\n・Integrated authentication and authorization mechanisms.\n・Tested and validated the functionality of the REST API.\n・How to use & explanatory videos \n\nLinks:\n・GitHub: https://github.com/protofire/Cardano-SmartDB\n・Milestone 2 Video Walkthrough: https://docs.google.com/document/d/1uPe3iKl8D7D4HE1U0ifAVojw3jrkAXg2JBs_zKWaZ-c/edit\n・Video Demo:\n\n・https://www.dropbox.com/scl/fi/hi8hdbrxy13le8pcviewn/01-smartdb-milestone-2.mp4?rlkey=1lesjgafwpo559m12ai03u9zr&st=pkws465t&dl=0\n・https://www.dropbox.com/scl/fi/mp14re8ccvoztkpjeqedv/02-smartdb-mielstone-2.mp4?rlkey=ize20e7vndi2lyqp2aiank8pn&st=n8c97tb1&dl=0\n・https://www.dropbox.com/scl/fi/o0nsbor8npsihrpw96b36/03-smartdb-mielstone-2.mp4?rlkey=h90v3f7oyx0mhv71hnkda01wa&st=0ye8sica&dl=0\n・https://www.dropbox.com/scl/fi/41xq2bhia1xvhujrbwkzi/04-smartdb-mielstone-2.mp4?rlkey=htdqahirs8vuv8jmaxvrprwt3&st=sgft97dh&dl=0",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 7
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25479,
+      "promise": "Enhance synchronization with automatic mechanisms: implement logic for tracking contract address changes and triggering database updates.\nWe will use external webhooks services like:\n- https://blockfrost.dev/start-building/webhooks/\n- https://docs.demeter.run/extensions/webhooks\nExpand the API services to include new features to allow the automatic synchronization thought webhooks. We may need new endpoints, for instance, to create the webhooks if the provider allows the creation of them trough theirs API.",
+      "criteria": "Enhanced database synchronization with automatic mechanisms implemented. \nExpanded API services if needed.",
+      "report": "Sorry for that. The permissions have been given to the doc.\n\nAlso, you are right; clarifying the scenarios a bit better was necessary.\n\nOn the one hand, using either our UI directly or the API provided by our server, both paths trigger the backend service that monitors the network until it confirms the transaction and synchronizes the database. These paths do not require additional manual action from the users other than signing and submitting the transaction.\n\nOn the other hand, webhooks are the most efficient way to monitor the network because their servers are usually always active and online, and they can trigger upon transactions created outside our system (for example, transactions created with Cardano CLI commands).\n\nIf we want to have a webhook on our servers to avoid relying on external services, it would be important to have a node as well. Without a node, this webhook would have to periodically make requests to services like Blockfrost to get information about each monitored address. Ideally, to avoid external dependencies, the best scenario is to have a node running on our servers.\n\nIn any case, for these examples, we do not activate these webhooks, either externally or as an internal service. However, the mechanisms are present. We have an API URL that can be called whenever there is an update. This URL is what we would provide to a webhook to call our server and trigger synchronization. This URL is the same one called by the \"Sync\" button still present in the provided example, which we used for manual synchronization. That button calls a specific URL to trigger synchronization. Therefore, in webhook services, you can call that same API.\n\nThe URL in question, for example, to trigger synchronization when there are new transactions on an address using the provided API is:\n\nhttp://localhost:3000/api/dummy/sync/<ADDRESS>\n\nThanks!",
+      "kinds": [
+        "other"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 25479,
+      "promise": "Implement PostgreSQL as an optional database engine. Users will be able to choose between MongoDB or PostgreSQL.\nDevelop a toolkit for database schema creation and TypeScript types/classes generation for each entity / datum that the user needs. User will be prompted to enter Name, fields, and other info related the new entity and all the files needed to handle the new entity will be created with generic functionality. It will be another NodeJS project with a independent executable.",
+      "criteria": "Functional PostgreSQL engine. \nToolkit for database schema creation and TypeScript generation created. It needs to allow user to enter entities details and it need to create all files needed to create database schema, front end and back end API calls and handlers, and synchronization mechanisms.",
+      "report": "Cardano UTXO DB Abstraction\nProof of Finalization for Milestone 04\nVideo Walkthrough\n・Cover Page\n・Open the GitHub repository.\n・Show PostgreSQL behavior:\n・Show TypeORM implementation.\n・Follow the installation instructions.\n・Configure DBeaver to use a Postgres database. \n・Change the .env file with Postgres configuration.\n・Run the Dummy example and show how the entities are generated.\n・Show Cardano Smart UTxO Scaffold \n・Show the GitHub repository.\n・Follow the installation instructions.\n・Use it inside the example directory and generate Product entity schema.\n・Show the Schema graphQL generated and generate the code components.\n・Show the new code generated.\n・Use the frontend component generated.\n\nLinks\n・Source code\n・Source code of the toolkit\n・Readme of the toolkit\n・GitBook\n・GItBook Example\n・Report\n・Video",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 15
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 21232,
+      "promise": "Implement transaction creation logic considering the UTxO model and datum handling. There will be API endpoints for each transaction that will be in charge of create the CBOR code in the backend. The user will get the CBOR code ready to sign in the front end. \nDevelop mechanisms to handle in-use UTxOs for preventing concurrency issues. All the UTXOs in the database will have a flag switched when they are part of some ongoing transaction. If there are more that one UTXO possible to choose, the system will then try to get one that is not being used by other user in the same time. \nDesign and implement read-only access to UTxOs for other users. Users can still access and see the content of flawed UTXOs. Also if a transaction is using a UTXO as reference input, this UTXO will be still accessible to others users that needed to use them as reference as well, but not accessible if the they require them to consume.\nTest and validate transaction processing and concurrency features.",
+      "criteria": "Transaction creation logic implemented. \nConcurrency handling mechanisms in place. \nRead-only access to UTxOs implemented. \nTransaction processing and concurrency features successfully tested and validated.",
+      "report": "Milestone 05 Report\nSmart DB Concurrency and Transaction Management\nIntroduction\nThis document outlines the key features and implementations delivered in Milestone 05 of the Smart DB project. The focus has been on enhancing transaction creation logic, implementing robust concurrency handling mechanisms, and introducing a smart UTxO system to optimize blockchain interactions on the Cardano platform. This milestone demonstrates significant improvements in managing concurrent transactions and efficient UTxO selection.\n\nKey Implementations\n1. Entity Structure and Relationships\nFree Entity\n・Extends SmartDBEntity, representing data that exists both in the local database and on the Cardano blockchain.\n・Used as a test case for demonstrating the smart UTxO selection system and concurrency handling.\n・Has a one-to-one relationship with a SmartUTxO Entity, linking blockchain data with local metadata.\n\nSmartUTxO Entity\n・Represents UTxOs in the system, stored in a dedicated database table.\n・Contains detailed information about UTxO location on the blockchain and its current usage state.\n・Includes timestamps fields: isPreparingForReading, isReading, isPreparingForConsuming, and isConsuming for concurrency management.\n\nTransaction Entity\n・Stored in a separate database table to track all transactions in the system.\n・Used to manage transaction lifecycle and status updates.\n・Includes statuses like CREATED, PENDING, SUBMITTED, CONFIRMED, FAILED, etc.\n・Essential for handling concurrency and synchronizing database state with blockchain.\n\nThese entities work together to enable efficient concurrency handling, UTxO management, and blockchain synchronization.\n2. Concurrency Page\nA dedicated page (http://localhost:3000/concurrency) in the application showcases the concurrency features:\n・Wallet connection and balance display.\n・Creation, updating, and deletion of Free entities.\n・Real-time display of UTxO statuses, including preparation and consumption states.\n・Demonstrates the effects of concurr",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 31,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 21232,
+      "promise": "We will implement a select for fields on the datum that want to be retrieved from the database. Instead of returning all the fields all the time we will get specific fields for each situation.\nWe will also add parameters in all APIs to specify sort and limits.\nWe will hold hashes of datums and redeemers so we don't need to calculate from and to, in the future. If there is a master table, or master datum for the project, we will create a cache version of it. We will showcase this with an example.\nWe will create a table for token metadata, so we will not need to query token metadata from Blockfrost each time.\nCreation of database Indexes for best performance and covered queries.",
+      "criteria": "Query optimization techniques implemented.\nQuery optimization and caching features tested and optimized for improved performance. Should give best results in the use of resources and times for the queries.",
+      "report": "Milestone 06 Report\nIntroduction\nThis document outlines the key features and implementations delivered in Milestone 06 of the Smart DB project. The milestone focuses on optimizing data retrieval, implementing efficient query management, and improving overall system performance.\nKey Implementations\n1. Optimized Data Retrieval\n・Selective Field Retrieval: Implemented a mechanism to retrieve only necessary fields from the database for each query, minimizing data transfer and improving performance.\n・Sorting and Limiting: Added parameters to all APIs, allowing users to specify sorting criteria and limit the number of records returned.\n・Optimized and Non-Optimized Entity Testing: Added a product entity with multiple fields as a performance test case to analyze optimizations and retrieve times comparatively.\n\n2. Queries Management\n・Database Indexes: Created appropriate database indexes on frequently queried fields and columns involved in join operations, optimizing query performance and ensuring efficient data retrieval.\n・Covered Queries: Utilized covered indexes to minimize I/O operations, allowing the database to execute queries entirely from the index, avoiding additional table lookups.\n\n3. Data Caching and Metadata Management\n・Token Metadata Table: Introduced a dedicated table to store metadata retrieved from BlockFrost API, which eliminates the need for repeated metadata requests, reducing dependency on external sources and increasing system responsiveness.\n・Caching Mechanism Adjustment: Initial plans included caching techniques for datums and redeemers. However, based on the team’s accumulated experience, these techniques were determined to be unnecessary for this project phase, as explained below.\n\nTechnical Details\nSelective Field Retrieval\nImplemented a flexible query builder that allows users to specify desired fields in their requests, leading to improved performance in data retrieval and reducing data transfer load.\nSorting and Limiting\nIntegrated sorting and li",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 18,
+      "cut": true
+    },
+    {
+      "no": 7,
+      "month": "7",
+      "cost": 25480,
+      "promise": "Perform a deep and extensive user testing to ensure functionality and reliability.\nRefine and optimize the codebase, addressing any bugs or performance issues.\nCreate complete examples showcasing smart contracts, frontend, and backend integrations.\nGenerate comprehensive documentation with setup instructions and usage guidelines.\nProject Closeout Report\nProject Closeout Video",
+      "criteria": "Testing completed with successful results. \nThe codebase is refined and optimized. \nExamples demonstrating integrations created. \nComprehensive documentation prepared.",
+      "report": "Cardano UTXO DB Abstraction\nMilestone 07 Report\nExecutive Summary\nThis milestone marks the successful completion of the SmartDB project, focusing on delivering comprehensive examples and documentation that demonstrate the practical implementation of the SmartDB library. The key achievements include the creation of a complete project template, a real-world marketplace implementation, and a unified documentation system that makes the entire ecosystem accessible and easy to understand.\nKey Deliverables\n1. Enhanced Development Ecosystem\nWe have expanded our ecosystem with two significant new repositories, while improving existing ones:\nNew Implementations:\n・SmartDB Template (https://github.com/protofire/Cardano-SmartDB-Template)\n・Complete project template with step-by-step guidance\n・Detailed walkthrough from initial setup to full implementation\n・Best practices and integration patterns\n・Foundation for quick project bootstrapping\n・Cardano Simple Marketplace (https://github.com/protofire/Cardano-Simple-Marketplace)\n・End-to-end implementation example\n・Smart contract implementation with Plutus\n・Complete frontend and backend integration\n・Practical demonstration of SmartDB capabilities\n\nImproved Components:\n・Core SmartDB Library (https://github.com/protofire/Cardano-SmartDB)\n・Minor refinements and optimizations\n・Enhanced documentation\n・Code changes: https://github.com/protofire/Cardano-SmartDB/compare/b822c856e9532909570add3657c4f404d0a81905..4d1edd4ffa6367216ed7efbb34f435d9329d7905\n・SmartDB Scaffold & Code Generator (https://github.com/protofire/Cardano-SmartDB-Scaffold)\n・Enhanced parameters for SmartDB entity generation\n・Improved GraphQL schema management\n・Added update capabilities for existing entities\n・Code changes: https://github.com/protofire/Cardano-SmartDB-Scaffold/compare/ec3280a90362850f07edd55d7f072142059ca390..d86e15e015e979d1143d7f2e775cd52665f138c1\n\n2. Unified Documentation Hub\nThe cornerstone of this milestone is the comprehensive documentation system:\nCentraliz",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 38,
+      "cut": true
+    }
+  ]
+}

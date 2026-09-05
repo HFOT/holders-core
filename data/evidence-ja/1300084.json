@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・実証サイズ、検証/検証時間、再帰支援、最適化など、さまざまなシステムとライブラリを比較する技術検討文書。\n・プロジェクトに使用するシステムに関する最終決定.",
+      "criteria": "・プロジェクト要件を満たしている体制を整備することに同意します。\n・研究・決定プロセスを文書化.",
+      "report": "親愛なる審査官,\n次のリポジトリには、研究文書が含まれます。\nhttps://github.com/eryxcoop/cardano-zk-aiken/blob/main/research/main.md"
+    },
+    {
+      "no": 2,
+      "promise": "・回路構造用初期 Aikenライブラリは、選択したprovingシステムと互換性があります。\n・基本操作の実装(例、assert eq、add、sub、neg、mul、条件付き)\n・ライブラリを利用したプログラム(例:Fibonacci回路).",
+      "criteria": "・基本回路の構築・検証ができます。\n・プログラムが正常に実行されます.",
+      "report": "親愛なる審査官,\n\nマイルストーン2を正常に完了しました。\nここでは、このマイルストーンのために実装された機能を示す説明ビデオです: ビデオ\n\n動画に示す例は、https://github.com/eryxcoop/cardano-zk-aiken/blob/main/aiken-zk/README.md にあるReadme の後に再現できます。\n\nこのReadmeは、最初のセクションで実装された基本操作の説明(assert eq、add、sub、neg、mul、conditionals)を表示します。\n\nご覧の通り、ライブラリは基本回路の構築と検証ができます。\n示すように、プログラムが正常に実行されます。\n最初のマイルストーンで選択したように Groth16 検証を使用しました。\n\nグラントリポジトリ: https://github.com/eryxcoop/cardano-zk-aiken\nAikenライブラリは、https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zkにあります。\n例:https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zk/milestone 2 example"
+    },
+    {
+      "no": 3,
+      "promise": "・オンチェーン検証用に選択したprovingシステムを備えたライブラリの統合。\n・Cardanoテストネット上の簡易回路(例、Fibonacci)の検証.",
+      "criteria": "・ライブラリを使用してCardanoテストネットで簡易回路を検証できます.",
+      "report": "親愛なる審査官,\n\nマイルストーン3を完成しました。\nここでは、このマイルストーンのために実装された機能を示す説明ビデオです:ビデオ\n\nビデオに示されている例を実行する詳細な手順で特定の文書を作成しました。 このファイルは EXAMPLE.md という名前で、 EXAMPLE.md にあります。\n\n例は、ライブラリを Groth16 と統合し、オフチェーンコードの検証をチェーンで実行します。\nこの例では、単純な回路がオフチェーンを実行し、Cardano testnetで検証される方法を示します。\n提供されたコードでは、オフチェーンを実行し、テストネットで検証できるいくつかの簡単な回路を提供しています。 Ie. 追加, 乗算, 等.\n\nグラントリポジトリ: https://github.com/eryxcoop/cardano-zk-aiken\nAikenライブラリは、https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zkにあります。\n例:https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zk/milestone example"
+    },
+    {
+      "no": 4,
+      "promise": "・先進的な暗号技術の原始性(ハッシュ、マークルの木、多項評価/インターポレーションなど)のガジェット。\n・これらのガジェットを用いた複雑な回路例.",
+      "criteria": "・ライブラリとガジェットが組み込まれた複雑な回路は、testnet上で検証できます.",
+      "report": "親愛なる審査官,\n\nマイルストーン4を完成しました。\n\nここでは、このマイルストーンのために実装された機能を示す説明ビデオです:ビデオ\n\nEXAMPLE.md のドキュメントを詳細な手順で更新し、動画に示す例を実行します。 ファイルが EXAMPLE.md にあります。\n\nこの例では、ユーザーが複雑な回路のオフチェーンを実行し、Cardano testnetでそれを検証する方法を示します。 これらの回路は次のとおりです。\n- メルクの木に含まれている\n- フィボナッチとポセイドンハッシュ回路を使用するカスタム回路\n\n提供されたコードでは、オフチェーンを実行し、テストネットで検証できる複雑な回路を提供しています。 お問い合わせ\n- ハッシュ関数: sha256、poseidon\n- マークルツリーの包含\n- 多項評価\n\nグラントリポジトリ: https://github.com/eryxcoop/cardano-zk-aiken\n\nAikenライブラリは、https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zkにあります。\n\n例:https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zk/milestone example"
+    },
+    {
+      "no": 5,
+      "promise": "・最適化とバグ修正によるコードベース\n・開発者のための包括的なドキュメントとチュートリアル。\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・このライブラリは、以前のマイルストーンで提供される機能的な期待を満たしており、明確で完全な文書が作成されます。\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "アップデート:\nクローズアウトレポートの欠如を申し訳ありません。 リポジトリに明示的に追加し、このリンクで見つけることができます。\nお問い合わせ\n親愛なる審査官,\nマイルストーン5を完成しました。\nここでは、最終クローズアウトビデオ: https://youtu.be/smll90J6PJE\nREADME.md ドキュメントを更新しました。 ファイルは README.md にあります。 テキストは、すべてのツールの機能、ユースケース、実装例、使用方法、インストール手順を詳しく説明します。\nエンドツーエンドのチュートリアルのメディア投稿を書いています。https://medium.com/eryxcoop/aiken-zk-tutorial-d11b440a7d1a\n最終コードベース: https://github.com/eryxcoop/cardano-zk-aiken\nAikenライブラリは、https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zkにあります。\n例:https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zk/milestone example"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Hydra Hexcore – Tool for Deployment Multi-Hydra Party",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 28500,
+      "promise": "Backend Development with NestJS\n・Implement backend services to manage Hydra Heads, Cardano accounts, and container states.\n・Provide RESTful APIs for UI and CLI integration.\n\nDocker Integration for Hydra Node Management\n・Integrate Dockerode library to start, stop, and monitor Hydra node containers directly from the backend.\n・Support automatic cleanup and recovery for failed nodes.\n\nState Management with MySQL and Redis\n・Store persistent data in MySQL (accounts, Hydra Head info, logs).\n・Use Redis for caching frequently accessed data and improving response times.\n\nCardano Account API\n・Create APIs to generate new Cardano accounts (vkey/skey), check balances, and assign accounts to nodes.\n・Ensure compatibility with both Preprod and Mainnet environments.",
+      "criteria": "1. Backend (NestJS) provides REST APIs to manage Cardano accounts, Hydra nodes, and container states.\n2. Docker integration allows creating, stopping, and monitoring Hydra node containers directly from the backend.\n3. Head information and Cardano account data are stored in MySQL, while Hydra node states, keys, and logs are stored on local device volumes for persistence and recovery.\n4. All APIs pass automated integration tests using Postman or Swagger, with stable performance under test conditions:\n * /hydra-main/create-account — create new Cardano account\n * /hydra-main/list-account — list ex",
+      "report": "1. Public GitHub repository containing backend source code, structured modules, and an installation guide. Link \n GitHub public: https://github.com/Vtechcom/hydra-hexcore\n Installation guidet: https://github.com/Vtechcom/hydra-hexcore/blob/master/README.md\n Api backend: https://api.hexcore.io.vn/api-docs\n2. Video demonstration showing Hydra Head creation and Cardano account binding process.\n https://youtu.be/rmc7z3LFnAs\n3. Example .env configuration file with environment-specific variables for local/testnet deployment.\n https://github.com/Vtechcom/hydra-hexcore/blob/master/.env.example\n4. Automated test data and recorded test results demonstrating stable API functionality.\n https://github.com/Vtechcom/hydra-hexcore/actions/runs/20163732845/job/57882243249\n https://vtechcom.github.io/hydra-hexcore/e2e-reports/",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 28500,
+      "promise": "UI Development with Nuxt 3 (Vue 3)\n・Build a responsive web UI connected to backend APIs via REST.\n・Implement reusable UI components for Hydra management.\n\nHydra Head and Account Management Interface\n・Interface to manage Cardano accounts, initialize Hydra Heads, and monitor container states.\n・Real-time status updates via API polling or WebSocket.\n\nRole-Based Login System\n・Implement authentication with three roles: Admin, Developer, Viewer.\n・Role-based restrictions for critical operations.\n\nResponsive Design with Mockups\n・Design and implement a fully responsive layout compatible with desktop, tablet, and mobile.\n・UI design based on pre-approved wireframes or mockups.",
+      "criteria": "・UI interacts successfully with all backend APIs from Milestone #1.\n・Displays list of running Hydra Heads and container states (running, stopped, etc.) in real-time.\n・Login/logout functionality works reliably with correct role-based permissions.\n・Cardano Account Management UI:\n\n・Lists existing Cardano accounts with address and balance.\n・Allows creating new accounts via API (/hydra-main/create-account).\n・Displays assigned node information and account details.\n・Data updates dynamically via API polling or WebSocket.",
+      "report": "1. Public GitHub repository for the frontend, deployed to Vercel or a private test server. \n https://github.com/Vtechcom/hexcore-ui\n2. Demo video showcasing full UI flow (create Head, view logs, manage accounts). \n https://youtu.be/UVLB2k6NEwc\n3. Finalized interface design provided as .figma file or screenshots.\n https://github.com/Vtechcom/hexcore-ui/blob/master/docs/hexcore-ui-screenshots.md\n4. Staging demo link if available for live testing. \n Hexcore-Ui demo: https://hexcore.io.vn/\n username: admin\n password: strongpassword123",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 23750,
+      "promise": "NGINX Reverse Proxy Configuration\n・Set up NGINX to route traffic to each Hydra node based on hostname or path, with load balancing and SSL/TLS support.\n・Allow dynamic configuration when the number of nodes changes.\n\nBasic Security Layer for Hydra Endpoints\n・Implement IP whitelisting to allow access only from specific IP addresses.\n・Optionally enable API key or JWT authentication to enhance security for Hydra API calls.\n・Log all access requests for analysis and intrusion detection.\n\nCLI Tool Development – hexcore-cli\n・Enable Hydra Head management directly from the command line: create new Heads, stop Heads, list statuses, and view logs.\n・Support custom parameters when initializing a Head (e.g., number of participants, timeout configuration).\n・Provide batch script capabilities to manage multiple Heads simultaneously.\n\nAdvanced Logging System\n・Integrate real-time log streaming directly in the CLI, with filters by node or Head.\n・Allow exporting logs to JSON or text files for offline analysis.",
+      "criteria": "Full CLI Functionality\n・hexcore-cli can perform all actions available in the UI: create new Head, stop Head, view status, and retrieve logs.\n・CLI commands must return immediate feedback and provide clear error messages for invalid operations.\n\nGateway Security for Hydra Endpoints\n・NGINX reverse proxy operates reliably and blocks all unauthorized requests.\n・IP whitelist works correctly, allowing only configured addresses.\n・API key/JWT (if enabled) must validate successfully before granting access.\n\nLoad Handling and Scalability\n・Able to run stress tests to create and manage multiple Heads concu",
+      "report": "・Link Public CLI Source Code: https://github.com/Vtechcom/hexcore-cli\n・Link Documentation: https://github.com/Vtechcom/hexcore-cli/blob/main/README.md\n・Link Sample Configuration File: https://github.com/Vtechcom/hydra-hexcore/blob/master/docs/proposal/ms3/hexcore-proxy.nginx.conf\n・Demonstration Video (Update \"blocking unauthorized requests and allowing only valid ones\") : https://youtu.be/iUou-naYgEE",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 14250,
+      "promise": "Final Project Report (Project Close-Out Report)\n・Detailed report covering project scope, development process, deployment details, challenges, and solutions.\n\nRecap Video\n・A complete video walkthrough of the system, including backend, frontend, CLI, and gateway components.\n\nTechnical Insights & Community Contributions\n・Summarized technical learnings, optimizations, and recommendations for Hydra developers.\n・Document contributions submitted to Hydra Core or related open-source repositories.",
+      "criteria": "・All documentation and video content are submitted and approved by Catalyst reviewers.\n・Final public GitHub repository contains complete, functional code with clear documentation.\n・Documentation is reusable and beneficial for other developers in the Hydra/Cardano community.",
+      "report": "1. Project Close-out Report (PDF)\nA detailed final report documenting the full project lifecycle, including:\n・Project timeline and key milestones\n・Team roles and responsibilities\n・Progress tracking methodology\n・Technical and operational challenges encountered ...\n\nPDF Report: https://github.com/Vtechcom/hydra-hexcore/blob/master/docs/proposal/ms4/Hydra%20Hexcore%20-%20Project%20Close-out%20Report.pdf\n2. Final Recap Video\nA short video summarizing:\n・Core development phases\n・System deployment and testing\n・Final outcomes and delivered value ...\n\nYouTube Video: https://www.youtube.com/watch?v=VXRY2HokP-4\n3. Public Source Code & Documentation\nAll project deliverables are fully open-sourced with clear installation and usage instructions:\n・Hydra Hexcore (Core Engine): https://github.com/Vtechcom/hydra-hexcore\n・Hydra Hexcore Documentation: https://github.com/Vtechcom/hydra-hexcore/blob/master/README.md\n・Hydra Hexcore UI: https://github.com/Vtechcom/hexcore-ui\n・Hydra Hexcore UI Documentation & Screenshots: https://github.com/Vtechcom/hexcore-ui/blob/master/docs/hexcore-ui-screenshots.md\n・Hydra CLI Tool: https://github.com/Vtechcom/hexcore-cli\n・Hydra CLI Documentation: https://github.com/Vtechcom/hexcore-cli/blob/main/README.md\n\n4. Technical Contribution Summary (PDF)\nA written report summarizing:\n・Key technical contributions\n・Interactions and improvements aligned with Hydra Core development\n・GitHub issues ...\n\nTechnical Contribution Summary: https://github.com/Vtechcom/hydra-hexcore/blob/master/docs/proposal/ms4/Technical%20Contribution%20Summary%20Report%20-%20Vtechcom%20Team%20.pdf",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 18
+    }
+  ]
+}

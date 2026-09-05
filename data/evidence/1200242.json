@@ -1,0 +1,68 @@
+{
+  "title": "Upgrade Cardano wallet js for Chang HF",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 45000,
+      "promise": "・Update new protocol params (changes to tx fee and script hash calculation)\n・Add support for Plutus V3",
+      "criteria": "・New protocol param changes and support for Plutus V3 were implemented and verified via public GitHub PR with relevant commits.",
+      "report": "Implemented below features,\n・new minFeeRefScriptCostPerByte protocol param\n・updated tx fee calculation to include refScript cost\n・v3 support for script data hash calculation\n\nGitHub PR - https://github.com/StricaHQ/typhonjs/pull/37",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 45000,
+      "promise": "・add support for new Conway era certificates, as below\n・Stake registration and de deregistration\n・dRep registration and retirement\n・drep update certificate\n・drep delegation\n・stake key registration and drep delegation\n・stake key registration and pool delegation\n・stake key registration, drep delegation, and pool delegation\n・delegation to drep and pool\n・committee member hot auth certificate\n・committee member resign certificate",
+      "criteria": "A pull request created on https://github.com/StricaHQ/typhonjs with relevant code commits to add the required outputs.",
+      "report": "Added support for new Conway-era certificates including code enhancement, added encoders and required witnessing in tx building,\n・Stake registration and de deregistration\n・dRep registration and retirement\n・drep update certificate\n・drep delegation\n・stake key registration and drep delegation\n・stake key registration and pool delegation\n・stake key registration, drep delegation, and pool delegation\n・delegation to drep and pool\n・committee member hot auth certificate\n・committee member resign certificate\n・\n\nAdded comments for logical methods in the Transaction Class. Type declarations are pretty much self-explanatory, as well as encoders because they follow the CBOR specification and doesn't have any logic.\nWe will continue to add more comments as we add new methods or upgrade existing methods, to gradually improve the codebase. \nGithub PR - https://github.com/StricaHQ/typhonjs/pull/38",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 36000,
+      "promise": "・add support for the voting procedure in transaction and building",
+      "criteria": "A pull request created on https://github.com/StricaHQ/typhonjs with relevant code commits to add the required outputs.",
+      "report": "・Added support for the voting procedure in the transaction class and tx building, to allow voting on governance proposals.\n\nRelevant code comments added. Comments are not possible on type declarations as they are self-explanatory.\n\nGitHub PR - https://github.com/StricaHQ/typhonjs/pull/39",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 27000,
+      "promise": "・add support for adding proposal procedure in transaction and building transaction (gov actions)",
+      "criteria": "A pull request created on https://github.com/StricaHQ/typhonjs with relevant code commits to add the required outputs.",
+      "report": "・added support for proposal procedures (creating governance actions)\n・added relevant code comments\n・type declarations and encoders following the Conway CDDL specification\n\nGitHub PR - https://github.com/StricaHQ/typhonjs/pull/40",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 27000,
+      "promise": "・Add support for the Treasury field in a transaction\n・Add support for the Donation field in a transaction\n・test cases\n・Final close-out report\n・Final closeout video",
+      "criteria": "・A pull request created on https://github.com/StricaHQ/typhonjs with relevant code commits to add the required outputs.\n・New released NPM package URL provided\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Transaction Builder Update\n・Donation and Treasury fields support added in transaction building\n・Test cases added\n・GitHub PR for above - https://github.com/StricaHQ/typhonjs/pull/41\n\nNew Version Release\n・New version released on NPM - typhonjs v3.0.0\n・https://www.npmjs.com/package/@stricahq/typhonjs\n・Documentation Updated - https://docs.strica.io/lib/typhonjs/index.html\n\nClose-Out report and video\n・Video - https://youtu.be/PBS_iJkenS4\n・Report - https://drive.google.com/file/d/13kIEysho0db1khbFmjJi7c5mSiuyDesC/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

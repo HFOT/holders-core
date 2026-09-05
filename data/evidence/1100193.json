@@ -1,0 +1,73 @@
+{
+  "title": "Maya Protocol - Supercharge Cardano with decentralized native cross-chain swaps",
+  "ms": [
+    {
+      "no": 1,
+      "month": "19",
+      "cost": 18000,
+      "promise": "The original milestone 1 as described in Ideascale is now split into Milestone 1: \"Bringing EdDSA to Maya Protocol - TSS libraries\" and Milestone 2: \"Bringing EdDSA to Maya Protocol - MAYANode\".\n\nWhy does Maya need EdDSA?\nMaya Protocol currently only supports ECSDA cryptography. To support Cardano, Maya’s TSS libraries needs to support EdDSA. \nMaya Protocol controls its vaults using TSS and is secured by MAYANodes validators via GG20 TSS for all integrated chains, ensuring security and decentralization. TSS makes Maya Protocol decentralised and secure. Read more about it here: https://docs.mayaprotocol.com/deep-dive/how-it-works/eli5/what-is-threshold-signature-scheme-tss\nMaya Protocol, a friendly fork of THORChain, employs the same external TSS libraries, including one based on Binance's TSS lib, all audited by Kudelski and commissioned by THORChain.\n\nThis milestone focuses on bringing EdDSA support to the ‘go-tss’ and ‘tss-lib’ TSS libraries. \n\nOutputs of the Milestone\nThe output of this milestone will be Bringing EdDSA to the two TSS libraries Maya Protocol uses. \n\nSub-output for 'tss-lib':\nThis library includes three protocols:\n・Allow Key Generation for creating secret shares w",
+      "criteria": "This milestone should be accepted once ‘go-tss’ and ‘tss-lib’ repositories in GitLab support EdDSA and when the Maya team has shared a video highlighting the changes in a video with the Catalyst Milestone reviewers. \nThe following PR’s will add EdDSA to the aforementioned libraries: \n‘go-tss’ PR: https://gitlab.com/thorchain/tss/go-tss/-/merge_requests/254\n‘tss-lib’ PR: https://gitlab.com/thorchain/tss/tss-lib/-/merge_requests/37\n\n *NOTE: These are the open MR’s at the time of writing, the changes could be transferred to another MR.",
+      "report": "https://www.youtube.com/watch?v=9LMp1x9TE3s video explaining the changes\ntss-lib now supports EdDSA, the following MR was merge request added support for EdDSA: https://gitlab.com/thorchain/tss/tss-lib/-/merge_requests/41\ngo-tss was migrated from an external repository to the local code base through the following merge request: https://gitlab.com/mayachain/mayanode/-/merge_requests/522\nIn this follow up MR, EdDSA was added to the go-tss folder in the local codebase: https://gitlab.com/mayachain/mayanode/-/merge_requests/523\nThe following functions were added:\n - Distributed key generation\n - Multi-party threshold signing\n - Batch signing support\n - GitLab file paths (see merge request for the files):\n - /bifrost/tss/go-tss/keygen/eddsa/tss_keygen.go - EdDSA key generation \n - /bifrost/tss/go-tss/keysign/eddsa/tss_keysign.go - EdDSA signing\n - /bifrost/tss/go-tss/tss/keygen.go - KeygenAllAlgo() function for dual algorithms",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "20",
+      "cost": 54000,
+      "promise": "MAYANode is the open source code that is run by Maya’s nodes (MAYANodes). \nMAYANode has the code for pubkeys, handlers, managers and Bifrösts. \n\nJust like the TSS libraries, these files only support ECDSA. \n\nThis milestone will make MAYANode EdDSA-compatible.",
+      "criteria": "The MAYANode code is open source. Once all changes to support EdDSA in MAYANode have been merged, this milestone should be accepted.\n\nThe following changes have been made to MAYANode to make it EdDSA-compatible and will be shared in the form of merged Merge Requests (MR(‘s)): \n-Common folder. \n-Query. \n-Mayanode message, handlers, managers \n-Bifröst (Bifröst observer needs to be updated to accept transaction sending to the EdDSA key-related address).",
+      "report": "https://www.youtube.com/watch?v=9LMp1x9TE3s video explaining the changes\n\nThe merge request containing the changes: https://gitlab.com/mayachain/mayanode/-/merge_requests/373",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "21",
+      "cost": 54000,
+      "promise": "This milestone focuses on building the observer part of the Cardano Bifröst.\n\nEach integrated chain has a \"Bifröst\" client that deals with the nuances of connecting to each chain. Once nodes are synced, they watch vault addresses. If they ever see an inbound transaction, they read it and convert it into a MAYAChain witness transaction. (Read more about Bifröst here: https://docs.mayaprotocol.com/deep-dive/how-it-works/technology#the-bifroest-protocol-1-way-state-pegs )",
+      "criteria": "-Have created a Merge Request (MR) with the observer part of the Cardano Bifröst client. This includes the blockscanner and the observation reporter to MAYANode. So it's the mechanism by which Maya processes blocks & txs from Cardano in such a way that the information can be relayed to MAYANode for any required logic, it includes reading blocks and heights (and any error doing so), reading txs and all their relevant data for Maya, when to consider tx types confirmed (and anything around its consensus), etc.\n-Shared a brief video that goes over all changes that were made in a non-dev friendly w",
+      "report": "The observer part of the Cardano Bifrost client has been built and merged. The original smoke tests have been replaced with simulation tests that validate the full Cardano integration including the Bifrost observer (blockscanner and observation reporter).\n\nThe Cardano code was merged via the following MR:\nhttps://gitlab.com/mayachain/mayanode/-/merge_requests/373\n\nThe latest pipeline on develop includes Cardano in the simulation tests and all stages passed:\nhttps://gitlab.com/mayachain/mayanode/-/pipelines/2461451445\n\nThe Cardano simulation test code can be found at:\nhttps://gitlab.com/mayachain/mayanode/-/tree/develop/test/simulation/pkg/cardano\n\nVideo going over the Cardano Bifrost changes:\nhttps://www.youtube.com/watch?v=sMOHOpP5vhk\n\nVideo correlation between logical blocks and sim tests (UPDATED):\nhttps://www.youtube.com/watch?v=z-CMtf1N3n4",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "22",
+      "cost": 27000,
+      "promise": "The Cardano Bifröst client can sign and broadcast transactions on the Cardano blockchain. This is needed for swaps to/from $ADA as well as refund transactions.",
+      "criteria": "-Have added the signer part of the Cardano Bifröst client to the existing Merge Request that adds the observer part of the Cardano Bifröst client.\n-Shared a brief video that goes over all changes that were made in a non-dev friendly way.",
+      "report": "The information about this milestone can be found on this video:\nhttps://www.youtube.com/watch?v=zZSx7WwubRk\n\nMerge Request 373 (observer + signer):\n https://gitlab.com/mayachain/mayanode/-/merge_requests/373\n\nKey file:\n bifrost/pkg/chainclients/cardano/client.go\n - SignTx (~line 446) — builds, signs, broadcasts an outbound Cardano tx\n - BroadcastTx (~line 695) — pushes the signed tx to the Cardano RPC\n\nPrevious milestone:\n Milestone 3 — The Cardano Bifröst (Observer)",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "23",
+      "cost": 27000,
+      "promise": "-Cardano Bifröst client has been audited.\n-The Cardano Bifröst client incorporated the suggested changes of the audit to the code.",
+      "criteria": "-Audit the Cardano Bifröst client and address critical issues described by audit.\n-Audit report.\n-Project Closeout report.\n-Project Closeout video",
+      "report": "・Project Closeout Report: https://gitlab.com/mayachain/mayanode/-/blob/bitol/1100193-cardano-bifrost-audit-closeout-report/docs/cardano-bifrost-audit-closeout-report.md?ref_type=heads\n・Closeout Video: https://www.youtube.com/watch?v=9Kt0nkrRnd4\n・Audit report (public): https://cardano-audit.mayachain.info/\n\n・Closeout Video: https://www.youtube.com/watch?v=Z3JqNiNkXyk\n・Audit report (public): https://cardano-audit.mayachain.info/\n\nALL FINDINGS HAVE BEEN MERGED AND RELEASED TO MAYANODE MAINNET.\nUPDATED:\n・Project Closeout Report: https://gitlab.com/mayachain/mayanode/-/blob/bitol/project_catalyst_1100193_final_milestone/docs/cardano-project-1100193-closeout-report.pdf?ref_type=heads\n\nExtra resources:\nPROJECT: Maya Protocol — Supercharge Cardano with decentralized native cross-chain swaps\n (Catalyst #1100193)\n\nAudit report (public):\n https://cardano-audit.mayachain.info/\n\nAudit-remediation merge requests (public):\n !793 https://gitlab.com/mayachain/mayanode/-/merge_requests/793\n !794 https://gitlab.com/mayachain/mayanode/-/merge_requests/794\n !795 https://gitlab.com/mayachain/mayanode/-/merge_requests/795\n\nSource code (open source):\n https://gitlab.com/mayachain/mayanode\n https://gitlab.com/mayachain/cardano-go\n EdDSA TSS: https://gitlab.com/thorchain/tss/go-tss , https://gitlab.com/thorchain/tss/tss-lib\n\nProject Closeout report: see accompanying document.\n\nPrevious milestone videos:\n - Bringing EdDSA to Maya Protocol (TSS libraries / MAYANode)\n - The Cardano Bifröst — Observing\n - The Cardano Bifröst — Signing",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

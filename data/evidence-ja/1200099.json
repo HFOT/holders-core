@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・Atara PRISMやKERIなど、自発的なアイデンティティ(SSI)のための既存のCardanoソリューションの研究\n・正しいと適用可能なSSOIスキーマの最初のドラフトを書き込みます\n・SSOIスキーマと完全に互換性があり、同期するオンチェーンのデータ構造の研究開発と設計\n・ハイドラの使用を誘導し、潜在的な通貨の問題に対処する",
+      "criteria": "・研究・設計段階の発見を記述する詳細な報告\n・SSOIスキーマのドラフト\n・設計したオンチェーンのデータ構造と、SSOIスキーマとの相互作用を裏付ける技術文書\n・通貨課題を解決するハイドラの潜在的使用と影響に関する技術的な簡単な",
+      "report": "このプロジェクトを立ち上げるために、当社の焦点は技術研究とシステム設計にありました。 パブリック・ドキュメンテーションでは、背景研究と初期の SSOI デザインについて紹介しています。\n以下に示すように、マイルストーン完了の証拠を示します。\n#1:詳細な研究開発レポートへのリンクを共有する:\n・Atala Prism: https://github.com/Andamio-Platform/andamio-SSOI/blob/master/docs/research/Atala-Prism.md\n・Keri: https://github.com/Andamio-Platform/andamio-SSOI/blob/master/docs/research/Keri.md\n\n#2: SSOIスキーマのインタラクティブなドラフトをMiroで共有する\n・https://miro.com/app/board/uXjVLDsFWko=/\n\n#3:技術的な文書へのリンクを共有する\n・https://github.com/Andamio-Platform/andamio-SSOI/blob/master/docs/project/overview.md\n\n#4:Hydraの統合に関する技術的な簡単なリンクを共有する\n・https://github.com/Andamio-Platform/andamio-SSOI/blob/master/docs/research/hydra.md"
+    },
+    {
+      "no": 2,
+      "promise": "・SSOIシステム統合に対応した開発環境の設定と構成\n・SSOIトークンの作成と管理を行う一連の契約を開発\n・SSOIトークンバリデータ契約のセットを開発\n・Cardano-native SSOIシステムの最初のテスト取引を開発\n・可能なCIPにつながるSSOI規格を開発",
+      "criteria": "・機能性開発環境\n・SSOIトークンとバリデータスマートコントラクトの成功展開\n・テスト取引結果の詳細な報告\n・SSOI規格第一号案\n・GitHubリポジトリへのリンク",
+      "report": "1) 関連する Docker イメージや環境変数の例など、開発環境の設定方法についてのドキュメントへのリンク\n・SSOIシステムガイドの環境設定方法\n・SSOIシステムガイドの実行方法\n\n2) オンチェーン取引ハッシュを共有し、スマートコントラクトの成功した展開を示す\n・インデックスバリデータ\n・インデックスアドレス\n・グローバルスズーポリシーID\n・グローバル州バリデータ\n・グローバルアドレス\n・資格取得者\n・クレデンシャルアドレスの特定\n・トークン認証発行者\n・署名者資格発行者\n・ローカルsoiポリシーid/verificationメソッド\n・ローカルsoiトークンアドレス\n\n3) テストトランザクション結果に関するレポートへのリンクを共有する\n・テスト取引レポート\n\n4) GitHubリンクでSSOI規格の第一号草案を共有\n・SSOI規格CIP\n\n5) 公開リンクを GitHub リポジトリに共有し、テストシステムとのやり取りが可能\n・SSOIサーバリポジトリ"
+    },
+    {
+      "no": 3,
+      "promise": "・SSIバリデータとやり取りする作業プロトタイプを構築し、Cardanoブロックチェーンを通じてSSIトークンを追跡\n・ SSOIを取得し、アイデンティティを構築し、ユーザーの旅を追跡するAPIを開発\n・Testnet上でSSOIプロトタイプのクローズドアルファテストを実施",
+      "criteria": "・[動画] 意図した機能をすべて実証する運用試作\n・APIのドキュメントとエンドポイントの説明\n・クローズドアルファによる包括的なテストレポート",
+      "report": "・業務用プロトタイプのデモや全ての機能へのリンク: https://andamio.notion.site/Build-a-working-prototype-that-interacts-with-the-SSOI-validator-and-track-SSOI-tokens-through-the-ba6399852ca74f5b90cf8b1d29b66?pvs=4\n・API ドキュメントをデプロイするリンク:https://github.com/Andamio-Platform/andamio-SSOI/blob/master/swagger-api.json\n・クローズドアルファの公開報告へのリンク:https://github.com/Andamio-Platform/andamio-SSOI/blob/master/docs/project/SSOI%20Alpha%20Report.md"
+    },
+    {
+      "no": 4,
+      "promise": "・SSOIがCardanoエコシステム、成功指標、改善分野に及ぼす影響の分析など、プロジェクトの成果を評価する最終評価報告書。\n・プロジェクトの旅、インパクト、スタートからゴールまで学んだ教訓を、映像を閉じる。\n・SSOI文書の公開原稿",
+      "criteria": "・プロジェクトの明確かつ徹底的な見直しを実現する詳細な最終報告書\n・プロジェクトとその意義をまとめたクローズアウトビデオ\n・GitHubリポジトリへのリンク",
+      "report": "YouTubeでホストされているクローズアウト動画へのリンク(以下「項目(2)」参照)\n1) 公開最終報告書へのリンク - 更新 2025-07-08\nhttps://andamio.notion.site/A-final-evaluation-report-assesing-project-outcomes-with-analysis-of-the-SSOI-s-impact-on--4c5197d1a1504b49adeb09bc1def9956?pvs=4\n2)公開最終クローズアウトビデオへのリンク\nhttps://youtu.be/WdDvZiRZSHc\n3)公開GitHubリポジトリへのリンク\nhttps://github.com/Andamio-Platform/andamio-SSOI\n4) SSOI文書の公開原稿へのリンク\nhttps://github.com/Andamio-Platform/andamio-SSOI/tree/master/docs/project\nお問い合わせ\nマイルストーンのレビュアーのリクエストでは、Youtubeで利用可能な製品デモビデオを追加しています。https://youtu.be/BIuWoXWF9VI"
+    }
+  ]
+}

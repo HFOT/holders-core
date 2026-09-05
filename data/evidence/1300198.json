@@ -1,0 +1,63 @@
+{
+  "title": "zkFetch: Integrating zkTLS-Powered Oracle Solution for Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 48900,
+      "promise": "Adaptation of zkFetch for Cardano\n・Modify and optimize zkFetch to align with Cardano’s UTxO model and smart contract infrastructure.\n\nDevelopment and Deployment of Modules\n・Design, develop, and deploy on-chain and off-chain modules required for securely publishing zkProofs on the Cardano blockchain.\n\nIntegration with Data Providers\n・Successfully integrate zkFetch with at least two data provider APIs to fetch real-world data and generate corresponding zkProofs.\n\nDemonstration of Capabilities\n・Deliver a functional prototype showcasing the integration and proof publication process, highlighting zkFetch’s utility on Cardano.",
+      "criteria": "Integration with Cardano's Architecture\n・Successful adaptation of zkFetch to align with Cardano’s unique technical architecture, including UTxO model compatibility and Plutus smart contracts.\n・On-chain and off-chain modules are functional and optimized for Cardano’s environment.\n\nData Publishing with zkProofs\n・Deployment of on-chain and off-chain modules capable of securely publishing zkProofs.\n・Modules pass end-to-end testing with no critical errors or inconsistencies.\n\nData Provider Integration\n・Demonstration of successful integration with at least two data provider APIs.\n・Proofs published o",
+      "report": "We have successfully completed the milestone requirements. Below is a breakdown of deliverables and corresponding proof of work:\n1. Adaptation of zkFetch for Cardano\n・zkFetch has been modified to work with Cardano’s EUTxO model.\n・A Cardano-specific implementation is provided to store zkProof identifiers and associated real-world data on-chain.\n・Relevant scripts:\n・createWallet.ts – Generates a Cardano wallet using Deno.\n・sendTransaction.ts – Submits a transaction embedding zkProof metadata to the Cardano blockchain.\n\nProof: GitHub Repository – zkFetch for Cardano\n2. Development and Deployment of Modules\n・Developed both off-chain (wallet creation, proof request) and on-chain (metadata inclusion in Cardano transactions) modules.\n・Demonstrated ability to publish zkProof data to Cardano via transaction metadata.\n\nExample transaction: Metadata Explorer (Cardano Preprod)\n3. Integration with Data Providers\n・Integrated two real-world data providers using zkFetch:\n・Live ADA price fetched from a public API.\n・Sports match scores scraped from Goal.com using regex-based proof schema.\n\nProof files:\n・proof.json – Stores generated zkProof data.\n・requestProof.js – Requests proof from external data APIs.\n・Regex-based integration shown in README and script examples.\n\n4. Demonstration of Capabilities\n・Full working prototype showcasing the process:\n・Wallet creation\n・zkProof generation from an external API\n・Cardano transaction submission with zkProof metadata\n・Demo Video : https://www.loom.com/share/8fe127ab170a45a49711af4e42167ff9?sid=0ac14421-7db5-4785-80c5-3c8acc25aaf6\n\nSteps documented in README\nCodebase fully available in public GitHub repository.",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 25000,
+      "promise": "Comprehensive Unit Testing\n・Perform extensive unit tests for core functions of zkFetch, covering on-chain and off-chain modules to ensure reliability and robustness.\n\nIntegration Testing\n・Validate the interaction between on-chain and off-chain modules with data provider APIs, ensuring seamless data fetching and zkProof generation.\n\nDeveloper Documentation\n・Create detailed technical documentation covering:\n・System architecture and workflows.\n・Deployment and integration steps.\n・Instructions for interacting with zkFetch modules on Cardano.",
+      "criteria": "Unit Testing\n・All core functions pass unit tests without errors.\n\nIntegration Testing\n・End-to-end testing demonstrates successful communication between on-chain and off-chain modules, as well as data provider APIs.\n・No critical issues detected during integration tests.\n\nDocumentation Quality\n・Developer documentation includes clear and accurate descriptions, with no significant omissions or ambiguities.\n・Test guides provide step-by-step instructions, enabling developers to easily replicate the testing process.",
+      "report": "We have successfully completed the milestone requirements. Below is a breakdown of deliverables and corresponding proof of work:\n・Extensive unit tests for core zkFetch functions covering on-chain and off-chain modules. \n・Validated interaction between modules and data provider APIs with no critical issues. \n・ GitHub Repository - Test Section\n・Technical documentation covering system architecture, deployment, and integration instructions. \n・ zkFetch Cardano Documentation\n・Working prototype with comprehensive testing workflow. \n・Video: https://www.loom.com/share/f93032b259dc4fe9a5cc2d344af937dc?sid=b3dd6325-ec47-4f30-b89f-50e47868276c\n\nUpdate: We've already tested zkFetch with several APIs, and it's working perfectly. also added a few more APIs as a footnote for developers to try out. Essentially, the testing flow just involves trying other APIs, which is pretty straightforward. We're always open to helping developers if they encounter any issues with other APIs. That said, we can confidently assure that our product is well-tested and runs seamlessly.",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 20000,
+      "promise": "・Publish a detailed blog post explaining zkFetch’s Oracle solution, highlighting its technical advantages and real-world applications in the Cardano ecosystem.\n・a community call/twitter space or recorded demo video to introduce zkFetch to the Cardano ecosystem.\n・Collaborate with Cardano’s marketing team to execute co-marketing initiatives, such as social media announcement.",
+      "criteria": "・The blog post is published on medium/notion/devpost/github. \n・Successfully conduct a community call/twitter space or record a demo video \n・Launch at least one joint marketing activity like twitter announcement with Cardano ecosystem.",
+      "report": "A. Output: Publish a detailed blog post explaining zkFetch’s Oracle solution for Cardano\nAcceptance criteria: The blog post is published on a public platform (Medium / Notion / GitHub / equivalent) and explains zkFetch’s technical advantages and real-world applications within the Cardano ecosystem.\nEvidence: https://blog.reclaimprotocol.org/posts/zkfetch-cardano\nB. Output: Conduct a community call / townhall session or provide a recorded demo introducing zkFetch to the Cardano ecosystem\nAcceptance criteria: Successfully conduct a community call, Twitter Space, or provide a recorded session explaining zkFetch and its benefits for Cardano developers and applications.\nEvidence: https://youtu.be/cO6EeWsY_ZQ?t=1863\nC. Output: Execute a marketing activity with official announcement\nAcceptance criteria: Launch at least one marketing activity such as a Twitter/X announcement introducing zkFetch to the Cardano community.\nEvidence: https://x.com/reclaimprotocol/status/2001686022720229491?s=20",
+      "kinds": [
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 35000,
+      "promise": "Integration of High-Quality APIs\n・Integrate APIs from 5 high-quality data providers for diverse data types, such as:\n・Crypto Prices: Real-time price feeds for major cryptocurrencies.\n・Sports Data: Live updates on scores, player statistics, and match outcomes.\n・Other Data Categories: Weather, financial market updates, or any other relevant datasets for prediction markets.\n\nData Validation and Proof Generation\n・Ensure all integrated data feeds generate cryptographically verifiable zkProofs that can be published on Cardano.",
+      "criteria": "API Integration\n・At least 5 APIs are fully integrated and functional, delivering real-time data updates.\n・Data feeds are tested and verified for accuracy and reliability.\n\nProof Generation\n・zkProofs for all integrated data feeds are successfully generated and published on the Cardano blockchain without errors.",
+      "report": "A. Output: we've added minimum 5 and total 27 data providers to zkfetch on cardano, users can leverage these data points building dApps on cardano\nAcceptance criteria: At least 5 APIs (data points) are fully integrated and functional, delivering real-time data updates.\nEvidence: Github Repo: https://github.com/reclaimprotocol/zkfetch-cardano-example\nB. Output: Data feeds are working fine and verified for accuracy and reliability.\nAcceptance criteria: Data feeds are tested and verified for accuracy and reliability. zkProofs for all integrated data feeds are successfully generated and published on the Cardano blockchain without errors.\nEvidence: Logs(zkproofs): https://docs.google.com/document/d/1K_Za86vdFajAglw4C0aV_Mc9V1V-XsxzCpe6YUyh2dM/edit?usp=sharing\nOn-chain verification on Cardano (Link) : https://preprod.cardanoscan.io/address/60327febdc4d344c570de1394d2764bfe3d8a26df824cf5773f976305e\nC. Output: Complete Documentation\nAcceptance criteria: Include a link to the documentation with evidence of its accessibility and completeness.\nEvidence: https://docs.reclaimprotocol.org/zkfetch/cardano",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 4
+    }
+  ]
+}

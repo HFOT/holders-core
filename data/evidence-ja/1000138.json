@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "達成基準を定める達成システムPRC(Paima Request for Comment)を作成します。 PRCは、CIP(Cardano改善提案)やERC(ERC)に類似していますが、パマのエコシステムです.",
+      "criteria": "Paimaの業績を扱い、ゲーム自体から簡単にインデックス化、自己ホスト可能、読みやすくするなど、すべての重要なポイントをカバーする方法について適切に書かれ、レビューされた仕様",
+      "report": "動画: https://drive.google.com/file/d/1gUoDQtT 29N20SCFSkKZC75JTff09n8q/view?usp=sharing\n仕様: https://docs.paimastudios.com/home/PRCs/prc-1/\nレビュー付き初期プルリクエスト: https://github.com/PaimaStudios/PRC/pull/1\n標準を実装するエンジニアリング作業: https://github.com/PaimaStudios/paima-engine/pull/358"
+    },
+    {
+      "no": 2,
+      "promise": "Github では、実績システムの証明の概念を構築し、コードをホスト",
+      "criteria": "少なくとも1ゲーム/ミニゲームでPRCを実装し、Githubのコードの一部であるWebサイトから達成が完了し、システムがより安定するにつれて、将来のマイルストーンに来るゲームが増えています.",
+      "report": "PoAコメントに対応:\n注意:私たちは、Catalyst Directiveで特定の重要なトピックについて議論したアップデートを持っているので、レビューを完了する前に退会しました。 テキストはコメントで表示されます。\n注2:ビデオを追加し、マイルストーンのコンテンツを表示するドキュメントを簡素化しました。\nありがとうございます。\n(1)Cardanoの直接値。 ゲームの資金調達モデルは、プレイヤー取引のために支払うためにCardanoネイティブトークンをロックします: cNIGHTの割り当ては、30専用のCardanoウォレットで保持され、Stakeアドレスに登録して、ユーザーインタラクションをカバーするリソースを生成します - Cardanoはゲームの経済エンジンです。 ウォレットアドレスは公開オンチェーン(以下例)で、登録者を管理するために構築されたオープンソースツールが公開されています。 さらに、Cardano SPO は、ミッドナイトブロックプロデューサーとしてオプトインできるため、これらのゲームでのアクティビティは、Cardano エコシステムへの直接的な価値を生成します。\n(2) スコープ 提案は変更されず、拡大しました。 単純な例よりもむしろ、PRC規格は、実際の作業ポータルと実際のゲーム、すべてのオープンソースで実装され、Cardanoと互換性があります。Cardanoでスタックをリターゲティングするツールは、コードの構成変更です。\n概要:\nオープンな達成基準の概念の証拠。 PRC-1 は、2 つの HTTP エンドポイントのどのゲームが機能できるかを定義します。1 つは、ゲームが提供する成果をリストし、与えられたウォレットが獲得したものを報告します。そのため、任意のウェブサイトは、標準を話す任意のゲームの進捗状況を表示できます。 PRC-6 は、チャネル、リーダーボード、メトリック、および自動署名セッションの ID 解像度で拡張します.スタンダードは3つのライブゲーム(Safe Solver、Kachina Kolosseum、Block Kart Legends)で実装され、midnight.funポータルでは、各ウォレットの横に表示された、すべてのプレイヤーの達成を集計しています。 各ゲームのリポジトリには、ミニゲーム統合と成果表示のフロントエンドの両方が含まれています。\n\nお問い合わせ\n1。 ビデオ - ゲーム内で得られた達成、それから目に見える"
+    },
+    {
+      "no": 3,
+      "promise": "設計とスコープの完全な成果システムのウェブサイトと実装のための開発パートナーを見つける",
+      "criteria": "・デザインファイルや開発パートナーの活用(カルドエンドアップ自身)",
+      "report": "注意:このプロジェクトへのタイムラインが短いため、このマイルストーンが承認される前に提出しました。 これは、Cardano指令と協議し、PoAの最後に正式な声明が追加されました\nブリーフ\nこのマイルストーンは、クロスゲームの達成システム用のウェブページを提供します。PRCの達成エンドポイントとレンダリングを読み取り、どのウォレットでも、それがゲーム全体で獲得した成果。 設計システムは Figma で指定され、真夜中のパブリックゲームポータルとして実装されました。fun/games は、各ゲームの PRC エンドポイントから実行された実績とリーダーボードのデータを引き出す - 中央データベースなし、ポータルは各ゲームのノードをフライで問い合わせます。 オープンソースで、EffectStream上に構築されています。\nお問い合わせ\n出力: 達成システムのページのための設計ファイル\nhttps://www.figma.com/design/vC06elYvCWonA7hCC64K2g/Paima-Portal?node-id=260-2267&t=1EkaROJh1DwwXTf4-1\n使用中のライブデザインを示す実装ウォークスルービデオ: https://drive.google.com/file/d/1SSpY nFAIm95b7v4LSEDhSywYgAkx0nK/view?usp=sharing\nPaimaポータルソースコード\nhttps://github.com/PaimaStudios/paima-portal\n実績システム\nhttps://effectstream.github.io/docs/blog/achievement-system\nゲーム、リーダーボード、業績の拡張仕様\nhttps://github.com/effectstream/midnight-game-api-spec\n\n-----------------------\nコンテンツとノート\nカタリスト・ディレクションは、このプロジェクトに関する次の声明について検討し、チケット#9527で記録しました\n・リブランド Paima は EffectStream として再ブランドし、 Midnight Foundation の一部です。リンクは、これらのエンティティティティの名称で表示されることがあります。\n・スコープ 審査者の場合:マイルストーンと成果物は、承認された受諾基準に対して評価されるべきです.各投稿の内容は、査読者評価の対象であり、例またはさらなる実装は、承認以来、Cardanoエコシステムの技術的進化を反映している可能性があります。\n・CrossChain:EffectStreamはオープンソースのマルチチェーンフレームです"
+    },
+    {
+      "no": 4,
+      "promise": "新しいデザインで達成システムのウェブサイトの最初の草案を共有",
+      "criteria": "・マイルストーン3から、マイルストーン2から、実装パートナーズのウェブサイト(該当する場合)までのオープンソースサイトへの移行",
+      "report": "注意:このプロジェクトへのタイムラインが短いため、このマイルストーンが承認される前に提出しました。 これは、Cardano指令と協議し、PoAの最後に正式な声明が追加されました\nブリーフ\nこのマイルストーンは、新しいデザインを実装して、達成のウェブサイトの最初の草案を提供します。 マイルストーン3 Figmaのデザインは、オープンソースのPaimaポータルで構築されています。コンセプトの証明から同じウェブサイトで、フルデザインシステムを導入しています。 すべてのウォレットでは、各ゲームの標準的なエンドポイントから直接獲得した成果を読み込み、中央のデータベースなしで1か所でレンダリングします。 コードは GitHub でオープンソースで、EffectStream 上に構築され、Cardano エコシステムを構成することで再設定します。\nお問い合わせ\n1. ビデオ - M3 の設計の横の実施されたポータル:\nhttps://youtu.be/RIN7bFWIWk\n2. 実装されたウェブサイト(オープンソースコード):\nhttps://github.com/PaimaStudios/paima-portal\nリポジトリ内の達成ポータルコンポーネントパス:\nhttps://github.com/PaimaStudios/paima-portal/tree/main/src/components/launchpad\n3. 実装するM3設計 - 図:\nhttps://www.figma.com/design/vC06elYvCWonA7hCC64K2g/Paima-Portal\n4. 書き込み+文書:\nhttps://effectstream.github.io/docs/blog/achievement-system\nhttps://effectstream.github.io/docs/home/paima-standards/prc1\nhttps://effectstream.github.io/docs/home/components/achievements\n--------------------------------------------------------------------------------\nコンテンツとノート\nCatalyst の方向性は、このプロジェクトに関する次の声明をレビューし、チケット #9527 の下で記録しました。\n・リブランド Paima は EffectStream として再ブランドし、 Midnight Foundation の一部です。リンクは、これらのエンティティティティの名称で表示されることがあります。\n・スコープ.審査者の場合:マイルストーンと成果物は、承認された受諾基準に対して評価されるべきです。 各投稿の内容は、査読者評価の対象となります。例やさらなる実装は技術を反映している可能性があります"
+    },
+    {
+      "no": 5,
+      "promise": "達成システムの完全なリリース(統合3+ゲームおよび一般に利用可能)",
+      "criteria": "少なくとも3つのゲームが組み込まれた達成システムを実装するウェブサイト",
+      "report": "注意:このプロジェクトへのタイムラインが短いため、このマイルストーンが承認される前に提出しました。 これは、Cardano指令と協議し、PoAの最後に正式な声明が追加されました。 このマイルストーンは完全に独立しています。\nブリーフ\nこのマイルストーンは、PRC標準を実行している3つのライブゲームで、達成システムの公開リリースを配信します - セーフソルバー、ダスト-2-Dust、およびブロックカートレジェンド - すべてのサーファーは、真夜中に達成とリーダーボードをサーフィンします。 以前のレビューはカチナはまだ統合されていませんでした。それは今、他の2と一緒に住んでいます。 プレイヤーは、ゲームのいずれかで達成され、ウォレットの横にあるポータルに表示されます。 ソースを開き、設定でCardanoエコシステムにチェーンスワップ可能。\n前のマイルストーンからオープンソースUIをフォークし、ブランドスタイルに合わせて再導入しました\nお問い合わせ\n\n1。 ビデオ - ゲームで達成を獲得し、ポータルで確認します。\nhttps://youtu.be/QHQvKbwnxVg\n\n2. ライブ - 3つのゲーム + 集計されたポータル:\nhttps://safesolver.midnight.fun/\nhttps://dustri2dust.midnight.fun/\nhttps://blockkart.paimastudios.com/\nhttps://midnight.fun/ゲーム\n\n3. コード(各リポジトリには、達成統合+フロントエンドが含まれます):\nhttps://github.com/effectstream/safe-solver\nhttps://github.com/effectstream/dust-to-dusts\nhttps://github.com/effectstream/block-kart-legends\nスタンダード: https://github.com/PaimaStudios/PRC/blob/main/PRCS/prc-1.md\n\n4. 書き込み+発表:\nhttps://effectstream.github.io/docs/blog/achievement-system\nhttps://midnight.network/blog/introducing-midnight-fun\nhttps://x.com/MidnightNtwrk/status/2043388660188385620\n\n--------------------------------------------------------------------------------\nコンテンツとノート\nCatalyst の方向性は、このプロジェクトに関する次の声明をレビューし、チケット #9527 の下で記録しました。\n・リブランド PaimaはEffectStreamとして再ブランドし、ミッドナイト財団の一部であり、リンクはかもしれない"
+    },
+    {
+      "no": 6,
+      "promise": "・PCR動画(dcSpark youtube)\n・PCR PDFレポート(dcSparkドライブ)\n・パイマでの業績の取り扱い方法に関する正しく書かれている仕様\n・Githubの達成システムコード\n・アクセスシステムホームページ",
+      "criteria": "コミュニティは、すべてのレポート、発表、ウェブサイト、および仕様への公開アクセス権を持っています.",
+      "report": "注意:このプロジェクトへのタイムラインが短いため、このマイルストーンが承認される前に提出しました。 これは、Cardano指令と協議し、PoAの最後に正式な声明が追加されました。\nブリーフ\nこれは、Catalystの提案のためのプロジェクトクローズレポート1000138、「オンチェーン参加をgamifyするためにクロスゲーム達成システムのためのオープンスタンダード」です。 プロジェクトは、PRC-1(およびPRC-6拡張機能):オープンな達成基準 - 2つのHTTPエンドポイントは、任意のウェブサイトは、それを話す任意のゲームのための進捗を表示することができます - 3つのライブゲーム(セーフソルバー、カシナコロッセウム、ブロックKart Legends)で実装し、真夜中に集約された。ファンポータル。 クローズアウトビデオとレポートは下記になります。\n\nお問い合わせ\n1. クローズアウトビデオ\nhttps://youtu.be/yAeBan50hEg\n\n2. クローズアウトレポート\nhttps://drive.google.com/file/d/1-2zBRREazoCmwojpXu8mSAffxzTvbVn/view?usp=sharing\n\n3. 前のマイルストーンからの標準的な、文書、コード、ライブポータル(OPTIONAL)\nhttps://github.com/PaimaStudios/PRC/blob/main/PRCS/prc-1.md\nhttps://effectstream.github.io/docs/blog/achievement-system\nhttps://effectstream.github.io/docs/home/paima-standards/prc1\nhttps://effectstream.github.io/docs/home/components/achievements\nhttps://midnight.fun/ゲーム\nhttps://github.com/effectstream/dust-to-dusts\nhttps://github.com/PaimaStudios/pvp-arena\nhttps://github.com/effectstream/block-kart-legends\n\n--------------------------------------------------------------------------------\nコンテンツとノート\n\nCatalyst の方向性は、このプロジェクトに関する次の声明をレビューし、チケット #9527 の下で記録しました。\n・リブランド Paima は EffectStream として再ブランドし、 Midnight Foundation の一部です。リンクは、これらのエンティティティティの名称で表示されることがあります。\n・スコープ.審査者の場合:マイルストーンと成果物は、承認された受諾基準に対して評価されるべきです。 各投稿の内容は、審査者評価の対象となります。例やさらなる実装は、技術的な進化を反映している可能性があります"
+    }
+  ]
+}

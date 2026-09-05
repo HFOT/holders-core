@@ -1,0 +1,94 @@
+{
+  "title": "Minswap + Fluid Tokens: a “smart token” DEX on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "A functional AMM v2.1 contract capable of supporting programmable token-like assets, adhering to the standards outlined in CIP113.",
+      "criteria": "・The DEX can list and facilitate trading of programmable token-like assets.\n・The AMM v2.1 contract correctly handles the lifecycle and interactions of these assets.\n・The DEX integrates seamlessly with the existing Cardano infrastructure and wallets.",
+      "report": "The first milestone has been completed and here the results:\n・Repository link\n・Docs link (docs have been updated based on feedback of reviewer)\n・First Video explaining the repository and the parts of the Dex link\n・Live Demo and Dex onchain\n・Contract for listing and delisting tokens link\n・Video demo and live demonstrations of the DEX functionality link\n・Onchain limit order link\n・Onchain cancel order link\n・Onchain swap order link \n\nFRONTEND IS NOT READY YET AND NOT SCOPE OF THIS MILESTONE, THE TRANSACTIONS WERE SUBMITTED USING COMMAND LINE, THAT'S WHY THEY DO NOT APPEAR IN THE DEMO VIDEO\n・Demo video using command line link\n\nThe contract is a fork of the current amm dex v2 that can be found here however the contract enforces that tokens can only be traded across CIP113 owners\nThis milestone was needed in order to generate the code for tokens cip113 in aiken and also to change the dex logic, the contract is already compatible with current cardano infrastructure and wallets because it's written in aiken and is a fork of a project already running in mainnet\nThe following milestone will connect the contracts and add more features, in milestone 3 we will also start the frontend part",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 100000,
+      "promise": "Separate additional parts of the \"main\" DEX smart contract (delivered in the first milestone) for the CIP113 tokens (such as where are the tokens sent from the DEX? to this contract to store them for the user) that is necessary for the solution",
+      "criteria": "- The additional smart contracts adhere to the CIP113 standards and best practices. \n- The contracts are internally tested and audited for security and functionality. \n- Integration with the DEX (the main DEX smart contract built in the first milestone) and other components is seamless.",
+      "report": "The second milestone has been completed and here the results:\nDex initialization:\n 21807dae524d3ad8ca8bf763258f43a6c808ab89714afce06858cd9f5b8a64b2\nPool Creation:\n e6892e76ffd8ae2793341d6ab3cecf43229224d74372252c06b5b8f76754276a\nREGISTER STAKE CREDENTIALS:\n cf4cace507152020b2ee32a9faa58153c3e62d02d18ad6c16885015330cd1baa\nCreate Order:\n 08da8828f8aef6203c499967c96842e9c1d3dc8c8307fcc603e0e9d450675320 (Buy)\n 3deea26af2aefa5102726dbd5d8cb06750df90dd836bf38f9d74703b92a210be (Buy)\n cc46d95b4dd392d18842274d380f10fa5bbb959f83f655d18b2749925a8617b8 (Sell)\n cab914aca4fb11f8ed0d736915cc77a756a0b3abd8baebb2a39c734b60849c2e (Sell)\nProcess Order (Batching):\n ---------------------------------------------------------------- (Buy)\n 872f3b8727eaf63f6a62c5b40ec13da5c147be9b31fcd4ea43a0a635c52ece1c (Buy)\n ---------------------------------------------------------------- (Sell)\n ab30bf2b53b1c9fd063d63a2407b4b7e1a4e95506680e5697d87c282603c2279 (Sell)\nCancel order:\n 690a35ba129fbd5da2c95692875d7c103ffe6c2e6c84c3f5ba52d1c843a1a329 (Buy)\n ---------------------------------------------------------------- (Buy)\n 5e3180fe619a96c2945cde7150ad30565b8a5a07ff2a3bb878d3383dcf4a5512 (Sell)\n ---------------------------------------------------------------- (Sell)\nAlso additional material\n・Repository link\n・Docs link \n・Code for the audit repository link, fork of Minswap dex link\n・Video explaining the repository and the parts of the Dex link\n・Contract for listing and delisting tokens link\n・Video demo and live demonstrations of the DEX functionality link\n・Onchain limit order link\n・Onchain cancel order link\n・Onchain swap order link \n・Audit report current state link\n\nThe contract is a fork of the current amm dex v2 that can be found here however the contract enforces that tokens can only be traded across CIP113 owners\nFixed as requested by the reviewers the links for the transactions to show the right network of the explorer\nAdded the repository of the code for the Audit, the Audit was performed on a fork of",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 22,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 100000,
+      "promise": "・Completed audits of the entire solution.\n・A secure and user-friendly frontend interface for the DEX.",
+      "criteria": "・One independent third-party audit identifies and addresses any potential vulnerabilities.\n・The solution meets the highest security and performance standards i.e., there are no major bugs identified in the audit report that has not been fixed.\n・The frontend provides an intuitive and accessible experience for users.",
+      "report": "The Third milestone has been completed and here the results:\nDex initialization:\n 21807dae524d3ad8ca8bf763258f43a6c808ab89714afce06858cd9f5b8a64b2\nPool Creation:\n e6892e76ffd8ae2793341d6ab3cecf43229224d74372252c06b5b8f76754276a\nREGISTER STAKE CREDENTIALS:\n cf4cace507152020b2ee32a9faa58153c3e62d02d18ad6c16885015330cd1baa\nCreate Order:\n 08da8828f8aef6203c499967c96842e9c1d3dc8c8307fcc603e0e9d450675320 (Buy)\n 3deea26af2aefa5102726dbd5d8cb06750df90dd836bf38f9d74703b92a210be (Buy)\n cc46d95b4dd392d18842274d380f10fa5bbb959f83f655d18b2749925a8617b8 (Sell)\n cab914aca4fb11f8ed0d736915cc77a756a0b3abd8baebb2a39c734b60849c2e (Sell)\nProcess Order (Batching):\n ---------------------------------------------------------------- (Buy)\n 872f3b8727eaf63f6a62c5b40ec13da5c147be9b31fcd4ea43a0a635c52ece1c (Buy)\n ---------------------------------------------------------------- (Sell)\n ab30bf2b53b1c9fd063d63a2407b4b7e1a4e95506680e5697d87c282603c2279 (Sell)\nCancel order:\n 690a35ba129fbd5da2c95692875d7c103ffe6c2e6c84c3f5ba52d1c843a1a329 (Buy)\n ---------------------------------------------------------------- (Buy)\n 5e3180fe619a96c2945cde7150ad30565b8a5a07ff2a3bb878d3383dcf4a5512 (Sell)\n ---------------------------------------------------------------- (Sell)\nMaterial already present:\n・Repository link\n・Docs link \n・Code for the audit repository link, fork of Minswap dex link\n・Video explaining the repository and the parts of the Dex link\n・Contract for listing and delisting tokens link\n・Video demo and live demonstrations of the DEX functionality link\n・Onchain limit order link\n・Onchain cancel order link\n・Onchain swap order link \n・Audit report current state link\n\nNew Material:\n・Audit updated at august 2025 link , this audit has fixed and aknowledged all the potential issues and fixed and is waiting for CIP113 to be officially live to be in FINAL version.\n・The audit had found a major issue that was also found in the parent contract in the code, the problem has been alleviated and the official response of",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 29,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "17",
+      "cost": 100000,
+      "promise": "A public testnet deployment of the solution, allowing for community testing and feedback.",
+      "criteria": "・The testnet is accessible to the public and showcases the full functionality of the solution.\n・Comprehensive documentation and support resources are available.\n・Community feedback is actively solicited and addressed.",
+      "report": "Output: Public testnet is available for everyone https://ft-minswap-cip113-testnet.minswap.org/\nAcceptance criteria: The testnet is public in a link hosted by minswap team \nEvidence:https://x.com/MinswapDEX/status/2012036199964446945 The testnet was launched for everyone and announced on socials \n\nOutput: Docs available for everyone https://github.com/FluidTokens/ft-cip-113/blob/main/docs/docs.md\nAcceptance criteria: Docs for testnet and solution is available\nEvidence: docs have been added to the same repository containing the audit reports in order to be easier to track\n\nOutput: Engagement and community feedback https://github.com/FluidTokens/ft-cip-113/blob/main/Smart%20token%20DEX%20community%20engagement%20logs.pdf\nLinks of the pdf\nhttps://x.com/FluidTokens/status/2011454417841864881?s=20\nhttps://x.com/MinswapDEX/status/2012036199964446945\nform:https://docs.google.com/forms/d/e/1FAIpQLScULCr5ZCacWv__-HIwAqC5EEGVLZ9Ia0_VBit_Pfcz_jT8LQ/viewform\nResults:https://docs.google.com/spreadsheets/d/1v5vQXhu6AlXCw8scvfNwqKxV3LHuPcO2A87oomtzpVs/edit?usp=sharing\nAcceptance criteria: feedback has been collected from the community and used to improve the solution\nEvidence: Feedback have been collected on google form and all the results are public for everyone",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 12
+    },
+    {
+      "no": 5,
+      "month": "19",
+      "cost": 24750,
+      "promise": "A private mainnet deployment of the solution, allowing for the team to verify the correct porting from testnet to mainnet.\nThe output will be a document describing the checks done and their results.",
+      "criteria": "・A private deployment on mainnet is deployed, team analysis of the flow and UI report expected behaviour",
+      "report": "CIP113 minswap dex is now live in mainnet private here:\nhttps://cip113-private-mainnet.minswap.org/ \nYou can buy cip113 tokens using real ADA creating an order and also selling them\nUser flow experience is described here with some screenshots:\nhttps://github.com/FluidTokens/ft-minswap-cip113-public/blob/main/UX_FLOW.md\nThe report and analysis of the flow UI is public and available here:\nhttps://github.com/FluidTokens/ft-minswap-cip113-public",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 6,
+      "month": "21",
+      "cost": 95250,
+      "promise": "・Final close-out report\n・Final closeout video\n・The successful deployment of the DEX and smart contracts on the Cardano mainnet, enabling the seamless integration of programmable assets-like tokens.",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・The full fledged LIVE AMM is public",
+      "report": "ORDER\nhttps://cardanoscan.io/transaction/fb561dee6bcd8fbf73e322b8b34d64851bc727a01d660268309e31d7586fb366\nSELL\nhttps://cardanoscan.io/transaction/e31851dc7b5913a087615b6bffaec61afcac04b262d0a9cc278b71ae33fec60e\nSEND\nhttps://cardanoscan.io/transaction/e59e3575f21f18269512c3485dd112b5bd9442da1086be01cf7910630bd070be\nBATCH ORDER\nhttps://cardanoscan.io/transaction/ac1c7143e22ad25c4ee4f51b24cec172a166163a0593ecaa13fd787c11531af8\nBATCH SELL\nhttps://cardanoscan.io/transaction/c42e31c5ee2bc95a9c97d0063c75e69c77f6251c77d3908fa68503e9dbedd41e\nCloseout report:\nhttps://github.com/FluidTokens/ft-minswap-cip113-public/blob/main/Closeout_1200150_CIP113_DEX.pdf\nCloseout video:\nhttps://youtu.be/R3iT1FZ1jhE\nPublic repository:\nhttps://github.com/FluidTokens/ft-minswap-cip113-public/tree/main\nPublic dex link\nhttps://stoken.minswap.org/",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 18
+    }
+  ]
+}

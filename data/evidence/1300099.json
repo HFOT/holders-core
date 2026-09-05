@@ -1,0 +1,49 @@
+{
+  "title": "Extend Open-Source Yoroi wallet to support seamless mobile Cardano dApp integration",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 15000,
+      "promise": "Open-source repository with the completed wallet integration code for one operating system (either Android or IOS). The next milestone will focus on the 2nd operating system.",
+      "criteria": "An app running on the same mobile device as the Yoroi can interact with the Yoroi wallet to request the user to sign a transaction, after user confirms, the transaction is signed and submitted to the blockchain.",
+      "report": "This milestone has achieved an iOS app running on the same mobile device as the Yoroi Wallet and seamlessly collaborating with the Yoroi Wallet to request the user to sign a transaction to interact with a smart contract. After going through the normal transaction signing process and user confirmation, the transaction is signed and submitted to the blockchain. It supports both sending transaction to a contract and redeeming from a contract.\n\nThe video showing a savings demo iOS app interacting with smart contract using Yoroi Wallet:\nhttps://youtu.be/AJpkn94gqc4\n\nThe open-source repository with the completed wallet integration code in the feature/contract-spend branch:\nhttps://github.com/bricktowers/yoroi/tree/feature/contract-spend\n\nThe transactions created during the demo:\nhttps://preprod.cardanoscan.io/transaction/b57747c11e885674f3b6c20cf87496f1261867390e2543e623ec453aaf8bd0a9\nhttps://preprod.cardanoscan.io/transaction/1f188769b1ff47d20e412f02fe56aa79eaae016e2da0d7a0eea2a77b53d5a040",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 15000,
+      "promise": "Open-source repository with the completed wallet integration code for the 2nd operating system. The repository will contain code supporting both Android and iOS after completing this milestone.",
+      "criteria": "An app running on the same mobile device as the Yoroi can interact with the Yoroi wallet to request the user to sign a transaction, after user confirms, the transaction is signed and submitted to the blockchain. Both iOS and Android are supported.",
+      "report": "This milestone has achieved an Android app running on the same mobile device as the Yoroi Wallet and seamlessly collaborating with the Yoroi Wallet to request the user to sign a transaction to interact with a smart contract. After going through the normal transaction signing process and user confirmation, the transaction is signed and submitted to the blockchain. It supports both sending transaction to a contract and redeeming from a contract.\nThe video showing a savings demo Android app interacting with smart contract using Yoroi Wallet:\nhttps://youtu.be/ygR_lZHCuag\nThe open-source repository with the completed wallet integration code in the feature/contract-spend branch:\nhttps://github.com/bricktowers/yoroi/tree/feature/contract-spend\nThe transactions created during the demo:\nhttps://preprod.cardanoscan.io/transaction/f01fa05e1793f97a2509949fdff77045441d957facd2b9caa2ad94fa0276d653\nhttps://preprod.cardanoscan.io/transaction/e3c926592ebfcc1b01d3b347d60a9c350c4eb096c977acf0d955181bc4df153e",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 20000,
+      "promise": "・Code examples how to use the integration in a public GitHub repository\n・Documentation on how to integrate mobile dApps with Yoroi in a public GitHub repository \n・Final close-out report\n・Final closeout video",
+      "criteria": "・Code examples are publicly available\n・Documentation is publicly available\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "This Proof of Achievement covers the final milestone, \"Examples and Documentation\". It completes the project: milestones 1 and 2 delivered the mobile signing integration for iOS and Android respectively, and this milestone delivers the documentation, code examples, close-out report and close-out video that make that work usable by other developers.\nAll materials are published under Apache-2.0 in the public repository below, on the feature/contract-spend branch.\n\nA. Output: Code examples showing how to use the integration, in a public GitHub repository.\nAcceptance criteria: Code examples are publicly available.\nEvidence: https://github.com/bricktowers/yoroi/tree/feature/contract-spend/examples\nThe repository contains the example mobile application used to record the milestone 1 and milestone 2 demonstrations, with build and run instructions, together with integration recipes covering each supported use case: requesting an ADA payment, requesting an ADA payment with a link, requesting a contract spend, and launching a dApp in the wallet browser. Each recipe shows the code that constructs the link and the wallet screen it opens. Shell scripts for issuing deep links to a booted iOS simulator or Android emulator are included so the flow can be exercised without a physical device.\nRecipes: https://github.com/bricktowers/yoroi/tree/feature/contract-spend/docs/mobile-dapp-integration/recipes\n\nB. Output: Documentation on how to integrate mobile dApps with Yoroi, in a public GitHub repository.\nAcceptance criteria: Documentation is publicly available.\nEvidence: https://github.com/bricktowers/yoroi/tree/feature/contract-spend/docs/mobile-dapp-integration\nThe documentation covers the integration model, a quick start, the complete link reference for the yoroi:// and https://yoroi-wallet.com/w1 schemes, a full parameter reference for the transfer/request/contract-spend use case, the return path to the calling dApp via redirectTo including Universal Link and App Link configuration,",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 27,
+      "cut": true
+    }
+  ]
+}

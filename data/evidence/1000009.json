@@ -1,0 +1,95 @@
+{
+  "title": "Allow using NFTs from Cardano and other ecosystem in onchain games hosted in the Cardano ecosystem",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Finish writing the Projected NFT Aiken smart contract as specified in the documentation as well as a Github CI check that the contract compiles successfully",
+      "criteria": "Completed smart contract with accompanying documentation",
+      "report": "Video: https://drive.google.com/file/d/1GGOZ_IMG7HEZyw0szREHt2XAxc1FgHtN/view?usp=sharing\nAiken smart contract code: https://github.com/PaimaStudios/projected-nft-whirlpool/blob/main/cardano/validators/hololocker.ak\nDocumentation: https://docs.paimastudios.com/home/multichain-support/nfts/projected-nfts/basics",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 115000,
+      "promise": "・ Write a library to easily interact with the contract from Javascript",
+      "criteria": "A Rust & JS library to easily interact with the contract",
+      "report": "Video: https://drive.google.com/file/d/1aLZ-zoZX9wm3B9zlsLQF1RwJsqWcNDtk/view?usp=sharing\nRust/WASM/JS code on Github: https://github.com/PaimaStudios/projected-nft-whirlpool/tree/main/cardano/sdk\nNPM package for JS use from browsers: https://www.npmjs.com/package/@paima/cardano-projected-nft-browser\nNPM package for JS use from nodejs: https://www.npmjs.com/package/@paima/cardano-projected-nft-nodejs",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 115000,
+      "promise": "Implement a Carp task (an indexer) to track NFT Locks / unlocks",
+      "criteria": "A Carp task that allows indexing NFT status changes for Projected NFT contract address",
+      "report": "Video: https://drive.google.com/file/d/1XVaoQmhaNCkLekV7k1HafeRzZ24piHRe/view?usp=sharing\n\nCarp (indexer) on Github: https://github.com/dcSpark/carp/\nCarp task: https://dcspark.github.io/carp/docs/indexer/Tasks/MultiEraProjectedNftTask\nCarp endpoint (REST): https://dcspark.github.io/carp/openapi#operation/ProjectedNftRange",
+      "kinds": [
+        "code",
+        "doc",
+        "live"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 115000,
+      "promise": "・Write the full dApp to easily project NFTs and manage which NFTs you have projected",
+      "criteria": "・A website you can access to see and manage your projected NFTs",
+      "report": "Regarding the Comments of POA\n・Sorry, I though you saw a Markdown format. We have been sending a lot of POAs lately - I will format them correctly now with this tool. Happy to make the process easier.\n・I've requested to turn of the deprecated live code versions.\n\nNow regarding the change request. To not go through the process we have been actively working on:\nA) Reporting the original code and links, to match the criteria.\nB) Rewriting, in a more modern way the solution. There has not been any change regarding the goals, we wanted just to be transparent about naming and delays. \nThe delays are from two major sources.\n・Merging with the foundation has been a very long process to get this project to this state to be able to deliver.\n・Second, we took some time on updating the core infrastructure to allow using Cardano.\n・We originally where syncing thought the CARP indexer, but was expensive for third parties to run an instance. We could of delivered some running example to complete the milestone, but it would not be useful for the community. \n・We started working with UTXORPC to get the standard where we needed, and also supporting Dolos, an implementation of the UTXORPC. This took over more than a year to get all aligned, delivered and in production.\n・Then we finally could integrate the UTXORPC standard into EffectStream and make any application possible in a EffectStream dpp.\n・Now given all the technological changes over time, we rewrote the templates, documentation, blog, branding and more. \n・And extended this contribution to allow developers to easily develop apps in the Cardano ecosystem locally.\n\nGiven this, we did all the possible to deliver the original evidence, plus the new version that actually delivers quality software, standard and integrations for the Cardano Community and has technically implemented this milestone.\n\nContext\nPaima Studios merged into the Midnight Foundation, and Paima Engine was rebranded as EffectStream. We have rewritten the entire codeba",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 35,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 132500,
+      "promise": "・Leverage work done in the “Powering onchain game functionality using Cardano stakepools” Catalyst proposal to connect the Carp task to Paima",
+      "criteria": "・ Implement support for detecting projected NFTs in Paima itself",
+      "report": "In response to PoA comments\n・In notes the comments reflecting the name change\n・Previous milestone is completed\n・We have created a video for this Milestone and reordered material\n\nThanks for the feedback.\nBrief\nThis milestone connects projected-NFT detection into the funnel, delivered as the CardanoProjectedNFT primitive in EffectStream, with documentation and a runnable template. The Cardano Primitive observes Lock -> Unlock -> Claim transitions at the Hololocker Plutus script, materialises them through EffectStream's IVM into a queryable PostgreSQL view, and surfaces them to game state machines as first-class Cardano events. This leverages Cardano Stake Pools by implementing a new Primitive with the same structure making the engine reusable to a any Cardano event.\n\n1. Video - the projected-nft-preorder template, full Lock/Unlock/Claim flow with the primitive emitting events\nhttps://youtu.be/cQ_eM5PhSvc\n\n2. Documentation & write-up:\nCardano Primitives reference (PrimitiveTypeCardanoProjectedNFT - config, payload fields, IVM view name):\nhttps://effectstream.github.io/docs/home/chains/cardano#projected-nft-primitivetypecardanoprojectednft\nCardano Primitives blog (architecture across all five primitives):\nhttps://effectstream.github.io/docs/blog/cardano-primitives\nProjected NFTs blog (Aiken contract + dApp + primitive, end to end):\nhttps://effectstream.github.io/docs/blog/projected-nfts\n\n2. Code (the connection to the funnel):\nCardanoProjectedNFT primitive source:\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src/cardano-projected-nft\nAll five Cardano primitives:\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src\nSibling pool-delegation primitive that established the architecture:\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src/cardano-pool-delegation\nTemplate implementing the primitive (projected-nft-preorder):\nhttps://github.com/effectstre",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 17,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 97500,
+      "promise": "Project Close Report:\n・pdf report\n・video report",
+      "criteria": "Community has the access to PCR.",
+      "report": "NOTE: Due to short timelines for this project, we have submitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA.\nIn response to PoA comments:\nThank you for the review. This close-out follows the Fund 10 PCR/PCV guideline: the close-out video is a YouTube link, and the close-out report is a PDF in the Catalyst format. timeline is discussed in NOTES and verified by the formal attached acknowledgment.\nBRIEF\nThe project delivered NFT projection for Cardano end to end: the Hololocker Plutus contract (lock/unlock/claim), the dApp, the CardanoProjectedNFT primitive reading the script reading the UTxORPC into game state machines, and the projected-nft-preorder template as complete runnable Cardano stack.\nLINKS TO REVIEW\n1. Close-out video \nhttps://youtu.be/VM3LC49zrL4\n\n2. Close-out report \nhttps://drive.google.com/file/d/1kk4pIheM8NirDLaOkwIWxlAV5tyccMTj/view?usp=drive_link\n\n3. OPTIONAL Delivered work (for reference):\nCardanoProjectedNFT primitive:\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src/cardano-projected-nft\nprojected-nft-preorder template:\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/projected-nft-preorder\nWrite-ups:\nhttps://effectstream.github.io/docs/blog/projected-nfts\nhttps://effectstream.github.io/docs/blog/cardano-primitives\nM5 demo video\nhttps://youtu.be/cQ_eM5PhSvc\n\n----------------------------------------------------------------\nCOMMENTS AND NOTES\n\n[summary of text] Catalyst Direction has reviewed and agreed on the following statement regarding this project and recorded under ticket #9527\n・Rebrand. Paima has rebranded as EffectStream and is part of the Midnight Foundation; links might now appear under the name of either of these entities. \n・Scope. For reviewers: milestones and deliverables should be evaluated against the approved acceptance criteria. The contents of each submission remai",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 15,
+      "cut": true
+    }
+  ]
+}

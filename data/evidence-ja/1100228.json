@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・kubernetes リポジトリ: 開発環境や負荷バランサで生産環境のために構成されているkubernetesアプリクラスターの動作のためのフォルダ、ファイル、スクリプト、およびマニフェスト。\n・フロントエンドメイン: 訪問者やコミュニティがコミュニティによって公開された製品と相互作用できるようにするdappの主要なフロントエンドサービス。\n・フロントエンド販売店:売主様のみの二次フロントエンドサービス。 売主アカウント、製品在庫、製品スロットを管理することができます。 (販売店ダッシュボード)\n・サービス利用者:ユーザーアカウントの管理のためのC.R.U.Dサービス.",
+      "criteria": "1。 kubernetesリポジトリ:リポジトリのコンテンツは、Kubernetesアプリケーションの基本的なサービスを展開するのに十分であり、 README.mdはLinux上のインストールの手順を含む必要があります。 これは、ロードバランサで開発と生産環境のためのマニフェストを含む必要があります。\n\n2. フロントエンド・メイン:\nお問い合わせ サービスは、ヘッダー、バナー、製品グリッドでメインページを表示する必要があります。 ヘッダー\n訪問者の国の言語とフラグを示す地理的な位置ボタンを含める必要があります。\nCardanoウォレットを使用するボタンも含まれている必要があります。\n. . インターフェイスは応答性でなければなりません",
+      "report": "こんにちは、レビュー担当者。 問題を解くことができました。 フロントエンドは、リクエストされたURLで動作します。 SSL証明書のプロンプトの場合、ブラウザに「thisisunsafe」を入力してください。\nhttps://pairfy.dev\nhttps://dashboard.pairfy.dev\n\nhttps://github.com/pairfy/marketplace のサイト\nこの動画で進捗状況を確認できます。 開発環境(.dev)\nhttps://drive.google.com/file/d/1LqGJQO0H6RtzkJTUr1AX0QSTR6SjbD/view?usp=sharing\n\n(4). サービス利用者\nhttps://drive.google.com/file/d/1bDcsZuoJJJDirkRieHZ4XAJT5voQA2tF3/view?usp=sharing\n\nこんにちはレビュアー、あなたの詳細なレビューのためにありがとうございました。 指示された補正を追加します。 ありがとうございます."
+    },
+    {
+      "no": 2,
+      "promise": "・場所サービス: 訪問者や潜在的な買い手がその地域で公開された製品を表示する場所にあるエリアコードを識別することができます。\n・商談会のページビュー: 売り手、買い手、そして最終的には仲介者の間で双方向通信を可能にするフロントエンドページです。\n・ライブチャットウェブソケットサービス: 売主、買い手、最終的には仲介者が参加するWebsocketを介して双方向通信を可能にするバックエンドサービスです。\n・仲介者アカウントサービス:仲介者アカウントの管理のためのサービス.",
+      "criteria": "・場所サービス: 訪問者の公開アドレスをとり、ISO 3166-1のコードを決定し、その地域から製品を表示します。\n・商談会のページビュー: 買い手は交渉セッションを開き、売り手と通信することができる必要があります。 報道関係者は、訴えの時に伝えられる必要があります。\n・ライブチャットウェブソケットサービス: バックエンドサービスは、ネゴシエーションセッションのリクエストに応答し、双方向通信と最終的に仲介者を可能にする、永続的に無料のWebソケットインスタンスの確立を可能にします。\n・仲介者アカウントサービス:サービス全般",
+      "report": "こんにちはレビュアー、私は次のコミットでマイルストーン1のための勧告を追加しました、おかげで: 1d4868fa4dc7cf522a9cff3fb3dd8234d8d51c00\n・場所: 8eefde695e93b40040987f459f3080a95632f19c\n・商談会のページビュー:ef7899a9bf63a5f45bb5093fb8b7148d6fda8858\n・ライブチャット websockets サービス: 8d98e6afaa73bebf44c7ee2bb80c8e7d60815e5f\n・仲介者アカウントサービス:ce6300ae354e2e2a130c7847ca011288e1e8aa67\n\nリポ: https://github.com/pairfy/marketplace\n動画: https://drive.google.com/file/d/1-FmRwgATZx6Mp8xLpz6KH jN4 B1YbXa/view?usp=sharing"
+    },
+    {
+      "no": 3,
+      "promise": "それが生産に展開される準備ができていることを示すyoutubeのビデオは、ローカル(プロポーザーコンピュータ)のペアフィーの動作を示す。 すべての機能を表示.",
+      "criteria": "ローカルminikubeモード(デベロッパーコンピュータ)で展開する動画で、ディジケーンでの展開準備が整ったペアフィーのローカル操作を表示します.",
+      "report": "こんにちはレビュアー。 ローカルで稼働しているPairfyのビデオを共有しています。実際のkubernetesクラスターを使用して、Digitaloceanで統合テストを開始します。 このプロセスは、アプリケーションを完璧にし、公開する必要があります。 お問い合わせ ありがとうございます。\nビデオのリンク:\nhttps://drive.google.com/file/d/1oRuOXPHiogF1N IksEJNfD-oy4kbOlxJ/view?usp=sharing\nhttps://www.youtube.com/watch?v=jkmYpcsl4nQ\nGithub コミット: \"Released V1.0\" というコミットで github リポジトリのリンク\nhttps://github.com/pairfy/marketplace/commit/c42bd191919ba37be9d531d3199317229a0fdb2575"
+    },
+    {
+      "no": 4,
+      "promise": "・開発されたマイルストーンのすべての要件で更新されたリポジトリ。\n・売主・買い手・仲介役の運用フローの動画 (最終クローズアウトビデオ)\n・メディア投稿におけるログ、問題、提案、予測の開発 (最終クローズアウトレポート形式)",
+      "criteria": "・開発されたマイルストーンのすべての要件で更新されたリポジトリ。 リポジトリには、マイルストーンに確立されたすべての要件が含まれている必要があります。\n・売主、買い手、仲介者の役割の動作の流れの動画 前各開発段階の概説と各役割の具体的な説明。 フロントエンドのユーザー、販売者および仲介者UIXの一般および特定の説明。 バックエンド操作の流れの説明。\n・メディア投稿におけるログ、問題、提案、予測の開発 それは開発のクロノロジー的記述を持っている必要があります",
+      "report": "開発されたマイルストーンのすべての要件でリポジトリを更新。\nhttps://github.com/Pairfy-DAO/pairfy\n最終クローズアウトビデオ\nhttps://www.youtube.com/watch?v=f1lCRxHEJlY\n最終クローズアウトレポート形式\nhttps://docs.google.com/document/d/1Gh5Y9dHmd9D5OZWmGQl8 DrLgspid7/edit?usp=sharing&ouid=110437720479384147921&rtpof=true&sd=true\nhttps://medium.com/@sudo.delete.evil/pairfy-cardano-native-marketplace-catalyst-project-close-out-report-e1eb999c0fe0"
+    }
+  ]
+}

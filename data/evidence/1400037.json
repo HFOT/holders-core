@@ -1,0 +1,48 @@
+{
+  "title": "Cardanoscan API SDK - Python",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 19200,
+      "promise": "・Python Project Setup\n・Add support for authentication\n・Implement API Wrapper methods\n・wrapper methods written with Async support and sync support\n・include error handling\n・Implement below API methods to fetch data as part of wrapper methods\n・Address APIs\n・ADA Balance API\n・Asset APIs\n・get assets balance by address\n・get asset details\n・get assets by policy ID\n・get asset holders by policy ID\n・get asset holders by asset ID\n・Block APIs\n・get block details\n・get latest block\n・Network APIs\n・get network details\n・get network protocol details\n・Unit test cases",
+      "criteria": "・Authentication with Cardanoscan API Service integrated\n・Data fetching wrapper methods implemented for all of the APIs as described in the output section and verifiable via a public GitHub PR\n・API wrapper methods written with both async and sync support\n・API wrapper methods support error handling\n・Unit test cases available in PR",
+      "report": "A. Output: Python Project Setup\nAcceptance criteria: Github Repo with SDK setup\nEvidence:\nhttps://github.com/StricaHQ/cardanoscan-python\nhttps://github.com/StricaHQ/cardanoscan-python/pull/1\n\nEvidence for all remaining Outputs - complete pull request links, I have tried to link to relevant commits further with the below per output sections as well. I believe reviewing the complete pull request gives a better view.\nhttps://github.com/StricaHQ/cardanoscan-python/pull/2\nhttps://github.com/StricaHQ/cardanoscan-python/pull/3\n\nB. Output: Add support for authentication\nAcceptance criteria: Authentication support added\nEvidence: https://github.com/StricaHQ/cardanoscan-python/pull/2/commits/458f88f0aa53a9ad9d880798e5a7e07a3a89add5\n\nC. Output: Implement API Wrapper methods\nAcceptance criteria: data fetching wrapper methods added\nEvidence: https://github.com/StricaHQ/cardanoscan-python/pull/2\n\nD. Output: Wrapper methods with async and sync support\nAcceptance criteria: sync and async support in base sdk class added\nEvidence: https://github.com/StricaHQ/cardanoscan-python/pull/2/commits/a4ce0cbc660102a95a8acd46b3f227e1d29e8fdc\n\nE. Output: Error handling support\nAcceptance criteria: Error handling added\nEvidence: https://github.com/StricaHQ/cardanoscan-python/pull/2/commits/455342c55567e597e0e6c22a0bcbe98ea147aa0a\n\nF. Output: Add Address APIs\nAcceptance criteria: address APIs implemented\nEvidence: https://github.com/StricaHQ/cardanoscan-python/pull/2/commits/d5344e2910bf2340060b3cfd6d5aa5ad35828467\n\nG. Output: Add Asset APIs\nAcceptance criteria: Asset APIs implemented\nEvidence: https://github.com/StricaHQ/cardanoscan-python/pull/3/commits/8319366fd421b59900d3f6829ea244c2bcae5d04\n\nH. Output: Add Block APIs\nAcceptance criteria: Block APIs implemented\nEvidence: https://github.com/StricaHQ/cardanoscan-python/pull/3/commits/8319366fd421b59900d3f6829ea244c2bcae5d04\n\nI. Output: Add Network APIs\nAcceptance criteria: Network APIs implemented\nEvidence: https://github.com/StricaHQ/cardanosc",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 30,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 19200,
+      "promise": "・Implement API Wrapper methods\n・wrapper methods written with Async support and sync support\n・include error handling\n・Implement below API methods to fetch data as part of wrapper methods\n・Pool APIs\n・get stake pool details\n・get stake pool stats\n・get stake pools list\n・get pools which are set to expire\n・get expired pools\n・Reward Account APIs\n・get stake key details\n・get addresses by stake key\n・Transaction APIs\n・get transaction details\n・get transactions list by address\n・submit transaction\n・get transaction summary\n・Test cases",
+      "criteria": "・All of the APIs as described in the output section are integrated and verifiable via a public GitHub PR\n・All APIs wrapper methods support async and sync\n・unit test cases added in PR",
+      "report": "A. Output: implement API Wrapper methods\nAcceptance criteria: verifiable via public GitHub PR\nEvidence: https://github.com/StricaHQ/cardanoscan-python/pull/4\n\nB. Output: Error handling is implemented (This was already done in Milestone 1 within the SDK class)\nAcceptance criteria: verifiable via public GitHub PR\nEvidence: https://github.com/StricaHQ/cardanoscan-python/pull/2\n\nAll of the outputs are part of the PR above, below are the commit breakdown within the PR\n\nC. Output: Pool APIs, Reward Account APIs, Transaction APIs\nAcceptance criteria: required output is implemented and verifiable via a public GitHub PR\nEvidence: https://github.com/StricaHQ/cardanoscan-python/pull/4/commits/c5b2f16dc93ee0cb6c3c09c677760639fbc43c7b\n\nD. Output: Test cases\nAcceptance criteria: Test cases written and verifiable via a public GitHub PR\nEvidence: https://github.com/StricaHQ/cardanoscan-python/pull/4/commits/737ba4baf6f716da6c30e8ae90251b409fb8e788\n\nE. Output: Short video demo\nAcceptance criteria: short video demo provided to verify the implementation\nEvidence: https://youtu.be/brrbCao-3m0",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25600,
+      "promise": "・Release the SDK package on PyPI\n・API documentation\n・SDK listed on Cardanoscan API Service website\n・X announcement of Python SDK from Cardanoscan official X handle\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Python SDK package available on PyPI public URL\n・API documentation available on a public URL\n・Link to Cardanosca API service page which lists the SDK\n・Python SDK release announcement on X\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Open source License added to the repo, https://github.com/StricaHQ/cardanoscan-python\n\nA. Output: Release SDK on PyPi\nAcceptance criteria: Python SDK package available on PyPi\nEvidence: https://pypi.org/project/cardanoscan-python/\nB. Output: API Documentation\nAcceptance criteria: API Documentation available on public URL\nEvidence: https://docs.cardanoscan.io/\nC. Output: SDK Listed on Cardanoscan Website\nAcceptance criteria: Python SDK listed on Cardanoscan website\nEvidence: https://cardanoscan.io/api (header section banner and second section, below the example)\nD. Output: X announcement of the SDK release\nAcceptance criteria: SDK release announced on X via official Cardanoscan handle\nEvidence: https://x.com/cardanoscanio/status/2008139221232763236\nE. Output: close out report\nAcceptance criteria: close out report is available\nEvidence: https://drive.google.com/file/d/1rPc2ZDjLyNBf9mpcF4mJUGdmkZ_nGwxN/view?usp=sharing\nF. Output: close out video\nAcceptance criteria: close out video is available\nEvidence: https://youtu.be/hQ6KglpYdyw",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

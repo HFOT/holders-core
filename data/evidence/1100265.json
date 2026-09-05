@@ -1,0 +1,34 @@
+{
+  "title": "Stargazer: DeFi Yield Optimizer for Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 30000,
+      "promise": "(1) Integration of the liquidity pair (LP) tINDY/ADA and SundaeSwap as an integrated decentralized exchange (DEX) in which the money is invested.",
+      "criteria": "(1) The user can deposit the ADA into the Stargazer platform. After that, the ADA gets converted into LP. Then, the LP gets automatically invested into the SundaeSwap DEX.",
+      "report": "Demo Video (without audio): https://drive.google.com/file/d/1NkySk4Z16HquXA7l5ap--v5MEC0D-WP4/view?usp=sharing\nBelow, I’ve provided the transaction hashes of the transactions that happened in the demo video.\nThe demo is only available on the preview network. To check the transactions, you can use for example this explorer: https://preview.cexplorer.io/tx/2d024a39ef0fcfe7baa12c7128adb4500e63d26fc9b7edc39a6201ddcba324a7\nOnly the first transaction needs to be signed by the user for the deposit and withdrawal orders. The rest is automated.\nDeposit Order:\n・Initialization of the deposit by sending ADA from the user to Stargazer (needs to be signed by the user): 2d024a39ef0fcfe7baa12c7128adb4500e63d26fc9b7edc39a6201ddcba324a7\n・Zap in ADA to SundaeSwap to get a Liquidity Pair (LP) of ADA and tINDY: 5b64f25f7eb006c44e1460bb9e520daa2bfda83aeb84dce00aa3f7852d6701a0\n・Mint a receipt for the user: 360a022c524b910156581a42602583ec186e049fa3455d6b3ad47c695ae63a3d\n・Yield Farming Deposit: 063518d0da65e196c9407305f22b3aa8d289f4b14c1e55facccef8f46061cfb0\n\nWithdrawal Order:\n・Initialization of the withdrawal by sending the receipt to Stargazer (needs to be signed by the user): 4efd762b18142c90cd5d7b3b35d18fc11abf98c7b48b14ad3f60bc7f2a9241a2\n・Yield Farming Withdraw: 33ffaae2a80ba7d580de4147f7c2e5a0f612bdfee82d9f1692f986126b3a9fff\n・Burn the receipt: 89f0bae76e489f0b6db8798647a82389207b03b9fe70b80654c8147cc56e16a4\n・LP Withdraw, where SundaeSwap swaps the LP Tokens back to ADA and tINDY: f6646a6ef52f1822ff1ba1b5858a9f5440deba1cf6443949797d37e6bef2acfb\n・Swap tINDY back to ADA: caffbbc3a2075b5944110cb5984d384573b04a81d8b59000aa25de3945ae7fd7\n・Send all ADA back to the user: 324603950c33bcf5e0ec9b4da0891e197795280c345bb70894875d8ea41823ad\n\nYou can try out the website yourself by visiting: https://stargazer.finance/vaults/tINDY-ADA",
+      "kinds": [
+        "chain",
+        "doc",
+        "other"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 30000,
+      "promise": "(1) Improve the user interface to have an additional risk assessment tool. This will assign each yield farming strategy a risk score helping the user to choose according to their personal needs.\n(2) Integration of at least two more liquidity pairs to the platform, namely SBERRY/ADA, iUSD/ADA.",
+      "criteria": "(1) In the user interface, each strategy has an assigned risk score (low, medium, or high risk) indicating the involved risk of it. This is clearly visible in the overview of all strategies and can help the user to make a decision. The risk score will be calculated by combining the popularity of the underlying tokens (market capitalization and monthly trading volume) and the Xerberus score of the team that created the tokens.\n(2) The user can deposit two additional LPs into the Stargazer platform, namely SBERRY/ADA, iUSD/ADA. After that, the LPs get automatically put into the DEX.",
+      "report": "A. Output: Improvement of the user interface to have an additional risk assessment tool. This will assign each yield farming strategy a risk score, helping the user to choose according to their personal needs.\nAcceptance criteria: In the user interface, each strategy has an assigned risk score (low, medium, or high risk) indicating the involved risk of it. This is clearly visible in the overview of all strategies and can help the user to make a decision. The risk score will be calculated by combining the popularity of the underlying tokens (market capitalization and monthly trading volume) and the Xerberus score of the team that created the tokens.\nEvidence:\n・Video recording: https://drive.google.com/file/d/1eXS8wBXbtwBpJCxALI6Zy8dYQo3genGQ/view?usp=sharing: it shows the vaults overview page where each strategy displays a color-coded risk badge (green = low risk, yellow = medium risk, red = high risk) with a numeric score, the filter/sort functionality by risk level, and the breakdown modal showing how the 3-factor calculation (market cap, monthly trading volume, Xerberus rating) produces the final score.\n・Risk methodology endpoint: https://api.stargazer.finance/risk/methodology returns the full scoring configuration, including market cap thresholds, volume thresholds, Xerberus rating mappings, and factor weights, allowing reviewers and users to verify how each risk score is calculated.\n\nB. Output: Integration of at least two more liquidity pairs to the platform, namely SBERRY/ADA and iUSD/ADA.\nAcceptance criteria: The user can deposit two additional LPs into the Stargazer platform, namely SBERRY/ADA and iUSD/ADA. After that, the LPs get automatically put into the DEX.\nEvidence:\n・Video recording: https://drive.google.com/file/d/10DhYi5HLmAqz7WfP4a7_zj6VuQkmCoIK/view?usp=sharing: it demonstrates depositing ADA into both the SBERRY/ADA vault (SBERRY ADA Vault) and the iUSD/ADA vault (Indigo USD ADA Vault), with each deposit followed by automated reinvestment transacti",
+      "kinds": [
+        "chain",
+        "doc",
+        "other"
+      ],
+      "links": 10,
+      "cut": true
+    }
+  ]
+}

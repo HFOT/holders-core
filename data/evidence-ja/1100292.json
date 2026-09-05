@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "オープンソースパッケージと簡略化されたAPIサービスの両方を有効にするには、次の出力が完了します。\n1) github で公開された Cardano ノードのドライバの実装を作成します。\n2) ジットハブで公開された分散型取引所契約のためのコレクターの実装を作成します。\n3) REST API エンドポイントを更新 (既に集中型取引所から引き出す)、 github で公開された分散型取引所を含む.",
+      "criteria": "ドライバとコレクターは、最新のCardanoノードバージョンと互換性があります。\nREST API は、新しいドライバとコレクターとうまく統合します。\nすべてのコンポーネントは、重要なバグなしでテストを通過します.",
+      "report": "1) github で公開された Cardano ノードのドライバの実装を作成します。\n当社のドライバーは、ブロックフロストJavascript SDKを利用しています。\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/lib/domain-collectors/integrations/udex/BaseCardanoDriver.js#L4\n現在、最新のブロックフロストjsリリース 5.5.0 を使用しています。\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/package.json#L84\nhttps://github.com/block フロスト/ブロックフロスト-js\n2) ジットハブで公開された分散型取引所契約のためのコレクターの実装を作成します。\nコレクタの実装は、データの取得と保存方法のスケジューリング、通信、および処理を処理します。 DEXからデータを取り出し、データベースに保存する交換レートコレクターを作成しました。\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/lib/domain-collectors/collectors/ExchangeRateCollector.js\nまた、ミンスワップ、ムエスリスワップ、サンダエ・スワップ、Vyファイナンス、ウィング・ライダーのデックス・コントラクト・ドライバーも実施しました。\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/tree/main/configs/udex/cardano/exchanges\n3) REST API エンドポイントを更新 (既に集中型取引所から引き出す)、 github で公開された分散型取引所を含む。\nREST API を更新し、為替レートデータを取得するためのエンドポイントを含めるため、ドキュメントはリポジトリで利用できます。\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedインフラ/blob/main/docs/api/rest/exchange-rates.md\nテストスイートを実装したコード品質を検証するため\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/tree/main/tests/\n試験手順は、こちらをご覧ください。\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/docs/quick-start.md#testing-procedures\n現在、100%のラインカバレッジがあります。 すべてのテストが渡され、重要なバグが見つかりません。\nhttps://drive.google.com/drive/folders/1Z5uGWI"
+    },
+    {
+      "no": 2,
+      "promise": "出力は、過去のデータ取得スクリプトとそれの文書を github で実装します。 お問い合わせ\n・関連するペアの歴史的価格設定データの公開可能なソースを特定します。 集中型取引所とWolframと潜在的な顧客に関連するペアのリストを作成します。\n・これらのソースからスクリプトをエッチングするデータ\n・完全なテスト",
+      "criteria": "履歴データ取得スクリプトは運用され、取得されたデータの収集、保存および使用を可能にします。 出力の期待される機能は次のとおりです。\n・Wolframと潜在的な顧客に関連する一元化された取引所とペアのリスト。\n・履歴データ取得スクリプトは、決定した期間の中央取引からデータを収集することができます。\n・スクリプト機能を示す受入試験.",
+      "report": "1集中型取引所と関連するペアのリストのPDF\nhttps://drive.google.com/file/d/1mWsw5TrH5um JlgIit78S6foUnetVoay/view?usp=drive link\n2 過去のデータ取得スクリプトの機能と文書を github で実証する短いビデオ\nhttps://drive.google.com/file/d/1e Dk0qD0ykOz65G-agv42QZSf50yV4dl/view?usp=drive link\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/0c9c107ad5fce8032f81d3e392b13098e900fa95/docs/quick-start.md#running-historical-collection\n3 テスト出力のスクリーンショット\nこの機能に対応したテスト: HistoricalScheduler.spec.js\nhttps://drive.google.com/file/d/1JUyowp1OaSO7-BC1mzqT5vfn-j6o9PFu/view?usp=sharing"
+    },
+    {
+      "no": 3,
+      "promise": "システム堅牢性は、コードベースとコミュニティの貢献のエラー処理を可能にすることです。\nシステム堅牢度マイルストーンの出力は 1) コミュニティコントリビューターの複雑性を減らすテストプラットフォームのリファクタリングです。 2) ドライバーのエラーを処理します。 3) データ収集の間隔精度を向上 - githubで公開します.",
+      "criteria": "システムの堅牢性は、エラー処理、テストプラットフォームの利便性にレジリエンスを持ち、コミュニティの適応/貢献に柔軟です.",
+      "report": "ビデオで歩く: https://drive.google.com/file/d/1lNo5dOCLUeTwYgqwm16 610a9fmqfBC5/view?usp=drive link\n\n1つのテスト プラットホームのrefactoring\nクイックスタートガイドでは、Jest でテストを実行する手順が含まれています。\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/eaec64264c068aae8c7bff86284b5371858271e4\nコミュニティ貢献ガイドライン:\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/docs/community-contribution-guides/ccxt.md\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/docs/community-contribution-guides/udex.md\nコミット:\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/eaec64264c068aae8c7bff86284b5371858271e4\n\n2 ハンドルの運転者の間違い\nコミット:\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/12112d462717c3ac516869bcbdf199efb505dd75\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/5bb0967e62d5707db07bf024c6fe2171915a7574\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/b3c30f8339ffdc7e01f94cb4ee7e0deb94d20ddd\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/6918ff5ddeeb56d1d81c49d81655b4554e718ec5\n\n3 データ収集のための間隔の精密を高めて下さい。\nコミット:\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/e8e050655ac9ab6ddd766a2e5dd96e3cdd4243c7\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/4927263c9fea2bea25d0b18f8157798fc520a8e9"
+    },
+    {
+      "no": 4,
+      "promise": "APIキー管理の出力は次のようになります。\n1) ユーザー管理システム\n2)認証と認証システム\n3) ロール&パーミッション管理システム\n4) API トークンシステム\nこれにより、生産性向上サービスの API へのアクセスを管理できます。\n生産準備のための出力は次のとおりです:\n1) 生産インスタンスの動作\n2) ストレステストはピーク負荷およびシナリオを処理するシステムの機能を確認します\n3) Cardanoコミュニティに利用できるサービス(レート制限は積み過ぎを避けるために適用される場合があります)",
+      "criteria": "API キー管理のアクセプタンス基準: 1) 認証システムにより、セキュアなアクセス、 2) 役割と権限システムにより、ユーザのアクションの制御と 3) API トークンは、意図どおりに安全で機能します。\n生産の信頼性のための受諾の基準: 1) 生産のインスタンスは期待どおりに動作し、2) ストレステストはピーク負荷とシナリオを処理するシステムの能力を確認します",
+      "report": "APIのキー管理のビデオ デモ:\nhttps://drive.google.com/file/d/1hzq4Fb965q URdDMdS0XmyEwCn5mflc6/view?usp=sharing\nストレステスト:\nhttps://drive.google.com/file/d/1i0SyZ 5i1NJO4eTqB43LokRDCGpUc75e/view?usp=drive link\nモニタリングレポート:\nhttps://docs.google.com/document/d/1HRiC0MBcoQUO14z2 yOACzt7kVRX2edt EXQGxXs-cg/edit?usp=drive link"
+    },
+    {
+      "no": 5,
+      "promise": "出力は、すべてのマイルストーンと完了を要約し、ビデオの実証完了とシステム監視に関する1か月のレポートを1ヶ月に渡る報告書をPDFクローズアウトします.",
+      "criteria": "完成したマイルストーンをラップアップビデオでドキュメントする最終クローズアウトレポート。 システムのモニタリングレポートには、時間の経過とともに生存状況とエラーのサマリーレポートが含まれます.",
+      "report": "報告書を閉じる:\nhttps://drive.google.com/file/d/1NmwPVV18QviJiXLRz2kAEY1C5Le4Yvol/view?usp=drive link\nWalkthroughのビデオ:\nhttps://youtu.be/ xhYaWOkJXE\nデモ:\nhttps://youtu.be/UyBT-B3XEa0\n関連リンク\nブロックフロストJavascript SDKを使用してCardanoノードの実装を行うドライバ。\n・https://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/lib/domain-collectors/integrations/udex/Cardano/BaseCardanoDriver.js#L4\n\n分散型交換契約のコレクターの実装:スケジューリング、コミュニケーション、データの取得と保存方法。 DEXからデータを取り出し、データベースに保存する交換レートコレクターを作成しました。\n・https://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/lib/domain-collectors/collectors/ExchangeRateCollector.js\n\nMinswap、Muesli Swap、Sundae Swap、Vy Finance、Wing RidersのDEX契約ドライバー\n・https://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/tree/main/configs/udex/cardano/exchanges\n\nAPIキー管理ビデオデモ\n・https://drive.google.com/file/d/1hzq4Fb965q URdDMdS0XmyEwCn5mflc6/view?usp=sharing\n\nストレステスト\n・https://drive.google.com/file/d/1i0SyZ 5i1NJO4eTqB43LokRDCGpUc75e/view?usp=drive link\n\nモニタリングレポート\n・https://docs.google.com/document/d/1HRiC0MBcoQUO14z2 yOACzt7kVRX2edt EXQGxXs-cg/edit?usp=drive link\n\n完全な技術的な検討:\n・https://youtu.be/etqU7iVC9ZM"
+    }
+  ]
+}

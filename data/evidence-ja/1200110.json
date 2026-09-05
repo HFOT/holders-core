@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "(i) ユーザインタフェースの機能、フロー、ユーザーエクスペリエンス、(ii) スマートコントラクト機能と構成の書き込み要件の完了.",
+      "criteria": "要件は明確で、完全にユーザーエクスペリエンスの全範囲を網羅し、最初の3つのユースケースで終わるまでの重要なワークフローの例です。\n主なワークフローには以下が含まれます。\n・Vault の形成: Vault は、ユーザーが SC にオンチェーンアセット(NFT、FT)を送信できるようにするユーザー構成可能なスマートコントラクト(「SC」)で、特定の基準が満たされるまでロックされるか、トランザクションがキャンセルされるまでです。 Vault SC を確立するユーザーは、各ボルトの「管理者」ユーザーです。\n・フラクショナル化: サードパーティのユーザーがADAをSCに送信し、新しくマイナーなfractioを受け取るプロセス",
+      "report": "フィードバックに基づいて、Githubページから公開される要件のフォーマットを更新しました。\n下記のリンクからご応募ください。\n・ユーザーインターフェースの機能、フロー、ユーザーエクスペリエンスの書き込み要件の補完: https://github.com/L4VA-Technologies-Inc/reqs/wiki/Frontend-Requirements\n・(ii)スマートコントラクト機能と構成のための書面による要件の補完\n・ボルトフォーメーションガイドライン:https://github.com/L4VA-Technologies-Inc/reqs/wiki/Vault-Formation\n・API導入と標準: https://github.com/L4VA-Technologies-Inc/reqs/wiki/api intro\n\nまた、このブックスタックページ全体で要件とベストプラクティスを https://docs.l4va.com で文書化しています."
+    },
+    {
+      "no": 2,
+      "promise": "フロントエンドのプロトタイプWebインターフェースの完成.",
+      "criteria": "クリック可能なWebベースのユーザーインターフェイスは、UIの構成アクションを正常に実証し、スマートコントラクトの統合の準備ができます.",
+      "report": "こんにちは、リンクが機能しなかったことを謝罪します。 これからの仕事をする。\n・・・\nこんにちはレビュアー!\nプロトタイプWebインターフェイスのフロントエンドを完成し、L4VAプロトコルWebアプリケーションの機能を示すクリック可能なプロトタイプを立ち上げました。 クリック可能なプロトタイプ @ https://l4va.cryptounity.space/ にアクセスすることができます。\nまた、意図した機能性がどのように機能するかを示すデモビデオも完成しました。 サイズの制約により、ビデオを2つに分割しました。 リンクはこちら\n1 L4VA フロントエンド デモ 1\n2 L4VA フロントエンド デモ 2\nまた、Githubはプロジェクト全体へのリンクをここに提供しています(すでに213コミットが完了していると表示)。 githubは、フロントエンドページへのリンクをここにリンクします。\nご質問やご意見がございましたら、お気軽にお問い合わせください。\n皆様のお越しをお待ちしております!\nロブとL4VAチーム."
+    },
+    {
+      "no": 3,
+      "promise": "スマートコントラクトのコードを完成させ、スマートコントラクトのコミットとフロントエンドへの統合を行い、ベータのテストネットをコミュニティに公開します.",
+      "criteria": "スマートコントラクトは、事前の構成のすべてのバリエーションを使用して、正常に取引を完了することができなければなりません, その後、テストネットベータフェーズでコミュニティによって正常にテストされなければなりません 25 作成され、100以上の取引が正常に完了しています. スマートコントラクトの100トランザクションを補完することで、tADAがSCアドレスに送信され、スマートコントラクトの実行結果として minted されたテストファンジブルトークンを受信し、トランザクションログへのリンクを提供することで、スマートコントラクトの成功した動作が実証されます.",
+      "report": "マイルストーンの出力と受諾基準、ならびにマイルストーン完了の証拠によると、以下をご覧ください! お問い合わせ\n\n・公開Githubにスマートコントラクトのコードをプッシュしました。https://github.com/L4VA-Technologies-Inc/vault-contract\n・Webappクライアントコードを公開しているGithubにhttps://github.com/L4VA-Technologies-Inc/l4va-clientをプッシュしました。\n・Testnetで25ボルト以上で正常に作成しました。https://github.com/L4VA-Technologies-Inc/l4va-client/wiki/Testnet-Vaults-List\n・ここで100以上の取引を完了しました。https://github.com/L4VA-Technologies-Inc/l4va-client/wiki/Testnet-Transactions-List\n・フロントエンドでトークンを生成し、ここでトークンを主張する悪質の完全な流れを示すビデオがあります。https://drive.google.com/file/d/1-MriF3ME-tHB7A32s5NQ9GVAx24ca7Go/view?usp=sharing\n・Google シートにリンクされている 66 個のバグ修正も完了しました。https://github.com/L4VA-Technologies-Inc/l4va-client/wiki/Testnet-Fixes-List"
+    },
+    {
+      "no": 4,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ\n・プロトコールはメインネットに住んでいます",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n・プロトコールは、最初の月と100の成功した取引で5以上の成功したメインネット契約でメインネットに住んでいます",
+      "report": "A. 出力:最終クローズアウトレポート\n受諾基準:最終閉鎖報告書は公開\n証拠: https://drive.google.com/file/d/17GgodTBN dBY1u6JMYdfVC2fSlCizdrs/view?usp=sharing\nB. 出力: 最終的な閉鎖のビデオ\n受諾の基準:最終クローズアウトビデオが公開されています\n証拠: https://www.youtube.com/watch?v=xtgUX7o50r0&feature=youtu.be\nC. 出力: プロトコルはメインネットに住んでいます\n受諾条件:プロトコルは、最初の月と100の成功した取引で5以上の成功したメインネット契約でメインネットに住んでいます\n証拠:\nメインネット上の5ボルト: https://github.com/L4VA-Technologies-Inc/l4va-client/wiki/Mainnet-Vaults\nMainnet上の100トランザクション:https://github.com/L4VA-Technologies-Inc/l4va-client/wiki/Mainnet-Transactions"
+    }
+  ]
+}

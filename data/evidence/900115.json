@@ -1,0 +1,61 @@
+{
+  "title": "Handle Personalization | ADA Handle",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 46680,
+      "promise": "The expected result from this milestone is the delivery of a fully operational Docker container that will allow independent and decentralized queries for Personalization data associated with Handles. This Docker container will include Cardano Node, Ogmios and Kupo, that will be integrated to the API, that will allow anyone to download, run and query Personalization data.",
+      "criteria": "The acceptance criteria for this milestone is the successful delivery of the API Docker container, which anyone will have the option to download and run, resulting in a fully operational API, that will allow them to query Personalization data from Handles.",
+      "report": "The API Docker Container and our public API endpoint are both operational and ready to be announced to and used by the community. They can both be verified here: https://koralabs.github.io/handles-public-api/ and here: https://github.com/koralabs/handles-public-api.\n\nThe Docker Container can take up to 24 hours to be ready since it will sync to the Cardano blockchain.",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 46680,
+      "promise": "In order for Personalization data to be included for Handles, the engine that will permit this to happen needs to be created. This milestone comprises the delivery this Personalization engine that will work with the Personalization portal (milestone 3) and allow users add, edit, remove Personalization data from their Handles.",
+      "criteria": "The successful delivery of this milestone will be a fully operational Personalization engine that, when presented with a Handle, allows users to add, remove, edit Personalization data. The engine will, initially, via a command-line interface, allow us to perform all Personalization tasks for Handles.",
+      "report": "We have delivered a full report of what we have accomplished on Milestone 4. We are submitting Milestones 2 and 3 as a requirement for Milestone 4 but Milestone 4 has all the details of everything that has been executed to get us to the Preview launch.",
+      "kinds": [],
+      "links": 0
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 31120,
+      "promise": "Milestones 1 through 3 created the base layer to deliver the Personalization feature. All these milestones will be integrated onto our PreProd public launch. All community members who own a PreProd Handle will be able to access https://preprod.handle.me to test how to implement Personalization data onto their Handles.",
+      "criteria": "The acceptance criteria of this milestone will be the fully operational PreProd TestNet, allowing the community to fully customize their Handles with data, from the https://preprod.handle.me portal.",
+      "report": "We have delivered a full report of what we have accomplished on Milestone 4. We are submitting Milestones 2 and 3 as a requirement for Milestone 4 but Milestone 4 has all the details of everything that has been executed to get us to the Preview launch.900115",
+      "kinds": [],
+      "links": 0
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 15560,
+      "promise": "Milestones 1 through 3 created the base layer to deliver the Personalization feature. All these milestones will be integrated onto our PreProd public launch. All community members who own a PreProd Handle will be able to access https://preprod.handle.me to test how to implement Personalization data onto their Handles.",
+      "criteria": "The acceptance criteria of this milestone will be the fully operational PreProd TestNet, allowing the community to fully customize their Handles with data, from the https://preprod.handle.me portal.",
+      "report": "Personalization is live on Preview. Our original milestone was for the PreProd environment but our team preferred to build on Preview. The milestone is still exactly the same. We have delivered Personalization on Preview. Given that we are going to announce this to our community early next month, we will keep the actual link to where Personalization is live private, so that we don't spoil the surprise. However, I will privately email Roberta Lifonso the link to the Personalization website on Preview for accountability and proof of completion. MainNet launch is imminent.",
+      "kinds": [],
+      "links": 0
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 15560,
+      "promise": "The final output of this project will be a fully operational Personalization portal on Cardano's PreProd and MainNet blockchains, allowing any Handle owner to add, edit or remove data(sets) from their Handles. This project will also include a decentralized API Docker container that any interested party will be able to download to query data(sets) associated with Handles. This API Docker container will be available for the PreProd and MainNet blockchains.The Cardano Community will, at the delivery of this project, be able to customize their Handles by adding, removing or editing data(sets). These data(sets) will include payment addresses for other blockchains, profile pictures, social-media accounts, contact information and a lot more.",
+      "criteria": "A fully operational MainNet portal to Personalize Handles with custom datasets. This milestone will deliver the portal fully operational whereby a Handle owner will authenticate ownership and from that point onwards add, edit, remove data(sets) from their Handles.",
+      "report": "Personalization has launched on MainNet, Preview and PreProd. It has been live for over a month now. Thousands of Handles have been converted to the new CIP-68 Standard and Personalized to include background images, contact information, profile pictures and a lot more.\nThe MainNet Personalization portal can be seen here: https://handle.me/. Anyone with a Cardano wallet can log on and personalize their Handles. This is an example of a personalized Handle, as seen on an independent explorer: https://pool.pm/asset1rrr3pftaqlx7yxx64agqpd8x7hpq7z7vzdt3al. This is the same Handle seen on another explorer: https://cardanoscan.io/token/f0ff48bbb7bbe9d59a40f1ce90e9e9d0ff5002ec48f232b49ca0fb9a000de14031323835?address=addr1q9v67wmq3ycqyjvt6r7gf0tylpy8am9sm7z94k0xpye24pn5av3w45dldmrx6yr7j9nhykzlr0yrjzmkfx8muzs9xe0qx6pvc6.\nThis is the mint transaction for the CIP-68 Handle $1285: https://cardanoscan.io/transaction/e786e4cc2082a8104c33cebe8a19d537e20cb1d9d03a1b3126fcbef69cdd7e47?tab=tokenmint. This link demonstrates the entire process of an atomic swap (i.e., burning of the original CIP-25 Handle, minting of CIP-68 assets).\nThese are the links for PreProd and Preview, respectively: https://preprod.handle.me/ and https://preview.handle.me/. They are both fully operational as well, working side by side with MainNet, allowing all other dApps in the ecosystem to utilize any of them.",
+      "kinds": [
+        "chain",
+        "other"
+      ],
+      "links": 12
+    }
+  ]
+}

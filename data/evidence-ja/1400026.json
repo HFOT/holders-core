@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "基礎モジュールを含む初期のSDK NPMパッケージの足場を配信し、依存関係、プロジェクト構造、構成ファイルなど、TypeScript API/indexerプロジェクトでさらなる開発をサポートします.",
+      "criteria": "SDK パッケージは、エラーなしで NPM 経由でインストールされ、初期クラスとインターフェイスの定義が含まれており、API プロジェクトは必要な依存関係でローカルで実行されます。 リポジトリの設定は、文書化されたフォルダー構造に従う必要があります.",
+      "report": "A. 出力:基礎モジュールを含む最初のSDK NPMのパッケージの足場の配達\n受諾条件:SDKのパッケージは間違いなしでNPMによって取付けます\n証拠: NPM パッケージはテストレジストリに公開: https://www.npmjs.com/package/@3rd-eye-labs/dexter-v2\nB. 出力: 依存関係、プロジェクト構造、構成ファイルを含むTypeScript API/indexerプロジェクトは、さらなる開発を支援します。\n受諾条件:APIプロジェクトは、必要な依存関係でローカルで実行されます。\n証拠:GitHubリポジトリ:SDKリポジトリ(README含む) - https://github.com/3rd-Eye-Labs/dexter-v2\n証拠: API セットアップ (Iris 拡張) - https://github.com/IndigoProtocol/iris/pull/10\nC.出力:ローカルで動く初期プロジェクトを示すビデオ\n受諾基準: YouTube動画\n証拠:ビデオ - https://www.youtube.com/watch?v=DN-kK8IT10"
+    },
+    {
+      "no": 2,
+      "promise": "機能的なREST APIは、サポートされた統合のための読み取り専用エンドポイントを公開し、MySQLまたは同様のデータベースを正規化したCardano DeFiプロトコルデータと完全に操作上のオンチェーン・インデックス・ポピュレーションします。\nサポートされている統合のリスト:\n・ミンスワップv1\n・ミンスワープv2\n・ムエスリスワップ\n・スプラッシュ\n・サンデースワップ\n・SundaeSwap v3\n・ウィングライダー v1\n・ウィングライダー v2\n・インディゴプロトコル\n・液体\n・ボデガ",
+      "criteria": "API エンドポイントは、有効な、構造化された JSON マッチング ドキュメンテーション、インデックス プル、更新をエラーなくライブ オン チェーンのデータに戻り、データベーススキーマは提案されたすべての統合をサポートしています。 統合テストを渡す必要があります.",
+      "report": "すべてのファイル - https://drive.google.com/drive/folders/1KBtXSHLn6jAQDRHCujH09Y3q96vTHSrX?usp=sharing\nライブAPIのデモ - https://drive.google.com/file/d/1vSVCb93eAJgD XzWvFVISiEUlFy6W-xc/view?usp=sharing\nポストマンコレクション - https://drive.google.com/file/d/1kt9FNJf61D7Dt-5dMfYTyrDo3NTkyi1e/view?usp=sharing\nデータベーススキーマのエクスポート - https://drive.google.com/file/d/1M8ZwuNaVdAQv5kfiluhrQsINTUI8uXO/view?usp=sharing\nGitHubリポジトリの更新 - https://github.com/IndigoProtocol/iris/pull/10\nスクリーンショット - https://drive.google.com/drive/folders/1e9nxOEMFnnitXu7F533Q34C0kl6zrlA6?usp=sharing\n統合テスト - https://drive.google.com/drive/folders/1O6csFrO1FtVfEz7N0LEqiL-V-gN RHn6?usp=drive link"
+    },
+    {
+      "no": 3,
+      "promise": "サポートされているすべての DeFi 統合用の Cardano トランザクションの API データの取得、ビルド、および送信が可能な TypeScript SDK です。 自動化されたユニットテストと開発者向け機能インターフェイスが含まれています。\nMarkdown形式の包括的なAPIとSDKのドキュメント、インストール、設定、使用状況、および拡張ポイントの詳細。 統合の安全性を保証する手動テストレポート。 GitHubリポジトリに公開されたすべてのコード。\nサポートされている統合のリスト:\n・ミンスワップv1\n・ミンスワープv2\n・ムエスリスワップ\n・スプラッシュ\n・サンデースワップ\n・SundaeSwap v3\n・ウィングライダー v1\n・ウィングライダー v2\n・インディゴ\n・液体\n・ボデガ",
+      "criteria": "すべてのSDKメソッドは、ドキュメントとして機能し、ライブCardano DeFiプロトコルとやりとりし、自動テストを渡すことができます。 トランザクションの送信は、テスト中にオンチェーン(メインネットまたはプリプロド)を確認する必要があります。\nドキュメンテーションは、セットアップと使用状況を複製するために、第三者が完了、正確、および使用可能でなければなりません。 資金リスクの損失が認められない手動テスト GitHubリポジトリは、制限なしにオープンでアクセス可能でなければなりません.",
+      "report": "ご意見・ご要望等ございましたら、お気軽にお問い合わせ下さい。\n\nビデオ・ウォークスルーを更新 - https://drive.google.com/file/d/1tOjs525y1U4i HgknRWDGkQh6qA4fVhe/view?usp=sharing\n例のトランザクション - https://docs.google.com/document/d/1eOWIa5djuu6jTvjPWWj 8h3OExfg MHsasvDvOWUQ9w/edit?usp=sharing\n\nノート:\n・プールを見つけるためのリトライ機構が含まれている。 悪い状態が作成される可能性がある。 DEX内部のテスト、または間違ったTxがIrisによってピックアップされたかどうか。 しかし、Irisは、これらの状態を保存しない場所で保護されています。 見る AmmOperationHandler.ts ライン 142\n・ライブプロダクションのエンドポイントを呼び出したテストは、パブリックアクセス可能なインスタンスが存在しません。 内部でホストされているインスタンスのみ。 そのため、デクスターとイリス間のテストは不可能ですが、2つの異なるタイプのテストを追加しました。 これは、 iris-sdk がこれらの同じタイプを返すので、十分です。\n・テストスクリプトコミット(シードフレーズを含むため、初期に押し込まれていません。) これで削除されますので、手動で設定しない限りテストは失敗します。) - https://github.com/3rd-Eye-Labs/dexter-v2/commit/272fbcff5db4ac3c99c3fd73dce8d316a8979f\n・openapi.yaml API 仕様を修正しました。\n・Cardanoトークンレジストリを再テストし、トークンが見つからなかった可能性のある問題を修正しました。 エラーが表示された場合は、有効な Github トークンを使用することを確認してください。\n\n演題:\nすべてのファイル: https://drive.google.com/drive/folders/1t1VNxwc8g2hYV-ACYTrxTxvXrPFyQ6Pf?usp=drive link\n成功テスト/テストノート: https://docs.google.com/document/d/1eOWIa5djuu6jTvjPWWj 8h3OExfg MHsasvOWUQ9w/edit?usp=drive link\nGithub Repo : https://github.com/3rd-Eye-Labs/dexter-v2\nMITライセンス: https://github.com/3rd-Eye-Labs/dexter-v2/blob/main/LICENSE\nドキュメンテーション(Repoでも) : https://drive.google.com/file/d/1ZFghsp5QZoVXqBJbOS4BHDtGnAKCZTJ/view?usp=drive link\n・NPM出版:https://www.npmjs.com/package/@3rd-eye-labs/dexter-v2\n\n安全・安心"
+    },
+    {
+      "no": 4,
+      "promise": "KPI(チャレンジレベルとプロジェクトレベルの両方)、主要な成果、学習、次のステップ、プロジェクトメタデータ(プロジェクト名、ID、マネージャー、開始/終了日、およびリソースリンクなど)をまとめた2〜3ページを研磨しました。 また、パブリック(YouTubeまたはVimeo)2〜5分のクローズアウトビデオ、720pまたは1080pで、プロジェクトの達成、成果物、成果物、技術的なソリューション、および資金調達の仕組みを実証しました.",
+      "criteria": "レポートには以下が含まれます。\n・プロジェクト名、URL、プロジェクト番号、マネージャー、開始日、完了日\n・Challenge および KPI のプロジェクト、対処された結果または unmet;\n・成果(特にコラボレーション/エンゲージメントの周り)、学習、次期計画、最終反映、関連ソース/ドキュメントへのリンク\n・クローズアウトビデオの作業、アクセス可能なリンク\n\nビデオは:\n・720pまたは1080p品質で公開し、\n・2～5分程度\n・API/SDK機能などの出力を明らかにし、それ以外の場合、動作を見える化します。\n・チャレンジ、アプローチ、ファンドソリューション、および結果のコンテクチュアル化",
+      "report": "クローズアウトビデオ - https://www.youtube.com/watch?v=q-KvN1wgRyQ\nクローズアウトレポート(Markdown) - https://drive.google.com/file/d/1pd5-J0uP2zgWrXIiFG4xFvDFmDpmfRH /view?usp=sharing\nクローズアウトレポート(Doc) - https://docs.google.com/document/d/1qmRq4OK22mYMu-SivYQNBHWsh8t8h2JoRAZk1UuCERA/edit?usp=sharing"
+    }
+  ]
+}

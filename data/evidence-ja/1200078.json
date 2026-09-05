@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・AWSにプロジェクトインフラを設置\n・AnthropicのClaude v3とAWS Lambdaとの統合を開始\n・Cardano開発リソースのナレッジベースのコンパイルを開始.",
+      "criteria": "・AWS環境のセットアップや、必要なサービスの構成の成功\n・Claude v3 との統合は、初期の NLP 機能のために確立されます。\n・開発リソースの初期セットをコンパイルし、ナレッジベースでフォーマットします。\n・この開発リソースの初期セットには、Cardano Foundation、Aikenなどのソースからのドキュメントが含まれており、利用者が最初のスマートコントラクトを開発する可能性があります.",
+      "report": "・AWSから設定ログと設定文書。\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/Lambda/index.mjs\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/Lambda/bedrockUtils.mjs\n・https://www.youtube.com/watch?v=GrPL9UZN7I\n・成功した API 呼び出しを Claude v3 にデモンストレーションするスクリーンショットやログ。\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/LambdaLogs 2024-08-01%20164444.png\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/log-events-viewer-result2.csv\n・プロジェクトリポジトリでアクセス可能なナレッジベースの予備バージョン。\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/s3 urls.txt"
+    },
+    {
+      "no": 2,
+      "promise": "・Cardano開発ツール、言語、SDK、API、ベストプラクティスの知識ベースを拡張。\n・拡大したナレッジベースをAIシステムと連携し、クエリ処理を行います.",
+      "criteria": "・知識ベースには、Cardanoの開発リソースの幅広い範囲が含まれています。 以下を含む。\n・アイケンランのリポジトリ\n・Cardano財団リポジトリ\n・Maestroリポジトリ\n・AIシステムは、知識ベースから情報をシームレスに取得・活用し、質問に答えます.",
+      "report": "・ナレッジベースコンテンツとそのソースの詳細なレポート。\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/CDPT-1%20Detailed%20Documentation%20Outline.pdf\n・cDPT-1のDemonstrations(動画/スクリーンショット)は、開発者の問い合わせに対する正確な情報を効果的に取得し、表示します。\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/Milestone-2 PoA video demonstrations.txt\n・ミレストン 2 証拠 (PoA) - Aiken 'Hello World!' チュートリアル - https://www.youtube.com/watch?v=tDaMuk055iw\n・Milestone 2 Evidence (PoA) - Cardano API - https://youtu.be/RjXGicdDXHc\n・追加証拠リクエスト - AWSコンソールとindex.htmlテストページの両方の複数のリクエスト: https://www.youtube.com/watch?v=QdKYCNd sVM"
+    },
+    {
+      "no": 3,
+      "promise": "・AIの迅速な注射や脱獄を防ぐための包括的なセキュリティプロトコルを増幅。\n・入力/出力衛生および出力検証チェックの開発・統合\n・セキュリティ上の脅威からAIの堅牢性を確保するため、徹底したセキュリティチェックと監査を実施.",
+      "criteria": "・AIシステムは、迅速な注射と脱獄で試みを識別し、軽減します。\n・システムの性能やユーザーエクスペリエンスに影響を及ぼすことなく、全ての入出力を効果的にサニタイズし、検証します。\n・本システムは、重要な脆弱性が見つからず、すべてのセキュリティ監査を通過します.",
+      "report": "AIシステムは、迅速な注射と脱獄で試みを識別し、軽減します。\n・https://youtu.be/Zq0F5sWE9DY\n\nすべての入力と出力は、システムのパフォーマンスやユーザーエクスペリエンスに影響を与えることなく、効果的にサニタイズされ、検証されます。\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/Materials/ProjectCatalyst PoAs/Milestone3/Milestone3 Evidence Security-log-events-test-case-ress.10.8.24.csv\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/Materials/ProjectCatalyst PoAs/Milestone3/%23%23%20cDPT-1%20Test%20Case%20for%20Sanitization%20and20Validation.txt\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/Materials/ProjectCatalyst PoAs/Milestone3/Milestone3 Evidence SanitizationFunction.png\n\nシステムは、重要な脆弱性が見つからず、すべてのセキュリティ監査を通過します。\n・https://github.com/Flux-Point-Studios/cDPT-1/blob/main/Materials/ProjectCatalyst PoAs/Milestone3/Milestone3 Evidence Security-log-events-test-case-ress.10.8.24.csv\n\nこのビデオは、より優れた一般的な理解のために実証済みのコードコンテンツの説明として機能します。 また、実施したテストの詳細や結果のログを徹底的に報告しています。\n・https://www.youtube.com/watch?v=R3Ixm1Q6zIY"
+    },
+    {
+      "no": 4,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ\n・AIアシスタントを一般公開\n・コミュニティのフィードバックメカニズムの拡大と積極的なエンゲージメント戦略の開始\n・初期ユーザのフィードバックを収集し、コミュニティ入力に基づいて調整を行います.",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n・AIアシスタントは、著しい問題なく、利用者にライブ・アクセス可能です。\n・Feedback のメカニズムはユーザーの洞察を置き、集めます。\n・初期のユーザーフィードバックを収集し、改善のために見直します。\n・25名様以上でご利用いただくと、ご利用者数が25名様以上となります.",
+      "report": "・最終報告書へのリンク\n・https://docs.google.com/document/d/1kNbpqZIGXRF9pb8NtrcbzgSuHMORivgG7Sx0kxlSSa8/edit?usp=sharing\n・最終クローズアウト映像へのリンク\n・https://www.youtube.com/watch?v=FjxAtpXNDWE\n・cDPT-1のURLを公開し、発表投稿を開始します。\n・https://www.cardevia.ai/guest\n・https://x.com/fluxpointstudio/status/1850610300942434704\n・Feedback のコレクション ツールのセットアップと初期のフィードバック まとめ レポート。\n・https://docs.google.com/spreadsheets/d/1lQ51CA4tDp-ndKYT IGVovvVaXn5ujdPl9F3-5SkFI/edit?usp=sharing\n・プライバシーのために削除されたハンドル/財布"
+    }
+  ]
+}

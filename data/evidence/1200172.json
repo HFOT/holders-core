@@ -1,0 +1,68 @@
+{
+  "title": "Open-Source One-Click Wallet Library: No Extensions Needed",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40000,
+      "promise": "・Functional dApp integration library code with a function that will be used to inject the wallet API into the browser.\n・Implementation of all CIP-0030 wallet API functions with mocked data.",
+      "criteria": "・The dApp integration library has a function that injects wallet API into the browser.\n・The dApp integration library implements all wallet API functions from the CIP-0030 standard. The wallet API functions return mocked data.",
+      "report": "Please see below the corrected evidence:\n1.dApp integration library injects the wallet API\n・dApp integration library code in an open-source GitHub repository: https://github.com/WingRiders/wallet/tree/dev/dapp-plugin\n・Link to the part of the code in the GitHub repository that implements the function that injects this wallet API into the browser: https://github.com/WingRiders/wallet/blob/8dd73c2501898b4a2acf507f625384eda8d79d75/dapp-plugin/src/init/inject.ts#L44-L50\n・Link to the documentation in the GitHub repository that describes how this function can be used by dApps: https://github.com/WingRiders/wallet/blob/8dd73c2501898b4a2acf507f625384eda8d79d75/README.md#wallet-dapp-plugin\n\n2.dApp integration library returns mocked data\n・Link to the part of the code in the GitHub repository that implements all functions from the CIP-0030 wallet API with mocked data: https://github.com/WingRiders/wallet/blob/8dd73c2501898b4a2acf507f625384eda8d79d75/dapp-plugin/src/init/inject.ts#L76-L120. Mocked data: https://github.com/WingRiders/wallet/blob/8dd73c2501898b4a2acf507f625384eda8d79d75/dapp-plugin/src/dataApi/DataApi.ts#L21-L55 and https://github.com/WingRiders/wallet/blob/8dd73c2501898b4a2acf507f625384eda8d79d75/dapp-plugin/src/gateway/WalletGateway.ts#L21-L30\n・Link to the CIP-0030 standard to verify that the dApp integration library implements all functions according to the standard: https://developers.cardano.org/docs/governance/cardano-improvement-proposals/cip-0030/\n・Link to a video showcasing that the implemented wallet API returns mocked data: https://github.com/WingRiders/wallet/blob/dev/catalyst-evidence/milestone-1-video.mov. Instructions to follow: https://github.com/WingRiders/wallet/blob/dev/catalyst-evidence/milestone-1.md",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 18
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 50000,
+      "promise": "・Functional seed phrase gateway website which users can use to enter seed phrase and password, view balance, and set collateral.",
+      "criteria": "・The website has a form for seed phrase and password, the seed phrase is stored securely in the website storage. The website provides a UI for viewing balance and setting collateral.",
+      "report": "Please see the Milestone 2. Completion Evidence:\nFunctional seed phrase gateway website\n・Code for the seed phrase gateway in an open-source GitHub repository: https://github.com/WingRiders/wallet/tree/dev/gateway\n・Instructions on how to run the website locally, enter your seed phrase, verify your balance and set a collateral: https://github.com/WingRiders/wallet/blob/dev/catalyst-evidence/milestone-2.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40000,
+      "promise": "・Extended code of the dApp integration library that securely fetches user’s data using the seed phrase gateway website and implements all CIP-0030 functions.\n・Extended code of the seed phrase gateway with implemented communication API for the dApp integration library.",
+      "criteria": "・The dApp integration library can initiate theprocess for connecting a wallet and provides the implementation of all CIP-0030 functions that can be used by the dApp to fetch data or sign transactions.\n・The seed phrase gateway implements all functions that are needed to communicate with the dApp integration library.",
+      "report": "Please see the evidence with fixed links\nNotes:\n・you need to have some ADA in the wallet. It's mentioned in the evidence document.\n・we are no longer operating public preprod so it has to be fixed to mainnet only. But the wallet supports it, it's just not connected.\n・There is such function in https://wallet.wingriders.com - which is the wallet application where you manage your wallet. The example application https://wallet-example-app.wingriders.com/ is just an example dapp that integrates this wallet.\n\nEvidence\n・Updated dApp integration library\n\n・New code pushed in the open-source GitHub repository for the dApp integration library - https://github.com/WingRiders/wallet/tree/dev/dapp-plugin\n・Link to an example dApp application that integrates this wallet and displays user’s balance, addresses and UTxOs - https://wallet-example-app.wingriders.com/\n\n 2. Updated gateway\n・New code pushed in the open-source GitHub repository for the seed phrase gateway - https://github.com/WingRiders/wallet/tree/dev/gateway\n・Link to the seed phrase gateway website which can provide data for the example dApp from point 1 - https://wallet.wingriders.com/\n・Instructions on how to verify the communication - https://github.com/WingRiders/wallet/blob/dev/catalyst-evidence/milestone-3.md",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 14
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 31500,
+      "promise": "・Unit tests for core functionality.\n・Updated code where all major issues and bugs are addressed.",
+      "criteria": "・Unit tests cover the core functionality of the dApp integration library and seed phrase gateway.\n・Code is working and has a commit history with fixes for all potential major issues.",
+      "report": "Please see below the fixed evidence.\nNote that The issue with failing tests was caused by a mismatched Node.js version, please make sure that you use the correct version by following https://github.com/WingRiders/wallet?tab=readme-ov-file#installing-nodejs\n・Unit tests:\n\n・Unit tests are in these folders:\n・https://github.com/WingRiders/wallet/tree/dev/common/test\n・https://github.com/WingRiders/wallet/tree/dev/dapp-plugin/test\n・https://github.com/WingRiders/wallet/tree/dev/gateway/test\n・Instructions on how to run the test suite: https://github.com/WingRiders/wallet?tab=readme-ov-file#running-tests\n・Passing tests: https://github.com/WingRiders/wallet/actions/workflows/test.yml\n\n 2. All major issues and bugs were fixed\n・Commit history: https://github.com/WingRiders/wallet/commits/dev/\n・Test report: https://github.com/WingRiders/wallet/blob/dev/tests/REPORT.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 15
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 28500,
+      "promise": "・User manuals and developer guides. \n・Detailed final report documenting the project's journey, challenges, solutions, and benefits. \n・A produced video showcasing the library integration by dApps and usage by users, complete with voiceover narration.",
+      "criteria": "・Available documentation that covers all aspects of the library integration, configuration, troubleshooting, and manual for users of dApps that integrate this library. \n・Available thorough and reflective final report\n・Available video that effectively showcases the library is accessible to a broad audience",
+      "report": "Below are the links to the final milestone PoA Evidence:\nDocumentation for library integration and configuration: https://github.com/WingRiders/wallet/tree/dev/dapp-plugin#wingriders-wallet-dapp-plugin\nDeveloper guide: https://github.com/WingRiders/wallet/tree/dev?tab=readme-ov-file#wingriders-wallet\nUser manual: https://github.com/WingRiders/wallet/tree/dev/gateway#wingriders-wallet-gateway-application\nTroubleshooting: https://github.com/WingRiders/wallet/tree/dev/gateway#troubleshooting\n\nProject close-out report: https://github.com/WingRiders/wallet/blob/dev/catalyst-evidence/project-close-out-report.pdf\nFinal closeout video: https://www.youtube.com/watch?v=TV9TSVe3",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

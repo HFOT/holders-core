@@ -1,0 +1,61 @@
+{
+  "title": "Integrating Hydra Scaling into Cardano Kuber Library",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 10000,
+      "promise": "Detailed project plan, timeline, and technical design specifications for integrating Hydra transaction support into the Kuber Library.",
+      "criteria": "・Project plan is published on Github repository either as one or more issues or Markdown document.\n・Project plan should include:\n・Scope of integration\n・List of APIs/JSON RPC to implement:\n・Query API\n・query Utxos (by address)\n・query Utxos ( by txIn)\n・query tip\n・query protocol parameter\n・query hydra state (utxo commiting, ready, fanout, closed)\n・Transaction Build API supporting the kuber transaction spec\n・Hydra Relay API\n・Head initialization,\n・Committing UTxOs\n・Decommitting\n・Head Closing\n・Fanout Transaction\n・Aborting\n・Timeline\n・Risks and issues identified\n・Github issues for individual APIs to be",
+      "report": "Project plan and technical design documents\n>> Project Plan: https://dquadrant.github.io/kuber/hydra_docusaurus/docs/milestones\n>> Architecture Doc: https://dquadrant.github.io/kuber/hydra_docusaurus/docs/architecture\n>> Github Project: https://github.com/orgs/dQuadrant/projects/2\nGithub repository\nhttps://github.com/dquadrant/kuber",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 30000,
+      "promise": "Implementation of the Hydra Head management functionalities on Kuber:\n・Head initialization, committing/decommitting UTxOs, aborting, querying UTxOs, and checking commit status.\n・Raw transaction building, signing, and submission.\n・Close, contestation, and fanout actions.\n・Test coverage for all implemented features mentioned above.",
+      "criteria": "・Updated Kuber library codebase (https://github.com/dquadrant/kuber)\n・Test results published on the repository either as issue or markdown file. \n・Implementation tests are successful.",
+      "report": "New version of kuber is released, marking completion of this milestone. \nRelease: v4.0.0-rc1 \nLink: https://github.com/dQuadrant/kuber/releases/tag/v4.0.0-rc1\n\nDocker Images\nWe have also published Docker images for easier setup:\n- kuber-hydra : https://hub.docker.com/r/dquadrant/kuber-hydra\n- kuber : https://hub.docker.com/r/dquadrant/kuber\n\nClient libraries\nWe had to make changes in client libraries, and release updates on them:\n- Updated base library of kuber-client: libcardano-wallet \n Version: v2.2.13, Link: https://www.npmjs.com/package/libcardano-wallet/v/2.2.13\n- Update kuber-client\n Version: v3.3.5, Link: https://www.npmjs.com/package/kuber-client/v/3.3.5\n\nTutorials\nWe have prepared more tutorials than specified on this milestone:\n- https://dquadrant.github.io/kuber/hydra_docusaurus/docs/hydra-js-client/getting-started/\n\nTest Results (updated)\n- https://dquadrant.github.io/kuber/test-reports/hydra/\n\nChange log since last submission:\n- Kuber client updated from v3.3.0 -> v3.3.5\n- Added tests for contest and abort, fixed a bug on decommit\n- Updated test results dashboard",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 7
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 30000,
+      "promise": "Documentation:\n・Hydra section added to Kuber documentation site: https://kuberide.com/kuber/docs/intro\n・Examples similar to Kuber, added for Hydra\n・Setup instructions\n・Transaction Build API supporting the kuber transaction spec, and build the transaction with correct protocol parameters including examples.\n・Query API (query: Utxos by address & txIn, tip, protocol parameters, Hydra state(utxo commiting, ready, fanout, closed))\n・Tutorials:\n・ Open Hydra head -> mint token -> close Hydra head\n・ Open Hydra head -> burn token -> close Hydra head\n・ Open Hydra head -> pay to script -> close Hydra head\n・ Open Hydra head -> pay to 100+ new addresses ( pay at least 2 Ada to each) -> close Hydra head (Hopefully this will be possible)\n\nCommunity engagement:\n・Primarily on Kuber Discord channel\n・Discord announcement of Hydra support on Kuber.\n・Private reach out of Kuber discord members for feedback.\n・Twitter/X announcement of Hydra support on Kuber.\n\nNote: Some of the documentation and tutorials may change if the implementation requires changes.",
+      "criteria": "・Hydra documentation is publicly available at https://kuberide.com/kuber/docs/intro\n・Discord announcement of Hydra support on Kuber.\n・Twitter announcement of Hydra support on Kuber.\n・Community created Github issues with their feedback/issues if available. Alternatively, created on their behalf based on their feedback.\n・At least 5 active kuber users contacted for feedback",
+      "report": "Evidence requirements of milestone completion\n・Published documentation including tutorials on GitHub and project website.\n・Link to Discord announcement of Hydra support on Kuber.\n・Link to Twitter announcement of Hydra support on Kuber.\n・The community created Github issues with their feedback/issues if available. Alternatively, created on their behalf based on their feedback.\n・Link or screenshot of conversation with community members (upon consent)\n\nComments Addressed\n・Share invitation link to Kuber Discord server\n・Address pending feedbacks reported as github issue\n・Update Kuberide.com . It now shows all the required docs directly as menu option \n\nEvidences\nLinks\n・Github: https://github.com/dQuadrant/kuber/tree/master/kuber-hydra\n・Github (Client): https://github.com/sireto/kuber-client-js\n・Docs/Tutorial: https://dquadrant.github.io/kuber/hydra_docusaurus/docs/hydra-js-client/getting-started\n・KuberIde.com : https://kuberide.com/kuber/hydra/getting-started/\n\nDiscord Announcement\nServer Invitation: https://discord.gg/dNspVh3n\n・https://discord.com/channels/971341272776331264/1096020312061120574/1406949201765466193\n・https://discord.com/channels/971341272776331264/1096020312061120574/1470685789032550547\n\n<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABXkAAAStCAYAAAARTVghAAAQAElEQVR4AeydBWCVVRvHnwUbg42Nbhjd0p2KhaiIqEg3SDeju7tLGkH97BYBEUFEBCREMJAGaUaP1Xf+59737u7ubrt3wba7P+z0c+p3zlvPe+553atUrR1JQwacAwmbAzVrNYhs0PDZyLp1n6KJh0HDRs9GghfnWsLmGrmRG+cA5wDnAOcA5wDnAOcA50Ai5wCf/an/4BzgHOAccOE54C78RwIkkGACoaGhAuPh6ZngMtJDRvB59MjEKj30l30kARIggbRLgC0nARIgARIgARIgARIgARJIiwSo5E2Lo8Y2pyoCISEPtaLXM4OneHimg0PKGfruboqJp+YDTsJ/JEACJEACJEACJEACJEACJEACJEACaYMAW5mmCFAjlaaGi41NrQSgwHz48KFuHhS9MDqQHi2l2BVlsHrXQ7lgA5MeUbDPJEACJEACJEACJODqBNg/EiABEiABEiCB1EGASt7UMQ5shQsQwLYNd+/ek5CQRxIWFiFQ9GJ1b3ozUOxGRkQqDg8FPMDFBYaXXSABEkg4AeYkARIgARIgARIgARIgARIgARJIZgJU8iYzYBbvCAHXkoFS8+HDB1rBeefOHUlvBopd9B8cXGtk2RsSIAESIAESIAESIAESIAESIIHEEWBuEiCB5CJAJW9ykWW5JEACJEACJEACJEACJEACzhNgDhIgARIgARIgARIgAac",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "social"
+      ],
+      "links": 27,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 30000,
+      "promise": "・Final close-out report\n・Final closeout video\n・A demonstration video showcasing the Hydra-enabled Kuber Library.",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Link to a demonstration video showcasing the Hydra-enabled Kuber Library.",
+      "report": "Project Close Out Report [Updated]\nhttps://drive.google.com/file/d/1ez2-ZB1gLZhB_od0-pQG79nKALuD_IP3/view?usp=sharing\n\nProject Close Out Video:\nhttps://youtu.be/nR1BiAYpzBw\n\nDemo Video:\nhttps://youtu.be/EEjjq033LRM",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

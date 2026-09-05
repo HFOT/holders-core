@@ -1,0 +1,101 @@
+{
+  "title": "Open standard for cross-game achievement system to gamify onchain participation",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 56100,
+      "promise": "Create an Achievement System PRC (Paima Request for Comment) defining the achievement standard. PRCs work similarly to CIPs (Cardano Improvement Proposals) or ERCs, but are for the Paima ecosystem.",
+      "criteria": "A properly written and reviewed specification on how to handle achievements in Paima covering all key points including making easily indexable, self-hostable and readable from the game itself",
+      "report": "Video: https://drive.google.com/file/d/1gUoDQtT_29N20SCFSkKZC75JTff09n8q/view?usp=sharing\nSpecification: https://docs.paimastudios.com/home/PRCs/prc-1/\nInitial pull request with review: https://github.com/PaimaStudios/PRC/pull/1\nEngineering work to implement the standard: https://github.com/PaimaStudios/paima-engine/pull/358",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 56100,
+      "promise": "Build a proof-of-concept of the achievement system and host the code on Github",
+      "criteria": "Implement the PRC in at least 1 game/minigame and have completion of the achievement be visible from website that is part of the code on Github, with more games to come in future milestones as the system becomes more stable.",
+      "report": "In response to PoA comments:\nNOTE: We have resubmitted before completing the review as we have an update where we have discussed certain key topics with the Catalyst Directive. You will find the text bellow in comments. \nNOTE 2: We have added a video, and simplified the documentation to show the contents of the milestone.\nThank you for the review. \n(1) Direct value on Cardano. The games funding model locks Cardano native tokens to pay for player transactions: an allocation of cNIGHT is held across 30 dedicated Cardano wallets, registered with their stake addresses to generate the resources that cover user interactions - Cardano is the economic engine of the games. The wallet addresses are public on-chain (example below), and the open-source tooling we built to manage those registrations is published. Additionally, Cardano SPOs can opt in as Midnight block producers, so activity on these games generates direct value for the Cardano ecosystem.\n(2) Scope. The proposal was not changed - it was expanded. Rather than simple examples, the PRC standard is implemented in a real working portal and real games, all open source, all compatible with Cardano: the tooling to retarget the stack at Cardano is a configuration change in the code.\nBrief:\nProof of concept of the open achievement standard. PRC-1 defines two HTTP endpoints any game can serve - one listing the achievements a game offers, one reporting what a given wallet has earned - so any website can display progress for any game that speaks the standard. PRC-6 extends it with channels, leaderboards, metrics, and identity resolution for auto-sign sessions. The standard is implemented in three live games (Safe Solver, Kachina Kolosseum, Block Kart Legends), and the midnight.fun portal aggregates achievements across all of them, visible next to each wallet. Each game's repository contains both the minigame integration and the achievement-display frontend.\n\nLINKS TO REVIEW\n1. Video - achievement earned in-game, then visible",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 17,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 56100,
+      "promise": "Design and scope full achievement system website and find a development partner for the implementation",
+      "criteria": "・ Design files and which development partner will be used (could end up being ourselves)",
+      "report": "NOTE: Due to short timelines for this project, we have submitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA\nBRIEF\nThis milestone delivers the webpage for the cross-game achievement system: the front end that reads the PRC achievement endpoints and renders, for any wallet, the achievements it has earned across games. The design system was specified in Figma and implemented as the public games portal at midnight.fun/games, which pulls achievement and leaderboard data live from each game's PRC endpoints - no central database, the portal queries each game's node on the fly. It is open source and, built on EffectStream.\nLINKS TO REVIEW\nOutput: Design files for the achievement system webpage\nhttps://www.figma.com/design/vC06elYvCWonA7hCC64K2g/Paima-Portal?node-id=260-2267&t=1EkaROJh1DwwXTf4-1\nImplementation walkthrough video showing the live design in use: https://drive.google.com/file/d/1SSpY_nFAIm95b7v4LSEDhSywYgAkx0nK/view?usp=sharing\nPaima Portal source code \nhttps://github.com/PaimaStudios/paima-portal\nAchievement System\nhttps://effectstream.github.io/docs/blog/achievement-system\nExtended Specification for Game, Leaderboard and Achievements.\nhttps://github.com/effectstream/midnight-game-api-spec\n\n-----------------------\nCOMMENTS AND NOTES\nCatalyst Direction has reviewed and agreed on the following statement regarding this project and recorded under ticket #9527\n・Rebrand. Paima has rebranded as EffectStream and is part of the Midnight Foundation; links might now appear under the name of either of these entities. \n・Scope. For reviewers: milestones and deliverables should be evaluated against the approved acceptance criteria. The contents of each submission remain subject to reviewer assessment; examples or further implementations may reflect technical evolution of the Cardano ecosystem since approval \n・CrossChain: EffectStream is an open-source multi-chain framew",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 56100,
+      "promise": "Share the first draft of the achievement system website with the new design",
+      "criteria": "・Implementation of the designs from milestone 3 into both the open source website from milestone 2 and into the implementation partner’s website (if applicable)",
+      "report": "NOTE: Due to short timelines for this project, we have submitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA\nBRIEF\nThis milestone delivers the first draft of the achievement website with the new design implemented. The milestone 3 Figma design is built out in the open-source Paima Portal - the same website from the proof of concept, now carrying the full design system. For any wallet, it reads the achievements earned across games directly from each game's standard endpoints and renders them in one place, with no central database. The code is open source on GitHub, it is built on EffectStream, and it retargets the Cardano ecosystem by configuration.\nLINKS TO REVIEW\n1. Video - the implemented portal next to the M3 design:\nhttps://youtu.be/RIN7bFfWIWk\n2. Implemented website (open-source code):\nhttps://github.com/PaimaStudios/paima-portal\nAchievement portal component path inside the repo:\nhttps://github.com/PaimaStudios/paima-portal/tree/main/src/components/launchpad\n3. The M3 design it implements - Figma:\nhttps://www.figma.com/design/vC06elYvCWonA7hCC64K2g/Paima-Portal\n4. Write-up + docs:\nhttps://effectstream.github.io/docs/blog/achievement-system\nhttps://effectstream.github.io/docs/home/paima-standards/prc1\nhttps://effectstream.github.io/docs/home/components/achievements\n----------------------------------------------------------------\nCOMMENTS AND NOTES\nCatalyst Direction has reviewed and agreed on the following statement regarding this project and recorded under ticket #9527:\n・Rebrand. Paima has rebranded as EffectStream and is part of the Midnight Foundation; links might now appear under the name of either of these entities. \n・Scope. For reviewers: milestones and deliverables should be evaluated against the approved acceptance criteria. The contents of each submission remain subject to reviewer assessment; examples or further implementations may reflect technic",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 56100,
+      "promise": "Full release of the achievement system (integrate 3+ games and publicly available)",
+      "criteria": "A website that implements the achievement system with at least 3 games integrated",
+      "report": "NOTE: Due to short timelines for this project, we have submitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA. This milestone is totally independent.\nBRIEF\nThis milestone delivers the public release of the achievement system with three live games implementing the PRC standard - Safe Solver, Dust-2-Dust, and Block Kart Legends - all surfacing their achievements and leaderboards on the midnight.fun portal. The prior review noted Kachina was not yet integrated; it is now live alongside the other two. A player earns an achievement in any of the games and it appears on the portal next to their wallet, across all three. Open source, and chain-swappable to the Cardano ecosystem by configuration.\nNOTE the open sourced UI from the previous milestone was forked and reimplemented to match the style of the brand\nLINKS TO REVIEW\n\n1. Video - earn an achievement in a game, then see it on the portal:\nhttps://youtu.be/QHQvKbwnxVg\n\n2. Live - the three games + the aggregated portal:\nhttps://safesolver.midnight.fun/\nhttps://dust2dust.midnight.fun/\nhttps://blockkart.paimastudios.com/\nhttps://midnight.fun/games\n\n3. Code (each repo includes the achievement integration + frontend):\nhttps://github.com/effectstream/safe-solver\nhttps://github.com/effectstream/dust-to-dust\nhttps://github.com/effectstream/block-kart-legends\nStandard: https://github.com/PaimaStudios/PRC/blob/main/PRCS/prc-1.md\n\n4. Write-up + announcement:\nhttps://effectstream.github.io/docs/blog/achievement-system\nhttps://midnight.network/blog/introducing-midnight-fun\nhttps://x.com/MidnightNtwrk/status/2043388660188385620\n\n----------------------------------------------------------------\nCOMMENTS AND NOTES\nCatalyst Direction has reviewed and agreed on the following statement regarding this project and recorded under ticket #9527:\n・Rebrand. Paima has rebranded as EffectStream and is part of the Midnight Foundation; links might",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "8",
+      "cost": 55700,
+      "promise": "・PCR Video (dcSpark youtube)\n・PCR PDF Report (dcSpark drive) \n・A properly written specification on how to handle achievements in Paima\n・achievement system code on Github\n・achievement system website",
+      "criteria": "Community has the public access to all reports, announcements, website and specifications.",
+      "report": "NOTE: Due to short timelines for this project, we have submitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA. \nBRIEF\nThis is the Project Close Report for Catalyst proposal 1000138, \"Open standard for cross-game achievement system to gamify on-chain participation\". The project delivered PRC-1 (and the PRC-6 extension): an open achievement standard - two HTTP endpoints any game serves so any website can display progress for any game that speaks it - implemented in three live games (Safe Solver, Kachina Kolosseum, Block Kart Legends) and aggregated on the midnight.fun portal. The close-out video and report are below.\n\nLINKS TO REVIEW\n1. Close-out video \nhttps://youtu.be/yAeBan50hEg\n\n2. Close-out report \nhttps://drive.google.com/file/d/1-2zBRREazoCmwojpXXu8mSAffxzTvbVn/view?usp=sharing\n\n3. Standard, docs, code, live portal (OPTIONAL) from previous milestones\nhttps://github.com/PaimaStudios/PRC/blob/main/PRCS/prc-1.md\nhttps://effectstream.github.io/docs/blog/achievement-system\nhttps://effectstream.github.io/docs/home/paima-standards/prc1\nhttps://effectstream.github.io/docs/home/components/achievements\nhttps://midnight.fun/games\nhttps://github.com/effectstream/dust-to-dust\nhttps://github.com/PaimaStudios/pvp-arena\nhttps://github.com/effectstream/block-kart-legends\n\n----------------------------------------------------------------\nCOMMENTS AND NOTES\n\nCatalyst Direction has reviewed and agreed on the following statement regarding this project and recorded under ticket #9527:\n・Rebrand. Paima has rebranded as EffectStream and is part of the Midnight Foundation; links might now appear under the name of either of these entities. \n・Scope. For reviewers: milestones and deliverables should be evaluated against the approved acceptance criteria. The contents of each submission remain subject to reviewer assessment; examples or further implementations may reflect technical evolut",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 20,
+      "cut": true
+    }
+  ]
+}

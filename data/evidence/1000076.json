@@ -1,0 +1,80 @@
+{
+  "title": "Enable apps and games that require large amounts of data to function cheaply while still maximizing availability and safety",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 54000,
+      "promise": "・Add a way to parse Avail blockchain state from Paima to the Paima Engine codebase by extending the Paima funnel system and documenting it in the Paima Engine docs",
+      "criteria": "Implement an “Avail Funnel” in to the Paima codebase",
+      "report": "We have updated the codebase for the Paima Funnel (open source) here: https://github.com/PaimaStudios/paima-engine/tree/master/packages/engine/paima-funnel\n\nWe also added the necessary documentation to use the code to funnel information https://docs.paimastudios.com/home/react-to-events/funnel-types/intro\n\nSo right now we are able to connect funnels from multiple sources (as described in the documentation) which should be compatible with Avail. Now we need to implement a data extractor from the Avail side to connect it to Paima.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 54000,
+      "promise": "Add Avail wallet support to the Paima batcher system",
+      "criteria": "・Avail wallets able to be used in the batcher to post txs to Avail",
+      "report": "**Context:** Paima Studios merged into the Midnight Foundation, and Paima Engine was rebranded as EffectStream. We have rewritten the entire codebase from scratch - this is the third version. We listened to feedback, followed better practices, and improved overall quality. These events are why we are delivering now, but everything has been updated for the present. The originally planned Avail-only integration has been delivered as **dual support**: EffectStream ships generic DA primitives for both Avail and Celestia under the same grammar \n**A. Output: DA layer support in the batcher for posting transactions**\nAcceptance criteria: Wallets/batcher able to post transactions to the DA layer. Delivered as Celestia batcher posting: the batcher aggregates user transactions and posts them to Celestia for data availability. The batcher uses a Celestia light node for posting. This serves the same purpose as the originally described \"Avail wallet support\" - posting batched transactions to a DA layer.\nEvidence:\n- Template: https://github.com/effectstream/effectstream/tree/v-next-bun-start/templates/zswap-da\n- (Original code reference was `github.com/PaimaStudios/paima-engine` - code moved with the rebrand)\n- Avail is supported https://www.npmjs.com/package/@effectstream/wallets and Docs at https://effectstream.github.io/docs/home/chains/avail\n\n**B. Output: Blog post and documentation explaining the DA integration**\nAcceptance criteria: Public documentation explaining the Celestia DA integration, architecture, and how to run it locally.\nEvidence:\n- Blog post: https://effectstream.github.io/docs/blog/celestia-data-availability\n- Screenshots: Batch processor logs, DB tables, pipeline monitoring (5 screenshots in blog)\n- (Original docs URL was `docs.paimastudios.com/home/react-to-events/funnel-types/intro` - documentation moved with the rebrand)\n- Docs Celestia: https://effectstream.github.io/docs/home/chains/celestia\n\n**C. Output: Video demo of the DA integration**\nAcceptance cri",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 54000,
+      "promise": "・Support an easy way for developers to choose which part of their dApp goes on the DA layer and which goes on the settlement layer (or that it can go on either)",
+      "criteria": "・New features in Paima to facilitate specifying where specific app data gets stored",
+      "report": "LINKS TO REVIEW\n1. Video - layer-selection demo\nhttps://youtu.be/rDNAqkEpi7I\n\n2. Code - all primitives (each primitive = one layer choice):\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src\n\n3. Avail Generic primitive (a DA option):\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src/avail-generic\n3.B Celestia Generic primitive (a DA option):\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src/celestia-generic\n\n4. zswap-da template (worked example mixing a DA primitive with settlement-chain primitives in one state machine):\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/zswap-da\n\n5. Documentation:\nPart 1 - architecture: https://effectstream.github.io/docs/blog/celestia-data-availability\nPart 2 - when to use DA vs settlement, with the indexing pattern: https://effectstream.github.io/docs/blog/data-availability-part-2\nCardano chain reference (settlement-side primitives to compose against): https://effectstream.github.io/docs/home/chains/cardano\nSwitch to any supported chain: https://effectstream.github.io/docs/home/chains\n\n----------------------------------------------------------------\nCOMMENTS AND NOTES\n[summary of message] Catalyst Direction has reviewed and agreed on the following statement regarding this project and recorded under ticket #9527\n・Rebrand. Paima has rebranded as EffectStream and is part of the Midnight Foundation; links might now appear under the name of either of these entities. \n・Scope. For reviewers: milestones and deliverables should be evaluated against the approved acceptance criteria. The contents of each submission remain subject to reviewer assessment; examples or further implementations may reflect technical evolution of the Cardano ecosystem since approval \n・CrossChain: EffectStream is an open-source multi-chain framework focused on Cardano and Midnight, and the integration with other chains. Cha",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 19,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 54000,
+      "promise": "・Document the subtleties of when to use the DA layer",
+      "criteria": "・Using a DA layer like Avail is not always a clear win for a game, and so the Paima documentation should be very clear about which use-cases make the most sense and properly cover the implications in both design and cost",
+      "report": "NOTE: Due to short timelines for this project, we have submitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA. This milestone is totally independent and does not depend in any way on M2 and M3.\nBRIEF\nThis milestone documents when (and when not) to use a data-availability layer, with the design and cost implications - and demonstrates the decision in a working app. The guidance: DA is the right tool for many small public records, large blobs, and cold storage anchored by main-chain hashes - workloads where decentralisation matters but per-record settlement pricing does not make sense. DA is the wrong tool for single high-value transactions, real-time visibility, and private data. And a DA blob is only useful once indexed: the documentation covers the minimal state-transition shape, per-record indexing, idempotency, and decode-failure tolerance. The worked example is ZSwap: offers (high-volume, public, must-be-decentralised) go to Celestia, while completion and balances settle on the settlement chain. Avail and Celestia are interchangeable under the same EffectStream primitive grammar - the originally planned Avail-only support was delivered as dual support, both open source and complete; we focus on Celestia for the Cardano community - and Cardano is a first-class settlement option via UTxORPC, so the layer choice is per piece of data, by config.\n\nLINKS TO REVIEW\n\n1. Video - the decision matrix in action\nhttps://youtu.be/iADC2ahZmXs\n\n2. Documentation:\nPart 2 - When to use a DA layer, and how to index what you posted:\nhttps://effectstream.github.io/docs/blog/data-availability-part-2\nPart 1 - architecture:\nhttps://effectstream.github.io/docs/blog/celestia-data-availability\n\n3. Code:\nAvail Generic primitive (DA option):\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src/avail-generic\nCelestia Generic primitive (identical gra",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 15,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 54000,
+      "promise": "Implement a template that combines Cardano and Avail state into a single minigame. Project Close Report (video and pdf report) will be also shared.",
+      "criteria": "・ Public release of a template that implements the Avail system and combines it with Cardano state",
+      "report": "NOTE: Due to short timelines for this project, we have submitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA\nNOTE 2: We have updated the document and video according to specs and feedback\nBRIEF\nThis is the Project Close Report for Catalyst proposal 1000076, \"Enable apps and games that require large amounts of data to function cheaply while still maximizing availability and safety\", delivered across its milestones. The project gave EffectStream developers per-data-path layer selection: each piece of app data is routed by composing a primitive that declares its source - Cardano via UTxORPC for settlement, Avail and Celestia for data availability - so moving data between the settlement layer and a DA layer is a configuration change, not an app rewrite. The worked example is the ZSwap DA app, where high-volume offers go to Celestia while settlement stays on-chain. The close-out video (YouTube) and the close-out report (PDF) are below.\nLINKS TO REVIEW\n\n1. Close-out video \nhttps://youtu.be/QH2gkNcwKK0\n2. Close-out report \nhttps://drive.google.com/file/d/1mBEs5Wb7MkyzK1NaWFCGJFra_qFy3QTp/view?usp=sharing\n3. Open-source code\nzswap-da template Cardano + ZK Template\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/zswap-da\n\n----------------------------------------------------------------\nCOMMENTS AND NOTES\n\nCatalyst Direction has reviewed and agreed on the following statement regarding this project and recorded under ticket #9527:\n\n・Rebrand. Paima has rebranded as EffectStream and is part of the Midnight Foundation; links might now appear under the name of either of these entities. \n・Scope. For reviewers: milestones and deliverables should be evaluated against the approved acceptance criteria. The contents of each submission remain subject to reviewer assessment; examples or further implementations may reflect technical evolution of the Cardano ecosyste",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    }
+  ]
+}

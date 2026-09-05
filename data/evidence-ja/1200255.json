@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "コンテキスト: Cardano の zkPass は、開発者が Cardano ブロックチェーン上の zkPass またはアクスル認証を投稿、検証、利用できるようにスマートコントラクトです。 CardanoでDAppを使えるようにするツールです。\nタスク: スマートコントラクトのドキュメントを作成して、正確に何をするかを指定します。 さらに、CardanoでzkPassを使用するスマートコントラクト開発者に利用可能なAPIの説明を作成します。\n出力:\n・スマートコントラクト仕様(pdf)\n・API文書(pdf)",
+      "criteria": "・レポにスマートコントラクト仕様(pdf)をご覧いただけます。\n・APIのドキュメント(pdf)はリポジトリで確認できます",
+      "report": "スマートコントラクトのドキュメンテーションを作成しました。 さらに、CardanoでzkPassを使用するスマートコントラクト開発者に利用可能なAPIの説明を作成しました。\nスマートな契約の指定:\nhttps://docs.zkfold.io/other-zkapps/zkpass/\nAPI ドキュメント:\nhttps://docs.zkfold.io/other-zkapps/zkpass/#api"
+    },
+    {
+      "no": 2,
+      "promise": "コンテキスト: Cardano の zkPass は、開発者が Cardano ブロックチェーン上の zkPass またはアクスル認証を投稿、検証、利用できるようにスマートコントラクトです。 CardanoでDAppを使えるようにするツールです。\nタスク:スマートコントラクトのプロトタイプ(zkPassのoracle)を実行します。\n出力:\n・スマートコントラクト試作(ハッセル)",
+      "criteria": "・当社のレポでスマートコントラクトのプロトタイプ(ハッセル)が見つかります",
+      "report": "リポで見つけられるスマートコントラクトのプロトタイプ(zkPass oracle)を実装しました。\n出力:\n・https://github.com/zkFold/zkfold-base/blob/main/symbolic-cardano/src/ZkFold/Symbolic/Cardano/Contracts/ZkPass.hs"
+    },
+    {
+      "no": 3,
+      "promise": "コンテキスト: Cardano の zkPass は、開発者が Cardano ブロックチェーン上の zkPass またはアクスル認証を投稿、検証、利用できるようにスマートコントラクトです。 CardanoでDAppを使えるようにするツールです。\nタスク: コードを実装して、スマートコントラクトのトランザクションを構築します。\n出力:\n・オフチェーンコード試作(ハッセル)",
+      "criteria": "・オフチェーンコードプロトタイプ(ハッセル)は、レポで見つけることができます",
+      "report": "当社は、スマートコントラクトのトランザクションを構築するためのコードを実装しました。このコードは、リポで見つけることができます。\n出力\n・https://github.com/zkFold/zkpass-cardano"
+    },
+    {
+      "no": 4,
+      "promise": "コンテキスト: Cardano の zkPass は、開発者が Cardano ブロックチェーン上の zkPass またはアクスル認証を投稿、検証、利用できるようにスマートコントラクトです。 CardanoでDAppを使えるようにするツールです。\nタスク: ブラウザで実行するトランザクションビル(オフチェーン)コードを適応させます。\n出力:\n・クライアント側(ブラウザ)取引コード",
+      "criteria": "・クライアント側(ブラウザ)のトランザクションコードは、リポジトリに表示できます",
+      "report": "マイルストーン4完成!\n\nzkPassの統合のフロントエンド(クライアント側)コードを含むリポジトリを作成しました。\nhttps://github.com/zkFold/zkpass-client\nインテグレーションのコア API 機能は次のとおりです。\nhttps://github.com/zkFold/zkpass-client/blob/main/src/components/ZkPassApp.tsx\n\nそのほか、バックエンドサーバを実装し、クライアント側の部分をサポートしました。\nhttps://github.com/zkFold/zkpass-cardano\n具体的には、次のアップデートをコードに完了しました。\nhttps://github.com/zkFold/zkpass-cardano/pull/7/files"
+    },
+    {
+      "no": 5,
+      "promise": "コンテキスト: Cardano の zkPass は、開発者が Cardano ブロックチェーン上の zkPass またはアクスル認証を投稿、検証、利用できるようにスマートコントラクトです。 CardanoでDAppを使えるようにするツールです。\nタスク: ブラウザで実行するブロックチェーンのキーリングコードを適応させます。 zkPassからのフィードバックに基づいてスマートコントラクトコードを調整します。 また、オフチェーンコードに必要な修正を行います。 最後にクローズアウトレポートを作成します。\n出力:\n・クライアント側(ブラウザ)ブロックチェーンクエリコード\n・Finalizedスマートコントラクトコード(ハッセル)\n・Finalized JS/TSライブラリ\n・最終報告書(pdf)\n・最終クローズアウトビデオ",
+      "criteria": "・クライアント側(ブラウザ)のブロックチェーンクエリーコードは公開されており、リポジトリで見つけることができます。\n・Finalizedスマートコントラクトコード(Haskell)は一般に公開されており、当社のリポジトリで見つけることができます。\n・Finalized JS/TS ライブラリは公開されており、リポジトリにございます。\n・最終クローズアウトレポート(pdf)を公開し、レポでご覧いただけます。\n・最終映像はレポでご覧いただけます",
+      "report": "最終マイルストーン完成!\n・\n\n・クライアント側(ブラウザ)のブロックチェーンクエリコードへのリンク:https://github.com/zkFold/capital-quiz/blob/main/src/App.tsx\n・最終的なスマートコントラクトコードへのリンク(ハッセル): https://github.com/zkFold/zkpass-cardano/blob/main/src/ZkPass/Cardano/UPLC/ZkPassToken.hs\n・最終JS/TSライブラリへのリンク: https://github.com/zkFold/zkpass-client\n・Xの投稿へのリンク:https://x.com/zkFold/status/1929522424875196782\n・最終報告書へのリンク:https://github.com/zkFold/zkpass-cardano/blob/main/src/ZkPass/1200255%20-%20zkFold%20x%20zkPass%20Bring%20zkPass%20to20to20Cardano%20-%20out%20report.pdf\n・最終クローズアウトビデオへのリンク: https://youtu.be/LDsLXax1hp0?si=GtTEgYBmLg5305kl"
+    }
+  ]
+}

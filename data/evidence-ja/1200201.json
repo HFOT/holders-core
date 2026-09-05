@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "目的: 必要なインフラを設定し、チームを組み立て、プロジェクト管理慣行を定義することにより、プロジェクトのための確かな基盤を確立します.",
+      "criteria": "・プロジェクト管理ツールのセットアップ・提案\n・すべての活動計画のタスクの中断と進捗を github で公開します\n・開発チームメンバーの一覧が公開されます",
+      "report": "プロジェクト管理ツールとシステムの設定 Githubリンクの代わりに、より簡単にアクセシビリティのために、機能とプロジェクト管理能力がまだ同じである間、代わりにGoogleシートを使用します。\n・初期文書\n・https://docs.google.com/spreadsheets/d/1O0ynVTyZ7FwI-9i 5SPA5chq7aAnH1UbcGHVxVtTfs/edit?usp=sharing\n・必要なすべての API をリストアウト\n・https://github.com/sidan-lab/whisky/tree/master/packages/whisky/src/builder\n\n開発を担当するチームメンバーのリストが公開されます。 リンクは\n・https://drive.google.com/file/d/1RzlJq15OgDzadI2ykZ7kPjF7Yf9lCj/view?usp=sharing\n\nマイルストーン1投稿を拒否した審査者へ\nマイルストーンは、主に運営組織の設定、チームメンバーにタスクを割り当てることを目的としています。 私たちが提供した文書は、関連するすべてのチームメンバーと各人の役割と責任を示し、追加のガントチャートのタイムライン。 これにより、このツールは、プロジェクトの進捗状況を追跡し、すべてのコミュニティメンバーにチームを開示するなど、意図したことを完全に実行したことを示しています。\nWhiskeyリポジトリのbuilderフォルダに10個のAPIがリストされ、SDK開発用の機能ターゲットが先に設定されます。 これにより、マイルストーンで約束したすべての約束が完成しました。 マイルストーンの投稿を承認してください"
+    },
+    {
+      "no": 2,
+      "promise": "Objective: sem パッケージとパッケージの両方にコードベースを用意し、 rust の使用",
+      "criteria": "・コードベースを2つのスラストプロジェクトに分割\n・すべてのコアロジックと型を無駄にコンパイル\n・Rust SDKとWASMパッケージの両方の初期バージョンを公開",
+      "report": "ルートディレクトリ:\n・WASMパッケージ - https://github.com/sidan-lab/whisky/tree/master/packages/sidan-csl-rs\n・Rustパッケージ - https://github.com/sidan-lab/whisky/tree/master/packages/whisky\n\ncrate.io:\n・https://crates.io/crates/whisky\n\nnpm レジストリ:\n・ブラウザ:https://www.npmjs.com/package/@sidan-lab/sidan-csl-rs-browser\n・nodejs:https://www.npmjs.com/package/@sidan-lab/sidan-csl-rs-nodejs"
+    },
+    {
+      "no": 3,
+      "promise": "Objective: 既存のCSLロジックをメッシュcslに移行し、wasmパッケージの上に構築",
+      "criteria": "・MeshJSライブラリからメッシュcslに存在するすべてのCSLロジックを移行し、将来のMeshJS統合パターンのアップグレードの間隔を残します。\n・移行した機能をMeshJSライブラリに統合",
+      "report": "メッシュcslパッケージのルートディレクトリ(メッシュコアcsl)\n・https://github.com/MeshJS/mesh/tree/main/packages/mesh-core-csl\n\n公開されたメッシュcslのnpmレジストリ:\n・https://www.npmjs.com/package/@meshsdk/core-csl\n\nメッシュ csl は、ここで示すようにメッシュコアとよく統合されています。\n・https://github.com/MeshJS/mesh/blob/main/packages/mesh-core/src/core.ts\n・更新の一環として、メッシュコアライブラリは、より優れた保守性のために、すべての生のcsl構文を削除しました"
+    },
+    {
+      "no": 4,
+      "promise": "目的: オフノードトランザクション評価機能を開発し、メッシュと統合します。 providerの統合機能をrustパッケージで開発",
+      "criteria": "・オフノード取引評価の開発\n・ブロックチェーンプロバイダーの実装とMaestro&Blockfrostとの統合",
+      "report": "オフノード取引評価を開発\n・オフノード取引評価のコアロジックを実装\n\nブロックチェーンプロバイダの実装を開発し、Maestro&Blockfrostと統合\n・Maestroプロバイダー\n・ブロックフロスト提供\n\n公開されたrustパッケージで利用可能なドキュメントで利用可能な新機能 crates.io\n・Rustパッケージ v1.0.0\n・提供者文書\n\nメッシュコアパッケージで利用可能なドキュメントで利用可能な新機能\n・メッシュ統合実装\n・オフライン評価者統合文書の作成"
+    },
+    {
+      "no": 5,
+      "promise": "Objective: hex からトランザクション情報を系統的に解析する新しい機能を開発し、offchain コードユニットのテストを有効にします",
+      "criteria": "・後方トランザクションパーサーの開発 - トランザクションの六角を取得し、オブジェクトを錆びる\n・トランザクションパーサの上にオフチェーンコードユニットテストフレームワークを開発し、Cardano上のユニットテストオフチェーンコードに新しい開発者体験を導入",
+      "report": "マイルストーン完了の証拠 公開されたrustパッケージで利用可能なドキュメントで利用可能な新機能 crates.io\n後方トランザクションパーサーを開発 - トランザクション六角を取得し、オブジェクトを錆びる\n・導入 - https://github.com/sidan-lab/whisky/blob/master/packages/whisky/src/parser/mod.rs\n・ドキュメント - https://whisky.sidan.io/tx-parser/parse-transaction-cbor\n\nトランザクションパーサの上にオフチェーンコードユニットテストフレームワークを開発し、Cardano上のユニットテストオフチェーンコードに新しい開発者エクスペリエンスを導入\n・導入 - https://github.com/sidan-lab/whisky/blob/master/packages/whisky-common/src/tx tester/mod.rs\n・ドキュメント - https://whisky.sidan.io/tx-parser/unit-testing-transaction\n\nメッシュコアパッケージで利用可能なドキュメントで利用可能な新機能\n・txパーザーの機能をメッシュにエクスポート\n・https://github.com/MeshJS/mesh/blob/main/packages/mesh-core-csl/src/parser/index.ts\n・ドキュメント\n・https://meshjs.dev/apis/txparser/basics\n・https://meshjs.dev/apis/txparser/txtester"
+    },
+    {
+      "no": 6,
+      "promise": "・目的: コミュニティへの提案結果をもたらす、文書のフルセットを提供\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・ユーザー向けAPIに関するすべてのインラインドキュメントを完成し、公開ホスティングで簡単に参照できます。\n・フィードバック、質問、コミュニケーションのために、MeshJSとSIDAN Labの両方のコミュニティをホスティング\n・プロジェクトのクローズアウトレポートとビデオの準備\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "退会通知\n\n・資金調達文書に基づきPCRを改定\n・PCVは、次の流れに修正しました。\n・バックエンドとしてNextJS + ウイスキーを使用した迅速なデモ\n・コードベースウォーク\n・PCRのハイライト - チャレンジKPI、主要業績、次のステップ+レッスン\n\n参加申し込み\n\n・本プロジェクトがもたらす全ての新機能や変更に関する公開文書のフルセット\n・https://whisky.sidan.io/\n・プロジェクト成果物に関して、SIDAN Lab の Discord サーバーで専用チャネルを設定。 Link(s) は、プロジェクトの成果物を取り巻く\n・https://discord.gg/55Z25r3QfC\n・本プロジェクトが提供するすべての新機能について、MeshJSのdiscordサーバーで発表しました。 Link(s) は、発表時に提供いたします。\n・https://discord.com/channels/907191435864977459/907225368807735296/1385307289225003069\n・すべてのフィードバック、および質問はDiscordにあります。 Link(s) は、フィードバックと質問のために提供されます。\n・シダンとメッシュのずれ\n・一般公開プロジェクトクローズアウトレポートとビデオ\n・最終クローズアウトレポートへのリンク - https://docs.google.com/document/d/1xyredEHtBaob2G783 X fOWu6eksPmiZDvK lT3h8I/edit?usp=sharing\n・最終クローズアウト動画へのリンク - https://youtu.be/dk4KoLnksRY"
+    }
+  ]
+}

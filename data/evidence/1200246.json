@@ -1,0 +1,78 @@
+{
+  "title": "Wine Supply Chain Tracking and Reporting System",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 65000,
+      "promise": "A more intuitive data input flow and a reimagined data visualisation platform design.\nWine traceability capabilities matrix outlining the requirements for an exhaustive traceability system for wineries.",
+      "criteria": "Redesigned user experience associated with data input and visualisation components that will be validated via interviews / working groups with users and wineries. \nThe features traceability matrix for the traceability system will elaborate at an epic / story level the functionalities associated with a wine traceability system.",
+      "report": "We have successfully redesigned both data input and output flows - the new design is based on as series of collapsable dashboards enabling data capturing for each phase of wine producing process: winery & vineyards, grapes, bulk wines, bottled wines. For data presentation, we have adopted an approach based on multiple sections enabling presenting the end user with data that is relevant in specific usage contexts: EU label data (allergens and nutrients), sommelier data, winery and wine characteristics, general wine details, full wine details. \nThe designs can be located here: \nWe have aggregated the list of functionality that is expected from a supply chain tracking system based on interviews and discussions with multiple wineries. While we acknowledge that this might not be a complete list, this is the most exhaustive list we have collected so far and we shall keep this document as living document that will continue to be updated as we navigate this phase of the project. With some exceptions which we didn't plan to address in the first place, we seem to be covering a significant number of requirements. Potential further enhancements could include adding the ability to triangulate data with state agencies to ensure data input by wineries is valid as well as defining a solution for tracking the logistics of bulk / bottled wine. \nThe document outlining the traceability matrix for a wine supply chain tracking system can be found here:",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60000,
+      "promise": "Smart contract for:\n・Tokenizing individual bottles of wine integrated into the end to end solution.\n・Updating the tokens with latest info and digitised storage API in Hydra using partial commits/decommits.",
+      "criteria": "Accessible testing and audit reports of smart contracts.\nFunctioning contracts for individual bottle tokenisation and Hydra updates",
+      "report": "1. Milestone Overview\nThe goal was to design and deploy a blockchain-based solution that tokenizes individual wine bottles, enabling immutable digital representation and traceability. Additionally, the solution integrates with the wine storage facility for storage conditions tracking on L1 and L2.\n\n2. Description of Work Completed\nWe have delivered a fully functional blockchain tokenization system for individual wine bottles, backed by smart contracts and integrated off-chain infrastructure. Key accomplishments include:\n・Development of a smart contract system for token creation, updates, and lifecycle management. \n・Deployment of the tokenization service via a dedicated server-side API, integrated into our traceability platform Tracecork.com which is both our test environment but also available upon request for winemakers wanting to use our traceability system.\n\nVideo demo\nTokenization service source code\nFront End Implementation\nSmart Contracts:\nhttps://github.com/blazarlabs-io/wine-tokenization-cip68-updates-service/blob/main/src/Onchain/Blueprint.hs\nhttps://github.com/blazarlabs-io/wine-tokenization-cip68-updates-service/blob/main/src/Onchain/WineValidator.hs\nUpdate server service source code\n・Integration with L1 & Hydra to allow updates to token data, based on physical wine bottle events (e.g., storage conditions, movement, etc.),\n\nMint Tx \nUpdate Tx 1 \nUpdate Tx 2\nUpdate Tx 3\n・Comprehensive testing and auditing of the smart contracts and associated off-chain code.\n\nTests\nAudit\n\n3. Repository & Code Artifacts\nAll code and technical components related to this milestone are publicly available in the following GitHub repository :\n🔗 GitHub - wine-tokenization-cip68-updates-service\nGithub contents (Short)\n\n4. Smart Contract Details\nThe core of this milestone is the deployment of a CIP-68-compatible compliant smart contract system that enables the tokenization of individual wine bottles on the Cardano blockchain. \nThe smart contract system underpins the entire wine tok",
+      "kinds": [
+        "chain",
+        "code",
+        "doc"
+      ],
+      "links": 18,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 86000,
+      "promise": "Implementation of redesigned UI/UX for data input and visualization components - it will include several new control panels for wineries to manage grapes, bulk wine and bottled wine data as well as a distinct redesigned visualisation component for end users. \nCustom automated reports:\n・Grapes quantity register\n・Bulk wine report \n・Bottling register",
+      "criteria": "Deployed web application exposing the previously developed UX with the control panels for managing the grapes, bulk wine and bottled wine data as well as the new visualisation component. \nThree automated reports outlining the grapes, bulk wine and bottled wine data, including the ability to export the data in xls format.",
+      "report": "Due to limitations related to images in the milestone submissions module we have doubled this PoA text on google drive with images for easier understanding of the work results.\nVideo showing the functionality of the platform.\n\nRedesigned UI/UX for Data Input & Visualization\n1. Purpose & Scope\nThe primary goal of the UI/UX redesign was to turn WineOpSys into a clean, fast, intuitive interface for both operational staff and other users in the wine supply chain. Our design addressed two distinct user categories:\n・Winery Admins & Operators: Need fast, accurate tools to input and monitor data for grapes, bulk wine, and bottled wine.\n・End Users / Auditors / Partners: Require visually rich and clean dashboards that communicate real-time supply chain state and trends.\n\nThis milestone redefined both ends of that spectrum.\n2. Core Design Principles\nWe applied the following product and design principles throughout:\n・Clarity Over Complexity – Minimize cognitive load through clean interfaces, limited choices per view, and clear labels.\n・Speed to Action – Users can accomplish core tasks (log a harvest, update inventory, generate report) in ≤ 3 clicks.\n・Visual Truth – Replace lists with visual data where possible: charts, progress bars, status indicators, color-coded labels.\n・Device Flexibility – All UI designed for 1200px+ desktop and 768px+ tablets; touch controls considered from the start.\n\n3. Components Developed\nA. Control Panels\nEach control panel is a modular dashboard containing:\n・Dynamic DataGrid Tables with Inline Actions\n・Edit, delete, and duplicate entries in-place.\n・Status management (e.g., \"Pending\", \"In Storage\", \"Dispatched\").\n・Bulk actions and advanced filters (varietal, batch ID, date ranges).\n・Slide-in Form Drawer (MUI Drawer)\n・Appears on entry creation or edit.\n・Includes dynamic fields.\n・Input types: text, autocomplete, select, multi-date picker, file upload (photos, docs)\n・Real-time Save Feedback\n・Optimistic updates using React: changes appear instantly, sync",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 32500,
+      "promise": "Implemented multi-language support for 28 languages (EU).\nMoldova Wine Day event - report on activities and achievements in connecting with wineries from Moldova.\nArrangements and plans for Wine Exhibition in the relevant wine country of choice. \nMoldova Wine Office and Wineries meetup - report on wineries attendees, data presented, feedback and agreed next steps.",
+      "criteria": "Web app available in 28 additional languages.\nMoldova Wine Day (purpose: expand and strengthen the relationship with Moldovan wineries and market our platform and services) - detailed report on conducted activities including new relationships, contacts and leads.\nWine Exhibition (purpose: initiate a promotion campaign outside of Moldova by connecting with new wineries and marketing our platform and services at a global wine exhibition event) - detailed plan on event and activities (the event is planned for early 2025, hence the report on event results will be presented in final milestone). \nMo",
+      "report": "Multi-language support\nIn addition to fulfilling the planned objectives, we have delivered significant added value by developing not only four dashboards capturing the initial 75 data points, but also a wine-specific ERP system under it. This system’s scaled version incorporates:\n・Flexible task management functionality,\n・Smart actions contextualised to each stage of the wine production process,\n・Advanced quantity and planning widgets,\n・Storage and order management modules.\n\nThese enhancements substantially expand the scope of our platform, positioning it as a comprehensive end-to-end digital solution for wineries and thereby supporting higher adoption across the sector.\n\nThe planned milestone objectives have been fully achieved and, in several respects, exceeded:\n・Deployment of the web application in 28 EU (or infinite other) languages:\n・Video presentation demonstrating the platform’s functionality\n・Video outlining the translation solution implemented.\n\nLocal and international events (3)\n \n1) Wine Industry Digital Twins Event (self organised): \nExecution of the first Wine related event in Moldova, in collaboration with Cardano Foundation, International Organisation of Vine and Wine and Moldova Wine Office (ONVV). The opportunity came when we found out that the next OIV Congress is scheduled to be in Moldova. We managed to organize a 150 attendees, digital twins supply chain dedicated, side event in the very first day of the congress - 16 June 2025. Tudor Cotruta, cofounder of Blazar labs had a speech on this project and the team together with Cardano Foundation delegation have interacted with multiple local and foreign WIneries and wine related companies attendees.\n・Event video (1 hr) with full speeches of Tudor Cotruta and Jeremy Firster CF\n・After Event Promo Video (1.2 minutes)\n・Event link doubled on Lumo\n\n(The main way for attendees to find the event was the Main event’s app )\n\n2) Completion of preparations for participation in a global Wine Exhibition, including",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "15",
+      "cost": 43250,
+      "promise": "・Final close-out report\n・Final closeout video\n・Fully functioning web app\n・Solution documentation\n・Details on wineries outreach and successful onboarding\n・Wine Exhibition event report\n・Promotion materials & campaign",
+      "criteria": "・Final closeout report is publicly available.\n・Final closeout video is publicly available.\n・Deployed and working web app.\n・Solution documentation will include high level architecture viewpoints and description of key components. \n・List of wineries that we have targeted and onboarding rate.\n・Wine Exhibition event report will include new winery contacts, new clients and prospects, activities conducted with observations and new ideas captured from the interactions.\n・Promotional pdf document outlining our services and capabilities, including a promotion campaign plan in the form of a pdf document.",
+      "report": "・Final Closeout Report - publicly available via link\n・Final Closeout Video - publicly available on youtube via link\n・Fully functioning web app - login and pass provided to milestone reviewers in \"discussion\" and to interested parties - upon request at tudor@blazarlabs.io)\n・Solution documentation - public link via github\n・Details on wineries outreach and successful onboarding - publicly available via link\n・Wine exhibitions & events report (WineOpSys campaign) - publicly available via link\n・Promotion materials & campaign (latest):\n・(PROMOTION MATERIAL) WineOpSys Platform Video Presentation - publicly available via link \n・(PROMOTION MATERIAL) Events leaflet - publicly available via link\n・(PROMOTION CAMPAIGN PLAN) Marketing Plan - publicly available via link",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 9
+    }
+  ]
+}

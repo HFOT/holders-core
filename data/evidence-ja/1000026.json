@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・MuesliSwap DEXプロトコルとAtala Prismのデジタルアイデンティティシステムのレビュー\n・分散型アイデンティティレイヤーの設計統合アーキテクチャ\n・DID検証のためのスマートコントラクトインフラの定義\n\n配達可能:\n・インテグレーションアーキテクチャ:アタラ・プリズムのデジタル・アイデンティティ・システムがMuesliSwap DEXプロトコルに統合する方法を詳細に設計する。\n・スマートコントラクトインフラ:必要なスマートコントラクトの定義とDID検証のための機能。\n\nオリジナルの提案では、アタラプリズムで通信チャネルを確立することに言及しています(これは既に行われています)",
+      "criteria": "文書は明確な技術的な指導を提供し、異なる機能がどのように相互作用するかを記述する必要があります",
+      "report": "統合アーキテクチャの文書とスマートコントラクトの仕様は、https://drive.google.com/file/d/12JAXt9wLe9PwvxHKYV6KGABGhV-exkc-/view?usp=sharing にあります"
+    },
+    {
+      "no": 2,
+      "promise": "・DID検証のためのスマートコントラクトの開発・テスト\n・機能性・互換性の社内テストを実施\n・セキュリティ・性能問題の解決",
+      "criteria": "スワップを実行するDIDが要求されるトランザクションの証拠",
+      "report": "プロジェクトリポジトリのREADMEファイルには、すべての情報と関連要件が記載されています。\nhttps://github.com/MuesliSwapTeam/did-デックスレイヤー\n(査読者への注意: フィードバックありがとうございます。 README.md を調整し、追加のCANCELトランザクションプルーフを追加します"
+    },
+    {
+      "no": 3,
+      "promise": "・選択したユーザーや企業との外部ベータテストを実施\n・ユーザビリティ、有効性、コンプライアンスに関するフィードバック\n・受信したフィードバックに基づいてプロトコルを照らす\n・ユーザーエクスペリエンスの最適化と特定課題の解決",
+      "criteria": "プロトコルが動作し、文書がプロトコルを改善する方法の概要を報告するユーザー",
+      "report": "親愛なる査読者,\nベータテストが完了し、すべての機能リクエストを実装しました。 コードは完全にオープンソースで、https://github.com/MuesliSwapTeam/did-dex-layer で利用できます。\nまた、テストレポートを https://github.com/MuesliSwapTeam/did-dex-layer/blob/main/report/beta-testing.md に書いてリリースしました。 テストフェーズで識別されるすべての必要な変更が実装され、GitHubリポジトリに含まれています(ベータテストレポートのこれらの変更の詳細なリストを見つけることができます)。\nさらに、README.md(https://github.com/MuesliSwapTeam/did-dex-layer/blob/main/README.md)をアップデートし、最新の変更を反映しています。 最新の変更 https://github.com/MuesliSwapTeam/did-dex-layer/commit/e86bad4271c27c7824d74db3f52e9d6c97bdd6b9"
+    },
+    {
+      "no": 4,
+      "promise": "出力:\n・Finalized DEX プロトコル: 分散型アイデンティティレイヤーを持つ、 デプロイメントと商用利用の準備が整った DEX プロトコル。\n・文書化とユーザーガイド:企業や利用者がプロトコルとやり取りするための明確な指示とガイドラインを提供する包括的なリソース。\n・商業ローンチ戦略: マーケティング、アウトリーチ、およびプロトコルの商用ローンチのための導入戦略の文書化された計画。\n\n意図された Outcomes:\n・生産対応プロトコル: DEXプロトコルの最終化により、KYC準拠による分散型取引の安定性、安全性、および完全に機能的なソリューションを保証します。\n・利用者のエンパワーメント: ドキュメントとユーザーガイドは、ビジネスやユーザーが DEX プラットフォームに自信を持って参加し、DID 機能を有効に活用できるようにします。\n・効果的な商業ローンチ:よく計画されている商用ローンチ戦略により、採用を促進し、ユーザーのエンゲージメントを促進し、Cardanoエコシステム内のプロトコルの影響を最大限に高めます.",
+      "criteria": "完全な DEX プロトコルとその DID との統合を示すビデオ.",
+      "report": "親愛なる査読者,\n開発作業を続け、ここでリポジトリを再度見つけることができます: https://github.com/MuesliSwapTeam/did-dex-layer. 追加のユーザーガイド: https://github.com/MuesliSwapTeam/did-dex-layer/blob/main/README.md で README を拡張し、テストケースのカバーと使用方法を説明するガイドを追加しました。 https://github.com/MuesliSwapTeam/did-dex-layer/blob/main/TEST USER GUIDE.md.\nまた、PDFドキュメントにコンパイルした初期起動戦略を用意しました。https://drive.google.com/file/d/166QcECPrCFxUzUZlfzIv1FZifTI5GT44/view?usp=share link.\nアップデート: README の手順の一部を書き出し、より良い再現性のためにいくつかのスクリプトを修正しました。 また、DID オーダーブック契約について説明する追加のビデオを作成しました。https://drive.google.com/file/d/1HMivfdhfc0I5o187HRhsZYQ82NnvWffB/view?usp=sharing。 また、以前に使用したミンティングウェブサイトに関する懸念の一部に対処するために、DID マイニングをブラックボックスとして処理し、注文書の DID NFT の正しい使用を確認するのに役立ちます追加のミンティングスクリプトを追加しました。\nありがとうございます。\n最高の点、\nMuesliSwapチーム\nお問い合わせ\nREADME.md コマンドで作成したトランザクションの例はこちら\n・テストトークンミント https://preprod.cexplorer.io/tx/eecb4bfcc4062841642aa1c28c84fb65c7b852a620d3150b036524d070832994\n・トレーダーのためのDIDミント 1 https://preprod.cexplorer.io/tx/805e4514bc580413a28cdd58c7762b0ee252b78566f3ca4d3701a3be174bc4d1\n・新規注文トレーダー 1 https://preprod.cexplorer.io/tx/7f4f69e3a6050ce64450aff03f15d49535ae30f6896fe97cbcac1f208819bff1\n・キャンセル取引(DID) https://preprod.cexplorer.io/tx/9bbd326c481a746c05ae5f74605f097279ff1b0b0b8c25741a2fc3726fff986f\n・更新の最小充填量: https://preprod.cexplorer.io/tx/d84b3c4d11f72c5575421160e2522b97ae82bfbcd823b52318c73843e85aeaf7"
+    },
+    {
+      "no": 5,
+      "promise": "出力:\n・Deployed DEXプロトコル: プロトコルは、分散型の取引に使用するユーザーや企業がアクセスできるCardanoブロックチェーン上で正常にデプロイされます。\n・技術文書: 開発者のための統合プロセス、スマートコントラクト機能、運用ガイドラインにインサイトを提供する詳細なドキュメント。\n・学習したベストプラクティスとレッスン:Cardanoコミュニティと幅広いブロックチェーン業界と共有できる文書化された知識は、将来の開発を容易にします。\n・プロジェクトで行われた成果と、私たちが持っていた課題(最終マイルストーンの一部)を、ビデオとレポートで示します。 最終クローズアウトレポート、最終クローズアウトビデオ\n\n意図された Outcomes:\n・ライブおよびアクセス可能なプロトコル:デプロイメントは、Cardanoブロックチェーン上のセキュアで、KYCレイヤーで分散型の取引を可能にし、プロトコルが使用できることを確認します。\n・ナレッジの普及:技術文書とベストプラクティスの共有は、分散型プロトコルにおけるKYC機能の統合に関する広範なブロックチェーンコミュニティの知識と理解に貢献します。\n・継続的改善:学習したレッスンとベストプラクティスは、継続的な改善を可能にします",
+      "criteria": "・業界標準の品質である機能性製品・文書\n・最終報告書公開\n・最終クローズアウト映像",
+      "report": "A. 出力: デプロイされた DEX プロトコル: プロトコルは、Cardano ブロックチェーン上で正常にデプロイされ、ユーザーや企業が分散型の取引に利用できるようになります。\n証拠: DID DEX は、実装された DID オーダーブックのスマートコントラクトと統合し、Cardano Preprod ネットワーク上で動作します。 アプリケーションは、https://preprod.did-dex.muesliswap.com/ で利用可能です。 フロントエンドは、バックエンドサービスによってサポートされています。https://preprod.did-dex-api.muesliswap.com/docs.\nあなたの利便性のために、インターフェイスを実証する追加のウォークスルービデオを作成しました: https://drive.google.com/file/d/1mq16V4TZ6rRvxLvE1EHAXECt3BDn7mle/view?usp=sharing\nまた、Preprod のネットワーク上での取引例を準備しました。\n・DIDミントトレーダー1:https://preprod.cardanoscan.io/transaction/fe3e5e11da2cd707230e69da36c28391a2c47e7a129942ed850c12cc0f74d15e\n・DIDミントトレーダー2:https://preprod.cardanoscan.io/transaction/6f56cf20811b9a091900d4e1c289f1aa2ea7b87305280e8e1d3cc574c2bdf0e2\n・場所:https://preprod.cardanoscan.io/transaction/18520883a10376917cabcfea216cddc537ecef732320a8d464c8b6159d4909ec\n・注文: https://preprod.cardanoscan.io/transaction/b1cdfded1f2201d8b207fbba4ef87c359f4f28dc7b2219c3039d470b092bc215\n・Cancel/withdraw 充填リターン: https://preprod.cardanoscan.io/transaction/54736db24f9b62a70eaf1e5dd70065a5396fb20a6063c36b011a8b10907e\n\nすべてのコードは、オープンソースリポジトリで見つけることができます。 https://github.com/MuesliSwapTeam/did-デックスレイヤー\nB. 出力: 技術的な文書: 開発者のための統合プロセス、スマートコントラクト機能、および運用ガイドラインにインサイトを提供する詳細なドキュメント。\n.証拠: 私たちは、すべてのデザイン決定書を裏切る完全な技術的な文書を作成しました, コードベースとトレードオフの説明 https://drive.google.com/file/d/1LfpeXjzzUgyuvI8nEh3P2OE3jJtogJ5y/view\nC. 出力:ベスト"
+    }
+  ]
+}

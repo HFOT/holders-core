@@ -1,0 +1,10 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "マーローOracleプロトコルを定義し、Cardanoコミュニティ内での受諾と理解を確実にするために、詳細なCardano改善提案(CIP)を提出する必要があります。 Oracleの機能を完全にサポートするために、既存のMarloweバリデータとランタイムバックエンドを適応させ、Oracleデータの相互作用を効率的かつ安全に処理します。\nマーローオラクルの仕様を策定\n\n・Marlowe Oracle Protocol の正式な仕様書を文書化し、CIP の提出とステークホルダーのフィードバックにより反復\n・既存のMarloweインフラ上のプロトコル、技術的要件、機能性、統合ポイントの合理的かつ目的の特定。\n・Cardano改善提案リポジトリに提出されたCIP案のドラフト\n・CIPの構造の詳細は、以下の受入条件にてご提供いたします。\n・Oracleサービスプロバイダ(Wolfram Blockchain Labs、Charlie3、Orcfaxなど)とStakeholderエンゲージメントから収集されたフィードバック\n・オラクルサービスプロバイダの代表者とアンケートやオンライン会議を通じてフィードバックが集まります。\n\nマーローバリデータとランタイムの適応\n\n・Marloで使用されるフォーマットのドキュメント",
+      "criteria": "マーローオラクルの仕様を策定\n\n・フォーム仕様書を書いており、以下を含む。\n・プロトコルの概要と目的\n・システム機能全般の説明\n・メッセージ形式やデータ構造などのデータ定義\n・メッセージシーケンスやフローコントロールを含む全てのプロトコルの状態\n・例外管理を含むエラー処理\n・認証や暗号化などのセキュリティ対策\n・APIの詳細や通信チャネルを含むインターフェイス要件\n・試験・検証手順\n・オラクルデータポイントのメタデータを集計\n・キーターの定義",
+      "report": "A. 出力: 仕様書(CIP 文書による)をまとめたプロトコルリポジトリ。\n\n受諾条件: 形態指定は下に書かれます。\n\n証拠: https://github.com/marlowe-lang/marlowe-oracle-protocol/tree/main/CIP%20XXX%20Marlowe%20Oracle%20Protocol\n\nB. 出力:CF CIPリポジトリに提出されたCIP文書。\n\n受諾の基準: ドラフトCIPは正常に提出され、CF CIPレポで相互作用することができます。\n\n証拠: https://github.com/cardano-foundation/CIPs/pull/1179\n\nC. 出力: Oracleのサービスプロバイダからのステークホルダーミーティングとアンケート結果のドキュメンテーション、仕様更新によるフィードバック収集および対処。\n\n受諾条件:OracleのサービスプロバイダからのStakeholderの会合およびアンケートの結果は文書化され、フィードバックは指定の更新によって集められ、対処されます。\n\n証拠: https://github.com/marlowe-lang/marlowe-oracle-protocol/tree/main/feedback\n\nD. 出力: バリデータとランタイムの適応を完全に文書化し、プリプロド環境で展開します。\n\n受諾条件: 適切なライセンスとすべての更新されたコードで公開OSSのリポジトリへのリンク。\n\n証拠:\n※現在、新モノレポの分岐で大規模な開発が行われています。 モノレポはマロウプルタスと呼ばれています。\n\n*このブランチの変更には、マイルストーンの更新だけでなく、ランタイムアーキテクチャの簡素化、統合環境およびテストなどの改善に関連する膨大な量の作業が含まれます。\n\n* ブランチ自体は、https://github.com/marlowe-lang/marlowe-plutus/tree/paluh/validator-enhancements をご覧ください。\n\n* プレリリースPRは巨大で、ここで見つけることができます: https://github.com/marlowe-lang/marlowe-plutus/pull/17/files\n\n* バリデータ関連の変更:\n\n* 古いスクリプトは、任意のミントの機能が欠けていました (唯一の支出) と Plutus V2: https://github.com/marlowe-lang/marlowe-plutus/blob/main/marlowe-plutus/src/Language/Marlowe/Plutus/Script.hs#L212\n\n* 完全"
+    }
+  ]
+}

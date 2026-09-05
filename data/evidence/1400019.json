@@ -1,0 +1,58 @@
+{
+  "title": "by TxPipe - Early Aiken vulnerability detection using AI",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 28800,
+      "promise": "A. A technical architecture document describing the overall system design, including diagrams of the main components and their interactions.\nB. Publicly available source-code containing the initial project scaffold, with stub implementations for all major system components.\nC. A functioning CI/CD workflow to build and test the source-code throughout the whole development process.",
+      "criteria": "A1. The architecture document is published publicly, reflects the full scope of the proposal, and includes diagrams of the main components and their interactions.\nB1. The public repository contains the initial project scaffold with stub modules for each major component described in the architecture document.\nC1. A CI/CD workflow is active in the repository and successfully builds/tests the scaffold in preparation for further development.",
+      "report": "A2. Link to the published architecture document in the project repository.\nhttps://github.com/tx3-lang/trix/blob/feat/aiken-vulnerability-detection/design/003-ai-aiken-vulnerability-scaffolding.md\n\nB2. Link to the public GitHub repository containing the open-source code.\nhttps://github.com/tx3-lang/trix/tree/feat/aiken-vulnerability-detection\n\nC2. Link to a successful CI/CD run in the repository.\nhttps://github.com/tx3-lang/trix/actions?query=branch%3Afeat%2Faiken-vulnerability-detection \n\nD2. Video walkthrough of the designed architecture.\nhttps://youtu.be/SpN1GlbMH2s",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 26400,
+      "promise": "A. A functioning heuristic analysis engine with an initial set of rule-based detectors for common vulnerability patterns in Aiken code.\nB. Data files documenting the vulnerability patterns and rules applied by the engine.\nC. A CLI interface that allows developers to run heuristic scans locally.\nD. An evaluation dataset containing Aiken scripts with known vulnerabilities for testing.",
+      "criteria": "A1. The heuristic analysis engine can successfully scan Aiken code and deliver a structured report of found vulnerabilities.\nB1. The data files describing the vulnerability patterns and associated rules are publicly available and consistent with the implemented logic.\nC1. The CLI interface can be run by users and successfully executes heuristic scans end-to-end.\nD1. The model identifies and reports a non-zero number of known vulnerabilities when run against the evaluation dataset.",
+      "report": "A: https://github.com/tx3-lang/trix/actions?query=branch%3Afeat%2Faiken-vulnerability-detection\nB: https://github.com/tx3-lang/trix/tree/feat/aiken-vulnerability-detection/src/commands/audit/providers\nC: https://youtu.be/YI08LShlZ6s\nD: https://github.com/tx3-lang/trix-audit",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 26400,
+      "promise": "A. A fine-tuned language model capable of performing contextual analysis of Aiken code using Retrieval-Augmented Generation (RAG).\nB. A knowledge base and training dataset built from raw audit reports and related materials used for model fine-tuning.\nC. A CLI interface enabling developers to run LLM-powered analyses locally.\nD. An evaluation dataset containing Aiken scripts with known vulnerabilities for testing.",
+      "criteria": "A1. The fine-tuned language model can successfully generate context-aware analyses of Aiken code and deliver a structured report of found vulnerabilities.\nB1. The knowledge base and training materials used are publicly available and accurately reflect the data used to produce the model.\nC1. The CLI interface can be run by users and successfully executes LLM-powered analyses end-to-end.\nD1. The model identifies and reports a non-zero number of known vulnerabilities when run against the evaluation dataset.",
+      "report": "A2. A CI workflow action implemented on Github that shows a successful compilation of the vulnerability detection engine.\nhttps://github.com/tx3-lang/trix/actions?query=branch%3Afeat%2Faiken-vulnerability-detection\nB2. Link to the public repository on Github containing the fine-tuned model, knowledge base, and training materials.\nhttps://github.com/tx3-lang/trix/tree/feat/aiken-vulnerability-detection/src/commands/audit/providers\nC2. A video walkthrough demonstrating how to run LLM-powered analyses through the CLI, publicly available on YouTube.\nhttps://youtu.be/84I1nolxa2Q\nD2. Link to the public evaluation dataset, analysis outputs from test runs, and a report summarizing the results.\nhttps://github.com/tx3-lang/trix-audit",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 14400,
+      "promise": "A. Publicly available source code for the complete vulnerability detection system.\nB. Publicly available binaries for installing and running the user-facing tool.\nC. Publicly available documentation covering installation, configuration, and usage.\nD. A close-out video showcasing the final output of the project.\nE. A close-out report describing the project process and final outcomes.",
+      "criteria": "A1. The vulnerability detection system can be used to run both heuristic and LLM-powered analyses end-to-end as specified in the proposal.\nB1. The provided binaries allow developers to install and successfully run the tool on supported systems.\nC1. The documentation enables developers to install, configure, and use the tool without additional guidance.\nD1. The close-out video follows Catalyst guidelines.\nE1. The close-out report follows Catalyst guidelines.",
+      "report": "A2. Source-code available in our Github repository \nB2. Binary releases available for download\nC2. Documentation website\nD2. Close out video uploaded to YouTube\nE2. Close out report uploaded to Google drive",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

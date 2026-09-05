@@ -1,0 +1,45 @@
+{
+  "title": "Trace It: Driving Mass Adoption via Universal Traceability",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 25000,
+      "promise": "・Establish the foundational architecture for Trace It.\n・Deliver a clean, intuitive UX so non-technical users can easily create trace events.\n・Ensure the core workflow is fully functional end-to-end: event creation → submission → on-chain record → Explorer view. With full backend and front end capabilities required for MVP functionality.\n・Explorer module to provide transparency of on-chain records with user-friendly search and filter options.\n・JSON-based event records viewable on-chain\n・Wallet connection (crypto-first flow via wallets such as Lace, Eternl)",
+      "criteria": "・User can create and submit a trace event and see it recorded live on-chain\n・Event workflow tested end-to-end: creation → submission → Explorer view\n・UX validated through initial user testing sessions with ≥10 non-technical testers\n・Explorer returns accurate results for submitted on-chain events",
+      "report": "・User can create and submit a trace event and see it recorded live on-chain\n\nInside the video proof we can see we are submitting the trace event and that it is recorded on chain, link for the mainnet transaction here\n\n・Event workflow tested end-to-end: creation → submission → Explorer view\n\nTested by our team and 13 non technical people in our first closed beta, the event works end to end on mainnet and testnet, mainnet demonstration available in the video\n\n・UX validated through initial user testing sessions with ≥10 non-technical testers\n\nTRACE-IT EARLY ACCESS 1 FEEDBACK (Responses) file contains all the answers, need to check how to display that in the submission\n\n・Explorer returns accurate results for submitted on-chain events\n\nAs we can see in the video, Trace It allow users to create “public” records (available in the explorer) and “private” records (not available in the explorer), users who tested the platform left more than 40 new records, all contains transactions, their respective tokens, and decoded information of the payload in the user interface.\n\n・Video demo of event creation and Explorer search\n\nTrace IT - Catalyst M1.mp4\n\n・Explorer page has links to all on-chain transaction records per event\n\nAlso available in the video\n\n・User testing report with feedback summary and adjustments made\n\nFrom 15 total feedback entries by 13 unique non-technical participants, the data indicates a strong product foundation.\n\nHigh Satisfaction: User satisfaction is very high, with Overall Experience averaging 4.47/5 and Event Creation Ease at 4.80/5.\nClear Utility: The platform's use case for increasing supply chain transparency is clearly validated, with immediate application seen in small farming/producers and the mining sector.\nCritical Friction Points: Key areas for improvement are centered on workflow stability and automation:\n\n・Data Persistence: A critical bug causing complete form data loss when a user navigates back or encounters an error must be prioritized.\n・Trans",
+      "kinds": [
+        "chain",
+        "doc",
+        "other"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 20000,
+      "promise": "・Support for crypto, stablecoin and fiat / credit card payments\n・Simplified onboarding with user flows that do not require wallet setup.\n・Smooth user creation and login for both crypto and non-crypto audience (e.g via social logins such as Google).\n・Event cascading and trace preservation: ability to connect and reference existing trace records.",
+      "criteria": "・Users can sign up with email or social login and begin creating trace events without manual wallet setup\n・Successful payment in at least 3 modes (crypto, stablecoin, fiat) each triggering an on-chain event on Cardano\n・Trace preservation demonstrated by linking an event to a previous record\n・≥80% of pilot users able to onboard without prior crypto experience",
+      "report": "Outputs:\nSupport for crypto, stablecoin and fiat / credit card payments\nFor this output we created an embed wallet system and used Polar payment to make an in house solution, dealing with token prices and matching properly with the cost of creating records is done via an api that constantly returns how much records should cost BASED on an asset value. In our example we used the preview network and a self minted asset to simulate tUSDM, results can be found in the evidence of completion videos.\n\nSimplified onboarding with user flows that do not require wallet setup.\nOur video example was made to explain how embed wallets are created on user sign up using oAuth, email or github, they receive 2 wallet addresses (preview and mainnet) and a seed which we can HIDE or not from the user, based on the flow and user experience we want to create. Then we, if we are managing the wallet, or the user, can fill this wallet with required assets which we verify via their policy id + name hex. Wallets in this example are managed by the user and our server uses a zero knowledge system, where WE don’t have access to the user seed and can’t sign on the user behalf. This system can be easily changed to make an easy-to-use system where the user doesn't have to deal with wallets, filling it up, passwords or seeds.\n\nSmooth user creation and login for both crypto and non-crypto audience (e.g via social logins such as Google).\nWe moved away from connecting wallets and all authentication is handled via oauth, email or github access.\n\nEvent cascading and trace preservation: ability to connect and reference existing trace records.\nUsers can now create new records and reference old or new records, providing updates to its content. The record page displays the user reference and old versions of it. It is possible for the user to configure the record to enable anyone to reference it (as a fork) or to enable anyone in the user workspace/organization to reference it. \n\nEvidence of completion:\nPayment",
+      "kinds": [
+        "doc"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 20000,
+      "promise": "・Use-case Agnostic: Enable flexible, sector-agnostic customization of trace events.\n・Community Templates: Build a collaborative ecosystem of reusable templates for different use cases for the community to leverage (reducing time to build and customize from scratch).\n・Personal Template Module for each user (enables each user to create and save custom templates which are re-usable to ensure ease of use).\n・Import / Export options for sharing templates.",
+      "criteria": "・Users can create, save, and reuse their own templates for trace events\n・At least 10 public templates available in the community library\n・Import/export tested between 2 or more users successfully\n・≥5 unique sectors represented in template designs (e.g., agriculture, media, NGO, creative, retail)",
+      "report": "Output:\nUse-case Agnostic: Enable flexible, sector-agnostic customization of trace events.\nTrace It system enables users to create any type of events, not just events for important sectors and companies, but community and day to day events anyone may want to record.\n\nCommunity Templates: Build a collaborative ecosystem of reusable templates for different use cases for the community to leverage (reducing time to build and customize from scratch).\nTrace It now supports 2 modules which are workspace/organization templates, and community template explorer. The workspace templates are templates the user created (public or private) and favorite templates from the community. \n\nPersonal Template Module for each user (enables each user to create and save custom templates which are re-usable to ensure ease of use).\nInside the workspace/organization a single user or team members can now manage, save, create or delete templates, which could be private templates or public templates.\n\nImport / Export options for sharing templates.\nWith the template explorer it is very easy to find templates from the community, but it is also possible to “share” as each template creates its own link slug, you can use it to share with someone who may need or have a similar use-case, the template explorer is outside of the workspace/organization scope and as long as you’re authenticated you see then.\n\nEvidence:\nScreenshots and demo video of template creation, saving, and library browsing\nTemplate creation and explorer: template_creating_record.mp4\nTemplate sharing: template_sharing_example.mp4\n\nList of live community templates with descriptions\nVideo exploring community templates: template_explorer.mp4\n\nTransaction IDs linked to events created via custom templates visible on the public explorer.\nRecord creation from user template: template_creating_record.mp4\nTransaction: 5c0636cb6b8640758ab1554dcacb270257dd1566773dc07a318b6753c468132f\n\nPilot user survey results\nSurvey for Test 3",
+      "kinds": [
+        "doc"
+      ],
+      "links": 5
+    }
+  ]
+}

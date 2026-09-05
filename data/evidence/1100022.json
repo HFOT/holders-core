@@ -1,0 +1,59 @@
+{
+  "title": "Aiken Open-Source Smart Contract Library [by MeshJS & TrustLevel]",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 33960,
+      "promise": "Develop and implement a set of standard contracts within the Aiken Open-Source Smart Contract Library:\n- Marketplace (buy, update, cancel, purchase)\n- Swap (deposit, cancel)\n- Escrow (list, pay, report, dispute, claim)\n- Vesting\n- Gift card",
+      "criteria": "・Successful implementation of each contract.\n・Contracts pass testing and validation.\n・Documentation for each contract is created and accessible.",
+      "report": "Each of the 5 contracts of Milestone 1 including Aiken Workspace and Tx Builder can be found in our Github Repository. Additional, you can find the documentation also on our Website www.meshjs.dev:\n・Marketplace:\n\nhttps://github.com/MeshJS/mesh/tree/main/packages/contracts/src/marketplace\nhttps://meshjs.dev/smart-contracts/marketplace\n- Swap/Payment splitter:\nhttps://github.com/MeshJS/mesh/tree/main/packages/contracts/src/payment-splitter\nhttps://meshjs.dev/smart-contracts/payment-splitter\n- Escrow\nhttps://github.com/MeshJS/mesh/tree/main/packages/contracts/src/escrow\nhttps://meshjs.dev/smart-contracts/escrow\n- Vesting\nhttps://github.com/MeshJS/mesh/tree/main/packages/contracts/src/vesting\nhttps://meshjs.dev/smart-contracts/vesting\n- Gift card\nhttps://github.com/MeshJS/mesh/tree/main/packages/contracts/src/giftcard\nhttps://meshjs.dev/smart-contracts/giftcard\n\nVideo to demonstrate the use of the library:\nhttps://www.loom.com/share/1ad229892186475ab4c13c609173c130?sid=312de321-522d-4b8c-99af-15fd169358ff",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 23
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 33960,
+      "promise": "Implementation of a set of complex contracts showcasing advanced functionalities within the Aiken Open-Source Smart Contract Library.\n- Smart Contract NFT Minting\n- App Oracle Design Pattern\n- Content ownership guide",
+      "criteria": "・Successful implementation of each complex contract.\n・Contracts pass testing and validation.\n・Documentation for each complex contract is created and accessible.",
+      "report": "Milestone 2 includes advanced Smart Contracts, which includes NFT minting, Content ownership with each Oracle Design Patterns. Each contract includes the oracle scripts, Aiken Workspace and Tx Builder and can be found in linked Github Repository. Additional, you can find more about MeshJS and the complete documentation also on our Website www.meshjs.dev.\nVideo to demonstrate the use of the library:\nhttps://www.dropbox.com/scl/fi/lmrpn9h6dj0g83f3c1iko/Copy-aikenlib-m2.mov?rlkey=36fy2m9ixglmv3fnc5w4ek43f&st=sfbgbys5&dl=0\n\nSmart Contract Description:\n・Content Ownership:\n・Documentation: https://meshjs.dev/smart-contracts/content-ownership\n・Github Repository: https://github.com/MeshJS/mesh/tree/main/packages/mesh-contract/src/content-ownership\n\n Included Oracle Design Pattern:\n・Setup Oracle UTXO: Sends the NFT to the oracle contract locking the datum, which serves as single source of truth\n・Create Content Registry\n・Create Ownership registry\n・Get Oracle Data: Fetch the current state of the registry\n・Mint User Token: Mints token so user can create the content\n・Create content: Attaches the content to the registry\n・Get content: Fetches content data from the registry\n・Smart Contract NFT Minting:\n・Documentation: https://meshjs.dev/smart-contracts/plutus-nft\n・Github Repository: https://github.com/MeshJS/mesh/tree/main/packages/mesh-contract/src/plutus-nft\n\n Included Oracle Design Pattern:\n・Setup Oracle: Mint one-time minting policy to set up the oracle\n・Mint Token: Mint NFT that ensures the token name is incremented by a counter\n・Get Oracle Data: Fetch the current oracle data to get the current NFT index and other information",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 28300,
+      "promise": "Creation of a set of intentionally bad contracts within the Aiken Open-Source Smart Contract Library to serve as learning resources for developers.\n- prepare 5 education materials, using milestone 1 contracts, and broke it with common mistakes\n- have 2 workshops and recorded to cover these common mistakes and fix the contracts",
+      "criteria": "・Successful implementation of each bad contract.\n・Contracts pass testing to ensure they exhibit specific issues.\n・Documentation detailing the flaws and potential fixes is created and accessible..",
+      "report": "Dear MR,\nwe’ve updated the repository to address your requested changes:\n1. Documentation & Demo Links:\nEach of the five “Bad Contracts” includes a README with:\n・A warning that this contract is part of the List of Bad Contracts, created for educational purposes.\n・Direct links to both workshop recordings where we demonstrate and explain these contracts in detail.\n・Additional documentation about:\n・The working mechanism of each error.\n・Detailed source code illustrating how to fix the error.\n・Evidence of contract testing by using the command “aiken check”.\n\n2. Workshops\nBoth workshops go into detail on how to analyze and learn from these contracts. In addition they are embedded in the Gimbalabs & Andamio Aiken Learning Course, which provides additional structure and context for developers:\n・Youtube Playlist: https://youtube.com/playlist?list=PLCCIAmutGEbemjDkJQLy4nouU9UccK4wq&si=OyqvlxZB7ERYQHb_\n・Andamio Platform: https://app.andamio.io/course/aiken-pbl-2024\n\n3. Resources:\n・Updated Contracts:\n・Unbound Value\n・Infinite Mint\n・Insufficient Stake Control\n・Locked Value\n・Double Satisfaction Vulnerability\n・Workshop Recordings (also embedded in the Gimbalabs Aiken Learning Course):\n・Workshop 1\n・Workshop 2\n・Repository Overview:\n・https://github.com/MeshJS/mesh/tree/main/packages/mesh-contract#list-of-bad-contracts",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 16980,
+      "promise": "This final milestone includes all close-out and project completion activities. \n﻿Outputs will include a project completion video and the completion report.",
+      "criteria": "・Completed close out video\n・Completed close out report",
+      "report": "Close out report: https://docs.google.com/document/d/1xLxBYmSD6ETHI_qypZoZ65k9LiS79Z_WLFGxYfWZJTA/edit?usp=sharing\nClose our video: https://vimeo.com/1077062487?share=copy",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "title": "Boros: Tx submission for intense workloads by TxPipe",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 39750,
+      "promise": "・Publicly available source-code containing the project scaffold\n・A stub of the fanout mechanism that includes the relevant API interface\n・A stub of the monitoring mechanism that includes the relevant API interface\n・A stub of the smart-submission mechanism that includes the relevant API interface",
+      "criteria": "・The interface for the fanout mechanism matches the feature requirements\n・The interface for the monitoring mechanism matches the feature requirements\n・The interface for the smart-submission mechanism matches the feature requirements\n\nThe complete list of requirements is available in the README of the repository and matches the proposal.",
+      "report": "We have completed the goals for milestone 1:\n・The publicly available source-code containing the project scaffold can be found in our Github repository\n・A stub of the fanout mechanism that includes the relevant API interface is available as part of the source code\n・A stub of the monitoring mechanism that includes the relevant API interface is available as part of the source code\n・A stub of the smart-submission mechanism that includes the relevant API interface is available as part of the source code\n・A walkthrough video of the code developed so far is available in YouTube",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 39750,
+      "promise": "・publicly available source-code for the tx fanout mechanism\n・documentation on how to configure the fanout mechanism\n・report with benchmarks and integration test results",
+      "criteria": "・the fanout mechanism propagates transactions to peers successfully\n・the fanout mechanism connect to multiple peers simultaneously using node-to-node protocols\n・a static topology can be provided via configuration and it's honored by the fanout mechanism.\n・a dynamic topology can be constructed automatically using on-chain relay data from pool certificates\n・a dynamic topology can be constructed via p2p networking using the peer sharing mini-protocol.",
+      "report": "Milestone 2 Submission Report\n\nProject: Boros – Tx Submission for Intense Workloads by TxPipe\nMilestone: Fanout Mechanism\nDate: 02/12/25\nOverview\nThis milestone focuses on developing and validating the tx fanout mechanism for propagating transactions across multiple peers in the Cardano network. The fanout mechanism is designed to support both static and dynamic topologies and leverages node-to-node protocols to ensure efficient transaction propagation.\nDeliverables\nThe following outputs have been delivered as part of Milestone 2:\n・Source Code: GitHub Repository\n・Documentation: Documentation\n・Test Reports: View Test Report\n・Video Demonstration: Watch Video Demo",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 39750,
+      "promise": "・publicly available source-code for the persistence mechanism\n・publicly available source-code for the monitoring mechanism\n・publicly available source-code for the retry mechanism\n・documentation on how to configure the new features\n・report with benchmarks and integration test results",
+      "criteria": "・tx requests are successfully persisted in message queues for each of the available backends\n・transaction lifecycle is monitored by the system and the status for each item is queryable in real-time.\n・transactions which timeout or are rolled-back get retried according to the configured policy.",
+      "report": "Milestone 3 Submission Report\nProject: Boros – Tx Submission for Intense Workloads by TxPipe\nMilestone: Persistence, Monitoring and Retry logic\nDate: 02/21/25\nOverview\nThis milestone focuses on implementing persistence, monitoring, and retry mechanisms for transaction processing. The system ensures that transaction requests are reliably stored in message queues. A monitoring component tracks the transaction lifecycle, providing real-time status updates, while a retry mechanism ensures that failed transactions are reprocessed. These features enhance the reliability and resilience of transaction propagation in the Cardano network.\nDeliverables\nThe following outputs have been delivered as part of Milestone 3:\n・Source code for persistence mechanism\n・Source code for monitoring mechanism\n・Source code for retry mechanism\n・Documentation: Documentation\n・Test Reports: View Test Report\n・Video Demonstration: Watch Video Demo",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 39750,
+      "promise": "・publicly available source-code for the tx-chaining logic\n・publicly available source-code for the priority queue logic\n・publicly available source-code for the server-side signature mechanism\n・documentation on how to configure the new features\n・report with benchmarks and integration test results",
+      "criteria": "・the submission process maintains affinity of chained txs to the same upstream peer.\n・different priority queues can be configured and the system prioritizes submission accordingly.\n・flagged transactions are automatically signed by the system using a Hashicorp Vault service.",
+      "report": "Milestone 4 Submission Report\nProject: Boros – Tx Submission for Intense Workloads by TxPipe\nMilestone: Smart Submission Features\nDate: 04/21/25\nThe following outputs have been delivered as part of Milestone 4:\n・Source code for Tx-chaining logic\n・Source code for Priority queue \n・Source code for Server-side signature\n・Docs for Tx-chaining logic \n・Docs for Priority queue \n・Docs for Server-side signature \n・Test Reports: View Test Report\n・Video Demonstration: Watch Video Demo",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 39750,
+      "promise": "・publicly available source-code of the complete system\n・a close out video showcasing the final output of the project\n・a close out report describing the project process and outcome",
+      "criteria": "・the final system can be used as a backend for bulk transaction submission.\n・the final video complies with Catalyst requirements.\n・the final report complies with Catalyst requirements.",
+      "report": "Documentation: https://docs.txpipe.io/boros\nClosing report: https://drive.google.com/file/d/1cMUCOVPI-yFuPtC4LvJvRp6UGtR2jc0s/view?usp=sharing\nClosing video: https://youtu.be/y9iGRn55zkw?si=z-2cwf9c9k8hJ6xP\nPublic repository: https://github.com/txpipe/boros",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 9
+    }
+  ]
+}

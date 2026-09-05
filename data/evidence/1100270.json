@@ -1,0 +1,65 @@
+{
+  "title": "Supply Chain Tracking & Storage Monitoring System",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 27000,
+      "promise": "1. Indexing Mechanism Concept Development + one working example\n2. 2 Wineries selection and tracking specifications",
+      "criteria": "1. Being able to index a vineyard from winery and maps data\n2. Successfully index 2 vineyards related to an existing wine that is in the prebottling maturing stage.",
+      "report": "POA 1 Video:\nhttps://drive.google.com/drive/folders/1oxtEpUtpNAWsOZ3L6RIqN24COdTVKZNO\n\nTwo wineries onboarded: \n・Atu Winery - https://atu.wine/ \n・Minis Terrios - https://www.ministerrios.com/en\n\nEach winery has provided an initial set of tracking specifications which are required in the context of the current EU regulations. This data can be accessed on our platform wines.blazarlabs.io/explore. (Click \"view details\" for both Atu and Minis Terrios wines)\nAtu Winery has additionally filled the broader supply chain tracking questionnaire here: https://docs.google.com/spreadsheets/d/11i-3fquiYscufzUoYInrcddHtjMICYc9g5oSMd3Pqgc/edit?pli=1#gid=0\nWe have got in contact with over 30 Moldovan wineries to start communication about the broader supply chain tracking features and continuing to have multiple discussions with several of them.\nList of the contacted wineries and status of discussion can be found here: https://docs.google.com/spreadsheets/d/1qBA8fiUToO3NA82jAfQu-KS3QCouuhhhaq87CheDjns/edit?usp=sharing\n\nMapping System\n・The mapping system and all the code can be found here: \n\nGeneral Github: https://github.com/blazarlabs-io \n・Mapping system components links:\n\nhttps://github.com/blazarlabs-io/wine-app/tree/develop/src/components/widgets/MapComponents\nhttps://github.com/blazarlabs-io/wine-app/tree/develop/src/components/molecules/Maps\n・The working system can be found at: https://wines.blazarlabs.io/wine/TnTRm-1713606476762\n\nThe functionality of the mapping system can be found in our POA 1 Video explanation: https://drive.google.com/drive/folders/1oxtEpUtpNAWsOZ3L6RIqN24COdTVKZNO",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 14
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 28000,
+      "promise": "・Winery data imput webapp created and hosted on our servers (one pager, form, database)\n・Smart contracts for asset tokenisation, this will include developing and integration testing the contracts in relation to a database (including the database structure mapping) that will store the data collected from wineries as well as to IPFS where the data will be copied to once the asset is tokenised, this data will be referenced within the NFT representing the tokenised asset itself. It will also ensure the secure asset storage and information update processes as well as building and testing automated blockchain transactions.",
+      "criteria": "・The web app - we are able to generate a link for the winery to open the form, answer all questions and data be stored in our database to be used for tokenisation.\n・The smart contract is able to gather the information from the winery's data, create the token with IPFS/or other storage link showing this data",
+      "report": "Winery data input web app - the application is implemented and can be found here:\nhttps://wines.blazarlabs.io/explore\nIt includes a form that enables capturing the detailed list of parameters that we want to track as part of the supply chain tracking system. Besides the data input functionality, we have implemented the functionality to visualise data as well as integrated the mapping system components into the relevant forms. The data is stored in the database (details on the data models are shown in the PoA video) and it is then uploaded to IPFS as a dependency for the smart contract to use it as reference data for the tokenisation process. The code can be found here:\nhttps://github.com/orgs/blazarlabs-io/repositories\n\nThe smart contract implementation is also done - the smart contract, minting policies and other components required for tokenisation process demonstration including how the tokenisation process works is demoed in the PoA video and the code can be found here:\nhttps://github.com/blazarlabs-io/wine-contracts\nDocumentation on implementation and usage of smart contracts is also added in github. In the folder below a video detailing what has been implemented for this milestone including the demo of the functionality and associated details:\n\nhttps://drive.google.com/drive/folders/1--grAHILZyBYdZWZGvm2NKTVmZW_Y-cC?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "1. User platform for visualising wine data\n2. Local informational campaign\n3. Smart contracts and software bringing storage info onchain through Hydra implementation",
+      "criteria": "1. We must ensure user access through QR Code or wallet connection to view the data block about a batch or bottle of wine including storage data.\n2. We must ensure capability of non interrupted feed from storage data updating the wine tokens.",
+      "report": "The outline of the whole milestone work can best be understood in the video with our Cofounder Tudor Cotruta, senior full stack developer Fito Segrera and our smart contract developer Rhys Morgan:\nhttps://drive.google.com/file/d/10aLcYkCKAt031Vl0nn3ACeOqrcGX6H2r/view?usp=drive_link\n\n1. User platform for visualising wine data (check video): \nLive Platform link: https://wines.blazarlabs.io/explore\nGithub Wine APP code: https://github.com/blazarlabs-io/wine-app/tree/feature/tokenization-integration\n\n2. Local informational campaign (check video):\nLeaflet Eng: https://drive.google.com/file/d/1FXi6I0taQz-jT2iZs27yCEYi4uhh3WkR/view?usp=sharing\nLeaflet Ro: https://drive.google.com/file/d/1yqtD-3ws6VKWiOegjM_ajgm3kGDFmzqo/view?usp=sharing \n\nInformational campaign report (check video):\nhttps://x.com/BlazarLabs/status/1836012205508305067\nAdditionally we organized an email campaign where sent our booklet and wrote about our products to over 100 Moldovan wineries.\n\n3. Smart contracts and software bringing storage info onchain through Hydra implementation (check video)\nWine contracts Github: https://github.com/blazarlabs-io/wine-contracts",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 13
+    },
+    {
+      "no": 4,
+      "month": "19",
+      "cost": 15000,
+      "promise": "1. Software and associated documentation showcasing the concept of wine supply chain tracking and digital wine storage\n2. Cardano Communication campaign on the new tech.",
+      "criteria": "・Demonstrate a fully functional on-chain system for wine supply chain and DWS tracking including smart contracts, code, webapp form, and instructions on Github.\n\n・Lay groundwork for subsequent phases, including process tokenization and blockchain integration in a text and diagrams document",
+      "report": "Project closeout Video Report\n1. Summary of What Was Done\nThe Wine Supply Chain Tracking & Storage Monitoring System was envisioned as a Proof of Concept (PoC) to explore anchoring a wide range of data elements - static, variable, and high-frequency associated with the wine-producing process onto the Cardano blockchain. The core objective was to ensure data validity and enhance wine traceability, ultimately strengthening end-consumer trust.\nAlthough the project focused on the wine industry, the blockchain integration principles and codebase developed here are applicable to any context where trustworthy data anchoring is required. One direct continuation is our Digital Product Passport (DPP) platform, which extends these concepts to textiles, manufacturing, and other regulated supply chains.\nThe project demonstrated the technical feasibility of:\n・Anchoring high-frequency sensor data via Hydra Layer 2 from distributed storage devices (temperature, humidity, light, etc.).\n・Anchoring static and semi-static production data via smart contracts using the CIP-68 token standard.\n・Integrating these on-chain components with a lightweight frontend application that captures and renders vineyards, batches, and storage conditions.\n\nWe successfully delivered everything committed under this proposal, including a working frontend application integrated with a Cardano smart contract for data anchoring and IPFS for off-chain storage. All code is fully open source, enabling other teams to leverage and extend the assets developed by us.\nBeyond the technical scope, this project helped us establish broad connections within both the Cardano ecosystem and the wine sector in Moldova and abroad. Collaboration with wineries and institutions such as ONVV surfaced concrete pain points in data management and compliance reporting. These insights led directly to the design of our follow-up Catalyst project, Wine Supply Chain Tracking & Reporting System (WineOpSys), focused on real-time, dashboard-dr",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 39,
+      "cut": true
+    }
+  ]
+}

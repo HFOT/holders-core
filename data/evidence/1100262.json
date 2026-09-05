@@ -1,0 +1,54 @@
+{
+  "title": "Soulbound Tokens",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "・Project Initiation and Architecture Design Document\n・Open Source GitHub repo with Soulbound Tokens Smart Contracts\n・Open Source GitHub repo with CIP for Soulbound Tokens",
+      "criteria": "・Project Initiation and Architecture Design Document is in shape and form and clearly expose the project requirements and solution design\n・Successful implementation of Soulbound Tokens in Cardano: tokens can be minted and claimed by users\n・Draft CIP for Soulbound Tokens is ready",
+      "report": "This is the Proof of Achievement document for Milestone 1 of Soulbound Tokens Project: https://docs.google.com/document/d/1S8EGcYC3iCmJU6IbEBOwPASRy_30RjKrheBppnwImEA/edit?usp=sharing\nThere you can find:\n・Project Initiation Document\n・Architecture Design Document\n・Open Source GitHub repo with Soulbound Tokens Smart Contracts source code\n・Open Source GitHub repo with draft CIP for Soulbound Tokens\n\nAcceptance Criteria\n・Project Initiation and Architecture Design Document clearly expose the project requirements and solution design\n・Soulbound Tokens can be minted and claimed by users - example and evidence on how to do this is clearly detailed in the README file of the AdaSouls/Cardano-Soulbound repo\n・Draft CIP for Soulbound Tokens is ready on the AdaSouls/CIPs repo",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "・UI/UX Designs\n・AdaSouls Front-End interacting with Soulbound Tokens in Cardano (MVP)\n・Testnet Integration Report",
+      "criteria": "・Front-End MVP implements designs correctly\n・Front-End MVP implements all functions of AdaSouls smart contracts (mint/claim of tokens)\n・Testnet Integration Report shows that all features have been successfully tested",
+      "report": "This is the Proof of Achievement document for Milestone 2 of Soulbound Tokens Project: https://docs.google.com/document/d/13jhQaBGUis9QepYaDjGJDNMoDTQEHcVQ98Lrg3KyT0A/edit?usp=sharing\nThere you can find:\n・UI/UX Designs\n・AdaSouls Front-End interacting with Soulbound Tokens in Cardano (MVP)\n・Testnet Integration Report\n・Open Source GitHub repo with Soulbound Tokens Smart Contracts source code\n\nAcceptance Criteria\n・Front-End MVP implements designs correctly\n・Front-End MVP implements all functions of AdaSouls smart contracts (mint/claim/burn of tokens)\n・Testnet Integration Report shows that all features have been successfully tested and integrated",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "・Open Source GitHub repo with REST API code\n・AdaSouls API implementation (Front-End extended to support API)\n・Documentation for REST API & Notification System\n・Documentation for AdaSouls\n・AdaSouls Website targeting Mainnet Cardano Network",
+      "criteria": "・Front-End implements the AdaSouls API correctly and works as expected\n・Tokens can be minted/claimed on Mainnet Cardano Network\n・All documentation is ready and publicly accessible for both the REST API and the AdaSouls protocol",
+      "report": "This is the Proof of Achievement document for Milestone 3 of Soulbound Tokens Project: https://docs.google.com/document/d/1lTMn0-HME7ZVz3CEoWeS9Xks5pso4duXKtLjTEpOAa8/edit?usp=sharing\nThere you can find:\n・Open Source GitHub repo with REST API code\n・AdaSouls API implementation (Front-End extended to support API)\n・Documentation for REST API & Notification System\n・Documentation for AdaSouls\n・AdaSouls Website targeting Mainnet Cardano Network\n\nCorrections done based on reviewers feedback\n・Front-end has been updated to fix issues with Mainnet integration\n・Refer to Showcase Video (https://youtu.be/ldkNd-ow-_o) to understand how front-end works and be able to mint & claim a Soulbound token. Please, keep in mind that Soulbound Tokens won't be in your wallet because they are locked in a smart contract (this is how the protocol works). Only valid stake address can claim the token, so if you can build the transaction, that means the validation works. \n・You will need 2 wallets to test, as shown in the video: one to mint and issue the token to another wallet, and this last wallet to be able to claim it.\n\nAcceptance Criteria\n・Front-End implements the AdaSouls API correctly and works as expected\n・Tokens can be minted/claimed on Mainnet Cardano Network\n・All documentation is ready and publicly accessible for both the REST API and the AdaSouls protocol",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 15000,
+      "promise": "・Project Closure Report\n・Final Soulbound Tokens CIP\n・Showcase video for AdaSouls\n・Demo: how to mint/claim a Soulbound Token",
+      "criteria": "・Project Closure Report has been submitted in shape and form\n・The final version of the Soulbound Tokens Smart Contracts is available for public access\n・The final version of the Soulbound Tokens CIP is available for public access\n・Showcase videos clearly detail the process of creating/claiming a Soulbound Token in Cardano and what the project is about",
+      "report": "This is the Proof of Achievement document for the Final Milestone of Soulbound Tokens Project: https://docs.google.com/document/d/1CdeABhJCbrQXIsBYxqrznJMcT_R9fCMjotwRgyzt-pQ/edit?usp=sharing\nThere you can find:\n・Project Closeout Video\n・Project Closeout Report\n・Final Soulbound Tokens CIP\n・Showcase video for AdaSouls\n・Demo: how to mint/claim a Soulbound Token\n\nAcceptance Criteria\n・Project Closeout Report has been submitted in shape and form\n・Project Closeout Report includes the link to the Project Closeout Video\n・The final version of the Soulbound Tokens Smart Contracts is available for public access\n・The final version of the Soulbound Tokens CIP is available for public access\n・Showcase videos clearly details what the project is about, its key milestones and all its achievements\n・Demo video clearly detail all features of the AdaSouls platform, including the process of creating/claiming a Soulbound Token in Cardano",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    }
+  ]
+}

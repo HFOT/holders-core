@@ -1,0 +1,83 @@
+{
+  "title": "Cardano Layer 2: Hydrozoa protocol for lightweight and flexible Hydra Heads for Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "・Specification document for on-chain validators and minting policies.\n・Specification document for the auxiliary deterministic algorithms.\n・Specification document for the async messaging protocol.\n・Specification document for the architecture of Hydrozoa components.\n・Open-source project repository and project board populated with expected Milestone 2 tasks/issues.\n\nResponse to Reviewer 1’s comments on 2024-08-13:\nTentative TOC for on-chain validators and minting policies:\n・Hydrozoa head minting policy\n・Hydrozoa head state validator\n・Hydrozoa deposit validator\n・Hydrozoa contestation mechanism validator\n\nTentative TOC for auxiliary deterministic algorithms:\n・AlgoSettle – deterministic algorithm to construct a tree of settlement transactions\n・AlgoDissolveCert – deterministic algorithm to construct a tree of dissolution certificates\n・AlgoDissolveTx – deterministic algorithm to construct a tree of dissolution transactions from a tree of dissolution certificates and halted head state.\n\nTentative TOC for async messaging protocol between L2 participants:\n・ReqTx – request a transaction to be included in the next snapshot\n・ReqDep – request a multi-signed assurance transaction to facilitate a d",
+      "criteria": "The specification documents are clearly written and describe the aspects of the project that a competent developer team would need to implement Hydrozoa.\nAll the documents are openly available in a public repository, which includes a project board populated with tasks/issues that reasonably cover the scope of outputs expected in Milestone 2.",
+      "report": "We are pleased to present our evidence that we have delivered the outputs and met the acceptance criteria for Milestone 1!\nPlease note that we have consolidated all of Milestone 1’s declared specifications into a single document (the “technical specification” ):\nhttps://drive.google.com/file/d/1O2QeARutrNf7wZA1GExioWlnS9XMLJ07/view?usp=sharing\nThis document was rendered into the PDF format using LaTeX from our publicly accessible open-source repository, which also contains our entire codebase and project board:\nhttps://github.com/cardano-hydrozoa/hydrozoa\nThe rest of this proof-of-achievement individually addresses the milestone outputs, acceptance criteria, and evidence of completion.\nPlease note that we have evolved Hydrozoa’s design from the tentative outline in the original Statement of Milestones on August 13, 2024. The new design provides the same functionality in a simpler, clearer, and more efficient way.\n• Output 1. Specification document for on-chain validators and minting policies.\nAll on-chain validators and minting policies are described in Chapters 1 and 2 of the technical specification. These chapters also describe the transactions that interact with these validators and minting policies.\nRelative to the original Statement of Milestones:\n- The “head minting policy” is now a simple native script requiring unanimous consent from the peers. See the first paragraph of Chapter 1.\n- The “head state validator” is now split into two scripts: a native script that controls the head’s treasury while peers are responsive on L2 and a Plutus-based script that controls it if peers stop responding on L2. See sections 1.1 and 2.4.\n- The “deposit validator” is now implemented as the same native script, paired with a mechanism to obtain post-dated refund transactions signed by the peers ahead of time via the L2 consensus protocol. Doing so ensures that deposits are never stranded in the head when the peers stop responding on L2. See sections 1.3, 1.4, and 5.5.\n- The “co",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60000,
+      "promise": "・Implementation of the basic L1 state model.\n・On-chain and off-chain code for the L1 state of the Hydrozoa protocol.\n・The project board is populated with expected Milestone 3 tasks/issues.",
+      "criteria": "The project repository contains code for a state model that can represent all the L1 states described in the Hydrozoa specifications.\nThe project repository contains on-chain code (Plutus and/or native scripts) that properly constrain L1 state transitions according to the Hydrozoa specifications.\nThe project board is populated with tasks/issues that reasonably cover the scope of outputs expected in Milestone 3.",
+      "report": "We are proud to submit the proof of achievement for the second milestone of this project! We are also pleased to inform you that the third milestone will be ready for submission soon after you approve this milestone. :)\nEvidence of completion 4. Here is a short video describing the M2 outputs delivered:\n・Video: Hydrozoa M2 video.mp4\n・Slides: Hydrozoa M2 slides.pdf\n\nThe Hydrozoa technical specifications are now kept up-to-date at this link:\n・https://cardano-hydrozoa.github.io/hydrozoa/hydrozoa.pdf\n\nAs Github shows, a substantial amount of work has occurred in the Hydrozoa project since the previous milestone’s submission in March 2025:\n・https://github.com/cardano-hydrozoa/hydrozoa/compare/catalyst-milestone-1..catalyst-milestone-2\n\nMilestone Output 1–2, Acceptance Criterion 1–2, Evidence of Completion 3. We have implemented the basic L1 state model, on-chain code, and offchain code of the Hydrozoa protocol:\n・L1 state model (spec §1–2). The Hydrozoa protocol has two operating regimes, each with a distinct L1 state model.\n・Multisig regime\n・In this regime, all funds and state of the Hydrozoa head are stored at a single native script address that allows the head peers to do anything they please, as long as they all agree. The Hydrozoa L2 consensus protocol is responsible for generating state transitions and obtaining the peers’ unanimous consent in this regime.\n・The L1 state in this regime consists of the following utxos:\n・The treasury utxo contains the head’s funds.\n・The deposit utxos contain funds and instructions for user deposits awaiting absorption into the head.\n・The rollout utxos contain funds that a settlement transaction pays out in-aggregate, deferring the individual withdrawal payouts to subsequent rollout transactions. They are produced when settlement transactions cannot fulfill all the withdrawals of an L2 block in a single Cardano L1 transaction.\n・src/main/scala/hydrozoa/l1/multisig/state\n・Rule-based regime\n・In this regime, all funds and state of the Hydro",
+      "kinds": [
+        "code",
+        "doc",
+        "live"
+      ],
+      "links": 28,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 60000,
+      "promise": "・Commit and decommit operations for open Hydrozoa heads.\n・Data models and systems that track pending commits, the L2 ledger's active utxo set, utxos decommitted by L2 participants, and other relevant data for the L2 protocol.\n・Implementation of the L2 consensus state model.\n・The project board is populated with expected Milestone 4 tasks/issues.",
+      "criteria": "The project repository contains on-chain and off-chain L1 code to commit (deposit) and decommit (withdraw) funds to/from an open Hydrozoa head.\nThe project repository contains L2 data models and systems that can store and represent the range of L2 ledger states described in the Hydrozoa specifications.\nThe project repository contains an L2 consensus state model that can represent all the states and transitions for L2 consensus that are described in the Hydrozoa specifications.\nThe project board is populated with tasks/issues that reasonably cover the scope of outputs expected in Milestone 4.\nR",
+      "report": "We are proud to submit the proof of achievement for the third milestone of this project!\nEvidence of completion 4. Here is a short video describing the M3 outputs delivered:\n・Video: Hydrozoa M3 video.mp4\n・Slides: Hydrozoa M3 slides.pdf\n\nEvidence of completion 1. The Hydrozoa Github repository commit for this milestone is:\n・https://github.com/cardano-hydrozoa/hydrozoa/tree/catalyst-milestone-3\n\nEvidence of completion 2. The specifications are unchanged since Milestone 2, which we recently submitted on July 29, 2025. The specifications are always up-to-date at this link:\n・https://cardano-hydrozoa.github.io/hydrozoa/hydrozoa.pdf\n\nEvidence of Completion 3. In our reporting on the milestone outputs, below, we cite the relevant sections of the Hydrozoa specifications and provide brief descriptions of features. We have taken care to ensure that the specifications and implementation remain aligned. \nTerminology change. Note that prior to 2025 (i.e. in the original statement of milestones):\n・Deposits were called “pending commits”\n・Withdrawals were called “decommits”\n・The multisig regime was called the “open head state”\n\nMilestone Output 1, Acceptance Criterion 1. Deposit and withdrawal operations for Hydrozoa heads in the multisig regime:\n・All L1 onchain and offchain code for Hydrozoa was previously implemented in Milestone 2, including the deposit transaction, refund transaction, and the settlement transaction (which absorbs deposits into the head’s treasury and pays out withdrawals on L1). See Output 2 of Milestone 2.\n・Deposits (spec §1.3, §3.5). In this milestone, we implemented:\n・HTTP API endpoint for users to draft deposit transactions, which they can then submit to L1.\n・HTTP API endpoint for users to obtain post-dated refund transactions that are multi-signed by the head peers. These transactions assure the users against stranded deposits in case L2 consensus suddenly breaks.\n・Messaging protocol between head peers to gather the signatures required for multi-signed refu",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 20,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 60000,
+      "promise": "・Snapshot operations and participant messaging protocol.\n・Halting, contestation, and dissolution operations.\n・The project board is populated with expected Milestone 5 tasks/issues.",
+      "criteria": "The project repository contains code that generates L2 snapshots that can be executed appropriately via their corresponding settlement and dissolution L1 transactions. In Milestone 4, only singleton settlement transaction trees and dissolution certificate trees are supported (larger trees to be supported in the final milestone).\nThe project repository contains onchain and off-chain code for the halting, contestation, and dissolution mechanisms described in the Hydrozoa specifications for the pessimistic scenario (L2 consensus fails).\nThe project board is populated with tasks/issues that reason",
+      "report": "We are proud to submit the proof of achievement for the fourth milestone of this project!\nEvidence of completion 4. Here is a short video describing the M4 outputs delivered:\n・Video: Hydrozoa M4 video\n・Slides: Hydrozoa M4 slides\n\nEvidence of completion 1. The Hydrozoa Github repository commit for this milestone is:\n・https://github.com/cardano-hydrozoa/hydrozoa/tree/catalyst-milestone-4\n\nEvidence of completion 2. The specifications are unchanged since Milestone 2, which we recently submitted on July 29, 2025. The specifications are always up-to-date at this link:\n・https://cardano-hydrozoa.github.io/hydrozoa/hydrozoa.pdf\n\nEvidence of Completion 3. In our reporting on the milestone outputs, below, we cite the relevant sections of the Hydrozoa specifications and provide brief descriptions of features. We have taken care to ensure that the specifications and implementation remain aligned.\nTerminology change. Note that prior to 2025 (i.e. in the original statement of milestones):\n・Blocks were called “snapshots”\n・Peers were called “participants”\n・The rule-based regime was called “halting, contestation, and dissolution”\n・Fallback to the rule-based regime was called “halting”\n・Dispute resolution was called “contestation”\n・Withdrawal (on L1 in the rule-based regime) was called “dissolution”\n\nMilestone Output 1, Acceptance Criterion 1. Block creation/validation operations and peer messaging protocol:\n・Block creation (spec §4.2):\n・Peers take round-robin turns to create L2 blocks. In other words, the first peer creates the first block, the second peer creates the second block, etc.\n・A peer is a “leader” when it’s his turn to create the next L2 block.\n・The leader creates a block by assembling:\n・The pending L2 events that are valid when applied in sequence to the previous block’s L2 ledger state.\n・The pending L2 events that are invalid when applied after the valid L2 event sequence.\n・The mature L1 deposits that can be safely absorbed into the head’s treasury. Deposits are matured",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 20,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 45000,
+      "promise": "・Implementation of the operations to add/remove members to/from an open head.\n・Implementation of the auxiliary deterministic algorithms that allow the L2 utxo set to grow in size and for more decommits to be handled between snapshots.\n・Finalized documentation, examples, and tutorials for the project.\n・Complete test suite for the major components of the Hydrozoa architecture.\n・Public testnet deployment\n・Final closeout report\n・Final closeout video",
+      "criteria": "The project repository contains code that allows L2 participants to be added and removed to/from an open Hydrozoa head.\nThe project repository contains code to generate arbitrary-size settlement transaction trees and dissolution certificate trees corresponding to an arbitrary-size L2 utxo set.\nThe documentation, examples, and tutorials for the project are clearly written and adequately explain the Hydrozoa project to developers and users.\nThe test suite adequately covers the range of expected behavior for Hydrozoa heads and reasonably covers some anticipated exceptional behavior that should be",
+      "report": "We are proud to submit the proof of achievement for the final milestone of this project!\nOver the course of Fund 12, we specified, implemented, and tested the Hydrozoa protocol — a lightweight, scalable Layer 2 for Cardano — across five milestones. This final milestone delivers the last protocol operations (dynamic head membership, plus arbitrary-size settlement and evacuation), finalizes the documentation and test suite, demonstrates a full multi-participant head on a public Cardano testnet, and closes out the project with a public report and video.\nEvolution since Milestone 4. Since Milestone 4 (delivered August 2025), the Hydrozoa effort converged with a companion protocol, Gummiworm, and the two are now developed as a single unified design. The Gummiworm whitepaper is now the project's authoritative design document, superseding the frozen Hydrozoa specification. This evolution is described more fully in the whitepaper article Hydrozoa and Gummiworm: Co-evolution and convergence. Throughout this document we map the Fund 12 milestone vocabulary onto the current Gummiworm codebase.\nTerminology change. The 2024 Statement of Milestones used earlier names for several concepts. In current (Gummiworm) terms:\n・Head peers (and the new coil peers) were called \"participants\".\n・Blocks (now grouped into block stacks) were called \"snapshots\".\n・Deposits and withdrawals were called \"commits\" and \"decommits\".\n・The multisig and rule-based regimes were called the \"open\" and \"halted\" head states.\n・Fallback, dispute resolution, and evacuation were called \"halting\", \"contestation\", and \"dissolution\".\n・The settlement / rollout / finalization sequences were called \"AlgoSettle\" (settlement-transaction trees).\n・The KZG evacuation commitments and proofs were called \"AlgoDissolveCert\" (dissolution-certificate trees).\n\nEvidence of completion 1. The repository state satisfying this milestone's acceptance criteria is tagged catalyst-milestone-5:\n・https://github.com/cardano-hydrozoa/hydrozoa/tr",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 30,
+      "cut": true
+    }
+  ]
+}

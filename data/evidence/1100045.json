@@ -1,0 +1,44 @@
+{
+  "title": "Cardano and the real world: A Blockchain-meets-the-Internet-of-Things-Starterkit",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 9000,
+      "promise": "Research and write up of five workshop courses combining Cardano with the Internet of Things by leveraging Cardano APIs, the Arduino IDE and various microcontrollers. Courses will include Step-by-Step instructions, source code, schematics and needed hardware parts. This milestone will also output the overall UX concept of the accompanying web app in form of a sitemap and first wireframes.",
+      "criteria": "・Concept write down of the five Workshop courses as PDF\n・Hardware list for the needed hardware components to be purchased in Milestone 2 as PDF\n・First draft sitemap / wireframe layout of the Workshop Web app as PDF",
+      "report": "Updated Sitemap to match Workshop drafts.\nMilestone 1\n・Sitemap (PDF)\n・Workshop Drafts (PDF)\n・Hardware List (PDF)",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "21",
+      "cost": 9000,
+      "promise": "This Milestone includes the UX/UI Refinement of the Sitemap / Wireframes and Content produced in Milestone 1 and the actual design, layout and coding of the workshop web app, which will include:\n・5 Step-by-Step tutorials with source code, schematics and pictures of the needed hardware\n・Basic search functionality\n・Short intro to Cardano, Microcontrollers and Arduino IDE\n・Glossary\n・List of further Resources\n\nFurthermore this milestone includes the purchase and photography of the needed hardware parts as produced in Milestone 1 and the setup and installation on a public web server.",
+      "criteria": "・MVP of the workshop web app including the five workshop courses\n・Pictures of all needed Hardware parts\n・Server Setup to run the workshop app",
+      "report": "A. Output: MVP of the workshop web app including the five workshop courses\nAcceptance criteria: MVP of the workshop web app including the five workshop courses\nEvidence: The MVP of the workshop web app with introductions, basic search functionality, glossary and the five workshop courses can be verified at https://beta.cardanothings.io - All code has been open-sourced on https://github.com/CardanoThings/Web-App with https://github.com/CardanoThings/Workshops containing a separate repo for all code examples used in the workshops. Each workshop section contains a list of further resources.\nB. Output: Pictures of all needed Hardware parts\nAcceptance criteria: Pictures of all needed Hardware parts\nEvidence: All hardware has been purchased and photographed. Pictures of the needed hardware parts are integrated on https://beta.cardanothings.io/hardware (with the hardware pages itself still being worked on, but not part of this milestone) and have separately been uploaded to https://github.com/CardanoThings/Documentation/tree/main/POA-2 for verification.\nC. Output: Server Setup to run the workshop app\nAcceptance criteria: Server Setup to run the workshop app\nEvidence: A domain and server have been setup at https://cardanothings.io with the MVP workshop app running on https://beta.cardanothings.io/ until ready for launch.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 14
+    },
+    {
+      "no": 3,
+      "month": "22",
+      "cost": 12000,
+      "promise": "This final milestone includes further refinement of the web app, gathering and displaying statistical data of the web app usage, adding community functions and UX/UI improvements to the web app such as image uploads of own projects, documentation and open sourcing all code on Github (https://github.com/CardanoThings) and seeking out collaborations with other projects in the space / marketing.\nThe final output for this milestone will be the Proof-of-Project-Report as well as the Proof-of-Demonstration video to showcase the web app.",
+      "criteria": "・Fully working and publicly available web app with the five workshop courses\n・Github Repo (https://github.com/CardanoThings) with all used code of the web app and the workshop courses\n・Proof-of-Project-Report\n・Proof-of-Demonstration-Video",
+      "report": "A. Output: Fully functioning live web app with all workshops, search, etc.\nAcceptance criteria: Fully working and publicly available web app with the five workshop courses\nEvidence: The fully functioning web app has been launched in February 2026 at https://cardanothings.io\nB. Output: Open-Sourcing all code used on Cardanothings.io\nAcceptance criteria: Github Repo (https://github.com/CardanoThings) with all used code of the web app and the workshop courses\nEvidence: All code examples and the web-app itself have been open sourced and fully documented on https://github.com/CardanoThings\nC. Output: Proof of Project Report & Close-Out Video\nAcceptance criteria: Proof-of-Project-Report, Close-Out-Video\nEvidence: The Project Report has been published at https://github.com/CardanoThings/Documentation/blob/main/POA-3/Close-Out-Report.md - the Close-Out-Video with a technical walkthrough of the web-app has been published at https://www.youtube.com/watch?v=nq_9w3vUgbo",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

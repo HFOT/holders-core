@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・HashiRWAプラットフォームのUI/UXモックアップとデータベースの一覧\n・確認済みの資産詳細(農業、日本食)の発行元帳票\n・承認および公開リストのための管理者パネル\n・初期のCardano testnetメタデータ登録",
+      "criteria": "・テストリストの作成、レビュー、公開\n・メタデータ入力が正しく表示されます\n・Issuerフォームは入力を正しく検証します\n・管理者パネルは、承認/拒否をエラーなしで行うことができます.",
+      "report": "親愛なるマイルストーンの査読者,\n\n以下は、HashiRWA の達成のためのマイルストーン-1 の証明のための証拠をリンクします。 出力は、証拠から自己説明的です。\n・HashiRWAプラットフォームのUI/UXモックアップと動画やスクリーンショットに含まれているデータベースのリスト\n・確認済みの資産詳細(農業、日本食)の発行元帳票 - ビデオ中に埋め込まれた\n・承認と公開リストのための管理者パネル - ビデオとスクリーンショット\n・初期の Cardano の testnet メタデータ登録 - Github repo と、以下の追加リンクを参照してください。\n\n証拠URL:\n\n・フルフローのデモ動画(字幕→承認→リスト→オンチェーンメタデータ)\n\nhttps://drive.google.com/file/d/1tMkaiY 3auPui7NiJ90UNAttX0IyHA7A/view?usp=sharing\n\n・データベースエントリ、管理者パネル、Cardanoトランザクションの詳細のスクリーンショット\n\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa/blob/main/proof/screenshots.md\n\n・GitHubリポジトリ(または同等)、リストモジュールおよびCardano統合のためのコミット\n\nRepo: https://github.com/Sapient-Predictive-Analytics/hashirwa/\nコミット: https://github.com/Sapient-Predictive-Analytics/hashirwa/commits/main/\nPreprod Tx: https://preprod.cardanoscan.io/transaction/3ce7adb5714ca14a53dc355a0b39599e3b710fbce4150595a8e0833378b726de\n\nお問い合わせ!"
+    },
+    {
+      "no": 2,
+      "promise": "・価格や認証データのOracleフィード設定\n・自動更新スケジュール(週1回)\n・上場ページの市場データ\n・別々の発行者と投資家の旅のための公開ランディングページ。\n・ChainlinkまたはCardanoのネイティブ・オラクル・プロトタイプによるOracleフィード",
+      "criteria": "・フォールバック機構は、データが利用できなくなった場合に機能します\n・スケジューリングされたデータが鮮明に実証\n・プラットフォーム/ランディングページ上の特徴は完全定義\n・市場データフィードは、オラクルまたはAPIを介して「real」で、シミュレートしなくなった",
+      "report": "親愛なるマイルストーンの査読者,\n\n業績の証明はM2をご覧ください。\n\nこれらは出力です。\n・価格や認証データ(VIDEO LINK)のOracleフィード設定\n・毎日/毎週自動更新予定(LOGS)\n・上場ページ(SCREENSHOTS)の市場データ\n・別々の発行者と投資家の旅のための公開ランディングページ(SCREENSHOTS)\n・ChainlinkやCardanoのネイティブ・オラクル・プロトタイプ(FUNCTIONS / EXPLORER)によるOracleフィード\n\nGithubリポジトリのオープンソース MIT ライセンスで、すべてのコードが追加および更新されます。 https://github.com/Sapient-Predictive-Analytics/hashirwa/tree/main/tech/app"
+    },
+    {
+      "no": 3,
+      "promise": "・agri発行者/顧客向けにHashiRWAプロトタイプを発売\n・5件の検証/デモリストライブ\n・デューデリジェンスファイル用のドキュメントボルト\n・基本投資ツール(ログイン、視聴リスト、フィルタ)\n・通知・ステータス更新システム",
+      "criteria": "・ライブと安定、重要なバグはありません\n・日本食や農業の分野から見てみると、もはやモックアップしない\n・腕時計リストと通知機能、実際の市場データ",
+      "report": "業績の証明: マイルストーン3\nHashiRWAプラットフォームは、専用のウェブドメイン hashirwa.trade を通じて展開され、アクセス可能です。 このマイルストーンは、イシュアーと投資家のワークフローとともに機能的なマーケットプレースインターフェイスを配信し、実際のアセットリストが検証信号、ドキュメントのサポート、外部参照データでどのように表示できるかを説明します。 次のマイルストーンは、前のマイルストーンからOracleを統合し、発行者と投資家を結びつけます。\n\nマイルストーン完成の証拠\nプラットフォームは一般にアクセス可能です。\nhttps://app.hashirwa.trade/landing\n\nビデオ ウォークスルー:\nhttps://drive.google.com/file/d/1d8orQZZkjqGGIiqJ3gn3JAofwciUojv/view?usp=sharing\n\n実証済みのページをWebナビゲーションまたはこちらで確認できます。\n着陸ページ:\nhttps://app.hashirwa.trade/landing\n発行ワークフロー:\nhttps://app.hashirwa.trade/issuer/ja\n投資家ダッシュボード:\nhttps://app.hashirwa.trade/investor さん\nマーケットプレイスビュー:\nhttps://app.hashirwa.trade/市場\n\nプラットフォームインターフェイススクリーンショット\nリポジトリには、運用プラットフォームコンポーネントを実証するスクリーンショットが含まれています\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa/tree/main/mockups/marketplaceMVP\n•検証済みのリストを表示するマーケットプレースインターフェイス\n•ウォッチリスト機能および参照の市場データ信号が付いているダッシュボード\n•通知フィード実証システム活動イベント\n• デューデリジェンスの参照を支える文書のボルト インターフェイス\n\nアプリケーションコードやOracleの統合を含むプロジェクト全体のメインブランチは、その永続的なGithubリポジトリで見ることができます。\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa"
+    },
+    {
+      "no": 4,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ\n・免許取得者向けオンボーディングパイプライン\n・3 署名 LOI(農業製品)\n・10のリスト(発行者+デモコンバインド)\n・次世代モジュールの実現可能性検討\n・技術・コミュニティ拡大のためのロードマップ更新\n・分析ダッシュボード追跡投資家活動",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n・LOI収集・文書化\n・ライブ/デモフィードに接続されたリスト\n・ フィージビリティスタディは、要件とコストを明確に概略\n・Roadmapは、コミュニティのフィードバックで公に共有\n・ダッシュボードで測定可能なインベスター活動",
+      "report": "公開Youtube動画とPDFレポートで、4th マイルストーンとプロジェクトクローズアウトの成果の証明をご覧ください。\n\n最終報告書へのリンク\nhttps://drive.google.com/file/d/1IkzqJ7KTaF35RzWnE2LygccHqyUcjHd/view?usp=sharing\n\n最終クローズアウトビデオへのリンク\nhttps://youtu.be/h9qxirCkRX8\n\nコンセプトのオープンソース(MITライセンス)リポジトリ(プロジェクトウォークスルーと次のステップ)をここで見つけることができます。\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa\n\nこれらの個々のリンクで4マイルストーンの個々のSOM証拠項目\n\n公開ロードマップ\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa#roadmap\n\nパイプラインとリストのスクリーンショット\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa/tree/main/docs/milestones/M4 screenshots/pipeline listings\n\n農業/食品会社とのRedacted LOIs\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa/tree/main/partner evidence\n\nエンゲージメントを示すダッシュボードスクリーンショット\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa/tree/main/docs/milestones/M4 screenshots"
+    }
+  ]
+}

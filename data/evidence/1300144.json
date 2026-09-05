@@ -1,0 +1,79 @@
+{
+  "title": "MLabs: Tooling upgrade for Conway compatibility.",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 41549,
+      "promise": "(Note :: we'd like to reorganize the order of milestones relative to the IdeaScale proposal while nevertheless committing to the same deliverables. In particular, this proposal is amenable to such a reorganization because each milestone touches an individual project, and there is nothing that linearly builds upon itself. We are doing so, with the Plomin fork incoming as of writing, because this will allow the quickest delivery of the most impactful projects to the Cardano community so that the value of this proposal is maximized.)\nImplementation in repository:\n・Implementing codegen for all modules (Haskell, Plutarch, PlutusTx, Rust, TypeScript, PureScript) for all the new Plutus Ledger types https://github.com/IntersectMBO/plutus/tree/master/plutus-ledger-api/src/PlutusLedgerApi/V3. This includes the new governance-related types, delegation types, and updated transaction types.\n・Create new golden tests for the above types, for all language modules. For instance, we will have a set of files consisting of known-good JSON-serialized instances, and our testsuite will check that our implementation outputs these serialized values upon execution as expected. Although an exhaustive list of",
+      "criteria": "・All Plutus V3 types are implemented correctly and LambdaBuffers now supports codegen for all the supported language modules for these types\n・All Plutus V3 types are covered by the golden tests ensuring execution outputs are as intended\n・All Plutus V3 have roundtrip tests for Eq, Json and PlutusData type classes (where applicable) to ensure no data is corrupted or lost. Integrate testing in CI/CD to ensure continuous testing when the source code changes and documentation clearly explains the updates.\n・The output is suitable for Plutus V3 Types such as Voter, Delegatee and GovernanceActionID et",
+      "report": ":: UPDATES :: \nWe have expanded our milestone report to address the reviewers' comments.\nWe also have a video demonstrating our test suite:\nhttps://youtu.be/cMqnk0nMssw\n\n---\nPlease find our milestone report for PoA 1 here:\nhttps://github.com/mlabs-haskell/lambda-buffers/blob/main/docs/catalyst13-reports/milestone-1.md",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 39570,
+      "promise": "・Make all cardano.nix modules compatible with the latest versions of Cardano nodes from the Conway era, without making major changes to the existing NixOS module interface;\n・Create NixOS modules that will serve as replacements for projects using Plutip as a private testnet launcher;\n・Add NixOS tests that ensure the module configuration works with the end-to-end testing suite tx-village, all executed by a CI job;\n・Integrate human-readable documentation.",
+      "criteria": "・All packages used by the cardano.nix modules are updated to support the Conway era. (cardano-node, ogmios, kupo, blockfrost, oura, db-sync, etc) and, if possible, reasonable updates will be made to make them as extensible as possible - however it is not possible to guarantee compatibility with future updates as we do not know what those will be and this potentially involves unforeseen breaking changes, boundless engineering requirements and development costs, and so on \n・The created module replicates Plutip functionality and seamlessly integrates into projects using Plutip in lieu of Plutip i",
+      "report": ":: UPDATES ::\nThe links should be fixed now!\n\n--Reviewer 1--\nThis PR on cardano.nix, begun on April 2nd, includes the main codebase additions/updates of this milestone including NixOS modules used to start a private testnet. \nhttps://github.com/mlabs-haskell/cardano.nix/pull/124\n\nThe exact files that were added or changed are listed here:\nhttps://github.com/mlabs-haskell/cardano.nix/pull/124/files\n\nSpecifically, these modules include:\nmodules/default.nix \nmodules/node.nix\nmodules/private-testnet-node.nix\nmodules/fixtures/test-node/*\n\nThe dev-net NixOS module was formally contained in the tx-village repository -- the reason it was included -- but per this milestone, it has been removed in favor of adding it to cardano.nix where it makes more sense. See this PR and file changes:\nhttps://github.com/mlabs-haskell/tx-village/pull/3\nhttps://github.com/mlabs-haskell/tx-village/pull/3/files\n\n--Reviewer 2--\nAs you can see in the contained PR\nhttps://github.com/mlabs-haskell/cardano.nix/pull/124/files\n\nThe modules for a private testnet are contained in the PR linked above. Overall, 851 lines of code were affected by this PR with 846 lines added:\nhttps://github.com/mlabs-haskell/cardano.nix/pull/124/files\n\nThe process took about two months. To date, developer feedback has been limited to internal feedback but has been positive.\n------------\n\nProof of Achievement 1:\nThe updated code is available in the cardano.nix repository. \nhttps://github.com/mlabs-haskell/cardano.nix\n\nProof of Achievement 2: \nThe source code for the modules is available and a link is provided \nhttps://github.com/mlabs-haskell/cardano.nix/blob/main/modules/private-testnet-node.nix\n\nProof of Achievement 3:\nA CI job that runs NixOS tests successfully passes, and a screenshot is provided to verify it.\nhttps://hercules-ci.com/accounts/github/mlabs-haskell/derivations/%2Fnix%2Fstore%2Fjxjscc5sdcrk93s2ix85gpli3227m3dl-vm-test-run-private-testnet-node.drv?via-job=2d34c0fb-8df5-475e-96fe-2bb722fd6163\nhttps://drive.g",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 30,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 29678,
+      "promise": "Updates to the ytxp-lib (https://github.com/mlabs-haskell/ytxp-lib) for supporting Conway features including:\n・We will add V3 support:\n・We will update the Yielding script to support PlutusV3.\n・We will support other Script Purposes:\n・We will update the Yielding script to allow Certifying.\n・We will update the Yielding script to allow Voting.\n・We will update the Yielding script to allow Proposing. \n・We will add Selective compilation:\n・We will update script export to allow passing in a list of script purposes in order to perform selective compilation of the yielding script only including the ones requested by the user.\n・We will add documentation for this new option in the CLI tool component included in the ytxp-lib - link to the CLI implementation : https://github.com/mlabs-haskell/ytxp-lib/blob/master/ytxp-plutarch/app/export/Main.hs.",
+      "criteria": "・V3 support is added:\n・The yielding script is updated to V3, and this is demonstrated in the test suite.\n・Other Script Purposes are Supported:\n・Tests show the yielding script is triggered at least once by Certifying\n・Tests show the yielding script is triggered at least once by Voting\n・Tests show the yielding script is triggeres at least once by Proposing\n・Selective compilation support has been added:\n・Script export via the CLI is updated to support selective compilation of the yielding script\n・Documentation has been extended to describe this new feature",
+      "report": "Source code for OUTPUTS 1, 2, & 3 will be located at https://github.com/mlabs-haskell/ytxp-lib:\nhttps://github.com/mlabs-haskell/ytxp-lib/pull/40\nLooking at several changed files, we offer a more detailed explanation of the code updates here:\nhttps://docs.google.com/document/d/13beeiDYjloK-yxC2mpCgKjS-xFoCMZGUCjgc7ieAgHQ/edit?tab=t.0\n--------\nOUTPUTS 1, 2, & 3: Continuous Integration (CI) automated tests that run when updating the GitHub repot showcase that the new supported script purposes are properly integrated. These will be visible when new code is added in a commit or PR and a link to the passing CI job will be provided\nScreenshot documenting passing CI:\nhttps://drive.google.com/file/d/1s72DTrrCLw-1WCAQtwwZIabiRx7rpIOu/view?usp=sharing\nCI link:\nhttps://hercules-ci.com/accounts/github/mlabs-haskell/derivations/%2Fnix%2Fstore%2Fwn2ab2l5wbms4lp4wgjzffbh7486y2qc-ytxp-plutarch-test-ytxp-lib-test-0.2.0.drv?via-job=f6b9077f-3a69-47da-ac8f-0a0972cfea71\n--------\nOUTPUT 3: Link to the documentation for the CLI that includes the new option for selective compilation.\nScreenshot:\nhttps://drive.google.com/file/d/1d9yopeILPtk0x8NOurLiQlKtnDQ_RLsN/view?usp=sharing\nLink:\nhttps://github.com/mlabs-haskell/ytxp-lib/pull/47/files#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5R82\n--------\nOUTPUT 3: Benchmarks on how much space can be saved using the new selective compilation.\nScreenshot:\nhttps://drive.google.com/file/d/1re3-y2z7SHgJ9pXW-x_pdz_W_rLoX1V9/view?usp=sharing\nLink:\nhttps://github.com/mlabs-haskell/ytxp-lib/blob/e6a67edbafc8daf11d656dac15589711993d1df8/selective-compilation-benchmark.md\n--------\nOUTPUTS 1, 2 &3 link to a document hosted on Google Drive or similar of screenshots of what was done.\n-Screenshot links are included throughout this PoA report\n--------\nYouTube video covering the updates\nhttps://www.youtube.com/watch?v=C4bg-TefFDk",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 19
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 29678,
+      "promise": "・The builder supports All Conway Plutus API types. \n・The builder will be updated to support Conway Scripts \n・The ledger simulator and flake-lang dependencies will be updated for Conway support.\n・The tx-indexer is updated to support Conway era transactions",
+      "criteria": "・The transaction builder in the tx-village repo will be updated to support All Conway Plutus ledger API types.\n・Tx-bakery successfully builds and submits transactions using V3 TxInfo. This will be verified through 9 test cases run against a local cardano dev network.\n・Ledger simulator dependencies are updated to work with the latest Plutus version (1.36)\n・Tx-indexer dependencies are updated so that it correctly parses V3 transactions.",
+      "report": "Please find our milestone report, including links to all deliverables, here:\nhttps://github.com/mlabs-haskell/tx-village/blob/main/docs/catalyst-13.md\n\nAs well as a demo video here:\nhttps://youtu.be/YayDMy8Vu8k",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "9",
+      "cost": 57375,
+      "promise": "・Update Ply to support PlutusV3 types and CIP 57 in the mlabs-haskell/ply repository.\n・Add the ability to encode typed scripts in JSON compliant with CIP 57 and decode them using tools for Haskell and CTL (Purescript).\n・Develop an argument application mechanism that utilizes the added Ply types and schemas.\n・Perform and add tests covering encoding/decoding, argument application, and tests for PlyArgOf (unit and property tests).\n・Write a generic schema description for user-defined types with minimal user input added.\n・Add a user guide document.\n・Produce the project closure report.\n・Produce a project closure video.",
+      "criteria": "・Ply now supports PlutusV3 types and the JSON schema outlined in CIP 57\n・Ply can write CIP 57 conforming typed scripts that can be read by CIP 57 parsers and Ply tools such as CTL, and Atlas.\n・The argument application uses Ply types and schemas\n・All tests in the test suite involving encoding/decoding, argument application, and PlyArgOf tests, pass without errors.\n・Generic derivation works for arbitrary user-defined data types that can be encoded into Plutus Core.\n・User guide document covers fundamental usage and an overview of new features added.\n・Final closeout report adheres to the guideline",
+      "report": "Please find the Ply PoA report, including links, here:\nhttps://github.com/mlabs-haskell/ply/blob/catalyst-evidence/REPORT.md\n\nThe closeout report here:\nhttps://docs.google.com/document/d/1PlRlAVY7P4NiYdqhKzXOKgw36TN8zHW9LzAIYXHuZBQ/edit?usp=sharing\n\nThe Ply PoA5 Demo here\nhttps://www.youtube.com/watch?v=l7M4Mhu_Wv4\n\nAnd the PCV here\nhttps://youtu.be/L7gmvhWlL40",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    }
+  ]
+}

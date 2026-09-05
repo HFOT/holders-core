@@ -1,0 +1,56 @@
+{
+  "title": "Streamlining Cardano DApp Development with Open-Source Batcher",
+  "ms": [
+    {
+      "no": 1,
+      "month": "13",
+      "cost": 34500,
+      "promise": "・Comprehensive design document detailing the architecture of the reference batcher.\n・Selection of tools and libraries to be used in development.",
+      "criteria": "・Approval of design document by the project technical lead.\n・Finalization of tools and libraries as documented in the project repository.",
+      "report": "Dear Reviewers, \nunder the following links you can find the required evidence\n・Uploaded technical design document to GitHub: https://github.com/LinkageDevTeam/cardano-batcher-template/blob/main/technical-report.pdf\n・List of selected tools and libraries: A summary of the list of selected tools can be found in our README file: (section Tools & Libraries: https://github.com/LinkageDevTeam/cardano-batcher-template). Moreover, we included a section 4 in the report with a short explanation\n\nUpdate: In the previous submission of the Milestone we had a report with some [??] in some of the sections. This was due to wrong citation settings in our latex export. I am super sorry about this mistake and we fixed this now.",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "15",
+      "cost": 34500,
+      "promise": "・Functional core of the reference batcher enabling transaction batching (core means being able to identify open batching requests on chain and constructing the necessary batching transactions)\n・Initial test suite for core functionalities.",
+      "criteria": "・Functionality meets design specifications and transactions can be batched\n・Transaction showing that all initial tests (identify batching requests, batch order) have been passed",
+      "report": "Dear Reviewers, \nplease find our milestone outputs below. \nUpdate: We also included the GNU license in our repository. Thank you for the feedback :) \nA. Output: Functional core of the reference batcher enabling transaction batching (core means being able to identify open batching requests on chain and constructing the necessary batching transactions)\nAcceptance criteria: Functionality meets design specifications and transactions can be batched\nEvidence: Please check our Github repository with the necessary code and a README explaining all functionalities: https://github.com/LinkageDevTeam/cardano-batcher-template\n\nB. Output: Initial test suite for core functionalities.\nAcceptance criteria: Transaction showing that all initial tests (identify batching requests, batch order) have been passed\nEvidence: Test transactions documented and published in the project repository.\nThe test transactions are linked in the README file: https://github.com/LinkageDevTeam/cardano-batcher-template/blob/main/README.md. We have created a test-suite that is testing different components and functionalities (like datum parsing, or batching ordering).",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "16",
+      "cost": 28750,
+      "promise": "・implementation of linkage fund batcher\n・Comprehensive documentation and user guide for reference batcher.",
+      "criteria": "・Prototype of linkage fund batcher.\n・Documentation covers all features and provides clear usage instructions.",
+      "report": "A. Output: implementation of linkage fund batcher\nAcceptance criteria: Prototype of linkage fund batcher.\nEvidence: GitHub repository with open-source code for the linkage fund batcher. The code for the linkage batcher example implementation can be found as part of our Batcher Repository here: https://github.com/LinkageDevTeam/cardano-batcher-template/tree/main/src/batcher/linkage\n---\nB. Output: Comprehensive documentation and user guide for reference batcher.\nAcceptance criteria: Documentation covers all features and provides clear usage instructions.\nEvidence: Link to the documentation hosted on GitHub as part of the repository: https://github.com/LinkageDevTeam/cardano-batcher-template/blob/main/src/batcher/linkage/README.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "17",
+      "cost": 17250,
+      "promise": "・Final close-out report\n・Final closeout video\n・Deployment of the fund batcher to a test environment.\n・(1) Medium article explaining functionality of batcher to non-technical users with transaction examples (This article also works as proof for non-technical users that the batcher works by explaining it inner workings and sharing Transactions)\n・community announcements to educate developers and gather feedback.\n・(2) Medium Article summarising the development journey and how other projects can adopt the code for their batcher",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Successful deployment with no critical issues.\n・Tweet and Two Medium Articles",
+      "report": "A. Output: Final close-out report\nAcceptance criteria: Final closeout report is publicly available\nEvidence: Link to final closeout report - you can find our close-out report as PDF here: https://drive.google.com/file/d/1owvkklF62g99Hn9GyuuxpG57wMY41ApI/view?usp=sharing\n\nB. Output: Final closeout video\nAcceptance criteria: Final closeout video is publicly available\nEvidence: We uploaded the final closeout video on YouTube https://youtu.be/lGgOmRupOHE\n\nC. Output: \n・community announcements to educate developers and gather feedback.\n・(1) Medium article explaining functionality of batcher to non-technical users with transaction examples (This article also works as proof for non-technical users that the batcher works by explaining it inner workings and sharing Transactions)\n・(2) Medium Article summarising the development journey and how other projects can adopt the code for their batcher\n・Deployment of the fund batcher to a test environment.\n\nAcceptance criteria:\n・Successful deployment with no critical issues.\n・Tweet and Two Medium Articles\n\nOutput: \nWe have created two Medium articles \n・(1) for non-technical users https://medium.com/p/bf32f0963266?postPublishedType=initial (this article also includes references to Cardano transactions) \n・(2) Medium Article summarising the development journey https://medium.com/p/807e764d1ecb?postPublishedType=initial\n\nTo better promote our Medium articles and update our community we have created a post on X (formerly Twitter) https://x.com/LinkageFinance/status/2021870745341591993?s=20 \nCode repository We have released our final code on GitHub: https://github.com/LinkageDevTeam/cardano-batcher-template",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

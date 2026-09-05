@@ -1,0 +1,55 @@
+{
+  "title": "Anastasia Labs - Smart Beacons, Router NFTs",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 30000,
+      "promise": "・A functional Smart Beacon prototype with the associated routing script for a sample use case (e.g., @ada-to-min).\n・Documentation describing how to create and deploy a Smart Beacon, including a basic schema.\n・GitHub repository with code and example scripts.",
+      "criteria": "・A working prototype with clear documentation.\n・Successful deployment of the prototype on the Cardano testnet.\n・Positive feedback from at least one developer or community member who has tested the prototype.",
+      "report": "We have all three criterias from Milestone 1 achieved\n・A functional Smart Beacon prototype with the associated routing script for a sample use case (e.g., @ada-to-min).\n・Documentation describing how to create and deploy a Smart Beacon, including a basic schema.\n・GitHub repository with code and example scripts.\n\nAll the code, documentation and guide how to use it is in the github repo\nhttps://github.com/Anastasia-Labs/smart-handles",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 35000,
+      "promise": "・Offchain SDK is developed for ada-to-min routing smart contract\n・A polished and refined Smart Beacon framework with improved routing scripts.\n・Documentation expanded to cover more advanced use cases and scenarios.\n・Additional example scripts showcasing versatility.",
+      "criteria": "・Offhcain SDK is completed and available\n・A refined and user-friendly Smart Beacon framework.\n・Documentation that addresses more complex interactions.\n・Successful demonstration of multiple example scripts in different scenarios",
+      "report": "We completed offchain SDK and is avaliable at https://github.com/Anastasia-Labs/smart-handles-offchain\nThere is a detailed documentation along with testne transactions README.md where we showed testnet transaction on Preprod testnet.\nTestnet transactions:\n・reward address registration: https://preprod.cexplorer.io/tx/073641112c7b7c645521d1aca3650989bdc0bf06ae36e76e2e74287e015dcc99\n・batch swap request: https://preprod.cexplorer.io/tx/afa0b004e0679cbfb8879a71cbad7f061b362a68ca314c2d6a907e93d9cbd14a\n・batch swap by routing agent: https://preprod.cexplorer.io/tx/b34377eb875b47b9c66ed710d986baece744194e86ebb8c27286e8e50177045a",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 35000,
+      "promise": "・Prototype implementation of decentralized routing agents in the Smart Beacon framework.\n・Documentation describing how decentralized routing agents work.\n・A sample use case demonstrating decentralized routing.",
+      "criteria": "・A prototype is running successfully with routing smart contract and off-chain SDK\n・Successful integration of decentralized routing agents into the framework.\n・Documentation that explains the concept and benefits of decentralized routing agents.\n・A successful demonstration of a decentralized routing scenario.",
+      "report": "Proud to submit M3 for Smart Beacons Catalyst proposal. In this PoA we have prepared a github repo with:\n・Instructions on how to run the routing agent (with video)\n・updated framework featuring decentralized routing agents.\n・Testnet transactions demonstrating decentralized routing agent functionality can be found in the repository.\n・Documentation that clearly outlines the decentralized routing process and Instructions on how to run the routing agent\n\nLink to the repository: https://github.com/Anastasia-Labs/smart-handles-agent/blob/main/README.md\n\nThank you for your feedback :)\nWe have added necessary documentation to this PoA. In the repo you will find\n• The instructions on how to run the routing agents are under agent's repo, but under smart-handle's #off-chain-tools and #using-routing-contract, there are links to the two associated repos which have detailed instructions.\nhttps://github.com/Anastasia-Labs/smart-handles?tab=readme-ov-file#off-chain-tools\nhttps://github.com/Anastasia-Labs/smart-handles?tab=readme-ov-file#using-routing-contract\n• Testnet transactions demonstrating decentralized routing agent functionality. These are mentioned under smart-handles-offchain repo, which in turn point the reader to the included example package's docs.\nhttps://github.com/Anastasia-Labs/smart-handles-offchain/blob/main/example/README.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 50000,
+      "promise": "・educational material in the form of a robust routing script and associated schema\n・created PRs to assist with integration on behalf of open-source wallets\n・Comprehensive documentation for developers and wallet providers on how to integrate with Smart Beacons.\n・Sample integration scripts for wallets.\n・A Project Closeout report\n・A Project Closeout video",
+      "criteria": "・Educational material is available IOHK Developer Experience Working Group\n・Documentation is clearly written and provides enough information on how to implement and use Smart Beacons\n・Detailed and accessible documentation for integration available on https://github.com/Anastasia-Labs/smart-handles\n・Project Closeout report is submitted\n・Project Closeout video is submitted",
+      "report": "We are happy and proud to submit the final milestone for Smart Beacons proposal. Here is what we have for M4\nProject Closeout video: https://youtu.be/CM6CUAHma6I\nProject Closeout report: https://github.com/Anastasia-Labs/project-close-out-reports/blob/main/f10-smart-handles-closeout-report/smart-handles-close-out-report.pdf\nLink to a PR for integration of Smart Beacons in open source Cardano wallet - Game Changer: https://github.com/GameChangerFinance/gamechanger.wallet/pull/12\nCompleted design documentation: \n• onchain: https://github.com/Anastasia-Labs/smart-handles\n• offchain SDK: https://github.com/Anastasia-Labs/smart-handles-offchain",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

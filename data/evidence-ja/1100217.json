@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "研究と分析:\n・当社は、Ledger Nano XとCardanoウォレットおよび/またはdAppsと統合できるFlutter SDKを開発するための技術的要件と潜在的な戦略の包括的な分析を行います。\n\n概念の証拠:\n・新しいフラッタプロジェクトとリポジトリのセットアップ\n・研究・分析文書に記載された戦略の1つ/多くに基づく\n・携帯電話にブルートゥースでLedger Nano Xデバイスをスキャンして検出\n・Ledger Nano X デバイスに接続する\n・Cardanoがレジャーデバイスのアドレスを受け取ることを成功させる",
+      "criteria": "研究と分析:\n・Ledger Nano Xの統合のためのフラッタSDKを開発するための異なる技術戦略(および課題)のレポートの作成\n\n概念の証拠\n・Cardano Ledger Flutter SDK の新しいリポジトリに Github をオープンソース\n・コンセプトの証明をつくろうとする上での研究\n・モバイルデバイス上でFlutterを介してLedger nano Xに成功し接続\n・レジャーウォレットの最初のCardanoアドレスをうまく受け取ります",
+      "report": "研究と分析:\nCardano用のレジャーフラッタSDKを開発するための複数の潜在的なアプローチを調べて分析する文書\n・https://drive.google.com/file/d/1i1WKqd9mQjW BDgkgAe2PRFMYx-ymdCs/view?usp=drive link\n\n概念の証拠:\nオープンソースリポジトリへのURL\n・https://github.com/vespr-wallet/ledger-cardano\n・Cardano固有のレジャー操作用のFlutter SDK\n・ledger-flutter SDK用のプラグインとして動作します(下記参照)\n\n・https://github.com/vespr-wallet/ledger-flutter\n・一般的なレジャーデバイス接続用フラッタSDK\n・https://github.com/RootSoft/ledger-flutterの修正/コピーを修正\n\nLedger と fetching Cardano に接続しているモバイル デバイスを示す写真/ビデオの証拠はアドレスを受け取ります\n・モバイルデバイスと (1) に接続する Ledger Nano X デバイスを示すビデオは、ledger の受信アドレスを表示し、 (3) はレジャーから戻り、携帯電話で同じ受信アドレスを表示します。 https://drive.google.com/file/d/1KkTjX6WXnW5jWBUp0OL0M8Wscl5qRkv4/view?usp=drive link\n・フォトでは、レジャーとデバイス上で表示されるアドレスが明確に表示 https://drive.google.com/file/d/1fb-GVQCvYV540FF8XGoODzPkCR98ho73/view?usp=drive link"
+    },
+    {
+      "no": 2,
+      "promise": "Ledger Nano X 用の本格的なプロトタイプ Cardano Flutter SDK を設計・開発するコンセプトの実証を拡張します。 プロトタイプは dApp/wallet の統合に必要なすべての操作を実行できます.",
+      "criteria": "SDK は Ledger デバイスと接続するために使用できます。\n・レジャーデバイスのシリアル番号を読み込む\n・Read LedgerのCardanoアプリ版\n・ウォレットの公開鍵を延長\n・ウォレットの受信/変更/ステーキングアドレス\n・取引の承認/署名(および証人を返す)",
+      "report": "ビデオ証拠(以下のすべての点について):\n・ https://drive.google.com/file/d/16AIm-U8Thq79h3Y0cdpl4doh4XbjJBTw/view?usp=drive link\n\nレジャーデバイスのシリアル番号を読みます。\n・URL:https://github.com/vespr-wallet/ledger-cardano/blob/master/lib/src/operations/cardano get serial operation.dart\n・動画タイムスタンプ 00:09 → 00:11\n\nLedgerのCardanoアプリバージョンをお読みください。\n・URL:https://github.com/vespr-wallet/ledger-cardano/blob/master/lib/src/operations/cardano version operation.dart\n・動画タイムスタンプ 00:12 → 00:15\n\nウォレットの拡張公開鍵:\n・URL:https://github.com/vespr-wallet/ledger-cardano/blob/master/lib/src/operations/cardano public key operation.dart\n・動画タイムスタンプ 00:17 → 00:25\n\nウォレットのアドレスの取得/受取/変更:\n・URL:https://github.com/vespr-wallet/ledger-cardano/blob/master/lib/src/operations/cardano derive address operation.dart\n・動画タイムスタンプ(受信アドレス): 00:29 → 00:52\n・動画タイムスタンプ(アドレス変更): 00:54 → 01:17\n・ビデオタイムスタンプ(stakeアドレス): 01:20 → 01:28\n\n承認/署名取引(および証人を返す):\n・URL:https://github.com/vespr-wallet/ledger-cardano/blob/master/lib/src/operations/cardano sign transaction operation.dart\n・動画タイムスタンプ 01:35 → 02:00"
+    },
+    {
+      "no": 3,
+      "promise": "お問い合わせ\n・SDKがバグの無いように統合テストを追加\n・統合テストを書く際に見つかったSDKの問題の修正\n・インテグレーションテストを実行する手順を追加",
+      "criteria": "・インテグレーションテストが書かれ、オープンソース化\n・インテグレーションテストは、レジャーナノxデバイスに対して実行できます\n・統合テストパス",
+      "report": "1) 統合テストを実行する方法についてのGithubリンク\n・https://github.com/vespr-wallet/ledger-cardano/tree/master?tab=readme-ovfile#running-integration-tests\n\n2) テストおよびそれらを渡るログのためのソースコード\n2.a)住所の派生物:\n・テスト GitHub リンク: https://github.com/vespr-wallet/ledger-cardano/blob/master/example/integration test/cardano ledger address derivation tests.dart\n・ログ(スクリーンショットとTXTファイル): https://drive.google.com/drive/folders/1x9HjlalNVBIxlQghS6tFIchPI8rHkiVC?usp=drive link\n\n2.b)連続版:\n・テスト GitHub リンク: https://github.com/vespr-wallet/ledger-cardano/blob/master/example/integration test/cardano ledger serial version tests.dart\n・ログ(スクリーンショットとTXTファイル): https://drive.google.com/drive/folders/1Bkh3l3pEHI12zlozgL04wxTEaKo-HSye?usp=drive link\n\n2.c)印操作の証明書:\n・テスト GitHub リンク: https://github.com/vespr-wallet/ledger-cardano/blob/master/example/integration test/cardano ledger sign operational certificate tests.dart\n・ログ(スクリーンショットとTXTファイル): https://drive.google.com/drive/folders/1rhvjc64m-hmgZdnGazbXpl7Af-K-R581?usp=drive link\n\n2.d) Derive ネイティブスクリプトハッシュ:\n・テスト GitHub リンク: https://github.com/vespr-wallet/ledger-cardano/blob/master/example/integration test/derive native script hash tests.dart\n・ログ(スクリーンショットとTXTファイル): https://drive.google.com/drive/folders/1Z4 121o5oXQ XWYj6k56DLGZ32x62syl?usp=drive link\n\n2.e) 延長公共のキーを得て下さい:\n・テスト GitHub リンク: https://github.com/vespr-wallet/ledger-cardano/blob/master/example/integration test/get extended public key tests.dart\n・ログ(スクリーンショットとTXTファイル): https://drive.google.com/drive/folders/1a6 67YdxicmMLuMd3WyGKTfiQ6LACeEG?usp=drive link\n\n2.f)印の伝送:\n・テスト GitHub リンク: https://github.com/vespr-wallet/ledger-cardano/blob/master/example/integration test/sign tx tests.dart\n・ログ(スクリーンショットとTXTファイル): https://drive.google.com/drive/folders/1E  tYiEzOgTU7eKi7eY40WCuvkAcoeE?usp=drive link"
+    },
+    {
+      "no": 4,
+      "promise": "・SDKの使い方に関するWriteドキュメント\n・フラッタプロジェクトに簡単に追加できるSDKを公開\n・Write a (basic) SDK を GitHub リポジトリに GitHub リポジトリの オープンソースのサンプル アプリ。 このアプリの目的は以下です。\n・ledgerデバイスへの接続を組み入れ、SDKによる基本的な操作を行います。\n・SDKをウォレットに統合しようとするプロジェクト(コードの確認)のガイダンスを提供 dAppについて",
+      "criteria": "・SDKにはインストールと使用方法に関するドキュメントが含まれています\n・フラッタプロジェクトの依存性としてSDKを公開\n・SDK Githubリポジトリ:\n・SDKを提示する機能のサンプルアプリが含まれています\n・他の開発者がサンプルアプリをビルドして実行できるすべての関連コードが含まれています",
+      "report": "SDKを任意のフラッタプロジェクトに追加する方法に関する簡単な手順は、証拠として与えられます\n・パブ・デ・インダストリー規格(工業規格)に簡単にアクセスできるパッケージを公開\n・パッケージリリースへのリンク https://pub.dev/packages/ledger cardano plus\n・はじめるセクションで、上記のリンクで設定ができます。\n\nSDK のドキュメントへの Github のリンクが提供されます(業界標準の README.md ファイルにございます)\n・README.mdファイルへのリンク https://github.com/vespr-wallet/ledger-cardano-plus/blob/master/README.md\n\nサンプルアプリのソースコードへのリンクは、\n・サンプルアプリのフルソースコードはこちら:https://github.com/vespr-wallet/ledger-cardano-plus/tree/master/example\n\nサンプルアプリの動作のビデオが提供されます\n・サンプルアプリデモ: https://drive.google.com/drive/u/0/folders/1u5UWnvrhFmZV7zzs h4sbEIlH-DIKGH6"
+    },
+    {
+      "no": 5,
+      "promise": "・Ledger nano X Flutter SDKをVESPRウォレットに統合\n・Catalystファイナルレポートとクローズアウトビデオのプロデュース",
+      "criteria": "・VESPRにウォレットを追加するには、Ledger nano Xを使うことができます。\n・Ledger Nano X は VESPR での取引承認に使用できます。\n・Catalyst Final Report を書いています\n・動画を閉じる",
+      "report": "ビデオ接続 Ledger nano X to VESPRウォレットと承認+トランザクションの送信\n・デモ動画:https://www.youtube.com/watch?v=g7nDfxxGj4E\n・Ledger接続タイムスタンプ: 00:00 → 00:38\n・トランザクション送信タイムスタンプ: 00:40 → 01:24\n\nCatalyst最終報告書を公開\n・https://docs.google.com/document/d/1pIMn a0q AxROXLdEvMp66stJyeYmFkZ38YKC9GC14Q\n\n公開 Catalyst クローズアウト ビデオ\n・https://www.youtube.com/watch?v=Cf-zXJO8lxA"
+    }
+  ]
+}

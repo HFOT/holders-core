@@ -1,0 +1,64 @@
+{
+  "title": "GeroWallet - Bank API and Wallet Integration",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "Complete detailed requirements gathering with the bank\nWe will hold sessions with Satchel to map out API endpoints, security needs, and user flows.\nDevelop design specifications for API integration and wallet backend\nWe will produce a system architecture document, clarifying how the wallet, bank APIs, and security layers interconnect.",
+      "criteria": "Requirements are documented and agreed upon by all parties\nBank and GeroWallet sign off on the scope and technical feasibility.\nSystem design finalized\nClear architecture blueprint is approved, including front-end, back-end, and security measures.",
+      "report": "Please find attached the video meeting which took place today (Jan 26th) to signoff the HL documentation of the workflows and technical requirements for both teams\nhttps://drive.google.com/file/d/18PwvYfpNXtDmHp5-AErPlGd9r8-7zg2r/view?usp=sharing\nThe document that includes the requirements and workflows to start developing from for the next milestone \nDocument now includes a signature of both parties to signoff the requirements.\nhttps://docs.google.com/document/d/1Ka3RSWUeLaMtUfE5Jb-H4gj7-IGy-4eAtGGXR0yROgE/edit?usp=sharing\nIntroducer Agreement between A.D. Labs (our legal company name) and Satchel https://drive.google.com/file/d/1Yl6SNL5e8ZWgLm3sGjbnksalsFoVXu6t/view?usp=sharing\n\nAdam's Linkedin: https://www.linkedin.com/in/adam-cazes-25241939/\nGerowallet's website about page: https://www.gerowallet.io/about (My picture and title at the end of the page)\nPeter's Linkedin: https://www.linkedin.com/in/peter-eihmanis-342926296/\nWebsite: https://satchel.eu/",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 7
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 33000,
+      "promise": "Implement the bank’s authentication methods securely\nWe will integrate login flows, token management, and encryption per the bank’s DevSecOps guidelines.\nDevelop API endpoints for registration, login, card ordering, etc.\nAll functionalities—balance inquiry, transaction history, top-up, blocking—are coded and tested.",
+      "criteria": "Working authentication and user registration\nNew and existing users can securely sign up and authenticate using the integrated bank framework.\nBasic card management endpoints functional\nCard ordering, blocking, PIN display, and transaction history successfully tested in a staging environment.",
+      "report": "API documentation for each endpoint can be found in our dev backend: https://dev.gerowallet.io/swagger-ui/index.html#/\nThe endpoints related to the bank API are under the Kaiserex Controller, these also include error handling for various HTTP codes.\nHere are the endpoints available right now:\n・Get Card PIN Code\n・Get verification link for KYC process\n・Get user information\n・Get user verification\n・Get user’s cards\n・Get card transaction history\n・Get card details\n・Get card UUID\n・Get card balance\n・Get cardano deposit address\n・Block and Unblock virtual card\n・Upload user documents\n・Order a new virtual card\n・Change card PIN code\n\nBank API Security Documentation can be found here: https://docs.google.com/document/d/1MqCgKKBKA--jIXCb8cnb95lrxvU0XaS0NV1ZgS05yxY/edit?usp=sharing\nThe doc includes details about:\n・OAuth 2.0 PKCE authentication for KaiserEx (code verifier/challenge) and a token schema (access/refresh + expires_in).\n・Token lifecycle management: storage in Chrome Storage + Vue (in-memory), auto-refresh on 401/near-expiry, validation/cleanup, and forced logout on failure.\n・Security & encryption: AES (CryptoTS) with password-derived keys; HTTPS/TLS 1.3; bearer tokens; request/response interceptors; logout on auth errors.\n・Data protection tiers:\n・ L1 private keys/mnemonics (AES-encrypted),\n・ L2 tokens/user info (secure persistence),\n・ L3 card numbers (never stored),\n・ L4 history/balances (encrypted in transit).\n・State management: card store structure (auth/status/loading flags) and walletStatus flow (loading → auth/new/pending/approved/error) driving UI.\n・Error handling: automatic token refresh, exponential backoff for network issues, and re-authentication on authentication failures.\n\nVideo demonstration: https://www.youtube.com/watch?v=0xXCvW_P9pE\nThe video demonstrates the following flow:\n・User can register from within the wallet\n・User can sign in within the wallet\n・User can complete KYC within wallet (Which automatically creates a card order at the end of that flow)\n・",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "11",
+      "cost": 33000,
+      "promise": "・Public release of the Gero Card product inside Gero Dashboard.\n・Fully working ADA to EUR conversion and top-up functionality on mainnet.\n・Operational integration with licensed EU banking partner (Satchel/Kaiserex).\n・Demonstration materials (screenshots and video) showing the full end-to-end flow.\n・Updated documentation describing user onboarding, KYC, and top-up process.",
+      "criteria": "A successful ADA→EUR→Card top-up transaction is demonstrated on mainnet.\nAt least three real transactions are shown in logs (hashes, timestamps, status).\nAPI calls to the banking partner (KYC, pricing, top-up) show successful responses.\nThe Gero Card feature is publicly available in the latest Gero Dashboard release.",
+      "report": "A. Output:\nPublic release of the Gero Card ordering and top-up flow, including user documentation and demonstration of the end-to-end process.\nAcceptance criteria:\nUsers can order the Gero Card and successfully top it up by following documented steps, with clear guidance and visual walkthrough of the process.\nEvidence:\n・Step-by-step public guide showing how to order and top up the Gero Card:\n・https://www.gerowallet.io/post/your-step-by-step-guide-to-gero-card-cardanos-crypto-card\n・Video walkthrough demonstrating the card top-up flow:\n・https://drive.google.com/file/d/1QqxtfAX4KS-5MqtACpkbQ69G3V3iJAko/view?usp=sharing\n\nB. Output:\nOperational backend integration with the licensed card partner (Kaiserex), enabling live card top-ups and processing of transactions.\nAcceptance criteria:\nBackend systems are live and reliably communicate with the card partner’s API, successfully processing card-related actions such as top-ups with a high success rate.\nEvidence:\n・Cloudflare API report showing backend calls from Gero infrastructure to Kaiserex, including status codes and request volume (Our Cloudflare is limited to 7 days worth of log data):\n・https://drive.google.com/file/d/1dys0Rb-UBOIUKeBnlyHMsRJcdGedFHBT/view?usp=sharing\n・Summary of results:\n・Total API calls: 11,461\n・Successful (200 OK): 11,200\n・Success ratio: ~97.7%\n\nC. Output:\nVerified on-chain execution of card top-up transactions on the Cardano blockchain.\nAcceptance criteria:\nActual top-up transactions are executed on-chain and can be independently verified via a public Cardano explorer.\nEvidence:\n・Example on-chain top-up transactions:\n・https://beta.cexplorer.io/tx/9fc281adc386f46b21f5be653baa888d7a9aa3d801a7ffa023661d115ad7c1cf\n・https://beta.cexplorer.io/tx/177b435c9c99ca57821e6b783af5415756b8a552e68eb320e35d965a806037b2\n・https://beta.cexplorer.io/tx/8cc79d634ec54e6074c0e03e437fcbbd1510d058d22b2f4210a334c857b298e9\n\nThese transactions confirm that users are successfully topping up their Gero Card using on-chain Cardano",
+      "kinds": [
+        "chain",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "12",
+      "cost": 24000,
+      "promise": "・Updated technical and architectural documentation for the non-custodial setup.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・The regulated banking partner confirms handling of compliance, KYC, and AML operations.",
+      "report": "Technical Documentation — Comprehensive architectural documentation covering GeroWallet's non-custodial design, Chrome Manifest V3 extension architecture, private key encryption (ChaCha20-Poly1305 AEAD with PBKDF2), Kaiserex OAuth 2.0 PKCE integration, KYC state management, and the card top-up transaction pipeline. Private keys never leave the user's device.\n・https://docs.google.com/document/d/1aeqscz87Mkzn3B_tsRMS-8-TRXKMTzbvVbulMjqoIYo/edit?usp=sharing\n\nFinal Close-out Report — Publicly available report detailing project objectives, KPIs achieved (880+ card registrations, 11,000+ wallet installs, 50+ countries, 411 KYC completions in launch week, 1,125 peak WAU), and impact on the Cardano ecosystem.\n・Google Doc: https://docs.google.com/document/d/1W5nPdHrEyzTfTWb9HACc_th3wGzedvh6/edit?usp=sharing&ouid=112650459175088861590&rtpof=true&sd=true\n・PDF: https://drive.google.com/file/d/1KiTaX0Hr54NtdLyZbbLW4US2wqP8PZAN/view?usp=sharing\n\nFinal Close-out Video — YouTube video demonstrating the live product, KPIs, technical approach, and project significance: https://www.youtube.com/watch?v=AWY-rBI8Jsk\nDetailed End to End Card Top Up (Not required for this milestone but an extension of the closeout report) - https://drive.google.com/file/d/1QqxtfAX4KS-5MqtACpkbQ69G3V3iJAko/view?usp=sharing\n\nKaiserex Compliance Confirmation — Signed letter from Kaiserex (backed by Satchel.eu, EU-licensed EMI) confirming their responsibility for all KYC, AML, and CFT compliance: https://drive.google.com/file/d/1BvkTagNnBmYZmswXmfP5CgdDaObyM-Ms/view?usp=sharing\nLive Mainnet Transactions — Three on-chain card top-up transactions demonstrating ADA-to-EUR conversion via the Kaiserex integration (Also seen in the video above):\n・https://cexplorer.io/tx/bfe4b5b3a7b8ae14abd085cc7ebf246242d9d5f3a56fa0f488b6f6b158cf7cca\n・https://cexplorer.io/tx/62f4b08b93412be29195683448fac141bef5ac719455c597074023ec5977e6d0\n・https://cexplorer.io/tx/14efd14650a08304ea5bfb0f01192a83a5adfecba2de76a505c9f465bf72fbb8",
+      "kinds": [
+        "chain",
+        "doc",
+        "video"
+      ],
+      "links": 17
+    }
+  ]
+}

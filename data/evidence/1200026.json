@@ -1,0 +1,74 @@
+{
+  "title": "An all-in-one crypto accounting system compatible with tax regulations, including those of Japan, and also supporting staking and DeFi transactions.",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 46500,
+      "promise": "・Publish an application development environment (that verifiers can operate from a web browser)\n・Implement an interface for Cardano wallet integration\n・Develop a function to recognize transactions of linked wallets\n\n・Recognize gas fees.\n・Recognize fund transfers.\n・Recognize swaps.\n・Recognize transfer and deposit of native tokens.\n・Recognize receiving staking rewards.\n・Recognize transfer and deposit of NFTs.",
+      "criteria": "1.Publish an application development environment (that verifiers can operate from a web browser)\n・Can be accessed from common browsers such as Chrome, Safari, etc.\n・Anyone can log in by entering the URL, secret ID, and password.\n\n2.Implement an interface for Cardano wallet integration\n・Cardano wallet can be entered.\n・Can enter addresses starting with \"stake\".\n\n3.Develop a function to recognize transactions of linked wallets\n・Recognize gas fees.\n・Recognize fund transfers.\n・Recognize swaps.\n・Recognize transfer and deposit of native tokens.\n・Recognize receiving staking rewards.\n・Recognize transfe",
+      "report": "Proof of Achievement Review for \"Validation of Cardano Chain Compatibility and Transaction Recognition Accuracy\" Milestone\n\nDetailed verification steps and screenshots are documented here: https://docs.google.com/document/d/1ImjdaEaHR3SwFiPuhl0zQF7qZ1b7-pWp_TVsee36GWM/edit?usp=sharing\n\nThis review verifies the successful implementation and testing of Cardano chain integration with detailed evidence of functionality across multiple verification items:\n\n1. Development Environment Access:\n- Successfully accessed and authenticated the test environment\n- Test environment URL: https://app.rikyu.io/login\n- Test credentials are operational (see detailed documentation)\n\n2. Cardano Wallet Integration:\n- Successfully implemented wallet registration interface\n- Verified with two test wallets:\n * t1: stake1uxc82raucet5m7wy5n3r6ugprhlh28rrh0guhguzv2rj73qs54w86\n * t2: stake1u8kzqe73hl5sl8edzu3m6g3dlhd2sj668w4gg64su7px4xcdtay9m\n- Both wallets synced successfully with transaction history\n\n3. Transaction Recognition Functionality:\n- Successfully verified recognition of various transaction types:\n * Gas fees\n * Fund transfers\n * Swap transactions\n * Native token transfers\n * Staking rewards\n * NFT transfers\n- All transaction types are properly categorized and displayed\n\n4. Balance Accuracy Verification:\n- Total balance: 92.976373 ADA\n- Individual wallet balances verified against Cardanoscan:\n * t1: 87.367763 ADA\n * t2: 5.60861 ADA\n- Perfect match confirmed between application and blockchain explorer\n\nAll milestone requirements have been verified and met, demonstrating successful Cardano chain integration with accurate transaction processing and recognition.",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 29000,
+      "promise": "・Display the results of profit and loss calculations for transactions verified in Milestone\n・Confirm that profit and loss calculations are performed correctly",
+      "criteria": "1.Display the results of profit and loss calculations for transactions verified in Milestone\n・The following addresses, which were also used in Milestone 1, will be used for verification.\n・The wallet addresses for verifying the accuracy of transactions will be shared again when submitting Milestone 2.\n・Profit and loss calculations are performed for each transaction\n・The results of profit and loss calculations are displayed in the transaction details\n・Market value, acquisition cost, and profit/loss are displayed\n\n2.Confirm that profit and loss calculations are performed correctly\n・The following",
+      "report": "Milestone Completed: Milestone 2 - \"Confirm Seamless Operation with Accounting Rules\"\nConfirmation of Achievement: We confirm the successful completion of Milestone 2. This submission demonstrates that all requirements for the Milestone Outputs, Acceptance Criteria, and Evidence of Milestone Completion, as defined in our proposal, have been fully met.\nSummary of Verification:\n・P&L Display Verified (Acceptance Criteria 1): The system correctly displays Profit & Loss (P&L) calculation results, including Market Value, Acquisition Cost, and P/L, within the transaction details view. This was verified using the specified test wallet.\n・P&L Calculation Accuracy Verified (Acceptance Criteria 2): The P&L calculations are confirmed to be accurate, implementing the formula (P/L = Current Market Value - Acquisition Cost) and using the moving average method for cost basis calculation. The system correctly handles the accounting logic for both income (updating cost basis) and expenditure (calculating P/L) transactions.\n\nEvidence & Links:\n・Detailed Proof of Achievement (Google Doc):\n\nhttps://docs.google.com/document/d/1Wb-Mymm7BpiU2FQ_rXff2OaHi2YLJQb6HXKKG0GEN5w/edit?usp=sharing\n・This document provides comprehensive details, including verification procedures, step-by-step walkthroughs, screenshots, and specific calculation examples satisfying all acceptance criteria.\n\n・Development Environment URL (Required Evidence): https://app.rikyu.io/login\n\n・The test account login credentials required to access the environment are included within the Google Doc linked above.",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "8",
+      "cost": 30000,
+      "promise": "・Bug fixes\n・Deployment to production environment",
+      "criteria": "1.Bug fixes\n・When deploying to the production environment, check for the presence of critical bugs. If no bugs are found, skip this verification.\n\n2.Deployment to production environment\n・Since detailed verification was completed in the previous milestone, a thorough verification of the calculation results is not necessary here. We ask you to register a wallet and confirm whether the transaction data is displayed and whether the profit/loss calculation results are shown.",
+      "report": "Milestone Completed\nMilestone 3 - \"Release to Production Environment\"\nConfirmation of Achievement\nWe confirm the successful completion of Milestone 3. This submission demonstrates that all requirements for the Milestone Outputs, Acceptance Criteria, and Evidence of Milestone Completion, as defined in our proposal, have been fully met.\nSummary of Achievement & Activities\nBug Fixes and Final Verification (Acceptance Criteria 1)\nWe completed the final bug check prior to the production release on March 20, and confirmed that there were no issues.\nPer the acceptance criteria, we confirmed that no critical bugs were identified during the final deployment checks for this production release. The major bug fix (Cardano staking rewards double-counting issue) was implemented in Milestone 1.\nIn Milestone 1, we also identified and fixed an issue concerning the timing of staking reward recognition. Because Cardano rewards are determined per epoch but require manual withdrawal, we decided—consistent with accounting principles—to recognize revenue at the time of reward confirmation rather than at the time of actual withdrawal.\nVerification items across milestones\nMilestone 1 Verification Items\n- Successful Cardano wallet integration\n- Accurate detection of the following transaction types:\n * Gas fees\n * Fund transfers\n * Swap transactions\n * Native token transfers\n * Staking rewards\n * NFT transfers\n- Verification of ADA balance consistency between the application and blockchain explorers (a critical indicator of transaction accuracy)\nMilestone 2 Verification Items\n- Profit/loss calculation accuracy\n- Cost basis calculation accuracy\nDuring the final verification for Milestone 3, we confirmed that all the above items function properly without issues.\nNote: For detailed verification flows and results from Milestones 1 and 2, please refer to the respective Proof of Achievement (PoA) submissions. Milestone 3 focuses specifically on the successful deployment to the production environmen",
+      "kinds": [
+        "other"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "18",
+      "cost": 20000,
+      "promise": "・Review of edited and newly added help pages",
+      "criteria": "・Review of edited and newly added help pages\n\n・As the initial users are expected to be Japanese, create the content in Japanese. If reviewers do not understand Japanese, they should use browser auto-translation to check the content.\n・Add content to the Help page\n・Add Cardano to the list of supported chains page\n・Add a list of supported transaction types for the Cardano chain\n・Include other necessary information\n・The help page for our application is built using Notion. We will add descriptions related to Cardano to the following site.\n\nNote: \nAt this point, the specific content of the help page",
+      "report": "A. Output:\nWe delivered an updated Help Center page for Cardano wallet integration on our dedicated Help Center site (custom domain). The page provides the necessary information for users to synchronize their Cardano wallet with our application.\n\nAcceptance criteria:\n・✅The Help content is created in Japanese (initial users are expected to be Japanese; reviewers may use browser auto-translation if needed).\n・✅Cardano is added to the list of supported chains on the Help site.\n・✅The Help page includes a list of supported transaction types for the Cardano chain.\n・✅The Help page includes other necessary information for users when synchronizing their Cardano wallet (integration steps, notes/limitations, and troubleshooting guidance).\n\nEvidence:\n・Cardano wallet integration Help page: https://support.rikyu.io/rikyu/help/cardano-wallet-integration/\n・Supported chains list (Cardano included): https://rikyu.io/biz#services\n\nNote: \nThank you for the review. We would like to clarify the timeline and request reconsideration.\nAlthough the proposal has been active for more than 1 year, the milestone work started in November 2024 as part of a planned ~10-month schedule. The deliverable for this milestone (Cardano Help documentation) was publicly launched on July 15, 2025 and has been available to Cardano users; the delay was in our Proof of Achievement submission, not in delivering the output to users. The ~2-month delay beyond the May 2025 milestone deadline was mainly due to migrating our Help Center from a Notion-based simple site to a more robust custom-domain Help Center. The scope and acceptance criteria were not changed, so we believe a Change Request is not necessary.\nEvidence:\n- Cardano wallet integration Help page: https://support.rikyu.io/rikyu/help/cardano-wallet-integration/\n- Supported chains list (Cardano included): https://support.rikyu.io/rikyu/help/blockchains-available/\n- Release announcement for Cardano support (Final milestone-related): https://rikyu.io/news/2025-",
+      "kinds": [
+        "other"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "19",
+      "cost": 29500,
+      "promise": "・Final close-out report\n・Final closeout video\n・Website to announce the completion of Cardano support",
+      "criteria": "・Final closeout report is publicly available\n・List of features newly implemented in this fund\n・Summary of submissions at all milestones\n・Final closeout video is publicly available\n・Video showing the entire process from wallet integration to transaction retrieval\n・Website to announce the completion of Cardano support\n・Make it publicly available so anyone can check it\n・The intended delivery is something similar to the following page:\n・https://rikyu.io/news/ethereum-layer2-base-support",
+      "report": "Milestone Completed\n\nFinal Milestone - \"Release of Cardano-compatible Web Page\"\n\nConfirmation of Achievement\n\nWe confirm the successful completion of the Final Milestone. This submission demonstrates that all requirements for the Milestone Outputs, Acceptance Criteria, and Evidence of Milestone Completion, as defined in our proposal, have been fully met.\n\n---\n\nA. Output: Final Close-out Report\n\nWe have prepared and published a Final Close-out Report summarizing all deliverables, milestones, and achievements of this project. The report is publicly accessible.\n\nThe report includes:\n- Project overview (ID: 1200026, F12: Cardano Use Cases: MVP)\n- List of all features newly implemented with Catalyst funding\n- Summary of all milestone submissions and their approval status\n- Key achievements, impact, and next steps\n\nAcceptance criteria:\n- The Final closeout report is publicly available.\n- The report includes a list of features newly implemented in this fund:\n - Cardano blockchain integration (eUTXO model support)\n - Cardano wallet interface (stake1... and addr1... address support)\n - Automatic transaction recognition and classification (gas fees, fund transfers, swaps, native token transfers, staking rewards, NFT transfers)\n - Tax-compliant profit/loss calculation engine for Cardano transactions (moving average method)\n - Production deployment of all Cardano features\n - Help Center documentation for Cardano wallet integration\n - Public announcement page for Cardano support\n- The report includes a summary of submissions at all milestones:\n - M1: Validation of Cardano Chain Compatibility and Transaction Recognition Accuracy - Approved (Jan 22, 2025)\n - M2: Confirm Seamless Operation with Accounting Rules - Approved (Apr 23, 2025)\n - M3: Release to Production Environment - Approved (May 12, 2025)\n - M4: Addition and Creation of New Help Pages for Cardano Support - Approved (Mar 10, 2026)\n - Final: Release of Cardano-compatible Web Page - This submission\n\nEvidence:\n- Final Clo",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    }
+  ]
+}

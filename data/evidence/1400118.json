@@ -1,0 +1,31 @@
+{
+  "title": "Stable + Cardano: fast and feeless USDT interopability",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Launch of mainnet interoperability between Stable’s USDT network and USDA and USDM. Liquidity pool will enable swapping of USDT to/from USDA and USDM. The launch will be fully open to the public to use. Delivered as developer documentation describing how to swap between USDT and USDA/USDM allowing developers to integrate into wallets and dApps.",
+      "criteria": "Sixteen (16) transactions on mainnet showing USDT being swapped for USDA and USDM. USDA <--> USDT and USDM <--> USDT are validated with individual transactions; no fewer than four (4) transactions per case (16 transactions total), as follows:\n・Case 1: USDA → USDT\n・Case 2: USDT → USDA\n・Case 3: USDM → USDT\n・Case 4: USDT → USDM\n\nPublic developer documentation is online and sufficient for third-party integration, including API endpoint references, usage examples, and network details.",
+      "report": "A. Output: Launched mainnet interoperability between Stable’s USDT network and Cardano (USDA/USDM) via a liquidity pool enabling public swaps between USDT ↔ USDA and USDT ↔ USDM.\nAcceptance criteria: Sixteen (16) mainnet transactions showing USDT being swapped for USDA and USDM, with no fewer than four (4) transactions per case:\n・Case 1: USDA → USDT (4 tx)\n・Case 2: USDT → USDA (4 tx)\n・Case 3: USDM → USDT (4 tx)\n・Case 4: USDT → USDM (4 tx)\n\nEvidence:\nCase 1: USDA → USDT\n1. https://cardanoscan.io/transaction/42f2ce3a62dd071ccbb81372ac19e0a9347e959a126016215fad5f7ed24ad57b\nhttps://stablescan.xyz/tx/0xc8aa59f219fecc63f9a48a02c80c6f023a72724348e88ef14796fe60093a0495\n2. https://cardanoscan.io/transaction/5c8710c36866763402b81c09da5bc808da7cad9e154690dc573331187484bd18\nhttps://stablescan.xyz/tx/0xf6a5a79a85333662b5c71193d650e800b21a7f1ca223b750f86e0721491f81e9\n3. https://cardanoscan.io/transaction/1d3367c4a5554244f4d1fa37a668ef877d34383ba79e65732ebcd5ab3e71285a\nhttps://stablescan.xyz/tx/0x5dd0e74e770c95fa4536ddb1dca03838f4caf077b1fb185f72105294e98319d1\n4. https://cardanoscan.io/transaction/c47fb3b2025f243d39ff444f54b2d99abbde8da560bc96b51f4035af2ae9374a\nhttps://stablescan.xyz/tx/0x42ff7fb0e27dc65ca90c07f526b9862ea873ba6d2daf04ce18924a72c04fc38c\nCase 2: USDT → USDA\n5. https://stablescan.xyz/tx/0x6e8a428c759a4f0017e4d2a91a49c64fba6163b38ea0547f3cfce8c93620bc70\nhttps://cardanoscan.io/transaction/361bf384f034c7bfe673fcfcbb7e420df30e102f11f34db24b1006690418d553\n6. https://stablescan.xyz/tx/0x4088e07ce3b2ec72d9fc634d52062362c4299f652daf995452f4ab80313fab87\nhttps://cardanoscan.io/transaction/94ff175c99650910adaa65db8378f59dd869c933f33ec05108365c32f7855d08\n7. https://stablescan.xyz/tx/0x458435245646540899ceab437011080e08eef745cccc083fee91f6f6ea0aa7f7\nhttps://cardanoscan.io/transaction/76a42d92fd9941448a394bfcde7112d767054e35734bb0fff11d74ed56e38220\n8. https://stablescan.xyz/tx/0x2e47e6598f3b9da9b77f07f0f23e93b9a45718edfbabd4396372ca2e3cd21d1f\nhttps://cardanoscan.io/transaction/996",
+      "kinds": [
+        "chain",
+        "other"
+      ],
+      "links": 36,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 90000,
+      "promise": "USDT interoperability is functional via a frontend using Eternl and Lace. Users can access and use USDT alongside USDM and USDA directly through a frontend interface.",
+      "criteria": "USDA and USDM can be deposited via a frontend using Eternl and Lace. The interface is publicly accessible and requires less than 5 steps to swap between USDA or USDM and USDT, indicating it is intuitive; steps may include connecting a funded wallet, transferring funds, etc., and will be explained when milestone evaluation takes place. The interface is usable without noticeable bugs, indicated by a provided test report. The swaps complete automatically without user involvement after approving the transfer within their wallets.",
+      "report": "A. Output: Launched frontend-based USDT interoperability using Eternl and Lace, enabling users to access and use USDT alongside USDA and USDM directly through a publicly accessible interface.\nAcceptance criteria: USDA and USDM can be deposited via a frontend using Eternl and Lace. The interface is publicly accessible and requires less than five (5) steps to swap between USDA or USDM and USDT, indicating it is intuitive. The interface is usable without noticeable bugs, as indicated by a provided test report. Swaps complete automatically without user involvement after approving the transfer within their wallets.\nEvidence:\n1. https://www.mynth.ai/api/media/play?hash=61187a129c82b74a904f0bcc458e1e91\n2. https://www.mynth.ai/api/media/play?hash=be4a8a83d4685f30162ce3bd886aefab\nB. Output: Published a written report providing links to each transaction shown in the Eternl and Lace videos, together with an explanation of how to verify the stability and intuitive design of the interface.\nAcceptance criteria: A written report is publicly accessible and includes links to each transaction shown in the videos, as well as an explanation of how to verify the interface’s stability and intuitive design.\nEvidence: https://www.mynth.ai/api/media/hotlink?hash=79eb03ef24b4fad5139fe9ae3dc92ff3\nC. Output: Published a public test report for the interface.\nAcceptance criteria: A public test report demonstrates that the interface is usable without noticeable bugs. \nEvidence: https://www.mynth.ai/api/media/hotlink?hash=5642a884e85efae5da0aa70c4c7bb782",
+      "kinds": [
+        "other"
+      ],
+      "links": 8
+    }
+  ]
+}

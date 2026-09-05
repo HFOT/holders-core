@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・リソース配分:役割と責任を割り当て、必要なリソースを割り当てます。\n・技術研究:Cardanoブロックチェーンおよび既存のスマートコントラクトソリューションに関する詳細な調査を実施\n・コミュニティのエンゲージメント:オープンソースコミュニティとのコラボレーションとサポートのためのディスカッションを開始\n・開発フレームワークのセットアップ:スマートコントラクト作成に必要な開発環境とツールを確立します.",
+      "criteria": "現在使用中の既存ソリューションと異なるスマートコントラクトアーキテクチャに関する当社の発見を示す技術調査レポートを提供しています。 また、開発フレームワークのセットアップを再現するために必要なツールを含むgithubリポジトリを提供しています。 セットアップは、当社のスマートコントラクトをテストし、標準的なAIモデルとやり取りすることができます。 レポートはGithubで共有され、Xページで追加の発表を行います.",
+      "report": "フィードバックをいただき、紙をリンクしていただきありがとうございます!\nお客様がリンクした人工知能に関する論文を統合し、AIガバナンスに関するセクションを追加しました。\nしかし、他の紙も非常に興味深い間、彼らは直接私たちのプロジェクトに関連していませんので、それらを含めることは意味がありません。\nまた、すべての参照はテキストの関連場所にあり、それらのどれも「バックで追加参照」です。 テキストの引用をクリックして、参照セクションの各参照にジャンプできます。\nリンク:\n・更新研究報告:https://drive.google.com/file/d/1bd6FFdsqJKsMD0C3v35jGcJktbsrFCpw/view\n・Githubリポジトリ(最初の開発セットアップを含む)(スマートコントラクトは、次のマイルストーンの一部であることに注意してください): https://github.com/unboundedmarket/Smart-Contracts-for-AI\n・Xアナウンスレポート(AigenSpaceからUnboundedMarketに名前をつけてください): https://x.com/unboundedmarket/status/1802718982664798665"
+    },
+    {
+      "no": 2,
+      "promise": "・スマートコントラクトコーディング:スマートコントラクトのコーディングを開始し、オープンソースコミュニティの入力を組み込む。\n・Iterative Testing:契約の信頼性および保証を保障するために連続的なテスト(単位、統合、機能)を実施して下さい。\n・Feedback の統合: 開発者、ユーザー、ブロックチェーンの専門家からのフィードバックを定期的に組み込む。\n・パイロット評価:データの収集と分析を行い、スマートコントラクトのパフォーマンスと影響を評価します.",
+      "criteria": "AI推論モデルの正しい請求を可能にするスマートコントラクトインフラストラクチャの最初のバージョン。 スマートコントラクトは、基本的なAIモデルでテストし、Opshinで開発する必要があります。 また、スマートコントラクトのパフォーマンスを検証し、改善できる方法については、オープンソースのツールを使用しています。 Githubリポジトリの監視問題やXページで共有するリンクに関するコメントを集めてフィードバックを収集します.",
+      "report": "親愛なる査読者のチーム,\nGitHubリポジトリの包括的なオフチェーンインフラとともに、スマートコントラクトをオープンソース化しました。 https://github.com/unboundedmarket/Smart-Contracts-for-AI\nREADME.mdファイル(https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main/README.md)は、スマートコントラクトとやり取りする方法と、AIの推論を呼び出す方法についてのセクションが含まれています。 設計の決定の背後にある推論を理解するために、マイルストーン1に提出したレポートも参照します。 https://drive.google.com/file/d/1bd6FFdsqJKsMD0C3v35jGcJktbsrFCpw/view. 私たちは、当社のスマートコントラクトとやり取りするために必要なトランザクションを構築し、当社のモデルが提供する広範な機能の実証に必要なさまざまなオフチェーンスクリプトの広い範囲を組みました。\nスマートコントラクトをテストし、将来のアップグレードのための保守性を確保するために、包括的なテストスイートを開発しました。 このスイートカバーと使い方は、セクション「スマートコントラクトテスト」の下のREADME.mdに含まれています。 (テストスイート:https://github.com/unboundedmarket/smart-contracts-for-ai/tree/main/tests)\nまた、スマートコントラクトとAIの推論との間の接続を明確にするために、アプローチを説明する追加の文書を追加し、オンチェーン取引に検証します。 このレポートは、https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main/CATALYST DEMO REPORT.md をご覧ください。\nまた、フィードバックを求め、入力を収集するためにGoogleフォームをリリースしました。 https://forms.gle/TvXMytFCFJoCw3Hv8. このフォームに基づいて、2つのGitHubの問題(以前の投稿に含まれている準備)を作成しました。\n・「サブスクリプション機能リクエスト」 https://github.com/unboundedmarket/smart-contracts-for-ai/issues/2 → このコミットでアドレス: https://github.com/unboundedmarket/smart-contracts-for-ai/commit/62bdfb541f53b1263fccf16a2da8c1939500613f\n・「オフチェーンコードのバグ」 https://github.com/unboundedmarket/smart-contracts-for-ai/issues/1 → このコミットにアドレスを付ける:"
+    },
+    {
+      "no": 3,
+      "promise": "・改良: パイロットのフィードバックに基づいて、スマートコントラクトと統合プロセスを改良および最適化します。\n・コミュニティレビュー:最終的なレビューと提案のためのオープンソースコミュニティに洗練されたスマートコントラクトを提示します。\n・ドキュメント更新:ユーザーマニュアルやテクニカルガイドなど、すべてのプロジェクト文書を更新します。\n・Launchイベント:スマートコントラクトシステムを正式に立ち上げる",
+      "criteria": "弊社では、スマートコントラクトが生産でどのように実行されているかを理解し、改善できるかについてフィードバックを得るための広範なドキュメントとテストを追加します。 コミュニティのフィードバックに基づいて開発されたインフラを調整します.",
+      "report": "親愛なるCatalystの査読者,\n私たちのコードの現在のバージョンは、オープンソースのGitHubリポジトリ(https://github.com/unboundedmarket/smart-contracts-for-ai/)で利用可能です。 また、当社の README.md よりも詳細を提供する外部ユーザーのための使用ガイドを追加しました: https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main/USER GUIDE.md\nhttps://x.com/unboundedmarket/status/1963224230675238983 を通じて、当社のコミュニティにスマートコントラクトを導入し、さまざまなソースからのフィードバックを収集しました。 すべてのフィードバックは、GitHub の問題として記録され、別のコミットで対処されました。 当社のプロセスを文書化するために、当社の方法論を概説し、受け取ったフィードバックを要約する報告書を作成しました。 https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main/FEEDBACK REPORT.md\n発表: https://x.com/unboundedmarket/status/1969003181557309899"
+    },
+    {
+      "no": 4,
+      "promise": "・連続監視: 定期的に、性能とセキュリティのためのシステムを監視します。\n・コミュニティエンゲージメント:オープンソースコミュニティとの積極的なエンゲージメントを維持し、継続的な改善と更新を行います.",
+      "criteria": "・労働AI推論インフラ\n・オプシンに書かれたスマートコントラクトの推論\n・AIインフェレンスモデルの継続稼働時間と、インフェレンスリクエストピーク時にどのように動作するかを報告\n・開発者コミュニティが提起した問題のMonitor Githubリポジトリーと、必要に応じてコードベースを調整",
+      "report": "親愛なる査読者,\nマイルストーンの出力は下記をご覧ください。\n・Catalystクローズアウトレポート(PDF) https://drive.google.com/file/d/17-b1DvKaCi9FY1tSXpkk VUiyo1q671d/view?usp=sharing\n・Catalystクローズアウトビデオ:https://www.youtube.com/watch?v=QSToq0Ahovc&feature=youtu.be\n・稼働時間レポート:スマートコントラクトインフラストラクチャの動作を分析し、異なるボトルネックを特定するための詳細な稼働時間レポートを作成しました。 https://drive.google.com/file/d/195tAscWTvTGY4gIt32nEskRy6IqusQVm/view?usp=sharing\n・最終プロジェクトドキュメント: ユーザーガイド https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main/USER GUIDE.md と README https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main/README.md\n\n最後のコードベースは、https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main にあります。 プロジェクトを通して、開発者のフィードバックに基づいてコードベースを調整しました。 最後のマイルストーン以来、レポジトリを継続的に監視していますが、追加のユーザーフィードバックを受け取りません。 現在のフィードバックに基づくすべての監視された変更は、https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main/FEEDBACK REPORT.md をご覧ください。 また、Catalystプロジェクト終了後にリポジトリの監視を継続する予定です。\n審査官が指摘したように、他のプロジェクトで使用するためのスマートコントラクトシステムを開発し、Preprod 上で全てのテストを実施しました。 以前の投稿では、Preprod トランザクションを常に共有しています。しかし、完全性のために、契約がメインネット上でもアクセス可能であることを実証するためにメインネットトランザクションを作成しました。 https://cardanoscan.io/transaction/226e2ba0c9f85fedc9e803f9a1102b6f4639ef38c5d988e70c4a758dbda6"
+    }
+  ]
+}

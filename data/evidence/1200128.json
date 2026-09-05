@@ -1,0 +1,78 @@
+{
+  "title": "Hydra-Enabled Accounting and Micropayments System",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 65000,
+      "promise": "Hydra research and risk assessment.\nHydra based accounting system design and architecture\nCustomer wallet app UX design and user validation",
+      "criteria": "Hydra research and risk assessment will provide indication of any potential limitation of Hydra from both functional and non-functional perspectives. The purpose of the system is to sustain a significant number of users, hence having understanding of number of users / merchants we can sustain using one hydra head is key in modelling any scaling solutions. Other questions to be answered: limits for adding utxos to heads and how to most efficiently query information from the Hydra head.\nThe accounting system design and architecture document will describe key architectural viewpoints, technologie",
+      "report": "We have conducted an analysis and risk assessment of Hydra state and the feasibility of using it for our problem. We have found that in its current state, we can implement the solution with some limitations associated with partial commits not yet being implemented. The impact of respective limitation being non-functional (aka doesn't impact the functionality, but rather the cost efficiency of the solution). The analysis results can be found here:\nhttps://docs.google.com/document/d/1lpYT6uzvnfiqZDuPDaXrijjnO_MCDEef8JcLXNB55bs/edit#heading=h.ihuw9mgbl289\nFollowing the analysis we have worked on defining the technical design and architecture of the solution, the document outlining the key viewpoints can be found here:\nhttps://docs.google.com/document/d/1b_G03TTuOSsm3Ex0B_aD5MMXu7G9K3Y87cQQQdN0-qE/edit#heading=h.m7lrsogspphb\nFinally, we have created the design for the Hydra Pay mobile app. These designs have been used as part of user interviews - we have interviewed three different users and collected feedback that, where appropriate, has been incorporated into the final designs that can be found here:\nhttps://www.figma.com/design/lPtdCSKf7g7Ofql3fiYYfe/App-Design?node-id=24-4332&t=WxTZsuNK9SQIdrjX-1",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 56000,
+      "promise": "Android and iOS customer native apps",
+      "criteria": "We must ensure implementation of the wallet app that will enable the payment process from a customer end according to the designs developed in phase 1.",
+      "report": "Customer Wallet App Implementation\nMilestone Outputs:\nAndroid and iOS customer native apps.\n\nEvidence of Milestone Completion:\n1. Android App:\n• Video Demonstration:\n A video showcasing the Android app’s full functionality is available, highlighting key features such as depositing ADA, making payments, and withdrawing funds. This demo showcases a number of advanced features, including:\n - Withdraw Capability: Users can withdraw ADA or USDM, selecting between accounts and currencies in real-time.\n - Wallet Management: The app allows users to choose their accounts, add new ones, and view their real-time USD equivalent balance.\n - Currency and Payment Options: Users can choose who they want to pay and with which currency (ADA or USDM).\n - Amount and QR Code Scanner: The app allows users to input payment amounts and pay through QR codes, providing seamless payment processing.\n - Transaction History: The app displays transaction histories along with detailed breakdowns of each transaction.\n - ADA Staking Screen: A dedicated staking screen is available, allowing users to stake their ADA directly within the app.\n - Currency Exchange: The app supports exchange between ADA and USDM.\n - NFC Payment Screen (in progress): Development is ongoing for NFC contactless payments to be finalized in Milestone 4.\n - User Settings (in progress): Additional user settings are being developed to allow for greater personalization.\nLink to the video: android-milestone-2 fin.mp4\n2. iOS App:\n• Video Demonstration:\n A video showcasing the iOS app’s full functionality is available, including the same features as the Android app. These features include:\n - Withdraw Capability: Users can withdraw ADA or USDM, selecting between different accounts.\n - Wallet Management: The app allows users to choose and add accounts with real-time USD values.\n - Currency and Payment Options: Users can choose who to pay and with which currency (ADA or USDM).\n - Amount and QR Code Scanner: Payments can be made through",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 70000,
+      "promise": "Aiken validators and minting policies for locking user funds and performing payments\nTypescript off-chain code for transaction building and querying",
+      "criteria": "Ensure implementation (smart contract and off chain code) matches the design from phase 1.",
+      "report": "This document represents the proof of achievement for Milestone 3 of the Hydra-Enabled Accounting and Micropayments System Catalyst project. \n\nAs part of milestone 1 of the project we have defined the designs of the smart contract and off chain code required for the Hydra based accounting system along with the design for the mobile app that will employ the accounting system and expose the end to end functionality to end users. Following that, in milestone 2, we have delivered the implementation of the mobile application (both Android and IOS). As part of the 3rd milestone we had to deliver the smart contract and the offchain code associated with the implementation of the Hydra based accounting system that will be used by the mobile apps. In this context, the code associated with the implementation can be found here: https://github.com/blazarlabs-io/blazar-hydra/tree/main/src\n\nThe video demonstrating the functionality of the system can be found here:\nhttps://drive.google.com/file/d/1SobpP3OK0CqjTmNC_thkbp8eYlbclGTa/view?usp=drive_link\n\nAs part of the demo there are a number of transactions occurring on chain, these transactions are referenced in the document below and can be examined as a further confirmation of the transactions demoed in the video:\nhttps://docs.google.com/document/d/1HklUPawheM1L3WmcYSeSjHqtZLMvToBGazsoziuOjWk/edit?usp=drive_link\n\nDuring the development process, a number of issues were identified in relation to Hydra as well as to the Lucid framework used for implementing the offchain code. The issues have been reported to relevant parties with some of them being fixed already and some others lined up for being addressed. The list of issues along with relevant details have been documented and can be found here:\nhttps://docs.google.com/document/d/1QgUYX3GKQ8YBJM9e30xQ3LhCPlmctb4bBCQyVv7p-Dc/edit?usp=drive_link\n\nFollowing the implementation, there were few design elements that were updated and in this context the updated markdown version of the design",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "15",
+      "cost": 61000,
+      "promise": "Merchant app.\nAudit and security testing report: \n・the smart contract will be audited to ensure compliance with requirements\n・the wallet app and the merchant app will be tested for security issues to ensure funds safety",
+      "criteria": "Ensure the merchant can initiate a payment from the merchant app and the app adheres to the UX design.\nMerchant app integration with NFC Reader\nAudit and security testing will be conducted on top of regular qa/testing to ensure smart contracts conformity and web app integrity.",
+      "report": "In this milestone we are delivering the last key component of the solution - the merchant app. This app is used by merchants in conjunction with the payment terminal (IoT device) used to capture the NFC payment, the terminal has to be connected to the app to enable triggering payments as well as showing balance / settled funds to the merchant. The video below highlights the process of connecting the terminal to the web app as well as the process of initiating and then receiving a payment: https://drive.google.com/file/d/1P-ThxfwPedxG1Rz8XkYDdScyEvRAAUkm/view?usp=drive_link\nThe link to the merchant app codebase can be found here: https://github.com/blazarlabs-io/blazar-pay-merchant-app\nDespite the project referring to implementing an MVP solution, it was our ambition for the implementation of both the on chain code as well as the backend and frontend technology to be sound and provide the level of confidence needed for an application that manages user funds and facilitates funds transfer between users. In this context, the smart contracts audit and security testing of the overall solution are two important factors to provide that level of confidence while enabling us to complete the project with a solution that is built on a solid technical foundation. \nWe have audited the Blazar Pay solution with Entangled Labs (E7D - https://entangled.cardano.vip/), specifically the audit has been conducted by Marius Georgescu, a certified Cardano Solution Architect, with over 5 years of experience in developing on Cardano - https://www.linkedin.com/in/georgescumarius/\nThe audit report didn’t highlight any major issues or deficiencies - on the contrary it has reinforced that the implementation follows best practices and solid technical patterns. Below is a quote from the report: “Hydra-Pay employs solid eUTxO patterns (one-shot minting, receipt-like TokenName binding, unique / tagged outputs, and withdraw-zero to centralize transaction-level checks). No critical issues were identif",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "16",
+      "cost": 44750,
+      "promise": "・Final close-out report on this MVP that will enable basic wallet / payment functionalities via NFC towards merchants. \n・Final closeout video\n・Marketing materials and campaign - videos, articles, banners, pdf booklet that will be used in the marketing campaign with the intent to onboard initial pilot merchants.\n・Pilot merchants onboarded",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・One pilot merchant onboarded (the apps are available to be downloaded, installed and used)\n・Published marketing materials and marketing campaign results ((number of videos, articles and events conducted, number of customers attracted)",
+      "report": "・Final Closeout Report — publicly available via link\n・https://drive.google.com/file/d/1TDiREC0gq04tYCUspXQtMN_YWI_EPP4e/view?usp=drivesdk\n・Final Closeout Video — publicly available on YouTube via link\n・https://youtu.be/T0OCirL9FJU\n・Public Drive evidence folder with end-to-end functional-flow videos — user app, merchant app, BLE/NFC terminal, testing materials, and reviewer navigation folder\n・https://drive.google.com/drive/folders/1NXvs-qlJQTvH6s35Tno8XiiENzc7BbnT?usp=drive_link\n・GitHub repositories of the project — user app, merchant app, payment terminal, smart-contract/accounting backend, and associated off-chain code\n・Accounting backend: https://github.com/blazarlabs-io/blazar-hydra\n・User wallet app: https://github.com/blazarlabs-io/blazar-pay-mobile-app\n・Merchant web app: https://github.com/blazarlabs-io/blazar-pay-merchant-web\n・Payment terminal: https://github.com/blazarlabs-io/blazar-pay-termial\n・Marketing materials and campaign results report — public PDF describing the marketing materials produced, marketing plan, campaign results, and pilot/onboarding evidence\n・https://drive.google.com/file/d/1FVJQTpExxC8rVaRPFaM6hZ8zQDCaV2Ds/view?usp=drivesdk\n・Marketing/product materials folder — product visuals, QR/onboarding materials, terminal photos, merchant-facing materials, and supporting campaign assets\n・https://drive.google.com/drive/folders/1aEsTF77Iqg9OmVZPdfhPsjXRlnuuF6uY\n・Pilot merchant onboarding evidence — Laguna Park pilot-style validation is documented in the final closeout report, closeout video, campaign report, and public evidence folder\n・Final Closeout Report: https://drive.google.com/file/d/1TDiREC0gq04tYCUspXQtMN_YWI_EPP4e/view?usp=drivesdk\n・Final Closeout Video: https://youtu.be/T0OCirL9FJU\n・Audit and security evidence — Hydra / smart-contract accounting audit and mobile-app security testing report\n・Hydra audit report: https://drive.google.com/file/d/1Gq3jyhCRgcBzGECV9QySIJIO1BTWM6Gi/view?usp=drive_link\n・Security testing report: https://docs.google.",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 26,
+      "cut": true
+    }
+  ]
+}

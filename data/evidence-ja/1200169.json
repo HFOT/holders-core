@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・ハイドラウォレットを開発し、Telegramと統合するための技術的要件と潜在的な戦略の包括的な分析を実施。\n・バージョン管理システムとコラボレーションツールの設定\n・初期プロジェクト構造とリポジトリの作成.",
+      "criteria": "・提案の実施のための業務パッケージのシステム解析と特定の完了\n・初期リポジトリ.",
+      "report": "マイルストーン完了の証拠\n・システム解析ファイル\n・Github リンク."
+    },
+    {
+      "no": 2,
+      "promise": "・Walletの機能UI/UXインターフェイス\n・Cardanoネットワークに接続する\n\n機能の開発:\n・ADAウォレットアドレスを生成する。\n・プライベートキーまたはmnemonicフレーズからウォレットを入力\n・ADAを送受信\n・トークンを送受信\n・NFTを送受信\n・トランザクション履歴",
+      "criteria": "・UI/UXデザインインターフェイスセット\n・完全なアルファ機能を開発",
+      "report": "・ハイドラウォレットソースコード Github リンク https://github.com/Cantek-Network/hydra-wallet-vue/tree/master\n・アルファ版ウェブサイト https://alpha.hydrawallet.net/auth\n\nユーザーマニュアル:https://drive.google.com/file/d/1y6Auq E5QzdTFflRrlHzlc8W7lYT7Hw0/view?usp=drive link"
+    },
+    {
+      "no": 3,
+      "promise": "・Hydra API/SDKの研究開発・統合\n・ウォレットをハイドラノードに接続する\n・ハイドラヘッドの初期化\n・ハイドラヘッドでADAを送受信\n・モニターとHydraヘッドのステータスを更新\n・ハイドラヘッドを閉じる",
+      "criteria": "・完全なバックエンド開発\n・ウォレット機能の完全開発",
+      "report": "マイルストーン3のPOA:\n・ハイドラウォレットソースコード Github: https://github.com/Cantek-Network/hydra-wallet-vue/tree/master\n・ベータ版サイト: https://beta.hydrawallet.net: https://beta.hydrawallet.net/hydra/fast-transfer\n・ヒドラ転送ガイド:https://drive.google.com/file/d/1WADQO4VZ3Aa48po-CKmuGMi8WQo3KsfN/view"
+    },
+    {
+      "no": 4,
+      "promise": "・TelegramのボットAPIを使用してボットを作成および管理\n・Telegram Mini App はウォレット機能をすべて搭載\n・利用者データは、TLSプロトコルを使用して暗号化され、安全を確保します",
+      "criteria": "・ベータ版では、Mini AppによるTelegramユーザ(AppとWeb)が利用できる機能を利用することができます。\n・ウォレットの作成、送金、受取などの各機能のユニットテストプロセスを完了\n・TLSプロトコルを用いたユーザデータの完全暗号化",
+      "report": "マイルストーン4のPOA:\n・TelegramのWebアプリケーション:https://t.me/HydraDemo bot/HydraWallet\n・ハイドラウォレットソースコード Github: https://github.com/Cantek-Network\n・各機能のユニットテスト文書:https://docs.google.com/spreadsheets/d/1CV2eALYvh8iV4rgOoC8eDMZh1Zc-j1R-/edit?usp=sharing&ouid=118195060135700240829&rtpof=true&sd=true\n・ガイド:https://drive.google.com/file/d/1MKk8jlN zgeBXmZPZuCest mzT8BAwck/view"
+    }
+  ]
+}

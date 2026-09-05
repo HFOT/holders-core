@@ -1,0 +1,48 @@
+{
+  "title": "Open-Source Review and Reputation System - with a Use Case for Hotels",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 39700,
+      "promise": "Deliverables/Output:\n・User Interface (UI) Mockups\n・Technical Design\n・Data Flow Diagrams\n・System Architecture Design\n・Smart Contract Specifications\n・Test Plan\n・Deployment Plan",
+      "criteria": "・UI Design Mock-up are available for following functionality of a review system\n・Create Review Categories \n・Write a Review\n・Give Rating, overall and by category\n・View the Review and Rating\n・View overall Reputation Score\n・Write a Reply to the Review\n・Details Technical Design for all the above functionalities is available including\n\n・Data Flow Diagrams\n・System Architecture Design\n・Smart Contract Specifications\n・Test Plan\n・Deployment Plan",
+      "report": "Thanks. We have added Test Data as suggested. We have added in test plan that 3 hotels we will use for testing for 5 days however we are not putting name of hotels as it may change when we reach to the Pilot Test Stage.\n--------------\nThanks for appreciating our submission and your feedback.\nWe have incorporated all your feedbacks. \nTable of contents added\nSmart Contract design detailed\nData Store - added reviewReferenceId to store hotel booking id or any other systems id\nUI-Write a reply screen added\nUI-Stayed On added\nTest Plan - Testing on Testnet added\n-----------------------------------\nFollowing are publicly accessible links for the work done for milestone 1 including UI design and technical design\n・User Interface (UI) Mockup Screen Design \n\nFigma Link: https://www.figma.com/design/FACv8nNkArAruZd9gsdvpR/RnR?node-id=18-320&t=3BpMSOHQf3Sv40fG-1\n・Technical Design Document\n\nGitHub Link: https://github.com/AIQUANT-Tech/CardanoRnR/blob/main/DesignDocs/CardanoRnR_TechDesign.pdf\nREADME.md also have these links. https://github.com/AIQUANT-Tech/CardanoRnR/tree/main",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 39700,
+      "promise": "Deliverables/Output:\n・Development of User Interfaces for the concept\n・Development of Services for functionalities as per technical design\n・Smart Contracts Writing\n・For Dev Testing, Unit Test cases are written",
+      "criteria": "A Working Prototype with following functionalities is available \n・Create Review Categories \n・Write a Review\n・Give Rating, overall and by category\n・View the Review and Rating\n・View overall Reputation Score\n・Write a Reply to the Review",
+      "report": "Here we re-submitting Milestone 2 deliverables POA.\n・Link to the prototype :\n\n The prototype is now publicly accessible at the following URLs: \n Business end- http://51.21.61.199/ \n User end- http://51.21.61.199/user/X \n (These links are right now for milestone validation purpose and these are not yet put on https and domain)\n It covers following functionalities\n・Create Review Categories \n・Write a Review\n・Give Rating, overall and by category\n・View the Review and Rating\n・View overall Reputation Score\n・Write a Reply to the Review\n\n・Link to a short video explaining functionalities\n\n Youtube video link: CardanoRnR API Usage, Test Cases & Unit testing for On chain code\n・Source code repository with source code and test cases\n\n Github repository link: https://github.com/AIQUANT-Tech/CardanoRnR \nAdditionally we provide below Test Report\nTest Report \nCardanoRnR Smart Contact Test Scenario\n LInk : https://github.com/AIQUANT-Tech/CardanoRnR/tree/main/TestReport/RnRSmartContractTestScenario \n・The tests cover the submission of reviews by a Business User (Owner), both with valid and invalid data, to ensure the smart contract correctly accepts or rejects them based on predefined criteria. \n・Scenarios validate the smart contract's ability to update the reputation score accurately after a valid review submission and to unlock reviews using correct validation logic. \n・The test suite includes checks to ensure that only authorized users (identified by PubKeyHash) can redeem reviews and that the contract rejects attempts by unauthorized addresses. \n・Tests verify the contract's robustness by attempting to submit malformed data and ensuring that the validator script correctly identifies and rejects such submissions. \n・Further scenarios explore edge cases like handling multiple reviews, preventing double reviews for the same booking, and ensuring the correctness of the output datum upon review redemption. \n\nTest Case Report CardanoRnR\n Link : https://github.com/AIQUANT-Tech/CardanoRnR/tree",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "16",
+      "cost": 39700,
+      "promise": "Deliverables/Output:\n・Smart Contract integration with application\n・Review System API Preparation\n・Integration with Hotel Booking System\n・Test Report",
+      "criteria": "・Full Working Prototype integrated with blockchain on testnet\n・Review System API are ready and made available for public use.\n・Integrated with one Hotel Booking System \n・Test Report is available",
+      "report": "A. Output: Smart Contract integration with application\nAcceptance criteria:Full Working Prototype integrated with blockchain on testnet\nEvidence:\nEnd User URL - https://rnr.cloud10hospitality.com/app/user/KimptonAluna\nPrototype – Blockchain Preprod integration proof:\n Script address : addr_test1wrkh08l6jwy4es6kahdv4k2layyr2z2hpc3dszqf4x8zpqqwukaf0\n State Thread Token : policy a9c7f941cd19500c7387297e68279301829d6c251de23b8e0c21665b (RnrStateToken)\n Genesis tx : https://preprod.cardanoscan.io/transaction/d345a7c5473b6d872d2c5de716b823b9fb1d1a4920b0497543715816088a6de2\n Review txs : https://preprod.cardanoscan.io/transaction/da0beee83272b3ef2a420a43c4c05fd588876fb7953639aedf1dcdcd6c18f53c\n https://preprod.cardanoscan.io/transaction/005c38b7bcb3d34bc55d030bc9dfa0c2748fcf232268a4f34c047f2580739dee\n Current state tx : https://preprod.cardanoscan.io/transaction/cfbdab943f5c7e34dc34ef98c78970f80825b814c764677acba41891563e1904\n (15 reviews are applied one-after-another through the state-thread; the current state UTxO carries the\n RnrStateToken and reputation 48.)\n Reproducible from source: on branch main, `aiken build` produces mint hash\n efb17404568789f0ac1a529559ca156d14dbcbdc2e35499e5ee5c60e and spend hash\n 751f6c5c5463efc35ccc61f5ee31a771647f0d9c0c90ab39bd98e18d; applying genesis UTxO\n cc1225e9b569979aebac09f7a1849174f17b96dc3e8f34b7b1e76810b546fd68#1 yields exactly the on-chain policy\n a9c7f941cd19500c7387297e68279301829d6c251de23b8e0c21665b and script address addr_test1wrkh08l6jwy4es6kahdv4k2layyr2z2hpc3dszqf4x8zpqqwukaf0. `aiken check` runs 19/19 unit tests.\nPublicly accessible link to the working prototype User URL - https://rnr.cloud10hospitality.com/app/user/KimptonAluna\nBusiness User URL - https://rnr.cloud10hospitality.com/app/login\nUsername - kimptom@gmail.com\nPassword – 123456\nTest card details:\nVisa:4100 2800 0000 1007\n(CVV: random, Exp: any future date)\nUse “Gurgaon” to search for hotels.\nUse any future date to \nUse below credential to login to hotel booking",
+      "kinds": [
+        "chain",
+        "code",
+        "other"
+      ],
+      "links": 15,
+      "cut": true
+    }
+  ]
+}

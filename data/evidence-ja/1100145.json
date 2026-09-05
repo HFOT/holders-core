@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・フィアットオン/オフランプの統合(研究、実装、テスト)\n・資産運用機能の追加:取引履歴(調査、実施、テスト)\n・Widgetの設定画面;少なくともフィアット通貨設定オプション(研究、実装、テスト)\n・利用規約の作成および利用ポリシー文書の作成を支援する弁護士",
+      "criteria": "新しい機能は、ウォレットウィジェットと弁護士がT&Csとドキュメントを作成するために委託されているウォレット内で適切に機能します",
+      "report": "以下にリンクしたフォルダでは、SSOウォレットウィジェット内で正常に動作するMilstone出力のビデオ証拠を見つけることができます。\n動画は、ランプ機能(ADAを購入して販売するなど)、ウォレットトランザクション履歴、設定をオン/オフします。 このフォルダに含まれるのは、法律事務所スプリリングによって作成された利用規約文書です。\nhttps://drive.google.com/drive/folders/13pmMHlL yutZ7xQ9BY0iTxljIn-K2873?usp=sharing\n\n-> オン/オフランプのテスト\nhttps://sdk-example.nu.fi/?nufiDomain=https://wallet-staging.nu.fi\nDapp がメインネットネットワークをサポートしていないため、Dapp トランザクションをテストできませんのでご注意ください。\n→ → 設定画面のテスト, 通貨の変更, tx履歴, 取引の終了\nhttps://sdk-example.nu.fi\nOn/Off の ramp と DEX のインテグレーションを Dapp がプリプロドネットワーク上で実行できるわけではありません"
+    },
+    {
+      "no": 2,
+      "promise": "・Cardano DEXアグリゲーターの統合(研究、実装、テスト)\n・資産運用機能の追加:取引状況の追跡(リサーチ、実装、テスト)\n・シードフレーズバックアップ機能の有効化(研究、実装、テスト)",
+      "criteria": "新しい機能は、ウォレットウィジェット内で意図されているように機能します",
+      "report": "以下にリンクしたフォルダでは、SSOウォレットウィジェット内で正常に動作するMilstone出力のビデオ証拠を見つけることができます。\nビデオは、Cardano DEXアグリゲーター機能、トランザクション+ステータストラッキング、シードフレーズバックアップ機能を示しています。\nhttps://drive.google.com/drive/folders/1bqYP9McSQwXSLdt34w9W1NYKzEoQ?usp=sharing\n\n→ → DEXアグリゲーターとシードフレーズのバックアップ機能のテスト\nhttps://sdk-example.nu.fi/?nufiDomain=https://wallet-staging.nu.fi\nDapp がメインネットネットワークをサポートしていないため、Dapp トランザクションをテストできませんのでご注意ください。\n→ → 取引と取引ステータスのテスト\nhttps://sdk-example.nu.fi\nOn/Off の ramp と DEX のインテグレーションを Dapp がプリプロドネットワーク上で実行できるわけではありません"
+    },
+    {
+      "no": 3,
+      "promise": "・モバイルWeb-dApps(研究、実装、テスト)で利用するウィジェット体験の最適化\n・ドキュメントの作成 - 開発者のためのユーザーと統合のドキュメントの作成\n・dAppの基本利用統計(研究、実装、テスト)\n・フィードバックを収集する - たとえば、集中型ソーシャルメディアキャンペーンや、統合したdAppsから、またはソリューションを統合する興味を持っているユーザーから",
+      "criteria": "ダッシュボード機能は意図したように機能し、モバイルデバイス用のウォレットウィジェットのUXが最適化されます。 複数のカルダノプロジェクトやサービスユーザーとのやりとりをする際に、フィードバック収集は完了です。 公開時にドキュメントが完成します.",
+      "report": "各マイルストーン出力の証拠へのリンクは下記をご覧ください。\n「モバイルWeb-dAppsで利用するウィジェット体験を最適化し、dAppsのダッシュボードを開発する」\n・モバイルの最適化とダッシュボード機能は、このビデオで実証されています: https://drive.google.com/file/d/1CJC-s1ngTo2 xS5ZRMtzg2gi6YvhT0lf/view?usp=sharing\n・デベロッパーのドキュメントで参照されるダッシュボード機能はこちら\n・開発者向けドキュメントで参照されるモバイル最適化はこちら\n・https://wingriders.comでモバイルデバイスを使用して、Widgetのモバイル最適化を最初にテストできます。\n\n「開発者向けユーザーと統合ドキュメントのハウツードキュメントを作成する」\n・ユーザードキュメンテーション:https://support.nu.fi/support/solutions/80000463776\n・開発者文書:https://nufi.gitbook.io/developer-docs/nuficonnect-single-sign-on-sdk-for-cardano-dapps/overview\n\n「フィードバックを取り込む」\n・各ポイントに関するユーザーとDAppsから収集されたフィードバックを以下にリンクしたドキュメントのAとBの列を参照してください。https://drive.google.com/file/d/1ia4GDFIUmzN-1ECfIVwul-yiROGiXjOP/view?usp=sharing"
+    },
+    {
+      "no": 4,
+      "promise": "・Refactor SDK は、dApps によるカスタマイズを可能にし、ウィジェットの外観、位置、ロゴのカスタマイズを可能にし、トークンや資産リスト内の NFT を「成熟」する機能 (研究、実装、テスト)\n・資産運用機能の追加:非ブロック取引(リサーチ、実装、テスト)\n・モバイルアプリウィジェット(ドキュメント、PoC/experimentへのリンク)の検索機能とPoCの準備\n・dAppsやユーザーからのフィードバックに基づくSSOサービスの改善(研究、実装、テスト)",
+      "criteria": "サービスのSDKは、以前に収集したフィードバックに基づいてサービスに再製造および改善されました。 新しいウォレット機能は、意図どおりに機能し、モバイルアプリウィジェット用にPoCが作成されています.",
+      "report": "各マイルストーン出力の証拠へのリンクは下記をご覧ください。\n「カスタマイズ可能なリファクターSDK」と「資産管理機能の追加:非ブロック取引」\n・カスタム化と資産管理機能は、このビデオで実証されています。https://drive.google.com/file/d/1HOpebpg64eAy1tagLtg3Fw-nn-MAE Bg/view?usp=sharing\n・開発者向けドキュメントのカスタマイズもはこちら\n・Widgetのカスタマイズとノンブロッキング取引をhttps://app.vyfi.io/でテストできます。\n\n「モバイルアプリウィジェットのPoCの検索機能と準備」\n・レポートへのリンク:https://drive.google.com/file/d/1ZO6ySD4F-mqFokioBpLUOxMlZExS6cMc/view?usp=sharing\n\n「フィードバックに基づくSSOサービスの改善」\n・ユーザーから収集したフィードバックに関する情報については、以下にリンクしたドキュメントを参照してください。 適切な改善や結果として実装された新機能: https://drive.google.com/file/d/1ia4GDFIUmzN-1ECfIVwul-yiROGiXjOP/view?usp=sharing"
+    },
+    {
+      "no": 5,
+      "promise": "・クローズアウト映像の作成と提出\n・生産環境における全ての機能のリリース確認",
+      "criteria": "弊社では、Catalyst チームに両方を提出した後にビデオとレポートを完成させます.",
+      "report": "クローズアウトビデオ:\nhttps://youtu.be/RGEBl4JfSuk\nクローズアウトレポート:\nhttps://docs.google.com/document/d/1TVShZnN dxcm7NW8GRBa2CoFJ3i1QTTjNpUdE7yXZQg/edit?usp=sharing"
+    }
+  ]
+}

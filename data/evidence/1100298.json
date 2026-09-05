@@ -1,0 +1,71 @@
+{
+  "title": "ZKFold: Zero-Knowledge Prover Backend",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40000,
+      "promise": "Context: zkProver is a backend application. It provides a public API for calculation of zero-knowledge proofs.\nTask: We will be implementing the Plonk prover algorithm. The performance-critical operations will be implemented in Rust, while the high-level protocol will be in Haskell.\nOutputs:\n・Bindings for FFT and multi-scalar multiplication imported from Rust into Haskell\n・Plonk prover algorithm (Haskell)",
+      "criteria": "・Bindings for FFT and multi-scalar multiplication imported from Rust into Haskell can be found in the repo\n・Plonk prover algorithm (Haskell) can be found in the repo",
+      "report": "Bindings for FFT and multi-scalar multiplication imported from Rust into Haskell.\nThe relevant bindings are located here:\nhttps://github.com/zkFold/zkfold-base/tree/main/rust-ffi\nYou can find the E2E tests here:\nhttps://github.com/zkFold/zkfold-base/tree/main/rust-ffi-test\nFFT and MSM are the key performance-critical operations in the most widely used proving algorithms, including Plonk. This part of the project ensures that our solution is competitive in terms of the proving speed.\nPlonk prover algorithm. Relevant modules:\nhttps://github.com/zkFold/zkfold-base/blob/main/src/ZkFold/Base/Protocol/ARK/Plonk.hs\nhttps://github.com/zkFold/zkfold-base/blob/main/src/ZkFold/Base/Protocol/ARK/Plonk/Internal.hs\nA Haskell implementation of the Plonk prover. It is a well-known and a widely used zero knowledge proof protocol. This implementation allows us to implement recursive ZKP protocols in the future which would be of great benefit to DApp developers, especially those who use ZK in the data protection context.\nDescription of modules:\nhttps://github.com/zkFold/project-catalyst-reports/tree/main/ZK%20Prover%20Backend\nOn top of that, we have shared the progress via our X account (read the thread): https://twitter.com/zkFold/status/1779819515464888709\nTwo broken links have been resubmitted.",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 40000,
+      "promise": "Context: zkProver is a backend application. It provides a public API for calculation of zero-knowledge proofs.\nTask: We will be designing a server component that provides an API to calculate Plonk proofs, has a logging system, and a setup guide.\nOutput:\n・An API server component (Haskell)\n・Modules for event logging (Haskell)\n・A guide to setup and run the server (on GitHub)\n・Managed API access through the Maestro platform",
+      "criteria": "・An API server component (Haskell) can be found in the repo\n・Modules for event logging (Haskell) can be found in the repo\n・A guide to setup and run the server (on GitHub) can be found in the repo\n・Managed API access through the Maestro platform can be found in the repo",
+      "report": "・An API server component (Haskell) can be found in the repo\n・https://github.com/zkFold/zkfold-prover-api/blob/main/src/Server.hs\n・Modules for event logging (Haskell) can be found in the repo\n・https://github.com/zkFold/zkfold-prover-api/blob/8194c4736fad3f0089860e7596972e49d0d1b8a2/app/Main.hs#L16\n・A guide to setup and run the server (on GitHub) can be found in the repo\n・https://github.com/zkFold/zkfold-prover-api/blob/main/README.md\n・Managed API access through the Maestro platform can be found in the repo\n・https://docs.gomaestro.org/Cardano/ZKProver/Introduction",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40000,
+      "promise": "Context: zkProver is a backend application. It provides a public API for calculation of zero-knowledge proofs.\nTask: We will be implementing the Protostar prover algorithm (API endpoint 2). We will also implement a custom transaction balancing algorithm for zkFold Symbolic smart contracts (API endpoint 3).\nOutputs:\n・Protostar prover algorithm (Haskell)\n・zkFold Symbolic transaction balancing algorithm (Haskell)",
+      "criteria": "・Protostar prover algorithm (Haskell) can be found in the repo\n・zkFold Symbolic transaction balancing algorithm (Haskell) can be found in the repo",
+      "report": "Protostar prover algorithm\nThe Protostar algorithm implementation is split across several modules, which can be found here (the link has been updated)\nhttps://github.com/zkFold/zkfold-base/tree/vks4git/protostar/src/ZkFold/Base/Protocol/Protostar\nDescription: Protostar folding allows construction of \"recursive\" arithmetic circuits. These circuits correspond to programs containing loops and recursive function calls. On top of that, it also enables creation of data types with variable byte length which are very common in the Cardano ledger specification. This feature makes our zkFold Symbolic framework much more robust and enables efficient implementation of zero knowledge smart contracts on Cardano.\nzkFold Symbolic transaction balancing algorithm\nWe have also implemented off-chain (transaction balancing) code for zkFold Symbolic smart contracts. One can find the relevant console scripts here:\nhttps://github.com/zkFold/zkfold-cardano/tree/main/e2e-test/plonk\nhttps://github.com/zkFold/zkfold-cardano/tree/main/e2e-test/symbolic\nBesides that, the off-chain Haskell code related to the task can be found here:\nhttps://github.com/zkFold/zkfold-cardano/tree/main/backends\nDescription: Currently, we have two types of zkFold Symbolic smart contracts:\n・Plonk smart contracts mint a token if and only if a proof verification succeeds\n\non-chain. The input to the verification algorithm is the token name.\n・Symbolic smart contracts succeed if and only if a transaction satisfies a\n\nparticular condition encoded as an arithmetic circuit.\nFinally, we have published this report on GitHub:\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/ZK%20Prover%20Backend/Milestone%203.pdf\nAnd posted about the milestone on X (we have added two more comments to explain implemented features to the community):\nhttps://x.com/zkFold/status/1823800347980095983",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 12
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 40000,
+      "promise": "Context: zkProver is a backend application. It provides a public API for calculation of zero-knowledge proofs.\nTask: As proof calculation is computationally expensive, we will implement a load distribution algorithm that splits the proving task between several backend provers running in parallel.\nOutputs:\n・Modules for load distribution and parallel proof computation on multiple server instances (Haskell)\n・Managed API access through the Maestro platform",
+      "criteria": "・Modules for load distribution and parallel proof computation on multiple server instances (Haskell) can be found in the repo\n・Managed API access through the Maestro platform can be found in the repo",
+      "report": "We have completed the Milestone 4 of the project.\nTo parallelize ZKP computations, we implemented a new version of the accumulator scheme that can be found here:\nhttps://github.com/zkFold/symbolic/blob/vlasin-cyclefold-2/symbolic-base/src/ZkFold/Base/Protocol/IVC/AccumulatorScheme.hs#L159\nNew algorithm prove' can combine computations performed by independent provers into an aggregated proof.\nIn addition, the proving server has been updated to use the latest version of symbolic library:\nhttps://github.com/zkFold/zkfold-prover-api\nWe have updated the instructions to build and deploy the prover on Maestro infrastructure. Test query is provided here:\nhttps://github.com/zkFold/zkfold-prover-api/blob/main/README.md?plain=1#L31\nUpdate:\nThe API endpoint is currently available at\nhttp://54.93.43.251:3001/prove\nExample of a correct POST request to the endpoint (using curl):\ncurl -X POST -H \"Content-Type: application/json\" -d '\"MA==\"' 54.93.43.251:3001/prove\nUpdate 2:\nWe have added the message returned by the server in response to the sample request above. Here is the link to the message file:\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/ZK%20Prover%20Backend/response.txt\nThe response contains the encoded proof corresponding to the encoded witness message \"MA==\". For economic reasons, we hosted the service on a free-tier AWS infrastructure rather than the core Maestro infrastructure. Once there is a demand for this service, the proposers will scale it up and re-host on the core Maestro infrastructure. Thanks for understanding.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 5
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 40000,
+      "promise": "We will produce the completion report and the video illustrating the solution and share them publicly.",
+      "criteria": "・The report can be found with the link provided to the reviewers\n・The video guide is published on YouTube or X",
+      "report": "We have completed the Final Milestone and adjusted PoA as per your earlier suggestions:\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/ZK%20Prover%20Backend/1100298%20-%20zkFold_%20Zero-Knowledge%20Prover%20Backend%20-%20Close%20out%20report.pdf\nClose-out video:\nhttps://youtu.be/Fa3zXcFA1ro\nThe outputs have been shared on X:\nhttps://x.com/zkFold/status/1916964642087116872\nNote: the close-out report contains all the necessary links and guides to use the main output of the project (ZK Prover server).",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

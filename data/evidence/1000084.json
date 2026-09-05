@@ -1,0 +1,46 @@
+{
+  "title": "Expanding the Cardano C++ SDK: libcardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 8217,
+      "promise": "・Stake pool cold key generation and serialization (use Viper25519). Include the ability to generate the cold key counter used when generating KES keys. Open source code pushed to the public repository including passing test cases. New documentation auto built and published to the project website.\n・Expand the current ledger data types to include stake pool certificates. The certificates will be serializable to CBOR for inclusion within transactions. Add the ability to generate and sign transactions containing a stake pool certificate. Open source code pushed to the public repository including passing test cases. New documentation auto built and published to the project website. \n\nProject repository: https://gitlab.com/viperscience/libcardano",
+      "criteria": "・Working code and unit tests for: stake pool cold key generation (and counter). The new code is ready to be included in a separate project as part of the libcardano public API. The new functionality is documented in sufficient detail that a reader could re-implement the code.\n・Working code and unit tests for: stake pool certificate generation, serialization, and inclusion in valid transactions. The new code is ready to be included in a separate project as part of the libcardano public API. The new functionality is documented in sufficient detail that a reader could re-implement the code.",
+      "report": "We have successfully completed the addition of stake pool cold keys and certificates to the library. \n・Stake pool cold keys\n・Operational certificates\n・Operational certificate counters\n・Registration certificates\n・De-registration certificates\n・Static website detailing the API and Cardano concepts\n\nEvidence of completion:\n・Gitlab issue tracking\n・Static site for documentation\n・Specific unit tests verifying new stake pool functionality (automatically run as part of CI job)\n・Completed CI/CD job",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 8217,
+      "promise": "・Upgrade the Viper25519 library to include VRF functionality. Outputs will include: completed VRF functionality in Viper25519 (libcardano submodule). All code and documentation will be open sourced and provided via the project GitLab.\n・Implement VRF key generation in libcardano. Outputs will include: VRF key API as part of libcardano, and added VRF documentation to the libcardano website (book). All code and documentation will be open sourced and provided via the project GitLab.",
+      "criteria": "・Working code and unit tests for: VRF functionality in the Viper25519 library. The new code is ready to be included in the libcardano project.\n・Working code and unit tests for the new VRF key API as part of libcardano. The new code is ready to be included in a separate project as part of the libcardano public API. The new functionality is documented in sufficient detail that a reader could re-implement the code.",
+      "report": "We have successfully completed the addition of VRF capability to the library. \n・Added VRF capability to viper25519 library.\n・Links with the Cardano fork of libsodium for this since viper25519 does not have Elligator2 functionality.\n・Implemented VRF stake pool keys in libcardano\n・Builds off the functionality from viper25519\n・Unit test based on VRF test vectors and real Cardano blocks.\n・Updated project documentation!\n\nEvidence of completion:\n・Gitlab issue tracking\n・Static site for documentation\n・Specific unit tests verifying new stake pool functionality (automatically run as part of CI job)\n・Completed CI/CD pipeline",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 10956,
+      "promise": "・Completed KES functionality in libcardano submodule. Open source code pushed to the public repository including passing test cases. Added KES key documentation to the libcardano website (book). \n・Project completion report and video.",
+      "criteria": "・KES key generation and rotation implemented and unit tested. The new code is ready to be included in a separate project as part of the libcardano public API. The new functionality is documented in sufficient detail that a reader could re-implement the code.\n・Report submitted and video uploaded to YouTube.",
+      "report": "We have successfully completed the addition of stake pool KES keys to the library.\n・Added general implementation of the Sum KES method (fully templated to technically allow any depth).\n・Moved the ed25519/VRF/KES functionality out of the Viper25519 library and into libcardano. Pulled in some ed25519 functionality from libsodium and crypto++.\n・Add Stake Pool KES key objects (Depth=6) and serialization capability.\n・Unit test based on KES test vector from the Rust and Haskell implementations.\n・Updated project documentation!\n\nEvidence of completion:\n・Gitlab issue tracking\n・Static site for documentation\n・Specific unit tests verifying KES implementation (automatically run as part of CI/CD job)\n・Specific unit tests verifying new stake pool functionality (automatically run as part of CI job)\n・Completed CI/CD job\n\nWe have also completed our project closeout report and video demonstration.\n・Project closeout report\n・Project close out video",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

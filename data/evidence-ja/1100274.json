@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "開発インフラ整備:開発・テストを始めるために必要なインフラを整備。 これにより、Cardano ノード、DBsync および Postgres、Redis のデプロイ、ネットワークとストレージの構成が含まれます。\nAPI Gateway レイヤー: マイニングプラットフォームとやり取りするためのインターフェイスとして機能する API ゲートウェイレイヤーを開発します。 このレイヤーは、着信リクエストを処理し、レート制限、認証、認可を実行し、適切なサービスへのリクエストを転送します.",
+      "criteria": "・開発者向け開発環境対応\n・開発環境に展開するAPIの足場。\n・APIゲートウェイレートリミッタインセプターは、Redisとトークンバケットアルゴリズムを使用してレートリミッターインセプターインポーズ率を制限します。\n・API ゲートウェイの認証インセプターは、API キーを検証します.",
+      "report": "業績の証明: マイルストーンの出力\nプロジェクトの計画で説明したように、マイルストーンの出力の成功の完了を提示して喜んでいます。 以下は、マイルストーン完了の証拠を含む当社の達成の包括的な要約です。\n1 - 開発のためのインフラ設定:\n・Cardano Nodesの展開\n・DBsyncとPostgresのインストール\n・リディス構成\n・ネットワークとストレージの設定\n\n証拠:Cardanoノード、DBsync、Postgres、Redis、ネットワーク/ストレージ構成の実行インスタンスを示すビデオデモンストレーション。\n2 - API ゲートウェイ層:\n・APIゲートウェイレイヤーの開発:カスタムAPIゲートウェイを開発\n・Rate Limiting 実装: API ゲートウェイには、Redis とトークンバケットアルゴリズムを使用して、着信リクエストのレート制限を効果的に阻害する、レートリミッタインセプターが装備されています。\n・認証と認可:APIキーの認証インターセプターが実装されており、プラットフォームへの安全なアクセスを確保しています。\n・希望者: API ゲートウェイは、定義されたルーティングルールに基づいて、適切なサービスへのリクエストを効率的に転送します。\n\n証拠: レート制限、認証、転送のリクエストなど、API ゲートウェイの機能を拡張するビデオ デモ。\n受諾の基準:\n・開発環境の信頼性: 開発環境はセットアップされ、開発者が利用する準備が整っています。\n・API の足場デプロイメント: API の足場は開発環境に展開され、さらなる開発の基盤を提供します。\n・Rate Limiter インターセプター: API ゲートウェイは、Redis とトークンの Bucket アルゴリズムを使用して、レート制限を効果的に実施します。\n.・認証インターセプター:認証インターセプターによるAPIキー認証の実装と検証\n\nマイルストーン完成の証拠:\n・動画デモ:https://youtu.be/1FfugYsRWY\n・コードリポジトリ:https://github.com/tango-crypto/cardano-api/tree/open-source\n\n結論として、すべてのマイルストーン"
+    },
+    {
+      "no": 2,
+      "promise": "API エンドポイント:\nメールアドレス\n・アドレスの取得\n・アドレスの取得\n・リストアドレスコイン選択\n・住所資産の一覧\n・リストアドレス資産 UTXOs\n・リストアドレス取引\n\nトランザクション\n・取引の取得\n・リストトランザクション UTXOs\n・トランザクションスクリプトの一覧\n・取引担保の一覧\n・取引資産の一覧\n・トランザクションメタデータの取得\n・取引の送金:\n・取引の評価\n・取引の構築\n\nスクリプト\n・スクリプトの取得\n・リストスクリプトの償還\n・収穫量\n\nウォレット\n・ウォレットのサマリーを取得する\n・ウォレットアドレスをリスト:\n・リストステークがコインセレクションに取り組む\n\nブロック\n・最新ブロックの取得\n・回収ブロック\n・リストブロック取引\n\nアセット\n・資産の取得\n・アセットアドレス\n\nプライバシーポリシー\n・方針による資産の一覧\n\nエポック\n・プロトコルパラメータの取得\n・現在のエポック情報の取得\n\nプール\n・ステークプールメタデータの取得\n・リストステークプールの代表団",
+      "criteria": "Github、APIテスト、およびドキュメントに関するデータレイヤーソースコード.",
+      "report": "プロジェクトの計画で指定されたマイルストーンの出力の成功実績をお知らせします。 以下は、当社の達成の詳細な要約です, マイルストーンの完了の証明と一緒に:\n1。 Github、APIテスト、およびドキュメントに関するデータレイヤーソースコード。\nhttps://github.com/tango-crypto/cardano-api\n2- トランザクション、スクリプト、ウォレット、ブロック、アセット、ポリシー、エポック、プール用のGithub上のSQLクエリ。\nhttps://github.com/tango-crypto/cardano-api-queries\n3 - API のルートで Github の Nestjs プロジェクト。\nhttps://github.com/tango-crypto/cardano-api/tree/main/src\nAPI エンドポイント:\nメールアドレス\n・アドレスの取得\n・リストアドレスコイン選択\n・住所資産の一覧\n・リストアドレス資産 UTXOs\n・リストアドレス取引\n\nトランザクション\n・取引の取得\n・リストトランザクション UTXOs\n・トランザクションスクリプトの一覧\n・取引担保の一覧\n・取引資産の一覧\n・トランザクションメタデータの取得\n・取引の送金:\n・取引の評価\n・取引の構築\n\nスクリプト\n・スクリプトの取得\n・リストスクリプトの償還\n・収穫量\n\nウォレット\n・ウォレットのサマリーを取得する\n・ウォレットアドレスをリスト:\n・リストステークがコインセレクションに取り組む\n\nブロック\n・最新ブロックの取得\n・回収ブロック\n・リストブロック取引\n\nアセット\n・資産の取得\n・アセットアドレス\n\nプライバシーポリシー\n・方針による資産の一覧\n\nエポック\n・プロトコルパラメータの取得\n・現在のエポック情報の取得\n\nプール\n・ステークプールメタデータの取得\n・リストステークプールの代表団\n\nDockerHubの4つのパブリックDockerイメージ。\nhttps://hub.docker.com/r/javiertc86/cardano-api\n5。 APIクエリの動作とブロックチェーンデータを表示するビデオ。\nhttps://youtu.be/dVRq-9BVw2E\nコンテンツ\nまとめるには、すべてのマイルストーンの出力を達成し、同行のビデオに示すように、受諾基準を満たしています.コードのオープンソースのステータス、運用インフラ、各種コンポーネントの実行インスタンスとともに、このマイルストーンの成功完了を確認します。 一歩先を踏み入れて、楽しみにしています"
+    },
+    {
+      "no": 3,
+      "promise": "主な活動:\n・お支払い\n・ブロック\n・トランザクション\n・エポック\n・装飾\n・アセット活動",
+      "criteria": "支払い、ブロック、取引、Epoch、委任、資産活動のためのWebhooks",
+      "report": "マイルストーン3レポート\n受容体基準\n関連するWebhookをキャプチャするためのオープンソースコードの成功配信:\n・お支払い\n・ブロック\n・トランザクション\n・エポック\n・装飾\n・アセット活動\n\nマイルストーン完成の証拠\nこのマイルストーンの完成は、それぞれのリポジトリで利用可能なオープンソースのコードとドキュメントを通して実証されています。 提供されたリソースには、さまざまなCardano関連のイベントをキャプチャするWebhooksの実装と、イベント処理と通知配信のためのKafkaとの統合が含まれます。\nCardano-api(Cardano-api) - Café Wifi(カフェ・ワイファイ)\n・リポジトリ:Cardano-api\n・説明:プロジェクトの基礎となるCardano APIを含むメインリポジトリ。 Readme ドキュメントは、API の設定と利用に関する詳細な手順を提供します。\n\nカルダノ・アビッツ\n・リポジトリ: Cardano-events\n・説明: このリポジトリには、オグミオを聴くためのコードと、カフカにイベントを書くためのコードが含まれています。 すべての重要なCardanoイベントがキャプチャされ、カフカメッセージブローカーに転送され、さらなる処理ができるようにします。\n\nCardano-webhooks(カルダノ)\n・リポジトリ:cardano-webhooks\n・説明: このリポジトリは、カフカからイベントを消費し、ユーザーに通知を送信します。 Cardanoイベントに関するリアルタイムの更新を、関連するステークホルダーに容易にします。\n\nビデオ実証\n・リンク:デモビデオ\n\nコンテンツ\nMilestone 3の配信は、指定されたリポジトリのソースコードと包括的なドキュメントの可用性によって証明されます。 実装されたWebhooksは、本質的なCardanoイベントをキャプチャし、Kafkaとの統合により、効率的なイベント処理と通知配信を保証します。 このマイルストーンの完成は、プロジェクト計画と一致し、将来の開発のための確かな基盤を設定します."
+    },
+    {
+      "no": 4,
+      "promise": "・Docker のイメージをデプロイし、 Helm チャートをデプロイします。\n・展開や利用の指示による文書化.",
+      "criteria": "ドッカーイメージは、ECR、Kubernetes、Docker Swarmなどのコンテナオーケストレーターにデプロイできます.",
+      "report": "マイルストーンの出力\nDocker のイメージをデプロイし、 Helm チャートをデプロイします。\n・Cardano API: https://hub.docker.com/r/javiertc86/cardano-api\n・Cardanoイベント:https://hub.docker.com/r/javiertc86/cardano-events\n・Cardano Webhooks: https://hub.docker.com/r/javiertc86/cardano-webhooks\n\nデプロイと使用説明書付きのドキュメント。\n受諾条件\n・ECR、Kubernetes、Docker Swarmなどのコンテナオーケストレーターにドッカーイメージをデプロイできます。\n\nマイルストーン完了の証拠\nHelm チャートとドキュメントの Github のソースコード\n・Cardano API Helm Chart: https://github.com/tango-crypto/cardano-api-helm-chart\n・Cardanoイベント Helm Chart: https://github.com/tango-crypto/cardano-events-helm-chart\n・Cardano Webhooks Helm Chart: https://github.com/tango-crypto/cardano-webhooks-helm-chart\n\nデモのビデオ:\nhttps://youtu.be/mFASbBhx1u8\nコンテンツ\nデモビデオが提供され、ECS 上で Docker イメージを展開する方法を示します。\n本レポートでは、全ての出力、受諾基準、およびマイルストーン4の完了証拠が正常に配信されていることを確認します."
+    },
+    {
+      "no": 5,
+      "promise": "・プロジェクト閉鎖報告\n・APIとWebhooksの設定とデプロイの方法\n・APIやwebhooksを使ったShowcase動画",
+      "criteria": "・プロジェクト閉鎖報告書は、形や形態で提出されています。\n・APIとWebhookの両方をセットアップする方法を効果的に説明します。\n・APIとWebhookの両方の全ての機能を示すインタラクティブな動画です。 Webhookを支払いに応答してトリガーする方法を示す.",
+      "report": "TangoCrypto:オープンソースのCardano APIとWebhooks - F11プロジェクトクローズアウトレポート\nhttps://docs.google.com/document/d/19NI GtU5MA0V9HYWGXiXZVQIkRUUovLZFb8N95hLY E/edit?usp=sharing\nTangoCrypto:オープンソースのCardano APIとWebhooks - F11プロジェクトクローズアウトレポートビデオ\nhttps://www.youtube.com/watch?v=crlqfP0Xbbk\nGitHubリポジトリ:\n・Cardano API\n・Cardano API クエリ\n・Cardanoイベント\n・Cardano Webhooks(Cardano Webhooks)\n・Cardano API ヘルムチャート\n・Cardanoイベント Helm Chart\n・Cardano Webhooks Helm チャート\n\nDocker イメージ:\n・Cardano API Docker イメージ\n・Cardanoイベントドッカーイメージ\n・Cardano Webhooks Docker イメージ\n\nビデオ定義:\n・APIゲートウェイ\n・Cardano API\n・Webhooks\n・ヘルメットチャートとドッカー画像"
+    }
+  ]
+}

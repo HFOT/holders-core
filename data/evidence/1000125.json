@@ -1,0 +1,74 @@
+{
+  "title": "MLabs - SPO-anywhere - Easy Stake Pool Deployment with NixOS",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 28726,
+      "promise": "Flake repository containing a dummy NixOS module, a dummy NixOS configuration importing that module and a NixOS test (that starts the NixOS configuration in a virtual machine).\n\nThe CI for the repository works (builds the configuration and runs the test) and pushes all the built derivations to a cache.",
+      "criteria": "CI jobs run successfully running the test, which implies that the dummy NixOS configuration is built and the dummy NixOS module is imported.",
+      "report": "Per our Evidence of milestone completion, we provide the following:\n\nThe public project repository: https://github.com/mlabs-haskell/spo-anywhere\n\nThe dummy module: https://github.com/mlabs-haskell/spo-anywhere/blob/master/modules/dummy/default.nix\nThe dummy test: https://github.com/mlabs-haskell/spo-anywhere/blob/master/tests/dummy.nix\n\nThe NixOS configuration is dynamically created by this flake-parts module that creates checks derivations starting from modules: https://github.com/mlabs-haskell/spo-anywhere/blob/master/checks/testing.nix\n\nA CI job link showing that all the flake outputs are built: https://hercules-ci.com/github/mlabs-haskell/spo-anywhere/jobs/22\n\nIn particular one of these outputs is the dummy test derivation, here the execution log: https://hercules-ci.com/accounts/github/mlabs-haskell/derivations/%2Fnix%2Fstore%2Fbs6pw71vcjj8irrrahlnqhnw6bzdmdmm-vm-test-run-dummy-test.drv/log?via-job=6cb78e42-a68c-41a3-a8a9-e7d2a8f33a0a",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 71815,
+      "promise": "A NixOS module that installs and configures an SPO node. At this point of development, the SPO configuration itself (and possible secrets) can be hardcoded and not properly customizable.\n\nThe NixOS configuration importing the SPO module starts, successfully begins fetching blocks, and can produce blocks manually by running appropriate cardano-cli commands.\n\nNixOS tests verify this behaviour, with due limitations if we find out that we cannot connect to the internet from the Nix sandbox, indeed normally it wouldn’t be possible but we would like to explore possibilities given by the new “impure derivations” experimental feature.",
+      "criteria": "The NixOS config starts as a VM\n\nThe node is fully synchronized\n\nThe node can produce new blocks.",
+      "report": "We have a NixOS module for the block producer node:\nhttps://github.com/mlabs-haskell/spo-anywhere/blob/main/modules/block-producer-node/default.nix\nThe proposed impure derivations aren't usable with Hercules CI, the alternative would be using the \"effects\" from Hercules CI but we chose to pursue another approach that will give us more flexibility in the future i.e. running an entire Cardano testnet in NixOS tests.\nThis also removed the problem of requiring secrets for running tests if we had used a public testnet together with the impure derivations/effects, and it also gives us much more reproducibility (you couln't run a test that spend the same UTXO on a public testnet).\nAs agreed, all the files needed by the SPO are pushed to the repository itself:\nhttps://github.com/mlabs-haskell/spo-anywhere/tree/main/tests/local-testnet-config\nWe also provide the script used to generate that directory:\nhttps://github.com/mlabs-haskell/spo-anywhere/blob/main/apps/generate-testnet-config.nix\nYou can run it with \"nix run .#generate-testnet-config\".\nThe CI builds a QEMU VM starting from the NixOS configuration included in this test:\nhttps://github.com/mlabs-haskell/spo-anywhere/blob/main/tests/block-producer.nix\nThe test verifies that new blocks are produced by moving some ADAs and querying the node itself with `cardano-cli` counting the number of UTXOs. Here is the relevant part of the test:\nhttps://github.com/mlabs-haskell/spo-anywhere/blob/main/tests/block-producer.nix#L113-L131\nHere are the logs, check after the second 121 for the releveant part.\nhttps://hercules-ci.com/accounts/github/mlabs-haskell/derivations/%2Fnix%2Fstore%2Fhazky2znm1gysq62pwmdycg5cgh91v1v-vm-test-run-block-producer.drv/log?via-job=5cfc93c5-af05-470a-abb0-64af34e0f275\n\nFinally, please find a screencast demonstration of these deliverables:\nhttps://www.youtube.com/watch?v=D-m0PTiYsZc",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 7
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 57452,
+      "promise": "A program (language to be established, probably bash, python, or something scripting-friendly) that wraps nixos-anywhere and is able to deploy the previously obtained NixOS configuration to a generic remote machine.",
+      "criteria": "A “fake virtual deployment” happens successfully in a CI test.\nThe program works at least with a well known VPS provider.",
+      "report": "We have produced a program that wraps nixos-anywhere and can deploy a NixOS configuration to a generic remote machine. This is provided in a form of a bash script wrapper that helps with the necessary arguments and allows to pass on other arguments to nixos-anywhere itself. User builds the script for a configuration named `my-node-1` with:\n\n$nix build .\\#nixosConfigurations.my-node-1.config.system.build.spoInstallScript\nlinking the configuration with the script that deploys it. The node keys get securely moved to the installation target machine.\n\nEVIDENCE\n\n-A link to a CI job running a test that verifies the acceptance criteria above have been met will be provided.\n\nhttps://hercules-ci.com/accounts/github/mlabs-haskell/derivations/%2Fnix%2Fstore%2Fcj39fy0q7v98afab684fdlhhhms67gjm-vm-test-run-install-script.drv?via-job=2d6f8480-e71d-4494-b15e-96177db0feb2\n\nHere the test runs two virtual machines and calls our installer script from one of them, deploying to the other one. Then, to verify a correct installation, we check that the newly installed machine can boot and that its hostname identity has changed. We don't test here that the machine mines blocks, but we do test it in two other scenarios in the tests: run-block-producer and [run-block-producer-accessed-via-relay-node.\n\n-A terminal screencast showing the program correctly deploying to a Linux VPS will be provided. \n\nhttps://youtu.be/BhBe9PoVYBE\n\nHere in the video we define a simple configuration running a cardano-node setup to produce blocks. We then proceed with installing it on a cloud server on Digital Ocean. Worth noting is that the server initially runs Ubuntu, but the power of nixos-anywhere comes from the ability of installing on a machine with any operating system or no at all.",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "9",
+      "cost": 71815,
+      "promise": "Addition of configuration options for the SPO deployment, allowing users to customize the deployment by specifying:\n・paths where to mount directories used to store the states of services (e.g. the cardano-node database or operator’s keys)\n・same options available for the SPO node (i.e. we would simply expose them for the end user)\n・secret keys to be pushed to the target host during the deployment\n・everything else which could differ across providers that we realize would need to be addressed specifically\n\nWe reserve the right to add further options according to the needs we’ll have during development.\nThese options will be configurable in two ways: by passing CLI arguments (or alternatively passing a “static” configuration file like a TOML, YAML or JSON) or by directly editing the NixOS configuration. The first method is meant to not require any Nix(OS) knowledge while the latter gives more configuration freedom to advanced users. \nAnother possible strategy we reserve the right to approach is to provide a script that automatically generates the NixOS configuration in order to leave spo-anywhere usable by people who do not know Nix(OS).\nWe’ll provide at least one working example with",
+      "criteria": "The SPO running on the machine is configurable as described in the outputs section above.\nOne or more example configurations are provided.",
+      "report": "Evidence of milestone completion:\n- different tests running the deployment script from a virtualized NixOS machine to another one VM verifying that different CLI configuration options work.\n\nAll the tests are defined here: \n- https://github.com/mlabs-haskell/spo-anywhere/blob/main/tests/install-script.nix\n\n Here are the jobs that show the execution logs of 3 tests:\n - https://hercules-ci.com/accounts/github/mlabs-haskell/derivations/%2Fnix%2Fstore%2Fr485wap5pybn32q8k9qny7vi6zqz0a29-vm-test-run-install-script-target-as-nixos-option.drv/log?via-job=1cd1d597-3015-4a85-9bdb-f28ed53355f7\n - https://hercules-ci.com/accounts/github/mlabs-haskell/derivations/%2Fnix%2Fstore%2Fsm20a95iy6cxbzjz3rlgbn85qqi7phir-vm-test-run-install-script-overwriting-target-in-cli.drv/log?via-job=1cd1d597-3015-4a85-9bdb-f28ed53355f7\n - https://hercules-ci.com/accounts/github/mlabs-haskell/derivations/%2Fnix%2Fstore%2Fb8827alyq4xgps6ajc9lgplvmcwgxw03-vm-test-run-install-script-no-target-provided.drv/log?via-job=1cd1d597-3015-4a85-9bdb-f28ed53355f7\n\n The CLI args are automatically composed starting from the module options:\n- https://github.com/mlabs-haskell/spo-anywhere/blob/main/modules/install-script/default.nix#L87\n\n So for to configure the deploy script we set nix options in a NixOS configuration\n- an example configuration is provided as flake template here: https://github.com/mlabs-haskell/spo-anywhere/tree/main/templates/basic\n It's also initializable by everyone with `nix flake init --template templates#full`",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "11",
+      "cost": 57452,
+      "promise": "Manual testing/verification on multiple host providers. \n\nImprovements to documentation.\n\nA project closeout demonstration/walkthrough video.",
+      "criteria": "The deployment has been tested and verified on at least 3 different well known host providers.\n\nThe documentation contains a list of the host providers that have been tested.\n\nThe documentation is sufficient to allow someone with no prior knowledge of the project to understand and utilize it successfully.\n\nThe closeout video is informative and clearly demonstrates the project’s accomplishments.",
+      "report": "For the final milestone, we developed a cloud deployment nix flake template, extended the documentation and tested deployment on 3 cloud providers. To finish up, we produced a demonstration video.\nFlake Template - We developed a NixOS flake template for deploying spo-anywhere to a cloud host. This can be used to jumpstart a project using spo-anywhere with one command, and can be deployed to a cloud host with minimal configuration, as detailed in the documentation.\nhttps://github.com/mlabs-haskell/spo-anywhere/tree/main/templates/cloud\nDocumentation - The documentation for the project can be found here:\nhttps://mlabs-haskell.github.io/spo-anywhere/\nWe extended documentation to include step-by-step instructions which can be used with less technical knowledge to successfully use the project to deploy cloud hosts on popular providers. We created following pages:\nInstallation - This page details the prerequisites for starting a project with spo-anywhere.\nhttps://mlabs-haskell.github.io/spo-anywhere/getting-started/installation/\nCloud Tutorial - This page is a step-by-step guide to deploy a stake pool on three cloud providers: AWS, DigitalOcean and Hetzner.\nhttps://mlabs-haskell.github.io/spo-anywhere/getting-started/cloud-tutorial/\nspo-anywhere.install-script - We added generated documentation for this NixOS module which configures the installation script.\nhttps://mlabs-haskell.github.io/spo-anywhere/reference/module-options/spo-anywhere/#spo-anywhereinstall-scriptenable\nDemonstration video\nTo close out the project, we produced a demonstration video that shows how to follow the “Cloud Deployment” documentation page to deploy spo-anywhere on three cloud providers.\nhttps://www.youtube.com/watch?v=QAAO3Rj9Opc\nClose-out report\nhttps://drive.google.com/file/d/1BnLLuyNCSjek4NGFJAy_CSokKSWYN5kz/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

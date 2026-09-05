@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・WingRiders DEX V1 ロジックから、スタンドアローンバリデータとして、PlutusTx がパースするリクエスト\n・TestnetのPlutusスマートコントラクトの展開のためのスクリプト\n・スタンドアローン検証用のユニットテスト",
+      "criteria": "・開発環境は、全ての依存関係で完全に構成されます。\n・適応したコードをビルド、テスト、デプロイするために必要なツールは、公開GitHubリポジトリに文書化する必要があります.",
+      "report": "生産の等級のコード教育: Aiken、Plutarch及びPlutusTx M1の証拠:\n環境の設定、ユニットテストを実行し、契約をエクスポートするための明確な指示でReadme: https://github.com/WingRiders/parsing-education/tree/plutus-tx/plutus-tx\n契約をデプロイするための明確な指示を持つReadme: https://github.com/WingRiders/parsing-education/tree/plutus-tx/deploy\n適応ソースコード: https://github.com/WingRiders/parsing-education/tree/plutus-tx/plutus-tx/src\nTestnet トランザクションの例:\n・1件のリクエストによる取引例:https://preprod.cardanoscan.io/transaction/e712d3e68556e1dfb3d3a86ee64dbd765bedaebd265ca612840a302603c5c8e2\n・例:https://preprod.cardanoscan.io/transaction/7511201af041f9579ba67469740e8d1754b5e8e1fbfb55e519f531c0ed83c"
+    },
+    {
+      "no": 2,
+      "promise": "・PlutusTxバージョンをアルゴリズム的にマッチングし、WingRiders DEX V2 ロジックからデカップリングするスタンドアローンバリデータとして、PlutusTx を適応させた Plutarch リクエスト解析コード\n・TestnetのDeployable Plutarchスマートコントラクト\n・スタンドアローンバリデータのユニットテスト",
+      "criteria": "・開発環境は、全ての依存関係で完全に構成されます。\n・適応したコードをビルド、テスト、デプロイするために必要なツールは、公開GitHubリポジトリに文書化する必要があります.",
+      "report": "固定リンクで退会\n環境の設定、ユニットテストを実行し、契約をエクスポートするための明確な指示でReadme: https://github.com/WingRiders/parsing-education/tree/plutarch/plutarch\nコードは、インラインコメントを備えています。\n契約をデプロイするための明確な指示を持つReadme: https://github.com/WingRiders/parsing-education/tree/plutarch/deploy\n適応ソースコード: https://github.com/WingRiders/parsing-education/tree/plutarch/plutarch/src\nTestnet トランザクションの例:\n・1件のリクエストによる取引例:https://preprod.cardanoscan.io/transaction/e712d3e68556e1dfb3d3a86ee64dbd765bedaebd265ca612840a302603c5c8e2\n・4つのリクエストによる取引例:https://preprod.cardanoscan.io/transaction/19a54912f51b9bf2fd3616911767aa016ca3a7fcac64ad1560fc4275674af8e9\n・10件の申請例:https://preprod.cardanoscan.io/transaction/07e90862c39548bc7bc973b18212ab2c1040120ae137617e7d44bc1719a8a1f9\n・20件の申請例:https://preprod.cardanoscan.io/transaction/0d983bab4a302efc16fa28be3ce2f819627bc2dd2957d16e3298aba09b7ce87a\n・30件の申請例:https://preprod.cardanoscan.io/transaction/86a5c6567b5c2f9f3e060c5a9c843a3df98e482f48ab677141fb6b5d7da0e29\n・38件の申請例:https://preprod.cardanoscan.io/transaction/cb2b5cef07a3f6ec31de8c9fccf31e67254573e582f2883fc5ea29c4dc3dc7"
+    },
+    {
+      "no": 3,
+      "promise": "・PlutusTxとPlutarchバージョンのアルゴリズムにマッチするソースコードの解析依頼\n・TestnetのDeployable Aikenスマートコントラクト\n・PlutusTx と Plutarch のロジックとアライメントを検証する Aiken 実装用のユニットテスト。\n・PlutusTx と Plutarch のバージョンで Aiken の実装のパフォーマンス、手数料、上限のバッチ制限を比較したテストネット結果.",
+      "criteria": "・開発環境は、全ての依存関係で完全に構成されます。\n・適応したコードをビルド、テスト、デプロイするために必要なツールは、公開GitHubリポジトリに文書化する必要があります。\n・Aiken バリデータが公開テストネット上に展開され、パフォーマンスの違い(実行速度など)、取引手数料、上限限度額の分析を行います.",
+      "report": "環境の設定、ユニットテストを実行し、アイケン契約をエクスポートするための明確な指示でReadme: https://github.com/WingRiders/parsing-education/tree/aiken/aiken/\nコードは、インラインコメントを備えています。\n契約をデプロイするための明確な指示を持つReadme: https://github.com/WingRiders/parsing-education/tree/aiken/deploy\n適応ソースコード: https://github.com/WingRiders/parsing-education/tree/aiken\n例 Aiken Testnet トランザクション:\n・1件のリクエストによる取引例:https://preprod.cardanoscan.io/transaction/9265f197826b710af260100884428286a7062cd2980013d46780c89310fe6daf\n・例:https://preprod.cardanoscan.io/transaction/e4b00e4034876df06d4b1471a10b47d9cbf6a93d448ef178b712091a9dad3bf8\n・例:https://preprod.cardanoscan.io/transaction/c63da4ce0bbb4c16c2eebb6c61d2515d8f5e6b519fa0ffe4f67ef7e0692fe6\n・10件の申請例:https://preprod.cardanoscan.io/transaction/95a49f7cbd868303cd90c409bd929066e2c4877ff34b49508550be3a490c6c\n・20件の申請例:https://preprod.cardanoscan.io/transaction/a320d86221ae74da20efd0cf88e2e394b1e78c4f80e2f526552b239d37e477c2\n・24件の申請例:https://preprod.cardanoscan.io/transaction/f39fdfdfccc08ddaebdad711d5f1d4580c58172638e97c1f232d1d6c5daae7e1\n\nPlutusTx と Plutarch のバージョンで Aiken の実装のパフォーマンス、手数料、上限のバッチ制限を比較する net 結果をテストします。 https://github.com/WingRiders/parsing-education/tree/master/README.md"
+    },
+    {
+      "no": 4,
+      "promise": "・A 2/3 まとめ「プロジェクトクローズアウトレポート」\n・ショートビデオ「プロジェクトクローズアウトビデオ」",
+      "criteria": "・プロジェクトクローズアウトレポートの「KPI」と「どのように(あるいはそうでない)」が対処され、次のステージプランが開発された製品やサービスにどのようなものかを記載しています。\n・Project Close-out Video’ は、プロジェクトの成果と成果を裏切っています.",
+      "report": "親愛なる査読者,\n以下は、プロジェクト クローズ アウト レポートとビデオ、ソースコード、ドキュメント、ベンチマークの結果を含む、プロジェクト クローズ アウト レポートとビデオ、ドキュメント、および PlutusTx に関するすべての関連リンクです。\n他の関連するプロジェクトソースやドキュメントへのリンク: • GitHub リポジトリ\n• ベンチマーク & 分析レポート • PlutusTx ソースコード\n• PlutusTx デプロイメントスクリプト\n• PlutusTx の実装 – セットアップ, テスト & エクスポート手順 • Plutarch ソースコード\n• Plutarchの展開スクリプト\n• Plutarchの実装 - セットアップ、テスト&エクスポート手順•アイケンソースコード\n•アイケン展開スクリプト\n• Aikenの実装 – セットアップ, テスト & エクスポート手順クローズアウトビデオへのリンク\n• https://www.youtube.com/watch?v=Lm82tvDaZBc\nプロジェクトのクローズアウトレポートへのリンク\n• プロジェクトクローズアウトレポートPDF 最高の点、\nWingRidersチーム"
+    }
+  ]
+}

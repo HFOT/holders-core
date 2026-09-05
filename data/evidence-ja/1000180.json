@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "建築決定記録(ADR)は、他のエコシステムプラグインと水田イベントストリームを探索し、統合するための詳細な計画を記述",
+      "criteria": "ADRはHydraチームの標準フォーマットに従います。チームによってレビューされ、フィードバックは対処され、ADRは統合されています.",
+      "report": "合併: https://github.com/input-output-hk/hydra/pull/1157\n実際の ADR: https://github.com/SundaeSwap-finance/hydra/blob/d96faca5893a073eff4dda8d0dd15655210a31f7/docs/adr/2023-11-07 029-event-source-sink.md\nTwitter投稿: https://twitter.com/SundaeSwap/status/1735381856353231291\n発表:https://discord.com/channels/830939534174453800/830948250298875905/1184941743574089869"
+    },
+    {
+      "no": 2,
+      "promise": "イベントストリームが永続する場所を指示するための新しい設定オプションをサポートする水和コードベースに統合PR.",
+      "criteria": "Hydra チームからのコードレビューフィードバックはアドレスが入り、プルリクエストはマージされています。 新しい設定オプションは、誰かがイベントストリームをファイルに保存したり、イベントストリームを任意のunixソケットに書き込むことができます。 または複数の異なるシンクに.",
+      "report": "合併 Github PR: https://github.com/input-output-hk/hydra/pull/1351\nYTデモ: https://www.youtube.com/watch?v=o fJ3Dgz61U\nTwitter投稿: https://twitter.com/SundaeSwap/status/1770106574033518851\n公表: https://discord.com/channels/830939534174453800/830948250298875905/1219665568857063564"
+    },
+    {
+      "no": 3,
+      "promise": "Sundae のラボでメンテナンスされた新しいオープンソースプロジェクト。 このプロジェクトは、実行できるバイナリを提供し、ハイドラサーバーと共有されたunixソケットから読み、イベントのシーケンスを消費し、Ogmios APIのfascimileを生成します.",
+      "criteria": "サービスは、Chainsyncとトランザクションの送信のための最低のv6 websocket APIで提供されます。 ヒドラヘッドの関連データはOgmios APIに渡されます。 Hydra の頭部で意味をなさないあらゆる細部は感知可能なデフォルトと、または間違いを戻します。 レジャーの状態のクエリとメモプールの監視を評価し、Hydra の文脈で感知し、実装、スタブアウト、またはエラーを適切に判断します。 この行動は明確に文書化されます.",
+      "report": "このマイルストーンは、Hydraサーバーと共有されたUnixソケットから読み込まれるプラグインを提供し、Ogmios v6 WebSocketインターフェイスと互換性のあるAPIを公開します。 サービスは、Hydra ヘッドのチェーン同期とトランザクションの送信機能を可能にし、開発者のためのシームレスな統合パスウェイを作成します。\n受容体基準\n・サービスでは、チェーン同期とトランザクション送信用のv6 WebSocket APIを実装しています。\n・ハイドラヘッドの関連データをOgmios APIに渡します。\n・Mempoolの問い合わせは、ハイドラのサインがすぐにスナップショットをスナップショットとして評価され、近くの取引確認のためにmempool冗長性をコンセプトにしました。\n・Stakeスナップショットを含むLedger州の問い合わせは、これらの機能はHydra頭内で追跡または関連していないため、該当しないと評価され、決定しました。\n\nマイルストーン完成の証拠:\n・GitHubリポジトリ:https://github.com/SundaeSwap-finance/hydra-ogmios\n・APIドキュメント:https://github.com/SundaeSwap-finance/hydra-ogmios/blob/main/README.md\n・動画デモ:https://www.youtube.com/watch?v=JlDB0BwfkIw"
+    },
+    {
+      "no": 4,
+      "promise": "新しい「ソース」を実装するオープンソースの「Scrolls」プロジェクトをリクエストするプルで、上の水田イベントストリームがバックアップしたunixソケットから読み込むことができます.",
+      "criteria": "このPRが開いており、メンテナーからのフィードバックも対応しています。 プロジェクトのメンテナはPRをマージしないことを選ぶ可能性があるため、PRはクローズ、マージ、または10日間メンテナから応答がない場合があります。 PRは、アジダノードからトランザクションのインデックス作成、UTXOsなどの機能を実装しています.",
+      "report": "・プルリクエストへのリンク:\n\n・スクロールプロジェクトで新しい「ソース」機能を実装するPR: https://github.com/txpipe/scrolls/pull/172\n\n・コミュニティ告知リンク:\n\n・Twitter発表(動画デモ含む): https://x.com/SundaeSwap/status/1869756376450207991\n・お問い合わせ:https://discord.com/channels/830939534174453800/830948250298875905/1319715046179344405"
+    },
+    {
+      "no": 5,
+      "promise": "上記の統合のために使用しているかもしれない少なくとも3つの異なるコミュニティメンバーからの勧誘されたフィードバック。 このフィードバックの評価、および関連する場合、そのフィードバックに基づいて、APIまたは使用状況に適用される変更。\nこのフィードバックから、提案された機能/変更を実装するユーザーストーリーを一組作成します.",
+      "criteria": "合理的に達成可能なフィードバックは、ハイドラノードまたはスクロールプロジェクトのいずれかへのプルリクエストとして、またはOgmios fascimileサービスに統合されています。\nコミュニティのフィードバックに基づいて承認されたユーザーの物語のそれぞれが実装され、文書化され、ハイドラチームによるプルリクエストの一部として受け入れられています.",
+      "report": "マイルストーン5:これらの2つの統合に関連するフィードバックを勧誘し、実装する\nこのマイルストーンは、Hydraトランザクションのストリーミングプラグインで開発者コミュニティからフィードバックを集め、実施することに焦点を当てました。 当社の目標は、Hydra ノードの拡張、Ogmios イベントサーバのプロトタイプ、およびスクロールログソースに関する開発者の経験と統合の課題を評価し、それに応じてツーリングと文書を改善するためにありました。\nコミュニティフィードバックコレクション\n私たちは、Cardano Builderコミュニティに配布されたGoogle Formを通じて公開フィードバックを勧誘しました。 3人の経験豊富なコントリビューターが思いやりのあるインサイトを提供しました。\n・セバスティアン・ナゲル(撮影)\n・Juan Magan Valero(TxPipe)\n・Matthias Benkort(Cardano Foundation/@KtorZ)\n\n3つの回答者は、これらのツールの関連性をワークフローに確認し、以下のような提案を共有しました。\n・EventSourceとEventSinkインターフェイスのドキュメンテーションと例の展開\n・モジュール性を向上し、より柔軟なストリームデータの消費をサポート\n・Dropsのインテグレーションを潜在的ダウンストリームのコンシューマーとして深掘り\n\n完全な応答はここに利用できます:\nhttps://docs.google.com/spreadsheets/d/1hAN6CEMMnRtuTirxXd6A68CBXFgOAb-ANvgvQ8t9Jms/edit?usp=sharing\n導入事例\n収集したフィードバックに基づいてユーザーストーリーを投稿し、コードベース全体で変更を実施しました。 これらの変更は、イベントの処理の合理化、モジュール性の向上、および開発者向けドキュメントおよび例の公開に焦点を当てた。\nこのマイルストーンに関連する作業は、以下のハイドラリポジトリPRと問題に反映されます。\n・https://github.com/cardano-scaling/hydra/pull/1000 – 初期グラウンドワーク\n・https://github.com/cardano-scaling/hydra/pull/1348- イベントシステムレファクタ\n・https://github.com/cardano-scaling/hydra/pull/1351 – マイルストーン2コアロジック\n・https://github.com/cardano-scaling/hydra/issue/1618- イベントシンクとしてAPIサーバーのユースケース\n・https://github.com/cardano-scaling/hydra/pull/1808- 一定のメモリでイベントをストリーミング\n・https://github.jp/"
+    },
+    {
+      "no": 6,
+      "promise": "・最終プロジェクト映像報告\n・クローズアウトレポート\n・完成文書、オープンソースリポジトリ、適切なライセンス。\n・プロジェクトに関するQ&Aとウェビナーを主催・録音(正式なライブ・カンファレンス・トークの自由)。\n・プロジェクトに関する媒体書込み.",
+      "criteria": "上記の出力は、GithubのリポジトリとYTビデオへのリンクで公開されています.",
+      "report": "ハイドラトランザクションストリームプラグインプロジェクトで最終マイルストーンを完了しました。 この作業は、Hydra ノード用のプラグイン可能なイベントストリームアーキテクチャを提供し、開発者が Hydra トランザクションやイベントを独自のツールやワークフローに直接統合し、Hydra のコアロジックを変更することなく、独自のツールやワークフローを実現します。\n主な成果物:\n・イベントソースとEventSinkインターフェイスで実装されたプラグインフレームワーク\n・Real-worldの統合:\n・Hydra Ogmios – Ogmios API は、Hydra ノードから直接バイナリ unix ソケット経由で提供\n・Scrollsインテグレーション – TxPipeのScrollsインデックスフレームワークによって消費されるHydraイベントストリーム\n・S3シンク – アマゾンS3へのイベントの永続性(他のブロブストレージに適応可能)\n・設計原則と実装アプローチの策定\n・Robust 開発者のドキュメントとプラグインを拡張するための例\n\nパブリックリソース:\n・媒体の記事:https://sundaeswap-finance.medium.com/building-the-hydra-transaction-stream-plugin-expanding-cardanos-layer-2-potential-a84caf0dc95\n・Twitter https://x.com/SundaeSwap/status/1956352759172608236\n・Discord: https://discord.com/channels/830939534174453800/830948250298875905/1407018162188455956\n・GitHubリポジトリ:https://github.com/cardano-scaling/hydra\n・ウェビナー録画:https://www.youtube.com/watch?v=0IDNMUuoTBE\n\n\nフルクローズアウトレポート: https://drive.google.com/file/d/1RKEwQ8EmNAFdXDAT8A9CPkKhfNVYoZk5/view?usp=sharing\nクローズアウトビデオ: https://youtu.be/bmxWvTdE6q8"
+    }
+  ]
+}

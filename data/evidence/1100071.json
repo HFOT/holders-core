@@ -1,0 +1,73 @@
+{
+  "title": "Cardano Standardized Supply Chains Library",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 56000,
+      "promise": "・Comprehensive rationale and documentation of standards for \n・Traceability for agricultural products\n・Transportation and logistics standard \n・Retail and Consumer goods standards",
+      "criteria": "・Explanation of each standard chosen as well as rationale behind the decision is published.\n・Traceability for Agriculture standard has been chosen and explained in the documentation.\n・Transportation and Logistics standard has been chosen and explained in the documentation.\n・Retail and Consumer Goods standard has been chosen and explained in the documentation.",
+      "report": "The following Proof of Achievement (POA) is for Milestone 1, \"Standard Rationale and Documentation.\" As per the milestone outputs, we have prepared a Standard Rationale that covers our rationale for integrating traceability for agricultural products, transportation and logistics, and retail and consumer goods standards. These have been prepared in the following formats:\n\n・Github Link: Documentation and Rationale https://github.com/Agrow-Labs/supply-chain-lib\n\n・Youtube Video: Covering Documentation and Rationale https://youtu.be/34sY8uKTYnU",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 56000,
+      "promise": "・Draft prototype standards in CBOR/JSON notation publishable on Cardano-based networks published to GitHub.\n・Video documenting project progress",
+      "criteria": "・Draft version of the chosen (M1) Traceability for Agriculture standard has been published (CBOR + JSON specifications)\n・Draft version of the chosen (M1) Transportation and Logistics standard has been published (CBOR + JSON specifications)\n・Draft version of the chosen (M1) Retail and Consumer Goods standard has been published (CBOR + JSON specifications)",
+      "report": "[RESUBMISSION]\nDear Milestone Reviewers,\nThank you for your review and for highlighting the need for a rationale. We would like to clarify that there was no mention of including a “rationale” in the originally approved Evidence of Completion, Acceptance Criteria, or Outputs for this milestone. We have completed our milestone as defined and are resubmitting our original materials for your consideration.\nA YouTube video documenting the various standards along with rationale and explanation of their appearance in both JSON, CBOR, and GS1 format available at the following link: https://youtu.be/WGCV4P87hQ4\nA link to our GitHub that includes the latest updates and examples which is available at the following link: https://github.com/agrow-labs/supply-chain-lib\nThe draft agricultural product example is available here: https://github.com/Agrow-Labs/supply-chain-lib/blob/master/GS1-agriculture.md\nThe draft transportation and logistics product example is available here: https://github.com/Agrow-Labs/supply-chain-lib/blob/master/GS1-logistics.md\nThe draft of a retail or consumer-facing product example is available here: https://github.com/Agrow-Labs/supply-chain-lib/blob/master/GS1-retail.md",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 15
+    },
+    {
+      "no": 3,
+      "month": "21",
+      "cost": 23000,
+      "promise": "・Draft standards will be presented to a group of peers (at least 4) for review and feedback\n・Official documentation from peers (proof of compensation/participation)\n・Rationale from the project explaining the peer selection criteria\n・Feedback on Standards (in English) from each peer will be provided for each draft standard",
+      "criteria": "・At least four (4) independent peers have been selected to provide review and feedback of the draft standards\n・Each peer must be: \n・(1) independent from the project aside from remuneration for their services as a reviewer; \n・(2) qualified as a peer due to their familiarity and expertise with: (i) Cardano, (ii) the chosen standard(s), (iii) business and enterprise integrations, (iv) blockchain or other relational database management schemas;\n・(3) capable and willing to perform the requested tasks\n・Proof from each reviewer that they have accepted the role/task/compensation agreement\n・Each peer h",
+      "report": "A. Output: The draft standards were presented to a group of 4 independent peers for review and feedback. Reviewers were asked to create an issue directly in the GitHub from their account in order to document that they willingly participated and provided their feedback.\nA. Acceptance criteria:\n・At least four (4) independent peers have been selected to provide review and feedback of the draft standards\n・Proof from each reviewer that they have accepted the role/task/compensation agreement\n・Each peer has provided feedback (in English) for each chosen standard (M1). A peer may provide feedback that they see no changes necessary to the standard. A \"no change\" review may be acceptable with proper rationale.\n\nA. Evidence: Independent peer reviews/feedback on GitHub: https://github.com/Agrow-Labs/supply-chain-lib/milestone/1\nB. Output: We have drafted a document that:\n・Explains our peer selection criteria and why we chose the peers we did for their feedback and review\n・Summarizes the feedback received\n・Provides links to other areas (outside of GitHub issues) where we have participated in the on-going discussion around supply chain and logistics standards for Cardano.\n・Summarizes the changes identified as necessary for Milestone #4\n\nB. Acceptance criteria: Document should sufficiently cover the feedback provided, rationale for selection of the reviewers, and the next steps for the project.\nB. Evidence: https://drive.google.com/file/d/1hURfOj1ybKYsHmQ8pscSeMEjpduN1gkF/view?usp=sharing\nC. Output: Brief YouTube video covering progress thus far\nC. Acceptance criteria: Video covers the peer review feedback first impressions and next steps in a very quick and easily digestible fashion.\nC. Evidence: https://youtu.be/1gvP54IA984\nD. Output: Milestone #4 Revision Plan (PDF)\nD. Acceptance criteria: As part of collecting the feedback from peer reviewers we have summarized their feedback and communications into a plan of action for refactoring and revision that will take place during Mile",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "22",
+      "cost": 23000,
+      "promise": "・Revised standards based on feedback from Peer Reviewers (M3).\n・Peer Reviewers (M3) will review revised standards.\n・Confirmation from Peer Reviewers (M3) that changes are acceptable for each standard.",
+      "criteria": "・Standards have been modified in accordance with feedback and discussion with Peer Reviewers (M3)\n・Peer Reviewers have acknowledged that any identified changes (M3) have been resolved and standards are satisfactory",
+      "report": "A. Output: Standards were revised based on discussion with peer reviewers from Milestone #3\nAcceptance criteria: All project tasks are marked completed.\nEvidence: https://github.com/orgs/Agrow-Labs/projects/6/views/4\nB. Output: Peer reviewers reviewed and accepted revisions to standards. \nAcceptance criteria: 3/4 reviewers acknowledged the standards needed no further revision. 1/4 reviewers could not be contacted after a month+ of effort/waiting so we chose to move forward.\nNote: Catalyst staff were contacted and shown proof of our attempts to reach out to the reviewer who failed to provide a final sign-off on the changes (all of their feedback was substantially addressed in our revisions). We were instructed that there is no need to publicly disclose proof of DMs/emails. We attempted to contact the reviewer and Charli3 multiple times beginning on January 02, 2026 when the updates were pushed to the GitHub. We allowed until the end of February for a response before proceeding with the project given that we had heard no response from this reviewer and had to assume they had no intent of completing the task.\nEvidence: https://github.com/Agrow-Labs/supply-chain-lib/issues?q=is%3Aissue%20state%3Aclosed%20%22Peer%20Review%3A%22\nC. Output: Changes were made to the GitHub content per the revision plan\nAcceptance criteria: Acknowledge that substantial code changes were made.\nEvidence: https://github.com/Agrow-Labs/supply-chain-lib/pulls?q=is%3Apr+is%3Aclosed\nD. Output: Video covering the updates and changes made\nAcceptance criteria: Watch the video, learn the things.\nEvidence: https://youtu.be/pmMalMuykx8",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "23",
+      "cost": 29041,
+      "promise": "・Closeout report \n・Finalized ”Version 1” of standards published\n・Standards documentation",
+      "criteria": "・Closeout report video has been provided\n・Closeout report document (PDF) has been provided\n・Finalized version of all standards (M1) have been published",
+      "report": "A. Output: Closeout Report\nAcceptance criteria: Closeout report is available\nEvidence: https://drive.google.com/file/d/1VEmniGatZnZSVARnng1z2wNt9b9x7bgQ/view?usp=sharing\nB. Output: Closeout Video\nAcceptance criteria: Closeout video is available\nEvidence: https://youtu.be/pkI9XrBMEr4\nC. Output: Version 1.0.0 is Public\nAcceptance criteria: v1.0.0 of the standard is publicly available\nEvidence: https://github.com/Agrow-Labs/supply-chain-lib/releases/tag/v1.0.0",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

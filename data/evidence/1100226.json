@@ -1,0 +1,71 @@
+{
+  "title": "P2P-DeFi Protocols: Continued Development",
+  "ms": [
+    {
+      "no": 1,
+      "month": "11",
+      "cost": 46200,
+      "promise": "Cardano-Loans contracts refactored from PlutusTx to Aiken.\nThe following (new) features will be implemented:\n・Minimum payments (negotiable term intervals)\n・Compounding OR Fixed interest payments (negotiable yes/no + term intervals)\n・Unbonded Repayments: Bond owners (i.e. the lender) can update the address that the borrower must make repayments to.\n・Support for script-based staking credentials (as opposed to pubkey staking credentials)\n\nAdditionally, the following features may be implemented, subject to time/feasibility constraints:\n・Refinance-able debt: this likely would require its own contract, but would allow borrowers to trustlessly advertise their desire to refinance an open loan to prospective lenders. This would also allow renegotiations with the current lender.\n・Multi-Asset Loans: borrowers may be able to borrow multiple assets in a single loan\n・Linkable Credit History: By introducing new Beacon Tokens, it may be possible to link together previously unrelated/pseudonymous borrower IDs into a set of related (but still pseudonymous) IDs, at the borrower's discretion.\n\nRegardless of our success implementing the **second** set of features, we will produce documentation discussi",
+      "criteria": "・Aiken branch merged into main branch with all of the first set of features implemented, plus documentation discussing the success or failure of the second set, plus their future directions.\n・Documentation will clearly reflect gains in efficiency (lower resource utilization) and feature sets of v1 -> v2 contracts\n・Acceptance is marked by clear, understandable documentation on Github. Users and developers should",
+      "report": "All key deliverables discussed in this milestone proposal have been successfully implemented, as well as the multi-asset loan feature in the secondary \"maybe\" feature set, merged to the [main branch]1]. The entire project has been refactored to Aiken. A discussion of features that have not or have yet to be implemented can be found in the [future considerations](2) section.\nSee the associated [changelog][3] for a full list of changes. It contains a list of successfully implemented features, reflecting the outputs specified in the Milestone. [Tests][4] are found in the associated link.\nBenchmarks can be found in the [BENCHMARKS][5] section. Getting started & installation instructions can be found [here](6)\n[1]: https://github.com/fallen-icarus/cardano-loans \"Main\"\n[2]: https://github.com/fallen-icarus/cardano-loans?tab=readme-ov-file#future-considerations\n[3]: https://github.com/fallen-icarus/cardano-loans/blob/main/CHANGELOG.md \"Changelog\"\n[4]: https://github.com/fallen-icarus/cardano-loans/tree/main/test \"Tests\"\n[5]: https://github.com/fallen-icarus/cardano-loans/blob/main/Benchmarks.md \"Benchmarks\"\n[6]: https://github.com/fallen-icarus/cardano-loans/blob/main/GettingStarted.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "12",
+      "cost": 46200,
+      "promise": "Cardano-Options contracts refactored from PlutusTx to Aiken.\nThe following (new) features will be implemented:\n・Script-based Payment address: enables option writers to receive payments to script addresses, in addition to pubkey addresses. Currently, this would require additional logic, but may be much easier to enforce with upcoming updates to Plutus Core.\n・Burning Both ContractID Tokens: Currently, one of the ContractIDs is burned when an option is exercised, and the other is included in one of the outputs to prevent double satisfaction. In Cardano-Options V2, double satisfaction can be prevented using datums, allowing both contractID tokens to be burned, mitigating UTxO/token bloat.\n・Variable minUTxO Deposits: Currently, minUTxO deposits are hardcoded for certain UTxOs in the option lifecycle. V2 will enable variable deposits through the use of an extra datum field + logic, lowering deposit costs.\n・Buying Multiple Options: V2 will enable buying multiple options from different writers in the same transaction, increasing composability and lowering overall costs.\n・Consolidation of Option Writing: currently, option writers must \"prepare\" their options in two separate transactions; on",
+      "criteria": "・Aiken branch merged into main on the Cardano-Options repo, all changes should be well documented, understandable, and indicative of clear progress over V1.\n・Users/developers should be able to fully utilize Cardano-Options V2 from the tutorials/demos provided.",
+      "report": "All key deliverables discussed in this milestone proposal have been successfully implemented and merged to the main branch. The entire project has been refactored to Aiken. A discussion of implemented features can be found in the features discussion section.\nSee the associated changelog for a full list of changes. It contains a list of successfully implemented features, reflecting the outputs specified in the Milestone. Here are specific links to Evidences of Milestone Completion:\n・V2 contract code: https://github.com/fallen-icarus/cardano-options/tree/main/aiken\n・Protocol documentation & specification: https://github.com/fallen-icarus/cardano-options?tab=readme-ov-file#specification\n・Testing & benchmarks: https://github.com/fallen-icarus/cardano-options/tree/main/test and https://github.com/fallen-icarus/cardano-options/blob/main/Benchmarks.md\n・Tutorials/Demos: https://github.com/fallen-icarus/cardano-options/blob/main/GettingStarted.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "13",
+      "cost": 30800,
+      "promise": "Cardano-Aftermarket contracts refactored from PlutusTx to Aiken.\nThe following (new) features will be implemented:\n・Updating Multiple Sales: V2 will add the ability to update sale parameters (i.e. price) of multiple listings in one Tx, improving efficiency and lowering overall costs.\n・Batch (Multi-asset) Sales: Currently, only one NFT can be sold per \"sale\" UTxO. V2 will enable \"batching\" multiple NFTs of the same PolicyID into a single \"Sale\" UTxO. This improves the efficiency of the protocol, lowering overall costs.\n・Bids: an essential feature for aftermarket protocols, especially for unique NFTs related to art, gaming, or membership. V2 may enable \"bids\", where prospective buyers would be able to send \"Bid\" UTxOs to the seller's market address, leaving the final sale decision up to the seller.\n・Script-based Payments: V2 will enable sellers' flexibility in picking their preferred payment address.\n\nAdditional features or optimizations may be implemented after further R&D:\n・Thorough testing & benchmarking that reflect V2's cost and efficiency improvements will be documented for all parts of the Cardano-Aftermarket V2 lifecycle, plus discussions of new features, as well as any chall",
+      "criteria": "・Aiken branch merged into main branch on the Cardano-Aftermarket repo,with all of the aforementioned features implemented\n・Documentation and updated specification will clearly reflect gains in efficiency (lower resource utilization) and feature sets of v1 -> v2 contracts\n・Users/developers should be able to full utilize Cardano-Aftermarket V2 protocol from the tutorials/demos provided",
+      "report": "All key deliverables discussed in this milestone proposal have been successfully implemented and merged to the main branch. The entire project has been refactored to Aiken. A discussion of implemented features can be found in the features discussion section.\nSee the associated changelog for a full list of changes. It contains a list of successfully implemented features, reflecting the outputs specified in the Milestone. Here are specific links to Evidences of Milestone Completion:\n・V2 contract code: https://github.com/fallen-icarus/cardano-aftermarket/tree/main/aiken\n・Protocol documentation & specification: https://github.com/fallen-icarus/cardano-aftermarket?tab=readme-ov-file#specification\n・Testing & benchmarks: https://github.com/fallen-icarus/cardano-aftermarket/tree/main/test and https://github.com/fallen-icarus/cardano-aftermarket/blob/main/Benchmarks.md\n・Getting Started Docs: https://github.com/fallen-icarus/cardano-aftermarket/blob/main/GettingStarted.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "14",
+      "cost": 7700,
+      "promise": "A desktop client GUI for interaction with the P2P-DeFi protocol suite will be created.\nFeaturing:\n・Fixed API endpoint for querying chain indexers (i.e. blockfrost, Koios)\n・Transaction builder for selecting/managing UTxOs, proceeding with workflow, managing state.\n・Viewer module for checking the status of addresses/UTxOs engaged in one or more of the protocols' lifecycles.\n\nThe GUI is essentially a minimalist \"wallet\" specially designed for interacting with the P2P-DeFi family. Desktop client development is a higher priority than a browser-based app due to the former being more flexible/robust from a networking standpoint, especially in hostile environments.\nAdditionally, video + written tutorials / demos of usage of the whole P2P-DeFi protocol suite via the GUI will be created. Videos will go over simple usage of each protocol individually, composition within each protocol, and advanced compositions/workflows using multiple protocols. Benchmarks will be provided for multi-protocol Tx composition.\nNote: The GUI is essentially a frontend wrapped over the CLI program mentioned in the original proposal. The CLI program will be included, though it is not meant for end users, but for dev",
+      "criteria": "The GUI is able to serve as an effective frontend for interacting with the P2P-DeFi protocol suite, lowering the barrier-to-entry for non-technical and technical users who do not or cannot use the CLI. Videos and benchmarks should enable users to follow along and reproduce the same workflows (and throughput) as demonstrated.",
+      "report": "All key deliverables discussed in this milestone proposal have been successfully implemented and merged to the main branch. A discussion of implemented features can be found in the README section.\nSee the associated changelog for a full list of changes. It contains a list of successfully implemented features, reflecting the outputs specified in the Milestone. Here are specific links to Evidences of Milestone Completion:\n・Source code: https://github.com/fallen-icarus/p2p-wallet/tree/main/app\n・Linux x86 AppImage: https://github.com/fallen-icarus/p2p-wallet/releases/tag/0.2.5\n・Installation Instructions: https://github.com/fallen-icarus/p2p-wallet?tab=readme-ov-file#installing\n・Initial Demo Video: https://www.youtube.com/watch?v=lB1czpijpag\n・Channel Containing Other Demo Videos: https://www.youtube.com/@fallen-icarus-ada",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "15",
+      "cost": 23100,
+      "promise": "Project closeout video and report will summarize the achievements and future directions of the project.\nAdditionally, a thesis paper, dubbed \"P2P-DeFi Manifesto\" will tie together the protocol suite into one high level architectural & philosophical overview document. It will serve as the raison d'être of the project, and as a guide for future directions/considerations.",
+      "criteria": "The thesis paper will expound on the principles and ideals that went into creating the P2P-DeFi protocol family. It will stress the importance, feasibility, and downright necessity of fully trustless P2P DeFi protocols in the blockchain industry, and why Cardano is the ideal platform for such an ecosystem. The paper can be thought of as a greatly expanded version of the closeout video/report, tying the project together from beginning to end.",
+      "report": "We've successfully completed and provided proofs of achievement for all milestones in this project. Work on this project continues in all associated repos, and we thank Catalyst for the opportunity to bootstrap and get us to where we are today.\nCloseout Report: https://github.com/zhekson1/catalyst-f11/blob/main/closeout_report.md\nCloseout Video: https://youtu.be/hOFtwCz9Aak\nP2P-DeFi Manifesto: https://github.com/fallen-icarus/meditations-blog/tree/main/The%20DeFi%20Hypothesis",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

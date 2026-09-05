@@ -1,0 +1,48 @@
+{
+  "title": "StakePoolOperator Scripts (SPO Scripts) - New Features / Updates",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 9000,
+      "promise": "The StakepoolOperator Scripts are used by SPOs since the Shelley launch, they are a Suite of Scripts to do daily and advanced work on the CLI for SPOs and also Advanced Cardano users. \nThe SPO Scripts can be found on the Github-Repo: https://github.com/gitmachtl/scripts\nThis milestones combines two stated milestones from the proposal:\n\n・New feature \"Transaction messages\" for all scripts that do not support it yet.\n・New feature \"Encrypted transactions messages\" for scripts with basic \"Transactions messages\" support\n\nThe transaction message and message encryption feature (CIP-83) will therefore be added to the following scripts:\n・03b_regStakingAddrCert.sh (StakeKey Registration)\n・08b_deregStakingAddrCert.sh (StakeKey Deregistration/Retirement)\n・06_regDelegationCert.sh (Register Delegation Certificate)\n・05c_regStakepoolCert.sh (StakePool Registration)\n・07b_deregStakepoolCert.sh (StakePool Deregistration/Retirement)\n\nAdditional parameter options will be added to the individual scripts to fulfil this feature, like with the scripts that already support messaging features there will be following additional parameter options:\n\n [Opt: Message comment, starting with \"msg: ...\", | is the sepa",
+      "criteria": "The acceptance criteria is to provide links to the scripts in the Github-Repo and to demonstrate the successful integration of this milestone by showing a demonstration via screen recording using the scripts mentioned in the outputs section. There is only a \"its working\" or a \"its not working\" outcome, nothing in between.",
+      "report": "Hello,\n\ni completed Milestone 1 of this Catalyst Proposal.\n\nThe outputs (scripts) have already been published on the publicly available Github-Repository https://github.com/gitmachtl/scripts\n\nScripts are available for MainNet and the TestNet(s).\n\nI have made an extra release for that, which also includes Milestone 2, but this is Milestone 1.\n\n・Here is the Link to the release: https://github.com/gitmachtl/scripts/releases/tag/04-10-2023(M1%2BM2)\n\n・Here is the Link to the commit: https://github.com/gitmachtl/scripts/commit/46040b74b826e5c0cebe40ce06cedfcc59804684\n\n・And here is a Screenrecording using the scripts and demonstrating that the Milestone 1 was successfully integrated and it is working like expected: https://machtl.net/catalyst/catalyst_evidence_milestone1.mp4\n\nPlease let me know if you need more evidence that this is working, thanks!\n\nBest regards, Martin",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 10000,
+      "promise": "The StakepoolOperator Scripts are used by SPOs since the Shelley launch, they are a Suite of Scripts to do daily and advanced work on the CLI for SPOs and also Advanced Cardano users. \nThe SPO Scripts can be found on the Github-Repo: https://github.com/gitmachtl/scripts\n\nThis milestones combines two stated milestones from the proposal:\n・New feature \"Metadata file attachment\" for all scripts with transactions\n・New feature \"Base/Stake key generation with mnemonics\"\n\nThe Metadata file feature will therefore be added to the following scripts:\n・03b_regStakingAddrCert.sh (StakeKey Registration)\n・08b_deregStakingAddrCert.sh (StakeKey Deregistration/Retirement)\n・06_regDelegationCert.sh (Register Delegation Certificate)\n・05c_regStakepoolCert.sh (StakePool Registration)\n・07b_deregStakepoolCert.sh (StakePool Deregistration/Retirement)\n\nThe Metadata file is either a json formatted textfile with file-extension .json or a binary encoded cbor file with file-extention .cbor. The file can be added as an additional parameter option when calling the script.\nThe second part of this milestone is to add Mnemonics feature to the Base- & Stake-Key generation via script\n・03a_genStakingPaymentAddr.sh\n\nThis",
+      "criteria": "The acceptance criteria is to provide links to the scripts in the Github-Repo and to demonstrate the successful integration of this milestone by showing a demonstration via screen recording using the scripts mentioned in the outputs section. There is only a \"its working\" or a \"its not working\" outcome, nothing in between.",
+      "report": "Hello,\n\ni completed Milestone 2 of this Catalyst Proposal.\n\nThe outputs (scripts) have already been published on the publicly available Github-Repository https://github.com/gitmachtl/scripts\n\nScripts are available for MainNet and the TestNet(s).\n\nI have made an extra release for that, which also includes Milestone 1, but this is Milestone 2.\n\n・Here is the Link to the release: https://github.com/gitmachtl/scripts/releases/tag/04-10-2023(M1%2BM2)\n\n・Here is the Link to the commit: https://github.com/gitmachtl/scripts/commit/46040b74b826e5c0cebe40ce06cedfcc59804684\n\n・And here is a Screenrecording using the scripts and demonstrating that the Milestone 1 was successfully integrated and it is working like expected: https://machtl.net/catalyst/catalyst_evidence_milestone2.mp4\n\nPlease let me know if you need more evidence that this is working, thanks!\n\nBest regards, Martin",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 23000,
+      "promise": "The StakepoolOperator Scripts are used by SPOs since the Shelley launch, they are a Suite of Scripts to do daily and advanced work on the CLI for SPOs and also Advanced Cardano users. \nThe SPO Scripts can be found on the Github-Repo: https://github.com/gitmachtl/scripts\n---\n\nThis milestones combines two stated milestones from the proposal:\n・New feature \"Light-Mode\" for a nodeless operation using Koios and other Online-APIs (no need to run a synced cardano-node locally)\n・Advanced $adahandle support (CIP-67 subHandles)\n・Updates/Maintenance on the Documentation and needed changes required to the Common-CoreScript via the Milestones\n\nThe first part of this milestone is the \"Light-Mode\" feature. Currently there is only an \"online\" and an \"offline\" mode. In online mode, an SPO/CLI user must run a locally synced instance of the cardano node. Thats the standard right now. The offline mode offers a method to generate and sign transactions on a machine that is not connected to the internet to increase security. \n---\nThis new feature will provide the ability to work with the SPO Scripts in online mode without the need to run a local cardano node. Which comes in handy because not everybody is",
+      "criteria": "The acceptance criteria is to provide links to the scripts in the Github-Repo and to demonstrate the successful integration of this milestone by showing a demonstration via screen recording using the scripts. There is only a \"its working\" or a \"its not working\" outcome, nothing in between.",
+      "report": "Resubmitting the Final PoA to include also the CloseOutReport and Link to Video...\n-----\nHello,\ni completed the Project and here is the Final Milestone POA of this Catalyst Proposal.\nThe outputs (scripts) have already been published on the publicly available Github-Repository https://github.com/gitmachtl/scripts\nScripts are available for MainNet and the TestNet(s). Documentation has been updated.\nI have made an extra release for that\n・Here is the Link to the release: https://github.com/gitmachtl/scripts/releases/tag/Light-Mode\n・Here is the Link to the commit: https://github.com/gitmachtl/scripts/commit/5562496e3b38f40098b36d62f6dc16d296014c71\n・And here is a Screenrecording using the scripts and demonstrating that the Final Milestone was successfully integrated and it is working like expected: https://machtl.net/catalyst/catalyst_evidence_finalmilestone.mp4\n・Here is the Link to the CloseOut-Report (which also contains another link to the CloseOut-Video): https://docs.google.com/document/d/1E25bHwFi-d1jCBXdhfjQcUSziXFXGwC8GQLOqZAI0iI/edit?usp=sharing\n\nPlease let me know if you need more evidence that this is working, thanks!\nBest regards, Martin",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 10,
+      "cut": true
+    }
+  ]
+}

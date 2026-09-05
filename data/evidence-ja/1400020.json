@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "A. 主要なコンポーネントと相互作用の図を含むシステム設計を記述する技術的な建築文書。\nB. 初期プロジェクトスキャフォールドを含む公開ソースコードを、すべての主要なシステムコンポーネントのスタブ実装で公開します。\nC. 開発プロセス全体を通してソースコードを構築し、テストするCI/CDワークフローの機能.",
+      "criteria": "A1. アーキテクチャ文書は一般に公開され、主要なコンポーネントとその相互作用の図を含みます。チェーントラッキングエンジン、バックエンドデータストレージ、クエリソリューション、Webベースのフロントエンド。\nB1. パブリックリポジトリには、アーキテクチャ文書に記載されている各主要なコンポーネントのスタブモジュールで初期プロジェクトスキャフォールドが含まれています。\nC1. CI/CD ワークフローはリポジトリ内で有効で、さらなる開発の準備でスキャフォールドをビルド/テストします.",
+      "report": "A2. プロジェクトリポジトリの公開アーキテクチャ文書へのリンク。\nhttps://github.com/tx3-lang/dashboard/blob/main/README.md\n\nB2. オープンソースコードを含む公開GitHubリポジトリへのリンク。\nhttps://github.com/tx3-lang/dashboard\n\nC2. リポジトリで実行される成功したCI/CDへのリンク。\nhttps://github.com/tx3-lang/dashboard/actions/runs/22697002025\n\nD2. 設計した建築の映像ウォークスルー。\nhttps://youtu.be/P7XUvfyDXBQ"
+    },
+    {
+      "no": 2,
+      "promise": "A. 選択したdAppプロトコルに関連するオンチェーン取引を識別できる機能チェーン追跡エンジン。\nB. Tx3 プロトコルマッピングから dApp 固有のスキーマを生成し、ダッシュボードの追跡されたトランザクションデータを分離するために必要な統合コードを生成するコード生成ツール。\nC. 拡張可能なデータ保持と抽出のために設定されたバックエンドのデータストレージとクエリソリューションの統合。\nD. エンドツーエンドのトラッキングとエンリッチメントパイプラインを実証するために、dApp プロトコルマッピングと対応するデータセットの例です.",
+      "criteria": "A1. チェーントラッキングエンジンは、選択したdAppプロトコルに関連するチェーン取引を識別し、保存します。\nB1. 生成されたスキーマと統合コードは、Tx3 プロトコルマッピングから派生したメタデータを含む保存されたトランザクションデータを生成します。\nC1。 統合されたデータストレージとクエリレイヤーは、システム設計と一貫性のある保存されたデータに効率的なアクセスを提供し、ダッシュボードの想定したデータと整列します。\nD1。 dAppプロトコルと関連する保存データの例では、トラッキング、ストレージ、およびエンリッチメントワークフローを実証することができます.",
+      "report": "A2. チェーントラッキングエンジンのオープンソースコードを含むパブリックリポジトリへのリンク。\nhttps://github.com/tx3-lang/tx3-lift/tree/main/bin/tracker\nB2. Tx3ベースのエンリッチメントフローのオープンソースコードを含むパブリックリポジトリへのリンク。\nhttps://github.com/tx3-lang/tx3-lift\nC2. バックエンドストレージレイヤーのソースコードを含むパブリックリポジトリへのリンク。\nhttps://github.com/tx3-lang/tx3-lift/blob/main/bin/tracker/src/store.rs\nD2. dAppプロトコルのワークフロー全体で生成されたオンチェーントランザクションデータを充実させるリンクです。\nhttps://github.com/tx3-lang/tx3-lift/tree/main/bin/tracker/examples/orcfax-burn\nE2。 トラッキング、エンリッチメント、およびストレージコンポーネント間での統合を成功させるテストレポート。\nhttps://github.com/tx3-lang/tx3-lift/blob/main/docs/integration-test-report.md\nF2. データベースのスキーマのドキュメントと抽出されたインサイトを示すクエリ結果の例。\nhttps://github.com/tx3-lang/tx3-lift/blob/main/docs/tracker-database.md"
+    },
+    {
+      "no": 3,
+      "promise": "A. 豊富なオンチェーンデータとやり取りするためのユーザーフレンドリーなWebベースのフロントエンド。\nB. デザインで定義されたデータアクセスパターンと視覚化の実装。\nツイート 選択したdAppプロトコルの監視ダッシュボードの例です。\nD. ダッシュボードの実行方法に関するドキュメント.",
+      "criteria": "A1. ユーザーは、Webベースのフロントエンドを実行して探索することができます。\nB1。 ユーザーは、設計で定義されたアクセスパターンのそれぞれに正確なデータにアクセスすることができます。\nC1. ダッシュボードは、選択したdAppプロトコルの実際のオンチェーンデータを表示します。\nD1. ダッシュボードの実行方法に関するドキュメントは公開されています.",
+      "report": "A2. ウェブベースのフロントエンドのソースコードを含むパブリックリポジトリへのリンク。\nhttps://github.com/tx3-lang/dashboard\n\nB2. ダッシュボードで実行してやり取りする方法のビデオウォークスルー。\nhttps://youtu.be/wkdpWjWQ 4\n\nC2. 例ダッシュボードの実装を含むパブリックリポジトリへのリンク。\nhttps://github.com/tx3-lang/dashboard/tree/main/example\nindigo txs で sqlite の例だけ。 `.env.example` を `.env` としてコピーし、ダッシュボードを実行して txs をロードします。\n\nD2. システムの設定と実行方法についてのドキュメントへのリンク。\nhttps://github.com/tx3-lang/dashboard/blob/main/README.md#quick-start"
+    },
+    {
+      "no": 4,
+      "promise": "A. 完全に監視システムを取付けるための一般に利用できる Docker イメージ。\nB. 完全に監視システムのための公に利用できるソースコード。\nC. 配信されたすべてのコンポーネントを網羅し、システムを構成する方法を示す利用可能なドキュメント。\nD. プロジェクトの最終出力を示すクローズアウトビデオ。\nE. プロジェクトプロセスと最終結果を説明するクローズアウトレポート.",
+      "criteria": "A1. Docker イメージにより、監視システムがインストールされ、追加の構成なしで正常に動作させることができます。\nB1. 完全な監視システムは首尾よく意味および文脈情報と豊富な実質のオンチェーンデータを探検し、視覚化するのに使用することができます。\nC1. ドキュメントは、開発者が配信されたコンポーネントをセットアップおよび使用できるようにします。\nD1. クローズアウトビデオは、触媒ガイドラインに従います。\nE1. クローズアウトレポートは、触媒ガイドラインに従います.",
+      "report": "A2. ドッカー画像のダウンロード:\n・Tracker: ghcr.io/tx3-lang/tx3-lift-tracker — https://github.com/tx3-lang/tx3-lift/pkgs/container/tx3-lift-tracker\n・ダッシュボード: ghcr.io/tx3-lang/dashboard-frontend — https://github.com/tx3-lang/dashboard/pkgs/container/dashboard-frontend\n\nB2. Githubリポジトリで利用可能なソースコード\nhttps://github.com/tx3-lang/dashboard\nhttps://github.com/tx3-lang/tx3-lift\nC2. ドキュメントサイト\n・建築:https://github.com/tx3-lang/dashboard/blob/main/docs/architecture.md\n・アクセスパターン: https://github.com/tx3-lang/dashboard/blob/main/docs/access-patterns.md\n・ガイド:https://github.com/tx3-lang/dashboard/blob/main/docs/running.md\n\nD2. YouTubeにアップロードされた動画を閉じる\nhttps://youtu.be/81enJnQQEV4?si=o8vXwRvIXSN-sp7I\nE2. Googleドライブにアップロードされたレポートを閉じる\nhttps://drive.google.com/file/d/1ee56wQil0BH YdkRZc5-z0DWgqBuL0xD/view?usp=sharing"
+    }
+  ]
+}

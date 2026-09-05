@@ -1,0 +1,71 @@
+{
+  "title": "TripHut: DAO Open Source Code Audit & Bug Bounty",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 48000,
+      "promise": "A collection of test cases for TripHuts open source smart contract & the relevant documentation to aid readers, as well as the auditor, understand the code base.",
+      "criteria": "A test suite & documentation prepared in a way where readers with the relevant technical expertise can understand the code and test same themselves.",
+      "report": "As was agreed, milestone one was about providing a collection of test cases for TripHuts open source smart contract & the relevant documentation to aid readers, as well as the auditor, understand the code base. This has been completed and is evidenced by the following links: https://github.com/yaadlabs/DAO/blob/main/docs/overview.md (Documentation), https://github.com/yaadlabs/DAO/blob/main/triphut-test/Spec.hs & https://github.com/yaadlabs/DAO/tree/main/triphut-specs/Spec (Tests). Importantly, and as requested, please see the link below for a video going through the tests: https://drive.google.com/file/d/17lVSW5IPcNDIXySRaW_0R-g9eV5J5-MP/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 48000,
+      "promise": "Outputs include the off-chain code to submit transactions to the Cardano network to interact with smart contracts in https://github.com/yaadlabs/DAO/tree/main/src/Canonical. For this, the Cardano Transaction Lib (https://github.com/Plutonomicon/cardano-transaction-lib/) or a similar alternative will be used. And a website from where the community can submit transactions that interact with the smart contracts deployed on testnet, making use of the off-chain code developed in this Milestone. Specifically, testnet users will be able to create proposals, vote on them and execute them once the deadline has passed.",
+      "criteria": "All the expected paths to interact with the DAO contracts described in the documentation in https://github.com/yaadlabs/DAO/tree/main/src/Canonical are covered by the off-chain code, making it possible to interact with all script paths. The website allows Cardano testnet users to interact with the DAO contracts, submitting transactions to create proposals and vote on them which are recorded on the Cardano testnet.",
+      "report": "Milestone two was about providing the offchain code necessary to interact with TripHut’s DAO Contracts & taking it a step further to do the integration work, to demonstrate how the community would interact with TripHut on test net. This has been completed and is evidenced by the following links:\n \nOff Chain Code\nThe repository with the off-chain code that can be used to\ninteract with the DAO’s contracts:\nhttps://github.com/yaadlabs/DAO-Off-Chain\n \nDemo of the Off Chain Code\nThe demos showcase how to use the off chain code to interact\nwith the DAO contracts on testnet:\nhttps://www.youtube.com/watch?v=I11EjGD-aB8 \n \nDemo of the Smart Contract Integration\nThe demo shows how end users would be able to interact with\nTripHut & its contracts on the Cardano test net. Everything from submitting\na travel request, voting, and being awarded the funds as the winner of the\ntravel grant:\nhttps://www.youtube.com/watch?v=Cotk2wMHvng\n\nAs requested by the reviewer, please see the link to the main documentation for TripHuts smart contracts: \nhttps://github.com/yaadlabs/DAO\nOur apologies, we made some changes as the project progressed. We unfortunately can't edit the old link submitted in the milestones portion but users can click the option \"return to the repository overview\" to access the repo, or they can use the link we just provided. Here it is again for ease of reference: https://github.com/yaadlabs/DAO",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 24000,
+      "promise": "An audit report resulting from a manual review of TripHut's plutus smart contracts which includes these validators: Treasury.hs and Tally.hs (Found here: https://github.com/yaadlabs/DAO). The report seeks to identify security vulnerabilities and inefficiencies and provide a detailed description containing a list of findings along with recommended fixes.",
+      "criteria": "A report that displays that an independent auditor reviewed the code with a view to find security vulnerabilities and inefficiencies. Tests will be both positive tests, checking that everything works as intended, and negative tests, where malicious transactions are created that should be stopped by the smart contracts conditions.",
+      "report": "Milestone 3 was about providing an audit report that resulted from a manual review of TripHut's plutus smart contracts which includes these validators: Treasury.hs and Tally.hs (Found here: https://github.com/yaadlabs/DAO). The report sought to identify security vulnerabilities and inefficiencies. It also provided a detailed description containing a list of findings along with recommended fixes. \nAudit Report: https://drive.google.com/drive/folders/1r6kOfOXO8Aku48nF0a9mB4KOwPCJ0jWJ?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "25",
+      "cost": 16000,
+      "promise": "A report of triaged bugs (grouped by severity - low to critical), their negative tests that create malicious transactions that are not stopped by the smart contracts and their fixes.",
+      "criteria": "A report that outlines the bugs found, their urgency and how they will be treated with. The report will follow a simple template: summary, description, potential impact, how to reproduce and suggested fix.",
+      "report": "This POA was updated based on the last set of feedback given by the community reviewers.\nOutput: A report of triaged bugs (grouped by severity - low to critical), their negative tests that create malicious transactions that are not stopped by the smart contracts and their fixes.\nAcceptance criteria: A report that outlines the bugs found, their urgency and how they will be treated with. The report will follow a simple template: summary, description, potential impact, how to reproduce and suggested fix.\nEvidence: A public report triaged to display the bugs, their urgency and how they will be treated with. This will be submitted to Project Catalyst via proof of achievement, monthly reports and the close out report. The report will also be published on our public repository: https://github.com/yaadlabs/DAO/blob/main/reports/yaadlabs-bug-bounty-audit-report.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "26",
+      "cost": 24000,
+      "promise": "A close out report and video done as per Project Catalyst guidelines. The closeout report will include the test suite and documentation for TripHut's smart contracts, a website that allows users to submit proposals, vote and execute same, a video guide/recorded demo to show how to interact with the DAO contract, the audit report and the report from the bug bounty.",
+      "criteria": "A close out report that includes the test suite and documentation for TripHut's smart contracts, a website that allows users to submit proposals, vote and execute same, a video guide/recorded demo to show how to interact with the DAO contract, the audit report and the report from the bug bounty.",
+      "report": "This final milestone in summary is about submitting the close out report & video. Keen to note is that the closeout report was updated to answer the questions & reflect all the changes the reviewers requested.\nOutput: A close out report and video done as per Project Catalyst guidelines. The closeout report will include the test suite and documentation for TripHut's smart contracts, a website that allows users to submit proposals, vote and execute same, a video guide/recorded demo to show how to interact with the DAO contract, the audit report and the report from the bug bounty\nAcceptance criteria: A close out report that includes the test suite and documentation for TripHut's smart contracts, a website that allows users to submit proposals, vote and execute same, a video guide/recorded demo to show how to interact with the DAO contract, the audit report and the report from the bug bounty.\nEvidence: A close out report that includes the test suite and documentation for TripHut's smart contracts, a website that allows users to submit proposals, vote and execute same, a video guide/recorded demo to show how to interact with the DAO contract, the audit report and the report from the bug bounty. Evidence will also be viewable here: https://github.com/yaadlabs/DAO & here: https://triphut-dapp.vercel.app/ \nCloseout report: https://drive.google.com/file/d/1zuD9HTfmTK9Rskkkq5mMXwVqovNTDEiR/view?usp=drive_link \nCloseout video: https://www.youtube.com/watch?v=sqsvUb-f-mA",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

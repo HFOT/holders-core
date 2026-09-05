@@ -1,0 +1,58 @@
+{
+  "title": "Decentralized On-Chain Data Encryption",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 30000,
+      "promise": "A technical research report on ECIES, PRE, and AES in the context of on-chain data encryption and the encryption protocol. The report will include a brief analysis of the cryptographic primitives, security model, and threat analysis for the encryption/decryption scheme. The report should describe the inner workings of the encryption protocol at a technical/semi-technical level, providing sufficient detail to explain what is happening without requiring specialized skills or knowledge.",
+      "criteria": "・A detailed technical research report covering the encryption protocol, cryptographic primitives, performance considerations, security assumptions, and a threat analysis for the protocol. \n・Written as a technical report resembling a research paper.\n・Publicly available via GitHub.",
+      "report": "A. Output: A detailed technical research report (research-paper format) analyzing ECIES, PRE, and AES in the context of on-chain data encryption (PEACE Protocol).\n\nAcceptance criteria: A detailed technical research report covering the encryption protocol, cryptographic primitives, performance considerations, security assumptions, and a threat analysis; written as a technical report resembling a research paper; publicly available via GitHub.\n\nEvidence:\n- Public repo: https://github.com/logical-mechanism/peace-protocol\n- Report (PDF): https://github.com/logical-mechanism/peace-protocol/blob/main/documentation/technical_report.pdf\n- Report (Markdown): https://github.com/logical-mechanism/peace-protocol/blob/main/documentation/technical_report.md\n- Research-paper structure present in report: Abstract (Section 1, p.1), Introduction (Section 2, p.1), Background (Section 3, p.2), Conclusion (Section 7, p.13), Bibliography (p.24)\n\nB. Output: Clear explanation of the encryption protocol and the cryptographic primitives (ECIES, AES-GCM, and PRE) used in the scheme.\n\nAcceptance criteria: Explains the encryption protocol and cryptographic primitives clearly, at a technical/semi-technical level.\n\nEvidence (report sections):\n- Cryptographic Primitives Overview (Section 4, p.2)\n- ECIES + AES-GCM (Section 4.2, p.4)\n- Re-Encryption / PRE (Section 4.3, p.5)\n- Protocol Overview + Specification (Section 5, p.6; Sections 5.1–5.4, pp.7–9)\n\nC. Output: Security model and explicit security assumptions/trust model for the protocol.\n\nAcceptance criteria: Discusses security assumptions and the trust model/security boundaries relevant to the encryption/decryption scheme.\n\nEvidence (report sections):\n- Security Model (Section 6, p.10)\n- Assumptions (Section 6.1, p.10)\n- Trust Model (Section 6.2, p.11)\n\nD. Output: Thorough threat analysis for the scheme, including metadata leakage and limitations/risks.\n\nAcceptance criteria: Includes a thorough threat analysis of the scheme (attacks, leakage surf",
+      "kinds": [
+        "code"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 30000,
+      "promise": "An MVP implementation of the encryption protocol using Aiken and Python. The MVP will include smart contracts written in Aiken, and off-chain written with Python and Bash. The smart contracts will be functional and will have the happy path implemented using the cardano-cli and Bash. Tests will be available where applicable, but this milestone should demonstrate on-chain feasibility.",
+      "criteria": "・Demonstrates on-chain feasibility of decentralized encryption and decryption.\n・All smart contracts will compile, all available tests will pass, and the happy path will function as expected.\n・All publicly available on GitHub.",
+      "report": "A. Output: Minimum Viable Product (MVP) implementation of the encryption protocol, including on-chain smart contracts (Aiken) and off-chain components (Python/Bash), demonstrating the happy-path flow for decentralized encryption and decryption.\n\nAcceptance criteria: MVP implementation exists and demonstrates functional integration between on-chain and off-chain components; includes reproducible scripts/config for cardano-cli usage; publicly available on GitHub with basic documentation and usage instructions.\n\nEvidence:\n- Public repo (MVP source + docs): https://github.com/logical-mechanism/peace-protocol\n- MVP overview / usage docs (setup + run instructions): https://github.com/logical-mechanism/peace-protocol/blob/main/app/README.md\n\nB. Output: On-chain smart contracts compile successfully in Aiken.\n\nAcceptance criteria: All on-chain Aiken contracts compile successfully without errors.\n\nEvidence:\n- Aiken contract source directory: https://github.com/logical-mechanism/peace-protocol/tree/main/app/contracts\n- Test instructions (README section): https://github.com/logical-mechanism/peace-protocol/tree/main/app/contracts#testing\n- Build instructions (README section): https://github.com/logical-mechanism/peace-protocol/tree/main/app/contracts#compiling\n\nC. Output: Off-chain components (Python/Bash) execute correctly.\n\nAcceptance criteria: Off-chain scripts run successfully and produce the expected artifacts/transactions for the happy path.\n\nEvidence:\n- Off-chain scripts directory (Python/Bash): https://github.com/logical-mechanism/peace-protocol/tree/main/app/commands\n- Configuration + cardano-cli integration (config files + usage): https://github.com/logical-mechanism/peace-protocol/blob/main/app/README.md#happy-path-usage\n- Example command transcript (transactions): https://github.com/logical-mechanism/peace-protocol/blob/main/app/feasibility.md\n\nD. Output: On-chain tests confirming encrypted data behaves as designed (access control + asset tradability).\n\nAcceptance c",
+      "kinds": [
+        "code"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 25000,
+      "promise": "On-chain tests validating that data can be securely encrypted and only decrypted by the correct wallet while maintaining tradability, and off-chain tests validating the encryption process and functionality. This milestone should focus on testing the protocol as much as possible.",
+      "criteria": "・Transaction hashes showing the end-to-end flow on the pre-production network and documentation for reproducing tests.\n・All off-chain tests should pass, and contracts should compile.\n・Tests will include both the happy and unhappy paths.",
+      "report": "A. Output: Comprehensive testing phase for the encryption protocol, including both on-chain and off-chain validation, covering good-path and bad-path scenarios to demonstrate protocol reliability.\n\nAcceptance criteria: Testing coverage and reliability are demonstrated through executed tests for both expected (good path) and failure (bad path) scenarios; publicly available on GitHub with reproducible documentation and verification artifacts.\n\nEvidence:\n- Public repo (Milestone 3 tests + docs): https://github.com/logical-mechanism/peace-protocol\n- Test plan / coverage summary (good-path + bad-path): https://github.com/logical-mechanism/peace-protocol/blob/main/app/coverage.txt\n\nB. Output: Smart contracts compile successfully (Aiken build is clean).\n\nAcceptance criteria: All on-chain smart contracts compile successfully without errors.\n\nEvidence:\n- Aiken contract source directory: https://github.com/logical-mechanism/peace-protocol/tree/main/app/contracts\n- Test instructions (README section): https://github.com/logical-mechanism/peace-protocol/tree/main/app/contracts#testing\n- Build instructions (README section): https://github.com/logical-mechanism/peace-protocol/tree/main/app/contracts#compiling\n\nC. Output: All on-chain and off-chain tests executed successfully.\n\nAcceptance criteria: All available tests run and pass (on-chain + off-chain) at the time of milestone submission.\n\nEvidence:\n- Off-chain scripts directory (Python/Bash): https://github.com/logical-mechanism/peace-protocol/tree/main/app/commands\n- Configuration + cardano-cli integration (config files + usage): https://github.com/logical-mechanism/peace-protocol/blob/main/app/README.md#happy-path-usage\n- Example command transcript (transactions): https://github.com/logical-mechanism/peace-protocol/blob/main/app/feasibility.md\n\nD. Output: Transaction hashes demonstrate end-to-end functionality on Cardano pre-production (preprod) network.\n\nAcceptance criteria: A list of transaction hashes is provided, and each t",
+      "kinds": [
+        "code"
+      ],
+      "links": 15,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 15000,
+      "promise": "・Final close-out report\n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available on GitHub.\n・Final closeout video is publicly available on Github.",
+      "report": "A. Output: Final close-out report summarizing all technical and functional progress across the project, publicly available on GitHub.\n\nAcceptance criteria: A comprehensive close-out report exists covering the full development arc (research, MVP implementation, testing, and validation); includes milestone-by-milestone outcomes, key achievements, challenges, and an evidence index with links to all supporting artifacts; publicly available on GitHub.\n\nEvidence:\n- Public repo: https://github.com/logical-mechanism/peace-protocol\n- Close-out report (Markdown): https://github.com/logical-mechanism/peace-protocol/blob/main/documentation/close_out_report.md\n- Report sections: Executive Summary (Section 1), Development Timeline (Section 2), Milestone-by-Milestone Outcomes and Evidence (Section 3), Key Achievements (Section 4), Challenges (Section 5), Cost and Performance Observations (Section 6), Tooling and Environment Notes (Section 7), Reviewer Reproduction Flow (Section 8), Evidence Index (Section 9), Close-Out Statement (Section 10)\n\nB. Output: Final close-out video demonstrating live interactions with the encryption protocol and smart contracts, published and accessible through GitHub.\n\nAcceptance criteria: A close-out video is published and linked from the GitHub repository; the video demonstrates the protocol in action and covers the scope of work completed across all milestones.\n\nEvidence:\n- Close-out video: https://youtu.be/Eabw-j2hjrg\n- Video link in report: https://github.com/logical-mechanism/peace-protocol/blob/main/documentation/close_out_report.md\n\nC. Output: Deliverables accurately reflect results, challenges, and validations from previous milestones.\n\nAcceptance criteria: The close-out report and video reference and align with the outputs from Milestones 1–3, including research findings, MVP implementation, testing outcomes, and preprod validation evidence.\n\nEvidence (report sections referencing prior milestones):\n- Milestone 1 outcomes (Section 3): Technical",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 10,
+      "cut": true
+    }
+  ]
+}

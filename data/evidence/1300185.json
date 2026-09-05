@@ -1,0 +1,60 @@
+{
+  "title": "Track Cardano Asset Stats, Price Movements, Wallet Alerts, and More via Telegram",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 30000,
+      "promise": "・A detailed specification document outlining all planned functionalities for the Telegram bot, including tracked stats like token prices, wallet transactions, token supply changes, and alert structures.\n・Research and identify all necessary data sources and technical requirements for the bot’s development.",
+      "criteria": "・The specification document includes a comprehensive list of features, data points, a basic application architecture showing how indexer, backend API, and Telegram bot components interact.\n・Technical feasibility for each proposed feature is addressed in the document.\n・Final specifications are reviewed and approved by the project team.",
+      "report": "We are pleased to submit the final specification document for Milestone 1 of the Cardano Sentinel project: “Finalizing Research and Specifications for the Telegram Bot.”\nThis milestone was focused on research, planning, and confirming the technical feasibility of delivering a real-time blockchain monitoring bot for Telegram, aligned with the use cases and data requirements defined in our original Catalyst proposal.\nWhat This Submission Includes:\n・A complete breakdown of the three Telegram bot types (Personal, Public, and Group), including their features, commands, and alert behaviour\n・A summary of functional objectives such as real-time alerts, scalability, and token tracking capacity\n・A system architecture overview and list of all supporting components (indexer, sync engine, alert processor, data sources)\n・A detailed feature list, tracked data points, and technical feasibility confirmation\n・Internal sign-off and readiness to advance to Milestone 2\n\nProgress Update:\nAlthough this milestone only required planning and specification, we’re already ahead of schedule. All major backend components have been implemented, and the Telegram bot is fully functional and live in testing. A Discord bot version has also been developed (outside the scope of Catalyst funding) to further extend functionality.\n📘 Final Specification Document (PDF): https://github.com/ADA-Markets/Docs/blob/main/telegram-bot/Telegram%20Bot%20Milestone%201.pdf\nThis milestone should meet the deliverables outlined in the milestone 1, and we look forward to submitting Milestone 2, where we will validate the live indexing system and demonstrate token and wallet data tracking with test documentation. \nIf you require anything else for this milestone we are happy to provide it. Thanks for your time",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 35000,
+      "promise": "・An operational indexer capable of tracking stats and data listed in the initial spec doc from milestone 1\n・Documentation of indexer processes and data workflows.",
+      "criteria": "The indexer tracks:\n・Token price for at least 20 Cardano native tokens by market cap.\n・Wallet transactions (incoming and outgoing) for at least 2 monitored wallets.\n\nTest cases are designed for each tracked stat (price, wallet TX, supply).\nTest cases are documented (inputs, expected outputs, pass/fail results).",
+      "report": "We are pleased to submit the second milestone for the Cardano Sentinel project, confirming the successful implementation and operational deployment of our blockchain indexer. This indexer powers all token tracking and wallet monitoring features across the Telegram bot system outlined in Milestone 1.\nWhat This Submission Demonstrates:\n・Real-time tracking of token prices for 20+ Cardano native assets\n・Live monitoring of wallet transactions (inbound, outbound)\n・Indexed price and transaction data stored via a PostgreSQL + Ogmios + Redis stack\n・Full support for Telegram user queries (e.g. /price, wallet activity)\n・Test cases validating data retrieval, swap recognition, and alert functionality\n・Screenshots and a recorded walkthrough demonstrating the system in action\n\nValidation:\nAll test cases were executed using the live Telegram bot connected to the Cardano mainnet. Results were verified via internal logs and PostgreSQL data records. Screenshots and a video walkthrough are included as evidence of milestone completion.\nIncluded Materials:\n・📘 Specification Document: https://github.com/ADA-Markets/Docs/blob/main/telegram-bot/Telegram%20Bot%20Milestone%202.pdf\n・🎥 Demonstration Video: https://youtu.be/7LePgTQ9NEQ\n\nVideo Timestamps: \n・1:12 Telegram bot intro\n・2:20 Wallet tracking\n・4:15 Price alerts\n\nThe document and video above should demonstrate that the Cardano Sentinel indexing system is fully implemented, functional, and meets all specified deliverables. The system is live and operational in development, and all technical goals outlined for this phase have been achieved in full. In Milestone 3, we will provide direct access to the bot for reviewers to test first-hand.\nIf there’s anything else required to complete this milestone, we’re happy to provide it. Thanks again for your support.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 35000,
+      "promise": "・A functional integration of the indexer with the Telegram API to push real-time notifications.\n・A public Telegram channel providing users with general alerts for major events listed in initial spec doc\n・Test cases verifying alert triggers and delivery times.",
+      "criteria": "Notifications are pushed to the Telegram channel successfully for selected tokens based on:\n・Token price movement greater than ±5% in TBD timeframe.\n・Large token sale / buy over TBD ADA.\n・Others to be defined later based on stats being tracked\n\nTest cases are defined for each notification type.\nEach alert must appear on Telegram within 60 seconds of the event happening in the indexer.\n・Test case results are documented and verified.",
+      "report": "With regard to the feedback on length of service our team are SPOs and long standing members in the ecosystem so plan on running the bots as long as we are in the ecosystem but if you need a hard timeline we commit to running the bot for a minimum of 2 years but probably alot longer. \nIf you need anything else let us know, thank you\n-- \nWe are pleased to submit the 3rd milestone for the Cardano Sentinel telegram project. \nA. Output:\n A functional integration of the indexer with the Telegram API to push real-time notifications.\nAcceptance criteria:\n Notifications are pushed to the Telegram channel successfully for selected tokens based on:\n・Token price movement greater than ±5% in 1-hour timeframe\n・Large token sale or buy over 20,000 ADA\n・Whale trades for top 10 tokens\n・ Each alert must appear on Telegram within 60 seconds of the event being detected by the indexer.\n\nEvidence:\n 📄 Milestone 3 Report (PDF)\n 📹 Video Demo (YouTube)\n 📢 Live Telegram Channel\nB. Output:\n A public Telegram channel providing users with general alerts for major events listed in initial spec doc.\nAcceptance criteria:\n Channel includes alerts for:\n・Real-time large swaps\n・Price movement notifications\n・Daily summaries for top tokens and whale activity\n・ Channel must be publicly accessible and demonstrate continuous updates.\n\nEvidence:\n 📄 Milestone 3 Report (PDF)\n 📢 Live Telegram Channel\nC. Output:\n Test cases verifying alert triggers and delivery times.\nAcceptance criteria:\n Test cases are defined for each notification type.\n All alerts must be delivered within 60 seconds.\n Results are documented and verified.\nEvidence:\n 📄 Milestone 3 Report (PDF) — See Section 3\n 📹 Video Demo (YouTube)\n\nThe other bot that is mentioned is the personal one where users can go in and set personalized alerts and watch wallets, which was discussed in the previous milestones. Here is the live link to that one as well - Personal Telegram Bot \n\nThank you for your time reviewing this. If any clarifications or anything else",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 20000,
+      "promise": "・A Telegram bot allowing users to query real-time stats (e.g., prices, token data) within their telegram groups.\n・A separate Telegram bot enabling users to subscribe to wallet-specific transaction alerts.\n・Completion of beta testing and resolution of any identified bugs.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Both bots are fully operational, delivering accurate and timely responses.\n・Main functions verified through specific test cases\n・/price <token> command responds correctly within 2 seconds for 5 demo assets.\n・/subscribe <wallet> command subscribes successfully and pushes a TX alert.\n・Wallet alert bot detects new TXs within 1 block of occurrence.\n・User feedback from beta testing confirms the functionality and usability of the bots.\n・Bots are accessible to the public and meet the intended use cases.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Final Submission Note:\nWe would like to thank the Catalyst reviewers and the broader community for their support and engagement throughout this process. The bots are live for everyone to use and this project has laid the foundation for future work in improving transparency and real-time DeFi analytics on Cardano.\n\nA. Output:\nDelivery of a Telegram bot enabling users to query real-time token stats in Telegram groups.\nAcceptance criteria:\n Bot is live and operational. /price command responds correctly within 2 seconds for 5 demo assets, and bot is publicly usable in both private chats and group channels.\nEvidence:\n・Telegram bot link: https://t.me/cardano_alert_bot\n・Video demo: https://youtu.be/aIm03BjC9yk\n・Final milestone report: https://github.com/ADA-Markets/Docs/blob/main/telegram-bot/Telegram-Final-Milestone.pdf\n\nB. Output:\nDeployment of a separate Telegram bot allowing wallet-specific transaction alerts.\nAcceptance criteria:\nUsers can use /watchaddress to successfully monitor Cardano wallets for new transactions. Alerts are delivered within 1 block of transaction occurrence. Other commands like /whalealert to monitor whale trades and /pricealert to monitor token prices also work in this bot\nEvidence:\n・Wallet monitor bot: https://t.me/CardanoAlertWalletBot\n・Demonstrated in video: https://youtu.be/aIm03BjC9yk\n・Test results included in: Final milestone report\n\nC. Output:\nCompletion of beta testing and resolution of any identified bugs.\nAcceptance criteria:\n Bot functions tested against expected command outputs including /price, /pricealert, /whalealert, and /watchaddress. All performance benchmarks met.\nEvidence:\n・Test case results: Final milestone report\n・Functionality also demonstrated in the closeout video\n\nD. Output:\nFinal close-out report.\nAcceptance criteria:\n Report provides all required details including KPIs, impact, and next steps.\nEvidence:\n・Close-out report: https://github.com/ADA-Markets/Docs/blob/main/telegram-bot/Telegram-Final-Milestone.pdf\n\nE. Outpu",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 17,
+      "cut": true
+    }
+  ]
+}

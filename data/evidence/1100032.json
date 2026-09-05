@@ -1,0 +1,48 @@
+{
+  "title": "BACC: banking app-like reporting and accounting",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 9000,
+      "promise": "The BACC for Cardano project will focus on designing and developing an adapter module to make BACC available to Cardano users. \nThis milestone focuses on developing the backend components necessary for integrating BACC with the Cardano blockchain. Key components include the Cardano adapter interface, transaction collector, token list collector, token price collector, NFT support, and REST API.\n・Cardano adapter interface.\n・Transaction, token list, and token price collectors.\n・NFT support.\n・REST API (OpenAPI interface).",
+      "criteria": "・Integration and functionality of the Cardano adapter interface with the Cardano blockchain.\n・Collection and processing of transaction and token data.\n・Support of NFT.\n・Functioning of REST API.",
+      "report": "Hello Cardano Team,\nFirst, an important notice: BACC has been renamed to JPool Insights (however, some repos, etc. may have the old name).\nWe have prepared the following deliverables for this PoA:\n・Video demonstrating that JPool Insights is integrated with the Cardano blockchain, collects and processes transaction and token data, supports NFT, and has a functioning REST API. Link: https://drive.google.com/file/d/1ClUIq13RU5lRbhetbnj79XhM55ZCkt5v/view?usp=sharing \n・ Public repo: https://github.com/mfactory-lab/bacc-cardano\n・MVP: https://dev.bacc.one/\n・Documentation: https://mfactory-lab.gitbook.io/jpool-insights \n\nIf you have any questions or there is something that we might have missed, please let us know. Thank you!\nSincerely, \nVladdy and the jFactory Team",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 9000,
+      "promise": "This milestone includes the development of frontend components for Cardano integration. Tasks include Cardano wallet integration, developing specific web components for Cardano, and REST API integration.\n・Cardano wallet integrated with frontend.\n・Cardano-specific web components.\n・REST API integrated with frontend.",
+      "criteria": "・Integration of the Cardano wallet with frontend.\n・Integration of Cardano-specific web components.\n・Integration of REST API with frontend.",
+      "report": "Hello Cardano Team,\n﻿\nWe have prepared the following deliverables as part of the PoA for Milestone #2:\n・Video demonstrating our progress for the past month. Link: https://drive.google.com/file/d/1qWACMxtmxcMPavKrNDDKgTbdV_tYScLQ/view?usp=sharing \n・Public repo containing source code of Cardano-specific web components: https://github.com/mfactory-lab/bacc-cardano/tree/main/packages/cardano-ui \n・OpenAPI documentation for REST API: https://api.dev.bacc.one/docs#/ (login: bacc_user, password: bacc_swagger_pass_426$).\n・MVP: https://dev.bacc.one/ \n・Documentation: https://mfactory-lab.gitbook.io/jpool-insights\n\nIf you have any questions or there is something that we might have missed, please let us know. Thank you!\n\nSincerely, \nVladdy,\nmFactory Team",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 12000,
+      "promise": "This milestone involves the finalization of the BACC for Cardano project, including preparation and submission of a Project Closeout Report and a Project Closeout Video.\n・The fully open-source BACC for Cardano project (adapter) licensed under AGPLv3.\n・Project Closeout Report outlining the development process, challenges encountered, and solutions implemented.\n・Project Closeout Video presenting BACC's functionality on Cardano, including user interface and features.",
+      "criteria": "・Delivery of the fully open-source BACC for Cardano (adapter) project licensed under AGPLv3.\n・Project Closeout Report must comprehensively cover all aspects of the project, from initiation to completion.\n・Project Closeout Video should clearly demonstrate the successful integration and functionality of BACC on Cardano.",
+      "report": "Hello Cardano Team,\nFor the final milestone, we have prepared the following deliverables:\n・Link to the BACC (JPool Insights) website with integrated BACC (JPool Insights) for Cardano (adapter) functionality: https://insights.jpool.one/\n・Link to the public Github repository containing the source code of the fully open-source BACC (JPool Insights) for Cardano project (adapter) licensed under AGPLv3: https://github.com/mfactory-lab/bacc-cardano \n・Link to a Project Closeout Report that must comprehensively cover all aspects of the project, from initiation to completion: https://docs.google.com/document/d/1F3ws8mlaNizUaQZS1RxI4mc8eXyplPdj/edit?usp=sharing&ouid=105354651556663461574&rtpof=true&sd=true \n・Link to a Project Closeout Video that should clearly demonstrate the successful integration and functionality of BACC (JPool Insights) on Cardano: https://youtu.be/WZHH1tUcN0M \n\nIf you have any questions or there is something that we might have missed, please let us know. Thank you!\nSincerely, \nVladdy,\nmFactory Team",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

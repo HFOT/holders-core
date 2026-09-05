@@ -1,0 +1,67 @@
+{
+  "title": "MLabs - DeNS (Decentralized Name System): Phase I",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 32231,
+      "promise": "・\"DeNS Requirements\" document outlining what kind of use cases we wish to support.\n・\"DeNS Architecture\" document outlining the main architecture components and implementation options. Here we talk about oracles, bind/powerdns integration, protocol indexer, and UI (clis/guis etc.).",
+      "criteria": "The document outputs in the previous section should suffice to provide a clear idea of the requirements and architecture of the project.",
+      "report": "OUTPUTS\n\"DeNS Requirements\" and \"DeNS Architecture\" documentation has been created, combined into a single file for reviewer convenience and ease of reference.\n\nACCEPTANCE CRITERIA\nDocumentation provides a clear idea of the project's requirements and architecture.\n\nEVIDENCE\nDocumentation - combined into a single file - is available in the project repo here:\nhttps://github.com/mlabs-haskell/DeNS/blob/sean/report/doc/ArchitectureAndRequirements.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 64462,
+      "promise": "Design a document outlining the DeNS onchain protocol, including a draft specification for any validators, datums, data structures, etc to be used in the protocol. \n・Draft implementation of the onchain protocol. This may not be the final implementation, but should be complete (relative to the design document) and should have a test suite (possibly only unit tests).",
+      "criteria": "・Design document clearly outlines a complete and workable specification for the onchain architecture. \n・The implementation of onchain validators and data structures is complete and conforms to the specification. \n・The implementation contains a test suite which demonstrates the basic viability of the design.",
+      "report": "MILESTONE EVIDENCE\nWe include tests and related on-chain code for the happy path in this external repository. Tests were placed in an external repository because some dependencies were incompatible and in order to maintain the directory structure and avoid a large swath of git-related tasks orthogonal to the project goals\n<tests>\nhttps://github.com/mlabs-haskell/dens-onchain-tests\n<onchain code>\nhttps://github.com/mlabs-haskell/dens-onchain-tests/tree/master/src/Onchain\nThe design spec is actually contained in the design doc we shared in Milestone1:\nhttps://github.com/mlabs-haskell/DeNS/blob/main/doc/Architecture.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 49000,
+      "promise": "A package that listens to Cardano transactions that are related to DeNS and populates a relational database. This serves as the main query layer for other applications like DNS analytics (we expect this to be particularly useful for security-related applications) but also as the database from which traditional DNS service integration can take place.",
+      "criteria": "The aforementioned package is able to populate a relational database of DNS records by querying/indexing testnet transactions.",
+      "report": "Please find our PoA report for Milestone 3 hosted here:\nhttps://mlabs-haskell.github.io/DeNS/docs/catalyst-reports/milestone-3/",
+      "kinds": [
+        "live"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 49000,
+      "promise": "・An ‘offchain’ (which is a bit more substantial here than in most dapps) component that can build DeNS transactions and can be exposed to users through CLIs, GUIs, and APIs. \n・Minimally, a basic DeNS CLI utility that can be used to meaningfully interact with the protocol.",
+      "criteria": "A CLI component using the offchain component is capable of building DeNS transactions and otherwise meaningfully interacting with the protocol (The definition of the phrase “meaningfully interacting” should be clear to the evaluators from design document outputs of the first few milestones).",
+      "report": "Please find our PoA report for Milestone 4 hosted here:\nhttps://mlabs-haskell.github.io/DeNS/docs/catalyst-reports/milestone-4/",
+      "kinds": [
+        "live"
+      ],
+      "links": 1
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 63157,
+      "promise": "・A deployment-ready package or container (Nix/Docker) is made available for users \n・Extensive tests, including golden tests where applicable/useful, are implemented for each of the DeNS components\n・User-facing documentation & examples are provided \n・A running service (the exact nature depends on design decisions, provisionally: a DeNS “local resolver”) that users can integrate with to perform name-resolution queries using our system.",
+      "criteria": "・The package / container is properly configured and can be deployed by users to interact with the DeNS protocol. \n・The test suites are extensive and all tests pass. \n・Documentation is clear, thorough, and sufficient for users to interact with the protocol.\n・The running service actually works.",
+      "report": "Please find our PoA report for Milestone Final hosted here:\n\nhttps://mlabs-haskell.github.io/DeNS/docs/catalyst-reports/final-milestone/\n\nOur Closeout Report:\n\nhttps://drive.google.com/file/d/1JDabJY7ERhmPjUq9bSTH-VYHq6NYGvMa/view?usp=sharing\n\nOur Closeout Video:\n\nhttps://www.youtube.com/watch?v=_JK_kiDhnTM",
+      "kinds": [
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

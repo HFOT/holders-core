@@ -1,0 +1,61 @@
+{
+  "title": "AnetaBTC - Decentralized and Scalable Wrapping Protocol",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 52500,
+      "promise": "・Investigate Cardano indexer solutions\n・Investigate new BTC libraries \n・Implement Guardian Angels indexing (BTC)\n・Implement the functions that return the required data from the Bitcoin Chain\n・Implement Guardian Angels indexing (ADA)\n・Draft communication and metadata standards",
+      "criteria": "・A Cardano indexing soliton and stack is selected that optimized for resources used\n・multiple options exists all with their strengths and weaknesses, 1 must be selected and the dev team will learn to use it. \n・A Bitcoin indexing soliton and stack is selected that is optimized for resources used\n・multiple options exists all with their strengths and weaknesses, 1 must be selected and the dev team will learn to use it. \n・The functions for indexing the BTC chain and keeping up with the tip are implemented\n・we are to trigger a process when a new BTC block is added to the chain , this will likely be",
+      "report": "We have accomplished all the outputs for this milestone, evidence of that can be found in the following document, in line with the \"Evidence of milestone completion\".\nYou can find the data-api for a running instance of the GA software: http://161.35.68.183:3030/ \nFor a reference of available endpoints : https://github.com/anetalabs/anetaV2/blob/main/Docs/api.md\nhttps://docs.google.com/document/d/1JumMVrTZsQJw7jHyqcTZvGgxBcDNV_414n8y1hZOGok/edit?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "・Implement Guardian Angels communication\n・Implement FrontEnd BTC address derivation\n・Implement GuardShift scripts\n・Implement FrontEnd data queries",
+      "criteria": "・p2p communication amongst the Guardian angels should be operational.\n・Guardian Angels should be able to create and monitor multiple BTC address that are controlled via multisig \n・A set of scripts should be made available so that GAs are able to manually move funds out of the Vault\n・A minimal FE should be available that is able to send requests to the bridge",
+      "report": "We have accomplished all the outputs for this milestone, evidence of that can be found in the following document, in line with the \"Evidence of milestone completion\".\nYou can find the data-api for a running instance of the GA software: http://161.35.68.183:3030/ \nFor a reference of available endpoints : https://github.com/anetalabs/anetaV2/blob/main/Docs/api.md\nhttps://docs.google.com/document/d/1Ar7ubgKBmqqQart92GE5YAUT0eCtqF6W9pVituYZAS4/edit?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "・Implement Guardian Angels transaction building (ADA)\n・Implement Guardian Angels transaction building (BTC)\n・Implement V2 frontend transaction generation \n・Implement V2 frontend changes",
+      "criteria": "・Mint/burning/rejections/confiscations , the Guardian angel correctly performs all this operations when running with a 1/1 topology.\n・Redemptions/consolidation Transactions are the Guardian angel correctly performs all this operations when running with a 1/1 topology.\n・Users can enter the Ui and initiate a mint or redemption in a user-friendly way\n・Users are able to enter the Ui and view their history and/or pending requests \n\nA guide will be published on how to use the product including instructions on obtaining tBTC and tADA.",
+      "report": "The testnet deployment of the AnetaBTC bridge has been released and is compatible with the Chang and Ploming Hardforks.\nYou can visit it and perform minting and redemmeing of cBTC and see the history of your transactions.\nhttps://anetabtc-v2.vercel.app/dashboard\nA guide has been published as per the milestone containing all the info required to use it.\nhttps://leandros-bsp.medium.com/anetabtc-testnet-guide-bb3edcfff459\n\nVideo evidence of using the bridge: \nhttps://youtu.be/-FnsmuV6hUo",
+      "kinds": [
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 30000,
+      "promise": "・Implement Guardian Angels SigSharing(consensus)\n・Implement Transaction tracking and status for frontend",
+      "criteria": "・Guardian Angels now communicate and coordinate to perform all the operations(minting, burning, rejecting, redeeming, consolidating payments, confecting collateral) \n・Users can enter the Ui and find their entire history including pending requests",
+      "report": "The full p2p functionality is now operational.\nYou can see in the bellow video that we have 3 Guardian angels running the bridge with GA1 acting as the leader, after we kill the leader an a short cooldown elapses the remaining 2 nodes start and election and select GA2 to be the leader, you can see during this period that GA2 is set to \"candidate\" before being accepted as \"leader\", after the leader is selected we restart GA1 that joins the quorum is a \"learner\" state and quicly accepts GA2 as the leader and takes the role of \"follower\" \nhttps://www.youtube.com/watch?v=yKOE0V01oIU\nThe transaction history is also now available as per the milestone criteria a guide has been published. \nhttps://leandros-bsp.medium.com/anetabtc-transaction-history-guide-432b914e21d8",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

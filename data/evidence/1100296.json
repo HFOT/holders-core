@@ -1,0 +1,75 @@
+{
+  "title": "Xerberus: Scam Investigation Registry Engine (SIREN) in cooperation with Iagon",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 26534,
+      "promise": "The community has voted for the idea of SIREN; now we must get into the details and work out how exactly SIREN is built; \n・we will use the first two months to develop an architecture and plan the execution of the project.\n・we will examine if there are legal roadblocks for SIREN; after all, we will create a public blacklist for wallets, and we expect pushback from certain actors. As it stands right now, we do not need regulatory approval. However, we will still conduct the legal analysis so the community can rest assured that things are done correctly.",
+      "criteria": "Does the submitted presentation contain the following? \n • High-Level Software Architecture \n • Project Development Plan \n • Team and Tasks \n • Legal analysis of potential issues with SIREN and how to deal with them",
+      "report": "Dear Proposal Assessor,\nPlease find here the promised presentation following this link: https://docsend.com/view/5rnhmry5pxandkbh\nAlso, please the additional requested information about how SIREN works on a high level in this paper: https://docsend.com/view/rh9igx69bp289jwv\nLastly, you will find all the technical submissions in this GitHub during the later milestones: https://github.com/XerberusTeam/SIREN\n\nKindest,\nSimon Peters \nXerberus Labs",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 79602,
+      "promise": "In this phase, we are kicking off the development of SIREN itself based on the planning and analysis we conducted in the last milestone. In this process, we will start working on the core elements that make up SIREN. We will start working on \n • A way an end user can easily interact with SIREN \n • the core registry that captures wallets identified as back actors\n • an API that other product builders can use to integrate SIREN into their products.",
+      "criteria": "Does the presented GitHub contain these or similar folders, and are they being worked on? \n • Interface: Can I see that the team is working on an Interface for SIREN? \n • Registry: Can I see that the team is working on registry infrastructure underpinning SIREN? \n • API: Can I see that the team is creating an API product builders can use to integrate SIREN into their own products?\n・Folders might change; in doubt, check the high-level architecture roadmap of Milestone 1. You should see that we are working on what we said we would work on in the last milestone. We will take the high-level archit",
+      "report": "Dear Reviewer,\nPlease find our GitHub with all the agreed deliverables listed: https://github.com/XerberusTeam/SIREN\nThe link leads to the general repo for the project. You can also jump directly to this link: https://github.com/XerberusTeam/SIREN/blob/master/SIREN%20Development/2%20-%20First%20Development%20Phase.md to see the deliverables for this specific milestone. We created a detailed overview for you to make it easy to understand and follow up on each deliverable.\nWe went beyond the current milestone and have already a version of SIREN online which you find here: https://app.xerberus.io/siren/dashboard\n\nKindest regards,\nXerberus",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 79602,
+      "promise": "At this point of the project, we should have an Alpha version of SIREN running that you, the Community Auditor, should be able to test. This means you should be able to use SIREN as if it were already a working product. Of course, there might be some issues as it is still an alpha. You, as the Community Auditor, should be able:\n • To access SIREN via a URL, like you would access any other website \n • You should be able to find a list of bad actors on this website (even if only made up of mockup wallets) \n • You should be able to go through the process of submitting content to SIREN\n・Addtionaly, we use this phase to gather user feedback from early testers to improve features in an iterative process",
+      "criteria": "You should be able to access the SIREN Alpha with a link:\n • Use the SIREN interface. \n • Be able to see a selection of scam wallets. \n • Be able to \"submit\" a scam wallet (important, this process might look different from what you intuitively think; it might be that you are not to submit any wallet and call it a scam wallet. Potentially, you must submit your wallet and describe the scam you fell victim to. Be mindful of this, as it might be part of our security process to protect wallets from false claims. Important: notice the conjunctive, we do not know at this moment in time).\n・Also, you s",
+      "report": "Dear Milestone Reviewer, \nPlease find out renewed submission: we took all your feedback and updated the submission. \nPlease find the updated Version of SIREN following the link: https://app.xerberus.io/siren/dashboard\nWhat has changed since the last time?\nWe added the Scam Wallet list. Please note that you will currently see only one scam wallet. However, this is not a mockup but a real scammer's wallet. More scammer wallets will be added over the next few weeks. You can also submit your own wallet and register as a victim. Once you are registered as a victim, our algorithm will pick up your case, provided there is at least one other person who has also been scammed by the same actor.\n・Here a quick walkthrough the application: https://www.loom.com/share/c868a6e8b5d14fbf9fd3500239215c84\n・You can find all the milestone mapped out together in GitHub: https://github.com/XerberusTeam/SIREN/blob/07425353feb7b2b3dff80dfe36f6e98f34bd96fb/SIREN%20Development/3%20-%20Siren%20Alpha.md\n・You can find our API description here: https://xerberus.gitbook.io/documentation/apis/siren\n・You can find a PDF document with our User Feedback Analysis here, including the next steps we will take to address it: https://docsend.com/view/cnnxtxh8fqtz8xhs\n・Additionally, you will find a link to a livestream where we demonstrate a live case using an improved version of SIREN that will be published in September in response to our user feedback:https://x.com/i/broadcasts/1lPJqOWrnYQKb",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 39801,
+      "promise": "In this milestone, we widen the audience for SIREN and allow the wider community to start using it. Also, we intend SIREN to be a public infrastructure that projects can use across the entire ecosystem, including wallet providers and other analysis platforms. This milestone is entirely dedicated to external security audits. \n・As Xerberus SIREN aspires to be such a significant piece in the overall Cardano security architecture, having a security audit for SIREN is necessary.\n・To achieve wider adoption of SIREN, a wider test audience must be gathered to use SIREN. While the alpha testers will be invited to test SIREN, we will also ensure that the public knows SIREN and call for the general Cardano audience to test the SIREN beta in this milestone.",
+      "criteria": "Has the team moved SIREN to a beta and also conducted a security audit? \n・The team public announced the SIREN beta and invited the general Cardano audience to test the Beta and submit feedback.\n・The team has provided evidence than an external firm made a security audit.",
+      "report": "Dear Reviewers,\n・As evidence of this milestone, please find the code audit report here: https://docsend.com/view/emxvxswn6i7hhzm8 (Created by https://cyrote.com/) \n・Please find the live version of SIREN here: https://app.xerberus.io/fraud/reports\n・(SIREN has been online for a while. Find the post here where we walk through the original beta version of SIREN. Currently, SIREN is already beyond the beta stage.)",
+      "kinds": [
+        "other",
+        "social"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "9",
+      "cost": 39801,
+      "promise": "In the final milestone, we conclude the projects in the form. This means SIREN is living and working for the Cardano Community. This includes \n • The official close-out report \n • Integrations of SIRENs into other Cardano Products \n • Full Deployment of SIREN \n • A summary of community activity so far on SIREN",
+      "criteria": "Does the closeout report include statements or links to:\n • A full close-out report describing SIREN\n • Link to at least one official announcement of a project using SIREN \n • A link to the fully working web version of SIREN \n • A summary of community analysis, such as the number of wallets reported until now \n • A link to an article to inform the community how to be safer based on your first learnings from SIREN.",
+      "report": "Dear Milestone Reviewers, \nPlease find our submission below: \nVideo: https://youtu.be/xGjmtODKjbc \nDocumentation: https://docsend.com/view/kjdbqsgnpra39ck8\nThank you for your time and consideration.",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

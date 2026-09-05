@@ -1,0 +1,77 @@
+{
+  "title": "Enable use-cases that require frequent message signing by introducing a safe standard for message signing without wallet prompts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 36000,
+      "promise": "・Write specification for the approach",
+      "criteria": "・host specification on in a publicly accessible location",
+      "report": "Video: https://drive.google.com/file/d/1KvUP-UZz5ddHTZygy0BSWy9lmPS8RpTN/view?usp=sharing\nVarious Google drive docs for the different approaches we investigated:\n・Approach overview: https://docs.google.com/document/d/1VqXjyfgvbXxYHqhzYcSFFEorYbnza6GbjyAbVXyAKAM/edit\n・Gaming account approach: https://docs.google.com/document/d/1II9-72dIpLps6oSEvEt2yPsPDwt0FC2kjo33xzpzbXA/edit\n・MetaMask snap approach: https://docs.google.com/document/d/1QuIaAZW69EBdssiEbUs9V5CgPEbRkjNiPtJ4rdbFRvc/edit#heading=h.xv3s0ae2zmyw\n・Key delegation approach: https://docs.google.com/document/d/1LZJsIsX2UMtjr7slZC5PWD-0cyK77_5W9IDxoaPs8-M/edit\n・Examples: https://docs.google.com/document/d/1-L2PHkRm6AfpRSBYnGXT1vYCGrA0o0oZFgoY8Opj0ag/edit\n\nLearn more in the Paima docs: https://docs.paimastudios.com/home/read-write-L2-state/autosign",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 7
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 36000,
+      "promise": "Implement auto-sign in at least 1 Cardano wallet",
+      "criteria": "・write the code to support auto-sign and integrate it into at least 1 Cardano wallet",
+      "report": "Video: https://drive.google.com/file/d/1V9zJAxbDFTrNYNTp2pViIoMiBm1BoHy8/view?usp=sharing\nGaming key specification: https://docs.google.com/document/d/1II9-72dIpLps6oSEvEt2yPsPDwt0FC2kjo33xzpzbXA/edit\nCode:\n・Cardano wallet connection code in Paima: https://github.com/PaimaStudios/paima-engine/blob/master/packages/paima-sdk/paima-providers/src/cardano.ts\n・Wallet delegation parsing code in Paima: https://github.com/PaimaStudios/paima-engine/blob/master/packages/engine/paima-sm/src/delegate-wallet.ts\n\nAnnouncement tweet of wallet delegation functionality: https://twitter.com/PaimaStudios/status/1725054223480467529\nPaima docs: https://docs.paimastudios.com/home/read-write-L2-state/autosign#defining-your-namespace\n\nYou can also try it for yourself on Tarochi live: https://tarochi.paimastudios.com",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 7
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 36000,
+      "promise": "Implement auto-sign as a Metamask Snap",
+      "criteria": "・ a Metamask Snap on Github that implements the auto-sign functionality",
+      "report": "Video: https://drive.google.com/file/d/1j9FEoTM7DmuIhor0PHtwWOReKJpxCbfg/view?usp=sharing\nMetaMask Paima snap specification: https://docs.google.com/document/d/1QuIaAZW69EBdssiEbUs9V5CgPEbRkjNiPtJ4rdbFRvc/edit\nPaima snap codebase: https://github.com/PaimaStudios/paima-session-snap\nSnap usage example video: https://drive.google.com/file/d/18mgWn5vGwZTvFkL4-0vrvAzpjpK5ojb1/view?usp=sharing\nAnnouncement tweet: https://twitter.com/PaimaStudios/status/1680665635272155136",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 5
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 36000,
+      "promise": "・Implement auto-sign support in at least 1 game using Paima",
+      "criteria": "・At least one game built with Paima that implements the auto-sign functionality",
+      "report": "**Context:** Paima Studios merged into the Midnight Foundation, and Paima Engine was rebranded as EffectStream. We have rewritten the entire codebase from scratch - this is the third version. We listened to feedback, followed better practices, and improved overall quality. These events are why we are delivering now, but everything has been updated for the present. The auto-sign functionality was originally proposed as a Metamask Snap (M3). The delivered solution uses `@effectstream/wallets`, a multi-chain wallet package with session key delegation - a more flexible approach that works across wallet types and is live in 3 production games. Even though we have delivered with `@effectstream/wallets`, the original Paima Engine auto-sign specification and approach is available at https://github.com/PaimaStudios/paima-engine. This Milestone is provided after the fact, so it contains further reach than M4. New site https://effectstream.github.io/home/\n\n**A. Output: At least one game implementing auto-sign functionality**\nAcceptance criteria: At least one game built with the framework that implements auto-sign. Delivered with three live production games on midnight.fun, all using session key delegation via `@effectstream/wallets` to eliminate wallet pop-ups for non-financial interactions. Players approve delegation once, then play without interruption. The session key model is scoped (non-financial only), time-bounded, and revocable.\nEvidence:\n- Safe Solver: https://safesolver.midnight.fun/\n-And other games in midnight.fun site\n**B. Output: Release announcement of the integration**\nAcceptance criteria: Public announcement of the auto-sign feature with demonstration of the integration.\nEvidence:\n- Blog post: https://effectstream.github.io/docs/blog/auto-sign\n- Midnight Network blog (announcement featuring all 3 games): https://midnight.network/blog/introducing-midnight-fun\n- Twitter/X @MidnightNtwrk: https://x.com/MidnightNtwrk/status/2043388660188385620\n\n**C. Output: Video",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "social"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 35300,
+      "promise": "Project Close Report:\n・pdf report\n・video report\n・game implementation\n・wallet implementation",
+      "criteria": "Community has the access to PCR.",
+      "report": "In response to PoA comments:\nThank you for the review. we have addressed both points. Video and PDF have been updated to match guidelines.\n\nLINKS TO REVIEW\n\n1. Close-out video (PCV, YouTube):\nhttps://youtu.be/q047-c5ZgX4\n\n2. Close-out report \nPDF REPORT\n\nAdditional notes:\n[summary of message] Catalyst Direction has reviewed and agreed on the following statement regarding this project and recorded under ticket #9527\n・Rebrand. Paima has rebranded as EffectStream and is part of the Midnight Foundation; links might now appear under the name of either of these entities. \n\nThanks in advance.",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

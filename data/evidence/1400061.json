@@ -1,0 +1,63 @@
+{
+  "title": "Hydra Minecraft",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 11250,
+      "promise": "・Initial version of the plugin\n・A basic version of the plugin that listens to specific in-game events (block placement and block breaking) with no Hydra interaction yet\n・Docker Compose setup\n・A configuration file for Docker Compose that sets up 2 Minecraft servers, a Cardano Node and opens a Hydra Head\n・Logging & Reporting\n・The plugin logs the desired events (block placement and breaking) to the Minecraft chat\n・Written progress report\n・Video report",
+      "criteria": "・The initial version of the plugin successfully detects and reports block placement and block breaking events initiated by the player in the Minecraft chat\n・Docker-compose correctly configures and launches two Minecraft servers, a Cardano node, and opens a Hydra head\n・The plugin properly logs the desired events (block placement and breaking) to the Minecraft chat (shown in Video demonstration)\n・Written progress report is public and describes the current progress\n・Video report is public and showcases the current progress",
+      "report": "A. Output: Initial version of the plugin (A basic version of the plugin that listens to specific in-game events (block placement and block breaking) with no Hydra interaction yet)\nAcceptance criteria: The initial version of the plugin successfully detects and reports block placement and block breaking events initiated by the player in the Minecraft chat\nEvidence: The initial version of the plugin is publicly available in the repository: https://github.com/CardanoProphet/hydra-minecraft , more specifically in the following folder: https://github.com/CardanoProphet/hydra-minecraft/tree/main/hydramc/src/main/java/org/hydramc/hydramc\nB. Output: Docker Compose setup (A configuration file for Docker Compose that sets up 2 Minecraft servers, a Cardano Node and opens a Hydra Head)\nAcceptance criteria: Docker-compose correctly configures and launches two Minecraft servers, a Cardano node, and opens a Hydra head\nEvidence: Docker Compose configuration is publicly available in the repository: https://github.com/CardanoProphet/hydra-minecraft , more specifically in the following folder: https://github.com/CardanoProphet/hydra-minecraft/tree/main/docker The setup in action is also showcased in the Video Report.\nC. Output: Logging & Reporting (The plugin logs the desired events (block placement and breaking) to the Minecraft chat)\nAcceptance criteria: The plugin properly logs the desired events (block placement and breaking) to the Minecraft chat (shown in Video demonstration)\nEvidence: Logging & Reporting is showcased in the video demonstration output, more specifically at the following timestamp: https://www.youtube.com/watch?v=ZoBKqf6Eobw&t=610s (10 minutes 10 seconds)\nD. Output: Written progress report\nAcceptance criteria: Written progress report is public and describes the current progress\nEvidence: Link to written progress report published on Medium is here: https://medium.com/@cardanoprophet/hydra-minecraft-progress-report-1-862bac9a207e\nE. Output: Video report\nAcceptance c",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 11250,
+      "promise": "・Plugin submitting world updates to Hydra and logging the transaction related information to the Minecraft in-game chat\n・The plugin has added support for sending transactions to Hydra based on the events happening in the Minecraft world\n・Log file of the Hydra state obtained from a test run\n・Written progress report\n・Video report",
+      "criteria": "・Plugin correctly submits the transactions based on the desired events (block placement and breaking) happening at the Minecraft server and properly logs the transaction related data in the in-game chat\n・Hydra state log is present in the repository and contains multiple transactions\n・Written progress report is public and describes the current progress\n・Video report is public and showcases the current progress",
+      "report": "A. Output: Plugin submitting world updates to Hydra and logging the transaction related information to the Minecraft in-game chat (The plugin has added support for sending transactions to Hydra based on the events happening in the Minecraft world)\nAcceptance criteria: Plugin correctly submits the transactions based on the desired events (block placement and breaking) happening at the Minecraft server and properly logs the transaction related data in the in-game chat\nEvidence: The current version of the plugin is publicly available in the repository: https://github.com/CardanoProphet/hydra-minecraft (more specifically: https://github.com/CardanoProphet/hydra-minecraft/tree/main/hydramc ) and the logging of the transactions is shown in a video report output\n\nB. Output: Log file of the Hydra state obtained from a test run\nAcceptance criteria: Hydra state log is present in the repository and contains multiple transactions\nEvidence: The Hydra state log file is publicly available in the open-source repository at https://github.com/CardanoProphet/hydra-minecraft (more specifically: https://github.com/CardanoProphet/hydra-minecraft/blob/main/log/ws.log )\n\nC. Output: Written progress report\nAcceptance criteria: Written progress report is public and describes the current progress\nEvidence: Link to the written progress report published on Medium is here: https://medium.com/@cardanoprophet/hydra-minecraft-progress-report-2-15271286c6ed\n\nD. Output: Video report\nAcceptance criteria: Video report is public and showcases the current progress\nEvidence: Link to the video report published on YouTube is here: https://youtu.be/5bS4a3MLPzE",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 9800,
+      "promise": "・Finalized plugin\n・The plugin is now capable of creating or destroying blocks in the Minecraft world based on transactions submitted to the Hydra L2 ledger by other Minecraft server instances\n・The plugin outputs logs related to events, sending transactions and world modifications based on the L2 transactions\n・The logs are made optional enablable in the plugin config\n・Finalized environment setup\n・Docker-compose setup should now also be final. Any adjustments identified during previous milestones are implemented here\n・Load testing report\n・Written progress report",
+      "criteria": "・Plugin correctly places or destroys blocks based on the transactions inside the Hydra Head and provides logs enablable inside the plugin config\n・Docker-compose correctly sets up the required services\n・Load testing report provides insights into the server behavior during the different levels of the load (transactions per second)\n・Written progress report is public and describes the current progress including the evolution of the final state of the docker-compose setup",
+      "report": "A. Output: Finalized plugin (The plugin is now capable of creating or destroying blocks in the Minecraft world based on transactions submitted to the Hydra L2 ledger by other Minecraft server instances; The plugin outputs logs related to events, sending transactions and world modifications based on the L2 transactions; The logs are made optional enablable in the plugin config)\nAcceptance criteria: Plugin correctly places or destroys blocks based on the transactions inside the Hydra Head and provides logs enablable inside the plugin config\nEvidence: The plugin code is available at: https://github.com/CardanoProphet/hydra-minecraft (Specifically here: https://github.com/CardanoProphet/hydra-minecraft/tree/main/hydramc )\n\nB. Output: Finalized environment setup (Docker-compose setup should now also be final. Any adjustments identified during previous milestones are implemented here)\nAcceptance criteria: Docker-compose correctly sets up the required services\nEvidence: Docker Compose configuration is publicly available in the repository: https://github.com/CardanoProphet/hydra-minecraft (Specifically here: https://github.com/CardanoProphet/hydra-minecraft/tree/main/docker )\n\nC. Output: Load testing report\nAcceptance criteria: Load testing report provides insights into the server behavior during the different levels of the load (transactions per second)\nEvidence: Load testing report is publicly available in the repository: https://github.com/CardanoProphet/hydra-minecraft (Specifically here: https://github.com/CardanoProphet/hydra-minecraft/blob/main/LOAD_TEST_REPORT.md )\n\nD. Output: Written progress report\nAcceptance criteria: Written progress report is public and describes the current progress including the evolution of the final state of the docker-compose setup\nEvidence: Link to the written progress report published on Medium. (Specifically here: https://medium.com/@cardanoprophet/hydra-minecraft-progress-report-3-f2208130058c)",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 14
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 5700,
+      "promise": "・Project Close-out Report\n・Comprehensive report that provides a detailed summary of the project's overall achievements, key challenges faced, and the milestones completed\n・Includes an overview of each milestone, detailing the specific outputs, and how each milestone was successfully met\n・Summary of the final state of the plugin and the Docker Compose environment setup\n・Project Close-out Video\n・Video demonstrating the plugin in action, with a focus on key features such as server synchronization and Hydra L2 transactions\n・Overview of the plugin's architecture and functionality, visually explaining how it integrates with Hydra and Cardano",
+      "criteria": "・Final close-out report is publicly available\n・The close-out report clearly describes the project from start to finish, including setup details, and milestone achievements\n・Complying with the requirements specified in the Catalyst documentation, here: https://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv\n・Final close-out video is publicly available\n・The video accurately showcases the plugin's core functionalities, including server synchronization and blockchain transactions through Hydra L2\n・Complying with the requirem",
+      "report": "A. Output: Project Close-out Report\nAcceptance criteria: Final close-out report is publicly available\nEvidence: Link to final close-out report published on Medium and shared on X at https://x.com/CardanoProphet Link to the close-out report: https://medium.com/@cardanoprophet/hydra-minecraft-project-close-out-report-e54a381eb5a2 Link to the post staring it on X: https://x.com/CardanoProphet/status/2068062020742582415 Additionally, here is a PDF version of the Project Close-Out Report document: https://github.com/CardanoProphet/hydra-minecraft/blob/main/project-close-out-report.pdf\n\nB. Output: Project Close-out Video\nAcceptance criteria: Final close-out video is publicly available\nEvidence: Link to final close-out video posted and shared on X at https://x.com/CardanoProphet Link to the close-out video: https://youtu.be/X4PbCKd_TBU Link to the post sharing it on X: https://x.com/CardanoProphet/status/2068062020742582415",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    }
+  ]
+}

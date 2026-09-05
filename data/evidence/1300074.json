@@ -1,0 +1,91 @@
+{
+  "title": "CShell by TxPipe: A Cardano wallet in your terminal",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 32857,
+      "promise": "・Publicly available source-code containing the project scaffold: A foundational structure of the codebase, consisting of the basic code skeleton that will be built upon as the project progresses.\n・A stub of the CLI binary and install script: A simple, preliminary version of the command-line interface (CLI) binary. This binary will be an executable file that users can run directly from their command line.\n・Installation procedure: A script and instructions for users to execute the installation process that will make the CLI binary available in their local systems.\n・A stub of the CLI main command entry-points: A basic version of the main command entry points for the CLI. These entry points are the commands that users enter into the command line to interact with the software. This stub will serve as a placeholder for the final, fully functional commands that will be developed later in the project.",
+      "criteria": "・A user is able to install the stub CLI binary\n・The user experience is simple and efficient.\n・The user is able to download and install the preliminary version of the CLI binary without encountering any errors.\n・The user is able to trigger the placeholder commands available in the CLI.\n・The binary runs correctly on Windows, MacOS and Linux.\n・The source-code is suitable for further feature development\n・The codebase is clean, well-documented, and structured in a way that makes it easy to understand and modify.\n・The codebase follows established coding conventions and best practices for a Rust proj",
+      "report": "The CShell project is in progress, and goals for milestone 1 have been achieved:\n・The publicly available source-code containing the project scaffold can be found in our Github repository.\n・The repository includes installation instructions and usage commands as part of the Project’s readme. \n・Examples valid executions of the CI pipeline can be found on the Github actions.\n・Binary release and install procedures can be found on the Github repository.",
+      "kinds": [
+        "code"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 32857,
+      "promise": "・Publicly available source-code containing the milestone features: Source code publicly available, encapsulating all the milestone features developed till that point. This will ensure transparency and open collaboration, while allowing the community and other developers to contribute, audit, or modify as per their needs. This code will be hosted on a public repository, adhering to Apache 2.0 license.\n・Feature for creating new wallet keys: A new feature for users to generate new wallet keys directly from the command-line interface. It will use cryptographic algorithms to ensure the security and uniqueness of each key. Users will be able to generate both public and private keys. The algorithms used will match the required for signing Cardano transactions. This feature is required for many of the basic wallet functionality to be developed in further milestones.\n・Feature for restoring wallet from a seed phrase: A feature to enable users to restore their wallet using a seed phrase. The seed phrase is a list of words which store all the information needed to regenerate the private key that controls the wallet. This will be particularly useful in cases where the user has lost access to th",
+      "criteria": "・A user can create new wallet keys using the CLI\n・A user is able to generate new wallet keys directly using a command in the CLI.\n・The process is straightforward, with clear command-line instructions.\n・The format of the generated keys is compatible with the ones required by Cardano for signing transactions.\n・A user can restore a wallet from a seed phrase using the CLI\n・A user can successfully restore their wallets by entering a seed phrase through a CLI command.\n・The process is straightforward, with clear command-line instructions.\n・The recovered private key is equivalent to the one generated",
+      "report": "Find below the corresponding links to the deliverables associated with Milestone 2 of the CShell project:\n・Link to source-code available in the Github repository. https://github.com/txpipe/cshell \n・Link to new binary release containing the features developed for this milestone. https://github.com/txpipe/cshell/releases/tag/v0.2.1 \n・Link to Github actions execution showing integration test successful execution https://github.com/txpipe/cshell/actions \n・Link to video showcasing the new features developed for this milestone. https://youtu.be/WS8JESObxag",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 32857,
+      "promise": "・Publicly available source-code containing the milestone features: Source code publicly available, encapsulating all the milestone features developed till that point. This will ensure transparency and open collaboration, while allowing the community and other developers to contribute, audit, or modify as per their needs. This code will be hosted on a public repository, adhering to Apache 2.0 license.\n・New feature for syncing wallet state from remote provider: A feature that will allow the wallet to synchronize its state from a remote provider, also known as a \"light wallet\". The feature will facilitate regular updates from a remote blockchain node, ensuring that the wallet's state is continuously aligned with the latest blockchain data. The protocol used for this communication will be UTxO RPC.\n・New feature for submitting transactions to remote provider: A feature that will enable users to submit transactions directly from the command-line interface to a remote provider. It will include validation checks to ensure that the transaction data is accurate and properly formatted before submission. The feature will handle the necessary communication protocols with the remote provider and",
+      "criteria": "・A user can update the balance of their wallet using the CLI\n・A user can trigger an update of an already configured wallet through the CLI\n・The command-line interface is straightforward and well-documented.\n・In case of an error a comprehensive error message is shown to the user\n・A user can read the updated balance of their wallet using the CLI\n・A user can display the updated balance and UTxO set from the CLI\n・The balance and UTxO set of the updated wallet match the data on-chain\n・The command-line interface is straightforward and well-documented.\n・A user can submit a new generic transaction usi",
+      "report": "・Link to source-code available in the Github repository.\n\n https://github.com/txpipe/cshell\n https://github.com/txpipe/cshell/tree/main/src/wallet \n https://github.com/txpipe/cshell/tree/main/src/tx \n https://github.com/txpipe/cshell/tree/main/src/search \n\n・Link to new binary release containing the features developed for this milestone.\n\n https://github.com/txpipe/cshell/releases/latest \n\n・Link to Github actions execution showing integration test successful execution\n\n https://github.com/txpipe/cshell/actions\n\n・Link to video showcasing the new features developed for this milestone.\n\n https://youtu.be/O_IolqTI4IY",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 32857,
+      "promise": "・Publicly available source-code containing the milestone features: Source code publicly available, encapsulating all the milestone features developed till that point. This will ensure transparency and open collaboration, while allowing the community and other developers to contribute, audit, or modify as per their needs. This code will be hosted on a public repository, adhering to Apache 2.0 license.\n・New feature for building transaction using low-level primitives: A feature that enables users to construct a transaction using low-level primitives or basic elements. This manual approach offers maximum flexibility and control over the transaction details at the cost of extra complexity. Users can specify inputs and outputs, set transaction fees, and add metadata through the command-line interface. The feature should include validation checks to ensure the transaction's correctness and handle any potential errors gracefully, providing clear and informative error messages to guide the user.\n・New feature for building transactions from intents: A feature that simplifies the transaction building process by allowing users to specify their intent or high-level actions they want to perform,",
+      "criteria": "・A user can update build a transaction using low-level structures\n・The CLI provides a command to create an empty transaction and update it through incremental steps\n・The CLI interface provides different commands to apply changes to the different nested parts of a transaction (eg: inputs, outputs, metadata, signatures, etc).\n・The command-line interface is straightforward and well-documented\n・In case of an error a comprehensive error message is shown to the user\n・A user can update build a transaction using high-level intentes\n・The CLI provides several commands matching each of the supported inte",
+      "report": "・Link to source-code available in the Github repository. \n\n https://github.com/txpipe/cshell/tree/main/src\n・Link to new binary release containing the features developed for this milestone.\n\n https://github.com/txpipe/cshell/releases/latest \n・Link to Github actions execution showing integration test successful execution\n\n https://github.com/txpipe/cshell/actions\n・Link to video showcasing the new features developed for this milestone.\n\n https://youtu.be/0tZUJcMWdGM\n・Documentation\n\n https://docs.txpipe.io/cshell/commands/tx#tx-invoke\n https://docs.txpipe.io/cshell/commands/tx#tx-construct\n https://docs.txpipe.io/cshell/commands/search#search-transaction",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "9",
+      "cost": 32857,
+      "promise": "・Improved install experience for mac, windows & linux: A refinement of the installation process for all major operating systems: macOS, Windows, and Linux. It entails optimizing the installation script for each platform, ensuring compatibility, and reducing the potential for installation errors. The goal is to provide a smooth, user-friendly installation experience, with the software successfully installing and running across different systems.\n・Documentation website with install and usage instructions: A comprehensive documentation website. The site will host detailed instructions for installing and using the CLI wallet, for reference of both new and existing user. The documentation will be clear, concise, and well-structured, with sections dedicated to installation, basic usage, advanced features, troubleshooting, and more.\n・Automation and scripting examples: A set of examples of how to automate tasks and script interactions with the CLI wallet. These examples will serve as a starting point for users who want to automate regular tasks or build scripts for complex transactions. This will include examples of batch transactions, scheduled tasks, or complex transaction templates.",
+      "criteria": "・A user can install the CLI in mac, windows and linux\n・The documentation site shows how to execute the steps required for installation in each platform.\n・The installation can be reproduced by any user in the supported platforms\n・In case of an error a comprehensive error message is shown to the user\n・A user can learn how to use the CLI from the available documentation\n・The documentation site shows instructions for basic wallet management procedures (create, recover, balance, etc)\n・The documentation site shows instructions for blockchain query operations (fetch block, query address, etc)\n・The do",
+      "report": "・Source-code available in the Github repository\n\n https://github.com/txpipe/cshell \n https://github.com/txpipe/cshell/tree/main/examples \n・Binary release for all supported platforms\n\n https://github.com/txpipe/cshell/releases \n・Link to documentations site and examples\n\n https://docs.txpipe.io/cshell \n https://docs.txpipe.io/cshell/examples\n・Video showcasing the install process and comprehensive usage\n\n https://youtu.be/XpBPwuHNZOw",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "10",
+      "cost": 32858,
+      "promise": "・Publicly available source-code of the complete proposal: Source code publicly available, encapsulating all the features for this proposal. This will ensure transparency and open collaboration, while allowing the community and other developers to contribute, audit, or modify as per their needs. This code will be hosted on a public repository, adhering to Apache 2.0 license.\n・Fully-featured binary release and install scripts: A tagged released of the feature-complete CLI for all major operating systems: macOS, Windows, and Linux. It entails the complete tool containing all of the features described in previous milestones.\n・Revised documentation website with install and usage instructions: A comprehensive documentation website that has been revised and preliminar feedback from users has been applied.\n・A closeout video showcasing the final output of the project\n・A closeout report describing the project process and outcome",
+      "criteria": "・The wallet CLI matches the features in the proposal\n・The features declared in previous milestones are all available in the delivered version.\n・A user is able to install and use the tool as advertised\n・The closeout video complies with Catalyst requirements\n・The closeout report complies with Catalyst requirements",
+      "report": "Source-code available in the Github repository\nhttps://github.com/txpipe/cshell\n\nLink to documentation site \nhttps://docs.txpipe.io/cshell \n\nLink to closeout video uploaded to Youtube\nhttps://www.youtube.com/watch?v=FviKbBLPF1A \n\nLink to closeout report uploaded to Google drive\nhttps://drive.google.com/file/d/1iCbsruIykuu8sl1rpX8xlC_Pq8rAHhd5/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

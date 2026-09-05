@@ -1,0 +1,62 @@
+{
+  "title": "[PKL] Cardano Governance Explorer Visualized with Graphs",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 36000,
+      "promise": "・Researching project implementation steps including analyzing existing solutions and coming up with core features for the explorer, selecting appropriate technology solutions for the platform, and coming up with a project implementation roadmap\n・Build the system architecture diagram.\n・Design the user interface (UI/UX).",
+      "criteria": "・Complete a comprehensive project research to document:\n\n・Analyze similar projects for their strengths and weaknesses to come up with core features and an effective presentation for Cardano Governance Explorer.\n・The roadmap for the forecast implementation includes a list of each work item along with the choice of development technologies, implementation time, and necessary descriptions of each work ensuring that all necessary information about Cardano governance is clearly presented and easily accessible to everyone.\n\n・Complete the system architecture diagram showing the data collection base a",
+      "report": "Milestone 1 Completion Report:\n・Link to the comprehensive project documentation including the solution analysis document for Cardano Governance Explorer and Google Sheets containing the project implementation roadmap.\n\nSolution Analysis Document for Cardano Governance Explorer: https://docs.google.com/document/d/1GVeLYtdNk5Abzbm7fGqhPMy-YO3eOsHzqrfCWq_GqRU/edit?usp=sharing\nCardano GOV Project Implementation Roadmap: https://docs.google.com/spreadsheets/d/1VxOzTROAv-5twrlmiOGBaOQbNvEVkaVzcZHPxb5h9KE/edit?usp=sharing\n・Link to Miro where the project's operational system architecture diagram is presented:\n\nhttps://miro.com/app/board/uXjVIbQD2rs=/?share_link_id=896578846783\n・Link to Figma page where the user interface is designed: \n\nhttps://www.figma.com/proto/JUDRi0lpfOs3TVrHxwUiGO/Cardano?node-id=740-10791&t=nUXgGEYs2OHR6taw-1\nhttps://www.figma.com/design/JUDRi0lpfOs3TVrHxwUiGO/Cardano?node-id=5-28&t=nmUythstmbXh0dzq-1",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 36000,
+      "promise": "・Backend Building: Includes database implementation, API usage to fetch data from Cardano blockchain, implementation of core functionalities outlined in project development documentation in milestone 1 and API implementation using backend framework. \n・Frontend Building: Includes interface development using framework and Integrating graphing libraries to implement features outlined in project research paper in milestone 1, Connecting frontend to backend by integrating frontend with APIs from backend.",
+      "criteria": "・Complete backend construction including criteria Database is fully designed and implemented to be able to store and retrieve data. API is working properly and supports the necessary query functions. Complete implementation of key features given in the project study table in milestone 1. All API endpoints must work properly to return correct data as requested\n・Complete frontend construction that works smoothly, displays data from the backend synchronized in real time and gives accurate data. User interface is visualized with graphs and tables highlighting data.",
+      "report": "Milestone 2 Completion Report:\nGithub: https://github.com/cardanogov/cardano-gov\nVideo demonstrating the backend and frontend: https://drive.google.com/drive/folders/1RAYTcBCfskfNSevMjGQ2obTLB4KzzlGi?usp=sharing\nCardano Governance Explorer website: https://cardanogov.cc/\n(Thanks for your valuable feedback, we have fixed them and the rest are on the to do list in Milestone 3 - Testing and Optimization)",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 30000,
+      "promise": "・Check if the app is working properly, find errors and fix them\n・Optimize the app to make sure it runs fast and smooth",
+      "criteria": "・Complete testing and provide pre- and post-fix reporting\n・Complete optimization and provide pre- and post-optimization reporting",
+      "report": "Milestone 3 Completion Report:\n・Test Results Report: \n\nhttps://docs.google.com/spreadsheets/d/1jgmNIeZMIZQngKM_mwQLfl7qYVvhC2ho5aQJq7w0Vp4/edit?usp=sharing\nhttps://drive.google.com/drive/folders/1bummTtp-0A72BbC8dSc--65DOvyz4paS?usp=sharing\n・Optimization Process Report:\n\nhttps://docs.google.com/document/d/1Q-aDMBMCT-rz_a4rmo4MRcuI1731OtdNX_lDnT22A-M/edit?usp=sharing\n・Github:\n\nhttps://github.com/cardanogov/cardano-gov\n・Website:\n\nhttps://cardanogov.cc/",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 18000,
+      "promise": "・Final close-out report\n・Final closeout video\n・Cardano Governance Explorer official version launched\n・Release source code to public repository and contribute to DEV Cardano community \n・Efforts to introduce the project to the Cardano community on social media platforms",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・The Cardano Governance Explorer app is fully deployed, the features are well designed and ready for all users to access\n・Complete the project's open source code and contribute the source code to the DEV Cardano community\n・Complete the project introduction and compile links demonstrating marketing efforts on social media platforms within the Cardano community such as Asian, Latam, Swawm, Intersect.",
+      "report": "Final Milestone Completion Report:\n・Final closeout report\n\nhttps://docs.google.com/document/d/1xO_V72hSdSrax3hq4Mn8JlpEqjkfseNytjoSzrD-C2M/edit?usp=sharing\n・Final closeout video\n\nhttps://youtu.be/g711I0KcqUU\n・Website\n\nhttps://cardanogov.cc/\n・Open source Github\n\nhttps://github.com/cardanogov/cardano-gov\n・Product marketing efforts\n\nhttps://docs.google.com/document/d/1oqiAns7jC1HZoTqZ-f2OAiH_QdJqAyc0jO_cSzC7UK4/edit?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

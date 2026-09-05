@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・複数のチェーンに対応したパイプラインモデルを更新\n・ビットコインソースプラグインのスタブ\n・イーサリアムソースプラグインのスタブ\n・基板ソースプラグインのスタブ",
+      "criteria": "・全てのコンポーネントのスタブは、機能開発の準備ができています\n・CI/CDパイプラインは、異なるアーティファクトをビルド/統合する場所にある",
+      "report": "Oura リポジトリのこの Github PR は、複数のチェーンサポートを Oura に追加するための初期の足場を提供します。 特に、それは導入します:\n・複数のチェーンに対応したパイプラインモデルを更新\n・ビットコインソースプラグインのスタブ\n・イーサリアムソースプラグインのスタブ\n・基板ソースプラグインのスタブ\n\nhttps://github.com/txpipe/oura/pull/910\nそのためには、次のものをリファクタリングしなければなりません。\n・Cardanoのデータは現在、フィルタ、シンク、ソースを横断してCardanoレコードのラッパーの下に名前空間化されています。\n・イベントやデータモデルには、要型を用いたクリアなマルチチェーン処理機構があります。\n・全てのフィルタ/シンクは、以前の動作を提供しますが、任意の非Cardanoチェーンからオプトアウト(時間のために)\n\nスキャフォールドには、継続的な統合のための対応するワークフローも含まれています。 特に:\n・リントチェック\n・試験形式\n・ユニットテストチェック\n・インテグレーションテストチェック\n\nワークフローの特定の実行の例は次のようになります。\nhttps://github.com/txpipe/oura/actions/runs/18297621234"
+    },
+    {
+      "no": 2,
+      "promise": "・機能的なビットコインソースプラグイン",
+      "criteria": "・OuraはBitcoin RPCエンドポイントに接続できます\n・Ouraはビットコインブロックや取引処理ができる",
+      "report": "・新規プラグインを含む公開ソースコード\n\nhttps://github.com/txpipe/oura/tree/v3\n・新しいプラグインを含む当社の新しいバイナリリリース\n\nhttps://github.com/txpipe/oura/releases\n・新しいプラグインのドキュメントへのリンク\n\nhttps://docs.txpipe.io/oura/v3/sources/btc\n・Bitcoinノードに接続された当社のパイプラインを示すビデオ\n\nhttps://youtu.be/e1eEodF3xW4"
+    },
+    {
+      "no": 3,
+      "promise": "・機能的なイーサリアムソースプラグイン",
+      "criteria": "・オーラはイーサリアムRPCのエンドポイントに接続できます\n・イーサリアムブロック、取引、ログ処理ができる",
+      "report": "・新規プラグインを含む公開ソースコード\n\nhttps://github.com/txpipe/oura/tree/v3\n・新しいプラグインを含む当社の新しいバイナリリリース\n\nhttps://github.com/txpipe/oura/releases\n・新しいプラグインのドキュメントへのリンク\n\nhttps://docs.txpipe.io/oura/v3/sources/eth\n・イーサリアムノードに接続された当社のパイプラインを示すビデオ\n\nhttps://youtu.be/coL0T26HNEg"
+    },
+    {
+      "no": 4,
+      "promise": "・機能性基板ソースプラグイン",
+      "criteria": "・Oura は、Substrate RPC エンドポイントに接続できます。\n・Ouraは、基板ブロック、取引、ログの処理が可能です",
+      "report": "・Substrateプラグインを含む公開ソースコード\n\nhttps://github.com/txpipe/oura/tree/v3\n・新しいプラグインを含む当社の新しいバイナリリリース\n\nhttps://github.com/txpipe/oura/releases\n・新しいプラグインのドキュメントへのリンク\n\nhttps://docs.txpipe.io/oura/v3/sources/substrate\n・Substrateノードに接続された当社のパイプラインを示すビデオ\n\nhttps://youtu.be/NNZGVVy2Jwg"
+    },
+    {
+      "no": 5,
+      "promise": "・ビットコインチェーンオブザーバーの機能例\n・イーサリアムチェーンオブザーバーの機能例\n・サブスレートチェーンオブザーバーの機能例",
+      "criteria": "・当社の新機能を理解するために、開発者が提供した例を使用することができます\n・開発者は、提供された例を使用してカスタムソリューションを構築することができます",
+      "report": "一般に利用可能なソースコードの例\n・ビットコイン → https://github.com/txpipe/oura/blob/v3/examples/btc/daemon.toml\n・イーサリアム → https://github.com/txpipe/oura/blob/v3/examples/eth/daemon.toml\n・登録 -> https://github.com/txpipe/oura/blob/v3/examples/substrate/daemon.toml\n\n利用可能な例を示すビデオ\nhttps://youtu.be/kSovglH6ugM"
+    },
+    {
+      "no": 6,
+      "promise": "・システム全体で利用可能なソースコード\n・最新アップデートで公開可能なドキュメントサイト\n・プロジェクトの最終出力を示すクローズアウトビデオ\n・プロジェクトプロセスと結果を説明するクローズアウトレポート",
+      "criteria": "・最終的なシステムには、提案のスコープに記載されたすべての機能が含まれています\n・クローズアウトビデオは、Catalyst要件に準拠\n・クローズアウトレポートは、触媒要件に準拠",
+      "report": "・Githubリポジトリで利用できるソースコード\n\nhttps://github.com/txpipe/oura/tree/v3\n・公開文書サイト(https://oura.txpipe.io)\n\nhttps://docs.txpipe.io/oura/v3\n・YouTubeにアップロードした公開クローズアウト動画\n\nhttps://youtu.be/gkOyE7rb2 Q?si=srR50rIS9v6voEa\n・Googleドライブに公開されたクローズアウトレポート\n\nhttps://drive.google.com/file/d/1l6iAmVO59ntmI8bq26gKXa7qXqHNsXjz/view?usp=sharing"
+    }
+  ]
+}

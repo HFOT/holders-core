@@ -1,0 +1,74 @@
+{
+  "title": "Interoperability and Cross-chain communication for Cardano: VISTA (Verified Interchain Secure Transfer Architecture)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "The goal of VISTA is to create a bridged sidechain ecosystem and protocol for the Cardano network that can extend between Cardano-based chains and beyond. As a first output and to help steer the rest of the developmental roadmap we will publish initial design and architecture documentation and roadmap.\n・VISTA Protocol Design Documentation: Detailed documentation outlining the protocol design and architecture vision as well as laying the groundwork for the development roadmap to help the team accomplish the mission.\n・GitHub and YouTube Progress Updates: The team will publish YouTube progress videos as well as GitHub repositories related to both the Design Documentation to be released as part of this milestone but also documenting progress on the various modules to be released as part of subsequent milestones.",
+      "criteria": "・The reviewer will be able to watch a YouTube video documenting the team's progress so far\n・The reviewer will be able to watch a YouTube video describing the VISTA Protocol architecture and system design.\n・The reviewer will be able to see proof of documentation publication and progress via published GitHub repositories.",
+      "report": "Proof of Achievement\nIn the following achievement, you will find our progress report video, where we cover the latest developments and insights into the VISTA Bridge. Additionally, please visit our GitHub repository for our design documentation and source code. Thank you to the reviewers. We appreciate your feedback and support as we continue to develop our bridge for Cardano!\nProgress Report YouTube Video/VISTA Bridge Overview\n\n・Progress Update: A quick recap of our achievements and the steps taken towards the current milestones.\n・VISTA Bridge Overview: Dive into the core components of VISTA, exploring how it aims to improve interoperability across Cardano-based chains and other blockchains.\n・Indexer Role: Understand the role of the indexer within the VISTA ecosystem.\n・Chain Mirror: A look at the chain mirroring capabilities across different blockchain environments.\n・Relayer Functionality: Explanation of the relayer's role in managing data transfer and validation between chains.\n\nVideo Link: https://www.youtube.com/watch?v=UPfu9B2HrBQ\nGitHub Repository Overview\n\n・Cardano Indexer: Also known as the \"Watcher,\" this module observes the Cardano blockchain and initiates actions based on detected activities..\n・Cardano Mirror: This module reflects the activities recorded by the Indexer onto the destination chain, effectively replicating transactions and updates across blockchain environments.\n・Cardano Relayer: The bridge between Indexers and Mirrors, handling the relay of event messages to ensure smooth and secure communication across components.\n\nGitHub: https://github.com/vista-foundation/design-docs",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 75000,
+      "promise": "The first step in any bridge being the \"Watcher\" we will begin the release of the VISTA protocol with the first core module which is the \"Cardano Indexer\". This module should be capable of observing a Cardano-based blockchain smart contract and taking action based on deposits to prepare the locked asset(s) for bridging.\n・VISTA Module 1 \"Cardano Indexer\": Release an initial alpha version of the Cardano Indexer Module\n・Module should be capable of successfully detecting deposits to a Cardano Smart Contract\n・Test suite for the module to be provided\n・Initial documentation and usage examples to be provided",
+      "criteria": "・The reviewer will be able to view a video highlighting the use and testing of the Cardano Indexer module\n・The reviewer will be able to review code and documentation published to GitHub",
+      "report": "Resubmission \nWe are resubmitting this milestone because the prior refusal was based on a clarification question that was not directly related to the milestone criteria. As such, the grounds for refusal do not reflect an evaluation of the deliverables themselves.\nWe kindly request that reviewers take into account the full scope of the proposal when assessing milestones. If clarification is required, we encourage the use of the discussion tab for questions, rather than issuing a non-approval.\n\nClarification\nThe reviewer’s question was: “At what stage of the implementation will the project address bridging between Cardano and a non-Cardano blockchain…”\nThis point is explicitly addressed in Milestone 4, which outlines the development of the Relayer module. The Relayer is the third essential component of any blockchain bridge, designed to pass messages between Indexers and Mirrors, including across blockchains.\nFurthermore, the milestone specifies that the Relayer will support Cardano <=> Agrologos communication. Agrologos is a permissions-based blockchain under development, derived from Cardano. This directly addresses the cross-chain bridging aspect raised by the reviewer.\nWe respectfully request that this milestone be reviewed based on the deliverables and outputs provided, which are aligned with the Statement of Milestones (SoM).\n\nOriginal Submission\nThe following has the off-chain code for the initial alpha version of the Cardano Indexer for the VISTA Bridge. This submission completes Milestone 2.\n\nThe module is capable of:\n・Successfully detecting deposits to a Cardano smart contract\n・Preparing locked assets for bridging\n・\n\nAs per the proof of achievement criteria, reviewers will be able to:\n・View a video highlighting the use and testing of the Cardano Indexer module: https://youtu.be/mvj6orBep4g\n・Review code and documentation published to GitHub: https://github.com/vista-foundation/bridge-offchain\n\nNote: The full off-chain bridge implementation (Indexer, Relayer,",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "20",
+      "cost": 43467,
+      "promise": "The second critical part of any blockchain bridge is the \"Mirror\" that will reflect the changes seen by the Observing Indexer onto the destination chain. This module should be capable of receiving a message payload and taking an action on a Cardano blockchain.\n・VISTA Module 1 \"Cardano Mirror\": Release an initial alpha version of the Cardano Mirror Module\n・Module should be capable of successfully creating transactions on a Cardano Blockchain\n・Test suite for the module to be provided\n・Initial documentation and usage examples to be provided",
+      "criteria": "・The reviewer will be able to watch a vdeo showcasing the working Mirror software.\n・The reviewer will be able to confirm that code and documentation has been published to GitHub",
+      "report": "Resubmission Proof of Achievement – Cardano Mirror\n\nSubmission History:\n・Last Initial Submission: Approved by two independent Milestone Reviewers (December 12 & 15, 2025)\n・Admin Team Review (January 19, 2026): Requested milestone-specific video evidence, citing overlap with the M2 video\n\nThis resubmission addresses the Admin Team's feedback. No scope expansion or deviation from the originally approved milestone has occurred. The technical outputs remain unchanged.\nResponse to Admin Feedback\nThe accepted milestone criteria stated: \"The reviewer will be able to watch a video showcasing the working Mirror software.\" This requirement specifies only that the Mirror software be shown working, which the original submission fulfilled. Nevertheless, to accommodate the Admin Team's request for unique evidence, we have produced a new video which was screen recorded by a separate member of our team.\nThe module is capable of:\n・Receiving indexer-derived messages and validating their schema and provenance.\n・Transforming those messages into destination-chain for the Relayer.\n・Enforcing guardrails such as idempotency/replay protection and rules checks to ensure intents are safe and reproducible.\n\nAs per the proof of achievement criteria, reviewers will be able to:\n・View a video showcasing the working Cardano Mirror software: https://youtu.be/AcKiew_h9Ag\n・﻿Review code and documentation published to GitHub: https://github.com/vista-foundation/bridge-offchain",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "21",
+      "cost": 55200,
+      "promise": "Originally the proposal had 6 milestones listed. In order to consolidate down to the 5 required by the Catalyst tool, we have merged portions of Milestone #5 (VISTA Testing and Optimization) with Milestone #4 (this) and the Final Closeout milestone. The output of this milestone will be the third piece of software necessary to facilitate the full deployment of the bridge (sans UI/UX) to be further tested, optimized, and improved during the final milestone (closeout).\nThe third component of any blockchain bridge is the \"Relayer\" that serves to pass messages back and forth between one or more Indexers and Mirrors. This module should be capable of receiving messages from an indexer and issuing messages to a mirror on Cardano networks (Cardano <=> Agrologos).\n・Vista Module 3 \"Cardano Relayer\": Release an initial alpha version of the Cardano Relayer Module\n・Module should be capable of successfully listening to events from an Indexer Module and issuing events to a Mirror Module\n・Test suite for the module to be provided\n・Initial documentation and usage examples to be provided",
+      "criteria": "・Code for the \"Cardano Relayer\" module has been published to GitHub\n・Published code includes test suit to confirm proper operation of the module\n・Published code includes initial documentation and usage examples\n・Project update video shows the three modules released interoperating",
+      "report": "Milestone 4 Resubmission\n\nWe thank both reviewers for their time and thoughtful consideration of this milestone submission. We are pleased that one reviewer confirmed the milestone’s core deliverables have been implemented to an approvable level, and we appreciate the second reviewer’s detailed feedback regarding alignment with the broader proposal vision. This revised Proof of Achievement addresses those concerns directly, provides additional technical evidence, and clarifies the scope of this milestone relative to the full project roadmap.\nThis submission is structured in five parts: (1) confirmation that each acceptance criterion for Milestone 4 has been satisfied; (2) a direct response to the reviewer’s concern regarding cross-chain interoperability; (3) architectural evidence of chain-agnosticism; (4) clarification of milestone scope versus the broader project roadmap; and (5) consolidated links to all evidence.\n1. Acceptance Criteria: Status Summary\nThe Catalyst proposal defines four explicit, measurable acceptance criteria for Milestone 4. Each criterion has been fully satisfied. Evidence is verifiable on-chain, on GitHub, and in the public demonstration video.\nThe Catalyst proposal defines four explicit, measurable acceptance criteria for Milestone 4. Each Criteria has been fully satisfied. Evidence is verifiable on-chain, on GitHub, and in the public demonstration video.\nAcceptance Criteria \n・Code for the “Cardano Relayer” module published to GitHub \n・Status Complete\n・Evidence: https://github.com/vista-foundation/bridge-offchain/tree/master/src/relayer\n・Published code includes test suite to confirm proper operation\n・Status Complete\n・Evidence: Test suite included in the published repository.\n・Published code includes initial documentation and usage examples\n・Status Complete\n・Evidence: README, inline documentation, and usage examples in repo.\n・Project update video shows the three modules interoperating\n・Status: Complete\n・Evidence: YouTube Demonstration Video",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 17,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "22",
+      "cost": 49067,
+      "promise": "For project closeout we will address any lingering gaps in documentation and prepare our project closeout presentation (video + document).\n・Complete final closeout documentation and publication",
+      "criteria": "・The reviewer will watch Project Closeout Video\n・The reviewer will read Project Closeout PDF\n・The reviewer will be able to see all contracts and accompanying documentation published to GitHub",
+      "report": "Project Closeout POA\n\nThe following is our project closeout submission for Project Catalyst proposal 1100169.\nFor this final milestone, we completed the project closeout documentation and prepared the required closeout materials. We also addressed remaining documentation gaps and published the relevant bridge source code, backend components, UI updates, tests, and technical documentation to GitHub.\nAs part of the final project work, the Vista Bridge now includes support for bridging ETH on Ethereum Sepolia with vETH on Cardano Preprod. This gives the Cardano community a working open-source foundation for building a functional cross-chain bridge, including backend services, frontend wallet flow, configuration examples, integration tests, and developer documentation.\nRecent repository updates confirm the ETH bridge work has been added to main, including:\n・Ethereum bridge documentation: https://github.com/vista-foundation/bridge/blob/main/docs/ethereum-bridge.md\n・EVM mirror service: https://github.com/vista-foundation/bridge/tree/main/offchain/src/evm-mirror\n・EVM indexer service: https://github.com/vista-foundation/bridge/tree/main/offchain/src/evm-indexer\n・Main GitHub repository: https://github.com/vista-foundation/bridge\n\nThe GitHub history also shows recent main branch activity, including the May 21, 2026 merge of PR #4, followed by commits adding the ETH Sepolia to Cardano Preprod bridge, EVM source-chain support, destination-wallet UI, and E2E testing.\nEvidence\n・Project Closeout Video YouTube: https://youtu.be/uLfXxZGPOqI\n・Project Closeout Document PDF: https://drive.google.com/file/d/1-yMgux85KtoncxmDeqchqIVRzuxj-77f/view?usp=sharing\n・GitHub Link: https://github.com/vista-foundation/bridge",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

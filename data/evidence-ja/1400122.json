@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・VeriScriptの基本、高レベルの説明、スマートコントラクトの内面的な作業を定義する詳細な技術文書、VeriScriptの評判システム、その他の必要な情報",
+      "criteria": "・製品の構造と機能性に関する詳しい説明\n・ドキュメントには、Datum、Redeemer、パラメーターなどの必要なデータ型のトランザクション図と定義が含まれています",
+      "report": "お問い合わせ\n出力:\n・VeriScriptの基本、高レベルの説明、スマートコントラクトの内面的な作業を定義する詳細な技術文書、VeriScriptの評判システム、その他の必要な情報\n\n受諾の条件:\n・製品の構造と機能性に関する詳しい説明\n・ドキュメントには、Datum、Redeemer、パラメーターなどの必要なデータ型のトランザクション図と定義が含まれています。\n\n証拠:\n・VeriScriptリポジトリはhttps://github.com/CardanoProphet/veriscriptでアクセス可能\n・技術文書は、PDFファイルとして次のリンクで公開されます。https://github.com/CardanoProphet/veriscript/blob/main/docs/veriscript.pdf"
+    },
+    {
+      "no": 2,
+      "promise": "・スマートコントラクトソースコード\n・各機能のインラインコードドキュメントを提供\n・「ビルド」セクションでドキュメントを更新し、スマートコントラクトの構築方法を説明します",
+      "criteria": "・スマートコントラクトはGitHubリポジトリの公開にアクセスでき、エラーなしでビルドできます。\n・各スマートコントラクト機能にインラインコードのドキュメントを配布\n・ドキュメントには、ビルドの指示を含む新しい「ビルド」セクションが含まれています",
+      "report": "A. 出力:スマートな契約のソースコードを渡して下さい\n受諾条件:スマートコントラクトは、GitHubリポジトリのパブリックにアクセスでき、エラーなしでビルドできます。\nEvidence: 完全なスマートコントラクトソースコードは、https://github.com/CardanoProphet/veriscript でプロジェクトのリポジトリに公開されます(詳細は https://github.com/CardanoProphet/veriscript/tree/main/contracts )\n\nB. 出力: 各機能のインライン コードの文書を提供して下さい\n受諾条件:各スマートコントラクト機能にインラインコードのドキュメントが提供されます\nEvidence: インラインコードのドキュメントは、プロジェクトのリポジトリに存在するスマートコントラクトファイルの中で https://github.com/CardanoProphet/veriscript で見ることができます(詳細は https://github.com/CardanoProphet/veriscript/tree/main/contracts )\n\nC. 出力: 「ビルド」セクションでドキュメントを更新し、スマートコントラクトの構築方法を説明します。\n受諾条件:ドキュメントには、ビルドの指示を含む新しい「ビルド」セクションが含まれています\n証拠: ドキュメントの新しい「ビルド」セクションは、https://github.com/CardanoProphet/veriscript のプロジェクトリポジトリ(https://github.com/CardanoProphet/veriscript/blob/main/contracts/README.md )で利用できます"
+    },
+    {
+      "no": 3,
+      "promise": "・Webサイトのバックエンドコードを開発し、必要なデータを保存し、ユーザーリクエストを処理する\n・ウェブサイトのフロントエンドの設計と実装により、ユーザーフレンドリーなインターフェイスを提供して、検証を表示および提出\n・展開を容易にし、プロジェクトの再現性を確保するDockerfileを作成",
+      "criteria": "・問題なく開発機でWebサイトのバックエンドをローカルで実行できます\n・問題なく開発機でホームページのフロントエンドをローカルで動かすことができます\n・Dockerfile は、コアアクション(アテステーション、カウンターアテッタステーション、署名者トークンのマイニング)を実行できるサービスの両方を設定します",
+      "report": "A. 出力: 必要なデータを保存し、ユーザーの要求を処理するためにウェブサイトのバックエンドコードを開発する\n受諾の基準:ウェブサイトのバックエンドは問題なく開発機械でローカルに動くことができます\nEvidence: プロジェクトのバックエンドコードは、https://github.com/CardanoProphet/veriscript のオープンソースリポジトリ(https://github.com/CardanoProphet/veriscript/)で公開されています。\n\nB. 出力:ウェブサイトのフロントエンドを設計し、インストールして、ユーザーフレンドリーなインターフェイスを表示し、検証を提出する\n受諾の基準:ウェブサイトのフロントエンドは問題なしで開発機械でローカルで動くことができます\nEvidence: プロジェクトのフロントエンドコードは、https://github.com/CardanoProphet/veriscript のオープンソースリポジトリ(https://github.com/CardanoProphet/veriscript/)で公開されています。\n\nC. 出力:展開を容易にし、プロジェクトの再現性を保障するためにDockerfileを作成して下さい\nアクセシビリティ基準: Dockerfile は、コアのアクションを実行できるように、両方のサービスを設定します(Attestation, Counter-Attestation, 署名者トークンのマイニング)\nEvidence: Dockerfile は、https://github.com/CardanoProphet/veriscript のオープンソースリポジトリで公開されています(詳細は、Docker-compose.yml, Frontend Dockerfile, Backend Dockerfile )\n\n追加:\nM2マイルストーンのレビューでは、トランザクションハッシュがこの作業の証明としてM3で提供するように依頼しました。 すべてのコアアクションのオンチェーンTXハッシュは次のとおりです。\n署名者のトークンの最小化: 627083e7752b59b9c86dd27bf3cd2c022da92aca29efc824aae5adbb0a968f48\n作成の証明/カウンター ステーション: 5e0221a2c191279426af3f5eba0fcd28674a0dbe5ad5e812a9e06935df8541f3\n既存の Attestation/Counter-Attestation: c12624324ce7829aa48790af85115821eff3de6a0812bcdfe96d3a053956dd68\nRetireの証明: ee0f82273f2a17b5f8a1e38f1c488fc2075e38e6a2b24be5afb02263dbb399b9"
+    },
+    {
+      "no": 4,
+      "promise": "・VeriScript プラットフォームを https://veriscript.org にデプロイする\n・公開ユーザーテストを実施\n・ユーザーフィードバックに基づくプラットフォームの最適化\n・最終クローズアウトレポート\n・最終クローズアウト映像",
+      "criteria": "・VeriScript プラットフォームは https://veriscript.org で公開されているため、パフォーマンスの問題やエラーの読み込みは行いません。\n・テスト参加者/フォーム回答者数が10人以上で、平均的なユーザー満足度(フォームのスコアによるコミュニケーション)は75%以上です。\n・バグ報告や改善依頼の解決\n・最終報告書は一般公開\n・クローズアウトレポートは、セットアップの詳細やマイルストーンの達成など、スタートからフィニッシングまでのプロジェクトを明確に説明します。\n・Catalyst のドキュメントで指定された要件に対応: https://docs.projectc",
+      "report": "A. 出力: VeriScript プラットフォームを https://veriscript.org にデプロイする\n受諾条件:VeriScriptプラットフォームは、パフォーマンスの問題や読み込みエラーなしでhttps://veriscript.orgで公開的にアクセス可能です。\n証拠: VeriScript プラットフォームへのリンク: https://veriscript.org\n\nB. 出力: 公的なユーザー テストを実施して下さい\n受諾条件:テスト参加者/フォーム回答者数が少なくとも10であり、平均的なユーザー満足度(フォームのスコアを介して通信)は少なくとも75%です。\n証拠: テストに参加したユーザーからのフィードバックを含むXLSファイルへのリンク、またアンケートGoogleフォームへのリンク。 XLSへのリンク: https://github.com/CardanoProphet/veriscript/blob/main/feedback form responses.xlsx/ CSV バージョン: https://github.com/CardanoProphet/veriscript/blob/main/feedback form responses.csv 調査へのリンク: https://forms.gle/1Y3S2MyXoXQzdmw5A + 最後のPoAの提出フィードバックに基づいて、ここに追加の回答の直接Googleスプレッドシート輸出があります。 https://docs.google.com/spreadsheets/d/11y4Mwjv7PlvvC6UfA7F5pohOZ 9rZXqg-4wJMEW3wzA/edit?usp=sharing\n\nC.出力:ユーザーのフィードバックに基づいてプラットフォームを最適化\n受諾条件:報告されたバグおよび改善の要求は解決されます。\n証拠: 最適化レポートへのリンク、ユーザー提案、問題報告、およびそれらがどのように対処されたかを含みます。 最適化レポートへのリンク: https://github.com/CardanoProphet/veriscript/blob/main/optimization report.md\n\nD. 出力:最終クローズアウトレポート\n受入基準:最終クローズアウトレポートが公開\nEvidence: 媒体で公開された最終クローズアウトレポートへのリンクと、https://x.com/CardanoProphet で X で共有しました.クローズアウトレポートへのリンク:https://medium.com/@cardanoprophet/veriscript-project-close-out-report-7a1bb3b71ef8 X: https://x.com/CardanoProphet/status/2058894640586051927 + 最後のPoAの投稿フィードバックに基づいて、プロジェクトクローズアウトレポートのPDFバージョンは次のとおりです。 https://gith"
+    }
+  ]
+}

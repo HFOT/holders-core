@@ -1,0 +1,76 @@
+{
+  "title": "DripDropz Open Source Voting Gated Polling",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 42000,
+      "promise": "・Milestone 1: UX/UI Implementation (1 Month)\n・Research Existing Solutions\n・Build User Journey/User Experience\n・Implement UI in Figma",
+      "criteria": "UX/UI Implementation will have a deliverable of a UI created in a Figma document and shared publicly with the community.",
+      "report": "The goals for Milestone 1 were as follows:\n・Milestone 1: UX/UI Implementation (1 Month) - The activities listed here took place in the last thirty days. \n・Research Existing Solutions - We evaluated polling applications. We examined JD Powers, as well as several open source simple polling systems.\n・Build User Journey/User Experience - We walked through our existing user journey, and identified the appropriate locations to implement the polling system both in the administrative areas, as well as the front end.\n・Implement UI in Figma - The UI is implemented in Figma according to the needs of our lead developer.\n\nThere was concern from one of the reviewers in the previous round of approvals that they did not see the user journey, and did not understand the changes in the UI. Our designers are suggesting a new UI improvement to our tooling. We added the user journey to the Figma, and we brought back both the old UI and the new UI so that reviewers can see both.\nOur deliverable is a publicly available Figma document. That document is located here: https://www.figma.com/file/9ITnw8wdzGQxt7ZPy3Ooik/DripDropz-Open-Source-Voting-Gated-Polling?type=design&node-id=0%3A1&mode=design&t=t44G7XHIMakkmhp9-1",
+      "kinds": [
+        "other"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 36050,
+      "promise": "・Milestone 2: Code Implementation (2 Months)\n・Update Admin interfaces to create polls\n・Update public interfaces to participate in Polls\n・Test separately from the live version of the current iteration.",
+      "criteria": "Code Implementation will see a Pull Request created and updated with the features described above.",
+      "report": "For this milestone we needed to provide a pull request with the new feature. \nWe also provided a Twitter thread describing the new feature: https://twitter.com/DripDropz_io/status/1748783314863837355\nThe Pull Request is located here: https://github.com/DripDropz/onchain-voting/pull/33",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "25",
+      "cost": 36050,
+      "promise": "Milestone 3: Documentation and Testing (1 Month)\nAcceptance / User testing with at minimum one community using the system\nDocumentation will be updated to show the new features",
+      "criteria": "Documentation and Testing will show documentation updates within the code that describe the new functionality.",
+      "report": "Proof of Achievement – Milestone 3 \nThis is another resubmission for one of two reviewers. \nDocumentation and Testing\nA. Output: Updated feature documentation describing the gated polling functionalities\nAcceptance criteria: Documentation reflects all new features and provides clear guidance for users and administrators. It must be visible in the repository and show the new workflows.\nEvidence: https://github.com/DripDropz/onchain-voting/blob/main/docs/Feature_Documentation.md\nAdditional commit history: https://github.com/DripDropz/onchain-voting/commits/main/docs/Feature_Documentation.md\nB. Output: User testing completed with a live community (previously refused)\nAttention: Reviewer requested a video walkthrough. That video can be reviewed at https://drive.google.com/file/d/1DLfYUXHMEEvy048IG17Md03foMdy2LN3/view?usp=sharing\nCopy and paste the above link into your browser window to play it. This video goes in depth to cover the issues mentioned by the reviewer in sections B and E \nAcceptance criteria: At least one community must be able to use the governance features in a real-world setting. \nEvidence: RESI / Living Green Urban Farms governance site using this system: https://vote.resi.works/ (hosting/server issues resolved - considerable time has traversed since this was being actively used, but anyone with RESI can use the gated polling feature. \nAnd now additionally: DripDropz has deployed this code with many improvements and updates at onchain-vote.duckdns.org\nIf you would like tDrip for testing gating on preprod, please send Danny a preprod address and I will provide you with that asset.\nC. Output: Public explanation of new functionality \nAcceptance criteria: A publicly visible post must explain the updates, reference the documentation and show where to find the work.\nEvidence: Twitter/X announcement: https://x.com/DripDropz_io/status/1993069994188341331?s=20\nD. Output: Source code and documentation tracked through version control\nAcceptance criteria: Reviewers",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "26",
+      "cost": 10000,
+      "promise": "・Final Milestone: Release (1 Wk)\n・Resolve any bug fixes, issues discovered during testing\n・Pull Request will be merged into main.",
+      "criteria": "Release will include the pull request merged back into the main code base, with functionality available to all.",
+      "report": "A. Output: Final release including resolved issues from testing and gated polling updates\nAcceptance criteria: Issues discovered during testing have been addressed and included in the final release. The updated functionality is stable and incorporated into the codebase.\nEvidence:\nPull Request containing fixes and updates\nhttps://github.com/DripDropz/onchain-voting/pull/79\nDetailed changes included in this release\nhttps://github.com/DripDropz/onchain-voting/pull/79/changes\nB. Output: Pull request merged into the main code base\nAcceptance criteria: The completed work is merged into the main branch, with functionality available to all users.\nEvidence:\nMain branch commit history showing merged pull request\nhttps://github.com/DripDropz/onchain-voting/commits/main\nThe commit history clearly reflects the merge of the gated polling updates and associated fixes into the main branch, satisfying the requirement that the release is complete and publicly available.\n\n*Note on Wallet Connectivity\nThe application is deployed across two environments which require the wallet to be set to the correct network.\nMainnet deployment\nhttps://vote.resi.works/\nRequires wallet to be set to Mainnet\nPre-prod deployment\nhttps://onchain-vote.duckdns.org\nRequires wallet to be set to PreProd\nIf a wallet is connected to the incorrect network, connection and transaction functionality will not operate correctly.\nWe have confirmed full functionality using Eternl (verified complete CIP-30 adherence) wallet across both environments. Some wallet providers may have limitations or inconsistencies depending on network configuration. Some wallets may not be completely adhering to CIP-30 and would be outside the scope of this project.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 10
+    },
+    {
+      "no": 5,
+      "month": "27",
+      "cost": 29400,
+      "promise": "A closeout video will be created to show the new feature added to the https://openchainvote.com/ demonstrator site in action. A closeout report will be generated.",
+      "criteria": "A reviewer can view the closeout video on youtube.\nA reviewer can read the closeout report, formatted as per closeout requirements.",
+      "report": "Project Close-out Report\nhttps://drive.google.com/file/d/1teg38ZTsY29gr6i9UG6uEgZRCOPBjGZZ/view\nLink to Close-out Video\nhttps://youtu.be/-30qFQk3iK8?si=fyvp93RNIfnW7RiW\nName of project and Project URL\nDripDropz Open Source Voting Gated Polling\nhttps://projectcatalyst.io/funds/10/products-and-integrations/dripdropz-open-source-voting-gated-polling\nProject Number\n1000070\nProject Managers\nChris Hockaday and Lloyd Duhon\nDate project started\n2023\nDate project completed\nApril 2026\nProblem Statement\nCardano lacked an accessible and standardized way to conduct gated polling based on verifiable wallet ownership. While voting mechanisms existed, there was no widely available system that allowed communities to restrict participation based on token or NFT ownership in a flexible and reusable way.\nThis created a gap in governance tooling where participation could not be easily aligned with stake, membership or asset-based identity. Without gating mechanisms, polls could not reliably reflect the structure or intent of a given community.\nProposed Solution\nThis project delivered a gated polling system as part of the DripDropz open source voting stack. The system enables communities to create polls with rule-based eligibility using wallet verification and token ownership.\nParticipation can be restricted based on specific assets, allowing governance models to reflect real membership, stake or role-based access. The system integrates directly with wallet authentication and provides a seamless user experience for both poll creation and participation.\nThe solution was designed to be modular, reusable and easily deployable without requiring custom development.\nChallenge KPIs and How the Project Addressed Them\nThe project aligns with the goals of the Products and Integrations challenge by delivering open source infrastructure that enables real world blockchain usage.\nWallet-based identity ensures that participation is verifiable and aligned with decentralized principles. Token gating allo",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 30,
+      "cut": true
+    }
+  ]
+}

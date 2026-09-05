@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・Cardanoメインネット上でウォレット残高の問い合わせを処理できる機能的なMCP(Model Context Protocol)サーバ\n・インストールと設定手順の基本的なAPIドキュメント\n・MITライセンスでGitHubに公開されたコード",
+      "criteria": "・MCPサーバーはMCPプロトコルを用いたウォレット残高照会に正しく対応\n・オンチェーンデータと100%の精度(Cardanoブロックチェーンエクスプローラー/ウォレットで検証可能)\n・GitHubリポジトリには、作業セットアップ手順と設定ガイドが含まれています",
+      "report": "A. 出力:Cardanoメインネットでウォレット残高の問い合わせを処理する機能的なMCP(Model Context Protocol)サーバー\n受諾条件: MCP サーバーは、MCP プロトコル + 返された残高がオンチェーンデータと 100% の精度で一致 (Cardano ウォレットで検証可能)\nEvidence: ClaudeデスクトップアプリでMCPを使用してビデオとVESPRウォレットの結果をサイドで表示 https://drive.google.com/drive/u/0/folders/1xMaT7E4jddI1imP2urSlK0TUqaUGNWY4\n\nB. 出力:インストールと設定の指示による基本的なAPI文書\n受諾条件: GitHub リポジトリには、作業セットアップ手順と設定ガイドが含まれています\n証拠: https://github.com/vespr-wallet/cardano mcp/blob/main/README.md\n\nC. 出力: MIT ライセンスの下で GitHub で公開されたコード\n受諾条件: MIT ライセンスの下で GitHub で公開されたコード\n証拠: ライセンス: https://github.com/vespr-wallet/cardano mcp/blob/main/LICENSE\n証拠:Repoリンク:https://github.com/vespr-wallet/cardano mcp\n\n注意: テストでは、次の API キー RxW$5pviBwG2@FnYD9M#^5wQRJA6 を使うことができますが、ここでは公に共有しなければならないので、それは大幅に制限されていることを念頭に置いています(毎分10リクエスト、1日250 reqs)"
+    },
+    {
+      "no": 2,
+      "promise": "追加のCardanoデータエンドポイントでMCPサーバーを拡大:\n・トランザクション履歴\n・トークンの詳細と価格\n・トークンの取引\n・ウォレットのステーキング情報\n・ADAハンドルの解像度\n・オンチェーンメタデータ検索",
+      "criteria": "・新しいエンドポイントは、オンチェーンの状態とパブリックインデックスをマッチングする正確なデータを返す\n・トークン価格の問い合わせは、他のソース(TapTools、VESPRなど)と密接に一致します。\n・ADAハンドルの解像度は正しいウォレットアドレスを返します\n・サーバーは、パフォーマンスの問題なく同時クエリを処理する",
+      "report": "Claudeデスクトップアプリを介して使用を示すデモビデオ:\n・トランザクション履歴データ:https://drive.google.com/file/d/17V0aL 2QoCtLKjfAFTooa9FotBQ89K/view?usp=drive link\n・トークン情報:https://drive.google.com/file/d/1viacacaczycFUwsdH42uCy89snNEL3FCPv/view?usp=drive link\n・取引トークン: https://drive.google.com/file/d/1ESl5SHP YUOXWpoXc1aY4o0PzmPoWccC/view?usp=drive link\n・ウォレット情報:https://drive.google.com/file/d/16xoflIfNypFgovsbdMoVzTZlUCsL7bf6/view?usp=drive link\n・ADAハンドル解像度:https://drive.google.com/file/d/1egGR27hfb3fN8UYd8ffRSKd7UPM1vfeG/view?usp=drive link\n・アセットオンチェーンメタデータ https://drive.google.com/file/d/1uavmO6RcCEH8s8CnKzsYv5sBfUOXckg/view?usp=drive link\n\nログによるスクリーンショットは、パフォーマンス劣化のない同時クエリ処理を実証するために提供されます。 これらの呼び出しは、システムを強調テストするように設計されたいくつかのスクリプトから行われます。\n・https://drive.google.com/file/d/1JmqCkxhLP3vM72t4f644t0YUVKk4ElAk/view?usp=drive link\n・同時クエリに使用するスクリプトは、Github:https://github.com/vespr-wallet/cardano mcp/blob/main/scripts/stress-test.ts で利用できます。\n・Githubで更新されたコードは、Githubで利用できます。 https://github.com/vespr-wallet/cardano mcp/tree/main\n\n注1: テストでは、次の API キー RxW$5pviBwG2@FnYD9M#^5wQRJA6 を使用できますが、ここでは公に共有しなければならないので、それは大幅に制限されていることを覚えておいてください(毎分10リクエスト、一日あたりの250リキュー)\n注2: ストレステストスクリプトを実行すると、速度制限を回避する API キーが必要です。 DDOS VESPRを全体として使用できるため、このようなキーは提供できません。 (ストレステストの任意の種類は、監督の下で内部に走ることを意味する)"
+    },
+    {
+      "no": 3,
+      "promise": "・mcp.vespr.xyz にデプロイされた、MCP サーバの生産性向上\n・料金制限\n・セキュリティ強化による認証\n・性能最適化\n・コード品質改善(ロギング+コメント+技術によるクリーンアップ)\n・サーバー監視機能\n・健康診断\n・稼働時間追跡が可能(テスト中に99%以上をターゲット)",
+      "criteria": "・https://mcp.vespr.xyzで公開エンドポイント\n・作品の制限を正しく行う(通常の使用をブロックせずに乱用を防止する)\n・エラー処理が正しく機能する\n・パフォーマンスは2秒未満で、ほとんどの問い合わせに対応\n・2週間以内に99%以上のサーバー稼働時間\n・書類選考完了",
+      "report": "稼働時間/健康監視ダッシュボードのスクリーンショットを少なくとも2週間の99%以上稼働時間\n・screenshot-uptime.png\n・リアルタイムデータチェック:\n・https://stats.uptimerobot.com/bT2zdIhjmh/802993505\n・https://mcp.vespr.xyz/health\n\nサーバーの問題やダウンタイムに関するメールアラートのスクリーンショット\n・ダウンタイム.pdf\n\n正しく機能する認証の証拠(未認証リクエストを注入)\n・パブリックMCP:パブリックMcp-connected.mp4\n・APIキーなし: no-api-key.mp4\n\nmcp.vespr.xyz でライブサーバへ公開\n・ステータスの確認: https://mcp.vespr.xyz/health\n・設定方法と接続方法の説明: https://github.com/vespr-wallet/cardano mcp/blob/main/README.md#option-1-hosted-mcp-no-installation-required\n\nClaudeデスクトップアプリで実行された複数のAIクエリを表示するデモビデオ\n・asset metadata.mp4\n・token info.mp4\n・trending tokens.mp4\n・resolve ada handle.mp4\n・token metadata.mp4\n・wallet info.mp4\n・transaction history.mp4\n\n生産準備構造を反映した更新されたGitHubリポジトリへのリンク\n・https://github.com/vespr-wallet/cardano mcp\n\nコミット履歴は、パフォーマンスとセキュリティの改善が行われたことを確認するために公開されます\n・https://github.com/vespr-wallet/cardano mcp/commits/main/\n\nNote: ホストされているMCPサーバーをAPIキーなしで使用できます。 API キーがなければ、1 分あたりの 10 リクエストのレート制限、1 日あたりの最大 250 (IP アドレスごとに) があります."
+    },
+    {
+      "no": 4,
+      "promise": "・最終クローズアウトレポート\n・MCPサーバーの動作を実証し、コミュニティの影響を強調する最終クローズアウトビデオ\n・生産サーバーに適用される最終バグ修正または精製に関する文書化",
+      "criteria": "・最終報告書は一般公開\n・Final closeout ビデオは、MCP サーバーの実際の使用状況と、完全な機能を示す公開されています。\n・最終的なバグ修正や修正をgithubリリースで文書化(最終タッチ/フィックスが必要なもののみ)",
+      "report": "最終報告書へのリンク\n・https://drive.google.com/file/d/1RR-KPcdlBWCrSLomL4 hDCsYTe9SXWX0/view?usp=sharing\n\nClaudeデスクトップアプリを介してMCPサーバーの実際の使用を示す最終クローズアウトビデオへのリンク\n・https://www.youtube.com/watch?v=pTkNkYWCY1U\n\n最終的なバグ修正や修正の github リリースへのリンク (最終タッチ/フィックスが必要なものを見つけた場合のみ)\n・最終リリースリンク(v0.1.1):https://github.com/vespr-wallet/cardano mcp/releases/tag/v0.1.1\n・フォローアップバグ修正・修正不要"
+    }
+  ]
+}

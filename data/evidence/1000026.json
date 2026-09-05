@@ -1,0 +1,72 @@
+{
+  "title": "Cardano DEX Protocol with DIDs Layer",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 58500,
+      "promise": "・Review MuesliSwap DEX protocol and Atala Prism's digital identity system\n・Design integration architecture for decentralized identity layer\n・Define smart contract infrastructure for DID verification\n\nDeliverables:\n・Integration architecture: A detailed design outlining how Atala Prism's digital identity system will be integrated into the MuesliSwap DEX protocol.\n・Smart contract infrastructure: Definition of the necessary smart contracts and their functionalities for DID verification.\n\nIn the original proposal we mention establishing communication channels with atala prism (this has already been done)",
+      "criteria": "Document should provide clear technical guidance and describe how the different features will interact",
+      "report": "Both the integration architecture document and the smart contract specifications can be found in the following report: https://drive.google.com/file/d/12JAXt9wLe9PwvxHKYV6KGABGhV-exkc-/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 45000,
+      "promise": "・Develop and test smart contracts for DID verification\n・Conduct internal testing for functionality and compatibility\n・Address any security or performance issues",
+      "criteria": "Proof of transactions showing how DIDs are required to perform swaps",
+      "report": "All information and relevant requirements can be found in the README file of our project repository which we have now open-sourced\nhttps://github.com/MuesliSwapTeam/did-dex-layer\n(Notes to reviewers: Thanks for the feedback. We adjusted the README.md to add an additional CANCEL transaction proof)",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "17",
+      "cost": 30000,
+      "promise": "・Conduct external beta testing with selected users and businesses\n・Gather feedback on usability, effectiveness, and compliance\n・Iterate on the protocol based on received feedback\n・Refine user experience and address identified issues",
+      "criteria": "Users reporting that the protocol works and document outlines how we have to improve the protocol",
+      "report": "Dear Reviewers,\nWe have now completed the beta testing and implemented all feature requests. The code is fully open-source and available at: https://github.com/MuesliSwapTeam/did-dex-layer.\nIn addition, we have written and released the testing report here: https://github.com/MuesliSwapTeam/did-dex-layer/blob/main/report/beta-testing.md. All required changes identified during the testing phase have been implemented and are included in the GitHub repository (you can find a detailed list of these changes in the beta-testing report).\nFurthermore, we have updated our README.md (https://github.com/MuesliSwapTeam/did-dex-layer/blob/main/README.md) to reflect the latest changes. Here is a link to the git commit showing the newest changes https://github.com/MuesliSwapTeam/did-dex-layer/commit/e86bad4271c27c7824d74db3f52e9d6c97bdd6b9",
+      "kinds": [
+        "code"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "29",
+      "cost": 30000,
+      "promise": "Outputs:\n・Finalized DEX protocol: A production-ready DEX protocol with a decentralized identity layer, ready for deployment and commercial use.\n・Documentation and user guides: Comprehensive resources that provide clear instructions and guidelines for businesses and users to interact with the protocol.\n・Commercial launch strategy: A documented plan outlining the marketing, outreach, and adoption strategies for the protocol's commercial launch.\n\nIntended Outcomes:\n・Production-ready protocol: Finalizing the DEX protocol ensures a stable, secure, and fully functional solution for decentralized trading with KYC compliance.\n・User empowerment: Documentation and user guides empower businesses and users to confidently engage with the DEX platform and utilize the DID functionality effectively.\n・Effective commercial launch: A well-planned commercial launch strategy facilitates adoption, drives user engagement, and maximizes the impact of the protocol within the Cardano ecosystem.",
+      "criteria": "Video showcasing the complete DEX protocol and its integration with DIDs.",
+      "report": "Dear Reviewers,\nWe have continued our development work, and you can again find the repository here: https://github.com/MuesliSwapTeam/did-dex-layer. We extended the README with an additional user guide: https://github.com/MuesliSwapTeam/did-dex-layer/blob/main/README.md, and also added a guide explaining what our test cases cover and how to use them: https://github.com/MuesliSwapTeam/did-dex-layer/blob/main/TEST_USER_GUIDE.md.\nMoreover, we prepared an initial launch strategy, which we compiled into a PDF document: https://drive.google.com/file/d/166QcECPrCFxUzUZlfzIv1FZifTI5GT44/view?usp=share_link.\nUpdate: We rewrote some of the instructions in the README and fixed several scripts for better reproducibility. Moreover, we created an additional video explaining our DID order book contracts: https://drive.google.com/file/d/1HMivfdhfc0I5o187HRhsZYQ82NnvWffB/view?usp=sharing. Moreover, to address some of the concerns regarding the previously used minting website we have now added an additional minting script that treats the DID minting as a black box and helps to verify the correct usage of the DID NFTs in the orderbook. \nThank you very much.\nBest regards,\nMuesliSwap Team\n---\nHere some example of transactions we created with our README.md commands\n・Test Token Mint https://preprod.cexplorer.io/tx/eecb4bfcc4062841642aa1c28c84fb65c7b852a620d3150b036524d070832994\n・DID Mint for Trader 1 https://preprod.cexplorer.io/tx/805e4514bc580413a28cdd58c7762b0ee252b78566f3ca4d3701a3be174bc4d1\n・New Order Trader 1 https://preprod.cexplorer.io/tx/7f4f69e3a6050ce64450aff03f15d49535ae30f6896fe97cbcac1f208819bff1\n・Cancellation trade (requires DID) https://preprod.cexplorer.io/tx/9bbd326c481a746c05ae5f74605f097279ff1b1b0b8c25741a2fc3726fff986f\n・Update min-fill amount: https://preprod.cexplorer.io/tx/d84b3c4d11f72c5575421160e2522b97ae82bfbcd823b52318c73843e85aeaf7",
+      "kinds": [
+        "chain",
+        "code",
+        "doc"
+      ],
+      "links": 20
+    },
+    {
+      "no": 5,
+      "month": "30",
+      "cost": 31500,
+      "promise": "Outputs:\n・Deployed DEX protocol: The protocol is successfully deployed on the Cardano blockchain, accessible for users and businesses to utilize for decentralized trading.\n・Technical documentation: Detailed documentation that provides insights into the integration process, smart contract functionalities, and operational guidelines for developers.\n・Best practices and lessons learned: Documented knowledge that can be shared with the Cardano community and the wider blockchain industry to facilitate future developments.\n・Video and Report showcasing the achievements made in the project and what challenges we had (part of final milestone) -> i..e Final close-out report, Final close-out video\n\nIntended Outcomes:\n・Live and accessible protocol: Deployment ensures the protocol is available for use, enabling decentralized trading with a secure and compliant KYC layer on the Cardano blockchain.\n・Knowledge dissemination: Technical documentation and best practices sharing contribute to the broader blockchain community's knowledge and understanding of integrating KYC functionality in decentralized protocols.\n・Continuous improvement: Lessons learned and best practices allow for ongoing enhancement",
+      "criteria": "・Functional product and documentation that are industry standard quality \n・Final close-out report publicly available\n・Final close-out video",
+      "report": "A. Output: Deployed DEX protocol: The protocol is successfully deployed on the Cardano blockchain, accessible for users and businesses to utilize for decentralized trading.\nEvidence: We have developed a fully functional frontend for our DID DEX, which integrates with the implemented DID order book smart contracts and operates on the Cardano Preprod network. The application is available at: https://preprod.did-dex.muesliswap.com/. The frontend is supported by a backend service, which can be accessed here: https://preprod.did-dex-api.muesliswap.com/docs. \nFor your convenience we have also created an additional walk-through video that demonstrates the interface: https://drive.google.com/file/d/1mq16V4TZ6rRvxLvE1EHAXECt3BDn7mle/view?usp=sharing \nAdditionally, we have prepared example transactions on the Preprod network for your convenience.\n・DID mint trader1: https://preprod.cardanoscan.io/transaction/fe3e5e11da2cd707230e69da36c28391a2c47e7a129942ed850c12cc0f74d15e\n・DID mint trader2: https://preprod.cardanoscan.io/transaction/6f56cf20811b9a091900d4e1c289f1aa2ea7b87305280e8e1d3cc574c2bdf0e2\n・Place order: https://preprod.cardanoscan.io/transaction/18520883a10376917cabcfea216cddc537ecef732320a8d464c8b6159d4909ec\n・Fill order: https://preprod.cardanoscan.io/transaction/b1cdfded1f2201d8b207fbba4ef87c359f4f28dc7b2219c3039d470b092bc215\n・Cancel/withdraw filled return: https://preprod.cardanoscan.io/transaction/54736db24f9b62a70eaf1e5dd70065a5396fbfb20a6063c2c36b011a8b10907e\n\nAll code can be found in our open-source repository: https://github.com/MuesliSwapTeam/did-dex-layer\nB. Output: Technical documentation: Detailed documentation that provides insights into the integration process, smart contract functionalities, and operational guidelines for developers.\nEvidence: We have created a full technical documentation outlining all our design decisions, explanation about the codebase and trade-offs https://drive.google.com/file/d/1LfpeXjzzUgyuvI8nEh3P2OE3jJtogJ5y/view\nC. Output: Best",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 26,
+      "cut": true
+    }
+  ]
+}

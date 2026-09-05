@@ -1,0 +1,75 @@
+{
+  "title": "PubWeave: Academic Publishing",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 60000,
+      "promise": "For PubWeave, we will be using the same strategy as our latest project (veritheum.intellart.ca) currently undergoing testing preparing for deployment on testnet, which has worked well for us.\n\nThe first step described in this milestone is to focus on UI and backend infrastructure. As such, outputs are very straightforward:\n\n- Website deployment (MVP-style)\n- Breakdown of the different components making up the website\n- Blog posts pertaining to progress and technical stack choice for the website\n- Blog posts continuing our science popularization series (blog.intellart.ca)",
+      "criteria": "Funding for this milestone is hefty (28% of total funds) allowing us to pay 2 full-time UI/backend/blockchain experts (contracts signed for 6 months).\n\nWe expect to have:\n- A fully functional website giving us a 'feel' of the UI with most components accessible\n- Different sections of the website:\n    . Home page\n    . Browse page\n    . Account page\n- 3 technical blog posts (one per month)\n- 3 additional science popularization blog posts (one per month)",
+      "report": "This is a re-submission. All the [updated] info is in this Google Doc:\nhttps://docs.google.com/document/d/1X0ESIB854-dv1m-whpJyt9KIeas-24qhT7M9GYwMjTM/\n\nMissing criteria pointed out by the reviewers have been addressed, namely:\n1) The scientific blogs: we now have 3 of them published post Fund9 acceptance.\n2) A section about technologies used and the reasoning was extended in the Google Doc.\n3) The register page is now fully functional on PubWeave.\n\nThe only part that has not been addressed is the monthly technical blogs. We felt comfortable postponing these for a few reasons:\n- We wished to focus on the development on the blog section of PubWeave.\n- We wanted to use PubWeave to publish our technical blogs for marketing purposes.\n- Writing the blogs is a tiny fraction of the resources used for building the website (1-2% of the funds were going to go to writing the blogs), so we assumed it was fair to ask the community to let us postpone them until after PubWeave is ready, which is very soon! (You can go see for yourselves: https://pubweave.intellart.ca).\n\nTo make up for the 3 blogs that were missed during that period, we are going to be writing them bi-weekly for the next 3 months, so that the total amount of blog articles is unchanged. And they will be published on PubWeave! We thank the reviewers in advance for their consideration.",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "12",
+      "cost": 60000,
+      "promise": "A natural continuation of the previous milestone. This one is where all parts come together and the infrastructure is integrated into the Cardano blockchain.\n\nVisually, not much will have changed, but functionality has drastically improved:\n- Wallets are integrated into the blockchain\n- Most of the testing done\n- Platform-specific Plutus scripts written and undergoing testing:\n    . Smart-contract-enabled incentives implemented for reviewing scientific articles\n    . Smart-contracts for ADA lockup in treasury-like fashion\n    . Post-publishing trigger mechanism for fund release from locked treasury",
+      "criteria": "Similar to previous milestone, funding for this milestone is hefty (28% of total funds) allowing us to pay 2 full-time UI/backend/blockchain experts (contracts signed for 6 months).\n\nWe expect to have:\n\n- 3 wallets (minimum) integrated to PubWeave\n- Smart-contract functionalities  testable on testnet (how many depends on progress)\n- 3 additional technical blog posts (one per month)\n- 3 additional science popularization blog posts (one per month)",
+      "report": "NOTE: As requested by the milestone reviewer, we have provided a demo in the form of a powerpoint presentation, with simple animations that compare the on-chain transaction with the actual code used to generate the smart contract, in addition to short explanations at each step of the process and two final bullet point concluding slides. Additionally, each slide where a transaction or part of a transaction are shown contains a link to the Cexplorer that can be explored in further details. Here is the link to the presentation: https://www.dropbox.com/scl/fi/n4bymvow8o6o9t7wyjhtg/PubWeave-Treasury-SC-PoC.pptx?rlkey=zh4gph4466y5gx2u1he1t6vuy&dl=0.\nFirst, here are the 3 science popularization blog posts required for each milestone.\n・https://www.pubweave.com/blog/biotechs-crispr-gene-editing-revolution\n・https://www.pubweave.com/blog/deconstructing-cannabis-insights-from-science\n・https://www.pubweave.com/blog/cannabis-stocks-navigating-the-green-wave\n\nNext, as agreed during the previous PoA, we have published 6 progress/technical (3 for the last PoA and 3 for the current one). It took (much) more time than expected due to reasons that were communicated with the community through our monthly reports and in more detail with the Catalyst Team through e-mail. The important thing is that as of now, we are now back on track! We have (hopefully) overcome most of the major hurdles that were holding us back. \n・https://www.pubweave.com/blog/breaking-barriers-the-quest-for-accessible-science\n・https://www.pubweave.com/blog/rethinking-science-funding-a-complementary-paradigm\n・https://www.pubweave.com/blog/intellarts-technology-stack\n・https://www.pubweave.com/blog/open-science-marketplace-bridging-two-worlds\n・https://www.pubweave.com/blog/pubweave-collaborative-preprint-text-editor\n・https://www.pubweave.com/blog/blockchain-meets-scientific-reviews\n\nThe publication of these blogs allowed us to test PubWeave in a real-case scenario, fix bugs as we progressed and make UI/UX optimizations.",
+      "kinds": [
+        "chain",
+        "other"
+      ],
+      "links": 27,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "14",
+      "cost": 40000,
+      "promise": "Everything up to this point has been built and connected together, time to work out the kinks, test smart-contract functionalities and deploy on testnet.\nOur experience with our current ongoing project (Veritheum, as of October 2022) has indicated that this step of the process (testing and setting up) needs a significant chunk of project development time and funds. This is when surprises happen and where planning is as simple as deciding to keep funds on the side to be able to get to the finish line.\nAs such, it is hard to predict at this time what the details of the outputs will look like. Globally, we should get a functioning dApp on testnet.\nAdditionally, a big chunk of funds will be allocated to social media growth and outreach. Outputs include public events attended, potential on-boarded users and social media traction.",
+      "criteria": "A fully deployed and functional PubWeave on testnet is expected at the end of this milestone:\n・Working product on testnet (yes/no)\n・Social media accounts (twitter and blog) growth (100s of followers/readers)\n・3 additional technical blog posts (one per month)\n・3 additional science popularization blog posts (one per month)",
+      "report": "NOTE: We fixed some small issues and smoothed UX components, and are including a screen recording showing a successful filling and spending from the treasury on testnet, next to an explorer window showing real-time updates. We have also resolved the issue that stopped the mail server from sending an email on account creation, which can be viewed on this other screen recording. This should be proof that the product is functional on testnet, and if reviewers wish they are welcome to test it live and share feedback. We also continue to solve bugs and enhance the overall experience, of course.\nStart of the initial submission including updates:\nWe would like to preface this PoA with a quick note regarding our project's timeline. Back in November, we requested a timeline revision which was granted to us by the Catalyst team. PoA #3 was to be submitted in January this year, PoA #4 in March and Final Milestone in April. At the beginning of the year, we decided to run all steps in parallel to speed-up completion of this project. We were aiming to communicate this during a monthly report but did not get a chance to do so since it was eliminated from the process. But we are almost at the finish line! PoA #3 (this one) and #4 are completed and we only need one last push to deploy on mainnet and complete this project. We were hoping to submit everything today including the close-out report, but due to lack of funds we had to postpone the project close-out report to the end of May (we don't want to rush mainnet launch after all).\nNOTE: Here is a screenshot of the URL (https://www.pubweave.com) of our website. We plan to resubmit POA #4 as soon as we push out the 2 latest Open Science Blogs in the next week.\nLet's start.\nThe 3 science popularization blog posts for this milestone:\n・https://www.pubweave.com/blog/the-transformative-power-of-obesity-drugs\n・https://www.pubweave.com/blog/debugging-your-genome\n・https://www.pubweave.com/blog/lab-grown-organs-a-new-frontier\n\nThe 3 technica",
+      "kinds": [
+        "chain",
+        "other",
+        "social"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "16",
+      "cost": 40000,
+      "promise": "According to plan, at this stage, PubWeave is deployed on testnet, and onboarding/outreach is a continuous process. More blog articles continue to be written. We have a bigger public presence. Professional help with social media might be considered depending on in-house success and needs.\nConcurrently, we will have performed market-fit analysis and tokenomics research design. Incentive structures for participation and reward mechanisms described and formalized.\nAt the end of this stage, we expect:\n・Higher-rate social engagement\n・Strategic plan for the final phase\n・Updated market-fit report based on new users onboarded\n・Tokenomics model\n・Smart-contract adjustments based on research findings\n・Tests of new Plutus scripts on testnet",
+      "criteria": "These include:\n・Social media accounts (twitter and blog) growth (100s of followers/readers)\n・3 additional technical blog posts (one per month)\n・3 additional science popularization blog posts (one per month)\n・Multi-page report on updated market-fit with statistics\n・Multi-page tokenomics model with multiple scenarios and forecasts\n・Smart-contracts available in beta functionality",
+      "report": "New content: Following the reviewer's comments regarding the tokenomics model, we have added a blog article that serves as a sequel to the previous article and contains a detailed description of its different components: https://www.pubweave.com/blog/revenue_sharing_model_publishing.\nUpdate: This resubmission simply adds a comment to today's reviewer's decision. First of all, we thank you for your comments and due diligence on the matter. Second, we would like to state that we have absolutely no problem submitting a change request, as we have done so in the past. However, we do not see how a change request is applicable -- here's why: The deliverable clearly stated that a research-based tokenomics model would be submitted, with NO mention of a token launch. We never promised to launch a token, but only to formalize a tokenomics model and how it would fit with the rest of the industry, because we were never sure if this was a road we want to go down. Our first PoA submission for this milestone stated that we finally decided not to launch a token in the foreseeable future, and that prompted us to skip the tokenomics design. As requested by the reviewer, and we agreed, the tokenomics model was part of the milestone, which is why it ended up being part of our last submission a few days ago (A theoretical tokenomics model for Open Science). Now that we have completed it, we do not see any variation from the deliverables list. As mentioned, it is not clear to us what a change request would entail, but if the reviewer still judges that it needs to be submitted, we will of course do so. However, we would greatly appreciate a prompt reply and acceptance of this PoA to be able to move on and wrap up this project as soon as possible. Thank you for your cooperation.\nNOTE: We thank the reviewers for their work and have added all the required blog posts. The tokenomics report was written as a potential blueprint for how it would work if implemented. We would like to note that we",
+      "kinds": [
+        "chain",
+        "other",
+        "social"
+      ],
+      "links": 28,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "17",
+      "cost": 14800,
+      "promise": "A fully-functional portal for academics to want to publish in, where rewards and incentivized participation are attracting new users. Academics and researchers from all around the globe are being attracted to Cardano through PubWeave: a first of its kind onramp for scientists of all fields to want to use Cardano for their day-to-day professional life.",
+      "criteria": "Project is deployed on mainnet and activity is picking up. Final kinks are resolved and social traction is organic and exponential.",
+      "report": "Link to the portal: https://www.pubweave.com/\nUser participation report: https://www.pubweave.com/blog/marketing-strategies-for-an-online-publishing-platform\nPCR: https://www.pubweave.com/blog/pubweave-close-out-report-catalyst-fund-9\nPCV: https://youtu.be/Ecga56irC38\nWith this, we would like to thank Project Catalyst for granting us the opportunity to create PubWeave and get us to a stage where it is usable. Many thanks to Roberta and the whole Catalyst team for their support.",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "title": "Extend NFT sale & drop tools to support dropping more complex assets as required for onchain games",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Develop the core smart contract for the pre-order NFT with clear steps on how to deploy it and a simple UI for interacting with the contract (without Paima integration implemented yet).",
+      "criteria": "The smart contract and a simple UI to interact with it.",
+      "report": "--------------\nIn order to address the specific rejected review.\n・The entire code base was rewritten to EffectStream. \n・We only provided the old Paima links as reference, as the milestone includes references to Paima URLs, we wanted to be transparent about the features. We had actually implemented this in Paima, but we rewrote this catalyst entirely to match the new engine, and today's ecosystem changes. So the old code has not significance other than the disclosure.\n・The contracts are now available at: https://effectstream.github.io/docs/home/chains/contracts\n・The easy to start blog article: https://effectstream.github.io/docs/blog/nft-launchpad\n・The instructions to run this locally are at the end. We did not provide a live demo - to be fully transparent we could upload it to show it live (but is not part of the milestones) but a long-term live demo is not feassible, as it requires a backend and paid services. So we integrated a working local full stack of EVM + Cardano node, indexers, databases, etc that launch automatically so it can be tested and developed locally by just running `bun dev` . We don't want to provide links that will be dead in some time as most live demos in the crypto ecosystem.\n\n--------------\nNote: Above was not modified from last update.\n\n**Context:** Paima Studios merged into the Midnight Foundation, and Paima Engine was rebranded as EffectStream. We have rewritten the entire codebase from scratch - this is the third version. We listened to feedback, followed better practices, and improved overall quality. These events are why we are delivering now, but everything has been updated for the present. The smart contract code was extracted from the original `PaimaStudios/paima-engine/packages/contracts` to its own repository at `PaimaStudios/paima-preorder` for cleaner separation. The delivered solution also added Cardano (Aiken) support, exceeding the original EVM-only scope. Even though we have delivered with the separate `paima-preorder` repo,",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 20,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 88000,
+      "promise": "Paima app that interacts with the contract integrating core stateful functionality like creating and ending campaigns, seeing all ongoing campaigns and being able to contribute and see your contribution to a pre-order.",
+      "criteria": "A barebones Paima app that facilitates interacting with & tracking all ongoing presales, as well as showing user balances",
+      "report": "Brief\nThis milestone delivers the Preorder Launchpad: an EffectStream application built on top of the campaign contracts of Milestone 1. \nIt lets a creator create and end campaigns, lets anyone browse every ongoing presale and its catalog, lets buyers contribute by paying on-chain, and shows each wallet its own contributions and balances. All state is projected from on-chain events by a single EffectStream node. The headline improvement is on Cardano: creating a campaign is now a clone-and-publish step, and the Cardano sync is fast because it streams blocks through Dolos over UTxORPC instead of running a heavy full node.\n\n1. Video - walkthrough of all core flows \nhttps://youtu.be/DieQvTTTJUM\n\n2. Code - the app (frontend + backend) with run steps:\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/preorder\n\n3. Blog + Gif + How to Run\nhttps://effectstream.github.io/docs/blog/cardano-presale-launchpad\nTemplate README (full local-run instructions):\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/preorder/README.md\n\n----------------------------------------------------------------\nCOMMENTS AND NOTES\nContext Regarding the Branding:\nCatalyst Direction has reviewed and agreed on the following statement regarding this project and recorded under ticket #9527 (This is a summary)\n・Rebrand. Paima has rebranded as EffectStream and is part of the Midnight Foundation; links might now appear under the name of either of these entities. \n・Scope. For reviewers: milestones and deliverables should be evaluated against the approved acceptance criteria. The contents of each submission remain subject to reviewer assessment; examples or further implementations may reflect technical evolution of the Cardano ecosystem since approval \n・CrossChain: EffectStream is an open-source multi-chain framework focused on Cardano and Midnight, and the integration with other chains. Chain-swapping (e.g., to Cardano) is supported across the entire codebase and provided templ",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 88000,
+      "promise": "・Implement a fuller UI/UX based on our designs meant as the final look-and-feel of the app covering the core functionality set such as all the features mentioned in previous milestones and the ability to update pre-order amounts (note: extra features that will be added as part of milestone 4)\n\nNote that the combination of the previous milestones combined with this one consist of the MVP for the project, with milestones 4&5 being to build on top of this MVP",
+      "criteria": "・A presentable UI/UX instead of the barebones version implemented in the previous milestone.\n・UI/UX will cover all the core flows mentioned in the previous milestones as we as the ability for users to update their pre-orders",
+      "report": "In response to the previous PoA Reviews\nThanks for the review, we have added the extra content as requested\nVideo Updated: https://www.youtube.com/watch?v=XncZ1A3iguI\nLive Page Demo: https://cardano-presale.pages.dev/\nThis page demo is the frontend with mock interactions, the full system requires a backend, and paid services to deploy in the long term.\nThanks!\n\nNote for reviewers: no changes after this line:\nPrevious Mesasage\n・As for the link, we are working with a marketplace, but the full announcement will be done on Milestone 5. We will not do a presale ourselves (we will not sell any item or tokens at the time) so we don't have an actual MVP link, as they depend on users. We will open the platform to users to do their own Presales. In this milestone we present the site/landing as both a Figma design, and a fully working standalone website. Each presale is it's own deployment, and can be launched with a few commands.\n・effectstream.github.io/docs/blog/nft-launchpad page is just a write-up, so that future users can get some context about the project.\n・Figma link were greatly improved, we added our design system, navigation, demo, admin, components, etc to the original document.\n・This milestone focuses on the look and feel, of the website. M2 on the core features, and M4 extending with Cardano native contracts and tech. M5 will deliver a integration with a partner. \n\nLINKS TO REVIEW\n1. Video - design system walkthrough + the implemented UI - no updates\nhttps://www.youtube.com/watch?v=XncZ1A3iguI\n\n2. Design - public Figma file and the interactive. Fully updated\nhttps://www.figma.com/design/sfwa1WjxHztxVbnUQ5YCtq/Preorder\nhttps://www.figma.com/proto/sfwa1WjxHztxVbnUQ5YCtq/Preorder?node-id=78-516&p=f&viewport=-74%2C84%2C0.33&t=y6sYs5quHNwgtqMx-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=78%3A516&page-id=47%3A7\n\n3. Code - the implemented frontend (ships with the Preorder template):\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 20,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 88000,
+      "promise": "Implement extra features including\n・wrapped smart contract support (or an equivalent way of supporting direct payment from Cardano L1 wallets)\n・a way to verify you own an NFT that participated in a sale for any rewards that requires knowing information about who participated (sign-verify dApp for handle offchain rewards)\n\nThese add extra functionality to the MVP website built and shared to reviewers as part of milestone #3",
+      "criteria": "List of features we added as part of the updates covers a proper implementation of features in the milestone",
+      "report": "In response to the previous PoA reviews\nThanks for review, we have updated the video to show in detail the features in this Milestone\nhttps://youtu.be/5wraNNWR2Jc\nNOTE after this line, there are not update in comparison to the previous update\nBRIEF\nThis milestone adds the extra features on top of the M3 MVP, led by direct Cardano L1 payment: the Preorder template's Aiken on-chain validator accepts ADA straight from a Cardano browser wallet (Lace, Eternl, Nami, NuFi, and others), with the EffectStream state machine indexing those payments into the same campaign and per-wallet contribution view as the EVM leg. On top of that it adds NFT ownership verification (via the same primitive system behind the projected-NFT work), a multi-chain cart where one checkout can mix Cardano and EVM packages, and campaign-update support so creators can edit reward tiers and package bundles after launch with the on-chain audit trai preserved. Each feature ships in the open-source template, with a write-up and a demo video, so anyone can run it locally.\nLINKS TO REVIEW\n\n1. Video - the new features in action\nhttps://youtu.be/Nt07iedvAIo\nNew Features Video\nhttps://youtu.be/5wraNNWR2Jc\n\n2. Code - the Preorder template (all four features in one repo):\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/preorder\nCardano Aiken contract path (direct L1 payment):\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/preorder/packages/contracts-cardano\nState machine consuming both Cardano and EVM events:\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/preorder/packages/node\nNFT ownership verification primitive:\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src/cardano-projected-nft\n\n3. Changelog - commit history for the features added:\nhttps://github.com/effectstream/effectstream/commits/v-next \n\n4. Write-up - the new features in context:\nhttps://effectstream.github.io/docs/blog/cardano-onchain-preorder-vali",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 23,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 88000,
+      "promise": "Integration with an existing marketplace",
+      "criteria": "At least one NFT marketplace integrating with our system",
+      "report": "BRIEF\nThe NFT presale template built across the earlier milestones established the foundation: contracts for EVM and Cardano L1, a sync layer, a full storefront UI, and direct Cardano L1 payment. This milestone extends that foundation as the digital asset market evolves. The way assets are sold and traded has changed, and this milestone upgrades the settlement layer to match: a commitment-based presale system that settles on Midnight - a Cardano Partner Chain where all blocks are validated by Cardano SPOs - using Cardano-native assets.\nThe core mechanic: a creator deploys a presale contract and sets a target. Buyers commit to purchase - but the commitment only takes effect once the total target is reached. Until the threshold is hit, committed tokens are not locked. A buyer can hold open commitments across multiple presales simultaneously with the same funds, because the system is backed by Zero Knowledge ZSwaps. The ZSwap proof demonstrates a buyer can cover their commitment without freezing the tokens; settlement only happens when the target is met.\nThe settlement layer runs on Midnight, a Cardano partner chain where all blocks are validated by Cardano SPOs - the same node operators who secure the Cardano network. The presale contracts accept only USDM, the first bridged asset from Cardano onto Midnight. When buyers commit, they move Cardano-native value. When a presale closes, assets can flow back: the Cardano-to-Midnight bridge carries assets in both directions, so a completed presale can settle directly into Cardano wallets.\nThe deliverables from earlier milestones (the Preorder template, the Aiken on-chain validator, the UTxORPC sync layer) are all bridgeable into and out of this commitment settlement layer, giving prior work a path forward as the ecosystem matures.\nLINKS TO REVIEW\n1. Video - full commitment presale demo\nhttps://youtu.be/bQtmEZ7cjNw\n\n2. Code - commitment presale contracts and template (ZK Presale):\nhttps://github.com/effectstream/zswap-presale",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 88500,
+      "promise": "・Project Close report:\n・video\n・pdf report\n・simple UI for interacting with the contract\n・All extra features mentioned in previous milestones (Wrapped Smart Contracts Integration, pre-order updates, etc.)\n・Integration with Marketplace \n・Open source code for all components (website, backend, library published on NPM)",
+      "criteria": "Community has the access to Project Close Reports and all deliverables from each Milestone",
+      "report": "IN REPONSE TO THE POA REVIEW\nThank you for your feedback.\nPublic announcement (Twitter/X):\nhttps://x.com/CashAnvil/status/2064379341987774897\nNOTE: The announcement is not more specific as the mainnet release depends on planned future network updates, and we don't want to confuse the community. This tweet is from the CEO of the Operating Team Behind Wayup.io. The CTO of Midnight is also mentioned here.\nNOTE From here there are no more update from last POA\nBRIEF\nThis is the Project Close Report for Catalyst proposal 1000085, \"Extend NFT sale and drop tools to support dropping more complex assets as required for on-chain games\", delivered across milestones M1 to M5. The project built a full presale and drop toolkit on Cardano: EVM and Cardano Aiken contracts for campaign creation and payment, an EffectStream sync layer using Dolos over UTxORPC, a full-design-system storefront UI, direct Cardano L1 payment from standard Cardano wallets (Lace, Eternl, Nami, NuFi), NFT ownership verification, and a multi-chain cart. The fifth milestone extended the settlement layer to Midnight - a Cardano Partner Chain where all blocks are validated by Cardano SPOs - delivering a commitment-based presale using USDM, the first Cardano-bridged asset on Midnight, with ZSwap zero-knowledge proofs so buyers can commit across multiple campaigns without locking funds. The close-out video and the close-out report are below.\nLINKS TO REVIEW \n1. Close-out video\nhttps://youtu.be/jz6lgeg_FEk\n\n2. Close-out report\nhttps://drive.google.com/file/d/18jnctMx2ucf7PmkQ6XvuwADcMJH_zrPO/view?usp=sharing\n\n3. Open-source code and documentation:\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/preorder\nCardano Aiken contract (direct L1 payment):\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/preorder/packages/contracts-cardano\nCommitment presale contracts and template (M5, ZK Presale):\nhttps://github.com/effectstream/zswap-presale\nBlog posts:\nhttps://effectstream.github.io/d",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 24,
+      "cut": true
+    }
+  ]
+}

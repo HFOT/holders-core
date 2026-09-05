@@ -1,0 +1,48 @@
+{
+  "title": "Afrocharts | Web3 Artist Portal (Awen)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "・Conduct a analysis of the current Afrocharts.com platform and its technical infrastructure in order to design the web3 portal\n・Develop a detailed project plan, including milestones, deliverables, and timeline\n・Create the tasks & responsibilities board\n・Open a Github account and begin development",
+      "criteria": "・The Afrocharts platform analysis is documented\n・The project requirements, milestones and timeline are documented\n・The user stories and team tasks & responsibilities are clearly defined on an agile board\n・There is a GitHub repository created",
+      "report": "The following are direct links to documents hosted in our project Github repository.\nMilestone 1 - Initialization\nDocuments\nSetup Report - information about initial design, including Afrocharts.com platform analysis setup\nAfrocharts Partner API Doc - documentation to integrate with Afrocharts.com platform via permissioned API\nProject Status Report - Current project status\nProject Timeline - project roadmap, timeline, and responsibilities\nNotion Kanban Board - board of all tasks, stories, and epics for this project",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "20",
+      "cost": 25000,
+      "promise": "・Collaborate with the AfroCharts team to integrate a new NFT-gated functionality into Afrocharts.com.\n・Implement the necessary APIs and interfaces for seamless integration.\n・Target 5-10 strategic artist partners on Afrocharts.com platform to participate in the initial portal launch.",
+      "criteria": "・Have 5-10 artists partner’s songs chosen and ready for launch.\n・The testnet backend website (ie “web3 portal”) is accessible \n・Users can connect with their Cardano wallet and mint a song NFT\n・Users can access restricted artist page only if they hold the artist’s song NFT",
+      "report": "To the Catalyst Fund 11 reviewers,\nI am pleased to submit the Proof of Achievement for Valt — Milestone 2: Development, demonstrating that all milestone outputs have been delivered and all acceptance criteria have been satisfied with verifiable on-chain and on-web evidence. The complete evidence pack for this milestone lives in the GitHub repository at github.com/Awen-online/valt/tree/main/docs/M2_Development.\nContext — AfroCharts → standalone Valt portal: The Milestone 2 Outputs were framed around integrating NFT-gating into afrocharts.com. During development the AfroCharts partner API became non-functional (api.afrocharts.com/v1/songs returns HTTP 200 with a fatal server-side database error), so we delivered a standalone, self-owned Web3 portal — Valt (valt.digital) — that satisfies every graded Acceptance Criterion and Evidence Requirement independently. The graded terms are platform-agnostic; none reference afrocharts.com.\nBelow is the requirement-by-requirement mapping.\nOutput 1 — NFT-gated Web3 artist portal, live on the Cardano testnet\nAcceptance Criteria satisfied:\n・The testnet \"web3 portal\" is publicly accessible.\n・Users can connect their Cardano wallet and mint a song NFT.\n・Users can access a restricted artist page only if they hold the artist's song NFT.\n\nEvidence:\n・Live portal: https://www.valt.digital\n・Wallet connection + the full on-chain mint flow — connect, NMKR checkout, confirm, processing, minted & delivered (screenshots S1, E2, E10a–E10d); owned editions in E7\n・\"The Valt\" unlocked for a holder vs. locked for a non-holder: https://www.valt.digital/artist/mie/ (screenshots E6, S2)\n・On-chain proof — the launch song NFTs minted on-chain under policy bf5a88ac…: preprod.cardanoscan.io/tokenPolicy/bf5a88ac…\n・All screenshots + the Proof of Achievement PDF: github.com/Awen-online/valt/tree/main/docs/M2_Development\n\nOutput 2 — APIs and interfaces for seamless integration\nAcceptance Criterion satisfied: Working integration interfaces between the portal, the",
+      "kinds": [
+        "chain",
+        "code",
+        "other"
+      ],
+      "links": 17,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "21",
+      "cost": 20000,
+      "promise": "・Conduct testing of the features and functionalities\n・Identify and resolve any bugs or issues\n・Perform security audits and implement necessary measures to ensure safety and integrity\n・Collect user feedback and make necessary improvements based on testing results",
+      "criteria": "・Completion of testing and bug fixing\n・Passes all vulnerability checks conducted through automated cybersecurity tools (NodeZero or similar)\n・Passes all manual security assessments documented by the team\n・User feedback collected and analyzed for further improvements",
+      "report": "To the Catalyst Fund 11 reviewers,\nI am pleased to submit the Proof of Achievement for Valt Milestone 3: Implementation & Prelaunch, demonstrating that all milestone outputs have been delivered and all acceptance criteria have been satisfied with verifiable evidence. The complete evidence pack for this milestone lives in the GitHub repository at github.com/Awen-online/valt/tree/main/docs/M3_Implementation.\nBelow is the requirement-by-requirement mapping.\nOutput A: Conduct testing of the features and functionalities\n・Acceptance Criterion satisfied: Completion of testing. The first automated test suite passes (15 tests / 25 assertions), is proven by failing against the pre-fix code, and php -l is clean across all trees.\n・Evidence:M3 Test & Bug-Fix Report: github.com/Awen-online/valt/blob/main/docs/M3_Implementation/M3_Test_and_Bugfix_Report.pdf\n・Test suite and CI workflow: github.com/Awen-online/valt/tree/main/tests and .github/workflows/ci.yml\n・Reproduce with composer install && vendor/bin/phpunit (expect: OK, 15 tests, 25 assertions).\n\nOutput B: Identify and resolve any bugs or issues\n・Acceptance Criterion satisfied: Completion of bug fixing. Six of six defects resolved, each with a documented root cause.\n・Evidence:M3 Test & Bug-Fix Report, §5: github.com/Awen-online/valt/blob/main/docs/M3_Implementation/M3_Test_and_Bugfix_Report.pdf\n・The updated code in the repository (plugin valt-platform 2.0.3): github.com/Awen-online/valt\n\nOutput C: Perform security audits and implement necessary measures to ensure safety and integrity\n・Acceptance Criterion satisfied: Passes automated vulnerability checks (NodeZero or similar): semgrep (0 true positives) plus an autonomous-style assessment (PASS: 0 Critical, 0 High). Also passes manual assessments, including a wallet-layer review that found and responsibly disclosed two critical CardanoPress issues, since fixed upstream.\n・Evidence:M3 Security Audit Report: github.com/Awen-online/valt/blob/main/docs/M3_Implementation/M3_Security_",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 13,
+      "cut": true
+    }
+  ]
+}

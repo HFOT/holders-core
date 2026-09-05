@@ -1,0 +1,63 @@
+{
+  "title": "Hydra Hub – SaaS Node Distribution System Phase 1",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 30000,
+      "promise": "The deliverable for this milestone is the core Hydra Hub web platform, consisting of two main components:\n・Consumer Portal – A user interface for developers or end-users to register an account, securely authenticate, and submit requests for Hydra node access. The portal will include account management, profile editing, and the ability to submit usage requests with a description of the intended dApp testing purpose. The system will support multiple devices (desktop, mobile) and feature a friendly, easy-to-use interface.\n・Admin Dashboard – An interface for Hydra Hub administrators to review requests, allocate nodes, monitor node status, track system performance, and manage the entire consumer list. The dashboard will include functions to display activity logs, real-time node status reports, and manage allocation history.\n\nIn addition, the system will incorporate strict authentication and role-based access control to ensure a clear separation of functions between consumers and admins. All functions will be programmed for scalability to support a decentralized model in later phases",
+      "criteria": "1.User Account Management\n・Consumers can create a new account, log in, and update their personal information in the Consumer Portal.\n\n2.Hydra Node Access Request\n・Consumers can submit requests for Hydra node access, which are reviewed and responded to by an administrator through the Admin Dashboard.\n\n3.Admin Dashboard Monitoring\n・The Admin Dashboard displays the consumer list, pending requests, and real-time node allocation status.\n\n4.Node Allocation Control\n・Administrators can allocate or revoke node usage rights for consumers directly from the dashboard interface.\n\n5.Role-Based Access Contro",
+      "report": "1. Consumer Portal\nPublic URLs\n・Backoffice dashboard:\n・https://uat-back-office.hydrahub.io.vn/\n・Alpha Testing Environment (User):\n・https://uat.hydrahub.io.vn/\n\nDemo Credentials\nReviewers may use the following accounts to verify role-based functionalities:\nAdmin\n・Email: admin@gmail.com\n・Password: admin@123\n・Access: https://uat-back-office.hydrahub.io.vn/\n\nUser\n・Email: user@hydrahub.app\n・Password: demoUser@123\n・Access: https://uat.hydrahub.io.vn/\n\n2. Demonstration Materials\n・Milestone 1 – Demo and functional overview:\n・https://github.com/Vtechcom/hydra-hub-fund14-proposal/blob/main/milestone-1.md\n\n3. Testing Evidence (QA Report)\n・Quality assurance report and testing evidence:\n・https://github.com/Vtechcom/hydra-hub-fund14-proposal/blob/main/ms1/qa-report/readme.md\n\n4. Documentation Package\n・Hydra Hub User Manual (PDF):\n・https://github.com/Vtechcom/hydra-hub-fund14-proposal/blob/main/ms1/user-manual/Hydra%20Hub.pdf",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 30000,
+      "promise": "1.Server Setup:\nSetting up a physical or cloud server that meets the resource requirements of a Hydra node (CPU, RAM, network bandwidth, low latency).\n2.Hydra Node Installation & Configuration:\nInstalling and configuring the Hydra node according to technical specifications, ensuring stable connectivity with the Cardano L1 node.\n3.System Integration:\nIntegrating the provider node with the Hydra Hub system developed in Milestone #1, allowing administrators to allocate nodes to consumers directly from the dashboard.\n4.Monitoring & Alerting:\nImplementing real-time monitoring and alert mechanisms to detect node issues, uptime changes, or resource threshold breaches.\n5.Testing with Initial Developers:\n・Inviting 5 external developers to register and connect their dApps to the provider node through the Hydra Hub platform.\n・Usage logs and node performance metrics (latency, uptime) will be recorded for analysis.\n・Developer feedback and testing results will be collected through a Github issue, providing qualitative evaluation of user experience and stability.",
+      "criteria": "1.Node Deployment & Connectivity\nThe Hydra provider node is successfully deployed on a physical or cloud server, stably connected to the Cardano L1 network, and operates continuously for at least 24 hours during the testing phase.\n2.Integration with Hydra Hub System\nThe provider node is fully integrated into the Hydra Hub system, allowing administrators to allocate node access to consumers through the Admin Dashboard.\n3.Consumer Interaction Testing\nA total of 5 registered developers connect their dApps to the provider node via the Hydra Hub Consumer Portal.\nEach participant performs functional",
+      "report": "Additional Verification Access\nTo ensure transparency and independent verification, in addition to the provided evidence, we are granting direct access to the test environment:\nAdmin Dashboard\nURL: https://uat-back-office.hydrahub.io.vn\nAccount: admin@gmail.com\nPassword: admin@123\nUser (Consumer Portal)\nURL: https://uat.hydrahub.io.vn\nAccount: usertest@gmail.com\nPassword: Strongpassword@123\n*Reviewers can directly:\n・View provider node registration and allocation\n・Simulate user interactions\n・Observe system behavior in real-time\n\nSupporting Evidence\nServer Deployment & Configuration Report:\n・https://github.com/Vtechcom/hydra-hub-fund14-proposal/blob/main/ms2/server-deployment/readme.md\n\nHydra Hub Integration Proof:\n・https://github.com/Vtechcom/hydra-hub-fund14-proposal/blob/main/ms2/hydra-hub-integration/readme.md\n\nDeveloper Testing Evidence:\n・https://github.com/Vtechcom/hydra-hub-fund14-proposal/blob/main/ms2/developer-testing/readme.md\n\nMonitoring & Alert Verification:\n・https://github.com/Vtechcom/hydra-hub-fund14-proposal/blob/main/ms2/monitoring-alerts/readme.md\n\nTesting Logs & Feedback Records:\n・https://github.com/Vtechcom/hydra-hub-fund14-proposal/blob/main/ms2/qa-report/readme.md",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 25000,
+      "promise": "1.Smart Contract Development (Aiken)\nDevelop a payment smart contract using Aiken (Plutus V3).\nContract logic:\n・A consumer clicks “Buy Hydra Node” in the Hydra Hub portal.\n・The backend builds a transaction embedding node and user metadata.\n・The consumer signs and submits the transaction, paying the service fee.\n・Upon confirmation, Hydra Hub automatically issues an API key granting node access.\n\n2.Admin Claim & Refund Mechanism\nThe admin address can claim the payment after 1 day (24-hour delay).\nDuring the dispute period (1 day), if the user and admin reach agreement (via email or GitHub issue), the admin can issue a refund to the user from the contract.\n3.Integration with Hydra Hub\nIntegrate the smart contract endpoints with the Hydra Hub backend and dashboard, displaying:\n・Payment status\n・Remaining usage period\n・Service suspension upon expiry\n\n4.Dashboard Update\nExtend Admin and Consumer dashboards to show transaction records, payment status, and claim/refund logs.\n5.Testing\nTest all core transaction flows:\n・buy – User purchases and pays successfully\n・refund – Admin refunds within dispute window\n・claim – Admin claims payment after 1 day",
+      "criteria": "1.Smart Contract Deployment\n・The Aiken (Plutus V3) payment contract is compiled, deployed, and verifiable on the preprod testnet.\n・Script hash and contract address are provided.\n\n2.Functional Scenarios\nThe following transaction scenarios are tested successfully:\n・Buy: Consumer purchases node access → on-chain transaction succeeds → API key issued.\n・Refund: Admin refunds consumer within 24h → refund confirmed on-chain.\n・Claim: Admin claims unrefunded funds after 24h → claim transaction succeeds.\n\n3.Hydra Hub Integration\n・Dashboard displays payment history, refund/claim status, and node usage ex",
+      "report": "1. Smart Contract Deployment Proof\nhttps://github.com/Vtechcom/hydra-hub-fund14-proposal/tree/main/ms3/payment-subscription\n2.Demonstration & Logs\nVideo: https://youtu.be/oCi0e4Ble-4\nImage: https://github.com/Vtechcom/hydra-hub-fund14-proposal/blob/main/milestone-3.md#b-screenshots\n3.Transaction Evidence\nhttps://github.com/Vtechcom/hydra-hub-fund14-proposal/blob/main/milestone-3.md#2-on-chain-transaction-evidence\n4.Test Report\nhttps://github.com/Vtechcom/hydra-hub-fund14-proposal/blob/main/ms3/qa-report/readme.md\nTest enviroment: \nAdmin URL: https://uat-back-office.hydrahub.io.vn\nAccount: admin@gmail.com / Password@123\nUser URL: https://uat.hydrahub.io.vn\nAccount: usertest@gmail.com / Strongpassword@123",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 15000,
+      "promise": "This milestone aims to summarize the entire implementation phase, evaluate outcomes, and share knowledge with the community. Includes:\n・Project Close-Out Report in Catalyst’s required format, detailing progress, results, challenges, and lessons learned.\n・Recap video presenting the development and deployment process of Hydra Hub Phase I, with real-world demo footage.\n・Technical documentation and articles sharing experiences and contributions with the Hydra community, including technical analysis, encountered issues, and implemented solutions.",
+      "criteria": "・The full project report is submitted to and acknowledged by Catalyst.\n・The recap video is published on Cardano/Hydra community channels.\n・Technical documentation is shared on GitHub, Hydra forums, and social media channels.\n・Positive community feedback is received, along with suggestions for improvement in future phases.",
+      "report": "Hydra Hub Phase 1 Project Close-Out Report (Update supplementary Evidence of Work)\nReport link: https://github.com/Vtechcom/hydra-hub-fund14-proposal/blob/main/milestone-4.md\nReport video link: https://youtu.be/zK4M-yxFMzs\nLinks to community posts introducing Hydra Hub:\n・https://forum.cardano.org/t/hydra-hub-and-the-trust-layer-elevating-trust-for-every-dapp-using-hydra/152659\n・https://x.com/VtechcomLabs/status/2012343066565448042?s=20\n・https://forum.cardano.org/t/leios-hydra-a-perfect-pair-unlocking-the-high-speed-low-fee-era-on-cardano/152332\n・https://forum.cardano.org/t/beyond-bridges-unlocking-true-interoperability-between-bitcoin-lightning-and-cardano-hydra/152501/4\n\nDirect hands-on experience of the end-user application using the solution: https://alpha.hydraone.app/\nEvidence that \"we have received positive feedback from the community\":\nWe have held numerous sharing sessions about the managed head service model we are building with key developers in the ecosystem who have expertise in Hydra, and have received positive feedback and support for the solution. While many of these exchanges were private, here is publicly verifiable evidence:\nWe presented at Cardano Dev Office Hours: https://youtu.be/fdmj02W5GT0?si=2bihEsu0JGAj70GR\nand received positive feedback from the Hydra development lead: https://x.com/sharan_konerira/status/2054891737118617706?s=20",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 18
+    }
+  ]
+}

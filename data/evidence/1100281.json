@@ -1,0 +1,72 @@
+{
+  "title": "Unbox: Enabling Rust-based Cardano dApps",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 38931,
+      "promise": "・Rust library for controlling (configuring, starting, stopping) Plutip local Cardano networks to use for fast and hermetic Cardano dApp testing.\n\nAs mentioned in our FP, the Plutip tool allows users to quickly and easily orchestrate and submit transactions against a standalone, disposable testnet. Plutip is in essence a wrapper over cardano-wallet which supports spawning disposable testnets. Team members will be building the Rust Plutip library aligned with the original Haskell version <https://github.com/mlabs-haskell/plutip> and following Milestone 1 as outlined in our FP \"Project Milestones\" section.",
+      "criteria": "・The library can be used to configure and start the local Cardano network using Plutip.\n・The library can be used to query and stop the local Cardano network using Plutip.\n・The Plutip Rust library test suite passes.",
+      "report": "Milestone 1 Proof of Achievement Video: https://vimeo.com/1000045064 \n1100281 Unbox: Enabling Rust based Cardano dApps - Milestone 1 Report \nPrepared by Unbox & MLabs on May 22, 2024 \nOverview \nIn this milestone, we worked on a Rust implementation of the Plutip library. \nPlutip is a tool that allows users to quickly and easily orchestrate and submit transactions against a standalone, disposable testnet. \nThis library allows smart contract developers to orchestrate this flow using Rust. \nOutputs \nOutputs of the milestone can be found here: \n・Rust library for controlling (configuring, starting, stopping) Plutip local Cardano networks to use for fast and hermetic Cardano dApp testing. \n・The implementation is located within tx-bakery as a subcomponent. \n\nAdditionally: \n・The test suite utilizing Plutip to run real smart contracts in Rust can be located at tx-bakery/extras/tx-bakery-testsuite/tests/tests/main.rs . \n\nAcceptance criteria and evidence \n・The library can be used to configure and start the local Cardano network using Plutip. \n・setup_plutip_test within the test suite in tx-bakery demonstrates how the library can be used to configure and start Plutip.\n・The library can be used to query and stop the local Cardano network using Plutip. \n・Plutip can be queried similarly to a cardano-node using its node.socket , as demonstrated within the test suite. \n・Leveraging Rustʼs RAII, Plutip will automatically be stopped when the object goes out of scope. \n・The Plutip Rust library test suite passes.\n・A passing test suite utilising Plutip can be found at tx-bakery/extras/tx-bakery-testsuite/tests/tests/main.rs . \n\n1100281 Unbox: Enabling Rust-based Cardano dApps - Milestone 1 Report",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 12
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 38931,
+      "promise": "・A Rust library with all https://github.com/IntersectMBO/plutus/tree/master/plutus-ledger-api types and functions to facilitate transaction building and parsing in Rust.",
+      "criteria": "・The library has all types from Plutus Ledger API versions 1 and 2.\n・The library has all implementations for equality and Plutus Data encoding type classes.\n・Equality and Plutus Data encoding implementations are tested against a known good set of samples (golden tests).",
+      "report": "Milestone 2 Proof of Achievement Video: https://vimeo.com/1000044847 \n1100281 Unbox: Enabling Rust-based Cardano dApps - Milestone 2 Report \nPrepared by Unbox & MLabs on May 22, 2024 \nOverview \nIn this milestone, we worked on a Rust implementation of the Plutus Ledger API as found in IntersectMBO/plutus/plutus-ledger-api.\nThese types are utilized in building transactions in our next milestone(s). \nOutputs \nOutputs of the milestone can be found here: \n・A Rust library with all https://github.com/IntersectMBO/plutus/tree/master/plutus-ledger-api types and functions to facilitate transaction building and parsing in Rust. \n・The implementation is located at plutus-ledger-api-rust . \n\nAdditionally: \n・The test suite for testing equality and Plutus data encoding for these types can be found at plutus-ledger-api-rust/tests/plutus-data.rs . \n\nAcceptance criteria and evidence \n・The library has all types from Plutus Ledger API versions 1 and 2. \n・V1 types are located within plutus-ledger-api/src/v1 .\n・V2 types are located within plutus-ledger-api/src/v2 . \n・The library has all implementations for equality and Plutus Data encoding type classes. \n・All types within V1 and V2 modules implement Eq , PartialEq , and IsPlutusData \n・Equality and Plutus Data encoding implementations are tested against a known good set of samples (golden tests). \n・Test suite can be found at plutus-ledger-api-rust/tests/plutus-data.rs . \n\n1100281 Unbox: Enabling Rust-based Cardano dApps - Milestone 2 Report",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 13
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 38931,
+      "promise": "・Rust library featuring an API for convenient transaction building and parsing centered around plutus-ledger-api TxInfo type.",
+      "criteria": "・A full Cardano transaction can be built given an appropriately built plutus-ledger-api TxInfo value.\n・A Cardano transaction can be parsed into an equivalent plutus-ledger-api TxInfo value.\n・The test suite that covers complex TxInfo values.",
+      "report": "Milestone 3 Proof of Achievement Video: https://vimeo.com/1000044891 \n1100281 Unbox: Enabling Rust-based Cardano dApps - Milestone 3 Report \nPrepared by Unbox & MLabs on May 22, 2024 \nOverview \nIn this milestone, we worked on a Rust library for building and parsing Cardano transactions centered around the concept of the TxInfo type from plutus-ledger-api .\nWe utilise cardano-serialization-lib alongside our plutus-ledger-api implementation in Rust (see: Milestone 2) to achieve this. \nOutputs \nOutputs of the milestone can be found here: \n・Rust library featuring an API for convenient transaction building and parsing centered around plutus-ledger-api TxInfo type. \n・The implementation is located at tx-bakery/tx-bakery . \n\nAdditionally: \n・The test suite that builds complex TxInfo values can be located at tx-bakery/extras/tx-bakery-testsuite/tests/tests/main.rs . \n\nAcceptance criteria and evidence \n・A full Cardano transaction can be built given an appropriately built plutus-ledger-api TxInfo value. \n・Building a full Cardano transaction from a TxInfo and other witnesses can be done using bake and deliver and similar TxBakery methods.\n・A Cardano transaction can be parsed into an equivalent plutus-ledger-api TxInfo value. \n・A Cardano transaction from cardano-serialization-lib can be converted to equivalent plutus-ledger-api types using csl_to_pla . \n・The test suite that covers complex TxInfo values. \n・A test suite demonstrating complex smart contracts can be located at tx-bakery/extras/tx-bakery-testsuite/tests/tests/main.rs . \n\n1100281 Unbox: Enabling Rust-based Cardano dApps - Milestone 3 Report",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 9
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 38931,
+      "promise": "・Nix functions and modules for conveniently integrating Rust projects, both Cardano dApp and other, into a Nix based mono-repository.",
+      "criteria": "・Nix API to conveniently and simply specify a Rust project in a mono-repository environment, featuring a development, test and build environments.\n・Nix API has to enable providing both library and data dependencies from within Nix.\n・An example Rust project built with this Nix API must pass the CI.",
+      "report": "Milestone 4 Proof of Achievement Video: https://vimeo.com/1000045098 \n1100281 Unbox: Enabling Rust-based Cardano dApps - Milestone 4 Report \nPrepared by Unbox & MLabs on May 22, 2024 \nOverview \nIn this milestone, we worked on a nix library for conveniently scaffolding and integrating Rust projects into nix based mono-repositories. \nOutputs \nOutputs of the milestone can be found here: \n・Nix functions and modules for conveniently integrating Rust projects, both Cardano dApp and other, into a Nix based mono-repository. \n・The repository containing the declarations of these functions and modules can be found at flake-lang.nix. \n\nAcceptance criteria and evidence \n・Nix API to conveniently and simply specify a Rust project in a mono-repository environment, featuring a development, test and build environments. \n・The API can be located at flake-lang.nix/flake-rust.nix .\n・Nix API has to enable providing both library and data dependencies from within Nix. \n・The functions that enable linking of library dependencies are located in this section. \n・The functions that enable linking of data dependencies are located in this section. \n・An example Rust project built with this Nix API must pass the CI. \n・Example rust project: https://github.com/mlabs-haskell/flake- lang.nix/tree/main/examples/rust-flake-project \n\n1100281 Unbox: Enabling Rust-based Cardano dApps - Milestone 4 Report",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 7
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 38930,
+      "promise": "・Documentation for all components delivered in this Catalyst proposal is written and the CI is able to automatically render these documents in respective Github Pages.\n・MLabs Open-Source Versioning scheme is documented in all delivered components and applied.",
+      "criteria": "・Github Pages are published with the documentation pertaining to all deliverables.\n・MLabs OS versioning scheme is applied to all the related repositories.",
+      "report": "Final Milestone Proof of Achievement Video: https://vimeo.com/1000044975 \nFinal Milestone Closeout Report: https://www.dropbox.com/scl/fi/tvlqe73cb135mfscshtsr/unbox-final-closeout-report.pdf?rlkey=i8bjkerjp3fbito2l83jkr5wp&dl=0 \n1100281 Unbox: Enabling Rust-based Cardano dApps - Final Milestone Report \nPrepared by Unbox & MLabs on May 22, 2024 \nOverview \nIn this milestone, we worked on documentation and open-sourcing best practices. Weʼve provided README, API references and examples for the previous milestones. Documentations are automatically deployed to Github Pages. \nOutputs \nDocumentations and API references for the projects can be found here: \n・https://github.com/mlabs-haskell/tx-village/tree/main/tx-bakery-plutip \n・https://mlabs-haskell.github.io/tx-village/artifacts/tx-bakery-plutip/tx_bakery_plutip/ \n・https://mlabs-haskell.github.io/plutus-ledger-api-rust/ \n・https://github.com/mlabs-haskell/tx-village/tree/main/tx-bakery \n・https://mlabs-haskell.github.io/tx-village/artifacts/tx-bakery/tx_bakery/ \n・https://mlabs-haskell.github.io/flake-lang.nix/ \n\nAnd the versioning scheme for the projects here: \n・https://github.com/mlabs-haskell/tx-village/blob/main/CONTRIBUTING.md \n・https://github.com/mlabs-haskell/plutus-ledger-api-rust/blob/main/CONTRIBUTING.md \n・https://github.com/mlabs-haskell/flake-lang.nix/blob/main/CONTRIBUTING.md\n\nAcceptance criteria and evidence \n・Github Pages are published with the documentation pertaining to all deliverables. \n\nThe above Github pages are published, and automatically generated by CI on every merge to the main branch of the respective repository \n・MLabs OS versioning scheme is applied to all the related repositories. \n\nDetailed explanation of the versioning rules used by MLabs open-source projects can be found in all of the repositories. These rules are followed by all the above projects. \n1100281 Unbox: Enabling Rust-based Cardano dApps - Final Milestone Report",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 22
+    }
+  ]
+}

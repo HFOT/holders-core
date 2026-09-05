@@ -1,0 +1,61 @@
+{
+  "title": "Tackling Slipagge on Cardano: MAYZ Trustless OTC Smart Contract",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "Create a detailed project plan including:\n・Research report on liquidity challenges in the Cardano ecosystem.\n・Functional documentation of smart contracts, their basic architecture and potential applications. Outlining the Trustless OTC Smart Contract concept, architecture, and potential applications. (By basic architecture we mean an overview of the protocol architecture)",
+      "criteria": "・Project Plan document detailed and public. Including a liquidity research report completed and the functional technical documentation detailed.\n・Documents are clear, understandable to all readers, and freely and publicly accessible.",
+      "report": "Hello reviewers!\nThank you for the comments. We appreciate your thorough review and feedback. We recognize that some aspects of the smart contract implementation details were not fully elaborated in this milestone as we focused on establishing the foundational research and high-level architecture. Future milestones will go deeper into the technical details.\nTo clarify some points: \n・Could you provide detailed description of smart contract functions: input parameters, output, state changes for functionalities like token exchange and NFT minting?\n\nYes, that is the next milestone: \n “Smart contracts detailed architecture diagram illustrating components and their interactions. Documentation with the detailed architecture of smart contracts, a definition of parameters of each contract, their redeemers, and datums. GitHub repository: a public repository containing the initial source code.”\n・What will be the features to handle an error like “token redemption fail” or a security issue like “unauthorized redemption”?\n\nIt will be added; the mechanism is the NFT check and burn. It does not need any particular feature.\n・How will this trustless OTC smart contract interact with existing MAYZ smart contracts- is there any dependency?\n\nNo Dependencies to any smart contract. Just use the fungible token MAYZ. \n・How will your trustless OTC smart contract interact with other smart contracts or external systems (like NFT marketplaces or token standards). You have mentioned token standards and how OTC solutions work in the liquidity challenge report (page 1 &2) but this external interface information is needed.\n\nThe smart contract will not interact with any other smart contract. Any user can list an asset in a marketplace.\n・How can the smart contract be upgraded? As per your reason to go ahead with the “individualized approach” for the beginning of this project instead of “institutional approach”. Please clarify your transition plan between 2 approaches.\n\nIn the first version, it can onl",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 20000,
+      "promise": "・Smart contracts detailed architecture diagram illustrating components and their interactions.\n・Documentation with the detailed architecture of smart contracts a definition of parameters of each contract, their redeemers and datums.\n・GitHub repository: a public repository containing the initial source code.",
+      "criteria": "All documents will be public and freely accessible. Will be detailed and understandable to the common user. All documentation will meet the project technical requirements.",
+      "report": "Dear reviewers\nWe have addressed the issues raised in your feedback to ensure the proposal meets the required standards. \nThank you.\nLink: https://github.com/MAYZGitHub/mayz-otc/blob/main/catalyst-reports/MILESTONE-02.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "・Smart contract developed with all necessary validations on each redeemer of all contracts.\n・Completed smart contract source code with all the validations required, including all datums and redeemers defined.\n・Haskell source code of the functional smart contracts.",
+      "criteria": "We will create a test suite with unit tests to test different scenarios. All tests should pass with a positive result.\nSource code is provided for smart contracts and test suites. Source code is available free and public.",
+      "report": "Dear Reviewers,\nWe are pleased to submit the proof of achievement for Milestone 3 as outlined in our project plan. To address your feedback, we have included a link to the test result screenshots for further verification.\nBelow are the relevant links for your review\nMilestone 03 report\nhttps://github.com/MAYZGitHub/mayz-otc/blob/main/catalyst-reports/MILESTONE-03.md\nExplanatory video\nhttps://drive.google.com/file/d/1BGkRHrItPB4hKdLgQfZevszI0ywFVwjl/view?usp=drive_link\nTest Screenshots\nhttps://drive.google.com/drive/folders/1RgGGXG6JSS2pZ01yjXUFwcq99l86UCU6\nWe appreciate your time and look forward to your feedback.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 30000,
+      "promise": "Deployment of smart contracts on the Mainnet\nGitHub repository with a very basic website to use as an example \nA close-out video & a close-out report\nA video resource & documentation to support community understanding and adoption",
+      "criteria": "Acceptance criteria \nSmart contracts deployed on Mainnet with their hashes, addresses, and policies. All of them should be present and searchable in the Cardano Blockchain explorers on mainnet.\nCompleted contracts available on GitHub open source and free access.\nA close-out video & a close-out report are available.\nThe website is functional and allows all necessary interactions with all the redeemers and functions of the smart contracts.\nClose out reports and video are available and meet Catalyst requirements.\nA video resource & documentation to support community understanding and adoption hav",
+      "report": "Dear Milestone Reviewers,\nThank you very much for your detailed feedback and for pointing out the necessary improvements one more time :)\nWe have revised the close-out report and video per the Catalyst guidelines. The video is now under 5 minutes and follows the format of a proper close-out video, not just a demo. The written report has also been updated to provide more clarity, include the requested proof of KPIs, and go beyond section titles.\nWe have included direct links to both the updated report and video in the Evidence section, as requested.\nhttps://github.com/MAYZGitHub/mayz-otc-contracts/blob/main/catalyst-reports/MILESTONE-04.md\nQuick access to deliverable links:\n・✅ GitHub Repo: https://github.com/MAYZGitHub/mayz-otc-dapp\n・✅ Final Demonstration Video: https://www.youtube.com/watch?v=mfEXdJ-sYZY\n・✅ Live Cardano Mainnet site: https://otc.mayz.io\n・✅ Close Out Report: https://docs.google.com/document/d/1pHb-QT5XRtmgv34d59-rkA_PKDrSHBvMj8qLljnJ-Xg/edit?tab=t.0\n・✅ Project Close-Out Video: https://youtu.be/nWqTrBFGd-4\n\nThank you again for your guidance and support.\nBest regards,\nMAYZ Team",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    }
+  ]
+}

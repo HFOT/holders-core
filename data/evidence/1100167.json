@@ -1,0 +1,87 @@
+{
+  "title": "Indigo Protocol V2 Audit",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "A fully developed test suite and comprehensive documentation for the V2 smart contracts. Audit team will provide a document stating the prerequisites are met and that the audit is starting.",
+      "criteria": "All smart contract functionalities must be covered by the test suite, with successful execution of tests. Documentation should be complete, clear, and accurately reflect the smart contracts' functionalities and test processes.",
+      "report": "User & Protocol Requirements Document: https://drive.google.com/file/d/1IpIr2-8pPly46FpMgG4WJKQow2ePPYGK\nIndigo Paper: https://indigoprotocol.io/paper\nTest Suite Documentation: https://docs.google.com/document/d/1-JB5iq2v87Kh4AWpCTYoLtOwAb0GR6ePjjJPrEpLF80\nVideo of Test Suite passing: https://youtu.be/D8qwRzp0ui8",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 135000,
+      "promise": "A detailed audit report, including an executive summary highlighting key findings and recommendations.",
+      "criteria": "The audit report should comprehensively cover all aspects of the V2 smart contracts. The executive summary must clearly convey the audit's major findings and recommendations. Acceptance is based on the thoroughness and clarity of these documents.",
+      "report": "Link to Indigo v2 Audit Report: https://drive.google.com/file/d/1jZJ_T--sJnBWq8US8A3CsUSPt7sItRXx/view?usp=sharing\nLink to Audit Executive summary: https://drive.google.com/file/d/1_od6PMyIwrJCCAKs8ivdiSD-pYPEE6AJ/view?usp=sharing\nLink to Audit Walkthrough Video: https://youtu.be/k4j2T-jD67c",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 127500,
+      "promise": "An audit report specific to the upgrade path, along with an executive summary.",
+      "criteria": "The report must thoroughly evaluate the upgrade process, identifying any potential risks or issues. The executive summary should succinctly present the key outcomes. Acceptance depends on the comprehensiveness and clarity of these documents.",
+      "report": "Link to Indigo v2 Upgrade Audit Report: https://drive.google.com/file/d/1f0NP1xUe4FDxeOUdpGhtVX0QnyGLfq3r\nLink to Audit Executive summary: https://drive.google.com/file/d/1_od6PMyIwrJCCAKs8ivdiSD-pYPEE6AJ\nLink to Audit Video Walkthrough: https://youtu.be/k4j2T-jD67c",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 22500,
+      "promise": "A live and functioning V2 version of the Indigo Protocol on the Cardano mainnet.",
+      "criteria": "Successful deployment is evidenced by the smooth operation of the V2 protocol on the mainnet, with all functionalities working as intended and no critical issues.",
+      "report": "Transaction that submits upgrade to protocol: https://cexplorer.io/tx/8bb9c5228f2abd74c4d7792ce979c1212927f22668d5f75c667aa2d191b68ae5\nDatum of Version Record: https://cexplorer.io/datum/77a7630d54bbbfca54a1f2bc34925914a58eabf1a04a7ad6a81caf70c130b267\nTemp Check for V2 Deployment: https://forum.indigoprotocol.io/t/temperature-check-for-dao-approval-proposal-to-deploy-indigo-protocol-v2/13850\nThis transaction creates a \"Version Record,\" which is a UTxO that v1 contracts can use to get instructions on how to upgrade from V1 to V2. The creation of this transaction marks the successful deployment of Indigo Protocol V2.\nTo verify that the proper upgrade was utilized, you can view the datum of the version record and check that the \"V2 Upgrade Minting Policies\" and \"V2 Validator Hashes\" in the Temp Check for V2 Deployment match the records in the datum.\nVideo of Web App Interaction: https://youtu.be/MpHY_yuPryg\nTransaction in Web App: https://cexplorer.io/tx/6144fd08e8090b5488ba2781a9a6511cab831644b14c85e2d6893c4004d81816\nIn the video, the user opens a iBTC CDP with 10 ADA. This demonstrates the successful interaction with the Indigo v2 smart contracts via the Indigo web app.",
+      "kinds": [
+        "chain",
+        "other",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 22500,
+      "promise": "A publicly available, comprehensive audit report, along with an executive summary.",
+      "criteria": "The published report must be accessible to the public and provide a thorough analysis of the audit findings. The executive summary should effectively communicate the main points to a wider audience. Acceptance is based on the availability and quality of these publications.",
+      "report": "We decided to change the platform on which we provided the audit completion with the Indigo community. We utilized Discourse through a DAO Temp Check to share:\n・An Audit Executive Summary\n・A brief explanation of the test suite and upgrade path\n・The V2 smart contract validator hashes.\n\nWe decided at the time of the release to the public not to share the full audit report details and leave the audit summary at a high level, however we are willing to share that report now. We hope that the full audit report will satisfy the \"thorough analysis of the audit findings:\" https://drive.google.com/file/d/12XgsZ52Td8dHgoFmbblHZ0nk1RguZbR9/view?usp=sharing \nIn addition, the executive summary did not outline any specifics about what was found, however the audit report does share any \"Implemented Solution and Security Enhancements\" for each \"issue\" found. We hope that this will satisfy the reviewers request basically for more information.\nLink to temp check: https://forum.indigoprotocol.io/t/temperature-check-for-dao-approval-proposal-to-deploy-indigo-protocol-v2/13850\nThis temp check was shared with the community through X and Discord:\nhttps://twitter.com/Indigo_protocol/status/1776306028021248076\nhttps://discord.com/channels/816779565796032513/834798371872047125/1225865083851112510",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 4
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 67500,
+      "promise": "Project Closeout Report and Project Closeout Video",
+      "criteria": "The Project Clouseout Report has a length of 2/3 pages and provides a summary of the most important KPIs and how they were (or were not) addressed. Specifically, it includes:\n- Name of project and Project URL on IdeaScale/Fund\n- Project Number\n- Name of project manager\n- Date project started\n- Date project completed\n- List of challenge KPIs and how the project addressed them\n- List of project KPIs and how the project addressed them\n- Key achievements\n- Key learnings\n- Next steps for the product or service developed\n- Final thoughts/comments\n- Links to other relevant project sources or document",
+      "report": "Closeout Report - https://docs.google.com/document/d/1DgRxQ-9uZi_Ek8Y4JDkT595g-wjbprp9wR2BcxH6qEY/edit?usp=sharing\nCloseout Video - https://youtu.be/AQJyLs5d2ro",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2,
+      "cut": true
+    }
+  ]
+}

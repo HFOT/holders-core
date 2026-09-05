@@ -1,0 +1,69 @@
+{
+  "title": "Lending & Borrowing Aggregator",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 36000,
+      "promise": "・Research and decide on initial lending and borrowing protocols to be included\n・Reach out to individual teams to get info on contracts and any available API\n・Create a new wallet to interact with each of the chosen protocols\n・Initiate a loan on each protocol so we have txs to use in the mapping out of how each protocol handles \n・Create initial spec doc for the project detailing the protocols to use, how each protocol handles lending and borrowing and the approach we will use for building the indexer as well APIs we will use for some projects",
+      "criteria": "Have a spec doc completed with the list of initial protocols to be included along with information on the structure of the platform and links to the to smart contracts they use so we can create ways to track them along with details on indexing and interacting with them.",
+      "report": "Thank you for your previous feedback and quick reply, I have updated the doc based on your comments and open to any other feedback or changes needed.\n---\nHi Catalyst reviewers,\nApologies for the delay, we had planned to deliver this earlier but had been waiting after the Lenfi V2 vulnerability to see whether a relaunch date would be announced. As Lenfi V2 is still offline, we have proceeded with:\n・Full Liqwid Finance integration (data indexing + transaction building)\n・Lenfi V1 read - only integration (all loan data indexed)\n・A working Yield Aggregator & Positions Dashboard UI\n\nDeliverables attached\n・High-Level Design PDF – architecture, data-flow, API/contract refs, and screenshots\n・https://github.com/ADA-Markets/Docs/blob/main/Lending-Borrowing/High-Level-Design-v1-1.pdf \n・PNG of the high-level system diagram (embedded in the PDF)\n\nAs you will see in the doc above we are alot further along than just the design doc and have a platform with alot of the features already working on our dev environment so once this milestone is complete / approved we will submit milestone 2.\nIf anything is unclear or you’d like more details, please leave a comment and we’ll respond quickly.\nThanks for your time and support!",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 72000,
+      "promise": "・Detailed design doc detailing \n・Indexer Design\n・Database Design\n・Smart Contract Interaction\n・Lending & borrowing indexer POC\n・Track loan activity and available assets on 1 protocol\n・UI Design\n・Figma for initial layout",
+      "criteria": "・Detailed design doc completed and including:\n・Indexer Design\n・Database Design\n・Smart Contract Interaction\n・POC Indexer tracking loan activity and user positions on 1 protocol\n・Figma of initial UI should be complete including:\n・layout for overview page for all loans\n・Portfolio page showing current positions\n・checkout process which will include multiple pages but exact number unknown yet until full design research is complete.\n・minimum 3 pages - \n\n・Select token to provide \n・show results for that token\n・Build loan tx page",
+      "report": "Hi Catalyst reviewers,\nWe are pleased to submit the complete deliverables for Milestone 2, including:\n・✅ Detailed design documentation\n・✅ Screenshots from the live, working application (instead of just Figma)\n・✅ Indexer implemented and syncing live data from Liqwid Finance\n・✅ A video walkthrough of the working system\n\nOne note on the acceptance criteria is that instead of Figma we are further along and have a working app so we have included screenshots from the app and a walkthrough video. If anything else is required on this we can add that too.\nAll UI pages (Aggregator, Portfolio, Loan Overview) are functional and connected to real protocol data which you can see in the linked video - https://youtu.be/E62tq5kPUsA \nDetailed Design Doc - https://github.com/ADA-Markets/Docs/blob/main/Lending-Borrowing/Detailed-Design-Doc-v1.pdf \nBased on feedback in Milestone one we have added a Milestone Acceptance Criteria Checklist to the design doc above that goes through the acceptance criteria for this milestone.\nIf anything else is needed we are happy to expand on any section or add anything else that is needed in.\nThank you for your consideration!",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 48000,
+      "promise": "・Initial Lending and borrowing integration framework\n・1 protocol integration for creating and closing a loan\n・Build out UI to display lending and borrowing options\n・Build out database APIs\n・Display users current open positions",
+      "criteria": "・Ability to interact with the chosen protocol in dev environment.\n・Tester should be able to: \n・Deposit / provide collateral\n・Borrow an asset\n・Repay / close out a loan position\n・UI to display lending and borrowing opportunities should be complete\n・In this millstone it would be to show opportunities from first integrated protocol but later in the project when we add more protocols the same UI would be used.\n・Database API complete and able to retrieve the user's open positions and all L&B opportunities from the chosen protocol\n・Users current open positions can be retrieved from the database and i",
+      "report": "Dear Catalyst Review Team,\nI am pleased to submit the completion report for Milestone 3: Protocol Integration & UI Implementation as part of our funded Project Catalyst proposal.\nThis milestone is now fully completed with some extra features outside the scope of this milestone. A detailed video walkthrough has been prepared to demonstrate the implementation, and I have included timestamps to show clearly where each part of the acceptance criteria is addressed.\n📺 - https://youtu.be/LlYwedFXLwM\n✅ Core Deliverables Met:\n・1:14 - Lending & borrowing UI that displays available opportunities from the integrated protocol (Liqwid Finance)\n・1:31 - Open positions on Liqwid Finance\n・1:59 - APIs to retrieve user positions and protocol-level data \n・2:42 - Yield aggregator UI walkthrough\n・5:14 - Supply asset \n・6:27 - Borrow Asset (Loan)\n・9:02 - Withdraw asset\n・10:04 - Repay Loan\n・10:38 - 2nd protocol integrated\n・11:10 - Full portfolio section\n\nThank you again for your support. We're proud of the progress we've made and look forward to your feedback and to continuing our contribution to the Cardano ecosystem. If you need anything else for this milestone we are happy to provide it. \nThanks",
+      "kinds": [
+        "video"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 48000,
+      "promise": "・Integrate UI with Lending & Borrowing framework\n・Display indexed loan info on UI\n・Add second Lending & Borrowing Protocol",
+      "criteria": "・Ability to provide collateral and initiate a loan from dev environment through UI\n・Second protocol integrated and on both integrated protocols the user should be able to:\n・Deposit / provide collateral\n・Borrow an asset\n・Repay / close out a loan position\n・View loan activity from integrated protocols on UI\n・This will be an activity stream showing new loans created and loans repaid / closed out displayed in chronological order",
+      "report": "Dear Catalyst Review Team,\nThank you for the detailed feedback and suggestions on our previous Proof of Achievement. We have implemented the requested fixes and enhancements, which improve both accuracy and overall UX for end users.\nI have recorded a new video walkthrough to demonstrate the updates:\nTimestamps (new video):\n・0:00 – Feedback implemented overview\n・5:48 – Supply asset on Flow Finance\n・6:38 – Borrow asset on Flow Finance\n・9:11 – Flow vs. Liqwid Finance comparison\n・11:30 – Repaying a loan\n\n🔗 Updated Video link: https://youtu.be/4Q0eCGaQ5sk\nFor reference, here is the previous submission video and timestamps:\n 🔗 Previous Video link: https://www.youtube.com/watch?v=MUwbrEewHRY\n・0:50 – App homepage\n・1:09 – Protocol 1: Liqwid Finance\n・2:08 – Liqwid Finance positions\n・2:45 – Liqwid activity stream\n・3:03 – Protocol 2: Flow Finance\n・4:20 – Flow Finance positions\n・5:08 – Flow activity feed\n・5:30 – Repay a loan on Flow\n・6:30 – Supply asset on Flow\n・7:25 – Borrow asset on Flow\n・8:30 – Yield aggregator page\n・9:52 – User portfolio overview page\n・10:52 – Lending overview page\n\nIf there is anything further required, I am happy to provide additional details or info. Our next steps will be final testing and optimizations, followed by deployment in the coming weeks to complete the final milestone and open access for all Cardano DeFi users.\nThanks again for your time and valuable input.",
+      "kinds": [
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 36000,
+      "promise": "・Push lending and borrowing live on ADA Markets UI\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Lending and borrowing aggregator live on ADA Markets\n・Supporting a minimum of 2 protocols\n・User should be able to view all opportunities on the supported protocols on one page\n・On both protocols the user should be able to:\n・Deposit / provide collateral\n・Borrow an asset\n・Repay / close out a loan position\n・User will be able to see their open positions on the supported protocols under the portfolio page on ADA Markets\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Resubmitting after cover the issues mentioned through the discussion box. Thanks for your time.\n--\nWe are pleased to submit the final milestone for the Cardano Yield Hub a multi-protocol lending and borrowing aggregator for the Cardano ecosystem. The app is now fully functional and live:\n🌐 Live app: https://yield.ada.markets\nWhat’s Included\n・Full integration of Surf Lending and Liqwid Finance\n・Real-time protocol data: APYs, liquidity, TVL\n・Wallet-connected position tracking and loan management\n・Supply, borrow, repay flows across protocols\n・Indexed read-only support for Fluid Tokens and Indigo Protocol\n・DEX Aggregator integration\n\n🎥 Close-Out Video \n 👉 https://youtu.be/hKOvSr7LJ-g \n📄 Final Close-Out Report:\n 👉 https://github.com/ADA-Markets/Docs/blob/main/Lending-Borrowing/Final-Milestone-Lending-Aggregator.pdf \nThank you to the Catalyst reviewers and community for the valuable time, guidance, and constructive feedback throughout this process.\nAll milestones are now complete, and the project stands as a fully functioning MVP, ready for continued adoption and future integrations.\nPlease let us know if any additional information is required.\nThank You\n---------\n🎬 Supplementary Video (Reviewer Feedback & UI/UX Improvements)\nThis is outside the close out report but we really appreciate the time you put into the feedback from our previous submission, highlighting the UI/UX improvements and clarifications implemented based on your suggestions. - https://youtu.be/bEQN0Yw0u6o",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

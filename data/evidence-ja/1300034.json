@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・CardanoエコシステムのOntology\n・CAPユースケース、既存の用語集、オントロジーによる技術報告\n・機能性知識ベースとAPI\n・ナレッジベースAPIテスト\n\n技術的なレポート(出力2)は、使用例を記述し、関連するクエリ、データの種類、目的を特定し、抽出および視覚化戦略と共に記述します。 たとえば、回答をサポートするクエリと必要なデータをカバーします。\n・「過去24時間で最大のADA取引は?」\n・「20万ADAを超える財布はいくつあるの?」\n・「昨年の月間スマートコントラクト展開を見せるバーチャートを完成」",
+      "criteria": "・オノトロジーは、カルダノエコシステムにおける重要な概念と関係を包括的かつ包括的です。\n・CAPユースケース、既存の用語集、Cardano空間内の既存のオントロジーや知識指向のアプリケーションを識別する技術報告\n・ナレッジベースコンポーネントは機能的で、オントロジーの整列データの保存と検索が可能\n・試験カバー基本知識ベース操作",
+      "report": "CAP の README.md ファイルを更新し、macOS、Linux (Ubuntu)、WSL2 (** 正式にサポートされていない**) の環境の設定方法について詳しく説明します。 また、ドッカーコンポーズでインストールとテストをイラスト化したウォークスルービデオを作成しました。\n\n以下は、合意された出力(さらに、ウォークスルービデオ)のリストです。\n1。 Ontologyはプロジェクトgithubリポジトリで利用できます\nOntology の定義: https://github.com/mobr-ai/cap/blob/main/src/ontologies/cardano.ttl\nOntologyドキュメンテーション(ソースコード):https://github.com/mobr-ai/cap/blob/main/documentation/\nOntologyドキュメンテーション(ライブウェブサイト): https://mobr.ai/cardano\n2. 技術的なレポートはプロジェクト github のリポジトリで利用できます\nhttps://github.com/mobr-ai/cap/blob/main/documentation/pdf/technical report.pdf\n3. 機能的な知識ベースと API はプロジェクト github リポジトリで利用できます\nソースコード: https://github.com/mobr-ai/cap/tree/main/src/cap\nプラットフォームを実行する方法: https://github.com/mobr-ai/cap/blob/main/README.md\n4。 ナレッジベースAPIテストは、プロジェクトgithubリポジトリで利用できます\nソースコード: https://github.com/mobr-ai/cap/tree/main/src/tests\nテストを実行する方法: https://github.com/mobr-ai/cap/blob/main/README.md\n5. ウォークスルービデオ\nCAPをインストールし、macOSでDockerコンポーズを使用してテストを実行する方法を示すビデオ:\nhttps://drive.google.com/file/d/1KIYR1lgSsd8qCCSjePzgPHWicfxL0RRa/view?usp=share link"
+    },
+    {
+      "no": 2,
+      "promise": "CAPは、Cardano-node、db-sync、およびAPIから、Cardanoネットワークからデータを抽出する機能を使用します。 CAPは、Cardanoネットワークからデータを抽出し、セマンティック検索をサポートする3重店で構造化する必要があります。 この意味では、マイルストーン1で配信されたオントロジーに従って、データが整列されなければならない。 マイルストーン1で配信されたナレッジベースへのデータの抽出、変換、読み込みは、ETLsパイプライン(出力3)で行います。 実装されたメカニズムが予想される動作に応じて実行されているかどうかをアサートするテスト(出力4)を作成します。 つまり、抽出されたデータは正しく取得され、オントロジー定義に従ってナレッジベースで注入されます。\n・Cardanoネットワークからの基本的なデータ抽出\n・異物部品および腫瘍学アライメント機構\n・データを変換・読み込みするためのETLパイプライン\n・データ抽出とETLパイプラインテスト",
+      "criteria": "・データ抽出機構\n・ CAP使用例、データ型、データモデルで記述されたデータを、マイルストーン1の技術的なレポートでサポート\n・利用可能なテスト(出力4)によると、Cardanoネットワークからデータを正常に抽出する\n・データ抽出コンポーネントは、マイルストーン1の技術的なレポートで文書化されたデータの種類とデータモデルに応じて、腫瘍学アライメントメカニズムを持っています\n・ETLパイプラインは、利用可能なテスト(出力4)に応じて、ナレッジベースにデータを変換および読み込みます。\n・データ抽出とETLパイプラインのテストは、ミルで文書化されたデータタイプとデータモデルをカバー",
+      "report": "親愛なる触媒チーム、\nマイルストーン2の成果物を提出してください。 このマイルストーンは、データ抽出、オントロジーアライメント、および、Cardanoネットワークからのデータでセマンティックな知識ベースをポップするために必要なETLメカニズムの実装とテストに重点を置いています。\n\nマイルストーン2 配信可能(出力):\n1. データ抽出機構 – データを抽出するために `cardano-db-sync` を利用したコンポーネント。\n2。 腫瘍学のアライメント機構 - 抽出されたデータをマイルストーン1で配信されたオントロジーに従って構成されていることを保証するコンポーネント。\n3. ETL パイプライン – データの抽出、変換、知識ベースに抽出されたデータをロードするためのパイプライン。\n4。 テスト - データを正しく抽出、変換、および腫瘍学と整列する検証のテスト。\n5. ビデオ・ウォークスルー(bonus) – で利用可能: https://drive.google.com/file/d/1abX0FFlzOBuuKQ69AFEj5zZFaWLZfotB/\n\nGitHubリポジトリ: http://github.com/mobr-ai/cap\n\nお客様のレビューとフィードバックをお待ちしています。\n\nお問い合わせ\nMOBRのチーム"
+    },
+    {
+      "no": 3,
+      "promise": "・LLMベースのクエリエンジン\n・自然言語のクエリを処理するAPI\n・自然言語でシステムをクエリするための文書化\n・Walkthrough動画",
+      "criteria": "・LLM ベースのクエリエンジンは、マイルストーン 1 の技術的なレポートで文書化された使用例に記載されているものなどの自然言語の問い合わせをサポートしています\n・APIは、マイルストーン1のテクニカルレポートで文書化された使用例に記載されているような自然言語の問い合わせをサポートしています\n・自然言語でシステムをクエリする方法を文書化\n・Walkthroughビデオでは、自然言語でシステムをクエリする方法を示しています",
+      "report": "親愛なる審査者と触媒チーム、\nM3:LMLQueryエンジン開発完了\n配達可能:\nLLMベースのクエリエンジン\n・LLMモデル: https://ollama.com/mobr/cap\n・LLM クライアント コード: https://github.com/mobr-ai/cap/blob/main/src/cap/services/ollama client.py\n・自然言語クエリのLLMクライアントコードとAPIの統合は、CAPのリポジトリで確認できます。 https://github.com/mobr-ai/cap の\n\n自然言語のクエリを処理するための API\n・https://github.com/mobr-ai/cap/blob/main/src/cap/api/nl query.py\n\n自然言語でシステムをクエリするためのドキュメント\n・https://github.com/mobr-ai/cap/blob/main/documentation/nl queries/natural language.md\n\nウォークスルービデオ\n・https://drive.google.com/file/d/1ic Oc0qSU7rQ42CkoaU4P9KAEmxKKKKZJ4/view?usp=share link\n\nお問い合わせ\nMOBRシステムチーム."
+    },
+    {
+      "no": 4,
+      "promise": "・データ可視化のためのユーザーインターフェイスの設計\n・ダッシュボードコンポーネントを管理する機能のバックエンド\n・ダッシュボードのドキュメント",
+      "criteria": "・ダッシュボード機能\n・Dashboardは、ユーザーがデータをやり取りしたり視覚化したりすることができます。\n・チャート、グラフ、テーブルなどのダッシュボードUIコンポーネントを統合し、カスタマイズ可能なダッシュボード作成を促進\n・バックエンド機能はダッシュボードコンポーネントの管理が可能\n・ダッシュボードのドキュメンテーションは、ユーザーや開発者の明確な指示を提供します",
+      "report": "A. 出力:データの視覚化のための設計されていたユーザー インターフェイス\n受諾の条件:\n・ダッシュボードUIの機能\n・利用者はデータとやり取りし、視覚化することができます。\n・チャート、グラフ、テーブルの統合\n・Dashboardはピン留めされたアーティファクトによるカスタマイズ可能なレイアウトをサポートしています\n\n証拠:\n・フロントエンドコード(UI +ビジュアライゼーションコンポーネント):\n・ https://github.com/mobr-ai/cap-frontend\n・ライブ検証(アルファ展開):\n・https://cap.mobr.aiへ\n・現在、Google OAuthまたはCardanoウォレット(Lace、Eternl、Flint、Namiなど)経由でログインしてください。 アカウント作成は無効化され、リスト登録を待ち受けるリダイレクトされます。\n・アーティファクト生成クエリの実行例:\n・「上位1%のADAホルダーと総供給のためのパイチャートをプロット」\n・「2021年に制作された月間マルチアセットのバーチャート」\n・「最新の5ブロックを聴く」\n・「月間取引と出力のラインチャート」\n\nB. 出力:ダッシュボードコンポーネントを管理するバックエンド機能\n受諾の条件:\n・ダッシュボードコンポーネントの基本的な操作をサポート\n・ダッシュボードアイテムは、ユーザー生成のアーティファクト(テーブル、チャート)\n・認証およびユーザー固有のダッシュボードとの統合\n\n証拠:\n・ダッシュボード管理のAPIエンドポイント:\n・ https://github.com/mobr-ai/cap/blob/main/src/cap/api/dashboard.py\n・データベースモデルとORMスキーマ:\n・ https://github.com/mobr-ai/cap/tree/main/src/cap/database\n・ライブ検証(アルファ展開):\n・ https://cap.mobr.ai\n・(バックエンドの永続性を確認するためにアーティファクトをピント)\n\nC. 出力:ダッシュボードの文書\n受諾の条件:\n・利用者と開発者がダッシュボードとどのようにやり取りするかを文書化\n・視覚化・映像化の工夫\n・ダッシュボードコンポーネントのセットアップと利用ガイド\n\n証拠:\n・ダッシュボードのドキュメント(フロントエンドガイド):\n・ https://github.com/mobr-ai/cap-frontend/blob/main/docs/FRONTEND GUIDE.md\n・メインプロジェクト README(運用、設定、ワークフロー):\n・https://github.com/mobr-ai/cap-frontend/blob/main/README.md\n\nD. ボーナス証拠(配信可能として指定されていないが含まれている):\n・ビデオウォークスルーショー"
+    },
+    {
+      "no": 5,
+      "promise": "・システム全体のテストとAPI\n・試験の実行方法を説明する文書化\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・システムとAPIは、すべてのテストを通過します\n・ドキュメントは、包括的な方法でテストを実行する方法を説明する\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "親愛なるCatalystチームは、最終マイルストーンのPoAです。\nリクエストに応じて、テスト実行レポートと、各テスト実行の画面キャプチャ動画を追加しました。\nA. 出力: システムと API 全体のテスト\n受諾の条件:\n・システムとAPIは、すべてのテストを渡す\n・試験カバーシステム動作全般\n\n証拠:\n・プロジェクト GitHub リポジトリで利用可能な全テストスイート:\n・ https://github.com/mobr-ai/cap/tree/main/src/tests\n\nB. 出力: テストの実行と実行方法を説明するドキュメント\n受諾の条件:\n・試験の実行方法を明確に説明\n・プロジェクト GitHub リポジトリでドキュメントが使用可能\n\n証拠:\n・テスト実行レポート:\n・https://github.com/mobr-ai/cap/blob/main/documentation/pdf/test-run-report.pdf\n・試験文書:\n・ https://github.com/mobr-ai/cap/blob/main/documentation/tests/tests.md\n・テスト実行(画面キャプチャ):\n・https://drive.google.com/drive/folders/1YOgNsGgml2HxG9ECxJDOJahLMk0QgmMa?usp=sharing\n\nC.出力:最終クローズアウトレポート\n受諾の条件:\n・最終報告書は一般公開\n・プロジェクト成果とマイルストーンの結果をまとめたドキュメント\n\n証拠:\n・最終報告書(PDF)\n・ https://github.com/mobr-ai/cap/blob/c89a1702fbf3f9a1471d93dc2e86969cfa57e59c/documentation/pdf/project closeout report.pdf\n\nD. 出力: 最終的な閉鎖のビデオ\n受諾の条件:\n・最終クローズアウト映像を一般公開\n・完成したシステム、成果、最終成果をまとめた動画\n\n証拠:\n・公開ビデオリンク:\n・ https://www.youtube.com/watch?v=nRsa qiGhN0"
+    }
+  ]
+}

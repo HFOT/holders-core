@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "設計仕様書は、DAO ツーリング、ビジョン、ロードマップの実装の概要と説明を提供します。 また、既存のDAOツールのギャップをCardanoに識別し、当社のシステムがこれらをどのように対処するかを識別します.",
+      "criteria": "システム設計仕様は、Optim DAO Stackソフトウェアのコアコンポーネントを概略します。 このドキュメントでは、システム設計仕様は、Optim DAO Stackソフトウェアのコアコンポーネントを概説しています。 このドキュメントでは、Optim DAO Stackの開発と実装において、誰もが同じページにあることを確認し、情報を含めます。\n・デザイン哲学、キー機能\n・システムのアーキテクチャと運用方法の説明\n・各コア要素をブレイクダウンし、機構をクリアします。\n・ソフトウェアのモジュラーフレームワークの徹底的な概要を提供します",
+      "report": "リストされているすべてのシステム設計仕様要件で初期のシステム設計仕様が公開されるGitHub自然言語リポジトリへのリンク:\n・https://github.com/OptimFinance/public-documents/blob/experimental/Optim%20DAO%20Stack%20仕様書\n・デザイン哲学、キー機能\n・1～2ページ\n・導入事例\n・デザイン哲学\n・DAOツールを既存のガプスに\n・システムのアーキテクチャと運用方法の説明\n4-6ページ\n・システムアーキテクチャ\n・モジュラーフレームワーク\n・オンチェーンロジック\n・オフチェーン事業(詳細展開)\n・ユーザーインターフェイス\n・各コア要素とそのメカニズムをブレイクダウン。\n・ページ 6-8\n・コア部品・機構\n・スナップショット投票モジュール\n・Treasury Management Module [未来仕様/後方実装]\n・プロポーズ・実行モジュール[未来仕様/後方実装]\n・ソフトウェアのモジュラーフレームワークの徹底的な概要を提供します\n・ページ 5, 8-9\n・モジュラーフレームワーク\n・フューチャー・オプティム DAO スタック [フューチャー・スペック/後方実装]\n・将来のモジュールでエコシステムを展開する【未来の仕様実装】"
+    },
+    {
+      "no": 2,
+      "promise": "Optim DAO Stackの包括的なユーザーフレンドリーな公開文書は、GitBookでホストされます。 この情報リポジトリは、DAOツール、その機能、意図した使用例に精通するために必要な非技術的なユーザーをリソースに提供します。 このドキュメンテーションでは、コミュニティがODAO Stackの機能とモジュールの活用と実装を可能にし、エコシステム内の自律的な組織全体に一斉に住んでいます.",
+      "criteria": "Optim DAO Stackソフトウェアの機能と機能の詳細をGitBookでホストされている包括的なドキュメントリポジトリ。 これらの教育リソースは、ODAOツールキットを利用する方法を学ぶだけでなく、既存の代替手段と導入された新機能がCardano上のDAOガバナンスの品質と影響を促進するために使用される方法とは異なるシステム設計の決定を理解するための情報の主要なソースとして、非技術的なユーザーを応援します。 このドキュメントは、次のようになります。\n・デザイン哲学、新しいDAOツーリングフレームワークがなぜだったのかを説明する",
+      "report": "Optim DAO Stackソフトウェアの非技術的なGitbook文書へのリンク, 公開にアクセスし、指定されたすべての出力を含む:\n・https://optim-finance.gitbook.io/optim-finance/odao-stack/introduction\n\n・デザイン哲学、DAOツールのフレームワークが必要になった理由について説明する。\n・デザイン原則\n・https://optim-finance.gitbook.io/optim-finance/odao-stack/design-principles\n・Optim DAO Stackはなぜ?\n・https://optim-finance.gitbook.io/optim-finance/odao-stack/why-optim-dao-stack\n・現在の制限\n・https://optim-finance.gitbook.io/optim-finance/odao-stack/why-optim-dao-stack/current-limitations\n・ODAOソリューション\n・https://optim-finance.gitbook.io/optim-finance/odao-stack/why-optim-dao-stack/odao-solutions\n・コア部品・機械加工\n・主な特長\n・https://optim-finance.gitbook.io/optim-finance/odao-stack/key-features\n・スナップショット投票(起動時に利用可能)\n・https://optim-finance.gitbook.io/optim-finance/odao-stack/key-features/snapshot-voting\n・Treasury Management(フューチャーリリース)\n・https://optim-finance.gitbook.io/optim-finance/odao-stack/key-features/treasury-management\n・提案実行(フューチャーリリース)\n・https://optim-finance.gitbook.io/optim-finance/odao-stack/key-features/proposal-execution\n・システムモジュール性、フレームワーク拡張。\n・システムアーキテクチャ\n・https://optim-finance.gitbook.io/optim-finance/odao-stack/system-architecture\n・モジュラーフレームワーク\n・https://optim-finance.gitbook.io/optim-finance/odao-stack/system-architecture/modular-framework\n・オンチェーンロジック\n・https://optim-finance.gitbook.io/optim-finance/odao-stack/system-architecture/on-chain-logic\n・オフチェーン業務\n・https://optim-finance.gitbook.io/optim-finance/odao-stack/system-architecture/off-chain-operations\n・ユーザーインターフェイス\n・https://optim-finance.gitbook.io/optim-finance/odao-stack/system-architecture/user-interface\n・主な機能使用例\n・コアモジュール\n・https://optim-finance.gitbook.io/optim-finance/odao-stack/core-modules\n・スナップショット投票モジュール(V1実装)\n・https://"
+    }
+  ]
+}

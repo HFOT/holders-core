@@ -1,0 +1,59 @@
+{
+  "title": "KERI-based Authentication and Authorization Browser Extension by BLOCKTRUST",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "A) Public GitHub project, with README, LICENSE, and other artifacts\nB) Summarized results of reviewing and testing the code in https://github.com/WebOfTrust/signify-browser-extension and its dependencies, upon which much of this browser extension will be based and/or otherwise utilize.\nC) Created feature list as GitHub issues.\nD) Architecture diagram and description with inventory of all major component dependencies.\nE) Initial source code commits to begin establishing the architectural implementation.\nF) Risk list captured as GitHub Issue(s) and/or GitHub Discussion(s).",
+      "criteria": "A) The GitHub project is created with README content that allows readers to better understand what problems this project is addressing, the solution approach, and where to find out more information (for output A).\nB) The key project risks are identified and inform the project team.\nC) The known risks are at partially addressed by the Outputs above (and the work to generate them), and any remaining significant risks are documented as issues.\nD) All Outputs (A-F above) are public in GitHub.",
+      "report": "A) Public GitHub repository (project) is now live and public with the mentioned artifacts. It addresses the Acceptance Criteria A. For evidence, see https://github.com/KERIAuth/keriauth-blazor-wasm\nB) Results of reviewing and testing the code in https://github.com/WebOfTrust/signify-browser-extension \nAs part of our Fund 11 Milestone Report, we recorded a video that shows the signify-browser-extension and its dependency signify-ts, both being built and tested: https://drive.google.com/file/d/1C8-wIn0Ul8-oG4ioN2NCWyGHK85tR7Ue/view?usp=sharing \nThe signify-ts project at https://github.com/weboftrust/signify-ts has automated tests implemented and run via GitHub actions, which can be seen at https://github.com/WebOfTrust/signify-ts/actions with results https://github.com/WebOfTrust/signify-ts/actions/workflows/main.yml. We also included text output from our local running of the signify-ts build, unit tests, and integration tests, which can be found referenced in our following GitHub issue: https://github.com/KERIAuth/keriauth-blazor-wasm/issues/16 and at https://github.com/KERIAuth/keriauth-blazor-wasm/files/15448087/signify-ts.results.of.build.unit.test.and.integration.test.run.2024-05-26.txt.\nThe primary dependency the signify-browser-extension and this project’s keriauth-blazor-wasm code each have is the signify-ts library, which both we’ll also use to communicate with a KERIA agent service developed and maintained by the WebOfTrust community.\nWe also reviewed the code of signify-browser-extension. The code is under active development, and we continue to monitor commits to it in GitHub, as well as attend weekly meetings with the developers as part of the WebOfTrust implementer’s call. \nWe found the code’s good use of ECMAScript Modules modules and React resulted in clean code. Those choices may be easier to work with than the C# Blazor WASM design approach we have chosen. We stuck with C# Blazor WASM because of our familiarity with it and potential to leverage the co",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 20,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 25000,
+      "promise": "A) 3rd party components are incorporated in build or hosted services. Note, the initial architecture assumptions are: 0) Forked source code from https://github.com/weboftrust signify-browser-extension project. 1) Incorporated into the build: signify-ts, and cesr-ts libraries. 2) Hosted by us or others: keria (KERI Agent), keripy, KERI witness. These components are in open-source repositories at https://github.com/WebOfTrust.\nB) Install extension in Developer Mode in one Chromium-based browser\nC) Implemented initial UI views, flows, and navigation:\n C1) Welcome view\n C2) configure URL to KERI Agent (KERIA)\n C3) set or use passphrase (or possibly a passkey, depending on design)\n C4) interact with KERIA to create identifier (AID) and initial keypair\n C5) persist as applicable in local storage (chrome.storage.local)\n C6) UI menus and navigation\nD) Able to import or use an ACDC credential that may be stored in KERIA\nE) One or more implemented automated tests\nF) Azure build pipeline (or possibly GitHub actions) for continuous builds\nG) Supporting source code and artifacts in repo\nH) Other deliverables (to be determined during milestone phase).\nI) Milestone video",
+      "criteria": "A) The source code builds, installs in a Chromium browser (for Outputs A, B).\nB) Demonstration of the extension in a Chromium browser, highlighting the developed features in Outputs C1-C6 and D.\nC) One or more automated tests pass are written and pass (for Output E).\nD) Azure build pipeline builds (for Output F).\nE) Source code is all in GitHub (for Output G and others).",
+      "report": "All outputs, acceptance criteria, and evidence of milestone completion are indeed completed. Links to the detailed Milestone Report and Video are here: https://github.com/KERIAuth/keriauth-blazor-wasm/issues/1",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 25000,
+      "promise": "A) Coded protocol(s) in Typescript (delivered as JavaScript) API between a verifying website and the extension.\nB) Created (or used existing sample of) a verifying website.\nC) Third-party KERI component source can issue a credential (in ACDC format) to extension holder.\nD) Extension User can authorize with website with KERI AID and cryptographic signing.\nE) Extension User can authenticate with website. Note, in this proof-of concept, the website might not completely verify and validate the presented credential, although that is the stretch-goal.\nF) The authenticating user's (controller's) identifier (an AID) will present its Key Event Log, either directly to the website via the Javascript API, or via Key Event Receipts via witnesses (or watchers or other validators) that the controller has delegated.\nG) Supporting source code and artifacts in repo.\nH) The project team has conducted one or more conversations with Cardano blockchain projects to better understand their problems and how this KERI extension solution concept may address their needs. That conversation is documented.\nI) Other deliverables (to be determined during milestone phase).\nJ) Milestone video.",
+      "criteria": "A) The project's planned features are implemented and functioning well (including Outputs A-F).\nB) GitHub issues are updated GitHub, with no blocking issues open.\nC) All automated tests passing.\nD) One or more investigations (e.g., through conversation) of how the feature set might be used with other Cardano projects is conducted and documented.\nE) End-to-end demonstration video is produced.",
+      "report": "Outputs (with evidence of Milestone Completion comments)\nA) Coded protocol(s) in Typescript (delivered as JavaScript) API between a verifying website and the extension.\n・Done. The Typescript source for this API defines typescript interfaces for the messages and responses communicated between a web page and the extension’s content script. These are further described on the project’s README.md and Messages Page.\n\nB) Created (or used existing sample of) a verifying website.\n・Done. For our integration testing, we are leveraging the “reg-pilot” website project https://github.com/GLEIF-IT/reg-pilot-webapp which is described in its full context here: https://github.com/GLEIF-IT/reg-pilot \n・This is completed as demonstrated in the video (link toward the end of this report).\n\nC) Third-party KERI component source can issue a credential (in ACDC format) to extension holder.\n・Done. For the Milestone 3 deliverable, we used a reg-pilot-webapp hosted by Roots-ID here: https://reg-pilot-webapp-test.rootsid.cloud/. They populated it with test credentials via scripts similar to those in signify-ts, here: https://github.com/WebOfTrust/signify-ts/blob/main/examples/integration-scripts/credentials.test.ts, as was demonstrated in our Milestone 1 report. (reference that. Also include screenshots from M1 report, and screenshots of credentials in M3.)\n\nD) Extension User can authorize with website with KERI AID and cryptographic signing.\n・Done. This is completed as is demonstrated in the video, integrating with the website https://cardano-watcher.rootsid.cloud/\n\nE) Extension User can authenticate with website. Note, in this proof-of concept, the website might not completely verify and validate the presented credential, although that is the stretch-goal.\n・Done. This is essentially completed as demonstrated in the video, showing an integration with https://reg-pilot-webapp-dev.rootsid.cloud/. More complete validation of the credential is under development within the KERI community. \n\nF) The au",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 33,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 20000,
+      "promise": "A) Documented recommendations for potential adoption by Cardano projects.\nB) Release available via GitHub and/or Chrome Web Store\nC) Project Closeout Report.\nD) Project Closeout Video.",
+      "criteria": "A) Summary write-up of recommendations is at least 2 pages and clear. Published to Catalyst community group on Catalyst’s Telegram or Discord.\nB) Evaluator can download and install browser extension and use with test site\nC) Closeout report is clear\nD) Closeout video is clear and includes all major features implemented",
+      "report": "* GitHub updates can be seen at https://github.com/KERIAuth/keriauth-blazor-wasm and includes updated code, build actions, and issues\n* Project Close-out Report at https://github.com/KERIAuth/keriauth-blazor-wasm/issues/68 Note, this references link to recommendations for potential adoption by Cardano projects.\n* Product install and usage demonstrated in video, below, and documented here: https://github.com/KERIAuth/keriauth-blazor-wasm/issues/70\n* Closout Video in two formats:\n・5 minutes (sped up): https://youtu.be/ozL9makLP1U\n・5:46 minutes: https://youtu.be/zsjYAkT9hok",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

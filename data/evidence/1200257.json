@@ -1,0 +1,67 @@
+{
+  "title": "zkFold: UPLC Converter",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40000,
+      "promise": "Context: UPLC converter is a CLI tool to be integrated with Cardano on-chain language tools so that smart contract developers can create zero-knowledge smart contracts using the familiar smart contract languages.\nTask: Create documentation for the tool, specifying its input and output. The specification describes the work of the arithmetic circuit compiler. The API documentation includes the description of commands available to the CLI tool.\nOutputs:\n・Design UPLC Converter specification (pdf)\n・Create UPLC Converter API docs (pdf)",
+      "criteria": "Acceptance:\n・Design UPLC Converter specification (pdf). The specification file describes the work of the arithmetic circuit compiler\n・Create UPLC Converter API docs (pdf). The API documentation file includes the description of commands available to the CLI tool",
+      "report": "We have created the documentation for the tool, specifying its input and output. The updated version contains the error term in UPLC converter. The specification describes the work of the arithmetic circuit compiler. The API documentation includes the description of commands available to the CLI tool.\nDesign UPLC Converter specification:\nhttps://docs.zkfold.io/symbolic/tools/uplc-converter/\nCreate UPLC Converter API docs:\nhttps://docs.zkfold.io/symbolic/tools/uplc-converter/#cli-commands",
+      "kinds": [
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60000,
+      "promise": "Context: UPLC converter is a CLI tool to be integrated with Cardano on-chain language tools so that smart contract developers can create zero-knowledge smart contracts using the familiar smart contract languages.\n\nTask: We develop a prototype that works with a subset of UPLC (some language constructions are not allowed and a limited number of builtins supported).\n・Implement a prototype for a limited subset of UPLC (Haskell)\n・Implement a comprehensive test suite (Haskell)\n\nOutputs:\n・A prototype for a limited subset of UPLC (Haskell)\n・A comprehensive test suite (Haskell)",
+      "criteria": "In terms of the builtin operations, the prototype will be limited to arithmetic and comparison operations on integers, comparison operations on bytestrings, and the “IfThenElse” operation. It will also use the November 2022 spec for UPLC instead of the latest one. We validate the prototype by comparing the result of UPLC script execution against the result of the execution of the corresponding arithmetic circuit.\n・A prototype for a limited subset of UPLC (Haskell) can be found in our repo\n・A comprehensive test suite (Haskell) can be found in our repo",
+      "report": "We have developed a prototype that works with a subset of UPLC and comprehensive test suites:\nA prototype for a limited subset of UPLC (Haskell):\nhttps://github.com/zkFold/zkfold-base/blob/main/zkfold-uplc/src/ZkFold/Symbolic/UPLC/Converter.hs#L33\nA comprehensive test suite (Haskell)\nhttps://github.com/zkFold/zkfold-base/pull/359\nIn addition, please see a video explaining the prototype and demo showcasing the prototype converting the UPLC for ease of verification:\nhttps://github.com/zkFold/project-catalyst-reports/tree/main/UPLC%20Converter\nAs requested, we have added a comprehensive video to YouTube explaining all the details:\nhttps://youtu.be/vvOEg37Wlzc",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 60000,
+      "promise": "Context: UPLC converter is a CLI tool to be integrated with Cardano on-chain language tools so that smart contract developers can create zero-knowledge smart contracts using the familiar smart contract languages.\nTask: We develop arithmetic circuits for the set of basic builtin operations (cryptographic operations and serialization are excluded).\nOutputs: \n・Arithmetic circuits for basic builtin operations (Haskell)",
+      "criteria": "We develop arithmetic circuits for the set of basic builtin operations. These operations include all UPLC builtin operations from the latest specification, except cryptographic operations (blake2b_224, blake2b_256, sha2, sha3, BLS12_381 elliptic curve operations), conversions between integers and bytestrings, and the serialiseData operation.\n・Arithmetic circuits for basic builtin operations (Haskell) can be found in our repo",
+      "report": "We have completed the milestone as promised. The code is open-source and is published on our GitHub:\n\n・https://github.com/zkFold/symbolic/blob/main/symbolic-uplc/src/ZkFold/Symbolic/UPLC/Evaluation.hs#L399\n\n・https://github.com/zkFold/symbolic/blob/main/symbolic-uplc/src/ZkFold/Symbolic/UPLC/Evaluation.hs#L300\n\n・https://github.com/zkFold/symbolic/blob/main/symbolic-uplc/test/Test.hs#L93",
+      "kinds": [
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 10000,
+      "promise": "Context: UPLC converter is a CLI tool to be integrated with Cardano on-chain language tools so that smart contract developers can create zero-knowledge smart contracts using the familiar smart contract languages.\nTask: We develop arithmetic circuits for the rest of builtin operations.\nOutputs:\n・Arithmetic circuits for cryptographic builtin operations (Haskell)\n・Arithmetic circuits for complex builtin operations (Haskell)",
+      "criteria": "・Arithmetic circuits for cryptographic builtin operations (Haskell) can be found in our repo\n・Arithmetic circuits for complex builtin operations (Haskell) can be found in our repo",
+      "report": "We have completed the milestone. Below are the milestone outputs:\nHashing algorithms:\nhttps://github.com/zkFold/symbolic/tree/main/symbolic-base/src/ZkFold/Symbolic/Algorithm/Hash\n\nSignature verification:\nhttps://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Algorithm/ECDSA/ECDSA.hs\n\nConversions between integers and bytestrings are here:\nhttps://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/UInt.hs\n\nOperations on builtin Data:\nhttps://github.com/zkFold/symbolic/blob/main/symbolic-uplc/src/ZkFold/Symbolic/UPLC/Data.hs\n\nBLS12-381 definitions are here:\nhttps://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Algebra/EllipticCurve/BLS12_381.hs\nhttps://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/EllipticCurve/BLS12_381.hs",
+      "kinds": [
+        "code"
+      ],
+      "links": 12
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 30000,
+      "promise": "Context: UPLC converter is a CLI tool to be integrated with Cardano on-chain language tools so that smart contract developers can create zero-knowledge smart contracts using the familiar smart contract languages.\nTask: We develop a CLI prototype that can perform the core functionality of our tool, compiling UPLC code into circuits. Also, in the final milestone we will complete the CLI tool.\n・Build a CLI tool prototype: load UPLC scripts in different formats and produce circuits (Haskell)\n・Implement a CLI tool command: zero knowledge circuit generation (Haskell)\n・Implement a CLI tool command: Plutus verifier script generation (Haskell)\n・Implement a CLI tool command: ZK prover info generation (Haskell)\n・Final close-out report (PDF)\n・Final closeout video\n\nOutputs:\n・load UPLC scripts in different formats and produce circuits (Haskell) \n・zero knowledge circuit generation (Haskell)\n・Plutus verifier script generation (Haskell)\n・ZK prover info generation (Haskell)\n・Final close-out report (PDF)\n・Final closeout video",
+      "criteria": "・load UPLC scripts in different formats and produce circuits (Haskell) can be found in our repo\n・zero knowledge circuit generation (Haskell) can be found in our repo\n・Plutus verifier script generation (Haskell) can be found in our repo\n・ZK prover info generation (Haskell) can be found in our repo\n・Final close-out report (PDF) can be found in our repo and is publicly available\n・Final close-out video can be found in our repo and is publicly available",
+      "report": "We have finalised the project and please see the below links:\n・load UPLC scripts in different formats and produce circuits (Haskell) can be found in our repo\n\nhttps://github.com/zkFold/zkfold-cardano/blob/main/zkfold-uplc-converter/app/Main.hs#L151\n・zero knowledge circuit generation (Haskell) can be found in our repo\n\nhttps://github.com/zkFold/symbolic/blob/main/symbolic-uplc/src/ZkFold/Symbolic/UPLC/Converter.hs#L38\n・Plutus verifier script generation (Haskell) can be found in our repo\n\nhttps://github.com/zkFold/zkfold-cardano/blob/main/zkfold-uplc-converter/app/Main.hs#L101\n・ZK prover info generation (Haskell) can be found in our repo\n\nhttps://github.com/zkFold/zkfold-cardano/blob/main/zkfold-uplc-converter/app/Main.hs#L99\n・Final close-out report (PDF) can be found in our repo and is publicly available\n\nhttps://github.com/zkFold/zkfold-cardano/blob/0d4435088f657f4c0b211fd27dac30dc3c5a7bfe/zkfold-uplc-converter/1200257%20-%20zkFold_%20UPLC%20Converter%20-%20Close%20out%20report.pdf\n・Final close-out video (optional, long version) can be found here: \n\nhttps://youtu.be/OEnyaXMN0Oc\n・As requested, the final close-out video (4min) can be found here:\n\nhttps://youtu.be/i1RMyyepKb0",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

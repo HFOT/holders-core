@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "ブロックチェーン・リアル・ワールド・アセット・セクターでの経験を積む金融工学コンサルタントと、コンフィギュレーション・オブ・カストディアル・エンティティティティティとコンプライアンスは、初期のOUSDシステムアーキテクチャの徹底的な見直しを実施する予定です。 その結果報告書は、資本運用、現実世界資産、堅牢なプロトコル設計の業界リーダーとのコンサルティングにより、システム内で利用されるシステムロジック、リスク評価、および歩留まり戦略を検証するのに役立ちます.",
+      "criteria": "・Optimの公共のGitbookにリンクされている協議に基づくPDFレポート。すべての情報、発見、検討、見直しの過程で推奨される改善\n・コンサルタントの資格の一覧、LinkedInプロファイルへのリンクが提供されます。\n\nコンサルタントの資格は、以前の経験/経験を持っている、最小限に行われます。\n- IOHK / IOGによる安定コインコンサルティング\n-米国トップ20大学の数学、物理学、または入学学位\n金融およびソフトウェア工学の10+年の専門の経験",
+      "report": "・Optim Gitbookでは、システムに関する様々な側面に初期の相談レビューが掲載されているPDFへのリンク。\n・https://optim-finance.gitbook.io/optim-finance/ousd/financial-engineering-audit\n・Gitbookに掲載された資格を持つコンサルタントのLinkedInプロファイルへのリンク\n・https://www.linkedin.com/in/andy-singleton-831144/"
+    },
+    {
+      "no": 2,
+      "promise": "Optim Labsチームは、コンサルタントのレビューから、システム全体のアーキテクチャ、担保リスクプロファイル、および計画されたアルゴリズム市場操作に対する改善と調整を考慮に入れます。 その結果、最終的な技術仕様は、システム設計をスマートコントラクトエンジニアリングチームと通信し、アプリケーションの開発を開始するために使用されます.",
+      "criteria": "システム設計仕様書は、OUSD Stablecoinシステムのコアコンポーネントを概説します。 システムのアーキテクチャ、運用、オフチェーンのエンティティティの実装、資金の流れ、および資本運用について説明し、各要素を分解します.",
+      "report": "・OUSDリザーブ\n・保存基準\n・安定性・評判\n・コンプライアンス\n・スマートコントラクトセキュリティ\n・入居者管理\n・資産価値計算の保存\n・ダイナミックリザーブアセット調整メトリック\n・ダイナミックリザーブ調整\n・資金の円滑化・調達・フロー\n・Yieldモジュール\n・OUSD DEX AMO\n・フューチャーモジュール(v2)\n・AMO攻略\n・sOUSD償還メカニズム\n・ペグ保護\n・市場深度と流動性\n・ガバナンス・リスク・フレームワーク\n・リスク資本要件\n・第一次資本構成\n・アセット配分フレームワーク\n・静的ガバナンスパラメータ\n・ダイナミックアロケーションシステム\n・金融エンジニアリング監査"
+    },
+    {
+      "no": 3,
+      "promise": "前のマイルストーンのシステム設計仕様は、アイケンおよび/またはPlutus V3を使用して実装され、OUSD stablecoinシステム用のスマートコントラクトのコアセットを開発します。 生成されたオープンソースのコードベースは、システムロジック、コア機構、キーコンポーネントの社内検証と徹底的なテストのために、プライベートテストネットまたは限定カセット非公開メインネット上に展開されます。 これらのスマートコントラクトの機能を説明するビデオ・ウォークスルーは、リード・デベロッパが、Catalyst レビュアーのためのOUSDシステムの高いレベルの概要を説明し、コードベースに精通します.",
+      "criteria": "オープンソースの Aiken または Plutus V3 コードベースで、コアシステムの設計仕様コンポーネントを実装します。\nコードウォークスルーの動画は、スマートコントラクトのメカニズムを記述し、プライベートテストネットまたは限定アセットの非公開メインネット展開のライブインタラクションを非技術的なマイルストーンレビュアーと、より広いCatalystコミュニティがシステムの範囲を理解しています.",
+      "report": "・OUSDアーキテクチャのAikenコードベース実装\n・https://github.com/OptimFinance/clean-code/tree/cousd\n・スマートコントラクトコンポーネントを記述するためのコードウォークスルーの動画\n・https://drive.google.com/file/d/1dK5WyRvkMPahXA5gkzu69ZmcVzw0tL1 /view?usp=sharing\n・展示\n・資金の流れ\n・ファイル:\n・https://github.com/OptimFinance/clean-code/blob/cousd/validators/deposit amo.ak\n・タイムスタンプ:\n・2:26\n・出金・退出機構\n・ファイル:\n・https://github.com/OptimFinance/clean-code/blob/cousd/validators/deposit amo.ak\n・https://github.com/OptimFinance/clean-code/blob/cousd/validators/staking amo.ak\n・タイムスタンプ:\n・2:26\n・16:40\n・Durationロック機構\n・ファイル:\n・https://github.com/OptimFinance/clean-code/blob/cousd/validators/otoken policy.ak\n・https://github.com/OptimFinance/clean-code/blob/cousd/validators/otoken rule.ak\n・タイムスタンプ:\n・8:25\n・Yield accrual ロジック\n・ファイル:\n・https://github.com/OptimFinance/clean-code/blob/cousd/validators/collateral amo.ak\n・https://github.com/OptimFinance/clean-code/blob/cousd/validators/sotoken rule.ak\n・タイムスタンプ:\n・6:50\n・14:38\n・動画で参照される技術仕様:\n・OToken戦略ボルト\n・https://github.com/OptimFinance/public-documents/blob/main/OTOKEN%20High%20Level%20Specification.pdf"
+    },
+    {
+      "no": 4,
+      "promise": "UX/UI の設計は OUSD のユーザー インターフェイスの機能そして構造を視覚化するために作られます。 これは、最終的なWebアプリのフロントエンドのビジュアル表現として機能し、エンドユーザーの視点からアプリケーションをナビゲートするユーザーの旅と相互作用の流れを詳述します。 このインターフェイスは、オプティムの製品スイートの残りの部分で、自社のエコシステムで同様のユーザーエクスペリエンスをユーザーに馴染ませるために、凝集したブランドアイデンティティを形成します。\n**評議員は、告訴した場合、元の提案を振り返り、投票者によって承認された元のCatalystの提案が州によって承認されたところでもっと注意深く読むべきです:\n「ユーザーインターフェイスとユーザーエクスペリエンス開発:アプリケーションのフィグマモックアップは、以前の製品に関して非常に成功したので、コアオプティムDAOコントリビューターのヘルプとフィードバックでスケッチされ、反復されます。 完了すると、アプリケーションのこれらのFigmaモックは、アクセス可能でユーザーフレンドリーなチュートリアル記事を作成して、OUSDシステムを使用してユーザーを教育を開始するために使用されます。\n**説明と明確化:**\nこれは、UX/UIが設計され、レビューされるが実装されていないことを意味します",
+      "criteria": "OUSDシステムのUX/UIとコアインタラクションを概説する図表ボード。 このボードは、ユーザーインターフェイスの視覚的な表現を提供し、ユーザーエクスペリエンスのあらゆる側面を詳述します。 ソフトウェアインターフェイスのシームレスで直感的な性質を示す、高忠実度モックアップと包括的なユーザーフローが含まれます.",
+      "report": "・フィグマボードへのリンク、またはフィグマ反復プロセスのスクリーンショットを集計するドキュメントへのリンク(プラットフォームの許可を共有する場合には問題が発生します)。\n・https://www.figma.com/design/hLU2ToXcDSvSrt6dQXKPKz/OUSD-Web-App-Catalyst-Milestone?node-id=828-3040&p=f&t=Mg44njdS4tU8l5uv-0"
+    },
+    {
+      "no": 5,
+      "promise": "・Optim Labsは今後も、DeFi製品の安全性とセキュリティへの取り組みを推進し、徹底した監査サービスを実施し、エコシステムの評判の良い企業からOUSDコアコンポーネントの完全性を評価し、エコシステムへの信頼度を高めていきます。 これにより、OUSD の stablecoin システムは、Cardano DeFi のはるかに必要な改善分野で成長をスケールアップするために必要な Cardano コミュニティからの信頼とサポートを持っていることを確実にします。\n\n*この文脈の規定は、評判の良い監査会社を見つけることを意味し、エンゲージメントの条件を定義し、コスト構造に合意し、開始ウィンドウで合意した意図の手紙に署名することを意味します。 監査の支払いや開始を意味しません*\n・Testnetやメインネットベータの展開がシステムの要件をテストし、製品の完全性を実際の環境で保証するために開始されます\n・最適化は、最終クローズアウトレポート+最終クローズアウトビデオを完成したOptim Gitbookで公開します",
+      "criteria": "・選択されたセキュリティ会社パートナーからの招待状は、全監査のスコープと予想されるタイムラインを除外し、公開されたコミュニティチャネルで発表されます。\n・Testnetやメインネットベータ展開\n・最終報告書は一般公開+ 最終クローズアウトビデオは、OUSD提案のために完了したCatalystの作業をまとめたOptim Gitbookで公開されています\n\n*この文脈での監査の調達は、評判の良い監査会社を見つけて、エンゲージメントの条件を定義し、コスト構造に合意し、意図の手紙を署名することを意味する",
+      "report": "・監査会社が監査のスコープと時間枠を外す際の意図の開催状へのリンク。\n・https://optim-finance.gitbook.io/optim-finance/oada/resources#audit\n・ユーザーインタラクションのtestnetやメインネットベータビデオ、プロトコル実行を示す対応するtx IDへのリンク\n・動画:https://drive.google.com/file/d/1NEzjy7JCV7f3Dyk3OvWbZEN4evmVHQE/view?usp=sharing\n・OUSDトークン契約: https://cardanoscan.io/token/26a1fdd21a28483fd7f1ccb690571101ee58e2174365689cc48924b4\n・OUSD ミント Tx: https://cardanoscan.io/transaction/c1a74dcd819f8007950025864f54f6283aaa89ae629f4f3d92650e130bf3eb0d\n・Stake OUSD > sOUSD Tx: https://cardanoscan.io/transaction/0baae49d34447f3913307d3caeb50169eb0ea989ac8fa17569dc4dfa4ad9e17c?tab=tokenmint\n・最終報告書へのリンク\n・https://drive.google.com/file/d/1yN8UOQZwr-fKacPy6JiFxoZUQVtv4XFl/view?usp=sharing\n・最終クローズアウト映像へのリンク\n・https://youtu.be/CRkOLwgvSyE"
+    }
+  ]
+}

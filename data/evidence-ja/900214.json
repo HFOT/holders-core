@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Cardano の WalletConnect 利用に必要な SDK(typescript - すべての WalletConect SDK は、この言語で開発されます)。 オリジナルの提案説明に含まれているため、このSDKの使用方法にもドキュメントが提供されます。 https://cardano.ideascale.com/c/idea/419164",
+      "criteria": "SDKの公開",
+      "report": "Adalib SDK [https://github.com/dcSpark/adalib/tree/development/example-next] は、dapps が開発され、Cardano ウォレット接続を共通のコネクタインターフェイスで有効化するための合理化されたソリューションを提供します。 コネクタ内のCIP-30規格を密接にエミュレートしようとします。 dapp 開発者は、これらのコネクタを使用して、有効な CIP-30 API を取得し、このライブラリが提供する付属のタイピングから利益を得ることができます。\nSDK は dapp 開発者に、Cardano ウォレットの広い範囲をサポートする機能を提供します。また、ウォレットConnect プロバイダー インターフェイスを利用することで、あらゆるブロックチェーンのユニバーサルなサポートを保証します。\n\nAdalib SDKの機能性を実証するためには、従来のインジェクションメソッド(月次レポートでPoEとして共有)を使用して、デモDAppが作成され、正常にFlintに接続され、また、接続セッションIDでウォレットConnect QRCodeモーダルを表示します。\n\nWalletConnect チームが提供したガイダンスに合わせて、ウォレットConnect UniversalProvider パッケージにプルリクエストを送信し、CardanoProvider [https://github.com/WalletConnect/walletconnect-monorepo/pull/1880] - PR は既にマージされました。\nこのインテグレーションは、Cardano Dapps、WalletConnectのリレーサーバー、および接続されたCardanoウォレット間のRPC接続を有効にするには不可欠です."
+    },
+    {
+      "no": 2,
+      "promise": "人気の Cardano dApp の 1 つで WalletConnect の統合. インテグレーションはプラットフォームに依存しない。 TS SDK は dApp のコードベース( dApp のほとんどは typescript で書かれている) に追加されます.",
+      "criteria": "Cardano dApp と Cardano 用の WalletConnect をサポートする例の dApp",
+      "report": "私たちは、Wingridersプラットフォームの成功した統合のエキサイティングなニュースを共有するために興奮しています WalletConnect. Wingriders の専任チームは、Cardano Dex の主要デックスで、DApp に WalletConnect をシームレスに組み入れ、dcSpark が開発した効率的な adalib SDK により、Wingriders の専任チームで知られています。 この統合は、Wingriders の重要なマイルストーンをマークし、新しい可能性を開き、プラットフォームのユーザーエクスペリエンスを強化します。\n\nhttps://twitter.com/wingriderscom/status/165986595436032?s=61&t=ta6m7fiD5fgsMH4xNw4Q4A"
+    },
+    {
+      "no": 3,
+      "promise": "1+ CardanoウォレットでウォレットConnectをサポート https://cardano.ideascale.com/c/idea/419164 に記述されているように WalletConnect を Flint Wallet に統合します。 したがって、iOSとAndroidの両方のプラットフォームに適用されます.",
+      "criteria": "WalletConnect は 1+ Cardano Wallet でサポート",
+      "report": "私たちは、PoM2(PoM2を報告する論理的な順序を維持することを望んでいた)から、以前の約束を果たすことを約束したので、この更新を共有する遅延を申し訳ありません。 しかし、ついに2ヶ月前に発表すると、ウォレットコネクトをFlintに導入しました。\n\nさらに、現在進行中の取り組みの一環として、今後、PoM4 と連携して、Cardano ビルダー全員のオープン助成金を開始しました。 開発者やチームが6月31日までの提案や統合を提出することを奨励します。 私たちの主張を検証するには、公式Twitterアカウント(https://twitter.com/dcspark io/status/1659301855430672384?s=61&t=ta6m7fiD5fgsMH4xNw4Q4A)、および詳細なブログ投稿(https://medium.com/dcspark/walletconnect-integration-grants-for-cardano-wallet-andapp-devel-andapp-383a)、および詳細なブログ投稿(https://medium.com/dcspark/walletconnect-integration-grants-for-for-cardano-wallet-and-dev-de-app-de-de-de-app-383a)を確認できます。\n\n私たちは、私たちが作った進捗を誇りに思っています。また、エキサイティングな投稿を受信し、Cardanoコミュニティ内でさらにWalletConnectの統合を促進します."
+    },
+    {
+      "no": 4,
+      "promise": "WalletConnectは、1+ dApp、1+ウォレットでサポートし、他のウォレット&dAppsに資金を調達し、Cardanoエコシステムで複数のdAppsとウォレットを配布し、配布されたWalletConnect統合を付与します.",
+      "criteria": "残りの資金を他のウォレット/アプリの助成金として分配し、統合を行う",
+      "report": "助成金の第2フェーズ、Cardano DApps と Wallets の開発者のための公開助成金を正常に終了したことを共有して、私たちは興奮しています。 印象的な投稿数が45件のうち、17件が選ばれました。\n\n当社の厳格な選択プロセスでは、Cardanoコミュニティ内で表彰可能な評判を保持し、エコシステムへの有望な影響を示すプロジェクトを優先しました。 このプロセスを合理化するために、公式の投稿フォームを導入しました。 トッププロジェクトをショートリストすると、エビデンスフォームのプルーフを開始し、重要な情報を収集し、助成金の資格を確保しました。 彼らのコミットメントに対する証言として、すべてのファイナリストは、彼らのプロジェクトの統合をウォレットコネクトと実証する証拠を発表しました。\n\nシームレスな付与分布を確保するために、すべてのファイナリストがテスト取引を認証し、KYCプロセスを実行するために必要なものとします。 助成金は、ADA の約 5.5k USD 相当の金額に相当し、Cardano のメインネットネットワークに分散しました。\n\n公式Twitterアカウントで付与結果を発表いたしました。 詳しくはこちらをご覧ください。\n公式Twitter発表\nhttps://twitter.com/dcspark io/status/16884897780423516?s=61&t=TyZH5TZoVUN7ozpPEU0qRA\n\n透明性のために、我々は共有しています:\n\n証拠のビデオの証拠を含むフォルダ:証拠のビデオの証拠\nhttps://drive.google.com/drive/u/1/folders/14am cVs8WLdRHXy HW-HVSHWd4j 3Osr\n分散トランザクションのリスト:トランザクションリスト\n\nhttps://explorer.cardano.org/en/transaction?id=5a6f74a4e36f2d4ab3e6ca57ee830e87b91a2284b034cc60b19362226ed262\nhttps://explorer.cardano.org/en/transaction?id=59fdeca73de5592cf16db6a035d9cf784af0d98845abd5b3028530e20f4fa90b\nhttps://explorer.cardano.org/en/transaction?id=e434bcf6bf19dcb829fd816dfbe0b14daaa34ac1c6734b27c2cfbc1aac74fa3f\nhttps://explorer.cardano.org/en/transaction?id=ed321ab619c9a54d742cc2fe9683b710c7f4738eca3a632513057086e2f7335c\nhttps://explorer.cardano.org/en/transaction?id=8736eace747f6d8a34e8bfe77e1e"
+    }
+  ]
+}

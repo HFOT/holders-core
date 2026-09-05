@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "このマイルストーンは、ADAを入金することで複数のステークプールを同時に引き出すことができるCardanoのプレビューネットワーク上で動作するスマートコントラクトを出力します。 ユーザーは、この契約からバスケットトークンを受け取ります。これにより、ADAデポジットを引き出し、その獲得報酬を得ることができます.",
+      "criteria": "このマイルストーンは、スマートコントラクトMVPのオンチェーン証拠が同時に複数のプールに委譲し、バスケット預金のためのADAのステーク報酬を収集することができることを認めるべきです.",
+      "report": "スマートコントラクトを作成し、複数のプールに委任されたADAを入金しました。 以下では、ADAが契約に入金され、固定されるスマートコントラクトから複数のトランザクションを提出し、ユーザーがADAを引き出すことができる拡散トークンの作成を行います。\n\n取引:\n契約の初期作成: https://preview.cexplorer.io/tx/df744cdfb5ea5e7b48cc6476c6b5e075e5e1c40c13cab866bd8bf11d11a18636\nADAを契約に入金し、同じトランザクションでバスケットトークンを受け取る:\nhttps://preview.cexplorer.io/tx/e1f719d822670f720a607557212a4e273cf45364852346b11d99b4bdff09fd40\nADAを撤退するための契約にバスケットトークンを入金する:\nhttps://preview.cexplorer.io/tx/2048818ef576442bcf303b1c393b8f554ef70f4ee9986579bd0f3c9d10fb3c0a"
+    },
+    {
+      "no": 2,
+      "promise": "このマイルストーンは、バスケットを作成するために簡単なフロントエンドインターフェイスを出力します。 このフロントエンドインターフェイスは、管理者がCardanoのプレビューネットワーク上のバスケットを作成することを可能にするスマートコントラクトと統合されます.",
+      "criteria": "このマイルストーンは、単純なフロントエンドアプリケーションによって作成された作業スマートコントラクトの証拠を提供する、受け入れられるべきです.",
+      "report": "このマイルストーンでは、CardanoのプレビューネットワークでStaking Basketを作成しました。 2千ADAを入金し、10個の異なるステークプールに委譲しました。\nバスケットの作成、ADAの入金、マルチデリゲーションのプロセスを録音しました。 最初のビデオは、バスケットの作成であり、第二のビデオには、何が起こっているかを正確に伝える解説があります。\nここでは、両方のビデオへのリンクです。\nhttps://www.dropbox.com/scl/fi/bulw3izlj02wa28ywsy81/2023-12-17-10-42-14.mkv?rlkey=dxq5tf5c83zfoa89mj51jq0p1&dl=0\nここでは、このビデオで事前に形成されたCardanoトランザクションのすべてのリンクです。\nhttps://preview.cardanoscan.io/transaction/b67e496a66a3852fb3a81a0b9537fbfdcadf2437d7017dcde4f140fde414a286\nhttps://preview.cardanoscan.io/transaction/e0f293dd01e86f8ce15df3750cba6c5557ad162c5c981555fe0c23b15edc8c5c\nhttps://preview.cardanoscan.io/transaction/ad23fe8e5e089f21d12f9d20a08a0110e0bdb965be05e7cc9734b27bcdf4e0c0\nhttps://preview.cardanoscan.io/transaction/ae09484dc79b47ed734682643aec530ad7b883caf50fa3c7d691be80cd176326\nhttps://preview.cardanoscan.io/transaction/15f85c51acc524ae209186b68102a9306be18de2a21617ee62d7830828f73\nhttps://preview.cardanoscan.io/transaction/22dcfaa16c2ad18abc7122c5ab23c564076add36ddfa33ccada841147eadb38e"
+    },
+    {
+      "no": 3,
+      "promise": "Cardanoのプレビューネットワーク上で、実際のステークプール演算子を収集し、バスケット演算子となる。 数百万人のADAをスマートコントラクトに委譲し、スマートコントラクトのテストを行うスマートコントラクトを作成します。 利用者とSPOは、これらの問題をGoogleフォームに送信することができます。 これにより、ユーザやSPOの問題をスマートコントラクトで出力し、フロントエンドインターフェイスが出力されます。 Staking Basketをメインネットにリリースする前に、これらの問題を解決できるようになりました.",
+      "criteria": "Cardanoのプレビューネットワーク上で何百万のADAから50の実際のSPOを委譲するスマートコントラクトを作成すると、このマイルストーンが受け入れられるべきです.",
+      "report": "このマイルストーンでは、CardanoのプレビューネットワークでStaking Basketを作成しました。そして、50種類のステークプールを一度にまとめたまで、より多くのプールでゆっくりと追加しました。\nここでは、Staking Basketスマートコントラクトのオンチェーンを作成するための取引は次のとおりです。\nhttps://preview.cardanoscan.io/transaction/df744cdfb5ea5e7b48cc6476c6b5e075e5e1c40c13cab866bd8bf11d11a18636\nhttps://preview.cardanoscan.io/transaction/4ac8569afb671b55eec05b78116fbe28582ed328f1d45e94bf990385a2255df6\nhttps://preview.cardanoscan.io/transaction/fbd6560b0e2d4613cc11de437bccc555adf3f68201d414a50992ca5e65aaa7c\nこれはユーザーの預金取引です。\nhttps://preview.cardanoscan.io/transaction/e1f719d822670f720a607557212a4e273cf45364852346b11d99b4bdff09fd40\nこれはユーザの引き落としトランザクションです。\nhttps://preview.cardanoscan.io/transaction/1da425fe5be5efbe99dbdfb7c5642e55910257719451a84de433cb70c17bc062\nこれは、バスケットのデータを表示するビデオへのリンクです。\nhttps://www.dropbox.com/scl/fi/n1tw0sfdun20jtyv6yrma/2024-01-20-11-53-41.mov?rlkey=d2id188wrbrfihf7ffvme2k56&dl=0\nAtrium/Basketsに関するユーザーフィードバックへのリンクは次のとおりです。\nhttps://docs.google.com/spreadsheets/d/14lajG6eDgGrUtit8jbMrX7zNbOI3c8EkWBDsLb0wqeI/edit?usp=sharing\n*退会の更新:\n2人の査読者の一人が、実際のバスケットと一致したフロントエンドのプールを検証する方法がなかったと主張する業績の証明を否定しました。 審査官は、提供された取引を通じて、ADA が 50 SPO に委任された数百万があることが判明しましたが、マルチデリゲーションの詳細な概要を示す別のリンクを提供します。\n\nこのリンクは、cexplorerのスクリプトアドレスで、マルチデリゲーション、ADA、プールのすべてを表示します。\n.リンク: https://preview.cexplorer.io/address/addr test1xz9c596desmw0khrwm4tqefzxrh6ty73nfg2jx8vs6ca5nn7cm54ax9s27tw9nlnrnrs2adtpzcglpr3p52tgds5uztslv8cnr"
+    },
+    {
+      "no": 4,
+      "promise": "私たちが最高のStakingバスケット契約をメインネットに出荷するために、ユーザーフィードバックが必要です。 このマイルストーンの出力は、問題があることを与えられた預金でバグを解決します.",
+      "criteria": "このマイルストーンは、Cardanoのプレビューネットワーク上でバスケットのスマートコントラクトを試すために、さまざまなステークキーから50のデポジットがあることで受け入れられるべきです。 オンチェーンデータをチェックして50の入金が成功したことを分析し、失敗した預金のために利用可能なユーザーフィードバックフォームを持つことになります.",
+      "report": "このマイルストーンでは、プラットフォームを数千人の人々が初めてStaking Basketsを試すためにオープンしました。 Staking Basket 入金をスプレッドシートにすることで、すべてのユーザーのアドレスをコンパイルしました。 これらのアドレスのいずれかをエクスプローラアプリケーションで照会することで、預金を見ることができます。 スマートコントラクトとやりとりするトランザクションが表示された場合、ADA預金のユーザー 'Diffusion' トークンを与えます。 これは、Staking Basketトランザクションです。\n\nこれは、Cardanoscanのバスケットに入金するためのDiffusionトークンへのリンクです。\nhttps://preview.cardanoscan.io/token/asset13h5p3alpgrjynrevvkkgq4uys3f4e2dv8x74ng\nトークンで1400以上の取引があったことがわかります。 スクロールダウンすると、さまざまなユーザーから大量のステーキングバスケット預金/引き出しを見ることができます。\n\nユーザーのフィードバックフォームを使用しないようにし、Staking Basket テスターがフィードバックを提供するためのチャネルを作成したり、実行中のバグをリストしたりすることを選択しました。 これにより、フォーム送信後に連絡を試みる代わりに、個々の個人と直接作業することができます。 ここでは様々なレビューのリストをまとめました。\nhttps://drive.google.com/drive/folders/1eQHHA64zo9dR6ZYP169y4FhRf1PWtDlx?usp=sharing\nこれは、Discordのユーザーフィードバックのコンパイルされたリストです。 どのレビュアーがDiscordに加わるか確認したいなら、私にタグを付けて、正しいロールを割り当てます。 50件以上のフィードバックがありました。\n\nまた、これらの取引を通じてチェーン上のStaking Basketの作成を検証することもできます。\nhttps://preview.cardanoscan.io/transaction/df744cdfb5ea5e7b48cc6476c6b5e075e5e1c40c13cab866bd8bf11d11a18636\nhttps://preview.cardanoscan.io/transaction/4ac8569afb671b55eec05b78116fbe28582ed328f1d45e94bf990385a2255df6\nhttps://preview.cardanoscan.io/transaction/fbd6560b0e2d4613cc11de437bccc555adf3f68201d414a50992ca5e65aaa7c"
+    },
+    {
+      "no": 5,
+      "promise": "このマイルストーンは、Catalystの提案の完了をマークします。 このマイルストーンの出力は、Cardanoのプレビューネットワーク上でスマートコントラクトに接続された固定フロントエンドになります。 ユーザーは、このフロントエンドを使用してADAを入金し、バスケットトークンを取得し、自分の獲得した報酬を引き出します + 彼らのADAは、バスケットトークンで. また、UX/smart-contract のバグや改善方法も見つかります。 この最終マイルストーンでは、150の実際のカルダノユーザーがバスケットをテストするためのさまざまな場所を収集し、フィードバックを提供します.",
+      "criteria": "このマイルストーンは、ユーザーがADAをバスケットトークンに入金し、バスケットトークンを使用してADA/ステーキング報酬を引き出すことができる、固定されたフロントエンドインターフェイスがあることを承諾する必要があります。 また、バスケットに入金し、フィードバックフォームを記入する150の実際のユーザーが必要です.",
+      "report": "このリンクを使用してプレビューでStaking Basketsを試すことができます: https://alpha.atrium.io\n\nCardanoのプレビューネットワークをサポートするウォレットを使用する必要があります。 Eternl の使用をお勧めします。\n\nテキストは、https://docs.google.com/document/d/1QH1J JhQgbKuBJ3wFljTX38hcsdZxDo1SA40KGLhEbc/edit?usp=sharingを参照してください。\n\n当社のクローズアウトレポートビデオと、このリンクでスマートコントラクトに入金/引き出すことができます。\nhttps://www.dropbox.com/scl/fi/z17acosqf7ruej3qvs1eo/2024-04-25-14-35-30.mov?rlkey=f23fwpt8jpn5lnp6752ko9yib&st=k47pco94&dl=0\n\nこのリンクを使用して、大量のユーザーフィードバックを表示できます。\nhttps://docs.google.com/spreadsheets/d/14lajG6eDgGrUtit8jbMrX7zNbOI3c8EkWBDsLb0wqeI/edit?usp=sharing\n\nこのユーザーのフィードバックの一部は、フォームを記入できるように迅速ですが、スクロールし続けると貴重なフィードバックがあります。 このテストネットでは、https://discord.gg/atriumlab にもdiscord サーバーがあります。 このDiscordでは、ユーザーエクスペリエンスを増加させ、バグを修正できるフィードバックの何千ものメッセージがありました."
+    }
+  ]
+}

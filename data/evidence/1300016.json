@@ -1,0 +1,86 @@
+{
+  "title": "ADA Wallet for Salesforce",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 35250,
+      "promise": "In this first milestone, we will provide UI mockups for the following. \n・Base Application UI Org wallets (company wallets) this plugs into a future Ada for Salesforce, a separate product).\n・Create a Wallet\n・View Wallet\n・View eUTXO Addresses (add manually for testing)\n・Connection of eUTXO Addresses to Accounts (Standard Salesforce Object)\n\nThese mockups will not yet be in the form of functional flows or contain the code for the actual Salesforce integrations. The mockups will serve as a visual outline of the functionality we will build in months 3 and 4 (April - May 2025), as described in milestones 2 and 3.",
+      "criteria": "Each of the prototypes mentioned above will be made available as a PDF of Screen Shots and/or narrated slide deck.",
+      "report": "I uploaded a PDF of screenshots ( https://github.com/MuKnSys/ada-wallet-for-salesforce/blob/main/documentation-and-images/ADA%20for%20Salesforce%20UI%20Prototypes.pdf ) to the \"documentation-and-images\" directory of the GitHub repository.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 30250,
+      "promise": "・Create the ability to store and manage private keys \n・Create the ability to generate transaction addresses \n・Create the ability to send transactions \n・Create the ability to receive transactions",
+      "criteria": "The reviewers should be able to successfully follow the instructions that will be in the README.md file ( https://github.com/MuKnSys/ada-wallet-for-salesforce/blob/main/README.md ) of the GitHub repository after the completion of this milestone.\nThe README.md file will include instructions to install in ADA Wallet for Salesforce for testing in a Salesforce sandbox Org and will include links to the Salesforce flow files within the GitHub repository, along with a brief (1-2 sentence each) description of what each flow file does. \nUpon completion of milestone 4 (“Documentation and Security Review",
+      "report": "We added the code that is related to the ADA Wallet for Salesforce GitHub repository (https://github.com/MuKnSys/ada-wallet-for-salesforce).\nWe also added the relevant updates to the README file of the main branch ( https://github.com/MuKnSys/ada-wallet-for-salesforce/blob/main/README.md ), as promised in the acceptance criteria for milestone 2. \n・Instructions to install in ADA Wallet for Salesforce for testing\n・Links to the Salesforce flow files within the GitHub repository, along with a brief (1-2 sentence each) description of what each flow does\n\nPlease note that this README file now contains screenshots for clarity, in addition to the links to and descriptions of relevant files promised in the acceptance criteria. \nPlease also keep in mind that complete documentation will be uploaded to the repository as a PDF file as one of the deliverables for milestone 4 (“Documentation and Security Review”). Please confirm whether the screenshots provide the additional clarity you need from us.",
+      "kinds": [
+        "code"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 28250,
+      "promise": "・Apex hooks for generating transactions \n・Apex triggers for receiving transactions \n・Permission Set for Wallet Admin \n・Permission Set for Wallet Manager \n・Permission Set for Wallet User \n・Approval Methodology for outbound transactions \n・Templates for Salesforce Flows (Business Automation) \n・Slack on receiving a transaction \n・Slack on sending a transaction \n・Request Approval via Slack for a transaction \n・Email Accounting on sending a transaction \n・Emailing an Account Owner",
+      "criteria": "The code for each business logic and integration is visible and accessible.in the GitHub repository after the completion of this milestone.\nThe README.md file ( https://github.com/MuKnSys/ada-wallet-for-salesforce/blob/main/README.md ) will include instructions to install in ADA Wallet for Salesforce for testing in a Salesforce sandbox Org and will include links to the Salesforce flow files within the GitHub repository, along with a brief (1-2 sentence each) description of what each related file does. \nUpon completion of milestone 4 (“Documentation and Security Review”), more detailed document",
+      "report": "Our submission for milestone 3 can be found in a new branch called “milestone 3” (https://github.com/MuKnSys/ada-wallet-for-salesforce/tree/feature/milestone-3) of the ADA Wallet for Salesforce GitHub repository.\nThe README file (https://github.com/MuKnSys/ada-wallet-for-salesforce/blob/main/README.md) now includes a brief description of the business logic that has been added upon completion of this milestone.\nYou can find added descriptions of milestone specific features, code or flows under the following H2 headers of the README file.\n・“Permission Sets and User Roles”\n・“Milestone 3”\n\n“Automation Templates (Flows)”",
+      "kinds": [
+        "code"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 6250,
+      "promise": "・Complete the Admin Guide, Package Installation Guide, and User Guide \n・Develop the Open Source Installation Guide \n・Develop the Open Source feedback and improvement process \n・Create a v1.0 Product and Submit to Security Review",
+      "criteria": "The documentation for the open source package (which will also be submitted as a v1.0 product for Salesforce’s official security review process) will be made available as a PDF file. The PDF file will include the following.\n・The steps required to install ADA Wallet for Salesforce from source (directly from the GitHub repository) and from a SalesForce sandbox environment \n・The Salesforce permission sets required for a Salesforce Administrator to set up ADA Wallet for Salesforce in a Salesforce Scratch Org\n\nIn addition, the following information will be added to the README.md file ( https://gith",
+      "report": "We have completed the development of a v1.0 Product, which is ready for Salesforce security review.\n\nThe ADA Wallet for Salesforce Admin Guide, Package Installation Guide and User Guide are available in PDF format in the following file within the GitHub repository. https://github.com/MuKnSys/ada-wallet-for-salesforce/blob/main/documentation-and-images/ADA%20Wallet%20for%20Salesforce%20Admin%20Guide%2C%20Package%20Installation%20Guide%20and%20User%20Guide.pdf \n\nI made the following specific updates to the PDF, to address the feedback we received on our initial milestone 4 submission. \n・Updated the headers within the document to specify where the Installation Guide, Admin Guide and User each Guide begin. \n・Added a brief explanation at the beginning of the Admin Guide and User Guide sections, distinguishing who will use each of the two guides. \n\nI hope this provides the clarification requested about the Admin Guide, the Installation and the User Guide and how the 3 guides fit together. Please let me know of any further clarification you may need from me regarding this. \nAlso, please note that I’ve updated the logo in both the documentation and the GitHub repository. Thank you for bringing your concerns about the branding to my attention. I had not noticed that the previously generated image appeared to have contained the Ethereum logo. \n\nThe following information is avalanche in the README.md file ( https://github.com/MuKnSys/ada-wallet-for-salesforce/blob/main/README.md ) of the ADA Wallet for Salesforce GitHub repository. \n・The steps required to install ADA Wallet for Salesforce, which are available under the “Installation Instructions” H2 header (\n・Instructions for submitting changes to GitHub, which are available under the “Development Workflow” H2 header)",
+      "kinds": [
+        "code"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 6250,
+      "promise": "・Complete Security Review and list on the AppExchange - The Speed of this depends on Salesforce\n・Create a web pages\n・ for Web3 Enabler promoting the Cardano Community \n・Generate a Press Release on behalf of Cardano, Catalyst Project, and Web3 Enabler\n・Create Social Media Assets for Cardano, Catalyst Project, and Web3 Enabler",
+      "criteria": "The Web3 Enabler team will submit ADA Wallet for Salesforce to Salesforce for security review. Upon approval from Salesforce, the app will be listed on the Salesforce AppExchange. \nThe web page will be visible under “products” (https://web3enabler.com/product) on our website (https://web3enabler.com). The webpage will include the following. \n・A description of the ADA Wallet for Salesforce product\n・A link to the ADA Wallet for Salesforce GitHub repository ( https://github.com/MuKnSys/ada-wallet-for-salesforce )\n・An ADA Wallet for Salesforce logo, which will reflect the Cardano brand, as well as",
+      "report": "We have produced the following preliminary marketing materials we promised to deliver for milestone 5. \n・Web page: https://web3enabler.com/product/cardano-for-salesforce \n・Press release: https://web3enabler.com/press-releases/ada-wallet-for-salesforce-web3-enablers-salesforce-native-cardano-wallet-component \n\nSocial media assets:\n・https://x.com/web3enabler/status/1953852518963826823 \n・https://x.com/web3enabler/status/1954898287498039326 \n・https://x.com/web3enabler/status/1957468819221356701 \n・https://www.linkedin.com/posts/web3enabler_web3-enabler-is-proud-to-bring-together-the-activity-7359586957154271234-ZlXm\n・https://www.linkedin.com/posts/web3enabler_no-more-copy-pasting-blockchain-addresses-activity-7360663991414583296-iiR1\n・https://www.linkedin.com/posts/web3enabler_as-you-might-have-noticed-were-pretty-excited-activity-7362221566446759936-RiWd\n・https://www.facebook.com/share/18RA2chVDB\n\nWe have outlined our correspondence thus far with our contacts at Salesforce about the pending status of the AppExchange listing on this document (starting with our submission to Salesforce security review). https://docs.google.com/document/d/1ApOZhKqRS_youA0FACm4YNlwEd8-NNLL\nPlease note that the timeline for approval of the AppExchange listing is uncertain, since it is subject to Salesforce’s internal processes.\nFor this reason, we chose to make proof of the pending Salesforce AppExchange listing (rather than a link to an existing AppExchange listing) the evidence of milestone completion for milestone 5 on the Statement of Milestones for this project.",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 20,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "7",
+      "cost": 18750,
+      "promise": "・Translate the content from web pages blog posts mentioned as outputs of milestone 5 from English into Spanish, French, Italian, and German for Salesforce \n・Translate into Japanese for Salesforce Japan. Please note that, since the oldest and largest Cardano community is in Japan, we also offered a Japanese translation of our initial ADA Wallet for Salesforce Catalyst Fund 13 proposal ( https://docs.google.com/document/d/1nx2Qm789DqXw0ub5S6oytosAp1pNG8Y1oyTeVMXxLxU ), as well. \n・Submit the ADA Wallet for Salesforce v1 package to the Salesforce Japan AppExchange. \n・Create Parallel Marketing for Salesforce Japan, which will include the following\n・An X-Space discussing the addition of ADA for Salesforce to the Salesforce Japan AppExchange.\n・A blog post on the Web3 Enabler website ( https://web3enabler.com )\n・An X post sharing the link to the blog post\n・A 2-3 page ‘Project Close-out Report’ listing KPIs and how they were (or were not) addressed and what the next stage plans are with the product or service that was developed\n\nNote 1: Salesforce Japan runs semi-autonomously, while sharing technical details. It requires a parallel business process\n\nNote 2: This is the final milestone of th",
+      "criteria": "The Parallel Marketing for Salesforce Japan will include the following. \n・Appear on an X-Space discussing the addition of ADA for Salesforce to the Salesforce Japan AppExchange.\n・Produce 1 blog post on the Web3 Enabler website ( https://web3enabler.com )\n・Produce 1 X post containing the link to the blog post\n\nThe blog posts will be available under blog (https://web3enabler.com/blog) on our website (https://web3enabler.com).\nWe will appear on the X spaces from the Web3 Enabler X account (https://x.com/web3enabler), and we will record each of the X spaces. \nThe Project Close-out Report and Proje",
+      "report": "We have created the following Salesforce Japan marketing materials.\n・A Japanese translation of our Cardano/ADA Wallet for Salesforce product page: https://web3enabler.com/product/cardano-for-salesforce-japanese-translation \n・The recording of an X space hosting by Web3 Enabler Founder & CEO, Alex Hochberger, discussing the ADA Wallet for Salesforce Japan AppExchange listing: https://twitter.com/i/spaces/1MnxnPoNaVkGO\n・A Tweet about the Japanese translations and Japan AppExchange listing: https://x.com/web3enabler/status/1970135225251369036 \n・A preview of the Japan AppExchange listing: https://web3enabler.com/wp-content/uploads/2025/09/Ada-AppExchange-Japanese-scaled.jpg\n\nWe have written the following additional translated blog posts (translated into Spanish, Italian, French and German).\nCardano for Salesforce: \n・Spanish: https://web3enabler.com/blog/cardano-para-salesforce\n・Italian: https://web3enabler.com/blog/cardano-per-salesforce\n・French: https://web3enabler.com/blog/cardano-pour-salesforce \n・German: https://web3enabler.com/blog/cardano-for-salesforce-de \n\nADA Wallet for Salesforce\n・Spanish: https://web3enabler.com/blog/ada-wallet-for-salesforce-es\n・Italian: https://web3enabler.com/blog/ada-wallet-for-salesforce-it\n・French: https://web3enabler.com/blog/ada-wallet-for-salesforce-fr\n・German: https://web3enabler.com/blog/ada-wallet-for-salesforce-de\n\nWe uploaded our project closeout report to our project GitHub repository (https://github.com/MuKnSys/ada-wallet-for-salesforce/blob/main/documentation-and-images/ADA-wallet-for-Salesforce-project-closeout-report.pdf). The closeout report includes a link to the project close out video on the Web3 Enabler YouTube channel.",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 26,
+      "cut": true
+    }
+  ]
+}

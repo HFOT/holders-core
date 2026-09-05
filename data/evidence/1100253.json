@@ -1,0 +1,55 @@
+{
+  "title": "Security Oracles - a new approach to active Smart Contracts security",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 29000,
+      "promise": "(A) Research report detailing identified smart contract vulnerabilities and challenges.\n(B) Architecture outline for the Security Oracle framework and a detailed plan for this PoC project.\n(C) API Specification for off-chain monitoring systems (this work package was part of milestone 2 in the original proposal, it was moved to this milestone to avoid what would be a too large 2nd milestone. respective budget and timing was moved as well)",
+      "criteria": "(A) Research report includes an analysis of at least 5 documented vulnerabilities or security challenges to Cardano's smart contract environment.\n(B) An architecture outline of the proposed approach should include a component and a data flow diagram as well as a brief description of the various components. the detailed project plan should account for the described architecture\n(C) API specification for the off-chain monitoring system should provide a clear definition of the functionality of monitoring systems",
+      "report": "https://github.com/gammer13/pcf11-security-oracles/blob/main/Milestone1/Report/milestone_report.pdf\nThe above is the milestone report containing two chapters - \n・Overview of Cardano Smart Contract security - discussing the current state of smart contract security , presenting 5 key vulnerabilities and one important incident where these vulnerabilities may have been exploited, and finally presenting our new active approach to smart contract security.\n・Describing the PoC projects including the architecture of the proposed solution and a project plan\n\nThe second artifact is a yaml file with the API specifications for potential off-chain threat intelligence system, the file specifies the API endpoints that should be implemented by such systems in order to interact with security oracles - \nhttps://github.com/gammer13/pcf11-security-oracles/blob/main/Milestone1/monitoring_system_api_spec.yaml",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 29100,
+      "promise": "(A) Initial codebase and documentation for the smart contracts that would deliver security related information on-chain\n(B) Testnet deployment addresses and unit tests for the deployed contracts\n\nNote to reviewers: The second milestones of the original proposal contained two additional work packages that were moved in order to make this milestone smaller in terms of budget and scope - \n 1) API specification for the off-chain monitoring system - is now included in the first milestone \n 2) Integration testing with a mock monitoring system - is now part of the third milestone",
+      "criteria": "Unit test will demonstrate the on-chain availability of all API functions defined in the API specification provided in the previous milestone",
+      "report": "Link to the public repository of the on-chain part of the Security Oracle project:\nhttps://github.com/projet-sentinel/sentinel-on-chain\nUnit tests are under ./scripts and demonstrate the interactions with the smart contract as defined in the API spec\n\nList of addresses and policies (PreProd):\n- The address of the controller smart contract that holds deployed oracles (threat database) and other smart contract codes CBOR UTxOs of the Security Oracle system:\naddr_test1wz6pk0g5xtvmdm9n3v58emvnwam0aswqstademgatk396xcrex36g\n- The currency symbol or policy of the Controller authentication token for Security Oracle contracts, ensuring the integrity and validity of oracles and other smart contracts:\n05514ec851b6f7ca902dd88dd5a78444892e60d06746f63dc79e4877\n- The address of the threat database 1 :\naddr_test1wrddla53krxkmexvtpqf3sp8wp8qmjccgc7pxpw5y86d7dg8n7ny4\n- The currency symbol or policy of the threat database authentication token (TDAT) for ensuring the integrity and validity of threat data entries:\nd258f5138697b7c9e5ca61cfc47d5e36c77598378ff5c92cc3fb9acf\n- The address of the escrow contract that reads threat data and validates transactions based on that data:\naddr_test1wrrtrau29ccr332ddnzr5d8ttep0waawflkz89jtan0dqeqvwujs8",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 24350,
+      "promise": "(A) PoC implementation of a smart contract using the security oracles with a mock monitoring system. (This work package was carried over from the second milestone in the original proposal to account for milestone size limitations)\n(B) Report detailing multiple potential approaches for developing off-chain Security Monitoring Systems, and identifying critical benchmarks such as transaction throughputs, data freshness, and optimal response times.\n(C) Analysis of diverse business models suitable for fostering the creation and adoption of these systems.",
+      "criteria": "(A) The smart contract implementation should demonstrate the use of Security Oracles within a \"client\" smart contract and revert a transaction based on information coming from the the mock monitoring system\n(B) The report should encompass a comprehensive exploration of at least three potential approaches for developing off-chain Security Monitoring Systems, providing insights into their technical feasibility, advantages, and challenges. \n(C) Analysis of various business models, considering factors such as incentivization mechanisms, sustainability, and potential stakeholders' involvement.",
+      "report": "(A) Github repository with smart contracts’, \nhttps://github.com/projet-sentinel/sentinel-on-chain\nMock System(Escrow): https://github.com/projet-sentinel/sentinel-on-chain/tree/main/sentinel-contracts/src/Users/Escrow\nIntegration test: https://github.com/projet-sentinel/sentinel-on-chain/blob/main/scripts/09-unlock-escrow.sh \nUnit tests are under ./scripts and demonstrate the interactions with the smart contract as defined in the API spec\n\n(A) List of addresses and policies (PreProd):\n- The address of the controller smart contract that holds deployed oracles (threat database) and other smart contract codes CBOR UTxOs of the Security Oracle system:\naddr_test1wz58rtm4zse8zgrr8zy6ce2uy7du090a4cu5vk4lk9spc9srt8kr6\n- The currency symbol or policy of the Controller authentication token for Security Oracle contracts, ensuring the integrity and validity of oracles and other smart contracts:\n07bed9e8dfb61245a436bcabf30123a3e96dd609ba3e7195e49ab3a3\n- The address of the threat database 1 :\naddr_test1wq506tx3q7j3a3wpgsmy6py6njs5mn0cdsmcysc0yvvwv3c578a89\n- The currency symbol or policy of the threat database authentication token (TDAT) for ensuring the integrity and validity of threat data entries:\n5e7ca2c7bdb176bee4ad199743862904b1c0c1b9d4332005e5075a11\n\n- The address of the escrow contract that reads threat data and validates transactions based on that data:\naddr_test1wrxlvdynrqc2prqc5zkcj2wm4shqyz9f4x9ymkrvdxzpk4geegwkp\n\nAdditional link Showcasing The Demo of the Security Oracles:\nhttps://www.canva.com/design/DAGjw93fEx4/JIwMqBcWW8z-1T_M9l7A-g/watch?utm_content=DAGjw93fEx4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h815d087248\n\n(B & C) Link to a PDF report on Github:\nhttps://github.com/gammer13/pcf11-security-oracles/blob/main/Milestone3/Report/report.pdf",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 5
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 14550,
+      "promise": "(A) project closeout report\n(B) Project closeout video\n(C) End user documentation",
+      "criteria": "(A + B) project closeout report & video as per https://docs.projectcatalyst.io/fund-documentation/fund10-docs/funded-project-reporting-guideline/project-closeout-report-and-project-closeout-video-pcr-and-pcv\n(C) End user documentation should cover all software implementations and enable the use of the PoC outputs by prospective users",
+      "report": "The project has successfully delivered the following outputs:\n(A) Project Closeout Report\nhttps://github.com/gammer13/pcf11-security-oracles/blob/main/Milestone%204/Final%20Report/Final%20Report.pdf\n(B) Project Closeout Video\nhttps://www.youtube.com/watch?v=vst_jORWnGc\n(C) End-User Documentation\nhttps://github.com/gammer13/pcf11-security-oracles/blob/main/docs.md",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

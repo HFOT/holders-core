@@ -1,0 +1,38 @@
+{
+  "title": "Iagon: Statur - Reputation Model for Cardano Ecosystem that encourages positive behavior",
+  "ms": [
+    {
+      "no": 1,
+      "month": "17",
+      "cost": 75000,
+      "promise": "We have already worked on the idea in a very preliminary stage with data collected for quantitative metrics for reputation score of Iagon users done through third party APIs.\nFor the first milestone, we will research further and omit the need of the third party APIs for Iagon while planning for the bigger scope of the goal.\n・High Level Architecture and Research Documentation\n・Research on qualitative and quantitative reputation metrics\n・Data collection mechanism Research and PoC - Database, procedures and subroutines\n・Initial design UI/UX components for the system\n・PoC to display sample example metrics for a single project\n・Plan contracts development\n\nDeliverables:\n・High Level Architecture and Research Documentation\n・List of possible metrics on documentation\n・Initial Figma UI/UX for the system\n・PoC with mechanism on how data was collected, and the reputation score for users from the single project.\n・Contracts high level architecture\n・Provide architectural guidance and examples for how projects may incorporate on-chain data, off-chain data, or a combination of both into their own reputation metrics.*\n\nTraceability note (Change Request alignment):\n*Following the approved Change Reques",
+      "criteria": "・Documentation of the project requirements and objectives completed. \n・The documentation will be comprehensive, easy to understand, and accessible to both technical and non-technical community members.\n・Initial Figma design\n・Finalised user score Metrics documentation\n・Database schema designs according to the metric along with sql views.\n・Contract detailed design\n・Data collection based on the developed and designed mechanism*.\n・\n\nTraceability note (Change Request alignment):\n*This criterion replaces the earlier “SQL views” phrasing to avoid prescribing a specific db-sync–based implementation. T",
+      "report": "We are submitting the Proof of Achievement for Milestone 1 of the Statur project. This milestone established the foundational architecture and research framework for the Statur reputation system. Deliverables include the system architecture definition, reputation metric research, design of the data collection mechanism, initial UI/UX prototypes, and a working proof-of-concept demonstrating reputation score calculation.\nAll documentation and supporting materials for this milestone are available in the public repository: https://github.com/IagonAS/iagon-statur-reputation-system/blob/main/docs/catalyst/fund12-milestone-1.md\nThe repository acts as the single reference point for this milestone. All outputs, acceptance criteria, supporting materials, and verification links are structured there to allow reviewers to easily validate the milestone deliverables.\nFollowing reviewer feedback, the supporting documentation has been updated with additional technical detail on the reputation token model, on-chain data persistence, reputation state machine, scoring model, custom scoring integration, backend architecture, database schema, and data-ingestion flows.\nFollowing the approved Change Request, the documentation clarifies the data-collection architecture. The updated design introduces a flexible data-ingestion framework allowing reputation metrics to incorporate on-chain, off-chain, or hybrid data sources while maintaining the original objective of structured and verifiable reputation data processing.\nThe sections below map each milestone output to its corresponding acceptance criteria and evidence.\nA. Output: High Level Architecture and Research Documentation\nAcceptance criteria: \n・Documentation of project requirements and objectives completed\n・Documentation accessible for technical and non-technical audiences\n\nEvidence: \n・Public GitHub repository with detailed information \n・Architecture and Design Document\n・Statur Documentation on Iagon Website (including High-Level Archite",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 23,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "18",
+      "cost": 102936,
+      "promise": "・Finalize qualitative and quantitative metrics with community feedback\n・Reputation calculation algorithm - karma points\n・Contracts development for representation of a user’s reputation with Karma points and Badges - Soul-bound (non-transferable) NFTs\n・Initial frontend and backend development\n・Badges Design\n・Complete figma design\n\nDeliverables:\n・Final qualitative and quantitative metrics\n・Reputation calculation algorithm - karma points\n・Proof of contracts submitted to audit company\n・Complete figma design\n・App on staging with ongoing frontend and backend development to showcase the progress of the development\n・Infographic regarding qualitative and quantitative metrics",
+      "criteria": "・Deployment contract for non-transferrable immutable nfts.\n・Complete Figma designs with prototype.\n・Finalized metrics formulas and initiate calculations.\n・Contract documentation and audit submission.\n・Frontend and backend first stage deployment along with backend swagger documentation.",
+      "report": "This is the Proof of Achievement for Milestone 2, NFT and Reputation Contract Development, and further development. The milestone is complete. All six deliverables are in place: the final metrics, the karma points algorithm, proof of contracts submitted to audit, the complete Figma design, the app running on staging, and the infographic.\nEach output below is paired with its acceptance criterion and the evidence that verifies it.\n・All evidence is collected and structured in the project repository: https://github.com/IagonAS/iagon-statur-reputation-system/blob/main/docs/catalyst/fund12-milestone-2.md\n・One demo video covers every output below: https://youtu.be/RNbqSJuVTCA\n\nA. Output: Final qualitative and quantitative metrics, and the reputation calculation algorithm (karma points).\nStatur is metric-agnostic. It does not impose a fixed set of metrics or one scoring formula, because each participating project defines its own metrics, value ranges, and weights. What is finalized and published is the scoring methodology: each metric value is multiplied by its weight, the products are summed, and the total is divided by the sum of the weights, with an exponential decay applied for inactivity.\nIagon's own instantiation of Statur applies that methodology with a concrete set of eight category weights that sum to 1.0, from Token Holder at 0.28 down to Storage Subscriber at 0.05. Users see the result as karma points.\nThe reputation backend implements the algorithm, computes score = (Σ(value · weight) / Σ(weight)) · e^(-days_inactive / decay_rate) per project and account, and returns it through an authenticated score endpoint. Calculations are running on staging, not only documented.\nAcceptance criteria: Finalized metrics formulas and initiate calculations.\nEvidence:\n・Metrics and scoring methodology, with the taxonomy, formula, worked example, and decay behavior: https://docs.iagon.com/products/statur#reputation-scoring\n・Infographic on the karma points formula, the category weig",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 42,
+      "cut": true
+    }
+  ]
+}

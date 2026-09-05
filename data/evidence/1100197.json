@@ -1,0 +1,68 @@
+{
+  "title": "MLabs – Cardano Transaction Library Footprint Reduction",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "・cardano-data-lite (CDL) library implementation\n・Unit tests of CDL\n・CI setup\n・Documentation for CDL",
+      "criteria": "・CDL has been adapted from @cardano-sdk/core, and the library is completed including the serialization code adapted to our use case. \n・A CDL interface that is similar to CSL in data conversion and type naming has been added\n・Unit tests are present in the repo\n・A CI has been integrated. \n・Basic documentation is present",
+      "report": "CDL library implementation\nThree possible approaches were discussed in the Catalyst proposal to implement the Cardano domain-type serialization: code generation from CDDL to JavaScript/TypeScript, manual implementation or adapting the serialization code from the project cardano-js-sdk.\nEven though at the time of writing the proposal and the Statement of Milestones, adapting cardano-js-sdk seemed to be the most promising path, during development it was apparent that this was not the best course of action. Therefore, this approach was dropped in favour of the code generation one.\nThe CDL project is composed of three parts:\n・A code generator (located under conway-cddl/codegen).\n・A set of YAML specifications derived automatically, but with manual additions and changes where necessary (available as YAML files under conway-cddl). These specify the structure of a Cardano transaction and are the basis for the code generation tool.\n・The latest generated code and required runtime modules (available under src). This is the actual CDL library, as it will be installed in the final system.\n\nUnit tests of CDL\nThere are two test suites for the Cardano Data Lite library, which can be found under tests/serialization and tests/api. Most relevant to Milestone 1 is the latter, which compares the type signatures of the methods provided by the CDL library to the ones provided by the latest garbage-collected version of Cardano Serialization Library, or CSL (\"@emurgo/cardano-serialization-lib-nodejs-gc\": \"^12.1\").\nThe API test suite located under tests/api can be run with the command ‘npm run test-api’. It shows that CDL's interface is mostly compatible with CSL. The test suite can test for:\n・Missing classes: classes available in CSL but missing in CDL.\n・Missing methods: methods available in CSL classes but missing in the equivalent CDL classes.\n・Incompatible method signatures: methods with incompatible signatures in CDL compared to CSL. E.g: different return type, different number of param",
+      "kinds": [
+        "code"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 42000,
+      "promise": "・Use of CDL in CTL instead of CSL\n・Implementation of MinOutputAdaCalculator alternative in CTL",
+      "criteria": "・Cardano-transaction-library no longer uses cardano-serialization-library\n・Serialization of the domain types is done via cardano-data-lite \n・Mentions of CSL are removed from CTL documentation (except of the changelog)",
+      "report": "MS 2\nAcceptance Criteria\n・CTL no longer uses cardano-serialization-lib\n・Serialization of the domain types is done via cardano-data-lite\n・Mentions of CSL are removed from CTL documentation (except for the changelog)\n\nEvidence of milestone completion\n・Link to GitHub repo and relevant commits.\n\nDeliverables\nPull Request that demonstrates\n・CTL no longer uses CSL.\n・Mentions of CSL are removed from CTL docs.\n\nPR: https://github.com/Plutonomicon/cardano-transaction-lib/pull/1678 Commit: https://github.com/Plutonomicon/cardano-transaction-lib/commit/e209542ad5ac664ce8d8cc94705834069da7c011\nPR that updates Purescript Cardano Types to use Cardano Data Lite for serialization: https://github.com/mlabs-haskell/purescript-cardano-types/pull/21\nPRs on the dependencies of CTL that depends on CSL:\n・cardano-hd-wallet: https://github.com/mlabs-haskell/purescript-cardano-hd-wallet/pull/4\n・cardano-transaction-builder: https://github.com/mlabs-haskell/purescript-cardano-transaction-builder/pull/7\n・cardano-provider: https://github.com/mlabs-haskell/purescript-cardano-provider/pull/3\n・cardano-blockfrost-provider: https://github.com/mlabs-haskell/purescript-cardano-blockfrost-provider/pull/2\n・cardano-kupmios-provider: https://github.com/mlabs-haskell/purescript-cardano-kupmios-provider/pull/2",
+      "kinds": [
+        "code"
+      ],
+      "links": 16
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 26000,
+      "promise": "・A PureScript package with implementation of applyArgs (wrapper over uplc-apply-args)\n・Fixture tests",
+      "criteria": "・PureScript package created for applyArgs\n・Documentation updated, including bundling instructions\n・applyArgs tests moved from CTL to new package\n・Fixture tests available in the new PureScript package demonstrate proper functionality",
+      "report": "Acceptance Criteria\n・Purescript package created for applyArgs\n・Documentation updated, including bundling instructions.\n・applyArgs tests moved from CTL to new package.\n・Fixture tests available in the new PureScript package demonstrate proper functionality.\n\nEvidence of Milestone Completion\n・Link to GitHub repo and relevant commits.\n\nDeliverables\nRepo https://github.com/mlabs-haskell/purescript-uplc-apply-args\nPull Request https://github.com/Plutonomicon/cardano-transaction-lib/pull/1627\nCommits https://github.com/Plutonomicon/cardano-transaction-lib/pull/1627/commits https://github.com/mlabs-haskell/purescript-uplc-apply-args/commits/master/\nTest Fixtures https://github.com/mlabs-haskell/purescript-uplc-apply-args/blob/master/test/Main.purs\nDocumentation updates https://github.com/Plutonomicon/cardano-transaction-lib/pull/1627/commits/baa9b8070b2d4558f6d6fc5cc2eae79daf712b66 \nNo docs update for the bundling process, because the bundling process itself has not changed.",
+      "kinds": [
+        "code"
+      ],
+      "links": 12
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 32000,
+      "promise": "Cip30Mock functionality available in a separate PureScript package outside of CTL",
+      "criteria": "PureScript package compatible with CTL is created for Cip30Mock functionality",
+      "report": "Move message signing library dependency out of CTL core.\nAcceptance Criteria\nPureScript package compatible with CTL is created for Cip30Mock functionality.\nEvidence of Milestone Completion\nLink to GitHub repo and relevant commit(s).\nDeliverables\nRepo \nhttps://github.com/mlabs-haskell/purescript-cip30-mock\nPull Request \nhttps://github.com/Plutonomicon/cardano-transaction-lib/pull/1629\nCommits \nhttps://github.com/Plutonomicon/cardano-transaction-lib/pull/1629/commits \nhttps://github.com/mlabs-haskell/purescript-cip30-mock/commits/master/",
+      "kinds": [
+        "code"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 40000,
+      "promise": "CTL version that does not require using WebAssembly for bundling\nCloseout Report\nCloseout Video",
+      "criteria": "・The evidence demonstrates that CTL-based projects can be bundled without WebAssembly, if they only use “core” CTL - that is, without the packages moved out into separate projects\n・Closeout report is thorough and covers the matters outlined in the Catalyst Knowledge Base: https://docs.projectcatalyst.io/fund-documentation/fund10-docs/funded-project-reporting-guideline/project-closeout-report-and-project-closeout-video-pcr-and-pcv\n・Short video report outlines the project's achievements and deliverables in line with the Knowledge Base requirements",
+      "report": "EVIDENCE OF MILESTONE COMPLETION\nCommit:\nhttps://github.com/mlabs-haskell/ctl-no-wasm-template/commit/40bacb9c52908c59b909ff313e2ddb680e359118\n\nCloseout Report:\nhttps://drive.google.com/file/d/1iLKTkJFYUTuAeoHklSVuocBCTgecL0ck/view?usp=sharing\n\nCloseout Video:\nhttps://www.youtube.com/watch?v=iuNgN_QtLu8",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

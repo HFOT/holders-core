@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・SDKのアーキテクチャ、機能、およびユーザー要件をクリアした設計文書。\n・コミュニティのフィードバックや開発者のニーズに応じてSDKに含まれている機能のリスト.",
+      "criteria": "・設計文書は、利害関係者による審査・承認を行います。\n・開発のためにクリアと優先機能リストを設置.",
+      "report": "マイルストーン1 - SDKアーキテクチャデザインドキュメント\nこのマイルストーンは、Lucid Evolution SDKアーキテクチャの合理、目的、および利点を詳述する包括的な設計文書を提供します。 コミュニティのフィードバックと開発者のニーズに基づいて、モジュラー構造、コアコンポーネント、および開発優先事項を概説します。 ドキュメントには、将来の拡張性のための詳細な機能リスト、計画された統合、および検討が含まれています。その後の実装マイルストーンの明確な基盤を提供します。\nhttps://github.com/Anastasia-Labs/project-close-out-report/blob/main/f13-lucid-evolution-closeout-report/private-testnet-sdk-m1.pdf"
+    },
+    {
+      "no": 2,
+      "promise": "SDKの実装:\n・設定可能なパラメータ、自動設定/ティアダウン、契約展開用の API などの機能でプライベートテストネットを作成および管理するための初期 SDK。\n\nDockerode/Testcontainersの統合:\n・あらかじめ設定したコンテナイメージで分離したテスト環境のオンデマンドプロビジョニング.",
+      "criteria": "・SDK機能が正しく機能し、プライベートなテストネットを簡単にスピンできます。\n・コンテナ管理のためのドッカーとのコミュニケーションの成功.",
+      "report": "「コアSDK開発」のマイルストーンの達成証を提出してください。 詳細な証拠と検証については、総合報告書をご覧ください。\nマイルストーンレポート:\n以下を含むすべての成果物の完全な文書:\n- Docker ベースのコンテナオーケストレーションによるプライベート Testnet SDK の実装\n- CIで検証されたテスト(23統合+5ジェネシス+5クライアント)を渡す33\n- 設定可能なパラメータ、自動設定/ティアダウン、コマンド実行API\n- 完全な容器のライフサイクル管理のDockerodeの統合\n- ステップバイステップ検証手順とCI証拠\n\n受入基準の検証、コードアーティファクト(1,418行実装)、テストカバレッジ、リポジトリ情報に関する詳細なレポートを参照してください。\nhttps://drive.google.com/file/d/1rsZzIpwtcTunyx4tj9vmW4ozmc61XZ2r/view?usp=sharing\nプロジェクトコンテキスト:\nEvolution-SDK は、同じコアメンテナによる有利な進化の継続であり、今では、Cardano エコシステム規格との長期的持続可能性とアライメントのためのIntersectMBOの下で孵化しました。\nリポジトリ: https://github.com/IntersectMBO/evolution-sdk\nCI検証: https://github.com/IntersectMBO/evolution-sdk/actions/runs/19014806945/job/54301097912"
+    },
+    {
+      "no": 3,
+      "promise": "・SDKを利用した開発者をサポートする初期ユーザーガイドやドキュメントの作成\n・クイックスタートガイドやプロジェクトなど、オンボーディング素材の開発.",
+      "criteria": "・SDKの特徴を明確に説明し、使用のステップバイステップの指示を提供します。\n・オンボーディング材料はアクセス可能で、SDKの使い方を素早く把握できます.",
+      "report": "「文書化と開発者のオンボーディング」のマイルストーンの業績の証明を提出してください。 詳細な証拠と検証については、総合報告書をご覧ください。\nマイルストーンレポート:\n以下を含むすべての成果物の完全な文書:\n・4つのガイド(1,185 +行)の包括的なDevnet文書は、概念、設定、および使用をカバー\n・ステップバイステップで9つのプログレッシブセクション(トラブルシューティングによるインストール)でガイドを開始\n・完全な取引を実証する7つの現実世界ワークフロー例による統合ガイド\n・genesisのカスタマイズとプロトコルパラメータの構成リファレンス\n・TypeScript型チェックとライブ展開で動作確認した全例\n\n受入基準の検証、文書構造、アクセシビリティ機能、リポジトリ情報に関する詳細なレポートをご覧ください。\nhttps://drive.google.com/file/d/1L7fV-wcxnF1Mf9q-AvWKDpJB86FHFXtk/view?usp=sharing\nプロジェクトコンテキスト:\nEvolution-SDK は、同じコアメンテナによる有利な進化の継続であり、今では、Cardano エコシステム規格との長期的持続可能性とアライメントのためのIntersectMBOの下で孵化しました。\nリポジトリ: https://github.com/IntersectMBO/evolution-sdk\nドキュメントサイト: https://intersectmbo.github.io/evolution-sdk/docs/devnet/"
+    },
+    {
+      "no": 4,
+      "promise": "・開発者のフィードバックに基づく追加機能や最適化の実装\n・SDKの堅牢な性能と使いやすさを確保するための最終調整.",
+      "criteria": "特徴の統合:\n・計画されている機能はすべて、文書化された要件に基づいて想定されるように統合、テスト、機能です。\n\nメートルをテストして下さい:\n・重大な障害を伴わない全ての統合テストの成功\n・SDKは、複数のテストネット環境をスプンアップし、トレンドダウンします.",
+      "report": "「機能開発と最適化」のマイルストーンの達成証を提出してください。 詳細な証拠と検証については、総合報告書をご覧ください。\nマイルストーンレポート:\nプライベート Testnet SDK の完全機能開発と最適化:\n・4つのテストファイル(100%のパスレート)を渡る49の統合のテストと包括的なテストスイート\n・複数の独立したプライベートテストネットを自動ポート割り当てで同時に実行\n・連結クラスター間のネットワーク遮断検証\n・Cardanoの決定アルゴリズムを実装するGenesis UTxO計算モジュール\n・5つのモジュール(Cluster、Config、Container、Genesis、Images)でアーキテクチャを再構築するモジュール\n・テスト完了後のクリーンアップと適切な涙を回復\n\nビデオデモンストレーションは、フルテストスイートの実行を披露し、複数のプライベートテストネットが生成され、互いに完全な分離で管理される方法を示しています。\n受入基準の検証、テストメトリック、マルチ環境検証に関する詳細なレポートを参照してください。\nhttps://drive.google.com/file/d/1BqHjn2fgTYUFJkpLxLQUOAcg3GSmCNj/view?usp=drive link\nビデオ実証:\nhttps://drive.google.com/file/d/1QrI6b4XilefPTkdduToIddfrR019Zt7w/view?usp=drive link\nCIテスト結果:\nhttps://github.com/IntersectMBO/evolution-sdk/actions/runs/19860633821\n引きの要求:\nhttps://github.com/IntersectMBO/evolution-sdk/pull/80\nプロジェクトコンテキスト:\nEvolution-SDK は、同じコアメンテナによる有利な進化の継続であり、今では、Cardano エコシステム規格との長期的持続可能性とアライメントのためのIntersectMBOの下で孵化しました。\nリポジトリ: https://github.com/IntersectMBO/evolution-sdk\nドキュメントサイト: https://intersectmbo.github.io/evolution-sdk/docs/devnet/"
+    },
+    {
+      "no": 5,
+      "promise": "・プロジェクト・クローズアウト・レポート:プロジェクトの成果、課題、学習したレッスンをまとめました。\n・デモンストレーションビデオ: 重要な機能を表示し、 Lucid Evolution の改善.",
+      "criteria": "- Lucid Evolution リポジトリ https://github.com/Anastasia-Labs/lucid-evolution には、最終更新されたコードベースが含まれており、プルリクエストレビューで検証されています。\n- プロジェクトのクローズアウトレポートが提供され、以下が含まれます。\n・各エントリのクリアな解像度で、詳細な機能/バグ追跡ログ。\n・サンプル、説明、使用方法など、あらゆる新機能の包括的なドキュメント。\n・デモ映像を提出し、重要な機能や改善点を効果的に示します.",
+      "report": "プロジェクト1300128 \"プライベートテストネットSDK&L2プロバイダの統合\"の最終マイルストーンクローズアウトレポートを提出してください。 このマイルストーンは、すべての4つの開発マイルストーンで学習した完全なプロジェクト成果、課題、およびレッスンをまとめました。\nクローズアウトレポート:\n包括的なクローズアウトレポート文書:\n・Project Achievementサマリー: Docker ベースのプライベート Cardano testnet インフラストラクチャにより、デベロッパーはカルダノノード、Kupo、Ogmios で秒単位でフル機能の開発環境をスピンアップ\n・Milestone の成果物: リサーチ&アーキテクチャ、コアSDK開発、ドキュメント&開発者のオンボーディング、機能開発と最適化の4つのマイルストーン\n・総実装:2,047行のクラスタ.ts、Container.ts、Config.ts、Genesis.ts、Images.ts\n・テストカバレッジ: 実際の Docker コンテナテストによる 49 件の統合テストで、ゼロのバグが生成される\n・技術チャレンジ&ソリューション:ジェネシスUTXOディスカバリー(クポはブロック0をインデックスしない)、コンテナ起動シーケンシング、ポートコンフリクト管理、モジュールエクスポート人間工学\n・Lessons Learned: 実際の取引は、モックされたテスト、Effect's の型のエラーチャネル、ドキュメンテーションに基づく開発、コミュニティフィードバックのアーキテクチャを打ち破る\n\nプロジェクトの概要、技術的なアーキテクチャ、およびマイルストーン完了の証拠に関するレポートを参照してください。\nレポートPDF: https://drive.google.com/file/d/15aqmaSpOcw2HrSMUuNiPFP2ws Ca2qxw/view?usp=sharing\n動画デモ: https://youtu.be/9jwTqy2aXs0\nプロジェクトコンテキスト:\nEvolution-SDKは、同じコアメンテナによる有利な進化の継続であり、今、Catalystエコシステムにとって重要な成功であるIntersectMBOの下で孵化し、長期の持続可能性とCardanoガバナンス基準との整合を保証します。\nリポジトリ: https://github.com/IntersectMBO/evolution-sdk\nドキュメント:\n・https://intersectmbo.github.io/evolution-sdk/docs/devnet/\n・https://intersectmbo.github.io/evolution-sdk/docs/devnet/getting"
+    }
+  ]
+}

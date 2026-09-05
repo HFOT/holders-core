@@ -1,0 +1,86 @@
+{
+  "title": "SIDAN | MeshJS - Cardano Service Layer Framework for DApps",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "Objective: Establish a solid foundation for the project by setting up the necessary infrastructure, assembling the team, and defining project management practices.",
+      "criteria": "・Proposal onboarding and project management tools setup\n・Have a detailed breakdown of tasks for all the activities covered",
+      "report": "・Project management tools and systems set up. Project management tools/ Google sheet/ Github link whichever is more convenient, efficient and transparent will be public\n・https://docs.google.com/spreadsheets/d/1WqUF8H8ABSTlLEwxYC5bdIwHwjxkf5_RUOp0_hHUDUg/edit?usp=sharing\n\n・Team members, roles and responsibilities will be public\n・https://drive.google.com/file/d/1JwAEybfGN6TRD3WQgjEKiUMynjcb6hN2/view?usp=sharing\n\n・Publicly accessible link breaking down all activities\n・https://docs.google.com/spreadsheets/d/1WqUF8H8ABSTlLEwxYC5bdIwHwjxkf5_RUOp0_hHUDUg/edit?usp=sharing\n\n・Publicly accessible Github repository link\n・https://github.com/MeshJS/mesh\n・(Note: repos of future outputs and evidence will be provided and updated when project continues)\n\n・Discord Announcement:\n・https://drive.google.com/file/d/1d4nGPqDDBzRBvB20AtxpRZ8Rq-BqdIfK/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60000,
+      "promise": "Objective: Try to start another Cardano blockchain network with identical behavior from genesis, and transaction working with MeshJS",
+      "criteria": "Research on existing Cardano blockchain infrastructure and select the needed infrastructure for starting Cardano node with multiple core and relay nodes\nTest starting a parallel Cardano network and sending transaction built by MeshJS",
+      "report": "A markdown file in the public Github repository, stating the exact flow of starting the network, building transaction and submitting transaction.\n・https://cloud.meshjs.dev/\n・https://github.com/MeshJS/mesh-saas",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "Objective: To introduce customized protocol parameters feature with the parallel Cardano blockchain",
+      "criteria": "・Research and develop the approach to exposing altering protocol parameters at the time of starting the parallel Cardano network (e.g. fees and stakepools keys rotation)\n・Upgrade MeshJS to support customized protocol parameters",
+      "report": "Cardano Service Layer Framework for DApps Milestone 3: https://hackmd.io/@jingles/HJgZKtTZlg",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 10000,
+      "promise": "Objective: Research and develop a way to allow the parallel blockchain to restart without losing network record and inherit some security benefit from Cardano mainnet for immutability",
+      "criteria": "・Research and develop the parallel blockchain framework to have data persistence upon failure and nodes updates.\n・Research and develop the mechanism of converting trust on security of Cardano mainnet to the framework parallel blockchain, making it a side chain framework.",
+      "report": "During our research and development, we have identified that the instance will stop responding to requests after a certain period. The reason is due to the fact that Yaci was designed to be a lightweight devnet and not for persistent. Yaci DevKit's default indexer uses an embedded H2 database. In order to achieve persistence, Yaci was upgraded to support PostgreSQL. See https://github.com/bloxbean/yaci-devkit/releases/tag/v0.10.0-preview2.\nEdit config/application.properties and uncomment the following properties to set PostgreSQL database details:\nyaci.store.db.url=jdbc:postgresql://<dbhost>:<dbport>/<dbname>?currentSchema=<schema_name>\nyaci.store.db.username=user\nyaci.store.db.password=password\nDocumentation for starting the network, building transaction and submitting transaction can be found on Mesh website:\n・https://meshjs.dev/yaci/getting-started, see \"Support external PostgreSQL database for indexer\"\n・https://meshjs.dev/yaci/transactions\n\nFull link: https://hackmd.io/@jingles/SkWOYtTZxe",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 10000,
+      "promise": "Objective: To establish the devops workflow to streamline the start of any customized Cardano side chain for DApps",
+      "criteria": "・Packaging the setup with Docker, GCP Terraform so anyone can set up Cardano Service Layer with multiple nodes\n・With the DevOps setup, starting a customized Cardano service layer for Defy’s application, use it as an demonstration for the community",
+      "report": "https://hackmd.io/@jingles/S19l89TZxl#Report\nYaci has been packaged and easily set up with multiple nodes.\nThere are three configuration files available in the docker folder:\n・env - Environment variables like JAVA_OPTS\n・application.properties - Contains application specific properties. (e.g; Cardano node host, port, database info, store configuration etc.)\n・application-aggr.properties - Contains Aggregation application specific properties.\n\nThere are three out-of-the-box applications available in the Yaci Store repository:\n・Yaci Store Utxo Indexer : Includes Utxo Store, Epoch Store, and Submit component\n・Yaci Store All : Includes all stores\n・Yaci Store Aggregation : Aggregates account balances\n\nYou can run out-of-the-box applications with Docker Compose. The Docker Compose YAML files for the applications are inside the docker folder in GitHub repository.\n・Please clone the repository to access the Docker Compose files.\n・Verify compose yaml file are pointing to the correct application image version.\n\nRun Utxo Indexer application\nThe Utxo Indexer application consists of the utxo store, epoch store, and submit component.\nBy default, the submit endpoint is disabled. You can refer to the Enable Submit Endpoint section for instructions on how to enable it.\n\ndocker compose -f yaci-store-utxo-indexer-monolith.yml up -d\nRun Aggregation App to calculate account balances\nAggregation App is a separate application that calculates account balances by aggregating the UTXO store data.\n\ndocker compose -f yaci-store-aggregation-monolith.yml up -d\nDefy’s application customized service layer\nOur publicly accessible deployment of Defy’s application customized service layer can be found here:\n・https://cloud.meshjs.dev/yaci/usage\n・https://cloud.meshjs.dev/yaci/faucet\n\nAnd the entire deployment flow can be found on Mesh website:\n・https://meshjs.dev/yaci\n\nWe hope the deliverables are to your satisfaction. We are now preparing the completion of the final milestone.",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 10
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 30000,
+      "promise": "・Objective: Provide full set of documentation, bringing the proposal result to the community\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Complete the documentation such that fellow Cardano dev can start the side chain and interact with ease\n・Hosting a community in both MeshJS & SIDAN Lab discord for feedback, question and communication\n・Prepare the project close-out report and video\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "A full set of public documentation on all new features and changes brought by this project:\n・https://meshjs.dev/yaci\n\nDedicated channel in SIDAN Lab discord server in regards to the project deliverables:\n・https://discord.com/channels/1166784293805228061/1286538921634955274/1420748407739519107 \n\nAnnouncement in MeshJS discord server about all new features provided by this project:\n・https://discord.com/channels/907191435864977459/907225368807735296/1421030204490649670\n\nPublicly available project final close-out report and video:\n・Close-out report: https://docs.google.com/document/d/128sCQLQHB9nqZhlBbW0hMDXQB-Xv1_fs/edit#heading=h.n2577m5345bo\n・Close-out video: https://youtu.be/um4T4_7Mihk",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

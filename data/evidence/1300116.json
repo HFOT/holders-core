@@ -1,0 +1,84 @@
+{
+  "title": "Indigo x Minswap - Peg Stabilizing Liquidity Pools",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Detailed system architecture and technical specifications for the LP Fee Management system.",
+      "criteria": "Documentation of system components, including off-chain computation logic, and integration points with Minswap's existing infrastructure.",
+      "report": "・System architecture diagram available here\n・Technical specification documentation is available here",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 120000,
+      "promise": "Fully developed and tested LP Fee Management system.",
+      "criteria": "・Implementation of proposal creation, voting, and fee adjustment mechanisms.\n・Integration with existing Minswap smart contracts.\n・Successful deployment and testing on Cardano testnet.\n・Successful deployment and testing on Cardano mainnet.",
+      "report": "・User Guide to use the LP Management system on mainnet available here.\n・The link to the test suite for the LP Management system is available here.\n・Link to 5 transactions related to LP Management system: \n・Proposal creation \n・Delegation Proposal\n・Revoke Proposal\n・Transfer Ownership Proposal \n・Voting for proposal\n・Adjustments to the fee\n・A report explaining the metadata of each transaction above is explained here.",
+      "kinds": [
+        "chain",
+        "doc",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 105000,
+      "promise": "Empowered Working group to manage the Fee and a fully developed LP Fee Peg Stability Algorithm.",
+      "criteria": "・Indigo DAO appoints a Working Group to manage LPs and design a formula where the actions of the Working Group are ratified by an on-chain vote.\n・An advanced financial engineering formula is designed to increase LP Fee Peg Stability",
+      "report": "・On-chain vote by the Indigo DAO to appoint a Working Group with explicit reference to the responsibility of this Catalst Proposal - to manage the Peg Stabilising LP's and associated fee algorithms, available here.\n・Article that is publicly accessible, detailing the LP Fee Peg Stability Algorithm, pushed here.",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 20000,
+      "promise": "Algorithmic Peg Stability Formula is integrated into the Minswap LP Management System.",
+      "criteria": "・Formula successfully uses the latest data from the Iris indexer to make automatic LP Fee adjustments using the LP Management System on testnet.\n・Successful integration between off-chain computation and on-chain execution.\n・Algorithm is tested in testnet environment and a link to a written documentation and/or a video explanation is provided showcasing this.",
+      "report": "See the document here and video here.",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "13",
+      "cost": 20000,
+      "promise": "Algorithmic Peg Stability Formula and LP Management system are applied to at least one Liquidity Pool on mainnet.",
+      "criteria": "・Formula successfully uses the latest data from the Iris indexer to make automatic LP Fee adjustments using the LP Management System on mainnet.",
+      "report": "Link to a Proposal where its approved to delegate the LP Fee management of at least 1 Liquidity Pool by the Indigo Working group and apply their formula\nLink to the transaction on main net updating the pool fee\nProgress Report on how the Formula has been implemented in the LP Fee Management System",
+      "kinds": [
+        "chain",
+        "doc",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 6,
+      "month": "14",
+      "cost": 60000,
+      "promise": "There will be a process to collecting user feedback to gauge the degree of success, gathering the following metrics:\n・A) Quantitative Measures: Number of users accessing the service, number of actions (depositing/withdrawing) from the LP, TVL/volume, etc.\n・B) Qualitative Measures: User Experience, User Feedback\n\nAll this will be gathered and reported in the:\n・Final close-out report\n・Final closeout video",
+      "criteria": "・A Google Form is shared with the Cardano community to collect feedback on the Minswap Peg Stabilizing LPs\n・Final closeout report is complete as per Project Catalyst guidelines including quantitative data on the above mentioned metrics.\n・Final closeout video is publicly available as per Project Catalyst guidelines.",
+      "report": "・A) Quantitative Measures: \n・Number of users using the LP Fee Management: Over 20 Fee proposals were created to control the LP Fee.\n・Number of actions (change fees): Over 70 Fee Change records.\n・B) Qualitative Measures: \n・Feedback: link\n・Feedback (response): link\n・Final close-out report: link\n・Final close-out video: YouTube link \n\nUpdate: We updated the Google Form links in (B) (the Feedback). Please review it once again",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "title": "Open Source Integration of Hummingbot with Cardano for Enhanced DeFi Liquidity",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 15000,
+      "promise": "(A) A milestone report containing two sections -\n (1) A short analysis of the Cardano DEX ecosystem leading to a selection of two spot DEXs to be integrated in the following milestones (as stated in the original proposal)\n (2) A detailed project plan for the following milestones given DEXs selected for implementation\n(B) A template configuration file with identified integration parameters",
+      "criteria": "The milestone report should -\n(A)(1) -\n a. Cover the major DEXs currently on Cardano\n b. Identify two spot DEXs for integration\n(A)(2) Provide a specific project plan for the following milestones, given the selected DEXs\n(B) The template configuration file should list all integration parameters that are specific to the selected DEX",
+      "report": "The following is a link to the milestone report containing an analysis of the Cardano DeFi ecosystem and a detailed project plan for the integration of two DEXs with Hummingbot - \nhttps://github.com/gammer13/pcf11-hummingbot-integration/blob/main/Milestone1/Report/milestoneReport.pdf\nA link to the template configuration file - \nhttps://github.com/gammer13/pcf11-hummingbot-integration/blob/main/Milestone1/config.yml",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 25000,
+      "promise": "Initial codebase for the Hummingbot-Cardano spot DEX connector\nConfiguration documentation and integration guidelines for the spot connector\nUnit Tests for the connector",
+      "criteria": "The provided implementation will demonstrate programmatic interaction with the Spot DEX to achieve the following (unit tests) - \n・Read price \n・Place an Order\n・Amend / Cancel Order (if applicable)\n・provide / remove liquidity (if applicable)",
+      "report": "The following repository is the modified Hummingbot Gateway which includes the implementation of the minswap connector - \nhttps://github.com/AIQUANT-Tech/HummingbotGateway/tree/main/src \nThe following link is to the documentation which includes a step by step user guide - \nhttps://github.com/AIQUANT-Tech/HummingbotGateway/tree/main/docs\nAnd finally the test suite used to verify the functionality - \nhttps://github.com/AIQUANT-Tech/HummingbotGateway/tree/main/test/connectors/minswap",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "Integration test report highlighting the functionality and identified issues of the spot DEX connector\nRegression tests on Refined codebase after addressing issues and improving performance \nUpdated codebase and documentation",
+      "criteria": "Integration test should demonstrate the ability to reliably run a trading strategy using the implemented connector\nRegression tests all pass",
+      "report": "The following repository is the modified Hummingbot Gateway which includes the implementation of the minswap connector - \nhttps://github.com/AIQUANT-Tech/HummingbotGateway/tree/main/src \n\nThe following repository contains the integration test scripts - \nhttps://github.com/AIQUANT-Tech/hummingbot/tree/master/scripts\n\nThe following is the documentation of the test cases and their possible results - \nhttps://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/Hummingbot_gateway_test.pdf\n\nAnd finally, a short video demonstrating the test cases running smoothly - \nhttps://youtu.be/6LXBf49nIGg",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 25000,
+      "promise": "Initial codebase for the second Hummingbot-Cardano DEX connector\nConfiguration documentation and integration guidelines for the spot connector\nUnit Tests for the connector",
+      "criteria": "The provided implementation will demonstrate programmatic interaction with the second DEX to achieve the following (unit tests) -\n・Read price\n・Place an Order\n・Amend / Cancel Order (if applicable)\n・provide / remove liquidity (if applicable)",
+      "report": "Link to Source Code for Sundaeswap Connector\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/tree/main/src/connectors/sundaeswap\nLink to Test Cases for Sundaeswap Connector\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/tree/main/test/connectors/sundaeswap\nLink to documentation for Hummingbot Connector to Sundaeswap Test Cases \nhttps://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/Hummingbot_gateway_test.pdf\nDocument for Hummingbot Connector to Sundaeswap \nhttps://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/Hummingbot_gateway_sundaeswap.pdf\nUser Guide for Hummingbot Connector to Sundaeswap \nhttps://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/user_guide_sundaeswap.pdf\nA Short Video demonstration of Sundaeswap connector\nhttps://youtu.be/nVG8hLnq4ns",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 25000,
+      "promise": "Integration test report highlighting the functionality and identified issues of the spot DEX connector\nRegression tests on Refined codebase after addressing issues and improving performance\nUpdated codebase and documentation",
+      "criteria": "Integration test should demonstrate the ability to reliably run a trading strategy using the implemented connector\nRegression tests all pass",
+      "report": "The following repository is the modified Hummingbot Gateway which includes the implementation of the Sundaeswap DEX - \nhttps://github.com/AIQUANT-Tech/HummingbotGateway/tree/main/src \nThe following repository contains the integration test scripts - \nhttps://github.com/AIQUANT-Tech/hummingbot/tree/master/scripts\nThe following is the documentation of the code, test cases and their possible results - \nhttps://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/Hummingbot_gateway_test_sundaeswap.pdf\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/Hummingbot-Sundaeswap-Client-Doc.pdf\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/Hummingbot_gateway_sundaeswapDex.pdf\nThe following is a link to regression test report https://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/test%20case%20report%20humminbot.pdf \nAnd finally, a short video demonstrating the test cases running smoothly - \nhttps://youtu.be/9UrlnrG2PWY",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 7
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 35000,
+      "promise": "Software implementation and documentation submitted to the Hummingbot repository\nProject conclusion Report & Video",
+      "criteria": "Implementation and documentation submitted to the Hummingbot codebase\nFinal Report and video as per https://docs.projectcatalyst.io/fund-documentation/fund10-docs/funded-project-reporting-guideline/project-closeout-report-and-project-closeout-video-pcr-and-pcv",
+      "report": "The Hummingbot project has successfully delivered the following outputs as part of its final milestone:\n(A) Pull requests to the Hummingbot repositories - \n Hummingbot: https://github.com/hummingbot/hummingbot/pull/7704\n Gateway: https://github.com/hummingbot/gateway/pull/484\n(B) Project Closeout Report - https://github.com/gammer13/pcf11-hummingbot-integration/blob/main/Milestone%204/Final%20Report/Final%20Report.pdf\n(C) Project Closeout Video - https://www.youtube.com/watch?v=s0dxa4lbIE8",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

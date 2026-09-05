@@ -1,0 +1,44 @@
+{
+  "title": "Blockfrost bootstrap",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 10000,
+      "promise": "The output is a set of standalone scripts along with docker images that will enable one to setup a Blockfrost cluster.\nThe scripts will be called by one main wizard script that will guide you thought the process of setting up the cluster.\nThe cluster, depending on use cases, are typically consisting of services:\n・Cardano node\n・Cardano DB sync\n・Ogmios\n・Posgresql (to store data)\n・Blockfrost API",
+      "criteria": "The success is to have a working script to perform the tasks above.",
+      "report": "Github repository with code and documentation",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 10000,
+      "promise": "The output will be a devops friendly documentation about how to run and maintain the tool in the previous milestone. The documentation will include at least:\n・Introduction that includes concepts of what the tool does\n・Installation instructing detailing how anyone can install it\n・Usage, that explains different usage use cases as well as an animated demo of the most common use case\n・Developement section, aiming at developer who would like to contribute to the project, this section will detail how to submit changes",
+      "criteria": "The goal of this milestone is to have the tool built in the previous milestone documented clearly.",
+      "report": "・Github with documentation and the tool\n・Twitter post annoucing the tool and asking developers to test it",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 15000,
+      "promise": "After the tool is tested by the community and all bugs are addresses we will release the first stable version. The final report will include the catalyst requirements, including a short video which explain the tool in detail and how to use it and what we have learned during its development (yes, this means closure report with the closure videos).",
+      "criteria": "No outstanding issue present in the github repository.",
+      "report": "・Close out report\n・Close out video\n・Github repository",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

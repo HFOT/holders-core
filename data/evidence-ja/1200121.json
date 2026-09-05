@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・プロジェクト足場を含む公開ソースコード\n・UTxO ledgerとPlutus VMを保持するSubstrateランタイムのスタブ\n・新しいランタイムのスタブを含むサブスレートノードの足場",
+      "criteria": "・新しいSubstrateのランタイムのためのインターフェイスは特徴の条件に一致します\n・サブステレートノードの足場が始まっており、アイドル状態のまま\n\nプレジデント README (permalink) では、機能と要件の一覧が利用できます",
+      "report": "Griffin:TxPipeによるPlutusをサポートするSubstrateノード - Milestone #1 Report\n\nGriffin Catalystプロジェクトで、Milstone #1の成功を収めました。\n\nマイルストーン完了の証拠:\n・Githubリポジトリで利用可能なソースコード\n\nhttps://github.com/txpipe/griffin/tree/catalyst-ms1\n・GithubリリースセクションでBinaryリリース\n\nhttps://github.com/txpipe/griffin/releases/tag/catalyst-ms1\n・基本ノードとアイドル動作を示す動画\n\nhttps://drive.google.com/file/d/1gbjxbCLAG0jc3auyRgMCMraAVvX5dFV5/view\n\nマイルストーンのゴールと完了の証明\nプレジデント README では、機能と要件のリストが利用できます。 このマイルストーンでは、以下を完了しました。\n・新しいSubstrateのランタイムのためのインターフェイスは特徴の条件に一致します:\n・RPCインターフェース:ネットワークRPCインターフェースを使用してノードとやり取りする仕組みで、イベントの送信と管理業務に使用されます。\n\nノード側の実装詳細については、https://github.com/txpipe/griffin/blob/catalyst-ms1/node/src/rpc.rs をご確認ください。 この機能は、UTxO Wallet を使用してテストされ、RPC リクエストでトランザクションを送信します。\n・Aura のコンセンサス: 承認されたノードのみが新しいブロックを作成する許可される、権限 (PoA) コンセンサスプロトコル。\n・グランドパブロックフィニティ: 決定的なフィニティを提供するビザンチン断層耐性フィニティガジェット。\n\n両方の機能は、Runtime の関連する API トレイトの実装に表示されます。 現時点では、すべての権限のアイデンティティはハード・コード化されていますが、コマンドライン・インタフェースの方法で他のIDを含めるためのノードをテストしました。 新規のクライアントサービスを作成すると、両方のノードが構成されます。\n.・Libp2pネットワーク:輸送、発見、ルーティング機構を提供する戦闘テスト済みピアツーピアネットワークライブラリ。\n\nこれは、Substrateのsc network crateを利用することで構成され、ノードの初期化時に新しいサービスが構築されます。\n・サブステレートノードの足場は、"
+    },
+    {
+      "no": 2,
+      "promise": "・UtxO ledgerとSubstrateに対応した公開ソースコード\n・モジュールのインターフェースの公開文書\n・統合試験からの回答",
+      "criteria": "・実装されたレジャーは、Cardano Ledgerに似ており、任意のスタック、委任、またはガバナンスのプリミティブを除きます。\n・実装されたレジャーには、UTxO プログラマビリティ (datums、redeemers、スクリプトなど) に必要なプリミティブが含まれています.",
+      "report": "マイルストーン完了の証拠\nGithubリポジトリで利用可能なソースコード\nhttps://github.com/txpipe/griffin/tree/catalyst-ms2\ncrates.ioで公開されたRust crates\nhttps://crates.io/crates/griffin-core\nhttps://crates.io/crates/griffin-solochain-runtime\nhttps://crates.io/crates/griffin-solochain-node\nhttps://crates.io/crates/griffin-wallet は、\ndocs.rs で公開されたドキュメント\nhttps://docs.rs/griffin-core/\nhttps://docs.rs/griffin-solochain-runtime/\nhttps://docs.rs/crate/griffin-solochain-node/\nhttps://docs.rs/crate/griffin-wallet/\nUTxO のレジャーとウォレットとの統合でトランザクションの実行を示すビデオ\nビデオ\nマイルストーンのゴールと完了の証明\n\nプレジデント README では、機能と要件のリストが利用できます。 このマイルストーンでは、以下を完了しました。\n実装されたレジャーは、Cardano Ledgerに似ています。, 任意のステーキングの例外, 委任またはガバナンスの原始者.\ngriffin-coreで定義されたトランザクションタイプは、CardanoのBabbage時代(post-Alonzoの出力付き)に類似したプリミティブを使って構成されています。 Pallas の検証ツールを持つインターフェイスを定義しました。これは、エグゼクティブモジュールがトランザクションを検証するために使われます。\n実装されたレジャーには、UTxO プログラマビリティ (datums、redeemers、スクリプトなど) に必要なプリミティブが含まれています。\nこれらすべての要素が定義されるアクセス型で観察できます。 つまり、Datums は CBOR を含むバイトのベクトルで表されます。 たとえば、FakeDatum は、コーディングとデコード(ウォレットで、例えば)をショーケースするために使用されます。\nPlutusScripts には、アナログなフォーマットがあり、支出と分数の償還も提供されます。\n統合テストの結果\nAuraとGrandpaのコンセンサスが期待どおりに動作することを確認するために、同時に2と3つのノードを実行しています。 2つのノードを1つのオーサリングで実行する手順は、Readmeで詳細です。\n我々はまた、valをテストしました"
+    },
+    {
+      "no": 3,
+      "promise": "・Plutus VMのソースコードをSubstrateと統合\n・モジュールのインターフェースの公開文書\n・統合試験からの回答",
+      "criteria": "・Plutus VM は、既存の Plutus ツーリングや言語などを使用して作成できる Plutus スクリプトを実行できます。\n・このシステムは、Plutusスクリプトを検証の一環として要求するトランザクションを処理することができます.",
+      "report": "マイルストーン完了の証拠\nGithubリポジトリで利用可能なソースコード\nhttps://github.com/txpipe/griffin/tree/catalyst-ms3\ncrates.ioで公開されたRust crates\nhttps://crates.io/crates/griffin-core\nhttps://crates.io/crates/griffin-solochain-runtime\nhttps://crates.io/crates/griffin-solochain-node\nhttps://crates.io/crates/griffin-wallet は、\ndocs.rs で公開されたドキュメント\nhttps://docs.rs/griffin-core/\nhttps://docs.rs/griffin-solochain-runtime/\nhttps://docs.rs/crate/griffin-solochain-node/\nhttps://docs.rs/crate/griffin-wallet/\nPlutusスクリプトを含むトランザクションの実行を示すビデオ\nhttps://youtu.be/NW7NB983v80"
+    },
+    {
+      "no": 4,
+      "promise": "・新しく作成したSubstrateランタイムを使用して構築されたエンドツーエンドアプリケーション。\n・エンドツーエンドアプリケーションのソースコードを一般公開.",
+      "criteria": "・Substrateフレームワークを使用してアプリケーションを構築し、カスタムネットワークとして動作します。\n・アプリケーションは、UTxO ベースのレジャーを使用します。\n・一部のトランザクションの検証のためのPlutusスクリプトに依存するアプリケーション",
+      "report": "マイルストーン完了の証拠\n\nマイルストーンのゴールと完了の証明\n\n・Substrateフレームワークを使用してアプリケーションを構築し、カスタムネットワークとして動作します。\n\nビデオで紹介されているように、注文書 dApp から注文を作成、取り消し、解決するために必要な取引を構築し、提出するために、当社のウォレットを通じて、Griffin ノード(Substrate でビルド)と相互作用しています。 また、README で説明すると、ネットワークは、同期ノードのカスタム数に拡張できます(これは、Substrate フレームワークが提供する機能です)。\n・アプリケーションは、UTxO ベースのレジャーを使用する\n\nすべての dApp トランザクションは、オフチェーン コードを使用して構築されます。特に、Pay to script と use script 関数は、 griffin-core で定義されたタイプを使用しており、Cardano のレジャーから単純化されたバージョンです。\n・一部のトランザクションの検証のためにPlutusスクリプトに依存するアプリケーション\n\n注文を作成するときは、コントロールトークンを縮小する必要があります。 取り消しまたは解決するときは、スクリプトの入力を消費し、制御トークンは焼く必要があります。 この場合、Plutusスクリプトが実行されます。 dApp の aiken ソースコードで指定された条件が満たされていない場合は、フェーズ 2 エラーでノードによってトランザクションが拒否されます。\n\nマイルストーン完成の証拠\n\n・Githubリポジトリで利用可能なソースコード\n\nhttps://github.com/txpipe/griffin/tree/catalyst-ms4\n・カスタムサイト(配信までの壊れたリンク)に掲載された文書化\n\nhttps://docs.txpipe.io/griffin\n・GithubリリースセクションでBinaryリリース\n\nhttps://github.com/txpipe/griffin/releases\n・エンドユーザー視点からアプリケーションを紹介する動画\n\nhttps://youtu.be/4xMzNszMiPc?si=qEo5daXBEK-5So9H"
+    },
+    {
+      "no": 5,
+      "promise": "・新規ランタイムの公開ソースコード\n・クライアント参照実装の公開ソースコード\n・エンドツーエンドアプリケーションの公開ソースコード\n・クライアント参照実装のバイナリリリース\n・エンドツーエンドアプリケーションの実行可能リリース\n・公開資料\n・プロジェクトの最終出力を示すビデオ\n・プロジェクトプロセスと成果を記述する最終報告書",
+      "criteria": "・新しく作成したSubstrateのランタイムはUTxOのレジャーを使用し、Plutusスクリプトを実行します。\n・クライアント参照アプリケーションは、カスタム基板ベースのネットワークを実行できます\n・最終ビデオは、触媒要件に準拠\n・最終報告書は、触媒要件に準拠",
+      "report": "Githubリポジトリで利用可能なソースコード\nhttps://github.com/txpipe/griffin/tree/catalyst-ms5\nGithubリリースセクションでバイナリリリースが利用可能\nhttps://github.com/txpipe/griffin/releases/tag/catalyst-ms5\ncrates.ioで公開されたRust crates\nhttps://crates.io/crates/griffin-core\nhttps://crates.io/crates/griffin-solochain-runtime\nhttps://crates.io/crates/griffin-solochain-node\nhttps://crates.io/crates/griffin-wallet は、\ndocs.rs で公開されたドキュメント\nhttps://docs.rs/griffin-core/\nhttps://docs.rs/griffin-solochain-runtime/\nhttps://docs.rs/crate/griffin-solochain-node/\nhttps://docs.rs/crate/griffin-wallet/\nYouTubeにアップロードされた動画を閉じるリンク\n報告書を閉じるリンク"
+    }
+  ]
+}

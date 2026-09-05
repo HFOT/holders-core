@@ -1,0 +1,73 @@
+{
+  "title": "Decentralized Domain Name System (DNS) Marketplace powered by Cardano and Handshake blockchains",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "・Research into utilizing Handshake signatures in Cardano smart contracts using Plutus v3.\n・Creation of open-source Plutus v3 contracts and documentation for signature validation.\n・Demonstration of transaction building on the Cardano preprod testnet signed by a Handshake signature.",
+      "criteria": "・Comprehensive research documentation detailing methods for handling cross-chain signatures.\n・Open-source contracts and supporting documentation are publicly available.\n・A successful demonstration of a Cardano preprod testnet transaction signed with a Handshake signature.",
+      "report": "1) Research report outlining findings and methods.\nhttps://github.com/blinklabs-io/decentralized-dns-contracts/tree/main/docs/research\n2) Repository links to open-source contracts and documentation.\nhttps://github.com/blinklabs-io/decentralized-dns-contracts/tree/main/onchain\n3) Video and logs of the transaction demonstration on the Cardano pre-production network.\nhttps://drive.google.com/file/d/1_DYPIt-J3oKmqxX_yLQLSSj2EwPs9Xcq/view?usp=sharing\nhttps://preprod.cexplorer.io/tx/a39b32515f224115098b4f20ae18a7f1994f2ca8ff7783e95b46dc670abe9301",
+      "kinds": [
+        "chain",
+        "code",
+        "doc"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "11",
+      "cost": 60000,
+      "promise": "・A method to validate ownership of a Handshake domain on Cardano.\n・Open-source contracts for securely registering a Handshake domain on Cardano.\n・An example marketplace site showcasing the registration of domains into the DNS network.",
+      "criteria": "・A working validation method for Handshake domain ownership.\n・Functional and well-documented open-source contracts.\n・A functional example marketplace site demonstrating domain registration into the DNS network.",
+      "report": "Output 1: A method to validate ownership of a Handshake domain on Cardano.\nAcceptance Criteria 1: A working validation method for Handshake domain ownership.\nEvidence 1: Repository link to validation method: \nhttps://github.com/blinklabs-io/dns-contracts/blob/main/docs/architecture/validation-method.md\n\nOutput 2: Open-source contracts for securely registering a Handshake domain on Cardano.\nAcceptance Criteria 2: Functional and well-documented open-source contracts.\nEvidence 2: Repository link to open-source contracts and documentation: https://github.com/blinklabs-io/dns-contracts/tree/main\n\nOutput 3: An example marketplace site showcasing the registration of domains into the DNS network.\nAcceptance Criteria 3: A functional example marketplace site demonstrating domain registration into the DNS network.\nEvidence 3: Video demonstration of the example marketplace site: https://youtu.be/-Pk1CqZt6Nw\npreprod tx id: https://preprod.cardanoscan.io/transaction/ace901350353573685ee4fdce54b08794fb9d183ac6ec879e34a78b46b3574fb",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "13",
+      "cost": 40000,
+      "promise": "・A minting contract that allows the registered owner on Handshake to mint second-level domains on Cardano.\n・A reference contract enabling holders of second-level domains to configure DNS settings for their domains.",
+      "criteria": "・Functional minting contract for second-level domains.\n・Reference contract with DNS configuration functionality.\n・Alignment with Cardano-DNS standards (https://github.com/blinklabs-io/cardano-dns).",
+      "report": "Output 1: A minting contract that allows the registered owner on Handshake to mint second-level domains on Cardano.\nAcceptance Criteria 1: Functional minting contract for second-level domains.\nAcceptance Criteria 3: Alignment with Cardano-DNS standards (https://github.com/blinklabs-io/cardano-dns); demonstrated by implementing the token-pair minting/ownership model and validating it in Aiken tests.\nEvidence 1: Repository links to the minting and reference contracts. https://github.com/blinklabs-io/dns-contracts/blob/main/onchain/validators/tld_registration/sld_reference.ak\nEvidence 2: Test cases showcasing minting https://github.com/blinklabs-io/dns-contracts/blob/main/onchain/validators/tld_registration/tests/sld_reference.ak#L49-L65\nDocumentation is available: https://github.com/blinklabs-io/dns-contracts/blob/main/docs/architecture/smart-contract-architecture.md#operational-workflows\n\nOutput 2: A reference contract enabling holders of second-level domains to configure DNS settings for their domains.\nAcceptance Criteria 2: Reference contract with DNS configuration functionality.\nAcceptance Criteria 3: Alignment with Cardano-DNS standards (https://github.com/blinklabs-io/cardano-dns), demonstrated by enforcing DNS-reference datum/workflow expectations for SLD updates and ownership constraints.\nEvidence 1: Repository links to the minting and reference contracts. https://github.com/blinklabs-io/dns-contracts/blob/main/onchain/validators/tld_registration/sld_reference.ak\nEvidence 2: Test cases showcasing DNS configuration functionality https://github.com/blinklabs-io/dns-contracts/blob/main/onchain/validators/tld_registration/tests/sld_reference.ak#L92-L100\nDocumentation is available: https://github.com/blinklabs-io/dns-contracts/blob/main/docs/architecture/smart-contract-architecture.md#operational-workflows",
+      "kinds": [
+        "code"
+      ],
+      "links": 16
+    },
+    {
+      "no": 4,
+      "month": "15",
+      "cost": 10000,
+      "promise": "・CLI functionality to register a domain with the controller contract.\n・CLI functionality to mint a second-level domain on a registered top-level domain.\n・CLI functionality to configure DNS settings on a second-level domain.\n・User documentation for operating the CLI.",
+      "criteria": "・The CLI must successfully register a top-level domain (TLD) with the controller contract, validate inputs, and provide confirmation with transaction details.\n・The CLI must enable minting of second-level domains (SLDs) under a registered TLD, ensuring proper validation and ownership checks.\n・The CLI must allow the configuration of DNS settings for SLDs, validating inputs, and confirming updates with transaction details.\n・A clear and comprehensive user documentation for operating the CLI.",
+      "report": "Output 1: CLI functionality to register a domain with the controller contract.\nAcceptance Criteria 1: The CLI must successfully register a top-level domain (TLD) with the controller contract, validate inputs, and provide confirmation with transaction details.\nEvidence of Milestone Completion 1: DNS CLI support for registering a Handshake TLD with the controller contract is implemented and released as dns-cli v1.0.0. The implementation, command documentation, protocol mapping, release and successful preprod transaction are available here:\nhttps://github.com/blinklabs-io/dns-cli/releases/tag/v1.0.0\nhttps://github.com/blinklabs-io/dns-cli/blob/main/internal/txbuilder/register_tld.go\nhttps://github.com/blinklabs-io/dns-cli/blob/main/docs/commands.md#protocol-flow\nhttps://github.com/blinklabs-io/dns-cli/blob/main/docs/protocol-crosswalk.md#register-tld\nhttps://preprod.cexplorer.io/tx/24cfaa7065054c112663f19d05d6f2d5da9b9afbda1eeebc7f7d2c8f9b9470e1\n\nOutput 2: CLI functionality to mint a second-level domain on a registered top-level domain.\nAcceptance Criteria 2: The CLI must enable minting of second-level domains (SLDs) under a registered TLD, ensuring proper validation and ownership checks.\nEvidence of Milestone Completion 2: DNS CLI support for minting a SLD under a registered TLD is implemented via owner mint-sld. The implementation, command documentation, protocol mapping and successful preprod transaction are available here:\nhttps://github.com/blinklabs-io/dns-cli/blob/main/internal/txbuilder/mint_sld.go\nhttps://github.com/blinklabs-io/dns-cli/blob/main/docs/commands.md#protocol-flow\nhttps://github.com/blinklabs-io/dns-cli/blob/main/docs/protocol-crosswalk.md#mint-sld\nhttps://preprod.cexplorer.io/tx/df88bcae9f256c1e93f27728b8dc6ad8e0f456bf882e7314b0934bde0d64ad73\n\nOutput 3: CLI functionality to configure DNS settings on a second-level domain.\nAcceptance Criteria 3: The CLI must allow the configuration of DNS settings for SLDs, validating inputs, and confirming update",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 48,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "16",
+      "cost": 30000,
+      "promise": "・A comprehensive project closure report, presented to the Cardano community.\n・A closeout video for the Catalyst Town Hall, showcasing the project's achievements, impact, and lessons learned.",
+      "criteria": "・Both the final closeout video and the final closeout report are publicly available.\n・The closeout report and video include key findings, lessons learned, and actionable recommendations.",
+      "report": "Milestone Outputs: \n・A comprehensive project closure report, presented to the Cardano community.\n・A closeout video, showcasing the project's achievements, impact, and lessons learned.\n\nAcceptance criteria:\n・Both the final closeout video and the final closeout report are publicly available.\n・The closeout report and video include key findings, lessons learned, and actionable recommendations.\n\nEvidence of milestone completion:\n・A link to the detailed closeout report will be accessible to reviewers: https://drive.google.com/file/d/1qvuN_RKdfa1yzOX0YbMnjX_4yLQSYxxz/view?usp=sharing\n・A link to the closeout video will also be provided for reviewers' access: https://youtu.be/uNrpMZvSbho",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

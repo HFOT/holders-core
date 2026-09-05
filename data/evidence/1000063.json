@@ -1,0 +1,84 @@
+{
+  "title": "Decentralized Minting | ADA Handle",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "ADA Handle will utilize the concept of Merkle Trees for Decentralized Minting (DeMi). The purpose of the Merkle Tree is to allow on-chain minting of Handles, via a Smart Contract, while preventing double mints. This initial milestone will provide a proof of concept that we can indeed mint Handles via a Smart Contract and that the Smart Contract, utilizing Merkle Trees, will prevent a double mint.",
+      "criteria": "The acceptance criteria for this milestone is the ability to successfully mint Handles via the new Smart Contract while attempting to force a double mint. In other words, if we can mint multiple Handles and then attempt to mint the same set of Handles again, while the Smart Contract detects that those Handles had already been minted (via the Merkle Trees), we will have successfully demonstrated the concept.",
+      "report": "This submission for Milestone 1 presents the completed work outlined in our project plan. The video deliverable demonstrates the progress and results achieved, showcasing the successful implementation and functionality of our decentralized minting solution.\n\nVideo Link: https://www.youtube.com/watch?v=EaiGEMgKPko",
+      "kinds": [
+        "video"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 196500,
+      "promise": "Following the work from Milestone 1, we not only need to able to mint Handles while preventing double mints via Smart Contracts, but we also need to import the existing subset of Handles that have already been minted into the Smart Contract so that the existing historical data is preserved and therefore the Smart Contract will start from the latest Handle minted with the existing private-key minting engine. Therefore, the desired output of this milestone is to demonstrate that we can indeed import the 230,000+ Handles that have already been minted (this number will change as we are still minting Handles every minute) into the Smart Contract, into the Merkle Tree, while preventing double mints for all of them.",
+      "criteria": "The acceptance criteria for this milestone will be the ability to successfully import all existing 230,000+ Handles into the Smart Contract and Merkle Trees, demonstrating that the Smart Contract successfully prevented a double mint for any of the existing 230,000 Handles. Via a script we will attempt to double mint 20% of all the on-chain Handles. This will all be executed within our Private TestNet.",
+      "report": "This submission for Milestone 2 includes a video presentation that highlights the advancements made in the ADA Handle project. The video details the technical achievements and solutions developed, reflecting the project's ongoing success.\nVideo link: https://www.youtube.com/watch?v=QGAlVSI9ZLQ",
+      "kinds": [
+        "video"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "15",
+      "cost": 196500,
+      "promise": "As we approach the public launch of the Decentralized Minting (DeMi) via Smart Contracts and Merkle Trees, we will need to update the existing user experience within ADA Handle's minting portal (https://mint.handle.me), in order to make it compatible with the new DeMi engine. This will require us to work with our design team, while also testing the entire workflow to go from the time that users connect their wallets to the conclusion of the mint, once payment is made and received.",
+      "criteria": "The acceptance criteria for this milestone is a working layout for our minting portal that will accommodate the new requirements for the DeMi engine. The new layout must account for the interaction with the Smart Contract, detecting whether Handles are available when users are searching for them, the entire payment process to accept ADA, and confirm that the new Handle was correctly minted.",
+      "report": "Hello, please, see below the video demonstrating the new user experience to mint Handles:\nhttps://drive.google.com/file/d/1LjKihBseqLHIerZezEbsFntBEKbuzGKb/view?usp=sharing\nThis is a description of what the video above is demonstrating:\nFirst, navigating to handle.me and searching for the Handle we want to mint for the demo.\nAfter adding the handle name, clicking the mint button, this will display the wallet. \nSign and Submit the transaction. Once submitted, we have to wait for the transaction to process through the minting engine.\nIn a few moments, the minting engine will approve the transaction and start the minting process.\nFinally, the Handle will be minted and can be confirmed on-chain at cardanoscan.io. You'll notice that the Handle was minted using the new policy \"d9470d65c412b126a674f269a780fd4910e2967b7437470c10710e3f\"",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "16",
+      "cost": 56000,
+      "promise": "The purpose of this milestone is to successfully deliver the Decentralized Minting (DeMi) engine on the Preview and PreProd public blockchains. This milestone will deliver the new user experience, the new Smart Contract to both Preview and PreProd. This will allow the community to fully test the solution and provide feedback on all the new features, as they will have full access to it from Preview and PreProd.\nDuring this milestone we will also invest time with marketing and communications about the project.",
+      "criteria": "The acceptance criteria for this milestone is the ability for anyone from the Cardano Community to successfully interact with the new DeMi Smart Contract on both Preview and PreProd. Handles will be minted from the new SC while the Merkle Trees will prevent double mints.\nAnother acceptance criteria for this milestone will be marketing and social-media efforts, in order to divulge the launch of our DeMi Engine.",
+      "report": "Resubmitting this PoA and included marketing efforts at the end.\n\nHello, Decentralized Minting for Preview and Preprod is now ready.\nBoth can be accessed by navigating to:\nhttps://preview.handle.me and https://preprod.handle.me\n\nThe video below demonstrates how to use Decentralized Minting for both Preprod and Preview:\nhttps://www.youtube.com/shorts/1EABlLBVSGc\n\nTo mint a DeMi Handle, navigate to https://preview.handle.me or https://preprod.handle.me, connect your wallet and search for a handle. Make sure your wallet is set to either Preview and Preprod.\nAfter you've typed the Handle you want to mint, you will see two options, Normal Mint and DeMi (Beta). \nClick the DeMi (Beta) button and click \"Mint Handle\" to sign the transaction to purchase the Handle.\nAfter submitting the transaction, an order is created.\n\nThe link below demonstrates the payment transaction for the Handle $demi-mint-01 in Preprod:\nhttps://preprod.cardanoscan.io/transaction/08f19b685d0fb5161400ad495d0bd780bc81b2ff3b5f6f945a43520eb1edda8e\n\nOur minting engine is looking for the order and when found, validates the information including price, datum, etc. Once we verify everything is accurate, we build a transaction using our Decentralized Smart Contracts to mint the Handle.\n\nThe link below demonstrates the mint transaction for the Handle $demi-mint-01 in Preprod:\nhttps://preprod.cardanoscan.io/transaction/e061ec5d3a78f10bc0db4041827a47a1c56ce346d6abdd23afb112e19b97d154\n﻿\n-Marketing Efforts\n X Post announcing the release of DeMi (beta) on Preview and Preprod:\n https://x.com/adahandle/status/1905661694963282274\n\n Discord Post announcing the release of DeMi (beta) on Preview and Preprod:\n https://discord.com/channels/882401389328875620/895325137862291476/1355228442957844492\n\n Clays After Dark X Spaces (1hr 40min mark) where we discuss Decentralized Minting\n https://x.com/i/spaces/1ynJOlgVogWxR\nThank you!",
+      "kinds": [
+        "chain",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 20
+    },
+    {
+      "no": 5,
+      "month": "17",
+      "cost": 32750,
+      "promise": "The purpose of this milestone is to migrate the Decentralized Minting (DeMi) engine to MainNet. During this phase we will invite the community to fully interact with the DeMi engine from MainNet.\nDuring this phase we will also deliver the audit report for our Smart Contracts.",
+      "criteria": "The acceptance criteria for this milestone will be the ability for the community to utilize, in full, the DeMi engine on Cardano's MainNet. This will be our public launch. Therefore, provided that anyone can, in a permissionless manner, interact with the Smart Contract, mint Handles, attest that the mint was done correctly and that double mints are correctly prevented, we will have successfully concluded this milestone.",
+      "report": "Hello!\nDecentralized Minting is now live on Mainnet.\n\nNavigate to https://handle.me > connect your wallet > type in the search bar any Handle you would like > Select (DeMi Beta) and click on mint. Within 3 to 5 minutes, your DeMi Handle will be minted.\n\nThe link below is the DeMi Audit:\nhttps://public.koralabs.io/documentation/HandlesDeMiAudit.pdf\n\nThe link below is the post made on Handle's Discord and we made the audit available to the community.\nhttps://discord.com/channels/882401389328875620/1014857069742018641/1367913132458246204\n\nAudit can also be found inside our Docs page, scroll all the way to the bottom:\nhttps://docs.handle.me/docs/Handles/2_Minting\n\nThank you!",
+      "kinds": [
+        "other",
+        "social"
+      ],
+      "links": 8
+    },
+    {
+      "no": 6,
+      "month": "18",
+      "cost": 98250,
+      "promise": "The purpose of the final milestone is to make minor adjustments to the user experience, based on community feedback. We do not expect any major changes during this milestone as the majority of the work will have been done on the previous milestones. There is also a chance that nothing will be required during this milestone, given that the previous two milestones will have provided enough feedback and time to correct anything related to user experience.\nWe will also provide the community with documentation, available from https://docs.handle.me, explaining how they can interact with the DeMi Smart Contract and mint Handles in a decentralized manner. In other words, the community will be able to mint Handles independently from us, on-chain, and the documentation will explain this process.",
+      "criteria": "The acceptance criteria for this milestone is the attestation that the public portal to mint Handles on MainNet (https://mint.handle.me) is fully operational, in addition to proper documentation demonstrating how to mint Handles without our user portal.",
+      "report": "Hello,\nI have now made the project closeout video public and addressed some of the concerns from one of the reviewers.\nThe closeout video addresses everything that Catalyst requires such as:\n・Which challenge did you enter and why?\n・Once your project went live, how did you progress?\n・Please include a demonstration of the project outputs.\n・What next for the product/service you have developed?\n\nAs mentioned on the preview PoA, Decentralized Minting is now live!\nYou can mint a DeMi Handle by navigating to https://handle.me > connect your wallet > type in the search bar any Handle you would like > Select (DeMi Beta) and click on mint. Within 3 to 5 minutes, your DeMi Handle will be minted.\nCloseout Report can be viewed here.\nhttps://docs.google.com/document/d/1CAJhM-rrGkAmhkNy8-NXamFnuGXvR7s1K0lhiv97Kj8/edit?usp=sharing\nCloseout Video can be viewed here.\nhttps://www.youtube.com/watch?v=ObEWp6qZ8BY\nThe link below is the published documentation for any interested parties that want to mint Handles without our intervention:\nhttps://docs.handle.me/docs/Handles/3_Creating_a_DeMi_Order\nAs per the video above, the DeMi Handle I minted was $testdemihndl and this is the transaction information:\nhttps://cardanoscan.io/transaction/9b279fb2b800a9fbfd5c197d7451b636d72adcc031106ff20c0d7c00b6dff08a\nAs per the acceptance criteria and Catalyst\nThank you!",
+      "kinds": [
+        "chain",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

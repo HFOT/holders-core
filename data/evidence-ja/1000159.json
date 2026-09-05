@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Deno/WASM のランタイムをスクロールパイプラインに統合\n地図の処理ロジックを適応/操作を削減\nカスタムスキーマを受け入れるためにストレージのバックエンドを適応",
+      "criteria": "開発者がマップをプラグインしたり、一般的なボイラプレートに対処することなくロジックを削減することで、カスタムスキーマのカスタムインデックスをサポートする新しいバージョンのスクロール.",
+      "report": "マイルストーンの出力:\n\n・Deno/WASM のランタイムをスクロールパイプラインに統合\n・Deno / WASMのランタイムをスクロールパイプラインに組み込み、シームレスな互換性と効率的な実行を保証します。\n・地図の処理ロジックを適応/操作を削減\n・加工ロジックの修正を行い、マップ/削減操作を容易にし、スクロール内でのデータ処理の汎用性を高める。\n・カスタムスキーマを受け入れるストレージバックエンドを適応させる\n・ストレージのバックエンドを適切に調整し、カスタムスキーマに対応し、開発者に独自のデータ構造を定義し、使用する柔軟性を提供します。\n\n受諾の基準:\n\nマイルストーン1の成功は、次の基準で決定されます。\n・新しいバージョンのスクロール:新しいバージョンのスクロールが開発・リリースされ、カスタムスキーマのカスタムインデックス作成をサポート。\n・Plug-and-Play Map / ロジックを削減: 開発者は、一般的なボイラープレートコードを扱うことなく、独自のマップ/ロジックをシームレスに統合し、開発プロセスを簡素化できます。\n\nマイルストーン完成の証拠:\n\n公式のコードベースの公開ソースコードは、スクロールリポジトリのTxPipe組織にあります。\nhttps://github.com/txpipe/scrolls\nソリューションをプロトタイピングするために使用されるリポジトリの関連するフォークは、Alethea組織で見つけることができます。\nhttps://github.com/alethea-io/scrolls-dolos\n以下のPRは、このマイルストーンの変更の分析に関連しています。 スクロールリポジトリまたは他の上流の依存関係を指しています。\n・https://github.com/txpipe/scrolls/pull/151\n・https://github.com/txpipe/scrolls/pull/152\n・https://github.com/txpipe/scrolls/pull/154\n・https://github.com/txpipe/scrolls/pull/155\n・https://github.com/txpipe/pallas/pull/284\n・https://github.com/txpipe/pallas/pull/259\n・https://github.com/txpipe/pallas/pull/234\n・https://github.com/txpipe/pallas/pull/195\n・https://github.com/txpipe/pallas/pull/184\n・https://github.com/construkts/gasket-rs/pull/15\n・https://github.jp/"
+    },
+    {
+      "no": 2,
+      "promise": "・マップ用実装型スクリプトライブラリ/定義を削減\n・マップの展開・定義の縮小\n・CLI(コンマンド・ライン・インターエース)をスキャフォールディング・インデックス・コードの実装\n・ドキュメントとチュートリアルの準備",
+      "criteria": "開発者は、スクロールで実行できる Typescript と Rust langauge のアルゴリズムを縮小し、チェーンインデックスを作成するためのドキュメントとツールを持っています",
+      "report": "マイルストーン完了の具体的な証拠を提供するために、スクロールプロジェクトには以下が含まれます。\n公に利用できる図書館:\n・Map/Reduce ロジックの作成をサポートする Typescript と Rust ライブラリを公開しました。 これらのライブラリとのやり取り方法に関するドキュメントはこちら:\n・https://txpipe.github.io/scrolls/reducers\n\nCLIバイナリリリース:\n・CLIのバイナリバージョンを解放し、TypescriptとRust言語を使用して新しいインデックス作成のためのコードベース構造の足場を有効にします。\n・https://github.com/txpipe/scrolls/releases\n\nドキュメントとコードリポジトリ:\n・Typescript と Rust でスクロール対応の Map/Reduce アルゴリズムをビルドする方法に関するドキュメントを公開し、プロジェクト公開リポジトリでアクセス可能: https://github.com/txpipe/scrolls\n・ドキュメントのレンダリングされたバージョンはこちら: https://txpipe.github.io/scrolls\n\nビデオ概要:\n・ショートビデオは、マイルストーンの達成とDEMOの他のショーカスの達成をまとめたものです."
+    },
+    {
+      "no": 3,
+      "promise": "地図のGoライブラリを実装/定義を削減\n地図のPythonライブラリを実装/定義を削減\nインデックスコードをスキャフォールディングするためのCLI(コマンド・ライン・インターエース)を実装\nドキュメントとチュートリアルの準備",
+      "criteria": "開発者は、スクロールで実行できるGoとPython langaugesでマップ/縮小アルゴリズムを作成するためのドキュメントとツールを持っています",
+      "report": "スクロール - マイルストーン3完了\n\n受諾の基準を満たす\nスクロール プロジェクト マイルストーン 3 完了が正常に受諾基準を満たしています\nマイルストーン完成の証拠\nマイルストーン完了の具体的な証拠を提供するために、スクロールプロジェクトには以下が含まれます。\n公に利用できる図書館:\nMap/Reduce ロジックの作成をサポートするGoとPythonライブラリが公開されました。 これらのライブラリとのやり取り方法に関するドキュメントはこちら:\nhttps://txpipe.github.io/scrolls/reducers\nCLIバイナリリリース:\nCLI のバイナリバージョンをリリースし、Go と Python 言語を使用して新しいインデックス作成用のコードベース構造のスキャフォールディングを有効にします。\nhttps://github.com/txpipe/scrolls/releases\nドキュメントとコードリポジトリ:\nプロジェクトのパブリックリポジトリでアクセス可能なGoとPythonのScrolls互換マップ/Reduceアルゴリズムを作成する方法に関する公開文書:\nhttps://github.com/txpipe/scrolls/tree/sdk\nドキュメンテーションのレンダリングされたバージョンは次のようになります。\nhttps://txpipe.github.io/scrolls\nビデオ概要:\n達成率(PoA)の一部として、マイルストーンの達成をまとめたショートビデオが共有されました。 動画は一般公開"
+    },
+    {
+      "no": 4,
+      "promise": "GraphQL サーバを実装し、カスタムスキーマに対応\nエンドツーエンドの例を作成する",
+      "criteria": "よく知られている一般的なメカニズム(GraphQL)を使用してカスタムインデックスをクエリする柔軟なメカニズム",
+      "report": "GraphQL サーバを実装し、カスタムスキーマに対応\nエンドツーエンドの例を作成する\n\nカスタムスキーマを提供するGraphQLサーバーの例を作成しました\nhttps://github.com/txpipe/asteria/blob/523823b198b56a5960bfe6ff790c68546056bd57/backend/src/main.rs#L128\nこの例では、UTxO ベースのゲームが Project Asteria と呼ばれるバックエンドとして機能します。\nデータは、Onchainのアクションから抽出され、\nhttps://github.com/txpipe/oura/blob/67cc38151cc06014d52b6a73cbf74ae659c28ef4/examples/postgresql/daemon.toml\nその後、Mumak Postgres Extensionを使用してゲーム内のオブジェクトの位置のような、意味のあるpostgresスキーマ/テーブルに生のUTXO CBORをプロジェクトします\nhttps://github.com/txpipe/mumak/\nグラフQL で検索アルゴリズムを行なうような素晴らしい機能(Mahan 距離を使用して特定の半径内のオブジェクトを検出する)\n\nマイルストーン完了の証拠\nグラフQLサーバーのApacheライセンス下で公開されているソースコードで、スクロールで定義されたカスタムインデックスへのアクセスができます。\nhttps://github.com/txpipe/asteria/tree/main/backend"
+    },
+    {
+      "no": 5,
+      "promise": "Demeter.run の新しい拡張子としてスクロールを追加します。\n地図をアップロード/定義を減らすことによって新しいインデックス作成を許可する\nグラフQL エンドポイントの自動提供",
+      "criteria": "Cardano の devs はホストされているソリューションにアクセスし、独自のユースケースの外であらゆる種類の努力なしにカスタムインデックスをデプロイすることができます.",
+      "report": "クローズアウトレポートはこちら:\nhttps://docs.google.com/document/d/1Jq6ev3dbeJco6gzVjPKx776KrCfZ9pBEYtRYLsyeRgU/edit?usp=sharing\nクローズアウトバイドはこちら:\nhttps://youtu.be/Pn6cyA2i39k?feature=shared\nDemeter.run のスクロール機能へのパブリックアクセスは こちら をご覧ください:\nhttps://demeter.run/ports ディレクティブ\nスクロールインデックスのDemeter統合のソースコードリポジトリ:\nhttps://github.com/demeter-run/ext-cardano-scrolls\nスクロールバックエンドとSDKのソースコードリポジトリ:\nhttps://github.com/txpipe/scrolls/tree/sdk"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・プロジェクト設定、Apache 2.0 オープンソースライセンス\n・ヘッダーとフッターによる初期UIコード\n・キーペア生成要素とウォレットアドレスUI\n・鍵ペア生成とウォレットアドレス生成",
+      "criteria": "GitHub PR では、以下の行の項目が実装されています。\n・Vuejs プロジェクト設定\n・架台ヘッダーとフッター\n・キーペア生成コードを追加\n・ウォレットアドレス生成とUIコード追加\n・Apache 2.0 オープンソースライセンスを追加",
+      "report": "Cardano Lab の Milestone 1 の一部として下記の項目を実装し、このマイルストーンは設定と基本プロジェクト構造の成果物を持っています。以下をご覧ください。\n・オープンソースのgithubリポジトリ - Cardano Lab\n・Vuejs プロジェクト設定\n・テスト用のセットアップコードを追加\n・ビルドとライニングの設定\n・シンプルなプロジェクトUIレイアウト\n・キーペア生成コードを追加\n・ウォレットアドレス生成とUIコード追加\n・Apache 2.0 オープンソースライセンスを追加\n・現行バージョンを見直し(レビューのみ、制作の準備は出来ません)\n\nURL - https://cardanolab.dev\nプルリクエスト - (fistコミットとしてリンクをコミット) https://github.com/StricaHQ/cardano-lab/commit/871a84a338796ec7738e6819968b809672ee7048\nフッターPR - https://github.com/StricaHQ/cardano-lab/pull/1\nGitHub - https://github.com/StricaHQ/cardano-lab"
+    },
+    {
+      "no": 2,
+      "promise": "・メインネットとテストネットの両方で取引を作成し、署名する機能を開発する。\n・取引の作成と署名のためのUIを開発\n・ADAやトークンの量を入力、出力など、トランザクションの詳細を追加するためのサポート\n・Cardanoブロックチェーンへの取引送信.",
+      "criteria": "開発したUIのスクリーンショットは、関連する公開github PRとコードを以下のようにして、\n関連するコード\n・上記出力に必要なコードを追加した GitHub PR は以下のとおり\n・取引の作成と署名のコード、メインネット、テストネット\n・トランザクションビルのUIコード - 入力、出力、ADA、トークンを追加\n・Cardanoブロックチェーンにトランザクションを送信するためのコード",
+      "report": "Cardano LaboratoryのMilstone 2の一部として下記の項目を実施しました。\n・トランザクションビルダーUIと機能を追加\n・UIと機能性の署名を追加\n・トランザクションに入力、出力、トークンを追加する機能を追加\n・トランザクションをメインネットまたはプリプロドテストネットに送信する機能を追加し、カスタムエンドポイントを提出\n・現行版を見直した\n\nURL - https://cardanolab.dev\nラボは開発者のために構築されています。したがって、上記機能のデモビデオを作成しました。\nデモビデオ - https://youtu.be/MQhmkI7onXQ\n引きの要求,\n・https://github.com/StricaHQ/cardano-lab/pull/3\n・https://github.com/StricaHQ/cardano-lab/pull/4\n・https://github.com/StricaHQ/cardano-lab/pull/5\n・https://github.com/StricaHQ/cardano-lab/pull/7\n・https://github.com/StricaHQ/cardano-lab/pull/8\n・https://github.com/StricaHQ/cardano-lab/pull/9\n\nGitHub - https://github.com/StricaHQ/cardano-lab"
+    },
+    {
+      "no": 3,
+      "promise": "・ステーク登録や委任用の証明書を追加するためのサポートを追加。\n・ネイティブトークンをネイティブスクリプトでマイニングするためのサポートを追加",
+      "criteria": "開発したUIのスクリーンショットは、関連する公開github PRとコードを以下のようにして、\nGitHub PR では、出力を実装するコードを以下のように実装しています。\n・株式登録証明書の追加のためのUIとコード\n・委任証明書を追加するためのUIとコード\n・トークンマイニングのサポートを追加するためのUIとコード(NativeScript)",
+      "report": "Cardano Laboratory の Milestone 3 の一部として下記の項目を実施\n・stake登録証明書のUIと機能を追加\n・stakepoolの委任UIと機能を追加\n・ネイティブスクリプト(multisig/timelockスクリプト)によるトークンマイニングのサポートを追加\n・現行版を見直した\n\nURL - https://cardanolab.dev\nラボは開発者のために構築されています。そのため、上記機能のデモビデオを作成しました。\nデモビデオ - https://youtu.be/V66Z EP5w1M\n引きの要求,\n・https://github.com/StricaHQ/cardano-lab/pull/10\n・https://github.com/StricaHQ/cardano-lab/pull/11\n・https://github.com/StricaHQ/cardano-lab/pull/13\n\nGitHub - https://github.com/StricaHQ/cardano-lab"
+    },
+    {
+      "no": 4,
+      "promise": "・取引コンテンツを閲覧するためのCBORのデコード機能を統合\n・取引CBOR機能をUIでエクスポート",
+      "criteria": "開発したUIのスクリーンショットは、関連する公開github PRとコードを以下のようにして、\n前述の出力に必要なコードを追加する GitHub PR は以下のとおりです。\n・CBOR取引をインポートし、コンテンツを閲覧するためのコードとUI\n・ラボからCBORへの取引をエクスポートするためのコードとUI",
+      "report": "Cardano Laboratory の Milestone 4 の一部として下記の項目を実施しました。\n・デコード・カルノ・トランザクション・CBORがコンテンツを表示\n・ラボからCBORとしての取引をエクスポート\n\nURL - https://cardanolab.dev\nスクリーンショットと機能上のデモの手順でPDFファイルを用意しました。上記のURLに既に機能が住んでいます。\nCBORの特徴 PDF - https://drive.google.com/file/d/17lTVIchkBXckzIxALhFZzEZGzH98-5I/view?usp=sharing\n引きの要求,\n・https://github.com/StricaHQ/cardano-lab/pull/15\n\nGitHub - https://github.com/StricaHQ/cardano-lab"
+    },
+    {
+      "no": 5,
+      "promise": "・試験例\n・公開URLに採用\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・テストケースで提供したGitHub PR\n・研究室が展開する公開URL\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "・試験ケース追加\n・https://github.com/StricaHQ/cardano-lab/pull/18\n・ここのパブリックドメインで研究室を卒業\n・https://cardanolab.dev\n・クローズアウトビデオ\n・https://youtu.be/63VwmHImJ4o\n・報告書を閉じる\n・https://drive.google.com/file/d/1jcw35Eh4mekazwXJWL32cdnpHe7fBuDk/view?usp=sharing"
+    }
+  ]
+}

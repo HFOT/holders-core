@@ -1,0 +1,56 @@
+{
+  "title": "Milkomeda Game #2",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "Graphical assets of the game. In the case of game development, game prototyping,UX& UI design is capable of absorbing significant resources. It is crucial for further development and should be clearly defined at the very beginning. For this reason, we consider the materials provided sufficient for this Milestone. In addition, we will provide gameplay (without logic) showing character animations or the game environment.",
+      "criteria": "Sufficient graphical assets are created for the game to continue forwards in development.",
+      "report": "The following is a list of the graphical assets for the units, structures, map, and title screen.\nCurrently, we are still working on developing the environment and game logic, but the first internal demos are achieving very good results and we are pleased with the progress of the team.\nWe are presenting some graphics to keep the vision of the game a secret before the first official announcements. If the Catalyst team would like to meet with us to see the remaining elements, we are open to presenting rest of our work. \nhttps://drive.google.com/file/d/1OxVNJ1NKz46eVR-XhVKMfovX5zr9M1Nn/view?usp=share_link\nhttps://drive.google.com/file/d/1LQZkdoKktbLaav8Rf0O4lt7eRNss1amF/view?usp=share_link\nhttps://drive.google.com/file/d/1tDkUNEPkM8uSopKRsEva4UIUWjHXQ6jj/view?usp=share_link\nhttps://drive.google.com/file/d/1ld665swUylVn5eDwFBsL1_uQJRBtyT8X/view?usp=share_link\nhttps://drive.google.com/file/d/1EqDztKfgIC5YdR_unLK2rMwJV1M7X8dA/view?usp=share_link\nhttps://drive.google.com/file/d/1XyUhZhhyBIh0QdfENrJO9exAlykD7EDT/view?usp=share_link\nhttps://drive.google.com/file/d/1Oj_5LPd_Z1-97TkdxvKxfWqjCHmU0cew/view?usp=share_link\nhttps://drive.google.com/file/d/196cH7o8wy8fqe6K1cpwpEXAxJfYJitC3/view?usp=share_link\nhttps://drive.google.com/file/d/12r5zcWXeRho-PFp7WTB80AGwTHgu7AoK/view?usp=share_link\nhttps://drive.google.com/file/d/1gD29ld3zWM6QScGm8sdWVHKpNm3rConO/view?usp=share_link\nhttps://drive.google.com/file/d/1bMLf5dsnzCALFDBWdpqarZmXrHnzXgf3/view?usp=share_link",
+      "kinds": [
+        "doc"
+      ],
+      "links": 11
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 20000,
+      "promise": "A working frontend built in Unity which enables playing both sides of a match.",
+      "criteria": "Gameplay clearly goes through the core game loop.",
+      "report": "Over the past month, our team has made significant progress in the development of our Unity frontend build. One of our key objectives during the Proof of Milestone was to demonstrate video proof of gameplay featuring both attacker and defender structures and units.\n\nI am pleased to report that we have successfully achieved this goal. Attached to this report is a short video showcasing the gameplay at its current stage. In the video, users can see the attacker's structures producing attacking units and the defender's structures destroying those units.\n\nOverall, the game is already fully playable from both the attacker and defender perspectives. This is a major milestone for our team and a testament to the hard work and dedication of our frontend developers. We are excited to continue building and improving upon this foundation as we move forward.\nPlease find video here: https://drive.google.com/file/d/1NCSEzCq00XMStpsZQIAaDhlki83e8Lv8/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 20000,
+      "promise": "A working backend which the frontend plugs into via on-chain as the intermediary, enabling players to play with each other. Users can play an entire tower-defense game style match in the form of building/defending and destroying the opponent's assets.",
+      "criteria": "A functional flow which enables using the Unity-based frontend to submit transactions on-chain which move the match forward.",
+      "report": "The Paima team has made significant progress in integrating the frontend and backend of Milkomeda Game #2, utilizing the Paima Engine (for more information, visit https://paimastudios.com/paima-engine). Over the past month, our team has focused on game balancing and addressing the results of an extensive QA test suite. As stated in our PoM onboarding sheets, we are proud to provide Proof of Evidence, where beta testers can already play as either attackers or defenders. The game frontend is currently connected to the Milkomeda C1 blockchain, ensuring that all interactions are on-chain. In the coming month, the Paima team plans to prepare for the game's public release, and as a result, we will be closing this proposal.\n\nTo provide proof of gameplay, we have a video showing the attacker structures producing attacking units and the defender's structures destroying these units.\nVideo: https://drive.google.com/file/d/1Nec_8JygiOyNINRyHqzPjrp40-9NTZo8/view?usp=share_link",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 20000,
+      "promise": "A website which hosts the Unity frontend of the game which people can easily access via their browser. Once the game has loaded, users will be able to set their NFT, create/join a lobby, and play the game. Each interaction in the game which changes global game state requires the user to sign and submit a transaction using their web wallet, allowing them to play using the blockchain.\nThe released game available on our website for everyone to play.",
+      "criteria": "The game has been completed, tested, together with the full stack being made production ready.",
+      "report": "The highly anticipated launch of Paima Wrath of Jungle: Tower Defense is finally here! Prior to its official release, we conducted a public beta for our dedicated Paima OGs. The game has received an overwhelmingly positive response from the Cardano Community, and we couldn't be prouder and more grateful for the support we've received from the Cardano Catalyst community in bringing this project to life. We're excited to announce that the game has been deployed and is now accessible to all users.\n📊100hr stats of our new onchain Tower Defense game\n🔥Over 1500 games played!\n💯 Over 10,000 transactions\n\nCurrently we are also additionally running The first Wrath of the Jungle: Tower Defense tournament \nWith 69 players from multiple ecosystems/wallets vying for $2000 in prizes, this is the largest cross-chain & on-chain tournament to date! \nGame announcement: https://twitter.com/paimastudios/status/1668692915319869440?s=61&t=k5OieJsRXVZ491CFOADngw\nTutorial video: https://www.youtube.com/watch?v=7PjO2yc9MNU\nTournament announcement: https://twitter.com/paimastudios/status/1669790405183807504?s=61&t=k5OieJsRXVZ491CFOADngw\nGame Page: https://paimastudios.com/tower-defense\nLeaderboard: https://paimastudios.com/tower-defense/leaderboard",
+      "kinds": [
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

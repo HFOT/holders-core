@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Effect Schemaを用いたコアデータスキーマ構造の実装.",
+      "criteria": "コアスキーマ構造は、次のプルタスデータ型をサポートしなければなりません。\n- 整数\n- バイトストリング\n- リスト(ネストリストを含む)\nサイトマップ\n・Constr(コンストラクタのデータ)\nユーティリティ関数(例、エンコーディング、デコード)は、エフェクトスキーマを以下のように活用する必要があります。\n- Plutus DataのCompile-timeタイプの安全検証。\n- 実行中のプルタスデータの完全性を確保するためのランタイムタイプの解析。\n- すべてのコア操作は、往復エンコーディングとデコードのための包括的なテストを渡す必要があります.",
+      "report": "Lucid Evolution 2.0(Blueprint & Enhanced Plutus Schema)の最初のマイルストーンは、*Effect Schema*を使用してコアデータスキーマ構造を実装し、Plutusデータタイプをサポートすることに重点を置いています。\n報告書\nこのレポートでは、複雑なCardanoのデータ型を処理するための柔軟なタイプセーフなインフラを提供することを目的とした設計、実装、テスト、およびドキュメントの努力を要約しています。\nhttps://github.com/Anastasia-Labs/project-close-out-report/blob/main/f13-lucid-evolution-closeout-report/Milestone%201%20-%20Summary%20Report/main.pdf\n試験報告書\nこのドキュメントでは、Lucid Evolutionのコアデータスキーマ構造とEffect Schemaを用いたユーティリティ機能の実装を検証するために実行された厳格なユニットとスキーマベースのテストの結果を紹介します。 このテストでは、Plutus のプリミティブなデータタイプ(*`Integer`*, *`ByteString`*, *`List`*, *`Map`*, *`Constr`*)、エンコーディング/デコードユーティリティ、およびスキーマのコンビネータをすべてカバーし、コンパイラタイムの安全性とランタイムの検証の両方を実証します。、実装の信頼性と機能を保証します。\nhttps://github.com/Anastasia-Labs/project-close-out-report/blob/main/f13-lucid-evolution-closeout-report/Milestone%201%20-%20Validation%20Report/main.pdf"
+    },
+    {
+      "no": 2,
+      "promise": "プルタスブループリントからダタムとレディーマータイプの自動運転。\nプルタスブループリントファイルを読み込むときに実用的な例と自動デリベーション方法が含まれています。\nCIP-57ブループリント規格との互換性を確保します.",
+      "criteria": "型の安全なデリベーションフレームワークは、モックされたアイケン契約から正しくデベラートとレディーマータイプでなければなりません。\nエフェクトスキーマでランタイムバリデーションを使用して、テストはタイプ安全を確保しなければなりません。\n無効なデータのエラーメッセージを含む、テストは、派生したデータに対するランタイムの完全性チェックを実証しなければなりません。\nより簡単なレビューのためのビデオで実用的な例が紹介されます",
+      "report": "「安心・安全・安心」のマイルストーンの達成証を提出してください。 詳細な証拠と検証については、総合報告書をご覧ください。\n\nマイルストーンレポート:\n以下を含むすべての成果物の完全な文書:\nCIP-57 エフェクトスキーマ検証付きBlueprintパーサ(1,348行実装)\nプルタスブループリントによる自動ダムとレディーマー型デリベーション\n6 コア機能の100%カバレッジでCIで検証された試験合格\n誤字データ拒否とエラーメッセージによる安全執行\nRuntimeの完全性は往復の符号化/デコードの検証と点検します\nサンプルローディングによる青写真コード生成のためのインタラクティブなWebツール\n模擬アイケン契約による実用的利用実証\n受入基準の検証、コードアーティファクト(290行タイプ、864行コードゲン、194行構成、120行テスト)、試験カバレッジの故障、およびリポジトリ情報に関する詳細なレポートを参照してください。\nレポートPDF: https://drive.google.com/file/d/1pdx2q 1Y6P3Ia5gxU9RzB7MV7WjTYF7X/view?usp=drive link\nビデオデモ: https://drive.google.com/file/d/1f5Uo5sUPo1qTH3vGY1r4YmwRMC1uHym/view?usp=sharing\nプロジェクトコンテキスト:\nEvolution-SDK は、同じコアメンテナによる有利な進化の継続であり、今では、Cardano エコシステム規格との長期的持続可能性とアライメントのためのIntersectMBOの下で孵化しました。\nリポジトリ: https://github.com/IntersectMBO/evolution-sdk\nCI検証: https://github.com/IntersectMBO/evolution-sdk/actions/runs/19688471678"
+    },
+    {
+      "no": 3,
+      "promise": "設定可能なエンコーディングオプション(結合/キャノンおよびアンバウンド/非キャノン)を実行します。\n特定の datum コンポーネントのカスタマイズ可能なデータ処理を開発します。\nスキーマパッケージをトランザクションビルダーに統合します。\nPlutusのデータ構造における再帰型のサポートを強化します.",
+      "criteria": "正規のフォーマットと非正規のフォーマットの構成可能なエンコーディングオプションを実行します。\n特定のエンコーディング戦略をDatumおよびReeemerタイプに適用する方法に関する2つの例を提供します。\n地図、リスト、ネストされたレコードなどの複雑なデータ構造の再帰的なスキーマ処理を含むネストされたデータ構造をサポートします。\nPlutus契約で再帰的スキーマの取り扱いを実証する例を提供します。\nプルタスデータスキーマパッケージをトランザクションビルダーと統合し、少なくとも1つのトランザクションの完全な検証を行います.",
+      "report": "「高度な機能と統合」のマイルストーンの達成証を提出してください。 詳細な証拠と検証については、総合報告書をご覧ください。\nマイルストーンレポート:\n以下を含むすべての成果物の完全な文書:\nTSchema と非正規のエンコーディングオプションを持つデータモジュール\n142 渡るテスト (116 データ + 26 TSchema) CI で検証\nトークン struct と基本型例をエンコーディングしたシンプルな datum\nネストされたダムエンコーディングはアセット/トークンネスティング構造で実証されています\n包括的な往復テスト(50 + 往復テスト)による再帰型サポート\nCBORコーデックオプション、モード切り替えAPI、およびエフェクトスキーマでの完全なタイプ安全\n受諾基準の検証、コードアーティファクト(1,569行の実装、1,158 +行のテスト)、テストカバレッジの故障、およびリポジトリ情報に関する詳細なレポートを参照してください。\n\nレポートPDF: https://drive.google.com/file/d/13x61Qxg6dYX81lPFGCObz4y2xGXwVCxK/view?usp=sharing\nプロジェクトコンテキスト:\nEvolution-SDK は、同じコアメンテナによる有利な進化の継続であり、今では、Cardano エコシステム規格との長期的持続可能性とアライメントのためのIntersectMBOの下で孵化しました。\nリポジトリ: https://github.com/IntersectMBO/evolution-sdk\nCI検証: https://github.com/IntersectMBO/evolution-sdk/actions/runs/19054005350/job/54420383679"
+    },
+    {
+      "no": 4,
+      "promise": "CBORからPlutusタイプおよびその逆への変換のためのユーティリティ機能を提供します。\n- プルタスアドレス\n- プルタス値\n- プルタス・クレデンシャル\n- プルタス出力参照\n- Plutus CIP68メタデータ\n-これらのユーティリティ機能の包括的なテストスイートを導入",
+      "criteria": "- CBORデータを正しく次のPlutusタイプに変換する関数を実装します。\n- プルタスアドレス\n- プルタス値\n- プルタス・クレデンシャル\n- プルタス出力参照\n- Plutus CIP68メタデータ\n- 各変換機能が有効で無効なCBOR入力の両方を処理することができることを確認し、サポートされていないデータや誤ったデータを適切に処理します。\n- 各変換は、完全なカバレッジを保証するテストされなければなりません.",
+      "report": "「Cardano Typesのユーティリティ機能」のマイルストーンの達成証書を提出してください。 詳細な証拠と検証については、総合報告書をご覧ください。\nマイルストーンレポート:\n以下を含むすべての成果物の完全な文書:\n・全5つのプルタス型変換機能:アドレス、値、クレデンシャル、出力参照、CIP68メタデータ\n・CIで検証されたテスト(13アドレス+12値+10認証+9出力参照+11 CIP68メタデータ)を渡す55\n・CBOR ↔ PlutusData 双方向変換と 6 型ごとのコーデックメソッド\n・不正な入力、誤字したCBOR、データ構造違反に関する24エラー処理テストによる包括的なエラー処理\n・全機能の100%テストカバレッジ\n・実際の例、APIリファレンス、ベストプラクティスに関する完全なドキュメント\n\n受入基準の検証、実装証拠、テスト戦略、およびリポジトリ情報に関する詳細なレポートを参照してください。\nレポートPDF: https://drive.google.com/file/d/1bxyliS9zbiL5i7GhbMsywJtSYyqnMkI-/view?usp=sharing\nプロジェクトコンテキスト:\nEvolution-SDK は、同じコアメンテナによる有利な進化の継続であり、今では、Cardano エコシステム規格との長期的持続可能性とアライメントのためのIntersectMBOの下で孵化しました。\nリポジトリ: https://github.com/IntersectMBO/evolution-sdk\nCI検証: https://github.com/IntersectMBO/evolution-sdk/actions/runs/19791288797\nドキュメント: https://intersectmbo.github.io/evolution-sdk/docs/encoding/plutus/"
+    },
+    {
+      "no": 5,
+      "promise": "包括的なドキュメンテーション:Cardano規格に準じ、Lucid Evolutionを使用する明確な開発者の指導を提供します。\nプロジェクト・クローズアウト・レポート:プロジェクトの成果、課題、学習したレッスンをまとめました。\n実証ビデオ: 重要な機能を表示し、 Lucid Evolution の改善.",
+      "criteria": "Lucid Evolution: 現在のCardanoインフラストラクチャとシームレスに統合します。\nドキュメンテーション: Lucid Evolution を使用して開発者のための明確で実用的なガイダンスを提供します。\nプロジェクト・クローズアウト・レポート:プロジェクトの成果、課題、学習したレッスンをまとめました.",
+      "report": "業績の証明を返還いたします。 この再送信は、以前の投稿の両方の査読者から直接フィードバックを送信します。\n\nA. 出力: プロジェクト クローズアウト ビデオ\n受諾条件:プロジェクトが何であるか、目標が達成されたかを説明する明確な解説付きで2〜5分の公共のクローズアウトビデオ。\n証拠: https://youtu.be/FUlJR-vAurM (YouTube、公開、3分12秒) ビデオは、レビュー担当者が要求したように完全にナレーションされます。プロジェクトが解決するために設定した問題を説明し、納品されたコードとツーリングのすべての4マイルストーンを通過し、元の提案のそれぞれの目標がどのように満たされたかを閉じます。\n\nB. 出力: 包括的なドキュメント\n受諾条件:Cardano標準と整列された文書で、Lucid Evolution を使用する明確な開発者の指導を提供します。\n証拠:\nhttps://intersectmbo.github.io/evolution-sdk/docs/encoding/data/(PlutusData)\nhttps://intersectmbo.github.io/evolution-sdk/docs/encoding/tschema/ (TSchema)\nhttps://intersectmbo.github.io/evolution-sdk/docs/encoding/plutus/ (プルタスタイプ)\nインタラクティブなブループリントコードジェネレータ: https://intersectmbo.github.io/evolution-sdk/tools/blueprint-codegen/\n\nC. 出力: プロジェクト クローズアウト レポート\n受容基準:プロジェクトの成果、課題、学習したレッスンを損なう。\n証拠: https://drive.google.com/file/d/1APUF9 KVYdqVUJPUFJfK1DRDqTkM0skQ/view\n\nリポジトリ: https://github.com/IntersectMBO/evolution-sdk\n\n最初の査読者のコメントに注意してください。マイルストーン2、3、4の業績の証明は、両方の査読者によって承認され、Catalystの管理サインオフを待っています.F13締結計画(28 7月2026)の合意書に、Catalystサポートを通じて、この最終マイルストーンレビューが締結できるように、これらの通知を要求しました."
+    }
+  ]
+}

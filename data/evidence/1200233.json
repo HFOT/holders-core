@@ -1,0 +1,61 @@
+{
+  "title": "Token use case with Multi Address wallet based on eUTXO model for social welfare system",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 20000,
+      "promise": "（A） Voting EVENT with Multi address and cardano scan\nIn order to utilize the multi-address system in this project, We will perform the token voting EVENT. We will mint our original token and distribute. The target for the distribution is mainly the customer of the “Tabino Otomo Café, placed at Amico Building 5F, Tokushima”. We also demonstrate the products includes the products produced by handicapped persons.\n (B) The detailed concept for the multi address viewer \nAnalyze event reports and create a design document for application development in Milestone2.",
+      "criteria": "(A) Total 50 or more token distribution and 50 voting\n(B) The detailed plan for the development",
+      "report": "(A) The asset ID of the minted tokens, the transactions of the distribution and voting.\nFor the clear explanation, We would like to report (C) before (B).\nAseet ID of Otomotoken : 17b7c343d4024b8b425b39ea034aab50609b88fa126296c112a96f9b\nThe voting transactions are as follows\nhttps://cardanoscan.io/addresses?stakeHex=e1c6b12b5ba254c693f427f2d8ceada6bbe02ef17ba4b5ab7625f3c1a4\n(C) EVENT report\nWe have the EVENT voting at Tabino-Otomo Café From Jan. 2025 to Feb. 2025. We have lectured how to use VESPR wallet and Yoroi wallet for the event staffs at “Tabino-Otomo Café”.\nThe staffs explain the installation of the VESPR wallet, how to receive the ADA and token, and how to send it to each work. We have total 51 voting for the works. \nThe EVENT photo and the Correspondence with each address are summarized here. \nhttps://drive.google.com/file/d/1mmo_0yKc7Q0UwJ-SSeOBp1VpHlfcrPQU/view?usp=sharing\nEVENT report\n We have demonstrated 10 works with ADA address QR code, a part of these were produced by hand-capped persons. The Mix demonstration is sometimes important to encourage the persons. We have also lectured to event staffs the way to install VESPR wallet and distribute “Otomo” tokens. The participants make transaction to each works. This transaction work as “donation” and “Voting”. \n Total 50 participants are voted through Cardano chain. The main participants voted on-site, but a part of the participants may vote after the visiting. Some of the participants also interest to our event, and they give us the message card with their comments.\n We considered that this event was successfully completed in terms of both encouragement of the handicapped-person’s work and promotion of Cardano system. However, there are some points should be improved at next event.\nEvent consideration\n For our event, the plan was to distribute 5 ADA, send around 1.5 ADA, and leave 3.5 ADA to voters, but it appears that a significant number of voters actually chose to donate almost the entire amount. The",
+      "kinds": [
+        "chain",
+        "doc"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 20000,
+      "promise": "(A) Start the development of the Multi-address system (a kind of a viewer for each address)\n The basic content follows the content of Milestone 1, but reflects the feedback obtained from Milestone 1. Furthermore, a point system through the application allows producers who receive votes to receive some benefits.",
+      "criteria": "(A) To determine the design specifications of the application system",
+      "report": "We have make some meeting and discussion for the development of the voting result viewer system based on the UTXO Multi-address. Of course, we take into consideration the result of voting event at Milestone1. After this, we have decided the design specification of the application as following link. \nhttps://drive.google.com/file/d/1PQWw5-0t3PKCDOYWBcLzCzw0sJEQ41XS/view?usp=sharing\nThe summarized scope is as follows.\n・ a list of voting events.\n・ a list of voting targets and details.\n・Display the score according to the vote.\nExample : \nVoting number×1000＋ADA×500＋Token number\nNote that after the voting period ends and a snapshot is taken, even if the UTXO changes, the voting results and score will not change.\n・Administrators can do the following: \n Set voting targets\n Address, Image, Define the score conversion formula\n Execute the process of taking a snapshot of the voting results\n Modify voter scores (not result control but for operations such as reward) \n Voting Candidate can view their own voting results. \n \nby these achievement, the milestone 2 was achieved.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 20000,
+      "promise": "(B) To complete the Multi-address system (a kind of a viewer for each address)\nThe basic content follows the content of Milestone 1, but reflects the feedback obtained from Milestone 1. Furthermore, a point system through the application allows producers who receive votes to receive some benefits.",
+      "criteria": "(A) Complete the development of the application system",
+      "report": "We have developped vitoing viewer.\nMainly this system used for Japanese. But for explanation and utility, the system automatically detect the language.\nhttps://voting-viewer.vercel.app/\n\nThe token for the voting is as follows\naeacfb732277738673dbd226e524409fb4d3856c843c2298ad7b88cd\nAlso ADA can be used for the score.\nThe score formula can be tuned but in the EVENT2 we have used this formula\n(vote * 1000) + ((lovelace / 1000000) * 500) + token\nhttps://voting-viewer.vercel.app/ja/events/a1pi7qb5us6/entries\nThe using address is \nFor entry 1\naddr1q954vqvf27h4vatlw2ykd93mghkj6fjasn54vtd4yrw2unxxky44hgj5c6flgfljmr82mf4muqh0z7aykk4hvf0ncxjq7wcxt2\nhttps://cardanoscan.io/address/016956018957af56757f728966963b45ed2d265d84e9562db520dcae4cc6b12b5ba254c693f427f2d8ceada6bbe02ef17ba4b5ab7625f3c1a4\nFor entry 2\naddr1q8g743dtzw5wgejakcy3t4td004fqekxk8rf290cetr3xcwxky44hgj5c6flgfljmr82mf4muqh0z7aykk4hvf0ncxjqxkw2ak\nhttps://cardanoscan.io/address/01d1eac5ab13a8e4665db60915d56d7bea9066c6b1c69515f8cac71361c6b12b5ba254c693f427f2d8ceada6bbe02ef17ba4b5ab7625f3c1a4\nWe have comfirmed that the system can calculate the score from the transaction.\n\nThe voter can check the current score easily.\n\nAlso This system equipped the snapshot function.\nWhen the voting are finihed, we can take snapshot for the scoring.\nAfter the snapshot, someitmes we can use the voted ADA and tokens for donations.\n\nFrom these, the PoA3 is achieved. Also we can move to the practice voting event on next milestone.",
+      "kinds": [
+        "chain",
+        "live"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 25000,
+      "promise": "・(A) Implement the event using the developed application.\n・The basic content follows the content of Milestone 1, but reflects the feedback obtained from Milestone 1. Furthermore, a point system through the application allows producers who receive votes to receive some benefits.\n・\n\n・Final close-out report\n・Final closeout video",
+      "criteria": "・(A) over 50 attendee and voting, 10 feedcak for application\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "1. Milestone Outputs\nThe Final Milestone required the following outputs:\n• (A) Implement a voting event using the developed multi-address voting viewer application (built in Milestones 2–3), reflecting feedback from Milestone 1. The point system through the application allows producers who receive votes to receive benefits.\n• Final close-out report (publicly available)\n• Final close-out video (publicly available)\n2. Acceptance Criteria\n Criterion\n Status\n (A) Over 50 attendees and votes\n ✅ ACHIEVED — 60 on-chain votes recorded\n 10 feedback items for the application\n ✅ ACHIEVED — 11 distinct feedback items collected (detailed in Section 5)\n Final close-out report is publicly available\nhttps://drive.google.com/file/d/1zN9i6HzbW8Cb283tbrBdwJJlwyHpZgjm/view?usp=sharing\n ✅ ACHIEVED — See link in Section 7\n Final close-out video is publicly available\n https://youtu.be/rboUXbP6m7g\n﻿\nThe reason and detail for delay submission of the Final report will be written in chat.\n 3. Event Implementation: FC Tokushima MVP Voting\n3.1 Event Overview\nWe implemented a player MVP voting event in partnership with FC Tokushima, a professional football club based in Tokushima Prefecture. The event was held at Tabino Otomo Café, an inclusive café employing persons with disabilities, located at Amico Building 5F, Tokushima City.\nEvent period: December 2025 – March 2026\n Primary voting period: February–March 2026 (concentrated activity after operational changes)\n Location: Tabino Otomo Café, Amico Building 5F, Tokushima City\n Total on-chain votes: 60\n Application used: https://voting-viewer.vercel.app/ja/events/sjbm4jht6h/entries\n3.2 How the Event Worked\nVoting targets (FC Tokushima players) were configured in the voting viewer application with their photos, names, and unique Cardano addresses. Participants visited the café, received ADA and Otomo tokens, and voted for their favorite player by sending a transaction to that player’s address. Each vote was a real on-chain Cardano transaction, and",
+      "kinds": [
+        "chain",
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 25,
+      "cut": true
+    }
+  ]
+}

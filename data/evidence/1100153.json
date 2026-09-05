@@ -1,0 +1,33 @@
+{
+  "title": "Hardware-Secured Hot Wallets for Live Services (Dexes, Bridges, Side-Chains & Dapps)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 24762,
+      "promise": "・Purchase two system-on-a-chip (SoC) development boards for the prototype units (the SoC devices will contain an ARM CPU and a microcontroller).\n・Implement a heavily restricted UART command and control protocol for coordinating transaction signing between the PC and the hardware device.\n・Implement Ed25519 signing algorithm on the SoC’s CPU.\n・Document hardware prototype design.\n・Implement open source software for signing transactions using the hardware prototype.\n・Demonstrate the ability for the hardware device successfully signing Cardano testnet transactions, in which the host PC will pass binary transaction packets to the hardware device and receive valid signed transactions back.",
+      "criteria": "・Prototype hardware specifications published\n・Open source software repository available on GitLab\n・Video demonstration published showing the implemented outputs of this milestone:\n・Hardware prototype connected to a PC connected to the Cardano testnet.\n・Transactions being transmitted from PC to hardware via USB UART interface.\n・Hardware providing valid Ed25519 signatures back to the PC.\n・Signed transactions successfully submitted to the blockchain.\n・Demonstration that a remote attacker cannot access the hardware device's private key.",
+      "report": "The linked video demonstrates our successful completion of this milestone:\n・The hardware device is capable of receiving an unsigned Cardano transaction, computing the Ed25519 signature, and returning the signed transaction back to the host computer to submit to the blockchain.\n・The USB UART interface between the PC and hardware device is heavily restricted, only allowing CBOR-serializable strings through. \n・Additionally, the firewall implemented on the device's microcontroller makes it impossible for an attacker to gain shell access to the Linux CPU, as it is physically separated from the UART interface. Coupled with the fact that the private key is stored securely in the Trusted Execution Environment provided by ARM TrustZone, there are multiple layers of security preventing an adversary from accessing the wallet's private key.\n\nEvidence of milestone completion:\n・Video demonstration\n・Hardware and software design repository\n・Receipt for purchase of development boards",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 24762,
+      "promise": "・Devise and implement a Root of Trust for the hardware device governed by ARM TrustZone + Secure Boot. \n・Implement secure key storage within the secure enclave of the hardware device.\n・Design and fabricate a prototype circuit board for the hardware device.\n・Using the prototype device, demonstrate the ability for the host PC to pass binary transaction packets to the hardware device and receive signed transactions back with the wallet keys protected within the secure enclave of the device.",
+      "criteria": "・Prototype hardware specifications updated to include secure boot and key storage solutions.\n・Open source software implementation for signing transactions using the hardware prototype with the wallet key protected by the secure hardware uploaded to our GitLab repository.\n・Circuit board design files for the hardware prototype uploaded to our GitLab repository.\n・Demonstration video showing the hardware device successfully signing Cardano testnet transactions while resistant to side channel attacks due to the key being protected on the hardware.",
+      "report": "1. Output: Devise and implement a Root of Trust for the hardware device governed by ARM TrustZone and Secure Boot.\nAcceptance criteria: Prototype hardware specifications updated to include secure boot and key storage solutions.\nEvidence: The updated hardware specification is documented in the repo top-level README.md and hardware/README.md in our GitLab repository. The Root of Trust is implemented through the OP-TEE secure world running on the ARM Cortex-A7 and the signed boot chain. The boot chain build for TF-A, U-Boot, and OP-TEE is in software/dapp_wallet/Starter-Package, and the device trees for each boot component are in software/dapp_wallet/CA7/DeviceTree/dapp_wallet. Repository link: https://gitlab.com/viperscience/dapp-hardware-wallet.\n2. Output: Implement secure key storage within the secure enclave of the hardware device.\nAcceptance criteria: Open source software implementation for signing transactions using the hardware prototype with the wallet key protected by the secure hardware uploaded to our GitLab repository.\nEvidence: The Trusted Application that runs inside the secure enclave is at software/dapp_wallet/CA7/trustedTransactionSigner/ta/trusted_signer_ta.c. It generates the wallet key inside the enclave, stores it as an OP-TEE secure persistent object, and signs transaction IDs on request. The private key never leaves the secure world, and the normal world can request a signature but can never read the key. The normal world host application that requests signatures is at software/dapp_wallet/CA7/trustedTransactionSigner/host/main.cpp. All of this software is open source under the MIT license in our GitLab repository. Repository link: https://gitlab.com/viperscience/dapp-hardware-wallet.\n3. Output: Design and fabricate a prototype circuit board for the hardware device.\nAcceptance criteria: Circuit board design files for the hardware prototype uploaded to our GitLab repository.\nEvidence: The circuit board design files, including the schematic, board",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    }
+  ]
+}

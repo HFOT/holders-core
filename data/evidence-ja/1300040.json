@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・設計・文書拡張機能(事業分析を含む)\n・UI/UXデザインを拡張\n・VSコード拡張子の初期ソースコードを含む公開GitHubリポジトリの設定\n・導入アカウント作成設定機能\n・プロジェクト管理:リソースとタスクの整理と制御",
+      "criteria": "・書類:\n\n・使用される技術スタックの記述\n・各機能のユーザーフロー図\n\n・UI/UXデザイン:\n\n・すべての拡張機能に対応したWebviewデザイン\n\n・初期ソースコードをアップロードした公開リポジトリ\n・スクリーンショットやビデオのデモを提供して、アカウント作成のセットアップのための機能を示す\n・GitHub プロジェクト管理:\n\n・各タスクに対応する問題を含むGitHubプロジェクトボード。\n・タスクは、プロジェクトのマイルストーンにラベルを付けてリンクします.",
+      "report": "・ドキュメント: https://innolab.gitbook.io/cardano-easydev-vs-tool\n・UI/UXデザイン:https://www.figma.com/design/lM5rcmxr1bLpkB3JU4mI6q/Simulator?node-id=0-1&p=f&t=Px7Dg0YTxSMl7Vxz-0\n・GitHubリンク:\n・ドキュメント: https://github.com/Innovate-Lab/cardano-easydev-vstool-docs\n・エクステンション - フロントエンド: https://github.com/Innovate-Lab/cardano-easydev-vstool-frontend-extension\n・バックエンド: https://github.com/Innovate-Lab/cardano-easydev-vstool-backend\n・アカウント作成機能のスクリーンショットとビデオデモ: https://innolab.gitbook.io/cardano-easydev-vs-tool/features/1.-user-management/account-creation#demo\n・プロジェクト管理: https://github.com/orgs/Innovate-Lab/projects/10"
+    },
+    {
+      "no": 2,
+      "promise": "・アカウント管理機能とVSコードとのUI統合\n・Implement Aikenは、VSコード拡張(スマートコントラクトの展開機能とVSコードとのUI統合)でユニットテストを直接ビルドして実行します。\n・拡張機能(依存性管理やVSコードとのUI統合を含む)にdappテンプレート機能を組み込む\n・フロントエンド開発\n・バックエンド開発\n・プロジェクト管理:リソースとタスクの整理と管理.",
+      "criteria": "・スクリーンショットやビデオのデモを提供して、アカウント管理機能の機能性を示す\n・ビデオデモやスクリーンショットを経由して、VSコード拡張内でアイケンコードビルドと単体テスト機能をデモします。\n・Dappテンプレート機能を作成するビデオデモを提供\n・フロントエンド開発:\n・拡張子に埋め込まれた webview のソースコード、拡張子やバックエンドとのやり取りが可能。\n・バックエンド開発\n・ブロックチェーンプロバイダとのソースコードのやり取り、情報の取得\n・GitHub プロジェクト管理:\n・コーレスポの問題を含むGitHubプロジェクトボード",
+      "report": "マイルストーン2完成の証拠\n・アカウント管理機能のスクリーンショットとビデオデモ: https://innolab.gitbook.io/cardano-easydev-vs-tool/features/1.-user-wallet/account-management\n・AIKEN CLIインタラクション(ビルド、テスト):https://innolab.gitbook.io/cardano-easydev-vs-tool/features/2.-aiken-cli-interaction\n・Dappテンプレートを作成するためのスクリーンショットとビデオデモ:https://innolab.gitbook.io/cardano-easydev-vs-tool/features/3.-create-dapp-template\n・フロントエンド: https://github.com/Innovate-Lab/cardano-easydev-vstool-frontend-extension/tree/main/webview-ui\n・バックエンド: https://github.com/Innovate-Lab/cardano-easydev-vstool-backend\n・プロジェクト管理: https://github.com/orgs/Innovate-Lab/projects/10\n\nまた、上記機能のドキュメントを更新しました."
+    },
+    {
+      "no": 3,
+      "promise": "・VSコード拡張(VSコードと統合したスマートコントラクトテスト機能とUI)内のplutus.json(アイケンプロジェクトから構築)からバリデータとの実装\n・ウォレット管理機能とVSコードとのUI統合\n・バグのテスト、修正、フィードバックの収集\n・延長用のWebサイト\n・利用者のチュートリアル文書\n・事例\n・VSコードマーケットプレイスの拡張機能のリリース\n・プロジェクト管理(リソース・タスクの整理・管理)\n・マイルストーンの進捗と完了をまとめたクローズアウトレポートとビデオの送信",
+      "criteria": "・スマートコントラクトテスト機能を示すスクリーンショットやビデオデモを提供\n・ウォレット管理機能を示すスクリーンショットやビデオデモを提供\n・バグ報告、GitHubの問題からのフィードバック、修正された問題の要約\n・拡張子を紹介するウェブサイトを公開し、ユーザーチュートリアルや例を含む。\n・VSコードマーケットプレースに拡張機能を公開し、ユーザーがインストールするリンクを公開します。\n・GitHub プロジェクト管理:\n・各タスクに対応する問題を含むGitHubプロジェクトボード。\n・タスクは、プロジェクトのマイルにラベルを付けてリンクします",
+      "report": "・スマートコントラクトテスト機能を示すスクリーンショットとビデオデモ:https://innolab.gitbook.io/cardano-easydev-vs-tool/features/4.-simulation\n・ウォレット管理機能を示すスクリーンショットとビデオのデモ:https://innolab.gitbook.io/cardano-easydev-vs-tool/features/1.-user-wallet/wallet-management\n・バグ報告、修正問題、およびGitHubの問題で収集したフィードバックのまとめ:\n\n・バグ報告・修正問題:リンクはこちら\n・フィードバック:リンクはこちら\n\n・URL\n\n・Webサイトでは、エクステンション(ランディングページ):https://cardano-easydev-vstool-landing-page.vercel.app/\n・ユーザーチュートリアルと例:https://innolab.gitbook.io/cardano-easydev-vs-tool/user-tutorial-example\n\n・エクステンションリリース:https://marketplace.visualstudio.com/items?itemName=inno-labs.cardano-easydev-vstool\n・プロジェクト管理: https://github.com/orgs/Innovate-Lab/projects/10\n\n・休み報告:https://innolab.gitbook.io/cardano-easydev-vs-tool/close-out-report-f13\n・動画:https://youtu.be/3SubJ fErIg"
+    }
+  ]
+}

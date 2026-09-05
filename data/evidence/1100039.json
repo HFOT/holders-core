@@ -1,0 +1,58 @@
+{
+  "title": "Blockchain voting system",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 29300,
+      "promise": "・Scheme of the project, definition of macro tasks and tasks.\n・Define detailed system architecture and select technologies.\n・Interface design.\n・Database schema (script).",
+      "criteria": "・The project scheme and definition of macro and detailed tasks are clearly established and understandable.\n・The system architecture and selected technologies are detailed in documentation and provide a solid foundation for the project's future development.\n・The interface design aligns with specified design requirements and is functional for end users.\n・The database schema is comprehensive and provides an efficient and scalable structure for storing and manipulating data.\n・The project plan, including the roadmap, is up-to-date and accurately reflects progress and milestones achieved to date.\n・A",
+      "report": "We have achieved 100% compliance with milestone 1.\nBelow is the evidence of completion for each of the points:\n1.- Project roadmap.\nView the project scheme, definition of macro tasks and tasks here.\n2.- Architecture design.\nCheck out the detailed system architecture and technology selection here.\n3.- Blockchain component design.\nSee the blockchain component of the system here.\n4.- Database schema (script).\nAccess the database schema here, at the same link you can download the database script.\n5.- Component diagram.\nRefer to the component diagram here.\n6.- Data dictionary.\nReview the database definitions here\nVisit our site at https://democracyonchain.com/ to review all project-related documentation and get a comprehensive overview of our achievements to date.\"",
+      "kinds": [
+        "other"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 29460,
+      "promise": "・Development of the configuration module\n・Development of scanning module.\n・Development of the intelligent character recognition module.\n・REST API of modules modules of this phase.\n・Blockchain component.",
+      "criteria": "Development of the configuration module:\n・The configuration module is fully developed according to the requirements specified in the project documentation.\n・The source code of the configuration module is versioned and available for review.\n・The configuration module has been tested and validated to ensure its functionality and accuracy.\n\nDevelopment of scanning module:\n・The scanning module is fully developed, meeting the defined requirements in the project documentation.\n・The source code of the scanning module is versioned and available for review.\n・The scanning module has been tested and valid",
+      "report": "We have successfully completed 100% compliance with Milestone 2. Below is the evidence of completion for each deliverable in this phase:\n1.- Configuration Module\n View the configuration module with versioned source code here.\n2.- Scanning Module & Intelligent Character Recognition Module\n Access the scanning module, including versioned source code, and review the intelligent character recognition module and its versioned source code at the following link: here.\n3.- REST API for Modules in this Phase\n Check out the REST API documentation and versioned source code for the modules in this phase here.\n4.- Smart Contracts\n・The smart contracts developed for this project are available for review here.\n・Additionally, the REST API for the IPFS component is available for review here.\n\n5.- Technical Documents\n The technical documentation for configuring and running the system up to the current version is available here.",
+      "kinds": [
+        "code"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 24710,
+      "promise": "・Fingering module development (versioned source code).\n・Development of the quality control module (versioned source code).\n・Development of presentation of results (versioned source code).\n・Blockchain component",
+      "criteria": "Fingering module development:\n・The fingering module is fully developed according to the requirements specified in the project documentation.\n・The source code of the fingering module is versioned and available for review.\n・The fingering module has been tested and validated to ensure its accuracy and effectiveness in its designated tasks.\n\nDevelopment of the quality control module:\n・The quality control module is fully developed, meeting the defined requirements in the project documentation.\n・The source code of the quality control module is versioned and available for review.\n・The quality control",
+      "report": "Milestone 3 Report\nDeliverable 1: Fingering Module Development\nAcceptance Criteria:\n・The fingering module is fully developed according to the requirements specified in the project documentation.\n・The source code is versioned and available for review in GitHub.\n・The module has been tested and validated to ensure accuracy and effectiveness in its designated tasks.\n\nEvidence:\n・Fingering Module (Digitization Microsite): View here\n\nDeliverable 2: Quality Control Module Development\nAcceptance Criteria:\n・The quality control module is fully developed, meeting the defined requirements in the project documentation.\n・The source code is versioned and available for review in GitHub.\n・The module has been tested and validated to ensure it effectively identifies and addresses quality issues.\n\nEvidence:\n・Quality Control Module (Control Microsite): View here\n\nDeliverable 3: Results Presentation Module\nAcceptance Criteria:\n・The presentation of results module is fully developed according to the requirements outlined in the project documentation.\n・The source code is versioned and available for review in GitHub.\n・The module has been tested and validated to ensure it accurately presents the processed data and findings.\n\nEvidence:\n・Results Module: View here\n\nDeliverable 4: Blockchain Component\nAcceptance Criteria:\n・The blockchain component has been developed according to the requirements defined in the project documentation.\n・The source code is versioned and available for review in GitHub.\n・The blockchain component has been successfully integrated into the system and has passed functional and security testing.\n\nEvidence:\n・Blockchain Component: View here\n・Backend On-Chain Integration with Cardano Node: View here",
+      "kinds": [
+        "code"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 14730,
+      "promise": "・POC of Blockchain voting system.\n・Final report.\n・Closing project (video and project completion report)",
+      "criteria": "POC of Blockchain voting system:\n\n・The proof of concept (POC) demonstrates the functionality and feasibility of the blockchain-based voting system.\n・The POC includes essential features such as vote casting, validation, and tallying using blockchain technology.\n・The POC is tested and validated to ensure its accuracy, security, and usability.\n\nFinal report:\n\n・The final report provides a comprehensive overview of the blockchain voting system project, including its objectives, methodologies, findings, and conclusions.\n・The final report includes detailed documentation of the POC implementation, hig",
+      "report": "A. Output: Proof of Concept (PoC) of the Blockchain Voting System\nAcceptance criteria:\nThe Proof of Concept demonstrates the functionality and feasibility of a blockchain-based system applied to electoral processes. It includes the implementation of a hybrid architecture where blockchain (Cardano) is used as an audit and verification layer, while off-chain systems manage critical processes such as scanning, digitization, and quality control. The PoC validates traceability across all stages and ensures data integrity through cryptographic hashes and metadata recorded on the blockchain.\nEvidence:\nGeneral repository: https://github.com/democracyonchain/\nPoC results: https://github.com/democracyonchain/asuncion-documents/blob/main/docs/Proof%20of%20Concept%20results(EN).pdf\nClosing video: https://vimeo.com/manage/videos/1174237935\nSource Code:\nDesktop applications: https://github.com/democracyonchain/asuncion-desktop\nTransactional backend: https://github.com/democracyonchain/asuncion-backend\nTransactional frontend: https://github.com/democracyonchain/asuncion-frontend\nBlockchain component: https://github.com/democracyonchain/asuncion-blockchain\nPublic frontend for traceability: https://github.com/democracyonchain/asuncion-frontend-traceability\nTraceability backend: https://github.com/democracyonchain/asuncion-backend-traceability\nIPFS component: https://github.com/democracyonchain/asuncion-ipfs\nB. Output: Final Report\nAcceptance criteria:\nThe final report provides a comprehensive overview of the project, including objectives, methodology, architecture, implementation, results, and conclusions. It includes detailed documentation of the PoC implementation, highlighting technical decisions, system design, and the integration between blockchain, backend systems, and IPFS. It also presents recommendations for future improvements or deployment in real-world environments.\nEvidence:\nhttps://github.com/democracyonchain/asuncion-documents/blob/main/docs/Project%20Close-out%20Repo",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 32,
+      "cut": true
+    }
+  ]
+}

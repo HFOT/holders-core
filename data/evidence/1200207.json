@@ -1,0 +1,72 @@
+{
+  "title": "SNEKbot: A Telegram Trading Bot to Onboard 900M Monthly Active Users to Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 70000,
+      "promise": "・Separate telegram bot designed to monitor and share information on newly created tokens,\n・LP for tokens and token burns done through Snekx",
+      "criteria": "・Whenever a new Token gets minted through Snekx | Cardano Token Minter, a notification should be send to a telegram channel with information about the actions and tokens\n・Whenever an LP gets burn through Snekx | Cardano Token Minter, a notification should be send to a telegram channel with information about the action and tokens\n・Whenever an LP gets created through Snekx | Cardano Token Minter, a notification should be send to a telegram channel with information about the action and tokens",
+      "report": "1- A functional telegram bot that posts alerts and notifications designed to help increase visibility for traders in the ecosystem\n・SNEKbot external website: https://snekbot.io/\n・SNEKbot TG bot: https://t.me/snekbot_bot?start=snekbot.io\n・SNEKbot Alerts bot: https://t.me/snekbotalerts\n\n2- Successful integration with actions done through Snekx | Cardano Token Minter\nTo show this, we'll take this new token that was created a couple of days ago as an example to follow the flow of notifs: \n・Ticker: $HOT \n・Name: HOT\n・https://x.com/snekx_io/status/1853122698487968223\n\nYou can see the alerts on Snekx | Cardano Token Minter: \n・New token alert: https://x.com/snekx_io/status/1853122698487968223\n・New pool alert: https://x.com/snekx_io/status/1853123075694264386\n・LP burn Alert: https://x.com/snekx_io/status/1853125290551066797\n\nNow, through the SNEKbot Alerts bot (https://t.me/snekbotalerts), you can see these different alerts: \n・New token alert: https://t.me/snekbotalerts/2/2299\n・New pool alert: https://t.me/snekbotalerts/206/2300\n・LP burn Alert: https://t.me/snekbotalerts/4/2301\n\nAll of that linked to SNEKbot for trading. At every step of the way, you can click the \"BUY\" link which brings you to SNEKbot for trading in TG: \n・BUY⬇️ https://t.me/snekbot_bot?start=11_e841e9f9eefa6d0b3570ef5ee68f11bef865487584432a798afdd72f\n\n3- Different channels/topics for different actions (new tokens, new liquidity pools, new burns etc)\n・See the SNEKbot Alerts bot on TG: https://t.me/snekbotalerts\n\n4- When a new event happens a message will be sent to the corresponding alert channel/topic \n・Shown above in the #2, following the flow of notifications\n\n5- Shared links to the Alerts/Notifications channels (https://t.me/snekbotalerts)\n・SNEKbot external website: https://snekbot.io/\n・SNEKbot TG bot: https://t.me/snekbot_bot?start=snekbot.io\n・SNEKbot Alerts bot: https://t.me/snekbotalerts",
+      "kinds": [
+        "other",
+        "social"
+      ],
+      "links": 17
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 90000,
+      "promise": "Secure legal advice, incorporation, and a written Terms of Service agreement (TOS)",
+      "criteria": "・Obtain a general use Terms of Service agreement written and reviewed by a authorized law firm\n・Consult with legal counsel on appropriate measures regarding incorporation, licensing, and general legal compliance",
+      "report": "1- TOS to be published on website and linked to users when installing the bot\nSee here: https://snekbot.io/terms\nFor the bot: (Can't add a picture) \n・go on the bot: @snekbot_bot\n・do the command: \"/start\"\n・You'll see the terms there. \n\n2- References and legal documentation to be published on the snekbot website\nSee the last line of the terms here: https://snekbot.io/terms\n3- Status and/or Approvals for any licenses will be shared from official channels \nLegal research resulted in no need for a license. \n4- Share information of law firm used to consult for legal tasks \nSee the last line of the terms here: https://snekbot.io/terms",
+      "kinds": [
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 55000,
+      "promise": "A discord bot will be created with the same set of features as the SNEKbot telegram trading bot + alerts integration",
+      "criteria": "・The bot creates a new account for you\n・You can search tokens with policy ID or ticker to see stats and buy them\n・You can manage your portfolio for all Cardano native tokens with ease\n・You can buy and sell tokens\n・You can edit settings (slippage, portfolio view, price impact, etc)\n・You can withdraw your ADA to any native cardano address\n・You can Export your wallet seed phrase\n・You can view alerts for things like (new tokens, new lp, new burns, etc)",
+      "report": "https://www.youtube.com/watch?v=yeTbTweEJvM\nTo access discord bot, you'll need to join the snek server first, then you can access the channel:\nhttp://discord.gg/snekcoin\nonce verified in the server, access the discord bot here:\nhttps://discord.com/channels/1102319170810544249/1314608526668070922\nFor slippage on low liquidity tokens you can try anywhere from 50-100%. Servers are fully operating now and all issues fixed.",
+      "kinds": [
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 40000,
+      "promise": "・An audit of the codebase/infrastructure is conducted\n・If any mid/high/severe security vulnerability found is solved",
+      "criteria": "・Completing any changes or additions requested by the auditor",
+      "report": "Full audit completed. The audit report has also been added to the homepage of the website snekbot.io (bottom footer section)\nhttps://drive.google.com/file/d/1MmSyd5BOZg1-aPTCfwojRHpXpR62QAfa/view?usp=sharing\nhttps://snekbot.io/audit.pdf",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 45000,
+      "promise": "・Finalization and completion of all previous milestones\n・Making all evidence of said milestones publicly available and easily accessible.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・The final closeout report is publicly available\n・The final closeout video is publicly available\n・Notifications and alert system built for both telegram and discord bots\n・Legal review, documentation, and TOS implementation completed and published on snekbot website\n・Discord trading bot creation, implementation of features, QA/QC testing, and public launch.\n・Full audit of infrastructure and codebase, as well as providing ease of access to audit documentation",
+      "report": "Final closeout report\nhttps://docs.google.com/document/d/1n7s_OyJYRypy8IWg5RhpdXQgTktVCNzDdxNIzcwHVPs/edit?usp=sharing\nFinal closeout video\nhttps://www.youtube.com/watch?v=nuqxkTh9iSc\n﻿All notifications and alert bots are functioning as intended.\nAll legal documentation/TOS is published on https://docs.snekbot.io/\nSnekbot discord:\nTo access discord bot, you'll need to join the snek server first, then you can access the channel:\nhttp://discord.gg/snekcoin\nonce verified in the server, access the discord bot here:\nhttps://discord.com/channels/1102319170810544249/1314608526668070922\nAudit report published on the footer of the homepage: https://snekbot.io/",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

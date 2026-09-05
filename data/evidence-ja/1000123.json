@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・データエンコーディング(ジェネリック対コンパイラビルトイン、Scott対PlutusDataエンコーディング)へのアプローチを図っています。\n・LambdaBuffersとのコンサイダー統合(コンパイラレベルにしない目標)\n・種別クラスへのアプローチ、アドホック多形態主義\n・PSモジュールの対応方法(リンカ?)\n・最適化の一覧(紙からラムダの計算最適化のための法則と手法の見方)\n・コンパイラが依存するソフトウェア環境に関する前提を特定(OSやアーキテクチャをサポート)",
+      "criteria": "・上記のすべての質問は、コンパイラを実装する明確な方法を考え出すために十分に検討されています。仕様文書には、プロジェクトの出力に対応する特定の技術的決定、または実装フェーズまで決定の一部が延期された理由を説明する書面による記述が含まれています。\n・最終的な建築決定が実施フェーズ(ベンチマークが必要な選択肢の一部です)まで遅延する場合、可能なアプローチの明確な説明、およびその使用条件が提供されます",
+      "report": "マイルストーン・ワン・アウトプットのEVIDENCE\n\nマイルストーン完了の証拠に示されているマークダウン文書はこちら:\n\nhttps://github.com/mlabs-haskell/purus/blob/25e051a588b64feb4c6a4e07de5df7dde302e3aa/reports/M1-REPORT.md\n\nまた、YouTube動画をさらに詳しく紹介しました。\n\nhttps://youtu.be/Mg843NPTZsQ"
+    },
+    {
+      "no": 2,
+      "promise": "・リポ設定、Nix、CI\n・PSコードからIRまでのコンパイルワークフローを新しいコンパイラ(PS→CoreFn)に再配布\n・CoreFn -> UPLC 変換(plutus API はまだ基本的な primops)\n・UPLC試験器を用いたテストエンジンのセットアップ",
+      "criteria": "・CI設定を追加し、テストスイートを正常に実行\n・PSコード抽象的な構文ツリーをCoreFn表現に変換するフィクスチャーの例を同梱\n・CoreFn 表現を UPLC 抽象構文ツリーに変換するフィクスチャー例(基本的なプリモプスのみ)\n・テストエンジンは、生成されたUPLC ASTを実行し、結果が期待に一致することを主張することができます",
+      "report": "マイルストーン・コンプリケーションの発生\nマイルストーン2 SoMでは、概要の目的へのリンクを提供しています。\n\n1. CI のステータスは GitHub インターフェイスで表示されます。これは、repo e.g を下回る全体で表示します。\nhttps://github.com/mlabs-haskell/purus/pull/22\n\n詳しくはこちら\nhttps://github.com/mlabs-haskell/purus/pull/20\n\n2-4 テストソースコードはこちら\nhttps://github.com/mlabs-haskell/purus/blob/sean/monomorph/tests/TestPurus.hs\n\nそしてCIの統合はここに達成されました:\nhttps://github.com/mlabs-haskell/purus/pull/28\n\nまた、下記にリンクしているディレクトリには、JSON で書かれているCorefFn の出力が含まれています。\n例の出力サブディレクトリにある.cfn.pretty拡張子を持つファイルを参照してください。\nhttps://github.com/mlabs-haskell/purus/tree/sean/monomorph/tests/purus/passing\n\nそして最終的には、コンパイラパイプラインの現在のアーキテクチャを覆うアーキテクチャのドキュメントが追加されました。\nhttps://github.com/mlabs-haskell/purus/blob/sean/monomorph/Architecture.md"
+    },
+    {
+      "no": 3,
+      "promise": "・ノップバリデータ(TxInfoのデシリアライゼーションは必要ありません)\n・コンパイラの基本機能(算術、ブール論理)を提供するピュアスクリプト組み込み(Prim*モジュール)を再構築",
+      "criteria": "・テストスイートには、PureScript ソースから作業バリデータまで行く完全なパイプラインが含まれています。 バリデータは何もありません。\n・Purus の組み込みとして、PureScript インターフェイスを介してプリミティブ型とプリミティブ操作が露出されます",
+      "report": "マイルストーン・コンプリケーションの発生\nマイルストーン3 SoMでは、概要の目的へのリンクを提供しています。\n\n-バリデータテストソースコードとプリミティブテストコードへのリンク:\nhttps://github.com/mlabs-haskell/purus/blob/sean/pir-conversion-again/tests/purus/passing/Demo/Demo.purs\n\n- 関連するかなり印刷されたcorefnファイルへのリンクとして:\nhttps://github.com/mlabs-haskell/purus/blob/sean/pir-conversion-again/tests/purus/passing/Demo/output/Demo/index.cfn.pretty\n\n-コンパイルモジュールへのリンク\nhttps://github.com/mlabs-haskell/purus/blob/sean/pir-conversion-again/src/Language/PureScript/CoreFn/Convert/ToPIR.hs\n\n-関連するコミットへのリンク:\nhttps://github.com/mlabs-haskell/purus/commit/776ac5ec2194e11c296027a23cb6a4ec31f320\n\n-CI の結果にテストを渡すことのリンク:\nhttps://hercules-ci.com/accounts/github/mlabs-haskell/derivations/%2Fnix%2Fstore%2Ffc4i2vcq0j35cm9zjqfq1rqy320lj8vk-pre-commit-run.drv/log?via-job=091ff9ff-8e7d-4ef1-b53b-31410c69a\n\n-そして最終的にビデオの決定\nhttps://www.youtube.com/watch?v=q-L8TgRTB"
+    },
+    {
+      "no": 4,
+      "promise": "・Plutus ledger API(tx情報、plutus ledger apiライブラリ)の適応\n・PureScriptのプレリュード(部分)の適応\n・バリデータとマイニングポリシー(TxInfoシリアライズ)のインターフェース.",
+      "criteria": "・Purusタイプとして提供されているTxInfoおよびその子タイプはすべて、言語からアクセス可能です。 Plutus ledger API の関連部分を移植します。\n・PureScriptのプレリュードの一部をPurusに移植(JavaScriptの結合は削除されます)\n・実証済みの検証者と採掘方針を検証します.",
+      "report": "お問い合わせ\n\nそのため、Purus プロジェクトは、Purescript コードをCoreFn (Purescriptコンパイラのネイティブ) にコンパイルし、CorefFn を PIR にコンパイルします。 Plutusを直接PIRにコンパイルする通常のPlutusコンパイルパイプラインでこれを比較します。 これは、PIRから、Cardanoブロックチェーンが理解し、実行する言語であるUPLCへのほんの数ステップだけであるため、キーです。\n\nピュアスクリプト > CoreFn -> PIR -> PLC -> 高性能液体\nPlutus :: Plutus -> PIR -> PLC → 高性能液体\n\nそのため、逆注文で証拠を提示する可能性が高い:\n\n3) 少なくとも1つのバリデータと少なくとも1つのミンチングポリシーを示す一連の例へのリンク\n\n-Purescriptで書かれているバリディエーター:\nhttps://github.com/mlabs-haskell/purus/blob/sean/fix-multiple-scrutinee-cases/tests/purus/passing/CoreFn/Validator/Validator.purs\n\n-Purescriptで書かれたポリシーを指す:\nhttps://github.com/mlabs-haskell/purus/blob/sean/fix-multiple-scrutinee-cases/tests/purus/passing/CoreFn/MintingPolicy/MintingPolicy.purs\n\n2)PreludeのPurus関数が使えることを示す例へのリンク\n\n-ここでは、CoreFnにコンパイルされた修正されたPurescript Preludeを見ることができます - 一般的なPrelude関数は、多分、および fromMaybe、より重要なallListに気づく。\n\nhttps://github.com/mlabs-haskell/purus/blob/sean/fix-multiple-scrutinee-cases/src/ps-libs/prelude/Prelude.cfn.pretty\n\n- たとえば、私たちのバリデータで43行で使用されている、例えば、Preludeの関数は、確かにPurusを介して使用可能でコンパイル可能であり、証拠を割り当てる #2\n\nhttps://github.com/mlabs-haskell/purus/blob/sean/fix-multiple-scrutinee-cases/tests/purus/passing/CoreFn/Validator/Validator.purs\n\n1) TxInfoの使用を示す例へのリンク\n\n-Prelude に再度参照すると、エクスポートされた行 18 を参照できる関数 deserializeTxInfo をエクスポートし、行 748 から定義できます。 具体的には、行 748 の関数型定義に含まれる TxInfo に通知します。 後で l で定義された関数 deserializeScriptContext が参照されます"
+    },
+    {
+      "no": 5,
+      "promise": "・コンパイラパイプライン全体をカバーする統合テスト\n・ゴールデンテスト(フィクスチャーテスト)が使用可能\n・他の言語(プルタス、アイケン)と文章の比較\n・ドキュメントのあるウェブサイト",
+      "criteria": "・1-2. テストパスを提供, 既知の失敗テストはありません。, または, 修正が不可能である場合, 制限は、ドキュメントに記載する必要があります\n・3.言語間の建築的決定の違いは、ドキュメントで強調されている\n・4. 提供されたウェブサイトは、ドキュメントを閲覧するために使用することができます.",
+      "report": "レビュアーのフィードバックを受信した後、要求されたポイントと達成されたものの強調を議論するビデオをカットするのが最善であることを決定しました。\n\nこちらの動画をご覧ください。\n\nhttps://www.youtube.com/watch?v=pIPRpRKnuKY\n\nその他にも、カバーします。\n- テスト\n- トレース\n- 環境の構築とテストの実行\n\nビデオでは、すべてのテストがPIRによって強制される制限の説明で渡されることがわかります。\n\nハイライトされた言語の違いについては、以下を参照してください。\n\nhttps://github.com/mlabs-haskell/purus/wiki/Comparison-With-Other-Languages\n\nドキュメンテーションサイトについては、以下を参照してください。\n\nhttps://github.com/mlabs-haskell/purus/wiki"
+    },
+    {
+      "no": 6,
+      "promise": "・再利用可能なプロジェクトテンプレート(デモを含む)\n・PureScriptパッケージマネジャー(PureScriptパッケージマネジャー)を改造し、Purusベースのプロジェクトを構築できます。 また、まったく新しいツールも同じ目的のために利用できます.",
+      "criteria": "・テンプレートをインスタンス化し、バリデータスクリプトを正常にコンパイルできる\n・1つのコマンドでソースコードからUPLCバイナリを作成するために使用できるbundlerが提供されます.",
+      "report": "コンテンツ:\n\nPoAレポートはこちらからご覧ください。\nhttps://github.com/mlabs-haskell/purus-pkg/blob/jaredponn/catalyst-report/docs/catalyst-milestone-6.md\n\n更新されたクローズアウトビデオを含むもの:\nhttps://www.youtube.com/watch?v=ID6yAwrJtmI\n\nそして閉鎖のレポート:\nhttps://drive.google.com/file/d/11xjh 32SWhnWhnWnSE1ckcOoDx66yzhzg-/view?usp=sharing"
+    }
+  ]
+}

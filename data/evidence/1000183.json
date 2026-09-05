@@ -1,0 +1,88 @@
+{
+  "title": "The Handle Marketplace | ADA Handle",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "The purpose of this initial milestone is to build out a single marketplace feature. This feature will likely be the minting of Personalization assets, such as a background image. This will allow us to confirm that our minting Smart Contract works as expected for CIP-68 444 assets. We will launch this on PreProd, with beta testers.",
+      "criteria": "The acceptance criteria for this milestone is the ability for any community member to access the first demonstration of the marketplace from https://preprod.marketplace.handle.me/backgrounds and mint a CIP-68 444 asset. Any user will be able to connect to the marketplace and mint a background, for example.",
+      "report": "We have launched the first iteration of our marketplace on PreProd and Preview. Anyone can use the links to mint backgrounds. We have successfully onboarded 10s of NFT partner projects to mint their own backgrounds. Catalyst can test them from these links: https://preview.marketplace.handle.me/backgrounds and https://preprod.marketplace.handle.me/backgrounds. This is the documentation explaining how to format backgrounds correctly: https://public.koralabs.io/personalization/Handles+Background+Creator+Defaults.pdf.\nOn November 25, the reviewers attempted to follow the instructions above but couldn't get it work. We are resubmitting the exact same proof but adding the information that fr this to work, reviewers will need to have a Handle in their wallets. This is the only thing that was missing. Please, mint a Handle on PreProd or Preview (or both) in order to test this. You can do so from: https://preprod.mint.handle.me or https://preview.mint.handle.me. Once you have a Handle from the corresponding blockchain in your wallet, the above will work as outlined. Please, remember to switch your wallets to Preview and/or PreProd in order to mint and test the above.",
+      "kinds": [
+        "other"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "13",
+      "cost": 139500,
+      "promise": "The expected outputs for this second milestone will be the successful deployment of the first iteration of the marketplace on Cardano's MainNet. This will include several different CIP-68 assets, such as backgrounds, accessories and badges. This will be the first version of the marketplace so it will be limited to the purchase and minting of a select number of accessories. On future iterations of the marketplace more accessories will be included.\nThis milestone will also include an open-source CIP-68 (444) Smart Contract, written in Helios, and the audit report for the same Smart Contract.",
+      "criteria": "The acceptance criteria for this milestone will be the successful launch on MainNet of the CIP-68 Fungible Token (444) Smart Contract, that will allow the community, in a permissionless manner, interact with the marketplace, purchase a subset of all the assets, such as backgrounds, accessories and badges.\nWe will also open-source the Smart Contract related to this milestone, in addition to providing the audit report for the Smart Contract.",
+      "report": "Hello, We've updated the PoA with 2 tutorials on how to Personalize your Handle:\nIf you open this link: https://drive.google.com/file/d/1jwYtuR947qGPfrwck7vSlD7IyCaVkH_y/view?usp=sharing it has step-by-step instructions on how to Personalize your handle with a custom background.\nThe video below demonstrates how to interact with our Background Marketplace to mint/purchase Backgrounds for your Handle:\nhttps://www.youtube.com/watch?v=5jOQOIFIjAc - this video is a step-by-step on how to Personalize your Handle with a custom background.\nTo test this yourself, navigate to https://handle.me > Connect Your Wallet > Top Right, click on Choose Your Handle > Click on Personalization > Designer > Background > Toggle NFT > Add NFT > Marketplace > And choose any of the available Collections, as an example, check ahd mint the ADA Handle backgrounds.\nNOTE: Your Handle, must be on CIP-68 for you to be able to Personalize it. If your Handle is on CIP-25, once you select it from the \"Choose Your Handle\" section, at the bottom, you will see an UPGRADE button. It costs 4 ADA in Blockchain fees to upgrade it. We burn and remint the Handle on CIP-68, all in 1 transaction.\nThe 2 links below demonstrate our open-source contracts:\nhttps://github.com/koralabs/cip-68-444-minting/blob/master/minting.helios\nhttps://github.com/koralabs/cip-68-444-minting/blob/master/editing.helios\nThe link below is the audit report of our Smart Contract:\nhttps://public.koralabs.io/Kora-444-Minting-Audit.pdf\nThank you.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 11
+    },
+    {
+      "no": 3,
+      "month": "14",
+      "cost": 120000,
+      "promise": "The expected outputs for the third milestone will be to build and deliver the marketplace to list, sell and buy Handles in the secondary market, developed entirely within the PreProd blockchain. At the end of this milestone we expect the first version of this marketplace feature to be live within PreProd. Thus, any community member with a PreProd Handle will be able to list it within the marketplace, and others will be able to buy it.",
+      "criteria": "The acceptance criteria for this milestone is the ability to successfully list, buy and sell Handles in the Handle marketplace: https://preprod.marketplace.handle.me, within the PreProd blockchain. This will be a simplified but operational Smart Contract so, in a permissionless manner, the community will be able to interact with it.",
+      "report": "Hello,\nMilestone 3 of The Handle Marketplace is now complete.\nYou can buy, list and sell Handles inside the Preprod network:\nhttps://preprod.marketplace.handle.me\nMake sure your wallet is set to Preprod. If you need Test ADA (tADA) you can get it directly from the faucet:\nhttps://docs.cardano.org/cardano-testnets/tools/faucet/\nOnce you’re inside the Preprod Marketplace > Connect Your wallet on the top right. After your wallet has been connected, you can click on \"Explore\" to see the current available Handles listed for Sale. Select any Handle you want to purchase and click on buy. Sign the transaction. In a minute or 2, the Handle will be purchased and delivered to you.\nOn the top right, you will see a “Wallet” button, if you click on that, it will show you all the Handles you have inside your wallet and you can select any of them and list them for sale. Select a Handle, determine the price you want for it and click on List. Sign the Transaction, and in a minute or 2, the Handle will be listed for sale.\nWe recommend for these tests, either using Eternl or Lace on Desktop and VESPR on mobile.\n\nAdditionally, please check these 2 links that demonstrates how to list/buy/sell Handles in Preprod, using VESPR mobile wallet.\nHow to buy Handles on Preprod Marketplace: https://public.koralabs.io/marketplace/milestone3-buy.png\nHow to list Handles on Preprod Marketplace: https://public.koralabs.io/marketplace/milestone3-list.png\n\nThank you!",
+      "kinds": [
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "15",
+      "cost": 37500,
+      "promise": "One of the features that the marketplace will offer will be the ability for the community to render 3D avatars from their profile pictures. ADA Handle will soon launch a profile-picture NFT collection, also known as H.A.L. The expected output for this specific milestone will be to render a 3D version of this H.A.L PFP. This first iteration will be made available to the community from the PreProd blockchain, in a permissionless manner.",
+      "criteria": "The acceptance criteria for this milestone will be a fully operational 3D renderer for a specific NFT collection. The community will be able to, in a decentralized manner, directly from the PreProd blockchain, interact with this renderer, by assigning which H.A.L image they would like to render a 3D version of.",
+      "report": "Hello, we have completed Milestone 4.\nTo test and confirm that rendering a 3D HAL NFT works in Preprod I will need to send each one of you (Milestone Reviewers) 2 HAL NFTs on Preprod. 1 HAL NFT will have attributes to it, such as Shoes, Background, Headwear etc..and the other one will be naked. This way you can see the differences between them. \nPlease, send me your Preprod address and I'll send you 2 NFTs each.\nIf you could use built-in Discussion (chat) at the bottom for this project, to send me your Preprod address, I'll send the NFTs.\nOnce you have the NFTs inside your Preprod wallet, these are the steps:\n1. Navigate to: https://preprod.marketplace.handle.me/hal\n2. Connect your Wallet on the top right.\n3. On the left side, you will see your HAL NFTs with all of the attributes such as: Emotion, Shoes, Background, Coating, Glow etc...and as you can see, whatever attributes the 2D NFT has, it has been applied to the 3D rendered version.\nThe video below demonstrates the entire process I mentioned above:\nhttps://drive.google.com/file/d/1A4Z6Yie0H6uB7GW_lTyNW2GoQAdJjp7Y/view\nAs mentioned in the beginning of the PoA, please send me your Preprod wallet address so that I can send you the NFT to test.\nI have already sent 2 HAL NFTs to Reviewer 2, to this address: addr_test1qzz32wyqs0xnfdzh6vyn7p2pzz0ame2cus23zs9r0g6v286he6lvmlraawm42r492lls66072u07rjfxlqrmpan380mq03lmr4\nReviewer 2, please send me your Preprod address, so that I can send you 2 HAL NFTs for you to test.\nThank you!",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "16",
+      "cost": 23250,
+      "promise": "The expected outputs for this milestone will be to launch on MainNet the features that were tested and deployed on the previous two milestones (that will have been made available to the community within the PreProd blockchain). The two new features that will launch on MainNet will be the secondary Handle sales marketplace, and the 3D renderer for the H.A.L avatars. Thus, at the completion of this milestone, the community can expect to have full access to both on MainNet.\nThe other expected output for this phase will be the communication efforts with the Cardano and crypto community about the launch of the marketplace. We will utilize all major social-media platforms to promote the launch.",
+      "criteria": "The acceptance criteria for this milestone will be the ability for any community member to list, buy and sell Handles in the secondary marketplace from https://marketplace.handle.me, in addition to being able to render a 3D version of their H.A.L avatars, all done on Cardano's mainnet blockchain.\nThe other acceptance criteria will be the ability for the crypto and Cardano communities to join us on the social-media outreaches that we will perform, including but not limited to Twitter, Reddit and Discord AMAs.",
+      "report": "Hello, The Handle Marketplace is now live on MainNet.\n\nYou can access the Marketplace here: https://marketplace.handle.me\n\nThe video below, demonstrates how to Buy/List/Sell Handles as well as purchasing Backgrounds for Handles:\nhttps://www.youtube.com/watch?v=LoTH5KOK-Iw\n\nThe first step is to navigate to https://marketplace.handle.me. Connect your wallet.\n\nTo List a Handle:\nClick on the top right menu > click on Wallet > Under Wallet, select any of the Handles you own and click on List > select the price you want to list your Handle for > Click on List for Sale > Sign the transaction. Within a few minutes your Handle will be listed for sale.\nThis is the transaction ID for the Handle $bierhoff I listed for sale:\nhttps://adastat.net/transactions/bf82b21862579c6b45cedf22efe7074b1dd5fbc9f07891f2fa778d0f72669a9f\n\nTo Buy a Handle:\nOn the homepage: https://marketplace.handle.me > Click on Explore Listings > Select any of the Handles that are available for purchase > click on Buy > Sign the transaction. Within a few minutes the Handle will be purchased and sent to your wallet.\nThis is the transaction ID for the Handle $readyready I purchased on the video:\nhttps://adastat.net/transactions/b7b899236734a6f152733ffc9431f39a46e1eaf38d32885a70674727a1a74d93\n\nTo Buy a Background:\nOn the homepage: https://marketplace.handle.me > Click on Purchase Backgrounds > Scroll down and select any collection > Once you are inside the collection, choose any background you would like, you can select the quantity you want to purchase > Click on Buy > Sign the transaction. Within a few minutes the background(s) will be sent to your wallet.\nThis is the transaction ID for the Background CAD CREW I purchased on the video:\nhttps://adastat.net/transactions/b5160edc4eac33d0ee984b009c17e5576c1dbd27aac216a57b94f8860e9a3847\n\nIf you would like to see the rendered 3D version of the H.A.L. avatars, please send using the built-in chat here, your MainNet addresses and I will send a test HAL to each of the rev",
+      "kinds": [
+        "chain",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "17",
+      "cost": 69750,
+      "promise": "The purpose of this final milestone is to implement any final changes that might be required from the previous milestone. We do not expect any major changes, as milestone 4 will already have been a PreProd launch, from which we will have learned about bugs and updates. Thus, milestone 5 will already have been an updated launch of the two additional features: Handle sales in the secondary market, and the 3D renderer of our avatar, and therefore this final milestone will only be required for the final touches and minor upgrades.",
+      "criteria": "The acceptance criteria for this milestone will be the confirmation that the deployment of the two additional features: Handle sales on the secondary market, and the 3D renderer for our avatar, worked as designed. If additional changes and tweaks are required, we will provide them during this milestone but we do not expect any major changes, given that the previous milestones will have been used for all major changes and updates.",
+      "report": "Final Milestone Close-out Video:\nhttps://www.youtube.com/watch?v=C0jRbPhU99g\nClose-out Report can be viewed here.\nWe have successfully built the first iteration of the Handle\nMarketplace. \nCommunity members can now Buy, Sell and List\nHandles/SubHandles as well as purchasing Backgrounds for\ntheir Handles by going to https://marketplace.handle.me\nCommunity members can also view the 3D rendered H.A.L. NFTs\nby going to https://marketplace.handle.me/hal\n \nThis is a transaction for listing the Handle $bierhoff on the marketplace: \nhttps://adastat.net/transactions/20781aac832d57031e6cfdb66e64fd20a56ef551d94e13fe274796aa6aa4acd0\n \nThis is a transaction for buying the Handle $readyready on the marketplace:\nhttps://adastat.net/transactions/9a5d910845152a429911a237f6f198cc177100225e34692a44f4dc7d687052ea\n \nThis is a transaction for purchasing the background Woman in Graveyard from the ADA Handle collection:\nhttps://adastat.net/transactions/9a5d910845152a429911a237f6f198cc177100225e34692a44f4dc7d687052ea\nThus proving that the Handle Marketplace is live and working as\nexpected.\nThank you!",
+      "kinds": [
+        "chain",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 13
+    }
+  ]
+}

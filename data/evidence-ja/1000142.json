@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Catalystの提案では、OpShinのコア改善のための3つのタスクについて説明します。 最初の1つはユーザビリティの改善をカバーしています。開発者は、ロード、デプロイ、対話など、スマートコントラクトの基本的な操作を簡単に実行できます。 このツール(Plutus Blueprintsのサポートなど)は、OpShinから欠落し、実装する必要がある\n\n具体的な出力は下記のものを含んでいるべきです:\n・プルタス・ブループリント対応(https://github.com/OpShin/opshin/issues/57)\n・OpShin(https://github.com/OpShin/uplc/issues/12)による取引構築支援\n・エラー報告とロギング(https://github.com/OpShin/opshin/issues/160)",
+      "criteria": "マークされた3つの問題(Plutus Blueprintsのサポート、OpShinのトランザクションビルディングのサポート、エラーレポートの改善、ロギングの改善)は、対応するコード変更でPull Request(PR)に変換する必要があります。 つまり、開発者は、与えられた問題を解決するために、コードベースに行った変更を一般に共有することを意味します。 通常どおり、メインプロジェクトのTwitterページ(@OpShinDev)を通じて、各PRの説明も行います.",
+      "report": "上記の問題は、これらのプルリクエストで解決されています。\nPlutus Blueprintsのサポート(https://github.com/OpShin/opshin/issues/57)\n・https://github.com/OpShin/opshin/pull/279\n・CIP 57(https://github.com/cardano-foundation/CIPs/pull/615)の調整にも対応\n\nOpShin(https://github.com/OpShin/uplc/issues/12)による取引構築支援\n・https://github.com/OpShin/uplc/pull/30\n\nエラー報告とロギング(https://github.com/OpShin/opshin/issues/160)\n・https://github.com/OpShin/opshin/pull/340\n\nプルリクエストとTwitterでの説明が提供されました。\n・https://x.com/OpShinDev/status/1742196548396831198?s=20\n・https://x.com/OpShinDev/status/1735056600832815192?s=20\n・https://x.com/OpShinDev/status/1718748718881513970?s=20"
+    },
+    {
+      "no": 2,
+      "promise": "Catalystの提案では、OpShinのコア改善のための3つのタスクについて説明します。 2つ目のカバーの最適化:\n・OpShin(https://github.com/OpShin/opshin/issues/267, https://github.com/OpShin/opshin/issues/168) での最適化の構成可能度\n・Plython(https://github.com/OpShin/pluthon/issues/7)\n・UPLC(https://github.com/OpShin/uplc/issue/26)",
+      "criteria": "マークされた3つの問題(OpShin、Plython、UPLCの最適化の構成可能度)は、対応するコードの変更でプルリクエスト(PR)に変換する必要があります。 つまり、開発者は、与えられた問題を解決するために、コードベースに行った変更を一般に共有することを意味します。 通常どおり、メインプロジェクトのTwitterページ(@OpShinDev)を通じて、各PRの説明も行います。\n\nPRは、変更の動詞的な説明と、トランザクションサイズや実行ステップの縮小の観点から最適化の利点を示すいくつかのベンチマークが含まれています",
+      "report": "上記の問題は、これらのプルリクエストで解決されています。\n\nOpShin (https://github.com/OpShin/opshin/issues/267, https://github.com/OpShin/opshin/issues/168) で最適化の構成可能度\n・https://github.com/OpShin/opshin/pull/341\n\nPluthon(https://github.com/OpShin/pluthon/issues/7)の最適化の構成可能度\n・https://github.com/OpShin/pluthon/pull/20\n\nUPLC(https://github.com/OpShin/uplc/issues/26)の最適化の構成可能度\n・https://github.com/OpShin/uplc/pull/33\n\nプルリクエストは、プロジェクト通信チャネルを通じて変更内容の検証と変更のさらなる説明が発表されています。\n・https://x.com/OpShinDev/status/1764654529734218181?s=20\n・https://x.com/OpShinDev/status/1765022267413569702?s=20"
+    },
+    {
+      "no": 3,
+      "promise": "Catalystの提案では、OpShinのコア改善のための3つのタスクについて説明します。 3 番目の 1 つは、シミュレーションをカバーします。Plutus VM は、Cardano の Python スタックで開発する際に、完全な自由と柔軟性を与えるために Python で十分に実装する必要があります。 現在の実装は、Plutus V3 に存在する精度とテストだけでなく、プリミティブを欠いている。\nPython の Plutus VM の完全型安全かつコスト測定の実装。\n関連する問題は、\n・UPLC(https://github.com/OpShin/uplc/issues/12)でTxを正式に評価\n・ビルトインのチェックタイプ(https://github.com/OpShin/uplc/issues/4)",
+      "criteria": "マークされた2つの問題(UPLCおよびタイプチェックのネイティブ評価)は、対応するコードの変更でプルリクエスト(PR)に変換する必要があります。 つまり、開発者は、与えられた問題を解決するために、コードベースに行った変更を一般に共有することを意味します。 通常どおり、メインプロジェクトのTwitterページ(@OpShinDev)を通じて、各PRの説明も行います。\nPRは、変更の動詞説明と、作成とローカルのシミュレートトランザクションのシミュレーションを使用する方法についてのいくつかの概要が含まれています。 この結果は、プレコンピューティングに役立ちます",
+      "report": "このマイルストーンの2つの参照された問題が完成しました。 提出された他のマイルストーンは完全に独立しています。\nhttps://github.com/OpShin/uplc/issues/12\nhttps://github.com/OpShin/uplc/issues/4\n結果は、uplcのパッケージバージョン1.0.0で粉砕され、このツイートとリンクされたリリースの詳細で説明されています。\nhttps://twitter.com/OpShinDev/status/1742196548396831198\n\nまた、プロジェクト・クローズアウト・レポートをコンパイルし、次のリンクを提供します。\nhttps://docs.google.com/document/d/1riuny9CzBLw3wKMiSo0CePa zlDCZ0e3L8voVMilwTk/edit?usp=sharing\nプロジェクトクローズアウト動画をYoutubeにアップロードし、このリンクからアクセスすることができます。\nhttps://www.youtube.com/watch?v=Shpx CJMHjA"
+    }
+  ]
+}

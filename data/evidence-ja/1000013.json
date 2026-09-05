@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "MerkleTreeの実装ライブラリは、Plutarch と Aiken で書かれています。\nMerkleTreeライブラリの実装を検証し、表示するためのバリデータスクリプトの例\nMerkleTreeユニットテストを実施",
+      "criteria": "・MerkleTreeライブラリを実装\n・MerkleTreeユニットテストを実施\n・バリデータスクリプトの実装例",
+      "report": "私達にあります:\n・PlutarchとアイケンのMerkleTree実装ライブラリ\n・MerkleTreeライブラリの実装を検証し、表示するバリデータスクリプトの例\n・MerkleTreeユニットテストを実施\n\nPlutarch の MerkleTree: https://github.com/Anastasia-Labs/plutarch-merkle-tree\nアイケンのメルクルツリー: https://github.com/Anastasia-Labs/aiken-merkle-tree"
+    },
+    {
+      "no": 2,
+      "promise": "・リンクリストの実装ライブラリは、Plutarch と Aiken に書かれています。\n・バリデータスクリプトの例では、Linked List ライブラリの実装を検証し、紹介します。\n・リンクリストユニットテストを実施",
+      "criteria": "・リンクリストライブラリを実装\n・リンクリストユニットテストを実施\n・バリデータスクリプトの実装例",
+      "report": "私達にあります:\n・Plutarch と Aiken のリンクリスト実装ライブラリ。\n・バリデータスクリプトの例では、Linked List ライブラリの実装を検証し、紹介します。\n・リンクリストユニットテストを実施\n\nPlutarchのリンクリスト: https://github.com/Anastasia-Labs/plutarch-linked-list\nアイケンのリンクリスト: https://github.com/Anastasia-Labs/aiken-linked-list\n最後のPoAのために私たちを抜いてください - 私たちは、事故で私的plutarc-linked-listレポを残しました、今、すべてが今利用可能なはずです"
+    },
+    {
+      "no": 3,
+      "promise": "・PlutarchとアイケンのTrie実装ライブラリが書かれています。\n・Trieライブラリの実装を検証して表示するバリデータスクリプトの例\n・トライユニットテストを実施",
+      "criteria": "・トライライブラリの実装\n・トライユニットテストを実施\n・バリデータスクリプトの実装例",
+      "report": "Aiken と Plutarch の三重実装を完了しました。\nPlutarch - https://github.com/Anastasia-Labs/plutarch-trie\nアイケン - https://github.com/Anastasia-Labs/aiken-trie\nどちらのtrieライブラリも正常にコンパイルされ、テストを実行するための詳細な手順が提供されます。 ユニットテストは、テストフォルダ(https://github.com/Anastasia-Labs/plutarch-trie/tree/main/test および https://github.com/Anastasia-Labs/aiken-trie/tree/main/tests)で提供されます。\n※当社のgithubリポジトリにビジュアル表現を追加し、より簡単に理解できるようにしました"
+    },
+    {
+      "no": 4,
+      "promise": "設計仕様書は、3つの設計パターン(Merkle Tree、Linked List、Tries)のそれぞれを上書きします",
+      "criteria": "・メルクルツリーの文書化:\n・カルダノのメルクルツリーの概念と使用についての説明\n・Cardanoのスクリプト言語(AikenとPlutarch)でMerkle Treesを実装する方法について明確かつ簡潔に説明\n・文書化の整理、整形、分かりやすく\n・トリエの文書化:\n・Cardanoのスクリプト言語におけるTriesの目的と機能の解釈に関する包括的なドキュメント。\n・Trieデータ構造をAikenとPlutarchを使用してCardanoスマートコントラクトに統合する方法に関するステップバイステップの指示。\n・リアルワールド例をイラスト化",
+      "report": "3つのデザインパターン(Merkle Tree、Linked List、Tries)のそれぞれを上書きするデザイン仕様書を送付しています。\nドキュメントは github で見つけることができます。\nhttps://anastasia-labs.github.io/data-structer"
+    },
+    {
+      "no": 5,
+      "promise": "・Cardano の Aiken および Plutarch スクリプト言語で公開されている Merkle Trees、Tries、Linked List の実装をパブリックリポジトリに公開 - https://github.com/Anastasia-Labs/data-constructs.\n・フェーズ3で作成された包括的なドキュメントは、コードリポジトリに統合されます。 ドキュメントは、コードベースと簡単にアクセスでき、明確な指示、例、使用例が含まれます。\n・プロジェクトの成果をまとめたプロジェクトクローズアウト動画\n・プロジェクトクローズアウトレポート",
+      "criteria": "・コードリポジトリ:\n・Merkle Trees、Tries、Linked List の実装のコードは https://github.com/Anastasia-Labs/data-struct で公開されています。\n・コードリポジトリには、コードをクローン、ビルド、使用する方法に関する詳細なREADMEファイルが含まれています。\n・バージョンアップやタグ付けは、進捗状況や更新を追跡するためのコードベースに適用されます。\n・包括的なドキュメント:\n・Merkle Trees、Tries、Linked Listのドキュメントをhttps://github.com/Anastasia-Labs/data-structに統合\n・文書化は最新の状態を維持し、簡単にアクセスできるものでなければなりません",
+      "report": "マイルストーン5のPoAを提出して、私たちは幸せで誇りに思っています。\nGitHub は https://github.com/Anastasia-Labs/data-constructions にコミットします: Merkle Trees、Tries、Linked List の公開コードリポジトリの実装: https://github.com/Anastasia-Labs/data-structor\nhttps://github.com/Anastasia-Labs/data-structures に関する包括的なドキュメント: https://github.com/Anastasia-Labs/data-structor/blob/main/README.md\nプロジェクトのクローズアウトビデオへのリンク: https://youtu.be/a4PdqEjHIEY\nプロジェクトのクローズアウトレポートへのリンク: https://github.com/Anastasia-Labs/project-close-out-reports/blob/main/f10-trifecta-of-data-constructs-closeout-report/trifecta-of-data-constructs.pdf"
+    }
+  ]
+}

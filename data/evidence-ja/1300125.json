@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・リアルタイムセンサーデータ処理のためのカルダノL1とハイドラL2を活用したブロックチェーンバックエンドの設計文書\n・上記意匠文書に基づく試作環境の整備のための文書化\n・性能測定結果 上記環境評価によるサンプルIoTデバイス",
+      "criteria": "・ブロックチェーンバックエンドデザイン文書の内容\n\n・お問い合わせ仕様\n・システムブロック図\n・シーケンス図\n\n・プロトタイプ環境設定文書の内容\n\n・CardanoとHydraのLinuxセットアップドキュメント\n・環境設定スクリプト\n・性能測定スクリプト\n\n・試作環境における性能評価メトリック\n\n・応答時間:IoTデバイスイベントからブロックチェーン処理の開始まで\n・所要時間:IoTデバイスイベントの発生から取引完了までの時間\n・処理件数:単位時間あたりの処理件数",
+      "report": "マイルストーン1の達成証明を準備しました。\nお問い合わせ\n\n1. ブロックチェーン・バックエンド・デザイン・ドキュメント(Web)\n- https://bypp.tech/en/docs/category/design-concept\n2. Web上のプロトタイプ環境設定マニュアル\n- https://bypp.tech/en/docs/f13/eval/enviroment-hydra\n- https://github.com/bypptech/simple-hydra-client\n- https://github.com/bypptech/cardano-cli-wrapper\n3. 測定プログラムのソースコードと共に、Web上のプロトタイプ環境でのパフォーマンス測定結果\n- https://bypp.tech/en/docs/f13/eval/benchmark-hydra\n- https://github.com/bypptech/simple-hydra-client\n- https://github.com/bypptech/cardano-cli-wrapper\n\n付録:ブロックチェーン EXPO Spring 2025\n\n- https://bypp.tech/en/docs/f13/expo2025spring"
+    },
+    {
+      "no": 2,
+      "promise": "・OSS Cardano L1 クライアント SDK\n・OSS Hydra L2 クライアント SDK\n・上記SDKの開発者ドキュメント\n・SDK上に表示するデモビデオ",
+      "criteria": "・OSS Cardano L1クライアントSDKによるプライマリ機能\n\n・ESCROW取引の開始と終了\n\n・OSS Hydra L2 クライアント SDK によるプライマリ機能\n\n・L1とL2ウォレット間の同期\n・L2ウォレット間の決済\n\n・OSS SDK開発者ドキュメントの内容\n\n・API仕様\n・サンプルプログラム\n\n・OSS SDKの動作を示すデモビデオ\n\n・シームレスな動作確認のためのOSS SDK",
+      "report": "マイルストーン2の達成証を準備しました。\nお問い合わせ\n1.Cardano L1クライアントSDKリポジトリがGitHubに掲載\n2.Hydra L2 クライアント SDK リポジトリが GitHub に掲載されました\n・L1/L2 オープンソース SDK を一元管理します。\n・https://github.com/bypptech/cardano-hydra-wrapper-api\n\n3.Web上で公開される各OSS SDKの開発者文書\n・https://bypp.tech/en/docs/cardano/f13/arch/api/\n・https://bypp.tech/apidoc/cardano-hydra-wrapper-api/\n\n4.Web上で公開された各OSS SDKをデモビデオ表示\n・https://www.youtube.com/watch?v=tXYD8XefoD8\n\n付録。 Hydra ノード v0.22.3 評価データ\n・https://bypp.tech/en/docs/cardano/f13/eval/benchmark-hydra-0223"
+    },
+    {
+      "no": 3,
+      "promise": "・IoTデバイス bypp Cardano対応\n\n・ガチャガチャ\n・スマートライト\n・スマートアウトレット\n・スマートキー",
+      "criteria": "・別府のIoTソリューション「Lock’n’」をカスタマイズし、次の機能を実現\n\n・IoTデバイスソフトウェアとハードウェアのカスタマイズ\n・OSS SDKによるIoTソリューションの統合",
+      "report": "親愛なる査読者,\nありがとうございます。 コメントに基づいて、証拠を返還します。\nお問い合わせ\n\n出力:\nIoTデバイス bypp Cardano対応\n受諾の条件:\nbypp の IoT ソリューションをカスタマイズして、以下を実現:\nIoTデバイスソフトウェアとハードウェアのカスタマイズ\nOSS SDKによるIoTソリューションの統合\n証拠:\n1.ホワイトペーパー\nCardano 互換の bypp IoT ソリューションに関するホワイトペーパーが公開されました。\n改定された書類をご確認下さい。\nカルダノとハイドラホワイトペーパーのIoTソリューション\n必要なホワイトペーパー要素に対処し、次のセクションを含むように再構成されています。\n・ブロックチェーンを活用したIoTデバイス開発における実証と課題\n・ブロックチェーンとIoTデバイス間の応答速度ギャップ\n・マイクロトランスメーションによるガス費やLedger Bloatの増加\n・プリペイド方式でネイティブトークンをプロプライエタリポイントに変換する\n・開発ドメインギャップ\n・解決への課題と課題のまとめ\n・チャレンジへのソリューション\n・ヒドラ\n・ハイドラで各チャレンジを解決\n・チャプターの概要\n・byppブロックチェーン対応IoTソリューション\n・ソリューションの特徴\n・建築\n・フロー\n・ブロックチェーン決済対応IoTスマートデバイス\n・カプセル玩具自動販売機\n・電磁ロック\n・照明・コンセント\n・ロードマップと高度なチャレンジ\n・開発ロードマップ\n・チャレンジ\n・応用分野\n・付録\n\n2.デモビデオ\nシステム運用シーケンス・ドライビング・カルダノの「Annotated」と「オリジナル・バージョン」を両立したシングル・デモ・ビデオ\n注釈バージョン\nオリジナルバージョン"
+    },
+    {
+      "no": 4,
+      "promise": "byppのIoTソリューションがCardano Testnetで動作\natten: 独自のCatalyst「プロトタイプサービスのテストと起動」のマイルストーンを2つの別々の関連マイルストーンに分割しました.",
+      "criteria": "・Cardano Testnet上でBPP IoTソリューションの運用検証、性能測定、フィードバック統合を実施\n\nキー検証チェックリスト\n・エンドツーエンドL1とL2制御によるIoTデバイスイベント\n・システム資源消費分析\n・キーパフォーマンスメトリックの測定:\n\n・応答時間\n・所要時間\n・トランザクションスループット",
+      "report": "出力:\nbyppのIoTソリューションがCardano Testnetで動作\natten: 独自のCatalyst「プロトタイプサービスのテストと起動」のマイルストーンを2つの別々の関連マイルストーンに分割しました。\n受諾の条件:\nCardano TestnetのBYPP IoTソリューションの運用検証、パフォーマンス測定、およびフィードバック統合を実施\nキー検証チェックリスト\n・エンドツーエンドL1とL2制御によるIoTデバイスイベント\n・システム資源消費分析\n・キーパフォーマンスメトリックの測定:\n\n・応答時間\n・所要時間\n・トランザクションスループット\n\n証拠:\nCardano TestnetのIoTソリューションの運用のシーケンスを示すデモビデオ\n・Annotated version: https://www.youtube.com/watch?v=nGcGWIu3l6k\n・オリジナル版:https://www.youtube.com/watch?v=TY6IkdIBgUc\n・Cardano Preprod Testnetのデモビデオ操作のトランザクションログ\n・ヒドラヘッドオープン(CommitTX)\n・https://preprod.cardanoscan.io/transaction/cc6299d67a5bf6617ed807e4b9cf2d79d3095b07521857a8dcb532c054bc83e6?tab=metadata\n・ヒドラヘッドクローズ(FanoutTX)\n・https://preprod.cardanoscan.io/transaction/f2da00225d648312d01faaf723c35ccc807b0a84b3a8e4ea667384933c9003ef?tab=metadata\n\nWeb上に公開されたパフォーマンス測定結果\n・https://bypp.tech/en/docs/cardano/f13/eval/benchmark-hydra-130\n\n付録:ブロックチェーン EXPOの秋の報告書2025\n・https://bypp.tech/en/docs/cardano/f13/expo2025autumn"
+    },
+    {
+      "no": 5,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ\n\n以下の内容が含まれます。\n・Cardano Mainnet上で動作するバイップのIoTソリューション\n・OSS SDKの安定リリース\n・すべてのドキュメントの最新バージョン",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n\n以下の内容が含まれます。\n・IoTソリューション「バイップ」は、カーダノ・メインネットの「要件仕様」に完全対応\n・OSS SDKの安定版リリース\n・Web上の最新バージョンに更新されたすべての公開開発者文書",
+      "report": "最終マイルストーンレポートは、プロジェクトのクローズアウトレポートとビデオが続行されます。\n\n1.最終マイルストーンレポート\na. 最終的なマイルストーンの出力\n・最終クローズアウトレポート\n・最終クローズアウトビデオ\n\n以下の内容が含まれます。\n・Cardano Mainnet上で動作するバイップのIoTソリューション\n・OSS SDKの安定リリース\n・すべてのドキュメントの最新バージョン\n\nb. 受諾条件\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n\n以下の内容が含まれます。\n・IoTソリューション「バイップ」は、カーダノ・メインネットの「要件仕様」に完全対応\n・OSS SDKの安定版リリース\n・Web上の最新バージョンに更新されたすべての公開開発者文書\n\nc. 証拠\ni. Cardano Mainnet上のByppのIoTソリューションの運用のシーケンスを示すデモビデオ\n注釈バージョン\nオリジナルバージョン\n・ヒドラヘッドオープン(CommitTX)\n\nhttps://cardanoscan.io/transaction/554ac8cd0140d9d66247da5f6fa65bc671a679f9e1eb6636ad2a4d0bbe6585d3?tab=metadata\n・ヒドラヘッドクローズ(FanoutTX)\n\nhttps://cardanoscan.io/transaction/a6a29455741372fa738c0c51d64c0550079b8e6559a1e110a13739abcbb56f65?tab=メタデータ\nii. GitHubで公開されているOSS SDKの安定リリース\nOSS SDK: カーダノ・ハイドラ・ラッパー・API\n3。 開発者ドキュメントの最新バージョンは、Web上で公開\niii-1. ホワイトペーパー\niii-2. 開発者ドキュメント\n・建築\n・APIドキュメント\n\nトピックス アレンデックス\nEXPOブロックチェーン春の報告 2026年\n\n2.プロジェクトクローズアウトレポートとビデオ\nプロジェクトクローズアウトレポート\nプロジェクトクローズアウトビデオ"
+    }
+  ]
+}

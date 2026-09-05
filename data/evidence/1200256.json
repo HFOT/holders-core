@@ -1,0 +1,79 @@
+{
+  "title": "zkFold: Smart Contract Wallet Backend",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Context: The smart contract wallet backend is a library that contains a smart contract (on-chain), the related off-chain code, and the server code to run a smart contract-based cryptocurrency wallet for the Cardano blockchain. Any Cardano wallet (browser extension) will be able to use our library.\nTask: Create documentation for the smart contract, specifying what exactly it does. Additionally, we create the description of the API available to the wallet developers who want to use the smart contract wallet backend.\nOutputs:\n・Produce Smart Contract Wallet specification\n・Produce Smart Contract Wallet API docs",
+      "criteria": "・Smart Contract Wallet specification can be found in the repo\n・Smart Contract Wallet API docs can be found in the repo",
+      "report": "We have created the documentation for the smart contract, specifying what exactly it does. Additionally, we have completed the description of the API available to the wallet developers who want to use the smart contract wallet backend.\nProduce Smart Contract Wallet specification\nhttps://docs.zkfold.io/other-zkapps/wallet-backend/\nProduce Smart Contract Wallet API docs\nCIP-30 Wallet API:\nhttps://docs.zkfold.io/other-zkapps/wallet-backend/#cip-30-wallet-api\nSymbolic Wallet API\nhttps://docs.zkfold.io/other-zkapps/wallet-backend/#symbolic-wallet-api",
+      "kinds": [
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 120000,
+      "promise": "Context: The smart contract wallet backend is a library that contains a smart contract (on-chain), the related off-chain code, and the server code to run a smart contract-based cryptocurrency wallet for the Cardano blockchain. Any Cardano wallet (browser extension) will be able to use our library.\nTask: Implement CIP-30 interface for the smart contract wallet backend.\nOutputs:\n・Build CIP-30 Smart Contract Wallet Backend prototype",
+      "criteria": "CIP-30 Smart Contract Wallet Backend prototype can be found in the repo",
+      "report": "Task: \nWe have created a CIP-30 interface for the smart contract wallet backend.\nOutputs:\nBuild CIP-30 Smart Contract Wallet Backend prototype can be found in our repo:\nhttps://github.com/zkFold/smart-contract-wallet",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 120000,
+      "promise": "Context: The smart contract wallet backend is a library that contains a smart contract (on-chain), the related off-chain code, and the server code to run a smart contract-based cryptocurrency wallet for the Cardano blockchain. Any Cardano wallet (browser extension) will be able to use our library.\nTask: Implement prototypes of the smart contract wallet features. It requires producing smart contract (on-chain) code for those features.\nOutputs:\n・Build generic zkLogin feature prototype (Haskell)\n・Build babel fees feature prototype (Haskell)\n・Build sponsored transaction feature prototype (Haskell)\n・Complete multi-user transaction feature prototype (Haskell)",
+      "criteria": "・generic zkLogin feature prototype (Haskell) can be found in the repo\n・babel fees feature prototype (Haskell) can be found in the repo\n・sponsored transaction feature prototype (Haskell) can be found in the repo\n・multi-user transaction feature prototype (Haskell) can be found in the repo",
+      "report": "We have implemented prototypes of the smart contract wallet features as per below:\nBuild generic zkLogin feature prototype (Haskell)\nhttps://github.com/zkFold/zkfold-base/blob/main/symbolic-cardano/src/ZkFold/Symbolic/Cardano/Contracts/ZkLogin.hs\nBuild babel fees feature prototype (Haskell)\nhttps://github.com/zkFold/zkfold-base/blob/main/symbolic-cardano/src/ZkFold/Symbolic/Cardano/Contracts/BabelFees.hs\nBuild sponsored transaction feature prototype (Haskell)\nhttps://github.com/zkFold/zkfold-base/blob/main/symbolic-cardano/src/ZkFold/Symbolic/Cardano/Contracts/SponsoredTx.hs\nComplete multi-user transaction feature prototype (Haskell)\nhttps://github.com/zkFold/zkfold-base/blob/main/symbolic-cardano/src/ZkFold/Symbolic/Cardano/Contracts/BatchTransfer.hs",
+      "kinds": [
+        "code"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 85000,
+      "promise": "Context: The smart contract wallet backend is a library that contains a smart contract (on-chain), the related off-chain code, and the server code to run a smart contract-based cryptocurrency wallet for the Cardano blockchain. Any Cardano wallet (browser extension) will be able to use our library.\nTask: Complete zkLogin feature with two concrete options.\nOutputs:\n・Complete zkLogin feature - Google\n・Complete zkLogin feature - Twitch",
+      "criteria": "・zkLogin feature - Google can be found in the repo\n・zkLogin feature - Twitch can be found in the repo",
+      "report": "We have completed zkLogin feature for Google and Twitch. Please see the below links to the code:\n・https://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/JWT.hs\n・https://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/JWT/Google.hs\n・https://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/JWT/Twitch.hs\n・https://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/JWT/RS256.hs\n・https://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/JWT/Utils.hs",
+      "kinds": [
+        "code"
+      ],
+      "links": 10
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 25000,
+      "promise": "Context: The smart contract wallet backend is a library that contains a smart contract (on-chain), the related off-chain code, and the server code to run a smart contract-based cryptocurrency wallet for the Cardano blockchain. Any Cardano wallet (browser extension) will be able to use our library.\nTask: Integrate the features into the wallet smart contract. It requires modifying the wallet smart contract (on-chain) and producing the related off-chain code.\nOutputs:\n・Integrate feature into the wallet smart contract: zkLogin\n・Integrate feature into the wallet smart contract: multi-user transactions\n・Integrate feature into the wallet smart contract: babel fees and sponsored transactions",
+      "criteria": "・wallet smart contract: zkLogin feature can be found in the repo\n・wallet smart contract: multi-user transactions feature can be found in the repo\n・wallet smart contract: babel fees and sponsored transactions feature can be found in the repo",
+      "report": "We have completed Milestone 5 of the project. The output of this milestone is the server code that implements three features: batched transactions, babel fees, and sponsored transactions.\nThe batched transaction code can be found here:\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/Smart%20Wallet/Batch.hs\nThe babel fees and sponsored transactions code can be found here:\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/Smart%20Wallet/Sponsor.hs\nThe smart contract code is available at\nhttps://github.com/zkFold/zkfold-cardano/blob/main/zkfold-cardano-scripts/src/ZkFold/Cardano/UPLC/Wallet.hs\nThe wallet's smart contract now fully supports all three features.",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 6,
+      "month": "8",
+      "cost": 75000,
+      "promise": "Context: The smart contract wallet backend is a library that contains a smart contract (on-chain), the related off-chain code, and the server code to run a smart contract-based cryptocurrency wallet for the Cardano blockchain. Any Cardano wallet (browser extension) will be able to use our library.\nTask: Certain features also require a backend server. As our final milestone, we implement a simple backend server for the smart contract wallet backend. Additionally, we will produce the close-out report.\nOutputs:\n・Build multi-user transaction batcher (backend server)\n・Build sponsored transaction backend server\n・Final close-out report\n・Final closeout video",
+      "criteria": "The links to the batcher, backend server, the video, and the report are shared publicly on our GitHub (https://github.com/zkFold/).\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "We have completed the final milestone and addressed approver's previous comments (added challenges, learnings and achievements to the final video)\n・Build multi-user transaction batcher (backend server): https://github.com/zkFold/project-catalyst-reports/blob/main/Smart%20Wallet/Batch.hs\n・Build sponsored transaction backend server: https://github.com/zkFold/project-catalyst-reports/blob/main/Smart%20Wallet/Sponsor.hs\n・Final close-out report: https://github.com/zkFold/project-catalyst-reports/blob/dffc9814a77a9f2fa79822e09732c70a12171414/Smart%20Wallet/1200256%20-%20zkFold_%20Smart%20Contract%20Wallet%20Backend%20-%20Close%20out%20report.pdf\n・Final closeout video: https://youtu.be/xZxmiRPWdIE (main) and https://youtu.be/dwz1kVVcbPo (optional)\n・Link to our X post: https://x.com/zkFold/status/1909524663408918945",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

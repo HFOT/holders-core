@@ -1,0 +1,71 @@
+{
+  "title": "Cardano Node API: a Cardano Node companion written in Go",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 37000,
+      "promise": "LocalTxSubmission client support\nLocalStateQuery client support\nChainSync client support",
+      "criteria": "All code-related outputs must be completed and implemented according to any specifications in the corresponding GitHub issues or tickets.\nAll code changes must be reviewed and approved by designated team members before being merged into the main branch.\nEach GitHub issue associated with the milestone must be marked as \"closed\" or \"done\" upon completion of the related task.",
+      "report": "Cardano Node API: Milestone 1: complete\nThe client support has been established as specified in their corresponding tickets for LocalStateQuery, ChainSync, and LocalTxSubmission. This is evidenced by the code output, automated testing where applicable, and code reviews with approvals from a designated team member. All of this can be traced by the GitHub Milestone 1 issues (aka tickets) in our Kanban board, here: https://github.com/orgs/blinklabs-io/projects/9/views/2, where Milestone 1 issues can be found and their specifications and code, linked within each issue, can be examined. All Milestone 1 tickets have been completed and closed. Corresponding usage documentation has been added and can be found here: https://github.com/blinklabs-io/cardano-node-api",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 37000,
+      "promise": "Endpoints for LocalTxMonitor via REST\nEndpoints for LocalTxSubmission via REST\nEndpoints for LocalStateQuery via REST\nEndpoints for ChainSync via REST with upgrade to WebSockets",
+      "criteria": "All code-related outputs must be completed and implemented according to any specifications in the corresponding GitHub issues or tickets.\nAll code changes must be reviewed and approved by designated team members before being merged into the main branch.\nEach GitHub issue associated with the milestone must be marked as \"closed\" or \"done\" upon completion of the related task.",
+      "report": "Cardano Node API: Milestone 2: complete\nThe endpoints have been implemented as specified in their corresponding tickets for LocalTxMonitor, LocalTxSubmission, LocalStateQuery and ChainSync. This is evidenced by the code output, automated testing where applicable, and code reviews with approvals from a designated team member. All of this can be traced by the GitHub Milestone 2 issues (aka tickets) in our project board, here: https://github.com/orgs/blinklabs-io/projects/9/views/2, where Milestone 2 issues can be found and their specifications and code, linked pull requests within each issue, can be examined. All Milestone 2 tickets have been completed and closed. Corresponding usage documentation has been added and can be found here: https://github.com/blinklabs-io/cardano-node-api",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 37000,
+      "promise": "Validating and testing the UTxORPC spec\nCoordinating with other UTxORPC stakeholders on implementation\nCreating a Go SDK for UTxORPC\nEndpoints for LocalTxMonitor via gRPC\nEndpoints for LocalTxSubmission via gRPC\nEndpoints for LocalStateQuery via gRPC\nEndpoints for ChainSync via gRPC",
+      "criteria": "All code-related outputs must be completed and implemented according to any specifications in the corresponding GitHub issues or tickets.\nAll code changes must be reviewed and approved by designated team members before being merged into the main branch.\nEach GitHub issue associated with the milestone must be marked as \"closed\" or \"done\" upon completion of the related task.",
+      "report": "Cardano Node API: Milestone 3: complete\nThe gRPC API has been implemented as specified in the corresponding tickets for validating, testing, and creating the SDK along with the specified endpoints. This is evidenced by the code output, automated testing where applicable, and code reviews with approvals from a designated team member. All of this can be traced by the GitHub Milestone 3 issues (aka tickets) in our project board, here: https://github.com/orgs/blinklabs-io/projects/9/views/2, where Milestone 3 issues can be found and their specifications and code, linked pull requests within each issue, can be examined. All Milestone 3 tickets have been completed and closed. Corresponding usage documentation has been added and can be found here: https://github.com/blinklabs-io/cardano-node-api",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 37000,
+      "promise": "Verifying and validating results against the spec\nTesting against other supported ecosystem services, such as Dolos\nCreation of client SDKs for the API\nAt least one sample application\nDocumentation on pkg.go.dev\nDocumentation on Cardano developer portal\nCommunity outreach via Twitter, YouTube, etc.",
+      "criteria": "All code-related outputs must be completed and implemented according to any specifications in the corresponding GitHub issues or tickets.\nAll code changes must be reviewed and approved by designated team members before being merged into the main branch.\nEach GitHub issue associated with the milestone must be marked as \"closed\" or \"done\" upon completion of the related task.",
+      "report": "(1) We have executed the different components of the UTxO RPC spec, verifying and validating the results as indicated in the corresponding issues. It is noted, not all worked immediately and one will see issues were generated (within the milestone issue) and resolved.\n(2) We have completed testing against another supported ecosystem service, Dolos, the purpose being to find any problems. Dolos was our baseline. We used the Go SDK from UTxO RPC, which is the Go implementation of the UTxO RPC spec, to test against both Dolos and Cardano Node API.\n(3) We have two SDKs, as mentioned, one is provided by https://github.com/utxorpc/go-sdk for the UTxO RPC interface while the other is in this projects repository and is used for the REST interface. \nIssues provide evidenced of code output, documented testing, and (as applicable) code reviews with approvals from a designated team member. \n(4) Our sample application has a public demo on YouTube and is available for anyone to use at app.blinklabs.io \n(5)(6) Corresponding usage documentation has been added and can be found here: https://github.com/blinklabs-io/cardano-node-api. As specified, the external documentation can be found on https://pkg.go.dev/github.com/utxorpc/go-sdk and Cardano Node API can be found on Builder Tools, as seen here: https://developers.cardano.org/tools?tags=golang\n(7) Community outreach can be confirmed on YouTube here and Twitter here, even retweeted by @Catalyst_OnX.\nAll of this can be traced by the GitHub Milestone 4 issues (aka tickets) in our project board, here: https://github.com/orgs/blinklabs-io/projects/9/views/2 All Milestone 4 tickets have been completed and closed.",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 13
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 37000,
+      "promise": "Project Closeout Report \nProject Closeout Video",
+      "criteria": "The project closeout report must include a comprehensive summary of project objectives and evidence of goals achieved. The project closeout video must provide a visual overview of the projects journey, start to finish, highlight key achievements, and showcase the net products: a feature complete library with developer documentation.",
+      "report": "Our closeout report can be found here: https://docs.google.com/document/d/1tjMuocV3P4Zf-nxJlJuXFTJmxzOagbFSf6TSNwPp2LI/edit?usp=sharing\nOur closeout video can be found here: https://youtu.be/L0xywGabhac\n﻿Source Code: https://github.com/blinklabs-io/cardano-node-api & https://github.com/utxorpc/go-sdk\nSample application: app.blinklabs.io",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 9
+    }
+  ]
+}

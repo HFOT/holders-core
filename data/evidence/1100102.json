@@ -1,0 +1,59 @@
+{
+  "title": "Cosmex– Level 2 ⚡-speed Cardano Order Book Exchange",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "The litepaper draft with the high level protocol description.\nThe full whitepaper draft with detailed protocol description.",
+      "criteria": "The litepaper draft is provided with the high level protocol description. \nThe litepaper contains high level state channel state machine description and simplified communication diagrams.\nThe full whitepaper draft is provided with detailed protocol description. \nThe whitepaper contains detailed protocol description, state channel state machine description, communication diagrams and transactions description.\nIt may lack description of some use cases or images, and can contain “further research is needed” as it’s a draft and a research in progress.",
+      "report": "Hello Catalyst Team,\nWe have published our work in progress on Binocular.\nHere is the project repository with current proof of concept implementation:\nhttps://github.com/lantr-io/cosmex\nHere is a Litepaper draft and Litepaper PDF.\nAnd here is a Whitepaper draft and its PDF.\nWe are still researching some aspects of the protocol and we'll refine the whitepaper in the next milestone.\nThe repo also contains current work in progress, mostly complete Cosmex state channel smart contract implementation.",
+      "kinds": [
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "13",
+      "cost": 30000,
+      "promise": "・A refined version of the litepaper with the high level protocol description.\n・The full whitepaper draft with detailed protocol description, communication diagrams, state channel state machine description.\n・Initial State channel smart contract that implements the logic from the whitepaper.",
+      "criteria": "A refined version of the litepaper with the high level protocol description if anything changes during this milestone, it’s the R&D 🙂\nThe full whitepaper draft is provided with detailed protocol description.\nThe whitepaper contains detailed protocol description, state channel state machine description, communication diagrams, transactions description and client-server messages description.\nThis version should be 90% complete and basically be ready for publishing and implementation. It may still contain a few unresolved/unfinished chapters.\nThe initial State channel smart contract is available",
+      "report": "Hello Catalyst Team,\nMilestone 2 Outputs Delivered:\n・Refined litepaper with updated high-level protocol description:\n・Markdown: https://github.com/lantr-io/cosmex/blob/f4c1aee6d44f826d034634d05857cb1ad5536784/docs/Litepaper.md\n・PDF: https://github.com/lantr-io/cosmex/blob/22bae25d234d0134a602f5166663acf83eb262e6/docs/Litepaper.pdf\n・Full draft whitepaper with:\n・Detailed protocol specification\n・Communication diagrams\n・State channel state machine description\n・Transaction flow and client-server message descriptions\n・Markdown: https://github.com/lantr-io/cosmex/blob/f4c1aee6d44f826d034634d05857cb1ad5536784/docs/Whitepaper.md\n・PDF: https://github.com/lantr-io/cosmex/blob/22bae25d234d0134a602f5166663acf83eb262e6/docs/Whitepaper.pdf\n・The whitepaper is mostly done, we'll polish it and convert to Latex if needed in the next milestone.\n・Initial state channel smart contract implementing whitepaper logic using Scalus 0.11 and Plutus V3:\n・Validator sources: https://github.com/lantr-io/cosmex/blob/4b22d1fdb6cf7c68a7133ea3e8df48d79957878a/src/main/scala/cosmex/Contract.scala\n・Tests: https://github.com/lantr-io/cosmex/blob/4b22d1fdb6cf7c68a7133ea3e8df48d79957878a/src/test/scala/cosmex/CosmexContractTest.scala",
+      "kinds": [
+        "code"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "15",
+      "cost": 30000,
+      "promise": "State channel smart contract that implements the logic from the whitepaper.\nA proof of concept implementation of the exchange runnable on Preview testnet with the following functionality: \n・opening a channel\n・trading off-chain\n\nRevised version of the lightpaper if the protocol was updated during this milestone.\nRevised version of the whitepaper that reflects possible changes to the protocol, if any.",
+      "criteria": "A proof of concept implementation of the exchange that anyone can run on Preview testnet with the following functionality: opening a channel, trading off-chain is available on the GitHub of the project.\nA successful demonstration of opening a channel and off-chain trading with limit orders on a testnet.\nThe refined litepaper and whitepaper Markdown/Latex and PDF documents are provided if there were changes to the protocol.\nThe revised State channel smart contract is available on the GitHub of the project if there were changes to the protocol.",
+      "report": "COSMEX Milestone 3: Proof of Achievement\nDeliverables and Evidence\n✅ State Channel Smart Contract\nImplementation:\n・Smart contract: CosmexValidator.scala\n・Features: 4-phase state machine (Open → SnapshotContest → TradesContest → Payout), 7 redeemers, Ed25519 signature verification, balance preservation, trade execution validation\n\n✅ PoC Exchange Implementation\nImplementation:\n・Server: Server.scala - Core exchange logic\n・WebSocket Server: CosmexWebSocketServer.scala - Real-time trading\n・WebSocket Client: SimpleWebSocketClient.scala\n・Transaction Builder: CosmexWebSocketServer.scala - On-chain operations\n・Features: WebSocket API, order matching (price-time priority), multi-client support, snapshot signing\n\nChannel Opening & Off-Chain Trading\nWe use Preprod instead of Preview as it's more suitable for this type of testing.\n・Channel opening with dual signatures and initial snapshot (v0):\n・Alice's Channel opening tx: https://preprod.cexplorer.io/tx/56f68c2408147319bde6f5deb734283b983f5e0722c0497a29f19fc5a813f5ab\n・Bob's Channel opening tx: https://preprod.cexplorer.io/tx/302c15848a9da4fc20b6cf1c399240b3aba1cdc67651104c0858516ea0d454a6\n・Limit order implementation (BUY/SELL) with automatic matching Demo video: https://www.youtube.com/watch?v=A7XQOaOktvQ\n・Test suite\n・Whitepaper\n・Whitepaper PDF\n・Litepaper\n・Litepaper PDF",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 16
+    },
+    {
+      "no": 4,
+      "month": "16",
+      "cost": 20000,
+      "promise": "A proof of concept implementation of the exchange that anyone can run on Preview testnet with the following functionality: \n・opening a channel\n・trading off-chain\n・balancing the channels on L1\n・closing the channel\n・payout.\n\nIf the protocol was changed during this milestone, then updated litepaper, whitepaper and smart contracts are provided.\nA Project Closeout report.\n・A Project Closeout video.",
+      "criteria": "A proof of concept implementation of the exchange runnable on Preview testnet with the following functionality: opening a channel, trading off-chain is available on the GitHub of the project.\nIf the protocol was changed during this milestone, then updated litepaper, whitepaper and smart contracts are provided.\nA successful demonstration of the following:\n・opening a channel\n・off-chain trading with limit orders on a testnet\n・balancing the channel on-chain\n・closing the channel\n・final payout from the channel\n\nA Project Closeout report is approved by IOG and submitted\n・A Project Closeout video is a",
+      "report": "Repository: https://github.com/lantr-io/cosmex\nA. Output: Proof of Concept Exchange Implementation\nAcceptance criteria: A proof of concept implementation of the exchange runnable on Preview testnet with the following functionality: opening a channel, trading off-chain, balancing channels on L1, closing the channel, payout is available on the GitHub of the project.\nEvidence: Complete exchange implementation with state channel smart contract and WebSocket server supporting all required operations.\n・CosmexValidator.scala - 4-phase state machine smart contract\n・Server.scala - Exchange server with order matching\n・CosmexWebSocketServer.scala - Real-time WebSocket API\n・CosmexTransactions.scala - On-chain transaction builder\n\nB. Output: Channel Operations on Testnet\nAcceptance criteria: A successful demonstration of: opening a channel, off-chain trading with limit orders, balancing the channel on-chain, closing the channel, final payout from the channel.\nEvidence: Verified transactions on Cardano Preprod testnet demonstrating complete channel lifecycle.\n・Alice's channel opening: tx/56f68c24...\n・Bob's channel opening: tx/302c1584...\n・Trading demo video: YouTube\n\nC. Output: Updated Litepaper\nAcceptance criteria: If the protocol was changed during this milestone, then updated litepaper is provided.\nEvidence: High-level protocol overview covering architecture, state channels, trading flow, and competitive advantages.\n・Litepaper.md\n・PDF\n\nD. Output: Updated Whitepaper\nAcceptance criteria: If the protocol was changed during this milestone, then updated whitepaper is provided.\nEvidence: Complete technical specification including on-chain state machine, redeemers, snapshot protocol, and security model.\n・Whitepaper.md\n・PDF\n\nE. Output: Test Suite\nAcceptance criteria: Tests demonstrating correct validator behavior.\nEvidence: Property-based and unit tests covering state transitions, balance preservation, and signature verification.\n・Test Suite\n\nF. Output: Project Closeout Report\nAccepta",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 17,
+      "cut": true
+    }
+  ]
+}

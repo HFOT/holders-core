@@ -1,0 +1,74 @@
+{
+  "title": "Marlowe Runtime SDKs",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 41280,
+      "promise": "SDK Project Scaffold Creation:\nDevelop a project scaffold for each Software Development Kit (SDK) to establish a structured foundation for further development.\nConfiguration of Code Generation Tooling:\nConfigure code generation tooling using OpenAPI specifications to automate the generation of code for each SDK.\nCI Pipeline Setup for Automated Code Generation:\nEstablish a Continuous Integration (CI) pipeline to automate code generation, ensuring that the development workflow is smooth and efficient. Continuous Integration (CI) is a development practice that involves automatically integrating code changes into a shared repository. This process helps detect and address integration issues early in development, enhancing code stability and supporting collaborative workflows. The CI pipeline ensures that code generation occurs seamlessly, contributing to efficient and error-free development.",
+      "criteria": "Enhancing Access to SDK Code:\nCreate and manage open and user-friendly repositories for each SDK, containing all the necessary foundational code.\nHost these repositories within the txpipe community on GitHub at https://github.com/txpipe.\nClearly define the names of the repositories as they are decided upon during the development process.\n\nStreamlining Code Generation Process:\nEstablish a structured process that seamlessly generates the required code from OpenAPI specifications.\nEnsure that this process is well-organized to handle code generation efficiently for each SDK repository.",
+      "report": "We are pleased to announce the successful completion of Milestone #1 for the Marlowe Runtime SDKs Catalyst project. We are proud of the progress made during Milestone #1 and truly excited about opening up these automatically generated tools for the Marlowe Runtime REST API for feedback from the community.\n\nMilestone goals and proofs of completion\n・SDK Project Scaffold Creation: Develop a project scaffold for each Software Development Kit (SDK) to establish a structured foundation for further development.\n・C#: https://github.com/marlowe-contrib/marlowe-csharp-sdk/blob/main/SDK_SPECS.md#sdk-structure \n・Go: https://github.com/marlowe-contrib/marlowe-go-sdk/tree/main#sdk-structure \n・Python: https://github.com/marlowe-contrib/marlowe-python-sdk/blob/main/SDK_SPECS.md#sdk-structure \n・Rust: https://github.com/marlowe-contrib/marlowe-rust-sdk#sdk-structure \n・Typescript: https://github.com/marlowe-contrib/marlowe-typescript-sdk#sdk-structure \n・Configuration of Code Generation Tooling: Configure code generation tooling using OpenAPI specifications to automate the generation of code for each SDK.\n・C#: https://github.com/marlowe-contrib/marlowe-csharp-sdk/blob/a9823a6b399e387146eae2f8a7f01e42e36509b2/.github/workflows/codegen.yml#L43 \n・Go: https://github.com/marlowe-contrib/marlowe-go-sdk/blob/4654bb2725282fd5e3dbeb1c356799faa0ca5367/.github/workflows/codegen.yml#L43 \n・Python: https://github.com/marlowe-contrib/marlowe-python-sdk/blob/0161714587f2da82c0b2fca951a28ea319cc06a1/.github/workflows/codegen.yml#L43 \n・Rust: https://github.com/marlowe-contrib/marlowe-rust-sdk/blob/58f53718dd1a3d3c46ac69a63943391662233668/.github/workflows/codegen.yml#L44 \n・Typescript: https://github.com/marlowe-contrib/marlowe-typescript-sdk/blob/c5114e42ee93223c7a8d83e9cde7c5325ee30fca/.github/workflows/codegen.yml#L44 \n・CI Pipeline Setup for Automated Code Generation: Implement a Continuous Integration (CI) pipeline to automate the code generation process, ensuring seamless and efficient development w",
+      "kinds": [
+        "code"
+      ],
+      "links": 30,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 28890,
+      "promise": "Develop User-Friendly Wrappers for RUST and Go:\n\nBuild user-friendly layers for RUST and Go on top of automatically generated code.\nInclude essential explanations within the code for better understanding.\nIncorporate tests to ensure smooth integration and functionality.",
+      "criteria": "User-Friendly Client Libraries in Each Repository:\nImplement client libraries in a user-friendly manner for each language, including Rust and Go. These libraries will be housed in repositories under the txpipe GitHub organization at https://github.com/txpipe.",
+      "report": "We are pleased to announce the successful completion of Milestone #2 for the Marlowe Runtime SDKs Catalyst project. We are proud of the aggregation of the progress made during Milestone #1 and #2 and truly excited to show off the new features to get feedback from the community.\nMilestone goals and proofs of completion\nDevelop User-Friendly Wrappers for RUST and Go:\nBuild user-friendly layers for RUST and Go on top of automatically generated code.\nRust: Some parts of the automatically generated code were modified to handle the headers of the Marlowe Runtime REST API and some parts of the responses were hidden as well because they were only needed if you didn’t use the SDK. https://github.com/marlowe-contrib/marlowe-rust-sdk/blob/main/src/lib.rs \nGo: Here the automatically generated code was good enough to be considered a fully functional SDK. Some parts of the SDK were modified to reach a level of functionality that was missing. https://github.com/marlowe-contrib/marlowe-go-sdk/blob/main/api_default.go \nInclude essential explanations within the code for better understanding.\nRust: We kept the automatically generated docs and added manual comments in the manually generated code.\nhttps://github.com/marlowe-contrib/marlowe-rust-sdk/blob/main/src/lib.rs\nhttps://github.com/marlowe-contrib/marlowe-rust-sdk/blob/main/marlowe_client/docs/DefaultApi.md\nhttps://github.com/marlowe-contrib/marlowe-rust-sdk/tree/main/marlowe_client/docs \nGo: We kept the automatically generated docs as they were good enough to show the usage of the SDK.\nhttps://github.com/marlowe-contrib/marlowe-go-sdk/blob/main/api_default.go\nhttps://github.com/marlowe-contrib/marlowe-go-sdk/blob/main/docs/DefaultAPI.md\nIncorporate tests to ensure smooth integration and functionality: For both languages only getters have automatic testing. All of them are manually tested to ensure quality. This decision was made because transaction signing in each language is a job that exceeds the scope of this project.\n﻿Rust: h",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 23,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 28890,
+      "promise": "Develop User-Friendly Wrappers for Python, Typescript and .NET:\nBuild user-friendly layers for Python, Typescript and .NET on top of automatically generated code.\nInclude essential explanations within the code for better understanding.\nIncorporate tests to ensure smooth integration and functionality.",
+      "criteria": "User-Friendly Client Libraries in Each Repository:\nImplement client libraries in a user-friendly manner for each language, including Python, Typescript and .NET. These libraries will be housed in repositories under the txpipe GitHub organization at https://github.com/txpipe.",
+      "report": "Marlowe Runtime SDKs - Milestone #3 report\nWe are pleased to announce the successful completion of Milestone #3 for the Marlowe Runtime SDKs Catalyst project. We are proud of the aggregation of the progress made during Milestone #1, #2 and #3 and truly excited to show off the new features to get feedback from the community.\n\nMilestone goals and proofs of completion\nDevelop User-Friendly Wrappers for Python, Typescript and .NET: Build user-friendly layers for Python, Typescript and .NET on top of automatically generated code.\nTypescript:\nThe openapi specification was improved so that the automatically generated code had enough quality to be considered an SDK.\nhttps://github.com/marlowe-contrib/marlowe-typescript-sdk/blob/main/generated/api.ts \nPython:\nThe openapi specification was improved so that the automatically generated code had enough quality to be considered an SDK. Some fixes were made to the generated code to handle complex types.\nhttps://github.com/marlowe-contrib/marlowe-python-sdk/blob/main/openapi_client/api/default_api.py \n.NET:\nThe openapi specification was improved so that the automatically generated code had enough quality to be considered an SDK. Some fixes were made to the generated code to handle complex types.\nhttps://github.com/marlowe-contrib/marlowe-csharp-sdk/blob/main/src/MarloweAPIClient/Api/DefaultApi.cs \n\nInclude essential explanations within the code for better understanding.\nTypescript: \nAs the CI/CD was improved to have a better specification document. Explanations for the code were properly generated as shown here.\nEndpoints and types explanations are described as shown here: \nhttps://github.com/marlowe-contrib/marlowe-typescript-sdk/blob/main/generated/api.ts \nPython: \nAs the CI/CD was improved to have a better specification document. Explanations for the code were properly generated as shown here.\nSDK with docs: \nhttps://github.com/marlowe-contrib/marlowe-python-sdk/blob/main/openapi_client/api/default_api.py \nModels: \nhttps://githu",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 23,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 28888,
+      "promise": "Establishing Necessary Accounts in Package Managers:\nCreate the required accounts in package managers, which are tools that simplify the process of managing and distributing software libraries. These platforms help organize, install, and update dependencies for projects, enhancing the efficiency of software development.\nReleasing Initial Versions of Each Package:\nPublish the initial versions of each package, making them available for use and integration into software projects.",
+      "criteria": "Ensure that the packages are publicly available in the following package managers:\nCargo (Rust)\nGo Package Manager (Go)\nPip (Python)\nNpm (JavaScript)\nNuGet (.NET)\nMake these packages easily accessible to facilitate seamless integration into diverse development environments.",
+      "report": "We are pleased to announce the successful completion of Milestone #4 for the Marlowe Runtime SDKs Catalyst project. We are proud of progress made in the development of these Milestones and truly excited to show off the newly published packages to get feedback from the community.\nMilestone goals and proofs of completion\n・Publish the initial versions of each package, making them available for use and integration into software projects.\n・Go: https://pkg.go.dev/github.com/marlowe-contrib/marlowe-go-sdk\n・.NET: https://www.nuget.org/packages/MarloweAPIClient \n・Rust: \n\n・We have two packages for this. The manually abstracted version of the package and the automatically generated version:\n・https://crates.io/crates/marlowe_rust_sdk \n・https://crates.io/crates/marlowe_client/0.0.5 \n\n・Python: https://pypi.org/project/marlowe-runtime-sdk/ \n・Typescript: https://www.npmjs.com/package/marlowe-typescript-sdk \n\nVideo demo of the SDKs in action: https://www.youtube.com/watch?v=5yz-NjcziCw",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 14
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 26338,
+      "promise": "Github Repository Metrics Report:\nA compiled report presenting Github repository metrics, including stars, traffic, visitors, clones, and created issues.\nFinal Project Showcase Report:\nA comprehensive report showcasing the completed work, accompanied by relevant metrics to emphasize the project's significance. This report should be publicly accessible.\nVideo Presentation for Project Closure:\nA video summarizing the final report, officially closing the project, and providing a visual overview for the community.\nSDKs Interaction Demonstration Video:\nA video demonstrating the interaction with a Marlowe contract using the implemented SDKs, offering practical insights into their functionality.",
+      "criteria": "Github Repository Metrics Report:\nThe Github repository metrics report is successfully generated and accurately reflects the specified metrics (stars, traffic, visitors, clones, and created issues).\nFinal Project Showcase Report:\nThe final project showcase report is comprehensive, clearly presenting the completed work and effectively showcasing the metrics to highlight the project's relevance.\nThe report is made publicly available through github/txpipe/roadmap\nVideo Presentation for Project Closure:\nThe video presentation summarizing the final report and closing the project is produced, coveri",
+      "report": "The following links provide evidence of the completion of the outputs expected for this final milestone.\n\nWe believe this project has delivered valuable open-source tools to the community, and we are very proud of the results.\nGitHub Repository Metrics Report: This link points to the report with metrics of developer interactions with the repositories.\nFinal Project Showcase Report: Link to the closure report.\nVideo Presentation for Project Closure: Link to the closure video for this project.\nSDKs Interaction Demonstration Video: Link to the playlist with videos demonstrating Marlowe contract interaction using the implemented SDKs.\nThank you for your support and collaboration throughout this project.",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    }
+  ]
+}

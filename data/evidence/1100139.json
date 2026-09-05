@@ -1,0 +1,72 @@
+{
+  "title": "GameChanger: open-sourcing Unimatrix to democratize multisig",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 57441,
+      "promise": "Grant context: \nThe release as an open source typescript/javascript library of GameChanger wallet's Unimatrix Sync closed source code.\n\n﻿On a Github repository:\n(1) Data encryption, decryption and data key generation helpers\n(2) Unimatrix async data channel listener\n(3) Unimatrix async data getter for data retrieval from channel\n(4) Unimatrix async data setter for sharing data to channel\n(5) Transaction, transaction witness and transaction hash list validators for Cardano\n(6) Include tests",
+      "criteria": "(1) Library will encrypt and decrypt data, and generate hashes upon it\n(2) Library will listen for data on channels\n(3) Library will retrieve data from a channel\n(4) Library will share data on a channel\n(5) Library will perform basic validations on transactions, transaction witnesses and transaction hash lists\n(6) Library tests will prove relevant parts of it works as expected",
+      "report": "Outputs:\nNew public repository for the library here.\n(1) Data encryption, decryption types and generic helpers and data key generation helpers \n(2) Unimatrix async data channel listener\n(3) Unimatrix async data getter for data retrieval from channel\n(4) Unimatrix async data setter for sharing data to channel\n(5) Transaction, transaction witness and transaction hash list validators for Cardano\n(6) Unimatrix tests, Unimatrix Sync (Cardano) tests, and test coverage\n\nTest results and test coverage results of these first deliverables. \nAcceptance criteria reflected on tests design.\n\nSummary: \nFormer code extracted from wallet frontend and refactored to work standalone, with several improvements\n - Data encryption helper types, and data key generation helpers and types\n - Unimatrix async data channel listener refactored. Interface redesigned. Code improved.\n - Unimatrix async data getter for data retrieval from channel refactored. Interface redesigned. Code improved.\n - Unimatrix async data setter for sharing data to channel refactored. Interface redesigned. Code improved.\n - Transaction, transaction witness and transaction hash list validators for Cardano refactored. Interfaces redesigned\nCreated tests for all relevant functions\n - Test coverage included",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 14
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 20000,
+      "promise": "Grant context: \nThe release as an open source typescript/javascript library of GameChanger wallet's Unimatrix Sync closed source code.\n\nOn a Github repository:\n(1) Unimatrix Sync transaction, transaction witness and transaction hash list data getters for Cardano\n(2) Unimatrix Sync transaction, transaction witness and transaction hash list data setters for Cardano\n(3) Unimatrix Sync usefull data listener/s for Cardano\n(4) Include tests\n(5) Library packing/bundling",
+      "criteria": "(1) Library will retrieve Cardano transactions and transaction witnesses\n(2) Library will share Cardano transactions and transaction witnesses\n(3) Library will listen for Cardano data\n(4) Library tests will prove relevant parts of it works as expected\n(5) Library code will be able to be imported by other projects",
+      "report": "On a Github repository:\n(1) Unimatrix Sync transaction, transaction witness and transaction hash list data getters for Cardano\n(2) Unimatrix Sync transaction, transaction witness and transaction hash list data setters for Cardano\n(3) Unimatrix Sync transaction, transaction witness and transaction hash list data listener for Cardano\n(4) Include tests, and these are the latest tests (1 and 2) and test-coverage results screenshots.\n(5) Library packing/bundling for cjs, esm, umd and types distribution files\nAdditional requested comments:\n・These outputs consist on the complete library code, allowing us to use the code to prove it's functional state.\n・the most usefull data listener function is the transaction hash list one, because this one is the function used for awaiting for incoming to-be-signed transactions, but we decided to add extra optional listeners for all kind of items (transaction, transaction witness as well) to give freedom to developers and avoid opinionating use cases based on our own former needs.\n・In order to facilitate community verification of the functioning state of the library we submitted PoA2 and work of PoA3 together, providing tangible means to test the library with the promised React example dapp and another optional one we are including for nodeJs developers.\n・For instance, in addition to tests and test result screenshots provided, you can verify and gain insight on how to use the library checking these code lines from the nodeJs example (same functions has been used on React dapp as well):\n・onTxHashes function allows for listening for live transaction hashes (IDs) of transactions that require signatures\n・getTxHex function retrieves the full data of a transaction by it's transaction hash (ID), this data usually will be validated to decide whether or not to sign or not a transaction\n・setVkWitnessHex function allows to share through Unimatrix a transaction signature.\n・Full documentation comes on Milestone 4 but as requested by reviewers, here a",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 23,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 57441,
+      "promise": "Grant context: \nThe release as an open source typescript/javascript library of GameChanger wallet's Unimatrix Sync closed source code.\n\nOn a Github repository:\n(1) Frontend Unimatrix Sync validator and signer node example dapp in React\n(2) Backend Unimatrix Sync validator and signer node example dapp in NodeJs",
+      "criteria": "(1) Example dapp will be able to listen, validate and sign Cardano multisignature transactions on user's browser\n(2) Example dapp will be able to listen, validate and sign Cardano multisignature transactions on backend / linux environment",
+      "report": "On a Github repository:\n(1) Complete frontend Unimatrix Sync validator and signer node example dapp in React, \n・It listen, validate and sign Cardano multi-signature/deferred signature transactions on user's browser. \n・It has 3 different example use cases on same dapp: \n・Batch transaction signing: 3 transactions being signed and submitted at once on user wallet, showing how multi-transaction signing works with GC Wallet and Unimatrix Sync in tandem on client side\n・decentralized token sale: a token being minted on user wallets on a multisig transaction with Unimatrix Sync on client side\n・decentralized NFT sale: an NFT being minted on user wallets on a multisig transaction with Unimatrix Sync on client side\n・Also serves as passive monitor or \"hub\" for multisig users to live-sync and manually sign their multisig transactions \n・For Cardano mainnet and Pre-production testnet.\n・Ideal funtional and styled boilerplate with modern library dependencies like React-Vite for start developing client side dapps or services with Unimatrix Sync and GC Wallet \n・Using cardano-serialization-lib\n・A screenshot of it's functional state. \n・A provisional online deployment here for reviewing purposes. \n\n(2) Backend Unimatrix Sync validator and signer node example dapp in NodeJs,\n・It listen, validate and sign Cardano multi-signature/deferred signature transactions on backend / linux environment. \n・For Cardano mainnet and Pre-production testnet.\n・Using cardano-serialization-lib\n・A screenshot of it's functional state. \n・This is an extra offering outside proposal scope of an example for backend developers.\n・Ideal boilerplate for start developing backend dapps and services with Unimatrix Sync and GC Wallet \n\nMilestone comments: \n・This PoA was released together with PoA 2 to facilitate reviewing process as PoA 2 output is already the fully working library and this one requires Unimatrix Sync to work. \n・Documentation for library and examples is coming soon on next PoA.\n・Suggestion: Pre-Production Te",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 9574,
+      "promise": "Grant context:\nThe release as an open source typescript/javascript library of GameChanger wallet's Unimatrix Sync closed source code.\nOn a Github repository:\n(1) Usage documentation markdown file/s showing how to install the library on a project, how to import, it's dependencies and how initialize the library on javascript/typescript code, and some snippet/s of code showing the basic usage of it's most relevant functions",
+      "criteria": "(1) Documentation will show how to install, initialize, and use the library on a javascript/typescript project",
+      "report": "On a Github repository:\n(1) Usage documentation markdown file/s showing how to\n・install the library on a project (javascript/typescript)\n・install the library dependencies on a project (javascript/typescript)\n・how to import it's dependencies and how initialize the library on javascript/typescript code, and \n・some snippet/s of code showing the basic usage of it's most relevant functions covering some common patterns to follow, including how to deal with a current implementation through it's dapp connector (in gcscript)\n・full API documentation generated with TypeDoc, covering all major functions, types and constants in source code with missing TsDoc comments\n・documentation for the examples provided on last milestone with instructions on how to try them out\n・other miscellaneous sections",
+      "kinds": [
+        "code"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 47017,
+      "promise": "Grant context: \nThe release as an open source typescript/javascript library of GameChanger wallet's Unimatrix Sync closed source code.\n\n﻿On Github repository:\n(1) LICENSE.md file\n\nOn links and/or forms submissions:\n(2) Closeout video and closeout report/form as required by Catalyst Team",
+      "criteria": "(1) Library and example dapps will be released as open source\n(2) Finally community and Catalyst team will know more about the process/project through closeout video and report",
+      "report": "Outputs:\n・NPM module: https://www.npmjs.com/package/@gamechanger-finance/unimatrix\n・License file: https://github.com/GameChangerFinance/unimatrix/blob/master/LICENSE\n・Closeout Report: https://drive.google.com/file/d/1wQsZdjo5xOR4R3sMN3dGDthLoK0capDJ/view\n・Closeout Video: https://youtu.be/-SC4TS_QJlU",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

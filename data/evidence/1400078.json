@@ -1,0 +1,20 @@
+{
+  "title": "Leverage Trading with Market/Limit Orders on Minswap",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 63500,
+      "promise": "・System architecture documents and flow diagrams.\n・A complete UI/UX prototype in Figma covering the entire leverage trading user journey. The design will include all main screens such as position opening/closing with market orders, position monitoring, take profit/stoploss and liquidation flows.\n・This prototype will serve as the visual foundation for the frontend development stage",
+      "criteria": "・Complete architecture design of the leverage protocol (borrow–swap–repay flows, UTXO design).\n・The Figma prototype must be internally reviewed and approved by the project team for completeness, clarity, and usability.\n・All core use cases must be represented : wallet connect → open/close position → Take Profit/Stop Loss → liquidation → monitoring.",
+      "report": "A. \nOutput: System architecture documents and flow diagrams\nAcceptance criteria: Complete architecture design of the leverage protocol (borrow–swap–repay flows, UTXO design).\nEvidence: \n・Public GitHub repository containing the architecture design document:\n\nhttps://github.com/dthuongbk/catalyst/blob/86c6b8e805e855790207a3dcf9b2f96afe54df78/leverage%20trading/milestone1/LeverageTradingProtocol-HighLevelTDD.pdf\nB. \nOutput: \n・A complete UI/UX prototype in Figma covering the entire leverage trading user journey. The design will include all main screens such as position opening/closing with market orders, position monitoring, take profit/stoploss and liquidation flows.\n・This prototype will serve as the visual foundation for the frontend development stage\n\nAcceptance criteria: \n・The Figma prototype must be internally reviewed and approved by the project team for completeness, clarity, and usability.\n・All core use cases must be represented : wallet connect → open/close position → Take Profit/Stop Loss → liquidation → monitoring.\n\nEvidence: \n・Figma prototype (public access):\n\nhttps://www.figma.com/design/jbvDnVfPnQwgBIWIgJvyWp/Catalyst-Fund-14---Leverage-Trading?node-id=20-53680&t=9KsUgeKnbHrlFaXN-1\n・For ease of review, a PDF document summarizing the full user flow has been provided. This document presents the same flows as the Figma prototype in a simplified and sequential format, making it easier to follow without navigating the Figma interface\n・At the beginning of the document, I have included a review and approval section from the project team to explicitly confirm that the UI/UX design meets the criteria of completeness, clarity, and usability.\n・https://github.com/dthuongbk/catalyst/blob/4223fdd361b1fc5612dfbe98166c39ac41317b90/leverage%20trading/milestone1/Leverage_Trading_User_Flow_with_Approve.pdf \n・Approval confirmations from the project team : Prior to exporting the final PDF, the document was shared via Google Docs to collect confirmations from team members. As t",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 12,
+      "cut": true
+    }
+  ]
+}

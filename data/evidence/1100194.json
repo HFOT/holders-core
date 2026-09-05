@@ -1,0 +1,87 @@
+{
+  "title": "Maya Protocol <> Cardano: Unleash native cross-chain swaps between ADA, BTC, ETH, USDC,...",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "Maya Protocol validators (MAYANodes) run full nodes of all integrated chains. Create a Cardano daemon so that MAYANodes can run a Cardano full node.",
+      "criteria": "Make the necessary changes to let MAYANodes run a Cardano full node (code a Cardano-daemon and add Cardano to other files).",
+      "report": "We're happy to share that the cardamon-daemon has been added to Maya's Node Launcher repo:\nhttps://gitlab.com/mayachain/devops/node-launcher/-/merge_requests/129\nThe MR has been merged!\nhttps://imgur.com/a/daDnTvO screenshot of the Node dash",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 77800,
+      "promise": "Make changes to MAYANode (address.go, chain.go, gas.gp, asset.go, pubkey.go and the docker files).",
+      "criteria": "Add the changes in MAYANode necessary to support Cardano (excluding the Cardano Bifröst client).",
+      "report": "This merge request includes the changes made in address.go, chain.go, gas.gp, asset.go and pubkey.go to support Cardano (note: it also includes changes already for the upcoming milestones): https://gitlab.com/mayachain/mayanode/-/merge_requests/373/diffs",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "19",
+      "cost": 38200,
+      "promise": "Smoke tests are incorporated in the Merge Request to add Cardano to Maya Protocol. \n\n﻿﻿What are smoke tests?\nSmoke tests of chains all go in one single python file (Kujira example: https://gitlab.com/mayachain/mayanode/-/blob/develop/test/smoke/chains/kuji.py?ref_type=heads ).\nThe Smoke Tests (where there is smoke, there is fire) go through many different transactions and test for exact balances at each step: \n-Wallet and Vault Balances on the Cardano Pool \n-Balances in state on Maya \n-Pool and Bond rewards Fees collected \nThis ensures that Maya Protocol is processing all transactions, down to the smallest unit, exactly as planned. The complexity around gas handling is even tracked.",
+      "criteria": "Have the Cardano smoke tests in the MR to add Cardano to MAYANode.",
+      "report": "The smoke tests can be found in the following merge request: https://gitlab.com/mayachain/mayanode/-/merge_requests/373/diffs\nall the edits for Cardano for smoke tests are in the folder `test/smoke/`, \nthe following files were modified to add support for Cardano smoke tests (these are also highlighted in the merge request)\ntest/smoke/chains/aliases.py\ntest/smoke/chains/cardano.py\ntest/smoke/scripts/smoke.py\ntest/smoke/requirements.txt\nVideo going over the smoke tests: https://youtu.be/ioK_VyGmBEE",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "20",
+      "cost": 76400,
+      "promise": "Run the Cardano code on Stagenet and solve potential bugs. Stagenet can be seen as a testnet, but with real assets and market conditions.",
+      "criteria": "Have Cardano on Maya Protocol’s Stagenet and try all things possible in Maya: LP’ing, Swapping from and to ADA, Saver vaults, Bonding to a node, & Churning.",
+      "report": "In this video you can find the explanation for this milestone: \nhttps://www.youtube.com/watch?v=wJwWDyfzcpY\nAdditional links:\nSWAPS\n- ADA → RUNE (Cardano → THORChain, 5 ADA in / 1.12 RUNE out):\n Cardanoscan: https://cardanoscan.io/transaction/3dfabf904bc5a96606d7b8f75c447994e738b921545ec56d1f18a38d7f261144\n MAYANode: https://stagenet.mayanode.mayachain.info/mayachain/tx/details/3dfabf904bc5a96606d7b8f75c447994e738b921545ec56d1f18a38d7f261144\n THORChain: https://thorchain.net/tx/E80D87D2E50E480F2513B8601A4773B7E662172E382EFB0CEE86D6088D506A26\n\n- RUNE → ADA (THORChain → Cardano, 4 RUNE in / ~2.16 ADA out):\n THORChain: https://thorchain.net/tx/473f28f379e2d554d90380019e8c4d30d1be1dde1d9ca076965dc2164d2777cb\n MAYANode inbound: https://stagenet.mayanode.mayachain.info/mayachain/tx/details/473f28f379e2d554d90380019e8c4d30d1be1dde1d9ca076965dc2164d2777cb\n Cardanoscan: https://cardanoscan.io/transaction/c8dd974d4ea931609d08824b69fff63e2973fa5ac751f0b2657691269f75ade3\n MAYANode outbound: https://stagenet.mayanode.mayachain.info/mayachain/tx/details/c8dd974d4ea931609d08824b69fff63e2973fa5ac751f0b2657691269f75ade3\n\nLIQUIDITY POOL\n- Add liquidity:\n Cardanoscan: https://cardanoscan.io/transaction/a95f5b6e1251e0cf0755a0dff8c39a3e4607f59cc64b6af42c32e3fca28d581e\n MAYANode ADA: https://stagenet.mayanode.mayachain.info/mayachain/tx/details/A95F5B6E1251E0CF0755A0DFF8C39A3E4607F59CC64B6AF42C32E3FCA28D581E\n MAYANode CACAO: https://stagenet.mayanode.mayachain.info/mayachain/tx/details/26DB6950784605A13C7AA47A6295DF29F1E063C71B274172F787516283271504\n\n- Withdraw liquidity:\n MAYANode trigger: https://stagenet.mayanode.mayachain.info/mayachain/tx/details/F215F3BE5122DF589F95F16B3C1F22E8393DC9107F8A29CDDBCDA15C11502B23\n MAYANode outbound: https://stagenet.mayanode.mayachain.info/mayachain/tx/details/29EB3B6E802C80118A0AF7661A1A819E957023FE0ABCE6E327EF4260FFAAA519\n Cardanoscan: https://cardanoscan.io/transaction/29EB3B6E802C80118A0AF7661A1A819E957023FE0ABCE6E327EF4260FFAAA519\n\nBONDING\n- ADA-C",
+      "kinds": [
+        "chain",
+        "other",
+        "video"
+      ],
+      "links": 21,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "21",
+      "cost": 57300,
+      "promise": "Launch the Cardano integration on Maya Protocol’s Mainnet.",
+      "criteria": "Have Cardano on Maya Protocol’s Mainnet and try all things possible in Maya: LP’ing, Swapping from and to ADA, Saver vaults, Bonding to a node & Churning.",
+      "report": "You can check milestone video on:\nhttps://youtu.be/9gaJqYCYchc\n\nNETWORK: Maya Protocol Mainnet (mayanode.mayachain.info)\n\nSWAPS\n- ADA → ETH (Cardano → Ethereum, ~200 ADA in / 0.0258 ETH out):\n Cardanoscan: https://cardanoscan.io/transaction/fe6e750ceb44dd37610dc53b2cd1c9e38b3bb0308375453666c54d4d0c5552be\n MAYANode: https://mayanode.mayachain.info/mayachain/tx/details/fe6e750ceb44dd37610dc53b2cd1c9e38b3bb0308375453666c54d4d0c5552be\n Etherscan: https://etherscan.io/tx/0x2C6677528EA4CE4564C893D5F54F683D7BD8CA58762A9AAD67DD1BED6321CB38\n\n- ARB.USDT → ADA (Arbitrum → Cardano, ~205 USDT in / ~758 ADA out):\n Arbiscan: https://arbiscan.io/tx/0x5A952D852967413632B90D2BBF10CFB331C13F8719584728A35B7D6497452204\n MAYANode inbound: https://mayanode.mayachain.info/mayachain/tx/details/5A952D852967413632B90D2BBF10CFB331C13F8719584728A35B7D6497452204\n Cardanoscan: https://cardanoscan.io/transaction/C1958D138914A98B1DE7509CBC80C843DB7A430BBA0415B80F4E43E3CB0EF3E8\n MAYANode outbound: https://mayanode.mayachain.info/mayachain/tx/details/c1958d138914a98b1de7509cbc80c843db7a430bba0415b80f4e43e3cb0ef3e8\n\nLIQUIDITY POOL\n- Add liquidity (+:ADA.ADA:):\n Cardanoscan: https://cardanoscan.io/transaction/f57b49fbf705ea38277495df7e43db5a032e48c2a344b2e62cb995ee8ddd0133\n MAYANode ADA: https://mayanode.mayachain.info/mayachain/tx/details/f57b49fbf705ea38277495df7e43db5a032e48c2a344b2e62cb995ee8ddd0133\n MAYANode CACAO: https://mayanode.mayachain.info/mayachain/tx/details/997931A98F4D3CBBF254F7A557CE4B50394E06F6C1893C7AE6041F35FF3361D9\n\n- Withdraw liquidity (WD:ADA.ADA:):\n MAYANode trigger: https://mayanode.mayachain.info/mayachain/tx/details/B47A3FEE15B4873443E8A980E3664110279985D1DCF4DD2CA72FD9CFD8C021E1\n MAYANode outbound: https://mayanode.mayachain.info/mayachain/tx/details/2ff5a13349eb738c966c80f720c11c64781fefef35a7099726de19ec6112dbfb\n Cardanoscan: https://cardanoscan.io/transaction/2ff5a13349eb738c966c80f720c11c64781fefef35a7099726de19ec6112dbfb\n\nBONDING\n- ADA-CACAO LP units bonded to a node (B",
+      "kinds": [
+        "chain",
+        "other",
+        "video"
+      ],
+      "links": 17,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "22",
+      "cost": 57300,
+      "promise": "Have the Cardano integration on Mainnet for two months. Interfaces supporting Maya will likely have support for Cardano so everyone can swap native assets supported by Maya (BTC, ETH, etc) to native ADA.",
+      "criteria": "Have the Cardano integration on Mainnet for two months.",
+      "report": "・Too see all transactions: \n・Go to: https://www.mayascan.org/tx?type=action&subtype=swap\n・Click on \"Show all assets\"\n・Select \" ADA > ADA\"\n・Project Closeout report: https://gitlab.com/mayachain/mayanode/-/blob/bitol/1100194-cardano-project-closeout-report/docs/cardano-project-closeout-report.md?ref_type=heads (Non PDF one)\n・Project Closeout video: https://youtu.be/4q7K-vDhT-o\n\nUPDATED:\n・Live demo: https://www.youtube.com/watch?v=jkAsRC1ylxo\n・Project Closeout report PDF: https://gitlab.com/mayachain/mayanode/-/blob/bitol/1100194-cardano-project-closeout-report/docs/cardano-project-closeout-report.pdf?ref_type=heads",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

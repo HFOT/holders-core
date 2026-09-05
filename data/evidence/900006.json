@@ -1,0 +1,61 @@
+{
+  "title": "ADABET.iO | Cardano Betting DApp",
+  "ms": [
+    {
+      "no": 1,
+      "month": "4",
+      "cost": 37500,
+      "promise": "- Build server infrastructure to develop the ADABet betting platform (it includes website servers, Database servers, Cardano Node servers, and Cardano-DB-sync; they are expected to be installed and built on Amazon web services cloud computing). \n- System design and ADABet software (technology architecture of the system, database design). \n- Design the interface and the main user functions of the ADABet platform. \n- Building homepage, and community channels for the ADABet project.",
+      "criteria": "- We will completing the server infrastructure allows the software to work well on it, ensuring the development environment and test-net as well as the main-net during the system deployment.\n- The design of the ADABet software system is built, and the processing flows and connections in the system as well as the hardware are clearly implemented.\n- Completing the graphic design of the software, design of functions, and modules of ADABet software.\n- Building the ADABet’s home page, and building communication channels with the community through the ADABet project (Discord, Telegram, Facebook ..)",
+      "report": "We have completed building the server infrastructure for product development and building (it consists of 5 servers running on Amazon cloud computing services).\nComplete UI/UX designs, build system config modes and basic sources.\nBuild homepages and community groups on social networks.\nWe are also developing the necessary APIs for data generation of the ADABET system, we have built the mainnet https://mainnet.adabet.io/swagger/index.html a set of APIs for programming as well as uninterrupted in the previous month's reports before the community reviews them.\n\nDocuments link\nhttps://docs.google.com/document/d/1kNRF1oytfjpr9blF6A26XbLGzLzi49V5cJFRC6NKZAA/edit?usp=sharing\nVideo links\nhttps://www.youtube.com/watch?v=E-Tx8F877BA",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "7",
+      "cost": 37500,
+      "promise": "The specific jobs and functions we do in this milestone are:\n- Build APIs authentication.\n- Build APIs connect to databases (object, tables, functions ..)\n- Build Cardano APIs for the ADAbet platform.\n- Coding UIUX, function of the software implementation.\n- Coding modules (Login, Profile, Bet-Games …) \n- Implementation of the Agent modules.",
+      "criteria": "Our goals are:\n- Complete the user authentication function in the system.\n- Complete APIs for data connection and retrieval.\n- Complete Built the main betting functions (a bet, order, results, betting history, manage betting assets ..)\n- Completed building the database of the software. \n- Built the betting agent modules.",
+      "report": "We are output work completed:\n- Complete the user authentication function in the system.\n- Depositing tokens function.\n- Balance the user's assets and user profile.\n- Complete APIs for data connection and retrieval.\n- Complete built the main betting functions (Playin, a bet, order, results, betting history, manage betting assets ..)\n- Completed building the database of the ADABET platform.\n- Build the betting agent modules, refer url and code. https://youtu.be/n9pvA3zVRW4;  https://docs.google.com/document/d/1QarFQ5E6kY5Y6409xcCTkCz2r22NLeWdftZDVOBMxfw/edit?usp=sharing",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "11",
+      "cost": 37500,
+      "promise": "The functions and tasks we do in this milestone are:\n- Building ABE token for ADABet software (tokenomics, economic). \n- Build data off-chain bets, and transfer them (off-chain data) to Chainlink oracle. \n- Build those betting data APIs to integrate into the ADABet system. \n- Integrate the APIs developed in M1 and M2 into the platform and test the project's functions after integrating them. \n- Create ADA wallet from the Cardano node and integrate this wallet into the ADABet platform.",
+      "criteria": "The successes achieved at this milestone are:\n- Complete created ABE token on the Cardano blockchain with tokenomics designs\n- Completely implemented the ADABet software functions on the Test-net.\n- The APIs bet data, Chain-link works stably and gives accurate and reliable data.\n- Completely integrated the user's ADA wallet into the system.\nThat proves the result of integrating APIs into the platform is successful.",
+      "report": "ADABET proposal: Milestone 3 - Outputs\nSubmitting Proof of Achievement (PoA)\nA - Name of project and Project URL on Ideascale/Fund\nProposal name: ADABET.iO | Cardano Betting DApp\nFund 9\nChallenge: Dapps, Products & Integrations\nhttps://cardano.ideascale.com/a/dtd/414140-48088\nFunded project number 900006\nbudget: $125005 \nB - Name of project manager\n Trong (telegram: @alex_trongnguyen) \nC - Date of Milestone 3 (of 4 Milestone)\n 3 months (M3)\nD - Milestone 3 - Outputs\nWe are outputs for milestone 3 of the projects following in the SoM\nWe will build APIs and implement ADABet software functions.\nThe specific tasks and functions we done in this milestone are:\n- Building ABE, GEM token for ADABet software (tokenomics, economic). \n- Build features for ADABET platform.\n- Build data off-chain bets and submit data betting on-chain to Cardano blockchain. \n- Build those betting data APIs to integrate into the ADABet system. \n- Integrate the APIs developed in M1 and M2 into the platform and test the project's functions after integrating them. \n- Create an ADA wallet from the Cardano node and integrate this wallet into the ADABet platform.\n- Build an event airdrop program with top matches.\n- Build a web-admin for manage about information of matches and users \nWe are output work completed:\n- Complete the build and design of tokenomics and integrate it into the platform, allowing users to bet with $ABE and $GEM coins that have been built in addition to the $ADA token.\n- Completion of wallet construction in the ADABET system allows users to use, store assets, and transact through their wallets when registering to the platform (Includes additional features such as Deposit, Swap, and Withdraw tokens). In addition, users can connect to their external wallets such as Yoroi, Nami, and Flint.\n- Completed building an event airdrop program for users with top matches. \nAllows users to predict match scores for free and gain rewards when they are in the top ranking of participants.\n- Complete",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 16,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "12",
+      "cost": 12505,
+      "promise": "We create a completely new betting ADABet platform based on the Cardano blockchain combined. This platform will bring the property ownership experience to players, and the right to preserve the identity of bettors, it is really useful on a betting platform that needs to ensure the highest reputation. In the future, the development team is ambitious: the ADABET platform has the ability to replace the current betting platforms. The user's digital assets are integrated in the user's ADA wallet and transacted on the Cardano blockchain network. This ensures safety, decentralization, and fast deposits and withdrawals.The ADABET.IO DAPP is bringing more investors to hold ADA through our platform, attracting a lot of new investors to Cardano as well as many betting transactions on ADABET. Transactions are completely on the Cardano blockchain so ensuring customer identity is the benefit of this platform. The project contributes to the richness of Cardano’s dApp ecosystem as well as new experiences for ADA fans.",
+      "criteria": "- Fixed software bugs were detected. \n- The number of tasks completed in the project.\n- The number of functions of programmed platforms.\n- Complete test run of software functions. \n- Integrate running main-net and deploy the ADABet DApp. \n- Project completion information is promoted to the community.\n- Create automated administration tools (DAOs) to support customers in the platform.\n- Set up with at least one bookie to exploit and develop customers on the ADABet platform.",
+      "report": "(Video report) ADABET closeout - show functionalities active in the platform (updated)\nhttps://youtu.be/zzgfAH4gbAg",
+      "kinds": [
+        "video"
+      ],
+      "links": 1
+    }
+  ]
+}

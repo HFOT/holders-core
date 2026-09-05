@@ -1,0 +1,84 @@
+{
+  "title": "Koios Evolution: Enhancements, Infra Support & Maintenance",
+  "ms": [
+    {
+      "no": 1,
+      "month": "4",
+      "cost": 75000,
+      "promise": "・Design and build the Koios Lite architecture.\n・Integrate Koios Lite with gRest to see the chain's history.\n・Koios Lite should be tested and debugged.\n・Accept additional instance providers.",
+      "criteria": "・Koios Lite was developed and deployed successfully.\n・gRest integration is working and stable.\n・A number of new instance providers have been added.",
+      "report": "Proof of Achievement\nAs we stand on the brink of launching our Koios Lite Node into the mainnet, our journey has been marked by significant milestones and rigorous preparation. Our achievements so far underscore our commitment to innovation, accessibility, and the democratization of blockchain technology. Here's a glimpse of what we've accomplished:\n・Launch of Koios Lite Node on Preview Network: We've successfully deployed the Koios Lite Node on the Preview network, showcasing a fully operational system that's ready for broader exposure. This critical step ensures that our infrastructure is robust, scalable, and capable of meeting the demands of our growing community.\n・Integration with gRest: Our Koios Lite system seamlessly integrates with gRest, ensuring that users have access to a comprehensive suite of blockchain data tools. This integration highlights our commitment to providing a user-friendly experience that bridges the gap between complex blockchain data and actionable insights.\n・Historical Information and Instant Results: While the Koios Lite layer marks a departure from syncing historical information—now served via the gRest branch (koios full node)—it excels in delivering instant results for objects with the current view of the chain. This functionality ensures that our users have access to the most up-to-date information, enabling informed decision-making and efficient development.\n・Comprehensive Documentation and Public Instances: We've developed extensive documentation and launched public instances of the Koios Lite Node. This effort is designed to lower the entry barrier for developers and users alike, providing clear guidelines and accessible tools for engaging with our platform.\n・API Additions & Performance Metrics: The expansion of our API and the introduction of performance metrics for the Koios Lite Node are testament to our continuous improvement philosophy. These enhancements not only improve the user experience but also provide valuable insigh",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "7",
+      "cost": 60000,
+      "promise": "・Determine the most important AI platforms for integration.\n・Create and maintain plugins for these platforms.\n・Plugins must be tested and debugged.",
+      "criteria": "・Determine the essential development toolkit needed for successful integration with the ChatGPT platform.\n・Integration with other elected AI platform(s) (where plugins are not accepted).\n・Create and sustain a collection of plugins that meet the intended performance and functionality criteria.\n・Conduct thorough testing and debugging of the plugins, and successfully integrate them to achieve desired outcomes.",
+      "report": "Please find below the link to the implementation of Koios in 3 different AI tools and related video presentation\n\nYoutube Video\nhttps://www.youtube.com/watch?v=x_nnlBC4v7Q\n\nMicrosoft Copilot (requires\nhttps://copilot.microsoft.com/?gptId=370db5e2922a4188a13485e20904c01e\nRequirements: This custom Koios Microsoft Copilot requires you to login with a Microsoft or Github account.\n\nOpenAI\nhttps://chat.openai.com/g/g-LOxRKlqki-koios-api\nRequirements: This custom koios GPT is only available to openAI GPT+ subscribers.\n\nGoogle Gemini\nWhile Google Gemini implementation will be published the 1st of June along with our token release.\nRequirements: For the time being, only people in the United States can use this service; once Google allows it, it will be available to people in other countries as well.",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 120000,
+      "promise": "・Identify new initiatives that have been introduced into the ecosystem.\n・Changes for these projects must be developed, tested, and integrated.\n・Perform performance testing.\n・Coordination and discussion with projects are required for successful integration.",
+      "criteria": "We have been an active open-source development ecosystem (with kanban boards available on our project repository), the reason we dont list out individual items is we the next year for Cardano is not spec'd and we will keep (as we have for past 2 years) progressing our development and improvement of Koios gRest API as per progress of the blockchain. Thus, the millestones below are worded as such :\n・gRest is often updated to accommodate new projects and changes in the ecosystem.\n・gRest will continue to run smoothly, adapting to the changing needs of the Cardano ecosystem.\n・Catering to various re",
+      "report": "Proof of Achievements for Milestone 3\n\nThe accomplishments of Milestone 3: Ecosystem Expansion and Integration are comprehensively documented in the official project report, available on the Koios GitHub repository. This report provides detailed evidence of the milestone’s successful completion, highlighting key outcomes such as:\n\n • Ecosystem Expansion: Integration of multiple new initiatives into the Koios ecosystem, extending its reach and utility.\n • Infrastructure Enhancements: Development and implementation of changes required to support seamless integration of new projects.\n • Performance Validation: Rigorous performance testing to ensure new integrations operated reliably within the existing system.\n • Strategic Collaborations: Coordination with partner projects to achieve smooth and effective integration, reinforcing the ecosystem’s collaborative foundation.\n\nFor detailed metrics, technical insights, and a comprehensive breakdown of achievements, you can refer to the full Milestone 3 Report on GitHub: Koios Evolution Report – Milestone 3.\n\nThis document serves as a transparent and verifiable record of progress, reflecting the Koios project’s commitment to growth and accountability within the decentralised technology space.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 60000,
+      "promise": "・Maintain and track many public instances across multiple networks.\n・Create and implement upgrade plans for infrastructure (transparent with community) and coordination with respect to releases across cardano networks (guildnet preview, preprod and mainnet).",
+      "criteria": "・Stable operation of several public instances across networks, as well as a plan for migrating to self-sufficiency.\n・Continuation of Seamless rollover upgrades for APIs across version updates for dependent infrastructure as well as Koios gRest upgrades (part of second point)\n・Reliable service for users, a sustainable model for Koios operation.",
+      "report": "Proof of Achievements for Milestone 4\n\nThe accomplishments of Milestone 4: Public Instance Maintenance and Upgrade Coordination are thoroughly documented in the official project report, accessible via the Koios GitHub repository. This report provides verifiable evidence of the milestone’s successful execution, with key achievements including:\n\n • Public Instance Maintenance: Continuous monitoring and upkeep of public instances across multiple blockchain networks to ensure reliability and stability.\n • Transparent Upgrade Plans: Development of detailed and transparent upgrade plans, communicated effectively to stakeholders and the community.\n • Seamless Coordination: Execution of upgrades across the Cardano network with minimal disruption, achieving maximum efficiency and alignment with the ecosystem’s needs.\n\nFor an in-depth analysis of the milestone’s achievements, metrics, and technical details, refer to the full Milestone 4 Report on GitHub: Koios Evolution Report – Milestone 4.\n\nThis report highlights the project’s commitment to maintaining high operational standards and ensuring robust support for the decentralized community.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 5,
+      "month": "11",
+      "cost": 20000,
+      "promise": "・Provide assistance with various Koios projects and tools. This includes assistance with queries for Koios gRest as well as Koios SPO tools.\n・Collect and respond to user inputs across channels (support channels as well as github issues).",
+      "criteria": "・Regular assistance for users and projects, as well as responses to feedback and inquiries.\n・High user satisfaction, smooth project and tool operation, and continual improvement based on feedback.",
+      "report": "Proof of Achievements for Milestone 5\n\nThe achievements of Milestone 5: Community Support and Feedback Collection are detailed in the official project report, available on the Koios GitHub repository. This report provides clear evidence of the milestone’s successful completion, with key outcomes including:\n\n • Comprehensive Support: Delivered consistent and responsive support across all Koios projects and tools, ensuring user needs were addressed promptly.\n • Feedback Integration: Actively gathered and analyzed community feedback through forums, GitHub issues, and direct communication channels.\n • Community-Driven Enhancements: Leveraged user insights to inform ongoing development and implement improvements tailored to community requirements.\n\nFor a detailed breakdown of the milestone’s activities, metrics, and impact, refer to the full Milestone 5 Report on GitHub: Koios Evolution Report – Milestone 5.\n\nThis report underscores the project’s dedication to fostering community engagement and ensuring that user feedback remains central to the platform’s evolution.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 6,
+      "month": "12",
+      "cost": 65000,
+      "promise": "The output will be a document detailing all the milestones and related achievements we accomplished",
+      "criteria": "The report will contain all documents related to the previous milestones.",
+      "report": "Hello,\nAs far as I know, the close-out Google Form applies to funds up to Fund 9. Starting from Fund 10, there is no such form.\nI am following the guidelines provided in this link: Project Catalyst Fund 10 Documentation, which do not mention any form to be completed.\nIf there is a form I’ve missed, could you kindly direct me to the correct document? Thank you!\n\nProject Close-out Report: Koios Evolution - Enhancements, Infra Support & Maintenance\nProject Details\n • Name of Project: Koios Evolution: Enhancements, Infra Support & Maintenance\n • Project URL on IdeaScale/Fund: Koios Evolution on IdeaScale\n • Project Number: 1000098\n • Project Manager: Priyank\n • Date Project Started: October 8, 2023\n • Date Project Completed: November 2024\nChallenge KPIs and How They Were Addressed\n • Expand API Functionality: Successfully developed Koios Lite, integrated with gRest for blockchain history access, providing faster results and expanded functionality.\n • Infrastructure Stability: Maintained public instances with over 99% uptime, as evidenced by Prometheus metrics. Seamless infrastructure updates were implemented across networks.\n • Community Engagement: Delivered consistent support across tools and platforms, actively collecting feedback and improving based on user inputs.\n • Ecosystem Integration: Integrated multiple new initiatives into the Koios ecosystem, as highlighted in our public repository and projects.json.\nProject KPIs and How They Were Addressed\n 1. Koios Lite Development: Achieved a fully operational Koios Lite layer integrated with gRest, deployed with performance metrics and documentation.\n 2. AI Platform Integration: Successfully developed and maintained plugins for ChatGPT and other platforms, enhancing Koios usability for AI-driven interactions.\n 3. Public Infrastructure Maintenance: Maintained reliable, high-performance public instances with regular updates and transparent upgrade plans.\n 4. Ecosystem Expansion: Integrated new tools and services into the",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 10,
+      "cut": true
+    }
+  ]
+}

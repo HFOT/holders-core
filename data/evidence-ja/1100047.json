@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・エージェントの防御、エージェントの行動\n・建築業者スケジューリングアーキテクチャ\n・PoCエージェントスケジューリングインフラの構築\n・エージェント、エージェントの動作を追加する基本UI\n・ダッシュボードの基礎UI",
+      "criteria": "・建築文書は、GitHubリポジトリに公開されています。\n・エージェントスケジューリングインフラのPoCを作成\n・ダッシュボード用のFigmaデザインを公開しています.",
+      "report": "業績の証明については、次のリソースを参照してください。\n・Deployed Platform: https://agents.cardanoapi.io/\n・ソースコード: https://github.com/cardanoapi/autonomous-agents\n・Figma Design: https://www.figma.com/design/h9K0eArOSnZOVw7O5UrYFu/AAT?node-id=552-18675&t=6F7jU9q6kL6rpaRI-0\n・ドキュメント: https://cardanoapi.github.io/autonomous-agents/docs/architecture\n\nこのマイルストーンのために、私たちの成果物はデザイン(Figma)と建築文書でした。 これらのリソースへのリンクは、上記に記載されています。\nこのマイルストーンの達成を目指した出力については、エージェントとその動作を定義し、フィグマ UI で表現しています。 また、エージェントのスケジューリングアーキテクチャを構築し、スケジューリングアーキテクチャのPoCを完成させました。 エージェントとその動作は Figma (リンク3) で設計されており、デプロイされたプラットフォーム(リンク1) に住んでいます。 建築文書は、エージェントのスケジューリングアーキテクチャをカバーしています。 PoC では、Docker を使用してエージェントを作成して実行できるデプロイ環境(リンク1)があります。\n受諾の基準のアドレス:\n・公開GitHubリポジトリ(リンク4)にアーキテクチャ文書が公開されました。\n・エージェントスケジューリングインフラストラクチャのPoCが作成され、デプロイされたプラットフォーム(リンク1)で利用できます。\n・ダッシュボードの図形デザインが公開されました(リンク3)."
+    },
+    {
+      "no": 2,
+      "promise": "・Kafkaのような適切なメッセージブローカーを使用して、Cardano egのオープンソースツールや一部のAPIを使用してエージェントを調達するイベント。Blockfrost API、またはOura。\n・エージェント行動の実装\n・試験シナリオの定義\n・テストシナリオの実行\n・ダッシュボードの開発",
+      "criteria": "・APIやダッシュボードでエージェントを作成し、基本的な動作を定義することが可能\n・リアルタイム取引を聴くネットワークイベントに自律的に反応するエージェント",
+      "report": "> API と Dashboard が導入され、選択したメンバーとプライベートテストが行えます。 提出されたプラットフォームのビデオ証拠。\n誰でもテストできる展開プラットフォームです。\n・https://agents.cardanoapi.io/(sanchonetネットワーク)\n・https://preview.agents.cardanoapi.io/(プレビューネットワーク)\n\nプラットフォームは一般公開され、誰にでも使用できます。 また、週1回の会議でグループを運営するガバナンスツールのプラットフォームを提示しました。\n\n> エージェントがネットワークイベントに自律的に反応するビデオの証拠。\nhttps://www.youtube.com/watch?v=OzNIlspXmTY"
+    },
+    {
+      "no": 3,
+      "promise": "・マルチエージェント、マルチトランザクション、マルチエポックシナリオの開発とテスト\n・シナリオテスト\n・Dashboardによる結果の公開",
+      "criteria": "・Voltaire VotingのScenario文書がGitHubに公開され、SanchoNetの実行結果が公開されます.",
+      "report": "> GitHubでVoltaire VotingのScenarioドキュメントが公開されました\nhttps://github.com/cardanoapi/autonomous-agents/tree/feat/scenario-report/scenario\n\n> SanchoNetのシナリオ実行結果の公開はGitHubで公開\nSanchoNet: https://github.com/cardanoapi/autonomous-agents/blob/feat/scenario-report/scenario/SanchoNet.md\nプレビュー: https://github.com/cardanoapi/autonomous-agents/blob/feat/scenario-report/scenario/Preview.md"
+    },
+    {
+      "no": 4,
+      "promise": "・コミュニティのフィードバックを求める\n・バグ報告のバグ修正\n・ダッシュボードURLの消去\n・コミュニティプロモーション",
+      "criteria": "・完全なソースコードはGitHubリポジトリに十分なドキュメントが公開\n・システムの機能が公開され、公開されているYouTube動画\n・展開環境のURL\n・触媒への報告",
+      "report": "公開 GitHub はコードとドキュメントをリポする\n>> >> >> https://github.com/cardanoapi/autonomous-agents\nダッシュボードを表示し、Voltaire 投票シナリオを実行しているYouTube動画\n>> >> >> https://youtu.be/OzNIlspXmTY リリース\nデプロイされたダッシュボードのURL\n>> >> >> https://agents.cardanoapi.io\nプロジェクトクローズアウト:\n>> PCV: https://www.youtube.com/watch?v=uJV 85ffQNU\n>> >> >> スライド: https://docs.google.com/current/d/1lNMtkDwmfaAfrns1KZiQ4SOXrRl0bFK2mTpKWhaDA/edit?usp=sharing\n>> PCR: https://docs.google.com/document/d/11 Tf7HnPWiocHjc37r5t5WlcCz4wHnYn3No1GHLyYqE/edit?usp=sharing"
+    }
+  ]
+}

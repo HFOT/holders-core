@@ -1,0 +1,73 @@
+{
+  "title": "Python IDE PyCharm Integrated with Cardano Development Support",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 42000,
+      "promise": "Scope and Requirements Document: \nA detailed document defining the scope of the project, including features, functionality, and technical requirements. This document serves as a blueprint for the development process and ensures alignment with stakeholders' expectations.",
+      "criteria": "The document is published on Github, accessible to the public and it contains scope of the project including features, functionalities and technical requirements.",
+      "report": "We are very excited to deliver this key project for Cardano Developers Community. We are delayed in submitting this milestone however it is worth as we have done extensive research and now the document is very concrete in technical approach. \nWe have produced Scope and design document for following features, \n・Syntax Highlighting and Code Completion\n・Cardano Blockchain Explorer API Integration\n・Smart Contract Deployment/Connecting Node from PyCharm \n・Wallet Management - example Creating Wallet \n・Debugging Tools\n\nLink to the Scope and design document https://github.com/AIQUANT-Tech/CardanoPyC/blob/main/DesignDocs/CardanoPyC-Scope_Design_Document.pdf\nWe have setup public repository for source code for future use and added documentation folder and document link there.\nhttps://github.com/AIQUANT-Tech/CardanoPyC/",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 42000,
+      "promise": "Development for following features\n・Syntax Highlighting and Code Completion\n・Cardano Blockchain Explorer API Integration",
+      "criteria": "・Syntax Highlighting and Code Completion extension functionalities are developed, unit test cases confirming the functionalities are working and submitted to JetBrains for approval to be listed on JetBrains Marketplace \n・Cardano Blockchain Explorer API Integration functionality is developed, unit test cases confirming the functionalities are working and submitted to JetBrains for approval to be listed on JetBrains Marketplace",
+      "report": "Milestone 2 is completed and we are very glad that JetBrains have approved our submission for the plugin and it is available for developers to download from the JetBrains Market place.\n\n・GitHub public repository was created in M1, we have uploaded source code and test cases for the outputs\n・Syntax Highlighting and Code Completion\n・Cardano Blockchain Explorer API Integration\n\n GitHub Link https://github.com/AIQUANT-Tech/CardanoPyC/tree/main/src/\n・The plugin including the two functionalities has been submitted to JeBrains Marketplace and approved by JetBrains\n\n Here is approved plugin link https://plugins.jetbrains.com/plugin/26301-cardanopyc\n・We are submitting here a short video showing Unit Test Cases Run confirming functionalities are working\n\n Here is publicly accessible video link https://youtu.be/zGLwGJFA9Y4",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 42000,
+      "promise": "Outputs:\nFollowing two Plug-in for PyCharm IDE are developed\n・Smart Contract Deployment from PyCharm IDE\n・Wallet Management - example Creating Wallet",
+      "criteria": "・Smart Contract Deployment is developed, unit test cases confirming the functionalities are working and submitted to JetBrains for approval to be listed on JetBrains Marketplace and submitted to JetBrains for approval\n・Wallet Management functionality is developed, unit test cases confirming the functionalities are working and submitted to JetBrains for approval to be listed on JetBrains Marketplace and submitted to JetBrains for approval",
+      "report": "Milestone 3 is completed and JetBrains have approved our submission for the plugin work done in this milestone. The extension is available for developers to download from the JetBrains Market place.\n・Link to the source code and test cases GitHub repository for the two outputs\n\n・Smart Contract Deployment from PyCharm IDE >>>https://github.com/AIQUANT-Tech/CardanoPyC/tree/main/src/main/java/org/intellij/sdk/language/deployment\n・Wallet Management >>https://github.com/AIQUANT-Tech/CardanoPyC/tree/main/src/main/java/org/intellij/sdk/language/wallet\n\n・The plugin including the two functionalities has been submitted to JeBrains Marketplace and approved by JetBrains\n\n・Link to the plugin available on Jetbrains market place https://plugins.jetbrains.com/plugin/26301-cardanopyc\n\n・Test cases - https://github.com/AIQUANT-Tech/CardanoPyC/tree/main/src/test\n・We are submitting here a short video showing Unit Test Cases Run confirming functionalities are working\n\n・Here is publicly accessible video link https://youtu.be/Dq8NNB8RPOg",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 42000,
+      "promise": "Development for following features\n・Debugging Tools\n・Documentation and Examples",
+      "criteria": "・Debugging Extension is developed, unit test cases confirming the functionalities are working and submitted to JetBrains for approval to be listed on JetBrains Marketplace \n・User Documentation with examples is available for Developers for all the functionalities developed",
+      "report": "----------------------\n・Added Examples folders with Example screenshot and additional user example document: https://github.com/AIQUANT-Tech/CardanoPyC/tree/main/examples\n・Added Video links in the Example document for all the features developed: https://github.com/AIQUANT-Tech/CardanoPyC/blob/main/examples/Examples.md\n・ Added a new user document Examples.md and improved readability of both the documents. Added links for previous Milestone Videos in the examples document.\n・Added description on market place >>version> what is new>>description\n\n----------------------\nMilestone 4 is completed and JetBrains have approved our submission for the plugin work done in this milestone. The extension is available for developers to download from the JetBrains Market place.\n・Link to Source Code Repository on GitHub for the Debugging Extension functionality \n\n・https://github.com/AIQUANT-Tech/CardanoPyC/tree/main/src/main/java/org/intellij/sdk/language/diagnostics\n・https://github.com/AIQUANT-Tech/CardanoPyC/tree/main/src/main/java/org/intellij/sdk/language/debug_tools\n\n・The plugin including the debugging functionality has been submitted to JeBrains Marketplace and approved by JetBrains\n\n・Link to confirm submission to JetBrains for approval of the Debugging Extension functionality https://plugins.jetbrains.com/plugin/26301-cardanopyc\n\n・Test cases - https://github.com/AIQUANT-Tech/CardanoPyC/tree/main/src/test\n・We are submitting here a short video showing Unit Test Cases Run confirming functionalities are working\n\n・Here is publicly accessible video link CardanoPyC M4 - Debugging Extension \n\n・User Documentation with examples \n\n・The readme file includes the details https://github.com/AIQUANT-Tech/CardanoPyC/blob/main/README.md",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 15
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 29700,
+      "promise": "・Final close-out report\n・Final closeout video\n・Publication of detailed documentation and usage tutorials of PyCharm extension and its features.",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Published documentation and tutorials accessible through the extension or a linked resource.",
+      "report": "A. Output: Final close-out report\nAcceptance criteria: Final closeout report is publicly available\nEvidence: Link to final closeout report https://drive.google.com/file/d/1NHzBrA_T4-gm8eNvcQ4gUr8tI9bjrr9t/view?usp=sharing\n\nB. Output: Final closeout video\nAcceptance criteria: Final closeout video is publicly available\nEvidence: Python IDE PyCharm Integrated with Cardano Development Support\n \nC. Output: Publication of detailed documentation and usage tutorials of PyCharm extension and its features.\nAcceptance criteria: Published documentation and tutorials accessible through the extension or a linked resource.\nEvidence: Link to the Published documentation and tutorials\nNode & API Demo: https://youtu.be/zGLwGJFA9Y4 \nWallet & Tx Demo: https://youtu.be/Dq8NNB8RPOg \nContract Execution Demo: https://www.youtube.com/watch?v=LfSuzCy3qWs \nEducational Guide: https://youtu.be/pB2wJDOty8E\nGithub documentation link: https://github.com/AIQUANT-Tech/CardanoPyC/blob/main/examples/Examples.md",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 13
+    }
+  ]
+}

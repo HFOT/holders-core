@@ -1,0 +1,33 @@
+{
+  "title": "(Dead-man-switch) Permission based Wallet",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 10000,
+      "promise": "This Milestone is used to plan the later development. Aiming to answer questions about how features work on a technical level, specification of development tasks planning and technologies used. Furthermore, a detailed whitepaper will be setup. It will also be used to set up social accounts for development updates.\n・Setup of social accounts\n・Final whitepaper\n・General functionality\n・Extensive permission descriptions\n・Use-case examples\n・Detailed development tasks in project tracker",
+      "criteria": "To accept the milestone as completed, the following should be proofed\n・Social accounts will include\n・Twitter/X\n・Basic account\n・Discord Server\n・Join option\n・General section\n・Whitepaper\n・Contains Abstract\n・Contains Introduction\n・Explains General functionality\n・Explains how the permission system works and which permissions are possible\n・Shows some example use-cases\n・Development Tasks\n・Lists Tasks to be done to develop the prototype\n・Tasks are a general overview and might change during development due to scrum like process",
+      "report": "A. Output: Social accounts for development updates — a Twitter/X account and a Discord server for the project (Epora).\nAcceptance criteria: Twitter/X: basic account exists and is active. Discord: server with an open join option (permanent invite link, does not expire) and a general section where members can interact.\nEvidence: Twitter/X: https://x.com/schaier_io\n(changed due to weird x suspended account glitch, with a successful appeal that still shows as suspended)\nDiscord (permanent invite, lands in the general channel): https://discord.gg/2uh4BynQBW\nBoth are also linked from the project README: https://github.com/schaier-io/epora-wallet\n\nB. Output: Final whitepaper (v1.0), published as PDF with full LaTeX source in the public repository.\nAcceptance criteria: Contains an Abstract (page 2) and an Introduction (Section 1). Explains the general functionality: Section 2 (EUTXO background) and Section 4 (System Architecture — features as configuration, state-thread token, two-validator handshake, datum-free receiving, stake-credential pinning). Explains how the permission system works and which permissions are possible: Section 5 (Permission and Recovery Model) with the full transition table (owners, weighted multi-signature, per-day spending allowances, proof-of-life dead-man-switch, weighted-share beneficiary recovery, streaming payments) and the State configuration fields in Section 4. Shows example use-cases: Section 9 (Illustrative Use Cases — inheritance/backup, inheritance with vesting, shared treasury with allowances, plus the threat scenarios each configuration contains).\nEvidence: https://github.com/schaier-io/epora-wallet/blob/main/whitepaper/whitepaper.pdf\n(LaTeX source in the same folder: https://github.com/schaier-io/epora-wallet/tree/main/whitepaper)\n\nC. Output: Detailed development tasks in the project tracker — a general overview of the tasks needed to build the prototype, broken down per milestone.\nAcceptance criteria: Lists the tasks to be done to de",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 22,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 25000,
+      "promise": "This milestone aims to create the smart contract/validator layer\n・Smart contract \n・Based on whitepaper\n・On-chain part only\n・Extensive documentation\n・Testing to ensure security of funds",
+      "criteria": "The acceptance criteria will be based on the code submitted\n・Smart contract includes the methods described in the whitepaper\n・The code has documentation to explain what is happening to new developers\n・Possible abuse vectors are explained and shown as not vulnerable",
+      "report": "A. Output: Smart contract\n\nThe complete smart-contract implementation has been delivered in Aiken. It includes the state-thread token, two-validator handshake, operator and multisignature actions, allowances, proof-of-life renewal, beneficiary recovery, streaming payments, consolidation, access removal, staking and governance actions.\nAcceptance criteria: Smart contract includes the methods described in the whitepaper.\nEvidence:\nSmart-contract source on main:\nhttps://github.com/schaier-io/epora-wallet/tree/main/code/smart-contract\nOn-chain validators on main:\nhttps://github.com/schaier-io/epora-wallet/tree/main/code/smart-contract/validators\nCompleted Milestone 2 checklist:\nhttps://github.com/schaier-io/epora-wallet/blob/main/tasks/milestone-2-smart-contract.md\nB. Output: Based on whitepaper\n\nThe contract architecture and supported transitions were implemented from the project whitepaper. The completed checklist maps the whitepaper architecture, permission model and transaction methods to their implementations and tests.\nAcceptance criteria: Smart contract includes the methods described in the whitepaper.\nEvidence:\nWhitepaper on main:\nhttps://github.com/schaier-io/epora-wallet/blob/main/whitepaper/whitepaper.pdf\nWhitepaper-to-implementation checklist:\nhttps://github.com/schaier-io/epora-wallet/blob/main/tasks/milestone-2-smart-contract.md\nContract interaction and transition map:\nhttps://github.com/schaier-io/epora-wallet/blob/main/code/smart-contract/INTERACTIONS.md\nC. Output: On-chain part only\n\nThe on-chain validator layer is complete. It contains the state-thread validator, wallet validator, reference-store validator, on-chain data types, transition rules and security guards. The compiled Plutus blueprint is published with the source code.\nAcceptance criteria: Smart contract includes the methods described in the whitepaper.\nEvidence:\nValidator source code:\nhttps://github.com/schaier-io/epora-wallet/tree/main/code/smart-contract/validators\nCompiled Plutus blueprin",
+      "kinds": [
+        "code"
+      ],
+      "links": 36,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "title": "Proportionality in Stake-based Voting",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 45000,
+      "promise": "・The theoretical definitions for the weighted quota voting mechanism are completed. \n・The basic techniques are formalized, including the Banzhaf power index and the adjustments for voting weight allocation and quota settings.\n・The drafted mathematical models ensuring proportional fairness in voting power are formalized.",
+      "criteria": "・The theoretical framework is roughly documented and peer-reviewed by internal research team members, including several key concepts such as the Banzhaf index, voting weight allocations, and quota adjustments.",
+      "report": "Hi, community reviewers,\nWe completed Milestone1 and shared our reports via two links:\n・google drive with the PDF file: https://drive.google.com/file/d/1Fj09JTWsNPNC5iGdUoDVZAHl4kSybU17/view?usp=drive_link (can comment)\n・overleaf for raw data (same to PDF): https://www.overleaf.com/read/gcjgnqmkqpfx#b9f755 (can view and leave comments)\n\nAny comments are warmly welcome.\n\nBest\nQin",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 45000,
+      "promise": "・Completion of the entire theoretical framework for the weighted quota voting mechanism, including the Banzhaf power index and adjustments for voting weight allocation and quota settings. \n・Formalization of mathematical models ensuring proportional fairness in voting power.",
+      "criteria": "・Theoretical framework is fully documented and established, including several key concepts such as the Banzhaf index, voting weight allocations, and quota adjustments.\n・Formalize mathematical models ensuring proportional fairness in voting power with full proofs and theoretical results.",
+      "report": "Dear Community Reviewers,\nWe have resubmitted our Milestone 2 report following updates to the milestone goals.\nIn line with the feedback from community approvers, we have removed the CIP/CPS-related objectives. Our work will now be fully concentrated on research-based outputs.\nThe revised report is available at the following links:\n・Google Drive (PDF version with comments enabled);\n・Overleaf (source version with comments enabled): \n\nThank you for taking the time to review our PoA again.\nBest regards,\nQin Wang",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 37500,
+      "promise": "・Completion of the simulation (multiple rounds) for evaluating the weighted quota voting mechanism with testing results.\n・Completion of measurement of how closely voting power aligns with proportional fairness metrics.\n・Completion of one workshop for presenting the model and simulation results to key stakeholders in the Cardano community (e.g., developers, researchers, and governance bodies) to gather feedback and suggestions for improving the mechanism.",
+      "criteria": "・Simulation results confirm that the weighted quota mechanism performs as expected and adjusts voting power according to stake size without domination by large stakeholders. \n・The simulation results were presented to stakeholders (i.e., ranging from 5 to 15) in the Cardano community, feedback was collected and taken into account to refine the model. \n・Source code of the refined implementation with passing tests is available on GitHub with the Banzhaf power index in place.",
+      "report": "Dear Community Reviewers,\n\nWe have resubmitted the third version of our Milestone 3 deliverables (`v3`), incorporating the community review comments from the previous two review rounds.\n\n## Key Deliverables\n### Milestone 3 report (`v3`)\n- Google Drive PDF: Link1\n- Overleaf source: Link2\n\n### Source code repository\n- GitHub repository: Link3\n- Basic CI smoke-test screenshot: Link4\nPlease note that the GitHub CI currently checks that the main simulation code can be imported successfully. We now describe this as a basic CI smoke test, rather than a complete test suite. The main validation evidence for Milestone 3 is the simulation methodology, generated results, and source code described in the report.\n\n## Acceptance Criteria Mapping\nTo make the review easier, we organize the evidence below according to the Milestone 3 acceptance criteria. We show both summary and breakdown.\n- The \"Milestone 3 acceptance criteria and report locations\" is summarised in Table 2.\n\n### Criteria 1: Simulation results confirm that the weighted quota mechanism performs as expected and adjusts voting power according to stake size without domination by large stakeholders.\nThis criterion is addressed in the Milestone 3 report (`v3`) as follows:\n- The simulation summary is provided in Table 3, \"Simulation summary\".\n- The simulation methodology is described in Section 5, \"Simulations on Proportionality of Voting Power\".\n- The Banzhaf-index approximation method is given in Algorithm 1, \"Monte Carlo estimation of Banzhaf pivot probabilities\".\n- The proportionality and power-balance evaluation is reported in Figures 6 to 16, including:\n - quota-sweep results for different population sizes;\n - Gamma-distributed stake profiles;\n - simulations fitted to Project Catalyst Fund 13 stake data;\n - fixed-quota analysis at approximately the practical Catalyst quota.\nThe results show that voting power under the weighted-quota mechanism can be measured and adjusted through the quota parameter. In particular, the",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 22500,
+      "promise": "・Completion of a final close-out report summarizing the project’s outcomes, including the theoretical framework, simulations, community feedback, and refined prototype.\n・Release of open-source code and all relevant documentation for community adoption. \n・Completion of a final close-out video Completion of one research paper for submission based on our outputs (i.e., the key methodology, results and findings in our final close-out report).",
+      "criteria": "・Final close-out report is publicly available.\n・Final close-out video is publicly available (both report and video will follow the fund's guidelines: Fund13 close-out report and video guidelines ( https://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv).\n・Code and documentation relating to this project are available on GitHub.\n・Research paper is released publicly (preprinted on e.g., eprint, arXiv) and submitted to a leading conference.",
+      "report": "Dear Community Reviewers,\n\nWe submit the Final Proof of Achievement for Milestone Final, Close-out deliverables, for Project Catalyst Project #1300163, Proportionality in Stake-based Voting.\nA. Output: Final close-out report\n・The report brings together the project's theoretical framework, analytical results, Fund 13-calibrated simulations, community and academic feedback, impact, limitations, and final public outputs.\n・Acceptance criteria: The final close-out report is publicly available.\n・Evidence: Final close-out report PDF (here); LaTeX source (here)\n\nB. Output: Final project close-out video\n・The video presents the project challenge, completed work, main findings, parameterized simulations, public outputs, lessons learned, and next research steps.\n・Acceptance criteria: The final close-out video is publicly available and follows the Fund 13 project close-out requirements.\n・Evidence: Public close-out video (here)\n\nC. Output: Public simulation code and documentation\n・The public repository contains the numerical research code and documentation used to estimate Penrose-Banzhaf pivot probabilities and compare voting power with stake across different quota, population-size, and stake-distribution settings.\n・Acceptance criteria: Code and documentation relating to the project are available on GitHub.\n・Evidence: GitHub repository and documentation (here)\n\nD. Output: Public research paper\n・The paper, Swimming with Whales: Analysis of Power Imbalances in Stake-Weighted Governance, presents the project's theoretical and empirical contributions, including the impossibility result and Fund 13-calibrated analysis.\n・Acceptance criteria: The research paper is released publicly as a preprint.\n・Evidence: Public arXiv paper (here)\n\nE. Output: Research-paper submission to a leading conference\n・The completed research paper has been submitted to a leading archival conference.\n・Acceptance criteria: The research paper is submitted to a leading conference.\n・Evidence: Conference-submission",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    }
+  ]
+}

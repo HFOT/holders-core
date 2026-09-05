@@ -1,0 +1,64 @@
+{
+  "title": "IOG Catalyst Team : Catalyst Ecosystem Accelerator (Hermes Core architecture development)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "To meet and exceed the open source requirements required of Catalyst Systems Improvements, the first milestone will deliver fully Open Source public repositories of the Hermes and Athena projects.\n\nThe appropriate licenses to all code and documentation from the project's inception will be published and all development will be conducted in public.\n\nFull continuous integration and deployment (CI/CD) will be deployed in our testing environments. Each milestone will be community-operable and with reproducible tagged releases.\n\nThe initial versions of each application will be functional enough to test assumptions from which we will apply iterations for all future work.",
+      "criteria": "This milestone is foundational development infrastructure work. It is necessary to ensure that licenses are appropriately applied, and that the development work can proceed smoothly from a solid foundation.\nThe deliverable is an Apache2 repository for the Hermes and Athena applications, and includes:\n・integrated and automated results of unit testing of code.\n・integrated and automated publishing of documentation.\n・correct license files are present and referenced in the documentation.\n・documentation detailing how to build the application locally.\n・facilities for the public to comment or query on",
+      "report": "Overview\nThe open source setup for the new Hermes project has been completed according to specifications of Milestone 1 - including testing, documentation, licensing, and guidance for community feedback / contributions.\nPresentation\nThese deliverables were presented to an After Town Hall audience 6/December. During that recorded session, each of these deliverables were reviewed in depth, with an emphasis on covering each of the milestone outputs described in the statement of milestones. \nReviewers are invited to watch that recorded session here. The slides covered during the presentation can be found here. Note that the recording and slide deck cover two proposals - Hermes and Voices. The Voices specific content can be found starting at 1:50 in the recording, and Slide 4 in the slides.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 325000,
+      "promise": "Hermes Foundational Work will be a minimal implementation of Hermes to incorporate the basic internal APIs that the Athena application will require, such as time; chronological event generation; logging; basic hashing, and basic cryptography functions. Hermes allows the WASM modules it runs to call these APIs. Still, the runtime will be highly simplified only to allow testing of the APIs. The APIs created in this milestone will be documented for ease of use by any application developer designing programs to run on the Hermes Application Engine.\n\nIt will also include a Rust implementation of a basic Cardano Node follower and its integration into the Hermes node. This follower will only supply the necessary features required to deliver Project Catalyst Voting for Athena and will serve as the basis for future features that are out of scope for this proposal but which would enhance Cardano Integration, generally.",
+      "criteria": "This milestone delivers essential utility API’s and the necessary integration to the Cardano Blockchain. Delivering these APIs allows experimentation and early validation with the initial implementations of the Athena Modules to refine the internal design of Hermes and Athena.\n\n2.1 Utility APIs :These are general purpose, foundational APIs that the Athena code will need, and provide a solid foundation for building the Hermes Runtime.\n\n2.2 Logging API functionality to:\n・Log messages from Hermes WASM Modules.\n・Specify Levels of logs (Debug, Info, Warn, Error).\n・Add Structured Data to Logs.\n・Disp",
+      "report": "Thank you for taking the time to review our milestone submission! We're excited to share our progress with you, and invite you to review our accomplishments from the past several months. We hope you enjoy reviewing this content as much as we enjoyed putting it together for you!\nOverview\nAll foundational APIs and components for the Hermes engine have been developed & delivered as part of Milestone 2. \nThis recording from Catalyst Architect Steven Johnson provides an overview of the architecture, how the various components interact, and includes a demo of automated test cases running in CI. \nMilestone reviewers are invited to review the actual implementation of each deliverable in the codebase:\n・Logging API\n・Time API\n・Cron API\n・Hashing API\n・Cryptography API\n・WASI Bindings\n・Cardano Blockchain Integration\n・(BONUS!) Mithril Snapshots\n・Automated test cases running in CI\n\nIt is worth noting that #8 in the list above was not included in the original Milestone 2 specifications, and was developed as a bonus capability. By including Mithril Snapshots in the Cardano Follower Crate for Hermes, it allows users to significantly increase the speed and performance of queries against the Cardano blockchain.\nFinally, here is a tagged version of the codebase with a test report corresponding to Milestone 2 delivery.\nPresentation\nThese deliverables are consolidated in a public set of presentation slides here. Milestone reviewers may refer primarily to Slides 4/5, as the presentation covers both Voices and Hermes.\nA live AMA is scheduled for 8/May after the Catalyst Town Hall, so that the community might debrief the presentation, provide feedback, and ask questions.",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 487500,
+      "promise": "Module essential to Hermes' operation and to deliver the Athena (Distributed Project Catalyst Voting) application include:\n\n1- Secure and sandboxed Database Handler.\n2- Secure and sandboxed application package and local file manager.\n3- HTTP Gateway.\n4- P2P networking and IPFS Integration.\n\nWe will deliver each of these as modules within Hermes. They will include documented APIs. The Hermes runtime will allow WASM application modules to react to events generated by these modules and call APIs published by them.",
+      "criteria": "This milestone delivers the remaining APIs and Web3 integrations needed to implement and deliver Athena in later milestones.\n\n3.1 Hermes - File Data Handler and API\n\nApplications in Hermes will be composed of a number of files. Applications will also need access to sandboxed and secure generalized file data storage. This module delivers the file management APIs used both internally by Hermes, and the Applications running on Hermes themselves.\nFunctionality will:\n- Load Hermes Application Packages\n- Check Applications are properly signed by trusted keys.\n- Find metadata within the Application P",
+      "report": "Thank you for taking the time to review our milestone submission! We're excited to share our progress with you, and invite you to review our accomplishments from the past several months. We hope you enjoy reviewing this content as much as we enjoyed putting it together for you!\nOverview\nAll modules essential to Hermes’ operation and to deliver the Athena (Distributed Project Catalyst Voting) application have been implemented in Milestone 3. \nEach of those modules are listed below, along with a recorded demo of the final deliverable, and a link to the implementation in GitHub.\n1: Secure and sandboxed database handler\nDemo & Repo\n2: Secure and sandboxed application package and local file manager\nPackaging Demo & Repo\nFile Manager Demo & Repo\n3: HTTP gateway\nDemo & Repo\n4: P2P networking and IPFS integration\nDemo & Repo\nFinally, here is a tagged version of the codebase with a test report corresponding to Milestone 3 delivery.\nSlides\nFor your convenience, the materials above have been consolidated into a set of google slides here.",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "16",
+      "cost": 487500,
+      "promise": "This milestone will deliver the functionally complete Hermes runtime and run the Athena Application, which will consist of the first Athena Module.\nThe first Athena module will track Catalyst voter registrations from transaction events detected on the Cardano blockchain and save that data in a local database. \nA second Hermes module will calculate registered voters' historical stake address balance. \n﻿﻿Together, these modules form a decentralized and permissionless data source for registered voters and their voting power and replace the current Voting power snapshot tools.",
+      "criteria": "This milestone focuses on finalizing the WASM execution engine that is being built throughout the other milestones. This is delivered in Milestone 4 because all subsidiary modules must be functionally complete before fully validating the implementation of this module. Furthermore, a meaningful application logic is needed to execute and ensure the event and API integration is correct and behaving as required.\n\nWhile Athena modules will commence development in Milestone 2, it is not possible to deliver them until the Hermes application engine itself is complete. This milestone therefore brings t",
+      "report": "Thank you for taking the time to review our milestone submission! We're excited to share our progress with you, and invite you to review our accomplishments from the past several months. We hope you enjoy reviewing this content as much as we enjoyed putting it together for you!\n\nHermes - Functionally Complete\nThe Hermes engine has reached a point of functional maturity required to satisfy the remainder of the proposal commitments. \nEfforts primarily focused on finalizing the WASM execution engine. \nYou can view a demo of the execution flow here.\nThe overall execution flow is supported by a WASM patcher and runtime context, which can be viewed here and here, respectively. \nYou can see automated test cases for Hermes running in CI here. \nSee below for the relevant links into the codebase:\n4.1.1 Handle and Orchestrate a pool of WASM executors that execute the packaged application's business logic\nhttps://github.com/input-output-hk/hermes/blob/main/hermes/bin/src/pool.rs\n4.1.2 Load WASM modules for a packed application\nhttps://github.com/input-output-hk/hermes/blob/main/hermes/bin/src/packaging/app/app_builder.rs\n4.1.3 Execute an init function provided by each WASM module\nhttps://github.com/input-output-hk/hermes/blob/main/hermes/bin/src/wasm/module.rs\n4.1.4.1 Given an events to be delivered to a packaged application: Get all the WASM Modules for the application that processes that event\nhttps://github.com/input-output-hk/hermes/blob/main/hermes/bin/src/app.rs\n4.1.4.2 Given an events to be delivered to a packaged application: Schedule those modules on free WASM executors from the pool\nhttps://github.com/input-output-hk/hermes/blob/main/hermes/bin/src/app.rs\n4.1.4.3 Given an events to be delivered to a packaged application: Clone the WASM memory state before execution\nhttps://github.com/input-output-hk/hermes/blob/main/hermes/bin/src/wasm/module.rs\n4.1.4.4 Given an events to be delivered to a packaged application: Ensures a packed applications configuration and context a",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 47,
+      "cut": true
+    }
+  ]
+}

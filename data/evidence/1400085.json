@@ -1,0 +1,63 @@
+{
+  "title": "No Witness - Hydra Manager",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "・Browser-native TypeScript SDK with head lifecycle basics: openHead() and closeHead() plus event subscriptions.\n・Wallet integration (CIP-30 browser wallets) for signing mainnet/testnet txs used in head open/close, docs site.",
+      "criteria": "・A demo in a video format showcasing functionality of opening and closing a Hydra head on testnet from the browser, with wallet prompts and successful confirmations logged.\n・SDK published as v0.1.0 with typed APIs and example snippets.\n・Docs site live with Getting Started, Head Basics, and Wallet Setup pages",
+      "report": "Happy to submit PoA for M1 of Hydra Manger\n\nA. Output: Browser-native TypeScript SDK with head lifecycle basics: openHead() and closeHead() plus event subscriptions.\nAcceptance criteria: Docs site live with Getting Started, Head Basics, and Wallet Setup pages\nEvidence: https://github.com/no-witness-labs/hydra-sdk/blob/catalyst/milestone-1/milestones/milestone-1.md\nB. Output: Wallet integration (CIP-30 browser wallets) for signing mainnet/testnet txs used in head open/close, docs site.\nAcceptance criteria: A demo in a video format showcasing functionality of opening and closing a Hydra head on testnet from the browser, with wallet prompts and successful confirmations logged.\nEvidence: https://youtu.be/4kr-3EuYZ10\nEvidence: https://github.com/no-witness-labs/hydra-sdk\n\nRepo can be found at: https://github.com/no-witness-labs/hydra-sdk\nWebsite link with screenshots of the open/close flow in the browser and CLI: https://github.com/no-witness-labs/hydra-sdk/blob/catalyst/milestone-1/milestones/milestone-1.md\nVideo with a demo can be found at: https://youtu.be/4kr-3EuYZ10\ndocumentation site can be found at: https://no-witness-labs.github.io/hydra-sdk/docs/",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 7
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 24000,
+      "promise": "・Implement Hydra transaction submission and Hydra UTXO query with typed responses and streaming updates.\n・Add commit/fanout helpers to the SDK for full head lifecycle control from web apps.\n・Developer examples: runnable samples (transfer, mint/burn, simple state update) with testnet validation and error handling.",
+      "criteria": "Hydra Submission Tests\n・Automated tests demonstrate successful transaction submissions to a live Hydra head.\n・Evidence in a video format includes transaction logs or terminal output showing valid transaction submission and confirmation within the Hydra head with transactions producing expected on-chain effects (e.g., UTXO changes visible within the Hydra environment).\n\nUTXO Query Accuracy\n・Queries against the Hydra head correctly return UTXO data that matches the expected state after transactions.\n\nBrowser Demo Functionality\n・A browser-based demo is available that allows users to:\n・Send a Hydr",
+      "report": "A. Output: [What was delivered as Output A]\nImplemented Hydra transaction submission and Hydra UTXO query with typed responses and streaming updates.\nAcceptance criteria: [Completion criteria for Output A]\nAutomated tests demonstrate successful transaction submissions to a live Hydra head.\nEvidence: [Link to verify Output A and its Acceptance criteria]\nhttps://www.youtube.com/watch?v=9zrmpwSzaQ0\n\nB. Output: [What was delivered as Output B]\nAdded commit/fanout helpers to the SDK for full head lifecycle control from web apps.\nAcceptance criteria: [Completion criteria for Output B]\nQueries against the Hydra head correctly return UTXO data that matches the expected state after transactions.\nEvidence: [Link to verify Output B and its Acceptance criteria]\nhttps://www.youtube.com/watch?v=I-Yw0Oj2Xz8\n\nC. Output: [What was delivered as Output C]\nDeveloper examples: runnable samples (transfer, mint/burn, simple state update) with testnet validation and error handling.\nAcceptance criteria: [Completion criteria for Output C]\nDemonstration of CLI commands (screenshots delivered in a PDF report) showing Hydra transaction submission and UTXO queries.\nEvidence: [Link to verify Output C and its Acceptance criteria]\nVideo demonstration of CLI commands: https://www.youtube.com/watch?v=OllmffucaIs\nhttps://drive.google.com/file/d/17iaLjFISXiarHV2yzlmG7Y_K1ZEkbNSK/view?usp=sharing\n\nD. Output: [What was delivered as Output D]\nGitHub repo with v0.2.0 tag.\nAcceptance criteria: [Completion criteria for Output D]\nv0.2.0 tag is accepted as the latest tag on github\nEvidence: [Link to verify Output D and its Acceptance criteria]\nhttps://github.com/no-witness-labs/hydra-sdk/releases/tag/v0.2.0",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 20000,
+      "promise": "・Define HydraProvider interface for seamless data access.\n・Comprehensive testnet testing including cross-browser (Chromium/Firefox/WebKit) and cross-platform (Linux/Mac/Windows)\n・Refined documentation (guides, troubleshooting)",
+      "criteria": "・At least 2 provider adapters working\n・Automated compatibility matrix passes and resilience tests (drop/restart hydra-node, wallet reconnect) pass.\n・Release v0.3.0 with provider docs and demo app URL\n・Documentation must include all the new functionality from v0.3.0 including how to use HydraProvider and seamless data access",
+      "report": "A. Output: Define HydraProvider interface for seamless data access.\nAcceptance criteria: Release v0.3.0 with provider docs and demo app URL\nEvidence: https://github.com/no-witness-labs/hydra-sdk/releases/tag/v0.3.0\nB. Output: Comprehensive testnet testing including cross-browser (Chromium/Firefox/WebKit) and cross-platform (Linux/Mac/Windows)\nAcceptance criteria: Automated compatibility matrix passes and resilience tests (drop/restart hydra-node, wallet reconnect) pass.\nEvidence: https://www.youtube.com/watch?v=9zrmpwSzaQ0\nC. Output: Refined documentation (guides, troubleshooting)\nAcceptance criteria: Documentation must include all the new functionality from v0.3.0 including how to use HydraProvider and seamless data access\nEvidence: \nProviders: https://no-witness-labs.github.io/hydra-sdk/docs/providers/providers\nTesting: https://no-witness-labs.github.io/hydra-sdk/docs/providers/testing\nLimits: https://no-witness-labs.github.io/hydra-sdk/docs/providers/limits\nProduction Checklist: https://no-witness-labs.github.io/hydra-sdk/docs/providers/production-checklist\nD. Output: Hosted demo app URL demonstrating provider swap and recovery behavior.\nEvidence: http://178.63.100.104/\nE. Output: Testnet testing including cross-browser report can be found \nEvidence: https://github.com/no-witness-labs/hydra-sdk/actions/runs/28190608296",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 15
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 17000,
+      "promise": "・v1.0.0 release published to npm with versioned API, changelog, and signed artifacts\n・Complete documentation: API reference, guides, examples, and a “build your own Hydra app” tutorial\n・Closeout report covering development process, lessons learned and recommendations for future work\n・Sharing all development and updates regularly on our X account: https://x.com/nowitnesslabs\"\n・Final close-out report\n・Final closeout video",
+      "criteria": "・npm i hydra-manager installs v1.0.0\n・Demo app links to docs and showcases end-to-end flows.\n・Docs site includes Release Notes, Versioned API, and Examples\n・Closeout report delivered with lessons learned and demo\n・Closeout report contains total X-social interaction for the whole project deployment \n・Final closeout report is publicly available and written according to the guideline from Project Catalyst Fund14\n・Final closeout video is publicly available and written according to the guideline from Project Catalyst Fund14",
+      "report": "A. Output: v1.0.0 release published to npm with versioned API, changelog, and signed artifacts\nAcceptance criteria: npm i hydra-manager installs v1.0.0\nEvidence: npm i @no-witness-labs/hydra-sdk → 1.0.0 on npm with signed SLSA provenance\nB. Output: Complete documentation: API reference, guides, examples, and a “build your own Hydra app” tutorial\nAcceptance criteria: Docs site includes Release Notes, Versioned API, and Examples\nEvidence: https://no-witness-labs.github.io/hydra-sdk/docs/\nC. Output: Build your own Hydra app guide\nAcceptance criteria: build your own Hydra app guide is readily available \nEvidence: https://no-witness-labs.github.io/hydra-sdk/docs/tutorial/\nD. Output: Closeout report covering development process, lessons learned and recommendations for future work has contains total X-social interaction and is publicly available and written according to the guideline from Project Catalyst Fund14\nAcceptance criteria: Closeout report delivered with lessons learned and demo\nEvidence: https://github.com/no-witness-labs/hydra-sdk/releases/download/v1.0.0/Hydra-Manager-1400085-Closeout-Report.pdf\nE. Output: Final closeout video\nAcceptance criteria: Final closeout video is publicly available and written according to the guideline from Project Catalyst Fund14\nEvidence: https://youtu.be/Th3_NDU4itQ - this video is now public listed on youtube.com",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

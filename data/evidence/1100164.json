@@ -1,0 +1,60 @@
+{
+  "title": "Identity solution for Autonomous AIs living on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 9600,
+      "promise": "This is a Concept proposal, with many risks of implementation. At this early stage, we feel the need for a small initial milestone to establish clearly all the specifications and tech stacks.\nThe output produced at this milestone: \n・A public GitHub repo\n・A few video proof of some tech validation / Proof of concepts supporting the choice of the future tech stack\n・Documented choice of tech stacks for the upcoming milestones\n・Defined specifications for each component (NFT metadata, DID, VC content, etc…)",
+      "criteria": "・we have a workable design and choice of tech to deliver this PoC\n・we have identified risks, limitations, challenges…\n・we are in a position to implement the next phases",
+      "report": "This is for the month of March 2024. There is still one more month to finalise all the specs in this Milestone 1, but so far we have a good view of what can be done and how it would run. As described in the main video, there will be some impact on some specs / delivery in Milestone 3, which we will likely implement differently than initially planned.\n・Public repo : https://github.com/incubiq/ai_identity\n・Video report of activity (March 2024) : https://youtu.be/9zihWh4ZRi8 \n・Extra video (PRISM bug report) : https://youtu.be/Iq1tMPdLraU",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 28800,
+      "promise": "Open source GitHub repo containing all code and APIs to:\n・assign DID to a virtualised AI (the AI is running in docker and accessible via openseourceais.com) \n・create a Verified Credential for this AI\n・get general information and stats from this AI, in the form of a JSON format",
+      "criteria": "・The AI is assigned a DID\n・The AI has one or multiple Verified Credentials\n・Additional milestone 1 outcomes are satisfied",
+      "report": "Hi, this is the closing report for M2.\nPlease, it is important before you check the M2 report, to look into the additional video https://youtu.be/u_ufSn_7UR8 which was supposed to be the closing M1 report (I thought at the time that I needed to make one report per month, and you validated M1 on the basis on an intermediate report). \nThe M1 closing report details reasons for changing specs, impacting mostly M3. You will find the final project specs here: https://github.com/incubiq/ai_identity/blob/main/specs.txt (section IMPACT ON CURRENT MILESTONES)\nThen here is the M2 closing report: https://youtu.be/tG_X_iB81TQ \nI hope you have all information you need here, and I hope that you will validate the change of specs impacting M3. \nPlease let me know if you need anything else from me.\nKind regards - Eric",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 28800,
+      "promise": "Here the reviewed milestone output following the accepted change request to Catalyst. (change request here: https://github.com/incubiq/ai_identity/blob/main/1100164%20-%20Change%20request.pdf) \n・The onchain representation of the AI is its Identus identity wallet (not an NFT) ; Note: this is a major change from the initial spec\n・Our identity open source node will issue and verify VCs \n・OSAIS to decompose an AI's attribute to resurface service providers (of GPU, of models, ...) \n・OSAIS to display in UI the status of an AI from its VCs (identity, performance, cost) \n・OSAIS to make use of the identity open source APIs to execute an AI's transaction and generate VC",
+      "criteria": "Here the reviewed milestone acceptance criteria following the accepted change request to Catalyst.\n・An AI is independent (not owned / has its own wallet) and uses independent service providers \n・An AI's service can be called \n・Each entity in the eco-system (caller, worker AI, service provider) receives a VC at execution of a request (VC will also contain proof of transaction cost for each entity)",
+      "report": "Hello reviewers - this is M3 milestone report:\n・A 25min video report here: https://youtu.be/n1ZpTRr5Mhw \n・All details of criteria, output, evidence etc... are in the video\n\nin addition: \n・github repo up to date: https://github.com/incubiq/ai_identity\n・a high level view of the delivery for M3: https://github.com/incubiq/ai_identity/blob/main/milestone_3.txt (however all required information is in the 25min video)\n\naccess to demo in test env:\n・URL https://cotton-supporters-nerve-cos.trycloudflare.com/dashboard/ai-marketplace \n・to access the test env as an authenticated user, click the top right button [Test User], then you should be redirected to the dashboard\n・Do not use the login button, it will not work as it only accepts opensourceais.com as domain for authentication\n・you can check the demo user certificate in the [profile] section, and see the transaction in debug mode (network) to see the full certificate. If you make use of an AI, remember to run it first and then the certificates will take around 30secs to get generated, so you will only see them at next refresh or next navigation into the relevant page. \n・I will likely remove this test env in a few days, as the cloudflare domain for test is renewed every week or so.\n\nThank you!",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 28800,
+      "promise": "Here the reviewed milestone output following the accepted change request to Catalyst. (change request here: https://github.com/incubiq/ai_identity/blob/main/1100164%20-%20Change%20request.pdf) \n・Open source GitHub repo containing all code to: \n・Attribute an identity to an AI \n・Issue Verified Credentials to the all entities in the eco-system (callers, workers, service providers) at certain key points (at least: when a transaction is executed ; when the entity is created) \n・Deal with monetary transaction between the caller of the service, the AI executing the service, and the service providers. \n・A video showcasing the entire process \n・A full documented example (from end to end)\n・Final close-out report\n・Final closeout video",
+      "criteria": "Here the reviewed milestone acceptance criteria following the accepted change request to Catalyst.\n・An AI can be called and can execute a task it has been programmed to do. The costs associated to the transaction are captured in VCs and are settled at end of each month\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Hello reviewers. This is the final milestone report:\n・A 14min video report here: https://youtu.be/RL9bolGYcEU - Note: I state in the intro that it is the closing report, but it is only the milestone report, not the closing one. \n・A 5min close out video here: https://youtu.be/cdO7TyDPtqg\n・A PDF close out report here: https://github.com/incubiq/ai_identity/blob/main/1100164%20-%20Closing%20report.pdf\n・Up to date GitHub with all source code and install requirements: https://GitHub.com/incubiq/ai_identity\n・Fully documented APIs here : https://incubiq.gitbook.io/opensourceais/identity-agent-lib\n・A prod instance of the Cloud Identity Agent here : https://identity.opensourceais.com (note again, my side is Prod, but Identus is on testnet - still, I am hosting Identus myself on AWS as a pre-prod infra\n\nAll details of criteria, output, evidence etc... are in the video\nFinally, as of right now, I have not switched the prod OpenSourceAIs.com to the Identity Cloud Agent, for the simple reason that all my infra is Prod-ready, but the current Identus infra I am relying on is on Testnet. Since if I plug it, it will generate test DIDs and VCs to all my eco-system (AIs, users, GPU providers...), then I cannot revert back to Prod, unless I wipe out all test env and reset for Prod. I hate to do this as it would not give a professional view of the solution if suddenly I wipe out all creds obtained by all parties in the ecosystem... so I will wait a little more, when Identus can be deployed on Mainnet.\nThank you!",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

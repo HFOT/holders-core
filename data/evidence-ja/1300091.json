@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Elixir アプリケーションで公開されているGithubリポジトリ、アプリケーションを使用してCardanoノードに接続し、Ledger QueriesとDockerfileを発行する方法に関するドキュメント。 Dockerfile は Elixir アプリケーションを実行し、ローカル UNIX ソケットファイルへのパスを引数として完全に同期した Cardano Node として受け入れます。 Elixir アプリケーションは、完全に同期した Cardano ノードへの接続を確立し、Conway の時代にサポートされている次のレジャー状態のクエリを発行できるようにする必要があります。現在の消去、現在のチップの取得、現在のブロックの取得、現在のエポックの取得.",
+      "criteria": "適切な引数で対応する Elixir アプリケーション用の Dockerfile を実行すると、次の結果が得られます。\n・Elixirアプリケーションを成功させる。\n・引数として与えられたUNIXソケットを介してCardanoノードに接続します。\n・次のレジャークエリを実行した結果を表示します。\n・現在のEra(レジャーの現在の時代を表す整数値)を取得する\n・Ledgerの現在のヒント(レジャーによって処理された最後のブロックのスロット番号とヘッダハッシュ)\n・現在のブロック高さの取得(チェーン最高ブロック数)\n・現在のEpoch番号を取得する(",
+      "report": "以下は、マイルストーン1の達成ビデオの証明へのリンクです。 映像は、プロジェクトのドキュメントに応じて、マイルストーンの出力項目のそれぞれを提示し、受諾条件を通り抜けます。\nhttps://www.youtube.com/watch?v=yeL9dd-bdjM&ab channel=WorkWithCardano"
+    },
+    {
+      "no": 2,
+      "promise": "Elixir アプリケーションで github リポジトリ、アプリケーションを使用して、Cardano ノードに接続し、トランザクションと Dockerfile を送信します。 Dockerfile は 2 つの引数を受け入れるべきです: ローカル UNIX ソケットファイルへのパスと、有効な署名された Conway 消去トランザクションの CBOR は、2 つの支払いアドレス間で ADA の特定の量を転送します。 Elixir アプリケーションは、接続された Cardano ノードにトランザクションを送信できるようにサポートします.",
+      "criteria": "適切な引数で Dockerfile を実行すると、Conway 消去トランザクションをブロックチェーンに正常に送信する必要があります。 提出されたトランザクションは、既存のブロックチェーンエクスプローラ(CExplorer、CardanoScanなど)のいずれかで確認するために使用できます。 無効なトランザクションの場合、エラーが表示されます.",
+      "report": "ここでは、達成のビデオの証拠へのリンクです https://www.youtube.com/watch?v=yu LTR4S1ok&ab channel=WorkWithCardano"
+    },
+    {
+      "no": 3,
+      "promise": "Chain Sync mini-protocol のクライアントを実装する Elixir アプリケーションで Github リポジトリ、アプリケーションを使用して Cardano ノードに接続し、Chain Sync mini-protocol 接続と Dockerfile を設定してアプリケーションを実行します。 Dockerfile は、ローカル UNIX ソケットファイルへのパスを引数として受け入れるべきです。 実行すると、Dockerfile プロセスは、Cardano ノードに接続し、Conway の開始と同期して、利用可能なブロックを表示する必要があります.",
+      "criteria": "適切な引数を持つ Dockerfile 経由で Elixir アプリケーションを実行すると、接続された Cardano Node に利用できるため、Conway の初期からブロックを継続的に表示する必要があります.",
+      "report": "以下は、マイルストーン3のための達成のビデオの証明へのリンクです https://www.youtube.com/watch?v=OBpuzygTgHU"
+    },
+    {
+      "no": 4,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "クローズアウトレポートへのリンク: https://docs.google.com/document/d/1oH8LmHf0KQPubdAha4rkJdPRN9lTFqiXdQ0sHw5wn7A/edit?usp=sharing\nクローズアウトビデオへのリンク: https://youtu.be/6OHyHKFSV0s\nGithubリポジトリへのリンク:https://github.com/wowica/xander"
+    }
+  ]
+}

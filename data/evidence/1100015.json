@@ -1,0 +1,58 @@
+{
+  "title": "AdaLink: Affiliate Network for SPO Growth",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 30000,
+      "promise": "1. Conducted studies on the overall platform architecture, i.e., a description of the different parts of the platform and their relations with each other.\n2. Conducted research on trustless operations, with a focus on the use of smart contracts.\n3. Platform wireframe and mockups, related to UX/UI.",
+      "criteria": "A shared PDF documenting the following details:\n1) Finalized Overall Architecture of the Platform:\na. A comprehensive document will be created and publicly shared, detailing the overall architecture of the platform. This will include discussions on protocols, logic flow, and how they integrate to form the platform's foundation.\nb. The database architecture will be established, with detailed descriptions of table designs, relationships, and data storage requirements made available. This ensures efficient data management and retrieval capabilities are transparent.\nc. Research and Documentation o",
+      "report": "1. This is the link to the “Platform Architecture” Document: A PDF document detailing the finalized overall architecture: https://github.com/AdaLink-io/Project-Catalyst-F11-PoA/blob/b0f92b14e0220d66c0cc79a63322f897168afaa8/AdaLink%20Affiliate%20Network%20-%20Platform%20Architecture.pdf\n2. This is the link to the “Wireframes & Mockups” Document: A detailed PDF document including all developed wireframes and mockups: https://github.com/AdaLink-io/Project-Catalyst-F11-PoA/blob/2564c9bf05e808bdccb83844077f75a201d89886/AdaLink%20Affiliate%20Network%20-%20Wireframes%20%26%20Mockups.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 30000,
+      "promise": "・User interface for minimum viable product (MVP) based on wireframes. Wallet, user, and database integration completed with frontend.\n・Complete protocols used in the backend.",
+      "criteria": "1.Completed MVP user interface. This includes:\n・Ability to login with a wallet.\n・Ability to register as a user.\n\n2.Functional backend and successful integration between backend and frontend. This includes:\n・Ability to log back in once registered as a user.\n・Ability for users to edit their profiles.\n・Ability to search for registered SPOs and view their profiles.\n・Ability for an affiliate to offer collaboration with SPOs.",
+      "report": "AdaLink Affiliate Network MVP\n\nURL: ( https://app-preview.adalink.io/ ) \n\nNotes:\n1) Before testing, make sure to set your wallet to the preview testnet.\n2) You can sign up as an SPO or as an Affiliate per wallet. Please use different wallets to test different types of users. To sign up as an SPO, you need a preview testnet pool ticker ID.\n3) SPOs can create campaigns. You must have Test Ada in your Wallet to Create a Campaign.\n4) Affiliates no longer need to send offers. To simplify the process, the dApp will only display the active campaigns available to them in the “Incentive Programs” tab. Affiliates simply need to select the pool and click on “Generate affiliate link” to create the partnership. Once the unique link is created, they can share it with their audience.\n5) When people click on the affiliate links, they are prompted to delegate to the partner's pool.\n\nThank you so much for testing and reviewing!",
+      "kinds": [
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 25000,
+      "promise": "Create a closed testing environment consisting of a group of SPOs and affiliate users and collect feedback to improve the MVP.",
+      "criteria": "A shared PDF documenting the details from the closed Alpha MVP user feedback, including:\n1. Closed Testing Environment Creation: A report on establishing a closed testing environment for the MVP, involving Stake Pool Operators (SPOs) and affiliate users.\n \n2. Feedback Collection and Documentation: A report of the feedback collected from testers on their MVP usage experience. To ensure transparency and effective communication of user feedback, a link to the repository hosting this report will be shared.\n \n3. Feedback Review and Implementation: A report detailing the examination of tester feedba",
+      "report": "Alpha Testing Report Document\n\nLink: https://github.com/AdaLink-io/Project-Catalyst-F11-PoA/blob/568d3160b83c93ba8c0fd12683e7bce95c2e2b94/Alpha%20Testing%20Report%20v2.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 15000,
+      "promise": "Ensure peer-to-peer process to allow for SPOs & counterparties to interact with one another through AdaLink platform.",
+      "criteria": "1) Partnership Formation: Users can form partnerships with ease. Affiliates search for SPOs, send collaboration offers, and request bonus rewards. SPOs review and accept or deny offers.\n\n2) Reward Handling: Rewards are accurately calculated, distributed, and available for withdrawal by each party.\n\n3) Platform Functionality: The platform is fully operational on preproduction testnet, allowing seamless navigation and testing of all features, including search, offer submissions, and reward withdrawals.\n\nBy meeting these criteria, AdaLink ensures smooth interaction between SPOs and affiliates, fa",
+      "report": "1) Launch of AdaLink MVP is live in a closed beta setting\n2) Final close out report \n3) Final close out Video showcasing the platform's features",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 3,
+      "cut": true
+    }
+  ]
+}

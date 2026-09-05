@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・プロジェクト固有の情報をアップロードできるサイト\n・ユーザ認証フロー(Discordログイン等)\n・ファイル管理とインタラクションのユーザーインターフェイス.",
+      "criteria": "・当ホームページは、利用者の登録、ログインをお願いしております。\n・プロジェクト情報をアップロード・管理できます。\n・当ウェブサイトは、主要なブラウザやモバイル対応に対応しております.",
+      "report": "M1リンク:\nhttps://m1.kaaai.io/\n\nウォークスルービデオへのリンク\nhttps://kaaai.nyc3.digitaloceanspace.com/kaaai-m1-walkthrough.mov"
+    },
+    {
+      "no": 2,
+      "promise": "・プロジェクト管理プラットフォームからアップロードされた情報を処理するデータパイプライン。\n・AIモデルによる組み込み(プロジェクト固有のデータ)を格納するためのデータベース設定。\n・Cardanoのオンチェーンデータをクエリできる汎用ワークフロー\n・AIモデルによる検索システムの統合\n・チャットボットに問い合わせる機能を公開するAPIで、認証されたシステムがサービスと連携できるようにします.",
+      "criteria": "データパイプライン:\n1. 世代を埋め込むこと:\n- アップロードされた文書から埋め込む生成の95%以上の成功率\n- 3種類のファイルの種類(DOCX、TXT、PDF)のサポート\n- 最大5MBまでの文書を処理する能力\n\n2. 貯蔵および回収:\n- 埋め込む貯蔵システムのための95%の稼働時間\n- 照会の99%のための1.5秒の下の関連のembeddingsの回復速度\n- 同時リクエストを処理する能力(少なくとも10同時クエリ)\n\n3. 性能のベンチマーク:\n- 文書処理速度:1秒あたりの少なくとも1ページ\n- 繁殖の生成:1分あたり少なくとも50の埋め込み",
+      "report": "データパイプライン:\n1- 埋め込む世代:\n・アップロードされた文書(https://snek-2.gitbook.io/kaa-m2-submission#id-3.4-embedding-Gene-stage)からの埋め込みを生成する際の95%以上の成功率\n・各種ファイル(DOCX、TXT、PDF)対応(https://snek-2.gitbook.io/kaa-m2-submission#id-3.2-document-loading-stage)\n・最大5MBの文書処理能力(https://snek-2.gitbook.io/kaa-m2-submission#id-3.6-performance-scaling)\n\n2-貯蔵およびtrieval:\n・埋め込みストレージシステム(https://snek-2.gitbook.io/kaa-m2-submission#id-3.5-database-operations-stage)の95%アップタイム\n・関連する埋め込み速度は、クエリの99%(https://snek-2.gitbook.io/kaa-m2-submission#id-3.5-database-operations-stage)で1.5秒未満\n・同時リクエスト(10件以上同時問い合わせ)対応(https://snek-2.gitbook.io/kaa-m2-submission#id-3.7-data-pipeline-performance-under-load)\n\n3- 性能のベンチマーク:\n・ドキュメント処理速度:1秒あたり少なくとも1ページ(https://snek-2.gitbook.io/kaa-m2-submission#id-3.2-document-loading-stage)\n・脱退世代:毎分50組以上(https://snek-2.gitbook.io/kaa-m2-submission#id-3.4-embedding-Gene-stage)\n・システムでは、最大500MBのアップロードデータ(https://snek-2.gitbook.io/kaa-m2-submission#id-3.3-semantic-chunking-stage)でパフォーマンスを維持しています。\n\nチャットボット サービス:\n1- API 機能: (https://snek-2.gitbook.io/kaa-m2-submission#id-4.1.-chatbot-service-performance)\n・DiscordボットとのQ&A統合(シミュレートされたDiscordクエリでテスト)\n\n2- 回答品質:(https://snek-2.gitbook.io/kaa-m2-submission#id-4.2-response-quality)\n・応答速度の80%以上は、7/10以上の関連スコアです。\n.・アウトオブスコープのクエリ(プロジェクトコンテキストが見つからない場合は「分かりません」という応答)の処理の調整\n\n3 Cardanoの統合:(https://snek-2.gitbook.io/kaa-m2-submission#id-4.3-cardano-integration)\n・取引履歴の基本的なオンチェーンデータ(例:取引履歴)の成功"
+    }
+  ]
+}

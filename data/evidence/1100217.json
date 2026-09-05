@@ -1,0 +1,71 @@
+{
+  "title": "Open-Source Ledger Nano X Flutter SDK & VESPR Wallet Integration",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40000,
+      "promise": "Research and Analysis:\n・We will undertake a comprehensive analysis of the technical requirements and potential strategies for developing a Flutter SDK that can integrate Ledger Nano X with Cardano wallets and/or dApps\n\nProof of Concept:\n・New flutter project and repository setup\n・Based on one/more of the strategies mentioned in the research and analysis document\n・Successfully detect Ledger Nano X devices via bluetooth on physical phone\n・Successfully connect to Ledger Nano X device\n・Successfully fetch the Cardano receive address of the ledger device",
+      "criteria": "Research and Analysis:\n・Create a report outlining the different technical strategies (and their challenges) for developing a flutter SDK for Ledger Nano X integration\n\nProof of Concept \n・Open-source Github link to new repository for the Cardano Ledger Flutter SDK\n・Use above research when attempting to create the proof of concept\n・Successfully detect and connect to a Ledger Nano X via Flutter on a mobile device\n・Successfully receive the first cardano address of the ledger wallet",
+      "report": "Research and Analysis:\nDocument containing research and analysis outlining multiple potential approaches to developing the ledger flutter SDK for Cardano\n・https://drive.google.com/file/d/1i1WKqd9mQjW_BDgkgAe2PRFMYx-ymdCs/view?usp=drive_link\n\nProof of Concept:\nURLs to open-sourced repositories\n・https://github.com/vespr-wallet/ledger-cardano \n・Flutter SDK for Cardano-specific ledger operations\n・Works as a plugin for ledger-flutter SDK (see below)\n\n・https://github.com/vespr-wallet/ledger-flutter\n・Flutter SDK for general ledger device connectivity\n・Modified fork/copy of https://github.com/RootSoft/ledger-flutter to make some minor bug fixes\n\nPhoto/video evidence showing the mobile device connecting to Ledger and fetching cardano receive address\n・Video showing Ledger Nano X device connecting to mobile device and (1) showing prompt to pair ledger to phone, (2) displaying receive address on ledger, (3) returning from ledger and showing the same receive address on the phone: https://drive.google.com/file/d/1KkTjX6WXnW5jWBUp0OL0M8Wscl5qRkv4/view?usp=drive_link\n・Photo showing clearly the address displayed on ledger and on device https://drive.google.com/file/d/1fb-GVQCvYV540FF8XGoODzPkCR98ho73/view?usp=drive_link",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 12
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 55000,
+      "promise": "Expand on the proof of concept to design and develop a full-fledged prototype Cardano Flutter SDK for Ledger Nano X. The prototype will be able to perform all operations required for dApp/wallet integrations.",
+      "criteria": "SDK can be used to connect to Ledger device and:\n・read the serial number of the ledger device\n・read Ledger's Cardano app version\n・fetch extended public key for the wallet\n・fetch receive/change/staking addresses for the wallet\n・approve/sign transactions (and returns witnesses)",
+      "report": "Video evidence (for all below points):\n・ https://drive.google.com/file/d/16AIm-U8Thq79h3Y0cdpl4doh4XbjJBTw/view?usp=drive_link\n\nRead the serial number of the ledger device:\n・URL to instruction code: https://github.com/vespr-wallet/ledger-cardano/blob/master/lib/src/operations/cardano_get_serial_operation.dart \n・Video timestamp: 00:09 -> 00:11\n\nRead Ledger's Cardano app version:\n・URL to instruction code: https://github.com/vespr-wallet/ledger-cardano/blob/master/lib/src/operations/cardano_version_operation.dart\n・Video timestamp: 00:12 -> 00:15\n\nFetch extended public key for the wallet:\n・URL to instruction code: https://github.com/vespr-wallet/ledger-cardano/blob/master/lib/src/operations/cardano_public_key_operation.dart\n・Video timestamp: 00:17 -> 00:25\n\nFetch staking/receive/change addresses for the wallet:\n・URL to instruction code: https://github.com/vespr-wallet/ledger-cardano/blob/master/lib/src/operations/cardano_derive_address_operation.dart\n・Video timestamp (receive addresses): 00:29 -> 00:52\n・Video timestamp (change addresses): 00:54 -> 01:17\n・Video timestamp (stake address): 01:20 -> 01:28 \n\nApprove/Sign transactions (and returns witnesses):\n・URL to instruction code: https://github.com/vespr-wallet/ledger-cardano/blob/master/lib/src/operations/cardano_sign_transaction_operation.dart\n・Video timestamp: 01:35 -> 02:00",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 12
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "We will \n・Add integration tests to ensure the SDK is free of bugs\n・Fix any SDK issues found while writing the integration tests\n・Add instructions on how to run the integration tests",
+      "criteria": "・Integration tests are written and open-sourced\n・Integration tests can be ran against a ledger nano x device\n・All integration tests pass",
+      "report": "1) Github link to instructions on how to run the integration tests\n・https://github.com/vespr-wallet/ledger-cardano/tree/master?tab=readme-ov-file#running-integration-tests\n\n2) Source code for tests and logs of them passing\n2.a) Address Derivation:\n・Tests GitHub Link: https://github.com/vespr-wallet/ledger-cardano/blob/master/example/integration_test/cardano_ledger_address_derivation_tests.dart\n・Logs (Screenshots and TXT file): https://drive.google.com/drive/folders/1x9HjlalNVBIxlQghS6tFIchPI8rHkiVC?usp=drive_link\n\n2.b) Serial Version:\n・Tests GitHub Link: https://github.com/vespr-wallet/ledger-cardano/blob/master/example/integration_test/cardano_ledger_serial_version_tests.dart\n・Logs (Screenshots and TXT file): https://drive.google.com/drive/folders/1Bkh3l3pEHI12zlozgL04wxTEaKo-HSye?usp=drive_link\n\n2.c) Sign Operation Certificate:\n・Tests GitHub Link: https://github.com/vespr-wallet/ledger-cardano/blob/master/example/integration_test/cardano_ledger_sign_operational_certificate_tests.dart\n・Logs (Screenshots and TXT file): https://drive.google.com/drive/folders/1rhvjc64m-hmgZdnGazbXpl7Af-K-R581?usp=drive_link\n\n2.d) Derive Native Script Hash:\n・Tests GitHub Link: https://github.com/vespr-wallet/ledger-cardano/blob/master/example/integration_test/derive_native_script_hash_tests.dart\n・Logs (Screenshots and TXT file): https://drive.google.com/drive/folders/1Z4_121o5oXQ_XWYj6k56DLGZ32x62syl?usp=drive_link\n\n2.e) Get Extended Public Key:\n・Tests GitHub Link: https://github.com/vespr-wallet/ledger-cardano/blob/master/example/integration_test/get_extended_public_key_tests.dart\n・Logs (Screenshots and TXT file): https://drive.google.com/drive/folders/1a6_67YdxicmMLuMd3WyGKTfiQ6LACeEG?usp=drive_link\n\n2.f) Sign Transcation:\n・Tests GitHub Link: https://github.com/vespr-wallet/ledger-cardano/blob/master/example/integration_test/sign_tx_tests.dart\n・Logs (Screenshots and TXT file): https://drive.google.com/drive/folders/1E__tYiEzOgTU7eKi7-oe40WCuvkAcoeE?usp=drive_link",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 26
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 20000,
+      "promise": "・Write documentation on how to use the SDK\n・Publicly release the SDK in a way that's easy to add to any flutter project\n・Write a (basic) open-sourced sample app in GitHub repository showcasing the SDK. The goal of this app is to:\n・Correctly establish connection to ledger device and perform basic operations via the SDK\n・Provide guidance (by checking the code) for projects trying to integrate the SDK into their wallet/dApp",
+      "criteria": "・The SDK contains documentation on how to install and use\n・The SDK is publicly available to be added as a dependency for flutter projects\n・The SDK Github repository :\n・Contains a functioning sample app showcasing the SDK\n・Contains all relevant code for other developers be able to build and run the sample app",
+      "report": "Simple instructions on how to add the SDK to any flutter project will be given as evidence\n・Package has been published to pub.dev (industry standard) for easy access\n・Link to package release https://pub.dev/packages/ledger_cardano_plus\n・Setup can be seen in the link above, under the Getting Started section\n\nGithub link to the SDK documentation will be provided (will be in the README.md file, as per industry standard)\n・Link to README.md file for documentation https://github.com/vespr-wallet/ledger-cardano-plus/blob/master/README.md\n\nGithub link to source code of the sample app will be given\n・Full source code for the sample app is here: https://github.com/vespr-wallet/ledger-cardano-plus/tree/master/example\n\nVideo of the sample app working will be given\n・Sample app demo: https://drive.google.com/drive/u/0/folders/1u5UWnvrhFmZV7zzs_h4sbEIlH-DIKGH6",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 60000,
+      "promise": "・Integrate the Ledger Nano X Flutter SDK into VESPR wallet\n・Produce Catalyst Final Report and Closeout Video",
+      "criteria": "・Ledger Nano X can be used to add a wallet in VESPR\n・Ledger Nano X can be used to approve transactions in VESPR\n・Catalyst Final Report is written\n・Closeout Video is made",
+      "report": "Video Connecting Ledger Nano X to VESPR Wallet and approving + submitting transaction\n・Demo video: https://www.youtube.com/watch?v=g7nDfxxGj4E \n・Ledger connection timestamp: 00:00 -> 00:38\n・Transaction submission timestamp: 00:40 -> 01:24\n\nPublish Catalyst Final Report\n・https://docs.google.com/document/d/1pIMn_a0q_AxROXLdEvMp66stJyeYmFkZ38YKC9GC14Q\n\nPublish Catalyst Closeout Video\n・https://www.youtube.com/watch?v=Cf-zXJO8lxA",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}
