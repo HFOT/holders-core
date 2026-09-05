@@ -397,7 +397,8 @@ function renderPlist() {
     $("plist").innerHTML = groups
       .slice(0, state.shown)
       .map(
-        (g) => `<li class="rg-person" data-person="${esc(g.name)}" tabindex="0" role="button">
+        (g, rank) => `<li class="rg-person" data-person="${esc(g.name)}" tabindex="0" role="button">
+          <span class="rg-rank">#${num(rank + 1)}</span>
           <span class="rg-person-n">${esc(g.name)}</span>
           <span class="rg-pi-a">${esc(personAmount(g))}</span>
           <span class="rg-pi-s">採択 ${num(g.funded)}・完了 ${num(g.completed)}・中止 ${num(g.cancelled)}</span>
@@ -415,9 +416,10 @@ function renderPlist() {
     $("plist").innerHTML = groups
       .slice(0, state.shown)
       .map(
-        (g) => `<li class="rg-ci" data-shape="${esc(g.shape || "")}" data-country="${esc(
+        (g, rank) => `<li class="rg-ci" data-shape="${esc(g.shape || "")}" data-country="${esc(
           g.country
         )}" tabindex="0" role="button">
+          <span class="rg-rank">#${num(rank + 1)}</span>
           <span class="rg-ci-n">${esc(groupLabel(g))}</span>
           <span class="rg-pi-a">${esc(groupAmount(g))}</span>
           <span class="rg-pi-s">採択 ${num(g.funded)}・完了 ${num(g.completed)}・中止 ${num(
