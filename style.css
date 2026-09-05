@@ -451,8 +451,8 @@ footer p {
 
 .layer-jp { font-size: 13px; color: var(--fg-2); }
 
-/* ---------- 入口（三つの扉） ---------- */
-/* 三つは同格。大きさ・枠・並び順で優劣を作らない。 */
+/* ---------- 入口（四つの扉） ---------- */
+/* 扉は同格。大きさ・枠・並び順で優劣を作らない。 */
 
 .home-main { padding-top: 8px; padding-bottom: 8px; }
 
@@ -461,7 +461,7 @@ footer p {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 16px;
 }
 
@@ -975,3 +975,654 @@ table.matrix.wrapcells td:last-child { min-width: 16em; }
 
 /* 固定ヘッダ（48px）の下にアンカー先が隠れないようにする。 */
 #tide, #fuel { scroll-margin-top: 64px; }
+
+/* ==========================================================================
+   地域（region.html）— 地域の層。
+   このページだけ、地図の塗りに青の色階を使う（量の表現であり、優劣ではない）。
+   国を押すと左の一覧が絞り込まれる。基本は縮小埋め込み、全画面に切り替えられる。
+   ========================================================================== */
+
+/* 地図パネルはテーマに追従させない。海と大地はこの一枚の絵として固定する。
+   量は土地の色で表す。公式マップは土地が無地でピンだけが数字を持つが、
+   ここでは土地そのものが記録の量で発光する。 */
+/* 紙のアトラス。公式マップの青×ピンクから離れる。
+   海は温かい紙色、大地は白、記録はティールで深まり、アクセントはコーラル一色。 */
+:root {
+  --land:     #ffffff;
+  --land-ln:  rgba(80, 70, 50, .22);
+  --m1: #cde9e2;
+  --m2: #97d2c5;
+  --m3: #58b09e;
+  --m4: #2a8371;
+  --m5: #0e594c;
+  --pick:     #ff6b4a;
+  --pin:      #ff6b4a;
+  --st-done:  #1a9e56;
+  --st-act:   #2f6bd0;
+  --st-cancel:#d64545;
+  --st-etc:   #8a8a93;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --st-done:  #3ecf79;
+    --st-act:   #5b9cf2;
+    --st-cancel:#ff7a7a;
+  }
+}
+
+/* 計器の切り替え。地図の左上に浮かべる。全画面でも押せる。 */
+.rg-metric {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 2;
+}
+.rg-metric .seg {
+  box-shadow: 0 1px 3px rgba(70, 55, 20, .22), 0 4px 12px rgba(70, 55, 20, .16);
+}
+.seg-metric { width: 300px; }
+.seg-metric .seg-btn { height: 36px; font-size: 12px; }
+
+/* ---------- 枠（左バー + 地図） ---------- */
+
+.rg-frame {
+  display: grid;
+  grid-template-columns: 360px minmax(0, 1fr);
+  height: min(72vh, 720px);
+  border: 1px solid var(--hairline);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+/* 全画面。基本は縮小埋め込みで、押したときだけ画面いっぱいに切り替える。 */
+.rg-frame.rg-full {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  height: 100dvh;
+  border-radius: 0;
+  border: 0;
+}
+body.rg-noscroll { overflow: hidden; }
+
+/* ---------- 左バー ---------- */
+
+.rg-side {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  border-right: 1px solid var(--hairline);
+  background: var(--bg);
+}
+
+.rg-shead {
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid var(--hairline);
+  display: grid;
+  gap: 10px;
+}
+
+.rg-place {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.rg-place-n { font-size: 18px; font-weight: 600; letter-spacing: -.01em; overflow-wrap: anywhere; }
+.rg-place-c { font-size: 12px; color: var(--fg-3); font-variant-numeric: tabular-nums; }
+
+.rg-mode { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 3px; border-radius: 10px; background: var(--bg-sub); }
+.rg-modeb { height: 30px; border: 0; border-radius: 8px; background: transparent; color: var(--fg-2); font: 12px inherit; cursor: pointer; }
+.rg-modeb.on { background: var(--bg); color: var(--fg); box-shadow: 0 1px 4px rgba(0,0,0,.12); font-weight: 600; }
+
+.rg-back {
+  height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--hairline);
+  border-radius: 14px;
+  background: transparent;
+  color: var(--accent);
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.rg-back:hover { background: var(--chip); }
+
+.rg-shead input[type=search] {
+  width: 100%;
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  background: var(--bg-sub);
+  color: var(--fg);
+  font-size: 13px;
+  font-family: inherit;
+}
+.rg-shead input[type=search]:focus { outline: 2px solid var(--focus); }
+
+.rg-controls { display: flex; gap: 8px; }
+.rg-controls select {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 34px;
+  padding: 0 8px;
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  background: var(--bg-sub);
+  color: var(--fg);
+  font-size: 12px;
+  font-family: inherit;
+}
+
+.rg-cur { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.rg-curb {
+  height: 26px;
+  padding: 0 12px;
+  border: 1px solid var(--hairline);
+  border-radius: 13px;
+  background: transparent;
+  color: var(--fg-2);
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.rg-curb.on { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.rg-cur-note { flex-basis: 100%; font-size: 11px; color: var(--fg-3); }
+
+.rg-summary { display: grid; gap: 2px; font-size: 12px; color: var(--fg-2); }
+
+/* 一覧 */
+.rg-plist {
+  list-style: none;
+  margin: 0;
+  padding: 6px 8px;
+  overflow-y: auto;
+  flex: 1 1 0;
+  min-height: 0;
+  overscroll-behavior: contain;
+}
+.rg-pi {
+  display: grid;
+  grid-template-columns: 10px minmax(0, 1fr) max-content;
+  gap: 2px 8px;
+  align-items: baseline;
+  padding: 9px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.rg-pi:hover, .rg-pi:focus-visible { background: var(--bg-sub); outline: none; }
+.rg-pi.on { background: var(--chip); }
+.rg-pi-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--st-etc);
+  align-self: center;
+}
+.rg-pi-dot.st-Completed { background: var(--st-done); }
+.rg-pi-dot.st-Active { background: var(--st-act); }
+.rg-pi-dot.st-Cancelled { background: var(--st-cancel); }
+.rg-pi-n { font-size: 13px; line-height: 1.45; overflow-wrap: anywhere; }
+.rg-pi-a {
+  font-size: 12px;
+  color: var(--fg-2);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.rg-pi-s {
+  grid-column: 2 / -1;
+  font-size: 11px;
+  color: var(--fg-3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.rg-person { display: grid; grid-template-columns: minmax(0, 1fr) max-content; gap: 2px 8px; align-items: baseline; padding: 9px 10px; border-radius: 10px; cursor: pointer; }
+.rg-person:hover, .rg-person:focus-visible { background: var(--bg-sub); outline: none; }
+.rg-person-n { font-size: 13px; line-height: 1.45; font-weight: 600; overflow-wrap: anywhere; }
+.rg-person .rg-pi-s { grid-column: 1 / -1; }
+.rg-person-note { margin-top: 3px; color: var(--fg-3); }
+
+.rg-pempty { margin: 16px; font-size: 13px; color: var(--fg-3); }
+.rg-pmore {
+  margin: 6px 14px 14px;
+  height: 36px;
+  border: 1px solid var(--hairline);
+  border-radius: 10px;
+  background: transparent;
+  color: var(--accent);
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.rg-pmore:hover { background: var(--chip); }
+
+/* プロジェクト詳細 — 一覧を消さず、左バーの右に二枚目のパネルとして出す。
+   地図はその右で生きたまま。Google マップの詳細カードと同じ文法。 */
+.rg-pview {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  bottom: 0;
+  width: min(400px, 60vw);
+  z-index: 5;
+  background: var(--bg);
+  border-right: 1px solid var(--hairline);
+  box-shadow: 12px 0 32px rgba(0, 10, 60, .18);
+  padding: 14px 18px 20px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  animation: rg-slidein 240ms cubic-bezier(.2,.7,.3,1);
+}
+@keyframes rg-slidein {
+  from { transform: translateX(-14px); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rg-pview { animation: none; }
+}
+.rg-pv-n { margin: 12px 0 4px; font-size: 17px; font-weight: 600; line-height: 1.4; overflow-wrap: anywhere; }
+.rg-pv-sub { margin: 0 0 14px; font-size: 12px; color: var(--fg-3); }
+.rg-pv-grid { display: grid; gap: 8px; }
+.rg-pv-row {
+  display: grid;
+  grid-template-columns: 6em minmax(0, 1fr);
+  gap: 12px;
+  align-items: baseline;
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 8px;
+}
+.rg-pv-k { font-size: 12px; color: var(--fg-2); }
+.rg-pv-v { font-size: 14px; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.rg-pview > .rg-pv-k { margin: 16px 0 6px; display: block; }
+.rg-pv-whos { display: flex; flex-wrap: wrap; gap: 6px; }
+.rg-pv-who {
+  padding: 4px 10px;
+  border: 1px solid var(--hairline);
+  border-radius: 12px;
+  font-size: 12px;
+  background: var(--bg-sub);
+}
+.rg-pv-miss { margin: 16px 0 0; font-size: 12px; color: var(--fg-3); }
+.rg-pv-tags { margin: 12px 0 0; }
+.rg-pv-links { margin: 16px 0 0; display: grid; gap: 6px; font-size: 13px; }
+
+/* ---------- 地図側 ---------- */
+
+.rg-mappane {
+  position: relative;
+  min-width: 0;
+  background:
+    radial-gradient(120% 150% at 30% 12%, #f8f5ee 0%, #f1ecdf 55%, #e9e2d0 100%);
+  touch-action: none;
+}
+.rg-mappane svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+}
+.rg-mappane svg:active { cursor: grabbing; }
+
+#map { --k: 1; }
+
+.rg-sh {
+  fill: var(--land);
+  stroke: var(--land-ln);
+  stroke-width: calc(0.6px * var(--k));
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+  transition: fill 140ms linear;
+}
+.rg-sh[data-bin="1"] { fill: var(--m1); }
+.rg-sh[data-bin="2"] { fill: var(--m2); }
+.rg-sh[data-bin="3"] { fill: var(--m3); }
+.rg-sh[data-bin="4"] { fill: var(--m4); }
+.rg-sh[data-bin="5"] { fill: var(--m5); }
+
+.rg-nodata { fill: var(--land); }
+
+.rg-sh:not(.rg-nodata) { cursor: pointer; }
+.rg-sh:not(.rg-nodata):hover {
+  stroke: var(--pick);
+  stroke-width: 1.8px;
+  filter: drop-shadow(0 0 5px rgba(255, 107, 74, .5));
+}
+.rg-sh.on {
+  stroke: var(--pick);
+  stroke-width: 2.4px;
+  filter: drop-shadow(0 0 7px rgba(255, 107, 74, .6));
+}
+/* クリックで乗るフォーカスの四角い枠は消す。キーボード操作のときだけ白ふちで示す。 */
+.rg-sh:focus { outline: none; }
+.rg-mappane svg:focus { outline: none; }
+.rg-sh:focus-visible { outline: none; stroke: var(--pick); stroke-width: 2.4px; }
+
+.rg-dot {
+  r: calc(3px * var(--k));
+  fill: none;
+  stroke: var(--pin);
+  stroke-width: calc(1.2px * var(--k));
+  pointer-events: none;
+}
+
+.rg-zoom {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 6px;
+}
+.rg-zoom button {
+  min-width: 34px;
+  height: 34px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #1d1d1f;
+  font-size: 13px;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(70, 55, 20, .22), 0 4px 12px rgba(70, 55, 20, .16);
+}
+.rg-zoom button:hover { background: #f6f2e9; }
+
+.rg-jump {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: calc(100% - 20px);
+}
+.rg-jb {
+  height: 30px;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 15px;
+  background: rgba(255,255,255,.92);
+  color: #1d1d1f;
+  font-size: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(70, 55, 20, .22);
+}
+.rg-jb:hover { background: #ffffff; }
+
+.rg-tip {
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  gap: 2px 14px;
+  max-width: 22em;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1d1d1f;
+  box-shadow: 0 2px 6px rgba(70, 55, 20, .22), 0 8px 24px rgba(70, 55, 20, .18);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.rg-tip .rg-tk { color: #6e6e73; }
+.rg-tn2 { grid-column: 1 / -1; font-size: 13px; font-weight: 600; overflow-wrap: anywhere; }
+.rg-tk { color: var(--fg-2); }
+.rg-tv2 { text-align: right; font-variant-numeric: tabular-nums; }
+.rg-tf { grid-column: 1 / -1; margin-top: 4px; color: var(--fg-3); overflow-wrap: anywhere; }
+
+/* 配分額の円グラフ。円の面積＝申請額、色の付いた扇＝そのうち配分済みの割合。
+   操作は下の国に通す。 */
+.rg-bub-base {
+  fill: rgba(120, 108, 88, .18);
+  stroke: rgba(255, 255, 255, .85);
+  stroke-width: 1;
+  pointer-events: none;
+}
+.rg-bub-fill {
+  fill: rgba(255, 107, 74, .60);
+  stroke: rgba(255, 255, 255, .85);
+  stroke-width: .6;
+  pointer-events: none;
+}
+
+.rg-swc {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 10px;
+  vertical-align: -2px;
+  border-radius: 50%;
+  background: rgba(255, 107, 74, .60);
+  border: 1px solid rgba(255, 107, 74, .9);
+}
+.rg-swc-base {
+  background: rgba(120, 108, 88, .18);
+  border-color: rgba(120, 108, 88, .55);
+}
+
+/* 国ごとの数字ピン。寄ったときだけ出る。押すとその国を選ぶ。 */
+.rg-kb { cursor: pointer; }
+.rg-kb circle {
+  fill: rgba(255, 255, 255, .95);
+  stroke: var(--pin);
+  stroke-width: 1.5;
+  filter: drop-shadow(0 2px 5px rgba(90, 60, 30, .35));
+}
+.rg-kb:hover circle { fill: #fff3ef; }
+.rg-kb .rg-kb-count {
+  fill: #b03516;
+  font-size: 10px;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: central;
+  font-family: inherit;
+  pointer-events: none;
+}
+
+/* 大陸のカウントピン。世界表示のときだけ出す。押すとその大陸へ寄る。 */
+.rg-cb { cursor: pointer; }
+.rg-cb circle {
+  fill: var(--pin);
+  stroke: #ffffff;
+  stroke-width: 1.5;
+  filter: drop-shadow(0 3px 8px rgba(90, 60, 30, .4));
+}
+.rg-cb:hover circle { fill: #ff8264; }
+.rg-cb .rg-cb-count {
+  fill: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-anchor: middle;
+  dominant-baseline: central;
+  font-family: inherit;
+  pointer-events: none;
+}
+.rg-cb .rg-cb-namebg { fill: rgba(52, 45, 34, .88); }
+.rg-cb .rg-cb-name {
+  fill: #ffffff;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-anchor: middle;
+  dominant-baseline: central;
+  font-family: inherit;
+  pointer-events: none;
+}
+
+/* ---------- 左バーの配色 ----------
+   枠の中はテーマに追従させず、海と同じ紺の世界で統一する。
+   明るいページに埋まっていても、ここだけ一枚の道具として完結させる。 */
+
+.rg-frame {
+  --sd-fg:   #262523;
+  --sd-fg2:  #6b675e;
+  --sd-fg3:  #99948a;
+  --sd-line: rgba(80, 70, 50, .16);
+  --sd-card: rgba(80, 70, 50, .05);
+  --sd-card2:rgba(80, 70, 50, .11);
+  --sd-link: #0c6e5f;
+  border-color: rgba(120, 105, 75, .35);
+  box-shadow: 0 2px 8px rgba(90, 70, 30, .12), 0 16px 48px rgba(90, 70, 30, .16);
+}
+
+.rg-side {
+  background: linear-gradient(180deg, #ffffff 0%, #fbf8f2 60%, #f7f3ea 100%);
+  border-right: 1px solid var(--sd-line);
+  color: var(--sd-fg);
+}
+.rg-shead { border-bottom: 1px solid var(--sd-line); }
+.rg-place-n { color: var(--sd-fg); }
+.rg-place-c { color: var(--sd-fg3); }
+
+.rg-back {
+  border-color: var(--sd-line);
+  color: var(--sd-link);
+  background: transparent;
+}
+.rg-back:hover { background: var(--sd-card); }
+
+.rg-shead input[type=search] {
+  border: 1px solid var(--sd-line);
+  background: var(--sd-card);
+  color: var(--sd-fg);
+}
+.rg-shead input[type=search]::placeholder { color: var(--sd-fg3); }
+.rg-controls select {
+  border: 1px solid var(--sd-line);
+  background: var(--sd-card);
+  color: var(--sd-fg);
+}
+.rg-controls select option { background: #ffffff; color: var(--sd-fg); }
+
+.rg-curb { border-color: var(--sd-line); color: var(--sd-fg2); }
+.rg-curb.on { background: #0e594c; color: #ffffff; border-color: #0e594c; }
+.rg-cur-note { color: var(--sd-fg3); }
+.rg-summary { color: var(--sd-fg2); }
+
+.rg-pi:hover, .rg-pi:focus-visible { background: var(--sd-card); }
+.rg-pi.on { background: var(--sd-card2); }
+.rg-pi-n { color: var(--sd-fg); }
+.rg-pi-a { color: var(--sd-fg2); }
+.rg-pi-s { color: var(--sd-fg3); }
+.rg-person:hover, .rg-person:focus-visible { background: var(--sd-card); }
+.rg-person-n { color: var(--sd-fg); }
+.rg-person-note { color: var(--sd-fg3); }
+.rg-pempty { color: var(--sd-fg3); }
+
+/* 世界ビューの国の行 */
+.rg-ci {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  gap: 2px 8px;
+  align-items: baseline;
+  padding: 10px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.rg-ci:hover, .rg-ci:focus-visible { background: var(--sd-card); outline: none; }
+.rg-ci-n { font-size: 14px; font-weight: 600; color: var(--sd-fg); overflow-wrap: anywhere; }
+.rg-ci .rg-pi-s { grid-column: 1 / -1; }
+
+/* 国名の表示切り替え */
+.rg-lang { margin-left: auto; display: inline-flex; gap: 4px; }
+.rg-langb {
+  height: 24px;
+  padding: 0 10px;
+  border: 1px solid var(--sd-line);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--sd-fg2);
+  font-size: 11px;
+  font-family: inherit;
+  cursor: pointer;
+}
+.rg-langb.on { background: var(--sd-fg); color: #ffffff; border-color: var(--sd-fg); }
+.rg-pmore { border-color: var(--sd-line); color: var(--sd-link); }
+.rg-pmore:hover { background: var(--sd-card); }
+
+.rg-pview {
+  background: linear-gradient(180deg, #ffffff 0%, #fbf8f2 70%, #f7f3ea 100%);
+  border-right: 1px solid var(--sd-line);
+  color: var(--sd-fg);
+}
+.rg-pview a { color: var(--sd-link); }
+.rg-pv-sub, .rg-pv-k { color: var(--sd-fg2); }
+.rg-pv-row { border-bottom-color: var(--sd-line); }
+.rg-pv-miss, .rg-pview .tag { color: var(--sd-fg3); }
+.rg-pv-who { border-color: var(--sd-line); background: var(--sd-card); color: var(--sd-fg); }
+
+/* ---------- 凡例・注記 ---------- */
+
+.rg-sw {
+  display: inline-block;
+  width: 22px;
+  height: 12px;
+  margin-right: 10px;
+  vertical-align: -1px;
+  border: 1px solid rgba(80, 70, 50, .25);
+  border-radius: 3px;
+  background: var(--m1);
+}
+.rg-sw[data-bin="2"] { background: var(--m2); }
+.rg-sw[data-bin="3"] { background: var(--m3); }
+.rg-sw[data-bin="4"] { background: var(--m4); }
+.rg-sw[data-bin="5"] { background: var(--m5); }
+.rg-sw-none { background: var(--land); }
+
+.rg-offmap {
+  margin: 16px 0 0;
+  max-width: 60em;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--fg-2);
+  overflow-wrap: anywhere;
+}
+
+/* ---------- 数が合わない ---------- */
+
+td.rg-big {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--fg);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* 4行しかない表で見出しを固定すると、先頭行が隠れる。ここでは固定しない。 */
+#gap th { position: static; }
+
+.rg-defects { list-style: none; margin: 0; padding: 0; }
+.rg-defect {
+  display: grid;
+  gap: 4px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.rg-dh { font-size: 14px; font-weight: 600; }
+.rg-dd { font-size: 13px; line-height: 1.7; color: var(--fg-2); overflow-wrap: anywhere; }
+
+td.rg-marks { white-space: normal; min-width: 12em; }
+td.rg-marks .badge { margin: 2px 6px 2px 0; }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 900px) {
+  /* 狭い画面では二枚目のパネルを出す場所が無いので、一覧の上に重ねる。 */
+  .rg-pview { left: 0; width: auto; right: 0; border-right: 0; box-shadow: none; animation: none; }
+
+  .rg-frame {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 46% minmax(0, 1fr);
+    height: 82vh;
+  }
+  .rg-mappane { order: -1; border-bottom: 1px solid var(--hairline); }
+  .rg-side { border-right: 0; }
+  .rg-jump { display: none; }
+}
