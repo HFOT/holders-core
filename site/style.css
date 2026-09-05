@@ -1028,7 +1028,7 @@ table.matrix.wrapcells td:last-child { min-width: 16em; }
 
 .rg-frame {
   display: grid;
-  grid-template-columns: 360px minmax(0, 1fr);
+  grid-template-columns: 440px minmax(0, 1fr);
   height: min(72vh, 720px);
   border: 1px solid var(--hairline);
   border-radius: 16px;
@@ -1185,6 +1185,26 @@ body.rg-noscroll { overflow: hidden; }
 .rg-person-n { font-size: 13px; line-height: 1.45; font-weight: 600; overflow-wrap: anywhere; }
 .rg-person .rg-pi-s { grid-column: 2 / -1; }
 .rg-rank { color: var(--fg-3); font-size: 11px; font-variant-numeric: tabular-nums; text-align: right; }
+.rg-ci-actions {
+  grid-column: 2 / -1;
+  display: flex;
+  gap: 6px;
+  margin-top: 5px;
+}
+.rg-ci-action {
+  min-height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--sd-line, var(--hairline));
+  border-radius: 8px;
+  background: transparent;
+  color: var(--sd-link, var(--accent));
+  font: 11px inherit;
+  cursor: pointer;
+}
+.rg-ci-action:hover, .rg-ci-action:focus-visible {
+  background: var(--sd-card, var(--chip));
+  outline: none;
+}
 .rg-person-note { margin-top: 3px; color: var(--fg-3); }
 
 .rg-pempty { margin: 16px; font-size: 13px; color: var(--fg-3); }
