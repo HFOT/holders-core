@@ -1180,10 +1180,11 @@ body.rg-noscroll { overflow: hidden; }
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.rg-person { display: grid; grid-template-columns: minmax(0, 1fr) max-content; gap: 2px 8px; align-items: baseline; padding: 9px 10px; border-radius: 10px; cursor: pointer; }
+.rg-person { display: grid; grid-template-columns: 30px minmax(0, 1fr) max-content; gap: 2px 8px; align-items: baseline; padding: 9px 10px; border-radius: 10px; cursor: pointer; }
 .rg-person:hover, .rg-person:focus-visible { background: var(--bg-sub); outline: none; }
 .rg-person-n { font-size: 13px; line-height: 1.45; font-weight: 600; overflow-wrap: anywhere; }
-.rg-person .rg-pi-s { grid-column: 1 / -1; }
+.rg-person .rg-pi-s { grid-column: 2 / -1; }
+.rg-rank { color: var(--fg-3); font-size: 11px; font-variant-numeric: tabular-nums; text-align: right; }
 .rg-person-note { margin-top: 3px; color: var(--fg-3); }
 
 .rg-pempty { margin: 16px; font-size: 13px; color: var(--fg-3); }
@@ -1519,7 +1520,7 @@ body.rg-noscroll { overflow: hidden; }
 /* 世界ビューの国の行 */
 .rg-ci {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) max-content;
+  grid-template-columns: 30px minmax(0, 1fr) max-content;
   gap: 2px 8px;
   align-items: baseline;
   padding: 10px 10px;
@@ -1528,7 +1529,7 @@ body.rg-noscroll { overflow: hidden; }
 }
 .rg-ci:hover, .rg-ci:focus-visible { background: var(--sd-card); outline: none; }
 .rg-ci-n { font-size: 14px; font-weight: 600; color: var(--sd-fg); overflow-wrap: anywhere; }
-.rg-ci .rg-pi-s { grid-column: 1 / -1; }
+.rg-ci .rg-pi-s { grid-column: 2 / -1; }
 
 /* 国名の表示切り替え */
 .rg-lang { margin-left: auto; display: inline-flex; gap: 4px; }
