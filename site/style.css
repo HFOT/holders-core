@@ -431,6 +431,13 @@ footer p {
 .backlink { margin: 0 0 20px; font-size: 13px; }
 
 .home-hero { padding: 96px 0 64px; }
+.home-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 390px);
+  gap: 64px;
+  align-items: stretch;
+}
+.home-hero-copy { min-width: 0; }
 
 /* 主役は文である。数字はその下に等しく three 並ぶ。 */
 .statement {
@@ -448,6 +455,75 @@ footer p {
 }
 .home-hero .fig-n { color: var(--fg); font-size: 34px; }
 .home-hero .fig-l { color: var(--fg-2); }
+
+.map-neo {
+  position: relative;
+  display: flex;
+  min-height: 330px;
+  padding: 28px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid rgba(91, 255, 208, .42);
+  border-radius: 18px;
+  background:
+    linear-gradient(145deg, rgba(76, 255, 202, .12), transparent 42%),
+    radial-gradient(circle at 82% 22%, rgba(78, 158, 255, .28), transparent 30%),
+    #0c1515;
+  box-shadow: 0 0 0 1px rgba(91, 255, 208, .08), 0 0 28px rgba(52, 255, 193, .17), inset 0 0 52px rgba(39, 214, 166, .07);
+  color: #effff9;
+  text-decoration: none;
+  isolation: isolate;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+.map-neo::before,
+.map-neo::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  pointer-events: none;
+}
+.map-neo::before {
+  inset: 18px;
+  border: 1px solid rgba(168, 255, 231, .12);
+  border-radius: 12px;
+  background-image: linear-gradient(rgba(150, 255, 226, .08) 1px, transparent 1px), linear-gradient(90deg, rgba(150, 255, 226, .08) 1px, transparent 1px);
+  background-size: 30px 30px;
+  mask-image: linear-gradient(135deg, #000 0%, transparent 72%);
+}
+.map-neo::after {
+  width: 230px;
+  height: 230px;
+  top: -88px;
+  right: -52px;
+  border: 1px solid rgba(150, 255, 226, .42);
+  border-radius: 50%;
+  box-shadow: 0 0 0 26px rgba(126, 255, 215, .05), 0 0 0 52px rgba(126, 255, 215, .025);
+}
+.map-neo:hover, .map-neo:focus-visible {
+  border-color: rgba(136, 255, 220, .85);
+  box-shadow: 0 0 0 1px rgba(152, 255, 225, .3), 0 0 46px rgba(52, 255, 193, .36), inset 0 0 72px rgba(39, 214, 166, .13);
+  outline: none;
+  transform: translateY(-3px);
+}
+.map-neo-glow {
+  position: absolute;
+  top: 40px;
+  right: 58px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #a6ffe4;
+  box-shadow: 0 0 12px 5px rgba(112, 255, 207, .8), 0 0 42px 12px rgba(43, 193, 255, .35);
+  animation: neo-pulse 2.8s ease-in-out infinite;
+}
+.map-neo-kicker { margin-bottom: auto; color: #aaffdf; font-size: 10px; font-weight: 700; letter-spacing: .16em; }
+.map-neo-title { font-size: clamp(34px, 4vw, 48px); font-weight: 650; letter-spacing: -.05em; line-height: .9; }
+.map-neo-copy { margin-top: 16px; color: rgba(239, 255, 249, .76); font-size: 14px; line-height: 1.6; }
+.map-neo-copy strong { color: #c4ffe9; font-weight: 700; }
+.map-neo-detail { margin-top: 8px; color: rgba(239, 255, 249, .48); font-size: 11px; }
+.map-neo-go { display: flex; justify-content: space-between; margin-top: 20px; padding-top: 12px; border-top: 1px solid rgba(173, 255, 233, .25); color: #b7ffe7; font-size: 11px; font-weight: 700; letter-spacing: .12em; }
+@keyframes neo-pulse { 50% { opacity: .55; transform: scale(.72); } }
 
 .layer-jp { font-size: 13px; color: var(--fg-2); }
 
@@ -595,6 +671,8 @@ footer p + p { margin-top: 8px; }
 
 @media (max-width: 720px) {
   .home-hero { padding: 48px 0 40px; }
+  .home-hero-grid { grid-template-columns: minmax(0, 1fr); gap: 32px; }
+  .map-neo { min-height: 250px; padding: 24px; }
   .home-hero .figures { grid-template-columns: 1fr; gap: 24px; }
   .home-hero .fig-n { font-size: 32px; }
   .statement { margin-bottom: 40px; font-size: 18px; }
