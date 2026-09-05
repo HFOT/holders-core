@@ -59,3 +59,29 @@ body {
 .cm-fig { text-align: center; }
 .cm-fig b { display: block; font-size: clamp(2rem, 6vw, 4rem); font-weight: 700; }
 .cm-fig span { color: var(--cm-dim); font-size: .95rem; }
+
+/* ③④⑤ 見せ場 */
+.cm-show { padding: 18vh 0; border-top: 1px solid var(--cm-line); }
+.cm-show h2 { font-size: clamp(1.6rem, 4vw, 2.8rem); margin: 0 0 .8em; }
+
+/* ⑥⑧⑩⑪ 同じ形で4回反復する。ここがリズムになる */
+.cm-fact { padding: 20vh 0; border-top: 1px solid var(--cm-line); text-align: center; }
+.cm-big {
+  font-size: clamp(3rem, 12vw, 9rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin: 0;
+  letter-spacing: -.02em;
+}
+.cm-op { color: var(--cm-dim); font-weight: 400; }
+.cm-big-sub { color: var(--cm-dim); margin: .6em 0 0; font-size: 1rem; }
+.cm-fact h2 { font-size: clamp(1.4rem, 3.4vw, 2.2rem); margin: 1.4em 0 .6em; }
+
+/* ⑦⑨ 問い。⑫ 現在地。形を変えて呼吸の切れ目にする */
+.cm-ask, .cm-now { padding: 20vh 0; border-top: 1px solid var(--cm-line); }
+.cm-ask h2, .cm-now h2 { font-size: clamp(1.5rem, 3.6vw, 2.4rem); margin: 0 0 1.2em; }
+.cm-note { color: var(--cm-dim); font-size: .95rem; }
+.cm-steps { list-style: none; padding: 0; }
+.cm-steps li { padding: 1.4em 0; border-top: 1px solid var(--cm-line); }
+.cm-steps b { display: block; color: var(--cm-dim); font-size: .9rem; }
+.cm-more { color: var(--cm-fg); }
