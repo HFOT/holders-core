@@ -20,7 +20,11 @@ def read(name):
 
 
 def digest(p):
-    return hashlib.sha256(p.read_bytes()).hexdigest()[:16]
+    # core.autocrlf=true のため、checkout し直すだけで LF/CRLF が入れ替わり
+    # バイト列が変わってしまう。改行コードの違いでテストが落ちないよう、
+    # テキストとして読んで改行を \n に正規化してからハッシュ化する。
+    s = p.read_text(encoding="utf-8").replace("\r\n", "\n").replace("\r", "\n")
+    return hashlib.sha256(s.encode("utf-8")).hexdigest()[:16]
 
 
 def test_top_page_exists():
