@@ -1061,6 +1061,7 @@ function wireFullscreen() {
     btn.textContent = on ? "戻す" : "全画面";
   };
   btn.onclick = () => set(!frame.classList.contains("rg-full"));
+  if (new URLSearchParams(window.location.search).get("view") === "neo") set(true);
   document.addEventListener("keydown", (ev) => {
     if (ev.key === "Escape" && frame.classList.contains("rg-full")) set(false);
   });
