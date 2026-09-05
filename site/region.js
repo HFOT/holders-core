@@ -79,8 +79,9 @@ const state = {
   geo: null,
   world: null,
   projects: null,
+  projectJa: {},
   metric: "funded",
-  lang: "ja",       // 国名の表示。記録は英語のまま
+  lang: "ja",       // 国名と提案タイトルの表示。公式名は英語のまま保持
   shape: null,      // 押されている国（地図側の名前）
   countryOnly: null, // 形を持たない国、または国の記録が無い行の選択
   project: null,    // 開いているプロジェクト（rows の添字）
@@ -95,6 +96,13 @@ const state = {
   home: null,
   dragged: false,
 };
+
+const projectTitle = (r) =>
+  state.lang === "ja" && state.projectJa[r.url] ? state.projectJa[r.url] : r.n;
+const projectOriginal = (r) =>
+  state.lang === "ja" && state.projectJa[r.url] && state.projectJa[r.url] !== r.n
+    ? `<span class="rg-original" lang="en">${esc(r.n)}</span>`
+    : "";
 
 // --- 名前の対応 -------------------------------------------------------------
 
@@ -185,6 +193,7 @@ function selectedIndexes() {
       const r = rows[i];
       return (
         r.n.toLowerCase().includes(q) ||
+        (state.projectJa[r.url] || "").toLowerCase().includes(q) ||
         (r.who || []).some((w) => w.toLowerCase().includes(q)) ||
         (r.tg || []).some((t) => t.toLowerCase().includes(q)) ||
         (r.c || "").toLowerCase().includes(q)
@@ -382,8 +391,12 @@ function renderPlist() {
     ? cname(state.countryOnly)
     : "世界";
   $("place").textContent = state.person || placeName;
-  $("back").textContent = state.person ? "← 人物一覧" : "← 世界";
-  $("back").hidden = !state.person && !inScope();
+  $("back").textContent = state.person
+    ? "← 人物一覧"
+    : state.mode === "people" && !inScope()
+    ? "← 国一覧"
+    : "← 世界";
+  $("back").hidden = !state.person && !inScope() && state.mode !== "people";
   $("curwrap").hidden = !(state.sort === "dist" || state.sort === "req");
   renderSummary(idx);
 
@@ -413,7 +426,13 @@ function renderPlist() {
   if (!inScope() && !state.person) {
     const groups = worldGroups(idx);
     $("place-count").textContent = `${num(groups.length)} の国・${num(idx.length)} 件`;
-    $("plist").innerHTML = groups
+    $("plist").innerHTML =
+      `<li class="rg-all-ranking">
+        <button type="button" class="rg-all-ranking-btn">
+          <span class="rg-all-ranking-n">全提案の調達ランキング</span>
+          <span class="rg-all-ranking-s">人物・projectを横断して集計 →</span>
+        </button>
+      </li>` + groups
       .slice(0, state.shown)
       .map(
         (g, rank) => `<li class="rg-ci" data-shape="${esc(g.shape || "")}" data-country="${esc(
@@ -445,7 +464,7 @@ function renderPlist() {
       const who = (r.who || []).slice(0, 2).join(", ");
       return `<li class="rg-pi" data-i="${i}" tabindex="0" role="button">
         <span class="rg-pi-dot st-${esc(r.st)}" title="${esc(STATUS_JA[r.st] || r.st)}"></span>
-        <span class="rg-pi-n">${esc(r.n)}</span>
+        <span class="rg-pi-n">${esc(projectTitle(r))}${projectOriginal(r)}</span>
         <span class="rg-pi-a">${esc(amountLabel(r))}</span>
         <span class="rg-pi-s">${esc([r.fund, r.g, who].filter(Boolean).join(" ・ "))}</span>
       </li>`;
@@ -471,7 +490,7 @@ function renderProject() {
   const who = (r.who || []).map((w) => `<span class="rg-pv-who">${esc(w)}</span>`).join("");
   view.innerHTML =
     `<button type="button" class="rg-back" id="pv-back">閉じる ×</button>
-     <p class="rg-pv-n">${esc(r.n)}</p>
+     <p class="rg-pv-n">${esc(projectTitle(r))}${projectOriginal(r)}</p>
      <p class="rg-pv-sub">${esc([r.fund, r.cat].filter(Boolean).join(" ・ "))}</p>
      <div class="rg-pv-grid">
        ${line("国", esc(r.c ? cname(r.c) : "記録なし"))}
@@ -1273,21 +1292,13 @@ function wireControls() {
       state.shown = PAGE;
       renderProject();
       renderPlist();
+    } else if (state.mode === "people" && !inScope()) {
+      state.mode = "places";
+      pickShape(null);
     } else {
       pickShape(null);
     }
   };
-  for (const b of document.querySelectorAll(".rg-modeb")) {
-    b.onclick = () => {
-      document.querySelectorAll(".rg-modeb").forEach((x) => x.classList.toggle("on", x === b));
-      state.mode = b.dataset.mode;
-      state.person = null;
-      state.project = null;
-      state.shown = PAGE;
-      renderProject();
-      renderPlist();
-    };
-  }
   for (const b of document.querySelectorAll(".rg-langb")) {
     b.onclick = () => {
       document.querySelectorAll(".rg-langb").forEach((x) => x.classList.toggle("on", x === b));
@@ -1360,6 +1371,20 @@ function wireControls() {
     renderProject();
   };
   $("plist").addEventListener("click", (ev) => {
+    if (ev.target.closest(".rg-all-ranking-btn")) {
+      state.mode = "people";
+      state.shape = null;
+      state.countryOnly = null;
+      state.person = null;
+      state.project = null;
+      state.sort = "dist";
+      state.shown = PAGE;
+      $("sort").value = "dist";
+      for (const el of document.querySelectorAll(".rg-sh.on")) el.classList.remove("on");
+      renderProject();
+      renderPlist();
+      return;
+    }
     const countryAction = ev.target.closest(".rg-ci-action");
     if (countryAction) {
       const li = countryAction.closest(".rg-ci");
@@ -1372,9 +1397,6 @@ function wireControls() {
         state.sort = "dist";
         $("sort").value = "dist";
       }
-      document.querySelectorAll(".rg-modeb").forEach((b) =>
-        b.classList.toggle("on", b.dataset.mode === state.mode)
-      );
       if (li.dataset.shape) {
         pickShape(li.dataset.shape);
       } else {
@@ -1417,22 +1439,25 @@ function renderHead() {
   try {
     wireControls();
     // 生成物が変わったときに確実に読み直させる。build のたびに手で上げる。
-    const V = "2026-09-05b";
-    const [geoRes, worldRes, projRes] = await Promise.all([
+    const V = "2026-09-05c";
+    const [geoRes, worldRes, projRes, jaRes] = await Promise.all([
       fetch(`data/geo.json?v=${V}`),
       fetch(`data/world.json?v=${V}`),
       fetch(`data/projects.json?v=${V}`),
+      fetch(`data/projects-ja.json?v=${V}`),
     ]);
     for (const [r, p] of [
       [geoRes, "geo"],
       [worldRes, "world"],
       [projRes, "projects"],
+      [jaRes, "projects-ja"],
     ]) {
       if (!r.ok) throw new Error(`data/${p}.json: ${r.status}`);
     }
     state.geo = await geoRes.json();
     state.world = await worldRes.json();
     state.projects = await projRes.json();
+    state.projectJa = await jaRes.json();
 
     renderHead();
     buildMap();

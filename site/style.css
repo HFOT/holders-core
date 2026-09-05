@@ -1074,10 +1074,6 @@ body.rg-noscroll { overflow: hidden; }
 .rg-place-n { font-size: 18px; font-weight: 600; letter-spacing: -.01em; overflow-wrap: anywhere; }
 .rg-place-c { font-size: 12px; color: var(--fg-3); font-variant-numeric: tabular-nums; }
 
-.rg-mode { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 3px; border-radius: 10px; background: var(--bg-sub); }
-.rg-modeb { height: 30px; border: 0; border-radius: 8px; background: transparent; color: var(--fg-2); font: 12px inherit; cursor: pointer; }
-.rg-modeb.on { background: var(--bg); color: var(--fg); box-shadow: 0 1px 4px rgba(0,0,0,.12); font-weight: 600; }
-
 .rg-back {
   height: 28px;
   padding: 0 10px;
@@ -1166,6 +1162,15 @@ body.rg-noscroll { overflow: hidden; }
 .rg-pi-dot.st-Active { background: var(--st-act); }
 .rg-pi-dot.st-Cancelled { background: var(--st-cancel); }
 .rg-pi-n { font-size: 13px; line-height: 1.45; overflow-wrap: anywhere; }
+.rg-original {
+  display: block;
+  margin-top: 2px;
+  color: var(--fg-3);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.35;
+}
+.rg-pv-n .rg-original { margin-top: 5px; font-size: 11px; }
 .rg-pi-a {
   font-size: 12px;
   color: var(--fg-2);
@@ -1185,6 +1190,25 @@ body.rg-noscroll { overflow: hidden; }
 .rg-person-n { font-size: 13px; line-height: 1.45; font-weight: 600; overflow-wrap: anywhere; }
 .rg-person .rg-pi-s { grid-column: 2 / -1; }
 .rg-rank { color: var(--fg-3); font-size: 11px; font-variant-numeric: tabular-nums; text-align: right; }
+.rg-all-ranking { margin: 4px 2px 8px; }
+.rg-all-ranking-btn {
+  width: 100%;
+  min-height: 52px;
+  padding: 9px 12px;
+  border: 1px solid rgba(14, 89, 76, .26);
+  border-radius: 10px;
+  background: rgba(14, 89, 76, .07);
+  color: var(--sd-fg, var(--fg));
+  text-align: left;
+  font-family: inherit;
+  cursor: pointer;
+}
+.rg-all-ranking-btn:hover, .rg-all-ranking-btn:focus-visible {
+  background: rgba(14, 89, 76, .13);
+  outline: none;
+}
+.rg-all-ranking-n { display: block; font-size: 13px; font-weight: 700; }
+.rg-all-ranking-s { display: block; margin-top: 3px; color: var(--sd-link, var(--accent)); font-size: 11px; }
 .rg-ci-actions {
   grid-column: 2 / -1;
   display: flex;
