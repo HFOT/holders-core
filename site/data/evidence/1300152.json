@@ -1,0 +1,41 @@
+{
+  "title": "Open-source Plutus v3 DAO Smart-contract",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "In this milestone we’ll submit a specification that contains business requirements in a form of user stories toward the smart-contract. This smart contract will allow token holders to govern the DAO through a dedicated voting process.",
+      "criteria": "・This milestone should be accepted given that we provide a business specification for the smart-contract. Business specification must include:﻿\n・Goal for the smart contract\n・Features from user perspective\n・User stories",
+      "report": "Dear Reviwers,\nplease find the business specification in the following link: \nhttps://drive.google.com/file/d/1NtoFh4NdO2DY_LMuXbLLMcZF4vdCBm6E/view\nThank you in advance",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60000,
+      "promise": "・In the second milestone, we will deliver the comprehensive technical specification for the DAO. This document will provide an in-depth overview of the architecture, functionalities, and interactions of the various smart contracts that will form the foundation of any DAO ecosystem.\n・The specification will detail the user-level interactions with the DAO, outlining how participants will engage with its services and governance mechanisms. It will also include a thorough protocol specification, which describes the underlying rules, processes, and operational logic governing the system.\n・Additionally, the document will feature a series of flowcharts and state-transition diagrams to visually illustrate the different operational states and transitions.\n・This technical specification will serve as a blueprint for the implementation of the Minimum Viable Product (MVP) for the DAO. It will act as a guiding reference for the next milestones to the development team.",
+      "criteria": "This milestone should be accepted given its technical depth will be sufficient enough.",
+      "report": "Dear Catalyst reviewers, please find link to the technical specification of Plutus V3 DAO: https://drive.google.com/file/d/16nDo0GTqDw13qHlIh9vjEBuo5jR562F8/view?usp=drive_link",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "17",
+      "cost": 40000,
+      "promise": "・Working smart contract that adheres to previously created specifications. \n・Submission of a working smart contract on-chain evidence.",
+      "criteria": "Implementation of smart contract along with a video unit test report.",
+      "report": "We've completed the DAO smart-contracted that follows the specifications we outlined in previous milestones, and launched it on a Cardano's preview testnet. Not only did we launch this contract, we've created a video showing how it works. We created the DAO smart-contract, then created a proposal on-chain, then created shards, a vote, merging the shards, and ending the proposal.\nLink to the video: https://drive.google.com/file/d/1HTWaSbViASvY2Ub326sWVQOH1s1oJNA8/view?usp=sharing\nTransactions hashes: \nInit DAO: 63eb8ae804b69452bedf4ea1eecd956cddef9dfc0ba9f92f526f7369ac3a30f3,\nCreate Proposal: 5d5144c9979d9bcd060ed6fea7b367ce8f0b0ddb0f390697020b4d7768114f26,\nCreate Shards: f35b67449679fe3a7353adf55830af2e1ae007c44bc1984eaec298456c625fb1,\nVote: 317c87cc27448f67d8ca5ab3fa1518929e0c86da959c6ef3057d7dc1c9068358\nMerge Shards: b014db30578ecfbf9df93bc65d76f36fac12f8cbaa30f8fd4a814c40a9e21895\nEnd Proposal: 62731cff50c9e858533b48b6ea79b562b0272ab89ea1d486ec5cd4cffb177224",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    }
+  ]
+}

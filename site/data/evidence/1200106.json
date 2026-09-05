@@ -1,0 +1,59 @@
+{
+  "title": "EcoMandala: Hexagonal NFTs for Geospatial Data Integrity on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25000,
+      "promise": "(A) Research report detailing the target use cases for EcoMandala's hexagonal NFTs\n(B) Design document for the EcoMandala framework and a detailed plan for this PoC project.",
+      "criteria": "(A) Research report details at least three potential use cases for the minting of hexagonal NFTs\n(B) Design document should outline the data structure and blockchain interaction as well as provide a preliminary design of the user interface and API",
+      "report": "The bellow milestone report contains - \n・A research report detailing the target use cases for EcoMandala's hexagonal NFTs\n・Design document for the EcoMandala framework and a detailed plan for this PoC project.\n\nhttps://github.com/gammer13/pcf12-ecomandala/blob/main/milestone1/report/milestone_report.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 30000,
+      "promise": "(A) Minted Ecomandala's Hexagonal NFT's on Cardano mainet corresponding to at least two of the usecases described in the previous milestone \n(B) user guide demonstrating the capability to mint NFTs representing the geospatial hexagonal units",
+      "criteria": "(A) At least 6 successfully minted NFTs representing at least two of the use cases described in the previous milestone \n(A) Minted NFTs metadata represents the Ecomandala's data as described in design document\n(B) User guide clearly describes how to mint and update Ecomandala's NFTs",
+      "report": "A functional EcoMandela NFT minting platform is running at (Dynamic metadata links fixed):\nhttps://gamayos.github.io/pcf12-ecomandala/ecomandala-20240916-1.html\nThe following NFT minting transactions were triggered through the system -\nhttps://preprod.cexplorer.io/tx/1be82407e8dfeadabd79ac7f4513019e9c3d0c115fe89cebcdaed6d6dbfe55dc\nhttps://preprod.cexplorer.io/tx/7c30fe86c5a9df8a766c98a8a5d7310f7262049da077971bded55e99f55c5d69\nhttps://preprod.cexplorer.io/tx/e1ccc9bc0386603f721d38df7cf488a1ae900830d25a29def1b7fd2c458544d7\nhttps://preprod.cexplorer.io/tx/b72bcdb372add6ee2446c282f77feb1fbff7e1fa09ff0eab75ef7260c420bbc9\nhttps://preprod.cexplorer.io/tx/40fc1bad3383c6d4203c5181d1263c1e13a3bd2ab371b40a7af2bdd165480ad7\nhttps://preprod.cexplorer.io/tx/b890ff48279a6db3928f25ef2eeccc6e7ce3ee4246417d57f0ca15759885ff29\nExample metadata:\nhttps://storage.googleapis.com/ecomandala-preprod-9f3489c8-eb24-4d88/811e3/851e0877/891e0874527ffff-20241222-7fe65be0/891e0874527ffff-20241222-7fe65be0-metadata.json\nA comprehensive user guide - \nhttps://github.com/gammer13/pcf12-ecomandala/blob/main/milestone2/report/Ecomandala-Manual-20241218.pdf",
+      "kinds": [
+        "chain",
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 9
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 30000,
+      "promise": "(A) Concept implementation implementation of an automated process which produces the Ecomandala hexagonal images and mints corresponding NFTs using an API",
+      "criteria": "(A) The concept implementation covers one of the use cases described in the first milestone's report \n(A) a sample of 1,000 NFTs are minted to cover a territory of interest for the selected use case",
+      "report": "An automated system (backend, database, API and UI Portal) for generation of EcoMandala NFTs for large area projects have been implemented and extensively tested using a collection of high-impact nature restoration projects as a target use-case. A large collection of 1000+ EcoMandala NFTs have been minted and listed in the linked spreadsheet.\nMilestone 3 detailed report: https://drive.google.com/file/d/1c3cuohnTZ9qzTPh7pGKga7wuZbIyDM0P/view\nEcoMandala Portal: https://gamayos.github.io/pcf12-ecomandala/ecomandala-20241229-1.html\nNFT list (1000+ mints in three projects): https://docs.google.com/spreadsheets/d/1-PgtYcHZqVcBQc0DjswwFcXsXMlnL4imdXXXPHpmHgo/edit?usp=sharing",
+      "kinds": [
+        "doc",
+        "live"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 15000,
+      "promise": "(A) Test results that verify the system's overall functionality, performance, and security\n(B) Final close-out report\n(C) Final closeout video",
+      "criteria": "(A) Successful integration of on-chain and off-chain components without critical issues\n(B) Final closeout report is publicly available\n(C) Final closeout video is publicly available",
+      "report": "EcoMandala PoC Project Page and Portal: https://gamayos.github.io/pcf12-ecomandala/\n(A) EcoMandala PoC Final Testing Report: Plans and reports documenting the test cases, procedures, results, as well as identified and resolved issues: https://drive.google.com/file/d/103zZqVIGJ6STwVdCsZlNniPUg9F311CZ\n(B) EcoMandala PoC closeout report: https://drive.google.com/file/d/1DDhvuThMDlW1VQR4tQSunEa-q49jrPOr\n(C) EcoMandala PoC closeout video: https://youtu.be/toAlF7LjLaM?si=c8CXkRQeZP8r6xq5",
+      "kinds": [
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

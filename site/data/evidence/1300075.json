@@ -1,0 +1,57 @@
+{
+  "title": "CSWAP: Real World Asset Expansion - Real Value for Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "We will provide a detailed business requirements document. This document will outline exactly what is needed from a business perspective to deliver a complete solution for our RWA expansion. The business requirements document will include all aspects included in the acceptance criteria.",
+      "criteria": "The business requirements document must describe the requirements in a way so that the team can begin the solution design process.\n・Key Stakeholder Requirements: Determine which business processes must be automated/facilitated by the proposed solution from the lens of each user role in the system. e.g. Third party vendor, CSWAP team, retail consumer...etc\n\n・Scope of Work: Determine the scope of solution based on the key stakeholder requirements. The scope of work must fulfill the key stakeholder requirements. Functional/non-functional requirements will be provided in the screen design document",
+      "report": "The Business Requirements Document (BRD) has been completed in alignment with the defined outputs, acceptance criteria, and evidence requirements for milestone completion. It has been reviewed and formally approved by CSWAP leadership.\nThe finalized BRD is attached as a PDF via Google Drive.\nLink to PDF: https://drive.google.com/file/d/1v2mSJ_Z-cHn2M9GLIdHp7EJmzeXGEOzS/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 150000,
+      "promise": "We will provide a working screen design document with wireframes and functional description for each screen/module. Since we are an AGILE team, the document will be a working document, meaning it is subject to change throughout the development process.",
+      "criteria": "The screen design document will include the following:\n・An outline detailing the non-functional requirements of the proposed solution. e.g. usability, security, scalability etc.\n・Screen designs, wireframes, or mockups of each screen or module required to deliver a solution that fulfills the business requirements. The scope of design can not be determined until milestone 1 has been completed.\n・Functional requirements: The functional requirements will be provided alongside the design elements to ensure that the solution meets all business requirements. e.g. user clicks a button to start the nft",
+      "report": "Hello,\nIn regard to the reviewers feedback we said we would provide a non-functional spec. \nWhat made more sense for our team at this point for both our team and public reviewers was to provide the technical architecture diagram. This ended up being more appropriate and useful for our team for the \"non-functional spec\" part of the milestone requirements. That is because this includes direction for both traditional backend and blockchain teams, for which a table diagram or list of api calls would not suffice. (Need smart contract architecture and direction as well).\nhttps://drive.google.com/file/d/17QHPsPwGeu14aqC9sM0TLAJdv9R9-IOT/view?usp=drive_link",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "10",
+      "cost": 80000,
+      "promise": "There will be multiple outputs for the RWA Minting Functionality milestone (which includes proprietary front end code which can be shared with the catalyst reviewers (but not the public) via git repo access):\n・Front end code and plutus scripts or smart contracts\n・Scripts which enable the creation of certificates and or reference documents to be incorporated within NFT RWAs\n・On-chain evidence of minting of RWAs and the actual tokenized RWAs themselves (asset names, tx ids)\n・A public facing tool (pre-prod) that will allow a third-party to tokenize an RWA from at least two different asset type categories e.g. collectible & commodity\n・A screen share of using the tool to facilitate review of the preliminary RWA minting solution",
+      "criteria": "1. Front-End Code and Plutus Scripts\nThe submitted code enables the minting of tokenized RWAs, adhering to the outlined functional requirements.\nScripts are complete, deployable, and meet technical specifications for minting RWAs.\n2. Certificate and Reference Document Integration\nThe scripts successfully embed of certificates or reference documents within tokenized RWAs. For example, the certificates (as part of the RWAs) will be verifiable on-chain on cexplorer.io and/or cardanoscan.io.\n3. Successful minting of RWAs \nThe minting process successfully supports at least two asset type categories",
+      "report": "Google Doc: https://docs.google.com/document/d/1KnzZ6bGyWZYypz5k5JJi8KEy4LZINbquTDKRdrsQGww/edit?usp=sharing\nA. Output: Front End Code and Plutus Scripts (Aiken)\nAcceptance criteria: Submitted code enables minting of RWA Nfts.\nEvidence: Link to code repo in Google Doc (1)\nB. Output: Scripts which enable the creation of certificates and reference documents\nAcceptance criteria: The scripts successfully embed testnet certificates on preprod.\nEvidence: Link to files in Google Doc (2), Video to files in Google Doc (5). *can verify certificate image link is embedded in on-chain assets, but may not currently be accessible from cardano scan (Permissioned). Please view screen shares to verify the creation and download of mock RWA certificates on preprod.\nC. Output: On-chain evidence of minted RWAs\nAcceptance criteria: Minting transactions and txids for RWA NFTs across two categories (Real Estate, Collectibles)\nEvidence: Cexplorer links in Google Doc (3)\nD. Output: A public facing tool on preprod where a third-party can easily tokenize an RWA from at least 2 different categories.\nAcceptance criteria: There is a public facing tool on preprod that a third party could use to easily tokenize an RWA in testnet environment.\nEvidence: Link to public facing tool on preprod in Google Doc (4)\nE. Output: Screenshare to faciliate review that the public facing tool on preprod works.\nAcceptance criteria: Screenshare that the public facing tool on preprod works and mints an RWA.\nEvidence: Two video links in Google Doc (5)",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "12",
+      "cost": 80000,
+      "promise": "There will be multiple outputs for the RWA Fractionalization and De-fractionalization milestone (which includes proprietary front end code which can be shared with the catalyst team via git repo access):\n・Front end code and plutus scripts\n・Smart contracts for fractionalizing and reverse-fractionalizing genesis RWAs (minted during milestone 3)\n・Scripts which enable the creation of certificates and or reference documents to be incorporated within RWAs or attached to token metadata. (details to be fleshed out during development process)\n・On-chain evidence of fractionalizing/de-fractionizing RWAs and the actual fractionalized RWAs themselves (asset names, tx ids)\n・A public facing tool (pre-prod) that will allow a third-party to fractionalize an RWA from at least two different asset type categories e.g. collectible & commodity\n・A public facing tool (pre-prod) that will allow a third-party to reverse fractionalize an RWA from at least two different asset type categories e.g. collectible & commodity. (User must hold all fractionalized assets in order to unlock the genesis Asset)\n・A screen share of using the platform to fractionalize and reverse fractionalize RWAs from and to genesis RWA N",
+      "criteria": "1. Front-End Code and Plutus Scripts\nThe submitted code enables the fractionalization and reverse fractionalization of RWAs, adhering to the outlined functional requirements.\nScripts are complete, deployable, and meet technical specifications for fractionalizing and reverse-fractionalizing RWAs.\n2. Smart contracts for fractionalizing and reverse fractionalizing genesis RWAs (minted during milestone 3)\nThe submitted code enables the fractionalization and reverse fractionalization of RWAs, adhering to the outlined functional requirements.\nSmart contract is complete, deployable, and meet technica",
+      "report": "A. Output: [Front end Code & Plutus Scripts]\nAcceptance criteria: [See Link to Github repository via [1.] in the attached google doc]\nEvidence: [https://docs.google.com/document/d/1mwBBuMWI1jQjZcmpgHRAGNzF0lFjxAwn1sGDI9SG_is/edit?usp=sharing]\nB. Output: [Smart contracts for fractionalizing and reverse-fractionalizing genesis RWAs]\nAcceptance criteria: [See Link to Github repository via [1.] in the attached google doc. See description via [2.] in the attached google doc]\nEvidence: [https://docs.google.com/document/d/1mwBBuMWI1jQjZcmpgHRAGNzF0lFjxAwn1sGDI9SG_is/edit?usp=sharing]\nC. Output: [Certificate and Reference Document Integration]\nAcceptance criteria: [See Link to Github repository via [1.] in the attached google doc. See link to evidence of fractionalized RWA metadata via [3.] in the attached google doc]\nEvidence: [https://docs.google.com/document/d/1mwBBuMWI1jQjZcmpgHRAGNzF0lFjxAwn1sGDI9SG_is/edit?usp=sharing]\nD. Output: [On-chain Evidence of Fractionalized RWAs and De-Fractionalized RWAs]\nAcceptance criteria: [See Links to Fractionalized and De-Fractionalized RWAs via [4.] in the attached google doc]\nEvidence: [https://docs.google.com/document/d/1mwBBuMWI1jQjZcmpgHRAGNzF0lFjxAwn1sGDI9SG_is/edit?usp=sharing]\nE. Output: [Public Facing Tool - Fractionalization]\nAcceptance criteria: [See links to working public tool for fractionalizing assets via the user interface via [5.] in the google doc. Use credentials in google doc to access functionality.]\nEvidence: [https://docs.google.com/document/d/1mwBBuMWI1jQjZcmpgHRAGNzF0lFjxAwn1sGDI9SG_is/edit?usp=sharing]\nF. Output: [Public Facing Tool - Reverse Fractionalization]\nAcceptance criteria: [See links to working public tool for combining assets via the user interface via [6.] in the google doc. Use credentials in google doc to access functionality.]\nEvidence: [https://docs.google.com/document/d/1mwBBuMWI1jQjZcmpgHRAGNzF0lFjxAwn1sGDI9SG_is/edit?usp=sharing\nG. Output: [Screen Share of using Public Facing Tool to Fraction",
+      "kinds": [
+        "doc"
+      ],
+      "links": 7,
+      "cut": true
+    }
+  ]
+}

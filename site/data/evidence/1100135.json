@@ -1,0 +1,83 @@
+{
+  "title": "FluidTokens: Feeless transactions and automatic Smart Contracts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 40000,
+      "promise": "・Official documentation describing the format to write conditions and triggers with Lambdas and Rules;\n・UI design on FIGMA; \n・Infrastructure High-Level Design diagram;\n・Deployment of initial infrastructure;",
+      "criteria": "・Documentation describes the supported format that users can use to setup Lambdas and Rules from their code and from the Aquarium UI\n・UI design should define how the Lambdas/Rules/FeeTank creation pages should look\n・The HLD diagram should show how the Aquarium infrastructure is interconnected, from users to the Validators network\n・Infrastructure should allow creations of backend logic, endpoints and frontend hosting for the next milestones. The infrastructure should be as much serverless as possible.",
+      "report": "Hello!\nFollowing the Evidence of milestone completion here are all the required documents:\n・Aquarium HLD diagram: https://catalyst-aquarium.s3.eu-west-1.amazonaws.com/Aquarium%20HLD.png\n・Aquarium Format documentation: https://docs.google.com/document/d/1nES-3YYwLCitBgytLJnh20icS5Q_5TsNB1iIqPWGtWI/edit?usp=sharing\n・Figma templates: https://www.figma.com/file/1k9A4hDiUcHbHV3EjjHCbL/FluidTokens-Aquarium?type=design&node-id=81%3A2&mode=design&t=kT1KAcRMaPuVyso7-1\n・Deployed cloud infrastructure screenshot: https://catalyst-aquarium.s3.eu-west-1.amazonaws.com/initial_infrastructure_deployment.png",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 50000,
+      "promise": "・Frontend: UI to create, refill, withdraw and visualize Aquarium FeeTanks\n・Offchain: Lucid code to manage the FeeTanks\n・Backend: code logic to listen to the blockchain and track new, refilled and withdrawn FeeTanks",
+      "criteria": "・Frontend page(s) to manage the FeeTanks\n・Ability to create/refill/withdraw FeeTanks",
+      "report": "Here's the frontend + Lucid of Aquarium Fee Tanks: https://aquarium-dev.fluidtokens.com/tank\nFeel free to try it, it's on Cardano Preview network!\nTank creation example transaction: https://preview.cexplorer.io/tx/0a906a32b39dc85a2a25cd41391ac63a57bcbb7d5809f1e74c263e84c196ca71\nTank consume example transaction: https://preview.cexplorer.io/tx/6e49466dfad17dece8074dc06c1e3a6f89e154e75420802306b1596c76896240\nTank refill example transaction: https://preview.cexplorer.io/tx/8d1d87419d00ac0bb6dc43f9e513f082c04be2c1b6eb6c48ced59e1b7a93fa8d\nIf you create/edit/consume any tank in the website you'll get similar transactions.\nThank you!",
+      "kinds": [
+        "chain",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 50000,
+      "promise": "・Frontend: UI to create/edit/cancel Lambdas (specify when the FeeTank can be spent) and Rules (specify the trigger that should submit the scheduled transaction)\n・Backend: endpoints to support these actions",
+      "criteria": "・User can create/edit/cancel Lambdas and Rules attached to his own FeeTanks\n・A whitelisted address can spend the user's FeeTank for transaction fees\n・A signed transaction of the user is triggered at a specific time",
+      "report": "Greetings reviewers!\nWe finished the milestone 3 objectives: now users can whitelist addresses (Lambdas) that can spend their tanks and can also schedule Cardano transactions that will be executed automatically at the specified time (Rules)!\nPlease note that we are still in Cardano Preview network.\nThe frontend that allows the management of Tanks, Lambdas and Rules is here: https://aquarium-dev.fluidtokens.com/tank\nTransaction on-chain executed by whitelist address: https://preview.cexplorer.io/tx/e58ecade9f8cdad11a42ee7f2b86cda00f15b3792e8e2322a64a5ad26c6df245\nScreenshot showing the tank used for the previous transaction: https://catalyst-aquarium.s3.eu-west-1.amazonaws.com/milestone%203/photo_5945116494906114832_y.jpg\nTransaction on-chain executed at specified time: https://preview.cexplorer.io/tx/fa0f69ebda5da84e7df041fcd07c70fec28962d6611876d03d8bf72d77cb7850\nScreenshot showing the tank used for the previous transaction: https://catalyst-aquarium.s3.eu-west-1.amazonaws.com/milestone%203/photo_5945116494906114825_w.jpg",
+      "kinds": [
+        "chain",
+        "other"
+      ],
+      "links": 7
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 35000,
+      "promise": "・Document describing the coordination algorithm of the Validators belonging to the decentralized network\n・Algorthm implementation with 2 Validators",
+      "criteria": "・Document describes how the algorithm works and what are the possible future improvements\n・2 validators behave as intended to choose which test transaction to submit to the blockchain in each moment",
+      "report": "Hello reviewers!\nHere are the outputs done for this Milestone:\n・The document explaining how we decided the coordination algorithm of the Aquarium validators is the ReadMe file of the official repo: https://github.com/FluidTokens/ft-cardano-aquarium-sc\n・Preprod transactions where 2 Aquarium validators register:\n・https://preprod.cexplorer.io/tx/332038e642ea621ae83bb2a2595c319a92104daeecc436bec62ba6539ff46196\n・https://preprod.cexplorer.io/tx/4a69e20a1e8adf8d27e223996544e8f2ba2aeb1eb9844bc96cf8cbae8291e721\n・Preprod transactions automatically executed by the 2 validators:\n・https://preprod.cexplorer.io/tx/e729bc5b35b4e2d230f145a0dc768f1a09679393a5ba82fd00629445c7b9ebcd\n・https://preprod.cexplorer.io/tx/f1bb02a7b4eb1d786a9a89a4fe93ed05cad4bb22e080bbe2fb59ed8a2b5f634f\n\nJust to be clear: the \"Nodes coordination algorithm\" chapter is what explains how the Aquarium nodes coordinate, in particular they don't actually coordinate but instead participate in a game of who is quicker in executing the promised/scheduled transactions. At the end the revenues are shared proportionally offchain to all the nodes.\nPlease let us know if all is clear, the next milestone will finalize the frontend and audit the contracts!",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 10
+    },
+    {
+      "no": 5,
+      "month": "9",
+      "cost": 60000,
+      "promise": "・The full flow is online and uses Cardano Preview network\n・Public documentation\n・Auditing of the Validators' $FLDT locking smart contract",
+      "criteria": "・Users can use the frontend to manage FeeTanks, Lambdas and Rules\n・Public documentation explains what, why and how regarding FeeTanks, Lambdas and Rules\n・The audit is complete and no important security issues are left open",
+      "report": "Hello again reviewers!\nMilestone 5 is completed:\n・Working frontend in Preview network: https://aquarium-dev.fluidtokens.com/\n・Audit report of the smart contracts: https://fluidtokens.com/audits/FluidTokens_Aquarium_Anastasia_Labs.pdf\n・Public documentation: https://docs.fluidtokens.com/protocols/aquarium/\n\nPlease let us know if you need anything else and have a great day!",
+      "kinds": [
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 6,
+      "month": "10",
+      "cost": 50000,
+      "promise": "・Deployment of the solution on Cardano Mainnet network\n・Community and dApps can use the service to create FeeTanks/Lambdas/Rules and to execute transactions through Aquarium",
+      "criteria": "・Working solution deployed in Preview in the previous milestone is now deployed on Mainnet",
+      "report": "Greetings everyone!\nWe have officially released Aquarium in mainnet after completing the official audit.\nHere you can find the link: https://aquarium.fluidtokens.com/\nClose out report: https://drive.google.com/file/d/1iVZqhRHyT-9IqYGKHNUpk4cLVJSmGOPW/view?usp=sharing\nClose out video (with demo): https://youtu.be/D2wBG9fjcKU\nThis completes our final milestone, thanks for being great reviewers!",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

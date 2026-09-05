@@ -1,0 +1,18 @@
+{
+  "title": "Cardano’s First End-to-End Metal and Minerals RWA Ecosystem",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "・Map out all critical data events required for capture in the Gold supply-chain\n・Conduct technical and operational scoping for traceability, tokenization, Proof of Reserve, and redemption processes.\n・Define metadata standards for traceable mineral assets.\n・Draft minting/burning logic and compliance requirements.\n・Identify potential candidates for the custodians for PoR audit trails.\n・Develop initial DeFi integration framework and target protocols (e.g., Xerberus, Liqwid, Minswap).",
+      "criteria": "・Critical Data Mapping: there is clear evidence of critical data events mapped for target gold mining supply-chain. Critical data events refer to the key sequences along the supply-chain (i.e the end to end process mapping) from extraction, processing, refining, tokenization and redemption. Under each event, there should be a clear list of different data required to be captured (for example with extraction it would relate to the date, mine location, quantities, timestamps). \n・Document covering the technical and operational feasibility / scope for the core functions of this proposal. It should",
+      "report": "Resubmission Executive Summary\nAll deliverables are organised in one main folder, with direct links to each corresponding report and supplementary evidence. You can find it here:\nUpdated Final Deliverables Folder\n\nResubmission Overview of Changes:\n・#1 Critical Data Events Mapping: Clear legend to explain colors, arrows and symbols was added for improved readability.\n・#2 Technical & Operational Scope: Fixed typographical and writing errors.\n・#3 Metadata Standards: Added example JSON schemas with defined field types and structures to clarify metadata definitions.\n・#4 Mint/Burn & Reconciliation Logic: Added additional explanatory schema to clarify the intended logic and flow.\n・#5 Custodian for Proof of Reserve: Added comparative tables and expanded explanatory rationale.\n・#6 DeFi Integration Framework:\n・Section 4 restructured for clarity and flow.\n・The DeFi rollout sequence was reorganized to clearly separate sequencing and stage gating from stakeholder roles and functional definitions, addressing reviewer feedback on confusing formatting and mixed intent.\n・Explicit, non–time-based stage gating criteria added\n・Each transition between Stages 1 through 5 now includes objective, observable conditions related to settlement, custody, liquidity behavior, and operational resilience, directly addressing concerns that the integration roadmap and progression conditions were unclear.\n・Protocols removed from rollout sequencing.\n・Specific Cardano DeFi protocols no longer appear in the staged rollout logic. Protocol selection and justification are now handled exclusively in Section 6, resolving reviewer concerns about conflating asset maturity with protocol choice.\n・Consistent protocol evaluation framework applied.\n・All protocols in Section 6 are now evaluated using the same analytical structure, including supported DeFi use cases, liquidity pathways and compatibility, community value creation, benefits, risks, and integration considerations.\n・Token roles consolidated and clarified.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 9,
+      "cut": true
+    }
+  ]
+}

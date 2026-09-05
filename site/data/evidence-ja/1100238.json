@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・他のアイデンティティエコシステム内での比較可能なプロジェクトに関する調査を行い、結果の書き出しを行います。 まともなアーキテクチャーがあると確信していますが、既存の基準となるべく整列する提案をします。\n・現行のデザインの建築的評価を行い、他のプロジェクトから学ぶことを考える。 そのような場合、我々は、約束された機能セットを削減することなく、このコンセプトの過剰な影響を向上させることができる場合、我々は、少し修正されたアーキテクチャとコンポーネントで同じ目標を達成するために、潜在的な変更要求のために開くドアを維持することを望む代替建築アプローチを見つけます。\n・README.md を含むプロジェクトプランのドキュメントで GitHub リポジトリを作成します。\n・オープンソースの可用性を確保するために、Apache 2.0 でプロジェクトをライセンスします。\n・基本APIエンドポイントやフロントエンドページなど、構造化されたプロジェクトスタブを作成します。\n・発行・検証プロセスを含むW3C認証を処理するための基礎コードブロックを開発\n・初期テストスイートとクレデンシャルハンドリングとクレデンシャル検証に関するコア機能のテスト.",
+      "criteria": "・GitHubリポジトリは、READMEと異なるアイデンティティエコシステムにおける類似プロジェクトとの比較を含む確立されます。 研究の結果に応じて、異なるアーカイブオプションに関する議論もあります。\n・本プロジェクトはApache 2.0ライセンスで正式にオープンソース化されます。\n・W3C認証と検証の管理に関する初期のコーディングの取り組みは、GitHubのコミットを介し、進行中です。\n・レポジトリ内の専用のテストプロジェクトには、重要な機能に関する複数のテストが含まれています.",
+      "report": "[査読者へのご注意:リンクはすべて同じです。 研究と評価に関する文書を更新し、問題を修正し、拡大します。 必要であれば、もっと詳しく知りたい!\n・Githubリポジトリ:https://github.com/bsandmann/blocktrust.CredentialBadges\n・Readmeファイル:https://github.com/bsandmann/blocktrust.CredentialBadges/blob/master/README.md\n・研究と考古学的評価:https://github.com/bsandmann/blocktrust.CredentialBadges/blob/master/Documentation/M1 Research and Evaluation.md\n・レポで見られるようにApache 2.0としてプロジェクトをライセンス\n・レポでコードが見れる\n・リポジトリにテストプロジェクトも含まれています。 UnitTestsのスクリーンショット: https://github.com/bsandmann/blocktrust.CredentialBadges/blob/master/Documentation/M1 UnitTestsScreenshot.jpg\n・今後、現行のプロトタイプを経由してショートビデオを制作しました。https://youtu.be/TvsCdHw-oXQ"
+    },
+    {
+      "no": 2,
+      "promise": "・ユーザーログイン機能(アカウント管理、パスワードリセットなど)でベーシックなウェブサイトを開発\n・異なるユーザーロール(クレデンシャル(ホルダー)の所有者)を管理するための実装コードで、クレデンシャルと既に準備されたクレデンシャルの署名者を発行したい。\n・資格情報所有者(所有者)のユーザーインターフェイスを作成し、認証テンプレートを登録、作成し、資格情報が既に署名されていない場合は、潜在的な署名者に送信します。\n・サイダーのユーザーインターフェイスを確立し、より厳しいウェブサイト上での資格を埋めたいという資格の将来の所有者(所有者)から準備された資格を承諾する。\n・埋め込まれた認証情報にリンクされている認証用の基本的なAPI検証とウェブページの設計。\n・Webサイト上のクレデンシャル表示や検証ページへのリンクにJavaScriptスニペットを提供\n・デモサイトを立ち上げ、一般的なコンセプトを実証する\n・新しいコードのユニットテスト",
+      "criteria": "・GitHubリポジトリへの継続的貢献が見られます。\n・MVPを提示し、パブリックアクセスが可能な機能デモサイトです。\n・デモサイトにおけるMVPの開発進捗と機能性を3〜5分動画で実証します.",
+      "report": "Githubへのリンク: https://github.com/bsandmann/blocktrust.CredentialBadges\nデモサイトへのリンク: https://credentials.blocktrust.dev https://badges.blocktrust.dev\n動画へのリンク: https://youtu.be/tII-QUqV4kM\nビデオ(ページの下部にある)に示されているデモ・クレデンシャルへのリンク: https://blocktrust.dev/webcredentials ディレクティブ"
+    },
+    {
+      "no": 3,
+      "promise": "・既存のMVPを採用し、セキュリティ改善、信頼性のある認証、ユーザー分離に注力。\n・ドメイン検証サービスを開発し、あらかじめ定義されたドメインにクレデンシャルプレゼンテーションを制限します。\n・効率的なクレデンシャルデリバリーのためのImplement CDNとキャッシング戦略。\n・ポータル内のJavaScriptスニペットの基本的なカスタマイズオプションを作成します。\n・クレデンシャルテンプレートの設計・製作\n・新しいコードのユニットテスト",
+      "criteria": "・GitHubリポジトリに、Continuousの更新を行います。\n・このマイルストーンの改良や新機能を取り入れ、デモサイトが進化しました。\n・本アプリの現状を5分動画で確認し、新機能のデモや改善などを行います.",
+      "report": "動画: https://youtu.be/CEtgDPVoijY\nGithubリポジトリ: https://github.com/bsandmann/blocktrust.CredentialBadges\n次のマイルストーンに問題を追加してください: https://github.com/bsandmann/blocktrust.CredentialBadges/issues\nデモは実行中: https://badges.blocktrust.dev/\nクレデンシャルが必要な場合は、https://credentials.blocktrust.dev/ (説明のための最後のビデオを参照してください) またはちょうどここからこの資格をコピー: https://raw.githubusercontent.com/bsandmann/blocktrust.CredentialBadges/refs/heads/master/Documentation/example1.md\n動画のサンプルページはこちら: https://www.codedata.solutions/demo/credentials.html"
+    },
+    {
+      "no": 4,
+      "promise": "・概念、定形埋め込むプロセス、検証を説明するドキュメントを生成します。\n・この段階で見つかった全てのバグや問題は、GitHubs の問題トラッカーで公開されます。\n・実証目的のために少なくとも2つの外部サイトに埋め込まれた資格情報を統合します.",
+      "criteria": "・ユーザーフレンドリーで公的なアクセス可能なウェブサイトが利用可能で、資格の埋め込みプロセスを通じてユーザーを指導します。\n・5-10分のビデオは、資格情報の作成と検証に関するステップバイステップガイドを提供します。\n・埋め込まれた資格を実証する少なくとも2つの外部ウェブサイトへのリンクが提供されます。\n・GitHub、アウトライン・プロジェクト・ゴール、ハウツーでプロジェクト・ドキュメンテーションが可能\n・アプリのホストインスタンスは、全員が試用できる",
+      "report": "最終マイルストーン。\nこのプロジェクトは、Github: https://github.com/bsandmann/blocktrust.CredentialBadges にあります。\nドキュメントページ: https://docs.badges.blocktrust.dev/\nクローズアウトレポート: https://nxtcloud.codedata.solutions/s/zQMoWD53yTH24Y3\nクローズアウトビデオ: https://youtu.be/ejJipDKdvbk\nアプリケーションのホストインスタンス: https://credentials.blocktrust.dev/ と https://badges.blocktrust.dev/\nアプリケーション/ステップバイステップのビデオショー: https://youtu.be/QgOi2EtLlGg\nいくつかの例のバッジ: https://docs.badges.blocktrust.dev/credential-examples.html\nバッジ付きの他の2ページ:\nhttps://www.codedata.solutions/\nhttps://www.deutscher-architektur-verlag.de/ (末尾にスクロール)"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "ブロックフロストエコシステム内で最も使われているSDKのリストを生成します.",
+      "criteria": "利用可能なSDKの一覧です.",
+      "report": "月間ユーザーの平均数に応じて更新にノミネートされるSDKのリスト."
+    },
+    {
+      "no": 2,
+      "promise": "選択した5つのトップSDKは、Blockfrost APIの最新のリリースに更新され、最新のSDKを作成します.",
+      "criteria": "選択したトップ5 SDKに新しい機能やエンドポイントが追加されたかをリストアップする最新のコード変更をオープンしました.",
+      "report": "以下は、SDKの更新の変更に伴い、プルリクエストです。\n・blockfrost-go https://github.com/blockfrost/blockfrost-go/pull/70\n・ブロックフロスト錆 https://github.com/blockfrost/blockfrost-rust/pull/42\n・blockfrost-js https://github.com/blockfrost/blockfrost-js/pulls\n・ブロックフロスト・ハッセル https://github.com/blockfrost/blockfrost-haskell/pull/43 https://github.com/block フロスト・ハッセル/プル/39\n・blockfrost-python https://github.com/blockfrost/blockfrost-python/pull/37\n\nこれらは既にテスト済みです。このコミュニティがテストするのも現状です。\n特定の変更に関する詳細は、プルリクエスト自体で直接指定されます。 コードの変更はあります。 変化の技術的な性質を考えると、PRでより人間に優しい出力を提供しようとしました。 特定の質問がある場合、または何かが明確でない場合は、PR自体にコメントすること自由に感じてください(同じ質問を持っているかもしれないより多くの人がそれを見て、それを調整することができます)."
+    },
+    {
+      "no": 3,
+      "promise": "出力は、これらの提案コードの変更に関するコミュニティによる可能なフィードバックです.",
+      "criteria": "コミュニティは、それぞれの変化に少なくとも1週間のフィードバック時間を残しています.",
+      "report": "リンクを共有し、コミュニティのフィードバックをredditに依頼し、Twitterにも共有しました。 明らかに、それはスタックエクスチェンジのための適切なコンテンツではなく、削除されたが、Cardanoのredditでは1000以上のビュー(!)を持っていたので、私たちは到達に満足しています。\n・https://www.reddit.com/r/CardanoDeveloper/comments/18fv1u4/blockfrost sdk updates feedback/\n・https://twitter.com/blockfrost io/status/1734210032886051231\n\nまた、Jean-Baptiste Pinalie(ありがとう!)によるGolang SDKのフィードバックを受け取り、実際にアップグレードのバグを見つけました。https://github.com/blockfrost/block-go/pull/70を参照してください."
+    },
+    {
+      "no": 4,
+      "promise": "SDKの最終安定リリース.",
+      "criteria": "SDKは新しいバージョンをリリースしました.",
+      "report": "・報告書を閉じる\n・動画を閉じる\n\nリリース:\n・ブロックフロスト錆 1.0.0\n・ブロックフロスト・ハッセル 0.9.0.0\n・ブロスト・パイソン 0.6.0\n・ブロックフロストゴー 0.2.0\n・ブロックフロストjs 5.5.0"
+    }
+  ]
+}

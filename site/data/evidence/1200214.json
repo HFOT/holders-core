@@ -1,0 +1,79 @@
+{
+  "title": "StablePay: Crypto Payment Widget to Allow Decentralized Stablecoins to be Used for Payments in Merchant Websites",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "・Design of the widget in Figma.",
+      "criteria": "・The figma design should show the StablePay widget. This should contain:\n・Three stages of the checkout flow:\n・\"Pay with StablePay\" button.\n・\"Select token and network\" stage.\n・\"Submit transaction\" stage.\n・Proposed fonts and colors.\n・Proposed texts to be used in each stage.\n・The proposed fonts, colors and texts in the figma design are intended to be non-strict guidelines for the actual implementation in future milestones.",
+      "report": "Here is the evidence of milestone completion:\nv1: https://www.figma.com/design/qdFEFQzI6ePaegPO2CdJ6f/StablePay-Design?node-id=0-1&node-type=canvas&t=POkPS3GcZZn3eD08-0\nv2: https://www.figma.com/design/ZGKUIBLGwpoLD4eAPE287e/StablePay-Changes?node-id=0-1&node-type=canvas&t=e0mthxsORq7TyVk7-0\nNote that, in v1, we designed the checkout flow exactly as originally planned and as described in the acceptance criteria, with 3 stages (\"Pay with StablePay\" button, \"Select Token and Network\" modal and \"Submit Transaction\" modal). However, during the design process, we realized that we could improve the user experience by having a checkout process with 2 stages only (\"StablePay\" button and \"Transaction\" modal). This led us to the improved v2 design linked above as well.\nFor convenience, we have also included screenshots of the Figma designs in this google doc (https://docs.google.com/document/d/1yCwiiWsL294sfR8X-T_JhGapAAVCwk-wLCD9OAjTLX0/edit?tab=t.0#heading=h.vbav43m2o5pd).\nThis concludes the evidence required for completion of Milestone 1.\nWe have already progressed significantly beyond milestone 1 and we would like to share evidence of this progress beyond milestone 1 as well:\n・Part of the code is already available in this repo (https://github.com/DjedAlliance/StablePay)\n・A demo can be seen in this video (https://drive.google.com/file/d/1cD4MSXH8Qzu3ydT0gLTWpKWt8vlSYTiS/view?usp=sharing).\n\nThank you!",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "14",
+      "cost": 60000,
+      "promise": "・A Javascript SDK allowing easy interaction with Djed contracts.",
+      "criteria": "・The SDK should allow the 4 Djed smart contract operations (buy/sell stablecoins/reservecoins) to be called from Javascript.",
+      "report": "Note to reviewers: the following proof-of-achievement is identical to the proof-of-achievement that we had submitted before and that you had already approved it. We had to submit it again, because the Catalyst team asked us to resubmit the milestone statement, in order to update its date. The new milestone statement is identical to the previous milestone statement, except for the change of date. The old milestone statement, the new milestone statement and the previous proof-of-achievement are all available in the milestone module.\n\n====================================== \nStart of Resubmission of Proof-of-Achievement\n=======================================\n\nWe are pleased to report to the Cardano community that we have completed the second milestone of the StablePay project. \n# Evidence of Milestone Completion:\n・Link to Source Code in GitHub: https://github.com/DjedAlliance/StablePay\n・A brief video (from 1 to 5 minutes) walking through the code and explaining what we have done: https://www.youtube.com/watch?v=rBXhRpb66-U\n・Short written explanation (From one paragraph to half a page) of where to find each functionality in the code: https://github.com/DjedAlliance/StablePay/blob/main/README.md\n\n# Acceptance Criteria:\n・\"The SDK should allow the 4 Djed smart contract operations (buy/sell stablecoins/reservecoins) to be called from Javascript\": the four javascript functions to buy and sell stablecoins and reservecoins have been implemented in the following two files:\n・https://github.com/DjedAlliance/StablePay/blob/main/djed-sdk/src/djed/stableCoin.js\n・https://github.com/DjedAlliance/StablePay/blob/main/djed-sdk/src/djed/reserveCoin.js\n\nThank you, Cardano community, for your support!\nThank you, Catalyst reviewers, for evaluating our proof of achievement.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 3,
+      "month": "15",
+      "cost": 40000,
+      "promise": "・StablePay Widget Frontend",
+      "criteria": "・The widget should be embeddable in a webapp.\n・The widget should follow the designs produced in milestone 1 as guidelines in relation to layout, colors, fonts and text.\n・Some deviations from the guideline designs are acceptable. (For example: we may, in the course of our project, find better colors, fonts and texts; or the shapes and icons available in the UI framework used may differ slightly from the shapes and icons in the design tool used in Milestone 1.)\n\nNote: the widget does not need to be functional in this milestone. For it to be functional, completion of the next milestone is needed.",
+      "report": "We are pleased to report to the Cardano community that we have completed the third milestone of the StablePay project. \n# Evidence of Milestone Completion:\n・Link to Source Code in GitHub: https://github.com/DjedAlliance/StablePay\n・The widget code is in this folder: https://github.com/DjedAlliance/StablePay/tree/main/stablepay-sdk\n・A brief video (from 1 to 5 minutes) walking through the code and explaining what we have done: https://youtu.be/62vEPQnP0P8\n・Short written explanation (From one paragraph to half a page) of where to find each functionality in the code: https://github.com/DjedAlliance/StablePay/blob/main/README.md\n\n# Acceptance Criteria:\n・\"The widget should be embeddable in a webapp.\"\n・Please see the video evidence linked above, which shows the widget embedded in a demo webapp.\n・The source code of the demo webapp can be found at: https://github.com/DjedAlliance/StablePay-MerchantWebsiteDemo .\n・A live deployment of the demo webapp is available at: https://demo.stablepay.stability.nexus/ \n・\"The widget should follow the designs produced in milestone 1 as guidelines in relation to layout, colors, fonts and text. Some deviations from the guideline designs are acceptable. (For example: we may, in the course of our project, find better colors, fonts and texts; or the shapes and icons available in the UI framework used may differ slightly from the shapes and icons in the design tool used in Milestone 1.)\"\n・The implemented widget follows exactly the designs produced in milestone 1. There are no deviations.\n・For convenience, here is the link to the design document that we submitted in our proof-of-achievement of milestone 1: https://docs.google.com/document/d/1yCwiiWsL294sfR8X-T_JhGapAAVCwk-wLCD9OAjTLX0/edit?pli=1&tab=t.0#heading=h.vbav43m2o5pd \n・\"Note: the widget does not need to be functional in this milestone. For it to be functional, completion of the next milestone is needed.\"\n・As of now, the widget is already functional. Therefore, our current development stage",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "16",
+      "cost": 10000,
+      "promise": "・Make the widget functional by integrating it with the Djed SDK, so that it makes use of the Djed SDK to interact with the Djed contract.",
+      "criteria": "・The widget should allow a user to initiate a payment. \n・The payment transaction, interacting with the Djed contract, should appear on the blockchain explorer.\n・The website where the widget is embedded should be notified of the successful payment.",
+      "report": "Dear reviewers, we had previously submitted the PoAs for Milestones 3 and 4 almost simultaneously. The PoA for Milestone 4 was refused by one reviewer because the PoA for Milestone 3 had not been signed off by the Catalyst team yet. Now the PoA for Milestone 3 has been fully approved and signed, and thus we are re-submitting the PoA for Milestone 4 exactly as we had submitted it before, unchanged. Thank you in advance for reviewing it once again.\n\n=================================\n# Begin of Resubmitted Unchanged PoA \n=================================\n\nWe are pleased to report to the Cardano community that we have completed the fourth milestone of the StablePay project. \n# Milestone Output:\n・\"Make the widget functional by integrating it with the Djed SDK, so that it makes use of the Djed SDK to interact with the Djed contract.\"\n・The widget is now functional, as shown in the demo.\n・Notably, the demo website is completely server-less and the StablePay widget is also completely server-less. Thus, StablePay is a completely decentralized solution for payments. \n\n# Evidence of Milestone Completion:\n・Link to a demo video showing the website being notified of a successful payment: https://youtu.be/cobPTo_2QnE\n・URL of the mock merchant website shown in the demo video, so that reviewers can try it and verify that it works by themselves: https://demo.stablepay.stability.nexus/\n・link to source code:\n・Djed SDK and StablePay Widget: https://github.com/DjedAlliance/StablePay\n・Demo Website: https://github.com/DjedAlliance/StablePay-MerchantWebsiteDemo\n\n# Acceptance Criteria:\n・\"The widget should allow a user to initiate a payment.\"\n・See the demo video at 23 seconds: https://youtu.be/cobPTo_2QnE?si=PcJQcHw-vFkXl1uo&t=23\n・\"The payment transaction, interacting with the Djed contract, should appear on the blockchain explorer.\"\n・See the demo video at 73 seconds: https://youtu.be/cobPTo_2QnE?si=RK254dY2kBYnoqwq&t=73\n・\"The website where the widget is embedded should be notified of the succ",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 15,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "17",
+      "cost": 30000,
+      "promise": "・Final close-out report\n・Final closeout video\n・Merchant dashboard, an explorer-like dapp where the merchant can see payments that have been made.",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・The merchant dashboard should fetch from the blockchain all payments that the merchant has received via StablePay.",
+      "report": "Dear Cardano Community,\nWe are please to report that we have completed the StablePay project. We now have a functional payment widget and merchant dashboard, as described in the final close-out-report and as demonstrated in the final close-out video. The links to the evidences promised in Milestone 5 are below.\n\nA. Output: Final close-out report.\nAcceptance criteria: Final close-out report is publicly available, with sections as per Catalyst guidelines.\nEvidence:\n・Link to final close-out report: https://drive.google.com/file/d/1-w8k-kvIIhrjB_b7R1NRDdVYWlNfei_-/view?usp=drive_link \n\nB. Output: Final close-out report.\nAcceptance criteria: Final closeout video is publicly available.\nEvidence:\n・Link to final close-out video: https://youtu.be/5Pktj89N_64\n\nC. Output: Merchant dashboard, an explorer-like dapp where the merchant can see payments that have been made.\nAcceptance criteria: The merchant dashboard should fetch from the blockchain all payments that the merchant has received via StablePay.\nEvidence: \n・Link to the source code: https://github.com/DjedAlliance/StablePay-MerchantDashboard\n・Link to the deployed merchant dashboard dapp: https://dashboard.stablepay.stability.nexus/\n・Screenshots of the dashboard: https://drive.google.com/drive/folders/1BYSqg6HUuYi_fjKM4CWk3w8m_P0yg1gL?usp=drive_link\n\n---\nFor the community's and the reviewer's convenience, we also include below links to components completed in previous milestones:\n・Djed SDK Code: https://github.com/DjedAlliance/StablePay/tree/main/djed-sdk\n・StablePay Widget Code: https://github.com/DjedAlliance/StablePay/\n・Demo Merchant Website Code: https://github.com/DjedAlliance/StablePay-MerchantWebsiteDemo\n・Deployed Demo Merchant Website: https://demo.stablepay.stability.nexus/\n\nAnd end-to-end demo is shown in the close-out report. If you would like to try it yourself, make a purchase in https://demo.stablepay.stability.nexus and then go to https://dashboard.stablepay.stability.nexus/ to see your purchase shown in the",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 24,
+      "cut": true
+    }
+  ]
+}

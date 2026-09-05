@@ -1,0 +1,86 @@
+{
+  "title": "Optim-Account: Cardano L2. Virtual ledger layer for account-model-based txs",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Documentation of the design specification of Optim Account (now “Leviathan”) Layer 2 system. This entails all core mechanisms and requirements that bridge beyond Optim's current transaction chaining and off chain systems architecture to what can be considered a more complete and scalable Leviathan implementation. Accompanying public facing documentation to start educating non-technical users of the capabilities of this product.",
+      "criteria": "・Document with system design specification requirements\n\n・Account abstraction functionality\n・Guaranteed transactions\n・Instant finality\n・Unbreakable transaction chaining\n・Layer 2 execution environment\n・Future sequencer network\n\n・Educational content for non-technical users outlining the system architecture, core mechanics, use cases, and practical deployment. \n\n・Limitations of current transactions chaining paradigm\n・Limitations of current inter dApp composability issues\n・Explanation of basic design and non-custodial asset inputs \n・Intent based transactions\n・Account Base vs eUTxO model app archit",
+      "report": "・Proof of Achievement Link to GitHub repository hosting system design specification with all details listed in requirements. \n\n** Added Gitbook as well**\nAcceptance Criteria\nDocument with system design specification requirements\n・Account abstraction functionality\n・Guaranteed transactions\n・Instant finality\n・Unbreakable transaction chaining\n・Layer 2 execution environment\n・Future sequencer network\n\nLink: https://github.com/OptimFinance/public-documents/blob/main/leviathan_wp.pdf\n**Gitbook links broken down by Acceptance Criteria area** \nLinks: Account abstraction functionality\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/system-components/optim-account-intents-to-enable-tx-chain/the-necessity-of-an-account-based-framework\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/system-components/optim-account-intents-to-enable-tx-chain/account-abstraction-and-its-role-in-leviathan\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/account-abstraction\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/account-abstraction/concept-of-account-abstraction\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/account-abstraction/technical-implementation\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/account-abstraction/security-and-operational-implications\nLinks: Guaranteed transactions\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/deterministic-transaction/guaranteed-transaction\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/deterministic-transaction\nLinks: Instant Finality\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/high-level-overview/system-design/instant-finality\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/instant-finality\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/instant-finality/liveness-and-safety\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-c",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 44,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 200000,
+      "promise": "Initial framework of the system, coded in Aiken, that bridges beyond Optim's current transaction chaining and off chain systems architecture to a fuller Layer 2 that instantiates the main features of the system. This includes on and off chain structure and initial code for a sequencer, intents, and basic account-based actions such as gas and autonomous transactions.",
+      "criteria": "・Initial codebase in Aiken that shows the core features of the Leviathan system and how they relate to the current system but extend far beyond the scope for improved performance.\n・The structure of the codebase and how it’s constituent parts fit together to form a cohesive system and will work together for fast execution with inputs from the main L1 chain.",
+      "report": "・Link to Github smart contract repo that has the primary components of the system\n・https://github.com/OptimFinance/leviathan\n・Private repository, please request access if desired\n・Link to a code walkthrough video with an overview of the repo outlining the system components, capabilities, and to further incorporate into the system’s architecture if necessary.\n・https://drive.google.com/file/d/1hrveVnvkIdS80VcgJySAx4rUAm03k869/view?usp=sharing\n\nSystem Components\nCore mechanics and system overview\n・Timestamp 1:04\n・https://github.com/OptimFinance/leviathan\n・Optim Account, user intents, transaction chaining and guaranteed transactions\n・Timestamp 1:50\n・https://github.com/OptimFinance/leviathan/tree/main/validators\n・Optim Account breakdown\n・Timestamp 3:25\n・https://github.com/OptimFinance/leviathan/blob/main/validators/account.ak\n・Intent Announcer\n・Timestamp 4:35\n・https://github.com/OptimFinance/leviathan/blob/main/validators/account.ak\n・Priority Fees\n・Timestamp 6:15\n・https://github.com/OptimFinance/leviathan/blob/main/validators/account.ak\n・Script approvals\n・Timestamp 7:28\n・https://github.com/OptimFinance/leviathan/blob/main/validators/approval.ak\n・https://github.com/OptimFinance/leviathan/blob/main/validators/approved_approval.ak\n・User Intents\n・Timestamp 8:31\n・https://github.com/OptimFinance/leviathan/blob/main/validators/intent_actions.ak\n・Leviathan Virtual Machine\n・Timestamp 12:10\n・https://github.com/OptimFinance/leviathan/blob/main/validators/intent_actions.ak\n・13:11 Cardano dynamic tiered fee scheme\n・Timestamp 13:11\n・https://github.com/OptimFinance/leviathan/blob/main/validators/intent_actions.ak",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 24
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 137500,
+      "promise": "Full working code base of a prototype of Leviathan with all features necessary for audit. This will complete the bridge beyond Optim’s current systems architecture to a fuller Layer 2 (aka, Leviathan). This implementation will have code completion that makes all the features of the system functional. This includes on and off chain proof of a working sequencer, intents, and basic account-based actions such as gas and autonomous transactions.",
+      "criteria": "・Minimum Viable Prototype working implementation deployed on a private Cardano testnet environment but without a full front-end as a proof of concept.\n・Initial working prototype video walkthrough detailing the state of the deployment, a summary of transaction histories explaining the sequence of interactions and any lessons learned in",
+      "report": "・Link to GitHub repository of initial testnet code implementation\n・https://github.com/OptimFinance/leviathan\n・Link to smart contracts deployed on testnet\n・Leviathan Address: https://cardanoscan.io/tokenPolicy/5c69fca1d9c00a0d39f58a8a07df1f625053e8dd46298640b0842522\n・Optim Account Address: addr1w9wxnl9pm8qq5rfe7k9g5p7lra39q5lgm4rznpjqkzzz2gsafje6g\n・Bridge Tx: https://cardanoscan.io/transaction/202b1d2d66f4d4fd4415cce3000193d63d3b7abd79f4cd20cb4f4e35d352ea54\n・Link to a video walkthrough of the full working code prototype\n・https://drive.google.com/file/d/1-FnJNwNcyxAyX48j4pF86VggMFFnqEqL/view?usp=sharing\n・Link to a report hosted on GitHub outlining the interactions and capabilities achieved in this implementation\n・https://github.com/OptimFinance/leviathan/blob/main/Leviathan%20Protype%20Report.pdf",
+      "kinds": [
+        "chain",
+        "code",
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 150000,
+      "promise": "Complete an audit of the Leviathan system after a successful testnet of the basic features and first dApp deployment. Any findings, upgrades, or improvements identified in the initial audit that are implemented in the smart contracts will result in a secondary audit of fixes to assess the security of any changes made to the codebase after the initial audit.",
+      "criteria": "・Initial audit report assessing system design and security vulnerabilities received from auditing firm. \n・Protocol updates and improvements based on this assessment will be submitted for a secondary audit if any code changes are made.",
+      "report": "・Link to GitHub repository or GitBook page where initial audit report is published.\n・https://optim-finance.gitbook.io/optim-finance/leviathan/english/security-review\n・Link to Github repository with any protocol updates and improvements based on the initial audit \n・https://github.com/OptimFinance/leviathan\n・PDF file with evidence of second audit scheduled if necessary \n・Not needed",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "9",
+      "cost": 75000,
+      "promise": "Live public testnet environment and accompanying documentation explaining how to utilize the Leviathan application to a non-technical user base. Leviathan L2 account-based smart contract model extends capabilities for more complex intent-based dApp interactions showcasing composability and settlement with increased transaction speeds from sequencer throughput. This will include a testnet deployment of an automated airdrop dApp using gas and automatic tx execution.",
+      "criteria": "・Public testnet deployment of a working Leviathan L2 system enabling intent-based fast transaction execution\n・Article explaining how to interact with the testnet dApp.",
+      "report": "・Link to the public testnet application hosted on the Optim website\n・https://app.optim.finance/leviathan\n・Link to Medium article or GitBook documentation with educational information on how to successfully interact with the public testnet\n・https://optim-labs.medium.com/leviathan-mainnet-beta-guide-afda0ca6a655?sharedUserId=optim-labs",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 6,
+      "month": "10",
+      "cost": 112500,
+      "promise": "Initial Leviathan implementation deployed on Cardano mainnet. Showcase the first dApp using the basics of the architecture during a functioning mainnet Beta. A usable dApp will be implemented whereby a user can feed transaction fee gas into an Optim Account then have it execute automatic, intermittent airdrop claims autonomously based on eligible Liquidity Bonds confirmed in wallet.\nFollowed shortly by, \nFull Leviathan application deployed on Cardano mainnet. A feature complete Leviathan Layer 2 with multiple working dApps (at least 2) and scalable architecture ready for other builders to begin building applications on top of.",
+      "criteria": "・Public release of the first Optim Account based model dApps utilizing the underlying Leviathan infrastructure.\n・Delivered infrastructure product with two working dApps showcasing system robustness and scalability.\n・Initial documentation for other builders to begin building dApps on Leviathan.\n・“Proof of Project” report and “Proof of Demonstration” video that meet all Fund 11 Final Milestone requirements, with a copy of all requirements when given.",
+      "report": "・Link to full public mainnet deployment hosted on Optim Finance website.\n・https://app.optim.finance/leviathan\n・Link to functioning Asset Transfer / Airdrop dApp deployed on Leviathan \n・https://app.optim.finance/leviathan#pay\n・Link to functioning OADA Swap module dApp deployed on Leviathan\n・https://app.optim.finance/leviathan#swap\n・Link to initial Gitbook documentation for building on Leviathan \n・https://optim-finance.gitbook.io/optim-finance/leviathan/english/system-architecture\n・https://optim-finance.gitbook.io/optim-finance/leviathan/english/core-concepts\n・https://optim-finance.gitbook.io/optim-finance/leviathan/english/system-components\n・https://optim-finance.gitbook.io/optim-finance/leviathan/english/processes\n・https://optim-finance.gitbook.io/optim-finance/leviathan/english/high-level-overview\n・Project Close Out Report\n・https://drive.google.com/file/d/1NtQE1y7zBgy7lX23DT7a6zCuNJeech6Q/view?usp=sharing\n・Project Close Out Video\n・https://www.youtube.com/watch?v=VOdCDKpIqh8",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

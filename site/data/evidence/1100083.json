@@ -1,0 +1,44 @@
+{
+  "title": "Cardanoscan API Javascript SDK",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 19200,
+      "promise": "・Add support for authentication\n・Address APIs\n・Asset APIs\n・Block APIs\n・Network APIs",
+      "criteria": "APIs mentioned in the outputs are implemented and verifiable using the public GitHub PR",
+      "report": "・auth support added\n・address APIs implemented\n・asset APIs implemented\n・block APIs implemented\n・network APIs implemented\n\nGithub PR - https://github.com/StricaHQ/cardanoscan-js/pull/1",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 19200,
+      "promise": "・Pool APIs\n・Reward Account APIs\n・Transaction APIs",
+      "criteria": "APIs mentioned in the outputs are implemented and verifiable using the public GitHub PR",
+      "report": "・Add support for Pool APIs\n・Add support for Rewards APIs\n・Add support for Transaction APIs\n\nGitHub PR - https://github.com/StricaHQ/cardanoscan-js/pull/2",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25600,
+      "promise": "・Release the SDK on NPM\n・Link to NPM package\n・Close-out report and video",
+      "criteria": "・Javascript SDK released on NPM\n・Release verifiable using public URL to the npm package\n・Close-out report and video",
+      "report": "・SDK Released on NPM - https://www.npmjs.com/package/@stricahq/cardanoscan-js\n・API Doc - https://docs.strica.io/lib/cardanoscan-js/index.html\n・GitHub - https://github.com/StricaHQ/cardanoscan-js\n\nPDF Report - https://drive.google.com/file/d/14g8T7D6QAUt_JWpeeS3_ALLfTYPRYODF/view?usp=sharing\nDemo and Close-Out Video - https://youtu.be/7GAG9JUm47A",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

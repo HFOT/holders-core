@@ -1,0 +1,79 @@
+{
+  "title": "Tamper-proof Certificate System",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 10000,
+      "promise": "・Create mockups, provide data for user FAQs, and include instructional video for users.\n・Revise the database design.\n・Identify API endpoints for each module.\n・Develop the backend codebase.\n・Successful completion of associated tasks in the provided task list",
+      "criteria": "1. For user guidance:\n・Create 1 mockup for Frequently Asked Questions.\n・Provide a list of 10 questions and answers.\n・Include 1 instructional video for user guidance.\n\n2. API Endpoint Identification:\n・Compile a comprehensive list of implemented APIs and those planned for future implementation for each module.\n\n3. Database Redesign:\n・Create 1 diagram illustrating the redesigned database structure.\n\n4. Backend Code Implementation:\n・Upload the backend codebase to Bitbucket.\n\n5.Task Completion: \n・Document a detailed to-do list outlining completed and pending tasks.",
+      "report": "1. For user guidance:\n・Create 1 mockup for Frequently Asked Questions. (https://drive.google.com/file/d/1Q0gwX7MdwlY2_B4xRaU-0sdb7Rcs3DLk/view?usp=drive_link)\n・Provide a list of 10 questions and answers. (https://docs.google.com/document/d/1jiSAzGaHhJf6xMsC49ibfIcwaHcSE0SjHtJQfibgJ1g/edit?usp=sharing)\n・Include 1 instructional video for user guidance. (https://www.youtube.com/watch?si=wF4rsN1K3AEg8yPR&v=nlOwO1o_LbU&feature=youtu.be)\n\n2. API Endpoint Identification:\n・Compile a comprehensive list of implemented APIs and those planned for future implementation for each module. (https://docs.google.com/spreadsheets/d/1rw5UzUJ6jSra7BNJZZ2ZC15VOe5xdmYO/edit?usp=drive_link&ouid=100299821010526526369&rtpof=true&sd=true)\n\n3. Database Redesign:\n・Create 1 diagram illustrating the redesigned database structure. (https://drive.google.com/file/d/1qK-qPb9JwvQW6A__lKhAvTiJD3w615c5/view?usp=drive_link)\n\n4. Backend Code Implementation:\n・Upload the backend codebase to Bitbucket. (https://bitbucket.org/fund11/utcert-service/src/main/)\n\n5. Task Completion: \n・Document a detailed to-do list outlining completed and pending tasks. (https://drive.google.com/file/d/1_U1o9cbQYi1DoqGBB6-N_95AaPd1-JoF/view?usp=drive_link)",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 7
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 15000,
+      "promise": "Implement mockup FAQ\nRe-structure old API, optimal code\nUpgrade Pinata plan to store IPFS file\nDeploy development environment",
+      "criteria": "1. Implement mockup FAQ\n・ Develop a new user interface (UI) page for the Frequently Asked Questions (FAQ) section.\n\n2. Re-structure old API, optimal code\n・ Refactor the code to make it cleaner, more efficient, and easier to maintain\n・ Upload backend code to Bitbucket\n\n3. Upgrade Pinata plan to store IPFS file\n・ Upgrade Pinata plan to 'Picnic plan'\n\n4. Deploy the development environment\n・ Set up a development server or environment to host the website and API.",
+      "report": "*Note: To ensure security, from milestone 2, we will fork the project from Bitbucket (private) to GitHub (public) for each phase. The GitHub project will delete sensitive configurations such as connection string, and API key... If you have any questions, please message us.\n1. Implement mockup FAQ.\n・Develop a new user interface (UI) page for the Frequently Asked Questions (FAQ) section. link\n\n2. Re-structure old API, optimal code.\n・Refactor the code to make it cleaner, more efficient, and easier to maintain, List task from Jira. Link\n・Upload Backend code to Github. link\n・Upload Frontend code to Github. link\n\n3. Upgrade Pinata plan to store IPFS file.\n・ Upgrade Pinata plan to 'Picnic plan'. link\n\n4. Deploy the development environment.\n・Set up the database for develop environment. link\n\nImage: Overview cloud development database\n・Set up a development server or environment to host the website and API. https://utcert.vercel.app",
+      "kinds": [
+        "code",
+        "doc",
+        "live"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 19500,
+      "promise": "1. Contact management module\n2. Certificate ban module\n3. Export certificate QRcode module\n4. Implement multiple sign-on NFTs Module\n5. Manage test scores during student’s studies",
+      "criteria": "1. Contact management module\n・ Implement a feature where the issuer can only send a certificate when the holder accepts the contact.\n・ Ensure that holders do not receive unwanted certificates, thereby maintaining a more streamlined and efficient communication process.\n\n2. Certificate ban module\n・ Create a module to handle invalid certificates that are discovered after the issuer has issued them.\n・ Implement a process to invalidate a certificate if it is found to be fraudulent or incorrect.\n\n3. Export/view certificate QRcode module\n・ Allow holders to export certificates via QR code for easy sha",
+      "report": "The completion of each module (total 5 modules) is evidenced by:\nThe Link to the project source on GitHub is there:\n・ Front-end at Github: https://github.com/UTCert/UTCert-web\n・ Back-end at Github: https://github.com/UTCert/UTCert-service\n\nFor the places for 5 modules, please refer to the video for the use cases: https://www.youtube.com/watch?v=1dYJXxYr9Ys\n・Endpoints of Contact are: 'contact/create', 'contact/get-contacts', 'contact/update-status'\n・Endpoints of Certificate ban are: 'certificate/check-legal/{identifyNumber}', 'certificate/ban-certificate'\n・Endpoints of Multiple sign-on are: 'certificate/create', 'certificate/ban-multiple-certificates'\n・Endpoints of Store score is: 'certificate/upload-attachment'\n・Export/view certificate QRcode: this task is only handled by FE at src\\content\\Management\\Transactions\\BulkActions.tsx\n\nA list of completed: stories and tasks in Jira Epic at UT-35. Please use credential (reviewercatalyst@gmail.com/Catalyst@2023).\nDevelopment environment: https://dev-utcert.texblabs.com/",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 9,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 10500,
+      "promise": "1. Perform both automation and manual testing.\n2. Fix/improve issues.",
+      "criteria": "1. Perform both automation and manual testing.\n・ Conduct manual testing to identify any issues or bugs in the system.\n・ Use JMeter to perform performance testing and ensure that the system can handle the expected load.\n・ Document any issues found during testing and prioritize them through Jira\n\n2. Fix/improve issues.\n・ Address the issues identified during testing and make necessary improvements to the code.\n・ Update the documentation and communicate any changes to the team.",
+      "report": "1. Perform both automation and manual testing:\n・Report for automation testing: https://docs.google.com/document/d/1Wrf1PDAHKvZ0X4FgBWixlyE6z_HbM5Hh/edit?usp=drive_link&ouid=100299821010526526369&rtpof=true&sd=true\n・List issues for manual testing: https://fund11.atlassian.net/browse/UT-60. Please use this credential (reviewercatalyst@gmail.com/Catalyst@2023).\n\n2. Fix/improve issues:\n・Code changes (fixing issues) from FE: https://github.com/UTCert/UTCert-web/pull/6/commits/1560b6a7bd5d46825109ebd9a0262e3400894b74\n・Code changes (fixing issues) from BE: https://github.com/UTCert/UTCert-service/pull/4/commits/e42e027d23cc5c6a2e2576e77abe7c637d103747\n\nDevelopment environment: https://dev-utcert.texblabs.com/",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 5
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 10000,
+      "promise": "1. Introduce products to users\n2. Build a YouTube channel\n3. Create a bug bounty contest\n4. Continue to improve according to the feedback.",
+      "criteria": "1. Introduce products to users\n・ Cooperate with the Cardano Vietnam community to introduce products \n・ Use social media (Facebook) to reach the target audience.\n\n2. Build a YouTube channel\n・ Create a YouTube channel to showcase the products and provide tutorials and guides.\n\n3. Create a bug bounty contest\n・ Launch a bug bounty contest to encourage users to report any bugs or vulnerabilities.\n・ Acknowledge and reward the participants for their contributions.\n\n4. Continue to improve according to the feedback. \n・ Collect feedback from users through surveys, reviews, and support tickets.\n・ Impleme",
+      "report": "1. Introduce products to users\n・ The photos introduce the product meeting: https://drive.google.com/drive/folders/1eVrIKh471j0RudIyBJEtGYLXVMw3xwR8 \n・ Facebook link of the project: https://www.facebook.com/utcert.io \n\n2. Build a YouTube channel\n・YouTube link with tutorial videos (at least 5 videos): https://www.youtube.com/playlist?list=PLrldtZfs6vS3oNv2o43FTG0OMhd3rFIUJ&si=CKVWO2qHYQHFZHqz \n・Video 1: Register/Login. link\n・Video 2: Connect accounts. link\n・Video 3: Create/sign/send certificates (Single Sign). link\n・Video 4: Create/sign/send certificates (Multiple Signs). link\n・Video 5: Check policyID/Ban certificates. link\n\n3. Create a bug bounty contest\n・The Link to post on the project: https://www.facebook.com/utcert.io/posts/pfbid02goyt1wGHsiqXR6BTLERrYPwAfRMKo9XRuLVumZGAMk3kGHJDdAQ4pair7SUw5bxVl\n・The Link to the bug bounty contest results on the project Facebook: https://www.facebook.com/utcert.io/posts/pfbid02f9EG7qitHosgPv6DfhPesk9xdo7XnYjXUA4hno8TF4ScEvfSwTcRJAfcX8DJyzbNl \n・Prizes & Bugs reported: https://docs.google.com/spreadsheets/d/1KukJA-rRGJcPWqmceRw5Q8_TOVhEA9WBw1PD3lRKvW8/edit?fbclid=IwY2xjawITET1leHRuA2FlbQIxMAABHe3TI64cGa3rU3EbSsHPfegr2lQZRl9J4T7rdk8ZDylbCRJ-tF4lHaNXHg_aem_aJdYmZO1pVqSBfsfEB7BnA&gid=0#gid=0 \n・Invoice for bonus payment: https://drive.google.com/drive/folders/1-U2AQqfGJYoapq49JATFjqnXHoZpWfLn \n\n4. Continue to improve according to the feedback.\n・Ticket about feedback on Jira (UT-68). Please use this credential (reviewercatalyst@gmail.com/Catalyst@2023).\n・Code changes:\n・Front-end: https://github.com/UTCert/UTCert-web/pull/7/commits/f0b561319e8f61b17d0b0a5fbbe69482d434011a \n・Back-end: https://github.com/UTCert/UTCert-service/pull/6/commits/547d5cec5fef21129a65545965389e02527e6a55 \n\n 5. Closeout report\n・ A video introduces the full features of the project on YouTube (https://www.youtube.com/watch?v=_qs_6O5tzYE) and Facebook (https://www.facebook.com/watch/?v=1067402191823544)\n・Closeout Report: https://docs.google.com/document/d/1s3llavazkn",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 34,
+      "cut": true
+    }
+  ]
+}

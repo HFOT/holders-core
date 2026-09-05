@@ -1,0 +1,76 @@
+{
+  "title": "Asteria by TxPipe: A bot challenge to showcase the capabilities of the UTxO model",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40700,
+      "promise": "- a set of Aiken on-chain validators to enforce the rules of the challenge\n- documentation describing the rules of the challenge\n- example transactions executed on preprod demonstrating different interactions",
+      "criteria": "- a technical reviewer / developer is able to understand the rules of the challenge\n- feasibility of the onchain logic has been confirmed by executing transaction in a testnet",
+      "report": "We are pleased to announce the successful completion of Milestone #1 for the Asteria Catalyst project. \nMilestone goals and proofs of completion\nDocumentation describing the rules of the challenge\nWe defined the rules of the Asteria challenge. The document contains a comprehensive description of game overview, components and rules to play. \nhttps://github.com/txpipe/asteria/blob/main/rules.md\nA set of Aiken on-chain validators to enforce the rules of the challenge\nBefore implementing the source code of the game, we wrote a document describing the technical design. It contains a specification of every utxo involved, transaction diagrams and description of every check for each validator.\nhttps://github.com/txpipe/asteria/blob/main/onchain/docs/mvp-design/design.md\nThen we implemented the onchain Aiken code that can be found here:\nhttps://github.com/txpipe/asteria/tree/main/onchain/src\nExample transactions executed on preprod demonstrating different interactions\n- Create Asteria transaction:\nhttps://preprod.cexplorer.io/tx/9a284655d63d64a1d179755442625ab6eafda098e3ce4175ab499b030f9102f2\n- Create Pellet transaction:\nhttps://preprod.cexplorer.io/tx/f86cd01d1372e4818ca017e9aa046597d3530e6272e029200eff4c0e9375772c\n- Create Ship transaction:\nhttps://preprod.cexplorer.io/tx/c40015a8acfd131b3bdd9cd19e146aca14f8bcd5426495e253b3b19ae0bb5a55\n- Move Ship transaction:\nhttps://preprod.cexplorer.io/tx/ceea9d447cc6395285a2c13ed271023bf02c795a21cacff8e4028c3577674594\nVideo: https://youtu.be/egaK8WRNSAE?feature=shared\nNext Steps\nWe have already accomplished the goals of milestone 1 designing and implementing the onchain code, also submitting several transactions to preprod. Next step consists on developing algorithms for creating random grids of the game, implementing them, submitting a concrete map to preprod and documentation explaining how to explore it.\nWe are confident that we’ll be able to accomplish the goals in time.",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 17
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 40622,
+      "promise": "・a script that can be used to generate random 2D maps for the challenge\n・a script that can be used to submit the map on-chain\n・an initial map for the preprod network\n・a document explaining how to explore the on-chain map",
+      "criteria": "- a technical reviewer / developer can use the scripts to generate their own maps\n- feasibility of the map generation procedure has been confirmed by the submission of an example map to a testnet",
+      "report": "Evidence of Milestone Completion\nSource code of the map generation scripts\nHelper functions to write/read csv files with random pellet params:\nhttps://github.com/txpipe/asteria/blob/main/offchain/tests/admin/pellets/utils.ts\nScript where we call the sampling functions with specific params to write csv:\nhttps://github.com/txpipe/asteria/blob/main/offchain/tests/admin/pellets/sample-pellets.ts\nScript that reads a csv with pellet params and creates the pellets onchain (calls the next item's offchain function):\nhttps://github.com/txpipe/asteria/blob/main/offchain/tests/admin/pellets/create-pellets.ts\nOffchain function for creating pellets:\nhttps://github.com/txpipe/asteria/blob/main/offchain/transactions/admin/pellets/create-pellets.ts\nScript that creates Asteria (calls the next item's offchain function):\nhttps://github.com/txpipe/asteria/blob/main/offchain/tests/admin/asteria/create-asteria.ts\nOffchain function for creating Asteria:\nhttps://github.com/txpipe/asteria/blob/main/offchain/transactions/admin/asteria/create-asteria.ts\nDocumentation explaining how to explore the on-chain maps\nhttps://github.com/txpipe/asteria/pull/63\nA video showcasing how to generate maps\nhttps://youtu.be/1AXtyngqBJI\n\nLinks to sample transactions in public explorers\nCreate Asteria:\nhttps://preprod.cexplorer.io/tx/e4f2a894bb2d721eb7f8a16bd036094a7409fb76e67843904bb1961fe46cda87\nCreate Pellets:\nhttps://preprod.cexplorer.io/tx/eca5165af45091e4050de1979c61e4b55656652fad661f03f8197f401a51e17d\n\nAdditional information showcasing the project by Gimbalabs\nhttps://youtu.be/Q3U5ZEFqfUQ?si=03nh5tN5g-r2Yj-j",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 21
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40624,
+      "promise": "- a web frontend to serve as entry-point for the challenge\n- a basic map visualizer to show the locations of the ships in real-time\n- detailed instructions on how to participate of the challenge",
+      "criteria": "- a developer can understand how to participate by browsing the challenge frontend\n- any user can appreciate the status of the game by looking at the visual map",
+      "report": "- a public website serving as entry-point to the challenge \nThe public-facing website, accessible at asteria.txpipe.io, serves as the main entry-point for the Asteria challenge. It includes a landing page that presents an overview of the game, describing objectives and unique elements of Asteria’s gameplay experience.\n- a public map visualizer showing status of the game\nA map visualizer, available at asteria.txpipe.io/map, tracks and displays the current status of the challenge. This component visualizes the positions of all active participants (ships and pilots), and locations of in-game elements, such as fuel pellets and reward zones.\n- end-user documentation with instructions on how to participate in the challenge\nDetailed user documentation is provided at asteria.txpipe.io/how-to-play, which includes; step-by-step instructions on how to join and engage with the challenge, and a glossary of terms to clarify game-specific language and mechanics.\n\nCurrent game data corresponds to a test challenge we did earlier this year in Cardano Buidler Fest with participants from the event.",
+      "kinds": [
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 40624,
+      "promise": "- an audit for the on-chain code describing the findings and applied changes.\n- the official challenge publicly available on mainnet\n- all rewards from sponsors deposited on-chain\n- communication of the challenge through all social media channels available to TxPipe",
+      "criteria": "- the challenge is available in mainnet and developers can participate\n- there's reasonable awareness of the challenge on social media\n- sponsor rewards have been deposited on-chain",
+      "report": "- a report of the audit performend on the on-chain code\n https://drive.google.com/file/d/1lBFjO4WPb58CGe28ktuCAwYVjTqYDr-W/view?usp=sharing \n- a public website now showing instructions for mainnet participation\n https://asteria.txpipe.io/\n- a report on the communication efforts done by TxPipe with links to public posts\nA dedicated thread on X detailed the gameplay and rewards, and the main announcement post received over 400 engagements. The challenge was also publicly announced during TxPipe’s session at Rare Evo, to a full-room audience. In the TxPipe Discord server, a dedicated Asteria channel was created, generating over 1,000 messages covering development updates and the live mainnet challenge.\n Thread on X explaining gameplay and rewards\n Dedicated channel in TxPipe's Discord server\n- links to mainnet transactions in public explorers showing the rewards deposits\n Mainnet challenge reward of 10k ADA\n Rewards from other sponsors",
+      "kinds": [
+        "chain",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 29002,
+      "promise": "- a detailed report showing participation metrics (devs, activity, progress, winners) so far\n- a close-out video following Catalyst guidelines\n- a close-out report following Catalyst guidelines\n- publicly available source-code containing all artifacts custom-built for the challenge",
+      "criteria": "- the information provided allows reviewers to evaluate participation in the challenge\n- the close-out video allows reviewers and community to appreciate the outputs of the finalized proposal\n- the close-out report allows reviewers to understand the process and outcome of the finalized proposal\n- the source-code includes all artifacts required to replicate the challenge if required",
+      "report": "- a participation metrics report uploaded to Google Drive\nParticipation metrics on Asteria can be found at the purposely built leaderboard (https://asteria.txpipe.io/leaderboard), which includes:\n・Total number of minted ships = 35 at the moment of PoA submission\n・Distance of each ship relative to the center of the map\n・Ranked list of participants from closer to farthest\n\n﻿\nAdditionally, we can also consider the following engagement metrics for the project:\n・800+ engagements between TxPipe’s and Santiago’s X announcements\n・10 Cardano projects sponsored CNTs rewards for the mainnet challenge\n・26 stars and 6 forks on the Asteria open-source repo\n・1000+ messages in the Discord dedicated channel\n\n- a close-out report uploaded to Google Drive\nhttps://drive.google.com/file/d/1NgygzLezEM-PNFRkMVEsvZlZEk___pd0/view?usp=sharing \n\n- a short summary video uploaded to Google Drive\nhttps://youtu.be/5z3OSggGUvU \n\n- publicly available source-code at https://github.com\n Main application source-code https://github.com/txpipe/asteria \n Participation starter-kit https://github.com/txpipe/asteria-starter-kit \n\n- all artifacts are open-source: https://github.com/txpipe/asteria?tab=Apache-2.0-1-ov-file \n on-chain validator code https://github.com/txpipe/asteria/tree/main/onchain/src \n map generation code https://github.com/txpipe/asteria/tree/main/offchain/scripts \n documentation https://github.com/txpipe/asteria/tree/main/docs \n visual assets https://github.com/txpipe/asteria/tree/main/frontend",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 27
+    }
+  ]
+}

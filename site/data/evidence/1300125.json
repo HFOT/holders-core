@@ -1,0 +1,74 @@
+{
+  "title": "Lock'n': Cardano L1 & Hydra L2 support for bypp IoT smart hardware products (e.g. GachaGacha)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 75000,
+      "promise": "・Design Document for a Blockchain Backend Utilizing Cardano L1 and Hydra L2 for Real-Time Sensor Data Processing\n・Documentation for Setting Up a Prototype Environment Based on the Above Design Document\n・Performance Measurement Results Evaluating the Above Environment Using Sample IoT Devices",
+      "criteria": "・Contents of the Blockchain Backend Design Document\n\n・Requirements Specification\n・System Block Diagram\n・Sequence Diagram\n\n・Contents of the Prototype Environment Setup Document\n\n・Linux Setup Documentation for Cardano and Hydra\n・Environment Setup Scripts\n・Performance Measurement Scripts\n\n・Performance Evaluation Metrics in the Prototype Environment\n\n・Response Time: Time from an IoT device event to the start of blockchain processing\n・Turnaround Time: Time from the occurrence of an IoT device event to the completion of a transaction\n・Throughput: Number of transactions processed per unit time",
+      "report": "I have prepared the Proof of Achievement for Milestone 1.\nPlease kindly review it.\n\n1. Blockchain Backend Design Document on the Web\n - https://bypp.tech/en/docs/category/design-concept\n2. Prototype Environment Setup Manual on the Web\n - https://bypp.tech/en/docs/f13/eval/enviroment-hydra\n - https://github.com/bypptech/simple-hydra-client\n - https://github.com/bypptech/cardano-cli-wrapper\n3. Performance Measurement Results on the Prototype Environment on the Web, Along with the Source Code of the Measurement Programs\n - https://bypp.tech/en/docs/f13/eval/benchmark-hydra\n - https://github.com/bypptech/simple-hydra-client\n - https://github.com/bypptech/cardano-cli-wrapper\n\nAppendix: Blockchain EXPO Spring 2025\n\n- https://bypp.tech/en/docs/f13/expo2025spring",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 80000,
+      "promise": "・OSS Cardano L1 Client SDK\n・OSS Hydra L2 Client SDK\n・Developer Documentation for the Above SDKs\n・A Demo Video Showcasing the Above SDKs",
+      "criteria": "・Primary Features Realized by the OSS Cardano L1 Client SDK\n\n・Initiating and Ending ESCROW Transactions\n\n・Primary Features Realized by the OSS Hydra L2 Client SDK\n\n・Synchronization Between L1 and L2 Wallets\n・Settlements Between L2 Wallets\n\n・Contents of the OSS SDK Developer Documentation\n\n・API Specifications\n・Sample Programs\n\n・A Demo Video Showcasing a operation of the OSS SDK\n\n・the OSS SDK for seamless operation checks",
+      "report": "I have prepared the Proof of Achievement for Milestone 2.\nPlease kindly review it.\n1.Cardano L1 Client SDK Repository Published on GitHub\n2.Hydra L2 Client SDK Repository Published on GitHub\n・We centrally manage the L1/L2 open-source SDKs in one repository.\n・https://github.com/bypptech/cardano-hydra-wrapper-api\n\n3.Developer Documentation for Each OSS SDK Published on the Web\n・https://bypp.tech/en/docs/cardano/f13/arch/api/\n・https://bypp.tech/apidoc/cardano-hydra-wrapper-api/\n\n4.A Demo Video Showcasing the Published Each OSS SDK on the Web\n・https://www.youtube.com/watch?v=tXYD8XefoD8\n\nAppendix. Hydra node v0.22.3 Evaluation Data\n・https://bypp.tech/en/docs/cardano/f13/eval/benchmark-hydra-0223",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 70000,
+      "promise": "・IoT Device bypp Compatible with Cardano\n\n・Gacha Gacha\n・Smart Light\n・Smart Outlet\n・Smart Key",
+      "criteria": "・Customize the bypp's IoT Solution \"Lock’n’\" to Achieve the Following:\n\n・Customization of IoT Device Software and Hardware\n・Integration of the IoT Solution with OSS SDK",
+      "report": "Dear Reviewer,\nThank you very much for your review. Based on the comments, we will resubmit the evidence.\nWe kindly ask for your confirmation.\n\nOutput: \nIoT Device bypp Compatible with Cardano\nAcceptance criteria: \nCustomize the bypp's IoT Solution to Achieve the Following:\nCustomization of IoT Device Software and Hardware\nIntegration of the IoT Solution with OSS SDK\nEvidence: \n1.White Paper\nA White Paper on Cardano-compatible bypp IoT Solution Published on the web\nPlease review the revised document.\nbypp IoT Solution for Cardano and Hydra Whitepaper \nIt has been restructured to address the required white paper elements and includes the following sections:\n・Problem Definition and Challenges in Blockchain-Linked IoT Device Development\n・Response Speed Gap Between Blockchain and IoT Devices\n・Increased Gas Fees and Ledger Bloat from Microtransactions\n・Issues with Prepaid Methods Converting Native Tokens to Proprietary Points\n・Development Domain Gap\n・Summary of Problems and Challenges to Solve\n・Solution Approach to Challenges\n・Hydra\n・Solving Each Challenge with Hydra\n・Chapter Summary\n・bypp Blockchain-Compatible IoT Solution\n・Solution Features\n・Architecture\n・Flow\n・Blockchain Payment-Compatible IoT Smart Devices\n・Capsule Toy Vending Machine\n・Electromagnetic Lock\n・Lighting & Outlet\n・Roadmap and Advanced Challenges\n・Development Roadmap\n・Advanced Challenges\n・Applicable Fields\n・Appendix\n\n2.Demo Video\nA Single Demo Video Featuring Both the Annotated and Original Versions of the System Operation Sequence Driving Cardano through bypp’s IoT Solution\nAnnotated version\nOriginal version",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 30000,
+      "promise": "the bypp’s IoT Solution Operable on the Cardano Testnet\natten: We divided the original Catalyst \"Testing and Launch of the Prototype Service\" milestone into two separate but related milestones.",
+      "criteria": "・Conduct Operational Verification, Performance Measurement, and Feedback Integration for BYPP IoT Solution on the Cardano Testnet\n\n Key Verification Checklist\n・End-to-End L1 and L2 Control Triggered by IoT Device Events\n・System Resource Consumption Analysis\n・﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿﻿Measurement of Key Performance Metrics:\n\n・Response Time\n・Turnaround Time\n・Transaction Throughput",
+      "report": "Output:\nthe bypp’s IoT Solution Operable on the Cardano Testnet\natten: We divided the original Catalyst \"Testing and Launch of the Prototype Service\" milestone into two separate but related milestones.\nAcceptance criteria: \nConduct Operational Verification, Performance Measurement, and Feedback Integration for BYPP IoT Solution on the Cardano Testnet\nKey Verification Checklist\n・End-to-End L1 and L2 Control Triggered by IoT Device Events\n・System Resource Consumption Analysis\n・ Measurement of Key Performance Metrics:\n\n・Response Time\n・Turnaround Time\n・Transaction Throughput\n\nEvidence: \nA Demo Video Showcasing the Sequence of Operations of the bypp’s IoT Solution on the Cardano Testnet\n・Annotated version: https://www.youtube.com/watch?v=nGcGWIu3l6k\n・Original version: https://www.youtube.com/watch?v=TY6IkdIBgUc\n・Transaction logs of demo video operations on the Cardano Preprod Testnet\n・Hydra Head Open (CommitTX)\n・https://preprod.cardanoscan.io/transaction/cc6299d67a5bf6617ed807e4b9cf2d79d3095b07521857a8dcb532c054bc83e6?tab=metadata\n・Hydra Head Close (FanoutTX)\n・https://preprod.cardanoscan.io/transaction/f2da00225d648312d01faaf723c35ccc807b0a84b3a8e4ea667384933c9003ef?tab=metadata\n\nPerformance Measurement Results Published on the Web\n・https://bypp.tech/en/docs/cardano/f13/eval/benchmark-hydra-130\n\nAppendix: Report of Blockchain EXPO Autumn 2025\n・https://bypp.tech/en/docs/cardano/f13/expo2025autumn",
+      "kinds": [
+        "chain",
+        "other",
+        "video"
+      ],
+      "links": 12
+    },
+    {
+      "no": 5,
+      "month": "11",
+      "cost": 45000,
+      "promise": "・Final close-out report\n・Final closeout video\n\nThe following contents will be included:\n・The bypp’s IoT Solution Operating on the Cardano Mainnet\n・Stable Release of the OSS SDK\n・Latest Versions of All Documentation",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n\nThe following contents will be included:\n・The bypp’s IoT Solution Operates on the Cardano Mainnet in Full Compliance with the Requirements Specification\n・Release of the Stable Version of the OSS SDK\n・All Published Developer Documentation Updated to the Latest Versions on the Web",
+      "report": "The Final Milestone report will be followed by the Project Close-out report and video.\n\n1.Final Milestone Report\na. Final Milestone Output\n・Final close-out report\n・Final closeout video\n\nThe following contents will be included:\n・The bypp’s IoT Solution Operating on the Cardano Mainnet\n・Stable Release of the OSS SDK\n・Latest Versions of All Documentation\n\nb. Acceptance criteria\n・Final closeout report is publicly available\n・Final closeout video is publicly available\n\nThe following contents will be included:\n・The bypp’s IoT Solution Operates on the Cardano Mainnet in Full Compliance with the Requirements Specification\n・Release of the Stable Version of the OSS SDK\n・All Published Developer Documentation Updated to the Latest Versions on the Web\n\nc. Evidence\nⅰ. A Demo Video Showcasing the Sequence of Operations of the bypp’s IoT Solution on the Cardano Mainnet\n Annotated version\n Original version\n・Hydra Head Open (CommitTX)\n\n https://cardanoscan.io/transaction/554ac8cd0140d9d66247da5f6fa65bc671a679f9e1eb6636ad2a4d0bbe6585d3?tab=metadata\n・Hydra Head Close (FanoutTX)\n\n https://cardanoscan.io/transaction/a6a29455741372fa738c0c51d64c0550079b8e6559a1e110a13739abcbb56f65?tab=metadata\nii. Stable Release of the OSS SDK Published on GitHub\n OSS SDK: Cardano Hydra Wrapper API\niii. Latest Version of the Developer Documentation Published on the Web\n iii-1. Whitepaper\n iii-2. Developer Documentation\n・Architecture\n・API Documentation\n\niiii. Appendix\n Report of Blockchain EXPO Spring 2026\n\n2.Project Close-out report and video\nProject Closeout Report\nProject Closeout Video",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 11
+    }
+  ]
+}

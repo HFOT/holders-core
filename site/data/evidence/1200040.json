@@ -1,0 +1,76 @@
+{
+  "title": "Blaze: Fully Featured Ledger Emulator, Transaction Builder for the Chang Hard Fork and PlutusV3",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 30000,
+      "promise": "・Detailed issue tracking and iterative planning which describes all required emulator features for Chang hard fork and PlutusV3 support, made public\n・Technical analysis on current implementations via the cardano node, other transaction builders (CML, Lucid, e.t.c.)\n・Performance benchmarks and testing criteria",
+      "criteria": "・Proposed feature set covers all aspects of Chang hard fork and PlutusV3 capabilities\n・Technical analysis provides actionable insights for emulator development\n・Performance benchmarks are realistic and aligned with production node requirements",
+      "report": "A. Output: Public emulator planning issues for Chang, Conway governance, and PlutusV3 support.\nAcceptance criteria: The milestone requires public issue tracking and planning for the emulator work.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200040/m1.md#planning\nB. Output: Technical analysis of existing implementations.\nAcceptance criteria: The milestone requires technical analysis of `cardano-node` and transaction builders such as CML and Lucid.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200040/m1.md#technical-analysis\nC. Output: Proposed emulator feature set and scope.\nAcceptance criteria: The milestone requires a proposed feature set covering Chang hard fork and PlutusV3 capabilities.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200040/m1.md#proposed-feature-set\nD. Output: Performance baseline and test criteria.\nAcceptance criteria: The milestone requires performance benchmarks, viewable performance results, and testing criteria.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200040/m1.md#performance-baseline-and-test-criteria and https://github.com/butaneprotocol/blaze-cardano/issues/340#issuecomment-4737220251\nE. Output: Public technical discussion and review.\nAcceptance criteria: The milestone requires public technical-analysis discussion and peer review, including comments/reviews from at least two senior Cardano developers.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/pull/347, https://github.com/butaneprotocol/blaze-cardano/issues/339, and https://github.com/butaneprotocol/blaze-cardano/issues/340",
+      "kinds": [
+        "code"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 50000,
+      "promise": "・Functional prototype of core emulator features in TypeScript\n・Initial support for Chang governance features\n・Basic PlutusV3 capabilities integration\n・Unit test suite for core components",
+      "criteria": "・Emulator can simulate block production and transaction processing\n・Basic Chang governance features (voting, proposal submission) are functional\n・PlutusV3 scripts can be executed in the emulator environment\n・Unit tests cover at least 80% of core functionality\n・Prototype can be run and demonstrated in a controlled environment",
+      "report": "A. Output: Functional prototype of core emulator features in TypeScript.\nAcceptance criteria: The emulator can simulate block production and transaction processing.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200040/m2.md#implementation-evidence — block and transaction simulation is implemented by stepForwardBlock, stepForwardToSlot, submitTransaction, and awaitTransactionConfirmation in https://github.com/butaneprotocol/blaze-cardano/blob/main/packages/blaze-emulator/src/emulator.ts\nB. Output: Initial support for Chang governance features.\nAcceptance criteria: Basic Chang governance features (voting, proposal submission) are functional.\nEvidence: Governance state and epoch-boundary processing live in https://github.com/butaneprotocol/blaze-cardano/tree/main/packages/blaze-emulator/src/governance. Proposal submission, DRep voting, ratification, and enactment are tested in https://github.com/butaneprotocol/blaze-cardano/blob/main/packages/blaze-emulator/test/Governance.test.ts\nC. Output: Basic PlutusV3 capabilities integration.\nAcceptance criteria: PlutusV3 scripts can be executed in the emulator environment.\nEvidence: PlutusV3 witness handling in https://github.com/butaneprotocol/blaze-cardano/blob/main/packages/blaze-emulator/src/emulator.ts. The governance tests execute compiled PlutusV3 scripts for script DRep voting and proposal-policy redeemers, built from the Aiken fixtures in https://github.com/butaneprotocol/blaze-cardano/blob/main/packages/blaze-emulator/test/aiken/plutus.ts\nD. Output: Unit test suite for core components, with CI logs and a coverage report.\nAcceptance criteria: Unit tests cover at least 80% of core functionality, CI logs show them passing, and a coverage report shows 80%+.\nEvidence: 5 test files, 55 tests, 82.9% statement coverage from bun --filter @blaze-cardano/emulator coverage. Results table: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200040/m2.md#verification. CI logs",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 27,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "7",
+      "cost": 50000,
+      "promise": "・Full implementation of Chang governance mechanisms\n・Comprehensive PlutusV3 support\n・Tooling for creating and managing test governance scenarios\n・Enhanced transaction builder for all new transaction types\n・Comprehensive integration test suite",
+      "criteria": "・All Chang governance features (including dReps, Constitutional Committee) are fully functional, including DReps managed by scripts\n・Emulator supports all new PlutusV3 script types and capabilities\n・Governance scenario creation tools are user-friendly and well-documented\n・Transaction builder can handle all transaction types introduced by Chang and PlutusV3\n・Integration tests cover complex scenarios combining governance and smart contract interactions",
+      "report": "A. Output: Full implementation of Chang governance mechanisms.\nAcceptance criteria: The emulator supports DRep registration and delegation, proposal submission and tracking, voting, Constitutional Committee state, ratification, enactment, expiry, deposit refunds, treasury effects, constitutions, committee updates, and no-confidence actions.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200040/m3.md#implementation-evidence and https://github.com/butaneprotocol/blaze-cardano/blob/main/packages/blaze-emulator/test/Governance.test.ts\nB. Output: Comprehensive PlutusV3 support.\nAcceptance criteria: Non-trivial PlutusV3 scripts can participate in governance as script-managed DReps and proposal-policy scripts. Valid redeemers are accepted and invalid redeemers are rejected.\nEvidence: The Aiken validator is at https://github.com/butaneprotocol/blaze-cardano/blob/main/packages/blaze-emulator/test/aiken/validators/governance.ak and the generated typed scripts are at https://github.com/butaneprotocol/blaze-cardano/blob/main/packages/blaze-emulator/test/aiken/plutus.ts. The reproducible example is at https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200040/governance-demo.ts. Video walkthrough: https://youtu.be/60jULudi7NI\nC. Output: Tooling for creating and managing test governance scenarios.\nAcceptance criteria: Developers can create deterministic governance states, advance blocks and epochs, inspect proposals, and reproduce script-managed governance flows.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200040/m3.md#implementation-evidence and https://blaze.butane.dev/emulator/guides/governance-testing\nD. Output: Enhanced transaction builder for the new Chang transaction types.\nAcceptance criteria: The transaction builder supports DRep registration, update and unregistration, vote delegation, governance proposals and votes, and governance script redeemers.\nEvidence: https://github.c",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 30,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "9",
+      "cost": 40000,
+      "promise": "・REST API server which mimics common endpoints for users to submit and query a remote emulator\n・Support for different network configurations (mainnet, testnet, custom)\n・Comprehensive documentation and usage examples\n・Compatibility with different transaction builders (i.e., can build transactions in Haskell, submit them to the Blaze emulator in typescript by transferring script CBOR)",
+      "criteria": "・A live server is functioning and usable\n・The emulator boasts better configuration with regards to the chain network, timing settings (i.e. slot length, block length)\n・Full endpoint and user documentation is available at https://blaze.butane.dev\n・The emulator is independent of Blaze's transaction building\n・Emulator performance meets or exceeds predefined benchmarks",
+      "report": "A. Output: A REST API server with endpoints for submitting transactions to a remote emulator and querying its state.\nAcceptance criteria: The standalone server starts successfully and exposes health, configuration, wallet, transaction, state, OpenAPI, and Swagger endpoints. Its operation is demonstrated through a real HTTP listener and covered by integration tests.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200040/m4.md#a-rest-api-server and https://blaze.butane.dev/emulator/guides/rpc-server/\nB. Output: Support for mainnet, testnet, and custom emulator network configurations.\nAcceptance criteria: The emulator supports mainnet, preprod, preview, SanchoNet, and custom chain IDs. Slot length, slots per block, slots per epoch, and protocol parameters can be configured and inspected through the API. Tests cover the presets and overrides.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200040/m4.md#b-network-configuration\nC. Output: Comprehensive endpoint documentation and usage examples.\nAcceptance criteria: The published documentation covers server startup, health and clock queries, network configuration, wallet setup, raw CBOR submission, script publishing, governance data, OpenAPI access, Swagger UI, and cleanup.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200040/m4.md#c-documentation-and-examples and https://blaze.butane.dev/emulator/guides/rpc-server/\nD. Output: Compatibility with transactions produced by different transaction-building tools.\nAcceptance criteria: The HTTP endpoint accepts signed transaction CBOR without depending on Blaze TxBuilder. The integration test constructs and signs a transaction with lower-level Cardano serialization types, submits it through the HTTP API, advances the emulator, and verifies the resulting outputs. The current benchmark run meets or exceeds the M1 baseline for all three original scenarios.\nEvidence: https://gith",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "10",
+      "cost": 30000,
+      "promise": "・Final close-out report\n・Final closeout video\n・Comprehensive test suite for ongoing maintenance\n・User guides, API documentation, and developer resources\n・CI/CD pipeline for automated testing and releases\n・Security analysis and remediation\n・Open-source release on GitHub",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Test suite covers all major features and edge cases\n・Documentation is comprehensive, clear, and up-to-date\n・CI/CD pipeline successfully automates build, test, and release processes\n・All critical and high-priority security issues identified are resolved\n・Open-source release includes all necessary licenses and contribution guidelines",
+      "report": "A. Output: Final close-out report.\nAcceptance criteria: A public report describes the completed emulator work, project scope, outcomes, limitations, verification, security review, releases, and community adoption.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200040/m5.md\nB. Output: Final closeout video.\nAcceptance criteria: A public closeout video presents the project results and demonstrates the released emulator and its main technical features.\nEvidence: https://youtu.be/3HrbsHDoADY\nC. Output: Comprehensive test suite for ongoing maintenance.\nAcceptance criteria: Unit, integration, property-based, emulator, RPC, and e2e tests cover the major features and edge cases, including governance, PlutusV3 scripts, transaction construction, network configuration, invalid transactions, rejected redeemers, and lifecycle behavior.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200040/m5.md#testing and https://github.com/butaneprotocol/blaze-cardano/actions/runs/32112042350\nD. Output: User guides, API documentation, and developer resources.\nAcceptance criteria: Public documentation covers governance testing, the RPC server, network configuration, transaction building, typed scripts, examples, generated API references, contribution, and security reporting.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/blob/main/docs/catalyst/1200040/m5.md#delivery-evidence and https://blaze.butane.dev\nE. Output: CI/CD pipeline for automated testing and releases.\nAcceptance criteria: GitHub Actions installs locked dependencies, checks package policy and formatting, builds, typechecks, tests, runs coverage and e2e checks, builds the documentation, and manages releases through Changesets and npm trusted publishing.\nEvidence: https://github.com/butaneprotocol/blaze-cardano/actions/runs/32112042350 and https://github.com/butaneprotocol/blaze-cardano/actions/runs/32112042342\nF. Output: Security analysis and remediati",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 28,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "title": "HashiRWA: Bridging Japan’s Agri RWA with AI",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25000,
+      "promise": "・UI/UX mockups of HashiRWA platform and listing database\n・Issuer onboarding form for verified asset details (agriculture, Japanese food)\n・Admin panel for approving and publishing listings\n・Initial Cardano testnet metadata registration",
+      "criteria": "・Test listing can be created, reviewed, and published\n・Metadata entry appears correctly \n・Issuer form validates inputs correctly\n・Admin panel allows approval/rejection with no errors.",
+      "report": "Dear Milestone Reviewers,\n\nPlease find in the below links evidence for proof of achievement Milestone-1 for HashiRWA. The outputs are self-explanatory from the evidence:\n・UI/UX mockups of HashiRWA platform and listing database included in the video and screenshot\n・Issuer onboarding form for verified asset details (agriculture, Japanese food) - filled live during the video\n・Admin panel for approving and publishing listings - video and screenshots\n・Initial Cardano testnet metadata registration - see the Github repo, and extra link below\n\nEvidence URLS:\n\n・Demo video of full flow (submission → approval → listing → on-chain metadata)\n\nhttps://drive.google.com/file/d/1tMkaiY_3auPui7NiJ90UNAttX0IyHA7A/view?usp=sharing\n\n・Screenshots of database entries, admin panel, and Cardano transaction details\n\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa/blob/main/proof/screenshots.md\n\n・GitHub repo (or equivalent) with commits for listing module and Cardano integration\n\nRepo: https://github.com/Sapient-Predictive-Analytics/hashirwa/\nCommits: https://github.com/Sapient-Predictive-Analytics/hashirwa/commits/main/\nPreprod Tx: https://preprod.cardanoscan.io/transaction/3ce7adb5714ca14a53dc355a0b39599e3b710fbce4150595a8e0833378b726de\n\nThank you!",
+      "kinds": [
+        "chain",
+        "code",
+        "doc"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 25000,
+      "promise": "・Oracle feed setup for price or certification data\n・Automated refresh schedule (daily/weekly)\n・Market data shown on listing pages\n・Public landing page for separate issuer and investor journey. \n・Oracle feed via Chainlink or Cardano native oracle prototype",
+      "criteria": "・ Fallback mechanism works if oracle data unavailable\n・Scheduled data refreshing demonstrated clearly\n・Features on platform/landing page are fully defined\n・Market data feed is “real” via oracle or API, no longer simulated",
+      "report": "Dear Milestone Reviewers,\n\nPlease find the Proof of Achievement for M2.\n\nThese are the outputs:\n・Oracle feed setup for price or certification data (VIDEO LINK)\n・Automated refresh schedule daily/weekly (LOGS)\n・Market data shown on listing pages (SCREENSHOTS)\n・Public landing page for separate issuer and investor journey (SCREENSHOTS)\n・Oracle feed via Chainlink or Cardano native oracle prototype (FUNCTIONS / EXPLORER)\n\nAll code is added and updated under open source MIT license in our Github repository: https://github.com/Sapient-Predictive-Analytics/hashirwa/tree/main/tech/app",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 25000,
+      "promise": "・HashiRWA prototype launched to agri issuer / customer\n・5 verified/demo listings live\n・Document vault for due-diligence files\n・Basic investor tools (login, watchlist, filters)\n・Notification and status-update system",
+      "criteria": "・Platform live and stable, no critical bugs\n・Listings from Japanese food and agricultural sector are real, no longer mockup\n・Watchlist & notifications functional, with real market data",
+      "report": "Proof of Achievement: Milestone 3\nThe HashiRWA platform has been deployed and is accessible through its own dedicated web domain hashirwa.trade. This milestone delivers a functional marketplace interface together with issuer and investor workflows that illustrate how real-world asset listings can be presented with verification signals, supporting documentation, and external reference data. The next (final) milestone will integrate the oracle from the previous milestone and brings together issuer and investor.\n\nEvidence of Milestone Completion\nThe platform is publicly accessible at:\n https://app.hashirwa.trade/landing\n\nVideo walkthrough:\nhttps://drive.google.com/file/d/1d8orQQZZkjqGGIiqJ3gn3JAofwciUojv/view?usp=sharing\n\nYou can follow the demonstrated pages via web navigation or here:\nLanding page:\n https://app.hashirwa.trade/landing\nIssuer workflow:\n https://app.hashirwa.trade/issuer\nInvestor dashboard:\n https://app.hashirwa.trade/investor\nMarketplace view:\n https://app.hashirwa.trade/marketplace\n\nPlatform Interface Screenshots\nThe repository includes screenshots demonstrating the operational platform components\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa/tree/main/mockups/marketplaceMVP\n• Marketplace interface displaying verified listings\n • Dashboard with watchlist functionality and reference market data signals\n • Notification feed demonstrating system activity events\n • Document vault interface supporting due diligence references\n\nThe entire main branch of the project including app code and oracle integration can be seen in its permanent Github repo:\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 16
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 24950,
+      "promise": "・Final close-out report\n・Final closeout video\n・Onboarding pipeline for licensed Japanese issuers\n・3 signed LOIs (agriculture products)\n・10 listings (issuer + demo combined)\n・ Feasibility study for next-phase modules\n・Updated roadmap for technical & community expansion\n・Analytics dashboard tracking investor activity",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・LOIs collected and documented\n・Listings connected to live/demo feeds\n・ Feasibility study outlines requirements & costs clearly\n・Roadmap shared publicly with community feedback\n・Investor activity measurable via dashboard",
+      "report": "Please find the Proof of Achievement for 4th milestone and Project Close-Out with public Youtube video and PDF Report.\n\nLink to final closeout report\nhttps://drive.google.com/file/d/1IkzqJ7KTaF35RzWWnE2LygccHqyUcjHd/view?usp=sharing\n\nLink to final closeout video\nhttps://youtu.be/h9qxirCkRX8\n\nThe finished open source (MIT License) repository of the Concept use case with project walk-through and next steps can be found here.\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa\n\nEach individual SOM evidence item for the fourth milestone at these individual links\n\nPublished roadmap\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa#roadmap\n\nScreenshots of pipeline & listings\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa/tree/main/docs/milestones/M4_screenshots/pipeline_listings\n\nRedacted LOIs with agri/food companies\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa/tree/main/partner_evidence\n\nDashboard screenshots showing engagement\nhttps://github.com/Sapient-Predictive-Analytics/hashirwa/tree/main/docs/milestones/M4_screenshots",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "title": "Anastasia Labs - Streamlining Development: A User-Friendly Smart Contract Library for Plutarch and Aiken Design Patterns & Efficiency",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 55000,
+      "promise": "Robust documentation of unintuitive / hacky design patterns published to a standalone Github repository, as-well-as to existing developer documentation Github repositories such as the Plutonomicon, Developer Portal, Aiken Documentation, and Plutarch Documentation.",
+      "criteria": "Following design patterns are clearly written and published in Anastasia Labs Github repository\n・Transaction level validation for spending validators via stake validators using the withdraw zero trick.\n・Transaction level validation for spending validators via minting policies.\n・Input/output indexing with redeemers.\n・Strict && validation checks\n・PlutusTypeEnum Redeemers - efficient data encoding for simple redeemers as Enums.\n・Normalize txInfoMint to get rid of 0 lovelace value.\n・Normalize Validity Range.",
+      "report": "We have the following design patterns clearly written and published in Anastasia Labs Github repository\n・Transaction level validation for spending validators via stake validators using the withdraw zero trick.\n・Transaction level validation for spending validators via minting policies.\n・Input/output indexing with redeemers.\n・Strict && validation checks\n・PlutusTypeEnum Redeemers - efficient data encoding for simple redeemers as Enums.\n・Normalize txInfoMint to get rid of 0 lovelace value.\n・Normalize Validity Range.\n\nAll documentation for the design patter can be found at: https://github.com/Anastasia-Labs/design-patterns",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 55000,
+      "promise": "An Aiken library that allows users to apply the unintuitive design patterns & hacky efficiency tricks without sacrificing readability and without needing to write a ton of repetitive boilerplate.",
+      "criteria": "The following Design patterns written in Aiken are published in Anastasia Labs Github\n・Transaction level validation for spending validators via stake validators using the withdraw zero trick.\n・Transaction level validation for spending validators via minting policies.\n・Input/output indexing with redeemers.\n・Strict && validation checks\n・PlutusTypeEnum Redeemers - efficient data encoding for simple redeemers as Enums.\n・Normalize txInfoMint to get rid of 0 lovelace value.\n・Normalize Validity Range.",
+      "report": "Aiken library with documentation for design patterns is available at \nhttps://github.com/Anastasia-Labs/aiken-design-patterns\nHere is the direct link to folder with every desing pattern: https://github.com/Anastasia-Labs/aiken-design-patterns/tree/main/lib/aiken-design-patterns\nHere is the link to a specific design patter with Aiken code: https://github.com/Anastasia-Labs/aiken-design-patterns/blob/main/lib/aiken-design-patterns/multi-utxo-indexer-one-to-many.ak\nHere is the link to examples on usage of every design pattern: https://github.com/Anastasia-Labs/aiken-design-patterns/tree/main/validators\nTests are coming in Milestone 3",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 55000,
+      "promise": "An Plutarch library that allows users to apply the unintuitive design patterns & hacky efficiency tricks without sacrificing readability and without needing to write a ton of repetitive boilerplate.",
+      "criteria": "The following Design patterns written in Plutarch are published in Anastasia Labs Github\n・Transaction level validation for spending validators via stake validators using the withdraw zero trick.\n・Transaction level validation for spending validators via minting policies.\n・Input/output indexing with redeemers.\n・Strict && validation checks\n・PlutusTypeEnum Redeemers - efficient data encoding for simple redeemers as Enums.\n・Normalize txInfoMint to get rid of 0 lovelace value.\n・Normalize Validity Range.",
+      "report": "Plutarch library with documentation for design patterns is available at \nhttps://github.com/Anastasia-Labs/plutarch-design-patterns\nHere is the direct link to folder with every design pattern: https://github.com/Anastasia-Labs/plutarch-design-patterns/tree/main/src/Plutarch\nHere is the link to a specific design pattern with Plutarch code: https://github.com/Anastasia-Labs/plutarch-design-patterns/blob/main/src/Plutarch/MerkelizedValidator.hs \nHere is the link to examples on usage of every design pattern: https://github.com/Anastasia-Labs/plutarch-design-patterns/blob/main/src/Plutarch/MerkelizedValidator.hs",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 45000,
+      "promise": "A series of unit-tests and property based tests that provide some assurance that the implementations of the wrapper functions adhere to their technical specifications.",
+      "criteria": "・Unit Test Coverage: The acceptance criteria for unit tests will include achieving a specific level of code coverage, such as 90%, to ensure that a significant portion of the codebase is tested.\n・Property-Based Testing Success: The acceptance criteria for property-based testing will involve demonstrating that the properties and invariants specified for the wrapper libraries are satisfied across a wide range of generated test cases.\n・Test Documentation Completeness: The documentation for unit tests and property-based tests should be complete, including clear descriptions of the tests, their pur",
+      "report": "Happy to submit PoA for milestone 4!\nThe PoA contains:\n1) Tests and how to run them:\nThese are published on Anastasia Labs' GitHub repository, along with clear instructions on how to run the tests both in our report showcasing our testing suite and our individual repositories README.md sections:\nIn our \"Testing Suite\" report: Aiken (Page 2), Plutarch (Page 54)\nAiken GitHub repository: https://github.com/Anastasia-Labs/aiken-design-patterns/blob/main/README.md\nPlutarch GitHub repository: https://github.com/Anastasia-Labs/plutarch-design-patterns/blob/main/README.md\n2) Test Results Evidence\nOur successful test runs can be observed via a terminal run we have prepared as a GIF, showcases all our tests passing. Alternatively our GitHub actions section of each commit we have pushed to these repositories as they are part of our Github CI Workflow display the tests are running:\nGIF Testrun - Aiken: https://github.com/Anastasia-Labs/aiken-design-patterns/blob/main/assets/images/aiken-design-patterns.gif\nGIF Testrun - Plutarch: https://github.com/Anastasia-Labs/plutarch-design-patterns/blob/test/property-based-tests/assets/images/plutarch-design-patterns.gif\nMore evidence can be gathered by following the guidelines to setup your developer environment found in each of the repositories README and run the tests yourself to see the result.\n3) Documentation\nWe have prepared an extensive testing suite and this needed to be documented well so patterns can be understood better. To individually understand what is happening in each test it would be advisable to refer to the main repository: https://github.com/Anastasia-Labs/design-patterns. We explain each concept from a high level overview for better understanding of these patterns\nLink to documentation PDF: https://drive.google.com/file/d/1Oju4cMF7jrIjh5VbIueTyp45T45g1159/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 40000,
+      "promise": "A report indicating metrics and feedback obtained from projects and cardano smart contract developers.\nImproved libraries upon feedback received from the community",
+      "criteria": "Report is clearly written\nReport shows the feedback received form the community\nFeedback from the community is reflected in the libraries",
+      "report": "We are happy and proud to submit the final milestone for our Design Patterns proposal\nHere you will find our closeout report with:\n・Evidence of milestone completion\n・Evidence of the improvements applied to the libraries in the report\n\nReport is available on Google Drive: https://drive.google.com/file/d/1gKgsBJkzJyjKZ-DEe6zjfGp_3Ik8YcAL/view?usp=sharing\nCloseout Video: https://youtu.be/k6ovQpRyUOM",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

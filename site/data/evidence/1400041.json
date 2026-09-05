@@ -1,0 +1,33 @@
+{
+  "title": "CHARLI3 Dendrite v2: DEX, Lending, P2P DeFi Data Upgrades",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25000,
+      "promise": "・Contact the proposed minimum of 6 DEXs, Lending Protocol, Algorithmic Stablecoin Partners: We will contact all targeted integration partners named in our proposal to request necessary algorithmic stablecoin, DEX, and lending pool information: \n\n・WizardSwap, \n・ChadSwap,\n・SaturnSwap \n・DJED, \n・Liqwid, \n・Flow, \n\n・Create \"Technical Project Report\" Living Document: Create a public document called the Technical Project Report that includes: \n・1 Outreach Details: \n・List of integration partners showing a minimum of the 6 included above\n・Details about each integration partner relevant to the project:\n・Who did we reach out to at the partners? \n・How did we communicate?\n・Did we receive a response from the partner to integrate?\n・Are there any blockers to integration? (unresponsive partner, no longer exists, not providing details to help us integrate, and etc.)\n・Are we including them in the project? (y/) with rationale if not including them (e.g. blockers, delays)\n・List of replacement integration partners (if and only if the target list is inadequate or we want to add to the minimum 6 list)\n・Did we receive a response from the partner to integrate?\n・Are there any blockers to integration? (unrespo",
+      "criteria": "・Minimum 6 integration partners contacted and documented in the Technical Project Report\n・Must include contacts with: \n・WizardSwap, ChadSwap, DJED, Liqwid, Flow, SaturnSwap\n\n・Living Document \"Technical Project Report\" created: Document includes at a minimum:\n・1 Outreach Details: \n・List of integration partners showing a minimum of the 6 included above\n・Details about each integration partner relevant to the project:\n・Who did we reach out to at the partners? \n・How did we communicate?\n・Did we receive a response from the partner to integrate?\n・Are there any blockers to integration? (unresponsive pa",
+      "report": "Technical Project Report: https://github.com/SteelSwap/dendrite-milestone-proofs/blob/main/Milestone%201/technical-project-report.md\nDemo video: https://drive.google.com/file/d/1La7wXK1n7ZQs7ltItRkfiQVUV_TzJNfT/view?usp=sharing\nGithub (Initial Integrations): https://github.com/Charli3-Official/charli3-dendrite/tree/feat/djed",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "・Integrate ALL DEX confirmed partners from milestone 1 submitted in the Technical Project Report as the confirmed integration partners section. \n・Update the Technical Project Report with any third party issues that occurred during the milestone. In the event there is a delay (e.g. not all DEXs can be integrated) we will provide the following in the report:\n・Include a section called \"DEX Integrations\"\n・List of confirmed partners\n・Confirmation that integration was successful or unsuccessful\n・If unsuccessful strictly because of third party issues, we will do:\n・Update the Integrations Issues List with details on what's causing the delay or problem\n・Propose alternative integrations to replace the blocked integration\n・Confirm if we replaced the integration with another partner successfully\n・If unsuccessful, we will make all attempts until we exhaust what's available in the market (e.g. we run out of DEXs)\n・If there is no substitute, we will provide a plan for future milestones to revisit the integration (e.g. if delayed but we can deliver in the Final Milestone, we will provide details)\n・Create a demo video showcasing progress towards integrations\n\nNotes: \n\"Third party issues\": we define",
+      "criteria": "・Completed Integration of ALL DEX confirmed partners from milestone 1 (confirmed partners list from the technical project report)\n・Technical Project Report Updated with all milestone outputs with any third party issues that occurred during the milestone. In the event there is a delay (e.g. not all DEXs can be integrated) we will provide the following in the report:\n・Include a section called \"DEX Integrations\"\n・List of confirmed partners\n・Confirmation that integration was successful or unsuccessful\n・If unsuccessful strictly because of third party issues, we will do:\n・Update the Integrations Iss",
+      "report": "Demo Video: https://drive.google.com/file/d/1iGsbp0osyPl1YCbP46ns14glwFhjUoVW/view?usp=drive_link\n\nRepo: https://github.com/Charli3-Official/charli3-dendrite/pull/166\n\nTechnical Project Report: https://github.com/SteelSwap/dendrite-milestone-proofs/blob/main/technical-project-report.md",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6,
+      "cut": true
+    }
+  ]
+}

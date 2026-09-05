@@ -1,0 +1,94 @@
+{
+  "title": "Accelerate Mass Adoption: Open Source Atala Wallet SDK with No Seed Phrase Vulnerability and a No-Code Self-Sovereign Identity Platform",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 36364,
+      "promise": "Milestone 1: Market and Technical Research\nOutputs\nMilestone 1 has the following outputs (deliverables):\n・A research paper that includes: literature review, market analysis, competitor analysis, and stakeholder interviews.\n・A video walk through of the research paper\n\nIn order to deliver the aforementioned deliverable, we will conduct the following activities.\n・Literature Review: Review existing literature for understanding.\n・Market Analysis: Evaluate demand and identify market gaps.\n・Competitor Analysis: Assess similar offerings from competitors to pinpoint differentiators and opportunities.\n・Stakeholder Interviews: Interview key stakeholders and record their insights, including interview dates. Include their names, roles, and reasons for selection.\n・Research Paper Drafting: Summarize the findings from the above activities in a comprehensive research paper.\n・Video Walkthrough: Create a filmed walkthrough.",
+      "criteria": "Acceptance criteria\nThe deliverables are considered “accepted” when they meet the following criteria.\n・A research paper that includes: literature review, market analysis, competitor analysis, stakeholder interviews\n・Literature Review: The literature review should be thorough and include proper citation.\n・Market Analysis: This should cover macro-level information explaining why seed phrase-based wallet recovery hinders mass adoption. It should also analyze the need for a no-code SSI platform to achieve mass adoption.\n・Competitor Analysis: This should examine organizations currently offering wal",
+      "report": "As Evidence of Milestone Completion, we submit the following:\nWalk-through video:\nhttps://youtu.be/5Xo5vqDaYx8\nResearch Paper:\nhttps://shinid.notion.site/M1-Market-and-Technical-Research-0b9986bd305549b3abddc5ee3aaa0b5f?pvs=4\nNote: We have added a response addressing the reviewers' questions.",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 53636,
+      "promise": "Outputs\nMilestone 2 includes the following key outputs / deliverables:\n・Wallet Recovery with a backup file Design Figma File\n・SSI Platform v1.0 Figma Design File - First iteration\n・SSI Platform v2.0 of Figma Design File - Second iteration\n・SSI Platform v3.0 of Figma Design file - Third iteration and production-ready version.\n・Video walk-through of the design.",
+      "criteria": "Acceptance criteria\nThe deliverables are considered “accepted” when they meet the following criteria.\n・Wallet Recovery with a backup file Design Figma File should include a user interaction on how users can save a backup file with a password\n・SSI Platform v1.0 Figma Design File - First iteration: The design should have essential user stories for issuing verifiable credentials. For example:\n\n・As a business, I can carry out the Know Your Customer (KYC) process.\n・As a business, I can issue work certificates.\n・As a business, I can issue educational certificates.\n・As a business, I can issue other t",
+      "report": "Submission:\n\n・Wallet Recovery with a backup file Design File: https://www.figma.com/design/H2ANyg26Esre4WFbhfan3m/Wallet-App-2.0?node-id=6200-3018&m=dev\n・SSI Platform v1.0 Figma Design File: https://www.figma.com/design/SwAYrcBvoQKusQ1A4YQDFX/Socious-Wallet-App-%26-Shin-ID-1.0?node-id=2053-4103&m=dev\n・SSI Platform v2.0 of Figma Design File: https://www.figma.com/design/RytV8IMDmki1Xam9UlVwzp/Shin-ID-Web-App-2.0?node-id=2053-4103&m=dev\n・SSI Platform v3.0 Production-ready Design File: https://www.figma.com/design/kexgnqLWSuliz5vxlC4u3U/Shin-ID-Web-App-3.0?node-id=2053-4103&m=dev\n・Video walk-through uploaded to Youtube with a publicly available link: https://youtu.be/yS19HdPVFT8",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 110909,
+      "promise": "Outputs\nMilestone 3 includes the following key outputs / deliverables:\n・Atala PRISM Wallet SDK can generate a wallet that allows for a wallet backup file + password to recover a wallet.\n・Using the improved SDK above, Socious Wallet switches from seed phrase recovery method to backup file + password recovery method.\n・A video walk through of the Wallet SDK and Socious Wallet.",
+      "criteria": "Acceptance criteria\nThe deliverables are considered “accepted” when they meet the following criteria.\n・A Pull Request to the Wallet SDK is merged to Main branch\n・Socious Wallet can be recovered with a backup file + password\n・Video includes both the wallet SDK repository walk-through and Socious Wallet recovery flow.",
+      "report": "Submission\nhttps://shinid.notion.site/Milestone-3-Contribution-to-the-Wallet-SDK-and-Development-of-Wallet-1133d106030b80079023f1f46836ee6f?pvs=4\n・Publicly Available GitHub link to the Wallet SDK (open source): https://github.com/hyperledger/identus-edge-agent-sdk-ts/pull/333\n・Publicly Available GitHub links to Socious Wallet (open source):\n・Github: https://github.com/socious-io/socious-wallet\n・App download link: https://socious.io/wallet\n・Youtube video with a publicly available link: https://youtu.be/69ifDcqhv1A\n\nQuestions:\nThank you for your M3 submission. Re your GitHub Link, please clarify the below points before we proceed to later milestones: As mentioned by Curtis (your PR reviewer), could you explain why new schema is required instead of extending on the existing one? Please share the changes and impact of these changes (the before- and after- file size comparison to show the impact?) Could the goal have been achieved by modifying the existing schema instead?\nAnswers: (thank you for your great questions)\n・**Schema Model Update:**We revised our approach by enhancing the existing schema model with exclusions rather than creating a new schema. This allowed us to maintain compatibility with the previous version.\n・**External Private Key Option:**One of the key updates was the introduction of an option to use an external private key for encrypting backups. This gives clients greater control, enabling them to use their own privately generated keys for backup and restoration processes.\n・**Compression Feature:**We implemented a compression option that significantly reduces the size of backup data. Testing demonstrated this improvement:\n\n・Without compression: 17,897 characters (source)\n・With compression: 9,811 characters (source)\n\nThis represents nearly a 50% reduction in JWE length for the same backup data. We anticipate even greater scalability, leading to substantial savings in data size.\nFor context, this PR addresses the GitHub issue: https://github.com/hyperledg",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 116364,
+      "promise": "Outputs\nMilestone 4 includes the following key outputs / deliverables:\n・No code SSI platform that can issue certificates as verifiable credentials\n・A video walk through of the No code SSI platform’s functions to issue certificates.",
+      "criteria": "Acceptance criteria\nThe deliverables are considered “accepted” when they meet the following criteria.\n・No code SSI platform can complete the following functions:\n\n・As a business, I can carry out the Know Your Customer (KYC) process.\n・As a business, I can issue work certificates.\n・As a business, I can issue educational certificates.\n・As a business, I can issue other types of certificates by developing a schema.\n\n・Video clearly demonstrates that the aforementioned functions are developed.",
+      "report": "Submission\nhttps://shinid.notion.site/Milestone-4-No-Code-SSI-Platform-Issuing-Credentials-1603d106030b80d98acbc13679692982?pvs=4\n・Publicly Available GitHub link to SSI Platform - issuing verifiable credentials (open source)\n・Frontend: https://github.com/socious-io/shin-webapp\n・Backend: https://github.com/socious-io/shin-api\n・Youtube video with a publicly available link. https://youtu.be/G5gSIATFVlE\n・No code SSI platform can complete the following functions:\n\n・As a business, I can carry out the Know Your Customer (KYC) process.\n・As a business, I can issue work certificates.\n・As a business, I can issue educational certificates.\n・As a business, I can issue other types of certificates by developing a schema.\n\nExtra:\nThe SSI Platform’s publicly available URL:\n・Website: https://shinid.com/\n・App: https://app.shinid.com/\n\nPublicly Available GitHub links to Socious Wallet (open source):\n・Github: https://github.com/socious-io/socious-wallet\n・App download link: https://socious.io/wallet\n\nQuestion from Milestone Reviewer 1\nHi Socious Team,\nI noticed that the video you submitted was previously used during the Fund 12 voting process for this project. Reusing it in your M4 submission doesn’t align with the requirements for milestone evidence. The video should serve as a walkthrough of the No-Code SSI platform, highlighting its functionality from a business user's perspective. It should address the 4 functions outlined in your acceptance criteria: a) Performing KYC b) Issuing work certificates c) Issuing educational certificates d) Issuing other types of certificates by developing a schema.\nI’d suggest creating a fresh, focused video that clearly explains these aspects using an actual client example. Let me know if you have any questions as we want to ensure that the evidence meets the criteria for milestone approval.\nBest Wishes,\nMR\nAnswer 1\nThank you for your question. There seems to be a misunderstanding—the video we submitted (cf: https://youtu.be/G5gSIATFVlE) is actually a ne",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 28,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "10",
+      "cost": 98455,
+      "promise": "Outputs\nMilestone 5 includes the following key outputs / deliverables:\n・No code SSI platform that can verify verifiable credentials’ proofs\n・A video walk through of the No code SSI platform’s functions to verify proofs.",
+      "criteria": "Acceptance criteria\nThe deliverables are considered “accepted” when they meet the following criteria.\n・No code SSI platform can complete the following functions:\n\n・As a business, I can confirm that the user has completed the proper Know Your Customer (KYC) process.\n・As a business, I can authenticate the user's work certificate.\n・As a business, I can authenticate the user's educational certificate.\n・As a business, I can use zero-knowledge proofs to verify that the user is at least 18 years old.\n\n・Video clearly demonstrates that the aforementioned functions are developed.",
+      "report": "Submission\nhttps://shinid.notion.site/Milestone-5-No-Code-SSI-Platform-Verifying-Credentials-1603d106030b8014b785e1606929dc7b?pvs=4\n・Publicly Available GitHub link to SSI Platform - verifying credentials (open source)\n・Frontend: https://github.com/socious-io/shin-webapp\n・Backend: https://github.com/socious-io/shin-api\n・Youtube video with a publicly available link. https://youtu.be/QXVJax5UR8s\n・No code SSI platform can complete the following functions:\n\n・As a business, I can confirm that the user has completed the proper Know Your Customer (KYC) process.\n・As a business, I can authenticate the user's work certificate.\n・As a business, I can authenticate the user's educational certificate.\n・As a business, I can use zero-knowledge proofs to verify that the user is at least 18 years old.\n\nExtra:\nThe SSI Platform’s publicly available URL:\n・Website: https://shinid.com/\n・App: https://app.shinid.com/\n\nPublicly Available GitHub links to Socious Wallet (open source):\n・Github: https://github.com/socious-io/socious-wallet\n・App download link: https://socious.io/wallet\n\nPress Release: Agi in Ebisu Embraces Shin for Age Verification\nhttps://socious.io/blog/agi \nAgi’s Instagram account:\nhttps://www.instagram.com/agi._.75/\nSocial media post on Agi: https://www.threads.net/@frcon/post/DD62KivTiL4?hl=en\nPlease note that the restaurant is connected to the Cardano Information Center: https://x.com/SebastienGllmt/status/1860588954942341154\nhttps://x.com/seira_yun/status/1860631827289182483\nMessage to Milestone Reviewer 1: Thank you for approving the submission. I discussed this with the Catalyst team, who then spoke with Milestone Reviewer 2. The confusion has been cleared up, and they should approve this submission. Thank you for your patience.\nMessage to Milestone Reviewer 2: Thank you for speaking with the Catalyst team and for your understanding. Please let us know if you have any questions.",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 26
+    },
+    {
+      "no": 6,
+      "month": "11",
+      "cost": 73363,
+      "promise": "Outputs\nMilestone 6 (Final) includes the following key outputs / deliverables:\n・Socious Wallet that uses backup file recovery method is deployed to production\n・No-code SSI Wallet is deployed to production.\n・Project close-out report\n・Project close-out video",
+      "criteria": "Acceptance criteria\nThe deliverables are considered “accepted” when they meet the following criteria.\n・Community members can use the Socious wallet in Production and recover the wallet using a backup file.\n・Community members can use the no-code SSI platform in the production environment.\n・Project close-out report includes all the obligatory fields of the close out report and is publicly available.\n・Project close-out video walks through all the key points of the close-out report and is publicly available.",
+      "report": "Submission:\nClose-out report (Notion): https://shinid.notion.site/Accelerate-Mass-Adoption-Close-out-report-1603d106030b804d94fefcb226b23b0e?pvs=4\nClose-out report (PDF): https://drive.google.com/file/d/1EmFxag15mRplHZrvo9IdZiuTXx6qVFwt/view?usp=sharing\nClose-out video: https://youtu.be/Y1opaWCGPJc\nThe SSI Platform’s publicly available URL:\n・Website: https://shinid.com/\n・App: https://app.shinid.com/\n\nPublicly Available GitHub links to Socious Wallet (open source):\n・Github: https://github.com/socious-io/socious-wallet\n・App download link: https://socious.io/wallet",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

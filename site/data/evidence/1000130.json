@@ -1,0 +1,42 @@
+{
+  "title": "NEWM Community - Proof-of-Human (PoH) System - Enhance Security for Smart Contracts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 63628,
+      "promise": "This is the initial phase where we conduct a comprehensive review of the existing Proof-of-Human (PoH) solutions and the underlying technology. We'll further explore different methods of user verification (such as biometrics, CAPTCHAs, behavioral analysis) and study the feasibility of integrating them with the Cardano ecosystem. Additionally, we'll continue researching cryptographic proof generation and validation methods.",
+      "criteria": "We will be conducting fresh research on various forms of verification available which will be suitable for Cardano's ecosystem, Documentation of all our research findings and a feasibility report, possible challenges, and the proposed design will be done.",
+      "report": "https://github.com/projectNEWM/newm-aipoph/blob/master/docs/feasibility-research.md\n\nwe are of the opinion that we already submitted this milestone in the era of google form milestone submission",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 63636,
+      "promise": "The PoH system is developed in this phase. It involves coding the user verification module, creating the cryptographic proof generation system, and implementing the proof validation system.",
+      "criteria": "Since it will be a completely new product and nothing of a similar nature exists we will be open-sourcing it and a Github link will be provided giving out all the documentation required to understand the technical nature of the product and its workings.",
+      "report": "coding the user verification module\nVerify a proof of humanity test\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/validators/poh_lock.ak#L160-L259\nverify a valid certificate of humanity\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/validators/coh_lock.ak#L35-L59\ncreating the cryptographic proof generation system\nminimal graph coloring problem generator\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/lib/aipoph/types/graph.ak\ned25519 signature validation\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/lib/aipoph/types/signed.ak\nproof of humanity test system\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/validators/poh_lock.ak\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/validators/poh_mint.ak\nimplementing the proof validation system\nprove functions for checking humanity\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/lib/aipoph/types/prove.ak\ncertificate of Humanity validation system\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/validators/coh_lock.ak\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/validators/coh_mint.ak",
+      "kinds": [
+        "code"
+      ],
+      "links": 9
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 42424,
+      "promise": "This phase involves in-depth system testing to ensure it's working as expected. Constant checks and tests will be carried out to uncover any potential vulnerabilities.",
+      "criteria": "Performance evaluations under different scenarios will be conducted to ensure the system's robustness, these scenarios will be designed based on the product, progress, and developments made in the earlier stages. There will be internal checks by our legal team to ensure the system is compliant with privacy rules and regulations.",
+      "report": "https://github.com/projectNEWM/newm-aipoph/pull/11\nMilestone 3 completed!\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/pdf/internal-audit-1.pdf\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/pdf/internal-audit-2.pdf\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/pdf/happy-path-transactions.pdf\nCompliance Check Legal Doc\nhttps://docs.google.com/document/d/1SyGPmMKn1NEyNmk4pI5X9KvKxe3eGRh5FmhFJvpb2OU/edit",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 5
+    }
+  ]
+}

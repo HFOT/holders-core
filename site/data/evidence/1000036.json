@@ -1,0 +1,81 @@
+{
+  "title": "Cardano Tax & Accounting Tool",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Build a custom solution for Integral’s application, to surface Cardano transaction data held in Cardano wallets, by indexing account activity for specific Cardano addresses. This structure will be standard \nThe ability to surface Cardano transactions from custom wallets on the Cardano chain by indexing account activity for specific Cardano addresses. This structure will be relevant to other Cardano wallets in the ecosystem as well.",
+      "criteria": "Acceptance criteria for this milestone would be the ability to pull transaction data from Cardano wallets and surface the data. This will be replicable for most other wallets on the Cardano in the ecosystem. The ability to show this for a few different wallets will be the acceptance criteria.",
+      "report": "RE the types of wallets, Nami, Yoroi, Eternl, Lace, etc.; Integral builds support for the chain itself, so we would be able to support all of the base addresses (and all the types specified above). The one uploaded during the demo was this one: https://cardanoscan.io/address/addr1q8xymqc3dwfd8kg64lfm942xfyw2a2z4pypveyu2j25awumgx0z5p80ync8lpv2mc8q0klj65qzhyxsw0zwedk6u8ehs97d240; if that helps give some clarity\nThe different types of wallets described is such that it should be possible for most Cardano native wallets, that is why in the video I added a second wallet to show that we are capable of covering cardano native wallets of different kinds. Is there a different type of wallet that you want to see? The first milestone covers wallets with deposits and withdrawals simply. From that video we do cover that for multiple wallets. Happy to show on any other specific wallet if needed?\nRE:\nResubmitting and clarifying that the wallet shown in the video is a Cardano native wallet (we just have the integration under Metamask right now in the UI which we will correct to make it clearer).\nEG wallet address used in demo is this one: addr1q8xymqc3dwfd8kg64lfm942xfyw2a2z4pypveyu2j25awumgx0z5p80ync8lpv2mc8q0klj65qzhyxsw0zwedk6u8ehs97d240\nAcceptance criteria for this milestone would be the ability to pull transaction data from Cardano wallets and surface the data. This will be replicable for most other wallets on the Cardano in the ecosystem. The ability to show this for a few different wallets will be the acceptance criteria.\nPlease see video below which also includes data for milestone 2 and 3\nhttps://www.loom.com/share/ee201990e4c64d5598bd3808124671b7",
+      "kinds": [
+        "chain",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60500,
+      "promise": "Output: \n・Classified transaction data for most Cardano wallets\n・Deposits / withdrawals data\n・Sending and receiving parties for each transaction\n・The ability for clients to mark tokens as SPAM in the UI\n\nThere are likely to be edge cases we are not able to support, which is why this is for \"most\" Cardano wallets and not all.",
+      "criteria": "Acceptance criteria is the ability to produce the above listed data from a custom Cardano wallet, which will be standard for all Cardano wallets. Eg the below:\n・Deposits / withdrawals data\n・Sending and receiving parties addresses for each transaction",
+      "report": "Resubmitting as there was a missunderstanding under MS1\n\nAcceptance criteria is the ability to produce the above listed data from a custom Cardano wallet, which will be standard for all Cardano wallets. Eg the below:\n・Deposits / withdrawals data\n・Sending and receiving parties addresses for each transaction\n\nOutput: \n・Classified transaction data for most Cardano wallets\n・Deposits / withdrawals data\n・Sending and receiving parties for each transaction\n・The ability for clients to mark tokens as SPAM in the UI\n\nPlease see both videos below for proof\nhttps://www.loom.com/share/ee201990e4c64d5598bd3808124671b7\nhttps://www.loom.com/share/53bbc2594ed1475baf551cde3a1e7bfd?sid=7967d876-cf6d-4ff3-bf78-502a11a87495",
+      "kinds": [
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 50000,
+      "promise": "Outputs:\n・Pricing for Cardano native tokens held within a wallet\n・Timestamp for pricing source per transaction",
+      "criteria": "Acceptance criteria:\n・The ability to produce the pricing for most of Cardano native tokens held within a wallet added to the UI",
+      "report": "Resubmitting as this was refused due to a missunderstanding (See MS1)\n\nOutputs:\n・Pricing for Cardano native tokens held within a wallet\n・Timestamp for pricing source per transaction\n\nPlease see below for proof in the video below\nPlease see both videos below for proof\nhttps://www.loom.com/share/ee201990e4c64d5598bd3808124671b7",
+      "kinds": [
+        "video"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 40000,
+      "promise": "Create an easy configuration that allows clients to add their Cardano wallet to the Integral UI for the transactions to upload into the system\nOutput:\n・Addition to the Integral UIUX",
+      "criteria": "Criteria for this would be the ability to input the wallet information the UI and have the transactions history successful load into the Integral UI and be viewable in the bookkeeping tab.\nOther information will include the ability to view the historical end of day balances for that wallet as well once transactions have loaded.",
+      "report": "Please see link to loom video where I demo the ability to add a Cardano native wallet into the UI (note it does take a minute or two for the data to load so please be patient! :) )\nNote the video isn't cut off at the end, this milestone is just meant to show the ability to add Cardano native wallets to the UI, pricing and other tokens are the next milestone so they are not included in here.\nhttps://www.loom.com/share/d05521f66ef64e1f94018960199a3a93\nPer the last viewers request see link to drop box with screenshots of the account added and ability to add the cardano wallet.\nhttps://www.dropbox.com/t/wd2SaLthDDQkzY7q",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 25000,
+      "promise": "Outputs: \n- The transaction type \n- Pricing (USD value) \n- Timestamp of the transaction \n- Sending and receiving party of the transaction\n- Balances held with wallets",
+      "criteria": "The ability to export reports for Cardano wallets added in the UI that include the above transaction details.",
+      "report": "LOOM VIDEO:\nIn the below loom video I walk through an account where we have added a native Cardano addresses, we show the link through to the Cardano scan show this is a native wallet and the thousands of transactions we have brought in and the balances within each of those walelts. From there we go to the wallet tab to show the detailled summary of the wallet available to clients for each wallet, as well as the date range of transactions brought-in. After that the bookkeeping tab in the app that shows the transactions themselves, I filtered to a few smaller wallets that have less transactions to make it easier to see the transactions themselves. You can clearly see the transactions type (eg deposit, withdrawal, feesetc.) and parties involved. Once I click into the transaction details to show the time stamp of the transaction, the pricing time stamp of the transactions as well in USD - all per the stated outputs above! We walk next to the reporting tab to show the various transaction and balance reports available for clients to pull as well. \nThe second video walks through the process to export a report and it's linked below.\nWalk-through video of cardano wallet-in app: https://www.loom.com/share/52f9bd72864c4d01955e8bc3a4c77971?sid=41b300b3-a3b4-491e-a92a-ab18e2e352e1\nTransaction export walk-through: https://www.loom.com/share/4e28cf7c06db4db8a195cca85f9247f1?sid=01b9a4fc-9918-4803-b0d2-f07ccd229656\n\nTransaction export here",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 50000,
+      "promise": "Have a working solution of the above 5 milestones. The final milestone of this project will be to showcase the full solution now available on the Integral platform. Including the ability for a client to add a Cardano wallet to the platform, pull most historical transactions into the platform from this wallet, view pricing and equivalent USD value and pull transaction reports from the platform.\nOutputs:\n・Downloadable CSV Reporting of transactions\n・Pricing and transaction data in the UI\n・Closeout report\n・Video",
+      "criteria": "Target outcome is to have the output for each of the previous milestones work seamlessly within the Integral UI.\nThis will be included in the closeout report and a video",
+      "report": "Link to closeout report in Vimeo: https://vimeo.com/1049045540/2c497d389d?share=copy\nLink to closeout report here\nAdditional information listed here for reference: \nThis video below walks through the process to export a report and it's linked below.\nTransaction export walk-through: https://www.loom.com/share/4e28cf7c06db4db8a195cca85f9247f1?sid=01b9a4fc-9918-4803-b0d2-f07ccd229656\nTransaction export here\nSnapshots of each of the milestones have been included in the close-out report as well.",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

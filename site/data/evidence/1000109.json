@@ -1,0 +1,87 @@
+{
+  "title": "Minswap Aiken Stableswap Audit + Bug Bounty",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "・Stableswap code built on Aiken will undergo an audit by TxPipe, the company that built the Aiken programming language. \n・Educational campaign in collaboration with Cardano Spot (https://cardanospot.io/landing) to prepare the Cardano community and give them the educational resources needed to understand and later use the Stableswap.\n・This Educational campaign will include: \n・A) 2 detailed articles about Stableswaps and Stablecoins and their importance for a mature DeFi ecosystem.\n・B) Twitter threads such as the State of Stablecoins on Cardano.\n・C) a Twitter Spaces on Stableswaps and Stablecoins to answer questions from the community.",
+      "criteria": "・The Audit Report will only be released once the auditor TxPipe has also assessed the fixes implemented based on their Audit recommendations (which is the next Milestone). To ensure that the audit is undergoing, both Minswap Labs and TxPipe will announce the audit engagement on social media. The Audit Report will be released the month after (next Milestone).\n・For the Education Campaign:\n・A) At least one educational article about Stableswaps and Stablecoins delivered, published on the Minswap Medium and seen by the community.\n・B) At least one educational article about Stableswaps and Stablecoin",
+      "report": "・The article announcing audit commencement by TxPipe of the Minswap Stableswap\n・The educational article about Stableswaps and Stablecoins on Cardano on the Minswap Medium\n・A 2nd educational article by Cardano Spot focusing exclusively on Cardano Stablecoins\n・A thread written in collaboration with Cardano Spot about State of Stablecoins on Cardano\n・A second thread by Cardano Spot\n・The Twitter Spaces discussing the recent developments on Stablecoins in Cardano co-hosted by Minswap Labs and Cardano Spot and with Mehen and Indigo Labs as guests.",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 75000,
+      "promise": "・Once the audit is complete, the process to address audit findings will start and finish within that same month. \n・Efforts will start to integrate the Stableswap Smart contract into the current UI.",
+      "criteria": "・An Audit Report that provides a comprehensive audit of the Stableswap code and highlights vulnerabilities found. The Report should also corroborate the fixing of the audit findings addressed during this month.\n・Screenshots of progress of integrating the Stableswap into the current UI.",
+      "report": "・Link to the Audit Report by TxPipe\n・Screenshot 1, Screenshot 2, Screenshot 3, Screenshot 4, Screenshot 5, Screenshot 6 on how the Stableswap will be integrated into the current UI.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 7
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 75000,
+      "promise": "・The Audit Report by TxPipe will be shared with the wider Cardano community\n・The Minswap Stableswap Smart Contract code will be open sourced\n・The Bug Bounty program will be completed",
+      "criteria": "・The Audit Report is shared with the wider Cardano community for transparency and accountability.\n・The Minswap Stableswap Smart Contract code is be open sourced and available to anyone for transparency and accountability.\n・ A detailed document regarding the scope of the vulnerabilities of the Bug Bounty Program and how to submit a bug will be shared. It will follow a similar structure as Bug Bounties on for example Immunefi.\n・Bug Bounty rewards will be distributed according to the severity of the found vulnerabilities (if any). \n・At the end of the month, the community will be informed of the v",
+      "report": "・Link to a tweet sharing the Audit Report with the wider Cardano community. \n・Link to Github where one can find the the Minswap Stableswap Smart Contract code.\n・Link to a detailed document regarding the scope of the vulnerabilities of the Bug Bounty Program and how to submit a bug.\n・Bug Bounty rewards will be distributed according to the severity of the found vulnerabilities (if any). Links to transaction ID will be provided of rewards being distributed. Tx ID is the following: 01e9033dba9866a493d7c84f3077b3f0454a71e87473992d7c5428aa1e782154.\n・The remaining Bug Bounty is allocated to a bug bounty wallet (ada handle $min.bug-bounty wallet). The ADA here will be spent to compensate bugs found in Minswap Stableswap or Minswap V2. \n・Link to a Tweet where the community will be informed of the vunerabilities found, the compensations and the fixes (if any).",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 25000,
+      "promise": "・Minswap Stableswap is launched on mainnet\n・Stableswap feature is integrated into the UI\n・Several Stable Asset Liquidity Pools are seeded and users can begin to trade Stablecoins more efficiently",
+      "criteria": "・Minswap Stableswap is launched on mainnet \n・Stableswap feature is integrated into the UI and properly highlighted\n・Several Stable Asset Liquidity Pools are started and users can begin to trade Stablecoins more efficiently",
+      "report": "・First, we launched the Testnet to get final feedback. You can see the tweet here.\n・Then, mainnet was announced here.\n・Link to the Minswap Stableswap on mainnet. \n・Content creators covered the event too you can see it here.",
+      "kinds": [
+        "other",
+        "social"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 25000,
+      "promise": "・An incentive program will be designed and implemented to attract Liquidity to the Stableswap and make trading more efficient.",
+      "criteria": "・Incentives implemented for Liquidity Providers on the Minswap Stableswap. These incentives will be composed of \n・A) MIN Token rewards such as those given to Liquidity Providers on the Minswap DEX\n・B) ADA rewards coming from the staking of ADA in the Minswap Liquidity Pools\n・C) Additional ADA rewards provided by Minswap Labs to boostrap liquidity in the initial Phase",
+      "report": "・Incentive Program was first announced in this tweet\n・For the next 30 days after the announcement, the incentives will be live here for anyone Farming Liquidity they provided on the Stableswap.\n・Reception from the community has been overwhelmingly positive",
+      "kinds": [
+        "other",
+        "social"
+      ],
+      "links": 3
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 57000,
+      "promise": "・There will be a process to collecting user feedback and evaluate the success of the Stableswap based on the following metrics:\n・A) Quantitative Measures: Stable Assets Liquidity & Volume, Monthly Unique Active Wallets, Throughput improvements\n・B) Qualitative Measures: Composability across Cardano DeFi, Open Source usage, User Feedback",
+      "criteria": "・A Google Form is shared with the Cardano community to collect feedback on the Minswap Stableswap\n・Data analysis is conducted to assess quantitative measures",
+      "report": "・Link to a Tweet with a Google Form where the Cardano community can share feedback about the Stableswap\n・Link to a Medium article where there are reflections about the Stableswap, insights on the data collected and user feedback\n・Close out report\n・Close out report video",
+      "kinds": [
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

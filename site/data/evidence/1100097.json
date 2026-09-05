@@ -1,0 +1,90 @@
+{
+  "title": "Classified Smart Contracts for Distinct Use Case dApps",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 40000,
+      "promise": "Modeling and develop all db schema for the project.\nDevelop backend APIs to provide REST API endpoints use across project for smart contract publisher, dApp subscriber and CMS frontend apps.\nDevelop APIs for smart contract developers publish its scripts:\n・Submit a serialized smart contract objects API.\n・Classify smart contracts into type of logics it solves.\n・Upgrade smart contract API.\n\nDevelop APIs for dApp developers get smart contracts for dApps transactions:\n・Get list and get one of smart contract objects.\n・Record meta data for smart contract transactions.\n\nImplement smart contract compiler tool: \n・Compile smart contract written in Plutus, Marlowe or Aiken\n・ Integrate with backend to provide API endpoint for Admin and user to use through frontend app.\n\nDevelop APIs to audit a smart contract:\n・Verify serialized script with given github code:\n・Plutus, Aiken and marlowe compile tools to compile given source code to smart contract JSON object\n・Verify the published smart contract with given source code\n・Audit the smart contract.:\n・Verify the behaviors of smart contract as its description\n・Approve smart contract to list then available for dApp developer to use.\n\nImplement Backend se",
+      "criteria": "All DB schemas, APIs, utilities are developed, deployed at https://paas.bworks.app/api and ready to use.\nThe API runs fast, secured, no error with average latency < 1 second.",
+      "report": "Works and outputs:\nSet up infrastructure & dev environment\n Set up AWS staging servers, domain, HTTPs certification to deploy dev source code. \n Set up gitHub repo, CI/CD, docker build and deployment tools, development environment VScode, libraries and app structure.\nBackend authentication & authorization APIs\n Develop email register & authentication APIs for smart contract, dApp users.\n Develop wallet register & authentication APIs for smart contract, dApp usersDevelop authorization function to protect APIs access.\nUtils and common library\n Develop function to validate Cardano address & wallet signature\n Develop function to format data before return to client\n Develop function to validate common data e.g email, username\nBackend queque & microservice\n Develop queque and micro services to handle compile and audit smart contract and other background jobs\nSmart contract compiler scripts\n Develop shell scripts, set up environment to compile Marlowe, Aiken and Plutus smart contract into Json format\nPlutus smart contract publish and distribute APIs\n Develop APIs to publish and distribute Plutus smart contract as Json object\nTest & benmark APIs\n To make sure developed APIs work functionally and met performance\n\nAcceptance criteria:\nThe environment is all set and ready to use. \nThe above functions are developed, deployed and worked.\n\nEvidence of completion:\n Tasks and check list: https://docs.google.com/spreadsheets/d/1ILWSRlA5IBnSEU05vD63MH3nmdFNloXsWZAIUybbjL4/edit#gid=120933550\n Github commits: https://github.com/bWorksApp/paas/commits/master/\n API Deployed dev server: https://paas.bworks.app/api/\n List of exposed APIs: https://paas.bworks.app/api/api\n App and development screenshoots: https://drive.google.com/drive/folders/1gUgcu2d5U66a5fhJFPBKlDBvitZ_RZSW\n Youtube video to show the work of deployed APIs: https://www.youtube.com/watch?v=U4Ch2Hkr1jY&t=292s",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 25000,
+      "promise": "General admin management.\nPublished smart contract management:\n・Approve/deList a published smart contract\n\nVerify the smart contract validator logics:\n・GUI tool to audit smart contract as its description\n\nUser management.\nAnalytic and reports: \n・Published scripts, \n・Transactions per scripts and dApps: this to rank the top use smart contract to late pay developers.\n\nDashboard:\n・Published smart contract\n・dApp that use PAAS for its transactions\n・Users",
+      "criteria": "The CMS frontend app with above functions is developed, tested, deployed and ready to use.\nThe app runs fast, secured, no error with average response time < 2 seconds.",
+      "report": "We resubmit the POA with new features added to code and deployed to dev server to response to reviewer-1 comments:\n・Move the find UTXO to API to let browser works without CORS setting: https://github.com/bWorksApp/paas/commit/3a60903d911457dd63be0f506fdbf081d158d8b3\n・Show the DATUM and REDEEMER in audit UTXOs: \n\n https://github.com/bWorksApp/paas/commit/4df2f06c4e5b6a6a63d3ee00a1b88ca24f4b19d2\n https://paas.bworks.app/cms#/audittxs\n・Short video to guide community who will be PAAS admin to audit smart contract: https://www.youtube.com/watch?v=WswWvvEJzqw\n・Audit smart contract user guide: https://docs.google.com/document/d/1DF5nA-07MB8ClDBbH4J_v5Il0p3txAGivoAirN49OgQ/edit\n\nWith this new features users can try the admin audit functions without CORS setting and can view there Datum and redemer value in audit UTXO list: https://paas.bworks.app/cms#/audittxs\nWorks and outputs:\nDeveloped and deployed PAAS CMS management functions to overview and manage PAAS platform.\nDevelop layout, function and libraries:\n・App layout and themes\n・Search functions to text search multi data collections\n・Authentication and data fetching libraries \n\nhttps://github.com/bWorksApp/paas/commit/c39a40ec822fba9c805d882138cdaace768ed016\nhttps://github.com/bWorksApp/paas/commit/8472d9274de56e2cbac410da0f5bea722b3367a8\nDevelop published smart contract management function:\n・Managed published smart contract and its status\n・Approve/delist published smart contracts\n\nhttps://github.com/bWorksApp/paas/commit/736c17e66d798f121366d19fd8a260d879d000c8\nDevelop smart contract complier monitor function:\n・Monitor the compiler jobs of published smart contract.\n\nhttps://github.com/bWorksApp/paas/commit/46f1776c6f025e079772c766d76255b37cd65b97\nDesign and develop smart contract audit function:\n・Source code verification: to verified the published contract with given GitHub repo.\n・Verify the validator functions: to verify the contract validator with given document.\n・Form dynamic datum and redeemer through GUI.\n\nhttps://g",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 48,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 40000,
+      "promise": "Publisher frontend app:\n・Publish a compiled serialized smart contract script.\n・Flexible datum and redeemer datatype builder.\n・View status of script verification and confirmation.\n・Upgrade version of a published smart contract script.\n・Script consuming tracking.\n・Dashboard.\n\nService subscriber frontend:\n・List of published smart contracts and web3 components.\n・Select a smart contract to build dApps.\n・Tracking the usage of an account.\n・Tracking transaction status, its output and status.\n・Reports.\n・Dashboard.",
+      "criteria": "The frontend apps with above listed functions for smart contract, dApp developers is developed, tested, deployed and ready to use.\nThe app runs fast, secured, no error with average response time < 2 seconds.",
+      "report": "Works and outputs:\nDeveloped and deployed frontend app that integrated with backend APIs for smart contract developer to publish smart contract and for dApp developer to use published smart contract to build dApp at gitHub repo: https://github.com/bWorksApp/paas and deployed Url: https://paas.bworks.app/web#/ with below details:\n\nPublisher frontend functions for smart contract developer to publish its contract to the PAAS platform and make sure it is available to build dApp:\n・Publish Plutus, Aiken and Marlowe smart contract function: publish function: Smart contract developers publish its smart contract through the GUI with git repo information. The platform then compile the source code then validate the contract. Monitor status of PAAS compiler and verification logic to verify the source code with the published contract json object.\n・View detail published smart contracts.\n・Update published smart contract meta data.\n・Upgrade smart contract version: recompile and re-verify the publish smart contract if the upgrade change the contract cborHex.\n・Try smart contract TXs: build flexible datum and redeemer. submit transaction to Cardano blockchain. Monitor status of submitted transaction and contract UTXOs\n・Report to monitor published smart contracts and its consummation\n\nDeployed URL: https://paas.bworks.app/web#/publishcontracts \nGit commits:\nhttps://github.com/bWorksApp/paas/commit/cf502008608bdfc3328df1415bab8397c8f76482\nhttps://github.com/bWorksApp/paas/commit/c58fb85052e9c85e0bff0db0f9669c9ea576ed0c \n\nService subscriber frontend functions for dApp developer to select a right smart contract which meet its dApp features through GUI:\n・View list of published smart contracts with description, verification, approval status and fetch command format.\n・View detail of a published contract: compiled smart contract json object and meta data e.g source code repo, description, compile, source code verification and approval status. \n・Record and track the dApp transactions \n・Report",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 54,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 25000,
+      "promise": "Develop generalized smart contracts and web3 sample code with different validator logics:\n・Develop a list of smart contract to init the platform.\n・Web3 components for dApps for each smart contract.\n・User guide and cli scripts.",
+      "criteria": "Set of smart contracts are developed, compiled and published on the platform and ready to use with most single and combined validator for dApps:\n・Signature validator\n・Address validator\n・Time validator\n・MintToken\n・Datum and redeemer logics validator\n\nWeb3 components are able to use published smart contract from platform to perform transaction with Cardano network through APIs.",
+      "report": "Works and outputs:\nDeveloped list of Plutus V2 and Aiken Cardano smart contracts that cover most popular data types (string, number and date) with basic and combined validators e.g signature, address, time and basic data.\nThe developed smart contracts are tested with latest Cardano Node version 9.1.0 at Conway era and published to PAAS platform at: https://paas.bworks.app/web#/contracts \nWe also developed offChain code and CLI scripts to handle different data types (string, number and date) that worked with Plutus platform.\nThese common and combined contract validators may helpful for smart contract developers to reference or use it for their more sophisticated smart contracts. \nSome of published contracts already available for dApp developers to build dApps.\n\nList of developed and published contracts:\nPlutus V2 - Signature validator \nPlutus script to onchain validate the signature of wallet which sign unlock transaction.\nThe TX is validated (succeed) only if it is signed by the wallet we with public key hash attached in the datum.\nGitCommit: https://github.com/bWorksApp/paas-plutus-contracts/commit/4a464749b6d0adb4255e1f94084b3641e6a6d300 \nPublished URL: https://paas.bworks.app/web#/contracts/66374d040da0bf446cda98c6/show \n\nAiken - Signature validator\nAiken script to onchain validate the signature of wallet which sign unlock transaction.\nThe TX is validated (succeed) only if it is signed by the wallet with public key hash attached in the datum.\nGitCommit: https://github.com/bWorksApp/paas-aiken-contracts/commit/6fd247143a069832f9368b7da80d4cc5e2664a04 \nPublished URL: https://paas.bworks.app/web#/contracts/669a5eaf4aec7f3b7d74e2a2/show \n\nAiken V2 - Verify unlock wallet signature and secret message\nAiken script to validate the unlock transaction if below conditions are met:\nIt is signed by the wallet with public key hash attached in the datum.\nThe redeemer contains the message the same with datum secret message\nGitCommit: https://github.com/bWorksApp/paas-aiken-contr",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 82,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "9",
+      "cost": 35000,
+      "promise": "QA/QC Test & fix bugs:\n・Perform QA/QC test for all function, feature and platform performance.\n・Feedback, fix bugs and improvement.\n・Verify the working of key functions, list known bugs.\n\nLaunch and run platform MVP:\n・Deploy APIs, frontend Apps into AWS infrastructure.\n・Grow community and operation\n・User engagement\n・Reward to community developers who have for excellent smart contracts\n\nCloseout report",
+      "criteria": "QA/QC:\n・All functions, features are tested and logged.\n・Security and performance are benchmarked (app response time and load).\n・All bugs are fixed.\n・Platform MVP is good to go.\n\nLaunch and run platform MVP:\n・The platform is deployed to AWS in a production environment.\n・All functions, features in proposal are available to use and meet defined performance.\n・The platform is run stable (uptime > 99.9%), fast (average response time < 2s), no error.\n・Community social channels are built and communicated to Cardano community.\n\nPilot users:\n・Smart contract developers are able to published its smart con",
+      "report": "Hello Reviewers, I resubmit the POA and close-out report which addressed your reviews. Please see the screenshots for captured announcements, conversations and engagement analytic reports. Appreciated your specific reviews. Thanks.\n\nWorks and outputs:\nQA/QC Test & fix bugs:\n・Perform QA/QC function, logics test for APIs, CMS, published and subscribe frontend apps.\n・Performance test for APIs and frontend apps.\n・Audit published smart contracts.\n・Fix reported bugs and improvement.\n\nLaunch and run platform MVP:\n・Deploy APIs, frontend Apps into AWS infrastructure.\n・Support community developers to publish smart contract to platform and use published smart contract on the platform to build dApp transactions.\n・Support community users to audit published smart contracts.\n\nGrow community:\n・Create, promote social channels e.g telegram, discord, X(twitter), Youtube and Titkok to engage users for the services.\n・Reward in ADA to community developers who published smart contracts and community users who did audit published smart contracts and dApp users who use APIs to build payment transactions for its dApps.\n\nPilot dApp users:\nSupport bWorks and Affiso(Web2) projects to use smart contracts from the platform for its payment function. \nSubmit closeout report to Catalyst.\n\nAcceptance criteria:\nQA/QC Test & fix bugs:\n・Tested APIs, app functions and smart contract validator logics.\n・Fixed known bugs and got acceptant QC reports.\n・The latency of access to APIs and end users function < 01 second for average internet connection.\n\nLaunch and run platform MVP:\n・API, CMS, Frontend app are deployed to AWS infrastructure and ready for users to use.\n・Have smart contract developers to publish its own smart contract to platform\n・Have community users to perform audit smart contract.\n・Have dApps use platform smart contract APIs to build payment transactions.\n\nGrow community and support:\n・The project is communicated to Cardano community: Cardano developers, Cardano community reviewers, Catalyst deve",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 59,
+      "cut": true
+    }
+  ]
+}

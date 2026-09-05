@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Lenfi V2のコードはアイケンのプログラミング言語で構築されており、この言語で監査できる監査人を見つける必要があります。\n出力:\n・監査員の監査を完了させる\n・監査書類の署名\n・監査プロセスの開始",
+      "criteria": "・アイケンの監査コードを選定できる監査人ですか?\n・Cardanoコミュニティでは、選択した監査人には信頼性がありますか?\n・価格の合意が達成されましたか?\n・監査役が監査プロセスをスタートし、もしそうでなければ、開始日はいつですか?",
+      "report": "監査を8月に開始しました。プロジェクト触媒に申し込むと、監査プロセスを開始し、Catalystの結果を待つだけでなく、監査を開始するために最初に個人資金を使用しました。 私たちは、この物語を通し、8月の取引は、監査の開始の証拠です。\nAnastasia Labsは、レコードの証明を持つ素晴らしい開発者のチームであるため、コーディング言語が新しくて多くの監査会社がこの言語で監査を実行することを喜んでいるので、Anastasia Labsは、Lenfiチームとのコミュニケーションプロセスで専門性を示したので、選択した監査人はほとんどいませんでした。\n・監査役が監査プロセスを開始した媒体へのリンク\n・オーディションが始まったテレグラム発表へのリンク\n・Cardanoscan(または他の)上のトランザクションへのリンクで、最初の監査フェーズが開始されました。\n\n結果:\n・https://medium.com/@lenfi/lenfi-kicks-off-external-audit-conducted-by-anastasia-labs-303b75325a24\n・https://t.me/lenfiannouncements/198\n・https://cardanoscan.io/transaction/b65364bc58887a1ac81a6f892e60583c97123c3a8878589bacf06c584b1fd417"
+    },
+    {
+      "no": 2,
+      "promise": "既に監査を開始しましたので、公開するコードをオープンソース化できます。\nマイルストーン2の出力:\n・監査役が提供し、現在進行状況と初期監査フェーズを示すハーフウェイの監査を実施した。\n・アイケンに書かれたLenfi V2コードが公開されています.",
+      "criteria": "・レンフィV2コードの監査を行い、その脆弱性を強調する監査レポート。 レポートが監査の修正と調査結果が対処すべきかどうかは、さらに良いでしょう。\n・レギュラーCardanoユーザのLenfi V2コードへのアクセス",
+      "report": "初期監査の半段階が経過し、約束された結果は次のとおりです。\n・監査役による監査報告へのリンク:https://github.com/lenfiLabs/materials/blob/main/Anastasia Labs       Lenfi Audit Draft.pdf\n・Lenfi V2コードへのリンク:https://github.com/lenfiLabs/lenfi-smart-contracts"
+    },
+    {
+      "no": 3,
+      "promise": "最初に監査レポートを受け取った後、開発者は、監査人が提供するガイダンスに従って見つかった脆弱性(もしあれば)を修正することができます。\n出力:\n・監査結果に基づくスマートコントラクトの修正と改善\n・ユーザーや開発者のためのスマートコントラクトの詳細なドキュメントの提示.",
+      "criteria": "・スマートコントラクトの修正と改良は、監査人に返送され、監査プロセスを継続します。\n・既存のソースコードライブラリに更新されたコードの詳細.",
+      "report": "ポアの投稿と開発のタイムラインのクロノロジーの秩序に関する懸念を理解しています。 監査アドレスの検索結果の詳細なLenfi文書を追加しました。\n私たちは、Catalystプログラムの開始前に監査を開始しました, あなたはPoAでチェックすることができます 1 またはここに: https://medium.com/@lenfi/lenfi-kicks-off-external-audit-conducted-by-anastasia-labs-303b75325a24\nPoA 3の行動は、当社のコミットメントからフィードバックを効率的に解決するために、早期に結論づけられたように見えるかもしれません。 弊社のアーカイブは、マイストン3のPoAを未承認しましたが、レビュアーのリクエストごとに更新されました。これにより、タイムライン内の任意の知名的な矛盾を記述できます。\n出力froのマイルストーン3:\n・監査結果に基づくスマートコントラクトの修正と改善:https://github.com/lenfiLabs/lenfi-smart-contracts/tree/pre-mainnet\n・ユーザーや開発者のためのスマートコントラクトの詳細なドキュメントの提示: https://docs.google.com/document/d/1J8g6oOBbk3arcKxcKKB2BHwiyUQc0Yv3wugkoc-nzWQ/edit?usp=sharing\n・監査報告書に記載されたすべての問題と脆弱性が見つかった開発者から承認される: https://t.me/lenficommunity/116650\n\nExtra: 修正された問題の認識は、拡張ライブyoutubeストリームの形でリード開発者によって伝達され、承認のための時間枠は3:50から4:20、ビデオの残りの部分は移動し、それらがプロトコルのアーキテクチャを変更したことを説明しました。 https://www.youtube.com/watch?v=UwS3FWD5VII&ab channel=Lenfi."
+    },
+    {
+      "no": 4,
+      "promise": "このマイルストーンでは、監査人から監査の最終結果を受け取ります。これにより、現在脆弱性が見つかりません。 監査が完了すると、すべてのCardanoエコシステム開発者がコードのセキュリティに参加して改善するために、バグの賞金プログラムを開始することができます。\n出力:\n・監査役による最終報告書 監査レポートは、既定の脆弱性なしにコードが修正され、レビューされたことを示す必要があります。\n・バグ賞金プログラムの開始",
+      "criteria": "・監査役からの監査報告\n・コードは github ライブラリに merged のすべての改良を github ライブラリに 押し込まれています。\n・Bug bounty ルールを定義し、コミュニティに伝え、参加を招待",
+      "report": "・最終監査報告書へのリンク:https://github.com/lenfiLabs/materials/blob/main/anastasiaLabs-audit-final.pdf\n・オープンソースコードへのリンク:https://github.com/lenfiLabs/lenfi-smart-contracts/tree/pre-mainnet\n・Bug Bounty規則が定義されているGitbookへのリンク:https://lenfi.gitbook.io/docs/bug-bounty\n・Twitter(X)へのリンク+ バグ・ボウンティ・プログラムが開発を開始し、開発者が参加することを発表した中の記事: https://twitter.com/Lenfiofficial/status/1755568792896197031; https://medium.com/@lenfi/lenfi-v2-to-beginity-community-driven-bug-bounty-program-now-c2d312203df2"
+    },
+    {
+      "no": 5,
+      "promise": "私たちは、V1コードを1年前に監査し、オープンソース化しました。その年以内に、Bug Bountyプログラムが0の脆弱性が見つかり、Bug Bountyの助けを借りて発見しました。そのため、Bug Bountyが再び空に終わると、Bug Bountyの資金は、監査費用のわずかな部分だけをカバーすることができるようになります。\nこのマイルストーンの欠点:\n1.(脆弱性が見つからない場合)バグの賞金プログラムの結果。\n1 (代替的、脆弱性が見つからない場合) バグ・ボウンティと今後の監査の発表の結果。\n1.2(脆弱性が見つからない場合の代替) 監査を実施する予定者およびいつ。\n2.プロジェクト触媒プログラム完了コミュニティへの最終報告",
+      "criteria": "・バグのボウンティ結果がコミュニティに発表されましたか?\n・Project Catalystプログラム完了に関する最終報告書がコミュニティに発表されましたか?",
+      "report": "・バグ報奨結果へのリンク (または代替:バグの報奨結果へのリンクと今後の追加監査発表へのリンク)\n・https://x.com/Lenfi公式/status/1844715967101734982\n・https://medium.com/@lenfi/lenfi-successfully-concludes-its-bug-bounty-program-e317df3967b2\n・プロジェクトクローズアウトレポートへのリンク\n・https://github.com/lenfiLabs/materials/blob/main/Lenfi-V2-Aiken-Audit%2BBug-Bounty-Report.pdf (要件に従って修正)\n・https://x.com/Lenfi公式/status/1849479548204921142\n・https://t.me/lenfiannouncements/221\n・プロジェクトクローズアウト動画へのリンク\n・https://www.youtube.com/watch?v=T6vM4h4f52o&feature=youtu.be"
+    }
+  ]
+}

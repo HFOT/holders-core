@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "1) 私たちは、コードを開発し、TrezorファームウェアとTrezor Connect(統合レイヤー)のオフチェーンメッセージの署名のためのPRを準備します。\n2) 広報は内部的に見直し、Trezorセキュリティチームにより、リリースプロセスの準備を行います.",
+      "criteria": "1)当社のTrezorファームウェアのコンパイルされたバージョンは、CIP-8およびCIP30で指定されたオフチェーンメッセージに署名することができます。\n2) PRはTrezor Githubリポジトリに提出され、Trezorによってレビューされます。 コードレビューからの問題やコメントはすべて解決されます.",
+      "report": "TrezorファームウェアのPR https://github.com/trezor/trezor-firmware/pull/3509\nTrezorのPRはhttps://github.com/trezor/trezor-suite/pull/10970を接続します\nデモビデオ - ASCIIメッセージの確認フロー https://drive.google.com/file/d/1x1ewOvVK8ZyZ4Qqklh9kMV0aUqK2w5DJ/view?usp=sharing\nデモビデオ - 非ASCIIメッセージの確認フロー https://drive.google.com/file/d/17H3tn4RhLPR499oYx41E9yG-PkriI7SD/view?usp=sharing"
+    },
+    {
+      "no": 2,
+      "promise": "1) 私達はコードを開発し、Ledger Cardano BOLOSの適用およびCardano-ledger-js (統合の層)のために署名するオフ・チェーン メッセージのためのPRを準備します。\n2)PRは内部で見直し、外部監査員によるセキュリティレビューの準備を行います",
+      "criteria": "1)当社のLedgerファームウェアのコンパイルされたバージョンは、CIP-8およびCIP30で指定されたオフチェーンメッセージに署名することができます。\n2)PRは、外部の監査員がレビューする準備が整っているLedger Github(Ledger app)とBaumlabs LedgerJS(Cardano-ledger-JS)リポジトリに提出されます.",
+      "report": "かなり前に作業のレジャー部分を確定しました。 また、既に監査(Milestone 4)を通過したため、Ledgerがリリース(Milestone 5)を待っています。 残念ながら、Ledgerは最近レビューとリリースで非常に遅くなっています。\n証拠:\n1) 実証ビデオ:\n署名 ASCII メッセージ: https://drive.google.com/file/d/1cal3Ol7IC9Rhjlwi0C20x0VnKwL6uhM9/view?usp=drive link\n署名 ヘックス メッセージ: https://drive.google.com/file/d/1qYXJAetI440s21tX3lENNFuEGe0vHQk8/view?usp=drive link\n2) リンク:\nLedgerアプリPR:https://github.com/LedgerHQ/app-cardano/pull/69/commits\n[LedgerはまだConwayをマージしていないので、これは最終的に再構築されます。 監査人は自分の仕事を終わらせ、実際の脆弱性が見つからなかった。 Ledgerは現在、監査者レポートの処理を行っています。\n\nLedgerjs PR: https://github.com/vacuumlabs/ledgerjs-cardano-shelley/pull/205\n\nLedgerjs プレリリース: https://github.com/vacuumlabs/ledgerjs-cardano-shelley/releases/tag/v7.1.1"
+    },
+    {
+      "no": 3,
+      "promise": "1) Ledger および Trezor の機能を Cardano-hw-cli ツール https://github.com/vacuumlabs/cardano-hw-cli と統合する\n注意: マイルストーン 3,4,5 は、当社の制御下にある外部の依存関係を含むように混合された順序で配信される場合があります(外部の監査役の可用性、TrezorおよびLedgerのレビューおよびリリースプロセス速度など)",
+      "criteria": "1) 更新された Cardano-hw-cli ツールのコンパイルされたバージョンは、Ledger と Trezor の両方で CIP-8 と CIP30 で指定されたオフチェーンメッセージを署名できます.",
+      "report": "Cardano-hw-cliに署名するメッセージのサポートを終了しました。 また、Stake プール オペレータのための彼のスイートを使用してM Langによってテストされました https://github.com/gitmachtl/cardano-signer\n証拠:\n1) PR - https://github.com/vacuumlabs/cardano-hw-cli/pull/175/files\n2) ビデオ\nLedger - https://drive.google.com/file/d/1sdxfANVxF8TYdswP7BlTYvUmZU3pdjBv/view?usp=sharing\nTrezor - https://drive.google.com/file/d/1VAZWAyKn87taFyB8Nkee4TVeDtqZ4b8q/view?usp=sharing"
+    },
+    {
+      "no": 4,
+      "promise": "1) LedgerのCIP-8/CIP-30実装の監査レポート(Ledger-approvedコード監査人).",
+      "criteria": "1) 重要かつ主要な調査結果が修正されるか、または調査結果が無視できるLedgerから書面による承認を得る.",
+      "report": "マイルストーン3が完成しましたので、再登録中です。\n\nLedgerアプリの実装の監査が正常に終了し、Ledgerがリリースを待っています。\n1) 監査報告 https://drive.google.com/file/d/1ni0AjhEd9Sp-dlcmEn3C29tP-S-lTuU2/view?usp=sharing\n2) 修正:\nhttps://github.com/LedgerHQ/app-cardano/pull/69/commits/d42d012970c4255173cf08990cae5676c91aa\nhttps://github.com/LedgerHQ/app-cardano/pull/69/commits/01ae3874040f9f8db50dcaa7a88c17b2cbbfd0b3\nhttps://github.com/LedgerHQ/app-cardano/pull/69/commits/8d4c3448f63538069e875f60bbb133c4dcf194be"
+    },
+    {
+      "no": 5,
+      "promise": "・Trezorで製造された機能性を発売\n・Ledgerで製造する機能をリリース\n・Catalystチームにクローズアウト動画を配信",
+      "criteria": "・Trezorで製造する機能がリリースされ、一部のdAppでテストできます。\n・Ledgerで製造された機能がリリースされ、一部のdAppでテストできます。\n・Catalyst+ポイント1と2のデモンストで定義されているすべての側面を含む.",
+      "report": "親愛なる審査官は、最終マイルストーンの添付文書をご覧ください。 Trezorが18か月間リリースを待っています。 いよいよ9月発売です。\nクローズアウトレポート: https://drive.google.com/file/d/1bPOQ1avU5I0Fc39gDIU zOo57IQ7ekqe/view?usp=sharing\nクローズアウトビデオ: https://www.youtube.com/watch?v=5RiD-SaofIQ"
+    }
+  ]
+}

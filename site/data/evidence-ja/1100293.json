@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "コマンドラインで使用できるLLMアプリケーションのドッカーコンテナで、パブリックダウンロードで利用できます。 これらは、その使用方法に関する関連する文書です.",
+      "criteria": "以下の受入基準は以下の通りです。\n・公開リンクからダウンロードできるLMアプリケーションを搭載したドッカーコンテナ\n・コマンドラインでドッカーコンテナを使用して、ユーザは、推論リクエストを完了できます。\n・上記1と2の基準をクリアするのに十分な文書化は、侵入リクエストを補完するためのドッカーコンテナの取得と使用しています.",
+      "report": "マイルストーン1:LLMサーバーの簡単な開発\n\n以下は、マイルストーン#1の仕様ごとの成果物をご覧ください。\nhttps://milestones.projectcatalyst.io/projects/1100293/milestones/1\n・LLMアプリケーションを使用したドッカーコンテナで、コマンドラインで使用可能で、パブリックダウンロード\n・https://hub.docker.com/r/gridrepublic/llm-server/tags\n・完了マイルストーン出力#1\n・コーバーアクセプタンス基準#2\n・コンテナ/アプリケーションの使用に関する文書化\n・https://gridrepublic.org/docs/LLM+Server+Deployment+via+Docker\n・マイルストーンの出力を完了 #2\n・コーバーアクセプタンスクライテリア#3、クリテリア#2を容易に\n・第三者が結果を再現できる公開文書の証拠B)\n・ウォークスルービデオ\n・https://www.gridrepublic.org/docs/media/Deploying-LLM-Server-via-Docker.mp4\n・ドッカーコンテナをダウンロードし、それを使用する方法のEvidence A)は、コマンドラインを介して推論リクエストを完了します"
+    },
+    {
+      "no": 2,
+      "promise": "API ユーザエンドポイントのドキュメントを持つ LLM のインフェレンス API があります。\nLLMのローカル実行版にWebUIがあります。\nLLMのローカル実行版にノートブックインターフェイスがあります.",
+      "criteria": "APIによる基本的な推論リクエストを実行できる作業コード。\nWebUIによる基本的な推論リクエストを実行できる作業コード。\nNotebookから基本的な推論リクエストを実行できる作業コード.",
+      "report": "以下は、Milstone #2の成果物、仕様ごとの証拠をご覧ください。 https://milestones.projectcatalyst.io/projects/1100293/milestones/2\nマイルストーンの証拠 #2 完了\nAPI、WebUI、Notebookの3つの作業コードのデモのエンドポイントとショートビデオのデモのドキュメンテーション:\n・エンドポイントの文書化\n\n・https://www.gridrepublic.org/docs/LLM+Inference+API\n\n2。 API、WebUI、ノートブックの3つの作業コードのデモの短いビデオデモ。\n・https://www.gridrepublic.org/docs/media/Running-LLM-Requests-via-API.mp4\n\n(NOTE:このURLに新しいビデオファイルがアップロードされ、すべてのオペレーティングシステムで動作します"
+    },
+    {
+      "no": 3,
+      "promise": "WebUIとノートブックインターフェイスで、試作分散LMサービス。 インターネット上のリモートリソースにより、推論リクエストが提供されます。 本サービスの利用を容易にするためのユーザードキュメントの提供.",
+      "criteria": "A) 試作品配布 LLM サービスは、次のことができます。\n・WebUIによる不正なリクエストを行なうユーザー\n・Notebook インターフェイスによる推論リクエストを作成するユーザー\n\nB) 上記1と2の基準をクリアするのに十分なドキュメント。たとえば、WebUIとNotebookインターフェイスによる推論リクエストを行う.",
+      "report": "Milestone #3 Iterate: デプロイ/テスト/デバッグ\n\n以下は、マイルストーン#3の成果物のための「証拠」をご覧ください。\nhttps://milestones.projectcatalyst.io/projects/1100293/milestones/3\nマイルストーン完了の証拠\nA) ショート・ウォークスルー・ビデオは以下のとおりです。\n・WebUIによる推論リクエストをユーザ化\n・メモ帳インターフェースによる不本リクエストをユーザが行う\n・参加/リモートサーバから提供されている推論リクエストの証拠\n\nB) 第三者が結果を再現できる公開文書\n・WebUI、{2}による短いウォークスルービデオの解説 Notebook インターフェイス、および {3} は、参加/リモートサーバーによって提供されるインフェレンス要求\n・https://www.gridrepublic.org/docs/media/LLM-WebUI-and-Notebook.mp4\n\n・第三者が結果を再現できる公開文書\n・https://www.gridrepublic.org/docs/LLM+WebUI+and+Notebook"
+    },
+    {
+      "no": 4,
+      "promise": "PDF レポートは 3 つのマイルストーンの完了を文書化します: 1) 簡単な宛先 LLM サーバーの開発, 2) LLM API の開発 + WebUI, 3) 反復: 展開/テスト/デバッグ",
+      "criteria": "PDF レポートには、API、WebUI、ノートブックなどの証拠とリンクが含まれており、これらが機能している動画を記述しています。 作業デモを共有:LLMの推論サービスは、分散された計算リソースによって供給され、許容遅延.",
+      "report": "最終PDFを閉じて、動画を閉じてください!"
+    }
+  ]
+}

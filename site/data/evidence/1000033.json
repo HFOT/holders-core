@@ -1,0 +1,60 @@
+{
+  "title": "Cardano Mempool Explorer",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "Deliverables:\n・Social media post announcing collaboration by SPOs\n・Blog post about interesting facts uncovered from the analysis.\n・Blog post with answers to the fairness question.\n\nOutput:\n・Communicated with SPOs and requested them to join\n・Setup a production cluster for data collection and failover\n・Correlated mempool data with DbSync for analysis\n・Prepared APIs for integration with the frontend\n\nIntended outcome:\n・Several honest SPOs are onboard on the project\n・Blog posts with our analysis of fairness on Cardano is published on Essential Cardano.",
+      "criteria": "・At least two SPOs are onboard in addition to the 2 that we have already secured.\n・API is operational and ready to be integrated with the frontend.\n・A blog post is submitted to publish on Essential Cardano",
+      "report": "Addressing Output:\n1. Communicated with SPOs and requested them to join\n>> Have communicated with several SPOs and some of the kind SPOs have joined the project. As an evidence, those pools are listed on the contributor section on the explorer page at https://mempool.cardanoapi.io/\n2. Setup a production cluster for data collection and failover\n>> The production cluster is connected to mainnet and the mainnet mempool transactions and data are visible on the explorer page.\n3. Correlated mempool data with DbSync for analysis\n>> The mempool data is correlated with DbSync on real time. This gives us the transaction wait time which is defined as the time in seconds a transaction remained pending on the mempool before it was mined into a block on the chain. The time when the transaction was mined is obtained from DbSync.\n4. Prepared APIs for integration with the frontend\n>> The APIs are made available via swagger UI here:\nhttps://mempool.cardanoapi.io/api/docs/\n\nAddressig the acceptance criteria:\n1. At least two SPOs are onboard in addition to the 2 that we have already secured.\n>> We have three additional pools who has contributed to the mempool explorer. The list of these pools are added to the explorer footer section.\n2. API is operational and ready to be integrated with the frontend.\n>> The API is operational and has been already integrated with the frontend. The proof itself is the explorer. Please visit: https://mempool.cardanoapi.io/\n3. A blog post is submitted to publish on Essential Cardano\n>> This is not published on Essential Cardano. However, the content of the blog itself is already prepared, and is made available on the explorer website. The purpose of the blog is to explain the concept of fairness, how we define it and how we meaure it.\nPlease visit the blog URL here: https://mempool.cardanoapi.io/fairness\n\nAddressing the evidence of milestone completion: \n1. Public API for the community to view the mempool transactions from the onboarded pools. This proves",
+      "kinds": [
+        "other"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "Deliverables:\n・Design/mockups of the explorer\n・A deployed dev environment\n\nOutput:\n・Designs of the explorer\n・Development of the frontend\n・Integration with the APIs\n\nIntended outcome:\n・Well functioning dev environment",
+      "criteria": "Visual explorer is available for the community to see the live transactions, along with analysis data and graphs to answer the fairness concerns on Cardano.",
+      "report": "Address Deliverables\n1. Design/mockups of the explorer\n>> Here is the link to the figma design of the explorer\nhttps://www.figma.com/file/GnvRf2az6NOagkvqgb02S0/Mempool?type=design&node-id=196-1135&mode=design\nNote: We have deviated from the initial design listening to the community feedback, especially on how to better represent the fairness. \n2. A deployed dev environment\n>> The explorer is accessible publicly here: https://mempool.cardanoapi.io/\n\nAddressing Outputs\n1. Designs of the explorer\n>> Figma Link here: https://www.figma.com/file/GnvRf2az6NOagkvqgb02S0/Mempool?type=design&node-id=196-1135&mode=design\n2. Development of the frontend\n>> The frontend is developed and deployed at https://mempool.cardanoapi.io/\n3. Integration with the APIs\n>> The APIs are integrated on the frontend thus showing the actual mainnet data on the explorer.\n\nAddressing Intended outcome\n1. Well functioning dev environment\n>> At this point, we have deployed the production version and made it publicly available. \nThe link remains the same: https://mempool.cardanoapi.io/\n\nAddressing Acceptance criteria \n1. Visual explorer is available for the community to see the live transactions, along with analysis data and graphs to answer the fairness concerns on Cardano.\n>> The visual explorer is deployed and publicly accessible. The data being sourced by the explorer is also from the Cardano mainnet. Here is the link: https://mempool.cardanoapi.io/\nThe principal metric for addressing fairness is transaction wait time. This metric measures how long a transaction remained pending in the mempool while waiting to be picked up by a pool to be mined in the next block. Based on this metric, we have graph and charts for the pools and have ranked them.\nHere is a blog post to read more on fairness: https://mempool.cardanoapi.io/fairness\n\nAddressing Evidence of milestone completion \n1. The biggest evidence will be the live website with the promised features.\n>> Here is the link to the live website:\nhttps://m",
+      "kinds": [
+        "other"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "Deliverables:\n・A deployed explorer accessible to the wider community to try and give feedback\n\nOutputs:\n・QA and tests of the API and the frontend\n・Fixed reported bug\n・Invited community members to test\n\nIntended outcome:\n・Well functioning beta environment",
+      "criteria": "・Major bugs and concerns reported on the explorer are addressed\n・The website is well functioning and publicly available\n・A Twitter/X post tagging Cardano community to provide feedback\n・A message on Project Catalyst Discord channel inviting the community members to provide feedback\n・Collect at least 10 community members feedback",
+      "report": "Addressing Deliverables\nA deployed explorer accessible to the wider community to try and give feedback\n>> The explorer is accessible publicly here: https://mempool.cardanoapi.io/\n\nAddressing Outputs\n1. QA and tests of the API and the frontend\n>> Internal and user tests of the API and the frontend has been done. Researchers from Delft University of Technology, The Netherlands are using the mempool data collected in this project for additional research on the context of Miner extractable Value (MEV) on Cardano blockchain.\n2. Fixed reported bug\n>> Fixed several bugs reported by the community and users.\n3. Invited community members to test\n>> The first alpha version was announced for community feedback on IOG technical community for SPOs feedback on Dec 28, 2023. Several channel and personal chat and meetings with the community members were also done to explain how the fairness works, and explaining how the metrics are computed.\nHere is the screenshot of the announcement post on p2p-mainnet channel.\nhttps://s3.eu-central-1.wasabisys.com/kuberide/mempool/mempool-explorer-discord-announcement.png\n\nAddressing Intended outcome\n1. Well functioning beta environment\n>> The explorer is operational and publicly accessible here: https://mempool.cardanoapi.io/\n\nAddressing Acceptance criteria \n1. Major bugs and concerns reported on the explorer are addressed\n>> Only minor bugs were reported related to user interface. No major bugs related to the API were reported. However, several stake pool operators raised concerns over the fairness metric and the representation on the explorer based on the average transaction wait time. We have done several iterations in the past two months, and finally settled on collective wait times as the fairness metric. The explorer is also updated accordingly.\n2. The website is well functioning and publicly available\n>> The explorer is operational and publicly accessible here: https://mempool.cardanoapi.io/\n3. A Twitter/X post tagging Cardano community to",
+      "kinds": [
+        "other",
+        "social"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 15000,
+      "promise": "・Project closing report\n・Demo videos - one short one for Town Hall, one additional full length demo video of all the features uploaded to Youtube\n・Promotion of mempool explorer on Twitter/X about completion of the project and public availability\n・Source code report",
+      "criteria": "・Project closing report is accepted by IOG\n・One video for Town Hall and another full length demo video is uploaded to Youtube\n・A Twitter post announcing the completion of the project and general availability of the explorer is done.\n・GitHub repository is made open for public contribution",
+      "report": "Project closing report (updated according to guideline)\n>> https://docs.google.com/document/d/1f9bGs9qGdjJAUz2t2K7f0qGT4X8Mk9eeEksvyyHuons/edit?usp=sharing\n\nSlides\n>> https://docs.google.com/presentation/d/1XymcOi5unYbr9ykCdQGZmDV5BbRNhhM2XFY5E1bgXBE/edit?usp=sharing\n\nProject Closing Video (updated)\n>> https://youtu.be/iAFnmw-Fb_g\n\nA Twitter post announcing the completion of the project and general availability of the explorer is done.\n>> https://twitter.com/spannercode/status/1785424310976348341\n\nPublicly accessible source code on GitHub\n>> https://github.com/cardanoapi/mempool-explorer\n>> License: Apache-2.0 License",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

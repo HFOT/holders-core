@@ -1,0 +1,60 @@
+{
+  "title": "Tokenized Gold on Cardano with the APEX Group",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "1) Engagement letter with APEX to perform the administration of the tokenized gold.",
+      "criteria": "1)The engagement letter is a legal contract defining the roles and responsibilities for APEX with the tokenized gold processes and workflow.\nThis contract is about determining the legal, tax, and financial considering of a Special Purpose Vehicle (SPC) to administrate the gold tokens and being responsible for the issuance and redemption.",
+      "report": "Here is the redacted version of the milestone 1, which is the contract between APEX and Blockchain Impact.\nhttps://drive.google.com/file/d/1BmIBvnHf37AZ8zT6P6yWnrwS0rYWl1_s/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "22",
+      "cost": 355435,
+      "promise": "1) A legal agreement is covering the relationship between the SPV administrated by Landmark and the gold custody company. \n\n2) A legal agreement is covering the relationship between the SPV administrated by Landmark and the gold supplier company. \n Current working assumption: It is assumed that the gold custodian is also the gold supplier/trader.\n If no commercial negotiations are closed as expected, we may have a situation where the SPV is contracting with a Gold supplier and with a Gold custodian (2 different entities with different contracts) instead of one commercial entity doing the 2 parts.\n\n3) Create a smart contract to mint/burn the Gold token on the Cardano blockchain. This smart contract is controlling the supply of the Gold token.\n\n4) The Gold tokens can be sent in a secure way between the issuer and the user using an existing Cardano wallet.",
+      "criteria": "1) Contract defining the legal terms with the gold custodian to operate for the SPV. Gold custodian is responsible for storing the gold safely.\nThis contract should also include the control process for the gold reserves to ensure its existence and valuation.\n \n2) Contract defining the legal terms with the gold supplier to operate for the SPV. This contract includes also the related processes for the buy/sell of gold (incl. payment in FIAT) to manage the movement in the reserves for the SPV.\n\n3) A smart contract with a multi-sig workflow exists to control the minting(issuance) and burning (rede",
+      "report": "Report for the milestone #2\n1. Output: A legal agreement is covering the relationship between the SPV administrated by Landmark and the gold custody company.\nAcceptance criteria:\nContract defining the legal terms with the gold custodian to operate for the SPV. Gold custodian is responsible for storing the gold safely.\nThis contract should also include the control process for the gold reserves to ensure its existence and valuation.\nEvidence:\n Following the change request, the legal structure has been updated to reflect the use of a trust as the issuer. The complete legal structure is described in the referenced document “Cardano Gold Project overview” (link).\nUnder this structure, the Trust acts as the issuer, while Quod Agis acts as the Enforcer of the Trust. The Enforcer serves as the link between the Trust and Pro Aurum, the gold custody provider, and is responsible for engaging with Pro Aurum on behalf of the Trust.\nRegarding reserve control, Landmark will oversee the Trust’s reserves based on the statement of reserves provided by Pro Aurum through the Enforcer.\nIt is noted that, pursuant to the Trust Deed, the Enforcer has specific rights and duties of the Enforcer under Clause 20.1, including a fiduciary duty to enforce the Trust in accordance with its stated purposes.\nFurthermore, the Enforcer is subject to the liability and indemnity provisions set out in Clause 21. In the event that the Enforcer fails to properly perform its duties under the Trust Deed, the applicable liability provisions may apply.\n \n Additional information: \n· Document for the relationship with Pro Aurum (link).\n· Pro Aurum contract and custody confirmation (standard documents)\n \n \n\n2. Output: A legal agreement is covering the relationship between the SPV administrated by Landmark and the gold supplier company.\nOur working assumption: The gold custodian is also the gold supplier/trader, which is Pro Aurum in our case.\n\nAcceptance criteria:\nContract defining the legal terms with the gold su",
+      "kinds": [
+        "chain",
+        "doc",
+        "live"
+      ],
+      "links": 23,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "23",
+      "cost": 355435,
+      "promise": "1) The smart contracts have been reviewed/audited by a third party.\nAll findings identified in the report should be addressed through appropriate mitigation measures, and any associated risks or issues must be resolved. The resolution of these items should be documented either within the audit report itself or in a separate document.\n2) Connect users to a 3rd party front-end/website for onboarding.\n Note: The exact legal setup and front-end is depending on the milestone 1 and 2.",
+      "criteria": "1) A third party has been hired to audit the smart contract. As a results, a report has been published confirming the security of the IT tech solution. \n The scope of the audit is to identify any weaknesses, vulnerabilities and risks regarding the creation of the tokenized gold.\n The resolution of these items should be documented either within the audit report itself or in a separate document.\n2) A 3rd party front-end is used to onboard a user. (The final process is depending on the legal setup and from the final contracts, as mentioned in milestones 1 and 2 and according to the existing regul",
+      "report": "05.08.2026: This is the resubmission of the previous PoA, completed with the additional comment regarding the claim that a live pair \"CGOLD/Stablecoin\" on a DEX should exist as evidence for this milestone.\n---------\nTo complete the milestones section, I have prepared a document outlining all milestones in detail and reviewing each item in depth.\n・In-depth documentation for milestones #3: Here\n\n \nA. Output: Audit report about the smart contracts listed in Milestone #2\nAcceptance criteria: The audit report is a (electronically) signed PDF by Anastasia Labs (Auditor: Philip DiSarro).\nEvidence: The audit report is accessible here (link) and the document confirms also that all the findings have been resolved. \n \nB. Output: Connect users to a 3rd party front-end/website for onboarding.\n Note: The exact legal setup and front-end is depending on the milestone 1 and 2.\nAcceptance criteria: I refer to the in-depth documentation for milestones #3, where I explain the connection between milestone #1 and #2 in order to complete #3.\nRemark about the scope of the evidence (new):\nI would like to clarify that demonstrating a live CGOLD trading pair on a DEX is not a requirement for this milestone. That requirement is explicitly assigned to Milestone 5, as shown here: https://milestones.projectcatalyst.io/projects/1200236/milestones/5.\n<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAdMAAAE4CAYAAAAAfRnsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFxEAABcRAcom8z8AAK8rSURBVHhe7P0FdFRb36CJ7+6elumenun/zPTX//m+7un3KhAhJJAQ3N2d4Bbc3d3dXYO7BncIwUISAgkJcXe3SqXyzNrnVKyQCzfwvlzYz1q/ldSRfc7ZVXWebWeXQKFQKBQKRYUQlgsUCoVCoVB8HkqmCoVCoVBUECVThUKhUCgqiJKpQqFQKBQV5BuTaRGGvFwys3IwFhZZrlQoFAqF4pvk25GpMY9Lu1bStmV7GjVtR7eh8/AISrXcSqFQKBSKb45vRqYB17bjWNUBa7ta2FarRaUq9rTov5h4o74+LT4Sb++X+Pj6aeHt+5qEDINlMoq/E0ZDPpkZ2WRl/nFkZqqWBoVC8X3zWTItysvE38+PF95+ePvo8cL7Jf7BUZid936KCol+G4CX98uS/bx9XuLt+5bMApO2ydWNY6liU4Nq1etqYVfNiWpNXPCM0ZO4vnsBdlZO2jp7h9rYODVj3wPzyn8QhXmZhAYHEfg2mKC3wQQGvSUyLgX9ir5vHp/e",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "24",
+      "cost": 161956,
+      "promise": "1) Create a website about the gold token. \n2) Include a page about the gold reserve in the gold token website",
+      "criteria": "1) Cardano gold token website is created and includes all the following topics. \n a. What is the gold tokens \nb. How is it working \nc. Where can I access it\nd. Where on DeFi can I used it\n \n 2) On the Gold token website (see 1.) we have a link/page to the reserves for the gold tokens. The reserve statement is accessible to anyone (it can be consulted online) and confirms that the existence of the gold reserves backing the Cardano gold token. The gold website with the information about the gold tokens is available all the time and to anyone.\n The reserves page data verifies the existence and va",
+      "report": "1. Output 1: Create a website about the gold token.\nAcceptance criteria: Extract from the Catalyst Milestone module:\n1) Cardano gold token website is created and includes all the following topics. \na) What is the gold token \nb) How is it working \nc) Where can I access it\nd) Where on DeFi can I used it\n\nEvidence: \nWe have created an official website: https://cardanogold.ch/ \n We have answered the topics in a FAQ section of the website. We are documenting in the following link with print screens from the website the corresponding evidences to demonstrate the completion of the requirements.\nThe summary document with evidences is accessible here: Link to document.\n----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n2. Output: Include a page about the gold reserve in the gold token website\nAcceptance criteria: Extract from the Catalyst Milestone module\n2) On the Gold token website (see 1.) we have a link/page to the reserves for the gold tokens. The reserve statement is accessible to anyone (it can be consulted online) and confirms that the existence of the gold reserves backing the Cardano gold token. The gold website with the information about the gold tokens is available all the time and to anyone.\nThe reserves page data verifies the existence and valuation of the gold reserves that are backing the existing gold tokens in circulation. \n\nEvidence: \nWe have created a dedicated page about the Reserves, which:\n・Is on the same website as the FAQ. See page’s link: https://cardanogold.ch/reserves.html\n・Is available all the time and to everyone.\n・The reserve page has the last reserve statement provided by the gold custodian, which serves as backing for the CGOLD tokens.\n・The physical quantity of Gold in custody at Pro Aurum is disclosed and corresponds to the quantity of CGOLD tokens. 1 gram equals 100 CGOLD.\n\nNote a) As the go",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 7,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Helios debugger plugin for VSCode",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 21300,
+      "promise": "Deliverables\n・Develop a VSCode widget for Helios:\n・Ability to specify inputs before running a Helios script (JSON or hex-encoded CBOR)\n・Ability to select name of Helios script to run (defaults to active tab if it is a Helios script)\n・Show output of running Helios script (print statements, errors, stack traces) in VSCode debugger console\n・Upon running a Helios script: JIT compilation of Helios scripts in the background with caching in user-workspace",
+      "criteria": "The updated Helios VSCode plugin, which includes this script running functionality will be published publicly upon completion of this milestone.\nAnother public document will describe the steps to install it and and test this functionality with a basic example (the `time_lock` spending validator which can be found here: https://github.com/Hyperion-BT/helios).\nThe public document will state the expected output of the run, which should be reproducible by the judges.",
+      "report": "A. Output: VSCode-integrated Helios runner\nAcceptance criteria: A developer can launch a JIT-compiled Helios entry-point script directly from within VSCode using the VSCode Run and Debug workflow. The runner is available from the Helios VSCode extension and can be used with a Helios script opened in the editor.\nEvidence:\n・Demo video: https://drive.google.com/file/d/1_CmqN8aGEmQshR1WhDENSf3kM1llKXVH/view?usp=sharing\n・VSCode Marketplace extension: https://marketplace.visualstudio.com/items?itemName=HeliosLang.helios\n・Source-code evidence: https://github.com/HeliosLang/vscode-plugin/commit/12a670c8452c97244365ed14346b60a4e1a5a5e9\n\nB. Output: Helios Entry Point & Arguments interface\nAcceptance criteria: A developer can select a runnable Helios entry point and configure the values required by that entry point. The runner shows the available entry points from the last opened Helios file, making entry-point and argument selection explicit and user-friendly.\nEvidence:\n・Demo video: https://drive.google.com/file/d/1_CmqN8aGEmQshR1WhDENSf3kM1llKXVH/view?usp=sharing\n・Usage guide: https://docs.google.com/document/d/1zyemJexMB55eD-feSywnz6xvfOIkQnBWfRhC9Pw0vbI/edit?usp=sharing\n\nC. Output: Form-based Helios value editors\nAcceptance criteria: A developer can create and reuse structured Helios values through intuitive VSCode forms, including values such as datums, public key hashes, transactions, script contexts, and list values. This replaces direct low-level JSON/CBOR editing with a more user-friendly approach while still allowing the developer to provide the entry-point arguments needed for script execution.\nEvidence:\n・Demo video: https://drive.google.com/file/d/1_CmqN8aGEmQshR1WhDENSf3kM1llKXVH/view?usp=sharing\n・Usage guide: https://docs.google.com/document/d/1zyemJexMB55eD-feSywnz6xvfOIkQnBWfRhC9Pw0vbI/edit?usp=sharing\n・Source-code evidence: https://github.com/HeliosLang/vscode-plugin/commit/12a670c8452c97244365ed14346b60a4e1a5a5e9\n\nD. Output: UPLC evaluation and result display",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 28,
+      "cut": true
+    }
+  ]
+}

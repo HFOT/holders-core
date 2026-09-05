@@ -1,0 +1,69 @@
+{
+  "title": "JamOnBread‘s NFT Smart Contract with revenue sharing mechanism for whole Cardano NFT space to use!",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 23600,
+      "promise": "A document summarizing the design of Smart Contract solution with revenue sharing mechanism so that Aiken developer can build such Smart Contract. Doc will include:\n・Technical and product requirements including graphical representation of revenue-splitting mechanism\n・Vision for the Smart Contract logic\n・Use cases and opportunities for builders and users.",
+      "criteria": "Description of main functionality and necessary requirements for programming team who will program the solution in Aiken so we can proceed to next milestone.",
+      "report": "・Technical and product requirements document to build a SC is summarized on this link:\n・ https://jamonbread-io.gitbook.io/jamonbread/devs/technical-and-product-requirements\n・Vision that led us to build this SC is summarized in our intro:\n・https://jamonbread-io.gitbook.io/jamonbread/get-started/introduction\n・Use cases for both b2b and b2c are laid out in the following sections:\n・https://jamonbread-io.gitbook.io/jamonbread/marketplace/smart-contract\n・https://jamonbread-io.gitbook.io/jamonbread/marketplace/on-chain-affiliate-program",
+      "kinds": [
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 58000,
+      "promise": "Codebase in Github repository which is tested and ready to be audited - https://github.com/JamOnBread/contract",
+      "criteria": "Smart Contract that can fulfil the design requirements: (this is jut an example - detailed requirements are part of previous milestone - design)\nMultiple affiliate levels and dynamically splits transaction fees based on many factors. These factors include the marketplace where the NFT was listed, the marketplace where the sale occurred, and the contributors involved in the NFT sale (link affiliate).",
+      "report": "Instant buy/sell/offer Smart Contract with revenue sharing mechanism -> https://github.com/JamOnBread/contract",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 50000,
+      "promise": "Completed security audit with an internal documentation describing potential vulnerabilities and potentially problematic features. Audit will include: Aiken script security audit, code review, script structure design consulting.\nDesign review and internal audit will be conducted by Vacuum Labs - https://vacuumlabs.com/blockchain/smart-contract-auditing/ \nSecurity audit will be conducted by Sundaeswap - https://sundae.fi/services",
+      "criteria": "Audit conducted by a reputable company that will reveal both critical and non-critical vulnerabilities. Final verdict whether finalized and adjusted SC can be deployed.",
+      "report": "Sundae Labs Security Audit has been finished with public report accessible at https://jamonbread-io.gitbook.io/jamonbread/marketplace/audits (https://cdn.sundaeswap.finance/audits/jam-on-bread.pdf)\nInternal Audit by Vacuum Labs. As per explanation in the gitbook section the design and code review done was intended only for internal purposes and therefore we can only present the results in our own words as per gitbook section.",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 35000,
+      "promise": "・Document summarizing applied code optimizations which fixed issues and vulnerabilities discovered by the audit team. -> https://jamonbread-io.gitbook.io/jamonbread/marketplace/smart-contract\n・Deployment of both onchain and offchain part of Smart Contract in testnet environment.\n・Testing conducted to make sure Smart Contract is ready for mainnet release (screenshots publicized in gitbook link above)",
+      "criteria": "・All vulnerabilities are fixed to the point that the Smart Contract is ready for deployment.\n・Smart Contract is usable on testnet and transactions are generated.\n・Know-how of how to deploy on mainnet is reached.",
+      "report": "Code optimization and fixing vulnerabilities\nCode optimization based on security audit have been applied. Pages 19 and 20 in the report describe the exact findings. Each finding, based on its severity, has its recommendation and if the finding was necessary to be resolved then exact resolution with commit hash is attached:\nhttps://cdn.sundaeswap.finance/audits/jam-on-bread.pdf\nMajor changes during both Internal audit and Security Audit are also summarized on: \nhttps://github.com/JamOnBread/contract\nDeployment on testnet and testing phase\nFirst internal testnet deployment and testing was conducted following by public testnet release accessible on: \nhttps://testnet-prod.jamonbread.tech/\nSample test transaction are listed in this gitbook section bellow:\nhttps://jamonbread-io.gitbook.io/jamonbread/devs/transactions\nDeployment on mainnet (utilize SC via SDK)\nSince SC is open-sourced all documentation is summarized in: \nhttps://github.com/JamOnBread/contract\nIntended use of this SC is to not fractionalize asset's liquidity by listing into multiple separately deployed contracts but to use the already deployed version and utilize its liquidity and listings by connecting to it via SDK. Complete manual for any business to utilize the listings and liquidity is to be found on link bellow:\n https://github.com/JamOnBread/contract-lib",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 29400,
+      "promise": "・Deployed Smart Contract on mainnet with intended revenue sharing features.\n・Project Closeout Report.\n・Project Closeout Video.",
+      "criteria": "・Smart contract is finally deployed on mainnet and first transactions are generated. \n・Approved Project Closeout Report by reviewers.\n・Approved Project Closeout Video by reviewers.",
+      "report": "Proof of transaction on the finalized SC:\nhttps://jamonbread-io.gitbook.io/jamonbread/devs/transactions\nProject Closeout Report\nhttps://docs.google.com/document/d/1HQRS7J1xXHKXBOBK_WYl3x7Md2NqEOs3B1VPpTwHngc/edit?usp=sharing\nProject Closeout Video\nhttps://www.youtube.com/watch?v=RYpyw5wIe4E",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

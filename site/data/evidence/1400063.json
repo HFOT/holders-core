@@ -1,0 +1,66 @@
+{
+  "title": "Hydra SDK – Fast, Modular, WASM Cardano Toolkit",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25500,
+      "promise": "・Configure project structure.\n・Set up development tools.\n・Create @hydra-sdk/cardano-wasm package with basic WASM bindings and transaction support.\n・Create @hydra-sdk/core package with wallet operations integrated with cardano-wasm.\n・Create basic API documentation for both packages.\n・Implement initial unit tests for cardano-wasm and core.",
+      "criteria": "1. Configure Project Structure\n・Project structure is configured and builds successfully.\n・Includes pnpm-workspace.yaml, turbo.json, and tsconfig.json in root.\n・Repository follows monorepo standard and passes linting.\n\n2. Development Tools Setup\n・ESLint, Prettier, Tailwind, and Vitest are configured and functional.\n・Running pnpm lint and pnpm test completes successfully without errors.\n\n3. @hydra-sdk/cardano-wasm Package\n・Provides basic WASM bindings using Cardano serialization library.\n・Can create, sign, and submit a simple transaction (send/receive ADA or tokens) on Cardano Preprod Testnet.\n・",
+      "report": "1. Public GitHub Repository: \n・Contains codebase,… : https://github.com/Vtechcom/hydra-sdk\n・Includes test results and CI logs confirming 80%+ pass rate:\n\nhttps://github.com/Vtechcom/hydra-sdk/actions/runs/19660125613/job/56304692722\nhttps://github.com/Vtechcom/hydra-sdk/actions/runs/19660125613/job/56304815924\n2. Documentation Site: \n・Public documentation available at: https://hydrasdk.com/\n・Shows full API reference for both cardano-wasm and core: https://hydrasdk.com/api\n\n3. Published npm Packages:\n・@hydra-sdk/cardano-wasm: https://www.npmjs.com/package/@hydra-sdk/cardano-wasm/v/0.0.3\n・@hydra-sdk/cardano-core: https://www.npmjs.com/package/@hydra-sdk/core/v/1.0.2\n\n4. Video Demonstration:\n・https://youtu.be/WioA13KUpno",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 15,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 25500,
+      "promise": "・@hydra-sdk/transaction package.\n・Integration with @hydra-sdk/cardano-wasm for transaction building and signing.\n・Smart contract transaction support (Plutus script call, mint/burn).\n・API documentation for the transaction module.\n・Unit tests and integration tests for transaction flows.\n・Demonstration video showing transaction creation and submission.",
+      "criteria": "1. @hydra-sdk/transaction package\n・Provides utilities to build, sign, and serialize Cardano transactions using cardano-wasm.\n・Supports sending ADA and native tokens on Cardano Preprod Testnet.\n・Produces valid CBOR transaction output that can be decoded and verified.\n・Includes smart contract transaction building (Plutus script reference, redeemer, datum).\n\n2. Integration with cardano-wasm\n・Transactions can be successfully serialized and submitted to Preprod Testnet.\n・Test transactions include ADA transfer, token transfer, and simple contract call.\n・Evidence includes transaction hashes and logs.",
+      "report": "1. GitHub repository of transaction module: https://github.com/Vtechcom/hydra-sdk/tree/master/packages/hydra-transaction\nTest results: https://github.com/Vtechcom/hydra-sdk/pull/22#issuecomment-3631393751 and more details at https://vtechcom.github.io/hydra-sdk/test-reports//.\n2. Published npm package:\n@hydra-sdk/transaction: https://www.npmjs.com/package/@hydra-sdk/transaction/v/1.0.2\n3. Video demonstration showing successful testnet transaction:\nhttps://youtu.be/0C0TbWKcZrs?si=HzdKDJi64fKcFDCw",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 21000,
+      "promise": "・@hydra-sdk/bridge package.\n・Integration with Hydra node and hexcore-proxy.\n・Support sending signed transactions to Hydra Head.\n・Event handling (SnapshotConfirmed, HeadIsOpen, etc.).\n・Detailed API documentation for bridge integration.\n・Unit and integration tests for Hydra transactions.\n・Demonstration video showing transaction through Hydra Head.\n\n(This milestone focuses exclusively on the Bridge module, which is the component that connects directly to the Hydra Node.\n Other modules are not omitted:\n・@hydra-sdk/core (multi-sig, wallet) was completed in Milestone 1.\n・@hydra-sdk/cardano-wasm was integrated into the Transaction module in Milestone 2.\n・Smart Contract and Mint/Burn functionalities are included in the Transaction module (Milestone 2).\n\nThis reorganization ensures that each milestone has a clear scope, making evaluation and testing more straightforward and accurately reflecting the actual development progress of the SDK.)",
+      "criteria": "1. @hydra-sdk/bridge package\n・Implements WebSocket or HTTP client to connect with Hydra node.\n・Can send a signed transaction into an active Hydra Head.\n・Receives confirmation (SnapshotConfirmed) from the node.\n・Handles connection, reconnection, and error states.\n\n2. Integration with hexcore-proxy\n・Bridge communicates with hexcore-proxy to relay transactions between SDK and Hydra node.\n・Logs confirm successful message exchange and transaction propagation.\n\n3. Documentation\n・Publicly available on https://hydrasdk.com/\n・Peer-reviewed, version-controlled, includes integration guide and code exampl",
+      "report": "1.Public GitHub repository updates with bridge:\n・Bridge module: https://github.com/Vtechcom/hydra-sdk/tree/master/packages/hydra-bridge\n・Test results 100% PASSED: https://github.com/Vtechcom/hydra-sdk/actions/runs/19660322774/job/56305393179\n\n2.Published npm package:\n・@hydra-sdk/bridge: https://www.npmjs.com/package/@hydra-sdk/bridge/v/1.0.3\n\n3.Video demonstration of Hydra transaction via bridge and proxy:\n・https://youtu.be/jrMYEAR1JZQ?si=N5yxV-FVKYlA2AkA",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 13000,
+      "promise": "・Final close-out report\n・Final closeout video\n・Documentation site and complete usage guides (README, API Reference, Tutorials).\n・Performance optimization across all SDK packages.\n・Full integration & test coverage across modules (core, transaction, bridge).\n・Final SDK packages published to npm.\n・Feedback collection mechanism via GitHub Issues.",
+      "criteria": "1. Project Close-out Report (PCR) Provided\n・2 to 3-page written summary meeting official PCR structure:\n・Challenge KPIs & Project KPIs\n・How outcomes were achieved\n・Key achievements & learnings\n・Collaboration and ecosystem engagement\n・Next steps and scaling roadmap\n・Publicly accessible link included in Evidence section\n・Format and content adhere to Catalyst PCR guidelines\n\n2. Project Close-out Video (PCV) Published\n・2 to 5-minute high-quality (720p–1080p) video\n・Demonstrates working software outputs (SDK usage showcase)\n・Includes funded scope, achievements, learnings, and next actions\n・Public o",
+      "report": "・Link to final closeout report: https://drive.google.com/file/d/1NLMvI7QBSyGWEl9f4HqCzi0ggAmocKnA/view?usp=sharing\n・Link to final closeout video: https://youtu.be/eQ-G-2dtjCk?si=33XR6tMxyC2IbGW4\n・PDF report detailing project process, including timeline, team roles, progress tracking, and challenges: https://drive.google.com/file/d/1OPmsVg9ahJjy0TJ_pOgBzkQAElVCUrdV/view?usp=sharing\n・Final recap video summarizing development, deployment, and results. : https://youtu.be/uC-3VzGClPI?si=8q6THXAFzFUZUwz6\n・Documentation Site: https://hydrasdk.com/guides + https://hydrasdk.com/api\n・GitHub Repository: https://github.com/Vtechcom/hydra-sdk/\n・npm Packages:\n\n・@hydra-sdk/core: https://www.npmjs.com/package/@hydra-sdk/core\n・@hydra-sdk/transaction: https://www.npmjs.com/package/@hydra-sdk/transaction\n・@hydra-sdk/bridge: https://www.npmjs.com/package/@hydra-sdk/bridge",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 20,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "title": "Cardano Multisig Platform by Mesh, Clarity DAO & Fluid Tokens",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "The first Milestone covers basic features for the Multisig tool and will include:\n・ability for users to vote governance actions\n・ability for users to register DRep\n・ability for users to view governance actions\n・ability for users to delegate to DRep page",
+      "criteria": "Matching the milestone outcomes, the criteria to measure the successful completion include:\n・Completed multisig feature to vote on governance actions\n・Completed multisig feature to register as DRep\n・Completed multisig feature to view governance actions\n・Completed multisig feature to delegate to DRep",
+      "report": "Milestone Report\nHey there Milestone Reviewer, voters and everyone following the progress of this proposal. We are glad to report on the successful completion of our first Milestone.\nThe acceptance criteria of this milestone has been stated as:\n・ability for users to vote governance actions\n・ability for users to register DRep\n・ability for users to view governance actions\n・ability for users to delegate to DRep page\n\nAnd here is the evidence of Milestone completion, including all relevant links to assess and audit our work.\n・Completed feature for users to vote on onchain Governance Actions\n\nUsers can submit voting transactions as multisig directly within the Multisig platform, once the vote tx is submitted by a multisig signer, a notification at the multisig wallet lets other signers know about their required signing of the vote tx. The vote is only submitted onchain once the quorum of the multisig signers has been reached. Feature live and accessible at: https://multisig.meshjs.dev/\n・Completed feature for user to access and view submitted onchain Governance Actions\n\nUsers are able to view and access submitted onchain Governance Actions by accessing the \"Governance\" tab within the multisig platform. (user must be logged in via “connect wallet” in order to access)\n・Completed feature for user to issue onchain DRep certificate\n\nUsers are able to directly mint a onchain DRep certificate with the multisig, allowing groups to register as DRep and to engage at Cardano Governance. The registration can be easily done via accessing the “governance” tab (user must be logged in via “connect wallet” in order to access)\n・Completed feature for user to delegate to DRep’s\n\nUsers are now able to view and delegate their multisig directly to a DRep via the multisig platform https://multisig.meshjs.dev/governance/drep\n・Github\n・You can find all the code on our Mesh repo on Github at: https://github.com/MeshJS/multisig\n・Active Open source licence available at https://github.com/MeshJS/multis",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 100000,
+      "promise": "This Milestone will cover further multisig features, including:\n・UI UX for teams and DAO operations\n・ADA handle lookup\n・discord integration, to ping people to sign\n・support cardano native assets",
+      "criteria": "Matching the milestone deliverables, the acceptance criteria therefore includes:\n・Completed UI/UX for team and DAO operations\n・Completed ADA Handle lookup\n・Completed discord integration to ping people to sign\n・Completed multisig support for cardano tokens/native assets",
+      "report": "Milestone 2 Report\n\nProposal: Cardano Multisig Platform by Mesh, Clarity DAO & Fluid Tokens https://milestones.projectcatalyst.io/projects/1300050\nHey there Milestone Reviewers, voters and really anyone who follows the progress of this proposal. Here we are, reporting on the successful completion of the second milestone. Took a bit longer than expected but we finally got everything done. So, here we are.\nThe acceptance criteria for this milestone has been stated as:\n・Completed UI/UX for team and DAO operations\n・Completed ADA Handle lookup\n・Completed discord integration to ping people to sign\n・Completed multisig support for cardano tokens/native assets\n\nAnd here our completed deliverables on all objectives\n\n・Deliverable: Completed UI/UX for team and DAO operations Has been successfully deployed by our friends at ClarityDAO which had the main workload of this milestone assigned to them, the respective functionalities have been successfully implemented with this pull request (PR): MeshJS/multisig#68\n・Deliverable: Completed ADA Handle lookup \n・The lookup for ADA Handles has been successfully deployed with this PR MeshJS/multisig#56\n・Deliverable: Completed discord integration to ping people to sign Discord integration has been completed and merged via this PR MeshJS/multisig#58\n・Deliverable: Completed multisig support for cardano tokens/native assets And finally, the completed support for native assets and tokens, which came with this PR MeshJS/multisig#64\n\nMore insights on the development\n・You can find further workloads and development progress via checking closed Pull Requests at https://github.com/MeshJS/multisig/pulls?q=is%3Apr+is%3Aclosed\n・As well as currently open PRs at https://github.com/MeshJS/multisig/pulls?q=is%3Aopen+is%3Apr\n・More granular insights can be gained by issues, tracked at: https://github.com/MeshJS/multisig/issues\n\nEvidence of Milestone Completion\n\nTo complete the evidence of milestone completion, here the required deliverables and respective urls",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 18,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 100000,
+      "promise": "This Milestone will cover further multisig features, including:\n・loan request or instant liquidity with Fluidtokens\n・perform swap on Minswap",
+      "criteria": "Matching the milestone deliverables, the acceptance criteria therefore includes:\n・Completed feature loan request or instant liquidity with Fluidtokens \n・Completed feature to swap on Minswap",
+      "report": "Milestone3 Report\nProposal: Cardano Multisig Platform by Mesh, Clarity DAO & FluidTokens\n・https://milestones.projectcatalyst.io/projects/1300050\n\nHey there Milestone Reviewers, voters and really anyone who follows the progress of this proposal. Here we are, reporting on the updated completion of the third proposal milestone. Took once again a bit longer than expected but we finally got everything done. So, here we are.\nChanges\n・we fixed the bugs pointed out by the Milestone Reviewers\n・we did a updated video to drive watchers through the process\n\nSo, there we go :)\nThe acceptance criteria for this milestone has been stated as:\n・Completed feature loan request or instant liquidity with Fluidtokens\n・Completed feature to swap on Minswap\n\nAnd here is the report on the deliveries.\n・Completed feature loan request or instant liquidity with FluidTokens The feature loan request by FluidTokens has been successfully completed and deployed\n・Completed feature to swap on Minswap The feature to swap funds on Minswap by FluidTokens has been successfully completed and deployed\n\nBoth deliverables have been completed by Fluidtokens. To make it easier to add and deploy features on the multisig, we enabled an API through which Fluidtokens has deployed their features.\nThe respective Multisig API has been introduced with this Pull Request:\n・MeshJS/multisig#97\n\nAdditionally documentation for the publicly available API can be found at:\n・https://multisig.meshjs.dev/api-docs\n\nA respective github repo at FluidTokens outlining the use of the deployed features can be found at:\n・https://github.com/FluidTokens/ft-mesh-aquarium-demo\n\nIn addition, here a video giving a run-through of the successfully deployed fluidtoken features:\n・https://www.youtube.com/watch?v=hPjfhb8eXYk \n\nThe project is since inception fully open source, accessible and free to use for anyone Repository: https://github.com/MeshJS/multisig Open source licence: https://github.com/MeshJS/multisig?tab=Apache-2.0-1-ov-file#readme\nOther",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 17,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 100000,
+      "promise": "This Milestone will cover further multisig features, including:\n- Deploy new account type, based on Plutus script, to involve the community to participate in transactions and votes",
+      "criteria": "Matching the milestone deliverables, the acceptance criteria therefore includes:\n- Completed new account type, based on Plutus script, to involve the community to participate in transactions and votes",
+      "report": "Hey there Milestone Reviewers, voters and really anyone who follows the progress of this proposal. Here we are, reporting on the successful completion of Milestone number 4, one step close to completing the Proposal :).\nThe Milestone 4 Acceptance criteria have been stated as:\n・Completed new account type, based on Plutus script, to involve the community to participate in transactions and votes\n\nAnd thats what we indeed did. Here the respective deliverables...\nThe respective changes through 16 specific commits have been introduced via this pull request:\n・MeshJS/multisig#156\n\nAll changes are for sure, updated on the respective Mesh multisig open source github repository as well, accessible at:\n・https://github.com/MeshJS/multisig\n\nFurthermore, all features implemented and accessible via the Multisig at:\n・https://multisig.meshjs.dev/\n\nHere also a short video on the milestone outcomes from QS, the Multisig lead developer\n・https://youtu.be/dtU571MZUE4\n\nAnd thats it :) We hope all links and info satisfy the Milestone Reviewers and we hope that users appreciate the new shipped features. In the meanwhile, we are working on the next Milestone, see you there.",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 7
+    },
+    {
+      "no": 5,
+      "month": "11",
+      "cost": 50000,
+      "promise": "This Milestone will cover multisig documentation and user guides, including:\n- video recording to showcase all new features\n- open source codes on a public github repository\n- Written documentation: Step by step guide for users to easily understand and use the multisig",
+      "criteria": "Matching the milestone deliverables, the acceptance criteria therefore includes:\n- Completed video recording to showcase all new features\n- Licensed the tool and its features under an open source license on a public GitHub repository\n Complete a easy step by step guide for users to use the multisig",
+      "report": "Hey there Milestone Reviewers, voters and really anyone who follows the progress of this proposal.\nHere we are, reporting on the successful completion of the third proposal milestone. Took once again a bit longer than expected but we finally got everything done. So, here we are.\n\nA. Output: Video to showcase features\nAcceptance criteria: Completed video recording to showcase all features\nEvidence: https://youtu.be/-TuPP0jQ7UU \n\nB. Output: Open Source licence\nAcceptance criteria:Public link to the repository and active open source licence\nEvidence: https://github.com/MeshJS/multisig?tab=Apache-2.0-1-ov-file#readme\n\nC. Output: Step by Step Guide\nAcceptance criteria: Complete a simple step by step guide for users to use the multisig\nEvidence: https://github.com/MeshJS/governance/blob/main/funding/catalyst-fund13/multisig-platform/m5-stepbystep-guide.md\n\nAnd that's it, slowly wrapping up and closing this proposal with the next milestone where we see each other again soon.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 6,
+      "month": "12",
+      "cost": 75000,
+      "promise": "・Final close-out report\n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Hey there Milestone reviewers and everyone who is following the progress of this proposal. Here we are, reporting the successful completion of the last and final milestone of this proposal and with that, closing the proposal.\n\nA. Output: Close Out Report\nAcceptance criteria: Complete and publish the final Close Out Report\nEvidence:\n- Github: https://github.com/MeshJS/governance/blob/main/funding/catalyst-fund13/multisig-platform/1300050-close-out.md\n- PDF: https://drive.google.com/file/d/1sTyzfolMpnt04SF7rVSZJ1GwdGsjS5-k/view?usp=sharing\n\nB. Output: Close Out Video\nAcceptance criteria: Complete and publish the final Close Out Video\nEvidence: \n- Youtube: https://youtu.be/arOBnyL8qzE\n\nAnd thats it. We hope the milestone reviewers approve the final close out report & video. If anything seems missing, please let us know.",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

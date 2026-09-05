@@ -1,0 +1,62 @@
+{
+  "title": "cPoker DRED development",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30600,
+      "promise": "・Development environment set-up and documented.\n・Smart contract for node operators available and documented.\n・Source code and documentation on https://github.com/cardano-After-Dark/dred",
+      "criteria": "・Development environment setup prepared, documented, and ready to be used by the open-source community. \n・Create on-chain smart contract for node operators to register their decentralized nodes",
+      "report": "Outputs: \n・Development environment set-up and documented. See README \n・Smart contract for node operators available and documented. See documentation in Operating a Dred Node and Registering a Neighborhood and API docs in dAPI: NodeRegistry and dAPI: Neighborhoods. \n・Source code and documentation on https://github.com/cardano-After-Dark/dred \n\nAcceptance criteria:\n・Development environment setup prepared, documented, and ready to be used by the open-source community. Anybody with the README knows how to git clone, pnpm install, and pnpm run dev to use the dev env for testing and local docs.\n・Create on-chain smart contract for node operators to register their decentralized nodes. The smart contract was developed with helios and stellar-contracts, and is available in the onchain folder. The documentation in Operating a Dred Node and Registering a Neighborhood explains the smart contracts. The API docs in dAPI: NodeRegistry and dAPI: Neighborhoods give more details on the SC function and data needed to register a node and provide a neighborhood.\n\nAddressing previous review:\n・we have changed the link with limited permissions to a link that works, thank you for your diligence!\n・Creating short walkthroughs is unplanned extra work for us, also we will give a presentation at the end of the project. But we recognize the importance of reproducability even in-between Milestones, so we will check in with the Catalyst Guide and the Team about possibly committing to that work for M2 & M3. Thank you for your feedback!",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 13
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 29400,
+      "promise": "・Updated source code and documentation \n・Source code and documentation on https://github.com/cardano-After-Dark/dred\n・Smart contracts integrated in DRED",
+      "criteria": "・DRED nodes replicate with each other \n・Smart contracts are integrated in DRED, such that DRED nodes use on-chain node-registration details for replication.\n・Create smart contract for dApp developers to create and maintain their DRED Neighborhood",
+      "report": "Milestone Outputs\n・Updated source code and documentation\n・Source code and documentation on https://github.com/cardano-After-Dark/dred\n・Smart contracts integrated in DRED\n\nSpecifically: \n・Source available on the branch `feature/onchain-nbh-discovery`\n・Source for smart contract and node operator dapp is under `onchain/`, e.g. `onchain/dist/contracts-preprod`, `onchain/doc`\n・Documentation for developers is under `development`, e.g. `getting-started`, `testing-guide`\n\nAcceptance Criteria\n・DRED nodes replicate with each other \n・Smart contracts are integrated in DRED, such that DRED nodes use on-chain node-registration details for replication.\n・Create smart contract for dApp developers to create and maintain their DRED Neighborhood\n\nEvidence of milestone completion\n・Source code of the integration, Smart Contract, and documentation publicly available on GitHub\n・Demonstration of replication using on-chain details\n・Demonstration of on-chain neighborhood registration\n\nDetails\n・The source code of the integration, smart contract and documentation are publicly available on github in the repo https://github.com/cardano-After-Dark/dred , in the branch `feature/onchain-nbh-discovery` and `main`\n・The smart contract to register a DRED node in preprod is publicly available at this address: https://cardano-after-dark.github.io/dred/operator\n・The demonstration of on-chain neighborhood registration through the dred node operator smart contract is in this youtube video https://youtu.be/1GPb1eriLDQ \n・all the developer documentation to operate a dred node is publickly available here: https://cardano-after-dark.github.io/dred/docs/node-operations (you need a preprod wallet to register a node)\n・The demonstrable transaction ids for the preprod-node registration happened in the video are two \n・UK Server reg: e4d04e5fb01306b6b439bcda07b98624ad7ef54f8bf4faacdedc1480f668ae74, and \n・US Server reg.: 3f68479c834066de049919487472d0919bcd09db7ab12364e9649d65ae6ac0f0 (all in preprod)\n・The demonstration",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 19,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 26700,
+      "promise": "・Source code and documentation updated on https://github.com/cardano-After-Dark/dred\n・Docker Image on Docker Hub\n・DRED node setup video demonstrating how to configure and use the container",
+      "criteria": "・Docker-based package for running a DRED Neighborhood node\n・Video to demonstrate DRED node setup\n・The smart contract has an initial (draft) version of configuration to set incentives and costs for dApp developers, which can be tested in this initial version.",
+      "report": "Note: the provide letter format makes no sense, as it mixes Outputs, Acceptance criteria and Evidence.\nSo, I manually copied Outputs, Acceptance criteria and Evidence as per Milestone 3, and provided evidence, as we did for the previous milestones.\nOutputs:\n・Source code and documentation updated on https://github.com/cardano-After-Dark/dred\n・Docker-based package for running a DRED Neighborhood node\n・Docker Image on Docker Hub\n\nAcceptance criteria:\n・Docker-based package for running a DRED Neighborhood node\n・Video to demonstrate DRED node setup\n・The smart contract has an initial (draft) version of configuration to set incentives and costs for dApp developers, which can be tested in this initial version.\n\nEvidence:\n・Source code and documentation on GitHub\n・Source code:\n・Main Repository: https://github.com/cardano-After-Dark/dred\n・OnChain: https://github.com/Cardano-After-Dark/dred/tree/main/onchain\n・Documentation :\n・Main Doc Website: https://cardano-after-dark.github.io/dred/\n・Specific to M3: https://github.com/Cardano-After-Dark/dred/blob/main/docs/m3/dred-m3-document.md\n・Reference to DRED Docker Image on Docker Hub\n・Docker image https://hub.docker.com/r/cardanoafterdark/dred-node\n・link to DRED node setup video:\n・M3 Specific: https://youtu.be/QrrfOW89XQ4 (latest, added new)\n・M2 Part2 (Replication): https://youtu.be/5EreLXTyXNg\n・M2 Part1 (Smart Contract): https://youtu.be/1GPb1eriLDQ\n・Configuration Documentation on GitHub\n・https://github.com/Cardano-After-Dark/dred/blob/main/docs/m3/dred-m3-document.md,\n・Details in section Smart Contract Configuration for Incentives and Costs\n・Link to smart contract letting dApp developers to configure incentive and costs\n・Smart Contract: onchain/dist/contracts-preprod\n・Policy: NodeRegistryPolicy.hl\n・Tests: DredSettings.test.ts\n\nNote: \n・We restructured the main documentation page on https://cardano-after-dark.github.io/dred as per review.\n・We resubmitted the PoA, even if the note was related to the documentation only.",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 25
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 15300,
+      "promise": "・Source code and documentation updated on https://github.com/cardano-After-Dark/dred\n・Final close-out report\n・Final closeout video on https://www.youtube.com/@cardanoafterdark",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Documentation and video tutorials for dApp developers are publicly available",
+      "report": "Closeout Materials:\n・Closeout Report: (repo) docs/catalyst/1300071/cPoker DRED Closeout.pdf\n・Video Presentation: https://youtu.be/2eatTPXZG5A\n\nThe above documents provide complete details on all project achievements across M1-M4.\nOutputs Delivered:\n・Documentation Site: https://cardano-after-dark.github.io/dred\n・Complete guides for developers and node operators\n・API reference, installation, architecture, operations\n・Built with Next.js, deployed via GitHub Actions\n・API Reference: https://cardano-after-dark.github.io/dred/docs/api-reference\n・Complete DRED client library documentation\n・TypeScript definitions, examples, best practices\n・Installation Guides: https://cardano-after-dark.github.io/dred/docs/installation\n・Node Operator Guides:\n・Operations: https://cardano-after-dark.github.io/dred/docs/node-operations\n・Registry: https://cardano-after-dark.github.io/dred/docs/dred-node-registry\n・Registration: https://cardano-after-dark.github.io/dred/docs/register-neighbor\n・Deployment Documentation: https://github.com/Cardano-After-Dark/dred/tree/main/devops\n・Video Tutorials:\n・Smart Contract Demo: https://www.youtube.com/watch?v=1GPb1eriLDQ\n・Message Replication: https://www.youtube.com/watch?v=5EreLXTyXNg\n・Docker Setup: https://www.youtube.com/watch?v=QrrfOW89XQ4\n・Project Closeout: https://youtu.be/2eatTPXZG5A\n・Repository Documentation: https://github.com/Cardano-After-Dark/dred/blob/main/README.md\n・On-chain Development: https://github.com/Cardano-After-Dark/dred/tree/feature/onchain-nbh-discovery/development\n・Docker Hub Image: https://hub.docker.com/r/cardanoafterdark/dred-node\n・Project Closeout Report: See link at top of document\n\nAcceptance Criteria:\nAll M4 acceptance criteria met:\n・Complete documentation website covering all aspects of DRED\n・API reference with working examples and type definitions\n・Video tutorials demonstrating features and deployment\n・Installation and deployment guides for multiple audiences\n・Node operator operational guides and on-chain registration\n・Proj",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 31,
+      "cut": true
+    }
+  ]
+}

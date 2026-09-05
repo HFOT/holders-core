@@ -1,0 +1,87 @@
+{
+  "title": "Oura by TxPipe: going multi-chain",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 33095,
+      "promise": "・An updated pipeline model that supports multiple-chains\n・A stub of the Bitcoin source plugin\n・A stub of the Ethereum source plugin\n・A stub of the Substrate source plugin",
+      "criteria": "・All components stubs are ready for feature development\n・A CI/CD pipeline is in place to build / integrate the different artifacts",
+      "report": "This Github PR in the Oura repository provides the initial scaffolding for adding multi-chain support to Oura. In particular, it introduces:\n・An updated pipeline model that supports multiple-chains\n・A stub of the Bitcoin source plugin\n・A stub of the Ethereum source plugin\n・A stub of the Substrate source plugin\n\nhttps://github.com/txpipe/oura/pull/910\nIn order to accomplish this, we had to refactor the following:\n・Cardano data is now namespaced under a Cardano record wrapper across filters, sinks, and sources.\n・The event and data model has a clear multi-chain handling mechanism using sum types.\n・All filters / sinks provide the previous behavior but with opting out of any non-Cardano chain (for the time being)\n\nThe scaffold also includes the corresponding workflows for continuous integration. In particular:\n・Lint check\n・Test formatting\n・Unit test checks\n・Integration test checks.\n\nAn example of a particular execution of the workflow can be found here:\nhttps://github.com/txpipe/oura/actions/runs/18297621234",
+      "kinds": [
+        "code"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "9",
+      "cost": 33095,
+      "promise": "・A functional Bitcoin source plugin",
+      "criteria": "・Oura is capable of connecting to a Bitcoin RPC endpoint\n・Oura is capable of processing Bitcoin blocks and transactions",
+      "report": "・Publicly available source-code containing the new plugin\n\nhttps://github.com/txpipe/oura/tree/v3\n・A new binary release of Oura containing the new plugin\n\nhttps://github.com/txpipe/oura/releases \n・Link to documentation for the new plugin\n\nhttps://docs.txpipe.io/oura/v3/sources/btc\n・Video showing an Oura pipeline connected to a Bitcoin node\n\nhttps://youtu.be/e1eEodF3xW4",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "10",
+      "cost": 33095,
+      "promise": "・A functional Ethereum source plugin",
+      "criteria": "・Oura is capable of connecting to an Ethereum RPC endpoint\n・Oura is capable of processing Ethereum blocks, transactions and logs",
+      "report": "・Publicly available source-code containing the new plugin\n\n https://github.com/txpipe/oura/tree/v3\n・A new binary release of Oura containing the new plugin\n\n https://github.com/txpipe/oura/releases\n・Link to documentation for the new plugin\n\n https://docs.txpipe.io/oura/v3/sources/eth\n・Video showing an Oura pipeline connected to an Ethereum node\n\n https://youtu.be/coL0T26HNEg",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "11",
+      "cost": 33095,
+      "promise": "・A functional Substrate source plugin",
+      "criteria": "・Oura is capable of connecting to a Substrate RPC endpoint\n・Oura is capable of processing Substrate blocks, transactions and logs",
+      "report": "・Publicly available source-code containing the Substrate plugin\n\n https://github.com/txpipe/oura/tree/v3\n・A new binary release of Oura containing the new plugin\n\n https://github.com/txpipe/oura/releases \n・Link to documentation for the new plugin\n\n https://docs.txpipe.io/oura/v3/sources/substrate\n・Video showing an Oura pipeline connected to a Substrate node\n\n https://youtu.be/NNZGVVy2Jwg",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "12",
+      "cost": 33095,
+      "promise": "・A functional example of a Bitcoin chain observer\n・A functional example of a Ethereum chain observer\n・A functional example of a Substrate chain observer",
+      "criteria": "・A developer can use the provided examples to understand Oura's new features\n・A developer is able to use the provided examples to build custom solutions",
+      "report": "Publicly available source-code of the examples\n・Bitcoin -> https://github.com/txpipe/oura/blob/v3/examples/btc/daemon.toml\n・Ethereum -> https://github.com/txpipe/oura/blob/v3/examples/eth/daemon.toml\n・Substrate -> https://github.com/txpipe/oura/blob/v3/examples/substrate/daemon.toml\n\nVideo showcasing the available examples\nhttps://youtu.be/kSovglH6ugM",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 6,
+      "month": "13",
+      "cost": 33096,
+      "promise": "・publicly available source-code of the complete system\n・publicly available documentation site with latest updates\n・a closeout video showcasing the final output of the project\n・a closeout report describing the project process and outcome",
+      "criteria": "・the final system includes all features described in the proposal's scope\n・the closeout video complies with Catalyst requirements\n・the closeout report complies with Catalyst requirements",
+      "report": "・Source-code available in the Github repository\n\n https://github.com/txpipe/oura/tree/v3\n・Public documentation site (https://oura.txpipe.io)\n\n https://docs.txpipe.io/oura/v3\n・Public closeout video uploaded to YouTube\n\n https://youtu.be/gkOyE7rb2_Q?si=-srR50rIS9v6voEa\n・Public closeout report uploaded to Google drive\n\n https://drive.google.com/file/d/1l6iAmVO59ntmI8bq26gKXa7qXqHNsXjz/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 9
+    }
+  ]
+}

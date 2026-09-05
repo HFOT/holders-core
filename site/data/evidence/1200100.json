@@ -1,0 +1,48 @@
+{
+  "title": "Development of AI Translation Catalyst Japanese Web Portal",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 21760,
+      "promise": "・Development of the backend for proposal data content retrieval\n・Development of the backend for AI translation\n・Frontend UI/UX design\n・Frontend development\n\n　　　（Enhancement of Proposal Filtering Function (String Search/Proposer/Related Tags/Challenges)\n・Migration from the prototype temporary domain to the new domain",
+      "criteria": "・Search and View All Proposals of Fund12.\n・Proposals are translated into Japanese up to the main text\n・Public Release Date：Sep 1 , 2024",
+      "report": "This project was published under a new, independent domain for a fully-fledged project of a prototype site to translate the F11 proposal into Japanese.\nOld Domain\nhttps://catalyst-japan-potal.streamlit.app/\nPublish under a new domain\nhttps://cardanoism.com/\n\nBackend Source Code\nhttps://github.com/btbf/cardanoism/tree/main/cardanoism/backend\nFrontend Source Code\nhttps://github.com/btbf/cardanoism/tree/main/cardanoism/pages\n\nThe site was officially opened to the public on July 5 and was covered by the Japanese crypto media.\nhttps://x.com/cardanoism/status/1808973634280530009\nhttps://x.com/TheBitTimes/status/1809530990932508695",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 12
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 11760,
+      "promise": "・Development of the backend for vote data aggregation\n・Frontend UI/UX adjustments\n・Integration of vote data into the frontend\n・Preparation of Analytics Data Aggregation Report\n・User Feedback Report",
+      "criteria": "・Publish Voting Results on the Portal Site\n・Publish of Site Access Analytics Aggregation Report\n・Public Release : Oct 1 2024",
+      "report": "Source code published on GitHub\nhttps://github.com/btbf/cardanoism/pull/1/commits/7fdbcd5df942a49288ffe6b1dcb50ddbc5ac8d4d\nhttps://github.com/btbf/cardanoism/pull/3\n\nVoting results published on the portal site\nhttps://cardanoism.com/catalyst/\n（Filter for Fund12 Challenge）\n\nAnnouncement on X (Twitter)\nhttps://x.com/cardanoism/status/1813906311706493198\n\nAnalytics Data Aggregation Report\nGoogle Analytics data during the Fund12 voting period\nhttps://drive.google.com/file/d/11nj4nBN0rIRHdu9ufYEji5IaocbJ-ETq/view?usp=sharing\n\nUser Feedback Report\nhttps://docs.google.com/forms/d/1pQFeSzSH3eVm_s7HgUGFu6NxDqukYD9WuElxOgoiavg/viewanalytics\nQ1. How long have you been participating in the Catalyst Poll?\nFrom before Fund10 70.8%\nQ2. Do you find it difficult to participate in Catalyst voting?\nsomewhat difficult 50%\nQ3. For those who selected \"very difficult\" or \"somewhat difficult\" above.Which part do you find difficult?\nReading proposals in English. 81%\nQ4. Do you think the Cardanoism initiative (proposal Japanese-language) is effective?\nVery agree 79.2%",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 12
+    },
+    {
+      "no": 3,
+      "month": "16",
+      "cost": 24480,
+      "promise": "・Live Fund13 and Fund14 sections on the production portal (listing and detail views). \n・Backend/API migration completed for current Catalyst/LidoNation API, with migration artifacts and a short ops/runbook. \n・UI/UX adjustments delivered to keep parity after the migration, documented with before/after captures.",
+      "criteria": "AC-1: Live coverage \nVerifier opens production URLs for …/fund13 and …/fund14 listings and one proposal detail page per fund. Pass if pages load in under 3 seconds and each fund renders at least 100 proposals (±1%). \nAC-2: Backend/API migration \nGitHub Release vM3 contains: \na) CHANGELOG.md describing schema/API changes for F13/F14, \nb) migrations/ artifact (script or doc) reflecting field additions/renames, and \nc) a data refresh command or script (e.g., etl_refresh.sh or Taskfile/Make target). Pass if these artifacts exist and reference the release tag/commit SHA. \nAC-3: UI/UX adjustments \nd",
+      "report": "This milestone (M3) is delivered and finalized in GitHub Release v2.0.0.Milestone Outputs\n・Live Fund13 and Fund14 sections on the production portal, including listing and proposal detail views.\n・Completed backend and API migration aligned with the current Catalyst / LidoNation API, with documented migration artifacts and an operational runbook.\n・UI/UX adjustments implemented to maintain visual parity after the migration, documented with before/after captures.\n\nAcceptance Criteria\nAC-1: Live coverage\nThe verifier can open the following production URLs:\n・Fund13 listing:\n・https://cardanoism.com/catalyst/funds/13\n・Fund14 listing:\n・https://cardanoism.com/catalyst/funds/14\n\nEach page loads successfully in production, renders at least 100 proposals per fund (±1%), and allows navigation to representative proposal detail pages.\nAC-2: Backend / API migration\nThe backend and API migration for Fund13 and Fund14 has been completed and finalized in GitHub Release v2.0.0, anchored at the following commit:\n・Repository: btbf/cardanoism\n・tag: 2.0.0\n・GitHub Release: v2.0.0\n・Commit SHA: 749a250281798d0b54198eb3f9ac2fdec3f43f2e\n・https://github.com/btbf/cardanoism/commit/749a250281798d0b54198eb3f9ac2fdec3f43f2e\n\nThe release includes:\n・CHANGELOG.md describing schema and API changes for Fund13 and Fund14:\n・https://github.com/btbf/cardanoism/blob/2.0.0/docs/M3/CHANGELOG.md\n・Migration documentation reflecting field additions and renames.\n・A reproducible data refresh procedure and operational instructions:\n・https://github.com/btbf/cardanoism/blob/2.0.0/docs/M3/README.md\n\nAll artifacts explicitly reference GitHub Release v2.0.0 and the commit SHA above.\nAC-3: UI / UX adjustments\nUI/UX parity was maintained after the API migration.\nDocumented before/after screenshots and a summary of UI changes tied to the API update are provided in:\n・https://github.com/btbf/cardanoism/blob/2.0.0/docs/M3/ui-diff.md\n\nAC-4: Operational readiness\nOperational readiness is fully documented and verifiable.\nThe operat",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 30,
+      "cut": true
+    }
+  ]
+}

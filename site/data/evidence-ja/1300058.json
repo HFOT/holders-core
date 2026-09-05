@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "問題定義とスコープ\nソリューションアプローチ1ページ",
+      "criteria": "スコープ文書(プロジェクトの範囲、チップセット、暗号化、ブロックチェーン統合オプション)\nソリューションのアプローチ(物理的なチップがEdDSA暗号化を使用してCardanoブロックチェーン上のメッセージに署名する方法の1ページアーキテクチャのターゲット図)",
+      "report": "お問い合わせ\nマイルストーン1の提出のためのPDF文書をご覧ください。\nスコープドキュメント: https://drive.google.com/file/d/15-NK66qJ0qZLBhcXs9iUua8uPj1JI76y/view?usp=sharing\nソリューションのアプローチ: https://drive.google.com/file/d/1xixukrQ3oflnC3okalKRkMSSqAxs3jX6/view?usp=sharing\nフィードバックがあれば、ぜひご連絡ください。\n\nベスト,\nログイン"
+    },
+    {
+      "no": 2,
+      "promise": "EdDSA署名をサポートする複数のメーカーからチップを購入する\nCardanoのメッセージに署名するために破片を示す基本的なテストが使用することができます",
+      "criteria": "チップメーカーからEdDSA暗号化対応のチップを購入しました。\nチップ内でキーペアが作成され、静的なメッセージに署名できるようになりました",
+      "report": "マイルストーン2:メーカーからのチップの調達に必要な仕様を記載してください。\n私達は私達が私達の偽造防止の商取引の解決のためのEdDSAの署名機能と首尾よく供給し、テストされたNFCの破片があることを共有するために興奮しています。\n技術的な実装:\nNXP LPC8N04 チップ用に特別に調整された高度に最適化された EdDSA C 実装を実装しました。\n・32ビットARM Cortex®-M0+マイクロコントローラ\n・32kBフラッシュと8kBスラム\n・NFC/RFID ISO 14443型 Aインタフェース\n\nLPC8N04の非常にコンパクトなフォームファクターは、製品認証ソリューションへの統合に最適です。 デモビデオでは、最初に指摘した小さなチップが見え、OM40002開発ボード(https://www.nxp.com/part/OM40002)を使用して、CコードをLPC8N04にフラッシュします。 最終的な生産の解決はLPC8N04の破片およびNFCのアンテナ(既にテスト用OM40002に統合されています)だけから成っています。\n技術的な成果:\nLPC8N04の重要なパワーとメモリの制約を、いくつかの革新的なアプローチで克服します。\n・最適化されたEdDSA実装:既にコンパクトなEdDSA実装を最適化し、LPC8N04の限られたリソース(マイルストーン3)でオープンソース化されます。\n・パワーマネジメントソリューション:当社のTypeScript WebNFC実装は、暗号化操作中にチップに連続した電力を維持するために、特定の間隔でスキャンします。\n.・EEPROM チェックポイント付きステートマシン: チップの EEPROM で EdDSA アルゴリズムのチェックポイントを格納するステートマシンを開発し、パワードロップの場合の操作を再開できるようにします。信頼性のある NFC ベースの認証のための重要な機能です。\n\n証拠文書:\n1. ビデオ定義:\nhttps://drive.google.com/file/d/1ATdFe7wrknei7FJwpIPiLVjrHLK6CTBD/view?usp=sharing\nこの動画は以下を示しています。\n・物理LPC8N04チップ"
+    },
+    {
+      "no": 3,
+      "promise": "携帯電話とやり取りする際に、EdDSAを使用してメッセージを署名できる作業プロトタイプを作成することで、チッププログラミングの概念の証明を開発します。\nこのプロセスをウェブサイトに統合するためのコードを書くことで、チップがメッセージに署名し、公開鍵を巧みに検証されたメッセージから抽出し、最初にオンチェーンに登録したエンティティティに解決することができます.",
+      "criteria": "チップと相互作用するためのコードはオープンソースであり、モバイルNFCの機能にアクセスできるウェブサイトに簡単に統合する必要があります.",
+      "report": "A. 出力:WebNFC経由で電話とやり取りするときにEdDSAを使用して任意のメッセージを署名することができる物理的な衣服に埋め込まれたNFCチップを使用して作業プロトタイプを作成することによって、チッププログラミングのための概念の実証を開発。\n受諾基準:チップと相互作用するためのコードはオープンソースであり、モバイルNFC機能にアクセスできるウェブサイトに簡単に統合できます。 コアライブラリは、直接インストールと統合のためのnpmパッケージとして公開されています。\n証拠:\n・npm パッケージ: https://www.npmjs.com/package/@uverify/asymmetric-nfc\n・GitHubリポジトリ:https://github.com/UVerify-io/asymmetric-nfc\n\nB. 出力: NFC チップインタラクションプロセスをウェブサイトに統合するコードを Wrote し、チップがメッセージに署名し、公開鍵を正常に検証されたメッセージから抽出し、Cardano 経由で最初に登録したエンティティティティに解決します。\n受諾条件: 製品検証テンプレートは、チップの相互作用からオンチェーンの解像度まで、完全な検証フローを実証する完全な参照実装を提供し、UVerify Webプラットフォームに統合します。\n証拠:\n・UIテンプレートリポジトリ:https://github.com/UVerify-io/uverify-ui/tree/main/src/templates/ProductVerification\n・製品メタデータとNFCチップ公開鍵付きオンチェーン取引:https://cexplorer.io/tx/44546e0ae1c1d8ec605b22daacea3f05cca4463c4df41982256e9ca70?tab=content\n\nC. 出力: エンドツーエンドのプロセスをチップでデモンストレーションするビデオスクリーンキャストを生成し、パブリックキーのオンチェーンを登録し、デモ製品(衣類の衣服)にチップを配置し、ランダムなメッセージに署名し、その署名と認証を検証する。\n.受諾基準:ビデオは、チップの相互作用からオンチェーン検証までの完全なフローを実証し、次のようにプロトタイプ機能を確認します。\n証拠:\n・動画デモ:https://drive.google.com/file/d/18rxccdpXN53ji9IWOmQ3ZlCEcoXyVyx0/view?usp=drive link\n・[NEW]公開鍵登録:https://drive.google.c"
+    },
+    {
+      "no": 4,
+      "promise": "・「プロジェクトクローズアウトレポート」と「KPI」の2/3ページ、および「(またはない)」のアドレスと、次の段階の計画は製品と書かれています。\n・最終クローズアウトビデオ",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n・ここに指定するフォーマットで構成される:https://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv",
+      "report": "A. アウトプット:KPIとそれらがどのように(またはない)達成されたかをプロジェクトクローズアウトレポートリスト。\n受諾条件:最終クローズアウトレポートは、https://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv で指定された形式で構成されています\n証拠: https://drive.google.com/file/d/1IyIACy0qdkBDjUvIYbxIiRkPzfMMElld/view?usp=sharing\nB. 出力: プロジェクト、その成果、および主要な成果をまとめた最終クローズアウトビデオ。\n受諾条件:最終クローズアウトビデオが公開されています。\n証拠: https://youtu.be/vXdtUB3zI6M"
+    }
+  ]
+}

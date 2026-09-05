@@ -1,0 +1,63 @@
+{
+  "title": "Amaru: P2P networking component by TxPipe",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 37031,
+      "promise": "・publicly available source-code of a peer-discovery module in Rust\n・a published library that can be used as a dependency in Rust applications\n・publicly available documentation of the module's interface\n・report showing benchmarks and integration testing results",
+      "criteria": "・the newly created module provides a way to discover network peers from on-chain relay registration.\n・the newly created module provides a way to discover network peers from bootstrapping peers using the peer-sharing mini-protocol.",
+      "report": "Source code is available in our GitHub repository located here: https://github.com/txpipe/pallas\nThe Rust crate is published on crates.io at this link: https://crates.io/crates/pallas/1.0.0-alpha.2\nDocumentation is published on docs.rs and can be found here: https://docs.rs/pallas/1.0.0-alpha.2/pallas/\nAutomated CI test reports are available in our GitHub Actions run here: https://github.com/txpipe/pallas/actions/runs/14798997559\nA video showcasing the peer discovery capabilities is available in YouTube: https://www.youtube.com/watch?v=zbHccxrvEt4",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 37031,
+      "promise": "・publicly available source-code of an outbound routing module in Rust\n・a published library that can be used as a dependency in Rust applications\n・publicly available documentation of the module's interface\n・report showing benchmarks and integration testing results",
+      "criteria": "・the newly created component manages outbound traffic to peers using different heuristics to optimize overall traffic.",
+      "report": "Source code is available in our GitHub repository located here: https://github.com/txpipe/pallas\nThe Rust crate is published on crates.io at this link: https://crates.io/crates/pallas/1.0.0-alpha.2\nDocumentation is published on docs.rs and can be found here: https://docs.rs/pallas/1.0.0-alpha.2/pallas/\nAutomated CI test reports are available in our GitHub Actions run here: https://github.com/txpipe/pallas/actions/runs/14798997559\nA video showcasing the outbound routing mechanism is available in YouTube: https://www.youtube.com/watch?v=35dlPge3wOI",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "15",
+      "cost": 37031,
+      "promise": "・publicly available source-code of an inbound monitor module in Rust\n・a published library that can be used as a dependency in Rust applications\n・publicly available documentation of the module's interface\n・report showing benchmarks and integration testing results",
+      "criteria": "・the newly created component can monitor inbound connections and enforce rate-limiting / throttling.",
+      "report": "A. Output: Source code for the inbound monitoring mechanism implemented in the pallas-network2 module.\nAcceptance criteria: The implementation is publicly accessible, builds successfully, and contains the relevant networking and monitoring logic in the repository.\nEvidence: https://github.com/txpipe/pallas/tree/main/pallas-network2\nB. Output: Published Rust crate for the Pallas library.\nAcceptance criteria: The crate is available on crates.io with a versioned release that can be downloaded and used as a dependency by external projects.\nEvidence:\nhttps://crates.io/crates/pallas-network2 (specific p2p module)\nhttps://crates.io/crates/pallas/1.0.0-alpha.6 (root crate containing p2p module)\nC. Output: Public API documentation for the Pallas crate.\nAcceptance criteria: Documentation is generated from source code and accessible online, describing modules, types, and usage.\nEvidence:\nhttps://docs.rs/pallas/1.0.0-alpha.6/pallas/network2/index.html (specific p2p module)\nhttps://docs.rs/pallas/1.0.0-alpha.6/pallas/ (root crate containing p2p module)\nD. Output: Automated test execution reports validating the implementation.\nAcceptance criteria: Continuous Integration run showing successful execution of tests and build steps associated with the delivered code.\nEvidence:\nHuman-readable report of the test execution\nCI execution logs that include test execution (as 3rd-party evidence of results)\nE. Output: Demonstration video showcasing the inbound monitoring mechanism in operation.\nAcceptance criteria: A publicly accessible video demonstrating the functionality and behavior of the implemented monitoring mechanism.\nEvidence: https://youtu.be/vlsWsYYbGDs?si=ZeZc3Kqwusc2YHC1",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 14
+    },
+    {
+      "no": 4,
+      "month": "16",
+      "cost": 37032,
+      "promise": "・publicly available source-code for a complete p2p module in Rust\n・a published library that can be used as a dependency in Rust applications\n・publicly available documentation of the module's interface\n・a close out video showcasing the final output of the project\n・a close out report describing the project process and outcome",
+      "criteria": "・the final module provides a working P2P networking layer compatible with Cardano\n・the final video complies with Catalyst requirements\n・the final report complies with Catalyst requirements",
+      "report": "A. Output: Source code for the P2P networking module implemented in Rust\n・Acceptance criteria: The implementation is publicly accessible, builds successfully, and contains the relevant networking logic\n・Evidence: https://github.com/txpipe/pallas\n\nB. Output: Published Rust crate for the networking module\n・Acceptance criteria: The crate is available on crates.io and can be used as a dependency by external projects\n・Evidence: https://crates.io/crates/pallas/1.0.0-alpha.6\n\nC. Output: Public API documentation\n・Acceptance criteria: Documentation is generated from source code and accessible online, describing modules, types, and usage\n・Evidence: https://docs.rs/pallas/1.0.0-alpha.6/pallas/network2/index.html\n\nD. Output: Automated test reports validating the implementation\n・Acceptance criteria: Continuous Integration runs show successful execution of tests and build steps\n・Evidence: https://docs.google.com/document/d/1VBsHdog_kUD96qq44ZEvjrIsbqq43XElNUFtegknFJE/edit?usp=sharing\n\nE. Output: Close-out video demonstrating the functionality of the P2P networking module\n・Acceptance criteria: A publicly accessible video demonstrating the behavior and capabilities of the implemented system\n・Evidence: https://youtu.be/W4oytWNXhJY?si=dXR98gqWVN6oNaHC\n\nF. Output: Close-out report describing the project outcomes and deliverables\n・Acceptance criteria: A publicly accessible written report summarizing the project scope, implementation, and results\n・Evidence: https://docs.google.com/document/d/1xtncDX3lpymVIxuYTfKlVK0ErCMtLrrw7Q3-als1Jl4/edit?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

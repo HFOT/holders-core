@@ -1,0 +1,83 @@
+{
+  "title": "HandleChat by ADA Handle | $handle",
+  "ms": [
+    {
+      "no": 1,
+      "month": "13",
+      "cost": 75000,
+      "promise": "The expected output for this milestone is the conclusion of our internal research that will determine exactly how HandleChat and the HandleChat SDK will work.\nAt the conclusion of this milestone we will publish the exact development framework for HandleChat and the HandleChat SDK, that will demonstrate how it will be built and how it will work.",
+      "criteria": "The acceptance criteria for this milestone is a clear and concise document explaining how HandleChat and HandleChat SDK will work, how they will be built, and how the community can expect to be able to interact with HandleChat once it is released.",
+      "report": "Hello, this is a resubmission of the PoA. \n\nPlease note that Roadmaps are supposed to be the highest level of information. So, the roadmap + the 22-page technical document has all the information needed to understand the full scope of how HandleChat will work and how it will be delivered. The acceptance criteria is a \"clear\" roadmap and technology document which has been provided below.\n \nAs per the acceptance criteria for this PoA, please, see below 2 documents:\n・Roadmap for HandleChat\n\n https://public.koralabs.io/handlechat/Roadmap.pdf\n・Technology and how HandleChat will work\n\n https://public.koralabs.io/handlechat/HandleCommsDesign.pdf\nI believe both links contain all the necessary information.\nThank you!",
+      "kinds": [
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "19",
+      "cost": 195000,
+      "promise": "During this milestone our goal is to deploy the first iteration of HandleChat within our private testnet.\nWe aim to deliver an operational Proof of Concept of the HandleChat application, capable of utilizing a small group (<10) of Handles to chat over separate browsers.",
+      "criteria": "The acceptance criteria for this milestone is an operational, albeit not production ready, first iteration of HandleChat, that will allow us, the ADA Handle team, to internally utilize the first iteration of the protocol to send and receive messages utilizing HandleChat over different browsers.",
+      "report": "Hello,\nAs per the Evidence of Milestone Completion:\nWe will provide a video demonstrating that we were able to successfully send and receive messages over HandleChat, utilizing different browsers to route messages.\nThe youtube link below, demonstrates two different browsers: Google Chrome on the left and Microsoft Edge on the right, successfully sending and receiving messages:\nhttps://youtu.be/DVc313sJRPA\nThank you!",
+      "kinds": [
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "20",
+      "cost": 195000,
+      "promise": "We expect to produce the first iteration of the HandleChat SDK. The SDK is designed to simplify how other platforms integrate to HandleChat. This first version of the SDK will allow us to, internally, test it.",
+      "criteria": "The acceptance criteria for this milestone is the delivery of the first version of the SDK, for our internal testing.",
+      "report": "Hello!\nAs per the evidence of milestone completion \"We will deliver the evidence of this milestone as a video showcasing the installation and deployment of the SDK.\"\nThe link below demonstrates the installation and deployment of HandleChat SDK:\nhttps://youtu.be/dOP1w2Axcuc\nThank you!",
+      "kinds": [
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "21",
+      "cost": 55000,
+      "promise": "We will launch the first iterations of HandleChat and HandleChat SDK on PreProd and Preview.\nThis means that we will grant the public access to an operational website: https://chat.handle.me, on Preview and PreProd, that will allow the exchange of messages using Handles.\nThe SDK will also allow partners to integrate to HandleChat on Preview and PreProd, and with that bring HandleChat messaging into their dApps, wallets, etc. It will be up to them to decide how and when to integrate.",
+      "criteria": "We will launch the first iteration of HandleChat and its SDK on Preview and Preprod. This means that the community will be able to send and receive messages on Preview and PreProd utilizing their Handles. This will be the first public deliverable. The acceptance criteria is, therefore, a basic but operational first version of HandleChat on Preview and PreProd, that will allow the community to send and receive messages utilizing their Handles.",
+      "report": "Hello! The previous PoA has been signed off.\nAs per the Evidence of Completion, HandleChat is now available on both Preview and Preprod:\nPreview: https://preview.chat.handle.me\nPreprod: https://preprod.chat.handle.me\nYou will need Handles on both networks if you wish to test this on Preview and Preprod.\nIf you need Handles on either network, just send me your address for Preview and Preprod in the Discussion section and I'll send each reviewer 1 Handle on both networks.\nAdditionally, the video below demonstrates HandleChat working on Preview:\nhttps://youtu.be/VtpfSJKcnIk\nThank you!",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "22",
+      "cost": 32500,
+      "promise": "The goal of this milestone is to correct the bugs detected after Preview and PreProd launch and launch HandleChat and its SDK for MainNet. The expected outputs are an operational HandleChat application on MainNet, allowing users to send and receive messages utilizing Handles, while also making available the SDK available for dApps to utilize.",
+      "criteria": "The acceptance criteria for this milestone are the successful launch of HandleChat and making the SDK available to the community, in an open-source format, listed publicly on GitHub.",
+      "report": "Still not working! :-( \nGreat news though -- it's a different error! You're making progress!\nHere is a loom video of the new issue: https://www.loom.com/share/33fc687306334c75bc0655ecb065c2a4\nHi Reviewer that submitted the \"error\" above. I you check the video demo I linked below, you will see that the Handle you want to message, has to accept your message request. So if you want to test this yourself and you own the Handle $sallyanne you have to use a different browser with the wallet that has the $sallyanne Handle in it. HandleChat is working as designed as you were able to connect your wallet and Handle to it. This is the video demo: https://www.youtube.com/watch?v=BTKAD5tTx9E\nPlease approve the Milestone.\n\nHello! As per the milestone 5 requirements:\nHandleChat is now accessible on Mainnet here: https://chat.handle.me/\nSDK can be downloaded here: https://github.com/koralabs/handle-chat-sdk\nNPM package: https://www.npmjs.com/package/@koralabs/handle-chat-sdk\nI created a video, with 2 browsers and 2 different wallets with 2 different Handles, demonstrating HandleChat on mainnet working as designed. You can view the video demonstration here: https://www.youtube.com/watch?v=BTKAD5tTx9E\nThank you!",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 11
+    },
+    {
+      "no": 6,
+      "month": "23",
+      "cost": 97500,
+      "promise": "After launching HandleChat on MainNet, we will utilize the feedback from the community, dApp partners, and users to refine and improve the initial version of HandleChat.\nWe will also utilize this phase to create the public documentation for HandleChat which will include users' manual and also the SDK-integration manual.\nWe will also deliver Project Catalyst Closeout Report and Project Close Video, as this is a Final Milestone requirement.",
+      "criteria": "The acceptance criteria for the two expected outputs, improved documentation and final updates of HandleChat, are the fully operational first iteration of HandleChat that will allow the community to chat utilizing their Handles, while also updating our documentation portal: https://docs.adahandle.com/, with the documentations for HandleChat.\nWe will also deliver Project Catalyst Closeout Report and Project Close Video, as this is a Final Milestone requirement.",
+      "report": "As per one of the reviewer's and community feedback: When you open Handle Chat - You can now see a instructions on how to use HandleChat as soon as you connect your wallet and there are 2 links to Handle documentation within HandleChat so users know exactly what to do and what to expect from it.\nFinal Milestone Close-out Video: https://youtu.be/AZV3_NonSRA\nClose-out Report can be viewed here.\nHandleChat is live on mainnet. You can access it here: https://chat.handle.me\nAll you need is a CIP-30 wallet and a Handle to start using HandleChat. Please note, that once you connect your wallet to the app and you want to start messaging another Handle, as soon as you select the Handle you want to chat with, they will need to accept your connection before you can message them.\nDocs for HandleChat: https://docs.handle.me/docs/HandleChat/1_HandleChat\nHandleChat SDK: https://github.com/koralabs/handle-chat-sdk\nThank you!",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

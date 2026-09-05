@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "このマイルストーンでは、DAO制御のステーキングバスケットの設計を出力します。 この設計は、ユーザーが増加/減少バスケット手数料のために作成された提案に投票する方法、およびステークバスケットプール構成に投票することができます.",
+      "criteria": "このマイルストーンは、ユーザーがDAOバスケットを作成し、Stakingバスケット組成/フィードで投票することを可能にする機能設計を提供すると認められるべきです。\nこの設計は、DAO 制御バスケットに必要なすべての機能を含むことを考える必要があります。\n含まれている特徴:\n・提案書の作成\n・提案書の作成\n・提案が達成しようとするものを包含する提案詳細\n・複数の提案を同時に一覧表示.",
+      "report": "お問い合わせ この触媒の提案についてのあなたの忍耐をありがとう。\nここでは、クリエイティブディレクターから約束されたビデオファイルです。これは、少し背景の文脈で提供される成果物の明確な説明を提供します。\nhttps://www.dropbox.com/scl/fi/0cz1bgqmvlo60tr88t6d5/Video-Report.mov?rlkey=xb5hfc4y57j8jujlaeb3er4o4&dl=0\nそしてここに設計のイメージです:\nhttps://www.dropbox.com/scl/fo/c768xoh3foncxybwbpjgn/AE3xOBxx6MYJs5aO1Yu Ad0?rlkey=28lp7n50k2b96ylqv4fkje9f&dl=0\nご不明な点がございましたら、お気軽にお問い合わせ下さい。\nお問い合わせ."
+    },
+    {
+      "no": 2,
+      "promise": "このマイルストーンでは、オンチェーンがStaking Basketsを管理できるようにするために必要なスマートコントラクト作業の技術的な仕様を出力します.",
+      "criteria": "このマイルストーンは、スマートコントラクトが機能する方法に関する技術的な仕様を提供して受け入れられるべきです。\nこの技術仕様は、これらのスマートコントラクトの機能を含める必要があります。\n・ユーザー作成提案\n・スマートコントラクトによるカルダノネイティブアセットでオンチェーンを呼び出す。\n・複数の提案を同時に管理できる能力.",
+      "report": "当社がStaking Basket DAOsをどのように構築するかを示す技術仕様書を書いています。 これは、任意のトークンによって完全にオンチェーンを管理するためにスマートコントラクト内のステーキングキーを可能にします。 また、Staking Baskets、Staking Basket DAOs、およびlaymenの用語の実装を説明するビデオを作成しました。\n技術的な仕様へのリンク: https://drive.google.com/file/d/1 buXevYxS5BvwCSx540ZP1I-aZB8 rwY/view?usp=sharing\n動画へのリンク: https://youtu.be/DEjmkP15ELc"
+    },
+    {
+      "no": 3,
+      "promise": "最後のマイルストーンに技術仕様を提出した後、スマートコントラクトの開発を開始しました。 このマイルストーンでは、スマートコントラクト開発に関する進捗報告を提出します。 本レポートでは、MVPに向けての課題や進捗を詳しく解説します.",
+      "criteria": "このマイルストーンは、スマートコントラクトのコードの進捗状況に関する詳細な進捗報告を提供して受け入れるべきです。\n\nこの進捗報告には以下が含まれます。\n・これまでのコードのライン\n・デベロッパーの勤務時間数\n・完成までの所要時間\n・私たちが走った問題の分析と、その技術課題を克服する方法.",
+      "report": "親愛なるCatalystの査読者、あなたの考慮のための次の文書:\nレポートへのリンク:https://drive.google.com/file/d/1q9SesXf5oKSvhUhAwxz OWkke5 NHKqlL/view\n動画概要へのリンク: https://youtu.be/dVj4nyzyL0o\nこんにちは、 loom ではなく youtube でビデオでマイルストーンをリサブミットします。 お問い合わせ!"
+    },
+    {
+      "no": 4,
+      "promise": "このマイルストーンは、Staking Basket DAOのMVPを出力します。 これは、ユーザーがプール構成上のCardanoネイティブアセットと投票し、Cardanoのプレビューネットワーク上のバスケット手数料をステーキングすることを可能にするStaking Basket DAOの最初のバージョンになります.",
+      "criteria": "このマイルストーンは、Staking Basket DAO MVP を使用して、ユーザーがプールの構成とステーキングバスケット手数料でCardanoネイティブアセットと投票できるようにします。 Cardanoのプレビューネットワークでは、このStaking Basketの投票が行われます。\nこのマイルストーンは、Staking Basket DAO MVP を使用して内部提案を作成する場合にのみ受け入れられるべきです。 この内部提案は、異なる財布の提案にチーム投票の少数のメンバーを持っている必要があります.",
+      "report": "Staking Basket DAO MVPスマートコントラクトを開発し、Cardano CNTsで投票できるフロントエンドを開発しました。 このスマートコントラクトは、Cardano CNTs でオンチェーン DAO 投票を通じて、Staking Basket スマートコントラクトのパラメーターを変更することができます。\nCardanoのプレビューネットワークと、DAOボーティングスマートコントラクトのStaking Basketスマートコントラクトを立ち上げました。 投票は、CNT 'ATMA' を介して行われます。 投票権力は、あなたが投票する「ATMA」の量に基づいています。 「ATMA」は、提案が二重投票を防ぐために締結するまでロックされます。 この「ATMA」は、提案が終了すると請求することができます。\nこのスマートコントラクトは、選択したCNTによって完全に管理されているStaking Basketを有効にします。\nCardanoのプレビューネットワーク上でライブ投票を表示するビデオを作成し、オンチェーンで何が起こっているかを説明する: https://drive.google.com/file/d/10NwYkFqnxZd wg1LgpHvywdB0Lg0eQfA/view?usp=sharing\n提案作成からTXハッシュ、Cardanoのプレビューネットワーク上での投票:\n・提案書の作成 Txハッシュ:52b5fef7fa9dad2b34f2c334c2044b7e9784826ec1e242bc40e4c8907b51c7\n・Dev1投票Txハッシュ:18283a3abe675788ff4139a52a1754d891ed02cd76ae39a57e9e0b4922a37b95\n・Dev2投票Txハッシュ:5bbd6c599309002b1badaea9e8821c36b57dfbe5da4deb1719fd7719c45675aaa\n・Dev3投票Txハッシュ:5ef504aae6efa68164a594e501e9d51fb9cae50c2f511e83501662fe037a8781\n・最終提案 Txハッシュ:3d11934099d265e1be8a757f6542b4f40548e4b4d632ccbe85422b858acf9db0\n・Dev1 クレーム アトマ Tx ハッシュ: 71944c1a32734297dddb73b8511115bec457cef78877e4a9af8ac12651cb2518"
+    },
+    {
+      "no": 5,
+      "promise": "Staking Basket DAOsの最終マイルストーンは、Cardanoのプレビューネットワーク上で行われた投票になります。これにより、どのテストネットユーザーがCardanoのプレビューネットワークのフロントエンドでStaking Basketの構成に投票することができます。 この投票は、私たちのウェブサイトのalpha.atriumに住んでいます。 誰にとっても、プレビューウォレットと投票を接続しましょう!\nこのマイルストーンでは、テキストフォーマットとビデオクローズアウトレポートのクローズアウトレポートも出力します。 これらのレポートは、どのような作業が終了したか、私たちが実行した課題、そしてどのようにしてそれらを追い越しているかを詳しく説明します.",
+      "criteria": "このマイルストーンは、Cardanoのプレビューネットワークに接続されているサイト上のStaking Basketsの構成にユーザーが投票できるようにすることで受け入れられるべきです。\nこのマイルストーンは、テキストのクローズアウトレポートを提出するだけでなく、どのような作業が終了しているか、私たちが実行した課題、そしてどのように我々はそれらを追い越しているかを詳細にビデオクローズアウトレポートを承諾する必要があります.",
+      "report": "親愛なるCatalystの審査官は、投票のビデオでマイルストーン5 PoAを返金します。 投票プロセスがユーザーの観点からどのように見えるか、コミュニティメンバーがすでに閉鎖したので投票をキャストしたのと同じ投票ではないことをビデオが示しておいてください。\nhttps://youtu.be/SsaEQYrTZh8\n・PDFの最終クローズアウトレポート https://drive.google.com/file/d/1IufPRIleY y8pluq zPyqJxOv-iaJVOF/view?usp=drive link\n・最終クローズアウト動画 https://youtu.be/R5IyrCEBooY\n\nPoA(報告書でも利用可能で、ビデオで説明)\n・画面1、ランディングページ https://drive.google.com/file/d/1PqRBGhYN3iIIJMRq U IhrURGoAVOSgZ/view?usp=drive link\n・画面2、投票 https://drive.google.com/file/d/1F6tPz4vY1ZVXYMJ1j-JKM2kCp4ZMnYOM/view?usp=drive link\n・画面3、投票のtxに署名 https://drive.google.com/file/d/17RGY0kbM-1boWlqjosGNuzJNup7ybIAM/view?usp=drive link\n・画面4、投票完了:https://drive.google.com/file/d/1gd5LwNEV1mTDH3vT1C9MIt9ZKCImIHir/view?usp=drive link\n\n画面はデモンストレーションのみのため、投票が終了し、プレビューネットワーク上のテストバスケットに自動的に実装されているので、実際のコミュニティメンバーと締結された投票は表示されませんのでご注意ください。\nコミュニティメンバーのキャスティング投票のプレビューネットワークからのチェーン証拠:\n・コミュニティメンバーからの投票 1\n・https://preview.cexplorer.io/tx/f3c5f147eb0d2084e1f492588ce7a49e657322d4292878a25ec2fff4b9f72d74\n・コミュニティメンバー2名からの投票\n・https://preview.cexplorer.io/tx/369d290f069d026a69bddb947a4332dd3fbd394e5acd1cdd98ed8e5c7f5eb6a2\n・コミュニティメンバー3名から投票\n・https://preview.cexplorer.io/tx/3e72a351e32c50fc68d06c1050062a79a4aaa1a749a792e314f31cf252a0b60\n・コミュニティメンバー4名からの投票\n・https://preview.cexplorer.io/tx/8ced89f69f28e3cde6d01d861396582fdc6a28450c01c39873db455d72b52af3\n・コミュニティメンバー5名から投票\n・https://preview.cexplorer.io/tx/1c54c55c454bb81361bf5a02a77b89d2e66907f499f73e49"
+    }
+  ]
+}

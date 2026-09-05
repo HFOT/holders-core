@@ -1,0 +1,44 @@
+{
+  "title": "Cardanoscan Analytics Charts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 13200,
+      "promise": "Implement below 3 charts\n・Analytical Chart for Epochly Rewards Distribution: Develop a chart illustrating the distribution of rewards in each epoch\n・Daily Transaction and Fee Collection: Implement graphical representations showcasing the daily transaction count and fee collection on Cardano.\n・Fee collection per Epoch: Graphical illustration of per epoch fee collection \n\n・Screenshots of the above charts",
+      "criteria": "・3 charts as outlined in the outputs implemented and deployed on mainnet, verifiable via public URL\n\n・Epoch Rewards Distribution\n・Daily Tx and Fee count\n・Per Epoch Fees",
+      "report": "3 Charts as part of the Milestone 1 are implemented and deployed on the mainnet,\nSee the Analytics Page for the list of charts - https://cardanoscan.io/analytics\n・Epoch Reward Distribution Chart - https://cardanoscan.io/analytics/epochRewardDistribution\n・Daily Tx Count and Fees Chart - https://cardanoscan.io/analytics/dailyTxCountAndFees\n・Fee collection per Epoch Chart - https://cardanoscan.io/analytics/epochFees",
+      "kinds": [
+        "chain"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 13200,
+      "promise": "・Absolute Transaction Count Chart: Daily transactions count chart with the count as the sum of individual tx transfers (not the count of tokens/ADA transfers, but a sum of everything)\n・Block Size Trend: Implement a graph highlighting the increase or decrease in block size on Cardano. This can help understand the health and network activity of the Cardano chain.",
+      "criteria": "・2 charts as outlined in the outputs implemented and deployed on mainnet, verifiable via public URL\n・Absolute Transaction Count\n・Block Size Chart",
+      "report": "2 Charts as part of the Milestone 2 are implemented and deployed on the mainnet,\nSee the Analytics Page for the list of charts - https://cardanoscan.io/analytics\n・Absolute Transaction Count Chart - https://cardanoscan.io/analytics/absoluteTxCount\n・Block Size Trend Chart - https://cardanoscan.io/analytics/blockSize",
+      "kinds": [
+        "chain"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 17600,
+      "promise": "・Deploy analytics page in Cardanoscan mainnet site with total 5 Charts from M1 and M2 as below,\n\n・Analytical Chart for Epochly Rewards Distribution: Develop a chart illustrating the distribution of rewards in each epoch\n・Daily Transaction and Fee Collection: Implement graphical representations showcasing the daily transaction count and fee collection on Cardano.\n・Fee collection per Epoch: Graphical illustration of per epoch fee collection \n・Absolute Transaction Count Chart: Daily transactions count chart with the count as the sum of individual tx transfers (not the count of tokens/ADA transfers, but a sum of everything)\n・Block Size Trend: Implement a graph highlighting the increase or decrease in block size on Cardano. This can help understand the health and network activity of the Cardano chain.\n\n・closeout report with video",
+      "criteria": "・Analytics charts as outlined in the outputs above are verifiable by visiting the mainnet URL to the analytics page\n・Close-out report and video provided",
+      "report": "Data Source and Consistency\nOrigin of Data for the Charts\nThe data for the analytics charts is sourced directly from the Cardano blockchain. We utilise:\n・Ouroboros-network-js, an open-source library, to access and process blockchain data efficiently.\n・Proprietary code integrated within Cardanoscan to further refine, aggregate, and visualise the data for real-time accuracy and reliability.\n\nData consistency in Charts\n・Daily Data Charts: Data is updated daily, displaying metrics up to the previous UTC day. Locale time differences might create the impression of a delay, but the displayed data reflects the most recent complete UTC day.\n・Epoch Reward Distribution Chart: This chart has a two-epoch delay due to the inherent protocol design and how rewards are finalised within the Cardano blockchain.\n・Hourly Average Block Size Chart: This chart provides data up to the last UTC hour, ensuring timely insights while maintaining data consistency.\n\nCharts Deployed on Mainnet As part of this proposal,\n\n・All Charts List Page - https://cardanoscan.io/analytics\n・Epoch Reward Distribution Chart - https://cardanoscan.io/analytics/epochRewardDistribution\n・Daily Tx Count and Fees Chart - https://cardanoscan.io/analytics/dailyTxCountAndFees\n・Fee collection per Epoch Chart - https://cardanoscan.io/analytics/epochFees\n・Absolute Transaction Count Chart - https://cardanoscan.io/analytics/absoluteTxCount\n・Block Size Trend Chart - https://cardanoscan.io/analytics/blockSize\n\nClose-Out Report and Video\n\n・Report - https://drive.google.com/file/d/1DHyo66Qji9lcm8Ipg1MLKgGRL8xwZzTs/view?usp=sharing\n・Video - https://youtu.be/o9Z0ZuJX8b8",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 17
+    }
+  ]
+}

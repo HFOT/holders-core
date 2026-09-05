@@ -1,0 +1,60 @@
+{
+  "title": "Multiplatform Plutus Script Cost & Evaluation Library (JS/JVM/LLVM)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 35000,
+      "promise": "UPLC script execution cost calculation implementation for JVM, JavaScript platforms in Scalus.\nA library for script execution and cost calculation.\nUnit and/or property tests.\nDocumentation for the API.\nChangelog.md and Readme.md files updated with details on what was implemented and how to use it",
+      "criteria": "The library can perform script execution and script execution cost calculation according to PlutusV2 specs.\nThere are unit and/or property tests that cover that functionality.\nSource code API are documented.\nChangelog.md and Readme.md files are updated with details on what was implemented and how to use it.",
+      "report": "Script Execution\nHere is a multiplatform implementation of Plutus CEK machine:\nhttps://github.com/nau/scalus/blob/v0.8.2/shared/src/main/scala/scalus/uplc/eval/Cek.scala\nPlutus v1/v2 builtins\nPlutus v1/v2 builtins implemented according to Plutus specification and work on JVM and JavaScript platforms.\nHere are Scala sources that implement v1/v2 builtins for both JVM and JavaScript platforms:\nhttps://github.com/nau/scalus/blob/v0.8.2/shared/src/main/scala/scalus/uplc/Builtin.scala\nhttps://github.com/nau/scalus/blob/v0.8.2/shared/src/main/scala/scalus/builtin/Builtins.scala\nHere is JVM platfrom specific code:\nhttps://github.com/nau/scalus/blob/v0.8.2/jvm/src/main/scala/scalus/builtin/PlatformSpecific.scala\nAnd here is JavaScript platform specific code:\nhttps://github.com/nau/scalus/blob/v0.8.2/js/src/main/scala/scalus/builtin/PlatformSpecific.scala\nScript Execution Budget calculation\nHere are Script Execution Budget calculation implementation files. These are common for JVM/JavaScript platforms:\nhttps://github.com/nau/scalus/blob/v0.8.2/shared/src/main/scala/scalus/uplc/eval/BuiltinCostModel.scala\nhttps://github.com/nau/scalus/blob/v0.8.2/shared/src/main/scala/scalus/uplc/eval/CostModel.scala\nhttps://github.com/nau/scalus/blob/v0.8.2/shared/src/main/scala/scalus/uplc/eval/MemoryUsage.scala\nThis are the tests that use Plutus Conformance Test files and run Scalus implementation of Plutus CEK machine and check agains their expected values:\nhttps://github.com/nau/scalus/blob/master/shared/src/test/scala/scalus/uplc/eval/PlutusConformanceSpec.scala\nhttps://github.com/IntersectMBO/plutus/tree/master/plutus-conformance\nThe Plutus Conformance tests also contain expected execution budgets, like here:\nhttps://github.com/IntersectMBO/plutus/blob/master/plutus-conformance/test-cases/uplc/evaluation/builtin/semantics/addInteger/addInteger1/addInteger1.uplc.budget.expected\nYou may see here that Scalus tests also check that the execution budgets match:\nhttps://github.com/nau/scalus/b",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 38,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 35000,
+      "promise": "Scalus as a Scala Native library.\nC API headers for Plutus script cost calculation and evaluation.\nDocumentation for the Native API.\nChangelog.md and Readme.md files updated with details on what was implemented and how to use it.",
+      "criteria": "Scalus sub-project that does Plutus script evaluation and execution cost calculation is a Scala Native library.\nAll the Plutus builtins, evaluation, cost calculation and their respective tests work as a native (LLVM) code and can be run natively.\nC API headers contain all required definitions to perform Plutus script cost calculation and evaluation using this library.\nC API is documented.\nChangelog.md and Readme.md files updated with details on what was implemented and how to use it",
+      "report": "Scala Native\n・Native code (LLVM) support implementation is on the GitHub of the project.\n\n・I've added a Scala Native compilation to Scalus build: https://github.com/nau/scalus/blob/07a915f535d761389b10d9fd548f14164be21264/build.sbt#L169 so now all Scalus code is cross-compiled to JVM, JavaScript and LLVM/native platforms.\n・I've created a Scalus Native C bindings that export functions required for script evaluation and budget calculation: https://github.com/nau/scalus/blob/v0.8.5/native/src/main/scala/scalus/uplc/eval/LibScalus.scala \n・all tests are successfully run on all 3 platforms: https://github.com/nau/scalus/actions/runs/13355578669/job/37297813156#step:6:2566\n\nC API \n・C API headers are on the GitHub of the project.\n\n・I've added a C header file with exported Scalus native functions:https://github.com/nau/scalus/blob/v0.8.5/examples-native/scalus.h\n・C API is fairly documented\n・I've created an example of a C program that evaluates Plutus scripts using the exported Scalus functions: https://github.com/nau/scalus/blob/v0.8.5/examples-native/main.c along with a Makefile that builds and runs it: https://github.com/nau/scalus/blob/v0.8.5/examples-native/Makefile\n\nDocumentation\nChangelog.md mentions Scala Native implementation and Readme.md has a section about Scala Native and how to use it.",
+      "kinds": [
+        "code"
+      ],
+      "links": 14
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 35000,
+      "promise": "TypeScript bindings for library script evaluation and cost calculation APIs\nJava API for library script evaluation and cost calculation APIs\nDocumentation for the API and examples on the project GitHub",
+      "criteria": "Sufficient TypeScript bindings for script evaluation and cost calculation APIs are implemented\nSufficient Java API for script evaluation and cost calculation APIs are implemented\nThere is documentation for the API and examples on the project GitHub",
+      "report": "Here are the TypeScript bindings for library script evaluation and cost calculation APIs: \nhttps://github.com/nau/scalus/blob/0d9dde0060c09b1ddfe101297b2d8c3793398d29/scalus-core/js/src/main/npm/scalus.d.ts\nJava API for library script evaluation and cost calculation APIs are the same as Scala is interoperable with Java on JVM. In the following demo I demonstate a Java example using Scalus on JVM.\nHere are examples of library usage:\n・Java/JVM example: https://github.com/nau/scalus/blob/257a06a821870810f5eb21d209583757b527003c/scalus-examples/jvm/src/main/java/scalus/examples/PlutusVMExample.java\n・JavaScript/TypeScript on Node.js: https://github.com/nau/scalus/blob/5f50ee709a9affbe07fd204bc74fd8bf42e5e232/scalus-examples/js/src/main/ts/evaluate.ts\n・Native C application using Scalus native library: https://github.com/nau/scalus/blob/4bfeda874afe81f5c94489dd16f92946f5051799/scalus-examples/native/main.c\n\nHere's a link to ScalaDoc API documentation: https://scalus.org/api/scalus/uplc/eval/PlutusVM.html\nHere is a link to a video with Successful demonstration of library usage on JVM, Node.js and as a native application: https://youtu.be/A8MQsGn5XFo",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 12
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 23000,
+      "promise": "Final version of the library\nLibrary is published to Maven Central and NPM package repositories\nA Project Closeout report\nA Project Closeout video",
+      "criteria": "The library is feature complete (Plutus V1 and V2) and documented on https://scalus.org\nIt has Java API on GitHub \nThe library jar files are published to Maven Central.\nIt has TypeScript API bindings on GitHub\nThe JavaScript library is published to NPM.\nIt has C header files and it can be compiled as a C library.\nA Project Closeout report is submitted\nA Project Closeout video is submitted",
+      "report": "Multiplatform library source codes are on project GitHub\nHere are the TypeScript bindings for library script evaluation and cost calculation APIs: https://github.com/nau/scalus/blob/0d9dde0060c09b1ddfe101297b2d8c3793398d29/scalus-core/js/src/main/npm/scalus.d.ts\nJava API for library script evaluation and cost calculation APIs are the same as Scala is interoperable with Java on JVM. In the following demo I demonstate a Java example using Scalus on JVM.\nA C header file with exported Scalus native functions:https://github.com/nau/scalus/blob/v0.10.1/examples-native/scalus.h\nExamples of library usage:\n・Java/JVM example: https://github.com/nau/scalus/blob/257a06a821870810f5eb21d209583757b527003c/scalus-examples/jvm/src/main/java/scalus/examples/PlutusVMExample.java\n・JavaScript/TypeScript on Node.js: https://github.com/nau/scalus/blob/5f50ee709a9affbe07fd204bc74fd8bf42e5e232/scalus-examples/js/src/main/ts/evaluate.ts\n・Native C application using Scalus native library: https://github.com/nau/scalus/blob/4bfeda874afe81f5c94489dd16f92946f5051799/scalus-examples/native/main.c\n\nHere's a link to ScalaDoc API documentation: https://scalus.org/api/scalus/uplc/eval/PlutusVM.html\nLink on Maven Central with Java version of the library: https://central.sonatype.com/artifact/org.scalus/scalus_3\nLink to NPM Scalus library: https://www.npmjs.com/package/scalus\nProject Closeout Report link\nLink to a Project Closeout video with a successful demonstration of library usage on JVM, Node.js and as a native application: https://www.youtube.com/watch?v=Yho7KoqjlVU",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 20
+    }
+  ]
+}

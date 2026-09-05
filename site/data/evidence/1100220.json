@@ -1,0 +1,30 @@
+{
+  "title": "Optim Finance OUSD - US Dollar Synthetic Stablecoin",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "Documentation of the OUSD system design specification. This entails verifying synergy with potential on and off-chain yield sources for reserves (formerly “collateral”) provision, design logic and user experience. This will provide structure for appropriate reserve profiles and yield pass through mechanisms. Accompanying public facing documentation to start educating non-technical users of the capabilities of this product.",
+      "criteria": "・System Design Specification requirements describing core components and mechanics of OUSD\n\n・Types of accepted reserves \n・Ongoing reserves qualification parameters \n・Yield accrual modules and flow of funds (staking etc.) \n・Redemption mechanism\n\n・A Medium article for non-technical users outlining the system architecture, core mechanics, use cases, and practical deployment. \n\n・Explanation of basic design and flow of user funds\n・Partners providing initial collateral for OUSD\n・Use cases and how it fits into the stablecoin ecosystem (Djed, iUSD, OUSD, etc.)",
+      "report": "・Proof of Achievement: Link to GitHub (Gitbook) natural language repository where initial System Design Specification is published with all listed System Design Specification requirements. \n\nAcceptance Criteria\nSystem Design Specification requirements describing core components and mechanics of OUSD\n・Types of accepted reserves \n・Ongoing reserves qualification parameters \n・Yield accrual modules and flow of funds (staking etc.) \n・Redemption mechanism\n\nLinks:\n1) \"Types of accepted reserves\" \nhttps://optim-finance.gitbook.io/optim-finance/ousd/ousd-reserves\n2) \"Ongoing reserves qualification parameters\" \nhttps://optim-finance.gitbook.io/optim-finance/ousd/ousd-reserves/reserve-criteria\nhttps://optim-finance.gitbook.io/optim-finance/ousd/ongoing-reserves-management\nhttps://optim-finance.gitbook.io/optim-finance/ousd/ongoing-reserves-management/reserve-asset-valuation-calculation\nhttps://optim-finance.gitbook.io/optim-finance/ousd/ongoing-reserves-management/dynamic-reserve-asset-adjustment-metrics\n3) Yield accrual modules and flow of funds (staking etc.) \nhttps://optim-finance.gitbook.io/optim-finance/ousd/yield-staking-and-flow-of-funds\nhttps://optim-finance.gitbook.io/optim-finance/ousd/yield-staking-and-flow-of-funds/staking-mechanics\n4) Redemption mechanism\nhttps://optim-finance.gitbook.io/optim-finance/ousd/yield-staking-and-flow-of-funds/redemption-mechanism\n・Proof of Achievement Link to Medium article describing the architecture, core mechanics, and use cases of OUSD. \n\nAcceptance Criteria\nA Medium article for non-technical users outlining the system architecture, core mechanics, use cases, and practical deployment. \n・Explanation of basic design and flow of user funds\n・Partners providing initial collateral for OUSD\n・Use cases and how it fits into the stablecoin ecosystem (Djed, iUSD, OUSD, etc.) \n\nLink:\nhttps://optim-labs.medium.com/understanding-ousd-an-overview-bdd18a968bbc",
+      "kinds": [
+        "doc"
+      ],
+      "links": 18
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "Basic OUSD general codebase ready for a private testnet deployment. The system design specification will be implemented in the Aiken smart contract programming language for an MVP beta release with limited multi-reserves architecture. Codebase explanation video describing how the smart contracts implement the system logic requirements outlined in the system design specification from the previous milestone.",
+      "criteria": "・Aiken codebase that implements System Design Specification core mechanisms.\n\n・Stablecoin minting mechanism\n・System Reserves \n・Yield accrual module \n・Staking \n\n・Video of code walkthrough to describe the smart contract components and working live interactions of a private testnet deployment for non-technical Milestone Reviewers and the broader Catalyst community to understand the scope of the system.",
+      "report": "OUSD Milestone 2 Submission\n・Aiken codebase implementation of the Strategy Vault architecture\n・https://github.com/OptimFinance/clean-code\n・Video of code walkthrough to describe the smart contract components\n・https://drive.google.com/file/d/1BoVWA1QqSK4xXCIonW83mMfrh1CjlxNQ/view?usp=sharing\n\nExplanations\n・Stablecoin minting mechanism\n・File:\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/deposit_amo.ak\n・Timestamp:\n・2:26\n・System Reserves \n・Files:\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/otoken_policy.ak\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/otoken_rule.ak\n・Timestamp:\n・8:25\n・Yield accrual module\n・File:\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/collateral_amo.ak\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/sotoken_rule.ak\n・Timestamp:\n・6:50\n・14:38\n・Staking \n・Files:\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/deposit_amo.ak\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/staking_amo.ak\n・Timestamp:\n・2:26\n・16:40\n・Technical specifications referenced in the video:\n・OToken Strategy Vaults\n・https://github.com/OptimFinance/public-documents/blob/main/OTOKEN%20High%20Level%20Specification.pdf\n・OADA Strategy Vault\n・https://github.com/OptimFinance/public-documents/blob/main/The_OADA_System.pdf",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 22
+    }
+  ]
+}

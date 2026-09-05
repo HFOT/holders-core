@@ -1,0 +1,49 @@
+{
+  "title": "Build a customised LLM for Aiken Smart Contract code analysis and release on Hugging Face",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 7467,
+      "promise": "・Establish custom dataset requirements\n・Extract or write scripts to collect Aiken code samples from code repositories\n・Clean and format the data\n・Connect with potential beta testers",
+      "criteria": "1.Establish custom dataset requirements\n・Establish format of custom dataset\n・Establish where Aiken code samples can be collected\n・Establish any additional data that needs to be created for the custom dataset\n・Establish the format the data will need to be in for model fine tuning purposes\n\n2.Extract or write scripts to collect Aiken code samples from code repositories\n・Extraction of code from GitHub.\n・Extraction of code from GitLab.\n・Extraction of code from any other code repositories\n・Create any additional data needed that was established in previous step\n\n3.Clean and format the data:\n・Clean e",
+      "report": "Milestone 1\nOverall objectives of project Milestone 1\n \n1. Establishing custom dataset requirements\n2. Extract or write scripts to collect Aiken code samples from websites and code repositories\n3. Clean data and compile into initial custom dataset\n4. Connect with potential beta testers\n \n1. Establish custom dataset requirements\nProgramming Language Characteristics: Cardano Aiken\nFor fine-tuning a LLM to generate Cardano Aiken smart contract code, we need to define the key characteristics of the programming language. Here's a breakdown of the features and characteristics of Cardano Aiken that have been targeted:\nSyntax*\nFunctional programming: Aiken is a functional programming language, which means it emphasises the use of pure functions, immutability, and recursion.\nAiken's syntax has a focus on concise and expressive code.\nSemantics\nStrongly typed: Aiken is a statically typed language, which means that the type system checks the types of variables at compile-time, preventing type errors at runtime.\nType inference: Aiken's type system can infer the types of variables, reducing the need for explicit type annotations.\nReferential transparency: Aiken's functional programming model ensures that functions have no side effects, making it easier to reason about code.\nType Systems\nType classes: Aiken's type system includes type classes, which enable more modular and reusable code.\nExecution Models\nEUTxO (Extended UTXO) model: Aiken is designed to work with the eUTxO model, which is a variant of the UTXO (Unspent Transaction Output) model used in Bitcoin. The LLM will be fine tuned to also understand the eUTxO model.\nSmart Contract Specifics\nOn-chain execution: Aiken smart contracts are executed on the Cardano blockchain, which means that the LLM should be able to generate code that interacts with the blockchain and specific Cardano Validator actions.\nAdditional Considerations\nSecurity and safety: The LLM should prioritise security and safety when generating code, as smart c",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 7467,
+      "promise": "・Evaluate potential open sourced LLMs suitable for adaption to Aiken\n・Perform initial fine-tuning training on LLMs with a small test dataset\n・Fine-tune model to achieve perceived benchmarks on training accuracy and loss metrics with custom dataset\n・﻿﻿﻿﻿﻿﻿Get initial feedback from testers",
+      "criteria": "1. Evaluate potential open source LLMs suitable for adaption to Aiken:\n・Establish criteria needed to be met by chosen LLM i.e. based on performance metrics such as accuracy in code understanding tasks\n・Select appropriate LLMs to evaluate\n\n2.Perform initial fine-tuning training on LLMs with a small test dataset:\n・Create a small test training dataset for fine-tuning\n・Validate which LLM fits requirements criteria after fine-tuning with small test training dataset\n・Confirm choice of LLM to use after validation process\n\n3. Fine-tune model to achieve perceived benchmarks on training accuracy and los",
+      "report": "Objectives of Milestone 2\n1. Evaluation of a suitable Large Language Model (LLM) base model for fine-tuning, that can generate Aiken code.\n2. Perform initial fine-tuning with the custom training dataset from Milestone 1.\na. Test model after fine-tuning and ensure it is ready for full scale testing deployment and initial feedback.\n3. Fine-tuning and dataset with improved dataset after testing and initial feedback. The aim being to reduce over fitting and improving performance on Aiken syntax and capabilities.\na. Inference on local machine should be at an acceptable and of a speed of less than a few seconds.\n4. Start testing first version and fully deploy to testers with instructions on how to install, use and expectations.\n \nAiken Version Changes Identified\nAiken version 1 came out of Beta in Sept 2024, this was at the same time as Plutus V3. Various language changes have been added to Aiken V1 that differ from the Beta version. These differences restrict the amount of mainnet Aiken v1 code the LLM can be trained on. The initial fine tune will use as much Aiken code as possible to train the LLM regardless of versions.\nWhile researching the Aiken code repositories on GitHub it was noted there is also a limited supply of real world Aiken code to fine tune the LLM on. The aim will be to fill these gaps after initial testing by generating synthetic data based on Aiken V1 to further enhance the LLM in areas that are lacking. Due to significant syntax changes only the recent versions of Aiken that were developed with the Stdlib 2.1 were used from GitHub in the final custom training dataset.\nProgramming Language Characteristics needed for Aiken\nFor fine-tuning a LLM to generate Cardano Aiken smart contract code, we need to define the key characteristics of the programming language. Here's a breakdown of the features and characteristics of Cardano Aiken that will be targeted:\nSyntax*\nFunctional programming: Aiken is a functional programming language, which means it emphasise",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 32,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 9956,
+      "promise": "・Gather feedback from beta testers\n・Conduct comprehensive testing of chosen LLM\n・Document final version of model and its key functionality and open source project\n・Final close-out report and video",
+      "criteria": "1. Gather feedback from beta testers:\n・Receive and analyse feedback from testers\n・Organise feedback into actionable tasks\n・Adjust custom dataset accordingly\n\n2. Conduct comprehensive testing of chosen LLM:\n・Use latest custom dataset to fine-tune LLM\n・Optimise LLM\n・Pass new model to beta testers for further feedback\n・Gather any new feedback and go back to step 1 of this milestone and repeat until no actional tasks found\n・Document beta tester feedback\n・Action any final optimisations of LLM with custom model\n\n3. Document final version of custom LLM model and its key functionality and open source",
+      "report": "Project Catalyst Close-out Report\nBuild a customised LLM for Aiken Smart Contract Analysis and Release on Huggingface.co\nProject url: https://cardano.ideascale.com/c/cardano/idea/122486\nCatalyst Project Number: 1200047\nName of project manager: Ami Bening\nDate project started: October 2024\nDate project completed: July 2025\nKey Performance Indicators (KPI) were -\n1. Generate an Aiken smart code dataset using available data\n1) Fine tuning of an open source LLM with Aiken smart code training dataset\n2) Evaluation of fine-tuned LLM to analyse Aiken smart code\n3) Evaluation of fine-tuned LLM to generate Aiken smart code\n\n1- Fine tuning of an open source LLM with Aiken smart code training dataset \nHow was KPI 1 addressed -\nAiken smart code documentation was extracted from the web plus all examples from GitHub for the latest Aiken standard library version 2.1.\nThe following script was used to extract code from GitHub –\nhttps://github.com/jest-aiken-code/google-colab-python/blob/main/extractGitHubAikenCode.py\nIt should be noted that presently there is only a limited amount of Aiken code. A python batch script was developed to extract Aiken projects from GitHub, however at times the code libraries were found to be mixed. To ensure more accuracy with code generation more code examples are required to build a complete and robust dataset, in the end we had approximately 9000 examples of codes.\nThe final dataset was mostly hand checked along with additional data scraped and added from documentation plus various synthetic data examples were generated. The final dataset was uploaded onto Huggingface.co here -\nhttps://huggingface.co/datasets/AmiBening/cardano-aiken-stdlib-v2-1\nAn appropriate LLM was chosen as the base LLM to fine tune the dataset with, after a selection process Qwen 2.5 was settled upon and within that after more testing the Qwen 2.5 Coder model was chosen. The following table shows other LLMs considered that were –\nhttps://storage.googleapis.com/aiken_milestones/Im",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 42,
+      "cut": true
+    }
+  ]
+}

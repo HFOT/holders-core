@@ -1,0 +1,69 @@
+{
+  "title": "Cardano Developer Studio",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 17174,
+      "promise": "GitHub Repository: A public repository containing the initial source code and documentation for the Developer Studio project.\nDockerfiles: Files that automatically build Docker images for Cardano Node, Cardano Wallet, cardano-cli, and db-sync.\nDocker Compose Configurations: Files for defining and running multi-container Docker applications.",
+      "criteria": "The initial GitHub repository should be publicly accessible.\nDockerfiles should be built without errors.\nDocker Compose configurations should integrate Docker images correctly and should not throw errors upon execution.",
+      "report": "We are pleased to deliver the first milestone: \n・GitHub Repository link: A public repository containing the initial source code and documentation for the Developer Studio project & Dockerfiles with Docker Compose Configurations.\n・How to use & explanatory videos \n\nLinks:\n・GitHub: https://github.com/protofire/Cardano-Developer-Studio\n・Video Demo:\n・https://screenrec.com/share/clvRKSCDyj\n・https://screenrec.com/share/UyBtZcihrQ\n・https://screenrec.com/share/TwFfGznZ6y",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 17173,
+      "promise": "Development Environment Dockerfile: A file for building a Docker image with a pre-configured development environment.\nVS Code DevContainer Configuration: Configuration files to support loading the Docker environment within VS Code.",
+      "criteria": "The Dockerfile for the development environment should be built without errors.\nThe development environment should be fully functional with the necessary tools installed.\nThe VS Code DevContainer should successfully load and run the Docker environment.",
+      "report": "We are pleased to deliver the second milestone: \n\n・Development Environment Dockerfile: A file for building a Docker image with a pre-configured development environment.\n・VS Code DevContainer Configuration: Configuration files to support loading the Docker environment within VS Code.\n・How to use & explanatory video\n\nLinks:\n・GitHub: https://github.com/protofire/Cardano-Developer-Studio\n・Video Demo: https://screenrec.com/share/5YeqGzsmji",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 21467,
+      "promise": "CLI Toolkit: A command-line interface toolkit for managing Docker containers, services, and utilities.\nDetailed documentation explaining the usage of the CLI toolkit.",
+      "criteria": "CLI Toolkit should work without errors.\n﻿﻿Documentation should be understandable and actionable for a developer.",
+      "report": "We are pleased to deliver the third milestone: \n・CLI Toolkit: A command-line interface toolkit for managing Docker containers, services, and utilities.\n・Detailed documentation explaining the usage of the CLI toolkit.\n\nLinks:\n・GitHub: https://github.com/protofire/Cardano-Developer-Studio\n・Video Demo on 3:30: HERE",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 17170,
+      "promise": "Create Haskell libraries for off-chain and on-chain functions.\nImplement functions to evaluate scripts and assess resource consumption.\nDevelop a suite of smart contracts examples with comprehensive testing files.\nWrite a step by step guide of how to use the libraries and examples smart contracts",
+      "criteria": "Provide developers with reference materials and inspiration for creating their smart contracts.\nThe average user will need to be able to set up and run the examples with all the environment provided and following the step by step guide.",
+      "report": "We are pleased to deliver the fourth milestone in the following document:\nhttps://docs.google.com/document/d/1-m2ScmbRiqkNaDPqRhmSpb8Bj4hQkjIrMYPFNHaCq3M/edit#heading=h.jzo3b0o8v4h6",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 12883,
+      "promise": "Design and implement actions and scripts for automating the deployment process.\nCreate production-ready images that can be uploaded to Docker Hub.\nAutomate the build and upload process for new releases on GitHub.\nDocumentation: Guides for using the automation scripts and deploying the images.\nProject Closeout Report\nProject Closeout Video",
+      "criteria": "The automation scripts should execute without errors.\nProduction images should be generated successfully.\nAutomation should trigger with new releases and upload images to Docker Hub.",
+      "report": "We are pleased to deliver the fifth and final milestone:\n・Milestone 5 Document\n・Project Close-up Report\n・Project Close-up Video",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

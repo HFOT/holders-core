@@ -1,0 +1,80 @@
+{
+  "title": "Pool.pm Visual Explorer - Open Source Improved Reboot towards a sustainable community innovation platform",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 66600,
+      "promise": "・Visual explorer reworked homepage proof of concept",
+      "criteria": "・PoC available publicly\n・Last Cardano transactions must be displayed on homepage\n・Realtime latency must be < 2 minutes",
+      "report": "The new low-latency homepage proof of concept has been completed.\nIt can be checked on https://test.pool.pm as planned (please check after December 18 to be sure the deployment has been completed).\nThe proof of concept meets the acceptance criteria:\n・It is available publicly\n・Last block & transactions are displayed and their properties match other explorers (for example blocks TX number, total output & fees can be compared)\n・Latency is less than 2 minutes old in average at any time (last block is less than 2 minutes old in average)\n\nNote that once the new backend has replaced the old version, the link will redirect to https://pool.pm. This is expected.",
+      "kinds": [
+        "chain",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 66600,
+      "promise": "・Improved global transactions homepage\n・Improved UX & UI with tokens display\n・Mobile compatibility",
+      "criteria": "・Prototype is available online\n・Realtime latency is < 2 minutes\n・Assets including tokens are displayed\n・The web page works on mobile (responsive design)",
+      "report": "The new low-latency prototype has been completed.\nIt can be checked on https://test.pool.pm as planned.\nThe prototype meets the acceptance criteria:\n・It is available online & publicly\n・Latency is less than 2 minutes old in average at any time (last block is less than 2 minutes old in average)\n・All transaction assets including tokens are displayed\n・The web page works on mobile with a responsive design",
+      "kinds": [
+        "chain"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "23",
+      "cost": 66600,
+      "promise": "・Improved homepage\n・Stake pool pages \n・Polished UX & UI\n・Public Discord server launch",
+      "criteria": "・Alpha version must be publicly available\n・Homepage must display last Cardano transactions\n・Pool pages must show pools statistics and delegators transactions\n・Real-time latency must be less than 2 minutes\n・Pages should not present major display or behavior bugs",
+      "report": "A. Output: Improved homepage\nAcceptance criteria: Alpha version must be publicly available. Homepage must display last Cardano transactions.\nEvidence: https://alpha.pool.pm/\nThe homepage displays last Cardano transactions, and even shows transactions in the mempool before they are included in minted blocks.\n\nB. Output: Stake pool pages\nAcceptance criteria: Pool pages must show pools statistics and delegators transactions\nEvidence:\n・pool pages show the pool number of delegations, precise live stake updated instantly, as well as the pool parameters (pledge, margin, fixed cost)\n・Pool pages can accessed by clicking a block pool ticker or by using the pool id in the URL (search is part of a future milestone)\n・Recent pool delegators transactions and delegation changed are displayed and new ones appear in realtime, including in the mempool\n\nExample: https://alpha.pool.pm/pool14wk2m2af7y4gk5uzlsmsunn7d9ppldvcxxa5an9r5ywek8330fg\nBonus: DReps feeds have also been implemented, for example:\nhttps://alpha.pool.pm/drep1ydpfkyjxzeqvalf6fgvj7lznrk8kcmfnvy9hyl6gr6ez6wgsjaelx\n\nC. Output: Polished UX & UI\nAcceptance criteria: \n・It can be used on Mobile & Desktop\n・Real-time latency must be less than 2 minutes\n・Pages should not present major display or behavior bugs\n\nEvidence: https://alpha.pool.pm/\n・the alpha version now runs in true realtime without any latency (blocks appear as soon as minted)\n・the mempool is displayed in realtime\n・slots are represented by blocks moving every second\n・UI is smooth with animations to show how blocks are minted from the mempool then chained\n・the website uses a responsive design and works on mobile and desktop\n・no major bug is present\n\nD. Output: Public Discord server launch\nAcceptance criteria: Discord server is publicly available with a channel available to discuss the version\nEvidence: https://discord.pool.pm (with #alpha.pool.pm channel to report alpha issues)",
+      "kinds": [
+        "chain"
+      ],
+      "links": 5
+    },
+    {
+      "no": 4,
+      "month": "24",
+      "cost": 66600,
+      "promise": "・Preview network support",
+      "criteria": "・Testnet \"preview\" network version must be publicly available at https://preview.pool.pm\n・Homepage must display last Cardano preview network transactions\n・Pool pages must show preview network pools statistics and delegators transactions\n・Realtime latency must be less than 2 minutes",
+      "report": "A. Output: Preview network support\nAcceptance criteria: \n・Testnet \"preview\" network version must be publicly available at https://preview.pool.pm\n・Homepage must display last Cardano preview network transactions\n・Pool pages must show preview network pools statistics and delegators transactions\n・Realtime latency must be less than 2 minutes\n\nEvidence: https://preview.pool.pm\n・preview version is available online\n・homepage shows transactions in realtime\n・pool pages can be accessed by clicking a block pool ticker or from URL https://preview.pool.pm/POOL_ID, for example https://preview.pool.pm/pool1q65ag8panwayzaqfs6je7jz2ywt8x2032yaunq5hf25t7t8c26e\n・pool pages show the pool precise live stake in realtime, as well as the number of delegators and the pool parameters (pledge, margin, fixed cost)\n・the service runs in true realtime. Blocks are displayed as soon as they are minted, and transactions are shown in the mempool even before they are included in blocks\n・performance is on par with mainnet alpha version (https://alpha.pool.pm)",
+      "kinds": [
+        "chain"
+      ],
+      "links": 5
+    },
+    {
+      "no": 5,
+      "month": "25",
+      "cost": 66600,
+      "promise": "・Search bar \n・Assets timeline pages (minted & transferred NFTs & Fungible tokens)\n・Stake address pages (Stake address transactions & rewards timeline, assets list)\n・Single asset pages (Token viewer)",
+      "criteria": "・It must be possible to search stake pools, addresses, assets fingerprints and policies\n・Stake addresses & tokens transactions must be displayed less than 2 minutes after their propagation\n・Stake addresses timelines must include transactions and rewards\n・Asset policies pages must display all assets (with scrolling)",
+      "report": "A. Output: Search bar\n\nAcceptance criteria: It must be possible to search stake pools, addresses, assets fingerprints and policies.\n\nEvidence: \n- go to https://beta.pool.pm\n- click the top right search icon\n- enter in the search bar bech32 stake pool addresses, addr1 and stake1 addresses, asset1 fingerprints and policy hex values. The corresponding page should be displayed. For example:\n \nstake pool: pool14wk2m2af7y4gk5uzlsmsunn7d9ppldvcxxa5an9r5ywek8330fg\nstake address: stake1uxmhvxe0d632mdzu2u773c69wwqz7srv8dmdmh4lzxn30kgw29wph\nbase address: addr1qy5s8gar44dnstwsvxkxuzap4wmlul2tn296f96h79qsen4hwcdj7m4z4k69c4eaar352uuq9aqxcwmkmh0t7yd8zlvswsr386\nfingerprint: asset1a39s8ugsy80gd0g3zt5tdy4n8nerspyccwd8au\npolicy: d5e6bf0500378d4f0da4e8dde6becec7621cd8cbf5cbb9b87013d4cc\n\nbonus: DRep addresses are also supported, for example enter:\ndrep1yglrf4el8gghum239fggvfrau25k2576y4dvcz65r2ukj8sqpsc2k\n\nB. Output: Assets timeline pages (minted & transferred NFTs & Fungible tokens)\n\nAcceptance criteria: Stake addresses & tokens transactions must be displayed less than 2 minutes after their propagation\n\nEvidence: Minted and transfered tokens (NFTs and fungible) are now displayed on the main timeline in this version, so there is no specific asset timeline anymore like in legacy pool.pm. \n\nSo go to https://beta.pool.pm\n- check that transactions are displayed in realtime (and therefore less than 2 mins old)\n- check that assets (images) are displayed\n\nC. Output: Stake address pages (Stake address transactions & rewards timeline, assets list)\n\nAcceptance criteria: Stake addresses timelines must include transactions and rewards\n\nEvidence: Search on https://beta.pool.pm some stake address that received some rewards, for example:\nstake1u9rlucxzctavnf826303mn6zf9jxxpve8qfa66z0pdutzfgv6vqlx\n\n- the timeline include all transactions\n- current available rewards are displayed in the info header circle\n- clicking the ASSETS link in the info header circle display all the address assets\n\nD. Output: Sin",
+      "kinds": [
+        "chain"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "26",
+      "cost": 66700,
+      "promise": "・Stable visual explorer with at least mainnet, preview & preprod support\n・Source code\n・Documentation\n・Project Closeout report & video",
+      "criteria": "・Stable version is online\n・Mainnet, preview and preprod networks are supported\n・Network latency is less than 2 minutes\n・Source code is available\n・Source code is released with an Open Source license\n・Documentation is available",
+      "report": "A. Output: Stable visual explorer on mainnet and testnets\nAcceptance criteria: Stable version online for mainnet, preprod and preview\nEvidence:\n- mainnet : https://pool.pm (before Van Rossem hardfork, the new version is linked from pool.pm homepage banner and hosted at https://beta.pool.pm, after the hard fork, it fully replaces the legacy version)\n- preprod : https://preprod.pool.pm\n- preview : https://preview.pool.pm\n\nB. Output: Source code\nAcceptance criteria: Source code publicly available and released with an Open Source license\nEvidence:\n- source code published at : https://github.com/pool-pm/pool-pm-cardano\n- MIT Open Source license : https://github.com/pool-pm/pool-pm-cardano/blob/main/LICENSE\n\nC. Output: Documentation\nAcceptance criteria: Documentation is available\nEvidence:\n- Documentation at : https://github.com/pool-pm/pool-pm-cardano/blob/main/README.md\n\nD. Output: Project Completion report and video\nAcceptance criteria: Project Completion report and video are available online\nEvidence:\n- Project Completion report : https://pool.pm/1000151.pdf\n- Project Completion video : https://pool.pm/1000151.youtube",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 18
+    }
+  ]
+}

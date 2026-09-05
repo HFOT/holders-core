@@ -1,0 +1,47 @@
+{
+  "title": "Hotel Room Booking and Payments on Cardano - A Real World Use Case",
+  "ms": [
+    {
+      "no": 1,
+      "month": "13",
+      "cost": 28000,
+      "promise": "Key theme here is to implement Cardano Smart Contract for Hotel Room Reservation and Payment. For this API's will be exposed to public to implement the same in their hotel booking system example Hotel Booking Engine, Central Reservation System or Online Travel Agency etc. While building this for concept, we will also demonstrate and prove the concept with some user interfaces developed by us. For this purpose, we shall build few user interface screen mock-ups as well.\nSo,\nOutputs:\n・User Interface (UI) Mockups for key functionalities\n・Hotel Room Booking\n・Payment including ADA and USDM as an option\n・Tech Design for above functionalities\n・Data Flow Diagrams\n・System Architecture Design\n・Smart Contract Specification",
+      "criteria": "・UI Design Mockups are prepared\n・Technical Design is prepared.",
+      "report": "Change request is approved by Catalyst. Resubmitting POA\n------------------\nUI Design Mockups link for Hotel Room Booking and Payment functionalities\nhttps://www.figma.com/design/z7ysN4Kvw0v55p1ihv8yNL/HBE-UI?node-id=0-1&p=f&t=rhFKnrMLuV60gcEg-0\nHigh Level Technical Design\nHigh Level Technical Design document \nhttps://docs.google.com/document/d/1E_CRx2CQHi4diEQBuukUQppNz_NvSWQY/edit?usp=sharing&ouid=102503040953443772002&rtpof=true&sd=true\nSmart Contract Specifications\nhttps://drive.google.com/file/d/1WEOjB3aouE_lHVhh_yH9cqLYkrx9SyB_/view?usp=sharing\nHLD diagram\nhttps://drive.google.com/file/d/1M2FnVBK9Uom8fTWQQFwBEgQWaOnsnf7C/view?usp=sharing\nLow Level Technical Design - Though it is not open source project, we are sharing the low level technical design document hereto ease the review process. We shall remove the below LLD links once this milestone is fully approved. \nPrepared following documents, available for reviewers to verify on a video call online, if required. \nLow Level Technical Design document \nhttps://docs.google.com/document/d/1iExdBnlLcDxHEtGNiQOA2YIRAjFNWUwI/edit?usp=sharing&ouid=102503040953443772002&rtpof=true&sd=true\nData structure\nhttps://drive.google.com/file/d/1yVVkodrc8AAtHn34KJg4KmDuWI3sDSqg/view?usp=sharing\nLLD Diagram\nhttps://drive.google.com/file/d/1BqolWk_6sryw7Wm4Y_bjyXrs78Gh0OpX/view?usp=sharing\n---------------",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 14
+    },
+    {
+      "no": 2,
+      "month": "14",
+      "cost": 28000,
+      "promise": "・Hotel Room Booking API\n・Hotel Room Booking Logic is implemented\n・Smart Contract is implemented as per specification\n・Hotel Room Payment API\n・Hotel Room Payment Logic is implemented\n・Smart Contract is implemented as per specification\n・A Working Prototype for Hotel Room Booking and Payment API\n・ Hotel Room Booking and Payment UI is build \n・The above built UI is integrated with Hotel Room Booking and Payment API",
+      "criteria": "・Hotel Room Booking API is available with documentation, including information on the smart contract that is implemented as per specification\n・Hotel Room Payment API is available with documentation, including information on the smart contract that is implemented as per specification\n・A Working Protype demonstrating Hotel Room Booking and Payment API is working on Testnet\n・Documentation for Hotel Room Booking and Payment API is available\n・Test Results showing test transaction done for hotel booking and payment on Testnet",
+      "report": "Revised based on feedback\n------------------\n・included Transaction hash in Test Report\n・recorded video of wallet connect and transaction, it is working fine, see addtiona video at the end.\n\n----------------\nPublicly accessible link to Hotel Room Booking API -\n Hotel_Room_Booking_API_Documentation.pdf \n \nPublicly accessible link to Hotel Room Payment API -\n Hotel_Payment_API_Documentation.pdf \n \nPublicly accessible link to Working Prototype for Hotel Room Booking and Payment functionality working on Testnet -\nhttps://hbe.cloud10hospitality.com/ \nHBE_Usage_Guide \n﻿\nPublicly accessible link to Documentation for Hotel Room Booking and Payment API - Hotel_Room_Booking_Payment_API_Documentation.pdf \n \nPublicly accessible link to Test Results showing test transaction done for hotel booking and payment on Testnet - \nHotel_Booking_Testnet_Transaction_Reportv2.pdf (updated one)\n--Based on feedback added transaction hash(s) in Test Report, listing the Transaction here as well\nhttps://preprod.cardanoscan.io/transaction/8b145e45600d5bdfe0613aed8b7dee19b62ef038821d05d2f1d5342bd1807e4b\nhttps://preprod.cardanoscan.io/transaction/00b6700135363d9f80cd37f92dc749ba5aa1c870bda88d873516d396a44d8b4f\nhttps://preprod.cardanoscan.io/transaction/cde36b959dd2f73bd515343cf2399bf6aa4c6cc6fe07e72438ad4a7dc29156ad\nPublicly accessible link to a short video demonstrates that the developed Prototype works -\n Video link to demonstrate the application \n\nTransaction Signing>> For us the wallet connection and transaction signing are workign fine, we re-tested and recorded a video below specifically for it\n ADA payments working with browser wallets on preprod: https://youtu.be/bjgStIMG9yI",
+      "kinds": [
+        "chain",
+        "other",
+        "video"
+      ],
+      "links": 16
+    },
+    {
+      "no": 3,
+      "month": "16",
+      "cost": 28000,
+      "promise": "As we have taken all other developments in previous milestone, this milestone shall focus on integrating with one existing hotel booking system that will be a Hotel Booking Engine, generally a third party solution embedded within hotel's own website.\n・One existing industry Hotel Booking Engine is integrated with the Hotel Booking and Payment API\n・Stable Coin- USDM implementation \n・One Pilot Hotel using above combination has participated on Testnet",
+      "criteria": "・Integration Test Results Confirming Integration between the Hotel Booking Engine and Hotel Booking and Payment API is working\n・Stable Coin- USDM is implemented for Payment API\n・Pilot hotel Testing\n・Written Consent from Pilot Hotel to participate in Testing\n・Pilot Hotel Testing test results confirming the functionalities are working on Testnet",
+      "report": "Thank you for the clarification. We understand the concern and would like to clarify both points.\n1. How can you verify that this is Hotel Trimoorti’s actual booking engine?\nThe HBE is integrated directly into Hotel Trimoorti’s own website: https://www.hoteltrimoorti.com/\nYou can visit the website and make a test booking through the hotel’s actual booking flow. The corresponding transaction can then be verified on the Cardano Testnet.\nThis provides a direct verification chain:\nHotel Trimoorti website → HBE → Cardano Booking & Payment API → Cardano Testnet transaction.\n2. How can you verify that Hotel Trimoorti is participating?\nHotel Trimoorti has allowed us to integrate the booking engine into its own website and cooperate with us for the Testnet testing. We believe this is strong practical evidence of the hotel's participation.\nIn addition, written consent from the hotel is available to you on request, with personal information redacted as appropriate.\nWe believe the combination of the hotel's own website integration, an independently testable booking flow, verifiable Testnet transactions, and the hotel's written authorization provides sufficient evidence of both the integration and participation.\nIf you still require additional evidence, please let us know specifically what evidence would be acceptable, and we will be happy to provide it.\n-------------------------------------------------------\nA. Output: One existing industry Hotel Booking Engine is integrated with the Hotel Booking and Payment API\nAcceptance criteria: Integration Test Results Confirming Integration between the Hotel Booking Engine and Hotel Booking and Payment API is working\nEvidence: Publicly accessible link to integration Test Results for integration between the Hotel Booking Engine and Hotel Booking and Payment API https://drive.google.com/file/d/1e_p5ww30KSk_0dNPzz_csGuFV_X5oSEu/view?usp=sharing\nB. Output: Stable Coin- USDM implementation \nAcceptance criteria: Stable Coin- USDM is implemente",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    }
+  ]
+}

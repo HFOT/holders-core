@@ -1,0 +1,59 @@
+{
+  "title": "Cardano Autonomous Agent Testing: CIP-1694 Voltaire Testing",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 10000,
+      "promise": "・Defining agents, agent behaviors\n・Building agent scheduling architecture\n・Building a PoC agent scheduling infrastructure\n・Basic UI for adding agents, agent behaviors\n・Basic UI for dashboard",
+      "criteria": "・Architecture document is published to a public GitHub repo.\n・PoC of agent scheduling infrastructure is created\n・Figma design for the dashboard is published.",
+      "report": "For the proof of achievement, please refer to the following resources:\n・Deployed Platform: https://agents.cardanoapi.io/\n・Source Code: https://github.com/cardanoapi/autonomous-agents\n・Figma Design: https://www.figma.com/design/h9K0eArOSnZOVw7O5UrYFu/AAT?node-id=552-18675&t=6F7jU9q6kL6rpaRI-0\n・Documentation: https://cardanoapi.github.io/autonomous-agents/docs/architecture\n\nFor this milestone, our deliverables were the designs (Figma) and the architecture document. The links to these resources are mentioned above.\nRegarding the outputs we aimed to achieve for this milestone, we have defined the agents and their behaviors, and represented them in the Figma UI. We also worked on building the agent scheduling architecture and completed a PoC for the scheduling architecture. The agents and their behaviors are designed in Figma (Link 3) and are live on the deployed platform (Link 1). The architecture document covers the agent scheduling architecture. For the PoC, we have a deployed environment (Link 1) where agents can be created and run using Docker.\nAddressing the Acceptance Criteria:\n・The architecture document has been published to a public GitHub repository (Link 4).\n・The PoC for the agent scheduling infrastructure has been created and is available on the deployed platform (Link 1).\n・The Figma design for the dashboard has been published (Link 3).",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 30000,
+      "promise": "・Event sourcing for agents using a suitable message broker like Kafka using open source tools or some APIs on Cardano eg. Blockfrost API, or Oura.\n・Agent behavior implementation\n・Defining test scenarios\n・Executing test scenarios\n・Development of the Dashboard",
+      "criteria": "・It is possible to create Agents and define their basic behaviors using the API and the dashboard\n・Agents autonomously react to the network events listening to realtime transactions",
+      "report": "> API and Dashboard is deployed and private test with selected members is possible. A video proof of the platform submitted.\nHere is the deployed platform that anybody can test. \n・https://agents.cardanoapi.io/ (sanchonet network)\n・https://preview.agents.cardanoapi.io/ (preview network)\n\nThe platform is public and open to anybody to use. We have also presented the platform to Governance tools working group in one of the weekly meetings.\n\n> Video proof of the agents autonomously reacting to the network events.\nhttps://www.youtube.com/watch?v=OzNIlspXmTY",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 30000,
+      "promise": "・Multi-agent, multi-transaction, multi-epoch scenarios development and testing\n・Scenario testing\n・Dashboard publication with results",
+      "criteria": "・Scenario document for Voltaire Voting is published on GitHub along with results of execution on SanchoNet.",
+      "report": "> Scenario document for Voltaire Voting is published on GitHub\nhttps://github.com/cardanoapi/autonomous-agents/tree/feat/scenario-report/scenario\n\n> Publication of results of the scenario execution on SanchoNet is published on GitHub\nSanchoNet: https://github.com/cardanoapi/autonomous-agents/blob/feat/scenario-report/scenario/SanchoNet.md\nWe also did on preview: https://github.com/cardanoapi/autonomous-agents/blob/feat/scenario-report/scenario/Preview.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 30000,
+      "promise": "・Addressing Community feedback\n・Bug fixes of the major bugs reported\n・Release of Dashboard URL\n・Community promotion",
+      "criteria": "・Full source code is published to GitHub repo with sufficient documentation\n・A YouTube video demonstrating the capability of the system is published and is public\n・A URL of deployed environment\n・Closing report to Catalyst",
+      "report": "A public GitHub repo with the code and documentation\n>> https://github.com/cardanoapi/autonomous-agents\nA YouTube video showing the dashboard and running a Voltaire voting scenario\n>> https://youtu.be/OzNIlspXmTY\nURL of the deployed Dashboard\n>> https://agents.cardanoapi.io\nProject Close-out:\n>> PCV: https://www.youtube.com/watch?v=uJV_85ffQNU\n>> Slides: https://docs.google.com/presentation/d/1lNMtkDwmfaAfrnss1KZiQ4SOXxrRl0bFK2mTpKWhaDA/edit?usp=sharing \n>> PCR: https://docs.google.com/document/d/11_Tf7HnPWiocHjc37r5t5WlcCz4wHnYn3No1GHLyYqE/edit?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

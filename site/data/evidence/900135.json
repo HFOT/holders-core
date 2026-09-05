@@ -1,0 +1,58 @@
+{
+  "title": "Liquid staking for Milkomeda / L2s",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25000,
+      "promise": "A liquid staking Solidity contract, tests and NPM package. Documentation on how the system works holistically will be included. Basic documentation on solidity-specific aspects will also be provided as output.",
+      "criteria": "Smart-contract passes all test cases and bindings are published in the NPM. Tests performed will cover:\n- ADA deposits \n- Accruing rewards\n- Rewards Withdrawal.",
+      "report": "We are delighted to report the successful completion of first internal tests of Milkomeda Liquid Staking devnet deploymnets. \n\nSmart Contract and Testing: The Liquid Staking Solidity contract has been developed on milkomeda c1-devnet, thoroughly tested, and passed all test cases. Tests covered critical functionalities such as ADA deposits, accruing rewards, and rewards withdrawal. The corresponding bindings are now published in the NPM package, ensuring easy integration for future developments.\nhttps://www.npmjs.com/package/@dcspark/milkomeda-liquid-staking\nOur team is preparing now to cover all QA Test suite with bridge side implementation of liquid staking (cardano pools -> milkomeda bridge - > Milkomeda EVM)\nDocumentation: Comprehensive documentation has been created detailing both the holistic system operation and Solidity-specific aspects. This will serve as a useful resource for anyone looking to understand the mechanisms of our liquid staking contract or build upon it.\nhttps://github.com/dcSpark/milkomeda-documentation/tree/liquid-staking/docs/cardano/liquid-staking\n\nPreparation for Mainnet Release: Post successful devnet testing, our team is now in the final stages of preparing for the mainnet release.\n\nWe sincerely apologize for the delayed reporting of this Proof Of Milestone. Our team has been dedicatedly working towards meeting all the requirements and conducting thorough tests for both the bridge and contract side, ensuring their successful deployment on NPM. Now we are planning to submit next PoMs accordingly.",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 25000,
+      "promise": "Audit report about the Solidity contract will be conducted by ArbitraryExecution. \nhttps://www.arbitraryexecution.com/",
+      "criteria": "Audit was completed and issues discovered were addressed",
+      "report": "We are excited to present the results of our comprehensive smart contract audit. The detailed report showcases our rigorous testing procedures, ensuring the safety and reliability of our EVM Liquid Staking Project, as we prepare for a smooth mainnet release.\n\nAudit:\nhttps://www.milkomeda.com/docs/liquid-staking-final-report-updated.pdf",
+      "kinds": [
+        "other"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 25000,
+      "promise": "Add support for staking ADA and handing out rewards to the Milkomeda validator & bridge code",
+      "criteria": "Staking rewards earned by the DAO in Cardano are paid out to sidechain holders correctly",
+      "report": "[Re-submitting due to the wrong project ID]\n\nWe're thrilled to announce a significant milestone in our journey! On epoch 82, we accomplished a successful reception of rewards from the Cardano Stake Pool. These rewards have been seamlessly distributed into the EVM Liquid Staking through the Milkomeda Bridge. Our beta-testers claimed these rewards directly from the Milkomeda Liquid Staking DApp.\n\nTo provide undeniable Proof of Evidence for this milestone, we have recorded a video demonstrating the reward claim process via the Liquid Staking DApp. You can see the increased stMADA value in the user's wallet.\n\nAdditionally:\nCardano side - https://preprod.cexplorer.io/pool/pool1nfwteq3rsk6uzxwncj7vdaqggkd263n038hf6xhwrj92v0cs48x/rewards#data <- After Epoch 81 945.68 were distributed to the Bridge staking address)\nhttps://explorer-devnet-cardano-evm.c1.milkomeda.com/tx/0x2cd9860b714919e4fb0f3369c2f5e426e6ed5a4ea283994f6ac9e647324689a2 <- Transfer of 945.683157 ADA rewards from preprod staking pool via Milkomeda Bridge to Liquid Staking Contracts)\n\nAdditionally, we're pleased to present the initial version of the Liquid Staking docs. In the coming days, we'll continue refining and enhancing our guides to ensure a smooth public release of Liquid Staking Contracts during the first week of August!\nDocs: https://milkomeda-documentation-derbwkxhz-nhaga.vercel.app/ (soon to be released under docs.milkomeda.com)\n\nLink to video: https://drive.google.com/file/d/17RTzThSmDwVjyRgI9UCQmUrZtqUQkzYI/view?usp=sharing",
+      "kinds": [
+        "chain",
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 25000,
+      "promise": "Liquid staking support for Milkomeda C1\nEarning staking rewards on their milkADA",
+      "criteria": "Create a web interface for interacting with the liquid staking contract. The interface will allow users to stake milkADA to receive stMilkADA. Staking rewards will be accumulated in stMilkADA, not excluding the ability to use it in the ecosystem’s applications.",
+      "report": "We're thrilled to announce that the Mainnet Public Release of Milkomeda Liquid Staking is primed for launch. Our development teams are gearing up to integrate the Milkomeda bridge with the liquid staking protocol for Cardano Mainnet, with the official release slated for the last week of August.\n\nFurther expanding our ecosystem, we've recently established the Milkomeda Cardano Stake Pool. Check it out here:\nhttps://cexplorer.io/pool/pool1gq07hfmull6etsr23l36cvwgfkym6jqn4q2dz5vz4y446yat70t\n\nPoM4 Outputs:\nWebsite: Liquid Staking - Milkomeda (Mainnet release coming soon): \nhttps://liquidstaking-dev.milkomeda.com/\nContract: Milkomeda Contract Address\n0xC0DB209F2D84706710a50AE410033B30c0F47192\nAudit Report: Final Liquid Staking Report https://www.milkomeda.com/docs/liquid-staking-final-report-updated.pdf\n\nFor a deep dive into the functionalities, watch our Milkomeda Liquid Staking DApp Walkthrough \nhttps://drive.google.com/file/d/1YVgevGTQbmxLQAURVpLn8OWFmIIV21yY/view?usp=sharing\n\nIn the coming weeks, we're not just launching Liquid Staking on Mainnet but also kickstarting a robust marketing campaign and rolling out comprehensive documentation for developers and end-users alike. After the mainnet deployments we will share the PCR.",
+      "kinds": [
+        "chain",
+        "doc",
+        "other"
+      ],
+      "links": 4
+    }
+  ]
+}

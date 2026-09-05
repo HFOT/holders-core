@@ -1,0 +1,89 @@
+{
+  "title": "Orcfax architecture audit",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Orcfax will leverage best practice and precedence within the Cardano ecosystem to identify auditing firms to review both on-chain and off-chain components of the Orcfax solution.\nOnce identified, Orcfax will finalize a Contract for Services with the selected auditing firms.",
+      "criteria": "Orcfax will execute a service contract for the Orcfax on-chain and off-chain audits.",
+      "report": "What we promised:\nOrcfax will identify auditing firms to review both on-chain and off-chain components of the Orcfax solution. Once identified, Orcfax will finalize a Contract for Services with the selected auditing firms, announce these contracts via social media (Discord, X), and provide links to access the contracts.\n\nWhat we delivered:\nUpon approval of the original SoM in 2024 Orcfax requested quotes from several auditing firms for the work required to review both Orcfax on-chain and off-chain components; these firms were evaluated based on their portfolios of work within the Cardano ecosystem, cost, and availability given our Catalyst timeline. A contract with TxPipe was negotiated for auditing on-chain components, and a contract with BlinkLabs was negotiated for the off-chain components.\nOn 08/27/2024 Orcfax announced on X that a contract with TxPipe had been finalized. We shared this same information on Discord. A screenshot of the announcement is included in docs (linked at the end) .\nOn 09/29/2024 Orcfax announced on X that a contract with BlinkLabs had been finalized. The following day, on 09/30/2024, we announced this contract on Discord. A screenshot of the announcement included in docs.\nBoth contracts have been made available on our docs site.",
+      "kinds": [
+        "other",
+        "social"
+      ],
+      "links": 7
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 145800,
+      "promise": "Auditors will provide Orcfax with feedback from their review of the respective components (on-chain, off-chain).",
+      "criteria": "Orcfax will release an interim report on audit status with strategy for addressing any auditor feedback/additional requests.",
+      "report": "What we promised:\nOrcfax will release an interim report on audit status with strategy for addressing any auditor feedback/additional requests; this information will be made available in Orcfax docs and public Github repository.\nWhat we delivered:\nAfter contract finalization, auditors were given access to Orcfax systems. The following constitutes the feedback received from each and the Orcfax strategy for addressing auditor feedback/additional requests. These details and links to relevant deliverables have also been made available on our public GitHub docs.\nThe on-chain audit\nTxPipe provided the following interim report\nAfter review of the report, the Orcfax team acknowledged the identified info-level finding (ORC-301). However, as this does not constitute an “issue” (per TxPipe definitions) with the on-chain code, Orcfax has decided not to resolve the finding at this time. It is our opinion that this is, at worst, a tooling concern.\n\"INFO\" as defined by TxPipe\nInfo are not issues. These are just pieces of information that are beneficial to the dApp creator. These are not necessarily acted on or have a resolution, they are logged for the completeness of the audit. (Audit Report, 18)\nThe finding can be simplified as follows: When using a chain indexer, if an integrator filters on address, they may miss utxos that have different stake credentials. This is correct.\nHowever, integrators can just as easily filter on the payment credential, which is the preferred method as this ensures the use of a valid FS as publication is permissionless. Additionally, integrator’s are informed as to where the FS will be published; a deviation from this address on the part of Orcfax is unlikely and would be communicated with integrators in advance if deemed necessary for any reason.\nThe off-chain audit\nFor the off-chain audit, BlinkLabs came back after an initial review of relevant components and discussed the value of a SOC2 audit; upon agreement, BlinkLabs requested that Orcfax provide",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "15",
+      "cost": 100000,
+      "promise": "Orcfax will respond to feedback received in Milestone 2; responses may take the form of GitHub commits, provision of additional access, and development of supplemental materials that address issues highlighted in audit feedback.\nOn-chain and Off-chain audits may complete at different times; If the Orcfax response mentioned above results in the completion of an audit, then the remaining milestones apply to the audit which remains in progress.\nAfter the Orcfax response, the auditor(s) will continue with their review of Orcfax components.",
+      "criteria": "Orcfax will release a report on audit status and actions taken to address auditor feedback.",
+      "report": "What we promised:\nOrcfax will respond to feedback received in the previous milestone if needed; responses may take the form of GitHub commits, provision of additional access, and development of supplemental materials that address issues highlighted in audit feedback.\n\nWhat we delivered:\nAfter acknowledging initial feedback and providing the additional access described in the previous milestone, the auditors continued their work. The following constitutes the feedback received from each and the Orcfax strategy for addressing auditor feedback/additional requests. These details and links to relevant deliverables have also been made available on our public GitHub docs.\n\nThe on-chain audit\nTxPipe provided the following final report\nThe report lists four Info-level (i.e. advisory) findings which the Orcfax team has acknowledged. However, as these do not constitute issues with the on-chain code, Orcfax has decided not to resolve them at this time. This decision has been made because resolution would result in a disruption of service for integrators, and the potential improvements are outweighed by the possible cost of remediation (e.g. the possibility of making new mistakes by renaming or refactoring code); if or when an update to the Orcfax on-chain service is needed, this decision will be reevaluated. This business decision balances reliability and responsibility given that these info-level findings in some cases constitute, at worst, tooling concerns.\nThe four info level findings are explained in the report and Orcfax has provided simplified explanations in the above linked docs.\n\nThe off-chain audit\nIn accordance with the delivery schedule outlined in the last milestone, Orcfax provided BlinkLabs with the first batch of records to demonstrate infrastructure adherence to SOC2 standards. A link to the requested evidence can be found here.\nThe evidence submitted for batch one has been accepted by BlinkLabs as satisfactory. A letter evidencing progress was provided by thei",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "16",
+      "cost": 35157,
+      "promise": "If Orcfax has passed both audits, then proceed to final milestone, otherwise:\nOrcfax will review the most recent feedback from the auditor(s), which assessed the Orcfax response provided in Milestone 3 and communicate strategies for resolving.",
+      "criteria": "Orcfax will release a report on audit status with its strategy for addressing any additional auditor feedback relating to remediative work completed in the previous milestone.",
+      "report": "What we promised:\nOrcfax will respond to feedback received in the previous milestone if needed; responses may take the form of GitHub commits, provision of additional access, and development of supplemental materials that address issues highlighted in audit feedback.\n\nWhat we delivered:\nAfter acknowledging initial feedback and providing the additional access described in the previous milestone, the auditors continued their work. The following constitutes the feedback received from each and the Orcfax strategy for addressing auditor feedback/additional requests. These details and links to relevant deliverables have also been made available on our public GitHub docs.\n\nThe on-chain audit\nTxPipe provided their final report in milestone three; this portion of the Orcfax audit is complete.\n\nThe off-chain audit\nIn accordance with the delivery schedule outlined in milestone 2, Orcfax provided BlinkLabs with the second batch of records to demonstrate infrastructure adherence to SOC2 standards. A link to the requested evidence can be found here.\nThe evidence submitted for batch one has been accepted by BlinkLabs as satisfactory. A letter evidencing progress was provided by their staff and has been included in the public GitHub docs.",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 5,
+      "month": "17",
+      "cost": 57143,
+      "promise": "A final report containing auditor findings, recommendations, and whether Orcfax addressed these will be provided from both the on-chain and off-chain audits. If any non-critical recommendations have been made, Orcfax will provide a response as to whether and when such recommendations will be addressed.",
+      "criteria": "Auditing teams will produce and make available final audit reports.",
+      "report": "What we promised:\nA final report containing auditor findings, recommendations, and whether Orcfax addressed these will be provided from both the on-chain and off-chain audits. If any non-critical recommendations have been made, Orcfax will provide a response as to whether and when such recommendations will be addressed.\n\nWhat we delivered:\nAfter acknowledging initial feedback and providing the additional access described in the previous milestone, the auditors continued their work and concluded the off-chain audit with batch three. The following constitutes the feedback received and the Orcfax strategy for addressing auditor feedback/additional requests. These details and links to relevant deliverables have been made available on our public GitHub docs.\n\nThe on-chain audit\nTxPipe provided their final report in milestone three; Orcfax provided a response and rationale for the four Info-level (i.e. advisory) findings listed in the report.\n\nThe off-chain audit\nIn accordance with the delivery schedule outlined in milestone 2, Orcfax has incrementally provided BlinkLabs with the requested materials for audit. Since the last milestone, Orcfax has provided the third and final batch of records to demonstrate infrastructure adherence to SOC2 standards. A link to the requested evidence can be found here.\nThis work has culminated in a system description, which can be accessed here.\nThe evidence submitted has been accepted by BlinkLabs as satisfactory. A letter evidencing the completion of the final batch has been included in the public GitHub docs.\n\nAn announcement regarding this successful completion of the audits has also been published to X",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 5
+    },
+    {
+      "no": 6,
+      "month": "18",
+      "cost": 72900,
+      "promise": "Orcfax will publish an audit post-mortem in order to share next steps, reflections on the auditing process, and the off-chain soc2 requirements list. The post mortem will include the Project Catalyst\n\n・Final close-out report \n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Catalyst Closeout Report\nName of project and Project URL on IdeaScale/Fund\nOrcfax Ltd.\nhttps://projectcatalyst.io/funds/12/cardano-use-cases-product/orcfax-architecture-audit\nYour Project Number\n1200177\nName of project manager\nChristian Koch\nDate project started\nAug 12, 2024\nDate project completed\nApril 6, 2026\nList of challenge KPIs and how the project addressed them\n・Confirm solution maturity: Orcfax underwent an audit (TxPipe) of its on-chain components in order to prove out the maturity of its on-chain solution to integrators, and received a final report with zero issues.\n・Enhance system security: Orcfax underwent an audit (BlinkLabs) of its off-chain architecture and business processes in order to demonstrate to its stakeholders that the project is committed to building mature infrastructure governed by security best practices; the result of this audit was improved governing policy and an exhaustive systems description.\n・Provide a model for infrastructure audits on Cardano: While there are aspects of this process that our team would improve upon if done again, we do still believe that Orcfax has demonstrated how other projects on Cardano could propose and execute audits of their projects– especially if their projects is an ecosystem service and/or is open-source.\n・What could have been improved: Additional research into audit processes prior to applying for catalyst monies would have been prudent as it likely would have prevented lengthy project delays which were the result of our ignorance relating to how audits are executed; after contracting our auditing firms, Orcfax needed to submit change requests to reshape the catalyst grant in order to fit audit processes.\n\nList of project KPIs and how the project addressed them\nOrcfax committed to the following KPI in our milestones:\n・To leverage best practice and precedence within the Cardano ecosystem to identify auditing firms to review both on-chain and off-chain components of the Orcfax solution.\n・Orcfax reached o",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 15,
+      "cut": true
+    }
+  ]
+}

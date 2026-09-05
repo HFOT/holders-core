@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・提案データコンテンツ検索のためのバックエンドの開発\n・AI翻訳のバックエンドの開発\n・フロントエンドUI/UXデザイン\n・フロントエンド開発\n\n(提案フィルタ機能の充実(String Search/Proposer/関連タグ/Challenges)\n・試作暫定ドメインから新ドメインへの移行",
+      "criteria": "・ファンド12の全ての提案を検索し、表示する。\n・主な文章まで日本語に翻訳\n・公開日:2019年9月1日",
+      "report": "このプロジェクトは、F11提案を日本語に翻訳するために、プロトタイプサイトの本格的なプロジェクトのための新しい独立したドメインで公開されました。\n古いドメイン\nhttps://catalyst-japan-potal.streamlit.app/\n新しいドメインで公開\nhttps://cardanoism.com/\n\nバックエンドソースコード\nhttps://github.com/btbf/cardanoism/tree/main/cardanoism/backend\nフロントエンドソースコード\nhttps://github.com/btbf/cardanoism/tree/main/cardanoism/pages\n\nこのサイトは7月5日(水)に正式に公開され、日本の暗号メディアに取り上げられました。\nhttps://x.com/cardanoism/status/1808973634280530009\nhttps://x.com/TheBitTimes/status/1809530990932508695"
+    },
+    {
+      "no": 2,
+      "promise": "・投票データの集計のためのバックエンドの開発\n・フロントエンドUI/UX調整\n・投票データをフロントエンドに統合\n・解析データ集計報告書の作成\n・ユーザーフィードバックレポート",
+      "criteria": "・ポータルサイトの投票結果を公開する\n・サイトアクセス解析集計レポートの公開\n・公開:2020年10月1日",
+      "report": "GitHubで公開されたソースコード\nhttps://github.com/btbf/cardanoism/pull/1/commits/7fdbcd5df942a49288ffe6b1dcb50ddbc5ac8d4d\nhttps://github.com/btbf/cardanoism/pull/3\n\nポータルサイトに掲載された投票結果\nhttps://cardanoism.com/catalyst/\n(ファンド12チャレンジのファイター)\n\nXについて(Twitter)\nhttps://x.com/cardanoism/status/1813906311706493198\n\n分析データ集計レポート\nFund12 投票期間中の Google アナリティクスデータ\nhttps://drive.google.com/file/d/11nj4nBN0rIRHdu9ufYEji5IaocbJ-ETq/view?usp=sharing\n\nユーザーフィードバックレポート\nhttps://docs.google.com/forms/d/1pQFeSzSH3eVm s7HgUGFU6NxDqukYD9WuElxOgoiavg/viewanalytics\nQ1. カタリストの投票に参加してどのくらいの時間がありますか?\n基金前から10 70.8%\nQ2. カタリストの投票に参加するのは難しいですか?\nやや困難 50%\nQ3. 上記「非常に難しい」「何か難しい」を選択した方 難しい部分は?\n英語での提案を読む。 81%の\nQ4. Cardanoismイニシアチブ(proposal Japanese-language)は効果的ですか?\n非常に合意 79.2%"
+    },
+    {
+      "no": 3,
+      "promise": "・ライブファンド13、生産ポータルのファンド14セクション(リストと詳細ビュー)。\n・現行のCatalyst/LidoNation APIのバックエンド/APIマイグレーションが完了し、マイグレーションアーティファクトとショートオプス/ランブックが完成しました。\n・移行後のパリティを維持するために配信されたUI/UX調整、前後のキャプチャで文書化.",
+      "criteria": "AC-1:ライブカバレッジ\nVerifier は、生産 URL を .../fund13 と .../fund14 リストと 1 つの提案詳細ページごとに開きます。 ページの読み込みが3秒未満で、各ファンドが少なくとも100件以上の提案(±1%)をレンダリングした場合に渡します。\nAC-2:バックエンド/ APIの移行\nGitHub Release vM3 には以下が含まれます。\na) F13/F14 のスキーマ/API の変更を記述する CHANGELOG.md\nb) フィールド追加/名前を反映するマイグレーション/アーティファクト(スクリプトまたはドキュメント)\nc)データリフレッシュコマンドまたはスクリプト(例、etl refresh、Taskfile/Makeターゲット)。 これらのアーティファクトが存在し、リリースタグ/コミット SHA を参照している場合にパスします。\nAC-3:UI/UXの調節\nログイン",
+      "report": "このマイルストーン(M3)はGitHub Release v2.0.0で配信および最終処理を行います。 マイルストーンの出力\n・ライブファンド13、生産ポータルのファンド14セクション、リストや提案詳細ビューなど。\n・現行のCatalyst / LidoNation APIと、文書化されたマイグレーションのアーティファクトと運用のランブックを組み合わせた、完全なバックエンドとAPIマイグレーション。\n・UI/UXの調整により、マイグレーション後にビジュアルパシティを維持し、前後のキャプチャで文書化しました。\n\n受容体基準\nAC-1:ライブカバレッジ\n頂点は以下のURLを開くことができます。\n・Fund13 リスト:\n・https://cardanoism.com/catalyst/fund/13\n・Fund14 リスト:\n・https://cardanoism.com/catalyst/funds/14\n\n各ページは、生産に成功し、基金(±1%)ごとの少なくとも100の提案をレンダリングし、ナビゲーションを代表的な提案詳細ページにすることができます。\nAC-2: バックエンド/ API 移行\nFund13 と Fund14 のバックエンドと API の移行が GitHub Release v2.0.0 で完了し、次のコミットで固定されています。\n・リポジトリ:btbf/cardanoism\n・タグ: 2.0.0\n・GitHub リリース: v2.0.0\n・コミット SHA: 749a250281798d0b54198eb3f9ac2fdec3f43f2e\n・https://github.com/btbf/cardanoism/commit/749a250281798d0b54198eb3f9ac2fdec3f43f2e\n\nリリースには以下が含まれます。\n・資金13とファンド14のスキーマとAPIの変更を記述するCHANGELOG.md:\n・https://github.com/btbf/cardanoism/blob/2.0.0/docs/M3/CHANGELOG.md\n・フィールドの追加や名前の変更を反映するマイグレーションドキュメント。\n・再現可能なデータリフレッシュ手順と運用指示:\n・https://github.com/btbf/cardanoism/blob/2.0.0/docs/M3/README.md\n\nすべてのアーティファクトは GitHub Release v2.0.0 を参照し、上記のコミット SHA を明示的に参照します。\nAC-3:UI/UXの調節\nAPI の移行後に UI/UX のparity が維持されました。\n.スクリーンショットの前後と API の更新に縛られた UI の変更の要約が提供されます。\n・https://github.com/btbf/cardanoism/blob/2.0.0/docs/M3/ui-diff.md\n\nAC-4: 操作の信頼性\n運用の信頼性は十分に文書化され、検証可能です。\nオペラ座"
+    }
+  ]
+}

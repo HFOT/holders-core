@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "CBORやtxハッシュからトランザクションを描画できるWebapp用のMVPの実装では、ブロックチェーンのインデックス作成に必要なクエリが必要です.",
+      "criteria": "Webapp は CBOR や tx ハッシュ を読み込み、入力と出力の矢印でトランザクションの図を表示し、ユーザーフレンドリーな方法でメイン情報を示します。: utxos の値と datums, 縮小されたトークン, tx 手数料, 他の人の間で.",
+      "report": "マイルストーンのゴールと完了の証明\n\nCBORまたはtxハッシュからトランザクションを描画できるWebアプリ。\n\nCBORやトランザクションハッシュを読み、入力と出力の行を持つボックスで表されたトランザクションの図を表示できるWebアプリを実装しました。 ソースコードは、次のリポジトリで公開されています。\nhttps://github.com/txpipe-shop/cardano-graphical-tx\nマイルストーン1は2つのメインステージに分けられました。\n最初の段階は、CBORから開発された機能性に焦点を当てています。\n・まず、提案提出段階で提示された初期のプロトタイプを追加および再構築しました。\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/1\n・次に、ハッシュ、手数料、マイニング/バーンの詳細などの取引関連情報を表示するパネルを追加しました。\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/2 https://github.com/txpipe-shop/cardano-graphical-tx/issues/3\n・参考文献入力に関する情報を収録しました。\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/4\n・取引名(またはエイリアスを割り当てる)に機能を追加しました。\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/5\n・最終的に、UTxOsに関する情報を表示するパネルを追加しました。 以前は、入力用UTxO参照のみが表示されます。\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/6\n第二段階は、同じ機能の開発に焦点を当てていますが、トランザクションハッシュから描画します。 これを実現するために、私たちはインデックス作成者を統合しました。この場合、ブロックフロストは、さまざまなオプションに迅速に研究した後にしました。 いずれにしても、他のインディケーターの後半のインテグレーションには、すべてのモジュールがより少なくなります。\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/7\n・Blockfrostの統合により、トランザクションハッシュに基づいてトランザクション図を表示する機能を導入しました。\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/10\n・さらに、CBORの入力が再解釈されると"
+    },
+    {
+      "no": 2,
+      "promise": "既存のレースアナトミーページを適応させるためのUXデザインは、取引のグラフィックビューを含めるために必要なセクションを追加します。\nグラフィカルビューアを展開し、一般に公開されているを含むAnatomy Webappをレースします.",
+      "criteria": "レースアナトミーページには、Tx グラフィックビューアがUIに統合されています。\nユーザーは、そのグラフィカルな表現とともに、txコンポーネントについて読み、学ぶことができます.",
+      "report": "既存のRace Anatomyスタイルガイドラインに準拠したWebアプリケーションを開発し、トランザクションのグラフィックビューアを備えています。 このアプリは公開され、公開的にアクセスできるようになりました。\n主な業績:\n・既存のレースアナトミーページの設計に従うためにウェブアプリを適応させる\n・解散取引機能の統合\n・描画と解散操作が同じデータ構造を分かち合うように、全体設計を見直しました\n・採用応募者\n\nこのマイルストーンのソースコードは、次のリポジトリで公開されています。 https://github.com/txpipe-shop/cardano-graphical-tx\nマイルストーン2は2つのメインステージに分けられました。\n最初のステージは、既存のコードの適応に焦点を当てています。\n・まずは、CBORから取引情報を取得するための解散機能を追加しました。\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/26\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/48\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/49\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/46\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/47\n・取引検索中に不足している情報については、エラー管理を実施しました。\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/62\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/43\n・最終的には、ランディングページを含むWebページを再構築しました。\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/38\n\n第二段階は、コードをデプロイし、公開できるようにすることに焦点を当てています。\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/27\n・ まず、ドッカーイメージを作成して、demeter を使用してホストするように設定しました。デプロイされた Web ページが次のようになります。\n\nhttps://3000-existing-虐待-9dreix.us1.demeter.run/\n次のビデオでは、マイルストーン2で開発された機能を紹介します。\nhttps://youtu.be/Zr2mFQHb6Vo"
+    },
+    {
+      "no": 3,
+      "promise": "Cardanoトランザクションを指定するDSLの定義。\nパーサの実装の言語とボイラープレートを正確に記述するドキュメント.",
+      "criteria": "ユーザまたは Cardano 開発者は、Cardano トランザクションを指定するドメイン固有の言語で文を書くことができます.",
+      "report": "Cardanoトランザクションを指定できるDSL。\nコンプライアンスのCBORを生成し、言語データ型を実装するために使用できるCardanoトランザクションを指定するために言語を正確に記述するドキュメントを作成しました。 以前に述べた文書はリポジトリに見つけることができます。\nhttps://github.com/txpipe-shop/cardano-graphical-tx/blob/main/docs/specification.md\n主な業績:\n・DSLの定義\n・JSONシーン\n・DSLで書かれた取引例\n・JSONシーンを用いたパーサの試作\n・試作を試みるPoCインターフェイス\n\nDSL を定義するには、反復が簡単な例で実行されました。 ADA を 1 つのウォレットから別のウォレットに転送します。 このようにして、トランザクションの最も重要なセクションが定義された:入力と出力の定義。\nこの例は、言語の表現力を拡大し、インプットとアウトプットを記述する方法を定義するために、それを反復しました。 他のセクションも、料金、採掘、出金、さらには、CBORに無関係なセクションや、名前(入力、出力、またはトランザクション自体など)、他のセクションでも識別されました。\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/68 https://github.com/txpipe-shop/cardano-graphical-tx/issues/69\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/73\n仕様が終わったら、DSLで書かれたトランザクションの構文をチェックするためにJSON Schemaを定義しました。\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/71\nDSLの主な用途を示すビデオデモを録画しました。\nビデオ"
+    },
+    {
+      "no": 4,
+      "promise": "DSLで書かれたtx仕様を読み、CBORを制作するためのパーサ/コードジェネレータの実装.",
+      "criteria": "DSLの文を解析し、CBORを生成できます.",
+      "report": "1- DSLで書かれたtxスペックを読み、CBORを制作するためのパーサー。\n\nドメイン固有の言語(DSL)で書かれたトランザクションのパーサと翻訳機能を開発・実装しています。 この機能は、CBOR表現の生成を可能にし、六角形または診断表記のいずれかで表示することができ、さらなる分析のための柔軟性を提供します。\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/77\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/79\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/80\n\n前のマイルストーンでは、DSL を定義しました。これにより、トランザクションを構築し、簡単に解析することができます。 次に、これらのトランザクションの結果は、以前に開発されたグラフで表示できます。 このタイプの操作を容易にするために、Webアプリケーションを調整しました。\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/85\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/84\n\nまた、CBORとして直接記述できないケースを特定し、適切なケース管理を実施します。 これらも適切に文書化されました。\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/78\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/81\n\n実装が完了すると、正しい作業を確実にするために、CBORを解析する機能でテストが行われました。\n\nhttps://github.com/txpipe-shop/cardano-graphical-tx/issues/82\n\n2-DSLの主な用途を示すビデオデモを録画しました。\n\nhttps://youtu.be/5-c2tF etSE"
+    },
+    {
+      "no": 5,
+      "promise": "・DSLからレースアナトミーウェブページへCBORジェネレータの設計と統合\n・レースアナトミーウェブアプリの統合版の開発 最終報告書\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・レースアナトミーウェブアプリは、txグラフィックを表示し、デザインされたDSLからtxを構築するための機能が公開されています。\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "終了報告: https://drive.google.com/file/d/1L62LpMPPtLCli0YJb0aSA25nTqqyu4Tq/view?usp=sharing\n終了動画:https://youtu.be/f68NznQYzY?si=QlccE6OJavsIp4bE\nWebApp: https://laceanatomy.com/"
+    }
+  ]
+}

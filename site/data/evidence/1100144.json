@@ -1,0 +1,70 @@
+{
+  "title": "GLEIF Network Super-Watcher on Cardano by RootsID",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 24000,
+      "promise": "In this first milestone we will produce and deliver the following:\n・The architecture design of the super watcher: we will provide a technical design of the \"watcher\" as it should be developed. It will include a list of features and functionalities that the system will provide. \n・Flow of operation: we will provide a document and diagram on how the super-watcher interacts with the Cardano blockchain and with witnesses.\n・Project planning and task allocation: based on items 1 and 2, we will define and plan each individual development and operational task using an Agile methodology and will be published in the GitHub repository issue tracker and project management tool",
+      "criteria": "The milestone should be accepted when all deliverables defined above are completed. The goal is to have clearly defined:\n・what is going to be developed. That is the architecture design of the system\n・how it will interact with other systems. That is the flow of operation\n・how we are going to implement in terms of developer resources allocation. That is the project planning per se\n\nItem 1 and 2 will be more technical, however an overall review should be enough to understand the architecture at a high level. Item 3 is just the detailed planning of task for the next milestones.",
+      "report": "The Proof of Achievement consists of three outputs as described in the milestone. Follows below links per each output:\n1- Architecture design: https://github.com/roots-id/cardano-watcher/blob/main/README.md and https://github.com/roots-id/cardano-watcher/blob/main/DESIGN.md\n2- Flow of operation: https://github.com/roots-id/cardano-watcher/blob/main/DESIGN.md#flow-of-events\n3- Project planning and task allocation: https://github.com/roots-id/cardano-watcher/milestones?direction=asc&sort=due_date&state=open and https://github.com/roots-id/cardano-watcher/issues",
+      "kinds": [
+        "code"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 50000,
+      "promise": "In this milestones we will be developing the first working prototype of the super-watcher based on the design produced in the first milestone. The prototype should be able to interact with the testing and keri watchers based in the operational flows defined. As a first prototype, it shouldn't be considered an MVP; that improvement is part of milestone 3.\nOpen source code will be available to use in the project Github repository with some basic instructions.",
+      "criteria": "The prototype delivered in this milestone should be able to demo at least 70% of the features defines in milestone 1. As a first prototype, it's not expected to be production ready and running and demoing may require manual CLI procedures. The goal is to validate the initial design and a final product can be delivered in the milestone. \nThe prototype delivered should be considered as the first iteration of a product, that will be improved towards an MVP in the next milestone.",
+      "report": "In this milestone 2 we completed the development of the Cardano Watcher prototype as was designed in milestone 1. The code is available in the public repo https://github.com/roots-id/cardano-watcher where you can also see that all of the issues assigned to milestone 2 were completed and closed: https://github.com/roots-id/cardano-watcher/milestone/2?closed=1\nWe implemented more than 70% of the features designed. The pending feature is the web portal that was assigned to milestone 3. The features are available in CLI commands or calls to the implemented rest API as defined in the acceptance criteria.\nIn the scripts section of the repository, we created some scripts that help demo and test the system. As expected also in this milestone, we recorded a video showing how the system works and how it can be used from the console and postman. The video can be found here: Video Milestone 2",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 5
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 50000,
+      "promise": "The goal of this milestones is to deliver a MVP (minimum viable product) based on the design of milestone 1 and the prototype delivered in milestone 2. This step is an iteration process of improvement of the prototype, where the rest the features defined in milestone 1 should be implemented and most of the issues detected while testing should be resolved. \nThe code delivered as an MVP will be published in a live cloud instance in the next milestone.",
+      "criteria": "The MVP delivered in this milestone should be able to demo all the features defined in milestone 1 and should behave stable during tests. As a first MVP some errors may be detected but shouldn't stop the service to run. The goal is to have a product ready to be deployed in a cloud instance in the next milestone.",
+      "report": "In this milestone 3 we are delivering the MVP of the Cardano Watcher that is an improvement from the prototype delivered in milestone 3, composed of following:\n・added web portal, that was the last feature remaining from milestone 2\n・added unit tests for the backend code\n・code debugging\n・backend performance optimization\n\nAll the code is public in two GitHub repositories:\n・https://github.com/roots-id/cardano-watcher\n・https://github.com/roots-id/cardano-watcher-web\n\nAnd you can also track the progress and what was achieved in milestone 3 by looking into https://github.com/roots-id/cardano-watcher/milestone/3?closed=1\nIn conclusion, all the features were implemented and the code was improved and optimized to get a Minimum Viable Product ready to be publish in the cloud in next milestone. Also, as expected also in this milestone, we recorded a video showing a demo of what we are delivering in this milestone: https://drive.google.com/file/d/1ZQTExXoWv-fMwIFLce5E6nohKcX0hKuW/view?usp=sharing\nThanks,\nRootsID Team",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 7
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 34100,
+      "promise": "The output of this milestone is a deployed cloud instance of the MVP delivered in milestone 3. The instance will be deployed in AWS and will point to Cardano Mainnet. The goal is to have a live super-watcher ready to be tested to anyone and validate its functionalities. The real usage of the product will guide us for future improvements.",
+      "criteria": "The readiness of the deployment in AWS that can be tested will be the acceptance criteria. The verification can be performed by a set of test that were made available for the MVP, that in this case it should be executed in the live environment.",
+      "report": "In this milestone 4 we are publishing the Cardano Watcher in the cloud (in AWS), both the backend and the web portal. The app can be found in the following URLs:\n・Portal: https://cardano-watcher.rootsid.cloud\n・Backend API: https://cardano-watcher-api.rootsid.cloud\n\nAll the code is public in two GitHub repositories:\n・https://github.com/roots-id/cardano-watcher\n・https://github.com/roots-id/cardano-watcher-web\n\nAnd you can also track the progress and what was achieved in milestone 3 by looking into https://github.com/roots-id/cardano-watcher/milestone/4?closed=1\nAlso, as expected in this milestone, we recorded a video showing a demo of what we are delivering in this milestone: https://drive.google.com/file/d/1U1obQS8859CSwCTkXUdjQ3PivKaN4plT/view?usp=sharing\nThanks,\nRootsID Team",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 9
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 28000,
+      "promise": "This milestones is the wrap up of the project where final documentation is produces as well as the requested final closeout report and a project closeout video.",
+      "criteria": "The criteria to accept this milestone is the validation of the final documentation available in the GitHub repository and the reception of the closeout report and video.",
+      "report": "This is the Final Milestone of our project where we are delivering:\n・Project Close Out Report: https://docs.google.com/document/d/1QE9BWZoVuPq8rpFMrto-A7fwpXMFt1jchBmN4Wtlimc\n・Project Close Out Video: https://youtu.be/JhcOROpJZGc\n\nThanks,\nThe RootsID Team",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

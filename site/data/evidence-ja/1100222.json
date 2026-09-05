@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Optimアカウントの設計仕様書(現「Leviathan」) 層2システム。 これは、Optimの現在のトランザクションチェーンとオフチェーンシステムアーキテクチャを超えて橋渡しするすべてのコアメカニズムと要件を、より完全でスケーラブルなLeviathan実装と見なすことができます。 本製品の機能の非技術的なユーザーを教育し始めるための公的に直面した文書を同行する.",
+      "criteria": "・システム設計の仕様要件の文書\n\n・アカウント抽象化機能\n・保証取引\n・最終選考\n・取引の未解決\n・レイヤー2実行環境\n・未来シーケンサーネットワーク\n\n・システムアーキテクチャ、コアメカニック、ユースケース、実用的な展開を施す非技術的なユーザーのための条件付きコンテンツ。\n\n・現在の取引チェーンパラダイムの制限\n・現行のdAppの互換性問題の制限\n・基本設計・非経理資産入力の説明\n・インテントベースの取引\n・アカウントベース対eUTxOモデルアプリarchit",
+      "report": "・GitHubリポジトリホスティングシステムの設計仕様と、要件に記載されているすべての詳細へのリンクの作成\n\n** Gitbook も追加**\n受容体基準\nシステム設計仕様要件の文書\n・アカウント抽象化機能\n・保証取引\n・最終選考\n・取引の未解決\n・レイヤー2実行環境\n・未来シーケンサーネットワーク\n\nリンク: https://github.com/OptimFinance/public-documents/blob/main/leviathan wp.pdf\n**アクセプタンスクライテリアエリアで壊れたGitbookリンク**\nリンク: アカウントの抽象化機能\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/system-components/optim-account-intents-to-enable-tx-chain/the-necessity-of-an-account-based-framework\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/system-components/optim-account-intents-to-enable-tx-chain/account-abstraction-and-its-role-in-leviathan\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/account-abstraction\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/account-abstraction/concept-of-account-abstraction\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/account-abstraction/technical-implementation\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/account-abstraction/security-and-operational-implications\nリンク:保証された取引\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/deterministic-transaction/保証されたトランザクション\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/deterministic-transaction\nリンク: 即刻の終了\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/high-level-overview/system-design/instant-finality\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/instant-finality\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-concepts/instant-finality/liveness-and-safety\nhttps://optim-finance.gitbook.io/optim-finance/leviathan/core-c"
+    },
+    {
+      "no": 2,
+      "promise": "Optimの現在のトランザクションチェーンとオフチェーンシステムアーキテクチャを超えて橋渡しするアイケンでコードされたシステムの初期フレームワークは、システムの主な機能を瞬時に実現します。 これは、シーケンサ、インテント、およびガスおよび自動取引などの基本的なアカウントベースのアクションのオンおよびオフチェーン構造と初期コードを含みます.",
+      "criteria": "・アイケンの初期のコードベースは、Leviathanシステムのコア機能と、現在のシステムに関連する方法を示していますが、性能を向上させるための範囲を超えて拡張します。\n・コードベースの構造と構成部品が一体どのように合っているかは、凝集システムを形成し、主要なL1チェーンからの入力で高速な実行のために一緒に作業します.",
+      "report": "・Githubスマートコントラクトリポジトリへのリンクは、システムの主なコンポーネントです。\n・https://github.com/OptimFinance/leviathan\n・プライベートレポジトリ、必要に応じてアクセスをリクエスト\n・システムコンポーネント、機能、さらにシステムアーキテクチャに組み込まれるリポジトリの概観と、コードウォークスルービデオへのリンク。\n・https://drive.google.com/file/d/1hrveVnvkIdS80VcgJySAx4rUAm03k869/view?usp=sharing\n\nシステムコンポーネント\nコアメカニックとシステムの概要\n・タイムスタンプ 1:04\n・https://github.com/OptimFinance/leviathan\n・アカウントの最適化、ユーザーインテント、取引のチェーン化、保証された取引\n・タイムスタンプ 1:50\n・https://github.com/OptimFinance/leviathan/tree/main/validators\n・最適なアカウントの内訳\n・タイムスタンプ 3:25\n・https://github.com/OptimFinance/leviathan/blob/main/validators/account.ak\n・インテントアナウンサー\n・タイムスタンプ 4:35\n・https://github.com/OptimFinance/leviathan/blob/main/validators/account.ak\n・優先料金\n・タイムスタンプ 6:15\n・https://github.com/OptimFinance/leviathan/blob/main/validators/account.ak\n・スクリプトの承認\n・タイムスタンプ 7:28\n・https://github.com/OptimFinance/leviathan/blob/main/validators/approval.ak\n・https://github.com/OptimFinance/leviathan/blob/main/validators/approved approval.ak\n・ユーザーインテント\n・タイムスタンプ 8:31\n・https://github.com/OptimFinance/leviathan/blob/main/validators/intent actions.ak\n・Leviathan仮想マシン\n・タイムスタンプ 12:10\n・https://github.com/OptimFinance/leviathan/blob/main/validators/intent actions.ak\n・13:11 カルダノの動的階級料金体系\n・タイムスタンプ13:11\n・https://github.com/OptimFinance/leviathan/blob/main/validators/intent actions.ak"
+    },
+    {
+      "no": 3,
+      "promise": "監査に必要なすべての機能を備えたLeviathanのプロトタイプのフル作業コードベース。 Optimの現在のシステムアーキテクチャを超えて、レイヤー2(別名、Leviathan)に橋を渡します。 この実装では、システム機能のすべての機能を作るコード補完を行います。 これは、作業シーケンサ、インテント、およびガスや自動トランザクションなどの基本的なアカウントベースのアクションのオンおよびオフチェーンプルーフを含みます.",
+      "criteria": "・プライベート・カルダノ・テストネット環境に展開する最小限の可視プロトタイプの実装が、コンセプトの証明としてフル・フロントエンドなし。\n・インタラクションの状態を詳述する初期作業プロトタイプビデオウォークスルー、取引履歴のまとめ、インタラクションのシーケンスと学習したレッスン",
+      "report": "・初期テストネットコード実装のGitHubリポジトリへのリンク\n・https://github.com/OptimFinance/leviathan\n・テストネット上に展開するスマートコントラクトへのリンク\n・Leviathan Address: https://cardanoscan.io/tokenPolicy/5c69fca1d9c00a0d39f58a8a07df1f625053e8dd46298640b0842522\n・最適なアカウントアドレス: addr1w9wxnl9pm8qq5rfe7k9g5p7lra39q5lgm4rznpjqkzzz2gsafje6g\n・Bridge Tx: https://cardanoscan.io/transaction/202b1d66f4d4fd4415cce3000193d63d3b7abd79f4cd20cb4f4e35d352ea54\n・フルワーキングコード試作の映像ウォークスルーへのリンク\n・https://drive.google.com/file/d/1-FnJNwNcyxAyX48j4pF86VggMFFnqEqL/view?usp=sharing\n・GitHubで実施したインタラクションと機能について、GitHubでホストされているレポートへのリンク\n・https://github.com/OptimFinance/leviathan/blob/main/Leviathan%20Protype%20報告書"
+    },
+    {
+      "no": 4,
+      "promise": "基本的な機能と最初のdAppデプロイの成功したテストネットの後、Leviathanシステムの監査を完了します。 スマートコントラクトで実装されている初期監査で特定された調査結果、アップグレード、または改善は、初期監査後にコードベースに行われた変更のセキュリティを評価するための修正の二次監査になります.",
+      "criteria": "・監査会社から受けたシステム設計とセキュリティ脆弱性を評価する初期監査報告\n・本評価に基づくProtocolの更新と改善は、任意のコード変更が行われた場合、二次監査のために提出されます.",
+      "report": "・GitHubリポジトリまたはGitBookページへのリンクで、初期監査レポートが公開されています。\n・https://optim-finance.gitbook.io/optim-finance/leviathan/english/security-review\n・Githubリポジトリへのリンクとプロトコルの更新と初期監査に基づく改善\n・https://github.com/OptimFinance/leviathan\n・必要に応じて2次監査のエビデンスを持つPDFファイル\n・不要"
+    },
+    {
+      "no": 5,
+      "promise": "公開テストネット環境をライブし、Leviathanアプリケーションを非技術的なユーザーベースに利用する方法を説明するドキュメントを同行する。 Leviathan L2のアカウントベースのスマートコントラクトモデルは、より複雑なインテントベースのdAppインタラクションの機能を拡張し、コンポーザビリティとシーケンサースループットから増加したトランザクション速度で決済を実現します。 これは、ガスと自動tx実行を使用して自動エアドロップdAppのテストネットの展開を含みます.",
+      "criteria": "・Leviathan L2システムで動作するL2システムの公開テストネット導入により、インテントベースの高速トランザクション実行が可能\n・testnet dAppとのやり取り方法を説明する記事.",
+      "report": "・Optimウェブサイトでホストされている公開テストネットアプリケーションへのリンク\n・https://app.optim.finance/leviathan\n・ミディアム記事やGitBookのドキュメントへのリンクは、公開テストネットとうまくやり取りする方法に関する教育情報です。\n・https://optim-labs.medium.com/leviathan-mainnet-beta-guide-afda0ca6a655?sharedUserId=optim-labs"
+    },
+    {
+      "no": 6,
+      "promise": "Cardano mainnet にデプロイされた初期の Leviathan 実装。 メインネットベータの機能中にアーキテクチャの基本を使用して最初のdAppをショーケースします。 ユーザーが取引手数料ガスをOptimアカウントに送り出すことができるところで、使用可能なdAppが実装され、ウォレットで確認された対象となるLiquidity Bondsに基づいて、自動で断続的なエアドロップクレームが自動実行されます。\nすぐにフォロー\nCardano mainnet にフル Leviathan アプリケーションを展開しました。 複数の作業dApps(少なくとも2)と、他のビルダーがアプリケーションを構築し始めるためのスケーラブルなアーキテクチャを備えた機能の完全なLeviathan層2.",
+      "criteria": "・第1回 Optim Account ベースのモデル dApps の公開リリース。\n・2つの作業用dAppsがシステム堅牢性とスケーラビリティを示すインフラ製品。\n・LeviathanでdAppsをビルドし始めるための他のビルダーのための初期文書。\n・全ファンド11ファイナル・マイルストーンの要件を満たす「プロジェクトの証明」レポートと「実証実証の証明」動画と、すべての要件のコピー.",
+      "report": "・Optim Financeウェブサイトでホストされている全公開メインネット展開へのリンク\n・https://app.optim.finance/leviathan\n・LeviathanにデプロイされたAsset Transfer/Airdrop dApp機能へのリンク\n・https://app.optim.finance/leviathan#pay\n・LeviathanにOADA SwapモジュールdAppを展開する機能へのリンク\n・https://app.optim.finance/leviathan#swap\n・Leviathanで構築するための初期のGitbookドキュメントへのリンク\n・https://optim-finance.gitbook.io/optim-finance/leviathan/english/system-architecture\n・https://optim-finance.gitbook.io/optim-finance/leviathan/japanese/core-concepts\n・https://optim-finance.gitbook.io/optim-finance/leviathan/english/system-components\n・https://optim-finance.gitbook.io/optim-finance/leviathan/japanese/processes\n・https://optim-finance.gitbook.io/optim-finance/leviathan/english/high-level-overview\n・プロジェクトクローズアウトレポート\n・https://drive.google.com/file/d/1NtQE1y7zBgy7lX23DT7a6zCuNJeech6Q/view?usp=sharing\n・プロジェクトクローズアウトビデオ\n・https://www.youtube.com/watch?v=VOdCDKpIqh8"
+    }
+  ]
+}

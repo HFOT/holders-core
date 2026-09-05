@@ -1,0 +1,48 @@
+{
+  "title": "CardanoPress: Security Audits, Improvements & Optimisations",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 12000,
+      "promise": "(A) Audit report of CardanoPress Core and framework from the chosen third-party auditing company (PatchStack).\n・CardanoPress: https://github.com/CardanoPress/cardanopress\n・Framework: https://github.com/CardanoPress/framework\n\nAudit will include inspection of the entire source code. This does not include code by third parties such as dependencies/libraries that the CardanoPress plugin relies on, but integration and usage will be audited.\nDetailed report with suggestions to patch the security issues found during the audit.",
+      "criteria": "(A) A written detailed audit report of the codebase for the CardanoPress Core and framework repositories provided by the auditing firm to the CardanoPress development team.\nDetailed reports will have suggestions to patch security issues found during the audit.\nAudit reports are similar to the provided example Developer Reports found on their GitBook. https://docs.patchstack.com/docs/developer-report",
+      "report": "The audit of the CardanoPress core plugin and framework have been completed by our auditing company PatchStack.\nA copy of the audit can be accessed at:\nhttps://drive.google.com/drive/folders/1hD6_klu8cunqP3EsTEYMZJSroRRnBC4z?usp=sharing\n\nEvidence of Milestone\na) As part of the evidence for this milestone, we have included the invoice and payments for the invoice:\nInvoice: https://drive.google.com/drive/folders/1_pVc9DIH83eINkdmp6elOp5FgeBzfTYg?usp=sharing\nPayments: https://drive.google.com/drive/folders/1FxASMYPCCEE4_tkrgYSVpt1l-ZrQxsIC?usp=sharing\nb) A progress blog post has been posted on our website along with social media accounts:\n・https://cardanopress.io/cardanopress-audit/\n・https://x.com/CardanoPress/status/1821112204164521988\n\nc) Audit report is accessible for the review team:\n・https://drive.google.com/drive/folders/1hD6_klu8cunqP3EsTEYMZJSroRRnBC4z?usp=drive_link",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 12000,
+      "promise": "A new version(s) addressing the security issues and suggestions highlighted in the report will be released.\nhttps://github.com/CardanoPress/cardanopress/\nThis will be re-evaluated by the auditing firm and published on the WordPress.org website in the final milestone.",
+      "criteria": "From working through the audit report provided by the auditing firm in Milestone 1, the CardanoPress team will work through all of the issues and security recommendations suggested by the auditing firm.\nGit commits will be used for each issue raised in the report and compiled into a new security release for the CardanoPress plugin.\nThe new release will fix and address critical vulnerabilities and acknowledge issues that can't be addressed.\nA newly released version(s) of CardanoPress for users to install and secure their websites can be found at:\n・https://github.com/CardanoPress/cardanopress/re",
+      "report": "The CardanoPress team has finally addressed all the issues raised during the security audit.\nRelease v1.20.0 - v1.22.0 addresses all of the issues raised.\n・v1.20.0 - https://github.com/CardanoPress/cardanopress/releases/tag/v1.20.0\n・v1.21.0 - https://github.com/CardanoPress/cardanopress/releases/tag/v1.21.0\n・v1.22.0 - https://github.com/CardanoPress/cardanopress/releases/tag/v1.22.0\n\nA blog post has also been written, breaking down the various key code commits that address each one of the issues raised, which may be easier to review.\nhttps://cardanopress.io/cardanopress-security-audit-complete/\nThe latest secure version of the plugin is available on the WordPress plugin directory\nhttps://wordpress.org/plugins/cardanopress/",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 16000,
+      "promise": "The auditing firm will re-evaluate the changes and updates in our new security release and confirm that the changes address their report.\nThis will allow us to officially release the updated version on WordPress.org (https://wordpress.org/plugins/cardanopress/) for all users and new users.\nAll current and new users will have a rock-solid and secure foundation to build their websites.",
+      "criteria": "Fully published new security release that has been re-evaluated by the auditing firm and released on the WordPress.org website at: https://wordpress.org/plugins/cardanopress/.\nSecurity release will be found at https://wordpress.org/plugins/cardanopress/\nUpdated audit report from the auditing firm reviewing updates and changes to the Plugin.\nThis will be published on our GitHub account and CardanoPress.io website.",
+      "report": "The update releases of CardanoPress have all been reaudited by the security auditors, PatchStack, who have confirmed that all security informative, low, medium, high, and critical issues have been addressed.\nA reaudit report from PatchStack has been uploaded online and is available publicly for review:\nhttps://drive.google.com/file/d/1qDenZ77E7S1VvqCvhX714_bL8jt8RghR/view?usp=drive_link\n(Please note it is dated March, as that is when we started the project with PatchStack)\nThe original audit can be found at:\nhttps://drive.google.com/file/d/1-Q1PdvESuptL819yt1lf_caa4ERnEN_j/view?usp=drive_link\nA full blog post breaking down the audit and how it was addressed can be found on the CardanoPress website:\nhttps://cardanopress.io/cardanopress-security-audit-complete/\n\nSecurity Releases on Github Addressing Audit\nv1.20.0\nhttps://github.com/CardanoPress/cardanopress/releases/tag/v1.20.0\nv1.21.0\nhttps://github.com/CardanoPress/cardanopress/releases/tag/v1.21.0\nv1.22.0\nhttps://github.com/CardanoPress/cardanopress/releases/tag/v1.22.0\n\nClose Out Report\nhttps://cardanopress.io/cardanopress-security-audit-close-out-report/\nhttps://docs.google.com/document/d/1IZW68YG5f2M8zq2fmmFtgA_TqxwtxJ8v374oPk4OLjg/edit?usp=sharing\n\nClose Out Video\nhttps://youtu.be/4gAHKWQHtV8",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 18
+    }
+  ]
+}

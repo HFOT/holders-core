@@ -1,0 +1,60 @@
+{
+  "title": "Hydra-Point-of-Sale: Accept ADA, CNTs in Retail & Invoicing",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25000,
+      "promise": "Finalize requirements and feature set for Hydra Point-of-Sale.\nPrepare technical architecture and data flow diagrams.\nSet up GitHub repository with initial MIT license and contribution guidelines.\nConfirm integration approach for Hydra and Layer 1 fallback.",
+      "criteria": "Complete and reviewed requirements document outlining full Hydra Point-of-Sale feature set.\nTechnical architecture and data flow diagrams\nPublic GitHub repository created with MIT license, contribution guidelines, and initial README.\nDocumented integration plan for Hydra layer-2 and Layer 1 fallback",
+      "report": "A. Output\nFinalize requirements and feature set for Hydra Point-of-Sale\nAcceptance criteria:\nA complete and reviewed requirements document outlining the full Hydra Point-of-Sale feature set, including PoS, invoicing, ADA/CNT support, non-custodial design, Hydra integration, and Layer 1 fallback.\nEvidence:\nRequirements specification document published in the public GitHub repository:\nhttps://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/blob/main/Hydra_Point-of-Sale_(PoS)__Invoicing_-_Requirements_Specification_Document.pdf\nB. Output\nPrepare technical architecture and data flow diagrams\nAcceptance criteria:\nTechnical architecture and data flow diagrams that clearly describe system components, payment flows, Hydra Layer-2 operation, Layer 1 fallback, invoice lifecycle, and PoS checkout flows.\nEvidence:\nTechnical architecture and design document published in the public GitHub repository:\nhttps://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/blob/main/Hydra_Point-of-Sale_(PoS)__Invoicing_Technical_architecture_and_design.pdf\nC. Output\nConfirm integration approach for Hydra and Layer 1 fallback\nAcceptance criteria:\nA documented and reviewed integration plan explaining how Hydra Layer-2 payments are handled, how fallback to Cardano Layer 1 is triggered, and how payment state is managed without breaking merchant workflows.\nEvidence:\nHydra and Layer 1 integration approach documented within the technical architecture and design document:\nhttps://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/blob/main/Hydra_Point-of-Sale_(PoS)__Invoicing_Technical_architecture_and_design.pdf\nD. Output\nSet up public GitHub repository with MIT license and contribution guidelines\nAcceptance criteria:\nA public GitHub repository containing an MIT license, contribution guidelines, and initial project documentation.\nEvidence:\nPublic GitHub repository showing MIT license, contribution guidelines,",
+      "kinds": [
+        "code"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 25000,
+      "promise": "Implement PoS interface (retail & tablet-optimized).\nBuild invoice generation and tracking system (ADA/CNT).\nIntegrate wallet connection\nDevelop API endpoints for payment requests and invoice data.",
+      "criteria": "Payments can be initiated, sent, and confirmed on Cardano Layer 1.\nInvoices can be created, updated, and exported to excel and PDF formats.\nUser Interface tested on mobile, tablet, and desktop for resposiveness.",
+      "report": "A. PoS interface (retail & tablet-optimized)\nAcceptance criteria: UI tested across mobile, tablet, and desktop for responsiveness and retail usability.\nEvidence:\n・UI implementation: merchant-pos/ (Next.js), e.g. layout and modals under\n・https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/tree/main/merchant-pos/src\n・Responsive / device handling: e.g. https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/blob/main/merchant-pos/src/hooks/use-device-type.tsx\n・Narrative in docs: FEATURES_AND_DEVELOPMENT.md and README.md (repo links above) describe the merchant UI stack; reviewers can validate layouts at common breakpoints in the deployed app or locally per the run instructions in those docs.\n\nB. Invoice generation and tracking (ADA/CNT)\nAcceptance criteria: Invoices created, updated, exported as Excel and PDF.\nEvidence:\n・Backend service: https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/tree/main/invoice-backend\n・CRUD + exports (routes and store): under invoice-backend/src/ (see FEATURES_AND_DEVELOPMENT.md for explicit route list and curl examples).\n・Proxy from PoS: https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/tree/main/merchant-pos/src/pages/api/invoices\n\nC. Wallet connection integration\nAcceptance criteria: Payments initiated, sent, and confirmed on Cardano Layer 1 via connected wallets.\nEvidence:\n・CIP-30 via Mesh (connect + pay):https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/tree/main/merchant-pos/src/components/mesh\n・MeshWalletConnect.tsx, PayWithWalletButton.tsx, dynamic-mesh.tsx\n・Written proof in doc: wallet + payment section in FEATURES_AND_DEVELOPMENT.md.\n\nD. API endpoints for payment requests and invoice data\nAcceptance criteria: Backend APIs support creation, retrieval, and processing of payment requests and invoice data for PoS operations.\nEvidence:\n・Invoice REST API",
+      "kinds": [
+        "code"
+      ],
+      "links": 20,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "Deploy Hydra head for instant ADA/CNT settlement.\nImplement hybrid mode for L1/L2 fallback.\nRun merchant pilot with at least 2 test environments.\nCapture transaction speed, stability, and UX feedback.",
+      "criteria": "Hydra payment processing works reliably in testnet and mainnet pilots.\nFallback to Layer 1 works without breaking merchant flow when L2 is unavailable.\nMerchant Pilot feedback is collected and documented.",
+      "report": "A. Output: Deployed Hydra head for instant ADA/CNT settlement with full merchant and customer payment flows.\nAcceptance criteria: Hydra payment processing works reliably in testnet and mainnet pilots. The system routes payments through Hydra L2 state channels with ~380ms confirmation time, handling 104 L2 payments during the pilot period with a 94.2% success rate.\nEvidence:\n・Hydra L2 integration source code: https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/tree/main/merchant-pos/src/server/hydra\n・Merchant dashboard (payment intent creation): https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/blob/main/merchant-pos/src/pages/merchant.tsx\n・Customer payment page (Hydra L2 checkout): https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/blob/main/merchant-pos/src/pages/customer.tsx\n・Merchant-side demo video: https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/blob/main/docs/demo-videos/05-merchant-hydra-intent-flow.mp4\n・Customer-side demo video: https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/blob/main/docs/demo-videos/06-customer-hydra-payment.mp4\n\nB. Output: Implemented hybrid L1/L2 fallback mode ensuring uninterrupted merchant operations when Hydra head is unavailable.\nAcceptance criteria: Fallback to Layer 1 works without breaking merchant flow when L2 is unavailable. During the pilot, 6 automatic fallback events occurred — all handled transparently without merchant intervention. The smart routing layer selects L2 when the Hydra head is Open and automatically falls back to L1 on-chain settlement otherwise.\nEvidence:\n・Payment router with settlement layer selection and fallback logic: https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/blob/main/merchant-pos/src/server/hydra/payment-router.ts\n・Hydra head facade with WebSocket reconnection: http",
+      "kinds": [
+        "code"
+      ],
+      "links": 34,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 20000,
+      "promise": "Mainnet release of Hydra Point-of-Sale under MIT License.\nPublish full deployment and integration documentation.\nHost final community demo.\nDeliver final report including adoption metrics and next steps.",
+      "criteria": "Mainnet-ready code uploaded to Github, downloadable and installable by the public.\nDocumentation and setup guide completed and hosted publicly in gitbook\nDocumented Feedback from launch event attendees.",
+      "report": "A. Output: Mainnet release of Hydra Point-of-Sale under MIT License — a self-hosted, open-source point-of-sale + invoicing toolkit that accepts ADA and Cardano Native Tokens (CNTs) with Hydra Layer-2 settlement on Cardano mainnet. Real ADA, real Hydra heads, real CIP-30 wallets. Mainnet-ready code is downloadable + installable by the public via tagged GitHub Releases and a one-shot docker compose stack.\nAcceptance criteria: Mainnet-ready code uploaded to GitHub, downloadable and installable by the public.\nEvidence:\n・v1.0.0 release (mainnet baseline): https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/releases/tag/v1.0.0\n・v2.0.0 release (hybrid-custody mainnet rewrite — better retail customer + business experience): https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/releases/tag/v2.0.0\n・MIT License: https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/blob/main/LICENSE\n・One-shot mainnet docker compose stack: https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/blob/main/docker/docker-compose.mainnet.yml\n\nB. Output: Full deployment and integration documentation — a publicly hosted documentation site plus a complete in-repo ops handbook (mainnet deployment, key custody, incident playbook, --deposit-period tuning) and the hybrid-custody architecture write-up.\nAcceptance criteria: Documentation and setup guide completed and hosted publicly.\nEvidence:\n・Public documentation site (GitHub Pages): https://trivolve-tech.github.io/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/\n・Mainnet deployment guide: https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/blob/main/docs/ops/mainnet-deployment.md\n・Hybrid-custody architecture: https://github.com/Trivolve-Tech/Hydra-Point-of-Sale-Accept-ADA-CNTs-in-Retail-Invoicing/blob/main/docs/architecture/hybrid-custody.md\n・Key custody policy: https://g",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 36,
+      "cut": true
+    }
+  ]
+}

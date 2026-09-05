@@ -1,0 +1,46 @@
+{
+  "title": "SPO Community Polling platform",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 9000,
+      "promise": "Define the requirements for the extended functionality to track staking duration and staking amount to assign snapshot voting power based off these attributes.\nDetailed requirements document outlining the necessary modifications and additions for tracking staking duration. The result will bring a clear understanding of the technical requirements and scope for extending the functionality of the Clarity platform.\nTechnical specification document describing the implementation details, integration process, and any additional dependencies or considerations. This will serve as a blueprint for the development and integration of the proposed features.",
+      "criteria": "Develop a technical specification document outlining the implementation details and integration process.\nA well-defined technical roadmap that guides the development and implementation of the extended functionality.",
+      "report": "Hi guys, \nThank you for your patience on us delivering this feature. We are working on closing out other outstanding proposals very soon. We used the technical blueprint I submitted a while in order to implement the feature, so I am including details below.\nThe document outlines our research on what chain indexer we can use to get the correct data. (This transition has already happened, we are using DB sync because it provides all the data needed to have SPO polling)\nNext we are writing an HTTP API server to link up with the PostgreSQL database instance that db-sync is using so we can extract delegated ADA amount and delegation length.\nThen we integrate it with the frontend by allowing an organization creator to choose stake pool delegation as an option to calculate voting power.\nThen we will extend our voting power cloud job that runs every minute to also use the HTTP API server described in the document to look up relevant stake history.\nHere is the technical specification again: https://docs.google.com/document/d/1FQ4Tgmpju0LiEaiEnbfcI2WiOigLfLh6YHO-sDJMPSo/edit?usp=sharing\nHere is a video run-through of how it works: https://youtu.be/AgsBUTFlPEA\nAlso, here is a screenshot of the wallet so you can see the delegation status: https://imgur.com/a/0nBRUrX",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 9000,
+      "promise": "A chain indexer to track delegation status and duration to specific stake pools. This will likely be in a testnet environment.\nThis milestone will also mark the new UI/UX designs that utilize the chain indexer to allow communities to assign voting power based off delegation status and duration.",
+      "criteria": "Showcase the ability for the new chain indexer to track a wallets delegation status and duration.\nThe ability to create utility from this chain indexer as a non technical user by utilizing a front end interface in order to create a community where voting weight is determined through the use (in part or in full) from this chain indexer.",
+      "report": "Hi reviewers! After a very busy period, we have finally got around to implementing this feature. We have created the chain indexer to track delegation status and duration and we have integrated this chain indexer to our front end!\nHere is a video run-through of how it works: https://youtu.be/AgsBUTFlPEA\nAlso, here is a screenshot of the wallet so you can see the delegation status: https://imgur.com/a/0nBRUrX\nWe will begin to gather feedback in order to complete the last milestone!\nThanks",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 12000,
+      "promise": "Utilize the new chain indexer within the front end of the Clarity protocol by enabling organization created on the protocol to create organization where voting power can be calculated based off delegation amount and delegation duration.\nProvide detailed documentation along with this new feature.\nWe will also work to identify and engage pilot SPO communities by running twitter spaces, reaching out to SPOs, and more!\nWe will make it easy for SPOs to sign up to pilot the product and create spaces and forms for SPOs to provide feedback.\nMore specifically, in order to work with SPOs we will:\n・Select a few SPO communities to participate in the pilot phase.\n・Collaborate with the selected SPO communities to integrate the extended functionality into their operations.\n・Monitor and gather feedback from SPOs and delegators during the pilot phase.\n・Iterate and refine the extended functionality based on the feedback received.",
+      "criteria": "The ability to create an organization and participate in an organization where stake delegation amount and duration can be used to grant influence to members within a community from a frontend interface.\nPrepare comprehensive documentation and user guides explaining the extended functionality.\nCreate tutorials and step-by-step instructions for SPOs to implement the extended functionality.\nFunctional extended functionality integrated into the testnet for pilot testing.\nLaunch pilot with several SPO communities",
+      "report": "Hey guys, appreciate the feedback on how to do it properly, this should cover everything you need/want.\nFeedback compiled into a report: https://docs.google.com/document/d/1biYQwToP4bMjW1haWE7K61ITHRMM_ZQicdQD8PsVreg/edit?usp=sharing \nDirect Evidence of the Pilot phase with Several SPO Communties: https://docs.google.com/presentation/d/1uTis8x0rnqV5JSVj5AqHZg50aB8WRuZQOtmf37udVjc/edit?usp=sharing \nClose out Video: https://www.youtube.com/watch?v=1cOrsHP75A4 \nLink to the tool: https://www.clarity.vote/ \nLink to PDF Version of the Close out report: https://docsend.com/view/g3ich93aw4mdpkdt \nStep by step instructions of setting up this new functionality: \n・Go to clarity.vote\n・login using a Cardano Wallet\n・create organization\n・go to governance tab\n・go to governance setting tab\n・Scroll down to vote power calculations, click ADD\n・That will take you to a page to create a new power calculation\n・click the edit marker in the top right\n・GIve it a name probably \"X Pool Delegation\"\n・Give it a description probably \"This voting power calculation grants influence to people who stake to the X pool.\"\n・click stake pool as calculation type\n・Enter your stake poolid\n・choose what scale you want the power calculated on, linear works\n・add a time bonus if you want, you can give multipliers for anyone staking over a certain number of epochs",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

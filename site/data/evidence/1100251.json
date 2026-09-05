@@ -1,0 +1,46 @@
+{
+  "title": "Rust SDK for CardanoBI API",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 5985,
+      "promise": "Activities:\nProject initiation, including defining the scope and objectives (All 3 CardanoBI Domain will be covered: Core, Analytics, Partner)\nGathering detailed technical requirements for the SDK (starting point being our Javascript SDK).\nCreating a comprehensive SDK architecture and design plan.\nSetting up the Python development environment with necessary tools and libraries.",
+      "criteria": "A well-documented project plan with clear objectives and scope. (Github Project setup: tasks, milestones, roadmap, priority board)\nA design document detailing the SDK's architecture, modules, and interfaces, approved by the technical team. (OpenAPI spec)\nA functional development environment specifically configured for the project. (Rust environment)",
+      "report": "Hi Team, \nPlease find in the link below, the .pptx document detailing the evidence of milestone completion of M1:\nhttps://github.com/cardanobi/ProjectCatalyst/tree/master/Fund11/1100251-Rust-SDK/M1\nBest,\nThomas",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 5985,
+      "promise": "Activities:\nDeveloping the core functionalities of the SDK, such as API connectors and data processing utilities.\nIntegrating the SDK with the CardanoBI API.",
+      "criteria": "Completion of core SDK modules with high-quality code and adherence to design specifications.",
+      "report": "Hi Team,\nApologies, I've now open the access to the link below!\nPlease find in the link below, the Google Doc detailing the evidences of milestone completion for M2:\nhttps://docs.google.com/presentation/d/1oEILuP7u-mHIs9VG38SoGxloAAFvHRhr-ZWsGjzRWh4/edit?usp=sharing\nBest,\nThomas",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 7980,
+      "promise": "Activities:\nConducting extensive testing, including integration, and performance tests.\nCreating comprehensive documentation, including setup guides and API references.\nProviding real-world usage examples.\nReleasing a beta version for community feedback.\nLaunching the official version of the SDK.\nAs part of the Launch Strategy. make clear to end-users where to find the API documentation, API tutorials and the channels to find support and provide feedback (github for pull request, Twitter and Email for specific questions).\nProducing the Closing report and video.",
+      "criteria": "Successful integration with CardanoBI API, demonstrated through rigorous testing.\nAll tests passing with high code coverage and resolved issues.\nComplete and accessible documentation for various user levels (docs.cardanobi.io).\nEstablished channels for end-user support and feedback as well as general updates (e.g. docs.cardanobi.io/blog/ + twitter posts + team emails + github for pull requests)\nPositive community feedback and addressed concerns from the beta release.\nStable and well-communicated official release.\nThe Closing Report and Video have been produced.",
+      "report": "Hi Team,\nPlease find below the link to our Project Close-out Report:\nhttps://docs.google.com/document/d/17zKYOF4ZWNrnjOIe2MgEG61gy9_7Blgso_Jy5xsv5Es/edit?usp=sharing\nPlease find below the link to our Project Close-out Video:\nhttps://youtu.be/_oi5KfNiFn8\nFurther to the PCR here are the specific evidences to validate the Acceptance Criteria as per the Final Milestone:\n1.Integration test results (scripts and outputs)\n scripts: https://github.com/cardanobi/cardanobi-rust/tree/master/tests\n output: https://github.com/cardanobi/cardanobi-rust/tree/master/tests/output\n2.Link to documentation (docs.cardanobi.io) shows Rust code samples\n example: https://docs.cardanobi.io/docs/core-domain/Accounts/\n3.Link to the github repository for the Rust SDK\n https://github.com/cardanobi/cardanobi-rust/tree/master\n4.Link to tutorial describing how to use the SDK.\n https://docs.cardanobi.io/docs/tutorials/rust-sdk-tutorial\n5.Summary report of the number of issues/PR raised:\nThis can be directly viewed on Github here: https://github.com/cardanobi/cardanobi-rust/pulls\nAs you can see, there are no PRs at the moment. \n6.Communication to our community please find below dedicated blogs:\n https://docs.cardanobi.io/blog/python-rust-sdks\n https://docs.cardanobi.io/blog/python-rust-tutorials\nFurthermore, following the feedback from approvers, about the lack of evidence backing our communication to our community, please find below a post on X we did today:\nhttps://twitter.com/CardanoBI/status/1825469937952928081\nAs mentioned above, we haven't had any feedback from external developers nor PR being raised yet to share.\nBut I can share with you feedback emails from some of our beta testers who were tasked to test the Rust tutorial and to glance over the code and ideally try the SDK for themselves.\nTo that end, I've added a section in our PCR called \"Feedback received by beta testers\" with a few emails we got back out of the 9 developers we asked for their \"free\" help.\nAgain this beta testing was on a",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 22,
+      "cut": true
+    }
+  ]
+}

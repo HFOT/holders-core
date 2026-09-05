@@ -1,0 +1,45 @@
+{
+  "title": "CIP 102 v2 - New Royalty Functionality",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 5000,
+      "promise": "The results of reaching out the the community and researching royalty approaches on other chains, compiled into a brief report for easy review.\nVersion 2 of the CIP-102 standard, including intra-collection royalties, backwards-compatibility and improvements gathered from community feedback.",
+      "criteria": "The research report should have input from Cardano community members and observations on other chains, as well as decisions made on which improvements to include.\nVersion 2 of the CIP-102 standard should have passed review by the CIP standards committee and been merged into the master branch of the CIPs repository: https://github.com/cardano-foundation/CIPs",
+      "report": "A. Output: Ecosystem & community research, compiled into a report\nAcceptance criteria: Must have input from community, observations on other chains, decisions on improvements to be made.\nEvidence: \nResearch Report Published here: https://github.com/SamDelaney/CIP_102_Reference/blob/main/v2%20Research%20Report.pdf\nGoogle Drive version: https://drive.google.com/file/d/1YOSdhVP150wF4dUMZ2QcFAFZej-yDKxL/view?usp=sharing\nB. Output: Updated CIP 102 standard w/ intra-collection royalties, backwards compatibility, and community feedback results (broadly available tool calls, CIP-88 integration)\nAcceptance criteria: Version 2 passed review & merged.\nEvidence: \nPR: https://github.com/cardano-foundation/CIPs/pull/1177. \nResulting subdirectory: https://github.com/cardano-foundation/CIPs/tree/master/CIP-0102.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 5000,
+      "promise": "Updates all three core components of reference implementation stored in the CIP 102 folder in the CIPs repository:\n・Minting a CIP 102 compliant NFT with royalties\n・Reading a CIP 102 NFT’s royalties off chain\n・Reading and validating against CIP 102 NFT royalties on chain\n\nsuch that they comply with and demonstrate the new features outlined in CIP-102 v2.",
+      "criteria": "The pull request for the reference implementation has been approved and merged to master.",
+      "report": "A. Output: Minting a CIP 102 compliant NFT with royalties\nAcceptance criteria: The pull request for the reference implementation has been approved and merged to master.\nEvidence: https://github.com/SamDelaney/CIP_102_Reference/pull/2 has been merged to main. It includes the 'mint-collection' command here which lets you mint a collection with v2 royalty flags.\nMore information on how to test this can be found in the README. \nB. Output: Reading a CIP 102 NFT’s royalties off chain\nAcceptance criteria: The pull request for the reference implementation has been approved and merged to master.\nEvidence: https://github.com/SamDelaney/CIP_102_Reference/pull/2 has been merged to main. It includes the 'get-royalties' command here which reads & prints a royalty datum based on its collection and v2 royalty flag.\nMore information on how to test this can be found in the README as well. \nC. Output: Reading and validating against CIP 102 NFT royalties on chain\nAcceptance criteria: The pull request for the reference implementation has been approved and merged to master.\nEvidence: https://github.com/SamDelaney/CIP_102_Reference/pull/2 has been merged to main. It includes an update to the onchain validators' royalty parsing here, and tests here confirming the updated functionality.\nMore information on this can be found in the onchain-reference README.",
+      "kinds": [
+        "code"
+      ],
+      "links": 13
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 7412,
+      "promise": "Update 3-5 existing open-source libraries which support CIP-102 to also support CIP-102 v2. These libraries should be the same ones as selected as part of the funded work for CIP-102 v1 unless a switch is requested by the community.\nThis should include one or more of the following:\n・Minting Implementation\n・Offchain Reading Implementation\n・Onchain Validation Implementation\n\nProject close out report & video.",
+      "criteria": "The PR to each selected library has been made, approved & merged.\nClose out assets (report & video) have been submitted to the catalyst team.",
+      "report": "A. Output: Update 3-5 existing open-source libraries which support CIP-102 to also support CIP-102 v2. These libraries should be the same ones as selected as part of the funded work for CIP-102 v1 unless a switch is requested by the community.\nAcceptance criteria: The PR to each selected library has been made, approved & merged.\nEvidence:\n・Mintun.io: Mintun implements CIP-88 as consistent with the CIP-102 v2 implementation. The source code for CIP-88 specifically can be found open-source here.\n・Python Implementation: Finalized contributions to PyCardano to capture the Python developer community.\n・Prerequisite: CIP-67 Support - fixed in: https://github.com/theeldermillenial/pycardano/pull/4\n・CIP-102 v2 support added in: https://github.com/bloxbean/cardano-client-lib/pull/627\n・Java Implementation: Integrated support into the cardano-client-lib to enable Java and JVM-based developers. \n・Prerequisite: Gradle v8.0 - fixed in: https://github.com/Python-Cardano/pycardano/pull/490\n・CIP-102 v2 support added in: https://github.com/Python-Cardano/pycardano/pull/491\n\nB. Output: Project Closeout Video\nAcceptance criteria: Close out assets (report & video) have been submitted to the catalyst team.\nEvidence: https://youtu.be/wHvybIGOnTQ\nC. Output: Project Closeout Report\nAcceptance criteria: Close out assets (report & video) have been submitted to the catalyst team.\nEvidence: https://docs.google.com/document/d/1R7Kvwq0Ij_SrAndeLiEnzRpf3sbt9_uBHIv4Oo6haco/edit?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 16
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "各システムコンポーネントに関連する調査、課題、機会をまとめた詳細なレポート。 以下が含まれます:\n・研究・ベストプラクティスの現状に応じたシステム要件\n・現行プロセスに関するコミュニティフィードバック\n・提案で決定される量的および量的影響メトリックのベースラインを確立する:\n・提案評価とプロジェクトアウトカムの連携\n・レビューの品質\n・リビューアエンゲージメント\n・プロジェクト成功率\n・コミュニティ入力で最大20,000 ADAの割り当て.",
+      "criteria": "・システムコンポーネントの検索: ピアレビュープロセス、評判のスコアリングメカニズム、インセンティブ戦略、インパクト評価方法に関する研究成果の包括的なドキュメント。\n・提案検討の要約:触媒内の提案検討制度の具体的なニーズと基準の文書化\n・コミュニティエンゲージメントレポート:提案レビューシステムに関する触媒コミュニティから収集されたフィードバックと提案のまとめ.",
+      "report": "1) 主要な文書、を含む:\n・コミュニティレポート\n・研究報告\n・触媒の要求\n\nhttps://docs.google.com/document/d/15mImi5Pd6PR5vKqgmruqnJnqugMAwfeR7dvmAcgxbA/edit?usp=sharing\n2) ベースライン変数:\nhttps://docs.google.com/document/d/1jrB6gBQVskrck b6iFX-hp5Mtf1Qe-efyKdzjrjIcuQ/edit?usp=sharing\n3) Deworkの賞金板:\nhttps://app.dework.xyz/i/1Jho61Dx2xMN3Ia830Fzgh\n4) 弊社ホームページにも掲載しております。\nhttps://docs.trustlevel.io/received-grants/cardano"
+    },
+    {
+      "no": 2,
+      "promise": "・システム全体の視覚的・機能的な青写真を提供する総合アーキテクチャ図。 これには、提案書に記載されているように、次のレイヤーが含まれます。\n・プレゼンテーションレイヤー\n・アプリケーションレイヤー\n・データレイヤー\n・統合層\n・データフロー図やインターフェイス設計など、各コンポーネントの設計文書を詳細に記述。\n・15,000 ADA のコミュニティ入力への賞金.",
+      "criteria": "・包括的なシステム仕様とアーキテクチャの文書。\n・ドメイン固有の専門知識、二段レビュー機構、パネルレビューを含むピアレビュープロセスのプロトコールにより、提案の評価品質を向上させます。\n・提案評価を計算し、査定評価を追跡し、高品質の貢献を報いるためのインセンティブシステムを開発する動的アルゴリズム。\n・客観的評価と主観的評価を組み合わせたインパクト評価の枠組み設計で、ファンドプロジェクトの現実的な有効性の全体的な視野を提供します.",
+      "report": "M2 POAの主な文書は次のとおりです。\nhttps://docs.google.com/document/d/135KbzyFkGZI8m-x9u4Cr-Vrn1vPY-niyTbkPZH-wKx0/edit?usp=sharing\n以下の章が含まれます。\n・工具全般の説明\n・建築文書:\n・ユーザーインターフェイス(Github上のモックアップを含む)\n・データレイヤー(Githubのデータフロー図を含む)\n・アプリケーションレイヤー(提案依頼・提案評価・評判スコアのデータモデルを含む)\n・統合レイヤー(Catalyst Explorer APIを含む)\n・追加機能(影響評価フレームワークを含む)\n\nレポートは、Gitbook ページでも利用可能です: https://docs.trustlevel.io/tools-and-apps/grant-review-tools\nコミュニティ貢献のためのDeWorkリンク:https://app.dework.xyz/i/3S26fC8fyNqK1AV5ceQt93"
+    },
+    {
+      "no": 3,
+      "promise": "・システムの各主要コンポーネントのフル機能試作\n・プロトタイプごとに詳細を記述し、プロトタイピングフェーズ中に発生した問題や課題を文書化した包括的なテストレポート.",
+      "criteria": "・プロトタイプ開発ドキュメント:コードリポジトリを含む各プロトタイプの開発プロセスの詳細な記録。\n・Functional Prototypes:各システムコンポーネントの展開可能なバージョン、内部テストの準備\n・試験報告書:試験結果に基づいて試作に行われた試験方法、結果、変更をまとめた文書.",
+      "report": "マイルストーン3のPOVは次のとおりです。\n✅ 完全に機能し、すでにプロトタイプをデプロイしました。\n・GitHubリポジトリのコードベースを完全なソースコードで公開:https://github.com/TrustLevel/Grant Review Tool\n・REST API および MongoDB の統合による強化バックエンドサービス\n・Next.js と Tailwind CSS で構築されたフロントエンド\n\n✅ 完全な用具の文書:\n・./docs/deployment/installation.md の詳細なセットアップマニュアル\n・./docs/developer-guide/api-reference.md すべてのシステムエンドポイントをカバーする\n・./docs/developer-guide/algorithms.mdモデルロジックのディテール\n・./docs/admin-guide/ユーザ管理\n\n✅のテストレポート:\n・ ./tests/README.md 5つのカテゴリと15以上のテストスクリプト\n・コア機能、認証、ワークフロー、データベース運用のカバレッジのテスト\n・実行手順で文書化されたテスト方法論\n\n完全なビデオ ツアー:\n・完全な Frontend デモ: https://drive.google.com/file/d/1ZG9 rA2tLk zLyCRn563YBM-NR0pDNPr/view?usp=sharing\n・コードとテスト ウォークスルー: https://drive.google.com/file/d/1--A4Mjupsb2sRiWCy qzv-2gvGVLjE7-/view?usp=sharing"
+    },
+    {
+      "no": 4,
+      "promise": "・Prototypes: 初期テストからのフィードバックに取り組むプロトタイプを再考。\n・コミュニティテストレポート:コミュニティテストからのフィードバックをまとめた詳細なレポート、ユーザビリティデータを分析し、さらなる改善を提案します。 これは、M1で説明したインパクトメトリックに関する定量的および定性的フィードバックを含みます。\n・コミュニティ貢献のための賞金プログラム:5,000 ADA",
+      "criteria": "・改良を組み込んだシステムプロトタイプを更新\n・ユーザーフィードバック、ユーザビリティの問題、およびパフォーマンスを詳述するコミュニティテストレポート.",
+      "report": "ディール MR,\n以下の文書には、ビデオ・ウォークスルーとすべてのドキュメントへのリンクを含む、すべての出力と証拠が含まれています。\n・https://docs.google.com/document/d/1MN qbeagPyRrk18iQE9DRFRxhdtXCf5SSgOuL0XSw0/edit?usp=sharing"
+    },
+    {
+      "no": 5,
+      "promise": "・Project Catalyst(またはCatalyst Voices)と統合する準備が整った完全運用システム。\n・今後の展開や関連するプロジェクトへの提言は、プロジェクトチームやステークホルダーの皆さまによく文書化・合意しなければなりません。\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・最終報告書は一般公開中:\n・プロジェクトの旅、成果、次のステップを想定\n・実施内容、統合結果、課題の遭遇、教習、今後の提言などを含む。\n・最終クローズアウト映像を一般公開\n・Project Catalyst(またはCatalyst Voices)と統合する準備が整った完全運用システム.",
+      "report": "コミュニティとの緊密なレポートを共有していただければ幸いです。\n・報告書へのリンク:1200193クローズアウトレポート\n・動画へのリンク:https://vimeo.com/1134645065?share=copy&fl=sv&fe=ci\n\n「Catalystとの統合」部分に関するMRに注意:\n統合部分は既に完了し、マイルストーン3で十分に文書化され、すでにマイルストーン4のコミュニティテストフェーズに住んでいました."
+    }
+  ]
+}

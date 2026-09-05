@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・デコードツールとレジストリの提案されたアーキテクチャを施す詳細な設計文書。\n・レジストリに含まれている datum 定義のリスト。\n・包括的なドキュメントで機能的なCBORデコードライブラリ。\n・コア機能に関するユニットテスト.",
+      "criteria": "・デザイン文書は、解読ツールとレジストリのアーキテクチャを明らかにし、オープンソースのGitHubリポジトリにあります。\n・レジストリに含まれている少なくとも10 datumの定義のリスト。\n・コードが機能し、文書化されます。\n・全ユニットテストパス.",
+      "report": "10Feb:ReadmeはRustの取付けと更新されました\n・オープンソースのGitHubリポジトリにあるデザイン文書へのリンク(ドキュメントリンク更新)\n・現在の建築文書:https://github.com/WingRiders/datum-explorer/blob/main/docs/architecture.md\n・CDDL の datum のスキーマの設計文書: https://github.com/WingRiders/datum-explorer/blob/main/docs/cddlDatumSchemaDesign.md\n・研究結果 doc: https://github.com/WingRiders/datum-explorer/blob/main/docs/research.md\n・設計文書:マイルストーンの要件によると、設計文書は、デコードツールとレジストリの提案されたアーキテクチャを概説する必要があります。 Milestone 1は、主にCBORデコードライブラリに焦点を当てているため、設計文書は現在、このライブラリに関連するアーキテクチャと機能を中心に、プロジェクトの現在の状態を反映しています。 今後、設計文書を拡張し、バックエンド、フロントエンド、レジストリなどのコンポーネントの詳細な要件と仕様をプロジェクトの一部として開発する予定です。\n・オープンソース GitHub リポジトリの datum 定義の一覧へのリンク: https://github.com/WingRiders/datum-explorer/tree/main/lib/test/fixtures/cddl\n・ドキュメントコードを含むオープンソースGitHubリポジトリへのリンク:https://github.com/WingRiders/datum-explorer\n・オープンソースのGitHubリポジトリにあるテスト結果へのリンク:https://github.com/WingRiders/datum-explorer/actions/runs/13053934975/job/36420272193\n・ライブラリが構造化されたオブジェクトにサンプル CBOR の datum をデコードし、テスト スイートの実行方法とすべてのテスト パスをデコードする方法のビデオ デモ:\n・ダウンロード用動画ファイル:https://github.com/WingRiders/datum-explorer/tree/main/catalyst-evidence\n・CBORデコード:https://www.youtube.com/watch?v=TNjW lehJYM\n・アップデートテスト通過: https://www.youtube.com/watch?v=e6i6kpZxK3s (動画・リンク更新)"
+    },
+    {
+      "no": 2,
+      "promise": "・レジストリを含む GitHub リポジトリには、少なくとも 10 個の井戸文書化された datum の定義があります。\n・GitHubリポジトリからレジストリデータを取得するためのバックエンドコード\n・GitHubリポジトリから取得された、すべてのレジストリデータをフロントエンドおよび第三者に提供できる単一のAPIエンドポイント\n・レジストリの使用方法を説明するREADMEファイルで、新しい定義に貢献します.",
+      "criteria": "・リポジトリは一般にアクセス可能で、少なくとも10ダタム定義が含まれている。\n・GitHubリポジトリからデータを取得するバックエンドコードは機能的です。\n・API エンドポイントは動作しており、レスポンスには GitHub リポジトリの定義から、Milstone 1 設計文書で定義されています。\n・READMEファイルにはセクションがあります\n・レジストリの使い方\n・マイルストーン1のデザイン文書で定義されている形式や構造に関するガイドラインなど、新しい定義に貢献する方法.",
+      "report": "・レジストリとその定義を含む公開GitHubリポジトリへのリンク: https://github.com/WingRiders/cardano-datum-registry\n・バックエンドコードを含むオープンソースのGitHubリポジトリへのリンク:https://github.com/WingRiders/datum-explorer(バックエンドコードはapp/フォルダにあります。例:エンドポイントはapp/src/app/api/フォルダで定義されています)\n・Milstone 1デザインドキュメントで定義されたフォーマットでGitHubリポジトリの定義を含むエンドポイント応答のスクリーンショット https://github.com/WingRiders/datum-explorer/blob/main/catalyst-evidence/milestone-2-endpoints-reponses.png\n・レポジトリ内のREADMEファイルへのリンク、指示とコントリビューションガイドラインを示します。 https://github.com/WingRiders/cardano-datum-registry/blob/main/README.md"
+    },
+    {
+      "no": 3,
+      "promise": "・フロントエンドの特徴:\n・バックエンドエンドポイントから取得する表示スキーマ\n・入力したCBORエンコードデータがスキーマのサブセットに応じて有効である場合、提案されたスキーマのみ(またはハイライト/優先順位付け)\n・利用可能なスキーマのリストからスキーマを選択するユーザ\n・UI(例:編集可能なtextarea)でスキーマをローカルに定義または編集できるユーザー\n・選択したまたはローカル定義されたスキーマに応じて、CBORデータをデコードする\n・公開アクセスとテストのためのツールをホスティングするライブウェブサイト。\n・フロントエンドとバックエンドAPIエンドポイント間のインタラクションを検証するための統合テスト\n・フロントエンドツールの使い方を説明するREADMEファイル(スキーマの定義や編集方法、CBORデータのデコード方法など)\n・スキーマ選択、ローカルスキーマ定義、CBORデコードなど、フロントエンドツールの主要機能を実証するショートビデオ",
+      "criteria": "・コードはオープンソースのGitHubリポジトリにあります。\n・選択したスキーマを使用したCBORデータの読み取り可能な表現を表示\n・ご利用者様:\n・バックエンドから取得するスキーマの選択\n・インターフェイス(例、編集可能なtextarea、等)を介して、スキーマをローカルで定義または編集する\n・利用可能なデータに基づくスキーマの提案を受け入れる\n・ライブWebサイトにアクセスして展開したアプリケーションを使用することができます。\n・インテグレーションテストでは、フロントエンドとバックエンドAPIエンドポイント間のインタラクションを検証\n・GitHubリポジトリにドキュメントが含まれているため、以下の最小要件を満たします",
+      "report": "親愛なるレビュー担当者、コメントに応じてプロジェクトを更新しました。\n・アプリが「ダタムを解析する際のエラー」が表示された場合のバグを修正\n・マニュアルテストのシナリオの詳細な定義を追加しました: https://github.com/WingRiders/datum-explorer/blob/main/manual-tests/datum-explorer.feature\n・ datum を解析するためのマニュアルボタンを持たせると良いユーザー体験ではないと思います。 ユーザーは、常にクリップボードからCBOR値を貼り付け、手動で入力しないでください。 以前のすべての結果は、入力フィールドの最新の CBOR 値だけを解析しないと、アプリを改善しました。\n・アプリケーションはよく文書化され、ドキュメントフォルダ内のアーキテクチャ文書、ユーザーマニュアル、研究文書を見つけることができます。 https://github.com/WingRiders/datum-explorer/tree/main/docs\n\n証拠は次のとおりです。\n・オープンソース GitHub リポジトリ: https://github.com/WingRiders/datum-explorer\n・アプリのウェブサイトへのリンク:https://datum-explorer.wingriders.com/\n・試験:\n・自動テスト定義1: https://github.com/WingRiders/datum-explorer/tree/main/app/test\n・自動テスト定義 2: https://github.com/WingRiders/datum-explorer/tree/main/lib/test\n・自動テスト実行: https://github.com/WingRiders/datum-explorer/actions/runs/13965685841/job/39093985472 (「テスト」セクションを拡張して、すべての自動テストが正常に実行されたことを確認できます)\n・マニュアルテスト定義: https://github.com/WingRiders/datum-explorer/blob/main/manual-tests/datum-explorer.feature\n・マニュアルテストレポート:https://github.com/WingRiders/datum-explorer/blob/main/manual-tests/report.md\n・READMEファイル: https://github.com/WingRiders/datum-explorer/blob/main/README.md\n・アプリケーションマニュアル:https://github.com/WingRiders/datum-explorer/blob/main/docs/app-manual.md\n・建築文書:https://github.com/WingRiders/datum-explorer/blob/main/docs/architecture.md\n・チュートリアルとデモ動画:https://github.com/WingRiders/datum-explorer/blob/main/catalyst-evidence/milestone-3-video.mp4"
+    },
+    {
+      "no": 4,
+      "promise": "マーケティングレポート文書は、プロジェクト進捗に関するすべての更新、それらの更新とgithubリポジトリのフィードバック、主要な問題のリスト、それらの問題の修正をリストしています.",
+      "criteria": "マーケティングレポート文書には4つの章があります。\n・ソーシャルメディア投稿(Twitter、Discord、その他)の一覧(ビュー、いいね、シェア、コメントなど)\n・GitHub のフィードバック: リポジトリに受け取った投稿やフィードバックをリストします(どれも空)。\n・主な課題:大きな報告課題(不問)を損なう。\n・Issue Fixes: 報告された問題の解決をコミットするリンク(もしあれば空)。\n\n測定可能なマーケティングターゲット\n・通信チャンネル(Twitter、Discordなど)で5件以上投稿\n・投稿は、100ビュー/インテットの最小限の結合を達成する必要があります",
+      "report": "親愛なる査読者,\nあなたの建設的なフィードバックをありがとう。 提案を受け取り、それらに対処するためにいくつかの更新を行いました。\n新しいコミュニティの貢献\n新たなマーケティングキャンペーンを立ち上げ、メッセージングと可視性を高め、最初の3つの承認されたスキーマに対する5,000ドルのWRT報酬を含め、コミュニティから3つの新しいスキーマの投稿を成功させ、元のターゲットを満たします。 ご確認下さい。\n更新された証拠シート\n直接リンク改善\n提案したように、アプリケーションのインターフェイスとドキュメントを更新し、GitHubリポジトリとコントリビューションガイドへの直接リンクを含むようになりました。\nターゲットアウトリーチ\nリーチとエンゲージメントを高めるために、\n・クリアなCTAでTwitterコンテンツをシェア\n・Twitter&Telegramによる関連プロジェクトへのダイレクトメッセージ\n・CBORツールに関するエコシステム会話に従事\n\nわたしたちは、この取り組みは、有意義なコミュニティへの関与に対する当社の積極的な対応とコミットメントを発揮することを願っています."
+    },
+    {
+      "no": 5,
+      "promise": "・A 2/3 まとめ「Project Close-out Report」を書いています。\n・ショートビデオ「Project Close-out Video」.",
+      "criteria": "・「プロジェクトクローズアウトレポート」:\n\n・プロジェクト中に達成される主要なパフォーマンスインジケータ(KPI)をリストします。\n・レジストリ(最小10)に追加されたスキーマの数。\n・レジストリ(最小5)に代表されるユニークなプロジェクト(WingRidersなどのプロトコル)の数 - 実際の使用法を表す\n・コミュニティからの貢献件数(最低5件)\n・ソーシャルメディアのエンゲージメントメトリック(例、総投稿ビュー/インタラクションが100を超える)\n・KPIがどのように出会ったのか、なぜそうでなかったのかを説明します。\n・商品・サービスの次期計画を概説する。\n\n・「Project Close-out Video」のアウトライニング",
+      "report": "親愛なるレビュアー、私たちは、受諾基準で概説されているすべての必要な数字を含むプロジェクトクローズアウトレポートを更新しました。 更新されたレポートは、関連するすべてのプロジェクトリンクをご覧ください。\nプロジェクトクローズアウトレポートの更新:\nhttps://github.com/WingRiders/datum-explorer/blob/main/catalyst-evidence/project-close-out-report.pdf\nクローズアウトビデオへのリンク:\nhttps://youtu.be/p57vM1FDOxw\nその他の関連するプロジェクトソースまたは文書へのリンク:\n・アプリケーション\n・GitHubリポジトリ\n・READMEファイル\n・アプリケーションマニュアル\n・建築概要\n・シェマレジストリ\n・CDDL の datum のスキーマの設計文書\n・マニュアルテスト\n・動画ファイルへのリンク\n\n最高の点、\nウィングライダー"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "MLabs - Cardano DApp Schemas",
+  "ms": [
+    {
+      "no": 1,
+      "month": "4",
+      "cost": 23040,
+      "promise": "A report summarising user interviews and containing a qualitative analysis of the discovered use cases. \n\nAn architecture design document.\n\nA language specification document elaborating on the data type model features.\n\nA related work document comparing the proposed technology via a feature matrix with others in the same space.\n\nAn initial compiler implementation that performs some basic checks in accordance with the language specification.",
+      "criteria": "At least 3 users/projects have been interviewed about their desired use case for this technology.\n\nThe architecture design document is completed and available in the project repository.\n\nThe initial compiler implementation is completed, capturing SOME of the intended language semantics as described in Language Specification.",
+      "report": "In this link:\n\nhttps://github.com/mlabs-haskell/lambda-buffers/issues/2\n\nWe have provided links to the outputs outlined in our milestone document as well as the evidence described. \n\nIt should be considered our primary milestone document. Furthermore, the sublinks throughout this issue page should provide detail evidence as explained.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 40320,
+      "promise": "A configuration DSL for specifying domain data types.\n\nA compiler tool that outputs the interpreted configuration.\n\nA codegen module that takes in the interpreted configuration and outputs a \nHaskell+PlutusTx cabal project containing all the types and necessary typeclass wiring.\n\nA codegen module that takes in the interpreted configuration and outputs a \n\nPurescript+CTL Spago project containing all the types and necessary wiring.",
+      "criteria": "The generated Haskell+PlutusTx Cabal project can successfully be built.\n\nThe generated Purescript+CTL Spago project can successfully be built.\n\nAll the above codegen modules are reviewed and made available in the project repository",
+      "report": "Here, we provide a milestone report from our project GitHub page:\n\nhttps://github.com/mlabs-haskell/lambda-buffers/issues/45\n\nThe page includes a summary of all of our accomplishments this round as determined by our milestone document - including video demos of the three main deliverables.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 34560,
+      "promise": "A test suite checking for correct mapping from schema data types to PlutusData encodings against a known-good corpus of such mappings (golden tests).\n\nA test suite checking for roundtrip compatibility between codegened target environments.\n\nA modular and contract-based test suite architecture streamlining codegen testing compliance for any of the supported typeclasses.\n\nA document mapping the schema data types and typeclasses to their corresponding code-generated variants in the target environments.",
+      "criteria": "The test suites are passing for the Haskell+PlutusTx codegen module.\n\nThe test suites are passing for the Purescript+CTL codegen module.\n\nThe “Mappings” document is made available in the project repository.",
+      "report": "Milestone documentation is available here:\n\nhttps://github.com/mlabs-haskell/lambda-buffers/issues/89",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 17280,
+      "promise": "We will produce a system for easily sharing interfaces between languages which include the necessities required for development in Plutus and PlutusTx.\n\nThis project will generate code that integrates closely with target language/PAB environments, concretely Cardano Transaction Lib, PlutusTx, and Plutarch. Given that some of these projects are currently under active development, we anticipate that API breakages will be a common occurrence and we intend to bring respective development teams into a common social circle in order to organise for mutual evolution and growth.\n\nWe will adapt a project that uses Haskell/Plutarch for on-chain code and Haskell/PlutusTx for off-chain code. However, after Lambda Buffs project concludes, we will very likely be using it on other projects that do use Purescript/CTLA simple Plutus codebase can be created which demonstrates the capabilities for newcomers to work across multiple languages without interface/serialisation issues.\n\nA user will be able to specify types required in their smart contract and seamlessly share these types across at least 2 languages used in the cardano ecosystem.\n\nA demonstration video can be created to discuss the more robu",
+      "criteria": "Toolkit packages are available in a package repository (eg. Nixpkgs, Hackage)\n\nCardano dApp project maintains all the Plutus domain types in the configuration file and has fully equipped type libraries made available automatically via build environment integration tooling.",
+      "report": "Our closeout and proof of achievement documentation is available via the following links:\nhttps://github.com/mlabs-haskell/lambda-buffers/issues/90\nhttps://github.com/mlabs-haskell/lambda-buffers/issues/91\n\nAnd our closeout video is hosted on YouTube here:\nhttps://www.youtube.com/watch?v=Ig5SWNTx1TU",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3,
+      "cut": true
+    }
+  ]
+}

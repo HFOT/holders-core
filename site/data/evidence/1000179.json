@@ -1,0 +1,81 @@
+{
+  "title": "Sundae Labs Hydra Ledger-only Mode",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "An \"Architectural Decision Record\" (ADR) describing the planned feature work and needed refactoring to support it, informed by an exploratory proto-implementation in the code, and several rounds of back-and-forth discussion with the Hydra team.",
+      "criteria": "The ADR should meet all standards and approval by the Hydra team, be submitted as a PR, and merged, ready for implementation.",
+      "report": "Link to merged PR approved by the Hydra team: https://github.com/input-output-hk/hydra/pull/1012\nWhen viewing the PR, you can see the dialog between our team and the Hydra team as evidence of \"demonstrable back and forth with the hydra team.\"",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 100000,
+      "promise": "An initial proof of concept implementation of a \"Ledger only mode\"",
+      "criteria": "The proof of concept implementation must exist in a public, open source branch of a fork of the Hydra repository for anyone to try. You must be able to download and run the ledger with no connection to a cardano-node, and no need to \"open\" a hydra head. You must be able to submit transactions over the API. Valid transactions must be accepted, and invalid transactions rejected. Code quality is not a factor or sign-off from the Hydra team is not required at this stage.",
+      "report": "We've compiled a complete walkthrough video on our YT channel here: https://www.youtube.com/watch?v=ijLsqCnskTk\nIn the description of the video, we include instructions for accessing the code branch, as well as running a Hydra node in \"offline\" mode.\nYou can also find a more detailed installation description here: https://docs.google.com/document/d/1A7ZoLcvpRtkiZpCAdbGSw4VU5Mdb_JciuME9qxGiLMY/edit?usp=sharing",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 176400,
+      "promise": "The ledger-only mode code has been cleaned up, code reviewed by the hydra team, and any initial feedback incorporated, and then merged into the main branch.",
+      "criteria": "All Hydra team feedback has been addressed, and the PR has been merged to the main branch, or another target branch at the request of the Hydra team.",
+      "report": "Link to merged PR: https://github.com/input-output-hk/hydra/pull/1118\nLink to public video: https://www.youtube.com/watch?v=ijLsqCnskTk",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 75000,
+      "promise": "A report summarizing initial feedback from at least one potential adopter of the ledger only mode, and their experience running and using the ledger only hydra node.",
+      "criteria": "At least one user not at Sundae Labs or the Hydra team has used the ledger only mode and been Interviewed by Sundae Labs. Sundae Labs produces and publishes a small report summarizing the feedback from using the node, including how easy it was to start up the node, how resource intensive it was without the cardano node, how the API for submitting transactions was, and how useful this might be in other projects. The report will include a summary of which pieces of feedback are most worthwhile to tackle for the final milestone and have approval from the Hydra team.",
+      "report": "Link to report: https://docs.google.com/document/d/144VD-Ahf-B5fXqBtjcc7l5Bln-E-i59OAKXfTdvQkno/edit#heading=h.delpb5il6uj4",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 100000,
+      "promise": "A PR addressing the feedback from the previous milestone, subject to the Hydra Teams approval.",
+      "criteria": "The PR addresses the feedback from the previous milestone, has all code review issues addressed, and has been merged by the Hydra team.",
+      "report": "Links to merged PR's/closed issues:\nhttps://github.com/input-output-hk/hydra/pull/1413 \nhttps://github.com/input-output-hk/hydra/pull/1351 \n﻿https://github.com/input-output-hk/hydra/issues/1325#event-12848874030",
+      "kinds": [
+        "code"
+      ],
+      "links": 7
+    },
+    {
+      "no": 6,
+      "month": "8",
+      "cost": 106600,
+      "promise": "Final report, video documentation and source code.",
+      "criteria": "Public availability of the above outputs",
+      "report": "Final Closeout Report:\nhttps://drive.google.com/file/d/1IaBTJjANuY3-IffHTAwH7cxF0IKcRMSB/view?usp=sharing \nGithub Links:\nhttps://github.com/cardano-scaling/hydra/pull/1118\nhttps://github.com/cardano-scaling/hydra/pull/1414\nCloseout Video:\nhttps://www.youtube.com/watch?v=komBgtPk23Q",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

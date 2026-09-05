@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "コンテキスト:\nMithrilシグネチャを使用するCardanoのブリッジ契約は、透明性とセキュリティを強化し、Cardano上のブロックチェーンブリッジの開発コストを削減するように設計されています。\n\nタスク:\nプロジェクトの方法論、期待される結果、利点を裏付けるホワイトペーパーを作成します。 また、プロジェクトから期待されるものを正確に指定する詳細なプロジェクト文書を作成します。 また、プロジェクトとユーザーと開発者のガイドの各コンポーネントの技術的な仕様を作成します。\n\n出力:\n・詳細なプロジェクト計画書の作成\n・プロジェクトの各コンポーネントの技術的仕様を作成します。\n・ユーザーガイドの作成\n・プロジェクトの方法論、期待される結果、利点を裏付けるホワイトペーパーを作成します.",
+      "criteria": "受諾条件\n・リポジトリに詳しいプロジェクトプランのドキュメント(pdf)が見つかります\n・プロジェクト(pdf)の各コンポーネントの技術的な仕様は、リポジトリで見つけることができます\n・レポでユーザーガイド(pdf)をご覧いただけます。\n・プロジェクト(pdf)の方法論、期待される結果、および利点を調べるホワイトペーパーは、リポジトリに見つけることができます",
+      "report": "この触媒の提案のためにマイルストーン1を提出してください。\nここで見つけることができます:\n- 詳細なプロジェクト計画文書 - https://github.com/zkFold/project-catalyst-reports/blob/main/Mithril%20Bridge/M1/plan.pdf\n- プロジェクトの各コンポーネントの技術的な仕様 - https://github.com/zkFold/project-catalyst-reports/blob/main/Mithril%20Bridge/M1/ZK%20Bridge%20-%20Milestone%201.pdf\n- ユーザーと開発者ガイド - https://github.com/zkFold/project-catalyst-reports/blob/main/Mithril%20Bridge/M1/user and developer guides.pdf\n- プロジェクトの方法論、予想される結果、および利点のホワイトペーパー - https://github.com/zkFold/project-catalyst-reports/blob/main/Mithril%20Bridge/M1/zk-bridge-using-mithril-specs.pdf"
+    },
+    {
+      "no": 2,
+      "promise": "コンテキスト:\nMithrilシグネチャを使用するCardanoのブリッジ契約は、透明性とセキュリティを強化し、Cardano上のブロックチェーンブリッジの開発コストを削減するように設計されています。\nタスク:\nMithrilの認証確認用の演算回路の設計・実装をしています。 また、回路の設計と性能に関する技術的なレポートが必要です。 その上で、回路の試作デモを製作します。\n出力:\n・Mithrilの認証確認のための設計および実施の演算回路を生成します。\n・回路の設計と性能に関する技術的なレポートを作成します。\n・回路の試作デモを作成します.",
+      "criteria": "・Mithrilの証明書検証用の演算回路の設計と実装は、リポジトリに見つけることができます\n・回路の設計・性能に関する技術的な報告はレポでご覧いただけます。\n・回路の試作デモはレポでご覧いただけます",
+      "report": "このプロジェクトのマイルストーン2を完成しました。 主な出力は以下です。\n\nミチル回路:\nhttps://github.com/zkFold/symbolic/blob/vlasin-mithril-m2/symbolic-base/src/ZkFold/Symbolic/Algorithms/Mithril.hs\n\n回路の Benchmark (demo):\nhttps://github.com/zkFold/symbolic/blob/vlasin-mithril-m2/symbolic-examples/src/Examples/Mithril.hs\n\n回路性能のベンチマーク結果(技術報告):\nhttps://github.com/zkFold/symbolic/blob/vlasin-mithril-m2/symbolic-examples/stats/Mithril.256.2\n\nビデオ レポート:\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/Mithril%20Bridge/M2/M2.mp4\n\nそれに加えて、閾値のシグネチャ検証に関与する必要な暗号原始性を実装しました。\nhttps://github.com/zkFold/symbolic/blob/vlasin-mithril-m2/symbolic-base/src/ZkFold/Base/Algebra/EllipticCurve/Class.hs\nhttps://github.com/zkFold/symbolic/blob/vlasin-mithril-m2/symbolic-base/src/ZkFold/Base/Algebra/EllipticCurve/Pasta.hs\nhttps://github.com/zkFold/symbolic/blob/vlasin-mithril-m2/symbolic-base/src/ZkFold/Symbolic/Data/EllipticCurve/Pasta.hs\nhttps://github.com/zkFold/symbolic/blob/vlasin-mithril-m2/symbolic-base/src/ZkFold/Symbolic/Data/FFA.hs"
+    }
+  ]
+}

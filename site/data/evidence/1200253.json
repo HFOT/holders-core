@@ -1,0 +1,29 @@
+{
+  "title": "zkFold x Anastasia Labs: ZK Bridge using Mithril",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Context: \nThe bridging contract for Cardano that uses Mithril signatures is designed to enhance transparency and security and reduce costs in the development of blockchain bridges on Cardano.\n\nTask: \nCreate a whitepaper outlining the methodology, expected outcomes, and benefits of the project. Also, we will create a detailed project documentation, specifying what exactly is expected out of the project. Additionally, we will create technical specifications for each component of the project and user and developer guides..\n\nOutputs:\n・Create a detailed project plan documentation.\n・Create technical specifications for each component of the project.\n・Create user and developer guides.\n・Create a whitepaper outlining the methodology, expected outcomes, and benefits of the project.",
+      "criteria": "Acceptance criteria\n・A detailed project plan documentation (pdf) can be found in the repo\n・Technical specifications for each component of the project (pdf) can be found in the repo\n・User and developer guides (pdf) can be found in the repo\n・A whitepaper outlining the methodology, expected outcomes, and benefits of the project (pdf) can be found in the repo",
+      "report": "Happy to submit our Milestone 1 for this Catalyst proposal.\nHere you can find:\n- A detailed project plan documentation - https://github.com/zkFold/project-catalyst-reports/blob/main/Mithril%20Bridge/M1/plan.pdf\n- Technical specifications for each component of the project - https://github.com/zkFold/project-catalyst-reports/blob/main/Mithril%20Bridge/M1/ZK%20Bridge%20-%20Milestone%201.pdf\n- User and developer guides - https://github.com/zkFold/project-catalyst-reports/blob/main/Mithril%20Bridge/M1/user_and_developer_guides.pdf\n- Whitepaper outlining the methodology, expected outcomes, and benefits of the project - https://github.com/zkFold/project-catalyst-reports/blob/main/Mithril%20Bridge/M1/zk-bridge-using-mithril-specs.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 150000,
+      "promise": "Context: \nThe bridging contract for Cardano that uses Mithril signatures is designed to enhance transparency and security and reduce costs in the development of blockchain bridges on Cardano.\nTask: \nWe are going to design and implement arithmetic circuits for Mithril certificate verification. Also, a technical report on the design and performance of the circuits is required. On top of that, we will create a prototype demonstration of the circuits.\nOutputs:\n・Produce a design and implement arithmetic circuits for Mithril certificate verification.\n・Create a technical report on the design and performance of the circuits.\n・Create a prototype demonstration of the circuits.",
+      "criteria": "・A design and implementation of arithmetic circuits for Mithril certificate verification can be found in the repo\n・A technical report on the design and performance of the circuits can be found in the repo\n・A prototype demonstration of the circuits can be found in the repo",
+      "report": "We have completed Milestone 2 of this project. The main outputs are the following.\n\nMithril circuit:\nhttps://github.com/zkFold/symbolic/blob/vlasin-mithril-m2/symbolic-base/src/ZkFold/Symbolic/Algorithms/Mithril.hs\n\nBenchmark (demo) of the circuit:\nhttps://github.com/zkFold/symbolic/blob/vlasin-mithril-m2/symbolic-examples/src/Examples/Mithril.hs\n\nBenchmark results (tech report) of the circuit performance:\nhttps://github.com/zkFold/symbolic/blob/vlasin-mithril-m2/symbolic-examples/stats/Mithril.256.2\n\nVideo report:\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/Mithril%20Bridge/M2/M2.mp4\n\nBesides that, we have implemented the necessary cryptographic primitives involved in the threshold signature verifications:\nhttps://github.com/zkFold/symbolic/blob/vlasin-mithril-m2/symbolic-base/src/ZkFold/Base/Algebra/EllipticCurve/Class.hs\nhttps://github.com/zkFold/symbolic/blob/vlasin-mithril-m2/symbolic-base/src/ZkFold/Base/Algebra/EllipticCurve/Pasta.hs\nhttps://github.com/zkFold/symbolic/blob/vlasin-mithril-m2/symbolic-base/src/ZkFold/Symbolic/Data/EllipticCurve/Pasta.hs\nhttps://github.com/zkFold/symbolic/blob/vlasin-mithril-m2/symbolic-base/src/ZkFold/Symbolic/Data/FFA.hs",
+      "kinds": [
+        "code"
+      ],
+      "links": 8
+    }
+  ]
+}

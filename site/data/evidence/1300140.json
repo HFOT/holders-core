@@ -1,0 +1,91 @@
+{
+  "title": "MLabs + Clear Contracts -Agora dRep Effect Validator",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "・Complete LaTeX document detailing the technical specifications of the project",
+      "criteria": "・Latex specification:\n・contains a high level overview of the protocol\n・contains interaction diagrams and flowcharts to demonstrate interactions between new validators and the existing Agora setup\n・provides a detailed specification for each validator to guide further implementation steps\n・the compiled LaTeX document is publicly available and its source code is publicly available \n・LaTeX document must include requirements regarding project expenses as shared in IdeaScale, formatting, and voting conditions",
+      "report": ":: UPDATES ::\nThe requested changes have been made to the documentation\n---\nEvidence of milestone completion:\ncompiled LaTeX document: https://mlabs-haskell.github.io/agora-drep/static/agora-drep-specification.pdf\nGitHub repository with LaTeX source code: https://github.com/mlabs-haskell/agora-drep/blob/master/specification/specification.tex",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 75000,
+      "promise": "・Set up a public GitHub repository for the project.\n・Develop the Proxy Validator using Plutarch.\n・Develop the V3 minting policy to facilitate the upgrade of GAT V2 tokens to V3.",
+      "criteria": "・For the GitHub repository:\n・It must be publicly accessible and easily explorable.\n・It must contains a CI configuration to test compilation and run tests.\n・For the development of the Proxy Validator\n・The implementation of the Proxy Validator corresponds to what has been defined in the specification. For clarification of criteria, there will be a test suite that conditions in the specification that will be defined after the completion of milestone one.\n・The implementation code follows best practices in terms of structure and readability, ensuring ease of use for developers interacting with the",
+      "report": "Thank you for your feedback on our M2 PoA. Resubmitting because we didn't notice a response in the discussion panel. That said, we were under the impression we provided the agreed-upon evidence. For instance, the video timestamps would be:\n-0:06 - intro\n-0:27 - V3 proxy validator overview\n-1:18 - spending and minting logic \nNOTE: Spending and minting parts are both here - they are contained in the same file\n-1:47 - test output\n-2:00 - test suite overview\n\nFinally, concerning the second point of the second reviewer, the source code for the minting policy is contained in lines here, which handle either both V2 and V3 GATs effectively allowing a governance upgrade as it were:\nhttps://github.com/mlabs-haskell/agora-drep/blob/master/agora-drep/Agora/Proxy.hs#L241-L293\n\nAnd for the proxy validator here:\nhttps://github.com/mlabs-haskell/agora-drep/blob/master/agora-drep/Agora/Proxy.hs#L131-L240\n\nWith this additional input, do we meet your evidence criteria? If not, is there something specific still required?\n--------------\n\nEvidence of Milestone Completion\n\n1. Link to a public GitHub repository for the project:\nhttps://github.com/mlabs-haskell/agora-drep\n\n2. Link to a GitHub repository containing:\n a. a. source code of validators:\nhttps://github.com/mlabs-haskell/agora-drep/blob/master/agora-drep/Agora/Proxy.hs\n\n b. a history of git versions available on GitHub demonstrating the development process and finalization of Plutarch code:\nhttps://github.com/mlabs-haskell/agora-drep/commits/master/agora-drep/Agora/Proxy.hs\n\n c. a link to a video overview explaining how the validator works and a brief test output. A section of the previous video providing and overview of the V3 minting policy and a brief test output\nhttps://www.youtube.com/watch?v=1tLQBwgKgOA",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 64634,
+      "promise": "・Detailed test suite that covers all aspects of the Proxy validator and minting policy, ensuring they meet the specified conditions.\n・Code documentation and tests to ensure clarity and ease of understanding for future developers and auditors\n・Reviews and tests to validate that the implementation matches the specification.",
+      "criteria": "・Test source code is publicly available in the github repository\n・Testing files will test individual validators meet requirements laid out in the specification.\n・In code documentation is publicly available in the github repository\n・Link to code documentation hosted as a static website\n・Documentation will follow industry standard Haddock output\n・Tests confirming specification accordance are run on CI and they all pass\n・Test results will be presented in a text file showing the validators behave as previously specified",
+      "report": "Evidence of Milestone Completion\n1. Link to public github repository with tests source code\nhttps://github.com/mlabs-haskell/agora-drep/blob/master/agora-drep-test/Main.hs#L14\nhttps://github.com/mlabs-haskell/agora-drep/blob/master/agora-drep-spec/Spec/Proxy.hs\nhttps://github.com/mlabs-haskell/agora-drep/blob/master/agora-drep-spec/Spec/Proxy/Context.hs\n\n2. Link to public github repository with code documentation\nhttps://mlabs-haskell.github.io/agora-drep/haddock/\n\n3. Link will be provided to a GitHub Gist file showing the successful run of the test suite\nhttps://gist.github.com/t4ccer/0bf0517f517b8c205981dc90a9a37dc4\n a. Video demonstrating test suite passing\n https://www.youtube.com/watch?v=2LuJ9zRCDHQ",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 12
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 86179,
+      "promise": "・Plutarch Spending Effect Validators\n・Comprehensive test suite that ensures that the validators meet the conditions described in the specification and can handle the transition from V2 to V3 GAT tokens seamlessly.\n・Review code and test to validate that the implementation matches the specification.\n・Documentation",
+      "criteria": "・Plutarch implementation of the Spending effect validators is publicly available in the github repository\n・Implementation matches the definition in the specification\n・Test suite code that confirms accordance to the specification of the effect validator is publicly available in the github repository\n・All Issues and PRs related to outputs up to this Milestone have been addressed\n・Documentation from previous milestone:\n・Has been expanded to cover the spending validator\n・Is available on the same static website",
+      "report": ":: UPDATE ::\nWe have updated the README with better links, including further information and introductory material. We have also fixed the 404.\n-------------\n1. Link to public github repository with validator source code\n https://github.com/mlabs-haskell/agora-drep/blob/master/agora-drep/Agora/Effect/Voting.hs#L129-L164\n2. Link will be provided to a GitHub Gist file showing the successful run of the test suite \nhttps://gist.github.com/t4ccer/7b8992f508fd411a772e3ccc68fddb92\na. Video demonstrating test suite passing\nhttps://youtu.be/LcoNxRCRmXM\n3. Link to github milestone with closed github issues and pull requests\nhttps://github.com/mlabs-haskell/agora-drep/milestone/4?closed=1\n4. Link to public github repository with code documentation\n https://github.com/mlabs-haskell/agora-drep\n a. Link to haddock website\n https://mlabs-haskell.github.io/agora-drep/haddock/",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 12
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 86179,
+      "promise": "・Develop the Voting effect validators using Plutarch.\n・Write a comprehensive test suite to ensure compliance with the specified conditions.\n・Conduct code reviews and testing to validate the implementation.\n・Document the implementation to facilitate understanding and future maintenance.\n・Add the Plutarch implementation of the Voting effect validators and the test suite to the public GitHub repository.",
+      "criteria": "・Plutarch implementation of the Voting effect validators is publicly available in the github repository\n・Test suite code that confirms accordance to the specification of the effect validator is publicly available in the github repository\n・All Issues and PRs related to outputs up to this milestone have been addressed\n・In code documentation\n・Adequately covers implementation details\n・The implementation matches the specification\n・The test suite includes tests that prove the implementation matches the specification",
+      "report": "1. Link to a public github repository with voting effect validator source code\n 1. Link to repository: https://github.com/mlabs-haskell/agora-drep\n 2. Link to voting effect validator definition: https://github.com/mlabs-haskell/agora-drep/blob/e2f0d66f5a47c6bf95250219af5cc99d40be2f7e/agora-drep/Agora/Effect/Voting.hs#L141\n2. Link to public github repository with tests source code\n 1. Link to repository: https://github.com/mlabs-haskell/agora-drep\n 2. Link to unit tests suite of `Proxy` script: https://github.com/mlabs-haskell/agora-drep/blob/e2f0d66f5a47c6bf95250219af5cc99d40be2f7e/agora-drep-spec/Spec/Proxy.hs#L18\n 3. Link to unit tests suite of `Voting` script: https://github.com/mlabs-haskell/agora-drep/blob/e2f0d66f5a47c6bf95250219af5cc99d40be2f7e/agora-drep-spec/Spec/Effect/Voting.hs#L18\n3. Link to github milestone with closed github issues and pull requests \n 1. https://github.com/mlabs-haskell/agora-drep/milestone/5\n 2. https://github.com/mlabs-haskell/agora-drep/issues/48\n4. Link to public github repository with code documentation\n 1. Link to repository: https://github.com/mlabs-haskell/agora-drep\n 2. Link to Haddock documentation (available from project's README): https://mlabs-haskell.github.io/agora-drep/haddock/\n5. Log trace of successful test run\n----\n[rama@tarkus:~/git/mlabs/agora-drep]$ cabal test\nWarning: The package list for 'hackage.haskell.org' is 82 days old.\nRun 'cabal update' to get the latest list of available packages.\nWarning: The package list for 'cardano-haskell-packages' is 82 days old.\nRun 'cabal update' to get the latest list of available packages.\nResolving dependencies...\nBuild profile: -w ghc-9.6.6 -O1\nIn order, the following will be built (use -v for more details):\n - agora-drep-1.0.0.0 (test:agora-drep-test) (first run)\nConfiguring test suite 'agora-drep-test' for agora-drep-1.0.0.0...\nPreprocessing test suite 'agora-drep-test' for agora-drep-1.0.0.0...\nBuilding test suite 'agora-drep-test' for agora-drep-1.0.0.0...\n[1 of 1] Compil",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 18,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "11",
+      "cost": 112700,
+      "promise": "・Integrate the validators into clarity.vote platform with collaboration with Clarity team\n・Offchain components to support the interaction between the validators and the clarity.vote frontend (which will be closed-source)\n・Testing on one of the testnets to ensure the integration works as expected.\n・Documentation of the overall architecture and design of the validators and their interactions, possibly as an appendix to the initial specification document\n・Instructions and documentations for setting up and using the validators.\n・Examples and use cases to illustrate how the validators can be used in practice.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Users can interact with the new agora DRep validator on testnet\n・Document report on data regarding number of users participating in the test, user feedback requirements(can create agora, can vote agora), UX outcome feedback\n・Users can vote on Agora proposals\n・A minimum of 3 users will participate in the test\n・Users will be asked to provide feedback on two distinct aspects: 1) their experience creating an Agora proposal and 2) voting on a proposal. For each aspect, users will be asked to provide at least one sentence and to rate their satisfaction on a scale of 1-10.\n・Since this project is of",
+      "report": "A. Output: Integrated the validators into the clarity.vote platform\nAcceptance criteria: Users can interact with the new agora DRep validator\nEvidence: clarity.vote links\n- Website: \nhttps://www.clarity.vote/\n- GH repo:\nhttps://github.com/mlabs-haskell/agora-drep\n- Overview video:\nhttps://www.youtube.com/watch?v=YnWFB4TwObI\n\nB. Output: Testing on testnet\nAcceptance criteria: Test proposal are fully executed\nEvidence: Links to documentation and benchmarking video\n- Spec:\nhttps://github.com/mlabs-haskell/agora-drep/tree/master/specification\n- Product documentation:\nhttps://docs.clarity.vote/\n- API documentation:\nhttps://mlabs-haskell.github.io/agora-drep/haddock/\n- General documentation:\nhttps://liqwid.notion.site/Agora-Specs-Overview-fd7df78313cf4dc0b1522cb9260b77d1\n- Benchmarking video:\nhttps://youtu.be/PDtfe4f0aUA\n\nC. Output: General architecture documentation\nAcceptance criteria: Documentation outlines how to use new effects\nEvidence: Direct links to the GitHub repo\n- API documentation:\nhttps://mlabs-haskell.github.io/agora-drep/haddock/\n- README:\nhttps://github.com/mlabs-haskell/agora-drep/blob/master/README.md\n- Use cases\nhttps://docs.clarity.vote/clarity-v1/agora-dao-as-a-drep\n\nD. Output: Final close-out report\nAcceptance criteria: Final close-out report\nEvidence: Link to the report\n- Close-out report:\nhttps://docs.google.com/document/d/1xbsOxRBpJzbt6iZUAptTqt1EthxvbIPOfD7IjMHAQNo/edit?tab=t.0\n- Feedback and testing summary\nhttps://docs.google.com/document/d/1jgTIBlhPADVeTVtzPY7FkSX5EOBpKHYd9_mcOFl_DMI/edit\n\nE. Output: Final close out video\nAcceptance criteria: Final close out video\nEvidence: Video link\nhttps://www.youtube.com/watch?v=2RtffHLBsZ8",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 28,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Handshake decentralized DNS blockchain integration with cDNSd by Blink Labs",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 32625,
+      "promise": "・Develop primitives to handle Handshake block format\n・Implement validation of Handshake proofs\n・Demonstrate the ability to parse a Handshake block for specific domain ownership",
+      "criteria": "All outputs. All code-related outputs must be completed and implemented according to any specifications in the corresponding GitHub issues (tickets).\nAll outputs. All code changes must be reviewed and approved by designated team members before being merged into the main branch.\nAll outputs. Any added unit tests which demonstrate outputs will be available in the codebase.\nAll outputs. Each GitHub issue associated with the milestone must be marked as \"closed\" or \"done\" upon completion of the related task.",
+      "report": "Milestone 1: Complete\nThe parsing and validation of Handshake blockchain data has been implemented and demonstrated as specified in their corresponding tickets. A video demonstrating the evidence of the completion of this milestone is available on YouTube: https://youtu.be/f6lV1mcDRnM \nThis is further evidenced by the code output, automated testing where applicable, and code reviews with approvals from a designated team member. All of this can be traced by the GitHub Milestone 1 issues (aka tickets) in our project board, here: https://github.com/orgs/blinklabs-io/projects/18, where Milestone 1 issues can be found and their specifications and code, linked pull requests within each issue, can be examined. All Milestone 1 tickets have been completed and closed. Corresponding usage documentation will be added as we progress and will be found here: https://github.com/blinklabs-io/cdnsd.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "13",
+      "cost": 32625,
+      "promise": "・Develop network protocol code for Handshake\n・Implement block synchronization of Handshake data\n・Demonstrate the ability to synchronize blocks and process domain ownership updates",
+      "criteria": "All outputs. All code-related outputs must be completed and implemented according to any specifications in the corresponding GitHub issues (tickets).\nAll outputs. All code changes must be reviewed and approved by designated team members before being merged into the main branch.\nAll outputs. Any added unit tests which demonstrate outputs will be available in the codebase.\nAll outputs. Each GitHub issue associated with the milestone must be marked as \"closed\" or \"done\" upon completion of the related task.",
+      "report": "Milestone 2: Complete\nOutput: The network protocol code for Handshake has been developed (1) and the block synchronization has been implemented (2) as specified in their corresponding tickets. Demonstrating ability to synch blocks and process domain ownership updates (3) has been included in our milestone completion video, available on YouTube: https://youtu.be/yVmALUogU0c, which highlights the entire milestone as well.\nAcceptance criteria and Evidence of completion can all be verified on GitHub as follows: This is evidenced by the code output, automated testing where applicable, and code reviews with approvals from a designated team member. All of this can be traced by the GitHub Milestone 2 issues (aka tickets) in our project board, here: https://github.com/orgs/blinklabs-io/projects/18, where Milestone 2 issues can be found and their specifications and code, linked pull requests within each issue, can be examined. All Milestone 2 tickets have been completed and closed. Documentation will be added as we progress in Milestone 3 and will be found here: https://github.com/blinklabs-io/cdnsd.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "15",
+      "cost": 32625,
+      "promise": "・Create the ability to store and retrieve Handshake blockchain data in cDNSd\n・Create a Handshake resolver\n・Create an ICANN resolver\n・Implement a fallback from local (Cardano) to Handshake to ICANN resolvers\n・Demonstrate DNS resolution for domains in local, Handshake, and ICANN",
+      "criteria": "All outputs. All code-related outputs must be completed and implemented according to any specifications in the corresponding GitHub issues (tickets).\nAll outputs. All code changes must be reviewed and approved by designated team members before being merged into the main branch.\nAll outputs. Any added unit tests which demonstrate outputs will be available in the codebase.\nAll outputs. Each GitHub issue associated with the milestone must be marked as \"closed\" or \"done\" upon completion of the related task.",
+      "report": "Milestone 3: Complete\nOutput: The ability to store and retrieve Handshake blockchain data has been created (1). The Handshake (2) and ICANN (3) resolvers have been created. The fallback from local (Cardano) to Handshake to ICANN resolvers have been implemented (4). A video has been included which demonstrates DNS resolution for domains in local, Handshake and ICANN (5 https://youtu.be/WEc3MFh7UGk).\nAcceptance criteria and Evidence of completion can all be verified on GitHub as follows: This is evidenced by the code output, automated testing where applicable, and code reviews with approvals from a designated team member. All of this can be traced by the GitHub Milestone 3 issues (aka tickets) in our project board, here: https://github.com/orgs/blinklabs-io/projects/18, where Milestone 3 issues can be found and their specifications and code, linked pull requests within each issue, can be examined. All Milestone 3 tickets have been completed and closed. Documentation as we have progressed can be viewed here: https://pkg.go.dev/github.com/blinklabs-io/cdnsd@v0.23.0/handshake",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "16",
+      "cost": 32625,
+      "promise": "・Final close-out report\n・Final closeout video",
+      "criteria": "・The project closeout report will include a comprehensive summary of project objectives and evidence of goals achieved. \n・The project closeout video will provide a visual overview of the projects journey, start to finish, highlight key achievements, and showcase the net products: HNS Simplified Payment Verification (SPV) Support In cDNSd. It will be available on our YouTube channel, https://www.youtube.com/@BlinkLabs_io.\n・At the behest of our Reviewer we add that we will abide by the fund 13 closeout guidelines: https://docs.projectcatalyst.io/current-fund/general-information/project-close-out",
+      "report": "Output 1: Final close-out report\nAcceptance criteria 1: The project closeout report will include a comprehensive summary of project objectives and evidence of goals achieved. \nEvidence 1: Link to final closeout report, accessed via a Blink Labs shared Google docs link: https://docs.google.com/document/d/1QgqM2DrNYPUEXDYVUja79MCTtPe3r9e8TFwBq09_O9U/edit?usp=sharing\n\nOutput 2: Final closeout video\nAcceptance criteria 2: The project closeout video will provide a visual overview of the projects journey, start to finish, highlight key achievements, and showcase the net products: HNS Simplified Payment Verification (SPV) Support In cDNSd. It will be available on our YouTube channel, https://www.youtube.com/@BlinkLabs_io.\nEvidence 2: Link to final closeout video, uploaded to the public Blink Labs YouTube channel: https://youtu.be/x-I15QM48G0 \n\nAcceptance criteria 3: At the behest of our Reviewer we add that we will abide by the fund 13 closeout guidelines.\nEvidence 3: We followed the Fund 13 requested headings in both the report and the video, requirements can be viewed here: https://docs.projectcatalyst.io/previous-funds/fund13-docs/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    }
+  ]
+}

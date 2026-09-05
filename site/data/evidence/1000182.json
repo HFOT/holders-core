@@ -1,0 +1,73 @@
+{
+  "title": "SundaeSwap Smart Contract Audit",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 33400,
+      "promise": "Engagement with a reputable Cardano auditing company to do a design review of the contracts, and make sure there are no structural issues. Additionally, a report written by us documenting the design.",
+      "criteria": "The report from the auditing company details any concerns they have about the core design of the protocol (irrespective of how it's implemented) and outlines constructive next steps for our team to implement.",
+      "report": "We are submitting the milestones for this project a bit late, after we have already disclosed our public whitepaper and launched the new contracts on Testnet. The whitepaper should be viewed as a much more high fidelity version of what an earlier-stage Medium blog would have covered. We believe its public release and publicity satisfies the intent of this milestone.\nAnnouncement: https://x.com/SundaeSwap/status/1757807288151085231?s=20\nWhitepaper link: https://t.co/46WTxC6HV5\nDiscord announcement: https://discord.com/channels/830939534174453800/830948250298875905/1207366153501020171",
+      "kinds": [
+        "other",
+        "social"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 33400,
+      "promise": "Any code updates to the smart contracts that were identified by the design review",
+      "criteria": "Any issues identified in the design review are either addressed, or clear documentation provided for why we disagree with the assessment of the auditor.",
+      "report": "We've authored this Medium post outlining some of the early changes we made in response to TX Pipe's design audit: https://sundaeswap-finance.medium.com/enhancing-sundaeswap-how-we-leveraged-txpipes-audit-insights-for-smarter-contract-design-16c49203f37c\nAdditionally, you can view the complete changelog for all actions made over the last several months in response to the security audit as we finalized the contracts in preparation for Mainnet launch (Note: the audit is now complete and the contracts are live on Mainnet)\nhttps://github.com/SundaeSwap-finance/sundae-contracts/actions",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 33400,
+      "promise": "Engagement with a reputable Cardano auditing company (potentially the same one as before, potentially different) to do a full audit of the final version of the contract code.",
+      "criteria": "A detailed report from the auditing company detailing any concerns or suggestions they have about the implementation of the design of the smart contracts.",
+      "report": "Audit report: https://cdn.sundaeswap.finance/audits/sundae-v3.pdf\nTwitter post: https://x.com/SundaeSwap/status/1790852782955573748",
+      "kinds": [
+        "other",
+        "social"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 33400,
+      "promise": "A large scale test of the contracts on one of the cardano testnets, demonstrating suitability for mainnet deployment.",
+      "criteria": "A large scale stress test (10,000 transactions across 5 pools) on the testnet, demonstrating production readiness for the contracts.",
+      "report": "Stress test report: https://sundaeswap-finance.medium.com/report-stress-testing-sundaeswaps-new-smart-contracts-on-cardano-testnet-99369a06f1d7\nTwitter post: https://x.com/SundaeSwap/status/1791111034020999260\nDiscord post: https://discord.com/channels/830939534174453800/830948250298875905/1240669875634962502",
+      "kinds": [
+        "doc",
+        "social"
+      ],
+      "links": 3
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 33400,
+      "promise": "The mainnet deployment of the audited smart contracts, open source of the contracts, and releasing of the previously generated reports. Final project report and close-out video. Associated public announcements on our social media channels.",
+      "criteria": "The final script hash must match that described in the audit report, and the contracts and design documents must be open sourced.",
+      "report": "・Resubmitting with correct final report, correct video and added links\n\n[GitHub Repository] https://github.com/SundaeSwap-finance/sundae-contracts\n*Repo activity reflects feedback from the audit team in-process, in lieu of a more formal initial report\n[Whitepaper] https://cdn.sundaeswap.finance/SundaeV3.pdf\n*This represents the initial documentation of the design\n[Medium post] https://medium.com/@sundaeswap-finance/enhancing-sundaeswap-how-we-leveraged-txpipes-audit-insights-for-smarter-contract-design-16c49203f37c\n[Audit Report} https://cdn.sundaeswap.finance/audits/sundae-v3.pdf\n[Final closeout report] https://drive.google.com/file/d/1EeUqg_VM28tZ-4tSqGKBm6zexOkhQV7f/view?usp=sharing\n[Closeout Video] https://www.youtube.com/watch?v=QXSlLqF1ENM\n[Twitter Post] https://x.com/SundaeSwap/status/1803167308510274042\n[Discord Post] https://discord.com/channels/830939534174453800/830948250298875905/1252726516194738198\n[Final script hashes]\nSettings (spend & mint) 6d9d7acac59a4469ec52bb207106167c5cbfa689008ffa6ee92acc50 \nPool (spend & mint) e0302560ced2fdcbfcb2602697df970cd0d6a38f94b32703f51c312b \nPool staking 4399813dad91bb78a5eb17c26ff50852bc75d3fa7b6e9ae87232ccc1 \nManage withdrawal e0fccbbfb75923bff6dac5f23805dcf6cecfaae8aa3a6d3e474ee670 \nOrder fa6a58bbe2d0ff05534431c8e2f0ef2cbdc1602a8456e4b13c8f3077 \nOrder withdrawal 99e5aacf401fed0eb0e2993d72d423947f42342e8f848353d03efe61 \nOracle (spend & mint) f50153654bd0e167563cd0bbbff1b73c40157e53408a0ef517e67a5d",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 16
+    }
+  ]
+}

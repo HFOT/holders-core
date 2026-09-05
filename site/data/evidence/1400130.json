@@ -1,0 +1,63 @@
+{
+  "title": "ZK Login in Cardano - Eryx",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "・A report that contains the research done and the design of the solution. Research on the problem and solutions implemented in other ecosystems. \n・An open-source Aiken validator that verifies a digital signature.",
+      "criteria": "・The report should include the whole zkLogin protocol explained and how it should be applied in Cardano. It should specify the technical details that will lead to the implementation and future contributions.\n・The validator’s code will integrate an extra digital signature verification reusable module, allowing it to check the authenticity of the sender in the context of zkLogin.",
+      "report": "From the previous submission:\nThe video for this milestone submission can be seen in: https://drive.google.com/file/d/1j5QcE1fC9Lu8FP9CZbCB_Qnq-gfztLcJ/view?usp=sharing\nThe report and the source code can be found in the public repository: https://github.com/eryxcoop/zklogin-aiken\nHi! Thanks for your observations. The corresponding changes have been made in the documentation. Below we address each of your points:\nAsset spending\nYour understanding is correct. The flow on how to spend this ADA is described in the App-Flow section of the report. We added a few clarifications based on your comments. Let us know if now it's clear enough.\nADA staking rewards\nYou are right this is an excellent aspect to be tackled in future developments. We added it to the report in the section of Future Contributions.\nValidator flow\nThe steps performed by the zk circuit are the same that the validator could do at plain sight, it's the same steps. We've added some code in the report for the validator, including the redeemer, as well as the Circom main function for the circuit.\nDesign of the off-chain components\nThe design of the off-chain components depends on the wallet or application that wants to implement this protocol. In the 'Wallet responsibilities and decisions' section of the report we provided the information needed to integrate the protocol, responsibilities of the wallet and such. For the next milestone we'll have a basic implementation of a frontend that makes use of this protocol, but only to show a working flow. The implementation of a wallet is outside the scope of the grant, as is its design. Is there something specific that we should clarify?",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "・A Circom circuit implementation that proves:\n・The nonce from the JWT is well formed with respect to the values that were used to create it.\n・The zkLogin ID is well formed with respect to the data in the JWT and the user salt.\n・the JWT is correct, and that the credentials were created using that information\n・An Aiken validator that should verify this circuit on-chain with tests that assert this behavior. No private data should be leaked or exposed.",
+      "criteria": "・The public project repository should contain the Circom circuit and the Aiken code using it. \n・The public project repository should contain an Aiken validator that integrates and verifies the Circom circuit, along with a test and a README with instructions on how to run it. Users can authenticate successfully with a JSON Web Token to create the necessary credentials.",
+      "report": "From the previous submission:\nThe video for this milestone submission can be seen in: https://drive.google.com/file/d/1rUW6DcfaCe5_lqXMDwM48jQUxV25C4uT/view?usp=sharing\nThe source code can be found in the public repository: https://github.com/eryxcoop/zklogin-aiken\nThe idea of this milestone is to show that we successfully created a zkLogin address. From this address we can send funds to another account via zk proof generation and validation in the Aiken script that controls the address.\nYou can replicate everything we did in the video by following the instructions in the README.\naiken-zk tool: https://github.com/eryxcoop/cardano-zk-aiken (this is also referenced in the steps to follow)\n-------------------------------------------------------------------------------------------------------\nHi again! Thank you for your comments. Below we address each of your points:\nOn the claim \"No private data should be leaked or exposed\"\nWe wrote a document explaining this issue, you can find it here.\nWe also recorded a brief video with further explanation and showing code that can be found here\nMinor dependencies issues\n・As higher versions of the rand package (0.10.0-rc.1 and up) are incompatible with cardano-zk-aiken dependecy, we submitted a Cargo.lock file to this dependency repo so 0.10.0-rc.0 is always installed. We updated the README.md (in cardano-zk-aiken) so the install command always uses the Cargo.lock file.\n・We also locked all other dependencies of cardano-zk-aiken into specific versions as well. This will prevent errors in the future, ensuring dependencies are always the same.\n\nThe sponsor wallet was depleted\n・We funded the wallet both in preview and preprod testnets.\n・We changed the README.md mentioning how to check the balance of the wallet, before deploying a real transaction.\n・We now correctly support both preview and preprod testnets for the wallet (see next item).\n\npreview testnet was hardcoded in resolveSlotNo function\n・We fixed this issue in the code by select",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "・An extended Circom circuit that has access to the public keys used by the chosen OpenID provider to sign tokens. With these keys, the Circom circuit can perform proper signature verification to ensure the authenticity of the provided JWTs, confirming that they were issued by the trusted provider and have not been tampered with.\n・Once authenticated, the user can interact with the system using their associated address and credentials.",
+      "criteria": "・The validator performs a thorough verification to ensure that the JSON Web Token (JWT) was signed by the chosen OpenID provider. The public key of the provider is an officially registered public key.\n・The user can create a zkLogin address in Cardano using the OpenID provider credentials, create a new zkLogin session and use the account for sending and receiving tokens.\n・There should be integration tests that ensure the signature is valid, preventing false JWT to be presented as a login method",
+      "report": "From the first submission\nIn this milestone we added 2 important features respect to the previous one:\n・The ZK circuit now verifies the Google signature, ensuring the authenticity of the provided JWT\n・The UI flow allows the user to interact with its zkLogin address: send and receive ADA.\n\nWe also included tests that validate the circuits and ensure the signature is valid.\nYou can find all the code in the repository and the instructions to run the demo in the README, To run the demo on your computer you will have to update the aiken-zk tool, since it has some important changes for this milestone. Also, the big file (verification_key.zkey) needs to be updated along the rest of the repo with git lfs.\nThe video with the step-by-step demo can be found here.\nPlease let us know if you have any questions,\nthe Eryx team\n---------------------------------------------------------------------------------------------------------------------------------------\nFrom the second submission\nHi, hope you're doing well. We addressed your concerns from the previous submission:\nWe set up the CI for the github repo so that the particularities of each system don't interfere with the test runs. We think that the problem with running the tests has to do with the node version (https://nodejs.org/en/blog/release/v22.18.0), so we updated the README to clarify the dependency node >= 22.22.1. Also we thought about deprecating the aiken tests but didn't remove the template, that's why it was failing, but now we updated it to support the new circuit, so you should be able to run aiken check .\n\nRegarding the datum in the utxo, we're aware that Plutus V3 allows scripts to spend utxos without any datum, but mesh's transaction builder isn't updated yet and enforces the datum regardless of the script version, so any attempt to avoid it results in error. This is not a protocol problem, it's peripheral and it only has to do with the way mesh.js forces us to build transactions. Any wallet that wants to imple",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 15000,
+      "promise": "・A final report describing the project’s process and outcome. \n・A video showcasing the protocol and its features\n・Full documentation for developers, including setup, usage, and contribution guidelines\n・User-friendly setup and usage tutorials",
+      "criteria": "・The tool meets all functional expectations. Documentation and tutorials are complete and clear\n・The final video complies with Catalyst requirements\n・The final report complies with Catalyst requirements",
+      "report": "Here's the final version with all the changes from previous feedback: the CI is now working, the youtube video is properly linked in the documentation and we edited the video to overwrite the function name, sorry it was missing. \nSource code publicly available in the GitHub repository.\nA final report describing the project’s process and outcome that complies with Catalyst requirements.\nA video showcasing the protocol and its features that complies with Catalyst requirements (uploaded to YouTube).\nWe also created some contribution guidelines and Setup and usage tutorials.\nThe publications around this project we made: medium, Cardano Forum, our Eryx Blog and X (here and here)\nHave a nice day!\nThe Eryx team",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

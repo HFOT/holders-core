@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・包括的なプロジェクト計画、すべてのフェーズとタスクのアウトライン。\n・レバレッジ機能の主要部分を網羅する初期線枠。\n・バージョン管理用のGitHubリポジトリの作成.",
+      "criteria": "・プロジェクト計画の完了と承認\n・チームで審査・承認したワイヤーフレーム\n・GitHubリポジトリは初期ファイルで設定します.",
+      "report": "・プロジェクトプランとワイヤーフレーム:https://github.com/DexHunterIO/DH-Leverage/blob/main/architecture.md\n・Readmeと要件: https://github.com/DexHunterIO/DH-Leverage/blob/main/README.md\n・GitHubリポジトリは初期ファイルで設定します。 https://github.com/DexHunterIO/DH-Leverage\n\nフィードバックありがとうございます。 また、プロジェクトのタイムラインを追加し、承認され、時間、ワイヤーフレーム、アーキテクチャリンク、およびREADMEの下部に触媒提案へのリンクを追加しました。\n社長兼ブロックチェーンのリードによる明示的な承認は、READの始まりに述べています。 「ニキタ・メレンテヘフスによって承認 - 代表取締役&江戸サルヴァイオーニ - ブロックチェーンは18.08.2025をリード」"
+    },
+    {
+      "no": 2,
+      "promise": "レバレッジ機能に関するコアインフラの開発.",
+      "criteria": "・借入・貸借のためのデータパッシング及び資産利用状況の追加\n・GitHubの開発プロセスの文書化\n・チームによる審査・承認.",
+      "report": "* GitHubリポジトリ https://github.com/DexHunterIO/DH-Leverage\n* https://github.com/DexHunterIO/DH-Leverage/blob/main/README.md でデッドラインを調整\n* Cardanoブロックチェーン(Liqwid/Surf)上の2つのプロトコルを使用してパーシングとレンディング/ボーリングコアを追加\n* https://github.com/DexHunterIO/DH-Leverage/blob/main/development-process.md を追加して開発プロセスとロジックを表示\n* Borrow/ Lend/ Cancel/Repay/ Check/search プールをテストするための基本的なUiを追加しました(これは単なるテストベクトルである最終的なUIではありません)\n* GitHub ワークフローで自動整列とテストを追加しました。\n※自動テストパス\n\nシステムには、redis と MongoDB を使用して永続設定がありますが、MongoDB や Redis 接続なしで api が実行されている場合は、 永続モード で起動し、mongo と redis を実行する必要はありません。\n\nサポートチームで触媒の期限延長を伝達"
+    },
+    {
+      "no": 3,
+      "promise": "ユーザーは、レバレッジを可能にするために十分な融資と借用力を持っている特定の資産の長期および不足を実行することができます",
+      "criteria": "・選択した資産を取り、レバレッジ取引を実行するためのバックエンド機能の作成\n・有利な取引機能を表示し、ユーザーにはクリアなインターフェイスを作る。\n・レバレッジの自動テストパス、ビルド機能の作成",
+      "report": "Milestone 3 提出テキスト: レバレッジ統合のためのすべての関連するコードは、https://github.com/DexHunterIO/DH-Leverage at a599252\nハッシュ\n\n実行するには:sample.env の次の .env を出力します。 必要に応じてmongodbを起動し、bashスクリプトを使用して、.env を出力します。\nそれから .quick-start.sh を使用してサービスを開始します。\n\nすべてのサービスが開始されたとき。 Recursive 貸し手と借り換えを使用して http://localhost:8080/#/leverage に http://localhost:8080/#/leverage をブラウズします。 (最高1.8xのレバレッジ)。\nhttp://localhost:8080/#/perps に、Perpetuals を使用して取引を活用します。\n\nこのフロントエンドは、パープを使用してレバレッジとレバレッジを含むために拡張されたテストフロントエンドです。\n最後の清潔で洗練されたフロントエンドはマイルストーン4です。\n\nすべての流れは手動でテストされました:SNEKで最大1.8x再帰的にショートロング。 ADAで最大20倍のパープも短時間."
+    }
+  ]
+}

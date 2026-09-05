@@ -1,0 +1,102 @@
+{
+  "title": "Open DJED maintenance, development and infrastructure",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 10000,
+      "promise": "The inclusion of all necessary code and deployment changes to include the following functionality:\n・View current open orders\n・Cancel pending orders\n・Order history w/filters & UX polish\n\nMaintenance of Open DJED and user support for the 1st month after proposal start.",
+      "criteria": "The acceptance criteria for this milestone are:\n・Users can successfully view a list of their pending orders\n・Users can successfully submit a pending order cancellation transaction\n・Users can access a history page describing past orders and transactions\n・The views for the order management features\n・For the period spanning the 1st month after proposal start:\n・Public up-time dashboard shows >= 99% availability\n・Minimal service interruptions take place\n・GitHub issues tagged as \"bug\" are triaged within 48 hours and resolved in subsequent releases\n・The user support channels on the Artifi community D",
+      "report": "A. Output: Direct link to the respective order management page\nAcceptance criteria:\n・Users can successfully view a list of their pending orders\n・Users can successfully submit a pending order cancellation transaction\n・Users can access a history page describing past orders and transactions\n・The views for the order management features can be found at the link\n\nEvidence: https://djed.artifi.finance/orders\nB. Output: Video walkthrough and screenshots demonstrating order management functionalities\nAcceptance criteria:\n・Users can successfully view a list of their pending orders\n・Users can successfully submit a pending order cancellation transaction\n・Users can access a history page describing past orders and transactions\n・The views for the order management features can be seen on the video and screenshots\n\nEvidence:\n・https://ipfs.io/ipfs/bafybeiflfzakle5cepepadohaawelw6zd6un4d6xbctrnxmdh2vhzvc7eq\n・https://ipfs.io/ipfs/bafkreicqeec4n3yyzmnugbz2vmll46fcpne5w4visyyijzsdn7qcoag3ye\n・https://ipfs.io/ipfs/bafkreianpn2hattocq55wleylwuaryh4542cjoeqzmo3xqwp3ztiwn4z7u\n\nC. Output: Links to the main GitHub pull request(s) merged to introduce the features, along with direct links to the implemented source code files\nAcceptance Criteria: The pull requests linked include all code developed in order to introduce the features for this milestone\nEvidence:\n・https://github.com/artifi-labs/open-djed/pull/127\n・https://github.com/artifi-labs/open-djed/pull/98\n\nD. Output: Link to a public up-time monitoring dashboard\nAcceptance Criteria:\n・The dashboard shows > 99% availability for the last month\n・Minimal service interruptions take place\n\nEvidence: https://status.artifi.finance/\nE. Output: Link to the GitHub repository\nAcceptance Criteria: GitHub issues tagged as \"bug\" are triaged within 48 hours and resolved in subsequent releases\nEvidence: https://github.com/artifi-labs/open-djed\nF. Output: Links to public conversations on public channels - no public conversations happened on the topic of Open DJE",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 16,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 7500,
+      "promise": "The inclusion of all necessary code and deployment changes to support SHEN yield simulation and tracking.\nMaintenance of Open DJED and user support for the 2nd month after proposal start.",
+      "criteria": "The acceptance criteria for this milestone are:\n・The views for SHEN yield simulation and tracking are consistent with the visual profile of the Open DJED app\n・Users can access a page for simulating and tracking SHEN yield over time\n・For the period spanning the 2nd month after proposal start:\n・Public up-time dashboard shows >= 99% availability\n・Minimal service interruptions take place\n・GitHub issues tagged as \"bug\" are triaged within 48 hours and resolved in subsequent releases\n・The user support channels on the Artifi community Discord are actively monitored and response times are under 24 hour",
+      "report": "A. Output: Direct link to the respective SHEN yield simulation page\n Acceptance criteria:\n・The views for SHEN yield simulation and tracking are consistent with the visual profile of the Open DJED app\n・Users can access a page for simulating and tracking the SHEN yield over time\n\nEvidence: https://djed.artifi.finance/simulator\nhttps://preprod.djed.artifi.finance/simulator\nB. Output: Video walkthrough and screenshots demonstrating the SHEN yield simulation\nAcceptance criteria:\n・Users can successfully define a simulation by entering amounts and dates\n・Users can successfully test different market prices to see their impact on returns\n・Users can successfully view a clear breakdown of transaction and protocol fees\n・Users can successfully identify rewards from staking and protocol fees\n・The views for the SHEN yield simulation features can be seen in the video and screenshots\n\nEvidence: https://ivory-historical-mole-598.mypinata.cloud/ipfs/bafybeighncxhyjlh6yqhdtktoxaeoptvczawg26davgs6sgs3co2uq3jzu\nC. Output: Links to the main GitHub pull request(s) merged to introduce the features, along with direct links to the implemented source code files\nAcceptance Criteria:\n・The pull requests linked include all code developed to introduce the features for this milestone\n\nEvidence: \nhttps://github.com/artifi-labs/open-djed/pull/198\nhttps://github.com/artifi-labs/open-djed/pull/188\nhttps://github.com/artifi-labs/open-djed/pull/168\nD. Output: Link to a public up-time monitoring dashboard\nAcceptance Criteria:\n・The dashboard shows > 99% availability for the last month\n・Minimal service interruptions take place\n\nEvidence: https://status.artifi.finance/\n・E. Output: Link to the GitHub repository\n\nAcceptance Criteria:\n・GitHub issues tagged as \"bug\" are triaged within 48 hours and resolved in subsequent releases\n\nEvidence: https://github.com/artifi-labs/open-djed\nF. Output: Links to public conversations on public channels - no public conversations happened on the topic of Open DJED during the per",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 20,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 17500,
+      "promise": "For the DJED analytics dashboard milestone, we propose the development of:\n・A dedicated publicly accessible dashboard section on the Open DJED app\n・The inclusion of key DJED metrics (KPIs and other relevant data not otherwise easily accessible) in the format of visualizations (charts, graphs and other interactive components)\n・New backend API endpoints to serve aggregated data to the dashboard and third parties\n\nThis dashboard will take inspiration from Ethena's dashboard page, where the wildly popular Ethereum DeFi product includes important key metrics related to the USDe and sUSDe markets (performance) and risk.\nMaintenance of Open DJED and user support for the 3rd month after proposal start.",
+      "criteria": "The acceptance criteria for this milestone are:\n・The dashboard is live and publicly accessible\n・The dashboard includes various important key metrics taking inspiration from Ethena and molded to the DJED model, which offers a different risk and market insights. These metrics include, but are not limited to, the following key indicators:\n・Circulating Supply (DJED and SHEN)\n・Reserve Ratio\n・DJED Price on Protocol versus On Secondary Markets (AMM DEXs)\n・SHEN Yield & Total Fees Accrued\n・SHEN/DJED market cap\n・Protocol Volume DJED/SHEN (Breakdown of Minting, Burning, and Total per token type)\n・The dat",
+      "report": "A. Output: Direct link to the respective DJED Analytics Dashboard page\nAcceptance criteria:\n・The dashboard is live and publicly accessible\n・The dashboard includes key DJED metrics providing different risk and market insights. These metrics include the following key indicators:\n・Reserve Ratio\n・SHEN & DJED market cap\n・Protocol Volume DJED & SHEN (Breakdown of Minting, Burning, and Total per token type)\n・Circulating Supply (DJED and SHEN)\n・SHEN & ADA price\n・SHEN Yield\n・DJED Price on Protocol versus On Secondary Markets (AMM DEXs)\n・The user interface is intuitive and easy to understand\n・The data presented is accurate and updated in a timely manner\n\nEvidence: \nhttps://djed.artifi.finance/analytics\nhttps://preprod.djed.artifi.finance/analytics\n\nB. Output: Video walkthrough demonstrating the DJED analytics Dashboard page\nAcceptance criteria:\n・Users can visualize key protocol metrics clearly through charts\n・Users can understand DJED and SHEN dynamics through intuitive visualizations\n・Users can access breakdowns such as:\n・Reserve Ratio\n・SHEN & DJED market cap\n・Protocol Volume DJED & SHEN (Breakdown of Minting, Burning, and Total per token type)\n・Circulating Supply (DJED and SHEN)\n・SHEN & ADA price\n・SHEN Yield\n・DJED Price on Protocol versus On Secondary Markets (AMM DEXs)\n・The charts for the DJED analytics page can be seen in the video and screenshots\n\nEvidence:\nhttps://youtu.be/7IqSqwQFtIE\n\nC. Output: Links to the main GitHub pull request(s) merged to introduce the features, along with direct links to the implemented source code files\nAcceptance Criteria:\n・The pull requests linked include all code developed to introduce the features for this milestone\n\nEvidence:\nhttps://github.com/artifi-labs/open-djed/pull/213\nhttps://github.com/artifi-labs/open-djed/pull/214\nhttps://github.com/artifi-labs/open-djed/pull/216\nhttps://github.com/artifi-labs/open-djed/pull/220\nhttps://github.com/artifi-labs/open-djed/pull/231\nhttps://github.com/artifi-labs/open-djed/pull/233\nhttps://github.com",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 30,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 10000,
+      "promise": "The milestone outputs for this milestone are:\n・An integrated internationalization (i18n) framework\n・Complete translations of the UI and error messages to common DeFi languages, including EN, ES, PT, DE, FR, CN, JA\n・A language switcher component on the UI for users to select their preferred language\n・End-user guide (how to mint/redeem) and exploration of core DJED protocol concepts for end-users in an article or video format\n・Detailed developer documentation for the API and integration flows\n・Reference documentation for the public Open DJED SDK (markdown and source code documentation)\n・A publicly accessible documentation site (e.g., using GitHub pages)\n・Maintenance of Open DJED and user support for the 4th month after proposal start.",
+      "criteria": "The acceptance criteria for this milestone are:\n・The platform is fully usable and understandable in all aforementioned language\n・The language switcher changes the application's selected language and saves the user's preference across sessions\n・A fallback to English is implemented for any untranslated texts or errors\n・The documentation is clear, well-structured, and hosted on a publicly accessible documentation site that is functional, easily navigable, and maintained in an up-to-date format.\n・The end-user guide is sufficient for a new DJED user (with entry level Cardano DeFi experience) to suc",
+      "report": "A. Output: Direct link to the Open DJED documentation portal\nAcceptance criteria:\n・The platform is fully usable and understandable in all supported languages (EN, ES, PT, DE, FR, CN, JA)\n・A language switcher is visible on the UI and allows users to change the application language\n・A fallback to English is implemented for any untranslated text or errors\n・The documentation is publicly accessible, well-structured, easy to navigate, and kept up to date\n・A publicly accessible SDK/API preview is available, allowing users and developers to explore and understand the available endpoints and integrations\n・The documentation source files are publicly available in the Open DJED GitHub mono-repository\n\nEvidence:\n・ https://djed.artifi.finance/\n・https://djed.artifi.finance/es\n・https://djed.artifi.finance/pt\n・https://djed.artifi.finance/de\n・https://djed.artifi.finance/fr\n・https://djed.artifi.finance/cn\n・https://djed.artifi.finance/ja\n・https://docs.djed.artifi.finance/\n・https://api.djed.artifi.finance/api/scalar#description/introduction\n・https://github.com/artifi-labs/open-djed/tree/main/packages/docs\n\nB. Output: Video walkthrough demonstrating translations, language switching, and documentation\nAcceptance criteria:\n・The video demonstrates the application functioning in all supported languages\n・The language switcher behavior is clearly shown\n・Users can understand how to mint and redeem DJED and SHEN through the provided guide\n・The documentation structure and usability are demonstrated (end-user + developer perspective)\n\nEvidence: https://www.youtube.com/watch?v=K92OXe4opLk\n\nC. Output: Links to the main GitHub pull request(s) merged to introduce the features, along with direct links to the implemented source code files\nAcceptance Criteria:\n・The pull requests linked include all code developed to introduce the features for this milestone\n\nEvidence:\nhttps://github.com/artifi-labs/open-djed/pull/288\nhttps://github.com/artifi-labs/open-djed/pull/289\nhttps://github.com/artifi-labs/open-dje",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 46,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 7500,
+      "promise": "Maintenance of Open DJED and user support for the 5th to 6th months after proposal start.",
+      "criteria": "The acceptance criteria for this milestone are for the period spanning the 5th to 6th months after proposal start:\n・Public up-time dashboard shows >= 99% availability\n・Minimal service interruptions take place\n・GitHub issues tagged as \"bug\" are triaged within 48 hours and resolved in subsequent releases\n・The user support channels on the Artifi community Discord are actively monitored and response times are under 24 hours for critical inquiries",
+      "report": "A. Output: Maintenance and support operations during Months 5-6\nAcceptance Criteria:\n・The pull request linked includes ongoing maintenance work carried out during the milestone period:\n\nhttps://github.com/artifi-labs/open-djed/pull/311\nhttps://github.com/artifi-labs/open-djed/releases/tag/0.7.9\n\nB. Output: Link to a public up-time monitoring dashboard\nAcceptance Criteria:\n・The dashboard shows > 99% availability for the last month\n・Minimal service interruptions take place\n\nEvidence: https://status.artifi.finance/\n\nC. Output: Link to the GitHub repository\nAcceptance Criteria:\n・GitHub issues tagged as \"bug\" are triaged within 48 hours and resolved in subsequent releases\n\nEvidence: https://github.com/artifi-labs/open-djed\n\nD. Output: Links to public conversations on public channels - no public conversations happened on the topic of Open DJED during the period encompassing this milestone\nAcceptance Criteria:\n・The user support channels on the Artifi community Discord are actively monitored, and response times are under 24 hours for critical inquiries\n\nEvidence:\nDiscord: https://discord.gg/MhYP7w8n8p\nGitHub: https://github.com/artifi-labs\n\nAdditional notes:\n・Volume analytics indicate low activity on the protocol, which partly explains the absence of critical support tickets. However, our consistent mainnet uptime also demonstrates that the project has reached a mature, reliable state, flawlessly supporting all existing usage without interruption.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 12
+    },
+    {
+      "no": 6,
+      "month": "8",
+      "cost": 7500,
+      "promise": "Maintenance of Open DJED and user support for the 7th to 8th months after proposal start.",
+      "criteria": "The acceptance criteria for this milestone are for the period spanning the 7th to 8th months after proposal start:\n・Public up-time dashboard shows >= 99% availability\n・Minimal service interruptions take place\n・GitHub issues tagged as \"bug\" are triaged within 48 hours and resolved in subsequent releases\n・The user support channels on the Artifi community Discord are actively monitored and response times are under 24 hours for critical inquiries",
+      "report": "A. Output: Maintenance and support operations during Months 7-8\nAcceptance Criteria:\n・The pull request linked includes ongoing maintenance work carried out during the milestone period:\n\nhttps://github.com/artifi-labs/open-djed/pull/312\nhttps://github.com/artifi-labs/open-djed/pull/313\nhttps://github.com/artifi-labs/open-djed/releases/tag/0.7.11\n\nB. Output: Link to a public up-time monitoring dashboard\nAcceptance Criteria:\n・The dashboard shows > 99% availability for the last month\n・Minimal service interruptions take place\n\nEvidence: https://status.artifi.finance/\n\nC. Output: Link to the GitHub repository\nAcceptance Criteria:\n・GitHub issues tagged as \"bug\" are triaged within 48 hours and resolved in subsequent releases\n\nEvidence: https://github.com/artifi-labs/open-djed\n\nD. Output: Links to public conversations on public channels - no public conversations happened on the topic of Open DJED during the period encompassing this milestone\nAcceptance Criteria:\n・The user support channels on the Artifi community Discord are actively monitored, and response times are under 24 hours for critical inquiries\n\nEvidence:\nDiscord: https://discord.gg/MhYP7w8n8p\nGitHub: https://github.com/artifi-labs\n\nAdditional notes:\n・Volume analytics indicate low activity on the protocol, which partly explains the absence of critical support tickets. However, our consistent mainnet uptime also demonstrates that the project has reached a mature, reliable state, flawlessly supporting all existing usage without interruption.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 14
+    },
+    {
+      "no": 7,
+      "month": "10",
+      "cost": 10000,
+      "promise": "Maintenance of Open DJED and user support for the 9th to 11th months after proposal start.",
+      "criteria": "The acceptance criteria for this milestone are for the period spanning the 9th to 11th months after proposal start:\n・Public up-time dashboard shows >= 99% availability\n・Minimal service interruptions take place\n・GitHub issues tagged as \"bug\" are triaged within 48 hours and resolved in subsequent releases\n・The user support channels on the Artifi community Discord are actively monitored and response times are under 24 hours for critical inquiries",
+      "report": "A. Output: Maintenance and support operations during Months 9-11\nAcceptance Criteria:\n・The pull request linked includes ongoing maintenance work carried out during the milestone period:\n\n https://github.com/artifi-labs/open-djed/pull/314\n https://github.com/artifi-labs/open-djed/releases/tag/0.7.12\n\nB. Output: Link to a public up-time monitoring dashboard\nAcceptance Criteria:\n・The dashboard shows > 99% availability for the last month\n・Minimal service interruptions take place\n\nEvidence: https://status.artifi.finance/\n\nC. Output: Link to the GitHub repository\nAcceptance Criteria:\n・GitHub issues tagged as \"bug\" are triaged within 48 hours and resolved in subsequent releases\n\nEvidence: https://github.com/artifi-labs/open-djed\n\nD. Output: Links to public conversations on public channels - no public conversations happened on the topic of Open DJED during the period encompassing this milestone\nAcceptance Criteria:\n・The user support channels on the Artifi community Discord are actively monitored, and response times are under 24 hours for critical inquiries\n\nEvidence:\nDiscord: https://discord.gg/MhYP7w8n8p\nGitHub: https://github.com/artifi-labs\n\nAdditional notes:\n・Volume analytics indicate low activity on the protocol, which partly explains the absence of critical support tickets. However, our consistent mainnet uptime also demonstrates that the project has reached a mature, reliable state, flawlessly supporting all existing usage without interruption.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 12
+    }
+  ]
+}

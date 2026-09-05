@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "A. 主要なコンポーネントと相互作用の図を含むシステム設計を記述する技術的な建築文書。\nB. 初期プロジェクトスキャフォールドを含む公開ソースコードを、すべての主要なシステムコンポーネントのスタブ実装で公開します。\nC. 開発プロセス全体を通してソースコードを構築し、テストするCI/CDワークフローの機能.",
+      "criteria": "A1. 建築文書は一般に公開され、提案の完全な範囲を反映し、主要なコンポーネントとその相互作用の図を含みます。\nB1. パブリックリポジトリには、アーキテクチャ文書に記載されている各主要なコンポーネントのスタブモジュールで初期プロジェクトスキャフォールドが含まれています。\nC1. CI/CD ワークフローはリポジトリ内で有効で、さらなる開発の準備でスキャフォールドをビルド/テストします.",
+      "report": "A2. プロジェクトリポジトリの公開アーキテクチャ文書へのリンク。\nhttps://github.com/tx3-lang/protocol-gateway/blob/main/design/001-api-scaffolding-spec.md#architecture\n\nB2. オープンソースコードを含む公開GitHubリポジトリへのリンク。\nhttps://github.com/tx3-lang/protocol-gateway\n\nC2. リポジトリで実行される成功したCI/CDへのリンク。\nhttps://github.com/tx3-lang/protocol-gateway/actions\n\nまた、配信されたマイルストーンのビデオウォークスルーも含まれています。\nhttps://youtu.be/5uVZ8qY4QAk"
+    },
+    {
+      "no": 2,
+      "promise": "A. 5つの選択されたCardanoの議定書のためのTx3インターフェイス定義は、ユーザーの意図、変数および検証の条件を十分に表わします。\nB.コードアーティファクト(Tx3定義から)は、各プロトコルのユーザーインテントからマッピングされたトランザクションの実行をテストします。\nC. 各プロトコルの Tx3 定義を使用する方法を説明するドキュメンテーション、およびマップされたトランザクションを記述する図.",
+      "criteria": "A1. それぞれ5つの選択したプロトコルは、その動作を完全に表す公開的に利用可能なTx3インターフェイス仕様を持っています。\nB1. 各プロトコルのコードアーティファクトは、ユーザーのインテントからマッピングされたトランザクションを正常に実行します。\nC1. 各プロトコルのドキュメンテーションとダイアグラムは公開され、Tx3の定義でどのように動作するかを説明しています.",
+      "report": "A2. 5つの議定書のそれぞれのためのTx3インターフェイス指定へのリンク。\n・ストライク・ステーキング: https://github.com/tx3-lang/protocol-gateway/tree/main/protocols tx3/strike-staking\n・Vyfi: https://github.com/tx3-lang/protocol-gateway/tree/main/protocols tx3/vyfi\n・Bodega 市場: https://github.com/tx3-lang/protocol-gateway/tree/main/protocols tx3/bodega-market\n・Fluid(水族館): https://github.com/tx3-lang/protocol-gateway/tree/main/protocols tx3/fluid-aquarium\n・インディゴ: https://github.com/tx3-lang/protocol-gateway/tree/main/protocols tx3/indigo\n\nB2. Tx3インターフェイスを使用して実行されたトランザクションを示す公開エクスプローラへのリンク。\n・Vyfi(スワップ):c54d08a6585f2326d6b6839b5876a3cb2117685241cf05ce1a11b60a7690d81f\n・ストライク(stake): 756abe04dc23ba9175719908c7d7ecc21316691f7b508e6bee1885810031c535\n・インディゴ(創作) : c54778b4fcb6741eed0d96763328673b4fa9947e0c6e5f29a735197fa94c7279\n・Bodega(buy-position): 77bee9ce5f044fa34d314f041377ee2c192c99aea288a03f4e170aa6cd0c33ed\n・フルード水族館(create babel tank): 00b510615cc8f85d5184b5f79294a72938b80d08a388a61638070a0fd36e076\n・フルードアクアリウム(withdraw tank): 87387762b15cd70fe9ddc30b26e4154a078bb5c3e87cc5a47ad37d3f1af1bae\n\nC2. 公開されたドキュメントと図を5つのプロトコルごとにリンクします。\n・ストライクステーキ: https://tx3.land/protocol/strike-finance/strike-staking\n・Vyfi: https://tx3.land/protocol/vyfi/vyfi\n・フルード(水族館): https://tx3.land/protocol/fluidtokens/fluid-aquarium\n・インディゴ: https://tx3.land/protocol/indigoprotocol/indigo\n・Bodega Markt: https://tx3.land/protocol/bodega-market/bodega market\n\nまた、配信されたマイルストーンのビデオウォークスルーも含まれています。\nhttps://youtu.be/uknIHWurxlY"
+    },
+    {
+      "no": 3,
+      "promise": "A. Tx3インターフェイス定義から直接APIエンドポイントを生成する自動コード生成ツールです。\nB. 選択したプロトコルの Tx3 定義されたインタラクションを HTTP/JSON-RPC エンドポイントで公開する機能的な API レイヤーです。\nC. コード生成ツールと API レイヤーの両方の公開ソースコードが公開されています。\nD. 利用可能な API エンドポイントを記述するドキュメント.",
+      "criteria": "A1. コード生成ツールは、Tx3 インターフェイス定義から API エンドポイントを正常に生成します。\nB1. API レイヤーは、HTTP/JSON-RPC エンドポイントの機能により、選択した各プロトコルとのやり取りを成功させることができます。\nC1. 公開リポジトリには、コード生成ツールと API レイヤーのオープンソースコードが含まれています。\nD1. 利用可能な API エンドポイントを記述するドキュメントを公開しました.",
+      "report": "A2. Tx3 インターフェイス定義から生成される API エンドポイントコードの例へのリンク。\n- https://rpc.tx3.land/strike-staking/openrpc.json\n- https://rpc.tx3.land/vyfi/openrpc.json\n- https://rpc.tx3.land/bodega market/openrpc.json\n- https://rpc.tx3.land/fluid-aquarium/openrpc.json\n- https://rpc.tx3.land/indigo/openrpc.json\n\nB2. 選択したプロトコルとのやり取りを実証するAPI呼び出しの成功へのリンク。\nhttps://github.com/tx3-lang/protocol-gateway/blob/main/protocols tx3/B2-successful-api-calls.md\n\nC2. コード生成ツールとAPIレイヤーのオープンソースコードを含むパブリックリポジトリへのリンク。\nhttps://github.com/tx3-lang/protocol-gateway\n\nD2. ドキュメントへのリンク\n- https://rpc.tx3.land/strike-staking/docs\n- https://rpc.tx3.land/vyfi/docs\n- https://rpc.tx3.land/bodega market/docs\n- https://rpc.tx3.land/fluid-aquarium/docs\n- https://rpc.tx3.land/indigo/docs\n\nマイルストーンのビデオへのリンク:\nhttps://youtu.be/p3rgxGH2KLA"
+    },
+    {
+      "no": 4,
+      "promise": "A. 完全に API レイヤーをインストールして実行するためのパブリックで利用可能な Docker イメージ。\nB. 完全 API レイヤーのソースコードを公開しています。\nC.プロジェクトに含まれるすべてのプロトコルに対して公開可能なTx3ファイル。\nD. 送信されたすべてのコンポーネントをカバーする公開可能なドキュメント。\nE. プロジェクトの最終出力を示すクローズアウトビデオ。\nF. プロジェクトプロセスと最終結果を説明するクローズアウトレポート.",
+      "criteria": "A1. Docker イメージにより、API レイヤーがインストールされ、追加設定なしで正常に動作させることができます。\nB1。 完全な API 層は、配信されたエンドポイントを介してサポートされたプロトコルとやり取りするために正常に使用できます。\nC1. 含まれているすべてのプロトコルの Tx3 ファイルは、対応するトランザクションの生成と実行に使用できます。\nD1. ドキュメントは、開発者が追加のガイダンスなしで配信されたコンポーネントをセットアップおよび使用できるようにします。\nE1. クローズアウトビデオは、触媒ガイドラインに従います。\nF1. クローズアウトレポートは、触媒ガイドラインに従います.",
+      "report": "A2. ダウンロード(https://github.com/tx3-lang/protocol-gateway/pkgs/container/protocol-gateway)で利用可能なドッカー画像\nB2. Githubリポジトリ(https://github.com/tx3-lang/protocol-gateway)で利用可能なソースコード\nC2. Tx3インタフェース仕様(https://github.com/open-tx3/)へのリンク\nD2. ドキュメントサイト(https://docs.txpipe.io/tx3)\nE2. YouTubeにアップロードされた動画を閉じる(https://youtu.be/GOKdMNg4D5E)\nF2. Googleドライブにアップロードされたレポートを閉じる(https://drive.google.com/file/d/15SXwQLVprDk20XPq1SrSK95x8SEp-5XR/view?usp=sharing)"
+    }
+  ]
+}

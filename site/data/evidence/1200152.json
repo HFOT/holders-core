@@ -1,0 +1,60 @@
+{
+  "title": "Minswap Cardano DeFi Onboarding: Incentive Program",
+  "ms": [
+    {
+      "no": 1,
+      "month": "10",
+      "cost": 11488,
+      "promise": "Documentation detailing the incentive program point system including: \n・how to qualify for rewards\n・what types of actions are required to gain points\n・how we plan to balance the point distribution\n・how much time the incentive program will last\n・how points will be calculated and distributed\n・how much rewards are going to be disbursed during this program\n・how we plan to track and manage bot and excessive activity\n\nContextual Notes: Apart from the fixes, there are some changes being made with this last submission of SoM. \nMainly: it is about the removal of certain actions to qualify for points during the incentive program.\nThe inclusion of such actions such as providing liquidity or bridging would make the program overly complicated for the development side as well as participation. It would also dilute the low rewards to the point it may make participating in the program not even worth it. For the Wanchain part, we plan on still including the incentives from Wanchain, but it will be handled by Wanchain and not part of this program.\nWe want this program to be an initiative that is replicable and useful in the future, and can be applied to other projects. For the Cardano ecosystem, the",
+      "criteria": "The Point System documentation illustrates in detail:\n・how to qualify for rewards during the incentive program:\n・which action a user can do to gain points, \n・how points are calculated and distributed, \n・how the points distribution is balanced, \n・how much time the program will last, \n・how much rewards are going to be disbursed\n・how we plan to track and manage bot and excessive activity",
+      "report": "・A public Google Drive containing Minswap incentive program Point System detailed document containing all of the points mentioned in acceptance criteria",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "11",
+      "cost": 30000,
+      "promise": "Output 1:\nDevelopment of a functional Points System tracking mechanism on minswap: tracks how many swaps an incentive program user does, total volume of his swaps. The point system keeps track of all this data for every participant. Rewards will be distributed at the end of the program based on this stored data and on how much rewards are to be disbursed. \nOutput 2: \nDevelopment of a point dashboard on which participants will be able to see their stats live (traded volume, trades number, personal score) and also top program scorers stats.\nOutput 3:\nDevelopment of an anti bot system with the aim of tracking excessive activity and maintaining points distribution fair.\nOutput 4:\nThe point system program will work fetching Minswap DEX database to track users actions. The development of the tracking system, the dashboard and the anti bot system require sql, html, css and typescript coding. \nContextual Notes:\nPlease see them in the M1 output section for full rationale.",
+      "criteria": "Acceptance 1:\nPoints System mechanism code is fully functional and open sourced, the system must track participants trade volume, trade numbers.\nAcceptance 2:\nPoint Dashboard code is fully functional and open sourced. It must show top users' score stats and individual score of the visitor like traded volume, trade numbers, total points.\nAcceptance 3:\nAnti bot system code is fully functional and open sourced.\nAcceptance 4: \nThe point system program accurately tracks users actions. Point System, Point Dashboard and Anti-bot system are operational and ensure a good experience participating in the",
+      "report": "All evidences are in 1 repo: https://github.com/minswap/cardano-onboarding-incentive-program\n・Evidence 1: Github public repository containing completed code of the functional Point system mechanism \n・file: https://github.com/minswap/cardano-onboarding-incentive-program/blob/main/packages/api/src/service/trading-point-service.ts\n・Evidence 2: Github public repository containing completed code of the Points Dashboard\n・file: https://github.com/minswap/cardano-onboarding-incentive-program/blob/main/packages/api/src/cmd/point-aggregator-cron/point-aggregator-cron.ts\n・Evidence 3: Github public repository containing completed code of the anti bot system -> same to evidence 2\n・Evidence 4: Points Dashboard transparently displays participant stats and links their addresses for anyone to confirm results of the Point System.\n・https://minswap.org/leaderboard",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "12",
+      "cost": 23006,
+      "promise": "Output 1:\nLaunch of the Minswap incentive program. During this period, all participants will be able to track their ranking in the Point System dashboard on Minswap Dapp.\n﻿Output 2: \nFinal individuals' points will determine how available incentives are distributed to different participants according to their success in the Points System.\nOutput 3:\nRewards will be distributed according to the Points ranking. TX IDs will be provided for disbursement. At least 33,192.6 ADA are disbursed as incentive rewards to the participants at the end of this Milestone.",
+      "criteria": "Acceptance 1:\nParticipants can track their ranking and all of their stats live on the Points Dashboard. They can also see top scorers stats.\nAcceptance 2:\nAt the end of the program a public document is published containing every user stats and how many points it earned them. Based on the total amount of points earned from participants and based on the total amount of the program rewards, total reward for every point will be calculated and published in this document. Participants will receive rewards based on this number multiplied for their total score, at the end of the final milestone. This",
+      "report": "Evidence 1:\nFunctional webpage on Minswap dapp where participants can look at the dashboard to see all the stats here\nEvidence 2:\nPublic social link to the post referencing summary document available here (please see first comment under post for \"referring to document\")\n﻿Evidence 3:\nReceipts of incentives distributed are transparently available here",
+      "kinds": [
+        "chain",
+        "other",
+        "social"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "13",
+      "cost": 35506,
+      "promise": "・Final close-out report\n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "・Final close-out report\n・Final closeout video",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

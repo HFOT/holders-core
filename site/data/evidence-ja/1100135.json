@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・条件を記述し、ランバダと規則をトリガーする形式を記述する公式文書。\n・FIGMAの設計\n・インフラハイレベル設計図;\n・初期インフラの採用;",
+      "criteria": "・文書化は、ユーザーが自分のコードとAquarium UI から Lambdas と規則をセットアップするために使用できるサポートされている形式を記述します。\n・UIデザインは、ランバダ/ルール/FeeTank作成ページがどのように見えるかを定義する必要があります\n・HLD図は、ユーザーが検証者ネットワークに水族館のインフラが相互接続されているかを示す必要があります。\n・インフラは、次のマイルストーンのバックエンドロジック、エンドポイント、フロントエンドホスティングの作成を許可する必要があります。 インフラは、できるだけ多くのサーバーレスである必要があります.",
+      "report": "お問い合わせ\nマイルストーン完了の証拠を以下に、必要なすべての文書があります。\n・水族館HLD図: https://catalyst-aquarium.s3.eu-west-1.amazonaws.com/Aquarium%20HLD.png\n・水族館フォーマットのドキュメント: https://docs.google.com/document/d/1nES-3YWLCitBgytLJnh20icS5Q 5TsNB1iIqPWGtWI/edit?usp=sharing\n・Figmaテンプレート:https://www.figma.com/file/1k9A4hDiUcHbHV3EjHCbL/FluidTokens-Aquarium?type=design&node-id=81%3A2&mode=design&t=kT1KAcRMaPuVyso7-1\n・クラウドインフラのスクリーンショット: https://catalyst-aquarium.s3.eu-west-1.amazonaws.com/initial infrastructure deployment.png"
+    },
+    {
+      "no": 2,
+      "promise": "・フロントエンド: アクアリウムの料金表を作成、補充、撤退、視覚化するためのUI\n・Offchain:FeeTanksを管理する Lucid コード\n・バックエンド:ブロックチェーンを聴くためのコードロジックと、新しい再充填と引き出すFeeTanks",
+      "criteria": "・FeeTanksを管理するためのフロントエンドページ\n・FeeTanksの作成/補充/撤退する能力",
+      "report": "アクアリウム-dev.fluidtokens.com/tank\nCardano Previewネットワークで試してみませんか?\nタンク作成例トランザクション: https://preview.cexplorer.io/tx/0a906a32b39dc85a2a25cd41391ac63a57bcbb7d5809f1e74c263e84c196ca71\nタンクは、例えばトランザクションを消費します: https://preview.cexplorer.io/tx/6e49466dfad17dece8074dc06c1e3a6f89e154e154e154e75420802306b1596c76896240\nタンク補充例のトランザクション: https://preview.cexplorer.io/tx/8d1d87419d00ac0bb6dc43f9e513f082c04be2c1b6c48ced59e1b7a93fa8d\nウェブサイトにタンクを作成/編集/変換すると、同様の取引を得ることができます。\nお問い合わせ!"
+    },
+    {
+      "no": 3,
+      "promise": "・フロントエンド:Lambdas(FeeTankを費やすと指定する)と規則(スケジュールされたトランザクションを提出すべきトリガーを指定する)を作成する/編集/キャンセルするUI\n・バックエンド:これらのアクションをサポートするエンドポイント",
+      "criteria": "・ユーザーは、自分のFeeTanksに添付されたラムダとルールを作成/編集/編集することができます\n・ホワイトリストされたアドレスは、トランザクション手数料のユーザのFeeTankを使うことができます。\n・ユーザの署名されたトランザクションは特定の時間でトリガーされます",
+      "report": "ご挨拶の審査者!\nマイルストーン3の目的を終えました: ユーザーが自分のタンクを消費し、指定された時間(ルール)で自動的に実行されるCardanoトランザクションをスケジュールできるアドレス(Lambdas)をホワイトリストすることができます!\nカルダノプレビューネットワークでは、まだ注意が必要です。\nタンク、ラムダ、規則の管理を可能にするフロントエンドは次のとおりです。 https://aquarium-dev.fluidtokens.com/tank\nホワイトリストアドレスで実行されるトランザクションオンチェーン: https://preview.cexplorer.io/tx/e58ecade9f8cd11a42ee7f2b86cda00f15b3792e8e2322a64a5ad26c6df245\n前回の取引で使用されるタンクを示すスクリーンショット: https://catalyst-aquarium.s3.eu-west-1.amazonaws.com/milestone%203/photo 5945116494906114832 y.jpg\n指定された時間で実行されるトランザクションオンチェーン: https://preview.cexplorer.io/tx/fa0f69ebda5da84e7df041fcd07c70fec28962d6611876d03d8bf72d77cb7850\n前回の取引で使用されるタンクを示すスクリーンショット: https://catalyst-aquarium.s3.eu-west-1.amazonaws.com/milestone%203/photo 5945116494906114825 w.jpg"
+    },
+    {
+      "no": 4,
+      "promise": "・分散型ネットワークに属するバリデータの調整アルゴリズムを記述するドキュメント\n・2つのバリデータを用いたアルゴリズム実装",
+      "criteria": "・アルゴリズムの仕組みや、今後の改善のあり方を文書化\n・2つのバリデータは、毎回ブロックチェーンに送信するテストトランザクションを選択するように振る舞います",
+      "report": "スタッフ募集!\nこのマイルストーンで行われる出力は次のとおりです。\n・水族館のバリデータの調整アルゴリズムが公式リポジトリのReadMeファイルであることを決定した文書:https://github.com/FluidTokens/ft-cardano-aquarium-sc\n・水族館のバリデータ登録者2名分の事前取引\n・https://preprod.cexplorer.io/tx/332038e642ea621ae83bb2a2595c319a92104daeecc436bec62ba6539ff46196\n・https://preprod.cexplorer.io/tx/4a69e20a1e8adf8d27e223996544e8f2ba2aeb1eb9844bc96cf8cbae8291e721\n・2つのバリデータが自動的に実行されるプリプロドトランザクション:\n・https://preprod.cexplorer.io/tx/e729bc5b35b4e2d230f145a0dc768f1a09679393a5ba82fd00629445c7b9ebcd\n・https://preprod.cexplorer.io/tx/f1bb02a7b4eb1d786a9a89a4fe93ed05cad4bb22e080b59ed8a2b5f634f\n\n「ノードの調整アルゴリズム」の章は、水族館のノードがどのように調整するかを説明するものです。特に、それらは実際に調整しませんが、代わりに約束/スケジュールされたトランザクションを実行する際により速くなるゲームに参加しています。 最終的には、すべてのノードに比例してオフチェーンを共有します。\nマイルストーンがフロントエンドを確定し、契約を監査するかどうかをお知らせください!"
+    },
+    {
+      "no": 5,
+      "promise": "・フルフローはオンラインで、Cardano Previewネットワークを利用\n・公文書\n・バリデータ $FLDT ロックスマートコントラクトのオーディエンス",
+      "criteria": "・フロントエンドでFeeTanks、Lambdas、規則を管理することができます。\n・公文書は、FeeTanks、Lombdas、規則について何、理由、方法を説明する\n・監査が完了し、重要なセキュリティ問題が残っていない",
+      "report": "再びレビューをしています!\nマイルストーン5完成:\n・プレビューネットワークでの作業フロントエンド:https://aquarium-dev.fluidtokens.com/\n・スマートコントラクトの監査報告: https://fluidtokens.com/audits/FluidTokens Aquarium Anastasia Labs.pdf\n・公開文書:https://docs.fluidtokens.com/protocols/aquarium/\n\n何かを必要とすれば、素晴らしい一日をお過ごしください!"
+    },
+    {
+      "no": 6,
+      "promise": "・Cardano Mainnetネットワーク上のソリューションの採用\n・コミュニティとdAppは、サービスを利用して、FeeTanks/Lambdas/Rulesを作成し、Aquariumを通じて取引を実行することができます",
+      "criteria": "・前回のマイルストーンでプレビューに展開した作業ソリューションがメインネットに展開",
+      "report": "みんなこんにちは!\n公式監査完了後、メインネットで水族館を正式にリリースしました。\nリンクはこちら: https://aquarium.fluidtokens.com/\nレポートを閉じる: https://drive.google.com/file/d/1iVZqhRHyT-9IqYGKHNUpk4cLVJSmGOPW/view?usp=sharing\nビデオを閉じる(デモ付き): https://youtu.be/D2wBG9fjcKU\nこれは、偉大な査読者であるために、私たちの最終的なマイルストーンを完了します!"
+    }
+  ]
+}

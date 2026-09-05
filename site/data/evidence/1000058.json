@@ -1,0 +1,70 @@
+{
+  "title": "Customizable Staking Baskets Platform - Incentivizing Cardano's Decentralization",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "This milestone will output a working smart-contract on Cardano's preview network that allows you to delegate to multiple stakepools simultaneously by depositing ADA. Users will also receive a Basket token from this contract that will allow them to withdraw their ADA deposit plus their staking rewards.",
+      "criteria": "This milestone should be accepted given that there's on-chain evidence of the smart-contract MVP can delegate to multiple pools at the same time and collect ADA staking rewards for Basket deposits.",
+      "report": "We've created the smart-contract and have deposited ADA that's delegated to multiple pools. Below we will submit multiple transaction from the smart-contract that show the ADA being deposited into the contract and staked, and the creation of Diffusion tokens that users can deposit to withdraw their ADA.\n\nTransactions:\nInitial creation of contract: https://preview.cexplorer.io/tx/df744cdfb5ea5e7b48cc6476c6b5e075e5e1c40c13cab866bd8bf11d11a18636\nDepositing ADA into the contract, and receiving Basket tokens in the same transaction:\nhttps://preview.cexplorer.io/tx/e1f719d822670f720a607557212a4e273cf45364852346b11d99b4bdff09fd40\nDepositing Basket tokens into the contract to withdraw ADA:\nhttps://preview.cexplorer.io/tx/2048818ef576442bcf303b1c393b8f554ef70f4ee9986579bd0f3c9d10fb3c0a",
+      "kinds": [
+        "chain"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 90000,
+      "promise": "This milestone will output a simple front-end interface for creating a Basket. This front-end interface will be integrated with the smart-contract to allow an admin to create a Basket on Cardano's preview network.",
+      "criteria": "This milestone should be accepted, give that the team provides evidence of a working smart-contract that's created through a simple front-end application.",
+      "report": "In this milestone we created a Staking Basket on Cardano's preview network. We deposited two thousand ADA and delegated it to ten different stakepools.\nI recorded the process of creating the Basket, depositing ADA, and the multi-delegation. The first video is the creation of the Basket, and the second video has commentary that tells you exactly what's going on.\nHere is the link to both videos:\nhttps://www.dropbox.com/scl/fi/bulw3izlj02wa28ywsy81/2023-12-17-10-42-14.mkv?rlkey=dxq5tf5c83zfoa89mj51jq0p1&dl=0\nHere is a link to all of the Cardano transactions preformed in this video:\nhttps://preview.cardanoscan.io/transaction/b67e496a66a3852fb3a81a0b9537fbfdcadf2437d7017dcde4f140fde414a286\nhttps://preview.cardanoscan.io/transaction/e0f293dd01e86f8ce15df3750cba6c5557ad162c5c981555fe0c23b15edc8c5c\nhttps://preview.cardanoscan.io/transaction/ad23fe8e5e089f21d12f9d20a08a0110e0bdb965be05e7cc9734b27bcdf4e0c0\nhttps://preview.cardanoscan.io/transaction/ae09484dc79b47ed734682643aec530ad7b883caf50fa3c7d691be80cd176326\nhttps://preview.cardanoscan.io/transaction/15f85c51acc524ae209186b68102a9306be18de2a21617ee62d7830814328f73\nhttps://preview.cardanoscan.io/transaction/22dcfaa16c2ad18abc7122c5ab23c564076add36ddfa33ccada841147eadb38e",
+      "kinds": [
+        "chain",
+        "other"
+      ],
+      "links": 7
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 70000,
+      "promise": "We'll gather 50 real stakepool operators on Cardano's preview network to be Basket operators. We'll create a smart-contract that delegates millions of ADA to these 50 SPOs to test the smart-contract. Users and SPOs will be able to submit these issues into a google form. This will output the any issues users or SPOs with the smart-contract, and the front-end interface. We'll now be able to solve these issues before we release Staking Baskets to mainnet.",
+      "criteria": "This milestone should be accepted once we create a smart-contract that delegates millions of ADA to 50 real SPOs on Cardano's preview network.",
+      "report": "For this milestone we created a Staking Basket on Cardano's preview network, and then slowly added in more pools until we were at a total of 50 different stakepools at a time.\nHere are the transactions for creating the Staking Basket smart-contract on-chain:\nhttps://preview.cardanoscan.io/transaction/df744cdfb5ea5e7b48cc6476c6b5e075e5e1c40c13cab866bd8bf11d11a18636\nhttps://preview.cardanoscan.io/transaction/4ac8569afb671b55eec05b78116fbe28582ed328f1d45e94bf990385a2255df6\nhttps://preview.cardanoscan.io/transaction/fbd656060b0e2d4613cc11de437bccc555adf3f68201d414a50992ca5e65aa7c\nThis is a user deposit transaction:\nhttps://preview.cardanoscan.io/transaction/e1f719d822670f720a607557212a4e273cf45364852346b11d99b4bdff09fd40\nThis is a user withdraw transaction:\nhttps://preview.cardanoscan.io/transaction/1da425fe5be5efbe99dbdfb7c5642e55910257719451a84de433cb70c17bc062\nThis is a link to a video that shows the Basket data:\nhttps://www.dropbox.com/scl/fi/n1tw0sfdun20jtyv6yrma/2024-01-20-11-53-41.mov?rlkey=d2id188wrbrfihf7ffvme2k56&dl=0\nHere is the link to the user feedback about Atrium/Baskets:\nhttps://docs.google.com/spreadsheets/d/14lajG6eDgGrUtit8jbMrX7zNbOI3c8EkWBDsLb0wqeI/edit?usp=sharing\n*Resubmission updates:\nWe had one of of two reviewers deny our proof of achievement claiming that there was no way to verify that the pools on the front-end matched up with the actual Basket. Although the reviewer could have found that there is millions of ADA delegated to 50 SPOs through the transactions provided, we will provide another link that shows a detailed overview of the multi-delegation.\n\nThis link is the script address on cexplorer, it shows the multi-delegation, the ADA and all of the pools.\nLink: https://preview.cexplorer.io/address/addr_test1xz9c596desmw0khrwm4tqefzxrh6ty73nfg2jx8vs6ca5nn7cm54ax9s27tw9nlnrnrs2adtpzcglpr3p52tgds5uztslv8cnr",
+      "kinds": [
+        "chain",
+        "doc",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 20000,
+      "promise": "To ensure we ship the best Staking Basket contract to mainnet we need user feedback. The output for this milestone will solve bugs with deposits given that there are issues.",
+      "criteria": "This milestone should be accepted, given that there are 50 deposits from different staking keys to test Staking Basket smart-contracts on Cardano's preview network. We will analyze that the 50 deposits were successful by checking on-chain data, and having a user feedback form available for failed deposits.",
+      "report": "For this milestone we've opened up our platform to a few hundred people to try Staking Baskets for the first time. We've compiled all of the user addresses that made Staking Basket deposits into a spreadsheet. You can view the deposits by querying any of these addresses in an explorer application. If you see a transaction that's interacting with a smart-contract, and it gives the user 'Diffusion' tokens for ADA deposits. That's a Staking Basket transaction.\n\nThis is a link to the Diffusion token that you get for depositing into the Basket on Cardanoscan: \nhttps://preview.cardanoscan.io/token/asset13h5p3alpgrjynrevvkkgq4uys3f4e2dv8x74ng\nYou can see that there's been over 1400 transactions with the token. If you scroll down you can see a large amount of Staking Basket deposits/withdraws from various users.\n\nWe opted to not use user-feedback forms and created a channel for early Staking Basket testers to provide their feedback, and list any bugs they ran into. This allowed us to work directly with each individual instead of trying to contact them after form submission. I compiled a list of various reviews here:\nhttps://drive.google.com/drive/folders/1eQHHA64zo9dR6ZYP169y4FhRf1PWtDlx?usp=sharing\nThis is a compiled list of user feedback in our Discord. If any reviewer wants to verify these by joining our Discord, please tag me and I will assign the correct role. We had ALOT more feedback than just 50.\n\nYou can also verify the creation of the Staking Basket on chain through these transactions:\nhttps://preview.cardanoscan.io/transaction/df744cdfb5ea5e7b48cc6476c6b5e075e5e1c40c13cab866bd8bf11d11a18636\nhttps://preview.cardanoscan.io/transaction/4ac8569afb671b55eec05b78116fbe28582ed328f1d45e94bf990385a2255df6\nhttps://preview.cardanoscan.io/transaction/fbd656060b0e2d4613cc11de437bccc555adf3f68201d414a50992ca5e65aa7c",
+      "kinds": [
+        "chain",
+        "doc"
+      ],
+      "links": 5
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 45000,
+      "promise": "This milestone will mark the completion of our Catalyst proposal. The outputs for this milestone will be a stylized front-end that's connected to the smart-contract on Cardano's preview network. Users can use this front-end to deposit ADA, get Basket tokens, and withdraw their staking rewards + their ADA with their Basket tokens. We also may find more bugs, and ways to improve our UX/smart-contract. With this final milestone, we're gathering 150 real Cardano users with different staking addresses to test Baskets, and provide feedback.",
+      "criteria": "This milestone should be accepted given that there's a stylized front-end interface where users can deposit ADA for Basket tokens, and withdraw their ADA/staking rewards using their Basket tokens. There will also need to be 150 real users that deposit into Baskets, and fill out a feedback form.",
+      "report": "You can try Staking Baskets in preview by using this link: https://alpha.atrium.io\n\nYou will need to use a wallet that supports Cardano's preview network. We recommend using Eternl.\n\nYou can view our text close our report here: https://docs.google.com/document/d/1QH1J_JhQgbKuBJ3wFljTX38hcsdZxDo1SA40KGLhEbc/edit?usp=sharing\n\nYou can view our close-out report video, and a deposit/withdraw into the smart-contract with this link:\nhttps://www.dropbox.com/scl/fi/z17acosqf7ruej3qvs1eo/2024-04-25-14-35-30.mov?rlkey=f23fwpt8jpn5lnp6752ko9yib&st=k47pco94&dl=0\n\nYou can view a large amount of user feedback using this link:\nhttps://docs.google.com/spreadsheets/d/14lajG6eDgGrUtit8jbMrX7zNbOI3c8EkWBDsLb0wqeI/edit?usp=sharing \n\nSome of this user feedback is quick so that they can fill out the form, however if you keep scrolling there is valuable feedback. During this testnet we also have a discord server at https://discord.gg/atriumlab. In this Discord there was thousands of messages of feedback that allowed us to increase the user experience, and fix bugs.",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 5
+    }
+  ]
+}

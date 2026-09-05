@@ -1,0 +1,56 @@
+{
+  "title": "Metera Protocol | Aiken Test-net Development",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 29700,
+      "promise": "・Requirements analysis (Proprietary)\n・Analysis of feasibility for implementing dynamic state on chain\n・Description of system design and transactions diagram. \n・Implementation of a service in NodeJS + Lucid with endpoints for every operation: from portfolio creation to order processing. \n・Demo showing well behavior of implemented server with transaction on prepod testnet.",
+      "criteria": "Off chain code allows the following interactions:\nCreate Portfolio\nMint instrument\nBurn instrument",
+      "report": "Outputs stated on the milestone such as: \n・Requirements analysis (Proprietary)\n・Description of system design and transactions diagram. \n\nare considered \"trade secrets\" and if public could give an edge to our competitors. All transaction and smart contract design has been completed and implemented. You can see the results in the demos included in the following links:\nhttps://docs.google.com/document/d/1u5EuD7iZLZmISYxqyCr2x2v6B_s9ki81sYYl9wHpfhs/edit?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 29700,
+      "promise": "・Implementation of web app functionality regarding orders and batcher.\n・Integration of implemented smart contract service with existing web app.\n・UX/Ui new designs",
+      "criteria": "・Batching server is working and processing transactions. \n・New UX/UI has been designed and implemented\n・Frontend is interacting with smart contracts",
+      "report": "Evidence of milestone completion:\n・New UX/UI Designs on figma\n・New UX/UI implemented\n・Buy Instrument\n・Sell Instrument\n・Full onchain validation - Proprietary\n・https://drive.google.com/drive/folders/1HolmjZz_fLQUITv6rfCcJKnSwcGmc8YC?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 24750,
+      "promise": "・Aiken validators for portfolios\n・Aiken MTK minting Policy\n・Unit Testing \n・Public testnet available to selected users\n・",
+      "criteria": "All transactions handled go through on-chain validations. If a transaction does not comply with parameters the transaction fails. \nThis is all accessible when interacting through the frontend.",
+      "report": "Milestone #3 Deliverables:\n\nProject ID\n1100196\nLink\nOpen full project\nChallenge\nF11: Cardano Use Cases: Concept\n\nMilestone Outputs\n・Aiken validators for portfolios\n・Aiken MTK minting Policy\n・Unit Testing \n・Public testnet available to selected users\n\nAcceptance criteria\n・All transactions handled go through on-chain validations. If a transaction does not comply with parameters the transaction fails.\n・This is all accessible when interacting through the frontend.\n\nEvidence of milestone completion\n・Unit testing\n・Demo showcasing interactions through the frontend.\n・Public test-net access on preprod network.\n・Traces on Lucid emulator\n\nEvidence of milestone completion:\n\n・Public testnet is live for everyone to try out. https://test.meteraprotocol.io/\n・All transactions go through aiken validation.\n・Unit testing video\n・Lucid Emulator Tracies video\n・Demo showcasing interactions through frontend",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 14850,
+      "promise": "・2/3 page written summary ‘Project Closeout Report’\n・Fully working test-net on preprod network. \n・Short public video detailing the project and its outputs 2 - 5 mins in length.",
+      "criteria": "・Video has been submitted and meets all criteria https://docs.projectcatalyst.io/fund-documentation/fund10-docs/funded-project-reporting-guideline/project-closeout-report-and-project-closeout-video-pcr-and-pcv\n・Reviewers and community have access to public test-net﻿",
+      "report": "Closeout document: https://docs.google.com/document/d/199Ek4GYKD_pf4eX1J2tfxhabkp2FRw2yBYZbzidnff8/edit?usp=sharing\nCloseout video report: https://www.youtube.com/watch?v=cesy_fv87GM",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "A. 主要なコンポーネントと相互作用の図を含むシステム設計を記述する技術的な建築文書。\nB. 初期プロジェクトスキャフォールドを含む公開ソースコードを、すべての主要なシステムコンポーネントのスタブ実装で公開します。\nC. 開発プロセス全体を通してソースコードを構築し、テストするCI/CDワークフローの機能.",
+      "criteria": "A1. 建築文書は一般に公開され、提案の完全な範囲を反映し、主要なコンポーネントとその相互作用の図を含みます。\nB1. パブリックリポジトリには、アーキテクチャ文書に記載されている各主要なコンポーネントのスタブモジュールで初期プロジェクトスキャフォールドが含まれています。\nC1. CI/CD ワークフローはリポジトリ内で有効で、さらなる開発の準備でスキャフォールドをビルド/テストします.",
+      "report": "A2. プロジェクトリポジトリの公開アーキテクチャ文書へのリンク。\nhttps://github.com/tx3-lang/trix/blob/feat/aiken-vulnerability-detection/design/003-aiken-vulnerability-scaffolding.md\n\nB2. オープンソースコードを含む公開GitHubリポジトリへのリンク。\nhttps://github.com/tx3-lang/trix/tree/feat/aiken-vulnerability-detection\n\nC2. リポジトリで実行される成功したCI/CDへのリンク。\nhttps://github.com/tx3-lang/trix/actions?query=branch%3Afeat%2Faiken-vulnerability-detection\n\nD2. 設計した建築の映像ウォークスルー。\nhttps://youtu.be/SpN1GlbMH2s"
+    },
+    {
+      "no": 2,
+      "promise": "A.アイケンコードの一般的な脆弱性パターンのルールベースのディテクタの初期セットでヒューリスティック解析エンジンを機能させる。\nB. 脆弱性パターンとエンジンのルールを文書化したデータファイル。\nC. 開発者がローカルでヒューリスティックスキャンを実行できるようにするCLIインターフェイス。\nD. テストの既知の脆弱性を持つアイケンスクリプトを含む評価データセット.",
+      "criteria": "A1. ヒューリスティック分析エンジンは、アイケンのコードをスキャンし、発見された脆弱性の構造化されたレポートを配信することができます。\nB1. 脆弱性パターンと関連するルールを記述するデータファイルが公開され、実装されたロジックと一致しています。\nC1。 CLIインターフェイスは、ユーザーが実行でき、ヒューリスティックスキャンのエンドツーエンドを実行できます。\nD1. 評価データセットに対して実行する際の既知の脆弱性を識別し、報告します.",
+      "report": "A: https://github.com/tx3-lang/trix/actions?query=branch%3Afeat%2Faiken-vulnerability-detection\nB: https://github.com/tx3-lang/trix/tree/feat/aiken-vulnerability-detection/src/commands/audit/providers\nC: https://youtu.be/YI08LShlZ6s\nD: https://github.com/tx3-lang/trix-audit"
+    },
+    {
+      "no": 3,
+      "promise": "A. Retrieval-Augmented Generation(RAG)を用いたアイケンコードのコンテクスト解析を実行できる微調整言語モデル。\nB. 生の監査報告書やモデルの微調整に使用される関連資料から構築された知識ベースとトレーニングデータセット。\nC.CLIインターフェイスにより、開発者がLMLパワード解析をローカルで実行できます。\nD. テストの既知の脆弱性を持つアイケンスクリプトを含む評価データセット.",
+      "criteria": "A1. 微調整された言語モデルは、アイケンのコードの文脈分析をうまく生成し、見つかった脆弱性の構造化されたレポートを配信することができます。\nB1。 知識ベースと訓練材料は、一般に利用可能であり、正確にモデルを生成するために使用されるデータを反映します。\nC1.CLIインターフェイスはユーザーによって実行でき、LM-powered分析のエンドツーエンドを首尾よく実行できます。\nD1. 評価データセットに対して実行する際の既知の脆弱性を識別し、報告します.",
+      "report": "A2. 脆弱性検知エンジンのコンパイルが成功したGithubで実装されたCIワークフローアクション。\nhttps://github.com/tx3-lang/trix/actions?query=branch%3Afeat%2Faiken-vulnerability-detection\nB2. Githubの公開リポジトリへのリンクには、微調整されたモデル、知識ベース、トレーニング資料が含まれています。\nhttps://github.com/tx3-lang/trix/tree/feat/aiken-vulnerability-detection/src/commands/audit/providers\nC2. YouTubeで公開されているCLLMを用いた分析の実行方法を説明するビデオウォークスルー。\nhttps://youtu.be/84I1nolxa2Q\nD2. 公的な評価データセット、テストランからの解析出力、結果のまとめレポートへのリンク。\nhttps://github.com/tx3-lang/trix-audit"
+    },
+    {
+      "no": 4,
+      "promise": "A.完全な脆弱性の検出システムのための公に利用できるソースコード。\nB. 公開可能なバイナリをインストールし、ユーザーインターフェイスツールを実行します。\nC. インストール、構成、および使用法を覆う公に利用できる文書。\nD. プロジェクトの最終出力を示すクローズアウトビデオ。\nE. プロジェクトプロセスと最終結果を説明するクローズアウトレポート.",
+      "criteria": "A1. 脆弱性の検出システムは、提案で指定されたように、ヒューリスティックとLM-パワード解析のエンドツーエンドの両方を実行するために使用できます。\nB1. 提供されるバイナリは、開発者がサポートされたシステムにツールをインストールして正常に実行できるようにします。\nC1. ドキュメントは、開発者が追加のガイダンスなしでツールをインストール、設定、および使用できるようにします。\nD1. クローズアウトビデオは、触媒ガイドラインに従います。\nE1. クローズアウトレポートは、触媒ガイドラインに従います.",
+      "report": "A2. Githubリポジトリで利用可能なソースコード\nB2. ダウンロード用バイナリリリース\nC2. ドキュメントサイト\nD2. YouTubeにアップロードされた動画を閉じる\nE2. Googleドライブにアップロードされたレポートを閉じる"
+    }
+  ]
+}

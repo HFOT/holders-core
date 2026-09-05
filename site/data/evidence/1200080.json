@@ -1,0 +1,75 @@
+{
+  "title": "CHARLI3: Partner-chain Oracle use-case implementation",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Project 1100091 is the research input for this project. The original proposal was written prior to the outcome of that research, so this first milestone is all about refining the expected project plan to align with the research output and selecting the appropriate project team to deliver this project.\n\nOutputs\n・Select core implementation team selected\n・Pick contracting lab \n・Select team to deliver project\n・Work start scheduled\n・Create a Project Plan Document based on the research from 1100091 (research for this project) that includes: \n・Major steps to completing the project refined\n・List any dependencies and risks to the project with proposed plan B's\n・Provide estimated timeline for completing each step of the project\n・Include any architectural diagrams if available\n・Any adjustments to the previously planned scope that requires change requests for Catalyst SOMs",
+      "criteria": "・Core implementation team contracted and starts working on project\n・Contracting team selected, work start date scheduled, and work starts on project\n\n・Project Plan Document including the following details is written and published:\n・Team requirements defined\n・Major steps to completing the project refined\n・List any dependencies and risks to the project with proposed plan B's\n・Provide estimated timeline for completing each step of the project\n・Include any architectural diagrams if available\n・Any adjustments to the previously planned scope that requires change requests for Catalyst SOMs\n\n・Change R",
+      "report": "Medium Article: https://oraclecharli3.medium.com/project-1200080-milestone-1-proof-of-achievement-charli3-io-dec-26th-2024-01baa25bb9bb\nDirect link to project plan: https://drive.google.com/file/d/1zmYm-33HyIJANBR3FckRFyg5i7GUVLbb/view?usp=sharing\n\nSummary\nThis milestone was completed in Sept 2024, but we were very late submitting a project POA. The development is ahead of schedule, but POA submissions are very late. Expectation to submit milestone 2 and 3 in the next week.\nKey Points\n・Milestone 1-2 are complete (pending POAs)\n・Milestone 3 is almost complete (pending POAs)\n・Txpipe is the contracting lab to work alongside Charli3's core development team\n・No change requests are needed as we were able to adapt the project plan to navigate risks and get the SOM accepted\n・There is a major dependency on Input Output's development of the Cardano integration tooling, the team learned after creating and winning ADA for this proposal that development for that tooling had stopped. A significant part of this milestone involved planning a way around this tooling and some minor changes were made to milestones that reflect our team's way of navigating this risk. Our plan is to create chain agnostic tooling to bridge data from the Substrate oracle to other chains, including mainnet Cardano. A redeemer based approach is the natural choice for Cardano. \n・Milestones 1 is a collaboration between Charli3 and Txpipe\n・Milestone 2-3 are being delivered by Txpipe\n・Milestone 4-5 is primarily being delivered by Charli3 and may bring Txpipe on to support\n・Team size: 1 project manager, 1 technical leader, 2 rust developers for milestones 1-3, for milestone 4 we will reduce the team to 1 rust developer and bring on 2 Cardano developers from Charli3's team",
+      "kinds": [
+        "doc"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 90000,
+      "promise": "Build Substrate POC: Node Client Scaffolding and Ledger Structure\n● Implementation of Substrate client node including new ledger structures.\n● Design document describing the functional requirements for the Oracle and the new ledger schema needed. \n\nBuild Substrate POC: Aggregation Algorithm and External Data Source Integration\n● Implementation of Aggregation Algorithm and integration with external data sources.\n● Design document describing the aggregation algorithm and integration between Oracle and external data sources.",
+      "criteria": "Build Substrate POC: Node Client Scaffolding and Ledger Structure\n● The implemented substrate node can perform basic blockchain operations (it is ready to process input data from sources, output data, and communicate with other nodes).\n● The design document contemplates the requirements for the Charli3 Oracle.\n● A developer is able to understand the details of the structure using the reference documentation.\n\nBuild Substrate POC: Aggregation Algorithm and External Data Source Integration\n● The oracle is capable of consuming data from integrated data sources and aggregating the provided informa",
+      "report": "● Design Document: https://github.com/txpipe-shop/charli3-substrate-docs/blob/main/docs/design_document.md\n● Demo Video: https://www.youtube.com/watch?v=LQLpTbtUE3M\n● Link to Private Substrate Explorer: http://176.57.188.161:4222/#/explorer\nOptional: all issues, links above, and summary contained in a PDF: https://drive.google.com/file/d/1ogakhV-X3Z2PDb0ZugK38wqDKeNGzv9N/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 75000,
+      "promise": "Substrate integration with Cardano SPOs\n● Document describing how the Substrate block-producing committee is created from a set of Cardano SPOs.\n● A running Substrate chain that uses SPOs from Cardano Preview or Preprod.\n\nReward Algorithm\n● Design document describing functional requirements for the C3 nodes reward distribution algorithm.\n● The implemented Substrate Oracle includes the necessary information in the data-feed aggregation transaction for knowing which nodes should receive rewards on Cardano side. Publishing the aggregation and distributing rewards on Cardano side is NOT included in this Milestone, only the above part of the integration is in scope for this step.",
+      "criteria": "Substrate integration with Cardano SPOs\n● A running Substrate Oracle chain composed by validators from the Cardano testnet SPOs.\n● Documentation includes description of cross-chain validation for the Substrate block-producing committee.\n\nReward Algorithm\n● The design document contains the requirements and proposed solution for the reward distribution mechanism. \n● The implemented C3 node Substrate includes the information for calculating rewards distribution when aggregating data feed.",
+      "report": "Design document: https://drive.google.com/file/d/19N7vvk3TRxxaabliThIor4DQkRxtR4Ov/view?usp=sharing\nDemo Video: https://youtu.be/2pACa-olM7g?si=rU7y0auj2Uam6tcd",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 15000,
+      "promise": "・Write an Optimization Report that outlines the improvements over a Cardano based oracle and a comparison of these data points (transaction costs, latency (time from data retrieval to aggregated value and time from data retrieval to on-chain value, and node network size limitations)\n・Includes two sections: \n・Cardano Only Oracle\n・Substrate Cardano partnerchain Oracle\n・Design and implement a working use-case with a chain agnostic integration/bridging solution to complete the Cardano integration \n・Enable Substrate oracle network consumes external data, aggregates it, and bridges the value on pre-production Cardano chain",
+      "criteria": "・Developed working-use case of a Chain agnostic bridge solution integrated with Substrate POC that posts data on the Cardano pre-production chain\n・Substrate oracle network consumes external data, aggregates it, and bridges the value on pre-production Cardano chain\n・Optimization Report written that contains:\n・Cardano only Oracle: transaction costs, latency (time from data retrieval to aggregated value and time from data retrieval to on-chain value, and node network size limitations\n・Substrate Cardano partnerchain Oracle: transaction costs, latency (time from data retrieval to aggregated value a",
+      "report": "Monumental achievement by the team -- will be publicly broadcasting the next milestone to Cardano as the first use-case of using Substrate partnerchain to post data onto Cardano with the security guarantees of Cardano!\n・Demo video: https://drive.google.com/file/d/1ABZHsnXHbkGTxPfN92bmBUYBoade6htL/view?usp=drive_link\n・Pre-production explorer link: https://preprod.cexplorer.io/address/addr_test1wrx3ad0g88cfrc5vfl60zyzh7czp6tl4y62dtdz36mal98gln2f75/tx#data\n・PDF Optimization Report: https://drive.google.com/file/d/1d44ioElS5D9Z-L2nxd_STXwXAn9bzbi0/view?usp=drive_link",
+      "kinds": [
+        "chain",
+        "doc"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 45000,
+      "promise": "・A fully functioning MVP is deployed and outputs are made on mainnet Cardano showcasing a functioning use-case.\n・Write Final close-out report\n・Film Final closeout video",
+      "criteria": "・The MVP is functioning as expected and outputs on Cardano showcasing its features is exemplified by a working use-case for review.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "End-to-End Demonstration Video: https://drive.google.com/file/d/1vj70cT9WUnpGj_vjzDHaQsCUTqK7GA6p/view?usp=sharing\nRegistry UTxO's transaction: https://cexplorer.io/datum/4536f9296a2ff633536ee84057800be9031d7be2ac4869c7f5471ac773452314\nOracle Contract: https://cexplorer.io/address/addr1w8x3ad0g88cfrc5vfl60zyzh7czp6tl4y62dtdz36mal98gym7433/tx#data\n\nDemonstrates functioning multi-node oracle aggregation, partnerchain tooling connecting Cardano SPOs with Partnerchain, bridge solution posting data onto the Cardano blockchain on mainnet. Showcases Polkadot explorer showing full audit trail of off-chain activity, and cexplorer show all on-chain Cardano activity. \nCardano Bridge Specific Video (mainnet): https://drive.google.com/file/d/1vj70cT9WUnpGj_vjzDHaQsCUTqK7GA6p/view?usp=sharing\nProject Catalyst Close-Out Video: https://vimeo.com/1111124696/0552e8cf27?ts=475774&share=copy\nProject Catalyst Close-out Report: https://drive.google.com/drive/folders/195nRlmgPKJURHMa-mtbhiMjeDVYqJ9Pa?usp=sharing\nNext steps for the project: \nCharli3 Managed Partnerchain MVP --> Public good open source MIT marketplace and oracle launchpad for anyone\nSee our F14 proposal, search \"CHARLI3\" to find CHARLI3 Open Source Oracle Launchpad and Marketplace\n・Open source MIT license\n・Evolve Charli3 hosted partnerchain into a neutral infrastructure layer for anyone to launch, manage, and improve oracle networks\n・Build marketplace (open and accessible) to find data adapters (e.g. dendrite, agentic rich data for RWA, and etc) and node operators (public registry for anyone wanting to run nodes on any network), templates for oracle network design (Charli3 plans to release their secrets to the community... setup your own RWA Pricing Oracle in a day... this eliminates the 15+ RWA Pricing oracle catalyst projects every fund)\n・Shift towards community governance and campaign to secure the partnerchain for the future by incentivising SPOs to produce blocks.",
+      "kinds": [
+        "chain",
+        "doc",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "title": "Unlock Apollo’s Potential: Join & Build Cardano’s Golang Library",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "・Rewrite critical sections of the Apollo library to achieve high performance, focusing on optimizing transaction-building speed.\n・Implement comprehensive error handling and logging mechanisms for all major functions, ensuring robustness and clarity.\n・Add support for UTxO RPC blockchain explorer and ensure seamless integration.",
+      "criteria": "・Performance benchmarks demonstrate improvements in transaction building, including metrics such as transactions built per second (tx/s).\n・Comprehensive error handling and logging mechanisms are implemented and verified across all major functions.\n・Integration and verification of UTxO RPC blockchain explorer with successful test cases confirming full functionality.",
+      "report": "The performance benchmarks demonstrate improvement and the comprehensive error handling and logging mechanisms have been implemented. Successful test cases confirm the integration and verification of UTxO RPC. \nThe evidence of milestone completion:\n・Performance test result demonstrating improved transaction-building speed, including metrics such as transactions per second (tx/s). Results. Reference the Script used. \n・A public URL to the implemented error handling and logging codebase. All available on GitHub: Release v1.1.1 Comprising of the work in PR #64 and PR #65\n・A recorded video demonstration presents proof of successful transactions performed using the UTxO RPC blockchain explorer. https://youtu.be/iLubVJ1lHHU",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 7
+    },
+    {
+      "no": 2,
+      "month": "10",
+      "cost": 60000,
+      "promise": "・Implement full support for Plutus Version 3, including compatibility with all new built-in functions, scripts, and features introduced in the latest Cardano smart contract functionalities.\n・Providing a detailed testing report of transaction builder that includes test cases and results.\n・Update documentation to reflect new capabilities, including examples, and usage guidelines.",
+      "criteria": "・Successful execution of Plutus Version 3 smart contracts using Apollo, covering key scenarios such as script validation, and parameterized contract execution.\n・A comprehensive testing report for the transaction builder, including test case and corresponding result.\n・Documentation includes example of Plutus Version 3 contract deployment and function usage.",
+      "report": "Output 1: Implement full support for Plutus Version 3, including compatibility with all new built-in functions, scripts, and features introduced in the latest Cardano smart contract functionalities.\nCriteria for Output 1: Successful execution of Plutus Version 3 smart contracts using Apollo, covering key scenarios such as script validation and parameterized contract execution.\nEvidence for Output 1: A link to the GitHub pull requests demonstrating the addition of Plutus Version 3 support: Pull Request #87. With release notes here: Release v1.3.0.\nThe successful execution covering key scenarios, script validation and parameterized contract execution, as mentioned in criteria can be observed in this Video.\n\nOutput 2: Providing a detailed testing report of transaction builder that includes test cases and results.\nCriteria for Output 2: A comprehensive testing report for the transaction builder, including test case and corresponding result.\nEvidence for Output 2: A link to a testing report for the transaction builder, confirming the successful execution of the Plutus Version 3 contract: Testing Report. Please note the following link for reference in the report, it contains the tx ID and the details we expect from a blockchain explorer: Cexplorer.\n\nOutput 3: Update documentation to reflect new capabilities, including examples, and usage guidelines.\nCriteria for Output 3: Documentation includes example of Plutus Version 3 contract deployment and function usage.\nEvidence for Output 3: A link to the updated and published documentation in the Apollo repository: v3 documentation.",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "12",
+      "cost": 40000,
+      "promise": "・The data attachment functionality performs as expected, with unit tests confirming its reliability.\n・The staking functionality also performs as expected, with unit tests validating its reliability.\n・Provide comprehensive documentation and usage examples for these CLI functions.",
+      "criteria": "・Data attachment functionality performs as expected, with unit tests demonstrating reliability.\n・staking functionality perform as expected, with unit tests demonstrating reliability.\n・Documentation includes clear examples and is accessible.",
+      "report": "Output 1: The data attachment functionality performs as expected, with unit tests confirming its reliability.\nCriteria for Output 1: Data attachment functionality performs as expected, with unit tests demonstrating reliability.\nEvidence for Output 1: Link to a GitHub pull request showing the successful integration of data attachment functionality: Pull Request #184.\n\nOutput 2: The staking functionality also performs as expected, with unit tests validating its reliability.\nCriteria for Output 2: Staking functionality perform as expected, with unit tests demonstrating reliability.\nEvidence for Output 2: Link to a GitHub pull request showing the successful integration of staking functionality:\nThe staking functionality implementation itself is in Pull Request #155 while Pull Request #197 is provided as integration validation evidence for those capabilities.\n\nOutput 3: Provide comprehensive documentation and usage examples for these CLI functions.\nCriteria for Output 3: Documentation includes clear examples and is accessible.\nEvidence for Output 3: A link to the updated and published documentation in the Apollo repository: Data Attachment documentation and Staking Functionalities documentation.",
+      "kinds": [
+        "code"
+      ],
+      "links": 5
+    },
+    {
+      "no": 4,
+      "month": "14",
+      "cost": 10000,
+      "promise": "・Implement dRep functionality, including dRep registration, in the Apollo library to align with the Chang hard fork.\n・Implement governance functionality, such as voting, in the Apollo library to align with the Chang hard fork.\n・Develop governance-related documentation and provide examples to guide users effectively.",
+      "criteria": "・Successful implementation of dRep functionality, enabling dRep registration through Apollo.\n・Successful implementation of governance functionality, allowing users to vote on proposals via Apollo.\n・Testing scenarios demonstrating governance features (e.g., voting, proposals) in demo video, publicly available on YouTube (@Blinklabs_io)\n・The documentation has been updated with clear examples related to governance functionality. It will be submitted for community review in the public Blink Labs Discord server, with a minimum of two community members approval for closure. A link can be provided in",
+      "report": "Output 1: Implement dRep functionality, including dRep registration, in the Apollo library to align with the Chang hard fork.\nCriteria for Output 1: Successful implementation of dRep functionality, enabling dRep registration through Apollo.\nEvidence for Output 1: Link to a GitHub pull request showing the successful integration of dRep functionality: Pull Request 202 Apollo now includes Conway-era / CIP-1694 DRep certificate builder support, including `RegisterDRep`, `RetireDRep`, and `UpdateDRep`.\n\nOutput 2: Link to a GitHub pull request showing the successful integration of dRep functionality.\nCriteria for Output 2: Successful implementation of governance functionality, allowing users to vote on proposals via Apollo.\nEvidence for Output 2: Link to a GitHub pull request showing the successful integration of governance functionality: Pull Request 202 Apollo now includes Conway-era governance functionality, including voting procedures, governance action types, proposal procedures, and transaction body support for governance fields. The implementation includes AddVote, AddProposal, SetCurrentTreasuryValue, and AddTreasuryDonation.\n\nOutput 3: Develop governance-related documentation and provide examples to guide users effectively.\nCriteria for Output 3: The documentation has been updated with clear examples related to governance functionality. Submitted for community review in the public Blink Labs Discord server, with a minimum of two community members approval for closure. A link can be provided in the PoA.\nCriteria for Output 3: Testing scenarios demonstrating governance features (e.g., voting, proposals) in demo video, publicly available on YouTube (@Blinklabs_io)\nEvidence for Output 3: Link to updated and published documentation in the Apollo repository. Chang HF/Conway Governance Docs \nand \nProof of submission for community review in the Blink Labs public Discord server has been captured on this doc. \nThe Github approval from two community members of the developer",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "15",
+      "cost": 30000,
+      "promise": "・Final close-out report\n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "We improved Apollo as a developer focused Go library for Cardano by expanding its transaction building, smart contract, staking, data attachment, explorer integration and governance capabilities.\nThe closeout report including links to github for pull requests and documentation along with video evidence: https://drive.google.com/file/d/1jMERp3sQGmZDrYHnHLQ44FOH16hpPH92/view?usp=sharing \nThe closeout video that reviews the entire project from start to finish: https://youtu.be/bhlfdEgNylI",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

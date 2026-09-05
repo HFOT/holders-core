@@ -1,0 +1,87 @@
+{
+  "title": "Cutting-edge web3 threat detection for the Cardano Network by Check Point Software Security",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 75000,
+      "promise": "・Research report for the Cardano blockchain\n・Several engines for detecting malicious activity in the Cardano blockchain, we will know which engines based on the research conducted as part of this milestone",
+      "criteria": "・Research report covering different aspects of the Cardano blockchain such as:\n\n Transactions - potential exploits and threats that can be used by malicious users\n Smart contracts - vulnerabilities and threats in dApps and smart contracts (Haskell and/or Aiken)\n Network vulnerabilities - general network security issues for Cardano network\n・Engines are able to detect past vulnerabilities and potentially new ones",
+      "report": "Please find the research report by Checkpoint with the appendix showing the POC engines findings:\nhttps://drive.google.com/file/d/1QkqrGLMnSH0krofs3VJ9b1MhzsoW4SbT/view?usp=sharing\n\nReferring to the process/logical flow of our threat detection system:\nWe are scanning the blockchain's transactions one by one, scanning each transaction with our tailored engines following our extensive research.\nAdded in the appendix are real hits from our detection system.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 345000,
+      "promise": "Design document outlining the potential components of the monitoring service and their key features",
+      "criteria": "Review document of the proposed design by Check Point's lead architect\n The review document should address scalability and performance to match the need of the Cardano network while running the developed engines of MS1",
+      "report": "Dear MR,\nThank you for your feedback and for highlighting these points.\nTo address your request for clarification, here are the relevant details:\n・Milestone 1 Evidence:\n\nWe previously included the evidence per your request, and we are reattaching it here for your convenience: MS1 engines scan.\n・Milestone 2 Evidence:\n・Internal Approved Design Document\n・Public Summary Review\n\nAdditionally, in Section 3.2.1 of the design document, we’ve detailed the throughput metrics for processing Cardano transactions.\nFurthermore, we are sharing a link to the research paper, Appendix B, titled POC Engines Findings, which includes insights from three different engines: Phishing, Datum Overflow, and Token Dust. We have structured the system to allow detection engines to function as modular plugins, ensuring flexibility and scalability.\nRegarding your concern about the significant costs associated with this milestone, we understand its importance and assure you that we are fully committed to delivering a cutting-edge detection system for Cardano. Our team is working diligently to meet these goals.\nPlease don’t hesitate to reach out if additional clarification is needed. We greatly appreciate your guidance and continued support.\nBest regards,\n Check Point Team",
+      "kinds": [
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "7",
+      "cost": 400000,
+      "promise": "A fully functional real-time threat detection system including the core components outlined in MS2, at minimum it should have a user interface for service management and to reflect findings from the detection engines running in a private testnet simulation",
+      "criteria": "Modules are detecting malicious transactions described in the research and design document in a simulated environment\nvisible via a user interface",
+      "report": "Hello Reviewers,\nPlease find below links to videos that demonstrate our system’s capability to detect various malicious activities on Cardano’s preview network:\nDatum Overflow\nToken Dust\nDouble Satisfaction\nPhishing\nFake Token\nAdditionally, we have implemented a detector for high resource consumption, inspired by June’s DOS attempt on Cardano.\n \nFor performance evaluation, please view the following video showcasing our system’s ability to scale under varying loads:\nLoad test\n \nGeneral instructions for the portal are available here:\nCheck Point portal tutorials\n \n1- Comment per MR first review:\nWeb3 infinity portal walkthrough\n2- Comments per MR second review in the discussion, adding the hashes here as well:\nToken Dust: 5a1d5864bc615488606be6d96c476ce2ad881729c3f370be44d61e12ad5b934f\nPhishing: b09c2ba3f965b017d96191fee3fce3c6af2d23365933f13a8ca04611fb242445\nFake Token: 5114688dc9c6214845b2ae2ca58e5fc0fd03762e6a447eb748149d6cb95f2a2c\nDatum Overflow: 6eadc0bc3c567bd81da1b438194838e54a87dd0d11cde99768a601f7e6693677\nDouble Satisfaction: bae8b60fbd9a4835480eb36f3c5c8a6fb780ead43c17ad603d675996de83684d\n\n3- Real time confirmation video\nConfirmation video for real time detection\nTransaction's hash: 3c92e55422731e56f834d372a45d07dccb8479f51a7411b6dab100bcc0f0ce86\n\nWe trust that our delivery meets your expectations.\nThank you,\nThe Check Point Web3 Security Team",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 9
+    },
+    {
+      "no": 4,
+      "month": "9",
+      "cost": 350000,
+      "promise": "* Threat detection system deployed in the pre-prod test environment including all components outlined in the design doc\n * Pilot test plan and testing protocols including simulated real-world performance test\n * Feedback collected from test users and stakeholders",
+      "criteria": "* Successful pilot test results demonstrating the system's effectiveness in detecting threats outlined in the research and design docs.\n* Identified issues and bugs are documented, addressed and implemented.\n* Feedback from pre-prod test users and stakeholders.",
+      "report": "Dear MS Reviewers,\nPlease find below our Milestone 4 submission:\n1. Attachments\n・Cardano Pre-Prod Test Report\n・Usability Testing Report \n・Workshop summary - In-person workshop in Paris (IntersectMBO) including key people from IOG (Samuel Leathers, Lorenzo Bruno) and the community \n・Cardano Pre-Prod load test\n\n Simulated real-world transaction load using recorded traces\n Achieved 200K TPM (3333 TPS) across all detection engines\n2. Detection Engine Demonstration\n・Fake Token\n・Phishing\n・Datum overflow\n・Token dust\n\n3. Dashboard Access\n・Please share your email addresses here in the chat; we will then send each of you an invitation.\n・Accounts will be automatically deactivated 24 hours after each reviewer’s first login.\n\nWe trust that this delivery meets your expectations. Thank you for your time and feedback.\n\n-------------------------------------------------------------------------------------------------------------------------------\nDear MS Reviewers,\nWe’re pleased to report that we’ve successfully delivered this milestone—meeting every objective and then some. While portal ease of access isn’t included in the milestone evidence, we’re happy to discuss it separately at your convenience.\nIn addition, we collected feedback from our usability users and promptly resolved all reported bugs.\nYou’re warmly invited to explore the service yourself and verify its real-time functionality.\nWe hope you’ll be as satisfied with the results as we are.\nSincerely,\n The Check Point Blockchain Security Team",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "15",
+      "cost": 99000,
+      "promise": "・Fully deployed threat detection system on the Cardano mainnet network.\n・Conduct at least 2 workshops with 5 attendees each at minimum for potential users of the system demoing the system and gather feedback\n・Workshop recording available to potential users/Cardano community",
+      "criteria": "・System is operational and performing as expected on the Cardano Mainnet network.\n・Feedback gathered from initial deployment and training participants.\n・Workshop recording available for the cardano community/potential users of the system",
+      "report": "Dear milestone reviewers, please find below the updated evidence of completion for milestone 5 which has been modified and improved upon following the feedback. \nWe have added additional reviewers a username and password to see the system. Please make sure to utilize the link provided in the monitoring dashboard section. If there are any login issues please let me know. \n1. System Deployment\n・Deployment & operational logs PDF\n・Deployment:\n\nLog 1\nLog 2\n・Scanning:\n\n1: Log & dashboard image\n2: Log & dashboard image\n2. Monitoring Dashboard\n・Cardano Mainnet Dashboard (shared invitations privately)\n・Additional public username and password for reviewers:\n・Username: demouser@chkp-demodays.xyz\n・Password: Cpwins1234$\n・Link: https://portal.checkpoint.com/signin\n\n3. User Training Results\n・User feedback report (with additional reviewers)\n・Workshop participants list\n・Workshop 1:\n\nYoram Ben-Zvi, Dan Danay, Yair Ziv, Adam Cazes, Udai Solanki, Jingles K, Youry Brauer, David Hananel, Hinson \n・Workshop 2:\n\nKatarina Antic, Vinay Devabhakthuni, Sam Lambert, Kibe, Zinab amgd, Hadded Ahmed, Joshua, Manah Linda, Ebby G, Cong Le\n4. Educational Content\n・Full workshop recording\n・Workshop 1\n・Workshop 2\n\nSummary\nMilestone 5 has been completed successfully with all required deliverables achieved:\n・System deployed and operational\n・Dashboard monitoring Cardano Mainnet is live\n・User training conducted with positive feedback\n・Complete workshop recorded for community access\n\nPlease find below the hashes for the attack transactions.\nTo find the attack according to the hash, please search for the hash in the transactions screen (left drawer).\nAfter finding the transaction you can click the related attack and view the entire attack.\nDatum Overflow - 7b2efc616e3d3df16e8702c8a5b6855b70a52ab86e3dae89ba1ae5ca6fbb2602\nToken Dust - 0c94d21d342eb3ea84160ab430782755ddd93c139521d87443faf7dce1914e12\nFake Token - 861db22a1011d6f89f4dcfc14abdb999188d465c5ca92baafc2a1e928d31ab2d\nPhishing Activity - a602572c9e47558dd",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "16",
+      "cost": 224000,
+      "promise": "・Marketing campaign plan, including promotional materials, and partnership announcements (at least 2, one with the Cardano ecosystem and another which will be coordinated with the Cardano foundation).\n・Conduct field marketing activities, including participation in at least 2 web3 international conferences such as Cardano summit and Paris blockchain week (for example, not limited to). In such events we will actively present the project on or off stage.\n・Check Point will publish PRs according to the Check Point guideline and official channels \n・Comprehensive project close-out report.\n・Summary video highlighting the project's goals, processes, outcomes, and impact.",
+      "criteria": "・Participation in at least 2 international web3 events\n・Partnership with the Cardano Ecosystem and another one which we will coordinate with the Cardano Foundation)\n・PR Links to official Check Point channels\n・Successful execution of marketing activities with measurable engagement metrics.\n・Positive feedback from participants and stakeholders.\n・The project report is detailed, covering all aspects of the project, including challenges faced, solutions implemented, and metrics of success.\n・The summary video effectively communicates the project's story and key achievements to a broad audience",
+      "report": "Hi reviewers. I added additional evidence of collaboration with entities in the Cardano ecosystem (Sundial, Mesh) as well as evidence of direct collaboration with the Cardano Foundation of active partnership of future plans and previous synergy. For Sundial, I asked a member of the team to give direct insights on the partnership benefits and outputs so far. As seen, Check Point is very active in the Cardano community. \nIf even more information is required to understand the impact of the partnership with Sundial, we provided the Catalyst team with additional, confidential information related to the partnership. Please feel free to align with them the information (which should stay confidential). \nFurthermore, the video is officially on the official Check Point Vimeo page. \nA. Output: Marketing Campaign Plan for 2026, aligned with Cardano Foundation\nAcceptance criteria: Marketing plan with Cardano foundation \nEvidence:\nDirect collaboration with Cardano Foundation:\nAfter direct discussions with Cardano Foundation, here we have the exact plan for 2026 along with main KPIs that will be executed throughout the year along with Cardano Foundation.\nCalendar: https://drive.google.com/file/d/13aU6_NFv7zuzwxx2uMFJtciFq3CWr9K4/view?usp=sharing\nEvidence of collaboration (email addresses redacted )https://drive.google.com/file/d/1D156pSuw6gPiBCwsr6eq66Rsq0a0PEW0/view?usp=sharing \nPrevious event: https://cardanofoundation.org/blog/q1-2025\n “At the Check Point Conference 2025 in February, Chief Technology Officer Giorgio Zinetti presented a joint session with Dan Danay on a Catalyst-supported Web 3.0 threat detection system, underscoring the Foundation’s commitment to real-time cybersecurity solutions in decentralized environments.”\nCollaboration with other Cardano entities:\nPartnership with Mesh:\nProject Catalyst link: https://projectcatalyst.io/funds/14/cardano-use-cases-partners-and-products/mesh-utxos-x-mercuryo-mastercard-x-checkpoint\nPartnership with Sundial:\nPR: https://www.s",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 35,
+      "cut": true
+    }
+  ]
+}

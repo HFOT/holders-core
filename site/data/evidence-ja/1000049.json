@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "コミュニティが承認した新しいCIP規格。\nこれはhttps://github.com/cardano-foundation/CIPs/pull/551で既に進行中です.",
+      "criteria": "Https://github.com/cardano-foundation/CIPs/pull/551 の CIP 102 のプルリクエストは、マスターブランチにマージされています.",
+      "report": "合併PR: https://github.com/cardano-foundation/CIPs/pull/551\n\nマスターブランチのCIP-0102フォルダの検索結果:https://github.com/cardano-foundation/CIPs/tree/master/CIP-0102"
+    },
+    {
+      "no": 2,
+      "promise": "Cardanoの開発者が、どの言語がオンチェーンのリファレンスの実装で行っているかを調べる調査です。 CIP 102 フォルダに格納されている参照の実装は、CIPs リポジトリに示す:\n・CIP 102準拠のNFTをロイヤリティでマイニング\n・CIP102 NFTのロイヤリティオフチェーンの読み込み\n・チェーン上のCIP 102 NFTロイヤリティに対する読み込みと検証\n\nこの参照実装は、オンチェーンコードの調査結果に応じて、オフチェーンコード、PlutusTxまたはアイケン(または他の言語)のTypescriptで書かれます.",
+      "criteria": "アンケートを実施しました。\n参照実装のプルリクエストは承認され、マスターにマージされています.",
+      "report": "私はアイケンの投票の75%の結果、オンチェーン言語を決定するために実行された投票: https://x.com/ikigai sam/status/1713964753331339343\n\nここで参照実装でプルリクエストを開いた: https://github.com/cardano-foundation/CIPs/pull/848\n\nエディタは、リファレンスの実装がCIPsリポジトリに保持されなくなり、独自の独立したリポジトリで、プルで私に通知しました。\n\n参照実装用の新しいリポジトリは次のとおりです。\nhttps://github.com/SamDelaney/CIP 102 Reference"
+    },
+    {
+      "no": 3,
+      "promise": "コミュニティ入力を収集するために、実装のためのオープンソースライブラリを調査および選択します。 ライブラリのメンテナーによるアクティビティと受諾を確認します。 適切なライブラリに統合します。 これには、以下のいずれかのものが含まれます。\n・マイニングの実施\n・オフチェーン読書実装\n・Onchain検証実装",
+      "criteria": "調査結果が公開されています。\n初のライブラリへのPRが作成・承認されました.",
+      "report": "任意の結果なしで潜在的なプロジェクトのための調査を実行するために数回試した:\nhttps://x.com/sde laney/status/1825683926817583490\nhttps://x.com/sde laney/status/1829032031130730721\nコミュニティが何も要求しなかったので、私は見つけた3つの最高のオープンソースマイニングツールを選択しました。\nhttps://x.com/sde laney/status/1860103038159192154\n今回の調査では、Mintun.ioが選ばれました。\n\nIkigai Technologies と連携し、CIP 102 のサポートを Mintun.io に追加 複数のチームメンバーが投稿した複数のPR業務を遂行しました。\nhttps://github.com/ikigai-github/mintun/pull/1\nhttps://github.com/ikigai-github/mintun/pull/5\nhttps://github.com/ikigai-github/mintun/pull/19\nhttps://github.com/ikigai-github/mintun/pull/26"
+    },
+    {
+      "no": 4,
+      "promise": "少なくとも2つの追加のオープンソースライブラリを適切に統合します。 これには、以下のいずれかのものが含まれます。\n・マイニングの実施\n・オフチェーン読書実装\n・Onchain検証実装\n\nプロジェクトは、レポートとビデオを閉じます.",
+      "criteria": "選択した各ライブラリへのPRは、承認および統合されています。\n触媒チームにアセット(レポート&ビデオ)を提出しました.",
+      "report": "A. 出力: 興味調査\n受諾条件: オープンソースライブラリはコミュニティによって選択されています\n証拠: https://forum.cardano.org/t/poll-cip-102-os-contributions/153921\n調査から#1と#2(tied)の結果を選んだ:Cardano-Client-LibとPycardano\nB.出力:Cardano-Client-Libへの統合\n受諾基準:選択した各ライブラリへのPRが作成され、承認および統合されています。\n証拠: https://github.com/bloxbean/cardano-client-lib/pull/627\nC.出力:Pycardanoへの統合\n受諾基準:選択した各ライブラリへのPRが作成され、承認および統合されています。\n証拠: https://github.com/Python-Cardano/pycardano/pull/491\nD. 出力: プロジェクト クローズアウト レポート\n受入条件: 資産のクローズアウトはこちら\n証拠: https://docs.google.com/document/d/12WfTt0FZCTwynlVbE-TjDqdiSCyda95N qwrCvnCoNo/edit?usp=sharing\nE. 出力: プロジェクト クローズアウト ビデオ\n受入条件: 資産のクローズアウトはこちら\n証拠: https://www.youtube.com/watch?v=GKIYBafD3M"
+    }
+  ]
+}

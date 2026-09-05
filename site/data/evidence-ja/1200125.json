@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "私達のoboros の小型プロトコルに基づく初期実装;\n\nチェーンとメモプールの先端に続くカルダノノードとの通信.",
+      "criteria": "ツール:\n・Cardanoノードに接続し、\n・チェーンの先端を追究\n・パーシスブロック\n・mempoolの進化を追究",
+      "report": "リポジトリが作成されました: https://github.com/HarmonicLabs/mutexo-server\nrepo は、受諾条件(および次のマイルストーンのコード)で指定されたすべてのポイントを実装します。\nポイントの実装と実行中のツールがこのリンクに存在するビデオ: https://youtu.be/bztrtgY7XZY"
+    },
+    {
+      "no": 2,
+      "promise": "前のステップのリポジトリは、クライアントからwebsocket接続を処理し、関連する情報を転送するために更新されます",
+      "criteria": "クライアントインターフェイスの実装(utxosと応答をロックする要求)",
+      "report": "通常のサーバリポジトリがここにあります: https://github.com/HarmonicLabs/mutexo-server\nこのマイルストーンの最も重要なファイルは次のとおりです。 https://github.com/HarmonicLabs/mutexo-server/blob/main/src/wsWorker/webSocketServer.ts\nクライアントの要求を処理するサーバーを示すビデオは次のとおりです。 https://youtu.be/CZ73srg7EeA\n\nマイルストーン1は、ツールをノードに接続することに厳密にありました\nマイルストーン2は、クライアントから来るリクエストを処理することについてでした。これは、同じリポジトリの一方、マイルストーン1よりも異なる目標ですが、同じリポジトリでは、クライアントを扱う主な機能を持つ特定のファイルを示しています。代わりに、マイルストーン1のファイルが完全に別のファイルで、ノードと相対的な着信メッセージ(チェーンからのブロック)の接続を厳密に専用しました."
+    },
+    {
+      "no": 3,
+      "promise": "別のリポジトリは、HLabs 組織 () で `mutexo-client` と呼びます。\nリポジトリは、サーバーとやり取りするために使用されるクライアントクラスをエクスポートするライブラリを実装します",
+      "criteria": "クライアントは、\n・特定のutxosに関する質問情報。\n・「ロック」utxosへのリクエスト権限と対応可能な対応\n・utxoのロックや使用料の受取更新.",
+      "report": "クライアントリポジトリはこちら: https://github.com/HarmonicLabs/mutexo-client\nこのマイルストーンの最も重要なファイルは次のとおりです。 https://github.com/HarmonicLabs/mutexo-client/blob/main/src/MutexoClient.ts\nクライアントのリクエストを処理するサーバーを示すビデオは次のとおりです。 https://youtu.be/PST9MioEzN4\n\nマイルストーン3の目標は、プロトコルのクライアント側を実装するために厳密に行われ、代わりにマイルストーン1と2はサーバーに厳密に焦点を合わせました。\nこのため、マイルストーン3のリポジトリ(最初のリンク)は、マイルストーン1と2の1つと異なるため、ビデオ(確認のためのリンクをコピーするか、直接コンテンツを比較)"
+    },
+    {
+      "no": 4,
+      "promise": "しかし、別のリポジトリはmutexoのドキュメントをホスティングするようになります",
+      "criteria": "ドキュメンテーションは、ミューテックのすべての機能をカバーし、クライアントとサーバー側の両方で意図した使用方法を説明します",
+      "report": "ここでは、クライアントとサーバーの両方のmutexoのドキュメントを見つけることができます: https://mutexo.harmoniclabs.tech/"
+    },
+    {
+      "no": 5,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "クローズアウトビデオ: https://youtu.be/kE5ef0OsyXQ\nクローズアウトレポート: https://github.com/HarmonicLabs/catalyst-close-reports/tree/main/1200125-mutexo"
+    }
+  ]
+}

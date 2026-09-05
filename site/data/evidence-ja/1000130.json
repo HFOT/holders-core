@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "既存のプルーフ・オブ・ヒューマン(PoH)のソリューションと基礎技術に関する包括的な見直しを実施する初期段階です。 ユーザ検証のさまざまな方法(バイオメトリック、CAPTCHA、行動分析など)を探求し、カルダノエコシステムと統合する可能性を調査します。 また、今後も、暗号証拠生成と検証方法の研究を続けていきます.",
+      "criteria": "カルダノのエコシステム、すべての研究成果のドキュメンテーション、実現可能性レポート、可能な課題、提案されたデザインに適したさまざまな検証に関する新しい研究を実施します.",
+      "report": "https://github.com/projectNEWM/newm-aipoph/blob/master/docs/feasibility-research.md\n\n私たちはすでにこのマイルストーンをGoogleフォームマイルストーン投稿の時代に提出したという意見です"
+    },
+    {
+      "no": 2,
+      "promise": "このフェーズではPoHシステムを開発しています。 ユーザーの検証モジュールのコーディング、暗号化証拠生成システムの作成、校正検証システムの導入などを含みます.",
+      "criteria": "まったく新しい製品であり、同様の性質の何も存在しないため、オープンソーシングを行い、Githubリンクは製品とその作業の技術的性質を理解するために必要なすべてのドキュメントを提供します.",
+      "report": "ユーザ検証モジュールのコーディング\n人格試験の証明を検証する\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/validators/poh lock.ak#L160-L259\n人類の有効な証明書を確認する\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/validators/coh lock.ak#L35-L59\n暗号証拠生成システムを作成する\n最小限のグラフ色の問題発生器\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/lib/aipoph/types/graph.ak\ned25519 署名検証\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/lib/aipoph/types/signed.ak\n人間性試験制度の証明\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/validators/poh lock.ak\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/validators/poh mint.ak\n実証検証システムの導入\n人格確認のための機能\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/lib/aipoph/types/prove.ak\n人格検証システム証明書\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/validators/coh lock.ak\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/aipoph/validators/coh mint.ak"
+    },
+    {
+      "no": 3,
+      "promise": "このフェーズでは、期待どおりに機能していることを確認するための詳細なシステムテストが組み込まれています。 潜在的な脆弱性を明らかにするために、一定のチェックとテストを実施します.",
+      "criteria": "システムの堅牢性を確保するために、さまざまなシナリオに基づくパフォーマンス評価を実施します。これらのシナリオは、製品、進捗状況、および開発に基づいて設計されています。 当社の法律チームが社内チェックを行い、システムがプライバシールールと規制に準拠していることを保証します.",
+      "report": "https://github.com/projectNEWM/newm-aipoph/pull/11\nマイルストーン3完成!\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/pdf/internal-audit-1.pdf\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/pdf/internal-audit-2.pdf\nhttps://github.com/projectNEWM/newm-aipoph/blob/master/pdf/happy-path-transactions.pdf\nコンプライアンスチェック 法的文書\nhttps://docs.google.com/document/d/1SyGPmMKn1NEyNmk4pI5X9KvKxe3eGRh5FJvpb2OU/edit"
+    }
+  ]
+}

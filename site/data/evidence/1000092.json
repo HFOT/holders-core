@@ -1,0 +1,87 @@
+{
+  "title": "Ikigai + MLabs - Hydra app SDK and auction service",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 74914,
+      "promise": "・This project builds on top of the outputs from a previous open-source project. Moreover, it is a collaboration between two partner organizations (Ikigai and MLabs) to upgrade the existing proof-of-concept to a proper cloud-based platform stack. Accordingly, we must resolve technical debt in the existing hydra auction reference implementation and align the tech stack between MLabs and Ikigai on the project.\n・The outputs of this initial milestone will be a reduction in technical debt in the hydra auction repo and an aligned tech stack for the project between the project partner organizations.\n・Note to reviewers: As you suggested, we have submitted a change request to the Catalyst team for (1) adding the “setup and tech debt” milestone; (2) combining the original M4+M5 milestones into the new MS5 and the original M6+M7 into the new MS6 milestone; (3) delaying the overall project delivery timeline by two months; (4) reallocating the milestone budgets to comply with Catalyst rules.\n・The Catalyst team has informed us that the change request has been approved.",
+      "criteria": "・The hydra auction repo is more consistently structured and streamlined. It is ready to be used by the collaborating companies for the hydra auction SDK project.",
+      "report": "Deliverable 1: Open-source public repository links\nCurrently, this project's code is open-source and available in the following repositories:\n・https://github.com/mlabs-haskell/hydra-auction\n・https://github.com/mlabs-haskell/hydra-auction-offchain\n・https://github.com/mlabs-haskell/hydra-auction-onchain\n\nDeliverable 2: Aligned tech stack, architecture, and spec\nStarting in November, the new Catalyst team held a series of discussions to assess the state of the previous Hydra Auction proof-of-concept project and determine its suitability to be adapted to the new production and mainnet-ready hydra-based auction protocol that we are targeting in this project.\nWe identified the following major changes that would be needed to align the tech stack, architecture, and specifications between MLabs and Ikigai to achieve the goals of the project:\n・Announce auctions and hydra head delegate groups with metadata records posted on-chain as utxo datums held in unparametrized validator addresses, so that anyone would be able to discover all auctions and all hydra head delegate groups servicing auctions via simple blockchain queries without relying on any off-chain information. Furthermore, the metadata record of an auction should contain all the parametrized validator scripts and currency symbols used to manage that auction’s state, so that a person who finds the auction can follow along and discover its full current state. This will improve the robustness of the auction protocol (one less single-point-of-failure) and make it more decentralized. Previously, discoverability in the proof-of-concept was managed via a centralized off-chain service that would let all the sellers, bidders, and hydra head delegates know about each other and about where to find auction state. See https://github.com/mlabs-haskell/hydra-auction/blob/staging/docs/on_chain_spec.md#announcements-discoverability-and-state\n・Rework the mechanism by which an auction’s standing bid is moved to Layer 2 (L2) for bidding,",
+      "kinds": [
+        "code"
+      ],
+      "links": 58,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 195429,
+      "promise": "・Research doc for hydra auction UX.\n・Basic web-based UI for hydra auctions.\n・Frontend glue library and backend smart contract systems' APIs.",
+      "criteria": "・A demo is recorded to showcase the basic web-based UI.\n・Frontend glue library and backend smart contracts are functional and well-documented.",
+      "report": "OUTPUTS\nDuring Milestone 2, we started our work researching the UI of an auction service, the on-chain specification, and implementing the on-chain scripts themselves. Then we moved to the glue frontend library that sits in between and provides an API for the frontend for querying the chain, building, and submitting transactions. Along with this activity, we implemented the basic UI that completes the list of outputs expected in this milestone. The outputs of this milestone are as follows:\n・The initial research document on UX: https://github.com/mlabs-haskell/hydra-auction-frontend/blob/master/docs/ux_flow_spec.md\n・The basic web-based UI is developed in a separate repository: https://github.com/mlabs-haskell/hydra-auction-frontend\n・Output 3 is split up:\n・The frontend glue library can be found in a separate repo here: https://github.com/mlabs-haskell/hydra-auction-offchain\n・ Smart contracts are located here: https://github.com/mlabs-haskell/hydra-auction-onchain\n\nACCEPTANCE CRITERIA\nThe recorded video showcases the basic web-based UI of the auction service which is built on top of the glue frontend library and on-chain scripts linked in the milestone outputs and therefore is functional and working against a Cardano testnet.\nThe documentation available by links in the evidence section covers all APIs in the frontend glue library and all on-chain scripts implemented in to on-chain repository.\n\nEVIDENCE\nThree projects’ code repositories:\n・https://github.com/mlabs-haskell/hydra-auction-onchain\n・https://github.com/mlabs-haskell/hydra-auction-offchain\n・https://github.com/mlabs-haskell/hydra-auction-frontend \n\nUI showcase video: https://vimeo.com/915021562?share=copy\n\nThis evidence contains two items:\nFrontend glue library\n・Library main API module: https://github.com/mlabs-haskell/hydra-auction-offchain/blob/staging/api/api.ts\n・Docs: https://github.com/mlabs-haskell/hydra-auction-offchain/blob/staging/docs/API.md\n\nOn-chain scripts\n・The implementation: https://github.com/mla",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 17,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 198686,
+      "promise": "・Integrated basic backend and cloud systems for hydra auctions.\n・Design and specification docs for fully-backed bids and open auctions on L2.\n・(Note: this milestone’s completion month is delayed by one month to avoid team crunch time at the end of December).",
+      "criteria": "・Integrated architecture components of the hydra auction platform function well together.\n・Research docs are clearly written and complete.",
+      "report": "MILESTONE EVIDENCE\nDuring Milestone 3 we introduced Hydra into the project and effectively implemented L2 auctions. The evidence of this milestone is as follows:\n1) The main output of this milestone is integrated basic backend and cloud systems for Hydra auctions in the form of a delegate server, that delegates run to automate spawn Hydra nodes and coordinate with each other (all PRs mentioned will be merged into https://github.com/mlabs-haskell/hydra-auction-offchain by the time of submission).\n・The main PR https://github.com/mlabs-haskell/hydra-auction-offchain/pull/31\n・L2 auctions happy-path is covered with tests based on Hydra off-line mode developed by SandaeSwap in Catalyst Fund10 https://github.com/mlabs-haskell/hydra-auction-offchain/pull/33\n・A separate server with WebSocket support to broadcast L2 auctions was implemented https://github.com/mlabs-haskell/hydra-auction-offchain/pull/35\n・New endpoints for L2 auction support were added https://github.com/mlabs-haskell/hydra-auction-offchain/pull/36\n\n2) The video demonstrating the integrated architecture and the enhanced smart contracts at a high level is available here: https://www.youtube.com/watch?v=Msu96EmfaRs\n3) The specification for additional auction features (namely open auctions and full-backed bids) can be found here https://github.com/mlabs-haskell/hydra-auction-offchain/blob/staging/docs/future_improvements.md",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 7
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 208457,
+      "promise": "・Analytics and aggregate metrics layer for hydra auctions.\n・Dashboards connected to the analytics layer.\n・Integrated further backend and cloud systems for hydra auctions.\n・Improved web-based UI for hydra auctions.",
+      "criteria": "・Relevant analytics and aggregate metrics can be calculated and displayed in the web-based UI for the hydra auction platform.\n・Integrated architecture components of the hydra auction platform function well together.\n・A demo is recorded to showcase the analytics UI for the hydra auction platform.\n・A demo is recorded to showcase the improved web-based UI.",
+      "report": "MILESTONE EVIDENCE\nMilestone 4 was devoted to building an analytics subsystem and wiring it into the web-based UI to improve user experience. We've selected Mixpanel as a third-party tool to help facilitate the gathering and presentation of analytics. We believe this system presents the best experience for both product owners & end users.\nThe evidence of this milestone is as follows:\n・The specification for the analytic subsystem: \n・https://github.com/mlabs-haskell/hydra-auction-frontend/pull/11\n・https://github.com/mlabs-haskell/hydra-auction-frontend/pull/13\n・Analytic subsystem implementation, including the metrics layer and a dashboard:\n・https://github.com/mlabs-haskell/hydra-auction-frontend/pull/12\n・https://github.com/mlabs-haskell/hydra-auction-frontend/pull/14\n\nThe video on analytics subsystem and UI improvements: https://x.com/ikigai_tech/status/1819401777567224257",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 10
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 312686,
+      "promise": "・Tooling and systems for participant discovery/coordination and managing hydra heads.\n・Integration testing, error reporting, health checks, and monitoring systems for the hydra auction platform.\n・SDK for hydra applications with similar architectures to the hydra auction.",
+      "criteria": "・Prospective hydra head participants can discover each other and coordinate the opening of their hydra heads to provide services to the hydra auction platform.\n・Testing, error reporting, and monitoring systems cover the critical parts of the architecture.\n・SDK covers architecture components of the hydra auction platform, to the extent that they are common/reusable across similar architectures.\n・SDK is functional and well-documented.\n・A demo is recorded to showcase the development workflow with the SDK.",
+      "report": "As was duly noted, the amount of documentation for Hydra SDK was too low. This [PR](https://github.com/mlabs-haskell/purescript-hydra-sdk/pull/4) fixes that.\n* The README.md contains a section `Getting Started with Example` that gives step-by-step instruction on running the example. \n* All Purescript modules that constitute SDK have been thoroughly commented. You can either read the docs in the source code or alternatively you can generate it as described in the README.md (see `Development Workflows` section).\n\nNB. The PR mentioned depends on the minimal example, which is a part of the next, Final milestone. Though it's almost ready, we haven't finalize that work. It was very inconvenient to work on the docs separately, so we decided to address reviewers' comments in a PR based on the future work, which is not yet ready to merge. This is why we cannot close the PR right now, but we will do it as soon as we are done with PR#3. We hope it won't prevent this part from being considered completed.\n\n###\n \nMILESTONE EVIDENCE\n\nThe main focus of milestone 5 was the Hydra Application SDK, which is the essence of the delegate server developed in earlier stages and is common enough to be reused in other applications based on Hydra.\n\nBesides SDK, the participant discovery and coordination process has been improved, and integration tests and error handling were added on top of the monitoring solution.\n\nThe evidence of this milestone is as follows:\n\nThe main project repository mostly changed to adopt the newly created SDK:\n\nUpgrade to the latest version of CTL: https://github.com/mlabs-haskell/hydra-auction-offchain/pull/53\n\nAdd queries to register and discover delegate groups: https://github.com/mlabs-haskell/hydra-auction-offchain/pull/54\n\nUpgrade to the latest version of CTL: https://github.com/mlabs-haskell/hydra-auction-offchain/pull/55\n\nDemo video showcasing the hydra head participant discovery process: \n\nhttps://youtu.be/X295jtykGrU\n\nDemo video showcasing the new testing, e",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 9,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "9",
+      "cost": 312685,
+      "promise": "・Optimized smart contracts for hydra auctions and app SDK.\n・Improved robustness for the hydra auction platform.\n・Hydra auction platform launch on testnet.\n・Completed hydra app SDK V1.0.",
+      "criteria": "・The report on optimization and robustness improvements is written and complete.\n・Hydra auction platform is launched and supported on testnet.\n・Hydra app SDK is complete and well-documented with detailed usage/deployment docs, and rich examples and tutorials.",
+      "report": ":: UPDATES ::\nPlease see the updated PCV\nhttps://www.youtube.com/watch?v=oy8ymu9UTZQ\nSince this a prototype relying heavily on signData, can the reviewer please switch to Eternl wallet?\n---\n### Milestone Outputs\n- Optimized smart contracts for hydra auctions and app SDK.\n- Improved robustness for the hydra auction platform.\n- Hydra auction platform launch on testnet.\n- Completed hydra app SDK V1.0.\n\n### Acceptance Criteria\n- The report on optimization and robustness improvements is written and complete.\n- Hydra auction platform is launched and supported on testnet.\n- Hydra app SDK is complete and well-documented with detailed usage/deployment docs, and rich examples and tutorials.\n\n### Evidence of milestone completion\n- The hydra auction code repository is openly available\n - https://github.com/mlabs-haskell/hydra-auction\n- Report on optimization and robustness improvements.\n - https://github.com/mlabs-haskell/hydra-auction-offchain/blob/staging/docs/optimizations-report.md\n- Report describing how the SDK was used to develop the specific hydra auction service and how other applications with a similar L1/L2 architecture can use the SDK to accelerate their path to production.\n - https://github.com/mlabs-haskell/hydra-auction-offchain/blob/staging/docs/sdk-report.md\n- Hydra auction app launched on public testnet.\n - https://mlabs-haskell.github.io/hydra-auction-frontend/\n- Demo video showcasing the hydra auction platform launched on testnet.\n - https://www.youtube.com/watch?v=fMSfnpxbAlE\n- Closeout video.\n - NEW :: https://www.youtube.com/watch?v=oy8ymu9UTZQ\n - https://www.youtube.com/watch?v=wOMmx7glQ9o\n \n- Closeout report.\n - https://drive.google.com/file/d/1Ch2jIw_vyC-tvq8pWAReVHz1Mk_Jl6E2/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 18
+    }
+  ]
+}

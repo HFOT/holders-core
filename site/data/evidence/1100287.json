@@ -1,0 +1,72 @@
+{
+  "title": "VAULT3 - Open source SDK to easily add token-gated content to any Cardano dapp or project",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 50200,
+      "promise": "・Project Infrastructure\n・Codebase setup\n・CI/CD\n・Automatic testing\n・UI/UX Design and Mockups\n・Open-source Github link",
+      "criteria": "Infrastructure setup available on a public GitHub repository.",
+      "report": "We set the project's infrastructure, codebase, CI/CD, and automatic testing on an open-source GitHub Repository.\nThe UI/UX Mockups are publicly available on this link. These designs include the token gate unlocking experience (Milestone 2) and token gate creation (Milestone 3). We took NMKR Studio as an example because it will be one of the first solutions integrating our services using this SDK.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 41800,
+      "promise": "・Wallet connection\n・Check of access condition via API\n・Show call-to-actions or unlocked files",
+      "criteria": "It's possible to add our JavaScript SDK to a website, there will be a UI with the title and description of the token gate, and a wallet connect button to unlock. The token-gated content can be unlocked by users that fulfill the access conditions (checked via API). Finally, call to actions will be shown after successful or unsuccessful unlocks.",
+      "report": "We created a demo page to showcase how the unlocking experience looks on a website that has integrated our SDK. However, we changed the endpoint where the working example will be hosted.\n old: https://dev.vault3.io/sdk.\n new: https://app.vault3.io/sdk.\nThe source code is available on our open-source GitHub Repository.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 41800,
+      "promise": "・Create a token gate with name, description, access conditions, call-to-actions\n・Add exclusive files to the token gate\n・SDK authentication via API token",
+      "criteria": "Using the SDK UI with a valid API key, token gates can be created with customized access conditions, name, description, call-to-actions, and exclusive files.",
+      "report": "We created a demo page to showcase how the token gate creation experience looks on a website that has integrated our SDK, This also includes access condition creation and linking, branding editing, adding exclusive files to space, and authentication via API token. However, we changed the endpoint where the working example will be hosted.\n old: https://dev.vault3.io/sdk.\n new: https://app.vault3.io/sdk.\nThe source code is available on our open-source GitHub Repository.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 41800,
+      "promise": "・UI customization for token gate creation and unlocking",
+      "criteria": "The VAULT3 SDK can be customized to offer a seamless UI/UX experience on the client's website. This includes background color, buttons color, button text color, button on-hover color, button text on-hover color, text color, text font.",
+      "report": "We released a beta version (100% free) with a demo page to showcase how the UI customization looks on a website that integrated our SDK.\nWith this milestone, we released a beta version that will be publicly announced to the Cardano community. We changed the endpoint where the admin dashboard and SDK demo will be hosted\n new: https://beta.app.vault3.io/sdk.\nUse the dropdown on the top-right corner to change the theme of the SDK (2 themes supported), this will change the colors used in the JavaScript config and will update the colors, font family, and buttons in the UI. Also, customize the messages that are displayed to the users while unlocking the spaces using the input fields in the center of the demo page. These are also connected with the JavaScript config file that initializes the SDK.\nPlease keep in mind that we built this website only to show the product to Catalyst reviewers, so it's not fully featured as it will be deleted after the Milestones are approved.\nThe source code is available on our open-source GitHub Repository.",
+      "kinds": [
+        "other"
+      ],
+      "links": 1
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 41800,
+      "promise": "・Releasing beta version of the product\n・Bug fixing and refinements\n・Public release\n・Project Close-Out Video\n・Project Close-Out Report\n・Expected Traction: 5 integrations, 100 monthly active users, 100 GB shared (bandwidth)",
+      "criteria": "SDK is publicly available as a npm package and can be integrated with any partner project. A close-out video and report are publicly available on a VAULT3 token gate.",
+      "report": "We launched a beta version of our SDK for 10 weeks under beta.app.vault3.io/sdk to gather feedback and fix bugs. Now we have released the production version of the VAULT3 SDK on:\nClose-out video product demo: https://youtu.be/sRRg43YhuE4\nClose-out video product final thoughts: https://youtu.be/sqekd9sE8uw\nClose-out report: https://docs.google.com/document/d/1Z9eAEr17XHkULMqhLnUv34u53TrgcZ161ILhWrHw01A/edit?tab=t.jx29hcp86twa\nNPM Package for React SDK: https://www.npmjs.com/package/@vault3/sdk\nNPM Package for VanillaJS SDK: https://www.npmjs.com/package/@vault3/sdk-vanilla\nDemo website for React SDK: https://app.vault3.io/sdk.\nDemo website for JS SDK: https://vault3-io.github.io\nOpen source repo for the SDK: https://github.com/vault3-io/vault3-sdk\nFinally, we also hosted the close-out videos (mp4) and report (pdf) on a VAULT3 space: https://vault3.io/space/catalyst-vault3-sdk.",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 19
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "title": "CardanoChain Poultry Trace dApp: Transparent Supply for Safe, Quality Products",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 30000,
+      "promise": "・Integration: Implementation/improvements for common poultry system functionalities.\n・User Authentication Module: Development and integration of a user authentication system.\n・Dashboard Customization: Customization of the existing dashboard to include common poultry system functionalities.\n・UI/UX Design: Development of a user-friendly interface for new poultry trace features.\n・ERP: Compare and choose open source ERP software that can handle common system functionalities.\n・Non-Blockchain Poultry Trace Features:\n\n・Breeders Management: Development of features for managing breeders.\n・Chicks Management: Development of features for managing chicks.\n・Hatchery Management: Development of features for managing hatchery operations.",
+      "criteria": "Integration:\n・Successful integration for all common poultry system functionalities.\n・Functionalities are accessible and operational within the system.\n\nUser Authentication Module:\n・Users can log in, and log out securely.\n・Password recovery and user profile management functionalities are operational.\n\nDashboard Customization:\n・The dashboard reflects the newly integrated common system functionalities.\n・Users can easily navigate and utilize the customized dashboard.\n\nUI/UX Design:\n・The new interface for poultry trace features is intuitive and user-friendly.\n\nNon-Blockchain Poultry Trace Features:",
+      "report": "・Public github repo - click here\n・Staging site http://hatchtrack.awura.tech/ \n・admin email: test@test \n・password: 5b29rE2Y \n\n・Do you want to know how to run the project locally? Follow the readme here or follow this video (With audio) \n・Video demonstrations showing fully integrated poultry functionalities including breeders, chicks, and hatchery management modules. Poultry management \n・Video demonstrations of secure login, logout, and profile management processes. Sign in with email/password and Using wallet\n・Video demonstrations of the updated dashboard reflecting poultry system functionalities. Dashboard video\n・We used a paid designed UI template to speed up our work with clean, neat, mobile friendly and easy to customize.\n・Video demonstrations of the new user-friendly interface for poultry trace features. Without audio description video can be found here and with audio description can be found in all test report files\n・ERP software/modules comparison and decision document prepared here\n・Based on your refusal, unnecessary files are removed and updated are added to the repo. All are merged to the main branch. You can check here\n\n・ All test reports compiled here but since you refused to accept, we prepared separately in detail listed below\n\nIntegration: click here \nUser Authentication Module: click here \nDashboard Customization: click here\nUI/UX Design: click here\nNon-Blockchain Poultry Trace Features: click here\n\nFrom the next milestone\n・Plutus (smart contract) progress here \n\nTest CCPT NFT minted by using the above smart contract (CCPT - stands for CardanoChain Poultry Tracker) can be found on preprod transaction here and address here",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 22,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 30000,
+      "promise": "Smart Contract Development:\n・Development of smart contracts for poultry data storage, including breeders, chicks, and hatchery data.\n\nDeployment on Testnet:\n・Deployment of the developed smart contracts on the pre-prod or preview test net.\n\ncryptographic mechanisms \n・Implement the cryptographic mechanisms before the data stored \n\nTesting Data Storage:\n・Testing the storage and retrieval functionalities for breeders, chicks, and hatchery data on the pre-prod or preview test net.\n\nRepo\n・A github repo with the smart contract code",
+      "criteria": "Smart Contract Development:\n・Smart contracts are fully developed for storing poultry data.\n\nDeployment on Testnet:\n・Successful deployment of the smart contracts on the pre-prod or preview test net.\n・Deployment logs and network confirmations showing the smart contracts are live on the test net.\n\ncryptographic mechanisms \n・Encrypted data to be stored \n\nTesting Data Storage:\n・Successful testing of data storage and retrieval for breeders, chicks, and hatchery data.\n・Test results showing that data is correctly stored, retrieved, and managed on the test net.\n・Testing reports confirming the smart con",
+      "report": "・The platform deployed on https://poultry.datascienceplc.com/ for test\n・Smart contract for storing poultry data have been developed (not only for breeders, chicks and hatchery) and the lucid code that is used to mint and record history is accessible through API. The code repo is publicly accessible here.\n・Mint and history record api documentation prepared/published on postman documenter with detailed description, test cases, request examples and response examples.\n\n・Smart contract code have been successfully deployed on our AWS server for pre-prod testnet. Click here\n・Deployment logs and network confirmations are attached as evidence.\n・Cryptographic mechanism feature explanation click here\n\n・Data storage and retrieval functionalities for breeders, chicks, hatchery and other data were tested successfully on the testnet report Click here\n・Video demonstrations of the testing process click here (Detailed description about each video can be found on the above document)\n\n・Testing with local farms. Click here\n\n・CI/CD workflow added to deploy on AWS ECS for both management platform and smart contract repo\n・README.md updated to make blockchain feature configuration easier. Readme file, AWS workflow and local deployment instructions are available in the repository for reference.",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 25000,
+      "promise": "Batch Tracking Functionalities:\n・Implementation of functionalities to assign unique IDs to each batch.\n\nUser Interface Development:\n・Development of a user interface for stakeholders to query and track specific batches.\n\nTesting for Accuracy:\n・Conduct testing to ensure accurate batch tracking.\n\nQuality Assurance Testing:\n・Conduct extensive testing to validate the effectiveness of quality assurance processes.\n\nRecord-Keeping System:\n・Implementation of a transparent record-keeping system for supplier and vendor interactions.\n\nSupplier and Vendor module Development:\n・Development of a module for suppliers and vendors to interact with the record-keeping system.\n・Establish secure communication channels with hatcheries, processing units, and other stakeholders.\n\nSupplier and Vendor Module Testing:\n・Conduct testing to ensure the module is fully operational.\n\nSmart Contract Development and Deployment:\n・Development of smart contracts for the record-keeping system.\n・Deployment of the smart contracts on the pre-prod or preview test net on Cardano's blockchain infrastructure.",
+      "criteria": "Batch Tracking Functionalities:\n・Unique IDs are successfully assigned to each batch.\n・System correctly tracks batches from creation to end-of-life.\n\nUser Interface Development:\n・Intuitive and user-friendly interface for stakeholders to query and track batches.\n・Usability testing confirming ease of use and functionality.\n\nTesting for Accuracy:\n・Batch tracking functionalities are tested for accuracy in real-time scenarios.\n・Test results confirming accurate tracking and data integrity.\n\nQuality Assurance Testing:\n・Quality assurance processes are validated through extensive testing.\n・Test reports",
+      "report": "For all changes please check the github commit history here\n\n//\n・Unique batch code generator function implemented on each model. Screenshots demonstration of batch creation, assignment of unique IDs Click here Test results report showing successful assignment and tracking of unique batch IDs.\n・Video demonstrations of the batch tracking functionalities; For egg/Chick/Feed/Medicine life cycle tracing using QR code click here videos are prepared on how users can trace using mobile and web version. Test results report confirming successful batch ID assignment and end-to-end tracking: Click here\n\n//\n・Report detailing usability testing feedback and confirmations of ease of use, screenshots and video walkthrough of the stakeholder user interface for querying and tracking batches and usability testing reports included in this document and this tracing folder contains all related files\n\n//\n\n・Platform testing session click here\n・Quality Assurance Testing Report click here\n\n//\n\n・All key poultry farm operations — ranging from vendor purchases (feed, medicine) to on-farm activities (egg setting, approvals, feeding, medication, incubation, candling, and hatchings) — are now recorded in our system. These records are stored both in a structured internal database and also anchored on the Cardano preprod blockchain, ensuring data transparency and immutability. Video demonstration for feed inventory registration click here, feed setting, request approval and feeding click here, medicine inventory registration here, medicine request, approval and medication here. \n・The above videos show full traceability from purchase to actual usage on chicks (feeding and medication). All item requests and approvals are recorded and linked with relevant batch and process stages. On-chain transaction references demonstrating transparency and accessibility.\n\n//\n・Vendors/suppliers registration feature implemented. Click here for video \n・Those videos show how the vendor/supplier feature can be used on new",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 25,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 15000,
+      "promise": "・Final close-out report\n・Final closeout video\n・deploy the project for public test \n・",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Accessible test site url with breeders, chicks, hatchery management features\n・",
+      "report": "・Final close-out report: Click here\n・Final closeout video: Click here\n・Test site url: https://poultry.datascienceplc.com/\n\n﻿\n//\nAdmin access credential\nAdmin email: test@gmail.com\nAdmin password: &$l-2A1e",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "設計文書は、キャッシュサービスに使用するアーキテクチャと技術を裏付ける。\n初期プロジェクト足場.",
+      "criteria": "キャッシュサービスで使用される各種コンポーネントや技術は、設計文書で明確に概説されています。\nキャッシュサービスの機能性は、高レベルから設計文書に概略されます。\nリポジトリはプロジェクト用に作成され、初期のスキャフォールディングが含まれています.",
+      "report": "出力更新:\n建築文書の更新を行い、審査者の懸念を第一審の投稿から解決します。\nプロジェクトのリポジトリに *initial scaffolding と design doc* をコミットしています。\nさらなる足場を追加しました。\n受諾の更新:\n更新されたアーキテクチャは、査読者のフィードバックの問題に対処し、不足している材料を提供します。\n証拠の更新:\n*initial scaffolding と design doc* を含むコミット\nhttps://milestones.projectcatalyst.io/projects/1000117/milestones\nREADME は、レビュー担当者の懸念に対処するために展開されています。\nhttps://github.com/mlabs-haskell/cardanow/blob/master/README.md\nhttps://github.com/mlabs-haskell/cardanow/blob/master/docs/Caching%20Infrastructure%20Architecture%20Design.pdf\nCardaNow repo には、以下のようなプロジェクトが足場に含まれています。\nhttps://github.com/mlabs-haskell/cardanow/tree/master/configurations\nhttps://github.com/mlabs-haskell/cardanow/blob/master/docker-compose.yaml\n\n最後に、説明ビデオは以下で利用できます。\nhttps://www.youtube.com/watch?v=xuwEbPUlZ-s"
+    },
+    {
+      "no": 2,
+      "promise": "Cardanoノードデータベースのスナップショットの復元スクリプトで、ユーザーはmithrilネットワークによって生成されたスナップショットでCardanoノードを起動することができます。\nソースコード(独自の展開関連コードを除く)とドキュメント.",
+      "criteria": "復元スクリプトは、ダウンロードしたスナップショットを正常に復元します(Cardanoノードがその時点から同期し続けることを可能にします)。 それを行うには、Mithrilネットワークから最新のスナップショットを取得し、それを使用してCardanoノードを実行します。\n復元スクリプトは、オープンソースのライセンスで一般にアクセス可能です.",
+      "report": "弊社のPoAレポートをご覧ください。\nhttps://github.com/mlabs-haskell/cardanow/issues/31"
+    },
+    {
+      "no": 3,
+      "promise": "Kupoスナップショットサービスの実装(Kupoと一緒に実行し、データベーススナップショットを保存するプログラム)。\nKupo スナップショットサービスのテストと展開。\nKupoデータベースのスナップショットの復元スクリプト(および必要に応じて、Kupoを開始する前に復元スクリプトを実行するシステム単位ファイル)。\nソースコード(独自の展開関連コードを除く)とドキュメント.",
+      "criteria": "Kupoデータベースのスナップショットは、各パブリックネットワーク(メインネット、プリプロード、プレビュー)のEPOC1回以上自動的に取得されます。\n各ネットワークの最新の2つのスナップショットは最小限に保持されます。\n誰でも、JSON 形式のデータベーススナップショットに関する重要なメタデータにアクセスすることができます(ダウンロード URL やその他の関連情報を含む)。\n各URLからダウンロードしたファイルは、Kupoデータベースのスナップショットが有効です。\n復元スクリプトは、ダウンロードしたスナップショットを正常に復元します(Kupoがその時点から同期し続けることを可能にします)。\nスナップショットの作成に関連するソースコードの一部,",
+      "report": "ここにホストされているMilstone 3のPoAレポートをご覧ください:\nhttps://github.com/mlabs-haskell/cardanow/issues/60"
+    },
+    {
+      "no": 4,
+      "promise": "Cardano DB Sync スナップショットサービスの実装(Cardano DB Sync と一緒に実行し、データベースのスナップショットを保存するプログラム)。\nCardano DB Syncキャッシュサービスのテストと展開。\nCardano DB Sync データベースのスナップショットの復元スクリプト(および任意に、Cardano DB Syncを始める前に、復元スクリプトを実行するシステム単位ファイル)。\nソースコード(独自の展開関連コードを除く)とドキュメント.",
+      "criteria": "Cardano DB Sync のスナップショットは、各パブリックネットワーク(メインネット、プリプロード、プレビュー)ごとに少なくとも 1 回自動的に取得されます。\n各ネットワークの最新の2つのスナップショットは最小限に保持されます。\n誰でも、JSON 形式のデータベーススナップショットに関する重要なメタデータにアクセスすることができます(ダウンロード URL やその他の関連情報を含む)。\n各URLからダウンロードしたファイルは有効なCardano DB Syncスナップショットです。\n復元スクリプトは、ダウンロードしたスナップショットを正常に復元します(Cardano DB Sync が、その時点から同期し続けることを可能にします)。\n作成に関連するソースコードの部分",
+      "report": "マイルストーン4のPoAレポートはこちら"
+    },
+    {
+      "no": 5,
+      "promise": "Cardanoノード、Kupo、Cardano DB Syncのキャッシュサービスのホスティング。\nチュートリアルとドキュメントの改善\n健康診断と監視.",
+      "criteria": "Cardanoノード、Kupo、Cardano DB Sync のキャッシュサービスは、このマイルストーンの期間中にオンラインでアクセスでき、アクセス可能です(一時的なダウンタイムを除く)。\nチュートリアルでは、すばやくCardanoノード、Kupo、Cardano DB Syncインスタンスをスピンするために、スナップショットと復元スクリプトを使用する方法を明らかに示します。\nチュートリアルでは、プロジェクトの事前の知識は必要ありません。\nコミュニティが報告した文書のギャップは解決されます。\n各サービスが手動テストの必要性なしで操作的かどうかを判断するために使用できる各キャッシュサービスに健康チェックが存在します。\nアラートが蜂を持っている",
+      "report": "マイルストーン5のアップデートPoAはこちらからご覧ください。\nhttps://github.com/mlabs-haskell/cardanow/issues/97\n\n追加には以下が含まれます:\n・新しいステータスページへのリンク https://status.cardanow.staging.mlabs.city/public-dashboards/84d785ac36f44fdab009a28bd1c61293\n・主要な readme https://github.com/mlabs-haskell/cardanow/blob/master/README.md#documentation にドキュメントを追加\n・ コミュニティのリクエストに対処しなかったことを確認し、集計文書を更新しました"
+    },
+    {
+      "no": 6,
+      "promise": "キャッシュサービスの継続的なホスティング。\nコミュニティのエンゲージメントとフィードバックの収集。\nプロジェクトクローズアウトレポート。\nプロジェクトのクローズアウトビデオ.",
+      "criteria": "Cardanoノード、Kupo、Cardano DB Sync のキャッシュサービスは、このマイルストーンの期間中にオンラインでアクセスでき、アクセス可能です(一時的なダウンタイムを除く)。\n誰でもGithubリポジトリに問題を送信できます。\n報告された問題は、重症/重要度の順に対処され、大きな問題が発生した。\nカルダノの開発者コミュニティは、調査、ディスカッション、および/またはその他の手段によって活動しています。\nクローズアウトレポートとビデオが提供され、プロジェクト触媒が必要とするすべての必要な詳細が含まれています.",
+      "report": "ソリューション\n\nCardano ノード、Kupo、Cardano DB Sync の公開アクセス可能なキャッシュサービスは次のとおりです。\nhttps://pub-b887f41ffaa944ebaae543199d43421c.r2.dev/available-snapshots.json\n\n公共の問題は、ここにあります:\nhttps://github.com/mlabs-haskell/cardanow/issues?q=is%3Aissue+\n\nアンケート、ディスカッションなどに関するMLabsのソーシャルチャネルへの投稿:\n\nhttps://x.com/MLabs10/status/1841430758248034370\nhttps://x.com/MLabs10/status/1858431442243739985\n\nこのマイルストーンを含む、プロジェクトのコース全体で配信されたもののクローズアウトレポートとビデオショーカス。\n\n動画: https://www.youtube.com/watch?v= IHU JKbNaU\n\nレポート: https://github.com/mlabs-haskell/cardanow/issues/100"
+    }
+  ]
+}

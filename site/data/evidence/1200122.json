@@ -1,0 +1,36 @@
+{
+  "title": "Grow Cardano DeFi with transparent on-chain Fund Management platform",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 50000,
+      "promise": "Implement and Deploy on testnet for core feature\n - Create/Update/Manage Club\n - Club List\n - Deposit To/Withdraw from Club\n - Force Liquidated\n - Close Club\n\nWith these features:\n - For Club Operator (OP) :\n + OPs can create a Club, calculate NAV of their club, close club\n + OPs can deposit to a Club, withdraw from club\n - For community : View and choose to join a Club, withdraw to get back ADA, Force Liquidated of club if there is no activity.\n\nNote: At this milestone, we add the forced liquidation feature and close club feature, remove staking feature (this feature will be on next mile stone):\n - During our analysis, we found it necessary to add a mechanism to protect participants' interests in case the club takes no action. So we add force liquidated feature\n - To allow the OP to withdraw their funds, the club must close and all members must withdraw their money. This mechanism ensures the rights and interests of the community when participating in the club.\nThese features need to be implement before implementing any investment features.",
+      "criteria": "- Deploy features on testnet\n- Reach 20 user (wallet) are experiencing the features on the testnet. \"Experiencing\" here mean they do at least 1 action:\ncreate/update club, Deposit To/Withdraw from Club, Manage Club by Calculating NAV\n- At leaset 20 clubs was created on testnet",
+      "report": "・Link to DApp running on testnet (preview) : https://preview.danogo.io/club\n・Link to User guide document :\n・User guide : Due to the file size, we have uploaded the guide link to the project's GitHub (https://github.com/Danogo2023/catalyst)\n・Demo Video : Our demo video follows a flow consisting of multiple consecutive functions for each target audience. Instructions are added to the bottom or left corner of the videos. \n・Operator (A financial professional)\n・Create club flow: https://youtu.be/M1RNhH9dcJo\n・Manage Club Flow (These actions are performed every epoch): https://youtu.be/z_ywn5VXO4E\n・Club Member (Investors)\n・Deposit flow :https://youtu.be/eJzbalHgTsY\n・Withdraw flow : https://youtu.be/qpgV-jCieXY\n・About participants that joined to test:\n・Summary:\n・Number of Wallet joined to test: 25 Wallet\n・Number of Club created on testnet: 59 Clubs ( 1 wallet can create more than 1 club)\n・The list of actions of these wallets with the clubs on the testnet are represented by transactions which listed in section 3 of file Data detail below\n・All of these transactions are stored on-chain. To view detailed information about a transaction, you can use tools to explore Cardano blockchain data on the testnet, such as: https://preview.cardanoscan.io/\n・Data detail: Details\n・We have also included some screenshots of our test wallets on the testnet to help you better visualize our system.\n・https://github.com/Danogo2023/catalyst/tree/06c5af929f30e1629fefdf53cb1c64367b5cbe58/fund-management-platform/community-evidence/fund12-milestone1/screenshots",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 17
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 50000,
+      "promise": "- Implement and Deploy on testnet first investment methods: Staking Method\n + Delegate to multi pools\n + Claim ADA rewards of multi delegation\n\nAt this phase, OPs can delegate fund capital to multiple pools and claim ADA rewards",
+      "criteria": "- Deploy features on testnet\n- Reach 60 transaction of delegation or claimming ADA rewards executed by at least 20 OP wallets (on testnet)",
+      "report": "With this milestone, Danogo Club introduces its first profit-generating feature: Staking.\nThis feature is available only for club managers: Club Operators.\n・Link to the DApp running on the testnet (preview) with the staking feature : https://preview.danogo.io/club\n・Link to User guide document :\n・User guide : link v1.1\n・This version 1.1 file only includes the user guide for the new feature in this release (Staking Feature). \n・Details of previous features can be found in user guide v1.0 in Milestone 1\n・We continue to upload the user guide version 1.1 to the project's GitHub repository (https://github.com/Danogo2023/catalyst) . You can also find user guide version 1.0 here.\n・Demo Video : \n・Instructions are added to the bottom or left corner of the videos.\n・Target Audience: Operators (A financial professional):\n・Start Staking : https://youtu.be/K1PQiyXLlMQ\n・Update Staking: https://youtu.be/jZMG_Ezhd1c\n・Claim Staking Rewards : https://youtu.be/fHeqW9x9awY\n・About participants that joined to test: We collect data from the previous milestone up to now : Data was collected from October 15, 2024, to January 23, 2025, 23:59 GMT+7\n・Summary : \n・Number of Wallet joined to test: 43 Wallets\n・Number of unique wallets executing delegation or claiming transactions : 32 Wallets (detail in section 1.a of file Data detail below)\n・Number of Delegation/Claiming Rewards transactions : 104 transactions\n・Total transactions : 613 transactions\n・Number of Club created on testnet: 177 Clubs ( 1 wallet can create more than 1 club)\n・The list of actions of these wallets with the clubs on the testnet are represented by transactions which listed in section 2 (Transaction Details) of file Data detail below\n・Delegation/claiming reward transactions in section 2.a\n・All of these transactions are stored on-chain. To view detailed information about a transaction, you can use tools to explore Cardano blockchain data on the testnet, such as: https://preview.cardanoscan.io/\n・Data detail: link file \n・We have als",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 21,
+      "cut": true
+    }
+  ]
+}

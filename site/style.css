@@ -1240,12 +1240,19 @@ body.rg-noscroll { overflow: hidden; }
 .rg-pi-dot.st-Active { background: var(--st-act); }
 .rg-pi-dot.st-Cancelled { background: var(--st-cancel); }
 .rg-pi-n { font-size: 13px; line-height: 1.45; overflow-wrap: anywhere; }
+/* 原題。メタ行（Fund・分野・人）と見分けが付くよう、1行に省略して字面を変える。
+   全文は title 属性で読める。 */
 .rg-original {
   display: block;
-  margin-top: 2px;
-  color: var(--fg-3);
-  font-size: 10px;
+  margin-top: 3px;
+  color: var(--sd-fg2);
+  font-size: 10.5px;
   font-weight: 400;
+  font-style: italic;
+  letter-spacing: .01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   line-height: 1.35;
 }
 .rg-pv-n .rg-original { margin-top: 5px; font-size: 11px; }
@@ -1308,6 +1315,20 @@ body.rg-noscroll { overflow: hidden; }
   outline: none;
 }
 .rg-person-note { margin-top: 3px; color: var(--fg-3); }
+
+/* 数え方の断り書き。順位表の前に置き、読み違えを防ぐ。 */
+.rg-caution {
+  margin: 4px 10px 10px;
+  padding: 9px 11px;
+  border-left: 3px solid var(--pin);
+  border-radius: 0 8px 8px 0;
+  background: var(--sd-card);
+  font-size: 11.5px;
+  line-height: 1.65;
+  color: var(--sd-fg2);
+  list-style: none;
+}
+.rg-caution strong { color: var(--sd-fg); font-weight: 600; }
 
 .rg-pempty { margin: 16px; font-size: 13px; color: var(--fg-3); }
 .rg-pmore {
@@ -1639,6 +1660,303 @@ body.rg-noscroll { overflow: hidden; }
 .rg-person-note { color: var(--sd-fg3); }
 .rg-pempty { color: var(--sd-fg3); }
 
+/* ---------- 状態フラグと完了報告 ---------- */
+/* 旗は色で優劣を作らない。線種と字形で区別し、数字を添える。 */
+
+.rg-flags { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0 0; }
+.rg-flag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 9px;
+  border: 1px solid var(--sd-line);
+  border-radius: 12px;
+  background: var(--sd-card);
+  font-size: 11px;
+  color: var(--sd-fg2);
+  white-space: nowrap;
+  cursor: help;
+}
+.rg-flag-m { font-size: 12px; color: var(--pin); line-height: 1; }
+.rg-pv-facts {
+  margin: 8px 0 0;
+  font-size: 12px;
+  color: var(--sd-fg2);
+  font-variant-numeric: tabular-nums;
+}
+
+/* 一覧の行に添える印。名前は出さず絵柄だけ。 */
+.rg-mini {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 10px;
+  color: var(--sd-fg3);
+  cursor: help;
+}
+.rg-mini-v { color: var(--pin); }
+
+/* 完了報告の動画。枠は 16:9 で固定する。 */
+.rg-video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin: 8px 0 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #000;
+  border: 1px solid var(--sd-line);
+}
+.rg-video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* ---------- 地球儀 ---------- */
+/* 同じ国境データを正射図法で描く。裏側は描かない。見えないものを想像で埋めない。 */
+
+.rg-ocean {
+  fill: #eef4f7;
+  stroke: rgba(80, 70, 50, .22);
+  stroke-width: 1;
+}
+.rg-is-globe .rg-sh { stroke-width: .5px; }
+.rg-is-globe svg { cursor: grab; }
+.rg-is-globe svg:active { cursor: grabbing; }
+
+#g-toggle { font-weight: 600; }
+#g-toggle[aria-pressed="true"] { background: #0e594c; color: #fff; }
+
+/* 経緯線。球であることを示すためだけの線。データではないので、うんと薄く。 */
+.rg-grid {
+  fill: none;
+  stroke: rgba(40, 80, 110, .16);
+  stroke-width: .6;
+  pointer-events: none;
+}
+.rg-equator {
+  fill: none;
+  stroke: rgba(40, 80, 110, .30);
+  stroke-width: .9;
+  pointer-events: none;
+}
+
+/* 陰影。球の左上から光が当たっているように見せる。国の上に薄くかぶせる。 */
+.rg-shade { fill: url(#globeShade); pointer-events: none; }
+
+/* 宇宙。地球儀のときだけ、枠の中が夜になる。 */
+.rg-is-globe {
+  background:
+    radial-gradient(120% 120% at 50% 40%, #16213e 0%, #0d1425 55%, #070b16 100%);
+}
+.rg-star { fill: #ffffff; pointer-events: none; }
+.rg-halo { fill: url(#globeHalo); pointer-events: none; }
+
+/* 夜空の上では、球の海と線を少し明るくする。 */
+.rg-is-globe .rg-ocean { fill: #dce9f2; stroke: rgba(160, 200, 230, .35); }
+.rg-is-globe .rg-grid { stroke: rgba(40, 80, 110, .14); }
+.rg-is-globe .rg-equator { stroke: rgba(40, 80, 110, .26); }
+
+/* 操作の帯は夜空でも読めるように、影を濃くする。 */
+.rg-is-globe .rg-zoom button,
+.rg-is-globe .rg-jb {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .5), 0 4px 14px rgba(0, 0, 0, .35);
+}
+
+/* ---------- 約束と報告 ---------- */
+/* 提案で何をやろうとしていたのかと、完了報告で何が報告されたのかを、そろえて並べる。
+   優劣を色で作らない。左右を同じ重さで置き、読む人が自分で比べる。 */
+
+.rg-ev-note {
+  margin: 0 0 10px;
+  font-size: 11.5px;
+  line-height: 1.7;
+  color: var(--sd-fg2);
+}
+.rg-ev-note strong { color: var(--sd-fg); font-weight: 600; }
+.rg-ev-load { margin: 8px 0; font-size: 12px; color: var(--sd-fg3); }
+
+.rg-evs { list-style: none; margin: 0; padding: 0; }
+.rg-ev {
+  margin: 0 0 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--sd-line);
+  border-radius: 10px;
+  background: var(--sd-card);
+}
+.rg-ev-h {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 10px;
+  margin-bottom: 8px;
+}
+.rg-ev-no {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--sd-fg);
+  font-variant-numeric: tabular-nums;
+}
+.rg-ev-marks { margin-left: auto; display: flex; flex-wrap: wrap; gap: 4px; }
+.rg-ev-kind {
+  padding: 1px 7px;
+  border: 1px solid var(--sd-line);
+  border-radius: 9px;
+  background: var(--sd-card2);
+  font-size: 10px;
+  color: var(--sd-fg2);
+  white-space: nowrap;
+}
+.rg-ev-links { font-size: 10px; color: var(--sd-fg3); white-space: nowrap; }
+
+/* 左右にそろえる。狭いときは縦に積む。 */
+.rg-ev-pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 14px;
+}
+.rg-ev-col { min-width: 0; }
+.rg-ev-k {
+  display: block;
+  font-size: 10.5px;
+  font-weight: 600;
+  color: var(--sd-fg2);
+  margin-bottom: 3px;
+}
+.rg-ev-k2 { margin-top: 8px; }
+.rg-ev-t {
+  margin: 0;
+  font-size: 11.5px;
+  line-height: 1.65;
+  color: var(--sd-fg);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.rg-ev-cut {
+  margin: 8px 0 0;
+  font-size: 10.5px;
+  color: var(--sd-fg3);
+}
+
+/* 原文。訳の下にたたんで置く。訳が原文を置き換えることはない。 */
+.rg-ev-src { margin-top: 5px; }
+.rg-ev-src summary {
+  font-size: 10.5px;
+  color: var(--sd-fg3);
+  cursor: pointer;
+  list-style: none;
+}
+.rg-ev-src summary::-webkit-details-marker { display: none; }
+.rg-ev-src summary::before { content: "▸ "; }
+.rg-ev-src[open] summary::before { content: "▾ "; }
+.rg-ev-src summary:hover { color: var(--sd-fg2); }
+.rg-ev-en {
+  margin-top: 4px;
+  padding-left: 8px;
+  border-left: 2px solid var(--sd-line);
+  color: var(--sd-fg2);
+  font-size: 11px;
+}
+
+/* ---------- 質問する ---------- */
+/* こちらからは何も指示しない。何を聞くかは読む人が決める。
+   答えは記録ではないので、記録の欄と見た目を分ける。 */
+
+.rg-ask { margin-top: 10px; }
+.rg-ask > summary {
+  font-size: 11px;
+  color: var(--sd-link);
+  cursor: pointer;
+  list-style: none;
+  padding: 3px 0;
+}
+.rg-ask > summary::-webkit-details-marker { display: none; }
+.rg-ask > summary::before { content: "▸ "; }
+.rg-ask[open] > summary::before { content: "▾ "; }
+
+.rg-ask-body {
+  margin-top: 8px;
+  padding: 10px 11px;
+  border: 1px dashed var(--sd-line);
+  border-radius: 9px;
+}
+.rg-ask-note {
+  margin: 0 0 8px;
+  font-size: 10.5px;
+  line-height: 1.7;
+  color: var(--sd-fg2);
+}
+.rg-ask-note strong { color: var(--sd-fg); font-weight: 600; }
+.rg-ask-q {
+  width: 100%;
+  padding: 7px 9px;
+  border: 1px solid var(--sd-line);
+  border-radius: 7px;
+  background: var(--bg);
+  color: var(--sd-fg);
+  font-family: inherit;
+  font-size: 12px;
+  resize: vertical;
+}
+.rg-ask-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-top: 7px;
+}
+.rg-ask-row button,
+.rg-ask-key button {
+  height: 28px;
+  padding: 0 12px;
+  border: 1px solid var(--sd-line);
+  border-radius: 14px;
+  background: transparent;
+  color: var(--sd-fg);
+  font-family: inherit;
+  font-size: 11px;
+  cursor: pointer;
+}
+.rg-ask-send { background: #0e594c !important; color: #fff !important; border-color: #0e594c !important; }
+.rg-ask-row button:disabled { opacity: .5; cursor: default; }
+.rg-ask-who { font-size: 10.5px; color: var(--sd-fg3); }
+.rg-ask-forget { margin-left: auto; color: var(--sd-fg3) !important; }
+
+.rg-ask-key { margin-top: 4px; }
+.rg-ask-p, .rg-ask-i {
+  height: 28px;
+  padding: 0 8px;
+  border: 1px solid var(--sd-line);
+  border-radius: 7px;
+  background: var(--bg);
+  color: var(--sd-fg);
+  font-family: inherit;
+  font-size: 11px;
+}
+.rg-ask-i { flex: 1 1 140px; min-width: 0; }
+.rg-ask-hint { margin: 6px 0 0; font-size: 10.5px; color: var(--sd-fg3); }
+.rg-ask-hint a { color: var(--sd-link); }
+
+.rg-ask-wait, .rg-ask-err { margin: 8px 0 0; font-size: 11px; color: var(--sd-fg3); }
+.rg-ask-err { color: #b03516; }
+
+/* 答え。記録ではないので、点線で囲って区別する。 */
+.rg-ask-a {
+  margin-top: 8px;
+  padding: 9px 10px;
+  border: 1px dotted var(--sd-line);
+  border-radius: 8px;
+  background: var(--sd-card);
+}
+.rg-ask-t {
+  margin: 0;
+  font-size: 11.5px;
+  line-height: 1.7;
+  color: var(--sd-fg);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+  .rg-ev-pair { grid-template-columns: 1fr; }
+}
+
 /* 世界ビューの国の行 */
 .rg-ci {
   display: grid;
@@ -1698,6 +2016,193 @@ body.rg-noscroll { overflow: hidden; }
 .rg-sw[data-bin="4"] { background: var(--m4); }
 .rg-sw[data-bin="5"] { background: var(--m5); }
 .rg-sw-none { background: var(--land); }
+
+/* 額は二本立て。関わったすべて（共著を含む）と、単独提案だけ。 */
+/* 額は二段。主は桁を丸めて比べやすく、副は正確な値。 */
+.rg-pi-a2 { display: grid; justify-items: end; gap: 1px; }
+.rg-amt-main {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--sd-fg);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.rg-amt-sub {
+  font-size: 10px;
+  color: var(--sd-fg3);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  cursor: help;
+}
+
+/* 並べ替えの基準を切り替える。 */
+.rg-solo-sw { display: flex; gap: 4px; margin-top: 7px; }
+.rg-solo-b {
+  height: 24px;
+  padding: 0 10px;
+  border: 1px solid var(--sd-line);
+  border-radius: 12px;
+  background: transparent;
+  color: var(--sd-fg2);
+  font-family: inherit;
+  font-size: 10.5px;
+  cursor: pointer;
+}
+.rg-solo-b.on { background: #0e594c; color: #fff; border-color: #0e594c; }
+
+/* 資金が重なっている印。共同提案の額は人物別に各人へ計上される。 */
+.rg-dup {
+  margin-left: 4px;
+  font-size: 10px;
+  color: var(--pin);
+  cursor: help;
+  font-variant-numeric: tabular-nums;
+}
+.rg-dup-note {
+  display: block;
+  margin-top: 2px;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--sd-fg3);
+}
+
+/* ---------- Fund の時系列 ---------- */
+/* 6年ぶんを同じ物差しに並べる。段階は形で分け、色相で優劣を作らない。
+   手動記録で補った日は薄くして、公式の日と見分けられるようにする。 */
+
+.tl-wrap { margin: 8px 0 0; }
+
+.tl-scale {
+  position: relative;
+  height: 18px;
+  margin-left: 44px;
+  margin-right: 190px;
+  border-bottom: 1px solid var(--hairline);
+}
+.tl-tick {
+  position: absolute;
+  transform: translateX(-50%);
+  font-size: 10px;
+  color: var(--fg-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.tl-rows { list-style: none; margin: 0; padding: 0; }
+.tl-row {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) 190px;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 0;
+  border-bottom: 1px solid var(--hairline);
+}
+.tl-row.tl-active { background: var(--chip); }
+.tl-name {
+  font-size: 12px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--fg);
+}
+
+.tl-track { position: relative; height: 18px; }
+
+/* 期間は帯。段階ごとに高さを変えて重なりを読めるようにする。 */
+.tl-span {
+  position: absolute;
+  top: 7px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--fg-2);
+}
+.tl-span.tl-submit { background: var(--fg-3); }
+.tl-span.tl-review { background: var(--fg-2); top: 5px; height: 8px; opacity: .35; }
+.tl-span.tl-vote { background: var(--fg); }
+
+/* 時点は印。 */
+.tl-dot {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  font-size: 11px;
+  line-height: 18px;
+  color: var(--fg);
+}
+.tl-dot.tl-onboard { color: var(--fg-2); }
+
+/* 手動記録で補った日は薄く。公式の日と混ぜない。 */
+.tl-manual { opacity: .45; }
+
+.tl-nums {
+  display: grid;
+  gap: 1px;
+  justify-items: end;
+  text-align: right;
+}
+.tl-amt {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--fg);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+.tl-cnt {
+  font-size: 10px;
+  color: var(--fg-3);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.tl-key {
+  display: inline-block;
+  width: 16px;
+  text-align: center;
+  margin-right: 8px;
+  color: var(--fg);
+}
+.tl-manual-key {
+  width: 22px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--fg-2);
+  opacity: .45;
+  vertical-align: 3px;
+}
+
+@media (max-width: 720px) {
+  .tl-scale { margin-right: 0; }
+  .tl-row { grid-template-columns: 34px minmax(0, 1fr); }
+  .tl-nums { grid-column: 1 / -1; justify-items: start; text-align: left; }
+}
+
+/* 価値の差。上がったか下がったかは線種で分ける。色相で善悪を作らない。 */
+.rg-val-d { font-weight: 600; font-variant-numeric: tabular-nums; }
+.rg-val-d[data-up="true"] { color: var(--fg); }
+.rg-val-d[data-up="false"] { color: var(--fg); text-decoration: underline; text-underline-offset: 3px; }
+.rg-val-total th, .rg-val-total td {
+  border-top: 2px solid var(--hairline);
+  font-weight: 600;
+}
+
+/* 事前スコア。中央値が並ぶことに意味があるので、その列だけ強める。 */
+.rg-score-mid { color: var(--fg); font-weight: 600; }
+
+.rg-score-note {
+  display: grid;
+  gap: 6px;
+  margin: 14px 0 0;
+  max-width: 62em;
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--fg-2);
+}
+.rg-score-note strong { color: var(--fg); font-weight: 600; }
+.rg-score-caveat {
+  margin-top: 4px;
+  padding-top: 8px;
+  border-top: 1px solid var(--hairline);
+  color: var(--fg-3);
+  font-size: 12px;
+}
 
 .rg-offmap {
   margin: 16px 0 0;

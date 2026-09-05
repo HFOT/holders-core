@@ -1,0 +1,58 @@
+{
+  "title": "ANVIL - Open Source - Universal Wallet Connector - Crosschain",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 36250,
+      "promise": "Open-source the \"@ada-anvil/react-uwc-crosschain\" SDK and launch this codebase as an initial public version. A new Github repository will be created to handle the new SDK requirements.",
+      "criteria": "・Codebase is made publicly available under an open-source license on GitHub\n・Documentation for installation, basic usage, and an initial set of React hooks for Ethereum, Solana, and Polygon is published\n・New Github created for the new enhanced SDK",
+      "report": "Hello reviewers,\nTo make the review process easier, I’ve divided the submission according to the \"Evidence of milestone completion\" points. I hope this format is helpful for you.\n\nOriginal SDK @ada-anvil/react-uwc-crosschain Github repository public link\nThe previous repository link was https://github.com/Cardano-Forge/react-uwc-crosschain. After reviewing the code, we decided to integrate the cross-chain functionalities directly into the Weld open-source project (Fund 11: https://milestones.projectcatalyst.io/projects/1100028). Centralizing and standardizing everything within the same library made more sense. This would further the library's goal of making all blockchains, including Cardano, seamlessly integrated, thereby enhancing adoption.\n\nNew Github repository public link\nThe project will use the same repo as our open-source Weld (https://github.com/Cardano-Forge/weld).\n\nA link to the documentation that will be in the same GitHub repository\nThe original documentation is still available at https://www.npmjs.com/package/@ada-anvil/react-uwc-crosschain or at https://github.com/Cardano-Forge/react-uwc-crosschain/tree/main/packages/react-uwc-crosschain, but the updated project documentation will be merged into the current Weld documentation (https://github.com/Cardano-Forge/weld).\n\nSubmit a closeout report directly in the milestone submission form, briefly describing what we accomplished, any problems we encountered, how we resolved them, any unforeseen issues and their solutions, and any changes made from the original milestones\nAfter several internal meetings, we decided to merge the current project with the Weld project from our Catalyst Fund 11, rather than extending it. This approach makes more sense for both users and maintainers. It simplifies cross-chain standardization, avoids code duplication, and eliminates the need for an additional package to share functionality. Our experience with Weld in Fund 11 has provided valuable insights, and we're eager to appl",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 43500,
+      "promise": "Extend SDK compatibility by rewriting it in Vanilla JavaScript.",
+      "criteria": "・Release of the updated SDK with Vanilla JavaScript support, ensuring it works seamlessly with non-React frameworks.\n・Based on our Universal wallet connector events, the Universal Wallet Connector Cross-Chain will implement the same event-driven logic, providing a seamless development experience across the supported chains without requiring in-depth knowledge of each one\n・Add documentation for the most common use cases developers may encounter, similar to what we did for the Universal Wallet Connector usage section. The focus will mainly be on React examples, as it is the most widely used tech",
+      "report": "Github link updates with Vanilla JS support & Documentation updated with the new integration: \nhttps://github.com/Cardano-Forge/weld \nThe readme has been updated and all examples are available and up-to-date in this directory: https://github.com/Cardano-Forge/weld/tree/main/documentation/examples\nCloseout Report:\nIn this milestone, we focused on enhancing Weld, our universal wallet connector, by adding cross-chain capabilities and restructuring the library to be more modular and extensible. We re-architected the library into a set of core, reusable primitives, enabling us to extend Weld's powerful reactivity system to additional blockchains without much code duplication.\nWe also developed a suite of 150+ unit tests to ensure this foundational layer is robust, providing a stable base for Weld's current and future APIs.\nWeld now supports wallet extensions and connections for the Cardano, Ethereum, Polygon, and Solana blockchains. With our new core primitives, we've streamlined the process for us and the community to add support for additional blockchains in the future.",
+      "kinds": [
+        "code"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 43500,
+      "promise": "Add support for Bitcoin and provide comprehensive documentation for integrating Bitcoin.",
+      "criteria": "・Integration of Bitcoin, enabling wallet management features for this chain\n・Provide documentation for Bitcoin integration, including setup and usage examples\n・Release updated SDK versions with Bitcoin support",
+      "report": "Github link updates with bitcoin support and documentation updated for bitcoin: \nGithub\nThe readme has been updated and all examples are available and up-to-date in this directory: Documentation\nCloseout Report:\nIn this milestone, we built upon our previous work to add Bitcoin support to Weld.\nSimilar to our other chain integrations, Weld now exports a new weldBtc instance with reactive stores that track installed extensions, monitor connected wallet attributes and balances. These stores also offer a unified interface for sending transfers, signing transactions, and retrieving wallet contents. This Bitcoin integration works with any frontend framework and includes first-class bindings for React.\nUnlike Cardano's standardized wallet APIs, the Bitcoin ecosystem features diverse and non-standardized extension interfaces. We therefore focused our initial integration on two popular and well-documented wallets: XVerse and Unisat.\nAdditionally, we plan to add support for the WBIP-004 Web Providers standard once it gains wider adoption. Currently, only a handful of wallets have implemented WBIP-004, and even among those, there are some inconsistencies in how the standard is applied.",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 21750,
+      "promise": "・Finalize the project and produce comprehensive documentation of the work completed, including a video demonstration.",
+      "criteria": "・Compile a project close-out report outlining the development process, community engagement outcomes, and a detailed review of all milestones achieved.\n・Produce a video that demonstrates the SDK's capabilities, its impact on the Cardano ecosystem, and real-world applications.\n・Conduct a final review and feedback session with key stakeholders and the community to gather testimonials and suggestions for future work",
+      "report": "Final Milestone:\nWe are proud to share that Weld has gone cross-chain and this Catalyst Project is now complete! We have finished the cross-chain integrations and completed all the milestones set for us; thus, we will be submitting our final milestone. \nLink to Final Repository:\nGithub\nLink to Close-Out Video:\nClose-Out Video\nLink to Close-Out Form:\nProject Close-out Form",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "NuNet: Cardano supported SSI/DID for DePIN Orchestration",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 30000,
+      "promise": "DID Generation:\nAll entities within the NuNet network — organizations, users, and machines — can securely and independently generate their own decentralized identifiers (DIDs) derived from Cardano wallets.\nStandards Compliance:\nThe generated DIDs conform to W3C DID standards, ensuring reliable and standardized identification within Nunet.",
+      "criteria": "The code for deriving DIDs from Cardano wallets feature is implemented in the Nunet codebase. It should be passing\n・unit tests, \n・integration tests and \n・acceptance tests which represent typical user perspective for the feature\n\nThe feature is clearly documented in English outlining the DID generation process and basic usage guidelines. The complete codebase and documentation are publicly available in the Nunet GitLab repository at https://gitlab.com/nunet.\nThe feature is merged into the main branch and included in a minor or major protocol release.",
+      "report": "Output\nCardano Eternl Wallet Integration within the Nunet Protocol. The following functionality has been added with this integration:\n・Entities within the NuNet network can generate their own W3C compliant decentralized identifiers (DIDs) using their Eternl wallet. \n・Eternl Wallet can be used to generate capabilities\n・Eternl Wallet can be used to grant capabilities to other peers in the network\n\nNote: NuNet's network communication is powered by the NuActor System, a zero-trust system that utilizes fine-grained capabilities, anchored on DIDs, following the UCAN model. With this milestone we allow Cardano Eternl Wallet to be used for identity management, authorisation and authentication necessary for secure interaction within the Nunet network.\n\nAcceptance Criteria\nThe entire functionality is merged into the Nunet codebase with MR #1190 on Device Management Service (DMS) Gitlab repo. And it is also included in latest major release of DMS: v0.9.0\nRequired tests have been successfully cleared\n・Units test executed in the pipeline\n・Acceptance and Integration testing has been done manually\n\nRequired documentation is created and available on public Gitlab repo\n\n﻿Evidence\nMerge Request for the implementation:\nhttps://gitlab.com/nunet/device-management-service/-/merge_requests/1190 \nDMS 0.9.0 release\nhttps://gitlab.com/nunet/device-management-service/-/releases/r0.9.0 \nDocumentation\nREADME for Eternl CLI tool\nhttps://gitlab.com/nunet/dev-tools/eternl-cli/-/blob/main/README.md?ref_type=heads \nREADME for using the Cardano Eternl Wallet Integration\nhttps://gitlab.com/nunet/device-management-service/-/blob/main/docs/wallets/README.md?ref_type=heads \nUnit Tests \nhttps://gitlab.com/nunet/device-management-service/-/jobs/12417884066 \nAcceptance & Integration Test\nVideo recording demonstrating the entire functionality can be found here \nhttps://gitlab.com/nunet/device-management-service/-/blob/main/docs/wallets/README.md?ref_type=heads#demonstration-video",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 17
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 30000,
+      "promise": "Support for multiple DID methods integrated into the NuNet protocol.\nCompatibility ensured with at least one decentralised identity solution used in the Cardano ecosystem (e.g., Hyperledger Identus, KERI, or Andamio).",
+      "criteria": "The feature is implemented, and all unit, integration, and acceptance tests pass. Acceptance tests represent user behaviors for implemented self-sovereign identity (SSI) solutions\nThe documentation is written in English and includes \n・overview of the DID integration and supported SSI solutions\n・Setup and usage guidelines\n\nThe codebase and documentation are made publicly accessible in the NuNet Gitlab repository at https://gitlab.com/nunet",
+      "report": "Output\nIntegration of did:prism method within the Nunet Protocol. \nPRISM is a DID method that runs on the Cardano blockchain, providing decentralized identity management. The following functionality has been added with this integration:\n・Create and manage PRISM identities\n・Sign UCAN tokens with PRISM DIDs\n・Verify UCAN tokens signed by PRISM identities\n・Interoperate between did:prism and did:key identities\n\nThis establishes compatibility with Hyperledger Identus SSI solution which uses the did:prism method\nNote: NuNet's network communication is powered by the NuActor System, a zero-trust system that utilizes fine-grained capabilities, anchored on DIDs, following the UCAN model. With this milestone we allow did:prism method to be used for identity management, authorisation and authentication necessary for secure interaction within the Nunet network.\n\nAcceptance Criteria\nThe entire functionality is merged into the Nunet codebase with MR #1215 on Device Management Service (DMS) Gitlab repo. \nRequired tests have been successfully cleared\n・Units test executed in the pipeline\n・Acceptance and Integration testing has been done manually\n\nRequired documentation is created and available on public Gitlab repo\n\n﻿Evidence\nMerge Request for the implementation:\nhttps://gitlab.com/nunet/device-management-service/-/merge_requests/1215 \nDocumentation\nhttps://gitlab.com/nunet/device-management-service/-/blob/main/prism/PRISM_UCAN_DOCUMENTATION.md \nUnit Tests\nhttps://gitlab.com/nunet/device-management-service/-/jobs/12881199303 \nAcceptance & Integration Test\nVideo recording demonstrating the entire functionality can be found here \nhttps://gitlab.com/nunet/device-management-service/-/blob/main/prism/PRISM_UCAN_DOCUMENTATION.md#demonstration-video",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 13
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 25000,
+      "promise": "Analysis of decentralized identity (DID) solutions supported by the previous milestone (e.g., Hyperledger Identus, KERI, or Andamio).\nDesign of integration architecture and roadmap for at least one decentralized identity solution.\nDesign blueprint and related documentation made available via NuNet infrastructure resources.",
+      "criteria": "(1) A comprehensive analysis report evaluating at 1-3 decentralized identity solutions compatible with previously established DID methods, including detailed technical assessment of capabilities, limitations, and integration requirements; (2) A phased implementation roadmap proposal; (3) Consideration that proposed architecture supports existing Open source compliance frameworks and verification standards, and is technically compliant with NuNet protocol.",
+      "report": "Output\nCompleted implementation of NeoPrism node integration with NuNet protocol and a POC implementation that validates interoperability between Hyperledger Identus SDK and NuNet Device Management Service (DMS). This demonstrates technical feasibility and integration design for using Hyperledger Identus based identities within the NuNet ecosystem.\nA summary report has been created on a public Gitlab issue to document all the relevant work that has been done. This includes:\n・Analysis of Hyperledger Identus SSI solution which uses the did:prism method for identity generation and Cardano as its verifiable data registry (VDR).\n・Internal discussions and approaches considered for the integration\n・Reference to foundational work done towards integration with NeoPrism node used by Hyperledger Identus. \n・Reference to POC implementation that establishes technical feasibility and integration design \n\nNote: Device Management Service (DMS) is the core component of NuNet protocol. To learn more, please look at our documentation.\n\nAcceptance Criteria\nAnalysis of Hyperledger Identus decentralized identity solution\nhttps://gitlab.com/nunet/device-management-service/-/issues/1256#analysis\nIntegration with NuNet protocol\nhttps://gitlab.com/nunet/device-management-service/-/issues/1256#integration-within-nunet-protocol \nAll the work is based on open source compliance frameworks and verification standards, and is technically compliant with NuNet protocol. The necessary documentation is created and available on public Gitlab repo.\n\n﻿Evidence\nSummary report documenting the work can be found on this public Gitlab issue\nhttps://gitlab.com/nunet/device-management-service/-/issues/1256",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 9
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 15000,
+      "promise": "Report compiling the evaluation of selected decentralized identity (DID) solutions, including detailed technical analysis, integration requirements, and alignment with NuNet protocol and open-source compliance frameworks. Deliverables include:\n・Final Close-out Report summarizing findings, roadmap, and recommendations.\n・Final Close-out Video presenting outcomes, key insights, and next steps",
+      "criteria": "Completion and public release of the Final Close-out Report with the implementation roadmap included. The proposed architecture should be technically compliant with NuNet protocol and existing open-source verification standards.\n・Final closeout report is publicly available and is written according to the guideline from Catalyst Fund14\n・﻿Final closeout video is publicly available and created according to the guideline from Catalyst Fund14",
+      "report": "Output\n・Final close out report summarizing all the work done during the previous milestones. It also includes the roadmap and envisaged next steps.\n・Final close out video \n\nAcceptance Criteria\nFinal close out report is available in PDF format on NuNet Google Drive. It includes the implementation roadmap: \nhttps://drive.google.com/file/d/1pjJBRFQh3w0uwqfFPjvcVF7VRpiW04hz/view?usp=sharing \nThe close out video is publicly accessible on NuNet Youtube channel.\nThe architecture is based on open source verification standards, and is technically compliant with NuNet protocol. \nEvidence\nClose Out Report\nhttps://drive.google.com/file/d/1pjJBRFQh3w0uwqfFPjvcVF7VRpiW04hz/view?usp=sharing \nClose Out Video\nhttps://www.youtube.com/watch?v=wI8MYjx_-Js",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

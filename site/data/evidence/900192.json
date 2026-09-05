@@ -1,0 +1,53 @@
+{
+  "title": "Solve asset fractionalization",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 22500,
+      "promise": "Document explaining all the requirements of the platform and overall architecture",
+      "criteria": "Clear architecture and requirements of the system",
+      "report": "Document explaining all the requirements of the platform and overall architecture:\nhttps://docs.google.com/document/d/188QkENBo_dRJW5T-r0XovLt7RaMwXY3Br90oZ2l9XqE/edit",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 22500,
+      "promise": "Smart contract with 50% of the requirements and tests to verify at least half of the functionalities",
+      "criteria": "Smart contract with 50% of the requirements  and tests to verify at least half of the functionalities",
+      "report": "In this report, we present our proposed solution for addressing the issues of asset fractionalization, testnet sc deployment,  test-sute results, github repo screenshots and brand new UI we are working on.\nOur solution is based on the use of Canonical Smart Contracts, which allow different versions of a given asset to be merged into one canonical version. The key components of our solution are the TokenMerger and CanoncialToken contracts. The TokenMerger is an ERC1967Proxy contract that acts as a conversion contract between different versions of a given asset, which we refer to as Fragmented Tokens, and the canonical version of that same asset. The TokenMerger has a whitelist for each asset of the Fragmented Tokens that are allowed to be converted. This allows for a single version of the asset to exist, solving the issues of liquidity fragmentation among different tokens and improving user experience.\n\nThe TokenMerger contract has several governing functions such as addFragmentedToken, removeFragmentedToken, setConvertingToCanonicalState, setConvertingToFragmentedState, mintCanonicalToken, setAddingDelay, setCommission, and withdrawCommission. It also has user functions such as convertToCanonical, convertToFragmented and several views such as getAllFragmentedTokens, getAllCanonicalTokens, getAllTreasuryTokens and calculateCommission.\n\nWe have deployed a testnet smart-contract for internal tests on Milkomeda C1 Devnet and have provided documentation on what has been achieved so far. The results of the tests suite conducted have been included in this report. We also added screenshots from our repo (will be public after submitting PoM4) and additionally screenshots from our UI that will serve as a standalone DApp while completing the project (its not a project requirement so we are just sharing for informative purposes). \n\nPlease find the PoM2 raport docs here: https://docs.google.com/document/d/1-rOFUoa-tbvqAtX7k-ngkBemuQ91nbN8eF4R1RdkHe8/edit#heading=h.ya9safjv6il8",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 22500,
+      "promise": "Full Smart Contract Implementation",
+      "criteria": "Full Smart Contract Implementation",
+      "report": "The report announces the successful completion of the planned backlog for a smart-contract, DApp (UI&UX), and test suite aspects of a proposal. The team has developed a canonical converter smart contract that maintains a whitelist of fragmented assets represented by bridges (ERC20s), allowing users to submit these assets and receive a canonical version in return. \nThe report outlines the business requirements, including the multisig smart contract that controls the adding of assets and the control of whitelisted bridges, and the TokenMergerProxy, which is initiated with the implementation contract, an admin, and two parameters related to commissions. The report also discusses the delay in adding bridges or assets, the creation of synthetic assets, the pre-minting of canonical assets, and the pausable conversion of assets. \n\nThe report concludes by announcing the successful deployment of the Milkomeda C1 devnet contracts and testing of all scenarios, and the team's plans for a public release in the next two weeks.\n\nReport:\nhttps://docs.google.com/document/d/1gs3_M4-A6yZd71QvLHKNPW_CFyrk8TD6WhZ1H0HrTbg/edit?usp=sharing\nShort DApp walk-thru: \nhttps://drive.google.com/file/d/1EYsFoAnSqB5DPdRPfsb8bxR2BbGESiFm/view?usp=share_link",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 22500,
+      "promise": "Smart contract to solve asset fractionalization by generating a new contractBetter UX and safer USDC on Milkomeda C1",
+      "criteria": "Pass Security Audit with 3rd party Auditor",
+      "report": "We are pleased to present the final Proof of Milestone of our Grant Proposal for the development of a smart-contract-based Token Merger solution. Our team has worked tirelessly over the past few months to deliver a comprehensive and robust solution that meets the project's objectives.\n\nProof of Milestone Evidence - Audit report:\nhttps://drive.google.com/file/d/1lvQYNUBRmT4Ho-ZFx-cLyBCjKTRA6n9-/view?usp=sharing\nAddressing Audit in Token Merger repo: https://drive.google.com/file/d/1sRYVESiBrDaWmhdXfe7qKl5ay8ZdCcwE/view?usp=share_link",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    }
+  ]
+}

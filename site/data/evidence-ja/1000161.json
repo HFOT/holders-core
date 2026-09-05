@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "技術選択、フレームワーク選択、テストなどの作業結果のドキュメンテーション.",
+      "criteria": "フレームワークの決定。\nサンプルプロダクトの作成。\n依存する環境のインストールとCardanoノードのインストール用の製品のサンプル.",
+      "report": "コンセプトの証明は、下記のリンクにてまとめて行います。\nhttps://github.com/btbf/sjg-tools/tree/main/poc"
+    },
+    {
+      "no": 2,
+      "promise": "アルファ版0.1リリース",
+      "criteria": "このバージョンでは、依存インストール、Cardanoノードのインストール、チェーン同期機能が実装されています.",
+      "report": "ついにv0.1.1-alphaをリリースしました\nhttps://github.com/btbf/sjg-tools/releases/tag/0.1.1-alpha\nこのリリースは、PoCで検証された技術スタックから採用されたフレームワークを変更する要件にもかかわらず成功しました。\n依存関係、ノードのインストール、Mithrilクライアントのインストール、およびDBスナップショットの復元のすべてが完全に自動化されます。 (デモ動画をご覧ください)\n\nX(Twitter)でのグローバル発表\nhttps://x.com/spojapanguild/status560/1772081165332912?s=20\n\nv0.1.1-alphaの実証動画(Youtube限定出版)\nhttps://youtu.be/-619fSJhe0g"
+    },
+    {
+      "no": 3,
+      "promise": "アルファ版0.2リリース",
+      "criteria": "このバージョンでは、さまざまなプールペアキー作成、プール登録、トポロジー設定機能を実行しています.",
+      "report": "1.V0.2.0-alphaをリリースしました\nhttps://github.com/btbf/sjg-tools/releases/tag/0.2.0-alpha\nこのバージョンでは、次の機能を実行します。\n・初期設定\n・ノードの種類選択\n・チェーン選定\n・トポロジーファイル作成\n・各種キーペアの発行\n・Poolメタデータ作成\n・プール登録証明書作成\n・Stakeキー登録\n・プール登録\n\nX(Twitter)でのグローバル発表\nhttps://x.com/spojapanguild/status/1798708636308684955\n\nv0.2.0-alphaの2.Demonstrationビデオ(Youtube限定出版物)\nhttps://youtu.be/eNU7YpQpZpY\n自動翻訳を有効にしてください"
+    },
+    {
+      "no": 4,
+      "promise": "アルファ版のリリース 0.3",
+      "criteria": "このバージョンでは、監視ツールのセットアップ、古いSJGツールの統合、プール登録情報を更新する機能を実行します.",
+      "report": "1.V0.3.0をリリースしました\nhttps://github.com/btbf/sjg-tools/releases/tag/0.3.0\nv0.3.0の開発中、コード設計を完全にオーバーホールすることを決定しました。 この決定は、コードベースが v1.0 に移動し、より大きな保守性を必要とするので、大幅に拡大するという予測で行われました。\nhttps://github.com/btbf/sjg-tools/pull/8\nこの決定により、私たちは新しい発見と改善されたユーザー操作性を築き上げ、私たちは自信を持って、非常に前向きなステップでした。\nこのバージョンでは、監視ツールのセットアップ、古いSJGツールの統合、プール登録情報を更新する機能の実装が含まれています。\n監視ツールのセットアップ\nhttps://github.com/btbf/sjg-tools/pull/10/commits/6fafc0f4d265d1c32539e13f9ac8549e35d07c49\nhttps://github.com/btbf/sjg-tools/pull/10/commits/9e41a347b2062e27ce17214dac82031ddb21da46\n古いSJGツールの統合\nhttps://github.com/btbf/sjg-tools/pull/10/commits/069fdcb5ff8fd8bffe4cda8940fbc47cb2a563e4\nプール登録情報を更新する機能\nhttps://github.com/btbf/sjg-tools/pull/10/commits/bd5e7206e282b1cb90a1b596aab7195badf3a987\nhttps://github.com/btbf/sjg-tools/pull/10/commits/156bd5b610d6e5da81750da63eb9d562f413d7e0\nv0.3.0の2.Demonstrationビデオ(Youtube限定出版物)\nhttps://youtu.be/vtewg7d3b5I\n3.オープンソースライセンスの追加\nhttps://github.com/btbf/sjg-tools?tab=MIT-1-ov-file"
+    },
+    {
+      "no": 5,
+      "promise": "Bataバージョン0.4をリリース。\nインストールと使用ガイドの作成。\n\n業績の証明を提出してください。\nプロジェクトレポートの証拠を提出してください。\nデモビデオの証拠を提出してください.",
+      "criteria": "ベータ版のコードとドキュメントのリリース。\nhttps://github.com/btbf/sjg-tools",
+      "report": "1.Githubリポジトリに公開\nバージョン0.4をリリースしました。\nhttps://github.com/btbf/sjg-tools/releases/tag/0.4.2\n以前のマイルストーンは、重要なコード変更を行い、ツールの完全なリブランディングを実施しました。\nCNODE ManagerからSPOKITに名前を変更しました。\nhttps://spokit.spojapanguild.net/\nグローバルレポート\nhttps://x.com/spojapanguild/status/1983850086535708784\nインストールと使用ガイド\nhttps://github.com/btbf/sjg-tools/blob/main/README.md\n2.リリース版デモ動画を公開しました。\nプロジェクトのクローズアウトビデオに最新バージョンのデモが含まれています。\nプロジェクトクローズアウトレポート\nhttps://docs.google.com/document/d/16KBUura7ph7zPsHmC8pHP-90fZ6ZbQKuJs1L5gwiaUw/edit?usp=sharing\nプロジェクトクローズアウトビデオ\nhttps://youtu.be/7verTtGHuME (一般変更)"
+    }
+  ]
+}

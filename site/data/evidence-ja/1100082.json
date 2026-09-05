@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "下記の3つのチャートを実装\n・エポックリー報酬分配のための分析チャート:各エポックでの報酬の分配を照らすチャートを開発する\n・デイリー・トランザクションと手数料・コレクション:カルダノで毎日取引数と手数料の収集を示すグラフィカルな表現を実装する。\n・エポック1枚のコレクション:エポック1枚のグラフィックイラスト\n\n・上記グラフのスクリーンショット",
+      "criteria": "・3つのチャートは、メインネット上で実装および展開された出力で、公開URLで検証可能\n\n・特典配布\n・デイリーTxと手数料カウント\n・特典料金",
+      "report": "3 マイルストーン1の一部としてチャートをメインネット上に実装、展開\nチャートの一覧の Analytics ページを見る - https://cardanoscan.io/analytics\n・エポック報酬分配表 - https://cardanoscan.io/analytics/epochRewardDistribution\n・デイリーTxカウントと手数料チャート - https://cardanoscan.io/analytics/dailyTxCountAndFees\n・エポックチャートごとのコレクション - https://cardanoscan.io/analytics/epochFees"
+    },
+    {
+      "no": 2,
+      "promise": "・Absoluteトランザクションカウントチャート:個々のtx転送の合計(トークン/ADA転送のカウントではなく、すべての合計)としてカウントされた毎日の取引\n・ブロックサイズトレンド:Cardanoのブロックサイズの増加や縮小のグラフを実装します。 これは、Cardanoチェーンの健康とネットワークの活動を理解するのに役立ちます.",
+      "criteria": "・2つのチャートをメインネット上で実装・展開する出力で概説し、公開URLで検証可能\n・絶対トランザクション数\n・ブロックサイズチャート",
+      "report": "2 マイルストーン2の一部としてチャートをメインネット上に実装し展開します。\nチャートの一覧の Analytics ページを見る - https://cardanoscan.io/analytics\n・Absoluteトランザクションカウントチャート - https://cardanoscan.io/analytics/absoluteTxCount\n・ブロックサイズトレンドチャート - https://cardanoscan.io/analytics/blockSize"
+    },
+    {
+      "no": 3,
+      "promise": "・CardanoscanのメインネットサイトのDeploy分析ページで、M1とM2の合計5チャートを以下にまとめました。\n\n・エポックリー報酬分配のための分析チャート:各エポックでの報酬の分配を照らすチャートを開発する\n・デイリー・トランザクションと手数料・コレクション:カルダノで毎日取引数と手数料の収集を示すグラフィカルな表現を実装する。\n・エポック1枚のコレクション:エポック1枚のグラフィックイラスト\n・Absoluteトランザクションカウントチャート:個々のtx転送の合計(トークン/ADA転送のカウントではなく、すべての合計)としてカウントされた毎日の取引\n・ブロックサイズトレンド:Cardanoのブロックサイズの増加や縮小のグラフを実装します。 これは、Cardanoチェーンの健康とネットワークの活動を理解するのに役立ちます。\n\n・ビデオによるクローズアウトレポート",
+      "criteria": "・上記の出力で概説されている分析チャートは、メインネットのURLを分析ページに訪問することで検証可能\n・休みの報告と動画提供",
+      "report": "データソースと一貫性\nチャートのデータの起源\n分析チャートのデータは、Cardanoブロックチェーンから直接ソースされます。 利用条件:\n・オープン・ソース・ライブラリである Ouroboros-network-js は、ブロックチェーンデータを効率的にアクセスし、処理します。\n・Cardanoscan内での独自のコードは、リアルタイムの精度と信頼性のデータをさらに改良、集計、視覚化します。\n\nチャートのデータ一貫性\n・毎日データチャート:データが毎日更新され、前のUTC日のメトリックが表示されます。 ローカル時間差は遅延の印象を作成するかもしれませんが、表示されたデータは最新の完全なUTC日を反映しています。\n・リワード・ディストリビューション・チャート: このチャートは、固有のプロトコル設計による2つの画期的な遅延と、Cardanoブロックチェーン内での報酬の確定方法があります。\n・平均ブロックサイズチャート: このチャートは、過去のUTC時間までのデータを提供し、データの一貫性を維持しながらタイムリーな洞察を保証します。\n\nMainnetで展開されるチャート この提案の一環として、\n\n・すべてのチャートリストページ - https://cardanoscan.io/analytics\n・エポック報酬分配表 - https://cardanoscan.io/analytics/epochRewardDistribution\n・デイリーTxカウントと手数料チャート - https://cardanoscan.io/analytics/dailyTxCountAndFees\n・エポックチャートごとのコレクション - https://cardanoscan.io/analytics/epochFees\n・Absoluteトランザクションカウントチャート - https://cardanoscan.io/analytics/absoluteTxCount\n・ブロックサイズトレンドチャート - https://cardanoscan.io/analytics/blockSize\n\nクローズアウトレポートとビデオ\n\n・レポート - https://drive.google.com/file/d/1DHyo66Qji9lcm8Ipg1MLKgGRL8xwZzTs/view?usp=sharing\n・動画 - https://youtu.be/o9Z0ZuJX8b8"
+    }
+  ]
+}

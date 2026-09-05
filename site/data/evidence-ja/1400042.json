@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・DEXアグリゲーターインテグレーションパートナー(Steelswap、Minswap、Dexhunterなど)へのアプローチ\n・デザイン文書・プロジェクトプランの作成:\n・ボットデザイン:DiscordとTelegramボットの両方をビルドするための高レベルのアーキテクチャアプローチを提供する設計文書を作成します。\n・ウォレットインテグレーションの研究開発計画: チームは、ユーザーウォレットのビルドとより重要な確保のためのアプローチを調査し、文書化します\n・DEXアグリゲーターの統合を確認します。チームは、DEXアグリゲーターの統合(少なくとも2つのSteelswap、Dexhunter、Minswap)と統合リスクまたはブロッカーの確認を行います。\n・Discord および Telegram の調査検証プロセス: Discord/Telegram の検証に会う実装計画を研究し、作成します。 (これらの企業がボットが自分のチャネルで動作するようにする検証プロセスです)",
+      "criteria": "・インテグレーションパートナーへの到達完了: チームは、Steelswap、Minswap、Dexhunterに統合/パートナシップ(またはプロジェクトマイルストーンの時点で他の利用可能なDEXアグリゲーター)を確認します。\n・プロジェクトプランは、以下を含む完成しました。\n・ボット設計・実装計画\n・DEXアグリゲーターの統合リスト\n・タイムラインの統合\n・第三者の統合によるブロックや遅延、課題の緩和計画(オプション)\n・Discord および Telegram の証明の条件およびそれらの条件を満たす計画\n・ベーシックウォレットの設計とセキュリティプラン",
+      "report": "パブリックレポート:https://docs.google.com/document/d/1-9N19qwZNrUqPn8mVaPyPbtRz2WTg-uhTJsJa9vKDtQ/edit?usp=sharing\n・すべての出力およびACのすべての証拠が含まれています\n\nDEXアグリゲーターパートナー発表:\nスチールスワップ: https://x.com/SteelSwap/status/2010530769974792290?s=20\nMinswap: https://x.com/Oraclecharli3/status/2011479557396906492\nDexhunter: https://x.com/Oraclecharli3/status/2011662015379734900?s=20"
+    },
+    {
+      "no": 2,
+      "promise": "基本的な機能のボットを設計して下さい:\n・DiscordとTelegramボットのMVPバージョンを構築します。\n・Charli3トークンデータAPIを搭載した/priceと/infoコマンドの実装\n・安全な展開のための完全なDiscordとTelegramボット検証。\n・両プラットフォーム間でトークンデータや情報リクエストの基本的な応答を提供\n\nウォレットの統合の設計と実装:\n・インポートボットウォレット機能:ウォレット、ビューバランス、送金、鍵のエクスポートができます。\n・ウォレットのセキュリティモデルとユーザパスワードシステムをドキュメント化\n・Deploy ウォレットは、Discord および Telegram ボットで一貫してコマンドを実行します.",
+      "criteria": "・基本機能付きボット完成\n・基本機能が有効:ユーザーは、Discord および Telegram テストサーバーで /price および /info コマンドを実行し、Charli3 API から正しいトークンデータを受け取ることができます。 (価格=現在の価格、情報=ポリシーID、名前、ティッカー)\n・Discord および Telegram ボットの検証が完了し、ボットをサーバーに招待することができます。\n・ウォレット統合完了\n・ボットウォレットを生成し、資金を受け取り、残高を確認することができます。\n・鍵を安全にエクスポートし、テスト資金を別の財布に送ることができます。\n・セキュリティモデルの文書化・公開\n・Walletドキュメンテーション Compl",
+      "report": "・ボット基本機能へのリンク デモビデオ:https://drive.google.com/file/d/13V8AcZCgSdpHWZcBfEA4rfns9bxu6a01/view?usp=sharing\n・ウォレット統合デモビデオへのリンク:https://drive.google.com/file/d/1TG-INiVkmnwZhHmT5SCUbx0tuas01fAW/view?usp=sharing\n・ウォレットドキュメントへのリンク:https://github.com/SteelSwap/steelbot-milestone-proofs/tree/main/Milestone%202"
+    }
+  ]
+}

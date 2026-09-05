@@ -1,0 +1,62 @@
+{
+  "title": "Regulated and Permissioned DeFi with Sundae and Kora Labs",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "- A detailed specification for how a DID (utilizing existing standards) may be attached to an ADA Handle\n - A detailed specification for how a service can resolve that DID, given an ADA Handle\n - A CIP extending CIP-30 with DID request capabilities",
+      "criteria": "- The specification describes in detail how a DID may be attached to an ADA Handle\n - The specification describes in detail how a service can resolve that DID, given an ADA Handle\n - The authored CIP extends CIP-30 with DID request capabilities",
+      "report": "We have completed Milestone 1 for \"Regulated and Permissioned DeFi with Sundae and Kora Labs.\" This milestone provides a detailed specification on attaching a Decentralized Identifier (DID) to an ADA Handle and how services can resolve that DID to enable secure, regulated transactions on the Cardano blockchain.\nMilestone 1 Deliverables\n・Specification for DID Attachment: Instructions on linking a DID to an ADA Handle, allowing decentralized services to resolve identity information securely.\n・DID Resolution: A step-by-step process for how a service can resolve a DID using an ADA Handle.\n・Clarification on CIP-30 Extension: Originally, we intended to extend CIP-30 to include DID request capabilities. However, after further exploration, we determined that the dApp can resolve the DID directly via the ADA Handle without needing the wallet to perform the lookup. This change simplifies the implementation and increases overall efficiency. Consequently, we did not proceed with the CIP-30 extension as originally planned. Instead, the project team will leverage the Cardano Foundation’s wallet and existing standards such as KERI and IPEX for future credential verification functionalities, which are beyond the scope of this milestone.\n\nEvidence of Milestone Completion\n・Specification Document: The full specification can be found here with detailed steps on how a dApp can resolve a DID using an ADA Handle (Section 2, Page 3): https://github.com/SundaeSwap-finance/sundae-specs/blob/main/permissioned-pool/spec.pdf\n・Announcements: We have made announcements on our social platforms:\n・https://x.com/SundaeSwap/status/1842577688352956837\n・https://drive.google.com/file/d/1O2XYygU4Fu5CfF8GjbBtutgZoNErOr12/view?usp=sharing\n\nNote on Changes in Approach\nAs mentioned above, we initially planned to extend CIP-30 but realized that it wasn’t necessary for this specific use case. The dApp can resolve the DID from the ADA Handle without wallet involvement, making the process simpler for developers.",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "Note to reviewers: this is part 1 of our original Milestone #2, which we're breaking up into two parts to satisfy the Catalyst required milestone structure \n- A detailed specification of how the Sundae v3 “permissioned trading pool” will work",
+      "criteria": "The specification describes in detail how the permissioned trading pool will function\nThe specification will adhere to the standard format we use for all public-facing technical documents, which can be found here: https://drive.google.com/file/d/1kk3szwu7Y9xaY4bOvt4fDsB2dpCxa55q/view?usp=sharing",
+      "report": "Milestone 2 focuses on providing a comprehensive specification detailing how the Sundae v3 \"permissioned trading pool\" will function.\nMilestone 2 Deliverables\n1. Specification for Permissioned Trading Pools:\n・This document provides an in-depth technical overview of the permissioned trading pool feature in Sundae v3.\n・It describes how the permissioned pools will operate, including access control mechanisms, compliance checks, and integrations with decentralized identity (DID) solutions.\n・The specification aligns with our standardized format used for all public-facing technical documents.\n・The full specification can be accessed here: https://github.com/SundaeSwap-finance/sundae-specs/blob/main/permissioned-pool/spec.pdf\n\n2. Clarification on Milestone Approach:\n・Our original Milestone 2 was initially structured to include both the DID specification and the permissioned trading pool specification. However, the deliverables were split to align with Catalyst's milestone structure.\n・Although Milestone 1 and Milestone 2 cover different aspects, both were completed simultaneously as part of our broader development effort. This submission focuses on the permissioned pools, while Milestone 1 covered the DID specification.\n\nAcceptance Criteria\n・The provided specification comprehensively outlines the technical details and functionality of the permissioned trading pool.\n・The document follows the required standard format for public-facing technical materials, ensuring consistency and clarity. Reference to our standard format can be found here: https://drive.google.com/file/d/1kk3szwu7Y9xaY4bOvt4fDsB2dpCxa55q/view?usp=sharing\n\nEvidence of Milestone Completion\n1. Specification Document:\n・The complete permissioned trading pool specification document is available here: https://github.com/SundaeSwap-finance/sundae-specs/blob/main/permissioned-pool/spec.pdf\n\n2. Public Announcements:\n・Official announcements regarding this milestone were made on our social media platforms and community ch",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "- A testnet proof-of-concept for a Sundae v3 trading pool that requires a signature from a compliance oracle",
+      "criteria": "The proof of concept is accessible on the preview or preprod testnet, using a mock compliance oracle as a proof of concept\nThe POC will include permissioned pool where you can only swap if the UTXO contains an NFT; we will show an example order that has executed with the NFT, and an example order that was listed, but never executed, because it didn't have the NFT.",
+      "report": "Milestone 3 Deliverables\n・Permissioned Pool Proof-of-Concept on Testnet\n・A functioning testnet deployment demonstrating Sundae v3’s permissioned trading pool functionality. This proof-of-concept includes mock compliance logic that restricts swap functionality to UTXOs containing a specific NFT.\n・Demonstration Transactions\n・Two sample transactions were submitted on-chain:\n\n・Successful transaction https://preview.cexplorer.io/tx/0942685fa42fbacb794531939fd0c1abe0c530c695756b51c6cf3edd0b0b5892\n・Failed transaction https://preview.cexplorer.io/tx/c10ec1c258e86694cbb50d36d8644835621e91ec7898adb43571759a0364a331 \n\n These demonstrate access control enforcement via the compliance oracle.\n・Clarification on Approach\n・This milestone is a continuation of our multi-phase delivery of permissioned pool functionality. It follows the specification work delivered in Milestone 2 and demonstrates real-world feasibility on-chain.\n\nAcceptance Criteria\n・The proof-of-concept is deployed to testnet and publicly accessible.\n・A functional demonstration shows the access control behavior (via presence/absence of NFT).\n・Confirmation that the feature performs as described in the spec document. https://github.com/SundaeSwap-finance/sundae-specs/blob/main/permissioned-pool/spec.pdf.\n\nEvidence of Milestone Completion\n・Testnet Deployment\n\n・Code and logic deployed to Cardano preview testnet.\n・Transactions linked above demonstrate proof-of-concept behavior.\n\n・Public Announcements\n\n・https://x.com/SundaeSwap/status/1919487032734130483\n・https://discord.com/channels/830939534174453800/830948250298875905/1369046240226054225\n\nConclusion\nThis milestone demonstrates practical feasibility for enforcing permissioned trading via compliance oracle logic on Cardano testnet. We believe this delivery satisfies Catalyst milestone expectations and contributes meaningfully to SundaeSwap’s development roadmap.",
+      "kinds": [
+        "chain",
+        "code",
+        "social"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 15000,
+      "promise": "- Comprehensive project completion report, detailing the project journey, achievements, challenges, and learnings.\n- Promotional and educational video showcasing the project's features and benefits.",
+      "criteria": "Community is able to access the final report and video.\nReport will include full metrics accounting of how the project was received by users during its testnet launch.",
+      "report": "This final close-out report outlines the completion of the Permissioned DeFi Pools project by Sundae Labs, with collaboration from Kora Labs. The work focused on building a testnet-deployed proof of concept for permissioned liquidity pools on Cardano and drafting a robust technical specification for identity-based access logic using decentralized identifiers (DIDs) and ADA Handles.\nThe report includes detailed discussion of key project KPIs, including public technical specifications, testnet deployment, and published milestone announcements. While the joint nature of the project posed scheduling and coordination challenges, the technical goals were met successfully.\nKey learning outcomes include:\n・The difficulty of coordinating joint Catalyst projects across two teams with separate internal priorities and timelines.\n・The realization that identifying a customer earlier in the process would have helped focus and guide development.\n\nAs noted in the close-out video, the team has demonstrated that permissioned DeFi is feasible on Cardano, and the next stage is identifying use cases and customers who need it.\nThis submission includes a summary report, links to GitHub specifications, working testnet transactions, public milestone announcements, and a short video walk-through. These materials collectively demonstrate that the proposal's deliverables have been completed and publicly shared.\nFinal Report: https://drive.google.com/file/d/1F9nd8rrVUQ53usmQsTgt4ODDwDMeSpDU/view\nWrap Up Video: https://www.youtube.com/watch?v=aTPdOUfCDC8",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

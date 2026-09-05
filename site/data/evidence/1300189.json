@@ -1,0 +1,76 @@
+{
+  "title": "Verifiable Data Registry for Identus in Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 10000,
+      "promise": "We will start by defining the base interface and architecture in Hyperledger Identus and set the base structure for the project, after that is completed we will need to start exposing and building documentation for the VDR public API and Driver's interface.\nDrivers will be the last peace and as we specified the Cardano specific ones will live in IOHK repositories, VS the more generic implementation (database) and the VDR component will live under the Hyperledger repository.\nAPI Specification in GITHUB markdown, under the hyperledger umbrella (https://github.com/hyperledger/identus-vdr)",
+      "criteria": "・Deliver a public version of the VDR specification in the open HyperLedger repositories\n・Present the specification our weekly community call hosted by the Linux foundation as part of the Hyperledger Identus lab. Community calls are recorded, we will be presenting the specification and announcing a workshop.\n・Organize a specific workshop to showcase the architecture and VDR specification, we will organise this workshop with Hyperledger and will be a recorded session where we present the architecture and specification, gather feedback from our users and solve any doubt that may raise around it.",
+      "report": "In the scope of milestone 1, we delivered the following things:\n・VDR System Technical Specification \n・Cardano PRISM VDR Specification\n・Discussed and clarified both specifications at the Architecture Meetings with the Identus team in IOG.\n・Presented the VDR specification at the Identus Community Meeting for discussion and peer review:\n・YouTube link\n・Zoom <a href=\"https://zoom.us/rec/play/UxCP-6KvQGp6OryjO5PqtwKFL_4PiiYl6c9kSnK4LrY4x75O0Yt--vOUxUoAjkIKnttqXAMrLYqQ_V5W.bjJqDx6gyQFzVTGC?accessLevel=meeting&canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fzoom.us%2Frec%2Fshare%2FH2mc55XKd3PqaHmipIll8_cRXapTc0LNbPeZzRwPnfW-vBw_rvTgd_Y8SdB7Tesy.laWHTwun4OI3rFQi\" rel=\"noopener noreferrer\" target=\"_blank\">link (from 11:11 timestamp) with audio transcript.\n・The example code for VDR (in-memory) as a first PoC and demo was delivered in the same repository.\n\nThe planned workshop should be moved to the following milestones, as there are no special topics to discuss at the current phase.\nThe team started the preparation activities for the second and third milestones:\n・PoC for two specifications (real VDR and real Cardano driver)\n・clarification of the specification based on the PoC's feedback",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 30000,
+      "promise": "Second deliverable will take 4 to 5 months and during this phase we will integrate the VDR component into the Agent API and expose it through API endpoints, which will be available in the Cloud Agent repository.\nOutputs include a mocked implementation of the VDR interface in the Cloud Agent. Create a new implementation of the Driver API which uses a database to store resources. Still not using Cardano blockchain as VDR. The updated documentation with the Driver specification will be inside the VDR Repository and the Docs portal.\nCloud Agent repository: https://github.com/hyperledger/identus-cloud-agent\nVDR Repository: https://github.com/hyperledger/identus-vdr\nDocs Portal: https://github.com/hyperledger/identus-docs",
+      "criteria": "・Integrating VDR Specification into the Cloud Agent (approved by the code maintainers in Identus https://github.com/orgs/hyperledger/teams/identus-maintainers) \n・Adding test coverage for the CloudAgent to cover the new methods added to expose the VDR interface\n・Present the work done in Tuesday Recorded Hyperledger community calls (Tuesday 3PM UTC)",
+      "report": "We have completed Milestone 2, which involved integrating the VDR library into the Hyperledger Identus Cloud Agent and exposing its functionality via API, along with comprehensive documentation and a tutorial.\nDocumentation\n\nComprehensive user and developer documentation for the VDR, including architecture overview, API usage, and HTTP binding, is publicly available: Hyperledger Identus VDR Documentation.\nVideo Demonstration\n\nWe have prepared a recorded demonstration showing:\n・The VDR is integrated into the Cloud Agent\n・Creating, reading, updating, and verifying entries via API\n・Example test flows using the VDR endpoints\n\nWatch here: Video Recording of Milestone 2 Demonstration at the Identus Community call on July 8, timestamp 09:19\nCode Deliverables\n\nThe following commits demonstrate the implementation and integration of the VDR into the Hyperledger Identus Cloud Agent:\nVDR Integration: Integration of the VDR into the Cloud Agent, exposing REST endpoints and enabling CRUD and verification operations: hyperledger-identus/cloud-agent#1591\nVDR Tutorial: Addition of a step-by-step tutorial to guide developers in using the VDR API with practical examples: hyperledger-identus/cloud-agent#1598",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "8",
+      "cost": 60000,
+      "promise": "Create wrapping-up documentation for the VDR Specification, documenting how to use and configure the VDR with the different Drivers (in this case, the Cardano driver) to point to the different networks (testnet, mainnet) \nWe will also conduct a workshop for the same purpose to help users use the Cardano VDR Driver, configure it for the different networks and use it to store and retrieve resources from Cardano.",
+      "criteria": "・The Cardano driver specification and documentation will be published under Hyperledger Identus VDR repository https://github.com/hyperledger/identus-vdr\n・The Cardano driver specification is reviewed, approved and merged by the Identus maintainers https://github.com/orgs/hyperledger/teams/identus-maintainers\n・The repository (in iohk) hosting the Actual code and implementation of the Cardano VDR is approved by the Hyperledger maintainers on Github , including some test scenarios to validate the working implementation.\n・Create and organize a public and recorded workshop in the Linux Foundation D",
+      "report": "The Identus engineers completed the third milestone of the Project Catalyst: Verifiable Data Registry for Identus in Cardano.\nThe corresponding outputs of the milestone are listed below, and include:\n1. Cardano VDR Specification\nThe team has authored a formal specification for how a PRISM VDR driver should interact with the Cardano blockchain. This specification is published publicly and provides:\n・The operational requirements of the driver (e.g., resolve, submit, verify operations)\n・Expected input/output types and data encoding formats\n・Ledger model interpretation\n・Error handling and status reporting\n\nSpecification URL: Cardano VDR Specification\n2. Driver Implementation\nThe team has implemented the full Cardano VDR driver according to the above specification. The driver is:\n・Part of the open-source Identus ecosystem\n・Capable of submitting DID storage operations (create, update, deactivate) to the Cardano ledger\n・Structured as a modular Scala library for integration into PRISM agents and tooling, the indexer for the VDR data is implemented in Rust as a microservice.\n\nImplementation repository, in Scala for the JVM target platform: prism-vdr-driver\nImplementation repository, in Rust for indexing and a REST API endpoint to fetch the data: neoprism\nOpen API specification for the VDR REST API endpoint: openapi\nKey components:\n・Driver interface and ledger configuration logic\n・Submitter implementation for Cardano\n・Operation resolver\n・Codec and format compatibility with DID Core\n・VDR data indexer\n・VDR REST API specification\n\n3. Test Coverage\nThe VDR driver has been integrated and tested within the NeoPrism project, which serves as an end-to-end test harness for DID interactions on Cardano, including the VDR data entries.\nRelevant test suites:\n・CreateStorageOperationSuite.scala\n・Covers valid and invalid storage operations using the Cardano VDR\n\nCI evidence of test run: CI Run Result\n4. Community Presentation\nThe team publicly presented the Cardano VDR specification and its",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 9,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 40000,
+      "promise": "We will be wrapping up and reviewing all our documentation in regards to the Identus VDR specification, Database Driver and Cardano Driver.\nOur docs portal https://hyperledger.github.io/identus-docs/ will include a specification to cover everything specific to the VDR, its architecture, drivers and workshops.\nThe team will have gathered feedback from the community through our workshops and community calls and by then we will include a FAQ section in our VDR. We want to make sure our documentation makes it easy for anyone to create and develop their applications in Identus using the Cardano VDR. We must make it really clear on how to switch between networks (testnet, mainnet) and link our documentation to Hyperledger Identus workshops (available on Github)",
+      "criteria": "In Hyperledger\n・Identus maintainer team review's all the new Specification in Hyperledger repository after gathering feedback and improvements suggestion raised by our users.\n・Identus maintainers will announce a Workshop in our Tuesday (recorded) community call (Tuesdays 3PM UTC) \n・Identus maintainers make all the workshops to configure the VDR public, recorded and available in https://hyperledger.github.io/identus main repo\n・VDR Architecture workshop to showcase and explain with sequence diagrams how fetching and storing resources from the VDR work\n・VDR Database Driver Workshop: to showcase a",
+      "report": "A. Output: Hyperledger VDR Specifications Reviewed and Updated\nAcceptance criteria: The Identus maintainer team reviews all new VDR specifications in the Hyperledger repository and incorporates community feedback-driven improvements.\nEvidence:\n・VDR System Technical Specification\n・Cardano VDR Specification\n\nB. Output: VDR Workshops Announced in the Hyperledger Identus Weekly Call\nAcceptance criteria: Identus maintainers announce VDR workshops during the Tuesday (3 PM UTC) community call, with the recording publicly available.\nEvidence:\n・Hyperledger Identus Meeting Notes & Recordings\n・Community Recording (VDR section starts ~7:00)\n\nC. Output: All VDR Workshops Published Publicly and Permanently\nAcceptance criteria: Workshop recordings, configuration guides, instructions, and demonstrations for VDR made available publicly in the Hyperledger Identus repositories.\nEvidence:\n・VDR Documentation (Public Access)\n・SlideDeck: VDR Driver Example & Walkthrough\n・Cloud Agent VDR Integration PR\n\nD. Output: Cardano VDR Driver Hosted and Accepted under IOHK / Hyperledger Governance\nAcceptance criteria: The Cardano VDR driver implementation is maintained under the IOG repositories and approved by Hyperledger maintainers, including Rust & Scala interfaces and indexing tools.\nEvidence:\n・Scala VDR Driver Repository \n・NeoPrism Rust Implementation & REST API \n・VDR API OpenAPI Specification\n・Prism Node VDR Integration \n\nE. Output: End-to-End Example Demonstrating Cardano-Based VDR Resolution\nAcceptance criteria: Examples showing the VDR functioning on Cardano end-to-end — creating, publishing, and resolving resources.\nEvidence:\n・Demonstration via PRISM Driver Slide Presentation\n・Community Recording (VDR section starts ~18:00)",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "11",
+      "cost": 60000,
+      "promise": "・Final close-out report\n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "A. Output: Link to the final closeout report\nAcceptance criteria: Final closeout report is publicly available\nEvidence: The link to the final closeout report is published in the Identus Platform documentation portal.\nB. Output: Link to the final closeout video\nAcceptance criteria: Final closeout video is publicly available\nEvidence: The final closeout video was recorded at the Identus Community meeting and is available on YouTube",
+      "kinds": [
+        "live",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "title": "WalletConnect for Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 50000,
+      "promise": "Creating the SDK(typescript - all WalletConect SDKs are developed in this language)  required for WalletConnect usage for Cardano. Documentation will also be provided on how to use this SDK as we included in the original proposal description. https://cardano.ideascale.com/c/idea/419164",
+      "criteria": "Publishing the SDK",
+      "report": "The Adalib SDK [https://github.com/dcSpark/adalib/tree/development/example-next] has been developed to offer dapps a streamlined solution for enabling Cardano wallet connections through a common Connector interface. It attempts to closely emulate the CIP-30 standard within the connectors. A dapp developer can use these connectors to retrieve the enabled CIP-30 API, and benefit from the included typings this library provides.\nThe SDK provides dapp developers with the ability to support a wide range of Cardano wallets, while adhering to the WalletConnect Provider interface, which ensures universal support for any blockchain.\n\nTo demonstrate the functionality of the Adalib SDK, a demo DApp was created and successfully connected to Flint using conventional injection methods (shared as a PoE in Monthly Report), and also displayed a WalletConnect QRCode modal with a connection session ID.\n\nIn alignment with the guidance provided by the WalletConnect team, a pull request has been submitted to the WalletConnect UniversalProvider package to add support for a CardanoProvider [https://github.com/WalletConnect/walletconnect-monorepo/pull/1880] - PR was already merged. \nThis integration is critical for enabling RPC connections between Cardano Dapps, WalletConnect’s relay servers, and the connected Cardano wallets.",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 50000,
+      "promise": "One of the popular Cardano dApp using WalletConnect integration. Integration is not platform-dependent. TS SDK will be added into a dApp codebase(which is as most of dApps also written in typescript).",
+      "criteria": "A Cardano dApp and an example dApp that support WalletConnect for Cardano",
+      "report": "We are thrilled to share the exciting news of the successful integration of Wingriders platform with WalletConnect. The dedicated team at Wingriders, renowned for their leading Cardano Dex, seamlessly incorporated WalletConnect into their DApp, thanks to the efficient adalib SDK developed by dcSpark. This integration marks a significant milestone for Wingriders, opening up new possibilities and enhancing the user experience for their platform.\n\nhttps://twitter.com/wingriderscom/status/1659865951947436032?s=61&t=ta6m7fiD5fgsMH4xNw4Q4A",
+      "kinds": [
+        "social"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 50000,
+      "promise": "Support for WalletConnect in 1+ Cardano wallet. As described in https://cardano.ideascale.com/c/idea/419164 we will integrate WalletConnect into Flint Wallet. Therefore, it will apply to both platforms : iOS and Android.",
+      "criteria": "WalletConnect supported by 1+ Cardano Wallet",
+      "report": "We apologize for the delay in sharing this update, as we were committed to fulfilling our previous promise from PoM2 (We wanted to maintain the logical order of reporting PoMs). However, we are delighted to finally announce that two months ago, we successfully implemented WalletConnect into Flint.\n\nFurthermore, as part of our ongoing efforts, we have recently launched an open grant for all Cardano builders in line with the upcoming PoM4. We encourage developers and teams to submit their proposals and integrations before June 31st. To validate our claim, you can find evidence of this announcement on our official Twitter account (https://twitter.com/dcspark_io/status/1659301855430672384?s=61&t=ta6m7fiD5fgsMH4xNw4Q4A) as well as a detailed blog post (https://medium.com/dcspark/walletconnect-integration-grants-for-cardano-wallet-and-dapp-developers-38d32a4d8f10).\n\nWe are proud of the progress we have made and look forward to receiving exciting submissions and fostering further WalletConnect integration within the Cardano community.",
+      "kinds": [
+        "doc",
+        "social"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 50000,
+      "promise": "WalletConnect support in 1+ dApp, 1+ wallet and funding for other wallets&dApps to do the integration and grants distributedWalletConnect integration for multiple dApps and wallets in Cardano ecosystem.",
+      "criteria": "Distribute any remaining funds as grants for other wallets/dapps to do the integration",
+      "report": "We're excited to share that we've successfully concluded the second phase of our grant, the Open Public Grant for Cardano DApps and Wallets developers. Out of 45 impressive submissions, 17 standout projects have been chosen.\n\nIn our rigorous selection process, we prioritized projects that hold a commendable reputation within the Cardano community and show a promising positive impact on the ecosystem. To streamline this process, we introduced official submission forms. Upon shortlisting the top projects, we initiated Proof of Evidence forms to gather essential information, ensuring their eligibility for the grant. As a testament to their commitment, all finalists presented a Proof of Evidence video demonstrating their project's integration with Wallet Connect.\n\nTo ensure seamless grant distribution, we required all finalists to authenticate test transactions and undergo the KYC process. The grant funds, amounting to approximately 5.5k USD worth of ADA, were disbursed on the Cardano mainnet network.\n\nWe've proudly announced the grant results on our official Twitter account. Check out the announcement here:\nOfficial Twitter Announcement\nhttps://twitter.com/dcspark_io/status/1688489778042351616?s=61&t=TyZH5TZoVUN7ozpPEU0qRA\n\nFor transparency, we're sharing:\n\nA folder containing Proof of Evidence videos: Proof of Evidence Videos\nhttps://drive.google.com/drive/u/1/folders/14am_cVs8WLdRHXy_HW-HVSHWd4j_3Osr\nA list of distributed transactions: Transaction List\n\nhttps://explorer.cardano.org/en/transaction?id=5a6f74a4e36f2d4ab3e6ca57ee830e87b1b91a2284b034cc60b19362226ed262\nhttps://explorer.cardano.org/en/transaction?id=59fdeca73de5592cf16db6a035d9cf784af0d98845abd5b3028530e20f4fa90b\nhttps://explorer.cardano.org/en/transaction?id=e434bcf6bf19dcb829fd816dfbe0b14daaa34ac1c6734b27c2cfbc1aac74fa3f\nhttps://explorer.cardano.org/en/transaction?id=ed321ab619c9a54d742cc2fe9683b710c7f4738eca3a632513057086e2f7335c\nhttps://explorer.cardano.org/en/transaction?id=8736eace747f6d8a34e8bfe77e1e",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 18,
+      "cut": true
+    }
+  ]
+}

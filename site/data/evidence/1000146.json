@@ -1,0 +1,61 @@
+{
+  "title": "Pallas - Open-source maintainer",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 17435,
+      "promise": "Reach out to potential candidates and evaluate their competency\nSelect candidate and perform the onboarding process",
+      "criteria": "A valid candidate has been selected and on-boarded onto the ongoing Pallas development process.\nThe Candidate will selected as the result of a fair and comprehensive selection process\nThe on-boarding is complete and contributor is ready and available to begin open-source contributions\nA text document will serve as report of this process",
+      "report": "Introduction:\nThis report marks the closure of Milestone 1 for the Pallas project under the stewardship of James Harper, the appointed open-source maintainer. The successful completion of this milestone signifies the beginning of a collaborative journey aimed at enhancing the capabilities and functionality of the Pallas project.\nRationale of Contributor Selection and Onboarding:\nThe rationale behind the selection of James Harper was based on a comprehensive assessment of his technical expertise, extensive experience, and past contributions to TxPipe's open-source projects. The contributor selection document, providing a detailed insight into this process, can be found here.\nThe onboarding process was diligently executed, ensuring that James had a clear understanding of the project's goals, objectives, and the TxPipe development ecosystem. \nProof-of-Onboarding Commit:\nA crucial aspect of onboarding is the active participation of the contributor within the project repository. James Harper has demonstrated his commitment through a series of substantial commits to the Pallas repository. The list of commits made by James can be viewed here.\nThese commits represent not only code contributions but also a collaborative spirit and integration into the development workflow of the Pallas project.\nConclusion:\nThe closure of Milestone 1 is a testament to the successful integration of James Harper as the open-source maintainer for the Pallas project. His contributions, both in terms of code and collaborative efforts, indicate a promising trajectory for the future milestones of Pallas.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 43071,
+      "promise": "Survey health form contributor’s perspective\nSurvey health form core team perspective\nPrepare and release contribution report",
+      "criteria": "A net-positive contribution to the overall development quality and performance of the Pallas project is expected during the initial two months of analysis. This contribution will encompass a minimum of one pull request per month to the main repository, featuring significant additions. Positive engagement with the community via the #pallas channel in the Txpipe Discord server will also be recognized as a valuable contribution to the project. The report will incorporate the outcomes of the surveys detailed in the output section, along with the contributions made. You can find the report at https",
+      "report": "James Harper, the selected contributor, has actively engaged with the TxPipe team through weekly meetings and asynchronous exchanges in Github issues. James has also engaged with the larger open-source community through Github and Discord servers.\nAfter the corresponding onboarding process, James managed to set up his own local development environment, allowing him to perform all relevant development activities.\nJames has also been added to the TxPipe Github org to make use of the configured CI workflows and to help with the issue management procedures.\nJames has been a very active contributor to the Pallas codebase throughout this milestone. He has been assigned several tasks and since then many have been completed and merged into the main branch:\n・Pallas Pull Request 348 - fix: correct client state transition for n2n txsub \n・Pallas Pull Request 342 - feat: ed25519-bip32 keys \n・Pallas Pull Request 338 - Transaction Builder \n・Pallas Pull Request 376 - feat: server side KeepAlive\n・Pallas Pull Request 370 - fix: update pallas-applying to work with keepraw native scripts\n・Pallas Pull Request 358 - feat: wallet private key, encrypted wrapper\n・Pallas Pull Request 350 - fix: correct datum kind for set_datum_hash \n\nThere’re also other ongoing pull-requests submitted by James which are code-complete but still being reviewed by peer Pallas developers:\n・Pallas Pull Request 373 - feat: tx builder metadata support\n・Pallas Pull Request 377 - fix: length checks when decoding addresses \n\nAdditionally to this report, a video highlights the contribution of James to the project.\nThe successful completion of Milestone 2 for the Pallas project is a testament to the collaborative efforts of the contributors and, in particular, the impactful contributions made by James. The commitment to transparency and documentation ensures that the community is well-informed about the project's progress and achievements.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 43071,
+      "promise": "Survey health form contributor’s perspective\nSurvey health form core team perspective\nPrepare and release contribution report",
+      "criteria": "A net-positive contribution to the overall development quality and performance of the Pallas project is expected during the second two months of analysis. This contribution will encompass a minimum of one pull request per month to the main repository, featuring significant additions. Positive engagement with the community via the #pallas channel in the Txpipe Discord server will also be recognized as a valuable contribution to the project. The report will incorporate the outcomes of the surveys detailed in the output section, along with the contributions made. You can find the report at https:",
+      "report": "James Harper, the selected contributor, has actively engaged with the TxPipe team through weekly meetings and asynchronous exchanges in Github issues. James has also engaged with the larger open-source community through Github and Discord servers.\nJames has been a very active contributor to the Pallas codebase throughout this milestone. He has been assigned several tasks and since then many have been completed and merged into the main branch:\n・Pallas Pull Request #377: fix: length checks when decoding addresses\n・Pallas Pull Request #419:Pallas Pull Request #377: fix: length checks when decoding addresses\n・Pallas Pull Request #420: allow extra bytes when decoding base address\n\nThere’re also other ongoing pull-requests submitted by James which are code-complete but still being reviewed by peer Pallas developers:\n・Pallas Pull Request 415 - fix: roll stream when intersected at tip\n・Pallas Pull Request 411 - Make RollStream fallible and more robust\n・Pallas Pull Request 418 - fix: allow optional CBOR set tag in conway\n\nAdditionally to this report, a video highlights the contribution of James to the project.\nPlease be advised that feedback from community projects utilizing Pallas on James' contributions will be integrated into the final project review. This holistic evaluation will encompass the entire project duration, rather than solely the past two months. This strategy is intended to avoid duplicating information provided in this report.\nThe successful completion of Milestone 3 for the Pallas project is a testament to the collaborative efforts of the contributors and, in particular, the impactful contributions made by James. The commitment to transparency and documentation ensures that the community is well-informed about the project's progress and achievements.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 39994,
+      "promise": "Survey overall success from contributor’s perspective\nSurvey overall success from core team perspective\nPrepare and release final contribution report\nDiscuss continuation alternatives and contributor rotation",
+      "criteria": "A net-positive contribution to the overall development quality and performance of the Pallas project is expected during the third two months of analysis. This contribution will encompass a minimum of one pull request per month to the main repository, featuring significant additions. Positive engagement with the community via the #pallas channel in the Txpipe Discord server will also be recognized as a valuable contribution to the project. The report will incorporate the outcomes of the surveys detailed in the output section, along with the contributions made. You can find the report at https:/",
+      "report": "PoA: Milestone 4 Completion - Pallas Project\nDuring the last two months of this project, there was a change in contributors. Due to personal reasons, James was unable to continue, so Alexsander Falcucci stepped in to ensure the project remained on schedule. Given Alex's prior engagement with Pallas, it was a seamless transition, and he naturally continued his contributions to the project.\nAlex has been a very active contributor to the Pallas codebase throughout this milestone. He has been assigned several tasks and since then many have been completed and merged into the main branch:\n・Feat: add method hash_or_default to point struct\n・Feat: implement GetChainBlockNo local state query\n\nThe successful completion of Milestone 4 for the Pallas project is a testament to the collaborative efforts of the contributors and, in particular, the impactful contributions made by Alex. The commitment to transparency and documentation ensures that the community is well-informed about the project's progress and achievements.\nFinal Report\nProject Completion and Key Metrics\nThe project has been successfully completed, and the following key metrics demonstrate the impact and success of this initiative:\nName of project and Project URL on IdeaScale/Fund\nPallas - Open-source maintainer\nhttps://cardano.ideascale.com/c/idea/106376\nYour Project Number\n1000146\nName of project manager\nSantiago Carmuega\nDate project started\nOctober 20th, 2023\nDate project completed\nMay 20th, 2024\nList of Challenge KPIs\nIncrease in the Number and Quality of Open-Source Projects\n・The involvement of the Rust developer from Txpipe led to the creation of additional enhancements within the Pallas project, contributing to the overall quality and diversity of open-source projects in the Cardano ecosystem.\n\nIncrease in the Number of Open-Source Tools and Frameworks\n・Several new features were developed and integrated into Pallas, providing valuable resources for developers and users within the Cardano community.\n\nIncrease",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 5,
+      "cut": true
+    }
+  ]
+}

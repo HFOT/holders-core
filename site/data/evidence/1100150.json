@@ -1,0 +1,59 @@
+{
+  "title": "Growing Atala Prism 100X faster with self-issued credentials",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 15000,
+      "promise": "Start date : 18-Mar-2024 (as Reclaim SDKs are undergoing upgrades at this time) and the documentation will take 1 week time. Please note : There is no option to select Delivery time in weeks. Hence selection the Delivery as Month 1-Apr 2024. We intend to complete this deadline by 22-Mar-2024\n・Research Cardano architecture from the point of view of Reclaim integration and share implementation specification documents with the Cardano (Atala Prism) team for feedback and comments.\n・Finalize the documentation before starting the implementation",
+      "criteria": "Clearly documented technical specifications that outline:\n・Technical architecture of how reclaim will be integrated on Cardano and how Reclaim will integrate with Atala Prism\n・Implementation timelines\n・Resource requirements\n\nand addresses all inputs from Atala Prism team.",
+      "report": "Hi, thank you for reviewing our milestone updates and sharing your thoughts. \n・We have mentioned the research findings after doing an in-depth research on the Cardano architecture in the document. The section is named as \"Research Findings on Cardano Architecture\"\n・We have further detailed out the technical architecture of how Reclaim will integrate with Cardano and Atala Prism in the \"Technical Architecture and Breakdown\" section within the same doc \n・We have detailed the comments of the Atala Prism team and have addressed them in the Atala Prism's Team Comments section of the same doc \n\nWe look forward to your comments.",
+      "kinds": [
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60000,
+      "promise": "・Deploy Reclaim Contracts on Cardano\n・Effectively deploying Semaphore Contracts\n・Optimizing zkProof verification for Cardano’s constraints (e.g. speed/gas constraints)\n・Integrating and Testing proof submission through SDKs, ensuring reliable and consistent interactions with Cardano\n\nNote: This milestones takes 3-4 weeks but we don't have an option here to provide delivery in weeks. Hence selected the default option - Month 2.",
+      "criteria": "・Completion measure: Successful on-chain verification on Cardano for Reclaim proofs",
+      "report": "Cardano smart contracts are deployed here: https://preprod.cardanoscan.io/address/addr_test1wzv5v4jx3xaz4nlgp6j6juw707huauprhfdkst66mlh0fcsgk7uvw\n\nHere is the demo : https://www.youtube.com/watch?v=IJM0nBYa6xk\n\nSDK documentation: https://docs.reclaimprotocol.org/cardano",
+      "kinds": [
+        "chain",
+        "other",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 50000,
+      "promise": "・Create documentation to help builders in the Cardano ecosystem on using Reclaim SDK in their dapps\n・A blog post and podcast to detail Reclaim protocol and its benefits to Cardano",
+      "criteria": "・Launch of the documentation to the community and a possible AMA session on the same.\n・Community calls announcing the integration and educating the developers about various usecases that Reclaim can enable\n・Technical Integrations and demo sessions with the developers",
+      "report": "Detailed Developer Documentation: https://docs.reclaimprotocol.org/cardano/quickstart\nTechnical Blog post: https://www.notion.so/questbook/Integrating-Reclaim-Protocol-with-Cardano-A-Step-by-Step-Guide-12a275b816cb80e691add0a56bce5c34\nSocial Media Announcement: https://x.com/reclaimprotocol/status/1833405702607671657\nDemo video on creating providers: https://x.com/reclaimprotocol/status/1834661166343393699",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 7
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 45000,
+      "promise": "・Work with the Atala Prism team to understand the architecture and prepare documentation/ sequencer diagrams for integrating Reclaim to Atala Prism\n・Complete the integration of Reclaim with Atala Prism",
+      "criteria": "・Complete successfully testing of the integration by both Reclaim and Atala Prism team. \n・A demo video demonstrating the integration of Reclaim with Atala Prism will be shared with the reviewers\n・A link to the source code will be shared with the reviewers to demonstrate that the code is open-sourced.\n・We will share instructions on deploying the SDK, deploying Reclaim verifications on-chain. To be available on https://docs.reclaimprotocol.org. The reviewers can independently test the integration with these instructions.",
+      "report": "We've updated our documents for Atala prism integration: https://docs.reclaimprotocol.org/sdk/cardano/quickstart#overview\nDemo video: https://drive.google.com/file/d/16zhmYrfQUeu_9rroSvKnY5SZ5Z_3rcbd/view?usp=sharing\nDocument on How Reclaim Works with Atala Prism: https://drive.google.com/file/d/1qy4FrtHC1QRqDaCj1Dgaqu6S1hhSHLih/view?usp=sharing\n\nThe IdentusManager class handles DID creation, credential issuance, and verification using the Identus SDK (Apollo, Castor, Pollux). It initializes the SDK components for these operations and includes robust error handling.\nDID Creation: Uses Castor to generate a PRISM DID from a cryptographic key pair.\nCredential Issuance: Constructs a Verifiable Credential (VC) and signs it with the issuer's key using Castor.signCredential.\nCredential Verification: Validates the authenticity of a VC with Pollux.verifyCredential. \nWe created DIDs using Apollo to generate key pairs and Castor to create PRISM DIDs with attached messaging services. Verifiable Credentials (VCs) were issued by constructing W3C-compliant credentials and signing them with the issuer's DID using Castor.signCredential. The Atala PRISM model follows a self-sovereign identity approach, ensuring secure and decentralized identity management.\nLock TX:\nhttps://preprod.cardanoscan.io/transaction/61d4bfc61f187a4ea017f30478045832565c4fc78f1f2853a0d58e70be0768a1\nUnLock Tx:\nhttps://preprod.cardanoscan.io/transaction/633578364707c86351c37c958db23c904fa6d5fa1c336e11027ff9bdb1e9affc",
+      "kinds": [
+        "chain",
+        "doc",
+        "other"
+      ],
+      "links": 10
+    }
+  ]
+}

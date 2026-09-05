@@ -1,0 +1,68 @@
+{
+  "title": "Cardano Native Token Extension: Programmable Tokens",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 60000,
+      "promise": "A draft of the Design document, available as an open-source Github repository. The design document will contain:\n・Description of current known research of programmable tokens on Cardano and on the other chains.\n・Description and analysis of our design of the programmable tokens, thorough examination and a walkthrough with diagrams\n・Integration of our new token type with the common transactions in the eUTxO model.\n・Research of pros and cons of our programmable tokens and other kinds of programmable tokens.\n・Description of implementation of functionalities that are possible to be built on top of our model, s.a. transfer fees, address blacklisting, and token freezing.",
+      "criteria": "The draft of the document contains our design of the on-chain architecture and diagrams for programmable tokens. The document contains:\n・Description of current known research of programmable tokens\n・Description and analysis of our design of the programmable tokens\n・Integration of our new token type with the common transactions in the eUTxO model.\n・Research of pros and cons of our programmable tokens and other kinds of programmable tokens.\n・Description of functionalities that are possible to be built on top of our model, s.a. transfer fees, address blacklisting, and token freezing.",
+      "report": "Everything can be seen in an open source GitHub repository: https://github.com/vacuumlabs/programmable-tokens-research\nMost notably, the whitepaper PDF file can be accessed here: https://github.com/vacuumlabs/programmable-tokens-research/blob/main/whitepaper.pdf\nFrom the Changelog:\nVersion 0.1 (Milestone 1) - [2024-06-12]\nAdded\n・We added the first version of the whitepaper, including:\n・Introduction describing the motivation, current research and our approach.\n・Basic protocol idea section delving into the goals, technical description of the solution, a walk-through with transaction diagrams and a description of basic use cases incl. freezing transfers, enforcing fees on transfer and address blacklisting / whitelisting.\n・Extensions of the protocol section describing more advanced optional extensions that perfect the protocol's shortcomings.",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 30000,
+      "promise": "The following new chapters in the design document:\n・Interactions of programmable tokens with Cardano wallets.\n・Interactions of programmable tokens with common DApps on Cardano.",
+      "criteria": "Our design document will be updated with 2 new sections. One will be describing interactions with Cardano wallets. The second section will focus on interaction of our design with existing dApps, s.a. DEXes and lending platforms.",
+      "report": "Everything can be seen in an open source GitHub repository: https://github.com/vacuumlabs/programmable-tokens-research\nMost notably, the whitepaper PDF file can be accessed here: https://github.com/vacuumlabs/programmable-tokens-research/blob/main/whitepaper.pdf\nFrom the Changelog:\nVersion 0.2 (Milestone 2) - [2024-08-27]\nAdded\n・We added the second version of the whitepaper, including:\n・The integration of programmable tokens with wallets. Recognizing programmable tokens both off-chain and on-chain, an idea on how to construct transactions featuring programmable tokens and other relevant recommendations.\n・The integration of programmable tokens with existing and future dApps. Includes a thorough commentary on the new smart contract considerations and possibly new attack vectors that need to be thought-about.\n・Template-based programmable tokens. An idea and a design that allows reusing programmable checks for multiple projects with the possibility of setting project-based parameters.",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 30000,
+      "promise": "Open-source, well-documented proof of concept validator(s) (on-chain) and off-chain test cases demonstrating the specified functionalities.",
+      "criteria": "The code will showcase a freezable Cardano native token. The validators will be well documented and tested. We will also showcase following functionalities on the Cardano testnet:\n・Minting the tokens\n・Transfer of token from wallet A to wallet B\n・Freezing of tokens by administrator\n・Unfreezing of tokens by administrator.",
+      "report": "Everything can be seen in an open source GitHub repository: https://github.com/Invariant-0/programmable-tokens-research\nMost notably, the video explaining completion of Milestone 3 (this) and Milestone 4 can be found here: https://drive.proton.me/urls/657H0VC2SW#Fv2YdLsh8sBv \nFrom the Changelog:\nVersion 0.3 (Milestones 3 and 4) - [2025-08-07]\nAdded\n・Complete Proof of Concept for Common Programmable Tokens: Implemented comprehensive programmable token functionality demonstrating:\n・Freezable Cardano native programmable tokens:\n・Token minting capabilities\n・Transfer between wallets (A to B)\n・Administrative freezing of tokens\n・Administrative unfreezing of tokens\n・Fee-on-transfer tokens: Tokens that automatically deduct fees during transfers\n・Blacklist functionality with extendable blacklist: Ability to maintain and extend blacklisted addresses\n・Blacklist validation: Prevention of transfers from blacklisted addresses\n・Well-documented proof-of-concept validators (on-chain) and off-chain test implementations covering all specified behavior\n・Testnet tests and testing logs from them\n・See ./proof-of-concept/\n\nChanged\n・Rebranded Vacuumlabs Auditing to Invariant0, the Fresh New Face of Vacuumlabs Auditing.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 5
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 50000,
+      "promise": "Open-source, well-documented proof of concept validators (on-chain) and a basic off-chain test demonstrating the specified functionalities s.a. fee on transfer tokens, blacklisting addresses with an extendable blacklist.",
+      "criteria": "We will code 2 new tokens, each showcasing a different possible usecase for programmable tokens:\n・Fee on transfer tokens\n・Extension of the blacklist with blacklisted addresses\n・Showcase of invalidity of transfer from blacklisted address",
+      "report": "Everything can be seen in an open source GitHub repository: https://github.com/Invariant-0/programmable-tokens-research\nMost notably, the video explaining completion of Milestone 3 and Milestone 4 (this) can be found here: https://drive.proton.me/urls/657H0VC2SW#Fv2YdLsh8sBv (sorry that it is a combined video, Milestone 3 is already approved now)\nFrom the Changelog:\nVersion 0.3 (Milestones 3 and 4) - [2025-08-07]\nAdded\n・Complete Proof of Concept for Common Programmable Tokens: Implemented comprehensive programmable token functionality demonstrating:\n・Freezable Cardano native programmable tokens:\n・Token minting capabilities\n・Transfer between wallets (A to B)\n・Administrative freezing of tokens\n・Administrative unfreezing of tokens\n・Fee-on-transfer tokens: Tokens that automatically deduct fees during transfers\n・Blacklist functionality with extendable blacklist: Ability to maintain and extend blacklisted addresses\n・Blacklist validation: Prevention of transfers from blacklisted addresses\n・Well-documented proof-of-concept validators (on-chain) and off-chain test implementations covering all specified behavior\n・Testnet tests and testing logs from them\n・See ./proof-of-concept/\n\nChanged\n・Rebranded Vacuumlabs Auditing to Invariant0, the Fresh New Face of Vacuumlabs Auditing.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 5
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 30000,
+      "promise": "・Comprehensive report of our project\n・Finalized design document\n・Project completion video",
+      "criteria": "The report should contain results from our research on the necessary steps for the broader adoption of programmable tokens. It should also contain evaluation of the need and practicality of standardizing the programmable tokens.\nThe finalized design document will contain all the technical information about our tokens as well as the technical information needed to incorporate programmable tokens in Dapps or wallets. \nThe project completion video is the standard Project Closeout Video outlining the project achievements and deliverables.",
+      "report": "Everything is in the open source gh repository: https://github.com/Invariant-0/programmable-tokens-research \nRelevant links:\n・Whitepaper (containing Conclusion section hence complete now): https://github.com/Invariant-0/programmable-tokens-research/blob/main/whitepaper.pdf\n・Closeout report: https://github.com/Invariant-0/programmable-tokens-research/blob/main/closeout/report.pdf\n・Closeout video: https://youtu.be/yQqF2p-jZXA\n\nFrom the Changelog:\nVersion 1.0.1 - [2025-10-19]\nAdded\n・Catalyst Closeout report and video link. See closeout folder.\n\nVersion 1.0 (Final Milestone) - [2025-09-04]\nAdded\n・Final Whitepaper Completion with added conclusion section covering adoption paths, standardization considerations and final remarks.\n\nChanged\n・Rebranded the whitepaper under new Invariant0 branding guidelines, styling and formatting for consistency.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 9
+    }
+  ]
+}

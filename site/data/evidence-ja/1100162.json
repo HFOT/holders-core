@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・ユーザーインターフェイス(UI)モックアップ\n・技術デザイン文書\n・データフロー図\n・システムアーキテクチャ設計\n・スマートコントラクト仕様",
+      "criteria": "・UIデザインモックアップ準備\n・技術設計",
+      "report": "ホテルゲストアプリ:UIデザインとテックデザイン\nこのマイルストーンの提出に遅れがちですが、将来のマイルストーンからの成果を含む開発に大きく進んでいます。 ディレイ\n1.Userインターフェイス(UI)モックアップ\nhttps://www.figma.com/design/61ehJWtKjjwdaOrjO9eYNG/Designs?node-id=20143-237&m=dev\n\n2.技術設計文書 - 高レベルおよび低レベル設計文書\nシステムアーキテクチャ設計\nHLD - 高レベル設計\nhttps://drive.google.com/file/d/1Jn56evCnr9p7qjRB02dcX8ttaQ0rLw0y/view?usp=sharing\n技術図\nhttps://drive.google.com/file/d/1sj4xNi0nCES02PGtO4ZWhG5IHWwdfIyd/view?usp=sharing\nデータフロー図\nLLD - 低レベル設計\nhttps://drive.google.com/file/d/1JAz6LvKzTJ6 isoJN43jS-SPew2gNSY/view?usp=sharing\nスマートコントラクト仕様\nhttps://drive.google.com/file/d/1YiKJx2dO5xFoM1fpccvhNWHfrerXrM6K/view?usp=sharing\n注意:FigmaリンクでPOAを改訂しました。 次のマイルストーン2は開発についてであり、マイルストーン2でコミットする機能の作業プロトタイプを実証します."
+    },
+    {
+      "no": 2,
+      "promise": "・コンセプトのためのユーザーインターフェイスの開発\n・技術設計による機能性サービスの開発\n・スマートコントラクトライティング",
+      "criteria": "・限られた機能を持った働き方\n・オンラインチェックイン\n・キオスクチェックイン\n・既製の機能障害のためのアプリケーションのデモの短いビデオ",
+      "report": "apology、サーバーは停止しました、今、それはオンであり、リンクは機能しています。\n-----------------------------------\nホテルのオンラインチェックインおよびキオスクのチェックイン機能のための働きプロトタイプを開発しました。\nデモはこちら https://cloud10hospitality.com/guest/89db16cb-475b-492b-978a-657ae8630c2c\nこのデモで使用するためには、サンプル予約を作成する必要があります。ただし、スコープ内では、予約をするためにユーザーインターフェイスを開発しました。\nhttps://cloud10hospitality.com/booking/\nキオスクキオスクのチェックイン- https://cloud10hospitality.com/guest/scanner (ユーザーは電子メールでQRコードを受け取ります、キオスクのチェックを完了する必要があります)\n準備機能のためのアプリケーションデモ、短いビデオ:https://www.canva.com/design/DAGnUwCtDIw/F6qzCyJ-fEwcfmukNN2nfw/watch\nまた、予約と事前チェックインのプロセス全体に関するドキュメントが https://drive.google.com/file/d/1fmzzFANpQM4OciHPehFn6eSX8eoFKAVC/view?usp=sharing にあります。\nまた、このフォルダ内のスマートコントラクトや関連テストレポートのドキュメントも作成しています。\nhttps://drive.google.com/drive/folders/1nW4xFundPEYStChZJESJIK3OuJMMPP2d?usp=sharing\nパブリックGithubリポジトリにスマートコントラクトコードを配置しています。\nhttps://github.com/AIQUANT-Tech/HGE SC\n機能のWebサービスのような他のソースコードはオープンソースではありませんが、Googleの会議やズームセッションを見てみたい場合は、ソースコードをレビュー者に表示することができます."
+    },
+    {
+      "no": 3,
+      "promise": "・アプリケーションとのスマートコントラクト統合\n・アプリケーションとのSSID連携\n・機能性開発 - オンラインチェックアウト\n・機能性開発 - ADA アプリケーションとの支払い統合",
+      "criteria": "完全な作業プロトタイプは、次の機能とテストネット上のブロックチェーンと統合\n・オンラインチェックイン\n・キオスクチェックイン\n・お支払い\n・オンラインチェックアウト\n\nアプリケーションデモのビデオ",
+      "report": "ホテルゲストアプリの全ての機能が実装されています。\n証拠へのリンクは次のとおりです。\n・全ての機能を含む試作品のリンク-\n・プロセスを開始するためのデモ予約リンク - これは、デモ目的のために予約を容易にするために行われます。 https://booking.cloud10hospitality.com/booking は、現在の日付をチェックイン日として予約し、有効なメールをチェックインプロセスのリンクを受け取る必要があります。 実際の実装予約では、ホテルの予約エンジンまたはオンライン旅行会社から生成されます。 現在のロジックは、チェックイン日が24時間以内にチェックイン時のチェックインリンクをトリガーします。 Hotel/property では、時間の設定が可能です。\n・上記リンクにより予約が行われるため、メールにリンクが届きますので、チェックイン手続きの残りの部分へのリンクに従ってください。\n・SSIDウォレットへのリンク https://booking.cloud10hospitality.com/wallet\n・開発する全ての機能を示すアプリケーションデモの動画へのリンク https://www.canva.com/design/DAGxPt6mhYw/48qWwG6tKoL cJHnLlyqKQ/watch\n・スマートコントラクトリポジトリへのリンク https://github.com/AIQUANT-Tech/HGE SC(スマートコントラクトコードリポジトリが公開され、他のすべてのコードはプライベートリポジトリです)"
+    },
+    {
+      "no": 4,
+      "promise": "・最終報告書\n・プロジェクトクローズアウト動画\n・ユーザー文書化",
+      "criteria": "・最終クローズアウトレポートのサブマイト\n・Project Closeout Videoはサブミイト\n・アプリケーションを使用するユーザーマニュアルをご用意",
+      "report": "A. 出力:最終クローズアウトレポート\n受諾基準:最終クローズアウトレポートはサブマイト\n証拠:最終クローズアウトレポートがアップロードされ、リンク:https://drive.google.com/file/d/1TXn9pRpnUsoKcOtpjoS3KjSP22zJNZod/view?usp=sharing\nB. 出力: プロジェクト クローズアウト ビデオ\n受諾条件: プロジェクト クローズアウト ビデオ サブマイト\n証拠: プロジェクト クローズアウト ビデオは、youtube でホストされ、リンクが共有されます : ホテル ゲスト アイデンティティ 検証とチェックイン\nC. 出力: ユーザー文書化\n受諾条件: アプリケーションを使用するユーザーマニュアルの準備\n証拠: アプリケーションを使用するユーザーマニュアルへのリンク: https://drive.google.com/file/d/1IePSqJHI8vMP-lFwsBxV8GwdDREKU6qQ/view?usp=sharing"
+    }
+  ]
+}

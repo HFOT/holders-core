@@ -1,0 +1,55 @@
+{
+  "title": "Audit for Open-source LBE for DAOs",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 25000,
+      "promise": "A LATEX document containing the formal specification of the Discovery (LBE) protocol. The formal specification will describe the list of technical properties that should be satisfied by the smart contracts for the protocol to function as intended. Auditors require these properties to properly conduct an audit (which involves simply checking that the code accurately reflects the intention of the specification).",
+      "criteria": "The LATEX document should be accepted (or in an acceptable state) for auditors to possess all the information required to conduct the audit. \nThis document must outline the *intention* of the protocol and provide answers to the following questions. How is it supposed to behave from the perspective of the human? What kind of transactions are supposed to be possible, and what kind are supposed to be impossible?",
+      "report": "We are submitting LATEX document containing the formal specification of the Discovery (LBE) protocol that was needed for Auditing team. The formal specification describes the list of technical properties which the auditing team needed in order to give us a quote. \nThe document can be found at: https://drive.google.com/file/d/1ARGpmul0_t35UgDAXEOrL1U-ji0xJej7/view?usp=sharing\nWe are also sharing proof that this was sufficient criteria for the Audit team to begin the audit.\nThe proof of payment and confirmation of audit acceptance can be found at: https://drive.google.com/file/d/1XhSavUlxHheTbErr_4KKS_mB9Phruut_/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 40650,
+      "promise": "We will provide auditors all the initial information necessary to begin the audit. Additionally we will provide them with the initial deposit for the cost of the audit. This will include a formal document with the agreement between us and the auditors to understand in details what, how, what will be done by the auditors.",
+      "criteria": "A document from the auditors indicating that they have started the audit. \nMonthly updates written in collaboration with the auditors which describe the ongoing progress of the audit and what is currently being done.",
+      "report": "Please see proof of started Audit from late February along with initial findings (shows proof of starting and findings)\nhttps://drive.google.com/drive/folders/1fLvVftrHTTcIPlMjJyuMg5s1esrP9mZf?usp=drive_link",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 40650,
+      "promise": "Receive initial audit report from the auditors and provide remaining payment. The initial report will consist of all the audit findings. Additionally, we will continue to create the progress reports.",
+      "criteria": "The initial audit report is produced in addition to continuous progress reports. The initial audit report includes a list of all findings and their current resolution status.",
+      "report": "Detailed findings as well as response has been attached here and will be addressed in the next milestone.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 29200,
+      "promise": "Revise the codebase as directed by the auditors to address any findings and wrap up the audit. Final audit report published. The initial audit report (from the previous milestone) which contains the list of findings and their resolution status will be updated to reflect their final resolution status (Acknowledged, Resolved, ETC) as-well-as the justification for that status. \nAdditionally the outputs will include the Project Closeout Report & Project Closeout Video",
+      "criteria": "The auditor's findings must be addressed and the audit report must be published. \nThe acceptance criteria is that every finding outlined by the auditors in the initial report is addressed and a justification is given for the current resolution status (Resolved, Acknowledged, Disputed, ETC). Furthermore, the closeout video and closeout report should be comprehensive.",
+      "report": "Uploaded closeout video with overview of process, findings, and resolutions as well as document to indepth details\nhttps://youtu.be/1j6_CMYr4ao\nLink to depot that was audited: https://github.com/ikigai-github/discovery\nMore details can be found here: https://docs.google.com/document/d/1tvndWvWDohX8OGwOiU_SICwjdODfVDYg-NH1QAVPDsM/edit?tab=t.0",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

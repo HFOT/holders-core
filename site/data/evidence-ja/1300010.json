@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・既存のソリューションを分析し、エクスプローラーのコア機能を実装し、プラットフォームに適した技術ソリューションを選択し、プロジェクト実装ロードマップを実装するなど、プロジェクトの実装手順の検討\n・システムアーキテクチャ図の構築\n・ユーザーインターフェイスの設計(UI/UX).",
+      "criteria": "・ドキュメントに関する包括的なプロジェクト研究を完了:\n\n・カーダノ・ガバナンス・エクスプローラーのコア機能と効果的なプレゼンテーションで、強みと弱点を類似したプロジェクトを分析します。\n・予測実装のロードマップには、開発技術、実装時間、および各作業の必要な説明を選択して、Cardanoガバナンスに関するすべての必要な情報が明確に提示され、すべての人に簡単にアクセスできるようにする各作業項目のリストが含まれています。\n\n・システムアーキテクチャ図を完成し、データ収集ベースを",
+      "report": "マイルストーン1完成レポート:\n・プロジェクト実装ロードマップを含むCardano Governance ExplorerとGoogle Sheetsのソリューション分析文書を含む包括的なプロジェクト文書へのリンク。\n\nCardano Governance Explorerのソリューション分析文書:https://docs.google.com/document/d/1GVeLYtdNk5Abzbm7fGqhPMy-YO3eOsHzqrfCWq GqRU/edit?usp=sharing\nCardano GOVプロジェクト実装ロードマップ:https://docs.google.com/spreadsheets/d/1VxOzTROAv-5twrlmiOGBaOQbNvEVkaVzcZHPxb5h9KE/edit?usp=sharing\n・プロジェクトの運用システムアーキテクチャ図が提示されるMiroへのリンク:\n\nhttps://miro.com/app/board/uXjVIbQD2rs=/?share link id=896578846783\n・ユーザーインターフェイスが設計されている Figma ページへのリンク:\n\nhttps://www.figma.com/proto/JUDRi0lpfOs3TVrHxwUiGO/Cardano?node-id=740-10791&t=nUXgGEYs2OHR6taw-1\nhttps://www.figma.com/design/JUDRi0lpfOs3TVrHxwUiGO/Cardano?node-id=5-28&t=nmUythstmbXh0dzq-1"
+    },
+    {
+      "no": 2,
+      "promise": "・バックエンド構築:データベースの実装、Cardanoブロックチェーンからデータを取得するためのAPI使用、プロジェクト開発のドキュメントで記述されたコア機能の実装、バックエンドフレームワークを用いたAPI実装。\n・フロントエンドビル:フレームワークを用いたインタフェース開発とグラフ作成ライブラリの統合により、プロジェクトリサーチペーパー1で概説した機能を実装し、フロントエンドをバックエンドからAPIと統合することにより、バックエンドをバックエンドにつなげます.",
+      "criteria": "・基準データベースを含む完全なバックエンド構造を完全に設計し、データを保存および取得できるように実装します。 APIは適切に機能し、必要なクエリ機能をサポートしています。 マイルストーン1のプロジェクトスタディテーブルで与えられたキー機能の完全な実装。 すべての API エンドポイントは、要求に応じて正しいデータを返すために適切に機能する必要があります\n・円滑に動作する完全なフロントエンド構造、リアルタイムで同期されたバックエンドのデータを表示し、正確なデータを提供します。 ユーザインターフェイスは、グラフとテーブルのハイライトデータで視覚化されます.",
+      "report": "マイルストーン2完成レポート:\nGithub: https://github.com/cardanogov/cardano-gov\n動画は、バックエンドとフロントエンドをデモンストレーション: https://drive.google.com/drive/folders/1RAYTcBCfskfNSevMjGQ2obTLB4KzzlGi?usp=sharing\nカルダノ・ガバナンス・エクスプローラーのウェブサイト:https://cardanogov.cc/\n(あなたの貴重なフィードバックのおかげで、我々はそれらを修正し、残りの部分は、マイルストーン3 - テストと最適化でリストを行うためにあります)"
+    },
+    {
+      "no": 3,
+      "promise": "・アプリが正常に動作しているかどうかを確認し、エラーを見つけて修正する\n・アプリを最適化し、素早くスムーズに動作させる",
+      "criteria": "・テストを完了し、プレフィックスとポストフィックスレポートを提供\n・完全最適化を行い、事前・見積書の提出",
+      "report": "マイルストーン3完成レポート:\n・試験結果報告:\n\nhttps://docs.google.com/spreadsheets/d/1jgmNIeZMIZQngKM mwQLfl7qYVvhC2ho5aQJq7w0Vp4/edit?usp=sharing\nhttps://drive.google.com/drive/folders/1bummTtp-0A72BbC8dSc--65DOvyz4paS?usp=sharing\n・最適化プロセスレポート:\n\nhttps://docs.google.com/document/d/1Q-aDMBMCT-rz a4rmo4MRcuI1731OtdNX lDnT22A-M/edit?usp=sharing\n・Github:\n\nhttps://github.com/cardanogov/cardano-gov\n・サイト:\n\nhttps://cardanogov.cc/"
+    },
+    {
+      "no": 4,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ\n・Cardano Governance Explorer 公式版が公開\n・ソースコードをパブリックリポジトリにリリースし、DEV Cardanoコミュニティに貢献\n・ソーシャルメディアプラットフォームでCardanoコミュニティにプロジェクトを導入する取り組み",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n・Cardano Governance Explorerアプリは完全に展開され、すべてのユーザーがアクセスできるように機能がうまく設計され、準備が整っています。\n・プロジェクトのソースコードを完成し、DEV Cardanoコミュニティにソースコードを貢献\n・アジア、ラタン、スワフム、インターセクトなどのカルダノ地域におけるソーシャルメディアプラットフォームにおけるマーケティング活動を実証するプロジェクト導入を完了し、リンクをコンパイルします.",
+      "report": "最終マイルストーン完了レポート:\n・最終報告書\n\nhttps://docs.google.com/document/d/1xO V72hSdSrax3hq4Mn8JlpEqjkfseNytjoSzrD-C2M/edit?usp=sharing\n・最終クローズアウトビデオ\n\nhttps://youtu.be/g711I0KcqUU\n・Webサイト\n\nhttps://cardanogov.cc/\n・オープンソースのGithub\n\nhttps://github.com/cardanogov/cardano-gov\n・商品マーケティング活動\n\nhttps://docs.google.com/document/d/1oqiAns7jC1HZoTqZ-f2OAiH QdJqAyc0jO cSzC7UK4/edit?usp=sharing"
+    }
+  ]
+}

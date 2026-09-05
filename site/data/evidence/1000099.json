@@ -1,0 +1,35 @@
+{
+  "title": "Koios SPO Tools development (CNTools, gLiveView, topologyUpdater)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "4",
+      "cost": 18000,
+      "promise": "・CNTools: \n・Currency rate support.\n・Allow autonomous CNTools operation (without reliance on access to local synchronised cardano-node, usable with remote Koios API servers)\n・Tighter and more optimised (bulk queries) integration with Koios API (gRest).\n・gLiveView: Fetch Data from Koios (once per epoch or per restart) - Pool Active Stake (pool_info), op cert verification (index # being highest seen on chain)",
+      "criteria": "・Integrate gLiveView with Koios query layer (gRest) for data fetching and other stated features.\n・Updates for CNTools for Koios query layer (gRest) and currency rate integration",
+      "report": "CNTools: \n・Currency rate support: Added in version 12.1.0. ADA price is discovered through CoinGecko in set currency incl 24hr change. Shown in main UI, wallet list & wallet show, as well as pool show. To be enabled in cntools script on-demand.\n・Allow autonomous CNTools operation (without reliance on access to local synchronized cardano-node, usable with remote Koios API servers): Added in version 13.0.0. CNTools can now be launched in a new light mode, either for the session by providing -l argument or by setting it as the default mode within CNTools script in User Variables section. In this mode, CNTools operates with all features enabled, just as you would running in local mode connected to a node syncing the blockchain, but in this case without node requirement. In light mode, it will query Koios API for data and tx submission.\n・Tighter and more optimized (bulk queries) integration with Koios API (gRest): Together with the autonomous light mode, all Koios queries with the ability for bulk queries, like balance fetching etc, are now done in bulk. So if you have multiple wallets added in CNTools, when the wallet selector is displayed, a bulk request for funds is done for all wallets in a single query greatly improving the performance compared to querying a local node for each address. \n\nChangelog: https://cardano-community.github.io/guild-operators/Scripts/cntools-changelog/\nCommits (shared with other tools): https://github.com/cardano-community/guild-operators/commits/alpha/scripts/cnode-helper-scripts\ngLiveView: \n・Fetch Data from Koios: Added in version 1.28.0. gLiveView has been updated to pull pool information from Koios API to show additional on-chain metrics like total blocks minted, fixed fee, margin fee, active stake, live stake, delegator count, pool pledge, live pledge and saturation. \n\nCommits: https://github.com/cardano-community/guild-operators/commits/alpha/scripts/cnode-helper-scripts\nAnnouncements (both CNTools and gLiveView): https://t.me/CardanoK",
+      "kinds": [
+        "code",
+        "live",
+        "social"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 18000,
+      "promise": "・CNTools: \n・Catalyst vote registration according to CIP-36 specification.\n・Creation of a New Wallet using Mnemonics with the ability to specify account/address index when deriving the keys.\n・Compatibility and Features development for future updates against cardano-node (eg: governance via Conway)",
+      "criteria": "・Tighter integration between SPO Tools and Catalyst tools\n・Tighter integration between SPO Tools and governance decisions for Conway",
+      "report": "・CNTools: \n・Catalyst vote registration according to CIP-36 specification. \n・Creation of a New Wallet using Mnemonics with the ability to specify account/address index when deriving the keys.\n\nAdded in version 13.1.0. Allow you to register wallet for Catalyst, show QR code from previous Catalyst registration, and verify that registration has been picked up by Catalyst sidechain. \n・Governance:\n・Compatibility and Features development for future updates against cardano-node (eg: governance via Conway) as well as CNTools updates to interact with governance features.\n\nNode deployment scripts and the various tools/scripts have been updated to support the latest features provided by Conway and Chang hardfork. CNTools 13.1.0 added initial support for governance features and continued updates after that have extended the features. \nFeatures added to CNTools include:\n・Info & Status - show wallet governance information and status\n・Delegate - delegate wallet vote power to a DRep (own, external, or one of the pre-defined 'abstain' / 'no confidence')\n・List proposals - show a list of active proposals to vote on and their current vote status\n・Cast Vote - vote on governance actions as an SPO, DRep, or Committee member\n・DRep Reg / Upd - register wallet as a DRep for voting or submit updated anchor data for already DRep registered wallet\n・DRep Retire - retire wallet as a DRep\n・MultiSig DRep - create a multi-participant (MultiSig) DRep coalition\n・Derive Keys - derive delegate representative (DRep) and committee member keys (if needed)\n\nChangelog: https://cardano-community.github.io/guild-operators/Scripts/cntools-changelog/\nCommits: https://github.com/cardano-community/guild-operators/commits/alpha/scripts/cnode-helper-scripts\nAnnouncements: https://t.me/CardanoKoios/9764\nScreenshots:\nCNTools vote section: https://github.com/cardano-community/guild-operators/blob/images/catalyst/vote.png\nCNTools Catalyst features: https://github.com/cardano-community/guild-operators/blob/images/catalyst",
+      "kinds": [
+        "code",
+        "live",
+        "social"
+      ],
+      "links": 12,
+      "cut": true
+    }
+  ]
+}

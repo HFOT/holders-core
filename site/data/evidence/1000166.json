@@ -1,0 +1,71 @@
+{
+  "title": "Sorbet Wallet Debugger, by Sundae Labs",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40000,
+      "promise": "Note: Re-submitting this milestone after receiving approval of the change request from Roberta as of 11/20/2023.\nAn open source chrome extension with basic \"Sorbet\" functionality, including blockfrost integration, CIP-30 injection, and address impersonation",
+      "criteria": "Someone should be able to clone the repository and build the project, or take the precompiled extension zip, and side-load it into the browser. It should allow them to paste their Blockfrost API key, and then paste a wallet address and browse common dApps (those that support arbitrary wallets) as that address.",
+      "report": "This Proof of achievement requires a video explainer and a github repo.\nThe video explainer is located here: https://www.youtube.com/watch?v=FRlOUvzt0PQ\nThe GitHub Repository is located here: https://github.com/SundaeSwap-finance/Sorbet",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 40000,
+      "promise": "Note: Re-submitting this milestone after receiving approval of the change request from Roberta as of 11/20/2023.\nExtend Sorbet to add an \"Address book\", with commonly used addresses, and \"address detection\", which detects cardano addresses in the contents of pages and allows you to impersonate that address. Injects a window API, similar to a browser, that lets sorbet-aware websites set the wallet address within Sorbet",
+      "criteria": "The features above are implemented and usable by anyone with the chrome extension",
+      "report": "The Address book feature of Sorbet has been added to the repository. You may view the repository at https://github.com/SundaeSwap-finance/Sorbet and you may view a video demo of the address book in action at https://youtu.be/bXlL-M7y28E\nThank you Project Catalyst and Milestone Reviewers for your continued attention and support!",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40000,
+      "promise": "Note: Re-submitting this milestone after receiving approval of the change request from Roberta as of 11/20/2023.\nA new panel within the chrome extension that provides detailed logging of each CIP-30 method that is called",
+      "criteria": "Any method that a dApp invokes via Sorbet should be visible within this tab, for debugging purposes. Should include human-readable views of the parameters and response values",
+      "report": "This Milestone is complete! You may find a video of the CIP-30 Logging in action here: https://youtu.be/zumkiw70DQA You may view the repository at https://github.com/SundaeSwap-finance/Sorbet",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 40000,
+      "promise": "Note: Re-submitting this milestone after receiving approval of the change request from Roberta as of 11/20/2023.\nAllow dApps supporting Cardano Connect (CIP-45) to connect to Sorbet via a QR code or URL.",
+      "criteria": "Users should be able to connect to sorbet via CIP-45 as they would any other CIP-45 compliant wallet.",
+      "report": "This Milestone is complete! You may find a video of the CIP-45 support in action here: https://youtu.be/PHT3WPKhlTQ You may view the repository at https://github.com/SundaeSwap-finance/Sorbet",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 40000,
+      "promise": "Note: Re-submitting this milestone after receiving approval of the change request from Roberta as of 11/20/2023.\nA new panel within Sorbet that allows the user to enable \"custom response\" mode. When this mode is enabled, we present a small UI to \"design\" a set of UTXOs that the wallet contains. Any CIP-30 or CIP-45 requests for this wallet data will then respond with this custom data. Final Report and Closeout Video will be submitted.",
+      "criteria": "The above feature should be implemented and usable by anyone with an up to date extension. Final Report and closeout video will be viewable.",
+      "report": "Custom UTxO Demo: https://www.youtube.com/watch?v=mFwwBQExdvU\nGitHub Repository: https://github.com/SundaeSwap-finance/Sorbet\nProject Closeout Report: https://docs.google.com/document/d/1AYROaPHbFkiZgcjkUq5jIiadl4ZHAKv-WlFiZptMGC4/edit?usp=sharing\nProject Closeout Video: https://youtu.be/7aw-izZ7E-E",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

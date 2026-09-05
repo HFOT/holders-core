@@ -1,0 +1,56 @@
+{
+  "title": "Development of Cardano Index API",
+  "ms": [
+    {
+      "no": 1,
+      "month": "18",
+      "cost": 9225,
+      "promise": "・Develop the Cardano Index API with essential endpoints (list of indexes, index price, historical price development of index, volume information of index)\n・Conduct internal testing.",
+      "criteria": "A first API version that provides data of different cardano indexes based on different filter critierias e.g. top-marketcap, defi, etc.. That means tokens had to be classified to categories, market caps have to be accuartely estimated etc.. The Index Api will be written in Python and made open-source on Github. It will include the necessary endpoints described in outputs (list of indexes, index price, historical price development of index, volume information of index)",
+      "report": "Dear Milestone Reviewers, \nwe have now finished the development of the Index API for milestone 1. \nThe code can be found in the following Github repository https://github.com/LinkageDevTeam/linkage-cardano-index-api. \nMoreover, we added an extensive README.md file that includes a description of the repository and all relevant endpoints https://github.com/LinkageDevTeam/linkage-cardano-index-api/blob/main/README.md. \nWe also added a testing suite for our repository and based on this created a test report in Markdown: https://github.com/LinkageDevTeam/linkage-cardano-index-api/blob/main/API_TESTING_REPORT.md\nUpdate: It seems that in an earlier submission the docker container only worked after running the local version first which created the correct files. We have now tried to change the Dockerfile. We are very sorry for the inconvenience caused.",
+      "kinds": [
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "20",
+      "cost": 5000,
+      "promise": "・Integrate the Cardano Index API with Linkage Finance's index tracking system.\n・Verify data accuracy and consistency. (manually and automatically verify index data and see if historical analysis is correct)\n・Perform limited testing (write unit tests for the different endpoints and backtest against a fixed set of historical values)",
+      "criteria": "In addition to the standard filters that are part of the index api the api will be extended to track all linkage finance funds created by users. This means the index api will fetch information from the linkage finance smart contracts and serve he additional available funds to API users. In addition, we will release the date used for testing the api.",
+      "report": "A. Output: Integrate the Cardano Index API with Linkage Finance's index tracking system.\nAcceptance criteria: In addition to the standard filters that are part of the index api the api will be extended to track all linkage finance funds created by users. This means the index api will fetch information from the linkage finance smart contracts and serve he additional available funds to API users. \nEvidence: We have directly integrated the fetching of the linkage finance contracts that are on testnet. the code is part of our milestone 2 release here https://github.com/LinkageDevTeam/linkage-cardano-index-api/commits/main/\n\nB. Output: Verify data accuracy and consistency. (manually and automatically verify index data and see if historical analysis is correct)\nAcceptance criteria: Not directly defined in this milestone but we added it for all necessary features \nEvidence: Code for data verification is in tests and in the new tools files: https://github.com/LinkageDevTeam/linkage-cardano-index-api/tree/main/tools\n\nC. Output: Perform limited testing (write unit tests for the different endpoints and backtest against a fixed set of historical values)\nAcceptance criteria: While not explicitly defined we designed tests that cover both the old code and the new linkage finance features\nEvidence: The tests can be found in the tests/ folder (also includes linkage finance tests). In addition, we wrote a testing report released here: https://github.com/LinkageDevTeam/linkage-cardano-index-api/blob/main/API_TESTING_REPORT.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "21",
+      "cost": 9225,
+      "promise": "・Create basic documentation and guides for developers.\n・Establish support channels for developers' queries.\n・Provide limited developer support (setting up server for public access, documentation and discord channel that is regularly checked to provide developer support)",
+      "criteria": "We are planning to add basic documentation to our github repository and deploy the index api for users (hosted on our servers). This hosted instance will in addition also include a documentation showing information to users. We are also planning to add an additional channel in our Discord that enables API users to ask question and we will provide support",
+      "report": "A. Output: Create basic documentation and guides for developers.\nAcceptance criteria: We are planning to add basic documentation to our github repository and deploy the index api for users (hosted on our servers). This hosted instance will in addition also include a documentation showing information to users.\nEvidence: Documentation on Github repository\n・We added documentation here: https://github.com/LinkageDevTeam/linkage-cardano-index-api/blob/main/README.md\n・And an additional usage guide here: https://github.com/LinkageDevTeam/linkage-cardano-index-api/blob/main/USAGE_GUIDE.md\n\n--\nB. Output: Create basic documentation and guides for developers.\nAcceptance criteria: We are planning to add basic documentation to our github repository and deploy the index api for users (hosted on our servers). This hosted instance will in addition also include a documentation showing information to users.\n・Evidence: We have deployed the API on a publicly accessible endpoint here: https://index-api.linkage.finance/ while the additional docs of the API are also available here: https://index-api.linkage.finance/docs. To align with our examplethe API key for this deployment is also \"demo-api-key-please-change\"\n\n--\nC. Output: Provide limited developer support (setting up server for public access, documentation and discord channel that is regularly checked to provide developer support)\nAcceptance criteria: We are also planning to add an additional channel in our Discord that enables API users to ask question and we will provide support\nEvidence: On our Discord Server (invite: https://discord.gg/2qX2h9QYqu) we have added a new channel with the name #index-api that is meant to provide support to developers.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "22",
+      "cost": 7300,
+      "promise": "・Optimize the Cardano Index API for reasonable performance.\n・Conduct limited performance testing (test for number of requests, check if all data is up to date -> how quickly do DEX prices propagate to the Index API)\n・Implement necessary improvements based on test results.",
+      "criteria": "We are planning on testing the API performance and see how it can be improved. Example given we can leverage tools like ogmios to faster fetch information from the blockchain. We are planning on releasing a test report and show how implemented improvements improve the performance of the API (number of requests that can be handled in parallel, how up to date the API is to DEX price changes)",
+      "report": "Dear Reviewers, we are sorry about the YouTube link in the previous submission. We have now fixed the link and also updated our performance testing report on GitHub to include the relevant numbers. Thank you very much!\n--- \nA. Output: Catalyst Close-Out Report\nAcceptance criteria: Follow the official Catalyst Close-Out Report requirmenets \nEvidence: We have uploaded our close-out report on google drive and it can be accessed here as PDF file https://drive.google.com/file/d/1l1FDj7WbfcH6P7REupK7cfaOMXKbAYTG/view?usp=sharing\n\nB. Output: Catalyst Close-Out Video\nAcceptance criteria: Follow the official Catalyst Close-Out Video requirmenets \nEvidence: We have uploaded our close-out video to YouTube and made it publicly accessible https://youtu.be/avPMDzIXwQE\n\nC. Output: Optimise the Cardano Index API for reasonable performance., Conduct limited performance testing (test for number of requests, check if all data is up to date -> how quickly do DEX prices propagate to the Index API)\nAcceptance criteria: We are planning on releasing a test report and show how implemented improvements improve the performance of the API (number of requests that can be handled in parallel, how up to date the API is to DEX price changes)\nEvidence: The testing report can be found as part of our GitHub: https://github.com/LinkageDevTeam/linkage-cardano-index-api/blob/main/PERFORMANCE_TESTING_REPORT.md The report explains some of the performance improvements we have implemented. Moreover, we would like to refer to the newest GitHub commit https://github.com/LinkageDevTeam/linkage-cardano-index-api",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

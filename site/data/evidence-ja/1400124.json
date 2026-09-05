@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "機能的な WalletConnect v2 クライアントを Flutter に提供し、ペアリング、承認、切断フローを含む完全なセッション管理機能を提供します。 SDK は、すべての標準的な Cardano トランザクションタイプをサポートし、CIP-30 の互換性で完全なトランザクション署名を実行します。 基本的なドキュメントは、インストール、セットアップ、およびコア API の使用状況をカバーし、開発者がすぐに統合を開始できるようにします.",
+      "criteria": "SDK は、テスト dApp で WalletConnect セッションの確立と維持に成功し、安定した接続処理を実証する必要があります。 適切な証人生成とCBORシリアライズで、Cardanoトランザクションを正しく署名する必要があります。 すべてのCIP-30標準メソッドは、アドレス検索、残高照会、トランザクション送信など、実装および機能的でなければなりません。\n査読者のための注意:すべてのCIP-30メソッドがサポートされます(「フルAPI」で定義されています) : https://cips.cardano.org/cip/CIP-30#full-api )。 これは、getUtxos()、getBalance() などを含みます.",
+      "report": "GitHub リポジトリ(SDKコード)\n・https://github.com/vespr-wallet/wallet connect cardano\n\nテストdAppから署名するトランザクションを示すビデオ\n・https://drive.google.com/file/d/10oDlpK-OSpxGheQAVlL10k1qvgfzEHae/view?usp=sharing\n・モバイルアプリコードのテスト(SDK使用)\n・https://github.com/vespr-wallet/wallet connect cardano/tree/master/example\n・テストdAppコード(シグネチャをリクエストする)\n・https://github.com/vespr-wallet/wallet connect cardano/tree/master/demo/dapp-web\n\n成功した WalletConnect セッションのスクリーンショット\n・https://drive.google.com/file/d/1Xl9YVmivBNDC6Azs8gHrBMwSWBHno-nu/view?usp=sharing\n\nボーナス: ビデオで提出されたトランザクションへのリンク https://preprod.cardanoscan.io/transaction/31469dd9b91ebc6325a74502dcb6850e170ce68d74e3346d78b0c9360986017e"
+    },
+    {
+      "no": 2,
+      "promise": "SDK のコードベースは、クリーンなアーキテクチャと問題の適切な分離で、製造基準に一致していることを確認してください。 開発段階から残った技術債務を確定します。 包括的なユニットテストは、コア機能をカバーします。 SDKは、効率的な接続管理と最小限のメモリフットプリントでパフォーマンスを最適化します。 完全なREADMEは、迅速なセットアップ手順、基本的な使用例、およびAPIの概要を提供します。 デモビデオでは、コネクターをアクションで紹介し、洗練されたSDKをパブに公開します.",
+      "criteria": "コードベースは、すべてのパブリック API の適切な null 安全、タイプ定義、およびドキュメントコメントで Flutter ベストプラクティスに従う必要があります。 ユニットテストカバレッジは、コードベースの関連部品をカバーしなければなりません。 READMEには、インストール手順、初期化コード、および少なくともシンプルなユースケースが含まれる必要があります。 デモビデオは、成功したWalletConnectのペアリングと取引承認を示す必要があります。 パッケージは、すべての機能の文書化、パッケージの説明、および変更ログでパブ.devに正常に公開されなければなりません.",
+      "report": "コードベースは、Flutterのベストプラクティスに従う必要があります\n・pub.dev の公開パッケージは、品質 https://pub.dev/packages/wallet connect cardano/score の 160/160 ポイントを報告します。\n\npub.devの公開パッケージへのリンク\n・https://pub.dev/packages/wallet connect cardano\n\nGitHubのユニットテストと、それらが渡るスクリーンショットへのリンク\n・GitHubのユニットテスト:https://github.com/vespr-wallet/wallet connect cardano/tree/master/test\n・それらが渡るスクリーンショット: https://drive.google.com/file/d/1L3bKqv 5A8DOxzbRmviqhJBkX69qYm9j/view?usp=sharing\n\nVideo demonstrating WalletConnect 作業\n・https://drive.google.com/file/d/1rWnEzOn5ETJgguagLHyZt9RsQxlQUa5D/view?usp=sharing"
+    }
+  ]
+}

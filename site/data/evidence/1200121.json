@@ -1,0 +1,79 @@
+{
+  "title": "Griffin: A Substrate node that supports Plutus by TxPipe",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 39750,
+      "promise": "・Publicly available source-code containing the project scaffold\n・A stub of the Substrate runtime that will hold the UTxO ledger and Plutus VM\n・A scaffold of the Substrate node that includes the stub for the new runtime",
+      "criteria": "・The interface for the new Substrate runtime matches the feature requirements\n・The Substrate node scaffold can be started and remain idle\n\nThe list of features and requirements is available in our repository README (permalink)",
+      "report": "Griffin: A Substrate node that supports Plutus by TxPipe - Milestone #1 Report\n\nWe are glad to announce the successful completion of Milestone #1 for the Griffin Catalyst project.\n\nEvidence of milestone completion:\n・Source-code available in our Github repository\n\nhttps://github.com/txpipe/griffin/tree/catalyst-ms1\n・Binary releases available in Github release section\n\nhttps://github.com/txpipe/griffin/releases/tag/catalyst-ms1\n・Video showcasing the basic node and idle operation\n\n https://drive.google.com/file/d/1gbjxbCLAG0jc3auyRgMCMraAVvX5dFV5/view\n\nMilestone goals and proofs of completion\nThe list of features and requirements is available in our repository README. In this milestone, we have completed the following:\n・The interface for the new Substrate runtime matches the feature requirements:\n・RPC interface: a mechanism to interact with the node using a network RPC interface, used for extrinsic event submission and management operations.\n\nYou can check https://github.com/txpipe/griffin/blob/catalyst-ms1/node/src/rpc.rs for implementation details on the node side. This functionality is tested by use of the UTxO Wallet, which submits transactions via RPC requests.\n・Aura consensus: a proof-of-authority (PoA) consensus protocol where only approved nodes are allowed to create new blocks.\n・Grandpa block finality: a Byzantine fault tolerant finality gadget that provides deterministic finality.\n\nBoth features appear in the implementation of the relevant API traits of the Runtime. Presently, all Authority identities are hard-coded, but we have tested the node for inclusion of other ids by way of the command-line interface. The node counterpart of both is configured when a new client service is created.\n・Libp2p networking: a battle-tested peer-to-peer networking library providing transport, discovery and routing mechanisms.\n\nThis is configured by use of Substrate’s sc_network crate, when a new service is built upon node initialization.\n・The Substrate node scaffold can be sta",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 20,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 39750,
+      "promise": "・publicly available source-code of a UTxO ledger compatible with Substrate\n・publicly available documentation of the module's interface\n・results from integration testing",
+      "criteria": "・The implemented ledger resembles the Cardano ledger, with the exception of any stacking, delegation or governance primitives.\n・The implemented ledger contains the primitives required for UTxO programmability (datums, redeemers, scripts, etc).",
+      "report": "Evidence of milestone completion\nSource-code available in our Github repository\nhttps://github.com/txpipe/griffin/tree/catalyst-ms2\nRust crates published at crates.io\nhttps://crates.io/crates/griffin-core\nhttps://crates.io/crates/griffin-solochain-runtime\nhttps://crates.io/crates/griffin-solochain-node\nhttps://crates.io/crates/griffin-wallet\nDocumentation published at docs.rs\nhttps://docs.rs/griffin-core/\nhttps://docs.rs/griffin-solochain-runtime/\nhttps://docs.rs/crate/griffin-solochain-node/\nhttps://docs.rs/crate/griffin-wallet/\nVideo showcasing a transaction execution over the UTxO ledger and integration with wallet\nvideo\nMilestone goals and proofs of completion\n\nThe list of features and requirements is available in our repository README. In this milestone, we have completed the following:\nThe implemented ledger resembles the Cardano ledger, with the exception of any staking, delegation or governance primitives.\nThe Transaction type defined in griffin-core has been cumulatively constructed by using primitives analogous to the ones in the Babbage era of Cardano (with outputs of the “post-Alonzo” style. An interface with the verification tools from Pallas was defined, which are then used by the Executive module to validate transactions. \nThe implemented ledger contains the primitives required for UTxO programmability (datums, redeemers, scripts, etc).\nThis can be observed by visiting types.rs, where all those elements are defined. Namely, Datums are represented by a byte vector containing a CBOR. An example FakeDatum is used to showcase coding and decoding (at the wallet, for instance). \nPlutusScripts have an analogous format, and Redeemers for spending and minting are also provided.\nResults from integration testing\nWe have successfully run two and three nodes simultaneously, allowing us to verify that the Aura and Grandpa consensus work as expected. The instructions to run two nodes with a single authoring one are detailed in our Readme.\nWe have also tested the val",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 32,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 39750,
+      "promise": "・publicly available source-code of a Plutus VM integrated with Substrate\n・publicly available documentation of the module's interface\n・results from integration testing",
+      "criteria": "・the integrated Plutus VM is capable of executing Plutus scripts that can be created using existing Plutus tooling and languages, such as Aiken.\n・the system is able to process transactions that require Plutus script as part of the validation.",
+      "report": "Evidence of milestone completion\nSource-code available in our Github repository\nhttps://github.com/txpipe/griffin/tree/catalyst-ms3\nRust crates published at crates.io\nhttps://crates.io/crates/griffin-core\nhttps://crates.io/crates/griffin-solochain-runtime\nhttps://crates.io/crates/griffin-solochain-node\nhttps://crates.io/crates/griffin-wallet\nDocumentation published at docs.rs\nhttps://docs.rs/griffin-core/\nhttps://docs.rs/griffin-solochain-runtime/\nhttps://docs.rs/crate/griffin-solochain-node/\nhttps://docs.rs/crate/griffin-wallet/\nVideo showcasing a transaction execution that involves a Plutus script\nhttps://youtu.be/NW7NB983v80",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 20
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 39750,
+      "promise": "・A working end-to-end application built using the newly created Substrate runtime.\n・Publicly available source-code of the end-to-end application.",
+      "criteria": "・the application is built using the Substrate framework and runs as a custom network.\n・the application uses an UTxO-based ledger\n・the application relies on Plutus script for validation of some transactions",
+      "report": "Evidence of milestone completion\n\nMilestone goals and proofs of completion\n\n・The application is built using the Substrate framework and runs as a custom network.\n\nAs showcased in the video, we are interacting with our Griffin node (built with Substrate) through our wallet to build and submit transactions needed for creating, canceling and resolving orders from the Order Book dApp. Also, as explained in the README, the network can be extended to a custom number of synchronized nodes (this is a feature provided by the Substrate framework). \n・The application uses an UTxO-based ledger\n\nAll the dApp transactions are built using our off-chain code, in particular the pay_to_script and spend_script functions, that make use of the types defined in griffin-core, which are simplified versions from the Cardano ledger.\n・The application relies on Plutus script for validation of some transactions\n\nWhen creating an order, a control token must be minted. When canceling or resolving, a script input must be consumed and the control token must be burnt. In all those cases, Plutus scripts are run. If the conditions specified in the dApp aiken source code are not met, the transactions are rejected by the node with a phase two error.\n\nEvidence of Milestone Completion\n\n・Source-code available in our Github repository\n\nhttps://github.com/txpipe/griffin/tree/catalyst-ms4\n・Documentation published at custom website (broken link until delivery)\n\nhttps://docs.txpipe.io/griffin\n・Binary releases available in Github release section\n\nhttps://github.com/txpipe/griffin/releases\n・Video showcasing the application from an end-user perspective\n\nhttps://youtu.be/4xMzNszMiPc?si=qEo5daXBEK-5So9H",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 12
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 39750,
+      "promise": "・publicly available source-code of the new runtime\n・publicly available source-code of the client reference implementation\n・publicly available source-code of the end-to-end application\n・binary releases of the client reference implementation\n・executable release of the end-to-end application\n・publicly available documentation\n・a video showcasing the final output of the project\n・a final report describing the project process and outcome",
+      "criteria": "・the newly created Substrate runtime uses an UTxO ledger and runs Plutus scripts\n・the client reference application is able to run custom Substrate-based networks\n・the final video complies with Catalyst requirements\n・the final report complies with Catalyst requirements",
+      "report": "Source-code available in our Github repository\nhttps://github.com/txpipe/griffin/tree/catalyst-ms5\nBinary releases available in Github release section\nhttps://github.com/txpipe/griffin/releases/tag/catalyst-ms5\nRust crates published at crates.io\nhttps://crates.io/crates/griffin-core\nhttps://crates.io/crates/griffin-solochain-runtime\nhttps://crates.io/crates/griffin-solochain-node\nhttps://crates.io/crates/griffin-wallet\nDocumentation published at docs.rs\nhttps://docs.rs/griffin-core/\nhttps://docs.rs/griffin-solochain-runtime/\nhttps://docs.rs/crate/griffin-solochain-node/\nhttps://docs.rs/crate/griffin-wallet/\nLink to close out video uploaded to YouTube\nLink to close out report document",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 22
+    }
+  ]
+}

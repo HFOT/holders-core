@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Paima から Paima のブロックステートを Paima エンジンのコードベースにパースする方法を追加します。 Paima のファンネル システムを拡張し、 Paima エンジンのドキュメントでそれを文書化することにより、",
+      "criteria": "Paimaのコードベースに「Mina Funnel」を実装",
+      "report": "ビデオ: https://drive.google.com/file/d/1NTqK-11UV4kmOE2TPFSCqkz5VxBv07E/view?usp=sharing\nマイナーファネル ドキュメント: https://docs.paimastudios.com/home/react-to-events/funnel-types/mina-funnel\nMina の原始的な文書: https://docs.paimastudios.com/home/react-to-events/primitive-catalogue/mina/generic\nマイナーファネルコード: https://github.com/PaimaStudios/paima-engine/pull/343"
+    },
+    {
+      "no": 2,
+      "promise": "パイマ自身とバッチャーシステムの両方にMinaウォレットのサポートを追加",
+      "criteria": "外部ユーザーとバッチャーの両方に使用できるミナウォレット",
+      "report": "動画: https://drive.google.com/file/d/1T-FcwSBeREGVj6dT57mU2 bMrDpX8hmT/view?usp=sharing\nドキュメント: https://docs.paimastudios.com/home/multichain-support/wallet-layer/introduction/\nツイート: https://twitter.com/PaimaStudios/status/1783573986951000445\nコードベース: https://github.com/PaimaStudios/paima-engine/pull/355"
+    },
+    {
+      "no": 3,
+      "promise": "Cardano と Mina を 1 つのミニゲームに結合するテンプレートを実装",
+      "criteria": "Minaシステムを実行し、Cardano状態と組み合わせるテンプレートのパブリックリリース",
+      "report": "PoAコメントに対応:\nありがとうございます。 Cardanoの状態をZKプライバシーと組み合わせ、CardanoとMinaオリジナルフィットでクリアしたいテンプレートをオリジナル要件にお届けしました。\n(A) 成果物は Cardano の状態と ZK です。 プライベートデリゲーション投票テンプレートは、Cardano stake 委任によるガバナンス投票を重み、ZK 証拠と個人を投票します。投票者は、プールや投票を明らかにすることなく委任状を証明します。 Cardano stakeの委任は、テンプレートの中心です。\n(B) ミノアはミッドナイトに置き換えられなかった, むしろBOTHが実装されています, しかし、深夜 Cardanoフィット. 当初、ミノアという名前のマイルストーン。ミノアとミッドナイトで(Cardano state + ZK プライバシー)を配信しました。 ミッドナイトは、インプット・アウトプットのパートナーチェーンフレームワークに組み込まれたCardanoパートナーチェーンです。Cardano SPOは、そのバリデータとなることができ、ミッドナイトのNIGHTトークンの100%は、ネイティブトークンとしてCardanoにのみ有効で便利です。そのため、Minaと同じZKネイティブプライバシーを提供しますが、Cardanoエコシステムに深く統合し、自然なZKパートナーチェーンを作ります。 EffectStreamは設計によりマルチチェーンなので、ZKチェーンはアプリロジックの書き換えではなく、設定選択です。\n(C) 私たちは、焦点の触媒方向に合わせています - これはCardanoコミュニティに貢献し、それが提案とどのように整列するか(チケット#9527の下に記録された以下のメモを参照してください)。 ライブデモは、サーバーを維持するためのコストのため、ミッドナイトで実行されますが、ネイティブのCardanoトークンは、ユーザーインタラクションのために支払います - Cardanoは経済エンジンです。\nデモ・ライティングアップは、下記のリンクから更新しています。\n\n概要:\nプライベートデリゲーション投票 - Cardano <> ZKテンプレート.ガバナンスの投票は、Cardanoのstakeの委任によって重み付けられます。投票は、MinaまたはMidnight ZKの証拠を通してプライベートにとどまります。 投票者は、資格のある(修飾プールに委任)であることを証明し、プールや選択を明らかにすることなく投票をキャストします。 これはまさにマイルストーンの意図です - 組み合わせ"
+    },
+    {
+      "no": 4,
+      "promise": "Mina のような ZK チェーンに settling なしでローカルで ZK 証拠を計算する方法を実装",
+      "criteria": "これらのZKプルーフの作成と更新をサポートするPaimaのモジュール",
+      "report": "注意:このプロジェクトへのタイムラインが短いため、このマイルストーンが承認される前に提出しました。 これは、Cardano指令と協議し、PoAの最後に正式な声明が追加されました。 このマイルストーンは完全に独立しており、前のマイルストーンのいかなる方法にも依存しません。\n以前のPoAコメントに対応:\nMina と Midnight は、両方の実装が存在する - 指定されたマイルストーン(パマエンジンのコードベースでオープンソースを開く)と Midnight の再実装として、元の Mina 統合は、より深い Cardano フィット (Midnight は Cardano パートナーチェーンです。NIGHT は Cardano ネイティブトークンであり、Cardano SPO はブロックを検証します)。 Cardano の値を生成したいので、まずは Midnight を提示し、Mina のサポートをしています。\nブリーフ\nこのマイルストーンは、ZKプルーフのローカル(クライアント側)計算を実現します。プレイヤーは、ブラウザのデバイスでゼロナレッジプルーフを生成し、ループの中央化されたプルーフサーバーは発生しません。 各証拠は、消費者のハードウェアで約10秒かかります。提出後約20秒のオンチェーンが含まれています。オンチェーンの土地は、シールドされたトランスクリプト(入力、コミットメント、nullifiers)であり、プライベートな値ではありません。 提供がローカルなので、信頼や支払いのバックエンドがないので、プライベート入力はプレイヤーのマシンを離れません。 生産の能力船:カチナコロシアムのプライベート機器/移動証拠とダスト2-Dustの多回路ローグライプは、両方の生成インブラウザです。 このプロジェクトの残りの部分と同様に、ZKレイヤーはミッドナイト - Cardanoパートナーチェーンであり、両方の実装(元のマイナーパスとミッドナイトパス)はオープンソースです。\nお問い合わせ\n\n1. ビデオ - オンチェーンを上陸させるローカル(証拠ごとの10s)証明される民間装置の選択\nhttps://youtu.be/6QbEeLCSn-U\n\n2.オプション ライブゲームはブラウザで証明を生成する\nこの記事の現時点では、サーバーの移行を行っています。\nhttps://kachina.midnight.fun/\nhttps://dustri2dust.midnight.fun/\n\n3. コード:\nhttps://https://"
+    },
+    {
+      "no": 5,
+      "promise": "この地域の証拠生成技術を使用するテンプレート(または前のテンプレートの変更)を実装",
+      "criteria": "機能性を実装するゲームテンプレートの公開リリース",
+      "report": "PoAコメントに対応:\n[I] 残り者に感謝します。 soclalへのリンク: https://x.com/paimastudios/status/2071466657617420322?s=46&t=iOvIkTYfqyMAe2lbLFslhg\n[II] Mina の実装は元々に指定され、オープンソースです。ファイルで確認できるためです。しかし、Cardano とコミュニティの将来に適している、完全に作業中の Midnight の実装をさらに配信しました。なぜなら、 Midnight は Cardano のパートナーチェーンなので、そのバリデータ/SPO はコミュニティに価値を生成します。そのため、Middlenight 側のもう少し詳しく説明します。 メモにリブランディング/名前変更が反映されます。 ドキュメントや動画も更新しました。\nフィードバックありがとうございます。\nブリーフ\nこのマイルストーンは、ローカル、ブラウザサイドのZK証拠生成とフロントエンドの誰もがローカルで実行できるゲームテンプレートを提供します。 提案(オープンソースのオープンソース、参照のために保存)、およびミッドナイトの実装に名前付けられたMinaの実装は、ミッドナイトはCardanoのZKパートナーチェーンであり、NIGHTはCardanoネイティブトークンです。 ZK チェーンは、EffectStream のコンフィギュレーションの選択肢で、アプリが書き換えるのではなく、同じテンプレートコードを実行します。 Midnight ビルドは Werewolf と Go Fish のテンプレートとして出荷されます。 ブラウザ内での校正済みのクライアントサイドのコンパクトコントラクト - 他のライブゲームで生産スケールで検証されています。\nお問い合わせ\n1。 ビデオ - テンプレートのローカルZKの証拠生成、Go Fish + Werewolf\nhttps://youtu.be/XjGOVIDkvBU\n\n2. コード - テンプレート(オープンソースを開く):\nWerewolf (深夜 + EffectStream, ブラウザの証拠):\nhttps://github.com/effectstream/werewolf-game\nWerewolf コンパクト契約(ZK 回路はクライアント側を実行します):\nhttps://github.com/effectstream/werewolf-game/tree/main/packages/shared/contracts/midnight/contract-werewolf/src\n魚に行く(ZKメンタルポーカー):\nhttps://github.com/effectstream/go-fish\nオリジナルのMinaの実装(提案に示されるように):\nhttps://github.com/PaimaStudios/paima-game-templates/pull/74\n\n3. 書き込み-"
+    },
+    {
+      "no": 6,
+      "promise": "プロジェクトクローズレポート:\n・PDFレポート\n・ビデオレポート\n・実証技術によるテンプレートの公開",
+      "criteria": "・生成したすべてのテンプレートへのアクセスとのコミュニケーション",
+      "report": "POAコメントへの対応\na. 「オプション」は、以前のマイルストーンの一部として以前に含まれているため、査読者のためのノートでした。\nb. 悪いAIの声に申し訳ありませんが、私たちはそれを正しく取得しようとしています\nツイート 過去のマイルストーンが全てオフになりました。\nあなたのレビューとフィードバックのおかげで :)\n\n最近の投稿からさらに変更されることはありません。\nブリーフ\nこれは、Catalystの提案のためのプロジェクトクローズレポートです 1000075、「Cardanoエコシステムで構築されたアプリとゲームを有効活用して、プライバシーとスケーラビリティのためのZの暗号化を活用する」。 このプロジェクトは、Cardanoのエコシステムが終わるまでZKを配信しました。Cardanoのステーク・デリゲーションとプライベート・ヴォーティングを組み合わせたテンプレート(元のMinaパスとミッドナイト、CardanoのZKパートナーチェーンの両方で配信)、ローカル・インブラウザの証拠生成、および生産ZKゲーム(Kachina、Dash-2-Dust、Go Fish)。 クローズアウトビデオとレポートは下記になります。\n\nお問い合わせ\n1. クローズアウトビデオ\nhttps://youtu.be/dmpfg5L4C8s\n\n2. クローズアウトレポート\nhttps://drive.google.com/file/d/1yWISAga5x6bboO1jMvXSM6cSo-IO2ZZ0/view?usp=sharing\n\n3. オープンソースのコード、書き出し:(OPTIONAL)\nZK-Cardano(プライベートデリゲーション投票)テンプレート\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/zk-cardano\nローカル証拠生成例 WASM(マイルストーンでも)\nhttps://github.com/effectstream/kachina-colosseum/blob/1f1f6947a602e2dbecc0c0094cd57bee94a9e6c7/frontend/src/phaser/src/wasm-proof-provider.ts#L6\n書き込みアップ(テンプレートリンク)\nhttps://effectstream.github.io/docs/blog/mina-zk-integration\n\n--------------------------------------------------------------------------------\nコンテンツとノート\n\nCatalyst の方向性は、このプロジェクトに関する次の声明をレビューし、チケット #9527 の下で記録しました。\n・リブランド.Paima は EffectStream として再ブランドし、 Midnight Foundation の一部です。リンクは、これらのエンティティティティの名称で表示されることがあります。\n・スコープ 審査者: マイルストーンと成果物は、承認済みに対して評価されるべきである"
+    }
+  ]
+}

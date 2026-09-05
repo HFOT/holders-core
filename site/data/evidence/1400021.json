@@ -1,0 +1,60 @@
+{
+  "title": "by TxPipe - Shipping Oracle to unlock Cardano e-Commerce",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 29975,
+      "promise": "A. A technical architecture document describing the overall system design, including diagrams of the main components and their interactions.\nB. Publicly available source-code containing the initial project scaffold, with stub implementations for all major system components.\nC. A functioning CI/CD workflow to build and test the source-code throughout the whole development process.",
+      "criteria": "A1. The architecture document is published publicly, reflects the full scope of the proposal, and includes diagrams of the main components and their interactions.\nB1. The public repository contains the initial project scaffold with stub modules for each major component described in the architecture document.\nC1. A CI/CD workflow is active in the repository and successfully builds/tests the scaffold in preparation for further development.",
+      "report": "A2. Link to the published architecture document in the project repository.\nhttps://github.com/tx3-lang/shipping-oracle/blob/main/README.md\nB2. Link to the public GitHub repository containing the open-source code.\nhttps://github.com/tx3-lang/shipping-oracle\nC2. Link to a successful CI/CD run in the repository.\nhttps://github.com/tx3-lang/shipping-oracle/actions\nD2. Video walkthrough of the designed architecture.\nhttps://youtu.be/jHOled7wSjc",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 27477,
+      "promise": "A. A functional off-chain data fetcher capable of retrieving or receiving shipment status updates from a chosen logistics API.\nB. An on-chain oracle contract that stores hashed shipment identifiers, delivery status, timestamps, and oracle-signed attestations.\nC. An integration flow that links off-chain data retrieval to on-chain submission, ensuring accurate updates for the “delivered” event.\nD. Documentation describing how the off-chain fetcher and on-chain oracle operate together.",
+      "criteria": "A1. The off-chain data fetcher successfully retrieves or receives shipment status updates from the selected logistics API.\nB1. The oracle contract correctly stores hashed shipment data as defined in outputs without exposing any PII.\nC1. The integrated flow between the fetcher and the oracle results in accurate on-chain submissions reflecting real delivery events.\nD1. Documentation describing the off-chain/on-chain workflow is publicly available.",
+      "report": "A2. Link to the public repository containing the source code for the off-chain data fetcher and oracle contract.\nhttps://github.com/tx3-lang/shipping-oracle\n\nB2. Video walkthrough demonstrating shipping data retrieved from the API being accurately submitted on-chain.\nhttps://youtu.be/1w5WL-xL8E0\n\nC2. Links to example oracle transactions in a public blockchain explorer.\n- Publish Scripts: https://preview.cexplorer.io/tx/8e1777358328c2da42309379bf0a38baeb6312826c33b6ffc814175f32a63146\n- Bootstrap Gov: https://preview.cexplorer.io/tx/3aa6f843e11db1a7f33f1b456ce6a61c7fee5bf82dd484ff26b5e52462fa4387\n- Consume Data: https://preview.cexplorer.io/tx/22b5939db715a6a59c544a9d45c38687fd57ca7d9a4429b85c64659999ea9bc0\nhttps://preview.cexplorer.io/tx/65f4383a5d687eabf2ff633621ee7ca2f1bad38227c7f7a8f23b0157e708a6cd (from walkthrough video)\n\nD2. Link to documentation explaining the off-chain/on-chain workflow.\nhttps://github.com/tx3-lang/shipping-oracle/blob/main/onchain/README.md\nhttps://github.com/tx3-lang/shipping-oracle/blob/main/tx3/README.md\n\nE2. Test reports validating data integrity and submission accuracy.\nhttps://github.com/tx3-lang/shipping-oracle/actions/runs/25189877404",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 18
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 27477,
+      "promise": "A. SDKs providing a simple way to integrate the shipping oracle into applications and services.\nB. Escrow contract templates that automatically release or refund funds based on the “delivered” event or a timeout.\nC. Integration examples demonstrating practical end-to-end usage of the shipping oracle within e-commerce flows.\nD. Documentation describing how to use the SDKs, escrow templates, and integration examples.",
+      "criteria": "A1. The SDKs allow developers to seamlessly link orders or application events to on-chain shipment tracking commitments.\nB1. The escrow contract templates automatically trigger fund release or refund based on the “delivered” event or a timeout.\nC1. The integration examples can be executed by users and demonstrate a full end-to-end flow using the oracle.\nD1. Documentation for the SDKs, escrow templates, and integration examples is publicly available.",
+      "report": "A2. Link to the public repository containing the SDKs, escrow templates, and integration examples.\n- SDKs: https://github.com/tx3-lang/shipping-oracle/tree/main/sdk \n- Escrow: https://github.com/tx3-lang/tx3-ecommerce-template/tree/main/aiken\n- Integration: https://github.com/tx3-lang/tx3-ecommerce-template/blob/main/docs/integration-escrow.md \n\nB2. Test results demonstrating that the escrow templates behave as expected for delivery and timeout scenarios.\n- Escrow tests https://github.com/tx3-lang/tx3-ecommerce-template/actions/workflows/aiken-check.yml \nOn chain evidence:\n- Release Tx: fb4de921c3b49bf31e158886c425d0130b792c674d78bf090c6615be30d870f6\n- Refund Tx: c7416989abee2b059aefcaf254cf39c4cc4e7e00712c3e35f25525b0f4ab7bd4\n\nC2. Video walkthrough demonstrating an end-to-end integration flow using the SDKs and escrow contracts templates.\nhttps://youtu.be/VoyLn7WSPXo\n\nD2. Link to documentation.\n- Main entrypoint (architecture, API, data types, links to everything): https://github.com/tx3-lang/shipping-oracle/blob/main/README.md \n - SDK docs:\nhttps://github.com/tx3-lang/shipping-oracle/blob/main/sdk/rust/README.md \nhttps://github.com/tx3-lang/shipping-oracle/blob/main/sdk/typescript/README.md \n - Integration guide (end-to-end flow, trust model, status→transition mapping):\nhttps://github.com/tx3-lang/tx3-ecommerce-template/blob/main/docs/integration-escrow.md\n - Escrow template / on-chain doc (deploy, lifecycle, trust model):\nhttps://github.com/tx3-lang/tx3-ecommerce-template/blob/main/docs/advanced-onchain.md\n - Testing guide:\nhttps://github.com/tx3-lang/shipping-oracle/blob/main/TESTING.md",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 24
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 14988,
+      "promise": "A. Publicly available source-code for the complete oracle system\nB. Publicly available documentation and integration examples.\nC. A close-out video showcasing the final output of the project.\nD. A close-out report describing the project process and final outcomes.",
+      "criteria": "A1. The complete shipping oracle system can be used to retrieve shipping updates off-chain and submit the corresponding attestations on-chain as specified in the proposal.\nB1. The documentation enables developers to set up and integrate the oracle components without additional guidance.\nC1. The close-out video follows Catalyst guidelines.\nD1. The close-out report follows Catalyst guidelines.",
+      "report": "A2. Source-code available in our Github repository: https://github.com/tx3-lang/shipping-oracle\nB2. Documentation website : https://github.com/tx3-lang/shipping-oracle/blob/main/README.md\nC2. Close out video uploaded to YouTube : https://youtu.be/UciCpJKildE\nD2. Close out report uploaded to Google drive : https://drive.google.com/file/d/1BHuZKGmTjqZXjgN1tSqvbIGgHO8hcXX5/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

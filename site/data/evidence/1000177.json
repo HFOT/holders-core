@@ -1,0 +1,30 @@
+{
+  "title": "Sundae Governance + Atala Prism Integration",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 36800,
+      "promise": "A document containing a comprehensive integration plan that describes our implementation strategy to implement the Sundae Governance Atala Prism integration.",
+      "criteria": "Reviewer can read the planning document and see a clear path to completion of the integration.",
+      "report": "Our Original Proof of Achievement:\nOur goal for this milestone is as follows:\nA document containing a comprehensive integration plan that describes our implementation strategy to implement the Sundae Governance Atala Prism integration. This document is to reside on our public Github repository.\nThis document is now completed, and shows both the steps we will take, and our current progress towards the final goal of the project.\nThe document can be viewed on GitHub here: https://github.com/SundaeSwap-finance/atala-go/blob/main/design_atala_go_integration.md\nOur additional answer:\nWhile this wasn't required as output, here is the list of meetings that were attended leading up to the production of the design document.\nMeeting Dates: \nOctober 12 2-3 PM Pi, Paul, Dan, Lloyd\nOctober 19 2-3 PM Pi, Paul, Lloyd\nOctober 23 (Asynch on Atala Prism Astros over several hours) Lloyd, Estaban, Anushka, Fay, Paul\nNovember 6 2-3 PM Pi, Paul, Lloyd\nNovember 17 7-8 AM Pi, Paul, Lloyd, Nick, Viktor\nWork Output:\nNovember 19 12:36 PM Design Doc pushed for feedback internally, reviewed, and committed to the GitHub.\nNovember 20 10:15 AM Code pushed for the Demo code that was a direct result of the meetings above.\nIn addition, many, many hours were spent actually moving through the existing Sundae code base for voting, and through the Atala Prism and Proofspace developer documentation to complete this plan.\nOther Reviewer feedback: \"The team's project implementation plan on GitHub seems to be good enough to get a sense of the overall flow, and it's on GitHub so everyone can see the flow.\" \nYour Feedback at the time of milestone acceptance: \"The output description is just one document and does not mention \"design of architecture\" as stated in the original proposal's milestone. \"Integration\" and \"implementation\" are mentioned twice but do not provide much context. This is a rather deficient description of outputs but in my view acceptable as the Acceptance criteria and evidence should be suffic",
+      "kinds": [
+        "code"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 36800,
+      "promise": "Developed API connection to Atala PRISM, implemented DID-based voting features tied to Atala PRISM. Developed Voting power features.",
+      "criteria": "A reviewer can see that the code is in the github repository. A list of known issues is available. The code is ready for review and testing.",
+      "report": "The Codebase changes for this milestone are located here:\nhttps://github.com/SundaeSwap-finance/atala-go\nDuring this work phase we completed the connection between the Sundae Governance module and ProofSpace's Atala Prism interface. We were able to use Catalyst Town Hall DIDs issued by Darlington as a gateway to accept a vote on the Sundae governance platform.\nThe work flow is: User enters Sundae Governance site > Expresses their intent on the voting actions > Is presented with a QR code > Scans QR Code on ProofSpace Wallet > Agrees to submit proof of Town Hall attendance > Vote is pushed through to the GO Webhook with all of the user's shared identity information and their ballot choice.\nDuring the same time frame, The Cardano Foundation released a new identity wallet. We attended an introductory meeting with the Cardano Foundation and their wallet team. At this time, their wallet is not utilizing Atala Prism, that work still needs to be completed. So we aren't able to add their wallet at this time for this particular project, but we are considering a future feature addition to add their wallet to the architecture.\nWe made this architecture extensible. ProofSpace has it's own component, and other wallets can also be added this way. We believe that a CIP may be necessary to provide a good guidance to all identity wallet providers, so that we can have a more universal experience for the future. For now, we will continue with our current architecture.",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    }
+  ]
+}

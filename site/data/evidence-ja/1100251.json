@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "活動:\nスコープと目的を定義するプロジェクトイニシアチブ(すべての3 CardanoBIドメインが対象となります:コア、アナリティクス、パートナー)\nSDKの詳細な技術要件を収集する(当社のJavascript SDKの開始点)。\n包括的なSDKアーキテクチャと設計計画の作成\n必要なツールとライブラリで Python 開発環境を設定します.",
+      "criteria": "明確な目的および規模のよく文書化されたプロジェクト計画。 (Github プロジェクト設定:タスク、マイルストーン、ロードマップ、優先ボード)\nSDK のアーキテクチャ、モジュール、インターフェースを詳細に設計するドキュメントで、技術チームによって承認されています。 (OpenAPI仕様)\nプロジェクトに特化した機能開発環境です。 (厳しい環境)",
+      "report": "こんにちはチーム、\nM1のマイルストーン完了の証拠を詳述する.pptx文書は、下記のリンクをご覧ください。\nhttps://github.com/cardanobi/ProjectCatalyst/tree/master/Fund11/1100251-Rust-SDK/M1\nベスト,\nトーマス"
+    },
+    {
+      "no": 2,
+      "promise": "活動:\nAPIコネクタやデータ処理ユーティリティなどのSDKのコア機能を開発。\nCardanoBI API で SDK を統合します.",
+      "criteria": "コアSDKモジュールを高品質コードで完成し、設計仕様に準拠.",
+      "report": "こんにちはチーム、\nApology, 私は今、以下のリンクへのアクセスを開きます!\n以下のリンクから、M2のマイルストーン完了の証拠を詳述するGoogle Docをご覧ください。\nhttps://docs.google.com/current/d/1oEILuP7u-mHIs9VG38SoGxloAAFvHRhr-ZWsGjzRWh4/edit?usp=sharing\nベスト,\nトーマス"
+    },
+    {
+      "no": 3,
+      "promise": "活動:\nインテグレーションやパフォーマンステストなどの広範なテストを実施します。\nセットアップガイドやAPIリファレンスなど、包括的なドキュメントを作成します。\n実際の利用事例の提供\nコミュニティのフィードバックのためにベータ版を解放して下さい。\nSDKの公式バージョンを立ち上げる\nスタートアップ戦略の一環として。 API のドキュメント、API のチュートリアル、およびチャネルを探し、サポートを見つけ、フィードバック(プルリクエスト、Twitter および特定の質問に対するメールのための github) を提供するエンドユーザに明確にします。\n最終報告書や動画の作成.",
+      "criteria": "CardanoBI APIとの統合が成功し、厳しいテストで実証されています。\n高いコードカバレッジと解決された問題で渡るすべてのテスト。\nさまざまなユーザーレベル(docs.cardanobi.io)の完全かつアクセス可能なドキュメント。\nエンドユーザーのサポートとフィードバック、一般的なアップデート(docs.cardanobi.io/blog/+ twitter投稿+チームメール+プルリクエストのためのgithub)のためのチャネルを確立\n肯定的なコミュニティフィードバックとベータ版リリースからの懸念に対処しました。\n安定的かつ公正なリリース。\n報告書と動画を制作しました.",
+      "report": "こんにちはチーム、\nプロジェクトのクローズアウトレポートへのリンクは下記をご覧ください。\nhttps://docs.google.com/document/d/17zKYOF4ZWNrnjOIe2MgEG61gy9 7Blgso Jy5xsv5Es/edit?usp=sharing\nプロジェクトのクローズアウトビデオへのリンクは下記をご覧ください。\nhttps://youtu.be/ oi5KfNiFn8\nPCR の詳細は、最終マイルストーンの承認基準を検証するための特定の証拠です。\n1.Integrationテスト結果(スクリプトと出力)\nスクリプト: https://github.com/cardanobi/cardanobi-rust/tree/master/tests\n出力: https://github.com/cardanobi/cardanobi-rust/tree/master/tests/output\n2.ドキュメントへのリンク(docs.cardanobi.io)は、Rustコードのサンプルを示しています\n例:https://docs.cardanobi.io/docs/core-domain/Accounts/\nRust SDK用のgithubリポジトリへのリンク\nhttps://github.com/cardanobi/cardanobi-rust/tree/master\n4.SDKの使用方法を説明するチュートリアルへのリンク。\nhttps://docs.cardanobi.io/docs/tutorials/rust-sdk-tutorial\n5.発生した問題数/PRの集計報告:\nGithubで直接閲覧できます。https://github.com/cardanobi/cardanobi-rust/pulls\nご覧のとおり、現時点でPRはありません。\n6.コミュニティへのコミュニケーションは、専用のブログをご覧ください。\nhttps://docs.cardanobi.io/blog/python-rust-sdks\nhttps://docs.cardanobi.io/blog/python-rust-tutorials\nさらに、当社のコミュニティへのコミュニケーションを取り戻す証拠の欠如については、承認者からのフィードバックに従って、今日行われたXの投稿を以下にご覧ください。\nhttps://twitter.com/CardanoBI/status/1825469937952928081\n上記のように、外部の開発者やPRのフィードバックがまだ共有されていない。\nしかし、私はRustのチュートリアルをテストし、コードを一目見て、理想的にSDKを試すために働いていたベータテスターのいくつかからフィードバックメールを共有することができます。\n.そのためには、PCR で「Feedback がベータテスターから受け取った」というセクションを追加し、9 人の開発者が「無料」ヘルプを依頼したメールがいくつかあります。\n再びこのベータテストは、"
+    }
+  ]
+}

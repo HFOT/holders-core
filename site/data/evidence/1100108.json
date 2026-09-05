@@ -1,0 +1,48 @@
+{
+  "title": "Db-Sync Enterprise: high-availability setup of Cardano’s Db-Sync to run queries and access on-chain data as a service",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 18000,
+      "promise": "This process entails setting up the servers to run the Cardano node, db-sync, and a Postgres database. The setup includes configuring two fully functional db-sync pipelines, including the mentioned components.\nDocumentation will be added to the project's repository https://github.com/Blockchain-Data-Analytics/Cardano_Enterprise",
+      "criteria": "The criteria for acceptance will focus on ensuring these pipelines run smoothly, testing failover capabilities.\nThe documentation will contain information on how to compile and setup Cardano node and Cardano db-sync from source code. Furthermore, we also document how to setup the database system in high-availability mode.",
+      "report": "## Milestone 1 Achievements\n### Project 1100108\nWe have documented our PoC setup in milestone 1: https://blockchain-data-analytics.github.io/Cardano_Enterprise/doc/\nTo show the progress of the two Db-sync pipelines and two replica, we provide a screen capture video at this URL: https://github.com/Blockchain-Data-Analytics/Cardano_Enterprise/raw/gh-pages/doc/img/Recording_Database_Updating_Blockheights.mp4\nAnd, to show the behaviour in case of one of the pipelines failing and the proxy doing failover: https://github.com/Blockchain-Data-Analytics/Cardano_Enterprise/raw/gh-pages/doc/img/Recording_Database_Updating_Failover.mp4\nCheers, Alex.",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 18000,
+      "promise": "This milestone's outputs will be the monitoring of the system. We will setup monitoring of servers and the processes: node, db-sync and postgres. Moreover, the syncing of the Cardano blockchain will be monitored.\nIf any of the monitored metrics is crossing a predefined limit, then an alert is sent out to the project administrators.\nServer monitoring:\nWe will monitor CPU, disk and network I/O, and memory usage on every server. Alert limits will be set to: 80% CPU usage, 90% disk usage, 80% of network capacity, 90% memory usage. These limits are per now just indications and need to be evaluated on the live systems and set to levels which minimise risks.\nRunning systems:\nWe will monitor process health and uptime of the Cardano node, db-sync and the PostgreSQL database system.\nDatabase usage:\nWe will monitor typical database metrics (replica lag, execution times of queries) as well as Cardano db-sync related metrics such as block time lag which compares the latest block's time vs. the current clock when the block is inserted into the database. Such a metric indicates whether the syncing of blocks from the Cardano blockchain is healthy.\nDocumentation and source code will be added to the",
+      "criteria": "The acceptance criteria will be having one or several dashboards to view the monitoring of the two servers and each three processes (node, db-sync, postgres) as well as database metrics and Cardano blockchain metrics.",
+      "report": "Proof of Achievement M2\nProject #: 1100108\n\nProject Name: Db-Sync Enterprise: high-availability setup of Cardano’s Db-Sync to run queries and access on-chain data as a service\n\nWe have implemented a thorough monitoring system around the servers and services of this project. Documentation is available on: https://blockchain-data-analytics.github.io/Cardano_Enterprise/doc/06_Monitoring.html \nDashboards\n・Host uptime: https://stats.uptimerobot.com/6Zny9vYklU\n・Cardano Db-sync block time delta (public dashboard): https://monitoring.bca.sbclab.net/public-dashboards/358cf9717a3d4927a836983bc6a42003?orgId=1\n・Grafana private dashboards (require auth)\n・https://monitoring.bca.sbclab.net/dashboards\n・username: viewer_only; password: rn5HKJ!tX6hyiS (please, do not share this widely)\n\nAlerts\n・Short video of triggering an alert and its delivery: \n・https://youtu.be/_MFHtsnlv_A",
+      "kinds": [
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 9,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 24000,
+      "promise": "This milestone involves setting up a web app, where users will be able to signup and select the type of database access they require. After successful signup the required resources will be created automatically and the access credentials will be shared with the user.\nThe user will have the option to cancel the subscription at the end of the paid period and tear down the spawned instances, or extend the subscription, as in \"pay-as-you-go\".",
+      "criteria": "Perform a successful user signup and use the access credentials to connect to the read replica and successfully perform a database query.\nTear down services and cancel subscription to demonstrate pay-as-you-go.",
+      "report": "Project Close-out Report\nProject name: Db-Sync Enterprise: high-availability setup of Cardano’s Db-Sync\nProject number: 1100108\nProject manager: Alexander Diemand\nStart date: 2024-03-01\nEnd date: 2024-11-15\nChallenge KPIs:\n・Setup redundant Cardano node & Db-sync pipelines\n・Monitoring of infrastructure and services\n・Create e-shop and user sign-on procedure\n・Prepare user login credentials and package software\n\nProject KPIs:\n・Milestone 1: Setup redundant and high-availability infrastructure for the project\n・Milestone 2: Create monitoring and dashboard view\n・Milestone 3: Automatise user signup\n\nKey achievements:\n・Team collaboration\n・We have been holding a weekly call to discuss progress and issues/tasks\n・The team organised work and reported progress using Github’s kanban board: https://github.com/orgs/Blockchain-Data-Analytics/projects/1 \n・E-shop: https://shop.bca.sbclab.net/ \n・Users can select the region of the service (US or Europe) and the duration of the subscription.\n・The shop interface allows to pay in a number of currencies and adjusts the tax payable.\n・Github repository: https://github.com/Blockchain-Data-Analytics/Cardano_Enterprise\n・Scripts and configurations\n・Documentation\n・Project management with tasks and issues\n・Setup redundant Cardano node & Db-sync pipelines\n・We have installed two independent pipelines of Cardano node and Db-sync in Europe.\n・The data is mirrored to a server in the US for low-latency access from this region.\n・Monitoring of the infrastructure is in place and alerts on network or server failure.\n・Setup VPN endpoints and database proxies in the US and in Europe.\n・User experience\n・After sign-up, users receive a Zip package which contains configuration and specific credentials to connect to our databases. The software is started using “docker-compose” and sets up a VPN connection to our servers. This guarantees the user is connecting to the right server, and the server is accepting a subscribed user.\n\nKey learnings:\n・It was quite a pleasure to",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・Typed スキーマの更新: .NET リクエストと応答モデルを、すべての 6.13 (または最新のバージョン) レジャーの状態のクエリとトランザクションの送信、シリアライズと検証を含む。\n・サービス契約:各レジャークエリサービスのインターフェイスを定義する(例、ILedgerStateEpochService、IProtocolParametersService、IUTxOServiceなど)、ITransactionSubmissionService&ITransactionEvaluationService。\n・トランザクション送信の実装: 型のエラーで作業サービスを行い、トランザクションを提出することができます。\n・トランザクション評価の実装: 型ミスによる作業サービス、トランザクションの評価が可能。\n・作業者の事例更新:投稿&評価サービスを利用してデモを行います。\n・OgmiosDotnetは、現在サポートしているOgmiosバージョンのサポートが必要な場合にアップグレードされます。\n・ユニットテスト: カバーモデルのシリアライズ/デシリアライゼーション、リクエスト/応答マッピング、および送信成功/失敗パス.",
+      "criteria": "・Ogmios 6.13(または最新のバージョン)レジャークエリ、トランザクションの送信、および公開githubレポOgmiosDotnet(https://github.com/ItsDaveB/OgmiosDotnet)で評価されるすべてのOgmios.com/\n・すべてのサービスインターフェイスは、マイストン2の実装の準備が整った、定義、コンパイル、および文書化されます。\n・トランザクションの送信と評価は、タイプされたエラー処理でメインネット上でエンドツーエンドで動作します。\n・スキーママッピング、評価、提出パスのユニットテスト\n・OgmiosDotnetはOgmiosの最新バージョンをサポートしています。\n・新たに公開したパッケージは、対応する出力aboで公開",
+      "report": "マイルストーン1の業績証明 - OgmiosDotnet:トランザクションの提出+定数のLedger Schema&サービス定義。\nこのマイルストーンは、Ogmios v6.13 スキーマのサポート、サービス契約、エラー処理、ユニットテストを渡す 8/8 のトランザクション送信および評価機能を提供します。 機能性は、NuGet で公開され、製造用途に使用可能です。\n完全な文書: https://github.com/ItsDaveB/OgmiosDotnet/blob/main/reports/transaction/of-achievement.md"
+    },
+    {
+      "no": 2,
+      "promise": "- Ogmios 6.13 API の全てのレジャー状態のクエリーを型付き .NET サービスとして実装(https://ogmios.dev/api)、以下を含む:\n・ledgerState/憲法\n・ledgerState/憲法委員会\n・ledgerState/delegate代表\n・ledgerState/ダンプ\n・ledgerState/epoch\n・ledgerState/eraStart\n・ledgerState/eraSummaries\n・ledgerState/governanceProposals\n・ledgerState/liveStakeDistribution\n・ledgerState/nonces\n・ledgerState/operational認証\n・ledgerState/プロジェクト報酬\n・ledgerState/protocolParameters\n・ledgerState/proposedProtocolParameters\n・ledgerState/rewardアカウント概要\n・ledgerState/rewardsProvenance\n・ledgerState/stakePools\n・ledgerState/stakePoolsPerformances\n・ledgerState/tip\n・ledgerState/treasuryAndリザーブ\n・ledgerState/utxo\n\n- ワーカーの例は、アクション(例えば、ステークプールのパフォーマンス、財務および予約、ガバナンスの提案など)で複数のクエリを提示するために拡張しました。\n- クエリ全体で一貫して実装された型エラー処理。\n- 各クエリサービスの検証要求の構造、deserializationおよび共通の間違いのシナリオのための単位テスト。\n- パッケージは、このサポートされている機能で公開されています.",
+      "criteria": "・上記にリストされているすべてのレジャー状態のクエリには、リクエストと応答モデルが実装された型サービスがあります。\n・メインネットに対して全てのクエリを実行し、型結果を返すことができます。\n・作業者の例は、実行中のデモで上記の5つのクエリを少なくとも5つ示します。\n・ユニットテストでは、すべてのサービスおよびパスを横断してシリアル化とデシリアライゼーションをカバーします。\n・OgmiosDotnetバージョンは、参照機能でご利用いただけます.",
+      "report": "マイルストーン2:Ledger State Queryの実装とデモ\nOgmios v6.13 API から Typed .NET サービスとして、すべての 21 のレジャー状態のクエリの完全な実装。 型のエラー処理、25 個のユニットテスト、および作業者の例を含む 7 ライブのカルダノメインネットに対するクエリ。\n業績の証明: レポート/ledger-state-queries/proof-of-achievement.md"
+    },
+    {
+      "no": 3,
+      "promise": "・OgmiosDotnet. サービスNuGetパッケージが公開され、すべてのタイプされたレジャーの状態サービス、トランザクションの提出と評価を束ねます。\n・バージョンタグ、リリースノート、変更ログでソースコードGitHubリリース\n・フルサービスリストと使用状況の詳細を文書化&READMEの更新。\n・READMEのコードスニペットによる統合ガイド\n・ユニットテスト\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・NuGet パッケージは公開して .NET プロジェクトにインストール可能です。\n・正しいタグ付け、メモ、例などで公開されたGitHubリリース。\n・ドキュメントは、開発者がプラグアンドプレイサービスの完全な概要を提供します。\n・全試験合格。\n・最終クローズアウトレポート生成、詳細作業完了、レッスン学習、改善領域。\n・最終クローズアウト動画の作成と開発完了の実演、YouTubeにて公開.",
+      "report": "この投稿は、OgmiosDotnetプロジェクトの最終成果の証明を表しています。 マイルストーンのスコープで定義されたすべての成果物は、完了、公開、独立して検証されています。\n以下に示す証拠は、コード、パッケージ、文書、テスト、および現実世界のデモを横断して成功した配信を実証します。 パブリックリリース、生産NuGetパッケージ、包括的なドキュメント、テスト結果、およびCardanoメインネットに対して動作するソリューションを示す最終クローズアウトビデオが含まれます。\n達成の証明(私はCatalystの管理者のチームによって要求されるようにデモにボイスオーバーを加えました)\nhttps://github.com/ItsDaveB/OgmiosDotnet/blob/main/reports/ledger-state-queries/final-milestone/proof-of-achievement.md"
+    }
+  ]
+}

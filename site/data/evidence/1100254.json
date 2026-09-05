@@ -1,0 +1,29 @@
+{
+  "title": "Serpentine: A dApp Friendly Alternative To Hydra",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "Public GitHub repo updated to include Aiken smart contract code (plus minimal smart contract tests) implementing/demonstrating all of the L1 smart contracts described in the Serpentine Spec.",
+      "criteria": "・The smart contract tests should demonstrate the happy path functionality for all thirteen of the specified L1 smart contract operations.",
+      "report": "If you pull the contents of this repo\n・https://github.com/dchambers/serpentine-catalyst\n\nand follow the installation and building instructions, here:\n・https://github.com/dchambers/serpentine-catalyst#installation\n・https://github.com/dchambers/serpentine-catalyst#building\n\nYou should then be able to run the unit tests (in order to confirm that the acceptance criteria have been met, plus the evidence requirements) as follows:\npnpm test:unit\n\nThese include not only the happy path tests required for this milestone (M1) but all non happy-path tests which can be tested via Aiken also.\n\nRegarding the milestone outputs, the entire smart contract contract code can be found within `lib` and `validators`:\n・https://github.com/dchambers/serpentine-catalyst/tree/main/lib\n・https://github.com/dchambers/serpentine-catalyst/tree/main/validators",
+      "kinds": [
+        "code"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 30000,
+      "promise": "・GitHub repo updated to include extensive scenario based testing to cover all conceivable scenarios.\n・L1 smart contracts updated to use Merkle trees in order to support near unlimited numbers of users and validators.",
+      "criteria": "・Passing unit tests are now provided for all imaginable attack scenarios.\n・Passing unit tests demonstrating the use of pointer groups (Merkle trees) to allow support very large numbers of users and transactions.",
+      "report": "If you pull the contents of this repo\n・https://github.com/dchambers/serpentine-catalyst\n\nand follow the installation and building instructions, here:\n・https://github.com/dchambers/serpentine-catalyst#installation\n・https://github.com/dchambers/serpentine-catalyst#building\n\nYou should then be able to run the relevant tests (in order to confirm that the acceptance criteria have been met, plus the evidence requirements) as follows:\npnpm test:unit\npnpm test:scenario\npnpm test:performance\npnpm test:integration\n\nHere:\n・The unit tests are used for all test coverage which can be tested via Aiken (fastest tests).\n・The scenario tests allow the testing of all scenarios too complex to be tested directly within Aiken, and these are tested using Scalus rather than on-chain, in order so that they can be executed as quickly as possible,\n・The performance tests exist to prove that the Merkle tree implementation allows support for very large numbers of users and transactions, and again utilise Scalus.\n・The integration tests are a single happy path test, written using MeshJS), which can either be run on-chain (via `pnpm test:integration:full`) or using Yaci DevKit, for greater speed and convenience (via `pnpm test:integration`).\n\nRegarding the milestone outputs, the Merkle tree amendments can be found within `lib`:\n・https://github.com/dchambers/serpentine-catalyst/tree/main/lib",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    }
+  ]
+}

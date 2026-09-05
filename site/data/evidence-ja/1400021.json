@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "A. 主要なコンポーネントと相互作用の図を含むシステム設計を記述する技術的な建築文書。\nB. 初期プロジェクトスキャフォールドを含む公開ソースコードを、すべての主要なシステムコンポーネントのスタブ実装で公開します。\nC. 開発プロセス全体を通してソースコードを構築し、テストするCI/CDワークフローの機能.",
+      "criteria": "A1. 建築文書は一般に公開され、提案の完全な範囲を反映し、主要なコンポーネントとその相互作用の図を含みます。\nB1. パブリックリポジトリには、アーキテクチャ文書に記載されている各主要なコンポーネントのスタブモジュールで初期プロジェクトスキャフォールドが含まれています。\nC1. CI/CD ワークフローはリポジトリ内で有効で、さらなる開発の準備でスキャフォールドをビルド/テストします.",
+      "report": "A2. プロジェクトリポジトリの公開アーキテクチャ文書へのリンク。\nhttps://github.com/tx3-lang/shipping-oracle/blob/main/README.md\nB2. オープンソースコードを含む公開GitHubリポジトリへのリンク。\nhttps://github.com/tx3-lang/shipping-oracle\nC2. リポジトリで実行される成功したCI/CDへのリンク。\nhttps://github.com/tx3-lang/shipping-oracle/actions\nD2. 設計した建築の映像ウォークスルー。\nhttps://youtu.be/jHOled7wSjc"
+    },
+    {
+      "no": 2,
+      "promise": "A. 選択した物流APIから出荷状況の更新を取得または受信できる機能オフチェーンデータファッチャー。\nB. ハッシュされた出荷識別子、配送状況、タイムスタンプ、または特記の認証を格納するオンチェーン・オラクル契約。\nC. オフチェーンのデータ検索をオンチェーン送信にリンクする統合フローで、「配信」イベントの正確な更新を保証します。\nD. オフチェーンフェッチャーとオンチェーンオラクルが一緒に動作する方法を説明するドキュメント.",
+      "criteria": "A1. オフチェーンのデータフェッチャーは、選択した物流APIから出荷状況の更新を正常に取得または受信します。\nB1. Oracle契約は、PIIを露出せずに出力で定義されているハッシュされた出荷データを正しく保存します。\nC1. 実質の配達でき事を反映した正確なオンチェーンの提出のフェッチャーおよびoracleの結果間の統合された流れ。\nD1. オフチェーン/オンチェーンワークフローを記述するドキュメントを公開しています.",
+      "report": "A2. オフチェーンのデータフェッチャーとオラクル契約のソースコードを含むパブリックリポジトリへのリンク。\nhttps://github.com/tx3-lang/shipping-oracle\n\nB2. APIから収集した出荷データを正確にオンチェーンに提出するビデオウォークスルー。\nhttps://youtu.be/1w5WL-xL8E0\n\nC2. パブリックブロックチェーンエクスプローラーにおけるオラクル取引の例へのリンク。\n- 公開スクリプト: https://preview.cexplorer.io/tx/8e1777358328c2da42309379bf0a38baeb6312826c33b6ffc814175f32a63146\n- ブーツストラップGov:https://preview.cexplorer.io/tx/3aa6f843e11db1a7f33f1b456ce6a61c7fee5bf82dd484ff26b5e52462fa4387\n- 履歴データ: https://preview.cexplorer.io/tx/22b5939db715a6a59c544a9d45c38687fd57ca7d9a4429b85c64659999ea9bc0\nhttps://preview.cexplorer.io/tx/65f4383a5d687eabf2ff633621ee7ca2f1bad38227c7f7a8f23b0157e708a6cd (ウォークスルービデオから)\n\nD2. オフチェーン/オンチェーンのワークフローを説明するドキュメントへのリンク。\nhttps://github.com/tx3-lang/shipping-oracle/blob/main/onchain/README.md\nhttps://github.com/tx3-lang/shipping-oracle/blob/main/tx3/README.md\n\nE2.データの完全性および提出の正確さを検証するテストレポート。\nhttps://github.com/tx3-lang/shipping-oracle/actions/runs/25189877404"
+    },
+    {
+      "no": 3,
+      "promise": "A. 出荷口腔をアプリケーションやサービスに統合する簡単な方法を提供するSDK\nB.「配信」イベントやタイムアウトに基づいて、自動的に資金を解放または返金するエスクロー契約テンプレート。\nC. e-コマースフロー内での出荷オラクルの実用的なエンドツーエンドの使用を実証する統合例。\nD. SDK、escrowテンプレート、および統合例の使用方法を説明するドキュメント.",
+      "criteria": "A1.SDKは、開発者が注文やアプリケーションイベントをオンチェーン出荷追跡の約束にシームレスにリンクできるようにします。\nB1. エスクロー契約テンプレートは、「配信済み」イベントやタイムアウトに基づいてファンドのリリースまたは返金を自動的にトリガーします。\nC1. ユーザがインテグレーション例を実行し、oracle を使ってフルエンドツーエンドフローを実証することができます。\nD1. SDK、エスクローテンプレート、統合例のドキュメントを公開しています.",
+      "report": "A2. SDK、escrowテンプレート、統合例を含むパブリックリポジトリへのリンク。\n- SDK: https://github.com/tx3-lang/shipping-oracle/tree/main/sdk\n- Escrow: https://github.com/tx3-lang/tx3-ecommerce-template/tree/main/aiken\n- 統合: https://github.com/tx3-lang/tx3-ecommerce-template/blob/main/docs/integration-escrow.md\n\nB2. escrowテンプレートが配信とタイムアウトのシナリオで期待どおりに動作することを実証するテスト結果。\n- Escrow テスト https://github.com/tx3-lang/tx3-ecommerce-template/actions/workflows/aiken-check.yml\nチェーン証拠:\nリリースTx:fb4de921c3b49bf31e158886c425d0130b792c674d78bf090c6615be30d870f6\n- 払い戻し軸: c7416989abee2b059aefcaf254cf39c4e7e00712c3e35f25525b0f4ab7bd4\n\nC2. SDK と escrow コントラクトのテンプレートを使用して、エンドツーエンドの統合フローを実証するビデオウォークスルー。\nhttps://youtu.be/VoyLn7WSPXo\n\nD2. ドキュメントへのリンク\n- 主なエントリポイント(アーキテクチャ、API、データタイプ、すべてのリンク): https://github.com/tx3-lang/shipping-oracle/blob/main/README.md\n- SDK ドキュメント:\nhttps://github.com/tx3-lang/shipping-oracle/blob/main/sdk/rust/README.md\nhttps://github.com/tx3-lang/shipping-oracle/blob/main/sdk/typescript/README.md\n- 統合ガイド(エンドツーエンドフロー、信頼モデル、ステータス→トランスレーションマッピング)\nhttps://github.com/tx3-lang/tx3-ecommerce-template/blob/main/docs/integration-escrow.md\n- Escrowの型板/オンチェーンの文書(deploy、lifecycle、信頼モデル):\nhttps://github.com/tx3-lang/tx3-ecommerce-template/blob/main/docs/advanced-onchain.md\n- テスト ガイド:\nhttps://github.com/tx3-lang/shipping-oracle/blob/main/TESTING.md"
+    },
+    {
+      "no": 4,
+      "promise": "A. 完全な軌道システムのための公に利用できるソースコード\nB. 公開可能なドキュメントと統合例。\nC. プロジェクトの最終出力を示すクローズアウトビデオ。\nD. プロジェクトプロセスと最終結果を説明するクローズアウトレポート.",
+      "criteria": "A1. 完全な船積みのoracleシステムは船積みの更新のオフ・チェーンを取り、提案で指定されるように対応する証明のオン・チェーンを提出するのに使用することができます。\nB1. ドキュメントは、開発者が追加のガイダンスなしで、Oracleコンポーネントをセットアップおよび統合することができます。\nC1. クローズアウトビデオは、触媒ガイドラインに従います。\nD1. クローズアウトレポートは、触媒ガイドラインに従います.",
+      "report": "A2. Githubリポジトリで利用可能なソースコード: https://github.com/tx3-lang/shipping-oracle\nB2. ドキュメントサイト: https://github.com/tx3-lang/shipping-oracle/blob/main/README.md\nC2. YouTubeにアップロードされた動画を閉じる:https://youtu.be/UciCpJKildE\nD2. Googleドライブにアップロードされたレポートを閉じる:https://drive.google.com/file/d/1BHuZKGmTjqZXjgN1tSqvbIGgHO8hcX5/view?usp=sharing"
+    }
+  ]
+}

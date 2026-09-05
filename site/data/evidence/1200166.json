@@ -1,0 +1,65 @@
+{
+  "title": "Open Platform to code, run, test, learn & teach Python OpShin Smart Contract",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 15000,
+      "promise": "- Online learning modules for Python/OpShin coding problems.\n- Basic cloud-based development environment (IDE) for Python Opshin code snippets\n- Successfully launched beta version with sample coding exercises using Python Opshin",
+      "criteria": "- Online learning modules for Python/OpShin coding problems: user can create Python Opshin coding problems with predefined test cases and allow others to solve them by writing code directly on the system\n- Basic cloud-based development environment (IDE) for Python Opshin code snippets: user can create Python Ophisn code snippets, save on the cloud and share them with each others\n- Successfully launched beta version with 10+ sample coding exercises",
+      "report": "・10 Opshin coding exercises (more description updated. The exercise Gift contract and Gift contract 1 are different): https://danolearn.com/en/problems/questions?category=760 \n・Demo Video: Guide to create & run Opshin problems (voice added): https://youtu.be/dVqS6DhH_ZU \n・Online IDE support code snippets: \n・Online IDE link: https://danolearn.com/en/ucode/ \n・Code snippet examples: https://danolearn.com/en/ucode/test-64013 \n・User guides:\n・Guide for creating Opshin coding exercises: https://danolearn.com/en/blog/creating-opshin-exercises-with-automated-test-on-danolearn-4027 \n・How to solve Opshin problem on Danolearn: https://danolearn.com/en/blog/how-to-solve-opshin-problem-on-danolearn-4029 \n・How to Create & Share Opshin Code Snippets: https://danolearn.com/en/blog/how-to-create-share-opshin-code-snippets-4037 \n・For content not accessible with a student account: Certain features, such as the 'Manage' button, are only available to users with a teacher or admin role. To facilitate the review process, we have created a dedicated teacher account for the reviewers and the Catalyst team. This will allow to access all necessary functions, including managing courses, creating content, and testing features that are restricted for student accounts. Account: projectcatalyst@gmail.com, password: catalyst@123\n・More explanation\n・'Server internal error. Please try again later!' when clicking 'Run Code': This error occurs because running Opshin code in the playground is not yet enabled for both the Online IDE and Coding Exercises. Coding exercises execute test cases when questions are set up, while the Online IDE runs script tests on the client side. This means you must include unit test cases in your code. This functionality will be enhanced in the next milestone. Currently, the Online IDE only supports writing code snippets and sharing them with others\n・Programming Language Selector Pop-up Missing Opshin (Fixed): Initially, the Online IDE’s language selector did not display the Op",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 18,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 15000,
+      "promise": "- Launch the first smart contract development course using Python/Opshin on the learning platform.\n- Feedback collection & improvements",
+      "criteria": "- The course is launched publicly on the learning system and announced on the website, X, Telegram. The course's curriculum includes some aspects of Smart Contract Development with Python/Opshin as the following:\n + Language fundamentals: explanation and examples of basic variable types and functions\n + Coding exercises with predefined test cases (for auto-judging) to test and check the explained concepts\n + Smart contract development with real-world examples\n- Achieve 100+ learners enrolled in the course, and at least 50% of them completed 50% of course progress recorded by the learning syste",
+      "report": "・Opshin course link: This course content is adapted from OpShin (opshin.dev) (github.com/opshin) (Permission obtained) https://danolearn.com/en/course/opshin-programming-language-for-smart-contracts-2050 \n・Announcement Links:\n・Blog\n・X\n・Facebook1, Facebook2\n・Telegram\n・Course content Inventory: \n・The Opshin Course includes:\n・8 Chapters\n・24 Lectures (Text format)\n・10 Exercises\n・Topics Covered:\n・1: Introduction\n・2: Getting Started\n・3: Understanding EUTXO\n・4: Language Tour\n・5: Smart Contract Tour\n・6: Common Issues\n・7: Additional Resources\n・8: Time To Practice\n・Learner’s enrollment and progress\n・Report link: Email addresses of participants are masked\n・Total participants until now: 160\n・Participants with progress > 50%: 99\n・Feedback from learners\n・Form link\n・Response\n・Fix bugs (as mentioned in M1):\n・\"There is no feedback on why a test failed or passed\" (Image 1, Image 2): The reason the sample test feedback does not display input/output is that we write test cases in code rather than inserting input/output test cases manually\n・\"Submissions tab on the left gives an error \"No have access\" (Image) This issue has been fixed. You can now view the submissions of exercises submitted",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "8",
+      "cost": 15000,
+      "promise": "- Successful execution of the hackathon\n- Feedback collection & improvements",
+      "criteria": "- The hackathon is successfully conducted, attracting 100+ participants. The Hackathon will consist of multiple Opshin exercises (language features, useful helper functions, validators...) that need to be solved during a specific time. Preparing for and participating in this Hackathon will help quickly improve Opshin language proficiency and problem-solving skill using Opshin\n- Feedback from at least 20 hackathon participants must be collected. This may contain feedback about the learning system, the course content, or incident reports. If there are incidents reported, improvements should be d",
+      "report": "A. Output: Successful execution of the hackathon\nAcceptance criteria: \n・A total of 94 participants joined the hackathon, which was slightly below the acceptance criteria of 100+\n・While Opshin leverages the accessible syntax of Python, it represents a specialized domain within blockchain development (Smart Contracts). As Opshin is an emerging technology in its early adoption phase, the learning curve naturally filtered the audience. We attracted 94 highly committed developers—quality early adopters—rather than a broad, casual audience. This is evidenced by the high engagement in Milestone 4\n\nEvidence: \n・Opshin Hackathon announcement:\n・Blog: Link\n・Telegram: https://t.me/danolearn_community \n・Hackathon: Link . Mapping of Aspects within Challenges: Across all 5 questions of the hackathon, the elements of language features, modular logic, and validator requirements are deeply integrated. Therefore, all 34 participants who passed the minimum threshold and received rewards are exactly the ones who successfully achieved both the language and modular logic challenges.\n・You can using this temporary testing account:\n・Username/Email: opshin_temporary@gmail.com\n・Password: opshin_temporary\n・Language Features (Syntax & Primitives):\n・Bitwise Ops: XOR Affinity Oracle. - question 2\n・List Processing: reverse, fold, and append in Chimpanzini Challenge. - question 3\n・Type Handling: Navigating ScriptContext and Datum across all question ( Smart Contract Validation Task )\n・Useful Helper Functions (Modular Logic):\n・calculate_rizziness: Standalone weighted sum logic in Chimpanzini Challenge - question 3\n・Set comparison utility - This validator ensures that none of the consumed UTxO addresses appear again as output addresses in the same transaction. in Chain of Purity - question 5\n・Validators (On-chain Enforcement): Across all hackathon questions, there is a mandatory \"Validation Task\" or \"Validator requirement\" section.\n・Revenue Optimization - question 1 : Validates mathematical claims.\n・Ma",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 16,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "9",
+      "cost": 15000,
+      "promise": "- Officially launch a fully functional platform engine enabling comprehensive Python and OpShin code support\n- Stimulate developer engagement through weekly OpShin coding challenges with competitive leaderboards\n- Implement a weekly rewards program incentivizing top leaderboard performers with ADA prizes\n- Final closeout report\n- Final closeout video",
+      "criteria": "- Official launched with full features: online IDE, interactive Opshin coding problems (auto-judge by test cases), courses with video, lectures and quizzes\n- Achieve a minimum of 10 active developer participants in weekly OpShin code challenges, ensuring reward distribution in 4 consecutive weeks at least, with 500 ADA reward each week.\n- Produce a comprehensive project closure report and video summarizing project milestones, outcomes, and key learnings\n- Final closeout report is publicly available\n- Final closeout video is publicly available",
+      "report": "A. Output: functional platform engine enabling comprehensive Python and OpShin code support\nAcceptance criteria: \n・Officially launch a fully functional platform engine enabling comprehensive Python and OpShin code support\n\nEvidence:\n・Online IDE: https://danolearn.com/en/ucode/ (Guide)\n・Interactive Opshin coding problems (auto-judge by test cases) (Totally 27 problems, including 10 problems for practicing, 17 problems for hackathon/challenges : https://danolearn.com/en/problems/questions?category=760\n・Courses with video, lectures and quizzes: https://danolearn.com/en/course/opshin-programming-language-for-smart-contracts-2050 (Demo video added to chapter Danolearn Guides)\n・Demo Video: Guide to create & run Opshin problems: https://youtu.be/dVqS6DhH_ZU\n\nB. Output: Organize weekly OpShin code challenges\nAcceptance criteria: \n・Achieve a minimum of 10 active developer participants in weekly OpShin code challenges, ensuring reward distribution in 4 consecutive weeks at least, with 500 ADA reward each week\n\nEvidence:\n・Opshin Challenge 1, Opshin Challenge 2, Opshin Challenge 3, Opshin Challenge 4: View leaderboard of each challenge by click on the button “Leaderboard” at the top left of screen\n・Reward Distribution:\n・Transaction ID\n\nC. Output: Improvements on feedbacks\nAcceptance criteria:\n・Based on feedback in M3 need to be more transparent in the result, we developed a live leaderboard feature\n・Update guide videos for creating & doing Opshin Exercise on Danolearn\n\nEvidence:\n・https://danolearn.com/en/course-study/opshin-programming-language-for-smart-contracts-2050?l=69949&u=76988\n・(image)\n\nClose out report (Public): https://drive.google.com/file/d/116jJAiVR2uhtHUcQGBclevjgU-y9vzbi/view?usp=sharing\nClose out video: https://www.youtube.com/watch?v=MxjhKBQC4-c",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 22
+    }
+  ]
+}

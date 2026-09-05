@@ -1,0 +1,45 @@
+{
+  "title": "Better Cardano Blockchain Insights",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 5000,
+      "promise": "ADR (Architectural Decision Record) short-document indicating chosen data storage/retrieval alternative solution aiming to provide better scalability for our heaviest queries, currently aiming on Cardano DB Sync. For this choice, consider scalability, ease of use, cost and last, but not least, centralization.",
+      "criteria": "Short ADR document should contain a benchmark of potential solutions, favoring non-functional aspects of the application (scalability, ease of maintenance and costs) against query performance.",
+      "report": "The following document describes the ADR (Architecture Decision Record) indicating the choice for BigQuery as the new cache backend for Cardano Blockchain Insights: https://docs.google.com/document/d/1UDCY21mGuA5lg-bRSHNqVqzVK55Id5b2V4r7M1_Mfes/edit?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 7500,
+      "promise": "The second milestone consists of achieve a better stability on our ingestion system using the new backend proposed on the milestone 1. We also plan to provide some new insights on Cardano Blockchain Insights. The outputs in this milestone are:\n・Better stability of ingestion of data and performance issues by reviewing the code and fixing places where ingestion often fails, analyse root causes\n・Add metrics and charts related to Catalyst Fund 11 (as we already did for Fund 6).\n・Add 3-5 new metrics (chose between: effective-k, tokens metrics, pool groups with skin in the game, google trends, building on Cardano metrics, etc.) as part of the improved monitoring of the blockchain goal.",
+      "criteria": "・Ingestion failure rate is reduced, providing an SLO of 95% of days without ingestion issues.\n・Catalyst Fund 11 metrics are added\n・3-5 new metrics (from new data backend) are added to Cardano Blockchain Insights.",
+      "report": "As proposed on this milestone the following was made on the Cardano Blockchain Insights Dashboard (https://lookerstudio.google.com/reporting/3136c55b-635e-4f46-8e4b-b8ab54f2d460/page/p_wxcw6g0irc)\n・We included ingestion charts to track the failure rate of this process. We added it not so long, so it has just a few data points so far, and it is a hidden page on our dashboard (mainly, for us, not interesting for the users). This screenshot (https://pasteboard.co/VgqkBIE2atEW.png) indicates how this page looks like (but feel free to ask us in case you want to check live).\n・In the back end, we are fully using BigQuery as the main query engine. No query is now being done on Cardano-DB sync instance and this component was decommissioned from our stack. We are also using BigQuery as the main cache component of the Data Studio dashboard (All those BigQuery specific queries will be open-sourced on the last milestone), but for the cases where data from external APIs are used as data-source. \n・We included 2 new charts about NFTs minted on Cardano (https://lookerstudio.google.com/reporting/3136c55b-635e-4f46-8e4b-b8ab54f2d460/page/p_erkks8k6id). We considered as NFTs minted tokens with an unique policyId and fingerprint pairs, and additionally, being minted with only one unit across all epochs. The new usage of BigQuery in the back end was crucial to execute this query in a performant fashion.\n・We prepared the smart contracts charts to the upcoming plutus V3 scripts (however no data about these was published yet).\n・We refactored our stake pool groups charts (https://lookerstudio.google.com/reporting/3136c55b-635e-4f46-8e4b-b8ab54f2d460/page/p_6xvww3zcoc) to use the pools groups published on https://github.com/cardano-community/pool_groups . We will use this repository as main reference for pool groups and contribute to it to add the main missing ones as next steps. \n・We included charts about Catalyst Fund11 and Fund12 under the \"Catalyst\" tab (10 new pages + an overview page ht",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 12500,
+      "promise": "Provide queries and documentation of how we calculate metrics as our commitment to provide educational content to the community. We assume that the feedback from the community on this set of open source queries can help to improve the quality of the existing insights and validate the milestones indicated on this proposed.\nAs an output of this milestone, these queries will be documented and exposed through a Github repository.",
+      "criteria": "All queries from internal data sources (non-API based) are documented and exposed in a Github repository.",
+      "report": "All queries using the Big Query backend were open-sourced (MIT License) in this public Github repository: https://github.com/Cardano-Fans/cbi-queries.\nWe described associated examples on Cardano Blockchain Insights using the data obtained for each query.\nAlso attaching the Project Close-out Report link (https://docs.google.com/document/d/1jnoXkbYvn3V44ReZGGsf8To--qe861NJpbhKZDkVVQY/edit?usp=sharing) and Project Close-out Video link (https://www.youtube.com/watch?v=mkhDEVTcBF4).",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

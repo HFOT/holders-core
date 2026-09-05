@@ -1,0 +1,59 @@
+{
+  "title": "Market Making and High Frequency Trading on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 12000,
+      "promise": "In-depth research and understanding of the technical requirements and challenges for the trading bot framework.\nDeliverables:\n・Comprehensive document detailing the requirements and technical needs for the framework\n・Identification of potential challenges and solutions.",
+      "criteria": "The document/report provides a clear and concise overview of the technical requirements, potential challenges, and solutions.",
+      "report": "Thank you for your input! In response to the feedback received:\n・My question is about the report. It appears to be light on \"solutions\": The previous version of our report may have seemed light on concrete solutions. Therefore, we have added a \"Solutions\" section to the report, which outlines our approach based on the technical requirements and challenges. However, it's important to note that some aspects of these solutions, particularly in section 5.2, are inherently linked to the specific implementation details. These will become more concrete upon completing the coding phase.\n・What are the specific solutions you are bringing to the market that the existing listed solutions do not accomplish?: Our main contribution is developing an open-source trading bot tailored to Cardano and focusing on improving liquidity on MuesliSwap. This solution addresses the current lack of trading bot frameworks on Cardano. Since our code is open-source, users will be able to adapt this code with custom strategies or connectors to other exchanges. We have added this to the report in Section 5.\n\nOur updated report detailing technical requirements, potential challenges and solutions is available using the same link: \nhttps://drive.google.com/file/d/1pNR7mbinoh-9AN4z7KfjZXmj0O91aYEM/view?usp=sharing\nThe link to the announcement is still available here:\nhttps://twitter.com/MuesliSwapTeam/status/1732495527260893696",
+      "kinds": [
+        "doc",
+        "social"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 18000,
+      "promise": "Design and development of an open-source trading bot framework tailored for Cardano. \nDeliverables:\n・Open-source trading bot framework.\n・Release of the open-source code on GitHub.",
+      "criteria": "・Successful development of a functional trading bot framework.\n・The framework should be compatible with Cardano.",
+      "report": "We have successfully developed our bot framework and made it open-source: \nhttps://github.com/MuesliSwapTeam/muesliswap-market-maker\n\nThe repository contains:\n・The functional code for our trading bot framework.\n・Documentation of all the files, functionalities, and comments explaining the code.\n・Instructions on all steps needed to install, set up, and configure the framework.\n\nThe link to the announcement is available here:\nhttps://twitter.com/MuesliSwapTeam/status/1763309433126371539\n\nFollowing the outlined milestones, the next step involves completing the framework's integration with MuesliSwap.",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 15000,
+      "promise": "Integrating the bot framework with MuesliSwap\nDeliverables:\n・Integration of the bot framework with MuesliSwap, i.e., providing users with a connector to the MuesliSwap DEX",
+      "criteria": "The existing bot infrastructure in the open-source GitHub repository is augmented such that the bot can be successfully connected to the MuesliSwap DEX.",
+      "report": "Milestone 3 Completion Evidence:\nWe have successfully integrated the bot with MuesliSwap: \nThe updated code is available at:\nhttps://github.com/MuesliSwapTeam/muesliswap-market-maker\nThe repository contains:\n・The functional and updated code for our bot.\n・Documentation of the integration. \n・Documentation of all files, functionalities, and comments explaining the code.\n・Configuration and documention for:\n・The bot and its general operations: https://github.com/MuesliSwapTeam/muesliswap-market-maker/blob/main/configs/config.py\n・The MuesliSwap connector: https://github.com/MuesliSwapTeam/muesliswap-market-maker/blob/main/configs/msw_connector_config.py\n・The Trading Strategies: https://github.com/MuesliSwapTeam/muesliswap-market-maker/tree/main/configs/strategies\n・Instructions on all steps needed to install, set up, and configure the framework.\n\nLink to video demonstrating that the bot framework can be connected and is working as expected on MuesliSwap:\nhttps://drive.google.com/file/d/1SinjLFFdgZSlvKIx-dno2RqnTdnNNQ0T/view?usp=sharing\n\nThe link to the announcement is available here:\nhttps://twitter.com/MuesliSwapTeam/status/1785397486636474693",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 15000,
+      "promise": "Deliverables:\n・Multiple customizable templates supporting various trading strategies.\n・Release of these templates as part of the bot framework on GitHub.",
+      "criteria": "・Availability of customizable templates to a range of trading strategies.",
+      "report": "For this final milestone, we provide the following:\n・The implementation of customizable templates for additional trading strategies (\"aggressive\", volume-based, trend following), see latest commits in our public repository.\n・Documentation and examples for templates has been added here.\n・Community announcement/summary post on Twitter/X.\n・Publicly available close-out report.\n・Publicly available close-out video on our YouTube channel.\n\nCompared to the previous submission, two fixes have been made (thanks to the reviewer for pointing these out):\n・An open-source license has been added to the repo (GPL-3.0).\n・The date in the report has been adjusted to match the project completion month (September 2025).",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

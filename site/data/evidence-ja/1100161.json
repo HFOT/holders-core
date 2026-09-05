@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "- Hollow Framework用の公開ソースコード\n- Hollow Frameworkの公開使用文書\n- パブリックラスト・クレートがcrates.ioでリリース\n- フレームワークで構築されたHollowアプリケーションをテストするためのモックランタイムコンポーネント",
+      "criteria": "開発者は、利用可能なドキュメントに従って、モックCardanoネットワークと相互作用する基本的なHoloアプリケーションを構築することができます.",
+      "report": "注意: 他のライブラリやプロジェクトとの競合を命じることにより、”Hollow”から”Balius”に名前を付ける必要があります。 スコープが変更されていない、名前だけ。 Hollow に言及する以前のリンクは、バリスの名前の下の対応するコンテンツにリダイレクトされます。\n次の Github リポジトリでは、プロジェクトのフレームワークコンポーネントのソースコードが完成します。\nhttps://github.com/txpipe/balius\n以下のサイトでは、Balius (ex Hollow) フレームワークのインストールと使用手順で公開文書を見つけることができます。\nhttps://balius.txpipe.io\n次のリンクでは、開発者がRustプロジェクトに依存としてフレームワークを追加するために使用できる公開のRust crateがあります。\nhttps://crates.io/crates/balius をフォロー\n次のリンクでは、マイルストーンの成果物と、フレームワークを使用して基本的なアプリをコードし、コンパイルする方法の簡単な例を記述するビデオになります。\nhttps://youtu.be/z 34DrO9MGU"
+    },
+    {
+      "no": 2,
+      "promise": "- Hollow Runtimeの公開ソースコード\n- Hollow Runtimeの公開使用文書\n- Hollow Runtimeのバイナリリリースとドッカーイメージ",
+      "criteria": "開発者は、Hollow RuntimeをDockerコンテナとしてデプロイし、利用可能なドキュメントに従ってアプリケーションをホストすることができます.",
+      "report": "注意: 他のライブラリやプロジェクトとの競合を命じることにより、”Hollow”から”Balius”に名前を付ける必要があります。 スコープが変更されていない、名前だけ。 Hollow に言及する以前のリンクは、バリスの名前の下の対応するコンテンツにリダイレクトされます。\n以下の Github リポジトリでは、プロジェクトのランタイムコンポーネントのソースコードが完成します。\nhttps://github.com/txpipe/balius\n以下のサイトでは、バリスランタイムのインストールと使用説明書が記載されています。\nhttps://balius.txpipe.io\n次のリンクでは、Balius Runtimeのバイナリリリースをインストールする手順が表示されます。\nhttps://github.com/txpipe/balius/releases/tag/v0.2.0\n以下のリンクでは、バリスランタイムを含むパブリックな Docker Image が見つかります。\nhttps://github.com/txpipe/balius/pkgs/container/baliusd\n次のリンクでは、マイルストーンの成果物と、バリスのランタイムを使用して基本的なdAppをコードして実行する方法の簡単な例を記述するビデオになります。\nhttps://youtu.be/ERqbIZ0fSyk"
+    },
+    {
+      "no": 3,
+      "promise": "- Hollow CLIの公開ソースコード\n- Hollow CLIの公開可能なドキュメント\n- Hollow CLIの公開バイナリリリース",
+      "criteria": "- 開発者は、利用可能な文書に従って、ローカル環境にあるHolo CLIをインストールすることができます。\n- 開発者は、CLIと利用可能なドキュメントを使用して、ホロウプロジェクトをSafaffold(別名:セットアップ基本構造)することができます。\n- 開発者はCLIと利用可能なドキュメントを使用して、Holoプロジェクトをテストすることができます.",
+      "report": "HollowのMilstone 3に関連付けられた成果物への対応可能なリンクは以下をご覧ください。\n・Hollow CLIの公開コードリポジトリへのリンク:https://github.com/txpipe/balius/tree/main/balius\n・Hollow CLIの公開使用文書へのリンク:https://balius.txpipe.io/balius\n・Hollow CLIの公開バイナリリリースへのリンク:https://github.com/txpipe/balius/releases/tag/v0.3.4\n・CLIがHollow dAppを開発する方法を示すビデオ:https://youtu.be/yJOaF7r0eyg\n\nお問い合わせ!"
+    },
+    {
+      "no": 4,
+      "promise": "- KubernetesクラスターにHollow Runtimeインスタンスをインストールするスクリプトのプロビジョニング\n- ホストHollow dAppsへのDemeterのプラットホームによるアクセス",
+      "criteria": "開発者は、Demeter Web Console を使用して、Hollow SDK を使用して構築された dApp をデプロイおよびホストすることができます",
+      "report": "マイルストーンの出力\n・KubernetesクラスターにHollow Runtimeインスタンスをインストールするスクリプトのプロビジョニング\n・Demeterプラットフォーム経由でHollow dAppをホストするアクセス\n\n受諾条件\n・Demeter Web Console を使用して Hollow SDK を使用してビルドした dApp をデプロイしてホストする\n\nマイルストーン完了の証拠\n・Kubernetesのプロビジョニングスクリプトで公開されているソースコード: https://github.com/demeter-run/ext-balius\n・テラフォームモジュールのインストールガイド:https://github.com/demeter-run/ext-balius/tree/main/bootstrap\n・ライセンスの拡張子:https://github.com/demeter-run/ext-balius?tab=Apache-2.0-1-ov-file\n\nDemeter を使用して Hollow dApp を展開する方法を示すビデオ\nhttps://youtu.be/ew-5NPMgA2A"
+    },
+    {
+      "no": 5,
+      "promise": "- Hollow SDKを使用したエンドツーエンドのdApp用のソースコード\n- エンドツーエンドdAppのライブデモインスタンスが公開されています。\n- 開発プロセスと関連する結果を説明するレポートを書いてください。\n- Demeterプラットフォームでホストされているインスタンスの利用可能な使用メトリックを示す定量レポート.",
+      "criteria": "- 開発者は、Hollow SDKで利用可能なアーティファクトを使用してdAppを構築することができます\n- エンドツーエンドのdAppは、新しい開発者をオンボーディングするための合理的な例を提供します\n- レビュアーは、すべての必要なタスクが完了していることを確認する開発プロセスを監査することができます。\n- レビュアーは、Demeterプラットフォームでホストされているインスタンスの使用メトリックを高く評価することができます.",
+      "report": "- 完全なエンドツーエンドdApp例でソースコードリポジトリへのリンク\nBaliusのオープンソースコードリポジトリ\n- パブリックにアクセスできるdAppのライブデモインスタンスへのリンク\nBaliusとDemeterを使ったエンドツーエンドのアプリケーションのデモ\nアプリケーション(アテリア通知ボット)はDiscordに住んでいます\n- 開発プロセス全体を要約し、プロジェクトの重要な結果と結果を強調するビデオ録画\nBaliusのクローズアウトビデオ(主な成果物と結果のデモ)\n- プロジェクト全体で共有されるすべての関連リンクのリスト\n・Github公開リポジトリ\n・ドキュメント\n・デメーターランタイムサービス\n・Baliusコアコンポーネントのデモ\n・Discord専用チャンネル\n・エンドツーエンドの例ソースコード\n・エンドツーエンド例デモ\n・クローズアウトレポート\n・クローズアウトビデオ\n\n- プロジェクトの開発プロセス全体(方法論、使用されるツール、課題、関連調査、インサイトを含む)を説明する公開可能なレポート\n開発報告\n- Demeterプラットフォームでホストされているインスタンスの使用メトリックを示す定量レポート\nBaliusランタイムは、管理されたサービスとしてDemeterに統合され、開発者が最小限のオーバーヘッドでヘッドレスdAppをデプロイし、操作できるようにしました。 リリース以来、Cardanoの開発者コミュニティ内で早期採用を見てきました。開発中のテストと検証のためにTxPipeチームによって積極的に活用されています。\n主な使用メトリック:\n・バリスワーカーによるデメーターの合計数 = 16\n・Demeter = 36 に配備されたバリスの労働者の総数\n\nUTxOs は、Demeter にデプロイされた Balius Workers によって、最後の 7 日間で処理されます(毎時):\nhttps://drive.google.com/file/d/1wkTiSbfnrDPME3VVVBw96zXANxjoKW ma/view?usp=sharing"
+    }
+  ]
+}

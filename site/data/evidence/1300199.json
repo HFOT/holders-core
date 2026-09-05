@@ -1,0 +1,84 @@
+{
+  "title": "zkFold x Asterizm - Interoperability Solution",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Context: We are deploying Asterizm to enable cross-chain operations and the launch of cross-chain native (omnichain) tokens, which will attract more users, liquidity, and TVL to the Cardano ecosystem.\nTask: Create documentation for the Asterizm solution on Cardano, specifying how exactly it works (cross-chain transaction flow) \nOutputs: Produce Asterizm solution specification for deployment on Cardano: well-structured documentation for the solution being deployed",
+      "criteria": "Asterizm technical solution specification for Cardano can be found in the repo. The document will cover on-chain and off-chain development aspects and Complete Cross-Chain Transaction Flow with diagrams.",
+      "report": "Asterizm technical solution specification has been completed and can be found in the repo: \n・https://github.com/zkFold/project-catalyst-reports/blob/main/Asterizm/M1/zkFold%20x%20Asterizm%20-%20Interoperability%20Solution.pdf\n\nThe document covers on-chain and off-chain development aspects and complete Cross-Chain Transaction Flow with diagrams. On top of that, we have added additional diagrams as requested and addressed previous comments from reviewers.",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 120000,
+      "promise": "Context: We are deploying Asterizm to enable cross-chain operations and the launch of cross-chain native (omnichain) tokens, which will attract more users, liquidity, and TVL to the Cardano ecosystem.\nTask: Develop a set of Plutus smart contracts that implement Asterizm protocol\nOutputs: A set of Plutus smart contracts",
+      "criteria": "A set of Plutus smart contracts and a description of their logical interconnections to facilitate transactions can be found in the repo",
+      "report": "We have completed Milestone 2! The main script is located here:\n・https://github.com/zkFold/zkfold-cardano/blob/main/zkfold-cardano-scripts/src/ZkFold/Cardano/UPLC/Asterizm.hs\n\nWe have already update the documentation how 3 contracts can be implemented with just a single Plutus script that enables the posting of signed messages on Cardano. This script will be used by both the relayer and the client servers:\n・https://github.com/zkFold/project-catalyst-reports/blob/main/Asterizm/M1/zkFold%20x%20Asterizm%20-%20Interoperability%20Solution.pdf\n\nIt provides a very efficient way for posting verified signed messages on-chain. This script will be used by both clients and relayers. It is also general enough to cover sending messages both to and from Cardano. For example, to receive a message on Cardano with the Asterizm protocol, the relayer needs to post a signed message hash, while the client needs to post the signed message.",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 120000,
+      "promise": "Context: We are deploying Asterizm to enable cross-chain operations and the launch of cross-chain native (omnichain) tokens, which will attract more users, liquidity, and TVL to the Cardano ecosystem.\nTask: Implement off-chain code for Asterizm transactions on Cardano\nOutputs: off-chain code for Asterizm transactions on Cardano",
+      "criteria": "・Off-chain code for Asterizm transactions on Cardano can be found in the repo\n・Documentation of the architecture and logic for off-chain Asterizm components",
+      "report": "Off-chain code for Asterizm transactions on Cardano, workflow and documentation are ready as the part on Milestone. Those documents can be found in the repo:\n・https://github.com/zkFold/zkfold-cardano/blob/vlasin-asterizm-m3/zkfold-cli/app/ZkFold/Cardano/Asterizm/Transaction/Minting.hs\n・https://github.com/zkFold/project-catalyst-reports/blob/main/Asterizm/M3/Asterizm%20Workflow.pdf\n・https://github.com/zkFold/project-catalyst-reports/blob/main/Asterizm/M1/zkFold%20x%20Asterizm%20-%20Interoperability%20Solution.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 85000,
+      "promise": "Context: We are deploying Asterizm to enable cross-chain operations and the launch of cross-chain native (omnichain) tokens, which will attract more users, liquidity, and TVL to the Cardano ecosystem.\nTask: Implement CLI for the Asterizm integration (transaction building and posting + data retrieval from Cardano)\nOutputs: CLI for the Asterizm integration",
+      "criteria": "・CLI for the Asterizm integration can be found in the repo\n・Documentation of the CLI for the Asterizm integration, including description of logic, scheme of transaction building",
+      "report": "We have updated PoA and included transaction construction diagram as was previously requested:\n\nAsterizm CLI code files can be found here:\nhttps://github.com/zkFold/zkfold-cardano/tree/main/zkfold-cli/app/asterizm\n\nAsterizm CLI documentation is provided here:\nhttps://github.com/zkFold/zkfold-cardano/blob/main/e2e-test/asterizm/Asterizm.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "12",
+      "cost": 25000,
+      "promise": "Context: We are deploying Asterizm to enable cross-chain operations and the launch of cross-chain native (omnichain) tokens, which will attract more users, liquidity, and TVL to the Cardano ecosystem.\nTask: Integrate Cardano into off-chain Relayer and Client software\nOutputs: Cardano integration into off-chain Relayer and Client software",
+      "criteria": "・Provide a transaction which is the evidence of Cardano integration into off-chain Relayer and Client software can be found in the repo. \n・An updated documentation will include the overall architecture of how the components of Asterizm interact with each other and the Transaction Processing Logic that describes how transactions are processed in the system, from sending, receiving to validation.",
+      "report": "The Asterizm <> Cardano integration has been completed and validated end-to-end. The relayer and client flows now support Cardano as part of the Asterizm cross-chain infrastructure, including message certification, incoming and outgoing message processing, message retrieval, unified client proof handling, trusted address validation, regular and Asterizm cross-chain hash modes, variable-length message headers, omni-token mint/burn flows, and reliable transaction submission.\n\n Public code and documentation evidence:\n - Asterizm integration CLI and end-to-end usage documentation:\n https://github.com/zkFold/zkfold-cardano/blob/main/e2e-test/asterizm/Asterizm.md\n - Integration implementation:\n https://github.com/zkFold/zkfold-cardano/tree/main/zkfold-cli/app/asterizm\n - Plutus policies used by the integration:\n https://github.com/zkFold/zkfold-cardano/blob/main/zkfold-cardano-scripts/src/ZkFold/Cardano/UPLC/Asterizm.hs\n - Reproducible E2E scripts:\n https://github.com/zkFold/zkfold-cardano/tree/main/e2e-test/asterizm\n\n Validation evidence:\n The completed integration was tested in both directions between BSC testnet and Cardano preprod.\n\n BSC to Cardano:\n - BSC client transaction:\n https://testnet.bscscan.com/tx/0xa9693ada0b0ccf1d96a0e4a7a4dc6bdf8c29eca6dcb0b765d1ac77d7cc3c1103\n - Cardano relay transaction:\n https://preprod.cardanoscan.io/transaction/65d27ce4c0686ac1e07ed63d1382585aeb0b9ccc4ed76ec7b1c5e8f10f570d49\n - Cardano client transaction:\n https://preprod.cardanoscan.io/transaction/0ac0cba017eac6c9994c977ade45ae7097a869d7df0be6bca00b9f37580b8d7d\n - Asterizm scanner:\n https://testscan.asterizm.io/detail/59d7cc5a-f0b8-4071-a865-1f0e26dd95a7\n\n Cardano to BSC:\n - Cardano client transaction:\n https://preprod.cardanoscan.io/transaction/0c0aa3aebe1ec40d03e49824377341cc09c3d782c777c3dc565406687f9b4f9a\n - BSC relay transaction:\n https://testnet.bscscan.com/tx/0x68387aa961338dd6fd90827821baeda53566af894909f101eabb6ae578972b4a\n - BSC client transaction:\n https://testnet.bscscan",
+      "kinds": [
+        "chain",
+        "code",
+        "other"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "13",
+      "cost": 75000,
+      "promise": "Context: We are deploying Asterizm to enable cross-chain operations and the launch of cross-chain native (omnichain) tokens, which will attract more users, liquidity, and TVL to the Cardano ecosystem.\nTask:\n・Deploy an omnichain (CNT) token (Cardano < > EVM). \n・Make test transactions from Cardano to EVM chain and back\n・Publish an updated dev documentation\n\nOutputs:\n・Deploy an omnichain (CNT) token (Cardano < > EVM)\n・Make test transactions from Cardano to EVM chain and back\n・Publish an updated dev documentation\n・Final close-out report\n・Final closeout video",
+      "criteria": "・The links to the omnichain (CNT) token, an updated dev documentation (including omnichain token details and processes), closeout report and video are shared publicly on our GitHub (https://github.com/zkFold/).\n・A video explaining the process is publicly available\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "The final milestone is complete. We deployed and tested the AOCT omnichain token between Cardano preprod and BNB Smart Chain testnet, updated the developer documentation, and prepared the final close-out report and video.\n\n**Close-out report:**\n\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/Asterizm/M6/1300199%20-%20Asterizm%20-%20Project%20Close-out%20Report.pdf\n\n**Close-out video:**\n\nhttps://youtu.be/WyNbu-pDDak\n\n**Updated developer documentation**\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/Asterizm/M6/1300199%20-%20Asterizm%20-%20Updated%20Developer%20Documentation.pdf\n\n**Deployed omnichain token**\n\n- BSC testnet `AsterizmOmniChainToken` contract: \n https://testnet.bscscan.com/address/0x0B350072eB26FfFB03CE0CB3DbdC26EDa2fBB207\n- Cardano preprod AOCT policy: \n https://preprod.cardanoscan.io/token/8210623dde5928f42290d397e4e5ffbb5dbb4c88c26829c604e885aa\n\n**BSC testnet → Cardano preprod test**\n\nThe source transaction succeeded, Asterizm recorded the route as finished, and valid Cardano relayer and client transactions completed the destination flow. The final Cardano transaction minted 1,000 AOCT units.\n\n- BSC initiation: \n https://testnet.bscscan.com/tx/0xa9693ada0b0ccf1d96a0e4a7a4dc6bdf8c29eca6dcb0b765d1ac77d7cc3c1103\n- Asterizm scanner: \n https://testscan.asterizm.io/detail/59d7cc5a-f0b8-4071-a865-1f0e26dd95a7\n- Cardano relay: \n https://preprod.cardanoscan.io/transaction/65d27ce4c0686ac1e07ed63d1382585aeb0b9ccc4ed76ec7b1c5e8f10f570d49\n- Cardano client mint: \n https://preprod.cardanoscan.io/transaction/0ac0cba017eac6c9994c977ade45ae7097a869d7df0be6bca00b9f37580b8d7d\n\n**Cardano preprod → BSC testnet test**\n\nThe source Cardano transaction burned 100 AOCT units, Asterizm recorded the route as finished, and the BSC relay and client-receive transactions both succeeded.\n\n- Cardano client burn: \n https://preprod.cardanoscan.io/transaction/0c0aa3aebe1ec40d03e49824377341cc09c3d782c777c3dc565406687f9b4f9a\n- Asterizm scanner: \n https://testsca",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 13,
+      "cut": true
+    }
+  ]
+}

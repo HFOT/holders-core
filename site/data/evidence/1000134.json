@@ -1,0 +1,48 @@
+{
+  "title": "Ogmios Clients in Python & C++",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 10956,
+      "promise": "Ogmios is comprised of four protocols: ChainSync, StateQuery, TxSubmission, TxMonitor. In order to provide a complete implementation of the Ogmios client in Python, each of these protocols must be implemented. Therefore, there are four key outputs associated with this milestone:\n・Implement ChainSync protocol in Python.\n・Implement StateQuery protocol in Python.\n・Implement TxSubmission protocol in Python.\n・Implement TxMonitor protocol in Python.",
+      "criteria": "The four Ogmios protocols will be considered complete when their associated unit tests are passing in our public Ogmios Python GitLab repository.",
+      "report": "We have fully implemented a Python Ogmios client. Evidence of completion:\n・Walkthrough video\n・GitLab repository\n・CI/CD job showing all unit tests are passing\n・Project documentation\n・Published library on PyPI",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 10956,
+      "promise": "Ogmios is comprised of four protocols: ChainSync, StateQuery, TxSubmission, TxMonitor. In order to provide a complete implementation of the Ogmios client in C++, each of these protocols must be implemented. Therefore, there are four key outputs associated with this milestone:\n・ Implement ChainSync protocol in C++.\n・ Implement StateQuery protocol in C++.\n・ Implement TxSubmission protocol in C++.\n・ Implement TxMonitor protocol in C++.",
+      "criteria": "The four Ogmios protocols will be considered complete when their associated unit tests are passing in our public Ogmios++ GitLab repository.",
+      "report": "We have fully implemented the C++ Ogmios client. Evidence of completion:\n・Walkthrough video\n・GitLab repository\n・Source file containing implementation of all Ogmios methods\n・CI/CD job showing all unit tests are passing\n・Project documentation",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 14608,
+      "promise": "The outputs of this final milestone will consist of user documentation, project completion report, and a video demonstrating the use of the Python and C++ Ogmios clients that were developed through this project.",
+      "criteria": "・User documentation complete.\n・Project completion report submitted.\n・Demonstration video published.",
+      "report": "Name of project and Project URL on IdeaScale/Fund\nOgmios Clients in Python & C++\nYour Project Number\n1000134\nName of project manager\nWillie Marchetto\nDate project started\n10/8/2023\nDate project completed\n4/15/2024\nList of challenge KPIs and how the project addressed them\nOpen Source Development Environment Challenge KPIs:\n・Increase the number and quality of open-source projects, tools, and frameworks\n・This project introduced two new open-source projects/tools: ogmios-python and libogmios\n・Increase the number of open-source contributions and maintainers\n・The project team is committed to continuing to provide open-source contributions to the tools developed under this project, as well as our other open-source projects.\n・Increase the visibility of open-source projects\n・The purpose of the Ogmios clients we have developed is to broaden the open-source Cardano ecosystem to a wider range of developers by improving the development experience for widely used programming languages (Python and C++)\n・Increase in collaboration in and out of the ecosystem\n・We are actively collaborating with other Cardano developers to maintain and improve the tools we have developed (e.g., Cardano Foundation, who developed the Ogmios server framework, and the pycardano development team, a popular open-source Python Cardano library)\n・Python and C++ are popular programming languages with extensive libraries and frameworks. By providing clients in these languages, the project enables developers to build a wide range of applications on Cardano, including wallets, explorers, chatbots, dashboards, and more. This expansion of the application ecosystem attracts users and businesses to utilize Cardano for their specific needs, increasing the value and utility of the network.\n・Improve adoption of Cardano technology\n・Our Ogmios clients are designed to make it easier for developers to build on Cardano. These clients enable developers to interact with the Cardano blockchain in their preferred programming lang",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 13,
+      "cut": true
+    }
+  ]
+}

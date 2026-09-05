@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "(A) 特定されたスマートコントラクトの脆弱性と課題に関する研究報告\n(B) セキュリティOracleフレームワークのアーキテクチャの概要と、このPoCプロジェクトのための詳細な計画。\n(C) オフチェーン監視システム向けAPI仕様(この作業パッケージは、元の提案でマイルストーン2の一部でした。このマイルストーンに移行し、大きな2番目のマイルストーンになるものを避けることができました。 それぞれの予算やタイミングも移動しました",
+      "criteria": "(A) 調査報告書には、Cardanoのスマートコントラクト環境への少なくとも5つの文書化された脆弱性またはセキュリティ課題の分析が含まれています。\n(B) 提案されたアプローチのアーキテクチャの概要には、コンポーネントとデータフロー図、およびさまざまなコンポーネントの簡単な説明が含まれる必要があります。 詳細なプロジェクト計画は、説明アーキテクチャのアカウントでなければなりません\n(C) オフチェーン監視システム用の API 仕様は、監視システムの機能の明確な定義を提供する必要があります",
+      "report": "https://github.com/gammer13/pcf11-security-oracles/blob/main/Milestone1/Report/milestone report.pdf\n上記は2つの章を含むマイルストーンレポートです。\n・Cardanoスマートコントラクトセキュリティの概要 - スマートコントラクトセキュリティの現状について議論し、5つの重要な脆弱性と、これらの脆弱性が悪用されている重要なインシデントを提示し、スマートコントラクトセキュリティに新たなアクティブなアプローチを提示します。\n・提案されたソリューションとプロジェクト計画のアーキテクチャを含むPoCプロジェクトの説明\n\n2 番目のアーティファクトは、潜在的なオフチェーン脅威インテリジェンスシステムのための API 仕様を持つ yaml ファイルで、このファイルは、セキュリティ Oracle と対話するために、そのようなシステムによって実装されるべき API エンドポイントを指定します。\nhttps://github.com/gammer13/pcf11-security-oracles/blob/main/Milestone1/monitoring system api spec.yaml"
+    },
+    {
+      "no": 2,
+      "promise": "(A)セキュリティ関連の情報を提供するスマートコントラクトの初期のコードベースとドキュメント\n(B) Testnet デプロイメントのアドレスと、デプロイされたコントラクトのユニットテスト\n\n査読者への注意: 元の提案の2番目のマイルストーンには、予算とスコープの面でこのマイルストーンを小さくするために移動された2つの追加の作業パッケージが含まれています -\n1) オフチェーン監視システム用の API 仕様 - 最初のマイルストーンに含まれています\n2) 模擬監視システムとの統合テスト - 3番目のマイルストーンの一部です",
+      "criteria": "ユニットテストでは、前のマイルストーンで提供されるAPI仕様で定義されているすべてのAPI機能のオンチェーンの可用性が実証されます",
+      "report": "セキュリティオラクルプロジェクトのオンチェーン部分のパブリックリポジトリへのリンク:\nhttps://github.com/projet-sentinel/sentinel-on-chain\nユニットテストは ./scripts の下にあり、API スペックで定義されているスマートコントラクトとの相互作用を実証します。\n\nアドレスとポリシーのリスト(PreProd):\n- デプロイされたオラクル(脅威データベース)とセキュリティオラクルシステムの他のスマートコントラクトコードCBOR UTxOsを保持するコントローラースマートコントラクトのアドレス:\naddr test1wz6pk0g5xtvmdm9n3v58emvnwam0aswqstademgatk396xcrex36g\n- セキュリティOracle契約のコントローラ認証トークンの通貨シンボルまたはポリシー、Oracleの完全性と妥当性を確保し、その他のスマートコントラクト:\nファックス: 86-755-3351\n- 脅威データベースのアドレス1:\naddr test1wrddla53krxkmexvtpqf3sp8wp8qmjccgc7pxpw5y86d7dg8n7ny4\n- 脅威データベース認証トークン(TDAT)の通貨シンボルまたはポリシーは、脅威データエントリの完全性と妥当性を確保します。\nd258f5138697b7c9e5ca61cfc47d5e36c77598378ff5c92cc3fb9acf\n- 脅威データを読み取り、そのデータに基づいて取引を検証するエスクロー契約のアドレス:\naddr test1wrrtrau29ccr332ddnzr5d8ttep0waawflkz89jtan0dqeqvujs8"
+    },
+    {
+      "no": 3,
+      "promise": "(A)モックモニタリングシステムでセキュリティオラクルを使用したスマートコントラクトのPoC実装。 (この作業パッケージは、元の提案からマイルストーンのサイズ制限のアカウントまで2番目のマイルストーンから引き継がれていました)\n(B) オフチェーンセキュリティ監視システムの開発のための複数の潜在的なアプローチを詳述し、トランザクションスループット、データ鮮度、最適な応答時間などの重要なベンチマークを特定するレポート。\n(C) これらのシステムの作成と採用を促進するための多様なビジネスモデルの分析.",
+      "criteria": "(A) スマートコントラクトの実装は、「クライアント」スマートコントラクト内のセキュリティオラクルの使用を実証し、モックモニタリングシステムから来ている情報に基づいてトランザクションを変換する必要があります\n(B) レポートは、オフチェーンセキュリティ監視システムを開発するための少なくとも3つの潜在的なアプローチの包括的な調査を網羅し、技術的実現可能性、利点、課題への洞察を提供します。\n(C)インセンティブ化メカニズム、サステイナビリティ、潜在的な利害関係者の関与などの要因を考慮し、さまざまなビジネスモデルの分析.",
+      "report": "(A)スマートコントラクトによるGithubリポジトリ、\nhttps://github.com/projet-sentinel/sentinel-on-chain\nMock System(Escrow): https://github.com/projet-sentinel/sentinel-on-chain/tree/main/sentinel-contracts/src/Users/Escrow\n統合テスト: https://github.com/projet-sentinel/sentinel-on-chain/blob/main/scripts/09-unlock-escrow.sh\nユニットテストは ./scripts の下にあり、API スペックで定義されているスマートコントラクトとの相互作用を実証します。\n\n(A) アドレスとポリシーの一覧(PreProd):\n- デプロイされたオラクル(脅威データベース)とセキュリティオラクルシステムの他のスマートコントラクトコードCBOR UTxOsを保持するコントローラースマートコントラクトのアドレス:\naddr test1wz58rtm4zse8zgrr8zy6ce2uy7du090a4cu5vk4lk9spc9srt8kr6\n- セキュリティOracle契約のコントローラ認証トークンの通貨シンボルまたはポリシー、Oracleの完全性と妥当性を確保し、その他のスマートコントラクト:\n7ベッド9e8dfb61245a436bcabf30123a3e96dd609ba3e7195e49ab3a3\n- 脅威データベースのアドレス1:\naddr test1wq506tx3q7j3a3wpgsmy6njs5mn0cdsmcysc0yvwv3c578a89\n- 脅威データベース認証トークン(TDAT)の通貨シンボルまたはポリシーは、脅威データエントリの完全性と妥当性を確保します。\n5e7ca2c7bdb176bee4ad199743862904b1c0c1b9d4332005e5075a11\n\n- 脅威データを読み取り、そのデータに基づいて取引を検証するエスクロー契約のアドレス:\naddr test1wrxlvdynrqc2prqc5zkcj2wm4shqyz9f4x9ymkrvdxzpk4geegwkp\n\nセキュリティOracleのデモを表示する追加リンク:\nhttps://www.canva.com/design/DAGjw93fEx4/JIwMqBcW8z-1T M9l7A-g/watch?utm content=DAGjw93fEx4&utm campaign=designshare&utm medium=link2&utm source=uniquelinks&utlId=h815d087248\n\n(B&C) GithubのPDFレポートへのリンク:\nhttps://github.com/gammer13/pcf11-security-oracles/blob/main/Milestone3/Report/report.pdf"
+    },
+    {
+      "no": 4,
+      "promise": "(A)プロジェクトクローズアウトレポート\n(B) プロジェクトクローズアウトビデオ\n(C) エンドユーザのドキュメント",
+      "criteria": "(A + B)プロジェクトクローズアウトレポート&ビデオ https://docs.projectcatalyst.io/fund-documentation/fund10-docs/funded-project-reporting-guideline/project-closeout-report-and-project-closeout-video-pcr-and-pcv\n(C) エンドユーザのドキュメントは、すべてのソフトウェアの実装をカバーし、見込み客によるPoC出力の使用を有効にする必要があります",
+      "report": "プロジェクトは、次の出力を正常に配信しました。\n(A)プロジェクトクローズアウトレポート\nhttps://github.com/gammer13/pcf11-security-oracles/blob/main/Milestone%204/Final%20Report/Final%20Report.pdf\n(B) プロジェクトクローズアウトビデオ\nhttps://www.youtube.com/watch?v=vst jORWnGc\n(C)エンドユーザードキュメント\nhttps://github.com/gammer13/pcf11-security-oracles/blob/main/docs.md"
+    }
+  ]
+}

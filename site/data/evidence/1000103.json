@@ -1,0 +1,72 @@
+{
+  "title": "Liquidity Efficient DEX Models for Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 69000,
+      "promise": "・Deliverables:Comprehensive research paper outlining the proposed liquidity provision models leveraging the Cardano EUTXO model.\n・Outputs:Literature review of existing liquidity provision models.\n・Review and refinement of the new model to align with the eUTXO model.\n・Intended Outcomes: Clear understanding of existing liquidity provision models and their limitations.",
+      "criteria": "・Identification of a new liquidity provision model suitable for Cardano.\n・Documentation of the research findings in the research paper.",
+      "report": "Complete Report: https://drive.google.com/file/d/14Cit0a-1-1wVJuSb22zQyGF7pLc5LX1b/view\nBlog post explaining research report: https://medium.com/@muesliswap/revolutionizing-cardanos-defi-with-the-liquidity-efficient-dex-model-2794df860a20",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 69000,
+      "promise": "・Deliverables:Open-source repositories on GitHub for the developed smart contracts\n・Outputs: Architecture and model design for on-chain code.\n・Development of smart contract components using Opshin.\n・Development of a testing framework for on-chain code and written tests.",
+      "criteria": "・Developed new smart contracts for liquidity provision models that have previously been research (see milestone 1)\n・These smart contracts should be feature-complete (industry standard) and should be cheap to execute (i.e. we put an emphasis on memory/CPU efficiencies)",
+      "report": "Here are the promised outputs/deliverables:\n・open-source code repositories of the developed smart contracts: https://github.com/MuesliSwapTeam/muesliswap-liquidity-efficient-dex\n・updated report containing a detailed documentation of the on-chain code\n・transactions interacting with the smart contracts on Cardano PreProd testnet are provided and presented in\n・this blog post, and\n・this video.\n\nNote: Compared to the previous submission, we have added a license file to the repository to clarify the software distribution terms, as pointed out by the reviewer. As this was the only criticism, otherwise, things are left unchanged.",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 7
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 20000,
+      "promise": "・Peer review of smart contract code.\n・Security analysis of on-chain code.\n・Documentation of on-chain code.\n・Extended testing framework for on-chain code\n・Audit of smart contract code (from audit company)",
+      "criteria": "・Document should include different findings and suggestions + outline any potential risks/shortcomings with the implementation of the liquidity provision model\n・Published Security analysis of on-chain code.\n・Published Documentation of on-chain code.\n・Document summarizing different findings and suggestions + outline any potential risks/shortcomings with the implementation of the liquidity provision model\n・Audit document from our auditors\n\n-> we will not be able to release the code at this stage as we need bug-free code before open-sourcing it. WIthout this, we have the risk that other projects",
+      "report": "Here are the promised outputs/deliverables:\n・updated report containing a summary of the method and findings of our peer review and security analysis process: see section 6 of this report (including technical details, descriptions of the shortcomings and links to the GitHub repo commits in which the respective smart contract fixes are implemented)\n・blog post informing the community about development updates, review findings, and next steps\n・new interactions on Cardano preprod testnet with the updated smart contracts: see section 7 of the report (this document also includes the rest of our continuously updated on-chain code documentation)\n・audit report from our external auditors highlighting findings and short-comings in the project, as well as reviews of the respective fixes\n・extended testing framework for on-chain code contained in this part of the public repository with automated GitHub actions tests as per this commit for improved continuous integration",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 29000,
+      "promise": "• Technical requirements analysis and development of off-chain code.\n • Development of components in the specified programming language for off-chain code. (most likely Python)\n • Development of off-chain tests and testing of code.\n • Security analysis of off-chain code.\n • Peer review of off-chain code.\n • Documentation of off-chain code.",
+      "criteria": "• functional off-chain code that can interact with the smart contract\n• Document of the Peer review of off-chain code. \n• Documentation of off-chain code.",
+      "report": "Here are the promised outputs/deliverables:\n・Off-chain code has been implemented and published in the public project repository on GitHub, including new smart contract tests and off-chain integration tests for interaction with the smart contracts (see most recent commits).\n・Peer-review & security analysis of off-chain code has been conducted and documented in Section 7.2 of this report. We describe the issues that were identified and give links to the respective commit of the GitHub repository implementing fixes to those issues.\n・Additionally, we give a separate document in which the peer review team (which consists of a group of 3 of our developers independent from the ones who implemented the code) has logged their work and outlines their feedback & findings from the security analysis. Again, commits of respective fixes are linked there.\n・Detailed documentation of the off-chain code's functionality and usage has been added to the report, see Section 6.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 43000,
+      "promise": "We will develop a frontend to interact with our new smart contracts (i.e., allow to place swap orders interacting with the liquidity solutions we built). Moreover, users will be able to add and remove liquidity through the website. This website will run on the Cardano mainnet (potentially included in the current muesli swap website). \nWe will provide documentation and tutorials for users on how our new liquidity models work and how they can interact with the website",
+      "criteria": ">Working website that interacts with smart contracts and constructs the relevant transactions + displays the correct data (Cardano mainnet)\n> guides for users on how to use the website and how our liquidity models work",
+      "report": "Dear Reviewers, \nwe have now finished the Catalyst project and integrated our new CHM into the Cardano Website. \nThe close-out report including all relevant documents can be found as PDF on our Google Drive: https://drive.google.com/file/d/1nFvOXn3rOxOt5kkM_acl84V4OaJzi_od/view?usp=sharing\nMoreover, we created a close-out video that also includes an interface demo and uploaded it to Youtube: https://www.youtube.com/watch?v=dbrVLQH2gkc&feature=youtu.be\nA documentation containing an introduction and screenshots on how to use the new Pools on muesliswap.com can be found here: https://drive.google.com/file/d/1dNh0QYZAde9BUi9ye5s_LvCdlUZy2zJ2/view?usp=sharing\nMoreover, a documentation for users has been published on our docs.muesliswap.com page\n・Basic FAQ guide on the CHM https://docs.muesliswap.com/cardano/concentrated-hybrid-model-chm\n・Step-by-Step guide for users to use the model: https://docs.muesliswap.com/cardano/concentrated-hybrid-model-chm/using-the-chm\n\nMoreover, the list of transaction examples are included in our report: https://drive.google.com/file/d/1yRZhdB9j5dCkKSUC5OwYvDTh_q_u75JY/\nThank you and Best Regards,\nMuesliSwap Team",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 13
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "ZKFold Symbolic: a Zero-Knowledge Smart Contract Language",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40000,
+      "promise": "Context: zkFold Symbolic is a zero-knowledge smart contract language written in Haskell. It has a mathematical primitive called arithmetic circuits as its target. To create a zero-knowledge smart contract language, we must implement a compilation algorithm for every type or function that one needs to create Cardano smart contracts. We start with more basic types and operations and proceed to more complex and Cardano-specific ones.\nTask: Implement basic types (boolean, fixed-size integer, fixed-size bytestring, fixed-size arrays) and basic operations with them. Implement equality, comparison, branching operations. Implement hashing functions.\nOutputs:\n・Modules for basic types and their opertations (Haskell)\n・Modules for equality and comparison checks (Haskell)\n・Implementation of branching computations (Haskell)\n・Implementation of SHA2 and MiMC hash functions (Haskell)",
+      "criteria": "・Modules for basic types and their operations can be found in our repo\n・Modules for equality and comparison checks can be found in our repo\n・Implementation of branching computations can be found in our repo\n・Implementation of SHA2 and MiMC hash functions can be found in our repo",
+      "report": "Modules for basic types and their operations\nOur language now supports some basic types such as Bool , ByteString , UInt , and\nUTCTime . These types and their operations can now be handled by our compiler\nthat produces proper arithmetic circuits for computations invlolving those types.\nModules:\nhttps://github.com/zkFold/zkfold-\nbase/blob/main/src/ZkFold/Symbolic/Data/Bool.hs\nhttps://github.com/zkFold/zkfold-\nbase/blob/main/src/ZkFold/Symbolic/Data/ByteString.hs\nhttps://github.com/zkFold/zkfold-\nbase/blob/main/src/ZkFold/Symbolic/Data/UInt.hs\nhttps://github.com/zkFold/zkfold-\nbase/blob/main/src/ZkFold/Symbolic/Data/UTCTime.hs\nModules for equality and comparison checks\nThese modules enable compilation of equality and comparison tests. Modules:\nhttps://github.com/zkFold/zkfold-base/blob/main/src/ZkFold/Symbolic/Data/Eq.hs\nhttps://github.com/zkFold/zkfold-\nbase/blob/main/src/ZkFold/Symbolic/Data/Ord.hs\nImplementation of branching computations\nThese modules enable branching computations in ZK programs:\nhttps://github.com/zkFold/zkfold-\nbase/blob/main/src/ZkFold/Symbolic/Data/Conditional.hs\nhttps://github.com/zkFold/zkfold-\nbase/blob/main/src/ZkFold/Symbolic/Compiler/ArithmeticCircuit/Instance.hs\nImplementation of SHA2 and MiMC hash functions\nWe now have SHA2 and MiMC hashes that one can use in ZK programs:\nProof of Achievement 2\nhttps://github.com/zkFold/zkfold-\nbase/blob/vks4git_hash/src/ZkFold/Symbolic/Algorithms/Hash/SHA2.hs\nhttps://github.com/zkFold/zkfold-\nbase/blob/vks4git_hash/src/ZkFold/Symbolic/Algorithms/Hash/MiMC.hs\n\nDescription of modules:\nhttps://github.com/zkFold/project-catalyst-reports/tree/main/zkFold%20Symbolic\nAlso, we have created documentation on our website: https://docs.zkfold.io/\nOn top of that, we have shared the progress via our X account: https://twitter.com/zkFold/status/1779819515464888709",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 13
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 40000,
+      "promise": "Context: zkFold Symbolic is a zero-knowledge smart contract language written in Haskell. It has a mathematical primitive called arithmetic circuits as its target. To create a zero-knowledge smart contract language, we must implement a compilation algorithm for every type or function that one needs to create Cardano smart contracts. We start with more basic types and operations and proceed to more complex and Cardano-specific ones.\nTask: Implement the Plonk on-chain verifier. Implement an end-to-end zkFold Symbolic smart contract test on testnet.\nOutputs:\n・Modules for Plonk on-chain verifier (Haskell)\n・Scripts for building and submitting a simple zkFold Symbolic smart contract transaction",
+      "criteria": "・Modules for Plonk on-chain verifier can be found in our repo\n・Scripts for building and submitting a simple zkFold Symbolic smart contract transaction can be found in our repo",
+      "report": "We have implemented the Plonk on-chain verifier and an end-to-end zkFold Symbolic smart contract test on testnet.\n\nModules for Plonk on-chain verifier (Haskell)\n\n- https://github.com/zkFold/zkfold-cardano/blob/main/src/ZkFold/Cardano/Plonk.hs\n\n- https://github.com/zkFold/zkfold-cardano/blob/main/src/ZkFold/Cardano/ScriptsVerifier.hs\n\nScripts for building and submitting a simple zkFold Symbolic smart contract transaction\n\n - https://github.com/zkFold/zkfold-cardano/tree/main/e2e-test\n\nA brief documentation (e.g. readme.md):\n\n- https://github.com/zkFold/zkfold-cardano/blob/main/e2e-test/README.md\n\nOn top of that, we have shared the progress via our X account: \n\n- https://twitter.com/zkFold/status/1791185578806980681",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40000,
+      "promise": "Context: zkFold Symbolic is a zero-knowledge smart contract language written in Haskell. It has a mathematical primitive called arithmetic circuits as its target. To create a zero-knowledge smart contract language, we must implement a compilation algorithm for every type or function that one needs to create Cardano smart contracts. We start with more basic types and operations and proceed to more complex and Cardano-specific ones.\nTask: Create the zkFold Symbolic Cardano Library. It will contain all necessary types to work with Cardano transactions inside zkFold Symbolic smart contracts. Implement the post-processing algorithms that converts a zkFold Symbolic script into the arithmetic circuit that is verified on-chain.\n・Modules for core types related to Cardano transactions: Value, Address, TxOutRef, TxOut, Tx (Haskell)\n・Modules for zkFold Symbolic script post-processing that generates parameters for the Plonk algorithm (Haskell)",
+      "criteria": "・Modules for core types related to Cardano transactions: Value, Address, TxOutRef, TxOut, Tx can be found in our repo\n・Modules for zkFold Symbolic script post-processing that generates parameters for the Plonk algorithm can be found in our repo",
+      "report": "Output 1 (Modules for core types related to Cardano transactions: Value, Address, TxOutRef, TxOut, Tx can be found in our repo)\n\nThis folder contains the definitions of the Cardano related types:\nhttps://github.com/zkFold/zkfold-base/tree/main/src/ZkFold/Symbolic/Cardano/Types\nExplanation (instead of readme.md): They are necessary for creation of ZK smart contracts for the Cardano Blockchain.\n\nOutput 2 (Modules for zkFold Symbolic script post-processing that generates parameters for the Plonk algorithm can be found in our repo)\n\nThis module contains the wrapper post-processing for a ZK smart contract on Cardano\nhttps://github.com/zkFold/zkfold-base/blob/main/src/ZkFold/Symbolic/Cardano/Wrapper.hs\nExplanation (instead of readme.md): It removes the necessity to create some standard boilerplate code for every new smart contract.\n\nPlonk proving system is implemented here:\nhttps://github.com/zkFold/zkfold-base/blob/main/src/ZkFold/Base/Protocol/ARK/Plonk.hs\nhttps://github.com/zkFold/zkfold-base/tree/main/src/ZkFold/Base/Protocol/ARK/Plonk\n\nand tested here:\n\nhttps://github.com/zkFold/zkfold-base/blob/main/tests/Tests/NonInteractiveProof/Plonk.hs\nhttps://github.com/zkFold/zkfold-base/blob/main/tests/Tests/NonInteractiveProof.hs\n\nOn top of that, we have shared the progress via our X account: \nhttps://x.com/zkFold/status/1809667224984076580",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 14
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 40000,
+      "promise": "Context: zkFold Symbolic is a zero-knowledge smart contract language written in Haskell. It has a mathematical primitive called arithmetic circuits as its target. To create a zero-knowledge smart contract language, we must implement a compilation algorithm for every type or function that one needs to create Cardano smart contracts. We start with more basic types and operations and proceed to more complex and Cardano-specific ones.\nTask: Implement variable-size types and operations with them (analogous to Integer and ByteString types in Haskell). Develop a set of examples, showcasing zkFold Symbolic smart contracts.\nOutputs:\n・Modules for Integer and ByteString (Haskell)\n・A collection of 5 zkFold Symbolic smart contracts (Haskell)",
+      "criteria": "・Modules for Integer and ByteString can be found in our repo\n・A collection of 5 zkFold Symbolic smart contracts can be found in our repo",
+      "report": "In this milestone we have finalized the implementation of the basic types available in the zkFold Symbolic framework, specifically unsigned integers and bytestrings. On top of that, we continue to expand our set of examples, having 5 of them completed at the time of writing.\n\nOutput 1 Modules for Integer and ByteString (Haskell)\nWe have compilation of the arithmetic operations, comparisons, and equality/inequality tests for the unsigned integer type into arithmetic circuits. The key parts of the code can be found here:\nhttps://github.com/zkFold/zkfold-base/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/UInt.hs\nWe have compilation of the bitwise and byte operations for the bytestring type into arithmetic circuits. The key parts of the code can be found here:\nhttps://github.com/zkFold/zkfold-base/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/ByteString.hs\n\nFull documentation (instead of readme.md): https://docs.zkfold.io/symbolic/coding/getting-started/\n\nOutput 2 A collection of 5 zkFold Symbolic smart contracts (Haskell)\nHere are the five smart contract examples that we have prepared:\n・https://github.com/zkFold/zkfold-cardano/blob/main/src/ZkFold/Cardano/Examples/EqualityCheck.hs\n\nThis is an example smart contract where a UTxO or a token mint is blocked behind a secret number. The user who submits a transaction must prove the knowledge of a secret number in order to spend UTxO or mint a token.\n\n・https://github.com/zkFold/zkfold-base/blob/main/symbolic-cardano/src/ZkFold/Symbolic/Cardano/Contracts/BatchTransfer.hs\n\nThis example shows how to create a \"batch transfer\" for the users of a smart contract based wallet. The users controlling the wallets sign their individual transfers. The data then gets aggregated to form a \"batch transfer\" transaction. \n\n・https://github.com/zkFold/zkfold-base/blob/main/symbolic-cardano/src/ZkFold/Symbolic/Cardano/Contracts/RandomOracle.hs\n\nThis is an example implementation of a random on-chain oracle. Users can supply their seed value",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 19,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 40000,
+      "promise": "Context: zkFold Symbolic is a zero-knowledge smart contract language written in Haskell. It has a mathematical primitive called arithmetic circuits as its target. To create a zero-knowledge smart contract language, we must implement a compilation algorithm for every type or function that one needs to create Cardano smart contracts. We start with more basic types and operations and proceed to more complex and Cardano-specific ones.\nTask: Produce zkFold Symbolic documentation and a video guide to the product.\nOutputs:\n・A user documentation portal\n・Close out video\n・Close out report, which describes the project KPIs and the overall process",
+      "criteria": "・The documentation portal can be found with the link provided to the reviewers\n・Close out video is published on YouTube or X\n・Close out report is published on https://twitter.com/zkFold",
+      "report": "・A user documentation portal: https://docs.zkfold.io/symbolic/coding/getting-started/\n・Close out video (short): https://youtu.be/SSHFOXrb3W4\n・Close out video (extended): https://youtu.be/XXNeAGuA0Is\n・Close out report, which describes the project KPIs and the overall process: https://github.com/zkFold/project-catalyst-reports/blob/main/zkFold%20Symbolic/Close%20out%20report.pdf",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

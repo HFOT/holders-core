@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "私たちの最初のマイルストーンには、2つのNFTを最小限にする書かれたスマートコントラクトが含まれます。 スマートコントラクトに1つのNFTを保存します。 他のNFTはADAの量を入金するトランザクションを作成するユーザーに与えられます。 このスマートコントラクトにより、ユーザーは2つのNFTをマイニングする際に保存することができます.",
+      "criteria": "このマイルストーンは、当社のチームは、これらの2つのNFTをダタムとマイニングするスマートコントラクトのオンチェーン証拠を提出したら、受け入れられるべきです.",
+      "report": "Cardanoのプリプロドネットワーク上でスマートコントラクトを作成して機能しています。 以下は、Cardanoの事前テストネット上で複数の取引をリンクします。 1つのトランザクションで作成されるスマートコントラクト、別のトランザクションで作成されるNFT、別のトランザクションでそれらのNFTを焼くことで、進捗を実証します。\n2023-11-08〜10:00 UTCで事前テストネットに提出された取引の順序。\n# Txs\n\n##init - スマートコントラクトの作成\n\nhttps://preprod.cexplorer.io/tx/8c6cf9975a46c274818ee2fc49c03dd80b56c8b0398c4acbb969a1cab9dd8666\n\n## ミント - ミンティングアカウント NFT\n\nhttps://preprod.cexplorer.io/tx/15e2da18d9e8837e410c08761fbeb9a1bb4c0b0d0134c363a63dd8af0889dd87\nhttps://preprod.cexplorer.io/tx/0d10d46c2da39dad0d3ddb8e245b2fd368ae5b7087e1bfcbb2b4455d78aaf0\n\n## バーン\n\nhttps://preprod.cexplorer.io/tx/39af53f92d34578cd6d7ef2b9c309c79be9d104a7da64179706c0101b20cd558\n\n## バーン\n\nhttps://preprod.cexplorer.io/tx/b340391f28348c9bc376414ab57635fabc8ceb73b7215da2a45258cf5ffaab3d"
+    },
+    {
+      "no": 2,
+      "promise": "このマイルストーンは、当社のチームがCardanoのテストネットの1つでユーザーアカウントNFTをミントトできるように、シンプルな非固定フロントエンドを出力します。 各ユーザーアカウントのNFTは、StoaスマートコントラクトでNFTマッチングを行います。 NFT は、フロントエンドのユーザ入力に基づいて datums を格納します.",
+      "criteria": "このマイルストーンは、次のマイルストーンのCardanoのテストネットの1つにスマートコントラクトと統合される、未定のフロントエンドがあることを承諾する必要があります.",
+      "report": "当社は、スマートコントラクトを作成するために使用できる未定のフロントエンドをビルドし、2つのNFTをミントし、NFT内のユーザー・ダタムを含みます。\n\nカーダノのプレビューネットワークで起こっているこれらのアクションを示すビデオも録画しました。 動画はこちら:\nhttps://www.dropbox.com/scl/fi/wuuem46zrshae75x084c8/simplescreenrecorder-2023-12-16 23.41.05webm?rlkey=sq85nnkxqvs57bqlo6m7dds2t&dl=0\n\nここでは、ビデオオンチェーンと一致するトランザクションは次のとおりです。\nhttps://preprod.cexplorer.io/tx/1ddff65c939e0bfe927dffece74b4daaa3042437d5ab84529c9ccd83467069\nhttps://preprod.cexplorer.io/tx/4e4bf15b23a9907422ba56ff2f8fe4881f4537503af2de219242b7774c01fe\nhttps://preprod.cexplorer.io/tx/f30bae59fbd2e4227faa1b552123b9353a8fb25ccbbbf143d8aabe0de1f6af6af6b\nhttps://preprod.cexplorer.io/tx/d68900db419d2a3bae5f53c979c69dbd698f09fffd75d44c2003452659fb96e0\nhttps://preprod.cexplorer.io/tx/287876e506fb1e39a320279a0fce4bd845ac52c4ca5e0e45579852073797cdb6\nhttps://preprod.cexplorer.io/tx/2e3ade54e24d9b019e2bb188aace83566c99247e986b5efb2c23ac651266fb6f"
+    },
+    {
+      "no": 3,
+      "promise": "このマイルストーンは、ユーザーがカルダノのテストネットの1つでユーザーアカウントNFTをミントにテキストフォームにダタムを入力することを可能にする、固定フロントエンドを出力します.",
+      "criteria": "このマイルストーンは、当社のチームは、Cardano testnet上で書かれたStoa契約と統合された固定フロントエンドを作成することを承諾する必要があります.",
+      "report": "チームにとって大きなマイルストーンでした。 カルダノのプレビューネットワークをフロントエンドに接続し、CIP-68 NFT の縮小を可能にします。 ユーザがこの NFT を mint すると、再度 minted できないユーザ名を選択します。 また、 datums に格納されている独自の識別子も選択しました。\n\nここでは、フロントエンドのミンティングビデオへのリンクです: https://drive.google.com/file/d/1UP6Z2UtzWgOJzdghwindDTpajCpPFIWA/view?usp=sharing\nこのトランザクションでNFTのオンチェーンのマイニングを見ることができます。 https://preview.cexplorer.io/tx/07ea3aca28d313f8fe4fc208922fdede953111a3a814d838d292dff7a2755fb7\nここでは、スマートコントラクトによってミントされたNFTへのリンクです。\nhttps://preview.cexplorer.io/asset/asset14fs7fw5l0l3knv0wvrup5m2ws9ydh53k03mah"
+    },
+    {
+      "no": 4,
+      "promise": "Stoa スマートコントラクトは、問題が発生したかどうかを調べるためにテストする必要があります。 10種類のテスターを収集し、フロントエンドインターフェイスでユーザー定義のダムで15異なるNFTをミントにします。 これらのすべてのテスターは、テスト環境から発生する問題について、フィードバックフォームを提出します.",
+      "criteria": "このマイルストーンは、カルダノのプレビューネットワーク上で、15の異なるNFTをミントに10人で持ち込むことで受け入れられるべきです.",
+      "report": "このマイルストーンでは、UI/UXをより良くするために、いくつかの小さな変更で新しいスマートコントラクトを作成しました。\nCardanoのプレビューネットワーク上で新しいスマートコントラクトを作成したトランザクションを見ることができます。 https://preview.cexplorer.io/tx/f5b9375aaf661bf032ffabc189aaf07a54d2889bf6c83c0417a2abba7a897f6c\nここでは2つのNFTの取引を2つ表示することができます。\nhttps://preview.cardanoscan.io/transaction/50a4d844faeb19d8049cfd5543a4c01f16119b7fa37ceecbaf59566a812772ba\nhttps://preview.cardanoscan.io/transaction/e90740c5b70bb5ac792ff229d2c50eadb3273874ca0727477716fd03b1f73e9c\n初期のバグを見つけたり、そのバグを修正したり、UI/UXを改善できるようにフィードバックを収集したりするために、ユーザーの小さなグループを聞かせてください。\nこれまでのところ、カルダノのプレビューネットワーク上でスマートコントラクトを使用して、222 NFT を縮小しました。 このスマートコントラクトは、CIP-68 を使用しており、ユーザーが NFT を分岐させると、ユーザの datum を保持するスマートコントラクトで作成されます。 ここではスマートコントラクト内のNFTの量を確認できます。これにより、ユーザーが縮小したNFTの量が相関されます。\nhttps://preview.cexplorer.io/asset/asset142h6jscvqadlf4yynsarj465svxj897g0n5l38\n私たちは、ユーザーがGoogleを使ってフィードバックを与えるように要求しました。これは、ユーザーに送信するフォームへのリンクです。\nhttps://forms.gle/1HcxLEy6Ja6v7LxKA\n私はこれまでこのGoogleシートですべてのユーザーのフィードバックをコンパイルしました。私は、ユーザーのデータを保護するためにメールアドレスを削除しました。\nhttps://docs.google.com/spreadsheets/d/1V9P3cL2NPlVkbZr QWV2QUFoS1PdtvxdENrFyQggg/edit?usp=sharing"
+    },
+    {
+      "no": 5,
+      "promise": "プレビューネットワーク上に存在するアトリウムのベータでStoaスマートコントラクトを起動します。 新しいフロントエンド UI は、より優れたユーザーエクスペリエンスを提供し、選択できる事前定義された datum を提供し、アプリケーションから直接 minting を提供します。 ユーザーエクスペリエンスをテストするために、50の異なるCardanoユーザーを連れて行くつもりです。バックエンドの統合に問題がある場合は、フィードバックフォームを送信してください.",
+      "criteria": "このマイルストーンは、スマートコントラクトを新しいスタイリングフロントエンドインターフェイスと統合する場合には、50人のユーザーがスマートコントラクト/フロントエンドをテストし、これらのユーザーはStoaコントラクトを使用してNFTをミントにすることを可能にするようにしてください.",
+      "report": "プロジェクトのクローズアウトレポートは、Catalystガイドラインへのリンクを提出するマイルストーンの査読者に基づいて更新しました。\nこのCatalystの提案を閉じるために、Cardanoのプレビューネットワーク上でスマートコントラクトを立ち上げました。 1,000名以上のユーザーは、フロントエンドインターフェイスでこのスマートコントラクトとやり取りできるようになりました。 それらのユーザーからフィードバックを集め、たくさんのバグを修正しました。 プレビューネットワークウォレットを作成して、今すぐStoa契約を使用してプロファイルNFTをミントトし、ウォレットを接続することができます。https://alpha.atrium.io\nまた、クローズアウトのレポートビデオを作成し、テキスト形式のクローズアウトレポートを作成します。\nクローズアウトレポート(テキスト): https://docs.google.com/document/d/1YPuhSxD2cCZa7BhQBGpOAIfW 3a EDhA1lSrzmWRXPw/edit?usp=sharing\nクローズアウトレポート(動画): https://youtu.be/ZXSzgZNzSLM\nCardanoのプレビューネットワーク上でスマートコントラクトへのリンク:\nhttps://preview.cardanoscan.io/address/addr test1wrz9pvlzrv0f3w64n0a67wulm80kp47lncxwvt8d645396slmagvp\nこのリンクから、50 人のユーザーがプロフィール NFT を縮小しているか確認することができます。 NFT の出力を見て、正しい種類のトランザクションであることを確認することができます。 このスマートコントラクトで1,000NFT以上のNFTを縮小し、リンクを使って確認することができます."
+    }
+  ]
+}

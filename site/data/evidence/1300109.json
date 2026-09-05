@@ -1,0 +1,70 @@
+{
+  "title": "HLabs: unembed plu-ts - the next aiken",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 20000,
+      "promise": "a Tokenizer class taking as input the source text and with the necessary methods to emit the tokens of the language\nthis is the first step of the compiler, where from a raw piece of text we get something that is more easy to work with \"tokens\", wich are nothing more than smaller pieces of text that carry some meaning on their own (eg. words).\nThe output of this milestone is the implementation of this first part of the compiler",
+      "criteria": "given some text (the source code) the tokenizer can iter over it emitting the corresponding tokens\nfor example the text \"const thing = 2;\" will produce the tokens \"const\" \"identifier\" \"thing\" \"equals\" \"literal integer\" \"2\" \"semicolon\".",
+      "report": "the implemented Tokenizer can be found here: https://github.com/HarmonicLabs/pebble/blob/main/packages/pebble/src/tokenizer/Tokenizer.ts\nhere is a video showcasing how the Tokenizer is used: https://youtu.be/51q2KN11pf8",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 60000,
+      "promise": "a class that takes as input a Tokenizer from the previous milestone and consumes the emitted tokens to build an AST representation of the source language.\nduring construction of the AST, the parser makes sure that the syntax of the language is respected.\nat this point the compiler starts making some sense of the source code\nhere syntatic errors are catched, for example \"const thing = 2;\" is valid syntax, but \"const const = 2;\" is not, because \"const\" is a keyword of the language and cannot be used for the name of a variable.",
+      "criteria": "given a source text it is possible to build the AST (Abstract Syntax Tree) representation of it.\nThe AST is just an in-memory representation of the source code. where the pieces of text are \"grouped\" based on known structures.\nso at this point, the compiler is able to \"see\" these structures and store them in variables.",
+      "report": "here is the Parser implementation: https://github.com/HarmonicLabs/pebble/blob/main/packages/pebble/src/parser/Parser.ts\nhere is a video showcasing how the Parser works: https://youtu.be/qD7hACz5W2Q",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "8",
+      "cost": 60000,
+      "promise": "From the AST we proceed to check the semantic of the program and compile it to a lower level intermediate representation (IR) used to further optimize the contract.\n\nThis steps includes:\n・Type checking\n・desugaring (for loops etc.)\n・rewriting expression in semantic equivalent\n・etc.\n\nHere the compiler has the full picture of the program and is able to finally \"translate\" the source code to something closer to the language of the blockchain (uplc)",
+      "criteria": "The IR (and UPLC as consequence) is built from a program\nAt this point the compiler is able to produce valid contracts that can be used on-chain",
+      "report": "here is the Compiler implementation: https://github.com/HarmonicLabs/pebble/blob/main/packages/pebble/src/compiler/Compiler.ts\nhere is a video showcasing how the compiler works: https://youtu.be/gOXJvO2fZb0",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 30000,
+      "promise": "・lsp-repo\n・A vscode extension\n\nhaving \"just a compiler\" is not enough for a good developer experience.\nThis milestone output is to produce some additional tooling to the compiler so that the developer using the language can enjoy some \"quality of life\" improvements, such as syntax highlighting, auto-completitions etc...",
+      "criteria": "the vs code extension highlights the syntax of a valid program and reports the errors emitted by the compiler.",
+      "report": "LSP repository: https://github.com/HarmonicLabs/pebble-lsp\n\nvideo explaining how to install the lsp extension and use it: https://youtu.be/-LbMHA73y24",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "11",
+      "cost": 30000,
+      "promise": "・Final close-out report\n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "closeout video: https://youtu.be/304RIRcc3us\n\nThe video is fully public\n\ncloseout report: https://github.com/HarmonicLabs/catalyst-close-reports/blob/main/1300109-pebble/README.md",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

@@ -27,6 +27,9 @@ DROP = {"Antarctica"}
 WIDTH = 2000.0
 # 出力座標の丸め（小数1桁）で消える程度の細部は落とす。
 EPSILON = 0.6
+# 地球儀用の環は経緯度のまま持つ。度単位なので別のしきい値を使う。
+# 地球儀は常に半球しか見えず、拡大率も平面ほど上げないので粗くてよい。
+GLOBE_EPSILON = 0.25
 
 
 def fetch_topology(url: str = SOURCE_URL, *, opener: Any = None) -> dict:
@@ -213,13 +216,31 @@ def build(topo: dict, *, width: float = WIDTH, epsilon: float = EPSILON) -> dict
         cx = (min(x for x, _ in main) + max(x for x, _ in main)) / 2
         cy = (min(y for _, y in main) + max(y for _, y in main)) / 2
 
+        # 地球儀（正射図法）は表示側で投影する。そのための経緯度も持たせる。
+        # 平面用に間引いた点をそのまま使うと球面で粗くなるので、球面用に
+        # 少しゆるめの間引きをかけた別の並びを作る。
+        ll_rings = []
+        for ring in rings_of(g, arcs):
+            pts = _dp([(lon, lat) for lon, lat in ring], GLOBE_EPSILON)
+            if len(pts) >= 3:
+                ll_rings.append([[round(lon, 2), round(lat, 2)] for lon, lat in pts])
+
+        # 重心も経緯度で持つ。点で置く小国の位置に使う。
+        main_ll = max(rings_of(g, arcs), key=len)
+        lons = [p[0] for p in main_ll]
+        lats = [p[1] for p in main_ll]
+
         row = {
             "id": g.get("id"),
             "c": [round(cx, 1), round(cy, 1)],
             "size": round(max(bx1 - bx0, by1 - by0), 1),
+            # 経緯度での重心。地球儀側で使う。
+            "ll": [round((min(lons) + max(lons)) / 2, 2), round((min(lats) + max(lats)) / 2, 2)],
         }
         if parts:
             row["d"] = "".join(parts)
+        if ll_rings:
+            row["r"] = ll_rings
         countries[name] = row
 
     return {

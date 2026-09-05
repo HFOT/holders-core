@@ -1,0 +1,37 @@
+{
+  "title": "CoSponsor by Sundae Labs: A Community Crowdfunding Tool for Proposal Submission",
+  "ms": [
+    {
+      "no": 1,
+      "month": "14",
+      "cost": 30000,
+      "promise": "・The core platform is developed, with browsing, contributions, and refund functionality fully implemented and operational.\n・﻿A beta version of the platform is released on the testnet for public testing.",
+      "criteria": "・Testing confirms that the browsing, contribution, and refund features function as expected and meet technical requirements.\n・A beta version of the platform is deployed on the testnet and publicly accessible.\n・Feedback is gathered from at least 5 internal testers, as well as any additional feedback from the wider community via a Google Form.",
+      "report": "A. Output: [What was delivered as Output A]\nThe core platform is fully developed, including browsing, contribution, and refund functionality. A beta version of the platform is deployed on the testnet and publicly accessible for user interaction and testing. User testing has been conducted, with feedback collected from internal testers and mechanisms established to gather input from the broader community.\nAcceptance criteria: [Completion criteria for Output A]\n・Browsing, contribution, and refund features function as expected and meet defined technical requirements\n・The platform is live and accessible on testnet, and public users can interact with core features\n・Feedback is gathered from at least 5 internal testers\n・A public Google Form is available to collect additional feedback from the wider community\n\nEvidence: [Link to verify Output A and its Acceptance criteria]\n・Demo video showcasing platform functionality: https://youtu.be/eXb7uHst0m8\n・GitHub pull requests implementing core functionality:\n・Contracts: https://github.com/SundaeSwap-finance/cosponsor-contracts\n・UI: https://github.com/SundaeSwap-finance/cosponsor-ui\n・Deployed testnet platform:\n・http://bsckw00wkosg8okg48cs0kgo.167.235.164.240.sslip.io/all-proposals\n・Public announcement (Discord):\n・https://discord.com/channels/830939534174453800/830948250298875905/1487101476101951631\n・Discord invite link:\n・https://discord.gg/EXSV4Upvrc\n・Screenshot for reviewer convenience:\n・https://drive.google.com/file/d/1TPTNh2Hrrntlcu5N4ui0ZLuISrmdkbkH/view\n・Google Form for public feedback:\n・https://docs.google.com/forms/d/e/1FAIpQLSeaJX0ctDWElZSNktvcAN1p_Wx8dniXVnd3mphqkfZlYfpK0Q/viewform\n・Feedback summary document (GitHub + Drive):\n・https://docs.google.com/document/d/1rXyY6CaNDYBTzWGi_elAOFowoN3tlf3s3UsaRTOUQTA/edit\n・Internal tester feedback included in summary\n・External feedback was actively solicited through a public Discord announcement, including access to the beta testnet and a Google Form for structured input. Although no",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 18,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "16",
+      "cost": 30000,
+      "promise": "・Identified issues from M1 testnet deployment are resolved, improving platform stability.\n・At least 3 internal improvements or fixes are implemented and merged into the codebase.\n・A refined version of the platform is deployed on testnet for final internal validation.\n・Internal feedback documentation is compiled, summarizing key issues, fixes, and final validation results.",
+      "criteria": "・All critical issues identified during M1 testnet testing are addressed.\n・The updated testnet version is deployed and made accessible for internal review.\n・A minimum of 3 internal team members conduct structured testing on the refined version.\n・Feedback is compiled into a validation document outlining:\n・The number of issues addressed.\n・Confirmation of successful fixes.\n・Internal approval that the platform is ready for public launch.",
+      "report": "A. Output: \n・Identified issues from M1 testnet deployment are resolved, improving platform stability.\n・At least 3 internal improvements or fixes are implemented and merged into the codebase.\n・A refined version of the platform is deployed on testnet for final internal validation.\n・Internal feedback documentation is compiled, summarizing key issues, fixes, and final validation results.\n\nAcceptance criteria: \n・All critical issues identified during M1 testnet testing are addressed.\n・The updated testnet version is deployed and made accessible for internal review.\n・A minimum of 3 internal team members conduct structured testing on the refined version.\n・Feedback is compiled into a validation document outlining:\n・The number of issues addressed.\n・Confirmation of successful fixes.\n・Internal approval that the platform is ready for public launch.\n\nEvidence: \n・Contribution flow, wallet interaction, configuration, and SDK issues identified during Milestone 1 testing were addressed through Milestone 2 platform refinements.\n・https://github.com/SundaeSwap-finance/cosponsor-contracts/pull/2\n・User interface improvements were implemented to refine proposal browsing, wallet integration, navigation, status handling, and overall usability.\n・https://github.com/SundaeSwap-finance/cosponsor-ui/pull/1\n・A refined version of the platform was deployed to testnet and made available for internal validation and review.\n・https://cosponsor.preview.sundae.fi/all-proposals \n・Structured testing was conducted by five internal testers representing a mix of beginner, advanced, and technical users.\n・https://docs.google.com/spreadsheets/d/e/2PACX-1vRo5btiGzcS2BM4wb6IfClKZ0IHE7wJ20zRi3RVjZoQdMVpUdRBueMSQNYrqORkHDy9EJGXCBYwD6yc/pubhtml \n・Testing feedback, identified issues, implemented refinements, validation findings, and readiness conclusions were compiled into an internal validation summary.\n・https://docs.google.com/document/d/e/2PACX-1vQ5zQXp6tc70CIrt4pWo1uwkYz7fyFKpJ0LyWbljPb21K89VEwMwUEKHiwbLVIkzYgAMrOob",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 10,
+      "cut": true
+    }
+  ]
+}

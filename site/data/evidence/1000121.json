@@ -1,0 +1,79 @@
+{
+  "title": "MLabs - Enhancing and Evolving the Plutus Simple Model (PSM) Test Library",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 35286,
+      "promise": "PSM has been around for almost two years and is actively used by projects like Genius Yield’s Atlas PAB, Indigo, and Optim among others. In most cases, developers are using custom forks that are hard to upstream. We want to study all those cases to understand in detail what made the need to fork the library, what functionality was missing, how it can be upstreamed into the main codebase, and what may be done to protect the users from the need to fork the library in the future.\nThe output of this Milestone is a document listing the identified forks and describing the modifications or additional features provided by them, as well as an assessment of their relevance, priority and technical challenges to integrate them with the main branch of the PSM repository.",
+      "criteria": "The generated report includes an overview of the forks to the main branch of the PSM repository, including:\n・The reasons why the forks exist\n・The compatibility of them with the main branch of the repository.\n・A clear technical path to integrate the identified forks with the main branch of the PSM repository and, in addition, or an in-depth analysis of any limitations found.",
+      "report": "OUTPUT\nDuring this initial Milestone, we analyzed how PSM is used mostly by interacting with developers and studying existing forks. Our results can be found in the document linked below. As we progressed, our vision of the future of PSM considerably changed. The initial goals of the project are still the same (or they are even \\broader), but the way to achieve them is seen differently.\n\nACCEPTANCE CRITERIA\nThe report lists an exhaustive list of all five third-party forks/alterations of PSM that were known as of the end of 2023 (see section: Use of PSM: PRs and Forks):\n・Indigo\n・Kwarx\n・Atrium no. 1\n・Atrium no. 2\n・Atlas PAB \n\nSpecific details describing why forks exist and their compatibility with the main branch can also be found in the report. Briefly, most forks are created by teams working on different projects due to missing features or dependency mismatches. Those changes are compatible with the main branch but they are not of major concern for our future work. On the other hand, the fork used by Atlas PAB, though being incompatible with the main codebase, makes a step forward and gives a different perspective on how PSM can be used. This is why the report mostly focuses on this fork, the reasons it exists, and its incompatibility.\nThe rest of the report (sections The Current State & Next steps: The Future of PSM) presents the new vision of PSM which effectively should be thought of as the third Acceptance Criteria, “a clear technical path to integrate the identified forks with the main branch of the PSM” by means of building the next generation of the PSM called CLB. It will be based on the integration with Atlas (and other tools like CTl) rather than attempting to keep PSM as a separate tool and will:\n・replace the current PSM for regular and audit projects;\n・meet the original goals of the current Catalyst project;\n・improve cohesion and dev experience. \n\nEVIDENCE\nThe full report for our work in Milestone 1 can be found here.",
+      "kinds": [
+        "code"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 52929,
+      "promise": "● The minimalistic CLB implementation in mlabs-haskell/clb repository\n● A fork of Cardano Atlas PAB to use CLB instead of PSM\n● A bet-ref test-suite fork from geniusyield/atlas-examples repository that can now be run against Cardano Atlas/CLB",
+      "criteria": "CLB uses cardano-ledger to manage the emulated state, clearing up all tech debt accumulated due to PSM's custom state management.\nbet-ref test-suite example can be run against CLB and succeeds.",
+      "report": "Please find our milestone report available here:\nhttps://github.com/mlabs-haskell/clb/blob/master/docs/reports/ms2/MS2-REPORT.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "7",
+      "cost": 77629,
+      "promise": "● A new CLB version (PR) unifying the testing mechanism\n● Updated Cardano Atlas fork with new integration code that effectively unifies tests, choosing a target (real node / CLB) selectable without any test code modifications (for tests that could be run against both targets) (PR)\n● Accordingly updated bet-ref test-suite fork (PR)",
+      "criteria": "The same source test code can be executed against a real node and CLB using a runtime test-suite configuration which is demonstrated by the adopted bet-ref test suite.\nThe model accurately calculates and enforces minimum ADA per UTxO.\nThe model accurately calculates network fees.\nThe model accurately calculates resource consumption (memory and CPU).\nThe model supports stronger validator abstractions, like accepting UPLC code.",
+      "report": "Please find our PoA report for M3 here",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "9",
+      "cost": 63515,
+      "promise": "Updated versions of CLB and Cardano Atlas (the latter only if needed).\nNotes on using Conway-era features within Cardano Atlas/CLB documentation.\nAiken-based test-suite as an example of using Aiken with CLB/Atlas.",
+      "criteria": "The CLB and Atlas depend on the Conway-compatible versions of dependencies (the exact versions will depend on the availability at the moment this work will be executed).\nConway-era transactions are supported.\nAll tests contained in a test-suite based on a smart contract written using the Aiken language that makes use of most important Plutus features successfully pass.",
+      "report": "Please find our PoA report for Milestone 4 here",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 5,
+      "month": "10",
+      "cost": 63515,
+      "promise": "The update codebase of CLB, that in addition to the library contains the code to build an executable (CLB node emulator) that can mimic Cardano node's API for transaction submission and state querying using an IPC socket.\nThe first release of the executable binary (Linux x86_64 platform) of CLB node emulator.\nA CTL-based test-suite that runs bet-ref example.\nThe integration to run CTL with CLB node emulator and updated documentation.",
+      "criteria": "CLB node emulator is capable to mimic Cardano node behavior for transaction submission and state querying.\nCTL can run a test-suite against CLB node emulator. \nbet-ref example can be executed successfully using standard CTL query layer (kupo + ogmios) and CLB node emulator.",
+      "report": "Please find our Proof of Achievement report available here:\nhttps://github.com/mlabs-haskell/clb/blob/master/docs/reports/ms5/MS5-REPORT.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 6,
+      "month": "11",
+      "cost": 59986,
+      "promise": "The final milestone aims at making the project’s results easily discoverable and usable by the community. We are going to revise and update the documentation, making sure there are clear explanations and relevant examples showcasing the usage of the library and promoting it on social media.\nA video and final closeout report showcasing the new features of the PSM library, including testing of Conway-era transactions interacting with Plutus, Plutarch and Aiken on-chain code.",
+      "criteria": "User-facing parts of the library (documentation, articles, examples, and README files) are updated and reflect the current state of the project.\nA community update is published and available.",
+      "report": "Please find our milestone report describing and linking to our deliverables here:\nhttps://github.com/mlabs-haskell/clb/blob/master/docs/reports/ms6/MS6-REPORT.md\n\nCloseout video:\nhttps://www.youtube.com/watch?v=CW6f7wKoegA\n\nCloseout report:\nhttps://drive.google.com/file/d/1poD1Oflkwx1DtLs0msN1XZdWpRhwU4wo/view?usp=drive_link",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

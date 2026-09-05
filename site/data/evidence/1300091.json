@@ -1,0 +1,56 @@
+{
+  "title": "Elixir implementation of Ouroboros networking",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 25500,
+      "promise": "A Github repository publicly available with an Elixir application, documentation on how to use the application to connect to a Cardano node and issue Ledger Queries and a Dockerfile. The Dockerfile will run the Elixir application, and it will accept the path to a local UNIX socket file for a fully synced Cardano Node as argument. The Elixir application should be able to establish a connection to a fully synced Cardano Node and issue the following ledger state queries supported for the Conway era: Get current era, Get current tip, Get current block, Get current epoch.",
+      "criteria": "Running the Dockerfile for the corresponding Elixir application with the proper argument should yield the following results:\n・Successfully builds the Elixir application.\n・Connects to a Cardano Node via the UNIX socket given as argument.\n・Displays the result of running the following ledger queries: \n・Get Current Era (this is an integer value representing the current era of the ledger)\n・Get Current Tip of the Ledger (the slot number and header hash of the last block that has been processed by the ledger)\n・Get current Block Height (the chain’s highest block number)\n・Get Current Epoch number (the",
+      "report": "Here is a link to the Proof of Achievement video for Milestone 1. The video shows each one of the milestone output items and walks through the acceptance criteria according to the project documentation:\nhttps://www.youtube.com/watch?v=yeL9dd-bdjM&ab_channel=WorkWithCardano",
+      "kinds": [
+        "video"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 25500,
+      "promise": "A github repository with an Elixir application, documentation on how to use the application to connect to a Cardano node and submit a transaction and a Dockerfile. The Dockerfile should accept two arguments: the path to a local UNIX socket file as argument and a CBOR for a valid signed Conway era transaction that transfers a certain amount of ADA between two payment addresses. The Elixir application should support submitting the transaction to the connected Cardano node.",
+      "criteria": "Running the Dockerfile with the proper arguments should successfully submit a Conway era transaction to the blockchain. The submitted transaction should then be available for confirmation on any of the existing blockchain explorers (CExplorer, CardanoScan, etc.). For invalid transactions, an error should be displayed.",
+      "report": "Here is the link to the Proof of Achievement video https://www.youtube.com/watch?v=yu_LTR4S1ok&ab_channel=WorkWithCardano",
+      "kinds": [
+        "video"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 25500,
+      "promise": "A Github repository with an Elixir application that implements the client for the Chain Sync mini-protocol, documentation on how to use the application to connect to a Cardano node and establish a Chain Sync mini-protocol connection and a Dockerfile to run said application. The Dockerfile should accept the path to a local UNIX socket file as an argument. When run, the Dockerfile process should connect to the underlying Cardano Node, sync with the beginning of the Conway era and display blocks as they are made available.",
+      "criteria": "Running the Elixir application via the Dockerfile with the proper arguments should continuously display blocks starting from the beginning of the Conway era as they are made available to the connected Cardano Node.",
+      "report": "Here is the link to the Proof of Achievement video for Milestone 3 https://www.youtube.com/watch?v=OBpuzygTgHU",
+      "kinds": [
+        "video"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 13500,
+      "promise": "・Final close-out report\n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Link to closeout report: https://docs.google.com/document/d/1oH8LmHf0KQPubdAha4rkJdPRN9lTFqiXdQ0sHw5wn7A/edit?usp=sharing\nLink to closeout video: https://youtu.be/6OHyHKFSV0s\nLink to Github repository: https://github.com/wowica/xander",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

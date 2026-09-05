@@ -1,0 +1,51 @@
+{
+  "title": "LENDEX Cardano <-> EVM Token Lending Protocol",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25000,
+      "promise": "・Oracle viability: whether it's the best EVM Oracle provider to ensure the protocol functions effectively, it is crucial to consider important indicators such as costs and communication associated with the Oracle.\n・Obtain possible data access points such as reservoir \n・Test standard EVM smart contract with oracle or centralized implementation for basic functionality\n・Verify application to Cardano > EVM unlocking using Cardano Tx",
+      "criteria": "・Defined Oracle from EVM to use with corresponding justification supporting the decision\n・Data access point (API) defined for both EVM and Cardano\n・Smart Contract for EVM running on Polygon testnet showcasing how the protocol is been used\n・Document identifying and assessing the feasibility to implement the Protocol from Cardano to EVM with Oracles (e.g Charli3.io)",
+      "report": "We are thrilled to announce the successful accomplishment of the milestone objectives as detailed in the project plan. Presented below is a thorough overview of our achievements, along with proof of milestone fulfillment:\n・Oracle viability: Two documents as a result of the research conducted to determine the viability to implement Lendex protocol.\n・Obtain possible data access points such as reservoir: One document provided, outlining the possible data access points of the protocols API, with a focus on: reliable pricing, protecting users, and usability of the proposed Lendex protocol API.\n・Test standard EVM smart contract with oracle or centralized implementation for basic functionality: EVM smart contract and Cardano smart contract has been developed.\n・Verify application to Cardano > EVM unlocking using Cardano Tx: A set of steps and scripts has been provided so users can interact with Lendex protocol covering use case when there is an EVM Borrower and a Cardano Lender.\n\nEvidence: A link to the Github repository where all the documents, smart contracts and script tests are publicly available.\nAcceptance Criteria:\n・⁠Defined Oracle from EVM to use with corresponding justification supporting the decision: A research has been conducted with a document supporting it and we’ve decided to use Chainlink as the EVM Oracle provider.\n・Data access point (API) defined for both EVM and Cardano: We've documented Lendex protocol flow and described an API to interact with user's wallets and the smart contracts to perform different actions such as: lock NFT, borrow NFT, pay debt, claim NFT back. Also we've described another API to retrieve info about NFTs been provided as collaterals\n・Smart Contract for EVM running on Polygon testnet showcasing how the protocol is been used: We’ve developed the EVM Smart Contract showcasing how to interact with the protocol. However, is worth to mention the blockchain used was Ethereum Sepolia Testnet due to Polygon testnet discontinuation from Chai",
+      "kinds": [
+        "code"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 30000,
+      "promise": "・Smart Contract Development for Cardano: Completion and deployment of a smart contract on the Cardano blockchain to support lending operations.\n・Smart Contract Development for EVM: Creation and deployment of a corresponding smart contract on the Ethereum Virtual Machine (EVM) to facilitate NFT locking and ADA liquidity transactions.\n・Social Media Platform Establishment: Creation and activation of social media accounts to promote project awareness and engage with potential users.\n・Oracle Integration for Enhanced Contract Functionality: Implementation of an oracle within smart contracts to ensure dynamic data exchange and interoperability across blockchains.\n・Comprehensive Testing of Lend Protocol Operations: Detailed testing of the entire lending operation, from NFT collateral lock on EVM to ADA liquidity receipt and eventual NFT retrieval post-debt repayment.",
+      "criteria": "・Smart Contracts Operational on Testnets: Both Cardano and EVM smart contracts must be fully functional on their respective testnets.\n・Successful Lend Protocol Interaction: Demonstration of a flawless lending operation cycle, including the use of an EVM to lock NFTs, the receipt of ADA liquidity, and the subsequent return of the NFT post-debt repayment.\n・Active and Engaging Social Media Presence: Social media accounts must be live, with a strategic content plan executed over a defined period, showing measurable engagement metrics.\n・Effective Oracle Integration: Oracle functionality must be int",
+      "report": "Milestone Outputs\n・Smart Contract Development for Cardano: Completion and deployment of a smart contract on the Cardano blockchain to support lending operations.\n\n https://github.com/Ghost-Capital/lendex-catalyst/blob/main/contracts/cardano/lendex/validators/lendex.ak\n・Smart Contract Development for EVM: Creation and deployment of a corresponding smart contract on the Ethereum Virtual Machine (EVM) to facilitate NFT locking and ADA liquidity transactions.\n\n https://github.com/Ghost-Capital/lendex-catalyst/blob/main/contracts/Lendex.sol\n・Social Media Platform Establishment: Creation and activation of social media accounts to promote project awareness and engage with potential users.\n\n Here is Twitter account: https://x.com/lendex_app. We have been aligning Lendex with a handful of industry collaborators, influential social accounts and ecosystem contributors. We are in the process of orchestrating a planned launch. Where a short 30 second video demo's and overviews the Lendex app and it's capabilities. Once the video is released, we will work with our brand ambassadors to spread the video across social media sites including Youtube & Twitter. Engagement & Growth:\n・We have 1 ambassador with more calls scheduled to grow our early fan base. Targeting around 3 to 5 ambassadors who understand the project well enough to further it's growth and work with the Lendex Team when the marketing video releases to ensure it reaches every corner of the ecosystem.\n\n・Oracle Integration for Enhanced Contract Functionality: Implementation of an oracle within smart contracts to ensure dynamic data exchange and interoperability across blockchains.\n\n Here is a guide to setup Chainlink in order to use the protocol: https://github.com/Ghost-Capital/lendex-catalyst/blob/main/README.md#chainlink-oracle\n・Comprehensive Testing of Lend Protocol Operations: Detailed testing of the entire lending operation, from NFT collateral lock on EVM to ADA liquidity receipt and eventual NFT retrieval post-deb",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 30000,
+      "promise": "・Finalize wireframes for modern UX\n・Complete web product creation for Cardano and EVM users\n・Create backend account model database sync (EVM and Cardano)\n・Optimize product for mobile wallet use\n・Test contract and wallet integration on barebones web interface\n・Verify cross-chain approach to connecting and using product",
+      "criteria": "・Basic usable product on testnet showcases the modern UX as per the finalized wireframes.\n・Successful simultaneous EVM and Cardano wallet connection via the product.\n・Backend capable of synchronizing account models across both EVM and Cardano blockchains.\n・Product information is viewable and functional via mobile, ensuring a seamless user experience.\n・Web interface is capable of performing the end-to-end protocol, interacting seamlessly with wallets and smart contracts.\n・The product should interact with wallets cross-chain (EVM like Polygon and Cardano) without issues.",
+      "report": "Here is the link to the testnet dapp: https://lendex-catalyst-dapp-8abl.vercel.app\n・GitHub commit showing the finalized wireframes and a video demonstration of the UX in action on a desktop environment.\n\n Here is a link where you can find dapp commits history: https://github.com/Ghost-Capital/lendex-catalyst/blob/main/dapp-commits-history.png. We've a video showing the UX in action here: https://youtu.be/eVNrxM6rA1w\n・GitHub commit history of the web product's development and a video demonstration showcasing the wallet connections.\n\n Here is a link where you can find dapp commits history: https://github.com/Ghost-Capital/lendex-catalyst/blob/main/dapp-commits-history.png. We've a video showing the UX in action here: https://youtu.be/eVNrxM6rA1w\n・GitHub documentation or code snippets detailing the backend account model and a backend test log demonstrating successful sync.\n\n The DB schema can be found here: https://github.com/Ghost-Capital/lendex-catalyst/blob/main/db-schema.txt.\n・GitHub commits related to mobile optimizations and a video demo showcasing the product's mobile interface and wallet use.\n\n This video showcase both mobile interface and wallet use: https://youtu.be/eVNrxM6rA1w\n・Test results or logs on GitHub demonstrating successful integration tests, along with a video walkthrough of the process.\n\n Video with a walkthrough can be fund here: https://youtu.be/eVNrxM6rA1w. Test result logs:\n・EVM User lock NFT into our EVM Contract by sending the NFT to there: https://sepolia.etherscan.io/tx/0x4f11764e2af3423db7ce7e0cd81b8f56f4b85bfa1478d1f0e778c3ceb62aed3a\n・Cardano User accept the deal, this will trigger 2 transactions, one for minting the Cardano token serving as validation and updating corresponding NFT in EVM Contract:\n・Lender accept loan (pay and mint): https://preprod.cardanoscan.io/transaction/371340f3d3fa12d47fc267625255a635299c860cfd75189c7ecc98beccd812c4\n・Update NFT in EVM Contract: https://sepolia.etherscan.io/tx/0xda2cd3ed742c49c932925bbb68dba95077f",
+      "kinds": [
+        "chain",
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 41,
+      "cut": true
+    }
+  ]
+}

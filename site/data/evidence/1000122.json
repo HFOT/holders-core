@@ -1,0 +1,69 @@
+{
+  "title": "MLabs - LambdaBuffers (was Cardano dApp schemas) code generation backends for Rust, Javascript and Aiken",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 65143,
+      "promise": "・A LambdaBuffers code generation module that outputs type definitions and derived implementations in the Rust programming language given a LambdaBuffers schema.\n・A Rust library that implements the LambdaBuffers Prelude runtime. This module would include standardised JSON encoding and equality implementations for all declared type class instances in the schema.\n・A Rust test suite that assures the manually implemented and automatically generated implementations are consistent with the predefined LambdaBuffers Prelude golden data set of JSON files and perform correct implementation derivation.\n・A Rust library that implements the LambdaBuffers Plutus runtime. This module would include standardised PlutusData encoding implementations for all declared type class instances in the Plutus schema.\n・A Rust test suite that assures the manually implemented and automatically generated implementations are consistent with the predefined LambdaBuffers Plutus golden data set of PlutusData encoded files and perform correct implementation derivation.\n・Nix devops modules (Nix API) for streamlining the LambdaBuffers code generation pipeline to Rust.\n・Documentation on LambdaBuffers usage patterns for Rus",
+      "criteria": "・LambdaBuffers schemas that are based on the LambdaBuffers Prelude module can be used in Rust projects to specify application types.\n・LambdaBuffers schemas that are based on the LambdaBuffers Plutus module can be used in Rust projects to specify application types.\n・The documentation and devops tooling is available to facilitate easy adoption.",
+      "report": "Please find our PoA report available here:\n\nhttps://mlabs-haskell.github.io/lambda-buffers/catalyst10-reports/milestone-1.html",
+      "kinds": [
+        "live"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 65143,
+      "promise": "・A LambdaBuffers code generation module that outputs type constructors and derived implementations in the Javascript programming language given a LambdaBuffers schema.\n・A Javascript library that implements the LambdaBuffers Prelude runtime. This module would include standardised JSON encoding and equality implementations for all declared type class instances in the schema.\n・A Javascript test suite that assures the manually implemented and automatically generated implementations are consistent with the predefined LambdaBuffers Prelude golden data set of JSON files and perform correct implementation derivation.\n・A Javascript library that implements the LambdaBuffers Plutus runtime. This module would include standardised PlutusData encoding implementations for all declared type class instances in the Plutus schema.\n・A Javascript test suite that assures the manually implemented and automatically generated implementations are consistent with the predefined LambdaBuffers Plutus golden data set of PlutusData encoded files and perform correct implementation derivation.\n・Nix devops modules (Nix API) for streamlining the LambdaBuffers code generation pipeline to Javascript.\n・Documentation on",
+      "criteria": "・LambdaBuffers schemas that are based on the LambdaBuffers Prelude module can be used in Javascript projects to specify application types.\n・LambdaBuffers schemas that are based on the LambdaBuffers Plutus module can be used in Javascript projects to specify application types.\n・The documentation and devops tooling is available to facilitate easy adoption.",
+      "report": "Please find our proof of achievement report posted here:\nhttps://github.com/mlabs-haskell/lambda-buffers/blob/main/docs/catalyst10-reports/milestone-2.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 26057,
+      "promise": "・Document describing Aiken integration and how PlutusData encodings can be provided by the LambdaBuffers toolkit.\n・NOTE: We cannot ignore the fact that the outcome of the research done in Milestone 3 could point to incompatibilities that make an Aiken integration with LambdaBuffers infeasible. Should that be the case, an in-depth technical explanation of the limitations will be provided.",
+      "criteria": "・The generated document describes all the technical components relevant to the integration of Aiken with Lambda Buffers, showing a good understanding of them and how they would be relevant to the intended integration.\n・The generated document describes a clear technical path to integrate Aiken with Lambda buffers and, in addition or alternatively, an in-depth analysis of any limitations found.",
+      "report": "Please find our PoA report for Milestone 3 hosted here:\nhttps://github.com/mlabs-haskell/lambda-buffers/blob/main/docs/catalyst10-reports/milestone-3.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "11",
+      "cost": 52114,
+      "promise": "A separate code generator for Haskell and PlutusTx\n・A separate LambdaBuffers code generation module that outputs type definitions and derived implementations for Haskell's Prelude and PlutusTx's Prelude (or equivalent LambdaBuffers' Preludes) given a LambdaBuffers schema.\n・A Haskell test suite that assures the manually implemented and automatically generated implementations are consistent with the predefined LambdaBuffers Prelude golden data set of JSON files and perform correct implementation derivation.\n・Nix devops modules (Nix API) for streamlining the LambdaBuffers code generation pipeline to either Haskell's Prelude or PlutusTx's Prelude.\n・Documentation on LambdaBuffers usage patterns for Haskell's Prelude and PlutusTx's Prelude\n\nA complete Plutus .lbf schema file to include all Plutus Ledger API types with backend support for Rust, TypeScript, and PureScript.\n・An extended integration test suite to verify that the manually implemented and automatically implemented instances of the updated LambdaBuffers' Plutus .lbf schema file are consistent across all backends.\n\nA versioning scheme for the LambdaBuffers git repository using git tags that follow semantic versioning.\nOptimized",
+      "criteria": "An executable and Nix tooling to translate LambdaBuffers modules to Haskell projects to specify application types.\nAn executable and Nix tooling to translate LambdaBuffers modules to PlutusTx projects to specify application types.\nAn updated LambdaBuffers Plutus schema for the complete Plutus Ledger API types.\nThe documentation and devops tooling is available to facilitate easy adoption.\nGit tags for official releases of LambdaBuffers.",
+      "report": "Please find our PoA report for milestone 4 here:\nhttps://mlabs-haskell.github.io/lambda-buffers/catalyst10-reports/milestone-4.html",
+      "kinds": [
+        "live"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "12",
+      "cost": 52114,
+      "promise": "・A documented project scaffold that demonstrates the end-to-end use of LambdaBuffers with Rust, JavaScript, Haskell and PlutusTx language ecosystems.\n・Demonstrate how to use LambdaBuffers to manage and exchange JSON-based configuration between different language ecosystems supported by LambdaBuffers.\n・More importantly, demonstrates how to use LambdaBuffers to specify and exchange Plutus Datum between Plutus scripting languages and transaction-building frameworks.\n・A fully tested and documented LambdaBuffers support for Rust, JavaScript, Haskell and PlutusTx language ecosystems.\n・A documented scaffold project that serves to demonstrate how to use LambdaBuffer with the newly supported languages for easy adoption.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・A LambdaBuffers scaffold repository is made available that demonstrates a working end-to-end use of LambdaBuffers with Rust, JavaScript, Haskell and PlutusTx language ecosystems.\n・The scaffold uses LambdaBuffers to specify JSON configuration.\n・The scaffold uses LambdaBuffers to specify Plutus Datum.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "The Proof of Achievement for the Final Milestone can be found in the following link: https://mlabs-haskell.github.io/lambda-buffers/catalyst10-reports/milestone-5.html\nThe close-out report can be found in the following link: https://docs.google.com/document/d/1wY9Ce2YZtum4yCt6bMJicGF6FQdm-E2y/",
+      "kinds": [
+        "doc",
+        "live"
+      ],
+      "links": 2
+    }
+  ]
+}

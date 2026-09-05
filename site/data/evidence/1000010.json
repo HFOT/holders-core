@@ -1,0 +1,57 @@
+{
+  "title": "Anastasia Labs - Open Source Production Grade DApps",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 35000,
+      "promise": "Five contracts adopted for general use by removing application specific logic and providing more composability\n・Merkle Tree Contracts\n・Single Asset Staking Contracts\n・Linear Vesting Contracts\n・Bridge Contracts\n・Yield Farming Contracts",
+      "criteria": "Contracts are implemented",
+      "report": "We have all five contracts implemented and adopted for general use by removing application specific logic and providing more composability\n・Merkle Tree Contracts\n・Single Asset Staking Contracts\n・Linear Vesting Contracts\n・Bridge Contracts\n・Yield Farming Contracts \n\nWe can find documentation and contracts on our github\nhttps://github.com/Anastasia-Labs/production-grade-dapps",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 35000,
+      "promise": "・Property-Based Testing Suite: A comprehensive suite of property-based tests for each smart contract. Tests cover a wide range of input scenarios and properties of the contracts, ensuring robustness and reliability.\n・Test Data and Input Values: A dataset containing test data and input values used in property-based testing. Includes various inputs and edge cases designed to validate correctness of the contracts.\n・Test Results and Reports: Detailed report summarizing the results of property-based testing. These reports should indicate which properties were tested, which passed, and which failed.\n・Coverage of Contract Properties: Evidence that property-based testing covers critical properties and behaviors of the smart contracts. This ensures that the contracts meet their intended specifications and behave as expected.\n・Documentation: Documentation explaining the purpose and significance of each property-based test. This documentation should help developers understand what aspects of the contracts are being tested and why.\n・Property-Based Testing Framework: Documentation on how to use the property-based testing framework. This includes instructions for running property-based tests, co",
+      "criteria": "Property-Based Testing Suite:\n・A comprehensive suite of property-based tests is developed for each smart contract.\n・Each test suite covers a wide range of properties and behaviors of the contracts.\n・The tests are designed to evaluate the correctness and reliability of the contracts under various input scenarios.\n\nTest Data and Input Values:\n・Dataset provided contains a diverse set of test data and input values used in property-based testing.\n・Dataset includes both common and edge cases to thoroughly validate contract behavior.\n\nTest Results and Reports:\n・Detailed reports summarises results of",
+      "report": "Resubmitting our PoA.\nWe have finalized Unit based testing and property based testing for all five Smart Contracts\n\nLinks to the documentation and testing folder for every Smart Contract seperatly:\n・Merkle Tree Contracts\n・Tests - https://github.com/Anastasia-Labs/plutarch-merkle-tree/tree/main/test\n・Single Asset Staking Contracts\n・Tests - https://github.com/Anastasia-Labs/single-asset-staking/tree/main/test\n・Linear Vesting Contracts\n・Tests - https://github.com/Anastasia-Labs/linear-vesting/tree/main/test\n・Bridge Contracts\n・Tests - https://github.com/Anastasia-Labs/bridge-template/tree/main/test\n・Yield Farming Contracts \n・Tests - https://github.com/Anastasia-Labs/yieldfarming/tree/master/test\n\nOutputs found in every repository:\n・A comprehensive suite of property-based tests for each smart contract. Tests cover a wide range of input scenarios and properties of the contracts, ensuring robustness and reliability.\n・A dataset containing test data and input values used in property-based testing. Includes various inputs and edge cases designed to validate correctness of the contracts.\n・Detailed report summarizing the results of property-based testing. These reports should indicate which properties were tested, which passed, and which failed.\n・Evidence that property-based testing covers critical properties and behaviors of the smart contracts. This ensures that the contracts meet their intended specifications and behave as expected.\n・Documentation explaining the purpose and significance of each property-based test. This documentation should help developers understand what aspects of the contracts are being tested and why.\n・Documentation on how to use the property-based testing framework. This includes instructions for running property-based tests, configuring test parameters, and interpreting test outcomes.\n\nPlease let us know if anything else is needed for PoA.",
+      "kinds": [
+        "code"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 35000,
+      "promise": "Develop examples and educational content in a clear and concise manner. Use appropriate code snippets, diagrams, and illustrations to enhance understanding. Focus on practical, real-world scenarios to demonstrate the application of the code or concepts being explained. Create illustrations and thorough documentation for each production “trick” / development technique, design pattern, and technical architecture. Clearly illustrate and highlight the importance of assertions that exist to prevent common vulnerabilities such as the dusk token attack or the datum size attack.",
+      "criteria": "Delivered examples and educational content for our contracts",
+      "report": "We have created a gitbook with great detail and explanations of our open source contracts for the community to learn.\nThe whole educational content can be found at https://anastasia-labs.github.io/production-grade-dapps\nEach contract has its own section with learning material",
+      "kinds": [
+        "live"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 30500,
+      "promise": "・Project Closeout Report\n・Project Closeout Video\n・Comprehensive documentation for each smart contract library, including detailed explanations of contract functionality, parameters, and usage.\n・Detailed diagrams to aid in understanding contract architecture and data flows.\n・Collaboration with Demeter where Smart Contracts are available to launch in their platform",
+      "criteria": "・Project Closeout Report is submitted\n・Project Closeout Video is submitted\n・Comprehensive Library Documentation:\n・The documentation for each smart contract library covers all essential aspects, including contract functionality, parameters, and usage instructions.\n・The documentation provides clear and concise explanations of how to interact with each contract, including example transactions and usage scenarios.\n・Diagrams:\n・The documentation includes appropriate diagrams to aid in understanding the architecture and data flows of the smart contract libraries.\n・Diagrams are clear and well-labeled,",
+      "report": "We are happy and proud to deliver Milestone 4 for this Catalyst proposal\n・Project Closeout Report: https://github.com/Anastasia-Labs/project-close-out-reports/blob/main/f10-production-grade-dapps-closeout-report/prod-grade-dapps-closeout.pdf\n・Project Closeout Video: https://youtu.be/YFsj6jVxFjY\n・A link to a GitHub repository is provided containing the documentation for each smart contract library, and educational content: https://github.com/Anastasia-Labs/production-grade-dapps\n・Smart Contracts are available on the Demeter Run platform to launch the SC and to review the code: https://drive.google.com/file/d/1L4cw_mR7Pp586PLkuJxYy1-xh9mfse5g/view",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    }
+  ]
+}

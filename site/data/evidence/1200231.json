@@ -1,0 +1,43 @@
+{
+  "title": "The social platform that realizes blockchain authentication even in environments without the internet",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "■ Research\n・We will create a research paper in PDF format, describing the technical feasibility of using broadcast for authentication via the Cardano blockchain in an environment without Internet.\n・Detailed technical report in PDF documenting the process and results of the verification of certificate issuance in Cardano.\n・Detailed technical report in PDF documenting the process and results of the verification of certificate validation in Cardano.\n\n■ Prototype verification\n・Detailed technical report in PDF documenting the process and results of the verification of certificate issuance in Cardano.\n・Detailed technical report in PDF documenting the process and results of the verification of certificate validation in Cardano.",
+      "criteria": "■ Research\nWe have already conducted research into transmitting information via television radio waves. In this research, we will investigate the technical feasibility of using broadcasting for authentication using the Cardano blockchain in an environment without the Internet, create a prototype, and conduct technical verification. (Design and implementation will be done in milestones 2 and 3) We would like to note that our team is primarily made up of broadcast engineers, and that we need to start by understanding how the Cardano blockchain works.\n・1-a: The paper describes basic data processi",
+      "report": "Thank you for checking.\nWe have made the following changes.\n・ReadMe\n・Reregistered PDF\n・Added R3a and R3b (because they were not uploaded yet)\n\nPlease check again.\nhttps://github.com/att-hamada/Catalyst-F12-1200231/blob/main/README.md#milestone-1",
+      "kinds": [
+        "code"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 90000,
+      "promise": "[1] Certificate issuing tool\n・We will create a document for software processing specification. For example, It include that interface processing specification, define the blockchain transaction, the processing flow and authentication data.\n・Implement the program. (JavaScript + NodeJS is assumed)\n・Conduct implementation testing.\n・We will create a short video (2-3 minutes) demonstrating this tool.\n\n[2] Certificate IPDC transmission support tool\n・We will create a document for software processing specification. For example, It include that interface processing specification, define the interface to the broadcast transmission, the processing flow, and transmission data.\n・Implement the program. (NodeJS is assumed)\n・Conduct implementation testing.\n・We will create a short video (2-3 minutes) demonstrating this tool.",
+      "criteria": "[1] Certificate issuing tool\nThis tool registers the certificate to issue certificates in places with an Internet connection. It also manages the information to be transmitted by IPDC (terrestrial) by acquiring transaction information at the time of registration. \n [1-a] Function to register certificates\n・This Function is able to register and issue certificates.\n・This Function is able to manage and transmit information through IPDC(broadcast raidio wave).\n\n [1-b] Function to acquire transaction information\n・This Function is able to acquire transaction information at the time of registration.",
+      "report": "Please check milestone-2 Link",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 60000,
+      "promise": "[1] Certificate Validation tool\n・We will create a document for software processing specification. For example, It include that interface processing specification, the broadcast reception, the validation flow.\n・Implement the program. (JavaScript or NodeJS is assumed)\n・Conduct implementation testing.\n・We will create a short video (2-3 minutes) demonstrating this tool.",
+      "criteria": "[1] Certificate validation tool\nAssuming an environment without the Internet, this tool obtains information transmitted by IPDC (terrestrial broadcasting) from the broadcast and manages it appropriately. It also implements a validation process to verify certificates and a UI for displaying the results.\n・This tool is able to authenticate certificates.\n・This tool allows you to manage certificate information received via IPDC (broadcast raidio wave).\n・This tool is able to performs the authentication and displays the resulting information.",
+      "report": "Links to the Milestone 3 documentation and videos. (No updates)\nNew video 2 has been uploaded.\nhttps://github.com/att-hamada/Catalyst-F12-1200231/blob/main/README.md#milestone-3",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    }
+  ]
+}

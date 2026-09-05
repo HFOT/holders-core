@@ -1,0 +1,85 @@
+{
+  "title": "Cardano SeedSigner: DIY air-gapped Hardware Wallet",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 10000,
+      "promise": "・A detailed document outlining the technical specifications, architecture, and functionality of the app.\n・Documentation of all menu options and user interactions.\n・Specifications for the frame structure that will be transmitted via animated QR codes.",
+      "criteria": "・The design document must fully articulate the app's technical specifications, functionalities, including interactions, user interface, and communication protocols.\n・All design decisions must prioritize security, efficiency, and compatibility with SeedSigner hardware.",
+      "report": "Output: \n・A detailed document outlining the technical specifications, architecture, and functionality of the app.\n・Documentation of all menu options and user interactions.\n・Specifications for the frame structure that will be transmitted via animated QR codes.\n\nAcceptance criteria:\n・﻿A finalized design document in PDF format in the project Github repository covering technical specifications, architecture, functionalities, including interactions, user interface, and communication protocols (QR frame structure).\n\nEvidence:\n・Link to the document: https://github.com/Biglup/cardano-seedsigner/blob/main/docs/cardano_seedsigner_air_gapped_hardware_wallet_specification_v1.0.pdf\n・Introduced in commit: https://github.com/Biglup/cardano-seedsigner/commit/a62243c5d340305b5079948515729fe2d23bc967",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 20000,
+      "promise": "・A working prototype that can display a graphical interface on the SeedSigner screen and allows control via buttons\n・Implementation of all menu items, with mocked versions of all screens to illustrate the intended user flow.",
+      "criteria": "・The application must be able to run on the SeedSigner hardware and provide a fully navigable graphical interface.\n・All menu items must be present, and each screen must demonstrate the intended functionality, even if the business logic is not yet implemented.",
+      "report": "Here are my deliverables for this milestone, all UI components have been developed, the following evidence is required for this milestone:\n・A functional prototype deployed on SeedSigner hardware. This prototype application will be recorded and a link to the video will be shared in the milestone module.\n・Screenshots/video of the graphical interface, showing the entire menu flow. Links to all screenshot and videos will be shared in the milestone module.\n・Source code published on GitHub, showing implementation of the graphical interface and menu navigation.\n\n・Video: https://drive.google.com/file/d/1JWS0flJBwbFouBtUiEfsvWYzbKX3YmnM/view?usp=sharing\n・Screenshots: https://drive.google.com/file/d/1aqPsHisA2jxU1RAiZnQOmeVA3mkeV-CS/view?usp=sharing\n・Sourcecode: https://github.com/Biglup/cardano-seedsigner (Merge commit https://github.com/Biglup/cardano-seedsigner/commit/e43274f44e97d05c5db44702659286db1a278c77)",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 20000,
+      "promise": "・Implement seed importing and new seed generation functionalities in the Cardano application for SeedSigner.\n・Implementation of seed importing via seed phrase input and QR code scanning.\n・Functionality for generating new seeds, with both seed phrases and QR codes as output.",
+      "criteria": "・The application must allow users to import an existing seed by manually inputting the seed phrase or by scanning a QR code.\n・The application must support generating a new seed and displaying it both as a seed phrase and as a QR code to be transcribed (see SeedSigner Bitcoin app for an example).",
+      "report": "Here are my deliverables for this milestone. Seed importing and new seed generation have been implemented and tested on SeedSigner hardware. The following evidence is required for this milestone:\nThe seed importing and exporting deployed on SeedSigner hardware. This functionality has been recorded and links to the videos are shared here.\n・ Video 1, import by seed phrase and SeedQR export: https://drive.google.com/file/d/1oMix_7LmLmavVT67hANx3dvtV4zD2UKP/view?usp=sharing\n・ Video 2, import by QR scan: https://drive.google.com/file/d/11IT5AX-sbMVcnVGNId4a-IzOKBr98gSQ/view?usp=sharing\n・ Video 3, new seed generation: https://drive.google.com/file/d/1S5vC2P92E9sy_fpLXydCoWF0BDRAOtTN/view?usp=sharing \n・First method of seed generation is reading entropy from a picture taking with the camera and using that to generate the seeds.\n・Using dice rolls to generate the seed, the user would need to roll physical 6 sided dices and input the result of each throw.\n\nSource code: https://github.com/Biglup/cardano-seedsigner/commit/982ce3f8df335cb3cda38b910c98734f9911ce13\n(Merge commit 982ce3f8df335cb3cda38b910c98734f9911ce13)",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 20000,
+      "promise": "・Implementation of animated QR code reading and generating functionality, enabling the SeedSigner to receive data from and transmit data via animated QRs.\n・Implement exporting the root public key as the first use case for data transmission.",
+      "criteria": "・The application must be capable of reading animated QR codes to receive data and generate animated QR codes for transmitting data.\n・The SeedSigner must successfully demonstrate exporting the root public key using the animated QR code protocol.",
+      "report": "Here are my deliverables for this milestone. Animated QR code reading and generation, and extended public key export, have been implemented and tested on SeedSigner hardware. The following evidence is required for this milestone:\n・Video, animated QR read/generate and extended public key export (this video shows both A functional demonstration of animated QR code reading and generation on SeedSigner hardware and the export of the root public key using animated QR codes): https://drive.google.com/file/d/1ZpPC96Qu9supfCnnIegJkzVgjcQQABB2/view \n・Source code: https://github.com/Biglup/cardano-seedsigner/commit/edb66f86108261e2deeba6e756877c2c0318c4ae\n\n (Commit [edb66f86108261e2deeba6e756877c2c0318c4ae])\nIn the video a sample application displays an animated QR requesting the public key. The SeedSigner reads the animated request, the user approves the export on-device, and the device transmits the extended public key back as an animated QR, which the application reads and uses to display the key and its derived addresses.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 5
+    },
+    {
+      "no": 5,
+      "month": "10",
+      "cost": 15000,
+      "promise": "・Functionality for receiving transactions to be signed via animated QR codes.\n・Display of transaction details to the user for confirmation before signing.\n・Implementation of signing the transaction and transmitting the witness data to the other device using animated QR codes.",
+      "criteria": "・The application must be capable of reading animated QR codes to receive transaction data.\n・Transaction details must be displayed to the user for review and confirmation before signing.\n・The signed transaction (witness data) must be transmitted to the other device using animated QR codes.",
+      "report": "The milestone delivers the full air-gapped transaction-signing loop on SeedSigner hardware: a transaction is received as an animated QR code, its details are displayed for review and confirmation, the transaction is signed on the air-gapped device, and the resulting witness data is transmitted back to the companion device as an animated QR code.\n・This is a video demostrating transaction reception, review, signing, and transmission via animated QR codes on SeedSigner hardware. I am also attaching the CBOR of the transaction being signed and the resulting witness will be shared in .txt files.\n・Video demostration: https://drive.google.com/file/d/1IM3UDtREIyyY-moe5fnid-JVJriKxMZe/view?usp=sharing\n・CBOR of the sign request: https://drive.google.com/file/d/1kKv_q71oLDVh12i3p5TXlOypNXki6JqY/view?usp=sharing\n・CBOR of the response with the witness: https://drive.google.com/file/d/1oqAjalLK18HeJWtjamSQ0nKZdLDcrIc5/view?usp=sharing\n・CBOR of the signed transaction: https://drive.google.com/file/d/1r5wKwC1pBqqcCuOJGd9Y65-kNYK2H4wH/view?usp=sharing\n・Link to Cardano Scan with the transaction signed in the video demostration: https://preprod.cardanoscan.io/transaction/0f2d5422b3d8143f09e4029dc48ce52c0405cf5fab34cf134f5278a264ae613c\n・Source code of the update on GitHub, documenting the implementation of transaction signing and the QR code transmission protocol: https://github.com/Biglup/cardano-seedsigner/commit/771ea2585a2f00e7eb61c4e3d7566e16a1092d93\n・Commit Hash: 771ea2585a2f00e7eb61c4e3d7566e16a1092d93",
+      "kinds": [
+        "chain",
+        "code",
+        "doc"
+      ],
+      "links": 12
+    },
+    {
+      "no": 6,
+      "month": "11",
+      "cost": 15000,
+      "promise": "・Resolution of all known bugs and issues.\n・Complete user and developer documentation, covering setup, integration, and operation of the SeedSigner Cardano app.\n・Proof of Concept (PoC) demonstrating the integration of the SeedSigner with an open-source browser wallet via a fork.\n・Initiate communication with browser wallet vendors to explore official integration of the SeedSigner.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・All known bugs must be resolved, and the application must be stable.\n・Documentation must be comprehensive and easily accessible, providing clear instructions for developers and users.\n・Successful demonstration of integration with an open-source browser wallet as a PoC.\n・Establish initial communication with browser wallet vendors to promote official SeedSigner integration.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Resolution of all known bugs and issues.\n・https://drive.google.com/file/d/1UUwESMlnXprDQQKZz9MsKdejzKgePzgg/view?usp=sharing\n\nComplete user and developer documentation, covering setup, integration, and operation of the SeedSigner Cardano app.\n・Documentation index: https://github.com/Biglup/cardano-seedsigner/tree/main/docs\n・Setup guide: https://github.com/Biglup/cardano-seedsigner/blob/main/docs/setup_guide.md\n・Operation guide: https://github.com/Biglup/cardano-seedsigner/blob/main/docs/operation_guide.md\n・Integration guide (wallet/dApp developers): https://github.com/Biglup/cardano-seedsigner/blob/main/docs/integration_guide.md\n・Protocol specification v1.1 (PDF): https://github.com/Biglup/cardano-seedsigner/blob/main/docs/cardano_seedsigner_air_gapped_hardware_wallet_specification_v1.1.pdf\n・QR formats reference: https://github.com/Biglup/cardano-seedsigner/blob/main/docs/qr_formats.md\n・Releases (signed binaries): https://github.com/Biglup/cardano-seedsigner/releases\n\nProof of Concept (PoC) demonstrating the integration of the SeedSigner with an open-source browser wallet via a fork.\n・Tutorial / demo video (end to end flow): https://www.youtube.com/watch?v=D7SUn30VyX4\n・Lace integration announcement: https://www.lace.io/blog/your-keys-your-way-lace-now-supports-seedsigner\n\nInitiate communication with browser wallet vendors to explore official integration of the SeedSigner.\n・VESPR https://drive.google.com/file/d/1jLnkKhwF5Zfls7Em5cuyoZVayWGCIBaZ/view?usp=sharing\n・NUFI https://drive.google.com/file/d/13W_OinzE57gv7XsLhgM2DeXRQEq3FNmK/view?usp=sharing\n・Game Changer https://drive.google.com/file/d/1bbAzt-3OsA7KitY03KRInBp7lCeWC2r3/view?usp=sharing\n・Eternl https://drive.google.com/file/d/1UiFXyhNq6DgMmSXP7UmWBe96K8ioSFGi/view?usp=sharing\n\nFinal close-out report\n・https://drive.google.com/file/d/1VVRNMsA1red_0IFWaZap9x4voPckdeng/view?usp=sharing\n\nFinal closeout video\n・https://www.youtube.com/watch?v=nSUw9pnIE2Y",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 33
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "title": "GY Options trading",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 30000,
+      "promise": "・Finalized validator and minting policy for options as native tokens (1 token = right to swap 1 unit of deposit asset for payment asset at a strike during an exercise interval).\n・Early cancellation path: writer can burn any unsold option tokens (before a configurable cutoff) to unlock the deposit early.\n・Dynamic fee configuration using a reference datum identified by an admin NFT (flat and/or % fees; retrieval fee can be zero).\n・Evaluation note + prototype branch for Plutus V3 and/or Aiken (port at least one script to Aiken to compare code size/cost).\n\nFull unit/property tests incl. boundary times, price/amount invariants, partial fills, cancellation safety, and fee invariants.",
+      "criteria": "・Validator enforces: correct strike, assets/amounts, validity interval, and fee debit routing; minting policy guarantees 1:1 deposit lock per option minted; no bypass of early‑cancellation rules (only writer; only unsold; before cutoff).\n・Dynamic fees are read from reference UTxO (no redeploy to change); retrieval can be fee‑free if configured.\n・100% test pass rate; property tests cover edge cases (start/end slot boundaries; zero liquidity; wrong assets; wrong signer; fee datum missing/changed).\n・Successful testnet deployment and execution (issue/exercise/retrieve/early‑cancel) with tx hashes",
+      "report": "Public GitHub: on‑chain code + tests; README explaining parameters & fee config.\nhttps://github.com/geniusyield/options-contracts\nTestnet tx hashes: at least (a) mint+issue, (b) execute, (c) retrieve after expiry, (d) early‑cancel before cutoff.\nhttps://github.com/geniusyield/options-contracts/blob/main/TESTNET.md\nShort audit/readiness memo (internal review) describing threats & mitigations.\n https://github.com/geniusyield/options-contracts/blob/main/AUDIT.md\n﻿Aiken/Plutus V3 analysis doc + (at minimum) a prototype Aiken script with cost comparison.\n Aiken/PlutusV3 analysis doc \n https://github.com/geniusyield/options-contracts/blob/main/AIKEN_ANALYSIS.md \n Aiken prototype — spend + mint validators \n https://github.com/geniusyield/options-contracts/blob/main/aiken/validators/option.ak \n Aiken shared types \n https://github.com/geniusyield/options-contracts/blob/main/aiken/lib/geniusyield/options/types.ak \n Size & ExUnit benchmark comparison \n https://github.com/geniusyield/options-contracts/blob/main/aiken/BENCHMARK.md",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 25000,
+      "promise": "・Hardened Haskell builders: createOption, executeOption, retrieveOption, and new cancelUnexercisedOption.\n・REST API endpoints (GET list; POST create/execute/retrieve/cancel) returning unsigned txs for wallet signing; wiring to Atlas PAB.\n・﻿Minimal web UI for end‑to‑end flows with wallet connect (CIP‑30): create → exercise → retrieve → early‑cancel.",
+      "criteria": "・Backend composes correct transactions for all flows; rejects invalid signer/interval/asset/fee conditions.\n・UI can create and exercise options using testnet wallets; shows lifecycle states (Not started / Active / Expired).\n・Logs & observability to trace input UTxOs and datum decoding; API docs published.\n\nA short load test (Atlas queue stress test) must:\n・Send ≥ 30 sequential tx-build requests over 3–5 minutes\n・Achieve successful tx-build response rate ≥ 95%\n・No critical failures (crashes, unhandled exceptions, queue deadlocks).",
+      "report": "Public: https://drive.google.com/drive/folders/1LgOeAQerEushW24Re3NFOGQ_DABykjfj?usp=sharing\nM2-Submission-Package/\n\n ├── README.md \n\n ├── 01_evidence_doc/MILESTONE-2.md \n\n ├── 02_test_results/ \n\n │ ├── api-test-report.md \n\n │ └── load-test-report.md \n\n ├── 03_screenshots/ \n\n └── 04_test_scripts/",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 30000,
+      "promise": "・Extend minting policy to produce CIP‑68 compliant reference NFT per option series with on‑chain fields:\n・ deposit_policy, deposit_asset, payment_policy, payment_asset, strike, start_slot, end_slot, type (put/call), cancellable (bool), fee_cfg_ref (policy/id).\n・Tests proving metadata is retrievable on‑chain and renders in supported wallets (e.g., Nami/Eternl).",
+      "criteria": "・CIP‑68 structure validates; metadata displays correctly in at least one wallet and in a token explorer.\n・At least two distinct option series minted with full metadata, including cancellable flag and fee reference.\n・﻿Example metadata JSON checked into repo; optional SVG renderer for a quick visual “option badge”.",
+      "report": "Catalyst Milestone 3 re-submission — Series 2 evidence added. \n\n A second distinct CIP-68 option series (M3-Series-2, ADA→GENS Call · strike 0.55 · non-cancellable) was minted on Cardano Preview testnet at \n transaction hash 20fd27b109ebfc6a6dd888d746fcb054d0e8314eb2b7ad5a2a4df6c5f00d0e81 (block 4,281,747, valid_contract: true). The series mints a paired CIP-68 reference NFT and user NFT under the same AnyMint policy as Series 1, sharing the 28-byte body 94e35fca…2c0d and differing only in the CIP-67 label prefixes 0x000643b0 (ref) and 0x000de140 (user). The on-chain inline datum contains all required fields, explicitly including cancellable: 0 (false — distinct from Series 1's cancellable: 1) and fee_cfg_ref: \"\" (the on-chain default noFeeConfigNft). Full evidence — transaction hash, asset IDs, decoded metadata JSON, and explorer link — is published in web-options/MILESTONE-3.md § 9 at the public repo:\n\nhttps://github.com/geniusyield/cardano-options-catalyst-m2/blob/main/web-options/MILESTONE-3.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    }
+  ]
+}

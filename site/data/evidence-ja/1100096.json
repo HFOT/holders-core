@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "コミュニティに到達し、他のチェーンでロイヤリティのアプローチを調べる結果、簡単なレビューのための簡単なレポートにまとめました。\nCIP-102標準の2バージョン、イントラコレクションロイヤリティ、バックワード互換性、コミュニティフィードバックから収集された改善を含みます.",
+      "criteria": "調査報告書は、カルダノのコミュニティメンバーや他のチェーンに関する観察、およびその改善に関する決定から入力する必要があります。\nCIP-102規格のVer.2はCIP規格委員会の審査を通過し、CIPsリポジトリのマスターブランチに統合する必要があります。 https://github.com/cardano-foundation/CIPs",
+      "report": "A. アウトプット:エコシステムとコミュニティの研究、レポートにコンパイル\n受諾基準: コミュニティからの入力、他のチェーンの観察、改善の決定が必要です。\n証拠:\n研究報告はこちら: https://github.com/SamDelaney/CIP 102 Reference/blob/main/v2%20Research%20Report.pdf\nGoogleドライブ版: https://drive.google.com/file/d/1YOSdhVP150wF4dUMZ2QcFAFZej-yDKxL/view?usp=sharing\nB. 出力:CIP 102標準w /イントラコレクションロイヤリティ、後方互換性、コミュニティフィードバック結果の更新(ブロードリー利用可能なツールコール、CIP-88統合)\n受諾の基準:バージョン2は、レビューと合併を通過しました。\n証拠:\nPR: https://github.com/cardano-foundation/CIPs/pull/1177.\nサブディレクトリ: https://github.com/cardano-foundation/CIPs/tree/master/CIP-0102."
+    },
+    {
+      "no": 2,
+      "promise": "CIP リポジトリの CIP 102 フォルダに保存されている参照実装のすべての 3 つのコアコンポーネントを更新します。\n・CIP 102準拠のNFTをロイヤリティでマイニング\n・CIP102 NFTのロイヤリティオフチェーンの読み込み\n・チェーン上のCIP 102 NFTロイヤリティに対する読み込みと検証\n\nCIP-102 v2 で説明した新機能を順守して実証するなど.",
+      "criteria": "参照実装のプルリクエストは承認され、マスターにマージされています.",
+      "report": "A. 出力: CIP 102 準拠の NFT をロイヤリティで最小化\n受諾基準: 参照実装のプルリクエストは、マスターに承認され、マージされています。\n証拠: https://github.com/SamDelaney/CIP 102 Reference/pull/2 がメインに統合されました。 ここで \"mint-collection\" コマンドが含まれているので、v2 のロイヤリティフラグでコレクションを縮小できます。\nこれをテストする方法の詳細については、README を参照してください。\nB. 出力:CIP 102 NFTのロイヤリティオフチェーンを読みます\n受諾基準: 参照実装のプルリクエストは、マスターに承認され、マージされています。\n証拠: https://github.com/SamDelaney/CIP 102 Reference/pull/2 がメインに統合されました。 ここで「get-royalties」コマンドが含まれているので、コレクションとv2ロイヤリティフラグに基づいてロイヤリティ・ダタムを読み、印刷します。\nこれをテストする方法の詳細については、README で見つけることができます。\nC. 出力: チェーンのCIP 102 NFTのロイヤリティに対して読み、有効\n受諾基準: 参照実装のプルリクエストは、マスターに承認され、マージされています。\n証拠: https://github.com/SamDelaney/CIP 102 Reference/pull/2 がメインに統合されました。 ここでは、オンチェーンバリデータのロイヤリティパースの更新と、更新された機能を確認するテストが含まれています。\n詳細は onchain-reference README を参照してください."
+    },
+    {
+      "no": 3,
+      "promise": "CIP-102 をサポートするための CIP-102 v2 をサポートする 3-5 既存のオープンソースライブラリを更新します。 これらのライブラリは、スイッチがコミュニティによって要求される場合を除き、CIP-102 v1 の資金供給された作業の一部として選択されたものと同じでなければなりません。\nこれには、以下のいずれかのものが含まれます。\n・マイニングの実施\n・オフチェーン読書実装\n・Onchain検証実装\n\nプロジェクトは、レポートとビデオを閉じます.",
+      "criteria": "選択した各ライブラリへのPRは、承認および統合されています。\n触媒チームにアセット(レポート&ビデオ)を提出しました.",
+      "report": "A. 出力: CIP-102 v2 をサポートする CIP-102 をサポートする 3-5 既存のオープンソースライブラリを更新します。 これらのライブラリは、スイッチがコミュニティによって要求される場合を除き、CIP-102 v1 の資金供給された作業の一部として選択されたものと同じでなければなりません。\n受諾基準:選択した各ライブラリへのPRが作成され、承認および統合されています。\n証拠:\n・Mintun.io:Mintun は CIP-88 を CIP-102 v2 の実装と一貫して実装しています。 特にCIP-88のソースコードは、ここでオープンソースが見つかります。\n・Python実装:PyCardanoへの最終貢献で、Python開発者コミュニティをキャプチャします。\n・前提条件:CIP-67サポート - 固定:https://github.com/theeldermillenial/pycardano/pull/4\n・CIP-102 v2 サポートを追加: https://github.com/bloxbean/cardano-client-lib/pull/627\n・Java の実装: Java と JVM ベースの開発者が使えるように、Cardano-client-lib に統合されたサポート。\n・前提条件: Gradle v8.0 - 固定: https://github.com/Python-Cardano/pycardano/pull/490\n・CIP-102 v2 のサポート: https://github.com/Python-Cardano/pycardano/pull/491\n\nB. 出力: プロジェクト クローズアウト ビデオ\n受諾基準: 資産のクローズアウト(レポート&ビデオ)が触媒チームに提出されました。\n証拠: https://youtu.be/wHvybIGOnTQ\nC. 出力: プロジェクト クローズアウト レポート\n受諾基準: 資産のクローズアウト(レポート&ビデオ)が触媒チームに提出されました。\n証拠: https://docs.google.com/document/d/1R7Kvwq0Ij SrAndeLiEnzRpf3sbt9 uBHIv4Oo6haco/edit?usp=sharing"
+    }
+  ]
+}

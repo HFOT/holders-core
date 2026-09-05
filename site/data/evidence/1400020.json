@@ -1,0 +1,57 @@
+{
+  "title": "by TxPipe - Monitoring Dashboards Tailored for your dApp",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 29125,
+      "promise": "A. A technical architecture document describing the overall system design, including diagrams of the main components and their interactions.\nB. Publicly available source-code containing the initial project scaffold, with stub implementations for all major system components.\nC. A functioning CI/CD workflow to build and test the source-code throughout the whole development process.",
+      "criteria": "A1. The architecture document is published publicly and includes diagrams of the main components and their interactions; the chain tracking engine, the backend data storage, the querying solution, and the web-based frontend.\nB1. The public repository contains the initial project scaffold with stub modules for each major component described in the architecture document.\nC1. A CI/CD workflow is active in the repository and successfully builds/tests the scaffold in preparation for further development.",
+      "report": "A2. Link to the published architecture document in the project repository.\nhttps://github.com/tx3-lang/dashboard/blob/main/README.md\n\nB2. Link to the public GitHub repository containing the open-source code.\nhttps://github.com/tx3-lang/dashboard\n\nC2. Link to a successful CI/CD run in the repository.\nhttps://github.com/tx3-lang/dashboard/actions/runs/22697002025\n\nD2. Video walkthrough of the designed architecture.\nhttps://youtu.be/P7XUvfyDXBQ",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 26698,
+      "promise": "A. A functional chain-tracking engine capable of identifying on-chain transactions relevant to the selected dApp protocols.\nB. Code-generation tooling that produces dApp-specific schemas from Tx3 protocol mappings and the integration code required to semantically enrich tracked transaction data for dashboards.\nC. Integration of a backend data storage and querying solution set up for scalable data retention and extraction.\nD. An example dApp protocol mapping and corresponding dataset to demonstrate the end-to-end tracking and enrichment pipeline.",
+      "criteria": "A1. The chain-tracking engine identifies and stores on-chain transactions associated with the selected dApp protocols.\nB1. The generated schemas and integration code produce stored transaction data that includes the metadata derived from the Tx3 protocol mappings. \nC1. The integrated data storage and querying layer provides efficient access to the stored data, consistent with the system design and aligned with the dashboard’s expected data..\nD1. The example dApp protocol and its associated stored data can be used to demonstrate the full tracking, storage, and enrichment workflow.",
+      "report": "A2. Links to the public repository containing the open-source code for the chain-tracking engine.\n https://github.com/tx3-lang/tx3-lift/tree/main/bin/tracker\n B2. Links to the public repository containing the open-source code for the Tx3-based enrichment flow.\n https://github.com/tx3-lang/tx3-lift\n C2. Links to the public repository containing the open-source code for the backend storage layer.\n https://github.com/tx3-lang/tx3-lift/blob/main/bin/tracker/src/store.rs\n D2. Link to enriched on-chain transaction data produced by the full workflow for the example dApp protocol.\n https://github.com/tx3-lang/tx3-lift/tree/main/bin/tracker/examples/orcfax-burn\n E2. Test reports showing successful integration across the tracking, enrichment, and storage components.\n https://github.com/tx3-lang/tx3-lift/blob/main/docs/integration-test-report.md\n F2. Database schema documentation and example query results showing extracted insights.\n https://github.com/tx3-lang/tx3-lift/blob/main/docs/tracker-database.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 12
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 26698,
+      "promise": "A. A user-friendly web-based frontend for interacting with the enriched on-chain data.\nB. An implementation of the data access patterns and visualizations defined in the design.\nC. An example monitoring dashboard for a selected dApp protocol.\nD. Documentation on how to run the dashboard.",
+      "criteria": "A1. Users can run and explore the web-based frontend.\nB1. Users can access accurate data for each of the access patterns defined in the design.\nC1. The example dashboard displays real on-chain data for the selected dApp protocol.\nD1. Documentation on how to run the dashboard is publicly available.",
+      "report": "A2. Link to the public repository containing the source code for the web-based frontend.\nhttps://github.com/tx3-lang/dashboard\n\nB2. Video walkthrough of how to run and interact with the dashboard.\nhttps://youtu.be/wkdpWWjWQ_4\n﻿\nC2. Link to the public repository containing the implementation for the example dashboard.\nhttps://github.com/tx3-lang/dashboard/tree/main/example\nJust a sqlite example with indigo txs. Copy the `.env.example` as `.env` and run the dashboard to load the txs.\n\nD2. Link to documentation on how to configure and run the system.\nhttps://github.com/tx3-lang/dashboard/blob/main/README.md#quick-start",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 14562,
+      "promise": "A. Publicly available Docker images for installing the complete monitoring system.\nB. Publicly available source code for the complete monitoring system.\nC. Publicly available documentation covering all delivered components and showing how to configure the system.\nD. A close-out video showcasing the final output of the project.\nE. A close-out report describing the project process and final outcomes.",
+      "criteria": "A1. The Docker images allow the monitoring system to be installed and run successfully without additional configuration.\nB1. The complete monitoring system can be successfully used to explore and visualize real on-chain data enriched with semantic and contextual information.\nC1. The documentation enables developers to set up and use the delivered components.\nD1. The close-out video follows Catalyst guidelines.\nE1. The close-out report follows Catalyst guidelines.",
+      "report": "A2. Docker images available for download :\n・Tracker: ghcr.io/tx3-lang/tx3-lift-tracker — https://github.com/tx3-lang/tx3-lift/pkgs/container/tx3-lift-tracker\n・Dashboard: ghcr.io/tx3-lang/dashboard-frontend — https://github.com/tx3-lang/dashboard/pkgs/container/dashboard-frontend\n\nB2. Source-code available in our Github repository\nhttps://github.com/tx3-lang/dashboard\nhttps://github.com/tx3-lang/tx3-lift\nC2. Documentation website\n・Architecture: https://github.com/tx3-lang/dashboard/blob/main/docs/architecture.md\n・Access patterns: https://github.com/tx3-lang/dashboard/blob/main/docs/access-patterns.md\n・Running guide: https://github.com/tx3-lang/dashboard/blob/main/docs/running.md\n\nD2. Close out video uploaded to YouTube\n https://youtu.be/81enJnQQEV4?si=o8vXwRvIXSN-sp7I\nE2. Close out report uploaded to Google drive\nhttps://drive.google.com/file/d/1ee56wQil0BH_YdkRZc5-z0DWgqBuL0xD/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 18
+    }
+  ]
+}

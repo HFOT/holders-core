@@ -1,0 +1,60 @@
+{
+  "title": "Syngenta Agricultural Insight and Earth Observation Data uplifts subsistence farmers into profitability",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "(A) Research report\n(B) Design Document and project plan",
+      "criteria": "(A) Research report completed showing the use case from AE, farmers and business perspective -\n・detailing the target use cases for Earth Observation\n・showing the importance of the use case for farmer empowerment\n・complementary data layers for the Syngenta Foundation’s AE program\n・Demonstrated stakeholders' engagement in the design phase through a series of interviews with Syngenta field officers who are coordinating the AE program\n\n(B) Design Document and project plan\n・will outline:\n・the data structure and blockchain interaction\n・a preliminary design of the user interface and API\n・will detail:",
+      "report": "(A) Use Case Research Report (PDF)\nThis document presents the strategic rationale and practical implementation of a Satellite Oracle system to support smallholder farmers in India. It describes how Earth Observation data and blockchain infrastructure will enhance the capabilities of Agri-Entrepreneurs (AEs), enabling land verification, sustainability tracking, and data-driven advisory services. The report includes a phased rollout plan and outlines future pathways for financial integration.\nhttps://github.com/HashPoint/pcf13-satellite-oracle-syngenta/blob/6bd48ee2eb2e32ff5aba5bff608ce18209e4e4df/Milestone1/UseCaseResearchReport.pdf\n(B) Architecture & Project Plan (PDF and Markdown)\nThis artifact defines the technical architecture, data flow, system components, and blockchain interaction design for the Satellite Oracle. It includes API specifications, oracle data structures, and the integration plan with the Agri-Entrepreneur Digital Diary (AEDD) mobile app. In addition to the PDF we provide the same content in markdown format for better readability. \nPDF: https://github.com/HashPoint/pcf13-satellite-oracle-syngenta/blob/6bd48ee2eb2e32ff5aba5bff608ce18209e4e4df/Milestone1/Design%20document%20and%20Project%20Plan.pdf\nMarkdown: https://github.com/colll78/Syngenta-Oracle/tree/main\n\nIn addition here are a few links which demonstrate stakeholder's engagement in the design phase and the considerable effort we've invested towards ensuring that the project will cater to the target users -\nhttps://x.com/Elkconnect_web3/status/1920747820866252824\nhttps://x.com/YoramBenzvi/status/1918543241336480038\nhttps://drive.google.com/drive/folders/1uD7SWC536GhVqbJktKr2m1Rne93SGevM?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 420000,
+      "promise": "(A) Fully functional Oracle infrastructure ready for deployment on the Cardano preprod testnet.\n・Implement off-chain backend to process Oracle requests\n・Implement on-chain validators to handle Oracle transactions\n・Define and document API interface for integration with external data source\n・Provision and management of cloud infrastructure\n・Execution and reporting of integration tests",
+      "criteria": "・Oracle data requests can be submitted on-chain\n・Oracle data request are fulfilled and results are available on-chain\n・Integration tests results show data consistency and expected performance\n・﻿﻿﻿Development process follows best practices\n・API documentation is available\n・Cloud infrastructure diagram is available",
+      "report": "Publicly available source-code repository:\ncolll78/syngenta-oracle-offchain: Offchain SDK for the Syngenta Oracle\nVersion-control history and change-log:\nsyngenta-oracle-offchain/CHANGELOG.md at main · colll78/syngenta-oracle-offchain\nBackend and API documentation for administrators:\nsyngenta-oracle-offchain/README.md at main · colll78/syngenta-oracle-offchain\nOn-chain interface documentation for data consumers:\nsyngenta-oracle-offchain/onchain-interface.md at main · colll78/syngenta-oracle-offchain\nOn-chain transactions as results of the integration testing:\nDeploy oracle transaction ID: 246936866d55eabd1b8b42665a2dc27448e3847ad709279960c41fb36b9bda77 https://preprod.cexplorer.io/tx/246936866d55eabd1b8b42665a2dc27448e3847ad709279960c41fb36b9bda77?tab=content\nUpdate oracle transaction ID:\nTx 16b4814af18633e6f1447ee0490212417f548378f7323210e4a97afcfd9152d4\",\"farmId detail | Cexplorer.io\nReport describing performance and capacity of the protocol:\nThe protocol is capable of deploying and updating 50 oracle feeds in a single transaction as demonstrated by the tests in `deploy-script.test.ts`.\nLink to a pdf with the cloud infrastructure diagram:\nsyngenta-oracle-offchain/cloud-infrastructure-diagram.md at main · colll78/syngenta-oracle-offchain\nLink to walkthrough video:\nhttps://youtu.be/vxu3oqv0Bdo",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 9
+    },
+    {
+      "no": 3,
+      "month": "11",
+      "cost": 200000,
+      "promise": "(A) Functional UI that provides real-time insights, data input capabilities, and a clear interface for AEs and small farmers to manage farm data and insights.",
+      "criteria": "(A) Dashboard with easy navigation, secure data input, and visualization tools tailored to AE needs.\n・UI is user-tested by a pilot group of AEs for ease of navigation, data access, and decision support.\n・UI aligns with the design outlined in MS1 (AC B.1.b)\n・Feedback from AEs is incorporated to improve interface usability.\n・UI integrates securely with the backend and the PoC oracle.",
+      "report": "A. Output: Functional UI that provides real-time insights, data input capabilities, and a clear interface for AEs and small farmers to manage farm data and insights.\nAcceptance criteria: \nDashboard with easy navigation, secure data input, and visualization tools tailored to AE needs.\n・UI is user-tested by a pilot group of AEs for ease of navigation, data access, and decision support. The mobile app downloaded and tested by 10 AE's \n・UI is developed with the design outlined in MS1\n・Feedback from AE's is collected and majority of it is incorporated to improve interface usability.\n・Secure UI integration with the backend and the PoC oracle is completed \n\nEvidence: \n 1.Publicly accessible demo link for the UI with example data:\n Please download the apk on android phone and use the test credentials given\n app_v1.3.2_m3.apk \n Email: ramkumarsingh@gmail.com \n Password: Agri@611 \n \n 2.Feedback report from AEs confirming usability and functionality.\n 5AM.earth – Satellite Oracle AE Feedback Report\n \n 3.Screenshots or video walkthrough showcasing UI features and data access.\n Video: m3_app_demo.mp4 \n Screenshots: app_m3_ui_screenshots.pdf \n \n 4.System logs demonstrating the integration of the UI with the backend and the oracle.\n app.log \n Onchain Transaction Log",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "13",
+      "cost": 275000,
+      "promise": "(A) Development and deployment of Decentralized Identity (DID) features and NFT-based ownership functionality \n(B) Pilot deployment",
+      "criteria": "(A).1 Successful integration of DID functionality that allows individual farm parcels to be assigned verifiable identities within the system.\n(A).2 NFTs issued to represent and secure specific datasets, demonstrating ownership and traceability.\n(A).3 Smart contract audits confirming the correct issuance and management of DIDs and NFTs without security vulnerabilities.\n(B) Pilot deployment - Integrating (A) with the technical components developed in the previous milestoned to support the use case outlined in MS1 and - \n・Involving at least 10 AEs\n・covering 1,000 farmers/plots",
+      "report": "A. Output: Development and deployment of Decentralized Identity (DID) features and NFT-based ownership functionality \nAcceptance criteria: \n1 Successful integration of DID functionality that allows individual farm parcels to be assigned verifiable identities within the system.\n2 NFTs issued to represent and secure specific datasets, demonstrating ownership and traceability.\n3 Smart contract audits confirming the correct issuance and management of DIDs and NFTs without security vulnerabilities.\nEvidence: \n(A) Link to example on-chain transaction showing the minting of the NFT with relevant data points, https://drive.google.com/file/d/1FNrPjn0r-YAnByEVfhH3bCLrYc4nVemg/view?usp=sharing\n(A) Link to audit report (V2): https://drive.google.com/file/d/1lqT_TRlGfkIC4jvsQWT0mQANXCJeGZ2h/view?usp=sharing\nFirst Audit Report (V1): https://drive.google.com/file/d/1YH-_YHBecbQOPy7VkGQp50juZvJa4Diy/view?usp=sharing \n\nB. Output: Pilot deployment\nAcceptance criteria: Pilot deployment - Integrating (A) with the technical components developed in the previous milestone to support the use case outlined in MS1 and - \n 1 Involving at least 10 AEs\n 2 covering 1,000 farmers/plots\nEvidence: \n(B) Link to report demonstrating the pilot deployment https://drive.google.com/file/d/1CHh1xvPinR2NGwPnt7_AcuDQLHrLO9Ej/view?usp=sharing\n(B) A walkthrough video illustrating the the pilot deployment https://youtu.be/7CJk5ZrSa_0\nResponse to feedback from reviewer https://drive.google.com/file/d/1aniRww_MivS6ShCQeAkAyEZ4DIBqnNxR/view?usp=sharing \nRevised Technical Implementation Report https://drive.google.com/file/d/1FNrPjn0r-YAnByEVfhH3bCLrYc4nVemg/view?usp=sharing \nOwnership-NFT-Approach-Selection https://drive.google.com/file/d/1vsUCUA_cUEmm4-LHJufd5oCh56efSc-G/view?usp=sharing\nAudit Report Remediation https://drive.google.com/file/d/1TJeX7pPcMICrBs_meq7jOFLdy0DuW9-g/view?usp=sharing",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 9
+    }
+  ]
+}

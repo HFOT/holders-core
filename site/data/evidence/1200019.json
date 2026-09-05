@@ -1,0 +1,42 @@
+{
+  "title": "Adding Leverage to DexHunter",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "・Comprehensive project plan, outlining all phases and tasks.\n・Initial wireframes covering all major sections of the leverage feature.\n・Creation of a GitHub repository for version control.",
+      "criteria": "・Completion and approval of the project plan.\n・Wireframes reviewed and approved by the team.\n・GitHub repository set up with initial files.",
+      "report": "・Project plan and wireframes: https://github.com/DexHunterIO/DH-Leverage/blob/main/architecture.md\n・Readme and requirements: https://github.com/DexHunterIO/DH-Leverage/blob/main/README.md\n・GitHub repository set up with initial files: https://github.com/DexHunterIO/DH-Leverage\n\nThank you for the feedback. We have also added a project timeline, approved by and time, wireframe and architecture links, and a link to the catalyst proposal to the bottom of the README. \nThe explicit approval by the CEO and Blockchain lead is mentioned at the beginning of the READ: \"Approved by Nikita Melentjevs - CEO & Edoardo Salvioni - Blockchain Lead on 18.08.2025\"",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 40000,
+      "promise": "Development of core infrastructure related to the leverage functionality.",
+      "criteria": "・Added data parsing and asset availability for borrowing and lending\n・Documentation of the development process in GitHub.\n・The code was reviewed and approved by the team.",
+      "report": "* GitHub repository https://github.com/DexHunterIO/DH-Leverage\n* Adjusted Deadlines at https://github.com/DexHunterIO/DH-Leverage/blob/main/README.md\n* Added Parsing and Lending/ Borrowing core using 2 protocols on the cardano Blockchain (Liqwid/Surf)\n* Added https://github.com/DexHunterIO/DH-Leverage/blob/main/development-process.md showing the development process and logic\n* Added Basic Ui for testing Borrow/ Lend/ Cancel/Repay/ Check/search pools ( This is not the final UI it is merely a test Vector)\n* Added automated lint and tests on GitHub workflows. \n* Automated tests pass.\n\nIn the system there is Persistence setup using redis and MongoDB, yet if the api is run without MongoDB or Redis connection it will start in No persistence mode, allowing to use the various protocols without needing to run mongo and redis.\n\nCommunicated catalyst deadline extension with support team",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 75000,
+      "promise": "Users are able to execute longing and shorting of specific assets that have enough lending and borrowing power to allow leverage",
+      "criteria": "・Creating backend functions to take in selected assets and building a transaction to execute leveraged trading\n・Creating an interface that will display the leveraged trading functionality and it is clear to the user.\n・Automated tests pass for leverage, creating build functions",
+      "report": "Milestone 3 Submission text: All the relevant code for leverage integration is at https://github.com/DexHunterIO/DH-Leverage at the a599252\n hash.\n\nTo run: Populate .env following sample.env Start mongodb if needed also using the bash script, and populate the .env.\nThen Start the services using .quick-start.sh.\n\nWhen all services have been started. Browse to http://localhost:8080/#/leverage to create leverage ( long short orders) using Recursive lends and borrows. ( max 1.8x Leverage). \nElse to the http://localhost:8080/#/perps to leverage trade using Perpetuals.\n\nThis frontend is the testing frontend which was extended to include leverage and leverage using perps. \nThe final clean and polished frontend is for milestone 4.\n\nAll the flows have been tested manually: Short long on SNEK up to 1.8x recursive. Also Short long using perps on ADA up to 20x.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 3
+    }
+  ]
+}

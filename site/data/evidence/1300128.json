@@ -1,0 +1,74 @@
+{
+  "title": "Lucid Evolution 2.0 - Private Testnet SDK & L2 Provider Integration",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 60000,
+      "promise": "・Detailed design document outlining the SDK’s architecture, functionalities, and user requirements.\n・List of features to be included in the SDK based on community feedback and developer needs.",
+      "criteria": "・The design document is reviewed and approved by stakeholders.\n・Clear and prioritized feature list is established for development.",
+      "report": "Milestone 1 – SDK Architecture Design Document\nThis milestone delivers a comprehensive design document detailing the rationale, objectives, and benefits of the Lucid Evolution SDK architecture. It outlines the modular structure, core components, and development priorities based on community feedback and developer needs. The document includes a detailed feature list, planned integrations, and considerations for future extensibility, providing a clear foundation for subsequent implementation milestones.\nhttps://github.com/Anastasia-Labs/project-close-out-reports/blob/main/f13-lucid-evolution-closeout-report/private-testnet-sdk-m1.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 60000,
+      "promise": "SDK Implementation: \n・Initial SDK to create and manage private testnets with features like configurable parameters, automated setup/teardown, and APIs for contract deployment.\n\nDockerode/Testcontainers Integration:\n・On-demand provisioning of isolated test environments with pre-configured container images.",
+      "criteria": "・SDK functions correctly, allowing users to spin up private testnets easily.\n・Successful interaction with Docker for container management.",
+      "report": "We are happy to submit our Proof of Achievement for the \"Core SDK Development\" milestone. For detailed evidence and verification, please see the comprehensive report.\nMilestone Report:\nComplete documentation of all deliverables including:\n- Private Testnet SDK implementation with Docker-based container orchestration\n- 33 passing tests (23 integration + 5 Genesis + 5 Client) verified in CI\n- Configurable parameters, automated setup/teardown, and command execution APIs\n- Dockerode integration with complete container lifecycle management\n- Step-by-step verification instructions and CI evidence\n\nSee report for full details on acceptance criteria verification, code artifacts (1,418 lines implementation), test coverage, and repository information.\nhttps://drive.google.com/file/d/1rsZzIpwtcTunyx4tj9vmW4ozmc61XZ2r/view?usp=sharing\nProject Context:\nEvolution-SDK is the continuation of lucid-evolution by the same core maintainer, now incubated under IntersectMBO for long-term sustainability and alignment with Cardano ecosystem standards.\nRepository: https://github.com/IntersectMBO/evolution-sdk\nCI Verification: https://github.com/IntersectMBO/evolution-sdk/actions/runs/19014806945/job/54301097912",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 40000,
+      "promise": "・Creation of initial user guides and documentation to support developers in using the SDK.\n・Development of onboarding materials, including quick start guides and example projects.",
+      "criteria": "・Documentation clearly explains SDK features and provides step-by-step instructions for use.\n・Onboarding materials are accessible and help new users quickly understand how to use the SDK.",
+      "report": "We are happy to submit our Proof of Achievement for the \"Documentation and Developer Onboarding\" milestone. For detailed evidence and verification, please see the comprehensive report.\nMilestone Report:\nComplete documentation of all deliverables including:\n・Comprehensive Devnet documentation with 4 guides (1,185+ lines) covering concepts, setup, and usage\n・Step-by-step getting started guide with 9 progressive sections (installation through troubleshooting)\n・Integration guide with 7 real-world workflow examples demonstrating complete transactions\n・Configuration reference for genesis customization and protocol parameters\n・All examples verified working with TypeScript type checking and live deployment\n\nSee report for full details on acceptance criteria verification, documentation structure, accessibility features, and repository information.\nhttps://drive.google.com/file/d/1L7fV-wcxnF1Mf9q-AvWKDpJB86FHFXtk/view?usp=sharing\nProject Context:\nEvolution-SDK is the continuation of lucid-evolution by the same core maintainer, now incubated under IntersectMBO for long-term sustainability and alignment with Cardano ecosystem standards.\nRepository: https://github.com/IntersectMBO/evolution-sdk\nDocumentation Site: https://intersectmbo.github.io/evolution-sdk/docs/devnet/",
+      "kinds": [
+        "code",
+        "doc",
+        "live"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 10000,
+      "promise": "・Implementation of additional features and optimizations based on developer feedback.\n・Final adjustments to ensure robust performance and usability of the SDK.",
+      "criteria": "Feature Integration:\n・All planned features are integrated, tested, and function as expected based on documented requirements.\n\nTest Metrics:\n・Successful execution of all integration tests without critical failures.\n・Ensure the SDK handles multiple testnet environments being spun up and torn down.",
+      "report": "We are happy to submit our Proof of Achievement for the \"Feature Development and Optimization\" milestone. For detailed evidence and verification, please see the comprehensive report.\nMilestone Report:\nComplete feature development and optimization of the Private Testnet SDK including:\n・Comprehensive test suite with 49 integration tests across 4 test files (100% pass rate)\n・Multiple isolated private testnets running simultaneously with automatic port allocation\n・Network isolation verification between concurrent clusters\n・Genesis UTxO calculation module implementing Cardano's deterministic algorithm\n・Module architecture restructuring with 5 focused modules (Cluster, Config, Container, Genesis, Images)\n・Resource cleanup and proper teardown after test completion\n\nThe video demonstration showcases the full test suite execution and demonstrates how multiple private testnets are generated and managed in complete isolation from each other.\nSee report for full details on acceptance criteria verification, test metrics, and multi-environment validation.\nhttps://drive.google.com/file/d/1BqHjn2fgTaYUFJkpLxLQUOAcg3GSmCNj/view?usp=drive_link\nVideo Demonstration:\nhttps://drive.google.com/file/d/1QrI6b4XilefPTkdduToIddfrR019Zt7w/view?usp=drive_link\nCI Test Results:\nhttps://github.com/IntersectMBO/evolution-sdk/actions/runs/19860633821\nPull Request:\nhttps://github.com/IntersectMBO/evolution-sdk/pull/80\nProject Context:\nEvolution-SDK is the continuation of lucid-evolution by the same core maintainer, now incubated under IntersectMBO for long-term sustainability and alignment with Cardano ecosystem standards.\nRepository: https://github.com/IntersectMBO/evolution-sdk\nDocumentation Site: https://intersectmbo.github.io/evolution-sdk/docs/devnet/",
+      "kinds": [
+        "code",
+        "doc",
+        "live"
+      ],
+      "links": 12
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 30000,
+      "promise": "・Project Closeout Report: Summarizing project achievements, challenges, lessons learned.\n・Demonstration Video: Showcasing key features and improvements of Lucid Evolution.",
+      "criteria": "- Lucid Evolution repository https://github.com/Anastasia-Labs/lucid-evolution contains the final updated codebase, verified through pull request reviews.\n- The Project Closeout Report is provided and includes:\n・A detailed and complete feature/bug tracking log with clear resolutions for each entry.\n・Comprehensive documentation for all new features, including examples, descriptions, and usage details.\n・A demonstration video is submitted, effectively showcasing the key features and improvements.",
+      "report": "We are pleased to submit our Final Milestone Closeout Report for Project 1300128 \"Private Testnet SDK & L2 Provider Integration.\" This milestone summarizes the complete project achievements, challenges encountered, and lessons learned across all four development milestones.\nCloseout Report:\nThe comprehensive closeout report documents:\n・Project Achievement Summary: Docker-based private Cardano testnet infrastructure enabling developers to spin up fully-functional development environments in seconds with cardano-node, Kupo, and Ogmios\n・Milestone Deliverables: All four milestones completed Research & Architecture, Core SDK Development, Documentation & Developer Onboarding, and Feature Development & Optimization\n・Total Implementation: 2,047 lines of production code across Cluster.ts, Container.ts, Config.ts, Genesis.ts, and Images.ts\n・Test Coverage: 49 integration tests with real Docker container testing ensuring zero reported bugs in production\n・Technical Challenges & Solutions: Genesis UTxO discovery (Kupo doesn't index block 0), container startup sequencing, port conflict management, and module export ergonomics\n・Lessons Learned: Real transactions beat mocked tests, Effect's typed error channels, documentation-driven development, and community feedback shaping architecture\n\nSee report for full project summary, technical architecture, and evidence of milestone completion.\nReport PDF: https://drive.google.com/file/d/15aqmaSpOcw2HrSMUuNiPFP2ws_Ca2qxw/view?usp=sharing\nVideo Demonstration: https://youtu.be/9jwTqy2aXs0\nProject Context:\nEvolution-SDK is the continuation of lucid-evolution by the same core maintainer, now incubated under IntersectMBO, a significant success for the Catalyst ecosystem ensuring long-term sustainability and alignment with Cardano governance standards.\nRepository: https://github.com/IntersectMBO/evolution-sdk\nDocumentation:\n・https://intersectmbo.github.io/evolution-sdk/docs/devnet/\n・https://intersectmbo.github.io/evolution-sdk/docs/devnet/getting",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 16,
+      "cut": true
+    }
+  ]
+}

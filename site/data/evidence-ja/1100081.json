@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "(A) 選択した第三者監査会社(PatchStack)のCardanoPress Coreとフレームワークの監査レポート。\n・CardanoPress:https://github.com/CardanoPress/cardanopress\n・フレームワーク: https://github.com/CardanoPress/framework\n\n監査には、ソースコード全体の検査が含まれます。 これは、CardanoPressプラグインが依存する依存関係/ライブラリなどの第三者によるコードは含まれませんが、統合と利用は監査されます。\n監査中に見つかったセキュリティ問題をパッチするための提案による詳細なレポート.",
+      "criteria": "(A) 監査会社がCardanoPress開発チームに提供するCardanoPress Coreとフレームワークリポジトリのコードベースの詳細な監査レポートを書いています。\n詳細なレポートでは、監査中に見つかったセキュリティ問題をパッチする提案があります。\n監査レポートは、GitBookで見つかった開発者レポートと同様です。 https://docs.patchstack.com/docs/developer-report",
+      "report": "CardanoPressコアプラグインとフレームワークの監査は、当社の監査会社PatchStackによって完了しました。\n監査のコピーは、次の方法でアクセスすることができます。\nhttps://drive.google.com/drive/folders/1hD6 klu8cunqP3EsTEYMZJSroRRRnBC4z?usp=sharing\n\nマイルストーンの証拠\na) このマイルストーンの証拠の一部として、請求書の請求書と支払いを含みます。\n請求書: https://drive.google.com/drive/folders/1 pVc9DIH83eINkdmp6elOp5FgeBzfTYg?usp=sharing\n支払い: https://drive.google.com/drive/folders/1FxASMYPCCEE4 tkrgYSVpt1l-ZrQxsIC?usp=sharing\nb) 進行中のブログ投稿は、ソーシャルメディアアカウントと一緒に当社のウェブサイトに掲載されています。\n・https://cardanopress.io/cardanopress-audit/\n・https://x.com/CardanoPress/status/1821112204164521988\n\nc) 監査レポートは、レビューチームのためにアクセス可能です。\n・https://drive.google.com/drive/folders/1hD6 klu8cunqP3EsTEYMZJSroRRRnBC4z?usp=drive link"
+    },
+    {
+      "no": 2,
+      "promise": "レポートで強調したセキュリティ上の問題や提案に対処する新しいバージョンがリリースされます。\nhttps://github.com/CardanoPress/cardanopress/\nこれは、監査会社によって再評価され、最終的なマイルストーンでWordPress.orgウェブサイトに掲載されます.",
+      "criteria": "監査会社がマイルストーン1で提供した監査報告を通じて、CardanoPressチームは、監査会社が提案するすべての問題とセキュリティの推奨事項を通じて動作します。\nGit commit は、レポートで発生した各問題に使用され、CardanoPress プラグインの新しいセキュリティリリースにコンパイルされます。\n新しいリリースは、重要な脆弱性を修正し、対処できない問題を認識します。\nCardanoPressの新しくリリースされたバージョンは、Webサイトをインストールおよび保護するためのユーザーの次のバージョンで見つけることができます。\n・https://github.com/CardanoPress/cardanopress/re",
+      "report": "CardanoPressチームは、セキュリティ監査中に発生したすべての問題に最終的に対処しました。\nリリース v1.20.0 - v1.22.0 は、発生したすべての問題に対応します。\n・v1.20.0 - https://github.com/CardanoPress/cardanopress/releases/tag/v1.20.0\n・v1.21.0 - https://github.com/CardanoPress/cardanopress/releases/tag/v1.21.0\n・v1.22.0 - https://github.com/CardanoPress/cardanopress/releases/tag/v1.22.0\n\nブログ投稿は、さまざまなキーコードを破棄して、各問題が発生した各課題に取り組むことで、レビューが容易になります。\nhttps://cardanopress.io/cardanopress-security-audit-complete/\nプラグインの最新の安全なバージョンは、WordPressのプラグインディレクトリで利用可能です\nhttps://wordpress.org/plugins/cardanopress/"
+    },
+    {
+      "no": 3,
+      "promise": "監査会社は、当社の新しいセキュリティリリースの変更と更新を評価し、変更が報告に取り組むことを確認します。\nWordPress.org(https://wordpress.org/plugins/cardanopress/)で更新されたバージョンを正式にリリースできます。\n現行のユーザーと新規のユーザーは、ウェブサイトを構築するためのロック・ソリッドで安全な基盤を持っています.",
+      "criteria": "監査会社によって再評価され、WordPress.orgウェブサイトでリリースされた完全公開された新しいセキュリティリリース:https://wordpress.org/plugins/cardanopress/。\nセキュリティリリースは https://wordpress.org/plugins/cardanopress/ にあります。\n監査会社が更新を見直し、プラグインの変更から監査レポートを更新しました。\nGitHubアカウントとCardanoPress.ioのウェブサイトで公開されます.",
+      "report": "CardanoPressのアップデートリリースは、すべてのセキュリティ情報、低、中、高、および重要な問題が対処されていることを確認したセキュリティ監査人、PatchStackによって、すべて再監査されています。\nPatchStackのリウディットレポートがオンラインでアップロードされ、公開されているため、レビュー:\nhttps://drive.google.com/file/d/1qDenZ77E7S1VvqCvhX714 bL8jt8RghR/view?usp=drive link\n(PatchStackでプロジェクトを開始した際の3月は日付です)\n元の監査は、次の方法で見つけることができます。\nhttps://drive.google.com/file/d/1-Q1PdvESuptL819yt1lf caa4ERnEN j/view?usp=drive link\n監査を突破したブログ投稿と、CardanoPressウェブサイトでどのようにアドレスが確認できるか:\nhttps://cardanopress.io/cardanopress-security-audit-complete/\n\n監査に取り組むGithubのセキュリティリリース\nバージョン1.20.0\nhttps://github.com/CardanoPress/cardanopress/releases/tag/v1.20.0\nv1.21.0の\nhttps://github.com/CardanoPress/cardanopress/releases/tag/v1.21.0\nバージョン1.22.0\nhttps://github.com/CardanoPress/cardanopress/releases/tag/v1.22.0\n\nレポートを閉じる\nhttps://cardanopress.io/cardanopress-security-audit-close-out-report/\nhttps://docs.google.com/document/d/1IZW68YG5f2M8zq2fmmFtgA TqxwtxJ8v374oPk4OLjg/edit?usp=sharing\n\nビデオを閉じる\nhttps://youtu.be/4gAHKWQHtV8"
+    }
+  ]
+}

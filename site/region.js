@@ -27,6 +27,23 @@ const METRICS = {
 };
 
 /* 国名の日本語表記。表示専用であり、記録（英語）は書き換えない。 */
+/* 分野の日本語。Catalyst Japan の表記を引き継ぐ。記録（英語）は書き換えない。 */
+const FIELD_JA = {
+  "Community & Outreach": "コミュニティ & アウトリーチ",
+  "Development & Tools": "開発 & ツール",
+  "Events & Marketing": "イベント & マーケティング",
+  "Identity & Security": "アイデンティティ & セキュリティ",
+  "Real World Applications": "リアルワールド応用",
+  "Smart Contracts": "スマートコントラクト",
+  "Interoperability": "相互運用性",
+  "Sustainability": "サステナビリティ",
+  "Governance": "ガバナンス",
+  "Education": "教育",
+  "DeFi": "DeFi",
+  "GameFi": "GameFi",
+  "NFT": "NFT",
+};
+
 const COUNTRY_JA = {
   Argentina: "アルゼンチン", Australia: "オーストラリア", Austria: "オーストリア",
   Belgium: "ベルギー", Belize: "ベリーズ", Bermuda: "バミューダ", Bolivia: "ボリビア",
@@ -60,6 +77,66 @@ const COUNTRY_JA = {
   Zimbabwe: "ジンバブエ",
 };
 
+/* 状態フラグの表示。意味の定義は catalyst/flags.py にあり、projects.json が運んでくる。
+   ここは絵柄と短い呼び名だけを持つ。判定はしない。 */
+const FLAG_FACE = {
+  stopped:    { mark: "■", name: "停止" },
+  unfunded:   { mark: "◇", name: "不発" },
+  overdue:    { mark: "▲", name: "期限超過" },
+  active_gap: { mark: "◷", name: "進行中ギャップ" },
+  past_gap:   { mark: "◠", name: "過去ギャップ" },
+  late_done:  { mark: "◔", name: "遅れて完了" },
+  long:       { mark: "◆", name: "長期化" },
+};
+
+/* 完了報告の動画。記録は全件 youtu.be/{id} の形。その形以外は埋め込まず、
+   リンクとして出す。組み立てた ID を再生しない。 */
+const YT_RE = new RegExp('^https?://youtu\.be/([A-Za-z0-9_-]{6,20})');
+const videoId = (u) => {
+  const m = YT_RE.exec(String(u || ""));
+  return m ? m[1] : null;
+};
+
+/* 地球儀（正射図法）。平面と同じ国境データを、経緯度から球面に投影して描く。
+   外部ライブラリは使わない。回転は角度を持つだけで、データは触らない。 */
+const GLOBE = { on: false, lon: 10, lat: 20, r: 470 };
+const RAD = Math.PI / 180;
+
+/* 経緯度を球面上の位置へ。裏側（視点から見えない側）は null を返す。 */
+function orthographic(lon, lat) {
+  const l = (lon - GLOBE.lon) * RAD;
+  const p = lat * RAD;
+  const p0 = GLOBE.lat * RAD;
+  const cosc = Math.sin(p0) * Math.sin(p) + Math.cos(p0) * Math.cos(p) * Math.cos(l);
+  if (cosc < 0) return null; // 地球の裏側
+  return [
+    GLOBE.r * Math.cos(p) * Math.sin(l),
+    -GLOBE.r * (Math.cos(p0) * Math.sin(p) - Math.sin(p0) * Math.cos(p) * Math.cos(l)),
+  ];
+}
+
+/* 環を球面に写す。裏側へ回った点で切り、見えている部分だけを描く。
+   切れ端をつながないのは、見えないところを想像で埋めないため。 */
+function globePath(rings) {
+  let d = "";
+  for (const ring of rings) {
+    let open = false;
+    for (const [lon, lat] of ring) {
+      const p = orthographic(lon, lat);
+      if (!p) {
+        open = false;
+        continue;
+      }
+      d += (open ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1);
+      open = true;
+    }
+  }
+  return d;
+}
+
+/* 生成データの版。build し直したら上げる。 */
+const DATA_V = "2026-09-06-timeline";
+
 const SVG_NS = "http://www.w3.org/2000/svg";
 const BINS = 5;
 const PAGE = 60;
@@ -71,9 +148,30 @@ const esc = (s) =>
 const num = (n) => (n ?? 0).toLocaleString("en-US");
 const usdCents = (cents) => "$" + Math.round((cents ?? 0) / 100).toLocaleString("en-US");
 const money = (m) => (m ? `${num(m.v)} ${m.code}` : "—");
+
+/* 桁を丸めて読めるようにする。大きい額を生の数字で出すと比べられない。
+   丸めた値は概数であり、正確な額は詳細の行に出す。 */
+function compactAmt(v, code) {
+  const n = Math.abs(v);
+  if (n >= 1e6) return `${(v / 1e6).toFixed(n >= 1e7 ? 0 : 1)}M ${code}`;
+  if (n >= 1e3) return `${(v / 1e3).toFixed(n >= 1e4 ? 0 : 1)}K ${code}`;
+  return `${num(Math.round(v))} ${code}`;
+}
+
+/* 主表示と副表示を組にする。ADA と USD は換算しないので、
+   副に置くのは同じ通貨の正確な額（丸める前の値）。 */
+function dualAmt(v, code) {
+  return (
+    `<span class="rg-amt-main">${esc(compactAmt(v, code))}</span>` +
+    `<span class="rg-amt-sub" title="${esc(num(Math.round(v)) + " " + code)}">${esc(
+      num(Math.round(v))
+    )}</span>`
+  );
+}
 const $ = (id) => document.getElementById(id);
 const cssId = (s) => String(s).replace(/[^A-Za-z0-9]/g, "_");
 const cname = (n) => (state.lang === "ja" ? COUNTRY_JA[n] || n : n);
+const fname = (n) => (state.lang === "ja" ? FIELD_JA[n] || n : n);
 
 const state = {
   geo: null,
@@ -88,6 +186,7 @@ const state = {
   mode: "places",  // 国・プロジェクト / 人物
   person: null,     // 人物表示で開いている人物（表記が完全一致する名前）
   q: "",
+  soloOnly: false, // 人物ランキングを単独提案だけで並べるか
   sort: "dist",
   stf: "",
   cur: "ADA",
@@ -239,33 +338,59 @@ function personGroups(idx) {
     g.funded = g.idx.length;
     g.completed = countOf(g.idx, "completed");
     g.cancelled = countOf(g.idx, "cancelled");
+    // 共同提案の件数。その額は他の人にも同じだけ計上されるので、足し合わせられない。
+    g.shared = g.idx.filter((i) => (rows[i].who || []).length > 1).length;
+    // 単独提案だけの件数。共著の額は他の人にも計上されるので、分けて数える。
+    g.solo = g.idx.filter((i) => (rows[i].who || []).length === 1).length;
     g.sum = { dist: {}, req: {} };
+    g.soloSum = { dist: {}, req: {} };
     g.yes = 0;
     for (const i of g.idx) {
       const r = rows[i];
+      const isSolo = (r.who || []).length === 1;
       for (const key of ["dist", "req"]) {
         const m = r[key];
-        if (m && m.v) g.sum[key][m.code] = (g.sum[key][m.code] || 0) + m.v;
+        if (!m || !m.v) continue;
+        g.sum[key][m.code] = (g.sum[key][m.code] || 0) + m.v;
+        if (isSolo) g.soloSum[key][m.code] = (g.soloSum[key][m.code] || 0) + m.v;
       }
       if (r.yes) g.yes += r.yes.v;
     }
   }
   const val = (g) => {
+    // 単独のみで並べるときは、共著を含まない額を基準にする。
+    if (state.soloOnly && (state.sort === "dist" || state.sort === "req"))
+      return g.soloSum[state.sort][state.cur] || 0;
     if (state.sort === "dist" || state.sort === "req") return g.sum[state.sort][state.cur] || 0;
     if (state.sort === "done") return g.completed;
     if (state.sort === "yes") return g.yes;
-    return g.funded;
+    return state.soloOnly ? g.solo : g.funded;
   };
   list.sort((a, b) => val(b) - val(a) || b.funded - a.funded || a.name.localeCompare(b.name));
   return list;
 }
 
+/* 人物の額は二本立てにする。
+   1本目は関わったすべて（共同提案を含む。他の人にも同じ額が計上される）
+   2本目は単独提案だけ（その人だけの額。足し合わせられる） */
 function personAmount(g) {
-  if (state.sort === "dist" || state.sort === "req")
-    return `${num(g.sum[state.sort][state.cur] || 0)} ${state.cur}`;
+  const key = state.sort === "req" ? "req" : "dist";
+  if (state.sort === "dist" || state.sort === "req") {
+    const all = g.sum[key][state.cur] || 0;
+    const solo = g.soloSum[key][state.cur] || 0;
+    return (
+      `<span class="rg-amt-main">${esc(compactAmt(all, state.cur))}</span>` +
+      `<span class="rg-amt-sub" title="${esc(
+        "関わったすべて " + num(all) + " ／ 単独提案だけ " + num(solo) + " " + state.cur
+      )}">単独 ${esc(compactAmt(solo, state.cur))}</span>`
+    );
+  }
   if (state.sort === "done") return `完了 ${num(g.completed)}`;
   if (state.sort === "yes") return `Yes ${num(Math.round(g.yes / 1e6))}M`;
-  return `${num(g.funded)} 件`;
+  return (
+    `<span class="rg-amt-all">${num(g.funded)} 件</span>` +
+    `<span class="rg-amt-solo" title="単独提案だけの件数">単独 ${num(g.solo)}</span>`
+  );
 }
 
 function amountLabel(r) {
@@ -371,7 +496,7 @@ function groupLabel(g) {
 
 function groupAmount(g) {
   if (state.sort === "dist" || state.sort === "req")
-    return `${num(g.sum[state.sort][state.cur] || 0)} ${state.cur}`;
+    return dualAmt(g.sum[state.sort][state.cur] || 0, state.cur);
   if (state.sort === "done") return `完了 ${num(g.completed)}`;
   if (state.sort === "yes") return `Yes ${num(Math.round(g.yes / 1e6))}M`;
   return `${num(g.funded)} 件`;
@@ -403,17 +528,30 @@ function renderPlist() {
   if (state.mode === "people" && !state.person) {
     const groups = personGroups(idx);
     $("place-count").textContent = `${num(groups.length)} 人・${num(idx.length)} 件`;
-    $("summary").insertAdjacentHTML(
-      "beforeend",
-      `<span class="rg-person-note">人物名の完全一致で集計。共同提案は各人物にプロジェクト全額を計上。</span>`
-    );
-    $("plist").innerHTML = groups
+    // 二重計上は読み違えの元なので、要約に埋めずランキングの直前に置く。
+    const caution =
+      `<li class="rg-caution">` +
+      `<strong>この順位は足し合わせられない。</strong>` +
+      `共同提案は関わった各人にプロジェクトの全額を計上している。` +
+      `${num(groups.length)} 人の額を合計すると、${num(idx.length)} 件の総額を超える。` +
+      `人物は名前の完全一致でまとめている。同姓同名は分けられない。` +
+      `<span class="rg-solo-sw">` +
+      `<button type="button" class="rg-solo-b${state.soloOnly ? "" : " on"}" data-solo="0">関わったすべて</button>` +
+      `<button type="button" class="rg-solo-b${state.soloOnly ? " on" : ""}" data-solo="1">単独提案だけ</button>` +
+      `</span></li>`;
+    $("plist").innerHTML = caution + groups
       .slice(0, state.shown)
       .map(
         (g, rank) => `<li class="rg-person" data-person="${esc(g.name)}" tabindex="0" role="button">
           <span class="rg-rank">#${num(rank + 1)}</span>
-          <span class="rg-person-n">${esc(g.name)}</span>
-          <span class="rg-pi-a">${esc(personAmount(g))}</span>
+          <span class="rg-person-n">${esc(g.name)}${
+            g.shared
+              ? `<span class="rg-dup" title="${esc(
+                  num(g.shared) + " 件が共同提案。その額は他の人にも同じだけ計上されている"
+                )}">※${num(g.shared)}</span>`
+              : ""
+          }</span>
+          <span class="rg-pi-a rg-pi-a2">${personAmount(g)}</span>
           <span class="rg-pi-s">採択 ${num(g.funded)}・完了 ${num(g.completed)}・中止 ${num(g.cancelled)}</span>
         </li>`
       )
@@ -440,7 +578,7 @@ function renderPlist() {
         )}" tabindex="0" role="button">
           <span class="rg-rank">#${num(rank + 1)}</span>
           <span class="rg-ci-n">${esc(groupLabel(g))}</span>
-          <span class="rg-pi-a">${esc(groupAmount(g))}</span>
+          <span class="rg-pi-a rg-pi-a2">${groupAmount(g)}</span>
           <span class="rg-pi-s">採択 ${num(g.funded)}・完了 ${num(g.completed)}・中止 ${num(
           g.cancelled
         )}</span>
@@ -464,9 +602,9 @@ function renderPlist() {
       const who = (r.who || []).slice(0, 2).join(", ");
       return `<li class="rg-pi" data-i="${i}" tabindex="0" role="button">
         <span class="rg-pi-dot st-${esc(r.st)}" title="${esc(STATUS_JA[r.st] || r.st)}"></span>
-        <span class="rg-pi-n">${esc(projectTitle(r))}${projectOriginal(r)}</span>
+        <span class="rg-pi-n">${esc(projectTitle(r))}${dupMark(r)}${projectOriginal(r)}</span>
         <span class="rg-pi-a">${esc(amountLabel(r))}</span>
-        <span class="rg-pi-s">${esc([r.fund, r.g, who].filter(Boolean).join(" ・ "))}</span>
+        <span class="rg-pi-s">${esc([r.fund, fname(r.g), who].filter(Boolean).join(" ・ "))}${miniFlags(r)}</span>
       </li>`;
     })
     .join("");
@@ -475,6 +613,352 @@ function renderPlist() {
 }
 
 // --- プロジェクト詳細 -------------------------------------------------------
+
+/* 資金が重なっている印。共同提案の額は、人物別に見ると各人に計上される。
+   足し合わせられないことを、行そのものに書く。 */
+function dupMark(r) {
+  const n = (r.who || []).length;
+  if (n <= 1) return "";
+  return (
+    '<span class="rg-dup" title="' +
+    esc(n + " 人の共同提案。人物別に見ると、この額は各人に計上されている") +
+    '">\u203b</span>'
+  );
+}
+
+/* 一覧の行に添える小さな印。名前は出さず、絵柄だけ。 */
+function miniFlags(r) {
+  const list = r.fl || [];
+  const vid = r.vid ? '<span class="rg-mini rg-mini-v" title="完了報告の動画あり">▶</span>' : "";
+  if (!list.length && !vid) return "";
+  const meta = (state.projects.flags || {}).labels || {};
+  return (
+    vid +
+    list
+      .map((f) => {
+        const face = FLAG_FACE[f] || { mark: "・", name: f };
+        return '<span class="rg-mini" title="' + esc(meta[f] || f) + '">' + face.mark + "</span>";
+      })
+      .join("")
+  );
+}
+
+/* 状態フラグ。旗そのものより、何日・何年かのほうが情報である。 */
+function flagsHtml(r) {
+  const list = r.fl || [];
+  if (!list.length && r.yr == null) return "";
+  const meta = (state.projects.flags || {}).labels || {};
+  const chips = list
+    .map((f) => {
+      const face = FLAG_FACE[f] || { mark: "・", name: f };
+      let extra = "";
+      if (f === "long" && r.ly) extra = " " + r.ly + "年+";
+      if ((f === "active_gap" || f === "past_gap") && r.gap) extra = " " + num(r.gap) + "日";
+      return (
+        '<span class="rg-flag" title="' + esc(meta[f] || f) + '">' +
+        '<span class="rg-flag-m">' + face.mark + "</span>" +
+        esc(face.name + extra) + "</span>"
+      );
+    })
+    .join("");
+
+  const facts = [];
+  if (r.val) {
+    const usd0 = (n) => "$" + Math.round(n).toLocaleString("en-US");
+    const d = Math.round((r.val[2] - 1) * 100);
+    facts.push(
+      `約束 ${usd0(r.val[0])} → 受取 ${usd0(r.val[1])}（${d >= 0 ? "+" : ""}${d}%）`
+    );
+  }
+  if (r.yr != null) facts.push("採択から " + r.yr + " 年");
+  if (r.ovr != null) facts.push("計画の " + r.ovr + " 倍");
+  if (r.chg) facts.push("計画変更 " + num(r.chg) + " 回");
+
+  return (
+    (chips ? '<div class="rg-flags">' + chips + "</div>" : "") +
+    (facts.length ? '<p class="rg-pv-facts">' + esc(facts.join(" ／ ")) + "</p>" : "")
+  );
+}
+
+/* 完了報告。動画があれば埋め込み、報告書があれば現物への口を置く。
+   この層でいちばん価値のある出口である。 */
+function reportHtml(r) {
+  const vid = videoId(r.vid);
+  const parts = [];
+  if (vid) {
+    parts.push(
+      '<div class="rg-video"><iframe src="https://www.youtube-nocookie.com/embed/' + esc(vid) +
+      '" title="完了報告の動画" loading="lazy" allowfullscreen' +
+      ' referrerpolicy="strict-origin-when-cross-origin"' +
+      ' allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"></iframe></div>'
+    );
+  } else if (r.vid) {
+    parts.push(
+      '<p class="rg-pv-links"><a href="' + esc(r.vid) +
+      '" target="_blank" rel="noopener noreferrer">完了報告の動画を見る</a></p>'
+    );
+  }
+  if (r.rep) {
+    parts.push(
+      '<p class="rg-pv-links"><a href="' + esc(r.rep) +
+      '" target="_blank" rel="noopener noreferrer">完了報告書を読む</a></p>'
+    );
+  }
+  if (!parts.length) {
+    return r.st === "Completed"
+      ? '<p class="rg-pv-miss">完了と記録されているが、報告が見つからない。</p>'
+      : "";
+  }
+  return '<p class="rg-pv-k">完了報告</p>' + parts.join("");
+}
+
+/* 約束と報告。マイルストーンごとに、提案で何をやろうとしていたのかと、
+   完了報告で何が報告されたのかを、そろえて並べる。判断はしない。 */
+const EV_CACHE = {};
+const EV_JA_CACHE = {};
+
+async function loadEvidence(pid) {
+  if (EV_CACHE[pid] !== undefined) return EV_CACHE[pid];
+  try {
+    const res = await fetch(`data/evidence/${encodeURIComponent(pid)}.json`);
+    EV_CACHE[pid] = res.ok ? await res.json() : null;
+  } catch (e) {
+    EV_CACHE[pid] = null;
+  }
+  return EV_CACHE[pid];
+}
+
+/* 日本語訳。原文とは別のファイルに置いてある。機械翻訳なので原文も必ず読めるようにする。
+   訳がまだ無いプロジェクトもある。その場合は黙って原文を出す。 */
+let EV_JA_OK = null; // 訳の置き場があるかどうか。一度確かめたら覚える。
+
+async function loadEvidenceJa(pid) {
+  if (EV_JA_CACHE[pid] !== undefined) return EV_JA_CACHE[pid];
+  if (EV_JA_OK === false) return null;
+  try {
+    const res = await fetch(`data/evidence-ja/${encodeURIComponent(pid)}.json`);
+    if (res.ok) {
+      EV_JA_OK = true;
+      EV_JA_CACHE[pid] = await res.json();
+    } else {
+      // 一件も見つからないうちは、置き場そのものが無いとみなして以後は探さない。
+      if (EV_JA_OK === null) EV_JA_OK = false;
+      EV_JA_CACHE[pid] = null;
+    }
+  } catch (e) {
+    EV_JA_CACHE[pid] = null;
+  }
+  return EV_JA_CACHE[pid];
+}
+
+function evidenceHtml(ev, r, ja) {
+  if (!ev || !(ev.ms || []).length) return "";
+  const labels = (state.projects.evidence || {}).labels || {};
+  const cur = (r.dist || {}).code || (r.req || {}).code || "";
+  const jaBy = {};
+  for (const m of (ja && ja.ms) || []) jaBy[m.no] = m;
+
+  /* 訳があれば訳を主にし、原文はたたんで下に置く。原文を消さない。 */
+  const text = (m, field) => {
+    const src = m[field] || "";
+    const tr = state.lang === "ja" ? (jaBy[m.no] || {})[field] : null;
+    if (!tr) return `<p class="rg-ev-t">${esc(src || "記録なし")}</p>`;
+    return (
+      `<p class="rg-ev-t">${esc(tr)}</p>` +
+      `<details class="rg-ev-src"><summary>原文</summary>` +
+      `<p class="rg-ev-t rg-ev-en" lang="en">${esc(src)}</p></details>`
+    );
+  };
+
+  const rows = ev.ms
+    .map((m) => {
+      const marks = (m.kinds || [])
+        .map((k) => `<span class="rg-ev-kind">${esc(labels[k] || k)}</span>`)
+        .join("");
+      const head = [
+        `MS${esc(m.no)}`,
+        m.month ? `${esc(m.month)}ヶ月目` : "",
+        m.cost ? `${num(m.cost)} ${esc(cur)}` : "",
+      ]
+        .filter(Boolean)
+        .join(" ・ ");
+
+      return `<li class="rg-ev">
+        <div class="rg-ev-h">
+          <span class="rg-ev-no">${esc(head)}</span>
+          <span class="rg-ev-marks">${marks}${
+        m.links ? `<span class="rg-ev-links">リンク ${num(m.links)}</span>` : ""
+      }</span>
+        </div>
+        <div class="rg-ev-pair">
+          <div class="rg-ev-col">
+            <span class="rg-ev-k">提案で約束したこと</span>
+            ${text(m, "promise")}
+            ${m.criteria ? `<span class="rg-ev-k rg-ev-k2">成功の基準</span>${text(m, "criteria")}` : ""}
+          </div>
+          <div class="rg-ev-col">
+            <span class="rg-ev-k">完了報告で報告されたこと</span>
+            ${text(m, "report")}
+          </div>
+        </div>
+        ${m.cut ? `<p class="rg-ev-cut">長いので途中まで。全文は完了報告書にある。</p>` : ""}
+        ${
+          m.promise && m.report
+            ? `<details class="rg-ask" data-ms="${esc(m.no)}">
+                 <summary>この2つについて質問する</summary>
+                 <div class="rg-ask-body"></div>
+               </details>`
+            : ""
+        }
+      </li>`;
+    })
+    .join("");
+
+  return (
+    `<p class="rg-pv-k">約束と報告</p>` +
+    `<p class="rg-ev-note">提案で何をやろうとしていたのかと、完了報告で何が報告されたのか。` +
+    `どちらも記録のまま並べている。<strong>達成・未達の判断はしていない。</strong>` +
+    (state.lang === "ja"
+      ? `<br>日本語は機械翻訳。誤りうるので、原文を開いて確かめられるようにしてある。`
+      : "") +
+    `</p>` +
+    `<ul class="rg-evs">${rows}</ul>`
+  );
+}
+
+/* 質問する。こちらからは何も指示しない。何を聞くかは読む人が決める。
+   答えは保存しない。これは読む人の道具であって、サイトの記録ではない。 */
+function wireAsk(ev) {
+  const slot = document.getElementById("ev-slot");
+  if (!slot) return;
+  const byNo = {};
+  for (const m of ev.ms || []) byNo[String(m.no)] = m;
+
+  for (const box of slot.querySelectorAll(".rg-ask")) {
+    box.addEventListener(
+      "toggle",
+      () => {
+        if (!box.open) return;
+        const body = box.querySelector(".rg-ask-body");
+        if (body.dataset.ready) return;
+        body.dataset.ready = "1";
+        renderAskBody(body, byNo[box.dataset.ms]);
+      },
+      { once: false }
+    );
+  }
+}
+
+function renderAskBody(body, ms) {
+  if (!ms) return;
+  const saved = askStore.read();
+  body.innerHTML =
+    `<p class="rg-ask-note">上の A（提案で約束したこと）と B（完了報告で報告されたこと）を` +
+    `そのまま AI に渡します。<strong>こちらからは何も指示しません。</strong>` +
+    `何を聞くかは、あなたが決めてください。` +
+    `<br>無料の API キー（Groq）を取っていれば使えます。</p>` +
+    `<textarea class="rg-ask-q" rows="2" placeholder="例：この2つに誤差はありますか／Aにあって Bに無いものは何ですか"></textarea>` +
+    `<div class="rg-ask-row">` +
+    (saved.key
+      ? `<button type="button" class="rg-ask-send">聞く</button>` +
+        `<span class="rg-ask-who">${esc(
+          (ASK_PROVIDERS[saved.provider] || {}).label || saved.provider
+        )}</span>` +
+        `<button type="button" class="rg-ask-forget">鍵を消す</button>`
+      : `<button type="button" class="rg-ask-setup">鍵を入れる</button>`) +
+    `</div>` +
+    `<div class="rg-ask-out"></div>`;
+
+  const out = body.querySelector(".rg-ask-out");
+  const setup = () => {
+    out.innerHTML = askKeyFormHtml();
+    wireAskKeyForm(out, () => renderAskBody(body, ms));
+  };
+
+  const setupBtn = body.querySelector(".rg-ask-setup");
+  if (setupBtn) setupBtn.onclick = setup;
+
+  const forget = body.querySelector(".rg-ask-forget");
+  if (forget)
+    forget.onclick = () => {
+      askStore.clear();
+      renderAskBody(body, ms);
+    };
+
+  const send = body.querySelector(".rg-ask-send");
+  if (send)
+    send.onclick = async () => {
+      const q = body.querySelector(".rg-ask-q").value.trim();
+      if (!q) {
+        out.innerHTML = `<p class="rg-ask-err">質問を書いてください。</p>`;
+        return;
+      }
+      const key = askStore.read();
+      send.disabled = true;
+      out.innerHTML = `<p class="rg-ask-wait">聞いています…</p>`;
+      try {
+        const answer = await askProvider(key.provider, key.key, askBuildText(ms, q));
+        out.innerHTML =
+          `<div class="rg-ask-a">` +
+          `<p class="rg-ask-note">${esc(
+            (ASK_PROVIDERS[key.provider] || {}).label || key.provider
+          )} の答え。holders CORE の記録ではない。保存していない。</p>` +
+          `<p class="rg-ask-t">${esc(answer)}</p></div>`;
+      } catch (e) {
+        out.innerHTML = `<p class="rg-ask-err">聞けなかった: ${esc(e.message)}</p>`;
+      }
+      send.disabled = false;
+    };
+}
+
+function askKeyFormHtml() {
+  const opts = Object.entries(ASK_PROVIDERS)
+    .map(([k, v]) => `<option value="${esc(k)}">${esc(v.label)}</option>`)
+    .join("");
+  return (
+    `<div class="rg-ask-key">` +
+    `<p class="rg-ask-note">鍵はこの端末にだけ置きます。聞く先以外のどこにも送りません。` +
+    `<br>Groq は無料で鍵が取れます（クレジットカード不要）。</p>` +
+    `<div class="rg-ask-row"><select class="rg-ask-p">${opts}</select>` +
+    `<input type="password" class="rg-ask-i" placeholder="API キー" autocomplete="off">` +
+    `<button type="button" class="rg-ask-save">使う</button></div>` +
+    `<p class="rg-ask-hint"></p></div>`
+  );
+}
+
+function wireAskKeyForm(out, done) {
+  const sel = out.querySelector(".rg-ask-p");
+  const input = out.querySelector(".rg-ask-i");
+  const hint = out.querySelector(".rg-ask-hint");
+  const show = () => {
+    const p = ASK_PROVIDERS[sel.value] || {};
+    hint.innerHTML = p.site
+      ? `<a href="${esc(p.site)}" target="_blank" rel="noopener noreferrer">${esc(p.hint)}</a>`
+      : esc(p.hint || "");
+  };
+  sel.onchange = show;
+  show();
+  out.querySelector(".rg-ask-save").onclick = () => {
+    const key = input.value.trim();
+    if (!key) return;
+    askStore.write({ provider: sel.value, key });
+    done();
+  };
+}
+
+async function fillEvidence(pid, token) {
+  const slot = document.getElementById("ev-slot");
+  if (!slot) return;
+  const [ev, ja] = await Promise.all([
+    loadEvidence(pid),
+    state.lang === "ja" ? loadEvidenceJa(pid) : Promise.resolve(null),
+  ]);
+  // 読んでいる間に別のプロジェクトへ移っていたら捨てる。
+  if (state.project !== token) return;
+  const row = state.projects.rows[token];
+  slot.innerHTML = ev ? evidenceHtml(ev, row, ja) : "";
+  if (ev) wireAsk(ev);
+}
 
 function renderProject() {
   const view = $("pview");
@@ -495,14 +979,23 @@ function renderProject() {
      <div class="rg-pv-grid">
        ${line("国", esc(r.c ? cname(r.c) : "記録なし"))}
        ${line("状態", esc(STATUS_JA[r.st] || r.st) + (r.done ? `（${esc(r.done)}）` : ""))}
-       ${line("分野", esc(r.g || "—"))}
+       ${line("分野", esc(fname(r.g) || "—"))}
        ${line("申請", esc(money(r.req)))}
        ${line("配分済み", esc(money(r.dist)))}
        ${line("投票", r.yes ? `Yes ${esc(num(r.yes.v))} ${esc(r.yes.code)}・投票数 ${esc(num(r.votes))}` : "")}
      </div>
+     ${flagsHtml(r)}
+     ${reportHtml(r)}
+     <div id="ev-slot">${r.ev ? `<p class="rg-ev-load">約束と報告を読み込んでいる…（${num(r.evn)} マイルストーン）</p>` : ""}</div>
      ${
        who
-         ? `<p class="rg-pv-k">関わった人</p><div class="rg-pv-whos">${who}</div>`
+         ? `<p class="rg-pv-k">関わった人${
+             (r.who || []).length > 1
+               ? `<span class="rg-dup-note">\u203b ${num(
+                   (r.who || []).length
+                 )} 人の共同提案。人物別の集計では、この額が各人に計上される</span>`
+               : ""
+           }</p><div class="rg-pv-whos">${who}</div>`
          : `<p class="rg-pv-miss">台帳と突き合わせできず、人の名前を出せない。</p>`
      }
      ${(r.tg || []).length ? `<p class="rg-pv-tags">${r.tg.map((t) => `<span class="tag">${esc(t)}</span>`).join(" ")}</p>` : ""}
@@ -511,6 +1004,7 @@ function renderProject() {
        ${r.x ? `<a href="${esc(r.x)}" target="_blank" rel="noopener noreferrer">Catalyst Explorer で見る</a>` : ""}
      </p>`;
   view.hidden = false;
+  if (r.ev) fillEvidence(r.ev, state.project);
   $("pv-back").onclick = () => {
     state.project = null;
     renderProject();
@@ -542,8 +1036,10 @@ function scaleFor(metric) {
 }
 
 function setView(v) {
+  // 平面は端から流れ出さないように収める。
+  // 地球儀は球が原点にあるので、この制限をかけると中心がずれる。
   const home = state.home;
-  if (home) {
+  if (home && !GLOBE.on) {
     const slackX = Math.min(v.w, home.w) * 0.15;
     const slackY = Math.min(v.h, home.h) * 0.15;
     v = {
@@ -594,6 +1090,11 @@ function zoomBy(f) {
 }
 
 function zoomHome() {
+  // 地球儀では viewBox を動かさない。向きだけ初期へ戻す。
+  if (GLOBE.on) {
+    spinToward(10, 20);
+    return;
+  }
   animateView({ x: 0, y: 0, w: state.home.w, h: state.home.h });
 }
 
@@ -673,11 +1174,286 @@ function buildMap() {
   const clabels = document.createElementNS(SVG_NS, "g");
   clabels.setAttribute("id", "clabels");
 
-  svg.replaceChildren(shapes, bubbles, marks, clabels, labels);
+  // 球の海。地球儀のときだけ出す。
+  const ocean = document.createElementNS(SVG_NS, "circle");
+  ocean.setAttribute("id", "ocean");
+  ocean.setAttribute("cx", "0");
+  ocean.setAttribute("cy", "0");
+  ocean.setAttribute("r", String(GLOBE.r));
+  ocean.setAttribute("class", "rg-ocean");
+  ocean.style.display = "none";
+
+  // 星空。地球儀のときだけ出す。データではないので、うんと控えめに。
+  // 位置は固定の数列から作る。読み込むたびに星が動くと落ち着かない。
+  const stars = document.createElementNS(SVG_NS, "g");
+  stars.setAttribute("id", "stars");
+  stars.style.display = "none";
+  let seed = 20260905;
+  const rnd = () => {
+    seed = (seed * 1103515245 + 12345) & 0x7fffffff;
+    return seed / 0x7fffffff;
+  };
+  const R2 = GLOBE.r;
+  for (let i = 0; i < 260; i++) {
+    const x = (rnd() - 0.5) * R2 * 4.2;
+    const y = (rnd() - 0.5) * R2 * 3.4;
+    // 球にかかる星は描かない。地球の向こうは見えない。
+    if (Math.hypot(x, y) < R2 * 1.06) continue;
+    const st = document.createElementNS(SVG_NS, "circle");
+    st.setAttribute("cx", x.toFixed(1));
+    st.setAttribute("cy", y.toFixed(1));
+    st.setAttribute("r", (0.7 + rnd() * 1.9).toFixed(2));
+    st.setAttribute("class", "rg-star");
+    st.style.opacity = (0.25 + rnd() * 0.6).toFixed(2);
+    stars.appendChild(st);
+  }
+
+  // 大気。球のふちにうっすら青い光を置く。
+  const halo = document.createElementNS(SVG_NS, "circle");
+  halo.setAttribute("id", "halo");
+  halo.setAttribute("cx", "0");
+  halo.setAttribute("cy", "0");
+  halo.setAttribute("r", String(Math.round(GLOBE.r * 1.055)));
+  halo.setAttribute("class", "rg-halo");
+  halo.style.display = "none";
+
+  // 陰影。球の左上から光が当たっているように見せる。データではない。
+  const defs = document.createElementNS(SVG_NS, "defs");
+  defs.innerHTML =
+    '<radialGradient id="globeHalo" cx="50%" cy="50%" r="50%">' +
+    '<stop offset="86%" stop-color="#7fc4ff" stop-opacity="0"/>' +
+    '<stop offset="95%" stop-color="#7fc4ff" stop-opacity=".38"/>' +
+    '<stop offset="100%" stop-color="#7fc4ff" stop-opacity="0"/>' +
+    "</radialGradient>" +
+    '<radialGradient id="globeShade" cx="32%" cy="28%" r="78%">' +
+    '<stop offset="0%" stop-color="#ffffff" stop-opacity=".85"/>' +
+    '<stop offset="55%" stop-color="#ffffff" stop-opacity="0"/>' +
+    '<stop offset="100%" stop-color="#0b2a3a" stop-opacity=".30"/>' +
+    "</radialGradient>";
+
+  const shade = document.createElementNS(SVG_NS, "circle");
+  shade.setAttribute("id", "shade");
+  shade.setAttribute("cx", "0");
+  shade.setAttribute("cy", "0");
+  shade.setAttribute("r", String(GLOBE.r));
+  shade.setAttribute("class", "rg-shade");
+  shade.style.display = "none";
+
+  const grid = document.createElementNS(SVG_NS, "path");
+  grid.setAttribute("id", "grid");
+  grid.setAttribute("class", "rg-grid");
+  grid.style.display = "none";
+
+  const equator = document.createElementNS(SVG_NS, "path");
+  equator.setAttribute("id", "equator");
+  equator.setAttribute("class", "rg-equator");
+  equator.style.display = "none";
+
+  svg.replaceChildren(defs, stars, halo, ocean, grid, equator, shapes, bubbles, marks, shade, clabels, labels);
   buildBadges(labels);
   buildCountryBadges(clabels);
   setView({ x: 0, y: 0, w: state.home.w, h: state.home.h });
   wireMap();
+}
+
+/* 経緯線。球であることを示すためだけの線で、データではない。
+   経線は 30 度ごと、緯線は 30 度ごと。赤道だけ少し濃くする。 */
+function graticulePath() {
+  const seg = [];
+  for (let lon = -180; lon < 180; lon += 30) {
+    const pts = [];
+    for (let lat = -80; lat <= 80; lat += 4) pts.push([lon, lat]);
+    seg.push(pts);
+  }
+  for (let lat = -60; lat <= 60; lat += 30) {
+    const pts = [];
+    for (let lon = -180; lon <= 180; lon += 4) pts.push([lon, lat]);
+    seg.push(pts);
+  }
+  return globePath(seg);
+}
+
+function equatorPath() {
+  const pts = [];
+  for (let lon = -180; lon <= 180; lon += 3) pts.push([lon, 0]);
+  return globePath([pts]);
+}
+
+/* 地球儀の形を描き直す。回転のたびに呼ぶ。国の色や選択状態は触らない。 */
+function drawGlobe() {
+  const w = state.world;
+  for (const name of Object.keys(w.countries)) {
+    const geom = w.countries[name];
+    const el = document.getElementById(`sh-${cssId(name)}`);
+    if (!el) continue;
+    if (geom.r) {
+      el.setAttribute("d", globePath(geom.r));
+    } else if (geom.ll) {
+      // 面を持たない小国は点で置く。裏側なら消す。
+      const pt = orthographic(geom.ll[0], geom.ll[1]);
+      el.setAttribute("d", pt ? `M${pt[0].toFixed(1)} ${pt[1].toFixed(1)}m-2 0a2 2 0 1 0 4 0a2 2 0 1 0-4 0` : "");
+    }
+  }
+  // 重ねる点も同じ球面へ
+  for (const dot of document.querySelectorAll(".rg-dot")) {
+    const geom = w.countries[dot.dataset.name];
+    const pt = geom && geom.ll ? orthographic(geom.ll[0], geom.ll[1]) : null;
+    dot.style.display = pt ? "" : "none";
+    if (pt) {
+      dot.setAttribute("cx", pt[0].toFixed(1));
+      dot.setAttribute("cy", pt[1].toFixed(1));
+    }
+  }
+  const g = document.getElementById("grid");
+  if (g) g.setAttribute("d", graticulePath());
+  const eq = document.getElementById("equator");
+  if (eq) eq.setAttribute("d", equatorPath());
+
+  paintMap();
+  updateBadges();
+}
+
+/* 自動回転。触っていないときだけ、ゆっくり東へ回す。
+   操作したら止め、しばらく置いてから再開する。動きを減らす設定なら回さない。 */
+const SPIN = { id: null, idle: null, wait: 2500, speed: 0.045 };
+
+function spinStop(resume) {
+  if (SPIN.id) cancelAnimationFrame(SPIN.id);
+  SPIN.id = null;
+  clearTimeout(SPIN.idle);
+  if (resume && GLOBE.on) SPIN.idle = setTimeout(spinStart, SPIN.wait);
+}
+
+function spinStart() {
+  if (!GLOBE.on || SPIN.id) return;
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  // タブが裏にあるときは描画が止まる。戻ってきたら回し直す。
+  if (document.hidden) {
+    document.addEventListener("visibilitychange", () => spinStop(true), { once: true });
+    return;
+  }
+  let prev = performance.now();
+  const step = (now) => {
+    const dt = Math.min(64, now - prev);
+    prev = now;
+    GLOBE.lon = ((GLOBE.lon - SPIN.speed * dt + 540) % 360) - 180;
+    drawGlobe();
+    SPIN.id = requestAnimationFrame(step);
+  };
+  SPIN.id = requestAnimationFrame(step);
+}
+
+/* 平面 ⇄ 地球儀。データは同じ。投影だけを替える。 */
+function setGlobe(on) {
+  GLOBE.on = on;
+  const svg = $("map");
+  const ocean = document.getElementById("ocean");
+  document.getElementById("mapwrap").classList.toggle("rg-is-globe", on);
+  for (const id of ["stars", "halo", "ocean", "grid", "equator", "shade"]) {
+    const el = document.getElementById(id);
+    if (el) el.style.display = on ? "" : "none";
+  }
+
+  if (on) {
+    // 球を枠の中心に置く。preserveAspectRatio="xMidYMid meet" は viewBox の
+    // 縦横比を保って収めるので、viewBox 自体を枠と同じ比率にしないと
+    // 余白が片側に寄り、球が中心から外れる。
+    const R = GLOBE.r;
+    const box = $("map").getBoundingClientRect();
+    const ratio = box.width && box.height ? box.width / box.height : 2;
+    // 球の直径を、枠の短い辺に合わせる。上下には操作の帯が重なるので、
+    // その分だけ余白を多めに取る。
+    const d = R * 2.62;
+    const w = ratio >= 1 ? d * ratio : d;
+    const h = ratio >= 1 ? d : d / ratio;
+    state.home = { x: -w / 2, y: -h / 2, w, h };
+    setView({ ...state.home });
+    drawGlobe();
+    spinStop(true);
+  } else {
+    spinStop(false);
+    const vb = state.world.view_box.split(" ").map(Number);
+    state.home = { x: 0, y: 0, w: vb[2], h: vb[3] };
+    // 平面の形に戻す
+    for (const name of Object.keys(state.world.countries)) {
+      const geom = state.world.countries[name];
+      const el = document.getElementById(`sh-${cssId(name)}`);
+      if (!el) continue;
+      if (geom.d) el.setAttribute("d", geom.d);
+      else el.setAttribute("d", "");
+    }
+    for (const dot of document.querySelectorAll(".rg-dot")) {
+      const geom = state.world.countries[dot.dataset.name];
+      dot.style.display = "";
+      if (geom) {
+        dot.setAttribute("cx", geom.c[0]);
+        dot.setAttribute("cy", geom.c[1]);
+      }
+    }
+    setView({ ...state.home });
+    paintMap();
+  }
+  const btn = $("g-toggle");
+  if (btn) {
+    btn.textContent = on ? "平面" : "地球";
+    btn.setAttribute("aria-pressed", String(on));
+  }
+}
+
+/* 大陸を正面に回す。地球儀では viewBox を動かさない。回すだけ。 */
+function spinToContinent(contName) {
+  const pts = continentShapes(contName)
+    .map((n) => (state.world.countries[n] || {}).ll)
+    .filter(Boolean);
+  if (!pts.length) return;
+
+  const mid = (vals) => {
+    const v = vals.slice().sort((a, b) => a - b);
+    if (v.length < 8) return (v[0] + v[v.length - 1]) / 2;
+    return (v[Math.floor(v.length * 0.1)] + v[Math.ceil(v.length * 0.9) - 1]) / 2;
+  };
+
+  // 経度は円環なので、単純な平均では日付変更線をまたぐ大陸がずれる。
+  // 単位ベクトルの平均から向きを出す。
+  const sx = pts.reduce((a, p) => a + Math.cos(p[0] * RAD), 0);
+  const sy = pts.reduce((a, p) => a + Math.sin(p[0] * RAD), 0);
+  const lon = ((Math.atan2(sy, sx) / RAD + 540) % 360) - 180;
+  const lat = Math.max(-70, Math.min(70, mid(pts.map((p) => p[1]))));
+  spinToward(lon, lat);
+}
+
+/* 指定の向きへなめらかに回す。 */
+function spinToward(lon, lat, ms = 620) {
+  spinStop(false);
+  // 描画が止まっている（タブが裏など）か、動きを減らす設定なら、すぐ着地させる。
+  if (document.hidden || matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    GLOBE.lon = lon;
+    GLOBE.lat = lat;
+    drawGlobe();
+    spinStop(true);
+    return;
+  }
+  const from = { lon: GLOBE.lon, lat: GLOBE.lat };
+  const dLon = ((lon - from.lon + 540) % 360) - 180;
+  const t0 = performance.now();
+  const ease = (t) => 1 - Math.pow(1 - t, 3);
+  const step = (now) => {
+    const t = Math.min(1, (now - t0) / ms);
+    const e = ease(t);
+    GLOBE.lon = from.lon + dLon * e;
+    GLOBE.lat = from.lat + (lat - from.lat) * e;
+    drawGlobe();
+    if (t < 1) requestAnimationFrame(step);
+    else spinStop(true);
+  };
+  requestAnimationFrame(step);
+}
+
+/* 選んだ国を正面に回す。 */
+function spinTo(name) {
+  const geom = state.world.countries[name];
+  if (!GLOBE.on || !geom || !geom.ll) return;
+  spinToward(geom.ll[0], Math.max(-75, Math.min(75, geom.ll[1])), 520);
 }
 
 /* 大陸のカウントピン。公式マップのピンは装飾だが、ここでは数字が計器と一致する。 */
@@ -690,6 +1466,21 @@ function continentShapes(contName) {
         .filter(Boolean)
     ),
   ];
+}
+
+/* 地球儀では、国ピンだけを球面に置く。大陸ピンは球を覆うので出さない。 */
+function updateBadgesOnGlobe() {
+  for (const b of state.badges || []) b.el.style.display = "none";
+  const px = $("map").getBoundingClientRect().width || 1;
+  const sc = (state.view.w / px) * 1.15;
+  for (const b of state.cbadges || []) {
+    const geom = state.world.countries[b.name];
+    const pt = geom && geom.ll && b.value > 0 ? orthographic(geom.ll[0], geom.ll[1]) : null;
+    b.el.style.display = pt ? "" : "none";
+    if (pt) {
+      b.el.setAttribute("transform", `translate(${pt[0].toFixed(1)} ${pt[1].toFixed(1)}) scale(${sc.toFixed(4)})`);
+    }
+  }
 }
 
 function buildBadges(layer) {
@@ -774,6 +1565,7 @@ function paintCountryBadges() {
 
 function updateBadges() {
   if (!state.badges || !state.home) return;
+  if (GLOBE.on) return updateBadgesOnGlobe();
   const k = state.view.w / state.home.w;
   const show = k > 0.55;
   // 画面上の大きさを一定にする。viewBox 単位 ÷ 表示ピクセルが縮尺。
@@ -845,10 +1637,19 @@ function paintBubbles() {
   for (const b of items) {
     const c = state.world.countries[b.name];
     if (!c) continue;
+    // 地球儀では球面へ投影する。裏側に回った国の円は描かない。
+    let cx = c.c[0];
+    let cy = c.c[1];
+    if (GLOBE.on) {
+      const pt = c.ll ? orthographic(c.ll[0], c.ll[1]) : null;
+      if (!pt) continue;
+      cx = pt[0];
+      cy = pt[1];
+    }
     const r = Math.max(2.5, Math.sqrt(b.req / max) * R);
     const base = document.createElementNS(SVG_NS, "circle");
-    base.setAttribute("cx", c.c[0]);
-    base.setAttribute("cy", c.c[1]);
+    base.setAttribute("cx", cx);
+    base.setAttribute("cy", cy);
     base.setAttribute("r", r.toFixed(1));
     base.setAttribute("class", "rg-bub-base");
     layer.appendChild(base);
@@ -857,14 +1658,14 @@ function paintBubbles() {
     if (ratio <= 0) continue;
     if (ratio >= 0.9999) {
       const full = document.createElementNS(SVG_NS, "circle");
-      full.setAttribute("cx", c.c[0]);
-      full.setAttribute("cy", c.c[1]);
+      full.setAttribute("cx", cx);
+      full.setAttribute("cy", cy);
       full.setAttribute("r", r.toFixed(1));
       full.setAttribute("class", "rg-bub-fill");
       layer.appendChild(full);
     } else {
       const wedge = document.createElementNS(SVG_NS, "path");
-      wedge.setAttribute("d", pieWedge(c.c[0], c.c[1], r, ratio));
+      wedge.setAttribute("d", pieWedge(cx, cy, r, ratio));
       wedge.setAttribute("class", "rg-bub-fill");
       layer.appendChild(wedge);
     }
@@ -934,6 +1735,7 @@ function showTip(name, ev) {
 }
 
 function pickShape(name) {
+  if (name && GLOBE.on) spinTo(name);
   state.shape = name;
   state.countryOnly = null;
   state.person = null;
@@ -1006,7 +1808,10 @@ function wireMap() {
   // 動かさずに離したときだけタップとして扱う。
   let drag = null;
   svg.addEventListener("pointerdown", (ev) => {
-    drag = { x: ev.clientX, y: ev.clientY, v: { ...state.view }, target: ev.target };
+    drag = {
+      x: ev.clientX, y: ev.clientY, v: { ...state.view }, target: ev.target,
+      lon: GLOBE.lon, lat: GLOBE.lat,
+    };
     state.dragged = false;
     try {
       svg.setPointerCapture(ev.pointerId);
@@ -1016,6 +1821,17 @@ function wireMap() {
   });
   svg.addEventListener("pointermove", (ev) => {
     if (!drag) return;
+    if (GLOBE.on) {
+      spinStop(false);
+      // 地球儀は動かすのではなく回す。1px あたり約 0.35 度。
+      const dx = ev.clientX - drag.x;
+      const dy = ev.clientY - drag.y;
+      if (Math.abs(dx) + Math.abs(dy) > 3) state.dragged = true;
+      GLOBE.lon = drag.lon - dx * 0.35;
+      GLOBE.lat = Math.max(-85, Math.min(85, drag.lat + dy * 0.35));
+      drawGlobe();
+      return;
+    }
     const r = svg.getBoundingClientRect();
     const dx = ((ev.clientX - drag.x) / r.width) * drag.v.w;
     const dy = ((ev.clientY - drag.y) / r.height) * drag.v.h;
@@ -1023,12 +1839,17 @@ function wireMap() {
     setView({ ...drag.v, x: drag.v.x - dx, y: drag.v.y - dy });
   });
   svg.addEventListener("pointerup", () => {
+    if (GLOBE.on) spinStop(true);
     const tapped = drag && !state.dragged ? drag.target : null;
     drag = null;
     state.dragged = false;
     if (!tapped) return;
     const badge = tapped.closest ? tapped.closest(".rg-cb") : null;
     if (badge) {
+      if (GLOBE.on) {
+        spinToContinent(badge.dataset.cont);
+        return;
+      }
       const box = boxOfCentroids(continentShapes(badge.dataset.cont));
       if (box) zoomTo(box);
       return;
@@ -1049,6 +1870,7 @@ function wireMap() {
   $("z-in").onclick = () => zoomBy(1 / 1.6);
   $("z-out").onclick = () => zoomBy(1.6);
   $("z-all").onclick = () => zoomHome();
+  $("g-toggle").onclick = () => setGlobe(!GLOBE.on);
 }
 
 // 全画面。基本は縮小してページに埋め、押したときだけ画面いっぱいに切り替える。
@@ -1079,6 +1901,7 @@ function renderJump() {
   for (const b of $("jump").querySelectorAll(".rg-jb")) {
     b.onclick = () => {
       if (!b.dataset.cont) return zoomHome();
+      if (GLOBE.on) return spinToContinent(b.dataset.cont);
       const names = state.geo.countries
         .filter((c) => c.continent === b.dataset.cont)
         .map((c) => shapeOf(c.name))
@@ -1228,6 +2051,225 @@ function renderDefects() {
 
 // --- 国の一覧（公式の全行） -------------------------------------------------
 
+/* 約束された価値と、受け取った価値。Fund ごとに出す。
+   全体の平均だけでは、逆向きの動きが打ち消し合って消えるため。 */
+function renderValue() {
+  const v = state.projects.value;
+  if (!v || !v.funds) return;
+
+  const usd0 = (n) => "$" + Math.round(n).toLocaleString("en-US");
+  const pct = (r) => `${r >= 1 ? "+" : ""}${Math.round((r - 1) * 100)}%`;
+
+  const head =
+    '<thead><tr><th scope="col">Fund</th><th scope="col" class="num">件数</th>' +
+    '<th scope="col" class="num">約束（採択時）</th><th scope="col" class="num">受取（承認日）</th>' +
+    '<th scope="col" class="num">差</th></tr></thead>';
+
+  const body = v.funds
+    .map(
+      (f) =>
+        `<tr><th scope="row" class="chain">Fund ${esc(f.fund)}</th>` +
+        `<td class="num">${num(f.n)}</td>` +
+        `<td class="num">${esc(usd0(f.promised))}</td>` +
+        `<td class="num">${esc(usd0(f.received))}</td>` +
+        `<td class="num rg-val-d" data-up="${f.ratio >= 1}">${esc(pct(f.ratio))}</td></tr>`
+    )
+    .join("");
+
+  const foot =
+    `<tr class="rg-val-total"><th scope="row" class="chain">合計</th>` +
+    `<td class="num">${num(v.n)}</td>` +
+    `<td class="num">${esc(usd0(v.promised))}</td>` +
+    `<td class="num">${esc(usd0(v.received))}</td>` +
+    `<td class="num rg-val-d" data-up="${v.ratio >= 1}">${esc(pct(v.ratio))}</td></tr>`;
+
+  $("value").innerHTML = head + `<tbody>${body}${foot}</tbody>`;
+
+  const up = v.funds.filter((f) => f.ratio >= 1);
+  const down = v.funds.filter((f) => f.ratio < 1);
+  $("value-note").innerHTML =
+    `<span>全体では ${esc(pct(v.ratio))}。だがこれは` +
+    `<strong>逆向きの動きが打ち消し合った結果</strong>である。` +
+    (up.length && down.length
+      ? `上がった Fund は ${up.map((f) => "F" + f.fund).join("・")}、` +
+        `下がった Fund は ${down.map((f) => "F" + f.fund).join("・")}。` +
+        `最も上がった Fund と最も下がった Fund の間には ` +
+        `<strong>${Math.round(
+          (Math.max(...v.funds.map((f) => f.ratio)) -
+            Math.min(...v.funds.map((f) => f.ratio))) * 100
+        )} 点の開き</strong>がある。`
+      : "") +
+    `</span>` +
+    `<span>${esc(v.scope)}</span>` +
+    `<span class="rg-score-caveat">${esc(v.note)}価格は ${esc(v.source)}。</span>`;
+}
+
+/* Fund の時系列。募集から着手までを横一本の帯にする。
+   6年ぶんを同じ物差しに並べると、規模がいつ膨らみ、いつ止まったかが形で見える。
+   日付は公式を優先し、無いところだけ手動記録で補っている（薄い線で区別する）。 */
+
+const TL_STAGE_MARK = {
+  submit: "○",
+  review: "◇",
+  vote: "□",
+  result: "●",
+  onboard: "▷",
+};
+
+const TL_LABEL = {
+  submit: "募集",
+  review: "レビュー",
+  vote: "投票",
+  result: "結果発表",
+  onboard: "着手",
+};
+
+let TL = null;
+
+async function loadTimeline() {
+  if (TL !== undefined && TL !== null) return TL;
+  try {
+    const res = await fetch(`data/timeline.json?v=${DATA_V}`);
+    TL = res.ok ? await res.json() : null;
+  } catch (e) {
+    TL = null;
+  }
+  return TL;
+}
+
+/* 日付を 0〜1 の位置へ。全体の幅で割るだけ。 */
+function tlPos(day, from, to) {
+  const a = Date.parse(from);
+  const b = Date.parse(to);
+  const d = Date.parse(day);
+  if (!isFinite(a) || !isFinite(b) || !isFinite(d) || b <= a) return null;
+  return Math.max(0, Math.min(1, (d - a) / (b - a)));
+}
+
+function tlAmount(list) {
+  if (!list || !list.length) return "";
+  return list
+    .map((m) => compactAmt(m.v / Math.pow(10, m.exp || 0), m.code))
+    .join(" + ");
+}
+
+async function renderTimeline() {
+  const host = $("timeline");
+  if (!host) return;
+  const tl = await loadTimeline();
+  if (!tl || !tl.funds) return;
+
+  const from = tl.from;
+  const to = tl.to;
+
+  // 年の目盛り。何年の話かが分からないと帯は読めない。
+  const y0 = new Date(from).getUTCFullYear();
+  const y1 = new Date(to).getUTCFullYear();
+  const ticks = [];
+  for (let y = y0; y <= y1; y++) {
+    const p = tlPos(`${y}-01-01`, from, to);
+    if (p !== null) ticks.push(`<span class="tl-tick" style="left:${(p * 100).toFixed(2)}%">${y}</span>`);
+  }
+
+  const rows = tl.funds
+    .map((f) => {
+      const marks = [];
+      // 期間のあるものは帯、時点のものは印。
+      for (const [key, m] of Object.entries(f.marks || {})) {
+        const start = m.from || m.at;
+        const p = tlPos(start, from, to);
+        if (p === null) continue;
+        const manual = m.src === "manual" ? " tl-manual" : "";
+        if (m.from && m.to) {
+          const q = tlPos(m.to, from, to);
+          const w = Math.max(0.4, ((q ?? p) - p) * 100);
+          marks.push(
+            `<span class="tl-span tl-${key}${manual}" style="left:${(p * 100).toFixed(2)}%;width:${w.toFixed(2)}%"
+              title="${esc(`${TL_LABEL[key]} ${m.from} → ${m.to}`)}"></span>`
+          );
+        } else {
+          marks.push(
+            `<span class="tl-dot tl-${key}${manual}" style="left:${(p * 100).toFixed(2)}%"
+              title="${esc(`${TL_LABEL[key]} ${start}`)}">${TL_STAGE_MARK[key] || "・"}</span>`
+          );
+        }
+      }
+
+      const rate =
+        f.proposals && f.funded ? Math.round((f.funded / f.proposals) * 100) : null;
+
+      return `<li class="tl-row${f.active ? " tl-active" : ""}">
+        <span class="tl-name">F${esc(f.id)}</span>
+        <span class="tl-track">${marks.join("")}</span>
+        <span class="tl-nums">
+          <span class="tl-amt">${esc(tlAmount(f.available) || "—")}</span>
+          <span class="tl-cnt">${
+            f.proposals ? `応募 ${num(f.proposals)}` : "応募 —"
+          }${f.funded ? ` → 採択 ${num(f.funded)}` : ""}${
+        rate !== null ? `（${rate}%）` : ""
+      }</span>
+        </span>
+      </li>`;
+    })
+    .join("");
+
+  host.innerHTML =
+    `<div class="tl-scale">${ticks.join("")}</div>` +
+    `<ul class="tl-rows">${rows}</ul>`;
+
+  const legend = $("timeline-legend");
+  if (legend) {
+    legend.innerHTML =
+      tl.stages
+        .map(
+          (s) =>
+            `<li><span class="tl-key tl-${s.key}">${TL_STAGE_MARK[s.key] || ""}</span>${esc(
+              s.label
+            )}</li>`
+        )
+        .join("") +
+      `<li><span class="tl-key tl-manual-key"></span>薄い印は手動記録で補った日（公式ページに無いもの）</li>` +
+      `<li>${esc(tl.note)}</li>`;
+  }
+}
+
+/* 事前スコアと、その後の結末を並べる。判断はしない。 */
+function renderScores() {
+  const sc = state.projects.scores;
+  if (!sc || !sc.outcomes) return;
+
+  const head =
+    '<thead><tr><th scope="col">その後</th><th scope="col" class="num">件数</th>' +
+    '<th scope="col" class="num">事前スコアの平均</th><th scope="col" class="num">中央値</th></tr></thead>';
+  const body = sc.outcomes
+    .map(
+      (o) =>
+        `<tr><th scope="row" class="chain">${esc(STATUS_JA[o.status] || o.status)}</th>` +
+        `<td class="num">${num(o.n)}</td>` +
+        `<td class="num">${esc(o.mean)}</td>` +
+        `<td class="num rg-score-mid">${esc(o.median)}</td></tr>`
+    )
+    .join("");
+  $("scores").innerHTML = head + `<tbody>${body}</tbody>`;
+
+  const medians = [...new Set(sc.outcomes.filter((o) => o.n >= 20).map((o) => o.median))];
+  const same = medians.length === 1;
+
+  $("score-note").innerHTML =
+    `<span>${num(sc.matched)} 件で突き合わせた（タイトルが一意に一致したもの）。` +
+    (same
+      ? `完了も中止も、<strong>中央値は同じ ${esc(medians[0])}</strong>。`
+      : "") +
+    `</span>` +
+    `<span>点数そのものの散らばりも小さい。${num(sc.n)} 件のうち ` +
+    `<strong>${esc(sc.band.pct)}% が ${esc(sc.band.lo)}〜${esc(sc.band.hi)}</strong> に収まる` +
+    `（標準偏差 ${esc(sc.sd)}、下は ${esc(sc.min)}、上は ${esc(sc.max)}）。</span>` +
+    `<span>採択された ${num(sc.funded.n)} 件の平均 ${esc(sc.funded.mean)}、` +
+    `されなかった ${num(sc.unfunded.n)} 件の平均 ${esc(sc.unfunded.mean)}。</span>` +
+    `<span class="rg-score-caveat">この欄は点数の当否を論じない。` +
+    `評価の労力がどこに置かれているかを、数字のまま示している。</span>`;
+}
+
 function renderCountryTable() {
   const rows = state.geo.countries;
   $("n-rows").textContent = num(rows.length);
@@ -1343,6 +2385,16 @@ function wireControls() {
     state.shown += PAGE;
     renderPlist();
   };
+  // ボタンは描き直すたびに作られるので、親で受ける。
+  $("plist").addEventListener("click", (ev) => {
+    const b = ev.target.closest(".rg-solo-b");
+    if (!b) return;
+    ev.stopPropagation();
+    state.soloOnly = b.dataset.solo === "1";
+    state.shown = PAGE;
+    renderPlist();
+  });
+
   const activate = (li) => {
     if (li.classList.contains("rg-person")) {
       state.person = li.dataset.person;
@@ -1440,7 +2492,7 @@ function renderHead() {
   try {
     wireControls();
     // 生成物が変わったときに確実に読み直させる。build のたびに手で上げる。
-    const V = "2026-09-05c";
+    const V = DATA_V;
     const [geoRes, worldRes, projRes, jaRes] = await Promise.all([
       fetch(`data/geo.json?v=${V}`),
       fetch(`data/world.json?v=${V}`),
@@ -1470,6 +2522,9 @@ function renderHead() {
     renderGap();
     renderDefects();
     renderCountryTable();
+    renderTimeline();
+    renderValue();
+    renderScores();
   } catch (e) {
     console.error(e);
     $("hero-foot").textContent = `読み込み失敗: ${e.message}`;

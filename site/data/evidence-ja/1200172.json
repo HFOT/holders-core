@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・Functional dApp の統合ライブラリコードは、ウォレット API をブラウザに注入する機能です。\n・CIP-0030 ウォレット API のすべての機能をモックしたデータで実装.",
+      "criteria": "・dApp統合ライブラリには、ウォレットAPIをブラウザに注入する機能があります。\n・DAppインテグレーションライブラリは、CIP-0030規格の全てのウォレットAPI機能を実装しています。 ウォレット API は、モックされたデータを返します.",
+      "report": "修正された証拠は下記をご覧ください。\n1.dApp統合ライブラリはウォレットAPIを注入します\n・オープンソース GitHub リポジトリの dApp 統合ライブラリコード: https://github.com/WingRiders/wallet/tree/dev/dapp-plugin\n・このウォレット API をブラウザーに注入する機能を実装する GitHub リポジトリのコードの一部へのリンク: https://github.com/WingRiders/wallet/blob/8dd73c2501898b4a2acf507f625384eda8d79d75/dapp-plugin/src/init/inject.ts#L44-L50\n・ GitHub リポジトリのドキュメントへのリンクは、dApps で使用できる機能について説明します。https://github.com/WingRiders/wallet/blob/8dd73c2501898b4a2acf507f625384eda8d79d75/README.md#wallet-dapp-plugin\n\n2.dAppの統合ライブラリはモックされたデータを返します\n・ GitHub リポジトリのコードの一部に、CIP-0030 ウォレット API からモックされたデータを含むすべての機能を実行します。https://github.com/WingRiders/wallet/blob/8dd73c2501898b4a2acf507f625384eda8d79d75/dapp-plugin/src/inject.ts#L76-L120. モックされたデータ: https://github.com/b8da8d75/b/b/b8dapache/b/b/b/f5f5f5f5f5f5/b/b/b/b8d7f7f8d75/b/b/b/b/b/b/b/b/f5f5f5f5f5f5f8d7f8/b/b/b/b/b/b/b8d7f8d7f8d7b/b/b/b/b/b/b/b/b/b/b8d7f8d7f8d7f8d\n・CIP-0030規格にリンクし、dApp統合ライブラリが標準に従ってすべての機能を実装していることを確認します。https://developers.cardano.org/docs/governance/cardano-improvement-proposals/cip-0030/\n・実装されたウォレット API がモックされたデータを返すビデオのshowcasingへのリンク: https://github.com/WingRiders/wallet/blob/dev/catalyst-evidence/milestone-1-video.mov. フォローする手順: https://github.com/WingRiders/wallet/blob/dev/catalyst-evidence/milestone-1.md"
+    },
+    {
+      "no": 2,
+      "promise": "・シードフレーズとパスワードの入力、残高の表示、および担保の設定に使用できる機能シードフレーズゲートウェイウェブサイト.",
+      "criteria": "・ウェブサイトは、シードフレーズとパスワードの形式があり、シードフレーズはウェブサイトのストレージに安全に保存されます。 当ウェブサイトでは、残高の閲覧と担保設定のためのUIを提供しています.",
+      "report": "マイルストーン2.完成証拠をご覧ください:\n機能シードフレーズゲートウェイウェブサイト\n・オープンソースGitHubリポジトリのシードフレーズゲートウェイのコード:https://github.com/WingRiders/wallet/tree/dev/gateway\n・サイトをローカルで運営する方法、シードフレーズを入力し、残高を確認し、担保を設定する方法に関する手順: https://github.com/WingRiders/wallet/blob/dev/catalyst-evidence/milestone-2.md"
+    },
+    {
+      "no": 3,
+      "promise": "・シードフレーズゲートウェイのウェブサイトを使用してユーザーのデータを安全に取得し、すべてのCIP-0030機能を実装するdApp統合ライブラリの拡張コード。\n・シードフレーズゲートウェイのコードを拡張し、dApp統合ライブラリの通信APIを実装しました.",
+      "criteria": "・dAppインテグレーションライブラリは、ウォレットを接続するためのプロセスを開始し、dAppがデータを取得したり、トランザクションに署名するために使用できるすべてのCIP-0030機能の実装を提供します。\n・シードフレーズゲートウェイは、dApp統合ライブラリと通信するために必要なすべての機能を実行します.",
+      "report": "固定リンクの証拠をご覧ください\nノート:\n・ウォレットにADAをお持ちいただく必要があります。 証拠文書に記載されています。\n・公開前の操作は行っておりませんので、メインネットのみに固定する必要があります。 しかし、ウォレットはそれをサポートしています。それは接続されていません。\n・財布を管理するウォレットアプリケーションであるhttps://wallet.wingriders.comにこのような機能があります。 アプリケーション例 https://wallet-example-app.wingriders.com/ は、このウォレットを統合する dapp の例です。\n\nエビデンス\n・dApp統合ライブラリの更新\n\n・dApp統合ライブラリのオープンソース GitHub リポジトリに新しいコードが公開 - https://github.com/WingRiders/wallet/tree/dev/dapp-plugin\n・このウォレットを統合し、ユーザーの残高、アドレス、UTxOs を表示した dApp アプリケーションの例へのリンク - https://wallet-example-app.wingriders.com/\n\n2. 更新されたゲートウェイ\n・シードフレーズゲートウェイのオープンソース GitHub リポジトリに新しいコードが公開 - https://github.com/WingRiders/wallet/tree/dev/gateway\n・ポイント1からdAppの例のデータを提供できるシードフレーズゲートウェイのウェブサイトへのリンク - https://wallet.wingriders.com/\n・通信の検証方法に関する手順 - https://github.com/WingRiders/wallet/blob/dev/catalyst-evidence/milestone-3.md"
+    },
+    {
+      "no": 4,
+      "promise": "・コア機能のユニットテスト\n・大きな問題やバグが発生したコードを更新.",
+      "criteria": "・ユニットテストでは、dAppの統合ライブラリとシードフレーズゲートウェイのコア機能について説明します。\n・コードは機能し、あらゆる潜在的な主要な問題の修正でコミット履歴を持っています.",
+      "report": "修正された証拠は下記をご覧ください。\n失敗テストの問題は、誤ったNode.jsバージョンによって引き起こされたことに注意して下さい。https://github.com/WingRiders/wallet?tab=readme-ov-file#installing-nodejs に従って正しいバージョンを使用することを確認してください。\n・ユニットテスト:\n\n・ユニットテストはこれらのフォルダにあります。\n・https://github.com/WingRiders/wallet/tree/dev/common/test\n・https://github.com/WingRiders/wallet/tree/dev/dapp-plugin/test\n・https://github.com/WingRiders/wallet/tree/dev/gateway/test\n・テストスイートを実行する方法の手順: https://github.com/WingRiders/wallet?tab=readme-ov-file#running-tests\n・パステスト: https://github.com/WingRiders/wallet/actions/workflows/test.yml\n\n2. 主要な問題やバグの修正\n・共有履歴: https://github.com/WingRiders/wallet/commits/dev/\n・テストレポート:https://github.com/WingRiders/wallet/blob/dev/tests/REPORT.md"
+    },
+    {
+      "no": 5,
+      "promise": "・ユーザーマニュアル、開発者ガイド\n・プロジェクトの旅、課題、解決、利益を文書化した最終報告書\n・dAppsによるライブラリの統合とユーザーによる利用状況を可視化した動画を、ボイスオーバーナレーションで完成.",
+      "criteria": "・本ライブラリの統合、構成、トラブルシューティング、およびこのライブラリを統合するdAppsのユーザーのためのマニュアルのすべての側面をカバーする利用可能な文書。\n・徹底的かつ反映的最終報告書\n・図書館を効果的に展示する動画は、幅広い聴衆にアクセス可能",
+      "report": "以下は、最終的なマイルストーンPoA証拠へのリンクです。\nライブラリの統合と構成のためのドキュメント: https://github.com/WingRiders/wallet/tree/dev/dapp-plugin#wingriders-wallet-dapp-plugin\n開発者ガイド: https://github.com/WingRiders/wallet/tree/dev?tab=readme-ov-file#wingriders-wallet\nユーザーマニュアル:https://github.com/WingRiders/wallet/tree/dev/gateway#wingriders-wallet-gateway-application\nトラブルシューティング: https://github.com/WingRiders/wallet/tree/dev/gateway#troubleshooting\n\nプロジェクトクローズアウトレポート:https://github.com/WingRiders/wallet/blob/dev/catalyst-evidence/project-close-out-report.pdf\n最終クローズアウトビデオ: https://www.youtube.com/watch?v=TV9TSVe3"
+    }
+  ]
+}

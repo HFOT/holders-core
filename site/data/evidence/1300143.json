@@ -1,0 +1,77 @@
+{
+  "title": "MLabs: Static analysis with Covenant",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 46996,
+      "promise": "・Implementation of the IR data structures in Haskell, using hash consing (code, repository link).\n・A type checker for the structures.\n・A Haskell library containing functionality to build Covenant IR programmatically.\n・Hackage publication of the library in 3, together with suitable documentation, focusing on the Reference and Explanation quadrants of the Diataxis framework.\n・Tests for demonstrating the correct functioning of the type checker and the build functionality.",
+      "criteria": "・The standalone library for Covenant exists, containing all the functionality described above.\n・The library does not depend on Plutus or Nix. \n・The library has been uploaded to Hackage.\n・The library follows standard Haskell idioms, including, but not limited to, the PVP.\n・The library has CI, which verifies that the library can be built, and passes all tests on a Tier 1 GHC platform.",
+      "report": "Evidence of Milestone Completion\n\nLink to the code repository with the library, documentation and CI\nhttps://github.com/mlabs-haskell/covenant/\n\nShort demonstration video showcasing the IR structure and basic operations\nhttps://www.youtube.com/watch?v=WXGEb2d_kBY\n\nLink to Hackage for the published library - this will be pushed to main once approved by reviewers since it cannot be unpublished\nhttps://hackage.haskell.org/package/covenant-1.0.0/candidate",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 46996,
+      "promise": "・We will implement a way of defining compound types in the Milestone 1 library.\n・This implementation will use Boehm-Berrarducci encodings to be compatible with the Milestone 1 type system.\n・We will add support for base functors to enable later work on elimination forms together with Turner totality.\n・Specification of encodings (SOP and Data) for compound data types as part of their definitions will be included. There will also be a selection of different strategies for Data encodings.\n・We will implement all the compound data types required by the Plutus ledger, specifically its V3.\n・We will add tests to ensure that the type system from Milestone 1 behaves correctly on all Plutus primitive operations and on the ledger data types.\n・These extensions to the Milestone 1 library will be documented as Haddocks.\n・The CI from Milestone 1 will be extended to run the tests specified in point 3.\n・We will publish the extended library on Hackage as an update.",
+      "criteria": "・Milestone 1 library has gained the ability to define compound types\n・Boehm-Berrarducci encodings are being used for compatibility with the Milestone 1 type system. \n・Base functors are supported. \n・Encodings for data types (both SOP and Data) can be specified. Furthermore, different strategies for Data encodings have been implemented.\n・All compound data types required by the V3 Plutus ledger API exist in the Milestone 1 library.\n・Tests for Criterion 1 and 2 functionality exist and pass, for both the Plutus primitive operations and ledger data types.\n・Haddocks exist documenting all extensions t",
+      "report": "Video demonstrations:\nhttps://youtu.be/X0FIETsbxfk\n\nLink to Repo\nhttps://github.com/mlabs-haskell/covenant\n\nLink to CI run\nhttps://github.com/mlabs-haskell/covenant/actions/runs/16306716991\n\nLink to Hackage\nhttps://hackage.haskell.org/package/covenant-1.1.0/candidate",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 35246,
+      "promise": "・We will extend the Milestone 1 and 2 library to support both introducing (creating) and eliminating (pattern matching and folding) values in the Covenant ASG.\n・Folding will use recursion schemes, specifically catamorphisms.\n・Base functors for existing compound recursive types, as well as Integer and ByteString Plutus core types, will be included.\n・We will add tests to ensure that these forms behave correctly, by way of ASG construction (that is, 'end-to-end').\n・We will document these extensions as Haddocks.\n・The CI from Milestones 1 and 2 will be extended to run the tests specified in point 2.\n・We will publish the extended library on Hackage as an update.",
+      "criteria": "・Milestone 1 and 2 library has gained introduction and elimination forms in the ASG.\n・A recursion scheme elimination form exists and uses catamorphisms.\n・Base functors for existing compound recursive types, as well as Integer and ByteString exist.\n・Tests using ASG construction have been added for the functionality of this Milestone, and pass.\n・Haddock documentation exists for the public-facing new functionality added in this Milestone.\n・The CI from Milestones 1 and 2 runs the new tests added in this Milestone successfully.\n・The extended library has been published on Hackage as an update.",
+      "report": "1. Short demonstration video of the logic in the library for introduction and elimination forms.\nhttps://youtu.be/JyIKdOtmmnM\n\n2. Short demonstration video of the new tests in this Milestone running and passing.\nhttps://youtu.be/JyIKdOtmmnM\n\n3. Link to the code repository with all the functionality implemented in this Milestone, as well as Haddock comments.\nhttps://github.com/mlabs-haskell/covenant/\n\n4. Link to a successful CI run against the main branch.\nhttps://github.com/mlabs-haskell/covenant/actions/runs/17253373583\n\n5. Link to Hackage for the updated library.\nhttps://hackage.haskell.org/package/covenant-1.2.0/candidate",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "10",
+      "cost": 35246,
+      "promise": "・We will provide a specification of the JSON-based textual form of Covenant, as well as an implementation of that specification into the library from Milestones 1 through 3.\n・We will provide at least two conformance cases, designed for use in tests for the implementation of the specification.\n・These tests will be provided as part of the library from Milestones 1 through 3 as well.\n・New public-facing functionality will have Haddock comments in the code.",
+      "criteria": "・At least two conformance cases of the serial form exist.\n・All conformance cases deserialize correctly and without error\n・An implementation in Haskell of serialization and deserialization of Covenant exists, as an extension to the library in Milestones 1 through 3.\n・The CI for the library in Milestones 1 through 3 runs the conformance cases to ensure they continue to pass.\n・Haddock comments for new public-facing functionality from this Milestone exist.",
+      "report": "MILESTONE EVIDENCE\nShort video demonstrating the new functionality and conformance cases, as well as passing tests.\nhttps://youtu.be/kWKZ3bf2gsI\n\nLink to a successful CI run against the main branch.\nhttps://github.com/mlabs-haskell/covenant/actions/runs/18298769341\n\nLink to the code repository with all the functionality implemented in this Milestone, as well as Haddock comments.\nhttps://hackage.haskell.org/package/covenant-1.3.0/candidate",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "11",
+      "cost": 35243,
+      "promise": "・We will define c2uplc: an executable that translates the Covenant serial form as specified in Milestone 4 into serialized UPLC.\n・We will use the conformance cases from Milestone 4 to verify that c2uplc works correctly.\n・c2uplc will have a CLI, with instructions for use.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・An executable for generating UPLC from Covenant's serial form exists. Due to its dependence on Plutus, this can be in a separate repository from the rest of Covenant.\n・The executable accepts a path to a Covenant serial form.\n・The executable, when given a valid Covenant serial form, emits valid UPLC, whose execution semantics match those intended by the Covenant serial form.\n・The executable, when given an invalid Covenant serial form, does not perform a translation. Instead, it errors with a clear and appropriate message.\n・All the Milestone 4 conformance cases translate correctly using the exe",
+      "report": "A. Output: A c2uplc executable that translatres Covenant to UPLC\nAcceptance criteria: The executable generates UPLC from Covenant; accepts a path to a Covenant serail form; outputted UPLC execution semantics match those intended by the Covenant serial form; executable does not perform a translation on invalid Covenant. Note: a note on how to build the executable has been added to the README (Run `cabal build exe:c2uplc` to build it. To run it, use `cabal exec c2uplc`)\nEvidence: https://github.com/mlabs-haskell/c2uplc\nB. Output: Conformance cases\nAcceptance criteria: conformance cases translate correctly using the executable\nEvidence: https://www.youtube.com/watch?v=fnjOcLd0M_E\nC. Output: A c2uplc CLI\nAcceptance criteria: c2uplc CLI will exist, and will have help text as instructions\nEvidence: https://www.youtube.com/watch?v=ZWbDdlrXbAs\nD. Output: Close-out report\nAcceptance criteria: Final closeout report is publicly available\nEvidence: https://drive.google.com/file/d/1QURKnYNvrRU0xKsF7hBhjiZ38icBFiUg/view?usp=sharing\nE. Output: Final closeout video\nAcceptance criteria: Final closeout video is publicly available\nEvidence: https://www.youtube.com/watch?v=80I-AWJsTgo",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 10,
+      "cut": true
+    }
+  ]
+}

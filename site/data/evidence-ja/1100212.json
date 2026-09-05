@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "(A) 2つのセクションを含むマイルストーンレポート -\n(1) Cardano DEXのエコシステムは、次のマイルストーンに統合する2つのスポットDEXの選定に繋がる短時間解析(オリジナルの提案で述べた)\n(2) 実施のために選択した DEX が与えられた次のマイルストーンの詳細なプロジェクトプラン\n(B) 識別された統合パラメータを持つテンプレート構成ファイル",
+      "criteria": "マイルストーンレポートは -\n(A)(1) -\nお問い合わせ Cardanoで現在主要なDEXをカバー\nb. 統合のための2つの点のDEXsを識別して下さい\n(A)(2) 選択した DEX を指定したマイルストーンに対して特定のプロジェクトプランを提供\n(B) テンプレート設定ファイルは、選択した DEX に固有のすべての統合パラメータをリストする必要があります",
+      "report": "以下は、Cardano DeFiエコシステムとHummingbotと2つのDEXの統合のための詳細なプロジェクト計画の分析を含むマイルストーンレポートへのリンクです。\nhttps://github.com/gammer13/pcf11-hummingbot-integration/blob/main/Milestone1/Report/milestoneReport.pdf\nテンプレート設定ファイルへのリンク -\nhttps://github.com/gammer13/pcf11-hummingbot-integration/blob/main/Milestone1/config.yml"
+    },
+    {
+      "no": 2,
+      "promise": "Hummingbot-CardanoスポットDEXコネクタ用の初期コードベース\nスポットコネクタの構成文書と統合ガイドライン\nコネクターのための単位テスト",
+      "criteria": "提供された実装は、Spot DEX とのプログラム的な相互作用を実証し、次の (ユニットテスト) を実行します。\n・価格表\n・注文場所\n・注文をキャンセル(該当する場合)\n・液状化・除去(該当する場合)",
+      "report": "次のリポジトリは、minswapコネクタの実装を含む変更されたHummingbotゲートウェイです。\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/tree/main/src\n次のリンクは、ステップバイステップユーザーガイドを含むドキュメントです。\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/tree/main/docs\nそして最終的には、機能性を検証するために使用されるテストスイート -\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/tree/main/test/connectors/minswap"
+    },
+    {
+      "no": 3,
+      "promise": "スポット DEX コネクタの機能と特定の問題を強調する統合テストレポート\n課題に対処し、パフォーマンスを改善した後、コードベースをクリアしたレグレッションテスト\nコードベースとドキュメントの更新",
+      "criteria": "統合テストは、実装されたコネクタを使用して取引戦略を確実に実行する能力を実証する必要があります\n回帰テスト 全パス",
+      "report": "次のリポジトリは、minswapコネクタの実装を含む変更されたHummingbotゲートウェイです。\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/tree/main/src\n\n次のリポジトリには、統合テストスクリプトが含まれています。\nhttps://github.com/AIQUANT-Tech/hummingbot/tree/master/scripts\n\n以下は、テストケースと可能な結果のドキュメントです。\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/Hummingbot gateway test.pdf\n\n最後に、スムーズなテストケースを実証するショートビデオ -\nhttps://youtu.be/6LXBf49nIGg"
+    },
+    {
+      "no": 4,
+      "promise": "2番目のHummingbot-Cardano DEXコネクタの初期コードベース\nスポットコネクタの構成文書と統合ガイドライン\nコネクターのための単位テスト",
+      "criteria": "提供された実装は、次の(ユニットテスト)を達成するために、2番目のDEXとプログラム的な相互作用を実証します -\n・価格表\n・注文場所\n・注文をキャンセル(該当する場合)\n・液状化・除去(該当する場合)",
+      "report": "Sundaeswapコネクタのソースコードへのリンク\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/tree/main/src/connectors/sundaeswap\nSundaeswapコネクタのテストケースへのリンク\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/tree/main/test/connectors/sundaeswap\nHummingbot コネクタの Sundaeswap テスト ケースのドキュメントへのリンク\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/Hummingbot gateway test.pdf\nSundaeswap への Hummingbot コネクターのための文書\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/Hummingbot gateway sundaeswap.pdf\nSundaeswap への Hummingbot コネクタのユーザーガイド\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/user guide sundaeswap.pdf\nSundaeswapコネクタのショートビデオデモ\nhttps://youtu.be/nVG8hLnq4ns"
+    },
+    {
+      "no": 5,
+      "promise": "スポット DEX コネクタの機能と特定の問題を強調する統合テストレポート\n課題に対処し、パフォーマンスを改善した後、コードベースをクリアしたレグレッションテスト\nコードベースとドキュメントの更新",
+      "criteria": "統合テストは、実装されたコネクタを使用して取引戦略を確実に実行する能力を実証する必要があります\n回帰テスト 全パス",
+      "report": "次のリポジトリは、Sundaeswap DEXの実装を含む変更されたHummingbot Gatewayです。\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/tree/main/src\n次のリポジトリには、統合テストスクリプトが含まれています。\nhttps://github.com/AIQUANT-Tech/hummingbot/tree/master/scripts\n以下は、コード、テストケース、およびその可能な結果のドキュメントです。\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/Hummingbot gateway test sundaeswap.pdf\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/Hummingbot-Sundaeswap-Client-Doc.pdf\nhttps://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/Hummingbot gateway sundaeswapDex.pdf\n以下は、回帰テストレポートhttps://github.com/AIQUANT-Tech/HummingbotGateway/blob/main/docs/test%20case%20report%20humminbot.pdfへのリンクです。\n最後に、スムーズなテストケースを実証するショートビデオ -\nhttps://youtu.be/9UrlnrG2PWY"
+    },
+    {
+      "no": 6,
+      "promise": "Hummingbotリポジトリに提出されたソフトウェアの実装とドキュメント\nプロジェクト結論報告書とビデオ",
+      "criteria": "Hummingbot コードベースに提出された実装とドキュメント\n最終報告書とビデオ https://docs.projectcatalyst.io/fund-documentation/fund10-docs/funded-project-reporting-guideline/project-closeout-report-and-project-closeout-video-pcr-and-pcv",
+      "report": "Hummingbot プロジェクトは、最終的なマイルストーンの一環として、次の出力を正常に配信しました。\n(A) Hummingbot リポジトリへのリクエストをプル -\nHummingbot: https://github.com/hummingbot/hummingbot/pull/7704\nゲートウェイ: https://github.com/hummingbot/gateway/pull/484\n(B)プロジェクトクローズアウトレポート - https://github.com/gammer13/pcf11-hummingbot-integration/blob/main/Milestone%204/Final%20Report/Final%20Report.pdf\n(C) プロジェクト クローズアウト ビデオ - https://www.youtube.com/watch?v=s0dxa4lbIE8"
+    }
+  ]
+}

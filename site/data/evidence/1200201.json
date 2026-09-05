@@ -1,0 +1,83 @@
+{
+  "title": "SIDAN | MeshJS - Advance Cardano SDK in Rust",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "Objective: Establish a solid foundation for the project by setting up the necessary infrastructure, assembling the team, and defining project management practices.",
+      "criteria": "・Proposal onboarding and project management tools setup\n・Have a breakdown and progress of tasks for all the activities planning will be public through github\n・A list of development team members will be provided publicly",
+      "report": "Project management tools and systems set up. Instead of Github link, for easier accessibility, we will use Google sheet instead while the features and project management ability is still the same.\n・Initial Documentation\n・https://docs.google.com/spreadsheets/d/1O0ynVTyZ7FwI-9i_5SPA5chq7aAnHH1UbcGHVxVtTfs/edit?usp=sharing\n・List out all the APIs needed\n・https://github.com/sidan-lab/whisky/tree/master/packages/whisky/src/builder\n\nA list of team members responsible for the development will be public. A link will be provided\n・https://drive.google.com/file/d/1RzlJGJq15OgDzadI2ykZ7kPjF7Yf9lCj/view?usp=sharing\n\nTo the reviewer who rejected our milestone 1 submission,\nMilestone one is mainly for the purpose of setting up an operational organization, and assigning tasks to team members. The document we provided showed all the involved team member, and the roles and responsibilities of each person, with an additional Gantt chart timeline. This showed that the tool perfectly performed what it meant to do, i.e. tracking the project's progress and disclosing the team to all community members\nTen APIs are listed in the builder folder in the Whiskey repo, and the feature targets for the SDK development are set going forward. This further showed we have completed all the commitments that we promised in milestone one. Please approve the milestone one submission",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60000,
+      "promise": "Objective: Prepare the code base for both the wasm package and package for rust use",
+      "criteria": "・Splitting code base into 2 separate rust projects\n・Compile all core logics and type into wasm\n・Publish initial version for both Rust SDK & WASM package",
+      "report": "Root directory:\n・WASM package - https://github.com/sidan-lab/whisky/tree/master/packages/sidan-csl-rs\n・Rust package - https://github.com/sidan-lab/whisky/tree/master/packages/whisky\n\ncrate.io:\n・https://crates.io/crates/whisky\n\nnpm registry:\n・browser: https://www.npmjs.com/package/@sidan-lab/sidan-csl-rs-browser\n・nodejs: https://www.npmjs.com/package/@sidan-lab/sidan-csl-rs-nodejs",
+      "kinds": [
+        "code"
+      ],
+      "links": 5
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "Objective: Migrate all existing CSL logic to mesh-csl, which builds on top of the wasm package",
+      "criteria": "・Migrate all existing CSL logic from MeshJS library to mesh-csl, leaving spacing for future MeshJS integration pattern upgrades.\n・Integrate the migrated functions back to MeshJS library",
+      "report": "Root directory of mesh-csl package (i.e. mesh-core-csl)\n・https://github.com/MeshJS/mesh/tree/main/packages/mesh-core-csl\n\nnpm registry on published mesh-csl:\n・https://www.npmjs.com/package/@meshsdk/core-csl\n\nThe mesh-csl is well integrated with mesh-core as indicated here:\n・https://github.com/MeshJS/mesh/blob/main/packages/mesh-core/src/core.ts\n・As part of the update, the mesh-core library has nearly removed all raw csl syntax for better maintainability",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 10000,
+      "promise": "Objective: Develop off-node transaction evaluation feature and integrating with mesh. Develop provider integration feature with the rust package",
+      "criteria": "・Develop the off-node transaction evaluation\n・Develop blockchain provider implementation and integration with Maestro & Blockfrost",
+      "report": "Develop the off-node transaction evaluation\n・The core logic of offnode transaction evaluation is implemented\n\nDevelop blockchain provider implementation and integration with Maestro & Blockfrost\n・Maestro provider\n・Blockfrost provider\n\nNew features available with documentation available in published rust package in crates.io\n・Rust package v1.0.0\n・Provider documentation\n\nNew features available with documentation available in mesh core package\n・Mesh integration implementation\n・Mesh offline evaluator integration documentation",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 7
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 10000,
+      "promise": "Objective: Develop new feature of systematically parsing transaction information from hex, enable offchain code unit testing",
+      "criteria": "・Develop the backward transaction parser - getting the transaction hex and parsing back to rust object\n・Develop the offchain code unit testing framework on top of the transaction parser, introducing a brand new developer experience on unit testing offchain code on Cardano",
+      "report": "Evidence of milestone completionNew features available with documentation available in published rust package in crates.io\nDevelop the backward transaction parser - getting the transaction hex and parsing back to rust object\n・Implementation - https://github.com/sidan-lab/whisky/blob/master/packages/whisky/src/parser/mod.rs\n・Documentation - https://whisky.sidan.io/tx-parser/parse-transaction-cbor\n\nDevelop the offchain code unit testing framework on top of the transaction parser, introducing a brand new developer experience on unit testing offchain code on Cardano\n・Implementation - https://github.com/sidan-lab/whisky/blob/master/packages/whisky-common/src/tx_tester/mod.rs\n・Documentation - https://whisky.sidan.io/tx-parser/unit-testing-transaction\n\nNew features available with documentation available in mesh core package\n・The tx parser functionality is exported to Mesh through wasm\n・https://github.com/MeshJS/mesh/blob/main/packages/mesh-core-csl/src/parser/index.ts\n・Documentation\n・https://meshjs.dev/apis/txparser/basics\n・https://meshjs.dev/apis/txparser/txtester",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 7
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 30000,
+      "promise": "・Objective: Provide full set of documentation, bringing the proposal result to the community\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Complete all inline documentation on user-facing APIs, with public hosting for easy referencing.\n・Hosting a community in both MeshJS & SIDAN Lab discord for feedback, question and communication\n・Prepare the project close-out report and video\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Note for resubmission\n\n・PCR revised according to the funding documentation\n・PCV revised to following flows:\n・Quick demo on using NextJS + whisky as a backend\n・Code base walk through\n・Highlights of PCR - challenge KPIs, key achievements, next steps + lessons we learnt\n\nSubmission\n\n・A full set of public documentation on all new features and changes brought by this project\n・https://whisky.sidan.io/\n・Setup a dedicated channel in SIDAN Lab discord server in regards to the project deliverables. Link(s) will be provided covering the project deliverables\n・https://discord.gg/55Z25r3QfC\n・An announcement in MeshJS discord server about all new features provided by this project. Link(s) will be provided in the announcement\n・https://discord.com/channels/907191435864977459/907225368807735296/1385307289225003069\n・All feedback, and questions are on Discord. Link(s) will be provided for the feedback and questions.\n・In both sidan and mesh discord\n・Publicly available project close-out report and video\n・Link to final closeout report - https://docs.google.com/document/d/1xyredEHtBaob2G783_X_fOWuu6eksPmiZDvK_lT3h8I/edit?usp=sharing\n・Link to final closeout video - https://youtu.be/dk4KoLnksRY",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

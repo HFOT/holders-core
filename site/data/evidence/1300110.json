@@ -1,0 +1,60 @@
+{
+  "title": "Hydra-Enabled On-Chain Subscriptions & Pay-As-You-Go Micropayments: Open-Source Library for Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 42000,
+      "promise": "Project Initiation Report:\nHydra and Subscription Services Landscape Analysis:\n・Comprehensive evaluation of the current landscape for scalable subscription and pay as you go services on blockchain.\n・Identification of key challenges in implementing subscription models on existing blockchain infrastructures.\n\nTechnology Assessment:\n・Analysis of existing blockchain Libraries and their applicability to high-frequency transactions and microtransactions.\n・Review of Hydra’s capabilities in handling low-latency and high-throughput scenarios.",
+      "criteria": "The report provides an in-depth understanding of the opportunities for utilizing Hydra in subscription and and pay as you go based models.\nIncludes a comparative study showcasing Hydra’s advantages in terms of transaction speed, cost reduction, and scalability.\nClearly identifies the project's scope, objectives, and potential to optimize subscription and and pay as you go based services on Cardano.",
+      "report": "Hydra and Subscription Services Landscape Analysis: https://drive.google.com/file/d/1RpO_j-6H7Lpia_JP-VlTGWaZlY7wWoiD/view?usp=sharing\nProject repo: https://github.com/Nucastio/hydra-subs-micro-payg-lib/blob/main/Hydra%20and%20Subscription%20Services%20Landscape%20Analysis%20(1).pdf\nPotential Users and Stakeholder Feedback Report: https://docs.google.com/document/d/1fwb8zup60xZN84-PhkqzSlLvHh7P-GBi0rzZJD6WYhM/edit?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 42000,
+      "promise": "Technical Feasibility Report:\nDetailed outline of the technical requirements for developing the subscription and pay-as-you-go Library with Hydra integration.\nIdentification of APIs, data flows, and integration points for seamless subscription services on Cardano.\nChallenges in achieving high-throughput and trustlessness, with proposed solutions.\nHigh-Level Architectural Design:\nComprehensive architecture diagram of the Library, illustrating how Hydra is leveraged for scalability and instant settlements.\nSpecifications for smart contracts, payment models, and subscription management tools.",
+      "criteria": "Technical Feasibility Confirmation:\nValidation that the Library can technically handle the demands of subscription services, including microtransactions and pay-as-you-go models.\nClear identification of all technical dependencies, along with mitigation strategies.\nArchitectural Design:\n・The architectural design for the subscription Library.\n・Ensures alignment with Cardano’s security and decentralization principles.",
+      "report": "Technical Report PDF: https://drive.google.com/file/d/1jbz6XFORiqG9NI9gEzSC5zQ9QKHacgFS/view?usp=sharing\nTechnical Report Notion: https://elderly-hammer-b9c.notion.site/Hydra-Subscription-and-Pay-as-You-Go-Library-on-Cardano-Technical-Feasibility-report-244e8a72de368067a8eefde28fde43a8?source=copy_link\nProject Repo Update: https://github.com/Nucastio/hydra-subs-micro-payg-lib",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 35000,
+      "promise": "Library Prototype:\nA functional prototype demonstrating key features such as:\n・Seamless integration of Hydra for fast, low-cost microtransactions.\n・Secure smart contract management of pay-as-you-go models.\n\nSandboxed Testing Environment:\nA secure testing environment configured to validate the Library’s scalability, functionality, and security using simulated subscription transactions.\nTesting of smart contracts, backend APIs, and integrations for security, functionality, and performance.\nValidation of subscription transactions in simulated environments.",
+      "criteria": "The prototype showcases the core features, including Hydra’s role in scaling subscription services with instant settlement.\nDemonstrates the ease of integration with existing dApps through the provided API toolkit.\nStable Sandboxed Testing:\nThe sandbox operates reliably with no major bugs or security vulnerabilities.\nSuccessfully replicates real-world subscription use cases, validating the effectiveness of the Library.\nAll components are thoroughly tested, with identified issues resolved.",
+      "report": "Detailed Sandboxed Testing Documentation PDF: https://drive.google.com/file/d/1uvBtJWNibohS36HPrteKET9F53o5vTu4/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 21000,
+      "promise": "・Final close-out report\n・Final closeout video\n・Opensourcing the project and update developer documentation with usage examples with tutorial videos.\n・Marketing efforts to promote the library and collect user feedback for continual enhancements. (Announcement Tweet, Tweets with our early adopters, Live stream demonstrating libraries' functionalities).\n\nMainnet Deployment:\n・Full deployment of the Hydra-enhanced subscription Library on Cardano mainnet.\n・Clear guidelines and best practices for enterprises and developers to adopt the Library seamlessly.",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・The project is publicly available and well-documented for developer use.\n・Successful library launch and effective promotional activities. (Announcement Tweet, Tweets with our early adopters, Live stream demonstrating libraries' functionalities)\n・Tutorial videos on how to use the library",
+      "report": "Project Clouse-out Report - https://docs.google.com/document/d/1JoYFxn_14ZbAqWeb6F9pStTNfntGBILPaftAQa9k9gk/edit?usp=sharing\nProject Clouse-out Video - https://youtu.be/znSW_pUaZfM\nExample App using the library - https://github.com/Nucastio/sub-hydra-ts-example\nMainnet-ready NPM Library with Documentation: https://www.npmjs.com/package/@nucastio/sub-hydra\nHydra Service Node Opensource Repo: https://github.com/Nucastio/sub-hydra-node\nLibrary Opensource Repository: https://github.com/Nucastio/sub-hydra-ts\nLive Tutorial and Demo App Walkthrough Recording: https://live.nucast.io/sub-hydra\nAnnouncement Tweet about the live stream and calling for dapps, project and dev to use: https://x.com/NucastIO/status/1986848140943671405\nEarly Adopter Tweet with Nucast Media and Nucast Live being one of the first early adoption platforms: https://x.com/NucastIO/status/1986852490080625092\nNote: Our apologies for the earlier re-submission. At that time, we were still awaiting the previous MS sign-off and were unsure it would prevent the next milestone review. Thank you for your understanding\nThe previous milestone’s PoA has now been fully signed off. With this update, I kindly request you to proceed with the review of our current PoA resubmission.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 18
+    }
+  ]
+}

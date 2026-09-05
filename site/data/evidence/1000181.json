@@ -1,0 +1,70 @@
+{
+  "title": "SundaeSwap Aiken Smart Contracts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 55200,
+      "promise": "Note: this milestone combine #1 and #2 as originally proposed.\nDevelopers shall familiarize themselves with the Aiken language to a point where they are capable of writing and understanding Aiken code.\nThe team will create a comprehensive roadmap for the translation process.",
+      "criteria": "Our team is equipped with the knowledge and skills needed to start translating Sundaeswap's smart contracts into Aiken.\nThe team will also have developed a clear plan to translate the contracts that fully encapsulates the scope of the effort.",
+      "report": "We’ve extended an invitation to the Catalyst team to our private Github repository which houses our migration plan document, as well sample Aiken contracts. We have also invited the two Catalyst-supplied reviewer Github accounts to our source code repo to verify source code contribution. \nTwitter post: https://x.com/SundaeSwap/status/1748433688462033187?s=20\nDiscord announcement: https://discord.com/channels/830939534174453800/830948250298875905/1197992868011323553",
+      "kinds": [
+        "social"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 55200,
+      "promise": "Note: this milestone aligns with #3, as originally proposed.\nA functional Aiken version of the first Plutus smart contract.",
+      "criteria": "We have proof that translation is feasible and have a starting point for the rest of the contracts",
+      "report": "We’ve extended an invitation to the Catalyst team and our two reviewers to our private Github repository which houses the first translated contract.\nTwitter post: https://x.com/SundaeSwap/status/1748433688462033187?s=20\nDiscord announcement: https://discord.com/channels/830939534174453800/830948250298875905/1197992868011323553",
+      "kinds": [
+        "social"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 55200,
+      "promise": "Note: this milestone reflects #4, as originally proposed\nFunctional, tested Aiken smart contracts ready for performance testing and auditing",
+      "criteria": "All Sundaeswap smart contracts have been successfully translated into Aiken",
+      "report": "We’ve extended an invitation to the Catalyst team and our two reviewers to our private Github repository which houses the complete set of translated contracts.\nTwitter post: https://x.com/SundaeSwap/status/1748433688462033187?s=20\nDiscord announcement: https://discord.com/channels/830939534174453800/830948250298875905/1197992868011323553",
+      "kinds": [
+        "social"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 55200,
+      "promise": "Detailed data on the performance of the Aiken contracts",
+      "criteria": "We know the Aiken contracts perform at least as well as the original Plutus contracts",
+      "report": "We have authored the Medium blog below to highlight our performance testing for the V3 contracts:\nhttps://sundaeswap-finance.medium.com/sundae-v3-performance-comparisons-d048d7507e40\nIn the blog is a link to a performance improvement video on Youtube that we also created. \nPost about it on Twitter: https://x.com/SundaeSwap/status/1759701260046102758?s=20\nDiscord announcement: https://discord.com/channels/830939534174453800/830948250298875905/1209260311874633769",
+      "kinds": [
+        "doc",
+        "social"
+      ],
+      "links": 3
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 55200,
+      "promise": "・Aiken contracts that have passed rigorous security checks\n・Final project report, documentation, source code and wrap-up video",
+      "criteria": "・We can be confident in the security of our Aiken smart contracts\n・Content paints a clear picture of our project and its success/completion",
+      "report": "[GitHub Repository] https://github.com/SundaeSwap-finance/sundae-contracts\n[Whitepaper] https://cdn.sundaeswap.finance/SundaeV3.pdf\n[Medium post] https://medium.com/@sundaeswap-finance/enhancing-sundaeswap-how-we-leveraged-txpipes-audit-insights-for-smarter-contract-design-16c49203f37c\n[Final report] https://drive.google.com/file/d/1PqnXgZOq4u5II3-03DwG2KbxCnRvA_uL/view?usp=drive_link\n[Closeout Video] https://www.youtube.com/watch?v=QqOxCK5FGuE\n[Twitter Post] https://x.com/SundaeSwap/status/1803167308510274042\n[Discord Post] https://discord.com/channels/830939534174453800/830948250298875905/1252726516194738198",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

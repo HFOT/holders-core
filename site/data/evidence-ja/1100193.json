@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Ideascaleで説明したオリジナルのマイルストーン1が、マイルストーン1に「EdDSA to Maya Protocol - TSS Library」と「EdDSA to Maya Protocol - MAYANode」に分割されました。\n\nなぜマヤはEDDSAが必要なのですか?\nMaya プロトコルは、ECSDA 暗号化のみに対応しています。 Cardanoをサポートするために、MayaのTSSライブラリはEDDSAをサポートする必要があります。\nMaya プロトコルは、TSS を使用してボルトを制御し、すべての統合チェーンに対して GG20 TSS を介して MAYANodes バリデータによって保護され、セキュリティと分散を保証します。 TSS は Maya プロトコルを分散し、安全にします。 詳細はこちら: https://docs.mayaprotocol.com/deep-dive/how-it-works/eli5/what-is-threshold-signature-scheme-tss\nTHORChainのフレンドリーなフォークであるMayaプロトコルは、BinanceのTSSライブラリに基づいて、同じ外部TSSライブラリを採用し、Kudelskiによって監査され、THORChainによって委託されたすべてのもの。\n\nこのマイルストーンは、EdDSAのサポートを「go-ts」と「ts-lib」TSSライブラリに提供することに焦点を当てています。\n\nマイルストーンの出力\nこのマイルストーンの出力は、EdDSA を 2 つの TSS ライブラリの Maya プロトコルが使用する 2 つの TSS ライブラリに持ってきます。\n\n'ts-lib' のサブ出力:\nこのライブラリには3つのプロトコルが含まれています。\n・秘密株式の作成のための鍵生成",
+      "criteria": "このマイルストーンは、GitLabサポートEDDSAの「go-tss」と「tss-lib」リポジトリとMayaチームが、Catalyst Milestoneレビューャでビデオの変更を強調したビデオを共有したときに受け入れられるべきです。\n以下の PR は、EdDSA を前述のライブラリに追加します。\n「go-tss’ PR: https://gitlab.com/thorchain/tss/go-tss/-/merge request/254\n‘tss-lib’ PR: https://gitlab.com/thorchain/tss/tss-lib/-/merge requests/37\n\n*NOTE: これらは、書き込み時に開いたMRのことです。変更は別のMRに移すことができます.",
+      "report": "https://www.youtube.com/watch?v=9LMp1x9TE3s 変更を説明するビデオ\ntss-lib は EdDSA をサポートしました。次の MR は EdDSA のサポートを追加しました: https://gitlab.com/thorchain/tss/tss-lib/-/merge requests/41\ngo-ts は、外部リポジトリからローカルコードベースへ、次のマージリクエストで移行しました。 https://gitlab.com/mayachain/mayanode/-/merge request/522\nこのフォローアップで MR, EdDSA は、ローカルのコードベースにある go-tss フォルダーに追加されました: https://gitlab.com/mayachain/mayanode/-/merge requests/523\n以下の機能が追加されました。\n- 分散キー生成\n- 複数のパーティのしきい値の署名\n- バッチ署名サポート\n- GitLabファイルパス(ファイルのマージリクエストを参照してください):\n- /bifrost/ts/go-ts/keygen/eddsa/tss keygen.go - EdDSAキー生成\n- /bifrost/ts/go-ts/keysign/eddsa/tss keysign.go - EdDSA 署名\n- /bifrost/ts/go-ts/tss/keygen.go - デュアルアルゴリズムのKeygenAllAlgo()機能"
+    },
+    {
+      "no": 2,
+      "promise": "MAYANodeは、マヤのノード(MAYANodes)によって実行されるオープンソースコードです。\nMAYANodeはパブキー、ハンドラ、マネージャー、Bifröstsのコードを持っています。\n\nTSS ライブラリと同様に、これらのファイルは ECDSA をサポートするだけです。\n\nMAYANode EdDSA対応のマイルストーンです.",
+      "criteria": "MAYANodeコードはオープンソースです。 MAYANodeでEdDSAをサポートするすべての変更が統合されると、このマイルストーンが受け入れられるはずです。\n\n次の変更は、MAYANodeにEdDSA互換化してマージリクエスト(MR('s))の形で共有されます。\n-Commonフォルダ。\n-クエリ。\n-Mayanode メッセージ、ハンドラ、マネージャー\n-Bifröst(Bifröstオブザーバーは、EdDSAキー関連アドレスへのトランザクション送信を受け入れるために更新する必要があります).",
+      "report": "https://www.youtube.com/watch?v=9LMp1x9TE3s 変更を説明するビデオ\n\n変更を含むマージリクエスト: https://gitlab.com/mayachain/mayanode/-/merge requests/373"
+    },
+    {
+      "no": 3,
+      "promise": "このマイルストーンは、Cardano Bifröstのオブザーバー部を建設することに焦点を当てています。\n\n各統合チェーンには、各チェーンに接続するニュアンスを扱う「Bifröst」クライアントがあります。 ノードが同期されると、vault アドレスが表示されます。 インバウンドトランザクションを見たことがあるなら、MAYAChainの証跡トランザクションに読み込んで変換します。 (詳細はこちら: https://docs.mayaprotocol.com/deep-dive/how-it-works/technology#the-bifroest-protocol-1-way-state-pegs )",
+      "criteria": "-Cardano Bifröstクライアントのオブザーバー部分でMerge Request(MR)を作成しました。 これにより、ブロックスキャナーと観察レポーターがMAYANodeに含まれています。 そのため、MayaNodeに必要なロジックを中継できるような方法で、Maya が Cardano からブロックと txs を処理します。読み込みブロックと高さ (そしてそれを行うエラー) 、 txs と Maya の関連するすべてのデータを読み込み、 tx の種類が確認された (そしてそのコンセンサスの周りに何か) などを検討することができます。\n-未熟なwで作られたすべての変化を乗り越える簡単なビデオを共有しました",
+      "report": "Cardano Bifrostクライアントのオブザーバー部分が構築され、マージされています。 元の煙テストは、Bifrost スペーサ(ブロックスキャナーおよび観測レポータ)を含む全Cardano統合を検証するシミュレーションテストに置き換えられました。\n\nCardano のコードは、次の MR で統合されました。\nhttps://gitlab.com/mayachain/mayanode/-/merge requests/373\n\n開発に関する最新のパイプラインには、シミュレーションテストとすべてのステージで渡されたCardanoが含まれています。\nhttps://gitlab.com/mayachain/mayanode/-/pipelines/2461451445\n\nCardanoのシミュレーションテストコードは次の通りです:\nhttps://gitlab.com/mayachain/mayanode/-/tree/develop/test/simulation/pkg/cardano\n\nCardano Bifrostの変更を上回るビデオ:\nhttps://www.youtube.com/watch?v=sMOHOpP5vhk\n\n論理ブロックとシムテスト間のビデオ相関(上述):\nhttps://www.youtube.com/watch?v=z-CMtf1N3n4"
+    },
+    {
+      "no": 4,
+      "promise": "Cardano Bifröstクライアントは、Cardanoブロックチェーン上で取引を署名し、放送することができます。 これは、$ ADA と払い戻し取引のスワップ/から必要です.",
+      "criteria": "-Cardano BifröstクライアントのSigner部分をCardano Bifröstクライアントのオブザーバー部分を追加する既存のMerge Requestに追加しました。\n-未熟な方法で作られたすべての変更を乗り越える簡単なビデオを共有しました.",
+      "report": "このマイルストーンに関する情報は、このビデオで見つけることができます。\nhttps://www.youtube.com/watch?v=zZSx7WwubRk\n\nマージリクエスト 373 (observer + 署名者):\nhttps://gitlab.com/mayachain/mayanode/-/merge requests/373\n\nキーファイル:\nbifrost/pkg/chainclients/cardano/client.go\n- SignTx (~line 446) — ビルド、サイン、アウトバウンド Cardano tx を放送\n- BroadcastTx (~line 695) — Cardano RPCに署名されたtxを押します\n\n前のマイルストーン:\nマイルストーン3 — カーダノ・バーフェスト(Observer)"
+    },
+    {
+      "no": 5,
+      "promise": "-Cardano Bifröstクライアントが監査済みです。\n-Cardano Bifröstクライアントは、監査の提案された変更をコードに組み込まれています.",
+      "criteria": "-Cardano BifröstクライアントをAuditし、監査の重要な問題に対処します。\n-監査レポート。\n-プロジェクトクローズアウトレポート。\n-プロジェクトクローズアウトビデオ",
+      "report": "・Project Closeout Report: https://gitlab.com/mayachain/mayanode/-/blob/bitol/1100193-cardano-bifrost-audit-closeout-report/docs/cardano-bifrost-audit-closeout-report.md?ref type=heads\n・クローズアウト動画 https://www.youtube.com/watch?v=9Kt0nkrRnd4\n・Audit Report(公開): https://cardano-audit.mayachain.info/\n\n・クローズアウト動画 https://www.youtube.com/watch?v=Z3JqNiNkXyk\n・Audit Report(公開): https://cardano-audit.mayachain.info/\n\nMAYANODE MAINNETに取り込まれたすべてのファインディング。\n更新:\n・プロジェクトクローズアウトレポート: https://gitlab.com/mayachain/mayanode/-/blob/bitol/project catalyst 1100193 final milestone/docs/cardano-project-1100193-closeout-report.pdf?ref type=heads\n\n追加のリソース:\nプロジェクト: Maya プロトコル — 分散型のネイティブ・クロスチェーン・スワップを備えた Supercharge Cardano\n(Catalyst #1100193)\n\n監査報告(公共):\nhttps://cardano-audit.mayachain.info/\n\nオーディションのマージリクエスト(公共):\n!793 https://gitlab.com/mayachain/mayanode/-/merge requests/793\n!794 https://gitlab.com/mayachain/mayanode/-/merge requests/794\n!795 https://gitlab.com/mayachain/mayanode/-/merge requests/795\n\nソースコード(オープンソース)\nhttps://gitlab.com/mayachain/mayanode/mayanode/mayanode\nhttps://gitlab.com/mayachain/cardano-go\nEdDSA TSS: https://gitlab.com/thorchain/tss/go-tss , https://gitlab.com/thorchain/tss/tss-lib\n\nプロジェクトクローズアウトレポート:添付文書を参照してください。\n\n前のマイルストーンのビデオ:\n- EdDSA を Maya プロトコル (TSS ライブラリ / MAYANode) に持ち込む\n- Cardano Bifröst - 観察\n- Cardano Bifröst - 署名"
+    }
+  ]
+}

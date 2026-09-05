@@ -1,0 +1,80 @@
+{
+  "title": "Cardano Smart: A.I. assistant for documentation and on-chain/off-chain development",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 51000,
+      "promise": "Model working in the local environment: the Cardano Smart bot will be working in the local setup.\nUI for user: an interface will be provided for users to ask questions using prompts. At this stage, the model will only work in a close form in the local environment of the developer. It's not meant for the mass use of those not familiar with computer systems. The UI will be a command line interface that is used to write prompts. \nModel accessible in the local setup: we'll provide a close website for testers to access the model remotely. The website will connect with the local environment of the developer. It'll use the local resources of the machine used to develop the bot and not a cloud server. The website will be provided to a group of testers we select and publish here as in the milestone. \nThere will be a schedule to access the website which is meant to be temporary and will be deprecated when the model moves to the cloud.",
+      "criteria": "The model working in the local environment. There won't be documentation at this stage of the project, the model is meant to first be developed to work with the hardware the developers have at their disposal. The first stage is to create a complete version of the bot with all the working modules. \nIn the next stage when the model is optimized to work in a remote environment the documentation for installation will be provided. \nShowcase the model answering questions. The question will show the model answering queries in Lucid, Aiken, PlutusTX, and Mesh. At this stage the model only works in the",
+      "report": "Hello reviewers:\n・The first proof we have is the video of Cardano Smart working while a side widow tracks resource consumption. In the video, the GPU is the piece of hardware taxed the most by the model. https://www.youtube.com/watch?v=CDCsEDE2Z1c\n・The second video is a demonstration we did for Intersect MBO. They hold a bi-weekly event called Show Us What You Got where projects can showcase their work. We joined for the April 24th one and it was recorded by the host. There Cardano smart is being used live while some people asked questions about it. https://www.youtube.com/watch?v=vT0qNSiKNYM\n・Finally, here is the test version of the Cardano Smart bot. http://cardanosmart.testing.lt:3000/ It is in single-user mode but without reservations. It logs the activity and if it detects that there is an activity from another IP, it locks the bot and says to wait a bit for the other to finish.\n\nSo please bear that in mind that if it's locked, likely one of the other testers is using it during that time. Any questions we'll answer via the chat. Happy Labor Day.",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 51000,
+      "promise": "Deploy model in a paid server: the model will be moved from the local setup to a paid server for the first time. \nOptimize the model to work on cloud computing: the model will be optimized to run in the cloud environment.\nDeploy and optimize the model on GCP: Transition the AI model from a local environment to the Google Cloud Platform, leveraging Kubernetes for scalable deployment and enhanced performance.\nOptimize model for GCP: Enhance for auto-scaling, load balancing, caching, and cost efficiency, ensuring optimal cloud performance.\nImplement Cardano documentation scrapers in Python: Use Scrapy for web scraping, detecting changes via content hashing. Automatically processes updates by sending all changed files to the digestion algorithm for inclusion in the vectorial database. Scrapers run bi-daily to keep data current, ensuring all updates are accurately integrated.",
+      "criteria": "Showcase the model uploaded to the cloud\nCloud costs\nA closed alpha test \nShow scrapers updating the sources and what files were changed during each update. \nCreate a GitHub repo to commit all the code and information generated thus far.",
+      "report": "Hello reviewers,\nWe made changes to the repository with the updated scrapers. We also improved the velocity of the model. \n・Here is the model on Google Cloud http://34.118.123.209/\n・Here is the first version of the GitHub https://github.com/ricardas-softa/cardano-smart (updated)\n・Here is the video of the model working: https://youtu.be/ZBhdhPFcVYo\n・Here are some reviews we got from a few people we contacted. The structured feedback is for the next milestone https://drive.google.com/drive/folders/1lODCynQeIynQ__kMgz6byYPoWa0p1vxO\n・Here are the payments we have made so far https://drive.google.com/drive/folders/15lU15j7-f8XiJo1d2e1h1nNv4CNiF-X0?usp=sharing\n・Architecture explanation video https://www.youtube.com/watch?v=PPBeTwUGvf0\n・Here are the commits on the latest update separated by directory in the repository https://github.com/ricardas-softa/cardano-smart/commit/8c1276343ddbd3230ceff7fa565f4af58403030d \n\nRegarding the previous question:\nThe files that are involved in load balancing and scaling are these:\nLoad balancing:\ngcloud/frontend/service.yaml\ngcloud/private-gpt/service.yaml\nVertical scaling:\ngcloud/ollama/deployment.yaml\ngcloud/doc-scraper/cronjob.yaml\ngcloud/private-gpt/deployment.yaml\nOther processes like doc-scraping and ingesting are only loaded and at certain times daily and shuts down till the next day. These schedules are set in these files:\ngcloud/doc-scraper/cronjob.yaml\ngcloud/private-gpt/cronjob.yaml\nAlso all these deployments and services are hosted on the cluster that is autopilot type, so it automatically manages what size nodes to use and automatically manages horizontal scaling. I created that cluster using Google Cloud Console and there is no code for the creation of this cluster in the project, it was done manually in the GCP interface.\nRegards,",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 14
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 34000,
+      "promise": "Complete project repository: provide a complete repository for the bot and give access to members of the community.\nIt will have dependencies, configuration files, comprehensive documentation covering setup instructions, architecture diagrams, operational guides (e.g., how to update or maintain the system), and contribution guidelines, necessary scripts for setup and deployment.\nWrite instructions and documentation: write the needed steps to run the bot locally. It will also include common troubleshooting issues, configuration options, and how to update the bot. Also, a FAQ section will address common queries and challenges users might face. \nAllow the cloning of the repository: permit a limited number of members of the community to clone the repository and attempt to run the bot locally. To ensure a diverse range of experiences and backgrounds of members, we will use Google Forms or other solutions to have them register for an opportunity to participate.",
+      "criteria": "Complete repository of the project\nLimited cloning of repository (10 members, invited using invitation form)\nThe Documentation will include an explanation of the different modules of the bot and instructions on how to set it up in a Linux-based environment. There will be some recommendations and guidelines on how to run it in other environments using docker. Documentation will be included in the GIT repository and can be changed along with the project code. Issues can be reported using GitHub features. Contributions can be done using pull requests.\nShowcase the bot answering sample questions o",
+      "report": "Hello everyone. Here are our proofs for the milestone:\n1 Provide a repository with instructions to install it (Diagrams are listed there):\nhttps://github.com/ricardas-softa/cardano-smart\n2 List of changes:\nhttps://github.com/ricardas-softa/cardano-smart/commits/main/\n3 Video tutorial:\nhttps://www.youtube.com/watch?v=x6Suvoqor3M\n4 Cloud payments:\nhttps://drive.google.com/file/d/1QQiU1q4lQh5_uVit0QdP_yf9aE_yboa7/view?usp=sharing\n5 Read file\nhttps://github.com/ricardas-softa/cardano-smart/blob/main/README.md\n6 Some questions we collected from people who have seen the bot FAQ\nhttps://docs.google.com/document/d/1E9Hdg50_xwQVfnorgHfty5tLB8gXrTDBoL7_J554PAU/edit?usp=sharing\nOnce we collect more in the next stage, we'll add it to GitHub\nIf you have any questions on how to run it locally, contact us via the chat box.",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "24",
+      "cost": 8500,
+      "promise": "Provide a remote environment for anyone: launch Cardano Smart assistant online. It will be in the form of a website hosted on Google Cloud Platform.\nRelease the open repository of the project (containing the code, documentation, instructions, and scripts): make the previously closed repository open for anyone to clone. The “Issues GitHub” feature will be used to submit tickets. Pull requests will be used to contribute to the project. For other questions, there will be a dedicated Discord server available to join.\nCollect general feedback: collect feedback from the general community. The feedback can be submitted from the website itself and they will be collected into a database. There will be a web-based tool for loading these feedbacks, sorting them by rating, searching to help analyze the data, and marking the valuable parts to better see the insights.\nThe open beta will be available for 1 month until final release.",
+      "criteria": "Online Cardano Smart assistant responds to prompts with answers that are sourced from specific documentation. The outputs will be almost always correct, but to make sure there will be references to sources to check if needed. It is impossible to guarantee that the model will always be 100% correct, they sometimes make mistakes. We expect at least 95% of responses to clear prompts to be correct.\nThe bot can answer Cardano questions and provide code in examples for PlutusTx, Aiken, Mesh, and Lucid\nThe feedback form includes a 5-star rating system for speed, accuracy, detail, and conversation awa",
+      "report": "Hello, we contacted Catalyst and got an extension of the milestones. Thanks for the heads-up when we submitted them in the past. They have approved the extension for the delivery. We made some improvements to the model in the time it took to get the approval. \nA. Output: [What was delivered as Output A]\n・https://csmart.dev/ \n\n We moved it from Google Cloud to a cheaper option. That way, it can be online for longer.\n・https://github.com/ricardas-softa/cardano-smart\n\nB. Output: [What was delivered as Output B]\n・Feedback: https://docs.google.com/forms/d/e/1FAIpQLSeXGn6PnE1uovF-MAt1dGLI11tI_pcIG7DQKeEwvXcf1z7Etw/viewform?usp=dialog\n・https://docs.google.com/spreadsheets/d/1LGs9Gg54JY5CqxjLjFnOQBaQTUBakIR-e1Mhz_LKzXc/edit?usp=sharing\n・https://github.com/ricardas-softa/cardano-smart/blob/main/README.md\n・We've added the feedback form to the website\n\nC. Output: [What was delivered as Output C]\n・Presenting the bot: https://x.com/coc_space/status/1990790854504743422\n・https://www.youtube.com/watch?v=Hr-4f-VGQKI\n・We created a Discord server and added the invite link to the site\n・The correctness percentage refers to the answers coming from the Cardano documentation. In the sources, users can confirm that answers have a valid origin. This also happens when the bot is used with other documentation uploaded by a user.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "25",
+      "cost": 25500,
+      "promise": "Release the full version of Cardano Smart: launch Cardano Smart for general use\nRelease the final version of the repository: provide the repository link for other projects to clone. The repo will include comprehensive documentation, installation, and setup guides, examples of usage, contribution guidelines, and a license file. The repository will be cleaned up, and tested before this release.\nEngage Cardano events and also communities to showcase the bot and encourage different users to use the tool.\nWrite the final report with the collected feedback and how it influenced the final version of the project.\nRecord the closeout video for the project. Cover the project's objectives, key milestones achieved, a demonstration of the Cardano Smart assistant, lessons learned, and how the community can continue to be involved.",
+      "criteria": "Cardano Smart works on desktop and mobile devices. Speed is about 100 to 200 words per minute. Sometimes slower, sometimes faster, depending on the number of users and complexity of prompts. The expected accuracy is 95%, but it can make mistakes. It should cover such programming languages as Haskell, PlutusTX, and Aiken. It should also be able to provide code using Mesh, and Lucid libraries.\nComplete GitHub repository with no open critical issues, with up-to-date documentation.\nThe closeout report is written and the video is recorded. The video will cover the project's objectives, key mileston",
+      "report": "Hello:\nVideo Report: https://youtu.be/G71LD38HjpQ\nReport: https://docs.google.com/document/d/1yrO_lEMiKpEJtUC0IlHouFBUiV6M2RVzjK5uB0UYRAY/edit?usp=sharing\niPhone screenshot of the bot: https://drive.google.com/file/d/1MMuRRxRLyFLcdB3BI0djt8h8ID_LaUc3/view?usp=sharing\nAndroid screenshot: https://drive.google.com/file/d/1Qevr8VEiWI76WiYn4psqkikjDM4yExjh/view?usp=sharing\nStatistics: https://drive.google.com/file/d/1pdx4kCrqocmDosUvL7BZY3wGwVf--Byq/view?usp=sharing\nRaw Logs: https://drive.google.com/file/d/1_yzsQ4XRqs1UrXdUUXeIuapiqty_byJb/view?usp=sharing\nWe added the logs and statistics of the queries made to the bot.\nWe have added the release notes to the report and added links to Town Hall, Gimbalabs, and Cardano Over Coffee. The Town Hall mentions our room, but the host did not record the session. Since there have been no more sessions for a few months, we were not able to do it again.",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    }
+  ]
+}

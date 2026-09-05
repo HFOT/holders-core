@@ -1,0 +1,30 @@
+{
+  "title": "Cardano Game Development SDK for Unity",
+  "ms": [
+    {
+      "no": 1,
+      "month": "16",
+      "cost": 24000,
+      "promise": "1) Blockfrost Integration Script (Unity .cs file)\n2) Koios Integration Script (Unity .cs file)",
+      "criteria": "1) Blockfrost Integration Script\n・Script includes methods to interact with the following Blockfrost.io API endpoint groups (based on Blockfrost API 0.1.60 at https://docs.blockfrost.io/):\n・Cardano > Accounts\n・Cardano > Addresses\n・Cardano > Assets\n・Cardano > Transactions\n・Script includes framework to add additional Blockfrost.io API endpoints\n\n2) Koios Integration Script\n・Script includes methods to interact with the following Koios API endpoint groups (based on Koios API v1.1.2 at https://api.koios.rest/):\n・Stake Account\n・Address\n・Asset\n・Transactions\n・Script includes framework to add additional",
+      "report": "A. Output: \nBlockfrost Integration Script (Unity .cs file)\nAcceptance criteria: \n・Script includes methods to interact with the following Blockfrost.io API endpoint groups:\n・Cardano > Accounts\n・Cardano > Addresses\n・Cardano > Assets\n・Cardano > Transactions\n・Script includes framework to add additional Blockfrost.io API endpoints\n\nEvidence: \nA trackable spreadsheet on GitHub lists and links to all evidence \n・https://github.com/realprodiga/UnityCardanoAssets/blob/main/MILESTONE_TRACKING.md\n\nB. Output: \nKoios Integration Script (Unity .cs file)\nAcceptance criteria:\n・Script includes methods to interact with the following Koios API endpoint groups:\n・Stake Account\n・Address\n・Asset\n・Transactions\n・Script includes framework to add additional Koios API endpoints\n\nEvidence:\n・https://github.com/realprodiga/UnityCardanoAssets/blob/main/MILESTONE_TRACKING.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "17",
+      "cost": 15000,
+      "promise": "1) \"Cardano Basic\" WebGL Template (Demo scene, html, and supporting files for Unity \"WebGLTemplates\" folder)\n2) \"Cardano Responsive\" WebGL Template (Demo scene, html, css, js, and supporting files for Unity \"WebGLTemplates\" folder)\nNote: The Blockfrost and Koios integration scripts developed in Milestone #1 enable Unity applications to interact with Cardano, but practical implementation requires that applications are built for WebGL. The WebGL Templates developed in this milestone act as the interface for Unity-built applications to run within a web browser, linking the Blockfrost and Koios integration scripts to HTML pages. These templates ensure that the scripts are properly integrated and functional within a web environment.",
+      "criteria": "Bulk screenshots and functioning links will be provided for:\n1) \"Cardano Basic\" WebGL Template includes:\n・HTML page with embedded Unity Player and Wallet Connect button\n・Demo scene displays wallet balance when connected using Blockfrost or Koios integration scripts\n\n2) \"Cardano Responsive\" WebGL Template includes:\n・HTML page with CSS & JS files with embedded Unity Player and Wallet Connect button\n・Size and layout adapts to different screen sizes (mobile, tablet, desktop)\n・Demo scene displays wallet balance when connected using Blockfrost or Koios integration scripts",
+      "report": "A. Output:\n\"Cardano Basic\" WebGL Template (Demo scene, html, and supporting files for Unity \"WebGLTemplates\" folder)\nAcceptance criteria:\n・HTML page with embedded Unity Player and Wallet Connect button\n・Demo scene displays wallet balance when connected using Blockfrost or Koios integration scripts\n\nEvidence:\nA trackable spreadsheet on GitHub lists and links to all evidence \n・https://github.com/realprodiga/UnityCardanoAssets/blob/main/MILESTONE_TRACKING.md\n\nB. Output:\n\"Cardano Responsive\" WebGL Template (Demo scene, html, css, js, and supporting files for Unity \"WebGLTemplates\" folder)\nAcceptance criteria:\n・HTML page with CSS & JS files with embedded Unity Player and Wallet Connect button\n・Size and layout adapts to different screen sizes (mobile, tablet, desktop)\n・Demo scene displays wallet balance when connected using Blockfrost or Koios integration scripts\n\nEvidence:\nA trackable spreadsheet on GitHub lists and links to all evidence \n・https://github.com/realprodiga/UnityCardanoAssets/blob/main/MILESTONE_TRACKING.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    }
+  ]
+}

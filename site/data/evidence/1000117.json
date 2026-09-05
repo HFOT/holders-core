@@ -1,0 +1,86 @@
+{
+  "title": "MLabs - CardaNow - Rapid Infrastructure Caching",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 63333,
+      "promise": "Design document outlining the architecture and technologies to be used for the caching services.\nInitial project scaffolding.",
+      "criteria": "The various components and technologies used in the caching service are outlined clearly in the design document.\nThe functionality of the caching service, from a high level, is outlined in the design document.\nA repository has been created for the project and contains any initial scaffolding.",
+      "report": "Output Updates:\nWe have an updated architecture document, updated to address the reviewers' concerns from our first submission.\nWe have committed the *initial scaffolding and design doc* to the project repo.\nWe added further scaffolding.\nAcceptance Updates:\nThe repo updated architecture addresses the reviewer feedback concerns and provides the missing material.\nEvidence Updates: \nA commit containing the *initial scaffolding and design doc*\nhttps://milestones.projectcatalyst.io/projects/1000117/milestones\nOur README has been expanded to address reviewer concerns:\nhttps://github.com/mlabs-haskell/cardanow/blob/master/README.md\nhttps://github.com/mlabs-haskell/cardanow/blob/master/docs/Caching%20Infrastructure%20Architecture%20Design.pdf\nThe CardaNow repo contains further project scaffolding such as\nhttps://github.com/mlabs-haskell/cardanow/tree/master/configurations\nhttps://github.com/mlabs-haskell/cardanow/blob/master/docker-compose.yaml\n\nFinally, the explainer video remains available at:\nhttps://www.youtube.com/watch?v=xuwEbPUlZ-s",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 158333,
+      "promise": "A restore script for Cardano node database snapshots that allows the user to start a cardano node with a snapshot produced by the mithril network.\nSource code (excluding any proprietary deployment related code) and documentation.",
+      "criteria": "The restore script successfully restores the downloaded snapshot (allowing Cardano node to continue syncing from that point). To do that, it fetches the latest snapshot from the Mithril network and runs cardano-node using that.\nThe the restore script, is publicly accessible with an open source licence.",
+      "report": "Please find our PoA report, detailing our deliverables, here:\nhttps://github.com/mlabs-haskell/cardanow/issues/31",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 95000,
+      "promise": "Implementation of a Kupo snapshot service (a program that runs alongside Kupo and saves database snapshots).\nTesting and deployment of the Kupo snapshot service.\nA restore script for Kupo database snapshots (and optionally a systemd unit file that runs the restore script prior to starting Kupo).\nSource code (excluding any proprietary deployment related code) and documentation.",
+      "criteria": "Kupo database snapshots are automatically taken at least once per epoch for each public network (mainnet, preprod, and preview).\nThe latest two snapshots for each network are retained, at minimum.\nAnyone can access key metadata about the database snapshots programmatically in JSON format (containing download URL and any other relevant information).\nFiles downloaded from each URL are valid Kupo database snapshots.\nThe restore script successfully restores the downloaded snapshot (allowing Kupo to continue syncing from that point).\nThe portion of the source code related to creating the snapshots,",
+      "report": "Please find our PoA report for Milestone 3 hosted here:\nhttps://github.com/mlabs-haskell/cardanow/issues/60",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 95000,
+      "promise": "Implementation of a Cardano DB Sync snapshot service (a program that runs alongside Cardano DB Sync and saves database snapshots).\nTesting and deployment of the Cardano DB Sync caching service.\nA restore script for Cardano DB Sync database snapshots (and optionally a systemd unit file that runs the restore script prior to starting Cardano DB Sync).\nSource code (excluding any proprietary deployment related code) and documentation.",
+      "criteria": "Cardano DB Sync snapshots are automatically taken at least once per epoch for each public network (mainnet, preprod, and preview).\nThe latest two snapshots for each network are retained, at minimum.\nAnyone can access key metadata about the database snapshots programmatically in JSON format (containing download URL and any other relevant information).\nFiles downloaded from each URL are valid Cardano DB Sync snapshots.\nThe restore script successfully restores the downloaded snapshot (allowing Cardano DB Sync to continue syncing from that point).\nThe portion of the source code related to creating",
+      "report": "Please find our PoA report for milestone 4 here",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 114000,
+      "promise": "Hosting of the caching services for Cardano node, Kupo, and Cardano DB Sync.\nTutorials and improved documentation.\nHealth checks and monitoring.",
+      "criteria": "The caching services for Cardano node, Kupo, and Cardano DB Sync remain online and accessible throughout the duration of this milestone (excluding any temporary downtime).\nTutorials clearly show how to utilize snapshots and the restore scripts in order to quickly spin up Cardano node, Kupo, and Cardano DB Sync instances.\nTutorials require no prior knowledge of the project.\nAny gaps in documentation reported by the community are resolved.\nHealth checks exist for each caching service that can be used to determine if each service is operational without the need for manual testing.\nAlerts have bee",
+      "report": "Please find our updated PoA for Milestone 5 here:\nhttps://github.com/mlabs-haskell/cardanow/issues/97\n\nAdditions include:\n・new status page link https://status.cardanow.staging.mlabs.city/public-dashboards/84d785ac36f44fdab009a28bd1c61293 \n・added documentation link to the main readme https://github.com/mlabs-haskell/cardanow/blob/master/README.md#documentation\n・updated the summary document to confirm we didn't address any community request (because we didn't get any)",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "11",
+      "cost": 107664,
+      "promise": "Continued hosting of the caching services.\nCommunity engagement and gathering of feedback.\nProject closeout report.\nProject closeout video.",
+      "criteria": "The caching services for Cardano node, Kupo, and Cardano DB Sync remain online and accessible throughout the duration of this milestone (excluding any temporary downtime).\nAnyone can submit issues in the Github repository.\nReported issues are triaged and any major issues are addressed in order of severity/importance.\nThe Cardano developer community has been engaged via surveys, discussions, and/or other means.\nA closeout report and video have been provided and contain all the necessary details required by Project Catalyst.",
+      "report": "EVIDENCE\n\nPublicly accessible caching services for Cardano node, Kupo, and Cardano DB Sync are available here: \nhttps://pub-b887f41ffaa944ebaae543199d43421c.r2.dev/available-snapshots.json\n\nPublic issues are available here: \nhttps://github.com/mlabs-haskell/cardanow/issues?q=is%3Aissue+\n\nPosts to MLabs social channels about surveys, discussions, etc:\n\nhttps://x.com/MLabs10/status/1841430758248034370\nhttps://x.com/MLabs10/status/1858431442243739985\n\nCloseout report and video showcasing what has been delivered throughout the course of the project, including this milestone.\n\nVideo: https://www.youtube.com/watch?v=_IHU_JKbNaU\n\nReport: https://github.com/mlabs-haskell/cardanow/issues/100",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

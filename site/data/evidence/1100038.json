@@ -1,0 +1,57 @@
+{
+  "title": "Binocular – Trustless Bitcoin Transaction Oracle",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 30000,
+      "promise": "A litepaper draft with high-level protocol description.\nA first whitepaper draft with detailed protocol description.",
+      "criteria": "The litepaper draft is provided with the high level protocol description.\nThe whitepaper draft is provided with detailed protocol description.",
+      "report": "Hello.\nWe have published our work in progress on Binocular.\nHere is the project repository with current proof of concept implementation:\nhttps://github.com/lantr-io/binocular\nHere is a Litepaper draft: https://github.com/lantr-io/binocular/blob/e1073f1d2e87b26db7f4418e745c3d3a47c63963/Litepaper.md\nAnd here is a first Whitepaper draft: https://github.com/lantr-io/binocular/blob/e1073f1d2e87b26db7f4418e745c3d3a47c63963/Whitepaper.md\nThese are their respective PDF versions:\nhttps://github.com/lantr-io/binocular/blob/e1073f1d2e87b26db7f4418e745c3d3a47c63963/Litepaper.pdf\nhttps://github.com/lantr-io/binocular/blob/e1073f1d2e87b26db7f4418e745c3d3a47c63963/Whitepaper.pdf\nWe are still researching some aspects of the protocol, trying to make it more efficient and cheap, so we'll refine the whitepaper in the next milestone, as promised.\nWe also include the implementation of Bitcoin block heaader validation logic as Cardano smart contract.",
+      "kinds": [
+        "code"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "19",
+      "cost": 30000,
+      "promise": "A refined version of the litepaper with the high level protocol description.\nThe full whitepaper draft with detailed protocol description, communication diagrams, Binocular state machine description.\nAn initial proof of concept implementation of Binocular smart contract state machine.",
+      "criteria": "The refined version of the litepaper is provided with the high level protocol description.\nThe full whitepaper draft is provided with detailed protocol description.\nThe initial Binocular state machine smart contract is available on the GitHub of the project.\nThe Binocular smart contract implements the logic described in the whitepaper, but it can be incomplete.",
+      "report": "A. Output: Refined Litepaper with high-level protocol description\nAcceptance criteria: The refined version of the litepaper is provided with the high level protocol description.\nEvidence: Litepaper.md | PDF\nB. Output: Full Whitepaper draft with detailed protocol description\nAcceptance criteria: The full whitepaper draft is provided with detailed protocol description, communication diagrams, and state machine description.\nEvidence: Whitepaper.md | PDF\nC. Output: Initial Binocular smart contract state machine implementation\nAcceptance criteria: The initial Binocular state machine smart contract is available on the GitHub of the project.\nEvidence: BitcoinValidator.scala\nD. Output: Smart contract implements whitepaper logic\nAcceptance criteria: The Binocular smart contract implements the logic described in the whitepaper (PoW validation, difficulty adjustment, timestamp validation, fork management, block promotion).\nEvidence: ValidatorTest.scala",
+      "kinds": [
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "20",
+      "cost": 25000,
+      "promise": "Refined version of the lightpaper.\nRefined version of the whitepaper.\nA revised proof of concept implementation of Binocular smart contract state machine.\nA proof of concept implementation of Binocular off-chain client code that uses the Oracle.",
+      "criteria": "The refined litepaper and whitepaper Markdown/Latex and PDF documents are provided.\nThe revised Binocular smart contract is available on the GitHub of the project.\nA proof of concept implementation of the Binocular Oracle that can be run on a testnet with the following functionality: create an Oracle UTxO, update the Oracle with new Bitcoin blocks, use the Oracle to construct proofs of transaction inclusion on Bitcoin.\nA successful demonstration of the following functionality on a testnet:\n・create an Oracle UTxO\n・update the Oracle with new Bitcoin blocks\n・use the Oracle to construct proofs of",
+      "report": "A. Output: Refined Litepaper\nAcceptance criteria: The refined litepaper Markdown and PDF documents are provided.\nEvidence: High-level protocol overview covering architecture, key concepts, security analysis, and economic attack costs.\n・Litepaper.md | PDF\n\nB. Output: Refined Whitepaper\nAcceptance criteria: The refined whitepaper Markdown and PDF documents are provided.\nEvidence: Complete technical specification including protocol design, data structures, algorithms with Bitcoin Core references, communication diagrams, formal state machine, and security proofs.\n・Whitepaper.md | PDF\n\nC. Output: Revised Binocular smart contract state machine\nAcceptance criteria: The revised Binocular smart contract is available on the GitHub of the project.\nEvidence: Plutus validator implementing Bitcoin consensus validation (PoW, difficulty adjustment, timestamps), fork management, canonical chain selection, and block promotion logic.\n・BitcoinValidator.scala - Main validator\n・ValidatorTest.scala - Test suite\n\nD. Output: Off-chain client implementation\nAcceptance criteria: A proof of concept implementation of the Binocular Oracle that can be run on a testnet with functionality to: create an Oracle UTxO, update the Oracle with new Bitcoin blocks, use the Oracle to construct proofs of transaction inclusion on Bitcoin.\nEvidence: Command-line application for interacting with the Binocular Oracle on Cardano testnet/mainnet.\n・CliApp.scala - Main CLI application with all commands\n・InitOracleCommand.scala - Creates initial Oracle UTxO\n・UpdateOracleCommand.scala - Submits new Bitcoin blocks\n・ProveTransactionCommand.scala - Generates transaction inclusion proofs\n\nE. Output: Testnet demonstration - Oracle UTxO creation\nAcceptance criteria: Successful demonstration of creating an Oracle UTxO on testnet.\nEvidence: Transaction creating the initial Binocular Oracle UTxO with ChainState datum on Preview testnet.\n・Oracle Script Deployment\n・Tx: https://preprod.cexplorer.io/tx/693c1f024ab5439d9438db446366",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 26,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "21",
+      "cost": 15000,
+      "promise": "The final litepaper with the high level protocol description.\nThe final full whitepaper with detailed protocol description.\nThe Binocular Oracle state machine smart contract implementation.\nA proof of concept implementation of Binocular client code that uses the Oracle.\n・A Project Closeout report.\n・A Project Closeout video.",
+      "criteria": "The final litepaper and whitepaper Markdown/Latex and PDF documents are provided.\nThe Binocular Oracle state machine smart contract implementation is available on the GitHub of the project.\nA proof of concept implementation of Binocular off-chain client code that uses the Oracle is available on the GitHub of the project.\nA Project Closeout report is submitted.\nA Project Closeout video is submitted.",
+      "report": "A. Output: Final Litepaper\nAcceptance criteria: The final litepaper Markdown and PDF documents are provided.\nEvidence: High-level protocol overview covering architecture, key concepts, security analysis, and economic attack costs.\n・Litepaper.md | PDF\n\nB. Output: Final Whitepaper\nAcceptance criteria: The final whitepaper Markdown and PDF documents are provided.\nEvidence: Complete technical specification including protocol design, data structures, algorithms with Bitcoin Core references, communication diagrams, formal state machine, and security proofs.\n・Whitepaper.md | PDF\n\nC. Output: Binocular Oracle state machine smart contract\nAcceptance criteria: The Binocular Oracle state machine smart contract implementation is available on the GitHub of the project.\nEvidence: Plutus validator implementing Bitcoin consensus validation (PoW, difficulty adjustment, timestamps), fork management, canonical chain selection, and block promotion logic.\n・BitcoinValidator.scala - Main validator\n・ValidatorTest.scala - Test suite\n\nD. Output: Off-chain client implementation\nAcceptance criteria: A proof of concept implementation of Binocular off-chain client code that uses the Oracle is available on the GitHub of the project.\nEvidence: Command-line application for interacting with the Binocular Oracle on Cardano testnet/mainnet.\n・CliApp.scala - Main CLI application with all commands\n・InitOracleCommand.scala - Creates initial Oracle UTxO\n・UpdateOracleCommand.scala - Submits new Bitcoin blocks\n・ProveTransactionCommand.scala - Generates transaction inclusion proofs\n\nE. Output: Project Closeout Report\nAcceptance criteria: A Project Closeout report is submitted.\nEvidence: Closeout Report\nF. Output: Project Closeout Video\nAcceptance criteria: A Project Closeout video is submitted.\nEvidence: Project Close-Out Video",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

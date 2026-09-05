@@ -1,0 +1,78 @@
+{
+  "title": "KWARXS + MLabs - \"Fracturizing: Revolutionize, Evolve\"",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 74900,
+      "promise": "The current implementation of the code to build transactions has three components: the backend transaction builder, a minting signature bot and the frontend adapter for partial transactions. These components make use of the deprecated library Bot Plutus Interface. The main purpose of this milestone is to simplify the design by unifying the code for building transactions and also moving away from unmaintained libraries. Our first option is to use Atlas, as we believe it will provide the easiest migration path given the state of our current implementation.\nAs such, the output of Milestone 1 is:\n・Refactored code for building transactions that uses Atlas (or an alternative maintained library) and has a simplified architecture with less components.",
+      "criteria": "The new transaction builder is capable of submitting all the relevant kinds of transactions for Kwarxs to the Cardano testnet (preprod or preview). Specifically, it is capable of performing the two main user actions: minting the NFTs giving rights to receive a share of the shared profits and claiming the portion of rewards to which the NFT holder is entitled.",
+      "report": "Please refer to the following demonstration as Proof of Achievement: https://youtu.be/sO_aaxidZTk\nThe linked demonstration showcases Kwarxs transactions being built with the new Atlas transaction builder (https://github.com/geniusyield/atlas and https://github.com/geniusyield/atlas-docs/) and submitted to the Preview testnet. Specifically, it shows:\n・A rewards pool being created by the administrator, with 10 lovelaces, 100 reward coin A and 100 reward coin B per NFT holder available for distribution, supporting a maximum of 3 NFTs. Transaction: https://preview.cardanoscan.io/transaction/eaaa48cd7d971c189d7838f464331bd884fff198e1a134509f974fbdc1fe5db4\n・ A Kwarxs NFT being bought (and therefore minted). Transaction: https://preview.cardanoscan.io/transaction/814230b28bb975dd8be3df7e1898bf52d7ef9380671fa01952f0c07ad43a2443\n・Rewards being claimed by the Kwarxs NFT holder, burning the NFT and re-minting it with the counter increased (to avoid double claiming) and receiving 10 lovelaces, 100 reward coin A and 100 reward coin B. Transaction: https://preview.cardanoscan.io/transaction/dc084d2e61c0d11a0caebe3c0795cee940a8342eade0a76ceabe4ece7be1cc10",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 74900,
+      "promise": "Following the refactor in Milestone 1, the code will be in a good position to support future versions of Cardano, including the upcoming Conway era. In this milestone, the transaction builder will be adapted to be compatible with the Sancho network, which is the beacon for the Conway era. Once transactions submitted to the Sancho network are accepted, the code will be prepared to run smoothly even post Chang hard-fork.\nAs such, the output of Milestone 2 is:\n・Transaction builder that supports building transactions compatible with the Conway era.",
+      "criteria": "・The new transaction builder is capable of submitting all the relevant kinds of transactions for Kwarxs to the Sancho Network, the testnet supporting Cardano’s Conway era. Specifically, it is capable of performing the two main user actions: minting the NFTs giving rights to receive a share of the shared profits and claiming the portion of rewards to which the NFT holder is entitled.\n\nNote that in the event that Milestone 2 is submitted after the Chang hardfork has taken place, submitting transactions to the preview network will be considered equivalent to submitting them to the Sancho Network.",
+      "report": "The demonstration submitted for Milestone 1 can be reused as Proof of Achievement for Milestone 2. This is because the Chang hard-fork took place on 1st September, 2024, and at the time of submitting the transactions (1st October, 2024) Cardano was already in the Conway era. Therefore, submitting a transaction to the Preview testnet already required being compatible with the Conway era.\nPlease refer to the following demonstration as Proof of Achievement: https://youtu.be/sO_aaxidZTk\nThe linked demonstration showcases Kwarxs transactions being built with the new Atlas transaction builder (https://github.com/geniusyield/atlas and https://github.com/geniusyield/atlas-docs/) and submitted to the Preview testnet in the Conway era (after 1st September, 2024). Specifically, it shows:\n・A rewards pool being created by the administrator, with 10 lovelaces, 100 reward coin A and 100 reward coin B per NFT holder available for distribution, supporting a maximum of 3 NFTs. Transaction: https://preview.cardanoscan.io/transaction/eaaa48cd7d971c189d7838f464331bd884fff198e1a134509f974fbdc1fe5db4\n・A Kwarxs NFT being bought (and therefore minted). Transaction: https://preview.cardanoscan.io/transaction/814230b28bb975dd8be3df7e1898bf52d7ef9380671fa01952f0c07ad43a2443\n・Rewards being claimed by the Kwarxs NFT holder, burning the NFT and re-minting it with the counter increased (to avoid double claiming) and receiving 10 lovelaces, 100 reward coin A and 100 reward coin B. Transaction: https://preview.cardanoscan.io/transaction/dc084d2e61c0d11a0caebe3c0795cee940a8342eade0a76ceabe4ece7be1cc10\n\n-----\nNote on Conway era:\nWhile the fact that the demonstrated transactions on the Preview testnet took place on 1st October, 2024, when Cardano was already in the Conway era, should be enough evidence of the Kwarxs application working on the Conway era, it can be further confirmed by having a look at the set of dependencies used by the project.\nThe link https://drive.google.com/drive/folders/1a40K-VG9",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 74900,
+      "promise": "The current implementation of the frontend will be updated to use the new API developed in Milestones 1 and 2, as well as enhanced with new functionality such as support for bulk claiming of rewards and increased display of information related to the user NFTs and Kwarxs operations.\nAs such, the outputs of Milestone 3 are:\n・Integration of the frontend with the updated library for building transactions.\n・Enhanced functional frontend from where transactions can be submitted using a variety of light wallets.\n・Support for bulk claiming of rewards.\n・Visualisation of claimable rewards by users.\n・Information about Kwarxs operations in real life, which provide the basis for the utility associated with the NFTs. The displayed information will include key operational, environmental and financial metrics of the power plants such as:\n・Total capacity of the plant, showing the system’s power capacity and its ability to generate solar energy.\n・Size of the solar plant, highlighting the physical scale of the project.\n・Number of solar modules, illustrating the extent of the installation and its technology.\n・Annual energy production, demonstrating how much clean energy is generated each year.\n・Perfor",
+      "criteria": "・Transactions interacting with the Kwarxs on-chain scripts via the frontend can be submitted to the Sancho Network using at least 2 different light wallets.\n・A transaction claiming rewards in bulk (i.e. rewards from more than 1 NFT owned by the same address) can be submitted to the Sancho Network.\n・Users that have their wallet connected can see the aggregated amount of claimable rewards by all their Kwarxs NFTs.\n・The Kwarxs website displays information about the solar farms in operation.\n\nNote: In order to kick-start the process, Kwarxs is committing to a power plant operating from day 1 with",
+      "report": ":: RESPONSES ::\nResponse to reviewer 1\n\n> it does not clearly display claimable rewards, as stated in the evidence of milestone completion\n\nPlease try the following steps to view claimable rewards:\n1. Go to https://preview--kwarxs.netlify.app/marketplace\n2. Purchase one or more “TEST REWARDABLE NFT” NFTs.\n3. Wait a minute or so for your wallet to pick up the transaction and then go to https://preview--kwarxs.netlify.app/your-nfts\n4. Look for the “TEST REWARDABLE NFT” collection you purchased. You will see the ADA rewards listed on the card, along with a button to claim the rewards.\n\nNote that this is testnet and the reward pools have been posted on chain ahead of time for testing purposes. On mainnet, these rewards will be distributed over time and thus we cannot display claimable rewards up front on the site. They become claimable at a later time. \n\nInstead, buyers see the APY listed on the NFT they are about to purchase.\n> How is the APY determined?\nThe APY is determined based on revenue generated through our network of wholly-owned subsidiaries under the Kwarxs Corporation (Dubai). These subsidiaries operate across multiple jurisdictions to optimize revenue generation. Profits are aggregated globally, converted into ADA or Cardano's stablecoin (USDM), and allocated to the Energy Reward Pool (NFT burning mechanism) for redistribution to holders.\n> What are the specific revenue sources backing these rewards?\nKey Revenue Mechanisms:\n・Solar Energy Sales: Direct sales of solar-generated electricity to municipalities, governments, utilities, and brokers, priced on a per-kilowatt basis.\n・Real-World Asset Integration: Solar installations within our verified asset portfolio will stream live performance data via API to our upcoming platform (in development), ensuring real-time transparency.\n\nAll revenues are converted transparently into $ADA/USDM and pooled for reward distribution. Annual audited financial statements for each subsidiary will be published post-fiscal year,",
+      "kinds": [
+        "live",
+        "video"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 29960,
+      "promise": "This milestone focuses on the auxiliary services that need to be integrated with Kwarxs in order to operate the application.\nOne of these services to be integrated is the KYC provider Blockpass. The integration with Blockpass will allow Kwarxs to verify the identity of the NFT buyers.\nAlso, the NFT metadata such as associated images and videos will be pre-processed and hosted in IPFS.\nAs such, the outputs of Milestone 4 are:\n・Robust integration with Blockpass.\n・Pre-processing of NFT images and videos, propagating IPFS links to the database to be used by the minting bot.",
+      "criteria": "・Users interacting with the frontend can submit transactions to interact with the Kwarxs on-chain scripts only when using addresses verified by Blockpass.\n・Users that have not passed KYC with Blockpass interacting with the front-end are redirected to verify their identity with Blockpass.\n・The database is populated with all the necessary information and metadata related to the initial mintable collections, consisting of more than 10,000 NFTs.",
+      "report": ":: UPDATE ::\nWe've added an explanation to the database doc - please let us know if you have any other questions.\n\n----\nPlease find our demonstration available here:\nhttps://youtu.be/2mtqNGI9YKA\n\nAnd please find a snippet of our database without sensitive information available here:\nhttps://docs.google.com/document/d/1aL2JnxAOrGZB9TdhQRNIDCXYANpkeLci9Kw7OF_K4pM/edit?tab=t.0#heading=h.vj7qf5jgn3qo",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 44940,
+      "promise": "The final milestone consists of the final preparations to the infrastructure towards launching Kwarxs on the Cardano mainnet. Upon successful completion of this milestone, Kwarxs will be live on mainnet.\nAs such, the outputs for the Final Milestone are:\n・A server with the necessary infrastructure to interact with the Cardano mainnet is set up.\n・The website interacting with the on-chain scripts on mainnet is deployed.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Transactions interacting with the Kwarxs on-chain scripts can be submitted to the Cardano mainnet via the frontend in https://kwarxs.io/.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": ":: UPDATE ::\nThe \"Failed to fetch error\" was do to an unmerged PR, which has now been merged. Sorry for the inconvenience.\nRegarding the NFTs, they are minted on purchase. Please refer to PoA 4 and PoA 1. Thank you.\n--------------------------------\n-A social media post announcing the mainnet launch will be shared, and the website https://kwarxs.io/ will be publicly available to submit to the Cardano mainnet the transactions demonstrated in Milestones 1-3.\nhttps://x.com/MLabs10/status/1976191951683846179\nhttps://kwarxs.io/\n-A link to a Cardano mainnet explorer showcasing Kwarxs' related transactions will also be provided.\nThe following link shows the mainnet NFT purchases performed thus far: https://cexplorer.io/policy/5028254d08505b203273de4cd3baa4c7c2710ed18096f63cf57e1b52/mint#data\n-Transaction details on mainnet.\nFull transaction details are available at the link above.\n-Link to final closeout report\nhttps://docs.google.com/document/d/1vhQOYYKySFnVONaxNp8V6lNEjsc_lqtvaKAD8Ir5smE/edit?tab=t.0#heading=h.twrtp5lz0cxd\n-Link to final closeout video\nhttps://www.youtube.com/watch?v=toBBfEQ6BKM",
+      "kinds": [
+        "chain",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

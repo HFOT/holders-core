@@ -1,0 +1,86 @@
+{
+  "title": "Allow Cardano users to call Sidechain smart contracts directly from their Cardano mainnet wallet",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "・precompiled contract to verify cardano signature in besu node\n・smart contract to abstract evm account and factory smart contract to deterministically deploy it to the address tied with the cardano address\n・backend service to communicate with those contracts\n・npm package which injects custom provider into the browser window object and acts as a bridge between evm provider and cardano wallet.\n\nAll of the parts should be included in the integration tests.",
+      "criteria": "Integration tests cover all of the parts being integrated and cover all of the use cases including:\n・happy path of sending native currency\n・happy path of executing third party smart contract\n・all of the potential failing paths",
+      "report": "The code is open sourced here: https://github.com/dcSpark/wrapped-smartcontracts/tree/main\nthis includes:\n・precompiled contract to verify cardano signatures in the besu node\n・smart contracts to abstract the evm account and the factory smart contract\n・backend service\n・npm package to inject the custom providers https://www.npmjs.com/package/milkomeda-wsc-provider\n\nA link to the tests passing can be found here:\nhttps://github.com/dcSpark/wrapped-smartcontracts/actions/runs/7512703308/job/20453669760\n\nAn screenshot for convenience can be found here: https://drive.google.com/file/d/1rSgjVHWUB5R8l4Ett_o0ODOFjCZQ0R9a/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 7
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 75000,
+      "promise": "Implement mechanism that will allow users pay for gas on Milkomeda side. Backend service is the original payer of the Milkomeda transactions and needs to have a guaranteed refund.",
+      "criteria": "Correct calculations of gas refunds covered in the integration tests.",
+      "report": "Code can be found in the open sourced repo: https://github.com/dcSpark/wrapped-smartcontracts/tree/main/packages\nShared screenshot with the tests passing:\nhttps://drive.google.com/file/d/18ViiUjQM_KzakG2WcxgCiBSSdKHtnYUG/view?usp=sharing\nWe also sent the next milestone with the final version of the Audit which attest this features by a 3rd party.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 75000,
+      "promise": "Audit covering whole infrastructure. That includes precompiled contracts, solidity contracts, backend service and provider npm package. Audit also covered invented mechanism of refunding gas for transaction. Remedies to the findings.",
+      "criteria": "Fixed all of the user facing vulnerabilities",
+      "report": "Original:\nThis is the audit to the wrapped smart contracts by Arbitrary Execution: https://drive.google.com/file/d/1k-4_ozGGzxOVlnDFqHkMjzwzgU8M40eK/view?usp=sharing (final version where we fixed all the issues that came up during the audit). The code base is of course open sourced and it can be found here: https://github.com/dcSpark/wrapped-smartcontracts\n\nComment:\nApologies. After reading your refusal, it became clear that we should had used clearer language. Instead of \"... where fixed all the issues that came up during the audit\" we should had said instead \"... we fixed all the security issues that could affect users' funds\". As of today, we are not aware of any vulnerability that can put users' fund at risk (none) and furthermore there is no way to censor users' actions either.\nWe also address the three (valid) points brought up:\nH01: To make sense of this issue, we believe it's helpful to briefly explain how Milkomeda Wrapper smart contracts work. A proxy smart contract is deployed in the EVM that can only take \"orders\" from a transaction that was signed using a specific Cardano (ed25519) private key. The smart contract deployment is deterministic by the user, so it's safe. This smart contract resembles a wallet that can only be controlled by the user through a Cardano wallet. To improve UX, wrapped smart contracts also allow a batcher (named Oracle) to broadcast transactions for the user. As previously mentioned, the transactions are signed by the user, and the Batcher/Oracle only broadcasts them, taking a very small commission that was added by the user. The user is always able to broadcast a transaction themselves if they prefer.\nComing back to the issue: \"[H01] ORACLE TRANSACTION VALIDATION VULNERABLE TO TIME -OF-CHECK TO TIME-OF-\nUSE RACES\". This issue is for the Oracle and the oracle only; users' funds are never at risk in any way. What this issue is about is that the Oracle software (run by us) can have a race condition when broadcasting a transaction a",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 75000,
+      "promise": "A TypeScript library designed to simplify interactions with Wrapped Smart Contracts (WSCs). This library allows users to execute smart contracts on sidechains or Layer 2 (L2) networks without leaving their Layer 1 (L1) environment",
+      "criteria": "To provide developers with a seamless and intuitive way to integrate Wrapped Smart Contracts into their C1 DApps.",
+      "report": "WSCLib finalized and open sourced https://github.com/dcSpark/wrapped-smartcontracts/tree/main/packages/milkomeda-wsc. This library has been used by multiple projects including TangleSwap, SNEK and Blueshift. the link to the npm package can be found here: https://www.npmjs.com/package/milkomeda-wsc",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 75000,
+      "promise": "A React component library built on top of Milkomeda-WSC Lib. This library offers a recommended form of user experience to allow L1 users to interact with WSCs easily. Thanks to Milkomeda-WSC Lib DApp developers integrations will be seamless. \n.",
+      "criteria": "The UI library should offer two explicit solutions for integrating the necessary steps and prompts:\n・One where the prompts and actions are seamlessly embedded in the DApp frontend.\n・Another where the user is presented with a wallet-like interface that can be opened from the frontend.",
+      "report": "This easy to integrate library for the Wrapped Smart Contracts (WSC) can be found here https://github.com/dcSpark/wrapped-smartcontracts/tree/main/packages/milkomeda-wsc-ui and also an easy to use example here: https://github.com/dcSpark/wrapped-smartcontracts/tree/main/packages/milkomeda-wsc-ui-next-example\n\nit was already used in production by the TangleSwap team",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 73276,
+      "promise": "・To successfully integrate Wrapped Smart Contract (WSC) technology with two Milkomeda C1 EVM DApps and promote the integrations through a targeted marketing campaign.\n・Integration with Wrapped Smart Contract Technology: Collaborate with development teams to integrate WSC technology into two Milkomeda C1 EVM DApps. \n・Marketing Campaign: Prior to the integration, launch a multi-channel marketing campaign to create awareness and excitement around the upcoming features. This will include social media announcements, blog posts, and twitter spaces.\n\nProject Close Report:\n・pdf report\n・video report",
+      "criteria": "・Successful Integration on Mainnet: Ensure that the WSC technology is fully integrated and functional in two Milkomeda C1 EVM DApps on the mainnet.\n・Marketing Announcements: Publicly announce the successful integrations through various platforms as planned in the marketing campaign.\n・End-User Documentation: Provide comprehensive guides and FAQs for end-users to understand how to utilize the new WSC features.\n・Developer Documentation: Create detailed technical documentation to assist other Milkomeda projects in integrating WSC technology using WSC-UI-Lib.\n・Community has the access to PCR - vide",
+      "report": "Updated link (PDF): https://drive.google.com/file/d/1HLYg_QvG7mh6HmGw_BXTUvysZM8dni1d/view?usp=sharing\nPoA:\n・Closing video https://vimeo.com/940522379 \n・Audit wrapped_smart_contract-final-report.pdf\n・Codebase https://github.com/dcSpark/wrapped-smartcontracts\n・Developer Docs https://docs.milkomeda.com/cardano/wrapped-smart-contracts\n・Partner integration video https://www.youtube.com/watch?v=vFD9jwd4fOY\n・Social links PoA:\n・https://x.com/DjedAlliance/status/1717145815699865788\n・https://x.com/Milkomeda_com/status/1740887696514674849\n・https://x.com/Milkomeda_com/status/1735455764050030736\n・https://x.com/blueshiftfi/status/1697232842068197739\n・https://x.com/blueshiftfi/status/1696916609686757844",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 20,
+      "cut": true
+    }
+  ]
+}

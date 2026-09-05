@@ -1,0 +1,62 @@
+{
+  "title": "Gasless Tx Library: Empowering Cardano dApps & DAOs to Sponsor Gas Fees to Increase User Base and Adoption - Open-source",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "Technical Specification Document: A comprehensive design document that details the architecture of the gasless transaction library, including components like API endpoints, data flow diagrams, and system integration strategies.\nDevelopment & Testing Plan: A clear plan for developing the library, including the selection of development tools and a gantt timeline chart to execute the plan.",
+      "criteria": "We will ensure that the proposed design meets the required functionality and integration capabilities. Anyone with knowledge of cardano development can cross check and verify as it is open source. We will get a feedback statement from the NMKR team regarding the doc to validate this.\n\nThe doc will also have gantt timeline chart to execute the plan.",
+      "report": "Requirements and Technical Specifications Document: Gasless Tx Library for Cardano - https://elderly-hammer-b9c.notion.site/Requirements-and-Technical-Specifications-Document-Gasless-Tx-Library-for-Cardano-18fe8a72de368067a135e0e38de6baba\nNote: We have used notion instead of gdoc to better accommodate the code and API schemas",
+      "kinds": [
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 36000,
+      "promise": "A functional gasless transaction library that demonstrates the core functionality, including the ability to manage gas fees behind the scenes.\nInitial documentation that provides guidance on how to integrate the library with Cardano dApps.",
+      "criteria": "The library must successfully demonstrate the elimination of gas fees on the user end and provide a simple library for platforms to integrate.\nThe integration guidelines sufficient for developers to begin testing the integration with their dApps.",
+      "report": "Gitbook - https://gasless.nucast.io/\nGithub\nTypescript - https://github.com/Nucastio/gasless-tx-ts\nPython - https://github.com/Nucastio/gasless-tx-py\nLibrary Demo Video\nhttps://drive.google.com/file/d/1qT8yOGRTfOayx3LpQmgmO1fQsjPgqqxf/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 36000,
+      "promise": "・The library updated with any necessary changes clearly mentioning the changes with commit tags on github for (API updates, bug fixes, new feature additions, performance updates, etc.) following the initial user feedback.\n・A comprehensive plan for conducting user testing, including objectives, participant criteria, and the methodology used.\n・The test participants will be internal devs and its open source. We will tweet for anyone to participate for a week. We can't ask personal information from the testers so anyone who wants to participate and test our open source library.",
+      "criteria": "・The updated library should incorporate all necessary changes and demonstrate improved stability as per participant feedback.\n・We will provide data related to the updates we have pushed in library such as reduced error rate, processing performance and response time.\n・The user testing plan should be ready to implement, aiming to gather comprehensive feedback from potential users.\n・The test participants will be internal devs and its open source. We will tweet for anyone to participate for a week. We can't ask personal information from the testers so anyone who wants to participate and test our o",
+      "report": "Tweet Invitation for community participation: https://x.com/NucastIO/status/1906694684614836590\nDev Community Engagement tweets: https://x.com/MinswapIntern/status/1906743811310493925\nCommunity dev and project participation and Dapp integrations: https://x.com/cardexscan/status/1917066145162793025\nhttps://x.com/NucastIO/status/1912929057332658557\nTesting documentation with resolved github issues: https://drive.google.com/file/d/1bQUlm8Yz_OE7veWamH8eclh50F0SBTnY/view?usp=sharing \nGithub issues and the fixes can be tracked here: https://github.com/Nucastio/gasless-tx-ts/issues\nGithub Commits - Fixes and improvements: https://github.com/Nucastio/gasless-tx-ts/commits/master/",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 28000,
+      "promise": "・The completed library & public release, incorporating feedback.\n・Complete documentation, including user guides, API references, and examples of integration with dApps.\n・launch and marketing of the library, including targeted outreach to potential developer communities.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・The final library must be fully functional, with all intended features working as expected.\n・The documentation should be comprehensive, easy to understand, and provide all necessary information for developers to use the library effectively.\n・We will open a support channel on our discord and announce it on twitter. \n・Library will be open-source under the MIT license.\n・We will share a plan for upgrade and maintenance in doc format.\n・Marketing and launch to maximize adoption and community engagement.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Public Repositories\nTypeScript: https://github.com/Nucastio/gasless-tx-ts\nPython: https://github.com/Nucastio/gasless-tx-py\nFunctional Demo\nhttps://drive.google.com/file/d/1qT8yOGRTfOayx3LpQmgmO1fQsjPgqqxf/view?usp=sharing\nDev Documentation https://gasless.nucast.io\nMarketing & Community Engagement\nInitial Invitation Tweet: https://x.com/NucastIO/status/1906694684614836590\nDeveloper Feedback Thread: https://x.com/MinswapIntern/status/1906743811310493925\nEcosystem Feedback: https://x.com/cardexscan/status/1917066145162793025\nFollow-up Activities: https://x.com/NucastIO/status/1912929057332658557\nProject Close-out Report https://docs.google.com/document/d/1j57cojpsyPMK1-QkU8EjXHJW0xz5g7M_z32e2yO2g-c/edit?usp=sharing\nProject Close-out Video https://youtu.be/qZMapuCFnGE?si=x18w4nnIvfqNi3VZ",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 20
+    }
+  ]
+}

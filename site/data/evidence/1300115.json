@@ -1,0 +1,74 @@
+{
+  "title": "Indigo Protocol: Typescript Off-chain SDK",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "Provide a public GitHub repository with the following:\n・Scaffolded TypeScript-based SDK structure.\n・Core endpoints for managing Collateralized Debt Positions (CDPs).\n・Documentation on how to install the SDK into your own project.",
+      "criteria": "・SDK structure is implemented and functional.\n・CDP endpoints (open, manage, and close, redemption) are functional, allowing basic interaction with the Indigo Protocol.\n・Clear, concise documentation on how to install the SDK into your own project.",
+      "report": "Milestone Outputs\nhttps://github.com/indigoprotocol/indigo-sdk - This is the open source repository for the Indigo SDK. This contains: the typescript SDK for collateralized debt position endpoints: Open, Mint/Burn/Deposit/Withdraw, and Close. Documentation in the README.md on how to install the project into your own.\nAcceptance Criteria\nThe SDK structure is as follows:\nsrc/ - The base project source directory\nsrc/contracts/ - A class for each contract and it's corresponding endpoints.\nsrc/helpers/ - Helper functions for fetching UTxOs, calculating interest, etc.\nsrc/scripts/ - The validators to be loaded in for Indigo v2.1\nsrc/types/ - Types for datums, validator parameters, redeemers, etc.\ntests/ - The project test suite (unit tests for now)\nEvidence of milestone copmletion\nhttps://github.com/indigoprotocol/indigo-sdk - Github Repository publicized with the scaffolded SDK and CDP endpoints.\nhttps://github.com/IndigoProtocol/indigo-sdk/tree/main/tests - Unit tests exist here for interacting with CDPs, such as datum serialization checks in datums.test.ts, Validator Hash checks in hash-checks.test.ts, and CDP Interest calculations in interest-calculations.test.ts. Instructions to run the tests are included in the README.md\n```\n PASS tests/interest-calculations.test.ts\n Interest Calculations\n Calculate Unitary Interest\n ✓ Should calculate the unitary interest correctly, 0 (3 ms)\n ✓ Should calculate the unitary interest correctly, 1\n ✓ Should calculate the unitary interest correctly, 2\n Calculate Accumulated Interest\n ✓ Should calculate the accumulated interest correctly, 0 (1 ms)\n ✓ Should calculate the accumulated interest correctly, 1\n ✓ Should calculate the accumulated interest correctly, 2\n ✓ Should calculate the accumulated interest correctly, 3\n ✓ Should calculate the accumulated interest correctly, 4\n ✓ Should calculate the accumulated interest correctly, 5\n\n PASS tests/datums.test.ts\n Datum checks\n ✓ Price Oracle (5 ms)\n ✓ Interest Oracle\n ✓ CDP (2 ms)\n ✓ iAsse",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 40000,
+      "promise": "・Implemented endpoints for interacting with the Stability Pool.\n・Added functionality for staking within Indigo Protocol.\n・Examples documented for the added features.",
+      "criteria": "・Stability Pool endpoints (deposit, withdrawal, close) are functional and meet Indigo Protocol’s specifications\n・Staking functionalities are implemented and fully operational within the SDK.\n・Clear and concise documentation and examples displaying how to execute the above implemented features.",
+      "report": "Milestone Outputs\nhttps://github.com/indigoprotocol/indigo-sdk - This is the open source repository for the Indigo SDK. This project has been updated since commit hash `6544fe8` to include endpoints for a new feature (outside the scope of this Catalyst project) called LRP, and also introduces endpoints for opening, adjusting, and closing Staking Positions and Stability Pool accounts.\nSince that has, we've also included a much more comprehensive test suite that includes initializing the protocol, and doing acceptance tests (in an emulated environment) for CDPs, LRP, Staking, and Stability Pools.\nAcceptance Criteria\nThe SDK structure is as follows:\nsrc/ - The base project source directory\nsrc/contracts/ - A class for each contract and it's corresponding endpoints.\nsrc/helpers/ - Helper functions for fetching UTxOs, calculating interest, etc.\nsrc/scripts/ - The validators to be loaded in for Indigo v2.1\nsrc/types/ - Types for datums, validator parameters, redeemers, etc.\ntests/ - The project test suite (unit tests for now)\nEvidence of milestone copmletion\nhttps://github.com/indigoprotocol/indigo-sdk - Github Repository publicized with the scaffolded SDK and CDP endpoints.\nhttps://github.com/IndigoProtocol/indigo-sdk/tree/main/tests - Acceptance tests for Stablility Pool and Staking Positions have been introduced here in the following files: stability-pool.test.ts and staking.test.ts. Additionally, datum and hash check tests have been extended to include the appropriate datums for each contract as well as the validator hashes.\n```\n RUN v2.1.9 /Users/codybutz/Documents/Indigo/Code/indigo-sdk\n ✓ tests/datums.test.ts (7)\n ✓ Datum checks (7)\n ✓ Price Oracle\n ✓ Interest Oracle\n ✓ CDP\n ✓ iAsset\n ✓ Staking Manager\n ✓ Staking Position\n ✓ Stability Pool\n ✓ tests/hash-checks.test.ts (5) 307ms\n ✓ Validator Hash checks (5) 307ms\n ✓ CDP Creator validator hash\n ✓ CDP validator hash\n ✓ Collector validator hash\n ✓ Staking validator hash\n ✓ Stability Pool validator hash\n ✓ tests/initial",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "10",
+      "cost": 50000,
+      "promise": "・Implemented endpoints for interacting with Governance, such as voting, text proposal creation, and creating/merging shards, and closing proposal.\n・Added tests to the project for governance features.",
+      "criteria": "・All governance endpoints are functional and meet Indigo Protocol’s specifications.\n・All unit tests that cover serialization/deserialization of Governance CBOR are passing.",
+      "report": "Link to GitHub repository: https://github.com/indigoprotocol/indigo-sdk\nTo run the tests, you will need to check out the `develop` branch. The instructions to run the tests are included in the README.\nIf you wanted to review the endpoints, you can see the actual endpoints implemented in this file: https://github.com/IndigoProtocol/indigo-sdk/tree/develop/src/contracts/gov\nHere is a copy of the output of running ONLY the gov tests. This tests all the core gov features, such as voting, text proposal creation, and creating/merging shards, and closing proposals:\n```\n➜ indigo-sdk git:(develop) pnpm test tests/gov.test.ts \n\n> @indigo-labs/indigo-sdk@0.1.20 test /Users/Documents/Indigo/Code/indigo-sdk\n> vitest run tests/gov.test.ts\n\n RUN v4.0.14 /Users/Documents/Indigo/Code/indigo-sdk\n\n ✓ tests/gov.test.ts > Gov > Create text proposal 1018ms\n ✓ tests/gov.test.ts > Gov > Create text proposal with shards 939ms\n ✓ tests/gov.test.ts > Gov > Merge proposal shards 943ms\n ✓ tests/gov.test.ts > Gov > Create asset proposal 944ms\n ✓ tests/gov.test.ts > Gov > Vote on proposal 1299ms\n ✓ tests/gov.test.ts > Gov > Vote on 2 proposals sequentially (lower pollID first) 1552ms\n ✓ tests/gov.test.ts > Gov > Vote on 2 proposals in reverse (higher pollID first), both yes and no votes 1514ms\n ✓ tests/gov.test.ts > Gov > End passed proposal 1563ms\n ✓ tests/gov.test.ts > Gov > End failed proposal 1636ms\n ✓ tests/gov.test.ts > Gov > Execute text proposal 1692ms\n ✓ tests/gov.test.ts > Gov > Execute text proposal with treasury withdrawal 1790ms\n ✓ tests/gov.test.ts > Gov > Execute create asset proposal 2015ms\n ✓ tests/gov.test.ts > Gov > Execute create asset proposal with treasury withdrawal 2188ms\n ✓ tests/gov.test.ts > Gov > Execute modify asset proposal 2120ms\n ✓ tests/gov.test.ts > Gov > Execute modify asset proposal with treasury withdrawal 2321ms\n ✓ tests/gov.test.ts > Gov > Execute modify protocol params proposal 2150ms\n ✓ tests/gov.test.ts > Gov > Execute modify protocol params proposal with",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "11",
+      "cost": 20000,
+      "promise": "・Full end-to-end testing of all SDK features.\n・Complete user documentation, including setup instructions and code examples.",
+      "criteria": "・All SDK functionalities pass end-to-end tests without errors.\n・Documentation is published and reviewed, ensuring it covers all necessary use cases and SDK features.",
+      "report": "Link to GitHub repository: https://github.com/indigoprotocol/indigo-sdk\nTo run the tests, you will need to check out the `develop` branch. The instructions and documentation to run the tests are included in the README.\nHere is a copy of the output of running ALL the tests for the SDK. This tests all the core CDP, Stabiliity Pool, Staking, Governance, LRP, and Treasury endpoints:\n```\n➜ indigo-sdk git:(develop) pnpm test\n\n> @indigo-labs/indigo-sdk@0.1.20 test /Users/Documents/Indigo/Code/indigo-sdk\n> vitest run\n\n RUN v4.0.14 /Users/Documents/Indigo/Code/indigo-sdk\n\n ✓ tests/interest-calculations.test.ts > Interest Calculations > Calculate Unitary Interest > Should calculate the unitary interest correctly, 0 1ms\n ✓ tests/interest-calculations.test.ts > Interest Calculations > Calculate Unitary Interest > Should calculate the unitary interest correctly, 1 0ms\n ✓ tests/interest-calculations.test.ts > Interest Calculations > Calculate Unitary Interest > Should calculate the unitary interest correctly, 2 0ms\n ✓ tests/interest-calculations.test.ts > Interest Calculations > Calculate Accumulated Interest > Should calculate the accumulated interest correctly, 0 0ms\n ✓ tests/interest-calculations.test.ts > Interest Calculations > Calculate Accumulated Interest > Should calculate the accumulated interest correctly, 1 0ms\n ✓ tests/interest-calculations.test.ts > Interest Calculations > Calculate Accumulated Interest > Should calculate the accumulated interest correctly, 2 0ms\n ✓ tests/interest-calculations.test.ts > Interest Calculations > Calculate Accumulated Interest > Should calculate the accumulated interest correctly, 3 0ms\n ✓ tests/interest-calculations.test.ts > Interest Calculations > Calculate Accumulated Interest > Should calculate the accumulated interest correctly, 4 0ms\n ✓ tests/interest-calculations.test.ts > Interest Calculations > Calculate Accumulated Interest > Should calculate the accumulated interest correctly, 5 0ms\n ✓ tests/datums.test.ts > Datum checks >",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "12",
+      "cost": 30000,
+      "promise": "・Final project report summarizing the development process, key achievements, and impact on the Cardano community.\n・Closing video demonstrating the SDK’s functionality and its use cases.",
+      "criteria": "・Final closeout report is publicly available\n・Closing video is produced, showing the SDK’s successful implementation and how it can benefit developers in the Cardano ecosystem.",
+      "report": "Final Report: https://docs.google.com/document/d/1Xdl8r-bOC-4ySPrsqgaZSCWMY62QKiWVHdc2av_X9ak/edit?usp=sharing\nClose out video: https://youtu.be/n6EOtvkRZ_k",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

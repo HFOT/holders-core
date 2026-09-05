@@ -1,0 +1,66 @@
+{
+  "title": "Enhancing Cardano Developer Ecosystem with Open Source Tooling",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 30000,
+      "promise": "Platform Architecture Design\n・Define the overall structure, components, and interactions of the smart contract generation platform, including modules for NFT, Burn, and Mint functionalities.\n・Document architectural decisions specific to NFT, Burn, and Mint smart contract generation, including plugins, customizations, and integrations.\n・Provide detailed diagrams illustrating the system's architecture,\n\nUser-Friendly Prototype\n・Functional prototype: Demonstrates core functionalities of the platform, developed using plugin and focused on NFT, Burn, and Mint smart contract generation. \n・Seamless interaction: Ensures smooth and intuitive user experience for testing and evaluating\n・Intuitive interface: Smart contract generator platform will use developers familiar elements like buttons, dropdowns, radio buttons, and input fields to enhance user experience.",
+      "criteria": "Architecture Design Validation\n・Ensure the architecture design aligns with project requirements and goals, specifically tailored for NFT, Burn, and Mint smart contract generation.\n・Validate the scalability and performance aspects of the proposed architecture \n・Conduct a peer review to gather feedback and refine the design\n\nPrototype Functionality Verification for Smart Contract Generation\n・Verify that the prototype accurately reflects the envisioned platform functionality\n・Test each core feature related to NFT, Burn, and Mint smart contract generator to ensure proper functionality and usabilit",
+      "report": "・Platform Architecture Design Document (with definition): Link to document\n・Architectural decision document Click here\n・Functional Prototype is available showcasing core features and functionalities. please test it here.\n・Click here for demo video & Vesting demo video\n・Internal Feasibility Testing Report: Document detailing test scenarios, results, and identified issues during the testing phase. Link to document\n・Feedback Log: Summarizes stakeholder input regarding the smart contract generator functionalities and proposed adjustments. Link to document\n・A publicly accessible github repo with MIT license includes all the changes and updates made during the milestone. - click here\n・peer review/discussion session - click here\n\n﻿\nNote:-\n・Our plan was to test the system (prototype) internally, we discussed about the project with local blockchain community members - click here\n・We’re implementing the smart contract generator in a customizable way. Even though our M1 acceptance criteria is limited to NFT mint & burn, we decided to add vesting and other smart contracts. So far Customizable smart contract template implemented for:-\n\n-NFT Mint & Burn onchain & offchain (lucid)\n-Vesting onchain, lucid\n-Utilities files (Conversions.hs, PlutusTx.hs, and Serialise.hs)\n-Assets file (Vesting.plutus)\n・NFT Smart contract generation process demo video & Vesting demo video\n・Flow Design Document: Link to document\n\nThe platform UI design is implemented on XD - design of the platform click here.",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 25,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 30000,
+      "promise": "Pilot Phase Launch\n・Successful launch of a closed beta platform accessible to a pre-selected group of Cardano developers. \n・Clear and concise instructions provided for participants to test NFT, Burn, and Mint smart contract functionalities. \n\nUser Feedback Report\n・Comprehensive report summarizing user experience, platform functionality, and performance feedback collected during the pilot phase. \n・Specific focus on feedback related to NFT, Burn, and Mint smart contract interactions. \n\nIterative Enhancements\n・Implementation log detailing changes made based on community feedback, with a focus on improving NFT, Burn, and Mint smart contract processes. \n・Prioritization of bug fixes and performance improvements impacting usability. \n\nPlatform Documentation Draft \n・Initial draft of platform documentation outlining usage instructions and best practices. \n・Dedicated sections providing specific guidelines for NFT, Burn, and Mint smart contract implementation.",
+      "criteria": "・Successful launch of the pilot phase with documented participant access and platform availability for testing.\n・Collection of comprehensive user feedback, particularly regarding NFT, Burn, and Mint smart contract functionalities.\n・Implementation of iterative enhancements based on feedback, with demonstrable improvements.\n・Resolution of identified bugs and performance issues impacting user experience\n・Completion of an initial draft platform documentation on smart contract generator usage.",
+      "report": "・Beta platform site Click here\n・Click here for plugin repository and click here for theme repository\n・Successful launch of a beta platform accessible to a pre-selected group of developers. Click here\n・Comprehensive report summarizing user experience, platform functionality, and performance feedback collected during the pilot phase. Click here for the report and here for google form\n・Log of changes made based on community feedback, focusing on improving smart contract generation processes including bug fixes and performance improvements plugin improvements and all theme change logs here \n・﻿Initial draft of platform documentation outlining usage instructions and best practices. Click here",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 9
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 25000,
+      "promise": "Platform Completion\n・ Fully functional smart contract generation platform with all planned features and functionalities operational.\n・ Code publicly available on GitHub.\n\nRigorous Testing & Debugging\n・ Comprehensive test suite executed, covering all features and edge cases.\n・ Documented resolution of all identified bugs and issues impacting platform functionality and stability.\n・ Testing report summarizing overall platform performance and stability metrics.\n\nComprehensive Documentation\n・ Open-source and readily accessible documentation published on GitHub.\n・ User guides covering platform usage, functionalities, and best practices.\n・ Developer guides outlining platform customization and advanced functionalities.\n\nDeployment & Public Launch\n・Platform successfully deployed and accessible to the developers for use.\n・ Detailed deployment checklist documenting setup, configuration, and security measures.\n・ Official launch announcement published through multiple channels within the Cardano community (Telegram group and social media).",
+      "criteria": "・All planned features are fully implemented and operational within the platform.\n・Rigorous testing demonstrates platform stability, reliability, and adherence to requirements.\n・Comprehensive documentation is publicly available and provides clear guidance for users and developers.\n・Platform is successfully deployed and accessible to the public.\n・Official launch announcement effectively communicates platform availability to the Cardano community.",
+      "report": "・Official site cscg.datascienceplc.com or cardanosmartcontractgenerator.com\n・Plugin github link: https://github.com/EsubalewAmenu/CSCG-Cardano-Smart-Contract-Generator\n・Theme github link: https://github.com/khalinoid/cscg-theme\n・The fully functional smart contract generation platform with all planned features and functionalities is operational. Video click here\n・Comprehensive testing has been executed, covering all features and edge cases. Test suite can be found here. All identified bugs and issues impacting functionality and stability have been resolved. Click here for testing report and solutions\n・“How to set up on your computer using docker” guide video can be found here. \n・Updated the user guide document covering platform usage, functionalities, and\n・best practices, as well as \n・developer guides outlining platform customization and advanced functionalities.\n・The platform has been successfully deployed and is accessible to developers on cscg.datascienceplc.com or cardanosmartcontractgenerator.com. A detailed deployment checklist documenting setup, configuration, and security measures is completed. Click here\n・﻿An official launch announcement has been published through multiple channels within the Cardano community. Link to Linkedin announcement, Cardano developers community, Ethiopia blockchain Network, Programmers Union group, and Catalyst Ethiopia group",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 21
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 15000,
+      "promise": "・Detailed project completion report documenting achievements, challenges, and lessons learned.\n・Video presentation showcasing key platform features, impact, and benefits.\n・Project closeout report and video that meet requirements of catalyst project closeout process",
+      "criteria": "・The project completion report must include comprehensive summaries of achievements, challenges, and lessons learned.\n・The video presentation should effectively highlight key platform features, impact, and benefits.\n・Distribution of the project completion report and video through official Cardano channels and community forums.\n・Project written summery report and video based on Catalyst project closeout process",
+      "report": "・Closeout report prepared. Click here\n・Closeout video prepared. Click here\n\nBased on reviewers feedback\n・Project closeout video added on closeout report (under relevant links section)\n・Distribution of the project completion on linkedin, Cardano developers official and Catalyst Ethiopia\n\nRelevant Links\n・Official site: cscg.datascienceplc.com or cardanosmartcontractgenerator.com\n・GitHub Repository (Theme): Click here\n・How to generate smart contracts?: Click here\n・How to setup the platform: Click here\n・User guide document: Click here\n・Developers guide: Click here\n\nA big thank you for your time, valuable feedback and support throughout the journey!",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

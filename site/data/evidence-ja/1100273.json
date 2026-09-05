@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・モックアップの作成、ユーザーFAQのデータ提供、ユーザー向け動画の解説など\n・データベース設計の見直し\n・各モジュールのAPIエンドポイントを特定します。\n・バックエンドコードベースの開発\n・提供されたタスクリストに関連したタスクの成功",
+      "criteria": "1. ユーザーの指導のため:\n・よく寄せられる質問のための1つのモックアップを作成します。\n・10の質問や回答の一覧を提供\n・ユーザーガイダンスに1つの指示ビデオを含める。\n\n2. APIのエンドポイントの同一証明:\n・実装した API の包括的なリストと各モジュールの将来の実装を予定しているもの。\n\n3. データベースの再設計:\n・再設計したデータベース構造を1図作成。\n\n4. バックエンドコードの実装:\n・バックエンドのコードベースをBitbucketにアップロードします。\n\n5.タスク完了:\n・詳細なTo-doリストのアウトライン完了と終了タスクの文書化.",
+      "report": "1. ユーザーの指導のため:\n・よく寄せられる質問のための1つのモックアップを作成します。 (https://drive.google.com/file/d/1Q0gwX7MdwlY2 B4xRaU-0sdb7Rcs3DLk/view?usp=drive link)\n・10の質問や回答の一覧を提供 (https://docs.google.com/document/d/1jiSAzGaHhJf6xMsC49ibfIcwaHcSE0SjHtJQfibgJ1g/edit?usp=sharing)\n・ユーザーガイダンスに1つの指示ビデオを含める。 (https://www.youtube.com/watch?si=wF4rsN1K3AEg8yPR&v=nlOwO1o LbU&feature=youtu.be)\n\n2. APIのエンドポイントの同一証明:\n・実装した API の包括的なリストと各モジュールの将来の実装を予定しているもの。 (https://docs.google.com/spreadsheets/d/1rw5UzUJ6jSra7BNJZZ2ZC15VOe5xdmYO/edit?usp=drive link&ouid=100299821010526526369&rtpof=true&sd=true)\n\n3. データベースの再設計:\n・再設計したデータベース構造を1図作成。 (https://drive.google.com/file/d/1qK-qPb9JwvQW6A  lKhAvTiJD3w615c5/view?usp=drive link)\n\n4. バックエンドコードの実装:\n・バックエンドのコードベースをBitbucketにアップロードします。 (https://bitbucket.org/fund11/utcert-service/src/main/) )\n\n5. タスクの完了:\n・詳細なTo-doリストのアウトライン完了と終了タスクの文書化 (https://drive.google.com/file/d/1 U1o9cbQYi1DoqGBB6-N 95AaPd1-JoF/view?usp=drive link)"
+    },
+    {
+      "no": 2,
+      "promise": "MockupのFAQを実装\n古いAPIを再構成し、最適なコード\nIPFSファイルを保存するPinataプランをアップグレードする\n開発環境の展開",
+      "criteria": "1. モックアップのFAQを実装する\n・よく寄せられる質問(FAQ)セクションの新規ユーザーインターフェイス(UI)ページを開発。\n\n2. 古いAPIを再構成し、最適なコード\n・コードをクリーンにし、より効率的でメンテナンスが容易\n・バックエンドコードをBitbucketにアップロード\n\n3. IPFSファイルを保存するピナタプランのアップグレード\n・ピナタプランを「ピクニックプラン」にアップグレード\n\n4. 開発環境の展開\n・WebサイトやAPIをホストする開発サーバーや環境を設定します.",
+      "report": "※注意:マイルストーン2からセキュリティを確保するために、各フェーズのBitbucket(プライベート)からGitHub(public)までプロジェクトをフォークします。 GitHub プロジェクトは、接続文字列、API キーなどの機密設定を削除します。 ご質問・お問い合わせ\n1. モックアップのFAQを実装する。\n・よく寄せられた質問(FAQ)セクションの新規ユーザーインターフェイス(UI)ページを開発。 サイトマップ\n\n2. 古い API の再構成、最適なコード。\n・コードを再生成し、よりクリーンで効率良く、維持しやすくなります。 サイトマップ\n・バックエンドコードをGithubにアップロードします。 サイトマップ\n・フロントエンドのコードをGithubにアップロード サイトマップ\n\n3. IPFSファイルを保存するピナタプランのアップグレード\n・ピナタプランを「ピクニックプラン」にアップグレード\n\n4.開発環境の展開\n・開発環境のデータベースの設定 サイトマップ\n\nImage: クラウド開発データベースの概要\n・開発サーバーや環境を設定し、WebサイトやAPIをホストします。 https://utcert.vercel.app"
+    },
+    {
+      "no": 3,
+      "promise": "1. 接触管理モジュール\n2. 証明書禁止モジュール\n3. 輸出証明書QRコード モジュール\n4. 複数のサインオンNFTモジュールを実装\n5。 学生の学習中にテストスコアを管理する",
+      "criteria": "1. 接触管理モジュール\n・ 発行者が連絡先を承諾したときにのみ証明書を送ることができる機能を実行します。\n・ 保有者が不要な証明書を受領しないことを確認してください。これにより、より合理化された効率的な通信プロセスを維持します。\n\n2. 証明書禁止モジュール\n・発行者の発行後に発見された無効な証明書を処理するモジュールを作成します。\n・不正または誤りが見つかった場合は、証明書を無効化するためのプロセスを実行します。\n\n3. 輸出/眺めの証明書 QRcode モジュール\n・QRコードで証明書をエクスポートできるので、簡単にシェードできます",
+      "report": "各モジュール(合計5モジュール)の完了は、以下のとおりです。\nGitHub のプロジェクトソースへのリンクは次のとおりです。\n・Githubのフロントエンド:https://github.com/UTCert/UTCert-web\n・Githubのバックエンド:https://github.com/UTCert/UTCert-service\n\n5つのモジュールの場所については、使用例の動画を参照してください。 https://www.youtube.com/watch?v=1dYJXxYr9Ys\n・お問い合わせのエンドポイント:「contact/create」、「contact/get-contacts」、「contact/update-status」\n・証明書禁止のエンドポイントは「証明書/チェック法的/{identifyNumber}」、\n・複数のサインオンのエンドポイントは「証明書/作成」、 「証明書/禁止-複数の証明書」です。\n・ストアスコアのエンドポイントは「証明書/アップロード添付」です。\n・Export/view 証明書 QRcode: このタスクは src\\content\\Management\\Transactions\\BulkActions.tsx で FE によってのみ処理されます\n\n完了リスト:UT-35のJira Epicのストーリーとタスク。 クレデンシャル(reviewercatalyst@gmail.com/Catalyst@2023)を使用してください。\n開発環境: https://dev-utcert.texblabs.com/"
+    },
+    {
+      "no": 4,
+      "promise": "1. オートメーションおよび手動テスト両方を実行して下さい。\n2. 問題の修正・改善.",
+      "criteria": "1. オートメーションおよび手動テスト両方を実行して下さい。\n・システム内の問題やバグを識別するためのマニュアルテストを実施\n・JMeterを使用して、性能試験を行い、想定荷重を処理できることを確認します。\n・Jiraを通じてテスト中に見つかった問題を文書化し、それらを優先する\n\n2. 問題の修正・改善\n・テスト中に特定された問題に対処し、コードの改良が必要\n・ドキュメントを更新し、チームの変更を伝えます.",
+      "report": "1. オートメーションおよび手動テスト両方を実行して下さい:\n・自動化テストの報告: https://docs.google.com/document/d/1Wrf1PDAHKvZ0X4FgBWixlyE6z HbM5Hh/edit?usp=drive link&ouid=100299821010526526369&rtpof=true&sd=true\n・マニュアルテストに関する質問:https://fund11.atlassian.net/browse/UT-60. このクレデンシャル(reviewercatalyst@gmail.com/Catalyst@2023)を使用してください。\n\n2. 問題の修正/改善:\n・FE: https://github.com/UTCert/UTCert-web/pull/6/commit/1560b6a7bd46825109ebd9a0262e3400894b74\n・BE: https://github.com/UTCert/UTCert-service/pull/4/commits/e42e027d23cc5c6a2e2576e77abe7c637d103747\n\n開発環境: https://dev-utcert.texblabs.com/"
+    },
+    {
+      "no": 5,
+      "promise": "1. 利用者に製品を導入\n2。 YouTubeチャンネルを作成する\n3. バグ賞金コンテストを作成する\n4. フィードバックに従って改善し続けます.",
+      "criteria": "1. 利用者に製品を導入\n・Cardanoベトナムのコミュニティと連携して製品を紹介\n・SNS(Facebook)を利用し、ターゲットオーディエンスに到達\n\n2。 YouTubeチャンネルを作成する\n・YouTubeチャンネルを作成して製品を紹介し、チュートリアルやガイドを提供します。\n\n3. バグ賞金コンテストを作成する\n・バグ報告や脆弱性の報告を促すために、バグバウンティコンテストを開始。\n・ 参加者の貢献を認め、報じる。\n\n4. フィードバックに従って改善し続けます。\n・アンケート、レビュー、サポートチケットを通じて、ユーザーからのフィードバックを収集します。\n・インプレム",
+      "report": "1. 利用者に製品を導入\n・写真は製品会議:https://drive.google.com/drive/folders/1eVrIKh471j0RudIyBJEtGYLXVMw3xwR8\n・Facebookリンク:https://www.facebook.com/utcert.io\n\n2。 YouTubeチャンネルを作成する\n・チュートリアル動画とYouTube連携(少なくとも5動画): https://www.youtube.com/playlist?list=PLrldtZfs6vS3oNv2o43FTG0OMhd3rFIUJ&si=CKVWO2qHYQHFZHqz\n・動画1:登録・ログイン\n・動画2:アカウントの接続 サイトマップ\n・動画3:証明書(シングルサイン)の作成/署名/送信 サイトマップ\n・ビデオ4:証明書の作成/署名/送信(複数のサイン) サイトマップ\n・動画5:ポリシーID/Ban証明書の確認 サイトマップ\n\n3. バグ賞金コンテストを作成する\n・プロジェクトの投稿へのリンク:https://www.facebook.com/utcert.io/posts/pfbid02goyt1wGHsiqXR6BTLERrYPwAfRMKo9XRuLVumZGAMk3kGHJDdAQ4pair7SUw5bxVl\n・プロジェクトFacebookのバグ賞金コンテストの結果へのリンク:https://www.facebook.com/utcert.io/posts/pfbid02f9EG7qitHosgPv6DfhPesk9xdo7XnYjXUA4hno8TF4ScEvSwTcRJAfcX8DJyzbNl\n・Prizes & Bugs 報告: https://docs.google.com/spreadsheets/d/1KukJA-rRGJcPWqmceRw5Q8 TOVhEA9WBw1PD3lRKvW8/edit?fbclid=IwY2xjawITET1leHRuA2FlbQIxMAABHe3TI64cGa3RU3EbSHPfegr2lRKvW8/edit?fbclid=IwY2xjawITET1leHRuA2FlbQIxMAABFlbQIxMAABHe3TI64cGa3RU3RU3EbSQRJQRKQJQJQRJQRJQJQJQRJQRJQJQRJQRJQRJQRJQJQRJQJQJQRJQJQJQRJQJQJQRJQJQRJQRJQJQJQJQJQJQJQRJQR\n・ボーナス決済の請求書:https://drive.google.com/drive/folders/1-U2AQqfGJYoapq49JATFjqnXHoZpWfLn\n\n4. フィードバックに従って改善し続けます。\n・Jira(UT-68)のフィードバックについて このクレデンシャル(reviewercatalyst@gmail.com/Catalyst@2023)を使用してください。\n・コード変更:\n・フロントエンド: https://github.com/UTCert/UTCert-web/pull/7/commits/f0b561319e8f61b17d0b0a5fbbe69482d434011a\n・バックエンド: https://github.com/UTCert/UTCert-service/pull/6/commits/547d5cec5fef21129a65545965389e02527e6a55\n\n5. 報告書を閉じる\n・YouTube(https://www.youtube.com/watch?v= qs 6O5tzYE)とFacebook(https://www.facebook.com/watch/?v=1067402191823544)でプロジェクトの全機能を紹介します。\n・休みの報告:https://docs.google.com/document/d/1s3llavazkn"
+    }
+  ]
+}

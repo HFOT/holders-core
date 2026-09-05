@@ -1,0 +1,76 @@
+{
+  "title": "catalystexplorer.com for Project Catalyst research, acceleration, & analytics platform",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "・Conduct user research / workshops. \n・Create user stories for A new homepage\n・Bootstrap open source project.",
+      "criteria": "Figma files for UI/UX of new homepage with components to let the community answer at least 10 different questions about catalyst just by visiting the homepage. ie: What were the top ten funded proposals in fund 12?\n\nNotes from user research generated hopefully covering:\n・What the most frictional part of the current explorer at lidonation.com/catalyst\n・What's one missing from the current tool\n・Anything else the community wants to talk about.\n\nGithub or gitlab repo created with license, readme and contribution guidelines.",
+      "report": "Hey team, \nTake 2: Did the things, here is some pudding:\nA link to google drive folder containing Figma files for new homepage and Google document of the notes from user research:\n・https://drive.google.com/drive/folders/1GuLg0zQ8diNAMnANwUee4v4M-TDue-39?usp=drive_link\n\nZero Click Insights:\nWith the new design the community will now be able to answer these questions:\n・Total all time submitted proposals\n・% increase of all time submitted proposals in latest round\n・All time funded proposals\n・% increase of all time funded proposals in latest round\n・All time completed proposals\n・% increase of all time completed proposals in latest round\n・All time registered wallets.\n・% increase of all time registered wallets in latest round\n・All time verified voting wallets\n・% increase of all time verified voting wallets in latest round\n・All time total voting power\n・% increase of all time voting power in latest round\n\nOur current feedback to the UI/UX team is to see what it will look like to remove the icons and put a trend chart that shows the last 5 -7 funds. If they can nail the UI, then each of these cards will be interactive to let the community see a trend of each metric for the last 5 to 7 funds just by hovering 🤞🏾. \nThis will take our 12 points to at least >= 60 pieces of information, all in a tiny space, hopefully not overwhelming, immediately on the home page, all without having to click anything. Pretty exciting!\n\nLink of community workshops\n・We did a twitter space on Cardano Over Coffee: https://x.com/coc_space/status/1841470724218745104 \n・Notes with timestamps and our thinking can be found here: https://docs.google.com/document/d/1I_8VBqtSkT7a1iVwsiG8NYCm_uzHhNNODepXCDyznIA/edit\n\nLink to the open source repo will be shared on twitter and in the milestone module:\n・Repo is live at https://github.com/lidonation/catalystexplorer which is a mirror of https://gitlab.lidonation.com/lidonation/www.catalystexplorer.com",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 75000,
+      "promise": "・Implement new homepage with charts and metrics.\n・Setup CI/CD pipeline on Github or Gitlab for deploying progress.\n・make catalystexplorer.com live in alpha for testing\n・setup automated test frameworks\n・proposals list page is migrated from lido to new site",
+      "criteria": "Make catalystexplorer.com alpha live with the new completed homepage with charts and metrics. \nMake catalystexplorer.com alpha live with migrated proposals list page. \nAnyone visiting catalystexplorer.com alpha will be able to.\n・See the new homepage with charts and metrics.\n・navigate to catalystexplorer.com/proposals and browse catalyst proposals as they are currently able to on https://www.lidonation.com/catalyst-explorer/proposals minus the ability to open the single proposal page.\n\nThe Github or Gitlab repo is set up for running automated tests on code changes\nThe Github or Gitlab repo is s",
+      "report": "https://www.catalystexplorer.com alpha is live with the new completed homepage... still testing and adding data. \nProposals page is live in alpha on https://www.catalystexplorer.com/en/proposals. Note that links still open to lido until we figure seo, get the single proposal page built in later milestones. Things may break. This is alpha :) \nOur work is actually happening on https://gitlab.lidonation.com/lidonation/www.catalystexplorer.com. \nEvery time we push new code these automated actions (including php pest tests runs): https://gitlab.lidonation.com/lidonation/www.catalystexplorer.com/-/pipelines \nHere is an example of the test running: https://gitlab.lidonation.com/lidonation/www.catalystexplorer.com/-/jobs/63832\nHere is of features being deployed to preview and the production environment: https://gitlab.lidonation.com/lidonation/www.catalystexplorer.com/-/pipelines/11989 \nThe code is also being mirrored to Github at https://github.com/lidonation/catalystexplorer \n\nWe've also created a quick walkthrough of the new site on youtube: https://youtu.be/U0PWDHs_4Yk",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 58000,
+      "promise": "Funds, Fund Category, People, and Groups pages are migrated to new site.\nAccounts and login support are migrated to new site.\nMy registration and voting history, bookmarks, and lists are migrated to new site.\nThe Mint Completed Project NFTs system is migrated to new site.",
+      "criteria": "Anyone (not logged in) can visit and browse:\n・https://www.catalystexplorer.com/proposals\n・https://www.catalystexplorer.com/people \n・https://www.catalystexplorer.com/groups \n・https://www.catalystexplorer.com/funds \n・https://www.catalystexplorer.com/registration\n・and see their voting history\n・and see their registration transactions\n\nIf you create an account or logged in with your existing Lido Nation catalyst you can:\n・bookmark proposals\n・bookmark catalyst person\n・create lists from your bookmark items\n・mint an nft for every completed project they were part",
+      "report": "The following pages are now accessible without authentication:\n・Proposals\n・Ideascale-profiles \n・Groups\n・Funds \n・Public Bookmarks lists\n\nNew users can now create an account and start making their bookmarks. Here's the link to register a new user: Registration.\nOnce the user is registered and logged in, they can start creating a bookmark list from the following link: Link. They can then search and add Proposals, ideascale-profile, and any other items they want. Once the bookmark is created, the user.\nHere is a detailed walk-through video of that whole process: link.\nUsers can also view their voting histories and registration transactions on their portals once they add a wallet to their account\n・My Votes\n・My Transactions\n\nHere is a video explaining more about votes and voting histories: Video\nProposers can now mint NFTs for completed projects. Here is a link to the mint process: Link. Only accounts linked to an Ideascale user with completed projects can mint nft.\nHere is a link to the walkthrough video of the whole minting process: link. Here is a link to the mint transaction processed in the video: Transaction.",
+      "kinds": [
+        "chain",
+        "other",
+        "video"
+      ],
+      "links": 14
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 13000,
+      "promise": "Build a Jormungandr Explorer for the public to see and explore the data we've indexed from the jormungandr archives.\nAdd a proposal comparison function to the proposals page.",
+      "criteria": "Public can visit a page to see \n・all voting history txs, \n・view a single tx, \n・visit a privacy preserved single page view of an voting wallet and see their privacy preserved voting history and associated voting power.\n\nThe public can compare up to 24 proposals in a side-by-side table view.",
+      "report": "Take 2. \nThe Jormungandr Explorer section has been added to the sidebar menu. Here are links to all publicly accessible links\n・Voting histories - Note that this data is being brought over from the Jormungandr blockchain raw… Columns like the Time field are being shown raw as is on jormangandre. We will revisit this in the future to add some interpretations to improve the UX in a future update. For the scope of this milestone, hope just showing the data will suffice. The current value looks like star dates to us 🤷\n\n・Catalyst Transaction records - these records are said to be privacy preserving because, while you can see that this stake address or catalyst id voted for nth number of things, you are still not able to see how they voted nor what specific things they voted for.\n\n・Single transaction view\n\nFor logged in users, we’ve included views for both votes and transactions in the dashboard that shows you only the votes and transactions associated with wallets you’ve linked to your account. This is well explained in the YouTube video, but for testing, we created a testing account for you to see your private transaction voting histories and votes.\nTest account credentials:\n・Email: reviewer@reviewer.io\n・Password: Reviewer1\n\nWe’ve added a new Proposal Comparison feature accessible from the Proposals page link on the sidebar navigation. Per your feedback we’ve added a horizontal scrollbar. The popup is so that comparison can be brought up from any page instantly without having to call the server (the data is stored directly in your browser and should work without even an internet connection). We will work a toggle for the size of the popup so folks that want full screen and toggle to a full screen popup. This work has been put into our backlog as a nice have… coming soooon!\nThis tool allows users to:\n・Compare proposals side-by-side in a structured, scrollable table layout.\n・The feature supports proposal ordering by drag and drop, search, and sorting.\n・The feature does not",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 39000,
+      "promise": "・Dynamic charts & analysis\n・Funded Project Acceleration\n・Final close-out report\n・Final closeout video",
+      "criteria": "・ From the proposals page, the public can pull up charts of their current search results. Ie: you've searched for ‘NFT.’ You will be able to open a trend chart of funded projects from fund to fund matching your search query.\n・Logged-in user with funded projects can: \n・Say what help they need from the community.\n・Say what they can offer the community\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Hi Team,\nWe’ve updated the deliverables to align with the submission requirements. Please find the required items below:\n・Close Out Report: View Document\n・Close Out Video: Watch Here\n\nKindly let us know if there’s anything else needed. Thank you!",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

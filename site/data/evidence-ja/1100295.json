@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "プロトコル開発の初期段階です。 このマイルストーンは、コードを作成するために移動する前に、プロトコルの最初のバージョンを計画するために使用されます。 複雑な商品なので、企画・チームを拡充する2ヶ月を要します。 出力は、プロトコルをビルドして実行する方法を示すプレゼンテーションになります.",
+      "criteria": "提出されたプレゼンテーションには、次のポイントが含まれます。\n•すべてのチームメンバーのCVや連絡先情報を含む、製品で作業するチームとスライド。\n•基質フレームワークに基づく要求の分析そして高レベル アーキテクチャ。\n•開発のための技術的なロードマップ\n• 開発に使用するリソースのリスト",
+      "report": "親愛なるチーム、\n一部の査読者は、CVが見つけ難しくなることが判明したので、プレゼンテーション自体に移行しました。 以下に示す: https://docsend.com/view/48yjrdeaid3u4drd\nCVイメージの横にあるリンクは、CVをドキュメントとして導きます。\n念のため、Gab と Evans をコアの Xerberus チームにオンボードすることは非常に感謝しています。 ロンドンで数年前にスタートアップを立ち上げ、一日に3万ポンドを上げました。 チームの一員として、幅広い技術背景を持つ2人の男性がXerberusの能力を発揮し、9月にシンプルなノードを提示できると確信しています。 Gabはフルタイムで、Evansはパートタイムです。 しかしながら、ロングランでも、Evansフルタイムをオンボードするつもりです。\n\n親切で多くの感謝、\nサイモン・ペテロ"
+    },
+    {
+      "no": 2,
+      "promise": "最後のマイルストーンでXerberusプロトコルの全体的な高レベル構造を作成した後、このマイルストーンは、基板ネットワークを使用してXerberus Node自体の詳細な計画に専念します.",
+      "criteria": "技術的な問題で書かれた紙で、以下の情報が含まれています。\n• Xerberus ノードのハードウェア要件\n• Xerberus Nodeのアーキテクチャ設計\n• ノード内の基質フレームワークの使用に関する詳細情報\n• ノード内のリスクモデルの注入に関する技術的な説明(モデル全体が1つのノードにあるか、コンセンサス内で結合される部分的な要素だけなのか) 現在、そのことを知りません.",
+      "report": "親愛なる査読者,\nXerberus Node に論文を提示することを誇りに思います。 ペーパーはまたXerberusモデルの後ろのすべての機能を提供します。\n論文: https://docsend.com/view/qzevbnhr5guutdjx\nセクション6から、紙はノードとノードのネットワークに焦点を当てています。\nマイルストーンの承認をお待ちしています。\n\n多くの鑑賞,\nXerberusチーム"
+    },
+    {
+      "no": 3,
+      "promise": "このフェーズでは、Xerberus ノードの開発に取り組みます。 このマイルストーンは、Xerberus ノード間でのテストネットを作成するために実行されている基本的な Node を持つことを目指しています。 これにより、DApp の Cardano testnet にデプロイされた最初のスマートコントラクトが、アプリケーションのリスク評価を使用するようになります。 しかし、このスマートコントラクトは、次のマイルストーンに続くリスク評価アルゴリズムの実装として、初期テストのみであることを強調したいと思います.",
+      "criteria": "提供されたリンクは GitHub につながり、独自の Xerberus テストノードを設定することはできますか?",
+      "report": "親愛なる査読者,\n\n次のマイルストーンを提出してください。\nここでは、投稿を要約する小さなビデオ: https://www.loom.com/share/90a202029e5d45459d181b6555906584?sid=09c9f50a-9ddf-4169-b26c-51cb1d6da9f7\n\n• GitHub: https://github.com/XerberusTeam/network-protocol\n•ブロックチェーンエクスプローラ:https://explorer.xerberus.io/#/0x01e5d426a4d964d2708a2114569d38fb05c6ff0694b005b7328fa13e36d5c\n• SNEKのライブオンチェーンリスク評価: https://explorer.orcfax.io/feeds/CER/SNEK-ADA/facts/c161cfbc-cb8b-49a7-8057-205471d6c19e\n\nノードの使用に関する質問がある場合は、以下のチュートリアルを参照するか、Discord: https://discord.com/invite/cnaWcfewQ\nノードを実行するには、サーバーでこのドッカーコンポーズを実行し、同期するのを待ちます。 同期が正常になれば、6秒ごとに新しいブロックが縮小されていることがわかります。\n\n<code>\nバージョン: \"3.9\"\n\nサービス:\ntestnet ノード:\nコンテナ名: \"testnet-node\"\n画像: ghcr.io/xerberusteam/xerberus-node:full-node-latest\npull policy: 常に\n再起動: 停止\nコマンド: |\n--ベースパス /data/nodes/testnet-node\n--チェーン /data/chain-spec.json\n--rpc外部\n--rpc-methods 安全\n--rpc-corsすべて\n--telemetry-url \"ws://telemetry.polkadot.io/submit/ 0\"\n--prometheusの外部\n--no-private-ip ディレクティブ\n--bootnode/dns/node.xerberus.io/tcp/30334/ws/p2p/12D3KooWCYKbsQw2r5575MA8YqMhn8AqhVuVuZkfobPMyoKzEP595t/p2p/12D3KooWCYKbsQw2r5575MA8YqMhn8AqhVuVuVuVuVuKfobPMKEP595t/p2p12D3KooWCYKooWCYKbsQw2r5575MA8YqMhn8YqMhn8AqM\nポート:\n- \"9944:9944\"\n- \"9933:9933\"\n- \"9615:9615\"\n- \"9930:9930\"\n- 「9333:9333」\n・30333:30333\n- 30334:30334\nログイン:\n運転者: ローカル\nオプション:\n最大サイズ: \"10m\"\n最大ファイル: \"5\"\n<終了>\n\nここでは、ドッカーコンポーズをインストールする方法についてのチュートリアルです\n\n・windows https://docs.docker.com/desktop/install/windows-install/\n・Mac https://docs.docker.com/desktop/install/mac-install/\n・Linux https://docs.docker.com/engine/install/ubuntu/\n\n終了時、次の実行を試みて下さい\n\n<code>\nドッカー --バージョン\nドッカーはバージョンを構成します\n<終了>\n\n両方のコマンドが成功すると、Dockerを正常にインストール済み"
+    }
+  ]
+}

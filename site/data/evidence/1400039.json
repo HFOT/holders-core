@@ -1,0 +1,65 @@
+{
+  "title": "Cexplorer: Mini Cardano Explorer for (not only) Local Usage",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 29400,
+      "promise": "・Figma - all pages preview, buttons, links, etc\n・Schema/description - text variant of Figma - list of all available pages, subpages/tabs, important stuff\n・FE instructions what on which page, etc",
+      "criteria": "・The Figma file includes the main explorer views outlined in the proposal (block, transaction, address, epoch, pool, and asset overview) in at least one consistent design theme.\n・Design shows overall layout, navigation flow, and component placement sufficient for frontend development to begin.\n・Both light and dark theme examples are demonstrated for at least one major page.\n・A short schema or text description in the GitHub repo explains the purpose of each screen and the main functions available to users.\n・Reviewers can follow the Figma prototype from the landing view to a basic detail page (e",
+      "report": "Figma file - all pages preview, buttons, links etc.\n・https://www.figma.com/design/JKW7l0APSYxFisWYDqTEKZ/Cexplorer-Mini---Project-Catalyst-Fund-14?node-id=0-1&t=jX3d6NW0ns7ofRTh-1\n\nSchema/description - text variant of Figma - list of all available pages, subpages/tabs, important stuff\n・https://github.com/vellum-labs/cexplorer-mini/blob/main/schema/pages-overview.md\n\nGH repo for the project:\n・https://github.com/vellum-labs/cexplorer-mini\n\nFE instructions what on which page, etc\n・https://github.com/vellum-labs/cexplorer-mini/blob/main/schema/start.md\n・https://github.com/vellum-labs/cexplorer-mini/blob/main/schema/docker.md",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 29400,
+      "promise": "Some basic functions of planned features are done:\n・simple search function\n・simple block list\n・simple block detail\n・simple epoch list\n・simple epoch detail\n・simple tx list\n・tx detail - mini/basic\n・simple address detail - mini/basic\n・simple account detail - mini/basic",
+      "criteria": "・The GitHub repository includes a working prototype showing all listed basic views and functions (search, block list/detail, epoch list/detail, transaction list/detail, address/account view).\n・Each implemented screen is navigable through a simple front-end interface or demo environment so reviewers can follow a basic user flow (e.g., search → block → transaction → address).\n・Pages and components are visually aligned with the earlier Figma design and schema, but do not need final styling or full data depth.\n・Core functions demonstrate expected structure and responsiveness.\n・The public documenta",
+      "report": "Outputs: \n・All functions and features listed in the milestone output are visible and easily navigable on the link in the milestone evidence\n\nAcceptance criteria: \n・All the acceptance criteria have been met\n\nEvidence: \n・https://mini.cexplorer.io/\n・https://github.com/vellum-labs/cexplorer-mini\n・https://x.com/cexplorer_io/status/2016796017283289270 \n・https://discord.com/channels/959493368591826954/984707333340954684/1466355658763927552",
+      "kinds": [
+        "chain",
+        "code",
+        "social"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 24500,
+      "promise": "・simple pool list\n・simple pool detail\n・simple asset list\n・simple asset detail\n・tx detail - improved version\n・simple script list\n・simple script detail\n・simple metadata list\n・simple metadata detail",
+      "criteria": "・The GitHub repository includes working versions of all listed final features (pool list/detail, asset list/detail, improved transaction view, script, and metadata sections).\n・A public demo or staging environment is available, showing the mini explorer running with the implemented features connected to sample or testnet data.\n・Pages are visually and functionally consistent with earlier milestones and Figma references, but do not need full production-level styling or optimization.\n・Each core feature (pool, asset, script, metadata views) is accessible through navigation or direct URL, showing ba",
+      "report": "Outputs: \n・All functions and features listed in the milestone output are visible and easily navigable on the link in the milestone evidence\n\nAcceptance criteria:\n・All the acceptance criteria have been met\n\nEvidence: \n・https://mini.cexplorer.io/\n・https://github.com/vellum-labs/cexplorer-mini\n・https://x.com/cexplorer_io/status/2016796017283289270 \n・https://discord.com/channels/959493368591826954/984707333340954684/1466355658763927552",
+      "kinds": [
+        "chain",
+        "code",
+        "social"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 14700,
+      "promise": "・Installation documentation, faq, README,...\n・Installation scripts\n・Instructions on how to spin up your own genesis chain and run a local mini explorer on it\n・Final close-out video creation\n・Final close-out report",
+      "criteria": "・All Milestone Outputs are developed and live in github repository - incl. required documentation, license, README, and notes.\n・Discord progress mention\n・Available instructions on how to install/run/build your own mini-cexplorer instance on your computer\n・The final closeout report is publicly available\n・The final closeout video is publicly available",
+      "report": "Final milestone summarizing all outputs delivered in the project (resubmitted with public YouTube video link)\n・Finalized funded product: https://mini.cexplorer.io/ \n・Github for the funded product: https://github.com/vellum-labs/cexplorer-mini \n・Installation documentation (FAQ/README/notes): https://github.com/vellum-labs/cexplorer-mini/blob/main/README.md \n・Installation scripts: https://github.com/vellum-labs/cexplorer-mini?tab=readme-ov-file#quick-start \n・Instructions to spin up genesis chain + run local mini explorer: https://github.com/vellum-labs/cexplorer-mini/blob/main/docs/spin_own_genchain.md and more https://github.com/vellum-labs/cexplorer-mini/tree/main/docs\n・Final close-out video: https://www.youtube.com/watch?v=oDgln2gu0VQ \n・Final close-out report: https://docs.google.com/document/d/1eDaWb_5EomrZwq1dq8JWjirgwPSEeK2jBmpUgeifl_M/edit?usp=sharing\n・X announcement: https://x.com/cexplorer_io/status/2021631054256501074",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 18
+    }
+  ]
+}

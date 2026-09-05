@@ -1,0 +1,58 @@
+{
+  "title": "Mercury: Invoice",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "・User Journey Figma Document\n・UI/UX Figma Document at Wireframe Level\n・CI/CD Pipeline established in Github, with AWS Account and Vapor Laravel.\n・New Customer Record add/modify/delete\n・New Product/Service Record add/modify/delete",
+      "criteria": "・A Milestone Reviewer will view a figma document containing the Mercury: Invoice user journey.\n・A Milestone Reviewer will view a figma document containing a wireframe ui/ux of the Mercury: Invoice system.\n・A Milestone Reviewer will view a video on YouTube showing Github actions and the deployment of the Mercury: Invoice system into AWS via Laravel Vapor.\n・A Milestone Reviewer will view a video on YouTube showing new customer records being added, modified, and removed.\n・A Milestone Reviewer will view a video on YouTube showing new product/service records being added, modified, and removed.",
+      "report": "The outputs required for Milestone 1 are complete. Please see the following evidence:\nFigma Documents:\n・User Journey Figma Document\n・UI/UX Figma Document at Wireframe Level\n\nA YouTube Video covering the following information:\n・CI/CD Pipeline established in Github, with AWS Account and Vapor Laravel.\n・New Customer Record add/modify/delete\n・New Product/Service Record add/modify/delete\n\nThe GitHub Address for the source code: https://github.com/cardano-mercury/mercury-invoice",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 69639,
+      "promise": "・Customer Invoices add/modify (until send)/delete/void/manually mark paid.\n・Invoice Reminders manually send reminder/schedule a reminder (via email)\n・Data Export of Customers, Products/Services, Invoices via JSON",
+      "criteria": "・A Milestone Reviewer will view a video on YouTube showing new customer invoices being added, modified, sent, deleted, voided, and manually marked paid.\n・A Milestone Reviewer will view a video on YouTube showing Invoice reminders being sent and received instantly, and scheduled to be sent later.\n・A Milestone reviewer will view a video on YouTube showing a data export procedure and a resulting JSON file.\n・A Milestone reviewer will view Github to see the code sections have been added.",
+      "report": "Milestone 2 for Mercury: Invoice is completed. Please review the following evidence: \nA YouTube Video covering the following information:\n・Customer Invoices add/modify (until send)/delete/void/manually mark paid.\n・Invoice Reminders manually send reminder/schedule a reminder (via email)\n・Data Export of Customers, Products/Services, Invoices via JSON\n\nThe GitHub Address for the source code: https://github.com/cardano-mercury/mercury-invoice",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 48213,
+      "promise": "・Payment Processing with Fiat (using Stripe API key) and ADA (using a Cardano wallet address).\n・ADA:USD Pricing Strategy configuration\n・Payment Detection for Stripe and Cardano Indexer for ADA payments. \n・Payment Received Webhooks for end users to integrate other programs.",
+      "criteria": "・A Milestone Reviewer will view a video on YouTube showing Payment processing integration with a stripe API and a Cardano Wallet.\n・A Milestone Reviewer will view a video on YouTube showing Pricing Strategy Selection for ADA via a web interface.\n・A Milestone Reviewer will view a video on YouTube of a payment being detected from Stripe and Cardano automatically marking the invoice as paid.\n・A Milestone Reviewer will view a video on YouTube showing webhooks being triggered to an external service.",
+      "report": "For this milestone we need to show:\n・Payment Processing with Fiat (using Stripe API key) and ADA (using a Cardano wallet address).\n・ADA:USD Pricing Strategy configuration\n・Payment Detection for Stripe and Cardano Indexer for ADA payments. \n・Payment Received Webhooks for end users to integrate other programs.\n\nYou can see a demonstration of all of these functions in our YouTube video here: https://youtu.be/GInHBN3UcXI\nYou can see these features implemented in this GitHub Pull Request here: https://github.com/cardano-mercury/mercury-invoice/pull/8",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 48213,
+      "promise": "・User API create/revoke API Keys with permissions, use API Keys to interface with Mercury from external programs.\n・Additional Event Driven WebHook (Customer, Product, Invoice Modification events)\n・Payment Details Reporting (A&R, Revenue by Product, Revenue by Customer, Total Revenue by Period)",
+      "criteria": "・A Milestone Reviewer will view a video on YouTube showing a user creating an API key, setting permissions, and using the API Key to interface with Mercury from Postman, and showing updates within Mercury from that interaction.\n・A Milestone Reviewer will view a video on YouTube showing a change in Mercury triggering an external webhook that has been activated.\n・A Milestone Reviewer will view a video on YouTube showing charts and reports that are created from the data in the invoice system.",
+      "report": "Staging Branch = https://github.com/cardano-mercury/mercury-invoice/tree/staging (Latest version of the app)Milestone 4 was comprised of the following 3 pull requests:\n・https://github.com/cardano-mercury/mercury-invoice/pull/9 (Frontend UX Overhaul)\n・https://github.com/cardano-mercury/mercury-invoice/pull/10 (API Functionality)\n・https://github.com/cardano-mercury/mercury-invoice/pull/11 (Reports & Additional Webhook Events)\n\nYouTube Video: https://youtu.be/edZ-fZUsDX0",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

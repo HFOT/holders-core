@@ -1,0 +1,61 @@
+{
+  "title": "Agora Suite Expansion: NFT Standards and Novel Token Structures Integration",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 55000,
+      "promise": "Research Documents:\n・Detailed documentation outlining various existing NFT integration solutions applicable to Agora, evaluating different methodologies describing their strengths, weaknesses, and theoretical operational efficiency\n\nTechnical Specification Document:\n・Technical specifications describing the mechanisms intended for implementation.\n・Rationale supporting the selection of each mechanism, elucidating the reasons behind their suitability for the project.",
+      "criteria": "Research Documents Criteria:\n・Detailed explanation of the problem addressed and presentation of a minimum of three potential approaches to resolve it efficiently.\n\nTechnical Specification Criteria:\n・Clear explanation of datums and redeemers in CDDL format, providing an explicit interface for interacting with the contracts upon their development.\n・Outline of the logic within each validator or minting policy intended to be written.",
+      "report": "The following GitHub link provides the required evidence of completion for \"Milestone 1: Concept Development Planning, Technical Specification, and Research\" This includes the required Research Document and Technical Specification Documentation in CDDL format. https://github.com/adaocommunity/agoraexpansion",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 55000,
+      "promise": "GitHub Repository with Validators and Minting Policies:\n・Creation of a public GitHub repository containing all aiken validators & minting policies as specified in M1's specifications. This repository will include unit tests for validator functions\n\n.Innovative Structures Integration:\n・Design & implementation of structures combining fungible tokens and NFTs within Agora.\n\nDevelopment Environment Setup:\n・Establishment of the necessary development environment and infrastructure.\n\nNative Infrastructure Integration:\n・Integration with Cardano's native infrastructure for compatibility.",
+      "criteria": "GitHub Repository:\n・Creation of a public GitHub repository containing all aiken validators and minting policies, aligning with the technical specifications outlined in M1.\n・Inclusion of unit tests for all functions utilized in validators within the repository.\n\nStructures Evaluation:\n・Design and construction of structures merging fungible tokens and NFTs within the Agora suite.\n・Evaluation of these structures based on their uniqueness and potential for new use cases.",
+      "report": "Resubmission for Milestone Review: Agora Suite Expansion\n\nREADME Update: The README file now clearly indicates the specific locations of relevant validators and minting policies as specified in the technical documents from M1.\nPlease review the updated README and the repository structure to confirm the alignment with the milestone requirements. We believe these updates address the concerns previously raised, ensuring that all necessary information is accessible and clearly documented.\nThank you for considering this resubmission for milestone approval.\n https://github.com/ADAOcommunity/AgoraExpansion/blob/main/README.md\nProject Enhancements and Updates:\nGitHub: We have updated our GitHub repository to fully integrate GitHub CI, ensuring robust and reliable testing of our code. The repository now showcases all Aiken \nvalidators and minting policies with an enhanced code \n・Main Repository\n・Detailed Branch\n\nUpdated Video Submission Overview:\nVideo Overview: Our new video provides a comprehensive overview of the project’s progress and the specific milestones addressed. The video includes: \nProposal Introduction:\nWhat is this Proposal?\nWhat is Agora?\nProject Expansion:\nHow are we planning to expand Agora using NFTs?\nMilestone 1 Accomplishments:\nWhat was achieved in Milestone 1?\nResearch Documents: Documentation of various existing NFT integration solutions applicable to Agora.\nTechnical Specification Document: Detailed technical specifications of the mechanisms intended for implementation.\nMilestone 2 Update:\nCurrent status at the completion of Milestone 2 - integration of on-chain code.\nShowcase Tests: Demonstrations conducted for Milestone 2.\nNext Steps (Milestone 3):\nCloseout of the current milestone and expectations moving to off-chain code.\nView Video\nWe appreciate the opportunity to address the feedback and enhance the quality of our project. If there are further improvements or suggestions you believe would benefit our project, we are eager to hear and implement th",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 55000,
+      "promise": "Public GitHub Repository for Off-chain Code:\n・Inclusion of all off-chain code necessary for interacting with the contracts, excluding a User Interface but containing functions essential for UI integration by other developers.\n・Outreach to various development teams, inviting them to integrate the developed code into their platforms.\n\nComprehensive Testing and Feedback Gathering:\n・Gathering feedback from users and developers to evaluate user-friendliness and effectiveness.\n\nUser Interface and Experience Refinement:\n・Refinement of the user interface and experience based on collected feedback and testing results.\n・Optimization of performance to ensure compatibility with various NFT-based use case",
+      "criteria": "Public GitHub Repository for Off-chain Code:\n・Inclusion of all necessary off-chain code for contract interaction, excluding UI.\n・GitHub repository demonstrates effective interaction with smart contracts.\n・README file is included in the repository, clearly outlining the locations of relevant validators or minting policies.\n\nOutreach to various development teams:\n・Documentation confirming outreach efforts to development teams for code integration.\n・Evidence of invitations extended to development teams for integrating the code into their platforms.\n\nComprehensive Testing and Feedback Gathering:\n・",
+      "report": "RESUBMISSION: Proposal Enhancement Following Feedback\nWe are resubmitting our proposal in response to the feedback received on our initial submission. Areas of improvement:\n・Optimization: We have outlined several reasons why we believe AGORA is currently inefficient.\n・Approach: We have added detailed methodology regarding the development of the User Interface (UI) and the process of gathering user feedback:\n・Comparison Clarification: We have clarified the comparison between the two versions that were previously screenshotted.\n・Added README File: We have included the requested README file to facilitate better understanding and integration:\n・NPM Test and Document Links: We have added the NPM test to ensure consistent and reliable performance. Additionally, we have fixed the document links to enhance clarity and accessibility.\n\nProof of Achievement (POA)\nTo support your review, we have provided the following outputs:\n1. Public GitHub Repository for Off-chain Code: \n・Access Repository \n・README\n・Npm Test\n\nThis repository contains all necessary off-chain code for interacting with the contracts, excluding the User Interface. It includes essential functions for UI integration by other developers.\n2. Proof of Outreach to Development Teams: View Outreach Efforts\nDocumentation of our efforts to invite various development teams to integrate our developed code into their platforms.\n3. Feedback for the UI and Variations: Feedback collected from users and developers, assessing the user-friendliness and effectiveness of our solution, can be found in the User Feedback, Optimization, and UI Refinement Document under section “Version Comparison” along with screenshots of created UI.\n4. Optimization of Performance: As previously mentioned, there are several concerns regarding Agora, which can be explored in the \"Optimization\" section in User Feedback, Optimization, and UI Refinement. An example on a more efficient governance management system is available in the following repository:Ag",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "13",
+      "cost": 55000,
+      "promise": "GitHub Repository Update with User Interface:\n・Update of the public GitHub repository containing off-chain code to integrate a user interface. The interface should allow users to interact with smart contracts without extensive technical knowledge, except for local project setup due to the absence of live deployment at this stage.\n\nBeta Version Release and Feedback Collection Mechanism:\n・Delivery of a beta version to a select group of users and developers.\n・Implementation of a mechanism to collect and analyze feedback from beta testers.\n\nUser Feedback and Insights:\n・Gathering of user feedback, insights, and suggestions from the beta testing community.\n・Identification and documentation of areas requiring improvement and enhancement based on collected feedback.",
+      "criteria": "GitHub Repository Functionality with Smart Contracts:\n・The GitHub repository should demonstrate effective interaction with the smart contracts.\n・Inclusion of a README file within the repository, providing guidance on setting up the project locally.\n\nBeta Version Success Metrics:\n・Successful delivery of the beta version to a select group of users and developers.\n・Enrolment of a minimum of 25-50 users in the beta version testing, ensuring active participation.\n\nFeedback Collection Mechanism:\n・Implementation of a mechanism to collect and analyze feedback from beta testers.\n・Clear documentation ou",
+      "report": "Thank you to the reviewers. This is a resubmission of the updated Milestone 4 evidence.\nThe previously unmerged pull request has now been merged into main. The complete evidence package meets all required Outputs and Proof of Achievement criteria.\nOutputs\n・Is there a public GitHub repository containing the off-chain code needed to integrate a user interface? Yes.\n・Does the interface built from this code allow users to interact with the smart contracts without extensive technical knowledge? Yes.\n・Does the project include the required local setup instructions? Yes.\n・Did we deliver a beta version to a select group of users and developers? Yes.\n・Did those users and developers interact with the beta version? Yes.\n・Did we provide evidence of their participation and input? Yes.\n・Did we provide a YouTube video showing the interface and demonstrating that it works? Yes.\n・Did we implement a mechanism to collect feedback from beta testers? Yes.\n・Did we gather feedback, insights, and suggestions from the beta-testing community? Yes.\n・Did we review and analyze the collected feedback? Yes.\n・Did we identify areas for improvement based on that feedback? Yes.\n・Did we document the improvements or enhancements identified from the feedback? Yes.\n\nProof of Achievement\n・Does the public GitHub repository demonstrate effective interaction with the smart contracts? Yes.\n・Does the GitHub repository include a README explaining how to set up the project locally? Yes.\n・Was the beta version successfully delivered to a select group of users and developers? Yes.\n・Were at least 25–50 users enrolled in the beta-testing process? Yes—32 approved users participated.\n・Did those beta testers actively participate in testing the project? Yes.\n・Was a mechanism implemented to collect feedback from beta testers? Yes.\n・Was a mechanism implemented to analyze the feedback collected from beta testers? Yes.\n・Is the method used to collect feedback clearly documented? Yes.\n・Does the documentation explain how feedbac",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    }
+  ]
+}

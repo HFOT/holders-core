@@ -1,0 +1,69 @@
+{
+  "title": "ENCOINS v2",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 50000,
+      "promise": "Context: ENCOINS v2 is the next iteration of the privacy protocol on Cardano. It enables users to lock their assets in a smart contract and mint redeemable tokens (encoins) holding the locked value. Users can transfer those tokens in privacy-enhanced transactions.\nTask: Produce ENCOINS v2 smart contract specification. Produce the guide to integrate ENCOINS v2 with other DApps. Produce the corresponding design concepts for the ENCOINS v2 UI.\nOutputs:\n・A technical document containing ENCOINS v2 smart contract specification (PDF)\n・A technical document containing ENCOINS v2 integration guide (PDF)\n・A Figma file with the Web UI assets",
+      "criteria": "The outputs are shared publicly with the community and uploaded on GitHub (https://github.com/encryptedcoins/).",
+      "report": "We have completed Milestone 1 - Documentation. Here is the link to the resources:\nhttps://github.com/encryptedcoins/catalyst-outputs/tree/main/ENCOINS%20v2/Milestone%201\nThe folder contains the Figma file with the DApp UI designs, the smart contract specification, and the integration guide for other projects that want to use ENCOINS v2.",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 50000,
+      "promise": "Context: ENCOINS v2 is the next iteration of the privacy protocol on Cardano. It enables users to lock their assets in a smart contract and mint redeemable tokens (encoins) holding the locked value. Users can transfer those tokens in privacy-enhanced transactions.\nTask: ENCOINS v2 smart contract implementation. Implement the test suite to check the key properties of the smart contract.\nOutputs:\n・Modules for the ENCOINS v2 on-chain script (Haskell)\n・Modules to test the key properties of the ENCOINS v2 smart contract (Haskell)",
+      "criteria": "The outputs are shared publicly with the community and uploaded on GitHub (https://github.com/encryptedcoins/).",
+      "report": "We have completed the milestone. The related code can be found in our public GitHub repository \"encoins-core-v2\":\nhttps://github.com/encryptedcoins/encoins-core-v2\nSpecifically, the ENCOINS v2 on-chain script is here\nhttps://github.com/encryptedcoins/encoins-core-v2/blob/main/src/ENCOINS/Core/V2/Script.hs\nThe smart contract has been written using the zkFold Symbolic framework.\nThe test suite is here\nhttps://github.com/encryptedcoins/encoins-core-v2/blob/main/tests/Test.hs\nWe are testing to ensure that we can produce valid Encoins transactions and that the contract funds cannot be depleted, i.e., liveliness and safety in computer science terms.\nNEW:\nWe added video screen capture artifacts to illustrate that the code is working\nhttps://github.com/encryptedcoins/catalyst-outputs/tree/main/ENCOINS%20v2/Milestone%202\nWe shared the message about the completion of this milestone through our social media\nhttps://x.com/encoins1/status/1813252913042456964?s=46&t=VtKqk2ARMLb360rztszkuA",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 5
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 50000,
+      "promise": "Context: ENCOINS v2 is the next iteration of the privacy protocol on Cardano. It enables users to lock their assets in a smart contract and mint redeemable tokens (encoins) holding the locked value. Users can transfer those tokens in privacy-enhanced transactions.\nTask: Implement the off-chain code for the ENCOINS v2 smart contract. Upgrade the ENCOINS relay to support v2 user requests.\nOutputs:\n・Modules containing the off-chain code to build transactions for ENCOINS v2 contract (Haskell)\n・A new ENCOINS relay release that supports ENCOINS v2 requests made with CLI (Haskell)",
+      "criteria": "The outputs are shared publicly with the community and uploaded on GitHub (https://github.com/encryptedcoins/).",
+      "report": "Dear reviewers, we have completed Milestone 3. The milestone completion report can be found here:\nhttps://github.com/encryptedcoins/project-catalyst-outputs/blob/main/Project_Catalyst_M3_ENCOINS_v2_relayer.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 20000,
+      "promise": "Context: ENCOINS v2 is the next iteration of the privacy protocol on Cardano. It enables users to lock their assets in a smart contract and mint redeemable tokens (encoins) holding the locked value. Users can transfer those tokens in privacy-enhanced transactions.\nTask: Implement ENCOINS v2 frontend UI.\nOutputs:\n・The code for ENCOINS v2 Web UI.",
+      "criteria": "The outputs are shared publicly with the community and uploaded on GitHub (https://github.com/encryptedcoins/).",
+      "report": "Dear reviewers,\nWe have completed milestone 4! The frontend code sources can be found here:\nhttps://github.com/zkFold/utxo-accumulator-server/tree/main/web/ui\nThe compiled frontend web page is available here:\nhttps://github.com/encryptedcoins/encoins-v2/tree/main/ui\nYou can view the frontend by visiting this page:\nhttps://swift-holiday-miniature.on-fleek.app/",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 30000,
+      "promise": "Context: ENCOINS v2 is the next iteration of the privacy protocol on Cardano. It enables users to lock their assets in a smart contract and mint redeemable tokens (encoins) holding the locked value. Users can transfer those tokens in privacy-enhanced transactions.\nTask: Produce a fully functional application. Run the application test on the Cardano Testnet.\nNote: The application can be run on either Mainnet or Testnet. Our plan is to have an extensive testing period and submit the code for an audit. For that reason, we prefer not to set a release date as a part of this milestone.\nOutputs:\n・The complete code of ENCOINS v2.\n・A running application on the Cardano Testnet.\n・A video illustrating the main functions of the application.\n・A close-out report detailing the results of the project.",
+      "criteria": "The application website and the video will be shared publicly. The video will be uploaded on YouTube and shared on Twitter. The links will be provided to the reviewers. The close-out report (pdf) will be uploaded on GitHub and shared with the reviewers.",
+      "report": "Resubmitting the final milestone with a new close-out video that addresses all reviewer feedback. The new video covers all four required elements per Fund 10/11 rules: the challenge name (F11: Cardano Open: Developers), progress through milestones, a demonstration of the application including on-chain transactions on a block explorer, and future plans.\n\nA. Output: The complete code of ENCOINS v2.\n\nAcceptance criteria: The code is publicly available on GitHub.\n\nEvidence:\n- Application frontend: https://github.com/encryptedcoins/encoins-v2\n- Backend server: https://github.com/zkFold/utxo-accumulator-server\n- Smart contract: https://github.com/zkFold/zkfold-cardano\n\nB. Output: A running application on the Cardano Testnet.\n\nAcceptance criteria: The application website is publicly accessible and functional on the Cardano Preprod Testnet.\n\nEvidence: https://encryptedcoins.github.io/encoins-v2/\n\nC. Output: A video illustrating the main functions of the application.\n\nAcceptance criteria: The video is uploaded on YouTube and shared publicly. It covers the challenge entered, progress and milestones, a demonstration of the application, and future plans.\n\nEvidence: https://www.youtube.com/watch?v=LMnl9bIxkpY\n\nD. Output: A close-out report detailing the results of the project.\n\nAcceptance criteria: The close-out report (PDF) is uploaded on GitHub and shared with the reviewers.\n\nEvidence: https://github.com/encryptedcoins/encoins-v2/blob/main/1100124%20-%20ENCOINS%20v2%20-%20Close%20out%20report.pdf",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

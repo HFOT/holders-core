@@ -1,0 +1,42 @@
+{
+  "title": "XSY - High-performance on-chain standard library for Plutarch and Aiken",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 48000,
+      "promise": "A report including\n・Benchmarks of current standard libraries (aiken, plutus-tx)\n・Common security vulnerabilities/footguns identified in low-level libraries\n・Definition of target performance for our library\n\nDesign document describing\n・Interface\n・High-level design decisions\n・Namespaces",
+      "criteria": "・Thje target benchmarks should be better than the benchmarks of the existing libraries\n・Benchmarks of competitors have been performed against latest available versions\n・New vulnerabilities found (if any) have been disclosed responsibly\n・Report and design document have been reviewed by IOG Djed tech lead\n・Instructions on how to reproduce the benchmarks",
+      "report": "Design document:\ncatalyst-onchain-libs/DesignDocument.md at main · input-output-hk/catalyst-onchain-libs\n\nReport:\ncatalyst-onchain-libs/Report.md at main · input-output-hk/catalyst-onchain-libs",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 48000,
+      "promise": "・Implementation of high-performance on-chain library in Plutarch\n・Test suite (unit tests, property tests)\n・Documentation: Code-level, installation instructions, FAQ, README\n・Use case report documenting how the new library has been integrated into an existing Cardano dapp",
+      "criteria": "・Successfully compiles\n・Passes test suite\n・End-to-end test available",
+      "report": "input-output-hk/catalyst-onchain-libs at update-docs\nThe README.md contains instructions to reproduce the end-to-end tests and generally how to install and build the repo. Additionally, the UseCase.md file contains the usecase report which expands on how the use of this library positively impacted the Djed protocol.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "7",
+      "cost": 48000,
+      "promise": "・Iterative benchmark reports showing incremental improvements\n・Comprehensive security and assurance analysis document\n・Community feedback testimonials\n・Comprehensive documentation and usage examples catered for different developers with varying experience\n・Thorough documentation of trade-offs between different patterns and contexts in which they are applicable",
+      "criteria": "・Revised source code incl. usage examples builds and meets performance targets\n・Community feedback re. usability is positive",
+      "report": "A. Output: Iterative benchmark reports showing incremental improvements\n\nAcceptance criteria: Benchmark report includes multiple iterations (older -> current) and the current run is reproducible via cabal run plutarch-onchain-lib-bench.\n\nEvidence:\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/IterativeBenchmarks.md\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/benchmarks/bench-2026-01-29.txt\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/src/plutarch-onchain-lib/test/Bench.hs\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/README.md\n\nB. Output: Comprehensive security and assurance analysis document\n\nAcceptance criteria: A dedicated security/assurance document exists and covers the repo modules plus recommended safe usage patterns.\n\nEvidence:\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/Security.md\n\nC. Output: Community feedback testimonials\n\nAcceptance criteria: A dedicated testimonials document exists with positive community feedback on usability.\n\nEvidence:\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/Testimonials.md\n\nD. Output: Comprehensive documentation and usage examples catered for different developers with varying experience\n\nAcceptance criteria: Documentation includes a “beginner / intermediate / advanced” progression and includes concrete code/examples and “how to run” instructions.\n\nEvidence:\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/DeveloperGuide.md\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/README.md\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/UseCase.md\n\nE. Output: Thorough documentation of trade-offs between different patterns and contexts in which they are applicable\n\nAcceptance criteria: Documentation explicitly discusses trade-offs (e.g., CPU/MEM vs script size, relying on ledger invariants vs defensive checks, raw builtins vs higher-level helpe",
+      "kinds": [
+        "code"
+      ],
+      "links": 26,
+      "cut": true
+    }
+  ]
+}

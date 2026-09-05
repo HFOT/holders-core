@@ -1,0 +1,45 @@
+{
+  "title": "Digital voter ID using Atala prism",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 28875,
+      "promise": "・Scheme of the project, definition of macro tasks and tasks.\n・Stakeholder Analysis Report.\n・Software Requirements Specification (SRS) .\n・Define detailed system architecture and select technologies.\n・Interface design.\n・Database schema (script).\n・Project Team Formation Document: Roles and responsibilities of the dedicated team.",
+      "criteria": "・The project scheme and definition of macro and detailed tasks are clearly established and understandable.\n・The stakeholder report includes the identification of actors, types of actors, and scope of action, as detailed in the Stakeholder Analysis Report.\n・The needs of each stakeholder group are comprehensively established and detailed in the Software Requirements Specification (SRS).\n・The system architecture and selected technologies are detailed in documentation and provide a solid foundation for the project's future development.\n・The interface design aligns with specified design requirement",
+      "report": "In the initial delivery, the POA was organized based on the 'Evidence of milestone completion,' and the interfaces were included in the architecture document.\nHowever, I acknowledge the reviewers' observations and have updated the information to clarify the completion of Milestone 1:\nMilestone 1 Completion\nOutputs 1.- Scheme of the project, definition of macro tasks and tasks.\n・Evidence 1: Project roadmap – View the detailed project roadmap, including milestones, macro tasks, and timelines here.\n\nOutputs 2.- Stakeholder Analysis Report.\n・Evidence 1: The stakeholder analysis report, detailing key groups, their needs, and expectations, is available here.\n\nOutputs 3.- Software Requirements Specification (SRS).\n・Evidence 1: Access the SRS document, which outlines functional and non-functional requirements, as well as technical and operational specifications, here.\n\nOutputs 4.- Define detailed system architecture and select technologies.\n・Evidence 1: The complete architecture design of the system, including technology stack and interactions, can be reviewed here.\n・Evidence 2: Explore the detailed design of blockchain components, including smart contracts, network setup, and traceability mechanisms here.\n\nOutputs 5.- Interface design.\n・Evidence 1: Interface design document here.\n\nOutputs 6.- Database schema (script).\n・Evidence 1: The database schema and script, with all tables, relationships, and attributes, is available for review and download here.\n・Evidence 2: The data dictionary, offering detailed definitions and attributes for all database elements, can be found here.\n\nOutputs 7.- Project Team Formation Document: Roles and responsibilities of the dedicated team.\n・Evidence 1: Details of team structure, roles, and assigned responsibilities are outlined in the project team formation document here.\n\nYou can also visit our site at https://democracyonchain.com/ to explore all project-related documentation and gain a comprehensive understanding of the progress we have achie",
+      "kinds": [
+        "other"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 28875,
+      "promise": "・User Interface Design.\n・Platform Architecture\n・Creation of the technical document of the integration scheme with Atala PRISM\n・REST API for the modules of this phase.\n・Development of the Political Affiliation System\n・Development of the configuration module.\n・Development of the citizen registration module.\n・Development of the political organization registration module.",
+      "criteria": "User Interface Design\n・The interface design is fully developed according to the requirements specified in the project documentation.\n・The design is user-friendly, intuitive, and meets usability standards.\n\nDevelopment of the configuration module.\n・The configuration module is fully developed according to the requirements specified in the project documentation.\n・The source code of the configuration module is versioned and available for review.\n・The configuration module has been tested and validated to ensure its functionality and accuracy.\n\nDevelopment of the citizen registration module.\n・The ci",
+      "report": "Deliverable 1: User Interface Design\nAcceptance Criteria:\n・The interface design is fully developed according to the requirements specified in the project documentation.\n・The design is user-friendly, intuitive, and meets usability standards.\n\nEvidence:\n・Mobile Mockups: View here\n・Web Mockups: View here\n・Mockup Documentation: View here\n\nDeliverable 2: Platform Architecture\nAcceptance Criteria:\n・A clear technical document describing the platform architecture and integration with Atala PRISM.\n・REST API developed for the modules of this phase, complying with specifications and API standards.\n\nEvidence:\n・Technical Document: View here\n・REST API (versioned source code): View here\n\nDeliverable 3: Development of the Political Affiliation System\nAcceptance Criteria:\n・Configuration module: Fully developed, tested, and versioned in GitHub.\n・Citizen registration module: Fully developed, tested, and versioned.\n・Political organization registration module: Fully developed, tested, and versioned.\n\nEach component includes:\n・README file\n・Deployment instructions\n・General description\n\nRepositories have two branches:\n・dev: integration and pre-release testing\n・main: released code\n\nEvidence:\n・Citizen Registration Module: View here\n・Political Organization Registration Module: View here\n・Tests: View here",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 24063,
+      "promise": "・Development of the Political Affiliation System\n・Development of the Electoral bodies module..\n・Integration of Atala PRISM with the system.\n・Comprehensive Testing",
+      "criteria": "Development of the Electoral bodies module.\n・The Electoral bodies module is fully developed according to the requirements specified in the project documentation.\n・The source code of the Electoral bodies is versioned and available for review.\n・The Electoral bodies has been tested and validated to ensure its functionality and accuracy.\n\nIntegration of Atala PRISM with the system.\n・Atala Prims is integrated into the system\n\nComprehensive Testing\n・Carrying out system and integration testing for the operation of the POC of the political affiliation platform.",
+      "report": "A. Output: Political Affiliation System (Electoral Bodies Module)\nAcceptance criteria:\n・Political affiliation module fully developed per project requirements\n・Source code versioned and available for review\n・Tested and validated for functionality\n\nEvidence:\n・Source code: eulalia-backend (AfiliacionController, AfiliacionService)\n・API endpoints: POST /api/Afiliacion, GET /api/Afiliacion/afiliados\n・GitHub: https://github.com/democracyonchain/eulalia-backend\n・Mobile flow (affiliation/status): https://github.com/democracyonchain/eulalia-documents/blob/main/integration-validation/04-mobile/screens.pdf\n\nB. Output: Integration of Atala PRISM (SSI/Identus)\nAcceptance criteria:\n・AtalaPRISM (Identus) integrated into the system\n・SSI workflow operational (invitation → webhook → credential → status)\n\nEvidence:\n・Source code: eulalia-identus + backend SSI endpoints\n・API: POST /api/SSI/invitation, POST /api/SSI/webhook, GET /api/SSI/status\n・GitHub: https://github.com/democracyonchain/eulalia-atala-identus\n・Identus health: https://github.com/democracyonchain/eulalia-documents/blob/main/integration-validation/02-identus/health.pdf\n・Identus infra (containers running): https://github.com/democracyonchain/eulalia-documents/blob/main/integration-validation/02-identus/infra.pdf\n・Backend Swagger (SSI endpoints visible): https://github.com/democracyonchain/eulalia-documents/blob/main/integration-validation/06-backend/backend.pdf\n・Evidence index: https://github.com/democracyonchain/eulalia-documents/blob/main/integration-validation/README.md\n\nC. Output: Comprehensive Testing\nAcceptance criteria:\n・System and integration testing for POC\n・Test reports generated\n\nEvidence:\n・Test report: ReportTestIntegration(EN).pdf, ReportTestIntegration(ES).pdf\n・Test results: 147 tests, 98.0% success rate\n・GitHub: https://github.com/democracyonchain/eulalia-documents/tree/main/tests/TestIntegration\n・Integration validation evidence (logs + screenshots): https://github.com/democracyonchain/eulalia-documents/tree/m",
+      "kinds": [
+        "code"
+      ],
+      "links": 34,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "技術的仕様文書: API エンドポイント、データフロー図、システム統合戦略などのコンポーネントを含む、ガスレストランザクションライブラリのアーキテクチャを詳述する包括的な設計文書。\n開発・テストプラン:開発ツールやガンットタイムラインチャートなど、ライブラリを開発するための明確な計画です.",
+      "criteria": "提案された設計は必須の機能および統合の機能に会うことを保障します。 カルダノ開発の知識を持つ人は誰でも、オープンソースであることを確認して確認することができます。 ドキュメントに関するNMKRチームからフィードバックステートメントを受け取り、これを検証します。\n\ndocは、計画を実行するには、gantt のタイムラインチャートもあります.",
+      "report": "要件と技術仕様書:CardanoのGasless Txライブラリ - https://elderly-hammer-b9c.notion.site/requirements-and-Technical-Specifications-Document-Gasless-Tx-Library-for-Cardano-18fe8a72de368067a135e0e38de6ba\nNote: gdocの代わりにnoionを使用して、コードとAPIスキーマの対応を改善しました"
+    },
+    {
+      "no": 2,
+      "promise": "シーンの背後にあるガス手数料を管理する機能を含むコア機能を示す機能的なガスレストランザクションライブラリ。\nライブラリをCardano dAppsと統合する方法に関するガイダンスを提供する初期のドキュメント.",
+      "criteria": "ライブラリは、ユーザーの最後にガス料金の排除を実証し、プラットフォームが統合するためのシンプルなライブラリを提供する必要があります。\n開発者が dApps との統合をテストを始めるのに十分な統合ガイドライン.",
+      "report": "Gitbook - https://gasless.nucast.io/\nギトハブ\nタイプスクリプト - https://github.com/Nucastio/gasless-tx-ts\nPython - https://github.com/Nucastio/gasless-tx-py\nライブラリデモビデオ\nhttps://drive.google.com/file/d/1qT8yOGRTfOayx3LpQmgmO1fQsjPgqxf/view?usp=sharing"
+    },
+    {
+      "no": 3,
+      "promise": "・ライブラリは、初期のユーザーフィードバックに従って、必要な変更を github のコミットタグ(API の更新、バグ修正、新機能の追加、パフォーマンスの更新など)で明確に言及しています。\n・目的、参加者の基準、方法論などのユーザーテストを実施するための包括的な計画。\n・試験参加者は内部の工夫とオープンソースとなります。 1週間にご参加いただくために、どなたでもツイートします。 オープンソースライブラリへの参加やテストをしたい方には、テスターから個人情報を求めることができません.",
+      "criteria": "・更新されたライブラリは、必要なすべての変更を組み入れ、参加者のフィードバックに応じて改善された安定性を実証する必要があります。\n・エラー率の低減、性能の処理、応答時間など、ライブラリに押されたアップデートに関連するデータを提供します。\n・ユーザーテスト計画は、潜在的なユーザーから包括的なフィードバックを集めることを目指し、実装する準備が整っています。\n・試験参加者は内部の工夫とオープンソースとなります。 1週間にご参加いただくために、どなたでもツイートします。 試験者から個人情報を求めることができないため、参加したい人や試験をしたい人",
+      "report": "コミュニティ参加のツイート招待状 https://x.com/NucastIO/status/1906694684614836590\nDevコミュニティエンゲージメントツイート: https://x.com/MinswapIntern/status/1906743811310493925\nコミュニティ開発とプロジェクト参加とDapp統合: https://x.com/cardexscan/status/1917066145162793025\nhttps://x.com/NucastIO/status/1912929057332658557\n解決された github の問題でドキュメントをテスト: https://drive.google.com/file/d/1bQUlm8Yz OE7veWamH8eclh50F0SBTnY/view?usp=sharing\nGithubの問題と修正はここに追跡することができます: https://github.com/Nucastio/gasless-tx-ts/issues\nGithub コミット - 修正と改善: https://github.com/Nucastio/gasless-tx-ts/commits/master/"
+    },
+    {
+      "no": 4,
+      "promise": "・完成したライブラリと公開リリース、フィードバックを組み込む。\n・ユーザーガイド、API参照、およびdAppsとの統合例を含む完全なドキュメント。\n・潜在的な開発者コミュニティにターゲットを絞ったアウトリーチを含むライブラリのローンチとマーケティング。\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・最終ライブラリは、想定される全ての機能が機能し、完全に機能しなければなりません。\n・ドキュメントは包括的で分かりやすく、開発者が効果的にライブラリを使用するために必要なすべての情報を提供する必要があります。\n・弊社にてサポートチャネルをオープンし、Twitterにてお知らせ致します。\n・MITライセンスで公開します。\n・doc形式のアップグレードとメンテナンスの計画を共有します。\n・採用とコミュニティのエンゲージメントを最大限に高めるためのマーケティングと立ち上げ\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "パブリックリポジトリ\nタイプスクリプト: https://github.com/Nucastio/gasless-tx-ts\nPython: https://github.com/Nucastio/gasless-tx-py\n機能デモ\nhttps://drive.google.com/file/d/1qT8yOGRTfOayx3LpQmgmO1fQsjPgqxf/view?usp=sharing\nDevドキュメンテーション https://gasless.nucast.io\nマーケティングとコミュニティのエンゲージメント\n初期招待ツイート: https://x.com/NucastIO/status/1906694684614836590\n開発者のフィードバックの糸: https://x.com/MinswapIntern/status/1906743811310493925\nエコシステムフィードバック: https://x.com/cardexscan/status/1917066145162793025\nフォローアップ活動: https://x.com/NucastIO/status/1912929057332658557\nプロジェクト クローズアウト レポート https://docs.google.com/document/d/1j57cojpsyPMK1-QkU8EjXHJW0xz5g7M z32e2yO2g-c/edit?usp=sharing\nプロジェクトクローズアウトビデオ https://youtu.be/qZMapuCFnGE?si=x18w4nnIvfqNi3VZ"
+    }
+  ]
+}

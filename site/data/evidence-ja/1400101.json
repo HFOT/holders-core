@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "A. 3つのパイロット組織と共同設計文書\nB.1 テクニカル仕様書が公開されました\nC. UXの設計は中心機能のためのモックアップを設計します\nD. 1 Cardano統合計画\nE. 共同設計プロセスからの重要な考えおよび条件の要約のレポート.",
+      "criteria": "A1: すべてのパイロット組織は、共同設計結果に関する肯定的なフィードバックを提供します。\nB1:技術的な指定は技術チームによって承認されます。\nC1:UXモックアップは、アクセシビリティ基準とユーザー要件を満たしています。\nD1: 統合計画は、特定されたすべての依存関係に対応します。\nE1:共同設計プロセスからの重要な考えそして条件の要約のレポートは完了し、承認されます.",
+      "report": "A. 出力:3つのパイロット組織と共同設計文書\n受諾基準:すべてのパイロット組織は、共同設計結果に関する肯定的なフィードバックを提供します。\n証拠: https://github.com/prisma-collective/enrol/blob/main/misc/catalyst m1/PrismaDIDs%20Co-Design%20Q%26A.pdf\nB. 出力:1 技術的な指定文書は出版しました\n受諾の基準:技術的な指定は技術チームによって承認されます。\n証拠: https://github.com/prisma-collective/enrol/blob/main/misc/catalyst m1/Prisma DIDs Technical Specification.pdf\nC. 出力:コア機能のためのUXの設計モックアップ\n受諾の基準: UX のモックアップはアクセシビリティの標準およびユーザーの条件を満たします。\n証拠: https://github.com/prisma-collective/enrol/blob/main/misc/catalyst m1/PrismaDIDs%201st%20Mockups%20and%20UX.pdf\nD. 出力:1 Cardanoの統合の計画\n受諾条件:統合計画は、特定されたすべての依存関係をアドレスします。\n証拠: https://github.com/prisma-collective/enrol/blob/main/misc/catalyst m1/Prisma DIDs Cardano Integration Plan v1.pdf\nE. 出力:共同設計プロセスからの重要な考えそして条件のまとめのレポート。\n受諾条件:共同設計プロセスからの重要な考えそして条件の要約のレポートは完了し、承認されます。\n証拠: https://github.com/prisma-collective/enrol/blob/main/misc/catalyst m1/PrismaDIDs-Co-Design-Summary-Report.pdf"
+    },
+    {
+      "no": 2,
+      "promise": "A: WalletConnectによるDID登録システム\nB: 検証可能なクレデンシャル発行と検証モジュール\nC:選択的な開示制御によるプライバシー設定インターフェイス\nD: DID管理のための基本的なユーザー インターフェイス\nE: すべての開発モジュールの1つのAPIドキュメント",
+      "criteria": "A1:DIDの成功は、最初に使用するためにオンボーディングを含む、少なくとも15人の参加者に発行されます。\nB1:VCの発行と検証が正しく機能します。\nC1: プライバシーパネルは、選択的な開示を可能にします。\nD1: ユーザーインターフェースは、ユーザーや組織の直感的な DID 管理を可能にします。\nE1: 開発されたすべてのモジュールの API ドキュメントが完全で承認されます.",
+      "report": "A. 出力: WalletConnect による DID の登録システム\n受諾条件:最初の使用にオンボーディングを含む、少なくとも15人の参加者に成功したID発行。\n証拠:\n・Cardano の testnet で DID 登録システムを WalletConnect 経由で表示する機能的な展開:\n・https://dids-dashboard-production.up.railway.app(DID)\n・https://vcs-dashboard-production.up.railway.app/credentials(VC)\n・様々なコラボレーターが制作した20 DID:\n・https://airtable.com/appivPJCmhlz4OZHO/shrCojshEPaI1z4Q9\n\nB. 出力: 検証可能なクレデンシャル発行と検証モジュール\n受諾の基準:VCの発行および確認は正しく働きます。\n証拠:\n・検証モジュールを含むすべてのモジュールを含むコードリポジトリ:\n・https://github.com/prisma-collective/Dids\n\nC. 出力:選択的な開示制御を用いるプライバシー設定インターフェイス\n受諾基準: プライバシーパネルは、選択的な開示を可能にします。\n証拠:\n・https://youtu.be/uDSpbrn828o\n\nD. 出力: DID管理のための基本的なユーザー インターフェイス\nアクセシビリティの基準: ユーザーインターフェースは、ユーザーや組織の直感的な DID 管理を可能にします。\n証拠:\n・https://youtu.be/w86RPFpbwPM\n\nE. 出力:すべての開発モジュールの API ドキュメント\n受諾条件:開発されるすべてのモジュールのための API の文書は完了し、承認されます。\n証拠:\n・すべての開発モジュールの API ドキュメントを含むコードリポジトリ/ドキュメント:\n・https://github.com/prisma-collective/Dids/blob/main/documentation/API.md"
+    },
+    {
+      "no": 3,
+      "promise": "A:信頼できる第三者が付いている保証監査のレポート。\nB: パイロット実装レポートとフィードバック分析文書。\nC:テスト段階の間に使用される広範囲のテストの計画そしてテスト場合。\nD: 修正中に行われたすべての変更と改善を反映したドキュメントを更新しました。\nE: パブリックアクセス可能なプロトタイプ(MVP).",
+      "criteria": "A1: セキュリティ監査レポートは信頼できる第三者によって完了し、重要な脆弱性はありません。\nB1:パイロット実装レポートが完成し、フィードバック分析が製品に組み込まれています。\nC1:包括的なテストプランとテストケースは100%の成功率で実行されています。\nD1:更新された文書は、改良中に行われたすべての変更と改善を正確に反映します。\nE1: 一般にアクセス可能なプロトタイプ(MVP)が稼働し、技術的な仕様を満たしています.",
+      "report": "A. 出力: インフラおよびプラットホームの建築保証監査\n受諾基準:Prisma DIDsプラットフォームの実装とインフラにおける重要な脆弱性のセキュリティ、構造的完全性、欠如を確認する外部レビューレポート。\n証拠: https://github.com/prisma-collective/dids/blob/main/documentation/PRISMA DIDs Security Audit Report.pdf\n(ブラジルのWeb3インフラであるReFaz社による監査を実施し、高度なWeb3製品に関する技術的および規制の複雑性をナビゲートすることに専念する資本スタジオに影響を及ぼす)\n\nB. 出力: 試験実施報告及びフィードバック分析文書。\n受諾基準:パイロット実装レポートが完成し、フィードバック分析が製品に組み込まれています。\n証拠:\n・https://github.com/prisma-collective/dids/blob/main/documentation/IMPLEMENTATION REPORT.md\n・https://github.com/prisma-collective/dids/blob/main/documentation/FEEDBACK ANALYSIS FROM IMPLEMENTATION REPORT.md\n\nC. 出力:テスト段階の間に使用される広範囲のテストの計画そしてテスト場合。\n受諾条件:包括的なテストプランとテストケースは100%の成功率で実行されています。\n証拠: https://github.com/prisma-collective/dids/blob/main/documentation/TEST PLAN.md\n\nD. 出力: 修正中に行われたすべての変更と改善を反映した更新された文書。\n受諾基準:更新された文書は、精査中に行われたすべての変更と改善を正確に反映します。\n証拠: https://github.com/prisma-collective/dids/tree/main/documentation\n\nE. 出力: 一般にアクセス可能なプロトタイプ(MVP)。\n受諾基準:一般アクセス可能なプロトタイプ(MVP)は、ライブで技術的な仕様を満たしています。\n証拠:\n・DID: https://dids-dashboard-production.up.railway.app/\n・VC: https://vcs-dashboard-production.up.railway.app/"
+    },
+    {
+      "no": 4,
+      "promise": "A:最終クローズアウトレポート(PCR)\nB:最終クローズアウトビデオ(PCV)。\nC: コミュニティ オンボーディング材料、フィードバック チャネル確立される。\nD: 試作品の運行および特徴のための1人のユーザー ガイド/マニュアル。\nE: 1 オンボーディングプロセス中に収集されたコミュニティのフィードバックとアイデアのまとめ.",
+      "criteria": "A1:最終クローズアウトレポート(PCR)は、すべてのプロジェクト触媒フォーマットとコンテンツ要件を満たしています。\nB1:最終クローズアウトビデオ(PCV)は、すべてのプロジェクト触媒フォーマットとコンテンツ要件を満たす(2-5分、720p / 1080p、公共)。\nC1: コミュニティのオンボーディング材料は完了し、フィードバック チャネルは活動的、適度です。\nD1: ユーザーガイド/マニュアルが完成し、プロトタイプナビゲーションと機能をカバーしています。\nE1:コミュニティフィードバックの要約が完成し、公開されています.",
+      "report": "A.出力:最終クローズアウトレポート(PCR)。\n受諾基準:最終クローズアウトレポート(PCR)は、すべてのプロジェクト触媒フォーマットとコンテンツ要件を満たしています。\n証拠: PCR\nB. 出力:最終的な閉鎖のビデオ(PCV)。\n受諾条件:最終クローズアウトビデオ(PCV)は、すべてのプロジェクト触媒フォーマットとコンテンツ要件を満たす(2-5分、720p / 1080p、公共)。\n証拠: PCV\nC. 出力: コミュニティ オンボーディング材料、確立されるフィードバック チャネル。\n受諾の基準:コミュニティのオンボーディング材料は完了し、フィードバック チャネルは活動的、適度です。\n証拠: オンボーディングアプリ; フィードバックチャネルスクリーンショット1; フィードバックチャネルスクリーンショット2; フィードバックチャネルスクリーンショット3; フィードバックチャネルスクリーンショット4\nD. 出力: プロトタイプ運行および特徴のための1人のユーザー ガイド/マニュアル。\n受諾条件: ユーザーガイド/マニュアルが完成し、プロトタイプナビゲーションと機能をカバーしています。\n証拠: ユーザーガイド\nE. 出力:1 オンボーディングプロセス中に収集されたコミュニティのフィードバックとアイデアのまとめ。\n受諾基準:コミュニティフィードバックの要約が完全で公開されています。\n証拠:コミュニティフィードバックの概要"
+    }
+  ]
+}

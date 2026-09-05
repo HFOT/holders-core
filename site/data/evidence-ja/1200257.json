@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "コンテキスト: UPLC コンバーターは、Cardano のオンチェーン言語ツールと統合される CLI ツールで、スマートコントラクト開発者は、使い慣れたスマートコントラクト言語を使用してゼロ知識スマートコントラクトを作成できるようにします。\nタスク: ツールのドキュメントを作成し、入力と出力を指定します。 仕様は、演算回路コンパイラの作業を記述します。 API ドキュメントには、CLI ツールに利用可能なコマンドの説明が含まれています。\n出力:\n・UPLCコンバーター仕様(pdf)\n・UPLC コンバーター API ドキュメントの作成(pdf)",
+      "criteria": "受諾:\n・UPLCコンバーター仕様(pdf)の設計 仕様ファイルは、演算回路コンパイラの作業を記述します\n・UPLCコンバーターAPIドキュメント(pdf)の作成 API のドキュメントファイルには、CLI ツールに利用可能なコマンドの説明が含まれています",
+      "report": "ツールのドキュメントを作成し、入力と出力を指定します。 更新されたバージョンには、UPLC コンバーターのエラー期間が含まれています。 仕様は、演算回路コンパイラの作業を記述します。 API ドキュメントには、CLI ツールに利用可能なコマンドの説明が含まれています。\n設計 UPLC コンバーターの指定:\nhttps://docs.zkfold.io/symbolic/tools/uplc-converter/\nUPLC コンバーター API ドキュメントを作成します。\nhttps://docs.zkfold.io/symbolic/tools/uplc-converter/#cli-commands"
+    },
+    {
+      "no": 2,
+      "promise": "コンテキスト: UPLC コンバーターは、Cardano のオンチェーン言語ツールと統合される CLI ツールで、スマートコントラクト開発者は、使い慣れたスマートコントラクト言語を使用してゼロ知識スマートコントラクトを作成できるようにします。\n\nタスク: UPLC のサブセットで動作するプロトタイプを開発します(一部言語構造は許可されず、サポートされている組み込み数が限られています)。\n・UPLC(ハッセル)の限られたサブセット用のプロトタイプを実装\n・包括的なテストスイート(ハッセル)の展開\n\n出力:\n・UPLC(ハッセル)の限定サブセットの試作\n・総合テストスイート(ハッセル)",
+      "criteria": "ビルトイン操作の面では、プロトタイプは整数や比較操作、バイト文字列の比較操作、および「IfThenElse」操作に限定されます。 また、最新のものではなく、UPLC用の11月2022仕様も使用できます。 対応する演算回路の実行結果に対して UPLC スクリプトの実行の結果を比較することで、プロトタイプを検証します。\n・当社のレポにUPLC(Haskell)を限定したサブセット用のプロトタイプが見られる\n・当社のレポに総合テストスイート(ハッセル)がございます",
+      "report": "UPLCと包括的なテストスイートのサブセットで動作するプロトタイプを開発しました。\nUPLC (Haskell) の限られたサブセットのためのプロトタイプ:\nhttps://github.com/zkFold/zkfold-base/blob/main/zkfold-uplc/src/ZkFold/Symbolic/UPLC/Converter.hs#L33\n包括的なテストスイート(ハッセル)\nhttps://github.com/zkFold/zkfold-base/pull/359\nまた、プロトタイプとデモを説明するビデオをご覧ください。 UPLC を変換して、検証を容易にします。\nhttps://github.com/zkFold/project-catalyst-reports/tree/main/UPLC%20Converter\nリクエストに応じて、すべての詳細を説明するYouTubeに包括的なビデオを追加しました。\nhttps://youtu.be/vvOEg37Wlzc"
+    },
+    {
+      "no": 3,
+      "promise": "コンテキスト: UPLC コンバーターは、Cardano のオンチェーン言語ツールと統合される CLI ツールで、スマートコントラクト開発者は、使い慣れたスマートコントラクト言語を使用してゼロ知識スマートコントラクトを作成できるようにします。\nタスク:基本的なビルト操作のセット(暗号化操作とシリアライズは除外されます)の演算回路を開発します。\n出力:\n・基礎ビルト操作(ハッセル)の演算回路",
+      "criteria": "基本的なビルトイン操作のセットのための演算回路を開発しています。 これらの操作は、暗号化操作(blake2b 224、bake2b 256、sha2、sha3、BLS12 381楕円曲線操作)、整数とバイト文字列間の変換、およびシリアライズデータ操作を含む、最新の仕様からすべてのUPLC組み込み操作を含みます。\n・基礎ビルト操作(ハッセル)の演算回路はレポでご覧いただけます",
+      "report": "約束通りマイルストーンを完成しました。 コードはオープンソースで、GitHubで公開されています。\n\n・https://github.com/zkFold/symbolic/blob/main/symbolic-uplc/src/ZkFold/Symbolic/UPLC/Evaluation.hs#L399\n\n・https://github.com/zkFold/symbolic/blob/main/symbolic-uplc/src/ZkFold/Symbolic/UPLC/Evaluation.hs#L300\n\n・https://github.com/zkFold/symbolic/blob/main/symbolic-uplc/test/Test.hs#L93"
+    },
+    {
+      "no": 4,
+      "promise": "コンテキスト: UPLC コンバーターは、Cardano のオンチェーン言語ツールと統合される CLI ツールで、スマートコントラクト開発者は、使い慣れたスマートコントラクト言語を使用してゼロ知識スマートコントラクトを作成できるようにします。\nタスク: ビルトイン操作の残りの部分のための運動回路を開発します。\n出力:\n・クリプトグラフィック・ビルト・オペレーション(ハッセル)の合理回路\n・複雑なビルトイン操作(ハッセル)の合理回路",
+      "criteria": "・暗号資産運用(Haskell)の合理回路は、当社のリポジトリで見つけることができます\n・コンプレックス・ビルト・オペレーション(ハッセル)の合理回路はレポでご覧いただけます",
+      "report": "マイルストーンを完成しました。 以下はマイルストーンの出力です。\nハッシュアルゴリズム:\nhttps://github.com/zkFold/symbolic/tree/main/symbolic-base/src/ZkFold/Symbolic/Algorithm/Hash\n\n署名検証:\nhttps://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Algorithm/ECDSA/ECDSA.hs\n\n整数とバイト文字列の間の変換は次のとおりです。\nhttps://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/UInt.hs\n\n組み込みデータの操作:\nhttps://github.com/zkFold/symbolic/blob/main/symbolic-uplc/src/ZkFold/Symbolic/UPLC/Data.hs\n\nBLS12-381 定義はこちら:\nhttps://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Algebra/EllipticCurve/BLS12 381.hs\nhttps://github.com/zkFold/symbolic/blob/main/symbolic-base/src/ZkFold/Symbolic/Data/EllipticCurve/BLS12 381.hs"
+    },
+    {
+      "no": 5,
+      "promise": "コンテキスト: UPLC コンバーターは、Cardano のオンチェーン言語ツールと統合される CLI ツールで、スマートコントラクト開発者は、使い慣れたスマートコントラクト言語を使用してゼロ知識スマートコントラクトを作成できるようにします。\nタスク: ツールのコア機能を実行できるCLIプロトタイプを開発し、UPLCコードを回路にコンパイルします。 また、最終マイルストーンでは、CLIツールが完成します。\n・CLIツールプロトタイプの構築:異なるフォーマットでUPLCスクリプトをロードし、回路(ハッセル)を生成\n・CLIツールコマンドの実装:ゼロ知識回路生成(ハッセル)\n・CLIツールコマンドの実装:Plutus verifierスクリプト生成(Haskell)\n・CLI ツールコマンドの実装: ZK の証明書情報生成 (ハッセル)\n・最終報告書(PDF)\n・最終クローズアウトビデオ\n\n出力:\n・異なるフォーマットでUPLCスクリプトをロードし、回路(ハッセル)を生成\n・ゼロナレッジ回路生成(ハッセル)\n・Plutus verifierスクリプト生成(ハッセル)\n・ZK認定情報生成(ハッセル)\n・最終報告書(PDF)\n・最終クローズアウトビデオ",
+      "criteria": "・異なるフォーマットでUPLCスクリプトをロードし、回路(ハッセル)をレポで生成できます\n・ゼロナレッジ回路生成(ハッセル)は、レポで発見\n・Plutus verifierスクリプト生成(Haskell)は、リポジトリで見つけることができます\n・ZK認定情報生成(ハッセル)は、レポで見つけることができます\n・最終報告書(PDF)は、レポでご覧いただけます。\n・最終映像はレポでご覧いただけます",
+      "report": "プロジェクトを確定し、以下のリンクをご覧ください。\n・異なるフォーマットでUPLCスクリプトをロードし、回路(ハッセル)をレポで生成できます\n\nhttps://github.com/zkFold/zkfold-cardano/blob/main/zkfold-uplc-converter/app/Main.hs#L151\n・ゼロナレッジ回路生成(ハッセル)は、レポで発見\n\nhttps://github.com/zkFold/symbolic/blob/main/symbolic-uplc/src/ZkFold/Symbolic/UPLC/Converter.hs#L38\n・Plutus verifierスクリプト生成(Haskell)は、リポジトリで見つけることができます\n\nhttps://github.com/zkFold/zkfold-cardano/blob/main/zkfold-uplc-converter/app/Main.hs#L101\n・ZK認定情報生成(ハッセル)は、レポで見つけることができます\n\nhttps://github.com/zkFold/zkfold-cardano/blob/main/zkfold-uplc-converter/app/Main.hs#L99\n・最終報告書(PDF)は、レポでご覧いただけます。\n\nhttps://github.com/zkFold/zkfold-cardano/blob/0d4435088f657f4c0b211fd27dac30dc3c5a7bfe/zkfold-uplc-converter/1200257%20-%20zkFold %20UPLC%20Converter20%20%20%20%20%20%20%20%20%20out%20report.pdf\n・最終クローズアウトビデオ(オプション、ロングバージョン)はこちら\n\nhttps://youtu.be/OEnyaXMN0Oc\n・ご要望に応じて、最終クローズアウト映像(4分)をご覧いただけます。\n\nhttps://youtu.be/i1RMyyepKb0"
+    }
+  ]
+}

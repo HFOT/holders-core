@@ -1,0 +1,69 @@
+{
+  "title": "Smart Contract Vulnerabilities Game - Capture the Flag (CTF)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25000,
+      "promise": "・A sample task\n・Task where users have to exploit a simple double satisfaction vulnerability\n・The task consists of a vulnerable smart contract, off chain code to deploy and interact with the contract and documentation to help understand the code",
+      "criteria": "Delivery in the github repository of a sample task where users have to exploit a simple double satisfaction vulnerability. The task will consist of three parts (1) vulnerable smart contract, (2) off chain code to deploy and interact with the contract and (3) documentation to help understand the code.\nDelivery of documentation that allows users of the code to deploy, execute and test the smart contract",
+      "report": "See an open source repository containing all the things listed in the milestone: https://github.com/vacuumlabs/cardano-ctf\nVideo(s) demonstrating it all are in the videos/ folder in the repository. There are two tasks, a sample 00_hello_world one and a 01_sell_nft one that is a little bit more complex demonstrating the double satisfaction vulnerability. There's the on-chain (smart contracts) code in both, the off-chain (deploy to testnet, interact with it, test) code and the documentation (comprehensive guides -- video + READMEs + comments in the code itself).",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 37500,
+      "promise": "During this phase, we will use the framework and task created in milestone 1 to create 3 more tasks, along with documentation and acceptance tests.",
+      "criteria": "・Delivery in the github repository of 3 additional sample tasks where users have to exploit a vulnerability. Each of the three tasks will consist of three parts (1) vulnerable smart contract, (2) off chain code to deploy and interact with the contract and (3) documentation to help understand the code\n・Delivery of documentation for each of the 3 additional sample tasks that allows users of the code to deploy, execute and test the smart contract",
+      "report": "See the open source repository containing all the things listed in the milestone: https://github.com/vacuumlabs/cardano-ctf\nRelevant videos:\n・milestone2-changelog.mp4\n・02_vesting.mp4\n・03_multisig_treasury.mp4\n・04_tipjar.mp4\n\nFrom the Changelog:\nVersion 0.2 (Milestone 2) - [2023-12-15]\nAdded\n・We added the Lucid emulator as an alternative to running on the testnet. It speeds up playing the game significantly. No more waiting times for unsuccessful runs!\n・We added three more tasks:\n・vesting\n・multisig_treasury\n・tipjar\n・We added 4 more videos for even clearer Milestone achievement purposes.\n\nChanged\n・Tests run now first on the emulator. Only if they pass on the emulator, they are run on the testnet as well. The behavior can be changed in the config.\n・The player now edits the file player.ts and starts the tests by running run.ts.\n・These changes make the videos for Milestone 1 slightly imprecise, refer to the updated READMEs for precise instructions.",
+      "kinds": [
+        "code"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 37500,
+      "promise": "In this milestone we will create 3 more tasks, similar in scope to the previous milestone.",
+      "criteria": "・Delivery in the github repository of 3 additional sample tasks where users have to exploit a vulnerability. Each of the three tasks will consist of three parts (1) vulnerable smart contract, (2) off chain code to deploy and interact with the contract and (3) documentation to help understand the code\n・Delivery of documentation for each of the 3 additional sample tasks that allows users of the code to deploy, execute and test the smart contract",
+      "report": "See the open source repository containing all the things listed in the milestone: https://github.com/vacuumlabs/cardano-ctf\nRelevant videos:\n・milestone3_changelog.mp4\n・05_purchase_offer.mp4\n・06_tipjar_v2.mp4\n・07_multisig_treasury_v2.mp4\n\nFrom the Changelog:\nVersion 0.3 (Milestone 3) - [2024-01-19]\n\nAdded\n・We added three more tasks:\n・purchase_offer\n・tipjar_v2\n・multisig_treasury_v2\n・We added videos for clear Milestone achievement purposes.\n\nChanged\n・The code of setting the game up, running the interaction and testing whether the level is successfully completed is now abstracted into a runTask function located inside common/offchain/utils.ts and run from run.ts.\n・The player_template.ts and the player.ts now contain only the interactions with an already set up environment.\n・These changes are made for all levels. If you have a legacy player.ts, compare player_template.ts to it to find out what needs to be updated for it to work properly.",
+      "kinds": [
+        "code"
+      ],
+      "links": 9
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 49000,
+      "promise": "In this milestone, we will create 3 more tasks. These tasks will be larger in scope than the previous ones and will require multiple steps to solve.",
+      "criteria": "・Delivery in the github repository of 3 additional tasks where users have to exploit a vulnerability. Each of the three tasks will consist of three parts (1) vulnerable smart contract, (2) off chain code to deploy and interact with the contract and (3) documentation to help understand the code\n・Delivery of documentation for each of the 3 additional sample tasks that allows users of the code to deploy, execute and test the smart contract",
+      "report": "See the open source repository containing all the things listed in the milestone: https://github.com/vacuumlabs/cardano-ctf\nRelevant videos:\n・08_lending.mp4\n・09_multisig_treasury_v3.mp4\n・10_king_of_cardano.mp4\n・milestone4_changelog.mp4\n\nFrom the CHANGELOG.md:\n## Version 0.4 (Milestone 4) - [2024-02-20]\n\n### Added\n\n- We added **three more complex tasks**:\n - [lending](./08_lending/)\n - [multisig_treasury_v3](./09_multisig_treasury_v3/)\n - [king_of_cardano](./10_king_of_cardano/)\n- We added **videos** for clear Milestone achievement purposes.\n\n### Changed\n\n- The logging of transaction details is reworked and unified. The logs should be\n consistent and beautiful.\n- `player_template`s across the codebase have been updated. If you want the\n update, please modify your `player.ts` files by comparing it to the\n `player_template.ts`. If you don't care, you don't need to do anything. We\n kept the previous logging system as well so we don't break your files.\n- We added and modified some common logic. It should have no impact on any of\n the previous tasks.\n- Solution aggregation: To better track the users' progress, we utilize a custom\n smart contract for aggregating the number of correct solutions. It's important\n to note that this contract **does not gather any private information**, it\n solely collects data already publicly available on the testnet in a more\n accessible format.",
+      "kinds": [
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 31000,
+      "promise": "・Sharing the tasks with the community through the open GitHub repo.\n・Promoting the tasks on various social media.\n・Publishing blogs with detailed explanations and solutions.\n・Evaluating user feedback.\n・Interacting with the users on social media s.a. Discord and Twitter.",
+      "criteria": "We will publish at least 3 blogs related to CTF during this timeframe. We will repost these on reddit too. We will publish at least 4 tweets on our Vacuumlabs twitter.",
+      "report": "Closeout report and video are referenced from the open-source repository itself, here. Video is on Youtube.\nThe tasks are all complete and open-source. Interaction with users, feedback gathering and improvement happened in our public Discord, both in the public channels and over DMs. There's been a fix that a community member helped identify and fix in one of the tests, can be seen in the pull requests of the repository.\nTweets:\n・https://x.com/vacuumlabs/status/1780232266653827310\n・https://x.com/vacuumlabs/status/1784940235425562907\n・https://x.com/vacuumlabs/status/1786306873332801627\n・https://x.com/vacuumlabs/status/1788551924452610064\n\nReddit posts can be seen under our profile: https://www.reddit.com/user/vacuumlabs_auditing/\nMedium blogs are linked from the tweets, but just for completeness' sake, they can all be found here: https://medium.com/@vacuumlabs_auditing\nDiscord is here: https://discord.gg/5XVW2MUdWu\nRegarding one of the points in Milestone outputs, \"Publishing blogs with detailed explanations and solutions\" -- the last blog post covers that. There are hints and solutions for all the tasks. They are all behind a spoiler block, so players can knowingly choose which hints / solutions to see.\nMore details can be seen in the Closeout report itself.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 16
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "配送可能\n・Helios用のVSCodeウィジェットを開発:\n・Heliosスクリプト(JSONまたはhex-encoded CBOR)を実行する前に入力を指定できる\n・Heliosスクリプトの名前を選択して実行する(Heliosスクリプトの場合、有効タブにデフォルト)\n・VSCodeデバッガコンソールでHeliosスクリプト(print文、エラー、スタックトレース)を実行している出力を表示\n・Heliosスクリプトを実行している場合:HeliosスクリプトのJITコンパイルをユーザワークスペースでキャッシュする",
+      "criteria": "更新されたHelios VSCodeプラグインは、このスクリプトの実行機能は、このマイルストーンの完了時に公開されます。\n別の公開文書は、インストールする手順を説明し、基本的な例でこの機能をテストします(ここで見つけることができる `time lock` 支出バリデータ: https://github.com/Hyperion-BT/helios)。\n公開文書は、裁判官によって再現可能であるべき実行の予想された出力を述べます.",
+      "report": "A. 出力:VSCode統合ヘリオスランナー\n受諾条件: 開発者は、VSCode Run および Debug ワークフローを使用して、VSCode 内で直接 JIT コンパイルされた Helios エントリーポイントスクリプトを起動できます。 ランナーはHelios VSCodeの拡張子から利用でき、エディタで開くHeliosスクリプトで使用できます。\n証拠:\n・デモ動画:https://drive.google.com/file/d/1 CmqN8aGEmQshR1WhDENSf3kM1llKXVH/view?usp=sharing\n・VSCodeマーケットプレース拡張:https://marketplace.visualstudio.com/items?itemName=HeliosLang.helios\n・ソースコードの証拠: https://github.com/HeliosLang/vscode-plugin/commit/12a670c8452c97244365ed14346b60a4e1a5a5e9\n\nB.出力:Heliosの記入項目ポイント及びArgumentsインターフェイス\n受諾条件: 開発者は実行可能なHeliosのエントリーポイントを選択し、そのエントリポイントで必要な値を設定できます。 ランナーは、オープンしたHeliosファイルから利用可能なエントリポイントを表示し、エントリポイントと引数の選択を明示し、ユーザーフレンドリーにします。\n証拠:\n・デモ動画:https://drive.google.com/file/d/1 CmqN8aGEmQshR1WhDENSf3kM1llKXVH/view?usp=sharing\n・利用ガイド:https://docs.google.com/document/d/1zyemJexMB55eD-feSywnz6xvfOIkQnBWfRhC9Pw0vbI/edit?usp=sharing\n\nC. 出力: フォームベースのHelios値エディタ\n受諾条件: 開発者は、dtums、公開鍵ハッシュ、トランザクション、スクリプトコンテキスト、リスト値などの値を含む、直感的なVSCodeフォームを使用して構造化されたHelios値を作成および再利用することができます。 これは、開発者がスクリプト実行に必要なエントリーポイント引数を提供することを可能にする一方で、直接低レベルのJSON/CBOR編集をユーザーフレンドリーな方法で置き換えます。\n証拠:\n・デモ動画:https://drive.google.com/file/d/1 CmqN8aGEmQshR1WhDENSf3kM1llKXVH/view?usp=sharing\n・利用ガイド:https://docs.google.com/document/d/1zyemJexMB55eD-feSywnz6xvfOIkQnBWfRhC9Pw0vbI/edit?usp=sharing\n・ソースコードの証拠: https://github.com/HeliosLang/vscode-plugin/commit/12a670c8452c97244365ed14346b60a4e1a5a5e9\n\nD. 出力: UPLCの評価および結果の表示"
+    }
+  ]
+}

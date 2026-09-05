@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "A. 視覚的なデモンストレーションまたはプロセスを提供します。\nB. ビットコインウォレット(Xverseなど)と1つのCardanoウォレット(例えば、レース)と互換性のある「Connect Wallet」ボタンを備えた機能的なtestnet Webインターフェイス。\nC. ハッシュタイムロック契約(HTLC)スクリプトは、BitcoinとCardanoの両方のテストネットにデプロイされ、原子スワップロジックを有効にします",
+      "criteria": "A1。 ユーザーは、プロセスを実証するYoutubeビデオへのリンクに従うことができます\nB1。 ユーザーは、BitcoinとCardanoウォレットの両方をtestnet UIに接続できます。\nC1. BTC-to-Cardanoスワップのサンプルが起動し、両方のテストネット上のHTLCロックフェーズに進むことができます.",
+      "report": "A. 出力: 私達は視覚のデモンストレーションかプロセスを提供します。\n受諾条件:ユーザーは、プロセスを実証するYoutubeビデオへのリンクに従うことができます\n証拠:\nhttps://youtu.be/aV734qhw64o\n\nB. 出力:Bitcoinウォレット(Xverseなど)と1つのCardanoウォレット(例、レースなど)と互換性のある「Connect Wallet」ボタンを備えた機能的なtestnet Webインターフェイス。\n受諾条件:ユーザーは、BitcoinとCardanoの両方のウォレットをtestnet UIに接続することができます。\n証拠:\nhttps://x.com/zkFold/status/2019014665825644856?s=20\nhttps://btc-swap.zkfold.io/\nhttps://docs.zkfold.io/bitcoin-bridge-guide/overview\n\nC. 出力: ハッシュタイムロック契約(HTLC)スクリプトは、BitcoinとCardanoの両方のテストネットでデプロイされ、原子スワップロジックを有効にします。\n受諾条件:サンプルBTC-to-Cardanoスワップを開始し、両方のテストネット上のHTLCロックフェーズに進むことができます。\n証拠:\nhttps://btc-swap.zkfold.io/\n\nD. 出力: HTLCスクリプトコードを含むGitHubリポジトリ(public)へのリンク\n受諾条件:HTLCスクリプトコードを含むGitHubリポジトリ(public)へのリンク\n証拠:\nhttps://github.com/zkFold/zkfold-bitcoin-lib/blob/main/src/ZkFold/Bitcoin/Examples/HTLC.hs"
+    },
+    {
+      "no": 2,
+      "promise": "・ディレクション(BTC→カルダノトークン、もしくはその逆)を選択できるテストネット上の機能的なスワップインターフェイスで、量と表示引用を指定できます。\n・UI と HTLC スクリプトを交換するための API 統合をバックエンドします.",
+      "criteria": "・ユーザーは、完全なBTC ↔ Cardanoトークンスワップ(Cardinal BTC または Indigo iBTC)のエンドツーエンドの testnet を完了できます。\n・UIに正しくクォーテーションが表示されます.",
+      "report": "マイルストーン完了の証拠:\n・デプロイされたtestnetスワップUIコンポーネントへのリンク:https://btc-swap.zkfold.io/\n・デモ動画(≦5分)で、スワップ成功の実行:https://youtu.be/aV734qhw64o\n\nオプション:\nTestnet ガイド: https://docs.zkfold.io/bitcoin-bridge-guide/testnet-guide\nフルガイド: https://docs.zkfold.io/bitcoin-bridge-guide/overview"
+    },
+    {
+      "no": 3,
+      "promise": "A. テストネットで実装した「マイオーダー」ダッシュボードで、現在のスワップと過去のスワップを表示できます。\nB.機能的返金ロジックにより、ユーザーはHTLCのタイムロック有効期限後に自動的に資金を回復できます.",
+      "criteria": "A1. 注文は、正しいステータス(完了、完了、返金、失敗)で表示されます。\nB1. 払い戻し取引は返金時間ウィンドウ内で自動的に実行されます.",
+      "report": "A. 出力: ユーザーが現在のスワップと過去のスワップを表示するためにテストネットで実装された「マイオーダー」ダッシュボード。\n受諾条件: 注文は正しいステータス(保留、完了、返金、失敗)で表示されます。\n証拠:「マイオーダー」コンポーネントと機能自動払い戻しでtestnetへのパブリックリンク: https://btc-swap.zkfold.io/\nB. 出力: 機能的払い戻しロジックにより、ユーザーはHTLCのタイムロック有効期限後に自動的に資金を回復できます。\n受諾条件:払い戻し取引は返金時間ウィンドウ内で自動的に実行されます。\n証拠:「私の注文」セクションのデモビデオショーケーシング: https://youtu.be/5-GuIDDcT1o"
+    }
+  ]
+}

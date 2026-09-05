@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・ユーザー・ジャーニー・フィグマ・ドキュメント\n・UI/UX フィグマ ドキュメント(ワイヤーフレームレベル)\n・AWSアカウントとVapor Laravelで、GithubにCI/CDパイプラインを設置。\n・新規顧客レコード追加/修正/削除\n・新製品/サービスレコード追加/修正/削除",
+      "criteria": "・マイルストーン・レビュアーは、Mercury: Invoiceのユーザー・ジャーニーを含むfigma文書を表示します。\n・マイルストーン・レビュアーは、Mercury: Invoiceシステムのワイヤフレームui/uxを含むfigma文書を表示します。\n・Milstone Reviewerは、LaravelのVapor経由でAWSにGithubアクションとMercury: Invoiceシステムの展開を示すYouTubeで動画を表示します。\n・マイルストーンレビュアーは、新規顧客レコードの追加、変更、削除など、YouTubeで動画を表示します。\n・マイルストーン・レビュアーは、YouTubeで新製品/サービスレコードを追加、修正、削除する動画を表示します.",
+      "report": "Milestone 1の出力は完了です。 以下の証拠をご覧ください。\nFigmaの文書:\n・ユーザー・ジャーニー・フィグマ・ドキュメント\n・UI/UX フィグマ ドキュメント(ワイヤーフレームレベル)\n\n次の情報をカバーするYouTube動画:\n・AWSアカウントとVapor Laravelで、GithubにCI/CDパイプラインを設置。\n・新規顧客レコード追加/修正/削除\n・新製品/サービスレコード追加/修正/削除\n\nソースコードの GitHub アドレス: https://github.com/cardano-mercury/mercury-invoice"
+    },
+    {
+      "no": 2,
+      "promise": "・顧客インボイスの追加/変更(送信)/削除/無効/手動支払済マーク。\n・インボイスリマインダーは、手動でリマインダー/スケジュールをリマインダー(メール経由)\n・JSONによる顧客、製品/サービス、請求書のデータのエクスポート",
+      "criteria": "・マイルストーン・レビュアーは、新規顧客の請求書の追加、変更、送信、削除、無効化、および手動で支払われたマークを示すYouTubeでビデオを表示します。\n・マイルストーンレビュアーは、インボイスリマインダーを瞬時に送信し、後で送信する予定を提示するYouTubeで動画を表示します。\n・マイルストーンのレビュアーは、データエクスポート手順とJSONファイルを表示するYouTubeで動画を表示します。\n・マイルストーンのレビュアーは、Githubでコードセクションを追加しました.",
+      "report": "Mercury:請求書のマイルストーン2が完成しました。 以下の証拠を確認してください。\n次の情報をカバーするYouTube動画:\n・顧客インボイスの追加/変更(送信)/削除/無効/手動支払済マーク。\n・インボイスリマインダーは、手動でリマインダー/スケジュールをリマインダー(メール経由)\n・JSONによる顧客、製品/サービス、請求書のデータのエクスポート\n\nソースコードの GitHub アドレス: https://github.com/cardano-mercury/mercury-invoice"
+    },
+    {
+      "no": 3,
+      "promise": "・Fiat(Stripe APIキー)とADA(Cardanoウォレットアドレスを使用)による決済処理\n・ADA:USD価格設定戦略の設定\n・ADAの支払いのためのストライプおよびCardanoのインデックス作成者に対する支払い検出。\n・エンドユーザが他のプログラムを連携させるためにWebhookを受け取った支払い.",
+      "criteria": "・マイルストーン・レビュアーは、ストライプAPIとCardano Walletとの支払い処理統合を示すYouTubeで動画を表示します。\n・マイルストーン・レビュアーは、Webインターフェイスを介してADAの価格設定戦略選択を示すYouTubeで動画を表示します。\n・マイルストーン・レビュアーは、StripeとCardanoから自動的に支払われる支払いのYouTubeでビデオを表示します。\n・マイルストーンレビュアーは、外部サービスにトリガーされるWebhookを示すYouTubeで動画を表示します.",
+      "report": "このマイルストーンでは、以下を表示する必要があります。\n・Fiat(Stripe APIキー)とADA(Cardanoウォレットアドレスを使用)による決済処理\n・ADA:USD価格設定戦略の設定\n・ADAの支払いのためのストライプおよびCardanoのインデックス作成者に対する支払い検出。\n・エンドユーザが他のプログラムを連携させるためにWebhookを受け取った支払い\n\nYouTube動画の全ての機能のデモはこちら: https://youtu.be/GInHBN3UcXI\nこのGitHub Pull Request で実装されているこれらの機能は次のとおりです。 https://github.com/cardano-mercury/mercury-invoice/pull/8"
+    },
+    {
+      "no": 4,
+      "promise": "・API は、権限を持つ API Keys を作成/変更、API Keys を使用して、外部プログラムからMercury とインターフェイスします。\n・Additional Event Driven WebHook(顧客、製品、請求書変更イベント)\n・支払い詳細報告(A&R、商品別収益、顧客別収益、期間別総収入)",
+      "criteria": "・マイルストーン・レビュアーは、ユーザーがAPIキーを作成したり、パーミッションを設定したり、APIキーを使用して、ポストマンのMercuryとインターフェイスしたり、そのインタラクションからMercury内の更新を表示したりするYouTubeでビデオを表示します。\n・マイルストーン・レビュアーは、メルリーがアクティブ化した外部のWebhookをトリガーする変更を示すYouTubeで動画を表示します。\n・マイルストーン・レビュアーは、インボイス・システムのデータから作成されたチャートとレポートをYouTubeで表示する動画を表示します.",
+      "report": "Staging Branch = https://github.com/cardano-mercury/mercury-invoice/tree/staging (アプリの最新バージョン)Milestone 4は、次の3つのプルリクエストで構成されています。\n・https://github.com/cardano-mercury/mercury-invoice/pull/9 (フロントエンドUXオーバーホール)\n・https://github.com/cardano-mercury/mercury-invoice/pull/10(API機能)\n・https://github.com/cardano-mercury/mercury-invoice/pull/11(レポート&追加のWebhookイベント)\n\nYouTube動画:https://youtu.be/edZ-fZUsDX0"
+    }
+  ]
+}

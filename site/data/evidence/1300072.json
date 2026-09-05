@@ -1,0 +1,58 @@
+{
+  "title": "cPoker Hydra Case Study: Implement Interactive dApp",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 24300,
+      "promise": "Source code and documentation on https://github.com/Cardano-After-Dark/hydra-poc\n・Link to article with feasibility study\n・Implementation of the smart contract",
+      "criteria": "Verify the feasibility of implementing a testnet smart contract that will:\n・Lock funds for a number of participants, in order to start a game\n・Enable performing in-game transactions directly on Hydra\n・Release funds at game conclusion according to the results of the game",
+      "report": "The milestone outputs are available in the GitHub Repo https://github.com/Cardano-After-Dark/hydra-poc/tree/blog:\n・Article with feasibility study : docs/blog/ms1.md\n・Implementation of the smart contract --> dred smart contract\n\nIn the article we demonstrate it is possible to implement a testnet smart contract with \n・funds locking --> Yes, feasible\n・perform in-app transactions on Hydra --> See ms1.md, section \"Real-World Technical Insights\"\n・release funds when the application protocol terminates --> See ms1.md section \"Looking Forward\"\n\nAs evidence for the milestone completion, we produced the following resources:\n・Article with feasibility study: See ms1.md\n・Implementation of the smart contract handling transactions on Hydra --> dred smart contract\n・Source code for the Hydra PoC implementation --> See scripts \n・Video Report --> See YouTube Video Hydra PoC M1.\n\nAs additional content, we include also\n・README explaining the project \n・Tutorial1: Cardano Hydra PoC First Run\n・Tutorial2: Cardano Hydra PoC Local (same tutorial used in the YouTube Video)\n\nRelated to your requests in the previous review, please, see the newly added sections, and the new changes in the article: \n・References: added a YouTube Playlist \"Hydra PoC - Building Interactive dApps on Cardano\"\n・Transaction Hash Visibility: As the interaction happens on L2 (Hydra), the transaction hashes are not visible on the L1 (Cardano preprod) network, so they are lost when closing the Hydra Head.\n・Transaction Hashes: Here is an example of the transaction addresses you want (check them on Cardanoscan preprod): \n・commit tx: f4153075975bbea7d0563a93b9b734697f8e958a981c81d7593c0154bdfd5d3d\n・fanout tx: 1bb72e262b3d9f629bf6855cce484f4ba9a75e24728b65b4ba9422439f662547:",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 17
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 24300,
+      "promise": "Source code and documentation on https://github.com/Cardano-After-Dark/hydra-poc\n・Link to article with feasibility study\n・Implementation of the cryptographic exchange",
+      "criteria": "Verify the feasibility of implementing a group cryptographic protocol using Hydra similar to what is presented in the Kaleidoscope paper, with focus on:\n・Implementing an exchange between participants to agree on a shared key\n・Enable participants to perform encryptions (and notify others)\n・Enable participants to perform decryptions (and notify others)",
+      "report": "The results of this PoA are available in the branch ms02 of our hydra-poc GitHub repository and on our YouTube channel\nWith this PoA we are submitting the following: \nOutputs:\n・Link to article with feasibility study\n・Implementation of the cryptographic exchange\n\nAcceptance criteria\nVerify the feasibility of implementing a group cryptographic protocol using Hydra similar to what is presented in the Kaleidoscope paper, with focus on:\n・Implementing an exchange between participants to agree on a shared key\n・Enable participants to perform encryptions (and notify others)\n・Enable participants to perform decryptions (and notify others)\n\nYou can verify the above by watching the YouTube video and reading the article\nEvidence of Milestone Completion\n completionThe following artefacts will be publicly available:\n・Link to article with Feasibility study\n・Implementation of cryptographic protocol through Hydra on GitHub\n・Source code of the Hydra PoC implementation on GitHub\n・Link to the video for the article explaining the implementation",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 20250,
+      "promise": "Source code and documentation on https://github.com/Cardano-After-Dark/hydra-poc\n・Link to article with feasibility study, covering both PoCs for transaction handling (M1) and cryptographic implementation (M2). \n・Implementation of the cryptographic exchange, covering both PoCs for transaction handling (M1) and cryptographic implementation (M2). (Since this milestone is dependent on the two previous studies, we are cautions as to not commit to an implementation of the integration).",
+      "criteria": "・Release an Article presenting the Case Study results\n・Present problems encountered during the PoCs\n・Present the approach used to solve the problems with links to the source code\n・Present the study results\n・Negative case: highlight and define the blocking problems\n・Positive case: present the working solution PoCs in the article\n・Present and release all the source code created for the case study\n・In-game communication transaction handling with Hydra\n・Cryptographic protocol implementation through Hydra",
+      "report": "Milestone Outputs\n・Link to article with feasibility study\n・Implementation of the cryptographic exchange, covering both PoCs for transaction handling (M1) and cryptographic implementation (M2). (Since this milestone is dependent on the two previous studies, we are cautions as to not commit to an implementation of the integration). \n・/src/tictactoe-demo.ts covering transaction flow (M1)\n・/src/xor-crypto-demo.ts covering encryption and key exchange (M2)\n\nAcceptance criteria\n・Release an Article presenting the Case Study results\n・Present problems encountered during the PoCs\n・Present the approach used to solve the problems with links to the source code\n・Present the study results\n・Negative case: highlight and define the blocking problems\n・Positive case: present the working solution PoCs in the article\n・Present and release all the source code created for the case study\n・In-game communication transaction handling with Hydra\n・Cryptographic protocol implementation through Hydra\n\nEvidence of milestone completion\n・Article with Feasibility study containing:\n・Overview of the two PoCs\n・Analysis on how the two PoCs can be integrated with each other\n・Learnings for other Hydra integrators / interactive app implementors\n・Highlight possible areas of future research",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 12150,
+      "promise": "・Final close-out report\n・Final closeout video on https://www.youtube.com/@cardanoafterdark\n・Source code and articles on https://github.com/Cardano-After-Dark/hydra-poc",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Public release of Source code and Article detailing the case study.\n・Article1: App communication using transactions\n・Article2: Cryptographic protocol implementation\n・Article3: Feasibility study overview.\n・Release documentation guiding through the implementation.",
+      "report": "Project Close-out Report\nMilestone Outputs\n・Final close-out report is available at https://github.com/Cardano-After-Dark/hydra-poc/blob/main/docs/blog/\n・Final closeout video available at https://www.youtube.com/@cardanoafterdark\n・Source code and articles are available at https://github.com/Cardano-After-Dark/hydra-poc\n\nAcceptance criteria\n・Final closeout report is publicly available -> https://github.com/Cardano-After-Dark/hydra-poc/blob/main/docs/blog/close-out.md\n・Final closeout video is publicly available -> https://www.youtube.com/watch?v=GLbdjFRHsLE\n・Public release of Source code and Article detailing the case study.\n・Article1 - App Communication Using Transactions: https://cardanoafterdark.io/app-communication-using-transactions/\n・Article2 - Cryptographic Protocol Implementation: https://cardanoafterdark.io/cryptographic-protocol-implementation/\n・Article3 - Feasibility Study Overview: https://cardanoafterdark.io/feasibility-study-overview/\n・Source code - https://github.com/Cardano-After-Dark/hydra-poc/tree/main\n・Release documentation guiding through the implementation: https://github.com/Cardano-After-Dark/hydra-poc/tree/main\n\nEvidence of milestone completion\n・Link to final closeout report -> https://github.com/Cardano-After-Dark/hydra-poc/blob/main/docs/blog/close-out.md\n・Link to final closeout video -> https://www.youtube.com/watch?v=GLbdjFRHsLE\n・Case study Articles and Video are publicly available -> https://cardanoafterdark.io/blog/\n\nAddressing reviewer:\nAs you mention, the End-Date was incorrect and has been corrected - great catch. The Start-Date however was correct since we received our first batch on 14.04.2025 due to delays. Thank you for your careful evaluation.",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 26
+    }
+  ]
+}

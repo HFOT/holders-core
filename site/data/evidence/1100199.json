@@ -1,0 +1,72 @@
+{
+  "title": "Mumak by TxPipe: A PostgreSQL custom extension to process raw Cardano CBOR",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 37500,
+      "promise": "- Source code for the PostgreSQL extension\n- Projection and filter functions able to interact with Cardano CBOR data\n- Binary release for the extension ready to be installed on a PostgreSQL instance\n- Instructions on how to install the extension\n- Instructions on how to use each of the available functions\n- brief demo video showing an example use-case",
+      "criteria": "- A technical reviewer / developer is able to install the extension by following the provided instructions.\n- A technical reviewer / developer is able to execute queries against a suitable PostgreSQL instance using the custom projections & filters provided by the extension.",
+      "report": "Milestone Outputs:\n- Source code for the PostgreSQL extension\nThe Mumak extension source code can be found here \n- Projection and filter functions able to interact with Cardano CBOR data\nProjections: These functions are designed to extract specific pieces of information from the CBOR-encoded blockchain data. Projections allow users to retrieve particular data points, such as transaction inputs, outputs, the total ADA output of a transaction, or the metadata associated with a transaction. By directly accessing and decoding the CBOR data, projections provide a powerful means of analyzing and extracting valuable insights from the blockchain data stored within PostgreSQL.\n\nFilters: Filters are specialized functions that enable users to apply conditions to the CBOR data, effectively narrowing down the dataset based on specific criteria. For example, filters can identify transactions involving a particular address, transactions minting tokens for a given policy, or transactions with a certain validity interval. Filters enhance the querying capabilities by allowing users to focus on subsets of the blockchain data that meet their specific requirements, thereby improving query efficiency and relevance.\n\n- Binary release for the extension ready to be installed on a PostgreSQL instance\nThe Mumak PostgreSQL extension consists of three key files: mumak.sql, mumak.control, and mumak.so. These files are bundled together into an archive, which is available on the repository's release page.\n- Instructions on how to install the extension\nWe provide a comprehensive documentation on how to install the mumak postgres extension here.\n- Instructions on how to use each of the available functions\nWe provide a list of functions available in the current version of mumak here.\nAcceptance Criteria:\n- A technical reviewer / developer is able to install the extension by following the provided instructions.\n- A technical reviewer / developer is able to execute queries against a suitable PostgreSQL",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 35869,
+      "promise": "- A relational DB schema to store Cardano block structures leveraging Mumak capabilities\n- A dataset up to the latest available epoch containing mainnet blocks leveraging Mumak capabilities\n- An ingestion tool using Oura and Mithril to create and update block datasets.\n- A brief video demonstrating how to query the presented dataset snapshot using Mumak",
+      "criteria": "- A technical reviewer / developer is able to inspect the db schema and understand the presented structures.\n- A technical reviewer / developer is able to query the presented dataset snapshot using PostgreSQL and Mumak to explore on-chain data.",
+      "report": "Milestone Outputs \n- A relational DB schema to store Cardano block structures leveraging Mumak capabilities\nThe relation schema for mumak block database can be found here: https://github.com/txpipe/mumak/blob/main/init-db.sh\n- A dataset up to the latest available epoch containing mainnet blocks leveraging Mumak capabilities\nThe dataset can be found by connecting to a readonly postgres instance with mumak installed. \nconnection string below:\nPGPASSWORD=V9OYt9ANMTQyIjowPmJZiQ== psql --port 5432 --host=mumak-m0.demeter.run --username dmtr_mumak1vrqw92qwc79dw094tav3yj4wm52ezvrv cardano-mainnet\n- An ingestion tool using Oura and Mithril to create and update block datasets.\nOura now supports Mithril as a datasource: https://github.com/txpipe/oura/pull/795\nEvidence of milestone completion \n- An SQL schema creation script for the Cardano block structures\nhttps://github.com/txpipe/mumak/blob/main/init-db.sh\n- An SQL snapshot of mainnet data up until the delivery data epoch\nPGPASSWORD=V9OYt9ANMTQyIjowPmJZiQ== psql --port 5432 --host=mumak-m0.demeter.run --username dmtr_mumak1vrqw92qwc79dw094tav3yj4wm52ezvrv cardano-mainnet\n- Instructions on how to leverage Oura / Mithril to generate a new snapshot\nYou will need oura config for mithril source: \nhttps://github.com/txpipe/oura/blob/dbcb6186b0bf5deecca6adeedf3b24e853682eab/examples/mithril/daemon.toml\nOnce you have the config file setup, run oura normally like so oura daemon -config daemon.toml\n- A link to a demo video of how to query the presented snapshot\nVideo can be found here: mumak_block_query.mp4",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 9
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 35869,
+      "promise": "- A relational DB schema to store Cardano transaction structures leveraging Mumak capabilities\n- A dataset up to the latest available epoch containing mainnet transactions leveraging Mumak capabilities\n- An ingestion tool using Oura and Mithril to create and update transaction datasets.\n- A brief video demonstrating how to query the presented dataset using Mumak",
+      "criteria": "A technical reviewer / developer is able to inspect the db schema and understand the presented structures.\nA technical reviewer / developer is able to query the presented dataset using PostgreSQL and Mumak to explore on-chain data.",
+      "report": "Milestone Outputs \nA relational DB schema to store Cardano transaction structures leveraging Mumak capabilities\nThe relation schema for mumak Transaction database can be found here: https://github.com/txpipe/mumak/blob/main/init-db.sh\nA dataset up to the latest available epoch containing mainnet transactions leveraging Mumak capabilities\nThe dataset can be found by connecting to a readonly postgres instance with mumak installed. \nconnection string below:\nPGPASSWORD=V9OYt9ANMTQyIjowPmJZiQ== psql --port 5432 --host=mumak-m0.demeter.run --username dmtr_mumak1vrqw92qwc79dw094tav3yj4wm52ezvrv cardano-mainnet\nAn ingestion tool using Oura and Mithril to create and update transaction datasets.\nOura now supports Mithril as a datasource: https://github.com/txpipe/oura/pull/795\nA brief video demonstrating how to query the presented dataset using Mumak\nhttps://drive.google.com/file/d/1PH8ywakjwZafeFOj8NCzbfwomcdRU-hX/view?usp=sharing\nEvidence of milestone completion \n- An SQL schema creation script for the Cardano Tx structures\nhttps://github.com/txpipe/mumak/blob/main/init-db.sh\n- An SQL snapshot of mainnet data up until the delivery data epoch\nPGPASSWORD=V9OYt9ANMTQyIjowPmJZiQ== psql --port 5432 --host=mumak-m0.demeter.run --username dmtr_mumak1vrqw92qwc79dw094tav3yj4wm52ezvrv cardano-mainnet\n- Instructions on how to leverage Oura / Mithril to generate a new snapshot\nYou will need oura config for mithril source: \nhttps://github.com/txpipe/oura/blob/dbcb6186b0bf5deecca6adeedf3b24e853682eab/examples/mithril/daemon.toml\nOnce you have the config file setup, run oura normally like so oura daemon -config daemon.toml\n- A link to a demo video of how to query the presented dataset using Mumak\nhttps://drive.google.com/file/d/1PH8ywakjwZafeFOj8NCzbfwomcdRU-hX/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 12
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 35868,
+      "promise": "- A Mumak instance already provisioned and available through Demeter platform\n- Instructions and documentation on how to query the instance using Demeter",
+      "criteria": "A technical reviewer / developer is able to query data from the Mumak dataset using Demeter services without the need to provision any kind of server-side component",
+      "report": "- Link to documentation with instructions on how to connect to Demeter's Mumak instance\nhttps://docs.demeter.run/ports/mumak \n- Video showing an example of how to connect and query data from Demeter's Mumak instance\nhttps://youtu.be/3UPKhDUY5A4",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 25608,
+      "promise": "- The complete source-code for the Mumak PostgreSQL extension\n- A binary release version of the extension ready to download\n- Complete instructions on how to install the Mumak extension\n- SQL scripts with the schema and latest snapshot for the Mumak dataset\n- An ingestion tool that allows developers to maintain their own datasets\n- a report detailing the usage metrics through Demeter since the release of the feature\n- a video that presents the tool and describes the development process",
+      "criteria": "- A technical reviewer / developer is able to run it's own version of the Mumak extension and dataset by using the publicly available artifacts.\n- A technical reviewer / developer is able to create their own versions of the Mumak datasets using the provided ingestion tool.\n- A reviewer is able to audit the development process ensuring that all required tasks have been completed.",
+      "report": "Closeout report can be found here:\nhttps://docs.google.com/document/d/1dQTX-MLmg8rTadVH_li7wOaZb5lvd8uHZS7FO_GMOWQ/edit?tab=t.0 \n\nLink to publicly available source-code repository of the Mumak PostgreSQL extension:\nhttps://github.com/txpipe/mumak \n- Link to publicly available documentation with instructions on how to install and use the PostgreSQL extension:\nhttps://github.com/txpipe/mumak/blob/main/docs/INSTALL.md\n- SQL schema creation scripts for provisioning the Block & Tx datasets:\nhttps://github.com/txpipe/mumak/blob/main/init-db.sh\n- SQL snapshots for the Block & Tx datasets up to the delivery date of the report:\nThe dataset can be found by connecting to a readonly postgres instance with mumak installed. Connection string below:\nPGPASSWORD=V9OYt9ANMTQyIjowPmJZiQ== psql --port 5432 --host=mumak-m0.demeter.run --username dmtr_mumak1vrqw92qwc79dw094tav3yj4wm52ezvrv cardano-mainnet\n- Binary release & usage instruction for an ingestion tools to maintain Mumak datasets (blocks / txs):\nhttps://github.com/txpipe/mumak/blob/main/docs/BOOTSTRAP.md\n- A report summarizing key usage metrics collected from Demeter.run:\nhttps://drive.google.com/file/d/1lPbdSnWYOWLLdtaGuVx4lHj2W6RvvRwG/view?usp=sharing\nhttps://drive.google.com/file/d/18rxYR1m0wCVZDlaK1uW6HIpd34IZfWFH/view?usp=sharing\n\n- A closure video showcases the Mumak PostgreSQL extension and describes the development process. Provide insights into the extension's features, functionality, and underlying technologies:\nhttps://youtu.be/O4YJOQghu8c",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

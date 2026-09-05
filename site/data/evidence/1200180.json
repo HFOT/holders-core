@@ -1,0 +1,61 @@
+{
+  "title": "Orcfax validators: reaching L2 consensus",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 28913,
+      "promise": "Orcfax will produce a qualitative research report which evaluates current L2 protocols and tools available to Cardano projects With the hop of using this to inform proof-of-concept development.",
+      "criteria": "Orcfax will have published qualitative research that investigates existing L2 protocols and tools available to the Cardano ecosystem.\nOrcfax approaches this research with limited pre-knowledge and hopes that the initial literature review will guide the remainder of the research process. The successful completion of the research report will be evidenced by the thoughtful conveyance of the research question(s) and source material which may direct the development of an Orcfax proof-of-concept.\nThe research report should include sections which explore the following:\n・What functional requirements d",
+      "report": "What we Promised:\nOrcfax will produce a qualitative research report which evaluates current L2 protocols and tools available to Cardano projects With the hope of using this to inform proof-of-concept development. This research and its findings were to be published on our public Orcfax GitHub repository.\n\nWhat we delivered:\nOrcfax has conducted limited research which investigates a sample set of consensus protocols, and this can be found within our public GitHub repository. This research was executed with a limited initial understanding of the consensus landscape, but covers topics such as: what might be Orcfax requirements for staking? What consensus resources exist for Cardano developers? How do these resources map to Orcfax requirements?\n\nIt is our hope that this exercise will inform future development by Orcfax.\n\nAbstract\nThis paper provides a brief comparison of various consensus protocols which were\nassessed against an initial understanding of consensus requirements and\nidentified validator roles for the decentralized validator network, EchoNet. The\npurpose being for Orcfax to ascertain whether an existing consensus protocol, as\na drop in solution for Orcfax, adequately meets its needs for: high throughput,\nlow latency, fault tolerance, and scalability in a multi-validator environment.\nBased on the analysis of each consensus protocol and the initial Must Have\nrequirements identified by Orcfax, none of the reviewed consensus protocols\nfully meets the needs of EchoNet. However, the most interesting line for\nadditional inquiry is CometBFT which aligned with several of the core Orcfax\nrequirements for a consensus protocol.\n\nThe other consensus protocols examined in this paper were: Hydra, Hydrozoa,\nIagon, Lodestar, Midgard, NEM, Raft, Snowball, CometBFT, and VeChainThor. Each\nwas assessed for its efficiency, reliability, scalability, as well as its\ncapacity to support a decentralized, real-time data validation network.",
+      "kinds": [
+        "other"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 28913,
+      "promise": "Orcfax will produce the following:\n・economic model report\n・use case descriptions\n・network architecture diagrams",
+      "criteria": "The successful completion of all milestone outputs.\nThis milestone will conclude with the successful completion of all design outputs:\n・The economic model report will aim to concretize the understood costs of development and implementation, with the goal of suggesting a viable economic model to be utilized within an Orcfax proof-of-concept.\n・Use case descriptions will further flesh out the kinds of projects which may stand to benefit from implementing an L2 solution.\n・Network architecture diagrams will not only aim to illustrate how a proof-of-concept would conceptually fit within the Orcfax s",
+      "report": "What we Promised:\nOrcfax will publish insights into the economic impacts of integrating a consensus mechanism into its solution. Use case descriptions will also be provided, along with complementary architecture diagrams.\n\nWhat we delivered:\nOrcfax has published a document to its public GitHub repository which addresses all required aspects through detailed economic modeling, use case exploration, and network architecture descriptions.\nThe document aligns well with the stated milestone completion requirements for the following reasons:\n\n1. Use Case Descriptions:\n・Project Beneficiaries: The document outlines a range of projects that could benefit from the integration of consensus mechanisms extending beyond the Orcfax oracle use case. The modular design of this project, where the consensus PoC as an output of milestone 3 can be used independently of our staking PoC, supports broader utility and applicability; this content can be found in:\n・2. Use cases\n\n2. Network Architecture Diagrams:\n・Conceptual Fit within Orcfax Solution: A diagram outlining the components of a decentralized Orcfax node has been provided which illustrates how the various components are expected to operate alongside one another especially when required to come to consensus with other network peers; this content can be found in:\n・4.2 Contextualizing consensus components\n\n3. Economic considerations:\n・Concretization of Costs: The document explores the economic implications of participating in the network, including initial costs for validators (NFT and token acquisition), infrastructure costs, the relative cost of a bad actor attempting to corrupt the system, and the expected rewards for good actors (along with how Orcfax intends to pay them); the economic modeling also includes formula and models which have been added to give readers the ability to forecast various scenarios based on key variables. This content can be found in:\n・4. Orcfax validators: reaching L2 consensus\n・4.1 Probability of selecti",
+      "kinds": [
+        "other"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 24093,
+      "promise": "Orcfax will produce software code that demonstrates how:\n・a validator node operator can receive external source data\n・apply validation logic\n・compare results with other nodes in the L2 network\n・arrive at consensus on datum value",
+      "criteria": "Orcfax will consider the above outputs successfully developed after each has successful passed test cases:\n・A test validator must be able to receive data from an external source.\n・A test validator must be able to validate received data.\n・A test validator must be able to compare its validation results with other test validators\n・Test validators must be able to reach consensus",
+      "report": "The specific comments associated with the last rejection were not visible to our team as feedback is not released until all reviewers have submitted. Our team reviewed the submission and found several areas to add clarifying language; to avoid asking reviewers to infer how the repository satisfies the approved criteria, we have revised the submission and added a direct requirement-to-evidence mapping.\nThe public repo can be found here: https://github.com/orcfax/melon\nThe approved milestone requires proof-of-concept software demonstrating that a validator node operator can:\n・receive external source data;\n・apply validation logic;\n・compare its result with other nodes; and\n・arrive at consensus on a datum value.\n\nThe software walkthrough has been demonstrates this process as follows:\n・Each validator node polls the external FX source and stores the resulting data in its local cache.\n・A proposing node constructs a statement from its locally received source data.\n・Each receiving node independently validates the proposal against its own locally received data, including feed identity, timestamp, freshness, and permitted value deviation.\n・A node only issues a signed endorsement when those checks succeed.\n・The proof-of-concept records the statement as agreed when the configured two-of-three endorsement threshold is reached.\n\nthe video walks through the features required by this milestone, and successful demonstration is submitted to meet the requirements for successful test cases.\nWe have added a Milestone 3 evidence matrix, mapping each approved criterion to the corresponding implementation, test, and result.\nWe have also clarified the distinction between the completed proof-of-concept design and possible future production components. Items such as a production executor, blob-storage subsystem, and further sequencing mechanisms are not required to demonstrate the approved Milestone 3 workflow.\nIn response to the concern raised during the previous milestone, the repository now",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 9,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 14456,
+      "promise": "Upon successful completion of the project deliverables, which include:\n・A research report evaluating current L2 protocols and tools available to Cardano projects;\n・An economic model report;\n・Use case descriptions;\n・Network architecture diagrams;\n・And a proof-of-concept which demonstrates how a validator node can receive external data, apply validation logic, submit its results to teh network, and come to consensus.\n・Orcfax will then conclude the project by producing the final close-out report and closeout video.",
+      "criteria": "Upon successful production of the above deliverables and the subsequent completion of all previous milestones, the following will be accepted by the Project Catalyst team as evidence that Orcfax has met its project obligations: \n・A 2~3 page final closeout report (which will be made publicly available) summarizing the project\n・A 2~5 minute final closeout video (which will be made publicly available) explaining how project funds were utilized and the result of their use",
+      "report": "Project Completion announced on X\nhttps://x.com/orcfax/status/2095909723652739504?s=46\nProject Closeout Report\nName of project and Project URL on IdeaScale/Fund\nOrcfax validators: reaching L2 consensus\nFund: Project Catalyst Fund 12 — Cardano Use Cases: Concept\nProject URL: https://projectcatalyst.io/funds/12/cardano-use-cases-concept/orcfax-validators-reaching-l2-consensus\nYour Project Number\n1200180\nName of project manager\nChristian Koch\nDate project started\nSeptember 2024\nDate project completed\nAugust 2026\nList of challenge KPIs and how the project addressed them\nThe Fund 12 Cardano Use Cases: Concept category was intended to support early-stage ideas through design research, proof of concept, and basic prototyping. Projects were expected to generate and test ideas that create utility for Cardano, use the minimum level of functionality required to obtain meaningful research and design feedback, and establish a pathway toward more substantial future technical development and feasibility testing.\n1. Conduct design research addressing a potential Cardano use case — Achieved\nThe project produced A Comparative Analysis of Consensus Protocols used in Blockchain Networks. The research established preliminary EchoNet requirements including efficient participant communication, independent validity checking, consensus among network participants, low latency, throughput, and tolerance of malicious or incompetent validators. It evaluated a range of Cardano-native and broader distributed-consensus approaches including Hydra, Hydrozoa, Iagon, Lodestar, Midgard, NEM, Raft, Snowball/Avalanche, CometBFT, and VeChainThor.\n2. Generate and test a new idea that creates utility for Cardano — Achieved\nThe project progressed beyond research into an Orcfax-specific consensus experiment. The resulting Melon proof of concept demonstrates how independent validator nodes can receive externally sourced values, compare a proposal against their own data, endorse valid proposals, and recognize a",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 27,
+      "cut": true
+    }
+  ]
+}

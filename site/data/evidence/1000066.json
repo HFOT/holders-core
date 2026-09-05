@@ -1,0 +1,46 @@
+{
+  "title": "dRep Community Governance and Explorer",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 9600,
+      "promise": "Define the requirements for the extended functionality of chain indexer to extract and process voting history data from the Cardano blockchain. This will likely be working with Sanchonet.\nThis will lay the foundation to create a dashboard to display dRep data. So that users can navigate the modified dashboard to explore dReps, gaining an initial understanding of their presence within the Cardano ecosystem.\n﻿﻿Note: We are eager to work with sanchonet, but the delivery of this proposal will depend on how feasible it is to build a custom chain indexer that interacts with sanchonet which is still in development.\nIn the proposal we suggested the first milestone to be \"Fork dashboard of web3.crystal.vote to display dReps\", but since our product has been extended and enhanced. We will be extending the functionality of https://www.clarity.vote/, but before we do this we need to provide a technical specification of how it will be accomplished.",
+      "criteria": "Develop a technical specification document outlining the implementation details and integration process.\nThis custom chain indexer is to extract and process voting history data from dReps.\nWe will also develop data structures to efficiently store and query delegation metrics associated with dReps.﻿﻿﻿\nWe understand how to create backend to fetch and display dReps data.",
+      "report": "Technical Spec for Implementation of custom chain indexer for voting history and delegation metrics.\nAdded information about developing data structures to efficiently store and query delegation metrics associated with dReps.\nLink: https://docs.google.com/document/d/1L4gbIR57amKAiHZZ468gYd2lZChgKAGAIX_ld8Va-kg/edit?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "25",
+      "cost": 9600,
+      "promise": "Design the user interface (UI) and user experience (UX) of the dRep dashboard, ensuring intuitive navigation and visual clarity.\nDevelopment of backend infrastructure to correctly store and organize data for the front end.\nConduct user research and gather feedback to understand the desired user experience and requirements for the dRep dashboard.",
+      "criteria": "Creation of wireframes which will be developed into the user interface and user experience of the dRep explorer and dashboard.",
+      "report": "A. Output: Design the user interface (UI) and user experience (UX) of the dRep dashboard, ensuring intuitive navigation and visual clarity.\nAcceptance criteria: Creation of wireframes which will be developed into the user interface and user experience of the dRep explorer and dashboard.\nEvidence: This demo illustrates how easily dReps can create and run sentiment polls to engage their communities and how community members can explore dReps. The interface is designed for intuitive navigation, with clearly defined steps for creating polls and configuring governance parameters. Visual clarity and simplicity are core to the experience, ensuring dReps can make decisions confidently and efficiently.\nDemo Video dRep Community Polling: https://youtu.be/RStIu-xZuSc?si=gsjK-BXgf-HMXdAK\nDemo Video dRep Explorer: https://youtu.be/3AZkLQAL5vw\nDemo Access: https://www.clarity.vote/cardano-governance\nB. Output: Development of backend infrastructure to correctly store and organize data for the front end.\nAcceptance criteria: A document explaining how we store and organize data.\nEvidence: Document explaining data collection and storage: https://docsend.com/view/pk5krzke2yjwvdwm\nC. Output: Conduct user research and gather feedback to understand the desired user experience and requirements for the dRep dashboard.\nAcceptance criteria: No acceptance criteria were stated in the milestone.\nEvidence: No evidence of completion is stated in the milestone for this output. But we have spoken with dReps and community members, which evidence will be submitted as part of the final milestone. Based off milestone reviewer feedback you wanted to see this process was started, so here is links to two interviews with dReps that we have conducted.\nWith Raul from Fluid Tokens who is a dRep: https://youtu.be/64SI1AbkO0E\nWith Diego from Encoins who is a dRep: https://youtu.be/Ae31rUm45kU",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 13
+    },
+    {
+      "no": 3,
+      "month": "26",
+      "cost": 12800,
+      "promise": "・Final close-out report\n・Final closeout video\n・Implement the front-end components and features of the dRep dashboard based on the finalized design.\n・Integrate the dashboard with the custom chain indexer to fetch and display real-time voting history and delegation metrics.\n・Ensure responsiveness and compatibility across various devices and browsers.\n・Collaborate with dReps to onboard their profiles and relevant information onto the dashboard.",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Integrate the dashboard with the custom chain indexer to fetch and display real-time voting history and delegation metrics.\n・Work with dReps and community to conduct extensive user testing sessions to gather feedback on usability, functionality, and overall user satisfaction. To do this we will organize calls for any interested active dReps to educate about the dRep dashboard and its capabilities as well as gather feedback and requests from each participant. At least 5 active dReps participate, and we wil",
+      "report": "Hey guys, I tried to follow the rubric and make it as easy as possible in hopes of getting this approved soon! Please let me know if you have any questions, I will try to check back everyday.\nA. Output: Final close-out report\nAcceptance criteria: “Final closeout report is publicly available”\nEvidence: “Link to final close out report” https://docs.google.com/document/d/1G_-Fn8-X2CHtfQaxUWKGBD2N975KpfoIVA201wkf6oo/edit?usp=sharing \nB. Output: Final close-out video\nAcceptance criteria: “Final closeout video is publicly available”\nEvidence: “LINK to final close-out video”: https://youtu.be/ffdHkttG3Lw \nC. Output: Implement the front-end components and features of the dRep dashboard based on the finalized design.\nAcceptance criteria: There is no explicit acceptance criteria stated in this milestone for this output.\nEvidence: Link to live dRep explorer showcasing front-end components and features of the dashboard based on finalized design: https://www.clarity.vote/cardano-governance\nD. Output: Integrate the dashboard with the custom chain indexer to fetch and display real-time voting history and delegation metrics\nAcceptance criteria: “Integrate the dashboard with the custom chain indexer to fetch and display real-time voting history and delegation metrics.”\nEvidence: “A visual demonstration video of the dRep dashboard and its functionality. Meaning a live site that people can go to that is developed according to UI/UX designs and cardano community feedback. This demo video will show the dashboard, how to set up an organization and how to create/participate in governance actions for your dRep community.”\nVisual Demostration: https://youtu.be/yfv1YTGSNto \nLink to live dRep explorer showing use of custom chain indexer to display voting history and delegation metrics: https://www.clarity.vote/cardano-governance \nE. Output: Ensure responsiveness and compatibility across various devices and browsers.\nAcceptance criteria: There is no explicit acceptance criteria stated in this",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 26,
+      "cut": true
+    }
+  ]
+}

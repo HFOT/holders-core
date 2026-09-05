@@ -1,0 +1,75 @@
+{
+  "title": "Telchar: Plutus blacksmith by TxPipe",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 39250,
+      "promise": "・Publicly available source-code containing the project scaffold\n・A stub of the registry component that includes the relevant API interface\n・A stub of the CLI component that includes the relevant command interface\n・A stub of the library component that includes the relevant API interface",
+      "criteria": "・The interface for the registry component matches the feature requirements\n・The interface for the CLI component matches the feature requirements\n・The interface for the library component matches the feature requirements\n\nThe feature requirements are listed on the project's readme (permalink) and match the ones described in the ideascale proposal.",
+      "report": "We have achieved the goals set for MS1:\n・The source-code containing the project scaffold is publicly available in our Github repository.\n・A stub of the registry component that includes the relevant API interface is available as part of the source code.\n・A stub of the CLI component that includes the relevant command interface is available as part of the source code.\n・A stub of the library component that includes the relevant API interface is available as part of the source code.\n・A walkthrough of the code relevant for the milestone is available in YouTube.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 39250,
+      "promise": "・publicly available source-code of a working registry component\n・access to a cloud-hosted version of a working registry\n・publicly available docker image that can be used to run a registry\n・publicly available documentation showing install instructions",
+      "criteria": "・blueprint files can be published to the registry using the available API\n・blueprint files available in the registry can be searched using the API\n・blueprint metadata and associated on-chain data can be queried using the API",
+      "report": "Find below the corresponding links to the deliverables associated with Milestone 2 of the Telchar project.\n・Source-code available in our Github repository: https://github.com/txpipe/telchar\n・Docker image available our Github packages: https://github.com/orgs/txpipe/packages?repo_name=telchar\n・URL to cloud-hosted version of the registry: https://registry.telchar.sh/\n・Documentation published at custom website: https://telchar.sh/\n・Video showcasing the use of the registry using the available API: https://youtu.be/ApQMjIoSUqk",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 39250,
+      "promise": "・publicly available source-code of a codegen module module in Rust\n・a binary release of a CLI application that can be used for codgen.\n・a published library that can be used as a dependency in Rust applications\n・publicly available documentation of the module's interface\n・examples of code generated automatically from blueprint files",
+      "criteria": "・The CLI can be used to generate off-chain code for the supported frameworks\n・The generated code can be used to interact with validators (aka: build txs) successfully\n\nThe list of supported frameworks is available in our requirements list (permalink) and matches the one described in the proposal.",
+      "report": "Find below the corresponding links to the deliverables associated with Milestone 3 of the Telchar project.\n・Source-code available in our Github repository https://github.com/txpipe/telchar\n・Rust crate published at crates.io https://crates.io/crates/telchar-codegen\n・Documentation published at docs.rs https://docs.rs/telchar-codegen/0.1.1\n・Binary releases available in Github release section https://github.com/txpipe/telchar/releases\n・Codegen example outputs available as part of our Github repository https://github.com/txpipe/telchar/tree/main/codegen/examples/types\n・Video showcasing the use of the codegen features https://youtu.be/EI5Js7OZRJc",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 12
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 39250,
+      "promise": "・A CLI component that can interact with a blueprint registry\n・A registry component that responds to CLI interactions\n・Several examples of open-source blueprint files uploaded to the registry",
+      "criteria": "・The CLI can be used to publish local blueprint files\n・The CLI can be used to retrieve blueprint files by name",
+      "report": "Milestone Outputs\n\n・A CLI component that can interact with a blueprint registry\n・A registry component that responds to CLI interactions\n・Several examples of open-source blueprint files uploaded to the registry\n\nAcceptance criteria \n\n・The CLI can be used to publish local blueprint files\n・The CLI can be used to retrieve blueprint files by name\n\nEvidence of milestone completion\n\n・Source-code available in our Github repository\n・https://github.com/txpipe/telchar\n・Binary releases available in Github release section\n・https://github.com/txpipe/telchar/releases\n・URL to cloud-hosted version of the registry\n・https://registry.telchar.sh/\n・Links to blueprint files in cloud-hosted version of the blueprint registry\n・https://registry.telchar.sh/dapp/txpipe/asteria\n・https://registry.telchar.sh/dapp/sundae/contracts\n・https://registry.telchar.sh/dapp/jpg-store/marketplace\n・https://registry.telchar.sh/dapp/hydra/hydra-plutus\n・https://registry.telchar.sh/dapp/githoney/contract\n・Docker image available in our Github packages\n・https://github.com/orgs/txpipe/packages?repo_name=telchar\n・Documentation published at custom website\n・https://telchar.sh/\n・Video showcasing the use of the CLI to publish / retrieve files from the registry\n・https://youtu.be/yprg89kMyJY",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 25
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 39250,
+      "promise": "・publicly available source-code of the complete toolchain\n・a published library that can be used as a dependency in Rust applications\n・publicly available documentation of the module's interface\n・a video showcasing the final output of the project\n・a final report describing the project process and outcome",
+      "criteria": "・the final toolchain can be used to publish, locate and codegen blueprint files\n・the final video complies with Catalyst requirements\n・the final report complies with Catalyst requirements",
+      "report": "・Source-code available in our Github repository\n・https://github.com/txpipe/telchar\n・Link to cloud-hosted version of the registry\n・https://registry.telchar.sh\n・Link to the documentation website\n・https://telchar.sh\n・Rust crate published at crates.io\n・https://crates.io/crates/telchar-codegen\n・Documentation published at docs.rs\n・https://docs.rs/telchar-codegen/latest/telchar_codegen\n・Link to close out video uploaded to YouTube\n・https://youtu.be/1FlSDDB5ZI0\n・Link to close out report\n・https://drive.google.com/file/d/1_tQ_U3Z2SGzDJVhzBPWeYIGC4l_Ze9lc/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

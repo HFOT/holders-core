@@ -1,0 +1,56 @@
+{
+  "title": "Cardano Codec add support for Chang HF",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 27000,
+      "promise": "・Add support for header parser\n・Add support for block parser\n・Add support for metadata parser\n・Add support for witnesses parser",
+      "criteria": "・Output as defined implemented and verifiable via public GitHub PR with relevant commits.\n・GitHub PR Link provided for the repo - https://github.com/StricaHQ/cardano-codec",
+      "report": "Implemented below features,\n・Add support for header parser\n・Add support for block parser\n・Add support for metadata parser\n・Add support for witnesses parser\n\nGitHub PR - https://github.com/StricaHQ/cardano-codec/pull/1/files",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 27000,
+      "promise": "・Add support for transaction parser\n・Add support for certificates parser (dRep reg, deleg, DRep deReg, and other Conway era certificates)\n・add support for protocol param parser",
+      "criteria": "・Output as defined implemented and verifiable via public GitHub PR with relevant commits.\n・GitHub PR Link provided for the repo - https://github.com/StricaHQ/cardano-codec",
+      "report": "Implemented below features,\n・Add support for transaction parser\n・Add support for new governance certificates parser\n・Add types for protocol param parser\n\nGitHub PR - https://github.com/StricaHQ/cardano-codec/pull/2/files",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 22500,
+      "promise": "・Add support for the Voting Procedures parser\n・Add support for Proposal Procedures parser (gov actions)\n・add support for protocol param parser",
+      "criteria": "・Output as defined implemented and verifiable via public GitHub PR with relevant commits.\n・GitHub PR Link provided for the repo - https://github.com/StricaHQ/cardano-codec",
+      "report": "Added support for the gov related parsers,\n・support for the Voting Procedures parser\n・support for Proposal Procedures parser (gov actions)\n・support for the new protocol param parser\n\nGitHub PR - https://github.com/StricaHQ/cardano-codec/pull/3",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 13500,
+      "promise": "・Release on NPM\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Updated Documentation link provided\n・new version released on NPM (Link provided)\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "・All of the milestones are achieved and the new version of library is released on npm\n・released lib v2.0.1 on npm - https://www.npmjs.com/package/@stricahq/cardano-codec\n・documentation updated - https://docs.strica.io/lib/cardano-codec/index.html\n・close out video - https://youtu.be/Z5QjeZewjHU\n・close out report - https://drive.google.com/file/d/1R6X0MfyzaoW-Sghu3_Ox1tUrG4oPHd_D/view?usp=drive_link",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

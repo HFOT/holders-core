@@ -1,0 +1,33 @@
+{
+  "title": "CBIA - Add Developer Tool Compatibility Matrix to Cardano Developers Portal",
+  "ms": [
+    {
+      "no": 1,
+      "month": "15",
+      "cost": 14325,
+      "promise": "Project kick-off and interaction with stakeholders.\nData structures and Technical changes to Developer portal.",
+      "criteria": "This project is in contact with Cardano Foundation Dev Portal maintainers and some Dev Portal tooling authors (CBIA members included) in order to provide initial indication of the compatibility of their tool with others on the ecosystem.\nData structures and Technical changes to Developer portal (plus documentation) enable the portal to gather the relationships and compatibility between different tools. This will be done through attributes, such as Protocol version compatibility, that will be recorded as a ‘Trait’ of each component.",
+      "report": "The \"Outputs\", “Acceptance Criteria\" and \"Evidence of Milestone Completion\" for this Milestone are all structured having firstly a “Stakeholders” side, and secondly a “Technical” side.\nRegarding the Stakeholders side of this milestone, we confirm we are now in contact with the Cardano Foundation Dev Portal maintainers, having chatted with Tommy (CF Community Team) and met with Bora Oben (Developer Advocate), who is in charge of overseeing changes to this portal.\nWe have also engaged with some Dev Portal tooling authors via a GitHub issue on the portal’s repository and gathered initial indication of the compatibility of their tool with others from some CBIA members.\nFurther details and evidence can be found via the new Projects section of our website at https://cbia.io/#projects by clicking \"Project updates page\".\n\nRegarding the Technical side of this milestone, we have established a Data structure to enable the portal to gather the relationships and compatibility between different tools.\nTo prove this, we have built an initial version of the code that will display these relationships and compatibility within the portal.\nDetailing for both the Data structure and Technical changes to the Developer portal can be seen at https://github.com/CardanoBlockchainInfraAlliance/developer-portal#technical-updates",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "17",
+      "cost": 14325,
+      "promise": "Dependency Graph visualization research and implementation",
+      "criteria": "Our Fork of the Dev portal will render one Dependency Graph visualization which represents dependency/compatibility across Cardano tools recorded on the Dev Portal. Although it is just one main graph, it enabling to select each single item/tool to highlight and foresee downstream impacts on dependant tools.",
+      "report": "Output: Dependency Graph visualization research and implementation\nAcceptance criteria: Our Fork of the Dev portal will render one Dependency Graph visualization which represents dependency/compatibility across Cardano tools recorded on the Dev Portal. Although it is just one main graph, it enabling to select each single item/tool to highlight and foresee downstream impacts on dependant tools.\nEvidence: Share the Dependency Graph source code and documentation on our Fork of the Dev portal: https://github.com/CardanoBlockchainInfraAlliance/developer-portal\n・We have updated the evidence link above. For direct access to Milestone 2's evidence, you can use https://github.com/CardanoBlockchainInfraAlliance/developer-portal-proj-updates#milestone-2---ms2-viz \n・Besides source code and documentation, in it you will find a link to a live demo and screenshots\n・Also, I'm pasting below the source code and documentation part so that it's saved directly in this Proof of Achievement.\n\n----------------------------\n・Dependency Graph source code, was committed to the main repo in two commits:\n・First commit importing the visualzation tree, data and data-enriching script which we developed as a standalone\n・Second commit incorporating it onto the existing portal pages and style\n・The current visualization is the result of greatly extending the data by using the formats outlined above, in Milestone 1\n・Here are the Original and New file\n・Dependency Graph documentation\n・We've included documentation in the repository itself here",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 9
+    }
+  ]
+}

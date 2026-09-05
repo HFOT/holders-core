@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・Plutusコードを100以上含んだリポジトリ(例:1つのプログラミング言語から始まる提案)\n・Plutusコードのクリーンでキュレーションされたデータセットにポイントするコミット\n・MLモデルのトレーニングや微調整に使用する初期識別プロセス\n・使用するAPI構造を含むプロジェクト構造の設計",
+      "criteria": "・レポジトリ内のプルタスコードの数は、少なくとも100\n・データリポジトリの更新を示すリポジトリのアクティビティ\n・合意されたMLモデルおよびその背後にあるアイデアに関する報告\n・API構造を含むプロジェクト構造のワイヤフレーム設計",
+      "report": "・数百のプルタスコードを含むgithubリポジトリへのリンク:各フォルダーに、プルタスコードの多くにつながるサブフォルダが含まれている、プルーフ https://github.com/ubiodee/Plutus にリンク\n・最初のリポジトリから命名する明確な区別を持つ、キュレーションとクリーンなデータセットを持つ github リポジトリへのリンク: 証拠 https://github.com/ubiodee/Cleansed Plutus json ファイルには、モデルのトレーニングに使用するクリーンなコードとデータが含まれています\n・提案されたモデルを活用し、その背後にある研究と使用の背後にある推論: 証拠 https://docs.google.com/document/d/1EjwOMcVPbR5slVbmRJaHa5pM95BARGNAviD-B3qzkXc/edit?usp=sharing\n・APIを含むプロジェクト設計をキャプチャするイメージ: 証拠 https://drive.google.com/file/d/1ANc-3V6-CVIkAGl6S8SLZR3KZ81emP70/view?usp=sharing"
+    },
+    {
+      "no": 2,
+      "promise": "・初期モデルのトレーニング\n・モデル微調整\n・Plutus言語を具体的に構築・テストするCo-pilotモデル(提案書に記載の言語を1つから始め、Plutusから始める)\n・開発モデルはオープンソースであり、誰でもアクセスできる\n・commutyユーザの初期設定からフィードバックを得ると、このステージで3〜3〜5人のユーザーを最初に設定します",
+      "criteria": "・レポジトリにコミットしたトレーニングモデル\n・Plutusテストケースではモデルを合成的に対応\n・プロジェクトはオープンソースで、GitHubでリンクがアクセス可能\n・プロジェクトの初期コミュニティフィードバック",
+      "report": "プロジェクトのリポジトリにコミットした初期の訓練されたモデルの .py(または他の適切なフォーマット)\nhttps://github.com/ubiodee/Plutus Demo/blob/main/Fine Tuned Plutus Language.ipynb\nhttps://github.com/ubiodee/Plutus Demo/blob/main/Fine Tuned Plutus Language Llama3.ipynb\nプロジェクトの初期ユースケースと、プルタステストケースでの機能を示すビデオデモ\nhttps://youtu.be/LEFpYd5QqUU\ngithub は、すべてのプロジェクトリポジトリへリンクします。\nhttps://github.com/ubiodee/Plutus Demo\n少なくとも3-5コミュニティのメンバーのコメントそしてフィードバックを捕獲するpdfまたは他の適したフォーマットのフィードバックのレポート\nhttps://docs.google.com/spreadsheets/d/19HKpcv9jWfrPqmChb39RHY4s75H8sepi1FtZWH6OKPM/edit?usp=sharing\nN/B: 私は、スプレッドシートに電子メールの連絡先を入力しましたが、あなたの情報のために、触媒規則は、私はそれを赤字化しなければならない理由の機密と個人データの共有を許可していません、そして、我々は今、提出する前に、この条項に同意することを意味しています"
+    },
+    {
+      "no": 3,
+      "promise": "・M2のコミュニティフィードバックに基づいて、改善と調整が必要な問題を特定\n・モデルを改良し、モデルの文脈意識を取り入れる\n・生成されたコードの改善\n・モデルをデモ",
+      "criteria": "・プロジェクトリポジトリへの新規アップデート\n・アップデートは解体可能\n・コードが改善され、コンテキストをよりよく理解",
+      "report": "・モデルの動画デモ、改善と文脈、モデルの認識能力を示す: https://youtu.be/Ar1YjzPPsYQ\n・GitHubリポジトリは、モデルのコミット:https://github.com/ubiodee/Plutus Demo/tree/main データコミット: https://github.com/ubiodee/Cleansed Plutus\n・現在の更新とステータスを示すドキュメント: https://docs.google.com/document/d/1fBdWtZvVKud4WbbvBtSTDnotYgyyuMZMi3pECiuiWvY/edit?usp=sharing\n\n試験のためにそれを簡単にするために、私は以下を提供しました:\n・抽出およびリッピングモデル:https://drive.google.com/file/d/1FEP0DOr5s6pN6FHg0X0QrXX0jwWVFSFk/view?usp=sharing\n・モデルやテストをフィードするために必要なすべてのコードでcolabを作成しました。 https://colab.research.google.com/drive/1e6BA-qZEdt6Q8YY7wxr98svIdiekUfPC?usp=sharing\n\nあなたは、コードを使用して直接モデルをテストするか、サポートするために作成したcolabを使用してモデルを直接テストすることができます, あなたが必要とするcolabを使用すると、必要なのは、Colab上のフォルダを作成し、その後、自分のコード内のパスを削除し、独自の特定のパスを呼び出します, また、メモリ使用量はGPU 30gbとRAM 5gbです, 共同作業では、あなたはすでに異なる例で動作するコードを見ることができます\n\n私はまた、あなたが直接それを呼ぶことができるので、抱擁面で利用可能なモデルを作るために先に行ってきました\nhttps://huggingface.co/ubiodee/plutus llm"
+    },
+    {
+      "no": 4,
+      "promise": "・ユーザーからのフィードバックから学習し、コード生成を時間をかけて適応させるコプロット\n・生成されたコードのフィードバックをユーザーに提供し、改善を提案し、オープンにアクセス可能。\n・学習・適応モデルのオープンソースリリース\n・Apiリリース\n・動画デモは、フィードバック能力を実証し、学習目的に利用する方法",
+      "criteria": "・ユーザーは、フィードバックに基づいてコード生成の改善を観察し、オープンソースの共同改善プロセスに貢献します。\n・共同パイロットの進化するカルダノ開発慣行に適応する能力に関する肯定的なコミュニティの感情。\n・透明オープンソースのフィードバックループを継続的に改善します。\n・動画デモはクリアで可聴",
+      "report": "インターフェイスは、モデルをインターフェイスにリンクして作成されます。https://v0-cardano-gpt-clone.vercel.app/\nthumbs-up と down 機能は、ユーザーがパフォーマンス上のモデルへのフィードバックを与え、長い実行でコードのオーバータイムを適応できるようにするために統合されています: https://v0-cardano-gpt-clone.vercel.app/chat\nプロジェクトがアクセス可能な : https://huggingface.co/ubiodee/Cardano plutus (約 月 123 件以上の使用量を devs によって世界中で)\nGithub リポジトリからアクセス可能なすべての: https://github.com/ubiodee/Plutus Demo\nフィードバックループに特に重点を置いたプロジェクトのビデオデモ: https://drive.google.com/file/d/1IsqISqWH7cmVSTW4EJZVUmyV2Xltp5qU/view?usp=sharing"
+    },
+    {
+      "no": 5,
+      "promise": "・ユーザーフレンドリーなインターフェースを介し、一般的な開発環境に組み込まれたCo-pilot。\n・ChatGPT用のシンプルなインターフェイスとプラグインの統合のオープンソースリリース。\n・コピロット採用を推進するコミュニティ参加イベント、チュートリアル、ドキュメント\n・ビデオやデモ、レポートをクローズアウト",
+      "criteria": "・開発者によるワークフローへの統合の容易性に関する肯定的なフィードバック。\n・Co-pilotを使った開発者が増える数を示す使用メトリックの増加\n・コミュニティイベントやチュートリアルを積極的に参加し、ChatGPTの統合に関する肯定的なフィードバックを成功させる",
+      "report": "1. インターフェイスが暗示されるウェブサイトのリンク: https://www.gptcardano.com/\nオープンソースのハブフェイススペース: https://huggingface.co/spaces/ubiodee/Plutus Cardano\n2. チャットでプロジェクトの統合へのリンク: https://chatgpt.com/g/g-681abe4bda5081918c08edf5bd69c5c3-cardano-gpt\n3. コミュニティのフィードバックの報告書の文書:https://docs.google.com/spreadsheets/d/1710RYpipqmGGSFnNIJowg-M0t6ue0lO2eURPIRi4Acs/edit?usp=sharing\nプロジェクト ドキュメンテーション: https://drive.google.com/file/d/1k7THeFaaU9nkrdJqmf06jET6hCE28819/view?usp=sharing\n4. ドキュメントとビデオのクローズアウト: https://docs.google.com/document/d/1LVV2MSS-Nm7Ow5WyJKliy7Nja3RNdM-N303hyV5zB/edit?usp=sharing ビデオ: https://youtu.be/CXzwSKqwKqI\nコミュニティエンゲージメントイベントとチュートリアル: https://drive.google.com/file/d/19T Jr1mE3lkdHcjcaIsYDVg7II-SEWUx/view?usp=sharing\nモデル/データセットのダウンロードのhuggingfaceスクリーンショット: https://drive.google.com/file/d/1IepTlLh3KyM6lIWatSQZqTrmDpwEaMQI/view?usp=sharing"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・本アプリの技術的仕様、アーキテクチャ、機能性に関する詳細なドキュメント\n・すべてのメニューオプションとユーザーインタラクションの文書化\n・アニメーションQRコードで送信されるフレーム構造の仕様.",
+      "criteria": "・デザイン文書は、インタラクション、ユーザーインターフェイス、通信プロトコルなど、アプリの技術的仕様、機能を明確にしなければなりません。\n・すべての設計決定は、SedSignerハードウェアのセキュリティ、効率性、互換性を優先する必要があります.",
+      "report": "出力:\n・本アプリの技術的仕様、アーキテクチャ、機能性に関する詳細なドキュメント\n・すべてのメニューオプションとユーザーインタラクションの文書化\n・アニメーションQRコードで送信されるフレーム構造の仕様\n\n受諾の条件:\n・プロジェクトGithubリポジトリのPDF形式の最終設計文書は、インタラクション、ユーザーインターフェイス、通信プロトコル(QRフレーム構造)を含む技術的仕様、アーキテクチャ、機能をカバーしています。\n\n証拠:\n・ドキュメントへのリンク:https://github.com/Biglup/cardano-seedsigner/blob/main/docs/cardano seedsigner air gapped hardware wallet specification v1.0.pdf\n・応募作品紹介:https://github.com/Biglup/cardano-seedsigner/commit/a62243c5d340305b5079915729fe2d23bc967"
+    },
+    {
+      "no": 2,
+      "promise": "・SeedSigner画面にグラフィカルインターフェイスを表示し、ボタンで制御できる作業プロトタイプ\n・すべてのメニュー項目の増幅、すべての画面のモックバージョンで、意図したユーザーフローを図っています.",
+      "criteria": "・アプリケーションは、SeedSigner ハードウェア上で実行し、完全にナビゲート可能なグラフィカルインターフェイスを提供する必要があります。\n・全てのメニュー項目が提示されなければならず、各画面は、ビジネスロジックがまだ実装されていない場合でも、意図した機能を示す必要があります.",
+      "report": "ここでは、このマイルストーンのための私の成果物であり、すべてのUIコンポーネントが開発されています。このマイルストーンには、次の証拠が必要です。\n・SeedSignerハードウェアに搭載された機能的な試作 このプロトタイプアプリケーションは、録画され、ビデオへのリンクはマイルストーンモジュールで共有されます。\n・グラフィカルインターフェイスのスクリーンショット/ビデオ、メニューフロー全体を表示します。 すべてのスクリーンショットとビデオへのリンクは、マイルストーンモジュールで共有されます。\n・GitHubで公開されたソースコードで、グラフィカルインターフェイスとメニューナビゲーションの実装を示します。\n\n・動画:https://drive.google.com/file/d/1JWS0flJBwbFouBtUiEfsvWYzbKX3YmnM/view?usp=sharing\n・スクリーンショット: https://drive.google.com/file/d/1aqPsHisA2jxU1RAiZnQOmeVA3mkeV-CS/view?usp=sharing\n・ソースコード https://github.com/Biglup/cardano-seedsigner (Merge commit https://github.com/Biglup/cardano-seedsigner/commit/e43274f44e97d05c5db44702659286db1a278c77)"
+    },
+    {
+      "no": 3,
+      "promise": "・SeedSignerのCardanoアプリケーションで、新規シード生成機能のインポートと新規シード生成\n・シードプラーゼ入力とQRコードスキャンによるシードインポートの拡大\n・種子とQRコードの両方を出力して、新しい種を生成するための機能性.",
+      "criteria": "・ユーザーは、シードフレーズを手動で入力するか、QRコードをスキャンすることによって、既存のシードをインポートすることができます。\n・新規シードを生成し、シードフレーズとして表示し、QRコードとして変換する(例:SeedSigner Bitcoinアプリを参照).",
+      "report": "このマイルストーンの成果はここにあります。 種子のインポートと新しい種子生成が実装され、シードシグナルハードウェアでテストされています。 このマイルストーンには、次の証拠が必要です。\nSeedSignerハードウェアにデプロイされたシードインポートとエクスポート。 この機能が記録され、動画へのリンクが共有されています。\n・動画1、シードフレーズとシードQRエクスポートによるインポート:https://drive.google.com/file/d/1oMix 7LmLmavVT67hANx3dvtV4zD2UKP/view?usp=sharing\n・QRスキャンによる動画2、インポート:https://drive.google.com/file/d/11IT5AX-sbMVcnVGNId4a-IzOKBr98gSQ/view?usp=sharing\n・ビデオ3、新しいシード生成:https://drive.google.com/file/d/1S5vC2P92E9sy fpLXydCoWF0BDRAOtTN/view?usp=sharing\n・種子生成の第一方法は、カメラで撮った画像からエントロピーを読み、種子を生成するために使用します。\n・ダイスロールを使用してシードを生成し、ユーザーは6つのサイドダイスをロールし、各スローの結果を入力する必要があります。\n\nソースコード: https://github.com/Biglup/cardano-seedsigner/commit/982ce3f8df335cb3cda38b910c98734f9911ce13\n(マージコミット 982ce3f8df335cb3cda38b910c98734f9911ce13)"
+    },
+    {
+      "no": 4,
+      "promise": "・QRコードの読み出しや機能の生成、SeedSignerがデータを受信し、QRをアニメーション化してデータを送信できるようにする。\n・データ伝送のための最初のユースケースとして、rootパブリックキーをエクスポートする実装.",
+      "criteria": "・このアプリケーションは、データを受信し、データを送信するためのアニメーションQRコードを生成するために、アニメーションQRコードを読み込むことができる必要があります。\n・シードシグナルは、アニメーション化されたQRコードプロトコルを使用して、rootパブリックキーをエクスポートするのを正常に実証しなければなりません.",
+      "report": "このマイルストーンの成果はここにあります。 QRコードの読み込みと生成、および公開鍵のエクスポートを拡張し、シードシグナルハードウェアで実装およびテストされています。 このマイルストーンには、次の証拠が必要です。\n・動画、アニメーションQR読み取り/生成、および拡張公開鍵エクスポート(このビデオでは、シードシグナルハードウェアのQRコード読み込みと生成のアニメーション機能実証と、アニメーションQRコードを使用してのルート公開鍵のエクスポートの両方を示しています): https://drive.google.com/file/d/1ZpPC96Qu9supfCnnIegJkzVgjcQQABB2/view\n・ソースコード https://github.com/Biglup/cardano-seedsigner/commit/edb66f86108261e2deeba6e756877c2c0318c4ae\n\n(コミット [edb66f86108261e2deeba6e756877c2c0318c4ae]))\nビデオでは、サンプルアプリケーションは、公開鍵を要求するアニメーションQRを表示します。 SeedSigner は、アニメーションリクエストを読み取り、ユーザーはエクスポートのオンデバイスを承認し、デバイスは拡張されたパブリックキーをアニメーション QR として送信し、アプリケーションはキーとその派生したアドレスを表示するために読み、使用します."
+    },
+    {
+      "no": 5,
+      "promise": "・QRコードをアニメーションで署名するトランザクションを受信するための機能\n・署名前の確認のため、利用者への取引詳細の表示\n・トランザクションの署名や、アニメーションしたQRコードを使用して、他のデバイスに証人データを送信することの拡大.",
+      "criteria": "・QRコードをアニメーション化して取引データを受け取ることができる。\n・サイン前の審査・確認のため、利用者に送信内容が表示されます。\n・署名されたトランザクション(Witness data)は、アニメーションしたQRコードを使用して、他のデバイスに送信する必要があります.",
+      "report": "マイルストーンは、SeedSignerハードウェアのフルエアギャップトランザクション署名ループを配信します。トランザクションは、アニメーション化されたQRコードとして受信され、その詳細はレビューと確認のために表示されます。トランザクションはエアギャップデバイスに署名され、その結果の証人データは、アニメーションされたQRコードとして、コンパニオンデバイスに送信されます。\n・これは、FeseSignerハードウェア上のQRコードをアニメーション化して、トランザクションの受信、レビュー、署名、および送信を最優先するビデオです。 私はまた、署名されているトランザクションのCBORを添付しています。その結果、証人は.txtファイルで共有されます。\n・動画の決定:https://drive.google.com/file/d/1IM3UDtREIyY-moe5fnid-JVJriKxMZe/view?usp=sharing\n・お申し込みのCBOR:https://drive.google.com/file/d/1kKv q71oLDVh12i3p5TXlOypNXki6JqY/view?usp=sharing\n・目撃者との反応のCBOR: https://drive.google.com/file/d/1oqAjalLK18HeJWtjamSQ0nKZdLDcrIc5/view?usp=sharing\n・署名取引のCBOR:https://drive.google.com/file/d/1r5wKwC1pBqcCuOJGd9Y65-kNYK2H4wH/view?usp=sharing\n・Cardano Scan とビデオのデマレーションで署名されたトランザクションへのリンク: https://preprod.cardanoscan.io/transaction/0f2d5422b3d8143f09e4029dc48ce52c0405cf5fab34cf134f5278a264ae613c\n・GitHubのアップデートのソースコード、トランザクション署名とQRコード送信プロトコルの実装を文書化: https://github.com/Biglup/cardano-seedsigner/commit/771ea2585a2f00e7eb61c4e3d7566e16a1092d93\n・コミットハッシュ: 771ea2585a2f00e7eb61c4e3d7566e16a1092d93"
+    },
+    {
+      "no": 6,
+      "promise": "・既知のバグや問題の解決\n・SeedSigner Cardanoアプリのセットアップ、インテグレーション、運用に関する完全なユーザーと開発者のドキュメント。\n・Concept(PoC)のProofは、SeedSignerの統合をフォーク経由でオープンソースブラウザウォレットで実証する。\n・ブラウザウォレットベンダーとのコミュニケーションを開始し、SeedSignerの公式統合を探求します。\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・既知のバグは解決しなければならず、アプリケーションは安定しなければなりません。\n・文書化は包括的かつ容易にアクセス可能で、開発者や利用者の明確な指示を提供しなければなりません。\n・オープンソースブラウザウォレットをPoCとして統合した成功事例\n・ブラウザウォレットベンダーとの初期通信を確立し、公式のSeedSignerインテグレーションを推進\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "既知のバグや問題の解決\n・https://drive.google.com/file/d/1UwESMlnXprDQKZz9MsKdejzKgePzgg/view?usp=sharing\n\nSeedSigner Cardanoアプリのセットアップ、統合、および運用に関する完全なユーザーおよび開発者の文書。\n・ドキュメントインデックス: https://github.com/Biglup/cardano-seedsigner/tree/main/docs\n・設定ガイド:https://github.com/Biglup/cardano-seedsigner/blob/main/docs/setup guide.md\n・運用ガイド:https://github.com/Biglup/cardano-seedsigner/blob/main/docs/operation guide.md\n・統合ガイド(ウォレット/dApp開発者): https://github.com/Biglup/cardano-seedsigner/blob/main/docs/integration guide.md\n・プロトコル仕様 v1.1 (PDF): https://github.com/Biglup/cardano-seedsigner/blob/main/docs/cardano seedsigner air gapped hardware wallet specification v1.1.pdf\n・QR フォーマット参照: https://github.com/Biglup/cardano-seedsigner/blob/main/docs/qr formats.md\n・リリース(署名付きバイナリ): https://github.com/Biglup/cardano-seedsigner/releases\n\n概念の証拠(PoC)は、フォークを介してオープンソースのブラウザウォレットでSeedSignerの統合を実証します。\n・チュートリアル/デモビデオ(エンドフロー) https://www.youtube.com/watch?v=D7SUn30VyX4\n・レース統合発表: https://www.lace.io/blog/your-keys-your-way-lace-now-supports-seedsigner\n\nSeedSignerの公式統合を探求するために、ブラウザウォレットベンダーとのコミュニケーションを開始。\n・VESPR https://drive.google.com/file/d/1jLnkKhwF5Zfls7Em5cuyoZVayWGCIBaZ/view?usp=sharing\n・NUFI https://drive.google.com/file/d/13W OinzE57gv7XsLhgM2DeXRQEq3FNmK/view?usp=sharing\n・ゲームチェンジャー https://drive.google.com/file/d/1bbAzt-3OsA7KitY03KRInBp7lCeWC2r3/view?usp=sharing\n・Eternl https://drive.google.com/file/d/1UiFXyhNq6DgMmSXP7UmWBe96K8ioSFGi/view?usp=sharing\n\n最終クローズアウトレポート\n・https://drive.google.com/file/d/1VVRNMsA1red 0IFWaZap9x4voPckdeng/view?usp=sharing\n\n最終クローズアウトビデオ\n・https://www.youtube.com/watch?v=nSUw9pnIE2Y"
+    }
+  ]
+}

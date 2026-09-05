@@ -1,0 +1,31 @@
+{
+  "title": "SAIB: Buriza.Browser - A Dedicated Built-in Browser for the Buriza Wallet",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 27000,
+      "promise": "Design the user interface and experience for Buriza.Browser, tailored specifically for a browser extension workflow. \nThe design will focus on seamless integration of wallet functionalities into the browser, providing intuitive access to Cardano dApps, and transaction management. \nThe design will also accommodate users configuring their own backend servers and interacting with decentralized applications directly. \n1. Wireframes and mockups for extension screens will be provided for the following features: \n・Sending assets: Form for entering recipient address, asset type, and amount \n・Receiving assets: Any received assets will reflect and display in the wallet balance and asset list once the transaction is confirmed on the blockchain \n・Viewing balance and assets: Shows an overview of the wallet's current balance, list of assets held, and their respective values \n・Transaction history: List of past transactions, filtered or sorted by date, asset type, or transaction status for the specific wallet address \n・Full node setup: Step-by-step process for configuring a backend server or full node \n・dApp access: Embedded interface for connecting with other Cardano decentralized applications",
+      "criteria": "1. Reviewer must be able to check the Figma link of the design file and verify that the design contains the wireframes and mockups for screens: \n・Sending assets \n・Receiving assets \n・Viewing balance and assets \n・Transaction history \n・Full node setup \n・dApp access \n・ A reviewer can see that the design does indeed focus on: \n・Browser extension workflow\n・Intuitive access to Cardano dApps\n・Transaction Management\n\n2. Reviewer must be able to check that the linked report covers: \n・Design decisions \n・Usability considerations \n・Browser extension-specific accessibility features.",
+      "report": "The following are the design files, prototype links, and reports for the Buriza.Browser, detailing the browser design process, including both dark and light mode interfaces. \n1.Design File Link \nNote: Kindly sign in your Figma account to view the whole Figma file. \n・Buriza Figma \n・Buriza Wireframes Figma \n・Buriza UI Design Figma \n\n \n2.Prototype Links \nNote: In the Figma prototype, you can navigate through the screens using the left (<) and right (>) arrows located at the bottom part of the screen. \n・Dark Mode \n・Splash Screens Dark Mode \n・Extension \n・Full Screen \n・Onboarding Screens Dark Mode \n・Extension \n・Full Screen \n・Home Screens Dark Mode \n・Extension \n・Full Screen \n・Receive Assets Screens Dark Mode \n・Extension \n・Full Screen \n・Send Assets Screens Dark Mode \n・Extension \n・Full Screen \n・Accounts Screens Dark Mode \n・Extension \n・Full Screen \n・Transaction History Screens Dark Mode \n・Extension \n・Full Screen \n・Settings Dark Mode \n・Extension \n・Full Screen \n・Full Node Dark Mode \n・Extension \n・Full Screen \n・dApp Access Dark Mode \n・Extension \n・Full Screen \n・Light Mode \n・Splash Screens Light Mode \n・Extension \n・Full Screen \n・Onboarding Screens Light Mode \n・Extensions \n・Full Screen \n・Home Screens Light Mode \n・Extension \n・Full Screen \n・Receive Assets Screens Light Mode \n・Extension \n・Full Screen \n・Send Assets Screens Light Mode \n・Extension \n・Full Screen \n・Accounts Screens Light Mode \n・Extension \n・Full Screen \n・Transaction History Light Mode \n・Extension \n・Full Screen \n・Settings Light Mode \n・Extension \n・Full Screen \n・Full Node Setup Light Mode \n・Extension \n・Full Screen \n・dApp Access Light Mode \n・Extension \n・Full Screen \n\n \n3.Design Report \n・Complete Buriza Design Report \n・Buriza Branding \n・Buriza Design Report Section 2.2 - Browser",
+      "kinds": [
+        "other"
+      ],
+      "links": 44,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "9",
+      "cost": 27000,
+      "promise": "Develop the Buriza.Browser extension as per the UI/UX design. This includes building the browser extension’s front-end for key wallet interactions. \nThe implementation will focus on the unique needs of a browser extension, ensuring it functions securely and efficiently within the browser environment while allowing users to configure backend settings and interact with decentralized applications seamlessly. \n1. Source code for front-end components of the browser extension. \n・Integration of wallet features, such as: \n・Sending assets \n・Receiving assets \n・Viewing balance and assets \n・Transaction history \n・Full node setup \n・dApp access \n\n2. Report outlining the progress of the implementation and challenges encountered during the development of the browser extension.",
+      "criteria": "1. A reviewer must be able to verify that the source code for the design implementation is available and has integrated the wallet features. \n・A reviewer must be able to run the source code and interact with the design hands on. \n\n2. A reviewer must be able to view the report that outlines the design implementation details.",
+      "report": "Hello Milestone Reviewer,\nGood Day! I hope you are doing well.\nWe wished to add this note to inform you that we have compiled the Buriza.Browsrt Front-End Report into a collective one including the other proposals in the Buriza wallet suite. This is because we have implemented the project's infrastructure such that it support cross-platform development from a single source. The explanations in the document cover the whole suite, with sections dedicated to Buriza.Browser. We are open to discussing any concerns or questions in the Discussion chat provided by Project Catalyst as well.\nThank you very much! We wish you a wonderful day.\nKindly find below the source code link and front-end implementation report for Buriza.Browser:\n1. Source code:\n・GitHub Repository\n・Instruction on running the source code\n\n2. Report:\n・ Buriza.Browser Front-End Implementation Report (DOCX)\n・ Buriza Front-End Implementation Report (PDF)\n・ Link to Screenshots, Videos, and Documentation \n・Browser Screenshots\n・Browser Video",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 8
+    }
+  ]
+}

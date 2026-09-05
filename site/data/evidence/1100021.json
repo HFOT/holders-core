@@ -1,0 +1,65 @@
+{
+  "title": "AI-Driven Interactive Platform for Cardano Smart Contracts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 29100,
+      "promise": "・Market Research: summarize findings from market research, including user needs, preferences, and existing solutions. It will identify gaps in the market and opportunities for the new platform. \n・Technical Design Document: This output will detail the chosen technical architecture for the platform. It will specify the technologies, frameworks, and tools selected for the development of the platform, including front-end, back-end and any third-party services or APIs. \n・Development Roadmap: A detailed project roadmap will be developed, outlining the phases of the projects and what technical deliverables we want to achieve",
+      "criteria": "1. Market Research:\n・The report comprehensively covers user needs, preferences, and existing solutions in the target market.\n・It identifies and clearly outlines gaps in the market and potential opportunities for the new platform.\n・Recommendations are provided based on the research findings.\n\n2. Technical Design Document:\n・Document specifies and justifies the choice of technologies, frameworks, and tools for the platform's development.\n・Architectural diagrams and explanations clearly outline the system's structure, including front-end, back-end, and integrations with third-party services or API",
+      "report": "We thank the Milestone reviewers for their valuable feedback!\nBased on the feedback, we have updated the report and added additional sections in Market Research and Technical Design.\nThe updated version of the report is available here:\nhttps://drive.google.com/file/d/1IGdencQE75aKc011PVDK6KyhGg2ZeXBb/view?usp=sharing\nOur updated report covers:\n・The relevant background of the project.\n・Market research:\n・Identifying current solutions in the market.\n・Highlighting the the gaps in the market w.r.t. the Cardano ecosystem.\n・Summarizing user needs, based on the smart contracts languages for Cardano and the identified market gaps.\n・Summarizing our findings & recommendations to motivate our AI-Driven Interactive Platform for Cardano Smart Contracts.\n・Our technical design for:\n・Fine-tuning our AI model.\n・Interactive UI.\n・Backend systems.\n・Our preliminary technology stack for:\n・Programming Languages.\n・UI framework.\n・Backend.\n・Hosting.\n・Justifications for our choices.\n・Our Roadmap, in accordance with the Milestone module\n\nOur announcement for sharing the report with the community is still available here:\nhttps://twitter.com/unboundedmarket/status/1790400875858448424",
+      "kinds": [
+        "doc",
+        "social"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 29100,
+      "promise": "This milestone focuses on the creation and initial development of two major components: the core AI model and the platform's user interface (UI). Specifically, we will produce:\n・A trained AI model capable of interpreting and explaining Cardano smart contracts.\n・The initial version of the interactive user interface for the platform, incorporating basic features for query handling and visual representations of smart contracts.",
+      "criteria": "・A working prototype of the AI model that accurately interprets and explains Cardano smart contracts, focusing on smart contracts written in Opshin.\n・An initial version of the platform's UI that supports basic interaction capabilities, allowing users to query and visually interact with the information provided by the AI model.\n・An open-source GitHub repository containing all of the code, including documentation and instructions on how to use the code",
+      "report": "Fifth Milestone submission:\nThank you for the clarifications!\nWe initially reached out to the Catalyst team for feedback on the current situation but continued developing our interface in the meantime. While we have not yet received a response from the Catalyst team, we have now finished integrating an additional visualization feature: interactive execution flow diagrams.\nTo achieve this, we use a model to analyze the contract's code and generate its execution flow. The result is then rendered as an interactive diagram, enabling users to visually explore and understand how the code executes.\nWe hope this enhancement meets all requirements, as execution flow diagrams provide a clear visual representation of contract mechanisms and improve code comprehension.\nThe updated code is available here: https://github.com/unboundedmarket/ai-sc-explainer-interface\nThe following video shows an example of the code visualizations, including the execution flow diagram and the syntax trees:\nhttps://drive.google.com/file/d/1D-YOy-CSP_ww93-QntigHC1O8sCXjr0v/view?usp=sharing\nFourth Milestone submission:\nThank you for the quick feedback! While we understand your perspective, we would like to explain our choice for the visualization:\nWe chose to visualize the syntax trees because generating diagrams or flowcharts using our fine-tuned language model has proven suboptimal. We communicated this when submitting the PoA for the second time. At this point, we also suggested extracting the visualization directly from the code, instead. We then implemented this approach based on the feedback requiring visualizations of the code.\nWe truly value the feedback and have iterated multiple times to refine and improve the interface. This has been a significant effort, as the milestone involves numerous components. We believe we have provided all the necessary evidence for this specific milestone:\nModel:\n・Video showing the capability to explain smart contracts: https://drive.google.com/file/d/1QIzqS9q6Uf",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 22,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "25",
+      "cost": 19400,
+      "promise": "Note: The timeline is adjusted according to the recent change request we submitted.\nThis milestone is centered on launching a functional beta version of the platform and engaging with users for feedback. The outputs for this phase include:\n・The integration of the AI model with the platform, ensuring seamless functionality and user experience.\n・The beta version of the platform, available for users for testing purposes.\n・Collecting user feedback through surveys and usage data analysis. This feedback will be important for identifying areas for improvement and improving the platform's functionality and user experience.",
+      "criteria": "・The successful launch of the beta version of the platform.\n・The collection of detailed user feedback that will guide the next steps in the platform's development. This feedback should cover various aspects of the platform, including usability, AI model accuracy, and overall user satisfaction.\n・An open-source GitHub repository containing all of the code, including documentation and instructions on how to use the code",
+      "report": "A. Output: The beta version of the platform, available for users for testing purposes..\nAcceptance criteria: The successful launch of the beta version of the platform.\nEvidence: A link to the beta platform (included as App in unbounded market) https://beta.unboundedmarket.ai/playground/appPage?appId=4372c607-dd20-4a73-b39c-dc75753b079c\n\nB. Output Collecting user feedback through surveys and usage data analysis. This feedback will be important for identifying areas for improvement and improving the platform's functionality and user experience.\nAcceptance criteria: The collection of detailed user feedback that will guide the next steps in the platform's development. This feedback should cover various aspects of the platform, including usability, AI model accuracy, and overall user satisfaction.\nEvidence:Summaries of user feedback, highlighting key insights, suggestions for improvement, and any identified issues with the platform. Analytics and metrics from the beta testing period, demonstrating user engagement and interaction with the platform.\nPlease find our user feedback report here: https://drive.google.com/file/d/1ehap0MpLAXy744qa7SIaZyRy5newDvM_/view?usp=sharing\n\nC. Output: The integration of the AI model with the platform, ensuring seamless functionality and user experience.\nAcceptance criteria: An open-source GitHub repository containing all of the code, including documentation and instructions on how to use the code\nEvidence: You can find the open-source repository for both the backend, frontend here: https://github.com/unboundedmarket/ai-explainer",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "26",
+      "cost": 19400,
+      "promise": "Note: The timeline is adjusted according to the recent change request we submitted.\n・An improved version of the platform, integrating improvements and new features based on feedback received during the beta testing phase.\n・Continuous improvements and fixes based on additional feedback.\n・Community outreach and marketing.",
+      "criteria": "・The platform is fully functional, includes all planned features and improvements identified during beta feedback, and is free from critical bugs or issues.\n・Social media posts via X, creating awareness and explaining how the platform can be used.\n・Continuous monitoring of the platform's uptime, number of users, and number of analyzed smart contracts.",
+      "report": "A. Output: An improved version of the platform, integrating improvements and new features based on beta-testing feedback.\nAcceptance criteria: The platform is fully functional, includes all planned features and the improvements identified during beta feedback, and is free from critical bugs.\nEvidence: \n・Live Explainer application: https://beta.unboundedmarket.ai/playground/appPage?appId=4372c607-dd20-4a73-b39c-dc75753b079c\n・Open Source code repository: https://github.com/unboundedmarket/ai-explainer\n\nB. Output: Continuous platform improvements and issue resolution based on additional user feedback.\nAcceptance criteria: All issues identified through ongoing feedback were addressed and resolved. The platform remains free from critical bugs and issues.\nEvidence: \n・Anonymized user-feedback report (11 feedback items and corresponding resolutions): https://drive.google.com/file/d/1ehap0MpLAXy744qa7SIaZyRy5newDvM_/view?usp=sharing and https://drive.google.com/file/d/18rWxFutD7mfKFv4xHxU2Gw4fb8yPCF8z/view?usp=sharing\n・Bug fixes and improvements in https://github.com/unboundedmarket/ai-explainer\n\nC. Output: Community outreach.\nAcceptance criteria: We created social media media content to announce and promote the platform. We created demonstration materials for new users.\nEvidence:\n・Post: https://x.com/unboundedmarket/status/2063972231730913397\n・Post: https://x.com/unboundedmarket/status/2063972233949647063\n・Video: https://www.youtube.com/watch?v=foLCWTMxko4\n・The README contains detailed usage instructions for the open-source repository: https://github.com/unboundedmarket/ai-explainer\n\nD. Output: Continuous monitoring of platform usage and operational performance.\nAcceptance criteria: Ongoing tracking of platform uptime, monitoring of user adoption and engagement, and monitoring of the number of analyzed smart contracts.\nEvidence: Live platform metrics displayed on the explainer page (uptime, users, analyzed contracts): https://beta.unboundedmarket.ai/playground/appPage?appId",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 24,
+      "cut": true
+    }
+  ]
+}

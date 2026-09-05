@@ -1,0 +1,71 @@
+{
+  "title": "AdaStat Cardano Explorer - Open Source Improved Reboot towards a first-class community blockchain explorer",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 36000,
+      "promise": "1. AdaStat new website Alpha version\n・Latest versions for all front end frameworks used on the site\n・New mobile/desktop UI \n・Improved homepage (dashboard) with animation \n・Navigation elements (menu)\n・Settings\n・Language selector\n・Currency selector\n・Light/Dark mode selector",
+      "criteria": "1. Alpha version must be publicly available\n2. Homepage must display animation for latest Cardano blocks\n3. All navigation elements must lead to the right section of the site (even if this section is not available yet, in this case the stub page / placeholder should be shown)\n4. Changing the language, currency, and all other settings must lead to changes on the site without page refresh\n5. The website should work on mobile (responsive design) as well as on desktop devices and should not have major visual/behavior bugs",
+      "report": "AdaStat Mainnet website Alpha version is available https://new.adastat.net/\nPlease use catalyst for both name and password to login",
+      "kinds": [
+        "chain"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 36000,
+      "promise": "1. AdaStat new website Beta1 version\n・Improved new UI for Block list/item pages\n・Improved new UI for Transaction list/item pages\n・Improved new UI for Account list/item pages\n・Improved new UI for Address list/item pages",
+      "criteria": "1. Beta1 version must be publicly available\n2. Redesigned Block list/item pages must be available and must show actual Cardano mainnet data\n3. Redesigned Transaction list/item pages must be available and must show actual Cardano mainnet data\n4. Redesigned Account list/item pages must be available and must show actual Cardano mainnet data\n5. Redesigned Address list/item pages must be available and must show actual Cardano mainnet data\n6. The website should work on mobile (responsive design) as well as on desktop devices and should not have major visual/behavior bugs",
+      "report": "AdaStat Mainnet website Beta1 version is available https://new.adastat.net/\nPlease use catalyst for both name and password to login\n・Block list https://new.adastat.net/blocks , Block item - please click on any Block on the Block List page\n・TX list https://new.adastat.net/transactions , TX item - please click on any TX on the TX List page\n・Account list https://new.adastat.net/accounts , Account item - please click on any Account on the Account List page\n・Address list https://new.adastat.net/addresses , Address item - please click on any Address on the Address List page",
+      "kinds": [
+        "chain"
+      ],
+      "links": 5
+    },
+    {
+      "no": 3,
+      "month": "21",
+      "cost": 36000,
+      "promise": "・AdaStat new website Beta2 version\n\n・Improved new UI for Pool list/item pages\n・Improved new UI for Epoch list/item pages\n・Improved new UI for Token list/item pages\n・Improved new UI for Poll list/item pages\n・Improved new UI for Gov action list/item pages\n・Improved new UI for DRep list/item pages",
+      "criteria": "・Website Beta2 version must be publicly available\n・Redesigned Pool list/item pages must be available and must show actual Cardano mainnet data\n・Redesigned Epoch list/item pages must be available and must show actual Cardano mainnet data\n・Redesigned Token list/item pages must be available and must show actual Cardano mainnet data\n・Redesigned Poll list/item pages must be available and must show actual Cardano mainnet data\n・Redesigned Gov action list/item pages must be available and must show actual Cardano mainnet data\n・Redesigned DRep list/item pages must be available and must show actual Carda",
+      "report": "AdaStat Mainnet website Beta2 version is released on https://new.adastat.net/\nPlease use 'catalyst' for both name and password to login\n・Pool list https://new.adastat.net/pools , Pool item - please click on any Pool on the Pool List page\n・Epoch list https://new.adastat.net/epochs , Epoch item - please click on any Epoch on the Epoch List page\n・Token list https://new.adastat.net/tokens , Token item - please click on any Token on the Token List page\n・Poll list https://new.adastat.net/polls , Poll item - please click on any Poll on the Poll List page\n・Gov Action list https://new.adastat.net/governances , Gov Action item - please click on any Gov Action on the Gov Action List page\n・DRep list https://new.adastat.net/dreps , DRep item - please click on any DRep on the DRep List page",
+      "kinds": [
+        "chain"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "22",
+      "cost": 36000,
+      "promise": "1. AdaStat new website RC\n・Improved new UI for Search page\n・Improved new UI for Favorites page\n\n2. Support for public Cardano testnets\n・Network selector for Mainnet/Preprod/Preview",
+      "criteria": "1. AdaStat RC version must be publicly available\n2. It must be possible to search for Blocks, Transactions, Accounts, Addresses, Pools, Epochs, Tokens and Polls\n3. It must be possible to add any Accounts, Pools and Tokens to Favorites\n4. Favorite list must be displayed on the Favorites page as well as on the Dashboard\n5. Network selector must allow to switch between Mainnet/Preview/Preprod networks\n6. All data on the site should be displayed depending on the selected network\n7. The website should work on mobile (responsive design) as well as on desktop devices and should not have major visual/",
+      "report": "AdaStat New Website RC is released on https://new.adastat.net/\nPlease use 'catalyst' for both name and password to login\n1. Updated UI\n\nSearch Page\n・Improved and refined UI.\n・Search field is located:\n・In the navigation bar on mobile devices.\n・In the header on desktop.\n・The search opens in a modal window.\n・Includes search history.\n・Supports searching across all sections of the website, including sections not previously announced (DReps and Gov Actions).\n\nWatchlist (Favorites) https://new.adastat.net/watchlist\n・Improved and redesigned UI.\n・Items added to Watchlist are also displayed on the Dashboard.\n\nYou can add the following to your Watchlist:\n・Accounts https://new.adastat.net/accounts\n・Pools https://new.adastat.net/pools\n・Tokens https://new.adastat.net/tokens\n・DReps https://new.adastat.net/dreps\n\nTo add an item:\n・Click the ⭐ star icon in lists, or\n・Click the ⭐ star icon on the item's dedicated page.\n\n2. Support for Public Cardano Testnets\n・Added support for Cardano public testnets.\n・Network selector allows switching between:\n・Mainnet\n・Preprod\n・Preview\n・Network selectors are located on the right side of the footer.",
+      "kinds": [
+        "chain"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "23",
+      "cost": 36300,
+      "promise": "1. Stable AdaStat website with Minnet/Preview/Preprod networks support\n 2. Source code\n 3. Documentation\n 4. Project Closeout report",
+      "criteria": "1. Stable version is online\n 2. Minnet/Preview/Preprod networks are supported\n 3. Source code is available and released with an Open Source license\n 4. Documentation is available",
+      "report": "The new AdaStat website released\nPlease note that the Mainnet version of the website currently defaults to the previous UI to ensure a smooth transition and stable user experience. The new version can be enabled manually in the Settings → Try the Modern UI (see screenshot https://prnt.sc/GWUWDRvRSe1i)\n・Mainnet: https://adastat.net/\n・Preprod: https://preprod.adastat.net/\n・Preview: https://preview.adastat.net/\n\nSource code\n・Frontend / Backend: https://github.com/CardanoExplorer/adastat/\n・DB Indexer: https://github.com/CardanoExplorer/adastat-indexer\n\nDocumentation\n・Frontend: https://github.com/CardanoExplorer/adastat/blob/main/frontend/README.md\n・Backend: https://github.com/CardanoExplorer/adastat/blob/main/backend/README.md\n・DB Indexer: https://github.com/CardanoExplorer/adastat-indexer/blob/main/README.md\n\nOther relevant links\n・Close-out report: https://drive.google.com/file/d/1NNLZqSFAgBVod3BnhZom-0HFxPUD_XPR/view\n・Close-out video: https://www.youtube.com/watch?v=58_wsF32_4o",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 22
+    }
+  ]
+}

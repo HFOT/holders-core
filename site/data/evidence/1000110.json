@@ -1,0 +1,86 @@
+{
+  "title": "Minswap Aiken V2 Audit",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "・Minswap V2 Smart Contract code built on Aiken will undergo an audit by TxPipe, the company that built the Aiken programming language. \n・During the audit process TxPipe will make recommendations on how to address the vulnerabilities identified during the audit process. The vulnera\u0002bilities include scenarios where a malicious actor might exploit the validator to disrupt the platform or its users. The Audit Report will include: \n・A) A Title for each of the Findings\n・B) The severity assessment of each Finding (Critical, Minor, Info)\n・C) Status (Resolved/Unresolved).",
+      "criteria": "・The audit will be publicly announced in December by both Minswap Labs and TxPipe to be accountable to the community that it is in fact ongoing.\n・The Audit process and the finding and addressing of vulnerabilities will be completed within the month of December. The Audit Report will be released as soon as the process concludes. The Audit Report will highlighting any findings or concerns, their status and a high level overview of the contracts behavior.",
+      "report": "・It was decided to switch the first audit company from TxPipe to CertiK due to internal planning issues. \n・Link to an article posted on Medium will be provided to demonstrate the join announcement of Minswap V2 Audit process commencement by Minswap Labs and CertiK\n・Link to the Audit Report by CertiK (this report is not yet the version to be shared with the public). \n・The Audit Report has been updated now since the last submission.\n・That being said, in the CertiK audit process, Issues will have tag \"minor\", \"major\" and \"critical\". CertiK addresses not only potential issues, but also other types such as \"information\", \"potential optimization\", ...Only issues can result in vulnerabilities, other kind of findings (such as the ones you mentioned in the POA rejection) are marked acknowledged instead of making any changes since they cannot lead to vulnerabilities.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 100000,
+      "promise": "・Minswap V2 Smart Contract code built on Aiken will undergo a second audit by a reputable third party auditor within Cardano.\n・During the audit process the reputable third party auditor will make recommendations on how to address the vulnerabilities identified during the audit process. The vulnerabilities include scenarios where a malicious actor might exploit the validator to disrupt the platform or its users. The Audit Report will include:\n・A) A Title for each of the Findings\n・B) The severity assessment of each Finding (Critical, Minor, Info)\n・C) Status (Resolved/Unresolved).",
+      "criteria": "・The audit will be publicly announced in January by both Minswap Labs and the third party auditor to be accountable to the community that it is in fact ongoing.\n・The Audit process and the finding and addressing of vulnerabilities will be completed within the month of January. The Audit Report will be released as soon as the process concludes. The Audit Report will highlighting any findings or concerns, their status and a high level overview of the contracts behavior.",
+      "report": "・Link to an article posted on Medium will be provided to demonstrate the joint announcement of Minswap V2 Audit by the third party auditor.\n・Link to the Audit Report by the reputable third party auditor.",
+      "kinds": [
+        "doc",
+        "social"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 100000,
+      "promise": "・An article will be released with the new features of the Minswap DEX V2, the throughput improvements enabled by Aiken, and the Audit Discoveries during both Audits. \n・A testnet environment will be set up for users to interact and get familiar with the Minswap DEX V2 before mainnet.\n・The Minswap V2 Smart Contract will be open-sourced.\n・The Bug Bounty period will commence.",
+      "criteria": "・Article with the new features of the Minswap DEX V2, the throughput improvements enabled by Aiken, and the Audit Discoveries during both Audits\n・Testnet environment set up for users to interact and get familiar with the Minswap DEX V2 before mainnet.\n・Open-sourced Minswap V2 Smart Contract code.\n・A detailed document regarding the scope of the vulnerabilities of the Bug Bounty Program and how to submit a bug will be shared. It will follow a similar structure as Bug Bounties on for example Immunefi.",
+      "report": "・Link to a Medium article about Minswap V2 features, throughput and Audit Findings. \n・Link to a Minswap V2 testnet environment - please do not share this link.\n・Link to open source license.\n・A short screen recording in which the testnet environment is being demoed\n・Link to Github with the open-sourced Minswap V2 Smart Contract.\n・Link to a detailed document regarding the scope of the vulnerabilities of the Bug Bounty Program and how to submit a bug.",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 80000,
+      "promise": "・The Bug Bounty program will be completed\n・All possible issues discovered both during the Testnet and the Bug Bounty will be addressed. \n・At the end of the month, there will be communication of successful completion of the fixes addressed after the testnet and Bug Bounty and the upcoming launch on the mainnet.",
+      "criteria": "・Bug Bounty rewards distributed according to the severity of the found vulnerabilities (if any)\n・At the end of the month, an article will be posted communicating the successful completion of the Bug Bounty program, and explaining fixes addressed after the testnet and Bug Bounty.\n・The Medium article should give a detailed overview of the feedback from users in the testnet, as well as how the Bug Bounty was conducted, and who and how was compensated.",
+      "report": "・Link to a Medium article where the community will be informed of the vunerabilities found and the fixes (if any) as well as the compensation for the Bug Bounty program. \n・The Link to audit report in the medium article has been updated, here is the link again if you need it \n・The Medium article will include transaction IDs for the payment of Bug Bounties.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 41000,
+      "promise": "・Minswap V2 Smart Contract is launched on mainnet\n・The Minswap V2 will also count with a new UI\n・The Liquidity Migration process from Minswap V2 to Minswap V2 will commence Liquidity Pools",
+      "criteria": "・Minswap V2 is live on mainnet \n・Minswap V2 has a new UI, different from Minswap V1\n・Liquidity Migration from V1 to V2 commences",
+      "report": "・Link to the Minswap V2 Smart Contract on mainnet \n・Screenshots with both UIs, to better demonstrating the differences between them. You can see how the the V1 UI was in this Minswap V1 tutorial. You can see the changes and new features in this Minswap V2 tutorial.\n・A video demo will be provided, showcasing the migration process of the liquidity pools. You can see different example for Liquidity Migration here.",
+      "kinds": [
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 6,
+      "month": "7",
+      "cost": 71000,
+      "promise": "・There will be a process to collecting user feedback and evaluate the success of the Minswap V2 based on the following metrics:\n・A) Quantitative Measures: Total Asset Liquidity & Volume, Monthly Unique Active Wallets, Throughput improvements\n・B) Qualitative Measures: Composability across Cardano DeFi, Open Source usage, User Feedback",
+      "criteria": "・A Google Form is shared with the Cardano community to collect feedback on the Minswap V2\n・Data analysis is conducted to assess quantitative measures",
+      "report": "・Link to a Tweet with a Google Form where the Cardano community can share feedback about the Minswap V2. Here a sneak peak at the results of the feedback. \n・Link to a Medium article where there are reflections about the Minswap V2, insights on the data collected and user feedback\n・Link to the sheet with feedback (deleted the names for privacy)\n・Link to the Google Form for requesting feedback\n・Close out Report (changed the date)\n・Close out video",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

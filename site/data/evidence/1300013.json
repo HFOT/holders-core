@@ -1,0 +1,32 @@
+{
+  "title": "0XAuth (Project David)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 37500,
+      "promise": "(A) UI Designs of Institutional dashboard pages\n(B) Frontend pages implementation of institutional dashboard.\n(C) Development of Institutional dashboard backend services.\n(D) Integration of dashboard frontend with backend services.\n(E) Development of AWS CDK constructs and Github Actions for deployments (DevOps).",
+      "criteria": "(A) Desktop screen UI Designs with following must pages:\n・Registration \n・Login\n・Overview page (main page)\n・Investors List\n・Investor Details (must: Name, email, investor type, W3C VC Issuer, logs)\n・Fund Details\n・Rules Setting (Required W3C VCs and VC fields to reveal)\n・Basic analytics \n・Audit Reports PDF design\n\n(B) Frontend pages implementation of institutional dashboard\n・Implementation of all the pages listed above for desktop screens.\n\n(C) Development of Institutional dashboard backend services\n・Setting up AWS Cognito for user authentications\n・Configuration of MongoDB database for funds data",
+      "report": "We’ve completed the design and development of institutional dashboard i.e our first milestone. Evidence, aligned with the acceptance criteria, is provided below.\n(A) Link to the designed UI pages\nhttps://www.figma.com/design/zyx0zMR2lUHpvdB1Dn8sA5/David---Dashboard?node-id=539-443&t=cbSDNfbpaM1QZm5z-1\n\n(B) Dashboard Pages\nhttps://drive.google.com/drive/folders/1S9avJGvLMv8e-BmsalKcjQLO1G_uPOzG?usp=drive_link\n\n(C) \n・Screenshots of AWS Cognito, MongoDB collections and Lambdas.\n・Generated audit report\n・Investor onboarding\n\nhttps://drive.google.com/drive/folders/1uqoMiVG79O6oBxO6nzd4xAUTj9ZbzHje?usp=sharing\n\n(D) Registration of fund and login to existing fund\nhttps://drive.google.com/drive/folders/1X7xQ2YNeEuMNZ9RLZ63bNupntUlBNVm7?usp=sharing\nNote: D.6 Investor onboarding video is already covered in C.3.\n﻿\n(E) Screenshots of \n・CDK Synthesis output (Cloudformation template)\n・Github Workflow runs (Overview)\n・Github Single workflow run steps\n\nhttps://drive.google.com/drive/folders/1Lg-Cnyb7U_iKUF5vnDz7rJcJ1rhMS6Sf?usp=sharing",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 37500,
+      "promise": "(A) Integration of Cardao in SDK and dashboard.\n(B) Development and deployment of smart contracts on testnet:\n・Access Registry Contract\n・Access Registry Contract Factory\n・Gating Contract Template ( Which can be used in token contracts to gate with access registry )\n・Example Token Contract\n\n(C) Add features in the dashboard for fund managers to add token contracts addresses in the dashboard.",
+      "criteria": "(A) Integration\n・Investors should be able to onboard to fund via their Cardano Wallets.\n・Dashboard has investor addresses from cardano blockchain.\n\n(B) Smart Contracts\n・Mentioned smart contracts in output (2) are developed and open-sourced.\n・Smart contracts are deployed on cordano testnet.\n・Example Token using gating contract template deployed on testnet.\n\n(C) Token Contracts Gating\n・Fund managers should be able to add their token contracts deployed on Cardano.\n・Investors onboarded to fund should be able to access the on-chain tokens only.",
+      "report": "We’ve completed the integration of cardano in DAVID. Evidence, aligned with the acceptance criteria, is provided below, we also got caught up in the technicalities and needed to lookup for new cardano developers to ensure our requirements are met, hence the delayed submission.\n[A] Link to Investor Onboarding demo video\nhttps://drive.google.com/file/d/1Fiky9FLIZlJtZtjVtwsI43-3kg6YA1X4/view?usp=sharing\n[B] Link to the smart contracts and contract addresses.\n・https://github.com/authentication-labs/cardano-contracts-service\n・Contract addressAddresses (Prepod network):\n\n Admin Address: addr_test1vp57sedtqw47d8yw8lh8vmdx88rdxq0fvq0z8da2t6zzpjsj664j2\n Token Policy: 5e8b1515665389974a023ac16fa76d8847a6e9623d4a173dc0a8c1f9\n Admin Token: 866802a1c14de652ff793db530bc3b44ff799ec63142da18f2ba2161712140ed\n Access Registry: 99faed6cbbb8e7d4efe83d2e713d1a1607f662a95dc678806206924a18b5a9a0\n Transfer: 7507ad50bd3def7424d7709594b860d04fb31347ca4fc514e09053ab4530c920\n[C] Demo video linking the token contract with fund and purchase of tokens. \n・Adding token contract in fund: https://drive.google.com/file/d/15XHEChrbFuWZ37PstO1YRl5Xc1KcSpye/view?usp=sharing\n・Purchase of token: https://drive.google.com/file/d/1S91V8s7GlUU2YP2djHYXcKne8kABdvsh/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    }
+  ]
+}

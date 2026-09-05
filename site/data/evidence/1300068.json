@@ -1,0 +1,70 @@
+{
+  "title": "Cloud Native Blockchain Archive Node by Blink Labs",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 23732,
+      "promise": "Create relational database interface. \nCreate key-value storage interface. \nMigrate sqlite implementation to above new relational interface. \nMigrate badger implementation to above new key-value interface",
+      "criteria": "For all of the above outputs:\nThe code-related outputs are completed and implemented according to any specifications in the corresponding GitHub issues (used like tickets) which can be visually confirmed in the GitHub project board (link below).\nCode changes in each issue must be reviewed and approved by designated team members before being merged into the main branch. As applicable, any added unit tests which demonstrate outputs will be available in the codebase. All of these can be visually confirmed in the GitHub project board (link below) by opening each issue/output.\nProject board, milest",
+      "report": "Cloud Native Blockchain Archive Node Milestone 1: Complete\nThe relational database and key value storage interfaces have been implemented as specified in their corresponding tickets. Migration of the sqlite and badger implementations to the relational and key value interfaces created above has been completed. \nThis is further evidenced by the automated testing where applicable and code reviews with approvals from a designated team member. As this stage has not delivered a usable product, rather creates building blocks for the next two milestones, we direct you to reference the pull requests and review the files changed to confirm, in the GitHub Milestone 1 issues (aka tickets) in our project board, here: https://github.com/orgs/blinklabs-io/projects/17. All Milestone 1 tickets have been completed and closed. Corresponding usage documentation will be added as we progress and will be found alongside existing Dingo documentation here: https://github.com/blinklabs-io/dingo/blob/main/README.md.",
+      "kinds": [
+        "code"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "11",
+      "cost": 23732,
+      "promise": "Implement relational interface over PostgreSQL\nImplement key-value interface over PostgreSQL\nImplement optional KMS (Key Management Service) based encryption",
+      "criteria": "For each of the above outputs:\n・The outputs are completed and implemented according to specifications in the corresponding GitHub issues (used like tickets).\n・Code changes are reviewed and approved by designated team members before being merged into the main branch. \n・Unit tests will be used as applicable. A short video which demonstrates outputs will be included. \n\nAll of these can be visually confirmed in the GitHub project board (link below) by opening each issue/output.\nProject board, milestone & tasks link: https://github.com/orgs/blinklabs-io/projects/17/views/7",
+      "report": "A. Output: Implement relational interface over PostgreSQL\nB. Output: Implement key-value interface over Google Cloud Storage\nC. Output: Implement optional KMS (Key Management Service) based encryption\nAcceptance criteria: All tickets can be viewed here: https://github.com/orgs/blinklabs-io/projects/17/views/7 and meets the acceptance criteria set out:\n・The outputs were completed and implemented according to specifications in the above GitHub issues and pull requests.\n・Code changes were reviewed and approved by designated team members before being merged into the main branch. \n・Unit tests used as applicable are seen in GitHub and we've included a short video demonstrating outputs: https://youtu.be/k1DpVywKPF0\n\nEvidence: All evidence has been provided:\n・GitHub issues associated with the outputs are marked as done in the GitHub project board (link). \n・All code was reviewed and approved from team members for each pull request, linked in each GitHub issue. \n・Unit tests were used were applicable, documented in each pull request, and we've included short video that shows each closed output's issue and the corresponding pull request, approvals, tests.\n\nAll of these can be visually confirmed in the GitHub project board (link below) by opening each issue/output. https://github.com/orgs/blinklabs-io/projects/17/views/7 \nAny relevant documentation updates are added to the README, https://github.com/blinklabs-io/dingo/blob/main/README.md as we progress.\nAt this stage there is a new blob storage implementation for Google Cloud and relational interface over PostgreSQLfor the Go Node, a building block for the Go Archive Node. It also introduces optional KMS-backed encryption for sensitive data paths.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 9
+    },
+    {
+      "no": 3,
+      "month": "13",
+      "cost": 23732,
+      "promise": "Implement relational interface over MySQL\nImplement key-value interface over MySQL\nImplement optional KMS (Key Management Service) based encryption",
+      "criteria": "For each of the above outputs:\n・The outputs are completed and implemented according to specifications in the corresponding GitHub issues (used like tickets).\n・Code changes are reviewed and approved by designated team members before being merged into the main branch. \n・Unit tests will be used as applicable. A short video which demonstrates outputs will be included. \n\nAll of these can be visually confirmed in the GitHub project board (link below) by opening each issue/output.\nProject board, milestone & tasks link: https://github.com/orgs/blinklabs-io/projects/17/views/7",
+      "report": "A. Output: Implement relational interface over MySQL\nB. Output: Implement key-value interface over Amazon AWS S3\nC. Output: Implement optional KMS (Key Management Service) based encryption\n\nAcceptance criteria: All tickets can be viewed here: https://github.com/orgs/blinklabs-io/projects/17/views/7 and meets the acceptance criteria set out:\n・The outputs were completed and implemented according to specifications in the above GitHub issues and pull requests.\n・Code changes were reviewed and approved by designated team members before being merged into the main branch. \n・Unit tests used as applicable are seen in GitHub.\n\nEvidence: we've included a short video of all outputs and evidence: https://youtu.be/y4gIaBx9deg. \nAll evidence has been provided:\n・GitHub issues associated with the outputs are marked as done in the GitHub project board (link). \n・All code was reviewed and approved from team members for each pull request, linked in each GitHub issue. \n・Unit tests were used were applicable, documented in each pull request, and we've included short video that shows each closed output's issue and the corresponding pull request, approvals, tests.\n\nAll of these can be visually confirmed in the GitHub project board (link below) by opening each issue/output. https://github.com/orgs/blinklabs-io/projects/17/views/7 \nAlongside code changes, any relevant documentation updates are added to the README, https://github.com/blinklabs-io/dingo/blob/main/README.md.\nAt this stage there is a new relational interface for MySQL and optional KMS-backed encryption support for the Go Node, with cloud blob storage capabilities in place as building blocks for the Go Archive Node.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "15",
+      "cost": 23732,
+      "promise": "Develop transparent data proxying for immutable block data\nImplement data pruning for immutable data",
+      "criteria": "For each of the above outputs:\n・The outputs are completed and implemented according to specifications in the corresponding GitHub issues (used like tickets).\n・Code changes are reviewed and approved by designated team members before being merged into the main branch. \n・Unit tests will be used as applicable. A short video which demonstrates outputs will be included. \n\nAll of these can be visually confirmed in the GitHub project board (link below) by opening each issue/output.\nProject board, milestone & tasks link: https://github.com/orgs/blinklabs-io/projects/17/views/7",
+      "report": "Cloud Native Blockchain Archive Node Milestone 4: Complete\nA. Output: Develop transparent data proxying for immutable block data\nB. Output: Implement data pruning for immutable data\nAcceptance criteria: All tickets can be viewed here: https://github.com/orgs/blinklabs-io/projects/17/views/7 and meet the acceptance criteria set out:\n・The outputs were completed and implemented according to specifications in the above GitHub issues and pull requests (used like tickets).\n・Code changes were reviewed and approved by designated team members before being merged into the main branch. \n・Unit tests used as applicable are seen in GitHub.\n\nEvidence: we've included a short video of all outputs and evidence: https://youtu.be/F1PVl31YWRQ\nAll evidence has been provided:\n・GitHub issues associated with the outputs are marked as done in the GitHub project board (link). \n・All code was reviewed and approved from team members for each pull request, linked in each GitHub issue. \n・Unit tests were used if applicable and we've included short https://youtu.be/F1PVl31YWRQ that shows each closed output's issue and the corresponding pull request and approvals.\n\nAll of these can be visually confirmed in the GitHub project board (link below) by opening each issue/output. https://github.com/orgs/blinklabs-io/projects/17/views/7 \nAlongside code changes, any relevant documentation updates are added to the README, https://github.com/blinklabs-io/dingo/blob/main/README.md.\nThis milestone delivers transparent proxying for immutable block data and data pruning support for immutable data workflows. With these capabilities, nodes can offload immutable block data handling through the archive-node pattern and reduce local storage burden through pruning when paired with the archive node.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 11
+    },
+    {
+      "no": 5,
+      "month": "16",
+      "cost": 23732,
+      "promise": "・Final close-out report\n・Final closeout video",
+      "criteria": "The project closeout report will include a comprehensive summary of project objectives and evidence of goals achieved. \nThe project closeout video will provide a visual overview of the project's journey, start to finish, highlight key achievements, and showcase the net product: Cloud Native Blockchain Archive Node.",
+      "report": "Output 1: Final close-out report\nAcceptance criteria 1: The project closeout report will include a comprehensive summary of project objectives and evidence of goals achieved. \nEvidence 1: Link to final closeout report, accessed via a Blink Labs shared Google docs link: \n・Doc: https://docs.google.com/document/d/16esZQ4bCFaPEJ6PuCCHA4YwjwFn0OdNyQld_H68kcSk/edit?usp=sharing\n・PDF: https://drive.google.com/file/d/1hAym1nncY8jvydUrVRdk4RAsHYGfFEMZ/view?usp=sharing\n\nOutput 2: Final closeout video\nAcceptance criteria 2: The project closeout video will provide a visual overview of the project's journey, start to finish, highlight key achievements, and showcase the net projects demo for Cloud Native Blockchain Archive Node. It is available on our YouTube channel, https://www.youtube.com/@BlinkLabs_io or the below link.\nEvidence 2: Link to final closeout video, uploaded to the public Blink Labs YouTube channel: https://youtu.be/ww_4nV1zQaE",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

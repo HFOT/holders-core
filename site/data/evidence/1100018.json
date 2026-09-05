@@ -1,0 +1,58 @@
+{
+  "title": "Add support for Marlowe on Cardanoscan",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 39900,
+      "promise": "Add a decoded datum view for Marlowe contracts on the transaction detail page in a tab\nThe marlowe datum view includes below items \n・a Marlowe tab on tx page\n・decoded datum in JSON structure as per Marlowe specifications\n・a label in header indicating the tx contains a Marlowe script",
+      "criteria": "Marlowe datum view implemented and visible inside a tab on the transaction page with below items,\n・can see a Marlowe tab on transaction page which contains Marlowe scripts\n・can see the Marlowe datum decoded in a JSON format\n・can see a label on the transaction page header which indicates a tx contains a Marlowe tx",
+      "report": "Integrated Milestone 1 features as below,\n・Marlowe tab added on transaction page where a Marlowe contract is used\n・Marlowe Tab shows the JSON structure of the contract\n・Transaction header has an ICON indicating the transaction has a Marlowe contract execution\n\nVideo Recording : https://youtu.be/rTFrPZ1Cpaw\nWe have made the feature live on the mainnet itself as evidence of the Milestone, see a few transactions below,\nhttps://cardanoscan.io/transaction/1215521d0e5766879f8cfa476e5861ccf726e23fd024053bf01d2289774b3418?tab=marlowe https://cardanoscan.io/transaction/b4bcc6f0506888d75ea0d5f1c9b1b7c3fabca50c0119e244e05f8caf9cedadd7?tab=marlowe https://cardanoscan.io/transaction/74dcda332b41db7182a625fc1c0612d0c433ce3874b0f17877da698fa4078ac7?tab=marlowe https://cardanoscan.io/transaction/2be9db7e2c908d25ab17f081b7aeb79ae6d6cb2ae12102cf7bbd85d02a50af53?tab=marlowe https://cardanoscan.io/transaction/dcde5e04d5a9077276f4128fcb307953accd6b510a5a63313e652e5d63bd3b06?tab=marlowe",
+      "kinds": [
+        "chain",
+        "video"
+      ],
+      "links": 12
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 39900,
+      "promise": "A dedicated page on Cardanoscan listing all Marlowe contract transactions\nThe listing page contains below features,\n・Marlowe transaction id (clickable to tx page)\n・ADA and/or token amount\n・block height/slot details\n・epoch number",
+      "criteria": "Marlowe contract listing page implemented and verifiable via the provided screenshot\n・Can see the Marlowe transaction id\n・can see the ADA or token amount in the transaction\n・can see transaction block height and slot numbers\n・can see epoch number",
+      "report": "Integrated Milestone 2 features as below,\n・A listing page on Cardanoscan with Marlowe transactions\n・Marlowe contract ID\n・Transaction ID\n・block/slot details\n・epoch number\n・Contract count\n\nVideo Recording: https://youtu.be/Nh6M9n3Xk5A\nWe have made the feature live on the mainnet itself as evidence of the Milestone, see a few transactions below,\n・https://cardanoscan.io/marloweContracts",
+      "kinds": [
+        "chain",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 33250,
+      "promise": "・Create a page to show Marlowe execution details and a list of involved transactions\n・Create a section for the Marlowe contract code view\n・The page should show contract details - eg. tx id, and block details",
+      "criteria": "Marlowe contract detail page implemented and verifiable via a screenshot\n・can see the Marlowe contract page with involved transaction ids\n・can see the Marlowe contract code\n・can see the transaction block height, tx id details",
+      "report": "Integrated Milestone 3 features as below,\n・Marlowe contract detail page\n・Marlowe code view added\n・The detail page shows tx details like tx id, block height, epoch details\n・Shows relevant transactions\n\nVideo Recording: https://youtu.be/NTgXVWEWvqc\nWe have made the feature live on the mainnet itself as evidence of the Milestone, see a few transactions below,\n・https://cardanoscan.io/marlowe/fbb1a39851f3a1988112a41cdbfd9286ecf232675905586f6d6566e17bdea9df\n・https://cardanoscan.io/marlowe/ccba0886f7f7ea1bd8c49a51bc3ea3091c40bc6880693f28cccab13962d70638",
+      "kinds": [
+        "chain",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 19950,
+      "promise": "・Deploy the Marlowe support on mainnet\n・Close-out report and video",
+      "criteria": "・Marlowe support deployed on the mainnet and verifiable via the mainnet explorer URL",
+      "report": "All of the project milestones were completed and deployed on mainnet, below are a few URLs to review the same,\nhttps://cardanoscan.io/marloweContracts\nhttps://cardanoscan.io/transaction/1215521d0e5766879f8cfa476e5861ccf726e23fd024053bf01d2289774b3418?tab=marlowe\nhttps://cardanoscan.io/transaction/b4bcc6f0506888d75ea0d5f1c9b1b7c3fabca50c0119e244e05f8caf9cedadd7?tab=marlowe \nhttps://cardanoscan.io/marlowe/fbb1a39851f3a1988112a41cdbfd9286ecf232675905586f6d6566e17bdea9df\nhttps://cardanoscan.io/marlowe/ccba0886f7f7ea1bd8c49a51bc3ea3091c40bc6880693f28cccab13962d70638\nProject Close Out report - https://drive.google.com/file/d/1-I0DsRZAD_s6-S6b-cA5o3d5rRT_2OsR/view?usp=sharing\nPorject Close out video - https://youtu.be/0XhBL6wVJnw",
+      "kinds": [
+        "chain",
+        "doc",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

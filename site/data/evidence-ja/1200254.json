@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・作業計画の策定\n・KYCデータフォーマットの最終化\n・ZK パイプラインは、ZK オペレーションの KYC データを読み込める",
+      "criteria": "・KYCトークンをハッシュしたデータをマイニングするためのコンセプトをフィニチャライズします。\n・ GitHub で初期のコードをオープンソースで有効化.",
+      "report": "こんにちはマイルストーンの審査者と投票者。\nこの提案の最初のマイルストーンを完成させました。すべてのマイルストーンの成果が正常に展開されています。\n1.KYCData型はzkFoldシンボルフレームワークに統合されています。\n本プロジェクトでは、銀行の要件の記述に用いられる主要なデータ型です。 これで、そのようなデータ構造に関する任意のステートメントを作成し、ZKPs を使用して検証することができます。\n以下のリンクを参照してください。\n・https://github.com/zkFold/zkfold-base/blob/main/symbolicapps/src/ZkFold/Symbolic/Apps/KYC.hs\n\nこの出力の一環として、zkFold のシンボルバージョンのバイト文字列と符号なし整数の JSON シリアル化/デシリアライゼーションのサポートを追加し、この新しい KYCData タイプのサポートを追加しました。\n2. 当社は、特定のKYC検証手順の完了を証明する「KYCトークン」をミントトするために使用されるPlutusスマートコントラクトを完了しました。 plonkVerifierを参照してください。\n・https://github.com/zkFold/zkfoldcardano/blob/main/src/ZkFold/Cardano/UPLC.hs\n・https://github.com/zkFold/zkfold-cardano/blob/main/src/ZkFold/Cardano/UPLC/PlonkVerifier.hs\n\nスマートコントラクトに関連するすべてのコードは徹底的にテストされ、ベンチマークされています。 詳しくは、以下を参照してください。\n・https://github.com/zkFold/zkfold-base/blob/main/symbolicbase/test/Tests/NonInteractiveProof.hs\n・https://github.com/zkFold/zkfoldcardano/blob/main/test/Tests/Compatibility.hs\n・https://github.com/zkFold/zkfold-cardano/blob/main/benchs/bench-cpumem/README.md"
+    },
+    {
+      "no": 2,
+      "promise": "・一般的な銀行要件に基づいてゼロナレッジ(ZK)回路を作成および検証します.",
+      "criteria": "・ZK回路の設計を最終化し、基本的な銀行ニーズを満たします。\n・GitHubで公開されたオープンソースコードを公開します.",
+      "report": "Catalyst Milestone のレビュー家こんにちは。\n2番目の提案マイルストーンで成功完了を報告できることを嬉しく思います。\n成果物は次のように述べました。\n・ZK回路の設計を最終化し、基本的な銀行ニーズを満たします。\n・GitHubで公開されたオープンソースコードを公開します。\n\nそしてここにあります:\n基本的な銀行のニーズを満たす最終化されたZK回路:\n・https://github.com/zkFold/zkfold-base/blob/main/symbolic-apps/src/ZkFold/Symbolic/Apps/KYC.hs\n\nと述べたように、あなたが見つけることができるMITライセンスの下に仕事はライセンスされています\n・https://github.com/zkFold/zkfold-base/blob/main/LICENSE\n\nすでに次のマイルストーンで作業を進めています"
+    },
+    {
+      "no": 3,
+      "promise": "校正ソフト(バックエンド)の開発 このソフトウェアは、ゼロナレッジ回路を使用して、ZKプルーフを構築し、それを開示することなくユーザーデータを証明します.",
+      "criteria": "「基本的なトランザクション検証のための証拠ジェネレータソフトウェアを完了します。\nGitHubリポジトリを新しいソフトウェアコードで更新します",
+      "report": "私たちは、基本的なトランザクション検証のための証拠ジェネレータソフトウェアを完了し、作業コードを照らすビデオを用意しました。\n・https://github.com/zkFold/zk-kyc\n・https://youtu.be/38LoSyBlnfc"
+    },
+    {
+      "no": 4,
+      "promise": "実証済みの検証ソフトウェア(バックエンド)を開発 検証者は、生成された証拠を検証し、機関や銀行がデータにアクセスすることなく情報を検証できるようにします.",
+      "criteria": "証拠の検証ソフトウェアを完成させ、証拠ジェネレータによって生成された証拠を検証します。\nGitHubリポジトリをVerifierソフトウェアコードで更新します.",
+      "report": "証拠の検証ソフトウェアを完成させ、証拠ジェネレータによって生成された証拠を検証します。\n・ GitHub リポジトリへのリンクを GitHub リポジトリへ 認証コード: https://github.com/zkFold/zk-kyc/tree/diS3e/fast-setup\n・作業コードを記述する動画:https://youtu.be/ahcs0yxL1co"
+    },
+    {
+      "no": 5,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ\n・MVP機能と統合に関する包括的なドキュメントの提供.",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n・詳細なプロジェクト文書の作成と公開\n・すべてのコードをオープンソースライセンスでライセンス供与し、GitHubで使用可能",
+      "report": "最終マイルストーンを完了しました。\n・最終クローズアウトレポートへのリンク: https://github.com/zkFold/zk-kyc/blob/37cb3ad9b247cebe3ac03233ab7b3bcbfc1/docs/1200254%20-%20zkFold%20x%20Defy %20Cross-border20%20infra%20using%20ZK%20tech%20%20%20%20%20%20%20final%20%20pdf\n・最終クローズアウト動画へのリンク: https://youtu.be/kyxCfjU8UCs\n・GitHubリポジトリへのリンクを最終コードとドキュメントで公開します。 https://github.com/zkFold/zk-kyc\n・最終ドキュメントへのリンク:https://htmlpreview.github.io/?https://github.com/zkFold/zk-kyc/blob/main/docs/index.html"
+    }
+  ]
+}

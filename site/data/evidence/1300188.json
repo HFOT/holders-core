@@ -1,0 +1,33 @@
+{
+  "title": "USDM and BTC payments support in Hydra Contactless Micropayments app",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 35000,
+      "promise": "・Enhanced hydra-based accounting system that supports non-ADA balances\n・Payment support for USDM\n・Architecture and design for cross chain integration",
+      "criteria": "・Functioning Hydra-based accounting system supporting non-ADA assets (USDM) - tested smart contract that supports ADA and non-ADA assets to manage customer and merchant balances.\n・Working and tested payment app (Android & IOS) supporting USDM transactions, including following functionalities:\n・Adding USDM to application balance for customers\n・Paying using USDM via NFC \n・Withdrawing USDM from application balance to wallet for customers\n・Claiming of funds by merchant to their wallet address\n・Clear design document addressing key viewpoints associated with cross chain integration of the payment ap",
+      "report": "Payment support for USDM:\n🎥 Video DEMO 1: Merchant-to-Merchant Transfer (Link) \n\nThis video showcases money transfers using the HydraPay system between merchants. Key functionalities demonstrated:\n・Merchant CIP-30 L1 signatures through browser wallets for deposit and withdrawal actions. Each deposit and withdrawal is gated through cryptographic signatures verified on-chain, ensuring that only authorized merchants can initiate balance-affecting actions. This establishes a robust trust model within the Layer 2 network while preserving decentralization principles.\n・Merchant-to-merchant transfers in L2. Funds can be transferred seamlessly between merchant accounts, facilitated entirely within the Hydra ledger. \n・Native assets integration and demonstration using ADA and USDM. All balances and transactions in this demo are denominated in ADA and/or USDM. This demonstrates our multi-asset capability on Hydra and lays the foundation for broader support of tokens within decentralized commerce workflows. \n\n🎥 Video DEMO 2: Mobile Client to Merchant Payment (Link) \n\nThis demonstration shows end-to-end mobile payment through a contactless BLE-enabled terminal. Details include:\n・This demonstration showcases a fully operational payment flow from a mobile client to a merchant using our BLE-enabled terminal, and our hydra payment system.\n・Given the current lack of support for development in native environments and mobile operating systems, the client initiates a USDM deposit by transferring funds to a designated Layer 1 contract address. To facilitate contract interaction and preserve UX continuity, administrative signing is performed on behalf of the user. This step simulates client-side contract execution pending deeper mobile support.\n・Opening Hydra head and committing transactions to Layer 2 system, the client initiates payment via a BLE beacon terminal. The terminal detects the presence of the client’s device, triggers the transaction logic, and completes the transfer to the me",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 16,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "10",
+      "cost": 44000,
+      "promise": "・Solution to scaling the payments system, given existing Hydra Head limitations including utxo batching, Chang hardfork adjustments and other phase one improvements.",
+      "criteria": "・Working and tested code implementing the solution to batch utxo's to scale the number of users that can be served by the system - as a result the payment system should enable linear scaling of the maximum number of users. As acceptance criteria, the system should enable spinning up, concurrently managing and closing up to 10 Hydra heads running our app at the same time.\n・Working and tested code implementing the updates depending on incremental commits, addressing findings from MVP phase and Chang hardfork related updates. Our MVP solution (from fund 12) had limitations regarding the ability t",
+      "report": "Milestone 2 - Proof of Achievement\n\nA. Output: Solution to scaling the payments system\nAcceptance criteria: Working and tested code implementing the solution to batch utxo's to scale the number of users that can be served by the system - confirmed in the Evidence links. (Main project repository - Blazar Hydra)\nEvidence: \n・Repo including the batching system\n・Link to public drive with video outlining the batching system\n・Scaling / load balancer design brief:\n・Hydra pay Load Balancer Documentation\n\n \nB. Output: Chang hardfork adjustments and incremental commits integration\nAcceptance criteria: Working and tested code implementing the Chang hardfork related updates and incremental commits (Main project repository - Blazar Hydra)\nEvidence: \n・Link to Github with code repo including the MVP and Chang hardfork related updates.\n・Chang Hardfork updates report by TxPipe\n・Incremental commit code\n・Complete incremental commits guide\n・Chang and incremental commits updates & challenges report (TxPipe)\n\nBuilding in public (full milestone report):\n\nDuring this milestone we faced two main challenges.\nFirst, Hydra went through several iterations up to Hydra 1.0 (September 2025), which required us, together with TxPipe as our main contractor, to revisit and rework significant parts of the codebase, plus additional internal work and coordination.\nSecond, the Chang hardfork introduced changes on Cardano that forced us to review all the libraries and SDKs we rely on, patch our own code, and coordinate with SDK maintainers to update specific components. We knew about this beforehand and it was part of the expected work of the milestone.\nAdditionally, for a particular set of transactions that must happen inside Hydra, we contracted the Atlas transaction builder library team to adapt their tooling to Hydra. This work is captured in Atlas pull request #465, where the developer notes that “unlike standard payment signing key formats, Hydra uses a custom format (see Hydra/Tx/Crypto.hs), which ha",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 33,
+      "cut": true
+    }
+  ]
+}

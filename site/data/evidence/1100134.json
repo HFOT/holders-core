@@ -1,0 +1,63 @@
+{
+  "title": "FiDa - Decentralized Risk Transfer Protocol",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 8000,
+      "promise": "Complete documentation of the insurance policy and investor script life-cycles.\nThis will be presented as both:\n1. a gitbooks website and\n2. state machine diagrams running mock on stately.ai\n﻿﻿",
+      "criteria": "The gitbooks website must provide a full understanding of how a decentralized insurance policy can be issued on-chain. \nHow the terms of the contract are interpreted in order for all possible outcomes to be evaluated, processed, and fulfilled by anyone. \nYou will also be able to run simulations of these workflows on the website itself through the provided state charts.",
+      "report": "You can find the documentation supplying the evidence of this milestone as agreed here: https://docs.fida.finance\nA high level overview of how the policy can be introduced (as per our understanding of the first rejection) to the chain can be seen here :\nhttps://docs.fida.finance/usage/issuing-a-policy\n\nYou will also find multiple links to the two contract state transition diagrams: \nFida Policy Contract (https://stately.ai/registry/editor/2dd90700-b45e-481b-ac2f-f21c7c869a4d?machineId=5f88546f-aac3-4c8a-a749-ec97a28e060c&mode=Simulate)\nInvestor Portfolio Contract (https://stately.ai/registry/editor/2dd90700-b45e-481b-ac2f-f21c7c869a4d?machineId=c254a6f1-2527-4a59-9cee-1a59b5c9d4ad&mode=Simulate)",
+      "kinds": [
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "Since there are two main sets of validators; those corresponding to the insurance policy itself, and those corresponding to the investors; we will be focusing on the validators for the insurance policy first.\nIn this milestone we will deliver the full set of validators for the insurance policy script lifecycle.\nThis will include evidence of the state transitions from the previous milestone recorded on the Cardano testnet and documented in the gitbooks site for confirmation.",
+      "criteria": "Although it is not final, the equivalent following operations will be possible:\n・fundPolicy (cardsToPurchase)\n・retractPolicyFunding (cardsToReturn)\n・cancelPolicy (reason)\n・activatePolicy ()\n・payPolicyPremium (ammount)\n・issuePolicyClaim (ammount, reason)\n・expirePolicy ()\n・issueFinalPolicyClaim (ammount, reason)",
+      "report": "Like we had mentioned throughout the application some names and processes might end up being different than what was mentioned in our original submission. This is exactly what has happened! We are still delivering the exact same functionality but have found a different abstraction / model that has better tradeoffs for how we understand the protocol will be used in Cardano.\nAs it stands, we have introduced an intermediate construct: the \"Piggy Bank\" which is a separate script address intermediating between the policy holder and the investor. this allowed us to avoid what was appearing to be some duplication in checks between the scripts handled at the policy side and what would have been scripts handled separately at the investment side. With the introduction of the Piggy Bank abstraction, we have a single set of scripts that validates actions from both sides.\nWe have now written what in essentially the full on-chain suite of contracts. Alongside the full open source codebase for the smart contract suite, the following set of on-chain transactions conforming to the scope of this second Milestone 2!\nCreate new Fida Policy:\n・make-new-policy \n\nhttps://preview.cardanoscan.io/transaction/dee425d869bfcf1d07f3f9dbe20556128760cd753707e4aa9ee7a976c0eeed50\nGet policy by id:\n・get-policy\n\nnot applicable\nBuy Fida cards:\n・buy-fida-cards\n\nhttps://preview.cardanoscan.io/transaction/0fbde0f0f12458c81f5a3d33fed886dffcf5d9023b4d8b05f295a711d9973f8a\nPay for a insurance policy with a given wallet:\n・pay-for-a-policy\n\nhttps://preview.cardanoscan.io/transaction/a27dfbd3d6ff77640d82da52996ac413103c9df2fed49f40a5cdd6125b36b347\nSell Fida cards:\n・sell-fida-cards\n\nhttps://preview.cardanoscan.io/transaction/ef2146f513cb8334076621c2f6c1fa6ec2e4c622840bf02f8983006447d96d60\nComplete funding (going OnRisk):\n・complete-funding\n\nhttps://preview.cardanoscan.io/transaction/d6fc3a17e088a1f6c748a34f422cf0f7c1e101daa67038d9599ab7335245da1f\nStarts a claim process for an OnRisk contract:\n・issue-claim\n\nhttps://",
+      "kinds": [
+        "chain",
+        "code",
+        "doc"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "Since there are two main sets of validators; those corresponding to the insurance policy itself, and those corresponding to the investors; we will be focusing on the validators for the investor in the subsequent stage.\nIn this milestone we will deliver the full set of validators for the investor script lifecycle.\nThis will include evidence of the state transitions from the previous milestone recorded on the Cardano testnet and documented in the gitbooks site for confirmation.",
+      "criteria": "The investor scripts are all implemented and insurance policies can be found in all states on testnet. \nThe documentation of the gitbooks website is extended to provide the parameter details around this new contract.\nAlthough it is not final, the equivalent following operations will be possible and documented:\n・buyCards (cardsToBuy)\n・cancelPurchase (cardsToReturn)\n・recievePremium ()\n・payPolicyClaim (amount)\n・unlockPolicyCollateral (expriedPolicy)",
+      "report": "Finally, we were able to come back to this after all the work on the web prototype and summit preparations. \nYou can find the details in the gitbook site here: https://docs.fida.finance/usage/command-line-interface/claims-management\nThe video walkthrough: https://drive.google.com/file/d/1-5X0Kx88IMN3sJ5veg8LbPxAhtjfKKhN/view?usp=sharing\nHere's the short list of all the new transactions recorded on chain:\nAction : Transaction\n・fail-claim: 9612a86dd61\n・claim-premium: bc537db8d4d 9ed730db98a\n・pay-for-claim: 0aea116de2f 127a5af1dfc\n・expire-policy: 7680acc7b8f \n・unlock-collateral: 3ebc5bf6929 3c48434a3ad\n\nFinally, here is the link with all the documentation: https://drive.google.com/drive/folders/1gRdqzbYd1H3N7EMaLqsWmJ-qaC7Si2-u?usp=sharing\nThanks!",
+      "kinds": [
+        "chain",
+        "doc",
+        "other"
+      ],
+      "links": 14
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 32000,
+      "promise": "Documentation for running the command line interface to create contracts, pay premiums, invest, and collect claims using our deployed testnet scripts.\nAdditionally a final closeout report and closeout video will be supplied as a section in the gitbooks page. \nThe closeout report will contain the conclusions and what was achieved by the project and a link to a brief closeout video, that allow the community to quickly understand the outcomes of the project.\nIn summary the final outputs will be:\n・Updated documentation site with all support documentation up this point\n・Command line (cli) executable able to operate all on-chain fida functions.\n・Closeout report (as both a separate PDF and section in the updated documentation) as per Catalyst requirements\n・Closeout video as per Catalyst requirements explaining everything achieved with the supplied funding.",
+      "criteria": "In addition to the closeout report, the final milestone will include an executable cli file, that will allow the cardano community to start experimenting with decentralized insurance.\nYou will be able to use the cli to:\n・Create a policy, \n・Invest in a policy, \n・Pay/collect premiums to a policy, \n・Establish/receive a claim on a policy, \n・Receive unlocked funds on the policies end. \n\nThe closeout video shall be made to meet exact Catalyst requirements. Unless in conflict with Catalyst requirements, it should also have a description of everything achieved in the buildout of the feature and an inv",
+      "report": "Finally, we're all the way there! \nYou can find the details in the gitbook site here: https://docs.fida.finance/usage/command-line-interface/claims-management\nYou can find the close-out report here: https://docs.google.com/document/d/18NybPGECdzclJacKi1CO5R5QJUVAufueFgkvszrYmrA/edit?usp=sharing\nThe close-out video walk-through: https://youtu.be/Q7akiG-cses\nHere's the short list of all the new transactions recorded on chain:\nAction : Transaction\n・expire-claim: 85f26e26880869aa1639\n・collect-claim-payment: b2bf97515948ab312310\n・cancel-policy: 9303ac0e242d16c8226f \n・refund-premium-on-cancel: \n・6c56d8a1c795d66668c2\n・939e4d7a6a996c9f5194\n・85e6b687278517227fd3\n\nFinally, here is the link with all the documentation: https://drive.google.com/drive/folders/18OGOAqgJm8aNfhJARBO8VPmzNacekYYa?usp=drive_link\nHere is the published release of the Cli on github: https://github.com/fida-services/fida-contracts/releases/tag/0.0.4",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 16,
+      "cut": true
+    }
+  ]
+}

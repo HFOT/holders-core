@@ -1,0 +1,74 @@
+{
+  "title": "MLabs - Re-think CIP-30 wallet interface standard",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40714,
+      "promise": "・CIP-30 is a universally accepted web-based wallet standard that many Cardano applications use for dApp<->wallet interactions. Its current definition has fallen behind the evolving needs of app developers and users, so this project seeks to evolve the standard to meet those needs better.\n・The first phase of this project will involve the creation of an open space where interested parties can participate in the discussion on how to improve CIP-30. The project team will put forward their suggestions for the CIP-30 improvements and will elicit feedback/ideas from the participants.\n・The goal of this phase is to generate some different options for the CIP-30 improvement approach and evaluate their relative pros/cons, ideally from a suitably representative group of Cardano dApp developers. This will allow us to draft a strong initial CIP draft PR to post in Cardano Foundation’s CIP repository, so that the PR discussion can more efficiently focus on refinements of the chosen approach rather than diverging on different paths the CIP could have taken.\n・The discussion space will be hosted under the umbrella of the Cardano technical working groups, particularly the Developer Experience Working",
+      "criteria": "・The shared chat is established, open for participation, and promoted in several important Cardano forums/social platforms. Major wallet software developers have been encouraged to participate in the discussion.\n・The project team has clearly articulated their ideas for CIP-30 improvement and some guidelines for participants to contribute to the discussion fruitfully.\n・A series of scheduled calls has been held, and minutes from these calls have been recorded.\n・The summary report describes several of the main ideas developed in the CIP-30 improvement discussion and their relative pros/cons.\n・Not",
+      "report": "Response to Reviewers (2024-01-31)\nThe original PoA submission (included below) for this milestone was rejected by the reviewers for the following reasons:\n・(Both reviewers RE Deliverable 1) Insufficient evidence of promotion of the new wallet standard stakeholder consultations on social media.\n・(Reviewer 1 RE Deliverable 3) Unclear about where to find the document summarizing the common understanding of the problem that the new wallet standard(s) are trying to solve and explaining the role/goals/modes of wallets.\n\nRegarding Deliverable 1, our original approach to social promotion of the initiative changed after we saw the remarkable level of interest in the initiative from the CIP Editors and other stakeholders to whom we privately reached out. In particular, the CIP Editors' enthusiasm convinced us to prefer them as the natural chairs of the stakeholder consultation sessions. They took it upon themselves to promote the sessions, and it made more sense for us to like and retweet their messages, given their much wider audience (e.g. one of them has 16,700 followers). Here are some of the public tweets about the sessions:\n・(Workshop #1) (viewed 2,386 times) https://twitter.com/adamKDean/status/1727364301802049756\n・(Workshop #1) (viewed 2,662 times) https://twitter.com/adamKDean/status/1729150072288620686\n・(Workshop #2) (viewed 1,129 times) https://twitter.com/adamKDean/status/1731754898205847909\n・(Workshop #2) (viewed 960 times) https://twitter.com/Ryun1_/status/1733997991789256748\n・(Workshop #3) (viewed 1,106 times) https://twitter.com/adamKDean/status/1735380998182015298\n・(Workshop #3) (viewed 2,422 times) https://twitter.com/adamKDean/status/1743414683309334893\n・(Wallets Working Group promotion) (viewed 3,489 times) https://twitter.com/Ryun1_/status/1749807909540876436\n\nRegarding the Discord links we previously provided for Deliverable 1, we have confirmed today that they still work. The nature of Discord is that it requires people to join a channel's Discord serv",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "7",
+      "cost": 81429,
+      "promise": "This phase will focus on developing a CIP to standardise JSON representations of Cardano domain types. The goal of the CIP will be to solve the problems outlined in CPS-0011.\nThe deliverable for this phase of the project will be a CIP document, containing a JSON schema for the current era. It will be posted as a pull request (PR) on Cardano Foundation’s repository for CIPs.\nThe document will motivate the problem that the CIP is solving, provide a technical specification of the chosen approach, and explain certain technical decisions in a rationale section.",
+      "criteria": "・The CIP is complete, providing clear and detailed JSON specifications.\n・The document effectively addresses the necessity for standardised JSON representations, explaining how this standardisation benefits both developers and end-users.\n・The CIP is ready for review, demonstrating thorough coverage of technical specifications and potential use cases.\n・Automated tests for schema encoding are provided in a separate repo.",
+      "report": "Outputs:\nA CIP to standardise JSON representations, posted as a pull request on the Cardano Foundation's CIP repository\n\nAcceptance Criteria:\n・The CIP is complete, providing clear and detailed JSON specifications.\n・The document effectively addresses the necessity for standardised JSON representations, explaining how this standardisation benefits both developers and end-users.\n・The CIP is ready for review, demonstrating thorough coverage of technical specifications and potential use cases.\n・Automated tests for schema encoding are provided in a separate repo.\n\nEvidence:\nA link to the PR - we are proud to announce that it has been merged\nhttps://github.com/cardano-foundation/CIPs/pull/766\n\nA link to a separate testing repo:\nhttps://github.com/mlabs-haskell/cip-0116-tests",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "8",
+      "cost": 27143,
+      "promise": "This phase will focus on developing a CIP to standardise the Cardano query layer. The goal of the CIP will be to solve the problems outlined in CPS-0012.\nThe deliverable for this phase of the project will be a CIP document, containing a query layer API specification. It will be posted as a pull request (PR) on Cardano Foundation’s repository for CIPs.\nThe document will motivate the problem that the CIP is solving, provide a high-level technical specification of the chosen approach, and explain certain technical decisions in a rationale section.",
+      "criteria": "・The CIP is complete, providing clear and detailed query layer API specifications.\n・The document effectively addresses the necessity for a standardised query layer API specification, explaining how this standardisation benefits both developers and end-users.\n・The CIP is ready for review, demonstrating thorough coverage of technical specifications.",
+      "report": "Outputs:\nA CIP to standardise the Cardano query layer, posted as a pull request on the Cardano Foundation's CIP repository\n\nEvidence:\nA link to the PR - the PR is still open and going through the CIP process\nhttps://github.com/cardano-foundation/CIPs/pull/869\n\nThe PR contains a specification of the API in various formats: OpenAPI, Typescript and JSON-RPC\nThis repo was used as a helper to generate the CIP, it contains a yaml specification of the API, which is then compiled in to concrete formats (TS, OpenAPI, etc).\nhttps://github.com/mlabs-haskell/query-layer-impl",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "16",
+      "cost": 81429,
+      "promise": "This phase will focus on developing a CIP for improving the wallet connector API which supersedes CIP-30. \nThe deliverable for this phase of the project will be a CPS document explaining the need for a better wallet standard, and a CIP document, containing a specification for the new wallet connector API that covers the problems outlined in the CPS. Both will be posted as a pull request (PR) on Cardano Foundation’s repository for CIPs.\nThe CIP document will provide a high-level technical specification of the chosen approach, and explain certain technical decisions in a rationale section.",
+      "criteria": "・The CPS document is ready for review.\n・The CIP document includes sufficient low-level details in the specification and implementation plan sections, so that CIP adopters can clearly understand how to proceed.\n・The document effectively addresses the necessity for a new wallet connector API, explaining how this new API benefits both developers and end-users.\n・The CIP is ready for review",
+      "report": "EVIDENCE\nPlease find the links to our evidence for this PoA below:\n\nA link to the pull request (PR) for the new CPS on Cardano Foundation’s CIP repository:\nhttps://github.com/cardano-foundation/CIPs/tree/master/CPS-0010\n\nA link to the pull request (PR) for the new CIP on Cardano Foundation’s CIP repository:\nhttps://github.com/cardano-foundation/CIPs/pull/957/files#diff-77fa7d71c1149f727dc693fb12eb68c95af075b7cc947bcb6bf9a673682d6ff7",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "18",
+      "cost": 40715,
+      "promise": "In this phase of the project, we will aim to ensure all feedback has been addressed on the CIPs, with the goal of getting each CIP merged with “Proposed” status. \nThe CIPs should have sufficient detail and motivation/rationale to be adopted by stakeholders in the community.\nConsequently, we will leverage members of the Cardano community (CIP editors, influencers and other stakeholders) to help promote the CIPs among Cardano developers and users.\nIdeally, the CIPs would be uniformly adopted across most of the Cardano ecosystem, so that dApp developers can more consistently depend on the improved functionality and standardisation.\nWe will include a video, report, and any other necessary closeout documentation.\nNote: In principle, the results of this phase of the project should be sufficient (according to the process described in CIP-1) for our CIPs to be merged into the CF CIP repo with a status of “Proposed.” However, we cannot control the decisions and administrative activity of the CIP editors committee. We will make best efforts to address CIP editors’ feedback and encourage them to merge the CIP PR, but the project’s delivery should not be stalled by the CIP admin process.",
+      "criteria": "Any feedback on the CIPs from the previous milestones has been addressed (by changes and/or comments as applicable).\nEach CIP document is clear and contains sufficient information for a typical adopter to implement.\nA visible effort (by CIP editors, influencers, other stakeholders, and/or MLabs) has been put into promoting the CIPs, explaining them in an approachable manner, and socialising them among potential adopters.\nCloseout video, report, and any other necessary documentation submitted.",
+      "report": "EVIDENCE\nLinks to social media posts, twitter spaces, interviews, etc.\nWe engaged in a social media campaign promoting the standardization work involved in this project. This complemented the initial community-based work we accomplished with the wallet working group.\n・https://x.com/MLabs10/status/1887776386779390145\n・https://x.com/MLabs10/status/1891462794681155596\n・https://x.com/MLabs10/status/1891154547717874012\n・https://x.com/MLabs10/status/1889909455917293748\n・https://www.linkedin.com/posts/mlabsconsulting_cip-0116-standard-json-encoding-for-domain-activity-7292915934187442176-6Ck3/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEpz1cYBrxvQ5n9pax1OtfchgUBAeZCX4nU\n\nFinalised CIP documents contained in a PR or merged into the CF CIP repo.\nOver the course of this project, we opened several CPSs and CIPs to improve on CIP-30. Specifically, we opened 3 CPS:\nCPS-0010 Introduces issues with cip-30 and current connection API\nhttps://github.com/cardano-foundation/CIPs/tree/master/CPS-0010\nCPS-0011 Introduces issue with CDDL types used in cip-30\nhttps://github.com/cardano-foundation/CIPs/tree/master/CPS-0011\nCPS-0012 Motivates the advantages of full data wallets\nhttps://github.com/cardano-foundation/CIPs/tree/master/CPS-0012\nAnd 4 CIPs:\nCIP-0116 Which defines JSON schemas for the CDDL types\nhttps://cips.cardano.org/cip/CIP-0116\nCIP-0144 Which defines the base wallet connector API and sets the stage for the extensions\nhttps://github.com/cardano-foundation/CIPs/pull/957\nCIP-0147 An extension for an own data wallet, same capabilities that cip-30 gives today\nhttps://github.com/cardano-foundation/CIPs/pull/986\nCIP-0139 An extension for a full data wallet, that extends the wallet capabilities by enabling querying global blockchain data\nhttps://github.com/cardano-foundation/CIPs/pull/869\nDiscussions on the Github PR thread.\nOf course, discussions on PR threads have been ongoing throughout this process:\n・https://github.com/cardano-foundation/CIPs/pull/957\n・https://github.com",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 17,
+      "cut": true
+    }
+  ]
+}

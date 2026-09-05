@@ -1,0 +1,70 @@
+{
+  "title": "MLabs - CEMScript SDK: get your DApp implementation from annotated on-chain logic state-machine",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 40714,
+      "promise": "・Main API definitions (for constraint language and state machines) and design.\n・Research on used backend solutions and relevant constraint language comparison.\n・This includes existing solutions and similar methods review and evaluation of API usage on examples for our model examples.",
+      "criteria": "・An open-source repository exists and is structured for the project.\n・Main API class types are present.\n・Research, consultation, and spec documents are provided in the repository\n・The design document is clearly written and provides sufficient detail for the next milestone to begin.",
+      "report": "Per our Evidence of milestone completion we have several links, including to the repository and relevant docs:\n\nhttps://github.com/mlabs-haskell/cem-script/pull/11\n\nA report covering milestone one outputs:\nhttps://github.com/mlabs-haskell/cem-script/pull/12\n\nAnd a brief demo video:\nhttps://www.loom.com/share/f551d58680ac4584a22fbd661a3b6294",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 36190,
+      "promise": "・Generic implementation of Tx submit/query code\n・Generic Plutus on-chain implementation",
+      "criteria": "・Generic implementation for transaction submit/query code, and Plutus on-chain script are present.\n・Implementation is checked by rewriting the main Hydra Auction and POCRE scripts using it, checking it works fine, and documenting problems and code simplification. They will be used for all later work evaluations.\n・Implementation is checked by implementing the main eUTxO model patterns described in Plutomicon.",
+      "report": "OUTPUTS\nGeneric implementation of Tx submit/query code\nGeneric Plutus on-chain implementation \n\nACCEPTANCE CRITERIA\nGeneric implementation for transaction submit/query code, and Plutus on-chain script are present.\nImplementation is checked by rewriting the main Hydra Auction and POCRE scripts using it, checking it works fine, and documenting problems and code simplification. They will be used for all later work evaluations.\nImplementation is checked by implementing the main eUTxO model patterns described in Plutomicon.\n\nEVIDENCE\n\nOutput 1 (Generic implementation of Tx submit/query code) is implemented in:\nhttps://github.com/mlabs-haskell/cem-script/pull/16/files#diff-f63b1271709ee3f945ae8aa8be955788414c5a54985f90d19737fafbe0f170b1\n\nAnd its usage is demonstrated in tests:\nhttps://github.com/mlabs-haskell/cem-script/pull/16/files#diff-9e8bdd24d557cfe94781d844e68e97f4b626c833420d18df4e04619a54273b34\n\nOutput 2 (Generic Plutus on-chain implementation) is implemented in:\nhttps://github.com/mlabs-haskell/cem-script/pull/16/files#diff-2f7c9ba5cd94d94deac22530316c56cf097f2ccac5c5b05fc7a01e584ad927c6\n\nUsage for compiling main examples is demonstrated in:\nhttps://github.com/mlabs-haskell/cem-script/pull/16/files#diff-b2d6d57a0b1d8a1a7f096604d83882776ae2e2baaf068a9fb56c2d428cc104eb\n\nDocumentation for running tests added:\nhttps://github.com/mlabs-haskell/cem-script/pull/16/files#diff-b335630551682c19a781afebcf4d07bf978fb1f8ac04c6bf87428ed5106870f5\n\nDemo video:\nhttps://www.youtube.com/watch?v=75jWuWYKFAs\n\nReport:\nhttps://github.com/mlabs-haskell/cem-script/pull/16",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 7
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 76905,
+      "promise": "・Support for model-based testing (with quickcheck-dynamic) and tx mutation testing\n・Support for (basic) markdown spec generation",
+      "criteria": "・The library supports generic model-based testing (with quickcheck-dynamic) and tx mutation testing (mostly copying or reusing already available tx mutation solutions)\n・The library supports markdown spec generation as well as CIP-0057 script API\n・Example projects are evaluated, and results are documented (e.g. such as problems and code simplification)",
+      "report": "OUTPUTS\n\nSupport for model-based testing (with quickcheck-dynamic) and tx mutation testing\nSupport for (basic) markdown spec generation\n\nEVIDENCE\n\nPlease find our updated report with clarifications:\nhttps://github.com/mlabs-haskell/cem-script/blob/master/docs/catalyst_milestone_reports.md#milestone-3\n\nAs well as our demonstration video:\nhttps://youtu.be/l16NNsFNpkg",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 67857,
+      "promise": "・On-chain code optimization, profiling, and Plutarch on-chain code generation.",
+      "criteria": "・The library supports Plutarch on-chain code generation and various on-chain code optimizations. Both solutions are documented.\n・Benchmark utils are provided, different backends are evaluated on examples, and results are analysed and documented.",
+      "report": "We attemtped to communicate with the reviewers via the chat function but were unable so we are resubmitting with this additional comment. Essentially, we were confused by the refusal reasons as what was noted as missing was provided. The linked report contains a video link (https://www.youtube.com/watch?v=wveLyvuKjeI), and the GitHub document itself is what we were submitting as our report. \nTherein, we highlight the main changes made:\n・Static DSL for constraints and Plutarch on-chain code generation and optimisation (PR#96)\n・Profiling implementation (PR)\n\nAnd link to the code involved. \n\nAgain, please find our PoA document for Milestone 4 here:\nhttps://github.com/mlabs-haskell/cem-script/blob/master/docs/catalyst_milestone_reports.md",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 70120,
+      "promise": "・Support for L1 chain indexing.\n・Finalize library testing and documentation",
+      "criteria": "・The library supports L1 production chain indexing.\n・Examples (and overall related Hydra SDK) are changed to use this feature and evaluated.\n・A finalized repository exists with clean code, documentation, and examples for the features developed in this project.\n・An overall tutorial is written demonstrating the integrated workflow with the library.",
+      "report": ":: UPDATE ::\n\nWe have a shorter closeout video per request:\nhttps://www.youtube.com/watch?v=Kf6khWl9VX8\n\n---------\n\nPlease see this link for out closeout summary, including to the relevant deliverables, closeout video/report, and so on:\nhttps://github.com/mlabs-haskell/cem-script/blob/master/docs/catalyst_milestone_reports.md",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

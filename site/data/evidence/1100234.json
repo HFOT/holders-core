@@ -1,0 +1,59 @@
+{
+  "title": "POAP in Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40000,
+      "promise": "・Open Source GitHub repo with Smart Contracts code\n・Open Source GitHub repo with automated Smart Contracts tests\n・Smart Contract Deployment Report",
+      "criteria": "・Smart Contracts are successfully deployed on the Milkomeda Mainnet \n・Smart Contracts pass comprehensive testing",
+      "report": "This is the Proof of Achievement document for Milestone 1 of POAP in Cardano Project: https://docs.google.com/document/d/1L78Q56uA4PhOYfB1_SoopCfLHL7Gv_tlAl0vMNcZP9M/edit?usp=sharing\nThere you can find:\n・Open Source GitHub repo with Smart Contracts source code\n・Open Source GitHub repo with automated Smart Contracts tests\n・Smart Contract Deployment Report Document\n\nAcceptance Criteria\n・Smart Contracts were not only deployed to Milkomeda Mainnet but also to Milkomeda DevNet\n・Smart Contracts pass comprehensive testing - example on how to run tests along with the source code of all automated tests can be found on the GitHub repo.\n・In addittion to all this, we have also provided a document with information about the Project Kickoff",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 40000,
+      "promise": "・Open Source GitHub repo with DApp Backend code using Paima Engine\n・Open Source GitHub repo with Indexer code\n・Showcase Video: How the POAP Indexer Works",
+      "criteria": "・Indexer seamlessly shows the state of each POAP a user holds\n・Indexer is successfully integrated with both Milkomeda and Cardano blockchains",
+      "report": "This is the Proof of Achievement document for Milestone 2 of POAP in Cardano Project: https://docs.google.com/document/d/1zsZmpTrCQGlIohi_EEZ3Ox2li3H2_pyEyT4KYr9U6xg/edit?usp=sharing\nThere you can find:\n・Link to Open Source GitHub repo with Backend code using Paima Engine\n・Link to Open Source GitHub repo with Indexer code also using Paima Engine\n・YouTube Link to \"Showcase Video: How the POAP Indexer Works\"\n\nAcceptance Criteria\nIndexer seamlessly shows the state of each POAP a user holds: this is showcased in the video. I will explain how it works:\n・The event organizer (issuerId = 0) creates an event (ID 1) against the POAP Smart Contract\n・The event organizer (issuerId = 0) creates another event (ID 2) against the POAP Smart Contract\n・These 2 events are captured by Paima Engine (from the blockchain) and saved to the local database\n・The user claims the POAP for event ID 1\n・These new event is captured by Paima Engine and the status for this POAP is recognised as MINT (because the user is minting a POAP from issuerId 0 for the first time)\n・Now the user claims the second POAP, but this time for event ID 2\n・These event is captured by Paima Engine but this time the status for the POAP is recognised as UPDATE (because the user is minting another POAP from issuerId 0)\n・With this we are demonstrating that the Paima Engine and the Smart Contract are working as expected because they recognise the difference between MINTING a new POAP and UPDATING an existing POAP.\n\nBoth the Indexer and the Smart Contracts are deployed in Milkomeda Cardano Sidechain (Testnet at this stage), to offer interoperability with Cardano as stated in the project original proposal.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 40000,
+      "promise": "・UI/UX Designs\n・AdaSouls Front-End interacting with POAP in Cardano (MVP)",
+      "criteria": "・Front-End MVP implements designs correctly\n・Front-End MVP implements all functions of POAP smart contracts\n・Interoperability with Cardano is working as expected and users can interact no matter what chain they are connected to",
+      "report": "This is the Proof of Achievement document for Milestone 3 of POAP in Cardano Project: https://docs.google.com/document/d/1h_5fIflOwRrrY9yIFVpoBz4cPeAwnJIsy3Va1qGutqg/edit?usp=sharing\nThere you can find:\n・Link to Figma file with UI/UX Designs\n・Link to AdaSouls Front-End interacting with POAP in Cardano (MVP)\n・YouTube Link to \"Demo Video: How to Create an On-Chain Event\"\n・YouTube Link to \"Demo Video: How to Mint a POAP\"\n\nAcceptance Criteria\n・Front-End MVP implements designs correctly\n・Front-End MVP implements all functions of POAP smart contracts\n・Interoperability with Cardano is working as expected and users can interact no matter what chain they are connected to\n\nTechnical Note\nWe have been experimenting issues with Milkomeda Testnet RPC. This is why you will find that we are using Polygon Amoy Testnet for this Milestone. We want to express that this is not going to affect the goal of interoperability with Cardano, which is also an essential part of the scope of this project. We just have decided, in order not to delay the development and testing of our protocol, to switch to Polygon Amoy until problems with Milkomeda connectivity are solved.\nProblem Creating an Event\nPlease choose a \"Expiry Date\" (3 days in the future at least) when creating an event, as the smart contract is enforcing that validation. Once you create the Event, it will appear under the \"Events\" list and you will be able to \"Mint a Token\" by clicking the \"+\" button. Then the minted token will appear under the \"Poap Collection\" menu.\nPlease see new Demo Video for reference: https://youtu.be/bXkKc8SbYa8",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 40000,
+      "promise": "・Web Portal\n・Documentation for POAP Smart Contracts\n・Documentation for Indexer\n・Documentation for AdaSouls Portal Development",
+      "criteria": "・The AdaSouls web portal is successfully developed and deployed\n・The AdaSouls web portal provides a user-friendly interface for event management and user NFT claim\n・The AdaSouls web portal integrates seamlessly with the Milkomeda/Cardano blockchains, enabling users to interact with the smart contracts and access event-related data\n・The AdaSouls documentation is comprehensive, well-structured, and easily understandable for both end-users and developers",
+      "report": "Note for the reviewers: please check all the documentation provided as the feedback we have received from one of the reviewers is not accurate. The reviewer states that: “The document we have submitted contains only links to UI/UX Designs, the web portal, and 2 very short videos”. This is not what we have submitted for Milestone 4 but for Milestone 3, so clearly one of the reviewers have checked the wrong Milestone documentation. We have submitted all the required documentation in the previous proof of achievement already. In addition to this, the video we submitted is not part of the outputs agreed upon for this milestone, it was just an extra output we decided to include to show the potential of the app, so milestone can’t be refused because the video has “no voice”.\nThis is the Proof of Achievement document for Milestone 4 of POAP in Cardano Project: https://docs.google.com/document/d/1AlKeOy5SI1XCOgcEdGHN1sNDpDArfwCKp-zlESTjqLY/edit?usp=sharing\nThere you can find:\n・Link to AdaSouls web portal\n・Link to POAP Smart Contracts documentation\n・Link to Indexer documentation\n・Link to AdaSouls Web Portal documentation\n・Full Demo video including how to create an event, distribute POAPs and how to claim them\n\nAcceptance Criteria\n・The AdaSouls web portal is successfully developed and deployed\n・The AdaSouls web portal provides a user-friendly interface for event management and user NFT claim\n・The AdaSouls web portal integrates seamlessly with the Milkomeda/Cardano blockchains, enabling users to interact with the smart contracts and access event-related data\n・The AdaSouls documentation is comprehensive, well-structured, and easily understandable for both end-users and developers\n\nProject Status and Updates\n・We have made a lot of progress with the Paima Engine Backend (Indexer) during this milestone. For the final phase, we will be ready to integrate this piece of software to make the whole application much more robust and scalable.\n・Unfortunately and due to the publicly known",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 9,
+      "cut": true
+    }
+  ]
+}

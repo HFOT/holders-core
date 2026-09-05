@@ -1,0 +1,71 @@
+{
+  "title": "Andamio SDK & UTxO-RPC client",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20001,
+      "promise": "1. Detailed project plan\n2. Team document",
+      "criteria": "1. Project plan includes:\n・Project scope\n・Definitions and specifications for SDK modules\n・Risk and mitigation plans\n\n2. Team document includes:\n・Short bios of core team members, along with their skill sets and roles in the project\n・Project management and communication processes",
+      "report": "・Project plan: \n\nhttps://docs.google.com/document/d/1oGZFUeaYWPQ8rdVGQqlhxQvu6l8UiPCA/edit?usp=sharing&ouid=102051271132840103624&rtpof=true&sd=true\n\n・Team document\n\nhttps://docs.google.com/document/d/1zFbWO_OMjAH14eGcTkUWfdbCMQ4fKI7s/edit?usp=sharing&ouid=102051271132840103624&rtpof=true&sd=true",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 20000,
+      "promise": "1. SDK architecture document\n2. Working prototype\n3. Documentation draft",
+      "criteria": "1. SDK architecture document includes\n・Design principles\n・Core components\n・Data Flow\n\n2. Prototype showcasing Andamio Network queries\n・Course, project, and user information\n\n3. Documentation drafted and ready for feedback",
+      "report": "・SDK Architecture Document\n\nhttps://docs.google.com/document/d/14cfXXaGoAMZDEx-OCOQiJqEfHU8b9PJ_/edit?usp=sharing&ouid=102051271132840103624&rtpof=true&sd=true\n・Working prototype\n\nhttps://drive.google.com/file/d/1Qpqn4KD5MBrO5CHCmCxprUQJuIDrQCYt/view?usp=sharing\n・Documentation draft\n\nhttps://andamio-platform.github.io/docs-site/docs/sdk/",
+      "kinds": [
+        "doc",
+        "live"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 19999,
+      "promise": "1. A working client with UTxO-RPC integration capable of querying blockchain data (e.g., credentials, courses, and stats). \n2. Testing on Cardano testnet \n3. Documentation of the implemented functionalities",
+      "criteria": "1. The Andamio client successfully interacts with the blockchain via UTxO-RPC for basic queries or documentation on why it does not work. \n2. Report on Cardano testnet results\n・The client can connect to the Cardano testnet through the UTxO-RPC interface.\n・The client successfully queries course, project, and user information from the testnet, and the response matches the expected outputs\n・Test transaction logs show query parameters, response metadata, and testnet interaction details.\n\n3. Documentation explaining the client setup, how to interact with it, and the expected outputs.",
+      "report": "・Screen recording showing successful interactions with blockchain data and queries accessible here\n・Transaction log accessible here\n・Live documentation available here",
+      "kinds": [
+        "code",
+        "doc",
+        "live"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 20000,
+      "promise": "1. Client with fully integrated functionalities (.e.g., credential issuance and module management). \n2. Fully functional SDK supporting network transactions and interactions. \n3. Finalized developer documentation, including API references, examples, and a user guide.",
+      "criteria": "1. The Andamio client fully supports all transactions (e.g., querying and issuing credentials, managing modules, etc). \n2. The SDK supports all core functionalities as outlined in previous milestones.\n3. The documentation is live, accessible, and includes illustrative examples for developers.",
+      "report": "・Short screen recording showing the client interacting with the blockchain and performing key transactions can be found here.\n・A link to a Github repository with all relevant code publicly available can be found here.\n・A link to live documentation for the SDK can be found here.\n・A link to live documentation with transaction logs showing successful credential issuance and module management on the testnet can be found here.",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 25000,
+      "promise": "- Final project report with key findings\n- Closeout video summarizing the project’s impact\n- Documentation on next steps and potential future action plans",
+      "criteria": "- Final report reviewed and approved\n- Closeout video published and shared\n- Next steps documented and agreed upon",
+      "report": "・A final report document can be found here\n・A closeout video report can be found here\n・Next steps are detailed here",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

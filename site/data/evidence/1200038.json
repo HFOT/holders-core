@@ -1,0 +1,72 @@
+{
+  "title": "Begin Wallet Version 2 by Francis, Fluid and IAMX for Voting, Biometric Seedphrase, Payment Module shopify, Wallet can handle Bitcoin",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Implement a voting mechanism based on existing Cardano Improvement Proposals (CIPs) that integrates with product rankings, enabling users to vote on items like books or tokens listed on DEXes.\nThe milestone outputs as specific functionalities to be implemented in the Begin Wallet (Chrome) include:\n1. User Registration System for Voting: A system that allows users to register as eligible voters, ensuring they meet the necessary criteria and can participate in voting activities.\n2. Voting: An interface in the frontend of Begin App where users can cast their votes on various items, ensuring recording of each vote on the blockchain.\n3. Voting Results Display: A display of voting results, providing users with information on voting outcomes.",
+      "criteria": "The milestones are considered successfully achieved if a user of the Begin Wallet (Chrome) can:\n1. Register for Voting: Register as a voter within the app.\n2. Cast Votes: Participate in the voting process by casting votes on two items, with each vote being recorded.\n3. View Voting Results: Access and view results of the votes.",
+      "report": "Hi Team,\nI appreciate the time you took to review it. The feedback regarding Registration and Visualization will be described below.\n 1 - Register for Voting: Register as a voter within the app:\n The registration happens in the background, as it's implemented in the context of the Wallet, we're aware of the user's Address, which we use to register and make it unique. The user can only vote(rate) for one APP once, but they can also update their choice later, avoiding duplicate ratings per user. We use the staking address to make it unique, and it's also the user's ID on our off-chain index.\nFuther more, we believe that this extra step will generate friction to the process, specially because the user is the one paying for the transaction fee, so we thought to do It in the most effetient way, as the information is already available on the Wallet.\n・View Voting Results: Access and view the results of the votes:\n\n For visualization of the result, we forgot to add to the video, but we've the proof onchain. Every user is able to view their votes(rating) on the activity tab(Transaction History) and clicking on the transaction details we show the APPs and ratings for that particular user. \nFollowing here the video demonstrating the steps.\nhttps://youtube.com/shorts/UYDm3VHUKFo?feature=share\n\nLet us know if you need more information, but I believe we've cover the milestone completely.\n\nApprecite,\n\nFrancis Luz\nBegin Team",
+      "kinds": [
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "11",
+      "cost": 117000,
+      "promise": "Develop a system where users can generate a unique seedphrase from their biometrics, enhancing security for login and transaction authorization. The milestone outputs are specific functionalities to be implemented in the Begin Wallet (Chrome) or via partners include:\n1. Biometric Enrollment: Biometric Data Capture in reference to ISO/IEC 19794-5 or similar standards for capturing facial image data.\n2. Seedphrase Derivation: Develop an algorithm to convert biometric data into a seedphrase.\n3. Authentication System: Login to the Begin Wallet (Chrome) utilizing the generated seedphrase and facial recognition to support passwordless authentication.\n4. Authorization System: Transaction Authorization: Develop an authorization mechanism where users can authorize transactions using their biometric data and seedphrase.",
+      "criteria": "The milestones are considered successfully achieved if a user of the Begin Wallet (Chrome) can:\n1. Biometric enrollment, capture facial image data, \n2. Generate a seedphrase,\n3. Login to the Begin Wallet (Chrome) utilizing the generated seedphrase and facial recognition to support passwordless authentication,\n4. Authorize a transaction.",
+      "report": "Proof of Achievement for Milestone 2\nI'd like to send the conclusion of our Milestion 2 - Biometric Seedphrase.\nThe solution is integrated and will be available soon.\nVideo https://youtube.com/shorts/CLy1jRVFHUg?feature=share\nReport https://github.com/Maetti79/Begin-Fund12/blob/main/Begin%20Wallet%20-%20Catalyst%20Fund%2012%20Milestone%202%20Report.pdf\nbest regards\nDennis",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "12",
+      "cost": 58500,
+      "promise": "Develop a payment plugin for WooCommerce that enables e-commerce sites to accept ADA as a payment method. The milestone outputs are as follows:\n・ADA Payment Option: The WooCommerce plugin (internal name: ADA-Plugin) introduces a new payment method within the WooCommerce checkout, allowing customers to select ADA as their preferred payment option.\n・Exchange Rate Calculation: The WooCommerce plugin dynamically calculates the ADA amount required for the transaction, based on the current exchange rate between the shop’s base currency (USD, EUR) and ADA.\n・QR Code Generation: Upon selecting ADA as the payment method, the plugin generates a QR code containing the merchant’s wallet address and the exact ADA amount to be paid by the customer.\n・Checkout Display: The QR code is displayed during the checkout process, enabling the customer to scan it with their ADA-compatible wallet app to initiate the payment.\n\nClarification: The WooCommerce plugin is used in beta-test phase, meaning it is being used prior to official approval by WooCommerce.",
+      "criteria": "The milestones will be considered successfully achieved if a visitor to an online e-commerce shop using WooCommerce technology and the ADA-Plugin can:\nADA Payment Method: Select ADA as a payment option during the WooCommerce checkout process.\n・Exchange Rate: View the required ADA amount for the purchase, which is calculated based on the exchange rate between the shop’s currency (USD or EUR) and ADA, updated every 60 minutes.\n・QR Code scanning: Scan a QR code displayed on a desktop monitor with their smartphone, containing the merchant’s wallet address and the exact ADA amount to be paid.\n・Chec",
+      "report": "Demo Video , WooCommerce, BeginPay \nhttps://youtube.com/shorts/BXALveJ8X1k\nTechnical Report\nhttps://github.com/Maetti79/Begin-Fund12/blob/main/Begin%20Wallet%20-%20Catalyst%20Fund%2012%20Milestone%203%20Report.pdf\nBest Regards \nDennis Mittmann",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "13",
+      "cost": 58500,
+      "promise": "Enhance the wallet’s functionality to support Bitcoin transactions in addition to ADA, utilizing their similar UTXO transaction models. The milestone outputs are specific functionalities to be implemented in the Begin Wallet (Chrome) include:\n1. Transaction Creation: The Begin Wallet enables users to assemble a Bitcoin transaction by selecting appropriate UTXOs (Unspent Transaction Outputs), defining the recipient's address and the amount to be sent, and automatically calculating the necessary transaction fees based on current network conditions.\n2. Transaction Signing: The wallet securely signs the assembled Bitcoin transaction using the user's private key, ensuring that only the rightful owner can authorize the transfer of Bitcoin, thereby maintaining transaction integrity and security.\n3. Transaction Broadcasting: Once signed, the wallet broadcasts the Bitcoin transaction to the Bitcoin network, ensuring it is propagated across the network nodes for validation. The transaction includes a calculated fee to incentivize miners to confirm and include the transaction in a new block, finalizing the transfer.",
+      "criteria": "The milestones are considered successfully achieved if a user of the Begin Wallet (Chrome) can:\n\n1. Transaction Creation: The user can assemble a Bitcoin transaction by entering the recipient's Bitcoin address, specifying the amount of Bitcoin to be sent, and seeing the transaction fee calculated based on the current network conditions.\n2. Transaction Signing: The user can sign the Bitcoin transaction using their private key and receive a confirmation that the transaction is signed and ready to be sent.\n3. Transaction broadcasting: The user can broadcast the signed Bitcoin transaction to the B",
+      "report": "A. Output: Transaction Creation — The Begin Wallet enables users to assemble a Bitcoin transaction by selecting appropriate UTXOs, defining the recipient's address and the amount to be sent, and automatically calculating the necessary transaction fees based on current network conditions. \nAcceptance criteria: The user can assemble a Bitcoin transaction by entering the recipient's Bitcoin address, specifying the amount of Bitcoin to be sent, and seeing the transaction fee calculated based on current network conditions. \nEvidence:\n・Demo: https://youtube.com/shorts/BXALveJ8X1k?feature=share\n・Tx: https://mempool.space/tx/90e1e5760db378aa2101b655af4299193236b930d7850e38b06d96c7993a01c3\n・Repo: https://github.com/BeginWallet/catalyst-fund-12/\n\nB. Output: Transaction Signing — The wallet securely signs the assembled Bitcoin transaction using the user's private key, ensuring that only the rightful owner can authorize the transfer of Bitcoin, thereby maintaining transaction integrity and security. \nAcceptance criteria: The user can sign the Bitcoin transaction using their private key and receive a confirmation that the transaction is signed and ready to be sent. \nEvidence:\n・Demo: https://youtube.com/shorts/BXALveJ8X1k?feature=share\n・Repo: https://github.com/BeginWallet/catalyst-fund-12/\n\nC. Output: Transaction Broadcasting — Once signed, the wallet broadcasts the Bitcoin transaction to the Bitcoin network, ensuring it is propagated across the network nodes for validation. The transaction includes a calculated fee to incentivize miners to confirm and include the transaction in a new block, finalizing the transfer. \nAcceptance criteria: The user can broadcast the signed Bitcoin transaction to the Bitcoin network and includes a fee for the transaction confirmation by miners. \nEvidence:\n・Demo: https://youtube.com/shorts/BXALveJ8X1k?feature=share\n・Tx: https://mempool.space/tx/90e1e5760db378aa2101b655af4299193236b930d7850e38b06d96c7993a01c3\n・Open Source Core: https://github.com/Beg",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 18,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "14",
+      "cost": 22500,
+      "promise": "Conduct a test and review to ensure that all previous modules (1-4) function correctly together. The milestone outputs are specific functionalities to be implemented in the Begin Wallet (Chrome) or via partners or in WooCommerce include:\nMilestone 1: Voting Integration / Begin Wallet (Chrome) \n1. User Registration System for Voting: A system that allows users to register as eligible voters, ensuring they meet the necessary criteria and can participate in voting activities.\n2. Voting: An interface in the frontend of Begin App where users can cast their votes on various items, ensuring recording of each vote on the blockchain.\n3. Voting Results Display: A display of voting results, providing users with information on voting outcomes.\nMilestone 2: Biometric Seedphrase / Begin Wallet (Chrome) \n1. Biometric Enrollment: Biometric Data Capture in reference to ISO/IEC 19794-5 or similar standards for capturing facial image data.\n2. Seedphrase Derivation: Develop an algorithm to convert biometric data into a seedphrase.\n3. Authentication System: Login to the Begin Wallet (Chrome) utilizing the generated seedphrase and facial recognition to support passwordless authentication.\n4. Authorizati",
+      "criteria": "Confirmation that all modules operate efficiently in a predefined setup. The milestones are considered successfully achieved if:\nMilestone 1: Voting Integration / Begin Wallet (Chrome) \nA user of the Begin Wallet (Chrome) can:\n1. Register for Voting: Register as a voter within the app.\n2. Cast Votes: Participate in the voting process by casting votes on two items, with each vote being recorded.\n3. View Voting Results: Access and view results of the votes.\nMilestone 2: Biometric Seedphrase / Begin Wallet (Chrome) \nThe milestones are considered successfully achieved if a user of the Begin Wallet",
+      "report": "Voting https://youtube.com/shorts/UYDm3VHUKFo\nBiometric integration with Cardano and Bitcoin present https://youtu.be/4TxPNYtkBH8\nBitcoin Transaction https://youtube.com/shorts/BXALveJ8X1k\nWooCmmerce and QR Code integration https://youtu.be/5M4gZ3a1jQo",
+      "kinds": [
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    }
+  ]
+}

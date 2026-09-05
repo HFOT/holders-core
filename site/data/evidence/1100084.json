@@ -1,0 +1,42 @@
+{
+  "title": "Cardanoscan data info bubbles",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 10500,
+      "promise": "・Below info bubbles implemented and available on mainnet website\n\nAddress Page\n・Hex address info\n・Controlled Stake info\n・Rewards Withdrawn info\n・Available Rewards\n・Delegation Status\n\nBlock Page Bubbles\n・Block Height\n・Tx count\n・Total fees\n・Total Output\n・Epoch/Slot\n・Block Hash\n・Block Version",
+      "criteria": "Address page and block page bubbles as outlined in the outputs implemented and public URLs provided",
+      "report": "Info bubbles added on site with below data points,\nOn Address Page,\n・Hex address info\n・Controlled Stake info\n・Rewards Withdrawn info\n・Available Rewards\n・Delegation Status\n\nOn Block Page, we have also added few more data points than required in the output,\n・Block Height\n・Tx count\n・Total fees\n・Total Output\n・Epoch/Slot\n・Block Hash\n・Block Version\n・Slot Leader\n・Absolute Slot\n・Timestamp\n\nVerifiable via, \nhttps://cardanoscan.io/address/addr1q93hnccxvhpf4fjvetxuwz8cmpp3drr87fj6cshunfh9jqatskp6c06wc490utjw784ly9wsdrh48se0vrds2lze3gfs6vrq3w\n\nAnd for the block page, https://cardanoscan.io/block/10299401",
+      "kinds": [
+        "chain"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 10500,
+      "promise": "・Below info bubbles implemented and available on mainnet website\n\nPool Page\n・Pool Id\n・Reward Accounts\n・VRF Hash\n・Owners\n・Pool Parameters\n\nEpoch Page\n・Epoch\n・Rewards Distribution\n・Blocks\n・Output\n・Fees",
+      "criteria": "Pool Page and Epoch Page bubbles as outlined in the outputs implemented and public URLs provided",
+      "report": "Info bubbles were added on the site with the below data points,\nPool Page\n・Pool Id\n・Reward Accounts\n・VRF Hash\n・Owners\n・Pool Parameters\n\nEpoch Page\n・Epoch\n・Rewards Distribution\n・Blocks\n・Output\n・Fees\n\nVerifiable using the link below,\nPool Page - https://cardanoscan.io/pool/7df262feae9201d1b2e32d4c825ca91b29fbafb2b8e556f6efb7f549\nEpoch Page - https://cardanoscan.io/epoch/483",
+      "kinds": [
+        "chain"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 14000,
+      "promise": "・Below info bubbles implemented and available on mainnet website\n\nToken Page\n・Policy Id\n・Fingerprint\n・Asset Name\n\n・Close-out report and video",
+      "criteria": "・Token page bubbles as outlined in the outputs implemented and public URLs provided\n・Close-out report and video",
+      "report": "Info bubbles were added on the token page with the below data points,\n・Policy Id\n・Fingerprint\n・Asset Name\n・Tx count\n\nClose-out video - https://youtu.be/Cp-nqKbFt_U\nClose-out report - https://drive.google.com/file/d/1jKBw_vaALWnAnl6IFBQzJi_GY7pybPck/view?usp=sharing",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

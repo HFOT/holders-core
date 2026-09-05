@@ -1,0 +1,92 @@
+{
+  "title": "Decentralized Demeter.run - Federated Frontend Hosting - New revenue stream for SPOs",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 70444,
+      "promise": "Develop open-source Kuberentes operator to handle Frontend workloads\nIntegrate operator with distributed consensus mechanism\nProvision a 2-party staging environment with fake workloads\nIntegrate DNS component for awareness of global topology\nIntegrate reverse-proxy component for awareness of global topology",
+      "criteria": "An operator capable of handling frontend workloads, tested and validated in a two-party staging environment.",
+      "report": "Milestone 1: Distributed Kubernetes Operator\nMilestone Outputs:\nDevelop open-source Kubernetes operator to handle Frontend workloads:\n・An open-source Kubernetes operator has been successfully developed to manage frontend workloads. The codebase is available in a publicly accessible repository, ensuring transparency and collaboration.\n\nIntegrate operator with distributed consensus mechanism:\n・The operator has been seamlessly integrated with a distributed consensus mechanism, allowing multiple clusters to interact with each other. The consensus logic can be found in the Daemon component.\n\nProvision a 2-party staging environment with fake workloads:\n・A two-party staging environment has been provisioned successfully, incorporating simulated workloads. This environment serves as a controlled testing ground to validate the operator's functionality and assess its performance under various conditions. Both environments are currently running in AWS but using different administration accounts and located in different geographic locations (US and EU).\n\nIntegrate DNS component for awareness of global topology:\n・To provide a unified global topology that is accessible via DNS, each cluster is being augmented with a CloudFare tunnel. This allows us to configure a CloudFare load-balancing mechanism that resolves wildcard subdomain for a particular DNS zone (in this case, *.fabric.demeter.run). Each cluster handles an independent set of replicas for the same frontend but to the end-user it shows as a single consistent view.\n\nIntegrate reverse-proxy component for awareness of global topology:\n・Each cluster contains its own reverse proxy mechanism by leveraging Kong ingress-controller for Kuberentes. This reverse proxy receives and processes inbound HTTP requests from the CloudFare tunnel and routes each one to the corresponding pod using common Kubernetes machinery.\n\nAcceptance Criteria:\nAn operator capable of handling frontend workloads, tested and validated in a two-party staging e",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 9,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 70447,
+      "promise": "Update 2-party staging environment for distributed load balancing\nPerform long-running operation tests with fake requests\nDevelop credit bookkeeping component\nDevelop usage-tracking bookkeeping component\nUpdate 2-party staging environment for distributed bookkeeping\nPerform long-running operation tests with fake requests",
+      "criteria": "A distributed load balancer mechanism, verified for long-running operations in a two-party staging environment.\nA working distributed bookkeeping mechanism, verified through long-running tests in a two-party staging environment.",
+      "report": "Milestone Outputs:\nDevelop credit bookkeeping component\nA credit bookkeeping system has been developed and integrated with the existing daemon component that runs on each cluster. This component monitors the Cardano blockchain for token deposits to specific customer-specific script addresses. These deposits represent payments from customers to sustain operations of the service.\nThis component will also monitor withdrawal transactions from infrastructure providers that represent the final settlement for the rendered services.\nDevelop usage-tracking bookkeeping component\nA usage tracking component has been developed and integrated with the existing daemon component that runs in each cluster. This component monitors HTTP requests and records the amount of consumed credits in a ledger shared with each cluster provider.\nUpdate 2-party staging environment\nThe 2-party staging environment that was delivered on the previous milestone has been updated with the latest release of the server-side components. This update allows us to test the new load-balancing mechanisms, the usage-tracking and the bookkeeping components.\nPerform long-running operation tests with fake requests\nWe have configured an automated load testing agent using the Locust framework. This test spawns concurrent agents that execute artificial HTTP requests to our main load-balancer entry point and measures failures and latency across many attempts throughout extended periods of time. The reports of these tests are available as part of the milestone completion evidence.\nAcceptance Criteria:\nThe 1st acceptance criteria for this milestone is having a distributed load balancer mechanism, verified for long-running operations in a two-party staging environment. We have accomplished the goal by connecting two Demeter clusters, one in the US region and another one in the EU region, through a CloudFlare tunnel that load-balances requests using a round-robin mechanism. The long-running test reports provide evidence of",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 25,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 33747,
+      "promise": "Integrate an automated CI pipeline for Frontend builds\nUpdate the distributed staging environment to support build jobs\nPerform integration testing focusing on build pipelines",
+      "criteria": "An working CI pipeline process for building frontend artifacts that it’s validated through integration tests.",
+      "report": "Milestone Outputs:\nIntegrate an automated CI pipeline for Frontend builds\nWe have developed several artifacts that, when used together, provide a mechanism for executing CI build pipelines for frontends to be published to Demeter.\nThe main artifact is Demeter’s CLI (command line interface) which now provides a new deploy command that packages the distributable files of a frontend project into an OCI image and then pushes the image to a remote registry.\nA complementary artifact is a new custom Github action that can be used in any Github workflow that installs Demeter’s CLI into the runners contexts, allowing other steps in the pipeline to execute Demeter commands, such as the new deploy command.\nThe final artifact is a Github workflow template that is shown as part of the Demeter’s console that devs can use to copy & paste and then customize for their needs. This workflow template will take care of building the frontend and publishing the final distributable package to Demeter.\n\nUpdate the distributed staging environment to support build jobs\nThe 2-party staging environment that was delivered on the previous milestone has been updated with the latest release of the server-side components. This update allows us to use the build outputs from the new CI pipelines.\nThese changes impact both the US cluster (us-east-1) and the EU cluster (eu-central-1).\nPerform integration testing focusing on build pipelines\nWe have created a new repository that holds a full end-to-end example of a frontend that builds and publishes to Demeter using the new build pipeline developed for this milestone.\nThis repository has an instance of the workflow generated from the same template that is shared to developers through Demeter’s console. It is configured to trigger on each push to the main branch and it includes all the steps up to the OCI image push.\nWe currently use this repository as an example but also as our source for integration testing.\nAcceptance Criteria:\nThe acceptance criteria f",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 27,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 56964,
+      "promise": "Develop an API to execute RPC to request builds & deployments\nDevelop a CLI application to interact with the API\nRelease binaries and end-user documentation for the CLI",
+      "criteria": "A working, developer-friendly toolchain for deploying frontends that has been validated through integration tests.",
+      "report": "Milestone Outputs:\nAn API to execute RPC to request builds & deployments: we’ve developed an RPC using Rust and gRPC technologies that provides programmatic access to Demeter functionality, including the endpoints responsible for packaging and deploying frontend sites that can be hosted on Demeter.\nA CLI application to interact with the API: we’ve developed a command-line interface that allows developers to interact with Demeter RPC endpoints using the terminal. This component includes a feature to package local artifacts from a frontend codebase into a Docker image that can be pushed to any OCI-compatible registry.\nBinaries release and end-user documentation for the CLI: we’ve released the CLI binaries for any developer to download and install. We’ve also published online documentation providing instructions on how to use Demeter’s CLI.\nAcceptance Criteria:\nThe outputs of this milestone provide a working, developer-friendly toolchain for deploying frontends. By leveraging a client-side component (Demeter’s CLI) and a server-side component (Demeter’s RPC) developers can package their frontends as Docker images and publish them to Demeter’s hosting infrastructure.\nEvidence of Milestone Completion:\nSource code for an API for RPC execution and a CLI application.\n・https://github.com/demeter-run/daemon/tree/main/src/drivers \n・https://github.com/demeter-run/cli/tree/main/src \n\nBinary releases for a CLI application.\n・https://github.com/demeter-run/cli/releases/tag/v1.1.0 \n\nEnd-user documentation site showing how to install and initialize the Demeter CLI:\n・https://docs.demeter.run/cli \n\nTutorial video on how to use Demeter CLI and RPC server to deploy a new frontend:\nhttps://youtu.be/Hw9fMDkXHmY",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 60445,
+      "promise": "Train SPOs and dApps on technical operation of the infrastructure\nSupport SPOs and dApps throughout the process of provisioning their infrastructure\nSetup a distributed staging environment among all participating SPOs\nDeploy staging versions of the frontends\nPerform long-running operation tests with fake requests\nPerform integration tests\nPerform penetration tests\nPerform stress tests",
+      "criteria": "A working distributed staging environment managed by multiple SPOs, resulting in a federated network of infrastructure providers.\nStaging versions of frontends deployed and long-term operation tests executed, resulting in a network that is ready for more extensive use.\nA system that has been thoroughly tested for security, scalability, and robustness, reducing potential risks and vulnerabilities.",
+      "report": "In our milestone report video we provide an overview of the architecture, a walkthrough of the environment configuration, a demonstration of frontends running on top of the system and a quick explanation of some of the tests performed.\n・https://youtu.be/75Pp20KvQ7M \n\nThe following links provide access to navigate the web frontends that have been deployed on top of the platform. This deployments are served by two different and independent operators (as explained in the report video).\n・Cardano Warriors: https://cardano-warriors.dmtr.host \n・GitHoney: https://githoney.dmtr.host\n・Lace Anatomy: https://laceanatomy.dmtr.host \n・Asteria: https://asteria.dmtr.host\n・UtxoRPC: https://utxorpc-docs.dmtr.host \n\nThe following Github links contain the definition for our integration test workflow. These test create a small scale setup of the whole system. It works by setting up an ephemeral (aka: throw away) kubernetes cluster that acts as an operator providing infrastructure. The tests execute automatic resource provisioning requests and then ensure that these resources have been fulfilled by the ephemeral kubernetes cluster.\n・https://github.com/demeter-run/fabric/tree/main/test\n・https://github.com/demeter-run/fabric/blob/main/.github/workflows/test.yml \n\nThe following link provides an example of an execution of the integration tests. By drilling down in the logs provided by the Github UI, one can access a detailed trace of the actions executed by the pipeline.\n・https://github.com/demeter-run/fabric/actions/runs/10672377048\n\nThe following link provides a summary of our performance / stress tests over the same public environment that is accessible through the frontend links provided above. The methodology consists of executing a few thousand requests distributed across the different hosted websites and evaluating the response time of each. The results are then aggregated (avg, 95th, 99th percentile, etc) to describe a statistical, unified measure of the performance the websites as pe",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 20,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "10",
+      "cost": 115810,
+      "promise": "Setup distributed production environment\nInstruct dApps to deploy production frontends and partially redirect traffic\nMeasure HTTP request metrics\nMeasure compute resource metrics\nPerform SPO survey\nPerform dApp developer survey\nAnalyze raw metric data\nPrepare final report and share with community",
+      "criteria": "dApps deploy production frontends and partially redirect traffic, resulting in real-world usage and measurement of HTTP request metrics and compute resource metrics.\nValuable insights into real-world operation of the system, supporting further development and community engagement.",
+      "report": "Closeout report can be found here:\nhttps://docs.google.com/document/d/1U-ZS0WVufhOUUlwDluuBlgAkfWSQlIZLsBUAE5GHFto/edit?usp=sharing\n\nCloseout video can be found here:\nhttps://youtu.be/t1YgoLODgqE\n\nSource code developed for the core components of the project can be found here (detailed description inside closeout report):\nhttps://github.com/demeter-run/fabric \nhttps://github.com/demeter-run/up \nhttps://github.com/demeter-run/cli \nhttps://github.com/demeter-run/setup-dmtrctl",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

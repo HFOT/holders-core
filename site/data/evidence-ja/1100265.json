@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "(1) 流動性ペア (LP) tINDY/ADA と SundaeSwap の統合は、お金が投資される統合分散型取引所 (DEX) として組み込まれています.",
+      "criteria": "(1) ユーザーはADAをStargazerプラットフォームに入金することができます。 その後、ADAはLPに変換されます。 その後、LPはSundaeSwap DEXに自動的に投資されます.",
+      "report": "デモビデオ(音声なし): https://drive.google.com/file/d/1NkySk4Z16HquXA7l5ap--v5MEC0D-WP4/view?usp=sharing\n以下は、デモビデオで発生したトランザクションのトランザクションのハッシュを提供しました。\nデモはプレビューネットワークでのみ利用できます。 トランザクションを確認するには、このエクスプローラーの例で使用できます。 https://preview.cexplorer.io/tx/2d024a39ef0fcfe7baa12c7128adb4500e63d26fc9b7edc39a6201ddcba324a7\n最初のトランザクションは、入金と出金注文のためにユーザーが署名する必要があります。 残りは自動化されます。\n預金注文:\n・ユーザーからStargazerにADAを送信することにより、入金の初期化(ユーザーが署名する必要があります): 2d024a39ef0fcfe7baa12c7128adb4500e63d26fc9b7edc39a6201ddcba324a7\n・ADAとtINDYの流動性ペア(LP)を得るためにADAのZap:5b64f25f7eb006c44e1460bb9e520daa2bfda83aeb84dce00aaa3f7852d6701a0\n・利用者の領収書の作成:360a022c524b910156581a42602583ec186e049fa3455d6b3ad47c695ae63a3d\n・Yield の耕作の沈殿物: 063518d0da65e196c9407305f22b3aa8d289f4b14c1e55facccef8f46061cfb0\n\n撤退順序:\n・Stargazer(ユーザーが署名する必要性):4efd762b18142c90cd5d7b35d18fc11abf98c7b48b14ad3f60bc7f2a9241a2\n・Yieldの耕作の撤退:33ffaae2a80ba7d580de4147f7c2e5a0f612bdfee82d9f1692f986126b3a9f\n・受取人:89f0bae76e489f0b6db8798647a82389207b03b9fe70b80654c8147cc56e16a4\nSundaeSwap が LP トークンを ADA と tINDY に交換する LP の撤退: f6646a6ef52f1822ff1ba1b5858a9f5440deba1cf6443949797d37e6bef2acfb\n・ADAに戻るスワップtINDY: caffbbc3a2075b5944110cb5984d384573b04a81d8b59000a25de3945ae7fd7\n・ADAをユーザに戻す: 324603950c33bcf5e0ec9b4da0891e197795280c345bb70894875d8ea41823ad\n\n訪問してウェブサイトを自分で試すことができます: https://stargazer.finance/vaults/tINDY-ADA"
+    },
+    {
+      "no": 2,
+      "promise": "(1) 追加のリスク評価ツールを持つユーザーインターフェイスを改善します。 これにより、各収穫農業戦略は、個人のニーズに応じてユーザーが選択できるようにリスクスコアを割り当てます。\n(2) プラットフォームに、SBERRY/ADA、iUSD/ADA の2つ以上の流動性ペアの統合.",
+      "criteria": "(1)ユーザーインターフェイスでは、各戦略は、関与するリスクを示すリスクスコア(低・中・高リスク)を割り当てています。 これは、すべての戦略の概要で明確に表示され、ユーザーが決定を下すのを助けることができます。 リスクスコアは、基礎トークン(市場資本化と月間取引量)の人気とトークンを作成したチームのXerberusスコアを組み合わせて計算されます。\n(2) ユーザーは、Stargazer プラットフォームに 2 つの追加の LP を入金することができます。, すなわち SBERRY/ADA, iUSD/ADA. その後、LPが自動的にDEXに入れられます.",
+      "report": "A. 出力:追加のリスク評価ツールを持つユーザーインターフェイスの改善。 これにより、各収穫農業戦略はリスクスコアを割り当て、個人のニーズに応じてユーザーが選択できるようにします。\n受諾条件:ユーザーインターフェイスでは、各戦略には、関与するリスクを示すリスクスコア(低・中・高リスク)があります。 これは、すべての戦略の概要で明確に表示され、ユーザーが決定を下すのを助けることができます。 リスクスコアは、基礎トークン(市場資本化と月間取引量)の人気とトークンを作成したチームのXerberusスコアを組み合わせて計算されます。\n証拠:\n・ビデオ録画:https://drive.google.com/file/d/1eXS8wBXbtwBpJCxALI6Zy8dYQo3genGQ/view?usp=sharing:各戦略がカラーコードされたリスクバッジ(グリーン=低リスク、イエロー=中リスク、赤=高リスク)を数値スコア、フィルタ/ソート機能(リスクレベル)、およびブレイクダウンモーダルの評価(月次評価)を提示するVaults概要ページが表示されます。\n・リスク方法論エンドポイント: https://api.stargazer.finance/risk/methodology は、市場キャップのしきい値、ボリュームのしきい値、Xerberus の評価マッピング、および要因重量を含む、フルスコア構成を返します。これにより、レビュー担当者とユーザーが各リスクスコアがどのように計算されるかを確認することができます。\n\nB. 出力: プラットホームへの少なくとも2つのより多くの流動性の組の統合、すなわちSBERRY/ADAおよびiUSD/ADA。\n受諾条件: ユーザーは、スターガザープラットフォームに2つの追加のLPを入金することができます, すなわちSBERRY/ADAとiUSD/ADA. その後、LPが自動的にDEXに入れられます。\n証拠:\n・ビデオ録画: https://drive.google.com/file/d/10DhYi5HLmAqz7WfP4a7 zj6VuQkmCoIK/view?usp=sharing: ADAをSBERRY/ADA vault(SBERRY ADA Vault)とiUSD/ADA vault(Indigo USD ADA Vault)の両方に入金し、各入金が自動再投資の処理に続く"
+    }
+  ]
+}

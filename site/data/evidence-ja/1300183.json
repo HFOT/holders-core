@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "•テスト環境のスマートコントラクト開発と実装、流動性プールのポリシースクリプト定義、GitHubリポジトリのセットアップと初期コードのアップロード。\n•スマートな契約は:\n•ロードマップとロードマップにリンクされているウォレットアドレスの値を登録します。\n•ロードマップに関連するプラスチッククレジットを追跡し、進捗を反映します。\n• プラスチック製のクレジットが販売されると、発行者から購入者にプラスチッククレジットの転送を可能にするために、プラスチッククレジット販売に対応するトークンを転送します。\n• ロードマップに関連するプラスチッククレジットのアカウント。\n• 売却されたプラスチッククレジットに対応する資金のアカウント。\n• ロードマップの進行状況を提供します。\n• ロードマップに資金を供給するために必要なプラスチッククレジットが販売されると、USDMをクリエイターや貸し手にリリースします。\n• ポリシースクリプトの自動テストを作成\n• 導入のためのポリシースクリプトの自動化",
+      "criteria": "• githubのプロトコルのポリシースクリプト\n• ポリシースクリプトの自動テスト\n• 導入のためのポリシースクリプトの自動化\n•スマートな契約は調和的に機能します:\n•ロードマップとロードマップにリンクされているウォレットアドレスの値を登録します。\n• ロードマップおよびショーケースに関するプラスチッククレジットを追跡します。\n• プラスチック製のクレジットが販売されると、発行者から購入者にプラスチッククレジットの転送を可能にするために、プラスチッククレジット販売に対応するトークンを転送します。\n• ロードマップに関連するプラスチッククレジットのアカウント。\n•プラスチックcに対応する資金のアカウント",
+      "report": "Readme ドキュメントを USDM の安定したコインの役割で更新: https://github.com/Plastiks-io/refi-protocol/tree/main\n\nスマートコントラクトアドレス perprod testnet: addr test1wza00f6zecqlep3vxa78hc29weyet7hd3xlj8sz6awjts2q34k334\n\nプロジェクトのためのGithubリンク:\nhttps://github.com/Plastiks-io/refi-protocol\n\ngithubスマートコントラクトコードのプロトコルのポリシースクリプト: https://github.com/Plastiks-io/refi-protocol/tree/main/smart-contract\n\nテストケースとテストレポート\nhttps://github.com/Plastiks-io/refi-protocol/tree/main/smart-contract/test\nhttps://github.com/Plastiks-io/refi-protocol/tree/main/backend/test\nhttps://nozamagreen.sharepoint.com/:b:/s/Nozama-external/EV2 8EqpT5FAjWxQylhq3IBBp-72n7hJyGApl0mrKwA8g?e=RvFTc8\nロードマップの完了後、USDMがどのように転送されるかのテストトランザクションハッシュ:d52d27538d8faead63f35bada8859eac3eb979e939a370a66b446ed456a42d91\n-Cardanoエクスプローラのテストトランザクションハッシュ:https://preprod.cexplorer.io/tx/d52d27538d8faead63f35bada8859eac3eb979e939a370a66b446ed456a42d91\nテストネット:e8f329da44fb66d033d26a566b0f9f743493b0cf18458c051ac442615553444dのために使用されるUSDMのための資産ID\n資産IDのCardanoエクスプローラリンク:https://preprod.cexplorer.io/asset/asset18qcfcc0u2qp7rmuu0332j99tt6szkwv0hv4xsf\n\nスクリーンショット用のGithubリンク:\nhttps://github.com/Plastiks-io/refi-protocol/tree/main/screenshots"
+    },
+    {
+      "no": 2,
+      "promise": "・ 貸し手用のUIインテグレーションを作成し、スマートコントラクトと相互作用し、ユーザーがお金を貸与し、リソースが購入されたら利益を得ることができる\n・スマートコントラクトとの統合バックエンド",
+      "criteria": "•Cardanoウォレットを扱う貸し手のためのUI\n• スマートコントラクトとUIの間の接続を処理し、テスト環境にデプロイするバックエンド\n• UIとバックエンドは、ユーザーに次のようになります。\n•ロードマップとロードマップにリンクされているウォレットアドレスの値を登録します。\n• ロードマップに関連するプラスチッククレジットを追跡し、進捗バーを表示.\n• プラスチック製のクレジットが販売されると、発行者から購入者にプラスチッククレジットの転送を可能にするために、プラスチッククレジット販売に対応するトークンを転送することを確認してください。\n• ロードマップに関連するプラスチッククレジットが販売されていることを見る.",
+      "report": "Githubでソースコードリポジトリを更新\nhttps://github.com/Plastiks-io/refi-protocol\nスマートコントラクト更新ソースコード\nhttps://github.com/Plastiks-io/refi-protocol/tree/main/smart-contract/src\nスマートコントラクトテストケース\nhttps://github.com/Plastiks-io/refi-protocol/tree/main/smart-contract/test\nバックエンドとサービスソース コード\nhttps://github.com/Plastiks-io/refi-protocol/tree/main/backend/src\nテストケース\nhttps://github.com/Plastiks-io/refi-protocol/tree/main/backend/test\nUI/フロントエンドソースコード\nhttp://github.com/Plastiks-io/refi-protocol/tree/main/frontend/src\nUIスクリーンショットの更新\nhttps://github.com/Plastiks-io/refi-protocol/tree/main/screenshots\n\nビデオshowcasing:\nUIの仕組み\nバックエンドの仕組み\n回復組織からプラスチッククレジットでスマートコントラクトがどのように機能するか。\nUIの説明 ReFI dAPP.mp4"
+    },
+    {
+      "no": 3,
+      "promise": "・ダッシュボードを作成して、誰が何が起こっているかを確認できるプロトコルの活動を確認できます。\n・Web3からプラットフォームに情報を抽出、変換、ロードするETLプロセス\n・ダッシュボードの設計\n・ダッシュボード/ユーザーインターフェイスのTestnet統合\n・Dashboardは、ユーザーがプラスチッククレジット販売、ロードマップ完了、トークンリターン、USDMリリースを閲覧することができます.",
+      "criteria": "·相互作用の記述とフル デザイン\n· 生産のダッシュボード\n・インタラクション説明によるフルデザイン\n・このマイルストーンの目標は、ユーザーがプラスチッククレジット販売、ロードマップ完了、トークンリターン、USDMリリースを閲覧できるように、完全に楽しいPUBLICダッシュボードを生成することです。\n・財布を接続し、それが回復組織であり、それが貸し手である場合、獲得した金額が、それが売られたプラスチックの量に関する統計を見ることができます",
+      "report": "PUBLICダッシュボードリンク機能: https://www.plastiks.app/\nプラスチッククレジット販売、ロードマップ完了、トークンリターン、USDMリリース。\n\nまた、http://13.200.155.72/api で API をホストしました。\n•更新されたGithubリンク https://github.com/Plastiks-io/refi-protocol\n\n•テスト ケース\nフロントエンド - refi milestone3 frontend test case.pdf\nバックエンド refi milestone3 backend test case.pdf\n•ビデオ:ReFi DAPPウォークスルー\nユーザーがアプリケーションに接続できることをCARDANOウォレットで実証します。 使用の種類が異なる、プリプラスチックはエンティを回復、Plastiksトークンホルダー、管理者を回復します\nウォレット接続からトランザクション完了までのフロー全体を表示します。\n• マイルストーン3の概要文書:refi milestone3"
+    },
+    {
+      "no": 4,
+      "promise": "・プラットフォームのオンボーディングのための文書化とサポート\n・監視・警報の追加\n・Plastiksのドキュメントは、プラットフォームが別のケースでどのように機能するかに関するケースと一般的な情報を使用します。\n・プラットフォームが実行した後の固定とメンテナンス\n・ビデオの閉鎖\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・ Plastiks のユースケースにデプロイおよび構成されるポリシースクリプト\n・利害関係者、貸し手、回復団体の搭乗\n· 初期現実的なテストおよび最適化の故障\n·完全な技術的な文書\n・アプリケーションが何であるかを説明し、チュートリアルで使用する方法を説明するビデオを閉じます。\n·回復企業のためになされるビデオ。\n·プラスチッククレジットのバイヤーのためになされるビデオ\n・Web3コミュニティ向け動画\n·最終的な調節およびバグは故障を修理します\n・最終報告書は一般公開\n・最終クローズアウト映像を公開",
+      "report": "Onedrive フォルダー\nドキュメント:\n・技術文書: https://github.com/Plastiks-io/refi-protocol/blob/main/Readme.md\n\nビデオ:\n・Plastiks - ReFi dApp チュートリアル.mp4\n・Plastiks - 回復エンティティティ - プラスチックCredit.mp4を作成する方法\n・Plastiks - プラスチッククレジットを購入する方法.mp4\n・Plastiks - Web3フルフロー.mp4\n\nリポジトリとリンク\n・GitHubリポジトリ:https://github.com/Plastiks-io/refi-protocol\n・フル機能公開ダッシュボード: https://www.plastiks.app/\n\n閉じる\n・プロジェクト触媒クローズアウトレポートF13 2025.pdf\n\nYouTube動画:クローズアウトビデオ"
+    }
+  ]
+}

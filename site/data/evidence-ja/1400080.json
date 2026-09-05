@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・マルチチェーンウォレットインターフェースを開発\n・コアビットコインインターフェイスの開発\n・コアカーダノインターフェースを開発\n・ビットコインインターフェイスの開発\n・CIP30インターフェースを開発\n・ツイッターを投稿して公開",
+      "criteria": "次のようなすべての財布のためのインターフェイスの完全な開発:\n・マルチチェーンウォレットインターフェースの開発完了\n・コアビットコインインターフェイスの完成開発\n・コアカルダノインターフェースの完全開発\n・ビットコインインターフェースの完全開発\n・CIP30インターフェースの完全開発\n・ツイッターを投稿して公開",
+      "report": "マイルストーン・レビュアーと進行中のすべての人がいます。\nここでは、最初のマイルストーンの成功した完了を報告し、各githubリンクでMilstoneのステートメントのすべてのリストされた成果物の下に、デプロイされたコードを評価し、検証することができます。\n\nA. 出力:マルチチェーンウォレットインターフェイスを開発\n- 受諾基準:マルチチェーンウォレットのインターファックの完全開発\n- 証拠: https://github.com/MeshJS/wallet/blob/feature/bitcoin-wallet/src/multi-chain/interfaces/multi-chain-wallet.ts\n\nB. 出力:開発 コアビットコインインターフェイス\n- 受諾基準:コアビットコインインターフェイスの完全開発\n- 証拠: https://github.com/MeshJS/wallet/blob/feature/bitcoin-wallet/src/interfaces/secret-manager.ts\n\nC. 出力: 開発 中心のcardanoインターフェイス\n- 受諾の基準:中心のcardanoインターフェイスの完了された開発\n- 証拠: https://github.com/MeshJS/wallet/blob/feature/bitcoin-wallet/src/interfaces/signer.ts\n\nD. 出力:Bitcoinインターフェイスを開発して下さい\n- 受諾条件:Bitcoinインターフェイスの完成した開発\n- 証拠: https://github.com/MeshJS/wallet/blob/feature/bitcoin-wallet/src/bitcoin/interfaces/bitcoin-wallet.ts\n\nE. 出力: CIP30 インターフェイスを開発して下さい\n- 受諾条件:CIP30インターフェイスの完成された開発\n- 証拠: https://github.com/MeshJS/wallet/blob/feature/bitcoin-wallet/src/cardano/interfaces/cardano-wallet.ts\n\nF. 出力: 公開を知らせるためにTwitterスレッドを投稿\n- 受諾基準: 公開を通知するためにTwitterスレッドを投稿\n- 証拠: https://x.com/meshsdk/status/2017172545204576371\n\nそして、それは、すべての証拠がマイルストーンのレビュアーを満たしているように願っています。次のマイルストーンで確認します."
+    },
+    {
+      "no": 2,
+      "promise": "A. Cardanoコアモジュールの開発・展開\nB.Bitcoinコアモジュールの開発と展開\nC. 各 github リポジトリにすべてのコードベース更新を公開する\nD. ツイッタースレッドを投稿して、マイルストーンの成果や成果を英語で伝えます",
+      "criteria": "A. Cardanoコアモジュールの開発・展開\nA1. CardanoのMesh Walletのベースロジックをうまく実装\nA2. 決済、ステーク、DRep、スクリプトアドレスなどのすべてのアドレスのビルドを巧みに実装し、Cardanoの新しいコアモジュールで\nA3. Cardanoのウォレットの同期をうまく実装\nA4. Cardanoで署名取引機能をうまく実装\nA5. 署名データをうまく実装し、Cardano上で署名機能を確認\nB.Bitcoinコアモジュールの開発と展開\nB1. シードフレーズベースからウォレットを巧みに実装",
+      "report": "マイルストーン・レビュアーと、この提案の進捗をフォローしている全員がいます。 まず、このマイルストーン完了の遅延を想定し、このマイルストーンの達成可能な成果に満足していただけることを願っています。\ngithubのリンクでは、すべてのリンクを1つのリンクに合わせ、複数のリンクをチェックアウトする必要はありませんので、plsはA - Cのセクションで同じgithubのURLを投稿する理由は不思議ではありません。\n\nA. 出力:Cardanoコアモジュールの開発と展開\n受諾の条件:\nA1. CardanoのMesh Walletのベースロジックをうまく実装\nA2. 決済、ステーク、DRep、スクリプトアドレスなどのすべてのアドレスのビルドを巧みに実装し、Cardanoの新しいコアモジュールで\nA3. Cardanoのウォレットの同期をうまく実装\nA4. Cardanoで署名取引機能をうまく実装\nA5. 署名データをうまく実装し、Cardano上で署名機能を確認\n証拠: https://github.com/MeshJS/wallet/releases/tag/v2.0.0-beta.10\nB. 出力:Bitcoinコアモジュールの開発と展開\n受諾の条件:\nB1. BIP-32規格に基づくシードフレーズからウォレットを巧みに実装\nB2. ウォレットアドレスを任意の派生パスでうまく実装\nB3。 成功した実装された署名データを実装し、ビットコイン取引上の署名を検証\n証拠: https://github.com/MeshJS/wallet/releases/tag/v2.0.0-beta.10\nC. 出力: 各 github リポジトリにすべてのコードベース更新を公開\n受諾条件: 公にアクセス可能なメッシュ github リポジトリにすべてのコードの変更をうまく提出\n証拠: https://github.com/MeshJS/wallet/releases/tag/v2.0.0-beta.10\nツイート.出力: ツイッターのスレッドを投稿して、マイルストーンの成果や成果を英語で伝えます。\n受入条件:[出力Dの補完基準]\n証拠: https://x.com/meshsdk/status/2064311926771814447"
+    },
+    {
+      "no": 3,
+      "promise": "A. CardanoでCIP30ヘッドレスウォレットを開発・展開\nB. 各 github リポジトリにすべてのコードベース更新を公開する\nC. ツイッタースレッドを投稿して、マイルストーンの成果や成果を英語で伝えます",
+      "criteria": "A. CardanoでCIP30ヘッドレスウォレットを開発・展開\nA1。 コアモジュールは、CIP-30モジュールがシミュレートされたCIP-30ウォレットエンドポイントを可能にしながら、秘密の派生、アドレス、署名を処理します。\nA2.すべてのCIP-30エンドポイントを実装し、テストを行い、エンドポイントが標準に適合するようにします。\nA3. CIP-30機能にオンチェーンデータが必要な場合は、機能が適切に動作できるようにプロバイダを取り付けることができます。\nB1. 公にアクセス可能なメッシュ github リポジトリにすべてのコードの変更をうまく送信\nC1. マイルストーンの達成作品のTwitter(X)スレッドの公開を完了",
+      "report": "マイルストーン・レビュアーと、この提案の進捗をフォローしている全員がいます。\n提案完了したマイルストーン3は、すべての目的を達成し、完了しました。\nA) すべての開発コードは、Mesh Githubを介して公開およびアクセス可能になります\n・MeshJS/wallet#9\n\nB) 私達は網のGithubのコードにそれぞれurl'sを提供します\n・MeshJS/wallet#9\n\nC)公式メッシュアカウントでX(Twitter)の公開ツイートにURLを付与します\n・https://x.com/meshsdk/status/2076219961253446045"
+    },
+    {
+      "no": 4,
+      "promise": "A. Bitcoinで標準のヘッドレスウォレットを開発および展開する\nB. 各 github リポジトリにすべてのコードベース更新を公開する\nC. ツイッタースレッドを投稿して、マイルストーンの成果や成果を英語で伝えます",
+      "criteria": "A. Bitcoinで標準のヘッドレスウォレットをうまく実装\nA1. データ提供者としてマエストロに基づくutxoの照会を巧妙に実施しました\nA2. 絶え間なくビットコインUTxOsのコイン選択アルゴリズムを実装\nA3. 送信転送トランザクションの成功\nB1. 公にアクセス可能なメッシュ github リポジトリにすべてのコードの変更をうまく送信\nC1. 公式メッシュアカウントで達成された作業のTwitter(X)スレッドの公開を完了",
+      "report": "マイルストーン・レビュアーと、この提案の進捗をフォローしている全員がいます。 提案完了したマイルストーン3は、すべての目的を達成し、完了しました。\nA. Bitcoinで標準のヘッドレスウォレットを開発および展開する\n\n・MeshJS/wallet#10\n\nB. 各 github リポジトリにすべてのコードベース更新を公開する\n\n・MeshJS/wallet#10\n\nC. ツイッタースレッドを投稿して、マイルストーンの成果や成果を英語で伝えます。\n\n・https://x.com/meshsdk/status/2086707767356567822"
+    }
+  ]
+}

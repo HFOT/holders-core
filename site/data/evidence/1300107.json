@@ -1,0 +1,49 @@
+{
+  "title": "GeroWallet - Open Sourcing GeroWallet",
+  "ms": [
+    {
+      "no": 1,
+      "month": "12",
+      "cost": 15000,
+      "promise": "Review and clean the GeroWallet codebase\nWe will inspect each module to remove redundant code, streamline architecture, and ensure readability for open sourcing.\nRemove proprietary or sensitive information\nWe will identify and strip out any private keys, confidential APIs, or proprietary logic not suitable for open release.\nConduct an internal security audit\nWe will perform a thorough code assessment to detect security flaws and ensure all identified issues are documented and fixed.",
+      "criteria": "Cleaned and optimized codebase ready for public release\nAll legacy or non-essential code is removed, and the repository is reorganized to meet open-source standards.\nAll security issues identified and resolved\nA full list of vulnerabilities is addressed, with confirmation that each fix meets quality and security benchmarks.\nPreliminary documentation drafted\nBasic usage instructions, project structure, and contributor guidelines are outlined to guide the next phase.",
+      "report": "Review and clean the GeroWallet codebase\nAcceptance criteria: Cleaned and optimized codebase ready for public release. Legacy or non-essential code removed. Architecture streamlined to meet open-source standards.\n Evidence:\n・https://drive.google.com/file/d/1XVTeHMHq6q6ZppCY6owsulMinvO3fPd1/view?usp=drive_link\n\nRemove proprietary or sensitive information\nAcceptance criteria: All private keys, confidential APIs, and sensitive information removed from the repository and handled securely.\n Evidence:\n・https://drive.google.com/file/d/1d_2yHqq6ypYaMScNB-0hOtuJBLI0Puyg/view?usp=drive_link\n・https://drive.google.com/file/d/1W6ydplWjg5qIeS9zL1zo3ZP4WPkLOuLg/view?usp=drive_link\n\nConduct an internal security audit\nAcceptance criteria: All security issues identified and resolved, with confirmation that fixes meet quality and security benchmarks.\n Evidence:\n・https://drive.google.com/file/d/1lrZybhVQrwK4h9KfxKJ6_VwcQRT2DtVF/view?usp=drive_link\n・https://drive.google.com/file/d/1W6ydplWjg5qIeS9zL1zo3ZP4WPkLOuLg/view?usp=drive_link\n\nPreliminary documentation drafted\nAcceptance criteria: Basic usage instructions, project structure, and contributor guidelines outlined to guide the next phase.\n Evidence:\n・https://drive.google.com/file/d/1b_-59KglzvEoR_uVaQQTIydh5i-l7mmD/view?usp=drive_link\n・https://drive.google.com/file/d/1d_2yHqq6ypYaMScNB-0hOtuJBLI0Puyg/view?usp=drive_link\n\nLinks that were considered missing by reviewer:\nGetting started (Initial dev guide) - https://drive.google.com/file/d/1wY74whOAsVustoKedxX99Spr6SacA77b/view?usp=sharing\nArchitecture doc - https://drive.google.com/file/d/14EgJadSm6UsoVEF6yPlmavpqGtrCfRFz/view?usp=sharing\nREAD ME file that exists in the repo - https://drive.google.com/file/d/1VjxcrpX9aU97h6ykI4_kVkBM-6IcjoXx/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 17
+    },
+    {
+      "no": 2,
+      "month": "14",
+      "cost": 15000,
+      "promise": "Publish the codebase on a public repository (GitHub) under an open-source license\nWe will switch the repository from private to public, ensuring a permissive license is clearly displayed.\nDevelop comprehensive documentation, including setup guides and contribution guidelines\nWe will expand the preliminary docs into a full set of resources for running, contributing to, and supporting GeroWallet.",
+      "criteria": "Codebase publicly accessible with proper licensing\nThe repository is visible to all, and licensing details are clear in the README.\nComplete and user-friendly documentation available\nDevelopers can easily follow guides to install, run, and contribute to GeroWallet without confusion.\nRepository set up for issue tracking and contributions\nWe will enable GitHub Issues (or similar) with labels, templates, and guidelines for pull requests.",
+      "report": "Evidence of milestone completion\n1. Public repository link\nhttps://github.com/Gero-Labs/gerowallet\nThe GeroWallet browser extension repository is public and visible to the community. It contains the complete extension: the background service worker, key derivation and encrypted storage, the transaction signing path, transaction building for staking, governance and dApp flows, multi-chain support across Cardano, Bitcoin, Midnight and Apex Fusion, and the full user interface.\nThe repository is licensed under the Apache License 2.0, an OSI-approved permissive open-source licence. The full licence text is at the repository root, alongside a NOTICE file, and GitHub reports the repository licence as Apache-2.0.\n・Licence: https://github.com/Gero-Labs/gerowallet/blob/development/LICENSE\n・Notice: https://github.com/Gero-Labs/gerowallet/blob/development/NOTICE\n\n2. Documentation accessible in the repository and on the website\nOn the website: https://gerowallet.io/docs\nThe Developer Documentation section of the GeroWallet site covers:\n・Building from source: prerequisites, cloning, installing dependencies, environment configuration, and loading the unpacked extension in a browser\n・Configuration, including which environment variables are required and which integrations need your own keys\n・Repository structure, mapping each top-level source directory to its contents\n・Contributing: the fork and pull request workflow, coding standards, commit conventions, and the Code of Conduct\n・Security: the vulnerability disclosure process\n・Licensing: the Apache 2.0 terms and what they permit, linked to the full text\n\nIn the repository:\n・README, overview and quick start: https://github.com/Gero-Labs/gerowallet/blob/development/README.md\n・Architecture and system design: https://github.com/Gero-Labs/gerowallet/blob/development/ARCHITECTURE.md\n・Contribution guidelines: https://github.com/Gero-Labs/gerowallet/blob/development/CONTRIBUTING.md\n・Code of Conduct: https://github.com/Gero-Labs/gerowallet/b",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 26,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "15",
+      "cost": 20000,
+      "promise": "Establish community communication channels (e.g., Discord, Telegram)\n・We will set up open channels where contributors and end-users can discuss ideas, report issues, and share feedback.\n\nImplement contribution processes and code review practices\n・We will define clear guidelines for creating issues, submitting pull requests, and reviewing code to maintain quality.\n\n﻿﻿Submit a comprehensive project report summarizing achievements\nWe will compile a final overview of goals met, lessons learned, and overall impact on Cardano.\nCreate a video highlighting the project’s impact and future plans\nWe will produce a short video showcasing the community engagement, new features, and roadmap beyond this project.",
+      "criteria": "Active participation in community channels\n・Developers and users regularly interact, ask questions, and share suggestions in Discord or Telegram.\n\nContributions reviewed with feedback provided\n・All pull requests receive constructive review comments, ensuring consistent code quality.\n\n﻿﻿Report and video effectively communicate project outcomes\nStakeholders gain a clear understanding of progress, results, and next steps.\nMaterials are suitable for sharing with the Catalyst community\nAll outputs follow Catalyst guidelines, ensuring the community can easily access and review them.",
+      "report": "A. Output: Community communication channels established — Discord server, Telegram announcements channel, and GitHub Discussions (6 categories: Announcements, General, Ideas, Polls, Q&A, Show and Tell) are live and accessible. Acceptance criteria: Developers and users regularly interact, ask questions, and share suggestions in Discord or Telegram. Evidence:\n・Discord: https://discord.gg/CK9RADpAcZ\n・Telegram: https://t.me/GeroWallet\n・GitHub Discussions: https://github.com/Gero-Labs/gerowallet/discussions\n\nB. Output: Contribution processes and code review practices implemented — CONTRIBUTING.md defines clear guidelines for issues, PRs, and code review. Issue templates, PR templates, and review workflows are configured. 600+ pull requests merged with constructive review feedback on every PR. External community contributions received (e.g., PR #1002 from first-time contributor amvs0122). Acceptance criteria: All pull requests receive constructive review comments, ensuring consistent code quality. Evidence:\n・Contributing guidelines: https://github.com/Gero-Labs/gerowallet/blob/development/CONTRIBUTING.md\n・PR history (600+ merged with reviews): https://github.com/Gero-Labs/gerowallet/pulls?q=is%3Apr+is%3Aclosed\n・Issues (389 tracked): https://github.com/Gero-Labs/gerowallet/issues?q=is%3Aissue\n・Contributors: https://github.com/Gero-Labs/gerowallet/graphs/contributors\n・Community standards: https://github.com/Gero-Labs/gerowallet/community\n\nC. Output: Comprehensive project report submitted — summarizing goals met, community engagement metrics, lessons learned, and overall impact on Cardano. Acceptance criteria: Report and video effectively communicate project outcomes. Stakeholders gain a clear understanding of progress, results, and next steps. Evidence: https://docs.google.com/document/d/10WNmpsArDFqX5a9IF7VMqd_qyaUWLA6pt3fC5VjOsgA/edit?usp=sharing\nD. Output: Close-out video created — highlighting the project's impact, community engagement, open-source achievements, and fut",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 25,
+      "cut": true
+    }
+  ]
+}

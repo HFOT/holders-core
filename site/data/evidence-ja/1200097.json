@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "目的: 必要なインフラを設定し、チームを組み立て、プロジェクト管理慣行を定義することにより、プロジェクトのための確かな基盤を確立します。\nチームフォーメーション\n・法令・行政枠の設定\n・コアチームメンバーが確認・公表\n\nプロジェクト管理ツールのセットアップ\n・プロジェクト管理ツールやシステムの構築、プロジェクト進捗の整理・追跡.",
+      "criteria": "チーム形成完了\n・法人の設立\n・チームメンバー全員が確認・公表します。 チームメンバーの一覧が表示されます。\n\nプロジェクト管理ツールの確立\n・プロジェクト管理のためにGoogleシートやGithubを設定し、タスクとタスクのステータスを表示(起動しない、進行中、完了、バックログ)。 チームメンバーにタスクとロールを割り当て、公開\n・バックエンドサービスホスティングアカウントの設定\n・DeltaDeFi 用の Github リンクを設定する",
+      "report": "チームフォーメーション\n・法律法人設立 公開リンクまたはスクリーンショットは、確立された法人を閲覧するために提供されます。\n・https://drive.google.com/file/d/1MDNlPE1oV4upLempVgNhoXihXbIj9rAo/view?usp=sharing\n・SIDAN Lab専用のDiscord Channelの公開リンクにてロールスチームメンバーの一覧をご覧いただけます。\n・https://drive.google.com/file/d/1sFntxS7HSc6tfY8g7UpNF3aDpRZRKhIm/view?usp=sharing\n\nプロジェクト管理ツールのセットアップ\n・Googleシート、Githubの設定 パブリックリンクは、DeltaDeFi チャネルの SIDAN Discord グループにて公開します。\n・https://docs.google.com/spreadsheets/d/1BduhPvTqNi897oCbZRjsTjf0VHtjJykBU-yUSa4pJis/edit?usp=sharing\n・Discordの発表:https://drive.google.com/file/d/1E9fxJ-c9MyBm4klrzUxwBz5KAmRd41AB/view?usp=sharing\n・バックエンドサービスのホスティングアカウントのスクリーンショットが提供されます。 (注記: 請求内容、決済内容が機密性の高いため、アドレスが隠され、詐欺や不正のリスクがすべて回避されます)\n・https://drive.google.com/file/d/1f6N4X4z8SlvdX5Ncm9huJcSM7YpJY4YS/view?usp=sharing\n\nDeltaDeFiのGithubリンクが提供されます\n・https://github.com/deltadefi-protocol"
+    },
+    {
+      "no": 2,
+      "promise": "客観的:ファインチューンとF11の研究から技術アーキテクチャの初期ドラフトを確認します。\n技術的な建築文書\n・オフチェーンとオンチェーンコンポーネントを含むシステムアーキテクチャの詳細なドキュメント。\n・アーキテクチャ、データフロー、コンポーネントのインタラクションを照らす包括的な図。\n\nスマートコントラクトデザイン文書\n・擬似コードやフロー図などのスマートコントラクトの詳細なロジックと構造。\n・DeltaDeFiプラットフォームとのスマートコントラクト機能と相互作用の仕様\n\nUI/UXデザインドキュメント\n・プラットフォームのユーザーインターフェイスと経験を詳述する初期ワイヤーフレームとモックアップ.",
+      "criteria": "クリアでわかりやすい図形\n・すべてのアーキテクチャと設計図をクリアし、よくラベル付けする必要があります。\n・Diagramsは、システムの構造とデータフローを表しています。\n\n技術的な建築文書の完成と見直し\n・文書は、オンチェーンとオフチェーンコンポーネントの詳細な図と説明を含むシステムアーキテクチャをカバーする必要があります\n\nスマートコントラクトロジックに関する完全なドキュメント\n・ドキュメントはスマートコントラクトのロジックと構造の説明を提供する必要があります。\n\nUI/UXデザインドキュメント\n・ワイヤフレームとモックアップのドキュメンテーション",
+      "report": "技術的な建築文書:\nパブリック gitbook ドキュメンテーション (https://docs.deltadefi.io/project-catalyst-f12-milestone-reporting/technical-architecture) は、オフチェーンとオンチェーンコンポーネントを含む DeltaDeFi の技術的なアーキテクチャを示しています。 Catalyst Team Reviewer のコメントに応じて、DeltaDeFi のオフチェーンとオンチェーンコンポーネントの両方を照らすシステムアーキテクチャを補っています。\nスマートな契約の設計文書:\n公開 gitbook ドキュメント (https://docs.deltadefi.io/project-catalyst-f12-milestone-reporting/smart-contract-design-document) は、スマートコントラクトの詳細なロジックと構造を示しています。 Catalyst Team Reviewer のコメントに対して、DeltaDeFi の詳細なロジック、構造、擬似コードを補足しました。\nUI/UXの設計文書:\n公開 gitbook ドキュメント (https://docs.deltadefi.io/project-catalyst-f12-milestone-reporting/user-flow-diagram-and-wireframes) は、プラットフォームのユーザーインターフェイスと経験を詳述するワイヤーフレームとモックアップを示しています."
+    },
+    {
+      "no": 3,
+      "promise": "目的:DeltaDeFi Cardanoスマートコントラクトの設計と開発\nスマートコントラクト開発\n・スマートコントラクトのソースコードをドキュメントで作成\n\nスマートな契約の指定文書\n・スマートコントラクトとスクリプト仕様の概要\n\nオープンソースリポジトリ\n・GitHubリポジトリをスマートコントラクトソースコードと基本的なドキュメントで公開します。\n\n監査エンゲージメント\n・商業監査またはコミュニティ主導の監査のための準備を完了",
+      "criteria": "スマートコントラクト開発\n・コメントやドキュメンテーションによる機能的なソースコード。\n\nスマートな契約の指定文書は完了しました\n・スマートコントラクトとスクリプト仕様の概要を文書化\n\nオープンソースリポジトリ作成\n・リポジトリは、関連するファイルと基本的な文書でGitHubで公開されています。\n\n監査エンゲージメント\n・商業監査人やコミュニティ主導の監査を実施し、基本的なセキュリティと是正性を確保します.",
+      "report": "スマートコントラクトソースコードとオープンソースリポジトリ:https://github.com/deltadefi-protocol/aiken-virtual-dex\nスマートな契約の指定文書:https://github.com/deltadefi-protocol/aiken-virtual-dex/tree/main/specs\nコミュニティ監査証拠:\nhttps://docs.google.com/document/d/1xayG3aeC18FdBuJPa9nf3sNcpUJ1Iue7rqkh92kWFAw/edit?tab=t.0 で示されたスクリーンショットは、過去2週間のコミュニティ監査イベントのdeltadefiスマートコントラクトに関するコメントがいくつかあります。 当社のエンジニアは、これらの問題の修正をコミットしました。 これらの証拠は、監査エンゲージメント証拠を示しています."
+    },
+    {
+      "no": 4,
+      "promise": "API ソースコード\n・DeltaDeFiで基本的なドキュメントにアクセスして取引するためのAPIソースコードを開発します。\n\nAPIドキュメント\n・APIエンドポイント、設定、使用状況、例を網羅する文書化\n\nオープンソースリポジトリ\n・GitHub リポジトリを API ソースコードと詳細なドキュメントで公開します.",
+      "criteria": "APIソースコード開発\n・基本的なコメントや文書による機能的なソースコード。\n\nAPI ドキュメント 完了\n・ドキュメントは、エンドポイントの説明、使用説明書、例など、APIの概要を提供します。\n\nオープンソースリポジトリ作成\n・リポジトリは、関連するすべてのファイルと詳細な文書でGitHubで公開されています.",
+      "report": "マイルストーン2の触媒チームからのフィードバックについては、マイルストーン4レビュー中に再び同じ証拠を要求するために触媒チームレビューャによる間違いかもしれないと思います。 コメントは、私がすでに不足している証拠を補い、達成レビューのマイルストーン2の証明に関する承認を受けているマイルストーン2のレビューで見てきたほとんど同じ言葉です。 ここに誤解がないか教えて下さい。 お問い合わせ\nマイルストーン4の触媒チームからのフィードバックについては、以下をご覧ください。\nAPIの概要、エンドポイントの説明、使用説明書、例に関する API のドキュメントについては、スワッガを修正しました。 yaml ファイルをすべてのこれらの情報を補完します。 変更されたスワガー。 yaml ファイルは、各 api 関数の情報以下を含みます。\n・APIパス例/accounts/signin\n・APIメソッド例\n・概要(APIの目的をまとめた短い文章)\n・説明(API利用指示書を提示する段落が短い)\n・パラメータ(api がリクエストパラメータを必要とする場合、swagger doc はデータ型を記述し、その例を記述します)\n・応答(wagger doc は、成功と失敗した api リクエストの応答例を示します)\n・ パラメータのシュマは、スワッガの doc にも表示されます。\n\n公開リポジトリのドキュメンテーションについては、リポジトリの概要を反映するために readme.file を修正しました。 パブリックユーザーがリポジトリ構造を理解し、API機能を利用するために効率的にリポジトリをナビゲートするのに十分であるべきです。\n改定された資料は、下記をご覧ください。\nswagger.yaml ファイル: https://github.com/deltadefi-protocol/deltadefi-backend/blob/master/internal/api/swagger.yaml\nreadme ファイル: https://github.com/deltadefi-protocol/deltadefi-backend/tree/master"
+    },
+    {
+      "no": 5,
+      "promise": "ウェブサイトのフロントエンドのデザイン\n・ワイヤーフレームやモックアップなど、DeltaDeFiプラットフォーム用のUI/UXを設計。\n\nウェブサイトのフロントエンド開発\n・UI/UXデザインに基づくWebサイトフロントエンドの開発\n\nウェブサイトの展開\n・Webサイトをパブリックドメインに移行し、利用者がアクセスできるようにします.",
+      "criteria": "ウェブサイトのフロントエンドの設計は完了しました\n・ワイヤーフレームとモックアップによるFinalized UI/UXデザイン。\n\nウェブサイトフロントエンド開発\n・本質的な機能でWebサイトを開発\n\nパブリックドメインへの展開\n・ライブ・パブリック・サイト",
+      "report": "Https://docs.google.com/document/d/1lykAi5SvD8Zi0g8V AWU6UXlHQ4 TquhsWbA4PuCuUI/edit?tab=t.0 でマイルストーン完了の証拠を確認してください."
+    },
+    {
+      "no": 6,
+      "promise": "スマートコントラクトの展開\n・Cardanoの試作テストネット上に開発されたスマートコントラクトをデプロイします。\n\nバックエンドとフロントエンドの統合\n・バックエンドサービスで展開されたスマートコントラクトを統合します。\n・フロントエンドのWebサイトが機能的であり、バックエンドとスマートコントラクトと正しく相互作用します。\n\nAPIサービス展開\n・DeltaDeFiプラットフォームとのやり取りが可能なAPIサービスを開発\n\n最終クローズアウトレポートとビデオ\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "スマートコントラクトの展開完了\n・Cardanoの試作テストネット上でのスマートコントラクトの展開と運用\n\nバックエンドとフロントエンドの完全統合\n・バックエンドサービスは、デプロイされたスマートコントラクトと統合され、フロントエンドのウェブサイトは機能的です。\n・利用者は、バックエンドやスマートコントラクトとやりとりするウェブサイトを通じて必要なアクションを実行することができます。\n\nAPI サービスの展開と機能\n・API サービスはデプロイされ、DeltaDeFi プラットフォームとのやり取りが可能です。\n・APIのエンドポイントは運用され、必要な機能を提供します。\n\n最終クローズアウトレポートと",
+      "report": "[査読者のフィードバックに基づいてPOAを退会]\nスマートな契約の配置:\n・Cardanoの試作テストネット上のスマートコントラクトへのトランザクションIDまたはリンク\n\n・APPVAULT SPEND: 03fadf38750b7c90902286e083924b8837c86ee96e54dc101a15701f5ebc1\n・appdePOSITREQUEST MINT: d4dc6ca99616a73edafa77602f33670a58f4fe61b76a043307efad9dba90dc5c\n・appdePOSITREQUEST SPEND: f952a21d49443c13a63ea5ecf9f22fa8d16337c468fbf58e31f73fa2dfec9b\n・DEXACCOUNTBALANCE SPEND:5fde15ee7dbee50dbdea46fcff34700810cee3260eb1c78a6375ae804b4c8bd4\n・DEXORDERBOOK SPEND: 3798b056eecd06f7ce900b8d332f4b236a112176aefb053d6aebc30775decb11\n・アカウント運用 アプリケーション: f2279a6f91f2341f88e512ca56d190badfeac7e7a52812855464f03ed8662114\n・アカウント運用 APPWITHDRAWAL:de545edb93fc67d47a7b7b5c734dcd23a46fc205b6350930ddd9e578d21f49b2\n\n・スクリーンショットやログで展開や統合が成功\n・https://docs.deltadefi.io/faq/project-catalyst-f12-milestone-reporting/frontend-and-backend-and-smart-contract-integration-process-and-functionalities-testing でスマートコントラクトの展開と統合検証の詳細な証拠を確認してください。 ユーザーウォレット、Cardanoエクスプローラ、cquisitorを使用して、すべてのスマートコントラクトの展開と統合を検証するための重要な手順を示します。\n\nバックエンドとフロントエンドの統合:\n・フロントエンドとバックエンド間の統合を実証するスクリーンショットやビデオ:\n・https://www.youtube.com/watch?v=jmaohJlfuM4. バックエンドのログとフロントエンドのネットワークタブのログの並列ビューを表示し、フロントエンドとバックエンドの統合を検証します。\n・統合プロセスの記述と機能テスト 記述はよく文書化されます。 URL は公開され、提供されます。\n・https://docs.deltadefi.io/faq/project-catalyst-f12-milestone-reporting/frontend-and-backend-and-smart-contract-integration-process-and-functionalities-testing. フロントエンドが正しいリクエストを提出し、正しいリクエストを受け取り、DelderDefiのバックエンドからの応答をverで受け取るかどうかをユーザーが確認する方法を示します"
+    }
+  ]
+}

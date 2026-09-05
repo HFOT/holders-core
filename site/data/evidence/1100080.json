@@ -1,0 +1,60 @@
+{
+  "title": "CardanoJ - Build dApps in Java",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 45000,
+      "promise": "There are four main building blocks or sofrware components of the CardanoJ Libraries to be build. \n・Serialization and deserialization for datum and redeemer\n・Transaction builder that supports script transactions\n・Automatic fee estimation for script transactions\n・Stake delegation for funds locked in Plutus scripts",
+      "criteria": "For each of the output following are made available\n・CadanoJ source code \n・Documentation including readme file\n・Unit Test Cases confirming test results. \n\nAdditionally, a short video showing sample unit test case run to confirm the code is working.",
+      "report": "CardanoJ is a library for Java developers to write off-chain code in Java, so they can write dApps faster.\nCreating re-usable libraries is always a difficult task and it took us bit longer than we thought. We have worked hard in last two months doing some detailed R&D and development of building block for the CardanoJ.\nHere are evidences.\nCardanoJ GitHub Repository Link: It Contains code for all four main building block components of the CardanoJ. \nhttps://github.com/CardanoJ/cardanoJ\nDocumentation including readme file: The Readme file containing basic documentation about development completed so far and how to use the code.\nhttps://github.com/CardanoJ/cardanoJ/blob/cardanoj-cli/README.md\nGitHub repository link having Unit Test Cases: This is Part of the main CardanoJ repository and it have Unit Test Cases. \nhttps://github.com/CardanoJ/cardanoJ/tree/cardanoj-cli/src/test/java/com/cardanoJ\nVideo confirming Code is working:\nIt is a short video showing running code and confirming it is working. \nhttps://www.youtube.com/watch?v=xklcwo6_GHk\nThis video link is also added at readme.md file at location https://github.com/CardanoJ/cardanoJ/blob/cardanoj-cli/README.md\nThis sets beginning, we are very excited and looking forward to work on the next set of deliverables like API Documentation and SDK developments.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 30000,
+      "promise": "・For the CardanoJ, Java API documentation is made available for developers to create script transactions, which shall include\n\n Defination of functions\n Required inputs and \n Possible outputs.",
+      "criteria": "・Java API documentation for CardanoJ is made available including\n\n Defination of functions \n Required inputs and'\n Possible outputs.\n・A Sample program showing use of API documentation and confirm it is working",
+      "report": "CardanoJ API documentation is build and made available for developers. The API documentation is comprehensive and it includes various functions definition, required inputs and possible out puts.\nEvidences \n・Link to the API document https://github.com/CardanoJ/cardanoJ/tree/cardanoj-api-documentation\n・A video showing use of API documentation and confirming it works https://www.youtube.com/watch?v=CrMZbuiwQss The video is bit longer however it includes all the API documentations and its use. We have included video link in API document Readme file as well.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 45000,
+      "promise": "Plutus Java SDK is developed which shall including below six source code library functions for developers to create, test, and manage their projects\n・Helper functions for dApp environment setup and simulation\n・Command line interface (CLI) that launches and manages local testnet\n・CLI that bootstraps dApp projects\n・CLI that creates and manages wallets\n・CLI that builds and tests dApps\n・CLI that deploys Plutus scripts to blockchain",
+      "criteria": "Plutus Java SDK is developed which shall including below six source code library functions\n・Helper functions for dApp environment setup and simulation\n・Command line interface (CLI) that launches and manages local testnet\n・CLI that bootstraps dApp projects\n・CLI that creates and manages wallets\n・CLI that builds and tests dApps\n・CLI that deploys Plutus scripts to blockchain\n\nAlso, for the above, Unit Test Cases to confirm these are working . A short video covering sample test cases run.",
+      "report": "CardanoJ is a library for Java developers to write off-chain code in Java, so they can write dApps faster.\nHere are evidences.\nCardanoJ GitHub Repository Link: \nhttps://github.com/CardanoJ/cardanoJ/tree/cardanoj-sdk\nThis repository contain SDK for following functionalities\nHelper functions for dApp environment setup and simulation\nCommand line interface (CLI) that launches and manages local testnet\nCLI that bootstraps dApp projects\nCLI that creates and manages wallets\nCLI that builds and tests dApps\nCLI that deploys Plutus scripts to blockchain\n\nTo demonstrate code is working, a short video with test cases is prepared\nhttps://youtu.be/ZpgTwbHTHQU\n\nDocumentation including readme file: The Readme file containing basic documentation about development done and how to use the code.\nhttps://github.com/CardanoJ/cardanoJ/tree/cardanoj-sdk\nThe video link is also added at readme file. \nWe have come long way and now w very excited complete the project and looking forward to submit final deliverable and closeout reports in next milestone.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 30000,
+      "promise": "・Two Educational dApps are build using the Java library for the broader audience by showing how to use the library in real working dApps.\n\n Backend is built using CVardanoJ APIs and SDK \n Web UI is built to demonstrate educational dApp \n Comprehensive documentations on the designs and architectures for the dApps\n Detailed blog posts about building dApps\n・Final Closeout Report\n・Closeout Video",
+      "criteria": "・Two Educational dApps are build using the Java library,\n\n dApps Backend is built using CardanoJ APIs and SDK \n dApps Web UI is built to demonstrate educational dApp \n dApps Comprehensive documentations on the designs and architectures \n Blog post how to build dApps using CardanoJ\n・Final Closeout Report\n・Closeout Video",
+      "report": "・Two functional Educational dApps which are build using the CardanoJ\n\n Code and documentation\n CardanoJ Dapp 1: https://github.com/CardanoJ/cardanoJ/tree/cardanoj-dapps/dapp-1\n CardanoJ Dapp 2: https://github.com/CardanoJ/cardanoJ/tree/cardanoj-dapps/dapp-2\n Web UI link is made available to view the educational dApps \n (The links hosted for dapp sample are for reviewers to check. The developers can get code for it from Github any time hence these two below links will be hosted after review is complete) \n http://16.171.145.142:3000/ DAPP1\n http://56.228.1.44:3000/ DAPP2\n \n・Blogpost post link\n\n Medium: https://medium.com/@aditya.solanki_90860/how-to-build-cardano-dapps-with-cardanoj-a-java-sdk-for-bl…\n Linkdin: https://www.linkedin.com/posts/aiquant_how-to-build-cardano-dapps-with-cardanoj-activity-7376853900…\n \n・Final Closeout Report\n\n https://drive.google.com/file/d/1NuhdXRAcMhZbNbaGEJnROCYFRrCGUmTD/view?usp=sharing\n \n・Closeout Video\n\n CardanoJ PCV",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 15
+    }
+  ]
+}

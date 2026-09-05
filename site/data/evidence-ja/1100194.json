@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Mayaプロトコルバリデータ(MAYANodes)は、すべての統合チェーンのフルノードを実行します。 MAYANodeがCardanoフルノードを実行できるようにCardanoデーモンを作成します.",
+      "criteria": "MAYANodesがCardanoフルノード(Cardano-daemonをコードし、Cardanoを他のファイルに追加)を実行できるようにするために必要な変更を行います.",
+      "report": "Maya's Node Launcher repo に Cardamon-daemon が追加されたことを共有して満足しています。\nhttps://gitlab.com/mayachain/devops/node-launcher/-/merge request/129\nMRが合併しました!\nhttps://imgur.com/a/daDnTvO ノードダッシュのスクリーンショット"
+    },
+    {
+      "no": 2,
+      "promise": "MAYANode(address.go、chain.go、gas.gp、asset.go、pubkey.go、ドッカーファイル)の変更を行います.",
+      "criteria": "Cardano(Cardano Bifröstクライアントを除く)をサポートするために必要なMAYANodeの変更を追加します.",
+      "report": "この合併リクエストには、アドレス.go、chain.go、gas.gp、asset.go、pubkey.go で行われた変更が含まれ、Cardano(注記:今後のマイルストーンの変更も含まれています): https://gitlab.com/mayachain/mayanode/-/merge requests/373/diffs"
+    },
+    {
+      "no": 3,
+      "promise": "マージリクエストにCardanoをMayaプロトコルに追加するスモークテストが組み込まれています。\n\n煙テストとは?\nチェーンのスモークテストは、単一のパイソンファイル(Kujira例:https://gitlab.com/mayachain/mayanode/-/blob/develop/test/smoke/chains/kuji.py?ref type=heads )で行われます。\nスモークテスト(煙がある場所、火災)は、各ステップで多くの異なる取引を通過し、正確なバランスをテストします。\n-CardanoプールのWalletとVaultバランス\n-マヤの州におけるバランス\n-プールとボンド報酬の報酬\nこれにより、マヤプロトコルは、計画どおりに、最小単位まで、すべてのトランザクションを処理します。 ガス処理の周りの複雑さも追跡されます.",
+      "criteria": "MR で Cardano の煙テストを行い、Cardano を MAYANode に追加します.",
+      "report": "煙テストは、次のマージリクエストで確認できます。https://gitlab.com/mayachain/mayanode/-/merge requests/373/diffs\n煙テスト用のCardanoのすべての編集は、`test/smoke/`フォルダにある、\n以下のファイルは、Cardano煙テストのサポートを追加するように修正されました(マージリクエストにも表示されます)\ntest/smoke/chains/aliases.py (テスト/スモーク/チェーン/エイリアス)\nテスト/スモーク/チェーン/cardano.py\ntest/smoke/scripts/smoke.py ディレクティブ\ntest/smoke/requirements.txt をテストする\n煙テストを通過するビデオ: https://youtu.be/ioK VyGmBEE"
+    },
+    {
+      "no": 4,
+      "promise": "StagenetでCardanoコードを実行し、潜在的なバグを解決します。 ステージネットは、実際の資産と市場条件で、テストネットとして見ることができます.",
+      "criteria": "Maya ProtocolのStagenetでCardanoを持ち、Maya: LP'ing、Swapping、ADA、Saver vault、ノードへの結合、およびChurningで可能なすべてのことを試してみましょう.",
+      "report": "このビデオでは、このマイルストーンの説明を見つけることができます。\nhttps://www.youtube.com/watch?v=wJwWDyfzcpY\n追加リンク:\nスワプス\n- ADA → RUNE (Cardano → THORChain, 5 ADA in / 1.12 RUNE):\nCardanoscan: https://cardanoscan.io/transaction/3dfabf904bc5a96606d7b8f75c447994e738b921545ec56d1f18a38d7f261144\nMAYANode: https://stagenet.mayanode.mayachain.info/mayachain/tx/details/3dfabf904bc5a96606d7b8f75c447994e738b921545ec56d1f18a38d7f261144\nTHORChain: https://thorchain.net/tx/E80D87D2E50E480F2513B8601A4773B7E662172E382EFB0CEE86D6088D506A26\n\n- RUNE → ADA (THORChain → Cardano, 4 RUNE in / ~2.16 ADA out):\nTHORChain: https://thorchain.net/tx/473f28f379e2d554d90380019e8c4d30d1be1dde1d9ca076965dc2164d2777cb\nMAYANode インバウンド: https://stagenet.mayanode.mayachain.info/mayachain/tx/details/473f28f379e2d554d90380019e8c4d30d1be1dde1d9ca076965dc2164d2777cb\nCardanoscan: https://cardanoscan.io/transaction/c8dd974d4ea931609d08824b69fff63e2973fa5ac751f0b2657691269f75ade3\nMAYANodeのアウトバウンド: https://stagenet.mayanode.mayachain.info/mayachain/tx/details/c8dd974d4ea931609d08824b69ff63e2973fa5ac751f0b2657691269f75ade3\n\n液性プール\n- 流動性を加えて下さい:\nCardanoscan: https://cardanoscan.io/transaction/a95f5b6e1251e0cf0755a0dff8c39a3e4607f59cc64b6af42c32e3fca28d581e\nMAYANode ADA: https://stagenet.mayanode.mayachain.info/mayachain/tx/details/A95F5B6E1251E0CF0755A0DFF8C39A3E4607F59CC64B6AF42C32E3FCA28D581E\nMAYANode CACAO: https://stagenet.mayanode.mayachain.info/mayachain/tx/details/26DB6950784605A13C7AA47A6295DF29F1E063C71B274172F787516283271504\n\n- 液体を引き出して下さい:\nMAYANodeトリガー: https://stagenet.mayanode.mayachain.info/mayachain/tx/details/F215F3BE5122DF589F95F16B3C1F22E8393DC9107F8A29CDDBCDA15C11502B23\nMAYANodeのアウトバウンド: https://stagenet.mayanode.mayachain.info/mayachain/tx/details/29EB3B6E802C80118A0AF7661A1A819E957023FE0ABCE6E327EF4260FFAAA519\nCardanoscan: https://cardanoscan.io/transaction/29EB3B6E802C80118A0AF7661A1A819E957023FE0ABCE6E327EF4260FFAAA519\n\nボンディング\n・ADA-C"
+    },
+    {
+      "no": 5,
+      "promise": "マヤプロトコルのメインネットでCardanoの統合を開始.",
+      "criteria": "マヤプロトコルのメインネットでCardanoを持っており、マヤで可能なすべてのことを試してみましょう: LP'ing、およびADA、Saver vault、ノードとChurningに結合します.",
+      "report": "マイルストーンのビデオを確認することができます。\nhttps://youtu.be/9gaJqYCYchc\n\nNETWORK: Mayaプロトコルメインネット(mayanode.mayachain.info)\n\nスワプス\n- ADA → ETH(Cardano → Ethereum、~200 ADA / 0.0258 ETH):\nCardanoscan: https://cardanoscan.io/transaction/fe6e750ceb44dd37610dc53b2cd1c9e38b3bb0308453666c54d0c5552be\nMAYANode: https://mayanode.mayachain.info/mayachain/tx/details/fe6e750ceb44dd37610dc53b2cd1c9e38b3bb0308375453666c54d4d0c5552be\nEtherscan: https://etherscan.io/tx/0x2C6677528EA4CE4564C893D5F54F683D7BD8CA58762AAD67DD1BED6321CB38\n\n- ARB.USDT → ADA (Arbitrum → Cardano, ~205 USDT / ~758 ADA out):\nArbiscan: https://arbiscan.io/tx/0x5A952D852967413632B90D2BBF10CFB331C13F8719584728A35B7D6497452204\nMAYANodeインバウンド: https://mayanode.mayachain.info/mayachain/tx/details/5A952D852967413632B90D2BBF10CFB331C13F8719584728A35B7D6497452204\nCardanoscan: https://cardanoscan.io/transaction/C1958D138914A98B1DE7509CBC80C843DB7A430BBA0415B80F4E43E3CB0EF3E8\nMAYANodeのアウトバウンド: https://mayanode.mayachain.info/mayachain/tx/details/c1958d138914a98b1de7509cbc80c843db7a430bba0415b80f4e43e3cb0ef3e8\n\n液性プール\n- 流動性を加える(+:ADA.ADA:):\nCardanoscan: https://cardanoscan.io/transaction/f57b49fbf705ea38277495df7e43db5a032e48c2a344b2e62cb995ee8ddd0133\nMAYANode ADA: https://mayanode.mayachain.info/mayachain/tx/details/f57b49f705ea38277495df7e43db5a032e48c2a344b2e62cb995ee8ddd0133\nMAYANode CACAO: https://mayanode.mayachain.info/mayachain/tx/details/997931A98F4D3CBBF254F7A557CE4B50394E06F6C1893C7AE6041F35FF3361D9\n\n- 流動性を引き出して下さい(WD:ADA.ADA:)::\nMAYANodeトリガー: https://mayanode.mayachain.info/mayachain/tx/details/B47A3FEE15B4873443E8A980E3664110279985D1DCF4DD2CA72FD9CFD8C021E1\nMAYANodeのアウトバウンド: https://mayanode.mayachain.info/mayachain/tx/details/2ff5a13349eb738c966c80f720c11c64781fef35a7099726de19ec6112dbfb\nCardanoscan: https://cardanoscan.io/transaction/2ff5a13349eb738c966c80f720c11c64781fef35a7099726de19ec6112dbfb\n\nボンディング\n- ADA-CACAO LPユニットをノードに結合(B)"
+    },
+    {
+      "no": 6,
+      "promise": "2ヶ月間メインネットにCardanoの統合を持っています。 Mayaをサポートするインターフェイスは、Cardanoをサポートしているため、誰でもネイティブADA(BTC、ETHなど)でサポートされているネイティブアセットを交換できます.",
+      "criteria": "2ヶ月間メインネットにCardanoの統合を持っています.",
+      "report": "・Too は全ての取引を参照してください。\n・行き先:https://www.mayascan.org/tx?type=action&subtype=swap\n・「全ての資産を表示」をクリック\n・「ADA > ADA」を選択\n・プロジェクトクローズアウトレポート https://gitlab.com/mayachain/mayanode/-/blob/bitol/1100194-cardano-project-closeout-report/docs/cardano-project-closeout-report.md?ref type=heads (PDFファイルのみ)\n・プロジェクトクローズアウト動画:https://youtu.be/4q7K-vDhT-o\n\n更新:\n・ライブデモ: https://www.youtube.com/watch?v=jkAsRC1ylxo\n・プロジェクトクローズアウトレポート PDF: https://gitlab.com/mayachain/mayanode/-/blob/bitol/1100194-cardano-project-closeout-report/docs/cardano-project-closeout-report.pdf?ref type=heads"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "title": "Urban Farmer - Grow to Launch",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "・A Terraform Script Demonstration Video\n・Bill of sale for camera equipment purchases from B&H Photo, Amazon, or other similar equipment suppliers. \n・A Behind the Scenes photo of the camera equipment in operation.\n・The Initial Broccoli Microgreen Tutorial Video\n\n・Introduction to grow environment \n・Introduce grow medium, trays, lighting, seeds, water (pH levels)\n・How to prep trays\n・How to cast seeds\n・Importance of fungicide\n・How to prepare\n・How to apply\n・Daily maintenance\n・Plant anatomy\n・Cotyledons signal harvest\n・Nutritional value of microgreens\n・Harvest\n・Knife safety\n・Cutting Procedure\n・Storage\n・Short term - immediate consumption\n・Long term - dehydration\n・Tray Sanitation",
+      "criteria": "・Milestone Reviewer will view a video with screen share of the terraform script in action that deploys a cosmos node and a client relayer that is a listener/Indexer that listens for blockchain events on a Cardano network related to our smart contract. \n・Milestone Reviewer will view the bill of sale documents to ensure that the equipment budget of $12,000 or more was spent on or after February 2024.\n・Milestone Reviewer will view the bill of sale to ensure 2 cameras and 2 lenses were purchased (Panasonic L Mount Cameras, Full Frame, S5 IIX, Prime Lens, Macro Lens). Additional expenditures will b",
+      "report": "Terraform Script Demonstration Video on YouTube: https://youtu.be/ayo40M370fA\nThe BTS Photo stored on GitHub: https://github.com/LloydDuhon/LGUrbanFarmStudio/blob/main/20240419_145855%5B1%5D.jpg\nThe Proof of Purchases for Equipment as PDF on GitHub: https://github.com/LloydDuhon/LGUrbanFarmStudio/blob/main/Proof%20of%20Purchases.pdf\nBroccoli Microgreen First Draft Video: https://youtu.be/k-CGMNNJ3bc - We will take this first cut and share it with farmers and non-farmers for feedback before producing the final script that will be most useful for our dApp.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60000,
+      "promise": "・A Smart Contract Deployed on the Cardano PreProduction TestNet that accepts a tRESI token and locks it away. The Listener deployed from the previous step sees the contract has locked tRESI and mints tRESI on the sidechain to a matched wallet.\n・Recorded 4 feedback sessions (2 with current farmers, 2 with non-farmers) and google form results\n・A revised Broccoli Microgreens Video with accepted feedback incorporated to the previous script.",
+      "criteria": "・A Milestone Reviewer can open a test wallet on the Cardano PreProduction Testnet, be provided tRESI tokens that they can then send to the smart contract through a web based interface. The reviewer can wait for the appropriate transaction completions, and then see tvRESI in a test wallet on the sidechain.\n・A Milestone Reviewer can view a Google Drive folder with videos from 4 feedback sessions.\n・A Milestone Reviewer can view a Spreadsheet from a Google Form with feedback on the video.\n・A Milestone Reviewer can view the improved Broccoli Microgreens Video",
+      "report": "We needed to get feedback from viewers of our video. On Github, we have a folder with links to the 4 video sessions, as well as an excel sheet with the survey responses from the form. This is located here: https://github.com/LloydDuhon/LGUrbanFarmStudio/tree/main/Milestone%202\nWe needed to provide a video showing our smart contract in action. That video is here: https://youtu.be/kudW-17D1jM\nThe transaction on the testnet is here: https://preview.cardanoscan.io/transaction/4a16affaa5fdf00059ff0dc393f656613a2a6685efbe18f7764889e71c3cd915\nWe needed to update the Broccoli Microgreen video with feedback from the participants. \nWe recorded additional footage showing the cutting of microgreens more effectively. \nWe recorded additional footage for sanitation that was more representative of the work involved.\nWe made the color corrections to ensure footage looked similar across camera cuts\nWe improved the audio levels.\nWe added timestamps to the video for chapter markers:\n00:00:00:00 Introduction\n00:00:2:16 Growing Environment\n00:01:43:20 Growing Medium\n00:03:29:09 Broccoli Seed Casting \n00:04:12:21 Fungicide Application\n00:04:27:22 Bottom Watering\n00:05:00:01 Dark out Phase\n00:05:21:15 Light Exposure\n00:05:53:03 Plant Anatomy\n00:07:13:20 Daily Maintenance \n00:07:28:00 Harvest Time\n00:07:48:17 Knife Safety\n00:08:18:09 Harvesting Process \n00:08:38:14 Health Benefits\n00:09:49:05 Use and Storage\n00:10:01:13 Sanitation\n00:12:29:09 Conclusion\nThe updated video is located here: https://www.youtube.com/watch?v=GCGBz2XUhi8",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 70000,
+      "promise": "・A PreProduction Testnet deployed Smart Contract, a PreProduction tagged Sidechain & Client Relayer, with the PreProduction Urban Farmer dApp deployed.\n・Instruction video/document to show how to use the app/platform.\n・The website for Urban Farmer dApp's preproduction version will be available for testers to log in and begin to perform functions.\n・A YouTube video will be produced showing that we deployed the above items.\n・Utilizing the Improved Script Layout, Create 5 videos\n\n・A Romaine Lettuce How To Video\n・A Basil How To Video\n・A Dill How To Video\n・A Mixed Microgreen How To Video\n・A “Teen” Mixed Lettuce How To Video",
+      "criteria": "・A Milestone Reviewer can interact with a PreProduction Wallet and tRESI to open an account on the Urban Farmer dApp and perform the basic functions, such as start a planting. (Milestone Reviewers aren’t required to actually grow anything, but they are always encouraged to do so!)\n・A Milestone Reviewer can view the video and documentation on using the product with clear instructions and replicable results.\n・A Milestone Reviewer will Watch the 5 Videos that show similar production value and flow to the Broccoli Microgreen Video.",
+      "report": "A. Output: A PreProduction Testnet–deployed smart contract, a PreProduction-tagged sidechain & client relayer, and the PreProduction Urban Farmer dApp, all deployed and operating on Cardano preprod. The two Aiken validators (Season Beacon and Cash Register) are confirmed on preprod; the append-only sidechain records each grow event and, at season close, the client relayer anchors the season's Merkle root on-chain.\nAcceptance criteria: A Milestone Reviewer can use a PreProduction wallet and tRESI to open an account on the dApp and perform basic functions (e.g., start a planting). The deployed sidechain produces records that are cryptographically anchored to Cardano and independently verifiable.\nEvidence:\n・Live preprod dApp: https://urban-dev.resi.works\n・Walkthrough proving deployment & functions: https://youtu.be/0cFFuzFOVGk\n・Closed-season validation report: https://urban-dev.resi.works/validate/609dc9d3-a0e5-4183-9398-2c3b501587ec\n・Raw validation JSON: https://urban-dev.resi.works/api/label-validator/609dc9d3-a0e5-4183-9398-2c3b501587ec\n・On-chain anchor transaction: 6f219350de9ad21629c98e2deb26d8489c2c6ecf9710251b2015e7a1bce0b600 — https://preprod.cardanoscan.io/transaction/6f219350de9ad21629c98e2deb26d8489c2c6ecf9710251b2015e7a1bce0b600\n\nB. Output: An instruction video and in-app document showing how to use the app/platform, with clear, replicable steps from wallet sign-in through farm setup, planting, harvest/packing, and season close.\nAcceptance criteria: A Milestone Reviewer can view the video and documentation on using the product with clear instructions and replicable results.\nEvidence:\n・Instruction video: https://youtu.be/0cFFuzFOVGk\n・In-app user documentation (bundled inside the dApp): https://urban-dev.resi.works\n・TLC food-traceability label validators demonstrating replicable results:https://urban-dev.resi.works/validate/UF-20260630-RACK-1-S1-1-MIXE-MICR-SUPE-M\n・https://urban-dev.resi.works/validate/UF-20260630-RACK-1-S1-2-MIXE-MICR-SUPE-M\n・https://urban-d",
+      "kinds": [
+        "chain",
+        "other",
+        "video"
+      ],
+      "links": 39,
+      "cut": true
+    }
+  ]
+}

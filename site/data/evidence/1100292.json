@@ -1,0 +1,71 @@
+{
+  "title": "Wolfram Price Feed Infrastructure",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40000,
+      "promise": "To enable both open-source package AND simplified API service, the following outputs will be completed. \n1) Create the driver implementation for a Cardano node, published in github.\n2) Create the collector implementation for decentralized exchange contracts, published in github. \n3) Update the REST API endpoints (which already pull from the centralized exchanges), to included decentralized exchanges, published in github.",
+      "criteria": "Drivers and the collector are compatible with the latest Cardano node version.\nREST API successfully integrates with the new drivers and collector.\nAll components pass testing with no critical bugs.",
+      "report": "1) Create the driver implementation for a Cardano node, published in github.\nOur driver utilizes the blockfrost Javascript SDK.\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/lib/domain-collectors/integrations/udex/Cardano/BaseCardanoDriver.js#L4\nWe are currently using the latest blockfrost-js release 5.5.0\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/package.json#L84\nhttps://github.com/blockfrost/blockfrost-js\n2) Create the collector implementation for decentralized exchange contracts, published in github.\nThe collector implementation handles: scheduling, communication and the methods to fetch and save the data. We created the exchange rate collector that pulls the data from the DEX and stores it in the database.\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/lib/domain-collectors/collectors/ExchangeRateCollector.js\nWe also implemented the DEX contract drivers for Minswap, Muesli Swap, Sundae Swap, Vy Finance and Wing Riders\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/tree/main/configs/udex/cardano/exchanges\n3) Update the REST API endpoints (which already pull from the centralized exchanges), to include decentralized exchanges, published in github.\nWe updated the REST API to include an endpoint to retrieve the exchange rate data, the documentation is available in our repo.\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/docs/api/rest/exchange-rates.md\nTo validate the code quality we have implemented a test suite\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/tree/main/tests\nThe testing procedure can be found here:\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/docs/quick-start.md#testing-procedures\nWe currently have 100% line coverage. All tests are passing and no critical bugs have been found.\nhttps://drive.google.com/drive/folders/1Z5uGWI",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 20,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 40000,
+      "promise": "The output will be implementing historical data fetching script and documentation of it in github. We will:\n・Identify publicly available sources for historical pricing data of relevant pairs. Create a list of the centralized exchanges and the pairs that are relevant to Wolfram and potential customers. \n・Implement data fetching script from these sources\n・Complete Testing",
+      "criteria": "Historical data fetching script is operational and allows the collection, storage and usage of the data retrieved. The expected function of the outputs will be:\n・A list of the centralized exchanges and the pairs that are relevant to Wolfram and potential customers. \n・The historical data fetching script is able to collect data from centralized exchange for a determined time period. \n・An acceptance test that demonstrates the script functionality.",
+      "report": "1 A PDF of the list of centralized exchanges and relevant pairs\nhttps://drive.google.com/file/d/1mWsw5TrH5um_JlgIit78S6foUnetVoay/view?usp=drive_link\n2 A short video demonstrating the historical data fetching script functionality and documentation in github\nhttps://drive.google.com/file/d/1e_Dk0qD0ykOz65G-agv42QZSf50yV4dl/view?usp=drive_link\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/0c9c107ad5fce8032f81d3e392b13098e900fa95/docs/quick-start.md#running-historical-collection\n3 A screenshot of the testing output\nTest corresponding to this feature is: HistoricalScheduler.spec.js\nhttps://drive.google.com/file/d/1JUyowp1OaSO7-BC1mzqT5vfn-j6o9PFu/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 75000,
+      "promise": "System robustness is about enabling error-handling of the codebase and community contribution.\nThe output in the system robustness milestone is 1) Testing platform refactoring which will reduce complexity for community contributors, 2) handle driver errors and 3) increase interval precision for data collection - published in github.",
+      "criteria": "System robustness has resilience in error handling, convenience in the testing platform and is flexible for community adaptations/contributions.",
+      "report": "Walk though video: https://drive.google.com/file/d/1lNo5dOCLUeTwYgqwm16_610a9fmqfBC5/view?usp=drive_link\n\n1 Testing platform refactoring\nWe have included the instructions to run the tests with Jest in our quick start guide:\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/eaec64264c068aae8c7bff86284b5371858271e4\nCommunity contribution guidelines:\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/docs/community-contribution-guides/ccxt.md\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/docs/community-contribution-guides/udex.md\nCommit:\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/eaec64264c068aae8c7bff86284b5371858271e4\n\n2 Handle driver errors\nCommits:\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/12112d462717c3ac516869bcbdf199efb505dd75\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/5bb0967e62d5707db07bf024c6fe2171915a7574\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/b3c30f8339ffdc7e01f94cb4ee7e0deb94d20ddd\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/6918ff5ddeeb56d1d81c49d81655b4554e718ec5\n\n3 Increase interval precision for data collection.\nCommits:\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/e8e050655ac9ab6ddd766a2e5dd96e3cdd4243c7\nhttps://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/commit/4927263c9fea2bea25d0b18f8157798fc520a8e9",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 22
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 88320,
+      "promise": "The outputs for API Key Management will be:\n1) Users management system\n2) Authentication and Authorization systems\n3) Role & Permissions management system\n4) API Tokens system\nThis will enable our ability to manage access to the APIs for productive service.\nThe outputs for Production Readiness will be: \n1) Production instance operating\n2) Stress tests confirm system's ability to handle peak loads and scenarios\n3) Service available to the Cardano community (rate limits may apply to avoid overload)",
+      "criteria": "Acceptance criteria for API Key Management: 1) authorization systems ensure secure access, 2) role & permissions system allows control of user actions and 3) API tokens are secure and function as intended.\nAcceptance criteria for Production Readiness: 1) Production instance operating as expected, 2) Stress tests confirm system's ability to handle peak loads and scenarios",
+      "report": "API Key Management video demo:\nhttps://drive.google.com/file/d/1hzq4Fb965q_URdDMdS0XmyEwCn5mflc6/view?usp=sharing\nStress Testing:\nhttps://drive.google.com/file/d/1i0SyZ_5i1NJO4eTqB43LokRDCGpUc75e/view?usp=drive_link\nMonitoring report:\nhttps://docs.google.com/document/d/1HRiC0MBcoQUO14z2_yOACzt7kVRX2edt_EXQGxXs-cg/edit?usp=drive_link",
+      "kinds": [
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 51080,
+      "promise": "The output will be a PDF close out report summarizing all milestones and completions and a short walk through video demonstrating completions and 1 month report on system monitoring.",
+      "criteria": "Final close out report documenting the completed milestones with a wrap up video. The system monitoring report includes status of liveness over time and summary report of errors.",
+      "report": "Close out report:\nhttps://drive.google.com/file/d/1NmwPVV18QviJiXLRz2kAEY1C5Le4Yvol/view?usp=drive_link\nWalkthrough video:\nhttps://youtu.be/_xhYaWOkJXE\nDemo:\nhttps://youtu.be/UyBT-B3XEa0\nRelevant Links\nDriver that implementation for a Cardano node using the blockfrost Javascript SDK.\n・https://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/lib/domain-collectors/integrations/udex/Cardano/BaseCardanoDriver.js#L4\n\nCollector implementation for decentralized exchange contracts that handles: scheduling, communication and the methods to fetch and save the data. We created the exchange rate collector that pulls the data from the DEX and stores it in the database.\n・https://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/blob/main/lib/domain-collectors/collectors/ExchangeRateCollector.js\n\nDEX contract drivers for Minswap, Muesli Swap, Sundae Swap, Vy Finance and Wing Riders\n・https://github.com/WolframBlockchainLabs/WolframPriceFeedInfrastructure/tree/main/configs/udex/cardano/exchanges\n\nAPI Key Management video demo\n・https://drive.google.com/file/d/1hzq4Fb965q_URdDMdS0XmyEwCn5mflc6/view?usp=sharing\n\nStress Testing\n・https://drive.google.com/file/d/1i0SyZ_5i1NJO4eTqB43LokRDCGpUc75e/view?usp=drive_link\n\nMonitoring report\n・https://docs.google.com/document/d/1HRiC0MBcoQUO14z2_yOACzt7kVRX2edt_EXQGxXs-cg/edit?usp=drive_link\n\nFull Technical review:\n・https://youtu.be/etqU7iVC9ZM",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 20
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "title": "Anvil - Open Source - Universal Wallet Connector",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 20000,
+      "promise": "Research and Planning\n・As a team, we will need to research existing and practical solutions, as well as taking inspiration from other blockchains. This should include Solana and Ethereum as a base, with the intent to research other chains for similar applications.\n・We should outline and identify the most popular Cardano wallets by users and TVL. \n・Research and document technical requirements for the Wallet Connector from a development perspective.\n\nMarketing\n・We will need to create and outline a marketing plan around our Wallet Connector tool in order to achieve usership.\n・We will need to create a name for tooling.\n\nGithub\n・One of the requirements will be to open a Github repository specifically for the Wallet Connector.",
+      "criteria": "Research and Planning\n・Creation and completion of a Google Document intended to outline the results of our research. This should include commonalities between various wallet connection applications that exist on other blockchains, starting with Ethereum and Solana.\n・In the same Google Document mentioned above, we will document our research results within the Cardano Wallet sphere. This should include; research and identifying common feature sets among wallets, and identifying unique but innovative feature sets among wallets.\n・In the same Google Document mentioned above, we will research and do",
+      "report": "Research and Development Planning Documentation/Marketing Documentation:\nhttps://docs.google.com/document/d/1EYJtSlSXbUJt1VfpaXmyQXUYRUOuZ7U10GTNBumuoV4/edit#heading=h.g371ht3iiy71\nGithub Repository:\nhttps://github.com/Cardano-Forge/universal-wallet-connector",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 20000,
+      "promise": "General Development\n・We need to begin developing the Universal Wallet Connector, and adding Cardano wallets to the validator. \n\nDocumentation Drafting\n・In order to properly communicate how to use the Wallet Connector tool, we will need to compile documentation on use, integration, and provide visual examples of how it works.",
+      "criteria": "General Development\n・Initiate the development of the Wallet Connector. This shall be done in accordance with our approved Evidence from Milestone 1 - Research and Planning Google Document. \n・We will set out with the goal of integrating the top 3 Cardano Wallets.\n\nDocumentation Drafting\n・We will create the first draft of the Wallet Connector documentation. This will be available on Gitbooks. This document will be a draft, and need to be reviewed for technical correctness throughout the entire development process. A base draft will be delivered for the Milestone Evidence.",
+      "report": "General Development﻿\nYou can access the GitHub link here. We have fulfilled the promised features and even expanded them with custom event implementation. Following the initial architecture draft, we made some adjustments to the underlying logic to improve the developer experience. As a result, the functions and naming might differ slightly, but the essential features are still present, just organized in a more user-friendly manner.\nAdditionally, we have officially integrated eight wallets, as you can see here. Developers can also interact with unsupported wallets, as we've included a feature that checks if a wallet adheres to the CIP-30 standard. If it does, the SDK will still support it.\nDocumentation Drafting\nCurrently, we've opted to use a single markdown file in the readme for documentation instead of Gitbooks, since Gitbooks is a paid feature tied to a user subscription model, which is not suitable for an open-source project. We may consider revising this approach in a future milestone if the documentation becomes too confusing or cumbersome.",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 25000,
+      "promise": "Marketing\n・At this point, we will need to commence our initial outreach to wallet providers on Cardano. This should have a goal of marketing partnerships, as well as testing (subsequent output of Milestone 3).\n・We will need to begin outreach to the community. This shall include, but is not limited to, posts from the Anvil account, outlining the use and effectiveness of the tool. There will also be a need to track activity on the Github repository to showcase the effectiveness of our marketing efforts.\n\nTesting/Feedback\n・As mentioned in the Marketing section, we will need to reach out to wallet providers to test our tool, as well as provide feedback on effectiveness, ease of use, and correctly quantifying the features of said wallets. \n\nDocumentation\n・During this Milestone, we will need to revise the documentation of the tooling from Milestone 2, and apply all of the feedback received from wallet providers.",
+      "criteria": "Marketing\n・We will set out with the goal of communicating with at least 5 Cardano Wallet providers. The goal of the marketing portion of this Output is to get acceptance of our tooling, or at least conditional acceptance, and discuss marketing efforts moving forward, together with the Wallet providers.\n・Anvil shall start community marketing of the tool. This will be done in Twitter posts from the official Anvil account, showcasing effectiveness, useability, and development progressions of the tooling. This effort will be quantifiable with Analytics from Twitter. We plan on posting 3-5 twitter",
+      "report": "Proof of Marketing:\nBelow you will find the 3 twitter posts committed to with 500+ views each as well as the twitter space we hosted and recorded to outline the basic functionality and how to access the wallet connector.\nhttps://x.com/ada_anvil/status/1798715794303422657\nhttps://x.com/ada_anvil/status/1802727457583161606\nhttps://x.com/ada_anvil/status/1804222345911111892\nhttps://x.com/i/spaces/1ypKdpbArOyKW\nSurvey and Feedback Results:\nSurvey represents the outreach, and responses, of 5 independent wallet providers on Cardano who we were able to reach and have them participate in the form. \nhttps://drive.google.com/drive/u/0/folders/1U91PREe9MWj_UgXE3XxCx53gE6ZTaB7S\nUpdated GitHub Repo Documentation:\nBelow you will find a link to the recently added wallet connector ADD NEW WALLET - which provides detailed instructions on adding the wallet, tested and verified by the Tokeo wallet team\nhttps://github.com/Cardano-Forge/universal-wallet-connector/blob/main/documentation/ADD_NEW_WALLET.md\nIn this drive you will find the analytics from our github, which reflect the activity over the repository.\nhttps://drive.google.com/drive/folders/1lALwNCcIi37SLHVUIQVKYmIoPUvugXZF",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 25000,
+      "promise": "Development\n・The Wallet Connector tool should be in a fully working status. We should have integrated all Cardano Wallets at this point. \n・We will also need to publish the package on NPM.\n\nDocumentation\n・We will need to finalize all of our Documentation on Gitbooks showing how the tool works(including visual examples), outline functionality, and detail the application for the tooling.\n\nAcceptance\n・Need to meet all of the goals and milestones of the proposal, conduct closing report, and create closing video.",
+      "criteria": "Development\n・We will publish the open source code for the Wallet Connector tool on our Github Repository. \n・We will publish the package on NPM.\n\nDocumentation\n・Publish our Finalized Documentation on Gitbooks. \n\nAcceptance\n・Deliver completed closing report for acceptance from IOG.\n・Deliver closing video for acceptance of IOG.",
+      "report": "Hello reviewers,\nHere are our achievements as outlined in the \"Evidence of Milestone Completion\":\nDevelopment\n・GitHub Repository: Link\n・NPM Package: Link\n\nDocumentation\n・GitHub README: Link\n\nAcceptance\n・Closing Report: Link\n・Closing Video: Link",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

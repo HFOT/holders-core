@@ -1,0 +1,75 @@
+{
+  "title": "Open source PRISM Node",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 60000,
+      "promise": "・Set up the project on GitHub, including a README.md that links all resources and outlines the planned roadmap.\n・License the project under Apache 2.0.\n・Conduct initial research into alternative synchronization methods beyond dbSync, summarizing findings.\n・Begin implementing the DID PRISM specification, focusing on methods to read and write existing protobuf definitions.\n・Develop tests for reading and writing so called Atala operations, independent of the underlying blockchain technology.\n・Set up a local Cardano node and dbSync for testing.",
+      "criteria": "・Existence of a GitHub repository with a README, roadmap, and initial analysis of dbSync alternatives.\n・Project is open-source under Apache 2.0.\n・Intial code for reading and writing Atala PRISM operations.\n・Presence of a test project in the repository with numerous tests covering Atala Operations (Create DID, Update DID, Deactivate DID).",
+      "report": "Acceptance criteria:\n1) Existence of a GitHub repository with a README, roadmap, and initial analysis of dbSync alternatives.\n・Github with readme and roadmap: https://github.com/bsandmann/OpenPrismNode\n・Analysis for the challanges around syncing and alternatives to dbSync: https://github.com/bsandmann/OpenPrismNode/blob/master/Documents/Sync_pattern_OpenPrismNode_May_2024.pdf\n\n2) Apache 2.0 license was added\n3) Initial code is in the repo. Here are a two noticable files around parsing and writing:\n・https://github.com/bsandmann/OpenPrismNode/blob/master/OpenPrismNode.Sync/Commands/ParseTransaction/ParseTransactionHandler.cs\n・https://github.com/bsandmann/OpenPrismNode/blob/master/OpenPrismNode.Sync/Commands/DecodeTransaction/DecodeTransactionHandler.cs\n・https://github.com/bsandmann/OpenPrismNode/blob/master/OpenPrismNode.Sync/Commands/EncodeTransaction/EncodeTransactionHandler.cs\n\n4) There are two test projects: OpenPrismNode.Sync.Tests and OpenPrismNode.Sync.Integration tests. \nHere is a screenshot of the test-outputs: https://github.com/bsandmann/OpenPrismNode/blob/master/Documents/Testoutput_May_29_2024.png\nOutputs:\n1) Link to the repo as provided above\n2) Quick write up of the current state of development: https://github.com/bsandmann/OpenPrismNode/blob/master/Documents/development_m1.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 14
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 67500,
+      "promise": "・Developed code to extract PRISM operations from a synced dbSync instance (PostgreSql) to the node's database.\n・Encapsulated the synchronization process in methods that can be started, paused, and stopped.\n・Ensured the code supports both initial synchronization and ongoing, resilient syncing.\n・Implemented rollback handling for the Cardano node.\n・Created verification methods for PRISM transactions before database storage.\n・The application does extract relevant metadata (e.g., Cardano addresses, payment information) alongside PRISM operations.\n・Developed an internal DID resolver to calculate the current DID-Document based on PRISM operations.\n・Tests are written for reading from chain, and handling errors and invalid PRISM transactions \n・Test are written for the rollback of blocks of the underlying Cardano chain \n・Tests are written for the Verification methods a PRISM operation has to pass, to be seen as valid, despite being constructed correctly \n・Tests are written to ensure the Resolver works correctly",
+      "criteria": "・Regular progress on all items, including tests, is visible in the GitHub repository.\n・The node can run and sync PRISM operations from the blockchain to its database.\n・Additional information other than just then PRISM operations are also gathered in the syncronisation process\n・A resolver method exists, turning PRISM DIDs into DID-Documents (without a fully features API at this point)",
+      "report": "The project is located here: https://github.com/bsandmann/OpenPrismNode/\n\nThe video can be found here: https://youtu.be/wKfpooE-tMg\nIt combines the requirements of both outputs into a single video.\n\nThe development report can be found here: https://github.com/bsandmann/OpenPrismNode/blob/master/Documents/development_m2.md",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 67500,
+      "promise": "・The application now runs as service inside a docker-container and offers http and gRPC endpoints to submit request to create, read, update and deactivate DIDs \n・The application has code to write PRISM operations to the chain, track the confirmation status of these operations and report them back to a user \n・The application has an interface to create tenants, to log in as a tenant and see the current status of all operations related to that tenant \n・The application has the ability to fund and track the funding of the integrated wallet of each tenant to allow write operations to the chain \n・The resolver from the last milestone is extended to support the applicable specifications of the Did-Resolution specification (https://w3c-ccg.github.io/did-resolution/)\n・Tests are written to cover the write operations on chain \n・Tests are written to test the tenant capabilities and ensure a proper encabsoluation of each tenant and related information like private keys \n・Tests are written to match the applicable specifications of the DID-Resolution specification from above.",
+      "criteria": "・The GitHub repository shows continuous development progress.\n・The application features a UI for user interaction with their operations and wallets.\n・Successful writing of PRISM operations to the blockchain is demonstrated.",
+      "report": "Github link: https://github.com/bsandmann/OpenPrismNode\nDevelopment report: https://github.com/bsandmann/OpenPrismNode/blob/master/Documents/development_m3.md\nA video, showing the creation of a wallet and publishing a DID: https://youtu.be/PKqbSOqnuj0\nThe video for DID-Resolution is also included in the video above (instead of two separate videos).\nIf you want to use the UI of our Analytics platform to resolve a DID, check out the link here. It is using the OPN in the backend:\nhttps://statistics.blocktrust.dev/resolve (the DID we created in the video: did:prism:preprod:9dbd9f428c39c91884b22dbaeeef6bf4817d524c96d59885d7e5ffb268775428 )\nIf you want to try out the publicly deployed version of the OPN (for preprod - thats were we published the DID in the video), you can call this endpoint also directly: \ncurl -k 'https://opn.blocktrust.dev:31200/api/v1/identifiers/did:prism:preprod:9dbd9f428c39c91884b22dbaeeef6bf4817d524c96d59885d7e5ffb268775428'",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 9
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 60000,
+      "promise": "・Align application endpoints with the DID registration specification (https://identity.foundation/did-registration/)\n・Support at least one alternative sync method identified in Milestone 1.\n・Bundle the application and necessary components into docker containers.\n・Provide an installation wizard or detailed guide for setting up the node.\n・Publish docker containers and host a live test instance on the preprod network.\n・Tests ware written to cover the DID registration specification Tests are provided for an additional sync-method",
+      "criteria": "・The node's API meets DID-registration specification standards, as they are applicable to the current PRISM spec.\n・An additional sync method is available for selection (based on the research of milestone 1)\n・Public availability of docker containers",
+      "report": "- A longer (14min) video covering the setup of a node from scratch using blockfrost as the alternative syncronisation method as well as explaning and demonstratting the new Unverisal Registrar compliant endpoints. Note that we are just focusing on syncing with blockfrost here, as we touched the other sync methods previously in depth: https://youtu.be/RS21cFWdSZ8\n- Publicly available docker image: https://github.com/users/bsandmann/packages/container/package/openprismnode\n- First pages of the docu on Github: https://bsandmann.github.io/OpenPrismNode/Guide_blockfrost (now with pictures!)\n- A publicly available instance of the OPN: https://opn.preprod.blocktrust.dev/\nIn the next milestone we'll mostly be focusing on extending the documentation and more technical explantions with diagrams on how the OPN works.\n---\nNote to the documentation: Pictures were initially missing because the documentation will play a major role in the final milestone, and some parts are still subject to change—making current visuals potentially obsolete. However, I’ve added a few images to help guide through the process.\nNote on the Universal Registrar: DID:Prism is not yet listed on the Universal Registrar website. Unlike the Universal Resolver, which is widely used by dozens of companies and software products, the Registrar has limited utility—mainly used by GoDiddy.com, a service for creating DIDs run by the same person who maintains the Registrar. The difference in supported DID methods between Resolver and Registrar reflects this.\nThe Registrar is less critical because anyone building with a specific stack like DID:Prism typically already runs their own nodes and understands the stack’s technical requirements. For example, using the Registrar requires signing keys, wallets, etc., meaning the user is already embedded in the ecosystem and wouldn't need the website anyway. And since the website doesn't provide any easy way of just create DID on the fly for other chains its not very useful.\nTh",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "9",
+      "cost": 45000,
+      "promise": "・The last milestone is dedicated for testing, bug fixing and documentation work\n・All open issues of the node occuring in the last phase of the project will publicly tracked on the GitHub Issue tracker\n・A documentation on how to run the node will be written",
+      "criteria": "・Project close-out report and close-out video exists\n・Documentation of the project and explantions of what this Node is, how to run it and what to expect exists\n・Guidelines are provided for new contributers on how to build and contribute to the project",
+      "report": "Close out video: https://www.youtube.com/watch?v=eZYwckec1hs\nClose out report: https://github.com/bsandmann/OpenPrismNode/blob/master/Documents/closeout_report.md\nDocumentation page: https://bsandmann.github.io/OpenPrismNode/\nLonger video which explains the basic of the node and how to run it: https://www.youtube.com/watch?v=QxeLi0NL2tU (also linked on the docs page)\nContributer guidelines: https://github.com/bsandmann/OpenPrismNode/blob/master/CONTRIBUTING.md\nPublic images are available for downnload: https://github.com/users/bsandmann/packages/container/package/openprismnode\nHosted services at https://opn.preprod.blocktrust.dev/ and https://opn.mainnet.blocktrust.dev/",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 16
+    }
+  ]
+}

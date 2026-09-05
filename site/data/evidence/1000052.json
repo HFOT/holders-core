@@ -1,0 +1,43 @@
+{
+  "title": "Clarity DAO Infrastructure Liquid Democracy Capability",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 9600,
+      "promise": "Conduct in-depth analysis of the Clarity Protocol and its current infrastructure.",
+      "criteria": "Research and document the requirements and specifications for extending the protocol to support vote delegation.",
+      "report": "Evidence of milestone\nDevelopment team to define the technical implementation plan. Provide documentation of technical implementation plans\nAbstract\nAgora allows DAO members to stake their tokens and allow someone else to vote on their behalf in a noncustodial way. The delegatee can vote with these tokens but cannot withdraw them.\n\nWith this PoA we explain how we will use Agora, CTL, and our front end to create a feature where users can delegate their vote.\nImplementation plan\nStaked tokens in Agora support a DelegateTo redeemer that allows to specify a public key hash of a user that gets voting rights of that stake, but they cannot change it or withdraw staked tokens. Instead, the tokens remain locked in validator where only the stake owner can withdraw them.\nWe will implement an off-chain workflow using CTL that allows user to control stake delegations, expand our specialized block indexer to keep track of stake delegations, expose queries so users can see who delegated their stakes to them, and integrate everything with our current frontend.\nAgora: https://github.com/Liqwid-Labs/agora/blob/staging/agora/Agora/Stake/Scripts.hs#L595-L600\nCTL workflows\nCTL workflows are off-chain code that collects data from a chain indexer, interacts with the blockchain, and submits transactions. We will implement a workflow that allows a user to delegate their stake to another user, undelegate previously a delegated stake to regain full control over voting rights, and expand voting workflow to support voting with not only a user’s owned stakes, but delegated stakes as well.\nChain indexer\nWe are using specialized chain indexer that rather than indexing every utxo on the blockchain. Our chain indexer only checks utxos that are relevant to the protocol in a structured way, allowing for quick lookups and live updates as new blocks land on-chain. We will expand it to keep track of delegations in addition to tracking stake owners.",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 9600,
+      "promise": "Develop and implement the necessary APIs and endpoints to enable seamless integration with the front-end interface.",
+      "criteria": "Test and validate the API functionality and ensure compatibility with the existing Clarity Protocol infrastructure.",
+      "report": "Hey guys, Happy Holidays. This video shows that this API is working in order to have liquid democracies within DAOs on Cardano. There is not a public github link to this API because as mentioned in the proposals this proposal is not open source (https://projectcatalyst.io/funds/10/f10-daos-less3-cardano/clarity-dao-infrastructure-liquid-democracy-capability). We have released and revealed this API to our developers which you can see working in the demo video. We can invite you to the repo for you to check it out. \nThe milestones purpose is to expose an API that our developers can use which has clearly happened since it is being used in the app.\nFor this PoA we have developed and implemented the necessary APIs and endpoints to enable seamless integration wit the front-end interface on testnet. The milestone is accomplished through a usable endpoint to accomplish stake delegation.\nWe have tested and validated the API functionality and ensured compatibility with the existing Clarity Protocol infrastructure. You can see the video as proof!\nWe have included the API documentation below as well!\nMainnet release soon!!!\nDemo video of staking functionality on testnet: https://youtu.be/TDEXNZ9-drQ?si=WZWpjHUFRDmICryv\nAPI Documentation: \nexport declare function delegateStake(clarityParams: ClarityParams, stake: TransactionInput, delegateTo: Credential | null): Promise<TransactionHash>; \nAPI function to delegate Stake \nAPI Stake Datum to track who stakes are delegated to: \nexport declare type StakeDatum = { \nstakedAmount: BigInteger; \nowner: Credential; \ndelegatedTo: Credential | null; \nlockedBy: Array<ProposalLock>; }; \nfunction to get all stakes delegated to a wallet: export declare function getDelegatedStakes(clarityParams: ClarityParams): Promise<Array<ScriptUtxo<StakeDatum>>>;",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 12800,
+      "promise": "Design and develop an intuitive and user-friendly interface for users to delegate their voting power within organizations.\nAdd to existing documentation (https://docs.clarity.vote/) detailing this feature set and how it can be used and leveraged.\nRun workshops and feedback session with the community to gather feedback and answer community questions.",
+      "criteria": "Implement the necessary functionalities, such as selecting delegates, managing delegation preferences, and tracking delegated votes to the front end.\nCreate documentation for the additional feature set.\nConduct thorough testing and debugging to ensure a smooth and seamless user experience.",
+      "report": "It is with great pleasure that I submit this milestone. I have included the close out video and the close out report.\nClose out report: https://docsend.com/view/dxk4zpsbpg3qqu5x\nClose Out video: https://www.youtube.com/watch?v=ZzG6K4Fl9Yw \nHere is a video demonstration of the vote delegation processes using the Clarity Platform: https://www.youtube.com/watch?v=6HGH5HuqPX0 \nHere is documentation of the newly implemented feature: https://docs.clarity.vote/clarity-v1/participating-in-a-dao/delegating-and-undelegating-stakes\nHere is a workshop with potential users to gain feedback and answer questions: https://www.youtube.com/watch?v=67ofH9eCFjw",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

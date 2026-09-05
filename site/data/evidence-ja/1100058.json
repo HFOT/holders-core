@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・CardanoスナップコードベースでCardanoのインターロップライブラリを統合\n・実装コアロジック - txのデコードと解析\n・ADA取引の基本確認フロー+出力変更",
+      "criteria": "・Cardano のインタープライブラリは Cardano のスナップで統合され、必須の機能が使用することができます(主に解析)\n・Cardano Snapは、Cardano取引をデコードし、解析することができます\n・Cardano Snap は、変更出力で ADA の基本的な転送トランザクションの解析とフローを提示できます",
+      "report": "ワークパッケージコードでPRへのリンク:\n= https://github.com/nufi-official/nufi-snap/pull/29\n注意: このリポジトリは、現在非公開であり、審査者にアクセスすることができます(Githubアカウントを共有して招待することができます)\n\nワークパッケージのスクリーンショット:\nhttps://drive.google.com/drive/folders/1 MismVK3Hls56xZrbwu tZmFSBRq2Fw?usp=sharing\n\nMetaMask Flaskを使用してテストネット環境で実証されたワークパッケージ機能のビデオ証拠:\n= https://drive.google.com/file/d/1 G8y-MHS9VbFfx6JIGIczNPFvG2LN0uz/view?usp=sharing"
+    },
+    {
+      "no": 2,
+      "promise": "・取引証明書のインポートフロー\n・トランザクションTxメタデータに対する実装フロー\n・トランザクションメッセージの署名のための実装フロー\n・トランザクションネイティブアセットのインポートフロー\n・UIの設計・実装",
+      "criteria": "・Cardano Snapは、ユーザーに取引証明書を解析し、提示することができます\n・Cardano Snap は、Tx メタデータをユーザに解析して表示することができます。\n・Cardano Snapは、ユーザーにメッセージ署名リクエストを解析し、提示することができます\n・Cardano Snapは、ユーザーにトランザクションでネイティブアセットを解析し、提示することができます\n・Cardano Snapは、すべてのユーザーフローに十分なUIデザイン(HWウォレットと類似)",
+      "report": "ワークパッケージコードでPRへのリンク:\nhttps://github.com/nufi-official/nufi-snap/pull/67\nhttps://github.com/nufi-official/nufi-snap/pull/37\nhttps://github.com/nufi-official/nufi-snap/pull/31\nhttps://github.com/nufi-official/nufi-snap/pull/66\nhttps://github.com/nufi-official/nufi-snap/pull/68\nhttps://github.com/nufi-official/nufi-snap/pull/64\nhttps://github.com/nufi-official/nufi-snap/pull/58\n\n作業パッケージの機能のビデオ証拠は実証されています:\nhttps://drive.google.com/file/d/16CYryl1dyuZ9BjP8cG lbAkyVMU3yBeG/view?usp=sharing"
+    },
+    {
+      "no": 3,
+      "promise": "・メタマスク認定監査役によるコード監査\n・全ての監査結果の拡大",
+      "criteria": "・コードに重要な脆弱性がないことを示すCardano Snapのコードベース全体の監査レポート\n・関連するすべての監査結果を修正し、コードベースに統合",
+      "report": "監査報告:\nhttps://sayfer.io/audits/metamask-snap-audit-report-for-nufi/\nすべての監査結果を修正するGitHub PRへのリンク:\nhttps://github.com/nufi-official/nufi-snap/commit/8bd00d34ef58f147bd1864ab3b9ab6369948a57"
+    },
+    {
+      "no": 4,
+      "promise": "・dAppsの統合文書\n・MetaMask Snapストアで発売\n・コミュニケーションプランの作成と実行",
+      "criteria": "・Cardano Snapウィジェットの統合文書を公開\n・MetaMask SnapストアでCardano Snapが公開\n・コミュニケーションプランの作成と実行",
+      "report": "統合文書:\nhttps://nufi.gitbook.io/developer-docs/metamask-snap-cardano-wallet/overview\nSnapsディレクトリのCardanoウォレット:\nhttps://snaps.metamask.io/snap/npm/nufi/cardano-metamask-snap/\nコミュニケーション計画:\nhttps://docs.google.com/document/d/1ijh6g8FLZM TaGMIxlrYRcjaoiuZGHGXNbVsrjp9dbQ/edit?usp=sharing"
+    },
+    {
+      "no": 5,
+      "promise": "・Catalystクローズアウトビデオとプロジェクトクローズレポート",
+      "criteria": "カタリストチームに両方を提出した後、ビデオとレポートが完成すると検討します",
+      "report": "ビデオを閉じる:\nhttps://youtu.be/SNsWvnyqqD4\n報告書を閉じる:\nhttps://docs.google.com/document/d/1kiM6hT9zt4REDsJwe2MlL14ngea1-yStYTZrFsO9R54/edit?usp=sharing"
+    }
+  ]
+}

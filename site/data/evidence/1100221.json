@@ -1,0 +1,58 @@
+{
+  "title": "Optim Finance Vaults - DeFi Building Blocks for Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "A GitHub repository of the smart contracts necessary to implement vault deposits, synthetic asset minting aka 'receipts’, and staking ‘locking’ mechanism. This is the modular architecture to function as a deposit “vault” for a flexible range of assets. The code will be produced using the Aiken programming language. This milestone entails the initial smart contract development of the core mint, receipt, stake for this product, finalized by freezing the GitHub repository and making it ready for the audit process",
+      "criteria": "・Aiken codebase implementation of the Strategy Vault architecture\n\n・Strategy flow of funds\n・Deposit/Withdrawal mechanism\n・Duration locking mechanism \n・Yield accrual logic \n\n・Video of code walkthrough to describe the smart contract components and working live interactions of a private testnet deployment for non-technical Milestone Reviewers and the broader Catalyst community to understand the scope of the system.",
+      "report": "Strategy Vaults Milestone 1 Submission\n・Aiken codebase implementation of the Strategy Vault architecture\n・https://github.com/OptimFinance/clean-code\n・Video of code walkthrough to describe the smart contract components\n・https://drive.google.com/file/d/1BoVWA1QqSK4xXCIonW83mMfrh1CjlxNQ/view?usp=sharing\n\nExplanations\n・Strategy flow of funds\n・File:\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/deposit_amo.ak\n・Timestamp:\n・2:26\n・Deposit/Withdrawal mechanism\n・Files:\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/deposit_amo.ak\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/staking_amo.ak\n・Timestamp:\n・2:26\n・16:40\n・Duration locking mechanism \n・Files:\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/otoken_policy.ak\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/otoken_rule.ak\n・Timestamp:\n・8:25\n・Yield accrual logic \n・File:\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/collateral_amo.ak\n・https://github.com/OptimFinance/clean-code/blob/main/oada/validators/sotoken_rule.ak\n・Timestamp:\n・6:50\n・14:38\n・Technical specifications referenced in the video:\n・OToken Strategy Vaults\n・https://github.com/OptimFinance/public-documents/blob/main/OTOKEN%20High%20Level%20Specification.pdf\n・OADA Strategy Vault\n・https://github.com/OptimFinance/public-documents/blob/main/The_OADA_System.pdf",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 22
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "Initial Figma of the dApps UI and a implementation of the front end in a React, NextJS or similar framework hosted in the Optim Labs GitHub repository. An intuitive and well designed front end will be developed to maximize the user experience of interfacing with the Strategy Vaults system. The front-end and basic on-chain dApp with code scope defined in Milestone 1 will be hosted on a private testnet.",
+      "criteria": "・Figma sketch of the UX/UI with iterations \n・Front End codebase implementing Figma user interface\n・Private testnet deployment",
+      "report": "Strategy Vaults Milestone 2 Submission\n・Link to Figma board, or link to document aggregating screenshots of the Figma iteration process (in case sharing platform permissions cause any issues).\n・https://www.figma.com/design/BdECvmuzH0ZtY2VJRyO9Eg/Optim-Vaults?t=OHBxL6XmrQx2fWM7-1 \n・Link to GitHub repository of the front end codebase, or link to live website implementation if already hosted.\n・https://app.optim.finance/dashboard\n・Link to video walkthrough of the working private testnet dApp interactions\n・https://drive.google.com/file/d/1V4WR1vd5-oSkQBDqiv0JGlRERDBlU-6A/view?usp=sharinghttps://drive.google.com/file/d/1V4WR1vd5-oSkQBDqiv0JGlRERDBlU-6A/view?usp=sharing",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 20000,
+      "promise": "We will take the feedback from the private testnet enviornment and make upgrades to the UX/UI based on this feedback. This might also entail, but is not required, to add any features that will meaningfully improve the user experience based on suggestions. Detailed feedback from at least 5-10 DAO members will be compiled and documented on the user journey from which we will make improvements",
+      "criteria": "・Detailed UX/UI feedback from 5-10 testnet experiences from DeFi power users in our DAO \n・UX/UI improvements and possible feature extensions",
+      "report": "・Link to documentation with 5-10 standardized, but detailed reports on UX/UI feedback\n・https://drive.google.com/file/d/1UOF8zPwtDCFUaady0t8QNLv4rEB35jK3/view?usp=sharing\n\n・Link to before and after updated Figma UI renderings that show changes based on feedback with notes on each before and after screen noting changes and how they address feedback\n・https://drive.google.com/file/d/1UOF8zPwtDCFUaady0t8QNLv4rEB35jK3/view?usp=sharing\n・(Both files were aggregated into one document)",
+      "kinds": [
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 20000,
+      "promise": "With the UX/UI updated with feedback from the private testnet, the basic dApp will be deployed to a public testnet for a wider audience and more extensive expected feedback from the community. The Figma and front-end code will have been updated to reflect all changes and be deployment ready as reflected in a larger public testnet launch.",
+      "criteria": "・Front-end code updated with UX/UI improvements\n・Public testnet integration launched for feedback",
+      "report": "・Link to Github repository with updated front-end code, commit history with 148 files changed +9309 lines added and -1330 lines removed\n・https://github.com/OptimFinance/oada-ui\n・https://github.com/OptimFinance/oada-ui/commit/8ee174a2bfb0710d51386e8f318c1577c\n\n・Link to public deployment \n・https://app.optim.finance/dashboard\n\n・Video walkthrough of public dApp interactions and project summary \n・https://drive.google.com/file/d/1V4WR1vd5-oSkQBDqiv0JGlRERDBlU-6A/view\n・0:00 - Lead developer introduction\n・0:11 - Mock UI summary and walkthrough\n・0:58 - OToken Strategy Vault user facing functionalities\n・1:35 - Mint interface and transaction process\n・2:21 - Block explorer transaction confirmation\n・2:46 - Stake/Strategy Vault deposit, equivalent share minting\n・3:08 - Transaction UTXOs walkthrough\n・3:53 - Block explorer transaction confirmation\n・4:18 - Interactive UI Feedback improvements\n・4:57 - Unstake/Strategy Vault withdrawal process, fees and queue capacity\n・5:14 - Transaction UTXOs walkthrough\n・6:15 - Block explorer transaction confirmation\n・6:24 - DApp summary\n\n・Project Close Out Report\n・https://drive.google.com/file/d/1dd5EL8f85SFnOQq-neiadwquOcl8Wzy7/view?usp=sharing\n\n・Project Close Out Video\n・https://www.youtube.com/watch?v=uRsqmktxRnE\n・Video has been merged with app demonstration video and edited down and sped up for get under a seven minute length",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

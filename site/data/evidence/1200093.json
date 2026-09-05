@@ -1,0 +1,60 @@
+{
+  "title": "Decentralized Farming Contracts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 33750,
+      "promise": "・Design a decentralized staking system structure, detailing the specific roles and interactions of three main contract components: staking contracts, top-pools contracts, and governance-based farms.\n・Perform a comparative analysis with existing solutions, highlighting improvements our system offers such as enhanced decentralization and security.\n・Develop and publish a blog post that outlines research findings and provides a detailed plan for system implementation.",
+      "criteria": "・Completion of a conceptual framework for the decentralized staking system that includes detailed specifications for staking contracts, top-pools contracts, and governance-based farms.\n・Documentation of a comparative analysis that clearly demonstrates the advantages of the proposed system over existing ones.\n・Publication of a blog post on the project’s official site detailing the research outcomes and implementation plan.",
+      "report": "Here's the promised evidence of milestone completion:\n・publicly available research report including conceptual system design and comparative analysis of existing solutions\n・published blog post informing community about the project's progress and summarising the findings from above report",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 33750,
+      "promise": "・Implementation of on-chain code for the staking contracts, top-pools contracts, and governance-based farms using the OpShin programming language.\n・Conduct an internal security audit to ensure code robustness and security for all three components.\n・﻿﻿Publish findings and details of the on-chain components in a dedicated blog post.",
+      "criteria": "・Successful deployment and testing of on-chain contract components in a controlled environment.\n・Completion of an internal security audit with documented findings.\n・A blog post detailing the on-chain implementation and audit results is made publicly available.",
+      "report": "1. Code Repositories: The implemented smart contracts for staking, top-pools, and governance-based farms are available in our GitHub repository.\n2. Internal Audit Report: An internal security audit was conducted by two team members who were not involved in the development of the smart contract code, ensuring an unbiased review. The audit identified several issues, all of which have been addressed and fixed. Links to the respective commits of the fixes in the repository are provided in the report.\n3. Onchain Tests (Preprod Testnet): The smart contract features have been tested by creating and submitting the following preprod transactions (see report for details on testing setup):\n・creation of farm\n・placing of stake order / create add stake order\n・cancel stake order\n・place another stake order\n・batch stake order\n\n4. Published Blog Post: We have published a blog post detailing the on-chain implementation and our progress in Milestone 2.",
+      "kinds": [
+        "chain",
+        "code",
+        "doc"
+      ],
+      "links": 9
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 33750,
+      "promise": "・Development of off-chain code for managing staking contracts, top-pools contracts, and governance-based farms, and facilitating transactions enabling their interaction.\n・Provide evidence of successful interplay between off-chain infrastructure (i.e. code for parsing current farms, constructing staking/farming & unstaking transactions, etc.) and on-chain code by presenting testnet transactions for staking, reward distribution, maintenance of top-pools, and votes on governance-based farms.",
+      "criteria": "・Successful integration and function of off-chain code with on-chain components as evidenced by testnet operations.\n・Documentation of scenarios demonstrated through the provided testnet operations.",
+      "report": "As results for this milestone, we have:\n1) Implemented off-chain code that can construct transactions for achieving the desired functionality. See code in the 'offchain' part of the repository.\n2) Implemented off-chain code for querying and parsing submitted transactions from on-chain data, processing it and entering it into a DB, and making it accessible through API endpoints. See code in the 'api' part of the repository.\n3) Documentation of the API as well as the off-chain transaction construction scripts, and the tested scenarios with preprod testnet transactions is contained in the new Milestone 3 report.",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 33750,
+      "promise": "・Successful deployment of alpha version for collecting user feedback\n・Implementation of necessary adjustments based on feedback from the internal audit and community input.\n・Official launch of the fully implemented farming system on MuesliSwap.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Establishment of a feedback collection and integration mechanism.\n・Successful incorporation of all suggested modifications and improvements.\n・Successful launch and operation of the system on MuesliSwap.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "・Open-Source GitHub Repository: https://github.com/MuesliSwapTeam/muesliswap-decentralized-farming\n・User Feedback Collection Report: https://github.com/MuesliSwapTeam/muesliswap-decentralized-farming/blob/main/reports/final_milestone/feedback-report.pdf\n・Official Farming Launch https://x.com/MuesliSwapTeam/status/2051963317787164875?s=20\n・MuesliSwap Frontend for Decentralized Farming (Cardano Preprod): https://decentralized-farming.muesliswap.com/earn/farming\n・MuesliSwap Backend including API Docs: https://backend.decentralized-farming.muesliswap.com/docs\n・User and Developer Guide: https://github.com/MuesliSwapTeam/muesliswap-decentralized-farming/blob/main/README.md\n・Link to Catalyst Close-Out Report: https://drive.google.com/file/d/1nCTNGLpII3DHBzYjiaiVyNeUQXS-rz73/view?usp=sharing\n・Link to Catalyst Close-Out Video: https://youtu.be/n-QDbC-Vb6c",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 16
+    }
+  ]
+}

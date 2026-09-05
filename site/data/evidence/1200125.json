@@ -1,0 +1,69 @@
+{
+  "title": "Hlabs: Mutexo - an UTxO coordination layer",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 60000,
+      "promise": "Initial implementation based on the ouroboros mini-protocols;\n\ncomunications with the cardano-node, following the tip of the chain and mempool.",
+      "criteria": "The tool:\n・succesfully connect to the cardano node,\n・follows the tip of the chain\n・parses blocks\n・follows the evolution of the mempool",
+      "report": "A repository has been created here: https://github.com/HarmonicLabs/mutexo-server\nThe repo implements all the points specified in the acceptance criteria (as well as the code for the following milestone).\nA video showcasing the implementation of the points and the tool running is present at this link: https://youtu.be/bztrtgY7XZY",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 60000,
+      "promise": "the repository of the previous step will be updated to handle websocket connections from the client and forward the relevant informations",
+      "criteria": "client interface implementation (requests to lock utxos and responses)",
+      "report": "As usual the server repository is here: https://github.com/HarmonicLabs/mutexo-server\nthe most important file for this milestone is: https://github.com/HarmonicLabs/mutexo-server/blob/main/src/wssWorker/webSocketServer.ts\nA video showcasing the server handling the requests of the client is here: https://youtu.be/CZ73srg7EeA\n\nMilestone 1 was strictly about connecting the tool to the node\nMilestone 2 was about handling requests coming from the clients, which is a different goal than milestone 1, while in the same repository, I indicated the specific file that has the primary function of handling clients, where instead in milestone 1 the file was another file one entirely, strictly dedicated at handling the connection the node and relative incoming messages (blocks from the chain).",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 40000,
+      "promise": "a separate repository will be setted up under the HLabs organization () likely called `mutexo-client`\nthe repository implements a library exporting a client class used to interact with the server",
+      "criteria": "the client should be able to\n・request infos on specific utxos.\n・request permission to \"lock\" utxos and handle possible responses.\n・receive updates on utxo being locked or spent.",
+      "report": "The client repository is here: https://github.com/HarmonicLabs/mutexo-client\nthe most important file for this milestone is: https://github.com/HarmonicLabs/mutexo-client/blob/main/src/MutexoClient.ts\nA video showcasing the server handling the requests of the client is here: https://youtu.be/PST9MioEzN4\n\nThe goal of milestone 3 was strictly to implement the client-side of the protocol, where instead milestones 1 and 2 focused strictly on the server.\nFor this reason the repository (first link) of milestone 3 is different than the one of milestone 1 and 2, and so is the video (compare the links for verification, or compare the content directly)",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 10000,
+      "promise": "yet another repository will be created hosting the documentation of mutexo",
+      "criteria": "the documentation covers all the functionalities of mutexo, and explains the intended usage both on the client and server side",
+      "report": "here you can find the documentation for mutexo, both client and server: https://mutexo.harmoniclabs.tech/",
+      "kinds": [
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 30000,
+      "promise": "・Final close-out report\n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "close-out video: https://youtu.be/kE5ef0OsyXQ\nclose-out report: https://github.com/HarmonicLabs/catalyst-close-reports/tree/main/1200125-mutexo",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Automation Testing Framework for Smart Contract with Courses & Hackathons",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 20000,
+      "promise": "- Overall architecture design for the automation testing framework: programming languages supported (at least Aiken supported), onchain/offchain working, types of testing supported (at least e2e test against deployed smart contract supported), workflow & high level design of sub modules, selected tech stacks...\n- Define goals for the course, addressing the needs and expectations of the target audience.\n- Design the course structure, including the sequence of modules, topics, and learning activities.",
+      "criteria": "- Architecture design document with:\n + Problem statement and solution proposal\n + High-level design of sub-modules\n + Smart contract development workflow with the automation test involved\n + Information about the supported programming languages, supported testing types, support for on-chain/off-chain testing: support at least Aiken language and end-to-end test against deployed smart contract\n + Select tech stacks, including reasons for selection\n + Key components of the framework and their iterations\n- Plan for the course:\n + Goals, audience, expectation\n + Course structure with modules, topi",
+      "report": "Public link to the document with a detailed architecture design that includes the information described in the acceptance criteria above\n・https://github.com/catalyst-cardano/smartcontract-automation-testing-framework/blob/main/doc/architecture_design.pdf\n\nI see your comment that says \"I do not see Aiken mentioned at all.\" However, your SoM states \"support at least Aiken language.\" But perhaps we have misunderstood each other's information.\nThe testing of the Smart contract is conducted through blackbox testing. Our goal is to develop a framework using TypeScript that can support writing test scripts to test smart contracts written in any language, such as Aiken, Haskell, Opshin, etc.\nTherefore, I hope you will reconsider your assessment of this comment with regard to our Proof of Achievement.\n\nPublic link to the course plan described in the acceptance creieria above (have updated)\n・https://github.com/catalyst-cardano/smartcontract-automation-testing-framework/blob/main/doc/plan_of_course.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 45000,
+      "promise": "- Core Automation testing framework development with all components implemented, at least including:\n + Test case generation framework that helps to generate multiple test cases of the same scenario from numerous input data, stored in a spreadsheet or a CSV file\n + Transaction builder module that allows the preparation of transactions ready to submit by the test execution engine. This module supports at least simple transactions and smart contract interactions with numerous input data loading from the CSV file\n + Test execution engine that helps to run all the predefined test cases against a specific deployed dApp\n- Short user guide with examples (full user guide will be conducted in next milestone with full learning course)",
+      "criteria": "- All components will be implemented and work for real scenarios: they include at least the following components:\n + Test case generation framework: tool to generate multiple test cases of the same scenario from numerous input data, stored in a spreadsheet or a CSV file\n + Transaction builder module that allows the preparation of transactions ready to submit by the test execution engine.\n + Test execution engine that helps to run all the predefined test cases against a specific deployed dApp\n- Short user guide about how to use the framework for writing automation test\n- Sample test set for a s",
+      "report": "OPEN SOURCE LICENSE \nsmartcontract-automation-testing-framework/LICENSE at main · catalyst-cardano/smartcontract-automation-testing-framework\n- Public link to the project\n・ Git Repo: https://github.com/catalyst-cardano/smartcontract-automation-testing-framework\n・ Project management: https://github.com/orgs/catalyst-cardano/projects/6\n\n- Public link for the user guide how to use the framework for writing automation test, cover all components of the framework:\n https://github.com/catalyst-cardano/smartcontract-automation-testing-framework/blob/main/CardaTestX/README.md \n- A video that demonstrates how the framework works\n・ Setup guideline & Build and test transaction sample: https://www.youtube.com/watch?v=PsKeBGHPGhY\n\n I have added subtitles with detailed step-by-step instructions.\n- Public repo for sample test sets with documentation\n・ Smart contract sample: https://github.com/catalyst-cardano/smartcontract-automation-testing-framework/tree/main/CardaTestX/aiken-smart-contract \n・ TestCase sample: https://github.com/catalyst-cardano/smartcontract-automation-testing-framework/blob/main/CardaTestX/src/tests/test-cases/tc_vesting.xlsx\n・ Test suites were converted from test cases: https://github.com/catalyst-cardano/smartcontract-automation-testing-framework/blob/main/CardaTestX/src/tests/test-suites/ts_vesting_success.ts",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    }
+  ]
+}

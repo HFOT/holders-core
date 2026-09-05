@@ -1,0 +1,50 @@
+{
+  "title": "Cardano EasyDev VS Tool",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 21000,
+      "promise": "・Design and document extension functionality (including Business analysis for the extension)\n・Create UI/UX designs for the extension\n・Set up a public GitHub repository containing the initial source code for the VS Code extension\n・Implement account creation setup feature\n・Project management: organizing and controlling resources and tasks",
+      "criteria": "・Documentation:\n\n・Description of the technology stack to be used\n・User flow diagrams for each feature\n\n・UI/UX Designs:\n\n・Completed webview designs for all extension features\n\n・Public repository with initial source code uploaded\n・Provide screenshots and video demonstrations showcasing functionality for account creation setup\n・GitHub Project Management:\n\n・A GitHub Project board containing issues that correspond to each task.\n・Tasks are labeled and linked to project milestones.",
+      "report": "・Documentation: https://innolab.gitbook.io/cardano-easydev-vs-tool\n・UI/UX Designs: https://www.figma.com/design/lM5rcmxr1bLpkB3JU4mI6q/Simulator?node-id=0-1&p=f&t=Px7Dg0YTxSMl7Vxz-0\n・GitHub link:\n・Documentation: https://github.com/Innovate-Lab/cardano-easydev-vstool-docs\n・Extension - Frontend: https://github.com/Innovate-Lab/cardano-easydev-vstool-frontend-extension\n・Backend: https://github.com/Innovate-Lab/cardano-easydev-vstool-backend\n・Screenshots and video demonstrations for account creation feature: https://innolab.gitbook.io/cardano-easydev-vs-tool/features/1.-user-management/account-creation#demo\n・Project Management: https://github.com/orgs/Innovate-Lab/projects/10",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 14
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 21000,
+      "promise": "・Implement account management feature and UI integrated with VS Code\n・Implement Aiken build and run unit tests directly in the VS Code extension (Smart contract deployment feature and UI integrated with VS Code)\n・Implement create dapp template feature integrated into the extension (including Dependency management and UI integrated with VS Code)\n・Frontend development\n・Backend development\n・Project Management: Organize and control resources and tasks.",
+      "criteria": "・Provide screenshots and video demonstrations showcasing functionality for account management feature\n・Demonstrate Aiken code build and unit tests functionality within the VS Code extension via video demo and screenshots.\n・Provide a video demo showcasing create Dapp template feature\n・Frontend development:\n・Source code for the webview embedded in the extension, capable of interacting with the extension and backend.\n・Backend development\n・Source code interaction with the blockchain provider to retrieve information\n・GitHub Project Management:\n・A GitHub Project board containing issues that correspo",
+      "report": "Evidence of milestone 2 completion\n・Screenshots and video demonstrations for account management feature: https://innolab.gitbook.io/cardano-easydev-vs-tool/features/1.-user-wallet/account-management\n・Screenshots and video demonstrations for aiken CLI interaction (build, test): https://innolab.gitbook.io/cardano-easydev-vs-tool/features/2.-aiken-cli-interaction\n・Screenshots and video demonstrations for create Dapp template feature: https://innolab.gitbook.io/cardano-easydev-vs-tool/features/3.-create-dapp-template\n・Frontend: https://github.com/Innovate-Lab/cardano-easydev-vstool-frontend-extension/tree/main/webview-ui\n・Backend: https://github.com/Innovate-Lab/cardano-easydev-vstool-backend\n・Project Management: https://github.com/orgs/Innovate-Lab/projects/10\n\nAdditionally, we have updated the documentation for the above features.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 28000,
+      "promise": "・Implement feature interaction with a validator from plutus.json (built from the Aiken project) within the VS Code extension (Smart contract testing feature and UI integrated with VS Code)\n・Wallet management feature and UI integrated with VS Code\n・Testing, fixing bugs and gathering feedback\n・Website built for the extension include\n・User tutorial documentation\n・Examples\n・Release the extension on the VS Code Marketplace\n・Project management (organizing, and controlling resources, tasks)\n・Submit a close-out report and video summarizing the milestone progress and completion",
+      "criteria": "・Provide screenshots and video demonstrations showcasing the smart contract testing feature\n・Provide screenshots and video demonstrations showcasing the wallet management feature\n・Gather bug reports, feedback from GitHub issues and summary for fixed issues\n・Publish a website that introduces the extension and includes user tutorials and examples.\n・Successfully publish the extension on the VS Code Marketplace, with a public link for users to install.\n・GitHub Project Management:\n・A GitHub Project board containing issues that correspond to each task.\n・Tasks are labeled and linked to project milest",
+      "report": "・Screenshots and video demonstrations showing smart contract testing feature: https://innolab.gitbook.io/cardano-easydev-vs-tool/features/4.-simulation\n・Screenshots and video demonstrations showing wallet management feature: https://innolab.gitbook.io/cardano-easydev-vs-tool/features/1.-user-wallet/wallet-management\n・Summary of bug reports, fixed issues, and feedback gathered via GitHub issues:\n\n・Bug reports and fixed issues: Link here\n・Feedback: Link here\n\n・URL\n\n・Website showcase the extension (landing page): https://cardano-easydev-vstool-landing-page.vercel.app/\n・User tutorials and examples: https://innolab.gitbook.io/cardano-easydev-vs-tool/user-tutorial-example\n\n・Extension Release: https://marketplace.visualstudio.com/items?itemName=inno-labs.cardano-easydev-vstool\n・Project Management: https://github.com/orgs/Innovate-Lab/projects/10\n\n・Close-OutReport: https://innolab.gitbook.io/cardano-easydev-vs-tool/close-out-report-f13\n・Video: https://youtu.be/3SubJ_fErIg",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 18,
+      "cut": true
+    }
+  ]
+}

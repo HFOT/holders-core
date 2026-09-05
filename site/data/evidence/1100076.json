@@ -1,0 +1,55 @@
+{
+  "title": "Cardano's impact on the immutability of biomedical data in the healthcare world",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "The TxPipe.io development team will be hired to prepare a technical feasibility report and to assist Biotalife throughout the development of the project. The TxPipe contract document will be attached detailing the specifics of their work. The report will include an analysis of the functional requirements, design, and architecture of the API, along with Tx diagrams on how to develop Milestones 2 and 3. The functional and technical requirements of the system will be precisely defined, including use cases, architecture description, and design. It will also describe the design of the Patient Data Registry smart contract: UTxOs involved, datums and values of each transaction. Operations, redeemers, inputs and outputs. Specification of validators and minting policies (what will be checked on-chain). In addition, a communication plan for social channels will be developed.",
+      "criteria": "Visible and publicly accessible documents that can be reviewed by auditors, including TxPipe's hiring document as Feasibility Technical Report designer with the details of the scope of its role.\nA reviewer is able to appreciate the communication campaign in social channels (Twitter, LinkedIn).",
+      "report": "We send the PoA of Milestone 1, which contains:\nInitial report: 1) Comprehensive document that includes the documentation presented and 2) TxPipe contracting document, accessible to reviewers and community.\nIndex:\n1. Initial Report ....................................................................................................................................... 3\n1.a) Technical feasibility report .............................................................................................................. 4\n1.b) Social channels communication plan .............................................................................................. 8\n2. Agreement between Biotalife and TxPipe ........................................................................................ 10\n2.a) Discussion meetings....................................................................................................................... 11\n2.b) TxPipe’s hiring document .............................................................................................................. 11\nLink to the file:\nhttps://drive.google.com/drive/folders/1c1Pbz5shPePV6gxXTi1n0UtxpzWsDct9?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 30000,
+      "promise": "With TxPipe we are going to develop and validate a mechanism to protect IC and PD. We will implement a solution to individually hash the data. We will define the API that will provide the service to store and retrieve the hashes stored in the blockchain, along with the off-chain module to build the necessary on-chain transactions and validators. Additionally, we will include Aiken validators and minting policies to create a patient registry on-chain. This registry will contain hashed information of the IC and PD. NodeJS Rest API providing endpoints for building transactions for creating a new patient registry, querying the information of a given patient id, and submitting the signed transactions. Unit tests for Aiken validators and traces running on Lucid emulator showing good behavior. Transaction examples submitted to pre-prod testnet.",
+      "criteria": "Blockchain Transaction Validation: Each transaction storing a hash will be verifiable on the blockchain, demonstrating the system's operation and immutable recording of data.",
+      "report": "We send the second report after having completed the Milestone 2 (PoA Milestone 2 link to the document). In it you can find: a) Technical development and links to an explanatory video with the translations in preprod testnet and b) Communication plan developed with all the links to the article publications and developed discussion space.\nLink to the Document that contains the information in PDF format:\nhttps://drive.google.com/file/d/1pI5LXoF-bmZBYCtRAoH4xwk_BGClb-Ec/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 25000,
+      "promise": "With TxPipe we are going to develop and validate a mechanism for storing RMD and MR. Additionally, we will implement a solution to individually hash the data. The necessary endpoints for adding RMD and MR hashes to the corresponding UTXOs will be included in the API defined in the milestone 2, along with the expansion of the off-chain and on-chain modules. Additionally, we will include Update of Aiken validators and minting policies for allowing to update patient registry on-chain by adding hashed information of Row Microbiome Data and Microbiome Report. Update of NodeJS Rest API adding the endpoint for storing the RMD and MR. Unit tests for Aiken validators and traces running on Lucid emulator showing good behavior. Transaction examples submitted to pre-prod testnet.",
+      "criteria": "Blockchain Transaction Validation: Each transaction storing a hash will be verifiable on the blockchain, demonstrating the system's operation and immutable recording of data.",
+      "report": "We uploaded a complete video where you can see the complete operation of the developed smart contract. In the video you can see how the 4 documents (IC, PD, RMD, MR) are added, hashed and searchable with the ID token number. This video was intended to be presented in the final milestone, as a demonstration of the complete operation of the development, but we are anticipating it for bettter understanding. We share the links to the full video:\nYoutube Link: https://www.youtube.com/watch?v=x1VQHgi1AFM\nDrive Link: https://drive.google.com/file/d/1VTF34_Or4uA0ZKy7rRdVA-PlcRC-p2wk/view?usp=sharing",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 15000,
+      "promise": "We will deliver:\n1) A Final Report that includes: a) development process, b) diagram of the developed solution, c) social campaign report where we shared with the community our progress and benefits when using cardano technology to safeguard biomedical data.\n2) Final Video according to the project completion, which includes a demo showing the full system working.",
+      "criteria": "Visible and publicly accessible 1) Final Report and 2) Final Video \nthat can be reviewed by reviewers",
+      "report": "We have resubmitted the final report (Drive Link) and video (Youtube Link) with the suggested adjustments to align with the required closeout format set by Catalyst. Thank you very much for your suggestions and feedback.\nAdditionally, we would like to clarify that the smart contract is not yet deployed on the mainnet; for now, the implementation is being carried out locally.",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

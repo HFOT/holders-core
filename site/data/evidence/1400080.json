@@ -1,0 +1,59 @@
+{
+  "title": "Mesh: Cross-Chain Production-Ready Wallet SDK",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 20000,
+      "promise": "・Develop Multi-chain wallets interface\n・Develop Core bitcoin interface\n・Develop Core cardano interface\n・Develop Bitcoin interface\n・Develop CIP30 interface\n・Post a twitter thread to inform the public",
+      "criteria": "Complete development for interfaces for all wallets such as:\n・completed development of the Multi-chain wallets interface\n・completed development of the Core bitcoin interface\n・completed development of the Core cardano interface\n・completed development of the Bitcoin interface\n・completed development of the CIP30 interface\n・Post a twitter thread to inform the public",
+      "report": "Hey there Milestone Reviewers and everyone who is following the progress.\nHere we are, reporting the successful completion of the first Milestone, below all listed delivereables of the Statement of Milestone with the respective github links where you are able to assess and verify the deployed code.\n\nA. Output: Develop Multi-chain wallets interface\n- Acceptance criteria: completed development of the Multi-chain wallets interfac\n- Evidence: https://github.com/MeshJS/wallet/blob/feature/bitcoin-wallet/src/multi-chain/interfaces/multi-chain-wallet.ts\n\nB. Output:Develop Core bitcoin interface\n- Acceptance criteria: completed development of the Core bitcoin interface\n- Evidence: https://github.com/MeshJS/wallet/blob/feature/bitcoin-wallet/src/interfaces/secret-manager.ts\n\nC. Output: Develop Core cardano interface\n- Acceptance criteria: completed development of the Core cardano interface\n- Evidence: https://github.com/MeshJS/wallet/blob/feature/bitcoin-wallet/src/interfaces/signer.ts\n\nD. Output: Develop Bitcoin interface\n- Acceptance criteria: completed development of the Bitcoin interface\n- Evidence: https://github.com/MeshJS/wallet/blob/feature/bitcoin-wallet/src/bitcoin/interfaces/bitcoin-wallet.ts\n\nE. Output: Develop CIP30 interface\n- Acceptance criteria: completed development of the CIP30 interface\n- Evidence: https://github.com/MeshJS/wallet/blob/feature/bitcoin-wallet/src/cardano/interfaces/cardano-wallet.ts\n\nF. Output: Post a twitter thread to inform the public\n- Acceptance criteria: Post a twitter thread to inform the public\n- Evidence: https://x.com/meshsdk/status/2017172545204576371\n\nAnd thats it, hope all evidence satisfies the Milestone Reviewers, see you at the next Milestone.",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 20000,
+      "promise": "A. Develop and deploy the Cardano core module\nB. Develop and deploy Bitcoin core module\nC. Publish all code base updates on the respective github repository\nD. Post a twitter thread to inform the public about the Milestone outcomes and achievements in English language",
+      "criteria": "A. Develop and deploy the Cardano core module\nA1. Successfully implemented the base logic for Mesh Wallet on Cardano\nA2. Successfully implemented the building of all addresses, like payment, stake, DRep, script addresses, with the new core module on Cardano\nA3. Successfully implemented the synchronization of the wallet on Cardano\nA4. Successfully implemented the signing transactions feature on Cardano\nA5. Successfully implemented the signing data and verify signatures feature on Cardano\nB. Develop and deploy Bitcoin core module\nB1. Successfully implemented deriving wallet from seed phrase base",
+      "report": "Hey there Milestone Reviewers and everyone who is following the progress of this proposal. First of all we apologise for the delay of this milestone completion and we hope you are satisfied with the accomplished deliverables of this milestone.\nFor the github links, we matched everything into one link so you dont have to check through multiple ones, so pls do not wonder why we post the same github url across the sections A - C.\n\nA. Output: Develop and deploy the Cardano core module\nAcceptance criteria: \nA1. Successfully implemented the base logic for Mesh Wallet on Cardano\nA2. Successfully implemented the building of all addresses, like payment, stake, DRep, script addresses, with the new core module on Cardano\nA3. Successfully implemented the synchronization of the wallet on Cardano\nA4. Successfully implemented the signing transactions feature on Cardano\nA5. Successfully implemented the signing data and verify signatures feature on Cardano\nEvidence: https://github.com/MeshJS/wallet/releases/tag/v2.0.0-beta.10\nB. Output: Develop and deploy Bitcoin core module\nAcceptance criteria: \nB1. Successfully implemented deriving wallet from seed phrase based on BIP-32 standard\nB2. Successfully implemented deriving wallet addresses with arbitrary derivation paths\nB3. Successfully implemented implemented signing data and verifying signatures on Bitcoin transactions\nEvidence: https://github.com/MeshJS/wallet/releases/tag/v2.0.0-beta.10\nC. Output: Publish all code base updates on the respective github repository\nAcceptance criteria: Successfully submitted all code changes on a publicly accessible Mesh github repository\nEvidence: https://github.com/MeshJS/wallet/releases/tag/v2.0.0-beta.10\nD. Output: Post a twitter thread to inform the public about the Milestone outcomes and achievements in English language\nAcceptance criteria: [Completion criteria for Output D]\nEvidence: https://x.com/meshsdk/status/2064311926771814447",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 20000,
+      "promise": "A. Develop and deploy a CIP30 headless wallet on Cardano\nB. Publish all code base updates on the respective github repository\nC. Post a twitter thread to inform the public about the Milestone outcomes and achievements in English language",
+      "criteria": "A. Develop and deploy a CIP30 headless wallet on Cardano\nA1. Core module handles secret derivation, addresses, and signing, while CIP-30 module enables simulated CIP-30 wallet endpoints.\nA2. Implement all CIP-30 endpoints, with tests to ensure the endpoints conform to standards.\nA3. Wherever on-chain data is needed for CIP-30 functionality, a provider can be attached to allow functions to behave properly. \nB1. Successfully submitted all code changes on a publicly accessible Mesh github repository\nC1. Completed the publishing of a twitter (X) thread of the accomplished work of the Milestone at",
+      "report": "Hey there Milestone Reviewers and everyone who is following the progress of this proposal. \nHere the completed Milestone 3 of the proposal, all objectives have been achieved and completed.\nA) All developed code will be published and accessible via Mesh Github\n・MeshJS/wallet#9\n\nB) We will provide respective url’s to the code on Mesh Github\n・MeshJS/wallet#9\n\nC) We will provide a url to the published tweet on X (Twitter) via the official Mesh account\n・https://x.com/meshsdk/status/2076219961253446045",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 20000,
+      "promise": "A. Develop and deploy a standard headless wallet on Bitcoin\nB. Publish all code base updates on the respective github repository\nC. Post a twitter thread to inform the public about the Milestone outcomes and achievements in English language",
+      "criteria": "A. Successfully implemented the standard headless wallet on Bitcoin\nA1. Successfully implemented the utxo querying based on Maestro as the data provider\nA2. Successfully implemented the coin selection algorithm on queried bitcoin UTxOs\nA3. Successfully implemented the send transfer transaction \nB1. Successfully submitted all code changes on a publicly accessible Mesh github repository\nC1. Completed the publishing of a twitter (X) thread of the accomplished work at the official Mesh Account",
+      "report": "Hey there Milestone Reviewers and everyone who is following the progress of this proposal. Here the completed Milestone 3 of the proposal, all objectives have been achieved and completed.\nA. Develop and deploy a standard headless wallet on Bitcoin\n\n・MeshJS/wallet#10\n\nB. Publish all code base updates on the respective github repository\n\n・MeshJS/wallet#10\n\nC. Post a twitter thread to inform the public about the Milestone outcomes and achievements in English language\n\n・https://x.com/meshsdk/status/2086707767356567822",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 4
+    }
+  ]
+}

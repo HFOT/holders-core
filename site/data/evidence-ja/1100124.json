@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "コンテキスト: ENCOINS v2 は、Cardano のプライバシープロトコルの次の反復です。 ユーザーは、ロックされた値を保持するスマートコントラクトとミント償還トークン(encoins)で資産をロックすることができます。 ユーザーは、これらのトークンをプライバシー強化されたトランザクションに転送することができます。\nタスク: ENCOINS v2 スマートコントラクトの仕様を生成します。 ENCOINS v2を他のDAppと統合するためのガイドを生成します。 ENCOINS v2 UI に対応した設計コンセプトを制作。\n出力:\n・ENCOINS v2スマートコントラクト仕様(PDF)を含む技術文書\n・ENCOINS v2統合ガイドを含む技術文書(PDF)\n・Web UIアセットを使用したFigmaファイル",
+      "criteria": "出力はコミュニティと共有され、GitHub(https://github.com/encryptedcoins/)にアップロードされます.",
+      "report": "マイルストーン1 - ドキュメンテーションを完了しました。 リソースへのリンクは次のとおりです。\nhttps://github.com/encryptedcoins/catalyst-outputs/tree/main/ENCOINS%20v2/Milestone%201\nフォルダには、DApp UIの設計、スマートコントラクトの仕様、およびENCOINS v2を使用する他のプロジェクト用の統合ガイドとFigmaファイルが含まれています."
+    },
+    {
+      "no": 2,
+      "promise": "コンテキスト: ENCOINS v2 は、Cardano のプライバシープロトコルの次の反復です。 ユーザーは、ロックされた値を保持するスマートコントラクトとミント償還トークン(encoins)で資産をロックすることができます。 ユーザーは、これらのトークンをプライバシー強化されたトランザクションに転送することができます。\nタスク: ENCOINS v2スマートコントラクトの実装。 テストスイートを実装し、スマートコントラクトのキープロパティを確認します。\n出力:\n・ENCOINS v2オンチェーンスクリプト(ハッセル)のモジュール\n・ENCOINS v2スマートコントラクト(Haskell)のキープロパティをテストするモジュール",
+      "criteria": "出力はコミュニティと共有され、GitHub(https://github.com/encryptedcoins/)にアップロードされます.",
+      "report": "マイルストーンを完成しました。 関連するコードは GitHub リポジトリ \"encoins-core-v2\" にあります。\nhttps://github.com/encryptedcoins/encoins-core-v2\n具体的には、ENCOINS v2オンチェーンスクリプトはこちら\nhttps://github.com/encryptedcoins/encoins-core-v2/blob/main/src/ENCOINS/Core/V2/Script.hs\nzkFold シンボルフレームワークを使用してスマートコントラクトが書かれています。\nテストスイートはこちら\nhttps://github.com/encryptedcoins/encoins-core-v2/blob/main/tests/Test.hs\n私たちは、有効なEncoins取引を生成し、契約資金が枯渇することができないことを確認するためにテストしています, すなわち, コンピュータサイエンスの用語での生活と安全.\n新しい:\n私たちは、コードが機能していることを説明するために、ビデオ画面キャプチャアーティファクトを追加しました\nhttps://github.com/encryptedcoins/catalyst-outputs/tree/main/ENCOINS%20v2/Milestone%202\nソーシャルメディアを通じて、このマイルストーンの完了についてのメッセージを共有しました\nhttps://x.com/encoins1/status/1813252913042456964?s=46&t=VtKqk2ARMLb360rztszkuA"
+    },
+    {
+      "no": 3,
+      "promise": "コンテキスト: ENCOINS v2 は、Cardano のプライバシープロトコルの次の反復です。 ユーザーは、ロックされた値を保持するスマートコントラクトとミント償還トークン(encoins)で資産をロックすることができます。 ユーザーは、これらのトークンをプライバシー強化されたトランザクションに転送することができます。\nタスク: ENCOINS v2スマートコントラクトのオフチェーンコードを実行します。 ENCOINS のリレーをアップグレードして、v2 のユーザーリクエストをサポートします。\n出力:\n・オフチェーンコードを含むモジュールは、ENCOINS v2契約(Haskell)の取引をビルド\n・CLI(Haskell)を使用したENCOINS v2リクエストに対応した新しいENCOINSリレーリリース",
+      "criteria": "出力はコミュニティと共有され、GitHub(https://github.com/encryptedcoins/)にアップロードされます.",
+      "report": "親愛なる審査官、マイルストーン3を完成させました。 マイルストーン完了レポートはこちら:\nhttps://github.com/encryptedcoins/project-catalyst-outputs/blob/main/Project Catalyst M3 ENCOINS v2 relayer.pdf"
+    },
+    {
+      "no": 4,
+      "promise": "コンテキスト: ENCOINS v2 は、Cardano のプライバシープロトコルの次の反復です。 ユーザーは、ロックされた値を保持するスマートコントラクトとミント償還トークン(encoins)で資産をロックすることができます。 ユーザーは、これらのトークンをプライバシー強化されたトランザクションに転送することができます。\nタスク: ENCOINS v2 フロントエンド UI を実行します。\n出力:\n・ENCOINS v2 Web UIのコード.",
+      "criteria": "出力はコミュニティと共有され、GitHub(https://github.com/encryptedcoins/)にアップロードされます.",
+      "report": "親愛なる審査官,\nマイルストーン4完成! フロントエンドのコードソースは、次のことができます。\nhttps://github.com/zkFold/utxoaccumulator-server/tree/main/web/ui\nコンパイルされたフロントエンドのWebページはこちら:\nhttps://github.com/encryptedcoins/encoins-v2/tree/main/ui\nこのページを閲覧することで、フロントエンドを表示することができます。\nhttps://swift-holiday-miniature.on-fleek.app/"
+    },
+    {
+      "no": 5,
+      "promise": "コンテキスト: ENCOINS v2 は、Cardano のプライバシープロトコルの次の反復です。 ユーザーは、ロックされた値を保持するスマートコントラクトとミント償還トークン(encoins)で資産をロックすることができます。 ユーザーは、これらのトークンをプライバシー強化されたトランザクションに転送することができます。\nタスク: 完全に機能的なアプリケーションを生成します。 Cardano Testnetでアプリケーションテストを実行します。\n注意: アプリケーションは、メインネットまたは Testnet のいずれかで実行できます。 当社の計画は、広範な試験期間を持ち、監査のためのコードを提出することです。 そのため、このマイルストーンの一部としてリリース日を設定しないことを好みます。\n出力:\n・ENCOINS v2の完全コード\n・Cardano Testnet の実行アプリケーション。\n・本アプリの主な機能が映る映像。\n・プロジェクトの成果を詳しく報告する.",
+      "criteria": "応募サイトと動画は公開予定です。 YouTubeに動画をアップロードし、Twitterで共有します。 審査官にリンクが届きます。 GitHubにクローズアウトレポート(pdf)をアップロードし、審査者と共有します.",
+      "report": "最終的なマイルストーンをすべてのレビュー担当者のフィードバックをアドレスする新しいクローズアウトビデオで削除します。 新しいビデオは、ファンド10 / 11規則ごとに4つの必須要素をすべてカバーします。 チャレンジ名(F11: Cardano Open: Developers)、マイルストーンによる進行、ブロックエクスプローラ上のオンチェーン取引、および将来の計画を含むアプリケーションの実証。\n\nA. 出力:ENCOINS v2の完全なコード。\n\n受諾条件:コードはGitHubで公開されています。\n\n証拠:\n- アプリケーション フロントエンド: https://github.com/encryptedcoins/encoins-v2\n- バックエンドサーバ: https://github.com/zkFold/utxo-accumulator-server\n- スマートコントラクト: https://github.com/zkFold/zkfold-cardano\n\nB. 出力:Cardano Testnetの実行中のアプリケーション。\n\n受諾の基準:アプリケーションのウェブサイトは、Cardano Preprod Testnet上で公開および機能的です。\n\n証拠: https://encryptedcoins.github.io/encoins-v2/\n\nC. 出力: アプリケーションの主関数を照らすビデオ。\n\n受諾条件:動画はYouTubeにアップロードされ、公開されています。 エントリーした課題、進行状況、マイルストーン、アプリケーションのデモ、将来の計画をカバーします。\n\n証拠: https://www.youtube.com/watch?v=LMnl9bIxkpY\n\nD. 出力:プロジェクトの結果を詳述するクローズアウトレポート。\n\n受諾条件: GitHub にクローズアウトレポート(PDF)をアップロードし、審査者と共有します。\n\n証拠: https://github.com/encryptedcoins/encoins-v2/blob/main/1100124%20-%20ENCOINS%20v2%20-%20%20%20out%20report.pdf"
+    }
+  ]
+}

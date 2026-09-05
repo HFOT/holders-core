@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "高レベルのプロトコル記述を持つlitepaperドラフト。\n詳細なプロトコルの説明で最初のホワイトペーパードラフト.",
+      "criteria": "Litepaperドラフトは、高レベルのプロトコルの説明で提供されます。\nホワイトペーパーのドラフトは、詳細なプロトコルの説明で提供されます.",
+      "report": "お問い合わせ\nBinocular の進捗状況を公表しました。\n概念実装の現在の証拠を持つプロジェクトリポジトリは次のとおりです。\nhttps://github.com/lantr-io/binocular\nここでは、Litepaperドラフト: https://github.com/lantr-io/binocular/blob/e1073f1d2e87b26db7f4418e745c3d3a47c63963/Litepaper.md\nそしてここに最初のホワイトペーパーの草案です: https://github.com/lantr-io/binocular/blob/e1073f1d2e87b26db7f4418e745c3d3a47c63963/Whitepaper.md\nこれらは、それぞれのPDF版です。\nhttps://github.com/lantr-io/binocular/blob/e1073f1d2e87b26db7f4418e745c3d3a47c63963/Litepaper.pdf\nhttps://github.com/lantr-io/binocular/blob/e1073f1d2e87b26db7f4418e745c3d3a47c63963/Whitepaper.pdf\n我々はまだ、プロトコルのいくつかの側面を研究しています, より効率的かつ安くそれを作るしようとしているので、我々は約束として、次のマイルストーンでホワイトペーパーを精製します.\nまた、Bitcoinブロックのヒーダー検証ロジックをCardanoスマートコントラクトとして実装しています."
+    },
+    {
+      "no": 2,
+      "promise": "高レベルのプロトコル記述で洗練されたバージョン。\n詳細なプロトコルの説明、通信図、双眼鏡状態のマシンの説明との完全なホワイトペーパードラフト。\nBinocularスマートコントラクトステートマシンの概念実装の初期証拠.",
+      "criteria": "Litepaperの洗練されたバージョンは、高レベルのプロトコルの説明で提供されます。\n完全なホワイトペーパーのドラフトは詳細なプロトコルの説明で提供されます。\nプロジェクトの GitHub で初期の Binocular ステート マシン スマートコントラクトが利用できます。\n双眼鏡スマートコントラクトは、ホワイトペーパーで記述されたロジックを実装していますが、不完全です.",
+      "report": "A. 出力:高レベルのプロトコル記述のLitepaperを精製しました\n受諾条件: litepaper の洗練されたバージョンは、高レベルのプロトコルの説明で提供されます。\n証拠:Litepaper.md | PDF\nB. 出力: 詳しいプロトコル記述が付いている完全なWhitepaperの草案\n受諾の基準:完全なwhitepaperの草案は詳細なプロトコルの説明、通信図および州機械記述と提供されます。\n証拠:Whitepaper.md | PDF\nC.出力:初期双眼鏡スマートコントラクトステートマシンの実装\n受諾条件:プロジェクトのGitHubで初期の双眼状態機械スマートな契約が利用できます。\n証拠:BitcoinValidator.scala\nD. 出力:スマートコントラクトは、ホワイトペーパーロジックを実装\n受諾基準:Binocularスマートコントラクトは、ホワイトペーパー(PoW検証、難易度調整、タイムスタンプ検証、フォーク管理、ブロックプロモーション)に記載されているロジックを実装しています。\n証拠: ValidatorTest.scala"
+    },
+    {
+      "no": 3,
+      "promise": "ライトペーパーの洗練されたバージョン。\nホワイトペーパーの完成版。\n双眼鏡スマートコントラクトステートマシンの概念実装の修正証拠。\nOracleを使用するBinocularオフチェーンクライアントコードの概念実装の証拠.",
+      "criteria": "洗練されたライトペーパーとホワイトペーパーのMarkdown/LatexとPDF文書が提供されます。\n変更された双眼鏡スマートコントラクトは、プロジェクトのGitHubで利用できます。\n以下の機能でtestnet上で実行できるBinocular Oracleの概念実装の証拠:Oracle UTxOを作成し、Oracleを新しいBitcoinブロックで更新し、Oracleを使用してBitcoinに含まれているトランザクションの証拠を構築します。\nテストネットで次の機能の実証を成功させる:\n・Oracle UTxO の作成\n・新しいBitcoinブロックでOracleを更新\n・オラクルを使用して、オラクルの証拠を組み立てる",
+      "report": "A. 出力:Litepaperを精製しました\n受諾基準:洗練されたライトペーパーマークダウンとPDF文書が提供されます。\n証拠:アーキテクチャ、主要な概念、セキュリティ分析、および経済攻撃コストをカバーする高レベルのプロトコルの概要。\n・Litepaper.md | PDF\n\nB. 出力: 精製されたホワイトペーパー\n受諾条件:洗練されたホワイトペーパーマークダウンとPDF文書が提供されます。\n証拠: プロトコル設計、データ構造、Bitcoin コア参照、通信図、正式な状態機械、および保証証拠を含む完全な技術的な指定。\n・ホワイトペーパー | PDF\n\nC. 出力: Binocular のスマートな契約の州機械を見直しました\n受諾条件: 変更された双眼鏡スマートコントラクトは、プロジェクトのGitHubで利用可能です。\n証拠:Bitcoinのコンセンサス検証(PoW、難易度調整、タイムスタンプ)、フォーク管理、キャノンチェーン選択、プロモーションロジックをブロックするプルタスバリデータ。\n・BitcoinValidator.scala - 主なバリデータ\n・ValidatorTest.scala - テストスイート\n\nD. 出力: オフチェーン クライアントの実装\nアクセプタンス基準:オラクルオラクルの概念実装の証明:Oracle UTxOを作成し、Oracleを新しいBitcoinブロックで更新し、Oracleを使用してBitcoinに含まれているトランザクションの証拠を構築します。\n証拠:Cardano testnet/mainnetのBinocular Oracleと相互作用するためのコマンドラインアプリケーション。\n・CliApp.scala - すべてのコマンドを持つメインCLIアプリケーション\n・InitOracleCommand。 scala - 初期Oracle UTxO を作成\n・OracleCommand.scala を更新 - 新しいBitcoinブロックを提出\n・ProveTransactionCommand.scala - トランザクションインクルードの証拠を生成\n\nE. 出力: Testnet デモ - Oracle UTxO 作成\n受諾基準: Oracle UTxO を testnet 上で作成する成功した実証。\n証拠: プレビューテストネット上のChainState datumで初期のBinocular Oracle UTxOを作成するトランザクション。\n・Oracleスクリプトの展開\n・Tx: https://preprod.cexplorer.io/tx/693c1f024ab5439d9438db446366"
+    },
+    {
+      "no": 4,
+      "promise": "高いレベルのプロトコル記述の最終的なlitepaper。\n詳細なプロトコル記述を持つ最終的なフルホワイトペーパー。\nBinocular Oracleステートマシンスマートコントラクト実装。\nOracleを使用するBinocularクライアントコードの概念実装の証拠。\n・プロジェクトクローズアウトレポート\n・プロジェクトクローズアウト動画.",
+      "criteria": "最終的なlitepaperおよびWhitepaperのMarkdown/LatexおよびPDF文書は提供されます。\nOracleステートマシンのスマートコントラクトの実装は、プロジェクトのGitHubで利用可能です。\nOracleを使用するBinocularオフチェーンクライアントコードの概念実装の証拠は、プロジェクトのGitHubで利用可能です。\nプロジェクトクローズアウトレポートを提出しました。\nプロジェクトクローズアウト動画を提出.",
+      "report": "A. 出力:最終的なLitepaper\n受諾条件: 最終的なlitepaperのMarkdownおよびPDF文書は提供されます。\n証拠:アーキテクチャ、主要な概念、セキュリティ分析、および経済攻撃コストをカバーする高レベルのプロトコルの概要。\n・Litepaper.md | PDF\n\nB. 出力: 最終的なホワイトペーパー\n受諾条件:最終ホワイトペーパーマークダウンとPDF文書が提供されます。\n証拠: プロトコル設計、データ構造、Bitcoin コア参照、通信図、正式な状態機械、および保証証拠を含む完全な技術的な指定。\n・ホワイトペーパー | PDF\n\nC. 出力:双眼Oracleの州機械スマートな契約\n受諾条件:プロジェクト GitHub で Binocular Oracle ステートマシン スマートコントラクトの実装が利用可能です。\n証拠:Bitcoinのコンセンサス検証(PoW、難易度調整、タイムスタンプ)、フォーク管理、キャノンチェーン選択、プロモーションロジックをブロックするプルタスバリデータ。\n・BitcoinValidator.scala - 主なバリデータ\n・ValidatorTest.scala - テストスイート\n\nD. 出力: オフチェーン クライアントの実装\nアクセシビリティ基準: Oracle を使用する Binocular オフチェーンクライアントコードの概念実装の証明は、プロジェクトの GitHub で利用可能です。\n証拠:Cardano testnet/mainnetのBinocular Oracleと相互作用するためのコマンドラインアプリケーション。\n・CliApp.scala - すべてのコマンドを持つメインCLIアプリケーション\n・InitOracleCommand。 scala - 初期Oracle UTxO を作成\n・OracleCommand.scala を更新 - 新しいBitcoinブロックを提出\n・ProveTransactionCommand.scala - トランザクションインクルードの証拠を生成\n\nE. 出力: プロジェクト クローズアウト レポート\n受諾条件:プロジェクトクローズアウトレポートが提出されます。\n証拠:クローズアウトレポート\nF. 出力: プロジェクト クローズアウト ビデオ\n受諾条件:プロジェクトクローズアウトビデオが提出されます。\n.証拠:プロジェクトクローズアウトビデオ"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "配達可能/出力:\n・ユーザーインターフェイス(UI)モックアップ\n・技術デザイン\n・データフロー図\n・システムアーキテクチャ設計\n・スマートコントラクト仕様\n・試験プラン\n・採用計画",
+      "criteria": "・UI Design Mock-upは、審査システムの次の機能でご利用いただけます。\n・レビューカテゴリーの作成\n・Writeレビュー\n・総合評価、カテゴリー別\n・レビューと評価の表示\n・全体的な評判スコアを表示\n・レビューに返信する書き込み\n・上記全ての機能に関する技術デザインを詳細にご覧いただけます。\n\n・データフロー図\n・システムアーキテクチャ設計\n・スマートコントラクト仕様\n・試験プラン\n・採用計画",
+      "report": "ありがとうございます。 テストデータを追加しました。 試験プランに3ホテルが5日間の試験に利用するテストプランを追加しましたが、パイロットテストステージに到達したときにホテルの名前を変更することはできません。\n------------------------\n投稿とフィードバックに感謝します。\nすべてのフィードバックを組み込んでいます。\nコンテンツ追加表\nスマートコントラクトの設計詳細\nデータストア - ホテルの予約IDやその他のシステムIDを保存するためのレビューReferenceIdを追加しました\nUI-Write 応答画面追加\nUI-Stayed 追加\nテストプラン - Testnet のテストを追加\n-----------------------------------\n以下は、UIデザインとテクニカルデザインを含むマイルストーン1のために行われた作業のための公開アクセス可能なリンクです。\n・ユーザーインターフェイス(UI)モックアップ画面デザイン\n\nFigma リンク: https://www.figma.com/design/FACv8nNkArAruZd9gsdvpR/RnR?node-id=18-320&t=3BpMSOHQf3Sv40fG-1\n・技術デザイン文書\n\nGitHub リンク: https://github.com/AIQUANT-Tech/CardanoRnR/blob/main/DesignDocs/CardanoRnR TechDesign.pdf\nREADME.md はこれらのリンクも持っています。 https://github.com/AIQUANT-Tech/CardanoRnR/tree/main"
+    },
+    {
+      "no": 2,
+      "promise": "配達可能/出力:\n・コンセプトのためのユーザーインターフェイスの開発\n・技術設計による機能性サービスの開発\n・スマートコントラクトライティング\n・Dev Testingの場合、単体テストの場合",
+      "criteria": "以下のような機能を備えた働き方型をご用意\n・レビューカテゴリーの作成\n・Writeレビュー\n・総合評価、カテゴリー別\n・レビューと評価の表示\n・全体的な評判スコアを表示\n・レビューに返信する書き込み",
+      "report": "ここでは、マイルストーン2の配信可能なPOAを再登録します。\n・プロトタイプへのリンク:\n\nプロトタイプは、次のURLで公開できるようになりました。\n事業終了 - http://51.21.61.199/\nユーザーエンド - http://51.21.61.199/user/X\n(これらのリンクは、マイルストーンの検証の目的のため、現在ではありますが、これらはhttpsとドメインにはまだ入れていません)\nそれは次の機能をカバーします\n・レビューカテゴリーの作成\n・Writeレビュー\n・総合評価、カテゴリー別\n・レビューと評価の表示\n・全体的な評判スコアを表示\n・レビューに返信する書き込み\n\n・機能を説明する短い動画へのリンク\n\nYouTubeのビデオリンク:CardanoRnR API の使用方法、テスト ケース及びチェーン コードのための単位のテスト\n・ソースコードとテストケースのソースコードリポジトリ\n\nGithubリポジトリリンク: https://github.com/AIQUANT-Tech/CardanoRnR\nまた、以下のテストレポートも提供しております。\n試験報告書\nCardanoRnRスマートコンタクトテストシナリオ\nLInk : https://github.com/AIQUANT-Tech/CardanoRnR/tree/main/TestReport/RnRSmartContractTestScenario\n・試験は、有効なデータと無効なデータの両方で、ビジネスユーザー(Owner)によるレビューの提出をカバーし、スマートコントラクトが定義済みの条件に基づいて正しく受け入れたり拒否したりすることを確認します。\n・Scenariosは、有効なレビュー投稿後に評判のスコアを正確に更新し、正しい検証ロジックを使用してレビューを解除するスマートな契約の能力を検証します。\n・テストスイートには、認証されたユーザー(PubKeyHashによって識別)のみがレビューを償還し、契約が不正なアドレスによる試みを拒否することを確認するためのチェックが含まれています。\n・malformedデータを送信しようとすると、契約の堅牢性を検証し、バリデータスクリプトが正しく識別し、そのような投稿を拒否することを確認します。\n.・複数のレビューを扱い、同じ予約のダブルレビューを防止し、レビュー償還時に出力ダタムの正しさを確保するなどのエッジケースを探ります。\n\n検査事例報告 CardanoRnR\nリンク : https://github.com/AIQUANT-Tech/CardanoRnR/tree"
+    },
+    {
+      "no": 3,
+      "promise": "配達可能/出力:\n・アプリケーションとのスマートコントラクト統合\n・システムAPIの見直し\n・ホテル予約システムとの連携\n・テストレポート",
+      "criteria": "・テストネット上でブロックチェーンと一体化したフル・ワーキング・プロトタイプ\n・Review System API は、公開用として使用可能です。\n・ワンホテル予約システムと連携\n・テストレポートをご覧いただけます",
+      "report": "A. 出力:アプリケーションとスマートコントラクトの統合\n受諾の基準:完全な働くプロトタイプはtestnetのblockchainと統合しました\n証拠:\nエンドユーザー URL - https://rnr.cloud10hospitality.com/app/user/KimptonAluna\nPrototype - ブロックチェーンプレプロド統合の証拠:\nスクリプトアドレス : addr test1wrkh08l6jwy4es6kahdv4k2layyr2z2hpc3dszqf4x8zpqwukaf0\nステート スレッド トークン: ポリシー a9c7f941cd19500c7387297e68279301829d6c251de23b8e0c21665b (RnrStateToken)\n創意工夫:https://preprod.cardanoscan.io/transaction/d345a7c5473b6d872d2c5de716b823b9fb1d1a4920b0497543715816088a6de2\nレビューtxs: https://preprod.cardanoscan.io/transaction/da0beee83272b3ef2a420a43c05fd588876fb7953639aedf1dcdcd6c18f53c\nhttps://preprod.cardanoscan.io/transaction/005c38b7bcb3d34bc55d030bc9dfa0c2748fcf232268a4f34c047f2580739dee\n現在の状態のtx: https://preprod.cardanoscan.io/transaction/cfbdab943f5c7e34dc78970f80825b814c764677acba41891563e1904\n(15件のレビューは、ステートスレッドを介して1次以外のものに適用されます。 現在の状態のUTXOは、\nRnrStateTokenと評判 48.)\nソースから再現可能: ブランチメインでは、 `aiken build` はミントハッシュを生成します\nefb17404568789f0ac1a529559ca156d14dbcbdc2e35499e5ee5c60e と ハッシュ\n751f6c5c5463efc35ccc61f5ee31a771647f0d9c0c90ab39bd98e18d; genesis UTxOを適用\ncc1225e9b569979aebac09f7a1849174f17b96dc3e8f34b7b7b1e76810b546fd68#1は正確にオンチェーンポリシーを収めます\na9c7f941cd19500c7387297e68279301829d6c251de23b8e0c21665b とスクリプトアドレス addr test1wrkh08l6jwy4es6kahdv4k2layyr2z2hpc3dszqf4x8zpqwukaf0 を実行します。 `aiken check` を実行 19/19 ユニットテスト.\nワーキングプロトタイプユーザー URL への公開アクセス可能なリンク - https://rnr.cloud10hospitality.com/app/user/KimptonAluna\nビジネスユーザー URL - https://rnr.cloud10hospitality.com/app/login\nユーザー名 - kimptom@gmail.com\nパスワード – 123456\nテスト カードの細部:\nビザ:4100 2800 0000 1007\n(CVVV:ランダム、Exp:将来の日付)\n「グルガオン」を使用してホテルを検索します。\n将来の日付を使用する\nホテルの予約にログインするために、以下の資格を使用する"
+    }
+  ]
+}

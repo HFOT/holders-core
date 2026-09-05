@@ -1,0 +1,72 @@
+{
+  "title": "Mesh: Hydra Tools for administrating & interacting with Hydra Heads",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40000,
+      "promise": "・Hydra Provider Integration: Establish a connection with a Hydra node.\n・Base Functionality: Develop foundational functions to support Hydra processes across its key phases: Open, Commit, Close, and Fanout.",
+      "criteria": "・Successfully completed integration of the Hydra Provider with a Hydra node.\n・Successfully completed implementation of the base functions for the Hydra process phases.",
+      "report": "Milestone Report\n\nHey there Milestone Reviewer, voters and everyone following the progress of this proposal.\nWe are glad to report on the successful completion of the first milestone of this proposal.\nThe acceptance criteria of this milestone have been stated as:\n・1) Hydra Provider Integration: Establish a connection with a Hydra node.\n・2) Base Functionality: Develop foundational functions to support Hydra processes across its key phases: Open, Commit, Close, and Fanout.\n\nAnd here is the evidence of Milestone completion, including all relevant links to assess and audit our work.\n1) Hydra Provider Integration: Establish a connection with a Hydra node.\n・The entire Hydra package is done and is available at https://github.com/MeshJS/mesh/tree/main/packages/hydra . \n・When published, users can install it using `npm install @meshsdk/hydra`. https://www.npmjs.com/package/@meshsdk/hydra \n・The Hydra Provider is available at https://github.com/MeshJS/mesh/blob/main/packages/hydra/src/hydra-provider.ts\n\n2) Base Functionality: Develop foundational functions to support Hydra processes\n・All types are defined in https://github.com/MeshJS/mesh/tree/main/packages/hydra/src/types \n・All functions \"shapes\" and inputs have been defined in https://github.com/MeshJS/mesh/blob/main/packages/hydra/src/hydra-provider.ts \n・Public links to the code on mesh github repository at https://github.com/MeshJS/mesh/tree/main/packages/hydra \n\nWe hope that all sources satisfy your assessment and audit requirements.\nYours\nMesh Team :)",
+      "kinds": [
+        "code"
+      ],
+      "links": 12
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 40000,
+      "promise": "The second milestone covers further functionality, including:\n・Hydra Provider to fully communicate with a Hydra node\n\n> Enhancement of the Hydra Provider, ensuring comprehensive support for all required Hydra node interactions (e.g., sending/receiving messages, state tracking).\n・Reference to Hydra API docs\n\n> Linking and referencing Hydra API documentation, so developers can readily understand and work with the Hydra protocols.",
+      "criteria": "Matching the milestone deliverables, the acceptance criteria therefore include:\n・Completed development: Fully functional Hydra Provider\n\n> Provider handles messages/commands to and from the node with logging or error reporting in place.\n・Completed documentation: Reference to Hydra API\n\n> Project docs or code comments explicitly point to Hydra’s official API for easy cross-referencing.",
+      "report": "Hey there Milestone Reviewer, voters and everyone following the progress of this proposal.\nSo, this one went quicker than expected and we are glad to report on the successful completion of the second milestone of this proposal.\nHere the completed milestone deliverables:\nFully functional Hydra Provider\n・We successfully deployed the fully functional Hydra provider, continuing the efforts as achieved at Milestone 1, find the corresponding updated code of Mesh Hydra Provider at:\n・https://github.com/MeshJS/mesh/blob/main/packages/hydra/src/hydra-provider.ts \n\nCompleted documentation: Reference to Hydra API: \n・The documentation reference to the Hydra API is successfully completed and combined with clear usage instructions and an end-to-end demo which can be found and used at this source:\n・https://meshjs.dev/providers/hydra\n\nPublic URL to updated GitHub repository: \n・The github repo hosting the code has been updated at the main hydra package on mesh main repository at:\n・https://github.com/MeshJS/mesh/tree/main/packages/hydra\n\nWe hope to fulfil all requirements in order to successfully close this Milestone.",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40000,
+      "promise": "The third milestone covers further enhancements, including:\n・Web page displaying balance in a head and can construct & sign a transaction using a CIP-30 connected wallet\n\n> Development of a user interface that shows the current balance in a Hydra head and enables users to create and sign transactions with a CIP-30 compatible wallet (e.g., Eternl).\n・TxBuilder can be initiated for hydra constants\n\n> Implementation of a transaction builder specifically tailored to Hydra’s parameters, ensuring that transaction construction aligns with Hydra’s unique rules.",
+      "criteria": "Matching the milestone deliverables, the acceptance criteria therefore include:\n・Completed UI: Balance display & transaction signing\n\n> A working web interface that reflects the real-time head balance and supports CIP-30 wallet transaction signing.\n・Completed TxBuilder integration\n\n> TxBuilder initialized with Hydra-specific parameters and capable of constructing valid transactions without errors.",
+      "report": "Hello Milestone Reviewers and anyone who is following the progress of this proposal.\nHere we are, reporting on the successful completion of Milestone 3.\n1) Deployed or locally accessible demo\n\nAvailable instructions to launch a local/demo web page displaying a Hydra head balance with a CIP-30 wallet integration flow\nThe demo with instructions to launch hydra on webpage with hydra head and get balance, and sign transaction using CIP 30 wallet has been completed and can be found at\n・https://meshjs.dev/hydra/tutorial\n\n2) Screenshots or short video\n\nEvidence of the UI in use, including signing a transaction and showing the final transaction details in the Hydra head\nA completed a video that show how you can connect to hydra node, sign transactions and submit to hydra\n・https://www.youtube.com/watch?v=yJPCQqoET90\n\n3) Updated documentation detailing TxBuilder usage\n\nStep-by-step instructions in the repository on how to generate and sign transactions using the TxBuilder\nboth https://meshjs.dev/hydra/tutorial and https://meshjs.dev/apis/txbuilder/basics shows step-by-step instructions on how to generate and sign transactions using the TxBuilder and submit to hydra head.\nAnd thats it for this milestone, we hope that all provided evidence satisfies the Milestone Reviewers assessments.\nWe are now working on the completion of the next milestone at Milestone 4.",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "9",
+      "cost": 40000,
+      "promise": "The 4th milestone covers further enhancements, including:\n・Working Hydra Asteria (GitHub Repository) running with Mesh\n\n> Integration of Asteria to ensure that a Hydra head runs successfully within the Mesh environment, demonstrating end-to-end functionality.",
+      "criteria": "Matching the milestone deliverables, the acceptance criteria therefore include:\n・Completed environment: Asteria running with Mesh\n\n> Successful demonstration or test environment where Asteria is launched, a head is opened, and basic operations are verified within Mesh.",
+      "report": "# Milestone 4 Report\nHello Milestone reviewers and anyone else who is following the process of this proposal.\nHere we are, submitting the successful close out of this milestone.\n﻿\nThe Completion criteria for this milestone has been stated as:\n- GitHub repository updates for Asteria-Mesh integration\n> Commits and code merges showing how Asteria interacts with the Mesh framework, including necessary configuration or scripts.\n- Demonstration or logs of head operations\n> Screenshots, command outputs, or short video showing how a head is opened, used, and closed in the integrated environment.\n- Setup guide or instructions\n> Documentation describing how to replicate the Asteria-Mesh environment, including prerequisites and step-by-step installation/configuration.\n\nAnd here the respective deliverables:\n\n### GitHub repository updates for Asteria-Mesh integration\nThe open source github repository on which we host the project code has been updated and can be found at our Mesh github on:\n・https://github.com/MeshJS/asteria \n\nThe respective Pull Request history can be found at:\n・https://github.com/MeshJS/asteria/pulls?q=is%3Apr+is%3Aclosed \n\n### Demonstration or logs of head operations\nHere screenshot ot head log examples\n・https://github.com/MeshJS/asteria?tab=readme-ov-file#head-logs-examples \n\n### Setup guide or instructions\nInitial guides and instructions on how to build/use Mesh-Asteria have been completed and can be accessed via:\n・https://hydra-asteria.vercel.app/how-to-play \n\nThe full fletched documentation for Mesh Hydra will be provided as planned in the next Milestone.\n\n### Else \nWe added an Apache 2.0 open source license on the Mesh-asteria github repository, the respective license can be found at:\n・https://github.com/MeshJS/asteria?tab=Apache-2.0-1-ov-file#readme \n\nAnd that's it, short and precise.\n\nSee you at the next Milestone",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 10
+    },
+    {
+      "no": 5,
+      "month": "10",
+      "cost": 40000,
+      "promise": "The final milestone delivers on the standard close out requirements and a updated docs\n・Final close-out report\n\n>create and submit the final close out report according to catalyst guidelines at: https://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv\n・Final close-out video\n\n>create and submit the final close out video according to catalyst guidelines at: https://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv\n・Updated meshjs docs for anyone to start and build on Hydra\n\n> Revisions to the Mesh.js documentation, offering guidance for developers who wish to integrate or extend Hydra functionality in their own projects.",
+      "criteria": "Matching the milestone deliverables, the acceptance criteria therefore include:\n・Completed final close-out report\n\n> completed close out report according to catalyst guidelines at: https://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv\n・Completed final close-out video\n\n> completed close out video according to catalyst guidelines at: https://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv\n・Completed doc updates: meshjs for Hydra\n\n> Mesh.js document",
+      "report": "Milestone 5 Report\n\nHey there everyone following the progression of this proposal.\nHere we are, reporting the successful completion of our fifth and final milestone of the proposal and officially closing out the report. We hope that all provided information satisfies the reviewers and administrators.\n\nMilestone 5 deliverables have been stated as:\n\nCompleted final close-out report\ncompleted close out report according to catalyst guidelines \nCompleted final close-out video\ncompleted close out video according to catalyst guidelines \nCompleted doc updates: meshjs for Hydra\nMesh.js documentation includes clear instructions on how to deploy, configure, and extend Hydra heads.\n\nAnd here the respective deliverables:\n\nClose out Report\n\nThe close our report has been completed and is accessible via:\n・https://drive.google.com/file/d/1poTznIj9jjrNQRtUDQGGkVO6Rrg-CXlP/view?usp=sharing \n\nClose Out Video:\n\nThe close out video has been completed and can be watched on our Youtube at:\n・https://youtu.be/9t1AaHwqZPI \n\nCompleted doc updates: meshjs for Hydra\n\nThe respective documents have been completed and updated.\nThe respective Pull Request which introduced the new docs had been submitted and merged:\n・https://github.com/MeshJS/mimir/pull/52 \n\nAll docs are now integrated into Mesh general docs at:\n・https://meshjs.dev/hydra \n\nNice feature, we also embedded the Hydra docs in our new Mesh rag-pipeline, allowing devs to use LLMs and to chat with docs, making it easier to understand and use the stack. You can chat with the Hydra Docs at our official website on https://meshjs.dev by selecting the “ask-ai” feature at the header menu\n\nAnd thats it 🙂\nThanks for everyone who participated and helped to get the proposal from idea to reality, voters, reviewers, admins and devs, from which everyone played their part in the successful ideation, design and execution of this proposal.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 10,
+      "cut": true
+    }
+  ]
+}

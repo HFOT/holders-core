@@ -1,0 +1,30 @@
+{
+  "title": "Kaa by Snek: Your Friendly AI Companion for Onboarding Masses and Enhancing Community Engagement",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 74000,
+      "promise": "・A website that allows users to upload their project-specific information.\n・User authentication flow (e.g using Discord login)\n・User interface for file management and interaction.",
+      "criteria": "・The website must support user registration, and login.\n・Users can upload and manage their project information.\n・The website should be compatible with major browsers and mobile-responsive.",
+      "report": "M1 link:\nhttps://m1.kaaai.io/\n\nLink to walkthrough video\nhttps://kaaai.nyc3.digitaloceanspaces.com/kaaai-m1-walkthrough.mov",
+      "kinds": [
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 90000,
+      "promise": "・A data pipeline that processes uploaded information from the project management platform.\n・Database setup for storing the embeddings (the project-specific data) for use by AI model.\n・Agentic workflow allowing for querying of Cardano on-chain data.\n・Integration of the retrieval system with the AI model.\n・API that exposes functionality to query the chatbot, allowing authorized systems to interact with the service.",
+      "criteria": "Data Pipeline:\n1. Embedding Generation:\n - 95% or higher success rate in generating embeddings from uploaded documents\n - Support for 3 different file types (DOCX, TXT, PDF)\n - Ability to process documents up to 5MB in size\n\n2. Storage and Retrieval:\n - 95% uptime for the embedding storage system\n - Retrieval speed of relevant embeddings under 1.5 seconds for 99% of queries\n - Ability to handle concurrent requests (at least 10 simultaneous queries)\n\n3. Performance Benchmarks:\n - Document processing speed: at least 1 page per 1 seconds\n - Embedding generation: at least 50 embeddings per minute",
+      "report": "Data Pipeline: \n1- Embedding Generation:\n・95% or higher success rate in generating embeddings from uploaded documents (https://snek-2.gitbook.io/kaa-m2-submission#id-3.4-embedding-generation-stage)\n・Support for 3 different file types (DOCX, TXT, PDF) (https://snek-2.gitbook.io/kaa-m2-submission#id-3.2-document-loading-stage)\n・Ability to process documents up to 5MB in size (https://snek-2.gitbook.io/kaa-m2-submission#id-3.6-performance-scaling)\n\n2- Storage and Retrieval:\n・95% uptime for the embedding storage system (https://snek-2.gitbook.io/kaa-m2-submission#id-3.5-database-operations-stage)\n・Retrieval speed of relevant embeddings under 1.5 seconds for 99% of queries (https://snek-2.gitbook.io/kaa-m2-submission#id-3.5-database-operations-stage)\n・Ability to handle concurrent requests (at least 10 simultaneous queries) (https://snek-2.gitbook.io/kaa-m2-submission#id-3.7-data-pipeline-performance-under-load)\n\n3- Performance Benchmarks:\n・Document processing speed: at least 1 page per 1 seconds (https://snek-2.gitbook.io/kaa-m2-submission#id-3.2-document-loading-stage)\n・Embedding generation: at least 50 embeddings per minute (https://snek-2.gitbook.io/kaa-m2-submission#id-3.4-embedding-generation-stage)\n・System maintains performance with up to 500MB of total uploaded data (https://snek-2.gitbook.io/kaa-m2-submission#id-3.3-semantic-chunking-stage)\n\n Chatbot Service: \n1- API Functionality: (https://snek-2.gitbook.io/kaa-m2-submission#id-4.1.-chatbot-service-performance)\n・Successful Q&A integration with Discord bot (tested through simulated Discord queries)\n\n2- Answer Quality: (https://snek-2.gitbook.io/kaa-m2-submission#id-4.2-response-quality)\n・Relevance score of 7/10 or higher for 80% of responses.\n・Correct handling of out-of-scope queries (graceful \"I don't know\" responses if project context can't be found)\n\n3- Cardano Integration: (https://snek-2.gitbook.io/kaa-m2-submission#id-4.3-cardano-integration)\n・Successful retrieval of basic on-chain data (e.g., transaction hi",
+      "kinds": [
+        "doc"
+      ],
+      "links": 34,
+      "cut": true
+    }
+  ]
+}

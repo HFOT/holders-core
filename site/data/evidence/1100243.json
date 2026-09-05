@@ -1,0 +1,86 @@
+{
+  "title": "Real World Asset Tokenization Minting Capabilities in NMKR Studio",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Implementation of Templates for various asset types, simplifying the tokenization process to mint RWAs in NMKR Studio.\n・Design templates for various real-world assets.\n・Integrate templates seamlessly into NMKR Studio's interface.\n・Enable customization options for users.",
+      "criteria": "The acceptance Criteria is, that it is possible to issue a standardized Real World Asset through NMKR Studio which utilizes design tempaltes for various real-world assets, these templates are seamlessly integrated into NMKR Studio and it enables customization options for users.",
+      "report": "Milestone Video: https://youtu.be/Q1D008yVKkw?feature=shared\nLive Feature: https://studio.nmkr.io/createnewprojectassistant (usable with NMKR Studio Account) technically not required in the Evidence of Milestone Completion but already live, so please feel free to try it out.",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "20",
+      "cost": 225000,
+      "promise": "Redesign and improvement of the first iterated template\n・Identify Areas for Enhancement\n・Update Design and Functionality\n・Test and Iterate Based on internal Feedback\n・Prepare user Documentation for templates",
+      "criteria": "It is possible for users to issue a Real World Asset via selecting a template in the NMKR Studio UI with the improvement and redesign of the first interated template.",
+      "report": "Proof of Achievement Report\nM2: UI Enhancement and Redesign Milestone - RWA Tokenisation\nSummary\nThis milestone successfully delivered the redesign and improvement of the first iterated RWA tokenisation template system, transforming it from a proof-of-concept implementation into a production-ready feature fully integrated within NMKR Studio. The enhanced system now enables users to issue Real World Assets via an intuitive template selection interface with comprehensive metadata fields tailored to specific RWA use cases.\nMilestone Outputs Delivered\nIdentify Areas for Enhancement\nThrough comprehensive analysis of the M1 implementation and research of RWA projects launched on NMKR Studio, we identified key areas requiring improvement:\n・Template metadata fields lacked real-world applicability\n・User interface was limited to non-public reference implementation\n・Missing preview functionality hindered template selection\n・Backend integration was incomplete for production use\n・Documentation was insufficient for user adoption\n\nUpdate Design and Functionality\nMajor Design Updates:\n・Full NMKR Studio Integration: Migrated from standalone proof-of-concept to complete UI integration\n・Metadata Preview System: Implemented template preview functionality accessible via button on each template, which improved user flow for template discovery and selection\n・Production-Ready Styling:Slightly enhanced visual design and user experience elements\n\nFunctionality Enhancements:\n・Backend Communication Layer: Developed robust backend integration ensuring seamless communication between template system and project creation\n・NFT Minting Integration: Multiple different templates are now fully functional during the minting process for the assets in a project, with possibility for specific customization of single assets\n・Template Accessibility: Guaranteed template availability throughout the project lifecycle, can be accessed via Edit Project.\n\nTest and Iterate Based on Internal Feedback\nKey Feedback Re",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "21",
+      "cost": 200000,
+      "promise": "Integration of a fractionalization smart contract into NMKR Studio.\nThis requires the preparation of code and protocols to seamlessly integrate the fractionalization smart contract functionality into NMKR Studio.\n\nCan you please break down further the outputs that will be delivered as part of the fractionalization smart contract development and integration?\nNo, at this point I am not able to provide this information as it will be first available once we have the integration accomplished.",
+      "criteria": "There is a fractionalization Smart Contract integrated in NMKR Studio as outlined in the outputs.",
+      "report": "As outlined in this milestone, there is a smart contract accessible from within NMKR Studio to fractionalize digital assets such as RWA to unlock liquidity in form of fraction tokens of said asset. \nThis application required a dedicated webinterface, means it can also be accessed directly under slice.nmkr.io\nThe smart contract and application works for testnet and mainnet. \n\nThe video with some explanations can be found here: https://youtu.be/-Z5KTRKEZ0U",
+      "kinds": [
+        "video"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "22",
+      "cost": 100000,
+      "promise": "Launching the first two tokenized RWAs with templatized RWA integration.\n・Select RWA: Choose the asset for tokenization.\n・Tokenize Asset: Use templatized RWA integration.\n・Prepare for Sale: Set up infrastructure.\n・Launch Sale: Initiate tokenized asset sale.\n・Monitor Performance: Track sale metrics.",
+      "criteria": "Has at least 2 Real World Asset been put up for sale using the templatized services in NMKR Studio?",
+      "report": "Hello there,\nplease find the video with a workflow demonstration of the current RWA templatetized process including how to put it up for sale, adjust metadata etc. here: https://youtu.be/TUIZVGFXwxU\nWe decided to launch the sale as a recurring X.com Campaign as this has proven to be the best approach for single assets during these very \"low volume times\". Will adjust accordingly depending on sales success.\nYou can find the first campaign thread here: https://x.com/nmkr_io/status/2014742550901354834",
+      "kinds": [
+        "social",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "23",
+      "cost": 37500,
+      "promise": "Validate seamless integration of real-world asset tokenization capabilities in NMKR Studio.\n・Review Implementation\n・Assess Functionality of NMKR Studio for RWAs\n・Analyze Performance of Tokenized RWA\n・Identify Challenges and Resolutions\n・Document Lessons Learned",
+      "criteria": "There is a document which covers the evaluation and feedback of the RWA capability integration into NMKR Studio with the following key points:\n・Review Implementation\n・Assess Functionality of NMKR Studio for RWAs\n・Analyze Performance of Tokenized RWA\n・Identify Challenges and Resolutions\n・Document Lessons Learned",
+      "report": "Dear reviewers,\nPlease find the Milestone 5 Proof of Achievement for proposal 1100243 (Real World Asset Tokenization Minting Capabilities in NMKR Studio).\nThe report covers all five required acceptance criteria: \nReview of Implementation (Section 2), Functionality Assessment (Section 3), Performance Analysis (Section 4), Challenges and Resolutions (Section 5), and Lessons Learned (Section 6).\n\nKey highlights:\n- Two certified diamonds tokenized as full-ownership RWA NFTs using the Gemstone template\n- Both assets publicly launched with direct purchase links\n- Platform documentation updated\n- No scope deviations; all deliverables completed on schedule\n\nFull report:\nhttps://docs.google.com/document/d/1WSi8jKhe_i7zYHkKahxMF9RVeXZ_fpV57z376diX758/edit?usp=sharing\n\nSupporting evidence (also listed in Section 7 of the report):\n- Documentation: https://docs.nmkr.io/nmkr-studio/project/create/create-templated-projects\n- Public launch: https://x.com/nmkr_io/status/2014742550901354834 / https://x.com/nmkr_io/status/2015739744030691481\n- M4 Video Demo: https://www.youtube.com/watch?v=TUIZVGFXwxU\n\nNote: The diamond RWAs are mint-ready in NMKR Studio and will appear on-chain under Policy ID 68080e0f5a63f253cd98d8108c2a3d3620177d6d36daa4b7abfe6c40 once the first sale occurs.\n\nEdit for Reviewer:\nThe NFTs have a certificate of ownership alongside the GIA certifications of authenticity. The physical item can be claimed at LCX, which we are partners with and that act as a legal and insured custodian. Please check all the details here in our docs: https://docs.nmkr.io/nmkr-playground/how-to-claim-your-diamond\n\nThank you",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 6,
+      "month": "24",
+      "cost": 112500,
+      "promise": "-Public launch of the templatized tokenization via NMKR Studio\n・Public Announcement: Launch templatized tokenization via NMKR Studio.\n・Accessibility: Ensure feature availability for all NMKR Studio users.\n・User Guidance: Provide clear instructions for feature utilization.\n・Promotion: Promote launch to encourage adoption.\n\n-Closing report and closing video\n\nThe deliverables generally match the proposal, however, in the proposal the project is described as needing 8 months to complete. Yet from the SoM we can now see that it’s expected to last only 6. Can you please explain why is this the case? \nIt is not able to select any later date on this plaform.",
+      "criteria": "There are templatized Real World Asset Minting capabilities available to the public.\nThere is a closing report and closing video.",
+      "report": "Hello Dear reviewers,\nplease find the Close-Out Report here: https://docs.google.com/document/d/1278cn03zE2q6Z1S3iS0tWD8vxx66n2vacugX80qNnaQ/edit?usp=sharing \nAnd the Close-Out-Video here: https://youtu.be/p9c1wP0Z5K8\nThank you and have a great time!\n\nUPDATE:\nA) I made the video public, not unlisted on YouTube. Sorry for that.\nB) There is no link to the feature. It is a feature in the NMKR Studio application as described. When you create a project from the Dashboard, there is a button that says \"Create Project with Template\" besides the regular button \"Create Project\". This can be seen and is described in Detail in the Documentation; https://docs.nmkr.io/nmkr-studio/project/create/create-templated-projects and also the videos I uploaded about the milestone and you can see it in the close-out video as well.\nThanks and best regards!",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

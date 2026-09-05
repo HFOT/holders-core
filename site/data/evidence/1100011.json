@@ -1,0 +1,56 @@
+{
+  "title": "Account NFT Smart-contract - Mint Verifiably Unique User Accounts that store data on-chain",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 42000,
+      "promise": "In this milestone we’ll submit a technical specification of how the smart-contract works. This smart contract will allow users to mint an NFT for ADA and store user data in datums on chain.",
+      "criteria": "This milestone should be accepted given that we provide a technical specification for the smart-contract.",
+      "report": "This is the link to the technical specification for the smart-contract:\nhttps://drive.google.com/file/d/1k964nGWC1q1N1e7xMLykyM9w0UTYUvOV/view?usp=sharing\n\nThis link shows exactly how the smart-contract works, and how users can benefit from this smart-contract.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 40000,
+      "promise": "This milestone will output a working smart-contract.\nThis smart-contract will allow an address for a pre-defined ADA amount to mint account NFTs from the smart-contract that has user-defined datums. These datums are held inside the smart-contract using CIP-68.",
+      "criteria": "This milestone should be accepted given that we output a working smart-contract, and on-chain evidence of the smart-contract.\nThis smart-contract must allow an address to mint account NFTs from the smart-contract that has user-defined datums. These datums are held inside the smart-contract using CIP-68.",
+      "report": "For this milestone we've created a new Stoa smart-contract that allows users to mint Profile NFTs on Cardano's preview network.\nYou can view the smart-contract creation transaction here: \nhttps://preview.cexplorer.io/tx/07ea3aca28d313f8fe4fc208922fdede953111a3a814d838d292dff7a2755fb7\n\nYou can see what a minting transaction looks like here: https://preview.cardanoscan.io/transaction/2c2e56d1888e1caac18297c106e98761bfc8f2296c1598740bfa3132d8a1b3a3\n\nIn that transaction the NFT VAULT3 was minted. You can see that it's coming from a script.\n\nWe've also created a video minting one of these Profile NFTs using our stylized front-end. When the NFT is being created, the user types in the name they want to reserve. The smart-contract will verify that this name can never be minted again, it also stores various data in the smart-contracts datums.\nYou can view the minting video on YouTube here:\nhttps://youtu.be/XUF7ND-PHfw",
+      "kinds": [
+        "chain",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "This milestone will test will test the smart-contract will real users on Cardano’s testnet. This will allow us to address any bugs that arise with the smart-contract.",
+      "criteria": "This milestone should be accepted given that we have 50 real users mint NFTs on Cardano’s preview network, and collect feedback from users.",
+      "report": "For this milestone we've launched the smart-contract on Cardano's preview network so real users could provide us with feedback. This was a great opportunity for us to find any bugs, and make direct improvements for those bugs.\nOver 1,000 users have already minted Profile NFTs using our front-end. This was invaluable data to improve the minting experience. We've gathered 50 transactions, with the token names they've minted into a google sheet.\nMinting transactions: https://docs.google.com/spreadsheets/d/1l6LGSjufrFf7Eoo2nUI_PoFOrKAYjbov86tuSBXHHBQ/edit?usp=sharing\nWe've received a tremendous amount of feedback, thousands of messages in our Discord server. You can view some of this feedback by joining here: https://discord.gg/atriumlab\nI've also compiled some Discord messages in image format in case you do not already have a Discord account to view the feedback:\nhttps://drive.google.com/drive/folders/1-81JPc9ZjanOF_jC0rwC27KQ2mcAxWgl?usp=sharing\nA reviewer requested that we share the bug form that's linked on our site. I removed the emails to protect peoples data. Please keep in mind this bug form is for all features on our site. Most of the bug submits for this milestone will be at the bottom.\nhttps://docs.google.com/spreadsheets/d/100RAdFAmDjeO3WdRQg0awmmslQAUkE4xZ6XwTQyz9hA/edit?usp=sharing",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 28000,
+      "promise": "This milestone will open-source the smart-contract code in a github for anyone to review/learn from. We'll also create documentation that explains how this smart-contract works with the value proposition for users. We'll also create a close-out report, and video.",
+      "criteria": "This milestone should be accepted given that we open-source the smart-contract, and create documentation on the smart-contracts functionality. We will also need to create a close-out report, and video for this milestone to be accepted.",
+      "report": "Dear Catalyst reviewers, thank you for pointing out the missed template for the video report. Please find the links to the proper reports below:\nFinal report: https://drive.google.com/file/d/1bP_GuBJbhde4l9udMUgxxCbsiEblN6D7/view?usp=drive_link\nFinal video report: https://youtu.be/vUjtIVlCkHA",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "評判の良いCardano監査会社と契約の設計レビューを行い、構造上の問題がないことを確認してください。 また、デザインを文書化することで書かれたレポートです.",
+      "criteria": "監査会社からの報告は、プロトコル(実装方法の妥当性)のコア設計について、その懸念事項を詳しく説明し、当社のチームが実施する次の手順について説明します.",
+      "report": "本プロジェクトのマイルストーンを少し遅れて提出し、パブリックホワイトペーパーを既に公開し、Testnetの新規契約を立ち上げました。 ホワイトペーパーは、以前の段階のミディアムブログがカバーしたものの、はるかに高い忠実度バージョンとして表示する必要があります。 私たちは、このマイルストーンの意図を満足させる、その公開と広報性を信じています。\nお知らせ:https://x.com/SundaeSwap/status/1757807288151085231?s=20\nホワイトペーパーリンク: https://t.co/46WTxC6HV5\n発表:https://discord.com/channels/830939534174453800/830948250298875905/1207366153501020171"
+    },
+    {
+      "no": 2,
+      "promise": "デザインレビューで識別されたスマートコントラクトへのコード更新",
+      "criteria": "設計レビューで特定された問題は、当社の監査人の評価に不一致させる理由のために提供される、または明確な文書のいずれかのアドレスが記載されています.",
+      "report": "当社は、TXパイプの設計監査の対応で行われた初期変更の一部について、この中期投稿を承認しました。 https://sundaeswap-finance.medium.com/enhancing-sundaeswap-how-we-leveraged-txpipes-audit-insights-for-smarter-contract-design-16c49203f37c\nさらに、メインネット起動の準備完了(注記:監査が完了し、契約がメインネット上に表示されます)として、セキュリティ監査に応答して数ヶ月以上行われたすべてのアクションの完全な変更履歴を見ることができます。\nhttps://github.com/SundaeSwap-finance/sundae-contracts/actions"
+    },
+    {
+      "no": 3,
+      "promise": "評判の良いCardano監査会社(以前と同じもの、潜在的に異なる)とのエンゲージメントにより、契約コードの最終バージョンの完全な監査を行います.",
+      "criteria": "スマートコントラクトの設計の実装について、どんな懸念や提案を詳述する監査会社からの詳細なレポート.",
+      "report": "監査報告:https://cdn.sundaeswap.finance/audits/sundae-v3.pdf\nTwitter投稿: https://x.com/SundaeSwap/status/1790852782955573748"
+    },
+    {
+      "no": 4,
+      "promise": "カルダノ・テストネットの1つに関する契約の大規模なテストで、メインネットの展開に適した適合性を実証しています.",
+      "criteria": "大規模なストレステスト(10,000のトランザクションで5つのプール)は、テストネットで、契約に対する生産の信頼性を実証します.",
+      "report": "ストレステストレポート: https://sundaeswap-finance.medium.com/report-stress-testing-sundaeswaps-new-smart-contracts-on-cardano-testnet-99369a06f1d7\nTwitter投稿: https://x.com/SundaeSwap/status/1791111034020999260\n参考: https://discord.com/channels/830939534174453800/830948250298875905/1240669875634962502"
+    },
+    {
+      "no": 5,
+      "promise": "監査されたスマートコントラクトのメインネット展開、契約のオープンソース、および以前に生成されたレポートのリリース。 最終プロジェクトレポートとクローズアウトビデオ。 ソーシャルメディアチャネルに関する公開発表.",
+      "criteria": "最終的なスクリプトハッシュは、監査レポートに記載されたものと一致し、契約および設計文書はオープンソースでなければなりません.",
+      "report": "・正しい最終報告書、正しいビデオ、追加リンクで退会\n\n[GitHubリポジトリ] https://github.com/SundaeSwap-finance/sundae-contracts\n*Repo活動は、より正式な初期報告書のリューで、監査チームのプロセスからのフィードバックを反映します\n[ホワイトペーパー] https://cdn.sundaeswap.finance/SundaeV3.pdf\n※設計の初期文書を表します。\n[媒体投稿] https://medium.com/@sundaeswap-finance/enhancing-sundaeswap-how-we-leveraged-txpipes-audit-insights-for-smarter-contract-design-16c49203f37c\n[監査報告] https://cdn.sundaeswap.finance/audits/sundae-v3.pdf\n【最終報告書】 https://drive.google.com/file/d/1EeUqg VM28tZ-4tSqGKBm6zexOkhQV7f/view?usp=sharing\n[動画を閉じる] https://www.youtube.com/watch?v=QXSlLqF1ENM\n[Twitter投稿] https://x.com/SundaeSwap/status/1803167308510274042\n[郵便番号] https://discord.com/channels/830939534174453800/830948250298875905/125272651198\n[最終スクリプトハッシュ]\n設定(spend & mint) 6d9d7acac59a4469ec52bb207106167c5cbfa689008ffa6ee92acc50\nプール(spend & mint) e0302560ced2fdcbfcb2602697df970cd0d6a38f94b32703f51c312b\nプール ステーキ 4399813dad91bb78a5eb17c26ff50852bc75d3fa7b6e9ae87232ccc1\n出金を管理する e0fccbbfb75923bff6dac5f23805dcf6cecfaae8a3a6d3e474ee670\n注文fa6a58bbe2d0ff05534431c8e2f0ef2cbdc1602a8456e4b13c8f3077\n注文撤退99e5aacf401fed0eb0e2993d72d423947f42342e8f848353d03efe61\nオラクル(spend & mint) f50153654bd0e167563cd0bbbff1b73c40157e53408a0ef517e67a5d"
+    }
+  ]
+}

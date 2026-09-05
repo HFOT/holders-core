@@ -1,0 +1,73 @@
+{
+  "title": "Cardano explorer improvements (Cexplorer.io)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 58600,
+      "promise": "We will provide longterm support for Cexplorer.io. This means:\n・maintenance\n・support of latest db-sync, cardano-node and other used libs\n・bugfixes\n・community support",
+      "criteria": "・The website is still functioning well, and its infrastructure is up to date with the Cardano tool chain, evidence of ongoing work can be seen through the website evolution.\n・We communicated on important changes through our social media and have actively engaged with the community",
+      "report": "・Website is working well and up to date - https://cexplorer.io\n・searching upgrade - \"pick a time, and see the block that was minted closest to that time\" (example)\n・cip 68 (100+200 support); https://twitter.com/cexplorer_io/status/1711662359792562201 + example\n・punnycodes support; https://twitter.com/cexplorer_io/status/1711702169806618827\n・migration from \"old nft standard\" to a new standard; example\n・\"search\" by name now support cip 68 (222) tokens; example\n・added tx / reference inputs (if available); example\n・devlog: https://cexplorer.io/devlog",
+      "kinds": [
+        "chain",
+        "social"
+      ],
+      "links": 12
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 59580,
+      "promise": "features from voltaire available on testnet enviroments of cexplorer\nwe will make an effort to display as much as possible and what makes sense to us - then, based on community feedback and their suggestions, we will expand other features as appropriate",
+      "criteria": "live voltaire related features on preview.cexplorer.io and/or preprod.cexplorer.io and/or sancho etc. subdomain.",
+      "report": "・Sanchonet + db-sync sancho 2.1.0 running on test server\n・First sancho implementation is here: https://sancho.cexplorer.io\n・Governance detail (example)\n・Dreps page (incl. drep detail)\n・Tx governance tab\n・Pool governance tab\n・Recent proposals\n・Recent voting\n・Recent Activity\n\nPlease keep on mind, this is not final production mainnet version. This is implementation of available sancho v2 database. \nWe will continue in development of a new features (based on db-sync changes) with upcoming milestones (especially MS4, Final MS).\nOn top of this, we deployed much more non-governance features like\n・scripting/dapp interactions - usage/limits cpu/mem\n・stake/rewards - added date column\n・new pool metric - prorated luck\n・epoch detail page - epoch params\n・network proposals page improvement (params)",
+      "kinds": [
+        "chain"
+      ],
+      "links": 15
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 10000,
+      "promise": "Educational articles published on Cexplorer and/or CF´s article site.\nWe expect 3-5 deep articles in length as we always write on Cexplorer.io",
+      "criteria": "serie of a educational articles related to Voltaire\nsharing with community via social media",
+      "report": "Today we have just published 4th article on governance topic.\n・Understanding the Need for Governance\n・The Need for Formalized Governance\n・Sancho Network and Cardano's Governance\n・Understanding Cardano Sustainability\n\nAll articles were shared on multiple social channels (telegram, twitter, discord).\nIn any case, as you can see from the pace and other articles our team is publishing, we are not stopping with this milestone and more articles will follow at the usual pace.",
+      "kinds": [
+        "chain",
+        "other",
+        "social"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 20420,
+      "promise": "Cexplorer.io website",
+      "criteria": "Voltaire features available and live on mainnet version of Cexplorer.",
+      "report": "Mainnet-db-sync upgraded into recent 13.2.0.1.\nTestnet-db-sync upgraded into sancho-4-0-0-fix-config.\nGov tables populated on mainnet (ofc empty), available and live on mainnet. Cexplorer is ready for now.\nCompatibility check here: https://sancho.cexplorer.io/governance/constitution (constitution detail)\nAnother improvements on Cexplorer:\n- block script panel \n- improved utf8 asset support",
+      "kinds": [
+        "chain"
+      ],
+      "links": 5
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 50000,
+      "promise": "This is second part of maintenance costs of Cexplorer.\n・maintenance\n・support of latest db-sync, cardano-node and other used libs\n・bugfixes\n・community support\n\nAll enviroments are working with Voltaire features from milestone before. \nAll milestones are delivered.",
+      "criteria": "・The website is still functioning well, and its infrastructure is up to date with the Cardano tool chain, evidence of ongoing work can be seen through the website evolution.\n・We communicated on important changes through our social media and have actively engaged with the community\n・Features from milestones before are live and fully working",
+      "report": "Project Closeout Report (PDF)\nCardano explorer improvements (Cexplorer.io)\nIdeascale link\n・https://cardano.ideascale.com/c/idea/104079 \n\nProject Number: 1000028 \nName of project manager: Josef Taborsky, Lukas Barta\nDate project started\n・10/2023\n\nDate project completed\n・02/2024 \n\nKey achievements (in particular around collaboration and engagement)\n・sancho/governance support\n・nft support improved (collab w/jamonbread.io)\n・new features (for example: utf-8 emoji support, multi-delegation support, rewrited delegation tab, CIP-68 support, datum inspector)\n\nKey learnings\n・deeper „how governance works“ / db structure\n・recent sancho db-sync structure changes\n・CIP-68 mechanism\n\nList of challenge KPIs and how the project addressed them\n・stay up to date with db-sync structure changes - there was not structure finalised on first sachno release, but we worked on implementation and changes implementations since sanchoV1 to recent\n・correctly handle CIP-68 integration and NFT metadata changes\n・working and stable website - this is a never-ending battle - keeping up with the increasing size of the blockchain by the minute - we solve by constant optimizations and increasing hw \n\nList of project KPIs and how the project addressed them\n・stable website and page load - optimalization of queries, caching, hw improvement (evidence)\n・sancho features - a lot of changes and updates on dev side (evidence)\n・provide explorer for all enviroments - this is sometimes complicated stay up to date for all instances, but we have solved this perfectly with devops. (evidence + sancho up and running)\n・note: in general, the KPIs for our catalyst - Explorer maintenance, are not quite right in this case. So the primary goal is a functional site that supports the latest features (evidence) \n\nNext steps for the service\n・In our particular case, the next plans are (not-only) primarily to keep the service going and to provide at least the same quality of service and speed as before. Thus, the primary goal is to kee",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 16,
+      "cut": true
+    }
+  ]
+}

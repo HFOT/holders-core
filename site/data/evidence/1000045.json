@@ -1,0 +1,59 @@
+{
+  "title": "Catalyst Explorer dRep module: Directory, Community, Draft Ballots",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 28000,
+      "promise": "The big idea is allow user to create dRep Profiles on lidonation. If the catalyst open tooling have progressed enough to enable dRep wallet interaction, with wallet support. Otherwise email/password account with ability to connect wallet later.",
+      "criteria": "・dRep module bootstrapped\n・user can sign up to be a dRep and write their platform statement",
+      "report": "As intended, dRep module have been bootstrapped and user can sign up to be a dRep and write their platform statement at https://www.lidonation.com/en/catalyst-explorer/dreps. A video walkthrough have been published to the lidonation's youtube channel: https://youtu.be/6TTW-C_n-Oo",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 44000,
+      "promise": "The big idea is to allow dRep to create draft ballots with public and private visibility modes as well as support for comments.",
+      "criteria": "・user can create a dRep profile\n・drep user can create draft ballot\n・dRep user can keep draft ballot private or make public\n・dRep draaft ballots can be commented on (if enabled by owner)",
+      "report": "All features of the Acceptance Criteria have been published to lidonation.com/catalyst and demoed in this video: https://youtu.be/ZxzDLco27-Q.",
+      "kinds": [
+        "video"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "19",
+      "cost": 44000,
+      "promise": "The big idea here is to allow people to sign up as a dRep and to create a directory of dReps",
+      "criteria": "・show directory of dReps\n・The Catalyst Explorer tool will allow a user to create a dRep page/profile on the site.\n・User will be able to delegate to a dRep by using a pre-built transaction, which they can then submit directly to the blockchain to delegate to a Catalyst DRep. \n・Dreps will be able to publish their platform statement to ipfs\n・Dreps will be able to publish their draft ballot to ipfs",
+      "report": "Acceptance Criteria & Evidence\nHey fam took a minute because since this proposal was funded, we were funded to move the tool from the Lidonation website. It is now a fully open source community tool with a brand new design. We were also depending on catalyst dreps to be live but we’re not there yet. \nVideo demo of all deliverables: https://www.youtube.com/watch?v=__svn9yhqiA \nHere are some links for specific Criteria item\n・Show directory of dReps\n・Directory here: https://www.catalystexplorer.com/en/dreps/list \n・The Catalyst Explorer tool will allow a user to create a dRep page/profile on the site.\n・We’ve added a new workflow: https://www.catalystexplorer.com/en/workflows/drep-sign-up/steps/1 \n・User will be able to delegate to a dRep by using a pre-built transaction, which they can then submit directly to the blockchain to delegate to a Catalyst DRep. \n・You can delegate from the DRep list: https://www.catalystexplorer.com/en/dreps/list \n・Dreps will be able to publish their platform statement to ipfs\n・This is part of the workflow when you’re creating your profile… you can choose your profile content hosted on ipfs. This has echoes of the work we’ve done on 1694.io with Cardano DReps. When Catalyst DRep goes live we will be able to support their bios in a decentralized way. \n・Dreps will be able to publish their draft ballot to ipfs\n・Even though we don’t have catalyst dreps, we’ve still added the ability to to publish your voting list to ipfs. If you are the owner of the voting list (even if you’re not a drep), you can publish it to ipfs. You can see the video demo for more information. \n\nFor both ipfs uploads, we’re interested in seeing how people try to use the tool, what feedback they have, and if experimenting with ipfs as a data layer would make decentralized integration and other catalyst tooling easier. \nWe were hoping to tap into catalyst voices and support native catalyst DRep, but since that is not live we explored the hacky way exchanges, the cf and others ag",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "20",
+      "cost": 32000,
+      "promise": "Add support for non-english dReps.\nProject Close report\nProject Close Video",
+      "criteria": "・dReps can write platform statements and rationale in at least 5 languages. \n・dReps can click to read any english text in the dRep module in one of the supported languages.\n・Project Close report meets documented Catalyst criteria\n・Project Close Video meets documented Catalyst criteria",
+      "report": "Take II!\nHi team, \nPlease see final close demo video that walks you through the entire DRep module: https://youtu.be/__svn9yhqiA \nPlease final closeout Report at: https://drive.google.com/file/d/1Z2YirMFA58IuNgEnsjHylc_cE7hs6L1b/view?usp=sharing \nNote that Catalyst DRep is not yet a thing on mainnet. What we have online is just a prototype. We already have support for the new Catalyst Document standards and ready to verify the DRep role and integrate DRep when the features goes live in Catalyst Voices. \nSince being funded for this project we've moved all of the work to a brand new website at https://www.catalystexplorer.com/en and open source repo at https://github.com/lidonation/catalystexplorer.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

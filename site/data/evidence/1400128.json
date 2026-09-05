@@ -1,0 +1,30 @@
+{
+  "title": "Yubikey Cardano Wallet",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 4500,
+      "promise": "・Documentation:\n・Define YubiKey PIV EDDSA key capabilities, including PIN configuration and Touch Policy.\n・Explore Feasibility of OpenPGP APDU Signing.\n・Initial PoC CLI program for signing raw bytes with YubiKey.",
+      "criteria": "・A documentation report has been prepared, covering research findings and usage instructions.\n・Successful signing with YubiKey EDDSA has been demonstrated on raw data bytes, validating the feasibility of secure Cardano transaction signing.",
+      "report": "A. Output: Documentation. Define YubiKey PIV EDDSA key capabilities, including PIN configuration and Touch Policy.\nAcceptance criteria: A documentation report has been prepared, covering research findings and usage instructions.\nEvidence: Report has been published in the project repository (/docs folder), including detailed explanations of PIV key import, signing workflow, and verification process.\nReport: https://github.com/akonior/ykada/blob/v0.1.0-milestone1.0/docs/milestones/milestone1.md\nPIV key import: https://github.com/akonior/ykada/blob/v0.1.0-milestone1.0/docs/milestones/milestone1.md#import-asymmetric-key and https://github.com/akonior/ykada/blob/v0.1.0-milestone1.0/docs/milestones/milestone1.md#7-proof-of-concept-ykada-tool\nPIV signing: https://github.com/akonior/ykada/blob/v0.1.0-milestone1.0/docs/milestones/milestone1.md#authenticatesign and https://github.com/akonior/ykada/blob/v0.1.0-milestone1.0/docs/milestones/milestone1.md#7-proof-of-concept-ykada-tool\nVerification: https://github.com/akonior/ykada/blob/v0.1.0-milestone1.0/docs/milestones/milestone1.md#7-proof-of-concept-ykada-tool\nB. Output: Documentation. Explore Feasibility of OpenPGP APDU Signing.\nAcceptance criteria: A documentation report has been prepared, covering research findings and usage instructions.\nEvidence: Documentation report:\nhttps://github.com/akonior/ykada/blob/v0.1.0-milestone1.0/docs/milestones/milestone1.md#8-openpgp-module-alternative\nC. Output: Initial PoC CLI program for signing raw bytes with YubiKey.\nAcceptance criteria: Successful signing with YubiKey EDDSA has been demonstrated on raw data bytes, validating the feasibility of secure Cardano transaction signing.\nEvidence1: Proof-of-Concept program (/src folder) demonstrates the complete signing procedure on raw data bytes, producing valid cryptographic signatures.\nSource code: https://github.com/akonior/ykada/tree/v0.1.0-milestone1.0/yubikey-piv/src\nSuccessful unit test showing complete signing procedure on raw data b",
+      "kinds": [
+        "code"
+      ],
+      "links": 28,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 4500,
+      "promise": "Command Line Tool for Yubikey PIV EDDSA key management:\n・Generate EDDSA keys on YubiKey.\n・Key import (raw private key, BIP-32 seed).\n・Configure PIN / Touch Policy.\n・Unit tests.\n・Developer documentation.",
+      "criteria": "・The CLI tool is capable of generating, importing EDDSA keys on a YubiKey.\n・Both PIN authentication and Touch Policy have been successfully configured and verified, confirming secure operation.\n・Tests are executed on every GitHub Pull Request (PR) via GitHub Actions, and a successful test run is required before merging the Pull Request.\n・There is a README file with setup instructions and usage guidelines.",
+      "report": "A. Output: CLI tool capable of Generate EDDSA keys on YubiKey.\nAcceptance criteria: The CLI tool is capable of generating keys on a YubiKey.\nEvidence: https://github.com/akonior/ykada/tree/v0.2.3/docs/milestones#milestone-2 and https://github.com/akonior/ykada/blob/v0.2.3/README.md#key-generation-on-yubikey\nB. Output: Key import raw private key\nAcceptance criteria: The CLI tool is capable of importing EDDSA keys on a YubiKey.\nEvidence: https://github.com/akonior/ykada/tree/v0.2.3/docs/milestones#milestone-2 and https://github.com/akonior/ykada/blob/v0.2.3/README.md#import-from-der-encoded-key\nC. Output: Key import BIP-32 seed\nAcceptance criteria: The CLI tool is capable of importing EDDSA keys from seed on a YubiKey\nEvidence: https://github.com/akonior/ykada/tree/v0.2.3/docs/milestones#milestone-2 and https://github.com/akonior/ykada/blob/v0.2.3/README.md#import-from-seed-phrase-bip-39\nD. Output: The CLI tool is capable of configure PIN policy and Touch Policy.\nAcceptance criteria: Both PIN authentication policy and Touch Policy have been successfully configured and verified, confirming secure operation.\nEvidence: https://github.com/akonior/ykada/tree/v0.2.3/docs/milestones#milestone-2\nE. Output: Unit tests.\nAcceptance criteria: Tests are executed on every GitHub Pull Request (PR) via GitHub Actions, and a successful test run is required before merging the Pull Request.\nEvidence: Unit test configuration https://github.com/akonior/ykada/blob/v0.2.3/.github/workflows/cargo-test.yml run for every branch and required to merge to main\nexample unit test run: https://github.com/akonior/ykada/actions/runs/21907545921\nF. Output: Developer documentation.\nAcceptance criteria: There is a README file with setup instructions and usage guidelines.\nEvidence: https://github.com/akonior/ykada/blob/main/README.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 10
+    }
+  ]
+}

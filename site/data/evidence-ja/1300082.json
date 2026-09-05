@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・Plutus v3を用いたCardanoスマートコントラクトにおけるHandshakeシグネチャの利用に関する研究\n・オープンソースのPlutus v3契約と署名検証のための文書の作成\n・Handshake署名で署名したCardanoの証明されたtestnet上のトランザクションビルディングのデモ.",
+      "criteria": "・クロスチェーンのシグネチャを処理するための包括的な研究文書の詳述方法。\n・オープンソースの契約やサポート文書を公開しています。\n・Handshakeシグネチャと署名したCardanoプリプロドのtestnetトランザクションの成功デモ.",
+      "report": "1) 調査報告書のアウトライン化と方法.\nhttps://github.com/blinklabs-io/decentralized-dns-contracts/tree/main/docs/research\n2) オープンソースの契約や文書へのリポジトリリンク。\nhttps://github.com/blinklabs-io/decentralized-dns-contracts/tree/main/onchain\n3) Cardano プリプロダクションネットワーク上のトランザクションデモンストレーションのビデオとログ。\nhttps://drive.google.com/file/d/1 DYPIt-J3oKmqxX yLQLSSj2EwPs9Xcq/view?usp=sharing\nhttps://preprod.cexplorer.io/tx/a39b32515f224115098b4f20ae18a7f1994f2ca8ff7783e95b46dc670abe9301"
+    },
+    {
+      "no": 2,
+      "promise": "・Cardano上のHandshakeドメインの所有権を検証する方法\n・Cardano上でHandshakeドメインを安全に登録するためのオープンソース契約\n・ドメインの登録をDNSネットワークに表示するマーケットプレイスサイト.",
+      "criteria": "・Handshakeドメイン所有権の作業検証方法\n・機能的かつ文書化されたオープンソース契約。\n・DNSネットワークにドメイン登録を実証する機能例市場サイト.",
+      "report": "出力1:Cardano上のHandshakeドメインの所有権を検証する方法。\nアクセプタンスクライテリア1:Handshakeドメインの所有権の作業検証方法。\n証拠1:検証方法へのリポジトリリンク:\nhttps://github.com/blinklabs-io/dns-contracts/blob/main/docs/architecture/validation-method.md\n\n出力2:CardanoでHandshakeドメインを安全に登録するためのオープンソース契約。\n受諾基準2:機能的かつ文書化されたオープンソース契約。\n証拠2:オープンソース契約と文書のリポジトリリンク:https://github.com/blinklabs-io/dns-contracts/tree/main\n\n出力3:DNSネットワークにドメインの登録を示す市場サイトの例。\nアクセプタンスクライテリア3:DNSネットワークにドメイン登録を実証する機能例のマーケットプレイスサイト。\nEvidence 3: 市場サイトの動画デモ: https://youtu.be/-Pk1CqZt6Nw\npreprod tx id: https://preprod.cardanoscan.io/transaction/ace901350353573685ee4fdce54b08794fb9d183ac6ec879e34a78b46b3574fb"
+    },
+    {
+      "no": 3,
+      "promise": "・登録した所有者がCardanoの2番目のレベルのドメインをミントにできるようにする縮小契約。\n・参照契約では、ドメインのDNS設定を構成するために、第2レベルのドメインの所有者を有効にします.",
+      "criteria": "・第2レベルドメインの機能性縮小契約\n・DNS構成機能による参照契約\n・Cardano-DNS規格準拠(https://github.com/blinklabs-io/cardano-dns).",
+      "report": "出力1:登録した所有者がCardanoの2番目のレベルのドメインをミントにできるようにするマイニング契約。\n受諾基準1:第2レベルのドメインのための機能的なマイナス契約。\n受諾基準3:Cardano-DNS規格(https://github.com/blinklabs-io/cardano-dns)とのアライメント。トークンペアの採掘/ownershipモデルを実装し、アイケンテストで検証することで実証された。\n証拠1:マイナスと参照契約へのリポジトリリンク。 https://github.com/blinklabs-io/dns-contracts/blob/main/onchain/validators/tld registration/sld reference.ak\n証拠2:テストケースは、マイナス https://github.com/blinklabs-io/dns-contracts/blob/main/onchain/validators/tld registration/tests/sld reference.ak#L49-L65\nドキュメンテーション: https://github.com/blinklabs-io/dns-contracts/blob/main/docs/architecture/smart-contract-architecture.md#operational-workflows\n\n出力2:参照契約により、ドメインのDNS設定を構成する2番目のレベルのドメインの所有者を有効にします。\n受諾基準2:DNS設定機能で参照契約。\nアクセプタンスクライテリア3:Cardano-DNS規格(https://github.com/blinklabs-io/cardano-dns)と連携し、SLDの更新と所有権の制約に対するDNS-reference datum/workflowの期待を強化することで実証されています。\n証拠1:マイナスと参照契約へのリポジトリリンク。 https://github.com/blinklabs-io/dns-contracts/blob/main/onchain/validators/tld registration/sld reference.ak\n証拠2:DNSの設定機能 https://github.com/blinklabs-io/dns-contracts/blob/main/onchain/validators/tld registration/tests/sld reference.ak#L92-L100\nドキュメンテーション: https://github.com/blinklabs-io/dns-contracts/blob/main/docs/architecture/smart-contract-architecture.md#operational-workflows"
+    },
+    {
+      "no": 4,
+      "promise": "・コントローラ契約でドメインを登録するCLI機能。\n・CLI 機能により、登録済みのトップレベルドメインに 2 番目のレベルドメインを縮小します。\n・CLI 機能により、DNS の設定を 2 レベルドメインで設定できます。\n・CLIの運用に関するユーザー文書.",
+      "criteria": "・CLIは、コントローラ契約でトップレベルのドメイン(TLD)を正常に登録し、入力を検証し、トランザクションの詳細は確認を行う必要があります。\n・CLI は、登録した TLD で 2 番目のレベルのドメイン (SLD) の縮小を有効にし、適切な検証と所有権チェックを確保する必要があります。\n・CLI は、SLD の DNS 設定の構成、入力の有効化、取引情報の更新の確認を行う必要があります。\n・CLIの運用に関する明確かつ包括的なユーザー文書.",
+      "report": "出力1:コントローラー契約でドメインを登録するCLI機能。\nアクセプタンス・クライテリア1:CLIは、コントローラー契約でトップレベルのドメイン(TLD)を正常に登録し、入力を検証し、トランザクションの詳細を確認しなければなりません。\nマイルストーン完了の証拠1:コントローラー契約でハンドシェイクTLDを登録するためのDNS CLIサポートが実装され、dns-cli v1.0.0としてリリースされます。 実装、コマンド ドキュメンテーション、プロトコル マッピング、リリース、および成功したプリプロド トランザクションは、以下で利用可能です。\nhttps://github.com/blinklabs-io/dns-cli/releases/tag/v1.0.0\nhttps://github.com/blinklabs-io/dns-cli/blob/main/internal/txbuilder/register tld.go\nhttps://github.com/blinklabs-io/dns-cli/blob/main/docs/commands.md#protocol-flow\nhttps://github.com/blinklabs-io/dns-cli/blob/main/docs/protocol-crosswalk.md#register-tld\nhttps://preprod.cexplorer.io/tx/24cfaa7065054c112663f19d05d6f2d5da9b9afb9eebc7f7d2c8f9b9470e1\n\n出力2:登録済みのトップレベルのドメインで2番目のレベルドメインをミントにするCLI機能。\nアクセプタンス基準2:CLIは、登録されたTLDの下で2番目のレベルのドメイン(SLD)の縮小を有効にし、適切な検証と所有権チェックを保証します。\nマイルストーン完了の証拠 2: 登録されたTLDの下でSLDを採掘するためのDNS CLIサポートは、所有者のミント・ソルドを介して実装されています。 実装、コマンド ドキュメンテーション、プロトコル マッピング、プリプロド トランザクションの成功は、以下で利用可能です。\nhttps://github.com/blinklabs-io/dns-cli/blob/main/internal/txbuilder/mint sld.go\nhttps://github.com/blinklabs-io/dns-cli/blob/main/docs/commands.md#protocol-flow\nhttps://github.com/blinklabs-io/dns-cli/blob/main/docs/protocol-crosswalk.md#mint-sld\nhttps://preprod.cexplorer.io/tx/df88bcae9f256c1e93f27728b8dc6ad8e0f456bf882e7314b0934bde0d64ad73\n\n出力3:CLI 機能により、DNS の設定を 2 レベルのドメインで設定できます。\nアクセプタンスクライテリア3:CLIは、SLDのDNS設定の設定、入力の有効化、および更新の確認を許可しなければなりません"
+    },
+    {
+      "no": 5,
+      "promise": "・Cardanoコミュニティに提示された包括的なプロジェクト閉鎖レポート。\n・「カタリストタウンホール」の映像をクローズアウトし、プロジェクトの成果やインパクト、授業を学習.",
+      "criteria": "・最終クローズアウト映像と最終クローズアウトレポートが公開されます。\n・クローズアウトレポートとビデオには、重要な発見、教習、実用的な推奨事項が含まれます.",
+      "report": "マイルストーンの出力:\n・Cardanoコミュニティに提示された包括的なプロジェクト閉鎖レポート。\n・動画をクローズアウトし、プロジェクトの成果、インパクト、授業を学習。\n\n受諾の条件:\n・最終クローズアウト映像と最終クローズアウトレポートが公開されます。\n・クローズアウトレポートとビデオには、重要な発見、教習、実用的な推奨事項が含まれます。\n\nマイルストーン完了の証拠:\n・詳細なクローズアウトレポートへのリンクは、審査者にアクセス可能です。 https://drive.google.com/file/d/1qvuN RKdfa1yzOX0YbMnjX 4yLQSYxxz/view?usp=sharing\n・審査官のアクセスのため、クローズアウト動画へのリンクも提供いたします。 https://youtu.be/uNrpMZvSbho"
+    }
+  ]
+}

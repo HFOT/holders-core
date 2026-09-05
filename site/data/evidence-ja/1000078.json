@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・アプローチのためのWrite仕様",
+      "criteria": "・公共の場でのホスト仕様",
+      "report": "ビデオ: https://drive.google.com/file/d/1KvUP-UZzz5ddHTZygy0BSWy9lmPS8RpTN/view?usp=sharing\n調査したさまざまなアプローチのためのさまざまなGoogleドライブドキュメント:\n・概要:https://docs.google.com/document/d/1VqXjyfgvbXxYHqhzYcSFFEorYbnza6GbjyAbVXyAKAM/edit\n・Gamingアカウントのアプローチ: https://docs.google.com/document/d/1II9-72dIpLps6oSEvEt2yPsPDwt0FC2kjo33xzpzbXA/edit\n・MetaMask スナップアプローチ: https://docs.google.com/document/d/1QuIaAZW69EBdssiEbUs9V5CgPEbRkjNiPtJ4rdbFRvc/edit#heading=h.xv3s0ae2zmyw\n・主な委任アプローチ: https://docs.google.com/document/d/1LZJsIsX2UMtjr7slZC5PWD-0cyK77 5W9IDxoaPs8-M/edit\n・例:https://docs.google.com/document/d/1-L2PHkRm6AfpRSBYnGXT1vYCGrA0oZFgoY8Opj0ag/edit\n\nPaima の docs: https://docs.paimastudios.com/home/read-write-L2-state/autosign"
+    },
+    {
+      "no": 2,
+      "promise": "少なくとも1 Cardanoウォレットでオートサインを実行",
+      "criteria": "・コードを書いて、オートサインをサポートし、少なくとも1 Cardanoウォレットに統合",
+      "report": "動画: https://drive.google.com/file/d/1V9zJAxbDFTrNYNTp2pViIoMiBm1BoHy8/view?usp=sharing\nゲーミングキー仕様:https://docs.google.com/document/d/1II9-72dIpLps6oSEvEt2yPsPDwt0FC2kjo33xzpzbXA/edit\nコード:\n・パマのCardanoウォレット接続コード:https://github.com/PaimaStudios/paima-engine/blob/master/packages/paima-sdk/paima-providers/src/cardano.ts\n・PaimaのWallet委任解析コード:https://github.com/PaimaStudios/paima-engine/blob/master/packages/engine/paima-sm/src/delegate-wallet.ts\n\nウォレット委任機能のツイート:https://twitter.com/PaimaStudios/status/1725054223480467529\nPaima ドキュメント: https://docs.paimastudios.com/home/read-write-L2-state/autosign#defining-your-namespace\n\nタロチのライブで試してみることもできます: https://tarochi.paimastudios.com"
+    },
+    {
+      "no": 3,
+      "promise": "メタマスクスナップとしてオートサインを実装",
+      "criteria": "・オートサイン機能を搭載したGithub上でメタマスクスナップ",
+      "report": "動画: https://drive.google.com/file/d/1j9FEoTM7DmuIhor0PHtwWOReKJpxCbfg/view?usp=sharing\nMetaMask Paimaスナップ仕様: https://docs.google.com/document/d/1QuIaAZW69EBdssiEbUs9V5CgPEbRkjNiPtJ4rdbFRvc/edit\nPaima スナップ コードベース: https://github.com/PaimaStudios/paima-session-snap\nスナップ使用例動画:https://drive.google.com/file/d/18mgWn5vGwZTvFkL4-0vrvAzpjpK5ojb1/view?usp=sharing\nツイート: https://twitter.com/PaimaStudios/status/1680665635272155136"
+    },
+    {
+      "no": 4,
+      "promise": "・パイマを使ったゲームを1回以上で自動署名サポート",
+      "criteria": "・パイマと組み込まれた複数のゲームで、オートサイン機能を実装",
+      "report": "**Context:** Paima Studiosは、Midnight Foundationに統合され、Paima EngineはEffectStreamとして再ブランドされました。 コードベース全体をスクラッチから書き換える - これは3番目のバージョンです。 フィードバックに耳を傾け、より良い慣行に従い、全体的な品質を向上させました。 これらのイベントは、今の成果をあげていますが、現在、すべてが更新されています。 オートサイン機能がメタマスクスナップ(M3)として提案されました。 配信されたソリューションは、セッションキーデリゲーションを備えたマルチチェーンウォレットパッケージである`@effectstream/wallets` を使用します。ウォレットタイプを横断して動作するより柔軟なアプローチで、3つのプロダクションゲームで動作します。 「@effectstream/wallets」で配信しても、パマエンジンのオートサイン仕様とアプローチは https://github.com/PaimaStudios/paima-engine で利用できます。 このマイルストーンは事実の後に提供されているので、M4よりもさらに到達します。 新しいサイト https://effectstream.github.io/home/\n\n**A. 出力: オートサイン機能を実行しているゲームが少なくとも1つ**\n受諾条件:オートサインを実装するフレームワークで構築された少なくとも1つのゲーム。 ミッドナイトで3つのライブプロダクションゲームを配信しました。セッションキーの委任を「@effectstream/wallets」で使用し、非財務インタラクションのウォレットポップアップを排除します。 プレイヤーは委任を一度承認し、中断なしで再生します。 セッションキーモデルは、スコープド(非財務のみ)、タイムバウンド、および再発可能です。\n証拠:\n- 安全なソルバー:https://safesolver.midnight.fun/\n・深夜中の他のゲーム。funサイト\n**B. 出力: 統合のリリース発表**\n受諾条件:統合の実証とオートサイン機能の公開発表。\n証拠:\n- ブログ投稿: https://effectstream.github.io/docs/blog/auto-sign\n- ミッドナイトネットワークブログ(すべての3ゲームを特色とする発表): https://midnight.network/blog/introducing-midnight-fun\n- Twitter/X @MidnightNtwrk: https://x.com/MidnightNtwrk/status/2043388660188385620\n\n**C. 出力: ビデオ"
+    },
+    {
+      "no": 5,
+      "promise": "プロジェクトクローズレポート:\n・PDFレポート\n・ビデオレポート\n・ゲーム実装\n・壁実装",
+      "criteria": "コミュニティはPCRへのアクセスを持っています.",
+      "report": "PoAコメントに対応:\nありがとうございます。 双方のポイントを扱います。 ガイドラインに合わせ、動画やPDFをアップしました。\n\nお問い合わせ\n\n1. クローズアウトビデオ(PCV、YouTube):\nhttps://youtu.be/q047-c5ZgX4\n\n2. クローズアウトレポート\nPDFレポート\n\n追加ノート:\n[メッセージの送信] カタリスト・ディレクションは、このプロジェクトに関する次の声明について検討し、チケット#9527で記録しました\n・リブランド Paima は EffectStream として再ブランドし、 Midnight Foundation の一部です。リンクは、これらのエンティティティティの名称で表示されることがあります。\n\nお問い合わせ."
+    }
+  ]
+}

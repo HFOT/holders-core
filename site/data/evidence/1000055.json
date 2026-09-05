@@ -1,0 +1,102 @@
+{
+  "title": "Core integrations to support the fast-growing onchain games and autonomous world segment",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 75000,
+      "promise": "・Releasing the “Shinkai Visor” Google Chrome extension to the public. This is a browser extension that allows easily connecting LLMs to your browser",
+      "criteria": "・“Shinkai Visor” Google Chrome extension public release. Since writing this Catalyst proposal, we already have a proof-of-concept video you can find on our Twitter (https://twitter.com/ShinkaiProtocol/status/1732393989012173172/video/1) and we will submit an updated video once we release the alpha of the browser extension to the public.\n・b) Chrome Extension will allow you to interact with websites by sending information from the “DOM” to the extension for processing.\n・c) Information allowed will be text and screenshots that can be taken using Shinkai Visor itself.\n・d) Shinkai also will allow y",
+      "report": "Video: https://drive.google.com/file/d/1S35lHqKxtgJj3stvfF2QVIdPOVWWfOGp/view?usp=sharing\nAnnouncement tweet: https://twitter.com/ShinkaiProtocol/status/1766229894986453447\nShinkai Visor extension: https://chromewebstore.google.com/detail/shinkai-visor-supercharge/emahbbinjjmancgckmoodjficjdkjkif",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 97130,
+      "promise": "An open-source game template built with Paima Engine that leverages Shinkai Visor to power the AI component of a game (by connecting the LLM to the page) that anybody can reuse as a base to build their own game.",
+      "criteria": "・a) Build a simple game with Paima Engine that uses an AI for an in-game feature core to the gameplay with code publicly available.\n・b) the game is going to be fully on-chain using components of generated AI controlled by the user (text-to-image)\n・c) the models used are going to be capable of being used by the user with modern computers in their browser.",
+      "report": "In regard to the comments in the previous submitted POA\n[a] Tranasition from Paima to EffectStream\nThere is no official public announcement for the merge, but you can see the CTO was moved, together with the tech has just been rebranded\nCharles Hoskinson acknowledges Sebastien Guillemont as Midnight CTO. https://x.com/IOHK_Charles/status/1955702039591444771\nMidnight disclosing the CTO https://x.com/MidnightNtwrk/status/2025933127609127126?s=20\nPaima Studios Company Profile https://www.paimastudios.com/corporate\nhttps://github.com/PaimaStudios/paima-engine redirects to EffectStream\nThese changes were communicated and OK'd recently to the Catalyst team.\n[b] POA was reordered bellow (There is a lot of information and parts that construct this POA, further links bellow) \nBut in summary:\nAdded Video Explanation for this Milestone\nhttps://youtu.be/QZkM4W8Md-E\nBlog Explanation of Tech, and links to source and other evidence\nhttps://effectstream.github.io/docs/blog/user-experience-integrations/\nSocial Announcements\nhttps://x.com/PaimaStudios/status/2056571473771294934?s=20\nhttps://x.com/shinkailocalai/status/2056580883771994315?s=46\nContext: \nPaima Studios merged into the Midnight Foundation, and Paima Engine is in process of rebranding as EffectStream. We have rewritten the entire codebase from scratch - this is the third version. We listened to feedback, followed better practices, and improved overall quality. These events are why we are delivering now, but everything has been updated for the present. \nShinkai evolved from a browser extension to a broader AI platform: any user can spin up a local Shinkai node on their own machine, so the AI inference runs on hardware the user controls rather than a centralised vendor (or both) this is what makes Shinkai compatible with the milestone's \"models capable of being used by the user with modern computers\" requirement. \nThe game template uses Shinkai's deterministic LLM inference (same input = same output), which is what makes th",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 38,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 97130,
+      "promise": "Implement ability for wallets to delegate non-financial txs to be creatable by a local key-pair for their device",
+      "criteria": "Code for the creation of private key pairs in the browser and being able to use this key to sign txs after delegating permissions to it.",
+      "report": "IN RESPONSE TO POA COMMENTS\n\nThank you for the detailed review, and for the explicit invitation to point to the code.\n・We have linked the relevant code (and we have pinned links to a fixed commit (branch v-next @ 1a5cd9d5) so the line numbers stay exact over time.)\n・Thanks for the comments, we have updated our documentation and blog to answer these questions as well for users\n\nJust for context the npm package @effectstream/wallets allows dev to to bot connected injected wallets .e.g, Lace/Metamask/etc via CIP-30 and/or transparently create local wallets in the browser. The local Cardano connector intentionally mirrors the CIP-30 method names (signData, getUsedAddresses) so existing app code runs unchanged - so on a first read it looks like a CIP-30 dependency, but it is backed by a key generated in the browser, not an injected wallet.\nhttps://effectstream.github.io/docs/home/components/wallets here are the list of available local wallets as CardanoLocal - in-brower local wallet BIP-39 key pair generated and managed by the library. No extensions required.\n\nWHERE EACH ELEMENT LIVES IN THE CODE\nOpen source in the @effectstream/wallets and @effectstream/concise packages.\n\n1. Browser-based private key-pair creation\nA BIP-39 mnemonic is generated in the browser (line 69) and the device\nkey-pair is derived from it (line 84) - no wallet, no server:\nhttps://github.com/effectstream/effectstream/blob/1a5cd9d506e73907d61c381946a23ddf381b664b/packages/effectstream-sdk/wallets/src/cardano/local.ts#L55-L111\n\n2. Explicit delegation of permissions to that key\nThe player's main Cardano wallet and the browser-generated device key each sign the same link message (\"link:<account_id>:<address>:<is_primary>\"). That links the device address to the player's account, and from then on the state machine admits the device key's non-financial inputs as that player. The node verifies BOTH signatures through the crypto manager for each party's address type (AddressType.CARDANO included), so the ch",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 25,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 97130,
+      "promise": "・Implement ability for wallets to delegate non-financial txs to be created by a key-pair generated from social login credentials. For example, users to sign in with an email once and then use the local key to sign transactions without multiple prompts for the duration of the session\n\n﻿Although we are still investigating integration providers, this will most likely be done either as an extension of Web3Auth (https://web3auth.io/) or Thirdweb Auth (https://blog.thirdweb.com/web3-auth/) and which social login platforms we support depends on the integration partner.",
+      "criteria": "・Publicly release code that implements this functionality in Paima Engine\n・Public release code for any extension we may have made to an authentication library\n・A write-up explaining the rationale provided for the choice of provider we integrated with",
+      "report": "In response of the PoA comments:\nThanks for the review\nWe added it in production to game from Milestone 2\nhttps://www.youtube.com/watch?v=iLSSWoAFA5c\nSource code for game was updated as well with the example, and the live wallet\nNOTE No change below from previous POA \nNOTE: Due to short timelines for this project, we have submitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA. This milestone is totally independent and does not depend in any way on M1, M2 or M3.\nBRIEF\nThis milestone delivers social login for wallets: a user signs in with an account they already have (Google), and gets a real multi-chain wallet - no seed phrase to write down. The design is a 2-of-3 secret: a 256-bit master secret is split into shares where any two reconstruct it and any single share is useless alone. One share is stored in the user's Google Drive (via the OAuth sign-in), another stays with the user, and a third serves as backup - so the wallet is recoverable if the device is lost, and no single party (not Google, not a stolen device) can reconstruct it. Reconstruction happens entirely client-side, and from the recovered entropy the wallet derives standard wallets: a Cardano wallet with CIP-1852 payment and stake addresses, an EVM wallet, and a Midnight wallet. This is the second of three wallet milestones (device key-pairs, social login, biometric login), supported for Cardano and the other chains EffectStream supports.\n\nLINKS TO REVIEW\n\n1. Video - Google sign-in + entropy reconstructed from 2 shares -> Cardano wallets derived -> dApp signature (YouTube, 1:18):\nhttps://youtu.be/Gwdos60B9mM\n\n2. Code - the 2-of-3 social wallet:\nhttps://github.com/effectstream/social-wallet-2of3\nWallets package family:\nhttps://www.npmjs.com/package/@effectstream/wallets\n\n3. Write-up (Part 2 of the wallets series):\nhttps://effectstream.github.io/docs/blog/wallets-social-login-2of3\nSeries Part 1 (devic",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 15,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 97130,
+      "promise": "・Implement ability for wallets to delegate non-financial txs to be created by a key-pair generated from user biometric data. For example, users to sign in with biometrics once and then use the local key to sign transactions without multiple prompts for the duration of the session\n\nThis may be implemented leveraging/extending an existing library, or may be custom-built in a way similar to Opclave (biometric login for Optimisim chains: https://ethglobal.com/showcase/opclave-opstack-impr-erc4337-and-apple-sign-94def)",
+      "criteria": "・Developers are able to read the documentation and understand how they can implement biometric login system into their game built with Paima Engine\n・Users are able to use biometrics to setup their wallet when playing a game built with Paima Engine",
+      "report": "In response of the PoA comments:\nThanks for the review\nWe added it in production to game from Milestone 2\nhttps://www.youtube.com/watch?v=iLSSWoAFA5c\nSource code for game was updated as well with the example, and the live wallet \nFor a more complete experience we mixed the social login + biometrics to allow to mix multiple different shards to create/recreate your wallet.\nNOTE No change below from previous POA \nNOTE: Due to short timelines for this project, we have submitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA. This milestone is totally independent and does not depend in any way on M1, M2, M3 or M4.\n\nBRIEF\nThis milestone delivers biometric login for wallets: the wallet unlocks with the device's biometric authenticator via passkeys (WebAuthn) - no seed phrase and no browser extension. The wallet runs in a cross-origin iframe on its own domain, so the dApp page holds no key material at all. Registering creates a passkey with the platform authenticator; the passkey unlocks a root key, and the root key signs an authorization for a per-app access key - a clean, auditable chain of custody that the demo shows end to end: DID, access key public key, the root key's authorization with timestamp, and a message signed through the embedded iframe. Because passkeys are synced by the platform (iCloud Keychain, Google Password Manager), the standard passkey recovery story applies. This is the third of three wallet milestones (device key-pairs, social login, biometric login), supported for Cardano and the other chains EffectStream supports.\n\nLINKS TO REVIEW\n\n1. Video - passkey registration with the OS biometric prompt, then connected identity + signed message via the cross-origin iframe\nhttps://youtu.be/XrZLhV5YxmI\n\n2. Code - the passkeys wallet and the demo dApp:\nhttps://github.com/effectstream/wallet-passkeys\nhttps://github.com/effectstream/wallet-passkeys-app\nWallets",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 19,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "10",
+      "cost": 119238,
+      "promise": "・Closeout report and closout video\n・Google chrome extension\n・Game Templates for Shinkai Visor\n・Code for the creation of private key pairs in the browser\n・Biometrics login",
+      "criteria": "Community has the access to all closeout reports. Community is able to visit Shinkai Visor documentation and stary using it.",
+      "report": "In response to reviewers from the previous PoA \n・The link for the Chrome Extension: https://chromewebstore.google.com/detail/shinkai-local-ai/ghlkgbjijiiejcencmdalojfpiagcmaf?authuser=0&hl=en&pli=1 our previous app was removed by google as the recently removed extensions that had Manifest V2 extensions from the Chrome Web Store. We updated and relaunched the extension. Thanks for the note.\n・We plan in making the videos public as soon this gets OK'd so we know its the final version. Now they are unlisted, so they need to be accessed through the link. Thanks!\n・We tagged as \"optional\" for the reviewers, as the material, code, links, examples are also part of previous milestones (so you didn't need to dig again though them)\n\nNOTE: From this point forward there are no changes since the last review\nBRIEF\nThis is the close-out for Core integrations - bringing AI-powered gameplay and frictionless wallet sign-in to the Cardano ecosystem. The project delivered two things, both Cardano-first: Shinkai Quest, an on-chain game template where a deterministic LLM judges a player's free-form input and awards tokens on chain (the AI runs on the Shinkai server, which can be local or remote); and EffectStream Wallets, a Cardano browser wallet adapter (Lace, Eternl, Nami, NuFi, and others) with one-time session-key delegation across the device-key, social-login, and biometric paths, so a player signs once and then plays without repeated pop-ups. Everything is open source and public; the wallet work powers three public games on midnight.fun. The close-out video and report are below.\nLINKS TO REVIEW\n\n1. Close-out video (PCV, YouTube, 2:12):\nhttps://youtu.be/4e8JbswqXZw\n\n2. Close-out report \nhttps://drive.google.com/file/d/1Fcu6AGKC2hHHNRpy3SjU6lNQIIveizFp/view?usp=sharing\n\n3. Open-source code\nhttps://effectstream.github.io/docs/\nhttps://github.com/effectstream/effectstream/\n> Template code\nhttps://github.com/effectstream/effectstream/tree/v-next-bun-start/templates/shinkai-v2\n> Private ke",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 19,
+      "cut": true
+    }
+  ]
+}

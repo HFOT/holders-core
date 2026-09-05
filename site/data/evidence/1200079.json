@@ -1,0 +1,57 @@
+{
+  "title": "CHARLI3 Oracles - Verified discount/coupon codes for Adobe Commerce & Magento 2 Open Source eCommerce platforms",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25000,
+      "promise": "・Create Adobe Magento Commerce and Magento 2 Open source software is setup for a coupon code functionality\n・Prepare the prep work in the off-chain software (Magento) to integrate with Cardano using Charli3 Oracles in milestone 2",
+      "criteria": "・Adobe Magento is setup for coupon code use-case as described in original proposal\n・Create a coupon code in Adobe Magento and have the software setup to send that code to Cardano, but for this milestone there is no integration yet with the chain",
+      "report": "As proof of achievement for milestone 1 we are submitting a demo video which showcases the UI for connecting to the Cardano blockchain, again with no integration established at this milestone, and in the demo video we will also be generating an Adobe Magento coupon code from the merchants administration control panel which will eventually become the on-chain metadata in milestone 2 once the integration is complete. The video showcases the approved milestone outputs, acceptance criteria and provides evidence of milestone 1's completion.\nYou can view our milestone 1 proof of completion demo video by going to the following URL in your web browser:\nhttps://go.screenpal.com/watch/cZQvrFVSMU2",
+      "kinds": [
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 25000,
+      "promise": "・Create Adobe Magento Commerce and Magento 2 Open source software integration with Cardano blockchain\n・Enable coupon submission through this integration ; NFT coupon code submission process must be functional, allowing merchants to submit, manage, and update coupon codes securely.",
+      "criteria": "・Adobe Magento integration with Cardano Blockchain \n・Creating coupon code on Magento, creating transaction on Cardano blockchain that contains the metadata for the coupon",
+      "report": "We're providing a demo video of locally hosted solution showcasing a functioning integration between Adobe Magento setup for coupon code submissions and the Cardano blockchain. In this demo video we will highlight the initial NFT Coupon code submission, along with confirmation of managing NFT Coupon code changes, etc. We will also provide proof of On-chain activity within the demo video.\nYou can view a demo video which provides evidence of milestone 2 completion by going to the following URL:\nhttps://youtu.be/-RwQLrfxtYY",
+      "kinds": [
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 25000,
+      "promise": "・Create private/local website in preparation of launching a public proof of concept in milestone 4 (live website)\n・Front-end user interface to view coupon codes that have been posted on-chain\n・Coupon codes (e.g. online retailer codes are listed that are validated recently so users don't have to search retailmenot.com and other sources to check if it is validated)\n・Proof of concept validation of coupon codes using Charli3 Oracles; \n・(Required) POC Integration with Charli3 Oracles: \n・Problem: Coupon codes expire and users search through multiple sites to find valid codes\n・Solution: Charli3 Oracles nodes check and validate the status of coupons and post that data on-chain to be consumed by the front-end\n・Architectural flow (proposed and may change): Charli3 is working with Veralidity to integrate data directly into Magento, then Magento places data on-chain, and then this validation step has a node or node network from Charli3 validate in real-time the status of a coupon code to ensure it is still active\n・MVP for this project: Single node network real-time validation of coupon to demonstrate capabilities\n・Enhancement (Optional deliverable if possible): multi-node network with consensu",
+      "criteria": "・Local / Private website that shows NFT of coupon codes with details on the code\n・Charli3 Oracles validation of coupon code MVP is functioning\n・Website contains proof of validation with \"real-time\" updates on the website (e.g. checkmark showing coupon source and date checked)",
+      "report": "Demo Video showcases the following: https://drive.google.com/file/d/1t_ZhjF4mnwKHY3KCp1eXYWMTF4BakwWW/view\n・Includes Architecture summary \n・Local website shows coupon codes, oracle validation check, time stamp, link to explorer to see on-chain NFT representing the validation (for ease of POA review, we've hosted this demo page for review: https://catalyst.veralidity.com/verifiedcoupons#)\n・Detailed description of the end-to-end flow with evidence of everything working on a Local website\n・This video includes detailed explanations on how the Oracle network validates the coupon code, from API call to submitting a NFT with the validated code on-chain to updating the front-end page.\n\nTest page with validated coupons by Oracle 3 Node network: https://catalyst.veralidity.com/verifiedcoupons#\n・Shows multiple coupon codes, a confirmation of an oracle network check and time stamp, and links to find more details on the specific validation/check\n・Click \"View Details\" on top of card to bring up \"Metadata\" and \"View on Cexplorer\"\n・\"Metadata\" links shows specific API / data source called with the response that includes coupon data\n・\"View on Cexplorer\" shows on-chain oracle network check including timestamp\n\nFolder including an architecture report: https://drive.google.com/drive/folders/1Xv22i51bePiR3bf3r1C5jtjS-LrEabBS?usp=sharing",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 25000,
+      "promise": "・Launch public/live website that enables users;\n・to view coupon codes/NFTs\n・to see validation that the coupon codes are active and last time they were checked\n・Create Final close-out report\n・Create Final closeout video",
+      "criteria": "・Website is live and shows coupon codes, links to NFTs, activity of the coupon, last checked, and next check\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Project Close out Report: https://drive.google.com/file/d/1n5XA0JDvumnqLkWRLIsJn-UMY_KJRtg7/view?usp=sharing\nProject Close out Video: https://vimeo.com/1129034707/c84470d51d\nLive website with two examples including links to check oracle validation, last checked, etc. (Close out video includes a demo too)\nhttps://verifiedcoupons.veralidity.com/#verifiedcoupons\nLocal Oracle Demo (optional supporting asset to showcase oracle innovation): https://drive.google.com/file/d/11hS-d6XW4gwG8KauYccd_MOBKkbPhSDf/view?usp=sharing",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

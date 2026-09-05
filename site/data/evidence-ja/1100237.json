@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "オフチェーンの注文は、実行者に到達できるようにする必要があります。そのため、誰でもセットアップできる構成可能なリレーノードが必要です。 このようなノードはRustで実装され、フレームワークの一部として供給されます。\n\n1. オフチェーン・リレーのRustの実装。\n2. 導入のための単位のテストの適用範囲。\n3. コードベースのドキュメント.",
+      "criteria": "1. コードは記述され、このプロジェクトのために作成する開いた GitHub のリポジトリにプルが提出されます。\n2。 コードはユニットテストで覆われており、オープンGitHubリポジトリを介してアクセス可能です。\n3。 コードベースは、オープンGitHubリポジトリを介してMarkdownファイルの形で文書化およびアクセス可能です.",
+      "report": "開発ブランチでこの機能を維持したいので、まだプルリクエストを提出していません。 しかし、ロジック全体が実装され、テストされます。 このマイルストーンで拒絶する理由ではないことを願っています。\n実装、テスト(各ファイルには、Rust開発のベストプラクティスに従ったテストが含まれています)、およびリレーのドキュメントは、オフチェーン実行エンジンのmonorrepoの次のフォルダにあります。\nhttps://github.com/splashprotocol/splash-offchain-multiplatform/tree/develop/intent-relay"
+    },
+    {
+      "no": 2,
+      "promise": "白書に記載されている仕様によると、AAスマートコントラクトを実装します。\n\n1. 自動アカウントスマートコントラクトのアイケン実装。\n2.スマートな契約のための単位のテストの適用範囲。\n3. コードベースのドキュメント.",
+      "criteria": "1. コードは記述され、このプロジェクトのために作成する開いた GitHub のリポジトリにプルが提出されます。\n2。 コードはユニットテストで覆われており、オープンGitHubリポジトリを介してアクセス可能です。\n3。 コードベースは、オープンGitHubリポジトリを介してMarkdownファイルの形で文書化およびアクセス可能です.",
+      "report": "当社は、自動アカウント(AA)の抽象化アレフと命名しました。\nリポジトリには、スマートコントラクトのセットで構成されるAAスマートコントラクトのAikenコードが含まれています。 メインのロジックは、このフォルダにあります。\nhttps://github.com/splashprotocol/aleph/tree/main/validators\nすべてのユニットテストが書かれており、.test suffix で識別できるリポジトリの次のディレクトリにあります。\nhttps://github.com/splashprotocol/aleph/tree/main/validators\nPDF形式で提供される文書は、リポジトリに含まれており、システムがどのように機能するかを説明します。\nhttps://github.com/splashprotocol/aleph/blob/main/spec/aleph.pdf\n\nお問い合わせ\n前のコメントによると追加。\n・M1が正常に閉鎖されました\n\n証人テストによる混乱は、テストファイル命名によって引き起こされました。 構造が一貫して見えるため、テストファイルの名前を変更しました。 このフォルダにチェックを入れます。 このプルリクエストでここで行われた変更を見つけることができます。 また、深度に被覆する証人のためのテストを追加しました."
+    },
+    {
+      "no": 3,
+      "promise": "ホワイトペーパーに記載されている仕様によると、グリーンオーダーのコードベースを実装します。\n\n1.グリーンオーダーのアイケン導入\n2.オフチェーンコード(Rust)でグリーンオーダーをサポート。\n3. コードベースのドキュメント.",
+      "criteria": "1. コードは記述され、このプロジェクトのために作成する開いた GitHub のリポジトリにプルが提出されます。\n2。 コードはユニットテストで覆われており、オープンGitHubリポジトリを介してアクセス可能です。\n3。 コードベースは、オープンGitHubリポジトリを介してMarkdownファイルの形で文書化およびアクセス可能です.",
+      "report": "マイルストーン3の達成の新しい証拠\n\nA. 出力: Green Orders のバリデータ統合およびデプロイされたバリデータ参照\n\nアクセシビリティ基準:グリーンオーダーコードベースには、バリデータモデルとロイヤルティV1プールに対してグリーンオーダーを実行するプレプロードデプロイリファレンスが含まれています。 渡されたコードには、アイケン互換の意図エンコーディング、アレフアカウントバリデータ統合、バッチサイダーの統合、およびオフチェーンエージェントとデモスクリプトで使用されるロイヤルティV1プールバリデータ参照が含まれます。\n\n証拠:\n- グリーンオーダー/アレフ意図モデルとアイケン互換のCBORエンコーディング:https://github.com/splashprotocol/green-order-offchain-agent/blob/green-order-agent-bootstrap/bloom-offchain-cardano/src/orders/green.rs\n- `royaltyPoolLedgerFixed`、`alephAccount`、および `alephBatchWitness` のプリプロドバリデータ参照をデプロイしました。 https://github.com/splashprotocol/green-order-offchain-agent/blob/green-order-agent-bootstrap/green-order-cardano-agent/resources/preprod.deployment.json\n- ロイヤルティV1プールとアレフバリデータをエージェントランタイムにワイヤーで縛る展開ローダー:https://github.com/splashprotocol/green-order-offchain-agent/blob/green-order-agent-bootstrap/green-order-cardano-agent/src/deployment.rs\n\nB. 出力:錆のオフ・チェーンの緑の発注の代理店\n\n受諾基準: Rustオフチェーンエージェントは、署名されたグリーンオーダーインテントを受け入れ、Alephアカウントをバインドし、アカウントの状態をインデックス化し、フルフィルとパーフィルの実行を計画し、Merkle Patricia Forestアカウントストアの遷移を追跡し、ロイヤルティV1プールに対する注文を実行します。 公開マイルストーンのブランチで実装が可能です。\n\n証拠:\n- エージェントのエントリーポイントと実行配線: https://github.com/splashprotocol/green-order-offchain-agent/blob/green-order-agent-bootstrap/green-order-cardano-agent/src/main.rs\n- HTTPインテントの摂取、検証、および入学API:https://github.com/splashprotocol/green-order-offchain-agent/blob/green-order-agent-bootstrap/green-order-cardano-a"
+    },
+    {
+      "no": 4,
+      "promise": "SDKは、開発者が署名、提出、監視などの操作を行うためのインターフェイスです。 システムとの統合が容易になります。\n\n1. 統合に必要な機能を備えたSDKコードベース。\n2. SDKのユニットテストカバレッジ。\n3. GitHub および GitBook で公開されている SDK のドキュメント.",
+      "criteria": "1. コードは記述され、このプロジェクトのために作成する開いた GitHub のリポジトリにプルが提出されます。\n2。 コードはユニットテストで覆われており、オープンGitHubリポジトリを介してアクセス可能です。\n3。 コードベースは、オープンGitHubリポジトリを介してMarkdownファイルの形で文書化およびアクセス可能です.",
+      "report": "マイルストーン4の達成の新しい証拠\n\nマイルストーンのタイトル:SDK開発\n\nマイルストーン出力1 — 統合に必要な機能を備えたSDKコードベース\n\n説明: 配信されたTypeScript SDKは、グリーンオーダーの開発者向けインテグレーションレイヤーです。 これは、ワイヤー互換グリーンオーダーインテントペイロードを構築するためのヘルパーを提供し、Aleph互換の意思の消化を計算し、注射された財布/署名者を介してインテントを署名し、署名されたインテントをグリーンオーダーエージェントに送信し、Alephアカウントをバインドし、アカウントのステータスをバインドし、アカウントの合計をキャッシュし、クエリーの準備をし、エージェントを監視します。 マイルストーンブランチには、SDK が必要とするグリーンオーダーエージェント HTTP ルートも含まれ、送信、バインド、アカウントのステータス、アカウントのサマリー、監視エンドポイントも含まれています。\n\n証拠:\n- パブリックマイルストーンブランチ: https://github.com/splashprotocol/green-order-offchain-agent/tree/sdk-api\n- TypeScript SDK パッケージ: https://github.com/splashprotocol/green-order-offchain-agent/tree/sdk-api/sdk/typescript\n- SDKパッケージマニフェストとスクリプト:https://github.com/splashprotocol/green-order-offchain-agent/blob/sdk-api/sdk/typescript/package.json\n- SDK の公開エクスポート: https://github.com/splashprotocol/green-order-offchain-agent/blob/sdk-api/sdk/typescript/src/index.ts\n- 送信、バインド、ステータス、アカウント、可読性、および監視方法のあるエージェント HTTP クライアント: https://github.com/splashprotocol/green-order-offchain-agent/blob/sdk-api/sdk/typescript/src/client.ts\n- 緑の順序の意図的な建物、Alephの意思CBOR/digestおよび署名の助手: https://github.com/splashprotocol/green-order-offchain-agent/blob/sdk-api/sdk/typescript/src/intent.ts\n- HMACリクエストは、オペレータのHTTP API保護のためのヘルパーに署名します。 https://github.com/splashprotocol/green-order-offchain-agent/blob/sdk-api/sdk/typescript/src/hmac.ts\n- 口座結合とアカウントスタタスペイロードヘルパー:https://github.com/splashprotocol/green-order-offchain-agent/blob/sdk-api/sdk/typescript/src/account.ts\n- `POST /intents`、`POST /accou のエージェント HTTP ルート"
+    }
+  ]
+}

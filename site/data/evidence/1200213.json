@@ -1,0 +1,47 @@
+{
+  "title": "StableGain: LP-Backed Stablecoin Yield Fund",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 19350,
+      "promise": "・Comprehensive feasibility study to validate the concept and make a comprehensive risk assessment\n・Detailed design of the prototype, including technical architecture and integration points with selected DEXs on the Cardano blockchain.",
+      "criteria": "・Feasibility report completed and reviewed by the project team.\n・risk analysis to understand optimal number of stable coins and DEX partners\n・Prototype design documented with clear specifications for functionalities and user interface.",
+      "report": "Hi,\nWe’ve completed both the Feasibility Study and the Technical Design Document for our proposal. To avoid too much overlap between the two, the general introduction and overview of the idea are covered in the Feasibility Study, along with the risk analysis .\nBoth reports have been uploaded as PDF files to Google Drive, and you can access them via the following links:\nFeasibility Report: https://drive.google.com/file/d/1yLaVsnAasxEPPXw0D0nd9CF2Axh1hWxY/view?usp=sharing\nTechnical Design Document: https://drive.google.com/file/d/1cusAcnOVsH8AiZd5SNlAJZ2vjQoslVOn/view?usp=sharing\nPlease note we have extended the risk analysis of chapter 2,3,4 with an additional chapter 2.4 that holds an example allocation strategy.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "16",
+      "cost": 19350,
+      "promise": "・Development of the prototype based on the designed specifications.\n・Integration of the prototype with Cardano testnet for testing interactions with DEXs.",
+      "criteria": "・Prototype developed and deployed on the testnet.",
+      "report": "Update: I uploaded a quick video tutorial that hopefully makes the process of using our interface easier: https://drive.google.com/file/d/1Sf1KCwF-fB3wxpwA8qrpNKt_-jbnJ9IZ/view?usp=sharing. The fund I showed in this video can be found here (https://preprod.linkage.finance/details/546573742046756e1b07ece4a10b032a1b0d4a93d2649eacce2633e3f8ee853e). The name was simply cut-off we have now fixed this + added some better error handling for a better user experience. \n---\nDear Reviewer Team,\nWe have now finished developing our entire smart contract infrastructure and the backend analytics platform. The smart contract infrastructure, including the necessary scripts to interact with our fund smart contracts, can be found in our GitHub repository. For the sake of transparency and to make reviewing this milestone easier, we decided to open-source our entire smart contract codebase:\n https://github.com/LinkageDevTeam/linkage-stable-gain-contracts.\nThe smart contract is deployed at the following address: https://preprod.cardanoscan.io/address/607f0848712918ad83acdaba153acf70b520a325ea58d44a7ebcd5f3a1\nMoreover, we have prepared a test user with the address addr_test1vphwgk3nk2w3tygqwm50ssah3d8gduu5e3ycy2tem2sqh7c83z29s, which interacts with the fund (example: https://preprod.cardanoscan.io/transaction/db2603d62c789d7dedce447812d68c37534ed0c0cd353246559f4a41c87376ec?tab=utxo).\nIn addition, we wrote a comprehensive README.md that links to various python scripts that build example transaction for interacting with the fund: https://github.com/LinkageDevTeam/linkage-stable-gain-contracts/blob/main/README.md\nAs requested in the previous milestone feedback we have now first finished our interface development and deployed a testnet interface with which you can interact with the linkage fund protocol on preprod testnet here: https://preprod.linkage.finance/\n・Funds Overview: https://preprod.linkage.finance/?searchValue=&onlyVerified=true&totalLockedRange=0&totalLockedRange=1000000&priceChan",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 22,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "17",
+      "cost": 25800,
+      "promise": "・Final close-out report including lessons learned and future recommendations\n・Final closeout video\n・Final adjustments and optimizations to the fund based on test results and user feedback.",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Final version of the fund operating seamlessly on the testnet.",
+      "report": "A. Output:Final close-out report including lessons learned and future recommendations\nAcceptance criteria: Final closeout report is publicly available\nEvidence: Link to final closeout report https://drive.google.com/file/d/1-Ur_YfMvz3BrmVtqW5sGv6dHQ_s9AVYA/view?usp=sharing\n\nB. Output: Final closeout video\nAcceptance criteria: Final closeout video is publicly available\nEvidence: Link to final closeout video https://youtu.be/FGmz6e4iLYA\n\nC. Output: Final adjustments and optimizations to the fund based on test results and user feedback.\nAcceptance criteria: Final version of the fund operating seamlessly on the testnet.\nEvidence: Please check the testnet interface here https://preprod.linkage.finance/",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

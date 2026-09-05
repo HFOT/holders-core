@@ -1,0 +1,61 @@
+{
+  "title": "Fluid swaps - Trade CNTs against BTC, ETH or MATIC",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 40000,
+      "promise": "・Completed Cardano HTLC smart contract code repository\n・Completed Bitcoin HTLC script repository \n・Security audit report for both contracts, the code to be audited is the aiken smart contract and the script of Bitcoin",
+      "criteria": "・Repository contains Cardano smart contract in aiken\n・Repository contrainsg Bitcoin contract in script\n・The audit report of the code\n\nAuditor is going to be a third party chosen between: Anastasia Labs, Sundae Labs, Certik or Vacuum Labs\nAuditor cannot be chosen upfront because it depends by the availability of the auditors\nAudit will cover the complete code of the contracts\nThe project will be open source under MIT license",
+      "report": "FluidSwap smart contracts have been completed and are under review:\nThe full repository can be found at:\nhttps://github.com/FluidTokens/ft-cardano-fluidswaps-sc/tree/main\nIt contains a pre-report of the audit that now is in progress:\n・Report whitepaper: link\n・Bitcoin Contract: Link\n・Cardano Contract: Link\n・Initial Audit link by the official auditor , Auditor has been chosen for his professional experience with Bitcoin, contribution towards Cardano and also due to lack of availability from other auditors\n・Audit is in final version for the format/presentation interface of it, we are currently fixing the issues found in the contract\n\nThe repository is open source and in the next milestone the audit will be completed\nThe initial audit has been added as reviewers requested",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 7
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 40000,
+      "promise": "・Completed Cardano HTLC smart contract code.\n・Completed EVM HTLC contract code.\n・Security audit report for both contracts in solidity and aiken contracts for Cardano",
+      "criteria": "・Repository contains the aiken smart contract of Cardano HTLC code\n・Repository contains the EVM solidity contract\n・Security audit report for both contracts in the repository\n\nAuditor is going to be a third party chosen between: Anastasia Labs, Sundae Labs, Certik or Vacuum Labs\nAuditor cannot be chosen upfront because it depends by the availability of the auditors\nAudit will cover the complete code of the contracts\nThe project will be open source under MIT license",
+      "report": "FluidSwap smart contracts have been completed and are under review:\nThe full repository can be found at:\nhttps://github.com/FluidTokens/ft-cardano-fluidswaps-sc/tree/main\nIt contains the final audit and new smart contracts:\n・Report whitepaper: link\n・Bitcoin Contract: Link\n・Cardano Contract: Link \n・Ethereum Smart Contract: link\n・Final Audit link by the official auditor , Auditor has been chosen for his professional experience with Bitcoin, contribution towards Cardano and also due to lack of availability from other auditors, the audit date has been updated\n・Audit is in finalized and as stated all issues have been fixed\n・Change request has been approved for the next milestones\n\nThe repository is open source and in the next milestone there will be the frontend to interact with it",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "12",
+      "cost": 40000,
+      "promise": "・Functional frontend interface for atomic swaps.\n・Integration with Cardano and EVM contracts on the testnet.\n・User documentation and testing guides.",
+      "criteria": "・Link to Functional frontend interface for atomic swaps \n・Frontend contains a website where users can connect using a Cardano, Metamask wallet, Xverse wallet and perform atomic swaps with others users connected in the platform \n・Integration with Cardano and EVM contracts on the testnet using metmask and eternl wallet\n・User documentation and testing guides on repository explaining how to perform a swap as user, connecting the wallet and interacting with other users\n\nTesting phase will start sharing on Discord and Twitter a public testnet link, inviting users to play with the platform, no bounty",
+      "report": "Public testnet has been announced:\nhttps://x.com/FluidTokens/status/2014375593819730096\nPublic testnet link under fluidtokens domain:\nhttps://fluid-swap-dev.fluidtokens.com/\nDocs:\nhttps://github.com/FluidTokens/ft-cardano-fluidswaps-sc/blob/main/FluidSwap_Docs.md\nPublic Readme:\nhttps://github.com/FluidTokens/ft-cardano-fluidswaps-sc/blob/main/README.md\nThe users can now use testnet preview in Cardano, Testnet3 in Bitcoin and Sepolia testnet in Ethereum\n\nVideo tutorials in livestream will be added in the next days but this will be something additionally, we plan to go live in mainnet in February",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "13",
+      "cost": 28000,
+      "promise": "・Deployed Cardano HTLC and EVM contracts on the mainnet.\n・Live frontend interface accessible to users.\n・Launch event and marketing campaign to promote the platform.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Platform is live and link is provided\n・Mainnet can be used and tested\n・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Marketing on twitter with Videos and posts, link to the contents will be shared\n・Link to youtube marketing videos using FluidTokens ambassadors",
+      "report": "Public documentation: \n\nhttps://github.com/FluidTokens/ft-cardano-fluidswaps-sc/blob/main/FluidSwap_Docs.md\n\nGitHub Repository (smart contracts): \n\nhttps://github.com/FluidTokens/ft-cardano-fluidswaps-sc\n\nPublic README: \n\nhttps://github.com/FluidTokens/ft-cardano-fluidswaps-sc/blob/main/README.md\n\nFirst atomic swap on testnet (announcement): \n\nhttps://x.com/FluidTokens/status/2000981697672696122\n\nFirst atomic swap on mainnet (announcement): \n\nhttps://x.com/FluidTokens/status/2037244182130020532\n\nVideo demo: https://youtu.be/gLg3HIOE0LM\n\nLive video demo: https://x.com/elraulito/status/2001324294908035477\n\nCloseout video: https://youtu.be/hrUwx3pKQbM\nCloseout Report in PDF format, hosted on github link\n\nUser-tested swap: https://x.com/silversoul8668/status/2024473201238299061\n\nLive mainnet platform: http://fluid-swap.fluidtokens.com/\n\nFinal audit link\nThe code was updated after M2 and has been audited by the above final audit, the code version audited is at commit hash\nebb1ca5aeaed43ffe02d6ec0c7435240d17b9c13\n\nThe last commit cf50edf86ffce037a2337ea834bc7d11a7079b56 pushed some catalyst documents and upgraded some tests for the contracts with the latest values of the test, the smart contract code is exactly the same and is this verifiable by checking the file of the contracts bytecode https://github.com/FluidTokens/ft-cardano-fluidswaps-sc/blob/main/plutus.json that has no changes\n\nThe following commits in the repository were additional documentation for catalyst, report and audit pdf",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 24
+    }
+  ]
+}

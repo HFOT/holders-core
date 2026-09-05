@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・Pythonプロジェクトセットアップ\n・認証のサポートを追加\n・Implement API Wrapper メソッド\n・Asyncサポートと同期サポートで書かれたwrapperメソッド\n・エラー処理を含む\n・ラッパーメソッドの一部としてデータを取得するAPIメソッドの下の実装\n・アドレス API\n・ADAバランスAPI\n・Asset API\n・アドレスによる資産残高\n・アセットの詳細\n・ポリシーIDでアセットをゲット\n・ポリシーIDによる資産保有者\n・資産IDによる資産保有者\n・ブロックAPI\n・getブロックの詳細\n・最新ブロックをゲット\n・ネットワークAPI\n・ネットワーク情報の取得\n・ネットワークプロトコルの詳細は\n・ユニットテストケース",
+      "criteria": "・Cardanoscan APIサービスとの連携\n・出力セクションに記載されているすべての API で実装されているラッパーメソッドの取得と公開 GitHub PR による検証\n・asyncとsyncの両方で書かれたAPIラッパーメソッド\n・APIラッパー方式でエラー処理をサポート\n・PRで利用できるユニットテストケース",
+      "report": "A. 出力: Python プロジェクト セットアップ\n受諾基準:SDKの設定でGithub Repo\n証拠:\nhttps://github.com/StricaHQ/cardanoscan-python\nhttps://github.com/StricaHQ/cardanoscan-python/pull/1\n\nすべての残りのアウトプットの証拠 - プルリクエストのリンクを完了します。, 私は、出力セクションだけでなく、以下のと関連コミットにリンクしようとしました. 完全なリクエストのプルを見直し、より良いビューを得られると思います。\nhttps://github.com/StricaHQ/cardanoscan-python/pull/2\nhttps://github.com/StricaHQ/cardanoscan-python/pull/3\n\nB. 出力: 認証のためのサポートを追加\n受諾基準:認証サポートを追加\n証拠: https://github.com/StricaHQ/cardanoscan-python/pull/2/commits/458f88f0aa53a9ad9d880798e5a7e07a3a89add5\n\nC. 出力: API Wrapper メソッドの実装\n受諾基準: ラップパーメソッドを付加するデータ\n証拠: https://github.com/StricaHQ/cardanoscan-python/pull/2\n\nD. 出力: 非同期と同期のサポートを備えた Wrapper メソッド\n受諾基準:ベースsdkクラスの同期と非同期のサポートが追加されました\n証拠: https://github.com/StricaHQ/cardanoscan-python/pull/2/commits/a4ce0cbc660102a95a8acd46b3f227e1d29e8fdc\n\nE. 出力: エラー処理サポート\n受諾条件: エラー処理の追加\n証拠: https://github.com/StricaHQ/cardanoscan-python/pull/2/commits/455342c55567e597e0e6c22a0bcbe98ea147aa0a\n\nF. 出力: アドレス API を追加\n受諾基準: アドレス API の実装\n証拠: https://github.com/StricaHQ/cardanoscan-python/pull/2/commits/d5344e2910bf2340060b3cfd6d5aa5ad35828467\n\nG. 出力:アセット API を追加\n受諾基準:アセットAPIの実装\n証拠: https://github.com/StricaHQ/cardanoscan-python/pull/3/commits/8319366fd421b59900d3f6829ea244c2bcae5d04\n\nH. 出力: ブロック API を追加\n受諾条件: ブロック API の実装\n証拠: https://github.com/StricaHQ/cardanoscan-python/pull/3/commits/8319366fd421b59900d3f6829ea244c2bcae5d04\n\nI. 出力: ネットワーク API の追加\n受諾条件:ネットワークAPIの実装\n証拠: https://github.com/StricaHQ/cardanosc"
+    },
+    {
+      "no": 2,
+      "promise": "・Implement API Wrapper メソッド\n・Asyncサポートと同期サポートで書かれたwrapperメソッド\n・エラー処理を含む\n・ラッパーメソッドの一部としてデータを取得するAPIメソッドの下の実装\n・Pool API\n・get stake プールの詳細\n・ステーキプールスタット\n・get stake プールリスト\n・期限切れになるプール\n・退場プール\n・アカウント API の取得\n・get stake キーの詳細\n・stakeキーでアドレスを取得する\n・トランザクション API\n・取引情報の取得\n・アドレスによる取引リスト\n・取引の送金\n・取引の集計\n・試験例",
+      "criteria": "・出力セクションで説明する API の全てが公開 GitHub PR で統合・検証可能\n・すべての API のラッパーメソッドは、非同期と同期をサポート\n・PRにユニットテストケースを追加",
+      "report": "A. 出力: API Wrapper メソッドを実装\n受諾条件: 公開 GitHub PR で検証可能\n証拠: https://github.com/StricaHQ/cardanoscan-python/pull/4\n\nB. 出力: エラー処理を実施(既にSDKクラス内でのマイルストーン1で完了)\n受諾条件: 公開 GitHub PR で検証可能\n証拠: https://github.com/StricaHQ/cardanoscan-python/pull/2\n\n出力の全部がPRの一部です。以下はPR内のコミットの内訳です。\n\nC. 出力: プール API、報酬アカウント API、トランザクション API\n受諾条件: 必要な出力が実装され、公開 GitHub PR を介して検証可能\n証拠: https://github.com/StricaHQ/cardanoscan-python/pull/4/commits/c5b2f16dc93ee0cb6c09c677760639fbc43c7b\n\nD. 出力: テスト ケース\n受諾基準: 公開 GitHub PR で書かれた検証可能なテストケース\n証拠: https://github.com/StricaHQ/cardanoscan-python/pull/4/commits/737ba4baf6f716da6c30e8ae90251b409fb8e788\n\nE. 出力:短いビデオ デモ\n受諾条件:実装を検証するために提供される短いビデオデモ\n証拠: https://youtu.be/brrbCao-3m0"
+    },
+    {
+      "no": 3,
+      "promise": "・PyPI上でSDKパッケージを再確認\n・API文書\n・Cardanoscan APIサービスサイトに掲載されているSDK\n・Cardanoscan公式XハンドルからPython SDKのX発表\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・PyPI 公開 URL で利用できる Python SDK パッケージ\n・公開URLで利用可能なAPIドキュメント\n・SDKをリストするCardanosca APIサービスページへのリンク\n・Python SDKリリースのお知らせ\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "オープンソースライセンスをリポジトリに追加しました。https://github.com/StricaHQ/cardanoscan-python\n\nA. 出力: PyPi で SDK を解放して下さい\n受諾条件:PyPiで利用可能なPython SDKパッケージ\n証拠: https://pypi.org/project/cardanoscan-python/\nB. 出力: API ドキュメント\n受諾条件:公開URLで利用可能なAPIドキュメント\n証拠: https://docs.cardanoscan.io/\nC. 出力:CardanoscanのウェブサイトでリストされているSDK\n受諾条件:Cardanoscanウェブサイトに掲載されているPython SDK\n証拠: https://cardanoscan.io/api (ヘッダーセクションバナーと2番目のセクション、例の下)\nD. 出力:SDKリリースのX発表\n受諾条件:公式のCardanoscanハンドルによってXで発表されるSDK解放\n証拠: https://x.com/cardanoscanio/status/2008139221232763236\nE. 出力: レポートを閉めて下さい\n受諾基準:報告書を閉じる\n証拠: https://drive.google.com/file/d/1rPc2ZDjLyNBf9mpcF4mJUGdmkZ nGwxN/view?usp=sharing\nF. 出力: ビデオを閉めて下さい\n受諾条件: ビデオを閉めて下さい利用できます\n証拠: https://youtu.be/hQ6KglpYdyw"
+    }
+  ]
+}

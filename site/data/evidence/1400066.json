@@ -1,0 +1,37 @@
+{
+  "title": "Hydra-Powered Micro-PaaS",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 22500,
+      "promise": "・Docker container template for parallel NFT minting: A pre-configured Docker image that allows users to deploy a Hydra head specifically optimized for high-volume, parallel NFT minting.\n・CLI tool for head initialization: A command-line interface tool that abstracts the complexity of Hydra, enabling users to initialize, fund, and close a Hydra head for an NFT drop without manual Haskell script interaction.\n・Automated test suite covering 95% of use cases: A comprehensive set of tests validating the NFT minting process.\n・Documentation for asset policy configuration, metadata standards, and batch minting: Detailed user guides covering how to configure minting policies, adhere to CIP standards for metadata, and efficiently batch transactions for large collections(upto 100k).",
+      "criteria": "・The Docker template successfully initializes a Hydra head on the Cardano testnet using the provided CLI tool and integrated Ogmios service.\n・Achieving a consistent 400+ TPS across 10 test runs\n・Successfully mints 10,000 unique NFTs with distinct metadata on preview testnet within 60 seconds.\n・The CLI tool executes all core commands (init, fund, mint, close).\n・The automated test suite executes, achieving 95% code coverage as verified by a coverage reporting tool (e.g., coverage.py).\n・The documentation is published and clearly explains the process for configuring a custom asset policy and prepa",
+      "report": "Hello, and thank you for taking the time to review the milestone and provide detailed feedback. I really appreciate it. I’m happy to clarify the points you raised.\n1. Performance Test Screenshot\nThank you for pointing this out. The image link has been corrected and can now be accessed here:\nhttps://raw.githubusercontent.com/Kwired/Hydra-Powered-Micro-PaaS/main/docs/Performance-test.png\nThis screenshot shows the results of the NFT minting benchmark run.\n2. Preview vs PreProd Testnet\nYou are correct that the milestone description originally referenced the Preview testnet. During testing, we encountered stability and synchronization issues between the Hydra node version and the Cardano node environment available on Preview at that time.\nTo ensure the benchmark could run reliably and produce consistent results, the performance tests were executed on PreProd testnet, where the Hydra node, Cardano node, and Ogmios setup remained stable throughout testing.\nThe Docker environment and CLI workflow provided in the repository are not tied to a specific testnet, so the same setup can also run on Preview if required. The use of PreProd was purely to ensure a stable environment for benchmarking and does not affect the functionality delivered in the milestone.\n3. Verification of the 10,000 Minted NFTs\nThis benchmark uses Hydra, which operates as an off-chain state channel for Cardano. Transactions—including mint operations—are executed inside the Hydra head and aggregated into snapshots. When the Hydra head commits or closes, the final state is settled on the Cardano ledger.\nIn this benchmark, 10,000 NFT mint operations were executed inside the Hydra head, which enabled the system to reach the high throughput demonstrated in the benchmark results.\nThe PreProd address used during the test can be viewed here:\nhttps://preprod.cardanoscan.io/address/addr_test1vzzhf4eudhv789kdfurvlapzn7lqvcjhsalaj2xdcv47qhcdrqg9s\nThe Hydra commit transaction associated with the benchmark can be viewed",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 26,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 22500,
+      "promise": "・Pay-per-use API module with dynamic pricing config: RESTful API endpoints for initiating and verifying micropayments, with a configuration file for setting price tiers and payment policies.\n・Real-time gaming session channels (WebSocket integration): A WebSocket server that establishes and manages persistent connections for gaming clients, facilitating instant state updates and payment channels within game sessions.\n・React-based dashboard for TPS/latency monitoring: A single-page application built with React that displays real-time metrics for Transactions Per Second (TPS) and transaction latency.\n・Auto-scaling module spawning new Hydra heads at 80% load: A script or service that monitors head load (e.g., transaction queue length) and automatically initializes a new Hydra head when a predefined 80% capacity threshold is breached.\n・Recorded video will be hosted on youtube that shows how to use streaming payments.",
+      "criteria": "・The pay-per-use API processes a stream of 1,000 microtransactions, each with a value equivalent to $0.01, with an average latency of under 1 second per transaction from initiation to confirmation.\n・The WebSocket gaming channels maintain stable connections for 50+ concurrently connected virtual \"players\" during a 48-hour stress test, achieving 99.9% uptime with sub-200ms roundtrip times for messages.\n・The React dashboard that visualizes TPS and latency metrics, updating the displayed data with a lag of less than 5 seconds from the actual event.\n・The auto-scaling module correctly detects when a",
+      "report": "Milestone 2 has been completed successfully. All required deliverables, technical implementation, stress testing evidence, and source code are provided below.\nLive Application Demo: https://hydra-powered-micro-paa-s-m2.vercel.app/\nGitHub Release (v0.2): https://github.com/Kwired/Hydra-Powered-Micro-PaaS/releases/tag/v0.2\nStress Test Summary Report (PDF): https://github.com/Kwired/Hydra-Powered-Micro-PaaS/blob/main/docs/Stress_Test_Summary_Report.pdf\nRaw Stress Test Logs: https://github.com/Kwired/Hydra-Powered-Micro-PaaS/blob/main/stress_test.log\nor \nhttps://raw.githubusercontent.com/Kwired/Hydra-Powered-Micro-PaaS/refs/heads/main/stress_test.log\nTechnical Walkthrough Video: https://www.youtube.com/watch?v=r_HmL2OMlvQ\nLive Demonstration Video: https://youtu.be/r_HmL2OMlvQ?si=98XKYDwfFyh6idjW&t=210",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    }
+  ]
+}

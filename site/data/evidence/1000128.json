@@ -1,0 +1,94 @@
+{
+  "title": "New SPO revenue streams for securing bridge infrastructure",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "・Select and create the SPO Pioneers Working Group\n・Conduct several workshops with SPOs on various topics from: tooling requirements, tooling scope, rewards and fee tiering model, set-up walk throughs. \n・Requirement gathering - understand the existing SPO infrastructure and their ability to act as watchers. \n・Begin drafting the tokenomics\n・Begin drafting the fee tiering and profit distribution model",
+      "criteria": "・Working group SPOs selected and emails sent out to them\n・Minimum of 4 workshops with SPOs - to publish video recordings on Youtube and make available to everyone",
+      "report": "Here is the github link which covers all of milestone 1 components.\nhttps://github.com/rosen-bridge/Catalyst-Fund10/blob/master/F10-SummaryOfFindings.md\n\nIn the github you will find:\n・Summary of all 4 workshops (high level dot point summary of the recordings / session)\n・Link to access all workshop recordings (found on the zenGate Global Youtube channel) - these were run by the zenGate and Rosen Bridge teams.\n・There is also a blog summary in more detail for workshop 1 as there were some audio issues (https://medium.com/@zenGate/summary-first-workshop-on-rosen-bridge-toolkit-and-cardano-spos-b456e9ed19b3)\n\nThanks.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 250000,
+      "promise": "・Send email updates covering the outcomes and summary of the workshops to participants\n・Create a concise report on the key takeaways from the workshops and specifications / requirements for the SPOs\n・Conduct stakeholder consultation with the SPO working group on the draft tokenomics rewards model. \n・Iterate and refine the feedback into the tokenomics and rewards model. \n・Finalize and publish the tokenomics and iterate based on feedback\n・Finalize and publish the fee tiering and profit distribution model. Iterate based on feedback. \n・Make an assessment on whether a CIP is required or not. Begin the drafting process if required, provide an explanation if it is not required.",
+      "criteria": "・Publish article or twitter thread on the key findings from the workshops and next steps\n・Open source and publish the tokenomics\n・Open source and publish the fee tiering and profit distribution model\n・Draft outline of the CIP or explanation of why it is not required",
+      "report": "Key milestones include:\nArticle or twitter thread on the key findings from the workshops (via the zenGate Global and Rosen Bridge accounts)\n・We published an article on the zenGate Global medium which covers this in more detail here: https://medium.com/@zenGate/rosenbridge-watcher-workshops-summary-findings-so-far-1e5291f65645 \n・This is similar to what was submitted on the github in milestone 1, which we went into quite more detail than what was required for milestone 1, in anticipation that we needed to submit this for milestone 2. \n・These findings from the workshop were the key inputs into finalizing the core rewards distribution model and the tokenomics to ensure strong incentives and assumptions.\n\nPublished tokenomics - published under the Rosen Bridge Github (via a link) - https://github.com/rosen-bridge\n・You can find the full tokenomics write up on the Rosen Bridge github - https://github.com/rosen-bridge/Catalyst-Fund10/blob/master/F10-RewardModelAndTokenomicsOfRosenBridge.md\n\nPublished rewards model - published under the Rosen Bridge Github - https://github.com/rosen-bridge \n・You can find the rewards distribution model on the Rosen Bridge github - https://github.com/rosen-bridge/Catalyst-Fund10/blob/master/F10-RewardModelAndTokenomicsOfRosenBridge.md\n\nTweet on status of the CIP and whether we are proceeding with this or not.\n・Upon consideration, the team has determined that there is not a current need or requirement to create a Cardano Improvement Proposal. However, instead the Rosen Team will support Cardano connector using Koios and Ogmios. This has been shared with the community and will ensure SPOs can seamlessly utilize the watcher toolkit. \n・We have mentioned in our tweet that if there is a need for the CIP to move forward we will prioritise it, however within the current scope it is not a requirement and we will now prepare for the launch readiness for the future milestones we have started working on. \n・Here is the link to the tweet - https://x.com/Zen",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 250000,
+      "promise": "・Smart contract development - design and develop the underlying contracts that will facilitate the operations of the Rosen Bridge\n・Development of off-chain tools: create tools to assist SPOs in tasks that cannot be handled on-chain such as data aggregations and monitoring\n・Interface development: design and build a user-friendly interface that allows SPOs to easily interact with the Rosen Bridge. This includes things such as data visualization.",
+      "criteria": "・Smart contract source code available publicly on the Rosen Bridge Github\n・Off-chain tooling code available publicly on the Rosen Bridge Github\n・Interface development code available publicly on the Rosen Bridge Github",
+      "report": "(1) Source code: The first outputs include the completion of the source-code. This has taken the majority of the time and marks a significant milestone. The code is open-source and is in the process of getting audited again (first audits already complete as requirement for next milestone 4). \nSmart contract development - design and develop the underlying contracts that will facilitate the operations of the Rosen Bridge\n・Source code found on the Rosen Github - https://github.com/rosen-bridge/contract\n\nDevelopment of off-chain tools: create tools to assist SPOs in tasks that cannot be handled on-chain such as data aggregations and monitoring\n・Guards Service source code - https://github.com/rosen-bridge/guard-service\n・Watcher (for SPOs) source code - https://github.com/rosen-bridge/watcher \n\nInterface development: design and build a user-friendly interface that allows SPOs to easily interact with the Rosen Bridge. This includes things such as data visualization. \n・The UI code found here: https://github.com/rosen-bridge/ui\n\nAs per the first PoA feedback, we were requested to show some receipts around the testing of the code:\nThe Rosen team has already launched the source code on the testnet. Here are some twitter receipts about this happening. We are now preparing for the mainnet launch (which will have the actual code running on main-net).\n・Rosen Bridge Beta Test Tweet in April 2023 - https://x.com/RosenBridge_erg/status/1651252181494890496?s=20\n・Rosen Bridge Beta Launch - there is a link to the beta bridge (when it was live at the time) - https://x.com/ergo_platform/status/1651226991432024067?s=20\n・Bridge UI Beta Launch example - https://x.com/RosenBridge_erg/status/1644366727441190914?s=20\n・Beta Launch by community tester tweet - https://x.com/Ergcube/status/1651216753391796226?s=20\n・Beta Launch Twitter space once beta bridge was live - https://x.com/hoskytoken/status/1652749094111117312?s=20\n・Another community tweet of the Beta Launch - https://x.com/sigmaverse_ergo",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 95000,
+      "promise": "・Feedback loop and integrations: make necessary adjustments and improvements to the tooling ahead of the mainnet launch\n・Conduct testnet testing: deploy tools on a testnet environment with the SPO pioneers to provide further feedback and identify potential issues. \n・Conduct final code audits on the source code\n・Mainnet Launch Preparation: prepare for the full onboarding and mainnet launch.",
+      "criteria": "・Document key takeaways and feedback provided by the SPO pioneers watcher group\n・Document (open-source) highlighting the audit process and score\n・Updates and iterations to be reflected in the open-source Rosen Github\n・Article highlighting the key mainnet preparations: this includes onboarding strategy, dates and plans outlined for the community",
+      "report": "Updates in the Rosen Bridge Github (open-source)- https://github.com/rosen-bridge\n・All changes can be visible on the github link above. \n\nTechnical changes and code update\nDue to the result of the public test and stress tests, discovered bugs in the codes, security audits, and community feedback, we have made some necessary/optional changes in the code to improve security and performance. As a result, almost all of these changes affected other packages and apps, but we are referring to the main changes here.\nOgmios v6 Update\nReason: update the underlying infrastructure to be more efficient\nMajor changes:\n@rosen-bridge/scanner v3.0.0 \n@rosen-bridge/rosen-extractor v3.0.0\nKoios v1 Update\nReason: update the underlying infrastructure to be more efficient\nMajor changes:\n@rosen-chains/cardano-koios-network v3.0.0\nBlockFrost Cardano API\nReason: Broaden information sources support\nMajor change:\n@rosen-chains/cardano-blockfrost v0.1.0\nUpdate Cardano Token Format\nReason: Utilizing a more general format to be able to work with all Cardano endpoints\nMajor change:\n@rosen-chains/cardano v3.0.0\nFix Tss Signer Bugs\nReason: A missed mutex lock and considering server-side TTL to prevent asynchronous operation\nMajor change:\n@rosen-bridge/tss v1.1.2\n@rosen-bridge/tss v1.2.0\nFix Contracts Security Vulnerabilities\nReason: Fixed security vulnerabilities after public review\nMajor change:\n@rosen-bridge/contract \nFix Scripts Misbehavior\nReason: Fixed contract misbehavior after the latest vulnerability fix\nMajor change:\n@rosen-bridge/contract\nAdd Locki Log Monitor\nReason: Facilitating service monitoring\nMajor change:\n@rosen-bridge/abstract-logger v1.0.0\nUX Improvements and Fixes\nReason: Fixed existing bugs and improved user experience after usage feedback\nMajor changes:\n@rosen-bridge/watcher-app\n@rosen-bridge/guard-app\n@rosen-bridge/rosen-app\n------------------------------------------------------\nDocument write up highlighting key findings from the refine and iterate phase (available for the",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 29,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 50000,
+      "promise": "・Conduct monthly AMAs - this the completion of 5 AMAs minimum ahead of the final milestone.\n・Create and publish (open source) an instruction manual for watchers: this includes a step-by-step manual to onboard new watchers. Including technical requirements, setup procedures and common troubleshooting tips. \n・Educational material: produce a series of instructional video that visually guide watchers and interested community members through the Rosen Bridge functionalities and benefits.",
+      "criteria": "・Open source the instruction manual for new SPOs to onboard as a watcher\n・Conducted 5 AMAs (one for each milestone to date)\n・Publish the educational and instructional video via twitter or on Youtube",
+      "report": "Open source instruction onboarding manual\n・Gitbooks: https://docs.rosen.tech/rosen/\n・Github Link: https://github.com/rosen-bridge/docs\n\nAMAs recorded on twitter\nThis covers the first 5 AMAs conducted as Rosen Bridge updates. \n・Twitter AMA #1 hosted on November 15th 2023 - LINK\n・Twitter AMA #2 hosted on December 4th 2023 - LINK\n・Twitter AMA #3 hosted on December 29th 2023 - LINK\n・Twitter AMA #4 hosted on Jan 10th 2024 - LINK\n・Twitter AMA #5 hosted on Jan 24th 2024 - LINK\n\nEducational videos published on twitter or youtube\nA series of educational videos have been created and published on the zenGate Global Youtube accounts. These have been professionally edited. These watcher setup videos include:\nSPO Watcher Tutorials\n・Watcher Tutorial #1 - LINK\n・Watcher Tutorial #2 - LINK\n・Watcher Tutorial #3 - LINK\n・Watcher Tutorial #4 - LINK\n・Watcher Tutorial #5 - LINK\n・Watcher Tutorial #6 - LINK\n・Watcher Tutorial #7 - LINK\n・Watcher Tutorial #8 - LINK\n・Watcher Tutorial #9 - LINK\n・Watcher Tutorial #10 - LINK\n・Watcher Tutorial #11 - LINK\n・Watcher Tutorial #12 - LINK\n・Watcher Tutorial #13 - LINK\n\n[Extra - not a requirement] - Fireside Chat with Joseph Armeanio on Rosen Bridge Tech\nFireside chat between Theodore from the zenGate Global team and Joseph Armeanio (Co-Founder of the Rosen Bridge). Full link here for the 1 hour conversation.",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 23
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 130000,
+      "promise": "・Continue onboarding and outreach effects until the 30 SPOs as watchers goal is reached.\n・Conduct final AMA (the 6th AMA)\n・Build further community awareness around security assumptions for Rosen Bridge and the various use-cases",
+      "criteria": "・Record and host the final AMA (for milestone 6)\n・Reach the 30-watcher goal run by SPOs",
+      "report": "[In response to PoA Feedback] Project Closeout report and Video \n\n・Project close out report - https://drive.google.com/file/d/1czktpBGw1LvTax6JpZaDIHPNoeXn7aca/view?usp=sharing\n・Project close out video - https://www.youtube.com/watch?v=_wr2rN8JnoQ&ab_channel=zenGateGlobal\n\n-------------------------------------------------------------------------\nProof that there are 30 watchers (this should be visible by the number of SPOs that have committed collateral to run watchers)\nCurrently there is a telegram bot (https://t.me/Rosenbridge_bot) that reports the number of watchers. \nAs of the 10th of January, there are 154 watchers - more than the 30 watcher target set. This is a huge accomplishment. There are 77 Ergo watchers and 77 Cardano watchers. \nX Post Link from early in January - LINK\nWe have also seen community projects pin up data dashboards as well - see example link from ErgCube.\nProof of all 6 AMAs: \nRequirement: including the final 6th one for this particular milestone - these AMA recordings will be posted on the Rosen Bridge Gitbook (which will be created during the education phase).\nThe full list of AMAs are as follows:\n・Twitter AMA #1 hosted on November 15th 2023 - LINK\n・Twitter AMA #2 hosted on December 4th 2023 - LINK\n・Twitter AMA #3 hosted on December 29th 2023 - LINK\n・Twitter AMA #4 hosted on Jan 10th 2024 - LINK\n・Twitter AMA #5 hosted on Jan 24th 2024 - LINK\n・Twitter AMA #6 hosted on Feb 6th 2024 - LINK 1 and LINK 2\n\nYou can also find the list of links on the Rosen Gitbook as required by the milestone. https://docs.rosen.tech/rosen/readme/rosen/catalyst-fund10/fund-10-ama-recordings\nKey Links and Project Launch\nThe Rosen Bridge is NOW LIVE between Ergo and Cardano. Here are the following links:\n・Live Bridge App - https://app.rosen.tech/\n・Main website - https://rosen.tech/\n・Educational Gitbook - https://docs.rosen.tech/rosen/\n・Gitbook (Open Source) - https://github.com/rosen-bridge\n・Telegram: https://t.me/rosenbridge_erg (now with over 631 members)",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 27
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "title": "Revuto - MASTERCARD integration >>> to bring Cardano Native Tokens to Debit Cards supporting crypto <<< and remove friction between crypto liquidity and real-world economic activities -> Subscription Payments!",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "・Front-end design (FIGMA) and new UI integration. The new UI will contain updated KYC verification screens to get eligible for the debit cards (document checking with PoA, a short questionnaire for compliance, mobile number verification), screens for: \"create a new debit card for the subscription\", \"add the top-up card\", \"choose the top-up card to pay with FIAT or Cardano wallet to pay with CNT\", control the payments (block, snooze, approve)\", upgrade to the Revuto Pro (paying account), downgrade to Revuto Free (freemium account), history of payments, and more.\n・Preps for the API integration with the external banking and card issuing provider (creating a flow on the front with all the necessary action buttons to trigger requests on the backend side of the 3rd party platform/banking provider).",
+      "criteria": "・UI designs, as described in outputs, are completed in Figma and ready for integration with the Linkcy/Paynovate sandbox (backend).\n・The discovery phase of the external (Linkcy/Paynovate) API documentation is completed.",
+      "report": "As promised, we're adding a short video (https://youtu.be/K3QgYNrKIXQ) to prove milestone completion. It explains a new user interface supporting the Mastercard Debit Program described in Milestone 1. The presented front-end design is fully completed and ready for integration with the Revuto backend and our partner Linkcy/Paynovate (a signed third-party service provider for card issuing and acquiring), including the integration with the existing Cardano wallet within the Revuto app.\nWe can grant you access to our Figma project file shown in the video, but not if the information will be publicly available. Our Figma account contains all Revuto mobile app UIX states, of which many are still in development—some show previews of unreleased product features and designs that we're exploring and are confidential. \nInstead of Figma, you can access the new UIX snapshot using this link.\nOn September 4th, we publicly released the latest bi-weekly development report, which includes updates about the Virtual Debit Card integration described in our Idea Catalyst proposal ID #1200196.\nIMPORTANT NOTE:\nWe started working on the Debit Card product immediately after seeing the Fund 12 voting results and promised to launch it during the Cardano Summit in Dubai. We already paid for a booth at the summit for the product launch and announced the launch to the media. The summit starts in 40 days, so to be on time, we must execute four out of six milestones by then. Today, we were told that the snapshot for the approved milestones is on September 16th, while the following payment is scheduled for September 23rd. As the first payment was late, we must be on point with milestones approval(s) to meet the initial schedule and launch the promised product on time (during the Cardano Summit on October 23rd). To be on time, we'd politely ask you to approve our M1 proof of achievement before the snapshot takes place on September 16th (in 3 days). \nThank you in advance,\nVedran Vukman, CEO at Revuto.",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 114000,
+      "promise": "・Integration with Card issuing and banking provider (Linkcy/Paynovate)\n・Integration with Fireblocks for the custodial setup (fast card top-up)",
+      "criteria": "・The compliance and KYB from card issuing and banking providers are completed.\n・Started integration with Fireblocks for the custodial (wallet) setup for the fast card top-up with crypto",
+      "report": "Dear Catalyst team, \nAs promised, we're adding a short video: \"Revuto's Compliance and KYB for the Debit Card Program with Linkcy - Idea Catalyst ID #1200196, M2\" (https://youtu.be/rYHA9PVdSfQ) to prove Milestone 2 completion. This video explains a KYB and compliance process with Linkcy for issuing Mastercard Virtual Debit Cards that will be supporting top-ups with other Debit/Credit cards and Cardano native tokens, which is all described in Milestone 2 of our Idea Catalyst proposal ID #1200196 (Fund12). \nThe video previews Mondayboard with Linkcy for the compliance process required by the EU regulator. Our latest communication with Linkcy via Slack shows that we passed all the regulatory compliance screening and are ready for the demo call to go into production. Up until now, we have been working in a testing environment. \nThe app v4 preview shows the integration with the Linkcy platform for card issuing and acquiring (adding top-up cards) is already working.\nThe link to Lincky's invoice and bank statement shows Revuto paid for the service to start the integration. \nThe link to some compliance documents required by the card issuing, payment processing, and acquiring partner (Linkcy & Paynovate). All other compliance documents are previewed (shown via Mondayboard/Dropbox) in the video. We can't publicly share direct access to the documents (Linkcy agreement and the fee structure, AML policies, Complaints Policy, IT Policy, Transaction monitoring, Fraud Detection & Prevention, Risk assessment, Insurance Policy, Revuto OU financial statements, Business Plan, and Business continuity plan...) because they're confidential.\n----\n\nThe second video (https://youtu.be/IN9jm56Wamk) shows Revuto's Terms of Use and Data Privacy, further proving the integration with Linkcy for the (Mastercard) Debit Card program. \n----\n\nThe third video, \"Revuto's integration with Fireblocks for the custodial wallet—Idea Catalyst ID #1200196, M2\" (https://youtu.be/nIIi--Yi5b0), shows that Revuto h",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 96000,
+      "promise": "・Start issuing the first Virtual Debit Cards to users within the EEA and the UK for subscription payment testing and app integration purposes (e.g., to approve, block, or snooze a payment).",
+      "criteria": "・The full integration with the card issuing and banking provider (LInkcy/Paynovate) will happen, allowing them to perform AML check-ups, monitor transactions, perform KYC checks (integration with SumSub), and detect and prevent fraud. \n・The card issuing and banking provider will start opening IBAN (Bank accounts) and internal settlement accounts.\n・The integration with the acquirer for the card top-up with other debit/credit cards",
+      "report": "Dear Project Catalyst review team,\nWe're submitting proof for Milestone 3. \n・Test app (link/access to the Test Flight for iOS or .apk for Android mobile phones) \n\nYou can download the Revuto app using this QR code. \nOn October 23rd, Revuto will present and launch its Debit Card program during the Masterclass at the CardanoSummit2024 in Dubai. Revuto is one of the event's main sponsors and will launch the product there. The version v4.x will be available on Apple and Google stores on October 23rd, and if you're from EEA, you can test the Debit Card product yourself. \n\n<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATMAAAE0CAYAAABAXdTmAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAABM6ADAAQAAAABAAABNAAAAABZI/QMAABAAElEQVR4Ae2dB7gdtbGAlR4ghBZMD4ZgEtNr6MaADZiOCS2hmI4JBtMhoZhqSmw6pj1iIFQDj1BCdTCmmWo6NpgaA6EFEkIKITlP/z72Zq/uStpdrc7unqv5vr13z0oajUbaWWlmNPqKyA9zyiLryGttea0gr+/La3Z5fVNeX5FXgMCBwIHAgSwcQF78W17/lNen8npTXk/K6wF5PSivv8krM+QRPqtIrMPktbm8EGABAgcCBwIHfHFghkT8W3ldJq8Xs1SSRZgtKBH9Ql7D5fXVLEhDnsCBwIHAgZI48JnEc7a8TpPXX0w4bcJsR1n4LHn1UZF89atfFYsuuqhYaqmlxCKLLCJmn312wbMAgQOBA4EDWTjwla98RXzxxRfik08+EW+99ZZ48cUXxcyZM3VFman9XF536zKYhNmxstDxasElllhCDB06VAwZMkSstNJK4rvf/a6aJfwOHAgcCBzIzYGPPvpIPPHEE+K2224T119/vXj//fdVHOjXRshrnJrAb50wGyvTDkoWmGuuucSRRx4p9t57bzHnnNgAAgQOBA4EDvjhwDvvvCPOP/98ceaZZ4q///3vaiWovUarD9OE2XEy06hkxkGDBolx48YJZmUBAgcCBwIH2sWBp59+WgwfPlxMmTJFrZIl5wXJh6ow+4lMnJDMMGLECHHOOeckH4X7wIHAgcCBtnEAvdrOO+8srr32WrXOAfIBbhwRJIXZAvLJdHnhMxZBEGQxJ8L/wIHAgao5sO2224obbrghScab8sey8sJHrZvO7HL5exceAptssom4/fbb//9H+Bs4EDgQOFAxB/7973+LNdZYQzz++ONJSk6SP47hQTwzW0veP8gDYL755hMvvfSSQOkfIHAgcCBwoC4cePnll8WKK64o/va3rs0Bn0valpbXjK99SSTWy6W+vBdjx44Va6/NbqUAgQOBA4ED9eHAPPPMI/7xj3+IyZMnx0Qhw76Q193MzNCVvS6vb8lL/PCHPxTTpk3jNkDgQOBA4EDtOPDZZ5+Jfv36iXfffTemjZslcNnfRF6RICNljz324F+AwIHAgcCBWnJgttlmExgDEsCEbG2E2Xrxw1lmmUVsscUW8c/wP3AgcCBwoJYcYBeSAoMQZsvED9lnueSSS8Y/w//AgcCBwIFacmCFFVYQCy+8cJK25RBm88dPyMDmzwCBA4EDgQN15sAcc8whkFcJ6Isw+3b8gC",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 19000,
+      "promise": "・Issuing Virtual Debit Cards within the app, allowing top-ups with Cardano Native tokens (not only FIAT)\n・Operational and fully integrated custodial wallet supporting Cardano Native Tokens for the fast Card top-up",
+      "criteria": "・The flow of funds for the settlement with crypto (an API integration with Banxa or CEX for Crypto to FIAT off-ramp and sending FIAT via SEPA transfer to the settlement account with Linkcy/Paynovate) is done = TOP UP THE CARD WITH CNT!\n・Cleared AML check-ups, transaction monitoring, KYC, fraud detection, and prevention for the custodial wallet users = granted access to the fully operational custodial wallet supporting the most popular cryptocurrencies, including CNTs.",
+      "report": "Dear Project Catalyst review team,\nWe're submitting proof for Milestone 4. \n・Test app (link/access to the Test Flight for iOS or .apk for Android mobile phones) \n\nYou can download the Revuto app using this QR code. \nOn October 23rd, 2024, Revuto launched its Debit Card Program (Private Beta) during the Masterclass at the CardanoSummit2024 in Dubai. Revuto was one of the event's main sponsors. We had a booth there and launched the Card Program in the EEA for the iOS users. The Android version was released for Private Beta testers a month later. All the happenings were documented via our social media channels.\nTwo weeks ago, Revuto publicly launched the Debit Card Program for EEA users, and apps for both platforms (Android and iOS) are now available on the respective stores. \nHere you can check our video, which serves as Proof of Achievement for this milestone:\n・video is proving that Virtual Debit Card issuing is working\n・video is proving Debit Cards top-up with FIAT (other debit/credit cards) and CNT ($REVU in this case) is working\n・video proving the settlement in FIAT (EUR) from CNT ($REVU) is working on the backend side..\n\n・Bi-weekly development reports (URL link to the report)\n\nhttps://getrevuto.medium.com/19-7-2025-revuto-bi-weekly-updates-fd8f6c9040a2\nThis Proof of Milestone serves as evidence of the completion of Milestone 4. It shows Revuto integrated with both Linkcy/Paynovate for opening bank accounts (IBAN) for our EEA users, debit card issuing, and with the Fireblocks platform for performing settlements in FIAT from CNT (ADA and REVU). The video confirms the completion (Proof of Achievement) of Milestone 4 of our Idea Catalyst proposal, ID #1200196 (Fund 12).\nIn the coming days, Revuto will launch a Crypto Wallet (custodial) that supports the most popular cryptocurrencies and Cardano Native tokens. Revuto Crypto wallet will allow users to instantly swap all supported cryptocurrencies and make top-ups with $REVU and $ADA to Debit Cards for Subscription Paym",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 19000,
+      "promise": "・Release of mobile app v4 with Debit Cards (Mastercard) supporting CNTs enabled\n・Premium account enabled (kickstarting the $REVU token economy)",
+      "criteria": "・Revuto app v4.0.0, which supports debit cards and CNTs, is live for Android and iOS devices and users from the EEA and the UK.\n・Revuto will launch Revuto Pro (paying) accounts with premium features (in the free app, the user will be able to get up to 3 debit cards to use for actively controlling subscription payments; in the premium app, up to 10).\n・Revuto will ask users to buy and lock up a specific amount of $REVU for a specific period to grant them access to Premium Features (more debit cards, cashback rewards when paying, access to the Snooze a payment, Stake to Subscribe and other featur",
+      "report": "・A. Output: Release of mobile app v4 with Debit Cards (Mastercard) supporting ADA and CNTs enabled\n\nAcceptance criteria: REVUTO has launched v4.x.x, which integrates with Mastercard to issue virtual debit cards for subscription payments that support crypto (Cardano). Direct top-up with ADA is available, as well as any CNT from a Cardano wallet and a Crypto wallet within the Revuto app via the token swap feature. \nEvidence: Link to video explaining the product, which is available worldwide \nA full sharable link to YT video - https://youtu.be/3Hnk5IrAL_U\nLinks to the app: iOS (https://apps.apple.com/hr/app/revuto/id1550940719), Android (https://play.google.com/store/apps/details?id=com.revuto.dev&pcampaignid=web_share)\nLink to paid promo (paid booth, Silver Sponsor at Cardano Summit to promote the product)\n*** Revuto paid for the sponsorship to announce and promote the product after FUND12 onboarding at the Cardano Summit. Last year, we launched the product but had to pause it due to issues with card issuers and banking providers. It took us a few months to find a replacement for the Mastercard card issuance and banking services. The app is now available worldwide, including debit card issuing. \n・B. Output: Premium account enabled (kickstarting the $REVU token economy)\n\nEvidence: The Revuto app is already available on the Apple and Google Play stores, and an in-app purchase to upgrade to Revuto Pro (8 EUR/month) is also available.\nLinks to the app: iOS (https://apps.apple.com/hr/app/revuto/id1550940719), Android (https://play.google.com/store/apps/details?id=com.revuto.dev&pcampaignid=web_share)",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    }
+  ]
+}

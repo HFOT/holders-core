@@ -1,0 +1,46 @@
+{
+  "title": "Bug Bounty Platform - Cardano Community-Led Security",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 27000,
+      "promise": "・Repository setup with automatic deployments\n・NextJS skeleton website with basic user flow\n・Backend prepared to store user data\n・Figma with wireframe designs of the future UX/UI",
+      "criteria": "Github repository connected to Vercel. The deployed website should have basic user signup and wallet connection flow. The backend can store user data. Figma contains the wireframe designs for the next development phase.",
+      "report": "The current public version of design wireframes:\nhttps://www.figma.com/file/46HPrNpX4gUnp6WZQtJDAV/Bug-Bounty-%2F-Public-link?type=design&node-id=0%3A1&mode=design&t=8B3bIntOE0ed4Vt9-1\nThe Github of the project:\nhttps://github.com/vacuumlabs/bug-bounty\nDeployment of the website with working onboarding flows (social, email, wallet connection):\nhttps://bug-bounty-mocha.vercel.app/",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 25000,
+      "promise": "Outputs in this phase will move from wireframe designs (pure UX flow with no visual design) to visual designs, where the UI itself is designed. Frontend developers will start to implement this on the website. In parallel, we will work on the backend part, which will undergo architectural preparation, so that it can work in PoC phase as well as in future phases.",
+      "criteria": "・Figma contains visual UI elements and website subpages designed for at least one of the two UX flows (either bounty hunters flow or the flow of a project offering bug bounty)\n・Website deployed has a develop branch testable with this UX flow\n・Backend architecture proposed",
+      "report": "The UX flow for projects submitting their code is ready.\n\nA link to Figma containing the designs\n・https://www.figma.com/design/hBFtbjRFoeXl1eKBk9dLyx/Bug-Bounty-%2F-Public-link-UI?node-id=0-1&t=4nyMX7TmVn6FrGXk-0\n\nA link to the develop branch deployment of the website \n・https://bug-bounty-mocha.vercel.app/\n\nBackend architecture diagram added to Github repo \n・https://github.com/vacuumlabs/bug-bounty/blob/main/architecture-diagram.png\n・https://github.com/vacuumlabs/bug-bounty/blob/main/src/server/db/diagram/db-diagram.svg\n・https://github.com/vacuumlabs/bug-bounty/blob/main/README.md",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 5
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 18000,
+      "promise": "Output of Milestone 3 is focused on finalizing the frontend. We will deliver:\n・Finish all the missing UI elements in Figma\n・Implement all these designs on the website",
+      "criteria": "・Figma visual UI designs are finished for all UX flows, all website components, and subpages\n・These visual elements are represented on the testing deployment of the website",
+      "report": "Full UX is implemented and clickable on the website using mocked data:\n・https://bug-bounty-mocha.vercel.app/\n\nThe final Figma design:\n・https://www.figma.com/design/hBFtbjRFoeXl1eKBk9dLyx/Bug-Bounty-%2F-Public-link-UI?node-id=0-1&t=fBgyt0ZnhS7AHik8-0",
+      "kinds": [
+        "live",
+        "other"
+      ],
+      "links": 2
+    }
+  ]
+}

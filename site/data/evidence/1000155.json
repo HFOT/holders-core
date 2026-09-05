@@ -1,0 +1,106 @@
+{
+  "title": "Provide multiple templates on how to write apps and games for the Cardano ecosystem using Paima",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "An on-chain game template developed using the Paima Engine that showcases a novel type of game or integration.",
+      "criteria": "・ The game template will be published on Paima Github (https://github.com/PaimaStudios/paima-game-templates).\n・Community has the access to public template, documentation and short demo video.",
+      "report": "Regarding Comments\nWe have doubled checked the provided links.\nNow addressing the deep Cardano relationship:\nTo generate value directly for Cardano we have tacked a issue that has gone far in complexity and cross-company and projects resolutions and standards to get this done.\n・We wanted to create a sovereign rollup using Cardano as the L1 network.\n・We wanted to ANYBODY to be able to do this without major infrastructure.\n・We wanted to be EASY to use and start with Cardano\n\nSo the first step was trying to do this integration with through a new indexer called CARP while partially successful, we where the major contributors and developers of this project. Also we completed the integration with Paima Engine - This project had some complexities to be used for (2) as the hardware system requirements where rather large, and syncing against a cardano node was complex and expensive.\nSo, we where able to do (1) and (3) though Paima-Engine, but (2) was very hard for third parties. We could, in this point of time, just submitted some game just to complete the Catalyst Milestone, but we are committed with value generation for the community, and have been actively building solutions for the Cardano ecosystem for the beginning.\nSo we took a step back, and started contributing to UTXO RPC a standard to interact with UTXO based blockchains. Submitted some specs, participated with feedback, and then started supporting Dolos , that until recently didn't have support for all the technology needed to build the L2 sovereign rollup that enabled (1) (2) (3)\nNow, in specific, the game supports cardano 100% it just requires swapping the chain config. Here is the docs and blog explaining the different ways to connect them:\nhttps://effectstream.github.io/docs/home/chains/cardano \nhttps://effectstream.github.io/docs/blog/cardano-primitives/\nWe have provided with a live-demo with Midnight for three reasons:\n・Midnight is deeply connected to the Cardano Ecosystem. It inherits its security and depe",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "social"
+      ],
+      "links": 25,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 75000,
+      "promise": "Second on-chain game template developed using the Paima Engine that showcases a novel type of game or integration.",
+      "criteria": "・ The game template will be published on Paima Github (https://github.com/PaimaStudios/paima-game-templates).\n・Community has the access to public template, documentation and short demo video.",
+      "report": "In response to PoA comments:\nThank you for the careful review.\nWe would like to address the Cardano scope concern directly: \n(A) Midnight is using Cardano. Midnight is a Cardano partner chain part of the Cardano ecosystem, not a separate one. It is built on Input-Output's Partner Chains framework, Cardano SPOs can become Midnight validators, and specifically Midnight's 100% of its tokens [NIGHT] are only live and useful in Cardano as a native token.\n(B) The template swaps to Cardano with a config change. EffectStream is multi-chain by design: the chain a template targets is a configuration + contract-package setting, not an app-logic rewrite. The same framework already runs templates natively on Cardano L1 today - stake-pool delegation, NFT pre-orders, and projected NFTs (cited below) - so pointing this template's stack at Cardano is a config update, not new work. The zero-knowledge commit-reveal that makes Kachina novel is written in Compact, and since Cardano L1 has no native ZK, that piece runs on Midnight - which is Cardano's ZK layer.\n (C) We have addressed this Catalyst Direction so that we can all be aligned on the focus, and how we are contributing to the Caradano Community and how this aligns with the proposal. The live demo uses Midnight in the live environment due to the cost of maintaing the servers, but native Cardano Tokens are now paying for users playing, making use of Cardano as the economic engine of the game. Please take a look at the additional notes for the official documentation.\nWe have update the information and created a video on youtube.\nBrief\nDeliverable: Kachina Kolosseum, the second game template - a novel multiplayer PvP game. On a public chain the second player can normally see the first player's move and counter it; Kachina's commit-reveal scheme removes that edge. Both players commit privately, ZK proofs verify the revealed move matches the commitment without exposing it early, and reveals happen simultaneously; a timeout forfeits a",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 75000,
+      "promise": "An on-chain game template developed using the Paima Engine that showcases a novel type of game or integration.",
+      "criteria": "・ The game template will be published on Paima Github (https://github.com/PaimaStudios/paima-game-templates).\n・Community has the access to public template, documentation and short demo video.",
+      "report": "NOTE: Due to short timelines for this project, we have resubmitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA. This milestone is totally independent and does not depend in any way on previous milestones.\nIn response to PoA comments:\nThank you for the review. \nWe had added new material as a video, reordered and updated material for easier review.\nFirst: In relation to submitting PoA before previous milestones are reviewed: we have discussed with Cardano Directive, and agreed that given the tight deadlines for project completion, we should proceed. But the decision anyways it is up to the reviewer . \nSecond: We would like to address the Cardano scope concern directly: \n(A) Midnight is using Cardano. Midnight is a Cardano partner chain, part of the Cardano ecosystem, not a separate one. It is built on Input-Output's Partner Chains framework, any Cardano SPOs can become Midnight validators, and 100% of Midnight's NIGHT tokens are live and useful only on Cardano, as a native token. Midnight blocks are validated by Cardano SPOs.\n(B) The template swaps to Cardano with a config change. EffectStream is multi-chain by design: the chain a template targets is a configuration + contract-package setting, not an app-logic rewrite. The same framework already runs templates natively on Cardano L1 today - stake-pool delegation, NFT pre-orders, and projected NFTs (cited below) - so pointing this template's stack at Cardano is a config update, not new work. Block Kart settles its transaction layer on an EVM chain today and uses Midnight for ZK verification of race results; both are config choices - the settlement layer swaps to Cardano L1, and the ZK verification runs on Midnight, which is Cardano's ZK layer.\n(C) We have aligned with Catalyst Direction on the focus - how this contributes to the Cardano community and how it aligns with the proposal (please see the notes below). Th",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 25,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 75000,
+      "promise": "An on-chain game template developed using the Paima Engine that showcases a novel type of game or integration.",
+      "criteria": "・ The game template will be published on Paima Github (https://github.com/PaimaStudios/paima-game-templates).\n・Community has the access to public template, documentation and short demo video.",
+      "report": "NOTE: Due to short timelines for this project, we have submitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA. This milestone is totally independent from previous ones.\nBRIEF\nThese templates are built to extend the Cardano ecosystem. Standard Cardano wallets. connect with a minor configuration change, because EffectStream targets the chain at the config level, not the app logic. Midnight, where these ZK templates run, is a Cardano partner chain: Cardano SPOs can become its validators, Midnight's NIGHT token lives on Cardano as a native token, and native Cardano tokens pay for the free-to-play demos. \nDust-2-Dust, the fourth game template - the most technically complex of the set, a full roguelike deck builder written entirely in Compact. It is a complete game, not a proof of concept: hidden inventory, private resource management, and decisions that stay secret until their effects show up in play. Multiple interacting ZK circuits - drawing cards, using items, combat resolution, level progression - compose together, carrying hidden state across dozens of turns while preserving privacy throughout. All proofs run in the browser with WASM. Since Cardano L1 has no native ZK, the multi-circuit logic runs on Midnight - Cardano's ZK partner chain - and the pattern generalises to any game whose decisions depend on hidden state: deck builders, dungeon crawlers, stealth and strategy.\n\nLINKS TO REVIEW\n\n1. Video - Dust-2-Dust roguelike demo:\nhttps://youtu.be/Zd2DnFM_-1E\n\n2. Write-up article:\nhttps://effectstream.github.io/docs/learn-compact-with-games/dust-to-dust\nhttps://effectstream.github.io/docs/blog/game-templates\n\n3. Code:\nhttps://github.com/effectstream/dust-to-dust\n\n4. Live game (playable now):\nhttps://dust2dust.midnight.fun/\n\n5. Social announcement (features Dust-2-Dust on midnight.fun):\nhttps://x.com/PaimaStudios/status/2069327401675538496\n\n-------------------------",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 75000,
+      "promise": "An on-chain game template developed using the Paima Engine that showcases a novel type of game or integration.",
+      "criteria": "・ The game template will be published on Paima Github (https://github.com/PaimaStudios/paima-game-templates).\n・Community has the access to public template, documentation and short demo video.",
+      "report": "NOTE: Due to short timelines for this project, we have submitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA. This milestone is totally independent from previous ones.\nBRIEF\nThese templates are built to extend the Cardano ecosystem. Standard Cardano wallets. connect with a minor configuration change, because EffectStream targets the chain at the config level, not the app logic. Midnight, where these ZK templates run, is a Cardano partner chain: Cardano SPOs can become its validators, Midnight's NIGHT token lives on Cardano as a native token, and native Cardano tokens pay for the free-to-play demos.\nGo Fish, the fifth game template - a ZK implementation of \"Mental Poker\", the classic cryptographic problem of playing a fair card game with no trusted dealer. The protocol combines a commit-reveal scheme with shared secret derivation: the deck is encrypted so neither player can read it alone, and each card reveal requires cooperative decryption where both players contribute their share. Neither side can peek ahead or manipulate the draw order - a fair deal is enforced by the math, not by trust. Since Cardano L1 has no native ZK, the protocol runs on Midnight Cardano's ZK partner chain. Built on a single ZK contract, it implements any card-like game (poker, blackjack, trick-taking) trustlessly, and serves as a base layer any future card game on EffectStream can fork.\n\nLINKS TO REVIEW\n\n1. Video - Go Fish ZK Mental Poker demo:\nhttps://youtu.be/7gAH7pWzHyg\n\n2. Write-up article:\nhttps://effectstream.github.io/docs/learn-compact-with-games/go-fish\nhttps://effectstream.github.io/docs/blog/game-templates\n\n3. Code (local-only template - clone and follow the README):\nhttps://github.com/effectstream/go-fish\n\n4. Demo\nhttps://effectstream.github.io/docs/learn-compact-with-games/go-fish\n\n5. Social announcement \nhttps://x.com/PaimaStudios/status/2069327401675538496\n\n--------------",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "7",
+      "cost": 75000,
+      "promise": "Project Close Report:\n・pdf report\n・video report\n・5 game templates shared in https://github.com/PaimaStudios/paima-game-templates with dedicated demo videos and announcements",
+      "criteria": "Community has access to PCR and also to public repo with all 5 games templates to be used in order to build on top of Paima. Community has access to demo videos and a frontend component that allows anyone to experiment with it locally by running the provided code.",
+      "report": "NOTE: Due to short timelines for this project, we have resubmitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA. \n\nLINKS TO REVIEW\n\n1. Close-out video \nhttps://youtu.be/6x0jmY1Vswc\n\n2. Close-out report \nhttps://drive.google.com/file/d/1GZkw010hYsBhQXO4wzF2voqZ85_EIeUh/view?usp=sharing\n\n3. The five templates (write-up + live):\nhttps://effectstream.github.io/docs/learn-compact-with-games\nhttps://effectstream.github.io/docs/blog/game-templates\nhttps://safesolver.midnight.fun/\nhttps://kachina.midnight.fun/\nhttps://blockkart.paimastudios.com/\nhttps://dust2dust.midnight.fun/\n\n4. Social announcement (open-source ZK mini-games + docs):\nhttps://midnight.network/blog/introducing-midnight-fun\nhttps://x.com/MidnightNtwrk/status/2043388660188385620\nhttps://x.com/PaimaStudios/status/2069327401675538496\n\n==========================\nCOMMENTS AND NOTES\n\nCatalyst Direction has reviewed and agreed on the following statement regarding this project and recorded under ticket #9527\n・Rebrand. Paima has rebranded as EffectStream and is part of the Midnight Foundation; links might now appear under the name of either of these entities. \n・Scope. For reviewers: milestones and deliverables should be evaluated against the approved acceptance criteria. The contents of each submission remain subject to reviewer assessment; examples or further implementations may reflect technical evolution of the Cardano ecosystem since approval \n・Midnight refocus. Midnight is a Cardano partner chain, where Cardano SPOs can become Midnight validators, and Midnight's NIGHT token is one of the largest Cardano native tokens.\n・Live Demos: To keep demos free to use over the long term: some of the ADA allocated to the project has been apportioned to pay for user interactions, and Midnight Foundation is sponsoring servers and other paid services. This might reflect in branding.\n・CrossChain: EffectStream is an open-sour",
+      "kinds": [
+        "doc",
+        "live",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 19,
+      "cut": true
+    }
+  ]
+}

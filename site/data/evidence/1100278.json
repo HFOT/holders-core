@@ -1,0 +1,49 @@
+{
+  "title": "Threshold Signatures for Cardano Wallets",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 22500,
+      "promise": "The outputs from this milestone may be summarized as open source code that demonstrates a capability to split an extended Ed25519 key (used for Cardano wallets) into multiple sub keys and generate a valid signature by combining the signature of all sub keys.\n・Algorithm to split an Ed25519 private key into multiple shares.\n・Elliptic curve functionality for signature steps and value sharing.\n・Signature combination and verification.\n\nStep 3 is the primary goal of the milestone.",
+      "criteria": "In order for this milestone to be accepted, the following criteria must be met.\n・The open source code will be have a build system that includes running tests. The system will be automated with a CI/CD job. Instructions and documentation will be provided so that a user may clone the project, build the library, and run the tests.\n・The code will be capable of demonstrating the validity of a signature produced by direct key splitting. A unit test will demonstrate the completed milestone by generating an extended Ed25519 key pair, signing a message, then splitting the key into N shares, signing the",
+      "report": "We have successfully completed the ability to split an extended Ed25519 key (used for Cardano wallets) into multiple key shares and generate a valid signature by combining the signature shares of all keys.\n・The direct key splitting algorithm fully implemented.\n・The necessary elliptic curve functionality for the algorithm.\n・All code is open-sourced and available in our GitLab repository.\n\nEvidence of completion:\n・Gitlab issue tracking\n・Static site for documentation (see background and API description pages)\n・Specific unit tests verifying direct key splitting functionality (automatically run as part of CI job)\n・Completed CI/CD job",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 22500,
+      "promise": "Implement Shamir Secret Sharing functionality to split a private key into N sub-keys and set a threshold of M sub-keys required to create a valid signature (M <= N). Generate signatures and test validity.\nOutputs\n・Lagrange polynomial functionality implementation for secret share generation.\n・Modification of signature steps to include the polynomial coefficients.\n・Signature combination and verification.",
+      "criteria": "In order for this milestone to be accepted, the following criteria must be met.\n・Similar to the first milestone, the open source code will be have a build system that includes running tests, which will be automated with a CI/CD job. Instructions and documentation will be provided so that a user may clone the project, build the library, and run the tests.\n・The code will be capable of demonstrating the validity of a signature produced by a combination of signatures produced by splitting a secret key using Shamir Secret Sharing (SSS). A unit test will demonstrate the completed milestone by genera",
+      "report": "Summary\nWe have successfully completed the ability to split an extended Ed25519 key (used for Cardano wallets) into multiple key shares (N sub-keys) and generate a valid signature by combining the signature shares of M keys (where M <= N) using Shamir Secret Sharing.\n・The Shamir Secret Sharing algorithm fully implemented.\n・The necessary elliptic curve functionality for the algorithm.\n・All code is open-sourced and available in our GitLab repository.\n\nEvidence of Completion\n・Gitlab issue tracking\n・Static site for documentation (see background and API description pages)\n・Specific unit tests verifying Shamir Secret Sharing functionality (automatically run as part of CI job)\n・Completed CI/CD job\n\nScreenshots of Evidence\n[The screen shots do appear to be showing in milestone web form when I hit submit so I’ve included a link to the PoA with screenshots here: https://docs.google.com/document/d/10e_BaY-GgBvEtAfi5sH73VqUQk3WHfXW6RCaSEjo5PM/edit?usp=sharing]\nBelow is provided a screen shot of the test code used to verify the Shamir Secret Sharing implementation. This shows only one section of the tests, since the remaining section is essentially a repeat but with a much larger set of key shares and threshold. The full file may be found in the repository linked above.\n[see image in link]\nA description of the above code is provided next. Note that the reader may benefit from first familiarizing themselves with the terminology in the API documentation (linked above). The first part of the code defines a test message that is then interpreted as a string of bytes. This message will be what is signed and used to verify the generated signatures below. Next we create a Dealer object and set it to generate four key shares and require a threshold of three keys. The Dealer object infers that the Shamir Secret Sharing algorithm must be selected since the threshold is below the number of shares. Next the Dealer is used to generate a set of key shares and a base public key using a randomly",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "7",
+      "cost": 30000,
+      "promise": "With the initial infrastructure built and tested, create a simple CLI tool that will enable a user to test the functionality by generating split keys and creating signatures from those keys. Use the tool to automate test transactions on the Cardano testnet. Use the CLI tool to demonstrate the functionality in a project close out video. Final project report.\n・CLI tool creation exposing the functionality completed at earlier milestones.\n・Scripts to generate and validate testnet transactions.\n・Project final report and video.",
+      "criteria": "・The CLI tool and example scripts may be used by those unfamiliar with the project details. Usage is well documented.\n・Report submitted and video uploaded to YouTube.",
+      "report": "A. Output: CLI Tool allowing users to split Cardano wallet keys and create shared wallets.\nAcceptance criteria: The CLI tool and example scripts may be used by those unfamiliar with the project details. Usage is well documented.\nEvidence: \nProject source code: https://gitlab.com/viperscience/cardano-tss\nProject documentation including demonstrations showing how to use the tool.\nhttps://viperscience.gitlab.io/cardano-tss/index.html\nB. Output: Project closeout report and video\nAcceptance criteria: Project close out report submitted. Project close out video posted to YouTube.\nEvidence:\nhttps://docs.google.com/document/d/1_-AN57lWV7ztibHuH5joPoRpbxFg5946H1yy3N7EvVM/edit?usp=sharing\nhttps://www.youtube.com/watch?v=0yaoRomZGnM",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

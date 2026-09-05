@@ -1,0 +1,75 @@
+{
+  "title": "RideChain: Decentralized Carpooling for a Sustainable Future on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "Timeline: Month 1-2 \nOutputs:\n1. Design the platform architecture, focusing on backend infrastructure using FastAPI/Django Rest Framework.\n2. Document APIs that will facilitate interaction between the backend services, Cardano blockchain, and user-facing application.\n3. Create detailed wireframes for the user interface (UI) using Figma, showcasing:\n• Trip creation flows\n• Booking interface layouts\n• Integration points for Decentralized Identity (DID).",
+      "criteria": "1. Finalized backend infrastructure design\n2. API specifications and integration points with Cardano blockchain.\n3. Wireframes that visually represent the planned UI for core features, reviewed and approved for development readiness.",
+      "report": "Full evidence sheet: https://docs.google.com/spreadsheets/d/19L6vcN_BKli4LxnDLmmbGL4kG25ohM2sqVIenshHp-w/edit?usp=sharing\nProof of Achievement for Milestone 1\nPlatform Architecture, API Documentation, and UI Wireframe\nPlatform Architecture FinalizedThe backend infrastructure was designed using FastAPI/Django Rest Framework, focusing on scalability and integration with the Cardano blockchain. The architecture document outlines service interactions, data flow, and system components.\nLink to architecture documentation: https://docs.google.com/document/d/1ipfdZz4sPFEbICA2uSOTNb59JPY80U3x9PJrO2mguM4/edit?usp=sharing\nLink to Flowchart: <a href=\"https://mermaid.live/edit#pako:eNrNVm1v2jAQ_itRpEmbBl3TUiLyoRKDUXXaCyJ9kSa-mOQAi8TOHKctq_rfd44dyAuh6qeND8Gxn_PdPff4nGc74CHYnp3C7wxYAGNKVoLEc2bhLyFC0oAmhEnrO1_QCCySFqNhkljvJ1EmJYgPTfw9LBRY_eXIGZBAHsBdEQmPZKuww-l18drE3aYg_IdA4dTQ8kE80ACawBkNwQDVsB14BdzgcBTxgEjKWTv8B5d0aQzyMX3NYkq2Bo-jGHCmFfoZ_W-CNaHMWOwn2o1G-TKCR0SEhPGSkQbr57t35ZJNIv6o5_Vk9_LScO5pYoeZXGOsRXYzJYxUahODRBtTDs-6IxENcdoaCQiVHYlSDTaQbtnD1_sb64ZvgFX3Q4iOxmu6TxPOUrA-KttyWs3wTah52evxGlV41lTwAFKjjUpyBqJ2zJXhoS6k9a0QxphIYnbNl7vlXXcowkJrxjPk45oteXXjSqzK_RgkoQVdB7jIQSPOllTE-fa1shaHa19TnPlfCoqhvKGatcB_LpcgPvlARLB-Qz3LZv-gqMMHLCdZ4ElTq-lhSnSgido4rdUTe2TUlTQG6zZRJUjrORQ9yOziSyKzVPUBtjIMFYiyjKZZuq60rCY0jwwfPjYQ5Ee7r0VXNLFjHaTAtIhMd8R90Qxcw_QioirN0FM6VHK8EYSleIfs4q_A0Cxvh57lZ4uYyiY8X-42ty8BD5y1qpNyCibTOxA1Xk0eh2jxs0Dl3XrgC9yRM1--GGK8DBRWCoy_VJe9YA5TmYtnuBIAe_Zb2BxDEvFtzdVxQncBDcNQ7LLdi1w3tTiJYHe4miQ2pWVM4Hg70MotH49XKMldb-tRHeXkyxMEqhm8hZQZRECw8VUU3xDXLo2mAFovkYKXsFVVE8pIhBEEQBNZrwa6YKu8CBOAcEGCTVsBzMHSFq3XR1EASDJZCv_Q3aGhoeoGS_TVfg3qGMuc2B07BhzTEL9dn5Xl3MabJoa57eEwJGIzt-fsBXEkk9zfssD2pMigYwuerda2t8RrDd-yPAbz1bubxc-rX5zHhQm-2t6z_WR77tmJ0z_vO73e4Oy0f-p27C1O9k5cZ3A-cN2e4zrnZ85Lx_6Tmzsn_Yv-hYvo3ml_4Fy4zstfRu3RlA\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(19, 63, 240);\">https://mermaid.live/edit#pako:eNrNVm1v2jAQ_itRpEmbBl3TUiLyoRKDUXXaCyJ9kSa-mOQAi8TOHKctq_rfd44dyAuh6qeN",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "Timeline: Month 2-4\nOutputs:\n1. Develop smart contracts for:\n· Managing trip bookings\n· Payment escrows\n· Verifying trip completion agreements between drivers and passengers.\n2. Conduct comprehensive unit tests on smart contracts to ensure functional accuracy.\n3. Perform an in-house peer review to validate the security, robustness, and efficiency of the smart contracts.",
+      "criteria": "1. Successfully deploy smart contracts on the Cardano testnet using tADA for testing purposes.\n2. All unit tests confirm the functional correctness of the smart contracts.\n3. Peer review reports on how smart contracts meet the project’s technical and security requirements.",
+      "report": "Contract Scripts and Reports:\n\nhttps://github.com/arcaccra/ridechain_contracts\nReports (Peer Review and Unit Test): /reports as markdown (.md) files\nLock Transaction logs: /output as a .csv file\nUnlock Transaction logs: /unlock_records as csv file\nAiken smart contract included",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 35000,
+      "promise": "Timeline: Month 4-6\nOutputs:\n 1. Develop the Minimum Viable Product (MVP), integrating:\n • Smart contracts for trip bookings, payment escrows, and trip completion.\n • Decentralized Identity (DID) for secure user authentication.\n • A blockchain-based reputation system to capture and display user feedback.\n 2. Build web and mobile dApp user interfaces (UIs) to provide accessibility for all users, incorporating:\n • Trip creation and scheduling for drivers.\n • Browsing and booking trips for passengers.\n • Payment functionality using tADA for testing.\n 3. Conduct internal testing of the MVP to evaluate functionality, usability, and system integration across both web and mobile platforms.",
+      "criteria": "1. A publicly accessible MVP deployed on the Cardano testnet, allowing:\n • Drivers to create trips and manage schedules through web and mobile dApps.\n • Passengers to browse, book trips, and make payments using tADA on both platforms.\n • Users to provide feedback, contributing to a blockchain-based reputation system.\n 2. Successful internal testing results demonstrating the MVP’s functionality across web and mobile interfaces, ensuring a seamless user experience.",
+      "report": "A. Output: Build web and mobile dApp user interfaces (UIs) to provide accessibility for all users\nAcceptance criteria: A publicly accessible MVP deployed on the Cardano testnet, allowing:\n • Drivers to create trips and manage schedules through web and mobile dApps.\n • Passengers to browse, book trips, and make payments using tADA on both platforms.\nEvidence: \nMobilde App Screen Recordings:\nRider: https://youtu.be/jmNDGSRh1_g\nDriver: https://youtu.be/Yfh10JBa6sA\n\nWeb Screen Recording:\nhttps://drive.google.com/drive/folders/10gG8EVOqQDqOUAN1AKZwpRHd8mZ8BWQo?usp=sharing\n\nLink to download the ryde driver app on android APKs.\nhttps://drive.google.com/drive/folders/10k0yb8mlOUFRRq_iy_cEwFTWcozVQEVJ?usp=sharing\n\nWeb App Link:\nhttps://ridechain-web.vercel.app/\n\nDID On chain for Example User\nNational ID SHA-256 Hash: 42c522401e1ed1e5a05de09fd65ea329315ff8706e4f9662a108a384cc0a1d4b\nWallet Address: addr_test1vztqrvq9laed6sleqlrkd57gzt5l8w3y5lt0utznpp4v80qja4uky\nDID: did:cardano:addr_test1vztqrvq9laed6sleqlrkd57gzt5l8w3y5lt0utznpp4v80qja4uky\n\nTx Hash: 63067dc5cefb53a4a10bcf9a964c882fdc4624098f13939b467fdf20bff03b3c\n\nView on Cardanoscan Preview:\nhttps://preview.cardanoscan.io/transaction/63067dc5cefb53a4a10bcf9a964c882fdc4624098f13939b467fdf20bff03b3c\n\nSC transaction for Example Ride\n\nRider UTxO Lock tx Hash:\n7af7c1bfbea6e152a8bf8e0ef1a64103670f8f5a80bcafd2abad452f5e68e606\n\nDriver UTxO Unlock tx Hash:\n44c89437f46c7263188020e095ddd860126deb4db8207b81b47a763d8a2f1528\n\nB. Output: Conduct internal testing of the MVP to evaluate functionality, usability, and system integration across both web and mobile platforms.\nAcceptance criteria: Successful internal testing results demonstrating the MVP’s functionality across web and mobile interfaces, ensuring a seamless user experience.\nEvidence: \nUser Testing Results:\nhttps://docs.google.com/spreadsheets/d/1UZ1ksuGpACObls8PpvwwDHPxNnCKMpOfjAHvysfyTpo/edit?usp=sharing\n\nTest Scenario Reports:\nhttps://github.com/arcaccra/ridechain_web/blob/ez-fi",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 16,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "12",
+      "cost": 17000,
+      "promise": "1. Launch the MVP in a controlled pilot program using ADA for transactions, targeting a select community (e.g., a university or city in Ghana).\n2. Recruit at least 100 participants (drivers and passengers) to use the platform actively during the pilot phase.\n3. Collect user feedback on:\n· Platform usability across web and mobile dApps.\n· Payment system reliability and ease of use.\n· Reputation system functionality.\nAssess system performance under real-world usage conditions, including transaction success rates, platform reliability, and user engagement metrics.",
+      "criteria": "1. At least 200 trips are booked and completed during the pilot phase using ADA.\n2. The launch event is successfully conducted with images and videos captured to showcase participant involvement and platform demonstration.\n3. Feedback is collected from at least 75% of participants, providing insights on:\n· Usability\n· Payment processing\n· Reputation system\n· Overall experience.\n4. Performance benchmarks are met, including transaction success rates of 95% or higher, average booking times under 5 minutes, and minimal downtime (<1%).",
+      "report": "A. User feedback reports summarizing:\n· Results from surveys and interviews with participants.\n· Insights on usability, payment processing, and reputation system functionality.\nEvidence: https://docs.google.com/spreadsheets/d/12v3U5yKrBqANfIskxTP1bHso2iTi1DNbwuqLZ5LKKao/edit?usp=sharing\n\nB. Analytics reports summarizing:\n· Transaction logs\n· System performance metrics such as uptime, error rates, and user engagement data.\nEvidence: https://docs.google.com/spreadsheets/d/1udigkSv7i3Fx-luFOei9rHX6pULoR-Ce75vamhxQoco/edit?usp=sharing\n\nC. Images and videos from the launch event summarizing:\n· Participant involvement.\n· Live demonstrations of the platform for trip creation, booking, and payments.\nEvidence: https://drive.google.com/drive/folders/11cJH3M-Oeqz6sRS9I5oBD0JupVMJnTxx?usp=drive_link\n https://youtu.be/NPG54eLFkHc\n\nD. Screenshots summarizing:\n· Active platform usage, including trip creation, booking, and payments on both web and mobile dApps.\n· Participants interacting with the reputation system.\nEvidence: https://drive.google.com/drive/folders/1a-CJpO-o7VmgFJlUvMRqiqeg_CV1iRP3?usp=drive_link",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 5,
+      "month": "13",
+      "cost": 18000,
+      "promise": "・Expand the platform to additional universities and communities, targeting a broader user base.\n・Implement a loyalty and rewards system using ADA tokens to incentivize user engagement and retention.\n・Optimize platform functionality based on feedback and performance data from the pilot phase.\n・Conduct a promotional campaign to raise awareness about the platform and drive adoption.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Platform expansion results in a 50% increase in active users and trips compared to the pilot phase.\n・Fully functioning loyalty and rewards system integrated into the platform, allowing users to earn and redeem ADA tokens.\n・Platform improvements based on pilot feedback are successfully deployed, addressing key usability and performance issues identified.\n・The promotional campaign successfully engages new users, as evidenced by increased platform activity and user registrations.\n・Final closeout report is publicly available\n・Final closeout video is publicly available\n\nPCR and PCV will be uploade",
+      "report": "A. Analytics reports demonstrating:\n • A 50% increase in active users and completed trips compared to the pilot phase.\n • New user registration trends and user activity data after the expansion.\nEvidence: https://docs.google.com/spreadsheets/d/1NISdncqJ3ulT5ThaZ3ZlrXv4-fsBCuYZ/edit?gid=1500005999#gid=1500005999 \n\nB. Transaction logs showcasing the use of the loyalty and rewards system, including:\n • ADA tokens earned and redeemed by users.\nEvidence: https://docs.google.com/spreadsheets/d/1ugdpyOppR3ZLYSHOI9bM1eZPUNVXJWs5/edit?usp=drive_link&ouid=104125176766651144697&rtpof=true&sd=true \n\nC. Documentation of platform updates, including:\n • Bug fixes and performance optimizations implemented based on pilot feedback.\nEvidence: https://docs.google.com/document/d/1_2h1CVlyDuCdUNWcLdOrjRgjh0K3LrmV/edit?usp=drive_link&ouid=104125176766651144697&rtpof=true&sd=true \n\nD. Reports and materials from the promotional campaign, including:\n • Marketing assets such as social media posts, advertisements, and outreach materials.\n • Metrics on campaign performance, such as impressions, engagement, and click-through rates.\nEvidence: https://docs.google.com/spreadsheets/d/1ISo1SZCHtqm9W7UYHgE7lXQeQl-HVbJa/edit?usp=sharing&ouid=104125176766651144697&rtpof=true&sd=true \n https://drive.google.com/drive/folders/1fDHgehOmtU6yqaOXyJvUFAjiGW7LMmlp?usp=drive_link \n\nE. Link to final closeout report: https://docs.google.com/document/d/1vGfEYFKmXMVFMVswqeJl5yXeIJKdiYFo/edit?usp=sharing&ouid=104125176766651144697&rtpof=true&sd=true \nLink to final closeout video: https://youtu.be/YFi2WtxQZmI\n https://drive.google.com/file/d/1zAKij8lCdUNOifyLqh3ShWEUZv4n94w5/view?usp=drive_link",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 16,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "ドキュメントで指定されたように、Projected NFT Aikenスマートコントラクトを記述するだけでなく、Github CI は、契約が正常にコンパイルすることを確認します",
+      "criteria": "添付文書によるスマートコントラクトの完成",
+      "report": "動画: https://drive.google.com/file/d/1GGOZ IMG7HEZyw0szREHt2XAxc1FgHtN/view?usp=sharing\nAikenスマートコントラクトコード:https://github.com/PaimaStudios/projected-nft-whirlpool/main/cardano/validators/hololocker.ak\nドキュメント: https://docs.paimastudios.com/home/multichain-support/nfts/projected-nfts/basics"
+    },
+    {
+      "no": 2,
+      "promise": "・ Javascriptから簡単に契約とやり取りするライブラリを書く",
+      "criteria": "Rust & JSライブラリは、契約と簡単にやり取りする",
+      "report": "動画: https://drive.google.com/file/d/1aLZZX9wm3B9zlsLQF1RwJsqWcNDtk/view?usp=sharing\nGithubのRust/WASM/JSコード: https://github.com/PaimaStudios/projected-nft-whirlpool/tree/main/cardano/sdk\nブラウザからJSの使用のためのNPMパッケージ: https://www.npmjs.com/package/@paima/cardano-projected-nft-browser\nJS 用の NPM パッケージは、nodejs から使用されます: https://www.npmjs.com/package/@paima/cardano-projected-nft-nodejs"
+    },
+    {
+      "no": 3,
+      "promise": "NFTロック/ロック解除を追跡するために、Carpタスク(インデックス)を実行",
+      "criteria": "プロジェクトの NFT コントラクトアドレスの NFT ステータス変更をインデックス化できる Carp タスク",
+      "report": "ビデオ: https://drive.google.com/file/d/1XVaoQmhaNCkLekV7k1HafeRzZ24piHRe/view?usp=sharing\n\nGithubのCarp(indexer):https://github.com/dcSpark/carp/\nCarp タスク: https://dcspark.github.io/carp/docs/indexer/Tasks/MultiEraProjectedNftTask\nカルプエンドポイント(REST): https://dcspark.github.io/carp/openapi#operation/ProjectedNftRange"
+    },
+    {
+      "no": 4,
+      "promise": "・プロジェクトしたNFTをプロジェクトし、どのNFTをプロジェクトしたかを簡単に管理できる完全なdAppを記述して下さい",
+      "criteria": "・プロジェクトしたNFTを閲覧・管理できるサイト",
+      "report": "POAコメントについて\n・Sorry、Markdownの形式を見たのですが。 最近、POAの多くを送っています。このツールで正しくフォーマットします。 プロセスを容易にするために幸せ。\n・非推奨のライブコードバージョンの有効化をお願いしました。\n\n変更リクエストについて 私たちが積極的に取り組んできたプロセスを通過しないために:\nA) 元のコードとリンクを報告し、基準に合わせます。\nB) 書き換え、より現代的な方法で解決。 目標は変更がなかったので、命名や遅延について透明にしたいと思っていました。\n遅延は2つの主要なソースからあります。\n・このプロジェクトをこの状態に得るために、基盤をとりまとめるのは、非常に長いプロセスでした。\n・セコンドでは、カルダノの利用を可能とするコアインフラの整備に時間がかかります。\n・当初は、CARPのインデックス作成者と同期したところが、第三者がインスタンスの実行に高価であった。 マイルストーンを完成させるための実行例をいくつか配信できますが、コミュニティにとっては役に立ちません。\n・UTXORPCと連携し、必要な規格を取得し、UTXORPCの実装であるDolosもサポート。 これは、すべての整列、配信され、生産で得るために1年以上経ちました。\n・最終的にはUTXORPC規格をEffectStreamに統合し、EffectStream dppで任意のアプリケーションを可能にすることができました。\n・すべての技術が時間とともに変化してしまった場合、テンプレート、ドキュメント、ブログ、ブランディングなどを書き込んでいます。\n・このコントリビューションを拡張し、開発者がカルダノエコシステム内のアプリを簡単に開発できるようにしました。\n\n.これを考えると、元の証拠を配信することができました。また、Cardanoコミュニティの質の高いソフトウェア、標準、統合を実際に提供し、このマイルストーンを技術的に実装した新しいバージョン。\n\nコンテンツ\nPaima Studiosは、ミッドナイト財団に合併し、Paima EngineはEffectStreamとして再ブランドしました。 コードバ全体を書き込む"
+    },
+    {
+      "no": 5,
+      "promise": "・「Cardano stakepoolsを用いたパワーリング・オンチェーンゲーム機能」で作業を重ねる Carp タスクを Paima に接続するための触媒提案",
+      "criteria": "・パイマ自身でプロジェクトしたNFTを検知するためのサポートを実施",
+      "report": "PoAコメントへの対応\n・名前変更を反映したコメントをメモ\n・前回マイルストーン完成\n・マイルストーンと再オーダー素材の動画を作成しました\n\nフィードバックありがとうございます。\nニュース\nこのマイルストーンは、Projected-NFT 検出をファネルに接続し、EffectStream の CardanoProjectedNFT プリミティブとして、ドキュメントと実行可能なテンプレートとして配信されます。 カルダノの原始的観察ロック → ロック解除 → Hololocker PlutusスクリプトでのClaimトランジションは、EffectStreamのIVMをクエリ可能なPostgreSQLビューに配備し、ゲームの状態マシンをクラスターノイベントとして表します。 Cardano Stake Pools は、Cardano イベントに再利用可能なエンジンを同じ構造で新しいプリミティブを実装することで、Cardano Stake Pool を活用しています。\n\n1. ビデオ - プリミティブエミッションイベントとの完全なロック/アンロック/クレームフロー\nhttps://youtu.be/cQ eM5PhSvc\n\n2. ドキュメンテーションと書き込みアップ:\nCardano Primitives リファレンス(PrimitiveTypeCardanoProjectedNFT) - 設定、ペイロードフィールド、IVMビュー名:\nhttps://effectstream.github.io/docs/home/chains/cardano#projected-nft-primitivetypecardanoprojectednft\nCardano Primitives blog (すべての5つのプリミティブを横断するアーキテクチャ):\nhttps://effectstream.github.io/docs/blog/cardano-primitives/ja\nNFTのブログ(Aiken契約+dApp +プリミティブ、エンドツーエンド):\nhttps://effectstream.github.io/docs/blog/projected-nfts\n\n2. コード(漏斗への接続):\nCardanoProjectedNFTの原始的な源:\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src/cardano-projected-nft\nすべての5 Cardanoプリミティブ:\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src\nアーキテクチャを確立するシブルプール代表的な:\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src/cardano-pool-delegation\nプリミティブを実装するテンプレート(プロジェクト済みnft-preorder):\nhttps://github.com/effectstre"
+    },
+    {
+      "no": 6,
+      "promise": "プロジェクトクローズレポート:\n・PDFレポート\n・ビデオレポート",
+      "criteria": "コミュニティはPCRへのアクセスを持っています.",
+      "report": "注意:このプロジェクトへのタイムラインが短いため、このマイルストーンが承認される前に提出しました。 これは、Cardano指令と協議し、PoAの最後に正式な声明が追加されました。\nPoAコメントに対応:\nありがとうございます。 このクローズアウトは、ファンド10 PCR/PCVのガイドラインに従います。クローズアウトビデオはYouTubeリンクであり、クローズアウトレポートは、触媒形式でPDFです。 タイムラインは、ノートスで議論され、正式に添付された認識によって検証されます。\nブリーフ\nこのプロジェクトは、CardanoのエンドツーエンドのNFT投影を配信しました。 Hololocker Plutus契約(ロック/アンロック/宣言)、dApp、CardanoProjectedNFTのプリミティブは、UTxORPCをゲームの状態マシンに読み込むスクリプトを読み込み、完全なランナブルCardanoスタックとして、Projected-nft-preorderテンプレートを読み込みます。\nお問い合わせ\n1. クローズアウトビデオ\nhttps://youtu.be/VM3LC49zrL4\n\n2. クローズアウトレポート\nhttps://drive.google.com/file/d/1kkk4pIheM8NirDLaOkwIWxlAV5tyccMTj/view?usp=drive link\n\n3. OPTIONALによって渡される仕事(参照のために):\nCardanoProjectedNFTのプリミティブ:\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src/cardano-projected-nft\nprojected-nft-preorder テンプレート:\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/projected-nft-preorder\n書き込み:\nhttps://effectstream.github.io/docs/blog/projected-nfts\nhttps://effectstream.github.io/docs/blog/cardano-primitives/ja\nM5デモビデオ\nhttps://youtu.be/cQ eM5PhSvc\n\n--------------------------------------------------------------------------------\nコンテンツとノート\n\n[テキストのsummary] カタリスト・ディレクションは、このプロジェクトに関する次の声明について検討し、チケット#9527で記録しました\n・リブランド.Paima は EffectStream として再ブランドし、 Midnight Foundation の一部です。リンクは、これらのエンティティティティの名称で表示されることがあります。\n・スコープ 審査者の場合:マイルストーンと成果物は、承認された受諾基準に対して評価されるべきです。 各投稿のリマイの内容"
+    }
+  ]
+}

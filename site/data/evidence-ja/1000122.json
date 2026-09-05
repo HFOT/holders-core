@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・ LambdaBuffers のコード生成モジュールは、LombdaBuffers スキーマを指定した Rust プログラミング言語の型定義と派生した実装を出力します。\n・LambdaBuffers Preludeのランタイムを実装するRustライブラリ。 このモジュールには、スキーマ内のすべての宣言されたタイプクラスのインスタンスの標準化されたJSONエンコーディングと平等実装が含まれます。\n・手動実装と自動生成された実装を保証するRustテストスイートは、JSONファイルの事前定義済みのLambdaBuffers Prelude黄金データセットと一致し、正しい実装の派生を行います。\n・LambdaBuffers Plutus ランタイムを実装するRustライブラリ。 このモジュールには、Plutus スキーマで宣言されたすべての型クラスのインスタンスに対して標準化された PlutusData エンコーディングの実装が含まれます。\n・手動で実装され、自動生成された実装を保証するRustテストスイートは、PlutusDataエンコードされたファイルの定義済みのLambdaBuffers Plutus黄金データセットと一致して、正しい実装の派生を実行します。\n・LambdaBuffersコード生成パイプラインをRustに合理化するためのNix devopsモジュール(Nix API)。\n・ランバダバッファの使用パターンに関する文書化",
+      "criteria": "・LambdaBuffers Prelude モジュールに基づいているLambdaBuffersスキーマは、Rustプロジェクトでアプリケーションの種類を指定することができます。\n・LambdaBuffers Plutus モジュールに基づいているLambdaBuffersスキーマは、Rustプロジェクトでアプリケーションの種類を指定することができます。\n・簡単な採用を容易にするために、ドキュメントとデボスツーリングが利用可能です.",
+      "report": "PoAレポートはこちらからご覧ください。\n\nhttps://mlabs-haskell.github.io/lambda-buffers/catalyst10-reports/milestone-1.html"
+    },
+    {
+      "no": 2,
+      "promise": "・LambdaBuffers は LambdaBuffers スキーマを指定した JavaScript プログラミング言語で型コンストラクタと派生した実装を出力するコード生成モジュールです。\n・LambdaBuffers Preludeのランタイムを実装するJavascriptライブラリ。 このモジュールには、スキーマ内のすべての宣言されたタイプクラスのインスタンスの標準化されたJSONエンコーディングと平等実装が含まれます。\n・手動で実装された実装と自動生成された実装を保証するJavascriptテストスイートは、JSONファイルの事前定義済みのLambdaBuffers Prelude黄金データセットと一致し、正しい実装の派生を行います。\n・LambdaBuffers Plutus ランタイムを実装するJavascriptライブラリ。 このモジュールには、Plutus スキーマで宣言されたすべての型クラスのインスタンスに対して標準化された PlutusData エンコーディングの実装が含まれます。\n・手動で実装され、自動生成された実装を保証するJavascriptテストスイートは、PlutusDataエンコードされたファイルの定義済みのLambdaBuffers Plutus黄金データセットと一致して、正しい実装の派生を実行します。\n・LambdaBuffersコード生成パイプラインをJavascriptに合理化するためのNixデヴォップモジュール(Nix API)。\n・書類作成",
+      "criteria": "・LambdaBuffers Prelude モジュールに基づいているLambdaBuffersスキーマは、Javascript プロジェクトでアプリケーションの種類を指定することができます。\n・LambdaBuffers Plutus モジュールに基づいているLambdaBuffersスキーマは、Javascript プロジェクトでアプリケーションの種類を指定することができます。\n・簡単な採用を容易にするために、ドキュメントとデボスツーリングが利用可能です.",
+      "report": "業績報告の証明はこちらをご覧ください。\nhttps://github.com/mlabs-haskell/lambda-buffers/blob/main/docs/catalyst10-reports/milestone-2.md"
+    },
+    {
+      "no": 3,
+      "promise": "・アイケンの統合とPlutusDataエンコーディングの記述方法は、LambdaBuffers Toolkitで提供できます。\n・NOTE: マイルストーン3で行われた研究の成果が、ランバダバッファーのインフェアシブルなインテグレーションを作る不適合性を指摘できるという事実を無視できません。 この場合、制限の詳細な技術的説明が提供されます.",
+      "criteria": "・生成された文書は、AikenとLambda Buffersとの統合に関連するすべての技術的なコンポーネントを記述し、それらに対する良好な理解と、それらがどのように意図された統合に関連しているかを示す。\n・生成された文書は、ランバダのバッファとアイケンを統合するための明確な技術パスを記述し、また、または代わりに、見つかった任意の制限の詳細な分析.",
+      "report": "ここにホストされているMilstone 3のPoAレポートをご覧ください:\nhttps://github.com/mlabs-haskell/lambda-buffers/blob/main/docs/catalyst10-reports/milestone-3.md"
+    },
+    {
+      "no": 4,
+      "promise": "Haskell と PlutusTx の別のコードジェネレーター\n・LambdaBuffers のコード生成モジュールは、ランブダ・バッファーのスキーマを指定したタイプ定義と派生した実装を出力します。\n・手動で実装された実装と自動生成された実装を保証する Haskell のテスト スイートは、JSON ファイルの事前定義済みの LambdaBuffers Prelude 黄金データ セットと一致し、正しい実装の派生を実行します。\n・Nix は LambdaBuffers コード生成パイプラインを Haskell の Prelude または PlutusTx の Prelude のいずれかに合理化するためのモジュール (Nix API) をデボス加工します。\n・LombdaBuffersのPreludeとPlutusTxのPreludeの使用法パターンに関する文書化\n\n完全な Plutus .lbf スキーマファイルで、Rust、TypeScript、PureScript のバックエンドサポートと Plutus Ledger API のすべての種類を含むことができます。\n・LambdaBuffers の Plutus .lbf スキーマファイルの更新されたインスタンスを手動で実装し、自動的に実装していることを確認するための拡張統合テストスイートです。\n\nLambdaBuffers git リポジトリのサンプリングスキームは、 git タグを使って、セマンティック・バージョン管理に従うものです。\n最適化された",
+      "criteria": "LambdaBuffers モジュールを Haskell プロジェクトに翻訳する実行可能で Nix ツーリングで、アプリケーションの種類を指定します。\nLambdaBuffersモジュールをPlutusTxプロジェクトに翻訳する実行可能でNixツーリングで、アプリケーションタイプを指定します。\n完全なPlutus Ledger APIタイプ用のLambdaBuffers Plutusスキーマを更新しました。\nドキュメンテーションとデボスツーリングは、簡単な採用を容易にするために利用可能です。\nLambdaBuffersの公式リリース用のGitタグ.",
+      "report": "マイルストーン4のPoAレポートはこちらからご覧ください。\nhttps://mlabs-haskell.github.io/lambda-buffers/catalyst10-reports/milestone-4.html"
+    },
+    {
+      "no": 5,
+      "promise": "・ラムダバッファのエンドツーエンドの使用をRust、JavaScript、ハスケル、PlutusTx言語エコシステムで実証したプロジェクトスキャフォールド。\n・LambdaBuffersがサポートするさまざまな言語エコシステム間でJSONベースの設定を管理および交換する方法を説明します。\n・もっと重要なのは、LambdaBuffers を使って Plutus スクリプト言語とトランザクション構築フレームワーク間で Plutus Datum を指定して交換する方法を示しています。\n・Rust、JavaScript、Haskll、PlutusTx言語エコシステム向けに、LombdaBuffersの完全テストおよび文書化を行いました。\n・新しくサポートされている言語でLambdaBufferの使い方を分かりやすく解説するプロジェクトを文書化。\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・ランバダバッファーのリポジトリは、Rust、JavaScript、Haskell、PlutusTx言語のエコシステムを備えたランバダバッファの作業エンドツーエンドの使用を実証する用意があります。\n・ LambdaBuffers は JSON の設定を指定しています。\n・ラムダバッファは、プルタス・ダタムの指定に使用します。\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "最終的なマイルストーンの達成の証拠は、次のリンクで見つけることができます: https://mlabs-haskell.github.io/lambda-buffers/catalyst10-reports/milestone-5.html\nクローズアウトレポートは次のリンクで見つけることができます: https://docs.google.com/document/d/1wY9Ce2YZtum4yCt6bMJicGF6FQdm-E2y/"
+    }
+  ]
+}

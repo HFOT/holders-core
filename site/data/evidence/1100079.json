@@ -1,0 +1,76 @@
+{
+  "title": "CardanoGPT and Plugin: The Cardano developer Co-Pilot tool for effective development and efficient debugging",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40000,
+      "promise": "・A repository containing at least hundreds of Plutus codes(As stated in the proposal we are starting with one programming language)\n・Commit that points to the cleansed and curated dataset of the Plutus codes\n・Initial identification process for the ML model to be used for training and finetunement\n・Design of the Project structure including the API structure that will be used",
+      "criteria": "・The number of plutus codes in the repository is up to at least a hundred \n・Activity on the repository that shows updates to the data repository\n・A report on the agreed ML models chosen and the ideation behind it\n・A wireframe design of the project structure including the API structure",
+      "report": "・A link to a github repostiory that contains hundreds of plutus codes: Proof https://github.com/ubiodee/Plutus each folder contains sub folders which leads to lots of plutus codes\n・A link to a github repository that has the curated and cleansed dataset, with clear distinctions in the naming from the first repository: proof https://github.com/ubiodee/Cleansed_Plutus the json files contains cleansed codes and data which will be used for the model training\n・A like to the report in google docs capturing the proposed model to be utilized, the research behind it and the reasoning behind using it: Proof https://docs.google.com/document/d/1EjwOMcVPbR5slVbmRJaHa5pM95BARGNAviD-B3qzkXc/edit?usp=sharing\n・An image that captures the project design including its API: Proof https://drive.google.com/file/d/1ANc-3V6-CVIkAGl6S8SLZR3KZ81emP70/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 20000,
+      "promise": "・Initial Model training\n・Model finetunement\n・Co-pilot model built and testing on specifically Plutus language(We are starting with one language as stated in the proposal and we have chosen to start with Plutus)\n・Developed model is opensourced and anyone can have access to it\n・Get feedback from initial set of commuty users, we are setting it to 3-5 users first at this stage",
+      "criteria": "・trained model committed to the repository\n・Model is syntactically compatible on Plutus test cases\n・The project is open-sourced and link is accessible on GitHub\n・Initial community feedback on the project",
+      "report": "a .py (or any other suitable format) of the initial trained model committed to the project repository\nhttps://github.com/ubiodee/Plutus_Demo/blob/main/Fine_Tuned_Plutus_Language.ipynb\nhttps://github.com/ubiodee/Plutus_Demo/blob/main/Fine_Tuned_Plutus_Language_Llama3.ipynb\nA video demo showing the initial use case of the project and its functioning on plutus test case\nhttps://youtu.be/LEFpYd5QqUU\nA github link to the project repository which is accessible to all\nhttps://github.com/ubiodee/Plutus_Demo\nfeedback report in pdf or any other suitable format capturing the comments and feedback of at least 3-5 community members\nhttps://docs.google.com/spreadsheets/d/19HKpcv9jWfrPqmChb39RHY4s75H8sepi1FtZWH6OKPM/edit?usp=sharing\nN/B: I have inputted the email contact to the spreadsheet but just for your information the catalyst rules do not permit the sharing of sensitive and personal data that's why I had to redact it out, and we are now meant to agree to this clause before submitting",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 20000,
+      "promise": "・identify issues that need refinement and adjustment based on the community feedback in M2\n・Refine the model and include contextual awareness in the model\n・Improve the code generated\n・Demonstrate the model",
+      "criteria": "・New updates to the project repository\n・Updates is demonstrable\n・Code is much more improved and understands contexts better",
+      "report": "・Video demonstration of the model, showing its improvement and contexts and the awareness capability of the model: https://youtu.be/Ar1YjzPPsYQ\n・GitHub repository commits of updated model: For model commits: https://github.com/ubiodee/Plutus_Demo/tree/main For Data Commits: https://github.com/ubiodee/Cleansed_Plutus\n・Document indicating the present updates and status: https://docs.google.com/document/d/1fBdWtZvVKud4WbbvBtSTDnotYgyyuMZMi3pECiuiWvY/edit?usp=sharing\n\nWith respect to making it easy for you to test I have provided the following:\n・The extracted and zipped Model: https://drive.google.com/file/d/1FEP0DOr5s6pN6FHg0X0QrXX0jwWVFSFk/view?usp=sharing\n・I have created a colab with all the code you need to feed the model and test: https://colab.research.google.com/drive/1e6BA-qZEdt6Q8YY7wxr98svIdiekUfPC?usp=sharing\n\nYou can either test the model directly using your code or using the colab I created to assist, if using the colab all you need is to create a folder on Colab and then remove the path in my code and call your own specific path, also the memory usage is GPU 30gb and RAM 5gb, on the colab shared you can see the code working already on different example\n\nI have also gone ahead to make the model available on hugging face so you can directly call it as well \nhttps://huggingface.co/ubiodee/plutus_llm",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 14
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 50000,
+      "promise": "・Co-pilot capable of learning from user feedback and adapting its code generation over time.\n・Mechanism for users to provide feedback on generated code and suggest improvements, openly accessible.\n・Open-source release of the learning and adaptation models.\n・Api release\n・Video demo demonstrating the feedback capabilities and how it will be used for relearning purposes",
+      "criteria": "・Users observe improvements in code generation based on their feedback, contributing to an open-source collaborative improvement process.\n・Positive community sentiment regarding the Co-pilot's ability to adapt to evolving Cardano development practices.\n・Transparent open-source feedback loop established for continuous improvement.\n・Video demo is clear and audible",
+      "report": "An interface is created linking the model to the interface: https://v0-cardano-gpt-clone.vercel.app/\nA thumbs-up and down feature is integrated to allow users to give feedback to the model on performance and for it to be able to adapt its code overtime in the long run: https://v0-cardano-gpt-clone.vercel.app/chat\nProject made into an accessible : https://huggingface.co/ubiodee/Cardano_plutus (In about a month more than 123 usage by devs worldwide)\nGithub repository accessible to all: https://github.com/ubiodee/Plutus_Demo\nVideo demonstration of the project so far with specific emphasis on the feedback loop: https://drive.google.com/file/d/1IsqISqWH7cmVSTW4EJZVUmyV2Xltp5qU/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 10
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 40000,
+      "promise": "・Co-pilot accessible through user-friendly interfaces and integrated into popular development environments.\n・Open-source release of a simple interface and plugin integration for ChatGPT.\n・Community engagement events, tutorials, and documentation to promote Co-pilot adoption.\n・Make a close-out video and demo and report",
+      "criteria": "・Positive feedback from developers regarding the ease of integration into their workflows.\n・Increased usage metrics indicating a growing number of developers using the Co-pilot.\n・Successful community events and tutorials with active participation and positive feedback on ChatGPT integration",
+      "report": "1. a website link where the interface is domiciled in: https://www.gptcardano.com/ \n opensource hugging face space: https://huggingface.co/spaces/ubiodee/Plutus_Cardano \n2. Link to the integration of the project on chatgpt: https://chatgpt.com/g/g-681abe4bda5081918c08edf5bd69c5c3-cardano-gpt\n3. community feedback report document: https://docs.google.com/spreadsheets/d/1710RYpipqmGGSFnNIJowg-M0t6ue0lO2eURPIRi4Acs/edit?usp=sharing \n Project Documentation: https://drive.google.com/file/d/1k7THeFaaU9nkrdJqmf06jET6hCE28819/view?usp=sharing\n4. Closeout document and video: https://docs.google.com/document/d/1LVV2MSsS-Nm7Ow5WyJKliy7Nja3RNdM-N303hyV5zBs/edit?usp=sharing video: https://youtu.be/CXzwSKqwKqI \n community engagement events and tutorials: https://drive.google.com/file/d/19T_Jr1mE3lkdHcjcaIsYDVg7II-SEWUx/view?usp=sharing \nhuggingface screenshot proof of downloads of model/dataset: https://drive.google.com/file/d/1IepTlLh3KyM6lIWatSQZqTrmDpwEaMQI/view?usp=sharing",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 18
+    }
+  ]
+}

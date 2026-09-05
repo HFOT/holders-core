@@ -1,0 +1,30 @@
+{
+  "title": "Multisig Wallet Connector (CIP-30 expansion)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 7600,
+      "promise": "The output of this milestone will be a pull-request to:https://github.com/cardano-foundation/CIPs The request will contain the full specifications for the new connector that will allow daps to connect to multisig wallets.",
+      "criteria": "The specifications for the API must be:A) Complete: This connector must allow all operations currently possible with the CIP-30 connector except for ( api.signTx() and api.signData()), the former will be replaced with an multisig equivalent. Aditionaly the connector must provide endpoints that give the connecting dApp the information required to create a transaction that conforms to the connected mulisig wallet specifications.",
+      "report": "As noted in the \"Evidence of milestone completion\" here is the link to the open pull request.\nhttps://github.com/cardano-foundation/CIPs/pull/617\n\nI attended the CIP editors meeting and there is a consensus that \nA) The proposed connector is well written \nB) this functionality is best to be implemented as an extension of CIP-30 \n\nTo this end I will be requesting a change to the Milestone 2 as the functionality will no longer be included under windows.cardanoMultisig but will be injected in window.cardano same as the other CIP-30 connector. \n\nAdditionally I will start working on the reference implementation immediately.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 12900,
+      "promise": "The output of this step will be an extension for Google Chrome that will inject into the browser the new connector under window.MultisigCardano namespace. \n\nUpon installing this application the user must be able to select an account that will connect to dapps, dapps the user visit must be able to connect to the wallet.",
+      "criteria": "The application must be available in the chrome store and implement the new connector in full.",
+      "report": "The connector is live on the Chrome store: https://chromewebstore.google.com/detail/bro-clan-companion-extens/mdnadibcilebgfdkadlhegdpgpglljmn \nAdditionally I have created the first Mutisig-only App while I was waiting for approval from the chrome store, you can access it now at mint.broclan.io to be able and add images please follow the instructions in https://github.com/leo42/Bro-mint/blob/main/README.md\nFinally as outlined in the \"Evidence of milestone completion\" I have created a mock-app located in https://github.com/leo42/CIP-30-Extencion-MockApp , this app queries all the endpoints and returns the raw-CBOR value as text on the screen. \n\nTo test submitUnsignedTx, getCompletedTx and submitTx You start by submiting a transaction then the button to getCompleted will show up, you will have to add all the signatures on the wallet (without clicking submit) then click on the getCompleted and submit on the mockApp.\n\nPlease note that to use the connector you will have to create a multisigWallet inside beta.broclan.io",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6
+    }
+  ]
+}

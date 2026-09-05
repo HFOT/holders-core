@@ -1,0 +1,58 @@
+{
+  "title": "AdaLink: Affiliate Network for Cardano Businesses",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 30000,
+      "promise": "1. Platform architecture, i.e., a description of the different parts of the platform and their relations with each other.\n2. Platform wireframe and mockups, related to UX/UI.",
+      "criteria": "A shared PDF documenting the following details:\n1) Finalized Overall Architecture of the Platform:\na. A comprehensive document will be created and publicly shared, detailing the overall architecture of the platform. This will include discussions on protocols, logic flow, and how they integrate to form the platform's foundation.\nb. The database architecture will be established, with detailed descriptions of table designs, relationships, and data storage requirements made available. This ensures efficient data management and retrieval capabilities are transparent.\n2) Completed Wireframes and Moc",
+      "report": "1. Platform Architecture\n2. Wireframes & Mockups",
+      "kinds": [
+        "code"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 30000,
+      "promise": "・User interface for minimum viable product (MVP) based on wireframes. Wallet, user, and database integration completed with frontend.\n・Complete protocols used in the backend.",
+      "criteria": "・Completed MVP user interface. This includes:\n\n・Ability to login with a wallet.\n・Ability to register as a user.\n\n 2. Functional backend and successful integration between backend and frontend. This includes:\n・Ability to log back in once registered as a user.\n・Ability for users to edit their profiles.\n・Ability to search for registered Businesses and view their profiles and their products.\n・Ability to generate a unique affiliate link to promote Businesses products and services.",
+      "report": "MVP: Affiliate Network for Cardano Businesses\n\nNotes:\n1) Before testing, make sure to set your wallet to the preview testnet.\n2) You can sign up as a Business/Project or as an Affiliate per wallet. Please use different wallets to test different types of users. \n3) Project Users can create listings to promote their affiliate programs. You must have Test Ada in your Wallet to Create a listing.\n4) Affiliates can search for active programs, select the program that they are interested in promoting and click on “Generate affiliate link” to create the partnership. Once a unique link is created, they can share it with their audience.\n5) When people click on the affiliate links, they are directed to the project’s sign-up page.\nThank you so much for testing and reviewing!",
+      "kinds": [
+        "other"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 25000,
+      "promise": "Create a closed testing environment consisting of a group of 3 Cardano Businesses and 3 affiliate users and collect feedback to improve the MVP.",
+      "criteria": "A shared PDF documenting the details from the closed Alpha MVP user feedback, including:\n1) Closed Testing Environment Creation: A report on establishing a closed testing environment for the MVP, involving 3 Cardano Businesses and 3 affiliate users.\n2) Feedback Collection and Documentation: A report of the feedback collected from testers on their MVP usage experience. To ensure transparency and effective communication of user feedback, a link to the repository hosting this report will be shared.\n3) Feedback Review and Implementation: A report detailing the examination of tester feedback to ide",
+      "report": "URL: Alpha Testing Report Document",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 15000,
+      "promise": "・Launch of AdaLink MVP is live in a closed beta setting: Ensure peer-to-peer process to allow for Cardano Businesses & Affiliates to interact with one another through AdaLink platform.\n・Final close-out report\n・Final closeout video",
+      "criteria": "1. AdaLink MVP is live in a closed beta setting with the following capabilities:\n・Campaign Creation: Businesses can create their campaigns and list their products and/or services for affiliates to find and promote.\n・Affiliate Link Provision: Affiliate users can generate unique referral codes to promote listed Cardano Businesses.\n・Reward Handling: The rewards are accurately calculated and distributed as previously set by the business when creating the campaign/incentive program.\n・Platform Functionality: The platform is fully operational on preproduction testnet, allowing seamless navigation and",
+      "report": "・Link to the AdaLink MVP\n・Link to the Final Close Out Report\n・Link to the Final Close Out Video",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 3,
+      "cut": true
+    }
+  ]
+}

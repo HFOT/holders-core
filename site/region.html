@@ -6,7 +6,7 @@
 <title>地域 — holders CORE / LEDGER 地域の層</title>
 <meta name="description" content="Catalyst の採択プロジェクトを世界地図から国ごとに辿る。金額順・完了順に並べ替え、提案者名と一次情報まで降りられる。">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=all-ranking-2">
+  <link rel="stylesheet" href="style.css?v=tl-1">
 </head>
 <body>
 
@@ -112,6 +112,7 @@
           <button type="button" id="z-in" aria-label="拡大">＋</button>
           <button type="button" id="z-out" aria-label="縮小">−</button>
           <button type="button" id="z-all">全体</button>
+          <button type="button" id="g-toggle" aria-pressed="false">地球</button>
           <button type="button" id="z-full">全画面</button>
         </div>
         <div class="rg-jump" id="jump"></div>
@@ -150,6 +151,61 @@
   </section>
 
   <!-- ================= 一覧 ================= -->
+
+  <!-- ================= Fund の時系列 ================= -->
+
+  <section class="map-sec" id="sec-timeline">
+    <div class="map-h">
+      <h2>Fund の歩み</h2>
+      <span class="layer-jp">6年で、規模がどう変わったか</span>
+    </div>
+
+    <p class="map-lead">Fund ごとに、募集から着手までを同じ物差しで並べる。
+      右に、その Fund に用意された額と、応募・採択の数を置く。
+      <strong>規模がいつ膨らみ、いつ縮んだかが、帯の並びに出る。</strong></p>
+
+    <div class="tl-wrap" id="timeline"></div>
+
+    <ul class="map-legend" id="timeline-legend"></ul>
+  </section>
+
+  <!-- ================= 価値の差 ================= -->
+
+  <section class="map-sec" id="sec-value">
+    <div class="map-h">
+      <h2>約束された価値と、受け取った価値</h2>
+      <span class="layer-jp">採択から支払いまでに相場が動いたぶん</span>
+    </div>
+
+    <p class="map-lead">Catalyst は ADA 建てで採択し、マイルストーンの承認ごとに支払う。
+      その間に相場が動けば、同じ ADA 額でも受け取った価値は変わる。
+      <strong>この差は提案者の成果とも、審査の判断とも関係がない。</strong>だが確かに起きたことである。</p>
+
+    <div class="tablewrap">
+      <table class="matrix" id="value"></table>
+    </div>
+
+    <p class="rg-score-note" id="value-note"></p>
+  </section>
+
+  <!-- ================= 事前スコア ================= -->
+
+  <section class="map-sec" id="sec-scores">
+    <div class="map-h">
+      <h2>事前の評価</h2>
+      <span class="layer-jp">投票の前に付けられた点数と、その後</span>
+    </div>
+
+    <p class="map-lead">Catalyst では投票の前に、コミュニティのレビュアーが提案書を読んで点数を付ける。
+      整合性・実現可能性・監査可能性の三観点、それぞれ5点満点。<strong>その点数と、実際にどうなったかを並べる。</strong>
+      当たっている・外れているとは書かない。並べるだけである。</p>
+
+    <div class="tablewrap">
+      <table class="matrix" id="scores"></table>
+    </div>
+
+    <p class="rg-score-note" id="score-note"></p>
+  </section>
 
   <section class="map-sec" id="sec-list">
     <div class="map-h">
@@ -198,6 +254,7 @@
   </div>
 </footer>
 
-  <script src="region.js?v=map-neo-full-1"></script>
+  <script src="ask.js?v=ask-1"></script>
+  <script src="region.js?v=tl-1"></script>
 </body>
 </html>

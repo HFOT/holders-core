@@ -1,0 +1,73 @@
+{
+  "title": "Full-feature open-source NFT Web Forge",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 54000,
+      "promise": "・System design & architecture document.\n・Back-end code with functional endpoints for:\n・IPFS hash retrieval.\n・File upload.\n・Unit tests covering the core functionality.",
+      "criteria": "・System design & architecture document describes:\n・Visually all the Back-end and third party components and their interactions.\n・Back-end system design with APIs and endpoints, technologies used, their interactions and error handling.\n・Database system design, technologies used, their interactions and error handling.\n・Third party components and their interactions.\n・Back-end functionality is operational, allowing successful IPFS uploads and retrieval of hashes.\n・All unit tests pass.",
+      "report": "Please see below a explanation on how individual acceptance criteria is addressed, and a summary to the individual envidence.\n\nAcceptance criteria:\n・Visually all the Back-end and third party components and their interactions\n・All backend and 3rd party components and their interactions are described here: https://github.com/WingRiders/nft-forge/blob/main/docs/architecture.md#components\n・Their visualization: https://github.com/WingRiders/nft-forge/blob/main/docs/architecture.md#components-visualization\n・Backend system design\n・API endpoints and their error handling: https://github.com/WingRiders/nft-forge/blob/main/docs/architecture.md#backend-api. The first paragraph describes the used technologies.\n・Interaction of backend components: https://github.com/WingRiders/nft-forge/blob/main/docs/architecture.md#components-visualization\n・Database system design, technologies used, their interactions and error handling: https://github.com/WingRiders/nft-forge/blob/main/docs/architecture.md#ipfs-system-design\n・Third party components and their interactions: IPFS provider is considered a 3rd party component. Example implementation of an IPFS provider can be found here: https://github.com/WingRiders/nft-forge/blob/main/docs/architecture.md#wingriders-ipfs-service-provider\n・Back-end functionality is operational, allowing successful IPFS uploads and retrieval of hashes\n・There are 2 endpoints - IPFS upload and IPFS retrieval. The code can be found here:\n・Upload: https://github.com/WingRiders/nft-forge/blob/main/src/app/api/ipfs/upload/route.ts\n・Retrieval: https://github.com/WingRiders/nft-forge/blob/main/src/app/api/ipfs/pins/route.ts\n・They both have end-to-end tests implemented here (tests cover also error paths):\n・Upload: https://github.com/WingRiders/nft-forge/blob/main/test/app/api/ipfs/upload/route.spec.ts\n・Retrieval: https://github.com/WingRiders/nft-forge/blob/main/test/app/api/ipfs/pins/route.spec.ts\n・To verify that the endpoints work, you can either run the project on your ma",
+      "kinds": [
+        "code"
+      ],
+      "links": 38,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 54000,
+      "promise": "・Updated System design & architecture document.\n・Front-end that supports:\n・IPFS retrieval.\n・File upload.\n・Integration tests covering the core functionality.",
+      "criteria": "・System design & architecture document is updated and describes:\n・Visually all the Front-end components and their interactions with the components from the previous Milestone.\n・Front-end system design with components, technologies used, their interactions and error handling.\n・UI/UX design.\n・The front-end interacts with the back-end for IPFS uploads.\n・All Integration tests pass.",
+      "report": "Dear reviewer, thank you for your comments. We have adjusted the project accordingly:\n・The app will now display the IPFS hash of the uploaded images\n・The video is more detailed and shows how to verify that images were uploaded to IPFS\n・We've added a brief description of the test cases: https://github.com/WingRiders/nft-forge/blob/main/docs/tests.md\n\nYour suggestion to display all images uploaded by a user does not align with the IPFS protocol. In the IPFS network, anyone can upload files, but they are not associated with a specific user in any way. Therefore, it is not possible to determine which files were uploaded by whom. Additionally, files in IPFS are identified by their content hash, meaning that if multiple users upload the same file, it will only be stored once in the network.\nPlease note that the current state of the application is focused solely on demonstrating the image upload functionality. Once the next screens for NFT minting are implemented, the overall flow will be slightly different. Regarding your issue with installing Bun dependencies, it appears to be a permission-related problem with your Bun/Node.js installation. Please ensure that Bun and Node.js are correctly installed for your user and have the appropriate permissions. Here is the milestone evidence:\n・Open-source GitHub repository: https://github.com/WingRiders/nft-forge\n・Updated design and architecture document: https://github.com/WingRiders/nft-forge/blob/main/docs/architecture.md\n・All frontend components and their interactions are described and visualized here: https://github.com/WingRiders/nft-forge/blob/main/docs/architecture.md#components\n・Frontend system design: https://github.com/WingRiders/nft-forge/blob/main/docs/architecture.md#frontend\n・UI/UX design: https://github.com/WingRiders/nft-forge/blob/main/docs/frontend-design.md\n・Code:\n・File upload and retrieval component: https://github.com/WingRiders/nft-forge/blob/main/src/app/upload-images/page.tsx\n・Code for the backend interactio",
+      "kinds": [
+        "code"
+      ],
+      "links": 26,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 36000,
+      "promise": "・Finalized System design & architecture document.\n・Front-end that supports:\n・Metadata verification features.\n・Transaction building feature that incorporates user-defined NFT settings.\n・Integration tests covering the core functionality.",
+      "criteria": "・System design & architecture document is finalized and describes:\n・All the components, technologies used, their interactions and error handling.\n・UI/UX design.\n・The front-end successfully verifies metadata and highlights possible errors, ensuring users can correct issues before proceeding.\n・Users can create transactions based on their NFT settings successfully.\n・All Integration tests pass.",
+      "report": "Dear reviewer\n・Our app has more strict criteria for collateral selection than your wallet might have. If the app displays that you don't have a collateral, please create one in the app\n・We have improved the UX, and the error message that you mentioned won't appear again after you mint the NFTs\n・We have implemented the CIP-68 minting standard. We didn't include it in the milestone video because the flow is the same as before\n・Your suggestion for bulk NFT creation is currently out of scope of this proposal but we acknowledge it and we might implement it in the future. If you want to build multiple NFTs now, you can upload more images and each image will create a separate NFT, or you can use the DUPLICATE feature.\n\nHere is the evidence:\n・Open-source GitHub repository: https://github.com/WingRiders/nft-forge\n・OnChain smart contracts: https://github.com/WingRiders/minter-aiken\n・Finalized system design and architecture document: https://github.com/WingRiders/nft-forge/blob/main/docs/architecture.md\n・All the components and technologies used: https://github.com/WingRiders/nft-forge/blob/main/docs/architecture.md#components\n・UI design: https://github.com/WingRiders/nft-forge/blob/main/docs/frontend-design.md\n・Video showcasing the app features: https://github.com/WingRiders/nft-forge/blob/main/catalyst-evidence/milestone-3-video.mp4\n・Integration tests:\n・Tests overview: https://github.com/WingRiders/nft-forge/blob/main/docs/tests.md\n・Tests definitions: https://github.com/WingRiders/nft-forge/tree/main/test\n・Tests execution in the GitHub CI: https://github.com/WingRiders/nft-forge/actions/runs/13763466781/job/38484500747. You can expand the \"Run test\" section and see that all tests have passed",
+      "kinds": [
+        "code"
+      ],
+      "links": 18
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 9000,
+      "promise": "Centralized Documentation on GitHub:\n・Combines all documentation from Milestones 1, 2, and 3 into a single section on GitHub.\n・Includes system design, backend/frontend functionality, UI/UX guides, and a community section (FAQs, user guides, and use-case scenarios).\n\nMarketing Report Document:\n・Provided as a Google Sheet, including:\n・a. Social Updates: Social media posts (Twitter, Discord, etc.) with engagement metrics (views, likes, comments, shares).\n・b. GitHub Feedback: Contributions or feedback (empty if none).\n・c. Major Issues: Summary of issues reported by the community (empty if none).\n・d. Issue Fixes: Links to GitHub commits resolving issues (empty if none).\n\nMarketing Plan with Quantifiable Goals:\n・At least 5 posts made across communication channels (Twitter, Discord, etc.).\n・Posts achieve a combined minimum of 100 views/interactions (likes, comments, or shares).\n・Promotion of GitHub documentation and the final product to increase visibility and engagement.\n\nLink to the Final Product:\n・A functional prototype or final product, accessible via a shared link.",
+      "criteria": "Centralized Documentation:\n・Documentation from Milestones 1, 2, and 3 combined, updated, and accessible on GitHub, with additional resources for the community.\n\nMarketing Report:\n・The Google Sheet includes social updates, GitHub feedback, issues, and fixes.\n\nMeasurable Marketing Goals:\n・At least 5 posts with a combined minimum of 100 views/interactions.\n\nFinal Product:\n・A link to the working prototype or final version of the product.",
+      "report": "Dear reviewer,All required evidence is compiled in the following document:\nComplete Milestone Evidence Sheet For your convenience, we’ve also listed the individual items below in accordance with the milestone structure:GitHub Documentation:\n・System design and backend/frontend functionality:\n・ https://github.com/WingRiders/nft-forge/blob/main/docs/architecture.md\n・UI/UX and user guides:\n・ https://github.com/WingRiders/nft-forge/blob/main/docs/frontend-design.md\n・FAQs:\n・ https://github.com/WingRiders/nft-forge/blob/main/docs/faqs.md\n・Use-case scenarios:\n・ https://github.com/WingRiders/nft-forge/tree/main/manualTests\n\nMarketing Report & Social Media Evidence:\nhttps://docs.google.com/spreadsheets/d/1QTrs1wm2HUfyumQcjSeGMjRDPgCLMoIk2LfsbCEuDGY/edit?gid=0#gid=0Final Product Link:\nhttps://nft-forge.wingriders.com/",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 13
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 27000,
+      "promise": "・A 2/3 page written summary ‘Project Close-out Report’.\n・Short video ‘Project Close-out Video’",
+      "criteria": "Project Close-out Report:\n・Lists the following KPIs with measurable outcomes:\n・Documentation: Complete and centralized project documentation published on GitHub.\n・Functionality: Link to a working prototype shared with the community. \n・Feedback Resolution: Summary of major issues and fixes addressed during the project.\n・Community Impact:\n・Report on engagement from social media posts published in Milestone 4 (minimum 5 posts on Twitter, Discord, etc.).\n・Summary of engagement metrics: views, likes, shares, or comments.\n・Description of how these activities informed or supported the project.\n\nProje",
+      "report": "Dear Reviewer,Below are all relevant links with updated evidence for the project Full-feature open-source NFT Web Forge, including the Project Close-out Report, Final Video, NFT Forge App and supporting GitHub documentation.Project Close-out Report (PCR):\nhttps://github.com/WingRiders/nft-forge/blob/main/catalyst-evidence/project-close-out-report.pdf\nFinal Video (PCV):\nhttps://www.youtube.com/watch?v=oJGddJe5R5s\nNFT Web Forge – Demo Walkthrough:\nhttps://www.youtube.com/watch?v=h6hwfLV5FPY\nNFT Forge App:\nhttps://nft-forge.wingriders.com\nGitHub Documentation:\nRepository: https://github.com/WingRiders/nft-forge\nCatalyst evidence & videos: https://github.com/WingRiders/nft-forge/tree/main/catalyst-evidence\nArchitecture: https://github.com/WingRiders/nft-forge/blob/main/docs/architecture.md\nFrontend Design: https://github.com/WingRiders/nft-forge/blob/main/docs/frontend-design.md\nTest Coverage: https://github.com/WingRiders/nft-forge/blob/main/docs/tests.md\nTesting report: https://github.com/WingRiders/nft-forge/blob/main/manualTests/REPORT.md\nTest runs: https://github.com/WingRiders/nft-forge/actions/workflows/test.yml\n﻿Marketing evidence:\nCommunity Engagement and Feedback (Survey): https://docs.google.com/spreadsheets/d/1YgoVWrafManZ1OPj3t_YFoix7v9baxOlw0NARS6CXZU/edit?gid=103454808#gid=103454808\nMarketing Report Document: https://docs.google.com/spreadsheets/d/1QTrs1wm2HUfyumQcjSeGMjRDPgCLMoIk2LfsbCEuDGY/edit?gid=0#gid=0Best regards,\nWingRiders Team",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 26,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Minswap SDK for Stableswap + AMM v2 + LBE v2",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 12700,
+      "promise": "・Secure mechanisms to gather and store historical price data for both Stable Pools and V2 Liquidity Pools.\n・Efficient data storage and retrieval systems to guarantee smooth access to historical information.\n・Robust data security protocols to protect the integrity of historical price data.",
+      "criteria": "・Complete an indexer to fetch the stable and V2 Liquidity Pools directly from the Cardano node and store to a PostgresQL database\n・Complete the functionalities to access the latest pool prices and historical prices of a specific liquidity pool",
+      "report": "Here's the documentation of the Milestone 1 with particular Repos, examples and more: https://github.com/minswap/sdk/blob/main/docs/database-indexer.md\nHere's the GitHub link for the SDK: https://github.com/minswap/sdk",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 38100,
+      "promise": "・Secure and efficient off-chain methods for interacting with the Minswap Stableswap and AMM V2 smart contracts.\n・Secure communication channels and protocols to ensure safe interactions between off-chain services and smart contracts.\n・Guaranteed compatibility and interoperability with the existing smart contract infrastructure.",
+      "criteria": "・Complete a functionalities to interact with Stableswap and AMM V2 smart contract, that will include:\n・Stableswap: expose a class to create stableswap orders along with Minswap Batcher fee discount\n・AMM V2: expose a class to create new a Liquidity Pool on V2 smart contract and its orders along with Minswap Batcher fee discount",
+      "report": "Here's the updated documentation of the Milestone 2 with particular Repos, examples and more: https://github.com/minswap/sdk/blob/main/docs/transaction.md\nHere's the GitHub link for the SDK: https://github.com/minswap/sdk\nThis is the updated version that has the example for Pool Creation. On that note, we don't have the Batcher Fee for Pool Creation, only have the discount for making the orders which has been implemented.\nFor the security part:\n・We use HTTPS to interact with Blockfrost, which means the signed transaction is encrypted-in-transit and it's not possible for man in the middle attack\n・We store private key on client-side or cold wallets and only send send transaction signatures to Blockfrost\n・In case of users using hot wallet, private key is stored encrypted-at-rest, which means that it always requires password to decrypt the private key to sign the transaction",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 31750,
+      "promise": "・An off-chain monitoring service to automatically track and cancel expired orders within the AMM V2 protocol.\n・Off-chain integration methods for streamlined interaction with the LBE V2 smart contract.",
+      "criteria": "・Complete a program that can automatically track and cancel expired orders within the AMM V2 protocol\n・Complete a functionalities to interact with LBE V2 smart contract, including:\n・Create new LBE V2 event, manage its concurrency performance and transfer the liquidity to a new Liquidity Pool after the Launch Bowl event finish\n・Participate in an LBE V2 event",
+      "report": "1. Expired Order Monitor:\n- Off-chain Component to Track and Cancel Expired Orders: https://github.com/minswap/sdk/blob/main/docs/dex-transaction.md#4-off-chain-component-to-track-and-cancel-the-expired-orders\n2. Functionalities to Interact with LBE V2 Smart Contract (Documentation Overview: https://github.com/minswap/sdk/blob/main/docs/lbe-v2/lbe-v2.md):\n- Create new LBE V2 event: https://github.com/minswap/sdk/blob/main/docs/lbe-v2/lbe-v2.md#create-event\n- Manage its concurrency performance: https://github.com/minswap/sdk/blob/main/docs/lbe-v2/lbe-v2.md#add-sellerincrease-concurrency-performance\n- Transfer the liquidity to a new Liquidity Pool after the Launch Bowl event finishes: https://github.com/minswap/sdk/blob/main/docs/lbe-v2/lbe-v2.md#run-lbe-v2-worker\n- Participate in an LBE V2 event: https://github.com/minswap/sdk/blob/main/docs/lbe-v2/lbe-v2.md#create-order",
+      "kinds": [
+        "code"
+      ],
+      "links": 12
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 44450,
+      "promise": "・Final close-out report\n・Final closeout video\n・Documentation for the new SDK features\n・Example project to demonstrate the usage of new SDK features",
+      "criteria": "・The SDK is accessible to the public\n・The SDK is composable i.e., anyone can build on top of it and use it for development purposes\n・The SDK is functional and smoothly does the intended work\n・The close-out report and video is publicly accessible",
+      "report": "・The SDK is accessible to the public here\n・The SDK is functional and does the intended work smoothly. Proofs and explanations are included in the close-out report below.\n・The close-out report is available here\n・The close-out video is publicly accessible here\n・The Github Repo at the Catalyst Submission commit can be accessed here",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

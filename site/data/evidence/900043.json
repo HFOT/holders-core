@@ -1,0 +1,65 @@
+{
+  "title": "Cardano NFT Gaming - Lovelace Saga!",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 50000,
+      "promise": "(A) Architecture Planning | API\n(B) DB Planning\n(C) Leaderboard API | POST the data (userId, Full name, score)\n(D) Leaderboard API | GET the data by userId\n(E) API Pagination logic\n(F) Score mechanics\n(G) Timer mechanics\n(H) Sync player in game metadata with game server (player character type, name, photo)\n(I) Volume\n(J) K/D Ratio\n(K) 1vs 1 | user disconnection\n(L) Lives limit + reserection\n(M) Dual Blades Animation | Grounded Light Down",
+      "criteria": "(A) The user can send the responses to the leaderboard via postman collection\n(B) The users gain score after successful attacks\n(C) The game has a limit in 3 minutes\n(D) The user can regulate the volume in the game\n(E) If one user disconnects - other user automatically wins the game Limit of the lives - 3\n(F) Implementing Dual attack for both characters",
+      "report": "Leaderboard API in progress, Twitter authorization is now functional, animations for 12 characters in progress, volume completed, kd ratio mechanics completed, timer mechanics completed, sync player mechanics completed. Please see attached video https://drive.google.com/file/d/1oxqppGknhpJAk-14KSIUB_prV5n-XcZX/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 50000,
+      "promise": "(A) Deathmode | Gameflow\n(B) Death Match | user disconnection \n(C) Character UI wall hanging\n(D) Dodge\n(E) Character | Knockback Character | agility\n(F) Character | speed\n(G) Stun\n(H) Jump Animation",
+      "criteria": "(A) Users can play in the mode with the 6 players\n(B) If one from six users disconnects - the game goes on, if there are leaving 2 users and 1 disconnects - in that case who remained - wins\n(C) Ability to hang from the wall\n(D) Ability to escape the attacks\n(E) Knockback after the attack\n(F) Set up the speed of attack (agility) of the character Set up the speed of the character\n(G) Stun after the attack\n(H) Character can jump",
+      "report": "The previous POA submission was meant for Milestone 2. We have continued to make progress with the points mentioned in the milestones outline. We have recorded an additional video to showing the demonstration of the game mechanics which were outlined in the previous submission. Progress is being made and development is on track. https://drive.google.com/file/d/1_DX1ESGVYIHEoLbxFcFB8Czif7v3CM01/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 50000,
+      "promise": "(A) Sign in Twitter\n(B) Heavy grounded attacks\n(C) Light aerial attacks\n(D) Adding 10 additional characters",
+      "criteria": "(A) Authorization for user profiles with Twitter\n(B) Animations and logic for heavy attacks and light attacks \n(C) Animations and artwork for 10 additional characters",
+      "report": "We have provided a demo of all stated features within the current MIlestone. Please refer to this link which includes a video of all outputs. https://drive.google.com/file/d/1iUTCn0CEFva0n3omSZ8p59pxDeE6xYIa/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 50000,
+      "promise": "(A) Attack effects\n(B) Attack animations for 10 additional characters",
+      "criteria": "(A) Users will see unique effects during gameplay\n(B) Different characters will have animations related to their default weapons",
+      "report": "We have added logic for Cardano wallet connectivity. Users can now connect a supported Cardano wallet to the platform. We have completed attack animations for all 12 characters. We have also added animations and logic for health potion and grenade. All character animations also include enhanced graphics and animations. https://drive.google.com/file/d/1wGkEP5c7XmzvsXDVHYpaH6URjBKecydu/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 50000,
+      "promise": "The project provides users the ability to have fun while taking part in the crypto gaming community. It will be a platform that gives provable ownership to those who are involved.This project’s final capabilities will allow users to play a fun game with other members in the Cardano community and even share their experience with others to bring new users.",
+      "criteria": "(A) Animations for all characters and weapons\n(B) Multiplayer NFT gaming",
+      "report": "We have completed our final milestone for this proposal. The attached video demonstrates the wallet connection feature of the platform where the user will be able to play as the NFT characters which they hold in their wallet. All animations for all characters and items have also been completed. We will be submitting a project closeout report along with this final POA. https://drive.google.com/file/d/1MmU371s1X-HZm0DbZEjpy8sSoucg2ol_/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    }
+  ]
+}

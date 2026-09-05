@@ -1,0 +1,59 @@
+{
+  "title": "Anvil - Semi-Custodial Wallet: Enterprise ready Wallet SDK",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 18000,
+      "promise": "Outputs:\n・Delivery of the complete system architecture and threat model documentation \n・Threat Model Report",
+      "criteria": "Acceptance:\n・Publicly available repo scaffolds, for documentation and architecture documents \n・Threat model and security review summary published \n・Document detailing the selected solution for Alpha: \n・Browser SDK \n・Authentication Partners(s) \n・Server Specifications \n・Frontend Integration \n・Mobile Application \n・Secure Storage Solution \n・Recovery Mechanisms",
+      "report": "During Milestone 1, we explored possibilities for the wallet and how we wanted it to foundationally operate. Through our PoA, you will see the unique approach we took. All Evidence Milestones lead to the same link, our Git-hub . Additionally, we added a section identifying the Authentication Partner(s) and Frontend Integration.\nA. Output: Delivery of the complete system architecture \nAcceptance criteria: System architecture properly documented\nEvidence: [Link to verify Output A and its Acceptance criteria]\nB. Output: Threat Model Report\nAcceptance criteria: Threat Model Report outlined and documented\nEvidence: [Link to verify Output B and its Acceptance criteria]\nC. Output: Create Repository\nAcceptance criteria: Repository successfully created\nEvidence: [Link to verify Output C and its Acceptance criteria]",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 12000,
+      "promise": "Outputs:\n・Fully implemented key management and transaction signing flows across platforms. \n・Keys securely stored in native keystores (WebCrypto, iOS Secure Enclave, Android Keystore). \n・Functional send/receive flows on testnet, along with unit tests validating persistence and negative cases for invalid signing. \n・Apple login demo functioning on Web and iOS \n・Automated tests confirm key persistence and expected failure handling \n・Recovery flows remain feature-flagged until Milestone 4(Final). \n・Includes negative tests for failed authentication, ensuring persistence of keys across app restarts, and laying the foundation for secure cross-platform wallet operations.",
+      "criteria": "Acceptance:\n・Transaction signing verified on Web, iOS, and Android \n・Keystore persistence validated via automated tests \n・Sample app demonstrates send/receive transactions on testnet \n・Initial SDK scaffolds across Web, iOS, and Android, and working integration of Apple login with secure key binding.",
+      "report": "During Milestone 2, we completed key management and transaction signing across platforms. Keys are stored securely in WebCrypto, iOS Secure Enclave, and Android Keystore. Send/receive flows functional on testnet with unit tests for persistence and invalid signing. Apple login demo works on Web and iOS; automated tests verify key persistence and failure handling. Negative tests for failed auth ensure keys persist across restarts, laying foundation for cross-platform wallets. To satisfy the reviewers, we provided 2 screenshots showing the Apple functionality(Output C). Additionally, the context Reviewer two provided is a correct interpretation of what we tried to present. \nA. Outputs: Fully implemented key management and transaction signing flows across platforms - Keys securely stored in native keystores (WebCrypto, iOS Secure Enclave, Android Keystore).\nAcceptance criteria: Transaction signing verified on Web, iOS, and Android, Initial SDK scaffolds across Web, iOS, and Android, and working integration of Apple login with secure key binding. \nEvidence: [Link to verify Output A and its Acceptance criteria]\nB. Outputs: Functional send/receive flows on testnet, along with unit tests validating persistence and negative cases for invalid signing.\nAcceptance criteria: Transaction signing verified on Web, iOS, and Android\nEvidence: [Link to verify Output B and its Acceptance criteria]\nC. Output: Apple login demo functioning on Web and iOS\nAcceptance criteria: Sample app demonstrates send/receive transactions on testnet\nEvidence: [Link to verify Output C and its Acceptance criteria]\nD. Output: Automated tests confirm key persistence and expected failure handling - Includes negative tests for failed authentication, ensuring persistence of keys across app restarts, and laying the foundation for secure cross-platform wallet operations.\nAcceptance criteria: Keystore persistence validated via automated tests\nEvidence: [Link to verify Output D and its Acceptance criteria]",
+      "kinds": [
+        "chain",
+        "doc",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 15000,
+      "promise": "Outputs:\n・Creation of a CIP-30 compatible dApp adapter enabling seamless connect/sign flows \n・Full integration testing with at least one DEX demo, coverage of CIP-8 signData where applicable, and API documentation \n・Recovery mechanisms (e.g., second factor), device linking/unlinking, minimal orchestration server APIs (rate limits, fraud prevention, telemetry) also implemented with privacy-first principles",
+      "criteria": "Acceptance:\n・CI integration tests passing, including negative scenarios \n・CI pipelines confirm signing flows function consistently across platforms \n・Recovery and device linking validated through demo flows \n・Privacy impact assessment updated. \n・dApp adapter enables working connect/sign flows in demo DEX integration",
+      "report": "In milestone 3, we addressed the recovery mechanism, signing mechanisms, and integrated with a DEX to show the product in use. Although not all relevant, we included everything related to this wallet in our Milestone 3 Overview (Page 36). All outputs met or exceeded. \nA. Output: Creation of a CIP-30 compatible dApp adapter enabling seamless connect/sign flows \nAcceptance criteria: CI integration tests passing, including negative scenarios \nCI pipelines confirm signing flows function consistently across platforms \nEvidence: Milestone 3 Report - Page 36\nB. Output: Full integration testing with at least one DEX demo, coverage of CIP-8 signData where applicable, and API documentation. \nAcceptance criteria: dApp adapter enables working connect/sign flows in demo DEX integration\nEvidence: Milestone 3 Report - Page 36 Integrated with Knightswap (utilizing Chadswap API for OTC trading) as well as Wayup (Leading Cardano NFT Marketplace)\nC. Output: Recovery mechanisms (e.g., second factor), device linking/unlinking, minimal orchestration server APIs (rate limits, fraud prevention, telemetry) also implemented with privacy-first principles.\nAcceptance criteria: Recovery and device linking validated through demo flows \nPrivacy impact assessment updated. \nEvidence: Milestone 3 Report - Page 36",
+      "kinds": [
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 15000,
+      "promise": "Outputs:\n・Comprehensive documentation including developer guides, migration and integration examples, and cookbook recipes \n・Launch of a developer portal with SDK distribution channels, usage guides, and CI validated examples \n・Private beta program with 3 partner dApps onboarded, collecting structured feedback to validate usability and readiness for broader adoption\n・Final close-out report\n・Final closeout video",
+      "criteria": "Acceptance:\n・API documentation available for developers \n・Developer portal live with SDK docs, examples, and guides published \n・SDK packages / Applications distributed for Web/iOS/Android \n・At least 3 partner dApps successfully integrated into private beta with feedback confirming end-to-end wallet flows function without seed phrases.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "During our final two milestones, we learned a lot about the wallet industry in Cardano. Through market and developer research, we were able to streamline Hodei to make it even better than originally planned. We are proud to present Hodei wallet, live and functioning on Cardano mainnet, in a 6 month time span. The product has already seen adoption through the space as users test the wallet on Wayup, the leading NFT marketplace on Cardano. Here is a link to our consistent reporting document which contains all updates and progress reports from start to finish. \n\nA. Output: Comprehensive documentation including developer guides, migration and integration examples, and cookbook recipes\nAcceptance criteria: API documentation available for developers\nEvidence: Link to Documentation\n\nB. Output: Launch of a developer portal with SDK distribution channels, usage guides, and CI validated examples\nAcceptance criteria: Developer portal live with SDK docs, examples, and guides published\nEvidence: We determined this unnecessary and inhibitive to what we created. A dedicated developer portal is not required, as the integration is straightforward and comparable to other existing wallets. Documentation is available at github.com/Cardano-Forge/hodei-client. \n\nC. Output: SDK distribution channels\nAcceptance criteria: SDK packages / Applications distributed for Web/iOS/Android \nEvidence: The current implementation does not use an SDK, during development we identified this approach as cumbersome and unnecessary for our target user base. Developers can integrate with or without Weld, or simply add \"hodei\" to the list of supported wallets. End users with the browser extension get the same features as any other wallet. iOS, macOS, and Android applications are available on TestFlight, with an APK available for Android. A web version was not pursued, as it was not aligned with our intended product direction.\n\nD. Output: Private beta program with 3 partner dApps onboarded, collecting structure",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 11,
+      "cut": true
+    }
+  ]
+}

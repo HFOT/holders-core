@@ -1,0 +1,67 @@
+{
+  "title": "Plutus V3 for OpShin",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 10000,
+      "promise": "Plutus V3 brings new functions to the UPLC machine. Concretely\n・Sums of Products (CIP 85)\n・BLS, Blake and Keccak crypto primitives (including cryptographic curves)\n・Bitwise primitives (CIP 58)\n・An updated cost mapping to accomodate these new primitives\n\nOur outputs are the implementation of these and testing their correctness using *all* the UPLC conformance tests from the official plutus repository (https://github.com/IntersectMBO/plutus/tree/master/plutus-conformance/test-cases/uplc/evaluation). The repository with the current Plutus V2 implementation and a pending Plutus V1 implementation is publicly accessible here: https://github.com/OpShin/uplc and contains continuous integration and a significant amount of existing test cases which have to pass as well.",
+      "criteria": "The criterium for acceptance is that corresponding pull requests are posted on the OpShin and UPLC repository and pass the continuous integration. Further the completion will be publicly shared through our Twitter communication channel (@OpShinDev) and on our Discord server (Opshin Den)",
+      "report": "We completed the implementation of PlutusV3 features and created a describing Pull Request, then shared the results on twitter. In accordance with the previously specified evidences for output:\nPull request on GitHub featuring implementation and adapted/extended test suite for Plutus V3:\nhttps://github.com/OpShin/uplc/pull/40 \n\nLink to post about completed implementation for Plutus V3:\nhttps://x.com/OpShinDev/status/1876614994072350789\n\nLink to post about completed implementation for PlutusV3 in Discord Channel:\nhttps://discord.com/channels/1077870759667580929/1081506049380585492/1326175093650362379 \n(Link is only accessible to members of the discord channel, invite link is available on https://opshin.dev )\n\nA screenshot for the discord post and more screenshots showcasing the working implementation are shared in the following Google Doc:\nhttps://docs.google.com/document/d/1NsuzZfcc-uOtMDfGkEoXjt5r9osttenj_-0SKN3K1-0/edit?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 30000,
+      "promise": "Plutus V3 brings changes to the Smart Contract API in interaction with the blockchain (in particular a changed ScriptContext). The correct representation of the ScriptContext during a transaction is encoded in the corresponding API classes in the OpShin repository. \nOur outputs are the implementation of these new ScriptContext classes and 2-3 unit test cases to compare the implementation and its CBOR encoding with CBOR encodings extracted from real transactions on-chain, ensuring that they match the blockchain specification.",
+      "criteria": "The criterium for acceptance is that corresponding pull requests are posted on the OpShin repository and pass the continuous integration, where applicable. The GitHub repository is https://github.com/OpShin/opshin\nFurther the completion of this milestone will be publicly communicated through our Twitter and Discord communication channels.",
+      "report": "We have completed the implementation of the PlutusV3 ScriptContext and published a corresponding PR with passing test cases. As described, the testcases include actual examples of ScriptContexts, including novel governance procedures, to ensure that the implementation is correct. The continuous integration passes, indicating that the tests are correctly found and executed.\nhttps://github.com/OpShin/opshin/pull/435\nA screenshot of the passing tests using the test framework of OpShin is provided here:\nhttps://drive.google.com/file/d/1tcDRDiulTillP-cA6DbJvlADRdJ9IDF_/view?usp=sharing\n\nWe posted about the update on Twitter as described in the milestone:\nhttps://x.com/OpShinDev/status/1915575768685646112\n\nWe have communicated this update on our OpShin Discord server:\nhttps://discord.com/channels/1077870759667580929/1081506049380585492/1365134935127752756\nA screenshot is uploaded here:\nhttps://drive.google.com/file/d/1tuxJLOBi_464AAA-UqOyXGqXBUwkbRKh/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 5
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 30000,
+      "promise": "After the implementation of the new features, we need to merge the changes into the mainstream OpShin implementation, adapt example contracts and test the new features end-to-end on the blockchain and publish a new version of OpShin. \nFirst, this means that the bitwise integer to bytestring (and back) primitives will replace the manual implementation provided for the current implementation.\nSecondly, the dual-usage of smart contracts in PlutusV3 is now simplified and its implementation in OpShin will be adapted to handle the single script argument correctly.\nThe outputs are a new OpShin version, the adaption of all example contracts in the OpShin repository to the new ScriptContext and test contracts executed on the testnet blockchain, in particular at least the vesting and gift contract, which are foundational to smart contract development and introduced in the first 3 weeks of the Plutus Pioneer Program. They interact meaningfully with the Script Context by accessing the list of signatories and time range, and make use of the newly optional script datum. Moreover a specific smart contract that accesses changed parts of the context is developed, accessing fields that are changed i",
+      "criteria": "The criteria are 1) new version of OpShin published that features PlutusV3 and 2) transaction on Cardano mainnet that executes an OpShin PlutusV3 contract. The links to each will be shared in this channel.\nThe tested smart contract(s) on the mainnet clearly demonstrate the specific changes Plutus V3 implements over V2. This includes in particular the spending of funds from a script address without a provided datum (due to the now optional datum). Moreover the change in script cost will be highlighted, which is expected to be largely reduced for bitwise operations.\nMoreover the completion of th",
+      "report": "Please find a correctly formatted completion document (including images) in this Google Doc: https://docs.google.com/document/d/1FM6AjSvyFSiHaDnqn6M00pVBwFD_TtXN4MsJlmUCqoA/edit?usp=sharing\n\nBelow is its content copied into the form:\n\nNew version of OpShin released\nWe have released version 0.27.0 of OpShin. This version includes support for PlutusV3 and adapts all example smart contracts in the repository to the new format. https://github.com/OpShin/opshin/releases/tag/0.27.0 \n\nWe have shared the news via our Twitter and Discord channels:\nhttps://x.com/OpShinDev/status/1979913254072643660 \nhttps://discord.com/channels/1077870759667580929/1081507668528726168/1429472338075848980\n<image of discord post in Google Doc>\n\nTransactions on Cardano mainnet:\nWe validate that OpShin correctly implements PlutusV3. As confirmation, we provide two contracts in PlutusV3, implemented with the latest OpShin version, and submitted to Cardano mainnet.\n\nThe first transaction demonstrates the ability to spend from a contract address without attaching a datum to the transaction:\nhttps://cexplorer.io/tx/b2357f07d2d8c41dccc3f9b6def84f119ccc79842d608730de7ef7d22a6e525c\nThe smart contract used for this transaction was added to the OpShin repository and is publicly accessible through this link:\nhttps://github.com/OpShin/opshin/blob/1a9a36270f76ff098bd380f6ee154232dcf82c53/examples/smart_contracts/bitwise.py\n\nThe second transaction demonstrates the usage of new primitives available in PlutusV3. Concretely, it uses the bitwise primitives to convert an integer to a byte string, perform a bitwise XOR on it, and convert it back to an integer:\nhttps://cexplorer.io/tx/69d6baea87efd3235a73bd0b98b69456b7a8db18b366fe7167e97b06f33f9c11\nThe smart contract execution itself costs only 0.01 ADA on PlutusV3, with a total transaction cost of only 0.31 ADA. The source code of the contract and code for its submission to mainnet can be found in the opshin repository:\nhttps://github.com/OpShin/opshin-starter-kit/t",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 21,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 30000,
+      "promise": "After releasing a new version of OpShin updates to the downstream tooling of OpShin will be required. In particular, the MockFrost package is based on opshin and needs a corresponding update to update the construction of a correct ScriptContext for transaction simulation.\nFurther we will share outputs from the following activities:\n・Collect and analyze feedback from developers to gauge satisfaction and gather insights for further improvements.\n・Interact within the community on forums and social media to evaluate the reception and enthusiasm for the project.\n\nNote that documentation and example scripts will be shared already due to Milestone 3, and only adapted based on feedback received in Milestone 4.\nFurther we will provide:\n・Final close-out report\n・Final closeout video",
+      "criteria": "The evidence will be the publicly accessible Pull Requests in the MockFrost repository and pycardano where applicable. The pull requests are accompanied by passing contiunous integration pipelines. If no changes are needed, a report will be provided that assesses the inspected modules and that no changes are required.\nThe form was shared via social media (Reddit, Twitter, Discord) for at least 2 weeks. The results of a shared form collecting feedback will be shared and proof of discussion of the new features on forums and social media.\nThe completion of this milestone will be shared on Twitter",
+      "report": "Adapting the downstream tooling of OpShin:\n\nOpShin patch release: https://github.com/OpShin/opshin/releases/tag/0.27.1\nPyCardano adapted: https://github.com/Python-Cardano/pycardano/pull/371\nOpShin documentation adapted: https://github.com/OpShin/opshin-book/commit/ffd39334b7f4a1dd09c1beefc4619d24e44a8364\nopshin-starter-kit adapted: https://github.com/OpShin/opshin-starter-kit/pull/5\nMockfrost adapted: https://github.com/OpShin/mockfrost/pull/20\n\nFeedback form for the new OpShin version:\nForm: https://listenlabs.ai/s/opshin-plutusv3\nPosts in which the form was shared: \nhttps://x.com/OpShinDev/status/1985459015678062631\n3 Discord forums:\nhttps://discord.com/channels/1077870759667580929/1081506049380585492/1435017885750661221\nhttps://discord.com/channels/949404918903631923/951580912821358642/1435018336646856744\nhttps://discord.com/channels/946071061567529010/1116457081386569820/1435026897443749898\n\nResults from the feedback form are compiled here as an accessible PDF document: https://github.com/OpShin/opshin/blob/c65d1ab8c7bf7975a23f451dc876bdc00c3be43b/docs/opshin_plutus_v3_and_beyond_user_feedback_insights.pdf\nCloseout report and video:\nWe have written down a project closeout report and published it here: https://github.com/OpShin/opshin/blob/doc/plutusv3report/docs/OpShin%20Plutus%20V3%20Project%20Catalyst%20Closeout%20Report.pdf\n\nThe project closeout video is shared here: https://youtu.be/QLyWN2j-2z8",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 13,
+      "cut": true
+    }
+  ]
+}

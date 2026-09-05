@@ -1,0 +1,70 @@
+{
+  "title": "Bind-friendly C Library for Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 50000,
+      "promise": "・C source code for a cryptography module integrating with libsodium.\n・Comprehensive documentation of the module source code.\n・Initial quality assurance report including MISRA compliance check, unit tests, and Valgrind memory check.",
+      "criteria": "・Module integrates with libsodium for cryptographic operations in compliance with Cardano requirements.\n・C source code adheres to MISRA standards, is well-documented, and passes initial tests and Valgrind checks.",
+      "report": "Dear Catalyst Project Review Team,\nI am pleased to share with you the documentation detailing the completion of Milestone 1 for the Cardano C project. The Proof of Achievement (PoA) outlines the deliverables we have accomplished, including the development and initial quality assurance of our cryptography module.\nYou can access the documentation through the following link:\nhttps://github.com/Biglup/cardano-c/blob/main/project_catalyst/m01_poa/PROOF_OF_ACHIVEMENT.md\nThis document includes links to the source code, documentation, MISRA compliance report, unit test coverage report, and Valgrind memory check results.\nWe welcome any feedback or inquiries you may have regarding our submission.\nThank you for your attention and support. I look forward to your review and feedback.\nBest regards,\nAngel",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 50000,
+      "promise": "・C source code for a module supporting encoding and decoding of Cardano addresses.\n・Comprehensive documentation of the module source code.\n・Updated quality assurance report including testing outcomes, MISRA compliance, and Valgrind checks.",
+      "criteria": "・Accurate address encoding/decoding across Byron and Shelley eras.\n・C source code meets MISRA standards and passes all tests and Valgrind memory checks.",
+      "report": "Dear Catalyst Project Review Team,\nI am pleased to share with you the documentation detailing the completion of Milestone 2 for the Cardano C project. The Proof of Achievement (PoA) outlines the deliverables for the address encoding and decoding for all [CIP-019 ](https://cips.cardano.org/cip/CIP-19) address formats:\n・Byron Address\n・Base Address\n・Enterprise Address\n・Pointer Address\n・Reward Address\n\nYou can access the documentation through the following link:\nhttps://github.com/Biglup/cardano-c/blob/main/project_catalyst/m02_poa/PROOF_OF_ACHIVEMENT.md\nThis document includes links to the source code, documentation, MISRA compliance report, unit test coverage report, and Valgrind memory check results.\nWe welcome any feedback or inquiries you may have regarding our submission.\nThank you for your attention and support. I look forward to your review and feedback.\nBest regards,\nAngel",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 40000,
+      "promise": "・C source code implementing CBOR serialization/deserialization for the supported Cardano structures/types.\n・Ongoing quality assurance including testing, MISRA compliance check, and Valgrind memory management checks.",
+      "criteria": "・Successful serialization/deserialization of all Cardano structures required to build transactions for all eras up to Conway as specified in https://github.com/IntersectMBO/cardano-ledger/blob/master/eras/conway/impl/cddl-files/conway.cddl.\n・C source code documentation, MISRA compliance, and clean Valgrind checks.",
+      "report": "Dear Catalyst Project Review Team,\nI am pleased to share with you the documentation detailing the completion of Milestone 3 for the Cardano C project. The Proof of Achievement (PoA) outlines the deliverables for the CBOR serialization/deserialization for types up to Conway era:\n・asset_id\n・asset_id_list\n・asset_id_map\n・asset_name\n・asset_name_list\n・asset_name_map\n・multi_asset\n・policy_id_list\n・auxiliary_data\n・metadatum\n・metadatum_kind\n・metadatum_label_list\n・metadatum_list\n・metadatum_map\n・plutus_v1_script_list\n・plutus_v2_script_list\n・plutus_v3_script_list\n・transaction_metadata\n・auth_committee_hot_cert\n・cert_type\n・certificate\n・certificate_set\n・genesis_key_delegation_cert\n・mir_cert\n・mir_cert_pot_type\n・mir_cert_type\n・mir_to_pot_cert\n・mir_to_stake_creds_cert\n・pool_registration_cert\n・pool_retirement_cert\n・register_drep_cert\n・registration_cert\n・resign_committee_cold_cert\n・stake_delegation_cert\n・stake_deregistration_cert\n・stake_registration_cert\n・stake_registration_delegation_cert\n・stake_vote_delegation_cert\n・stake_vote_registration_delegation_cert\n・unregister_drep_cert\n・unregistration_cert\n・update_drep_cert\n・vote_delegation_cert\n・vote_registration_delegation_cert\n・anchor\n・bigint\n・credential\n・credential_type\n・datum\n・datum_type\n・drep\n・drep_type\n・ex_units\n・governance_action_id\n・network_id\n・protocol_version\n・reward_address_list\n・unit_interval\n・utxo\n・withdrawal_map\n・constr_plutus_data\n・plutus_data\n・plutus_data_kind\n・plutus_list\n・plutus_map\n・ipv4\n・ipv6\n・multi_host_name_relay\n・pool_metadata\n・pool_owners\n・pool_params\n・relay\n・relay_type\n・relays\n・single_host_addr_relay\n・single_host_name_relay\n・committee\n・committee_members_map\n・constitution\n・credential_set\n・governance_action_type\n・hard_fork_initiation_action\n・info_action\n・new_constitution_action\n・no_confidence_action\n・parameter_change_action\n・proposal_procedure\n・proposal_procedure_set\n・treasury_withdrawals_action\n・update_committee_action\n・cost_model\n・costmdls\n・drep_voting_thresholds\n・ex_unit_prices\n・pool_voting_thresholds\n・proposed_param",
+      "kinds": [
+        "code"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "11",
+      "cost": 30000,
+      "promise": "・C source code for a transaction builder capable of creating all types of valid Cardano transactions up to Conway era:\n\n・Transferring Value between addresses (both ADA and native assets).\n・Spending outputs that are guarded by Plutus scripts (up to Plutus V3).\n・Minting assets using Plutus scripts (up to Plutus V3).\n・Spending outputs that are guarded by Native scripts.\n・Minting assets using Native scripts.\n・Issue all available certificates in Conway era as specified in https://github.com/IntersectMBO/cardano-ledger/blob/master/eras/conway/impl/cddl-files/conway.cddl#L275-L293.\n・Attaching auxiliary data to the transaction.\n・Quality assurance report including testing, MISRA compliance verification, and Valgrind memory management checks.",
+      "criteria": "・Transaction builder supports the creation of all Cardano transaction types up to Conway era and is verified through testing. Test coverage covers: \n\n・Transferring Value between addresses (both ADA and native assets).\n・Spending outputs that are guarded by Plutus scripts (up to Plutus V3).\n・Minting assets using Plutus scripts (up to Plutus V3).\n・Spending outputs that are guarded by Native scripts.\n・Minting assets using Native scripts.\n・Issue all available certificates in Conway era as specified in https://github.com/IntersectMBO/cardano-ledger/blob/master/eras/conway/impl/cddl-files/conway.cddl",
+      "report": "Catalyst Project Review Team,\nI am pleased to share with you the documentation detailing the completion of Milestone 4 for the Cardano C project. The Proof of Achievement (PoA) outlines the deliverables for the high-level transaction builder that can:\n・Transfer value between addresses\n・Spend outputs that are guarded by Plutus scripts (up to Plutus V3)\n・Mint assets using Plutus scripts (up to Plutus V3)\n・Spend outputs that are guarded by Native scripts\n・Mint assets using Native scripts\n・Issue all available certificates in Conway era\n・Attach auxiliary data to the transaction\n\nYou can access the documentation through the following link:\nhttps://github.com/Biglup/cardano-c/blob/main/project_catalyst/m04_poa/PROOF_OF_ACHIVEMENT.md\nThis document includes links to the source code, documentation, MISRA compliance report, unit test coverage report, Valgrind memory check results and practical examples.\nWe welcome any feedback or inquiries you may have regarding our submission.\nThank you for your attention and support. I look forward to your review and feedback.\nBest regards,\nAngel",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "12",
+      "cost": 30000,
+      "promise": "・Comprehensive code documentation for all developed modules.\n・A detailed report on compliance with MISRA-c 2012 standards.\n・Test suite results showing at least 80% coverage.\n・Valgrind (or similar) reports demonstrating memory management proficiency.\n・Project Closeout Report\n・Project Closeout Video",
+      "criteria": "・Complete and clear documentation for all code.\n・Full compliance with MISRA-c 2012, with no warnings.\n・Achieving the target for unit test coverage and memory management.",
+      "report": "Catalyst Project Review Team,\nI am pleased to share with you the documentation detailing the completion of the last Milestone for the Cardano C project. The Proof of Achievement (PoA) outlines the last set of deliverables for the closing of the project:\n・Comprehensive code documentation for all developed modules.\n・A detailed report on compliance with MISRA-c 2012 standards.\n・Test suite results showing at least 80% coverage.\n・Valgrind (or similar) reports demonstrating memory management proficiency.\n・Project Closeout Report\n・Project Closeout Video\n\nYou can access the documentation through the following link:\nhttps://github.com/Biglup/cardano-c/blob/main/project_catalyst/final_poa/PROOF_OF_ACHIVEMENT.md\nThis document includes links to the source code, documentation, MISRA compliance report, unit test coverage report, Valgrind memory check results, and practical examples.\nAdditionally this milestone we have included as requested both the Project Close-out report and video:\n・Close-out report: https://docs.google.com/document/d/1nBfPQ10V_28ubKZkpqAhtJANqMQvMqNNsBlOPUFB97Y/\n・Close-out video: https://www.youtube.com/watch?v=NdU-Sy2LAsU\n\nWe welcome any feedback or inquiries you may have regarding our submission.\nThank you for your attention and support. I look forward to your review and feedback.\nBest regards,\nAngel",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

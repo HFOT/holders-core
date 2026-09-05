@@ -1,0 +1,45 @@
+{
+  "title": "Decentralized Belt System for Brazilian Jiu-Jitsu (BJJ).",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 12000,
+      "promise": "・Scope Document: A comprehensive outline detailing the project's goals, objectives, and deliverables.\n・User Stories: A set of narratives capturing the needs and wants of the end-users.\n・DApp Design - UML diagrams: Visuals depicting the DApp’s functional behaviour and structure. \n・Component Diagrams: Highlighting the organization and dependencies among components. For a DApp, this might include smart contracts, web frontends, backend servers, external APIs, oracles, etc.\n・Use Case Diagrams: These help in identifying the different actors (users, other systems, or DApps) and their interactions with the DApp. This can show how a user might initiate a transaction, query the blockchain, or interact with smart contracts.\n・State Machine Diagrams: Very relevant for smart contracts to depict the different states a contract can be in (e.g., open, closed, funded) and the transitions between these states, triggered by transactions or events.\n・Class Diagrams: Useful for representing the structure of the datums of smart contracts.\n・Sequence Diagrams: These can depict the interactions over time between users, the DApp, external systems, and the underlying blockchain. This might show the sequence o",
+      "criteria": "・The Scope Document must delineate the project's parameters, objectives, and deliverables.\n・User Stories must encompass all potential DApp user interactions and all potential actors interacting with the DApp.\n・The Decentralized Belt System should be described with UML diagrams depicting the it's structure and dynamics.\n・Feedback Method: As an open-source project on GitHub, we collect input via GitHub Issues, feedback forms, and GitHub Discussions. Anyone is welcome to contribute by creating a PR—if we find the feedback aligns with the project’s vision, we’ll integrate it. Otherwise, the open-s",
+      "report": "The evidence for the Milestone-1 completion is available at project's Github Repository .\nSummary:\n・The Scope Document is published here (it includes the User Stories and UML diagrams )\n・ GitHub Discussions and GitHub Issues are available for feedback.\n\nBest regards!",
+      "kinds": [
+        "code"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 12000,
+      "promise": "Design and Implementation of Cardano On-Chain Logic\n・Smart Contracts (Validators and Minting Policies): Customized contracts facilitating the Decentralized Belt System required functions.\n・On-Chain Logic Test Suites: A combination of unit tests and property-based tests testing the code used in the validators and minting policies.\n・Documentation: Documentation describing the desing-patterns used for the implementation of the onchain logc, and the reasoning behind, the logic implemented in smart contracts and their binary interface (Plutus Blueprint)",
+      "criteria": "・Smart contracts must be deployable and functional on the Cardano testnet.\n・Unit and property-based tests must execute without errors.\n・Documentation should be detailed, covering all facets of the smart contracts.\n・Smart contracts deployment - description of the deployment transactions and automated deployment scripts. \n・Test results for each transaction including transaction fee and resources (memory, cpu and size).",
+      "report": "Response to Milestone 2 Feedback\nThank you for the feedback. Here's the evidence addressing each point:\nRepository is the same: https://github.com/en7angled/Decentralized-Belt-System.git \n1. Smart Contract Deployment Evidence\nAdded Admin Command Line Tools:\n・Functional CLI: admin deploy-reference-scripts deploys validators\n・Test Evidence: test_evidence_preview.txt shows successful deployment on testnet + tesnet transactions \n\nNote: BJJ contracts enforce time-based belt progression rules (e.g., minimum time in each belt rank). Some tests would require years on testnet, which is why I initially provided devnet test results in tests_evidence.txt for comprehensive validation.\n2. Documentation Evidence\nUpdated README:\n・Complete Installation & Setup: Step-by-step deployment instructions\n・Usage Documentation: All admin commands and configuration requirements\n・Extensive Contract Documentation:\n・Blueprint: bjj-belt-system-blueprint.json contains complete CIP-57 specifications\n・Architecture: docs/OnchainArchitecture.md provides detailed smart contract architecture\n\n3. Testnet Deployment Evidence\nAutomated Test Script:\n・test_black_promotes_white_to_blue.sh: Specifically created for reviewers so they can execute this script to verify smart contract functionality on testnet.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "7",
+      "cost": 16000,
+      "promise": "Transaction Building\n・UML Mindmaps diagrams for transaction building;\n・Off-Chain implementation for Transaction Building;\n・Implementation of Test Suites: A combination of unit tests and property-based tests tailored for the onchain logic and transaction building logic;\n\nWebsite\n・Implementation of BJJ Decentralized Belt System Website ;\n\nDocumentation\n・Final close-out report;\n・Final closeout video;",
+      "criteria": "・Transaction building, test suites and website implementation (code) must be open-source and publicly available.\n・Test suites must execute without errors.\n・Website must be deployed and live in testnet.\n・The website will allow users to connect their wallets and interact with the Decentralized Belt System Smart Contracts for BJJ. Core functionalities include creating new belts, visualizing belt ranking and lineage, and upgrading belt rankings. These features will align with the use cases detailed in the Milestone 1 specifications.\n・Final closeout report is publicly available\n・Final closeout vide",
+      "report": "Project Close Out Report\nDecentralized BJJ Belt System\nProject ID: 1300081\nCardano Fund 13\nFinal Milestone: Milestone 3\nProject Close-Out Video: https://youtu.be/nSHbb-m6ews \nAlpha version available at: https://bjj-belts.org - This is integrated with Cardano Preview (*available within Maestro Credit Limit)\nSoon we'll go to mainnet ! \n1. Project Summary\nThe Decentralized BJJ Belt System is a comprehensive web application that enables the decentralized management of Brazilian Jiu-Jitsu (BJJ) belt promotions and achievements on the Cardano blockchain. The system provides a user-friendly interface for practitioners, instructors, and organizations to track progress, award belts, and maintain transparent records of martial arts achievements.\nProject Repository:\n・Website: https://github.com/en7angled/bjj-dapp-web \n・Cadano Blockchain Integration: https://github.com/en7angled/Decentralized-Belt-System \n\n2. Final Milestone Outputs & Deliverables\n2.1 Core Application Features\n・ Complete Web Application: Full-stack Next.js application with TypeScript\n・ User Authentication: Cardano wallet integration and profile management\n・ Profile Management: Practitioner profile creation and editing\n・ Belt Management: Complete belt promotion tracking and verification system\n・ Public Profile Viewing: Browse and view all community profiles\n・ Responsive Design: Mobile-first, accessible interface design\n\n2.2 Technical Infrastructure\n・ Blockchain Integration: Native Cardano wallet support and transaction signing\n・ Dedicated Cadano Integration Service for transaction building and blockchain data projections\n・ API Layer: Secure backend communication with authentication\n・ Database: Persistence for profile metadata\n・ File Storage: Optimized image upload and management system\n・ Performance: Efficient caching and loading states\n\n2.3 User Experience Features\n・ Namemap System: Automatic profile ID resolution to human-readable names\n・ Image Management: Profile picture uploads with fallback placeholders\n・ N",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 20,
+      "cut": true
+    }
+  ]
+}

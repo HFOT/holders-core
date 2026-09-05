@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・Cardanoインデックス作成ソリューション\n・BTCライブラリの新規登録\n・増幅ガーディアンエンジェルスケーリング(BTC)\n・ビットコインチェーンから必要なデータを返す機能の展開\n・増幅ガーディアンエンジェルスケーリング(ADA)\n・ドラフト通信とメタデータ規格",
+      "criteria": "・Cardano インデックス化 soliton と stack は、資源の活用を最適化する\n・強みと弱みを持つ複数のオプションがすべて存在し、1つは選択されなければならず、デベロッパーはそれを使用するように学習します。\n・ビットコインのインデックス化 soliton と stack が選択され、使用されるリソースに最適\n・強みと弱みを持つ複数のオプションがすべて存在し、1つは選択されなければならず、デベロッパーはそれを使用するように学習します。\n・BTCチェーンをインデックス化し、チップをキープする機能が実装\n・新しいBTCブロックがチェーンに追加されるとプロセスをトリガーします",
+      "report": "このマイルストーンのすべての出力を達成しました, その証拠は、次の文書で見つけることができます, 「マイルストーン完了の証拠」に沿って.\nGAソフトウェアの実行インスタンスのdata-apiを見つけることができます: http://161.35.68.183:3030/\n利用可能なエンドポイントの参照: https://github.com/anetalabs/anetaV2/blob/main/Docs/api.md\nhttps://docs.google.com/document/d/1JumMVrTZsQJw7jHyqcTZvGgxBcDNV 414n8y1hZOGok/edit?usp=sharing"
+    },
+    {
+      "no": 2,
+      "promise": "・増幅ガーディアンエンジェルコミュニケーション\n・Implement FrontEnd BTCアドレスの派生\n・増幅ガードシフトスクリプト\n・Implement FrontEnd データクエリ",
+      "criteria": "・ガーディアン・エンジェル間のp2p通信は運用が必要です。\n・ガーディアンエンジェルは、マルチシグを介して制御される複数のBTCアドレスを作成および監視することができます\n・GAがVaultから資金を手動で動かせるように、スクリプトのセットを使用可能にする必要があります\n・ブリッジへのリクエストを送れる FE が最小限に抑えられます",
+      "report": "このマイルストーンのすべての出力を達成しました, その証拠は、次の文書で見つけることができます, 「マイルストーン完了の証拠」に沿って.\nGAソフトウェアの実行インスタンスのdata-apiを見つけることができます: http://161.35.68.183:3030/\n利用可能なエンドポイントの参照: https://github.com/anetalabs/anetaV2/blob/main/Docs/api.md\nhttps://docs.google.com/document/d/1Ar7ubgKBmqqqqart92GE5YAUT0eCtqF6W9pVituYZAS4/edit?usp=sharing"
+    },
+    {
+      "no": 3,
+      "promise": "・Implement Guardian エンジェルズ取引ビル(ADA)\n・増幅ガーディアンエンジェルズ取引ビル(BTC)\n・Implement V2 フロントエンド取引生成\n・Implement V2 フロントエンドの変更",
+      "criteria": "・Mint/burning/rejections/confiscations、Guardian天使は1/1のトポロジーで実行する際に、この操作をすべて正しく実行します。\n・償還/統合取引は、ガーディアン天使が1/1のトポロジーで実行する際に、このすべての操作を正しく実行します。\n・Uiを入力し、ユーザーフレンドリーな方法でミントや償還を開始できます。\n・Uiを入力すると、Uiの履歴と/またはバックエンドのリクエストを表示できます。\n\ntBTC や tADA を取得するための指示を含む製品の使用方法に関するガイドが公開されます.",
+      "report": "AnetaBTCブリッジのtestnet展開がリリースされ、ChangとPloming Hardforksと互換性があります。\n訪問して、cBTCの縮小と返済を実行し、取引履歴を見ることができます。\nhttps://anetabtc-v2.vercel.app/dashboard\n使用するすべての情報を含むマイルストーンごとにガイドが公開されています。\nhttps://leandros-bsp.medium.com/anetabtc-testnet-guide-bb3edcfff459\n\n橋を使用するビデオ証拠:\nhttps://youtu.be/-FnsmuV6hUo"
+    },
+    {
+      "no": 4,
+      "promise": "・増幅ガーディアンエンジェルシグシェアリング(コンセンサス)\n・取引の追跡とフロントエンドのステータス",
+      "criteria": "・ガーディアン・エンジェルズは、決済の統合、担保化、担保化、担保化など、全ての業務を遂行し、協調するようになりました。\n・Uiを入力すると、終了リクエストを含む履歴全体が確認できます",
+      "report": "P2pのフル機能が運用できるようになりました。\nリーダーとして機能するGA1でブリッジを実行しているガーディアン天使が3つあるベローズビデオで見ることができます。リーダーが短いクールダウンの脱出を殺した後、残りの2ノードの開始と選挙を選択し、GA2をリーダーになるように選択し、この期間中にGA2が「リーダー」として受け入れられる前に「候補者」に設定されていることがわかります。そして、リーダーが選択された後、私たちは、quorumに参加したGA1が「リーダー」と「GA2が承認され、GA2がリーダーの役割を「承認」と「GA2が決定しました。\nhttps://www.youtube.com/watch?v=yKOE0V01oIU\n取引履歴は、ガイドが公開されたマイルストーンの基準に従っても利用できます。\nhttps://leandros-bsp.medium.com/anetabtc-transaction-history-guide-432b914e21d8"
+    }
+  ]
+}

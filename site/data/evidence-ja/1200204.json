@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・追跡されている新しいDEXの文書化と各DEX内の取引の種類\n・Snekcoinbotの新しいビジュアルアイデンティティ: Snekcoinbotの新しいロゴ、名前変更、ビジュアルデザイン要素を含む新しいブランディングのフルロールアウトを行います.",
+      "criteria": "- 新しい DEX がサポートされ、最小限に、トークンのイベントを売買するためのアカウント\n\n新しい視覚アイデンティティ:\n- 新しいブランディングのための展開ガイドは、ウェブサイト、アプリケーション、通信チャネルを含むSnekcoinbotに関連するすべてのプラットフォームとメディアで完了する必要があります。\n- 新しいロゴ、名前の変更、および視覚設計要素はすべての媒体を渡って目に見える、一貫してなければなりません.",
+      "report": "追跡され、更新されたコードリポジトリにある新しいDEXのドキュメントを含む\nhttps://github.com/Iceberg-labs/SnekAlertsPublic (pdf/proofs/デックス対応)\nhttps://github.com/Iceberg-labs/SnekAlerts (Preetham0171999 & Mwatsimulamo 専用アクセス)\nhttps://drive.google.com/file/d/1NZ1sfq4SjEdNlBbZEUzW9xho3e5YaZQy/view?usp=sharing\nhttps://drive.google.com/file/d/164zeNdgVAqA256wE9NGSwrXqMIoxFl7T/view?usp=sharing"
+    },
+    {
+      "no": 2,
+      "promise": "ジェネレーションロジックとフレームワークのドキュメント:\n・Twitter、Telegram、Discord で Cardano ネイティブ トークンの追跡とアラートをサポートする製品の基礎的なロジックを拡張し、文書化します。 これにより、ボットフローとデータ解析メカニズムがマルチトークンのサポートに適応する方法を詳細に説明します。\n・包括的なPDF文書の提供:\n・ロジックの汎用化プロセスのステップバイステップの説明\n・複数のトークンのサポートと、システムが異なるプラットフォーム間でトークンを処理する方法の統合を照らす作業図/フローチャート。\n・複数のトークンに対応するため、初期の単一トークンアラートシステムに行われた変更の概要。\n\n機能低下および指定:\n・少なくとも3つの異なるCardanoネイティブトークンでシステムの機能を示す。 Twitter、Telegram、Discordに投稿されている成功したアラートが表示されます。\n・PDF文書内の詳細な機能仕様、一般化システムの機能及び今後の展開の適応性をカバー.",
+      "criteria": "マルチトークンイベント検出:\n・DEXイベントや既存のサブスクリプション設定に基づいて、少なくとも3つの異なるCardanoネイティブトークンのイベントを正常に検出する必要があります。 この機能は、100以上のテストケースで95%以上の成功率でテストされ、正しいトークンが追跡され、アラートが正しいプラットフォーム(Twitter、Telegram、Discord)に投稿されることを保証します。\n\n成功したアラート投稿:\n・イベント検知後、指定したプラットフォーム(Twitter、Telegram、Discord)でアラートを生成し、投稿しなければなりません。 これらの投稿の正確さとタイミングは、",
+      "report": "レビュアーのコメントに100件のテストケースを合わせるために再アップロード\n\nスクリーンショット+解説付き動画\n・https://drive.google.com/file/d/1Wv3x4 5lJLpZmbSmkU15NDEUsUjQbrd/view?usp=sharing\n\n建築変化\n・https://docs.google.com/document/d/1C7eSA6Dp46HEaP 3mczpeKEArfXlzzom/edit?usp=sharing&ouid=106505023671181718365&rtpof=true&sd=true\n\nMS2 機能仕様 / Github リポジトリ\n・https://drive.google.com/file/d/1LlhZp1yZapS88gv5QpyKVN8PiB  qf l/view?usp=sharing\n\nSnekAlerts 100テストケース\n・https://docs.google.com/spreadsheets/d/1D5RoiV3 U2cexSU-80oGhGu5a61lRIe2/edit?usp=sharing&ouid=106505023671181718365&rtpof=true&sd=true\n\nプライベートGithub:https://github.com/Iceberg-labs/SnekAlerts(招待されたOlivier Mwatsimulamo&Preetham Kenganalレビュー用)\nテストプラン: https://github.com/Iceberg-labs/SnekAlerts一般/blob/main/ms2 test plan.md"
+    }
+  ]
+}

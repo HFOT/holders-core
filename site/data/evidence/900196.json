@@ -1,0 +1,75 @@
+{
+  "title": "subHandles | ADA Handle",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 73920,
+      "promise": "ADA Handle is building a Docker container that will allow any interested party access to all data associated with Handles and subHandles. This Docker container will allow any project, individual, dApp, wallet, etc. to run an instance -- that will contain Cardano Node, Ogmios, Kupo fully synced to Handles and subHandles -- and perform lookups for data associated with Handles and subHandles. For example, a user will be able to perform forward and reverse lookups, detecting the payment address associated with a subHandle or the other way around, by looking up a payment address and detecting a subHandle associated with it.",
+      "criteria": "The acceptance criteria for this milestone will be the delivery of Docker containers for PreProd, Preview and MainNet, that will allow any interested party to independently spin up an instance and run queries against the data.",
+      "report": "We have completed the milestone. The ADA Handle API Docker Container and public API endpoint are ready. They can be verified here: https://github.com/koralabs/handles-public-api and here: https://koralabs.github.io/handles-public-api/.\n\nThe Docker Container can take up to 24 hours to sync, as it's running Cardano Node, and therefore needs to sync with the entire blockchain.",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "17",
+      "cost": 73920,
+      "promise": "The current minting engine available at adahandle.com/mint mints unique rootHandles. This engine will be upgraded to mint NFT-based subHandles, issue and revoke Virtual subHandles.",
+      "criteria": "The acceptance criteria for this milestone will be the capability to mint NFT-based subHandles, issue and revoke Virtual subHandles, using a test policyID on the PreProd blockchain. ADA Handle will be able to, from our internal command-line interface, perform all actions related to subHandles. This milestone precedes the frontend implementation and therefore there won't be a GUI for the community to test from.",
+      "report": "This submission video for Milestone 2 demonstrates minting NFT SubHandles as well as issuing and revoking Virtual SubHandles.\n\nInitially the video deliverable for Milestone 2 would not have a GUI and provide a CLI recording, however we set up both Testnets, Preview and Preprod. The video for this submission was created on Preprod: https://preprod.handle.me\n\nYou can view the video here: https://www.youtube.com/watch?v=grRIDjpki0A\n\nThis is the transaction for the Private mints of NFT and Virtual SubHandles - $testing1@subs (NFT) $testing2@subs (Virtual):https://preprod.cexplorer.io/tx/91365e015c8fdc5a27d3ae1a9e02d0f20b574588fa982ebda41ed41d6d794246\n\nThis is the transaction for revoking a Virtual SubHandle - $testing2@subs:https://preprod.cexplorer.io/tx/8f575449bf6b90d50881b7a342769f4ed4ca817e116526b0dfd8590c876422a1\n\nThese are the transactions for the Public mints of an NFT and Virtual SubHandles - $catalyst1@subs (NFT) | $catalyst2@subs (Virtual):https://preprod.cexplorer.io/tx/5049a6771d5138ea045021f6392dbc2a3a0230e28b37a01d1dd41b31d3b980f2\nhttps://preprod.cexplorer.io/tx/393e5035037513bba421c2a2f61c757573979f77dec950303f4f6b72ddf27e9f\nThank you.",
+      "kinds": [
+        "chain",
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "18",
+      "cost": 49280,
+      "promise": "During this milestone we will deliver the UI and UX layouts for the new subHandle portal. This portal will be available from the same minting portal as rootHandles but will only be available to users who demonstrate ownership of rootHandles via wallet authentication. This is the portal that will allow minting of NFT-based subHandles, issuing and revoking Virtual subHandles.",
+      "criteria": "The acceptance criteria for this phase is a fully operational demonstrate website, accessible from demo.handle.me that will have all subHandle-related features but without being integrated to the blockchain. This will allow the community to test the portal without actual minting of subHandles.",
+      "report": "This submission video for Milestones 3 and 4 showcases a fully operational and public portal that anyone can access to mint NFT and Virtual SubHandles as well as revoking privately minted Virtual SubHandles. \n\nThis is the same scenario as Milestone 2 as we said the acceptance criteria would that would not be connected to the blockchain. However, we set up completely operational websites inside Preview and Preprod. This demonstration will be done on Preprod - https://preprod.handle.me.\n\nYou can view the video here:\n\nhttps://www.youtube.com/watch?v=Q59tv-glUMI\n\nThis is the transacation for the Private mints of an NFT and Virtual SubHandles - NFT SubHandle: $nftprivate1@video | Virtual SubHandle: $nftprivate1@video\n\nhttps://preprod.cexplorer.io/tx/328667ceafcf72fdecff49cede6d23528eec423df2d20e134b8a744e1e9d1967\n\nThis is the transaction to revoke a Private Virtual SubHandle: $virtualprivate1@video\n\nhttps://preprod.cexplorer.io/tx/3dec2f40680bb193f805b511a08b6f42f19febba9218b83afe6893750ab50cf6\n\nThis is the transaction for the Public mint of an NFT and Virtual SubHandles - NFT SubHandle: $handle@video | Virtual SubHandle: $virtual@video\n\nhttps://preprod.cexplorer.io/tx/53ebf36a54671957ed2b2af91e172cee798906c91d3267b15538ffd3c077ae9a\n\nIf anyone wants to test minting SubHandles, they can navigate to https://preprod.handle.me/video. Make sure your wallet is set to the Preprod Network.\n\nThank you.",
+      "kinds": [
+        "chain",
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "19",
+      "cost": 24640,
+      "promise": "All prior milestones allowed us to build the subHandle feature and during this milestone we will test the feature on Cardano's PreProd blockchain. This will give the entire community access to preprod.handle.me, which will provide access to the full experience of minting NFT-based and Virtual subHandles.",
+      "criteria": "A successful launch on PreProd will be our acceptance criteria for this milestone. Upon reaching this phase we will already have built the entire feature. This phase will make the feature available for the community to test. Thus, the acceptance criteria will be the ability of any Handle owner on PreProd to mint NFT-based and issue Virtual subHandles from our PreProd environment: preprod.handle.me.",
+      "report": "This submission video for Milestones 3 and 4 showcases a fully operational and public portal that anyone can access to mint NFT and Virtual SubHandles as well as revoking privately minted Virtual SubHandles. \n\nThis is the same scenario as Milestone 2 as we said the acceptance criteria would that would not be connected to the blockchain. However, we set up completely operational websites inside Preview and Preprod. This demonstration will be done on Preprod - https://preprod.handle.me.\n\nYou can view the video here:\n\nhttps://www.youtube.com/watch?v=Q59tv-glUMI\n\nThis is the transacation for the Private mints of an NFT and Virtual SubHandles - NFT SubHandle: $nftprivate1@video | Virtual SubHandle: $nftprivate1@video\n\nhttps://preprod.cexplorer.io/tx/328667ceafcf72fdecff49cede6d23528eec423df2d20e134b8a744e1e9d1967\n\nThis is the transaction to revoke a Private Virtual SubHandle: $virtualprivate1@video\n\nhttps://preprod.cexplorer.io/tx/3dec2f40680bb193f805b511a08b6f42f19febba9218b83afe6893750ab50cf6\n\nThis is the transaction for the Public mint of an NFT and Virtual SubHandles - NFT SubHandle: $handle@video | Virtual SubHandle: $virtual@video\n\nhttps://preprod.cexplorer.io/tx/53ebf36a54671957ed2b2af91e172cee798906c91d3267b15538ffd3c077ae9a\n\nIf anyone wants to test minting SubHandles, they can navigate to https://preprod.handle.me/video. Make sure your wallet is set to the Preprod Network.\n\nThank you.",
+      "kinds": [
+        "chain",
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "20",
+      "cost": 24640,
+      "promise": "The final outputs of this project will contain a fully operational subHandle minting portal, accessible from https://handle.me, that will detect rootHandles in users' wallets, allowing them to mint NFT-based subHandles, issue and revoke Virtual subHandles. This project will also deliver a decentralized API Docker container that the community can independently download and spin up to perform API queries for rootHandles and subHandles.\nBy the end of the project, all rootHandle owners will have the option to mint NFT-based subHandles, issue or revoke Virtual subHandles. The owner of the $acme rootHandle, for example, will connect to our minting portal: https://handle.me, which will detect the $acme Handle and allow them to mint NFT-based subHandles, issue and revoke Virtual subHandles. The project will also deliver a decentralized API endpoint that will allow projects to perform API queries for Handles and subHandles, delivering all data associated with them.",
+      "criteria": "The acceptance criteria for MainNet launch of subHandles is a working product, integrated to our handle.me portal, that the community can connect their wallets to, in order to mint subHandles. The feature will identify Handles owned by users, by verifying their ownership twice, once upon connecting the wallet and a second time prior to minting subHandles.",
+      "report": "Final Milestone Video Submission: https://www.youtube.com/watch?v=LabLIu1zy3w\nClose-out Report can be viewed here.\nThis submission video for the Final Milestone, demonstrates navigating to Mainnet https://handle.me, connecting my wallet, selecting an existing Handle (newly minted Handles also works), that was minted today, $subhandle-demo - 09/20/2024 and minting an NFT and Virtual SubHandles. The video also demonstrates how to enable SubHandle minting and authorize ADA Handle's OAuth.\nThis is the transaction for the NFT and\nVirtual\nSubHandles privately\nminted on the video, nftcatalyst@subhandle-demo (NFT\nSubHandle) and virtlcataly@subhandle-demo (Virtual SubHandle):\nhttps://cexplorer.io/tx/d53d17a78fa4168473edbcd667c18e4922933c7b67e414eeb7a8b87add99cfb3\nThis is the transaction for the NFT\nand Virtual\nSubHandles publicly\nminted, by navigating to https://handle.me/subhandle-demo,\n$testing1@subhandle-demo\n(NFT SubHandle) and $testing2@subhandle-demo (Virtual SubHandle):\nhttps://cexplorer.io/tx/61057a74732ce7a248da814343ab29fcc4a53751909d27274a83a20d7cc464a5\nAny community member or Catalyst reviewer can navigate to https://handle.me/subhandle-demo\nand test this for themselves. So far, the Cardano community has minted over 1000\nSubHandles on Mainnet, when counting both NFT and Virtual.\nThank you.",
+      "kinds": [
+        "chain",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

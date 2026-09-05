@@ -1,0 +1,63 @@
+{
+  "title": "Blocklog linked Leader status and Epoch leader notification service - Multilingual Support and Maintenance.",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 20130,
+      "promise": "・Setup documentation (English and Japanese)\n・Multilingualization procedure document",
+      "criteria": "Release of multilingual versions of code and documentation\nhttps://github.com/btbf/block-notify",
+      "report": "We have released v2.0.1 which implements multilingualization.\nhttps://github.com/btbf/block-notify/tree/2.0.1\nEnglish Manual\nhttps://github.com/btbf/block-notify/blob/2.0.1/README.md#setup\nJapanese Manual\nhttps://github.com/btbf/block-notify/blob/2.0.1/README.md#0%E5%89%8D%E6%8F%90%E6%9D%A1%E4%BB%B6\n\nMultilingual switching demonstration video (Limited public)\nhttps://youtu.be/dKewHeRM_Tw",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 20130,
+      "promise": "Modified code and release note on github.",
+      "criteria": "More than 1 release including minor changes.",
+      "report": "We have released 4 major and minor releases since the last PoA.\nhttps://github.com/btbf/block-notify/releases\nThe latest release is v2.2.1, which was announced on Twitter for global expansion.\nhttps://x.com/spojapanguild/status/1780287091605414207\nThis release has many internal fixes and no new demonstrations, so we will upload a video explaining the changes.\nhttps://youtu.be/G6CF0XYkXJ4",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 20130,
+      "promise": "Modified code and release note on github.",
+      "criteria": "More than 1 release including minor changes.",
+      "report": "We have released 1 major and 1 minor releases since the last PoA.\nhttps://github.com/btbf/block-notify/releases\n・Any Prometheus port can be configured\n・Show block size in notifications\n・Added Spanish, French and Portuguese\n・Added open source LICENSE\n\nThe latest release is v2.3.0, which was announced on Twitter for global expansion.\nJapanese\nhttps://x.com/spojapanguild/status/1812844521899573502\nEnglish\nhttps://x.com/spojapanguild/status/1812844904508268810\nv2.3.0 Demo video\nhttps://youtu.be/tKSAoGrn9t8",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "12",
+      "cost": 20130,
+      "promise": "Modified code and release note on github.\nSubmit Proof of Achievement.\nSubmit Proof of Project Report.\nSubmit Proof of Demonstration Video.",
+      "criteria": "More than 1 release including minor changes.",
+      "report": "We have released 1 major and 1 minor releases since the last PoA.\nhttps://github.com/btbf/block-notify/releases\n・Added KES display to notification message\n・Bypass the 2000 character limit on sending Discord messages\n・Add three new languages　Korean, Thai, and Vietnamese.\n\nThe latest release is v2.4.0, which was announced on Twitter for global expansion.\nJapanese\nhttps://x.com/spojapanguild/status/1854861044960653807\nEnglish\nhttps://x.com/spojapanguild/status/1854860750893818199\nv2.4.0 Demo video\nIncluded in the closing demonstration video\n\nProject Closeout Report \nhttps://docs.google.com/document/d/1oJwL7sVchq8FR6o46SOkE28SKwZM5XgRPQmljg93Ing/edit?usp=sharing\n\nName of project and Project URL on IdeaScale/Fund\nBlocklog linked Leader status and Epoch leader notification service - Multilingual Support and Maintenance.\nhttps://cardano.ideascale.com/c/cardano/idea/103998\n\nYour Project Number\n1000018\nName of project manager\nBTBF\nDate project started\n10/2023\nDate project completed\n11/2024\n—-----\nList of challenge KPIs and how the project addressed them\nSelection of Python Multilingual Library\nTo support multiple languages and scale as needed, we have chosen i18nice, a derived library of the standard i18n that offers scalable multilingual support.\nCode Design Improvement\nWe reviewed the code design and transitioned the configuration files from .env to .ini format, enhancing maintainability for users.\n\n—-----\nList of project KPIs and how the project addressed them\nMultilingual Support\nNow supports 8 languages, allowing flexible changes via configuration files: Japanese, English, Portuguese, Spanish, French, Korean, Thai, and Vietnamese.\nAnnual Maintenance\nOver the course of the year, we performed 8 version updates to accommodate changes in cardano-cli/node and blocklog.\n\nKey achievements (in particular around collaboration and engagement)\nImplemented Features Based on User Feedback\n・Added toggle option for schedule date notifications.\n・Enabled setting of a custom Prometheus p",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・メインのAPI定義(制約言語やステートマシン)、設計\n・使用済みバックエンドソリューションおよび関連する制約言語比較に関する調査\n・当社のモデル例では、既存のソリューションや類似のメソッドレビュー、API使用の評価などが含まれます.",
+      "criteria": "・オープンソースリポジトリが存在し、プロジェクト用に構成されています。\n・メインのAPIクラスタイプがあります。\n・レポジトリに研究、相談、仕様書を配布\n・デザイン文書は明確に書いており、次のマイルストーンの詳しい説明をいたします.",
+      "report": "マイルストーン完了の証拠ごとに、リポジトリと関連するドキュメントを含むいくつかのリンクがあります。\n\nhttps://github.com/mlabs-haskell/cem-script/pull/11\n\nマイルストーン1つの出力をカバーするレポート:\nhttps://github.com/mlabs-haskell/cem-script/pull/12\n\nそして短いデモのビデオ:\nhttps://www.loom.com/share/f551d58680ac4584a22fbd661a3b6294"
+    },
+    {
+      "no": 2,
+      "promise": "・Txの送信/クエリコードの汎用実装\n・汎用Plutusオンチェーン実装",
+      "criteria": "・トランザクション送信/クエリコードのジェネリック実装、およびPlutusオンチェーンスクリプトの実装\n・ハイドラオークションやPOCREスクリプトの書き換え、細かいチェック、問題の文書化、コードの簡易化などが確認されます。 後続の作業評価に使用されます。\n・プルミコンで説明するメインのeUTxOモデルパターンを実装することで増幅が確認されます.",
+      "report": "インフォメーション\nTxの送信/クエリコードのジェネリック実装\nジェネリックPlutusオンチェーン実装\n\nアクセプタンス・クリテリア\nトランザクションの送信/クエリコードとPlutusのオンチェーンスクリプトの一般的な実装が公開されています。\n実装は、HydraオークションとPOCREスクリプトをそのまま書き換えてチェックし、細かい動作確認や問題の文書化やコードの簡素化などを行います。 後続の作業評価に使用されます。\nPlutomiconで説明するメインのeUTxOモデルパターンを実装することで実装がチェックされます。\n\nソリューション\n\n出力1(Tx submit/query code の一般的な実装)が実装されています。\nhttps://github.com/mlabs-haskell/cem-script/pull/16/files#diff-f63b1271709ee3f945ae8a8be955788414c5a54985f90d19737fafbe0f170b1\n\nそして、その使用はテストで実証されています。\nhttps://github.com/mlabs-haskell/cem-script/pull/16/files#diff-9e8bdd24d557cfe94781d844e68e97f4b626c833420d18df4e04619a54273b34\n\n出力2(一般的なPlutusのオンチェーン実装)が実装されています。\nhttps://github.com/mlabs-haskell/cem-script/pull/16/files#diff-2f7c9ba5cd94d94deac22530316c56cf097f2ccac5c5b05fc7a01e584ad927c6\n\n主要な例をコンパイルするための使用法はで実証されます:\nhttps://github.com/mlabs-haskell/cemscript/pull/16/files#diff-b2d6d57a0b1d8a1a7f096604d83882776ae2baaf068a9fb56c2d428cc104eb\n\n実行中のテストのドキュメンテーションを追加:\nhttps://github.com/mlabs-haskell/cem-script/pull/16/files#diff-b335630551682c19a781af4d07bf978ac04c6bf87428ed5106870f5\n\nデモのビデオ:\nhttps://www.youtube.com/watch?v=75jWuWYKFAs\n\nレポート:\nhttps://github.com/mlabs-haskell/cem-script/pull/16"
+    },
+    {
+      "no": 3,
+      "promise": "・モデルベース試験(Quickcheck-dynamic)、tx変異試験対応\n・(基本)マークダウン仕様生成のサポート",
+      "criteria": "・本ライブラリは、一般的なモデルベースのテスト(Quickcheck-dynamic で)と tx の変異テストをサポートしています(主に、既に利用可能なtxの変異ソリューションをコピーまたは再利用)\n・CIP-0057 スクリプト API とマークダウンのスペック生成をサポートするライブラリ\n・プロジェクトの評価、結果は文書化(問題やコードの簡素化など)",
+      "report": "インフォメーション\n\nモデルベースのテスト(Quickcheck-dynamicと)およびtxの変異のテストのためのサポート\n(基本)マークダウン仕様生成のサポート\n\nソリューション\n\n更新されたレポートを明確化してご覧ください。\nhttps://github.com/mlabs-haskell/cem-script/blob/master/docs/catalyst milestone reports.md#milestone-3\n\nデモビデオだけでなく、\nhttps://youtu.be/l16NNsFNpkg"
+    },
+    {
+      "no": 4,
+      "promise": "・オンチェーンコードの最適化、プロファイリング、Plutarchのオンチェーンコード生成.",
+      "criteria": "・Plutarchのオンチェーンコード生成と様々なオンチェーンコード最適化をサポートしています。 どちらのソリューションも文書化されます。\n・Benchmark utils が提供され、異なるバックエンドは例で評価され、結果は分析および文書化されます.",
+      "report": "チャット機能を使って審査者と連絡を取り合っていましたが、この追加コメントで返送することができませんでした。 基本的には、欠落したと述べたものが提供され、拒否理由で告白されました。 リンクされたレポートにはビデオリンク(https://www.youtube.com/watch?v=wveLyvuKjeI)が含まれており、GitHubのドキュメント自体は、私たちのレポートとして提出されたものです。\nそこで、メインの変更を強調します。\n・制約とPlutarchのオンチェーンコード生成と最適化のための統計DSL(PR#96)\n・実装のプロファイリング(PR)\n\n関連するコードへのリンク\n\n再び、マイルストーン 4 の PoA ドキュメントを以下にご覧ください。\nhttps://github.com/mlabs-haskell/cem-script/blob/master/docs/catalyst milestone reports.md"
+    },
+    {
+      "no": 5,
+      "promise": "・L1チェーンインデックス対応\n・ライブラリのテストとドキュメントの最終化",
+      "criteria": "・L1生産チェーンインデックス対応ライブラリ\n・本機能の使用と評価のために、Hydra SDK(全般的に関連する)が変更されます。\n・本プロジェクトで開発された機能のコード、ドキュメント、例など、最終化されたリポジトリが存在します。\n・全体的なチュートリアルは、ライブラリとの統合ワークフローを実証するものです.",
+      "report": ":: 更新情報 ::\n\n私達に要求ごとのより短い閉鎖のビデオがあります:\nhttps://www.youtube.com/watch?v=Kf6khWl9VX8\n\n-------------------\n\nこのリンクは、関連する成果物、クローズアウトビデオ/レポートなどを含む、クローズアウト・クローズアウト・クローズアウト・サマリーのリンクを参照してください。\nhttps://github.com/mlabs-haskell/cem-script/blob/master/docs/catalyst milestone reports.md"
+    }
+  ]
+}

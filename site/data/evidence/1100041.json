@@ -1,0 +1,74 @@
+{
+  "title": "BLOCKTRUST Credential workflow platform",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 40000,
+      "promise": "・Set up the project on GitHub, including a README.md that links all resources and outlines the planned roadmap.\n・Licensed the project under Apache 2.0.\n・Building out an initial web application, in which a user can sign in.\n・Implementing a tenant model, with secure user/tenant separation.\n・Code to customize the tenant profile.\n・A test project is created to test login, profile, and account-related features.",
+      "criteria": "・Existence of a GitHub repository with a README.md about the project.\n・The project is open-source under Apache 2.0.\n・First commits and initial code base exist\n・Test project exists, with test for login, profile and other account related features.\n・A summary about the initial development is provided to better understand what has been done in the first milestone.\n・A short video going through the code base and explains the first features. Since the project is at this stage very technical without much to see, the video will likely also be technical in nature.",
+      "report": "・The project is publicly available here: https://github.com/bsandmann/blocktrust.CredentialWorkflow\n・The project contains a README.md\n・The project in licensed as Apache 2.0 (see Github link)\n・For the other points we made a video, which covers the current state of the project here: https://youtu.be/h7qUuvy0R1c\n・A more technical write up (development report) can also be found here\n・Several test have been written to cover different functionality around the tenant and workflows. You can see a screenshot of the passing tests here. The testproject can be found here",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 40000,
+      "promise": "・Code has been written to model arbitrary trigger-action-output flows.\n・A basic UI has been created to configure those trigger-action-output flows.\n・Code has been written to save, load, run, and stop those flows.\n・The code will be used in the first initial example, where a user can provide a DID, to which a credential will be automatically issued using a configurable flow.\n・The created credential will be submitted to the holder by using DIDComm (WACI).\n・Tests are written to test the creation, updating, and running of those flows.",
+      "criteria": "・A report on the development will be written to explain what has been done. The report will highlight noticeable portions of the code, which are critical to the project, and will also delve into architectural decisions taken.\n・A video will go through the example of creating a new tenant, creating a new flow, configuring a trigger to receive a DID through some channel, configuring an action to create a credential, and configuring an output so that the credential will be sent to a user's wallet.\n・The video demonstrates that the tests of the project are passing. The video will explain the tests a",
+      "report": "Here is the evidence for the milestone completion:\n・The Github repo can be found here: https://github.com/bsandmann/blocktrust.CredentialWorkflow\n・The development report can be found here: https://github.com/bsandmann/blocktrust.CredentialWorkflow/blob/master/Blocktrust.CredentialWorkflow.Web/Documents/DevelopmentReport_M2.md\n・The video is here: https://youtu.be/1sfLouFP5AE",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "9",
+      "cost": 50000,
+      "promise": "・Based on the basic flow from the last milestone, additional actions, triggers, and outputs will be added.\n・This specifically includes the ability to use DIDComm as a trigger.\n・As well as using validation rules for a trigger (e.g., checking a credential for a certain property).\n・Configurable API endpoints will be added to receive requests to trigger actions.\n・Unit-Tests for the new triggers, actions, and outputs will be added.",
+      "criteria": "・A report on the development will be written to explain what has been done. The report will highlight noticeable portions of the code, which are critical to the project, and will also delve into the architectural decisions taken.\n・A video will be created to show the new features. It will walk through the creation of a new trigger endpoint API, the validation of a received credential over DIDComm (or the API), and will showcase a new output, which didn't exist in the previous milestone (will be decided later which makes most sense)\n・The video will also show the tests and explain what is tested.",
+      "report": "Github repo: https://github.com/bsandmann/blocktrust.CredentialWorkflow\nDevelopment report: https://github.com/bsandmann/blocktrust.CredentialWorkflow/blob/master/Blocktrust.CredentialWorkflow.Web/Documents/DevelopmentReport_M3.md\nVideo covering all the acceptance criteria and a brief summary of the tests: https://youtu.be/g52QrTpg5d0",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "11",
+      "cost": 40000,
+      "promise": "・Code will be developed to cover most of the triggers, actions, or outputs mentioned here:\n・Triggers: Receive data over an HTTP endpoint, through a POST method or a GET method with query parameters, an auto-generated form, or a DIDComm endpoint of the following types:W3C JWT Credential, a PeerDID, a PRISM-DID, a predefined Key/Value pair, an API-Key, or various types of DIDComm messages.\n・The following actions can be used and chained as needed: Resolution of a DID, verification of a Credential, validation of certain data inside triggers.\n・The following outputs will be provided and triggered depending on the outcome of the previous actions: HTTP request, issuing a credential, sending DIDComm messages, creating, updating, and deleting DIDs, the generation of an Out-of-band invitation connection, creation of a JWT Token (for authentication).\n・While we plan to support all these triggers, actions, and outputs, there might be unforeseen problems or yet unknown opportunities, which could lead us to change a minority of them. If this happens, we will document the changes in the report for this milestone.\n・Code will be added to manage chained flows as templates.\n・Unit-Tests for each of thes",
+      "criteria": "・The previously mentioned triggers, actions, and outputs should be implemented with only minor changes. Larger changes will at least be documented in a way that they are understandable for a non-technical reviewer, why these changes were useful or necessary. If larger changes are made, the overall scope should be similar and should not result in a reduced workload.\n・A video will be created covering most, if not all, of the triggers, actions, and outputs, within an understandable example of how to use these. The use of templates is also a part of the video.\n・The video will also go thorugh the n",
+      "report": "The Github repo: https://github.com/bsandmann/blocktrust.CredentialWorkflow\nThe video: https://www.youtube.com/watch?v=vbIAbiHi6wE\nThe video covers many of the existings triggers / actions with a focus on the new ones:\n・Create DID, Update DID, Deactivate DID\n・Generate JWT Token\n・The new Form Trigger\n・And the usage of templates\n・A brief look at the tests (You can find the folder with some of the new tests here)\n\nThe short development report can also be found here: https://github.com/bsandmann/blocktrust.CredentialWorkflow/blob/master/Blocktrust.CredentialWorkflow.Web/Documents/DevelopmentReport_M4.md",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "12",
+      "cost": 30000,
+      "promise": "・All open issues of the project occurring in this last phase will be publicly tracked on the GitHub Issue tracker. Fixed Bugs will be visible and linked here.\n・The project will have its own website, separate from the GitHub repository, with further explanations and examples for people who want to use the project.\n・The documentation will be expanded, so that others can easily integrate and use this project, as well as commit code as external pull-requests.\n・The project will be hosted as a usable application, so that people don't have to build and run it themselves.\n・The output includes the close-out report as well as the close-out video",
+      "criteria": "・A dedicated website exists explaining the project, containing understandable information on how to use it.\n・Documentation exists for all the triggers, actions, and outputs, explaining them in detail on how to use them.\n・A Docker image will be created and provided to the community, so that they can run the application more easily.\n・A ~10-minute video will be created which goes through the application, explaining it, based on use cases we expect to be common.\n・The close-out report exists.\n・The close-out video exists.",
+      "report": "Website and documentation for the Project: https://docs.workflow.blocktrust.dev\nDocumentation (see above) covers all Triggers and Actions\nThe project is also hosted an available to use here: https://workflow.blocktrust.dev\nDocker image is available here: https://github.com/users/bsandmann/packages/container/package/workflowplatform \n15min video: https://www.youtube.com/watch?v=9XJUgtR4sR0\nClose-out report: https://github.com/bsandmann/blocktrust.CredentialWorkflow/blob/master/Documents/closeout_report.md\nClose-out video: https://youtu.be/KPOugkS0fw4\n\n---\nNote to reviewer: The package was still marked private. Its fixed now. Thanks for catching that!",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

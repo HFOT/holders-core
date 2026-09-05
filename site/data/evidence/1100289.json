@@ -1,0 +1,59 @@
+{
+  "title": "Wider accessibility of automatic borrowing - Lenfi Software Development Kit (SDK)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 32000,
+      "promise": "Created a public codebase and published on our public GitHub repository. This will be a source code of SDK that can be pulled and built locally. Built SDK will build Transaction bodies of these actions: Deposit, Withdraw, Borrow, Repay, and Liquidate",
+      "criteria": "The deliverables for this milestone will enable developers and users to fully engage with the 4 core functionalities of our DeFi lending and borrowing protocol. By the end of this milestone, the following states will be achieved as part of the acceptance criteria for successful delivery:\n・Lenfi SDK Users are able to pull the code and build an app.\n・Lenfi SDK Users are able to build and submit on-chain transactions to Deposit, Withdraw, Borrow, Repay and Liquidate.",
+      "report": "Public github with the code base of code building transaction body of Deposit/Withdraw/Borrow/Repay/Liquidate\nhttps://github.com/lenfiLabs/lenfi-sdk/releases/tag/v0.0.5\nTwitter post sharing Github and Deno links.\nhttps://twitter.com/LenfiOfficial/status/1831326998104354973\n\nExtra: https://www.npmjs.com/package/lenfi-sdk",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 32000,
+      "promise": "Batcher execution actions. SDK users will be able to act as batcher for the protocol when the pool is busy. To execute: Deposit/Withdraw/Borrow/Repay orders for the batcher fee.",
+      "criteria": "The deliverables for this milestone will enable developers and users to fully engage with the 4 core functionalities of our DeFi lending and borrowing protocol using a batcher. By the end of this milestone, the following states will be achieved as part of the acceptance criteria for successful delivery:\n・Lenfi SDK users are able to pull the code and build an batcher.\n・Lenfi SDK users are able to submit on-chain batcher transaction to Deposit, Withdraw, Borrow, Repay, and Liquidate.",
+      "report": "Public github with the code base of code building transaction batcher body of Deposit/Withdraw/Borrow/Repay\nhttps://github.com/lenfiLabs/lenfi-sdk\nTwitter post sharing Github and Deno links.\nhttps://x.com/LenfiOfficial/status/1834529194245537959\nExtra: https://www.npmjs.com/package/lenfi-sdk",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 32000,
+      "promise": "Addition to the a public codebase on our public GitHub repository. Addition in this milestone will provide to the SDK following actions: Create Pool/Delete Pool/Delegate to Stake Pool. Users will be able to build Transaction bodies for these actions.",
+      "criteria": "The deliverables for this milestone will enable developers and users to fully engage with the additional functionalities of our DeFi lending and borrowing protocol. By the end of this milestone, the following states will be achieved as part of the acceptance criteria for successful delivery:\n・Lenfi SDK users can build and submit on-chain transaction to Create Pool/Delete Pool/Delegate to Stake Pool",
+      "report": "Lenfi SDK users can build and submit on-chain transaction to Create Pool/Delete Pool/Delegate to Stake Pool\nTweet: https://x.com/LenfiOfficial/status/1848645385180340699\nLinks: https://deno.land/x/lenfijs@v.1.0.1\nhttps://www.npmjs.com/package/lenfi-sdk\nhttps://github.com/lenfiLabs/lenfi-sdk",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 29000,
+      "promise": "SDK is fully ready and functional for users to use;\nFinal report to the community of Project Catalyst program completion.",
+      "criteria": "・NPM library published with version 1.0.1\n・Deno library published with version 1.0.1\n・Final report about Project Catalyst program completion has been announced to the community?",
+      "report": "・SDK publicly https://www.npmjs.com/package/lenfi-sdk\n・Deno library https://deno.land/x/lenfijs@v.1.0.1\n・Tutorial video to perform all actions: https://www.youtube.com/watch?v=kOHes5y6uME\n・Example transaction to perform all actions available on Github: https://npm.io/package/lenfi-sdk\n・Link to Project Closeout Report (updated version no3): https://github.com/lenfiLabs/materials/blob/main/Lenfi-SDK-Project-Catalyst-Finalisation-Report-3.pdf\n・Link to Project Closeout Video (currently un-listed, because we have published and shared the first video with the community, so will do the same with this after approval to not share multiple times) . https://youtu.be/-xofCoKZqJk",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

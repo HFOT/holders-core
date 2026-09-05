@@ -1,0 +1,32 @@
+{
+  "title": "Mastering Open Enterprise Agent (Atala PRISM): A Developer Handbook for Decentralized Identity Solutions",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "・Table of Contents\n・1 idea for example application code project\n・Landing page website for book project",
+      "criteria": "・Table of Contents for book should be delivered as a list of chapter titles with a one sentence description of what the contents might be in that chapter\n・Idea for example application code project should have a short paragraph describing the example project and why it's a good idea for the sample code, including what Atala PRISM functions it helps a developer get started with\n・Website for the book should be set up and reachable on the public internet. There does not need to be any content for this website for this milestone",
+      "report": "Milestone 1 Proof of Achievement:\n\nWebsite: https://identusbook.com\nTable of Contents with chapter descriptions: https://identusbook.com/book\nOpen Source Example App Idea:\n Educational Credentials:\n The example application will demonstrate for developers how to issue educational credentials to digital identity wallet holders.\n - Users will be able to indicate they completed a course and be issued a Verifiable Credential.\n - Users will be able to verify the credentials of other users.\n - Users will be able to selectively disclose course completion status without revealing personally identifiable information.\n This example app will show developers all the key ingredients they need to know in order to build complex Self Sovereign Identity applications with Identus (Atala PRISM)\n\n Table of Contents: \n (Subject to change if Identus itself changes)\n Descriptions of each chapter found at https://identusbook.com/book (click on each section to see it's contents)\n - Index\n - Copyright\n - License\n - Dedication\n - Preface\n - part: \"Section I\"\n - Introduction\n - SSI Basics\n - Identus Concepts\n - part: \"Section II - Getting Started\"\n - Installation for Development\n - part: \"Section III - Building\"\n - Project Overview\n - Wallets\n - DIDs\n - DIDDocuments\n - Connections\n - Verifiable-credentials\n - DIDComm\n - Verification\n - Plugins\n - part: \"Section IV - Deploy\"\n - Installation for Production\n - Mediator\n - Maintenance\n - part: \"Section V - Addendum\"\n - Trust Registries.md\n - Continuing Your Journey.md\n - part: \"Appendices\"\n - Errata.md\n - Glossary\n\nThank you and please let us know if you have any questions.\nJon Bauer and Roberto Carvajal",
+      "kinds": [
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 60000,
+      "promise": "・Writing book chapters on the topics we chose in Milestone 1's Table of Contents\n・Posting about progress on the book's website, either content about topics we're writing about or just about our experience writing the book.\n・We will hire 3 or 4 Technical Reviewers to proof read and validate our content during Milestone 3 (the next milestone)",
+      "criteria": "・Each chapter from our Table of Contents should have some content\n・For various reasons, there may be content that can not be completed because of Open Enterprise Server's roadmap. For example if we are writing about a feature that won't be released until closer to the book's completion, we may only have general text about that particular subject, but most of the book should have content. \n・Book's first draft will be readable. Format will be decided in Milestone 1 (PDF / eBook / Markdown)\n・We will have hired 3 or 4 Technical Reviewers who agree to read our draft and test our code during future",
+      "report": "Mastering Identus Book - Proof of Achievement for Milestone 2\nMilestone 2 has been completed and is ready for review:\nAcceptance Criteria and Evidence:\n\n・Each chapter from our Table of Contents should have some content:\n・Evidence:\n・You can see the first draft of our text at: https://identusbook.com/book/\n・Each chapter has some content, either a detailed outline, overview or full technical content.\n・For various reasons, there may be content that can not be completed because of Open Enterprise Server's roadmap:\n・Evidence:\n・As noted in the Acceptance Criteria, there is some content that we do not yet have full details for but expect to be able to add this content during Milestone 3 when we write the example applications. This content is very technical and will come from our direct example application code, showing exactly how to accomplish certain tasks in a tutorial-like way.\n・Please note there was content from the Table of Contents that was removed because they are no longer part of Identus/Atala PRISM’s roadmap and will not be developed or released. One example is the “Plugins” chapter. “Plugins” were removed from the Atala/IOG product roadmap, so we removed the chapter.\n・Book's first draft will be readable:\n・Evidence:\n・The E-Book is being published automatically directly from our Project Github and can be read here: https://identusbook.com/book/\n・We will have hired 3 or 4 Technical Reviewers:\n・Evidence:\n・We have hired 3 Technical Reviewers, who have agreed to review the text and the example code and provide feedback the next milestones. \n・Björn Sandmann - https://blocktrust.dev/: https://drive.google.com/file/d/1tVPaPBrJy04tYdpd1LJ7XEMcrvJpHQbr/view?usp=share_link\n・Esteban Garcia - Identus Maintainer https://github.com/hyperledger/identus/blob/main/MAINTAINERS.md: https://drive.google.com/file/d/1cWlGDWn9oBiSqwDYv7_ABXGWoQxWECUV/view?usp=share_link\n・Javier Ribo - Identus Maintainer https://github.com/hyperledger/identus/blob/main/MAINTAINERS.md: https://drive.googl",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 13,
+      "cut": true
+    }
+  ]
+}

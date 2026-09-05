@@ -1,0 +1,68 @@
+{
+  "title": "Easily recoverable Identity Wallets for Atala Prism (SSI Threshold Wallets)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 49771,
+      "promise": "Pevious remark: In the initial proposal we had a total of 3 three milestones. Since we are now asked to define 5 milestones, we have split the initial milestone 2 into three milestones: M2,M3,M4.\n\nA detailed report including :\n- Literature Review: Survey existing literature on threshold signature schemes to understand the current state of the art.\n- Security Analysis: Analyze various threshold signature schemes for their security strengths and weaknesses.\n- Feasibility Study: Assess the compatibility of these schemes with the Atala PRISM environment.\n- A proof of concept demonstrating the scheme's feasibility\n- A comprehensive security proof to validate the robustness of the chosen scheme.",
+      "criteria": "The report is published including references to relevant literature. Also, it contains a solution and a plan how to implement it in Apollo to support the recovery process.",
+      "report": "Thank you for your comments.\nWe have carefully mapped each output to the corresponding paper and to the agreed milestone outputs, and we have provided comments to ensure clarity and consistency. I hope this meets your requirements.\nShould you have any further questions or need additional clarification, please feel free to contact us via the discussion-panel. We are also available for a call to discuss this topic further and reach a resolution.\nhttps://github.com/perun-network/atala-prism-threshold/wiki/Threshold-ECDSA-Signatures-for-Atala-PRISM-Report\n\n\"Literature Review: Survey existing literature on threshold signature schemes to understand the current state of the art.\"\nTreatment in the Report: The literature review consists of a recapitulation of the relevant security & efficiency properties of threshold (ECDSA) signature schemes, with a discussion on their relevance for the integration in Atala Prism (Section 2). A summary of the current state-of-the-art threshold ECDSA signature schemes suitable for this project is given in Section 3 and the systematic comparison w.r.t. to the earlier established properties in Section 3.1. And finally, we discuss our choice for the scheme by Canetti et al. (Section 3.2). For a more in-depth, general literature review on threshold ECDSA schemes, we refer the reader to the paper by Aumasson et al. “A Survey of ECDSA Threshold Signing” published in 2020.\n\"Security Analysis: Analyze various threshold signature schemes for their security strengths and weaknesses.\"\nTreatment in the Report: Is covered in the summary of the schemes (Section 3), where we mention the security properties or the proof model and highlight the crucial points in Table 1. In Section 3.2 we explicitly discuss the crucial points of the different security properties of the schemes and their implications for the integration task.\n\n\"Feasibility Study: Assess the compatibility of these schemes with the Atala PRISM environment.\"\nTreatment in the Report: We give an a",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 49771,
+      "promise": "Previous remark: In the initial proposal we had a total of 3 three milestones. Since we are now asked to define 5 milestones, we have split the initial milestone 2 into three milestones: M2,M3,M4.\n\nImplementation including the necessary cryptographic operations excluding test and documentation in particular\n・Development Planning: Create a detailed implementation plan, including the necessary cryptographic operations.\n・Coding and Integration: Code to integrate the threshold signature scheme into Apollo.",
+      "criteria": "Development Planning:\n・The implementation plan should include a breakdown of tasks required for integrating the threshold signature scheme into Apollo.\n・It should specify the cryptographic operations necessary for the integration, such as key generation, signature generation, and verification.\n・The plan should detail the timeline for each task, including start and end dates, milestones, and dependencies.\n・The plan should be comprehensive and clear, providing a roadmap for seamless execution of the integration process.\n\nCoding and Integration:\n・The code should implement the threshold signature",
+      "report": "Hi and thank you for the detailed feedback\n- We have updated the video to be more comprehensive, with a verbal explanation of the implementation. The revised video is now available here:https://github.com/perun-network/atala-prism-threshold/wiki/Demo.\n- Based on your input, we added the full Apache 2.0 license boilerplate to the repository’s copyright section, which you can review here: https://github.com/perun-network/atala-prism-threshold.\n- Additionally, we’ve included our analysis of different architectural options and the rationale behind our approach. You can find this in our milestone report here: https://github.com/perun-network/atala-prism-threshold/wiki/Milestone-Report.\nThank you again for your review and for re-evaluating the updated evidence.",
+      "kinds": [
+        "code"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "8",
+      "cost": 33181,
+      "promise": "Previous remark: In the initial proposal we had a total of 3 three milestones. Since we are now asked to define 5 milestones, we have split the initial milestone 2 into three milestones: M2,M3,M4.\nTestplan and testreports to ensure the scheme's functionality and security within Apollo: \n・Test plan should encompass all functionalities and security aspects of the scheme within the Apollo system, including but not limited to cryptographic operations, data handling, access control, and error handling.\n・Test reports should provide a detailed summary of testing activities conducted, including the scope of testing, methodologies employed, and the overall approach followed. They should document test results comprehensively, including both positive and negative outcomes.",
+      "criteria": "・A dedicated test project within the repository includes multiple tests covering essential functionalities.\n・Test reports should provide a summary of executed tests, including test objectives, methodologies, and the overall testing approach.\n・Each test report should document test results comprehensively, including both functional and security aspects of the scheme within Apollo.\n・It must include detailed descriptions of any issues, defects, or vulnerabilities identified during testing, along with steps to reproduce them.\n・For each test case, the report should specify whether it passed or faile",
+      "report": "Dear Reviewers,\n(I have updated this to answer the question regarding defects)\nWe are pleased to inform you that Milestone 3, focusing on quality assurance and testing, has been successfully completed, including peer-to-peer code reviews before merging.\nTo review and run the tests, you can click on the “Coverage” badge in the repository: Threshold ECDSA Signature. This provides access to the detailed test plan and test reports, including the corresponding test activities and results. Based on these test scenarios, we have achieved very high test coverage with positive test results. During the internal review process, minor issues were identified and fixed, but these were not classified as defects. So far, we have not detected any vulnerabilities.\nAs agreed, you will find the dedicated test project in the evidence section here: Test Project Repository.\nAdditionally, we have uploaded a short video summarizing the test scenarios and demonstrating how to execute them. You can find it here: Demo Video for Milestone 3.\nThank you for reviewing this milestone. Wishing you a Merry Christmas!\nBest regards,\nSasan",
+      "kinds": [
+        "code"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "9",
+      "cost": 8296,
+      "promise": "Previous remark: In the initial proposal we had a total of 3 three milestones. Since we are now asked to define 5 milestones, we have split the initial milestone 2 into three milestones: M2,M3,M4.\nComprehensive documentation detailing the implementation process and usage guidelines\n・Provide an overview of the implementation process, outlining the goals, objectives, and scope of the project.\n・Describe the architectural design of the system, including components, modules, and their interactions.\n・List the technologies, frameworks, libraries, and tools employed in the implementation, along with their rationale for selection.\n・Detail the step-by-step instructions for setting up the development environment, including software installations, configurations, and dependencies.",
+      "criteria": "・The documentation should be clear, concise, and easy to understand, catering to users with varying levels of expertise.\n・It should cover all essential aspects of the implementation process and usage guidelines.\n・Developers should be able to follow the documentation effortlessly to understand the system's architecture, functionality, and usage.\n\nIn addition we have the implementation and documentation peer-reviewed for additional security and efficiency insights.",
+      "report": "Dear Reviewer,\nPlease find our Milestone 4 Submission herewith. We have created a comprehensive wiki that provides detailed information on how to use the code, the technologies involved, architectural decisions, and usage guidelines. Additionally, we have prepared an explanatory video as part of the evidence section, which walks through the wiki. You can access the video here: Milestone 4 - Demo Video.\nDuring our peer-to-peer review, no issues were identified. However, we have included a section called “Future Enhancements,” where we highlight areas for potential improvements. We are now proceeding with the final milestone as we work towards completing the project.\nAs part of our development process, peer-to-peer reviews were regularly conducted and integrated into the continuous integration workflow. These reviews, including documentation assessments, were carried out by security experts from TU Darmstadt. Since the development took place in a private repository, the documentation, PR history, and review comments were not transferred to this public repository. However, we have now added several PDFs as evidence of these activities, which can be accessed via the Milestone 4 submission wiki: Peer Review Proofs.\nWe hope this meets your expectations. Please let us know if you need any further details.\nWith kind regards!",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 5,
+      "month": "10",
+      "cost": 24886,
+      "promise": "・-Demo Application which shows he specifics of the residence permit issuance process and how it will utilize the threshold signature scheme.\n・A hosted instance of the application is available for everyone to try out \n・Project Closeout Report\n・﻿Project Closeout Video",
+      "criteria": "A working demo application for issuing a residence permit using the thresholdized signature scheme.\n・User-friendly and publicly accessible website is available for everyone\n・Project documentation is available on GitHub, outlining project objectives and a Howto\n・A 5-10min video provides a step-by-step guide",
+      "report": "Dear Reviewers,\nWe are pleased to share that we have successfully completed the final milestone of the project. You will find the agreed deliverables and reports under the linked two sections below:\n・Demo Application – Showcasing the specifics of the residence permit issuance process.\n・Link to the live demo application instance \n・Demo repository with usage instructions and documentation\n・Demo Plan\n・Project Closeout\n・Final Closeout Report \n・Closeout Video\n\nIf you have any questions, please don’t hesitate to reach out. \nThank you for your support throughout this exciting project.\nKind regards,\nSasan",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "title": "Catalyst Explorer 2.5: Accessible Catalyst Data & Tools",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 51750,
+      "promise": "・users can create draft ballots via the explorer\n・User with bookmarks can turn their bookmarks into draft ballots\n・User can share their draft ballot (with rationales)\n・new proposal page\n・new proposal card",
+      "criteria": "・Single proposal page has a new design\n・User report card complete\n・Group report card complete\n・Community Report Card complete\n・users can create draft ballots via the explorer\n・User with bookmarks can turn their bookmarks into draft ballots\n・User can publicly share their draft ballots",
+      "report": "As promised deliverables from milestone one are now live! The only blocker we had, waiting on designs from the ui/ux team are also now in. \nFigma designs for the cards, single proposal page, and some extra pages not part of the original scope but will be super cool to have available at https://drive.google.com/file/d/1yDsga2Og6r7P4Cim_uD8zR0jlZWXsMpR/view?usp=sharing. ps, the pdf is large so you will need to download it to your computer to view it... probably. \nThe draft ballot functionality was completed a while ago and heavily used during fund 11. Here's a tutorial we made a month ago showing the community how to use the tool: https://www.youtube.com/watch?v=VEl8LMjkrcI \n\nFor easy evaluation for the specific features in the acceptance criteria, please see these breakdowns and timestamps. Thank you. \n・Single proposal page has a new design - here's the completed design: https://drive.google.com/file/d/1B10qsMrgQMUNbQx3b1HomT-f-lSZPLiU/view?usp=sharing of the detail page. See pdf for alternatives and other tabs\n・User report card complete - We landed on a unified design for user, group, community here's what it will look like: https://drive.google.com/file/d/1RtdirE0ggCustledn0G0SO1kNjIdwVhY/view?usp=sharing\n・Group report card complete - We landed on a unified design for user, group, community here's what it will look like: https://drive.google.com/file/d/1RtdirE0ggCustledn0G0SO1kNjIdwVhY/view?usp=sharing\n・Community Report Card complete - We landed on a unified design for user, group, community here's what it will look like: https://drive.google.com/file/d/1RtdirE0ggCustledn0G0SO1kNjIdwVhY/view?usp=sharing\n・users can create draft ballots via the explorer - the attached video is about draft ballots\n・User with bookmarks can turn their bookmarks into draft ballots - there are 3 ways to add proposals to the ballots, bookmark minute 1.28 in the video\n・User can publicly share their draft ballots - share minute 3.21",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 36000,
+      "promise": "The idea is to create a system for managing catalyst explorer incentivized contributions (aka, bounties). We want a way to view available contributions, associated incentives if applicable, system for validating contribution, system for receiving contribution incentives.",
+      "criteria": "・Public can see available contributions\n・logged in user can request responsibility for a given contribution \n・Contributors can submit evidence of completed contribution(s)\n・Incentive for Accepted contribution if applicable can be disbursed.",
+      "report": "We did the thing, the cardano public can now start helping enrich catalyst data starting with reporting companies or groups that receives money from project catalyst. \nContribution page on lidonation: https://www.lidonation.com/en/contribute \nDemo of the feature: https://youtu.be/zdHdFLuCCgE",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 40000,
+      "promise": "This milestone delivers on the \"Catalyst Communities\" module from our proposal. In the current tool you can see proposal related to companies: https://www.lidonation.com/en/catalyst-explorer/groups. \nThe big idea for this milestone is to create a similar resource for communities. Anyone can create a community page (ie, LATAM) and link proposals related to that community.",
+      "criteria": "・user can create a community\n・user can add admins to their community\n・admins can add or remove proposals\n・Community landing page with related proposals.\n・public can view landing pages for two communities\n・implement new single page layout\n・2 communities onboarded",
+      "report": "Take III:\nMilestone 3 features are now live at: https://www.lidonation.com/en/catalyst-explorer/communities \nYou will need to create an account to create a community from the dashboard as well as edit admins and proposals\nThe new single proposal page have been live for months now: ie: https://www.lidonation.com/en/proposals/catalyst-explorer-25-accessible-catalyst-data-tools-f10\nHere's a video walkthrough of the communities features: https://youtu.be/WSInR1ySfoA \n-----\nCaught us during a week long struggle with some new recently deployed server technologies. Should be smooth & fast now. \n-----\nFix the registration issue. While we were at it, we also removed the constraint that only verified ideascale could create communities. Now anyone can, even if they don't have an ideascale profile. You still have to register for the site if you don't have a log in though.",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 16000,
+      "promise": "This milestone delivers on the Users and Companies and groups modules under the \"The modules:\" portion of our proposal. We will add filters to these two pages on the site to let users narrow down to particular companies and users:\n・https://www.lidonation.com/en/catalyst-explorer/people\n・https://www.lidonation.com/en/catalyst-explorer/groups",
+      "criteria": "・Add at least 5 filters to the catalyst users page: https://www.lidonation.com/en/catalyst-explorer/people\n・add at least 5 filters to the catalyst groups page: https://www.lidonation.com/en/catalyst-explorer/groups\n\nWe don't yet know which filters will be created. We need to create a list of what's possible and get feedback from the community on which ones are most valuable. Right now these pages have zero filter, I propose that you monitor the progress of the work by confirming that we go from 0 to at least 5.",
+      "report": "Milestone 4 features are now live at: https://www.lidonation.com/catalyst-explorer/groups and https://www.lidonation.com/catalyst-explorer/people \nHere's a video walkthrough of the communities features: https://youtu.be/MP3KR0yUCLc",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 5,
+      "month": "9",
+      "cost": 28916,
+      "promise": "IOG have committed to opening up votes submission to other community builders. The big idea here is to prototype submitting your lidonation draft ballots to the voting sidechain.",
+      "criteria": "Final criteria is dependent on receiving access from iog. Pending this, just one Acceptance criteria:\n・users can submit votes from lidonation in test environment.",
+      "report": "Hey team, \nPlease see final close out video at: https://youtu.be/ejTvIWrXZp4\nPlease final closeout Report at: https://drive.google.com/file/d/1sJ4YKB8HMf4DUkNlTzbTHYTMDIkI3QH1/view?usp=sharing\nNote that Catalyst Voices is not yet being used to submit votes for fund 14. What we have online is just a prototype. We already have support for the new Catalyst Document standards and ready to submit votes when the features goes live in Catalyst Voices. \nSince being funded for this project we've moved all of the work to a brand new website at https://www.catalystexplorer.com/en and open source repo at https://github.com/lidonation/catalystexplorer.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

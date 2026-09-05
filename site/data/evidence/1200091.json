@@ -1,0 +1,85 @@
+{
+  "title": "DE-UPLC: Visual Studio Code Extension for Debugging and Visualizing Plutus Bytecode",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 30000,
+      "promise": "• UI mockup and wireframes\n• Component diagram of the project\n• Document of technology limitations\n• GitHub repository with the initial project structure",
+      "criteria": "• UI mockup and wireframes: Should show the intended look and layout of the UI.\n• Component diagram of the project: Should detail how components are organized within the project.\n• Document of technology limitations: Must explain the limitations of the used technologies (e.g., Aiken, UPLC, VS Code) that might affect the current project or post Catalyst 12 development. The document should also include strategies to avoid these limitations if possible and list which technical/functional aspects were considered.\n• GitHub repository: Should contain initial files such as editor config, package.json",
+      "report": "Project repo with initial files:\nhttps://github.com/cardananium/de-uplc/tree/4f79fb94c59bfdb46bc1e98ae73cc5f42ced76e4\nComponent digram (I have changed initial digram style to make it more readable):\nhttps://github.com/cardananium/de-uplc/blob/fc59be39049cb7e9fef554a3aed00701d7a7426c/de-uplc-components.md\nDocument of technologies limitations:\nhttps://github.com/cardananium/de-uplc/blob/docs/techinal-review.md\nUI mockups:\nhttps://github.com/cardananium/de-uplc/blob/docs/de-uplc-ui.pdf\nNote for reviewers: During the development process, there may be some deviations from the mockups and component diagrams. However, this will not compromise the original vision of the project but aims to achieve a more convenient user experience or to overcome any technical limitations that arise.\nAlso, a small comment regarding the mockups: Displaying UPLC elements in a JSON-like structure will be implemented in Milestone 3; until then, UPLC will be displayed simply as text.",
+      "kinds": [
+        "code"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 30000,
+      "promise": "• Interactive UI components for the debugger based on mockups from Milestone 1. (excluding UPLC visualization, which will be done in Milestone 3).\n• API definition for the debugger engine.\n• Navigation flow document.\n• Mock of the future debugger engine, based on the API definitions provided. (real implementation will be done in Milestone 4).",
+      "criteria": "• Debugger UI Components: The UI components should match the mockups from Milestone 1. If not, the author should explain why (e.g., unexpected technical limitations, better user experience, etc.). \n• User Interaction: The UI components should respond to user input.\n• Navigation Flow Document: Should describe how users will interact with the debugger UI components, including the default order of interaction.\n• API Definition: Should provide APIs to cover all UI component needs.\n• Integration with Mocked Debugger Engine: The UI components should communicate with the debugger engine using placeho",
+      "report": "Hi Milestone Reviewers,\n\nHere is the Milestone 2 PoA. I’d like to point out that some controls don’t look exactly like the mockups because I wanted to make the UI more user-friendly. For that reason, a few components have been repositioned and others now include additional icons. I also encountered limitations in VS Code and tried to adhere to its design guidelines. In particular, since VS Code restricts sidebar icon size, I replaced the original icon to make it more visible to users. The gutter panel in the ULPC tab was updated, too, so it shows exactly where you can set a breakpoint—this isn’t a classical programming language, and some details weren’t obvious before. Additionally, the budget section text now turns red when execution units are overspent.\nHowever, the core logic and components remain unchanged; the underlying idea is exactly the same. In my view, the overall result is much better.\nVideo:\nhttps://youtu.be/8Iis_5Vb5kc\nPR: \nhttps://github.com/cardananium/de-uplc/pull/2\nMocked debugger engine:\nhttps://github.com/cardananium/de-uplc/blob/221ec1bdc278cf6e570b7c98e8e121be8c994d13/src/debugger/mock-debugger-engine.ts\nDugger controls located at:\nhttps://github.com/cardananium/de-uplc/blob/221ec1bdc278cf6e570b7c98e8e121be8c994d13/src/sections/debugger-panel-view-provider.ts\nOther UI related code UI can find in the src/sections, src/tabs and package.json\nAPI definition:\nhttps://github.com/cardananium/de-uplc/blob/docs/debugger-engine-api.md\nFlow document:\nhttps://github.com/cardananium/de-uplc/blob/docs/navigation-flow.md",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 30000,
+      "promise": "• UI components for visualizing the structure of decoded UPLC.\n• Integration with the mocked debugger engine.",
+      "criteria": "• UPLC Visualization UI Components: The UI should display the UPLC structure and allow user interaction, as shown in the UI mockups from Milestone 1. If not, the author should explain why (e.g., unexpected technical limitations, better user experience, etc.).\n• Integration with Mocked Debugger Engine: The UI components should communicate with the debugger engine using placeholder functions (mock functions), based on the provided API definitions.",
+      "report": "Hi Milestone Reviewers,\nI have resubmitted the Milestone 3 PoA. Previously, it was rejected because the Milestone 2 PoA had not yet been signed off. Now that Milestone 2 PoA has been approved, could you please review the Milestone 3 PoA submission? Thank you.\nHere is the Milestone 3 PoA. The term view has undergone a thorough reconsideration to make it more readable, informative, and concise.\nThe main code consists of:\n • term-viewer.ts for rendering in a VS Code tab\n • uplc.tmLanguage.json for highlighting term types, built-ins, constant types, and other constructs correctly\nWhere possible, terms and constants have been inlined onto a single line to improve readability.\nThis representation leverages VS Code features such as code folding, the minimap bar for search and navigation, and group collapsing.\nI’ve also added a hint feature (press Ctrl + Alt + H to enable) that displays hints near of terms, built-in types, and constant types, I think it's very helpful for newcomers.\nI hope you like the new look!\nVideo demo:\nhttps://youtu.be/Y1JpHMrSxWs\nPull request:\nhttps://github.com/cardananium/de-uplc/pull/3\nTerm rendering code:\nhttps://github.com/cardananium/de-uplc/blob/68c3032b79d3733763cfebbc5e1f62a6ef875866/src/tabs/term-viewer.ts\nhttps://github.com/cardananium/de-uplc/blob/68c3032b79d3733763cfebbc5e1f62a6ef875866/syntaxes/uplc.tmLanguage.json\nGlue code between UI and mocked debugger:\nhttps://github.com/cardananium/de-uplc/tree/68c3032b79d3733763cfebbc5e1f62a6ef875866/src/events",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 40000,
+      "promise": "• Debugger engine codebase.\n• Integration of the debugger engine with Aiken-UPLC.\n• Communication layer between the debugger UI and the debugger engine.",
+      "criteria": "• Debugger Engine: Should have all the features needed to support the UI based on the API definitions from Milestone 2.\n• Integration: Debugger engine should be integrated with aiken-uplc to decode UPLC bytecode and to run a script.\n• Communication Layer: The debugger engine, implemented in Rust, should be compiled into WebAssembly (WASM) with a JS-WASM communication layer.\n• UI integration: Should work with the UI components from Milestone 2 and 3.\n• Modifications: If any issues with Aiken’s UPLC module were found in Milestone 1, fix them in this milestone by creating a fork of the repository",
+      "report": "Hi Milestone Reviewers,\nHere is the Milestone 4 PoA. \nThe hardest part is done. Now we are able to debug uplc code from a transaction.\n\nVideo demo:\nhttps://youtu.be/S0uEz8sRvlk\n\nPull request:\nhttps://github.com/cardananium/de-uplc/pull/4\n\nRust code of the debugger engine:\nhttps://github.com/cardananium/de-uplc/tree/643dcae88388a0b1144259b6ce69414e6bbcdcf2/rust-src\n\nTS code of the debugger engine:\nhttps://github.com/cardananium/de-uplc/tree/643dcae88388a0b1144259b6ce69414e6bbcdcf2/src/debugger\n\nScripts which generates wasm-js layers (it uses wasm-bindgen and wasm-pack):\nhttps://github.com/cardananium/de-uplc/blob/643dcae88388a0b1144259b6ce69414e6bbcdcf2/rust-src/build-quick.sh\nhttps://github.com/cardananium/de-uplc/blob/643dcae88388a0b1144259b6ce69414e6bbcdcf2/rust-src/build-wasm.sh\n\nAdditionally, since aiken-uplc doesn’t provide a UPLC machine that can be controlled manually for debugging purposes and doesn’t provide UPLC terms with unique IDs, I created a separate fork to implement these features.\nhttps://github.com/cardananium/aiken/tree/de-uplc",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "14",
+      "cost": 30000,
+      "promise": "• Implementation of necessary extension points and APIs to integrate the DE-UPLC UI components and debugger engine into Visual Studio Code as extension.\n• Extension packaging and distribution scripts.\n• User settings and configurations for the extension.",
+      "criteria": "• VS Code Integration: The extension should work within the Visual Studio Code, the extension should use debugger engine and UI components from previous milestones.\n• Extension Packaging and Distribution: Extension codebase should have scripts for building extensions and making a release on github.\n• User Settings and Configurations: User settings and configurations should be supported to provide a plutus script context from file source or koios api",
+      "report": "Hi Milestone Reviewers,\n\nHere is the Milestone 5 PoA. \n\nSettings works, debugger works, data provider also works.\n\nVideo demo:\n\nhttps://youtu.be/Na1ClEWhCNM\n\nPull request:\n\nhttps://github.com/cardananium/de-uplc/pull/6\n\nSettings are defined in the package.json:\nhttps://github.com/cardananium/de-uplc/pull/6/files#diff-7ae45ad102eab3b6d7e7896acd08c427a9b25b346470d7bc6507b6481575d519\n\nSettings handlers here:\nhttps://github.com/cardananium/de-uplc/pull/6/files#diff-b2580d246dc90609fa349a4a308ca1874d8c032c5113561d636169b93ce1fce9\n\nData providers are here:\nhttps://github.com/cardananium/de-uplc/tree/74c37d9b5eede350c3a5655c0a9ea2b3292e9899/src/data-providers\n\nScripts to build and release extension:\nhttps://github.com/cardananium/de-uplc/blob/74c37d9b5eede350c3a5655c0a9ea2b3292e9899/build-extension.sh\nhttps://github.com/cardananium/de-uplc/blob/74c37d9b5eede350c3a5655c0a9ea2b3292e9899/release-extension.sh\n\nAll intgrations code is done here (mostly done during implementation of the previous milestones to demonstrate how the extension works):\nhttps://github.com/cardananium/de-uplc/blob/74c37d9b5eede350c3a5655c0a9ea2b3292e9899/src/debugger/wasm-engine-host-runner.ts\nhttps://github.com/cardananium/de-uplc/blob/74c37d9b5eede350c3a5655c0a9ea2b3292e9899/src/debugger/wasm-engine-worker.ts\nhttps://github.com/cardananium/de-uplc/blob/74c37d9b5eede350c3a5655c0a9ea2b3292e9899/src/debugger/wasm-worker-host-runner.ts\nhttps://github.com/cardananium/de-uplc/blob/74c37d9b5eede350c3a5655c0a9ea2b3292e9899/src/events/event-bridge.ts",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 11
+    },
+    {
+      "no": 6,
+      "month": "15",
+      "cost": 40000,
+      "promise": "・Testing report of the DE-UPLC extension.\n・User documentation.\n・Public release on GitHub.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Testing: A test plan should cover the main functions of the debugger. The debugger should not have critical bugs that affects the main functionality.\n・Documentation: User documentation should cover installation steps and explanation how extension can be used.\n・Public Release: The extension should be published on a platform where a user will be able to post feedback (e.g., GitHub issues for feedback or problem reporting should be acceptable).\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Hi Milestone Reviewers,\nHere final PoA for the DE-UPLC. I have updated video links, now it’s completely public. \nA. Output: Testing report of the DE-UPLC extension\nAcceptance criteria: Testing: A test plan should cover the main functions of the debugger. The debugger should not have critical bugs that affects the main functionality.\nEvidence: https://github.com/cardananium/de-uplc/blob/docs/TEST_REPORT.md \n\nB. Output: User documentation\nAcceptance criteria: Documentation: User documentation should cover installation steps and explanation how extension can be used.\nEvidence: \n de-uplc repo:\n https://github.com/cardananium/de-uplc\n Documents:\n https://github.com/cardananium/de-uplc/blob/main/README.md\n https://github.com/cardananium/de-uplc/blob/main/UPLC_AND_CEK.md\n\nC. Output: Public release on GitHub\nAcceptance criteria: Public Release: The extension is published on a platform where a user can post feedback (e.g., GitHub issues for feedback or problem reporting). Video demonstration showcasing the full extension, installation and example of usage is available.\nEvidence: \n Relase:\n https://github.com/cardananium/de-uplc/releases/tag/v0.0.1\n Code repo:\n https://github.com/cardananium/de-uplc\n Github issues to post feedback/requests\n https://github.com/cardananium/de-uplc/issues\n Video:\n https://youtu.be/5-5kCw-0hmg\n\nD. Output: Final close-out report\nAcceptance criteria: Final closeout report is publicly available.\nEvidence:\nhttps://github.com/cardananium/de-uplc/blob/docs/close-out-doc.md\n\nE. Output: Final closeout video\nAcceptance criteria: Final closeout video is publicly available.\nEvidence:\nhttps://youtu.be/GKgt79-W3Dg",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

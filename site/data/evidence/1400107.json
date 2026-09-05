@@ -1,0 +1,36 @@
+{
+  "title": "Rolling Loans: Continuous Borrowing on Danogo",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 20000,
+      "promise": "A smart contract business specs\nA fully functional smart contract \nA test case and test result",
+      "criteria": "The smart contract business specs must include interest recalculation, refinance feature requirements and all datum's structure related.\nThe contract must include interest recalculation, refinance logic and designed to improve capital efficiency.\nThe smart contract must compile successfully, pass internal tests, and be deployed to a private Cardano testnet.\nTest results must confirm the interest recalculation and refinance logic works correctly without requiring loan repayment",
+      "report": "Milestone 1 Resubmission — Smart Contract Development\nWe have reorganized the Milestone 1 evidence package to directly address the previous reviewer comments.\nEvidence repository:\nhttps://github.com/tdnguyenND/rolling-loan-m1-resubmission-evidence/tree/main\nThis resubmission focuses on making the delivered smart contract functionality easier to verify through test results, technical scenario documentation, deployment/reference transactions, Preprod transaction IDs, before/after datum evidence, and the Aiken rolling-loan test file.\nA. Smart contract business specs\nThe business specification describes the Rolling Loan / refinancing mechanism, including:\n・Create Loan + Repay Loan flow\n・collateral transfer\n・pool accounting update\n・interest-index update\n・loan datum/state structure\n\nEvidence:\nhttps://github.com/tdnguyenND/rolling-loan-m1-resubmission-evidence/blob/main/docs/Business_Specifications.md\nhttps://github.com/tdnguyenND/rolling-loan-m1-resubmission-evidence/blob/main/02_Technical_Report_Test_Scenarios_M1.pdf\nB. Fully functional smart contract\nThe previous submission was not clear enough in showing how the smart contract functionality was executed and verified. In this resubmission, we provide dedicated transaction-level evidence and an Aiken rolling-loan test file to make the tested scenarios easier to review.\nThe smart contract functionality is demonstrated through deployment/reference transaction evidence and one successful Preprod execution transaction.\nPreprod is used here as a public Cardano testnet environment so reviewers can independently inspect the transaction, UTxOs, contracts, reference inputs, metadata, and datum evidence through Cardanoscan. Private testnet transactions are harder for reviewers to verify publicly, so Preprod links are included for transparent verification of the tested flow.\nMain rolling-loan execution transaction:\nhttps://preprod.cardanoscan.io/transaction/b09fa33a42fda235b28be38b58f1daab764e3dfb58768b9506a3c9d5ba5e851f\nThis trans",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 20000,
+      "promise": "・Integrated front-end interface with loan actions (view, open, repay, refinance)\n・Completed connection to the back-end API endpoints\n・Ready-to-test user journeys\n・Demo video",
+      "criteria": "・Users can successfully view, open, repay, and refinance loans using Eternl wallet.\n・Back-end integration performs as expected, with correct contract interactions for all loan states.\n・The interface is stable (no crashes or data mismatches) and intuitive (testers can complete the main actions without external guidance).\n・All major user journeys are covered by integration tests.",
+      "report": "We are submitting the Milestone 2 evidence package for Feature Integration of the Rolling Loan mechanism. This milestone integrates the rolling-loan / refinancing feature end-to-end into the Danogo interface, so a borrower can view, open, repay, and refinance loans directly from the front-end with their own wallet.\nEvidence repository:\nhttps://github.com/tdnguyenND/rolling-loan-m2-resubmission-evidence\nNaming note: in this proposal the feature is called \"Rolling Loan\"; in the delivered product and UI it is named \"Refinance via Dano\". The two names refer to the same capability. Source specification: BorrowModify.Fluid.md §7.15.\nThis submission focuses on demonstrating the fully integrated feature through a published integration test report, a step-by-step user journey with screenshots, publicly verifiable mainnet execution transactions, and a demo video.\nA. Feature integration\n\nThe rolling-loan feature is integrated across the wallet, front-end, back-end, and smart-contract layers. From the live app a user can view, open, repay, and refinance a loan — refinancing (rolling) a loan from Fluid into a Dano Finance (Dano Float) loan, closing the source loan and originating the new Dano loan atomically, with collateral carried across and no manual repay-then-reopen.\nThis is enabled by the Dano Borrow Aggregator, which integrates external lending protocols (Fluid, Liqwid, Surf); rolling a Fluid loan into a Dano loan is the first cross-protocol case delivered.\nEvidence:\n・Integration test report: 01_Integration_Test_Report_M2.md\n・Staging application (live mainnet contracts): https://v3.danogo.io/\n\nB. Fully functional feature — successful mainnet execution\n\nThe refinance is demonstrated through successful, publicly verifiable mainnet execution transactions. Mainnet is used because Fluid does not deploy its smart contracts on any Cardano testnet, so the Fluid → Dano flow can only be executed on mainnet — where the transactions are public, immutable, and independently verifiable",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 20,
+      "cut": true
+    }
+  ]
+}

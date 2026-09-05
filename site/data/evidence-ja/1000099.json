@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・CNツール:\n・通貨レート対応\n・自動CNTools操作(ローカル同期のCardanoノードへのアクセスの信頼性なし、リモートKoios APIサーバーで使用可能)\n・Koios API(gRest)と連携し、より最適化された(バルククエリ)。\n・gLiveView: Koios からデータを取得する (epoch または 1 回の再起動で) - Pool Active Stake (pool info), op cert の検証 (インデックス # はチェーン上で最も高い)",
+      "criteria": "・データ取得などの機能については、コオスクエリレイヤー(gRest)でgLiveViewを統合します。\n・Kiosクエリレイヤー(gRest)と通貨レートの統合のためのCNToolsの更新",
+      "report": "CNツール:\n・通貨レートサポート:バージョン12.1.0に追加。 ADA 価格は、設定通貨で CoinGecko を介して発見されます。 24 時間変更. メインUI、ウォレットリスト&ウォレットショー、プールショーで表示。 cntools スクリプトのオンデマンドで有効にするには.\n・自律的なCNTools操作(ローカル同期のCardanoノードへのアクセスに依存せず、リモートKoios APIサーバーで使用可能) バージョン13.0.0で追加。 CNToolsは、-l 引数を提供したり、ユーザー変数の CNTools スクリプト内のデフォルトモードとして設定することで、新しいライトモードで起動できるようになりました。 このモードでは、CNToolsは、ブロックチェーンを同期するノードに接続されたローカルモードで実行されるように、すべての機能が有効になっていますが、この場合はノード要件なしで動作します。 光モードでは、データとtxの投稿のKoios APIをクエリします。\n・Koios API(gRest)とのTighterとより最適化された(バルククエリ)統合: autonomous のライト モードと共に、Balance fetching 等のようなバルク クエリのための能力の Koios のすべての照会はバルクでやります。 そのため、CNToolsに複数のウォレットを追加した場合は、ウォレットセレクターが表示された場合、各アドレスのローカルノードをクエリすると比較して、すべてのウォレットに対して資金の一括リクエストが行われます。\n\n変更ログ: https://cardano-community.github.io/guild-operators/Scripts/cntools-changelog/\nコミット(他のツールと共有): https://github.com/cardano-community/guild-operators/commits/alpha/scripts/cnode-helper-scripts\nライブビュー:\n・Koiosからのデータを取得する:バージョン1.28.0で追加.gLiveViewは、Koios APIからプール情報を引き出すために更新され、合計ブロックのミント、固定手数料、マージンフィー、アクティブステーク、ライブステーク、デリゲーターカウント、プールプラージュ、ライブプラージュ、サテレーションなどの追加のオンチェーンメトリックが表示されます。\n\nコミット: https://github.com/cardano-community/guild-operators/commits/alpha/scripts/cnode-helper-scripts\nお知らせ(CNToolsとgLiveViewの両方): https://t.me/CardanoK"
+    },
+    {
+      "no": 2,
+      "promise": "・CNツール:\n・CIP-36仕様によるCatalyst投票登録\n・Mnemonicsを用いた新規ウォレットの創造と、キーを導き出す際にアカウント/アドレスのインデックスを指定することができます。\n・カルダノノードに対する将来のアップデートの互換性と特徴の開発(例えばコンウェイによるガバナンス)",
+      "criteria": "・SPOツールと触媒ツール間のTighter統合\n・SPOツールとConwayのガバナンスの決定との間のTighterの統合",
+      "report": "・CNツール:\n・CIP-36仕様によるCatalyst投票登録\n・Mnemonicsを用いた新規ウォレットの創造と、キーを導き出す際にアカウント/アドレスのインデックスを指定することができます。\n\nバージョン13.1.0に追加。 Catalystのウォレットを登録し、以前のCatalystの登録からQRコードを表示し、Catalystのサイドチェーンから登録がピックアップされていることを確認します。\n・ガバナンス:\n・カルダノノード(Conway経由のガバナンス)およびCNToolsのアップデートによる将来のアップデートの互換性と特徴の開発。\n\nNode デプロイメントスクリプトと、Conway および Chang Hardfork が提供する最新の機能をサポートするために、さまざまなツール/スクリプトが更新されました。 CNTools 13.1.0は、機能拡張後、ガバナンス機能と継続的な更新のための初期サポートを追加しました。\nCNToolsに追加された機能は次のとおりです。\n・情報とステータス - ウォレットのガバナンス情報とステータスを表示\n・Delegate - ウォレットの投票権をDRep(own、External、または事前定義済みの「abstain」/ 'notrust'のいずれか)に委任する\n・リスト提案 - 投票および現在の投票状況に関する積極的な提案のリストを表示\n・キャスト投票 - SPO、DRep、または委員会メンバーとしてのガバナンス行動の投票\n・DRep Reg / Upd - すでにDRep登録ウォレットに更新されたアンカーデータを投票または提出するためのDRepとしてウォレットを登録する\n・DRep Retire - DRep としてウォレットを退職\n・MultiSig DRep - 多国籍(MultiSig) DRep の計算を作成します。\n・受動鍵 - 委任代表者(DRep)と委員キー(必要に応じて)\n\n変更ログ: https://cardano-community.github.io/guild-operators/Scripts/cntools-changelog/\nコミット: https://github.com/cardano-community/guild-operators/commits/alpha/scripts/cnode-helper-scripts\nお知らせ: https://t.me/CardanoKoios/9764\nスクリーンショット:\nCNTools投票セクション:https://github.com/cardano-community/guild-operators/blob/images/catalyst/vote.png\nCNTools触媒機能:https://github.com/cardano-community/guild-operators/blob/images/catalyst"
+    }
+  ]
+}

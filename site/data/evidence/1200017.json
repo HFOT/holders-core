@@ -1,0 +1,61 @@
+{
+  "title": "Add a Cardano Native Tokens basket on the leading platform for crypto-index trading",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "The primary output to demonstrate that the development, testing & project management have been executed for this milestone is to have implemented the Cardano Native Assets basket set up in the backend admin console.",
+      "criteria": "In the test environment, the Cardano Native Tokens basket will be set up in the admin console and allow the user to:\n・Show list of Cardano Native Asset Basket constituents and their NAVs (net asset values); note this is a single basket or index of Cardano Native Assets\n・Show the rebalacing logic that is set up for the basket\n・Show the assigned balances (composition with details of Cardano Native Assets)\n・Report the constituents, rebalacing, valuations through the backend UI\n\nFurther testing will also be completed:\n・Unit testing by developers for the backend code and configuration - although th",
+      "report": "The primary output for this milestone is the implementation of the Cardano Native Assets basket setup in the backend admin console. \nThis setup allows users to:\n・View the List of Cardano Native Asset Basket Constituents and Their NAVs: The admin console displays a comprehensive list of the Cardano Native Asset Basket constituents, along with their respective net asset values (NAVs).\n・Rebalancing Logic: The rebalancing logic for the basket is clearly outlined, ensuring transparency and ease of management.\n・Assigned Balances: Detailed composition and assigned balances of the Cardano Native Assets are available for review.\n・Reporting Capabilities: The backend UI facilitates reporting on constituents, rebalancing, and valuations, providing a robust tool for asset management.\n\nTesting and Validation\n・Unit Testing: Developers have conducted thorough unit testing of the backend code and configuration, ensuring reliability and performance.\n・User Acceptance Testing (UAT): UAT was performed using simulated parameters, validating the functionality and user experience of the backend console.\n\nEvidence of Milestone Completion\nTo substantiate the completion of this milestone, we have included:\n・Screenshots: The attached screenshots illustrate the setup and functionality within the backend admin console - we've added some guidance in red to address the feedback that was shared\n・Video Walkthrough: A comprehensive video walkthrough is available at the following link: Video Walkthrough. This video demonstrates the fulfilment of all acceptance criteria, showcasing the development, testing, and project management efforts. \n\nThis submission confirms that all aspects of the milestone have been successfully executed and validated, meeting the specified outputs and acceptance criteria.",
+      "kinds": [
+        "other"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 20000,
+      "promise": "Create compliance documentation for regulatory approval and setup. The purpose of this document will be to document necessary regulatory approvals, establish compliance, and document any required updates to internal processes so Trakx can host a Cardano Native Tokens basket\nLetter from Trakx's legal counsel that the Cardano Native Tokens basket is regulatory compliant in the jurisdictions it will be offered in",
+      "criteria": "The compliance documentation for regulatory compliance and set up will give an analysis of if the Cardano Native Tokens basket can be implemented on Trakx in a compliant way by assessing criteria such as: ensure none of the selected Cardano tokens the index are privacy tokens or mixers, ensure the selected tokens' trade volume is not mostly wash trading by market makers, acknowledgement from Trakx legal counsel that the index is regulatory compliant, completing KYT ('Know Your Token') on each Cardano Native Token selected for the basket and include a summary process diagram for any new interna",
+      "report": "Thank you for your thorough review and feedback regarding the Cardano basket index. We appreciate your attention to detail and the concerns raised.\nWe have revised our documentation to provide greater clarity on our token selection process. The initial asset list was compiled in September 2024 for development and testing purposes, with the understanding that the final constituent list would be determined closer to the actual launch date, most likely during milestone 3 execution.\nWe acknowledge that as first-time participants in the Catalyst process, we were unaware that Milestone 2 review could only commence after Milestone 1's full sign-off. Now that Milestone 1 has received approval, we are eager to proceed correctly with Milestone 2, ensuring all documentation meets the required standards.\nOur team remains committed to launching this Cardano basket for our 10,000-strong user base, particularly given current market conditions. We believe this product will add significant value to the Cardano ecosystem.\nPlease let us know if you require any additional information or clarification.\n----------------------------------------------------------------\nWe have completed the “Regulatory Compliance and Approval Setup” milestone by achieving all outputs, acceptance criteria, and evidence of milestone completion as outlined:\n 1. Compliance Documentation:\nWe have prepared a comprehensive regulatory compliance document, detailing the necessary approvals, KYT (“Know Your Token”) procedures, and updates to internal processes for implementing a Cardano Native Tokens basket on the Trakx platform. This document demonstrates adherence to criteria, including the exclusion of privacy tokens, validation of legitimate trading volumes, and the establishment of robust compliance mechanisms.\n 2. Legal Confirmation Letter:\nA signed letter from Trakx’s legal counsel confirms due diligence has been completed for all selected Cardano tokens, ensuring compliance with the regulatory frameworks of",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "Live Trakx platform shows the Cardano Native Assets Basket\nA marketing campaign is planned and executed to announce the Cardano Native Tokens basket on Trakx to enable investors to allocate capital to the product",
+      "criteria": "Any critical dev items in the Trakx development Jira are marked complete (it is difficult to define this further until the first milestone is complete, but it will include updates to the front end and various trading bots and APIs within the Trakx architecture)\nThe critical configuration and implementation steps required to enable the Cardano Native Tokens Basket. This includes: setting up the vault (most likely with Fireblocks our custodian), switching on the smart contracts and trading bots to manage the basket, setting up the basket's rebalacing schedule with access given to the index manag",
+      "report": "For Milestone 3, we are pleased to submit the following evidence to demonstrate the completion of the required outputs and acceptance criteria:\n・Live Trakx Platform Shows the Cardano Native Assets BasketA screenshot of Trakx's critical Jira items for the Cardano Native Tokens basket marked as complete can be found here. Note this also includes the implementation task list items. \n・A video demo showing the Cardano Native Tokens basket available in the live Trakx UI can be accessed here.\n・You can also validate this yourself by going to https://app.trakx.io/thematic/cardano-ecosystem\n・Marketing Campaign to Announce the Cardano Native Tokens BasketFinal draft versions of the marketing campaign collateral is available here.\n・The announcement for the launch of the Cardano Native Asset Basket has also been published on X here and here. \n\nWe believe this evidence demonstrates the successful completion of Milestone 3 as per the outlined acceptance criteria.",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 20000,
+      "promise": "・A 2/3 page written summary ‘Project Close-out Report’ listing KPIs and how they were (or were not) addressed and what the next stage plans are with the product or service that was developed. Will be structured in the format specified here: https://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv\n・Marketing campaign execution\n・Video demo showing Cardano Native Tokens basket is available in the live Trakx UI - this is evidence that the Cardano Native Tokens basket is available",
+      "criteria": "・Narrated Demo Video should include:\n・List of all Trakx basket products available with Cardano Native Tokens available\n・The ability to buy / sell the Cardano Native Tokens basket\n・summary ‘Project Close-out Report’ listing KPIs and how they were (or were not) addressed and what the next stage plans are with the product or service that was developed. \n・Closeout Video should fit the guidelineshttps://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv\n・Drafts that were evidenced in milestone 3 have now been issued. Live links",
+      "report": "Thank you for finding the bad link, apologise for that. I've fixed that now. \nDear Project Catalyst Team,\nI am submitting the consolidated final report package for the Cardano Native Tokens project milestone. \nPlease find the links to:\n・Project Close-out Report\n・Project close-out Video.\n\nThis report includes the following:\n・KPI analysis and achievements\n・Next stage development plans\n・Marketing campaign results\n・Narrated product demo showing Trakx UI functionality\n・Final closeout video\n・Links to social media posts\n・Marketing campaign results\n・The Cardano Native Tokens basket is now live on Trakx UI - registration is required to trade, but a view-only is possible through the link provided\n\nAll materials have been prepared following the guidelines at: https://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv\nPlease let me know if you need any additional information or clarification.\nBest regards,\nRiz",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    }
+  ]
+}

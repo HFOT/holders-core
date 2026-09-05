@@ -1,0 +1,45 @@
+{
+  "title": "Xerberus Nodes: A Decentralized Risk Rating Agency on Cardano for the World",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "This is the early stage of the protocol development. We dedicate this milestone to planning the first version of the protocol before moving on to creating the code. Since this is a complex product, we will need two whole months to work on the planning and expanding the team itself. The output will be a presentation showing how we plan to build and execute the protocol.",
+      "criteria": "Does the submitted presentation include the following points:\n • A slide with a team that will be working on the product, including the CV's of all team members and at contact infos. \n • A requirement analysis and high-level architecture based on the substrate framework. \n • A technical roadmap for the development \n • A list of resources we intend to use for the development",
+      "report": "Dear Team, \nSome reviewers found the CVs challenging to locate, so we have moved them into the presentation itself. Find the presentation below: https://docsend.com/view/48yjrdeaid3u4drd\nYou can find a link beside the CV image that leads you to the CV as a document, \nJust as a note, we are incredibly grateful to onboard Gab and Evans into the core Xerberus team. They founded a startup a few years ago in London and raised 3 million pounds back in the day. Having two guys with extensive technical backgrounds as part of our team is supercharging Xerberus' ability, and we are very confident we can present a simple node in September. Gab is full-time, while Evans is part-time. However, we intend to onboard Evans full-time as well in the long run\n\nKindest and much appreciation,\nSimon Peters",
+      "kinds": [
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 225000,
+      "promise": "After creating the overall high-level structure of the Xerberus Protocol in the last milestone, this milestone will be dedicated to the in-depth planning of the Xerberus Node itself using the substrate network.",
+      "criteria": "Is the paper written in a technical matter matter and contains information about: \n • The hardware requirements for a Xerberus Node\n • Architecture Design of the Xerberus Node \n • More information about the usage of the substrate framework within the node \n • A technical explanation of the infusion of the risk model within the node (Will the entire model be in one node, or just partial elements that are combined within a consensus? We currently do not know that).",
+      "report": "Dear Reviewer,\nWe are proud to present you with the paper on the Xerberus Node. The paper also provides all the functions behind the Xerberus Model.\nThe Paper: https://docsend.com/view/qzevbnhr5guutdjx\nFrom Section 6, the paper focuses on the node and the network of nodes.\nWe look forward to having our milestone approved.\n\nMuch appreciation,\nThe Xerberus Team",
+      "kinds": [
+        "other"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 225000,
+      "promise": "In this phase, we move to develop the Xerberus Node. This milestone aims to have a basic Node running to create our testnet between the Xerberus nodes. This will include the first smart contract deployed on the Cardano testnet for DApps to use the Risk Ratings in their application. However, I would like to highlight that this smart contract is for initial testing only, as the implementation of the risk rating Algorithm follows in the next milestone.",
+      "criteria": "Does the provided link lead to GitHub I can use to set up my own Xerberus test node?",
+      "report": "Dear Reviewer,\n\nWe are happy to submit our next milestone.\nHere is a small video summarising the submission: https://www.loom.com/share/90a202029e5d45459d181b6555906584?sid=09c9f50a-9ddf-4169-b26c-51cb1d6da9f7\n\n • GitHub: https://github.com/XerberusTeam/network-protocol\n • Blockchain Explorer: https://explorer.xerberus.io/#/0x01e5d426a4d964d2708a2114569d38fb05c6ff0694b2bb005b7328fa13e36d5c\n • Live on-chain risk ratings for SNEK: https://explorer.orcfax.io/feeds/CER/SNEK-ADA/facts/c161cfbc-cb8b-49a7-8057-205471d6c19e\n\nIf you have questions about using the node, please refer to the tutorial below or join our Discord: https://discord.com/invite/cnaWcfewwQ\nIn order to run a node just run this docker compose in your server, and wait to be synced. if Synced successfully, you shall be seeing new blocks being minted every 6sec.\n\n<code>\nversion: \"3.9\"\n\nservices:\n testnet-node:\n container_name: \"testnet-node\"\n image: ghcr.io/xerberusteam/xerberus-node:full-node-latest\n pull_policy: always\n restart: unless-stopped\n command: |\n --base-path /data/nodes/testnet-node\n --chain /data/chain-spec.json\n --rpc-external\n --rpc-methods Unsafe\n --rpc-cors all\n --telemetry-url \"wss://telemetry.polkadot.io/submit/ 0\"\n --prometheus-external\n --no-private-ip\n --bootnodes /dns/node.xerberus.io/tcp/30334/ws/p2p/12D3KooWCYKbsQw2r5575MA8YqMhn8AqhVuZkfobPMyoKzEP595t/p2p/12D3KooWCYKbsQw2r5575MA8YqMhn8AqhVuZkfobPMyoKzEP595t\n ports:\n - \"9944:9944\"\n - \"9933:9933\"\n - \"9615:9615\"\n - \"9930:9930\"\n - \"9333:9333\"\n - \"30333:30333\"\n - \"30334:30334\"\n logging:\n driver: local\n options:\n max-size: \"10m\"\n max-file: \"5\"\n<end>\n\nhere's a tutorial on how to install docker compose\n\n・windows https://docs.docker.com/desktop/install/windows-install/\n・Mac https://docs.docker.com/desktop/install/mac-install/\n・Linux https://docs.docker.com/engine/install/ubuntu/\n\nwhen finish, try to run the following\n\n<code>\ndocker --version\ndocker compose version\n<end>\n\nIf both commands succeed, you have successfully installed Docker on your",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 15,
+      "cut": true
+    }
+  ]
+}

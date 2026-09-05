@@ -1,0 +1,57 @@
+{
+  "title": "Trustless and Self-Custodial Crypto Inheritance Dapp - GenWealth",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 29844,
+      "promise": "We have the smart contracts developed and with this milestone we will deliver the front-end for the Dapp. \nWhat comes out of this is a user interface, that users can use to interact with the smart contracts.\nFor this milestone we will deliver a front-end that allows for the interactions with the smart contracts .",
+      "criteria": "There should be an interface that allows users to leverage our inheritance Dapp.\nThis front-end will have the following actions:\nCreate Vault -> A vault is a smart contract wallet to store the inheritance assets. Here, the users can set-up the initial configurations of the vault, such as the vault name, initial deadline, and vault icon.\nCreate Pocket -> A pocket is a storage unit within a vault where the vault owner deposit their tokens. After the vault deadline passes, a beneficiary can redeem the contents of the pocket if they possess the corresponding pocket key. A pocket is represented by",
+      "report": "PoA M1: https://genwealth-56d653c6151d.herokuapp.com\nThanks for reviewing, in order to explain the features, let me explain something about the dApp design.\nThere are 2 types of keys, Vault Keys and Pocket Keys.\nWhen you create a vault, you will get a Vault Key. This Vault Key allows you to access all the vault features, meaning that if you send this key token to another wallet then you're transferring your vault ownership to that other wallet.\nWhen you create a pocket, you need to mint a Pocket Key and send it to your beneficiary. The idea is that you can do this at a later time so your beneficiaries can't see how much they'll get from the get-go. As a vault owner, you can also act as a beneficiary just for testing, so you can just mint a Pocket Key and send it to your own address. This Pocket Key allows the holder to redeem the contents of the corresponding when the vault deadline passes.\nWhen the deadline for a vault passes, the vault is now in the unlocked state. Everyone holding the Pocket Keys will be able to redeem the assets from their corresponding pocket. But the Vault Key holder may still be able to postpone the deadline even though the vault has been unlocked to \"re-lock\" the vault. If during the unlocked period there are pocket redemptions, they cannot be reversed.\nNow, to clear the questions about:\n・Burn Pocket Key\n・Vault Staking\n・Pocket Deletion\n\nBurn Pocket Key\nIn order to be able to burn a pocket key, you must hold a pocket key itself. There's no way to burn a key token residing in someone else's wallet without their signature. This feature is provided in the dApp just for the sake of completeness. Because in a typical scenario, the pocket keys are held by the beneficiaries, not the vault owner itself.\nTo burn a pocket key, select your desired pocket. Click the Mint Pocket Key button on the right sidebar, then go to the Burn tab. If you don't possess the corresponding pocket key, you will see: \"Found no [POCKET_NAME] key in your wallet. Incorrect? R",
+      "kinds": [
+        "live"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 29844,
+      "promise": "Twitter -> Twitter posts and other marketing campaings and giveaways to grow our following\nTelegram -> Start a Telegram Channel for GenWealth and start onboarding users. Make sure to start communications through this channel about GenWealth, as well as engagement with community members. \nDiscord -> Start a open Discord for GenWealth community. Start onboarding users. Create specific channels for the organization of communication with the community. Share updates and engage with the community in the discord.\nBrand Guidelines Document -> Creating of a Branding Document to Guide communication and Marketing for GenWealth according to our values.\nMarketing Campaign and contests.",
+      "criteria": "Share Twitter page -> Achieve at least 300 followers for GenWealth \nShare telegram Link -> Have at least 30 community members, have conversations with community members to show within Telegram\nShare Discord Link -> Have at least 30 community members, have specific purpose channels within telegram. Have announcements and direct conversations to show within the community\nCampaigns and Contests -> Have at least one campaign and one contest, to grow awareness about GenWealth, and bring more user to our socials. Example: Campaigns to increase followers, contests and giveaways with special condition",
+      "report": "In this pdf file report you can find the complete report on the milestone 2, with all the links fo the social media, screenshots of achievements and with Deep Dives into the campaings and contests we held: https://drive.google.com/file/d/1AMWFcN1ObNO0EDfhQor0CLgzZituThBY/view?usp=sharing\nThere you will also find the Brand Guidelines Document. \nHowever, to be as strict and follow as much as possible what was agreed on our statement of milestones we're also adding links to the social media, and to the Brand Guidelines Document here:\nTwitter/X -> https://x.com/genwealth_app\nTelegram -> https://t.me/genwealth_dapp\nDiscord -> https://discord.com/invite/EXZKzAwn3a\nBrand Guidelines Document-> https://drive.google.com/file/d/1OwAbCs-K75PBhGlv1IrKRyTubUnpy74d/view?usp=sharing",
+      "kinds": [
+        "doc",
+        "social"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "14",
+      "cost": 24869,
+      "promise": "Public Testnet of the GenWealth Dapp of GenWealth. \nUsing this Dapp you should be able to: \nCreate Vault -> Here, the users can set-up the initial configurations of the vault, such as the vault name, initial deadline, and vault icon.\nCreate Pocket -> A pocket is a storage unit within a vault where the vault owner deposit their tokens. After the vault deadline passes, a beneficiary can redeem the contents of the pocket if they possess the corresponding pocket key.\nUpdate Vault -> To postpone the deadline as well as renaming the vault.\nUpdate Pocket -> This will allow the users to rename the pockets.\nMint and Burn Vault Keys -> As the name suggests, this is to mint and burn vault keys. The usage of vault keys is as described in Milestone 1.\nMint and Burn Pocket Keys -> As the name suggests, this is to mint and burn pocket keys. The usage of pocket keys is as described in Milestone 1.\nDeposit and Withdraw -> These actions enables the vault owner to deposit and withdraw assets to the pockets.\nVault Staking -> This includes 4 actions: stake registration, pool delegation/redelegation, rewards withdrawal, and stake deregistration.\nPocket Deletion -> This is to delete a pocket.",
+      "criteria": "・Share 10 video recordings of users Testing the Dapp\n・Share Document with Testing Objectives and Guidelines\n・Share Document with Feedback, Bug Reports and Insights from Users. \n・Share Document with Functional Requirements for V2",
+      "report": "Hello Reviewers, \nThanks for your work in accepting the change request. \nHere is our submission. \nWe've carried out 10 Demo sessions and gathered valuable feedback from crypto users and Inheritance professionals. \nYou can find the recordings of the Demo Sessions in this document: https://drive.google.com/file/d/1isGaQMLCjSDn9R6k-SraBiq4nNJc34g3/view?usp=sharing \nIn the same document, you're also able to find the document with Feedback, Bug Reports, and Insights from Users, gathered from these 10 Demo Sessions: \nHere is the document we created with the testing objectives and guidelines: https://drive.google.com/file/d/1P0AjDXjQPjsfTfyvwgYTSdA0UpYzJrMR/view?usp=sharing\nHere is the final document with the functional requirements for V2, gathered from the testing sessions: https://drive.google.com/file/d/154GLaVkHdUz_jWWsu7u0rURoazVqs8Hb/view?usp=sharing \nThank you in advance for your work, and for helping us close out this proposal.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "15",
+      "cost": 14921,
+      "promise": "・Final close-out report\n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Hello Reviewers,\nI'm happy to present our last milestone to be able to complete our proposal. Really looking forward to adding one more proposal to the huge number of completed projects in Catalyst. \nHere is our final close-out report: https://drive.google.com/file/d/1TV55QYzZMbNRY9FL-S051O27Af0Ze1rd/view?usp=sharing \nHere is our final close-out video: https://www.youtube.com/watch?v=3tOHGRWycsk\nThanks for the Heads up regarding the video. We have published it on Youtube",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

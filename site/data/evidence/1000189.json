@@ -1,0 +1,85 @@
+{
+  "title": "USDM: Fiat-Backed STABLECOIN - by Mehen: Cardano's Premiere Fiat-backed Stablecoin",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "We have been working on the Mehen user app since before the Catalyst Fund 10 vote. Some things have changed since we submitted the Catalyst proposal. The Milestone outputs for Acceptance will not match up with the proposal's Milestone outputs for a number of reasons. \nA big change being that we need 6 Milestones for our project while our Catalyst proposal only had 4 Milestones. So, each of the Milestones submitted here will be different from our proposal for that obvious reason. Other changes between our Milestones here and the proposal Milestones are due to a shit in focus to deliver an MVP earlier than the Catalyst proposal called for, and a clarification as to which portions will be open-sourced.\nMilestone 1 encompasses the design aspect of the Mehen user app. The following outputs will be produced:\n・Concept of Operations (CONOPS)\n・System Architecture Trade-Offs and Design\n・Database Schema\n・System Requirements Documentation\n・Customer Service Documentation\n\n(Portions of the operating documents, database schema, and other sensitive portions that can provide system vulnerabilities will not be submitted.)",
+      "criteria": "Acceptance for Milestone 1 will be the delivery of the following products.\n・Version 1 CONOPS\n・Version 1 System Architecture Trade-offs and Design\n・Version 1 Database schema\n・Version 1 System Requirements Document\n・Version 1 Customer Service Document",
+      "report": "Milestone 1's requirements include \"Version 1\" of all the stated documents. We stated it this way because the regulatory landscape is NOT settled. Changes to laws and regulations could have significant impacts on our design considerations. Changes with our partners could also have significant impacts on us. What is being submitted today is update to date as of 2024-01-14.\nWe have also reserved the right to redact sensitive information from these documents that could put the Mehen App and our users at risk for fraud and/or abuse.\nOne reviewer felt that ChatGPT was used to create these documents. ChatGPT was not used. These documents are fairly standard documents and each has certain language that should be included in them. Some of the documents are meant to be written from a certain perspective (for example, a CONOPS is frequently written from the user's perspective). Some references and definitions are pulled directly from their sources. That may be what the reviewer is referring to, however, in those instances, links were provided either in the references and definition sections, or directly with the information quoted. An example would be defining what Amazon S3 is. Either way, links are provided in those cases and any reviewer can click on those links to see the sources.\n\nCONOPS v1: https://mehen-catalyst-milestones.gitbook.io/concept-of-operations/ \n・The CONOPS Document is not a legal document.\n・CONOPS stands for \"Concept of Operations\".\n・The goal of the document is to outline the user's experience while using the Mehen App.\n・A CONOPS document does not get into system implementation\n・System implementation should be transparent to the user.\n・For further information about a CONOPS document, please see: https://www.justice.gov/archive/jmd/irm/lifecycle/appendixc9.htm\n・Some concerns about the Privacy Policy and Terms of Service were raised during the previous review.\n・Links to the Plaid Privacy Policy and Plaid's Terms of Service will be included in the final versi",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 200000,
+      "promise": "Milestone 2 will mark the initial development of the Mehen User app. This initial development will be focused on the Cardano PreProd network and use the Plaid Sandbox.\n・Initial Angular web app that will allow a user to:\n・Create an account\n・Go through a shortened KYC process (Plaid sandbox)\n・Attach a web3 wallet (PreProd)\n・Can edit the wallet name and mark if it is the default wallet or not.\n・Attach a bank (Plaid Sandbox)\n・Can edit the bank name and mark if it is the default bank or not.\n・Make a USD deposit (Plaid Sandbox)\n・View their notifications\n・Mark them read/unread\n・Set different notification options\n・No function at this point\n・Read/navigate through an initial FAQ\n・Send us a message through the Contact Us page\n・Run a Transaction report\n・View their portfolio\n・Initial Server App\n・Support the Web functions listed above\n・Assign a Mehen Wallet Address for a KYC'd user\n・Assign a Bank ledger for a KYC'd user\n・Forward Callback messages to the appropriate user\n・Plaid Callback Server\n・Receive asynchronous Plaid calls and update our database based on the data received\n・Send the updates through the messaging queue to the Server apps\n・On-chain Smart Contracts\n・Will submit a mint or burn or",
+      "criteria": "All of the outputs listed in the Output section are verified through a demonstration video of the Preprod website. Website will be publicly available for Catalyst reviewers.",
+      "report": "Apologies for omitting a link to the preprod website \nWalkthrough can be completed on:\nhttps://preprod.mehen.io\nMint transaction proof is: https://preprod.cardanoscan.io/transaction/a79ff61f5e38bb8e0840ed927a124b69885cb0b505272d25a39455cb451ab70a?tab=tokenmint\nRemaining items proof of achievement is available at:\nhttps://drive.google.com/file/d/14yEhYZfS1Mwm57UyZt9to8F2PrIb01el/view?usp=sharing\nMint server logs available at:\nhttps://drive.google.com/file/d/1jvQ-YnU7JcMZp8EECMNn6MmTsfVUZPvA/view?usp=sharing",
+      "kinds": [
+        "chain",
+        "doc",
+        "other"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 200000,
+      "promise": "Milestone 3 will focus on the integration between the traditional Banking industry and the Cardano network.\nWeb App\n・Bank withdraws\n・Add ADA deposit as part of connecting a Web3 wallet\n・ADA is required for transferring USDM\n・The additional signature/transaction handling helps verify that the user has the appropriate access to the connected wallet\n・Hardware wallets cannot sign data yet, and therefore we will not be using that as a way to verify the user actually owns the wallet.\n・Full Lambda function(s) to Mint and Burn USDM orders\n・Will be an AWS Lambda function that runs once a day.\n・Sum the Mint and Burn orders to decide if a Mint or Burn order is required.\n・Submit the Mint or Burn order to the Cardano network\n・Distribute the USDM/USD to each of the users who have a valid account and order.\n・USDM Deposit and Withdraws\n・Deposit through connected Web3 wallet\n・Withdraws can go to any connected Web3 wallet for the user.\n\nServer app\n・Support the Web app functions listed above\n\nSmart Contracts\n・Fully integrate the Mint/Burn Smart Contract into a Lambda function",
+      "criteria": "Each of the above outputs should be able to be demo'd directly on the Cardano PreProd network via the deployed application.",
+      "report": "We are pleased to resubmit our Proof of Achievement for Milestone 3, addressing the feedback received.\nAs per our agreed SoM, the reviewers should be able to actively use the app to verify the outputs. The app is fully accessible for testing at the following link:\n🔗 Preprod Environment\nAdditionally, we have included a video demonstration showcasing the key deliverables achieved:\n📽 Proof of Achievement Video\nFor detailed step-by-step instructions, please refer to our comprehensive Reviewer Guide.\nAll required outputs and acceptance criteria can be directly verified on the live app. The video serves as a supplemental demonstration.\nShould you have any access issues or require further clarification, please let us know.\nLooking forward to your feedback!",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 100000,
+      "promise": "Corporate formation of necessary legal entities to operate in target jurisdictions. \nRegistration with Federal (FinCen) and relevant US state or non-US jurisdictions.\nPolicies and Procedures",
+      "criteria": "Corporate entities must be formed and in good standing with appropriate authorities.Engagement with regulatory bodies must result in permission to operate within at least 10 U.S. states or non-US jurisdictions, either via direct licensing or licensing exemption.Policies and Procedures must be completed.",
+      "report": "We are pleased to submit our Proof of Achievement for Milestone 4 – Compliance and Legal – addressing all acceptance criteria as outlined.\n\nIn this milestone, we have successfully:\n・Formed and maintained the necessary corporate entities in target jurisdictions.\n・Completed registration with Federal (FinCen) and relevant U.S. state or non-U.S. authorities.\n・Finalized our Policies and Procedures.\n\nFor your review, we have provided a folder containing the following redacted documentation as evidence of milestone completion:\n・Missouri No-Action Letter (Redacted)\n・Delaware No-Action Letter (Redacted)\n・MSB Registration\n・Moneta AML Policies and Procedures (Redacted)\n・Terms of Service\n・Privacy Policy\n・ND No-Action Letter (Redacted)\n・Update on Launch States for USDM – Legal (Redacted)\n・Moneta Digital Entity Formation Document (Redacted)\n\n📎 Access all files via this link\n\nShould you have any questions or require further clarification, please let us know.\nLooking forward to your feedback!",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 100000,
+      "promise": "This milestone encompasses essential third-party collaborations, specifically smart-contract audit, independent oracle contracts, chain analysis relationship, and state regulatory agency engagements.\nMilestone Outputs:\nSmart Contract Audit\nReserves Oracle Agreement\nXerberus Agreement\nLicensing or license-exemption from states",
+      "criteria": "Acceptance Criteria\n\n・USDM smart contract audit complete\n・Charli3 oracle contract signed\n・Xerberus chain analysis contract signed\n・Licensing or license-exemption obtained from 10 or more states.",
+      "report": "We are pleased to submit our Proof of Achievement for Milestone 5 – Third-Party Partnerships and Attestations, confirming that all milestone outputs and acceptance criteria have been successfully met.\nMilestone Outputs:\n・Smart Contract Audit completed by Sundae Labs\n・Reserves Oracle Agreement signed with Charli3\n・Chain Analysis Agreement signed with Xerberus\n・Licensing/Exemptions obtained from multiple U.S. states\n\nIncluded Documents:\n・USDM Smart Contract Audit – Sundae Labs\n・Charli3 Master Service Agreement and Initial Statement of Work (encrypted)\n・Xerberus Agreement\n・Missouri No-Action Letter (Redacted)\n・Delaware No-Action Letter (Redacted)\n・North Dakota No-Action Letter (Redacted)\n・Update on Launch States for USDM – Legal Summary (Redacted)\n\nAccess all files here\n\nPlease let us know if you have any questions or need additional info. Looking forward to your feedback.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 125000,
+      "promise": "Final Deliverable will be the full Mainnet launch for the Mehen App. While the Mehen App is deployed on PreProd, we will be collecting user feedback. That feedback will generate internal Gitlab tickets for us to work off. Our focus will be more bug related as opposed to new functionality (although we will capture those too).\nThe ultimate output for this project will be the Mehen App being deployed to Mainnet and being connected to \"Production\" Plaid.\n・Full KYC process with document and KYC check.\n・KYC/AML monitoring.\n・Auto-lock accounts and Mehen team notifications based on Plaid on-going monitoring.\n・Bank and wallet transaction monitoring to update the App in near-real time.\n・Successful Smart Contract Audit with any changes required to meet the audit requests (without sacrificing our Security and System Requirements)\n・Final FAQ based on Feedback from PreProd users\n・Full Customer Service plan to include reviewing KYC/AML issues via the Plaid Dashboard (The Mehen Admin app called out in the Catalyst project is no longer needed with the functionality we get from Plaid).\n・Full Xerberus integration for Cardano Wallet monitoring\n\nProduction of our close-out report and video to IOG",
+      "criteria": "Acceptance is based on us delivering the ability for users to successfully run through the KYC process, deposit/withdraw USD and USDM, and add mint/burn orders. The system should process those mint/burn orders and credit/debit each account accordingly.\nThis will all be able to be verified through the Mehen User App online.\nCloseout video must be accepted by IOG.",
+      "report": "We are pleased to resubmit our Final Milestone – Mainnet USDM Launch Proof of Achievement, now including all required materials.\nIncluded:\n・Closeout Report (covers full project scope, outcomes, and key takeaways)\n・Closeout Video (Summary accompanying the report)\n・Full Walkthrough Video (demonstrates full app functionality incl. KYC, deposits, mint/burn)\n\nThe app remains fully live on Cardano Mainnet and available for review at: https://app.moneta.global\nLet us know if any further adjustments are needed. We appreciate your feedback and look forward to final approval.",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Cardano's NFC Solution to Counterfeit-Proof Commerce using Asymmetric Encryption",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 37500,
+      "promise": "Problem definition and scope\nSolution approach one pager",
+      "criteria": "Scope document (outlines the scope of the project, chip set, encryption, blockchain integration options)\nSolution approach (one page architecture target diagram outlining how the physical chips will use EdDSA encryption to sign messages on the Cardano blockchain)",
+      "report": "Hello \nPlease find the PDF documents for our submission for Milestone 1:\nScope Document: https://drive.google.com/file/d/15-NK66qJ0qZLBhcXs9iUua8uPj1JI76y/view?usp=sharing\nSolution Approach: https://drive.google.com/file/d/1xixukrQ3oflnC3okalKRkMSSqAxs3jX6/view?usp=sharing\nLet us know if you have any feedback on the approach. \n\nBest,\nRiz",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 45000,
+      "promise": "Purchase chips from one or more manufacturers which support EdDSA signing\nBasic test to show chip can be used to sign a message on Cardano",
+      "criteria": "Chips with EdDSA encryption support have been purchased from chip manufacturer(s)\nA key pair has been created within the chip and it was able to sign a static message",
+      "report": "Please find our submission for Milestone 2: Sourcing chips from manufacturers with required specifications.\nWe are excited to share that we have successfully sourced and tested NFC chips with EdDSA signing capabilities for our counterfeit-proof commerce solution.\nTechnical Implementation:\nWe have implemented a highly optimized EdDSA C implementation specifically tailored for the NXP LPC8N04 chip, which features:\n・32-bit ARM Cortex®-M0+ microcontroller\n・32 kB flash and 8 kB SRAM\n・NFC/RFID ISO 14443 type A interface\n\nThe extremely compact form factor of the LPC8N04 makes it ideal for integration into product authentication solutions. In our demonstration video, you can see the tiny chip at the beginning where it's being pointed at, and we use the OM40002 development board (https://www.nxp.com/part/OM40002) to flash our C code to the LPC8N04. The final production solution will consist only of the LPC8N04 chip and an NFC antenna (which is already integrated into the OM40002 for testing purposes).\nTechnical Achievements:\nOur implementation overcomes the significant power and memory constraints of the LPC8N04 through several innovative approaches:\n・Optimized EdDSA Implementation: We optimized an already compact EdDSA implementation and tailored it specifically to work within the constraints of the LPC8N04's limited resources (which will be open-sourced in Milestone 3).\n・Power Management Solution: Our TypeScript WebNFC implementation scans at specific intervals to maintain continuous power to the chip during cryptographic operations.\n・State Machine with EEPROM Checkpointing: We developed a state machine that stores checkpoints of the EdDSA algorithm in the chip's EEPROM, allowing the chip to resume operations in case of power drops—a critical feature for reliable NFC-based authentication.\n\nEvidence Documentation:\n1. Video Demonstration:\nhttps://drive.google.com/file/d/1ATdFe7wrknei7FJwpIPiLVjrHLK6CTBD/view?usp=sharing\nThis video demonstrates:\n・The physical LPC8N04 chip and",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "13",
+      "cost": 45000,
+      "promise": "Develop a proof of concept for chip programming by creating a working prototype that can sign any message using EdDSA when interacting with a phone.\nWrite code to integrate this process into a website, allowing the chip to sign a message, extract the public key from a successfully verified message, and resolve it to the entity that first registered it on-chain.",
+      "criteria": "The code for interacting with the chips will be open-sourced and should be easy to integrate into websites that can access mobile NFC features.",
+      "report": "A. Output: Developed a proof of concept for chip programming by creating a working prototype using an NFC chip embedded in a physical garment that can sign any message using EdDSA when interacting with a phone via WebNFC.\nAcceptance criteria: The code for interacting with the chips is open-sourced and easy to integrate into websites that can access mobile NFC features. The core library is published as an npm package for straightforward installation and integration.\nEvidence:\n・npm package: https://www.npmjs.com/package/@uverify/asymmetric-nfc\n・GitHub repository: https://github.com/UVerify-io/asymmetric-nfc\n\nB. Output: Wrote code to integrate the NFC chip interaction process into a website, allowing the chip to sign a message, extract the public key from a successfully verified message, and resolve it to the entity that first registered it on-chain via Cardano.\nAcceptance criteria: The Product Verification template provides a complete reference implementation demonstrating the full verification flow, from chip interaction to on-chain resolution, integrated into the UVerify web platform.\nEvidence:\n・UI template repository: https://github.com/UVerify-io/uverify-ui/tree/main/src/templates/ProductVerification\n・On-chain transaction with product metadata and NFC chip public key: https://cexplorer.io/tx/44546e0ae1c1d8ec605b22daacea3f05cca4463c4d1bcdf4df41982256e9ca70?tab=content\n\nC. Output: Produced a video screencast demonstrating the end-to-end process with the chips, including registering the public key on-chain, placing the chip in a demo product (garment of clothing), signing a random message, and verifying its signature and authenticity.\nAcceptance criteria: The video demonstrates the complete flow from chip interaction through to on-chain verification, confirming the prototype functions as described.\nEvidence:\n・Video demonstration: https://drive.google.com/file/d/18rxccdpXN53ji9IWOmQ3ZlCEcoXyVyx0/view?usp=drive_link\n・[NEW]Public key registration: https://drive.google.c",
+      "kinds": [
+        "chain",
+        "code",
+        "doc"
+      ],
+      "links": 17,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "14",
+      "cost": 22500,
+      "promise": "・A 2/3 page written summary ‘Project Close-out Report’ listing KPIs and how they were (or were not) addressed and what the next stage plans are with the product. \n・Final closeout video",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Will be structured in the format specified here: https://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv",
+      "report": "A. Output: Project close-out report listing KPIs and how they were (or were not) achieved.\nAcceptance criteria: Final close-out report is publicly available, structured in the format specified at https://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv\nEvidence: https://drive.google.com/file/d/1IyIACy0qdkBDjUvIYbxIiRkPzfMMElld/view?usp=sharing\nB. Output: Final close-out video summarising the project, its outcomes, and key achievements.\nAcceptance criteria: Final close-out video is publicly available.\nEvidence: https://youtu.be/vXdtUB3zI6M",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

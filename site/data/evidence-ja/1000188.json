@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "トランザクションビルダーのリファレンススクリプト機能\nhttps://github.com/StricaHQ/typhonjs のPR\n更新されたドキュメント\n参照スクリプトの包括的な使用例",
+      "criteria": "Https://github.com/StricaHQ/typhonjs で作成したリクエストのプルは、下記のコードをコミットします。\n・参考スクリプト機能\n・書類更新\n・利用事例追加\n・参考スクリプト機能のテストと検証",
+      "report": "・refスクリプトテストケース追加\n・テストケースは完全トランザクションであり、その例そのもの\n・テストケースでテストされた機能\n・documentation生成コードを追加しました。-npm run docs でビルドできます。\n\nhttps://github.com/StricaHQ/typhonjs/pull/34"
+    },
+    {
+      "no": 2,
+      "promise": "以下の機能を備えたhttps://github.com/StricaHQ/typhonjsのPR、\n・取引ビルダーにインラインダムサポートを追加\n・更新文書\n・インラインのPlutus datumsの使用法例\n・試験ケースと検証",
+      "criteria": "プルは https://github.com/StricaHQ/typhonjs で以下のように追加したコードコミットで作成しました。\n・参考スクリプト機能\n・テストケースと検証\n・書類更新\n・利用事例追加",
+      "report": "・インラインプルタスデータサポートを追加\n・インライン ref スクリプトのサポートを追加\n・Plutusデータとインライン refスクリプトのインラインにテストを追加\n・テストケースは完全トランザクションであり、その例そのもの\n・テストケースでテストされた機能、全てのテストケースが渡る「npm run test」\n・コマンド `npm run docs` で docs を生成\n\nhttps://github.com/StricaHQ/typhonjs/pull/34\nhttps://github.com/StricaHQ/typhonjs/pull/34/commits/83839375fe29e3bdb6284a2b73c40b7930170f5a\nhttps://github.com/StricaHQ/typhonjs/pull/34/commits/45cfa8d7c8471f0e14a162bd01605d68e763"
+    },
+    {
+      "no": 3,
+      "promise": "以下の機能を備えたhttps://github.com/StricaHQ/typhonjsのPR、\n・取引ビルダーに担保出力を追加\n・更新文書\n・事例\n\n注意: テストケースは最終マイルストーンの一部です",
+      "criteria": "プルリクエストは、下記のコードコミットで https://github.com/StricaHQ/typhonjs で作成されます。\n・参考スクリプト機能\n・更新文書\n・例",
+      "report": "・Collateral 出力サポートを追加\n・総担保額のサポートを追加\n・担保出力および全担保用テスト\n・完全な取引で新しいテストケースを追加し、その例も\n・テストケースでテストされた機能、全てのテストケースが渡る「npm run test」\n・コマンド `npm run docs` で docs を生成\n\nhttps://github.com/StricaHQ/typhonjs/pull/34\nhttps://github.com/StricaHQ/typhonjs/pull/34/commits/261f586dd4ffc74e3249b6c9e0d39cc063460325"
+    },
+    {
+      "no": 4,
+      "promise": "・機能、参照スクリプト、インラインダタム、および担保出力用のユニットテストを追加\n・npmにTyphonJsライブラリがリリースされ、3つの機能をすべて組み込む\n\n以下にコメントする人\n1 - 「TyphonJs GitHubリポジトリにPlutus V2機能をサポートするコミット」\n→ → 以前のマイルストーンを親切にチェックして、これらの正確なものを追加します。\n2 - 「更新された文書」\n→ → 以前のマイルストーンを親切にチェックして、この正確なものを追加します.",
+      "criteria": "プルリクエストは https://github.com/StricaHQ/typhonjs で作成され、ユニットテストを追加するコードコミット\n\n以下にコメントする人には注意が必要です。\n・Plutus V2のサポートテストと検証\n・ドキュメントの最終化とコード例提供\n・Plutus V2対応のTyphonJsアップグレード\n\n→ → 以前のマイルストーンを親切にチェックして、これらの正確なものを追加します.",
+      "report": "納入実績\n・UTXO更新 サイズ計算\n・UTXOサイズチェック\n・自動UTXO分割による変更出力\n・MINUTXOテストケース\n・Refスクリプトと必須のBabbage TXフィールド\n・インラインプルタスデータ\n・インライン refScript\n・インラインplutusデータテスト\n・インラインスクリプトテスト\n・担保出力\n・総担保\n・total担保および担保出力テスト\n\nNPMでv2.0.0をリリース - https://www.npmjs.com/package/@stricahq/typhonjs\nV2.0.0 ドキュメント - https://docs.strica.io/lib/typhonjs/index.html\nマージPR - https://github.com/StricaHQ/typhonjs/pull/34\nふりがな アウトレポート\n・PDF - https://drive.google.com/file/d/19hV1BOMXUQGqYDiNGPFjdmhJXY15EpEh/view?usp=sharing\n・動画 - https://youtu.be/6fmFmQBgU7U"
+    }
+  ]
+}

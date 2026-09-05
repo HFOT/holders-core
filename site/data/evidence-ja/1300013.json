@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "(A) 機関ダッシュボードページのUIデザイン\n(B) 機関ダッシュボードのフロントエンドページ実装。\n(C) 機関ダッシュボードバックエンドサービスの開発\n(D) バックエンドサービスとダッシュボードのフロントエンドの統合。\n(E) AWS CDK 構築と Github 展開のためのアクションの開発 (DevOps).",
+      "criteria": "(A) デスクトップ画面 UI は以下のページが必要です。\n・参加登録\n・ログイン\n・概要ページ(メインページ)\n・投資家リスト\n・インベスター詳細(必須:氏名、メール、投資家タイプ、W3CVC発行者、ログ)\n・詳細\n・ルール設定(W3CVCおよびVCフィールドを提示する)\n・基礎的分析\n・監査レポートPDFデザイン\n\n(B) 機関ダッシュボードのフロントエンドページ実装\n・デスクトップ画面上に表示されている全てのページの表示\n\n(C) 機関ダッシュボードバックエンドサービスの開発\n・ユーザ認証用のAWS Cognitoの設定\n・資金データのMongoDBデータベースの構成",
+      "report": "弊社初のマイルストーンである、機関ダッシュボードの設計と開発を完了しました。 証拠は、受諾条件と整列し、以下に提供されます。\n(A) 設計したUIページへのリンク\nhttps://www.figma.com/design/zyx0zMR2lUHpvdB1Dn8sA5/David---Dashboard?node-id=539-443&t=cbSDNfbpaM1QZm5z-1\n\n(B)ダッシュボードページ\nhttps://drive.google.com/drive/folders/1S9avJGvLMv8e-BmsalKcjQLO1G uPOzG?usp=drive link\n\n(C)\n・AWS Cognito、MongoDBコレクション、Lambdasのスクリーンショット。\n・監査報告書作成\n・インベスター・オンボーディング\n\nhttps://drive.google.com/drive/folders/1uqoMiVG79O6oBxO6nzd4xAUTj9ZbzHje?usp=sharing\n\n(D) ファンドの登録と既存ファンドへのログイン\nhttps://drive.google.com/drive/folders/1X7xQ2YNeEuMNZ9RLZ63bNupntUlBNVm7?usp=sharing\n注意: D.6 すでにC.3でビデオのオンボーディングが取り込まれています。\n\n(E) スクリーンショット\n・CDK合成出力(クラウドフォーメーションテンプレート)\n・Githubワークフローの実行(概要)\n・Githubシングルワークフローの実行手順\n\nhttps://drive.google.com/drive/folders/1Lg-Cnyb7U iKUF5vnDz7rJcJ1rhMS6Sf?usp=sharing"
+    },
+    {
+      "no": 2,
+      "promise": "(A)SDKおよびダッシュボードのCardaoの統合。\n(B) テストネット上でスマートコントラクトの開発と展開:\n・アクセスレジストリ契約\n・アクセスレジストリ契約工場\n・Gating Contract Template(アクセスレジストリでゲートにトークン契約で使用できる)\n・トークン契約例\n\n(C) ダッシュボードにファンドマネージャー用の機能を追加し、ダッシュボードにトークン契約アドレスを追加します.",
+      "criteria": "(A) 統合\n・インベスターは、Cardanoウォレット経由で資金を積み込むことができるはずです。\n・Dashboardは、Cardanoブロックチェーンから投資家のアドレスを持っています。\n\n(B)スマートコントラクト\n・出力(2)のスマートコントラクトを開発し、オープンソース化\n・cordano testnet にスマートコントラクトを展開しています。\n・テストネット上に展開するgatingコントラクトテンプレートを使用した例トークン\n\n(C) トークン契約 Gating\n・Fund 管理者は、Cardano にデプロイされたトークン契約を追加できるようにする必要があります。\n・資金に積み込まれた投資家は、オンチェーントークンのみにアクセスできる必要があります.",
+      "report": "DAVIDでCardanoの統合を完了しました。 証拠, 受諾条件と整列, 以下に提供され, 我々はまた、技術に巻き上げ、当社の要件が満たされていることを確認するために、新しいCardano開発者のためのルックアップする必要があり, 故に提出.\n[A] 投資家向けオンボーディングデモビデオへのリンク\nhttps://drive.google.com/file/d/1Fiky9FLIZlJtZtjVtwsI43-3kg6YA1X4/view?usp=sharing\n[B] スマートコントラクトと契約アドレスへのリンク。\n・https://github.com/authentication-labs/cardano-contracts-service\n・Contract addressAddresses(Prepod network):\n\n管理者住所:addr test1vp57sedtqw47d8yw8lh8vmdx88rdxq0fvq0z8da2t6zzpjsj664j2\nトークンポリシー: 5e8b1515665389974a023ac16fa76d8847a6e9623d4a173dc0a8c1f9\n管理者トークン:866802a1c14de652ff793db530bc3b44ff799ec63142da18f2ba2161712140ed\nアクセス レジストリ:99faed6cbbb8e7d4efe83d2e713d1a1607f662a95dc678806206924a18b5a9a0\n転送:7507ad50bd3def7424d7709594b860d04fb31347ca4fc514e09053ab4530c920\n[C] トークン契約とトークンの購入を結びたデモビデオ。\n・ファンドにトークン契約を追加: https://drive.google.com/file/d/15XHEChrbFuWZ37PstO1YRl5Xc1KcSpye/view?usp=sharing\n・トークンの購入: https://drive.google.com/file/d/1S91V8s7GlU2YP2djHYXcKne8kABdvsh/view?usp=sharing"
+    }
+  ]
+}

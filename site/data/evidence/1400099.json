@@ -1,0 +1,47 @@
+{
+  "title": "Pre-IPO Perpetuals: Trade Private Companies on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 13000,
+      "promise": "Prepare initial technical documentation outlining architecture, planned functionality, and development approach.\nDraft full initiation document covering project scope, objectives, and high-level roadmap.",
+      "criteria": "Technical documentation and initiation document are complete and aligned with project vision.\nScope, features, and architectural approach are clearly described at a high level.\nContent is in a shareable format suitable for public feedback.",
+      "report": "A. Output: Initial Technical Architecture Documentation\nWhat was delivered as Output A\nA comprehensive technical architecture document outlining the system architecture, core components, technology stack, data flows, and overall development approach for the Pre-IPO Perpetuals Marketplace on Cardano.\nAcceptance criteria: Completion criteria for Output A\nThe technical documentation is complete, clearly describes the high-level architecture and planned functionality, aligns with the project vision, and is presented in a shareable, public-ready format.\nEvidence: Link to verify Output A and its Acceptance criteria\nFinal technical architecture documentation published as a versioned PDF in the public GitHub repository:\nhttps://github.com/dextrlabs-dev/Pre-IPO-Perpetuals-Cardano/blob/main/Technical_Documentation_Pre-IPO_Marketplace_-_Trade_Private_Company_Valuations_on_Cardano.pdf\nB. Output: Project Initiation Document\nWhat was delivered as Output B\nA full project initiation document detailing project scope, objectives, assumptions, constraints, and a high-level roadmap for the Pre-IPO Perpetuals Marketplace.\nAcceptance criteria: Completion criteria for Output B\nThe initiation document clearly defines scope, features, objectives, and timeline at a high level, is aligned with the overall project vision, and is suitable for public review and feedback.\nEvidence: Link to verify Output B and its Acceptance criteria\nFinal project initiation document published as a PDF in the public GitHub repository:\nhttps://github.com/dextrlabs-dev/Pre-IPO-Perpetuals-Cardano/blob/main/Initiation_Document_Pre-IPO_Marketplace_-_Trade_Private_Company_Valuations_on_Cardano.pdf\nC. Output: High-Level Functional Overview\nWhat was delivered as Output C\nA summarized overview of planned system functionality, user interactions, and core features, providing clear context for both technical and non-technical stakeholders.\nAcceptance criteria: Completion criteria for Output C\nFunctional scope and feature desc",
+      "kinds": [
+        "code"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 19500,
+      "promise": "Produce comprehensive technical documentation detailing the MVP architecture, including all core components, workflows, and dependencies.\nProvide clear integration and deployment guidelines to support consistent environment setup, testing, and release processes.\nDocument end-to-end workflows for all key functions (e.g., trading, oracle updates, and liquidity management), highlighting data flow, external integrations, and validation steps.\nDefine the testing approach, success criteria, and technical dependencies required for MVP readiness.",
+      "criteria": "MVP documentation is complete, detailed, and aligned with the project vision and architecture.\nCore workflows and integrations are described comprehensively, with technical diagrams, input/output examples, and step-by-step instructions.\nInternal reviews and approvals confirm readiness for MVP build and external validation.\nDocumentation includes evidence of implementation validation, such as logs, test results, or replication notes.\nAll deliverables are published in a shareable, public-ready format suitable for early feedback and transparency.",
+      "report": "A. Output: Comprehensive MVP Technical Documentation\nAcceptance Criteria:\n・Complete system architecture with module-level breakdown\n・Detailed documentation of core components (trading engine, oracle system, liquidity module, smart contracts)\n・End-to-end workflows for trading, oracle updates, and liquidity management\n・Clear data flow explanations with input/output examples\n・Publicly accessible in Markdown and exportable to PDF\n\nEvidence:\n・Technical Documentation (Markdown):\n・https://github.com/dextrlabs-dev/Pre-IPO-Perpetuals-Cardano/blob/main/docs/MVP-TECHNICAL-DOCUMENTATION.md\n・Repository (public access):\n・https://github.com/dextrlabs-dev/Pre-IPO-Perpetuals-Cardano\n\nB. Output: Integration Workflows & API Specifications\nAcceptance Criteria:\n・Defined interaction between on-chain and off-chain components\n・API specifications for trading, oracle feeds, and liquidity operations\n・Step-by-step integration instructions for developers\n・External dependencies clearly documented (wallets, indexers, oracle sources)\n\nEvidence:\n・Integration & workflow sections in documentation:\n・https://github.com/dextrlabs-dev/Pre-IPO-Perpetuals-Cardano/blob/main/docs/MVP-TECHNICAL-DOCUMENTATION.md#integration-workflows\n・API/interface definitions included in the repository docs\n\nC. Output: Deployment, Environment Setup & Testing Framework\nAcceptance Criteria:\n・Reproducible environment setup instructions\n・Deployment guidelines for local, testnet, and production environments\n・Defined testing strategy (unit, integration, end-to-end)\n・Success criteria for MVP readiness clearly specified\n\nEvidence:\n・Setup & deployment documentation:\n・https://github.com/dextrlabs-dev/Pre-IPO-Perpetuals-Cardano/tree/main\n・Testing and validation sections in documentation\n・Logs and execution outputs included within repo (where applicable)\n\nD. Output: End-to-End MVP Implementation & Validation\nAcceptance Criteria:\n・Fully functional workflows demonstrated (trading, oracle updates, liquidity provisioning)\n・Validation through",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 32500,
+      "promise": "Final close-out report\nFinal closeout video\nPrepare final technical documentation covering testing outcomes, launch procedures, and operational guidelines.\nDocument post-launch processes, including monitoring, maintenance, and governance approach.\nCompile a close-off report summarizing key deliverables, lessons learned, and next steps.",
+      "criteria": "Final closeout report is publicly available\nFinal closeout video is publicly available\nFinal technical documentation reflects the complete and tested state of the project.\nLaunch and operational guidelines are clear, accurate, and aligned with the agreed vision.\nClose-off report is suitable for public release.",
+      "report": "A. Output: Final Close-Out Report\nWhat was delivered: A publicly available, 3-page Catalyst close-out report for the Pre-IPO Perpetuals project summarizing project scope, KPIs, key achievements, impact, lessons learned, and next steps. Published as a versioned PDF (with Markdown source) in the public GitHub repository under the final-v1.0 release tag.\nAcceptance criteria: Close-off report is suitable for public release; covers key deliverables, lessons learned, and next steps; provided in PDF format with final version tag.\nEvidence:\n・Close-Out Report (PDF): https://github.com/dextrlabs-dev/Pre-IPO-Perpetuals-Cardano/blob/main/docs/CLOSE-OUT-REPORT.pdf\n・Close-Out Report (Markdown source): https://github.com/dextrlabs-dev/Pre-IPO-Perpetuals-Cardano/blob/main/docs/CLOSE-OUT-REPORT.md\n・Release tag final-v1.0: https://github.com/dextrlabs-dev/Pre-IPO-Perpetuals-Cardano/releases/tag/final-v1.0\n\n﻿B. Output: Final Close-Out Video\nWhat was delivered: A public close-out video walking through the deployed Pre-IPO Perpetuals marketplace on Cardano Preprod: the single-validator multi-market design (Anthropic, OpenAI, SpaceX), the end-to-end lock → oracle → mint → swap → redeem cycle, and the on-chain transaction evidence.\nAcceptance criteria: Final closeout video is publicly available.\nEvidence:\n・Project Close-Out Video: https://youtu.be/DrKNIKBUV9c\n・Working MVP Demo Video: https://drive.google.com/file/d/1NyL1pK6YcPhW8YSgn9i7rXk2NvUBiDQU/view?usp=sharing\n\nC. Output: Final Technical Documentation (testing outcomes, launch procedures, operational guidelines)\nWhat was delivered: Comprehensive Final Technical Documentation reflecting the tested and launched state of the platform. Includes a 15-row Preprod transaction evidence table with explorer links, layered test coverage (validator checks, off-chain builder, HTTP API, frontend, end-to-end Preprod batch), pre-launch checklist, launch sequence, environment variable matrix, and rollback / recovery procedures. Provided as PDF and Ma",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 30,
+      "cut": true
+    }
+  ]
+}

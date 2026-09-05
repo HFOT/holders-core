@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "レポートを含む\n・現在の標準ライブラリのベンチマーク(aiken, plutus-tx)\n・低水準のライブラリで識別される共通のセキュリティ脆弱性/足場\n・図書館のターゲット性能の定義\n\n設計文書の記述\n・インターフェイス\n・高水準の設計決定\n・名前空間",
+      "criteria": "・ターゲットベンチマークは、既存のライブラリのベンチマークよりも優れるべき\n・最新バージョンの競合他社のBenchmarksが実施\n・新しい脆弱性(もしあれば)が責任をもって開示されている\n・IOG Djed tech リードによるレポートおよび設計文書の見直し\n・ベンチマークの再現方法の指示",
+      "report": "設計文書:\ncatalyst-onchain-libs/DesignDocument.md 主・入出力Hk/catalyst-onchain-libs\n\nレポート:\ncatalyst-onchain-libs/Report.md 主・入出力Hk/catalyst-onchain-libs"
+    },
+    {
+      "no": 2,
+      "promise": "・Plutarchの高性能オンチェーンライブラリの実装\n・テストスイート(ユニットテスト、プロパティテスト)\n・ドキュメント:コードレベル、インストール手順、FAQ、README\n・既存のCardano dappに新しいライブラリがどのように統合されているかをドキュメント化したケースレポートを使用する",
+      "criteria": "・うまくコンパイル\n・パステストスイート\n・エンドツーエンドテストあり",
+      "report": "update-docs の入出力-hk/catalyst-onchain-libs\nREADME.md には、エンドツーエンドのテストを再現するための手順と、一般的に、リポジトリのインストールとビルド方法が含まれています。 さらに、UseCase.md ファイルは、このライブラリの使用が Djed プロトコルに正当に影響する方法について拡張する usecase レポートが含まれています."
+    },
+    {
+      "no": 3,
+      "promise": "・慣習的なベンチマークレポートにより、さらなる改善が図れます\n・包括的なセキュリティと保証分析文書\n・コミュニティフィードバックの声\n・異なる開発者がさまざまな経験を抱える包括的なドキュメントと使用例\n・さまざまなパターンとコンテキスト間のトレードオフの徹底した文書化",
+      "criteria": "・使用例を含むソースコードを見直し、性能目標を達成\n・コミュニティのフィードバックが反します。ユーザビリティは正",
+      "report": "A. 出力: 反復的なベンチマークは、増分的な改善を示すレポート\n\n受諾基準: Benchmark レポートには、複数の反復(旧→現在の)が含まれており、現在の実行は、cabal run plutarch-onchain-lib-bench 経由で再現可能です。\n\n証拠:\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/IterativeBenchmarks.md\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/benchmarks/bench-2026-01-29.txt\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/src/plutarch-onchain-lib/test/Bench.hs\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/README.md\n\nB. 出力:包括的なセキュリティと保証分析文書\n\n受諾条件: 専用のセキュリティ/保険文書が存在し、リポジトリモジュールと推奨安全使用パターンをカバーしています。\n\n証拠:\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/Security.md\n\nC. 出力: コミュニティフィードバックの声\n\n受諾基準: 専任の証言文書は、ユーザビリティに関する肯定的なコミュニティフィードバックで存在します。\n\n証拠:\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/Testimonials.md\n\nD. 出力:さまざまな開発者がさまざまな経験を抱える包括的なドキュメントと使用例\n\n受諾条件:文書には「初心者/中/上級」の進行が含まれており、具体的なコード/例と「実行方法」の指示が含まれています。\n\n証拠:\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/DeveloperGuide.md\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/README.md\n・https://github.com/input-output-hk/catalyst-onchain-libs/blob/main/UseCase.md\n\nお問い合わせ.出力: さまざまなパターンとコンテキスト間のトレードオフの徹底したドキュメント\n\n受諾基準:文書は明示的に取引オフ(例、CPU/MEM対スクリプトサイズ、ledgerの侵入者と防御的なチェックに依存、生のビルト対高レベルのヘルプ"
+    }
+  ]
+}

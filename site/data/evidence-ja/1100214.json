@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・プロジェクトを GitHub で設定し、すべてのリソースをリンクし、計画されたロードマップを概略する README.md を含む。\n・Apache 2.0 でのプロジェクトライセンス\n・dbSyncを超えた代替同期方法への初期研究を実施し、調査結果をまとめる。\n・DID PRISM仕様の実装を開始し、既存の試作定義を読み書きする方法に焦点を当てます。\n・Ataraの業務を読んで書くためのテストを開発し、基礎的なブロックチェーン技術の独立。\n・ローカルのCardanoノードとdbSyncの設定.",
+      "criteria": "・ GitHub リポジトリの README、ロードマップ、および dbSync の代替の初期解析\n・Apache 2.0 ではプロジェクトがオープンソースです。\n・アタラPRISM業務の読み込みと書き込みの初期コード\n・Ataraオペレーション(DIDの作成、DIDの更新、DIDの無効化)に関する複数のテストでリポジトリ内のテストプロジェクトのプレゼンス.",
+      "report": "受諾の条件:\n1) GitHub リポジトリの README、ロードマップ、および dbSync の代替の初期解析。\n・ReadmeとロードマップのGithub:https://github.com/bsandmann/OpenPrismNode\n・ dbSync の同期と代替に関するチャレンジャーの分析: https://github.com/bsandmann/OpenPrismNode/blob/master/Documents/Sync pattern OpenPrismNode May 2024.pdf\n\n2) Apache 2.0 ライセンスを追加\n3) 最初のコードはリポジトリにあります。 ここでは、解析と書き込みの周りの2つの注目すべきファイルです。\n・https://github.com/bsandmann/OpenPrismNode/blob/master/OpenPrismNode.Sync/Commands/ParseTransaction/ParseTransactionHandler.cs\n・https://github.com/bsandmann/OpenPrismNode/blob/master/OpenPrismNode.Sync/Commands/DecodeTransactionHandler.cs\n・https://github.com/bsandmann/OpenPrismNode/blob/master/OpenPrismNode.Sync/Commands/EncodeTransactionHandler.cs\n\n4)OpenPrismNodeの2つのテストプロジェクトがあります。 同期。 テストとOpenPrismNode. 同期。 統合テスト。\nここでは、テスト出力のスクリーンショットです。 https://github.com/bsandmann/OpenPrismNode/blob/master/Documents/Testoutput May 29 2024.png\n出力:\n1)上記のレポへのリンク\n2) 開発の現在の状態のクイック書き込み: https://github.com/bsandmann/OpenPrismNode/blob/master/Documents/development m1.md"
+    },
+    {
+      "no": 2,
+      "promise": "・同期dbSyncインスタンス(PostgreSql)からノードのデータベースにPRISMオペレーションを抽出するコードを開発。\n・開始、パユース、停止できる方式で同期プロセスをカプセル化。\n・コードが初期同期と継続的かつ弾力性のある同期をサポートしていることを確認します。\n・Cardanoノードのロールバック処理を実装\n・データベース保存前のPRISM取引の検証方法を作成\n・本アプリケーションは、PRISM業務と関連するメタデータ(Cardanoアドレス、決済情報など)を抽出します。\n・PRISM運用に基づく現行のDID-Documentを計算する内部DIDソルバーを開発\n・テストはチェーンから読み出し、エラーや無効なPRISM取引の取り扱いについて書かれています。\n・カーダノチェーンのブロックをロールバックするテスト\n・実証実験方法は、PRIMの動作が正しく構築されているにもかかわらず、有効なように見えるようにするために、PRIMの動作を渡す必要があります\n・Resolverが正しく動作するようにテストを書いています",
+      "criteria": "・テストを含む全ての項目に関する規則的な進捗は、GitHubリポジトリに表示されています。\n・このノードは、ブロックチェーンからそのデータベースにPRISM操作を実行し、同期することができます。\n・「PRISM」以外の追加情報も同期プロセスに集結\n・解決方法が存在し、PRISM DIDをDIDドキュメントに変える(この時点ではAPIを完全に機能しない)",
+      "report": "プロジェクトはこちら: https://github.com/bsandmann/OpenPrismNode/\n\n動画はこちら: https://youtu.be/wKfpooE-tMg\n両方の出力の要件を単一のビデオに結合します。\n\n開発レポートはこちら:https://github.com/bsandmann/OpenPrismNode/blob/master/Documents/development m2.md"
+    },
+    {
+      "no": 3,
+      "promise": "・Docker-container内のサービスとしてアプリケーションを実行し、DIDの作成、読み込み、更新、非アクティブ化を要求する http と gRPC エンドポイントを提供\n・アプリケーションは、PRISMの操作をチェーンに書き込むためのコードを持ち、これらの操作の確認状況を追跡し、ユーザーに報告します。\n・アプリケーションはテナントを作成するインターフェイスを持ち、テナントとしてログインし、そのテナントに関連するすべての操作の現在のステータスを確認する\n・アプリケーションは、各テナントの統合ウォレットの資金を積み、追跡し、チェーンへの書き込み操作を可能にする能力を持っています\n・Did-Resolution仕様(https://w3c-ccg.github.io/did-resolution/)の仕様に対応するために、最後のマイルストーンからの決議を延長します。\n・チェーン上での書き込み操作をカバーするテスト\n・試験はテナントの能力をテストし、各テナントおよび秘密鍵などの関連情報の適切な適合性を確保するために書かれています。\n・上記からDID-Resolution仕様の仕様に合致するテストを記述します.",
+      "criteria": "・GitHubリポジトリは、継続的な開発進捗を表示します。\n・アプリケーションは、操作やウォレットとのユーザーインタラクションのためのUIを備えています。\n・ブロックチェーンへのPRISM運用の成功事例が実証されています.",
+      "report": "Githubのリンク: https://github.com/bsandmann/OpenPrismNode\n開発報告: https://github.com/bsandmann/OpenPrismNode/blob/master/Documents/development m3.md\nウォレットの作成とDIDの公開を示すビデオ: https://youtu.be/PKqbSOqnuj0\nDID-Resolutionの動画も上記動画(別々の動画)に収録されています。\n当社の Analytics プラットフォームの UI を使用して DID を解決したい場合は、リンクを参照してください。 バックエンドの OPN を使用します。\nhttps://statistics.blocktrust.dev/resolve (ビデオで作成したDID:prism:preprod:9dbd9f428c39c91884b22dbaeeef6b4817d524c96d59885d7e5ffb268775428 )\nOPN の公開バージョンを試したい場合(事前準備のため、ビデオで DID を公開)、このエンドポイントを直接呼び出すこともできます。\ncurl -k 'https://opn.blocktrust.dev:31200/api/v1/identifiers/did:prism:preprod:9dbd9f428c39c91884b22dbaeeef6bf4817d524c96d59885d7e5ffb268775428'"
+    },
+    {
+      "no": 4,
+      "promise": "・DID登録仕様(https://identity.foundation/did-registration/) によるアプリケーションエンドポイントの特定\n・マイルストーン1で特定された、少なくとも1つの代替同期方法をサポート。\n・アプリケーションと必要なコンポーネントをドッカーコンテナにバンドルします。\n・インストールウィザードやノードの設定のための詳細なガイドを提供します。\n・ドッカーコンテナを発行し、あらかじめプログラムされたネットワーク上のライブテストインスタンスをホストします。\n・DID登録仕様書をカバーするために書かれた試験器 追加のsync-methodのためにテストが提供されます",
+      "criteria": "・ノードの API は、現行の PRISM 仕様に適用されるため、DID 認証規格を満たしています。\n・選択(マイルストーン1の研究に基づく)に付加的な同期方法があります。\n・ドッカーコンテナの公開可用性",
+      "report": "- 別の同期方法としてブロックフロストを使用してスクラッチからノードのセットアップをカバーするより長い(14分)ビデオだけでなく、新しいUnverisal Registrar迎合的なエンドポイントを探索し、説明する。 ここでブロックフロストと同期することに焦点を合わせているので、以前は深さで他の同期メソッドに触れました。https://youtu.be/RS21cFWdSZ8\n- 一般に利用可能なドッカーイメージ:https://github.com/users/bsandmann/packages/container/package/openprismnode\n- Github の docu の最初のページ: https://bsandmann.github.io/OpenPrismNode/Guide block フロスト (写真付き)\n- OPNの公開インスタンス:https://opn.preprod.blocktrust.dev/\n次のマイルストーンでは、OPNがどのように動作するかについて、ドキュメントとより多くの技術的な試験を拡張することに焦点を当てています。\nお問い合わせ\nドキュメントに注意してください: ドキュメントは、最終的なマイルストーンで大きな役割を果たしているため、ピクチャーは最初に欠落していましたが、一部の部分はまだ変更されることがあります。現在のビジュアルは潜在的な廃止物になります。 しかし、プロセスを案内するために、いくつかの画像を追加しました。\nUniversal Registrar: DID:Prismは、Universal Registrarウェブサイトにはまだリストされていないことに注意してください。 ユニバーサル・レゾラーとは異なり、さまざまな企業やソフトウェア製品で広く使用されているRegistrarは、主にGoDiddy.comによって使用される限られたユーティリティを持っています。DIDを作成するサービスは、レジストラを維持している同じ人物によって実行されます。 Resolver と Registrar のサポートされている DID メソッドの違いは、これを反映しています。\nRegistrar は、DID:Prism のような特定のスタックで構築する人にとって、独自のノードを実行し、スタックの技術的要件を理解しているため、あまり重要ではありません.例えば、レジストラを使用するには、署名キー、ウォレットなどが必要です。つまり、ユーザーは既に生態系に埋め込まれており、とにかくウェブサイトを必要としません。 そして、ウェブサイトは、他のチェーンではあまり役に立ちませんので、他のチェーンでDIDを作成するのは簡単な方法を提供していません。\nツイート"
+    },
+    {
+      "no": 5,
+      "promise": "・最終マイルストーンは、テスト、バグ修正、ドキュメント作業に専念\n・プロジェクト最後のフェーズで発生したノードのオープン問題は、GitHub 発行トラッカーで公開されます。\n・ノードの実行方法に関するドキュメントを記述します",
+      "criteria": "・プロジェクトクローズアウトレポートとクローズアウトビデオが存在する\n・本ノードが何をしているのか、どのように実行するか、そして期待するもののプロジェクトとエクスプラントの文書化\n・新規コントリビューターがプロジェクトの構築と貢献をする方法についてのご案内",
+      "report": "動画を閉じる: https://www.youtube.com/watch?v=eZYwckec1hs\nレポートを閉じる: https://github.com/bsandmann/OpenPrismNode/blob/master/Documents/closeout report.md\nドキュメントページ: https://bsandmann.github.io/OpenPrismNode/\nノードの基本とそれを実行する方法を説明するより長いビデオ: https://www.youtube.com/watch?v=QxeLi0NL2tU (docsページにもリンク)\n寄稿者ガイドライン:https://github.com/bsandmann/OpenPrismNode/blob/master/CONTRIBUTING.md\nパブリックイメージは、ダウンロードのために利用可能です: https://github.com/users/bsandmann/packages/container/package/openprismnode\nhttps://opn.preprod.blocktrust.dev/ および https://opn.mainnet.blocktrust.dev/ でホストされたサービス"
+    }
+  ]
+}

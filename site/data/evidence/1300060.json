@@ -1,0 +1,46 @@
+{
+  "title": "CardanoTicker (DIY assembly instructions and 3Dprinted case)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 4500,
+      "promise": "・Hardware components list\n・One case design model for 3D Printer\n・Functional specification and 3 screen mock-ups (Price Information Dashboard, Blockchain Dashboard, Node Dashboard)",
+      "criteria": "1. Hardware Components List\n・The list is structured in a user-friendly format, such as a table or checklist.\n・Each hardware component is accompanied by 2–3 sourcing options, including supplier details.\n・Users can procure all the required components without confusion, with transparent and well-documented details.\n\n2. Case Design Model\n・The design model is provided in standard 3D file formats (e.g., STL, OBJ) compatible with common 3D printers.\n・Users can easily download, print, and assemble the case using readily available 3D printing materials.\n\n3. Functional Specification and Screen Mock-Ups",
+      "report": "The evidence of milestone completion is available at \nComponents List, Screen Mock-up and Functional Specs were uploaded at the project Github Repositoy :https://github.com/en7angled/CardanoTicker.git \n・Hardware components list -> There are four configurations, combining static or dynamic display for either wired or wireless setups, balancing energy efficiency, refresh rate, and connectivity for diverse use cases. Including sourcing options and overall cost estimations. I updated the list with links to specific products ad MR suggestion. \n・ One case design model for 3D Printer -> A 3D case in STL format designed for all configurations with Waveshare 4.01inch e-Paper. The model can be easily adjusted to fit different displays dimensions. Case model design parts were published also on Printables , Thingverse .\n・Functional specification -> Document outlines the device's key features, hardware and software requirements, display options, data-fetching modules, and configuration settings. \n・Screen mock-ups -> Containing multiple examples for each dashboard type (Price Information Dashboard, Blockchain Dashboard, Node Dashboard)",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 4500,
+      "promise": "・CardanoTicker's Software Components Architecture\n・Working open-source Software for :\n・ Data fetching component (historical and live prices)\n・ Dashboard display component\n・ Automated installation process\n・Documentation covering \n・custom dashboard settings,\n・installation instructions\n・testing and versioning",
+      "criteria": "CardanoTicker's Software Components Architecture includes a detailed architectural diagram that:\n・Clearly delineates the roles and responsibilities of each component.\n・Illustrates the flow of data between components (e.g., API calls, data parsing, rendering).\n\nWorking software for Pricing Information Dashboard: Current ADA price against major currencies (USD, EUR, etc.), and price charts over various time frames.\nProvides a single-step automated installer (e.g., shell script, batch file, or GUI wizard) that:\n・Installs all necessary dependencies (e.g., Python, Node.js, libraries).\n・Configures A",
+      "report": "The evidence for the Milestone-2 completion is available at the project github repository: CardanoTicker \nSummary:\n・Video with a real first working prototype showcasing Price, Pool and Network dashboards: link \n・Software components architecture and diagrams : link \n・Working software supporting customizable dashboards: link \n・Setup and installation guide: link \n・Single step automatic software installer: link \n・Tested with specific python versions and package dependencies link \n・GitHub Discussions and GitHub Issues are available for feedback",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 9,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 6000,
+      "promise": "・Working open-source software for Blockchain Dashboard\n・Working open-source software for Node Dashboard\n・Working open-source software for Administrator User Interface\n・Updated CardanoTicker's Software Components Architecture \n・Updated automated installer\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Blockchain Dashboard is available: Users gain an intuitive interface for monitoring blockchain performance.\n・Node Dashboard is available: Operators monitor node activity effectively.\n・Users set up the CardanoTicker seamlessly, regardless of technical expertise.\n・Final closeout report is publicly available\n・Final closeout video is publicly available\n\nIncluded FB from Milestone Reviewer:\nUpdate and maintenance: Anyone interested can subscribe as a watcher to the repository. This way, they'll be notified when new versions are released and can choose to upgrade their device accordingly. Installat",
+      "report": "# Project Closeout Report: Cardano Ticker (DIY Assembly Instructions and 3D-Printed Case)\n\nProject Close-out Video is available here\n\nProject Overview\nThe Cardano Ticker project was developed as an open-source, user-friendly display solution that allows users to visualize key blockchain and price data. The project aligns with the Cardano Use Cases: Concept challenge by providing an easy-to-assemble, customizable, and low-power device that enhances accessibility and usability within the Cardano ecosystem. Our primary goals were to create:\n・A hardware-agnostic solution supporting both Raspberry Pi and ESP32-based configurations.\n・A modular, easy-to-install software system that allows users to build and customize dashboards.\n・A well-documented assembly guide and 3D-printable case for seamless DIY deployment.\n\nMilestone Achievements\nDuring the final milestone, we successfully delivered:\n・Expanded hardware support:\n・Raspberry Pi (Zero, 3, 4, 5, etc.) with LCD or ePaper displays (color or black & white).\n・ESP32-based wireless version with ePaper display (color or black & white).\n・Optimized memory usage for ESP32: Implemented efficient data handling techniques to accommodate low memory constraints, particularly for color ePaper displays.\n・Improved ease of installation: Users can quickly set up their ticker with minimal technical expertise.\n・Customizable widgets and dashboards:\n・Users can create and configure custom dashboards.\n・Predefined examples for different use cases: Price Dashboard, Blockchain Dashboard, Pool Dashboard.\n・Command-line user interface:\n・Allows users to manage ticker settings (dashboard selection, refresh intervals, etc.).\n・Reliable data fetching system:\n・Multiple data fetchers for price data with automatic fallback in case of service unavailability.\n・Simple integration of new data fetchers.\n・Flexible display support framework:\n・Interfaces for integrating new display types in Python and C++ (Raspberry Pi/ESP32 support).\n・Enhanced 3D-printed case design:",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1,
+      "cut": true
+    }
+  ]
+}

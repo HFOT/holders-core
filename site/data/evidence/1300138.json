@@ -1,0 +1,88 @@
+{
+  "title": "Minswap Lending Market – Long/Short",
+  "ms": [
+    {
+      "no": 1,
+      "month": "9",
+      "cost": 75000,
+      "promise": "Off-chain integration enabling long position operations through Minswap and the chosen lending protocol on Cardano (either Liqwid or Lenfi).",
+      "criteria": "・Off-chain integration successfully enables asset supply, borrowing, and purchasing for long positions.\n・Seamless integration between both Minswap and the lending protocol.\n・Transactions are optimized for efficiency and minimized fees.",
+      "report": "・Code Repository: https://github.com/minswap/felis/tree/long-short\n・POC Interface: https://dev-3.minswap.org/\n・Minswap Official Link to monitor $MIN Price: https://interface-git-tony-adhoc-interface-minswap.vercel.app/swap?cA=919d4c2c9455016289341b1a14dedf697687af31751170d56a31466e&tA=744d494e&cB=&tB=\n・Liqwid Testnet Preview Interface for reference: https://dev.liqwid.finance/\n・\"A Tour\" of what I accomplished: https://github.com/minswap/felis/tree/long-short?tab=readme-ov-file#a-tour-of-what-i-accomplished-in-milestone-1\n・POC Version Limitations: https://github.com/minswap/felis/tree/long-short?tab=readme-ov-file#poc-version-limitations-milestone-1",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 12
+    },
+    {
+      "no": 2,
+      "month": "10",
+      "cost": 126000,
+      "promise": "Off-chain integration enabling short position operations through Minswap and the chosen lending protocol integration on Cardano (if Liqwid is not possible, we use LenFi).",
+      "criteria": "・Off-chain integration successfully facilitate asset supply, borrowing, selling, and repurchasing for short positions.\n・Integration handles the complexities of short positions, including interest calculations and liquidation scenarios.\n・Integration with both Minswap and the possible lending protocol is seamless and efficient.",
+      "report": "・Repository: https://github.com/minswap/felis/tree/long-short\n・A tour of what I accomplished in M2: https://github.com/minswap/felis/tree/long-short?tab=readme-ov-file#a-tour-of-what-i-accomplished-in-milestone-2\n・Link Preview: https://dev-3.minswap.org/\n・Minswap Interface: https://interface-git-tony-adhoc-interface-minswap.vercel.app/swap?cA=919d4c2c9455016289341b1a14dedf697687af31751170d56a31466e&tA=744d494e&cB=&tB=\n・Liqwid Platform: https://dev.liqwid.finance/",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "11",
+      "cost": 114000,
+      "promise": "User-friendly interface for executing long position strategies.",
+      "criteria": "・Users can initiate and manage long positions through a single, intuitive interface.\n・Latest data feeds provide accurate information on asset prices, lending rates, and position health.",
+      "report": "・Video: link\n・Screenshot: main page, deposit\n・Test link: https://interface-git-long-short-minswap.vercel.app/margin \n・Environment: Testnet Preview\n\nWe changed the technical approach from using the user's wallet to a non-custodial wallet called Nitro wallet. This wallet is unique and can be accessed by the user only (mapping with the root wallet). Users need to sign a tx first to create the wallet and then deposit into the Nitro wallet before making any positions. This approach will cost users 1 time signning transaction for the whole session, a better UX. \nP/s: Due to changing the approach + we need to complete 2 milestones at the same time. So the timeline was delayed a bit",
+      "kinds": [
+        "doc",
+        "live"
+      ],
+      "links": 5
+    },
+    {
+      "no": 4,
+      "month": "12",
+      "cost": 21000,
+      "promise": "User-friendly interface for executing short position strategies.",
+      "criteria": "・Users can initiate and manage short positions through a single, intuitive interface.\n・Educational resources explaining short position mechanics and risks are integrated into the interface.",
+      "report": "・Video for Short behavior: link\n・Screenshot: main page, deposit\n・Test link: https://interface-git-long-short-minswap.vercel.app/margin \n・Environment: Testnet Preview\n\nWe changed the technical approach from using the user's wallet to a non-custodial wallet called Nitro wallet. This wallet is unique and can be accessed by the user only (mapping with the root wallet). Users need to sign a tx first to create the wallet and then deposit into the Nitro wallet before making any positions. This approach will cost users 1 time signning transaction for the whole session, a better UX. \nUpdates: We updated the Guide/ Instructions according to the PoA reviewer. Because we can't put everything related to Margin into the Guide, we provided some references as hyperlinks. Thanks for your feedback",
+      "kinds": [
+        "doc",
+        "live"
+      ],
+      "links": 5
+    },
+    {
+      "no": 5,
+      "month": "13",
+      "cost": 21000,
+      "promise": "The Minswap Lending Market is all live and well functioning for anyone to use.",
+      "criteria": "・Users can initiate and manage long/short positions through a single, intuitive interface.\n・Latest data feeds provide accurate information on asset prices, lending rates, and position health.\n・Seamless off-chain integration between Minswap and the lending project successfully enables asset supply, borrowing, and purchasing for long/short positions.",
+      "report": "・A link to the functioning website accessible to everyone: https://minswap.org/margin\n・Video for Enter the page, Connect, Deposit, and Withdraw: link\n・Video for Open and Close a Long position: link\n・Video for Open and Close a Short position: link",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 5
+    },
+    {
+      "no": 6,
+      "month": "14",
+      "cost": 63000,
+      "promise": "・There will be a process to collecting user feedback and evaluate the success, based on the following metrics:\n・A) Quantitative Measures: Number of users accessing the service, number of actions (depositing/withdrawing...), TVL/volume, etc.\n・B) Qualitative Measures: User Experience, User Feedback\n・Final close-out report\n・Final closeout video",
+      "criteria": "・A Google Form is shared with the Cardano community to collect feedback on the Minswap Lending Market\n・Data analysis is conducted to assess quantitative measures\n・Final closeout report as per Project Catalyst guidelines is publicly available\n・Final closeout video as perm Project Catalyst guidelines is publicly available",
+      "report": "・Quantitative Measures (Data achieved in the last 30 days)\n・Number of users accessing the service: 272\n・Active users: 149\n・Number of actions: 338\n・Volume: over 13,000 ₳\n・Qualitative Measures: link\n・Final close-out report: link\n・Final close-out video: link - YouTube link \n・GitHub: updated link\n・Medium article: link\n・Twitter/ X: link\n・Feedback Form: link",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

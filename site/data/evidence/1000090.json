@@ -1,0 +1,58 @@
+{
+  "title": "GateKeeper: Reports, Multi-Event Support, & UX/UI Refinement",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 22000,
+      "promise": "This milestone will involve defining the user journey for the new features, including the steps that users will take to use them. An Explainer video will be created showing the user journey for the new features: Reports & Multi-Event Support, plus the new UX/UI refinements.",
+      "criteria": "Reviewer will view the User Journey video, it will show the user journey for the new features: Reports & Multi-Event Support, plus the new UX/UI refinements.",
+      "report": "The goals for this milestone are:\nThis milestone will involve defining the user journey for the new features, including the steps that users will take to use them. An Explainer video will be created showing the user journey for the new features: Reports & Multi-Event Support, plus the new UX/UI refinements.\n\nThe video interview with Adam Dean shows the entire user journey as it exists today, and also shows where the new features Reporting and Multi-Event support will plug in, including a preview of the development so far on Adam’s private development machine. The entire UI is reviewed, and the locations where the designer is currently building the new UI are pointed out. This meets the goals of milestone 1.\n\nThe video is available on YouTube at the following link: https://youtu.be/5YVDMxeh--E",
+      "kinds": [
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 14000,
+      "promise": "This milestone will involve designing and implementing the new user interface and user experience for the new features.",
+      "criteria": "Reviewer will view a Figma document. The Figma document will contain the screens for the new features, and the screens from existing features updated to the new UX/UI.",
+      "report": "This milestone involved designing and implementing the new user interface and user experience for the new features. According to the evidence section \"Figma Document will show new features: Reports, Multi-event Support, and enhancements to the UX/UI for the site. A Figma document is a full representation used by programmers to program applications. So what you will see is a pixel by pixel rendering of what a developer needs to use to complete the development of the new features.\"\nThis Figma document is located here:\nhttps://www.figma.com/proto/YeLxMQ3cGd1ZZlodZtiDwJ/Gatekeeper?page-id=0%3A1&type=design&node-id=125-2&viewport=-6292%2C1358%2C2.3&t=fG1vfltitEn9FI6e-1&scaling=scale-down-width&starting-point-node-id=1%3A2&mode=design\nEvery screen needed for the developer to complete the development of new features is here. In addition, the entire site has a facelift with a more modern and pleasing design.",
+      "kinds": [
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 29850,
+      "promise": "Sample Code Implementation (Testnet POC): This milestone will involve implementing the new features in sample code and testing them on the Cardano testnet.",
+      "criteria": "Reviewer will view pull request. Reviewer can view Proof of Concept Testnet version of new features at a provided URL.",
+      "report": "ATTN 2nd Milestone Reviewer: Please see the Discussion panel before denying this again. We have requested a wallet address to send you one of the NFTs below so that you may test.\n\nThe correct GitHub location to view with all of the new features is here: https://github.com/CardanoGateKeeper/GateKeeper/tree/staging\nThe Test Deployment is located at this URL: https://summer-reef-yqev1xyzalx8.vapor-farm-b1.com/event/d8257c42-1dbf-472c-b691-87547d7ff4ca\nWe also provide a video walkthrough of the features on the test environment. https://youtu.be/O1sn4yXa0GE\nWe have added the following policies as eligible assets for the test event so that you can see it working:\nStellar Hood: Inner Circle (Policy ID: 34d825881c5a6465d0398dbbe301222427d3572f31ba36148e89ce54)\nStellar Hood (Policy ID: 91acca0a2614212d68a5ae7313c85962849994aab54e340d3a68aabb)\nCardanoSpace (Policy ID: e3ac0dd93edbe6bafec38fb120cf7c3e223686a97261008c2bfe0d6d)\nDegener8s (Policy ID: 20c5570211f2e002c3e0087c222552706ec95541dc7ad6352c359eac)\nTokenRiot: Factions (Policy ID: 2c1f512e2a3dd5f8c5b749a58e180aa8c552fcb02464f3356b823618)\nWe would be more than happy to provide an eligible asset for testing/confirmation purposes if necessary or add an additional token policy for your testing purposes.\nIf the wallet that you connect does not contain the needed assets then seeing a blank screen is currently expected behavior.",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 33650,
+      "promise": "Documentation: This milestone will involve writing documentation for the new features, including user guides, API documentation, and code comments. A closeout report. A closeout video.",
+      "criteria": "Reviewer can read documentation commits (user guides, API documentation, and code comments) in Github. Reviewer can read the closeout report. Reviewer can view the closeout video on YouTube.",
+      "report": "Project is, at long last, ready for final closeout.\n\nApplication Documentation: https://docs.gatekeeper.fun\nAPI Documentation: https://docs.gatekeeper.fun/api\nStaging Environment: https://staging.gatekeeper.fun (username: demo@example.com, password: password, resets nightly at 00:00 UTC)\nMainnet Environment: https://app.gatekeeper.fun\nSource Code Location: https://github.com/CardanoGateKeeper/GateKeeper\nSetting Up Your First Event Video Tutorial: https://youtu.be/PUYV51e_HE8?si=FbXqbWAWgWbDmjwR\nHow to Create Your Ticket Video Tutorial: https://youtu.be/KutehwHtnKg?si=BsNRWbz6l_4VXpml\nAdd Staff and Check-In Users Video Tutorial: https://youtu.be/FbLOxuK_MNY?si=ngCc9_qKPIR4aIVe\nCloseout Video: https://youtu.be/Iu3AOgAuUnE\nCloseout Report: https://drive.google.com/file/d/1pYzpp2MpL6w-wgrItY5oOD9SB3WwChxH/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 20
+    }
+  ]
+}

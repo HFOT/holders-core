@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "1) ブロックフロストインテグレーションスクリプト(Unity .csファイル)\n2) Koiosの統合スクリプト(Unity .csファイル)",
+      "criteria": "1) ブロックフロストインテグレーションスクリプト\n・スクリプトには、次のブロックフロストとやり取りする方法が含まれています。 io API エンドポイント グループ (Blockfrost API 0.1.60 に基づく https://docs.blockfrost.io/):\n・Cardano > アカウント\n・Cardano > メールアドレス\n・Cardano > アセット\n・Cardano > トランザクション\n・スクリプトには、追加のブロックフロストを追加するフレームワークが含まれています。 io API エンドポイント\n\n2) Koiosの統合スクリプト\n・Script には、次の Koios API エンドポイント グループとやり取りするメソッドが含まれています(https://api.koios.rest/ で Koios API v1.1.2 に基づいて)。\n・Stakeアカウント\n・住所\n・アセット\n・トランザクション\n・スクリプトにはフレームワークが含まれており、追加機能を追加",
+      "report": "A. 出力:\nブロックフロストインテグレーションスクリプト(Unity .csファイル)\n受諾の条件:\n・スクリプトには、次のブロックフロストとやり取りする方法が含まれています。 io API エンドポイント グループ:\n・Cardano > アカウント\n・Cardano > メールアドレス\n・Cardano > アセット\n・Cardano > トランザクション\n・スクリプトには、追加のブロックフロストを追加するフレームワークが含まれています。 io API エンドポイント\n\n証拠:\nGitHubリストの追跡可能なスプレッドシートとすべての証拠へのリンク\n・https://github.com/realprodiga/UnityCardanoAssets/blob/main/MILESTONE TRACKING.md\n\nB. 出力:\nKoiosインテグレーションスクリプト(Unity .csファイル)\n受諾の条件:\n・スクリプトには、以下の Koios API エンドポイント グループとやり取りする方法が含まれます。\n・Stakeアカウント\n・住所\n・アセット\n・トランザクション\n・Script には、追加の Koios API エンドポイントを追加するフレームワークが含まれています。\n\n証拠:\n・https://github.com/realprodiga/UnityCardanoAssets/blob/main/MILESTONE TRACKING.md"
+    },
+    {
+      "no": 2,
+      "promise": "1)「Cardano Basic」WebGLテンプレート(Demoシーン、html、Unity対応ファイル「WebGLTemplates」フォルダ)\n2)「Cardano Responsive」WebGLテンプレート(デモシーン、html、css、js、Unity「WebGLTemplates」フォルダ用のファイル)\nNote: ブロックフロストとKoiosの統合スクリプトは、マイストーン#1で開発され、UnityアプリケーションがCardanoと相互作用することを可能にしますが、実用的な実装では、アプリケーションがWebGLのために構築されている必要があります。 このマイルストーンで開発されたWebGLテンプレートは、Webブラウザ内で実行するUnityビルドアプリケーション用のインターフェイスとして機能し、BlockfrostとKoiosの統合スクリプトをHTMLページにリンクします。 これらのテンプレートは、スクリプトがWeb環境内で適切に統合され、機能的であることを保証します.",
+      "criteria": "バルクスクリーンショットと機能リンクは以下に提供されます。\n1)「Cardano Basic」WebGL テンプレートには以下が含まれます:\n・埋め込まれたUnity PlayerとWallet ConnectのHTMLページ\n・Demoシーンは、BlockfrostまたはKoiosインテグレーションスクリプトを使用して接続したときにウォレット残高を表示します。\n\n2) 「Cardano Responsive」WebGLのテンプレートには以下が含まれます。\n・埋め込まれたUnity PlayerとWallet Connectボタンを備えたCSS&JSファイル付きのHTMLページ\n・サイズとレイアウトは、異なる画面サイズ(モバイル、タブレット、デスクトップ)に対応\n・Demoシーンは、BlockfrostまたはKoiosインテグレーションスクリプトを使用して接続したときにウォレット残高を表示します",
+      "report": "A. 出力:\n「Cardano Basic」WebGLテンプレート(デモシーン、html、Unity対応ファイル「WebGLTemplates」フォルダ)\n受諾の条件:\n・埋め込まれたUnity PlayerとWallet ConnectのHTMLページ\n・Demoシーンは、BlockfrostまたはKoiosインテグレーションスクリプトを使用して接続したときにウォレット残高を表示します。\n\n証拠:\nGitHubリストの追跡可能なスプレッドシートとすべての証拠へのリンク\n・https://github.com/realprodiga/UnityCardanoAssets/blob/main/MILESTONE TRACKING.md\n\nB. 出力:\n「Cardano Responsive」WebGLテンプレート(デモシーン、html、css、js、Unity「WebGLTemplates」フォルダ用のファイル)\n受諾の条件:\n・埋め込まれたUnity PlayerとWallet Connectボタンを備えたCSS&JSファイル付きのHTMLページ\n・サイズとレイアウトは、異なる画面サイズ(モバイル、タブレット、デスクトップ)に対応\n・Demoシーンは、BlockfrostまたはKoiosインテグレーションスクリプトを使用して接続したときにウォレット残高を表示します。\n\n証拠:\nGitHubリストの追跡可能なスプレッドシートとすべての証拠へのリンク\n・https://github.com/realprodiga/UnityCardanoAssets/blob/main/MILESTONE TRACKING.md"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "title": "SJG TOOLS V2 - Stake Pool Setup & Operation TUI Tool in Japanese",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 18125,
+      "promise": "Documentation of results of work such as technology selection, framework selection, testing, etc.",
+      "criteria": "Determination of framework.\nCreating Sample Products.\nSample products for dependent environment installation and cardano node installation.",
+      "report": "Proof of concept was conducted and is summarized in the link below.\nhttps://github.com/btbf/sjg-tools/tree/main/poc",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 54375,
+      "promise": "Release of alpha version 0.1",
+      "criteria": "This version implements dependency installation, cardano node installation, and chain synchronization functions.",
+      "report": "We have finally released v0.1.1-alpha\nhttps://github.com/btbf/sjg-tools/releases/tag/0.1.1-alpha\nThis release was successful despite the requirement to change the adopted framework from the technology stack that was verified in the PoC.\nEverything from dependencies, node installation, Mithril client installation, and DB snapshot restoration is full automated.(See demo video below)\n\nGlobal Announcement at X(Twitter)\nhttps://x.com/spojapanguild/status/1756072081165332912?s=20\n\nDemonstration video of v0.1.1-alpha (Youtube limited publication)\nhttps://youtu.be/-619fSJhe0g",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "7",
+      "cost": 54375,
+      "promise": "Release of alpha version 0.2",
+      "criteria": "This version implements various pool pair key creation, pool registration, and topology configuration functions.",
+      "report": "１．We have finally released v0.2.0-alpha\nhttps://github.com/btbf/sjg-tools/releases/tag/0.2.0-alpha\nThis version implements the following features:\n・Initial setup\n・Node type selection\n・Chain selection\n・Topology file creation\n・Issuance of various key pairs\n・Pool metadata creation\n・Pool registration certificate creation\n・Stake key registration\n・Pool registration\n\nGlobal Announcement at X(Twitter)\nhttps://x.com/spojapanguild/status/1798708636308684955\n\n２．Demonstration video of v0.2.0-alpha (Youtube limited publication)\nhttps://youtu.be/eNU7YpQpZpY\nPlease enable automatic translation (ex.Japanese to English)",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "9",
+      "cost": 36250,
+      "promise": "Release of alpha version 0.3",
+      "criteria": "This version implements the monitoring tool setup, integration of the old SJG tool, and the ability to update pool registration information.",
+      "report": "1．We have finally released v0.3.0\nhttps://github.com/btbf/sjg-tools/releases/tag/0.3.0\nDuring the development of v0.3.0, we decided to completely overhaul the code design. This decision was made with the anticipation that the codebase would expand significantly as we move toward v1.0, requiring greater maintainability.\nhttps://github.com/btbf/sjg-tools/pull/8\nThanks to this decision, we made new discoveries and improved user operability, which we are confident was a very positive step forward.\nThis version includes the implementation of monitoring tool setup, integration of the old SJG tool, and the ability to update pool registration information.\nMonitoring tool setup\nhttps://github.com/btbf/sjg-tools/pull/10/commits/6fafc0f4d265d1c32539e13f9ac8549e35d07c49\nhttps://github.com/btbf/sjg-tools/pull/10/commits/9e41a347b2062e27ce17214dac82031ddb21da46\nIntegration of the old SJG tool\nhttps://github.com/btbf/sjg-tools/pull/10/commits/069fdcb5ff8fd8bffe4cda8940fbc47cb2a563e4\nAbility to update pool registration information\nhttps://github.com/btbf/sjg-tools/pull/10/commits/bd5e7206e282b1cb90a1b596aab7195badf3a987\nhttps://github.com/btbf/sjg-tools/pull/10/commits/156bd5b610d6e5da81750da63eb9d562f413d7e0\n2.Demonstration video of v0.3.0 (Youtube limited publication)\nhttps://youtu.be/vtewg7d3b5I\n3.Added Open Source License\nhttps://github.com/btbf/sjg-tools?tab=MIT-1-ov-file",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 18
+    },
+    {
+      "no": 5,
+      "month": "25",
+      "cost": 54375,
+      "promise": "Release of Bata version 0.4.\ncreation of installation and usage guides.\n\nSubmit Proof of Achievement.\nSubmit Proof of Project Report.\nSubmit Proof of Demonstration Video.",
+      "criteria": "Release of beta versions of code and documentation.\nhttps://github.com/btbf/sjg-tools",
+      "report": "1.Published in the Github repository\nWe’ve finally released version 0.4.\nhttps://github.com/btbf/sjg-tools/releases/tag/0.4.2\nSince the previous milestone, we’ve made significant code changes and carried out a complete rebranding of the tool.\nWe’ve changed the name from CNODE Manager to SPOKIT.\nhttps://spokit.spojapanguild.net/\nGlobal Announcement\nhttps://x.com/spojapanguild/status/1983850086535708784\nInstallation and usage guides\nhttps://github.com/btbf/sjg-tools/blob/main/README.md\n2.Newly released version demonstration video.\nA demonstration of the latest version is included in the project closeout video.\nProject Close-out Report\nhttps://docs.google.com/document/d/16KBUura7ph7zPsHmC8pHP-90fZ6ZbQKuJs1L5gwiaUw/edit?usp=sharing\nProject Close-out Video\nhttps://youtu.be/7verTtGHuME (Change to public)",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・Godot 4の拡張システムに関する書き出し調査、現行プロジェクトに関するコンサルスとプロスの説明 ウォレットだけに比べ、フルSDKの開発が実現可能か否かを説明します。\n・CTL/Lucid(SDKを開発する場合)またはCSL(ライトウォレットを開発する場合のみ有効)の共同開発 POC は、GDScript コードが統合されたコードベースに呼び出し、意図した関数の 1 つを実行するデモから構成されるべきです。 POCは、トバイアルと不完全な機能性を発揮する可能性があるため、選択したライブラリに呼び出し、結果を得ることができることを実証するだけを目的としています。 POCは、Godotエディタ(およびエクスポートされたゲームではなく)と単一のオペレーティングシステム(すべてのサポートされているOSとは対照的に)でのみ実行できます。 ポータビリティは後日目標であり、POCはこれに基づいて判断されるべきではありません。\n・dcSparkとの会話に基づくPaimaの統合設計。\n\n以前、Catalyst チームと変更リクエストフォームで通信したように、このプロジェクトでは、11 月に開始する 1 ヶ月の開始が遅れます。 これは、プロジェクトタイムラインに適度に影響し、成果物の予算や範囲に影響を与えません.",
+      "criteria": "・ウォレットだけに比べ、フルSDKの開発が実現可能か否かを記述すべきである。\n・POC は、GDScript から選択したライブラリへの関数呼び出しの実行を意図した結果を返す必要があります。 POCは、トバイアルと不完全な機能性を発揮する可能性があるため、選択したライブラリに呼び出し、結果を得ることができることを実証するだけを目的としています。 POCは、Godotエディタ(およびエクスポートされたゲームではなく)と単一のオペレーティングシステム(すべてのサポートされているOSとは対照的に)でのみ実行できます。 ポータビリティは後日目標であり、POCはこれに基づいて判断されるべきではありません",
+      "report": "「マイルストーン完成の証拠」を含んだPR\nhttps://github.com/mlabs-haskell/godot-cardano/pull/6\n\nより具体的に技術的な決定を詳述する文書:\n\nhttps://github.com/mlabs-haskell/godot-cardano/blob/17f9431c9a909a4f1c298fd893d84464fb3d8b95/docs/M1 PoA-Research-Report.pdf\n\nそしてPOC:\n\nhttps://github.com/mlabs-haskell/godot-cardano/blob/17f9431c9a909a4f1c298fd893d84464fb3d8b95/README.md\n\nhttps://github.com/mlabs-haskell/godot-cardano/blob/17f9431c9a909a4f1c298fd893d84464fb3d8b95/csl demo/main.gd"
+    },
+    {
+      "no": 2,
+      "promise": "・開発環境/ビルドシステムでは、ソフトウェアをコンパイルし、PC/Windows、PC/GNU+Linux 上で実行できるように設定します。 この証拠として、前のマイルストーンで開発されたPOCは両方のプラットフォーム上で実行する必要があります。 さらに、エディタと最終エクスポートゲームの両方で実行する必要があります.",
+      "criteria": "・前述のPOCは、エディタとエクスポートされたゲームの両方で、すべてのターゲットシステム上で実行する必要があります.",
+      "report": "MILESTONE TWO OUTPUTSのEVIDENCE\nWindows/LinuxビルドとWindowsデモ\n- Windows/Linux用のエディタ/エクスポートビルドを含むPRが統合されています。\nhttps://github.com/mlabs-haskell/godot-cardano/pull/21\n- Windows版のデモはまた利用できます\nhttps://github.com/mlabs-haskell/godot-cardano/releases"
+    },
+    {
+      "no": 3,
+      "promise": "・ベーシックなシングルアドレスウォレット機能:シードフレーズをランダムに生成し、アドレスを生成し、ユーザーがバランスの取れた取引、残高署名と送金ウォレットからウォレットへの取引に署名できるようにします。\n・(OPTIONAL):SDKが最初のマイルストーンの最後にビルドできると判断した場合、次の機能も実装する必要があります。ブロックチェーンのクエリ・utxosとアドレス、取引関与スクリプトの残高と送信(ウォレット・ツー・ウォレット・トランザクションのみ).",
+      "criteria": "・これらの機能は、シードフレーズ生成とインポート、ウォレットロックとパスワードでロック解除、シードフレーズ、トランザクション署名、ウォレットツーウォレットトランザクション作成、トランザクション送信に基づいて生成するアドレス生成を実装する必要があります。\n・実装された機能はすべて、重要なバグや問題なく厳密なテストを渡す必要があります.",
+      "report": "マイルストーン3 業績の証明\nマイルストーン出力\n以下の機能は、Rust で実装されており、Godot エンジン内でアクセス可能です。\n・シングルアドレスウォレットの生成とインポート\n・生成されたウォレットをユーザデータディレクトリに暗号化して保存する\n・取引のバランシング、署名、提出\n\nまた、SDKが実行できるマイルストーン1の結論に基づいて、次の機能を提供しました。\n・ウォレットとスクリプトアドレスをブロックフロストでクエリするUTxO\n・Plutusスクリプトを含む、有効性と手数料計算のためのトランザクションの評価\n・Plutusスクリプト入力の作成と消費\n・PlutusスクリプトからCardanoネイティブトークンをマイニング\n\n上記の機能は、 README ドキュメント (https://github.com/mlabs-haskell/godot-cardano?tab=readme-ov-file#run-integration-test) で説明されている統合テストを実行することで、提供されるデモアプリを介して手動でテストすることができます。\n\n試験結果\nテストスイートは3-5分後に完了し、成功はコンソール出力に表示する必要があります。 トランザクションは、プレビューブロックチェーンエクスプローラで表示できます。 例えば:\n資金調達取引(https://preview.cexplorer.io/tx/8b93edbe57a8c9ec50ef8c523432e977767b52db8e616ecfec6ef07825293b20)\n返品取引(https://preview.cexplorer.io/tx/67b01c1cdab4a803e799681f79baf26760ab52cfe8703a4ccf2565503bf1a19c)\n\n上記の取引では、資金は複数の一時アドレスに送られて、SDK 機能テストを並行して実行します。その後、それらは収集され、プライマリアドレスに返されます。 対応するトランザクションは、テストスイートを正常に実行した後、独自のウォレットで表示する必要があります。\n\n機能テストトランザクションの例:\nPlutusスクリプト入力支出(https://preview.cexplorer.io/tx/255a8952ca76c3fafc30a974f7054499bd4aa74e08a230cb03ee880b6dad10e)\nPlutusトークンマイニング(https://preview.cexplorer.io/tx/7b1643785c18063b5f327db2b38bf4c9399b4154521a6c2b3038e1c77357723c)\n\nこのマイルストーンのリクエストをリクエスト\nツイート"
+    },
+    {
+      "no": 4,
+      "promise": "マイルストーン3(既読点2)で説明する機能性のための人間工学的およびユーザーフレンドリーなAPI.",
+      "criteria": "・すべての機能がエディタおよび/またはGDScript APIからアクセス可能である必要があります。\n・Nodeを実装した場合には、利用目的と使用例を明記してください。\n・公共のプロパティとメソッドを文書化し、\n・試験室は、全てのユースケースをカバーする必要があります",
+      "report": "インフォメーション\nマイルストーン4で説明する機能性のための人間工学的およびユーザーフレンドリーなAPI。\n\nアクセプタンス・クリテリア\nすべての機能は、エディタおよび/またはGDScript APIからアクセスできます。\n--Milstone 4で説明する機能はエディタからアクセス可能です。 プロジェクト README のデモチュートリアルを見る\n\n各ノードは、その目的と使用例を文書化する必要があります。 パブリックプロパティとメソッドは、同様に文書化する必要があります\n--チームメンバーは自動文書生成を含む\n\nテストスイートは、すべてのユースケースをカバーする必要があります\n--Gutテストフレームワークを使用した包括的なテストスイートが追加され、利用可能なユースケースを徹底的にテストしました。 インテグレーションテスト(README 参照)を実行することで、結果を見ることができます。\n\nソリューション\n-開発されたAPI用の新しいコミットされたコードモジュール\nhttps://github.com/mlabs-haskell/godot-cardano/pull/66\nhttps://github.com/mlabs-haskell/godot-cardano/pull/64\nhttps://github.com/mlabs-haskell/godot-cardano/pull/65\n\n-すべての機能の実行を成功させるテスト結果 - これらの結果は、`$ nix run .#preview-integration-test` を実行することによって見ることができます (Flukes でインストールした Nix が必要です)\nhttps://github.com/mlabs-haskell/godot-cardano/blob/main/test/test.gd\n\n-自動化された文書\nhttps://github.com/mlabs-haskell/godot-cardano/pull/62"
+    },
+    {
+      "no": 5,
+      "promise": "詳細、包括的、ユーザーフレンドリーな文書と記述的なユースケースの例。 前のマイルストーンで実装されたすべての API は、指定された例でも実行可能である必要があります.",
+      "criteria": "次のユースケースでは、ユーザーフレンドリーなドキュメントで実行可能な例があります。\n・ユーザーウォレットの作成\n・取引の署名・提出\n・アセットを提供されたアドレスに転送する\n\nこれらのすべてのユースケースは、前のマイルストーンで開発されたAPIを使用する必要があります。 その他、使用例のご提供も可能です.",
+      "report": "インフォメーション\nユーザーフレンドリーなドキュメントとユースケース例\n\nアクセプタンス・クリテリア:\n場合のdemonstratingを使用して下さい:\n- ウォレットの作成\n- 取引の署名と提出\n- 資産の譲渡\n\nソリューション\n出力:\n\nショップデモのフォルダにあるアイテムショップの新規、完成例。 SDKのほとんどの機能を紹介し、興味のある開発者にとってスターターポイントとして使用できます。\n\nhttps://github.com/mlabs-haskell/godot-cardano/blob/main/docs/Shop%20Tutorial.md にあるショップのチュートリアル。\n\nこのマイルストーンのリクエストと問題のプル\n\n-統合テストのセットアップ\nhttps://github.com/mlabs-haskell/godot-cardano/issues/35\nhttps://github.com/mlabs-haskell/godot-cardano/pull/46\n\n-ドキュメント\nhttps://github.com/mlabs-haskell/godot-cardano/issues/37\nhttps://github.com/mlabs-haskell/godot-cardano/pull/62/\nhttps://github.com/mlabs-haskell/godot-cardano/pull/73\nhttps://github.com/mlabs-haskell/godot-cardano/issues/50\nhttps://github.com/mlabs-haskell/godot-cardano/pull/73\n\n・新店舗デモ(ウォレットの作成、署名、取引の提出、受入条件を満たす資産の譲渡を含む)\nhttps://github.com/mlabs-haskell/godot-cardano/issues/48\nhttps://github.com/mlabs-haskell/godot-cardano/issues/56\nhttps://github.com/mlabs-haskell/godot-cardano/pull/68\nhttps://github.com/mlabs-haskell/godot-cardano/pull/71\nhttps://github.com/mlabs-haskell/godot-cardano/pull/78"
+    },
+    {
+      "no": 6,
+      "promise": "開発者がトランザクションに署名し、送信するためのシステムを作成することを可能にする変更されたPaimaエンジン.",
+      "criteria": "・全ての機能が API からアクセスできる必要があります。\n・実装された関数は、その目的と使用例で文書化する必要があります。\n・試験室は、全てのユースケースをカバーする必要があります.",
+      "report": "このマイルストーンの出力は、開発者がトランザクションに署名し、送信するためのシステムを作成することを可能にする変更されたPaimaエンジンです。 受諾基準により、APIからのすべての機能がアクセス可能であり、機能が適切に文書化され、ユースケースが適切にテストされています。\nマイルストーン・コンプリケーションの発生\n出力:\n* 開発された API の新しいコミットされたコード モジュール。\naddon/@mlabs-haskell フォルダーの \"cip-30-callbacks\" と \"paima-middleware\" の新しいアドオンとして利用できます。\nこれらの2つのアドオンによってすべての機能が提供されます。\n1. 「cip-30-callbacks」は、ブラウザウィンドウのCIP-30互換ウォレットとしてgodot-cardanoを登録するために使用されます。\n2. 「paima-middleware」は、Paimaフレームワークの丸いexecutorコンポーネントをクエリする機能を提供します\n\n# ドキュメントのメモ:\n各クラスの詳細なドキュメントとメソッドは、関連するファイルのインラインコメントとして提供されます。 ドキュメントは GDScript の doc のコメントとして提供されているため、最終ユーザが使用しているすべてのパブリッククラスは、エンジン内でクエリすることができます。 具体的には、フォルダ内のファイル「cip-30-callbacks」と「paima-middleware」のために、クラスの説明は、ユーザーが使用する機能のそれぞれのファイル全体の説明とともに、ファイルトップレベルで提供されます。\n\n*すべての機能の成功の実行を示すテスト結果。\nPaimaのオープンワールドテンプレートに基づくGodotプロジェクトが作成され、API全体の使用状況を把握しました。 デモ\nのは、クローズアウトビデオhttps://www.youtube.com/watch?v=YuFD4gi2Qncで作られています。\nREADME ファイルは、必要に応じてすべての異なる Paima コンポーネントを設定し、デモを Web にエクスポートするためのセットアップを指示で paima-demo の下に提供されます。\n.このマイルストーンの課題とプルリクエスト:\n発行: https://github.com/mlabs-haskell/godot-cardano/issues/53\nPR: https://github.com/mlabs-haskell/godot-cardano/pull/74\n\nクルーズアウトレポート\nクローズアウトレポートがご利用いただけます"
+    }
+  ]
+}

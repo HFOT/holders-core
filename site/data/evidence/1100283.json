@@ -1,0 +1,59 @@
+{
+  "title": "Universal Liquidity Composition and MEV resistance framework for DeFi",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Rust library for TLB and its operational components.\nMatching engine implementation.\nAbstractions for network order and pool parsing.\nStrategy evaluation interpreter into transactions.\nHot storage for UTxOs.\nTracker for on-chain entities like pools and long-lasting orders.",
+      "criteria": "Open-source repository publication of the code.\nTLB API test coverage for common matching scenarios: order-to-order, order-to-heterogeneous-orders, order-to-heterogeneous-orders-and-pool, order-to-pool.",
+      "report": "The OS repo: https://github.com/splashprotocol/splash-offchain-multiplatform/\n\nRust library for TLB and its operational components (=Matching engine implementation)\n\nhttps://github.com/splashprotocol/splash-offchain-multiplatform/blob/f89cbcf3736b6ddbf60c10215f8c71a2a20f6069/bloom-offchain/src/execution_engine/liquidity_book/\nLink to tests:\nhttps://github.com/splashprotocol/splash-offchain-multiplatform/blob/f89cbcf3736b6ddbf60c10215f8c71a2a20f6069/bloom-offchain/src/execution_engine/liquidity_book/mod.rs#L424\n\nTest passing screenshots:\nhttps://drive.google.com/file/d/1-z9ZwSkJgMqyd03If8-2CuDg0J702F5O/view?usp=drive_link\n\nAbstractions for network order and pool parsing\nhttps://github.com/splashprotocol/spectrum-offchain-multiplatform/blob/cf505508c13917bad0aa307b2d181ac2a00b5f3c/spectrum-offchain/src/ledger.rs#L4\nhttps://github.com/splashprotocol/spectrum-offchain-multiplatform/blob/10b11d752acd721bd01106ea5cec88a7a88c48a9/spectrum-cardano-lib/src/types.rs#L7\n\nSee how used here:\n・https://github.com/splashprotocol/spectrum-offchain-multiplatform/blob/10b11d752acd721bd01106ea5cec88a7a88c48a9/bloom-offchain-cardano/src/orders/limit.rs#L384\n・https://github.com/splashprotocol/spectrum-offchain-multiplatform/blob/10b11d752acd721bd01106ea5cec88a7a88c48a9/bloom-offchain-cardano/src/orders/limit.rs#L301\n\nEnd-to-end parsing test: https://github.com/splashprotocol/spectrum-offchain-multiplatform/blob/40ef90d9415cdbdaab2dbf1e42e4d4ad60f6f263/bloom-offchain-cardano/src/orders/limit.rs#L623\nTest passing screenshots:\nhttps://drive.google.com/file/d/147G8vTW6zFfscMLAjootT-Rd2YQNBtSb/view?usp=drive_link\nStrategy evaluation interpreter into transactions\nhttps://github.com/splashprotocol/spectrum-offchain-multiplatform/blob/f38ba801f7a4d46eb9361ba0a02356c6da9cad50/bloom-offchain-cardano/src/execution_engine/interpreter.rs\nLink to tests\nhttps://github.com/splashprotocol/spectrum-offchain-multiplatform/blob/f38ba801f7a4d46eb9361ba0a02356c6da9cad50/bloom-offchain-cardano/src/execution_en",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 35,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 75000,
+      "promise": "Implementation supporting AMM pool, limit order, and auction order.\nDocumentation on building off-chain services with the library.\nExample real off-chain bot integration.",
+      "criteria": "Example bot showcasing support for listed liquidity types.\nDocumentation on building off-chain services with the library.",
+      "report": "# Proof of Achievement Report: Milestone 2\n\nThis proof covers the delivered Bloom/Splash off-chain service support for AMM\npools, limit orders, and auction orders. It also includes documentation on\nbuilding off-chain services with the library and an example real off-chain bot\nintegration. The preprod evidence shows that a limit order and auction order are\ncreated, matched, executed by `bloom-cardano-agent`, and verified on-chain.\n\nNo wallet seed phrases, signing keys, Blockfrost keys, node socket contents, or\nother secrets are included in this report.\n\nAuditor reference branch:\nhttps://github.com/splashprotocol/splash-offchain-multiplatform/tree/bromel777/auction-orders-support\n\nAuditor reference pull request:\nhttps://github.com/splashprotocol/splash-offchain-multiplatform/pull/256\n\n## Milestone Output 1 — Implementation Supporting AMM Pool, Limit Order, and Auction Order\n\nDescription:\n\nThe Bloom/Splash execution engine supports AMM pool liquidity, limit order\ntakers, and auction order takers. The service can ingest pool/order UTxOs,\nclassify them into domain entities, match compatible liquidity, and build valid\nexecution transactions.\n\nEvidence:\n\n- AMM pool support:\n - Generic pool classification for the execution engine:\n https://github.com/splashprotocol/splash-offchain-multiplatform/blob/bromel777/auction-orders-support/bloom-offchain-cardano/src/pools/classified.rs\n - Constant-function AMM pool ledger model and datum parsing:\n https://github.com/splashprotocol/splash-offchain-multiplatform/blob/bromel777/auction-orders-support/spectrum-offchain-cardano/src/data/cfmm_pool.rs\n - AMM pool math used by pool transitions:\n https://github.com/splashprotocol/splash-offchain-multiplatform/blob/bromel777/auction-orders-support/spectrum-offchain-cardano/src/pool_math/cfmm_math.rs\n - Preprod auditor AMM pool deployment script:\n https://github.com/splashprotocol/splash-offchain-multiplatform/blob/bromel777/auction-orders-support/testing/preprod/amm-limit-auction-flow/deploy",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 50,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 70000,
+      "promise": "Order Steering implementation in library components.\nOff-chain indexer service for on-chain data relevant to execution assessment.",
+      "criteria": "Bot implementation for Order Steering support.\nOff-chain indexer's ability to index on-chain data for execution assessment.",
+      "report": "Milestone 3 requested two outputs:\n\n1. Order Steering implementation in library components.\n2. Off-chain indexer service for on-chain data relevant to execution assessment.\n\nThis report covers both implementation and auditor evidence.\n\n## Repository and Revision Context\n\n- GitHub repository:\n `https://github.com/splashprotocol/spectrum-offchain-multiplatform`\n- working branch used for this report:\n `bromel777/batcher-indexer-app`\n- audited source revision for the milestone-3 implementation and rerun\n instructions:\n `2c6904237cb229cb787fee41ccbd10fcb434990d`\n- branch source browser root:\n `https://github.com/splashprotocol/spectrum-offchain-multiplatform/tree/bromel777/batcher-indexer-app`\n- immutable source browser root for the audited revision:\n `https://github.com/splashprotocol/spectrum-offchain-multiplatform/tree/2c6904237cb229cb787fee41ccbd10fcb434990d`\n\nAt the time this report was generated, the milestone evidence was validated from\nthe local branch and local preprod runs listed below. A GitHub pull request URL\nis therefore not embedded here. Auditors should use the repository URL above\nplus the branch or commit listed here when cross-checking the implementation.\n\n## Delivered Outputs\n\n### 1. Order Steering in library components\n\nOrder Steering is implemented for limit orders by carrying a permitted executors\nlist directly in the order datum and enforcing it in off-chain execution logic.\n\nKey implementation points:\n\n- Limit-order datum includes `permitted_executors`:\n `https://github.com/splashprotocol/spectrum-offchain-multiplatform/blob/bromel777/batcher-indexer-app/bloom-offchain-cardano/src/orders/limit.rs#L268`\n- Parsed observations preserve the executor allowlist and derive\n `requires_executor_sig` from it:\n `https://github.com/splashprotocol/spectrum-offchain-multiplatform/blob/bromel777/batcher-indexer-app/bloom-offchain-cardano/src/orders/limit.rs#L284`\n- Execution eligibility is checked against the operator credential:\n `https://github.com/splashprot",
+      "kinds": [
+        "code"
+      ],
+      "links": 21,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 35000,
+      "promise": "DEA SDK with tools to recognize common MEV patterns like sandwich attacks and front-running.",
+      "criteria": "Tools within the SDK can identify specific off-chain behavoiur patterns and prevent the selection of unfair parties.",
+      "report": "# Milestone 4 Completion Report\n\n## Scope\n\nMilestone 4 requested:\n\n1. a Decentralized Execution Assessment SDK;\n2. tools inside the SDK that can recognize common MEV patterns such as\n front-running and sandwich attacks;\n3. evidence that these tools can support avoiding unfair parties.\n\nThis report covers the SDK implementation, the example application, and the\nauditor-facing evidence.\n\n## Repository and Revision Context\n\n- GitHub repository:\n `https://github.com/splashprotocol/splash-offchain-multiplatform`\n- note on repository naming:\n this checkout's `origin` still uses the legacy path\n `https://github.com/splashprotocol/spectrum-offchain-multiplatform.git`,\n which GitHub redirects to the canonical browser repository above\n- working branch used for this report:\n `bromel777/dea-sdk-milestone-4-plan`\n- implementation revision validated by this report:\n `5a486fbf1a4409b7670f3aa4a7b35eb71a287d9a`\n- branch source browser root:\n `https://github.com/splashprotocol/splash-offchain-multiplatform/tree/bromel777/dea-sdk-milestone-4-plan`\n\nMilestone-4 evidence in this report was validated from the branch and revision\nlisted above. The published branch contains the report and documentation commits\nfor milestone submission. The deterministic code-verification rerun in this\nreport targets the validated implementation revision above, because later\nbranch-level updates are documentation-only.\n\n## Delivered Outputs\n\n### 1. DEA SDK crate\n\nThe repository now contains a dedicated reusable SDK crate:\n\n- crate root:\n `https://github.com/splashprotocol/splash-offchain-multiplatform/tree/bromel777/dea-sdk-milestone-4-plan/dea-sdk`\n- crate manifest:\n `https://github.com/splashprotocol/splash-offchain-multiplatform/blob/bromel777/dea-sdk-milestone-4-plan/dea-sdk/Cargo.toml`\n\nPrimary modules:\n\n- shared config:\n `https://github.com/splashprotocol/splash-offchain-multiplatform/blob/bromel777/dea-sdk-milestone-4-plan/dea-sdk/src/config.rs`\n- normalized domain:\n `https://github.com/splashprotoco",
+      "kinds": [
+        "code"
+      ],
+      "links": 32,
+      "cut": true
+    }
+  ]
+}

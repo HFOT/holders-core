@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "(A)エコマンダラの六角形NFTの標的使用例を詳述する研究報告\n(B) EcoMandalaフレームワークの設計文書と、このPoCプロジェクトのための詳細な計画.",
+      "criteria": "(A) 六角形NFTの微細化のための少なくとも3つの潜在的な使用例の研究報告の細部\n(B) 設計文書は、データ構造とブロックチェーンの相互作用を概説し、ユーザーインターフェイスとAPIの予備設計を提供する必要があります",
+      "report": "ベローズマイルストーンレポートが含まれている -\n・エコマンダラの六角形NFTの標的使用例を詳述した研究報告\n・EcoMandalaフレームワークの設計文書と、このPoCプロジェクトの詳細な計画。\n\nhttps://github.com/gammer13/pcf12-ecomandala/blob/main/milestone1/report/milestone report.pdf"
+    },
+    {
+      "no": 2,
+      "promise": "(A) EcomandalaのHexagonal NFTのCardanoメインテットは、以前のマイルストーンで説明したユースケースの少なくとも2つに対応する\n(B) 地理空間六角ユニットを表す NFT をミントにするユーザガイド",
+      "criteria": "(A) 過去のマイルストーンに記載されている使用例の少なくとも2つを表す少なくとも6つの成功したマイナスNFT\n(A) 最小化された NFT メタデータは、設計文書に記載されている Ecomandala のデータを表します。\n(B) ユーザーガイドは、EcomandalaのNFTをミントとアップデートする方法を明確に説明しています",
+      "report": "機能的なEcoMandela NFTのmintingのプラットホームは(動的メタデータ リンクは固定します):で動きます\nhttps://gamayos.github.io/pcf12-ecomandala/ecomandala-20240916-1.html\n次の NFT マイニングトランザクションがシステムを介してトリガーされた -\nhttps://preprod.cexplorer.io/tx/1be82407e8dfeadabd79ac7f4513019e9c3d0c115fe89cebcdaed6d6dbfe55dc\nhttps://preprod.cexplorer.io/tx/7c30fe86c5a9df8a766c98a8a5d7310f7262049da077971bded55e99f55c5d69\nhttps://preprod.cexplorer.io/tx/e1ccc9bc0386603f721d38df7cf488a1ae900830d25a29def1b7fd2c458544d7\nhttps://preprod.cexplorer.io/tx/b72bcdb372add6ee2446c282f77febff7e1fa09ff0eab75ef7260c420bbc9\nhttps://preprod.cexplorer.io/tx/40fc1bad3383c6d4203c5181d1263c1e13a3bd2ab371b40a7af2bdd165480ad7\nhttps://preprod.cexplorer.io/tx/b890ff48279a6db3928f25ef2eeccc6e7ce3ee4246417d57f0ca15759885ff29\nメタデータ例:\nhttps://storage.googleapis.com/ecomandala-preprod-9f3489c8-eb24-4d88/811e3/851e0877/891e0874527ffff20241222-7fe65be0/891e0874527ffffffffffffff20241222-7fe65be0-metadata.json\n包括的なユーザーガイド -\nhttps://github.com/gammer13/pcf12-ecomandala/blob/main/milestone2/report/Ecomandala-Manual-20241218.pdf"
+    },
+    {
+      "no": 3,
+      "promise": "(A) Ecomandala 六角形画像を生成し、対応する NFT を API で生成する自動化プロセスの概念実装",
+      "criteria": "(A) コンセプトの実装は、最初のマイルストーンのレポートに記載されているユースケースの1つです。\n(A) 選択したユースケースの利益の領域をカバーするために1,000 NFTのサンプルを採掘",
+      "report": "大規模プロジェクト向けEcoMandala NFTの生成のための自動化されたシステム(バックエンド、データベース、API、UIポータル)を実装し、ターゲットユースケースとして、高インパクトの自然復元プロジェクトのコレクションを使用して広範囲にテストしました。 1000以上のEcoMandala NFTの大規模なコレクションが縮小され、リンクされたスプレッドシートにリストされています。\nマイルストーン 3 詳細なレポート: https://drive.google.com/file/d/1c3cuohnTZ9qzTPh7pGKga7wuZbIyDM0P/view\nEcoMandalaポータル: https://gamayos.github.io/pcf12-ecomandala/ecomandala-20241229-1.html\nNFTリスト(3つのプロジェクトで1000以上の分) https://docs.google.com/spreadsheets/d/1-PgtYcHZqVcBQc0DjswFcXMlnL4imdXXXPHpmHgo/edit?usp=sharing"
+    },
+    {
+      "no": 4,
+      "promise": "(A) システム全体の機能、性能、セキュリティを検証するテスト結果\n(B)最終クローズアウトレポート\n(C)最終クローズアウトビデオ",
+      "criteria": "(A) 重要な問題なく、オンチェーンとオフチェーンコンポーネントの統合を成功\n(B) 最終クローズアウトレポートを公開\n(C) 最終クローズアウト映像を公開",
+      "report": "EcoMandala PoCプロジェクトページとポータル: https://gamayos.github.io/pcf12-ecomandala/\n(A)エコマンダラPoC最終テストレポート:テストケース、手順、結果、および特定および解決された問題の文書化の計画とレポート: https://drive.google.com/file/d/103zZqVIGJ6STwVdCsZlNniPUg9F311CZ\n(B)エコマンダラPoCクローズアウトレポート:https://drive.google.com/file/d/1DDhvuThMDlW1VQR4tQSunEa-q49jrPOr\n(C) EcoMandala PoCクローズアウトビデオ: https://youtu.be/toAlF7LjLaM?si=c8CXkRQeZP8r6xq5"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "by TxPipe - API Layer for Cardano protocols using Tx3",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 29375,
+      "promise": "A. A technical architecture document describing the overall system design, including diagrams of the main components and their interactions.\nB. Publicly available source-code containing the initial project scaffold, with stub implementations for all major system components.\nC. A functioning CI/CD workflow to build and test the source-code throughout the whole development process.",
+      "criteria": "A1. The architecture document is published publicly, reflects the full scope of the proposal, and includes diagrams of the main components and their interactions.\nB1. The public repository contains the initial project scaffold with stub modules for each major component described in the architecture document.\nC1. A CI/CD workflow is active in the repository and successfully builds/tests the scaffold in preparation for further development.",
+      "report": "A2. Link to the published architecture document in the project repository.\nhttps://github.com/tx3-lang/protocol-gateway/blob/main/design/001-api-scaffolding-spec.md#architecture\n\nB2. Link to the public GitHub repository containing the open-source code.\nhttps://github.com/tx3-lang/protocol-gateway\n\nC2. Link to a successful CI/CD run in the repository.\nhttps://github.com/tx3-lang/protocol-gateway/actions\n\nWe also include a video walkthrough of the delivered milestone: \nhttps://youtu.be/5uVZ8qY4QAk",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 26927,
+      "promise": "A. Tx3 interface definitions for 5 selected Cardano protocols, fully representing their user intents, parameters, and validation requirements.\nB. Code artifacts (from the Tx3 definitions) to test the execution of the transactions mapped from user intents for each protocol.\nC. Documentation explaining how to use the Tx3 definition for each protocol, along with diagrams describing the mapped transactions.",
+      "criteria": "A1. The 5 selected protocols each have a publicly available Tx3 interface specification that fully represents their behavior.\nB1. The code artifacts for each protocol successfully executes the transactions mapped from its user intents.\nC1. Documentation and diagrams for each protocol are publicly available and explain how to work with its Tx3 definition.",
+      "report": "A2. Links to the Tx3 interface specifications for each of the 5 protocols.\n・Strike-Staking: https://github.com/tx3-lang/protocol-gateway/tree/main/protocols_tx3/strike-staking\n・Vyfi: https://github.com/tx3-lang/protocol-gateway/tree/main/protocols_tx3/vyfi\n・Bodega market: https://github.com/tx3-lang/protocol-gateway/tree/main/protocols_tx3/bodega-market\n・Fluid (Aquarium): https://github.com/tx3-lang/protocol-gateway/tree/main/protocols_tx3/fluid-aquarium\n・Indigo: https://github.com/tx3-lang/protocol-gateway/tree/main/protocols_tx3/indigo\n\nB2. Links to public explorers showing transactions executed using the Tx3 interfaces.\n・Vyfi (swap): c54d08a6585f2326d6b6839b5876a3cb2117685241cf05ce1a11b60a7690d81f\n・Strike (stake): 756abe04dc23ba9175719908c7d7ecc21316691f7b508e6bee1885810031c535\n・Indigo (create-staking): c54778b4fcb6741eed0d96763328673b4fa9947e0c6e5f29a735197fa94c7279\n・Bodega (buy-position): 77bee9ce5f044fa34d314f041377ee2c192c99aea288a03f4e170aa6cd0c33ed\n・Fluid Aquarium (create_babel_tank): 00b510615cc8f85d5184b5f79294a72938b80d08aa388a61638070a0fd36e076\n・Fluid Aquarium (withdraw_tank): 873919562b15cd70fe9ddc30b26e4154a078bb5c3e87cc5a47ad37d3f1af1bae\n\nC2. Links to the published documentation and diagrams for all 5 protocols.\n・Strike-Staking: https://tx3.land/protocol/strike-finance/strike-staking\n・Vyfi: https://tx3.land/protocol/vyfi/vyfi\n・Fluid (Aquarium): https://tx3.land/protocol/fluidtokens/fluid-aquarium\n・Indigo: https://tx3.land/protocol/indigoprotocol/indigo\n・Bodega Markt: https://tx3.land/protocol/bodega-market/bodega_market\n\nWe also include a video walkthrough of the delivered milestone:\nhttps://youtu.be/uknIHWurxlY",
+      "kinds": [
+        "chain",
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 28
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 26927,
+      "promise": "A. An automated code-generation tool that produces API endpoints directly from Tx3 interface definitions.\nB. A functional API layer that exposes the Tx3-defined interactions for the selected protocols through HTTP/JSON-RPC endpoints.\nC. Publicly available open-source code for both the code-generation tool and the API layer.\nD. Documentation describing the available API endpoints.",
+      "criteria": "A1. The code-generation tool successfully produces the API endpoints from the Tx3 interface definitions.\nB1. The API layer enables successful interaction with each selected protocol through functioning HTTP/JSON-RPC endpoints.\nC1. The public repository contains the open-source code for the code-generation tool and the API layer.\nD1. Documentation describing the available API endpoints is published.",
+      "report": "A2. Links to example API endpoint code generated from Tx3 interface definitions.\n - https://rpc.tx3.land/strike-staking/openrpc.json\n - https://rpc.tx3.land/vyfi/openrpc.json\n - https://rpc.tx3.land/bodega_market/openrpc.json\n - https://rpc.tx3.land/fluid-aquarium/openrpc.json\n - https://rpc.tx3.land/indigo/openrpc.json\n﻿\nB2. Links to successful API calls demonstrating interaction with the selected protocols.\nhttps://github.com/tx3-lang/protocol-gateway/blob/main/protocols_tx3/B2-successful-api-calls.md\n\nC2. Links to the public repository containing the open-source code for the code-generation tool and the API layer.\nhttps://github.com/tx3-lang/protocol-gateway\n\nD2. Link to documentation.\n - https://rpc.tx3.land/strike-staking/docs\n - https://rpc.tx3.land/vyfi/docs\n - https://rpc.tx3.land/bodega_market/docs\n - https://rpc.tx3.land/fluid-aquarium/docs\n - https://rpc.tx3.land/indigo/docs\n\nLink to milestone video:\nhttps://youtu.be/p3rgxGH2KLA",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 28
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 14688,
+      "promise": "A. Publicly available Docker images for installing and running the complete API layer.\nB. Publicly available source code for the complete API layer.\nC. Publicly available Tx3 files for all protocols included in the project.\nD. Publicly available documentation covering all delivered components.\nE. A close-out video showcasing the final output of the project.\nF. A close-out report describing the project process and final outcomes.",
+      "criteria": "A1. The Docker images allow the API layer to be installed and run successfully without additional configuration.\nB1. The complete API layer can be successfully used to interact with the supported protocols through the delivered endpoints.\nC1. The Tx3 files for all included protocols can be used to generate and execute the corresponding transactions.\nD1. The documentation enables developers to set up and use the delivered components without additional guidance.\nE1. The close-out video follows Catalyst guidelines.\nF1. The close-out report follows Catalyst guidelines.",
+      "report": "A2. Docker images available for download (https://github.com/tx3-lang/protocol-gateway/pkgs/container/protocol-gateway)\nB2. Source-code available in our Github repository (https://github.com/tx3-lang/protocol-gateway)\nC2. Links to the Tx3 interface specifications (https://github.com/open-tx3/)\nD2. Documentation website (https://docs.txpipe.io/tx3)\nE2. Close out video uploaded to YouTube (https://youtu.be/GOKdMNg4D5E)\nF2. Close out report uploaded to Google drive (https://drive.google.com/file/d/15SXwQLVprDk20XPq1SrSK95x8SEp-5XR/view?usp=sharing)",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・当ブログでは、特にビットコインの文脈とカルダノとの比較に焦点を当てたビットコインの落雷の分析に投稿\n・建築決定記録 ブログ投稿で上げられたホエールポイントは、より技術的で詳細な治療が表示されます\n・決済チャネルのプロトコルのフルスペックと、それらの構成.",
+      "criteria": "・ビットコインの落雷に関するブログ投稿\n・議論と結論をまとめる建築決定記録。\n・プロトコルの仕様は、その背後にある推論(紙上のいくつかの証拠)を明確に説明し、妥当性を評価することができます。\n・プロトコルの仕様には、スマートコントラクト仕様のAPIが含まれています.",
+      "report": "URL (protcol -> プロトコル) で typo を修正しました。 *but* は、実際に L2 の仕様を見直し、改善しました。 申し訳ありませんが、このコンテンツはただ今 English のみです。\n\n* L1 仕様: https://github.com/cardano-lightning/cardano-lightning/blob/main/docs/design/l1-spec.md\n\n* Cardano Lightning DesignのコンテキストでBitcoin Lightning Networkに関するブログ記事:https://cardano-lightning.org/blog/bitcoin-lightning-channel-design/\n\n* ADRSのセット:https://github.com/cardano-lightning/cardano-lightning/tree/main/docs/adrs\n\n* L2 ピアプロトコル仕様: https://github.com/cardano-lightning/cardano-lightning/blob/main/docs/design/l2-peer-protocol-spec.md"
+    },
+    {
+      "no": 2,
+      "promise": "・スマートコントラクトの実装\n・スマートコントラクトの適正なカバレッジによるテストスイート\n・「定型」使用中の支出を示すスマートコントラクトのベンチマーク.",
+      "criteria": "・スマートコントラクトはプロトコルスペック(マイルストーン1)を実装しています。\n・SCのライフサイクルの各部分を試験します。\n・テストスイートの全テスト (ニックス・フレークは、包括的解体で提供されます。) README は、そうでなければ、堅牢性の保証なしに、これらを実行する方法について説明します。\n・すべてのベンチマークが実行されます。\n・ベンチマークの数値がtxの能力/制約にどのように変化し、典型的なコストとtxのスループットを推定するかの証拠.",
+      "report": "お問い合わせ\n出力:スマートコントラクトの実装\n受諾基準:スマートコントラクトは、プロトコルスペック(マイルストーン1)を実装しています。\n証拠:スマートコントラクトの実装:\n* https://github.com/cardano-lightning/cardano-lightning/tree/main/aik/lib/cl\n* ほとんどのロジックは `step.aik` と `main.aik` です。\n\nツイート\n出力:スマートコントラクトの合理的な範囲でのテストスイート\n受諾の条件:\n※SCのライフサイクルの各部分を試験します。\n※テストスイートの全てのテストが実行されます。 (ニックス・フレークは、包括的解体で提供されます。) README は、そうでなければ、堅牢性の保証なしに、これらを実行する方法について説明します。\n証拠:スマートコントラクトの合理的な範囲でのテストのスイート:\n* https://github.com/cardano-lightning/cardano-lightning/tree/main/aik/lib/cl/tests/benchmarks\n* テストロジックのほとんどは `gen.aik` と `main.aik` です。\n* テストを実行する手順は README: https://github.com/cardano-lightning/cardano-lightning/tree/main/aik#testing\n\nツイート\n出力:「典型的な」使用の下の余分を示すスマートな契約のベンチマーク。\n受諾の条件:\n*全てのベンチマークが実行されます。\n*ベンチマークの数値がtx機能/制約にどのように変換するかの説明と証拠は、典型的なコストとtxのスループットを推定します。\n証拠:スマートコントラクトのベンチマーク(s)は、「典型的な」使用下にあるエクセレントを示しています。\n* 上記のベンチマークと同じディレクトリ: https://github.com/cardano-lightning/cardano-lightning/tree/main/aik/lib/cl/tests/benchmarks\n* 結果のまとめは README にあります: https://github.com/cardano-lightning/cardano-lightning/tree/main/aik/bench"
+    },
+    {
+      "no": 3,
+      "promise": "・L2システムアーキテクチャの仕様 含む\n・コンポーネントマッピング図\n・各コンポーネントの説明、id は、どのコンポーネントに関連したか、その他のコンポーネントについて説明しています。\n・Protobuf や OpenApi など、適切な形式の API 仕様\n・コアとスペクトラムの補助的側面の区別\n・特定の定数値の確立などの側面(特定の定数値の確立など)を強制的に確立する必要があります。 たとえば、チャンネルが開いている時間。\n・L1との相互作用の要件の明示的な記述は、読み取り/ストア(すなわちチェーンインデックス)の面で、ieはtxを提出\n・ブログ投稿 : プロトコルに関して、可能な異なるユーザー行動を調べます。 例えば、高い双方向のスループットを目指したリソースとゲートウェイが少ないだけを消費し、持っているユーザー。 これは、仕様にイントロ/署名の記事として機能します。\n・Architectural Decision Records は、  not  が適切と判断した理由(そして、代わりに他の人を選ぶ理由)を記録します。\n\n仕様が明確で包括的であることが私たちの願望です。 そのため、第三者は、自社のインキュベーターを待ってコンサルティングすることなく、プロトコルの実装とインテグレーションを開発することができます",
+      "criteria": "・ウェブサイト(または一部)の形でA(バージョンアップ)のスペック文書(s)。 以下を含む(これらは上記と同じです):\n・コンポーネントマッピング図\n・各コンポーネントの説明、id は、どのコンポーネントに関連したか、その他のコンポーネントについて説明しています。\n・Protobuf や OpenApi など、適切な形式の API 仕様\n・コアとスペクトラムの補助的側面の区別\n・特定の定数値の確立などの側面(特定の定数値の確立など)を強制的に確立する必要があります。 たとえば、チャンネルが開いている時間。\n・対話の要件の明示的な記述",
+      "report": "私はいくつかの直面の明確化をしたいです。 実際に、デザインやスペックを制作するだけだったので、マイルストーンのオリジナルスコープをはるかに超えていました。 以下に示すほとんどの仕様を実際に実装し、プロトタイプ化しました。\n\n*Cardano LightningとBitcoin Lightningネットワーク間での支払いのホッピングを可能にする完全作業バックエンドノード:https://github.com/cardano-lightning/konduit\n\n* PWA(プログレッシブ・ウェブ・アプリ)がまだリリースされていないため、ユーザーはそのバックエンド・ノードとやり取りし、支払いを実行できます。\n\n* コード: https://github.com/cardano-lightning/konduit-js\n\n*展開: https://app.konduit.channel/\n\n* Webページ: https://konduit.channel/\n\n拡張スコープは、新しいリポジトリの束を作成することにしましたが、これらすべてが `cardano-lightning` 組織の下に存在します。 私たちがこのマイルストーンの一部としてお届けするアーティファクトの一部は、それらの他のリポジトリ全体に広がっています。\n\nお問い合わせ\n出力: コンポーネントマッピング図\n受諾条件:ウェブサイトの形での仕様書。\n証拠: https://github.com/cardano-lightning/cardano-lightning/blob/main/docs/design/l2-spec/components/gateway.svg\n\nツイート\n出力:各コンポーネントの説明、id が、誰とどのように他のコンポーネントに関連しているのか。\n受諾条件:ウェブサイトの形での仕様書。\n証拠: https://github.com/cardano-lightning/cardano-lightning/blob/main/docs/design/l2-spec/components/gateway.md\n\nツイート\n出力:\n* API は、適切なフォーム eg Protobuf および/または OpenApi で指定します。\n* コアとスペックの補助的側面の区別。\n* 特定の定数値の確立など、任意の側面(特定の定数値の確立など)を強調し、帝国的に確立する必要があります。 たとえば、チャンネルが開いている時間。\n.受諾条件:ウェブサイトの形での仕様書。\n証拠:\n* 仕様:\n*初期バージョンL2スペックバージョン(マイルストーン1で提出された): https://github.com/cardano-lightning/cardano-lightning/bloom"
+    }
+  ]
+}

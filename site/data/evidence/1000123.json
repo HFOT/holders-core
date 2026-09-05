@@ -1,0 +1,85 @@
+{
+  "title": "MLabs - Purus: PureScript to Plutus Core compiler",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "・Figure out our approach to data encoding (Generics vs compiler built-in, scott vs. PlutusData encodings)\n・Consider integration with LambdaBuffers (the goal is to make it not on compiler level)\n・Figure out our approach to type classes, ad hoc polymorphism\n・Figure out how to deal with PS modules (a linker?)\n・List possible optimisations (look into plutonomy and techniques for lambda calculus optimisations from papers)\n・Specify the assumptions about software environment the compiler will rely on (supported OSes and architectures)",
+      "criteria": "・All the questions above are explored enough for us to come up with a clear way of implementing the compiler: the specification document contains particular technical decisions that one-to-one correspond to the outputs of the project, or a written statement that explains why some of the decisions have been postponed until the implementation phase.\n・In case the final architectural decisions are delayed until the implementation phase (which is reasonable for some of the choices that may require benchmarking), a clear description of possible approaches is provided, as well as criteria using which",
+      "report": "EVIDENCE OF MILESTONE ONE OUTPUTS\n \nOur markdown document indicated in the Evidence of milestone completion is available here:\n\nhttps://github.com/mlabs-haskell/purus/blob/25e051a588b64feb4c6a4e07de5df7dde302e3aa/reports/M1-REPORT.md\n\nWe have also published a YouTube video going into further detail:\n\nhttps://youtu.be/Mg843NPTZsQ",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 111557,
+      "promise": "・Repo setup, Nix, CI \n・Replicating compilation workflow from PS code to IR in our new compiler (PS -> CoreFn)\n・CoreFn -> UPLC transform (no plutus APIs yet, just basic primops)\n・Test engine setup using UPLC executor",
+      "criteria": "・CI setup is added, and it runs the test suite successfully\n・The tests contain fixture examples that transform PS code abstract syntax trees to CoreFn representation\n・The tests contain fixture examples that transform CoreFn representations to UPLC abstract syntax trees (only basic primops)\n・The test engine is able to execute produced UPLC ASTs and assert that the results match the expectations",
+      "report": "EVIDENCE OF MILESTONE COMPLETION\nPer our Milestone 2 SoM, we are providing links to the outlined objectives.\n\n1. CI statuses are visible in the GitHub interface - this is visible throughout the repo e.g at the bottom passing\nhttps://github.com/mlabs-haskell/purus/pull/22\n\nor here\nhttps://github.com/mlabs-haskell/purus/pull/20\n\n2-4 The test source code is available here\nhttps://github.com/mlabs-haskell/purus/blob/sean/monomorph/tests/TestPurus.hs\n\nAnd its CI integration was accomplished here:\nhttps://github.com/mlabs-haskell/purus/pull/28\n\nMoreover, the directory linked below contains CoreFn output, both pretty-printed and written in JSON. \nSee files with .cfn.pretty extension located in output subdirectories of examples\nhttps://github.com/mlabs-haskell/purus/tree/sean/monomorph/tests/purus/passing\n\nAnd finally, an architecture doc was added covering the current architecture of the compiler pipeline:\nhttps://github.com/mlabs-haskell/purus/blob/sean/monomorph/Architecture.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 86766,
+      "promise": "・A proof-of-concept no-op validator (no need for TxInfo deserialization yet)\n・Rework purescript built-ins (Prim* modules) to provide basic functionality of the compiler (arithmetic, boolean logic)",
+      "criteria": "・The test suite includes a complete pipeline that goes from PureScript source to a working validator. The validator should do nothing.\n・UPLC primitive types and primitive operations are exposed via a PureScript interface as Purus built-ins",
+      "report": "EVIDENCE OF MILESTONE COMPLETION\nPer our Milestone 3 SoM, we are providing links to the outlined objectives.\n\n-Link to validator test source code - and primitive test code:\nhttps://github.com/mlabs-haskell/purus/blob/sean/pir-conversion-again/tests/purus/passing/Demo/Demo.purs\n\n-as well as a link to relevant pretty-printed corefn file:\nhttps://github.com/mlabs-haskell/purus/blob/sean/pir-conversion-again/tests/purus/passing/Demo/output/Demo/index.cfn.pretty\n\n-link to the compilation module\nhttps://github.com/mlabs-haskell/purus/blob/sean/pir-conversion-again/src/Language/PureScript/CoreFn/Convert/ToPIR.hs\n\n-Link to relevant commit:\nhttps://github.com/mlabs-haskell/purus/commit/776ac5ec2194ece11c296027a23cb6a4ec31f320\n\n-Link to CI result with passing test:\nhttps://hercules-ci.com/accounts/github/mlabs-haskell/derivations/%2Fnix%2Fstore%2Ffc4i2vcq0j35cm9zjqfq1rqy320lj8vk-pre-commit-run.drv/log?via-job=091ff9ff-8e7d-4ef1-b53b-31410c81aa69\n\n-And finally a video demostration\nhttps://www.youtube.com/watch?v=q--L8TgRTBs",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 123952,
+      "promise": "・Adaptation of Plutus ledger API (tx info, plutus ledger api library).\n・Adaptation of PureScript prelude (partial)\n・An interface for validators and minting policies (TxInfo serialisation).",
+      "criteria": "・TxInfo and all its child types are provided as Purus types and are accessible from within the language. Relevant parts of Plutus ledger APIs are ported.\n・Parts of PureScript prelude ported to Purus (JavaScript bindings are removed)\n・Meaningful validators and minting policies are demonstrated in the tests.",
+      "report": "ADDENDUM\n\nSo, the Purus project accomplishes this essential task: compiling Purescript code to CoreFn (native to Purescript compiler) then compiling CoreFn to PIR. Compare this with the normal Plutus compilation pipeline which compiles Plutus to PIR directly. This is key, because from PIR its only a few steps to UPLC which is the language the Cardano blockchain understands and executes.\n\nPurus :: Purescript -> CoreFn -> PIR -> PLC -> UPLC\nPlutus :: Plutus -> PIR -> PLC -> UPLC\n\nSo, its likely best to present our evidence in reverse order:\n\n3) A link to a set of examples showing at least one validator and at least one minting policy\n\n-validator written in Purescript:\nhttps://github.com/mlabs-haskell/purus/blob/sean/fix-multiple-scrutinee-cases/tests/purus/passing/CoreFn/Validator/Validator.purs\n\n-minting policy written in Purescript:\nhttps://github.com/mlabs-haskell/purus/blob/sean/fix-multiple-scrutinee-cases/tests/purus/passing/CoreFn/MintingPolicy/MintingPolicy.purs\n\n2) A link to an example showing that some Purus functions from Prelude are usable\n\n-here you can see a modified Purescript Prelude compiled into CoreFn - notice the typical Prelude functions like, maybe and fromMaybe, and more important anyList. \n\nhttps://github.com/mlabs-haskell/purus/blob/sean/fix-multiple-scrutinee-cases/src/ps-libs/prelude/Prelude/Prelude.cfn.pretty\n\n-you can see anyList, for example, used on line 43 in our validator, meaning functions from Prelude are indeed usable and compilable via Purus, satifying Evidence #2\n\nhttps://github.com/mlabs-haskell/purus/blob/sean/fix-multiple-scrutinee-cases/tests/purus/passing/CoreFn/Validator/Validator.purs\n\n1) A link to an example showcasing TxInfo use\n\n-Looking again to the Prelude, you can see it exports the function deserializeTxInfo which you can see exported line 18, and defined from line 748. Specifically, notice TxInfo included in the function type definition on line 748. Later you'll see the function deserializeScriptContext defined on l",
+      "kinds": [
+        "code"
+      ],
+      "links": 16,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 92964,
+      "promise": "・Integration tests that cover the whole compiler pipeline\n・Golden tests (a.k.a. fixture tests) are available\n・Comparisons with other languages (Plutus, Aiken) as written text\n・A website with documentation",
+      "criteria": "・1-2. Provided tests pass, there are no known failing tests, or, if there are and the fix is unfeasible, the limitations must be stated in the documentation\n・3. Differences in architectural decisions between the languages are highlighted in the docs\n・4. A provided website can be used to browse the documentation.",
+      "report": "After receiving reviewer feedback, we decided it would likely be best to cut a video discussing the requested points and highlighting what has been accomplished.\n\nPlease find this video here:\n\nhttps://www.youtube.com/watch?v=pIPRpRKnuKY\n\nAmong other things, it covers:\n- testing\n- tracing\n- building the environment and running the tests\n\nIn the video, you'll find that all tests are passing with a description of the limitations forced upon us by PIR. \n\nFor the differences between the highlighted languages, see here:\n\nhttps://github.com/mlabs-haskell/purus/wiki/Comparison-With-Other-Languages\n\nFor the documentation website, see here:\n\nhttps://github.com/mlabs-haskell/purus/wiki",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 6,
+      "month": "8",
+      "cost": 129522,
+      "promise": "・Reusable project template (including a demo)\n・Modified Spago (PureScript package manager) is made available to build Purus-based projects. Alternatively, an entirely new tool is available for the same purpose.",
+      "criteria": "・A template can be instantiated and an example validator script can be compiled successfully\n・A bundler is provided, which can be used to build the UPLC binary from the source code with one command.",
+      "report": "Content: \n\nPlease find our PoA report here:\nhttps://github.com/mlabs-haskell/purus-pkg/blob/jaredponn/catalyst-report/docs/catalyst-milestone-6.md\n\nWhich includes the updated closeout video:\nhttps://www.youtube.com/watch?v=ID6yAwrJtmI\n\nAnd closeout report:\nhttps://drive.google.com/file/d/11xjh_32SWhnW-nSE1ckcOoDx66yzhzg-/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

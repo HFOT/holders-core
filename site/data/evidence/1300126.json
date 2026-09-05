@@ -1,0 +1,72 @@
+{
+  "title": "Lucid Evolution 2.0 - Blueprint & Enhanced Plutus Schema",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 60000,
+      "promise": "Implement core data schema structures using Effect Schema.",
+      "criteria": "Core schema structures must support the following Plutus data types:\n- Integer\n- ByteString\n- List (including nested lists)\n- Map\n- Constr (data with constructors)\nUtility functions (e.g., encoding and decoding) must leverage Effect Schema for:\n- Compile-time type safety validation of Plutus Data.\n- Runtime type parsing to ensure Plutus data integrity during execution.\n- All core operations must pass comprehensive tests for roundtrip encoding and decoding.",
+      "report": "This first milestone of Lucid Evolution 2.0 (Blueprint & Enhanced Plutus Schema) is focused on implementing the core data schema structures using *Effect Schema* to support Plutus data types. \nSummary Report\nThis report summarizes the design, implementation, testing, and documentation efforts aimed at providing a flexible, type-safe infrastructure for handling complex Cardano data types.\nhttps://github.com/Anastasia-Labs/project-close-out-reports/blob/main/f13-lucid-evolution-closeout-report/Milestone%201/Milestone%201%20-%20Summary%20Report/main.pdf\nTest Report \nThis document presents the results of rigorous unit and schema-based tests executed to verify the implementation of Lucid Evolution’s core data schema structures and utility functions using Effect Schema. The tests cover all Plutus primitive data types (*`Integer`*, *`ByteString`*, *`List`*, *`Map`*, *`Constr`*), encoding/decoding utilities, and schema combinators, demonstrating both compile-time safety and runtime validation., ensuring the reliability and functionality of the implementation.\nhttps://github.com/Anastasia-Labs/project-close-out-reports/blob/main/f13-lucid-evolution-closeout-report/Milestone%201/Milestone%201%20-%20Validation%20Report/main.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 60000,
+      "promise": "Automatic derivation of Datum and Redeemer types from plutus blueprints.\nIncludes practical examples and automatic derivation methods when reading the plutus blueprint files.\nEnsures compatibility with CIP-57 blueprint standards.",
+      "criteria": "The type safe derivation framework must correctly derive Datum and Redeemer types from a mocked Aiken Contract.\nA Test must ensure type safety by using runtime validations with Effect Schema.\nA Test Must demonstrate runtime integrity checks for derived data, including error messages for invalid data.\nPractical examples will be showcased in a video for easier review",
+      "report": "We are happy to submit our Proof of Achievement for the \"Safe Deserialization and Type-Safe Derivation\" milestone. For detailed evidence and verification, please see the comprehensive report.\n\nMilestone Report:\nComplete documentation of all deliverables including:\nCIP-57 Blueprint parser with Effect Schema validation (1,348 lines implementation)\nAutomatic Datum and Redeemer type derivation from Plutus blueprints\n6 passing tests verified in CI with 100% coverage of core functionality\nType safety enforcement with malformed data rejection and clear error messages\nRuntime integrity checks with roundtrip encode/decode verification\nInteractive web tool for blueprint code generation with sample loading\nVideo demonstration of practical usage with mocked Aiken contract\nSee report for full details on acceptance criteria verification, code artifacts (290 lines types, 864 lines codegen, 194 lines config, 120 lines tests), test coverage breakdown, and repository information.\nReport PDF: https://drive.google.com/file/d/1pdx2q_1Y6P3Ia5gxU9RzB7MV7wjTYF7X/view?usp=drive_link\nVideo Demonstration: https://drive.google.com/file/d/1f5Uo5sUPo1qTH3vGY1r4YymwRMC1uHym/view?usp=sharing\nProject Context:\nEvolution-SDK is the continuation of lucid-evolution by the same core maintainer, now incubated under IntersectMBO for long-term sustainability and alignment with Cardano ecosystem standards.\nRepository: https://github.com/IntersectMBO/evolution-sdk\nCI Verification: https://github.com/IntersectMBO/evolution-sdk/actions/runs/19688471678",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 40000,
+      "promise": "Implement configurable encoding options (bounded/canonical and unbounded/non-canonical).\nDevelop customizable data handling for specific datum components.\nIntegrate schema package into the transaction builder.\nEnhance support for recursive types in Plutus data structures.",
+      "criteria": "Implement configurable encoding options for both canonical and non-canonical formats:\nProvide two examples on how to apply specific encoding strategies to Datum and Redeemer types.\nSupport nested data structures, including recursive schema handling for complex data structures, such as maps, lists, and nested records.\nProvide examples demonstrating recursive schema handling in Plutus contracts.\nIntegrate the plutus data schema package with the transaction builder for full validation of at least one transaction.",
+      "report": "We are happy to submit our Proof of Achievement for the \"Advanced Features and Integration\" milestone. For detailed evidence and verification, please see the comprehensive report.\nMilestone Report:\nComplete documentation of all deliverables including:\nTSchema and Data modules with canonical and non-canonical encoding options\n142 passing tests (116 Data + 26 TSchema) verified in CI\nSimple datum encoding demonstrated with Token struct and basic type examples\nNested datum encoding demonstrated with Asset/Token nested structures\nRecursive type support with comprehensive roundtrip tests (50+ roundtrip tests)\nCBOR codec options, mode switching API, and complete type safety with Effect schemas\nSee report for full details on acceptance criteria verification, code artifacts (1,569 lines implementation, 1,158+ lines tests), test coverage breakdown, and repository information.\n\nReport PDF: https://drive.google.com/file/d/13x61Qxg6dYX81lPFGCObz4y2xGXwVCxK/view?usp=sharing\nProject Context:\nEvolution-SDK is the continuation of lucid-evolution by the same core maintainer, now incubated under IntersectMBO for long-term sustainability and alignment with Cardano ecosystem standards.\nRepository: https://github.com/IntersectMBO/evolution-sdk\nCI Verification: https://github.com/IntersectMBO/evolution-sdk/actions/runs/19054005350/job/54420383679",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "12",
+      "cost": 10000,
+      "promise": "Provide utility functions for conversion from CBOR to Plutus types and vice versa:\n- Plutus Address\n- Plutus Value\n- Plutus Credentials\n- Plutus OutputReference\n- Plutus CIP68 metadata\n-Implement a comprehensive test suite for these utility functions",
+      "criteria": "- Implement functions to correctly convert CBOR data into the following Plutus types:\n - Plutus Address\n - Plutus Value\n - Plutus Credentials\n - Plutus OutputReference\n - Plutus CIP68 Metadata\n- Ensure each conversion function is capable of handling both valid and invalid CBOR inputs, with appropriate error handling for unsupported or malformed data.\n- Each conversion must be tested, ensuring full coverage.",
+      "report": "We are happy to submit our Proof of Achievement for the \"Utility Functions for Cardano Types\" milestone. For detailed evidence and verification, please see the comprehensive report.\nMilestone Report:\nComplete documentation of all deliverables including:\n・All five Plutus type conversion functions: Address, Value, Credentials, OutputReference, and CIP68 Metadata\n・55 passing tests (13 Address + 12 Value + 10 Credential + 9 OutputReference + 11 CIP68Metadata) verified in CI\n・CBOR ↔ PlutusData bidirectional conversion with 6 codec methods per type\n・Comprehensive error handling with 24 error handling tests covering invalid inputs, malformed CBOR, and data structure violations\n・100% test coverage across all utility functions\n・Complete documentation with real-world examples, API reference, and best practices\n\nSee report for full details on acceptance criteria verification, implementation evidence, test strategy, and repository information.\nReport PDF: https://drive.google.com/file/d/1bxyliS9zbiL5i7GhbMsywJtSYyqnMkI-/view?usp=sharing\nProject Context: \nEvolution-SDK is the continuation of lucid-evolution by the same core maintainer, now incubated under IntersectMBO for long-term sustainability and alignment with Cardano ecosystem standards.\nRepository: https://github.com/IntersectMBO/evolution-sdk\nCI Verification: https://github.com/IntersectMBO/evolution-sdk/actions/runs/19791288797\nDocumentation: https://intersectmbo.github.io/evolution-sdk/docs/encoding/plutus/",
+      "kinds": [
+        "code",
+        "doc",
+        "live"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "13",
+      "cost": 30000,
+      "promise": "Comprehensive Documentation: Aligned with Cardano standards, providing clear developer guidance for using Lucid Evolution.\nProject Closeout Report: Summarizing project achievements, challenges, lessons learned.\nDemonstration Video: Showcasing key features and improvements of Lucid Evolution.",
+      "criteria": "Lucid Evolution: Seamlessly integrates with the current Cardano infrastructure.\nDocumentation: Provides clear, actionable guidance for developers using Lucid Evolution.\nProject Closeout Report: Summarizes the project's achievements, challenges, and lessons learned.",
+      "report": "We are happy to resubmit our Proof of Achievement. This resubmission directly addresses the feedback from both reviewers on the previous submission.\n\nA. Output: Project Closeout Video\nAcceptance criteria: A public closeout video of 2 to 5 minutes with clear commentary explaining what the project is about and how the goals were achieved.\nEvidence: https://youtu.be/FUlJR-vAurM (YouTube, Public, 3 minutes 12 seconds). The video is fully narrated as requested by the reviewer: it explains the problem the project set out to solve, walks through all four milestones with the delivered code and tooling, and closes with how each goal of the original proposal was met.\n\nB. Output: Comprehensive Documentation\nAcceptance criteria: Documentation aligned with Cardano standards, providing clear developer guidance for using Lucid Evolution.\nEvidence: \nhttps://intersectmbo.github.io/evolution-sdk/docs/encoding/data/ (PlutusData)\nhttps://intersectmbo.github.io/evolution-sdk/docs/encoding/tschema/ (TSchema)\nhttps://intersectmbo.github.io/evolution-sdk/docs/encoding/plutus/ (Plutus Types)\nand the interactive Blueprint code generator: https://intersectmbo.github.io/evolution-sdk/tools/blueprint-codegen/\n\nC. Output: Project Closeout Report\nAcceptance criteria: Summarizes the project's achievements, challenges, and lessons learned.\nEvidence: https://drive.google.com/file/d/1APUF9_KVYdqVUJPUFJfK1DRDqTkM0skQ/view\n\nRepository: https://github.com/IntersectMBO/evolution-sdk\n\nNote on the first reviewer's comment: the Proofs of Achievement for Milestones 2, 3, and 4 are each approved by both reviewers and are awaiting Catalyst admin signoff only. We have requested these signoffs through Catalyst Support in our acknowledgment of the F13 conclusion plan (28 July 2026) and would appreciate them being processed so this Final Milestone review can conclude.",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "title": "Production grade code education: Aiken, Plutarch & PlutusTx",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "・Adapted PlutusTx request parsing code as a standalone validator and decoupled from the WingRiders DEX V1 logic\n・A script for the deployment of Plutus smart contracts on Testnet\n・Unit tests for the standalone validation",
+      "criteria": "・The development environment is fully configured with all dependencies. \n・The tools that needed to build, test and deploy the adapted code should be documented in the public GitHub repo.",
+      "report": "Production grade code education: Aiken, Plutarch & PlutusTx M1 evidence:\nReadme with clear instructions for setting up the environment, running the unit tests and exporting the contracts: https://github.com/WingRiders/parsing-education/tree/plutus-tx/plutus-tx\nReadme with clear instructions for deploying the contracts: https://github.com/WingRiders/parsing-education/tree/plutus-tx/deploy\nAdapted source code: https://github.com/WingRiders/parsing-education/tree/plutus-tx/plutus-tx/src\nExample Testnet transactions:\n・An example transaction with 1 applied request: https://preprod.cardanoscan.io/transaction/e712d3e68556e1dfb3d3a86ee64dbd765bedaebd265ca612840a302603c5c8e2\n・An example transaction with 4 applied requests: https://preprod.cardanoscan.io/transaction/7511201af041f9579ba67469740e8d1754b5e8e1fb1fbfb55e519f531c0ed83c",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "・Adapted Plutarch request parsing code as a standalone validator, matching the PlutusTx version algorithmically, and decoupled from WingRiders DEX V2 logic\n・Deployable Plutarch smart contract on Testnet\n・Unit tests for the standalone validator",
+      "criteria": "・The development environment is fully configured with all dependencies. \n・The tools that needed to build, test and deploy the adapted code should be documented in the public GitHub repo.",
+      "report": "Resubmit with a fixed link\nReadme with clear instructions for setting up the environment, running the unit tests and exporting the contracts: https://github.com/WingRiders/parsing-education/tree/plutarch/plutarch\nThe code features inline comments.\nReadme with clear instructions for deploying the contracts: https://github.com/WingRiders/parsing-education/tree/plutarch/deploy\nAdapted source code: https://github.com/WingRiders/parsing-education/tree/plutarch/plutarch/src\nExample Testnet transactions:\n・An example transaction with 1 applied request: https://preprod.cardanoscan.io/transaction/e712d3e68556e1dfb3d3a86ee64dbd765bedaebd265ca612840a302603c5c8e2\n・An example transaction with 4 applied request: https://preprod.cardanoscan.io/transaction/19a54912f51b9bf2fd3616911767aa016ca3a7fcac64ad1560fc4275674af8e9\n・An example transaction with 10 applied requests: https://preprod.cardanoscan.io/transaction/07e90862c39548bc7bc973b18212ab2c1040120ae137617e7d44bc1719a8a1f9\n・An example transaction with 20 applied requests: https://preprod.cardanoscan.io/transaction/0d983bab4a302efc16fa28be3ce2f819627bc2dd2957d16e3298aba09b7ce87a\n・An example transaction with 30 applied requests: https://preprod.cardanoscan.io/transaction/86a5c6567b5c2f9f3e060c5aa9c843a3df98e482f48ab677141fb6b5d7da0e29\n・An example transaction with 38 applied requests: https://preprod.cardanoscan.io/transaction/cb2b5cef07a3f6ec31de8c9fccf31e67254573e3e582f2883fc5ea29c4dc3dc7",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 18
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "・Aiken request parsing source code matching the PlutusTx and Plutarch version algorithmically.\n・Deployable Aiken smart contract on Testnet\n・Unit tests for the Aiken implementation to validate alignment with the PlutusTx and Plutarch logic.\n・Test net results comparing performance, fees, and upper batch limits of the Aiken implementation with the PlutusTx and Plutarch versions.",
+      "criteria": "・The development environment is fully configured with all dependencies. \n・The tools that needed to build, test and deploy the adapted code should be documented in the public GitHub repo. \n・Aiken validator is deployed on the public test net with analysis of performance differences (e.g., execution speed), transaction fees and upper batch limits.",
+      "report": "Readme with clear instructions for setting up the environment, running the unit tests and exporting the Aiken contracts: https://github.com/WingRiders/parsing-education/tree/aiken/aiken\nThe code features inline comments.\nReadme with clear instructions for deploying the contracts: https://github.com/WingRiders/parsing-education/tree/aiken/deploy\nAdapted source code: https://github.com/WingRiders/parsing-education/tree/aiken\nExample Aiken Testnet transactions:\n・An example transaction with 1 applied request: https://preprod.cardanoscan.io/transaction/9265f197826b710af260100884428286a7062cd2980013d46780c89310fe6daf\n・An example transaction with 2 applied requests: https://preprod.cardanoscan.io/transaction/e4b00e4034876df06d4b1471a10b47d9cbf6a93d448ef178b712091a9dad3bf8\n・An example transaction with 4 applied requests: https://preprod.cardanoscan.io/transaction/c63da4ce0bbb4c16c2eebb6c61d2515d8f5e6b519fa0ffe4f67ef7e0eb692fe6\n・An example transaction with 10 applied requests: https://preprod.cardanoscan.io/transaction/95a49f7cbd3d868303cd90c409bd929066e2c4877ff34b49508550be3a490c6c\n・An example transaction with 20 applied requests: https://preprod.cardanoscan.io/transaction/a320d86221ae74da20efd0cf88e2e394b1e78c4f80e2f526552b239d37e477c2\n・An example transaction with 24 applied requests: https://preprod.cardanoscan.io/transaction/f39fdfdfccc08ddaebdad711d5f1d4580c58172638e97c1f232d1d6c5daae7e1\n\nTest net results comparing performance, fees, and upper batch limits of the Aiken implementation with the PlutusTx and Plutarch versions: https://github.com/WingRiders/parsing-education/tree/master/README.md",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 20
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 15000,
+      "promise": "・A 2/3 page written summary ‘Project Close-out Report\n・Short video ‘Project Close-out Video",
+      "criteria": "・Project Close-out Report’ listing KPIs and how they were (or were not) addressed and what the next stage plans are with the product or service that was developed.\n・Project Close-out Video’ outlining the project achievements and deliverables.",
+      "report": "Dear Reviewer,\nBelow are all relevant links for the project Production Grade Code Education: Aiken, Plutarch & PlutusTx – including the Project Close-out Report and Video, source code, documentation, and benchmark results.\n﻿Links to Other Relevant Project Sources or Documents: • GitHub Repository\n • Benchmark & Analysis Report • PlutusTx Source Code\n • PlutusTx Deployment Scripts\n • PlutusTx Implementation – Setup, Testing & Export Instructions • Plutarch Source Code\n • Plutarch Deployment Scripts\n • Plutarch Implementation – Setup, Testing & Export Instructions • Aiken Source Code\n • Aiken Deployment Scripts\n • Aiken Implementation – Setup, Testing & Export InstructionsLink to Close-out Video\n • https://www.youtube.com/watch?v=Lm82tvDaZBc\nLink to Project Close-out Report\n • Project Close-out Report PDF Best regards,\n WingRiders Team",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

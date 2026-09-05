@@ -1,0 +1,64 @@
+{
+  "title": "OpenMM: Cardano’s Universal Market Making Toolkit",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 20000,
+      "promise": "・Core SDK Architecture with extensible plugin system\n・MEXC exchange integration (REST + WebSocket)\n・Basic grid trading strategy with risk management framework\n・Portfolio balance monitoring and safety reserve management\n・Test suite covering all core functionality (90%+ coverage)\n・Published NPM test package",
+      "criteria": "・SDK successfully connects to MEXC API and executes trades for any supported Cardano native token\n・Grid trading strategy operates continuously without errors for 24+ hours\n・Portfolio balance tracking maintains 50/50 target ratio with configurable reserves\n・Plugin architecture allows addition of new exchanges with standardized interface\n・Test coverage exceeds 90% for all core modules\n・NPM package published to test registry",
+      "report": "A. Output: Core SDK Architecture with extensible plugin system\n\n Acceptance criteria: Plugin architecture allows addition of new exchanges with standardized interface\n Evidence:\n - Base Strategy Pattern: /src/core/strategy/base-strategy.ts\n - Exchange Connector Interface: /src/core/exchange/base-exchange-connector.ts\n - MEXC Implementation: /src/exchanges/mexc/mexc-connector.ts\n - Type System: /src/types/ directory with standardized interfaces\n - GitHub Link: https://github.com/3rd-Eye-Labs/OpenMM/tree/main/src/core\n\n B. Output: MEXC exchange integration (REST + WebSocket)\n\nAcceptance criteria: SDK successfully connects to MEXC API and executes trades for any supported Cardano native token\n Evidence:\n - REST API Service: /src/exchanges/mexc/mexc-rest-service.ts\n - WebSocket Implementation: /src/exchanges/mexc/mexc-websocket.ts\n - User Data Streams: /src/exchanges/mexc/mexc-user-stream.ts\n - Authentication & Security: HMAC-SHA256 implementation\n - GitHub Link: https://github.com/3rd-Eye-Labs/OpenMM/tree/main/src/exchanges/mexc\n\n C. Output: Basic grid trading strategy with risk management framework\n\n Acceptance criteria: Grid trading strategy operates continuously without errors for 24+ hours\n Evidence:\n - Grid Strategy: /src/strategies/grid/grid-strategy.ts\n - Order Manager: /src/strategies/grid/grid-order-manager.ts\n - Grid Calculator: /src/strategies/grid/grid-calculator.ts\n - Risk Manager: /src/core/risk-management/risk-manager.ts\n - Concurrency Protection: Infinite loop prevention and debouncing\n - GitHub Link: https://github.com/3rd-Eye-Labs/OpenMM/tree/main/src/strategies/grid\n\nD. Output: Portfolio balance monitoring and safety reserve management\n\n Acceptance criteria: Portfolio balance tracking maintains 50/50 target ratio with configurable reserves\n Evidence:\n - Balance Monitoring: Real-time balance tracking in grid strategy\n - Safety Reserves: maxPositionSize and safetyReservePercentage in RiskManager\n - Portfolio State: Comprehensive balance validation and",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 16,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 20000,
+      "promise": "・Gate.io exchange integration with full Cardano native token support\n・Bitget exchange integration with unified trading interface\n・Real-time price aggregation service across all connected exchanges (3 exchanges)\n・Multi-exchange trading documentation",
+      "criteria": "・SDK supports 3 exchanges (MEXC, Gate.io, Bitget) with identical interface\n・Price aggregation delivers real-time updates\n・All available Cardano native tokens tradeable across supported exchanges with real-time data displayed to the user",
+      "report": "OpenMM Milestone 2 has been successfully completed with all deliverables implemented and tested: \n・Bitget Exchange Integration - Full REST + WebSocket implementation \n・Gate.io Exchange Integration - Full REST + WebSocket implementation \n・Real-time Price Aggregation - Multi-exchange price validation service \n・Grid Strategy - Multi-exchange trading capability \n・CLI Tool - Comprehensive multi-exchange command support \n・Updated Documentation - Complete multi-exchange usage guides\n\nOutput: Gate.io Exchange Integration (REST + WebSocket) \nAcceptance criteria: SDK successfully connects to Gate.io API and executes trades for any supported trading pair with full WebSocket support for real-time data\nEvidence: \n- Gate.io Connector: /src/exchanges/gateio/gateio-connector.ts \n- Authentication Service: /src/exchanges/gateio/gateio-auth.ts \n- WebSocket Implementation: /src/exchanges/gateio/gateio-websocket.ts \n- User Data Streams: /src/exchanges/gateio/gateio-user-stream.ts \n- Data Mapping: /src/exchanges/gateio/gateio-data-mapper.ts \n- GitHub Link: https://github.com/3rd-Eye-Labs/OpenMM/tree/main/src/exchanges/gateio\n\nOutput: Bitget Exchange Integration (REST + WebSocket) \nAcceptance criteria: SDK successfully connects to Bitget API and executes trades for any supported trading pair with full WebSocket support for real-time data \nEvidence: \n- Bitget Connector: /src/exchanges/bitget/bitget-connector.ts\n- Authentication Service: /src/exchanges/bitget/bitget-auth.ts \n- WebSocket Implementation: /src/exchanges/bitget/bitget-websocket.ts \n- User Data Streams (Private User channels): /src/exchanges/bitget/bitget-user-stream.ts \n- Data Mapping: /src/exchanges/bitget/bitget-data-mapper.ts \n- GitHub Link: https://github.com/3rd-Eye-Labs/OpenMM/tree/main/src/exchanges/bitget\n\nOutput: Real-time Price Aggregation Service Across All Connected Exchanges \nAcceptance criteria: Multi-source price validation & aggregation across MEXC, Bitget, and Gate.io exchanges \nEvidence: \n- Multi-Exchange Pric",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 20000,
+      "promise": "・Kraken exchange integration completing 4-exchange support\n・Dynamic order level generation with configurable pricing (20-level capability)\n・CLI tooling for strategy configuration and monitoring\n・Enhanced grid trading with dynamic spread adjustment based on volatility",
+      "criteria": "・Complete 4-exchange integration (MEXC, Gate.io, Bitget, Kraken) operational\n・Dynamic order placement with 20-level strategy (10 buy, 10 sell) operational\n・CLI tools enable complete strategy management (Open/Cancel orders, Trade, Fetch Price/Balance)\n・Grid trading adapts spreads automatically based on market volatility indicators",
+      "report": "A. Output: Kraken Exchange Integration (REST + WebSocket)\nAcceptance criteria: SDK successfully connects to Kraken API and executes trades for any supported trading pair with full WebSocket support for real-time data, completing 4-exchange integration (MEXC, Gate.io, Bitget, Kraken)\n\nEvidence:\nKraken Connector: /src/exchanges/kraken/kraken-connector.ts\nAuthentication Service: /src/exchanges/kraken/kraken-auth.ts\nWebSocket Implementation: /src/exchanges/kraken/kraken-websocket.ts\nUser Data Streams (Private User channels): /src/exchanges/kraken/kraken-user-stream.ts\nData Mapping: /src/exchanges/kraken/kraken-data-mapper.ts\nGitHub Link: https://github.com/3rd-Eye-Labs/OpenMM/tree/main/src/exchanges/kraken\n\nB. Output: Dynamic Order Level Generation with Configurable Pricing (20-level capability)\nAcceptance criteria: Dynamic order placement with 20-level strategy (10 buy, 10 sell) operational across all 4 exchanges\n\nEvidence:\nGrid Calculator (spacing & sizing models): /src/strategies/grid/grid-calculator.ts\nDynamic Grid Config Types: /src/types/grid.ts\nGrid Order Manager: /src/strategies/grid/grid-order-manager.ts\nGrid Strategy Orchestrator: /src/strategies/grid/grid-strategy.ts\nStrategy Factory (config builder): /src/core/strategy/strategy-factory.ts\nGitHub Link: https://github.com/3rd-Eye-Labs/OpenMM/tree/main/src/strategies/grid\n\nC. Output: CLI Tooling for Strategy Configuration and Monitoring\nAcceptance criteria: CLI tools enable complete strategy management (Open/Cancel orders, Trade, Fetch Price/Balance) across all 4 exchanges\n\nEvidence:\nCLI Main Entry: /src/cli/cli.ts\nOrder Commands (Open/Cancel): /src/cli/commands/orders.ts\nTrade Command: /src/cli/commands/trade.ts\nBalance Command: /src/cli/commands/balance.ts\nTicker Command: /src/cli/commands/ticker.ts\nOrderbook Command: /src/cli/commands/orderbook.ts\nPrice Comparison Command: /src/cli/commands/price-comparison.ts\nExchange Factory: /src/cli/exchange-factory.ts\nGitHub Link: https://github.com/3rd-Eye-Labs/OpenMM/",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 17,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 25000,
+      "promise": "・Final close-out report\n・Final closeout video\n・Final link to GitHub repo",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Final link to GitHub repo is publicly available",
+      "report": "Link to final closeout report: https://drive.google.com/file/d/1JF63VyZEmjZSbcOx_Sro_7eC-3lnl27I/view?usp=sharing\nLink to final closeout video: https://www.youtube.com/watch?v=raT0G7Un74E\nLink to GitHub repo: https://github.com/3rd-Eye-Labs/OpenMM",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

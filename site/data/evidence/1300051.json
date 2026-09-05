@@ -1,0 +1,91 @@
+{
+  "title": "Cardano Partnerchain Reference Implementation by TxPipe",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 35000,
+      "promise": "1) Discovery process report: A report that includes a description of the activities and outcomes of the discovery process. This process involves reaching out to developer teams in the Cardano ecosystem, explaining the goals of the project and asking them to complete a small survey with feedback. The results will be used to define the concrete use-case to implement.\n2) Substrate node client scaffold: An off-the-shelf Substrate client using the latest available template. This scaffold will contains generic artifacts required to begin with feature development. This scaffold will be manifested as a Rust project in a public repository in Github.",
+      "criteria": "1) The discovery process report provides an actionable insight to begin development:\n・At least 10 developers have been contacted.\n・Survey responses follow a pre-defined survey format.\n・A concrete use case has been selected based on responses.\n\n2) ﻿The project’s repository and source-code are suitable for feature development:\n・Substrate template primitives (such as consensus pallet, frame runtime, and chain spec) are clearly defined.\n・Rust code passes formatting and linting checks (cargo fmt and cargo clippy show no warnings), ensuring adherence to style conventions and best practices.\n・The rep",
+      "report": "Discovery process report.\nhttps://docs.google.com/document/d/1M6W_bv6s3-Q4HAr4zZCMtfjCjoutFDDXdZSeqiDeEAY/edit?usp=sharing\nSubstrate node client scaffold.\nWe began by investigating the currently available Substrate templates, and we decided on using the minimal template. The repository starting point is the minimal template, and we will build on top of this. We also included important documentation such as installation and running instructions, contribution and release procedure guidelines. We also added a CI action to verify the code on pull requests.\nDeliverables:\nDocument containing the Discovery process report:\nPublic repository: https://github.com/txpipe-shop/partnerchain-reference-implementation\nRead me with instructions and links to relevant documentation: \nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/blob/main/README.md\nExamples of valid CI pipeline executions:\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/actions\nhttps://docs.google.com/document/d/1XojwarHVAlNZR3S2woI8OmMzXG37WZvlQBE9VMxXlCQ/edit?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "9",
+      "cost": 35000,
+      "promise": "1) Initial Substrate node customizations: A Substrate client that will include the required high-level customizations. This changes will include the selection of a consensus mechanism, a ledger model and storage structure. This client won't perform any real functions but will be able to bootstrap and connect to peers, serving as a robust foundation for further development.\n2) Dev activity log: A detailed log of the development activities that were required for the Substrate client customization. This log will serve as guidance for new developers wishing to understand the process with the goal of implementing their own versions.",
+      "criteria": "1) A developer is able to use the initial customized Substrate node to build features on top:\n・The provided codebase includes a consensus mechanism, a basic ledger model and runtime, a storage mechanism and basic schema.\n・A developer can clone, compile and execute the Substrate node without extra modifications to the codebase.\n・The Substrate node should be able to initialize runtime, establish network connectivity and synchronize with other peers.\n\n2) The implementation process is documented and available for the public use:\n・The public can recognize in the documents the key design decisions r",
+      "report": "Link to source-code available in the Github repository:\n﻿https://github.com/txpipe-shop/partnerchain-reference-implementation/tree/release-v0.0.2\nLinks to development instructions and dev log:\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/blob/5f933766f1eb580397122a8a4aa77a5c3cdaf3c0/README.md\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/blob/5f933766f1eb580397122a8a4aa77a5c3cdaf3c0/docs/dev_log.md\nVideo showing how to start developing on top of the Substrate node:\nhttps://youtu.be/0KD0sHS_sMw",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "10",
+      "cost": 33000,
+      "promise": "1) Partnerchain SDK integration: Our customized Substrate client that is now integrated with the Partnerchain SDK. This means that the node will be able to participate in the consensus mechanism by providing a valid Partnerchain configuration and keys.\n2) Governance contracts on L1: An instance of the governance contracts for a particular partnerchain deployed in the Cardano preview network. This governance contracts will validate the Pools operators that are able to participate of the Partnerchain consensus.\n3) Dev activity log: A detailed log of the development activities that were required for the Substrate client customization. This log will serve as guidance for new developers wishing to understand the process with the goal of implementing their own versions.\n4) Usage instructions: Detailed instructions on how to prepare the required Partnerchain contracts and how to run our custom client as part of the partnerchain.",
+      "criteria": "1) The customized Substrate client should participate of the Partnerchain consensus\n・A developer is able to clone and compile the Substrate node without extra modifications to the codebase\n・The Rust project should compile and the binary executables for the Substrate node should be generated. This is the binary that allows a user to start the Substrate node.\n・A developer can use the example Partnerchain configuration and instructions to join their node to the Partnerchain\n・The binary executable is able to start and the required bootstrapping procedures are executed. This procedures include load",
+      "report": "Link to source-code available in the Github repository: \nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/tree/release-v0.0.3\nLink to public explorers showing particular instances of the L1 contracts:\n・initial governance: https://preview.cardanoscan.io/transaction/f7a492f9e6162fc261b082139181549044877cf543c89e131a44b220e161b60f\n・permissioned candidates: https://preview.cardanoscan.io/transaction/dcc75443501ea4cc56ae9cc3b7b2daee304ed950deae876d8f3835ca8162e570\n・Dparam: https://preview.cardanoscan.io/transaction/23e6c31779701747b3e3f7f3b499339fc4c58233abb8ce071575b08f0c67a553\n\nLinks to development instructions and dev log:\n・Markdown.\n・PDF.\n\nVideo showing the node participating of a Partnerchain network:\nhttps://youtu.be/5A1FeTcyQDQ",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "11",
+      "cost": 34572,
+      "promise": "1) Use-case specific documentation: A document that explains what are the required features and implementation details to develop the use-case that was defined during the discovery process in MS1.\n2) Use-case specific features: The set of features that transforms our generic Substrate client into one that is specialized to fulfill a specific goal (oracle, game, etc). The concrete set of features to develop will depend on the outcome from the discovery report in MS1. The features will be fully functional but scoped to a level of detail reasonable for a reference implementation (as opposed to a mainnet-ready solution).\n3) Dev activity log: A detailed log of the development activities that were required for the Substrate client customization. This log will serve as guidance for new developers wishing to understand the process with the goal of implementing their own versions.",
+      "criteria": "1) Documentation clearly outlines the key design decisions and technical specifications regarding features associated with the use-case defined in MS1 for the public usage.\n2) A developer is able to use the customized Substrate node to build features on top:\n・The provided codebase for the Substrate client includes the required modifications specific to the defined use-case.\n・A developer can clone, compile and execute the Substrate client without extra modifications to the codebase.\n・The Substrate client successfully initializes, and should be able to execute use-case-specific transactions.\n\n3)",
+      "report": "Deliverables:\nLink to documentation site with development instructions and dev log:\nhttps://drive.google.com/file/d/1ZLQBj_nfhJenR2ZrdG-urvN0DEL1sOu_/view?usp=sharing\nLink to source-code available in the Github repository: \nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/tree/release-v0.0.4\nVideo showing how to start developing on top of the Substrate node: https://youtu.be/NVXloKz6mIc?si=8mdXYvaPCyyuT46H",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "12",
+      "cost": 30000,
+      "promise": "1) A step-by-step customization tutorial: An aggregation of the dev activity log from past milestones into a well-organized tutorial that allows a developer to replicate the steps required to customize a generic Substrate node into a Partnerchain node with use-case specific features. \n2) Operation instructions: A concise but comprehensive document that explains how to operate the customized version of the Substrate client that was developed. These instructions include how to bootstrap, monitor and interact with the customized Substrate client.\n3) A binary release: A publicly available binary that corresponds to a tagged release of the customized Substrate client. This binary will allow developers to download, install and run the client without requiring any compilation. The binary will contain all features developed throughout the proposal.",
+      "criteria": "1) The tutorial to implement the Partnerchain node is available for the public use:\n・The tutorial covers the same level of customization as the provided codebase.\n・A developer can follow the tutorial to replicate the Substrate node development.\n\n2) Instructions on how to operate the customized client are publicly available:\n・The operation instructions explains to the user how to initialize the node.\n・The operation instructions explain to the user how to interact with the node.\n\n3) A developer is able to install and run the binary release of the Substrate node:\n・Developers can download, install",
+      "report": "1) A step-by-step customization tutorial: \n\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/blob/main/docs/tutorial/README.md\n\n2) Operation instructions:\n\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/blob/main/docs/tutorial/operating_instructions.md\n\n3) Binary release:\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/releases/tag/v0.0.5\n\n4) Video:\n\nhttps://youtu.be/H6PLn7F5zfQ",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "13",
+      "cost": 29571,
+      "promise": "・Publicly available source-code of the complete proposal: Source code publicly available, encapsulating all the features for this proposal. This will ensure transparency and open collaboration, while allowing the community and other developers to contribute, audit, or modify as per their needs. This code will be hosted on a public repository, adhering to Apache 2.0 license.\n・Fully-featured binary release and install scripts: A tagged released of the feature-complete toolchain for all major operating systems: macOS, Windows, and Linux. It entails the complete tool containing all of the features described in previous milestones.\n・Revised documentation website: A comprehensive documentation website that has been revised and preliminar feedback from users has been applied. The site includes the customization tutorial and the operation instructions.\n・A closeout video showcasing the final output of the project.\n・A closeout report describing the project process and outcome.",
+      "criteria": "・The final reference implementation matches the features presented in the proposal\n・The Substrate client runs a Cardano Partnerchain\n・The use-case customizations matches the discovery from MS1\n・The final documentation serves as reasonable material for new developers\n・The docs explain how to start development from a Substrate generic template\n・The docs explain how to integrate the Partnerchain logic\n・The docs explain, as an example, how to apply features for a particular use-case\n・The closeout video complies with Catalyst requirements\n・The closeout report complies with Catalyst requirements",
+      "report": "Source-code available in the Github repository : https://github.com/txpipe-shop/partnerchain-reference-implementation\nLink to documentation site : https://github.com/txpipe-shop/partnerchain-reference-implementation/tree/main/docs\nLink to closeout video uploaded to Youtube : https://youtu.be/1yqOK0GY3MI?si=2iTTU631dROsMgOg\nLink to closeout report uploaded to Google drive: https://drive.google.com/file/d/14VD8WBTnAWoZwYi_Sepo1qxPeCZjHVMC/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

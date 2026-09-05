@@ -1,0 +1,56 @@
+{
+  "title": "Andamio Purpose Sidechain / Layer 2 Concept",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "・Detailed project plan\n・List of technical dependencies and description of how each will be used and interact with each other\n・Identify smart contracts that will be migrated and the transactions\n・Live deployment plans\n・Team roles and responsibilities defined\n・Initial research report on potential solutions and challenges",
+      "criteria": "・Project plan approved by all team members\n・List of technical dependencies and description of how each will be used and interact with each other\n・Documentations mapping to the dependencies\n・List which tools are being tested and considered for use in this project\n・Identify smart contracts that will be migrated and the transactions\n・Existing contracts information currently testing in cardano preprod\n・Live deployment plans\n・Video recording of consent process for project plan approval\n・Team members assigned and onboarded\n・Research report reviewed and validated by the team",
+      "report": "Resubmitting proof of achievement to fix the previous PDFs cutting off come content at the end of the document. Both the project plan and research report have been verified to be complete. Also, previously submitted, the team bios and responsibilities have been included in the project plan and can be found there.\nAndamio Sidechain Kickoff Meeting recording: https://drive.google.com/file/d/1oXZoCWcmFfuDr4sJipVIq8DUW7PXtyIa/view?usp=drive_link\nAndamio Sidechain Kickoff Meeting transcript: https://docs.google.com/document/d/1kv92-Ai0sWrsMAt8Gj2IezkIwgPH2ixaLxpjBaorXAY/edit?usp=drive_link and chat transcript: https://docs.google.com/document/d/1kv92-Ai0sWrsMAt8Gj2IezkIwgPH2ixaLxpjBaorXAY/edit?usp=sharing\nAndamio Sidechain Project Plan, including bios, roles and team formation: https://drive.google.com/file/d/1LS7t-eK2EFJdTYzMJnl-HuENsnxMqFNT/view?usp=drive_link\nAndamio Sidechain Research Report: https://drive.google.com/file/d/1Dp1BfA7f4M6jia0xMDBgifJE5FdmeB0v/view?usp=drive_link",
+      "kinds": [
+        "doc"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 20000,
+      "promise": "・A purpose sidechain Cardano network infrastructure established on cloud servers\n・list the cloud provider selected\n・describe the node configuration and infrastucture requirements\n・estimated cost of running the servers\n・Detailed sidechain architecture design document. This document will include:\n・Roles (on-chain)\n・Smart Contracts\n・Settings and Parameters\n・Transactions and expected outputs",
+      "criteria": "・Infrastructure is operational and tested for basic functionality\n・Basic chain queries show expected metadata and transactions\n・Smart contracts can be run by script and front end to verify they are working\n・Testing\n・Transaction testing - comparing outputs and logs from mainnet vs sidechain\n・Noting any differences or issues\n・Sidechain architecture design approved by the technical team and stakeholders\n・Video link to the consent process used to achieve approval will be provided",
+      "report": "1) short video or screenshots showing the infrastructure operational on our cloud servers\n・server dashboard\n・node status\n・transaction logs\n\n2) link to architectural design document\n3) Link to consent decision recordings and meeting notes to demonstrate team approval of design document\nSubmitted evidence:\n1) Video: https://drive.google.com/file/d/1IgYnCUjZ8vpx8vYM870u6M7jyLac6YEw/view?usp=sharing\n2) Architecture Document: https://drive.google.com/file/d/1kc50vQ1Z-VPlvti3TFwwVJZdJccY0WEL/view?usp=sharing\n3) Meeting notes of design doc approval: https://docs.google.com/document/d/1LMRG6t3gUnXF7Ww3E42owkOTfYDZV4TXS6hQh8-WvJE/edit?tab=t.0 \nResubmission: adding link to meeting recording for Architecture Review and consent process: https://app.fireflies.ai/view/Sidechain-Architecture-Review::cBX7QIHRPtJsM0GX",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 20000,
+      "promise": "・Deploying smart contracts and initializing test data on the purpose sidechain\n・Testing of 5 Andamio test contracts\n・Use of random/mock data\n・Report on the results of the deployment\n・Front end testing and interaction with side chain smart contracts\n・Ability to query the Andamio Contributor Token\n・Commitment transaction\n・Ability to query the Andamio Treasury Admin Token\n・Adding funds transaction\n・Publishing Projects transaction\n・Ability to query the Andamio Escrow Reviewer Token\n・Approving commitment transaction\n・Report on any deviations from mainnet\n・Fees differences\n・Sidechain specific provider/api info",
+      "criteria": "・Successful deployment and functionality of deployed smart contracts on the purpose sidechain or documentation why it does not work\n・Report on deployment results\n・List any changes needed for deployment to the sidechain\n・Show deployment logs\n・Show query results on token metadata\n・Report on any errors, issues or observations on differences from mainnet",
+      "report": "In this milestone, the Andamio smart contracts were deployed to the sidechainand the results of the deployment and testing are shown in the reports.\nThe experimentation on the purpose sidechain revealed no significant deviations in transaction execution, smart contract behavior, or overall functionality when compared to the mainnet. All tested Andamio contracts performed as expected, and the interactions without notable discrepancies.\nOne key distinction observed was the significantly faster settlement times on the sidechain. Transactions were confirmed and finalized more rapidly compared to mainnet, improving overall efficiency and responsiveness. Additionally, while fees were generally lower, they remained within an expected range and did not introduce any unexpected behavior.\nOverall, the sidechain successfully replicated mainnet contract execution while benefiting from improved transaction speed and efficiency.\nFolder of Reports and screenshots: https://github.com/Andamio-Platform/Sidechain-Playground/tree/main/Results\nDeployment Results Report: https://github.com/Andamio-Platform/Sidechain-Playground/blob/main/Results/Report.md\nMainnet to Sidechain comparison: https://github.com/Andamio-Platform/Sidechain-Playground/blob/main/Results/mainnet-comparision.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 40000,
+      "promise": "・Test reports documenting performance, issues, and feedback\n・Updated sidechain and smart contract implementations based on test results\n・Final project report\n・Closeout video\n・Documentation of next steps and future action plans",
+      "criteria": "・Critical issues identified during testing are resolved or documented for further investigation\n・Positive feedback from testers indicating the sidechain meets performance and functionality\n・Final project report\n・include Documentation of next steps and future action plans, includes plan to bring sidechain to the platform for use by Andamio clients, if the technology is successfully implemented. Otherwise can include other experimental avenues to explore pathways forward with sidechain technology.\n・Closeout video",
+      "report": "Final Milestone Proof of Achievement:\n・Link to testing results documentation\n・https://github.com/Andamio-Platform/Sidechain-Playground/blob/main/Results/Report.md\n・Link to notes on changes required to smart contracts to work properly on a sidechain, if any were needed\n・Technical Report: https://drive.google.com/file/d/1VRbKtQ7uig0X7nrZPvwFP6tDbvyjWHyR/view?usp=drive_link\n・No changes were required for the smart contracts. All smart contracts worked on the sidechain without need of modification. Very good news!\n・Link to final closeout report\n・https://drive.google.com/file/d/1yg8diBKj1awTudVOsMQtiTEujiXLNVOE/view?usp=sharing\n・updated with link to the new close out video\n・include next steps and action plans\n・See final closeout report, section: **Next steps for the product or service developed** above.\n・Link to final closeout video:\n・https://www.youtube.com/watch?v=Ce8aduI9Vpg\n・This is new to address the issue of the closeout video being too long. This one is 5 minutes\n・Also re-processed video to be 1080p quality, uploaded to YouTube in Public mode\n\nSupplementary retrospective video (supplement to closeout for those who want more details)\n・https://www.youtube.com/watch?v=Ws_JyFU52Mk\n・Bonus meterial: This was the original closeout video (which was too long) and included here in case anyone is interested in the longer format reflection on the project.",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

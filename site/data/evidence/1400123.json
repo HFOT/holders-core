@@ -1,0 +1,59 @@
+{
+  "title": "VESPR: AI Bridge to Cardano 🤖 | For Claude, GPT & AI Agents",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 28500,
+      "promise": "・Functional MCP (Model Context Protocol) server capable of handling wallet balance queries on Cardano mainnet\n・Basic API documentation with installation and configuration instructions\n・Code published on GitHub under MIT license",
+      "criteria": "・MCP server responds correctly to wallet balance queries using the MCP protocol\n・Returned balances match on-chain data with 100% accuracy (verifiable on Cardano blockchain explorers / wallets)\n・GitHub repository includes working setup instructions and configuration guide",
+      "report": "A. Output: Functional MCP (Model Context Protocol) server capable of handling wallet balance queries on Cardano mainnet\nAcceptance criteria: MCP server responds correctly to wallet balance queries using the MCP protocol + Returned balances match on-chain data with 100% accuracy (verifiable on Cardano wallet)\nEvidence: Video using the MCP with Claude Desktop app and showing VESPR wallet result side by side https://drive.google.com/drive/u/0/folders/1xMaT7E4jddI1imP2urSlK0TUqaUGNWY4\n\nB. Output: Basic API documentation with installation and configuration instructions\nAcceptance criteria: GitHub repository includes working setup instructions and configuration guide\nEvidence: https://github.com/vespr-wallet/cardano_mcp/blob/main/README.md\n\nC. Output: Code published on GitHub under MIT license\nAcceptance criteria: Code published on GitHub under MIT license\nEvidence: License: https://github.com/vespr-wallet/cardano_mcp/blob/main/LICENSE\nEvidence: Repo link: https://github.com/vespr-wallet/cardano_mcp\n\nNote: For testing you can use the following API key RxW$5pviBwG2@FnYD9M#^5wQRJA6 but keep in mind that it is heavily rate limited since we had to share it here publicly (10 requests per minute, 250 reqs per day)",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 28500,
+      "promise": "Expanded MCP server with additional Cardano data endpoints:\n・Transaction history\n・Token details and prices\n・Trending tokens\n・Wallet staking info\n・ADA Handle resolution\n・Asset onchain metadata retrieval",
+      "criteria": "・All new endpoints return accurate data matching on-chain state and public indexers\n・Token price queries match closely other sources (TapTools, VESPR, etc)\n・ADA Handle resolution returns correct wallet address\n・Server handles concurrent queries without performance issues",
+      "report": "Demo video showing usage via Claude Desktop App to query:\n・Transaction history data: https://drive.google.com/file/d/17V0aL_2QoCtLKjjfAFTooa9FotBsQ89K/view?usp=drive_link\n・Token info: https://drive.google.com/file/d/1viacaczycFUwsdH42uCy89snNEL3FCPv/view?usp=drive_link\n・Trending tokens: https://drive.google.com/file/d/1ESl5SHP_YUoxWpoXc1aY4o0PzmPoWccC/view?usp=drive_link\n・Wallet info: https://drive.google.com/file/d/16xoflIfNypFgovsbdMoVzTZlUCsL7bf6/view?usp=drive_link\n・ADA Handle resolution: https://drive.google.com/file/d/1egGR27hfb3fN8UYd8ffRSKd7UPM1vfeG/view?usp=drive_link\n・Asset onchain metadata: https://drive.google.com/file/d/1uavmO6RcCEH8s8CnKzsYyv5sBfUOXckg/view?usp=drive_link\n\nScreenshots with logs will be provided to prove concurrent query handling without performance degradation. Those calls will be made from some script designed to stress-test the system.\n・Link here: https://drive.google.com/file/d/1JmqCkxhLP3vM72t4f644t0YUVKk4ElAk/view?usp=drive_link\n・The script used for concurrent querying will be available on Github: https://github.com/vespr-wallet/cardano_mcp/blob/main/scripts/stress-test.ts\n・All the updated code for those queries/etc will be available in Github. https://github.com/vespr-wallet/cardano_mcp/tree/main\n\nNote 1: For testing you can use the following API key RxW$5pviBwG2@FnYD9M#^5wQRJA6 but keep in mind that it is heavily rate limited since we had to share it here publicly (10 requests per minute, 250 reqs per day)\nNote 2: Running the stress test script it requires an API key that bypasses rate limiting. Such a key cannot be provided because it can be use to DDOS VESPR as a whole. (any kind of stress-testing is only meant to be ran internally under supervision)",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 18
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 23000,
+      "promise": "・Production-ready MCP server deployed at mcp.vespr.xyz, includes \n・Rate limiting\n・authentication with security hardening\n・performance optimization\n・code quality improvements (logging + comments + tech-debt cleanup)\n・Server monitoring working with \n・health checks\n・uptime tracking enabled (target 99%+ during testing)",
+      "criteria": "・Public endpoint at https://mcp.vespr.xyz \n・Rate limiting works correctly (prevents abuse without blocking normal usage)\n・Error handling works correctly\n・Performance stays under 2 seconds for most queries\n・Server uptime above 99% during recent 2-week period\n・Documentation finalized",
+      "report": "Screenshot of uptime/health monitoring dashboard with at least 2 weeks of 99% or more uptime\n・screenshot-uptime.png\n・Real-time data check:\n・https://stats.uptimerobot.com/bT2zdIhjmh/802993505\n・https://mcp.vespr.xyz/health\n\nScreenshot of e-mail alert about server issue or downtime\n・downtime.pdf\n\nProof of authentication working correctly (reject unauthenticated requests)\n・Public MCP: public-mcp-connected.mp4\n・No API Key: no-api-key.mp4\n\nPublicly accessible mcp to live server at mcp.vespr.xyz\n・Check the status: https://mcp.vespr.xyz/health\n・Instructions on how to setup and connect: https://github.com/vespr-wallet/cardano_mcp/blob/main/README.md#option-1-hosted-mcp--no-installation-required\n\nDemo video showing multiple AI queries executed through Claude Desktop App\n・asset_metadata.mp4\n・token_info.mp4\n・trending_tokens.mp4\n・resolve_ada_handle.mp4 \n・token_metadata.mp4\n・wallet_info.mp4\n・transaction_history.mp4\n\nLink to updated GitHub repository reflecting production-ready structure\n・https://github.com/vespr-wallet/cardano_mcp\n\nCommit history will be publicly available to see the performance and security improvements made\n・https://github.com/vespr-wallet/cardano_mcp/commits/main/\n\nNote: You can now use the hosted MCP server with no API key. Without API key, it has a rate limit of 10 requests per minute, max 250 per day (per IP address).",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 24
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 15000,
+      "promise": "・Final close-out report \n・Final closeout video demonstrating the working MCP server and highlighting community impact\n・Documentation of any final bug fixes or refinements applied to production server",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available showing real usage of the MCP server and completed functionality\n・Documentation of any final bug fixes or refinements in a github release (only present if we find anything that needs a final touch/fix)",
+      "report": "Link to final closeout report\n・https://drive.google.com/file/d/1RR-KPcdlBWCrSLomL4_hDCsYTe9SXWX0/view?usp=sharing\n\nLink to final closeout video showing real usage of the MCP server through Claude Desktop App\n・https://www.youtube.com/watch?v=pTkNkYWCY1U\n\nLink to github release of any final bug fixes or refinements (only present if we find anything that needs a final touch/fix)\n・Final release link (v0.1.1): https://github.com/vespr-wallet/cardano_mcp/releases/tag/v0.1.1\n・No follow-up bug fixes / refinements were required",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・書類:\n・PIN構成とタッチポリシーを含むYubiKey PIV EDDSAキー機能の定義\n・OpenPGP APDU署名の可否を調査\n・YubiKeyで生のバイトを署名するための初期PoC CLIプログラム.",
+      "criteria": "・ドキュメントレポートの作成、調査結果や使用方法の解説をまとめました。\n・YubiKey EDDSAとの成功は、安全なCardanoトランザクション署名の実現可能性を検証し、生データバイトに実証されています.",
+      "report": "A. 出力: ドキュメント。 YubiKey PIV EDDSA キー機能を定義します。, PIN の設定とタッチ ポリシーを含みます.\n受諾基準:文書報告書の作成、調査結果および使用説明書のカバー。\n証拠:プロジェクトリポジトリ(/ドキュメントフォルダ)にレポートが公開され、PIVキーのインポート、ワークフローの署名、検証プロセスの詳細な説明を含みます。\nレポート: https://github.com/akonior/ykada/blob/v0.1.0-milestone1.0/docs/milestone1.md\nPIV のキーの輸入: https://github.com/akonior/ykada/blob/v0.1.0-milestone1.0/docs/milestone1.md#import-asymmetric-key と https://github.com/akonior/ykada/blob/v0.1.0-milestone1.0/docs/milestone1.md#7-of-conceptykatoolda-toold\nPIV署名: https://github.com/akonior/ykada/blob/v0.1.0-milestone1.0/docs/milestone1.md#authenticatesign and https://github.com/akonior/ykada/blob/v0.1.0-milestone1.0/docs/milestone1.md#7-of-concept-ykada-tool\n検証: https://github.com/akonior/ykada/blob/v0.1.0-milestone1.0/docs/milestone1.md#7-of-concept-ykada-tool\nB. 出力: 文書。 OpenPGP APDUの署名の実現可能性を探ります。\n受諾基準:文書報告書の作成、調査結果および使用説明書のカバー。\n証拠:ドキュメントレポート:\nhttps://github.com/akonior/ykada/blob/v0.1.0-milestone1.0/docs/milestone1.md#8-openpgp-module-alternative\nC. 出力: YubiKeyと生のバイトを署名するための初期PoC CLIプログラム。\n受諾の基準:YubiKey EDDSAとの成功した署名は、安全なCardanoトランザクション署名の実現可能性を検証し、生データバイトに実証されています。\n.Evidence1: プルーフ・オブ・コンセプト・プログラム(/srcフォルダー)は、生データ・バイトの完全な署名手順を実証し、有効な暗号署名を作成します。\nソースコード: https://github.com/akonior/ykada/tree/v0.1.0-milestone1.0/yubikey-piv/src\n生データbの完全な署名手順を示す成功したユニットテスト"
+    },
+    {
+      "no": 2,
+      "promise": "Yubikey PIV EDDSAキー管理のためのコマンドラインツール:\n・YubiKeyのEDDSAキーを生成します。\n・キーインポート(専用キー、BIP-32シード)\n・PIN/タッチポリシーの設定\n・ユニットテスト\n・開発文書.",
+      "criteria": "・CLIツールは、YubiKeyでEDDSAキーを生成、インポートすることができます。\n・ピン認証とタッチポリシーが正常に設定され、検証され、安全な操作を確認します。\n・GitHub アクションで GitHub プルリクエスト (PR) でテストが実行され、プルリクエストをマージする前にテストが実行されます。\n・設定手順や利用ガイドラインのREADMEファイルがございます.",
+      "report": "A. 出力: YubiKey で EDDSA キーを生成できる CLI ツール。\n受諾条件: CLI ツールは、YubiKey 上でキーを生成することができます。\n証拠: https://github.com/akonior/ykada/tree/v0.2.3/docs/milestones#milestone-2 と https://github.com/akonior/ykada/blob/v0.2.3/README.md#key-generate-on-yubikey\nB. 出力: 主輸入の未加工私用キー\n受諾条件: CLI ツールは、YubiKey で EDDSA キーをインポートすることができます。\n証拠: https://github.com/akonior/ykada/tree/v0.2.3/docs/milestones#milestone-2 と https://github.com/akonior/ykada/blob/v0.2.3/README.md#import-from-der-encoded-key\nC. 出力: 主輸入BIP-32の種\n受諾条件:CLIツールは、YubiKeyでシードからEDDSAキーをインポートすることができます\n証拠: https://github.com/akonior/ykada/tree/v0.2.3/docs/milestones#milestone-2 および https://github.com/akonior/ykada/blob/v0.2.3/README.md#import-from-seed-phrase-bip-39\nD. 出力: CLI ツールは、PIN ポリシーとタッチ ポリシーを構成することができます。\n受諾基準:PIN認証ポリシーとタッチポリシーの両方が正常に設定され、検証され、安全な操作を確認します。\n証拠: https://github.com/akonior/ykada/tree/v0.2.3/docs/milestones#milestone-2\nE. 出力:単位のテスト。\n受諾条件: GitHub アクションを介して、GitHub プルリクエスト (PR) でテストが実行され、プルリクエストをマージする前にテストが実行されます。\n証拠:単位のテスト構成 https://github.com/akonior/ykada/blob/v0.2.3/.github/workflows/cargo-test.yml は各ブランチで実行し、メインにマージする必要があります\n例ユニットテスト実行:https://github.com/akonior/ykada/actions/runs/21907545921\nF. 出力: 開発者の文書。\n受諾条件: セットアップ手順と使用ガイドラインのREADMEファイルがあります。\n.証拠: https://github.com/akonior/ykada/blob/main/README.md"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "title": "Cardano Token Engineering Lab - Understanding and leveraging token design to grow Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 6000,
+      "promise": "・Finalize the method to store project data and research\n・GitHub Repo\n・Website\n・Notion/Discord\n・Provide case studies regarding token design on 3-5 of the top-used DeFi projects in the Cardano space\n・",
+      "criteria": "・There is a repo with project material and research located publically available\n・GitHub Populated and created w/ the following types of documents:\n・README - Explaining the basic navigation of the page\n・Research Folder - \n・Links - Containing various academic papers or written opinion/blog posts from notable experts in the token engineering space\n・Summaries - breakdowns and explanations of some of the more technical papers\n・Mechanism Design - Aspects and papers around mechanism design and summaries around how they can be applied to token engineering from an economic and engineering aspect\n・Noti",
+      "report": "To make it more clear and have distinctive links for each topic for the case studies/research. I've added links to the 3 protocols that I'll be analyzing as well as the 3 main research topics that I'll be focusing on and generating content about. The link to my Project Catalyst Activity Tracker can be found here: https://thetokenlab.xyz/catalyst-fund-11-proposal-activity-tracker/\nAll the links as requested in the previous non-approval are visible under Milestone 1",
+      "kinds": [
+        "other"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 6000,
+      "promise": "Develop 3 detailed research paper and analysis of the mechanism designs, token distribution, and economic security of a protocol.\n・Research Papers will contain the following information:\n・Background and Information around Founders/Team\n・Overview of how the protocols function\n・Explanation of the Mechanisms behind the token (Applicability of mechanism design)\n・Token utility within the protocol (ie how it is used in various aspects of the protocol)\n・Incentives Models utilized (What are the demand-side drivers for the project or why should people want to use it)\n・Economic security analysis (What risks does the protocol face and be exploited financially)\n・Depending on the complexity or design of the protocol more sections may be addressed\n・If the projects are willing to openly collaborate there will be a section dedicated to their comments and noted in the paper\n・Research papers will be documented on the project's GitHub Repo as well as linked from the project's website\n・The selected protocols have not been fully selection but will cover at least one lending/borrowing platform, a CDP/Synthetic-based platform, and the final one to be defined. All the projects will fall within the top 20",
+      "criteria": "・There will be a separate repo for Research Papers with the README that illustrates how to navigate the repo and find the paper, sources, and any other auxiliary information necessary for the research.\n・README will also include a brief synopsis of each paper\n・Tags will be utilized for improved searching of the appropriate date\n・Partnership Agreements for both Cardano DeFi Partnerships and Token Engineering groups outside of Cardano :\n・Informal Announcements will be made on social media\n・A dedicated Github to highlight findings for the partnership as well as a simple document detailing the high",
+      "report": "A. Output: Research Papers\nAcceptance criteria: 3 completed research papers on the largest DeFi protocols on Cardano; Liqwid, Minswap, and Indigo.\nEvidence: https://github.com/Cardano-Token-Engineering-Lab/Research/tree/main/Final%20Protocol%20Reviews\nB. Output: Partnerships\nAcceptance criteria: Evidence of outputs from partnerships and related documents recorded in Github\nEvidence: https://github.com/Cardano-Token-Engineering-Lab/Research/tree/main/Final%20Protocol%20Reviews",
+      "kinds": [
+        "code"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 8000,
+      "promise": "Development of a Framework for Modelling Data Curation:\n・The framework will be the enablement of pulling on-chain dara around tokens to feed into systems models that are developed in Python. \n・Basic transaction types to be included in the framework consist of basic token swaps to highlight how users are utilizing the token.\n・A stretch goal will be to enable the framework to understand p2p transactions as well as smart contract interactions, such as staking.\n・This solution will support all Cardano tokens and will initially be worked through running dbsync or a similar querying tool to pull information from the Cardano blockchain\n・Example inputs to the framework would be token identifying information such as policy IDs as well as time window to extract the desired time to analyze\n・The script will be developed with Python and will consist of a repo that includes:\n・A README file that explains how to use the data curation framework\n・Example files/inputs and outputs of how the project works\n・Any supporting or required documents/data for the scripts to run as needed\n・Research and develop a plan to make a more robust solution that will utilize something like Dolos from TxPipe or a customiz",
+      "criteria": "The codebase will meet basic coding standards regarding the below items in order to make the codebase functional, maintainable, and understandable by others:\n・Linting\n・Testing coverage\n・Robust docstrings/comments for functions and code blocks\n\nEnhanced README to detail the usage and demonstrate how the codebase can work as well as document how updates should be handled and reflected in the repo.\nProject Progress will be managed and showcased on a page for the project highlighting the progress and evidence for the project.",
+      "report": "A. Output: \nDevelopment of a Framework for Modelling Data Curation:\n・The framework will be the enablement of pulling on-chain dara around tokens to feed into systems models that are developed in Python.\n・Basic transaction types to be included in the framework consist of basic token swaps to highlight how users are utilizing the token.\n・A stretch goal will be to enable the framework to understand p2p transactions as well as smart contract interactions, such as staking.\n・This solution will support all Cardano tokens and will initially be worked through running dbsync or a similar querying tool to pull information from the Cardano blockchain\n・Example inputs to the framework would be token identifying information such as policy IDs as well as time window to extract the desired time to analyze\n・The script will be developed with Python and will consist of a repo that includes:\n・A README file that explains how to use the data curation framework\n・Example files/inputs and outputs of how the project works\n・Any supporting or required documents/data for the scripts to run as needed\n・Research and develop a plan to make a more robust solution that will utilize something like Dolos from TxPipe or a customized indexing solution via Carp, Ouro/Scrolls, etc...\n・Documentation will be embedded within the repo and the contents of the repo listed above will constitute the documentation for this milestone.\n・Project Progress will be managed and showcased on a page for the project highlighting the progress and evidence for the project.\n\nCloseout Report: https://github.com/Cardano-Token-Engineering-Lab/Query-Cardano-Data/blob/main/Project_Completion_Report.pdf\nCloseout Video: https://youtu.be/gYteWhakEwk\nIn the video I walkthrough the coverage report and the CADCAD model. The Pull Request was reviewed and approved prior to submission and the mention that all previous code commits were done on the main branch previously.\n\nAcceptance criteria: \nThe codebase will meet basic coding standards reg",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3,
+      "cut": true
+    }
+  ]
+}

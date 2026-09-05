@@ -1,0 +1,83 @@
+{
+  "title": "🇻🇳 Vietnam Cardano Catalyst - NFT Exchange testing and development environment helps young people approach with the Web3.0 platform",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 3000,
+      "promise": "・Conduct research on Cardano ecosystem and market: Research document and conduct survey NFT Marketplaces on Cardano. Collect data, and modules about Marketplaces on Blockchain.\n・Conduct analyst goals, requirement of user: Research and survey the research goals of target users in Vietnam (students, researchers, advisors, office workers, developers, ...) about Cardano's decentralized platform.\n・Define dApp infrastructure and architecture: Discuss and answer questions about the difficulties of dapp development on Cardano. Conduct a simple and straightforward design and analysis of the DEMARKET platform.\n・Design UI, UX for the platform ( Research and analytic market report ). \n・Identify project team members and assign roles and responsibilities.\n\nWhat exactly smart contract do in DEMARKET?\n・Buyer: The user will create a transaction that sends the asset to the smart contract.\n・Smart contract: Check the binding conditions of the smart contract for the author and seller, check the signatures of the buyer and seller.\n・Seller: They will create a transaction that will send the amount back to the merchant if they satisfy the conditions of the smart contract.\n・Royalty: Author will receive amou",
+      "criteria": "・Research and survey Cardano market reports.\n・Conduct analyst goals, requirement of user reports.\n・Technical architecture and infrastructure platform reports. \n・Design sitemap, wireframe, UI, UX reports.\n・Identify project team members and assign roles and responsibilities report\n\nThe goals are the acceptance criteria for completing milestone 1 for the project. Evidence of completion of milestone objectives demonstrated using Notion was mentioned in milestone 1.",
+      "report": "1. Project Plan, including User Goals and Requirements:\n - Conduct research and market analysis for Cardano: https://www.notion.so/Conduct-research-on-Cardano-market-048ea65e38c4408094738a6783917e57?pvs=4\n - Perform an analysis of user goals and requirements: https://www.notion.so/Conduct-analyst-goals-requirement-of-user-f3f1b948bc384b07be8c834e808637a1?pvs=4\n - Identify project team members and assign roles and responsibilities: https://www.notion.so/Identify-project-team-members-and-assign-roles-and-responsibilities-488c54237aed43519cb131b9f8a0f644?pvs=4\n 2. Website Sitemap, Wireframes, User Interface, and User Experience: https://docs.google.com/document/d/1rOXfg9YMDGufCYFNRP_UJnYoaTJQKID783kf2x6zpnM/edit?usp=sharing\n \n 3. Technical Architecture and Infrastructure of the Platform: https://drive.google.com/file/d/1sFLPadCLZWj8dGfYFDPtZ3rOEQMir2CJ/view?usp=sharing\n \n In milestone number 2, we will publish documents regarding the database (storing information that does not affect user assets or security).\n The information stored in the database does not compromise user privacy and security.\n We use the database to collect statistical data on NFT Marketplace transactions, the number of views, likes, and more.\n Related all documents can be found at the following Google Drive link:\nhttps://drive.google.com/drive/folders/13nh2cHrgBau671GkRHUODeZeHCbhnWeN",
+      "kinds": [
+        "doc"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 8300,
+      "promise": "・Frontend Development: User interface is developed and functional.\n・Develop backend: APIs and database are working and functional.\n・Smart contract: Contract and UI for interaction between buyers and sellers are functional.",
+      "criteria": "・The smart contract between sellers and buyers is working according to the initial criteria\n\n・Buyer: The user will create a transaction that sends the asset to the smart contract.\n・Smart contract: Check the binding conditions of the smart contract for the author and seller, check the signatures of the buyer and seller.\n・Seller: They will create a transaction that will send the amount back to the merchant if they satisfy the conditions of the smart contract.\n・Royalty: Author will receive amount of ADA(%) from transaction's NFT.\n\n・Completed friendly, beautiful user interface: We will conduct res",
+      "report": "1. People can interact with our platform\n Completed friendly, beautiful user interface: We will conduct research and survey the platform's interface, thereby collecting comments from users and upgrading the most user-friendly interface.\n Website Link: https://demarket-frontend.vercel.app/\n\n 2. Smart contract sources\n According to project progress, the smart contract development will be completed in M3, but we have completed it according to the initial criteria. \n 1. Buyer: The user will create a transaction that sends the asset to the smart contract.\n 2. Smart contract: Check the binding conditions of the smart contract for the author and seller, check the signatures of the buyer and seller.\n 3. Seller: They will create a transaction that will send the amount back to the merchant if they satisfy the conditions of the smart contract.\n Extra: \n 4. Royalty distribution system: Author will receive amount of ADA(%) from transaction's NFT.\n 5. Security holes: Optimize the system and prevent security holes.\n GitHub Link: https://github.com/sonson0910/Demarket-Contract.git\n Test case Link: https://s.net.vn/hvie\n Currently, we have successfully tested the above features and users can experience them: https://demarket-frontend.vercel.app/\n \n 3. Database design\n Database design docs: https://docs.google.com/document/d/18WzE6QtEVsiXqi7vCp-alzAta7vkxn65/edit\n \n 4. API and database tests are passing, code is reviewable on GitHub with tests being executed at each commit \n We will write detailed instructions to report proof that the problem worked.\n GitHub Link: https://github.com/independenceee/demarket-backend\n Test Case Backend: https://docs.google.com/spreadsheets/d/1qVDBkyYdoU2QfA4NziCV9K_jsIhUxiQ4/edit#gid=1957770526",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 7550,
+      "promise": "・Smart contracts according to the initial criteria: Analyze and research the royalty distribution systemOptimize the system and prevent security holes.\n・Test reports and documentation: Test cases of smart contract modulesStatistics and reporting of test results achievedSurvey and collect data from Blockchain experts, developers, ...",
+      "criteria": "・The platform operates on testnet Cardano: Users experience the following main functions:\n\n・Users participating as buyers can purchase assets on DEMARKET.\n・Users participating as sellers can sell or withdraw assets.\n・Users will receive royalties if the NFT is minted by them.\n・Users can register intellectual products by minting NFTs on DEMARKET.\n・Users can create intellectual product collections.\n・Users can build an account to become a store page.\n・The platform includes documentation on how to use it for beginners.\n・Users can tracking the history of transaction NFT.\n・Users can donate to the ope",
+      "report": "Thank you very much for pointing out the areas where I fell short. We have edited and updated the features of the Demarket platform.\n・In section 6, we explained it unclearly, causing confusion in the community. In this case, the account is indeed the store page. Therefore, we will edit and emphasize this part here.\n・Regarding the issue of buyers being unable to purchase multiple NFTs simultaneously, we are still working on a solution to enhance this functionality.\n・We often conduct tests on the Nami wallet, so we are also reviewing error cases for other wallets.\n・For the remaining items, we have added and improved the missing features on the platform.\n\n1. Test reports and documentation: \na. Test cases of smart contract modules (docx file, GitHub repository)\nhttps://s.net.vn/hvie\nb. Test cases of backend system modules (docx file, GitHub repository) \nhttps://docs.google.com/spreadsheets/d/1qVDBkyYdoU2QfA4NziCV9K_jsIhUxiQ4/edit?usp=sharing&ouid=107549707092065987144&rtpof=true&sd=true\nc. Statistics and reporting of platform test results achieved (docx file) ( Ongoing )\nhttps://docs.google.com/document/d/1iyFbJ8OVwCeVZBfDKoz6MBp9gCV-YyiL/edit#heading=h.206ipza\nd. Survey and collect data from Blockchain experts, developers, ... (docx file). ( Ongoing )\nhttps://docs.google.com/document/d/1nWuU88k6msK9tSUC6febwXC16bHKO6pp/edit\n2. People can test with trial NFT Marketplace: Regarding the features of the platform, immediately this milestone post will be completed, users can experience the features of DEMARKET. \nhttps://demarket-frontend.vercel.app/\nGitHub: \n- Smart contract: https://github.com/sonson0910/Demarket-Contract.git\n- Backend: https://github.com/independenceee/demarket-backend\n- Frontend: https://github.com/independenceee/demarket-frontend",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 16,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 7500,
+      "promise": "・Platform installation and usage documentation\n・Video tutorials and\n・Brochures and website content\n・Set up storage infrastructure and deploy\n・Start a Bug Bounty program",
+      "criteria": "Task 1: Platform Installation and Usage Documentation\n・Create comprehensive documentation, including clear installation instructions and user manuals.\n・Acceptance Criteria: Documentation is complete, accurate, and user-friendly.\n\nTask 2: Video Tutorials\n・Develop instructional videos on platform installation and usage, with a FAQ section.\n・Acceptance Criteria: Videos are created, cover key platform functions, and FAQ addresses common user issues.\n\nTask 3: Marketing Materials\n・Collaborate with the Marketing team to create effective promotional materials and content strategies for March 2024.\n・Ac",
+      "report": "1. Platform installation, usage documentation, and documentation for engineering techniques\nhttps://drive.google.com/file/d/1yKOBwFQc0Cx4zDwSyTkBLjS8MBbDj6aS/view?usp=drive_link\nBased on reviewer reviews, Demarket platform includes a guide page is extremely easy to understand for users, especially newbies, task 1 in M4 is comprehensive platform document so this is a must have. If be user-friendly for user, you can access the following link: https://demarket.vn/guide\nTo help developers to set up or install Demarket, you can follow the nescessary links: \nhttps://youtu.be/7GzWfim-iGk\nhttps://github.com/independenceee/demarket-database/\n2. Extremely easy-to-understand documentation and video tutorials \nhttps://drive.google.com/drive/folders/1AeXluhOMxkt3avJTtNp89oSMioyY-R25?ths=true\n3. Ready-to-launch promotional materials and marketing strategies \nhttps://drive.google.com/file/d/1Oaog-rFrvIYfJXsB9kciPia3L2KD1gIx/view?usp=drive_link\n4. Users can test our platform \nWebsite Link: https://demarket.vn\n5. Documentation related to bug bounty policies and terms \nhttps://drive.google.com/file/d/1x_-tRkycfMyMfpzV69GfL01wcEq9WSAy/view\n﻿\nAll update of our project, we are always ready to resolve the question from the community on social media:\nTwitter: https://twitter.com/BlockAlphaInova\nFanpage: https://www.facebook.com/profile.php?id=61553084137120\nTelegram: https://t.me/+LvULDnWkHbZjNWVl\nWebsite: https://demarket.vn",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 5650,
+      "promise": "・Interact with the community through social media, forums, and events to promote the platform \n・Collect user feedback and monitor platform \n・Improve user experiment \n・Develop feature based on user feedback \n\n﻿Project Closeout Report:\n・We commit to completing the Project Closeout Report in accordance with the specified requirements. This report will comprise a concise written summary, approximately 2/3 pages in length, providing comprehensive insights into our project. It will include critical Key Performance Indicators (KPIs), how our project addressed or did not address them, and our plans for the next stage involving the developed product or service.\n・We will structure our report as follows:\n\n・Project Name and URL on IdeaScale/FundYour Project\n・Project Number\n・Project Manager's Name\n・Project Start Date\n・Project Completion Date\n・List of Challenge KPIs and how our project addressed them\n・List of Project KPIs and how our project addressed them\n・Key Achievements (particularly in terms of collaboration and engagement)\n・Key Learnings\n・Next Steps for the developed product or service\n・Final Comments/Thoughts\n・Links to other relevant project sources or documents.\n\nProject Closeout Video:",
+      "criteria": "Interact with the community through social media, forums, and events to promote the platform:\n・Engage with the community on social media, forums, and events to promote the platform.\n・Acceptance Criteria: Increased community engagement and platform visibility through social media, forum interactions, and event participation.\n\nCollect user feedback and monitor the platform:\n・Conduct surveys and monitor user opinions to gather feedback and record user value.\n・Acceptance Criteria: User feedback and opinions are collected and recorded, highlighting user value and areas for improvement.\n\nDevelop fea",
+      "report": "I. Interact with social media, forums, and events to promote the platform ( Social media like Facebook, Telegram, Youtube, ... ).\nWe will provide links to the social media interactions.\nTwitter: https://twitter.com/BlockAlphaInova\nFanpage: https://www.facebook.com/profile.php?id=61553084137120\nTelegram: https://t.me/+LvULDnWkHbZjNWVl\nWebsite: https://demarket.vn\nII. User feedback and monitor platform.\nhttps://drive.google.com/file/d/1HZ5RO3lpap314eSpnuuu_ct0ndaXz-hU/view?usp=drive_link\nIII. According to our regulations, this report will be updated based on versions of user feedback. The report below is its first version:\nhttps://drive.google.com/file/d/1zOIII0YTC_4THhVh-fC8TO8Q9WXB8zv1/view?usp=drive_link\nFuture new versions will be uploaded here:\nhttps://drive.google.com/drive/folders/1XD59I8mqX9cuk_n5jTK-C7TisaCaBtWe\nIV. Project Closeout Report:\nhttps://drive.google.com/file/d/1a_nWHyU1GscRUZJU1ygroO2h89C1Elle/view?usp=drive_link\nV. Project Closeout Video:\nhttps://youtu.be/x-CeWdlnM3Y",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 18,
+      "cut": true
+    }
+  ]
+}

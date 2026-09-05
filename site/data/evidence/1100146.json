@@ -1,0 +1,68 @@
+{
+  "title": "gOuroboros: Cardano Ouroboros protocol server support in Golang",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 37000,
+      "promise": "Finish implementing tx-submission\nPeerSharing protocol client support \nAdditional tests for the Handshake protocol client\nAdditional tests for the KeepAlive protocol client\nAdditional tests for the ChainSync protocol client\nAdditional tests for the BlockFetch protocol client\nAdditional tests for the LocalTxSubmission protocol client\nAdditional tests for the LocalStateQuery protocol client\nAdditional tests for the LocalTxMonitor protocol client\nSupport for additional LocalStateQuery protocol queries and responses",
+      "criteria": "All code-related outputs must be completed and implemented according to any specifications in the corresponding GitHub issues or tickets.\nAll code changes must be reviewed and approved by designated team members before being merged into the main branch.\nEach GitHub issue associated with the milestone must be marked as \"closed\" or \"done\" upon completion of the related task.",
+      "report": "gOuroboros: Milestone 1: complete\nThe Tx submission has been implemented and client support and tests have been established as specified in their corresponding tickets. This is evidenced by the code output, automated testing where applicable, and code reviews with approvals from a designated team member. All of this can be traced by the GitHub Milestone 1 issues (aka tickets) in our project board, here: https://github.com/orgs/blinklabs-io/projects/8/views/2, where Milestone 1 issues can be found and their specifications and code, linked pull requests within each issue, can be examined. All Milestone 1 tickets have been completed and closed. Corresponding usage documentation has been added and can be found here: https://github.com/blinklabs-io/gouroboros",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 37000,
+      "promise": "Conway era block and transaction support (*proposal included a ticket closed out since submission)\nFlesh out Byron block/TX definitions\nByron era transaction input and output support\nShelley protocol params support\nAllegra protocol params support\nMary protocol params support\nAlonzo protocol params support\nBabbage protocol params support",
+      "criteria": "All code-related outputs must be completed and implemented according to any specifications in the corresponding GitHub issues or tickets.\nAll code changes must be reviewed and approved by designated team members before being merged into the main branch.\nEach GitHub issue associated with the milestone must be marked as \"closed\" or \"done\" upon completion of the related task.",
+      "report": "gOuroboros: Milestone 2: complete\nThe Conway era block/Tx support, Byron block/Tx defined and Tx input/output support, along with the protocol params support for Shelley, Allegra, Mary, Alonzo, and Babbage have all been established as specified in their corresponding tickets. This is evidenced by the code output, automated testing where applicable, and code reviews with approvals from a designated team member. All of this can be traced by the GitHub Milestone 2 issues (aka tickets) in our project board, here: https://github.com/orgs/blinklabs-io/projects/8/views/2, where Milestone 2 issues can be found and their specifications and code, linked pull requests within each issue, can be examined. All Milestone 2 tickets have been completed and closed. Corresponding usage documentation has been added and can be found here: https://github.com/blinklabs-io/gouroboros",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 37000,
+      "promise": "Support for TX attribute: Certificates\nSupport for TX attribute: Staking reward withdrawals\nSupport for TX attribute: Protocol parameter updates\nSupport for TX attribute: Auxiliary data hash\nSupport for TX attribute: Validity interval start\nSupport for TX attribute: Asset Mint\nSupport for TX attribute: Script data hash\nSupport for TX attribute: Collateral inputs\nSupport for TX attribute: Required signers\nSupport for TX attribute: Collateral return\nSupport for TX attribute: Total collateral\nSupport for TX attribute: Reference inputs\nSupport for TX attribute: Voting procedures (new in Conway)\nSupport for TX attribute: Proposal procedures (new in Conway)",
+      "criteria": "All code-related outputs must be completed and implemented according to any specifications in the corresponding GitHub issues or tickets.\nAll code changes must be reviewed and approved by designated team members before being merged into the main branch.\nEach GitHub issue associated with the milestone must be marked as \"closed\" or \"done\" upon completion of the related task.",
+      "report": "gOuroboros: Milestone 3: complete\nThe transaction attribute support has been established as specified in the corresponding tickets. This is evidenced by the code output, automated testing where applicable, and code reviews with approvals from a designated team member. All of this can be traced by the GitHub Milestone 3 issues (aka tickets) in our project board, here: https://github.com/orgs/blinklabs-io/projects/8/views/2, where Milestone 3 issues can be found and their specifications and code, linked pull requests within each issue, can be examined. All Milestone 3 tickets have been completed and closed. Corresponding usage documentation has been added and can be found here: https://github.com/blinklabs-io/gouroboros",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 37000,
+      "promise": "KeepAlive server side support\nChainSync server side support\nBlockFetch server side support\nPeerSharing server side support\nLocalStateQuery server side support",
+      "criteria": "All code-related outputs must be completed and implemented according to any specifications in the corresponding GitHub issues or tickets.\nAll code changes must be reviewed and approved by designated team members before being merged into the main branch.\nEach GitHub issue associated with the milestone must be marked as \"closed\" or \"done\" upon completion of the related task.",
+      "report": "gOuroboros: Milestone 4: complete\nThe server side of Node-to-Client and Node-to-Node protocol supports have been established as specified in the corresponding *KeepAlive, ChainSync, BlockFetch, PeerSharing, and LocalStateQuery tickets. This is evidenced by the code output, automated testing where applicable, and code reviews with approvals from a designated team member. All of this can be traced by the GitHub Milestone 4 issues (aka tickets) in our project board, here: https://github.com/orgs/blinklabs-io/projects/8/views/2, where Milestone 4 issues can be found and their specifications and code, linked pull requests within each issue, can be examined. *Please note issue 346 for KeepAlive server side support has no code associated, further research found the current state of the server side already supports what it needs to. All Milestone 4 tickets have been completed and closed. Corresponding usage documentation has been added and can be found here: https://github.com/blinklabs-io/gouroboros",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 37000,
+      "promise": "Project Closeout Report \nProject Closeout Video",
+      "criteria": "The project closeout report must include a comprehensive summary of project objectives and evidence of goals achieved. The project closeout video must provide a visual overview of the projects journey, start to finish, highlight key achievements, and showcase the net products: a feature complete library with developer documentation.",
+      "report": "Our closeout report can be found here: https://docs.google.com/document/d/1XsheGEDRd2gORLAOsXK55mcT-ho_dgfZfPsFfqZW1Vk/edit?usp=sharing\nOur closeout video can be found here: https://youtu.be/i6gKU_TIHBQ\nSource Code: https://github.com/blinklabs-io/gouroboros\nDocs: https://pkg.go.dev/github.com/blinklabs-io/gouroboros\nDemeter (serverless) starter kit featured in the demo: https://github.com/blinklabs-io/gouroboros-starter-kit",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

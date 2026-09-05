@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・現在のビットコイン・ローゼン・ブリッジ・デザインとアーキテクチャとのRunesプロトコルと互換性の深い調査\n・実装方法の選択(レビューのための潜在的な3オプションのティーン概要)\n・選択方法に基づくブリッジ統合設計\n・Runesの統合のライブラリ、データソース、インフラ、および特別な要件の調査",
+      "criteria": "・ローゼンブリッジ・ギトハブの選定方法とその要件に関する文書化\n・Xスペースは、コミュニティとの潜在的なソリューションについて議論する(マイルストーン1の提出時に提供された記録リンク付き).",
+      "report": "ミディアムの2つの記事が添付されています。 初期設計スコープの1つ。 提案されたソリューションを理論的な拡張として使用し、アドレス出力を使用して、Runes プロトコルに拡張された UTXO ベースのメタデータ拡張を生成し、Runes のユーティリティを強化します。\nhttps://curiaregiscrypto.medium.com/extending-bitcoin-runes-into-new-environments-via-rosen-bridge-a2081f3c0287\nhttps://curiaregiscrypto.medium.com/rosen-bridge-solution-can-it-enrich-bitcoin-runes-with-metadata-and-beyond-882b821856ef\nX 空間では、Runes プロトコル、当社の実装、Bitcoin での作業の潜在的な課題をカバーしています。\nhttps://x.com/ergo platform/status/1891715902128677185?s=46\nこの github ドキュメントは、Bitcoin の設計を Rosen Bridge に実行し、選択したアプローチについて説明します。\nhttps://github.com/rosen-bridge/Catalyst-Fund12/blob/master/F12-%20catalyst%20milestone%201.md"
+    },
+    {
+      "no": 2,
+      "promise": "・ビットコインでの取引のロックと転送の初期実装\n・Ergo側契約の初期およびスタンドアロンの設計と実装(必要に応じて、方法1は必要ですが、方法2と3)には必要ありません。\n・テストロック取引: テストは、このタイプのトランザクションが可能であることを保証するために、ブリッジに依存しています。ランはデータを転送してブリッジを埋め込むことができます.",
+      "criteria": "・データ転送の実行とブリッジを表示するサンプルトランザクション(選択した方法によって異なりますが、Bitcoin および/または Ergo ブロックチェーン上の 1 つまたはいくつかのトランザクション - Cardano のルーティングネットワークとして機能します)。\n・データ転送とトランザクションからデータの取得とデータの取得のためのコードスニペット",
+      "report": "以下はトランザクションのInのDep Overviewです。\nhttps://mempool.space/tx/ac16759cc66ad1f4b9fe49e068d9728302ed6fb566d94665c76a654a93eeb2\nミディアムでは、ステップバイステップの工程を覆い、これが私たちのデザインパターンに従う方法について説明します。\nhttps://curiaregiscrypto.medium.com/diving-in-integrating-runes-into-rosen-bridge-be41e338a56a\ngithub リポジトリは、詳細を覆うこともできます。\nhttps://github.com/rosen-bridge/Catalyst-Fund12/blob/master/F12-%20catalyst%20milestone%202.md"
+    },
+    {
+      "no": 3,
+      "promise": "必要なモジュールを実装して、RosenブリッジにRunesサポートを追加する:\n・橋梁・取引スキャナの拡大\n・ガード1BTC側マルチシグソリューション\n・システムにおけるトランザクション契約(Bitcoinアーキテクチャの制限で実行および作業をインデックス化する必要がある場合など)",
+      "criteria": "・すべてのモジュールは、ローゼンブリッジGithubで利用可能なオープンソースとコードになります\n・Medium Article は、更新されたトランザクションスキャナ、マルチシグ ソリューションの実装と取引協定システムを分解しました.",
+      "report": "コンテンツ: すべてのモジュールはオープンソースです。\n下記の github のリンクからコードが利用できます。\nhttps://github.com/rosen-bridge/Catalyst-Fund12/blob/master/F12-%20catalyst%20milestone%203.md\n更新、ソリューション、および変更されたライブラリを破壊する記事は以下の通りです。\nhttps://curiaregiscrypto.medium.com/Integraating-bitcoin-runes-into-rosen-bridge-a-deep-into-key-modules-edb8fd145df7"
+    },
+    {
+      "no": 4,
+      "promise": "Bitcoin の周りをビルドし、既存のモジュールを統合します。\n・キャスターモジュールへの統合(スキャナー、イベントレポート、報酬、配布)\n・ガードモジュールへの統合(イベント検証、マルチシグ、報酬、配布)",
+      "criteria": "・すべてのモジュールは、ローゼンブリッジGithubで利用可能なオープンソースとコードになります\n・Medium Article 公開カバーの統合とランズブリッジのシーケンスフローチャートを更新.",
+      "report": "# ビットコインはローゼンブリッジの統合を実行します\nこのドキュメントは、Bitcoin のモジュールをローゼンブリッジに実行する統合を概説します。\n## コンテンツ\n- [ローゼンチェーンの更新](#updates-on-rosen-chains)\n- [Bitcoinは統合を実行します](#bitcoin-runes-integration)\n- [Watcherサービス](#watcher-service)\n- [ガードサービス](#ガードサービス)\n## ローゼンチェーンの更新\n[Rosen Chains](https://github.com/rosen-bridge/rosen-chains)は、すべてのチェーン固有の機能と動作が実装されているGuardサービスの第一次的依存性です。 前のマイルストーンでは、このモジュールが統合されました。 しかし、テスト中に、いくつかの潜在的な問題が特定され、それらに対処するためのモジュールの再構築につながる。\nRunes プロトコルは、転送の詳細は、Bitcoin 上で `OP RETURN` UTxOs を利用してプロトコルデータを書き込みます。 ローゼンチェーンの以前の構造では、転送中に入力中のすべてのルーンが指定されなければなりませんでした(`edict`フィールドを使用して)。 しかし、Bitcoin上での`OP RETURN` UTxO は80バイト(つまり、80バイトを超える `OP RETURN` のデータを持つトランザクションは、ノードによって伝播されません)。 インプットのラン数が少ないが、デザインを目的としていたが、これは潜在的な問題であり、回避できませんでした。\n最初のUTxOに関わる別の問題。 Rosenはトランザクションの最初のボックス(またはUTxO)を使用してユーザーアセットを送信します。 一方、Runes プロトコルは、Runes プロトコルのデータが提供されていない場合、Runes プロトコルは、Runes が最初の非 'OP RETURN` UTxO に送られることを指定します。 Runes 仕様と整列するには、Runes の変更アセットは、最初の UTxO にある必要があります。\nこれらの問題に対処するため、構造はこれらの規則に従うために更新されました(Bitcoin Runesに特異的)。\n- 各トランザクションは 1 つの Rune だけを転送する必要があります.複数の Runes を転送するには、複数のトランザクションが生成される必要があります(例外は Cold Storage 型で、アセットを Cold アドレスに送信します)。\n- Runesを含むUTxOは最小UTxO vを持っている必要があります"
+    },
+    {
+      "no": 5,
+      "promise": "・既存のアプリケーションでBTCとRune転送に対応するためのUIの変更(先や先のチェーンとしてBTCを選択、Rosenエクスプローラでトランザクション出力を表示)。\n・ビットコイン取引に署名し、Rosenのウォレット(Dappコネクタまたは外部ウォレットを介して)にRosenの財布にRanesを転送できるようにするRaneまたは他のアプローチのためのBitcoinウォレットDappコネクタ",
+      "criteria": "・ローゼンGithubのUIコード\n・このマイルストーンのために提出された別の文書で共有されるUIのスクリーンショット.",
+      "report": "・ローゼンGithubのUIコード\n・このマイルストーンのために提出された別の文書で共有されるUIのスクリーンショット。\n\n・本 UI にドキュメントを添付する方法はありません。 しかし、スクリーンショットは追加され、コードとともにgithubリンクで見ることができます。\n\nhttps://github.com/rosen-bridge/Catalyst-Fund12/blob/master/F12-%20catalyst%20milestone%206.md"
+    },
+    {
+      "no": 6,
+      "promise": "・Runesブリッジの統合をテストするために監視者とガードの採用\n・Runes Project HighlightingによるCoHost X SpaceがCardanoにブリッジング\n・プロジェクトをローゼンブリッジに統合し、カーダノに橋渡し\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・試験環境(メインネットまたはテストネット)に監視・監視がライブ\n・必要な全ての取引を含むサンプル転送例\n・Runes Project HighlightingによるCoHost X SpaceがCardanoにブリッジング\n・プロジェクトをローゼンブリッジに統合し、カーダノに橋渡し\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "・A. 出力:Runesブリッジのインテグレーションをテストするために監視者とガードの採用。\n\n受諾の基準:すべてがメインネットと機能に住んでいます。\n証拠: Rosen.tech https://github.com/rosen-bridge/Catalyst-Fund12/blob/master/F12-%20catalyst%20milestone%206.md\n・B. 出力:RunesプロジェクトとのCoHost X Spaceは、Cardanoにブリッジングを実行します\n\n受諾の基準:主要な操業のプロジェクトとホストされるXスペース\n証拠: https://x.com/i/spaces/1OdJrOpOBDlx/peek?s=20\n・C. 出力:Rosen Bridge に 3 の操業プロジェクトを統合し、Cardano に首尾よく橋\n\n受諾条件:プロジェクトはCardanoに首尾よく橋渡し\n証拠: https://github.com/rosen-bridge/Catalyst-Fund12/blob/master/F12-%20catalyst%20milestone%206.md の下で十分に文書化\n・D.出力:最終クローズアウトレポート\n\n受諾基準:中条は、障害だけでなく、Github F12 M6を克服\n証拠: https://github.com/rosen-bridge/Catalyst-Fund12/blob/master/F12-%20catalyst%20milestone%206.md\nhttps://curiaregiscrypto.medium.com/Integraating-bitcoin-runes-into-rosen-bridge-overcoming-challenges-for-seamless-bridging-3cfe11cb774e\n・E. 出力:最終クローズアウトビデオ\n\n受諾条件: ビデオはオンラインで掲示しました\n証拠: https://youtu.be/7t1xleHGiis\n\n私はここに新しいクローズアウトレポートを書いています: https://curiaregiscrypto.medium.com/bitcoin-runes-on-cardano-via-rosen-bridge-project-close-out-report-7bb048f8316d?postPublishedType=initial"
+    }
+  ]
+}

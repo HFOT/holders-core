@@ -1,0 +1,68 @@
+{
+  "title": "Anti Research Fraud dApp: Qualtrics-Cardano Integration",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 12000,
+      "promise": "・Comprehensive research and design document\n・System architecture diagrams (UML, flowcharts, etc.)\n・Interactive UI/UX prototype\n・Go-to-market strategy document",
+      "criteria": "・Documented research findings and design decisions\n・Clear and well-structured diagrams\n・User-friendly prototype that reflects the project's functionality\n・A detailed go-to-market strategy document",
+      "report": "Milestone 1 Completion Report: Research, Design, and Go-to-Market Strategy Planning\nDeliverables Overview\n・Research and Design Document\n\n・Link: Research & Design Document\n・Covers :\n・Integration analysis between Qualtrics and Cardano platforms\n・Security requirements and implementation approaches\n・Product requirements based on researcher interviews\n・System architecture and design decisions\n・Implementation considerations and risk analysis\n\n・System Architecture Documentation\n\n・Link: Architecture Repository\n・Key diagrams include:\n・High-level system architecture\n・Data flow diagrams\n・Component interaction diagrams\n・API integration flowcharts\n・Security architecture overview\n・Deployment architecture\n\n・UI/UX Prototype and Designs\n\n・Link: Design Repository\n・Deliverables include:\n・Interactive prototype\n・User interface wireframes\n・User flow diagrams\n・Design system components\n\n・Go-to-Market Strategy\n\n・Link: GTM Strategy Document\n・Key components:\n・Target audience segmentation\n・Marketing and outreach strategy\n・Adoption pathway planning\n・Community engagement approach\n・Success metrics and KPIs\n\nAcceptance Criteria Fulfillment\n・Research Findings and Design Decisions ✓ Detailed analysis of integration requirements ✓ User interview insights documented ✓ Security considerations outlined ✓ Design decisions explained with rationale\n・System Architecture Diagrams ✓ Clear and structured UML diagrams ✓ Comprehensive flowcharts ✓ Detailed system interaction mappings ✓ Well-documented component relationships\n・User-Friendly Prototype ✓ Interactive prototype demonstrating core functionality ✓ Intuitive interface design ✓ Clear user workflows ✓ Research-focused features\n・Go-to-Market Strategy ✓ Comprehensive adoption strategy ✓ Clear marketing approach ✓ Defined target segments ✓ Implementation roadmap\n\nEvidence of Completion\nThe milestone deliverables fully satisfy the requirements through:\n・Research and Design Document\n\n・Comprehensive integration analysis\n・Security requirements documentation\n・Use",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "15",
+      "cost": 12000,
+      "promise": "・Functional smart contract deployed on the Cardano test network\n・Functional Google Forms add-on (Test deployment)\n・Smart contract source code with basic documentation\n・Updated architecture diagrams reflecting Google Forms integration",
+      "criteria": "・Working smart contract with basic test cases\n・The add-on successfully hashes and uploads data to the test network through the user interface\n・Smart contract handles data retrieval and verification logic",
+      "report": "Milestone 2 Completion Report: Initial Smart Contract Development and Google Forms Add-on Build\nDeliverables Overview\n1. Functional Smart Contract Deployed on Cardano Test Network\nLinks:\n・Deployment on Preview Network: https://preview.cardanoscan.io/address/70115a9d203f2a323ead5a6328181773faccc8473f859a19fb5a028715\n・Integrated DApp:\n・Live Application: https://adaverc.vercel.app/\n・Source Code: https://github.com/adaverc/adaverc-dapp\n\nTechnical Implementation Coverage:\nThe deployed smart contract (adaverc_registry) implements a validation system specifically designed for blockchain-based form response verification:\n・Smart Contract Validation: The contract validates transactions containing Adaverc metadata using label 8434, ensuring only properly formatted hash submissions are accepted\n・UTxO Management: Each hash storage operation creates a new contract UTxO with ~2 ADA, providing decentralized storage while maintaining transaction integrity\n・Metadata Schema: Structured metadata storage includes hash value, form ID, response ID, timestamp, and version information for comprehensive verification tracking\n・Cost Optimization: Transaction fees optimized at ~2.175 ADA per hash (0.175 ADA network fee + 2 ADA UTxO), with future optimization pathways identified\n・Blockfrost Integration: Read-only verification queries through Blockfrost API enable free hash verification without additional transaction costs\n\n2. Functional Google Forms Add-on (Test Deployment)\nLinks:\n・Installation Guide: https://drive.google.com/drive/folders/1oLIKwFQpB7ZEfyJ_GNLzU_AW6UHufjgJ?usp=sharing\n・Add-on Source Code: https://github.com/adaverc/adaverc-addon\n\nFunctional Components Coverage:\nThe Google Forms add-on delivers a complete privacy-preserving verification system with the following operational modules:\n・Trigger Management System: Automated execution triggers handle both per-response processing and scheduled batch operations, with comprehensive lifecycle management including installation, updates, an",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "live"
+      ],
+      "links": 21,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "17",
+      "cost": 10000,
+      "promise": "・Enhanced smart contract with verification features\n・Test cases and preliminary results\n・Add-on's user guide and updated source code documentation\n・A document with findings from the initial user engagement",
+      "criteria": "・Demonstration of core functionality in a test environment\n・Evidence of initial user engagement with at least 10 Google Forms users participation in users acceptance tests",
+      "report": "Milestone 3 Completion Report\nProject Context\nNOTAMPERDATA is an Anti Research Fraud dApp designed to address research fraud, specifically data tampering in primary data collected from research subjects. Initially focused on Qualtrics, the project through a change of scope request was approved for change to create an add-on for Google Forms while maintaining the same vision of ensuring data integrity and immutability.\nWith an aim of building a more comprehensive platform that features other platforms popular with researchers and research communities, we settled on the name NOTAMPERDATA. Our project website is deployed at https://www.notamperdata.com/ and our add-on is currently under Google's review, which is a requirement for the next milestone.\nAdd-on Source Code: https://github.com/notamperdata/notamperdata-addon\n\nMilestone Outputs Delivered\n1. Enhanced Blockchain Integration with Verification Features\nStatus: ✅ Completed\nIn the previous milestone, we developed a basic smart contract. After technical analysis of the solution and the project needs, we decided to proceed with Cardano's native metadata feature. This approach ensures data integrity and immutability for Google Forms submissions while being more cost-effective and faster than Datum implementation. The rationale for this technical choice is documented in the smart contract repository and the hash storage implementation on the dapp’s source code.\nDapp source code: https://github.com/notamperdata/notamperdata-dapp \nSmart contract repository: https://github.com/notamperdata/notamperdata-sc \n2. Test Cases and Preliminary Results\nStatus: ✅ Completed\nComprehensive test cases have been developed and executed, demonstrating successful functionality across various scenarios.\nLink to Testing Documentation: https://docs.google.com/document/d/1sd7cJ0C2PZ3mItir2yr7EpGjQ7E9jv7zs02ZUjCHAKM/edit?usp=sharing \n3. Add-on User Guide and Source Code Documentation\nStatus: ✅ Completed\nComplete documentation has been prepared",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 41,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "18",
+      "cost": 6000,
+      "promise": "・Live Google Forms add-on connected to the Cardano main network: Available for researchers to use\n・Thorough test reports: Documenting test scenarios, results, and any identified issues that were resolved\n・Comprehensive Documentation: Including clear user guides, code documentation, and a 'how-to-contribute' guide\n・Established Project Presence: Social media activity, blog posts, and evidence of presentations to researchers\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Successful deployment and stable operation on the Cardano main network\n・Clear and comprehensive documentation enabling both users and developers to easily understand and interact with the system\n・Evidence of community outreach efforts demonstrating active promotion through social media engagement, blog posts, presentations, or other forms of interaction with the target audience\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Milestone 4 Completion/ Closeout Report\nProject Context\nNoTamperData is an anti-research fraud solution that prevents data tampering in primary research data collected via Google Forms. The platform leverages Cardano blockchain's native metadata feature to ensure data integrity and immutability. This milestone represents the final phase of the project, transitioning from development to mainnet deployment and community engagement.\nProject Website: https://www.notamperdata.com/\nMilestone Outputs Delivered\n1. Live Google Forms Add-on Connected to Cardano Mainnet\nStatus: ✅ Completed\nThe NoTamperData platform has been successfully deployed and is operational on the Cardano mainnet. The add-on enables researchers to automatically hash and store Google Forms responses on-chain for verification and tamper-proof data integrity.\nList of Mainnet Test Transactions: https://github.com/notamperdata/notamperdata-addon/blob/main/Tests/TESTS.md \n2. Test Reports\nStatus: ✅ Completed\nComprehensive testing has been conducted to validate the add-on's functionality, stability, and security on the mainnet. Test reports document various scenarios, results, and resolutions of identified issues.\nLink to Test Reports: https://docs.google.com/document/d/19GlRDtYwASHTIanobfmodZNFBzNu2CF0z23hj1hneGk/edit?usp=sharing \n3. Comprehensive Documentation\nStatus: ✅ Completed\nComplete documentation has been prepared and published, including:\n・User guides for researchers\n・Technical documentation for developers\n・Code documentation in repositories\n・How-to-contribute guide for community developers\n\nAdd-on User Guide: https://www.notamperdata.com/addonguide\nAdd-on Repository: https://github.com/notamperdata/notamperdata-addon\ndApp Repository: https://github.com/notamperdata/notamperdata-dapp\n4. Established Project Presence\nStatus: ✅ Completed\nNoTamperData has actively engaged with the research community and Cardano ecosystem through multiple channels:\nLinkedIn (Primary Channel): https://www.linkedin.com/compan",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 53,
+      "cut": true
+    }
+  ]
+}

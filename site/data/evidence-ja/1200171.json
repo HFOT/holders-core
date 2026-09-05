@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・説明:基礎的な構造を確立し、カルダノコミュニティとインプットとコラボレーションを結び、プロジェクトを初期化。\n・アクティビティ:Cardano DeFiコミュニティと連携し、フィードバック、要件の収集、参加の推進.",
+      "criteria": "1) コミュニティのフィードバックを Google フォームで収集する Defi の契約は、DeFI プロジェクトのために可能な限り有用なライブラリを作るために最も望まれています。\n・コミュニティが希望する契約の6種類以上。\n・1チーム以上が開発に貢献します。\n\n2) 要件の一部として、契約書の標準化開発や利用に使用できるテンプレートを作成します.",
+      "report": "以下は、POA のドキュメントで、Google フォーム、Github およびその他の文書に関連するすべてのリンクを含みます。\nhttps://docs.google.com/document/d/1xNq3jymLZaATMJIadrc8IxymuyNILGB 9IB020R FU/edit?usp=sharing"
+    },
+    {
+      "no": 2,
+      "promise": "一般的な情報:\n・第1マイルストーンでは、このライブラリをアイケンで開発するDeFIスマートコントラクト(少なくとも6)を決定するためにコミュニティフィードバックが収集され、使用されます。\n・各マイルストーン2・3・4・1/3を受託開発いたします。\n\nマイルストーン2の活動\nDeFiスマートコントラクトの最初のセット(1/3)は以下を含みます。\n・アイケンの契約を記述する。\n・Txビルダー用の青写真を作成\n・受託試験\n・開発者が使いやすいWriteドキュメント.",
+      "criteria": "・各契約の成功実装\n・パステストと検証を受託します。\n・各契約の書類作成、アクセス可能.",
+      "report": "マイルストーン2では、最初の2つのスマートコントラクト(オフチェーンコードを含む)をマイルストーン1で定義しました。\n・担保管理ロジック\n・出産・償還ロジック(プール管理)\n\nPOAを見つけます。\n・オンチェーンコード(アイケンワークスペース、バリデータを含む):\n・https://github.com/TrustLevel/defi-library-onchain\n・オフチェーンコード(スマートコントラクトを実証するため):\n・https://github.com/TrustLevel/defi-library-offchain\n・スマートコントラクトの実証・検証を行うビデオ\n・https://www.loom.com/share/486476bf042044228c4f2bc9e6ed61e5?sid=499286ad-7cd1-4a46-87ec-6502e5f2119d\n・例の取引を検証するガイド:\n・https://docs.google.com/document/d/1LHfntMahMkTQSiDWL9s7RhweHyoUj0uL 3AD5r2LO98/edit?usp=sharing\n\nMRコメント:\n最後のマイルストーンまで、メッシュ上のライブラリの起動は予定されていないことに注意してください。 ほとんどの契約が互いにリンクを持っているように、ライブラリを設計しています。 例えば、担保と発行/償還ロジックが一緒に使用できるM2を参照してください。 M2からの契約に液化とOracleの統合がリンクできるM3と同一になります。 即時起動は、最終バージョンに到達するまで、多くの重複作業を意味します。 そのため、GithubのドキュメントをM2-M4のPOAとして最初に使用し、M5でのみ起動する予定です."
+    },
+    {
+      "no": 3,
+      "promise": "一般的な情報:\n・第1マイルストーンでは、このライブラリをアイケンで開発するDeFIスマートコントラクト(少なくとも6)を決定するためにコミュニティフィードバックが収集され、使用されます。\n・各マイルストーン2・3・4・1/3を受託開発いたします。\n\nマイルストーン3のアクティビティ:\nDeFiスマートコントラクトのセカンドセット(1/3):\n・アイケンの契約を記述する。\n・Txビルダー用の青写真を作成\n・受託試験\n・開発者が使いやすいWriteドキュメント.",
+      "criteria": "・各契約の成功実装\n・パステストと検証を受託します。\n・各契約の書類作成、アクセス可能",
+      "report": "Milestone 3では、次の2つのスマートコントラクト(オフチェーンコードを含む)をマイルストーン1で定義しました。\n・価格Oracle契約\n・所有権および保管契約(ライブラリの「位置レジストリ」)\n\nPOAを見つけます。\nhttps://docs.google.com/document/d/1UhVY6VaC7bRjRUMcCwdRUdiM4i4I-18w9VyAP1xaYM/edit?usp=sharing\n\nMRへの注意:\nこのドキュメントでは、既に最後の開発フェーズも完了しているため、Milstone 4(ライセンスおよび監査契約)のPOAも見つかります。 M3の承認後、M4の文書を再度提出します."
+    },
+    {
+      "no": 4,
+      "promise": "一般的な情報:\n・第1マイルストーンでは、このライブラリをアイケンで開発するDeFIスマートコントラクト(少なくとも6)を決定するためにコミュニティフィードバックが収集され、使用されます。\n・各マイルストーン2・3・4・1/3を受託開発いたします。\n\nマイルストーン4のアクティビティ:\nDeFiスマートコントラクトの最終セット(1/3)は以下を含みます。\n・アイケンの契約を記述する。\n・Txビルダー用の青写真を作成\n・受託試験\n・開発者が使いやすいWriteドキュメント.",
+      "criteria": "・各契約の成功実装\n・パステストと検証を受託します。\n・各契約の書類作成、アクセス可能",
+      "report": "マイルストーン4では、マイルストーン1で定義された2つのスマートコントラクト(チェーンコードを含む)の最後のセットを開発しました。\n・株式契約\n・プロトコール監査・報告契約\n\nPOAを見つけます。\n・https://docs.google.com/document/d/1UFUcwIUS19HHRLmTLFBif8nYnrIMKBRXNkDHOMb28O8/edit?usp=sharing\n\nMRへの注意:\nマイルストーン3のPOAに記載されているように、これはマイルストーン3と同じドキュメントですが、すでに2マイルストーン3と4の両方のPOAが含まれています."
+    },
+    {
+      "no": 5,
+      "promise": "・ライブラリの公式起動\n・図書館の意識を高めるためのマーケティング活動\n・スタートアップイベントとしてライブデモを開催\n・最終報告書\n・最終クローズアウト映像.",
+      "criteria": "・マーケティング活動やイベントの立ち上げ(オンラインライブデモ)\n・最終報告書は公開しています。\n・最終クローズアウト映像を一般公開.",
+      "report": "親愛なるコミュニティは、最終マイルストーンのPOAを更新しました。\nCatalyst Admin: リクエストされたPOA to ライブデモは、以前のPOAバージョンのリンクされたページで既にあったが、直接リンクを追加しました。\n\nA. 出力及び受諾の基準:図書館の公式の進水\n証拠:\n・図書館へのアクセス:\n・https://github.com/TrustLevel/DeFi-Lending-Smart-Contracts\n・ライブラリの公式起動(リリースノート)\n・https://github.com/TrustLevel/DeFi-Lending-Smart-Contracts/releases/tag/v1.0.0\n\nB. 出力及び受諾の基準: マーケティング活動および開始でき事(オンライン生きているデモ)を行なって下さい\n証拠:\n・Twitter:\n・https://x.com/andamioseb/status/1987958892207161541\n・テレグラム:\n・https://t.me/c/1556514618/11939\n・https://t.me/Cardano/860154\n・https://t.me/cardano engchat/32772\n・Discord:\n・https://discord.com/channels/1136727663583698984/1158760831203430470/1437520259997278\n・Cardanoフォーラム:\n・https://forum.cardano.org/t/release-opensource-defi-smart-contract-library-build-lending-protocols-faster-on-cardano/151129?u=sebastian pabon\n・オンラインライブデモの録画:\n・ランディングページ: https://github.com/TrustLevel/DeFi-Lending-Smart-Contracts/blob/main/docs/RUN DEMO.md\n・直接録画へのリンク:https://vimeo.com/1133432262?share=copy&fl=sv&fe=ci\n\nC. 出力及び受諾の基準: 閉鎖したレポート\n証拠:\n・報告書へのリンク:https://docs.google.com/document/d/15gn6KweTsPuhvTCZBPeY3iUznLnG9Ui6EvEmd7lhU/edit?usp=sharing\n\nD. 出力及び受諾の基準: 閉鎖したビデオ\n証拠:\n・動画へのリンク:https://vimeo.com/1135313432?share=copy&fl=sv&fe=ci"
+    }
+  ]
+}

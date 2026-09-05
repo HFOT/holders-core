@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "1) ディスカバリー・プロセス・レポート: 発見プロセスの活動と成果の説明を含むレポート。 このプロセスは、Cardanoエコシステムで開発者チームにリーチし、プロジェクトの目標を説明し、フィードバックで小さなアンケートを完了するよう求めています。 具体的なユースケースを定義する結果が使用されます。\n2) ノードクライアントのスキャフォールドをサブストラクト: 最新利用可能なテンプレートを使用して、オフシェルフサブストラトクライアント。 この足場には、機能開発を始めるために必要な汎用的なアーティファクトが含まれています。 Githubの公開リポジトリにあるRustプロジェクトとして公開されます.",
+      "criteria": "1) 発見プロセスレポートは、開発を開始するための実用的な洞察を提供します。\n・10名以上のデベロッパに連絡\n・調査結果は事前に定義された調査形式に従います。\n・反応によりコンクリート用ケースが選定されています。\n\n2)プロジェクトのリポジトリとソースコードは、機能開発に適しています。\n・テンプレートのプリミティブ(コンセンサスパレット、フレームランタイム、チェーンスペックなど)を明示。\n・コードが書式化し、整形チェック(カーゴのfmtと貨物のクッピーが警告を表示しない)を通過し、スタイル条約とベストプラクティスの遵守を保証します。\n・担当者",
+      "report": "ディスカバリープロセスレポート。\nhttps://docs.google.com/document/d/1M6W bv6s3-Q4HAr4zZCMtfjCjoutFDDXdZSeqiDeEAY/edit?usp=sharing\nノードクライアントのスキャフォールドを分割します。\n現在利用可能なSubstrateテンプレートを調べ、テンプレートの最小化を決定しました。 リポジトリの開始点は最小限のテンプレートで、この上に構築されます。 また、インストールおよび実行手順、コントリビューションおよびリリース手順ガイドラインなどの重要な文書も含まれています。 プルリクエストのコードを検証するためにCIアクションを追加しました。\n配達可能:\nディスカバリープロセスレポートを含む文書:\nパブリックリポジトリ: https://github.com/txpipe-shop/partnerchain-reference-implementation\n説明と関連文書へのリンクを読んでください。\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/blob/main/README.md\n有効なCIパイプラインの実行例:\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/actions\nhttps://docs.google.com/document/d/1XojwarHVAlNZR3S2woI8OmMzXG37WZvlQBE9VMXlCQ/edit?usp=sharing"
+    },
+    {
+      "no": 2,
+      "promise": "1) 初期基板ノードのカスタマイズ: 必要な高レベルのカスタマイズを含むサブスレートクライアント。 この変更には、コンセンサス機構、レジャーモデル、ストレージ構造の選択が含まれます。 このクライアントは、実際の機能を実行しませんが、他の開発のための堅牢な基盤として機能し、ピアに起動して接続することができます。\n2) Dev活動ログ:Substrateクライアントのカスタマイズに必要な開発活動の詳細なログ。 このログは、独自のバージョンの実装の目標でプロセスを理解したい新しい開発者のためのガイダンスとして機能します.",
+      "criteria": "1) 開発者は、最初にカスタマイズされたSubstrateノードを使用して、機能を構築することができます。\n・提供したコードベースには、コンセンサス機構、基本的なレジャーモデル、ランタイム、ストレージ機構、基本スキーマが含まれます。\n・開発者は、コードベースへの追加変更なしに、Substrate ノードを複製、コンパイル、実行できます。\n・Substrate ノードは、ランタイムを初期化し、ネットワーク接続を確立し、他のピアと同期させることができます。\n\n2) 実装プロセスは、公開使用のために文書化され、利用可能である:\n・公務員は、主要な設計決定rを文書に認識することができます",
+      "report": "Githubリポジトリで利用可能なソースコードへのリンク:\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/tree/release-v0.0.2\n開発手順と開発ログへのリンク:\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/blob/5f933766f1eb580397122a8a4a77a5c3cdaf3c0/README.md\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/blob/5f933766f1eb580397122a8a4a77a5c3cdaf3c0/docs/dev log.md\nビデオでは、Substrate ノードの先頭で開発を開始する方法を示します。\nhttps://youtu.be/0KD0sHS sMw"
+    },
+    {
+      "no": 3,
+      "promise": "1) パートナーチェーンSDKの統合:パートナーチェーンSDKと統合される当社のカスタマイズされたSubstrateクライアント。 つまり、ノードは、有効なPartnerchain設定とキーを提供することでコンセンサスメカニズムに参加することができることを意味します。\n2) L1のガバナンス契約:Cardanoのプレビューネットワークに展開されている特定のパートナーチェーンのガバナンス契約のインスタンス。 このガバナンス契約は、パートナーチェーン合意書に参加することができるプール事業者を検証します。\n3) Dev活動ログ:Substrateクライアントのカスタマイズに必要な開発活動の詳細なログ。 このログは、独自のバージョンの実装の目標でプロセスを理解したい新しい開発者のためのガイダンスとして機能します。\n4) 使用法の指示: 必須のPartnerchain契約を準備する方法の詳しい指示およびパートナーチェーンの部分として私達の注文クライアントを実行する方法.",
+      "criteria": "1) カスタマイズされたSubstrateクライアントは、パートナーチェーンコンセンサスに参加する必要があります\n・開発者は、コードベースへの追加変更なしでSubstrateノードを複製およびコンパイルすることができます\n・Rustプロジェクトをコンパイルし、Substrate ノードのバイナリ実行ファイルを生成する必要があります。 これは、ユーザーがSubstrateノードを起動することを可能にするバイナリです。\n・パートナーチェーンの構成や手順などを使用して、ノードをPartnerchainに結合できます。\n・バイナリ実行が可能で、必要な起動手順が実行されます。 この手順には負荷が含まれています",
+      "report": "Githubリポジトリで利用可能なソースコードへのリンク:\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/tree/release-v0.0.3\nL1契約の特定のインスタンスを示すパブリックエクスプローラへのリンク:\n・イニシャルガバナンス https://preview.cardanoscan.io/transaction/f7a492f9e6162fc261b082139181549044877cf543c89e131a44b220e161b60f\n・許可された候補者:https://preview.cardanoscan.io/transaction/dcc75443501ea4cc56ae9cc3b7b2daee304ed950deae876d8f3835ca8162e570\n・Dparam: https://preview.cardanoscan.io/transaction/23e6c31779701747b3e3f7f3b499339fc4c58233abb8ce071575b08f0c67a553\n\n開発手順と開発ログへのリンク:\n・マークダウン\n・PDFファイル\n\nパートナーチェーンネットワークに参加するノードを示すビデオ:\nhttps://youtu.be/5A1FeTcyQDQ"
+    },
+    {
+      "no": 4,
+      "promise": "1) 特定の文書を使用する:MS1の発見過程で定義されたユースケースを開発するために、必要な機能と実装の詳細について説明する文書。\n2) 使用場合の特定の特徴: 私たちのジェネリック・サブスレート・クライアントを特定の目標(オラクル、ゲームなど)を達成するために専門とする機能のセット。 開発する機能の具体的なセットは、MS1の発見報告書からの結果に依存します。 機能は完全に機能しますが、参照の実装のために合理的な詳細レベルにスコープ付けられます(メインネット対応のソリューションとは対照的に)。\n3) Dev活動ログ:Substrateクライアントのカスタマイズに必要な開発活動の詳細なログ。 このログは、独自のバージョンの実装の目標でプロセスを理解したい新しい開発者のためのガイダンスとして機能します.",
+      "criteria": "1) ドキュメンテーションは、MS1 で定義されたユースケースに関連する機能に関する重要な設計の決定と技術的な仕様を明確に概説します。\n2) 開発者は、カスタマイズされたSubstrateノードを使用して機能を構築することができます。\n・Substrateクライアントの提供されたコードベースには、定義されたユースケース固有の必要な変更が含まれています。\n・開発者は、コードベースへの追加変更なしでSubstrateクライアントを複製、コンパイル、実行できます。\n・Substrateクライアントは初期化し、ユースケース固有のトランザクションを実行できるようにします。\n\n3) 3)",
+      "report": "配達可能:\n開発手順と開発ログでドキュメントサイトへのリンク:\nhttps://drive.google.com/file/d/1ZLQBj nfhJenR2ZrdG-urvN0DEL1sOu /view?usp=sharing\nGithubリポジトリで利用可能なソースコードへのリンク:\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/tree/release-v0.0.4\nSubstrate ノードの先頭で開発を開始する方法を示すビデオ: https://youtu.be/NVXloKz6mIc?si=8mdXYvaPCyyuT46H"
+    },
+    {
+      "no": 5,
+      "promise": "1)ステップバイステップのカスタマイズチュートリアル: 過去のマイルストーンから開発活動ログの集計は、開発者が一般的なSubstrateノードをPartnerchainノードにカスタマイズするために必要な手順を、ユースケース固有の機能で再現することを可能にする、組織化されたチュートリアルです。\n2) 操作の指示:開発されたSubstrateの顧客のカスタマイズされた版を作動させる方法を説明する簡潔で、広範囲の文書。 これらの手順は、カスタマイズされたSubstrateクライアントとブートストラップ、モニター、相互作用する方法を含みます。\n3) バイナリリリース: カスタマイズされたSubstrateクライアントのタグ付きリリースに対応する公開バイナリ。 このバイナリは、開発者が任意のコンパイルを必要としずにクライアントをダウンロード、インストール、実行することができます。 バイナリには、提案を通して開発されたすべての機能が含まれています.",
+      "criteria": "1) パートナーチェーンノードを実装するチュートリアルは、公開用途で利用できます。\n・チュートリアルでは、提供されたコードベースと同じレベルのカスタマイズをカバーしています。\n・開発者は、Substrateノード開発を再現するためのチュートリアルに従うことができます。\n\n2) カスタマイズされた顧客を作動させる方法の指示は一般に利用できます:\n・操作指示は、ノードを初期化する方法をユーザに説明します。\n・操作手順は、ノードとやり取りする方法をユーザに説明します。\n\n3) 開発者は、Substrate ノードのバイナリリリースをインストールして実行することができます。\n・開発者のダウンロード、インストールが可能",
+      "report": "1)ステップバイステップのカスタム化のチュートリアル:\n\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/blob/main/docs/tutorial/README.md\n\n2) 操作の指示:\n\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/blob/main/docs/tutorial/operating instructions.md\n\n3)バイナリリリース:\nhttps://github.com/txpipe-shop/partnerchain-reference-implementation/releases/tag/v0.0.5\n\n4) ビデオ:\n\nhttps://youtu.be/H6PLn7F5zfQ"
+    },
+    {
+      "no": 6,
+      "promise": "・本提案のソースコードを一般公開、本提案の全ての機能をカプセル化。 これにより、コミュニティや他の開発者が、ニーズに応じて貢献、監査、または変更できるように、透明性とオープンコラボレーションが保証されます。 このコードは、Apache 2.0 ライセンスを参照するパブリックリポジトリでホストされます。\n・フル機能のバイナリリリースとインストールスクリプト: macOS、Windows、Linuxのすべての主要なオペレーティングシステムのための機能の完全なツールチェーンのタグ付けされた。 以前のマイルストーンに記載されているすべての機能を含む完全なツールを伴います。\n・改訂されたドキュメンテーションサイト:ユーザーからのフィードバックの修正と予備的フィードバックが適用された包括的なドキュメンテーションサイト。 サイトには、カスタマイズチュートリアルと操作手順が含まれています。\n・プロジェクトの最終出力を示すビデオのクローズアウト\n・プロジェクトプロセスと成果を説明するクローズアウトレポート.",
+      "criteria": "・最終参照実装は、提案で提示された機能に一致します\n・SubstrateクライアントがCardano Partnerchainを実行\n・ユースケースのカスタマイズはMS1から発見にマッチ\n・最終文書は、新しい開発者にとって合理的な資料として機能します\n・ドキュメントは、Substrateのジェネリックテンプレートから開発を開始する方法を説明する\n・パートナーチェーンロジックの統合方法を説明するドキュメント\n・ドキュメントは、例えば、特定のユースケースの機能を適用する方法を説明します。\n・クローズアウトビデオは、触媒要件に準拠\n・クローズアウトレポートは、触媒要件に準拠",
+      "report": "Githubリポジトリで利用可能なソースコード : https://github.com/txpipe-shop/partnerchain-reference-implementation\nドキュメントサイトへのリンク:https://github.com/txpipe-shop/partnerchain-reference-implementation/tree/main/docs\nYouTubeにアップロードされたクローズアウトビデオへのリンク:https://youtu.be/1yqOK0GY3MI?si=2iTTU631dROsMgOg\nGoogleドライブにアップロードされたクローズアウトレポートへのリンク: https://drive.google.com/file/d/14VD8WBTnAWoZwYi Sepo1qxPeCZjHVMC/view?usp=sharing"
+    }
+  ]
+}

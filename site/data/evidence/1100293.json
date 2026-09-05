@@ -1,0 +1,55 @@
+{
+  "title": "Wolfram: AI - LLM Distributed Inference Services",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 25000,
+      "promise": "A docker container with an LLM application that's usable via command line and available via public download. Included will be the associated documentation for how to use it for inference.",
+      "criteria": "The following acceptance criteria is as follows:\n・Docker container with the LLM application available for download through public link\n・Users can complete inference requests using the docker container via the command line\n・Documentation sufficient to complete criteria 1 and 2 above, i.e. is getting and using the docker container for completing inference requests.",
+      "report": "Milestone 1: Development of easy-to-deploy LLM Server\n\nBelow please find deliverables for Milestone #1, per specs here:\nhttps://milestones.projectcatalyst.io/projects/1100293/milestones/1\n・A docker container with an LLM application that's usable via command line and available via public download\n・Available here: https://hub.docker.com/r/gridrepublic/llm-server/tags\n・Completes Milestone Output #1\n・Covers Acceptance Criteria #1 and #2\n・Documentation for use of container/application\n・Available here: https://gridrepublic.org/docs/LLM+Server+Deployment+via+Docker\n・Completes Milestone Output #2\n・Covers Acceptance Criteria #3, facilitates Criteria #2\n・Evidence B) of public documentation that will allow a third party to reproduce the results\n・Walkthrough Video\n・Available here: https://www.gridrepublic.org/docs/media/Deploying-LLM-Server-via-Docker.mp4\n・Evidence A) of how to download the docker container and using it to complete inference requests via command line",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 7
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 30000,
+      "promise": "There will be an LLM inference API with documentation of the API user endpoints.\nThere will be a WebUI to a locally running version of the LLM. \nThere will be a notebook interface to the locally running version of the LLM.",
+      "criteria": "Working code capable of running basic inference requests via API.\nWorking code capable of running basic inference requests via WebUI.\nWorking code capable of running basic inference requests from Notebook.",
+      "report": "Below please find Evidence for Milestone #2 deliverables, per specifications here: https://milestones.projectcatalyst.io/projects/1100293/milestones/2\nEvidence of Milestone #2 completion \nDocumentation of the endpoints and short video demonstration of all three working code demonstrations of API, WebUI and Notebook: \n・Documentation of the endpoints\n\n・Available here: https://www.gridrepublic.org/docs/LLM+Inference+API\n\n 2. A short video demonstration of all three working code demonstrations of API, WebUI and Notebook.\n・Available here: https://www.gridrepublic.org/docs/media/Running-LLM-Requests-via-API.mp4\n\n(NOTE: A new video file was uploaded to this URL, it works across all operating systems, to address the reviewer's refusal)",
+      "kinds": [
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "7",
+      "cost": 30000,
+      "promise": "A prototype distributed LLM service, with WebUI and Notebook interface. Inference requests are served by remote resources over the internet. Associated user documentation to facilitate use of this service will also be provided.",
+      "criteria": "A) The prototype distributed LLM service will allow:\n・Users to make inference requests via WebUI\n・Users to make inference requests via Notebook interface\n\nB) Documentation sufficient to complete criteria 1 and 2 above, i.e. make inference requests via WebUI and Notebook interface.",
+      "report": "Milestone #3 Iterate: Deploy/Test/Debug\n\nBelow please find \"Evidence\" for Milestone #3 deliverables, per spec here:\nhttps://milestones.projectcatalyst.io/projects/1100293/milestones/3\nEvidence of milestone completion \nA) A short walkthrough video will demonstrate the following:\n・A user making inference requests via WebUI\n・A user making inference requests via Notebook interface\n・Evidence of the inference request being served from a participating/remote server\n\nB) Public documentation that will allow a third party to reproduce the results\n・A short walkthrough video demonstrating {1} inference via WebUI, {2} Notebook interface, and {3} inference requests being served by a participating/remote server\n・Available here: https://www.gridrepublic.org/docs/media/LLM-WebUI-and-Notebook.mp4\n\n・Public documentation that will allow a third party to reproduce the results\n・Available here: https://www.gridrepublic.org/docs/LLM+WebUI+and+Notebook",
+      "kinds": [
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 15000,
+      "promise": "PDF report documenting the completion of the three milestones: 1) Development of easy-to-deploy LLM Server, 2) Development of LLM API + WebUI, 3) Iterate: Deploy/Test/Debug",
+      "criteria": "PDF report contains evidence and links to the API, WebUI and Notebook with accompanying videos demonstrating they're working. Share working demo: an LLM inference service powered by distributed compute resources, with tolerable latency.",
+      "report": "Please see the final PDF close out report and close out video!",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

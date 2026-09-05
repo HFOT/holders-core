@@ -1,0 +1,63 @@
+{
+  "title": "Pairfy: A P2P e-commerce protocol based on trust rating and blind mediators",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 11340,
+      "promise": "・kubernetes repository: Folders, files, scripts and manifests for the operation of kubernetes app cluster configured for development and production environment with load balancer.\n・Frontend-main: Main front-end service of the dapp which aims to enable the visitor or community to interact with the products published by the community.\n・Frontend-seller: Secondary front-end service used only by the sellers. Allows to manage the seller account, product inventory and product slots. (seller dashboard).\n・Service-users: C.R.U.D service for the management of user accounts.",
+      "criteria": "1. kubernetes repository: The content of the repository is sufficient to deploy the basic services of a Kubernetes application and the README.md must contain the steps for the installation on Linux. It must contain manifests for development and production environments with load balancer.\n\n2. Frontend-main: \n a. The service must display a main page with header, banner and product grid. The header \n must contain the geographic location button indicating the language and flag of the visitor's country. \n It should also contain the button to use Cardano wallet.\n b. The interface must be responsive",
+      "report": "Hello reviewers. I have been able to solve the problem. Both frontends are working with the requested url. Please type \"thisisunsafe\" in the browser in case of SSL certificate prompt. \nhttps://pairfy.dev\nhttps://dashboard.pairfy.dev\n\nhttps://github.com/pairfy/marketplace\nIn this video I show my progress. In the development environment (.dev).\nhttps://drive.google.com/file/d/1LqGJQO0H6RtzkJKJTUr1AX0QSTR6SjbD/view?usp=sharing\n\n(4). service-users\nhttps://drive.google.com/file/d/1bDcsZuoJJDirkRieHZ4XAJT5voQA2tF3/view?usp=sharing\n\nHello reviewers, thank you very much for your detailed review. I add the indicated correction. Thank you so much.",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "6",
+      "cost": 11340,
+      "promise": "・Location service: It allows you to identify the area code where the visitor or potential buyer is located to show the products published in their area.\n・Page view for negotiation sessions: It is a frontend page that allows bilateral communication between the seller, the buyer and eventually the mediators.\n・Live chat websockets service: It is a backend service that allows bilateral communication via websocket in which the seller, buyer and eventually the mediators participate.\n・Mediator account service: service for the administration of mediator accounts.",
+      "criteria": "・Location service: takes the visitor's public address and determines the ISO 3166-1 code to show products from their area.\n・Page view for negotiation sessions: The buyer must be able to open a negotiation session and communicate with the seller. The mediator must be able to communicate in the event of an appeal.\n・Live chat websockets service: The backend service responds to the request for a negotiation session, allowing the establishment of a persistence-free web socket instance that allows bilateral communication and eventually that of the mediator.\n・Mediator account service: The service all",
+      "report": "Hello reviewers, I have added the recommendation for milestone 1 in the following commit, thanks: 1d4868fa4dc7cf522a9cff3fb3dd8234d8d51c00\n・Location service: 8eefde695e93b40040987f459f3080a95632f19c\n・Page view for negotiation sessions: ef7899a9bf63a5f45bb5093fb8b7148d6fda8858\n・Live chat websockets service: 8d98e6afaa73bebf44c7ee2bb80c8e7d60815e5f\n・Mediator account service: ce6300ae354e2e2a130c7847ca011288e1e8aa67\n\nRepo: https://github.com/pairfy/marketplace\nVideo: https://drive.google.com/file/d/1-FmRwgATZx6Mp8xLpz6KH_jN4_B1YbXa/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "13",
+      "cost": 5120,
+      "promise": "A video in youtube showing the operation of pairfy locally (proposer computer) showing that it is ready to be deployed to production. Showing all its functions.",
+      "criteria": "Video showing the deployment in local minikube mode (dev computer) where it shows the local operation of pairfy ready for deployment in digitalocean.",
+      "report": "Hello Reviewers. I am sharing a video of Pairfy running locally ready to start integration testing on digitalocean using a real kubernetes cluster. This process is necessary to perfect the application and open it to the public. Please excuse my English 🙏. Thanks.\nLink of video : \nhttps://drive.google.com/file/d/1oRuOXPHiogF1N_IksEJNfD-oy4kbOlxJ/view?usp=sharing\nhttps://www.youtube.com/watch?v=jkmYpcsl4nQ\nGithub Commit: Link of github repository with commit named \"Released V1.0\"\nhttps://github.com/pairfy/marketplace/commit/c42bd1919ba37be9d531d3199317229a0fdb2575",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "14",
+      "cost": 10000,
+      "promise": "・Updated repository with all the requirements of the developed milestones.\n・Video of the operating flow of the seller, buyer and mediator roles. (Final closeout video)\n・Development log, problems, suggestions and projections in a medium post. (Final close-out report Format)",
+      "criteria": "・Updated repository with all the requirements of the developed milestones. The repository must contain all the requirements established in the milestones.\n・Video of the operating flow of the seller, buyer and mediator roles referring to each of the previous development stages General and specific explanation of how each role operates. General and specific explanation of the user, seller and mediator UIX on the frontend. Explanation of the backend operation flow.\n・Development log, problems, suggestions and projections in a medium post. It must have a chronological description of the development",
+      "report": "Updated repository with all the requirements of the developed milestones.\n https://github.com/Pairfy-DAO/pairfy\nFinal closeout video\nhttps://www.youtube.com/watch?v=f1lCRxHEJlY\nFinal close-out report Format\nhttps://docs.google.com/document/d/1Gh5Y9dHmd9D5h5OZWmGQl8_DrLgspid7/edit?usp=sharing&ouid=110437720479384147921&rtpof=true&sd=true\nhttps://medium.com/@sudo.delete.evil/pairfy-cardano-native-marketplace-catalyst-project-close-out-report-e1eb999c0fe0",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    }
+  ]
+}

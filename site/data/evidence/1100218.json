@@ -1,0 +1,63 @@
+{
+  "title": "Open-Source Smart Contracts for AI: Facilitating Model Inference Payments on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 28500,
+      "promise": "・Resource Allocation: Assign roles and responsibilities, and allocate necessary resources.\n・Technology Research: Conduct in-depth research on the Cardano blockchain and existing smart contract solutions.\n・Community Engagement: Initiate discussions with the open-source community for collaboration and support.\n・Development Framework Setup: Establish the development environment and tools needed for smart contract creation.",
+      "criteria": "We are providing a technology research report showing our finding on existing solutions and different smart contract architectures currently in use. In addition, we are providing a github repository including the necessary tools to reproduce our development framework setup. The setup should allows to test our smart contracts and interact with standard AI models. The report will be shared on Github and we will make an additional announcement on our X page.",
+      "report": "Thank you for the feedback and for linking the papers!\nWe have added a section on AI Governance, integrating the paper on Governing AI you linked.\nHowever, while the other papers are also very interesting, they are not directly relevant to our project, so it does not make sense to include them.\nPlease also note that all of our references are at the relevant places in the text, and none of them are \"additional references at the back\". You can click on the citation in the text to jump to the respective reference in the References section.\nLinks:\n・Updated research report: https://drive.google.com/file/d/1bd6FFdsqJKsMD0C3v35jGcJktbsrFCpw/view\n・Github repository including first development setup (please note smart contracts are part of next milestone): https://github.com/unboundedmarket/Smart-Contracts-for-AI\n・Tweet on X announcing report (please note we renamed from AigenSpace to unboundedMarket): https://x.com/unboundedmarket/status/1802718982664798665",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 28500,
+      "promise": "・Smart Contract Coding: Begin coding the smart contracts, incorporating open-source community input.\n・Iterative Testing: Conduct continuous testing (unit, integration, functional) to ensure contract reliability and security.\n・Feedback Integration: Regularly incorporate feedback from developers, users, and blockchain experts.\n・Pilot Evaluation: Collect and analyze data to assess the performance and impact of the smart contracts.",
+      "criteria": "A first version of a smart contract infrastructure enabling the correct billing of AI inference models. The smart contracts should be tested with a basic AI model and developed in Opshin. In addition, we will be using open-source tooling to test the performance of our smart contracts and see how they can be improved. We will collect feedback by monitoring issues in our Github repository and collecting comments on links we share through our X page.",
+      "report": "Dear Reviewer Team,\nWe have now open-sourced our smart contracts along with a comprehensive off-chain infrastructure in our GitHub repository: https://github.com/unboundedmarket/Smart-Contracts-for-AI\nThe README.md file (https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main/README.md) includes sections on how to interact with the smart contracts and how to invoke the AI inference. To understand the reasoning behind our design decisions, we also refer to the report we submitted in Milestone 1: https://drive.google.com/file/d/1bd6FFdsqJKsMD0C3v35jGcJktbsrFCpw/view. We included a wide range of different off-chain scripts that build the necessary transactions to interact with our smart contracts, demonstrating the broad capabilities our model offers.\nTo test the smart contracts and ensure maintainability for future upgrades, we have developed a comprehensive test suite. Details on what this suite covers and how it can be used are included in our README.md under the section \"Smart Contract Testing\". (Test suite: https://github.com/unboundedmarket/smart-contracts-for-ai/tree/main/tests)\nMoreover, to clarify the connection between the smart contracts and the AI inference, we added an additional document that explains the approach and makes it verifiable with on-chain transactions. This report can be found here: https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main/CATALYST_DEMO_REPORT.md\nWe also asked users for feedback and released a Google Form to collect input: https://forms.gle/TvXMytFCFJoCw3Hv8. Based on this form, we created two GitHub issues (already included in our previous submission):\n・\"Subscription Feature Request\" https://github.com/unboundedmarket/smart-contracts-for-ai/issues/2 → Addressed with this commit: https://github.com/unboundedmarket/smart-contracts-for-ai/commit/62bdfb541f53b1263fccf16a2da8c1939500613f\n・\"Bug in off-chain code\" https://github.com/unboundedmarket/smart-contracts-for-ai/issues/1 → Addressed with this commit:",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 32,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 23750,
+      "promise": "・Refinement: Based on pilot feedback, refine and optimize the smart contracts and integration processes.\n・Community Review: Present refined smart contracts to the open-source community for final review and suggestions.\n・Documentation Update: Update all project documentation, including user manuals and technical guides.\n・Launch Event: Officially launch the smart contract system",
+      "criteria": "We will add extensive documentation and testing to understand how our smart contracts are performing in production and get feedback on how they can be improved. We will adjust the developed infrastructure based on community feedback.",
+      "report": "Dear Catalyst Reviewers,\nThe current version of our code is available in our open-source GitHub repository: https://github.com/unboundedmarket/smart-contracts-for-ai/. We have also added a usage guide for external users, which provides more detail than our README.md: https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main/USER_GUIDE.md\nWe introduced our smart contracts to our community via https://x.com/unboundedmarket/status/1963224230675238983 and collected feedback from various sources. All feedback was logged as GitHub issues and addressed in separate commits. To document our process, we prepared a report that outlines our methodology and summarises the feedback received: https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main/FEEDBACK_REPORT.md\nLaunch announcement: https://x.com/unboundedmarket/status/1969003181557309899",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 14250,
+      "promise": "・Continuous Monitoring: Regularly monitor the system for performance and security.\n・Community Engagement: Maintain active engagement with the open-source community for ongoing improvements and updates.",
+      "criteria": "・Working AI inference infrastructure\n・inference smart contracts written in Opshin\n・Report showing continuous uptime of our AI inference model and how it performs during inference request peaks \n・Monitor Github repository for issues raised by the developer community and adjust code base as needed",
+      "report": "Dear Reviewers,\nPlease find the milestone outputs below:\n・Catalyst Close-Out Report (PDF): https://drive.google.com/file/d/17-b1DvKaCi9FY1tSXpkk_VUiyo1q671d/view?usp=sharing\n・Catalyst Close-Out Video: https://www.youtube.com/watch?v=QSToq0Ahovc&feature=youtu.be\n・Uptime Report: We have also created a detailed uptime report to analyze the behavior of our smart contract infrastructure and identify different bottlenecks: https://drive.google.com/file/d/195tAscWTvTGY4gIt32nEskRy6IqusQVm/view?usp=sharing\n・Final Project Documentation: User Guide https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main/USER_GUIDE.md and README https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main/README.md\n\nThe final codebase can be found here: https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main. Throughout the project, we adjusted the codebase based on developer feedback. We have continued monitoring the repository since the last milestone but have not received any additional user feedback. All monitored changes based on current feedback are documented here: https://github.com/unboundedmarket/smart-contracts-for-ai/blob/main/FEEDBACK_REPORT.md We are also planning to continue monitoring the repository after the Catalyst project ends. \nAs pointed out by one of the reviewers, we have developed a smart contract system designed for use by other projects, and all tests were performed on Preprod. In previous submissions, we have always shared Preprod transactions; however, for completeness, we have also created a mainnet transaction to demonstrate that the contract is also accessible on mainnet. https://cardanoscan.io/transaction/226e2ba0c9fba9f85fedc9e803f9a1102b6f4639ef38c5d988e70c4a758dbda6",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 16
+    }
+  ]
+}

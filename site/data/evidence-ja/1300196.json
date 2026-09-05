@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・プロトコルコンポーネントや機能に関するエコシステムニーズを収集するための短い調査を実施\n・システムアーキテクチャ文書、その概要:\n・担保検証、融資発行、返済のためのzk-SNARK統合\n・担保のロック・解除、zk-proofsの検証、融資返済の自動化のためのスマートコントラクト設計\n・zk-SNARKsを用いた担保検証、融資取引、返済のための技術フロー図.",
+      "criteria": "・調査結果10件以上\n・建築文書の概略:\n・zk-SNARKsは、機密性の高い財務データを保護し、プライベートな取引を保証します。\n・スマートコントラクトの設計には、担保および融資管理のためのzk-SNARKベースの検証メカニズムが含まれている必要があります。\n・Protocolはモジュール式でスケーラブルで簡単に実装する必要があります\n・外部専門家による設計・アーキテクチャの検討.",
+      "report": "UPDATED Milestone 1 POAドキュメントはこちら:\nhttps://docs.google.com/document/d/1cMg0dmwjoTUpP9SSy8Lryxb0cdgB0nyCJnw617k3eUA/edit?usp=sharing\n・変更は、第3章2.1項(ZK Lending Smart Contractが利息の支払いを処理する方法の新しい参照)で行われた\n・新規付録B(利息決済プロセス全体について)を追加\n\nドキュメントには以下が含まれます。\n・建築設計:\n・ZKセットアップ:PLONK\n・スマートコントラクトレイヤー\n・オフチェーンレイヤー\n・統合層\n・生態系調査+結果\n・外部レポート(エキスパートバイオを含む)\n・付録(利息決済課を含む)\n\nGithubリポジトリへのリンク:https://github.com/TrustLevel/ZK-Defi-Protocol/tree/main"
+    },
+    {
+      "no": 2,
+      "promise": "・担保ロック・解除・貸付発行の管理業務(アイケン) 以下が含まれます:\n・融資返済を許可する契約\n・利息の支払いの統合\n・各スマートコントラクトのテストケース\n・各スマートコントラクトの文書化、スマートコントラクトロジックのフローチャートなど\n・マイルストーンの結果を示す動画",
+      "criteria": "・機能性スマートコントラクトは、担保検証、融資返済、利息支払い、融資発行の許可が必要です。\n・スマートコントラクトは必須\n・テスト済みで検証可能\n・適度に実行\n・文書化とフローチャートは、それぞれのスマートコントラクトを分かりやすく説明しなければなりません。\n・映像は、理解しやすい方法でマイルストーン結果を示す必要があります",
+      "report": "M2 レポートの更新されたドキュメント (v2) は次のとおりです。\nhttps://docs.google.com/document/d/11QrOcAajDYRgz7Zebqrjgg7A3fR1ZLhD4KZkRb99Q6U/edit?usp=sharing\n-> v1への変更:アイケンベンチマークを追加\n\nレポートには、以下が含まれます。\n・スマートコントラクトコンポーネントとロジック(フローチャートを含む)\n・担保管理\n・償還・出産等 利息支払い\n・Githubリポジトリへのリンク:\n・Onchainモジュール\n・オフチェーンモジュール\n・また、試験等で本文書へのリンクを含む。\n・ブロックチェーン上での実証を検証するガイド\n・テスト結果のスクリーンショット(動画の一部でもある)\n・ベンチマークのスクリーンショット(説明や新しいファイルへのリンクを含む)\n・このレポートを通してあなたを歩く織機ビデオへのリンク"
+    },
+    {
+      "no": 3,
+      "promise": "・担保検証、融資開始、返済を含む各プロトコルコンポーネントのzk-SNARKベースの証拠生成。\n・プライベート貸し取引や借用取引で利用する機能性zk-SNARKベースの証拠生成ライブラリ、現実世界シナリオの実証\n・zk-SNARKプルーフのテストと検証により、アンダーリーイングの詳細を明らかにすることなく、検証できます。\n・プロトコルとzk防止生成メカニズムの詳細なドキュメント.",
+      "criteria": "・zk-SNARKの証明書は、担保取引および融資取引の私的検証を許可しなければなりません。\n・zk-SNARKライブラリは、私的融資と取引の借入を許可しなければなりません\n・試験ケースは、取引や検証を合理的な時間で行う必要があります。\n・文書化は、zkの証拠生成全体を理解し、カバーしなければなりません",
+      "report": "リポジトリ: https://github.com/TrustLevel/ZK-Defi-Protocol ('main')\nOn-chain zk-SNARK(Groth16 / BLS12-381)認証が実装され、Cardano Preprodのライブが実証されています: 完全な預金 → 借用 → 返済 → 各借用、返済およびアンロックがアイケンのバリデータ内で検証されたGooth16証拠によって承認されるサイクルのロックを解除します。\n\nA. 出力:各プロトコルコンポーネントのzk-SNARKベースの証拠生成 — 担保検証、融資開始、および返済。\n受諾基準:zk-SNARKの証拠は、担保取引と融資取引のプライベート検証を可能にします(秘密の証人はチェーンに決して明らかにされません)。\n証拠:\n・回路: https://github.com/TrustLevel/ZK-Defi-Protocol/blob/main/circuits/collateral proof.circom\n・オフチェーンプルーフ生成(ボロー/リペイ/アンロック): https://github.com/TrustLevel/ZK-Defi-Protocol/tree/main/offchain/cli/v5\n・Live Preprod txs, 検証済みオンチェーン (valid contract: true): Borrow https://preprod.cardanoscan.io/transaction/19d9016ad95c3c410e8d66ce469a3f5e4cf2b329380555993fa1028110bb2b37 · 返済 https://preprod.cardanoscan.io/transaction/8b93c3c04e8d66ce469a3f5e4cf5e4cf5e4cf5e4cf5e4cf2b329380555993fa1028110bb2b37 · 返済https://preprod5928110bb2b37 · 返済https://preprod59e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e3fa1028107e5e5e5e5e5e5e5e\n\nB. 出力: 機能的なzk-SNARKの証拠生成ライブラリは、私的融資および借用取引で使用します。\n受諾条件: zk-SNARK ライブラリは、プライベート貸しと取引を借りることができます (預金 → 借入金 → 返済 → サイクルのロック解除)。\n証拠:\n・Groth16 / BLS12-381 ライブラリ — サーキット + コミットキー + Poseidon255, modulo-p/ak-381 によるオンチェーン検証: https://github.com/TrustLevel/ZK-Defi-Protocol/tree/main/circuits と https://github.com/TrustLevel/ZK-Defi-Protocol/blob/main/contracts/lib/zk.ak\n・新しいクローンからくるみ:CD回路&npmテスト→9/9通過(https://github.com/TrustLevel/ZK-Defi-Protocol/blob/mai)"
+    }
+  ]
+}

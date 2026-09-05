@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "ADAハンドルは、ハンドルとサブハンドルに関連するすべてのデータに関心のあるパーティーアクセスを可能にするDockerコンテナを構築しています。 この Docker コンテナは、任意のプロジェクト、個人、dApp、ウォレットなどをインスタンスを実行できるようにします。これにより、Cardano Node、Ogmios、Kupo は、ハンドルとサブハンドルに完全に同期し、ハンドルとサブハンドルに関連したデータの検索を実行します。 たとえば、ユーザーは前方および逆のルックアップを実行し、サブハンドルまたはその他の方法に関連する支払いアドレスを検出して、支払いアドレスを調べて、それに関連付けられているサブハンドルを検出することができます.",
+      "criteria": "このマイルストーンの受諾基準は、PreProd、Preview、MainNet の Docker コンテナーの配信となります。これにより、関心のあるパーティがインスタンスを独立してスピンし、データに対する問い合わせを実行できます.",
+      "report": "マイルストーンを完成しました。 ADA ハンドル API Docker コンテナとパブリック API エンドポイントが準備されます。 ここで検証することができます: https://github.com/koralabs/handles-public-api と https://koralabs.github.io/handles-public-api/.\n\nDocker コンテナは、Cardano Node を実行しているため、最大 24 時間で同期できます。そのため、ブロックチェーン全体と同期する必要があります."
+    },
+    {
+      "no": 2,
+      "promise": "Adahandle.com/mint で利用できる現在のミンチ エンジンは独特な rootHandles を分きます。 このエンジンは、NFTベースのサブハンドル、問題、および仮想サブハンドルをミントにアップグレードします.",
+      "criteria": "このマイルストーンの受諾基準は、 PreProd ブロックチェーン上でのテストポリシーID を使用して、NFT ベースのサブハンドル、問題、および仮想サブハンドルを縮小する機能です。 ADA ハンドルは、内部のコマンドラインインターフェイスから、subHandles に関連するすべてのアクションを実行できます。 このマイルストーンは、フロントエンドの実装を優先します。したがって、コミュニティがテストするGUIではありません.",
+      "report": "マイルストーン2用のこの投稿動画は、NFTのサブハンドルを採掘し、仮想サブハンドルを交換することを示しています。\n\n当初、Milstone 2 の動画配信は GUI ではなく、CLI の録画を提供していませんが、Testnets、Preprod の両方を設定しています。 この投稿の動画は Preprod で作成されました: https://preprod.handle.me\n\n動画はこちら:https://www.youtube.com/watch?v=grRIDjpki0A\n\nこれは、NFTと仮想サブハンドルのプライベートミントのためのトランザクションです - $testing1@subs(NFT) $testing2@subs(仮想):https://preprod.cexplorer.io/tx/91365e015c8fdc5a27d3ae1a9e02d0f20b574588fa982ebda41ed41d246794\n\nこれは、仮想サブハンドルを呼び出したトランザクションです - $testing2@subs:https://preprod.cexplorer.io/tx/8f575449bf6b90d50881b7a342769f4ed4ca817e116526b0dfd8590c876422a1\n\nこれらは、NFTおよび仮想サブハンドルのパブリックミントのトランザクションです。 $catalyst1@subs(NFT) | $catalyst2@subs(仮想):https://preprod.cexplorer.io/tx/5049a1d5138ea045021f6392dbc2a3a0230e28b37a01d1dd41b31b980f2\nhttps://preprod.cexplorer.io/tx/393e5035037513bba421c2a2f61c7573979f77dec950303f4f6b72ddf27e9f\nありがとうございます."
+    },
+    {
+      "no": 3,
+      "promise": "このマイルストーンでは、新しいサブハンドルポータル用のUIとUXレイアウトを配信します。 このポータルは、rootHandlesと同じマイニングポータルから利用できますが、ウォレット認証を通じてrootHandlesの所有権を実証するユーザーにのみ利用できます。 これは、NFTベースのサブハンドルの縮小と仮想サブハンドルの交換を可能にするポータルです.",
+      "criteria": "このフェーズの受諾基準は、すべてのサブハンドル関連の機能を持つ demo.handle.me からアクセスできる、完全に運用実証済みのウェブサイトです。 これにより、コミュニティはsubHandlesの実際の採掘なしでポータルをテストすることができます.",
+      "report": "Milestones 3と4用のこの投稿ビデオは、誰がミントNFTとバーチャルサブハンドルにアクセスできる、完全に操作的で公共のポータルを提示し、個人的に採掘された仮想サブハンドルを呼び出すことができます。\n\nこれは、受諾基準がブロックチェーンに接続されていないと述べたように、マイルストーン2と同じシナリオです。 ただし、プレビューとプリプロド内での運用サイトを完全に設定します。 このデモは、Preprod - https://preprod.handle.me で行われます。\n\n動画はこちら:\n\nhttps://www.youtube.com/watch?v=Q59tv-glUMI\n\nこれは、NFTと仮想サブハンドルのプライベートミントのトランスエーションです - NFTサブハンドル:$nftprivate1@ビデオ  バーチャルサブハンドル:$nftprivate1@video\n\nhttps://preprod.cexplorer.io/tx/328667ceafcf72fdecff49cede6d23528eec423df2d20e134b8a744e1e9d1967\n\nこれは、プライベートバーチャルサブハンドルを刷新するトランザクションです: $virtualprivate1@video\n\nhttps://preprod.cexplorer.io/tx/3dec2f40680bb193f805b511a08b6f42f19febba9218b83afe6893750ab50cf6\n\nこれは、NFTとバーチャルサブハンドルのパブリックミントのためのトランザクションです - NFTサブハンドル:$handle@video | バーチャルサブハンドル:$virtual@video\n\nhttps://preprod.cexplorer.io/tx/53ebf36a54671957ed2b2af91e172cee798906c91d3267b15538ffd3c077ae9a\n\nSubHandles を試したい人なら、https://preprod.handle.me/video に移動できます。 ウォレットが Preprod Network に設定されていることを確認してください。\n\nありがとうございます."
+    },
+    {
+      "no": 4,
+      "promise": "すべてのマイルストーンは、サブハンドル機能を構築し、このマイルストーンの間に、CardanoのPreProdブロックチェーン上の機能をテストすることができます。 これにより、コミュニティ全体がプリプロドにアクセスできるようになります。 handle.me は、NFT ベースの仮想サブハンドルを採掘するフルエクスペリエンスへのアクセスを提供します.",
+      "criteria": "PreProd の起動は、このマイルストーンの受け入れ基準となります。 このフェーズに到達すると、すでに機能全体を構築しています。 このフェーズでは、コミュニティがテストする機能を利用できます。 したがって、受諾基準は、PreProd のハンドル所有者が NFT ベースをミントトし、PreProd 環境から仮想サブハンドルを発行する能力となります。preprod.handle.me.",
+      "report": "Milestones 3と4用のこの投稿ビデオは、誰がミントNFTとバーチャルサブハンドルにアクセスできる、完全に操作的で公共のポータルを提示し、個人的に採掘された仮想サブハンドルを呼び出すことができます。\n\nこれは、受諾基準がブロックチェーンに接続されていないと述べたように、マイルストーン2と同じシナリオです。 ただし、プレビューとプリプロド内での運用サイトを完全に設定します。 このデモは、Preprod - https://preprod.handle.me で行われます。\n\n動画はこちら:\n\nhttps://www.youtube.com/watch?v=Q59tv-glUMI\n\nこれは、NFTと仮想サブハンドルのプライベートミントのトランスエーションです - NFTサブハンドル:$nftprivate1@ビデオ  バーチャルサブハンドル:$nftprivate1@video\n\nhttps://preprod.cexplorer.io/tx/328667ceafcf72fdecff49cede6d23528eec423df2d20e134b8a744e1e9d1967\n\nこれは、プライベートバーチャルサブハンドルを刷新するトランザクションです: $virtualprivate1@video\n\nhttps://preprod.cexplorer.io/tx/3dec2f40680bb193f805b511a08b6f42f19febba9218b83afe6893750ab50cf6\n\nこれは、NFTとバーチャルサブハンドルのパブリックミントのためのトランザクションです - NFTサブハンドル:$handle@video | バーチャルサブハンドル:$virtual@video\n\nhttps://preprod.cexplorer.io/tx/53ebf36a54671957ed2b2af91e172cee798906c91d3267b15538ffd3c077ae9a\n\nSubHandles を試したい人なら、https://preprod.handle.me/video に移動できます。 ウォレットが Preprod Network に設定されていることを確認してください。\n\nありがとうございます."
+    },
+    {
+      "no": 5,
+      "promise": "このプロジェクトの最終出力には、https://handle.me からアクセス可能なフル・オペレーションのサブハンドル・ミンティング・ポータルが含まれているため、ユーザーのウォレットに rootHandles が検出され、NFT ベースのサブハンドル、問題、および仮想サブハンドルを縮小することができます。 このプロジェクトでは、コミュニティが独自にダウンロードして、rootHandles と subHandles の API クエリを実行できるようにすることで、分散型の API Docker コンテナも提供します。\nプロジェクトの終わりまでに、すべてのrootHandle所有者は、NFTベースのサブハンドル、問題、または仮想サブハンドルを縮小するオプションを持っています。 たとえば、$acme rootHandle の所有者は、minting ポータルに接続します。https://handle.me は $acme ハンドルを検出し、NFT ベースのサブハンドル、問題、および revoke 仮想サブハンドルをミントにすることができます。 プロジェクトは、プロジェクトがハンドルとサブハンドルのAPIクエリを実行し、関連するすべてのデータを配信できるように、分散型のAPIエンドポイントも提供します.",
+      "criteria": "SubHandles の MainNet 起動の受け入れ基準は、当社のハンドルに統合された作業製品です。 私ポータル, コミュニティは、自分の財布を接続することができます, 分するためにsubHandles. この機能は、ユーザーが保有するハンドルを識別します。所有者の所有権を2回検証することで、ウォレットとサブハンドルの最小化の2秒の時間を接続します.",
+      "report": "最終マイルストーンのビデオ提出: https://www.youtube.com/watch?v=LabLIu1zy3w\nクローズアウトレポートはこちらからご覧いただけます。\n最終マイルストーンのこの投稿動画は、メインネット https://handle.me にナビゲートし、ウォレットを接続し、既存のハンドル(新しく追加されたハンドルも機能します)を選択しました。今日は、$subhandle-demo - 09/20/2024 と NFT と Virtual SubHandles をマイニングしました。 また、ADA ハンドルの OAuth を指すと、SubHandle の縮小と承認を有効にする方法もビデオで説明します。\nこれは NFT のトランザクションであり、\nバーチャル\n個人的にサブハンドル\nビデオ、nftcatalyst@subhandle-demo (NFT) に minted\nSubHandle と virtlcataly@subhandle-demo (仮想サブハンドル):\nhttps://cexplorer.io/tx/d53d17a78fa4168473edbcd667c18e4922933e414eeb7a8b87add99cfb3\nこれはNFTのトランザクションです\nバーチャル\nパブリックなサブハンドル\nminted、https://handle.me/subhandle-demoにナビゲートすることにより、\n$testing1@サブハンドルデモ\n(NFTサブハンドル)と$testing2@subhandle-demo(バーチャルサブハンドル):\nhttps://cexplorer.io/tx/61057a74732ce7a248da814343ab29fcc4a53751909d27274a83a20d7cc464a5\nコミュニティメンバーまたはCatalystレビュー担当者はhttps://handle.me/subhandle-demoに移動できます\n自分でテストします。 ここまでは、カルダノのコミュニティが1000を超える\nNFTとVirtualの両方をカウントするとき、メインネット上のサブハンドル。\nありがとうございます."
+    }
+  ]
+}

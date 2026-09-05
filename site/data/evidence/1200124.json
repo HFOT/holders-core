@@ -1,0 +1,29 @@
+{
+  "title": "Hlabs: CIP-113 - Finalize the standard for assets with programmability over transfers",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 20000,
+      "promise": "This milestone is retroactive and covers all the work done up to the present moment.\nThis includes the initial proposed standard (https://github.com/HarmonicLabs/CIPs/blob/f45867d6651f94ba53503833098d550326913a0f/CIP-meta-assets%20(ERC20-like%20assets)/README.md)\nand all the discussions after that, all publicly available on the github pull request (https://github.com/cardano-foundation/CIPs/pull/444#issuecomment-2141308918)",
+      "criteria": "The standard is proposed, discussed by the community and improved based on the feedback",
+      "report": "as stated in the SoM, most of this milestone is to be considered retroactive.\nMost of the discussion is present at (https://github.com/cardano-foundation/CIPs/pull/444), in addition to the various, sparse discussions around twitter, feedback that is still reported in case it had considerable impact. \nAdditonally The Rationale section of the CIP shows the evolution of the standard and keeps track of the previously proposed designs.",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 60000,
+      "promise": "an additional commit to the open pull request (https://github.com/cardano-foundation/CIPs/pull/444)\nmodifying the `README.md` file according to the feedback collected.",
+      "criteria": "The newly proposed CIP described in the `README.md` reflects the changes described on high level on this comment of the pull request: https://github.com/cardano-foundation/CIPs/pull/444#issuecomment-1952421243",
+      "report": "The CIP evolved a lot during its lifetime\nfrom the first proposed version \"v0\" that received a lot of critiques for the suggested use of merkle trees\nTo \"v1\" that saw its own working prototype, and led to the discovery of some usability issues\nto \"v2\" that is the one that can be found at this permalink: https://github.com/HarmonicLabs/CIPs/blob/f13516f144df991de14eca6dde9c4319bd98c791/CIP-meta-assets%20(ERC20-like%20assets)/README.md\nor commit with hash \"f13516f144df991de14eca6dde9c4319bd98c791\"",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    }
+  ]
+}

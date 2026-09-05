@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "目的: 必要なインフラを設定し、チームを組み立て、プロジェクト管理慣行を定義することにより、プロジェクトのための確かな基盤を確立します.",
+      "criteria": "・プロジェクト管理ツールのセットアップ・提案\n・すべての活動がカバーするタスクの詳細な分解",
+      "report": "・プロジェクト管理ツールとシステムの設定 プロジェクト管理ツール/ より便利、有効で、透明であるGoogleシート/Githubリンクは一般に公開されます\n・https://docs.google.com/spreadsheets/d/1WqUF8H8ABSTlLEwxYC5bdIwHwjxkf5 RUOp0 hHUDUg/edit?usp=sharing\n\n・チームメンバー、役割、責任は公開されます\n・https://drive.google.com/file/d/1JwAEybfGN6TRD3WQgjEKiUMynjcb6hN2/view?usp=sharing\n\n・すべての活動を遮断する公開アクセス可能なリンク\n・https://docs.google.com/spreadsheets/d/1WqUF8H8ABSTlLEwxYC5bdIwHwjxkf5 RUOp0 hHUDUg/edit?usp=sharing\n\n・Githubのリポジトリへのリンク\n・https://github.com/MeshJS/mesh\n・(注:プロジェクトが継続した際に、将来の出力と証拠のレポストが提供・更新されます)\n\n・Discord お知らせ:\n・https://drive.google.com/file/d/1d4nGPqDDBzRBvB20AtxpRZ8Rq-BqdIfK/view?usp=sharing"
+    },
+    {
+      "no": 2,
+      "promise": "Objective: ジェネシスから同じ動作を持つ別の Cardano ブロックチェーンネットワークを起動し、MeshJS と連携するトランザクション",
+      "criteria": "既存のCardanoブロックチェーンインフラストラクチャに関する研究と、複数のコアとリレーノードでCardanoノードを起動するために必要なインフラストラクチャを選択\n並列Cardanoネットワークを起動し、MeshJSが構築したトランザクションを送信",
+      "report": "パブリックGithubリポジトリのMarkdownファイルで、ネットワークの起動、トランザクションの構築、トランザクションの送信の正確なフローを明示します。\n・https://cloud.meshjs.dev/\n・https://github.com/MeshJS/mesh-saas"
+    },
+    {
+      "no": 3,
+      "promise": "Objective: 並列Cardanoブロックチェーンでカスタマイズされたプロトコルパラメータ機能を導入するには",
+      "criteria": "・並列Cardanoネットワークの起動時にプロトコルパラメータの変更を調べて開発する手法(例:手数料とstakepoolsキーの回転)\n・カスタマイズされたプロトコルパラメータをサポートするためのMeshJSのアップグレード",
+      "report": "DApps Milestone 3のCardanoサービスレイヤーフレームワーク: https://hackmd.io/@jingles/HJgZKtTZlg"
+    },
+    {
+      "no": 4,
+      "promise": "客観的:ネットワークレコードを失うことなく、並列ブロックチェーンを再起動し、不変性のためにCardanoメインネットからいくつかのセキュリティ利益を相続させる方法の研究と開発",
+      "criteria": "・障害やノードの更新時にデータ永続性を持つ並列ブロックチェーンフレームワークの研究開発\n・Cardanoメインネットのセキュリティをフレームワーク並列ブロックチェーンへ変換する仕組みを研究・開発し、サイドチェーンフレームワークを作る.",
+      "report": "研究・開発中、一定期間経過後、要求に反応しなくなると判断しました。 理由は、Yaciが軽量のdevnetであり、永続性のために設計されていたという事実によるものです。 Yaci DevKitのデフォルトインデックスは、埋め込まれたH2データベースを使用します。 永続化を達成するために、PostgreSQLをサポートするためにYaciがアップグレードされました。 https://github.com/bloxbean/yaci-devkit/releases/tag/v0.10.0-preview2 を参照してください。\nconfig/application.properties を編集し、PostgreSQL データベースの詳細を設定するには、次のプロパティを非コンパイルします。\nyaci.store.db.url=jdbc:postgresql://<dbhost>:<dbport>/<dbname>?currentSchema=<schema name>\nyaci.store.db.username=user の\nyaci.store.db.password=パスワード\nネットワークを開始するためのドキュメント, トランザクションの構築とトランザクションの送信は、メッシュウェブサイト上で見つけることができます:\n・https://meshjs.dev/yaci/getting-started, \"indexer用の外部PostgreSQLデータベースをサポート\" を参照してください。\n・https://meshjs.dev/yaci/transactions\n\n完全なリンク: https://hackmd.io/@jingles/SkWOYtTZxe"
+    },
+    {
+      "no": 5,
+      "promise": "目的: DApps のためのカスタマイズされた Cardano の側面の鎖の開始を合理化するために devops のワークフローを確立するため",
+      "criteria": "・Docker、GCP Terraform でセットアップをパッケージ化することで、複数のノードで Cardano Service Layer をセットアップできます。\n・DevOpsの設定で、Defyのアプリケーション用にカスタマイズされたCardanoサービスレイヤーを起動し、コミュニティのデモとして使用",
+      "report": "https://hackmd.io/@jingles/S19l89TZxl#Report\nYaciは複数のノードでパッケージ化され、簡単にセットアップされています。\nドッカーフォルダには3つの設定ファイルがあります。\n・env - JAVA OPTS のような環境変数\n・application.properties - アプリケーション固有のプロパティが含まれています。 (例:Cardanoノードホスト、ポート、データベース情報、ストア構成など)\n・application-aggr.properties - 集計アプリケーション固有のプロパティが含まれています。\n\nYaci Storeリポジトリには3つのout-of-boxアプリケーションがあります。\n・Yaci ストア Utxo インデックス : Utxo ストア、Epoch ストア、コンポーネントの送信\n・八重店 全て : 店舗数\n・ヤシストア集計 : 口座残高の集計\n\nDocker Compose を使用して、Out-of-the-box アプリケーションを実行できます。 アプリケーション用の Docker Compose YAML ファイルは GitHub リポジトリの Docker フォルダー内にあります。\n・リポジトリをクローンしてDocker Composeファイルにアクセスしてください。\n・yamlファイルを正しいアプリケーションイメージバージョンに示すように設定します。\n\nUtxo インデックス アプリケーションの実行\nUtxo Indexer は、utxo ストア、epoch ストア、およびコンポーネントの送信から構成されます。\nデフォルトでは、送信エンドポイントは無効になっています。 有効化 エンドポイント セクションを参照して、有効化する方法を説明します。\n\nドッカーコンポーズ -f yaci-store-utxo-indexer-monolith.yml アップ -d\n集計アプリを実行してアカウント残高を計算\nAggregation App は UTXO ストアデータを集計することでアカウント残高を計算する別のアプリケーションです。\n\nドッカーコンポーズ -f yaci-store-aggregation-monolith.yml アップ -d\nDefyのアプリケーションは、サービスレイヤーをカスタマイズしました\nDefyのアプリケーションカスタマイズサービスレイヤーのパブリックアクセス可能な展開はこちら:\n・https://cloud.meshjs.dev/yaci/usage\n・https://cloud.meshjs.dev/yaci/faucet\n\nそして、展開フロー全体が網のウェブサイトで見つけることができます。\n・https://meshjs.dev/yaci\n\nお客様にご満足いただけるよう、 最終マイルストーンの完成を準備中です."
+    },
+    {
+      "no": 6,
+      "promise": "・目的: コミュニティへの提案結果をもたらす、文書のフルセットを提供\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・Cardano dev がサイドチェーンを開始し、簡単にやり取りできるようなドキュメントを完了\n・フィードバック、質問、コミュニケーションのために、MeshJSとSIDAN Labの両方のコミュニティをホスティング\n・プロジェクトのクローズアウトレポートとビデオの準備\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "このプロジェクトがもたらすすべての新機能と変更に関する公開文書のフルセット:\n・https://meshjs.dev/yaci\n\nプロジェクトの成果物に関して、SIDAN Lab の専用チャネル:\n・https://discord.com/channels/1166784293805228061/1286538921634955274/1420748407739519107\n\nこのプロジェクトが提供するすべての新機能に関するMeshJSのdiscordサーバーの通知:\n・https://discord.com/channels/907191435864977459/907225368807735296/1421030204490649670\n\nパブリックに利用可能なプロジェクト最終クローズアウトレポートとビデオ:\n・休みの報告:https://docs.google.com/document/d/128sCQLQLHB9nqZhlBbW0hMDXQB-Xv1 fs/edit#heading=h.n2577m5345bo\n・クローズアウト動画:https://youtu.be/um4T4 7Mihk"
+    }
+  ]
+}

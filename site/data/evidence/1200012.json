@@ -1,0 +1,61 @@
+{
+  "title": "ADA Cashback from Top Retailers, for Cardano Wallets",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 18120,
+      "promise": "Established partnership with a Chrome-extension-based Cardano wallet",
+      "criteria": "Closing the business terms with a Chrome-extension-based Cardano wallet \nSigning a contract that reflects this agreement\nMockups and marketing documents created for the partnership\nAn analysis of various technological aspects of the integration between the ADA Cashback system and the chosen wallet provider",
+      "report": "Signed contact with a relevant Cardano wallet\nLinks to mockup files and marketing documents\nA link to a document detailing the analysis of the technological aspects of the integration:\nCrypto Cashback Integration Package for Google Chrome extensions\nCashback Portal Page Specification",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 12520,
+      "promise": "UIUX for the project, in collaboration with the wallet partner\n・Planning the design with the wallet partner\n・Store-finder UIUX (search, carousel, categories) for the partner wallet \n・Cache UIUX for the partner wallet",
+      "criteria": "・Completing the UIUX until the partner wallet is satisfied\n・Documented feedback and approval process with the partner wallet\n・Final design elements (screens, functionalities, user flows)\n・A working prototype demonstrating the UI/UX designs within the partner wallet environment",
+      "report": "・Letter signed by the partner wallet approving the completion of all UIUX designs\n・Detailed documentation of the design process, including initial drafts, revisions, and final designs\n・Screenshots/mockups of the designs\n・Initial drafts and revisions\n・A video of the functional prototype showing the UI/UX designs in action\n・Access to the prototype",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 27500,
+      "promise": "Bring’s wallet-side application comprising of:\n・Chrome extension code for the partner wallet \n・All UIs \n・Tokens cache for ADA \n・Backend support for all the above (APIs)\n・Functionalities of Chrome extension:\n\nPopup part:\nGet a domain list from our API, cache it locally, and update the domain list every 48 hours.\nCheck every domain that the user goes to if the domain is included in the domain list.\nIntegrate with the extension and get the relevant wallet address.\nOpen a popup that offers cashback for relevant domains.\nOpt-out - turn off popups for various time frames.\nActivate a deal - Register the deal using the specific wallet address.\nRedirect to the relevant URL for the deal.\nCheck if the user has any new rewards and open a popup with details about the update and where he can see more details.\nCustom themes - allowing the outlets that are using our extension to customize the theme of the popup.\nRetailers part:\nDisplay a list of all retailers available and relevant to the user’s country.\nHave the ability to filter the retailer's list by category or by search.\nActivate a deal for a specific retailer and get cashback for this purchase.\nShow the total tokens the user gained by buying",
+      "criteria": "・Completing the development until the partner wallet is satisfied\n・Each component is fully functional and compatible with the partner wallet (Chrome extension, UIs, tokens cache, backend support).\n・A detailed documentation of the Chrome extension of all developed components as the search and keywords, offerings, functionalities, API's, Claim and withdraw, Cashback history, new offering notification, start earning cashback flow)",
+      "report": "・A signed letter by the partner wallet approving the completion of the development\n\n・Walkthrough Videos: \n・Portal\n・Chrome Extension\n・Claim process demo.mp4\n・Backend API - Components, Functionality of Chrome extension - via Postman\n・Presenting the UI\n\n・All endpoints mentioned are exampled at the API video\n・All the endpoints mentioned are exampled at the retailers video\n\n・Detailed Documentation - open source (Chrome extension code, UIs and APIs)\n・API Docs\n・NPM package for integrating popup\n・Cashback Portal Integration docs\n・UI Breakdown\n\n・Earn crypto cashback popup (showing the wallet address it’s connected to)\n・Turn off functionality (choosing time period for stop getting offers)\n・Cashback terms & conditions for approval\n・New cashback reward notification (to notify users they can earn it / claim it)\n・Claim Cashback\n・Cashback History\n・Cashback offers + search bar and categories\n・Rewards feed where the user can review all earned rewards\n\n・Final designs - All UI's\n\n・User guides to the partner wallet for testing:\n・QA 1_User guide for testing\n・QA 2_SOP\n\nClarification:\n'Tokens cash' is not to be referred to as a feature to showcase. We use this term as a way to describe the rewards that the user has before claiming the cashbach. The 'Tokens cash' functionality is the locking mechanism we have during the time period a user can still return the product which differs from different sellers and different products. As long as the product is still refundable or can be replaced, the ADA cashback remains locked, and the UI presented as pending (count down), reduced, cancelled or claimed. In the transaction history it shows when it is eligible to claim once the lock period is done.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 41860,
+      "promise": "・QA the approved code \n・Collaborate with the partner wallet to add the ADA cashback to its wallet\n・QA and fix until reaching production ready code\n・QA process report (tests to be conducted unit tests, integration tests, user acceptance tests (user testing), CI CD testing)\n・A ready version of the ADA Cashback release and integration in the Partner wallet where the user can run through the full flow including the following features: \n\nGet cashback offers\nDecline offers / turn off for specific time period \nStart earning crypto cashback\nBrowse through different offers\nClaim Cashback and withdrew\nSee their cashback history and activity \nSearch and browse through cashback offers from top brands \n・Final close-out report including full description of the integrated features as mentioned in the ready version\n・Final closeout video",
+      "criteria": "・Partner wallet approving that the integrated code is ready to be released to the chrome store\n・Final closeout report is publicly available\n・Final closeout video is publicly available\n・A document of the QA process and results (tests and issues that's been resolved)\n・The ADA Cashback has been successfully integrated into the Partner Wallet (users can test)",
+      "report": "Letter signed by the partner wallet\nUser manual\nDetailed QA documentation:\n・QA Bugs Popup + Portal\n・QA in Detail - Popup\n・QA in Detail - Portal\n\nVideos showing the ADA cashback in the partner wallet:\n・Cashback Portal Review\n・Extension popup\n・Cashback Claim Process\n\nYoroi Wallet on Chrome Store - Live! \nFinal closeout report (Video inside)",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 10
+    }
+  ]
+}

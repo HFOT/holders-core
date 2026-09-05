@@ -1,0 +1,48 @@
+{
+  "title": "OpShin Core - Developing Python Smart Contracts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 12960,
+      "promise": "The Catalyst proposal outlines three tasks for the OpShin core improvements. The first one covers usability improvements: Developers should be able to perform basic operations for smart contracts easily, such as loading, deploying and interacting with them. Tooling for this (such as the support for Plutus Blueprints) is missing from OpShin and needs to be implemented\n\nConcrete outputs should include:\n・Support for Plutus Blueprints (https://github.com/OpShin/opshin/issues/57)\n・Support for transaction building with OpShin (https://github.com/OpShin/uplc/issues/12)\n・Better error reporting and logging (https://github.com/OpShin/opshin/issues/160)",
+      "criteria": "The three marked issues (Support for Plutus Blueprints, Support for transaction building with OpShin, Better error reporting and logging) should be converted into Pull Requests (PR) with corresponding code changes. This means that the developers will publicly share what changes they have made to the codebase to resolve the given issues. As usually done, there will also be a verbatim explanation of each PR through the Twitter Page (@OpShinDev) of the main project.",
+      "report": "The mentioned Issues have been resolved in these Pull Requests:\nSupport for Plutus Blueprints (https://github.com/OpShin/opshin/issues/57)\n・https://github.com/OpShin/opshin/pull/279 \n・which also lead to a request for adjustment on CIP 57 (https://github.com/cardano-foundation/CIPs/pull/615)\n\nSupport for transaction building with OpShin (https://github.com/OpShin/uplc/issues/12)\n・https://github.com/OpShin/uplc/pull/30\n\nBetter error reporting and logging (https://github.com/OpShin/opshin/issues/160)\n・https://github.com/OpShin/opshin/pull/340\n\nExplanations have been supplied in the Pull Requests and on Twitter, i.e. here:\n・https://x.com/OpShinDev/status/1742196548396831198?s=20\n・https://x.com/OpShinDev/status/1735056600832815192?s=20\n・https://x.com/OpShinDev/status/1718748718881513970?s=20",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 12960,
+      "promise": "The Catalyst proposal outlines three tasks for the OpShin core improvements. The second one covers optimizations:\n・Configurable degrees of optimization in OpShin (https://github.com/OpShin/opshin/issues/267, https://github.com/OpShin/opshin/issues/168)\n・Plython (https://github.com/OpShin/pluthon/issues/7)\n・UPLC (https://github.com/OpShin/uplc/issues/26)",
+      "criteria": "The three marked issues (Configurable degrees of optimization in OpShin, Plython, and UPLC) should be converted into Pull Requests (PR) with corresponding code changes. This means that the developers will publicly share what changes they have made to the codebase to resolve the given issues. As usually done, there will also be a verbatim explanation of each PR through the Twitter Page (@OpShinDev) of the main project.\n\nThe PR contains a verbatim description of the changes and also some benchmarks to show the benefits of the optimizations in terms of reduced transaction size or execution step (",
+      "report": "The mentioned Issues have been resolved in these Pull Requests:\n\nConfigurable degrees of optimization in OpShin (https://github.com/OpShin/opshin/issues/267, https://github.com/OpShin/opshin/issues/168)\n・https://github.com/OpShin/opshin/pull/341\n\nConfigurable degrees of optimization in Pluthon (https://github.com/OpShin/pluthon/issues/7)\n・https://github.com/OpShin/pluthon/pull/20\n\nConfigurable degrees of optimization in UPLC (https://github.com/OpShin/uplc/issues/26)\n・https://github.com/OpShin/uplc/pull/33\n\nThe Pull Requests are annotated with a verbatim description of the changes and moreover the changes have been announced through the projects communication channels:\n・https://x.com/OpShinDev/status/1764654529734218181?s=20\n・https://x.com/OpShinDev/status/1765022267413569702?s=20",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 9,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 17280,
+      "promise": "The Catalyst proposal outlines three tasks for the OpShin core improvements. The third one covers simulation: The Plutus VM needs to be fully implemented in Python in order to give full freedom and flexibility when developing in a Python stack on Cardano. The current implementation is lacking precision and testing as well as primitives that will be present in Plutus V3.\nA fully typesafe and cost-measuring implementation of the Plutus VM in Python.\nRelated issues include\n・Natively evaluate Tx in UPLC (https://github.com/OpShin/uplc/issues/12)\n・Check types for builtins (https://github.com/OpShin/uplc/issues/4)",
+      "criteria": "The two marked issues (Native evaluation of UPLC and type checking) should be converted into Pull Requests (PR) with corresponding code changes. This means that the developers will publicly share what changes they have made to the codebase to resolve the given issues. As usually done, there will also be a verbatim explanation of each PR through the Twitter Page (@OpShinDev) of the main project.\nThe PR will contain a verbatim description of the changes and some outline on how to use the simulation for building and locally simulating transaction. The outcome of this will be useful to precompute",
+      "report": "The two referenced issues in this Milestone have been completed. They are entirely independent of the other Milestones submitted.\nhttps://github.com/OpShin/uplc/issues/12\nhttps://github.com/OpShin/uplc/issues/4\nThe result has been pulished in the package version 1.0.0 of uplc and been explained in more detail in this tweet and linked release:\nhttps://twitter.com/OpShinDev/status/1742196548396831198\n\nMoreover a Project Closeout Report has been compiled and is provide with the following link:\nhttps://docs.google.com/document/d/1riuny9CzBLw3wKMiSo0CePa_zlDCZ0e3L8voVMilwTk/edit?usp=sharing\nA Project Closeout Video has been uploaded to Youtube and can be accessed through this link:\nhttps://www.youtube.com/watch?v=Shpx_CJMHjA",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 5,
+      "cut": true
+    }
+  ]
+}

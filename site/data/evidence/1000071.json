@@ -1,0 +1,74 @@
+{
+  "title": "DripDropz Open Source Voting Petition Management",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 42000,
+      "promise": "・Milestone 1: UX/UI Implementation (1 Month)\n・Research Existing Solutions\n・Build User Journey/User Experience\n・Implement UI in Figma",
+      "criteria": "UX/UI Implementation will have a deliverable of a UI created in a Figma document and shared publicly with the community.",
+      "report": "The goals for Milestone 1 were as follows:\n・Milestone 1: UX/UI Implementation (1 Month) - The activities listed here took place in the last thirty days.\n・Research Existing Solutions - We evaluated petition management from corporate governance and change.org.\n・Build User Journey/User Experience - We walked through our existing user journey, and identified the appropriate locations to implement the petition management system both in the administrative areas, as well as the front end.\n・Implement UI in Figma - The UI is implemented in Figma according to the needs of our lead developer.\n\nThere was concern from one of the reviewers in the previous round of approvals that they did not see the user journey, and did not understand the changes in the UI. Our designers are suggesting a new UI improvement to our tooling. We added the user journey to the Figma, and we brought back both the old UI and the new UI so that reviewers can see both.\nOur deliverable is a publicly available Figma document. That document is located here: https://www.figma.com/file/ZQLJo5IZIa0B8NcZ0kGecX/DripDropz-Open-Source-Voting-Petition-Management?type=design&node-id=0%3A1&mode=design&t=tLx0UV7M4dDDBd2F-1",
+      "kinds": [
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 36050,
+      "promise": "The following modules will be added to the Github repository in a pull request:\n・Candidates Qualification Module\n・Proposal Raising Module\n・petitions management - admin interface\n・Frontend",
+      "criteria": "View the code Implementation through a Pull Request created and updated with the features described above. View a twitter thread describing the new features.",
+      "report": "For Milestone 2 we needed to add features for the following areas\n・Candidates Qualification Module\n・Proposal Raising Module\n・petitions management - admin interface\n・Front End Changes.\n\nWe needed to provide a twitter thread describing the features: \nhttps://twitter.com/DripDropz_io/status/1748779619581358351\nIn the Twitter thread, we included screenshots of the changed features, as well as a link to the pull request.\nWe needed to show our work via a pull request. The Pull Request created has work for Petition Management:\nhttps://github.com/DripDropz/onchain-voting/pull/32",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "25",
+      "cost": 36050,
+      "promise": "Milestone 3: Documentation and Testing (1 Month)Acceptance / User testing with at minimum one community using the system. Documentation will be updated to show the new features",
+      "criteria": "Viewing A pull request log will show documentation updates within the code that describe the new functionality. Viewing a twitter post will explain the pull request and what was accomplished.",
+      "report": "Proof of Achievement – Milestone 3\nDocumentation and Testing\nA. Output: Updated feature documentation describing the Ballots, Petitions and Polls functionalities\nAcceptance criteria: Documentation reflects all new features and provides clear guidance for users and administrators. It must be visible in the repository and show the new workflows.\nEvidence: https://github.com/DripDropz/onchain-voting/blob/main/docs/Feature_Documentation.md\nAdditional commit history: https://github.com/DripDropz/onchain-voting/commits/main/docs/Feature_Documentation.md\nB. Output: User testing completed with a live community\nAcceptance criteria: At least one community must be able to use the governance features in a real-world setting.\nEvidence: RESI / Living Green Urban Farms governance site using this system: https://vote.resi.works/ (Server/Hosting issues resolved)\nC. Output: Public explanation of new functionality\nAcceptance criteria: A publicly visible post must explain the updates, reference the documentation and show where to find the work.\nEvidence: Twitter/X announcement: https://x.com/DripDropz_io/status/1993069994188341331?s=20\nD. Output: Source code and documentation tracked through version control\nAcceptance criteria: Reviewers must be able to verify that documentation updates are linked to pull requests and commit logs reflecting the milestone work.\nEvidence: Commit and change history: https://github.com/DripDropz/onchain-voting/commits/main/docs/Feature_Documentation.md\nE. Output: Trello Archived Testing logs + open source source code: https://github.com/DripDropz/onchain-voting\nhttps://github.com/DripDropz/onchain-voting/tree/main/docs/Trello_Testing_Dev_Logs\nAcceptance criteria: Evidence should show that the system was exercised through testing and relevant code update commits.\nEvidence: Testing can be verified through live usage at https://vote.resi.works combined with repository commit logs and the internal Trello-based QA workflow used by the team.\nSource code commit h",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 17,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "26",
+      "cost": 10000,
+      "promise": "Final Milestone: Release (1 Wk)\nResolve any bug fixes, issues discovered during testing\nPull Request will be merged into main.",
+      "criteria": "Release will include the pull request merged back into the main code base, with functionality available to all. Issues and Bugs will be corrected, or an explanation issued as to why it is not necessary or possible to change/repair.",
+      "report": "The testing completed and the tool is live, here is the pull request for fixes that occurred in testing: \nhttps://github.com/DripDropz/onchain-voting/tree/fix/cleanups\nHere is the pull request for petitions: https://github.com/DripDropz/onchain-voting/tree/feature/publish-petition",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "27",
+      "cost": 29400,
+      "promise": "A closeout video will be created to show the new feature added to the https://openchainvote.com/ demonstrator site in action. A closeout report will be generated.",
+      "criteria": "A reviewer can view the closeout video on YouTube. A reviewer can read the closeout report, formatted as per closeout requirements.",
+      "report": "Closeout Report is now in three places.\n・Lower body of this document \n・Emailed to catalyst@iohk.io\n・This drive location: https://drive.google.com/file/d/1CBTVT9sDjDVRptEEobRXpnZ_gerr91OS/view?usp=sharing\n\nWe are happy to mail a physical copy to the Catalyst team via USPS Certified Mail, if that is helpful.\nA. Output: Close-out video demonstrating the implemented system\nAcceptance criteria: A reviewer can view the close-out video on YouTube and clearly see the implemented features, workflows, and system functionality in action.\nEvidence:\nYouTube Close-out Video\nhttps://www.youtube.com/watch?v=Uq-PEepZu_M\nThe video includes a full walkthrough of the petition and polling system, including creation workflows, administrative controls, and live system interaction.\nB. Output: Close-out report documenting project completion\nAcceptance criteria: A reviewer can read the close-out report formatted according to Catalyst requirements and verify that all KPIs, achievements, impact, and next steps are documented.\nEvidence:\nClose-out Report PDF (submitted via Catalyst Completions email)\nThe report includes full project details, KPI coverage, impact analysis, change request context, and supporting links to all relevant resources and deployments.\nC. Output: Demonstrable live system with implemented features\nAcceptance criteria: A reviewer can access the live system and verify that petition management and polling workflows are functional and aligned with the proposal.\nEvidence:\nLive Deployment\nhttps://onchain-vote.duckdns.org\nCommunity Deployment\nhttps://vote.resi.works/\nThe system supports full petition lifecycle workflows, polling functionality, wallet-based participation, and administrative management features as demonstrated in the video.\nD. Output: Public source code and documentation\nAcceptance criteria: Reviewers can verify that the system is open source, with documentation and commit history reflecting the delivered work.\nEvidence:\nRepository\nhttps://github.com/DripDropz/oncha",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 46,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "CIP 68 Royalty Standard & Developer Resources",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25495,
+      "promise": "A new CIP standard, written, reviewed and approved by the community. \n﻿This is already underway at https://github.com/cardano-foundation/CIPs/pull/551.",
+      "criteria": "The pull request for CIP 102 at https://github.com/cardano-foundation/CIPs/pull/551, or an equivalent PR, has been merged into the master branch.",
+      "report": "Merged PR: https://github.com/cardano-foundation/CIPs/pull/551\n\nResulting CIP-0102 folder in master branch: https://github.com/cardano-foundation/CIPs/tree/master/CIP-0102",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 25494,
+      "promise": "A survey of Cardano developers showing which language they'd prefer to see onchain reference implementations done in.A reference implementation stored in the CIP 102 folder in the CIPs repository, which demonstrates:\n・Minting a CIP 102 compliant NFT with royalties\n・Reading a CIP 102 NFT’s royalties off chain\n・Reading and validating against CIP 102 NFT royalties on chain\n\nThis reference implementation will be written in Typescript for the offchain code, PlutusTx or Aiken (or some other language), depending on survey results, for the onchain code.",
+      "criteria": "The survey has been conducted.\nThe pull request for the reference implementation has been approved and merged to master.",
+      "report": "The poll I ran to determine the onchain language resulted in 75% of votes for Aiken: https://x.com/ikigai_sam/status/1713964753331339343\n\nI opened a pull request with the reference implementation here: https://github.com/cardano-foundation/CIPs/pull/848\n\nThe editors informed me in the pull request that reference implementations will no longer be kept in the CIPs repository, but in their own separate repository.\n\nThe new repository for the reference implementation is here:\nhttps://github.com/SamDelaney/CIP_102_Reference",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25495,
+      "promise": "Research and select open source libraries for implementation with a survey to gather community input.Confirm activity of & acceptance by the library's maintainers.Integrate into the first library selected as appropriate. This should include one or more of the following:\n・Minting Implementation\n・Offchain Reading Implementation\n・Onchain Validation Implementation",
+      "criteria": "The results of the survey are published.\nThe PR to the first library has been made & approved.",
+      "report": "Tried a couple times to run surveys for potential projects without any results:\nhttps://x.com/sde_laney/status/1825683926817583490\nhttps://x.com/sde_laney/status/1829032031130730721\nSince the community didn't request anything, I selected the 3 best open source minting tools I could find:\nhttps://x.com/sde_laney/status/1860103038159192154\nThis survey selected Mintun.io.\n\nWorked with Ikigai Technologies to add CIP 102 support to Mintun.io. Work was done over several PRs, submitted by several team members:\nhttps://github.com/ikigai-github/mintun/pull/1\nhttps://github.com/ikigai-github/mintun/pull/5\nhttps://github.com/ikigai-github/mintun/pull/19\nhttps://github.com/ikigai-github/mintun/pull/26",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 7
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 50989,
+      "promise": "Integrations into at least 2 additional open source libraries as appropriate. This should include one or more of the following:\n・Minting Implementation\n・Offchain Reading Implementation\n・Onchain Validation Implementation\n\nProject close out report & video.",
+      "criteria": "The PR to each selected library has been made, approved & merged.\nClose out assets (report & video) have been submitted to the catalyst team.",
+      "report": "A. Output: Interest Survey\nAcceptance criteria: Open source libraries have been selected by the community\nEvidence: https://forum.cardano.org/t/poll-cip-102-os-contributions/153921\nI chose the #1 and #2 (tied) results from the survey: Cardano-Client-Lib and Pycardano\nB. Output: Integration into Cardano-Client-Lib\nAcceptance criteria: The PR to each selected library has been made, approved & merged.\nEvidence: https://github.com/bloxbean/cardano-client-lib/pull/627\nC. Output: Integration into Pycardano\nAcceptance criteria: The PR to each selected library has been made, approved & merged.\nEvidence: https://github.com/Python-Cardano/pycardano/pull/491\nD. Output: Project Closeout Report\nAcceptance criteria: Close out assets have been submitted here\nEvidence: https://docs.google.com/document/d/12WfTt0FZCTwynlVbE-TjDqdiSCyda95N_qwrCvnCoNo/edit?usp=sharing\nE. Output: Project Closeout Video\nAcceptance criteria: Close out assets have been submitted here\nEvidence: https://www.youtube.com/watch?v=GKIYBsafD3M",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

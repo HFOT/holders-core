@@ -1,0 +1,56 @@
+{
+  "title": "Upgrade Cardano wallet js for Babbage",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 36000,
+      "promise": "Reference script feature in Transaction Builder\nA PR on https://github.com/StricaHQ/typhonjs\nUpdated Documentation\nComprehensive usage examples for reference scripts",
+      "criteria": "A pull request created on https://github.com/StricaHQ/typhonjs with relevant code commits that add below,\n・reference script feature\n・Documentation updated \n・Usage examples added\n・Reference script functionality tested and validated",
+      "report": "・ref script test cases added\n・the test cases are full transactions and hence are the example itself\n・functionality tested with test cases\n・documentation generation code has been added, it can be built with - npm run docs\n\nhttps://github.com/StricaHQ/typhonjs/pull/34",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 36000,
+      "promise": "A PR on https://github.com/StricaHQ/typhonjs with below features,\n・Adds inline datum support in the Transaction builder\n・Updated documentation\n・usage examples for inline Plutus datums\n・Test cases and validation",
+      "criteria": "A pull request was created on https://github.com/StricaHQ/typhonjs with relevant code commits that add below,\n・reference script feature\n・test cases and validation\n・Documentation updated \n・Usage examples added",
+      "report": "・Inline plutus data support added\n・Inline ref script support added\n・tests added for inline Plutus data and inline ref script\n・the test cases are full transactions and hence are the example itself\n・functionality tested with test cases, all test cases passed, `npm run test`\n・generate docs with the command `npm run docs`\n\nhttps://github.com/StricaHQ/typhonjs/pull/34\nhttps://github.com/StricaHQ/typhonjs/pull/34/commits/83839375fe29e3bdb6284a2b73c40b7930170f5a\nhttps://github.com/StricaHQ/typhonjs/pull/34/commits/45cfa8d79195c8471f0e14a162bd01605d68e763",
+      "kinds": [
+        "code"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "A PR on https://github.com/StricaHQ/typhonjs with the below features,\n・Adds collateral output support in the Transaction builder\n・Updated documentation\n・Examples\n\nNOTE: Test cases are part of the final milestones",
+      "criteria": "A pull request is to be created on https://github.com/StricaHQ/typhonjs with relevant code commits that add below,\n・reference script feature\n・Updated documentation\n・Example",
+      "report": "・Collateral Output support added\n・Total Collateral amount support added\n・tests added for collateral output and total collateral\n・new test cases were added with full transactions and hence are the examples as well\n・functionality tested with test cases, all test cases passed, `npm run test`\n・generate docs with the command `npm run docs`\n\nhttps://github.com/StricaHQ/typhonjs/pull/34\nhttps://github.com/StricaHQ/typhonjs/pull/34/commits/261f586dd4ffc74e3249b6c9e0d39cc063460325",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 18000,
+      "promise": "・Add unit tests for features, reference script, inline datum, and collateral output \n・TyphonJs library released on npm, incorporating all three features\n\nNote to whoever commented below\n1 - \"Commits supporting Plutus V2 features added to the TyphonJs GitHub repository\" \n-> Kindly check the previous milestones, they are present to add these exact things.\n2 - \"Updated documentation\"\n-> Kindly check the previous milestones, they are present to add this exact thing.",
+      "criteria": "A pull request is to be created on https://github.com/StricaHQ/typhonjs with relevant code commits that add unit tests\n\nNote to whoever commented below,\n・Plutus V2 support tested and validated \n・Documentation finalized and code examples provided\n・TyphonJs upgraded to support Plutus V2 features\n\n-> Kindly check the previous milestones, they are present to add these exact things.",
+      "report": "Delivered\n・Updated Min UTXO Size calculation\n・UTXO Size checks\n・Auto UTXO split for change output\n・MinUTXO Test cases\n・Ref script and required Babbage TX fields\n・inline plutusData\n・inline refScript\n・inline plutusData tests\n・inline script tests\n・collateral output\n・total collateral\n・total collateral and collateral output tests\n\nReleased v2.0.0 on NPM - https://www.npmjs.com/package/@stricahq/typhonjs\nV2.0.0 Documentation - https://docs.strica.io/lib/typhonjs/index.html\nMerged PR - https://github.com/StricaHQ/typhonjs/pull/34\nClose Out report\n・PDF - https://drive.google.com/file/d/19hV1BOMXUQGqYDiNGPFjdmhJXY15EpEh/view?usp=sharing\n・Video - https://youtu.be/6fmFmQBgU7U",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

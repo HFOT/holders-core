@@ -1,0 +1,64 @@
+{
+  "title": "Decentralized Machine Learning Model Hosting on Cardano - Interface",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 25000,
+      "promise": "The outputs of Milestone 1 focus on the initial design of the UI and feedback on the design:\n・Initial Designs\n・User experience research and community feedback on design preferences and usability.\n・A comprehensive report that summarizes the outputs of the first step, including user experience research, community feedback, and future changes based on the feedback.",
+      "criteria": "The final report shows clear evidence of the steps and outputs of the first Milestone.\nTo meet the acceptance criteria, the report must include:\n・A motivational section followed by a section on user experience research.\n・A section showcasing initial design images, accompanied by descriptions and justifications for design choices.\n・A section summarizing the community feedback, including the corresponding evidence of the feedback in the form of links to posts on X and individual comments.\n・A final section focusing on the next steps for UI design, based on the community feedback.",
+      "report": "Thank you for the valuable feedback on the PoA!\nWe tried hard to get feedback, so we have shared our designs in 5 posts on Twitter/X!\nHere is a Link to the Google Drive Feedback file: https://docs.google.com/spreadsheets/d/1x578AkBNNwNKt2MKfBQI-FHwg43pPdUibxWSnBuc19Y/edit?usp=sharing\nIf you have any additional feedback, please feel free to share! \nHere the original PoA:\nWe have completed the outputs of the first Milestone of our Project: \"Decentralized Machine Learning Model Hosting on Cardano - Interface\"\nThe central output of this Milestone is the initial designs for our platform. To showcase them, we have created an interactive prototype that is publically available and can be explored: \nhttps://t.co/dBtIRHjA14\nTo conduct UX research and collect feedback, we have created a feedback form:\nhttps://t.co/2Gmupt0FPA\nWe have shared the initial designs and feedback form with the community in several posts:\nhttps://x.com/unboundedmarket/status/1795855879251574859\nhttps://x.com/unboundedmarket/status/1796157734812831821\nhttps://x.com/unboundedmarket/status/1796500879333580801\nhttps://x.com/unboundedmarket/status/1798760834472268037\nhttps://x.com/unboundedmarket/status/1799012760292114830\nFinally, we have written an extensive report featuring: \n・A motivational section, \n・User experience research in form of target user definition and community feedback collection,\n・A description of our initial designs as well as justifications\n・Summarization and examples of the community feedback\n・A summary and description of the next steps\n\nOur report is available here:\nhttps://drive.google.com/file/d/1KW1mh58tTkGF_TMr0U4ggJLoJnK4-a-O/view?usp=sharing",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 30000,
+      "promise": "The focus of Milestone 2 is on developing the User Interface (UI) based on the designs created in Milestone 1. This phase deals specifically with the development of the interface, as the entire project revolves around it.\nAlthough Milestone 2 includes preliminary internal testing of the interface, the primary testing occurs in Milestone 3.\nTherefore the outputs from Milestone 2 include:\n・A functional user interface ensuring compatibility across various devices and browsers, based directly on the design concepts from the previous milestone.\n・Preliminary integration of the UI with backend systems.",
+      "criteria": "To get accepted, the milestone requires the following:\n・A fully functional user interface that is compatible across major devices (mobile, tablet, desktop) and browsers.\n・Successful preliminary integration with backend systems, demonstrated by seamless UI-backend interactions.\n・The user interface should display a list of the available Machine Learning models, including an option to click on them to view addtional information, such as their description, community rating and usage cost.\n・Users should be able to browse and search the different models.\n・There is an additional page, where users can",
+      "report": "Third PoA Submission:\n\nWe want to thank the reviewers for the detailed feedback and providing screenshots of the individual pages!\nWe have redesigned the pages to be more responsive on mobile devices\nThe changes are deployed here: https://um-preprod.unbounded.market/\nAlternatively, you can see screenshots of the updated pages here: https://drive.google.com/drive/folders/1c2RXwEHMpNNL3WT6ipPBVlac72YnBCJh?usp=sharing\nRegarding the video, please note that creating documentation about the interface is the content of the very next milestone!\nHowever, please share any specific additional feedback you may have on the website's current state.\nSecond PoA Submission:\n\nVideo & Sound:\nThe video does not have sound. \nHowever, based on the feedback, we have added a second video with annotations explaining the individual steps of the walkthrough. \nYou can watch the annotated video here: https://veed.io/view/a107b906-64b6-4d59-8a99-dfb8ad1b2822\nPlease note that the next milestone (Milestone 3) includes creating extensive documentation for our interface.\nWallet Connector:\nOur wallet connector supports all major wallets on Cardano. The connector only displays Nami in the video since this is the only wallet we have installed in the browser. However, we have also tested Eternl and Flint. \nBackend & Model:\nOur backend systems are up and deployed but currently contain demo/dummy data for the individual models. Please note that this project is to develop the user interface (UI) of our marketplace.\nFirst PoA Submission:\nWe have just completed the second milestone for developing the interface for decentralized machine learning model hosting on Cardano.\nEvidence:\nPlease check out the interface at https://um-preprod.unbounded.market/\nPlease find our video at https://drive.google.com/file/d/1qIgsEYY0Bkvk1QACxg9twKwBd1uA1lDt/view?usp=sharing\nExplanations:\nIn line with the acceptance criteria, the interface and backend systems are now fully functional. The interface currently includes the follow",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "7",
+      "cost": 25000,
+      "promise": "・Documentation that provides information/guidance for testers\n・Alpha testing with a controlled user group of 5-10 people to gather initial feedback and quickly iterate on the functionality.\n・Beta testing expanded to a broader user group, including the Cardano community, to refine the interface further. Since beta testing will be open to anyone willing to participate and and submit feedback, there is no limit to number of people.\n・A comprehensive report summarizing the feedback.",
+      "criteria": "The successful completion of alpha and beta testing phases, will be measured by via the feedback report, which includes:\n・A comprehensive overview of all the feedback received, split into different categories (bugs, UI improvements, improvement of the responsiveness)\n・All the changes made to the interface based on the feedback\n\nA refined user interface that incorporates feedback from testing phases, showing improvements in functionality.",
+      "report": "Thanks a lot for the great feedback!\nTo explain: In addition to paying for model usage using ADA, the web3 integration is specific to the respective application in the playground. \nA good example is the AI-NFT generator: https://beta.unboundedmarket.ai/playground/appPage?appId=7571bb1f-54f2-4330-a5c3-ae9244027c97&modelId=\nThis application allows users to generate an image, pay for generation using ADA and then directly mint the generated image as a CNFT on Cardano blockchain.\n\nRegarding the Feedback, the report contains a summary and partial citations of the word-by-word feedback from our small sample. The raw comments are here:\nSuggestions for UI improvements\n“Very professional layout—no change required.”\n“The interface looks quite intuitive; I like the clean design.”\n“Clean UI, no suggestions at the moment.”\nSuggestions for user-experience & navigation\n“Navigation is intuitive, though I needed a second to find the detailed model page.”\n“Everything is clear and easy to find.”\n“No issues; it feels self-explanatory.”\nGeneral suggestions for improvement\n“Keep on doing what you are doing!”\nBug reports\n“Uploading my model fails with a 500 error.”\n“The featured-model tabs don’t switch on my phone.”\n“Packing-List model inference triggers an error modal.”\n“Scrolling sometimes freezes on Safari.”\nResponsiveness issues\n“On my iPad mini, some cards overflow and overlap the sidebar.”\n“No issues on my laptop.”\nSuggestions for additional features\n“Add a usage counter to show how often a model is run.”\n“I’d love more details about each model—like a short description and example.”\nAdditional free-form feedback\n“Cool project!”\n\nFirst Submission of the PoA:\nThe first principal component of milestone M3 was incorporating feedback from milestone reviewers in the previous milestone. To achieve this, we have continued to develop our platform. Most importantly, we have removed the dummy data and content and replaced it with actual AI models, which can now be used on our platform.\nOur bet",
+      "kinds": [
+        "doc",
+        "other",
+        "social"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 20000,
+      "promise": "The major outputs of the final milestone include:\n・Final adjustments to the user interface, incorporating feedback from exhaustive testing to enhance usability and functionality.\n・Comprehensive documentation and user guides, designed to enable users to effortlessly navigate and maximize the benefits of the interface.\n・Community outreach initiatives aimed at increasing awareness and engagement among potential users, fostering a supportive and informed user community.\n・Closeout video and report.",
+      "criteria": "The acceptance criteria are as follows:\n・The user interface is fully optimized for public release, including all essential final adjustments to ensure its readiness, i.e., all issue form the report of the previous milestone are fixed.\n・In-depth documentation and user guides are readily accessible for users, facilitating easy navigation and utilization of the interface presented as FAQ and a separate documentation website.\n・Demonstrable evidence of marketing and community outreach efforts, evidenced by links to promotional posts on Platform X.\n・A detailed report of community outreach activities",
+      "report": "Second submission:\nWe would like to thank the milestone reviewers for their great feedback.\nIn response, we have updated our website and extended the FAQ: https://beta.unboundedmarket.ai/ \nWe have also linked the external documentation and added a table of contents.\n\nFirst submission:\nHere is the evidence for the completion of the 4th and final milestone:\n・Our platform is publicly available under the following link: https://beta.unboundedmarket.ai/ \n・In addition to the documentation on the website we have added a separate documentation: https://drive.google.com/file/d/1LHHYQxm7yIgMOwOompxhgFbkZPBqp71e/view\n・Community outreach: https://x.com/unboundedmarket/status/1976070829684171039\n・Closeout Video presenting a walktrhough of the interface: https://www.youtube.com/watch?v=5BKntkg8Z8M\n・Final closeout report, summarizing all outcomes and achievements: https://drive.google.com/file/d/10DzrZlO1tcF7WevN3TDdwLUWdHiFnRBJ/view?usp=sharing",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    }
+  ]
+}

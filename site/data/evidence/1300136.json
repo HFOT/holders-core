@@ -1,0 +1,19 @@
+{
+  "title": "MineFreeUkraine: Cardano-based DeFi Platform for Large-Scale Humanitarian Demining and Socio-Economic Recovery of Ukraine",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 45000,
+      "promise": "Note to the reviewer: Milestones 1 and 3 of the original proposal are combined in this milestone in support of the 4-milestone structure. The system will be comprised of a web portal and a single mobile app for demining operations.\n(A) UI/UX design for the system portal\n(B) Development of the system portal, including admin interface for portal activity monitoring\n(C) API backend, including backend for document indexing\n(D) Smart contract for hash saving. Instead of storing entire documents on the blockchain (which can be costly due to storage limitations), you store the hashes of documents. The hash, along with metadata like a timestamp or document ID, is sent to the smart contract and stored on the blockchain.\n(E) Ledger for site management, reporting and certification",
+      "criteria": "Note to the reviewer: The complete system will comprise a web portal and a mobile app for dimining operations. A prototype system of the web portal will be delivered for the first milestone, while the complete system MVP including web portal ready for public deployment and the mobile app will be deployed as the outcome of a final milestone.\n(A) UI/UX designs. Every view/page of the d/apps will be delivered as at least mock-ups.\n(B) System portal prototype, including: frontent, backend, admin interface for portal activity monitoring\n(C) API backend including\n・File storage (IPFS)\n・AWS (Cognito,",
+      "report": "(A) UI/UX design documents included in the milestone report\nPreview: https://docs.google.com/document/d/1iL1k0qugmwp6gIXbuqydE4VNvsMwRB4YHlkcvbNv2HI/edit?usp=sharing\nFigma (Access provided on request) - https://www.figma.com/file/yImAgxYnvHn3aehWvMbCdo/Demo.-MineFree-Platform?type=design&node-id=0%3A1&mode=design&t=Alp6T07WxGcfzNcc-1 \n(B) and (C) Public link for a functioning portal prototype, including frontend and backend functionality\nThe link to the product prototype: https://staging.minefree.info/uk \nLogin - minefree_admin \nPassword - hZjJbPj755sR26ivyQD4 \nBackend functionality:\n- API service built with Golang, deployed on AWS Lambda. Provides REST APIs with role-based endpoints for security and flexibility. User authentication and authorization handled via AWS Cognito.\n- Indexer service built with Golang, deployed on Amazon ECS. Collects transaction data from blockchain and payment system APIs. Runs as a single instance.\nFrontend functionality\n- Web client built with Next.js. Interacts with backend via REST API. Supports user roles: demining companies, donors.\nMain feature: interactive map of demining zones (Mapbox). Users can view, select zones, and upload/download related files (coordinates, media, documents).\n(D) Smart contract scheme included in the milestone report\nThe smart contract is developed in Solidity and deployed on the Binance Smart Chain (BSC). \nIts main purpose is to retrieve new data hashes and store them on the blockchain. \nThe structure of the contract is intentionally simple and designed only to keep the latest data hash together with the application ID that corresponds to it. A private key is securely stored in the API backend, and each new transaction is signed with this key before being submitted to the blockchain.\n(E) Designs for ledger for site management, reporting and certification included in the milestone report\n-The system records applications submitted by demining companies with pricing and supporting documents. \n-Donors can cont",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 6,
+      "cut": true
+    }
+  ]
+}

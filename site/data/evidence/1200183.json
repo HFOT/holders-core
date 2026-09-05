@@ -1,0 +1,71 @@
+{
+  "title": "OUSD - Yield-Bearing, Well-Pegged, Scalable Cardano Stablecoin",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "A financial engineering consultant with qualifying experience in the blockchain Real World Asset sector and the regulatory landscape of custodial entities and compliance will be contracted to conduct a thorough review of the initial OUSD system architecture. The resulting report serves to validate the underlying system logic, risk assessments, and yield strategies utilized in the system by consulting with industry leaders in capital management, real world assets, and robust protocol design.",
+      "criteria": "・A PDF report based on the consultation linked on Optim's public Gitbook with all information, findings, considerations and improvements recommended by the consulting party as part of the review process \n・A list of the consultant's qualifications, a link to their LinkedIn profile will be provided\n\nThe qualifications of the consultant will be, at minimum, having experience/having previously been:\n- Hired by IOHK / IOG for stablecoin consulting \n-Math, Physics, or Enginnering degree from US Top 20 University\n-10+ years professional experience in finance and software engineering",
+      "report": "・Link to PDF in Optim Gitbook where initial consultation review is published addressing various aspects of the system. \n・https://optim-finance.gitbook.io/optim-finance/ousd/financial-engineering-audit\n・Link to consultant's LinkedIn profile with qualifications listed in Gitbook \n・https://www.linkedin.com/in/andy-singleton-831144/",
+      "kinds": [
+        "doc",
+        "social"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 90000,
+      "promise": "The Optim Labs team will be taking recommendations from the consultant review into consideration to make any improvements and adjustments to the overall system architecture, collateral risk profiles and planned algorithmic market operations. The resulting finalized technical specification will then be used to communicate the system design with the smart contract engineering team to start development of the application.",
+      "criteria": "The system design specification document will outline the core components of the OUSD Stablecoin system. It will break down each essential element, explaining the system's architecture, operation, any off-chain entity implementation, flow of funds, and reserve capital management.",
+      "report": "・OUSD Reserves\n・Reserve Criteria\n・Stability and Reputation\n・Compliance\n・Smart Contract Security\n・Ongoing Reserves Management\n・Reserve Asset Valuation Calculation\n・Dynamic Reserve Asset Adjustment Metrics\n・Dynamic Reserves Adjustment\n・Yield, Staking, and Flow of Funds\n・Yield Modules\n・OUSD DEX AMO\n・Future Modules (v2)\n・Staking AMO\n・sOUSD Redemption Mechanism\n・Peg Protection\n・Market Depth and Liquidity\n・Governance and Risk Framework\n・Risk Capital Requirements\n・First-Loss Capital Structure\n・Asset Allocation Framework\n・Static Governance Parameters\n・Dynamic Allocation System\n・Financial Engineering Audit",
+      "kinds": [
+        "doc"
+      ],
+      "links": 24
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 75000,
+      "promise": "The system design specification from the previous milestone will be implemented using Aiken and/or Plutus V3 to develop the core sets of smart contracts for the OUSD stablecoin system. The resulting open sourced codebase will be deployed on a private testnet or limited-assets non-public mainnet for internal verification and thorough testing of system logic, core mechanisms and key components. A video walkthrough describing the functionalities of these smart contracts will be presented where the lead developer will explain a high level overview of the OUSD system for Catalyst reviewers to familiarize themselves with the codebase.",
+      "criteria": "Open sourced Aiken or Plutus V3 codebase that implements core system design specification components.\nVideo of code walkthrough to describe the smart contract mechanism and working live interactions of a private testnet or limited-assets non-public mainnet deployment for non-technical milestone reviewers and the broader Catalyst community to understand the scope of the system.",
+      "report": "・Aiken codebase implementation of the OUSD architecture\n・https://github.com/OptimFinance/clean-code/tree/cousd\n・Video of code walkthrough to describe the smart contract components\n・https://drive.google.com/file/d/1dK5WyRvkMPahXA5gkzu69ZmcVzw0tL1_/view?usp=sharing\n・Explanations\n・Strategy flow of funds\n・File:\n・https://github.com/OptimFinance/clean-code/blob/cousd/ousd/validators/deposit_amo.ak\n・Timestamp:\n・2:26\n・Deposit/Withdrawal mechanism\n・Files:\n・https://github.com/OptimFinance/clean-code/blob/cousd/ousd/validators/deposit_amo.ak\n・https://github.com/OptimFinance/clean-code/blob/cousd/ousd/validators/staking_amo.ak\n・Timestamp:\n・2:26\n・16:40\n・Duration locking mechanism \n・Files:\n・https://github.com/OptimFinance/clean-code/blob/cousd/ousd/validators/otoken_policy.ak\n・https://github.com/OptimFinance/clean-code/blob/cousd/ousd/validators/otoken_rule.ak\n・Timestamp:\n・8:25\n・Yield accrual logic \n・File:\n・https://github.com/OptimFinance/clean-code/blob/cousd/ousd/validators/collateral_amo.ak\n・https://github.com/OptimFinance/clean-code/blob/cousd/ousd/validators/sotoken_rule.ak\n・Timestamp:\n・6:50\n・14:38\n・Technical specifications referenced in the video:\n・OToken Strategy Vaults\n・https://github.com/OptimFinance/public-documents/blob/main/OTOKEN%20High%20Level%20Specification.pdf",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 12
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 15000,
+      "promise": "A UX/UI design will be crafted to visualize the functionality and structure of the OUSD user interface. This will serve as a visual representation for the finalized web app frontend, detailing the user journey and flow of interactions of navigating the application from the end users’ perspective. This interface will form a cohesive brand identity with the rest of Optim’s suite of products to familiarize the user with a similar user experience across its own ecosystem.\n**Reviewers, if confused, should refer back to the original proposal and read more carefully where the original Catalyst Proposal approved by voters states: \n \"User Interface and User Experience development: Figma mockups of the application will be sketched and iterated upon with the help and feedback from core Optim DAO contributors, as they have very successfully helped in this regard with our previous products. Once completed, these Figma mocks of the application will be used to create accessible and user friendly tutorial articles to start educating users on how to utilize and interact with the OUSD system.\n**To further explain and clarify:**\nThis means that UX/UI will be designed and reviewed but not implemented",
+      "criteria": "A Figma board that outlines the UX/UI and core interactions of the OUSD system. This board will provide visual representation of the user interface and detail every aspect of the user experience. It will include high-fidelity mockups and comprehensive user flows that illustrate the seamless and intuitive nature of the software's interface.",
+      "report": "・Link to Figma board, or link to document aggregating screenshots of the Figma iteration process (in case sharing platform permissions cause any issues).\n・https://www.figma.com/design/hLU2ToXcDSvSrt6dQXKPKz/OUSD-Web-App-Catalyst-Milestone?node-id=828-3040&p=f&t=Mg44njdS4tU8l5uv-0",
+      "kinds": [
+        "other"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 45000,
+      "promise": "・Optim Labs will continue to foster its commitment to the safety and security of our DeFi products and increase confidence in the ecosystem by procuring thorough auditing services to evaluate the integrity of the OUSD core components from a reputable firm in the ecosystem. This will ensure that the OUSD stablecoin system has the trust and support from the Cardano community necessary to scale growth in a much needed improvement sector of Cardano DeFi\n\n*Procurement in this context means finding and vetting a reputable audit firm, defining the terms of the engagement, agreeing on a cost structure, and signing a letter of intent with an agreed upon start window. It does not mean paying for or starting an audit*\n・Testnet or mainnet beta deployment will be launched to stress test the system's requirements and ensure the product's integrity in a real environment\n・Optim will publish a Final close-out report + Final closeout video on Optim Gitbook summarizing the work completed",
+      "criteria": "・A letter of intent from the chosen security firm partner outlining the scope and expected timeline of the full audit will be provided and an announcement will be made on our public community channels.\n・Testnet or mainnet beta deployment \n・Final closeout report is publicly available + Final closeout video is publicly available on Optim Gitbook summarizing the Catalyst work completed for OUSD Proposal \n\n*Procurement of audit in this context means finding and vetting a reputable audit firm, defining the terms of the engagement, agreeing on a cost structure, and signing a letter of intent with an",
+      "report": "・Link to hosted Letter of Intent from auditing firm outlining the scope and timeframe of the audit.\n・https://optim-finance.gitbook.io/optim-finance/oada/resources#audit\n・Link to testnet or mainnet beta video of user interactions and corresponding tx ids that show protocol running\n・Video: https://drive.google.com/file/d/1NEzjy7JCV7f3Dyyk3OvWbZEN4evmVHQE/view?usp=sharing\n・OUSD Token Contract: https://cardanoscan.io/token/26a1fdd21a28483fd7f1ccb690571101ee58e2174365689cc48924b4\n・OUSD Mint Tx: https://cardanoscan.io/transaction/c1a74dcd819f8007950025864f54f6283aaa89ae629f4f3d92650e130bf3eb0d\n・Stake OUSD > sOUSD Tx: https://cardanoscan.io/transaction/0baae49d34447f3913307d3caeb50169eb0ea989ac8fa17569dc4dfa4ad9e17c?tab=tokenmint\n・Link to final closeout report \n・https://drive.google.com/file/d/1yN8UOQZwr-fKacPy6JiFxoZUQVtv4XFl/view?usp=sharing\n・Link to final closeout video\n・https://youtu.be/CRkOLwgvSyE",
+      "kinds": [
+        "chain",
+        "doc",
+        "video"
+      ],
+      "links": 11,
+      "cut": true
+    }
+  ]
+}

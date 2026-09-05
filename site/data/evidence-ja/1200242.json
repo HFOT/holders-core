@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・新しいプロトコルのパラメータを更新(tx料金とスクリプトハッシュの計算に変更)\n・Plutus V3のサポートを追加",
+      "criteria": "・Plutus V3の新規プロトコルのパラメータ変更とサポートが公開されたGitHub PRで検証され、関連するコミットで検証されました.",
+      "report": "下記の機能を実施\n・new minFeeRefScriptCostPerByte プロトコル パラメータ\n・更新されたtxの手数料の計算には、refScriptのコストが含まれます\n・v3 スクリプトデータハッシュ計算のサポート\n\nGitHub PR - https://github.com/StricaHQ/typhonjs/pull/37"
+    },
+    {
+      "no": 2,
+      "promise": "・新しいConway時代の証明書のサポートを追加\n・Stake登録及び登録解除\n・dRep登録と退職\n・drep更新証明書\n・drepの委任\n・ステークキー登録とドリフト委任\n・ステークキー登録とプール委任\n・ステークキー登録、ドレップ委任、プール委任\n・ドレップとプールへの委譲\n・committee会員ホット認証\n・committee 会員の退会証明書",
+      "criteria": "関連するコードコミットで https://github.com/StricaHQ/typhonjs で作成したリクエストをプルして、必要な出力を追加します.",
+      "report": "コードの強化、エンコーダの追加、およびtxビルディングで証人が必要な新しいConway-era証明書のサポートを追加しました。\n・Stake登録及び登録解除\n・dRep登録と退職\n・drep更新証明書\n・drepの委任\n・ステークキー登録とドリフト委任\n・ステークキー登録とプール委任\n・ステークキー登録、ドレップ委任、プール委任\n・ドレップとプールへの委譲\n・committee会員ホット認証\n・committee 会員の退会証明書\n・\n\nトランザクションクラスで論理的なメソッドのコメントを追加しました。 型宣言は、CBORの仕様に従い、任意のロジックを持たないため、非常に自己説明的であり、エンコーダです。\nコードベースを徐々に改善するために、新しいメソッドを追加したり、既存のメソッドをアップグレードしたりすると、コメントを追加し続けます。\nGithub PR - https://github.com/StricaHQ/typhonjs/pull/38"
+    },
+    {
+      "no": 3,
+      "promise": "・取引と建物における投票手順のサポートを追加",
+      "criteria": "関連するコードコミットで https://github.com/StricaHQ/typhonjs で作成したリクエストをプルして、必要な出力を追加します.",
+      "report": "・取引クラスおよびtxビルの投票手順のサポートを追加し、ガバナンス提案の投票を許可します。\n\n関連するコードコメントを追加しました。 型宣言では、自己説明であるため、コメントは不可能です。\n\nGitHub PR - https://github.com/StricaHQ/typhonjs/pull/39"
+    },
+    {
+      "no": 4,
+      "promise": "・取引および取引の構築に関する提案手順の追加支援(govアクション)",
+      "criteria": "関連するコードコミットで https://github.com/StricaHQ/typhonjs で作成したリクエストをプルして、必要な出力を追加します.",
+      "report": "・提案手続支援(ガバナンス活動の推進)\n・関連するコードコメントを追加\n・Conway CDDLの仕様に従った型宣言とエンコーダ\n\nGitHub PR - https://github.com/StricaHQ/typhonjs/pull/40"
+    },
+    {
+      "no": 5,
+      "promise": "・取引におけるTreasuryフィールドのサポートを追加\n・取引における寄付フィールドのサポートを追加\n・試験例\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・関連するコードコミットで https://github.com/StricaHQ/typhonjs で作成したプルリクエストは、必要な出力を追加します。\n・新リリースNPMパッケージURL提供\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "トランザクションビルダーアップデート\n・取引ビルにDonationとTreasuryフィールドのサポートを追加\n・試験ケース追加\n・ GitHub PR 上記 - https://github.com/StricaHQ/typhonjs/pull/41\n\n新しいバージョンリリース\n・NPM-typhonjs v3.0.0 リリース\n・https://www.npmjs.com/package/@stricahq/typhonjs\n・ドキュメント更新 - https://docs.strica.io/lib/typhonjs/index.html\n\nクローズアウトレポートとビデオ\n・動画 - https://youtu.be/PBS iJkenS4\n・レポート - https://drive.google.com/file/d/13kIEysho0db1khbFmj7c5mSiuyDesC/view?usp=sharing"
+    }
+  ]
+}

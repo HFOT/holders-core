@@ -1,0 +1,61 @@
+{
+  "title": "CIP-88 Refinements & Tooling",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 12000,
+      "promise": "・Complete the on-chain format for the specification\n・complete the steps necessary to move the CIP to proposed status.",
+      "criteria": "・User can view the on-chain format specification on Github.\n・User can view that the CIP has moved to proposed status in the CIP GitHub.",
+      "report": "The goals for this milestone are: \n・Complete the on-chain format for the specification\n・complete the steps necessary to move the CIP to proposed status.\n\nThe changes for the on-chain format for the specifications are completed. \nhttps://github.com/Crypto2099/CIPs/tree/token-registration/CIP-0088\nThey are represented here in this commit:\nhttps://github.com/cardano-foundation/CIPs/pull/467/commits/f6c1d690b0ce095f14decc0dcb514b54c317042c\nThis same commit also represents the final step necessary to move the CIP to proposed status. The CIP-88 specification is currently proposed, and awaiting approval.\nCrypto2099 wants to merge 31 commits into cardano-foundation:master from Crypto2099:token-registration",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 12000,
+      "promise": "・Build a proof of concept chain indexer for registrations\n・Validate the signature. \n・Release this as open source tooling.",
+      "criteria": "・A reviewer can see the GitHub containing the Chain Indexer code.\n・A reviewer can see that a signature has been validated.\n・A reviewer can check the license for acceptable open source licensing.",
+      "report": "This milestone involved the following three items of evidence:\n・Build a proof of concept chain indexer for registrations\n・Validate the signature. \n・Release this as open source tooling.\n\nYou may watch a video of the entire process, including the validation in action here: https://youtu.be/tmZGmD98dDE\nYou can see the open source tooling at this github link: https://github.com/VeriGlyph",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "26",
+      "cost": 22000,
+      "promise": "・The final specification will be published and shared with token (NFT & FT) projects and dApps publicly.\n・Receive community acceptance from a minimum of 5 projects (either publishers or consumers) by having signed letters of intent to implement the protocol upon completion.\n・At least 1 (one) project has completed on-chain registration on mainnet and has a valid, verifiable signature.\n・Launch a publicly accessible version of the software under the VeriGlyph brand to allow projects to publish and/or verify published data.",
+      "criteria": "・See evidence that the standard has been published in a “final” form and circulated publicly.\n・See proof of the signed letters of intent\n・Confirm proof that at least one project has begun using the system on Cardano mainnet.\n・Visit the publicly available platform for publication and validation of metadata.",
+      "report": "・A. Output: The final specification will be published and shared with token (NFT & FT) projects and dApps publicly.\n・A. Acceptance criteria: See evidence that the standard has been published in a “final” form and circulated publicly.\n・A. Evidence: \n・CIP-88: https://cips.cardano.org/cip/CIP-88\n・CIP-151: https://cips.cardano.org/cip/CIP-151\n・B. Output: Receive community acceptance from a minimum of 5 projects (either publishers or consumers) by having signed letters of intent to implement the protocol upon completion.\n・B. Acceptance criteria: See proof of the signed letters of intent\n・B. Evidence: \n・Letters of Intent from Four (4) Popular Projects: https://drive.google.com/file/d/1rJgajebnrp32QCTX0O1JQ-DR0Kkl3eff/view?usp=sharing\n・Documentation of Support for CIP-151 by Koios Public API: https://api.koios.rest/#get-/pool_calidus_keys\n・Documentation of Support for CIP-88/CIP-151 by Cardano-Signer: https://github.com/gitmachtl/cardano-signer?tab=readme-ov-file#cip-88v2-calidus-pool-key-mode\n・C. Output: At least 1 (one) project has completed on-chain registration on mainnet and has a valid, verifiable signature.\n・C. Acceptance criteria: A link to the transaction(s) for registration on-chain that can be verified using the publicly available platform.\n・C. Evidence:\n・spacecoins (CIP-88): https://cardanoscan.io/transaction/cbfb59ea27f24984ce61b0892f6c453cb941f6d5d2c64b014d6fecb6ecb5f0fb\n・ATADA Stake Pool (CIP-151): https://cardanoscan.io/transaction/a9ee535d97a837f599d772d33add07c7bfea2f44895dfc97c23bb68b9672dd10\n・Both of the above can be verified via the next output :)\n・D. Output: Launch a publicly accessible version of the software under the VeriGlyph brand to allow projects to publish and/or verify published data.\n・D. Acceptance criteria: Visit the publicly available platform for publication and validation of metadata.\n・D. Evidence: \n・Publication (CIP-88): https://nexus.veriglyph.io\n・Publication (CIP-151): https://github.com/gitmachtl/cardano-signer?tab=readme-ov-file#cip",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "27",
+      "cost": 29500,
+      "promise": "CIP Active - Complete the CIP process and move the CIP to active status. Project Close Out Report and Video",
+      "criteria": "A user can see that the CIP is active via the CIP github. Project Close Out Report and Video is available to reviewers.",
+      "report": "Updated the Closeout Report to include a link to the closeout video as requested in most recent rejection.\nA. Output: CIPs moved to Active Status\nA. Acceptance criteria: CIPs are moved to active status\nA. Evidence: CIPs have been submitted for active status to the editor body per this Pull Request: https://github.com/cardano-foundation/CIPs/pull/1115\nB. Output: Close Out Video\nB. Acceptance criteria: Watch Close Out Video\nB. Evidence: https://youtu.be/laBNM7RSFbs\nC. Output: Close Out Report\nC. Acceptance criteria: Read Close Out Report\nC. Evidence: https://drive.google.com/file/d/133btv-GuWb-xAWoOzJAUe_XoOODNZdWk/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

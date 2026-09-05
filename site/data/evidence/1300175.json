@@ -1,0 +1,86 @@
+{
+  "title": "Sundae Labs: Amaru Node Development Support - Rust Developer Contract",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25000,
+      "promise": "Review the Cardano specification and Haskell codebase to produce a structured document listing 10 to 30 ledger validation rules.\n・Collaborate with the Amaru team to identify which rules are ready for implementation.\n・Implement and test one validation rule to establish a pattern for future work.",
+      "criteria": "・A completed document outlining validation rules with references to the specification, Haskell codebase, and descriptions.\n・One successfully implemented and tested validation rule.\n・Acknowledgment from the Amaru team confirming successful completion.",
+      "report": "Milestone 1: Onboarding Task and Initial Implementation\nMilestone Outputs:\n・Collaborated with the Amaru team to identify validation rules ready for implementation.\n・Implemented and tested one validation rule to establish a pattern for future work.\n\nAcceptance Criteria:\n・A completed document outlining 10–30 validation rules with references to the Cardano specification, Haskell codebase, and descriptions.\n・One successfully implemented and tested validation rule: BlockSizeMismatch.\n・Acknowledgment from the Amaru team confirming successful completion.\n\nEvidence of Milestone Completion:\n・Validation Rule Document and Discussion: https://github.com/pragma-org/amaru/discussions/203\n・Implemented Rule: BlockSizeMismatch in PR #145.\n・Test Coverage: Introduced in PR #191.\n・Formal Acknowledgment: Formal Acknowledgment: Provided by @KtorZ via GitHub pull request #145 and Amaru Discord.\n\nThis milestone establishes our foundation for future contributions by documenting validation logic and proving implementation standards in collaboration with Amaru core developers.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 50000,
+      "promise": "・Implementation and testing of one-third of the identified validation rules from Milestone 1.\n・Collaboration with the Amaru team to ensure alignment with project needs.",
+      "criteria": "・PRs for implemented rules submitted and reviewed by the Amaru team.\n・Approval from the Amaru team confirming completion.",
+      "report": "We are pleased to submit for Milestone 2 of the Amaru Ledger Validation Rules grant. It includes required outputs, acceptance criteria, and evidence of completion, formatted to match our prior Milestone 1 submission. The contents have been reviewed against Catalyst reporting guidelines and incorporate links to GitHub, a demonstration video, and formal approvals from the Amaru core team.\nMilestone 2: First Set of Ledger Rule Implementations\nMilestone Outputs:\n・Implemented and tested one-third of the identified validation rules from Milestone 1.\n・Collaborated with the Amaru team to ensure alignment with project needs.\n\nAcceptance Criteria:\n・Pull requests (PRs) for implemented rules submitted and reviewed by the Amaru team.\n・Approval from the Amaru team confirming completion.\n\nEvidence of Milestone Completion:\n・Implemented Rules (3 of 11 identified):\n・TooManyExUnits\n・Implementation:https://github.com/pragma-org/amaru/pull/110\n・Test Coverage:https://github.com/pragma-org/amaru/pull/191\n・UnknownInputs\n・Implementation:https://github.com/pragma-org/amaru/pull/158\n・Test Coverage:https://github.com/pragma-org/amaru/pull/199\n・NonDisjointRefInputs\n・Implementation:https://github.com/pragma-org/amaru/pull/145\n・Test Coverage:https://github.com/pragma-org/amaru/pull/199\n・Formal Acknowledgment:\n・Signed confirmation letter from Amaru team: https://drive.google.com/file/d/1gpK6AfkZiFsuUKHTNXpByk718M_77Rd9/view?usp=sharing\n・Approval noted by Amaru Team Lead via GitHub and Pragma Discord\n・Progress Report Video:\n・ YouTube Link\n・Pragma Discord Evidence \n・Join Pragma Discord here (requires a Discord account): https://discord.gg/nX2M5snQ\n・Direct link to announcement: https://discord.com/channels/1202416088776712253/1225810754041806958/1400221943218700370\n・Screenshot of update in Pragma Discord with video link: https://drive.google.com/file/d/1AuXV7AdONm5hL_lBw6xDP0_Wg0L94cGc/view?usp=sharing\n\nThis milestone marks a key technical advancement for the Amaru project, completing the first 3 of",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 50000,
+      "promise": "・Implementation and testing of the next one-third of the identified validation rules.\n・Further refinement based on feedback and code reviews.",
+      "criteria": "・PRs submitted and reviewed by the Amaru team.\n・Confirmation of successful implementation.",
+      "report": "We are pleased to submit Milestone 3 for Amaru Ledger Validation Rules. This report provides the required outputs, acceptance criteria, and supporting evidence in the same structure used for our previous milestone. The materials have been reviewed for alignment with Catalyst reporting guidelines and include links to GitHub, a demonstration video, and formal confirmation from the Amaru core team.\nMilestone 3: Second Set of Ledger Rule Implementations\n\nMilestone Outputs:\n・Implemented and tested one-third of the identified validation rules from Milestone 1.\n・Collaborated with the Amaru team to ensure alignment with project needs.\n\nAcceptance Criteria:\n\n・Pull requests (PRs) for implemented rules submitted and reviewed by the Amaru team.\n・Approval from the Amaru team confirming completion.\n\nEvidence of Milestone Completion:\n\n・Implemented Rules (3 of 11 identified):\n・InvalidOutput::ToSmall\n・Initial Implementation: PR #145\n・Relocated and Updated to: PR #209\n・Test Coverage First Introduced: PR #191\n・UnknownCollateralInput\n・Implementation: PR #158\n・Test Coverage: PR #199\n・CollateralReturnUnderflow\n・Test Coverage: PR #199\n・Formal Acknowledgment:\n・Signed confirmation letter from Amaru team: https://drive.google.com/file/d/1R5IU2t-ONNQo56eAmFxGUnelPHKtB6YW/view?usp=sharing\n・Approval noted by Amaru Team Lead via GitHub and Pragma Discord (see screenshots: https://drive.google.com/file/d/1exi-XvFfR2id3njCC5_0Oq5py8dmJyj3/view?usp=sharing)\n・Progress Report Video:\n・ YouTube Link\n・Pragma Discord Evidence \n・Join Pragma Discord here (requires a Discord account): https://discord.gg/NWkYV5gM\n・Direct link to announcement: https://discord.com/channels/1202416088776712253/1225810754041806958/1421121473074167808\n・Screenshot of update in Pragma Discord with video link: https://drive.google.com/file/d/1Gn6RXOvXswAO4rmy9sNg5vqFLv-5iOvj/view?usp=sharing\n\nThis milestone represents the continued technical advancement of the Amaru project, completing the second group of validation rule implementat",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 22,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 45000,
+      "promise": "・Implementation and testing of the final one-third of the identified validation rules.\n・Refinements and adjustments based on review feedback.",
+      "criteria": "・Final batch of PRs submitted and approved.\n・Amaru team validation of completed work.",
+      "report": "A. Output: [What was delivered as Output A]\nCompletion of the final set of ledger validation rule implementations for the Amaru Ledger project, including implementation, review-driven refinements, merge, validation, and public reporting.\nThis milestone delivered the final one-third of the planned validation rule set, covering four of the eleven total identified rules:\n・InvalidKeyWitness: MissingRequiredKeyWitnesses\n・InvalidKeyWitness: InvalidSignatures\n・InvalidBootstrapWitness: MissingRequiredBootstrapWitness\n・InvalidBootstrapWitness\n\nDuring pull request review and discussion, refinements were applied to rule logic, error handling, and structure — particularly around vkey witness and bootstrap witness validation and associated error cases. These adjustments were incorporated prior to merge to ensure correctness and alignment with the project’s validation framework.\nThis output therefore includes:\n・Rule implementation\n・Testing and log validation\n・Review-driven refinements\n・PR merge\n・Maintainer confirmation\n・Amaru team sign-off\n・Public reporting and demonstration\n\nAcceptance criteria: [Completion criteria for Output A]\n・Final batch of GitHub pull requests for these validation rules submitted, reviewed, and merged.\n・Reviewer and maintainer feedback addressed during the PR review process.\n・Validation and confirmation of completed work provided by the Amaru team.\n\nEvidence: [Link to verify Output A and its Acceptance criteria]\n・Implementation + merge of final validation rules (with tests and logs):\n・PR #155 — https://github.com/pragma-org/amaru/pull/155\n・Refactored logic and merge of vkey witness and bootstrap witness error handling:\n・PR #132 — https://github.com/pragma-org/amaru/pull/132\n・Maintainer confirmation of completed validations in project discussion:\n・https://github.com/pragma-org/amaru/discussions/203#discussioncomment-15127708\n・Archived screenshot of confirmation (for reviewer convenience):\n・https://drive.google.com/file/d/1Jes-bhg8IBWR7NYpy_kqBqg1oe8pxnDS/vi",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 21,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 30000,
+      "promise": "・Evaluation of implemented rules with additional unit, integration, or conformance tests.\n・Final project report summarizing achievements and future recommendations.",
+      "criteria": "・Final testing completed and reviewed by the Amaru team.\n・Documentation and handover process confirmed.",
+      "report": "A. Output: The project delivered the following outputs in alignment with the milestone scope:\n・Evaluation of implemented ledger validation rules within the Amaru Rust node, including integration and conformance testing.\n・Final project report summarizing development contributions, testing outcomes, and key learnings.\n\nAcceptance criteria:The acceptance criteria for this milestone have been met as follows:\n・Final testing completed and reviewed by the Amaru team\n・All implemented ledger rules were accompanied by unit, integration, and conformance testing and reviewed by the Amaru team prior to completion.\n・Documentation and handover process confirmed\n・Bi-weekly reporting, milestone documentation, and a final project report were completed.\n・A close-out report and walkthrough video were produced to summarize project outcomes and ensure knowledge transfer. \n\nEvidence: The following evidence demonstrates completion of the outputs and acceptance criteria:\n・Final Project Report\n・Final Project Report: https://drive.google.com/file/d/1Aqns-kE2yfvkOW39S6Wx7ZsYe3e8nVH9/view?usp=sharing\n・Uploaded to the Amaru GitHub repository: https://github.com/pragma-org/amaru/discussions/203#discussioncomment-16296980\n・Video Walkthrough\n・Public walkthrough summarizing project outcomes: https://www.youtube.com/watch?v=qLppqkW80F8\n・Shared on Pragma Discord: (Discord account required, invite-https://discord.gg/sf5s48MUx4 ) https://discord.com/channels/1202416088776712253/1225810754041806958/1463588073261760748\n・Screenshot of announcement for reviewer convenience: https://drive.google.com/file/d/1lqTl2kXfvQySjAzyUCZ-S9C0y_KwSQzD/view?usp=sharing\n・GitHub Repository and Contributions\n・Amaru repository: https://github.com/pragma-org/amaru\n・Relevant implementation discussion / contributions: https://github.com/pragma-org/amaru/discussions/203#discussioncomment-15127708\n・Screenshot of GH approval for reviewer convenience: https://drive.google.com/file/d/1VdnKFKV5tPOxS4rDp_D0UdXIh2v5uibI/view?usp=sharin",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 21,
+      "cut": true
+    }
+  ]
+}

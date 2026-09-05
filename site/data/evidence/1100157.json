@@ -1,0 +1,74 @@
+{
+  "title": "HLabs: plu-ts - ts framework for Cardano smart contracts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40000,
+      "promise": "plu-ts ^0.6.*\n\nrespective tweet announcing it (present here already)",
+      "criteria": "the issue involved incorrect hoisting of \"letted\" terms in complex contracts.\nThis issue was identified and solved with plu-ts v0.6.0; introducing a new compilation process, fixing the way letted terms where hashed.\nAcceptance criteria can be hence formalized as \"fixing letted terms compilation\".\nthe output of the milestone should be considered accepted once letted terms are hoisted as expected",
+      "report": "This milestone was essentially \"retroactive\" at the time of milestone submission.\n\nThe tweet announcing the version that fixed the contract compilation was infact already present at the time of milestone submission.\n\nhttps://x.com/MicheleHarmonic/status/1738954408161890691\n\nHere I made a video to facilitate the verification of the tests demonstrating the bug fix\n\nhttps://youtu.be/eNjQFV0M1EU\n\nthe commit introducing the test is: 3b76fb813a892c4de298953a9e0eca4f8d35fa3f\n\nany commit after \"4a693d6614708c9dfd3788904c143bf9b06fff57\" should be good to make sure the test does pass.\n\nThe latest commit at the time of writing (and the one showed in the video) is \"a4a27d71e831e69c1128917e8dcf100ca711bece\"\n\nall commits are publicly aviable at: https://github.com/HarmonicLabs/plu-ts/network",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "plu-ts 0.6.5\nversions of plu-ts before 0.6.5 where unreliable for the calculation of fees due to plutus costs, this was mainly due to\na bug in the interpretation of the protocol parameters, which was using the memory multiplier of the protocol params for the steps and vice versa, resulting in irrational fees.",
+      "criteria": "changes to the plu-ts-offchain package as described in the \"outputs \" section (that resulted in plu-ts 0.6.5) fixing the bug.\nplu-ts 0.6.5 or greather and relative tests should be enough as proof of achievement\nthe changes in the code can are present in the protocol parameters interpretation, for the same protocol parameters, using the txBuilder before 0.6 and after 0.6.5 will result in more accurate fees, these changes will not yet affect fees due to plutus scripts depending on inputs ordering that will instead be handled in the following milestone(plu-ts 0.7 or higher),\nregardless the criter",
+      "report": "This milestone was not completed at the time of proposing the project to catalyst, but was already completed at the time of milestone submission.\n\nHere I made a video to facilitate the verification of the tests demonstrating the bug fixes related to version 0.6.5\n\nhttps://www.youtube.com/watch?v=G92kEEEn_1E\n\nthe commit introducing the major bug fix, also described in the video, is: fc75baefcc5baef25a816f57d1dc6c0a3789f2a9\n\nall commits are publicly available at: https://github.com/HarmonicLabs/plu-ts/network",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "plu-ts ^0.7.*\nthe final touch to fix plutus evaluation cost calculation was a bug in the creation of the script context, due to the poorly documented behaviour of the ledger in that regard.",
+      "criteria": "transactions including plutus scripts that do depend on the inputs ordering in the script context built with plu-ts 0.7 or greater will have accurate fees (and hence not fail due to budget over-spent on submission).",
+      "report": "As described in the milestone description, this version for the final offchain improvements was mainly focused on the ordering of the inputs on-chain.\nHere I made a video to facilitate the verification of the milestone.\nThe video is a bit shorter than usual because, while finding the issue was somewhat time consuming, once idendified it is pretty easy to explain.\nhttps://www.youtube.com/watch?v=KWCGumKvVVE\nthe commit introducing the major bug fix, also described in the video, is: 11ac064d714023d422f2772f66983ae7f1d49545\nall commits are publicly available at: https://github.com/HarmonicLabs/plu-ts/network\nso the fix in the code showed in the video can be found here: https://github.com/HarmonicLabs/plu-ts/commit/11ac064d714023d422f2772f66983ae7f1d49545#diff-9b481a8d9a4efe0904f52b87507d3356de8900fd10dc242967d020167aad6650\n\nhere is the transaction onchain (preprod) proving the fix was implemented: https://preprod.cardanoscan.io/transaction/f4a6c1da37c64e4c4b774d17deac2df81224f4e8454ab211d72a967c855873a5\n\nhere is an additional video explaining the transaction: https://youtu.be/npSBjqXhQes",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 5
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 60000,
+      "promise": "The proposal mentioned plu-ts v0.8 as final target for this milestone.\nhowever due to the need to integrate plutus V3 and conway ledger definitions in the library, plu-ts' version 0.8 will be used for that purpose, not included in this proposal.\nwhat was originally intended for 0.8 will instead be implemented in version 0.9 and greater.\nso plu-ts v0.9 should be considered the output of this milestone.\nnecessary benchmarks in the two versions will also be output of this milestone, also to fulfill the evidence of completion",
+      "criteria": "introduction of enums for better developer experience dealing with types that don't require additional fields informations but need to represent different alternatives (naive example, booleans, currently represented as data constr, can be more efficiently represented via enums)\nimprovements in standard methods such as `pfind` or anything else depending on the use of `data` conversion, possibly leveraging plutus V3 SoP or alternative representations of structured data (such as `Maybe` as single element list) for plutus v1 and v2.",
+      "report": "In this milestone, the focus was on optimizing on-chain contracts compilation\nHere I made a video to facilitate the verification of the milestone.\nhttps://www.youtube.com/watch?v=nLNhbRLAhZc\nthe commit introducing the various optimizations were many, however the last shown in the video is: ce34ff8e0ce5cdc833dfec4f254fba271e657d85\nall commits are publicly available at: https://github.com/HarmonicLabs/plu-ts/network\nadditionally, as specified in the milestone outputs, here is the benchmarks repo, showing the effects of the optimizations implemented: https://github.com/HarmonicLabs/plu-ts-bench\nEnums where ultimately not implemented because it didn't improve contracts performances as originally expected.\nThe tweet highlighting performance improvements can be found here: https://x.com/MicheleHarmonic/status/1860478467864723860",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 4
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 40000,
+      "promise": "completion video showing what was achieved in the previous milestones, and relative tweet from MicheleHarmonic's twitter profile for visibility",
+      "criteria": "the video covers what funded in this proposal.\nIn particular it will go through all the improvements since version 0.5 (precedent to this proposal) up to version 0.9 (including changes in compilation, offchain, and performance improvements)",
+      "report": "here I share the closeout report video\nhttps://youtu.be/jboCgJLVDh8\nand here is the close-out report:\nhttps://github.com/HarmonicLabs/catalyst-close-reports/blob/main/1100157-plu-ts-maintainance/README.md",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

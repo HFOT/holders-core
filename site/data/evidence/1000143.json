@@ -1,0 +1,46 @@
+{
+  "title": "OpShin Education - Free Educational Videos about Python Smart Contracts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 5775,
+      "promise": "The project will cover 10 lectures in similar style and format as the Plutus Pioneer Program. The lectures are to be released weekly from the receival of the funds onwards. The Plutus Pioneer Program structure is provided as a point of reference below.\nLecture 1\n・Welcome and Introduction\n・Setting up Our Development Environment\n・Kuber Marketplace Demo\n・Hashing & Digital Signatures\n・The EUTxO-Model\n・Homework\n\nLecture 2\n・Low-Level, Untyped Validation Scripts\n・Using the Cardano CLI to Interact with Plutus\n・High-Level, Typed Validation Scripts\n・Summary\n・Homework\n\nLecture 3\n・Script Contexts\n・Handling Time\n・A Vesting Example\n・Parameterized Contracts\n・Offchain Code with Lucid\n・Reference Scripts\n・Homework\n・Summary",
+      "criteria": "The three described lectures are successfully published on the YouTube channel and cover the described topics. The OpShin Pioneer Program repository has been adapted to refer to them.",
+      "report": "We have now finished the content (regarding code) and the videos for the first three weeks (in the proposal called \"lectures\") of the OpShin Pioneer Program. The GitHub repository was adjusted accordingly and now the first three weeks point to the new content.\nGithub: https://github.com/OpShin/opshin-pioneer-program\nPlaylist on Youtube featuring all OpShin Videos produced so far: https://www.youtube.com/playlist?list=PLTh2dOp0i8OKn3H45KH7EqdI4wmkOjeCM\nThe announcement of these videos is live on Twitter:\nhttps://x.com/OpShinDev/status/1784975859494932872",
+      "kinds": [
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "26",
+      "cost": 5775,
+      "promise": "The project will cover 10 lectures in similar style and format as the Plutus Pioneer Program. The lectures are to be released weekly from the receival of the funds onwards. The Plutus Pioneer Program structure is provided as a point of reference below.\nLecture 4\n・On-chain VS Off-chain\n・Off-chain Code with Cardano CLI and GUI\n・Off-chain Code with Kuber\n・Off-chain Code with Lucid\n・Homework\n\nLecture 5\n・Introduction\n・Values\n・A Simple Minting Policy\n・A More Realistic Minting Policy\n・NFT's\n・Homework\n\nLecture 6\n・The State Monad in practice\n・Introduction to the Plutus Simple Model library\n・Unit Testing a Smart Contract\n・Property Testing a Smart Contract\n・Testing Smart Contracts with Lucid\n・Double Spending and Homework",
+      "criteria": "The three described lectures are successfully published on the YouTube channel and cover the described topics. The OpShin Pioneer Program repository has been adapted to refer to them.",
+      "report": "The videos for weeks 4 to 6 of the OpShin Pioneer Program have been added and the GitHub repository was adjusted accordingly.\nPlease find below a detailed list of the changes for each output:\nLecture 4\n\n - On-chain VS Off-chain: https://youtu.be/VOi3V-Hhh4M\n - Off-chain Code with Cardano CLI and GUI: https://youtu.be/gsgQ-xmzbpA\n - Off-chain Code with Kuber: https://youtu.be/fzib9ALlL2M\n - Off-chain Code with Lucid: https://youtu.be/BXz5V2rjbiE\n - Homework: https://youtu.be/oDs5pamPtdk\n\nLecture 5\n\n - Introduction: https://youtu.be/oO24ymjqGNM\n - Values: https://youtu.be/h12DDxu1YC8\n - A Simple Minting Policy: https://youtu.be/KD-trbQCGNA\n - A More Realistic Minting Policy: https://youtu.be/rW4txCwfJ5k\n - NFT's: https://youtu.be/bUDkAjb18M4\n - Homework: https://youtu.be/tVXLQCXfcf4\n\nLecture 6\n\n - The State Monad in practice: https://youtu.be/41MDqzBDhSU\n - Introduction to the Plutus Simple Model library: https://youtu.be/S9cRbs0w01Y\n - Unit Testing a Smart Contract: https://youtu.be/wsXT-NOalQk\n - Property Testing a Smart Contract: https://youtu.be/NJAQZmPZhck\n - Testing Smart Contracts with Lucid: https://youtu.be/aUrIuDQgg5c\n - Double Spending and Homework: https://youtu.be/8io2wbyQ6dw\n\nThe GitHub repository features the links, which can be found here: \n- Week 4: https://github.com/OpShin/opshin-pioneer-program#week-4\n- Week 5: https://github.com/OpShin/opshin-pioneer-program#week-5\n- Week 6: https://github.com/OpShin/opshin-pioneer-program#week-4\n\nPlaylist on Youtube featuring all OpShin Videos produced so far, including all weeks until week 6: https://www.youtube.com/playlist?list=PLTh2dOp0i8OKn3H45KH7EqdI4wmkOjeCM",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 21
+    },
+    {
+      "no": 3,
+      "month": "27",
+      "cost": 7700,
+      "promise": "The project will cover 10 lectures in similar style and format as the Plutus Pioneer Program. The lectures are to be released weekly from the receival of the funds onwards. The Plutus Pioneer Program structure is provided as a point of reference below.\n\nLecture 7 (This will be the same as in the Plutus Pioneer Program)\n\n・ Introduction\n・ Marlowe Playground Demo\n・ Homework\n・ Marlowe Starter Kit: Docker\n・ Marlowe Starter Kit: Preliminaries\n・ Marlowe Starter Kit: ZCB using the Marlowe Runtime command-line client\n・ Marlowe Starter Kit: ZCB using the Marlowe Runtime REST API\n・ Marlowe Starter Kit: ZCB using the Marlowe Runtime CLI\n・ Marlowe Starter Kit: Escrow using the Marlowe Runtime's REST API\n・ Marlowe Starter Kit: Swap contract using the Marlowe Runtime's REST API\n\nLecture 8\n\n・ Introduction\n・ The Private Testnet\n・ OpShin & Staking\n・ Trying it on the Testnet\n・ Homework\n\nLecture 9\n\n・ Creating our own Stablecoin Dapp\n・ Using our Stablecoin UI\n・ Stablecoin's Oracle\n・ Deploying Stablecoin's Reference scripts\n・ Minting Stablecoins\n・ Burning Stablecoins and Liquidating positions\n・ Testing our Stablecoin's scripts\n・ Homework\n\nLecture 10 (this will be the same as the final lecture in the Plu",
+      "criteria": "The four described lectures are successfully published on the YouTube channel or reference the respective version of the Plutus Pioneer Program and cover the described topics. The OpShin Pioneer Program repository has been adapted to refer to them.",
+      "report": "A. Output: Code and Documentation for the Weeks 8 to 10 of the OpShin Pioneer Program\nAcceptance criteria: The code is publicly available and uploaded to the Pioneer Program Github Repository\nEvidence:\n・The code is publicly available here: https://github.com/OpShin/opshin-pioneer-program\n・The code was merged in this Pull Request: https://github.com/OpShin/opshin-pioneer-program/pull/140\n\nB. Output: Videos accompanying weeks 8 to 10\nAcceptance criteria: The lecture videos for week 8 to 10 are publicly accessible in a playlist.\nEvidence:\n・The videos are featured in the public playlist: https://www.youtube.com/playlist?list=PLTh2dOp0i8OKn3H45KH7EqdI4wmkOjeCM\n・The videos are featured in the detailed week itinerary at https://github.com/OpShin/opshin-pioneer-program (links in each bullet point)\n\nC. Output: The project closeout report\nAcceptance criteria: A 2 page report written with the details outlined in the Fund 10 closeout report requirements\nEvidence: The report can be accessed publicly through this permanent link: https://github.com/OpShin/opshin-pioneer-program/blob/baeca41894e4995d25b26bdc7e9ce12df36915d5/doc/Project%20Catalyst%20Closeout%20Report%20-%20OpShin%20Education.pdf\nD. Output: The project closeout video\nAcceptance criteria: A short video - no more than 2 - 5 mins in length - video link needs to be public - outlining the project achievements and deliverables.\nEvidence: The video is publicly accessible through this link: https://youtu.be/lRfNEyh9O14",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    }
+  ]
+}

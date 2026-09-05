@@ -1,0 +1,99 @@
+{
+  "title": "Paima onchain game integration of Frontend Game Engines & Novel Technology",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 75000,
+      "promise": "・A game template that implements a novel game engine or novel technology integration using Paima Engine along with a write-up that justifies why we integrated the specific technology and how the integration works.\n\nKeeping in mind we will do a write-up about which technology we integrated and why we think it’s impactful, to understand the scope of the integration some examples would be engines like Unreal Engine or Game Maker; new devices like Android/iOS or Apple Vision Pro; new technologies like connecting games to GPS data or timelock encryption networks.",
+      "criteria": "・A template using the technology that leverages Paima Engine such that anybody can build an application that leverages this technology with Paima\n・Template has to be meaningfully different than others built as part of this proposal (cannot be a continuation of another milestone)\n・A write-up that introduces the technology integrated to the community and explains the engineering work required in a way that anybody can easily understand the work we did (i.e. convince themselves the work is non-trivial in scope), along with the following required sections: \"what new use-cases does X enable\", \"why",
+      "report": "Video: https://www.youtube.com/watch?v=ePhIU1Hla-g\nTemplate code: https://github.com/PaimaStudios/paima-game-templates/pull/66\nDocumentation for how to build the template: https://github.com/PaimaStudios/paima-game-templates/blob/main/gamemaker/frontend/README.md\nWrite-up: https://blog.paimastudios.com/gamemaker-support",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 130000,
+      "promise": "・A game template that implements a novel game engine or novel technology integration using Paima Engine along with a write-up that justifies why we integrated the specific technology and how the integration works.\n\nKeeping in mind we will do a write-up about which technology we integrated and why we think it’s impactful, to understand the scope of the integration some examples would be engines like Unreal Engine or Game Maker; new devices like Android/iOS or Apple Vision Pro; new technologies like connecting games to GPS data or timelock encryption networks.",
+      "criteria": "・A template using the technology that leverages Paima Engine such that anybody can build an application that leverages this technology with Paima",
+      "report": "Regarding comments to previous POA\nEvidence was updated as requested.\nElements that strictly belong to the original scope: \n・There has been no change in the scope of the Milestone, there are only changes in the naming. We are just disclosing all information for transparency with the Catalyst Program.\n・We are submitting the \"old\" repos as well, as they are mentioned in the Evidence Requirements. But everything has been migrated to the new repos.\n\nThere is no official public announcement for the merge, but you can see the CTO was moved, together with the tech has just been rebranded\n・Charles Hoskinson acknowledges Sebastien Guillemont as Midnight CTO. https://x.com/IOHK_Charles/status/1955702039591444771\n・Midnight disclosing the CTO https://x.com/MidnightNtwrk/status/2025933127609127126?s=20\n・Paima Studios Company Profile https://www.paimastudios.com/corporate\n・https://github.com/PaimaStudios/paima-engine redirects to EffectStream\n\nThese changes were communicated and OK'd recently to the Catalyst team.\nContext \nPaima Studios merged into the Midnight Foundation, and Paima Engine was rebranded as EffectStream. We have rewritten the entire codebase from scratch - this is the third version. We listened to feedback, followed better practices, and improved overall quality. These events are why we are delivering now, but everything has been updated for the present. \nTemplates now live inside the monorepo at github effectstream/effectstream under the `templates/` directory (branch `v-next-bun-start`), rather than the separate `paima-game-templates` repo. This gives templates direct access to the framework build tooling and keeps them in sync with the framework version.\nEven though we have delivered with the EffectStream monorepo, the original Paima Engine code is available at https://github.com/PaimaStudios/paima-engine at master branch and the original game templates at https://github.com/PaimaStudios/paima-game-templates.\nThis Milestone is provided after the fact, so it con",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "social"
+      ],
+      "links": 37,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 130000,
+      "promise": "・A 2nd game template that implements a novel game engine or novel technology integration using Paima Engine along with a write-up that justifies why we integrated the specific technology and how the integration works.\n\nKeeping in mind we will do a write-up about which technology we integrated and why we think it’s impactful, to understand the scope of the integration some examples would be engines like Unreal Engine or Game Maker; new devices like Android/iOS or Apple Vision Pro; new technologies like connecting games to GPS data or timelock encryption networks.",
+      "criteria": "・A 2nd template using the technology that leverages Paima Engine such that anybody can build an application that leverages this technology with Paima\n・Template has to be meaningfully different than others built as part of this proposal\n・A write-up that introduces the technology integrated to the community and explains the engineering work required in a way that anybody can easily understand the work we did (i.e. convince themselves the work is non-trivial in scope), along with the following required sections: \"what new use-cases does X enable\", \"why did we prioritize X\". The blog post must fea",
+      "report": "Intro\nThis milestone delivers the proposal's second template: a novel technology integration: a fiat-to-crypto payment rail wired into an EffectStream app, so players can buy in-game items with a credit card instead of already holding crypto. It is meaningfully. Any developer can clone the repo and stand up the same fiat-purchase flow for their own OnChain app on Cardano or other blockchain given the cross chain nature.\n\n1. Video of the working integration (YouTube, 1:29):\nhttps://youtu.be/64fY35Sgu6E\n\n2. Code - template, open source on GitHub:\nhttps://github.com/effectstream/payment-app\n\n3. Documentation & Write Up - how to leverage the template, introduces the technology, explains the engineering work\nhttps://effectstream.github.io/docs/blog/payment-app\nhttps://github.com/effectstream/payment-app/blob/main/README.md\n\nCOMMENTS & NOTES\nThis milestone is delivered under EffectStream (formerly Paima Engine), following the merger of Paima Studios into the Midnight Foundation. The rebrand and the project's continued in-scope delivery across Cardano and Midnight are acknowledged by the Catalyst team under support ticket #9527\nCardano-first / multi-chain: This is fundamentally a Cardano deliverable. EffectStream is a Cardano-rooted multi-chain engine, and the template's app logic carries zero chain-specific code - the logic of the app state transition, the endpoints, are all chain-neutral. Retargeting the template at Cardano is a config + contract-package change, not an app-logic change\nThis demo is runnable locally following the simple steps on the readme.",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 130000,
+      "promise": "・A 3rd game template that implements a novel game engine or novel technology integration using Paima Engine along with a write-up that justifies why we integrated the specific technology and how the integration works.\n\nKeeping in mind we will do a write-up about which technology we integrated and why we think it’s impactful, to understand the scope of the integration some examples would be engines like Unreal Engine or Game Maker; new devices like Android/iOS or Apple Vision Pro; new technologies like connecting games to GPS data or timelock encryption networks.",
+      "criteria": "・A 3rd template using the technology that leverages Paima Engine such that anybody can build an application that leverages this technology with Paima\n・Template has to be meaningfully different than others built as part of this proposal\n・A write-up that introduces the technology integrated to the community and explains the engineering work required in a way that anybody can easily understand the work we did (i.e. convince themselves the work is non-trivial in scope), along with the following required sections: \"what new use-cases does X enable\", \"why did we prioritize X\". The blog post must fea",
+      "report": "In response to the reviewers of the previous PoA\nThanks for the feedback, to demonstrate and explain how you can use the template we did a video, article about a demo app (to show how easy it is)\nhttps://youtu.be/dveSIwH_EFY\nhttps://effectstream.github.io/docs/blog/farcaster-template/\nThanks!\n\nNO CHANGES FROM LAST POA AFTER THIS LINE\nBRIEF\nThis milestone delivers a new template: a novel technology integration with Farcaster, the decentralised social network. Farcaster Canvas is a collaborative pixel-painting game that ships as a Farcaster Mini App: users on Warpcast paint the same canvas in near real time, and when a canvas fills, anyone can fork it to their own timeline. It is meaningfully different from the other templates: the client surface is a social feed embed - no game client, no wallet extension - while the whole game runs through an EffectStream state machine sitting between a near-empty contract and the UI.\nThere is no game logic on-chain and none in the frontend; everything is decided by the state machine consuming events from a single L2 input. Built on EffectStream, the game logic is chain-neutral: this build settles on an EVM chain inside Warpcast, and the same state machine retargets to the Cardano ecosystem with a configuration change - the social surface and the settlement chain are independent choices. So this game is an example how we can make cross social experiences with Cardano.\n\nLINKS TO REVIEW\n1. Video - Farcaster Canvas Mini App demo.\nhttps://youtu.be/NYjVmRQBbcU\nIt is important to explain that Farcaster is an EVM native social network, with this App we can now do cross-chain content that targets both Cardano and Farcaster users in a integrated experience. We want to provide the tech that allows to expand on existing user bases, allowing Cardano to tap into them.\n2. Code - the Mini App \nhttps://github.com/effectstream/farcaster-app\n3. Write-up - dedicated walkthrough\nhttps://effectstream.github.io/docs/blog/farcaster-app\nEngine-integrations",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 130000,
+      "promise": "1. **Game Template with Integrated GPS and AR**:\n - Development of a game template that integrates GPS and AR technologies, designed specifically for either iOS or Android platforms. This template will enable the creation of innovative location-based AR applications.\n\n2. **Technical Documentation**:\n - Comprehensive documentation detailing the integration of GPS and AR within the template, along with instructions and guidelines for developers to utilize the template effectively on their chosen platform (iOS or Android).\n\n3. **Prototype/Demonstrator**:\n - A demonstrator application that exemplifies the use of the GPS and AR-integrated template. This prototype will serve as a practical example, highlighting the capabilities and functionalities specific to iOS or Android platforms.\n\n4. **Community Engagement Write-Up**:\n - A detailed write-up for community distribution, explaining the integrated technologies, the engineering process, and potential use-cases for iOS or Android. The write-up will include sections on 'New Use-Cases Enabled by GPS and AR' and 'Why GPS and AR Were Integrated'.\n\n5. **Testnet Launch in Selected Cities**:\n - We will launch a testnet for the GPS and AR-integra",
+      "criteria": "1. **Successful Development of the GPS and AR-Integrated Game Template**:\n - The template must effectively leverage the Paima Engine and integrate GPS and AR technologies, enabling the creation of applications on either iOS or Android platforms. The integration should be seamless and user-friendly, allowing developers of varying skill levels to build applications using this technology.\n\n2. **Distinctiveness from Previous Templates**:\n - The new template must be significantly different from the ones previously developed as part of this proposal. This distinction should be evident in its design,",
+      "report": "UPDATE 2 - Camera-based AR added to the app\nThanks once again for the feedback!\nWe have merged into the main branch, and now the main readme reflects the complete project.\nUPDATE - Camera-based AR added to the app\nFollowing the last review (\"please fix it by adding actual augmented reality to the app\"), camera-based AR Game is now in the app itself, built with ARKit + RealityKit. From the ranking screen, \"Tiro al Trofeo\" opens the camera: plane detection anchors a virtual podium onto the real surface, with physics gameplay (timed rounds, two-tier scoring), person occlusion, and the top contributors' names riding the podium steps. The same AR scene renders the template's geolocated records as a living data map on the real floor - GPS and AR integrated together, anonymized data anchored on Cardano.\nNew dedicated AR demo video (on-device, single take): \nhttps://www.youtube.com/watch?v=7qFVhvGDVyk\n\nCode: https://github.com/effectstream/ipp-app - see ios/IPP/Game/(AR session, plane placement, procedural podium, physics toss, floor data map). The README note quoted in the review (\"no ARKit/RealityKit overlay\") has been removed - it is no longer true; that section now documents the camera AR feature, as discussed in previous reviews. \n[NOTE FOR REVIEWERS no changes from here on since last review]\nPrevious updates\n1. Blog post: it was temporarily offline due to a site deploy issue. It was restored. \nhttps://effectstream.github.io/docs/blog/ipp-clinical-records-cardano\nThis blog talk and expands about these points.\n2. License: an MIT LICENSE file has been added to the repository root:\nhttps://github.com/effectstream/ipp-app\nThe following is outdated due to new updates (3) (4)\n3. AR: we understand the concern, and our own wording likely contributed to it. Our reading of the approved outputs - \"innovative location-based AR applications\" - is AR anchored to physical place through GPS rather than a camera feed: at capture, each field is overlaid live with local / country / world",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 24,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "8",
+      "cost": 125000,
+      "promise": "Project Close Report:\n・pdf report\n・video report\n・5 open source templates accessible by community of games that leverages different integrations with write-ups about the impact of all the different systems (see previous milestones for the technologies we are thinking of implementing)\n・5 writeups about the technologies that explain what use-cases they enable and why we prioritized their integration",
+      "criteria": "・Community has the access to public close reports and all created templates with demo videos explaining how each of the integrations work and can read our write-ups to understand the impact of each one\n・List of games built as templates people can leverage, as well as any other app/game that leveraged our template in the period since starting this proposal and the final milestone submission",
+      "report": "In response to the review of the PoA\nThank you for the review. The points raised are answered below.\n1. The applications and games are listed further down with the template each one uses, how it is integrated, and a link, covering all five templates.\n2. Why the earlier list read as M2-only. It named Catalyst projects that use the EVM-Cardano development environment. That environment is the shared foundation every other template runs on, so a list built that way collapses onto M2 even when the work spans all five. \n3. Use beyond our own team: The templates are open source, so uptake is normally by fork, no registration or communication is needed. As today the EffectStream monorepo carrying the templates has 91 stars and 43 forks, and the game-templates repository behind the M1 GameMaker integration, and M2, M3, M4 has further forks. We will report named third-party applications in the Effectstream home site. We just promoted the engine in a hackathon recently with very good reception.\n4. The deliverables noted as missing. The M2 write-up and demonstration video, and the M5 write-up, are in the per-template sections below, which carry code, README, write-up and video for every milestone.\nMilestone 5 was updated. The close-out video now includes the camera-based augmented reality added to the M5 template, and the close-out report carries the applications table and confirms M5's platform as iOS (ARKit and RealityKit).\n\nCLOSE-OUT DELIVERABLES\n\nClose-out video (PCV, YouTube, 2:33):\nhttps://youtu.be/NuU5ua0bMok\n\nClose-out report (PCR, PDF, Catalyst 13-field format, 6 pages):\nhttps://drive.google.com/file/d/1K1RFDZCWPJ85E4SrupSxdXFai3pQ1DRT/view?usp=sharing\n\nEngine-integrations write-up covering the whole set:\nhttps://effectstream.github.io/docs/blog/engine-integrations\n\nTHE FIVE TEMPLATES: APPLICATIONS, IMPACT AND EVIDENCE\nM1 - GameMaker integration\nApplication: GameMaker 2D demo game. \nIntegration: a GameMaker Studio project is the game client; a thin adapter forwards pla",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 46,
+      "cut": true
+    }
+  ]
+}

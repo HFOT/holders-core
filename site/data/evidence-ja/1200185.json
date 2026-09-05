@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "詳細なドキュメントの準備\n後マイルストーンで構築される以下の機能のスコープと設計\n・シンタックスハイライトとコード補完\n・CardanoブロックチェーンエクスプローラーAPI統合\n・VSコードからのスマートコントラクト展開/接続ノード\n・ウォレット管理 - ウォレットの作成例\n・デバッグツール\n\nUI/UXデザインモックアップは、該当する文書に含まれている機能のために準備されます.",
+      "criteria": "以下に示す機能のスコープと設計を含む文書を作成\n・シンタックスハイライトとコード補完\n・CardanoブロックチェーンエクスプローラーAPI統合\n・VSコードからのスマートコントラクト展開/接続ノード\n・ウォレット管理 - ウォレットの作成例\n・デバッグツール\n\nUI/UXデザインモックアップは、任意の機能に必要な文書に含まれています.",
+      "report": "-------------------------------------------------------------------\n皆様のお越しをお待ちしております。 査読者1のおかげで、承認しました。\nレビュアー2件のフィードバックをもとに、改良したPOAをマイルストーン1に変更しました。 しかし、我々は「プラットフォームは、あなたが提出したように、標準のVisual Studioツールによって既に提供されている機能のレプリカは、有意義な強化を提供せずに修正されていない」という文の一部を見つけます。 このステートメントは正しくありません。 開発者であり、VSコードでは利用できない Haskell および Plutus 開発の基本的なサポートでさえ、独自の経験と他の開発者のフィードバックに基づいて提案しています。\n当社は、VSコード内でのCardano開発支援を可能な限り高度に行ないます。 しかし、VSコードの提案と統合の外部ツールにリストされている機能の基本的なサポートでさえ、Cardano Development Ecosystemに大きなプラスの影響を及ぼすことができます。 そしてそれが私たちの提案です。\n提案書に記載されたものを超えてイノベーションを期待することは間違っていませんが、提案書は、カルダノ・デベロッパーを基本ツールで有効活用することについてです。 プリプロド、プレビュー、メインネットの切り替えのような機能を持つCardano-cliの例をあげます。 はい、それはCardano-CLIで利用可能ですが、VSコードには存在しません。 当社の提案は、VSコードとVSコードを使用して新しい開発者がCardanoを始めたいと考えている多くの開発者がいます。VSコード内でこの機能が見つかりません。\n\nログの変更\n\nページ番号。 8 宛先 10: 追加, API のキー要件, 明確さのためのより詳細な対コードの実装計画. また、より明確にFigmaのスクリーンショットを追加しました。\nページ番号 17: 更新されたスマートコントラクトの展開セクションは、より詳細な情報とFimaスクリーンショットを追加して、理解と明快さを改善します。\nページ番号.18～22:スマートコントラクトの展開と、より明確にウォレット管理セクションを更新するためのデータフロー図を追加しました。\nページ番号 22 宛先 24: より良い明快さと理解のためのデバッグセクションを更新.\nページ25〜30:F"
+    },
+    {
+      "no": 2,
+      "promise": "このマイルストーンの目的は、Plutus と Haskell 開発者向け Visual Studio コードの 2 つの主要なプラグイン/拡張子を開発することです。 スコープ文書の詳細な情報をもとに、次の展開を行います。\n出力:\n・Syntax Highlightingとコード補完用のVSコードIDEの拡張機能を開発\n・VSコードIDE内のCardanoブロックチェーンエクスプローラAPIを統合",
+      "criteria": "・VSコードIDEではSyntax Highlightingとコード補完拡張機能が使用可能\n・CardanoブロックチェーンエクスプローラAPIはVSコードIDE内で統合",
+      "report": "最近のフィードバックをもとに、マイルストーン2 POAを改定しました。\nCardanoVSCエクステンションは、開発者がVSコードマーケットプレイスからダウンロードできます。\n・GitHubの公開リポジトリはM1で作成され、出力のソースコードやテストケースをアップロードしました。\n・シンタックスハイライトとコード補完\n・CardanoブロックチェーンエクスプローラーAPI統合\n\nGitHub リンク https://github.com/AIQUANT-Tech/CardanoVSC/tree/main/cardanovsc\n・VSコードマーケットプレースに2つの機能を含むプラグインを提出し、そこにリストされています。\n・コード補完メインファイルへのリンク https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc/src/completion.ts\n・CardanoScan API 連携メインファイル https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc/src/config/cardanoApiIntegration.ts\n・Syntax ハイライト https://github.com/AIQUANT-Tech/CardanoVSC/tree/main/cardanovsc/syntaxes のフォルダーへのリンク\n\nここでは、CardanoVSC拡張リンクhttps://marketplace.visualstudio.com/items?itemName=AIQUANT-TECHNOLOGIES.cardanovscを承認しました\n・ユニットテストケースの動作確認をしている短い動画をここに提出しています。\n\nここでは、一般にアクセス可能なビデオリンクCardanoVSC M2 - コード補完とコードハイライト、CardanoスキャンAPI\n開発された機能のために撮影されたスクリーンショットは、readmeファイルhttps://github.com/AIQUANT-Tech/CardanoVSC/blob/main/README.md に追加されます"
+    },
+    {
+      "no": 3,
+      "promise": "出力:\nVSコードIDE用プラグインを2つ開発\n・VSコードIDEのスマートコントラクト展開\n・ウォレット管理 - ウォレットの作成例",
+      "criteria": "・VSコードIDEから直接スマートコントラクト展開が可能\n・VSコードIDE内でウォレット管理が可能",
+      "report": "フィードバック、フィードバックに基づく再送信のために多くのおかげで。\n・スクリーンショットリンク固定\n・各機能のコードにダイレクトリンクを追加\n\n=================================\n1. 公開アクセス可能なソースコードリポジトリへのリンク, GitHub 出力で述べた2つの機能: https://github.com/AIQUANT-Tech/CardanoVSC\nCardanoノード接続:\nhttps://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc/src/config/cardanoNodeIntegration.ts\nウォレット管理:\nhttps://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc/src/implementation/implementation.ts\nスマートコントラクトの展開 チェーン:\nhttps://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc/src/implementation/deployment.ts\n\nCardanoVSC のテスト ケース:\nhttps://github.com/AIQUANT-Tech/CardanoVSC/tree/main/cardanovsc/src/test\n2. 出力に記載されているプラグインを含むVisual Studio Market Placeへのリンク:https://marketplace.visualstudio.com/items?itemName=AIQUANT-TECHNOLOGIES.cardanovsc\n3。 スクリーンショットとランタイム機能の短いビデオデモンストレーションへの公開アクセス可能なリンク:\n3.1 ビデオ: https://youtu.be/TK6s5f11FpQ\n3.2 機能のためのスクリーンショット付きReadmeファイル: https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/README.md\n- 機能性によって使用されるすべてのスクリーンショット: https://github.com/AIQUANT-Tech/CardanoVSC/tree/main/cardanovsc/docs"
+    },
+    {
+      "no": 4,
+      "promise": "・Plutus と Haskell Developers のソースコードのデバッグ拡張機能を開発し、VS コード IDE 内で利用\n・開発者が全ての機能を利用するためのドキュメント\n\n・シンタックスハイライトとコード補完\n・CardanoブロックチェーンエクスプローラーAPI統合\n・VSコードからのスマートコントラクト展開\n・ウォレット管理\n・ソースコードのデバッグ拡張",
+      "criteria": "・ソースコードデバッギングエクステンションを開発し、Visual Studio Marketplaceで利用可能\n・デバッギングエクステンションは、エラーを検出し、可能な修正を提案するために動作しています\n・開発者が開発する全ての機能を利用する際、例のあるユーザドキュメントが利用可能です",
+      "report": "1.公開アクセス可能なソースコードリポジトリへのリンク、デバッグ機能のGitHub:\nhttps://github.com/AIQUANT-Tech/CardanoVSC/tree/main/cardanovsc debugger\n機能 賢いコードは、リポジトリでより正確にこれらの主要なファイルを見つけることができます\nデバッグアダプタ: https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc debugger/src/debugAdapter.ts\n対角機能: https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc debugger/src/診断.ts\n主要な延長tsコード: https://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc debugger/src/extension.ts\n\nデバッグエクステンションを含むビジュアルスタジオマーケットプレイスへのリンク:\nhttps://marketplace.visualstudio.com/items?itemName=AIQUANT-TECHNOLOGIES.cardanovsc-debugger\n\n3.スクリーンショットへのリンクとランタイムのデバッグの短いビデオのデモンストレーションを一般にアクセス可能。 :\nデバッガのスクリーンショット: https://github.com/AIQUANT-Tech/CardanoVSC/tree/main/cardanovsc debugger/images\nビデオリンク: https://youtu.be/WNB6YTAnn 8\n\n4.ユーザードキュメンテーションへの公開アクセス可能なリンク例\nCardanoVSC debugger スクリーンショット例付きユーザードキュメント\nhttps://github.com/AIQUANT-Tech/CardanoVSC/blob/main/cardanovsc debugger/README.md\nカルダノVSC ユーザドキュメントの例:\nhttps://github.com/AIQUANT-Tech/CardanoVSC/blob/main/README.md\n\nCardanoVSC Debuggerユニットテストケース:https://github.com/AIQUANT-Tech/CardanoVSC/tree/main/cardanovsc debugger/src/test"
+    },
+    {
+      "no": 5,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ\n・各機能のチュートリアル\n・* Visual Studio マーケットプレイスのドキュメントや公開拡張などの成果物の一部が、以前のマイルストーンで既にカバーされているため、このマイルストーンには、Final Clouseout Reportsと教育チュートリアルの公開が含まれます.",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n・チュートリアルはYoutubeで開発する機能について公開しています\n\n・シンタックスハイライトとコード補完\n・CardanoブロックチェーンエクスプローラーAPI統合\n・VSコードからのスマートコントラクト展開\n・ウォレット管理\n・ソースコードのデバッグ拡張",
+      "report": "プロフェクトを正常に完了し、プロジェクトのクローズアウトビデオとレポートを提出してください。\n鍵のハイライトは、VSコードマーケットプレースで開発されたエクステンションが承認され、既にダウンロード数が強かったことです。\n\n・最終報告書へのリンク CardanoVSC - クローズアウトレポート.pdf\n・最終クローズアウト映像へのリンク https://youtu.be/101HTrP8f4Y\n・Youtubeの教育チュートリアルへのリンク https://www.youtube.com/watch?v=rx rsa5ITXY\n・他の教育ビデオは、初期のミルストーンだけでなく、\n\n・Syntax Highlightingとコード補完機能(Milestone 2): https://www.youtube.com/watch?v=rtSJ2EIjlg4&feature=youtu.be\n・スマートコントラクト展開&ウォレット管理機能(マイルストーン3): https://www.youtube.com/watch?v=TK6s5f11FpQ\n・デバッグ機能(マイルストーン4): https://www.youtube.com/watch?v=WNB6YTAnn 8"
+    }
+  ]
+}

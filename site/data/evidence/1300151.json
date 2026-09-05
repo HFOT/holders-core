@@ -1,0 +1,72 @@
+{
+  "title": "Open-Source Datum Explorer: Decode, Understand, Build",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "・A detailed design document outlining the proposed architecture for the decoding tool and registry.\n・A list of datum definitions to be included in the registry.\n・The functional CBOR decoding library with comprehensive documentation.\n・Unit tests covering the core functionality.",
+      "criteria": "・Design document clearly states and explains the architecture for the decoding tool and registry is in the open source GitHub repository.\n・A list of at least 10 datum definitions to be included in the registry.\n・Code is working and documented.\n・All unit tests pass.",
+      "report": "10-Feb: Readme was updated with Rust installation\n・Link to the Design document in the open-source GitHub repository (Document links were updated)\n・Current architecture doc: https://github.com/WingRiders/datum-explorer/blob/main/docs/architecture.md\n・CDDL datum schema design doc: https://github.com/WingRiders/datum-explorer/blob/main/docs/cddlDatumSchemaDesign.md\n・Research results doc: https://github.com/WingRiders/datum-explorer/blob/main/docs/research.md\n・NOTE re. Design document: According to the milestone requirements, the design document should outline the proposed architecture for the decoding tool and registry. Since Milestone 1 focuses primarily on the CBOR decoding library, the design document currently reflects the current state of the project—mainly the architecture and functionality relevant to this library. We fully intend to expand the design document in future milestones to provide more detailed requirements and specifications for components like the backend, frontend, and registry as those parts of the project are developed.\n・Link to the list of datum definitions in the open-source GitHub repository: https://github.com/WingRiders/datum-explorer/tree/main/lib/test/fixtures/cddl\n・Link to the open source GitHub repository containing documented code: https://github.com/WingRiders/datum-explorer\n・Link to the tests results in the open source GitHub repository: https://github.com/WingRiders/datum-explorer/actions/runs/13053934975/job/36420272193\n・Video demonstration of how the library decodes a sample CBOR datum into a structured object and how the test suite executes and all tests pass:\n・Video files for download: https://github.com/WingRiders/datum-explorer/tree/main/catalyst-evidence\n・CBOR decoding: https://www.youtube.com/watch?v=TNjW_lehJYM\n・Updated Tests passing: https://www.youtube.com/watch?v=e6i6kpZxK3s (Updated video and link)",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 18
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60000,
+      "promise": "・A GitHub repository containing the registry with at least 10 well-documented datum definitions.\n・Backend code for fetching registry data from the GitHub repository \n・A single API endpoint providing all registry data to the frontend and third parties, fetched from the GitHub repository\n・A README file explaining how to use the registry and contribute new definitions.",
+      "criteria": "・The repository is publicly accessible and contains at least 10 datum definitions.\n・Backend code fetching data from the GitHub repository is functional.\n・API endpoint is working and the response contains definitions from GitHub repository as defined in the Milestone 1 design document.\n・README file has sections\n・How to use the registry.\n・How to contribute new definitions, including guidelines on format and structure, as defined in the Milestone 1 design document.",
+      "report": "・Link to the public GitHub repository containing the registry and its definitions: https://github.com/WingRiders/cardano-datum-registry\n・Link to the open source GitHub repository containing backend code: https://github.com/WingRiders/datum-explorer (backend code is in app/ folder, .e.g. endpoints are defined in app/src/app/api/ folder)\n・Screenshot of endpoint response containing GitHub repository definitions in format defined in the Milestone 1 design document https://github.com/WingRiders/datum-explorer/blob/main/catalyst-evidence/milestone-2-endpoints-reponses.png\n・Link to the README file in the repository, showing the instructions and contribution guidelines: https://github.com/WingRiders/cardano-datum-registry/blob/main/README.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40000,
+      "promise": "・Front-end with features:\n・Display schemas fetched from backend endpoint\n・If the entered CBOR-encoded data is valid according to a subset of schemas, show only suggested schemas (or highlight / prioritize them)\n・Allow users to select a schema from the list of available schemas\n・Enable users to define or edit schemas locally in UI (e.g., an editable textarea)\n・Decode CBOR data according to the selected or locally defined schema\n・Live website hosting the tool for public access and testing.\n・Integration test to validate interaction between the front-end and the backend API endpoint\n・A README file explaining how to use the front-end tool, including how to define or edit schemas and decode CBOR data\n・A short video demonstrating the key features of the front-end tool, including schema selection, local schema definition, and CBOR decoding",
+      "criteria": "・Code is in the open source GitHub repository.\n・The application displays readable representations of CBOR data decoded using selected schemas\n・Users can:\n・Select schemas fetched from the backend\n・Define or edit schemas locally through an interface (e.g., editable textarea or similar)\n・Accept suggestions for schemas based on available data\n・The deployed application can be used by visiting a live website.\n・Integration test validates interaction between the front-end and the backend API endpoint\n・The documentation is included in the GitHub repository and meets the following minimum requirements:",
+      "report": "Dear reviewer, we have updated the project according to your comments:\n・The bug when the app would display \"Error while parsing datum\" was fixed\n・We've added more detailed definitions of the manual testing scenarios: https://github.com/WingRiders/datum-explorer/blob/main/manual-tests/datum-explorer.feature\n・We don't think it's a good user experience to have a manual button for parsing the datum. Users always paste the CBOR value from the clipboard and don't type it in manually. We have improved the app though and it now won't parse all the previous results, only the latest CBOR value in the input field\n・The application is well documented, you can find the architecture document, user manual and research document in the docs folder: https://github.com/WingRiders/datum-explorer/tree/main/docs\n\nHere is the evidence:\n・Open-source GitHub repository: https://github.com/WingRiders/datum-explorer\n・Link to the app website: https://datum-explorer.wingriders.com/\n・Tests:\n・Automated tests definition 1: https://github.com/WingRiders/datum-explorer/tree/main/app/test\n・Automated tests definition 2: https://github.com/WingRiders/datum-explorer/tree/main/lib/test\n・Automated tests execution: https://github.com/WingRiders/datum-explorer/actions/runs/13965685841/job/39095439872 (you can expand the \"Test\" section to see that all automated tests were executed successfully)\n・Manual tests definition: https://github.com/WingRiders/datum-explorer/blob/main/manual-tests/datum-explorer.feature\n・Manual tests report: https://github.com/WingRiders/datum-explorer/blob/main/manual-tests/report.md\n・README file: https://github.com/WingRiders/datum-explorer/blob/main/README.md\n・Application manual: https://github.com/WingRiders/datum-explorer/blob/main/docs/app-manual.md\n・Architecture documentation: https://github.com/WingRiders/datum-explorer/blob/main/docs/architecture.md\n・Tutorial and demo video: https://github.com/WingRiders/datum-explorer/blob/main/catalyst-evidence/milestone-3-video.mp4",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 26,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 10000,
+      "promise": "Marketing Report Document listing all the updates regarding project progress, feedback on those updates and github repository, list of major issues, fixes for those issues.",
+      "criteria": "Marketing Report Document has 4 chapters:\n・Social updates: A list of social media posts (Twitter, Discord, or others), including engagement metrics such as views, likes, shares, or comments.\n・GitHub feedback: Lists contributions or feedback received on the repository (empty if none).\n・Major issues: Summarizes major reported issues (empty if none).\n・Issue Fixes: Links to commits resolving the reported issues (empty if none).\n\n﻿Measurable Marketing Targets\n・At least 5 posts made across all communication channels (Twitter, Discord, etc.).\n・Posts should achieve a combined minimum of 100 views/inte",
+      "report": "Dear Reviewer,\nThank you for your constructive feedback. We took your suggestions and made several updates to address them: \nNew Community Contributions\nAfter launching an additional marketing campaign with improved messaging and visibility, including a 5,000 $WRT reward for the first 3 accepted schemas, we successfully received three new schema submissions from the community, meeting the original target. Please review the\nUpdated Evidence Sheet\nDirect Linking Improvements\nAs suggested, we have updated the application’s interface and documentation to include direct links to the GitHub repository and contribution guide.\nTargeted Outreach\nTo increase reach and engagement, we also:\n・Shared tailored Twitter content with clearer CTAs\n・Sent direct messages to relevant projects via Twitter & Telegram\n・Engaged in ecosystem conversations related to CBOR tooling\n\nWe hope this demonstrates our proactive response and commitment to meaningful community involvement.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 30000,
+      "promise": "・A 2/3 page written summary ‘Project Close-out Report’.\n・Short video ‘Project Close-out Video’.",
+      "criteria": "・‘Project Close-out Report’:\n\n・Lists Key Performance Indicators (KPIs) achieved during the project, including:\n・Number of schemas added to the registry (minimum 10).\n・Number of unique projects (protocols such as WingRiders) represented in the registry (minimum 5) - represents the actual usage\n・Number of contributions from the community (minimum 5 pull requests).\n・Social media engagement metrics (e.g., total post views/interactions exceeding 100).\n・Explains how the KPIs were met or why they weren’t.\n・Outlines next-stage plans for the product or service.\n\n・‘Project Close-out Video’ outlining the",
+      "report": "Dear Reviewer, We have updated the Project Close-out Report to include all the required figures as outlined in the Acceptance Criteria. Please find below the updated report along with all other relevant project links.\nUpdated Project Close-out Report:\nhttps://github.com/WingRiders/datum-explorer/blob/main/catalyst-evidence/project-close-out-report.pdf\nLink to Close-out Video:\nhttps://youtu.be/p57vM1FDOxw\nLinks to Other Relevant Project Sources or Documents:\n・Application\n・GitHub Repository\n・README file\n・Application Manual\n・Architecture Overview\n・Schema Registry\n・CDDL datum schema design document\n・Manual Tests\n・Link to Video Files\n\nBest regards,\nWingRiders",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 13,
+      "cut": true
+    }
+  ]
+}

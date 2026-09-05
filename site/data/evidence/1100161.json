@@ -1,0 +1,75 @@
+{
+  "title": "Hollow by TxPipe: Headless dApp Framework, a friendly SDK for off-chain development",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 44998,
+      "promise": "- Publicly available source code for the Hollow Framework\n- Publicly available usage documentation for the Hollow Framework\n- A public Rust crate released in crates.io\n- A mock runtime component to test Hollow applications built with the framework",
+      "criteria": "A developer is able to build a basic Hollow application that interacts with a mock Cardano network by following the available documentation.",
+      "report": "NOTE: due to naming conflicts with other libraries and projects, we had to rename ours from “Hollow” to “Balius”. Nothing in the scope has changed, just the name. Previous links mentioning Hollow are redirected to their corresponding content under the Balius name.\nIn the following Github repository you will find the complete source code for the framework component of the project:\nhttps://github.com/txpipe/balius \nIn the following site you will find public documentation with install and usage instructions for the Balius (ex Hollow) Framework:\nhttps://balius.txpipe.io \nIn the following link you will find a publicly available Rust crate that developers can use to add the framework as dependency on their Rust projects:\nhttps://crates.io/crates/balius \nIn the following link you will a video describing the deliverables of the milestones and a quick example of how to code and compile a basic app using the framework:\nhttps://youtu.be/z_34DrO9MGU",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 40093,
+      "promise": "- Publicly available source code of the Hollow Runtime\n- Publicly available usage documentation for the Hollow Runtime\n- A binary release and a docker image of the Hollow Runtime",
+      "criteria": "A developer is able to deploy the Hollow Runtime as a docker container and host the example application by following the available documentation.",
+      "report": "NOTE: due to naming conflicts with other libraries and projects, we had to rename ours from “Hollow” to “Balius”. Nothing in the scope has changed, just the name. Previous links mentioning Hollow are redirected to their corresponding content under the Balius name.\nIn the following Github repository you will find the complete source code for the runtime component of the project:\nhttps://github.com/txpipe/balius \nIn the following site you will find public documentation with install and usage instructions for the Balius Runtime:\nhttps://balius.txpipe.io \nIn the following link you will find the instructions to install a binary release of the Balius Runtime:\nhttps://github.com/txpipe/balius/releases/tag/v0.2.0\nIn the following link you will find a publicly available Docker Image containing the Balius Runtime:\nhttps://github.com/txpipe/balius/pkgs/container/baliusd\nIn the following link you will a video describing the deliverables of the milestones and a quick example of how to code and run a basic dApp using the Balius runtime.\nhttps://youtu.be/ERqbIZ0fSyk",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 40093,
+      "promise": "- Publicly available source code of the Hollow CLI\n- Publicly available documentation about the Hollow CLI\n- Publicly available binary release of the Hollow CLI",
+      "criteria": "- A developer is able to install the Hollow CLI in it's local environment by following the available documentation.\n- A developer is able to scaffold (aka: setup basic structure) a Hollow project by using the CLI and the available documentation.\n- A developer is able to test their Hollow project by using the CLI and the available documentation.",
+      "report": "Please find below the corresponding links to the deliverables associated with Milestone 3 of the Hollow (now Balius) project:\n・Link to public code repository of the Hollow CLI: https://github.com/txpipe/balius/tree/main/balius \n・Link to public usage documentation for the Hollow CLI: https://balius.txpipe.io/balius \n・Link to public binary release of the Hollow CLI: https://github.com/txpipe/balius/releases/tag/v0.3.4 \n・Video showing how to use the CLI to develop a Hollow dApp: https://youtu.be/yJOaF7r0eyg \n\nThanks!",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 40092,
+      "promise": "- Provisioning scripts to install Hollow Runtime instances on a Kubernetes cluster\n- Access via Demeter platform to host Hollow dApps",
+      "criteria": "A developer is able to use Demeter Web Console to deploy and host dApps built using the Hollow SDK",
+      "report": "Milestone Outputs\n・Provisioning scripts to install Hollow Runtime instances on a Kubernetes cluster\n・Access via Demeter platform to host Hollow dApps\n\nAcceptance criteria\n・A developer is able to use Demeter Web Console to deploy and host dApps built using the Hollow SDK\n\nEvidence of milestone completion\n・Publicly available source-code with Kubernetes provisionings scripts: https://github.com/demeter-run/ext-balius\n・Terraform Module Installation Guide: https://github.com/demeter-run/ext-balius/tree/main/bootstrap\n・Extension with License: https://github.com/demeter-run/ext-balius?tab=Apache-2.0-1-ov-file\n\nVideo showcasing how to deploy a Hollow dApp using Demeter\nhttps://youtu.be/ew-5NPMgA2A",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 29168,
+      "promise": "- source-code for an end-to-end dApp built using the Hollow SDK\n- a live demo instance of the end-to-end dApp publicly available.\n- written report describing the development process and any relevant findings.\n- quantitative report showing any available usage metrics of the instances hosted on the Demeter platform.",
+      "criteria": "- a developer is able to build dApps using the available artifacts in the Hollow SDK\n- the end-to-end dApp provides a reasonable example for onboarding new developers\n- a reviewer is able to audit the development process ensuring that all required tasks have been completed.\n- a reviewer is able to appreciate the usage metrics of the instances hosted in the Demeter platform.",
+      "report": "- Link to source-code repository with complete end-to-end dApp example\n Balius open-source code repo\n- Link to live demo instance of the dApp that is publicly accessible\n Demo of end-to-end application using Balius and Demeter\n Application (Asteria notification bot) live in Discord\n- A video recording that summarizes the entire development process and highlights the key results and outcomes of the project\n Balius close-out video (demo of main deliverables and outcomes)\n- A list of all relevant links shared throughout the project\n・Github public repo\n・Documentation\n・Demeter runtime service\n・Balius core components demo\n・Discord dedicated channel\n・End-to-end example source code\n・End-to-end example demo\n・Close-out report\n・Close-out video\n\n- A public available written report that describes the entire development process of the project (including methodologies, tools used, challenges, relevant findings and insights)\n Development report\n- A quantitative report that presents usage metrics of the instances hosted on the Demeter platform\nThe Balius runtime has been successfully integrated into Demeter as a managed service, enabling developers to deploy and operate headless dApps with minimal overhead. Since its release, it has seen early adoption within the Cardano developer community and has been actively used by the TxPipe team for testing and validation during its development.\n Key usage metrics:\n・Total number of Demeter projects with Balius workers = 16\n・Total number of Balius workers deployed in Demeter = 36\n\nUTxOs handled in the last 7 days by Balius Workers deployed on Demeter (per hour):\nhttps://drive.google.com/file/d/1wkTiSbfnrDPME3VVBw96zXANxjoKW_ma/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 16
+    }
+  ]
+}

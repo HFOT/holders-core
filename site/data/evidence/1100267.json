@@ -1,0 +1,62 @@
+{
+  "title": "Summon: Web3Auth open-source code for easy login to Cardano DApps",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 43500,
+      "promise": "Objective: Gauge potential user needs\nMethod: We will put out an invitation for 2 Focus Group sessions for the Cardano Community. \n・We will advertise these sessions on X (Twitter), Reddit, and the Cardano Forum. \n・We will also send specific invitation to project teams in the ecosystem that we know may want to use this tool.\n・The target audience of these sessions will be open-source developers.\n・The target number of attendees for this session will be 5-10.\n・The sessions will be at different times of day to encourage participants from different time zones.\n・While the sessions will be conducted in English, our team is distributed with members in North America, South America, and Europe with the ability to speak multiple languages. We will also activate our supporters in Asia and Africa to help spread the invitation to attend these sessions. We have specific individuals we can talk to on every continent.\n\nOutput: After the focus groups have been conducted we will write a short report with the team takeaways.\n・This report will include what we have learned about user needs and how our product can best meet them",
+      "criteria": "A recording of the listening session and a short report outlining team takeaways and how we plan to meet user needs.",
+      "report": "Milestone 1 Completion Report\nTo start, we had to modify our approach a bit because of the lack of response we got from the developer community to sign up for a meeting. We started by putting out an announcement to the community that we were going to be doing feedback sessions and focus groups. We put out a sign-up form and directly solicited colleagues. Here is our focus group form:\nhttps://docs.google.com/forms/d/12OGYes5ELbw7m5jovkJL2Pqcc7vxhAHodPGwtTAmdEI/edit\nThe general response we got was that they already knew what we were building and that they didn't need a full tour, or they didn't have time to set up a meeting. You can see that we tagged our collaborators from around the world, had a few of them repost it (and some said they privately passed it on). But there was not a large appetite to participate.\nhttps://twitter.com/SummonPlatform/status/1767138899900641359\nHowever, we did get two positive responses which would provide us with feedback. 1) The SpacePlace crew invited us to be on their weekly YouTube show. 2) The Cardano Foundation invited us to showcase our product to a peer group to see if they would want to implement it.\nRecordings of two Feedback Sessions:\nSession #1: Guest spot on “Cardano SpacePlace” YouTube show to hold project explanation and receive feedback. This was valuable because SpacePlace is already an established brand in the Cardano ecosystem so we received feedback from their established audience and Cardano users who came just to see us.\nhttps://www.youtube.com/watch?v=bfVOVDakK_Y\nSession #2: Presentation and discussion with Cardano Foundation and Paris Blockchain Week. PBW was exploring possibilities for voting systems and we described how the Web3Auth project could be used to allow for voting that is limited to people who register their phone numbers via SMS. This was valuable because it gave us feedback on what a real-world application is looking for.\nhttps://app.fireflies.ai/view/Summon-Web3Auth-Demo-mp4::khsQxvWX9S35UThb \nExecu",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 43500,
+      "promise": "Objective: Develop a basic functional prototype of the React hook.\nMethod: The prototype will provide full functionality for Web3Auth integration and incorporate community feedback as collected in Milestone 1.\n・Review Web3Auth functionality to understand best way to integrate React hook.\n・Review community feedback to understand specific needs for Cardano applications.\n・Create a functional blueprint of how the product will be designed.\n・Design React hook so that it optimizes integration for Cardano applications.\n\nOutput: \n・A functional blueprint on how the product is designed.\n・A prototype open-source web-hook that leverages Web3Auth to allow login to Cardano dApps with Google, Twitter, Apple, etc.",
+      "criteria": "A functional blueprint and working prototype that can integrate Web3Auth with a sample Cardano DApp, and a video of this sample DApp in use with our hook.",
+      "report": "Milestone 2 Completion Report\n\nLink to Open Source Repository: \nhttps://github.com/ADAO-Summon/useCardanoWeb3Auth \nLink to DApp Demonstration Video: \nhttps://twitter.com/SummonPlatform/status/1785060417733021944\nFunctional Blueprint:\nPurpose: \n・Allows integration of social logins (OAuth verifiers) for Cardano applications as promised to developers.\n\nPrimary Functions: \n・Authentication handling, social login integration, Cardano wallet operations as developers indicated they needed.\n\nSystem Architecture:\n・Components:\n・Web3AuthProvider: Manages authentication state and interactions.\n・useCardanoWeb3Auth: Hook that facilitates authentication processes.\n・Interactions: \n・Interfaces with web3auth.io to leverage OAuth for authentication and wallet creation.\n\nUser Interface Design:\n・The library provides backend functionalities with UI components being provided by integrating developers.\n\nData Models:\n・User Authentication Data: Stores OAuth tokens, user credentials from social providers.\n・Wallet Information: Details of Cardano wallets created or used during authentication.\n\nBusiness Rules:\n・Follows protocols for secure authentication and wallet creation using CIP-30 Wallet API.",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 36250,
+      "promise": "Objective: Release a beta version for wider testing and refinement.\nMethod: Allow users to start using the prototype after any refinements are made.\n・The beta version will be the publicly available version of the prototype. It may or may not be significantly different depending upon how effective the prototype was made.\n・A feedback forum will be established where members of the public who utilize the beta version can report feedback to the developers.\n・Examples will be provided that show how to integrate the beta version with a sample Cardano DApp.\n\nOutput: An npm package is published for usage within the wider community. Community Developers will have access to the npm package, the feedback forum, and examples of how to integrate.\n・Report to Milestone Reviewers will include all community developer materials as well as our description of how the Beta Release works and link to GitHub open-source code for review.",
+      "criteria": "Developers can leverage our npm package easily without having to go to github and leverage our source code directly.\n・Beta Release will be advertised across our network of collaborators.\n・Beta Release will be demonstrably working\n・Open-source code will be available for review",
+      "report": "Milestone 3 Completion Report\n\nWe completed the Beta Release some time ago and shared it across our network of collaborators! \nLink to Beta Release Announcement:\nhttps://x.com/SummonPlatform/status/1785060417733021944 \nWhen our Prototype was complete we labeled it as our Beta Release and shared this post across our network of Collaborators to solicit comments. Reception went well and we are currently in talks with a key Cardano institution to adopt our Web3Auth solution.\nLink to Beta Release Implementation:\nhttps://smmn.app\nWe can demonstrate that our Web3Auth integration Beta Release is working correctly because we have it running on the Summon Platform. Visit our site and log in with the \"Continue with Google\" option. This will utilize Web3Auth for a seamless connection to a wallet securely derived from the user's Google account. While we are only enabling Google login for this implementation users can take advantage of any of the Web3Auth account integrations or program their own.\nLink to Open Source Repository: \nhttps://github.com/ADAO-Summon/useCardanoWeb3Auth \nThe Open Source repository provides an nmp package to allow any Cardano developer to integrate Web3Auth services with their dApp and the source code can be inspected for quality assurance.",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 21750,
+      "promise": "Objective: Launch the final version with comprehensive documentation and support materials.\nMethod: We will update the final release with any feedback we receive from the Beta version and document it.\n・We will make note of any changes from the beta version so they can be documented in our open-source github repository and the Closeout Report\n・We will describe the basic functionality of the product and why it is valuable to open-source developers and the community as a whole.\n・We will describe how the product optimizes integration for Cardano DApps.\n・We will describe the community feedback that influenced our design.\n\nOutput: The final release, which is an npm package, github repo, closeout report, and closeout video as required.",
+      "criteria": "A stable package that can be used in the Cardano ecosystem. \n・Release will include documentation on how to incorporate with Cardano DApps.\n・Github repository will contain documentation and log of changes from pull requests.\n\nCloseout Report as required under Project Catalyst rules with project completion information and video. \n・Closeout Report will contain all components mentioned in \"Outputs - Method\" section of this Milestone.\n・Closeout Report will include a video outlining the project and showcasing how the product works.",
+      "report": "Name of project and Project URL on IdeaScale/Fund\n・Summon: Web3Auth open-source code for easy login to Cardano DApps\n・Fund11 Cardano Open: Developers\n・https://cardano.ideascale.com/c/cardano/idea/113944\n・https://projectcatalyst.io/funds/11/cardano-open-developers/summon-web3auth-open-source-code-for-easy-login-to-cardano-dapps\n\nLink to Closeout Report (Google Doc)\nhttps://docs.google.com/document/d/1mMe0J_d1OVr_KyKh7Fbw3iVTfbYZozZB-EvCv15YPqQ/\nLink to Closeout Video (YouTube)\nhttps://youtu.be/DPRSllNST2E \nComments to Milestone Reviewer\nRegarding rejection of October 22 submission of the Closeout Report, this is how we interpreted to comments:\n1) We were asked to explicitly link to documentation on how to incorporate the Summon Web3Auth React Hook into Cardano dApps. This has been done in the \"Introduction\" section.\n2) We were asked to provide this report in a Google Doc. This has been done in the link above.",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

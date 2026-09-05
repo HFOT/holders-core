@@ -1,0 +1,72 @@
+{
+  "title": "Atrium Profile Minting & Customizing - User Account NFT",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 57000,
+      "promise": "Our first milestone will include a written smart-contract that mints two NFTs. One NFT will be stored in the smart contract. The other NFT will be given to a user that creates a transaction that deposits an amount of ADA. This smart contract will allow the user to store upon minting the two NFTs.",
+      "criteria": "This milestone should be accepted once our team submits on-chain evidence of our smart contract minting these two NFTs with datums.",
+      "report": "The smart-contract has been created and is functioning on Cardano's preprod network. Below I will link multiple transactions on Cardano's preprod testnet. It demonstrates our progress by showing the smart-contract being created in one transaction, NFTs being created in another transaction, and burning those NFTs in another transaction.\nA sequence of transactions submitted to preprod testnet on the 2023-11-08 ~10:00 UTC. \n# Txs\n\n## init - Creation of smart-contract\n\nhttps://preprod.cexplorer.io/tx/8c6cf9975a46c274818ee2fc49c03dd80b56c8b0398c4acbb969a1cab9dd8666\n\n## mint - Minting account NFT\n\nhttps://preprod.cexplorer.io/tx/15e2da18d9e8837e410c08761fbeb9a1bb4c0b0d0134c363a63dd8af0889dd87\nhttps://preprod.cexplorer.io/tx/0d10d46c2da39dad0d3ddb8e245b2fd368ae5e5b7087e1bfcbb2b4455d78aaf0\n\n## burn \n\nhttps://preprod.cexplorer.io/tx/39af53f92d34578cd6d7ef2b9c309c79be9d104a7da64179706c0101b20cd558\n\n## burn \n\nhttps://preprod.cexplorer.io/tx/b340391f28348c9bc376414ab57635fabc8ceb73b7215da2a45258cf5ffaab3d",
+      "kinds": [
+        "chain"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 57000,
+      "promise": "This milestone will output a simple unstylized front-end, allowing our team to mint User Account NFTs on one of Cardano's testnets. Each User Account NFT will have a matching NFT in the Stoa smart contract. This matching NFT will store datums based on user input in the front-end.",
+      "criteria": "This milestone should be accepted, given that there's an unstylized front-end that will be integrated with the smart contract on one of Cardano's testnets in the next milestone.",
+      "report": "We've built a unstylized front-end that you can use to create the smart-contract, mint the two NFTs, and include the User datums within the NFTs. \n\nWe've also recorded a video that shows these actions happening on Cardano's preview network. You can view the video here: \nhttps://www.dropbox.com/scl/fi/wuuem46zrshae75x084c8/simplescreenrecorder-2023-12-16_23.41.05.webm?rlkey=sq85nnkxqvs57bqlo6m7dds2t&dl=0\n\nHere is the transactions that match up with the video on-chain:\nhttps://preprod.cexplorer.io/tx/1ddff65c939e0bfe927dffffece74b4daaa3042437d5ab84529c9ccd83467069\nhttps://preprod.cexplorer.io/tx/4e4bf15b23a9907422ba56ff2f8fe4881f4537503af2de219242b3c7774c01fe\nhttps://preprod.cexplorer.io/tx/f30bae59fbd2e4227faa1b552123b9353a8fb25ccbbbf143d8aabe0de1f6af6b\nhttps://preprod.cexplorer.io/tx/d68900db419d2a3bae5f53c979c69dbd698f09fffd75d44c2003452659fb96e0\nhttps://preprod.cexplorer.io/tx/287876e506fb1e39a320279a0fce4bd845ac52c4ca5e0e45579852073797cdb6\nhttps://preprod.cexplorer.io/tx/2e3ade54e24d9b019e2bb188aace83566c99247e986b5efb2c23ac651266fb6f",
+      "kinds": [
+        "chain",
+        "other"
+      ],
+      "links": 7
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 32500,
+      "promise": "This milestone will output a stylized front-end that allows people to input datums in text forms to mint User Account NFTs on one of Cardano's testnets.",
+      "criteria": "This milestone should be accepted, given that our team creates a stylized front-end integrated with the written Stoa contract on a Cardano testnet.",
+      "report": "This was a huge milestone for our team. We've connected the smart-contract on Cardano's preview network to our front-end to allow minting of the CIP-68 NFTs. When a user comes to mint this NFT they select a username that can't be minted again. They also chose unique identifiers that are stored on-chain in datums.\n\nHere is a link to the minting video on our front-end: https://drive.google.com/file/d/1UP6Z2UtzWgOJzdghwindDTpajCpPFIWA/view?usp=sharing\nYou can see the minting for of the NFT on-chain with this transaction: https://preview.cexplorer.io/tx/07ea3aca28d313f8fe4fc208922fdede953111a3a814d838d292dff7a2755fb7\nHere is a link to an NFT minted by the smart-contract:\nhttps://preview.cexplorer.io/asset/asset14fs7fw5l0l3knv0wvrup5m2wss9ydh53k03mah",
+      "kinds": [
+        "chain",
+        "doc"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 15000,
+      "promise": "The Stoa smart-contract needs to be tested to see if any issues arise. We will gather 10 different testers to mint 15 different NFTs with user-defined datums on our front-end interface. We'll have all of these testers submit a feedback form that go over any issues that arise from the testing environment.",
+      "criteria": "This milestone should be accepted given that we bring in 10 people to mint 15 different NFTs with their own datums on Cardano's preview network.",
+      "report": "For this milestone we created a new smart-contract with some small changes geared to make the UI/UX better.\nYou can view the transaction that created the new smart-contract on Cardano's preview network here: https://preview.cexplorer.io/tx/f5b9375aaf661bf032ffabc189aaf07a54d2889bf6c83c0417a2abba7a897f6c\nYou can view two minting transactions for two NFTs here:\nhttps://preview.cardanoscan.io/transaction/50a4d844faeb19d8049cfd5543a4c01f16119b7fa37ceecbaf59566a812772ba\nhttps://preview.cardanoscan.io/transaction/e90740c5b70bb5ac792ff229d2c50eadb3273874ca0727477716fd03b1f73e9c\nWe let a small group of users in to find any initial bugs and gather feedback so that we could fix those bugs, and improve UI/UX.\nSo far there have been 222 NFTs minted using the smart-contract on Cardano's preview network. This smart-contract using CIP-68 and when a user mints their NFT, a matching NFT is created in the smart-contract that holds the users datums. You can view the amount of NFTs in the smart-contract here, this correlates with the amount of NFTs that users minted:\nhttps://preview.cexplorer.io/asset/asset142h6jscvqadlf4yynsarj465svxj897g0n5l38\nWe've asked the users to give feedback using a google for, this is a link to the form that users submit to:\nhttps://forms.gle/1HcxLEy6Ja6v7LxKA\nI've compiled all of the user feedback so far in this google sheet, I've removed email addresses to protect user data:\nhttps://docs.google.com/spreadsheets/d/1V9P3cL2NPlVkbZr_QWWvV2QUFoS1PdtvxdENrFyQggg/edit?usp=sharing",
+      "kinds": [
+        "chain",
+        "doc",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 28500,
+      "promise": "We'll launch the Stoa smart-contract in Atrium's beta that exists on the preview network. The new front-end UI will provide a better user experience, offer predefined datums you can select, and minting directly from our application. We're going to bring in 50 different Cardano users to test the user experience, determine if there are any issues with our backend integration, and to submit feedback forms.",
+      "criteria": "This milestone should be accepted in the case that we integrate our smart-contract with our new stylized front-end interface, bring in 50 users to test the smart-contract/front-end, and allow those users to mint NFTs using the Stoa contract.",
+      "report": "Project close-out report updated based on milestone reviewer submitting a link to the Catalyst guidelines.\nTo close out this Catalyst proposal we've launched the smart-contract on Cardano's preview network. Over 1,000 users have now interacted with this smart-contract on our front-end interface. We've gathered feedback from those users, and fixed a lot of bugs. You can mint a Profile NFT using the Stoa contract now by creating a preview network wallet, and connecting your wallet here: https://alpha.atrium.io\nWe've also created a close-out report video, and a close out report in text format.\nClose out report(text): https://docs.google.com/document/d/1YPuhSxD2cCZa7BhQBGpOAIfW_3a_EDhA1lSrzmWRXPw/edit?usp=sharing\nClose out report(video): https://youtu.be/ZXSzgZNzSLM\nLink to smart-contract on Cardano's preview network: \nhttps://preview.cardanoscan.io/address/addr_test1wrz9pvlzrv0f3w64n0a67wulm80kp47lncxwvt8d645396slmagvp\nYou can view this link to see that over 50 users have minted Profile NFTs. You can verify that it's the right kind of transaction by seeing an output with an NFT in it. Over 1,000 NFTs have been minted using this smart-contract, and you can verify this using the link.",
+      "kinds": [
+        "chain",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

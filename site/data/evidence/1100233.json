@@ -1,0 +1,31 @@
+{
+  "title": "Plutus Wallet Connector (CIP-30 expansion)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 8650,
+      "promise": "The output of this milestone will be a pull-request to:https://github.com/cardano-foundation/CIPs The request will contain the full specifications for the new connector that will allow daps to connect to multisig wallets.",
+      "criteria": "The specifications for the API must be: A) Complete: This connector must allow all operations currently possible with the CIP-30 connector except for ( api.signTx() and api.signData()), the former will be replaced with an plutus wallet equivalent. Aditionaly the connector must provide endpoints that give the connecting dApp the information required to create a transaction that conforms to the connected mulisig wallet specifications.",
+      "report": "The CIP for the Plutus-wallets has been created and assigned a number .\nTo create a New CIP, we need to fork the repository and create it under our fork, the changes have not yet been merged into the CIP repo and live locally on my fork while we work on the reference implementation and dApp support. Since I am working on multiple CIPs keeping track of the commit history can cause this warning since each CIP needs to be on a separate fork, the extensive changes to facilitate all Plutus wallet types and delays while waiting for PlutusV3 support form upstream libraries does not help.\ntldr nothing to worry about, with the reference implementation done it will be merged and marked active at the next CIP editors call .\nWe had to do through several iterations to ensure we cover all known smart wallet solutions. Including Wallets controlled by BTC or ETH keys, smart multisig, inheritance solutions and account abstractions \nhttps://github.com/cardano-foundation/CIPs/tree/034d7bc359711620d9fbd088fa6cac779c66acd6/CIP-0141",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 13500,
+      "promise": "The output of this milestone will be implementing the new connector inside the BroClan chrome extension. \n\nhttps://chromewebstore.google.com/detail/bro-clan-companion-extens/mdnadibcilebgfdkadlhegdpgpglljmn",
+      "criteria": "The application must be available in the chrome store and implement the new connector in full.",
+      "report": "The reference implementation for CIP-141 has been completed in the companion Extension \nhttps://chromewebstore.google.com/detail/bro-clan-companion-extens/mdnadibcilebgfdkadlhegdpgpglljmn\nYou can see a demonstration of the mock app in the following video\nhttps://www.youtube.com/watch?v=Qi9JFEu4OOM\nIn this video we demonstrate the BroClan Smart mutlisig wallet connecting via the companion extension to a mock up, inside this mockapp we are able to call the the CIP141 endpoints, craft a valid transaction for the connected wallet pass that transaction to the multisig wallet and query the status of the transaction as signatures are gathered. \nThe mockup is available at : \nhttps://github.com/leo42/CIP-30-Extencion-MockApp\nTo aid in developers in using this CIP we created an additional NPM library cip141-lucidevolution allowing developers to create lucid-evolution transactions without needing to be familiar with all the intricacies of Plutus wallets",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

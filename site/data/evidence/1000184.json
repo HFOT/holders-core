@@ -1,0 +1,56 @@
+{
+  "title": "Tor hidden service for Blockfrost",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "In this milestone, we will generated a tor address.",
+      "criteria": "A public key that links to a tor generated address.",
+      "report": "Sadly, we found out it is not possible to generate the address from the public key and that you need the private key for it instead. So, clearly, we cannot share it with the public as that would compromise the service. However, as this was a holder milestone, it is easy to verify, because the server is already up!\nI won't be creating new content on how to generate one, as there are hundreds of guides on how to do that, so for example if anyone is interested on generating their own and verifying the address, is the guide we have used. https://opensource.com/article/19/8/how-create-vanity-tor-onion-address",
+      "kinds": [
+        "other"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 20000,
+      "promise": "In this milestone, we will setup the Tor proxy server that will host the tor service.",
+      "criteria": "A server is running.",
+      "report": "The host is up and running. The screenshot https://imgur.com/a/ZJeLVkK",
+      "kinds": [
+        "other"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 20000,
+      "promise": "The tor service is going to be setup in beta mode, not yet production.",
+      "criteria": "Anyone on the the tor network will be able to reach Blockfrost.",
+      "report": "The service is live! Yay!\nHere is a simple video showing how to access Blockfrost using the Tor network https://www.youtube.com/watch?v=tQUyK18pcpU",
+      "kinds": [
+        "video"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 20000,
+      "promise": "The service for Tor endpoint will be released with the blockfrost.dev portal with setup instruction on how to use it.",
+      "criteria": "Clear documented way and service that is working.",
+      "report": "The service is live and documented.\n・Video showing how to access Blockfrost using Tor\n・Close out report\n・Close out video\n\nAlso of interest:\n・Blockfrost developer portal on how to access it\n・Support page for the Tor integration (this is a live page where we add new issues and questions as they came up from the users)\n・Twitter announcement of the service",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

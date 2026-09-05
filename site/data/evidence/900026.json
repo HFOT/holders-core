@@ -1,0 +1,61 @@
+{
+  "title": "BLOCKTRUST identity wallet (PRISM)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 13500,
+      "promise": "-- updated on 2022-11-05 to address 30% rule --\n-- updated on 2022-10-27 to address all comments. Timeline moved back due to the funding delays -- \nThe Proposal is a continuation of a PoC of a BrowserWallet. Thus, we won't be demonstrating features which are already achieved in the PoC. The video is here (https://blocktrust.dev/IdentityWallet). In many aspects, it is a redesign and the milestones are mostly technical. While the outputs and the evidence are very specific, they are part of a major architectural overhaul, bringing the PoC on track to be production ready. \n(A) Migration to Manifest v3: The PoC was only able to run with Manifest v2. V3 brings major changes and we'll have to explore the technical limitations and redesign parts of the app. For our platform, there is nearly no documentation available, and this step might bring unforeseen problems. \n(B) The wallet will later be offering different features depending if the wallet is displayed as a pop-up or as a full-screen application. Establishing communication between the full-screen version of the app and the popup-version is necessary. \n(C) While re-architecting the wallet, we will also be implementing logging and an ac",
+      "criteria": "A) A success would be that the migration to v3 is possible without major delays and no yet undiscovered problems appear. \n(B) The wallet should run in a popup window and also in full-screen mode. Switching between these modes should be seamless, without the loss of information. \n(C) Logging and a activity history has been implemented and there is a page inside the wallet to view the history. \n(D) We have looked at the new service worker feature and determined if it is feasible for long-running task",
+      "report": "We present four small videos, combined into a single video for easier viewing.\nThe videos shows all the required evidence for (A), (B), (C) and (D)\nhttps://www.youtube.com/watch?v=z1JFYxqNM3I&ab_channel=LivelyGig",
+      "kinds": [
+        "video"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 13500,
+      "promise": "(A) To automate the process of delivery, we'll need to have a build and release pipeline. \n(B) The PoC of the wallet could only handle a single DID. We'll be adding functionality to create and handle multiple DIDs in the wallet. \n(C) To be aware of problems which might occur on other users browsers, we need first feedback from alpha users. Therefore we'll be providing a way to download and test the MVP wallet for early testers. \n(D) Based on the goal of handling multiple DIDs, we have to rethink the UX. There will be a major overhaul of how the app is presented to the user. E.g. different user flow, new menus, etc. \n(E) We’ll provide features to export, backup and restore DIDs and VCs. While reworking the storage mechanism, we’ll also reevaluate the current encryption mechanism and compare our existing security measures to existing crypto-wallets.",
+      "criteria": "(A) Having a working CI/CD pipeline for the wallet. \n(B) A interface where the user can create and manage multiple DIDs. \n(C) We are able to provide a version of the wallet anybody could install in their browser (in development mode), without major problems. \n(D) The user-interface is different from the existing wallet video. This will mainly show in new menus and the ability to handle multiple DIDs. \n(E) A user is able to export the wallet (including DIDs and VCs) and is also able to import them. The backup procedure is explained in text to the user. We can comfortably say, that we believe th",
+      "report": "(A) We created a CI/CD pipeline for our wallet. This allows us to automatically build and test the wallet for each new release. While the setup of a CI/CD pipeline is by itself not usual or special, it is a required step which took some work. Ed is demonstrating and explaining the pipeline in a video: https://www.youtube.com/watch?v=qQhB-29cSRw&ab_channel=LivelyGig\n\n(B) We made a major change in the wallets architecture to support multiple DIDs. The previous architecture was focused solely on supporting just a single DID (which was good enough a proof-of-concept). Ed demonstrates the new feature in this video and also explains why it was such an important work item: https://www.youtube.com/watch?v=rhN2ug0AMWU&ab_channel=LivelyGig\n\n(C) We created a GitHub Repo for everyone to download and test the newest release of the wallet. You’ll find it here, with instructions on how to install the wallet: https://github.com/bsandmann/blocktrust-identity-wallet\n\n(D) With the requirement of having multiple DIDs, we also had to change the UI and the workflow of the wallet. As this is not just a change in the ‘backend’ of the wallet but obvious to the user, we do not provide any additional evidence that changes were made. If in doubt, please compare an earlier walkthrough of the wallet with the video provided in (B).\n\n(E) This section consists of two parts. First, we created a backup & restore feature in the wallet. This allows the user to back up the complete wallet contents (Seed phrase, DIDs, Verifiable Credentials) into an encrypted data object. When opening a new wallet (e.g. on a another device) the user can then use the newly created “restore” feature to import the encrypted wallet. After importing, the user is redirected to unlock the encrypted wallet with his password. A simple description of the feature with screenshots can be found here: https://blocktrust.dev/downloads/Progressreport_Identity_Wallet_February_2023.pdf\nThe second part of this section is a blog post descri",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 5,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 9000,
+      "promise": "(A) We would like to provide a way for users, to use the wallet, to log-in into a website using a DID. To accomplish that, we’ll provide JS code snippets which can be integrated into a website by the developers. \n(B) Signing-in is a very specific process. We would also provide a more general functionality to sign a request from a website with the private key of a DID. \n(C) Also, we would like to add functionality inside the wallet to share credentials with a website. \n(D) The interaction between identity-wallets and websites has to be standardized at some point. Also, the import and export functionality has to be identical between different Cardano-SSI-Wallets. We’ll engage with other wallets-teams to find common ground. \n(E) Before finishing the project, we plan to conduct a security/code review.",
+      "criteria": "(A) A small JavaScript snippet is available for developers to integrate into their website to allow the features of (B) and (C). \n(B) The communication between a website with the SDK and the wallet works reliable without any hacks and workarounds. \n(C) Same as (B). \n(D) We hope to find a common standard between the different teams. This may happen only partially at first. \n(E) The security/code review finds no major issues. If so, the issues will be resolved.",
+      "report": "---------\n PoA was intially submitted in the middle of June 2023. Due to remarks in the the review from IOG we submitted a change request which was accepted. This PoA is the same as in June but should now pass due to the small changes.\n---------\n(A) Initially, we aimed to offer developers an SDK for integrating our wallet into their websites, essentially serving as a dApp-Connector for the identity wallet. However, following thorough research and evaluation of various solutions, we decided to utilize PRISM's upcoming enterprise feature, 'PRISM onboard and authenticate'. This service, designed to replace the need for an SDK, offers HTTP endpoints instead. Despite some limitations, we adopted this approach to prevent ecosystem fragmentation and to find a common solution.\nNow, instead of an SDK, developers need to integrate various JavaScript snippets. While not overly complex, this task is not trivial either. Therefore, we've created documentation that includes a general overview of website interaction (https://identitywallet.blocktrust.dev/websiteInteraction/Overview), a walkthrough for non-developers (https://identitywallet.blocktrust.dev/websiteInteraction/AtalaPrismSignIn), and detailed technical documentation for developers (https://identitywallet.blocktrust.dev/developers/AtalaPrism), which includes the necessary JavaScript snippets.\n\n(B) + (C) We've produced a video demonstrating our wallet's sign-in process and the website prepared to support the PRISM onboard and authenticate service. You can view the video here: https://youtu.be/X1yAkg4Qygc.\n\n(D) Over recent months, we've been in dialogue with several parties attempting to develop their own sign-in solutions. It became apparent that aside from our and PRISM's solutions, there are few functional DID-based solutions not just theoretical or crypto-based. This was contrary to our initial expectations when we secured funding last year. However, our research and initial implementation of the PRISM onboard and auth",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 9000,
+      "promise": "A working browser-extension-wallet for Atala PRISM. It can be downloaded in a web store and installed by any user. The wallet allows the user to create a single (or multiple) DIDs and receive credentials (VCs). It offers the functionality to back up and restore credentials, as well as log-in with a DID. We also will be building a website explaining the wallet and provide a JS SDK with documentation for developers to integrate it into their website to offer the log-in functionality to their users. These are just the minimum features we are committed to regarding the final milestone. Additional features will be added along the way. To finish the project, we'll provide the link to the wallet-website, the link to the developer documentation and the JS-SDK. Also we'll provide links to the different webstores which listed the wallet.A at least 5-min long videos, showing all the major features of the wallet.",
+      "criteria": "(A) The wallet will be submitted to the web stores of the major browser-vendors for review. We do believe that we are able to deliver a good and stable product in this timeframe. But a wallet is a complicated and ever-changing product. Also, the release is pretty new and likely won’t be able to collect extensive feedback from the first users in this timeframe. For this reason, we might be labeling the wallet as a “developer-release” for the first months. \n(B) A website for the wallet is created (documentation, explanation). This page serves as an introduction to the blocktrust identity wallet",
+      "report": "(A) The wallet was submitted and accepted by the webstore for the Microsoft-Edge-Browser as well as for the webstore for Google-Chrome. The initial version was 0.2.0, but we are still updating and submitting updates. Here are the links:\n https://microsoftedge.microsoft.com/addons/detail/blocktrust-identity-walle/kbfjmbgolhkklfccbklejedllglejbfp\n https://chrome.google.com/webstore/detail/blocktrust-identity-walle/lmnkhjcebkjmcgncgemdkbkmmbdkhnnk\n(B) The link to the website: https://identitywallet.blocktrust.dev/\n The demo video on the main-page walks through the main features of the wallet.\nAn additional videos and Youtube-shorts can be found on our blocktrust page: https://blocktrust.dev/identitywallet and the Youtube-channel: https://www.youtube.com/@BjornSandmann/videos\n(C) The website serves as documentation for developers, especially the sections for Developers.\n(D) The final explanation can be found here, which demonstrate all mayor features: https://www.youtube.com/watch?v=EK84atFCBqw",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    }
+  ]
+}

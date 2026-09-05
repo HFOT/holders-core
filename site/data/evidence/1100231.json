@@ -1,0 +1,64 @@
+{
+  "title": "Plutus Bench - Test, Measure, Inspect Smart Contracts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "In the first milestone, a matching team is assembled and a vision for the project is outlined.\n・Project Inception and Team Assembly: Establishing a clear vision for Plutus Bench and assembling a team of skilled developers and blockchain experts who are proficient in Python and understand the Cardano smart contract environment.\n・Market Research and Community Feedback: Conducting thorough market research to understand the needs of developers using Cardano smart contracts and gathering feedback from the community to ensure Plutus Bench aligns with their requirements.\n\nAt the end of this milestone a document will be provided that clearly outlines the demands for Plutus Bench based on the community and market research. A clear set of requirements is what needs to be present for this milestone.",
+      "criteria": "The documents outlined in the Evidence section are published (i.e. publicly available) and complete.",
+      "report": "We have published the full report for the first Milestone in a publicly accessible GitHub repository:\nUpon request, this report now also includes an overview over the project team.\nhttps://github.com/OpShin/plutus-bench/blob/master/report/report-milestone-1.pdf\nMoreover, a simple twitter thread details the exact findings and plans for the next milestones:\nhttps://twitter.com/OpShinDev/status/1769339201126904063",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 39000,
+      "promise": "The second milestone will cover a longer stretch of work that covers core functionalities, developed in lockstep with the design and documentation.\n・Framework Design and Documentation: Designing the architecture of Plutus Bench, ensuring it is scalable, user-friendly, and adaptable. Simultaneously, developing comprehensive documentation that is accessible to developers of varying skill levels.\n・Development of Core Functionalities: Building the core functionalities of Plutus Bench, which includes the mock environment setup, testing and benchmarking tools, and integration capabilities with different Cardano smart contract languages.\n\nThe outcome of this step will be an MVP for running tests for Cardano Smart Contracts and proper documentation, based on which developers can provide feedback on the platform usability.",
+      "criteria": "A first version of the Plutus Bench framework should be presented as described in the evidence section, notably publicly available and referenced here, including documentation and code parts.",
+      "report": "We have submitted a new and updated version of the milestone report that now also features a description of the application structure and the design decisions:\nhttps://github.com/OpShin/plutus-bench/blob/95c50cb8b9370ebc76f23327bce64620b49fc1d1/report/report-milestone-2.pdf\nMoreover, we have implemented a proof-of-concept implementation of the proposed BlockFrost mock-up system. Running a fake blockfrost server is very straightforward and described in the project README:\nhttps://github.com/OpShin/plutus-bench/blob/95c50cb8b9370ebc76f23327bce64620b49fc1d1/README.md#installation-and-running\nFor the convenience of users, we provide a hosted version of the project at mockfrost.dev:\nhttps://x.com/OpShinDev/status/1779514985342759148\nhttps://mockfrost.dev/redoc\nThe project is equipped with test cases that demonstrate usage of the MockFrost API internally. These test cases are automatically run when updating the project on GitHub and thus ensure stability of the project. The tests also serve as examples on how users can interact with the platform.\nhttps://github.com/OpShin/plutus-bench/blob/master/tests/test_gift.py\nA detailed informational video that demonstrates the usage of this MWP has been published on the official and public OpShin YouTube channel, accessible through the link below:\nhttps://youtu.be/w68iHffWfXw",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "The third milestone covers a first release iteration and continuing development on the project.\n・Alpha Release and Initial Testing: Pitching an alpha version of Plutus Bench for limited user testing. This phase focuses on identifying bugs, assessing usability, and making necessary adjustments based on initial user feedback.\n・Community Engagement and Collaboration: Engaging with the Cardano developer community through forums, social media, and developer conferences to promote collaboration, gather feedback, and foster a user base for Plutus Bench.\n・Beta Release and Wider Testing: Launching a beta version of the framework for broader public use. This stage involves more extensive testing, bug fixing, and feature enhancements based on user feedback.\n\nThe outcome is a solid platform that allows for developers to run and debug contracts. Ideally, it will come with some implementations of contracts in sample languages.",
+      "criteria": "The improved versions (alpha and beta) should be released and publicly available in a GitHub repository of the project. There should be at least one public announcement (i.e. tweet), showcasing the project and rallying user feedback.",
+      "report": "We have completed this milestone successfully by implementing the beta release of Plutus Bench.\n\n1) The alpha release was conducted internally and with select developers. We extended the support of Plutus Bench to PlutusV1 and document the setup and usage on the main project page: https://github.com/OpShin/plutus-bench\n\nA detailed video for archival purposes, showing how the test framework operates is presented here: https://youtu.be/6BrQsINly-U\n\n2) We discussed the implementation with our community, calling out for new test users and feedback: \n\n1. We published on X: https://x.com/OpShinDev/status/1884997466321215498\n2. We created a longer blog-like entry providing a walkthrough on the reddit Cardano-Developer community: https://www.reddit.com/r/CardanoDevelopers/comments/1j2irs1/introducing_mockfrost_plutusbench_for_endtoend/\n3. We posted in our Discord community: \n - Post link: https://discord.com/channels/1077870759667580929/1081506049380585492/1343612027020513302\n - Screenshot at https://snipboard.io/Jo2tL1.jpg\n4. Niels Mündler presented MockFrost at the Cardano Buidler Fest in Tolouse. For reference, please check the Agenda (https://buidl.2024.cardano.org/agenda/) for the event \"Cardano On-chain Programming Landscape (PlutusTx, Aiken, Scalus, OpShin, Plu-ts, Marlowe)\".\n5. OpShin was presented at an Emurgo Workshop: https://www.youtube.com/watch?v=S-GgkDsUBpQ\n6. We published a Walkthrough on how to adapt projects for MockFrost on our YouTube Channel: https://youtu.be/B2wZd1xDSMU\n\n3) The implementation was extended to feature a Continuous Integration that demonstrates stability of the implementation: https://github.com/OpShin/plutus-bench/actions/runs/12769050352/job/35590755745",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 41000,
+      "promise": "In the final step we will consult external opinions on checking specific topics and adding their thoughts or test cases concerning known vulnerabilities and problems.\n・Security Audits and Compliance Checks: Conducting thorough security audits and ensuring compliance with relevant standards and best practices in blockchain development to ensure the reliability and security of Plutus Bench.\n・Ongoing Support and Updates: Providing continuous support to users, regularly updating the framework to keep up with the evolving Cardano platform, and incorporating new features based on emerging trends and user requirements.\n・Expansion and Scalability: Exploring opportunities to expand Plutus Bench’s capabilities, such as supporting additional smart contract languages or integrating advanced testing features (i.e. property based testing), to ensure it remains a valuable tool in the rapidly evolving blockchain landscape.\n・Community-Led Development and Open-Source Contributions: Transitioning to a community-led development model where the open-source community can contribute to the continuous improvement and evolution of Plutus Bench.\n・Project closeout report and video: As specified in the Cataly",
+      "criteria": "There should be a publicly accessible repository accompanied by a website that outlines the features of the project and goes into more detail on how to run the Backend for this benchmark. These are two seperate things: 1) a well documented public repository and 2) a website (akin to https://github.com/opshin/opshin and https://book.opshin.dev). These repository and website contain all evidence outlined in the Evidence section.\nMore detailed links to specific parts of the project are detailed in the PoA submission. Moreover the closeout report and video are shared in the PoA.",
+      "report": "We are glad to report that our project now came to completion. Please find our concrete outputs for the final milestone below:\n\nSecurity audits and compliance check:\nPlutus-Bench went through a security audit and has addressed all reported issues on subsequent updates to the code base. We publish the security audit after all issues have been resolved:\nhttps://github.com/OpShin/mockfrost/blob/main/report/security_audit.pdf\nThe fixes to resolve the reported issues are visible in this pull request:\nhttps://github.com/OpShin/mockfrost/pull/18\n\nOngoing support and updates, Community-Led Development and Open-Source Contributions:\nWe extended the framework to support PlutusV1, where previously we only supported PlutusV2.\nWe are currently working on supporting the PlutusV3 updates to the Smart Contract language and continue to fill user requests on the repository.\nAll our code and reports are publicly available, with open issues from the community and pull-requests transparently shown at:\nhttps://github.com/OpShin/mockfrost\nUnfortunately, there have been no requests from developers since the release of the product yet, so we can not demonstrate discussion about open issues or new pull requests. We remain committed to resolve any requests from the community towards the project.\n\nProject website and report on Expansion and Scalability:\nWe created an easily readable website, outlining the project and containing additional explanations on how to use and set up the project:\nhttps://opshin.github.io/mockfrost/\nWe updated the milestone report from Milestone 2 to contain our efforts exploring expansion and scalability opportunities:\nhttps://github.com/OpShin/mockfrost/blob/main/report/report-milestone-4.pdf\n\nProject Closeout Report and Video:\nWe assembled a complete report following the Catalyst Guidelines and made it accessible through this link:\nhttps://docs.google.com/document/d/1eggN0OJXs3jP5HWolku2PGn0r2h-wQs3S8WlQ069mmg/edit?usp=sharing\nMoreover we recorded and published a cl",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "title": "Plutus Cheatsheet Generator",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 4500,
+      "promise": "1.Web Tool MVP\n・React web application with snippet browsing interface\n・20 core Plutus snippets validated on Cardano testnet\n・PDF/Markdown export functionality\n・Basic search functionality (normal search functionality without filter option)\n\n2.GitHub Repository\n・Public repository with MIT license\n・Contribution guidelines\n\n3. Initial Documentation\n・Setup instructions for platform\n・Instructions to run snippets on testnet\n・User guide for browsing UI and exporting snippets",
+      "criteria": "1. Web Tools MVP\n・User can able to access the react web application and can browse snippets\n・All 20 snippets executed successfully on Cardano testnet\n・Users can browse snippets and export PDF/Markdown without errors\n・Search functionality returns correct results for snippet title or ID\n\n2.GitHub Repository\n・Repository is publicly accessible\n・MIT license applied\n・Contribution guidelines are complete and clear\n\n3. Initial Documentation\n・Documentation publicly available\n・Includes setup instructions, running snippets, and UI usage guide\n・Versioned documentation supports at least Plutus V1/V2",
+      "report": "Plutus Cheatsheet Generator is a web-based platform that enables Cardano developers to browse, search, and export executable Plutus smart contract snippets. The core platform includes a React web application with basic search functionality, PDF/Markdown export, and 20 Plutus snippets validated on Cardano test networks.\nEvidence\nLive Site: https://plutus-cheatsheet.vercel.app/\nGitHub Repository: https://github.com/kwired/Plutus-Cheatsheet-Generator\nDocumentation: https://github.com/kwired/Plutus-Cheatsheet-Generator/tree/release/v1.0.0/docs\nLogs, Screenshots, and PDF Export Evidence: https://github.com/kwired/Plutus-Cheatsheet-Generator/tree/release/v1.0.0/evidence/milestone1\nVideo Demonstration: https://youtu.be/zhrQRF5fVn0",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 4500,
+      "promise": "1. Build and develop more advanced features for the web:\n・ Version tagging system for Plutus V1/V2/V3 script compatibility\n・ Enhanced search with filters (by complexity, use-case, Plutus version)\n・ 30 additional community-contributed snippets (bringing total to 50+)\n・ PDF export \n\n2. GitHub repository with information about the code deployed, related tests with results of test information\n3. Discord bot for community notifications and update alerts\n4. Platform Engagement",
+      "criteria": "1.Web Tool - Advanced Features\n・At least 30 community-contributed snippets merged\n・Version tagging correctly categorizes all existing and new snippets\n・Enhanced search reduces average snippet discovery time by 60% (by providing the option to filter with use-case, plutus version, etc)\n・The current code snippets should be exported on the PDF. \n・Platform reaches 200+ weekly active users (Google Analytics verified)\n\n2. GitHub Repository Updates\n・Repository URL with updated code, tests, and results(All new snippets and features include automated tests that pass successfully, with test results avail",
+      "report": "Live Site: https://plutus-cheatsheet.vercel.app/\nGitHub Repository: https://github.com/kwired/Plutus-Cheatsheet-Generator\nTest result : \n・https://github.com/Kwired/Plutus-Cheatsheet-Generator/actions/runs/23982286996#summary-69948449982\n・https://github.com/Kwired/Plutus-Cheatsheet-Generator/blob/release/v1.0.0/evidence/milestone2/screenshots/test-result.png\n\nGitHub contribution graph: \n・https://github.com/Kwired/Plutus-Cheatsheet-Generator/graphs/contributors\n・https://github.com/Kwired/Plutus-Cheatsheet-Generator/blob/release/v1.0.0/evidence/milestone2/screenshots/Commits%20over%20time.png \n\nGitHub pull logs:\n・https://github.com/Kwired/Plutus-Cheatsheet-Generator/pulls?q=is%3Apr+is%3Amerged\n・ https://github.com/Kwired/Plutus-Cheatsheet-Generator/blob/release/v1.0.0/evidence/milestone2/screenshots/Merged.png\n\nGitHub CI : https://github.com/Kwired/Plutus-Cheatsheet-Generator/actions/runs/23982286996\nDiscord: \n・https://github.com/Kwired/Plutus-Cheatsheet-Generator/blob/release/v1.0.0/evidence/milestone2/screenshots/disc1.png\n・https://github.com/Kwired/Plutus-Cheatsheet-Generator/blob/release/v1.0.0/evidence/milestone2/screenshots/disc2.png\n\nDiscord Video: https://youtu.be/I6a_ia0kDw0?si=99FXqvqJWfvlmgem\nGoogle Analytics reports: https://github.com/Kwired/Plutus-Cheatsheet-Generator/blob/release/v1.0.0/evidence/milestone2/pdf/users_Traffic_acquisition_Session_primary_channel_group_(Default_Channel_Group).pdf",
+      "kinds": [
+        "code",
+        "live",
+        "video"
+      ],
+      "links": 26,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 6000,
+      "promise": "1.Final Close-Out Report\n2.Final Close-Out Video\n3.Interactive Tutorials & Advanced Web Features\n・Tutorials to help users debug the Plutus scripts independently\n・Advanced search and filtering (by use-case, Plutus version)\n\n4.Security Audit\n・Completed security audit of platform\n\n5.Documentation Portal\n・Full documentation hosted on GitHub Pages, enabling users to learn and explore independently",
+      "criteria": "1.Final Close-Out Report\n・Report is publicly available(follow the form and content requirements of the community)\n\n2.Final Close-Out Video\n・Video is publicly available(follow the form and content requirements of the community)\n\n3.Interactive Tutorials & Advanced Web Features\n・Tutorials accessible via YouTube, help 90% of users debug Plutus scripts successfully\n・Advanced search and filter functions operate correctly\n\n4.Security Audit\n・Audit confirms zero critical issues\n\n5.Documentation Portal\n・Portal attracts 1,000+ weekly users (verified via GitHub Pages analytics)\n・Full documentation hosted",
+      "report": "1.Final Close-Out Report\n・https://drive.google.com/file/d/1mpuDvqNk-ajyHp3HIJmTFY7bpJsnblqJ/view?usp=sharing\n\n2.Final Close-Out Video\n・https://youtu.be/ckdKe22H7n8\n\n3.Interactive Tutorials & Advanced Web Features\n・https://youtu.be/uCgmtrO7zQk\n・https://youtu.be/ir_ZputkrgE\n\n4.Security Audit: https://github.com/Kwired/Plutus-Cheatsheet-Generator/blob/main/evidence/milestone3/Security_Audit_Report.pdf\n5.Documentation Portal\n・https://github.com/Kwired/Plutus-Cheatsheet-Generator/blob/main/evidence/milestone3/users_Traffic_acquisition_Session_primary_channel_group.pdf\n・https://kwired.github.io/Plutus-Cheatsheet-Generator/",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    }
+  ]
+}

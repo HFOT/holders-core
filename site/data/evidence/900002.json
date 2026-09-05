@@ -1,0 +1,54 @@
+{
+  "title": "A standard for token verification",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 3300,
+      "promise": "We received the feedback from the community and can begin with the development phase",
+      "criteria": "The final roadmap showing all necessary individual steps",
+      "report": "The goal for this first milestone was to reach out to the community, collect feedback and provide an updated plan for the token verification project.\n\nThe acceptance criteria in the statement of milestones was \"The final roadmap showing all necessary individual steps\".\n\nThe evidence is already in the Monthly Report from November and the updated Statement of Milstones. Here is a quick summary:   \n\nBased on feedback from the Cardano DeFi Aliance and Wingriders we decided to add following features to our initial token verification proposal.\n\n1. Frontend:\n - Submit your own token for verification\n - Search for the verification status of a token\n - Register as a verifier\n2. Decentralize signage of a token\n - Allow multiple signatures on a token\n - Provide a list of mappings between institution and signatures/vkeys\n - Revocation (not only signing own tokens -> level of trust may change)\n3. Onchain usage of the registry content\n - A trusted institution submits a utxo with a datum, which contains a KV map with the fields of the token registry\n - Institutions can revoke verification by consuming utxo ->  cancel-only contract for storing the utxos\n\nBased on this feedback we decided to update our Roadmap which is reflected in the updated Statement of Milestones. Here are the steps:\n\n1. Community outreach and project outline (done)\n2. Development focusing on the smart contract (in progress, due in January)\n3. Ongoing backend and frontend development (outstanding)\n4. Completion of the token verification project (outstanding)",
+      "kinds": [],
+      "links": 0
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 6233,
+      "promise": "Finished smart contract development",
+      "criteria": "Evidence for the finished smart contracts",
+      "report": "An open source repository containing the smart contracts including a detailed explanation of what the repository contains. The repository can be viewed here:\nhttps://github.com/MuesliSwapTeam/onchain-token-verification\nWe have also provided a video-walkthrough in the monthly report:\nhttps://drive.google.com/file/d/1IVapopFORp8iv8FdF4Qh5skZkt9u-qyV/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 6233,
+      "promise": "The backend and frontend development is underway, and a few results can already be viewed.",
+      "criteria": "Evidence that the development is ongoing by providing screenshots, etc.",
+      "report": "A work-in-progress of the token-verification frontend.\nWe have also provided a video-walkthrough in the monthly report:\nhttps://drive.google.com/file/d/1T931fIl9yX1oxsKPSbsF_QW25hRfq-LM/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 6234,
+      "promise": "1. A website showing various tokens and their verification signatures. Users can search the website for token names or policy ids, submit verification requests, or create new verification signatures.1. A website showing various tokens and their verification signatures. Users can search the website for token names or policy ids.\n2. Users can submit verification requests.\n3. Projects/organisations can create new verification signatures.",
+      "criteria": "The project is finished and the points mentioned in the project outline are covered.",
+      "report": "The website is live and available at https://onchain-token-verification.muesliswap.com/. \nAs specified in the Milestone's outputs:\n・The website shows all Cardano native tokens and their respective verification signatures on the landing page. \n・Users can submit verification requests. \n・Projects/organizations can create new verification signatures at https://onchain-token-verification.muesliswap.com/entities/register\n\nAdditionally, the website also shows a list of registered projects/organizations.\nFurthermore, the smart contracts, including extensive documentation, are available at https://github.com/MuesliSwapTeam/onchain-token-verification.\nFinally, the video showcasing the website is available at https://www.youtube.com/watch?v=cnrs3yntMVQ.",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

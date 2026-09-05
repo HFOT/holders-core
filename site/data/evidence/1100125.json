@@ -1,0 +1,83 @@
+{
+  "title": "ENCOINS x Anastasia Labs: Zero-Knowledge Proof Trustless P2P Fiat-to-Crypto On-Ramp for Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "Context: Trustless P2P on-ramp is a smart contract app that connects cryptocurrency sellers and buyers. A seller deposits funds into the smart contract and asks for a fiat payment. Once the payment is delivered, the buyer can generate a cryptographic proof and unlock the funds from the smart contract.\nTask: Implement generic HTTPS API response pattern matching in zkFold Symbolic. It checks that the response from an API endpoint matches some JSON pattern and has the correct signature on it.\nOutputs:\n・Modules for arithmetic circuit generation for a JSON pattern match (Haskell)\n・Modules for checking signatures on HTTPS responses and circuit generation from those checks (Haskell)",
+      "criteria": "Acceptance:\n・Modules for arithmetic circuit generation for a JSON pattern match can be found in the repo\n・Modules for checking signatures on HTTPS responses and circuit generation from those checks can be found in the repo\n・The progress report (pdf) will be shared with the reviewers",
+      "report": "As the first milestone, we tasked ourselves with the following:\n・Modules for arithmetic circuit generation for a JSON pattern match can be found in the repo\n・Modules for checking signatures on HTTPS responses and circuit generation from those checks can be found in the repo\n\nFor context, in the Dapp, we allow users to withdraw funds provided that they submit the data from a JSON file of a particular structure together with the signature from our fintech partner. \nThe particular data structure of interest (task 1) is implemented in https://github.com/zkFold/p2p-onramp/blob/main/src/ZkFold/P2P/Contract.hs. This module also contains an implementation of the signature verification protocol (task 2). Finally, the module contains an early prototype of our P2P on-ramp smart contract.\nThese artifacts heavily rely on our arithmetic circuit compiler that is split across many modules. We refer the reader to the folder https://github.com/zkFold/zkfold-base/blob/main/src/ZkFold/Symbolic/Compiler/. The compiler performs arithmetic circuit generation from a high-level code of a smart contract.\nTogether these modules give a complete solution to the Milestone 1 as it is possible to generate the circuit performing task 1 and task 2 using this code.\nFor more information we refer the reader to the following pieces of documentation. User documentation for smart contract developers: https://docs.zkfold.io/introduction/what-is-zkfold-symbolic. Developer documentation for contributors to zkFold Symbolic: https://hackage.haskell.org/package/zkfold-base-0.1.0.0/candidate.\nThe pdf version of this report can be found here:\nhttps://github.com/zkFold/project-catalyst-reports/tree/main/P2P%20On-Ramp",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 75000,
+      "promise": "Context: Trustless P2P on-ramp is a smart contract app that connects cryptocurrency sellers and buyers. A seller deposits funds into the smart contract and asks for a fiat payment. Once the payment is delivered, the buyer can generate a cryptographic proof and unlock the funds from the smart contract.\nTask: Design the smart contract specification. Implement a set of scripts for testing.\nOutputs:\n・A technical document with the smart contract specification describing all possible behaviors, data formats\n・A set of scripts for construction and submission of test smart contract transactions (TypeScript)",
+      "criteria": "Acceptance:\n・A technical document with the smart contract specification describing all possible behaviors and data formats can be found in the repo\n・A set of scripts for construction and submission of test smart contract transactions (TypeScript) can be found in the repo",
+      "report": "Really sorry about the broken link - the repo remained private. Submitting our Proof of Achievement again and you can find our specification document hosted on Google Drive for easier access. \n\nAs the second milestone, we tasked ourselves with the following:\n・A technical document with the smart contract specification describing all possible behaviors and data formats can be found in the repo\n・A set of scripts for construction and submission of test smart contract transactions (TypeScript) can be found in the repo\n\nThe pdf version of smart contract specification can be found here:\nhttps://drive.google.com/file/d/1nhjCdwJ70O9GNQPkl5Fn6SiZsMBkjZsa/view?usp=sharing\nA set of scripts for construction of tests can be found in the repo\nhttps://github.com/zkFold/p2p-onramp\nFolder with test scripts: https://github.com/zkFold/p2p-onramp/tree/main/tests/Tests\nFor more information we refer the reader to the following pieces of documentation. User documentation for smart contract developers: https://docs.zkfold.io/introduction/what-is-zkfold-symbolic. Developer documentation for contributors to zkFold Symbolic: https://hackage.haskell.org/package/zkfold-base-0.1.0.0/candidate.",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 7
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 120000,
+      "promise": "Context: Trustless P2P on-ramp is a smart contract app that connects cryptocurrency sellers and buyers. A seller deposits funds into the smart contract and asks for a fiat payment. Once the payment is delivered, the buyer can generate a cryptographic proof and unlock the funds from the smart contract.\nTask: Implement the on-chain code (zkFold Symbolic smart contract).\nOutputs:\n・Modules for Trustless P2P On-ramp smart contract on-chain code (Haskell)",
+      "criteria": "Acceptance:\n・Modules for Trustless P2P On-ramp smart contract can be found in the repo\n・The progress report (pdf) will be shared with the reviewers",
+      "report": "We resubmit the POA with minor code corrections. We have implemented the on-chain code (zkFold Symbolic smart contract):\n\n1. Modules for Trustless P2P On-ramp smart contract can be found in the repo:\n\nhttps://github.com/zkFold/p2p-onramp/blob/vlasin-catalyst-m3-version2/src/ZkFold/Cardano/UPLC/OnRamp.hs\n\n2. The progress report (pdf) has been shared with the reviewers:\n\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/P2P%20On-Ramp/1100125%20-%20M3%20-%20progress%20report.pdf\n\n------------------------------------------------\n\nOne of the reviewers provided us with a list of suggested modifications. After careful consideration between zkFold and Anastasia Labs teams, we came to the conclusion that not all of these modifications are necessary for the security of the contract. Here are our responses:\n\n1. Output Position Verification: Ensure outputs are identified by address rather than position, as the order of txInfoOutputs may not be guaranteed.\n\nIt is the intended behavior that the order of outputs is chosen by the user.\n\n2. Clearer Trace Messages: Replace messages like \"rollup: no input\" with more descriptive error messages to aid debugging (e.g., \"Error: Missing OnRamp Input\").\n\nError messages were updated.\n\n3. Signature Verification Compatibility: Double-check that dataToBlake produces the correct hash format expected by verifyEd25519Signature to avoid verification failures.\n\n`verifyEd25519Signature` function can verify a signature on any message. One may verify that the code compiles successfully.\n\n4. Timelock Validation in Update: Ensure timelock is set in Update to confirm locking period consistency.\n\nThe lines related to the timelock were updated. The details can be found in the comments to the code.\n\n5. Define untypedOnRamp Behavior Explicitly: Validate that it meets Plutus expectations to avoid accidental misinterpretation.\n\nThe function `untypedOnRamp` is well-defined. The code compiles successfully, including the PlutusTx plugin.",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 120000,
+      "promise": "Context: Trustless P2P on-ramp is a smart contract app that connects cryptocurrency sellers and buyers. A seller deposits funds into the smart contract and asks for a fiat payment. Once the payment is delivered, the buyer can generate a cryptographic proof and unlock the funds from the smart contract.\nTask: Implement a simple Web UI to interact with the smart contract.\nOutputs:\n・Code for Web UI",
+      "criteria": "Acceptance:\n・The code for Web UI can be found in the repo\n・The presentation detailing the Web UI functionality (pdf) will be shared with the reviewers",
+      "report": "As the fourth milestone, we tasked ourselves with the following:\n・The code for Web UI can be found in the repo\n・The presentation detailing the Web UI functionality (pdf) will be shared with the reviewers\n\nThe main output of this Milestone is Code for Web UI which can be found at:\nhttps://github.com/Anastasia-Labs/money-kit-ui\nWe have also added correct license to the repo:\nhttps://github.com/Anastasia-Labs/money-kit-ui/blob/main/LICENSE\nAt this link we are providing a website showcasing the UI:\nhttps://anastasia-labs.github.io/money-kit-ui/\nFinally we prepared a PDF with a presentation detailing the Web UI functionality and we are sharing it with the reviewers:\nhttps://github.com/Anastasia-Labs/money-kit-ui/blob/main/docs/functionality.pdf",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 35000,
+      "promise": "Context: Trustless P2P on-ramp is a smart contract app that connects cryptocurrency sellers and buyers. A seller deposits funds into the smart contract and ask for a fiat payment. Once the payment is delivered, the buyer can generate a cryptographic proof and unlock the funds from the smart contract.\nTask: Implement the off-chain code.\nOutputs:\n・A component to build and balance user transactions",
+      "criteria": "Acceptance:\n・The code for the component to build and balance user transactions can be found in the repo\n・The progress report (pdf) will be shared with the reviewers",
+      "report": "The outputs for this milestone can be found in this repository:\nhttps://github.com/zkFold/p2p-onramp\nSpecifically, the off-chain code for building and balancing user transactions can be found in the \"backends\" folder:\nhttps://github.com/zkFold/p2p-onramp/tree/main/backends\nHere is a direct link to the progress report:\nhttps://github.com/zkFold/p2p-onramp/raw/main/progress_report.pdf",
+      "kinds": [
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 6,
+      "month": "7",
+      "cost": 75000,
+      "promise": "Context: Trustless P2P on-ramp is a smart contract app that connects cryptocurrency sellers and buyers. A seller deposits funds into the smart contract and asks for a fiat payment. Once the payment is delivered, the buyer can generate a cryptographic proof and unlock the funds from the smart contract.\nTask: Complete the MVP. Run it on the Cardano Testnet.\nOutputs:\n・A test suite for the smart contract\n・A web page with the application running on the Cardano Testnet.\n・A video illustrating the app’s functionality\n・Project Closeout Report\n・Project Closeout Video",
+      "criteria": "Acceptance:\n・A comprehensive test suite for the smart contract can be found in our repo\n・A web page with the application can be accessed by reviewers\n・A video illustrating the app’s functionality can be found on YouTube or Twitter\n・Project Closeout Report is submitted\n・Project Closeout Video is submitted",
+      "report": "We have completed our final milestone:\n- A comprehensive test suite for the smart contract: https://github.com/zkFold/p2p-onramp#test-suite\n- A web page with the application: https://p2p.zkfold.io\n- A video illustrating the app’s functionality: https://youtu.be/Ch6VSv1s_cg?si=x_sfw9sLXkb62FVp\n- Project Closeout Report: https://github.com/zkFold/p2p-onramp/blob/fddac61a09eb2fd97955e2245f6f271a41b59908/Final%20report%20-%201100125%20-%20Zero-Knowledge%20Proof%20Trustless%20P2P%20Fiat-to-Crypto%20On-Ramp%20for%20Cardano.pdf\n- Project Closeout Video: https://youtu.be/402gWg1CVp4",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 5
+    }
+  ]
+}

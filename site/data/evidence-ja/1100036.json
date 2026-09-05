@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "ADR(Architectural Decision Record)は、選択したデータストレージ/検索代替ソリューションを示すショートドキュメントで、最も重いクエリに対してより良いスケーラビリティを提供し、現在Cardano DB Syncを目指しています。 この選択のために、スケーラビリティ、使いやすさ、コスト、そして最後には、集中化を検討してください.",
+      "criteria": "短い ADR 文書には、クエリ パフォーマンスに対するアプリケーションの非機能的な側面(スケーラビリティ、メンテナンスの容易さ、コスト)を好む潜在的なソリューションのベンチマークが含まれている必要があります.",
+      "report": "次のドキュメントでは、Cardanoブロックチェーンインサイトの新しいキャッシュバックエンドとしてBigQueryの選択肢を示すADR(Architecture Decision Record)について説明します。 https://docs.google.com/document/d/1UDCY21mGuA5lg-bRSHNqVqzVK55Id5b2V4r7M1 Mfes/edit?usp=sharing"
+    },
+    {
+      "no": 2,
+      "promise": "2番目のマイルストーンは、マイルストーン1に提案された新しいバックエンドを使用して、私たちの摂取システム上のより良い安定性を達成しています。 Cardanoブロックチェーンのインサイトに関する新しいインサイトの提供も予定しています。 このマイルストーンの出力は次のとおりです。\n・混雑が著しい場所の修正やコードを見直し、データや性能の問題の摂取の安定性を向上し、根本原因を分析\n・Catalyst Fund 11に関連したメトリックやチャートを追加(すでにファンド6)。\n・ブロックチェーンの目標を改良したモニタリングの一環として、3-5の新しいメトリック(有効k、トークンメトリック、ゲーム内のスキンを含むプールグループ、Googleトレンド、Cardanoメトリック上に構築するなど)を追加.",
+      "criteria": "・摂取不良率を削減し、摂取問題なく95%の日数を削減\n・Catalyst Fund 11 メトリック追加\n・Cardano Blockchain Insights に 3-5 の新しいメトリック(新しいデータバックエンドから)を追加しました.",
+      "report": "このマイルストーンに提案したように、Cardano Blockchain Insights Dashboard (https://lookerstudio.google.com/reporting/3136c55b-635e-4f46-8e4b-b8ab54f2d460/page/p wxcw6g0irc)\n・本工程の故障率を追跡するために、インジェクションチャートを含めた。 これまではデータポイントが少ないので、ダッシュボードの隠しページ(主にユーザーにとっては興味深いものではありません)です。 このスクリーンショット(https://pasteboard.co/VgqkBIE2atEW.png)は、このページがどのように見えるかを示しています(ただし、ライブをチェックしたい場合はお気軽にお問い合わせください)。\n・バックエンドでは、メインクエリエンジンとして BigQuery をフル活用しています。 Cardano-DB sync インスタンスでクエリが実行されず、このコンポーネントはスタックから廃止されました。 また、BigQuery は、Data Studio ダッシュボードのメインキャッシュコンポーネントとして使用しています(BigQuery 固有のクエリは、最後のマイルストーンでオープンソースされます)。ただし、外部 API からのデータがデータソースとして使用されます。\n・Cardano (https://lookerstudio.google.com/reporting/3136c55b-635e-4f46-8e4b-b8ab54f2d460/page/p erkk8k6id) で採掘された NFT に関する新しいチャートを2つ追加しました。 NFT は、独自のポリシー ID と指紋のペアを持つトークンを採掘し、さらに、すべてのエポックに 1 つのユニットだけを採掘していると考えました。 バックエンドの BigQuery の新しい使用法は、このクエリを実行するために重要なことです。\n・スマートコントラクトチャートを近日公開するプルタスV3スクリプト(まだ公開されていないデータ)に準備しました。\n・ステークプールグループチャート(https://lookerstudio.google.com/reporting/3136c55b-635e-4f46-8e4b-b8ab54f2d460/page/p 6xvw3zcoc)をリファクトし、 https://github.com/cardano-community/pool groups に公開されたプールグループを使用する.このリポジトリはプールグループの主な参照として使用し、次の手順としてメインの欠落したものを追加するために貢献します。\n・「Catalyst」タブの「Catalyst」タブ(10ページ+概要ページht)で、Catalyst Fund11とFund12に関するチャートを収録"
+    },
+    {
+      "no": 3,
+      "promise": "教育コンテンツをコミュニティに提供するためのコミットメントとして、メトリクスを計算する方法のクエリとドキュメントを提供します。 私たちは、オープンソースのクエリのこのセットのコミュニティからのフィードバックは、既存のインサイトの品質を改善し、この提案に記載されているマイルストーンを検証するのに役立ちます。\nこのマイルストーンの出力として、これらのクエリはGithubリポジトリを通じて文書化および公開されます.",
+      "criteria": "内部データソース(非 API ベースの)のすべてのクエリは、Github リポジトリで文書化および公開されます.",
+      "report": "このパブリックGithubリポジトリ(https://github.com/Cardano-Fans/cbi-queries)で、Big Queryバックエンドを使用したすべてのクエリはオープンソース(MIT License)でした。\n各クエリで取得したデータを使用して、Cardano Blockchain Insightsに関連した例を説明します。\nまた、プロジェクトクローズアウトレポートリンク(https://docs.google.com/document/d/1jnoXkbYvn3V44ReZGGsf8To-qe861NJpbhKZDkVVQY/edit?usp=sharing)およびプロジェクトクローズアウトビデオリンク(https://www.youtube.com/watch?v=mkhDEVTcBF4)を添付します."
+    }
+  ]
+}

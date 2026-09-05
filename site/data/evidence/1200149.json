@@ -1,0 +1,60 @@
+{
+  "title": "Midnight-enabled Medical Records data platform/app",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 29900,
+      "promise": "Midnight research report targeted towards Midnight support for the application needs, as an outcome this should indicate the features required from Midnight as well as the readiness level for each feature. As an outcome, it will also address the design on how integration with Midnight will be done and how various data elements will be managed.\nWeb app design (wireframes for all pages (number of pages will emerge as a result of the ideation process associated with creating the UX) and navigation flows between respective pages) including data models.",
+      "criteria": "Publicly available, documented outputs from research and design activities.\nPublicly available in Figma UX design for web app.",
+      "report": "We are submitting the first milestone for the Midnight-enabled Medical Records Data Platform. This includes all outputs we outlined for this stage, including initial app design, UX/UI flows and the fesibility research. Our goal with this platform is to provide a secure and privacy-focused environment for managing sensitive baby care data.\nThis milestone reflects our progress toward building a functional proof of concept that can evolve in parallel with Midnight’s mainnet development. By preparing both the application infrastructure and privacy mechanisms early, we aim to be among the first teams to demonstrate real-world utility for Midnight. All supporting materials and deliverables can be found in the links below.\nMilestone outputs:\n・Link to public drive with a pdf document outlining the Midnight research report outputs\n・Link to Figma based web app design and flows\n・Link to public drive with a pdf document detailing the data models",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 25000,
+      "promise": "Working web app in line with previously developed UX design and integrated with IoT baby carrier sensors (with the API exposing sensors data) and a centralised DB for storing the data.",
+      "criteria": "Deployed and functioning web app integrated with sensors API and centralised DB. The integration with the APIs will be validated using tests that will be demonstrated in the evidence video.\nThe look and feel of the app will match the UX elaborated previously.",
+      "report": "Updated:\n\nPublic Github repository:\nhttps://github.com/blazarlabs-io/xo-baby \n\n.apk file\n​​https://drive.google.com/file/d/1kqIMyvqtg71eVd0aSNnI1hu-F1682iSa/view \n\nApp installation guide \nhttps://docs.google.com/document/d/1IbYdQKrrseU03SVZqjWGAiFZdIgQd2DlsNxf0XpcXXU/edit?tab=t.0 \n\nDeployment was done on Android, thus we’re attaching a video demonstration for ease of viewing if you do not have an android phone available.\nhttps://drive.google.com/file/d/1BjOrkAa_ic1fjDRTn4dzkNDC1WfwhCJ7/view?usp=sharing \n\nDeployment of this app on all platforms would be necessary in the commercial use cases based this PoC. \nFor now, we want to offer this app for clinical trials that the partner company needs in order to raise their TRL and for testing in the XoBaby community. The final requirements for the app are still in work as their main funding is still pending. \n\nIn the meantime we have engaged with a similar companies that we are helping out on their technical requirements and continuing to navigate the ecosystem of Medical apps and IoT devices (we are doing low level IoT R&D in multiple projects, not only medical related and tying it with Cardano and Midnight where applicable) \n\nBut the main goal is building and connecting our Midnight Blockchain side for anchoring the data and this is the scope with the current functionality. \n\nNo other changes were made in this document below this line.\n—----------------\n\nWe provide the following video and app features as proof of milestone achievement:\n🎥 Working App Video Demonstration: (link)\nCore app features:\n・Multi-role Authentication System: Role-based access control with three distinct user types: Parents can manage their children's profiles, medical personnel can view patient data, and admins have facility-wide access.\n・Child Management: Complete lifecycle management for children including profile creation, personal information storage (name, birth date, gender, blood type, ethnicity), and congenital anomaly tracking.\n・Real-time Hea",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 29900,
+      "promise": "Web app integrated with Midnight in devnet. Assuming Midnight's readyness is delayed, the project will be put on pause until the dependencies would be resolved, however the app would be working relying on a centralised DB.",
+      "criteria": "・In case of Midnight readiness the existing app will be integrated with Midnight instead of a centralised DB for data storage - this will be checked via a number of tests aiming to prove the integration.\n・In case of Midnight not being ready, the project will be put on pause, with subsequent integration work being resumed as Midnight becomes ready.",
+      "report": "・The video below demonstrates the implementation of the end-to-end flow to store and retrieve sensitive personal/medical records using Midnight (testnet) instead of a centralized database, ensuring confidentiality and provenance. The demo shows a complete, running pipeline: after sign-in and a quick check of existing records, the app presents the Midnight wallet and testnet contract context, then executes the full write path—generate a per-record AES key, encrypt the case data, upload the ciphertext to Pinata (IPFS hash), and commit (childId, AES key, IPFS hash) on Midnight. It then proves the read path by resolving on-chain pointers, fetching from IPFS, and decrypting back to plaintext in-app, while confirming the centralized DB holds only minimal metadata. Video link: https://drive.google.com/file/d/1zvdumkakTiZwiFY1gdtIELhflwkEAeRb/view\n・Github repo for the application code: https://github.com/blazarlabs-io/xo-baby/tree/develop\n・Downloadable application: https://drive.google.com/file/d/1KZUS3JDUT-5VVdjehKX1HhjkDQ8StwFC/view?usp=drive_link",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "15",
+      "cost": 15100,
+      "promise": "・Final close-out report\n・Final closeout video\n・Working application vs centralised DB and vs devnet Midnight",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Functioning web app working with devnet Midnight\n・Key features delivered: real time sensors data widget, 2 schedulers (general and vaccination), baby record dashboard).",
+      "report": "Project Close-Out Report \nProject Title: Midnight-enabled Medical Records Data Platform / App \nProject ID: 1200149 \nTechnology Partner: Blazar Labs \nStatus: Completed \nDelivery Month: October 2025 \nRepository: https://github.com/blazarlabs-io/Midnight_Medical_Records/tree/develop\n\n1. Summary of What Was Done \nWe entered this project with the ambition to support XOBaby, a startup focused on improving newborn care through IoT-enabled baby carriers, while exploring the capabilities of Midnight and it’s selective disclosure feature, for managing medical data privacy. \nThe project’s objective was twofold: \n・To deliver a mobile application for XOBaby’s IoT baby carrier products, enabling secure collection, storage, and visualisation of newborn health data. \n・To explore Midnight’s potential as a privacy-preserving data management layer for sensitive health information. \n\nKey milestones included defining the application design and Midnight integration architecture, developing the mobile app interconnected with IoT data feeds, and implementing smart-contract functionality to manage access rights on the Midnight testnet. \nWe successfully delivered all outputs originally committed to under this proposal. The resulting solution securely interconnects parents, clinicians, and researchers through encrypted, role-based access control. All source code, documentation, and integration designs have been open-sourced. \nThe project timeline extended beyond initial estimates due to two main factors: \n・A six-month search for a reliable Midnight developer, given the scarcity of available expertise during the chain’s early evolution. \n・Evolving system requirements following updates to Midnight’s SDK and API, which required adjustments to our architecture and integration logic.\n\nDespite these challenges, the Proof-of-Concept was completed successfully and demonstrates a functional privacy-focused healthcare data system leveraging Cardano technology.\nWe have engaged in this project with the a",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    }
+  ]
+}

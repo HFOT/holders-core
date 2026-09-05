@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "開始日 : 18-Mar-2024(Reclaim SDK がこの時点でアップグレードを受けているため)、ドキュメントは1週間かかります。 納期は週毎に選択できません。 配達を月1-Apr 2024として選択して下さい。 誠に勝手ながら、2020年3月22日(金)から2019年3月22日(日)までに、この期限を完成させて頂きたいと思います。\n・Reclaimの統合の観点からCardanoアーキテクチャを検索し、実装仕様文書をCardano(Atala Prism)チームとフィードバックを共有します。\n・実装を開始する前にドキュメントを最終化",
+      "criteria": "明確な文書化された技術仕様は、\n・CardanoとReclaimがAtala Prismとどのように統合されるかの技術アーキテクチャ\n・増幅タイムライン\n・リソースの要件\n\nAtala Prismチームからすべての入力をアドレスします.",
+      "report": "こんにちは、私たちのマイルストーンの更新を確認し、あなたの考えを共有していただきありがとうございます。\n・カルダノ建築に関する深い研究をした後、調査結果について説明しました。 セクションは「カルダノアーキテクチャに関する研究の検索」として名付けられます。\n・Reclaim が Cardano と Atala Prism と同ドキュメント内の「Technical Architecture and Breakdown」セクションを統合する方法の技術的なアーキテクチャをさらに詳しく説明します。\n・Atala Prismチームのコメントを詳細に紹介し、同じドキュメントのAtala PrismのTeamコメント欄に対処しました。\n\n皆様のご意見をお待ちしております."
+    },
+    {
+      "no": 2,
+      "promise": "・CardanoのDeploy Reclaim契約\n・Semaphore契約の有効展開\n・Cardanoの制約に対するzkProof検証の最適化(スピード/ガス制約など)\n・SDKによる証拠提出の統合とテスト、Cardanoとの信頼性と一貫性のある相互作用を確保\n\n注意: このマイルストーンは3〜4週間かかりますが、ここ数週間で配信するオプションはありません。 したがって、デフォルトオプション - 月2を選択します.",
+      "criteria": "・コンプリート測定:Cardanoのオンチェーン検証で実証済み",
+      "report": "Cardanoスマートコントラクトは、https://preprod.cardanoscan.io/address/addr test1wzv5v4jx3xaz4nlgp6j6j6juw707huauprhfdkst66mlh0fcsgk7uvw\n\nデモはこちら : https://www.youtube.com/watch?v=IJM0nBYa6xk\n\nSDK ドキュメント: https://docs.reclaimprotocol.org/cardano"
+    },
+    {
+      "no": 3,
+      "promise": "・Dapps で Reclaim SDK を使用する上で、Cardano エコシステムの構築に役立つドキュメントを作成\n・ブログ投稿とPodcastで、Reclaimプロトコルとその利点をCardanoに詳しく",
+      "criteria": "・コミュニティへの文書の書き出しと、同時に可能なAMAセッション。\n・コミュニティは、Reclaim が有効にできるさまざまなユースケースについての統合と教育を解除し、呼び出します\n・開発者と技術統合とデモセッション",
+      "report": "詳細な開発者ドキュメント: https://docs.reclaimprotocol.org/cardano/quickstart\n技術的なブログ投稿: https://www.notion.so/questbook/Integrating-Reclaim-Protocol-with-Cardano-A-Step-by-Step-Guide-12a275b816cb80e691add0a56bce5c34\nソーシャルメディアの通知:https://x.com/reclaimprotocol/status/1833405702607671657\nプロバイダーを作成するデモビデオ: https://x.com/reclaimprotocol/status/1834661166343393699"
+    },
+    {
+      "no": 4,
+      "promise": "・アタラ・プリズムチームと協力して、アーキテクチャを理解し、アタラ・プリズムにReclaimを統合するためのドキュメント/シーケンサ・ダイアグラムを作成\n・Atala PrismとのReclaimの統合を完了",
+      "criteria": "・Reclaim と Atala Prism チームによる統合のテストを成功裏に完了します。\n・Atarala PrismとのReclaimの統合を実証するデモビデオは、査読者と共有されます\n・ソースコードへのリンクは、審査者と共有し、コードがオープンソースであることを実証します。\n・SDKの展開に関する手順を共有し、Reclaim のオンチェーン展開を行います。 https://docs.reclaimprotocol.org で利用可能 レビュアーは、これらの指示と統合を独自にテストすることができます.",
+      "report": "Atala prism の統合に関するドキュメントを更新しました。https://docs.reclaimprotocol.org/sdk/cardano/quickstart#overview\nデモビデオ: https://drive.google.com/file/d/16zhmYrfQUeu 9rroSvKnY5SZ5Z 3rcbd/view?usp=sharing\nAtala PrismのReclaimの仕組み: https://drive.google.com/file/d/1qy4FrtHC1QRqDaCj1Dgaqu6S1hSHLih/view?usp=sharing\n\nIdentusManager クラスは、ID の作成、クレデンシャル発行、Identus SDK (Apollo、Castor、Pollux) を使用した検証を処理します。 SDKコンポーネントを初期化し、堅牢なエラー処理を含みます。\nDID作成: キャスターを使用して、暗号化キーペアから PRISM DID を生成します。\n認証の発行: 検証可能な認証(VC)を構成し、Castor.signCredential を使用して発行者の鍵に署名します。\n認証:Pollux.verifyCredentialでVCの認証を検証します。\nApollo を使用して DID を作成して、キーのペアとキャスターを生成し、 PRISM DID を添付メッセージングサービスで作成します。 W3C準拠の資格情報を構築し、Castor.signCredential を使用して発行者の DID に署名することによって検証可能な認証 (VC) が発行されました。 Atala PRISMモデルは、自己の独立したアイデンティティ・アプローチに従い、安全で分散型のアイデンティティ・マネジメントを保証します。\nTXを締めて下さい:\nhttps://preprod.cardanoscan.io/transaction/61d4bfc61f187a4ea017f30478045832565c4fc78f1f2853a0d58e70be0768a1\nUnLock Tx:\nhttps://preprod.cardanoscan.io/transaction/633578364707c86351c37c958db23c904fa6d5fa1c336e11027ff9bdb1e9affc"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "title": "Cardano App for Slack",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 10000,
+      "promise": "The planing phase will yield the UX design of the app. It will include what functionality are going to be available for users of this plugin and how it will be designed. The app will allow to query different information on blockchain (read: blockchain querying) as well as to setup real-time notification (read: real-time notifications), the planning will output what specifically the app will support - in a sense what information is useful for slack users (balance of an address is for sure useful, but a VRF key of a block is probably not useful for end users). This design phase is only internal to the team and will not include any Slack users.",
+      "criteria": "The goal of this milestone is to have a clearly documented components of the app, that includes the two main functionalities of blockchain querying and real-time notifications.",
+      "report": "The project plan along with planned feature is documented in the Github issue #1.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 10000,
+      "promise": "The output of this milestone is to provide a source code of the Cardano App for Slack that matches the output of the previous milestone where we determine its UX components and designs that will be submitted as part of the milestone 1. With the end of this step, we will invite the community to test the tool. It is critical to mention that the app includes the two main functionalities of blockchain querying and real-time notifications.\nThe community will be invited to task the build code via Twitter. The feedback will be incorporated into the final release. The feedback as well as the collaborative coding will happen on Github as a platform designed for this. We will ask users to test the code and report any bugs using Github. We cannot force the community to participate and from the past experience we have been having difficulty to invite testers, so we do not promise any strict numbers of participation.",
+      "criteria": "The output of this milestone is a working code, that can be deployed (how this will work will be clear from milestone 1). It is critical to mention that the app includes the two main functionalities of blockchain querying and real-time notifications.\nWe do not put any number of tests as a strict acceptable criteria, as from the past experience, it is hard to force community to do any testing. Acceptable criteria therefore for us to the invite to participate.",
+      "report": "・Social media post https://www.reddit.com/r/CardanoDevelopers/comments/18kh5yi/blockfrost_integration_for_slack/\n・Source code with README https://github.com/blockfrost/blockfrost-for-slack/",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 15000,
+      "promise": "The final documentation and final release of the application will happen after testing and community feedback that happens in the previous milestones. The close report will include detailed information as how the community has been reached and what feedback we gathered, the closing report also includes a video as part of the catalyst guidelines. Acceptance of closing report and video by IOG. It is critical to mention that the app includes the two main functionalities of blockchain querying and real-time notifications.",
+      "criteria": "The documentation is clear, the application is working and all community feedback in form of public Github issues is addressed (no outstanding issues). Acceptance of closing report and video by IOG. It is critical to mention that the app includes the two main functionalities of blockchain querying and real-time notifications.",
+      "report": "・Close-out report\n・Close-out video\n・Github source code and documentation",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 3
+    }
+  ]
+}

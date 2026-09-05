@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・プロジェクト開始と建築設計文書\n・SoulboundトークンスマートコントラクトでオープンソースGitHubリポジトリを開く\n・SoulboundトークンのCIPでソースコードGitHubリポジトリを開く",
+      "criteria": "・プロジェクト・イニテーションと建築設計文書は、形状と形態で明確にプロジェクト要件とソリューションの設計を公開しています\n・Cardano の Soulbound トークンの成功実装: トークンは、ユーザーがマイニングして要求することができます。\n・SoulboundトークンのDraft CIPが準備完了",
+      "report": "これは、Soulboundトークンプロジェクトのマイルストーン1の達成文書の証明です。 https://docs.google.com/document/d/1S8EGcYC3iCmJU6IbEBOwPASRy 30RjKrheBppnwImEA/edit?usp=sharing\n見つけることができます:\n・プロジェクト開始文書\n・建築設計文書\n・Soulbound Tokens スマートコントラクトソースコードでソースコード GitHub リポジトリを開く\n・SoulboundトークンのCIPをドラフトしてオープンソースGitHubリポジトリを開く\n\n受容体基準\n・プロジェクト開始と建築設計文書は、プロジェクトの要件とソリューション設計を明らかにする\n・Soulbound Tokens は、ユーザーによってマイニングおよび請求することができます。例えば、AdaSouls/Cardano-Soulbound リポジトリのREADMEファイルで明確に詳細を作成する方法に関する証拠\n・SoulboundトークンのDraft CIPは、AdaSouls/CIPsリポジトリで準備されています"
+    },
+    {
+      "no": 2,
+      "promise": "・UI/UXデザイン\n・Cardano(MVP)のSoulboundトークンとのAdaSouls Front-Endの相互作用\n・Testnet統合レポート",
+      "criteria": "・フロントエンドMVPは、正しくデザインを実装\n・フロントエンドMVPは、AdaSoulsスマートコントラクトのすべての機能(トークンのミント/クレーム)を実装しています。\n・Testnetインテグレーションレポートでは、すべての機能が正常にテストされていることを示しています",
+      "report": "これは、Soulboundトークンプロジェクトのマイルストーン2の達成文書の証明です: https://docs.google.com/document/d/13jhQaBGUis9QepYaDjGJDNMoDTQEHcVQ98Lrg3KyT0A/edit?usp=sharing\n見つけることができます:\n・UI/UXデザイン\n・Cardano(MVP)のSoulboundトークンとのAdaSouls Front-Endの相互作用\n・Testnet統合レポート\n・Soulbound Tokens スマートコントラクトソースコードでソースコード GitHub リポジトリを開く\n\n受容体基準\n・フロントエンドMVPは、正しくデザインを実装\n・フロントエンドMVPは、AdaSoulsスマートコントラクト(トークンのミント/クレーム/バーン)のすべての機能を実装しています。\n・Testnetインテグレーションレポートは、すべての機能が正常にテストされ、統合されていることを示しています"
+    },
+    {
+      "no": 3,
+      "promise": "・REST API コードでソースコード GitHub リポジトリを開く\n・AdaSouls API実装(サポートAPIへのフロントエンド拡張)\n・REST APIと通知システムに関する文書化\n・AdaSoulsのドキュメント\n・メインネットカーダノネットワークをターゲットとするAdaSoulsウェブサイト",
+      "criteria": "・フロントエンドは、AdaSouls APIを正しく実装し、期待通りに動作します。\n・メインネットカーダノネットワーク上でのトークンの採掘・回収が可能\n・REST API と AdaSouls プロトコルの両方ですべてのドキュメントが準備され、公開的にアクセス可能",
+      "report": "これは、Soulboundトークンプロジェクトのマイルストーン3の達成文書の証明です: https://docs.google.com/document/d/1lTMn0-HME7ZVz3CEoWeS9Xks5pso4duXKtLjTEpOAa8/edit?usp=sharing\n見つけることができます:\n・REST API コードでソースコード GitHub リポジトリを開く\n・AdaSouls API実装(サポートAPIへのフロントエンド拡張)\n・REST APIと通知システムに関する文書化\n・AdaSoulsのドキュメント\n・メインネットカーダノネットワークをターゲットとするAdaSoulsウェブサイト\n\nレビュアーのフィードバックに基づいて行われた修正\n・メインネットインテグレーションで問題を解決するためにフロントエンドが更新されました\n・フロントエンドの仕組みを把握し、ソウルバウンドトークンをミント&クレームできるようにするために、ビデオ(https://youtu.be/ldkNd-ow- o)をShowcaseに参照してください。 スマートコントラクトにロックされているため、Soulboundトークンがウォレットにないことに注意してください(プロトコルの仕組みです)。 有効な stake アドレスのみがトークンを要求できるため、トランザクションをビルドできると、バリデーションの作業を意味します。\n・ビデオに示されているように、2つのウォレットをテストする必要があります。1つは、トークンを別のウォレットに差し込み、この最後のウォレットはそれを主張できるようにします。\n\n受容体基準\n・フロントエンドは、AdaSouls APIを正しく実装し、期待通りに動作します。\n・メインネットカーダノネットワーク上でのトークンの採掘・回収が可能\n・REST API と AdaSouls プロトコルの両方ですべてのドキュメントが準備され、公開的にアクセス可能"
+    },
+    {
+      "no": 4,
+      "promise": "・プロジェクト閉鎖報告\n・Final SoulboundトークンCIP\n・AdaSoulsのショーケースビデオ\n・デモ:Soulboundトークンのトークンをミント/宣言する方法",
+      "criteria": "・プロジェクト閉鎖報告書は、形状・形態で提出\n・Soulbound Tokens Smart Contractの最終バージョンは公開アクセス可能\n・Soulbound Tokens CIPの最終バージョンは公開アクセス可能\n・Showcase動画は、CardanoのSoulbound Tokenの作成/宣言のプロセスと、プロジェクトが何であるかを明確に詳しく説明します",
+      "report": "これは、Soulboundトークンプロジェクトの最終マイルストーンの達成文書の証明です: https://docs.google.com/document/d/1CdeABhJCbrQXIsBYxqrznJMcT R9fCMjotwRgyzt-pQ/edit?usp=sharing\n見つけることができます:\n・プロジェクトクローズアウト動画\n・プロジェクトクローズアウトレポート\n・Final SoulboundトークンCIP\n・AdaSoulsのショーケースビデオ\n・デモ:Soulboundトークンのトークンをミント/宣言する方法\n\n受容体基準\n・プロジェクト・クローズアウト・レポートをシェイプ・フォームに提出\n・プロジェクトクローズアウトレポートには、プロジェクトクローズアウトビデオへのリンクが含まれています\n・Soulbound Tokens Smart Contractの最終バージョンは公開アクセス可能\n・Soulbound Tokens CIPの最終バージョンは公開アクセス可能\n・プロジェクトが何であるか、その重要なマイルストーンとそのすべての成果を明らかにビデオを表示する\n・Demoビデオは、CardanoでSoulboundトークンを作成/宣言するプロセスを含むAdaSoulsプラットフォームのすべての機能を明確に詳細に説明します"
+    }
+  ]
+}

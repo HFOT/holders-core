@@ -1,0 +1,73 @@
+{
+  "title": "Sky Protocol: Data Availability for Cardano Layer 2 Solutions",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40000,
+      "promise": "・A GitHub repository with a precise but informal specification, in English, of a Cardano smart contract that could bridge the DA network to Cardano.\n・Instructions on how to build a PDF from the GitHub repository.\n・A PDF writeup elaborating the specification described above, as built from the github repository.",
+      "criteria": "・Criteria. The study shall address:\n・How to maintain a unique identifiable contract state from one eUTXO to the next such that other contracts can read that state. This service may or may not already be provided by some Cardano contract languages, and may or may not be easy to provide on top of those languages. Presumably, underneath it all, an NFT identifies its holder as having “the” state for the bridge contract, and all lock scripts involved track which eUTXO possesses the NFT and what data is associated with it.\n・How best to verify multisigs from DA committees. Some elaborate multisig alg",
+      "report": "Please find our updated Proof of Achievement for Milestone 1 here: https://github.com/SkyProtocol-org/skyprotocol/pull/18/commits/89e49bb50599b69d61a4d50c82f0f7f1d837f7b4",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 50000,
+      "promise": "We will produce simplified smart contracts that support a Centralized Data Availability (“DA”) service, both bridge and client. The outputs will consist of an updated GitHub repository at a given commit, containing:\n・A simplified Cardano contract for a bridge from a centralized DA, that accepts updates to the state of the DA.\n・An accompanying Cardano contract for a client to this bridge, that verifies the presence of some data in the DA.\n・Some automated tests that exercise the above contracts.\n・Instructions on how to build and test the smart contracts.\n\nThe purpose of this deliverable is to lay the foundation for interactions between a simple bridge contract and a simple client contract on Cardano. Only as much DA functionality as strictly necessary will be implemented while laying this foundation; running the tests will NOT involve any actual off-chain service, only the on-chain smart contracts.",
+      "criteria": "Criteria:\n・The deliverable is to demonstrate the basic infrastructure for stateful interaction with and between two smart contracts, one for the DA bridge, one for a DA client—roughly corresponding to section 1)a) of the specification from Milestone 1, \"How to maintain a unique identifiable contract state from one eUTXO to the next such that other contracts can read that state.\" All other details are subordinate to the implementation and validation of this infrastructure.\n・The smart contracts should build, and the tests shall pass—at the specified commit.\n・The tests shall actually have a priva",
+      "report": "Hello there,\n\nplease find below the links corresponding to this milestone\n\nRepo: https://github.com/manuel-sky/sky-project-catalyst Commit hash: 832d452 \nOverview: https://github.com/manuel-sky/sky-project-catalyst/blob/main/test/README.adoc",
+      "kinds": [
+        "code"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 50000,
+      "promise": "We will produce smart contracts that support a basic Decentralized rather than Centralized Data Availability (“DA”) network, by elaborating on the multisig and merkleized data structure of the DA.\n\nThe outputs will consist of an updated github repository at a given commit, containing:\n・An elaborated Cardano contract for a bridge from a decentralized DA, that accepts updates to the state of the DA.\n・An accompanying elaborated Cardano contract for a client to this bridge, that verifies the presence of some data in the DA.\n・Some automated tests that exercise the above contracts.\n・Instructions on how to build and test the smart contracts.\n\nThe purpose of this deliverable is to elaborate on the previous one, so that the bridge may work with a DA network closer to the one that will be used in production. The deliverable may not be “feature complete” with respect to all we may want in production, but it will crucially support decentralization in the DA committees. The deliverable from Milestone 3 will differ from Milestone 2 in the following ways:\nSignatures\nMilestone 2: Simple signature.\nMilestone 3: The DA committee will use a disjunction of multisigs—such that if everything goes right",
+      "criteria": "Criteria:\n・The deliverable is all about extending the previous one to support more decentralization in the DA service—roughly corresponding to sections 1)b) and 1)c) of the specification from Milestone 1. All other details are subordinate to the implementation and validation of this support for decentralization.\n・Again, the smart contracts should build, and the tests shall pass—at the specified commit, run against a private Cardano network, and execute the on-chain smart contract flows of a Data Availability interaction including bridge updates and client validations.\n・The smart contracts shou",
+      "report": "Hello there, \n\nhere is our github repo, for this milestone :\nhttps://github.com/SkyProtocol-org/skyprotocol/blob/master/contracts/off-chain/README.adoc \n\nCommit hash: f974487f9d51a174d874e6145172b5558566c48b",
+      "kinds": [
+        "code"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 30000,
+      "promise": "We will integrate our smart contract with an early prototype of our DA network to demonstrate an end-to-end test of the contract as part of some interaction involving both on-chain and off-chain components. The outputs will consist of an updated github repository at a given commit, containing:\n・A close review, and improvement if necessary (modified or unmodified), for the Cardano contract for a bridge from a decentralized DA that accepts updates to the state of the DA.\n・An accompanying elaborated Cardano contract for a client to this bridge, whether modified or unmodified, that verifies the presence of some data in the DA.\n・Code for some DA server that exercises the bridge contract above to update the on-chain state of the DA. The server can be centralized or decentralized.\n・Code for some DA client that exercises the client contract above to attest on-chain the publication of data on the DA.\n・Instructions on how to build and test the smart contracts.\n\nThe purpose of this deliverable is to demonstrate integration of the on-chain smart contract with an actual off-chain DA service. However, the DA network need not be complete: \n・it may be proof-of-authority rather than proof-of-stake,",
+      "criteria": "Criteria:\n・The deliverable is to demonstrate use of the previous smart contracts as part of an ensemble involving an off-chain service and its clients as well as the on-chain smart contracts. All other details are subordinate to the implementation and validation of this ensemble.\n・In addition to the smart contracts and their on-chain execution, the test cases will include a DA service, a separate data publishing client, and a separate data watching client.\n・For the purpose of this deliverable, it is enough if the service has a single node only. However, even with a single node, it will still u",
+      "report": "We are proud to finally present you the Milestone 4 of our project. Developing and debugging Plutus code was much harder than anticipated.\nThe code is all on our repository at commit 6174310f14499bbc12eb5fcb4feb3554d5aa602a on our master branch, tag catalyst-12-milestone-4: https://github.com/SkyProtocol-org/skyprotocol/releases/tag/catalyst-12-milestone-4\nYou can checkout our code with:\ngit clone https://github.com/SkyProtocol-org/skyprotocol.git\nThe README.md file then explains how to build and reproduce.\nWe are available on discord to help: https://discord.com/invite/KPgHaggt2R\nIf you want to browse the code, get the latest git version of the master branch, and look around. See doc/HACKING.md for a first guide.",
+      "kinds": [
+        "code",
+        "social"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 30000,
+      "promise": "This Milestone culminates in a demonstration of our Prototype Data Availability Network. This will take the form of a repeatable script with a prototype of our Data Availability Network, showing that the basic contract functionality works. \n・An updated GitHub repository at a given commit, containing a prototype of our Data Availability Network, demonstrating that basic contract functionality works.\n・﻿﻿﻿Final close-out report\n・Final closeout video",
+      "criteria": "・Prototype Data Availability Network script builds and tests properly\n・Link to final closeout report\n・Link to final closeout video",
+      "report": "We are proud to finally present you the Final Milestone 5 of our project. Developing and debugging Plutus code was much harder than anticipated, but we did it in the end, and here is a video demo of the code working on the Cardano Preview network:\nhttps://www.youtube.com/watch?v=LsOdS-BY6GA \nCode is available on our repository https://github.com/SkyProtocol-org/skyprotocol/ at the tag catalyst-12-milestone-5 https://github.com/SkyProtocol-org/skyprotocol/releases/tag/catalyst-12-milestone-5\nThe code at given tag also includes additional features not included in the video such as client code that can also run on the Preview network. You can find the following information regarding the demo in the README file ( https://github.com/SkyProtocol-org/skyprotocol/blob/catalyst-12-milestone-5/README.md ) of the GitHub repository. \n・Build instructions under the “Building” section\n・Instructions for testing on the Preview Network, found under the “Manual Testing” header, which takes you on https://github.com/SkyProtocol-org/skyprotocol/blob/catalyst-12-milestone-5/doc/Preview.md that includes example execution results that can be checked on https://preview.cexplorer.io \n\nHere is a link to our project close out report. https://github.com/SkyProtocol-org/skyprotocol/blob/master/doc/SkyProtocolCatalystFund12ProjectCloseOutReport.pdf \nThe close out report includes a link to our project close out video. https://youtu.be/AJAMuSXPz9c\nWe invite you to contact us on discord for any questions: https://discord.com/invite/KPgHaggt2R",
+      "kinds": [
+        "chain",
+        "code",
+        "social",
+        "video"
+      ],
+      "links": 16
+    }
+  ]
+}

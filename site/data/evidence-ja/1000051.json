@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "NMKRと連携して、技術仕様、API統合ポイント、データ交換機構を定義します.",
+      "criteria": "NMKR技術を用いた容易なガバナンストークン作成を可能にする統合の明確な計画を持つ証拠。\nNMKR APIと統合を完了するために必要な各ステップを概説する書面によるレポートを作成し、ガバナンストークンの作成を可能にします.",
+      "report": "NMKR APIの統合\nプロフィール\n以下は、Clarity Protocol と NMKR API 間で計画された統合の技術的概要です。 NMKRは、DAO: NMKR Mint API および NMKR Studio API のガバナンストークンをマイニングするのに潜在的に使用できる 2 つの API を提供しています。\nNMKR ミント API は、個々の NFT や 15 NFT 以上の小さなコレクション用に設計されています。 その結果、ガバナンストークンのマイニングには適していません。 これは、Clarity Protocol が NMKR Studio API と統合することを意味します。\nNMKR Studio API は、DAO のガバナンス・トークンを縮小および管理するために必要な機能をすべて提供します。 この提案は、特にガバナンストークンのミントを覆います。 マイナスのガバナンストークンの配布は、DAO作成者の責任となります。\n技術概要\n以下は、Clarity Protocol と NMKR Studio API 間で計画された統合について詳しく説明します。 この概要は、次の3つの演習に基づいて開発されました。\n・NMKR Studio API ドキュメントの見直し\n・NMKR Studio API Swaggerの評価\n・ポストマンによるNMKR Studio APIの事前テスト\n\nDAO 管理者向け NMKR Studio ウィジェットを開発\nこのウィジェットは、次のコンポーネントで構成されます。\n・NMKR Studioプロジェクトを作成するボタン\n・DAOクリエーターが完成するフォームを開きます。 これは、NMKR Studioを通じてガバナンストークンをミントにする必要なフィールドを含みます\n・NMKR Studio によるガバナンストークンの縮小\n・DAO作成者がガバナンストークンの数をミントに選択できるようにウィジェットを開く\n・ガバナンストークンの基本情報の表示\n・NMKR Studio プロジェクトポータルへのリンクボタン これにより、DAO クリエイターは、より高度なツールにアクセスして、ガバナンストークンを管理することができます。\n\nTestnet 用の NMKR Studio で API キーを作成する\nMainnetで起動する前に、Testnetですべての統合テストを実施します。 Clarity Protocol には 1 つの NMKR Studio Testnet API 鍵が 1 個あります。\n一般的なバックエンド機能を作成する"
+    },
+    {
+      "no": 2,
+      "promise": "DAO クリエイターが NMKR 統合を使用して、ガバナンス トークンの構成とカスタマイズを可能にする Clarity プラットフォームでユーザーフレンドリーなインターフェイスを開発します.",
+      "criteria": "NMKR API と相互作用するフロントエンドインターフェイスの証拠により、ガバナンストークンの作成が可能になります。\nユーザーは、組織のガバナンストークンを作成するために、フロントエンドと対話することができます.",
+      "report": "ここでは、テストネット上でNMKRとの統合を提示するビデオです。 https://streamyard.com/mgzpzsgekgut\n\nより多くの証拠が必要な場合は、お知らせください."
+    },
+    {
+      "no": 3,
+      "promise": "Clarity PlatformとNMKRの統合間のシームレスなやりとり、トークンの作成、配布メカニズム、およびガバナンス機能の検証を行うための包括的なテストを実施します.",
+      "criteria": "統合が期待どおりに機能している具体的な証拠。\nこれは、ガバナンストークンの作成が非技術的で簡単なプロセスであることを確認するために、フロントエンドからの統合をテストすることを意味します.",
+      "report": "みんな、フィードバックの両者も肯定的だったが、あなたもそれを拒否した。\n詳しくはこちら\nここでは、クローズアウトレポートへのリンクです: https://docs.google.com/document/d/149nynCd8r9n2K6B4FaeiGuDJADLBczgVxVgID95fF4Q/edit?usp=sharing\nクローズアウトビデオは次のとおりです。 https://www.youtube.com/watch?v=B1vHPAdvYcE"
+    }
+  ]
+}

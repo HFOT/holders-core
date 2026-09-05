@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "コンテキスト: zkProver はバックエンドアプリケーションです。 ゼロ知識の証明の計算のための公開 API を提供します。\nタスク: Plonk の証明アルゴリズムを実行します。 パフォーマンスクリティカルな操作はRustで実装され、ハイレベルのプロトコルはHaskellで実行されます。\n出力:\n・RustからHaskllにインポートされたFFTとマルチスケーラーの乗算用\n・Plonk実証アルゴリズム(ハッセル)",
+      "criteria": "・RustからHaskellにインポートされたFFTとマルチスケーラーの乗算用のBindingsは、リポジトリで見つけることができます\n・Plonkの実証アルゴリズム(Haskell)はリポジトリで見つけることができます",
+      "report": "Rust から Haskell にインポートされた FFT とマルチスケーラの乗算のための結合。\n関連するバインディングは次のとおりです。\nhttps://github.com/zkFold/zkfold-base/tree/main/rust-ffi\nE2E のテストはこちら:\nhttps://github.com/zkFold/zkfold-base/tree/main/rust-ffi-test\nFFT と MSM は、Plonk を含む最も広く使用されているプロテクションアルゴリズムにおける重要なパフォーマンスクリティカルな操作です。 プロジェクトのこの部分は、当社のソリューションが速度の面で競争していることを保証します。\nPlonkの証明者アルゴリズム。 関連するモジュール:\nhttps://github.com/zkFold/zkfold-base/blob/main/src/ZkFold/Base/Protocol/ARK/Plonk.hs\nhttps://github.com/zkFold/zkfold-base/blob/main/src/ZkFold/Base/Protocol/ARK/Plonk/Internal.hs\nPlonk の証明書の Haskell 実装。 それはよく知られ、広く使用されているゼロ知識証拠プロトコルです。 この実装では、DApp 開発者に大きな利益をもたらす将来の再帰的 ZKP プロトコルを実装することができます。特に、データ保護コンテキストで ZK を使用する人々。\nモジュールの記述:\nhttps://github.com/zkFold/project-catalyst-report/tree/main/ZK%20Prover%20バックエンド\nその上で、Xアカウント(スレッドを読み込みます)で進捗状況を共有しました。 https://twitter.com/zkFold/status/1779819515464888709\n壊れたリンクを2件追加しました."
+    },
+    {
+      "no": 2,
+      "promise": "コンテキスト: zkProver はバックエンドアプリケーションです。 ゼロ知識の証明の計算のための公開 API を提供します。\nタスク: Plonkプルーフを計算するためのAPIを提供するサーバーコンポーネントの設計、ロギングシステム、セットアップガイド。\n出力:\n・APIサーバコンポーネント(ハッセル)\n・イベントロギングのためのモジュール(ハッセル)\n・サーバの設定と実行のガイド(GitHub)\n・MaestroプラットフォームによるAPIアクセスの管理",
+      "criteria": "・リポジトリにAPIサーバコンポーネント(Haskell)が見つかります\n・イベントロギング(ハッセル)のモジュールは、レポで見つけることができます\n・リポジトリにサーバー(GitHub)をセットアップして実行するためのガイド\n・Maestroプラットフォームを介した管理されたAPIアクセスは、リポジトリで確認できます",
+      "report": "・リポジトリにAPIサーバコンポーネント(Haskell)が見つかります\n・https://github.com/zkFold/zkfold-prover-api/blob/main/src/Server.hs\n・イベントロギング(ハッセル)のモジュールは、レポで見つけることができます\n・https://github.com/zkFold/zkfold-prover-api/blob/8194c4736fad3f0089860e7596972e49d0d1b8a2/app/Main.hs#L16\n・リポジトリにサーバー(GitHub)をセットアップして実行するためのガイド\n・https://github.com/zkFold/zkfold-prover-api/blob/main/README.md\n・Maestroプラットフォームを介した管理されたAPIアクセスは、リポジトリで確認できます。\n・https://docs.gomaestro.org/Cardano/ZKProver/Introduction"
+    },
+    {
+      "no": 3,
+      "promise": "コンテキスト: zkProver はバックエンドアプリケーションです。 ゼロ知識の証明の計算のための公開 API を提供します。\nタスク: Protostar 認証アルゴリズム (API エンドポイント 2) を実行します。 また、zkFoldシンボルスマートコントラクト(APIエンドポイント3)のカスタムトランザクションバランシングアルゴリズムも実装します。\n出力:\n・Protostar 認定アルゴリズム(ハッセル)\n・zkFold シンボリックトランザクションバランシングアルゴリズム(ハッセル)",
+      "criteria": "・Protostar の証明者アルゴリズム(ハッセル)はリポジトリで見つけることができます\n・zkFold シンボリックトランザクションバランシングアルゴリズム(ハッセル)はレポで見つけることができます",
+      "report": "Protostar の証明するアルゴリズム\nProtostar アルゴリズムの実装は複数のモジュール間で分割され、ここで見つけることができます(リンクは更新されました)\nhttps://github.com/zkFold/zkfold-base/tree/vks4git/protostar/src/ZkFold/Base/Protocol/Protostar\n説明: プロトスターの折りたたみは「再帰的」運動回路の構造を可能にします。 これらの回路は、ループと再帰関数呼び出しを含むプログラムに対応しています。 それに加えて、Cardano Ledger仕様で非常に一般的な可変バイト長でデータ型の作成も有効です。 この機能により、zkFold のシンボルフレームワークはより堅牢で、Cardano のゼロ知識スマートコントラクトの効率的な実装が可能になります。\nzkFold シンボリックトランザクションバランシングアルゴリズム\nまた、zkFoldシンボルスマートコントラクトのオフチェーン(トランザクションバランシング)コードも実装しています。 ここで関連するコンソールスクリプトを見つけることができます。\nhttps://github.com/zkFold/zkfold-cardano/tree/main/e2e-test/plonk\nhttps://github.com/zkFold/zkfold-cardano/tree/main/e2e-test/symbolic\nそれに加えて、タスクに関連するオフチェーン・ハスケルのコードは、ここに見つけることができます:\nhttps://github.com/zkFold/zkfold-cardano/tree/main/backends\n説明:現在、我々は2つのタイプのzkFold記号スマート契約を持っています:\n・Plonkスマートコントラクトは、証拠検証が成功した場合と唯一のトークンをミント\n\nオンチェーン。 検証アルゴリズムへの入力はトークン名です。\n・Symbolicスマートコントラクトは、トランザクションの満足度が高い場合にのみ成功\n\n特定の条件は算数回路として符号化しました。\n最後に、このレポートをGitHubに公開しました。\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/ZK%20Prover%20バックエンド/マイルストーン%203.pdf\nそしてXのマイルストーンについて投稿しました(私たちは、コミュニティに実装された機能を説明するために2つのコメントを追加しました):\nhttps://x.com/zkFold/status/1823800347980095983"
+    },
+    {
+      "no": 4,
+      "promise": "コンテキスト: zkProver はバックエンドアプリケーションです。 ゼロ知識の証明の計算のための公開 API を提供します。\nタスク: 証拠計算は計算的に高価なため、並行して実行するいくつかのバックエンドのプロバース間でのタスクを分割するロード分布アルゴリズムを実行します。\n出力:\n・複数のサーバーインスタンス(Haskell)上の負荷分布と並列証拠計算のためのモジュール\n・MaestroプラットフォームによるAPIアクセスの管理",
+      "criteria": "・複数のサーバーインスタンス(Haskell)上の負荷分布と並列証拠計算のためのモジュールは、リポジトリに見つけることができます\n・Maestroプラットフォームを介した管理されたAPIアクセスは、リポジトリで確認できます",
+      "report": "プロジェクトのマイルストーン4を完成しました。\nZKPの計算を並列化するためには、ここで見つけることができる新しいバージョンのアキュベータースキームを実装しました。\nhttps://github.com/zkFold/symbolic/blob/vlasin-cyclefold-2/symbolic-base/src/ZkFold/Base/Protocol/IVC/AccumulatorScheme.hs#L159\n新しいアルゴリズムは、独立したプローバーによって実行された計算を集約された証拠に結合することができます。\nまた、最新のシンボルライブラリを使用するために、proving サーバが更新されました。\nhttps://github.com/zkFold/zkfold-prover-api\n弊社では、Maestroのインフラ上での実証をビルドし、デプロイする手順をアップデートしました。 テストクエリはここに提供されます:\nhttps://github.com/zkFold/zkfold-prover-api/blob/main/README.md?plain=1#L31\n更新:\nAPI エンドポイントは現在利用できます。\nhttp://54.93.43.251:3001/prove\nエンドポイントへの正しいPOSTのリクエスト例(curlを使用して)\ncurl -X POST -H \"Content-Type: application/json\" -d '\"MA==\"' 54.93.43.251:3001/prove\nアップデート2:\n上記サンプルリクエストに対してサーバから返されたメッセージを追加しました。 メッセージファイルへのリンクは次のとおりです。\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/ZK%20Prover%20バックエンド/応答.txt\n応答には、エンコードされた証人メッセージ「MA==\"」に対応するエンコードされた証拠が含まれています。 経済上の理由から、マエストロのコアインフラではなく、無料のAWSインフラでサービスをホストしました。 このサービスの需要が生じたら、プロポーズは、マエストロのコアインフラ上にスケールアップして再ホストします。 お問い合わせ."
+    },
+    {
+      "no": 5,
+      "promise": "ソリューションをイラスト化し、公に共有する完成レポートと動画を制作します.",
+      "criteria": "・レビュアーに提供したリンクでレポートをご覧いただけます。\n・YouTubeやXでのビデオガイドを公開",
+      "report": "最終マイルストーンを完成し、以前の提案に従ってPoAを調整しました。\nhttps://github.com/zkFold/project-catalyst-report/blob/main/ZK%20Prover%20Backend/1100298%20-%20zkFold %20ZeroKnowledge%20Prover%20Backend%20%20Close20out%20report.pdf\nクローズアウトビデオ:\nhttps://youtu.be/Fa3zXcFA1ro\n出力は X で共有されています:\nhttps://x.com/zkFold/status/19169642087116872\nNote: クローズアウトレポートには、プロジェクトのメイン出力(ZK Proverサーバー)を使用するために必要なすべてのリンクとガイドが含まれています."
+    }
+  ]
+}

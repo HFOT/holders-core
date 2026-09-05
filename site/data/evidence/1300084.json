@@ -1,0 +1,70 @@
+{
+  "title": "Designing an API for ZK-Snark proof verification in Aiken - Eryx",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "・Technical review document comparing different proving systems and libraries, including proof size, proving/verifying time, recursion support, and optimizations.\n・Final decision on the proving system to use for the project.",
+      "criteria": "・The team agrees on a proving system that satisfies project requirements.\n・The research and decision process is documented.",
+      "report": "Dear reviewers,\nIn the following repository we include the research document: \nhttps://github.com/eryxcoop/cardano-zk-aiken/blob/main/research/main.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 60000,
+      "promise": "・Initial Aiken library for circuit construction compatible with the selected proving system.\n・Implementation of basic operations (e.g., assert_eq, add, sub, neg, mul, conditionals).\n・Example program (e.g., Fibonacci circuit) using the library.",
+      "criteria": "・The library can construct and verify basic circuits.\n・The example program runs successfully.",
+      "report": "Dear reviewers,\n\nWe have successfully completed milestone 2.\nHere is an explanatory video showcasing the features implemented for this milestone: Video\n\nAn example as the shown on the video can be replicated following the Readme located on https://github.com/eryxcoop/cardano-zk-aiken/blob/main/aiken-zk/README.md\n\nThis Readme exhibits a description of the basic operations implemented (assert_eq, add, sub, neg, mul, conditionals) in the first section.\n\nAs shown, the library can construct and verify basic circuits.\nAs shown, the example program runs successfully.\nWe used Groth16 verification as we chose on the first milestone.\n\nGrant repository: https://github.com/eryxcoop/cardano-zk-aiken\nThe Aiken library is on: https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zk\nThe example program is on: https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zk/milestone_2_example",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 9
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 50000,
+      "promise": "・Integration of the library with the selected proving system for on-chain verification.\n・Verification of a simple circuit (e.g., Fibonacci) on Cardano testnet.",
+      "criteria": "・A simple circuit can be verified on the Cardano testnet using the library.",
+      "report": "Dear reviewers,\n\nWe have completed milestone 3.\nHere is an explanatory video showcasing the features implemented for this milestone: video\n\nWe made a specific document with the detailed instructions to run the example shown in the video. This file is named EXAMPLE.md and it's located on EXAMPLE.md\n\nThe example integrates the library with Groth16 and executes a contract in the chain verifying the offchain code was executed.\nThe example shows how a simple circuit is run offchain and then is verified on Cardano testnet.\nIn the provided code, we provide several simple circuits that can be run offchain and verified on the testnet. Ie. addition, multiplication, if, etc.\n\nGrant repository: https://github.com/eryxcoop/cardano-zk-aiken\nThe Aiken library is on: https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zk\nThe example program is on: https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zk/milestone_example",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 8
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 30000,
+      "promise": "・Gadgets for advanced cryptographic primitives (e.g., hashes, Merkle trees, polynomial evaluation/interpolation).\n・Example of a complex circuit using these gadgets.",
+      "criteria": "・A complex circuit built with the library and gadgets can be verified on the testnet.",
+      "report": "Dear reviewers,\n\nWe have completed milestone 4.\n\nHere is an explanatory video showcasing the features implemented for this milestone: video\n\nWe updated the EXAMPLE.md document with the detailed instructions to run the examples shown in the video. The file is located on EXAMPLE.md\n\nThe examples show how a user could run a complex circuit offchain and then verify it on Cardano testnet. These circuits are:\n- inclusion on a merkle tree\n- custom circuit that uses fibonacci and poseidon hasher circuits\n\nIn the provided code, we provide several complex circuits that can be run offchain and verified on the testnet. Those are:\n- Hash functions: sha256, poseidon\n- Merkle Tree inclusion\n- Polynomial evaluation\n\nGrant repository: https://github.com/eryxcoop/cardano-zk-aiken\n\nThe Aiken library is on: https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zk\n\nThe example programs are on: https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zk/milestone_example",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 30000,
+      "promise": "・Final codebase with optimizations and bug fixes.\n・Comprehensive documentation and tutorials for developers.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・The library meets the functional expectations provided in previous milestones, with clear and complete documentation.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "Updates:\nSorry for the missing of the close-out report. We added it explicitly on the repository and it can be found on this link.\n---------------\nDear reviewers,\nWe have completed milestone 5.\nHere is the final close-out video: https://youtu.be/smll90J6PJE\nWe updated the README.md document. The file is located on README.md. The text details all the tool capabilities, use cases, implemented examples and usage and installation instructions.\nWe wrote a medium post for the end-to-end tutorial, you can find it here: https://medium.com/eryxcoop/aiken-zk-tutorial-d11b440a7d1a\nFinal codebase: https://github.com/eryxcoop/cardano-zk-aiken\nThe Aiken library is on: https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zk\nThe example programs are on: https://github.com/eryxcoop/cardano-zk-aiken/tree/main/aiken-zk/milestone_example",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

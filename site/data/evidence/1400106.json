@@ -1,0 +1,32 @@
+{
+  "title": "Real-World Real Estate Pre-Sale with Proof & Release",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 10000,
+      "promise": "・Whitepaper v1.0 describing the end-to-end workflow and governance for construction-stage traceability (roles, states, data flows, on/off-chain boundaries)\n・Architecture & Data Models: conceptual diagrams; core entities (Unit for Sale, Milestone, Certifier, On-chain Event); evidence taxonomy.\n・Pilot Plan: features, roles, development timeline; stakeholders = 1 notary + 2 developers; metrics and acceptance tests.\n・Blockchain Anchoring & Public Location: SHA-256 hashes of all artifacts from items 1–3 anchored on Cardano; each document states its public repo/folder link and corresponding TXID; consolidated index.",
+      "criteria": "1. Whitepaper v1.0 includes (a–f):\n a) Definition of roles, states and data flows; on/off-chain boundaries.\n b) Signature & identity policies and privacy/data-minimization boundaries.\n c) Legal/registral memo mapping registry requirements → evidence types.\n d) Governance with decision and escalation paths.\n e) Embedded Risk Checklist v1 covering legal/registral, privacy/compliance, data-integrity, partner-operations and deployment categories, with likelihood, impact, \n — Partner-developer sign-off recorded; file anchored on-chain (valid TXID).\n\n2. Architecture & Data Models are complete/consis",
+      "report": "MILESTONE 1\n\n1. Output: Whitepaper v1.0\nAcceptance criteria: Complete version 1.0 of the whitepaper with all agreed upon segments and singoffs\nEvidence: Added missing Risk checklist \n(PDF) https://drive.google.com/file/d/1YzBqjWVnkGF5dw3-FBSwhs_m-O96tihg/view?usp=sharing\n2. Output: Architecture & Data Models\nAcceptance criteria: All necessary files for the architecture and data models as well as exported diagrams\nEvidence: (All files compressed) https://drive.google.com/file/d/1P0R2GqtbXCyFik0v5HQCVxV8ewtqQJir/view?usp=sharing )\n(Diagrams exported for better viewing) https://drive.google.com/drive/folders/1bh3U2lWTbkPoBWEQDFyv-MH2y7aXBv1F?usp=sharing\n3. Output: Pilot Plan\nAcceptance criteria: Compete pilot plan with information and acknowledgements from both developers and legal / registral partners\nEvidence: (PDF) https://drive.google.com/file/d/1K-sCo8xFZ6FBQME5kOFaBmsu0k7MzkvX/view?usp=sharing\n4. Output: Blockchain Anchoring & Public Location\nAcceptance criteria: Complete file with all accessible links for blockchain traceability.\nEvidence: Fixed Hash matching issues and simplified file structure, for its previous unnecessary complexity caused the issue itself \n(As a simple .docx file for better readability) https://docs.google.com/document/d/1ulxhAfCY0gjnp2pkExM67pTUu87K-Ry5eSaOZWAD1Z0/edit?usp=sharing\n(As a simple .csv file as specified on the evidence of completion) https://drive.google.com/file/d/1YFkAOaq0MJVXBuh9djeFTNhqrDGhkSPn/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 15,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 15000,
+      "promise": "・Information Architecture & Navigation Map with user roles/permissions.\n・Wireframes & Interactive Prototypes covering the full workflow s hi tages end-to-end.\n・Design Principles & Visual Language: layout, typography, iconography; reusable components & interaction states; accessibility/localization guidance.\n・UX Documentation: rationale for navigation choices and interaction logic; how verified milestones and on-chain proofs appear in the UI.\n・UI Implementation Plan: backlog mapping screens/components → API/contract endpoints → test IDs; build scheduled in Milestone 3.\n・Base design and implementation plan for smart contract development + general backend structure",
+      "criteria": "・IA & navigation cover all roles and core journeys; consistency across screen sizes.\n・Prototypes cover all stages; pilot developer + notary approve.\n・Component library is coherent and reusable across contexts.\n・Documentation clearly explains display of verified milestones and on-chain proof references.\n・UI Implementation Plan is approved (pilot developer + notary); each component lists its endpoint/test ID and Milestone-3 build reference.\n・Design and implementation plan file (PDF/MD) in the repo for smart contracts and backend +",
+      "report": "1- Design package (IA map, wireframes, prototypes, component docs) — public link (Figma export/PDF).\n\nPDF LINK: https://drive.google.com/file/d/10VGD7z1jib8cHT8CiHKEZCaLhkcPx7Ec/view?usp=sharing \n\nSCREENSHOT CATALOG: https://drive.google.com/file/d/178mg0CqW9xTxnffAG42stLOtBd8t-LXR/view?usp=sharing \n\nSCREENSHOT LIBRARY:https://drive.google.com/drive/folders/1ecT7144DVc0iBvLybYmgh2-G6d_hjL20?usp=sharing \nPUBLIC LINK (Working DEMO for better usability): https://1770test2.online/login \n\n2- Walkthrough video of main flows + written approvals (pilot developer & notary).\nVIDEO LINK (we recommend downloading or watching on the following unlisted youtube link): https://drive.google.com/file/d/1zWuh06f6jGtKRHR9CWTZGqx_8aEqdc9c/view?usp=sharing \n\nVIDEO LINK YouTube: https://youtu.be/R-0_ADleRgE \n\nWritten Approval PDF: https://drive.google.com/file/d/1o_mgzQXOtaJw9eZ3bJD2m5NBL2whMyO1/view?usp=sharing \n\n3-Component library documentation (public).\nPDF LINK:https://drive.google.com/file/d/1ObpgbKcFLjWp9VDNkT7c8Svhi9CKJmb3/view?usp=sharing \n\n4-UX documentation (public) showing proof-rendering patterns.\nPDF LINK: https://drive.google.com/file/d/1OeqB0ZOt-9bffd-ilDeJeJaK5XrBCSKQ/view?usp=sharing \n\n5-Plan file (PDF/MD) in the repo + brief approval note; cross-link to Milestone 3: UI Implementation & Integration.\nPDF Link: https://drive.google.com/file/d/1ro6OrSQsAmVlV5buMeC_4cDdwbI_lnzx/view?usp=sharing \n\n6 - File delivery (PDF download + Online publically accessible link) for Design and implementation plan for smart contract and backend development (this includes direct references to what’s delivered on step 5 regarding UX and Backend connection) : \nhttps://drive.google.com/file/d/1H4C5RaGkP9hGJyQYuIyY4KJpXSXn4rQX/view?usp=sharing",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 22
+    }
+  ]
+}

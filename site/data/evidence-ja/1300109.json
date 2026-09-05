@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "ソースのテキストと言語のトークンを出すために必要なメソッドを入力する Tokenizer クラス\nこれは、コンパイラの最初のステップです, テキストの生の部分から、私たちは \"tokens\"で動作するより簡単なものを得る, ウィッチは、自分の上でいくつかの意味を運ぶテキストのより小さな部分ではありません (例えば. 言葉).\nこのマイルストーンの出力は、コンパイラの最初の部分の実装です",
+      "criteria": "テキスト(ソースコード)を記述すると、トークナイザーは、対応するトークンを出す上で反復できます。\n例えば、 \"const thing = 2;\" は \"const\" \"identifier\" \"thing\" \"equals\" \"literal integer\" \"2\" \"セミコロン\" のトークンを生成します.",
+      "report": "実装されたTokenizerは、https://github.com/HarmonicLabs/pebble/main/packages/pebble/src/tokenizer/Tokenizer.tsをご覧ください。\nここでは、Tokenizer がどのように使用されるかを示すビデオです。 https://youtu.be/51q2KN11pf8"
+    },
+    {
+      "no": 2,
+      "promise": "前のマイルストーンから Tokenizer を入力し、生成されたトークンを消費してソース言語のAST表現を生成するクラスです。\nASTの建設中、パーサーは言語の構文が尊重されていることを確認します。\nこの点ではコンパイラがソースコードのセンスを上げる\nたとえば \"const thing = 2;\" は有効な構文ですが、 \"const const = 2;\" は言語のキーワードであり、変数の名前には使用できませんので、ここでは合成エラーがキャッチされます.",
+      "criteria": "aST(Abstract Syntax Tree) の表現をビルドできるソーステキストを指定しました。\nASTはソースコードのメモリ内表現です。 既知の構造に基づいてテキストの部分が「グループ化」されるところ。\nそのため、コンパイラはこれらの構造を「参照」して変数に保存することができます.",
+      "report": "パーザーの実装: https://github.com/HarmonicLabs/pebble/main/packages/pebble/src/parser/Parser.ts\nここでは、パーザーがどのように機能するかを示すビデオです。 https://youtu.be/qD7hACz5W2Q"
+    },
+    {
+      "no": 3,
+      "promise": "AST では、プログラムのセマンティックを確認し、契約をさらに最適化するために使用される低レベルの中間表現(IR)にコンパイルします。\n\nこの手順は次のとおりです。\n・タイプチェック\n・desugaring(ループ等)\n・同等性の書き換え式\n・その他\n\nここでコンパイラはプログラムの完全な写真を持っており、最終的に「翻訳」ソースコードをブロックチェーンの言語に近いものにすることができます(uplc)",
+      "criteria": "プログラムからIR(およびUPLC)が構築されます\nこの時点でコンパイラは、オンチェーンで使用できる有効な契約を生成できます",
+      "report": "compilerの実装は次のとおりです。 https://github.com/HarmonicLabs/pebble/main/packages/pebble/src/compiler/Compiler.ts\nここでは、コンパイラがどのように動作するかを示すビデオです。 https://youtu.be/gOXJvO2fZb0"
+    },
+    {
+      "no": 4,
+      "promise": "・lspレポ\n・vscode拡張子\n\n「コンパイラの調整」は、良い開発者の経験には十分ではありません。\nこのマイルストーン出力は、シンタックス強調、自動補完など、言語を使用して開発者がいくつかの「生活の質」の改善を楽しむことができるように、コンパイラに追加ツーリングを生成することです.",
+      "criteria": "対コードエクステンションは、有効なプログラムの構文を強調し、コンパイラで発生したエラーを報告します.",
+      "report": "LSPリポジトリ: https://github.com/HarmonicLabs/pebble-lsp\n\nlsp エクステンションのインストール方法を説明するビデオ: https://youtu.be/-LbMHA73y24"
+    },
+    {
+      "no": 5,
+      "promise": "・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "クローズアウトビデオ: https://youtu.be/304RIRcc3us\n\nビデオは完全に公開されています\n\nクローズアウトレポート: https://github.com/HarmonicLabs/catalyst-close-reports/blob/main/1300109-pebble/README.md"
+    }
+  ]
+}

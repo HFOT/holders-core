@@ -1,0 +1,72 @@
+{
+  "title": "DAO Treasury & Protocol Parameter Management via On-Chain Governance - By MuesliSwap",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 37000,
+      "promise": "・Design & outline basic functionality that needs to be provided by treasury contract and protocol parameter update interface\n・Comprehensive comparison, in-depth code review, and testing of existing on-chain governance solutions\n・Planning integration of new governance components into existing off-chain voting platform developed by us in Fund9\n・Writing blog post presenting out findings and detailing the resulting proposed solutions\n\nConcretely, this document should contain\n・Detailed design and functional specifications for the treasury contract and protocol parameter update interface.\n・Comparative analysis report on existing on-chain governance solutions.\n・Integration plan outlining the steps for incorporating new governance components into the off-chain voting platform.\n・Blog post outlining the research findings and proposed solutions.\n\nThis phase will be accompanied by two measures to collect feedback in an early development stage.\n・Blog posts: We will publish regular blog posts outlining our insights and proposed solutions, their implementation on Cardano, and other findings from our research. These blog posts are also used to share detailed updates on our progress with the commun",
+      "criteria": "The result should be a publicly accessible Google Document, Blog post on Medium or Markdown document outlining the planned implementation and features of the targeted governance contract / website combination.",
+      "report": "The document outlined in the milestone section was uploaded to the GitHub repository:\nhttps://github.com/MuesliSwapTeam/muesliswap-onchain-governance/tree/44a4a4782fbd2ddaf95f2a3ba35e8b0537514765\n\nMoreover we have shared and initiated a discussion about the Governance Protocol in this Medium Article:\nhttps://medium.com/@muesliswap/introducing-muesliswap-on-chain-governance-on-cardano-4b30044f7701\n\nFinally we have initiated the discussion and start gathering feedback based on this Tweet:\nhttps://x.com/MuesliSwapTeam/status/1754524705892044886?s=20",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 37000,
+      "promise": "This phase consists of several subtasks that \n・Implementation of a first version of the Treasury smart contract\n・Implementation of governance contract\n・Development of off-chain backend infrastructure for interaction with smart contract\n・Testing and internal security audit\n\nThis will be accompanied by blog posts, community engagement and open source repositories to let the community track progress on the project.",
+      "criteria": "A first version of the treasury and governance contract should be presented, ideally together with notes from the internal audit that outlines required adjustments. The code should come with simple scripts that show the interaction of users with the contracts on chain.",
+      "report": "In the February update, we have publicly shared the contracts that control the MuesliSwap governance system. There functioning is outlined in more detail in the pdf report in the public repository here:\nhttps://github.com/MuesliSwapTeam/muesliswap-onchain-governance/tree/0bfc9a037fc79d13dbfd1ff107332ebf97d14075\nMoreover this repository contains easy-to-use scripts to interact with the Smart Contract (i.e. initialize, lock stake, vote etc) that are outlined in detail in the bottom of the description.",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 37000,
+      "promise": "This phase consists of subtasks to achieve a mechanism that allows updating parameters of the MuesliSwap protocol based on Governance votes. These may include pool fees or batching licenses. The concrete subtasks are\n・Protocol parameter update mechanisms\n・Integration of parameter updates at the example of one or multiple widely used open-source DeFi protocol (to be selected) including changes to smart contracts, testing, implementation of required off-chain tooling\n・Testing and internal security audit\n\nThis will build on top of the previously conceived treasury and governance contracts.\nThis will be accompanied by blog posts, community engagement and open source repositories to let the community track progress on the project.",
+      "criteria": "A first version of the parameter change contract should be presented, ideally together with notes from the internal audit that outlines required adjustments. The code should come with simple scripts that show the interaction of users with the contracts on chain. This does not include releasing potentially affected contracts that implement the MuesliSwap protocol itself.",
+      "report": "This milestone demands results for the following points\n・Protocol parameter update mechanisms\n・Integration of parameter updates at the example of one or multiple widely used open-source DeFi protocol (to be selected) including changes to smart contracts, testing, implementation of required off-chain tooling\n・Testing and internal security audit\n\nWe have developed and published respective results as follows:\n・The implementation of a license minting mechanism that tracks tallies and a simple AMM pool that allows upgrades based on tallies: \n・https://github.com/MuesliSwapTeam/muesliswap-onchain-governance (onchain/licenses and onchain/simple_pool)\n・We have added a description on how to create a pool and trigger an upgrade in the main description\n・An example pool upgrade based on a tally was submitted to preprod testnet here: https://preprod.cexplorer.io/tx/4143ff9e42dd805be0916d9114283a7f0fd5beb96cb09e48259c0820f8638a5c\n・A comprehensive report about the conducted internal security audit was added to the repository:\n・https://github.com/MuesliSwapTeam/muesliswap-onchain-governance/blob/39473ac4f21c090576b9fcd7b6da971c11af920c/report/audit.pdf",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 3
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 37000,
+      "promise": "The implemented treasury, governance and parameter change contracts will likely need several adjustments resulting from community feedback and internal audits. After the adjustments from this phase are applied, they are passed to an external entity that will perform an independent security audit. The output after the audit contains the resulting code that was agreed upon with the auditor and a final report.\n\nThis will be accompanied by blog posts, community engagement and open source repositories to let the community track progress on the project.",
+      "criteria": "An audit report for the resulting contracts by an independent party should be presented. This comes together with the final contract code in a publicly accessible repository.",
+      "report": "As outlined in the evidence section, this Milestone requires the submission of the final code and the audit report of the MuesliSwap Onchain Governance project. We have supplied both to the official Onchain Governance Repository, which can be found here:\nhttps://github.com/MuesliSwapTeam/muesliswap-onchain-governance/\nThe Audit was performed by Mirdin LLC (https://www.mirdin-verification.com/) which have an amazing track record in auditing Plutus Contracts for Cardano. Their report contained plenty of recommendations for adjustments in the contract, which have been integrated and included in the latest commit of the git repository. The report itself can be accessed here (as part of the official Onchain Governance Repository)\nhttps://github.com/MuesliSwapTeam/muesliswap-onchain-governance/blob/c341e1d4494e551904eabbe9ce294224a9a6c83a/report/audit_mirdin.pdf",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 3
+    },
+    {
+      "no": 5,
+      "month": "6",
+      "cost": 37000,
+      "promise": "After the code is completed and the audit finished the project will wrap up by developing a complete and accessible documentation with tutorials for users on how to interact with the protocols. \nTo facilitate adoption and understanding, we will create comprehensive documentation and tutorials that explain the implementation, usage, and integration of our governance solutions. These resources will be made available on our project's website and other relevant platforms. By providing clear and accessible documentation, we aim to empower developers to integrate our governance mechanisms into their own projects and contribute to the growth of the Cardano ecosystem.\n\nBeyond this publication, the Team will maintain and supervise the repository and collect and integrate feedback.",
+      "criteria": "Documentation and protocols are presented and shared publicly in an accessible manner. Developers should understand details of the usage and integration of the protocols and users should understand the broader applicability of the tool.",
+      "report": "We are proud to announce that the MuesliSwap On-Chain Governance Platform is now complete and publicly shared. The source code to the entire platform is available via the public GitHub repository in\nhttps://github.com/MuesliSwapTeam/muesliswap-onchain-governance\nMoreover, we have created a comprehensive, step-by-step guide for DAO creators, participants and batchers (for facilitating transaction processing) and published it here:\nhttps://muesliswap.gitbook.io/muesliswap-onchain-governance/\nThe entire repository gives a detailed overview over a host of scripts we provide for facilitating interaction with the blockchain and even hosting a REST API server for creating a simple user-friendly web-interface to the DAO platform.\nPlease find the project closeout report here:\nhttps://docs.google.com/document/d/1s26kcTQai6_n3NQUrCb2h1y5Zwhh7tvX0CuGciQnZbg/edit\nMoreover the project closeout video is published here:\nhttps://youtu.be/Nt1JX8KMf1M",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

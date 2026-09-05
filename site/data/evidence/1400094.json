@@ -1,0 +1,60 @@
+{
+  "title": "One Launchpad for All DEXes: Deploy Tokens on Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 30000,
+      "promise": "・Extended launchpad smart contracts to support liquidity pool creation across multiple DEX protocols.\n・Compile instructions and a screenshot of successful compilation.\n・Tests covering smart contracts and a screenshot of test results.",
+      "criteria": "・Smart contracts are provided in the open source GitHub repo.\n・﻿Support at least two major permissionless Cardano DEX protocols.\n・Smart contracts successfully compile and a screenshot shows that.\n・All tests pass and a screenshot shows that.",
+      "report": "A link to a GitHub repo with the smart contracts code.\nhttps://github.com/WingRiders/launchpad-contracts\n\n﻿A link to compilation instructions and a screenshot of a successful compilation\n https://github.com/WingRiders/launchpad-contracts/blob/master/README.md#setting-up\n https://github.com/WingRiders/launchpad-contracts/blob/master/catalyst-imgs/compilation.png\n\nA link to instructions on how to run tests and a screenshot showing that all tests pass.\n https://github.com/WingRiders/launchpad-contracts/blob/master/README.md#setting-up\n https://github.com/WingRiders/launchpad-contracts/blob/master/catalyst-imgs/tests.png",
+      "kinds": [
+        "code"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 30000,
+      "promise": "・Frontend UI enabling multi-DEX launch.\n・Backend services for launch configuration storage and retrieval..\n・Backend API documentation.\n・Tests covering backend services and a screenshot of test results.\n・Frontend UI enabling users contributing to the launch.\n・Wallet integration for transaction signing\n・A launchpad agent service orchestrating the on-chain execution.\n・Tests covering the agent service and a screenshot of test results.",
+      "criteria": "・Issuers can fully configure and start a multi-DEX launch in the UI.\n・Frontend generates a valid single transaction for signing that matches the issuer’s configuration.\n・Backend API docs include endpoint descriptions and sample payloads.\n・All backend tests pass and a screenshot shows that.\n・Users can contribute to the launchpad using the provided frontend.\n・Users can withdraw a contribution before the launchpad ends.\n・UI works with at least two major Cardano wallets.\n・The launchpad agent service successfully orchestrates on-chain execution.\n・All agent tests pass and a screenshot shows that.",
+      "report": "・Link to demo video showing a full multi-DEX launch on testnet:\n・Overview: https://youtu.be/MSn1nbhmdq8\n・Create a new token launch: https://youtu.be/fRyioVaY6_M\n・Link to backend repository and Link to “How to run” and environment setup instructions (README): https://github.com/WingRiders/multi-dex-launchpad/tree/main/backend\n・Link to API docs: https://github.com/WingRiders/multi-dex-launchpad/blob/main/backend/api.md\n・Link to instructions on how to run backend tests, CI run link showing all tests passed, Screenshot of passing backend tests:\n・instructions: https://github.com/WingRiders/multi-dex-launchpad?tab=readme-ov-file#run-tests\n・CI: https://github.com/WingRiders/multi-dex-launchpad/actions/runs/22299924657/job/64505020899\n・screenshot: https://github.com/WingRiders/multi-dex-launchpad/blob/main/catalyst-evidence/milestone-2/backend-tests.png\n・Link to short clip (or timecode in main video) showing a user contribution on testnet and Block explorer link to the contribution transaction hash:\n・video: https://youtu.be/3V7zFZeoQkY\n・transaction: https://preprod.cardanoscan.io/transaction/ff9bb84e1d4d98100df1890ac2fb41c88612d165c931d30ec6872693bb739d20?tab=utxo\n・Link to short clip (or timecode in main video) showing a user contribution withdrawal on testnet and Block explorer link to the contribution withdrawal transaction hash:\n・video: https://youtu.be/KA6ARr8znpA\n・transaction: https://preprod.cardanoscan.io/transaction/478ea06b2bab1286ae2d1c1356646f28f089728a076a614f596690e49b5c54bd?tab=utxo\n・Links (or timecode in main video) showing successful signing with two major Cardano wallets:\n・Eternl: https://youtu.be/3V7zFZeoQkY\n・Lace: https://youtu.be/eniq7kDkfq0\n・Agent logs excerpt (public gist or file) with submitted tx IDs: https://github.com/WingRiders/multi-dex-launchpad/blob/main/catalyst-evidence/milestone-2/agent-logs.log\n・Link to instructions on how to run agent tests, CI run link showing all agent tests passed, Screenshot of passing agent tests:\n・instructions: https",
+      "kinds": [
+        "chain",
+        "code",
+        "video"
+      ],
+      "links": 34,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 25000,
+      "promise": "・Full public testnet version of the multi-DEX launchpad.\n・Documentation for token issuers, contributors and developers.",
+      "criteria": "・Testnet launchpad instance is accessible to public users for trial launches.\n・Documentation includes examples for issuing a launch, configuring multi-DEX allocations, and interacting with the launchpad.\n・At least three successful multi-DEX launches completed on testnet with different configurations.",
+      "report": "・Link to the final GitHub repository: https://github.com/WingRiders/multi-dex-launchpad\n・Publicly accessible testnet deployment URL: https://multi-dex-launchpad.staging.wingriders.com/\n・Recorded demos of testnet launches with multi-DEX allocations: https://www.youtube.com/watch?v=Uu2wb-o8CWk\n・GitHub repository or hosted docs site link with final issuer and developer documentation:\n・User manual: https://github.com/WingRiders/multi-dex-launchpad/blob/main/frontend/user-manual/user-manual.md\n・Manual for contributors: https://github.com/WingRiders/multi-dex-launchpad/blob/main/frontend/user-manual/contribute.md\n・Manual for token issuers: https://github.com/WingRiders/multi-dex-launchpad/blob/main/frontend/user-manual/create-new-launch.md\n・Developer documentation: https://github.com/WingRiders/multi-dex-launchpad/blob/main/README.md",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 14
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 15000,
+      "promise": "・A 2/3 page written summary ‘Project Close-out Report’.\n・Short video ‘Project Close-out Video’.",
+      "criteria": "・Project Close-out Report’:\n・Lists Key Performance Indicators (KPIs) achieved during the project, \n・Explains how the KPIs were met or why they weren’t.\n・Outlines next-stage plans for the product or service.\n・‘Project Close-out Video’ outlining the project achievements and deliverables.",
+      "report": "Dear Reviewer,\nPlease find below all relevant links for the project One Launchpad for All DEXes: Deploy Tokens on Cardano.\nLink to Project Close-out Report:\nhttps://github.com/WingRiders/multi-dex-launchpad/blob/main/catalyst-evidence/project-close-out-report.pdf\nLink to Close-out Video:https://www.youtube.com/watch?v=uI5_phoUxkU\nLinks to Other Relevant Project Sources or Documents:\nProject\n・Multi-DEX Launchpad App\n・Main Repository \n・Smart Contracts Repository\n\nDocumentation\n・User Manual\n・Contributor Guide\n・How to create a new token launch\n・Developer Documentation\n\nEvidence & Testing\n・Overview Demo\n・Create Token Launch Demo\n・Milestone 3 Demo Video",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 14
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "title": "Indigo V3 – CNT-Backed Collateral for Indigo CDPs",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 75000,
+      "promise": "・Updated iAsset, CDP, Governance, Treasury, Staking, and Stability Pool smart contracts to support Cardano Native Token (CNT)-backed collateral.\n・On-chain logic for collateral whitelisting, risk parameters (discount rates, oracles), and multi-asset interest and fee handling.\n・Positive and negative test cases for ADA and non-ADA CDPs.\n・Technical Specification document outlining the changes to the contracts required to fulfill the CNT-backed collateral, as well as planned tests for CNT-backed collateral.",
+      "criteria": "・All smart contracts compile successfully in Aiken.\n・Full test-suite passes for both ADA and CNT-based CDPs.\n・Collateral ratio, interest, liquidation, and redemption calculations function correctly for multiple collateral types.\n・Test suite achieves minimum 90% code coverage across all updated contract modules.",
+      "report": "Technical Specifications Document: https://drive.google.com/file/d/1OdPNDJsmijxYdmLObMEZtpHaiMe5iT9R/view?usp=sharing\nThe technical specifications document begins by outlining the changes that will be required to be made to the existing v2.1 Indigo smart contracts, at the end of the document, we outline all of the tests that are planned to be implemented.\nMapping of acceptance criteria:\n1) Updated iAsset, CDP, Governance, Treasury, Staking, and Stability Pool smart contracts to support Cardano Native Token (CNT)-backed collateral.\nIn the technical specifications document, we outline all of the ty[e and rule changes required to support the Cardano Native Token backed collateral. Specifically the implementation details of the Assets script (iAssets), CDP script (CDP), Governance script (Governance), and Stability Pool script (Stability Pool). No changes ended up being required for the Treasury contract for the purpose of Cardano Native Token backed collateral.\n・Assets Script - page 1 - 3\n・CDP script - page 3 - 8\n・Governance - page 8 - 10\n・Stability Pool - page 10 - 14\n\n2) On-chain logic for collateral whitelisting, risk parameters (discount rates, oracles), and multi-asset interest and fee handling.\nThe on-chain logic for collateral whitelisting happens through governance, specifically if you look at the “ProposalContent” we have added AddCollateralAsset and UpdateCollateralAsset types, the rules for these changes are described in the “Collateral Assets” section of Governance in the Technical Specifications.\nReference pages: 8 - 10\nThe exact parameters for a CollateralAsset, can be found at the end of page 1, spanning into page 2 of the technical specification:\n・iasset: AssetClass\n・collateral_asset: AssetClass\n・price_info: IAssetPriceInfo\n・interest_oracle_nft: AssetClass\n・redemption_ratio_percentage: OnChainDecimal\n・maintenance_ratio_percentage: OnChainDecimal\n・liquidation_ratio_percentage: OnChainDecimal\n・min_collateral_amt: Integer\n・first_collateral_asset: Bool\n・nex",
+      "kinds": [
+        "chain",
+        "doc",
+        "video"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 160000,
+      "promise": "・Updated Indigo Off-chain SDK to support CNT-backed CDPs.\n・Wallet integration logic for multi-asset deposits, withdrawals, and interest payments.\n・Backend service updates to handle per-collateral governance parameters and oracle feeds.",
+      "criteria": "・Off-chain SDK supports all operations for ADA and CNT-backed CDPs.\n・Wallet connections function seamlessly for multi-asset flows. QA tests with primary user wallets such as Eternl, Lace, Vespr, and Tokeo.\n・Backend passes all unit and integration tests for mainnet-readiness with >= 85% test code coverage. All test cases are documented and include edge cases for different browsers and wallets.",
+      "report": "Output 1: Indigo Off-chain SDK updated to support CNT-backed CDPs\n\nAcceptance criteria:\n・Off-chain SDK supports all operations for ADA and CNT-backed CDPs\n・Wallet integration functions for multi-asset deposits, withdrawals, and interest payments\n・Backend services support per-collateral governance parameters and oracle feeds\n\nEvidence:\n・Video demonstration (full CDP lifecycle via SDK + wallet on Preprod): https://youtu.be/prOR4NvoNL4\n・The demonstration includes both ADA (native asset) and NIGHT (CNT), proving multi-collateral CDP support.\n・GitHub repository (Indigo V3 SDK with implemented features): https://github.com/IndigoProtocol/sdk\n・On-chain transaction verification (Preprod):\n・Open ADA CDP:\n・https://preprod.cardanoscan.io/transaction/1f955edcd649e4ec56020b34fa5b41ec88b6a02d7e711d44175192f5601a97bb\n・Open CNT (NIGHT) CDP:\n・https://preprod.cardanoscan.io/transaction/4fdf4bdb4b5b41fb422b7c8a68c60b1990c757e9e138fa7067aa42a0733b3255\n・Deposit CNT collateral:\n・https://preprod.cardanoscan.io/transaction/31eaf4eb62716ee751489869a2cb9bb5941c2919b6402e1d14dfe318a845b26a\n・Close CNT CDP:\n・https://preprod.cardanoscan.io/transaction/73f4342962ae5f2a584eabe568887892e8fbc4e04dd7d3f7be1dffffca712297\n\nOutput 2: Wallet integration for multi-asset CDP interactions\n\nAcceptance criteria:\n・Wallet connections function seamlessly across CIP-30 compatible wallets\n・Multi-asset flows (ADA + CNT) are supported end-to-end\n・QA testing completed with Eternl, Lace, Vespr, and Tokeo\n\nEvidence:\n・Video demonstration showing wallet connection and execution of ADA and CNT CDPs: https://youtu.be/prOR4NvoNL4\n・Manual QA testing was performed across Eternl, Lace, and Vespr wallets, successfully executing multi-asset CDP operations.\n・Eternl Screenshot: https://drive.google.com/file/d/1dRS2f8e3iNsV7ggsYczGDZTivbiUyQuW/view?usp=sharing\n・Eternl Tx: https://preprod.cardanoscan.io/transaction/432feca4fb8691a094aa6f0fde6c18c82d217b60195b2d3bb033ae10ceb391ec\n・Lace Screenshot: https://drive.google.com/file/d/1mUW",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 18,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 100000,
+      "promise": "・On-chain upgrade logic for moving existing ADA CDPs, Stability Pools, and other Indigo UTXOs to new multi-collateral-compatible versions.\n・Creation of initial CollateralAssetRef NFTs and governance-controlled supported_collaterals list.\n・Migration scripts to ensure full continuity for existing users.",
+      "criteria": "・All existing Indigo UTxOs remain valid post-upgrade.\n・A Preprod upgrade occurred with UTxOs similar to those found in Mainnet for testing. A reasonable minimum amount of UTxOs for all UTxO types in the Indigo Protocol are tested with different value types. (For example: small CDPs and large CDPs, minimal interest CDPs and large interest CDPs, etc.)\n・Governance proposals successfully add new collateral types in Preprod environment.\n・No loss of funds or incorrect parameter changes during migration. This will be confirmed via. independent review by auditor.",
+      "report": "A. Output: Preprod Indigo v2.1 Environment Initialized with Mainnet-Like Protocol State\nThis proves the following Milestone Outputs:\n・On-chain upgrade logic for moving existing ADA CDPs, Stability Pools, and other Indigo UTXOs to new multi-collateral-compatible versions.\n・Creation of initial CollateralAssetRef NFTs and governance-controlled supported_collaterals list.\n\nAcceptance criteria:\n・All existing Indigo UTxOs remain valid post-upgrade.\n・A Preprod upgrade occurred with UTxOs similar to those found in Mainnet for testing. A reasonable minimum amount of UTxOs for all UTxO types in the Indigo Protocol are tested with different value types. (For example: small CDPs and large CDPs, minimal interest CDPs and large interest CDPs, etc.)\n\nEvidence: \nA full Indigo v2.1 Preprod environment was initialized using production-equivalent parameters and populated with: 41 CDPs across multiple iAssets, Stability Pool accounts, LRPs, Governance proposals, Staking positions, Frozen and liquidated CDPs.\nThis environment was designed to simulate realistic Mainnet upgrade conditions for the v2.1 → v3 migration process.\nSupporting evidence is a Protocol Upgrade Execution Report including initialization transaction hashes, core protocol UTxO references, and upgrade transaction hashes: https://drive.google.com/drive/folders/1PAv9GHSynrzHK6mDWZyGz6bsuVszsL9w?usp=drive_link (Specifically see \"Protocol Upgrade to V3\", you can follow along this document with the below video review)\nVideo review done by Indigo Tech Lead: https://youtu.be/8rU_l-0jV1Y\nB. Output: Verification of Successful Upgrade\nAcceptance criteria: \n・A Preprod upgrade occurred with UTxOs similar to those found in Mainnet for testing. A reasonable minimum amount of UTxOs for all UTxO types in the Indigo Protocol are tested with different value types. (For example: small CDPs and large CDPs, minimal interest CDPs and large interest CDPs, etc.)\n・No loss of funds or incorrect parameter changes during migration. This will be con",
+      "kinds": [
+        "chain",
+        "doc",
+        "video"
+      ],
+      "links": 25,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 45000,
+      "promise": "・Full audit of updated Indigo smart contracts by TxPipe (or equivalent).\n・Audit report detailing vulnerabilities, severity, and recommended fixes.\n・Post-audit changes implemented and verified. Reviewed by developers.",
+      "criteria": "・All high and medium severity findings resolved prior to mainnet deployment. All low/info findings are signed-off by the Auditors as either resolved or documented as an acceptable risk. Justification for any non-accepted findings will be provided,\n・Audit report published for community review.\n・Video of Lead Developer reviewing Audit Report and associated findings/fixes.",
+      "report": "A. Output: Full audit of updated Indigo smart contracts by TxPipe (or equivalent) and audit report detailing vulnerabilities, severity, and recommended fixes. Post-audit changes implemented and verified. Reviewed by developers.\nAcceptance criteria: All high and medium severity findings resolved prior to mainnet deployment. All low/info findings are signed-off by the Auditors as either resolved or documented as an acceptable risk. Justification for any non-accepted findings will be provided. Audit report published for community review.\nEvidence: Publicly available audit report via. Google Drive: https://drive.google.com/file/d/1wBxUbhJmlILQX_Aqv0wSzElvREynlr4U/view?usp=sharing\nPlease note: Some links provided within the audit report are private on purpose as they were used internally for tracking purposes and for internal process tracking. These links are valid for access to TxPipe and Indigo team members only. The links themselves do not have much material beyond what the audit report provides.\nB. Output: Audit report detailing vulnerabilities, severity, and recommended fixes.\nAcceptance criteria: Video of Lead Developer reviewing Audit Report and associated findings/fixes.\nEvidence: A video of the lead developer going through each of the audit findings & fixes. Each audit item should be covered and reviewed with a less technical explaination provided for each finding as well as how the issue was resolved.\nYoutube Link: https://youtu.be/iDZ33XhBWuY\nC. Acceptance criteria: All high and medium severity findings resolved prior to mainnet deployment. All low/info findings are signed-off by the Auditors as either resolved or documented as an acceptable risk. Justification for any non-accepted findings will be provided,\nEvidence: A report of the tests written by auditors, if any, (for proving vulnerabilities found in the audit) showing failing at the pre-audited script hash vs. the tests passing with the post-fix script hash.\nNo tests were provided by the auditors as thei",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 3,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 45000,
+      "promise": "・Deployment of updated Indigo V3 contracts to Cardano mainnet.\n・Frontend UI updated for collateral type selection, multi-asset balances, and liquidation tracking.\n・Governance proposal executed to onboard initial CNT collateral.\n・Public documentation and announcements released.",
+      "criteria": "・Mainnet deployment verified via on-chain transactions. Script hashes on-chain match audited code.\n・The Indigo Web App (frontend) displays all available collateral types, multi-asset balances, and any liquidation tracking.\n・Governance vote executed and results publicly verifiable. Proposal passes the Adaptive Quorum Biasing (the Indigo governance approval mechanism) of the Indigo DAO system, signaling proposal approval. Including on-chain execution via. tx hashes.\n・All documentation on Indigo App and in GitBook is updated and accessible via. public GitBook link.",
+      "report": "Mainnet Deployment & Governance Execution\nA. Output: Deployment of Updated Indigo V3 Contracts to Cardano Mainnet\n\nAcceptance criteria:\n・Mainnet deployment verified via on-chain transactions.\n・Script hashes on-chain match audited code.\n\nEvidence:\nIndigo V3 was successfully deployed to Cardano Mainnet and activated through the Indigo protocol upgrade process.\nLink to proposal: https://app.indigoprotocol.io/indy-dao/118\nThe upgrade began with deployment of the VERSION_RECORD UTxO:\n・VERSION_RECORD deployment: https://cexplorer.io/tx/dff0c30bfb0d48178171ef12c4fd06f5c9c1f25bfa54a734bcbbf66da2e4fac6\n\nThe VERSION_RECORD datum contains the upgrade instructions used by Indigo v2.1 contracts to migrate protocol state to the Indigo V3 architecture.\nExample upgrade transactions include:\n・iUSD iAsset upgrade: https://cexplorer.io/tx/fc0a11f80f20cf6925a8793065e828c77ccba9909d173eb7e2521a8d236bea2e\n・iUSD Stability Pool upgrade: https://cexplorer.io/tx/46cc8c843009c6ecf90d21a7d5af6228b51191bdd89e389767451418944cfe5f\n\nThe iUSD iAsset upgrade creates the V3 iAsset representation and the initial iUSD/ADA collateral asset. The Stability Pool upgrade additionally migrated the pool from epoch 1 to epoch 0 as part of the V3 architecture.\nAudit report: https://drive.google.com/file/d/1wBxUbhJmlILQX_Aqv0wSzElvREynlr4U/view?usp=sharing\nValidator hash verification report: https://docs.google.com/document/d/1hODpZvpTUG_Oe1LdAqTuP1ZCh7TxMCbmBiQW0hoI0A4/edit\nIndependent auditor sign-off: https://drive.google.com/file/d/1L1cO-LvlMK0OdmUe0-pQKLdEGpdQJior/view?usp=sharing\nExamples of deployed V3 contracts actively in use on Mainnet:\n・CDP Creator: https://cexplorer.io/script/95c1458dad9dfddfab22d163fccbb9a8de483ace1e1c990b1f5e3eff?tab=uses\n・CDP: https://cexplorer.io/script/ff0b10bff20e4b68b491492e5ba6c8048a704763b0a45ce2995da0be?tab=uses\n・Governance Proposal Execution: https://cexplorer.io/script/0e764163b06d954f2dcfecf8d3b257e2bfe3d326d5670e54ca1974ce?tab=uses\n・Treasury: https://cexplorer.io/script",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 21,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "8",
+      "cost": 125000,
+      "promise": "・Final close-out report (Comprehensive Project Close-Out Report detailing deliverables, KPIs, and budget summary.)\n・Final closeout video (a 2-5 minute video of our tech lead discussing the project challenges, accoplishments, etc)\n・Final closeout link to V3 tagged GitHub repository\n・An operational status report that invclude KPIs, such as Active CNT-backed CDPs, the whitelisted collateral types, TVL breakdown by collateral type.",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・indigo-sdk tagged V3 is publicly available\n・An operational status report that has on-chain references to the reported KPIs for easy tracking. \n・At least 2 types of collateral whitelisted via. on-chain governance.\n・Protocol accessible and functional via. app.indigoprotocol.io",
+      "report": "Link to final closeout report: https://docs.google.com/document/d/1q3HstWvHHijEptd75cPk5xkcDMOR25TU2ZoGcDIzGr8/edit?usp=sharing\nLink to final closeout video: https://youtu.be/TO1xwgmxSTA\nLink to Github for indigo-sdk v3: https://github.com/IndigoProtocol/sdk (version tagged: https://www.npmjs.com/package/@indigo-labs/indigo-sdk/v/0.3.28)\nLink to operational status report: https://docs.google.com/document/d/1xOcEqW-GitnxPffKBSCrfHGwc58hgMcKUTnUBkROlQ8/edit?usp=sharing\nLink to V3 proposals:\n・Launch Proposal: https://app.indigoprotocol.io/indy-dao/118\n・Add ADA Collateral Asset for iJPY: https://app.indigoprotocol.io/indy-dao/120\n・Add ADA Collateral Asset for iEUR: https://app.indigoprotocol.io/indy-dao/122\n・List of all proposals: https://app.indigoprotocol.io/indy-dao\n\nVotes for all proposals for polls after #118: https://drive.google.com/file/d/1Pcj3mbyAK5EiqSy2T7islcIUXWRDVFcY/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

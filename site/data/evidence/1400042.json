@@ -1,0 +1,32 @@
+{
+  "title": "CHARLI3 Discord/Telegram Token Data and Multi-DEX swap bot",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "・Outreach to DEX Aggregator integration partners (Steelswap, Minswap, Dexhunter, or other)\n・Create a Design Document and Project Plan including:\n・Bot Design: the team will create a design document providing high level architectural approach to building both Discord and Telegram bots.\n・Research and Design plan for Wallet Integration: The team will research and document an approach for building and more importantly securing user wallets\n・Confirm DEX Aggregator integrations: the team will confirm DEX aggregator integrations (at least two of Steelswap, Dexhunter, Minswap) along with any integration risks or blockers\n・Research verification process for Discord and Telegram: Research and create an implementation plan to meet Discord/Telegram verification (that is the verification process that those companies will allow the bot to operate in their channels)",
+      "criteria": "・Outreach to Integration partners completed: The team reached out to Steelswap, Minswap, and Dexhunter to confirm integration/partnership (or other available DEX Aggregators at the time of project milestone)\n・Project Plan Documented Completed including the following: \n・Bot Design and Implementation Plan\n・List of DEX Aggregator integrations planned\n・Timeline to integrate\n・Any blockers or delays due to third party integrations and a plan to mitigate the issues (optional)\n・Discord and Telegram verification requirements and plan to meet those requirements\n・Basic wallet design and security plan",
+      "report": "Public Report: https://docs.google.com/document/d/1-9N19qwZNrUqPn8mVaPyPbtRz2WTg-uhTJsJa9vKDtQ/edit?usp=sharing\n・Contains all evidence of all outputs and ACs \n\nDEX Aggregator partner announcements: \nSteelswap: https://x.com/SteelSwap/status/2010530769974792290?s=20\nMinswap: https://x.com/Oraclecharli3/status/2011479557396906492 \nDexhunter: https://x.com/Oraclecharli3/status/2011662015379734900?s=20",
+      "kinds": [
+        "doc",
+        "social"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "Design bot with basic functions:\n・The team will build MVP versions of the Discord and Telegram bots.\n・Implement /price and /info commands powered by Charli3 Token Data API.\n・Complete Discord and Telegram bot verification for safe deployment.\n・Provide basic responses for token data and info requests across both platforms.\n\nDesign and Implement Wallet Integration:\n・Implement bot wallet functionality: user can create wallet, view balances, send funds, and export keys.\n・Document the wallet security model and user password system.\n・Deploy wallet commands consistently in Discord and Telegram bots.",
+      "criteria": "・Bots with basic functions Completed\n・Basic functions enabled: users can run /price and /info commands in Discord and Telegram test servers and receive correct token data from the Charli3 API. (price = current price, info = policy id, name, ticker)\n・Discord and telegram bot verification is complete and the bot can be invited to servers.\n・Wallet Integration Completed\n・A user can generate a bot wallet, receive funds, and check their balance.\n・A user can export spend keys securely and send test funds to another wallet.\n・Security model is documented and shared publicly.\n・Wallet Documentation Compl",
+      "report": "・Link to Bot basic functions Demo Video: https://drive.google.com/file/d/13V8AcZCgSdpHWZcBfEA4rfns9bxu6a01/view?usp=sharing\n・Link to Wallet Integrations Demo Video: https://drive.google.com/file/d/1TG-INiVkmnwZhHmT5SCUbx0tuas01fAW/view?usp=sharing\n・Link to Wallet Documentation: https://github.com/SteelSwap/steelbot-milestone-proofs/tree/main/Milestone%202",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 6,
+      "cut": true
+    }
+  ]
+}

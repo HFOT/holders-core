@@ -1,0 +1,22 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "(A) スペクトラムネットワークのネットワーク層が実装されている(コードが書かれている)。\n(B)ネットワークレイヤーのユニットテスト\n(C)ネットワークレイヤーの統合テスト.",
+      "criteria": "(A)Spectrum Nodeのネットワークレイヤーは、評価、プロトコルの交渉、およびそのバージョンに基づいてピアのランキングを行うことができます.",
+      "report": "オープンソースコードはこちら: https://github.com/spectrum-finance/spectrum\n\n(Milestone A) スペクトラムネットワークのネットワークレイヤーを実装(コードが書かれています)\n結果: ネットワークレイヤーが正常に実装されました\nフォルダをチェック:https://github.com/spectrum-finance/spectrum/tree/master/spectrum-network\nリポジトリをクローニングし、ターミナルで `cargo run` コマンドを実行することでどのように動作するかを確認できます。\n\n(Milestone B)ネットワークレイヤーのユニットテスト\nすべてのテストは、このフォルダにある:https://github.com/spectrum-finance/spectrum/tree/master/spectrum-network/tests\nリポジトリをクローニングし、ターミナルで `cargo test` コマンドを実行することでどのように動作するかをチェックすることもできます。\n\n(Milestone C) ネットワークレイヤーの統合テスト\nすべてのテストは、このフォルダにある: https://github.com/spectrum-finance/spectrum/tree/master/spectrum-network/tests\nリポジトリをクローニングし、ターミナルで `cargo test` コマンドを実行することでどのように動作するかをチェックすることもできます"
+    },
+    {
+      "no": 2,
+      "promise": "(A)Spectrum Networkノードが使用するプロトコルを記述するドキュメントは、有効なクロスチェーントランザクションのセットに合意します.",
+      "criteria": "(A) 得られた文書は、スペクトラムノードが有効なクロスチェーントランザクションのセットでコンセンサスに到達することを可能にするプロトコルを明確に記述します.",
+      "report": "TL;DR\nここにすべての仕様がこのリポジトリフォルダです: https://github.com/spectrum-finance/spectrum/tree/spec/docs/whitepaper/src\n\nインフォメーション\nこのマイルストーンで作業中、次のタスクを解決しました。\n1. 宝くじの指定を研究し、記録しました -- https://github.com/spectrum-finance/spectrum/pull/14/files\n2. プロトコルの実装に必要な暗号化を研究しました。ソースのテキストは今はクローズされます。 (最終月報の添付pdf:「スペクトル設定におけるハンドルの集計と検証」)\n3. プロトコル設計 -- https://github.com/spectrum-finance/spectrum/blob/spec/docs/whitepaper/src/system-design.tex\n4. システムモデル -- https://github.com/spectrum-finance/spectrum/blob/spec/docs/whitepaper/src/system-model.tex\n5. ハンドル集計プロトコルの実装 -- https://github.com/spectrum-finance/spectrum/pull/17/files (第3マイルストーンの一部)\n\nまた、非常に早くマージされるいくつかの草案があります(今すぐレビューの下):\n1. STFドラフト - https://github.com/spectrum-finance/spectrum/pull/16\n2. 宝くじの草案の改善 - https://github.com/spectrum-finance/spectrum/pull/18"
+    },
+    {
+      "no": 3,
+      "promise": "(A) この段階の最後に、Spectrum Networking層の上に構築されたソフトウェアが2番目のマイルストーン+インテグレーションテストで記述されたプロトコルを実装し、ネットワークの能力を検証し、一連のテストトランザクションで合意に達することができます.",
+      "criteria": "(A)コンセンサスレイヤーは、2番目のマイルストーンの仕様に従って実装されます。 プロトコル機能とプロパティはユニットテストで覆われています。 また、実行可能な統合テストは、テストトランザクションのセットでコンセンサスに到達するシンプルなネットワークを示しています.",
+      "report": "コアコンセンサスプロトコルモジュールを実装しました。\n\n✔️ スケーラブルなシグネチャアグリゲーション暗号化(MuSigに基づいており、ツリーベースのオーバーレイ用に最適化)。 リンク:\n· https://github.com/spectrum-finance/spectrum/pull/23\n· https://github.com/spectrum-finance/spectrum/pull/30\n✔️Handel集計ラウンド動作(https://arxiv.org/pdf/1906.05132v1.pdf)とSigma集計ネットワーク全体の動作。 リンク:\n・ https://github.com/spectrum-finance/spectrum/pull/25\n・ https://github.com/spectrum-finance/spectrum/pull/19\n✔️ ディスカバリー行動+ITテスト。 ピアディスカバリーの責任 リンク:\n· https://github.com/spectrum-finance/spectrum/pull/34\n✔️ 拡散動作 + IT テスト. ノードの同期に対応可能。\n· https://github.com/spectrum-finance/spectrum/pull/37\n\n✔️ 全ての統合テストが利用できます。\nhttps://github.com/spectrum-finance/spectrum/blob/master/spectrum-network/tests/integration tests/mod.rs\nお問い合わせ\nまた、 先月、PoAシートで言及したIOレビューアのすべてを解決しました。 そのため、以前のマイルストーン3 PoAに加えて:\n\n✔️ {crypto} モジュールのテストを追加しました。 リンク:\n· https://github.com/spectrum-finance/spectrum/blob/master/spectrum-vrf/src/tests.rs\n· https://github.com/spectrum-finance/spectrum/blob/5a5eaabbb32e28d680770fad42cd9d5e529b70f7/spectrum-network/src/protocol handler/sigma aggregation/crypto.rs#L191\n✔️ MuSigの簡単なコメント\n· https://github.com/spectrum-finance/spectrum/blob/master/spectrum-network/src/protocol handler/sigma aggregation/crypto.rs\n✔️ MuSig implemenationの集計\n· https://github.com/spectrum-finance/spectrum/blob/master/spectrum-network/src/protocol handler/sigma aggregation.rs\nコンセンサス層 [進行中] コンセンサス層の研究は、予想よりも長くなりました.希望する結果を得るためにもう少し仮説をテストしなければなりませんでした。 現時点では、研究段階が完成し、実装を終えるだけです。 このマイルの完了を承認できたら大歓迎です"
+    }
+  ]
+}

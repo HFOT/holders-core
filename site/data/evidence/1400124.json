@@ -1,0 +1,33 @@
+{
+  "title": "VESPR: WalletConnect Cardano Flutter SDK & VESPR Integration",
+  "ms": [
+    {
+      "no": 1,
+      "month": "3",
+      "cost": 22500,
+      "promise": "We will deliver a functional WalletConnect v2 client for Flutter with complete session management capabilities including pairing, approval, and disconnect flows. The SDK will implement full transaction signing with CIP-30 compatibility, supporting all standard Cardano transaction types. Basic documentation will cover installation, setup, and core API usage to enable developers to start integration immediately.",
+      "criteria": "The SDK must successfully establish and maintain WalletConnect sessions with test dApps, demonstrating stable connection handling. It must sign Cardano transactions correctly, with proper witness generation and CBOR serialization. All CIP-30 standard methods must be implemented and functional, including address retrieval, balance queries, and transaction submission.\nNote for reviewers: All CIP-30 methods will be supported (as defined in \"Full API\" : https://cips.cardano.org/cip/CIP-30#full-api ). This includes getUtxos(), getBalance(), etc.",
+      "report": "GitHub repo with working SDK code\n・https://github.com/vespr-wallet/wallet_connect_cardano\n\nVideo showing transaction signing from test dApp\n・https://drive.google.com/file/d/10oDlpK-OSpxGheQAVlL10k1qvgfzEHae/view?usp=sharing\n・Test mobile app code (using the sdk)\n・https://github.com/vespr-wallet/wallet_connect_cardano/tree/master/example\n・Test dApp code (the one requesting the signature)\n・https://github.com/vespr-wallet/wallet_connect_cardano/tree/master/demo/dapp-web\n\nScreenshot of successful WalletConnect session\n・https://drive.google.com/file/d/1Xl9YVmivBNDC6Azs8gHrBMwSWBHno-nu/view?usp=sharing\n\nBonus: Link to the transaction submitted in the video https://preprod.cardanoscan.io/transaction/31469dd9b91ebc6325a74502dcb6850e170ce68d74e3346d78b0c9360986017e",
+      "kinds": [
+        "chain",
+        "code",
+        "doc"
+      ],
+      "links": 12
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 22500,
+      "promise": "We will make sure the SDK codebase matches production standards with clean architecture and proper separation of concerns. We will finalize technical debt left from the development phase. Comprehensive unit tests will be added covering core functionality. The SDK will be optimized for performance with efficient connection management and minimal memory footprint. A complete README will provide quick setup instructions, basic usage examples, and API overview. A demonstration video will showcase the connector in action, and the polished SDK will be published to pub.dev for community access.",
+      "criteria": "The codebase must follow Flutter best practices with proper null safety, type definitions, and documentation comments for all public APIs. Unit test coverage must cover relevant parts of the codebase. The README must include installation instructions, initialization code, and at least a simple use-case. The demonstration video must show successful WalletConnect pairing and transaction approval. The package must be successfully published to pub.dev with proper semantic versioning, package description, and changelog documenting all features.",
+      "report": "The codebase must follow Flutter best practices\n・Published package in pub.dev reports 160/160 points for quality https://pub.dev/packages/wallet_connect_cardano/score\n\nLink to published package on pub.dev\n・https://pub.dev/packages/wallet_connect_cardano\n\nLinks to unit tests in GitHub and screenshot of them passing\n・unit tests in GitHub: https://github.com/vespr-wallet/wallet_connect_cardano/tree/master/test\n・screenshot of them passing: https://drive.google.com/file/d/1L3bKqv_5A8DOxzbRmviqhJBkX69qYm9j/view?usp=sharing\n\nVideo demonstrating WalletConnect working\n・https://drive.google.com/file/d/1rWnEzOn5ETJgguagLHyZt9RsQxlQUa5D/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 10
+    }
+  ]
+}

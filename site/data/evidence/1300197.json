@@ -1,0 +1,55 @@
+{
+  "title": "Zero-Knowledge Proof of innocence on Cardano - Encoins + Módulo P + Eryx",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 45000,
+      "promise": "・Comprehensive research document explaining how PoI works and reviewing existing implementations.\n・Technical specification for adapting PoI to Cardano, including architecture design.\n・Selection of the zk-SNARK scheme, considering trade-offs for compatibility with Cardano’s requirements (included on the reaserch document)",
+      "criteria": "・Research provides clear explanations of PoI and its implementation challenges.\n・Identifies the zk-SNARK scheme and details its trade-offs.\n・Defines a clear, protocol-agnostic design for Cardano.",
+      "report": "In the following repository we include the research document: \nhttps://github.com/eryxcoop/cardano-zk-proof-of-innocence/blob/main/research/Research%20and%20Preliminary%20Specification.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 45000,
+      "promise": "・Smart contract that validates Proof of Innocence.\n・Circuit compatible with the BL12-381 elliptic curve supported by Cardano, enabling PoI.",
+      "criteria": "・Smart contract adheres to the specifications outlined in the research document.\n・Circuit implements Proof of Innocence effectively.",
+      "report": "The two outputs of this milestone are available on the github repository. \n・The circuit of the PoI algorithm is present in this part of the repository: https://github.com/eryxcoop/cardano-zk-proof-of-innocence/tree/main/implementation/circuit. \n・The smart contract that verifies the PoI resides in this part of the repository. It is an aiken project which contains the PoI validator and the Oracle validator, both are present in the \"validators\" folder: https://github.com/eryxcoop/cardano-zk-proof-of-innocence/tree/main/implementation/validator\n\nAdditionally, we have a video that explains both outputs and does a walkthrough to the code explaining the details of the implementation:\nhttps://drive.google.com/file/d/1HVwiW1l4gRH-3_-Qxdew1TvsGBoOJ5GL/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 5
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 30000,
+      "promise": "・Test suite for unit tests in Aiken to verify the PoI functionality.\n・Tests to validate the correct performance of the circuit.\n・Report detailing issues found and protocol corrections made.",
+      "criteria": "・All tests pass successfully.\n・Identified issues are addressed and documented in an updated research document.",
+      "report": "The following proof of achievement contains: \n・The full suite of unit test in Aiken to check the PoI functionality. The tests can be found in the following folder of the repository. In order to execute them run aiken check\n・We have tests to validate the circuit on this folder, furthermore instructions about how to run them can be found here.\n・We have a report that explain the testing phase in all its stages, also it contains instructions to run the CLI used to test the protocol functionality on-chain. We decided to create this CLI application to make a more robust testing and see how really works the protocol in the testnet. Records of the testing using this tool can also be found in the report.",
+      "kinds": [
+        "code"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 30000,
+      "promise": "・Closeout report summarizing activities, technical findings, and lessons learned.\n・Closeout video showcasing the PoI protocol architecture and functionality.﻿﻿",
+      "criteria": "・Final closeout report will be publicly available\n・Final closeout video will be publicly available\n・Will follow the guidelines shown in the Project Catalyst Close Out Report and Video page. The following is the link for it:\n\nhttps://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcr-and-pcv",
+      "report": "Here are the two final outputs:\n・Close-out video\n・Close-out report",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

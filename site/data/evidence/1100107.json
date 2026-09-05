@@ -1,0 +1,70 @@
+{
+  "title": "DAO Controlled Staking Baskets - Multi-delegation Smart-contract governed by DAO holders",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "In this milestone we’ll output the design for DAO controlled Staking Baskets. This design will show how users can vote on proposals created for increasing/decreasing Basket fees, and voting on Staking Basket pool composition.",
+      "criteria": "This milestone should be accepted given that we provide a functional design that will allow users to create a DAO baskets and vote on Staking Basket composition/fees.\nThis design should be considered functional given that it includes all of the features needed for DAO controlled Baskets.\nIncluded Features:\n・Creating a proposal.\n・Voting on a proposal.\n・Proposal details encompassing what the proposal intends to accomplish\n・List view for multiple proposals at the same time.",
+      "report": "Hello there. Thank you for your patience regarding this Catalyst proposal.\nHere is the promised video file from our Creative Director, which provides a clear explanation of the deliverables supplied with a little background context:\nhttps://www.dropbox.com/scl/fi/0cz1bgqmvlo60tr88t6d5/Video-Report.mov?rlkey=xb5hfc4y57j8jujlaeb3er4o4&dl=0\nAnd here are the images of the design:\nhttps://www.dropbox.com/scl/fo/c768xoh3foncxybwbpjgn/AE3xOBxx6MYJs5aO1Yu_Ad0?rlkey=28lpq7n50k2b96ylqv4fkje9f&dl=0\nIf you have any questions, please do ask and I'll be glad to help.\nThank you for your time.",
+      "kinds": [
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 90000,
+      "promise": "In this milestone we’ll output the technical specifications for the smart-contract work that needs to be completed to allow on-chain governed Staking Baskets.",
+      "criteria": "This milestone should be accepted given that we provide a technical specification on how the smart-contract will function.\nThis technical specification must include these smart-contract features:\n・ User-created proposals.\n・ User voting on-chain with Cardano Native assets through the smart-contract.\n・ Ability to manage multiple proposals at the same time.",
+      "report": "We've written a technical specification to show how we will build Staking Basket DAOs. This will allow the staking keys in the smart-contract to be entirely governed on-chain by any token. We've also created a video to explain Staking Baskets, Staking Basket DAOs, and the implementation in laymen's terms.\nLink to the technical specification: https://drive.google.com/file/d/1_buXevYxS5BvwCSx540ZP1I-aZB8_rwY/view?usp=sharing\nLink to the video: https://youtu.be/DEjmkP15ELc",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 75000,
+      "promise": "After we submitted the technical specification in the last milestone we began smart-contract development. In this milestone we’ll submit a progress report on smart-contract development. This report will detail challenges, and progress made towards MVP.",
+      "criteria": "This milestone should be accepted given that we provide a detailed progress report on the progress of the smart-contract code.\n\nThis progress report will include:\n・Lines of code written so far.\n・Amount of developer hours spent.\n・Estimated time until completion.\n・An analysis of any problems that we've ran into, and how we're overcoming these technical challenges given that we run into them.",
+      "report": "Dear Catalyst Reviewers, the following documents for your consideration:\nLink to the report: https://drive.google.com/file/d/1q9SesXf5oKSvhUhAwxz_OWkke5NHKqlL/view\nLink to the video summary: https://youtu.be/dVj4nyzyL0o\nHey, resubmitting the milestone with video on youtube instead of loom. Thanks!",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "20",
+      "cost": 15000,
+      "promise": "This milestone will output Staking Basket DAO’s MVP. This will be the first version of Staking Basket DAOs that allows users to vote with a Cardano Native asset on pool composition, and Staking Basket fees on Cardano's preview network.",
+      "criteria": "This milestone should be accepted given that we have a working Staking Basket DAO MVP that allows users to vote with Cardano Native assets on pool composition and Staking Basket fees. This Staking Basket vote will happen on Cardano's preview network.\nThis milestone should also only be accepted given that we create an internal proposal using the Staking Basket DAO MVP. This internal proposal needs to have a few members of the team vote on the proposal with different wallets.",
+      "report": "We've developed the Staking Basket DAO MVP smart-contract, and a front-end that allows voting with Cardano CNTs. This smart-contract allows you to change parameters of the Staking Basket smart-contract through an on-chain DAO vote with Cardano CNTs.\nWe launched a Staking Basket smart-contract on Cardano's preview network, and the DAO voting smart-contract. The voting is through the CNT 'ATMA'. The voting power is based on the amount of 'ATMA' that you vote with. The 'ATMA' is locked until the proposal has concluded to prevent double voting. This 'ATMA' can be claimed once the proposal ends.\nThis smart-contract will enable Staking Baskets entirely governed by selected CNTs.\nWe created a video showing live voting on Cardano's preview network with a voice over that explains what's going on on-chain: https://drive.google.com/file/d/10NwYkFqnxZd_wg1LgpHvywdB0Lg0eQfA/view?usp=sharing\nTX hashes from proposal creation, and voting on Cardano's preview network:\n・Create Proposal Tx hash: 52b5fef7fa9dad2b34f2c9c334c2044b7e9784826ec1e242bc40e4c8907b51c7\n・Dev1 vote Tx hash: 18283a3abe675788ff4139a52a1754d891ed02cd76ae39a57e9e0b4922a37b95\n・Dev2 vote Tx hash: 5bbd6c599309002b1badaea9e8821c36b57dfbe5da4deb1719fd7719c45675aa\n・Dev3 vote Tx hash: 5ef504aae6efa68164a594e501e9d51fb9cae50c2f511e83501662fe037a8781\n・End proposal Tx hash: 3d11934099d265e1be8a757f6542b4f40548e4b4d632ccbe85422b858acf9db0\n・Dev1 claim back Atma Tx hash: 71944c1a32734297dddb73b8511115bec457cef78877e4a9af8ac12651cb2518",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 5,
+      "month": "21",
+      "cost": 45000,
+      "promise": "The final milestone for Staking Basket DAOs will be a vote held on Cardano’s preview network that allows any testnet users to vote on the composition of a Staking Basket on our front-end on Cardano's preview network. This vote will be live on our website alpha.atrium.io for anyone to connect their preview wallet and vote!\nIn this milestone, we'll also output a close-out report in text format and a video close-out report. These reports will detail what work has been finished, what challenges we've ran into, and how we overcame them.",
+      "criteria": "This milestone should be accepted given that we allow any users to vote on a Staking Baskets composition on our site that’s connected to Cardano’s preview network.\nThis milestone should also only be accepted given that we submit a text close-out report, and a video close-out report that details what work has been finished, what challenges we've ran into, and how we overcame them.",
+      "report": "Dear Catalyst reviewers, resubmitting the milestone 5 PoA with the video of the vote. Please keep in mind that the video shows how the voting process looks like from user perspective, its not the same vote in which the community members casted votes since this one was closed already and we cant record it happening. \nhttps://youtu.be/SsaEQYrTZh8 \n・Final close-out report in PDF https://drive.google.com/file/d/1IufPRIleY_y8pluq_zPyqJxOv-iaJVOF/view?usp=drive_link\n・Final close-out video https://youtu.be/R5IyrCEBooY\n\nPoA (available in the report as well and described in the video):\n・screen 1, landing page https://drive.google.com/file/d/1PqRBGhYN3iIIJMRq_U_IhrURGoAVOSgZ/view?usp=drive_link\n・screen 2, cast a vote https://drive.google.com/file/d/1F6tPz4vY1ZVXYMJ1j-JKM2kCp4ZMnYOM/view?usp=drive_link\n・screen 3, signing a tx for a vote https://drive.google.com/file/d/17RGY0kbM-1boWlqjosGNuzJNup7ybIAM/view?usp=drive_link\n・screen 4, vote completed: https://drive.google.com/file/d/1gd5LwNEV1mTDH3vT1C9MIt9ZKCImIHir/view?usp=drive_link\n\nPlease keep in mind that the screen are for demonstration only, they do not show the vote that was concluded with the real community members since that vote was concluded and the results of it automatically implemented to the test basket on Preview network.\nOn chain proof from preview network of community members casting votes:\n・Vote from community member 1 \n・https://preview.cexplorer.io/tx/f3c5f147eb0d2084e1f492588ce7a49e657322d4292878a25ec2fff4b9f72d74\n・Vote from community member 2 \n・https://preview.cexplorer.io/tx/369d290f069d026a69bddb947a4332dd3fbd394e5acd1cdd98ed8e5c7f5eb6a2\n・Vote from community member 3\n・https://preview.cexplorer.io/tx/3e72a351e32c50fc68d06c1050062a79a4aaa1a749a792e314f31cfd252a0b60 \n・Vote from community member 4\n・https://preview.cexplorer.io/tx/8ced89f69f28e3cde6d01d861396582fdc6a28450c01c39873db455d72b52af3 \n・Vote from community member 5. \n・https://preview.cexplorer.io/tx/1c6ec54c55c454bb81361bf5a02a77b89d2e66907f499f73e49",
+      "kinds": [
+        "chain",
+        "doc",
+        "video"
+      ],
+      "links": 24,
+      "cut": true
+    }
+  ]
+}

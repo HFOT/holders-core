@@ -1,0 +1,72 @@
+{
+  "title": "Minswap Liquidity Bootstrapping for DAOs",
+  "ms": [
+    {
+      "no": 1,
+      "month": "4",
+      "cost": 55000,
+      "promise": "・By the end of this month, we will have listed and analyzed all possible improvements that can be made from LBE V1. \n・We will collaborate with projects already interested in leveraging the LBE V2 to understand their needs and design the new, improved Version. \n・﻿﻿﻿﻿﻿We will commence development of the Aiken Smart Contract.\n\n**Reviewer please note: the work necessary for this Proposal commences in February 2024! The timeline of events has not changed and is the same as in the Ideascale Proposal, as described in the rest of the Milestones. The work for Proposal will start later, as the LBE V2 is only possible once the Minswap V2 is complete. An email has been sent to catalyst@iohk.io explaining the situation.",
+      "criteria": "・List comparing the LBE V1 offering to the LBE V2, showing how LBE V2 is better\n・Outline of the Smart Contract architecture to commence development efforts",
+      "report": "・A List comparing the LBE V1 and the LBE V2 highlighting the new features and improvements in V2 can be found here.\n・An outline of the LBE V2 Smart Contract Architecture can be found here (1), here (2), here (3) and here (4)",
+      "kinds": [
+        "doc"
+      ],
+      "links": 5
+    },
+    {
+      "no": 2,
+      "month": "5",
+      "cost": 50000,
+      "promise": "・Finalize development of the Aiken-based Smart Contract according to the new LBE V2 design. \n・Conduct several tests with the interested projects to ensure smooth functioning. \n・Audit of the Aiken Smart Contract and addressing of any issues found.",
+      "criteria": "・The Aiken-based Smart Contract for the LBE V2 is complete\n・Tests are conducted with projects interested in using the LBE V2 upon launch\n・Audit for the Aiken-based LBE v2 Smart Contract commences (Audit Report shared in the next Milestone)",
+      "report": "・Link to Github with the Aiken-based Smart Contract for the LBE V2 completed\n・Link to a testnet environment used by Minswap Labs internally and interested projects to test the LBE V2\n・Link to an article posted on Medium will be provided to demonstrate the join announcement of Minswap V2 Audit process commencement by Minswap Labs and the reputable third party auditor.\n・Testnet bugs have been fixed",
+      "kinds": [
+        "code",
+        "doc",
+        "live"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 50000,
+      "promise": "・The Audit Report by a reputable third party auditor will be shared with the wider Cardano community\n・The Minswap LBE V2 Smart Contract code will be open sourced\n・The Bug Bounty program will be completed",
+      "criteria": "・The Audit Report is shared with the wider Cardano community for transparency and accountability.\n・The Minswap LBE V2 Smart Contract code is be open sourced and available to anyone for transparency and accountability.\n・ A detailed document regarding the scope of the vulnerabilities of the Bug Bounty Program and how to submit a bug will be shared. It will follow a similar structure as Bug Bounties on for example Immunefi.\n・Bug Bounty rewards will be distributed according to the severity of the found vulnerabilities (if any). \n・At the end of the month, the community will be informed of the vuner",
+      "report": "・Link to a tweet sharing the Audit Report with the wider Cardano community. \n・Link to Github where one can find the the Minswap LBE V2 Smart Contract code.\n・Link to a detailed document regarding the scope of the vulnerabilities of the Bug Bounty Program and how to submit a bug.\n・We added the following line to the article above: The Bug Bounty will last in eternity until all funds are spent, you can see the funds in this address $min.bug-bounty (includes funds from 2 prior Bug Bounties) to make clear the Bug Bounty has no time limit. \n・Bug Bounty rewards will be distributed according to the severity of the found vulnerabilities (if any) - none found\n・Link to a Tweet where the community will be informed of the vunerabilities found, the compensations and the fixes (if any).",
+      "kinds": [
+        "other",
+        "social"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 20000,
+      "promise": "・Minswap LBE V2 Smart Contract is launched on mainnet\n・The Minswap LBE V2 will also count with a new UI - different from V1\n・The first LBE using the V2 Smart Contract will be launched if the projects who express interested had no change of plan/there are new projects interested in using the platform immediately upon launch",
+      "criteria": "・Minswap LBE V2 is live on mainnet \n・Minswap LBE V2 has a new UI, different from Minswap V1\n・The first project uses the Minswap LBE V2 successfully",
+      "report": "・Link to the Minswap LBE V2 Smart Contract on mainnet \n・Link to a completed launch using the Minswap LBE V2",
+      "kinds": [
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "8",
+      "cost": 31000,
+      "promise": "・There will be a process to collecting user feedback and evaluate the success of the LBE V2, based on the following metrics:\n・A) Quantitative Measures: Liquidity raised, Number of projects using/wanting to use the LBE V2 contract, Wallet participation, TVL, Volume and Token performance post-LBE.\n・B) Qualitative Measures: Quality of the projects using the LBE V2, User Experience, User Feedback",
+      "criteria": "・A Google Form is shared with the Cardano community to collect feedback on the Minswap LBE V2\n・Data analysis is conducted to assess quantitative measures",
+      "report": "・Link to a Tweet with a Google Form where the Cardano community can share feedback about the LBE V2. \n・Link to a Medium article where there are reflections about the LBE V2, insights on the data collected and user feedback\n・Link to the sheet with feedback\n・Link to the Google Form for requesting feedback\n・Close out Report \n・Close out video (new video)",
+      "kinds": [
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "コンテキスト: Asterizm をデプロイして、クロスチェーンの操作と、クロスチェーンのネイティブ(オムニチェーン)トークンの起動を有効にします。これにより、Cardano エコシステムにより多くのユーザー、流動性、および TVL を惹きつけます。\nタスク:Cardano上のAsterizmソリューションのドキュメントを作成し、どのように正確に動作するかを指定します(クロスチェーントランザクションフロー)\n出力:Cardanoで展開するためのAsterizmソリューションの仕様を生成:デプロイされるソリューションの井戸構造のドキュメント",
+      "criteria": "CardanoのAsterizmの技術的な解決の指定はrepoで見つけることができます。 文書は、オンチェーンとオフチェーン開発の側面と、図との完全なクロスチェーントランザクションフローをカバーします.",
+      "report": "Asterizmの技術的な解決の指定は完了し、repoで見つけることができます:\n・https://github.com/zkFold/project-catalyst-reports/blob/main/Asterizm/M1/zkFold%20x%20Asterizm%20-%20Interoperability%20Solution.pdf\n\n文書は、オンチェーンとオフチェーン開発の側面をカバーし、図でクロスチェーン取引フローを完了します。 そのためには、審査者から以前のコメントをリクエストし、アドレスとして追加の図を追加しました."
+    },
+    {
+      "no": 2,
+      "promise": "コンテキスト: Asterizm をデプロイして、クロスチェーンの操作と、クロスチェーンのネイティブ(オムニチェーン)トークンの起動を有効にします。これにより、Cardano エコシステムにより多くのユーザー、流動性、および TVL を惹きつけます。\nタスク:Asterizmプロトコルを実装するPlutusスマートコントラクトのセットを開発\n出力:Plutusスマートコントラクトのセット",
+      "criteria": "Plutusスマートコントラクトのセットと、取引を容易にするための論理的相互接続の説明は、リポジトリに見つけることができます",
+      "report": "マイルストーン2完成! メインスクリプトはここにあります:\n・https://github.com/zkFold/zkfold-cardano/blob/main/zkfold-cardanoscripts/src/ZkFold/Cardano/UPLC/Asterizm.hs\n\nすでに、Cardanoに署名されたメッセージの投稿を可能にする単一のPlutusスクリプトで3つの契約を実装できるドキュメントを更新しています。 このスクリプトは、中継器とクライアントサーバーの両方で使用されます。\n・https://github.com/zkFold/project-catalyst-reports/blob/main/Asterizm/M1/zkFold%20x%20Asterizm%20-%20Interoperability%20Solution.pdf\n\n検証済みの署名メッセージをオンチェーンに投稿するための非常に効率的な方法を提供します。 このスクリプトは、クライアントとリレーの両方で使用されます。 Cardanoからメッセージの送信をカバーするのにも一般的です。 たとえば、AsterizmプロトコルでCardanoにメッセージを受信するには、クライアントは署名されたメッセージを投稿する必要があります."
+    },
+    {
+      "no": 3,
+      "promise": "コンテキスト: Asterizm をデプロイして、クロスチェーンの操作と、クロスチェーンのネイティブ(オムニチェーン)トークンの起動を有効にします。これにより、Cardano エコシステムにより多くのユーザー、流動性、および TVL を惹きつけます。\nタスク:CardanoでAsterizmトランザクションのオフチェーンコードを実装\n出力:Cardano上のAsterizmトランザクションのオフチェーンコード",
+      "criteria": "・Cardano上のAsterizmトランザクションのオフチェーンコードはリポジトリで見つけることができます\n・オフチェーンAsterizmコンポーネントのアーキテクチャとロジックの文書化",
+      "report": "Cardano上のAsterizmトランザクションのオフチェーンコード、ワークフローとドキュメントは、マイルストーンの一部として準備されます。 これらの文書は、リポジトリで見つけることができます。\n・https://github.com/zkFold/zkfold-cardano/blob/vlasin-asterizm-m3/zkfold-cli/app/ZkFold/Cardano/Asterizm/Transaction/Minting.hs\n・https://github.com/zkFold/project-catalyst-reports/blob/main/Asterizm/M3/Asterizm%20Workflow.pdf\n・https://github.com/zkFold/project-catalyst-reports/blob/main/Asterizm/M1/zkFold%20x%20Asterizm%20-%20Interoperability%20Solution.pdf"
+    },
+    {
+      "no": 4,
+      "promise": "コンテキスト: Asterizm をデプロイして、クロスチェーンの操作と、クロスチェーンのネイティブ(オムニチェーン)トークンの起動を有効にします。これにより、Cardano エコシステムにより多くのユーザー、流動性、および TVL を惹きつけます。\nタスク: Asterizm の統合のための CLI を実装する (transaction の構築と投稿 + Cardano からのデータ検索)\n出力: Asterizm の統合のための CLI",
+      "criteria": "・Asterizm の統合のための CLI はリポジトリに見つけることができます\n・ロジックの説明、トランザクション構築のスキームを含むAsterizmの統合のためのCLIの文書化",
+      "report": "PoAを更新し、以前に要求したようにトランザクション構造図を含めました。\n\nAsterizm CLI コードファイルは次のようになります。\nhttps://github.com/zkFold/zkfold-cardano/tree/main/zkfold-cli/app/asterizm\n\nAsterizm CLI のドキュメントは、以下の通りです。\nhttps://github.com/zkFold/zkfold-cardano/blob/main/e2e-test/asterizm/Asterizm.md"
+    },
+    {
+      "no": 5,
+      "promise": "コンテキスト: Asterizm をデプロイして、クロスチェーンの操作と、クロスチェーンのネイティブ(オムニチェーン)トークンの起動を有効にします。これにより、Cardano エコシステムにより多くのユーザー、流動性、および TVL を惹きつけます。\nタスク:Cardanoをオフチェーンの中継器およびクライアント ソフトウェアに統合して下さい\n出力: オフチェーンの中継器およびクライアント ソフトウェアへの Cardano の統合",
+      "criteria": "・Cardanoインテグレーションの証拠である取引をオフチェーン・中継器に提供し、クライアント・ソフトウェアはリポジトリに見つけることができます。\n・更新されたドキュメンテーションには、Asterizmのコンポーネントが互いにやりとりし、トランザクション処理ロジックがシステム内でどのように処理されるか、送信、受信から検証までについて説明する全体的なアーキテクチャが含まれます.",
+      "report": "Asterizm <> Cardanoの統合が完了し、エンドツーエンドを検証しました。 リレーとクライアントは、メッセージの認証、着信および発信メッセージ処理、メッセージの検索、統一されたクライアントの証拠処理、信頼できるアドレス検証、正規およびAsterizmクロスチェーンハッシュモード、可変長メッセージヘッダー、omni-tokenミント/バーンフロー、信頼性の高いトランザクションの送信など、Asterizmのクロスチェーンインフラの一部としてCardanoをサポートしています。\n\nパブリックコードとドキュメントの証拠:\n- Asterizm の統合 CLI およびエンドツーエンドの使用文書:\nhttps://github.com/zkFold/zkfold-cardano/blob/main/e2e-test/asterizm/Asterizm.md\n- 統合実装:\nhttps://github.com/zkFold/zkfold-cardano/tree/main/zkfold-cli/app/asterizm\n- 統合で使用されるプルタスポリシー:\nhttps://github.com/zkFold/zkfold-cardano/blob/main/zkfold-cardanoscripts/src/ZkFold/Cardano/UPLC/Asterizm.hs\n- Reproducible E2Eスクリプト:\nhttps://github.com/zkFold/zkfold-cardano/tree/main/e2e-test/asterizm\n\n検証証拠:\n完了した統合は、BSC testnetとCardano preprodの両方向でテストされました。\n\nBSCからCardano:\n- BSCクライアントトランザクション:\nhttps://testnet.bscscan.com/tx/0xa9693ada0b0ccf1d96a0e4a7a4dc6bdf8c29eca6dcb0b765d1ac77d7cc3c1103\n- Cardanoのリレートランザクション:\nhttps://preprod.cardanoscan.io/transaction/65d27ce4c0686ac1e07ed63d1382585aeb0b9ccc4ed76ec7b1c5e8f10f570d49\n- Cardanoクライアントトランザクション:\nhttps://preprod.cardanoscan.io/transaction/0ac0cba017eac6c9994c977ade45ae7097a869d7df0be6bca00b9f37580b8d7d\n- Asterizmの走査器:\nhttps://testscan.asterizm.io/detail/59d7cc5a-f0b8-4071-a865-1f0e26dd95a7\n\nCardano から BSC:\n- Cardanoクライアントトランザクション:\nhttps://preprod.cardanoscan.io/transaction/0c0aa3aebe1ec40d03e49824377341cc09c3d782c777c3dc565406687f9b4f9a\n- BSCのリレートランザクション:\nhttps://testnet.bscscan.com/tx/0x68387aaa961338dd6fd90827821baeda53566af894909f101eabb6ae578972b4a\n- BSCクライアントトランザクション:\nhttps://testnet.bscscan ディレクティブ"
+    },
+    {
+      "no": 6,
+      "promise": "コンテキスト: Asterizm をデプロイして、クロスチェーンの操作と、クロスチェーンのネイティブ(オムニチェーン)トークンの起動を有効にします。これにより、Cardano エコシステムにより多くのユーザー、流動性、および TVL を惹きつけます。\nタスク:\n・オムニチェーン(CNT)トークン(Cardano < > EVM)をDeploy\n・Cardano から EVM チェーンおよびバックへのテスト取引\n・更新された dev ドキュメントを公開\n\n出力:\n・オムニチェーン(CNT)トークン(Cardano < > EVM)\n・Cardano から EVM チェーンおよびバックへのテスト取引\n・更新された dev ドキュメントを公開\n・最終クローズアウトレポート\n・最終クローズアウトビデオ",
+      "criteria": "・omnichain(CNT)トークンへのリンク、更新されたdevドキュメント(オムニチェーントークンの詳細とプロセスを含む)へのリンク、クローズアウトレポートとビデオは、GitHub(https://github.com/zkFold/)で公開されています。\n・プロセスを説明する動画は公開\n・最終報告書は一般公開\n・最終クローズアウト映像を一般公開",
+      "report": "最終マイルストーンが完成しました。 Cardano preprod と BNB Smart Chain testnet の AOCT omnichain トークンをデプロイし、開発者のドキュメントを更新し、最終クローズアウトレポートとビデオを作成しました。\n\n**休止報告:**\n\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/Asterizm/M6/1300199%20-%20Asterizm%20-%20Project%20クローズアウト%20レポート\n\n**クローズアウトビデオ:**\n\nhttps://youtu.be/WyNbu-pDDak は、\n\n**開発者文書更新**\nhttps://github.com/zkFold/project-catalyst-reports/blob/main/Asterizm/M6/1300199%20-%20Asterizm%20-%20Update%20Developer%20Documentation.pdf\n\n**Deployed omnichainトークン**\n\n- BSC testnet `AsterizmOmniChainToken`契約:\nhttps://testnet.bscscan.com/address/0x0B350072eB26FfFB03CE0CB3DbdC26EDa2fBB207\n- Cardano は AOCT の方針を進めました:\nhttps://preprod.cardanoscan.io/token/8210623dde5928f42290d397e4e5ffbb4c88c26829c604e885aa\n\n**BSC testnet → カルダノプリプロドテスト**\n\nソーストランザクションが成功し、Asterizm はルートを終了するように記録し、有効な Cardano の中継器およびクライアントトランザクションは宛先フローを完了しました。 最終的なCardanoトランザクションは1,000 AOCT単位を縮小しました。\n\n- BSCの開始:\nhttps://testnet.bscscan.com/tx/0xa9693ada0b0ccf1d96a0e4a7a4dc6bdf8c29eca6dcb0b765d1ac77d7cc3c1103\n- Asterizmの走査器:\nhttps://testscan.asterizm.io/detail/59d7cc5a-f0b8-4071-a865-1f0e26dd95a7\n- Cardanoのリレー:\nhttps://preprod.cardanoscan.io/transaction/65d27ce4c0686ac1e07ed63d1382585aeb0b9ccc4ed76ec7b1c5e8f10f570d49\n- Cardanoクライアントミント:\nhttps://preprod.cardanoscan.io/transaction/0ac0cba017eac6c9994c977ade45ae7097a869d7df0be6bca00b9f37580b8d7d\n\n**Cardano preprodの→ BSCのtestnetテスト**\n\nソース Cardano トランザクションは 100 AOCT 単位を焼却し、Asterizm はルートを終了するように記録し、BSC のリレーおよびクライアント受取取引は両方成功しました。\n\n- Cardanoクライアントバーン:\nhttps://preprod.cardanoscan.io/transaction/0c0aa3aebe1ec40d03e49824377341cc09c3d782c777c3dc565406687f9b4f9a\n- Asterizmの走査器:\nhttps://testsca ディレクティブ"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "title": "OgmiosDotnet: Blockchain Queries & Transaction Submission",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 15000,
+      "promise": "・Typed schema update: Introduce/extend .NET request and response models for all 6.13 (Or latest version) ledger state queries and transaction submission, including serialization and validation.\n・Service contracts: Define interfaces for each ledger query service (e.g., ILedgerStateEpochService, IProtocolParametersService, IUTxOService, etc.) plus a ITransactionSubmissionService & ITransactionEvaluationService.\n・Transaction submission implementation: Working service with typed errors, allowing transactions to be submitted. \n・Transaction evaluation implementation: Working service with typed errors, allowing transactions to be evaluated.\n・Worker example update: Demonstrates using the submission & evaluation service.\n・OgmiosDotnet is upgraded if necessary to the support the currently supported Ogmios version.\n・Unit tests: Cover model serialization/deserialization, request/response mapping, and submission success/failure paths.",
+      "criteria": "・Typed request/response models exist for every Ogmios 6.13 (Or latest version) ledger query, transaction submission & evaluation in the public github repo OgmiosDotnet (https://github.com/ItsDaveB/OgmiosDotnet).\n・All service interfaces are defined, compile and are well-documented, ready for implementations in Milestone 2.\n・Transaction submission & evaluation works end-to-end on mainnet with typed error handling.\n・Unit tests for schema mapping, evaluation and submission pass.\n・OgmiosDotnet supports the latest version of Ogmios.\n・A new published package is released with the supported outputs abo",
+      "report": "I'm pleased to submit Milestone 1 Proof of Achievement - OgmiosDotnet: Transaction Submission + Typed Ledger Schema & Service Definitions.\nThis milestone delivers transaction submission and evaluation capabilities with typed Ogmios v6.13 schema support, service contracts, error handling, and 8/8 passing unit tests. The functionality is published on NuGet and ready for production use.\nFull documentation: https://github.com/ItsDaveB/OgmiosDotnet/blob/main/reports/transaction/proof-of-achievement.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 15000,
+      "promise": "- Implementation of all ledger state queries from Ogmios 6.13 API as typed .NET services found here (https://ogmios.dev/api), including:\n・ledgerState/constitution\n・ledgerState/constitutionalCommittee\n・ledgerState/delegateRepresentative\n・ledgerState/dump\n・ledgerState/epoch\n・ledgerState/eraStart\n・ledgerState/eraSummaries\n・ledgerState/governanceProposals\n・ledgerState/liveStakeDistribution\n・ledgerState/nonces\n・ledgerState/operationalCertificates\n・ledgerState/projectedRewards\n・ledgerState/protocolParameters\n・ledgerState/proposedProtocolParameters\n・ledgerState/rewardAccountSummaries\n・ledgerState/rewardsProvenance\n・ledgerState/stakePools\n・ledgerState/stakePoolsPerformances\n・ledgerState/tip\n・ledgerState/treasuryAndReserves\n・ledgerState/utxo\n\n- Worker example extended to showcase multiple queries in action (e.g. stake pool performance, treasury and reserves, governance proposals).\n- Typed error handling implemented consistently across queries.\n- Unit tests for each query service validating request construction, deserialization, and common error scenarios.\n- Package is published with this supported functionality.",
+      "criteria": "・Every ledger state query listed above has a typed service with request and response models implemented.\n・All queries can be executed against mainnet and return typed results.\n・Worker example demonstrates at least 5 queries of the above in a running demo.\n・Unit tests cover serialization and deserialization across all services and pass.\n・New OgmiosDotnet version is available with referenced functionality.",
+      "report": "Milestone 2: Ledger State Query Implementations & Demonstrations\nComplete implementation of all 21 ledger state queries from Ogmios v6.13 API as typed .NET services. Includes typed error handling, 25 passing unit tests, and a worker example demonstrating 7 queries against live Cardano mainnet.\nProof of Achievement: reports/ledger-state-queries/proof-of-achievement.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 20000,
+      "promise": "・OgmiosDotnet.Services NuGet package published, bundling all typed ledger state services, transaction submission & evaluation.\n・Formal GitHub release with version tag, release notes, and changelog.\n・Documentation & README updates with full service list and usage details.\n・Integration guide with code snippets in README.\n・Unit Tests\n・Final close-out report\n・Final closeout video",
+      "criteria": "・NuGet package available publicly and installable in a .NET project.\n・GitHub release published with correct tagging, notes, and examples.\n・Documentation provides a complete overview for developers to plug-and-play services.\n・All tests pass successfully.\n・Final close-out report generation, detailing work completed, lessons learnt, areas of improvements.\n・Final closeout video is created and demonstrates the development completed, and published on YouTube.",
+      "report": "This submission represents the final proof of achievement for the OgmiosDotnet project. All deliverables defined in the milestone scope have been completed, published, and independently verifiable.\nThe evidence below demonstrates successful delivery across code, packaging, documentation, testing, and real-world demonstration. It includes public releases, a production NuGet package, comprehensive documentation, test results, and a final close-out video showing the solution operating against Cardano mainnet.\nProof of achievement (I have added a voiceover to the demo as requested by Catalyst Admin Team) \nhttps://github.com/ItsDaveB/OgmiosDotnet/blob/main/reports/ledger-state-queries/final-milestone/proof-of-achievement.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    }
+  ]
+}

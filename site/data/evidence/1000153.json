@@ -1,0 +1,98 @@
+{
+  "title": "Powering onchain game functionality using Cardano stakepools",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "・Implement a Carp task (Carp being a Cardano indexer) to track stake delegations including an OpenAPI definition (reference: https://dcspark.github.io/carp/openapi) so that people can easily understand its behavior and how to use it.\n・﻿It should support both querying the delegations of a user for a time period, as well as knowing the delegations made to a stake pool globally for a specific time period.",
+      "criteria": "A Carp task that allows indexing stake delegation changes both for pools and addresses with corresponding endpoints available and implemented in a client library",
+      "report": "Video: https://drive.google.com/file/d/1d_X_p_QHcjJERNB86EBZKJB2AI3fbS5C/view?usp=sharing\nCarp codebase: https://github.com/dcSpark/carp\nCarp delegation task: https://dcspark.github.io/carp/docs/indexer/Tasks/MultieraAddressDelegationTask/\nNew endpoints in the Carp client:\n・Delegation for addresses: https://dcspark.github.io/carp/openapi/#operation/DelegationForAddress\n・Delegation for pool: https://dcspark.github.io/carp/openapi/#operation/DelegationForPool\n\nYou can query these in Javascript using our Carp client. NPM package for this is here: https://www.npmjs.com/package/@dcspark/carp-client",
+      "kinds": [
+        "code",
+        "doc",
+        "live"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 165000,
+      "promise": "・Connecting the Carp stake delegation task from Milestone 1 to Paima Engine by extending the Paima funnel system (the way Paima indexes data)\n・We will also provide an explanation of how to use the indexer task in our documentation and how anybody can get it running themselves (connecting the new data handled by Paima to games is part of milestone #3)",
+      "criteria": "Integrate the Carp task from milestone #1 to support for detecting delegation changes in Paima itself supporting queries for both address and stake pools",
+      "report": "The POA was updated as noted. Images and videos are posted in the Blog Post, and code in Github.\n-------\nContext:\nPaima Studios merged into the Midnight Foundation, and Paima Engine was rebranded as EffectStream. We have rewritten the entire codebase from scratch - this is the third version. We listened to feedback, followed better practices, and improved overall quality. These events are why we are delivering now, but everything has been updated for the present. \nThe originally planned Carp integration has been replaced with Dolos/UTxORPC - a strict improvement that provides the same delegation indexing without requiring a full Cardano chain sync (days on testnet, weeks on mainnet). Dolos provides instant localhost setup via gRPC streaming. Even though we have delivered with Dolos/UTxORPC, the original Carp code is available at https://github.com/dcSpark/carp and the original Paima Engine funnel system at https://github.com/PaimaStudios/paima-engine (main branch). This Milestone is provided after the fact, so it contains further reach than M2. New site https://effectstream.github.io/home/\n\nA. Output: Stake pool delegation detection integrated into EffectStream via the PoolDelegation primitive\nAcceptance criteria: Integrate the Carp task from milestone #1 to support detecting delegation changes, supporting queries for both address and stake pools. Delivered as the PoolDelegation primitive in EffectStream, which tracks stake registrations, delegation changes, and deregistrations via PostgreSQL materialized views. Queryable by both wallet address and stake pool. 21 end-to-end tests verify the full delegation lifecycle. The pivot from Carp to Dolos/UTxORPC provides the same indexing capability with instant setup instead of days-long chain sync.\nEvidence:\nCode: \nhttps://github.com/effectstream/effectstream/tree/v-next/packages/node-sdk/sm/primitives/src/cardano-pool-delegation\nDelegation template (runnable locally): \nhttps://github.com/effectstream/effectstream/tree/v-n",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 25,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 165000,
+      "promise": "・Allow games to easily react to delegation updates from Paima Primitives through updates to their game state machine or through utility functions part of Paima Engine that can query the delegation state of users. We will additionally include an example of how to use it as part of the Paima docs\n\nTwo use-cases we plan to enable conceptually:\n・Having an area in a game that you can only enter if you’re currently delegating to a stake pool\n・Receiving an in-game item if you delegated to a specific pool",
+      "criteria": "Create and document a “Paima Primitive” that allows games to query and update based off delegation changes and all related utility functions",
+      "report": "**Context:** \nPaima Studios merged into the Midnight Foundation, and Paima Engine was rebranded as EffectStream. We have rewritten the entire codebase from scratch - this is the third version. We listened to feedback, followed better practices, and improved overall quality. These events are why we are delivering now, but everything has been updated for the present. \"Paima Primitives\" are now called \"EffectStream Primitives\" after the rebrand; the API surface is unchanged in spirit — a primitive emits typed events into a state machine, and a game reacts to them in an `addStateTransition` handler. The PoolDelegation primitive plus the `Stm` + `World.resolve()` pattern in the cardano-delegation template together provide the queryable, reactive delegation API the milestone scoped. Even though we have delivered with EffectStream and Dolos/UTxORPC, the original Paima Engine code is available at https://github.com/PaimaStudios/paima-engine. This Milestone is provided after the fact, so it contains further reach than M3. New site https://effectstream.github.io/home/\n\n**A. Output: A documented Primitive that lets games query and react to delegation changes**\nAcceptance criteria: Create and document a \"Paima Primitive\" that allows games to query and update based off delegation changes and all related utility functions. Delivered as the `CardanoPoolDelegation` primitive plus the cardano-delegation template's state machine wiring. The primitive emits a `{ address, pool, epoch }` payload into a typed grammar; a game subscribes by registering a state transition handler that fires on every delegation change. Utility functions for querying current delegation state are provided as pgtyped queries: `getDelegations`, `getDelegationsByPool`, `getDelegationsByAddress`, and `getPoolStats`. These cover both reactive logic (handler fires when delegation changes) and pull logic (query current state at any block).\nEvidence:\n- Primitive source: https://github.com/effectstream/effectstream/tre",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 19,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 165000,
+      "promise": "・Allow Paima batchers to check which pool an address is delegating to and include documentation on how to modify the batcher to use this configuration in the Paima engine docs\n\nThe main use-case we aim to enable is to power features such as stake pool being able to spin up batchers that provide free transactions for delegators of to their pool",
+      "criteria": "An easy-to-use configuring system to allow Paima batchers to treat users differently depending on which pool they are delegating to",
+      "report": "NOTE: we have updated this PoC with \n(1) a video for this specific milestone \n(2) simplified documentation \n(3) Notes from the Cardano Directive (in the comments and notes below)\nBRIEF\nThis milestone delivers pool-aware batchers: an easy-to-use configuration system that lets a batcher treat users differently depending on which Cardano stake pool they delegate to. The headline use-case works end to end - a stake pool operator can spin up a batcher that provides free transactions for delegators of their pool. Delivered as the DelegationAwareBatcherAdapter: it extends the default L2 adapter with a validateInput method that queries the delegations table (written by the Cardano sync node over Dolos/UTxORPC) and checks the user's current delegation against a configured ENABLED_POOLS array of pool operator keyhashes. Delegators of enabled pools get free transactions (fee 0); everyone else is rejected at the HTTP layer before their input enters the queue. Configuration is that single array - an SPO sets it to their pool's keyhash and the batcher does the rest.\n\nLINKS TO REVIEW\n\n1. Video - batcher configured for specific pools; a delegator of an enabled pool is accepted, a non-delegator is rejected, both visible atthe HTTP layer \nhttps://youtu.be/LQ97YSeOtQ4\n\n2. Code:\nPool-aware batcher implementation example (DelegationAwareBatcherAdapter):\nhttps://github.com/effectstream/effectstream/pull/691\nBatcher framework package the adapter extends:\nhttps://github.com/effectstream/effectstream/tree/v-next/packages/batcher\nBatcher-validations template (runnable local stack):\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/batcher-validations\nCardano delegation template (writes the delegations table the adapter reads):\nhttps://github.com/effectstream/effectstream/tree/v-next/templates/cardano-delegation\n\n3. Documentation - how to modify the batcher for pool-aware validation:\nPool-aware batcher walkthrough (annotated adapter code + validation flow + embedded demo):\nht",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 26,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 165000,
+      "promise": "・Integrate the system in at least 1 game with Paima so that there is a benefit to delegating to a stake pool (exact benefit and stake pool(s) to be chosen at a later date) with at least 1 stake pool integration\n・Provide documentation on how more pools can leverage this infrastructure as well as documentation for how others can create games that leverage stake pools\n・Public outreach campaign to stake pools to demo and explain the functionality and opportunity to them and create an iteration planned based on their feedback",
+      "criteria": "・Leveraging delegation information for at least 1 public game in Paima with at least 1 stake pool\n・Public campaign to onboard stake pools and gather their feedback and meaningful feedback aggregated",
+      "report": "NOTE: Due to short timelines for this project, we have submitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA. This milestone is totally independent and does not depend in any way on previous milestones.\nFOR REVIEWERS\nThanks for the previous review. This submission was partially reviewed before this PoA update. We have improved the format, added videos, and content for an easier explanation of the milestones. We have also added a statement by the Catalyst Directive that helped us review the scope and other important points, info in NOTES.\nBRIEF\nThis milestone delivers games that leverage Cardano stake delegation, with documentation, an SPO onboarding channel, and a public feedback loop. The original scope asked for at least one public game with at least one stake-pool integration; the delivery is materially broader: stake delegation became the consensus weight of an entire chain. Four production games (Safe Solver, Kachina Kolosseum, Block Kart Legends, Dust-2-Dust) run on Midnight, a Cardano partner chain whose validator set is selected from registered Cardano SPOs. Cardano SPOs register permissionlessly as Midnight block producers via the Partner Chains Toolkit, and the Ariadne committee-selection algorithm reads those registrations and the delegation stake behind them from Cardano's ledger every epoch. So the same delegation certificate that earns a user Cardano staking rewards also weights block production on the partner chain their games run on - every transaction in every game on Midnight is produced by a committee drawn from Cardano stake pools, with delegation as the input.\nLINKS TO REVIEW\n\n1. Video - the SPO -> Midnight validator pathway + the live games\nhttps://youtu.be/7E3TAVb3qqk\n\n2. Games leveraging delegation (live on Midnight, a Cardano partner chain):\nNOTE: At the moment of this submission, the servers are been migrated, there might be temporal d",
+      "kinds": [
+        "code",
+        "live",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 39,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "6",
+      "cost": 165000,
+      "promise": "Project Close Report:\n・pdf report\n・video report",
+      "criteria": "Community has the access to PCR.",
+      "report": "NOTE: Due to short timelines for this project, we have submitted this milestone before the previous was approved. This was discussed with the Cardano Directive, and a formal statement was added at the end of the PoA.\nBRIEF\nThis is the Project Close Report for Catalyst proposal 1000153, \"Powering on-chain game functionality using Cardano stake pools\".\nLINKS TO REVIEW\n1. Close-out video:\nhttps://youtu.be/nPOL8RZ-j4o\n\n2. Close-out report \nhttps://drive.google.com/file/d/1M0catP1CkUSlOnKB0u1HYk53akslO9WW/view?usp=sharing\n\n3. OPTIONAL Open-source code + documentation + blog:\nhttps://effectstream.github.io/home\n\n----------------------------------------------------------------\nCOMMENTS AND NOTES\n\n[summary of text] Catalyst Direction has reviewed and agreed on the following statement regarding this project and recorded under ticket #9527\n・Rebrand. Paima has rebranded as EffectStream and is part of the Midnight Foundation; links might now appear under the name of either of these entities. \n・Scope. For reviewers: milestones and deliverables should be evaluated against the approved acceptance criteria. The contents of each submission remain subject to reviewer assessment; examples or further implementations may reflect technical evolution of the Cardano ecosystem since approval \n・Midnight refocus. Midnight is a Cardano partner chain, where Cardano SPOs can become Midnight validators, and Midnight's NIGHT token is one of the largest Cardano native tokens.\n・Live Demos: To keep demos free to use over the long term: some of the ADA allocated to the project has been apportioned to pay for user interactions, and Midnight Foundation is sponsoring servers and other paid services. This might reflect in branding.\n・CrossChain: EffectStream is an open-source multi-chain framework focused on Cardano and Midnight, and the integration with other chains. Chain-swapping (e.g., to Cardano) is supported across the entire codebase and provided templates.\n・Status: These projects remain active and",
+      "kinds": [
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 7,
+      "cut": true
+    }
+  ]
+}

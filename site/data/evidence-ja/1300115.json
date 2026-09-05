@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "公開 GitHub リポジトリを以下で提供する:\n・TypeScriptベースのSDK構造の足場\n・Collateralized Debt Positions(CDP)の管理のコアエンドポイント。\n・SDKを自社プロジェクトにインストールする方法に関するドキュメント.",
+      "criteria": "・SDK構造の実装と機能\n・CDPエンドポイント(オープン、管理、クローズ、償還)は、インディゴプロトコルとの基本的な相互作用を可能にする機能です。\n・SDKを自社プロジェクトにインストールする方法に関するドキュメントをクリア、簡潔化します.",
+      "report": "マイルストーンの出力\nhttps://github.com/indigoprotocol/indigo-sdk - これはIndigo SDKのオープンソースリポジトリです。 これには、担保付き債務ポジションエンドポイントの型スクリプトSDK:オープン、ミント/バーン/デポジション/退出、クローズ。 README.md のドキュメントは、プロジェクトを自分でインストールする方法です。\n受容体基準\nSDK構造は以下の通りです。\nsrc/ - ベースプロジェクトソースディレクトリ\nsrc/contracts/ - 各契約のクラスと対応するエンドポイントです。\nsrc/helpers/ - UTxO の取得、興味の計算などのヘルパー関数\nsrc/scripts/ - Indigo v2.1 で読み込まれるバリデータ\nsrc/types/ - datums、バリデータパラメータ、償還などのタイプ。\ntest/ - プロジェクトテストスイート(ユニットテスト)\nマイルストーンの衝突の証拠\nhttps://github.com/indigoprotocol/indigo-sdk - スカフォールドSDKとCDPエンドポイントで公開されたGithubリポジトリ。\nhttps://github.com/IndigoProtocol/indigo-sdk/tree/main/tests - ユニットテストは、 datums.test.ts の datum のシリアライズチェック、ハッシュチェックの Validator Hash checks.test.ts、および CDP の利息計算に関する興味深い計算など、CDP との相互作用のためにここに存在します。 テストを実行する手順は README.md に含まれています\nログイン\nパステスト/interest-calculations.test.ts\n利息計算\n単一利益を計算する\n✓ ユニットの利益を正しく計算する必要があります。 0 (3 ms)\n✓ ユニットの利益を正しく計算する必要があります。 1\n✓ ユニットの利益を正しく計算する必要があります。 2\n累積利益を計算する\n✓ 蓄積された利益を正しく計算する必要があります。 0 (1 ms)\n✓ 蓄積された利益を正しく計算する必要があります、1\n✓ 蓄積された利益を正しく計算する必要があります。 2\n✓ 蓄積された利益を正しく計算する必要があります。 3\n✓ 蓄積された利益を正しく計算する必要があります。 4\n✓ 蓄積された利益を正しく計算する必要があります、5\n\nパステスト/datums.test.ts\nDatum チェック\n✓ 価格Oracle (5 ms)\n✓ 利息Oracle\n✓ CDP(2ミリ秒)\n✓ iAsse"
+    },
+    {
+      "no": 2,
+      "promise": "・Stability Poolとのやりとりのポイントを増幅\n・インディゴプロトコル内でのステーク機能を追加\n・追加機能の文書化例.",
+      "criteria": "・安定性プールエンドポイント(入金、出金、クローズ)は機能的であり、インディゴプロトコルの仕様を満たす\n・SDK内での機能の充実と運用の徹底\n・上記の実装機能の実行方法を示すドキュメントと例をクリアして簡潔化します.",
+      "report": "マイルストーンの出力\nhttps://github.com/indigoprotocol/indigo-sdk - これはIndigo SDKのオープンソースリポジトリです。 このプロジェクトは、コミットハッシュ `6544fe8` から更新され、新しい機能のエンドポイント (このCatalyst プロジェクトの範囲以外) を LRP と呼び、Staking Positions および Stability Pool アカウントの開設、調整、および終了のエンドポイントも導入しました。\nそこで、プロトコルの初期化や、CDP、LRP、Staking、Stability Poolsの受入試験(エミュレート環境)など、より包括的なテストスイートも搭載しています。\n受容体基準\nSDK構造は以下の通りです。\nsrc/ - ベースプロジェクトソースディレクトリ\nsrc/contracts/ - 各契約のクラスと対応するエンドポイントです。\nsrc/helpers/ - UTxO の取得、興味の計算などのヘルパー関数\nsrc/scripts/ - Indigo v2.1 で読み込まれるバリデータ\nsrc/types/ - datums、バリデータパラメータ、償還などのタイプ。\ntest/ - プロジェクトテストスイート(ユニットテスト)\nマイルストーンの衝突の証拠\nhttps://github.com/indigoprotocol/indigo-sdk - スカフォールドSDKとCDPエンドポイントで公開されたGithubリポジトリ。\nhttps://github.com/IndigoProtocol/indigo-sdk/tree/main/tests - Stablility PoolとStaking Positionsのアクセプタンステストは、以下のファイルで紹介されています。 また、各契約の適切なダタムとハッシュチェックテストが拡張され、バリデータのハッシュも含まれています。\nログイン\nRUN v2.1.9 /Users/codybutz/Documents/Indigo/Code/indigo-sdk\n✓ test/datums.test.ts (7)\n✓ 量子チェック (7)\n✓ 価格Oracle\n✓ 利息Oracle\n✓ CDP\n✓ iAsset\n✓ ステーキングマネージャー\n✓ ステーキングポジション\n✓ 安定性プール\n✓ test/hash-checks.test.ts (5) 307ms\n✓ バリデータハッシュチェック (5) 307ms\n✓ CDPクリエイターバリデータハッシュ\n✓ CDPバリデータハッシュ\n✓ コレクターバリデータハッシュ\n✓ ステーキングバリデータハッシュ\n✓ 安定性プールバリデータハッシュ\n✓ テスト/初期"
+    },
+    {
+      "no": 3,
+      "promise": "・投票、テキスト提案作成、シャードの作成・マージ作成、提案書の締結など、ガバナンスとのやりとりを想定したエンドポイント\n・ガバナンス機能のプロジェクトにテストを追加.",
+      "criteria": "・すべてのガバナンスエンドポイントは機能的であり、インディゴプロトコルの仕様を満たしています。\n・ガバナンスCBORのシリアライズ/デシリアライゼーションをカバーする全ユニットテストが通過しています.",
+      "report": "GitHubリポジトリへのリンク:https://github.com/indigoprotocol/indigo-sdk\nテストを実行するには、`develop` ブランチをチェックする必要があります。 テストを実行する手順は README に含まれています。\nエンドポイントを見直したい場合は、このファイルで実装されている実際のエンドポイントを見ることができます。https://github.com/IndigoProtocol/indigo-sdk/tree/develop/src/contracts/gov\nここでは、gov のテストのみを実行する出力のコピーです。 これは、投票、テキスト提案の作成、および作成/マージシャードなどのコアGov機能をすべてテストし、提案を閉じます。\nログイン\nindigo-sdk git:(develop) pnpmテスト/gov.test.ts\n\n> @indigo-labs/indigo-sdk@0.1.20テスト /Users/Documents/Indigo/Code/indigo-sdk\n> 実行テスト/gov.test.ts\n\nRUN v4.0.14 /Users/Documents/Indigo/Code/indigo-sdk\n\n✓ テスト/gov.test.ts > Gov > テキスト提案を作成する 1018ms\n✓ テスト/gov.test.ts > Gov > シャード939msでテキスト提案を作成する\n✓ テスト/gov.test.ts > Gov > マージ提案シャード943ms\n✓ テスト/gov.test.ts > Gov > アセット提案を作成 944ms\n✓ テスト/gov.test.ts > Gov > 提案1299msの投票\n✓ テスト/gov.test.ts > Gov > 投票する 2 件の提案を順次(最初に小文字) 1552ms\n✓ test/gov.test.ts > Gov > 逆に2つの提案に投票します(最初に高いpollID)、はいと投票無し 1514ms\n✓ テスト/gov.test.ts > Gov > エンドパス提案 1563ms\n✓ テスト/gov.test.ts > Gov > 終了失敗した提案 1636ms\n✓ テスト/gov.test.ts > Gov > テキスト提案を実行 1692ms\n✓ テスト/gov.test.ts > Gov > テキストの提案をtreasury出金1790msで実行する\n✓ テスト/gov.test.ts > Gov > アセット提案2015msの作成\n✓ テスト/gov.test.ts > Gov > 自己出金2188msによる資産提案の実行\n✓ テスト/gov.test.ts > Gov > アセット提案の修正を実行 2120ms\n✓ テスト/gov.test.ts > Gov > 資産提案を自己出金2321msで変更する\n✓ テスト/gov.test.ts > Gov > プロトコルパラメータの提案を2150ms変更する\n✓ テスト/gov.test.ts > Gov > プロトコルのパラメータの提案を修正する"
+    },
+    {
+      "no": 4,
+      "promise": "・すべてのSDK機能の完全エンドツーエンドテスト\n・セットアップ手順やコード例など、ユーザー文書の完成.",
+      "criteria": "・すべてのSDK機能により、エラーなくエンドツーエンドのテストが通過します。\n・ドキュメントの公開と見直し、必要なすべてのユースケースとSDKの機能を確実にカバーします.",
+      "report": "GitHubリポジトリへのリンク:https://github.com/indigoprotocol/indigo-sdk\nテストを実行するには、`develop` ブランチをチェックする必要があります。 テストを実行する手順とドキュメントは README に含まれています。\nSDK の全てのテストを実行している出力のコピーです。 CDP、Stabiliity Pool、Staking、 Governance、LRP、および Treasury エンドポイントのすべてのコアをテストします。\nログイン\nindigo-sdk git:(develop) pnpmテスト\n\n> @indigo-labs/indigo-sdk@0.1.20テスト /Users/Documents/Indigo/Code/indigo-sdk\n> 最新実行\n\nRUN v4.0.14 /Users/Documents/Indigo/Code/indigo-sdk\n\n✓ test/interest-calculations.test.ts > 興味深い計算 > 単価の計算 > 単位利息を正しく計算する必要があります。 0 1ms\n✓ test/interest-calculations.test.ts > 興味深い計算 > 単価の計算 > 単位の利益を正しく計算する必要があります。, 1 0ms\n✓ test/interest-calculations.test.ts > 興味深い計算 > 単価の計算 > 単位の利益を正しく計算する必要があります。, 2 0ms\n✓ test/interest-calculations.test.ts > 興味深い計算 > 累積利益を計算 > 蓄積された利益を正しく計算する必要があります。 0ms\n✓ test/interest-calculations.test.ts > 興味深い計算 > 累積利益を計算 > 蓄積された利益を正しく計算しなければ、1 0ms\n✓ test/interest-calculations.test.ts > 興味深い計算 > 累積利益を計算 > 蓄積された利益を正しく計算する必要があります。, 2 0ms\n✓ test/interest-calculations.test.ts > 興味深い計算 > 累積利益を計算 > 蓄積された利益を正しく計算する必要があります。 3 0ms\n✓ test/interest-calculations.test.ts > 興味深い計算 > 累積利益を計算 > 蓄積された利益を正しく計算する必要があります。, 4 0ms\n✓ test/interest-calculations.test.ts > 興味深い計算 > 累積利益を計算 > 蓄積された利益を正しく計算する必要があります。, 5 0ms\n✓ test/datums.test.ts > ダタムチェック >"
+    },
+    {
+      "no": 5,
+      "promise": "・カルダノコミュニティの発展プロセス、主要業績、インパクトをまとめた最終プロジェクトレポート。\n・SDKの機能性や使用事例をデモする動画の閉鎖.",
+      "criteria": "・最終報告書は一般公開\n・ビデオの修正、SDKの成功実装と、Cardanoエコシステムで開発者に利益をもたらす方法を示す.",
+      "report": "最終報告書: https://docs.google.com/document/d/1Xdl8r-bOC-4ySPrsqgaZSCWMY62QKiWVHdc2av X9ak/edit?usp=sharing\n動画を閉じる: https://youtu.be/n6EOtvkRZ k"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "title": "Open-Source Blockfrost Deployment Images",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 36900,
+      "promise": "Create the initial deployment infrastructure and configuration for a simplified launch to achieve the following:\n・setup and configure services to up and running base to each other\n・cardano node\n・cardano db-sync\n・cardano-submit-api\n・postgres\n・blockfrost\n・build working containers\n・extract and adjust parameters from existing docker and kubernetes files\n・add missing properties and fix some of existing\n・create missing configs\n・parameterize containers and create compose file\n・extract common properties to evn values\n・unify way how the parameters are passed\n・define containers dependencies and connections\n・adjust running scripts and os level commands\n・kubernetes config\n・translate working docker compose to kuberneters config\n・add missing configs like networks, deployments or storages\n・helm charts\n・build charts config base of docker compose and kubernetes config",
+      "criteria": "The deployment infrastructure that we open-source reliably launches blockfrost and the associated services (cardano-submit-api, postgres) with production configurations.",
+      "report": "[NEW Update 2: Updated to remove dead link]\n[Update 1: UPDATED DEMO GOOGLE DRIVE LINK]\nOpen source repository is located here where setup, node, documentation, working containers, configs, and helm charts can all be found:\nhttps://github.com/ikigai-github/ikigai-blockfrost-config\nDocker-compose deployment: https://github.com/ikigai-github/ikigai-blockfrost-config/blob/main/compose/README.md\nHelm: https://github.com/ikigai-github/ikigai-blockfrost-config/blob/main/helm/blockfrost/README.md\nBlockfrost API service that runs on this deployment (as proof of its completeness and to demonstrate its capacity) can be found here:\nThe previous submission included a link that was meant to be used for submitting transaction and was not a website link. For convenience so you do not need to submit a CBOR transaction, please review the video below. Happy day!\nhttps://drive.google.com/file/d/15VpBOTdGJ70Db_BPm4SoJ9NAgGdEE0Mx/view\nIf you'd like to click a link to see the API in action, you can see the output of a it working here: https://b-ryo.com/api/v0/blocks/latest.",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 36900,
+      "promise": "The outputs will be a number of commitments to the GitHub repository which add improvements to the reliability and performance of the instances. These commits will illustrate the attempts we make to improve reliability and performance.",
+      "criteria": "The modifications should result in a demonstrable, quantifiable improvement to the performance of the deployment. As of now, the exact changes we will make are unknown. During this milestone we will tinker with the deployment configuration, and try to see what changes if any result in improving performance / reliability.",
+      "report": "Updated Links\nWriteup with improvements, links, video, screenshots: https://docs.google.com/document/d/1eQjU-nwY38mQOI5dlOAZrW2J3k9uBRnYAmPBZ2QFl5o/edit?usp=sharing\nFolder with all Milestone 2 materials https://drive.google.com/drive/u/0/folders/1j-zgbzhdcOHSWhCBQs4izUnoMH8Pj0Y8",
+      "kinds": [
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30750,
+      "promise": "We will conduct a survey with developers and users of the tool to collect their feedback. The output will be a compilation of the feedback we obtained as-well-as our plans to address and concerns raised by users.",
+      "criteria": "The intended outcome is to collect user feedback so that we can see what types of improvements users want to see and what pain points they have when interacting with the current deployment so we can address them. The acceptance criteria is a compilation of useful actionable feedback. We will make a best effort attempt to get 5 responses from developers who actually used the deployment.",
+      "report": "Uploaded feedback to make more clear which is actual feedback vs the response to feedback and plan to address. Also added another screenshot that showed usage of the package in a pie chart.\nhttps://docs.google.com/document/d/1hbE-3aYpWUmFVKlNd2qbNXE_6G1xZVqk-TjCcHZ8r4o/edit",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 18450,
+      "promise": "Robust documentation for setup and deployment of the configured BlockFrost instance. The documentation will be written in GitHub markup language. The outputs will also include the Project closeout report and Project closeout video.",
+      "criteria": "Documentation that describes in simple terms the deployment procedure so that it can be easily used by developers in the community. The documentation must include all step required to deploy. Additionally, the closeout report and closeout video must be provided.",
+      "report": "Open sourced repository: https://github.com/ikigai-github/ikigai-blockfrost-config\nLink to summary video: https://www.youtube.com/watch?v=OISBfAspNBM\nMore details can be found here: https://docs.google.com/document/d/1eEYW1jDyFtChEQMphclv0z7eEVagiwwhf7Tdv5fjb2A/edit?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

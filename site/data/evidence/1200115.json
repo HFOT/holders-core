@@ -1,0 +1,80 @@
+{
+  "title": "Genius Yield | Atlas 2.0: PAB improvements and advanced UTxO features",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 57284,
+      "promise": "Augment Atlas (off-chain transaction building tool by GeniusYield) to support:\n・Native Scripts, also known as Simple Scripts and they are elaborated here.\n・Plutus Contract Blueprint (CIP-57) which is elaborated here.",
+      "criteria": "・With respect to support of Simple Scripts in Atlas, one is able to:\n・Specify a native script in Atlas.\n・Interact with a native script in Atlas.\n・Read (parse) a native script from it's JSON representation in Atlas.\n・With respect to support of Plutus Contract Blueprint (CIP-57):\n・Atlas is able to read (parse) a generated blueprint file to populate fields of specification, such as datum, redeemer, compiled code etc.\n・The populated fields of specification corresponds directly to relevant Atlas types, such as GYDatum, GYRedeemer, etc.",
+      "report": "This milestone promised two outputs, summarised below:\n・Support of Simple Scripts (also known as Native / Timelock scripts).\n・Support of Plutus Contract Blueprint (CIP-57).\n\nWe have successfully achieved these outputs. To note that our Atlas framework is open-sourced and code is accessible here.\nAs evidence, we have prepared video demonstrations showcasing the said functionality and how it achieves the described acceptance criteria.\nFor output (1), please find it's video here. We also provide a documentation on it, at https://atlas-app.io/additional-features/simple-scripts.\nFor output (2), here is it's video. And here is it's corresponding documentation: https://atlas-app.io/additional-features/blueprint.\nAlso, for reference, following modules contain tests for added Simple Script feature:\n・GeniusYield.Test.SimpleScript\n・GeniusYield.Test.Privnet.SimpleScripts\n\nAnd tests for added Blueprint feature is in following modules:\n・GeniusYield.Test.Blueprint\n・GeniusYield.Test.Privnet.Blueprint",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 12
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 57284,
+      "promise": "The goal of this milestone is to enable Atlas to support all the transaction build capabilities as offered by `cardano-cli`, especially the changes being introduced by Chang hardfork, namely Conway era primitives. This makes Atlas feature complete with respect to possible relevant interactions and enable one to programmatically interact with Cardano ledger.",
+      "criteria": "In Atlas, one is able to programmatically:\n・Handle all the certificates,\n・Register/Unregister stake certificate.\n・Register/Retire stake pool certificate.\n・Stake delegation certificate.\n・Combined stake registration & delegation certificate.\n・Register/Unregister DRep.\n・Update DRep certificate.\n・Resign cold committee credential certificate.\n・Authorising a hot credential for a specific Committee member's cold credential certificate.\n・Propose governance actions:\n・Protocol parameter changes (across all groups - network, economic, etc.).\n・Hard-fork initiation.\n・Treasury withdrawal.\n・Motion of no conf",
+      "report": "This milestone promised two outputs, summarized below:\n\n・Support of all possible transaction building certificates.\n・Support of governance proposal & voting procedures.\n\nWe have successfully achieved these outputs. To note that our Atlas framework is open-sourced and code is accessible here.\n\nAs evidence, we have prepared a video demonstration showcasing the said functionality and how it achieves the described acceptance criteria, please find it here. We also provide a documentation on Certificates, at https://atlas-app.io/additional-features/certificates and for Governance Procedures at https://atlas-app.io/additional-features/governance.\n\nAlso, for reference, following modules contain tests for certificates:\n・Certificates related to registering, updating & unregistering a delegated representative (DRep): GeniusYield.Test.Privnet.DRep.\n・Certificates pertaining to stake address registration, delegation & deregistration (this also illustrates usage of stake validator): GeniusYield.Test.Privnet.Stake.\n・Those related to stake pool registration & retirement: GeniusYield.Test.Privnet.StakePool.\n・Committee related certificates: GeniusYield.Test.Privnet.Committee.\n\nAnd tests for proposal & voting procedure is in following module: GeniusYield.Test.Privnet.Gov.",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 57284,
+      "promise": "The goals of this milestone include:\n・Atlas to have it's own coin selection algorithm, as:\n・Current algorithm is out-sourced from cardano-wallet repository, available here. We aim to implement a custom variant which would give us greater flexibility and better serve our use-case.\n・Own coin selection algorithm also helps us reduce build dependencies, as we would not require dependency upon `cardano-wallet`'s sub-libraries. Less dependency bloat would enable us to more promptly support version updates to GHC (flagship Haskell compiler).\n・Current coin selection algorithm is tied deeply with transaction fee estimate cycle, we aim to improve on that so we can reduce from current logarithmic fee estimate iterations to something more constant.\n・UTxO caching to better manage back-to-back transactions. This is relevant if transactions are submitted quickly in succession.\n・Improved transaction chaining and parallel transaction building abstractions.\n・Improvements to data providers supported by Atlas.\n・Improvements to Atlas test framework. Currently Atlas supports two frameworks, a private testnet connected to locally ran node and a simulated mock testnet via clb. We would like to provide int",
+      "criteria": "・Atlas has it's own coin selection algorithm.\n・There is no dependency upon cardano-wallet sub-libraries.\n・Possible improvement in fee estimation loop from being logarithmic to constant.\n・Provision to allow UTxOs to be cached where node's mempool or in memory cache of transactions is employed to know for already consumed outputs and to-be-made available outputs. \n・Atlas has primitives to support transaction chaining and parallel transaction building.\n・Improvements to Atlas data provider:-\n・Access to node's mempool.\n・Support of Ogmios if the node is remotely available.\n・More utilities, in releva",
+      "report": "We have successfully achieved the outputs mentioned in this milestone. To note that our Atlas framework is open-sourced and code is accessible here.\nAs evidence, we have prepared a video demonstration showcasing the said functionality and how it achieves the described acceptance criteria, please find it here. Coin selection technical design specification is available here.\nAlso, for reference, following provides relevant links related to acceptance criteria:\n・Unified testing mechanism is explained here] and our tests-unified folder contains these unified tests.\n・We added support of more utilities related to Conway era, such as fetching constitution and fetching details of a governance action, tests of which are available here. These are \"mashup\" tests where we check output of one provider against the other. If all providers are giving same output then that gives confidence in their implementation.\n・We added support of Ogmios provider, GeniusYield.Test.Providers.Mashup module includes tests of it. Usage of Ogmios provider is documented here and it's code is available here.\n・We added support to access transactions in node's mempool via mempoolTxs function. Tests of which is available here. This test checks if submitted transaction is successfully fetched from mempool.\n・Atlas has primitives to support of transaction chaining and parallel transaction building. These are supported via buildTxBodyChaining and buildTxBodyParallel. These are used extensively in our tools in production, such as smart-order-routers here giving confidence in their usage.\n・Atlas supports for UTxO caching to know for already consumed outputs and to-be-made available outputs either via node's mempool or in memory cache of submitted transactions. Their usage is documented at here and in particular mempool cache is defined here whereas in-memory cache is defined here. Test for it is defined here. This test tries to query for UTxOs at the user's address immediately after submitting the transaction t",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 21,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "8",
+      "cost": 47259,
+      "promise": "The goals of this milestone are:\n・To make Atlas compile with GHC version 9.10.1 or later.\n・It's worth noting that currently, Atlas compiles with GHC version 9.6.5, which lacks some of the features added by GHC 9.10.1 in relevance to JavaScript and WebAssembly backends as a GHC compilation target.\n・Exploration and utilisation of Atlas on client side in browsers.\n・Currently if one is to make use of Atlas, it is not possible to run it entirely on client side in web browsers but rather one would need to make an API endpoint available from the server backend which the browser client can then call. This is one important difference with off-chain transaction building tools that target JavaScript. GHC 9.10.1 provides useful compilation targets such as WASM & JS with JS FFI interoperability. We aim to make use of these targets and FFI compatibilities to enable Atlas to run entirely on client side.",
+      "criteria": "・Atlas compiles with GHC version 9.10.1 or later.\n・One is able to utilise Atlas transaction building machinery entirely on client side. If unfortunately, it is deemed not to be possible due to technical challenges, then the reasoning is clearly documented.",
+      "report": "Addressing reviewer's feedback: We provide documentation related to compilation of Atlas at https://atlas-app.io/getting-started/how-to-build. To further help with this, we have created a video going over this, please find it here. We further propose to reach out to us either in \"Discussion\" feature here or via email at hello@geniusyield.co for any further questions and if required, to setup a 1-on-1 session to help with compilation. Also, as noted in the above video, we have a CI in Atlas that compiles it successfully, and can be consulted to see what all was required to be included in build environment for successful compilation. We also updated CI so that it compiles with GHC 9.10.1 (using cabal version 3.14.1.1) — a successful CI run can be seen here. Rest of the submission is same as before.\nAs part of this milestone, our focus was on following two outputs:\n・To make Atlas compile with GHC version 9.10.1 or later.\n・Exploration and utilization of Atlas on client side in browsers.\n\nWe have made video demonstration, showcasing our achievement of acceptance criteria for these two outputs. Please find it here.\nNote that our Atlas framework is fully open-sourced and is accessible here.\nRegarding first output, Atlas, now successfully compiles with GHC version 9.10.1 and also with higher version, namely, 9.12.1.\nAnd for second output, unfortunately, after thorough investigation and practical attempts, we have determined that this goal is not feasible due to significant technical difficulties as documented below.\n1. Dependency on C Libraries\n\nAtlas relies heavily on IOG/IntersectMBO's Haskell libraries, such as plutus, cardano-ledger, cardano-api. These libraries eventually depend upon cardano-base which includes foundational dependencies such as cardano-crypto-class.\nThe cardano-crypto-class library, as a core component of Atlas, relies on external C libraries such as libsecp256k1, libsodium, and libblst for cryptographic operations. These libraries are not natively com",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 9,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "9",
+      "cost": 38666,
+      "promise": "・Updates towards user documentation available at https://atlas-app.io/ to reflect latest changes & features provided by Atlas.\n・End-to-end example showcasing how to create a decentralised application utilising different aspects of Atlas made available at https://atlas-app.io/.\n・Final closeout report.\n・Final closeout video.",
+      "criteria": "・End-to-end example is provided at https://atlas-app.io/ which:\n・Loads the compiled validator(s) using Atlas. These validators could originally be written in PlutusTx, Aiken, Plutarch, etc.\n・Has off-chain code to interact with those validators, written using Atlas.\n・Provides API endpoints which front-end can query to build transactions using Atlas.\n・Contains test (written in Atlas) which can be ran against multiple backends, such as locally span testnet, mock ledger testnet, pre-production testnet, mainnet, etc.\n・Every feature provided by Atlas framework is well documented. Specifically, user",
+      "report": "We have successfully achieved the outputs mentioned in this milestone. To note that our Atlas framework is open-sourced and code is accessible here.\n\nAs evidence, we have prepared a video demonstration showcasing the said functionality and how it achieves the described acceptance criteria, please find it here. Latest documentation is available at https://atlas-app.io with it's corresponding source code at https://github.com/geniusyield/atlas-docs and repository hosting end-to-end example is available here.\n\nCloseout report: https://drive.google.com/file/d/1rU3ZUmBuEJcOoc51m4Zd6Z4NZDh2hsmx/view?usp=sharing.\n\nCloseout video: https://youtu.be/fkoTp0mzSnQ.\n\nAlso, for reference, following provides relevant links related to acceptance criteria:\n\n* \"How to load a wallet.\": https://atlas-app.io/getting-started/browser-integration for browser wallet and https://atlas-app.io/additional-features/signing-keys when having access to signing keys.\n* \"How to load validator(s).\": https://atlas-app.io/getting-started/smart-contract-intro and https://atlas-app.io/additional-features/blueprint.\n* \"How to specify relevant configuration, such as configuration for data provider, logging.\": https://atlas-app.io/getting-started/endpoints#providing-data-provider.\n* \"How to utilise different off-chain constructs available in Atlas to build for transaction: https://atlas-app.io/getting-started/operations.\n* \"How to write tests in Atlas which can target backends such locally span testnet or mock ledger testnet. Same test program could also be ran against any networks supported by Atlas, such as pre-production testnet, mainnet.\": https://atlas-app.io/getting-started/testing.",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    }
+  ]
+}

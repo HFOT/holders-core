@@ -1,0 +1,46 @@
+{
+  "title": "Nucast: Introducing Un-Collateralized Loans, Sybil Resistance and trust-based environment using Decentralized Reputation Protocol and SBTs for Cardano Wallets",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 22500,
+      "promise": "Conduct comprehensive market research on Cardano projects and users, including surveys, interviews, and secondary data analysis.\nDevelop detailed architecture for a reputation scoring system with on-chain data integration. Develop detailed architecture for a reputation scoring system with on-chain data integration.\nDesign initial functionalities for user interaction with DAOs and communities, including UI/UX.",
+      "criteria": "Submit a detailed PDF report including methodologies, data sources, stakeholder consultations, and quality evaluations.\nProvide detailed system architecture documentation, including technology components, data integration, score calculations, and security measures.\nSubmit documentation of designed functionalities, including detailed UI/UX and implementation plans.",
+      "report": "Market Report: https://drive.google.com/file/d/1XeYd3gMo_Z3QuZX8SB-RhlVndykprjhD/view?usp=sharing\nSystem Architectural Documentation: https://drive.google.com/file/d/1K3maPAyOwntneR4Ees-O_34P6QEUEGAq/view?usp=sharing\nDocumentation for Designed Functionalities, User Interaction, UI/UX Details, and Implementation Plans: https://drive.google.com/file/d/1Cp7SWUtENX5RFT7SW_TjlqgQVsC1cY_E/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 22500,
+      "promise": "・Technical documentation of building Sybil resistance mechanisms using Soul Bound Tokens.\n・Integration Plans for uncollateralized lending contract to enable reputation-based access.",
+      "criteria": "・Technical documentation ensuring non-transferable reputations and Sybil resistance.\n・The documentation will cover system architecture and trust algorithms (criterias to check certain checkpoints to filter out wallets with bot activity and showing low financial capability).\n・Successful integration plans with uncollateralized lending contract for reputation-based services.\n・Demonstration of SBTs through proper testing mentioned in document which guarantees the non transferability of reputation NFTs.\n・Demonstration of sybil resistance by doing the relevant tests such as making the algorithmic cr",
+      "report": "Technical Documentation and Smart Contract Architecture for SBT Integration & Non-Transferable Reputation-Based Uncollateralized Lending: https://drive.google.com/file/d/1PXFvo8RBxfkp-csL7LsWHah2sGwXzaDY/view?usp=sharing\nThe document outlines non-transferable reputations and Sybil resistance via trust algorithms and system architecture. It includes integration with uncollateralized lending and tests for SBTs. Sybil resistance is validated through stringent filtering criteria.\n\nNote:\nThis milestone was focused on the technical architecture, which is why it didn’t include development artifacts. In 2–3 weeks, in the next milestone, we’ll provide concrete progress — including the deployed link of smart contract on the pre-prod network and testing results.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "・Create a close-out video presentation summarizing the project and its functionalities.\n・Submit a final project close-out report detailing all development aspects.\n・A link to the deployed Nucast Reputation Protocol on a publicly accessible domain along with the preprod smart contracts.",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・The architecture of reputation scoring system integrated with a Preprod network. (Links to smart contracts)\n・Provide a link to the deployed Nucast Reputation Protocol on a publicly accessible domain",
+      "report": "Preprod Smart Contract:\nhttps://preprod.cardanoscan.io/address/addr_test1wrmh27vj5m9ql6c9lrx36y0cqt5ypl\nc8eepm0sevy79600q0cts5g\nReputation Protocol API: https://reputationsapi.nucast.io/docs\nUncollateralized Lending Gitbook: https://cardano-reputation.vercel.app/intro\nProject Close Out Report - https://drive.google.com/file/d/1p07gS0YIVe3TsKAexWkYjF82LyScxizj/view?usp=sharing\nProject Close Out Video - https://youtu.be/aTlo_kK2dC8",
+      "kinds": [
+        "chain",
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 11
+    }
+  ]
+}

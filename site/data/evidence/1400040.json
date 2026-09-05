@@ -1,0 +1,62 @@
+{
+  "title": "CHARLI3 - Open Source Oracle SDK",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "We will migrate our private repositories into public open source MIT repositories under the Charli3 organization. Codebases will be restructured, licensed under MIT, and prepared with READMEs, contribution guidelines, and a roadmap outline to support future community collaboration.\nAdditionally, we will provide a short video to use the repos and documentation.",
+      "criteria": "・At least two repositories are made public, licensed under MIT. \n・Documentation is completed and shared that includes:\n・Developers for guides for using the code\n・Contribution guidelines\n・Roadmap how future work can be organized\n・Complete brief demo video (2-5mins) walking through the repositories and documentation",
+      "report": "We created this single page of documentation specifically for this project to share our milestone deliverables with both non-technical and technical people https://docs.charli3.io/oracles/open-source-project. Thank you.\n\nAC 1: Open Sourcing (OSI Compliant true open sourcing)\n2+ repositories requiring MIT open sourcing (Evidence 1)\n・Main repository: https://github.com/Charli3-Official/\n・Guides: https://docs.charli3.io/oracles\n・Pull Oracle V3 Repos\n・https://github.com/Charli3-Official/charli3-pull-oracle-client\n・MIT License (https://github.com/Charli3-Official/charli3-pull-oracle-client/blob/main/LICENSE)\n・Contribution Guidelines: https://github.com/Charli3-Official/charli3-pull-oracle-client/blob/main/CONTRIBUTING.md\n・https://github.com/Charli3-Official/charli3-pull-oracle-node\n・MIT License (https://github.com/Charli3-Official/charli3-pull-oracle-node/blob/main/LICENSE)\n・Contribution Guidelines (https://github.com/Charli3-Official/charli3-pull-oracle-node/blob/main/CONTRIBUTING.md)\n・https://github.com/Charli3-Official/charli3-pull-oracle-contracts\n・AGPL3.0 License (https://github.com/Charli3-Official/charli3-pull-oracle-contracts/blob/main/LICENSE)\n・Contribution Guidelines (https://github.com/Charli3-Official/charli3-pull-oracle-contracts/blob/main/CONTRIBUTING.md)\n・https://github.com/Charli3-Official/charli3-pull-oracle-contracts\n・AGPL3.0 License (https://github.com/Charli3-Official/charli3-pull-oracle-contracts/blob/main/LICENSE)\n・Contribution Guidelines (https://github.com/Charli3-Official/charli3-pull-oracle-contracts/blob/main/CONTRIBUTING.md)\n・Push Oracle V3 Repos\n・https://github.com/Charli3-Official/charli3-push-oracle-contracts\n・MIT License (https://github.com/Charli3-Official/charli3-push-oracle-contracts/blob/main/LICENSE)\n・Contributor Guidelines (https://github.com/Charli3-Official/charli3-push-oracle-contracts/blob/main/CONTRIBUTING.md)\n・https://github.com/Charli3-Official/charli3-push-oracle-node\n・MIT License (https://github.com/Charli3-Official/charli3-",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 59,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "We will release the first version of the SDK, including helper functions, utilities, and a basic integration example. Documentation will cover installation, setup, and high-level architecture, with room to expand tutorials and additional language bindings as the project matures.",
+      "criteria": "・Software Developer Kit (SDK) Completed: enables user to interact with open source components to launch, manage, and consume data from oracle networks (for this milestone, the mvp version will be pre-prod to eliminate costs for testing by catalyst reviewers and public).\n・SDK Documentation completed and publicly available: includes the following\n・Architectural overview\n・SDK Setup guide\n・Demo Video completed and publicly available showing howto use the SDK to launch and manage oracle networks",
+      "report": "・Github SDK Links:\n・Pull Oracle SDK: https://github.com/Charli3-Official/charli3-pull-oracle-sdk/tree/main\n・Readme: https://github.com/Charli3-Official/charli3-pull-oracle-sdk/blob/main/README.md\n・Push Oracle SDK: https://github.com/Charli3-Official/charli3-push-oracle-sdk\n・Readme: https://github.com/Charli3-Official/charli3-push-oracle-sdk/blob/main/README.md\n・SDK Documentation (Main Site): \n・Website get started: https://docs.charli3.io/oracles/open-source-project/sdk-and-platform-tools\n・Pull Oracle SDK docs: \n・https://docs.charli3.io/oracles/open-source-project/sdk-and-platform-tools/pull-oracle/platform-sdk/setup-and-configuration\n・https://docs.charli3.io/oracles/open-source-project/sdk-and-platform-tools/pull-oracle/client-sdk/setup-and-configuration\n・Push Oracle SDK docs: \n・https://docs.charli3.io/oracles/open-source-project/sdk-and-platform-tools/push-oracle/setup-and-configuration\n・Demo Video: https://drive.google.com/file/d/1sOB6O-kJvDnvG5kwuU1wh8M2_WNO2EE1/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 19
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "We will provide at least two demo oracle networks (push and pull) along with reference contracts, pre-prod deployments, and walkthroughs.\nThese demos will serve as templates for future implementations, and we may extend them with extra integrations depending on progress.",
+      "criteria": "・Push Oracle network deployed to pre-production\n・Pull Oracle network deployed to pre-production\n・Documentation completed, including: \n・Steps to deploy push oracle\n・Steps to deploy pull oracle\n・Demo Video completed, including:\n・Walkthrough of the deployment process from the user perspective for the push oracle network\n・Walkthrough of the deployment process from the user perspective for the pull oracle network",
+      "report": "Push Oracle (Preprod):\nDeployment: https://preprod.cexplorer.io/tx/df7c7485da3e943c7815a94f3ec0da392714a8f48e17d8d4f55499daaa268977\n\nReference Script Tx: https://preprod.cexplorer.io/tx/d5065ed8e44748dd36b42e05df5f9e344c0a83c6301297c29a71297f0f10926d\n\nPull Oracle (Preprod):\nDeployment: https://preprod.cexplorer.io/tx/1c6a85a0ebab79073db0ded454647ff0c722ffad9268919a75db4322cfad95f0\n\nReference Script Tx: https://preprod.cexplorer.io/tx/61c5b00aeefb430b776b5fa983527e4c00769e1e73df7a1a8e7becbc26fcc595\n\nPush oracle demo video: https://drive.google.com/file/d/1hi6EY7Ey-BeUA2y6AtHIOK1RLY4ip09u/view?usp=drivesdk\n\npull Oracle Demo Video: https://drive.google.com/file/d/1tr0OxNwRGZl2GwSm4ENqm4WW3cazzUhA/view?usp=drivesdk\n\nupdated documentation: https://docs.charli3.io/oracles",
+      "kinds": [
+        "chain",
+        "doc",
+        "other"
+      ],
+      "links": 14
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 15000,
+      "promise": "・Final close-out report\n・Final closeout video\n・Create and deliver a community outreach campaign including at least three public announcements (social posts, forum updates, or blog entries)\n・Host a public workshop to learn how to interact with the project deliverables\n・Workshop is video recorded and made available publicly\n・Create a 2-5 page \"sustainability plan\" that describes how the team will maintain the repos, SDK(s), and documentation over the next 12 months",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Host a public workshop\n・Complete a public workshop video recording\n・Create sustainability plan document\n・Perform at least three public announcements",
+      "report": "・Link to final closeout report\n\nhttps://drive.google.com/file/d/1tK9AJL0zkjB7YUTmagAwM-XEKub_8Nmk/view?usp=sharing\n・Link to final closeout video\n\nhttps://vimeo.com/1179105344/b75236462f\n・Share a link to the workshop recording to show that a) the workshop occurred and b) we provided a public recording of it\n\nhttps://drive.google.com/file/d/1Ew5aS09AEdrGA-_CFeqGK6g-7dzyXi67/view?usp=drive_link\n・Share a link to the sustainability plan hosted publicly on github, gdrive, or suitable alternative\n\nhttps://drive.google.com/file/d/1OQXOGBs1SUgCwqjQlLKaSJTcItqqjqoe/view?usp=sharing\n・Share links to at least three public announcements on x, medium, or other social/blog/suitable mediums\n\n・X Post promoting the open source tooling and sharing the workshop: https://x.com/Oraclecharli3/status/2038862688563208196?s=20\n・X Post promoting the workshop: https://x.com/Oraclecharli3/status/2033620548253847842?s=20\n・Telegram announcement about our open source tooling and workshop: https://t.me/Charli3OfficialNetwork/1/15417 (Mar 30 2026)\n・Discord announcement post workshop message and links to open source tooling: https://discord.com/channels/853525594201784330/968580069725454436/1488419167135600742",
+      "kinds": [
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 16
+    }
+  ]
+}

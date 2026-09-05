@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Catalyst Testnet、Ideascale Platform、 Milestone Reporting、コミュニティレビューデータなどからのデータを使用して、以前の資金調達ラウンド(ファンド10まで)の包括的な分析を実施します。\n・投票結果と提案結果とレビューを結びつける比較分析。\n・ナレッジグラフやネットワーク分析の開発、品質審査者や投票者を特定する.",
+      "criteria": "・調査結果をまとめた詳細な報告書の完成\n・ナレッジグラフとネットワーク解析のデモ.",
+      "report": "親愛なるレビュアーおよび触媒のチーム、\n以下は、当社のM1報告書の改訂版です。\nhttps://docs.google.com/document/d/1zSbcMgSx68jl1zpH9wgluEcpJaoGvVDCrRCakF9rzT8/edit?usp=sharing\n\n最初のバージョンの拒絶反応を最初に読み、進捗状況と当社のアプローチをよりよく理解してください。\n1. 「Catalyst Testnet、Ideascale Platform、マイルストーンレポーティング、コミュニティレポーティングデータなど(利用可能な場合)からのデータを使用して、過去の資金調達ラウンド(ファンド10まで)の包括的な分析を実施する」 - Funds8-10は、Funds2-7のアカウントにのみ取得されましたか? また、コミュニティレビューデータ以外のプラットフォームを悪用する表示はありません。\n→ 異なるプラットフォームからのデータを復元する:\n・マイルストーンポータル: マイルストーン・レポーティング・ポータルからのデータがファンド10分析(「プロポーザルスプレッドシート」参照)に利用されました。\n・Testnet/Ideascale: 異なるラウンドから審査者をリンクして、資金に対する一貫性を測定したいのですが、このデータはアクセスできません。\n\n→ 「異なる資金の分析」\n・より多くの分析を追加しましたが、初期資金は異なるプロセスや明確なメトリックがないため、このPOCでは使用していません。\n\n2. 「投票結果と提案結果とレビューを結びつける比較分析」 - これは包括的なレポートの一部である必要がありますが、投票結果に関する言及はありません。\n→ Re ‘voting result’: 関連するデータはアクセスできません (報告書で説明), しかし、私たちは、少なくとも、Appendixで私たちのアプローチを追加しました, しかし、実際のデータでそれを返すことができません.\n3 .「Trustlevel.io の検索結果の公開報告(Gitbook や他のプラットフォームへのリンクを含む)」 - レポートは、Gitbook ではなく、Github に公開されていない\n→ Re: Github で既に共有され、docs.trustlevel に追加されました。 io も。\n4.「調査結果をまとめた詳細なレポートの完成」 - 実現可能性のみが分析され、ドミニクは、影響に関するさらなる研究について言及しました。\n→ Re 'Feasibility': はい、feasibility は POC b の ‘the’ インジケーター"
+    },
+    {
+      "no": 2,
+      "promise": "[proposal, reviewer] ロールの評判のスコアを生成するための概念(POC)フレームワークの証拠を開発し、他のCatalystロールのテンプレートとして機能します。\n・機能性評価フレームワーク\n・寄贈触媒工具への評判の統合.",
+      "criteria": "・評判生成フレームワークの実装と機能性テストの成功。\n・評判のバッチを触媒探索ツールに統合.",
+      "report": "Dear MRは、以下のマイルストーン2 POAの証拠です(すべてのリンクは現在動作する必要があります):\n・公開されたフレームワークとドキュメント:\n・Googleリンク:https://docs.google.com/document/d/1wUmoMfy7tzuVv10pLgERUSnLng84MwI7fr9Hm5kB0 w/edit?usp=sharing\n・Github リンク: https://github.com/TrustLevel/ProjectCatalyst Reputation Scores POC\n・Catalyst Explorer(v2)に評価スコアとバッチの統合:\n・レビュー者プロフィールページ:https://www.catalystexplorer.com/en/ideascale-profiles/g1wbp3jy1r/reviews\n・提案検討概要ページ:https://www.catalystexplorer.com/en/reviews\n\nMRとコミュニティに注意:\nPOCを実装する前に、Catalyst Explorer v2のリリースを待つことにしたので、このマイルストーンは遅延しました。 この決定は、以前のバージョン(v1)と統合していたので、仕事の重複を避けるために作られました。v2が導入されたときに、再びそれをやり直す必要があります。 v2のリリースを待ってから、評判システムは最新のプラットフォームアーキテクチャに組み込まれており、長期的にさらに発展させることができます."
+    },
+    {
+      "no": 3,
+      "promise": "評判システムのテストを実施し、コミュニティからフィードバックを集め、必要な最適化を行い、精度を実現します。\n・アウトプット:フィードバック分析と最適化の推奨事項.",
+      "criteria": "・「Cardano over Coffee」の2セッションを主催し、評判システムのユーザビリティと有効性に関するコミュニティメンバーからのフィードバックを収集します。\n・テストとフィードバックに基づいて、推奨最適化の少なくとも1つでリドネーションツールを更新します.",
+      "report": "A. 出力及び受諾の基準: 評判フレームワークのテスト及び更新\n証拠:\n・Google ドキュメント: https://docs.google.com/document/d/1XneKnNcm717duYoGIUvw0iW16z2lXb2Ekq2VYV9-jLY/edit?usp=sharing\n・Github: https://github.com/TrustLevel/ProjectCatalyst Reputation Scores POC\n\nB. 出力及び受諾の基準:Xの2つのコミュニティフィードバック セッション\n証拠: ホストされたスペース(150人以上の参加者と):\n・1: https://x.com/i/spaces/1jMJgRyBQwPGL/peek?s=20\n・2: https://x.com/LidoNation/status/1969007061758275809\n\nまた、カルダノフォーラムのスペースに関する情報も提供しました。\n・Cardano over Coffee “10月29日” エピソードのリキャップ - 一般的な議論\n\nC. 出力と受諾基準: コミュニティからのフィードバックに基づいて、リドネーションの触媒エクスプローラ上の評判スコアのデザインを更新しました。\n証拠:\n・実験(第3章) https://docs.google.com/document/d/1XneKncm717duYoGIUvw0iW16z2lXb2Ekq2VYV9-jLY/edit?usp=sharing\n・リンクは、対応するページになります。https://www.catalystexplorer.com/en/reviews?p=3"
+    },
+    {
+      "no": 4,
+      "promise": "この最終マイルストーンには、すべてのクローズアウトとプロジェクト完了活動が含まれます。\n出力は含んでいます\n・プロジェクト完了映像と完成報告\n・寄贈に関する評判のスコアの導入が投票行為にプラスの影響を及ぼすか、さらなる改善が望まれるかを調査する。\n\nまた、町役場会議では、全ての成果物や出力を実証することができます.",
+      "criteria": "・完成映像\n・終了報告\n・アンケートの全体的肯定的なフィードバック",
+      "report": "A. 出力及び受諾の基準: 閉鎖したレポート\n証拠: https://docs.google.com/document/d/11by6QFhSNgZxndYEqpnEj4B-uEGypOpRG3fqkHDdGTU/edit?usp=sharing\n\nB. 出力及び受諾の基準: 閉鎖したビデオ\n証拠: https://vimeo.com/1138930923?share=copy&fl=sv&fe=ci\n\nC. 出力: 償還に関する評判のスコアの導入が投票行為にプラスの影響を持っているかどうか、またはさらなる改善が望まれるかどうかに関する調査。\n受諾の基準:調査の全面的な肯定的なフィードバック\n証拠:調査結果(アンケートフォームへのリンクを含む)"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "title": "Smart Pack: parcels damage verification system on Cardano.",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "#1 - Test different types of cameras, photographic methods and box tampering sensors. Tests help determine a prototype for scanning devices. The aim of the tests is ascertain the level of detail commercial grade products have versus sensors specific to the job. \n#1 - Develop a basic phone application for photograph captures. It'll work on commercial phones. \n#2 - Capture relevant shipment metadata - carrier, date/time, etc.\n#2- Transmit photos to a back-end server ex: a local database (AWS, SQL DB)\n#3 - Test different AI models that will judge the photographs of the packages",
+      "criteria": "#1 - Differentiate image files provided of boxes that have a variety of sizes, colors, and methods of packaging. \n#1 - A mobile app in an alpha state.\n#2 - Test file capturing of the mobile application using the onboard cameras of a commercial phone.\n#2 - Test with tampering sensors to judge if the information they provide is more complete than the commercial hardware. \n#3 - Test different captured images for comparison in different custom AI models that are specific for image comparison.",
+      "report": "Hello reviewers,\nHere are the tests we did for the first milestone.\n1 LIDAR tests\niPhone onboard LIDAR camera:\nhttps://drive.google.com/file/d/1WamdjDKoqtOYpPBq60ZFBLK2Zp5NNxyw/view?usp=sharing\nD300 LIDAR Test:\nhttps://drive.google.com/file/d/1kSyFGrJh3tkghWOb13wwHfkADSO6hdSB/view?usp=sharing\n2 The mobile application:\nVideo of the mobile application (real rooster): https://drive.google.com/file/d/1uB28Lr4B3aoFY_uTXU9lSH577-91DtJu/view?usp=sharing\nLink on the google app store (only whitelisted): https://play.google.com/store/apps/details?id=cc.ken3.smartpackage&hl=en-US&ah=gGJvv0TorIeMvSQlaxOsd74ZlT0\nWebsite version (anyone can use): https://smartpack2.web.app/\n3 Tensor Flow model\nVideo of the model working: https://drive.google.com/file/d/1rhx2fXHQu-rVaehUb7N8mVkPkTmDaYkI/view?usp=sharing\nWebsite shown in the video (anyone can add pictures): http://package.testing.lt/\n4 Video of Chat GPT model\nhttps://www.youtube.com/watch?v=7LXmRTQ9WoE\n5 Light Based Tamper Detect\nhttps://drive.google.com/file/d/1nQxK8ZLG-wTE5PbZ7oZbMatZoIKp7NlO/view?usp=sharing\nIt detects if the package was opened before arrival.\n6 Stereo Camera Depth Test\nhttps://drive.google.com/file/d/1B6fs8QnJRekhIVriVcqyExLv2dJ32Yqj/view?usp=sharing\n3ken is interested in physical scene depth detection as a possible method to determine a shipment’s size and orientation while en route to a destination.\n7 Accelerometer Drop Detect\nhttps://drive.google.com/file/d/1fr7rEGb6Be7h19wVfwpZqKhkifPDAxZX/view?usp=sharing\nIt detects the velocity when a package is dropped.\nWe'll answer any question via chat. Happy weekend.",
+      "kinds": [
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 11
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 30000,
+      "promise": "#1 - Team members will send boxes via USPS, FedEx etc. to each other, Initially inside the USA and then to international members. We cannot give an exact number, it will depend on the needs by the performance of the model. The planned number is a minimum of 75 packages and a maximum of 200. \n#2- Data collection, apply AI models to fingerprint the packages\nand look for damage.\n#3 - The data will be used to test the AI models. This test involves boxes that went through the shipping process on a real life scenario. We want to judge the ability for a model to pick up on damage that happen during transit.",
+      "criteria": "#1 - Shipment of boxes of different sizes and types by different companies. The boxes will be of the standard sizes which are often used in the online retail, commercial shipping, and retail commerce: \n80 X 35 X 38cm \n50 X 40 X 30cm \n35 X 35 X 44cm \n37 X 25 X 57cm \n50 X 27 X 27cm \nThe range of boxes sent will be between 75 and 200. \n#2 - AI evaluating the images that have undergone process and handling by commercial shipment companies. By commercial shipping companies it is clear that we mean the regular retail options that are used in the USA. We'll ship boxes via USPS, UPS, and FedEx so the",
+      "report": "Hello,\nHere are the proofs of the milestones:\n1. Here are the list of the packages send for the test using the commercial package services:\n・UPS\n・USPS\n・FedEx\n\nThe difference in format is because each of the companies report packages in a different way. Also, we have removed any information that can reveal personal data. The aim of the sheets is to show we shipped packages over commercial carriers and the cost of doing so. \nNow, here is a consolidated list which contains each package sent using the carriers and also the size of the package:\n・Consolidated List\n\nHere is the database of pictures for the experiment. 6 boxes were lost by the shipping companies (new link):\nhttps://drive.google.com/drive/folders/1cgGIG2U0XMZPgWnzgMVokE0TXhphYsHy\n2. Next, we have the analysis of the packages using our custom AI model. This was created using Tensor Flow, an open-source toolkit for image processing. We trained only with the images we had for the test:\nhttps://drive.google.com/file/d/1RoHKGNXM497j5RHO9pQ1Pt8wnmNYKrrv/view?usp=sharing\nThe model under-performed due to the small amount of training data. We used the 100 boxes to train this data, but it was not able to recognize the damaged boxes over the regular one. It's impossible to tell how many boxes it would need to complete have enough data to have accurate information. \nWe have talked with some people in the LLM world and they gave us an estimate that 100k photos is the minimum to start getting results, but that is just the floor. To train accurate models the number is probably in the millions. \n3. Another test we made was using ChatGPT. We created a automated script that fed the pictures to the model and asked it if they were damaged. Here are the results:\nhttps://drive.google.com/file/d/188nAfuJuqJl8V0NOziXbRYf73asDqDue/view?usp=sharing\nHere is a video of the ChatGPT model working (re-upload):\nhttps://www.youtube.com/watch?v=LTX9wy5Iiag&t=20s\nAs for Mistral, we don't have a computer with a good enough GPU to run that mode",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 25000,
+      "promise": "#1 - Connect the phone app to the Cardano ledger and store proof references data using datum in ADA transactions. A node will track the UTxOs of the created transactions and the specific Data. The metadata attached to the Cardano Transaction we'll be broken down into:\nMetadata provided by the phone when taking a picture of the box:\nImage format\nQuality \nResolution\nTimestamp\nPossible Geo-location (We may skip this)\nMetadata generated by the shipping company:\nCarrier used (USPS, UPS, FedEx, or similar commercial shipping companies)\nCost of the shipment\nDate of the shipment\nEstimated time of deliver\nMetadata of the box:\nBox size\nPackaging method \nAll of this information will be attached to a Cardano transaction as metadata at this stage. \n#2 - Explore SmartPack GUI and user process flow by creating mockups of the completed platform and testing with test groups. The mockups will be of the front end of the future commercial version of the service where we see if the sequence of steps (take photo, input shipping information, and submitting a transaction) are clear to a general user. \nThis will be a test group of between 10 and 15 people that will go through the stages of using the app to",
+      "criteria": "#1 - Cardano transactions that have metadata appended to them. With all the relevant information mentioned above for each package sent. \n#2 - Different GUI mockups that show we have gone through a design process that maximizes the simplicity of the app. The design process resulted in several possible GUI for the mobile app. \n3# - Organize a test group of six individual that are located inside the USA who will use the system end-to-end.",
+      "report": "1. Show different UTXOs used to track individual boxes that have been shipped via commercial parcel carriers. The image metadata, the shipping information, and the details of the box all will be appended on each SmartPack transaction.\nEach transaction will have the metadata detailed in the output\nThe address that made the transactions is addr_test1qzl3ms6udyxpwd3cqu7s8al5zhuwhh9f3zl5fxyv2qse7l4dqwj2u3djrag0mene2cm9elu5mdqmcz9zc2rzgq7c5g6qfqn0z2\".\nHere are the transaction hashes for the packages:\n1. TxHash: 0c0816ff4fe0bf203160aef1b0cf7ff2e555ac4ce388ff17e0db6537fa0728f4\npackageId \"87ed18d0-ec61-40a6-b2fd-29e9292cad9e\"\n2. TxHash: 66ce754d61ef2a7743b4377a28b423c938651c19b51feaf65281f8157cc63ba9\npackageId \"74fc7e75-6031-4384-9295-178ad04b28fc\"\n3. TxHash: 77e2139083a2f16849858988cbed50812b063fdb890170be33b038b2f727ef7d\npackageId \"3c522303-f481-474b-89a9-7ea08739da45\"\n4. TxHash: a65f5c473877a88925fd73df1c5ec3b720a092d274983a7efdda81f6f5abd261\npackageId \"4090813c-9698-4bb4-b709-13ad6b663a5e\"\n5. TxHash: d291ecba6b66d1f35781a46b2e61cf3bb296fd423f0778801fad8e2853444339\npackageId \"f4b77343-168e-4854-9fac-bef45b30fc58\"\n6. TxHash: 37a2fa1a135c4b891984d010c3c4e3bedf0b7ef848782977631c66b4e2612bd5\npackageId \"0acd8977-9b38-46bc-b2f4-14142631ef95\"\n7. TxHash: 8042a4243a0a224d571c356297bb93dce6e5cdf7de8118368075a1d9394ec5b7\npackageId \"af72599f-acd0-4633-8e81-313856e66936\"\n8. TxHash: bc51862eabc1fa12d12aeef26ec9c53ad3077adb35ea2e3ac8e9df25516ba44a\npackageId \"bc0eceb4-3b67-4158-a911-e68c075b8b69\"\n9. TxHash: bc78bb90bc1b17b3a87bfea53ff9f836f1e7ad059c77cfdb9dc24b5fa1f1646e\npackageId \"a96d8177-9795-4abe-83ff-b2a9184994ce\"\n10. TxHash: d21641e0b04f50595b47f59e8770e7b40667a5f26330d9d4abfd6f152992a90b\npackageId \"f45acae8-6824-4253-8e58-15dc2072d484\"\nHere is the metadata for the boxes:\n1. TxHash: 2fe2411ca2a28ea89079ce861be93cf3f28581b57f226c2ad3f2b982e43b5bd4\npackageId \"f62ad1aa-ec94-43f9-b08b-017e7614eda0\"\n2. TxHash: 397ad291ec8a5bb9d42c74d8887142c381133b627ef1110874cef38adb23cec2\npackageId \"",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "video"
+      ],
+      "links": 16,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 15000,
+      "promise": "#1 - We will scan a package, create the reference on-chain, scan it back once delivered, compare both images with the AI model, and determine if it was damaged.\n#1 - The images will be stored on Arweave while the hash of images\nis referenced in a datum.\n#2 - The objective of the pilot is to test the complete process\nend-to-end before it goes into a commercial application.\n#3 - Write and record video for final report.",
+      "criteria": "#1 - UTXO transactions on chain\n#1 - Cardano node tracking data\n#1 - images will be stored on Arweave\n#2 - End-to-end shipments tracked using UTXOs\n#3 - Final report",
+      "report": "Hello,\nWe addressed the comments in the bullet points with the same wording from the milestones. \nhttps://docs.google.com/document/d/1RiuAERoLnMTK3Jq4oeBst5hwR0oTQ7lAYfBujAsEWBI/edit?usp=sharing\nhttps://youtu.be/DzRm1weObBY",
+      "kinds": [
+        "doc",
+        "video"
+      ],
+      "links": 2
+    }
+  ]
+}

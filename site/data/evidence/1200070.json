@@ -1,0 +1,57 @@
+{
+  "title": "Cardano-Midnight ZKBridge: Port Assets between Midnight and Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 36000,
+      "promise": "・Requirements Specification: Detailed functional and non-functional requirements for the bridge, including user roles, data flow, and security requirements.\n・Architectural Design: High-level architectural design of the bridge, detailing the components that will facilitate the minting and burning of zkCNTs and the integration with Midnight ZK.",
+      "criteria": "・Requirements Specification: Detailed functional and non-functional requirements for the bridge, including user roles, data flow, and security requirements.\n・Architectural Design: High-level architectural design of the bridge, detailing the components that will facilitate the minting and burning of zkCNTs and the integration with Midnight ZK.\n・Architectural design, ensuring it meets the necessary standards for secure and efficient operation.",
+      "report": "Technical Requirement Specifications and Technical Architecture: Cardano-Midnight ZKBridge https://drive.google.com/file/d/1c1f6NGD8fx8JGyQzYZjm5awNcvCdkMmN/view?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 36000,
+      "promise": "Core Bridge Implementation: Development of the core functionalities of the Midnight ZK Bridge, enabling the deposit of Cardano tokens and the minting of zkAssets on Midnight ZK.\nBy implementation we mean that it will be pushed as an update in our Github.",
+      "criteria": "Core bridge functionalities are implemented (Enabling the deposit of Cardano tokens and the minting of zkAssets on Midnight ZK.) and demonstrate basic operational capacity in preprod.",
+      "report": "Bridge Repo: https://github.com/Trivolve-Tech/cardano-midnight-zk-bridge\nBridge Demo video: https://drive.google.com/file/d/13LX2Td70Nltgxw9Bkkms-I5QLFtL12Ci/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "Basic Unit and Integration Tests: Tests to verify the basic functionality of the bridge, including token deposit, zkAsset minting, and initial contract verification.",
+      "criteria": "Test report demonstrating test cases on preprod.",
+      "report": "Testing Documentation: https://drive.google.com/file/d/10tqKprmLg30z-4UVyK5a_gXRa4J0sSyh/view?usp=sharing\nRepo Updated with the testing files: https://github.com/Trivolve-Tech/cardano-midnight-zk-bridge\nREADME, About section, Release and MIT License have all been completed as per suggestions on previous MS review.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 18000,
+      "promise": "Complete documentation including setup guides, operational manuals, and technical specifications for end-users and developers.\n・A comprehensive report summarizing the development process, outcomes, key learnings, and strategic recommendations for future scaling.\n・A video that explains the functionalities, benefits, and operation of the Midnight ZK Bridge, highlighting its role in enhancing privacy and DeFi opportunities for Cardano users.\n・Final close-out report\n・Final closeout video",
+      "criteria": "・The PoC is stable on test networks and demonstrates all planned functionalities effectively.\n・Documentation is comprehensive, providing clear guidance for all aspects of the bridge.\n・The close-out report gives a detailed overview of the PoC development, with constructive feedback and pathways for future development.\n・The video effectively communicates the value and functionalities of the bridge to a broad audience.\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "・The Bridge is stable on test networks and demonstrates all planned functionalities effectively -https://drive.google.com/file/d/13LX2Td70Nltgxw9Bkkms-I5QLFtL12Ci/view?usp=sharing\n・Links to the open-source repos - https://github.com/Trivolve-Tech/cardano-midnight-zk-bridge\n・Comprehensive documentation - https://zkbridge-trivolve.gitbook.io/zk-bridge\n・Link to final closeout report - https://docs.google.com/document/d/1UzjVW_wgrJvO58fHB5ng2FXsQ9MYSBZEXxW5YAEcwy4/edit?usp=sharing\n・Link to final closeout video - https://youtu.be/Cnqvu6pHGoc",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

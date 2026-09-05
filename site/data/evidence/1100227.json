@@ -1,0 +1,69 @@
+{
+  "title": "Paideia - Building Blocks for DAO Management",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 20000,
+      "promise": "Written document specifying the requirements that the solution needs to live up to.",
+      "criteria": "Overall design of a potential implementation. List of language(s) and libraries that may be utilized.",
+      "report": "https://github.com/paideiadao/paideia-cardano-contracts/blob/main/basic-dao-spec.pdf\nAs requested we have added the list of languages/libraries that will be utilized by the project. This is at the bottom of the updated PDF. Thank you for your time!",
+      "kinds": [
+        "code"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 58500,
+      "promise": "Valid open source contracts.",
+      "criteria": "Contract allowing holder of governance tokens to create a proposal.\nContract allowing holder of governance tokens to vote on a proposal.",
+      "report": "https://www.youtube.com/watch?v=8xVwXybNtKY\nThis video outlines all the contracts that were built according to the spec provided in Milestone 1. Unit tests were created to prove out the functionality of the contracts, and you can see them running and passing at 8:45 in the video. The unit tests are located here: \nhttps://github.com/paideiadao/paideia-cardano-contracts/blob/main/dao_contracts/lib/dao_contracts/tests.ak\nAccess the full repo with all the contracts here: \nhttps://github.com/paideiadao/paideia-cardano-contracts",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 3
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 50000,
+      "promise": "Valid open source contracts",
+      "criteria": "Treasury contract.\nContract allowing spend from treasury based on passed proposal.",
+      "report": "Nite regarding review rejection: you may need to login to GitHub to resolve the 429 errors. I don't know why you'd be getting rate limits on GitHub but that isn't an issue with our repo. Please work on resolving those errors with GitHub support if they persist. \n\nHere is the youtube video summary of the current milestone: \nhttps://www.youtube.com/watch?v=Nb4XcWWAdvM\nAnd here is the code\nhttps://github.com/paideiadao/paideia-cardano-contracts\nThank you for your time!",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "9",
+      "cost": 37250,
+      "promise": "Open source off-chain code",
+      "criteria": "Rudimentary off-chain code intended to prove contract validity for:\n- Proposal creation.\n- Voting.\n- Treasury spending.",
+      "report": "Here is the video demonstrating the vote being processed. Note that we originally intended to just do the off-chain side with a command line interface but I decided to go ahead and built a fully functioning front-end for it. We wanted to make it more accessible, and anyone can run it on their local machine. We might make the page live for anything to test (on testnet)\nhttps://www.youtube.com/watch?v=pM1USHL438A\nAnd here is all the code, with GPL license: \nhttps://github.com/paideiadao/paideia-cardano-contracts\nDocumentation will be completed for Milestone 5.",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 5,
+      "month": "10",
+      "cost": 29250,
+      "promise": "Full documentation of on- and off-chain code enabling free usage.\nEvery line of code produced will be open source and published under a GPL license.\nProject close out video posted to Youtube.com",
+      "criteria": "Documentation supporting understanding and usage of on-chain contracts.\nDocumentation supporting understanding and usage of off-chain code.\nConclusion on the HLR’s from milestone 1 that have been fulfilled.\nSuccessful execution of test-net transactions.",
+      "report": "As requested, I have updated the f11-close-out-revised.md to address the reviewers points that there were a few headings missing. They were in the close-out video but hadn't been also included in the close our document. They are now present. I will discuss with the Catalyst team if there are any issues with delivering this summary so many months after completing the project. It was an unexpected amount of additional work since we had satisfied our own KPIs but not addressed the Catalyst defined ones. \nThanks again for taking the time to review! \nHere are the necessary links again for your reference:\nA. Close-out summary: https://github.com/paideiadao/paideia-cardano-contracts/blob/main/f11-close-out-revised.md\nB. Demo video: https://www.youtube.com/watch?v=pM1USHL438A\nC. Close-out video: https://www.youtube.com/watch?v=azO9lFTHmbc",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

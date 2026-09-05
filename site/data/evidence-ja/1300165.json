@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・PyCardanoにおけるDRep関連機能の普及\n・DRep機能のユニットテスト\n・DRep実装のための技術文書",
+      "criteria": "・DRep登録完了、voting機能\n・全てのDRep関連ユニット試験合格\n・85%以上のコードカバレッジによるユニットテストパス\n・新規/更新されたコードを文書化",
+      "report": "GitHub リポジトリ(更新コードベース)\nhttps://docs.google.com/document/d/1fGt3ZBzH3FjF l-TI-0Va4r2CLx 3n03Vuu916yDD4A/edit?tab=t.0\n単位テスト適用範囲\nhttps://docs.google.com/document/d/1mtvkHgAPUzOAoLKJ4cGnWbR5ARBGAA36XP8SUfNq9Rk/edit?tab=t.0\n開発者文書の更新\nhttps://docs.google.com/document/d/1oN3jwp4VQPxsix07hGK9vxXUXh9gsDOd6sDhn8I1tpo/edit?tab=t.0\nテクニカルドキュメント\nhttps://docs.google.com/document/d/1pQbAkiaCTj-o2FRqlIl7pgEb5LRD4s118vOu3DRsC3g/edit?tab=t.0#heading=h.q3fghdknjb6x"
+    },
+    {
+      "no": 2,
+      "promise": "・Changプロトコルのシリアライズ変更の実施\n・シリアル化機能のユニットテスト\n・シリアル化実装のための技術文書",
+      "criteria": "・チャントプロトコルのシリアライズ変更完了\n・全シリアライズ関連ユニットテスト通過\n・85%以上のコードカバレッジによるユニットテストパス\n・新規/更新されたコードを文書化",
+      "report": "GitHub リポジトリ(更新コードベース)\nhttps://docs.google.com/document/d/16Sy-Vx8y3dB1kOWfKwclAaFxXYz4QDvrgrL7VlQJ6Tg/edit?usp=sharing\nシリアル化機能のユニットテスト結果\nhttps://docs.google.com/document/d/1XetFdohLcbYhjDn7NeByS2UD6fC9CcTv3L NHO07Nds/edit?usp=sharing\nコード内のドキュメント(docstrings/comments)\nhttps://docs.google.com/document/d/1 Av-Ud IepDZBO5FRIotoAg6PaDiBNlYJQM 1YVKwao/edit?usp=sharing\n技術的な文書\nhttps://docs.google.com/document/d/1r2Xaqr1HK5kTRxJaLw26PO0jqr-v284gNNzLh2RqxnY/edit?usp=sharing"
+    },
+    {
+      "no": 3,
+      "promise": "・PyCardanoの主要機能をすべてカバーする統合テストスイート\n・Testnet環境ミラーリング Cardanoメインネットポストチャンハードフォーク\n・包括的なテスト文書と結果レポート",
+      "criteria": "・統合テストはPyCardanoの新機能をすべてカバー\n・テストネット環境での統合テストパス\n・DRep関連のトランザクション作成、提出、テストネットでの検証\n・試験文書は、カバレッジと結果を明確に説明",
+      "report": "GitHubリポジトリの統合テストスイート\nhttps://docs.google.com/document/d/1nHS-25a2Xy3Hulid79sUPU5TsHe6g1HT9gRUODiAs2o/edit?usp=sharing\nDRepトランザクション機能の証明\nhttps://docs.google.com/document/d/1NyUDhOxzxxKbA8N8amrVD vUxZWQuXjwxT6gZgW6mk/edit?usp=sharing\n統合テストレポート(プレーンテキスト文書)は、各新しい統合テストのマッピングをDRep機能に表示します。\nhttps://docs.google.com/document/d/1eujshYeNrA5qDkKIvC25F10wBZynYG1euTDTXWgEjWs/edit?usp=sharing"
+    },
+    {
+      "no": 4,
+      "promise": "・DRep、PyCardanoを使用した新しいシリアライズフォーマットなど、主要なプロトコルの変更のためのWrittenチュートリアル\n・DRep、新しいシリアライズフォーマットなど、主要なプロトコルの変更をすべて実証するビデオチュートリアル",
+      "criteria": "・Writtenチュートリアルでは、DRep、新しいシリアライズフォーマットなど、すべての主要なプロトコルの変更を実行するための明確でステップバイステップのガイダンスを提供します\n・ビデオチュートリアル(5〜10分)は、DRep、新しいシリアライズフォーマットなど、主要なプロトコルの変更をすべて明確に示します,",
+      "report": "GitHubリポジトリ/ReadTheDocs で公開された包括的な書き込みチュートリアル(チュートリアルの末尾にある全例へのリンクは固定されています):\nhttps://pycardano.readthedocs.io/en/latest/guides/governance.html\nYouTubeで公開されているDRep、新しいシリアライズフォーマットなどの主要なプロトコルの変更を明らかにするビデオチュートリアル:\nhttps://www.youtube.com/watch?v=ZPjlVcjYhqM"
+    },
+    {
+      "no": 5,
+      "promise": "・プロジェクトクローズアウトレポート(2-3ページ)\n・プロジェクトクローズアウトビデオ(2-5分、720p/1080p)",
+      "criteria": "・KPI、業績、次のステップを含むすべての必要なセクションをクローズアウトレポート\n・チャン・ハードフォーク機能を搭載したPyCardano機能の動作を動画で実証\n・ドキュメントは、新しい機能をすべてクリアな例でカバー\n・プロジェクトの成果物はすべて公開可能",
+      "report": "・公開クローズアウトレポート:https://docs.google.com/document/d/1Uk6xsK2GPsc69476TGDxcvREjFHcsUvWIpHtA1Y6Svo/edit?usp=sharing\n・公開ビデオリンク(YouTube/Vimeo)の実証プロジェクト実績: https://www.youtube.com/watch?v=hlyuUBtdyps\n・ReadTheDocs または GitHub で利用可能なドキュメント: https://pycardano.readthedocs.io/en/latest/guides/governance.html\n・例コードとチュートリアルのリポジトリ:https://github.com/Python-Cardano/pycardano/blob/main/examples/more examples/13 governance.py\n・過去のフェーズから全てのマイルストーンの成果物が完成し、文書化 全てのマイルストーンが完成しました: https://milestones.projectcatalyst.io/projects/1300165/"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・主要システムコンポーネントのスタブをセットし、さらなる開発のためにプレースホルダーとして機能します。 主要なシステムコンポーネントは: Kubernetes 演算子、管理 Web UI、管理 CLI、API インターフェイスです。\n・システム全体の開発プロセス全体でソースコードを構築・テストするCI/CDワークフロー この初期段階では、パイプラインは利用可能なスタブごとに提供されるダミーアーティファクトとテストをビルドして実行します。\n・システムの開発に関する文書作成 これには、開発者ガイドライン、ローカル環境の指示、CIパイプラインの説明/使用が含まれます.",
+      "criteria": "・すべてのコンポーネントは、実際の実装でスタブを交換することにより、さらなる開発の準備が整います。\n・CI/CDパイプラインは、異なるコンポーネントをビルド/テストする場所にあります。\n・リポジトリには、さらなる開発のための指示が含まれています。\n・リポジトリソースコードは、Apache 2.0 ライセンスでライセンスされています.",
+      "report": "SuperNodeプロジェクトは進行中であり、マイルストーン1の目標が達成されています。\n・必要なコンポーネントスタブを含むプロジェクトスキャフォールドを含む、一般に利用可能なソースコード。\n\nhttps://github.com/txpipe/metis\n・以前の実行のログと同じリポジトリに埋め込まれたCI/CDパイプラインを表すGithubアクション。\n\nhttps://github.com/txpipe/metis/actions\n・開発者文書を含むリポジトリ内のMarkdownファイル((例:README.md)。\n\nhttps://github.com/txpipe/metis/blob/main/README.md"
+    },
+    {
+      "no": 2,
+      "promise": "・パートナーチェーン契約とのやり取りのためのオフチェーンコード\n・SPO用UIをパートナーチェーンに搭載\n・パートナーチェーン会員ステータスを追跡するSPOのUI",
+      "criteria": "・UIをパートナーチェーン(testnet環境)に利用することができます。\n・既存のパートナーチェーン会員を閲覧するためにUIを利用することができます",
+      "report": "・オフチェーン/UIコードを含む公開ソースコード\n\nhttps://github.com/txpipe/metis/tree/main/frontends\nhttps://github.com/txpipe/metis/blob/main/frontend/tx3/main.tx3\n・UIとのやり取り方法を示す動画\n\nhttps://youtu.be/3B3wKv2o3NQ\n・Cardano上のOn-chainトランザクションは、対応する相互作用を示しています\n\nhttps://preview.cexplorer.io/tx/d8de28ecd5d668712661fc83ad74290c989d443978347cfbb3715797270acd0e"
+    },
+    {
+      "no": 3,
+      "promise": "・ Helm チャートを使用したノードプロビジョニングスクリプトのサブストラテライズ\n・パートナーチェーンのカスタム OCI ベースの Helm チャートレジストリ\n・メトリックスクレイピングとストレージ機構\n・ノードなどのステージング環境",
+      "criteria": "・SPOは、提供されたレジストリから Helm チャートを使用して、Substrate パートナーチェーン ノードを規定することができます。\n・プロビジョニングノードからのヘルス&アクティビティメトリクスがクエリに対応",
+      "report": "・インフラスクリプトを含む公開ソースコード\n\nhttps://github.com/txpipe/metis/tree/main/extensions\n・パートナーチェーンのグラフを含む OCI ベースの Helm レジストリへのリンク\n\nレジストリをクエリするには、次のcURLリクエストを実行してください。\nこのページではjavascriptを使用しています。 このページではjavascriptを使用しています。\n・ランニングステージング環境のウォークスルー映像\n\nhttps://youtu.be/EAJR4iJXpBo"
+    },
+    {
+      "no": 4,
+      "promise": "・新規基板ノードのプロビジョニング\n・Substrateノードの監視用UI\n・利用可能なパートナーチェーンを発見するためのUI",
+      "criteria": "・SPO は、UI を使用して新しいパートナーチェーンノードをプロビジョニングできます。\n・SPO は、実行中のノードを監視するために UI を使うことができます。\n・UIを使用して利用可能なパートナーチェーンを閲覧できるSPO",
+      "report": "・開発したUIコンポーネントのソースコードを一般公開\n\nhttps://github.com/txpipe/metis/tree/main/frontends/dashboard\n・利用可能なUIの使い方を解説する動画\n\nhttps://youtu.be/jgltu0DlKpY"
+    },
+    {
+      "no": 5,
+      "promise": "・SuperNode用のスタンドアローンインストールパッケージ\n・クラウドプロバイダーの展開スクリプト\n・段取り・利用指示による文書化サイト",
+      "criteria": "・SPO は docs に従って SuperNode をインストールできます。\n・クラウドプロバイダーアカウントにSuperNodeをデプロイできるSPO\n・SPOは、ドキュメントに従ってSuperNodeを動作させることができます",
+      "report": "・公開ソースコードの展開スクリプト\n\nhttps://github.com/txpipe/metis/tree/main/bootstrap\n・SuperNodeをインストールする方法のウォークスルーを示すビデオ\n\nhttps://youtu.be/VEplcoH32GQ リリース\n・公開文書サイト\n\nhttps://github.com/txpipe/metis/tree/main/bootstrap#readme"
+    },
+    {
+      "no": 6,
+      "promise": "・システム全体で利用可能なソースコード\n・公開可能なドキュメントサイトの設定と使用説明書\n・プロジェクトの最終出力を示すクローズアウトビデオ\n・プロジェクトプロセスと結果を説明するクローズアウトレポート",
+      "criteria": "・提案範囲に記述する機能を含むシステム\n・クローズアウトビデオは、Catalyst要件に準拠\n・クローズアウトレポートは、触媒要件に準拠",
+      "report": "Githubリポジトリで利用可能なソースコード\nhttps://github.com/txpipe/metis\n\nパブリックドキュメントサイト\nhttps://github.com/txpipe/metis/blob/main/README.md\n\nYouTubeにアップロードされた動画を閉じる\nhttps://www.youtube.com/watch?v=u3cBA9bEoJc\n\nGoogleドライブにアップロードされたクローズアウトレポート\nhttps://drive.google.com/file/d/1XZjWtiqWF4-SXhqQi9h5QhWRT4vx1zuJ/view?usp=sharing"
+    }
+  ]
+}

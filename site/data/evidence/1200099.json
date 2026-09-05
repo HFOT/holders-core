@@ -1,0 +1,58 @@
+{
+  "title": "Developing a Self Sovereign On-chain Identity (SSOI)",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25500,
+      "promise": "・Research existing Cardano solutions for Self-Sovereign Identity (SSI), like Atala PRISM and KERI\n・Write the first draft of a correct and applicable SSOI schema\n・Research and design an on-chain data structure that is fully compatible and synchronized with the SSOI schema\n・Investigate the use of Hydra to address potential concurrency issues",
+      "criteria": "・A detailed report describing the findings of the research and design phase.\n・A draft of the SSOI schema\n・Technical documentation outlining the designed on-chain data structure and its interaction with the SSOI schema\n・A technical brief on the potential use and implications of Hydra in solving concurrency challenges",
+      "report": "To launch this project, our focus has been on technical research and system design. The public documentation shared here outlines our background research and the initial SSOI design.\nHere is the evidence of milestone completion as outlined:\n#1: Share link to detailed R&D report: \n・Atala Prism: https://github.com/Andamio-Platform/andamio-SSOI/blob/master/docs/research/Atala-Prism.md\n・Keri: https://github.com/Andamio-Platform/andamio-SSOI/blob/master/docs/research/Keri.md\n\n#2: Share interactive draft of SSOI schema, via Miro\n・https://miro.com/app/board/uXjVLDsFWko=/\n\n#3: Share link to technical docs\n・https://github.com/Andamio-Platform/andamio-SSOI/blob/master/docs/project/overview.md\n\n#4: Share link to technical brief about Hydra integration\n・https://github.com/Andamio-Platform/andamio-SSOI/blob/master/docs/research/hydra.md",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 10
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 25500,
+      "promise": "・Setup and configuration of a development environment tailored for SSOI system integration\n・Develop a set of contracts to create and manage SSOI tokens\n・Develop a set of SSOI token validator contracts\n・Develop the first test transactions for the Cardano-native SSOI system\n・Develop an SSOI standard which would lead to a possible CIP",
+      "criteria": "・A functional development environment\n・Successful deployment of SSOI token and validator smart contracts\n・Detailed report of test transaction outcomes\n・A first draft of an SSOI standard\n・Link to a GitHub repository",
+      "report": "1) Link to documentation on how to set up a development environment, including any relevant Docker images and examples of environment variables\n・How to setup environment for SSOI system guide\n・How to run SSOI system guide\n\n2) Share on-chain transaction hashes showing the successful deployment of smart contracts\n・index validator\n・index address\n・global ssoi policy id\n・global state validator\n・global state address\n・prove credential validator\n・prove credential address\n・token credential issuer\n・signer credential issuer\n・local ssoi policy id/verification method\n・local ssoi token address\n\n3) Share link to report on test transaction outcomes\n・Test Transaction Report\n\n4) Share a first draft of an SSOI standard via GitHub link\n・SSOI Standard CIP\n\n5) Share a public link to GitHub repository that enables interaction with the test system\n・SSOI server repository",
+      "kinds": [
+        "chain",
+        "code"
+      ],
+      "links": 16
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 21250,
+      "promise": "・Build a working prototype that interacts with the SSI validator and tracks SSI tokens through the Cardano blockchain\n・Develop an API that tracks the user journey as it obtains the SSOI and builds up their identity\n・Conduct closed alpha testing of the SSOI prototype on the Testnet",
+      "criteria": "・[Video] Operational prototype demonstrating all intended functionalities\n・API documentation and endpoint descriptions\n・Comprehensive test report from closed alpha",
+      "report": "・Link to video demonstrating operational prototype and all functionality: https://andamio.notion.site/Build-a-working-prototype-that-interacts-with-the-SSOI-validator-and-tracks-SSOI-tokens-through-the--ba6399852ca74f5b90cf8b1d29b29b66?pvs=4\n・Link to deployed API docs: https://github.com/Andamio-Platform/andamio-SSOI/blob/master/swagger-api.json\n・Link to published report from closed alpha: https://github.com/Andamio-Platform/andamio-SSOI/blob/master/docs/project/SSOI%20Closed%20Alpha%20Report.md",
+      "kinds": [
+        "code",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "6",
+      "cost": 12750,
+      "promise": "・A final evaluation report assessing project outcomes, including an analysis of the SSOI’s impact on the Cardano ecosystem, success metrics, and areas for improvement.\n・A closeout video encapsulating the project's journey, its impact, and the lessons learned from start to finish.\n・Public draft of SSOI documentation",
+      "criteria": "・A detailed final report that provides a clear and thorough review of the project\n・A closeout video summarizing the project and its significance\n・Link to a GitHub repository",
+      "report": "We are including a link to our closeout video hosted on YouTube (see Item (2) below).\n1) Link to public final closeout report - updated 2025-07-08\nhttps://andamio.notion.site/A-final-evaluation-report-assessing-project-outcomes-including-an-analysis-of-the-SSOI-s-impact-on--4c5197d1a1504b49adeb09bc1def9956?pvs=4\n2) Link to public final closeout video\nhttps://youtu.be/WdDvZiRZSHc\n3) Link to public GitHub repository\nhttps://github.com/Andamio-Platform/andamio-SSOI\n4) Link to public draft of SSOI documentation\nhttps://github.com/Andamio-Platform/andamio-SSOI/tree/master/docs/project\n---\nAt the request of Milestone reviewers, we are adding our Product Demo video available on Youtube - https://youtu.be/BIuWoXWF9VI",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 10
+    }
+  ]
+}

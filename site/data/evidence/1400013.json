@@ -1,0 +1,46 @@
+{
+  "title": "Bitcoin <> Cardano Atomic Swaps",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 10000,
+      "promise": "A. We will provide a visual demonstration or the process.\nB. A functional testnet web interface featuring a “Connect Wallet” button compatible with a Bitcoin wallet (e.g., Xverse) and one Cardano wallet (e.g., Lace).\nC. Hash Time-Locked Contract (HTLC) scripts deployed on both Bitcoin and Cardano testnets to enable atomic swap logic",
+      "criteria": "A1. Users can follow the link to Youtube video demonstrating the process\nB1. Users can successfully connect both a Bitcoin and Cardano wallet to the testnet UI.\nC1. A sample BTC-to-Cardano swap can be initiated and proceeds to HTLC lock phase on both testnets.",
+      "report": "A. Output: We will provide a visual demonstration or the process.\nAcceptance criteria: Users can follow the link to Youtube video demonstrating the process\nEvidence:\nhttps://youtu.be/aV734qhw64o\n\nB. Output: A functional testnet web interface featuring a “Connect Wallet” button compatible with a Bitcoin wallet (e.g., Xverse) and one Cardano wallet (e.g., Lace).\nAcceptance criteria: Users can successfully connect both a Bitcoin and Cardano wallet to the testnet UI.\nEvidence: \nhttps://x.com/zkFold/status/2019014665825644856?s=20\nhttps://btc-swap.zkfold.io/\nhttps://docs.zkfold.io/bitcoin-bridge-guide/overview\n\nC. Output: Hash Time-Locked Contract (HTLC) scripts deployed on both Bitcoin and Cardano testnets to enable atomic swap logic\nAcceptance criteria: A sample BTC-to-Cardano swap can be initiated and proceeds to HTLC lock phase on both testnets.\nEvidence: \nhttps://btc-swap.zkfold.io/\n\nD. Output: Link to our GitHub repository (public) containing HTLC script code\nAcceptance criteria: Link to our GitHub repository (public) containing HTLC script code\nEvidence: \nhttps://github.com/zkFold/zkfold-bitcoin-lib/blob/main/src/ZkFold/Bitcoin/Examples/HTLC.hs",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 12
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "・A functional swap interface on the testnet that enables selecting direction (BTC → Cardano token or vice versa), specifying amount, and viewing quote.\n・Backend API integration connecting the UI to swap logic and HTLC scripts.",
+      "criteria": "・A user can complete a full BTC ↔ Cardano token swap (Cardinal BTC or Indigo iBTC) end-to-end on testnet.\n・Quotation is displayed correctly in the UI.",
+      "report": "Evidence of milestone completion:\n・Public link to the deployed testnet swap UI component: https://btc-swap.zkfold.io/\n・Demo video (≤5 min) showing successful swap execution: https://youtu.be/aV734qhw64o\n\nOptional:\nTestnet Guide: https://docs.zkfold.io/bitcoin-bridge-guide/testnet-guide\nFull guide: https://docs.zkfold.io/bitcoin-bridge-guide/overview",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "A. “My Orders” dashboard implemented on testnet for users to view current and past swaps.\nB. Functional refund logic allowing users to recover funds automatically after HTLC timelock expiry.",
+      "criteria": "A1. Orders are displayed with correct statuses (pending, completed, refunded, failed).\nB1. Refund transactions execute automatically within refund time window.",
+      "report": "A. Output: “My Orders” dashboard implemented on testnet for users to view current and past swaps.\nAcceptance criteria: Orders are displayed with correct statuses (pending, completed, refunded, failed).\nEvidence: Public link to testnet with “My orders” component and functional automatic refunds: https://btc-swap.zkfold.io/\nB. Output: Functional refund logic allowing users to recover funds automatically after HTLC timelock expiry.\nAcceptance criteria: Refund transactions execute automatically within refund time window.\nEvidence: Demo video showcasing for “My orders” section: https://youtu.be/5-GuIDDcT1o",
+      "kinds": [
+        "other",
+        "video"
+      ],
+      "links": 4
+    }
+  ]
+}

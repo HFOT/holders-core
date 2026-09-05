@@ -1,0 +1,33 @@
+{
+  "title": "Lucid Evolution 2.0 - Maintenance & Development Strategy",
+  "ms": [
+    {
+      "no": 1,
+      "month": "10",
+      "cost": 60000,
+      "promise": "・Address all pending issues for these packages:\n・lucid-evolution/lucid (Core package for Lucid Evolution)\n・lucid-evolution/provider (Data provider interfaces)\n・lucid-evolution/wallet (Wallet integration package)\n・Standardize and clean up the module structure according to best practices",
+      "criteria": "- Compliance with the new code style guideline of the project.\n- A documented module structure with comments and examples for each function and types.\n- Backlog items are resolved and categorized with verifiable evidence (e.g., GitHub issue links, Pull request references).\n- The updated module structure is documented and verified through PRs.",
+      "report": "We are happy to submit our Proof of Achievement for the \"Backlog Resolution & Structure Enhancement\" milestone. For detailed evidence and verification, please see the comprehensive report.\n\nMilestone Report:\n\nComplete documentation of all deliverables including:\n- 9 resolved backlog issues from lucid-evolution (with code evidence, file paths, and test commands)\n- Architectural restructuring from monolithic to modular design for the core, provider, and wallet packages\n- Effect v3.x migration and TypeScript strict mode compliance\n- A mapping of every resolved issue to the merged pull requests where the fix landed\n- Step-by-step verification instructions, pinned to the exact repository commit the report describes\n\nMapping to the acceptance criteria:\n- Compliance with the new code style guideline: covered in the report's restructuring and strict mode sections\n- Documented module structure with comments and examples: covered in the module structure section of the report\n- Backlog items resolved and categorized with verifiable evidence: each of the 9 issues is listed with GitHub issue links and pull request references\n- Updated module structure documented and verified through PRs: see the Issue to Pull Request Mapping table in the report\n\nSee report for full details on issue resolutions, code locations, testing, and verification steps.\nhttps://drive.google.com/file/d/1AilcvvK-WMkD0XeQKhD-TwBQiJOi1Wrh/view\n\nNote: this Proof of Achievement was originally submitted on 5 November 2025 and approved by both Milestone Reviewers. The Admin Team requested a Change Request due to the timeline delay before signoff. The Change Request was submitted on 5 December 2025 and the revised milestone was approved on 15 December 2025, which archived the previous PoA. Following the Fund13 conclusion plan notification for this project, we acknowledged Option 1 (project completion) , and this resubmission fulfills the required PoA for the current outstanding milestone ahead of the 1 September 20",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "11",
+      "cost": 60000,
+      "promise": "Resolve backlog issues, clean up, and standardize the module structure for:\n・lucid-evolution/plutus (Plutus integration tools)\n・lucid-evolution/utils (General-purpose utility functions)\n・lucid-evolution/core-types (Shared type definitions)",
+      "criteria": "- Compliance with the new code style guideline of the project.\n- A documented module structure with comments and examples for each function and types.\n- Backlog items are resolved and categorized with verifiable evidence (e.g., GitHub issue links, Pull request references).\n- The updated module structure is documented and verified through PRs.",
+      "report": "We are happy to submit our Proof of Achievement for the \"Backlog Resolution & Structure Enhancement\" milestone (Milestone 2). For detailed evidence and verification, please see the comprehensive report.\n\nMilestone Report:\nComplete documentation of all deliverables including:\n- 12 resolved backlog items across the three package areas (plutus, utils, core-types), each with GitHub issue links, resolving files, test evidence, and pull request references\n- Architectural restructuring of the legacy lucid-evolution/plutus, lucid-evolution/utils, and lucid-evolution/core-types packages into the standardized module structure, with a package mapping table\n- A module-to-pull-request attribution table for the structural changes\n- Verbatim code excerpts and step-by-step verification instructions, pinned to the exact repository commit the report describes\n\nMapping to the acceptance criteria:\n- Compliance with the new code style guideline: the report cites the governing files (CONTRIBUTING.md, eslint.config.mjs, .prettierrc.json) and the lint command\n- Documented module structure with comments and examples: module structure documented per package with verbatim excerpts; the API reference published on the documentation site carried 195 module pages at the snapshot\n- Backlog items resolved and categorized with verifiable evidence: the Resolved Backlog Items section lists each issue with links, resolving files, tests, and pull requests\n- Updated module structure documented and verified through PRs: see the Module Structure Pull Requests table in the report\n\nSee report for full details on issue resolutions, code locations, testing, and verification steps.\nhttps://drive.google.com/file/d/14S5hbzcUcI22egkDRobQBjYdZPlLOjLL/view\n\nProject Context:\nThe backlog issues referenced above were originally tracked in the lucid-evolution repository. The resolutions are delivered in its continuation, Evolution-SDK (Lucid Evolution 2.0), maintained by the same core maintainer and incubated under Inte",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4,
+      "cut": true
+    }
+  ]
+}

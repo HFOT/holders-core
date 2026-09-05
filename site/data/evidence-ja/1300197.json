@@ -1,0 +1,28 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・既存の実装の動作と見直しについて説明する包括的な研究文書。\n・建築設計を含むポイをカルダノに適応させる技術仕様\n・ zk-SNARK スキームの選択、Cardano の要件との互換性のためのトレードオフを考慮した (再発行文書に含まれています)",
+      "criteria": "・調査では、PoIとその実装課題について明確に説明しています。\n・zk-SNARKスキームを特定し、トレードオフの詳細を確認します。\n・Cardano用のクリアでプロトコルアグノスティックなデザインを防衛.",
+      "report": "次のリポジトリには、研究文書が含まれます。\nhttps://github.com/eryxcoop/cardano-zk-of-innocence/blob/main/research%20and%20Preliminary%20仕様"
+    },
+    {
+      "no": 2,
+      "promise": "・インノセンスの証拠を検証するスマートコントラクト\n・カーダノがサポートするBL12-381楕円曲線と互換性があり、PoIを有効にします.",
+      "criteria": "・スマートコントラクトは、研究文書に記載されている仕様に準拠しています。\n・Circuit は Inocence の証拠を効果的に実施します.",
+      "report": "このマイルストーンの2つの出力は、githubリポジトリで利用できます。\n・ポイアルゴリズムの回路は、リポジトリのこの部分に存在します。https://github.com/eryxcoop/cardano-zk-proof-of-innocence/tree/main/implementation/circuit。\n・リポジトリのこの部分にPoIが残っていることを確認するスマートコントラクト。 PoI バリデータと Oracle バリデータを含む aiken プロジェクトで、どちらも \"validators\" フォルダーに存在します。https://github.com/eryxcoop/cardano-zk-proof-of-innocence/tree/main/implementation/validator\n\nまた、出力と実装の詳細を説明するコードへのウォークスルーを説明します。\nhttps://drive.google.com/file/d/1HVwiW1l4gRH-3 -Qxdew1TvsGBoOJ5GL/view?usp=sharing"
+    },
+    {
+      "no": 3,
+      "promise": "・アイケンのユニットテスト用テストスイートで、PoI機能の検証ができます。\n・回路の正しい性能を検証するテスト\n・見つかった問題を報告し、プロトコル修正を行いました.",
+      "criteria": "・全試験合格。\n・更新された研究文書に、識別された問題が対処・文書化されます.",
+      "report": "達成の次の証拠は下記のものを含んでいます:\n・アイケンのユニットテストのフルスイートで、PoI機能をチェック。 リポジトリの次のフォルダにあるテストが確認できます。 それらを実行するために aiken チェックを実行する\n・このフォルダの回路を検証するテストがあり、その実行方法についてさらに詳しく説明しています。\n・CLI は、全ての段階でのテストフェーズを説明するレポートがあり、また、CLI を実行して、プロトコル機能のオンチェーンをテストする手順も含まれています。 このCLIアプリケーションを作成することで、より堅牢なテストを行い、テストネットのプロトコルを実際にどのように動作するかを確認します。 このツールを使用してのテストの記録は、レポートでも見つけることができます."
+    },
+    {
+      "no": 4,
+      "promise": "・学習活動、技術的知見、教訓をまとめた報告書\n・PoIプロトコルアーキテクチャと機能性を示すビデオのクローズアウト",
+      "criteria": "・最終報告書は一般公開\n・最終クローズアウト映像を一般公開\n・プロジェクト触媒クローズアウトレポートとビデオページに記載されているガイドラインに従ってください。 以下はリンクです。\n\nhttps://docs.projectcatalyst.io/current-fund/general-information/project-close-out-report-and-project-close-out-video-pcv",
+      "report": "2つの最終出力は次のとおりです。\n・クローズアウトビデオ\n・クローズアウトレポート"
+    }
+  ]
+}

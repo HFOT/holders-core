@@ -1,0 +1,60 @@
+{
+  "title": "OgmiosDotnet: Cardano Blockchain Events & Visualisation",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 25000,
+      "promise": "・Establishment of the OgmiosDotnet.BlockchainEvents project, including project structure setup, base architecture (solution folders, dependencies, CI/CD setup), initial documentation (README, integration guide), and creation of the public GitHub repository hosting all source code.\n・Implementation of the core filtering engine that ingests Cardano blocks (via OgmiosDotnet) and applies pluggable custom transaction rules.\n・Delivery of starter rule implementations, such as filtering by address, policy ID/asset, metadata key/value, or governance/treasury-related transactions or other.\n・Definition of a standardized event schema (transaction payload + metadata) to ensure consistent downstream delivery.\n・Comprehensive unit tests.\n・Developer documentation, including a clear guide on building and integrating custom rules.\n・Create a high-level product documentation markdown file, detailing the use-case, system’s architecture, main components, data flow, and logic.",
+      "criteria": "・Public repository exists with clear structure, README, contribution guide, and CI workflow executing successfully.\n・Filtering engine builds and runs successfully, processing live blocks via OgmiosDotnet.\n・At least 3 rule examples execute correctly against live data and produce filtered results.\n・An event schema document in Markdown exists defining the structure of emitted transaction payloads including relevant data.\n・All tests pass. \n・documentation provides clear examples and integration guide for custom rule creation.\n・High-level product documentation markdown file aligns with output 7.",
+      "report": "I am pleased to submit the proof of achievement for Milestone 1, Core Transaction Filtering. This milestone delivers the OgmiosDotnet.BlockchainEvents project: an open-source, rule-based filtering engine that connects to the Cardano blockchain via OgmiosDotnet and emits structured CloudEvents for matched transactions. The submission includes 3 working rule implementations (Minswap swap detection, governance vote filtering, metadata transaction matching), a standardised event schema, 59 passing unit tests, full developer documentation, and a live observability stack.\nProof of Achievement: [link]\nDemo Video: [link]",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 30000,
+      "promise": "・Extension of the filtering engine with a queue-backed delivery system for publishing filtered transactions.\n・Implementation of HTTP (CloudEvents) and gRPC endpoints, enabling consumption from any programming language.\n・Reliable event flow with at-least-once delivery and automatic retry of failed deliveries.\n・API documentation including example Postman requests to demonstrate subscribing and receiving events.\n・Example Docker Compose setup showing how to run the service locally with a message broker.\n・Benchmark file created showing throughput, latency, errors, and recovery under normal and stress loads.",
+      "criteria": "・Filtered transactions are successfully enqueued and persisted; queue supports retry and at-least-once delivery semantics. Measured via test logs showing successful re-delivery after simulated consumer failure.\n・Consumers can subscribe via both HTTP and gRPC and receive identical event payloads; validated by Postman/gRPCurl examples.\n・Restarting either publisher or consumer results in continued delivery without data loss; verified through demo logs or test output.\n・API reference includes all endpoints, parameters, and response formats; Postman collection executes successfully on local environm",
+      "report": "Milestone 2 — Event Delivery Layer\nPlease find the full Proof of Achievement here:\nhttps://github.com/ItsDaveB/OgmiosDotnet.BlockchainEvents/blob/main/reports/milestone-2/proof-of-achievement.md\nThis milestone delivers a queue-backed event delivery system with HTTP (CloudEvents) and gRPC endpoints, at-least-once delivery with automatic retry, API documentation with Postman examples, a Docker Compose local setup (14 services), and a benchmark file covering 5 scenarios. A narrated demo video is included in the PoA covering all acceptance criteria.\nBeyond the milestone requirements, several additional features have been implemented to strengthen the system for production use:\n・Checkpoint persistence with ETag concurrency — sync state saved to Redis with optimistic locking, enabling crash recovery with minimal block re-processing\n・Full observability stack — 9 custom Prometheus metrics (counters/gauges/histograms), pre-provisioned Grafana dashboards, and Zipkin distributed tracing\n・Multiple consumer types — Dapr pub/sub subscriber, gRPC server-streaming with per-subscriber filtering, and Server-Sent Events (SSE) for browser-based consumption\n・React-based event viewer UIs — four live-streaming event viewer instances with pause/clear controls and tabular display (TanStack React Table)\n・Circuit breaker and dead letter queue — multi-layer retry policies with exponential backoff and automatic DLQ capture for failed events\n・In-memory fan-out with backpressure — EventBroadcaster distributes to gRPC subscribers via bounded channels with DropOldest overflow\n・Redis Commander and Dapr Dashboard — included for state inspection and service topology visibility during development\n\nThis project is entirely open source. If there are any questions or doubts about any aspect of the deliverables, please refer directly to the repository at https://github.com/ItsDaveB/OgmiosDotnet.BlockchainEvents all source code, configuration, documentation, and tooling are publicly available.\nThank you for",
+      "kinds": [
+        "code"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 20000,
+      "promise": "・Development & delivery of a React-based web application that subscribes to the event delivery layer.\n・Real-time visualisation of filtered transactions as they are received, showcasing the power of custom rules.\n・Example filtering scenarios demonstrated (e.g., by metadata, treasury withdrawals, governance-related transactions or other).\n・Clear separation of backend and frontend layers, showing how different consumers can be built independently.\n・Documentation for developers to build their own consumers based on the example UI.",
+      "criteria": "・Application builds and runs locally via docker-compose up with backend services. Connection established successfully to delivery layer via HTTP or gRPC; connection logs are visible.\n・UI updates automatically as new filtered transactions arrive; at least 10 sample events displayed correctly with metadata, timestamp, and rule type.\n・Two demo rule configurations (for example metadata-based, governance/treasury or other) selectable and produce distinct visual live results in the dashboard.\n・Frontend communicates with backend only via exposed APIs; project structure separates UI and backend, enabl",
+      "report": "Milestone 3: OgmiosDotnet.BlockchainEvents.UI\nPlease find the full Proof of Achievement here:\nhttps://github.com/ItsDaveB/OgmiosDotnet.BlockchainEvents/blob/main/reports/milestone-3/proof-of-achievement.md\nThis milestone delivers a React based UI consumer for OgmiosDotnet.BlockchainEvents.\nThe application connects to the event delivery layer, displays filtered blockchain events in real time, and demonstrates how independent consumers can be built using the exposed APIs.\nDemo video:\nhttps://www.youtube.com/watch?v=uPpgb73ENp8\nThis project is entirely open source. All source code, configuration, documentation, Docker Compose setup, and UI implementation are available in the repository:\nhttps://github.com/ItsDaveB/OgmiosDotnet.BlockchainEvents\nThank you for reviewing this milestone.\nDave",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "7",
+      "cost": 25000,
+      "promise": "・Finalised packaging of all system components into Docker images, published to a public container registry.\n・Versioned release published on GitHub, including source, configuration templates, and setup instructions.\n・Example configurations included to demonstrate practical use cases (e.g., filtering by governance, treasury, metadata rules or other).\n・Code quality improvements, and technical debt resolved, ensuring enterprise adoption standards.\n・Community onboarding materials to guide developers in running, extending, and adopting the solution, ensuring long-term maintainability and adoption.\n・Nuget Package published.\n・Test report completed showcasing all tests passing.\n・Close-out report detailng whats been completed, what went well, learnings and potential improvments.\n・Close-out video on YouTube demo's the work completed, from setup and filtering to visualisation and monitoring.\n・Social Media demo video post showcasing this functioning, developer details and visualisation with transactions.",
+      "criteria": "・All publishable components are successfully containerised, versioned, and published to a public registry.\n・The full release (source, configuration templates, and setup instructions) is versioned and publicly available on GitHub.\n・Example configurations are provided and verified to run end-to-end, demonstrating practical use cases (e.g., governance, treasury, metadata filtering or other).\n・Codebase meets enterprise standards for quality, security, and maintainability, with all identified technical debt resolved.\n・Comprehensive onboarding documentation enables developers to run, extend, and ado",
+      "report": "Milestone 4 (Final Milestone): OgmiosDotnet.BlockchainEvents — Finalisation, Documentation & Community Release\nPlease find the full Proof of Achievement here which includes the social media post, metrics, analytics etc:\nhttps://github.com/ItsDaveB/OgmiosDotnet.BlockchainEvents/blob/main/reports/milestone-4/proof-of-achievement.md\nThis milestone packages OgmiosDotnet.BlockchainEvents for public adoption.\nIt delivers versioned container images on GHCR, a v1.0.1 GitHub Release with setup instructions and example filter configurations, NuGet packages for the Domain and Engine layers, community onboarding documentation, quality gates and a full test report, and a close-out consumer demo covering configuration-bound rules, real-time Event Viewer consumption, APIs, observability, and the Minswap visualisation.\nAddressed prior milestone review feedback:\n• Fixed HasTreasuryWithdrawal mapping from Conway treasuryWithdrawals proposals so IncludeTreasuryWithdrawals matches live chain data (see GovernanceExtractor / TransactionDataBuilder; covered by unit tests).\n• Expanded CONTRIBUTING.md with branch naming, commit conventions, issue/PR templates and review checklist:\n https://github.com/ItsDaveB/OgmiosDotnet.BlockchainEvents/blob/main/CONTRIBUTING.md\nDemo video: https://www.youtube.com/watch?v=-UUB0f4Dwfg\nProject Close-out Video (PCV): https://youtu.be/4B1VjrD4_Og\nProject Close-out Report (PCR): (PDF) - https://github.com/ItsDaveB/OgmiosDotnet.BlockchainEvents/blob/main/reports/milestone-4/close-out-report.pdf\nProject Close-out Report (PCR): https://github.com/ItsDaveB/OgmiosDotnet.BlockchainEvents/blob/main/reports/milestone-4/close-out-report.md\nNew Release: https://github.com/ItsDaveB/OgmiosDotnet.BlockchainEvents/releases/tag/v1.0.1\nNuGet: https://www.nuget.org/packages/OgmiosDotnet.BlockchainEvents.Engine\nThis project is entirely open source. All source code, configuration, documentation, Docker Compose setup, NuGet packages, and UI implementation are available in the rep",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 18,
+      "cut": true
+    }
+  ]
+}

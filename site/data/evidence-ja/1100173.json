@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "Aiken開発者がそのようなスマートコントラクトを構築できるように、収益共有メカニズムを備えたスマートコントラクトソリューションの設計をまとめたドキュメント。 Doc には以下が含まれます:\n・収益分割メカニズムのグラフィカルな表現を含む技術および製品要件\n・スマートコントラクトロジックのビジョン\n・ビルダや利用者の事例や機会を利用.",
+      "criteria": "アイケンのソリューションをプログラムするプログラミングチームの主な機能と必要な要件の説明は、次のマイルストーンに進むことができます.",
+      "report": "・SCを構築するための技術および製品要件の文書は、このリンクでまとめられます。\n・ https://jamonbread-io.gitbook.io/jamonbread/devs/technical-and-product-requirements\n・SCをビルドするために当社を導いたビジョンは、当社のイントロに要約されます。\n・https://jamonbread-io.gitbook.io/jamonbread/get-started/introduction\n・b2bとb2cの両方のユースケースは、次のセクションでレイアウトされます。\n・https://jamonbread-io.gitbook.io/jamonbread/marketplace/smart-contract\n・https://jamonbread-io.gitbook.io/jamonbread/marketplace/on-chain-affiliate-program"
+    },
+    {
+      "no": 2,
+      "promise": "Githubリポジトリのコードベースがテストされ、監査される準備が整いました - https://github.com/JamOnBread/contract",
+      "criteria": "設計要件を満たすことができるスマートコントラクト:(これはジュートです - 詳細な要件は、以前のマイルストーンの一部である - デザイン)\n複数のアフィリエイトレベルと、さまざまな要因に基づいてトランザクション手数料を動的に分割します。 これらの要因は、NFTが上場したマーケットプレイス、販売が発生したマーケットプレース、NFT販売に関わるコントリビューター(リンクアフィリエイト)を含みます.",
+      "report": "即時購入/販売/オファー 収益分配メカニズムによるスマートコントラクト → https://github.com/JamOnBread/contract"
+    },
+    {
+      "no": 3,
+      "promise": "潜在的な脆弱性と潜在的な問題のある機能を説明する内部の文書でセキュリティ監査を完了しました。 監査には、アイケンスクリプトセキュリティ監査、コードレビュー、スクリプト構造設計コンサルティングが含まれます。\n設計レビューと内部監査は、真空ラボによって行われます - https://vacuumlabs.com/blockchain/smart-contract-auditing/\nSundaeswap によるセキュリティ監査を実施 - https://sundae.fi/services",
+      "criteria": "重要な脆弱性と非批判的な脆弱性の両方を明らかにする評判の良い会社によって行われた監査。 最終決定と調整されたSCが展開できるかどうかを検証します.",
+      "report": "Sundae Labsセキュリティ監査は、https://jamonbread-io.gitbook.io/jamonbread/marketplace/auditsにアクセスできる公開レポートで終了しました (https://cdn.sundaeswap.finance/audits/jam-on-bread.pdf)\n真空ラボによる内部監査 gitbook セクションの説明では、設計とコードレビューが内部の目的のためにのみ意図されているため、gitbook セクションごとに独自の単語で結果を表示することができます."
+    },
+    {
+      "no": 4,
+      "promise": "・監査チームによって発見された課題や脆弱性を修正したコード最適化をまとめたドキュメント。 → → https://jamonbread-io.gitbook.io/jamonbread/marketplace/smart-contract\n・テストネット環境におけるスマートコントラクトのオンチェーンとオフチェーン部分の採用\n・Smart Contractがメインネットリリースの準備が整っていることを確認するためのテスト(上記のgitbookリンクで公開されたスクリーンショット)",
+      "criteria": "・スマートコントラクトの展開準備が整っている点に対して、全ての脆弱性が修正されます。\n・テストネットや取引でスマートコントラクトが使用可能です。\n・メインネットで展開する方法のノウハウが届きます.",
+      "report": "コードの最適化と脆弱性の修正\nセキュリティ監査に基づくコード最適化を適用しました。 レポートの 19 と 20 のページでは、正確な検索結果を示します。 各調査結果は、重症に基づいて、その勧告を持ち、結果が解決する必要がある場合は、コミットハッシュで正確な解像度が添付されています。\nhttps://cdn.sundaeswap.finance/audits/jam-on-bread.pdf\n内部監査とセキュリティ監査の両方の大きな変更もまとめられます。\nhttps://github.com/JamOnBread/contract\ntestnetおよびテスト段階の展開\n公開テストネットリリースで、最初の内部テストネット展開とテストを実施しました。\nhttps://testnet-prod.jamonbread.tech/\nサンプルテストトランザクションは、このgitbookセクションで表示されます。\nhttps://jamonbread-io.gitbook.io/jamonbread/devs/transactions\nメインネットへの展開(SDK経由でSCを活用)\nSC がオープンソース化されたので、以下のすべてのドキュメントがまとめられます。\nhttps://github.com/JamOnBread/contract\nこのSCの意図した使用は、複数の別々の展開契約にリストすることにより、資産の流動性を僅か化することではなく、既に展開されたバージョンを使用して、SDKを介して接続することにより、その流動性とリストを活用することです。 リストおよび流動性を利用するあらゆるビジネスのための完全なマニュアルはリンクのベローズで見つけられます:\nhttps://github.com/JamOnBread/contract-lib"
+    },
+    {
+      "no": 5,
+      "promise": "・メインネット上に採用されたスマートコントラクトを意図した収益分配機能で開発\n・プロジェクトクローズアウトレポート\n・プロジェクトクローズアウト動画.",
+      "criteria": "・メインネット上にスマートコントラクトが導入され、最初のトランザクションが生成されます。\n・審査者によるプロジェクトクローズアウトレポート承認\n・審査者によるプロジェクトクローズアウト動画承認.",
+      "report": "最終的なSCのトランザクションの証拠:\nhttps://jamonbread-io.gitbook.io/jamonbread/devs/transactions\nプロジェクトクローズアウトレポート\nhttps://docs.google.com/document/d/1HQRS7J1xXHKXBOBK WYl3x7Md2NqEO3B1VPpTwHngc/edit?usp=sharing\nプロジェクトクローズアウトビデオ\nhttps://www.youtube.com/watch?v=RYpyw5wIe4E"
+    }
+  ]
+}

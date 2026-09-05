@@ -1,0 +1,32 @@
+{
+  "title": "Snek x Frigid: Cardano's First Bot Service for Customized Social Platform Token Integrations",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 75000,
+      "promise": "・Documentation of the new DEXs that are being tracked and what type of transactions within each DEX is supported\n・New Visual Identity for Snekcoinbot: We will be doing a full rollout of the new branding for Snekcoinbot, including the new logo, name changes, and visual design elements.",
+      "criteria": "- The new DEXes are supported and, at a minimum, accounts for buy and sell events of a token\n\nNew visual Identity: \n- A deployment guide for the new branding must be complete on all platforms and media associated with Snekcoinbot, including the website, applications and communication channels. \n- The new logo, name changes, and visual design elements must be visible and consistent across all media.",
+      "report": "Including documentation of the new DEXs that are being tracked and updated code repository\nhttps://github.com/Iceberg-labs/SnekAlertsPublic (pdf/proofs/dexes supported)\nhttps://github.com/Iceberg-labs/SnekAlerts (private access added for Preetham0171999 & Mwatsimulamo)\nhttps://drive.google.com/file/d/1NZ1sfq4SjEdNlBbZEUzW9xho3e5YaZQy/view?usp=sharing\nhttps://drive.google.com/file/d/164zeNdgVAqA256wE9NGSwrXqMIoxFl7T/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "16",
+      "cost": 90000,
+      "promise": "Generalized Logic and Framework Documentation:\n・Expand and document the product’s underlying logic to support tracking and alerting for any Cardano Native Token across Twitter, Telegram, and Discord. This includes detailing how the bot flow and data parsing mechanisms are adapted for multi-token support.\n・Provide a comprehensive PDF document that includes:\n・A step-by-step explanation of the logic generalization process.\n・A working diagram/flowchart illustrating the integration of multi-token support and how the system processes these tokens across different platforms.\n・An overview of the changes made to the initial single-token alert system to accommodate multiple tokens.\n\nFunctional Demonstrations and Specifications:\n・Demonstrate the system’s functionality with at least three different Cardano Native Tokens. This includes showing successful alerts being posted on Twitter, Telegram, and Discord.\n・Include detailed functional specifications within the PDF document, covering the generalized system’s capabilities and its adaptability for future expansions.",
+      "criteria": "Multi-Token Event Detection:\n・The system must successfully detect events for at least three different Cardano Native Tokens, based on DEX events and existing subscription settings. This capability should be tested with a success rate of at least 95% across 100 test cases, ensuring that the correct tokens are tracked and alerts are posted to the correct platforms (Twitter, Telegram, Discord).\n\nSuccessful Alert Posting:\n・After successful event detection, the system must generate and post alerts on the specified platforms (Twitter, Telegram, Discord). The accuracy and timing of these posts should",
+      "report": "Reuploaded to meet reviewer's comments with 100 test cases\n\nScreenshots + Video with Explanation\n・https://drive.google.com/file/d/1Wv3x4_5lJLpZmbSmkU15NDEUssUjQbrd/view?usp=sharing\n\nArchitectural changes\n・https://docs.google.com/document/d/1C7eSA6Dp46HEaP_3mczpeKEArfXlzzom/edit?usp=sharing&ouid=106505023671181718365&rtpof=true&sd=true\n\nMS2 functional specs / Github repos\n・https://drive.google.com/file/d/1LlhZp1yZapS88gv5QpyKVN8PiB__qf_l/view?usp=sharing\n\nSnekAlerts 100 test cases\n・https://docs.google.com/spreadsheets/d/1D5RoiV3_U2cexSU-80oGhGu5a61lRIe2/edit?usp=sharing&ouid=106505023671181718365&rtpof=true&sd=true\n\nPrivate Github: https://github.com/Iceberg-labs/SnekAlerts (Invited Olivier Mwatsimulamo & Preetham Kenganal for review)\nTest plan: https://github.com/Iceberg-labs/SnekAlertsPublic/blob/main/ms2_test_plan.md",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 8,
+      "cut": true
+    }
+  ]
+}

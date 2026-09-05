@@ -1,0 +1,59 @@
+{
+  "title": "AI Trading Insights",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 25000,
+      "promise": "・Research and create detailed design document to lay out the full POC\n・Research and choose LLM model for the POC\n・Factors - performance, cost, data quality\n・Document should include initial data to be feed to LLM model\n・Technical design diagram\n・Database design\n・Batch process design\n・Criteria for acceptable tokens",
+      "criteria": "・Completed Document including:\n・Technical design diagram\n・Database design\n・Batch process design\n・Criteria for acceptable tokens\n・Research on chosen LLM model",
+      "report": "Submission for Milestone 1: AI Trading Insights\n\nI would like to start by apologising for the delays in submitting this milestone. Initially, there was some confusion regarding proposal ownership and a rebrand from ADA Markets to Fetch, which contributed to the delay alongside the administrative process of transferring official ownership of the proposal. However, ADA Markets has agreed that I will retain ownership of this proposal and be responsible for its delivery. My commitment remains unwavering, and, much like my successfully completed OgmiosDotnet proposal in Fund 12, I will deliver this project to the best of my ability in a timely manner. Once completed, I will hand over the final work to ADA Markets (Fetch), ensuring that users can gain real value from this effort.\nI am pleased to submit Milestone 1 for AI Trading Insights. This milestone marks the successful completion of the research, planning, and design phase, laying a strong foundation for the development of an AI-powered trading insights platform.\nThroughout this phase, I have dedicated considerable effort to understanding the intricacies of historical trading data analysis, token movement patterns, and market trend identification. This research has informed the technical design and strategic direction of the project, ensuring that future development is both structured and scalable.\nA comprehensive technical design document has been developed, detailing the overall system architecture. Key aspects of the design include:\n・Data Ingestion: A scheduled daily batch process that seamlessly gathers and processes market data with support to extend to multiple providers.\n・Cloud-Based LLM Analysis: Leveraging state-of-the-art cloud-hosted LLMs to generate actionable insights from the ingested data.\n・Scalable and Optimised Architecture: Implementation of both client-side and server-side caching to enhance performance, reduce redundant API calls, and ensure a responsive user experience.\n・Database Design: An optim",
+      "kinds": [
+        "code"
+      ],
+      "links": 1,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 25000,
+      "promise": "・Build nightly batch process to collect and send token data to LLM and store result in database\n・Build out database APIs for UI\n・Test multiple LLMs by providing token info to gain market insights and document results",
+      "criteria": "・Batch job created and pulling analysis nightly\n・Database APIs created and able to pull token analysis from database\n・Analysis of LLMs complete and a document created showing the results of the analysis",
+      "report": "Milestone 2 – Architecture and API Build Out\nI’m pleased to submit Milestone 2 for the AI Trading Insights project. This milestone marks the successful implementation of the core backend system, covering automated data ingestion, LLM-driven token analysis, and a structured API to serve insights. The system is now functionally operational and designed to be flexible, futureproof, and developer-friendly.\nDemo Overview\nInstead of using a private Google Drive upload, the demo has been published as a public-facing YouTube video. This approach aligns with best practices from previous proposals, promoting transparency, encouraging community feedback, and maximizing impact.\nWatch the demonstration video here:\n 🔗 https://youtu.be/dL4XNo5C1Tc\nThe video demonstrates the full end-to-end process. A cron-based batch job automatically fetches top-volume Cardano native tokens, processes OHLCV data, and sends it to the LLM. Gemini 2 Flash Lite, integrated through Google Cloud Platform, processes the data and returns structured insights using a customizable schema. These results are stored in a PostgreSQL database, and a custom-built API retrieves the insights using parameters like limit and includeMeta.\nFor the demonstration, I utilized the Taptools API to retrieve top-volume tokens and their corresponding OHLC and volume data. This integration provided the necessary real-world data for testing while the system awaits connection to its final consumer-facing data source.\nLogs shown in the video confirm each step from ingestion to analysis to API response.\nDeliverables Summary\nThe batch job is created and successfully pulling analysis data on a scheduled basis.\n Database APIs have been implemented and demonstrated through real-time requests returning token analysis from the database.\n Google Doc submitted showing the results gained from the LLMs analysing token data. This analysis was completed during Milestone 1 and is available in the Milestone 1 submission. It made sense to conduct",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "・Create UI for displaying the analysis\n・UI integration with APIs",
+      "criteria": "・UI created and displaying the analysis",
+      "report": "UI Display and Integration\nI’m pleased to submit Milestone 3 for the AI Trading Insights project. This milestone delivers the full frontend integration and visual interface for displaying model-driven analysis of Cardano native assets. The system now connects backend insights to a responsive, interactive user experience, fulfilling the milestone criteria for both UI display and API integration.\nDemo Overview\nTo demonstrate the work completed, I’ve recorded a full walkthrough of the development environment, showing how structured insights are presented visually for various Cardano native tokens. I placed strong emphasis on presentation, ensuring that each insight data point is visualised effectively to help users interpret the information quickly and with confidence.\nWatch the demonstration video: https://www.youtube.com/watch?v=wwYgbmr8BEw\nAdditionally posted on X where the video is much clearer: https://x.com/ItsDave_ADA/status/1938924375253647403\nThis video highlights:\n・The AI Trading Insights UI displaying token-specific analysis\n・Dynamic cards with summarised insights including trend direction, momentum, sentiment, and risk/reward\n・A radar chart and bubble chart visualising performance metrics and price levels\n・Support and resistance zones extracted with weighted confidence\n・Real-time rendered outputs from the Gemini Flash Lite 2 and 2.5 integrations\n・Responsive layout optimised for desktop and mobile viewing\n\nImplementation Highlights\n・Fully responsive interface designed in React with Tailwind CSS, adapting smoothly to screen size\n・Real-time integration with backend APIs using TanStack Query for efficient fetching and intelligent caching\n・Support for multiple LLM providers (Gemini 2 and 2.5), plugged into a cron-based pipeline\n・Schema-driven UI design, capable of ingesting consistent insights from any structured model response\n・Componentised architecture allowing rapid iteration and future dashboard extensions\n\nEach asset card is rendered dynamically based on t",
+      "kinds": [
+        "social",
+        "video"
+      ],
+      "links": 4,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 20000,
+      "promise": "・New section on ADA Markets showing the latest LLM token analysis\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Analysis visible on app.ada.markets\n・Analysis will be the technical analysis on the token market data which is generated by the LLM\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "I am excited to submit the final milestone for Cardano AI Asset Insights, a fully functional open source platform that delivers real time AI generated insights for Cardano native assets. The system uses Gemini 2 and 2.5 via Vertex AI to process live token data, providing structured analytics through a REST API and a responsive frontend. All milestones have been completed, with code and documentation publicly available for the Cardano ecosystem.\nADA Markets Integration\nAs outlined in Milestone 1, this proposal originally aimed to integrate insights into app.ada.markets. Since then, ADA Markets has transitioned under Fetch and is no longer actively maintained. As a result, integration into app.ada.markets is no longer technically feasible and falls outside my control.\nHowever, I approached the original ADA Markets team requesting that we open source the work, given the difficulty in achieving this final milestone as the original acceptance criteria specifically referenced availability on app.ada.markets. They agreed. As part of this milestone, the entire platform, which was originally closed source, has now been released under the MIT License.\nBy releasing the platform publicly, I believe the intent of the milestone has been fully achieved. While it is not deployed on app.ada.markets specifically, it is now openly available to anyone in the Cardano ecosystem to run, integrate, or build upon. This ensures that the insights engine is not only accessible but also extendable and usable by any project or individual, making it more valuable and future-proof than a single-site deployment.\nGitHub Repository\n https://github.com/ItsDaveB/cardano-ai-asset-insights\nClose Out Report\n https://github.com/ItsDaveB/cardano-ai-asset-insights/blob/main/reports/close-out/close-out-report.md\nFinal Close-out Video\n https://www.youtube.com/watch?v=jZCvEnBEZo8",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "計画された機能の作業を記述する「建築決定記録」(ADR)は、それをサポートするために再ファクタリングが必要で、コードの探索的なプロト導入によって通知され、ハイドラチームとバックアンドフォースディスカッションのいくつかのラウンド.",
+      "criteria": "ADRは、ハイドラチームによるすべての基準と承認を満たし、PRとして提出し、実装の準備が整いました.",
+      "report": "ハイドラチームによって承認された合併PRへのリンク:https://github.com/input-output-hk/hydra/pull/1012\nPRを見ると、当社のチームとハイドラチームの間のダイアログが「デーモンスト可能なバックとアジダチームとの相続」の証拠として見ることができます"
+    },
+    {
+      "no": 2,
+      "promise": "「Ledgerだけモード」の概念実装の初期証拠",
+      "criteria": "コンセプトの実装の証拠は、誰でもHydraリポジトリのフォークの公開されたソースブランチに存在しなければなりません。 あなたは、カルダノノードへの接続無しでレジャーをダウンロードして実行することができなければなりません, そして、水田ヘッド \"開く\"する必要はありません. トランザクションを API 上で送信できる必要があります。 有効な取引は受け付けられ、無効な取引は拒否されます。 コード品質は、ハイドラのチームからの要因やサインオフは、この段階では必要ありません.",
+      "report": "YTチャンネルでの完全なウォークスルービデオをコンパイルしました。 https://www.youtube.com/watch?v=ijLsqCnskTk\nビデオの説明では、コードブランチにアクセスするための指示、および「オフライン」モードでハイドラノードを実行します。\n詳細は、https://docs.google.com/document/d/1A7ZoLcvpRtkiZpCAdbGSw4VU5Mdb JciuME9qxGiLMY/edit?usp=sharingを参照してください"
+    },
+    {
+      "no": 3,
+      "promise": "Ledger-only モード コードは、hydra チームによってレビューされたコードをクリーンアップし、初期のフィードバックが組み込まれ、メイン ブランチにマージしました.",
+      "criteria": "すべてのHydraチームフィードバックが対処され、PRはメインブランチ、またはHydraチームの要求に応じて別のターゲットブランチに統合されています.",
+      "report": "合併PRへのリンク:https://github.com/input-output-hk/hydra/pull/1118\nパブリックビデオへのリンク:https://www.youtube.com/watch?v=ijLsqCnskTk"
+    },
+    {
+      "no": 4,
+      "promise": "レジャーのみモードの少なくとも1つの潜在的な採用者から初期フィードバックを要約するレポート、およびその経験が実行され、レジャーのみのハイダノードを使用するレポート.",
+      "criteria": "Sundae Labs や Hydra チームでは、レジャーモードのみを使用し、Sundae Labs のインタビューを受けています。 Sundae Labs は、ノードの使用からフィードバックを要約する小さなレポートを生成し公開します。ノードの起動が容易で、Cardano ノードなしでリソースを集中する方法、トランザクションの送信 API がいかに重要であるか、その他のプロジェクトではどのように役立つかを説明します。 報告書には、最終的なマイルストーンのためにタックルし、ハイドラチームから承認する最も価値のあるフィードバックのどの部分の要約が含まれます.",
+      "report": "レポートへのリンク:https://docs.google.com/document/d/144VD-Ahf-B5fXqBtjcc7l5Bln-E-i59OAKXfTdvQkno/edit#heading=h.delpb5il6uj4"
+    },
+    {
+      "no": 5,
+      "promise": "前のマイルストーンからのフィードバックを宛先とするPRは、ハイドラチームによる承認を受けています.",
+      "criteria": "PRは、以前のマイルストーンからのフィードバックに対処し、すべてのコードレビューの問題が対処され、ハイドラチームによって統合されています.",
+      "report": "合併されたPRの/クローズドの問題へのリンク:\nhttps://github.com/input-output-hk/hydra/pull/1413\nhttps://github.com/input-output-hk/hydra/pull/1351\nhttps://github.com/input-output-hk/hydra/issues/1325#event-12848874030"
+    },
+    {
+      "no": 6,
+      "promise": "最終報告書、ビデオ文書、ソースコード.",
+      "criteria": "上記出力の公開可用性",
+      "report": "最終クローズアウトレポート:\nhttps://drive.google.com/file/d/1IaBTJjANuY3-IffHTAwH7cxF0IKcRMSB/view?usp=sharing\nGithub リンク:\nhttps://github.com/cardano-scaling/hydra/pull/1118\nhttps://github.com/cardano-scaling/hydra/pull/1414\nクローズアウトビデオ:\nhttps://www.youtube.com/watch?v=komBgtPk23Q"
+    }
+  ]
+}

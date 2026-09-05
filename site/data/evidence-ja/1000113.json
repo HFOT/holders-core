@@ -1,0 +1,34 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "・Cardano-transaction-libraryをバンドルした基本的なブラウザ拡張\n・ヘッドレスブラウザを使用してワークフローを自動化するために使用できるテストスイート\n・mnemonic フレーズや秘密鍵を貼り付け、画面にリストされているアドレスのセットを取得できるシンプルなインターフェイス",
+      "criteria": "・ブラウザの拡張子はファイルからインストールできます\n・テストスイートは、アドオンをグラフィックモードで実行し、有効なプライベートキーデータをブラウザ拡張フィールドに入力することができます\n・クロムベースのブラウザ用のインストール可能なブラウザ拡張機能が提供されます。\n\n・メールアドレスを秘密鍵から守る 有効なデータで満たされたとき、秘密鍵の入力欄に、以下に複数のアドレスを出力します。 addon は、bundling プロセスを正しく取得し、アドオンを機能性で拡張する準備ができたことを示すためにのみ使用されます",
+      "report": "弊社がお届けした業績の証明について -\n\n証拠への出力とリンク:\n\n<a href=\"https://objects.githubusercontent.com/github-production-repository-file-5c1aeb/699767830/13417666?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231127%F202%FFS-east-F3%F2FSR8X-AmAC-SHA256&X-Amz-Amz-Credential=ja&Amz-Amz-Amz-Streamz-Streamz-Amz-Streamz-Streamz-Amz-S-Streamz-Streamz-Streamz-Streamz-details=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0=0\nhttps://object.githubusercontent.com/github-production-repository-file-5c1aeb/699767830/13417666?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231127%2Fus-east-1%2Faws3%2Faws4 requestX-Amz-Credential=Amz-Credential=Amz-SVEH53A%5A%5Amz-SVEH53Amz-SVEH53A%2F20-05-2F2057Amz-Amz-Amz-Amz-Amz-E-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-S-\n\nREADME.md の拡張インストール手順は次のとおりです。\n# インストール\n\n拡張機能は開発モードでのみ読み込むことができます。\nエクステンションストア(Mozilla Addons/Chrome Webstore)へ。\n\n- クロム:\n- 拡張ページに移動し、`Developer Mode`スイッチをオンにします。\n- 拡張子ページに `<extension-name>.crx` をドラッグアンドドロップします。\n- ドラッグアンドドロップが動作していないように見える場合:\n- 私はLinux(Gnome Wayland)でこの問題を経験しました。\n- 画面にドラッグして、オーバーレイが現れない場合は、ドラッグした場所をドロップします。\n.- 数回繰り返します。 2-3 のトリスの後でそれを働かせれば。\n- オーバーレイなしでドロップすると、ファイルがインストールされた代わりにダウンロードされます。\nダウンロードエントリをクリックすると、yが表示されます"
+    },
+    {
+      "no": 2,
+      "promise": "・クエリレイヤー(ブロックフロスト、オグミオス+クポ)に接続可能\n・CIP-30インターフェースの実装",
+      "criteria": "・CIP-30 インターフェイスは dApps と相互作用するために使用することができます\n・霜やオグミオス+ブロック エクステンションのバックエンドとして使えます.",
+      "report": "インフォメーション\n-クエリレイヤーへの接続\n-CIP-30インターフェイスの実装\n\nアクセプタンス・クリテリア\n-CIP-30インターフェイスは、同行のビデオとコードコミットで見られるようにDAppの相互作用をサポートしています\n- クエリレイヤーは、同行ビデオで見られるように、拡張子のバックエンドとして使用できます\n\nソリューション\n-リストされたコミットは、Namiウォレットと同様のCardanoウォレットとの互換性を容易にするために設計された包括的なCIP-30エントリーポイントを紹介します。 これは、ブラウザ拡張を介してWebページにこの互換性を注入するための基礎インフラストラクチャを提供します。\n\nhttps://github.com/mlabs-haskell/cardano-dev-wallet/commit/27983083b659be309f93e56e06e0c2de5404abe3\nhttps://github.com/mlabs-haskell/cardano-dev-wallet/commit/e7b1639a32a877182e9ba0c217dd5d006baf35b0\n\n- リストされたビデオ(ビデオのみ、オーディオなし)は、dApp(SundaeSwap)に接続し、トランザクションを送信して、バックエンド(ブロックフロスト)の設定を実証します。 注意: ビデオは、オーディオだけではありません。\nhttps://www.youtube.com/watch?v= e65H65yOaU"
+    },
+    {
+      "no": 3,
+      "promise": "・ウォレットの状態をモックし、保存/読み込み、固定値のオンチェーン状態を上書き\n・経営担保",
+      "criteria": "・ウォレットはロック(強制的にオーバーライド)の実際のウォレットの状態に「オーバーレイ」(正確な名前はTBDです)をモックするインターフェイスを提供し、効果的に任意の偽データをdAppに送り、テストを容易にすることができます\n・ウォレットは、手動で選択する方法を提供します",
+      "report": "インフォメーション\n-ウォレットの状態をモックして保存/ロードする機能\nよくある質問\nアクセプタンス・クリテリア\n-ウォレットは、実質のウォレットの状態を「オーバーレイ」でモックするインターフェイスを提供します。これにより、任意の偽データをdAppに送り出し、テストを容易にすることができます。\n-ウォレットは、手動で選択する方法を提供します。\nソリューション\n- リストされたビデオ(画像のみ、音声なし)は、財布の状態を保存/読み込み、マニュアルの担保選択、およびもちろん、更新されたブラウザ拡張を実証します。\nhttps://www.youtube.com/watch?v= e65H65yOaU\n-commitはこの機能を示します。\nhttps://github.com/mlabs-haskell/cardano-dev-wallet/commit/27983083b659be309f93e56e06e0c2de5404abe3\nhttps://github.com/mlabs-haskell/cardano-dev-wallet/commit/e7b1639a32a877182e9ba0c217dd5d006baf35b0\n-Chrome Web Storeに公開された拡張子\nhttps://chromewebstore.google.com/detail/cardano-dev-wallet/afnjoihjkimddgemefealgkefejaigme\n-Mozilla Add-Ons に公開された拡張\nhttps://addons.mozilla.org/en-US/firefox/addon/cardano-dev-wallet/"
+    },
+    {
+      "no": 4,
+      "promise": "・CIP-30コールロギング機能の実装、簡単なデバッグのためのペイロードを含む\n・Plutipインテグレーションの実施(ローカルCardanoのtestnetクラスターを起動し、ユーザーのPC上で実行するplutip-serverの助けを借りて起動する機能)。 ウォレットが最初に資金を積むべきADAの金額と分布を指定することが可能となります.",
+      "criteria": "・CIP-30 呼び出しログは、拡張子に検査できます\n・ウォレットエクステンションでプルティップクラスターでテストを実行できます",
+      "report": "インフォメーション\n-CIP-30コールロギング機能の実装\n-Plutipインテグレーションノート - このインテグレーションのビデオデモがEVIDENCEセクションに追加\n\nアクセプタンス・クリテリア\n-CIP-30 呼び出しログは、拡張子に検査できます\n-tests は plutip クラスターで実行できます\n\nソリューション\n- リストされた動画(画像のみ、音声なし)は、A)ログの表示 @ 2:40\n\nhttps://www.youtube.com/watch?v= e65H65yOaU\n\n-Plutip ワークフローの B をリストした動画\n\nhttps://www.youtube.com/watch?v=uRJaOBiCfoU\n\n-この機能をさらに発揮します。\n\nhttps://github.com/mlabs-haskell/cardano-dev-wallet/commit/27983083b659be309f93e56e06e0c2de5404abe3\n\nhttps://github.com/mlabs-haskell/cardano-dev-wallet/commit/e7b1639a32a877182e9ba0c217dd5d006baf35b0\n\n-Chrome Web Storeに公開された拡張子\n\nhttps://chromewebstore.google.com/detail/cardano-dev-wallet/afnjoihjkimddgemefealgkefejaigme\n\n-Mozilla Add-Ons に公開された拡張\n\nhttps://addons.mozilla.org/en-US/firefox/addon/cardano-dev-wallet/\n\n-Plutip ワークフローのより明確な例と、Plutip テストを実行しているウォレット拡張機能\n\nhttps://www.youtube.com/watch?v=sadb9SuBSCk7"
+    },
+    {
+      "no": 5,
+      "promise": "・利用者文書(ユーザーガイド)\n・公開版リリース(Chrome Web Store、Firefoxブラウザアドオン)\n・ソーシャルメディアリリースのお知らせ\n・Bugfixesと改善をユーザのフィードバックに応答",
+      "criteria": "・Web上でユーザのドキュメントが使用可能\n・Chrome WebストアとFirefoxブラウザアドオンに公開\n・ソーシャルメディアにて公開\n・利用者が通知した問題は、対処しているか、可能なか否かの場合には、説明が与えられる",
+      "report": "マイルストーン完成の証拠:\n\nマイルストーンの出力と受入基準により、最終マイルストーンの次の点を生成しました。\n\nドキュメントへのリンク:\n- https://github.com/mlabs-haskell/cardano-dev-wallet/blob/master/guide/Readme.md\n\n公開リリースへのリンク:\n- https://addons.mozilla.org/en-US/firefox/addon/cardano-dev-wallet/\n- https://chromewebstore.google.com/detail/cardano-dev-wallet/afnjoihjkimddgemefealgkefejaigme?pli=1\n\nソーシャルメディア投稿へのリンク:\n- https://x.com/MLabs10/status/1813244384869294165\n\nユーザーからの課題/課題のリスト:\n\nユーザーのフィードバックにより、次のことを改善しました。\n\n- UI/UX(UI/UX)\n* 異なるUTxOを迅速に特定するためのセパレータを追加\n* 他のアカウントやネットワークのバックエンドがない場合、アカウントとネットワークのバックエンドを自動起動します。\n\n- 特徴: ブロックの霜のための注文のエンドポイント サポート。\n\n以前はデフォルトのブロックフロストインスタンスのみをサポートしました。\n- バグ修正: 一部の dApps は API オブジェクトを関数の袋として扱います。 これにより、sp は任意のオブジェクトになります。 これにより、SundaeSwap と おそらく dApp がハングするようになります。 API オブジェクトは、クラスインスタンスの代わりに関数の袋になるように変更しました。\n- バグ修正: `getUtxos()` のオーバーライドを `getBalance()` コールで同期します。\n\ndApps は、`getUtxo()` の呼び出しとトークンバランスをまとめたり、`getBalance()` 呼び出しを使用してウォレットを計算します。\n\nUI は、UTxO リストを通じてトークン残高のモックをサポートしていますが、`getBalance()` には反映されません。 `getBalance()` コールは `getUtxos()` 呼び出しからの残高の合計であるように変更されました。\n\nGitHubでホストされているフルコード\n\nhttps://github.com/mlabs-haskell/cardano-dev-wallet\n\nクローズアウトレポートとビデオ\n\nhttps://youtu.be/JJvMrgagkCY\nhttps://drive.google.com/file/d/1WHCFU00OfnOON3QKg9ikY2TBRsrMCf8n/view?usp=sharing"
+    }
+  ]
+}

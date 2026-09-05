@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "このマイルストーンの出力は、https://github.com/cardano-foundation/CIPs へのプルリクエストとなります。 ダップがマルチシグウォレットに接続することを可能にする新しいコネクタの完全な仕様を要求します.",
+      "criteria": "API の仕様は、A) 完了です。このコネクタは、(api.signTx() および api.signData()) を除き、CIP-30 コネクタで現在可能なすべての操作を、旧が同等のプルタスウォレットに置き換えられるようにしなければなりません。 コネクターは、接続された mulisig ウォレットの仕様に準拠したトランザクションを作成するために必要な接続 dApp を提供するエンドポイントを提供する必要があります.",
+      "report": "Plutus-walletsのCIPが作成され、番号を割り当てました。\n新しいCIPを作成するには、リポジトリをフォークし、フォークの下に作成する必要があります。この変更はまだCIPリポジトリに統合されず、参照実装とdAppサポートに取り組んでいる間、フォークにローカルに住んでいます。 コミット履歴を追跡する複数のCIPに取り組んでいるので、各CIPが別々のフォークにする必要があるため、この警告を引き起こす可能性があるため、PlutusV3サポートフォームのアップストリームライブラリが助けられない間、すべてのPlutusウォレットタイプと遅延を容易にするための広範な変更。\ntldr は、参照の実装では、次の CIP エディタで merged とマークされたアクティブ になります。\n私たちは、すべての既知のスマートウォレットソリューションをカバーするために、いくつかの反復を実行しなければなりませんでした。 BTCまたはETHキー、スマートマルチシグ、相続ソリューション、アカウントの抽象化によって制御されるウォレットを含む\nhttps://github.com/cardano-foundation/CIPs/tree/034d7bc359711620d9fbd088fa6cac779c66acd6/CIP-0141"
+    },
+    {
+      "no": 2,
+      "promise": "このマイルストーンの出力は、Broclan chrome エクステンション内の新しいコネクタを実装します。\n\nhttps://chromewebstore.google.com/detail/bro-clan-companion-extens/mdnadibcilebgfdkadlhegdpgpglljmn",
+      "criteria": "クロームストアでご使用いただく必要があり、新しいコネクタをフル導入してください.",
+      "report": "CIP-141の参照実装は、コンパニオンエクステンションで完了しました\nhttps://chromewebstore.google.com/detail/bro-clan-companion-extens/mdnadibcilebgfdkadlhegdpgpglljmn\n次の動画でモックアプリのデモを見ることができます\nhttps://www.youtube.com/watch?v=Qi9JFEu4OOM\nこのビデオでは、BroClan Smart mutlisigウォレットは、コンパニオンのエクステンションを介してモックアップに接続し、このmockappの中で、CIP141エンドポイントを呼び出すことができ、コネクテッドウォレットのパスに有効なトランザクションを作成して、マルチシグウォレットにトランザクションを渡すと、署名としてトランザクションのステータスが収集されます。\nmockup は :\nhttps://github.com/leo42/CIP-30-Extencion-MockApp\nこのCIPを使用して開発者を支援するために、我々は追加のNPMライブラリcip141-lucidevolutionを作成しました。これにより、開発者はPlutusウォレットのすべての複雑さに精通することなく、有利な進化取引を作成することができます"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "title": "Dolos: Cardano â€śData Nodeâ€ť",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 18920,
+      "promise": "open-source repository\ndocumentation website\nexecutable prototype with limited functionality\nchain-sync client feature\nlocal file-system storage",
+      "criteria": "prototype performs an Ouroboros chain-sync process and chain data is available in the local file-system.",
+      "report": "Project: Dolos: A Cardano Data Node\n\nMilestone: PoC Prototype\n\nOutputs:\n1. Open-source repository\n2. Documentation website\n3. Executable prototype with limited functionality\n4. Chain-sync client feature\n5. Local file-system storage\n\nEvidence of Milestone Completion:\n\n1. A binary release of the executable prototype (https://github.com/txpipe/dolos/releases/tag/v0.1.0)\n2. Publicly available source code matching the released prototype (https://github.com/txpipe/dolos)\n3. A documentation website with instructions on how to execute prototype (https://txpipe.github.io/dolos/)\n\nConclusion:\n\nThe project team has successfully completed the PoC prototype milestone for the Dolos data node project. The evidence provided shows that the project team has released a binary of the prototype executable, a publicly available source code matching the released prototype, and a documentation website with instructions on how to execute the prototype.",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 3
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 18920,
+      "promise": "- working prototype\n- authentication mechanism feature\n- gRPC endpoint feature\n- HTTP/JSON endpoint feature",
+      "criteria": "a working prototype can be installed by an external user and features can be tested by following written instructions",
+      "report": "We are pleased to announce the successful completion of Milestone 2 for the Dolos project. \n\nWe are pleased with the progress made during Milestone 2 and truly excited about opening up this working prototype of Dolos for feedback from the community. WeMilestone Outputs:\n\n-Working Prototype: A functional prototype of the Dolos: Cardano 'Data Node' has been developed. This prototype serves as a foundational framework for handling and processing Cardano blockchain data.\n-Authentication Mechanism Feature: An authentication mechanism feature has been implemented, providing secure access control to the Dolos 'Data Node.' This feature ensures that only authorized users can interact with the system, enhancing data integrity and user privacy.\n-gRPC Endpoint Feature:The Dolos 'Data Node' now includes a gRPC endpoint feature. This functionality enables seamless communication and data exchange with external systems, allowing for efficient integration and interoperability.\n-HTTP/JSON Endpoint Feature: In addition to the gRPC endpoint, the Dolos 'Data Node' now supports an HTTP/JSON endpoint. This feature enables straightforward interaction with the system using standard HTTP requests, facilitating easy integration into various applications and services.\n\nProof of Completion:\nThe following evidence is presented to demonstrate the completion of these outputs:\n\n-A binary release of the Dolos prototype can be found in the corresponding Github repository: https://github.com/txpipe/dolos/releases. Releases between version 0.2 and 0.3 correspond to the milestone #2 goals described in this proposal.\n-Instructions for installing the prototype can be found in the project's documentation site: https://txpipe.github.io/dolos\n-A live demo endpoint of the gRPC endpoint can be found at the following URL: grpc://50051-oracular-baseball-ghjx5s.us1.demeter.run:443. Instructions on how to connect to this endpoint can be found in the “Client Endpoint” section of the documentation site.\n-For the HTT",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 2,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 18920,
+      "promise": "- working prototype\n- chain-sync / block-fetch server feature\n- alternative storage feature",
+      "criteria": "a working prototype can be installed by an external user and features can be tested by following written instructions",
+      "report": "Outputs:\n\n・Working Prototype: A functional prototype of the Dolos: Cardano 'Data Node' has been developed. This prototype is a foundational framework for handling and processing Cardano blockchain data.\n・Chain-Sync / Block-Fetch Server Feature: The integration of the Chain-Sync and Block-Fetch server features signifies a critical advancement in our project. These servers ensure seamless synchronization with the Cardano blockchain network and efficient data retrieval. Rigorous testing has validated their reliability, setting the stage for streamlined data management within the Dolos ecosystem.\n・Alternative Storage Feature: Implementing the alternative storage feature is a pivotal achievement, greatly enhancing our data storage capabilities. This feature not only provides flexibility but also scalability for managing Cardano blockchain data. Through comprehensive performance testing, we have ensured that it meets the stringent scalability and reliability requirements, making it a valuable asset to our project's infrastructure.\n\nProof of Completion:\nThe following evidence is presented to demonstrate the completion of these outputs:\n・A binary release of the Dolos prototype can be found in the corresponding Github repository: https://github.com/txpipe/dolos/releases. Releases version 0.4 and 0.4.1 correspond to the milestone #3 goals described in this proposal.\n・Instructions for installing the prototype can be found on the project's documentation site: https://txpipe.github.io/dolos\n・A live demo of the Ouroboros Chain-Sync and Block-Fetch miniprotocol servers can be found in the following endpoint: 3307-oracular-baseball-ghjx5s.us1.demeter.run (port 443). The repository contains code examples of connecting to a remote Dolos node to perform Chain-Sync and Block-Fetch operations.\n・An alternate storage mechanism using RockDB (https://github.com/facebook/rocksdb/) as the underlying data engine has been developed. The corresponding code lives under the src/storage/rolldb dire",
+      "kinds": [
+        "code",
+        "live"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 18920,
+      "promise": "- A fully functional v1 of the tool available to download and install\n- The source code matching the v1 binary release\n- A documentation site with usage details- How to sync a Dolos instance from public relays\n- How to query chain data using gRPC protocol\n- Memory / CPU consumption benchmarks",
+      "criteria": "- Fully functional v1 binary release\n- Publicly available source code matching the binary release\n- Complete documentation site with usage details\n- Performance / Benchmark reports",
+      "report": "We are pleased to announce the successful completion of Milestone 4 and the final for the Dolos: Cardano Data Node project. \nNote on v0.6 tag\nIt's important to clarify that despite the comprehensive features and readiness for use by developers, we have decided to tag this release as v0.6 instead of v1 as initially described in the proposal. This decision is essentially a formality and does not reflect the completeness or capability of the current version.\nThis tagging decision is related to the ongoing changes in the library API, primarily due to the introduction of Phase-1 validations that were approved in Fund 10. As these validations are integrated into Dolos, they will inevitably lead to breaking changes in the library.\nTo avoid potential confusion or the need to maintain two Long-Term Support (LTS) branches of the source code, we have reserved the v1 tag for the version where the API is stable. This approach ensures that when developers see a v1 tag, they can be confident they are working with a version of Dolos where the API is not expected to undergo significant changes.\nHowever, it's important to reiterate that the v0.6 release is fully functional and includes all the features described in the original proposal. Developers can confidently use this version, knowing it delivers the promised functionality and efficiency.\nFully Functional Binary Release: \nThe culmination of our efforts is evident in the fully functional binary release. You can now download and install Dolos, which is ready to empower Cardano data management needs. The binary release is available for download at https://github.com/txpipe/dolos .\n\nPublicly Available Source Code: \nIn our commitment to transparency, we have made the source code that matches the v0.6 binary release openly available for review, customization, and contributions. You can access the codebase at https://github.com/txpipe/dolos .\n\nComprehensive Documentation Site: \nEnsuring that users have a seamless experience, we have pr",
+      "kinds": [
+        "code",
+        "doc",
+        "live"
+      ],
+      "links": 10,
+      "cut": true
+    }
+  ]
+}

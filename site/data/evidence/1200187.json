@@ -1,0 +1,74 @@
+{
+  "title": "Profile NFTs - Customizable NFT Webpage w/ user data on-chain in datums",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 50000,
+      "promise": "Profile NFTs are NFTs that you can currently mint on Cardano's preview network. You can level these NFTs up by completing actions on-chain. In this proposal we're going to give each of these NFTs a webpage that lives on Atrium.\nFor this milestone we'll output three different webpage mockup designs, and some early mockups of customization options in the webpages.",
+      "criteria": "Acceptance Criteria:\n・This milestone should be accepted given that we provide three different webpage mockups for Profiles NFTs.\n・This milestone should also be accepted given that we provide some early mockups of customization options in the webpage.",
+      "report": "Here is a link to:\n・three different images that are mockups for the webpages.\n・early mockups of customization options for the webpages.\n\nLink: https://drive.google.com/drive/folders/1iF_efMDKx5jyVtgFrPiOnGSbVIfPjJHu?usp=sharing",
+      "kinds": [
+        "doc"
+      ],
+      "links": 1
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 50000,
+      "promise": "In this milestone we'll develop a Profile page for Staking Baskets. Staking Baskets are a smart-contract that lives in our platform. This smart-contract allows you to delegate to over 100 pools.\n\nWe're going to create a Profile page for this Staking Basket that shows Basket stats. These Basket stats will show total number of stakepools, how much ADA is in each stakepool, and how much ADA is in the Basket. Staking Baskets, and Profile NFTs will both have these web pages. The first Profile webpage for Staking Baskets will be live in our site.",
+      "criteria": "Acceptance:\n・Must build a Profile page for the first Staking Basket Diffusion.\n・This Profile page must have stats from the first Staking Basket that's live on Cardano's preview network.\n・Reviewers must be able to go to this page to review it given they setup a preview wallet.\n・Must submit images of the page.",
+      "report": "Hi there. Please find our submission for this milestone.\nLink to an image of the Staking Basket Profile Page:\nhttps://www.dropbox.com/scl/fi/stoc740kv2h7lwuy3485q/Diffusion-Profile-Page.png?rlkey=lk878bnfb0wvw4nfwsucs363m&dl=0\nLink to the website where reviewers can see the Staking Basket Profile page and verify the data:\nhttps://alpha.atrium.io/staking/baskets/diffusion\nLink to on-chain evidence that shows the data in the Profile page is accurate on Cardano's preview network:\nThe evidence provided requires explanation. From a UX point of view, users don’t care about the amount of Diffusion tokens they own, rather they care about the ADA value they represent. And so on the front end UI of the profile page, we translate the Diffusion quantity into ADA value. So you cannot verify the Diffusion token quantity directly on the profile page. You can however verify how many Diffusion tokens you own by using our wallet view. We have provided a link here and a screenshot.\nHere is a link to a wallet that has interacted with Diffusion:\nhttps://preview.cardanoscan.io/address/00d3857f5243597395163638de60a7d2580e7eaaed7d93bc55697714c3104eb82138d965edd16ddefee4cc1e65d2d35c86a94d487075c5faec\nHere is a link to the Diffusion token page on the preview version of cardanoscan. This token page shows you the total supply, all minting transactions, top holders, and more:\nhttps://preview.cardanoscan.io/token/ffbea8425064c5d7874498f07b7b117e503eb4d2891267a3c00ae6d5446966667573696f6e \nWhen you scroll down on the Profile page for Diffusion you can see real SPOs that the Basket is delegated to on Cardano's preview network, you can verify this on cexplorer:\nhttps://preview.cexplorer.io/stake/stake_test17rsx39dz63e56j2vc3sng08jtnanvqnv8fmcwtvhh22q79seml6n5/delegation#data \nYou can use this link to see all of the rewards for the script address(Staking Basket): https://preview.cexplorer.io/stake/stake_test17rsx39dz63e56j2vc3sng08jtnanvqnv8fmcwtvhh22q79seml6n5/reward#data \nIf you are having trouble",
+      "kinds": [
+        "chain",
+        "doc",
+        "other"
+      ],
+      "links": 18,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40000,
+      "promise": "Staking Baskets are a Cardano smart-contract that allows you to delegate to over 100 stakepools at the same time. Each Staking Basket will have a Profile page in the same way Profile NFTs have webpages.\nIn this milestone we'll output a Staking Basket Profile page directly in Atrium on Cardano's preview network. This webpage will have real blockchain stats that are being pulled live. This webpage will show how much ADA is in the Basket, how many SPOs are in the Basket, and what ADA % is being delegated to each SPO. Completing this milestone will help us integrate webpages for Profile NFTs in the next milestone.",
+      "criteria": "This milestone should be accepted given that:\n・We submit a link to our website where you can view this Staking Basket Profile page to see real stats from the Staking Basket.\n・Staking Basket page must be live on Cardano's preview network.\n・Staking Basket page must have real stats from Cardano's preview network, with real SPOs included.",
+      "report": "Dear reviewers: \n・here is a link that shows staking basket profile page live: https://alpha.atrium.io/staking/baskets/diffusion\n・(user needs to connect to the atrium.io first to access this website)\n・here is a link that shows exactly where to look on the platform in order to find the acceptance criteria: https://drive.google.com/file/d/1v7TwdvdCXtto6Ip8DYDAMraWPv8IaG8v/view?usp=sharing.\n\nThank you in advance",
+      "kinds": [
+        "doc",
+        "other"
+      ],
+      "links": 2
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 8750,
+      "promise": "For this milestone we'll continue to develop the ability to have a webpage for Profile NFTs. We'll output 5 Profile NFTs with webpages that are connected to Cardano's preview network. This Profile NFT will show live stats from the Cardano wallet where the NFTs are held. We'll also output a video that shows these 5 Profile NFTs with real stats from the Cardano blockchain. We'll also output some images of each Profile NFT webpage for submission.",
+      "criteria": "This milestone should be accepted given that we:\n・Submit a video that analyzes all 5 Profile NFTs.\n・Profile NFT pages must be hooked up to Cardano's preview network with real blockchain stats.\n・We submit transaction creation links for the Profile NFTs.\n・Submit images of all 5 Profile NFTs.",
+      "report": "Dear Catalyst reviewers, here is the PoA.\nLink to a YouTube video that analyzes all 5 Profile NFTs.\n・https://youtu.be/ZgD6RESWYFA\n\nLink to Google Drive with the NFT profile images: \n・https://drive.google.com/drive/folders/1kmI8LH-_dovM4L_DiVmJ_TUkrO-mDi9B\n\nLinks to preview on-chain transactions that minted the profile NFT:\n・https://preview.cexplorer.io/asset/asset1ukkaafagzpkj6nsg6nweetvc252r8funv5rzng - ANIME90\n・https://preview.cexplorer.io/asset/asset1yuqk2hzq9mgyuu2wzpmzfwq0ks5epz7mqls9gq - CAPTAINJANG101\n・https://preview.cexplorer.io/asset/asset1vjnue37xkh2z6wqde6vg4l9uprf08wsyr60l2j - DESSYMAMA\n・https://preview.cexplorer.io/asset/asset1knlwlg57vtt6gnzgwxk6cx4uzeyjck0tqgfg8p - ARBI\n・https://preview.cexplorer.io/asset/asset1u0pxsap7gvqxm3lgk92ltfwy0t7z365ndwsdl8 - ARFA",
+      "kinds": [
+        "chain",
+        "doc",
+        "video"
+      ],
+      "links": 13
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 26250,
+      "promise": "For the final milestone we'll ship Profile NFT webpages in the Atrium dashboard on Cardano's preview network. Anyone with a preview wallet will be able to come in, mint a Profile NFT, and have their own webpage. Users can customize will be able to customize their webpage by changing their NFT background. We'll also gather 25 real users to mint Profile NFTs, and provide feedback on their experience to find bugs.\nOutputs:\n・Final close-out report\n・Final closeout video\n・Profile NFT webpages with blockchain stats live on Atrium under alpha.atrium.io.\n・25 feedback submissions from real users to solve bugs.\n・Ability to customize Profile NFT webpage by changing Profile NFT background.",
+      "criteria": "This milestone should be accepted given that:\n・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Reviewers, and regular users can mint Profile NFTs on Cardano's preview network to get their own webpage that lives in the Atrium dashboard.\n・Profile NFT minters must be able to customize their webpage by changing their Profile NFT background.\n・25 feedback forms need to be submitted from real users that minted Profile NFTs.\n・Webpages must show stats from Cardano's preview network.",
+      "report": "Link to final closeout report in PDF format:\nhttps://drive.google.com/file/d/1rFcST59WcQZekyQE3eLKBFVDvMxFEIGw/view?usp=drive_link\nLink to final closeout video on YouTube.\nhttps://youtu.be/y2B-nCWBX8I \nLink to Atrium website where users can mint their own Profile NFTs, and get their own webpage with real blockchain stats.\nhttps://atrium-front-catalyst.vercel.app/connect \nPassword: catalyst\nKind reminder: please remember to use your preview blockchain wallet and not your mainnet wallet. \nLink to a Google sheet with 25 feedback forms filled out by real users.\nhttps://docs.google.com/spreadsheets/d/1lZI56mhy_k2QX9P9dm1SGkfjO1L0JpRsw8TGCC4wtR0/edit?gid=0#gid=0 \nLink to google form where users submitted the bugs: \nhttps://forms.gle/xiH8Qj84gZ7MQmtK8",
+      "kinds": [
+        "doc",
+        "live",
+        "other",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

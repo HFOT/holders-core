@@ -1,0 +1,83 @@
+{
+  "title": "Open Source NFT & Wallet Auth Framework for Cardano",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 21300,
+      "promise": "・JavaScript (JS) boilerplate code: Design and develop the fundamental codebase to enable developers to launch simple dApps on Cardano.\n・Basic dApp example: Create a small-scale demo application to showcase the boilerplate’s functionality.\n・Callback mechanism: Implement a system to integrate callback functionalities that interface with third-party backends such as IoT Services.\n・GitHub repository: Establish a publicly accessible GitHub repository for the entire framework project.",
+      "criteria": "・Boilerplate functionality: The boilerplate code enables the creation of dApps that can:\n・Connect to a Cardano wallet\n・Perform basic wallet interactions (e.g., retrieve wallet address, view basic asset information)\n・Callback mechanism: The callback system supports external API calls, triggers, and data exchange when certain actions occur within the dApp authentication flow.\n・Demo application: The demo application successfully utilizes the boilerplate and its callback features to illustrate core mechanics.\n・GitHub setup: The repository includes documentation, README file, basic project structur",
+      "report": "We have started the work on the Boilerplate. The boilerplate is a react boilerplate. \nWe use typescript in the demo app and JS in the boilerplate, we plan to change the boilerplate to typescript in the future.\nWe also have deployed are demo application here: https://boilerplate-e.vercel.app/\nWe conducted tests on our npm package, the test can be found in the Github Repository of the package and the report can be found here: https://hackmd.io/@emirolgun/SywumqagA\nThe demo app is in the Framework Demo page. This demo app shows connect and disconnect wallet and display wallet assets.\nIt supports wallet connect, disconnect, and get assets of wallet. Our package can be run on the latest NextJS and Create-React-App.\nOnly external package we used so far is \"cbor-js\". It is used to decode UTxOs to find assets. \nDetailed documentation and how to install, and use guides can be both found on the boilerplate Github and the npmjs address below.\n・npm package: https://www.npmjs.com/package/littlefish-nft-auth-framework\n・Boilerplate Github: https://github.com/littlefish-foundation/littlefish-nft-auth-framework\n・Demo App Github: https://github.com/littlefish-foundation/boilerplate-e \n・Documentation: The initial version of the code is documented: https://tools.littlefish.foundation/littlefish-research-hub/littlefish-open-source/open-source-nft-and-wallet-auth-framework-for-cardano",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other"
+      ],
+      "links": 11,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 19500,
+      "promise": "・Wallet Connect Functionality: Enable users to securely connect their supported Cardano wallets (Nami, Eternl, Flint, etc.) to dApps using your framework.\n・Sign Up with Wallet: Implement the mechanism for a user to create a new account directly linked to their wallet address.\n・Sign In with Wallet: Allow a user with an existing account to authenticate using their wallet.\n・Front-end UI Components: Develop necessary UI elements (e.g., \"Connect Wallet\" button, wallet selection modal) for a seamless user experience.\n・Backend Integration: Extend the logic from Milestone 1's callback mechanism to handle data persistence, session management, or any other backend requirements for wallet authentication.",
+      "criteria": "・Secure Wallet Connection: The framework establishes connections with supported wallets following recommended security practices.\n・Data Handling:\n・New accounts are created and associated with wallet addresses as needed.\n・Authentication requests are successfully validated against existing user data.\n・User Experience:\n・The UI provides clear guidance and feedback during wallet connection and login processes.\n・The flow is intuitive and minimizes friction for the user.\n・Callback Mechanism Integration: Authentication events properly trigger established callback mechanisms, providing necessary data t",
+      "report": "We have completed the second Milestone. Since the first milestone, we have converted our NPM package from javascript to typescript. We made a decision to leave some backend mechanisms like data persistence and session management to the users of this package because implementing those in the NPM package would significantly limit customization of the apps developed with this package. Now the NPM package provides functions and components for both the client and server side of NextJS projects. The server side provides functions to signup and login users with either email and passwords or cardano wallets. The functions validate the ownership of Cardano wallets by message signing and verifying the signed message. The package also provides functions to the user of the package for them to implement their logic more freely. \nThe demo app that shows the signup and login functionality: https://boilerplate-e.vercel.app/\nThe NPM Package: https://github.com/littlefish-foundation/boilerplate-e/tree/milestone-2-update\nThe detailed document about the usage of the package: https://www.npmjs.com/package/littlefish-nft-auth-framework-beta\nBrief outline of the security measures: https://hackmd.io/@emirolgun/SkiisFGmC",
+      "kinds": [
+        "code",
+        "doc",
+        "live"
+      ],
+      "links": 7,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 15500,
+      "promise": "・NFT Verification Logic: Develop the core authentication mechanism that allows users to sign in or sign up using a specific NFT in their wallet. This involves securely verifying NFT ownership on-chain.\n・NFT Selection: Build functionality allowing developers to easily configure which NFT (or collection of NFTs) can be used for authentication by a dApp.\n・Demo App Update: Extend the demo application to showcase NFT sign-up and sign-in, including options for NFT selection.\n・Front-End Components: Design and implement necessary UI elements for NFT-based authentication flow (e.g., wallet scanning, NFT selection, feedback mechanisms).\n・Callback Integration: Ensure authentication events (success, failure, etc.) trigger the callback mechanism and transmit relevant NFT metadata.",
+      "criteria": "・Secure NFT Verification: The framework accurately determines if a user's wallet holds the required NFT, preventing fraudulent authentication attempts.\n・Flexibility: The NFT selection mechanism allows for:\n・Specification by individual NFT asset ID.\n・Selection based on an entire collection (policy ID).\n・Usability:\n・The UI clearly guides users through the NFT authentication process.\n・Error states are informative in case the user doesn't hold the required NFT or there are issues in the verification process.\n・Callback Functionality: Relevant NFT metadata (policy ID, asset name) is included in succ",
+      "report": "We have extended our tests to cover the demo app as well as the framework. \nWe have completed the third milestone. In addition to the previous functionalities, now the package can work with both Preprod and Mainnet wallets. signup and login functions support NFT and Token authentication. The asset authentication uses Blockfrost API to verify ownership of the provided assets. We also have developed different functions like policyID verifier for developers using our package. These functions can allow developers to implement their logic more freely. Signup and Login functions now also support strict authentication. Strict authentication means allowing only wallets with certain NFT collections to successfully authenticate. The demo app does not impose this strict authentication mechanism for people to try it.\nWe were using next-auth beta for our demo app, and it created several problems with authentication with CIP-30 wallets. We have recreated the authentication system and the demo app is fully functional now. The app allows signing up with any assets and wallets. If you signup with asset, you will not be able to login with just wallet, you need the asset as well. The demo app now has two pages, ADA Handle page and HOSKY page. Only accounts with those assets can access these pages. If you need to check the functionality and don't possess these assets, please contact us with an asset you have and we will add those asset to our database for you to test.\nThe demo app relies on cookies, the previous version gave errors when cookies were blocked, the updated version gives the proper warning.\nThe demo app that shows the signup and login functionality: https://boilerplate-e.vercel.app/\nDemo app Repository: https://github.com/littlefish-foundation/boilerplate-e\nMilestone 3 Test Review: https://tools.littlefish.foundation/littlefish-research-hub/littlefish-open-source/open-source-nft-and-wallet-auth-framework-for-cardano/milestones/milestone-3-test-review\nThe NPM Package: https",
+      "kinds": [
+        "code",
+        "live",
+        "other"
+      ],
+      "links": 10,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 8980,
+      "promise": "SSO Metadata Standard:\n・Design and document a metadata standard for Cardano NFTs used in SSO authentication. Ensure it aligns with any emerging community standards.\n・Create a reference implementation or library for minting and validating SSO NFTs.\n\nMembership Levels:\n・Developers can define access levels or roles tied to NFTs or wallet addresses.\n\nActivation & Expiry Dates:\n・Allow authentication to be time-bound, having NFTs (or wallet-based roles) grant access only within specific date ranges.\n\nMaximum Usage:\n・Implement limits on the number of times an NFT can be used for authentication.\n\nTransferability:\n・Explore options for transferrable and non-transferable authentication NFTs, considering security implications.\n\nCallback Integration:\n・Integrate the new functionalities into the existing callback mechanism, including SSO Metadata Standard, Membership Levels, Activation & Expiry Dates, Maximum Usage, and Transferability.",
+      "criteria": "・Metadata Robustness\n\n・Criterion: SSO metadata supports diverse dApp authentication use cases, validated in two distinct scenarios.\n\n・Metadata Documentation\n\n・Criterion: Documentation includes creation guidelines, use case examples, and developer integration instructions, validated by Cardano developer feedback.\n\n・Reference Implementation/Library\n\n・Criterion: Provides minting and validation for SSO NFTs, with efficiency and reliability benchmarks documented.\n\n・Membership Levels Implementation\n\n・Criterion: Demonstrates configurable access levels in the demo application with clear configuration",
+      "report": "After utilizing one of the NFTs to sign in, the user must delete their account from the “User” page to test other NFTs. Failure to do so will result in the system anticipating access from the previously used NFT, causing an error.\nWe have developed a metadata standard, the functions in the package to validate and use the metadata standard, and the demo app functionality for the sso function of the metadata and the package. While developing the metadata standard we consulted with various developers such as Andrew Westberg and the Gimbalabs community.\nAfter extensive deliberation, we have reached a consensus to refrain from implementing minting authentication assets. Our rationale stems from the fact that the minting process should be exclusively managed by application administrators rather than being accessible to the general public. This decision is driven by the paramount importance of the PolicyID and Asset Names as the most critical security features of the authentication assets. Consequently, we have determined that the control over these policies must be meticulously stringent.\nHere is the proof advice from Andrew Westberg: https://drive.google.com/file/d/1BuXW3JGsik4_gz8zCp2uVhRF8WG7_Vnk/view?usp=sharing\nDemo App: https://boilerplate-e.vercel.app/\nDemo App Github: https://github.com/littlefish-foundation/boilerplate-e/tree/test-branch\nBoth the NFT Authentication Package NPM and Github pages include the detailed explanation about the new metadata standard.\nNFT Authentication Package: https://www.npmjs.com/package/littlefish-nft-auth-framework\nNFT Authentication Package Github: https://github.com/littlefish-foundation/littlefish-nft-auth-framework\nMinting Authentication NFT Guide: https://hackmd.io/@emirolgun/rJRT_jie1e\nEfficiency and Reliability Benchmarks Document: https://hackmd.io/@emirolgun/rJlErsk7yg\nTo test the demo application, please locate the “Request a Demo Token” button situated beneath both the Login and Signup pages’ wallet section. Multiple asset",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "other",
+        "social"
+      ],
+      "links": 13,
+      "cut": true
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 11520,
+      "promise": "・Enhanced Demo App: Incorporate advanced features like SSO, membership levels, and NFT validation to the demo app.\n・PCR (Proof of Concept Report) & PCV (Proof of Concept Video): Provide comprehensive documentation and a demonstrative video illustrating the framework's capabilities and integration processes.\n・Public Repository Update: Ensure the GitHub repository reflects the final codebase, including all features and functionalities developed throughout the project.",
+      "criteria": "・Enhanced Demo App:\n・Demonstrates advanced features clearly.\n・PCR (Proof of Concept Report):\n・Detailed document covering the project's impact, challenges, and solutions.\n・PCV (Proof of Concept Video):\n・Video showcasing framework functionality and benefits.\n・Public Repository Update:\n・GitHub updated with final code and comprehensive documentation.\n・Availability:\n・PCR and PCV accessible on GitHub/YouTube, ensuring ease of access.",
+      "report": "We have successfully completed the Open Source NFT and Wallet Authentication Framework for Cardano, meeting all milestone objectives and delivering a robust authentication solution for dApps. The framework provides seamless wallet-based and NFT-based authentication, advanced SSO metadata functionality, and developer-friendly integration tools. We still include the Proof of Concept video since it explains the package comprehensively. We improved the Project Close-out Report according to the reviewer feedback.\n・The demo app has been updated to showcase all the capabilities of the littlefish package.\n・Project Close Out Report has been written.\n・Project Close Out Video has been recorded and uploaded.\n\nThe sources can be found:\n・Demo App\n・Project Close-out Report\n・Project Close-out Video\n・Proof of Concept Video\n・Demo App Repository\n・NPM Package Repository\n・NPM Package",
+      "kinds": [
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 7
+    }
+  ]
+}

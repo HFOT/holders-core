@@ -1,0 +1,50 @@
+{
+  "title": "Easy Speak - a Language Learning App With Payments in ADA",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 22500,
+      "promise": "Stage 1: March 2024\n1 month \nUX Design\n・Write user stories (possible user routes on the website)\n・Create website prototype (pages, breakdowns, services)\n\n UI Design\n・Designs for wide-screen and mobile devices, color pallets and multilingualism;\n・Create style-guide for project;\n・Configure github repository for deploy;",
+      "criteria": "The link to figma will be provided with:\n・ developed user story, \n・design for a mobile device,\n・design for a desktop,\n・style-guide,\n\nThe link to test version of the service will be provided. By following the link you can see that the service has already been deployed and you can monitor the progress of development work",
+      "report": "The first Milestone was dedicated to creating the design and preparing for the start of development:\nDesign:\nmobile/desktop design - https://www.figma.com/file/9UNrr2Q322YBYvfrTXHrM3/easy-speak-PoA1-Fund11?type=design&node-id=0-1&mode=design\nuser stories - https://www.figma.com/file/9UNrr2Q322YBYvfrTXHrM3/easy-speak-PoA1-Fund11?type=design&node-id=2-3&mode=design\nstyle-guid - https://www.figma.com/file/9UNrr2Q322YBYvfrTXHrM3/easy-speak-PoA1-Fund11?type=design&node-id=2-2&mode=design\nDevelopment:\nlink for vercel website - https://easy-speak-theta.vercel.app/en\n\nThis is what the design looks like now. During the development of the service, there may be changes in the design: adding additional functionality, changing the appearance of elements, and some elements may disappear.\nBut the key functionality declared in the final Milestone will remain entirely:\n・the user can register for the service\n・the user can book a training session\n・the user can view lists of teachers and schedules\n・the user can apply to “become a teacher”\n・user can connect his wallet to the website",
+      "kinds": [
+        "live",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 2,
+      "month": "20",
+      "cost": 22500,
+      "promise": "Stage 2: November 2025\n2 month (Frontend):\n・Frontend development based on the design.\n・Setup multi-languages and adding translations (at the first stage there will be 2 languages ​​Russian and English)\n・Stack: Next.JS, Redux\n\n3 month (Backend)\n・Setup Backend for storing data\n・Video calls (WebRTC) \n・User chats\n\n4 month (Smart Contracts)\n・Cardano wallet integration (If milestone 2 will implement frontend and backend, then code will be written here to work correctly with Cardano wallets)\n・Smart contracts on-chain code (Smart contracts will be written)\n・Smart contract off-chain code (These smart contracts will connect to the service)",
+      "criteria": "Frontend must match the design (link for design will be provided).\nThe site should be accessible via a test link and reviewers will be able to register on the site and use the functionality\nWallet is connected:\n・user can connect his wallet to the website.\n\nSmart contract transactions work:\n・smart contracts will be described in google docs (a link to the preliminary contract will be provided). Based on the written description, the main smart contract will be written",
+      "report": "I've checked the link to test website. It works, but maybe the problem was because I shortened it. I've updated the link during the page. Additionally, add it here - https://espeak-tau.vercel.app/\nCredentials are still the same.\nIn this file you will be able to find all test credentials - https://docs.google.com/document/d/1sqnZ30cGDyxGW_6YSWp7MQuUZXWpkkSEDivXmhYnIsg/edit?usp=sharing\nStudent credentials:\nnickname: testCustomer\nemail: test-customer@gmail.com\npassword: !Customer111\nTeacher credentials:\nnickname: testTeacher\nemail: test-teacher@gmail.com\npassword:!Teacher111\n\nPlease, you need to switch from mainnet to pre-prod your wallet setup\n\nA. Output: Frontend Development\nFull frontend implementation according to the provided design, built with Next.js and Redux, including multilingual support (Russian + English).\nAcceptance criteria:\n・Frontend visually matches all screens of the design.\n・Implemented UI flows allow registration, login, navigation, and basic user actions.\n・Multi-language support with RU/EN fully integrated.\n・The site is accessible via a test link; reviewers can register and use the basic frontend functionality.\n\nEvidence:\n・Test website link (frontend deployed) - https://espeak-tau.vercel.app/\n・Screenshots of implemented UI - https://drive.google.com/file/d/1wc_DlMNJ3oYb82xgYL00FmjDHJPHqCTO/view?usp=drive_link and https://drive.google.com/file/d/1Z4bS0MVKy4EECTcTqDwo__1GpUS2ijvt/view?usp=drive_link\n・Repository link showing frontend code. - https://github.com/dmetree/espeak\n・Aiken source code - https://github.com/adakondacoin/espeak-contracts/tree/main/v2 (Made it public)\n・License for frontend code - https://github.com/dmetree/espeak/blob/main/LICENSE\n・License for smart-contract - https://github.com/adakondacoin/espeak-contracts/blob/main/v2/LICENSE\n\nB. Output: Backend Development\nBackend infrastructure built for data storage and real-time functionality, including user chats and video calls using WebRTC.\nAcceptance criteria:\n・Backend endpoints suppor",
+      "kinds": [
+        "code",
+        "doc",
+        "live"
+      ],
+      "links": 54,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "21",
+      "cost": 30000,
+      "promise": "Stage 3: December 2025\nFinal development work will also take place at this time.\n5 month (Debugging and Testing)\n・Testing and debugging of the service with a small focus group (The test group will be made up of interested users and enthusiasts. This group will be assembled via Twitter and Discord)\n・Load testing, testing for compliance with service rules \n・Fixing bugs (any found bugs from frontend, backend and other parts)",
+      "criteria": "The application functions correctly on mobile devices and browsers:\n・the site looks good on mobile devices and computers\n・the user can register for the service\n・the user can book a training session\n・the user can view lists of teachers and schedules\n・the user can apply to “become a teacher”\n\nWallet is connected:\n・user can connect his wallet to the website.\n\nSmart contract transactions work:\n・smart contracts will be described in google docs (a link to the preliminary contract will be provided). Based on the written description, the main smart contract will be written\n\nTesting:\n・The results of th",
+      "report": "I changed the status for Close out video: it's open for everyone and there are no limitations now. Plus, I've updated the Close-out report (put new links).\nThe website is on mainnet now, so you freely could connect mainnet wallets. I've updated README and prepare License file, also addwd mainnet transaction screens and restore bug fixes files.\nA. Output: Fully functional responsive web application (mobile + desktop)\nUPDATED README and LICENSE\nREADME - https://github.com/dmetree/espeak?tab=readme-ov-file\nMIT License - https://github.com/dmetree/espeak?tab=MIT-1-ov-file\n\nAcceptance criteria:\n・The website renders correctly on mobile devices and desktop browsers\n・Users can:\n・Register for the service\n・Book a training session\n・View lists of teachers and schedules\n・Apply to “become a teacher”\n・No critical UI/UX defects remain on supported devices and browsers\n\nEvidence:\n・Public URL of the staging/production website - https://espeak-tau.vercel.app/\n・Screen recordings or screenshots demonstrating:\n・Mobile view - https://drive.google.com/file/d/19wNbO1DSKmnpQvxvYkDVJGhvTUKEnRzL/view?usp=drive_link\n・Desktop view - https://drive.google.com/file/d/1z42NS9J5xULKOZ6tST8yHj-xGBZhgNnp/view?usp=drive_link\n・Successful user registration - https://drive.google.com/file/d/1Hm5M6Ft0zD_3RudqHGSYOSBF4OXdrg7Q/view?usp=drive_link\n・Teacher list and schedule pages - https://drive.google.com/file/d/1z42NS9J5xULKOZ6tST8yHj-xGBZhgNnp/view?usp=drive_link\n・\n\nB. Output: Wallet connection implemented and operational\nAcceptance criteria:\n・A user can connect their crypto wallet to the website\n・Wallet connection status is correctly reflected in the UI\n・The connected wallet is used as the identity for blockchain transactions\n\nEvidence:\n・Screen recording showing - https://drive.google.com/file/d/1OpStui3cGftq_IxsJgTE9tmYYIA99p0d/view?usp=drive_link\n・Wallet connection prompt\n・Successful wallet connection\n・Wallet address displayed or acknowledged in the UI\n・Short written test description (Google Docs) explai",
+      "kinds": [
+        "chain",
+        "code",
+        "doc",
+        "live",
+        "video"
+      ],
+      "links": 54,
+      "cut": true
+    }
+  ]
+}

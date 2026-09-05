@@ -1,0 +1,83 @@
+{
+  "title": "DeltaDeFi - Open Source Libraries for High Frequency Trading",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 60000,
+      "promise": "Objective: Proposal onboarding, assembling the team, and defining project management practices.",
+      "criteria": "・Confirm the roles and responsibilities of the core team members and advisors. Assign tasks to core team members and advisors\n・Setup project management tools, display the tasks and the status of tasks (Not started, In progress, Complete, Backlog)",
+      "report": "・A list of core team members and advisors will be provided with public link on SIDAN Lab dedicated Discord Channel.\n・https://drive.google.com/file/d/1k0P8T9etyZ3UjrwVGbi9fJkEVaKz0n6O/view?usp=drive_link\n・A public link will be provided for the access to review the project management tools and systems set up on SIDAN Lab dedicated Discord Channel. The project management tool could be Github or Google sheet whichever is more convenient.\n・https://docs.google.com/spreadsheets/d/17Mvr4rvdbWGFJrJd_aUhezvFJo0bGSxkxIEeogYgr3o/edit?usp=sharing\n・Discord Announcement: https://drive.google.com/file/d/1hVc8CyNezFTZ12SU4ubNnrVCwauCklGj/view?usp=drive_link\n・Github: https://github.com/deltadefi-protocol",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 60000,
+      "promise": "Objective: Develop and publish DeltaDeFi SDKs in Python and Typescript, with full documentation",
+      "criteria": "・Develop the Python SDK\n・Prepare and publish the documentation on Python SDK\n・Develop the Typescript SDK\n・Prepare and publish the documentation on Typescript SDK",
+      "report": "Sorry for the delayed update of the milestone progress since we have refactored the backend apis. We have decided to revise the SDK after revising the backend APIs.\nPlease find the updated python and typescript SDKs and demo output in below public github repos:\nTypescript SDK: https://github.com/deltadefi-protocol/typescript-sdk\nPython SDK: https://github.com/deltadefi-protocol/python-sdk\nsdks-demo: https://github.com/deltadefi-protocol/sdks-demo\nIn the sdks-demo, there are screenshot of example output of the SDK:\nPython SDK: https://github.com/deltadefi-protocol/sdks-demo/tree/main/python/demo-output\n・accounts.png shows the example outputs of account related APIs\n・markets.png shows the example outputs of markets related APIs\n・orders.png shows the example outputs of orders related APIs\n\nTypescript SDK: https://github.com/deltadefi-protocol/sdks-demo/tree/main/typescript/demo-output\n・accounts_1.png shows the example outputs of account related APIs\n・accounts_2.png shows the example outputs of account related APIs\n・markets.png shows the example outputs of markets related APIs\n・orders.png shows the example outputs of orders related APIs",
+      "kinds": [
+        "code"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 30000,
+      "promise": "Objective: Develop and publish DeltaDeFi SDKs in Golang and Rust, with full documentation",
+      "criteria": "・Develop the Golang SDK\n・Prepare and publish the documentation on Golang SDK\n・Develop the Rust SDK\n・Prepare and publish the documentation on Typescript SDK",
+      "report": "Resubmission Note\n\nDear reviewers, thanks for reminding that go doc is missing, which i found out that i missed pushing readme to main. I also took this chance to further fleshed out documentation including supplying inline docs in both rust and golang sdk. Please find the resubmission with same links\n\nSubmission\n\nPlease find the updated Rust and Golang SDKs and demo output in below public github repos:\nRust SDK: https://github.com/deltadefi-protocol/rust-sdk\nGolang SDK: https://github.com/deltadefi-protocol/go-sdk\nsdks-demo: https://github.com/deltadefi-protocol/sdks-demo\nIn the sdks-demo, there are screenshot of example output of the SDK:\nRust SDK: https://github.com/deltadefi-protocol/sdks-demo/tree/main/rust/demo-output\n・accounts.png shows the example outputs of account related APIs\n・markets.png shows the example outputs of markets related APIs\n・orders.png shows the example outputs of orders related APIs\n\nGolang SDK: https://github.com/deltadefi-protocol/sdks-demo/tree/main/go/demo_output\n・accounts.png shows the example outputs of account related APIs\n・markets.png shows the example outputs of markets related APIs\n・orders.png shows the example outputs of orders related APIs",
+      "kinds": [
+        "code"
+      ],
+      "links": 10
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 10000,
+      "promise": "Objective: Design and architecture of a trading bot\nPartnership with Professional Trader(s)\n・Establish collaboration with one or more professional traders to guide the design and development of the trading bot.\n\nTrading Bot Design Document\n・Design document outlining the architecture of the trading bot.\n・Description of the basic trading strategy and how it can be customized.\n・Design of the user experience for running the trading bot.",
+      "criteria": "・Establish collaboration with (a) professional trader(s) to prepare for the design of the trading bot.\n・Research and design basic trading strategy. The trading strategy and the logic will be described and listed on the document.\n・Design the trading bot in a pattern where users can easily amend the strategy\n・Design the recommended bot running method and example cloud deployment methods\n・A description or a guide of the design will be provided publicly with a link",
+      "report": "Resubmission Note\n・Resubmitted with extra description along different links. Please provide more detailed clues for us to provide further info if the submission is still deemed as insufficient. Thanks!\n\nSubmission\nAnnouncement of partnership with a professional trader(s). The announcement will be made in SIDAN Lab dedicated Discord Channel. A public link will be provided\n・https://discord.com/channels/1166784293805228061/1183106376537477180/1418116209978773574 - this link would be inaccessible if you did not join the discord yet. Join sidan lab discord - https://discord.gg/2VgKDrSxe9. The message is under Discussion -> deltadefi.\n・https://github.com/deltadefi-protocol/sdks-demo/blob/main/trading-bot/collab-announcement.png - The screenshot of the announcement message if you find joining sidan lab discord too troublesome.\n\nFull documentation on the logic of trading bot, how to customized for proprietary trading strategy. A public link access to the documentation will be provided.\n・The full documentation is served at sdks-demo's docs path - https://github.com/deltadefi-protocol/sdks-demo/tree/main/trading-bot/docs\n・How to customized - https://github.com/deltadefi-protocol/sdks-demo/blob/main/trading-bot/CONFIG.md\n\nDescription on expected user experience on how to run the trading bot. A public link will be provided to view the expected user experience.\n・The user guide which contains exact instructions on how to run the trading bot - https://github.com/deltadefi-protocol/sdks-demo/blob/main/trading-bot/docs/02-user-guide.md",
+      "kinds": [
+        "code",
+        "other",
+        "social"
+      ],
+      "links": 12
+    },
+    {
+      "no": 5,
+      "month": "14",
+      "cost": 10000,
+      "promise": "Objective: Develop the publish the trading bot package in Python, with full documentation",
+      "criteria": "・With the aid of the professional trader(s) in partnership, develop of the trading bot in Python\n・Prepare and publish the documentation on the trading bot\n・Prepare the example deployment scripts to any one of the clouds (e.g. AWS, GCP etc)",
+      "report": "Please find the updated demo video with written description.\n・Open source trading bot package source code in Github\n・https://github.com/deltadefi-protocol/sdks-demo/tree/main/trading-bot\n・Full developer documentation on Python trading bot\n・https://github.com/deltadefi-protocol/sdks-demo/tree/main/trading-bot/docs\n・Working deployment scripts\n・https://github.com/deltadefi-protocol/sdks-demo/blob/main/trading-bot/build-and-deploy-gcp.sh\n・A screencast/video to illustrate that the scripts are working based on the GitHub repository code\n・https://www.youtube.com/watch?v=EuOAmtabgz8",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 8
+    },
+    {
+      "no": 6,
+      "month": "15",
+      "cost": 30000,
+      "promise": "・Objective: Prepare a set of materials to demo the usage of trading bot\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Prepare a video on how to use the trading to trade on DeltaDeFi\n・Host live session to demonstrate the exact flow of using trading bot to trade on DeltaDeFi\n・Prepare the project close-out report and video\n・Final closeout report is publicly available\n・Final closeout video is publicly available",
+      "report": "A recording of public session of trading bot demonstration & A public video to walk through the usage of DeltaDeFi trading bot: \n・Recording of live session: https://www.youtube.com/watch?v=Z6YLTBbdT3A (This recording also cover the usage of DeltaDeFi trading bot)\n・Written demo: https://github.com/deltadefi-protocol/sdks-demo/blob/main/trading-bot/docs/user-demonstration.md \n\nLink to final closeout report\n・https://docs.google.com/document/d/1uUIkUTuTW0_5AnIRAW3l5sgcaGOerPmq3p0z6YCuZZM/edit?tab=t.0\n\nLink to final closeout video\n・https://youtu.be/4_cssVdBd2w",
+      "kinds": [
+        "code",
+        "doc",
+        "video"
+      ],
+      "links": 8
+    }
+  ]
+}

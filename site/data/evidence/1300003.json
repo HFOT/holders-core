@@ -1,0 +1,47 @@
+{
+  "title": "[BBO] Virtual Assistant GovernCardanoBot = AI + Telegram - A tool to help you better understand Cardano Governance",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 19875,
+      "promise": "・Research and prepare tools: research the project implementation steps and provide an accurate roadmap. Provide options for choosing an AI training model and a system operation flow diagram.\n・Collect and process data on Cardano governance from Govtools, Intersect sources: Documents such as the Cardano Constitution, CIP 1694, concepts in Cardano governance ...",
+      "criteria": "・Project roadmap analysis table from chatbot development, integration into Telegram and deployment of chat bot with each work item along with expected time and necessary descriptions of each work.\n・System operation flow chart and criteria for selecting chatbot training model\n・Synthesis of processed data sources, filtering and extracting data into sentences (text files)",
+      "report": "Dear MR members, below are the results of the project's milestone 1.\n・Project implementation roadmap analysis file: https://docs.google.com/spreadsheets/d/1DfAFGHYa9qh2EwagEsfpADBVqSa0fq-MkebXPwOINKE/edit?usp=sharing\n・Link to system operation flow diagram and criteria for selecting chat bot training model: https://docs.google.com/document/d/1OqJxpFksisHeOqVy5XEskYwyNq3rFIrMD3IvV-mQH0k/edit?usp=sharing\n・Link to processed data (by data scraping method): https://drive.google.com/drive/folders/1OXjDoN-Lz_V_VcahfIaxHUznQdJYz1S7?usp=drive_link",
+      "kinds": [
+        "doc"
+      ],
+      "links": 6
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 19875,
+      "promise": "・Build AI chatbot from processed data including: filtered data and trained data\n・Refine data, improve accuracy\n・Integrate into Telegram as a chat bot. Improve the chat bot's UI by adding logo, background, font, icon\n・Test and improve - by 5 members as researchers, testers, developers along with a minimum of 15 community members participating in testing the chat bot",
+      "criteria": "・Complete training and build a chatbot that can respond to questions\n・Complete data refinement, improve accuracy to ensure all listed accuracy and loss metrics are fully documented and meet acceptable thresholds from the intended metrics to be measured such as Goodfitting of Training and validation dataset, BLEU (Bilingual Evaluation Understudy), Sequence Loss (CTC Loss) and redundancy measures such as ROUGE, METEOR, Cross-Entropy Loss, Mean Squared Error (MSE) or Mean Absolute Error (MAE)\n・The Telegram chat bot interface is clearly presented, without any formatting errors\n・Document the testin",
+      "report": "Dear MR members, below are the results of the project's milestone 2. (2)\n・Video presents AI training model and simulates operating mechanism:\n\nhttps://drive.google.com/file/d/1nijBOrt4vdUgUReBWE0K2nYSl9AYtpPj/view?usp=sharing\n・Documents reporting progress on data refinement and accuracy improvements:\n\nhttps://bbo.gitbook.io/bbo_technical_documentation/model-evaluation-report\n・Link to chatbot on Telegram\n\nhttps://t.me/GovernCardanoBot\n・Link to testing and improvement progress report\n\nhttps://bbo.gitbook.io/bbo_technical_documentation/testing-demo\n・Link to Github\n\nhttps://github.com/ADA-BAMBOO/AI_CHATBOT\nhttps://github.com/ADA-BAMBOO/Interface_ChatbotBBO\nhttps://github.com/ADA-BAMBOO/API_ChatBot_BBO",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 14,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "5",
+      "cost": 26500,
+      "promise": "・Final close-out report\n・Final closeout video\n・Deploy Chatbot on Telegram platform that can operate stably in real environment\n・Create documentation for using the chat bot\n・Github to open source the project\n・Chat bot marketing efforts across multiple platforms, which may include:\n\n・Telegram: Cardano ECO Talk\n・X: Bamboo Labs\n・Facebook: Cardano News - ADA Bamboo\n・Cardano communities such as Asia, LATAM, SWARM, Intersect...",
+      "criteria": "・Final closeout report is publicly available\n・Final closeout video is publicly available\n・Telegram chatbot works stably, no problems when using chatbot, answers are sent within 5 - 20 seconds depending on the difficulty of the question, uses multiple users simultaneously and is always online\n・Documentation on how to use the chat bot ensures clear and easy-to-understand presentation for viewers\n・Github open source project and code contribution to the Cardano developer community\n・Proof of marketing efforts to the Cardano community. Guaranteed minimum 2k views, 200 interactions",
+      "report": "Dear MR members, below are the results of the project's milestone 3.\n・Link to final closeout report \n\nhttps://bbo.gitbook.io/bbo_technical_documentation/project-close-out-report\n・Link to final closeout video \n\nhttps://www.youtube.com/watch?v=7sqWE9HXOlA&t=1\n・Link to documentation on how to use the chat bot\n\nhttps://bbo.gitbook.io/bbo_technical_documentation/chatbot-user-guide\n・Link to the project's Github page \n\nCodebase: https://github.com/ADA-BAMBOO/AI_CHATBOT\nInterface: https://github.com/ADA-BAMBOO/Interface_ChatbotBBO\nAPI: https://github.com/ADA-BAMBOO/API_ChatBot_BBO\n・Link to product marketing proof for the Cardano community, Image showing chatbot deployment to users and link to chatbot in action\n\nhttps://docs.google.com/spreadsheets/d/1BOsVR7_M8egCbg714R7IUQmICRko10zMPwdNMgHWbjs/edit?usp=sharing\nhttps://t.me/GovernCardanoBot\n・Proof of AI ChatBot response time results\n\nhttps://drive.google.com/drive/folders/1hROWSD8pNLAIL7BTFWKMSfPDG8yqR4wL?usp=drive_link\n・Proof of user activity\n\nhttps://docs.google.com/document/d/15UkQdHNGjzW3cJmA8DT4cVdndElDPi9Xgajx6TlOKlA/edit?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "social",
+        "video"
+      ],
+      "links": 20
+    }
+  ]
+}

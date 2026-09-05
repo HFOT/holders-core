@@ -1,0 +1,59 @@
+{
+  "title": "Open-Source Vulnerability Scanner for Cardano Smart Contracts",
+  "ms": [
+    {
+      "no": 1,
+      "month": "2",
+      "cost": 27900,
+      "promise": "・Conduct a comprehensive literature & market review on previous studies and existing automated tools for finding bugs in smart contracts on other blockchains.\n・Identify specific requirements and challenges for Smart Contracts on Cardano.\n・Develop a detailed project plan, including timelines, resource allocation, and deliverables.",
+      "criteria": "The final research report covers the important aspects of the Milestone’s outputs, including:\n・Literature & Market Review\n・Proposed solution\n・Project Plan",
+      "report": "We thank the reviewers for the feedback!\nWe have updated the report, adding the timeline and resource allocation to the project plan.\nOriginal PoA submission:\nHere is the research report concluding Milestone 1:\nhttps://drive.google.com/file/d/1N22hh6Md4JlkKQ7qCStzhkUjXNNjawkX/view?usp=sharing\nThe report covers a motivational section, followed by a literature and market research.\nIn the main section, we detail all the individual steps for developing the open-source vulnerability scanner.\nThe report also contains a section on the milestones of this project and a final section including a summary and the scope and limitations.",
+      "kinds": [
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "4",
+      "cost": 27900,
+      "promise": "・Collect a diverse Cardano smart contracts' dataset, including secure and vulnerable examples.\n・Clean and preprocess the dataset, ensuring consistency and quality.\n・Establish a data pipeline for continuous dataset updates and maintenance.\n・Open-source all data and code used to collect and preprocess data.\n・Release a comprehensive documentation of the whole process and the code.",
+      "criteria": "・The curated dataset contains high-quality, processed smart-contract samples sourced from all major open-source GitHub repositories and documentation from which repositories they were sourced. Part of this process is to quantify the available number of contracts.\n・Functioning code for the dataset generation pipeline, including scripts for screening, preprocessing and cleaning of the data has been provided\n・Documentation for the data generation has been distributed",
+      "report": "We have completed the second milestone of the project. The process consists of two main phases:\nPhase 1: Compilation of a Cardano Smart Contract Dataset\nIn the first phase, we compiled a dataset of open-source repositories containing Cardano smart contracts. This dataset is publicly available on GitHub: \nhttps://github.com/unboundedmarket/cardano-smart-contracts\n・The dataset includes 40 smart contract repositories:\n・14 Aiken repositories\n・21 Plutus repositories\n・5 OpShin repositories\n・The repository contains scripts to:\n・Pull the data from all the repositories\n・Update the data\n・Filter the data and report basic statistics\n・The dataset is easily extendable, allowing new repositories to be added\n\nPhase 2: Creation of a Dataset with Smart Contract Vulnerabilities\nBuilding on the first phase, we have created a new dataset with smart contract vulnerabilities. \nThe dataset and all scripts used for processing it are available at: \nhttps://github.com/unboundedmarket/smart-contract-vulnerabilities\nThe repository contains scripts to clean, preprocess, augment, and postprocess the data. \nAdditionally, we have extensively documented the whole process in the README.",
+      "kinds": [
+        "code"
+      ],
+      "links": 2
+    },
+    {
+      "no": 3,
+      "month": "6",
+      "cost": 23250,
+      "promise": "・Select an appropriate pre-trained language model as the foundation for the AI auditing tool.\n・Fine-tune the model on the collected Cardano smart contract dataset.\n・Conduct testing and benchmarking of the model's performance and accuracy.\n・Develop additional scripts and examples, so the community can easily use the model.\n・Write detailed documentation for the code, including instructions on how to set up environments and run the code.",
+      "criteria": "The following artifacts have been generated and made public (Github):\n・hyperparameters and model architecture\n・User-friendly scripts and example workflows for using the model.\n・Logs of hyperparameters, training duration, and computational resources.\n・Performance metrics (accuracy, precision, recall, F1 score) and comparison with baseline models and existing tools (if available).\n・Detailed process documentation, environment setup instructions, and troubleshooting guide.",
+      "report": "We have completed Milestone 3, including fine-tuning and evaluating our model to detect vulnerabilities in Cardano smart contracts.\nEvidence:\n・We have increased the size of our dataset. The new dataset contains 947 smart contracts and is available here: https://github.com/unboundedmarket/smart-contract-vulnerabilities/blob/main/data/postprocessed/postprocessed_good.jsonl\n・The trained model is published on Huggingface: https://huggingface.co/unboundedmarket/vulnerabilities-openllama-3b/tree/main\n・All scripts for data processing, training, and evaluation are available in the GitHub repository: https://github.com/unboundedmarket/smart-contract-vulnerabilities\n・The README in the GitHub repository contains detailed instructions on how to use the code.\n・A report detailing the data collection, model selection, fine-tuning process, hyperparameters, and evaluation results is available here: https://drive.google.com/file/d/1_L0TezkXa7Gw0-Ya0OQ9X5O46iVLDXyn/view?usp=sharing",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "18",
+      "cost": 13950,
+      "promise": "・Final close-out report\n・Final closeout video\n・Engage with the community to gather feedback and suggestions.\n・Iteratively improve the model, scripts, and examples based on feedback.\n・Extensively document changes and updates.",
+      "criteria": "・The final closeout report is publicly available, including feedback received and documentation of any changes or fixes\n・The final closeout video is publicly available\n・Links to announcements on Twitter explaining the project and asking for community feedback.\n・Updates to the model, scripts, and examples are visible in the GitHub repository, where changes are documented and explained in the README.",
+      "report": "A. Output: Final close-out report\nAcceptance criteria: The final closeout report is publicly available, including feedback received and documentation of any changes or fixes\nEvidence: Available here: https://drive.google.com/file/d/1iUYaIBiOUTKAmSRDaQyWEV62Uxg7YBBx/view?usp=drive_link\n\nB. Output: Final close-out video\nAcceptance criteria: The final closeout video is publicly available\nEvidence: Link to video: https://www.youtube.com/watch?v=oBPwNSgYcv8\n\nC. Output: Engage with the community to gather feedback and suggestions.\nAcceptance criteria: Links to announcements on Twitter explaining the project and asking for community feedback.\nEvidence: Links.\n・X Post 1 https://x.com/unboundedmarket/status/1969003181557309899?s=20\n・X Post 2 https://x.com/unboundedmarket/status/1983676362444423195?s=20\n・X Post open-source announcement: https://x.com/unboundedmarket/status/2010855904259031443\n・Feedback Form https://forms.gle/ZNAYB6eD7Fqp2tqh8…\n\nD. Output: Iteratively improve the model, scripts, and examples based on feedback, Extensively document changes and updates.\nAcceptance criteria: Updates to the model, scripts, and examples are visible in the GitHub repository, where changes are documented and explained in the README.\nEvidence: Please see GitHub commit history here: https://github.com/unboundedmarket/smart-contract-vulnerabilities/commits/main/ and link to README (including section about feedback changes here): https://github.com/unboundedmarket/smart-contract-vulnerabilities/blob/main/README.md",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 16
+    }
+  ]
+}

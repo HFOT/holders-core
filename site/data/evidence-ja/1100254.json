@@ -1,0 +1,16 @@
+{
+  "ms": [
+    {
+      "no": 1,
+      "promise": "公開 GitHub repo は、Serpentine Spec で説明する L1 スマートコントラクトのすべてを実装/デモンストレーションする、アイケンのスマートコントラクトコード(プラス最小限のスマートコントラクトテスト)を含むように更新しました.",
+      "criteria": "・スマートコントラクトテストは、指定されたL1スマートコントラクト操作の13分の1の満足なパス機能を示す必要があります.",
+      "report": "このリポジトリの内容をプルする\n・https://github.com/dchambers/serpentine-catalyst\n\nインストールと建物の指示に従ってください。\n・https://github.com/dchambers/serpentine-catalyst#installation\n・https://github.com/dchambers/serpentine-catalyst#building\n\nユニットテストを実行できるようにする必要があります(受諾基準が満たされていることを確認するために、証拠要件) 次のようにします。\npnpmテスト:単位\n\nこれらは、このマイルストーン(M1)に必要な幸せなパステストだけでなく、アイケンを介してテストできるすべての非幸せなパステストも含まれます。\n\nマイルストーンの出力については、スマートコントラクトのコード全体が `lib` と `validators` 内で見つけることができます。\n・https://github.com/dchambers/serpentine-catalyst/tree/main/lib\n・https://github.com/dchambers/serpentine-catalyst/tree/main/validators"
+    },
+    {
+      "no": 2,
+      "promise": "・GitHubリポジトリは、包括的なシナリオベースのテストを含むように更新され、すべての受信可能なシナリオをカバーします。\n・ユーザー数やバリデータが無制限にサポートするために、Merkleツリーを使用するためにL1スマートコントラクトが更新されました.",
+      "criteria": "・ユニットテストのパスは、想像力のある攻撃シナリオで提供されます。\n・ポインタグループ(Merkle tree)の使用を実証するユニットテストを渡すと、非常に多くのユーザーや取引をサポートできます.",
+      "report": "このリポジトリの内容をプルする\n・https://github.com/dchambers/serpentine-catalyst\n\nインストールと建物の指示に従ってください。\n・https://github.com/dchambers/serpentine-catalyst#installation\n・https://github.com/dchambers/serpentine-catalyst#building\n\nその後、関連するテストを実行できるようにする必要があります(受諾基準が満たされていることを確認するために、証拠要件) 次のようにします。\npnpmテスト:単位\npnpmテスト:scenario\npnpmテスト:パフォーマンス\npnpmテスト:統合\n\n詳細はこちら:\n・アイケン(最速テスト)でテストできる全試験カバレッジにユニットテストが使用されます。\n・シナリオテストでは、アイケン内で直接テストを行なうために、全てのシナリオのテストが複雑すぎるため、オンチェーンではなくスカルスでテストされ、可能な限り迅速に実行できるようにするため、\n・パフォーマンステストは、Merkleツリーの実装により、大量のユーザーやトランザクションをサポートし、Scalusを再度使用できるようにしていることが証明されています。\n・インテグレーションテストは、MeshJS で書かれている1つの幸せなパステストです。これは、オンチェーン(`pnpm test:integration:full` 経由)を実行するか、ヤシ DevKit を使用して、より高速かつ利便性(`pnpm test:integration` 経由)を実行できます。\n\nマイルストーンの出力に関しては、Merkle ツリーの修正は `lib` 内で見つけることができます。\n・https://github.com/dchambers/serpentine-catalyst/tree/main/lib"
+    }
+  ]
+}

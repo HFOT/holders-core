@@ -1,0 +1,95 @@
+{
+  "title": "Reach your people - social media and messaging integrations for DAOs and NFT projects",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 39000,
+      "promise": "・Research of existing CIPs for use in this protocol to create the below outputs\n・Architecture Diagram (x1)\n・ADR on implementation language(s) (x1)\n・ADR on first integration (x1)\n・Sequence Diagram for first integration (x1)\n・Public Issue Tracker\n・Public Repository",
+      "criteria": "・Architecture for service components, on-chain components, determine best candidates for on-chain and off-chain aspects are clearly understood from the architecture diagram\n・Sequence diagram explains the flow of messages between publisher, blockchain, our service and the message recipient, for the initial integration implementation\n・An ADR (Architectural Design Record) has been added to the repository outlining the programming language choice(s)\n・An ADR has been added to the repository outlining the first integration that will be built for the protocol (i.e. which messaging app/social media in",
+      "report": "The PoA outputs, (including all details) are outlined and explained in the following Markdown document:\nhttps://gitlab.com/vibrantnet/ryp/-/blob/main/docs/catalyst/fund10-milestone-1.md\nIt is located in the public repository that is part of the required outputs. The context/acceptance criteria and the links to each evidence item can be found in the Results section at the bottom (direct link to Results-section: https://gitlab.com/vibrantnet/ryp/-/blob/main/docs/catalyst/fund10-milestone-1.md#-results)\nThanks to the second reviewer, who caught a discrepancy. The sequence diagram showed the wrong app in the flow, Twitter/X instead of Discord, which was chosen as the first integration. The flow was easily adjusted in its labels, and no other change was required, since both solutions (X/Twitter and Discord) use a standard OAuth2 Authorization Code flow for user authentication and authorization. I also updated the diagram SVG accordingly. The links to the outputs remain the same as the first PoA, since the changes were merged into the main branch.\nAll changes from the previous state are also observed in this merge request: https://gitlab.com/vibrantnet/ryp/-/merge_requests/12/diffs",
+      "kinds": [
+        "code"
+      ],
+      "links": 6,
+      "cut": true
+    },
+    {
+      "no": 2,
+      "month": "3",
+      "cost": 75000,
+      "promise": "・Decision on CIP is documented via ADR in repository\n・If CIP required or recommended, initial version is created\n・Video showing indexer prototype solution on testnet or mainnet\n・Initial version of OpenAPI definition for the services available at this time exists (1 to n, depending on services required at the time)\n・Unit tests for core services available at this time have been written\n・CI pipeline generates all required artifacts",
+      "criteria": "・A decision has been made if writing a CIP is required, or if the documentation and existing standards can be sufficiently used and combined to achieve the desired outcomes.\n・If a CIP is recommended/required, the initial proposal exists as a branch of a CIP repository fork (https://github.com/cardano-foundation/CIPs)\n・Initial API definition for interacting with the service(s) defined and can be used with those services that have a working version\n・Docker images and tests exist and are created/run as part of a CI pipeline",
+      "report": "Indexing Video\nA YouTube video link that showcases the on-chain indexing solution, including a prototype site to interact with the verification service can be found below. Indexing for CIP-0066 verification can be done via Cardano DB sync (default) or Blockfrost (also shown in video):\nhttps://youtu.be/g2G-_nJnxMs\nThe video shows the creation of an IAMX DID with Twitter social media verification, the minting of a new policy on the preview network and creation of the corresponding DID NFT token. The scripts to mint these tokens are provided here: https://gitlab.com/vibrantnet/ryp/-/tree/main/example/scripts and can be run on any Linux server that has a bash shell and a working cardano-node and cardano-cli installed (8.1.2 or newer). The prototype site interacts with the preview network and is found here: https://ryp.vibrantnet.io\nUnit Tests\nUnit test report shows 93%+ coverage at the time of submission and can be publicly viewed at any time here: https://sonarcloud.io/summary/overall?id=vibrantnet_ryp\nDocker Images\nThe following docker images are built as part of the pipeline and publicly available:\nhttps://gitlab.com/vibrantnet/ryp/container_registry/5912472 (Verification)\nhttps://gitlab.com/vibrantnet/ryp/container_registry/5912544 (Publishing)\nhttps://gitlab.com/vibrantnet/ryp/container_registry/5912538 (Subscription)\nTogether with the documentation provided in the repository, they can be used by anyone to use the current version of the core services. The services, their required environment variables and docker images are also referenced in the docker-compose.yml file that can be used to quickly spin up RYP: https://gitlab.com/vibrantnet/ryp/-/blob/main/docker-compose.yml?ref_type=heads\nCIP Decision\nThe decision on if a CIP should be written at this time was made after research and consulting with current CIP editor Adam Dean. The decision is that no CIP is recommended currently, and its reasoning is outlined here: https://gitlab.com/vibrantnet/ryp/-/blob/main/doc",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 23,
+      "cut": true
+    },
+    {
+      "no": 3,
+      "month": "4",
+      "cost": 39000,
+      "promise": "・Metadata model and samples documented via ADR and if needed via OpenAPI definitions\n・First integration (i.e. service that provides messaging to end user) is documented via ADR\n・Sample website that allows wallet integration AND the ability to provide either connection information or an authentication flow with integration service exists",
+      "criteria": "・The model that is used to describe activities/postings that projects submit to the service etc. is sufficiently described and samples provided - this may include ADRs and improved OpenAPI definitions (this is mostly a research and documentation task)\n・A decision was made on which service will provide the first broadcast messages (Discord, Twitter, Text messages etc.) Note: A service might be in development but no running prototype that actually sends out notifications is required at this time. Instead, a sample website should exist that showcases connectivity (authentication flow via OAuth fo",
+      "report": "Sample Website\nThe existing sample website from milestone 2 was extended to include social media login capabilities and wallet connection capabilities, as well as linking/unlinking accounts. It does not yet use persistent storage (so if you test, it could be gone the next day), as documented in the AC.\nA video was recorded to better explain the capabilities matching the current status and required evidence for this milestone: https://youtu.be/BBYawlh6_ag\nThe website code is available in the main repository at https://gitlab.com/vibrantnet/ryp/-/tree/main/example/demo-site\nThe live website is at https://ryp.vibrantnet.io\nMessaging Service Decision\nThe messaging service decision was made previously already and is documented here, including alternatives that were investigated as well as pros and cons: https://gitlab.com/vibrantnet/ryp/-/blob/main/docs/decisions/0002-first-messaging-integration-discord.md\nMetadata Model\nThe decision on which metadata model will be used for publishing was the main focus of research for the past weeks and is sufficiently documented in ADR-0005: https://gitlab.com/vibrantnet/ryp/-/blob/main/docs/decisions/0005-announcement-metadata.md\nThe ADR contains sample announcements for two use cases, and in addition, the API documentation for the publishing service was augmented with the JSON structure that will be required for submitting announcements: https://gitlab.com/vibrantnet/ryp/-/blob/main/docs/api/core-publishing-service.yaml\nThe end users will likely not have to build these structures themselves, unless they publish from an external source via REST API, and instead will be able to use a UI to build out their announcement for the various media and use cases.",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 12,
+      "cut": true
+    },
+    {
+      "no": 4,
+      "month": "5",
+      "cost": 39000,
+      "promise": "・A video showcasing a user connecting their wallet and integration information, followed by an authentication flow for a project, and the project sending an announcement as well as the user receiving it on their expected channel exists",
+      "criteria": "・At this point the project should have fully working prototype that can be showcased",
+      "report": "In Milestone 4, a lot of capabilities and UI was added to the project. Primarily, a complete user interface and flow for both project and subscription management as well as wallet configuration was added. The backend services were enhanced with ancillary services like Redis for caching and RabbitMQ as the core queueing solution documented in milestone 1.\nIn addition, all three services were actively developed to be able to query individual and project-wide wallet information, publish to a queue for each integration based on subscription information, support explicit subscription and blocking, add projects and verify announcements can only be sent by verified CIP-0066 identities. In addition the first integration service was created and sends verified announcements to valid Discord subscribers.\nThe frontend and what it means to use these capabilities in the role of a publisher and subscriber is outlined in this 12 minute User Journey Video:\nhttps://www.youtube.com/watch?v=BXoaME4KzvY\nAll relevant code mentioned above has been pushed to the repository at https://gitlab.com/vibrantnet/ryp\nInstructions on how to build the tool and use it locally have been added and the demo in the video was performed live on https://ryp.vibrantnet.io\nPersistence is still not implemented for the subscription service, so any subscriptions, registered accounts or wallets disappear when the service is restarted. This is intentional to simplify testing and resetting and will change for milestone 5.",
+      "kinds": [
+        "code",
+        "other",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 5,
+      "month": "7",
+      "cost": 75000,
+      "promise": "Technical\n・At least one additional integration service exists and is showcased in a video (same style as milestone 4)\n・Second integration decision has been documented as ADR\n・The first Integration is available on the public vibrantnet.io site and usable by select projects and end users on mainnet\n・JavaScript/TypeScript API SDK for interaction with the services published to npm package manager\n\nMarketing\n・10 DAOs, NFT or other projects have been invited to participate in a beta test\n・5 Infographics have been created showing use cases and implementation details\n・30 or more Tweets from the Vibrant Twitter account outlining the project\n・1 Reddit post describing the solution and inviting end users to test",
+      "criteria": "・Now that the verification, authentication and publishing flows are working, a public integration is required to get users to leverage the solution. For this, the first integration should be usable on the Vibrant (prev. HAZELnet) platform\n・To prove the modularity of the approach, a second integration is built.\n・Awareness generation commences on social media on at least two platforms\n・To simplify integration from websites and other automated systems, at least one API SDK is made publicly available.",
+      "report": "30+ Tweet links\n・https://twitter.com/VibrantNet_io/status/1784526998926176673\n・https://twitter.com/VibrantNet_io/status/1785264836177432642\n・https://twitter.com/VibrantNet_io/status/1785416103365316674\n・https://twitter.com/VibrantNet_io/status/1785705593304662144\n・https://twitter.com/VibrantNet_io/status/1786063674492534858\n・https://twitter.com/VibrantNet_io/status/1786432321773768829\n・https://twitter.com/VibrantNet_io/status/1786586870186729473\n・https://twitter.com/VibrantNet_io/status/1787174973880344932\n・https://twitter.com/VibrantNet_io/status/1787524766276231602\n・https://twitter.com/VibrantNet_io/status/1788085011327115326\n・https://twitter.com/VibrantNet_io/status/1788401305578619329\n・https://twitter.com/VibrantNet_io/status/1788698965833048217\n・https://twitter.com/VibrantNet_io/status/1788995707300638817\n・https://twitter.com/VibrantNet_io/status/1789344439187787950\n・https://twitter.com/VibrantNet_io/status/1789706675915555281\n・https://twitter.com/VibrantNet_io/status/1789790416277000225\n・https://twitter.com/VibrantNet_io/status/1790070182133510536\n・https://twitter.com/VibrantNet_io/status/1790431283291779376\n・https://twitter.com/VibrantNet_io/status/1790771901998268460\n・https://twitter.com/VibrantNet_io/status/1791211511924326481\n・https://twitter.com/VibrantNet_io/status/1791336265780211794\n・https://twitter.com/VibrantNet_io/status/1791589192415523289\n・https://twitter.com/VibrantNet_io/status/1792703885834138090\n・https://twitter.com/VibrantNet_io/status/1792932995919221198\n・https://twitter.com/VibrantNet_io/status/1793678315318087725\n・https://twitter.com/vibrantnet_io/status/1794169336208453724\n・https://twitter.com/VibrantNet_io/status/1794373833430012140\n・https://twitter.com/VibrantNet_io/status/1794783159122542743\n・https://twitter.com/VibrantNet_io/status/1795095984810176846\n・https://twitter.com/VibrantNet_io/status/1795656740807327913\n・https://twitter.com/VibrantNet_io/status/1798521987733807503\n・https://twitter.com/VibrantNet_io/status/1798916347294048709",
+      "kinds": [
+        "code",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 85,
+      "cut": true
+    },
+    {
+      "no": 6,
+      "month": "8",
+      "cost": 48000,
+      "promise": "・API Documentation is completed and available in repository\n・All critical bugs/issues reported via the public issue tracker are resolved\n・Containerized Deployment Documentation is completed and available in repository\n・Unit Test coverage is kept up\n・SAST Coverage report available\n・Vulnerability Report available for all supported languages/package managers and shows no High or Critical (following CVSS 3.0 scoring mechanism)\n・Testimonials by at least 3 projects that have used the Vibrant beta version of the solution have been received and publicly shared\n・30 or more Tweets from the Vibrant Twitter account outlining the project",
+      "criteria": "・As the project comes to a close, code quality and safety should be evaluated before calling it secure to use. Among others, test coverage, SAST (Static Application Security Testing) and vulnerability check should be in place as part of the normal development life cycle and continuous integration\n・Social media coverage should continue to generate awareness\n・Testimonials from projects that have used the project can be shared with the community to prove value of the solution\n・The project should not have any major gaps, and as such any publicly or internally reported issues that are not created w",
+      "report": "Tweets\n\n・https://twitter.com/VibrantNet_io/status/1809725245588402263\n・https://twitter.com/VibrantNet_io/status/1809389886098870710\n・https://twitter.com/VibrantNet_io/status/1808915961325760815\n・https://twitter.com/VibrantNet_io/status/1809906707805684079\n・https://twitter.com/VibrantNet_io/status/1810042854980583710\n・https://twitter.com/VibrantNet_io/status/1810346992658534721\n・https://twitter.com/VibrantNet_io/status/1810758045284303047\n・https://twitter.com/VibrantNet_io/status/1811570430865772688\n・https://twitter.com/VibrantNet_io/status/1817203716094877895\n・https://twitter.com/VibrantNet_io/status/1817557897527660660\n・https://twitter.com/VibrantNet_io/status/1819881020910674194\n・https://twitter.com/VibrantNet_io/status/1820171657321099670\n・https://twitter.com/VibrantNet_io/status/1821597911362498901\n・https://twitter.com/VibrantNet_io/status/1821779681701745104\n・https://twitter.com/VibrantNet_io/status/1821856951283937531\n・https://twitter.com/VibrantNet_io/status/1821917852972327087\n・https://twitter.com/VibrantNet_io/status/1821963150700257386\n・https://twitter.com/VibrantNet_io/status/1822016502608097359\n・https://twitter.com/VibrantNet_io/status/1822077403507667062\n・https://twitter.com/VibrantNet_io/status/1822144848134312005\n・https://twitter.com/VibrantNet_io/status/1822236200176058624\n・https://twitter.com/VibrantNet_io/status/1822279233533554765\n・https://twitter.com/VibrantNet_io/status/1822345419470315903\n・https://twitter.com/VibrantNet_io/status/1822406321146413323\n・https://twitter.com/VibrantNet_io/status/1822495408100413486 \n・https://twitter.com/VibrantNet_io/status/1822571408893104612\n・https://twitter.com/VibrantNet_io/status/1822637091521434070\n・https://twitter.com/VibrantNet_io/status/1822714854198939955\n・https://twitter.com/VibrantNet_io/status/1822791358362583125\n・https://twitter.com/VibrantNet_io/status/1822837916646953264\n\nInfographics\nThe remaining two infographics were shared here:\n・https://twitter.com/VibrantNet_io/status/1817557897527660660\n・https",
+      "kinds": [
+        "code",
+        "doc",
+        "other",
+        "social",
+        "video"
+      ],
+      "links": 90,
+      "cut": true
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "title": "Cexplorer.io: Advanced DRep & SPO analytics",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 30000,
+      "promise": "• Top DReps by stake\n• Top DReps by own stake\n• Number of blocks minted/missed by top SPOs per epoch\n• Number of votes cast/abstained/missed by top DReps at all times (governance participation)\n• Top abstained/missed DReps (and their stake) at all times\n• Top SPOs who missed the most slots per epoch/at all times\n• Top DReps by the number of delegators\n• Top DReps by biggest single delegation\n• Top delegations of minting and voting power\n• Top pools by biggest single delegation\n• Top DReps/pools by the highest average stake\n• Distribution of stake by margin/fixed reward/both",
+      "criteria": "・All analytic data listed in the outputs are publicly viewable on Cexplorer.io (pre-prod or preview instance as minimum)\n・Announcement on Cexplorer's official X account",
+      "report": "・Link to Cexplorer instances where the features can be publicly viewed: Login: cex Password: thisissocool\n\n Most features are available in the POOL LIST, the DREP LIST, or the ANALYTICS menu. For simpler navigation, some features:\n • Top DReps by stake\n https://preprod-stage.cexplorer.io/drep?sort=desc&order=power\n • Top DReps by own stake\n https://preprod-stage.cexplorer.io/drep?sort=desc&order=own\n • Number of blocks minted/missed by top SPOs per epoch\n https://preprod-stage.cexplorer.io/analytics/pool?tab=pool_issues\n • Number of votes cast/abstained/missed by top DReps at all times (governance participation) available for all DReps in detail\n https://preprod-stage.cexplorer.io/drep/drep1yle2vhc5g0de4rr2k739f8taxj5e66cq5ypv78w8xh7sgv0x0lu\n • Top abstained/missed DReps (and their stake) at all times available for all DReps in detail\n https://preprod-stage.cexplorer.io/drep/drep1yle2vhc5g0de4rr2k739f8taxj5e66cq5ypv78w8xh7sgv0x0lu\n • Top DReps by the number of delegators\n https://preprod-stage.cexplorer.io/drep?sort=desc&order=delegator\n • Top delegations of minting and voting power\n https://preprod-stage.cexplorer.io/analytics/account?tab=top_addresses\n • Top pools by the biggest single delegation\n https://preprod-stage.cexplorer.io/analytics/account?tab=top_staking_accounts\n • Top DReps/pools by the highest average stake\n https://preprod-stage.cexplorer.io/pool?sort=desc&order=average_stake\n https://preprod-stage.cexplorer.io/drep?sort=desc&order=average_stake\n\n2. Link to X post where the new features were announced.",
+      "kinds": [
+        "chain",
+        "social"
+      ],
+      "links": 12
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 30000,
+      "promise": "• Top margins with the largest number of delegators and stake\n• Distribution of stake by pledge\n• Average number of delegators per all pools/DReps\n• Average stake per all pools/DReps\n• List of SPOs that are also DReps\n• List of SPOs that are not DReps\n• List of DReps that are not SPOs\n• Voting power (%) of DReps that are SPOs at the same time.\n• Top SPOs that are also DReps\n• Top SPOs that are not DReps\n• Top DReps that are not SPOs\n• List of delegators that delegate to the same entity in the role of SPO and DRep",
+      "criteria": "・All analytic data listed in the outputs are publicly viewable on Cexplorer.io (pre-prod or preview instance as minimum)\n・Announcement on Cexplorer's official X account",
+      "report": "Link to Cexplorer instances where the features can be publicly viewed: Login: cex Password: thisissocool\nX post announcing the new features\n\n• Top margins with the largest number of delegators and stake\nhttps://preprod-stage.cexplorer.io/pool?order=top_margins_with_delegators\n\n• Distribution of stake by pledge\nhttps://preprod-stage.cexplorer.io/pool?sort=desc&order=average_stake\n\n• Average number of delegators per all pools/DReps\nhttps://preprod-stage.cexplorer.io/analytics/pool?tab=average_pools\nhttps://preprod-stage.cexplorer.io/drep?tab=analytics\n\n• Average stake per all pools/DReps\nhttps://preprod-stage.cexplorer.io/analytics/pool?tab=average_pools\nhttps://preprod-stage.cexplorer.io/drep?tab=analytics\n\n• List of SPOs that are also DReps\nhttps://preprod-stage.cexplorer.io/pool?is_drep=1\n\n• List of SPOs that are not DReps\nhttps://preprod-stage.cexplorer.io/pool?is_drep=2\n\n• List of DReps that are not SPOs\nhttps://preprod-stage.cexplorer.io/drep?is_drep=1\n\n• List of DReps that are SPOs\nhttps://preprod-stage.cexplorer.io/drep?is_drep=1\n\n• Voting power (%) of DReps that are SPOs at the same time.\nhttps://preprod-stage.cexplorer.io/drep?tab=analytics",
+      "kinds": [
+        "chain",
+        "social"
+      ],
+      "links": 13
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 25000,
+      "promise": "• List of delegators that prefer delegating to different entities\n• Stake delegated to DReps that are not SPOs\n• Stake delegated to SPOs that are not DReps\n• Stake delegated to entities that are both SPOs and DReps\n• Number of delegators that change the delegation of minting and voting power per epoch\n• Stake that changes delegation of minting and voting power per epoch/epochs\n• Rich list changes per epoch\n• Number of DReps (regardless of the SPO role) with 50%/60%/70%/80% voting dominance in Active Voting Stake\n• Number of DReps that are also SPOs and have 50%/60%/70%/80% voting dominance in Active Voting Stake.\n• Number of DReps (who are not SPOs) with 50%/60%/70%/80% voting dominance in Active Voting Stake\n• Number of SPOs/groups with 50% dominance in block production (Nakamoto) and the number of delegators\n• Stake delegated to retired DReps and the number of such delegators",
+      "criteria": "・All analytic data listed in the outputs are publicly viewable on Cexplorer.io (pre-prod or preview instance as minimum)\n・Announcement on Cexplorer's official X account",
+      "report": "Staging environment \nLogin: cex \nPassword: thisissocool\nX post showing the progress to the community \n\n• List of delegators that prefer delegating to different entities\nhttps://preprod-stage.cexplorer.io/live-delegations \n• Stake delegated to DReps that are not SPOs\nhttps://preprod-stage.cexplorer.io/drep?spo=NO \n• Stake delegated to SPOs that are not DReps\nhttps://preprod-stage.cexplorer.io/pool?is_drep=2 \n• Stake delegated to entities that are both SPOs and DReps\nhttps://preprod-stage.cexplorer.io/pool?is_drep=1\nhttps://preprod-stage.cexplorer.io/drep?spo=YES\n• Number of delegators that change the delegation of minting and voting power per epoch\nhttps://preprod-stage.cexplorer.io/drep?tab=analytics \n• Stake that changes delegation of voting power\nhttps://preprod-stage.cexplorer.io/drep?tab=analytics \n• Rich list changes per epoch\nhttps://preprod-stage.cexplorer.io/analytics/account?tab=top_staking_accounts \nhttps://preprod-stage.cexplorer.io/analytics/account?tab=top_addresses \n• Number of DReps (regardless of the SPO role) with 50%/60%/70%/80% voting dominance in Active Voting Stake\nhttps://preprod-stage.cexplorer.io/drep?sort=desc&order=power \n• Number of DReps that are also SPOs and have 50%/60%/70%/80% voting dominance in Active Voting Stake.\nhttps://preprod-stage.cexplorer.io/drep?sort=desc&order=power&spo=YES \n• Number of DReps (who are not SPOs) with 50%/60%/70%/80% voting dominance in Active Voting Stake\nhttps://preprod-stage.cexplorer.io/drep?sort=desc&order=power&spo=NO \n• Number of SPOs/groups with 50% dominance in block production (Nakamoto) and the number of delegators\nhttps://preprod-stage.cexplorer.io/gov/power-thresholds \n• Stake delegated to retired DReps and the number of such delegators\nhttps://preprod-stage.cexplorer.io/drep/deregistrations",
+      "kinds": [
+        "chain",
+        "social"
+      ],
+      "links": 30
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 15000,
+      "promise": "・All outputs from the previous milestones are concluded and live on Mainnet\n・Final close-out report\n・Final closeout video",
+      "criteria": "・Delivered outputs are on Mainnet and bug-free\n・The final closeout report is publicly available\n・The final closeout video is publicly available",
+      "report": "Final Milestone summarizing all outputs delivered during the project:\n\nDelivered outputs are on mainnet and bug-free:\nhttps://beta.cexplorer.io/\n\nThe final closeout report is publicly available:\nhttps://docs.google.com/document/d/1Y4Uymj_D05rqKretfzkExW3p3v2cPkMOEgPGmlwmcPg\n\nThe final closeout video is publicly available:\nhttps://vimeo.com/1102213273",
+      "kinds": [
+        "chain",
+        "doc",
+        "video"
+      ],
+      "links": 6
+    }
+  ]
+}

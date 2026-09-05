@@ -1,0 +1,68 @@
+{
+  "title": "Open-source Hydra Head L2 Web based Explorer and API",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 40000,
+      "promise": "Detailed initial design documentation for the Hydra Head L2 Web Explorer.",
+      "criteria": "Documentation is well-structured describing all planned inner workings in detail. The documentation describes the current architecture of the Hydra Head, the current way of viewing the different scenarios happening inside the Hydra Head, and why it is not very convenient for developers. The documentation describes different scenarios that can happen inside a Hydra Head and it describes how the proposed Hydra Head L2 Explorer will support them.",
+      "report": "Please see below the updated evidence as per the approved change request:\n* Hydra overview document:\nhttps://github.com/WingRiders/hydra-explorer/blob/master/HydraArchitecture.md\n* Technical document\nhttps://github.com/WingRiders/hydra-explorer/blob/master/README.md\n* Postman:\nhttps://github.com/WingRiders/hydra-explorer/tree/master/img\n﻿* SQLite Hydra Log file:\nhttps://github.com/WingRiders/hydra-explorer/blob/master/priv/repo/test.dev.sqlite3",
+      "kinds": [
+        "code"
+      ],
+      "links": 8
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 54000,
+      "promise": "・L2 Explorer API code.\n・Unit test for all API endpoints",
+      "criteria": "・L2 Explorer API works without any major issues and is available to be used by any Hydra developer.\n・Unit tests cover all API endpoints and use mocked data.",
+      "report": "Dear reviewer, \nWe completed the actual code and testing for M1, M2 and M3 at the same time, long before we could submit the evidence for M2 as M1 review took a month plus there was a change request; hence, there will not be visible changes in the PoA submission evidence which is the final output file.\nIt would help if you looked at the initial code implementation, tests carried out, and final code (not diff between PoA). There's the code and docs that were written before the last few commits which are the milestone's evidence and substance.\nRegarding your comment: Please explain anything behind the scenes that you think a standard open-source project coding should, or at least a new Cardano coder knows where to start to replicate API code and end API endpointsThis is not in scope of this Milestone. Video was to showcase code is working. Guideline is to be delivered in M4.\nSO looking at the outputs and evidence requested for Milestone 2, all is summarized below:\nRepository: https://github.com/WingRiders/hydra-explorer\nInstructions how to run the api server locally: https://github.com/WingRiders/hydra-explorer/blob/master/README.md#running-the-application\nInstructions how to run the unit tests: https://github.com/WingRiders/hydra-explorer/blob/master/README.md#running-tests\nThe video to illustrate that L2 Explorer API works without any major issues: https://www.youtube.com/watch?v=2BLCXdHjWrw\nThe video link is also present in https://github.com/WingRiders/hydra-explorer/blob/master/API.md",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 10
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 50000,
+      "promise": "Functional L2 Web Explorer code.",
+      "criteria": "L2 Web Explorer works without any major issues and is available to be used by any Hydra developer. The explorer is showing all important data and actions that are happening inside the connected Hydra head.",
+      "report": "Repository: https://github.com/WingRiders/hydra-explorer\nInstructions how to run the application locally and verify that it works: https://github.com/WingRiders/hydra-explorer/blob/master/README.md#running-the-application\nScreencast: https://youtu.be/R2u9GtzJ1Y8",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 6
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 9000,
+      "promise": "・API documentation.\n・Developer and setup guides, including FAQs and troubleshooting information",
+      "criteria": "・API documentation describes all API endpoints, their parameters, and results.\n・Developer guides cover all aspects of the tool's setup and configuration, including a manual for developers using this tool and a troubleshooting guide that describes solution to at least 3 most common mistakes. Guides include answers to at least 5 frequently asked questions about Hydra Head L2 Web Explorer.",
+      "report": "1. API documentation: https://github.com/WingRiders/hydra-explorer/blob/master/API.md\n2. The README.md covers information about how to get info on setting up the node, and gives instructions on how to run the Hydra explorer application itself, it also describes the available endpoints that can be queried externally through the exposed HTTP API, the API.md goes into more detail about what each of the endpoints returns, and gives direction on how to get even more info about the meaning of the returned values.\nReadme: https://github.com/WingRiders/hydra-explorer/blob/master/README.md\nThe FAQ covers any general questions users might have about the application, what it provides, and its intended usage.\nFAQ: https://github.com/WingRiders/hydra-explorer/blob/master/FAQ.md\nThe troubleshooting document describes the most common problems that might arise when running the application and gives advice on what to do if any error uncovered by the guide was encountered.\nTroubleshooting: https://github.com/WingRiders/hydra-explorer/blob/master/TROUBLESHOOTING.md",
+      "kinds": [
+        "code"
+      ],
+      "links": 8
+    },
+    {
+      "no": 5,
+      "month": "5",
+      "cost": 27000,
+      "promise": "・A detailed final report documenting the project's journey, challenges, solutions, and benefits.\n・Video showcasing the Hydra Head L2 Web Explorer usage, complete with voiceover narration.",
+      "criteria": "・Final report documents the project’s journey, challenges, solutions, and benefits. Video effectively showcases the project is easy to set up and handy.\n・Video showcases all major features of the Hydra Head L2 Web Explorer and how to use them.",
+      "report": "Final Project Completion Report\nClose-out Video (YouTube)\nFor additional reference, you can find the project repository and documentation here:\n・GitHub Repository: https://github.com/WingRiders/hydra-explorer\n・API Documentation: https://github.com/WingRiders/hydra-explorer/blob/master/API.md\n・Developer Setup Guide: https://github.com/WingRiders/hydra-explorer/blob/master/README.md\n・FAQ & Troubleshooting Guide: https://github.com/WingRiders/hydra-explorer/blob/master/FAQ.md\n・Troubleshooting Guide: https://github.com/WingRiders/hydra-explorer/blob/master/TROUBLESHOOTING.md",
+      "kinds": [
+        "code",
+        "video"
+      ],
+      "links": 12
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "title": "Open-source for Hydra Wallet integrated into Telegram",
+  "ms": [
+    {
+      "no": 1,
+      "month": "1",
+      "cost": 26666,
+      "promise": "・Conduct a comprehensive analysis of technical requirements and potential strategies for developing the Hydra wallet and integrating it with Telegram.\n・Configure a version control system and collaboration tools.\n・Create an initial project structure and repository.",
+      "criteria": "・Completion of system analysis and identification of work packages for implementation of the proposal.\n・Initial repository.",
+      "report": "Evidence of milestone completion\n・System Analysis File.\n・Github Link.",
+      "kinds": [
+        "code",
+        "doc"
+      ],
+      "links": 2
+    },
+    {
+      "no": 2,
+      "month": "2",
+      "cost": 36000,
+      "promise": "・Wallet's functional UI/UX interface\n・Connect to the Cardano network\n\nDevelop features:\n・Generate ADA wallet address.\n・Enter wallet from private key or mnemonic phrase.\n・Send and receive ADA\n・Send and receive tokens\n・Send and receive NFTs\n・Transaction history",
+      "criteria": "・Complete UI/UX design interface set\n・Develop complete alpha functionality",
+      "report": "・Hydra wallet source code Github link: https://github.com/Cantek-Network/hydra-wallet-vue/tree/master \n・Alpha version website: https://alpha.hydrawallet.net/auth\n\nUser manual: https://drive.google.com/file/d/1y6Auq_E5QzdTFflRrlHzlc8W7lYT7Hw0/view?usp=drive_link",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 6
+    },
+    {
+      "no": 3,
+      "month": "3",
+      "cost": 40000,
+      "promise": "・Research and integrate Hydra APIs/SDKs\n・Connect wallet to Hydra node\n・Initialize Hydra head\n・Send and receive ADA in Hydra head\n・Monitor and update Hydra head status\n・Close Hydra head",
+      "criteria": "・Complete backend development\n・Complete development of wallet features",
+      "report": "POA for Milestone 3:\n・Hydra wallet source code Github: https://github.com/Cantek-Network/hydra-wallet-vue/tree/master\n・Beta version website: https://beta.hydrawallet.net: https://beta.hydrawallet.net/hydra/fast-transfer\n・Hydra transfer guide: https://drive.google.com/file/d/1WADQO4VZ3Aa48po-CKmuGMi8WQo3KsfN/view",
+      "kinds": [
+        "code",
+        "doc",
+        "other"
+      ],
+      "links": 4
+    },
+    {
+      "no": 4,
+      "month": "4",
+      "cost": 37000,
+      "promise": "・Use Telegram's Bot API to create and manage bots\n・Telegram Mini App has full wallet features\n・User data will be encrypted using the TLS protocol to ensure safety",
+      "criteria": "・Telegram users (App and Web) through the Mini App can use the features available in the beta version\n・Complete the Unit Testing process for each function such as creating wallets, sending and receiving transactions, etc.\n・Complete encryption of user data using TLS protocol",
+      "report": "POA for Milestone 4:\n・Web application on Telegram: https://t.me/HydraDemo_bot/HydraWallet\n・Hydra wallet source code Github: https://github.com/Cantek-Network\n・Unit test documentation for each function: https://docs.google.com/spreadsheets/d/1CV2eALYvh8iV4rgOoC8eDMZh1Zc-j1R-/edit?usp=sharing&ouid=118195060135700240829&rtpof=true&sd=true\n・Guide: https://drive.google.com/file/d/1MKk8jlN_zgeBXmZPZuCest_mzT8BAwck/view",
+      "kinds": [
+        "code",
+        "doc",
+        "social"
+      ],
+      "links": 4
+    }
+  ]
+}
