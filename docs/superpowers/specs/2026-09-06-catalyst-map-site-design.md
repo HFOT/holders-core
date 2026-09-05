@@ -70,56 +70,29 @@ holders CORE の文脈（TIDE・台帳）はリンクで行き来できる状態
 ### ページ
 
 ```
-site/catalyst-map/
-├─ index.html   TOP    読み物本体（後述の14節）
-├─ map.html     地図   地球儀 + 左サイドバー（＝台帳）
-└─ notes.html   記録の質  数が合わない / 事前の評価 / 価値の差 / 国の一覧(97行)
+site/catalyst-map/index.html   TOP（読み物本体）
+site/region.html               地図と記録の質。既存。無改変
 ```
 
-**台帳を独立ページにしない。** いまの実装では台帳＝地図の左サイドバーであり、
-国→人物→プロジェクト→詳細のドリルダウンは地図の選択状態から出来ている
-(`selectedIndexes()` / `personGroups()` / `renderPlist()` / `renderProject()` が
-地図と同じ `state` を共有)。別ページに立てると二重実装になる。
-「人物ランキングだけ見たい」は、地図で国を選ばない状態（＝世界）が既に満たしている。
+地図の母体（region.html / region.js / ask.js / 共用 style.css）を
+一文字も変えないことを最上位の制約に置いたので、
+notes.html は作らない。「記録の質」の5セクションは region.html の
+下段にあるまま、TOP から #sec-gap / #sec-value / #sec-scores /
+#sec-timeline / #sec-list へ直接リンクする。
 
-**編集場所は一つ。** これが構成上の最優先。
+新サイト側に地図の JS が一行も無いので、二つ目の母体が構造的に作れない。
 
-### JS の分割
+### 地図のはめ込み
 
-`region.js`（96KB）を割る。分割線は実装の分割線と一致させる。
+region.js は割らない。MAP_MODE も足さない。母体を変えないため。
 
-```
-map-globe.js   地球儀そのもの。データを知らない。
-               orthographic / globePath / graticulePath / equatorPath /
-               drawGlobe / setView / animateView / zoom 一式 / SPIN
+TOP のヒーローは `<iframe src="../region.html?view=neo">` で
+動いている地図そのものをはめ込む。`?view=neo` は既存の機能
+（region.js:1886 wireFullscreen）で、地図フレームを全画面にする。
+index.html の MAP NEO カードが以前から使っていたもの。
 
-map.js         Catalyst のデータを地球儀に載せる。
-               state / selectedIndexes / personGroups / renderPlist /
-               renderProject / renderSummary / buildMap / evidence / ask
-
-notes.js       下段パネル。数が合わない / Fund の歩み / 価値の差 /
-               事前の評価 / 国の一覧
-```
-
-`map-globe.js` を切るのは Catalyst 単体でも正しい分割（96KB を割る自然な線）。
-将来トレジャリーを載せるときに無駄にならないのは結果であって、
-そのために作るのではない。
-
-### 二つのモード
-
-`map.js` は一つの実装を二通りに呼ぶ。別実装は作らない。
-
-```
-mount(el, { mode: 'full'    })  → map.html
-    地球儀 + 左サイドバー + 計器 + 操作一式
-
-mount(el, { mode: 'display' })  → index.html のヒーロー
-    地球儀だけ。自動回転・掴んで回せる・国を押すと国名と件数が浮く。
-    renderPlist / renderProject を呼ばない。
-```
-
-`display` は `full` の機能を削った状態であって、縮小版の再実装ではない。
-地球儀に手を入れれば両方に効く。
+ヒーローには地図フレーム全体（左サイドバー込み）が出る。
+地球儀だけにするには母体に手を入れる必要があるのでしない。
 
 ### CSS
 
@@ -370,11 +343,10 @@ F9 17.8  F10 13.1  F11 32.6  F12 21.4  F13 12.1  F14 10.2
 
 ## 未決
 
-1. **ページの題** —— `Catalyst Detailed Map` か、日本語主体か、併記か
-2. **青いネオン化を同時にやるか** —— 専用CSSを二度触らずに済むが、
-   変更量が増えて問題の切り分けが難しくなる
-3. **`stale` の実数** —— ⑦ の数字。集計してから文言を確定する
-4. **2026年の記録を今回書くか** —— ⑫。新規の手動記録が要る
+1. ページの題 —— `Catalyst Detailed Map`（英語）。決定済み
+2. 青いネオン化 —— 未決。catalyst-map/style.css だけを触ればできる
+3. stale の実数 —— 測定済み（未完了 313 / 365日超 12 / 記録なし 90）
+4. 2026年の記録 —— ⑫ に実装済み
 
 ---
 

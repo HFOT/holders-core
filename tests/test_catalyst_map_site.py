@@ -66,3 +66,15 @@ def test_map_body_is_untouched():
     for name, want in EXPECTED.items():
         got = digest(SITE / name)
         assert got == want, f"{name} が変わっている（{want} → {got}）"
+
+
+def test_top_does_not_promise_an_unbuilt_treasury_map():
+    src = read("index.html")
+    for bad in ["作っている", "作成中", "近日", "coming soon"]:
+        assert bad not in src, f"作っていないものを約束している: {bad}"
+    assert "トレジャリーにも、同じ場所が要るのではないか" in src
+
+
+def test_holders_core_is_the_entrance():
+    src = (SITE / "index.html").read_text(encoding="utf-8")
+    assert "catalyst-map/" in src, "CORE から Catalyst Map へ入れない"

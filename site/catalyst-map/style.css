@@ -85,3 +85,8 @@ body {
 .cm-steps li { padding: 1.4em 0; border-top: 1px solid var(--cm-line); }
 .cm-steps b { display: block; color: var(--cm-dim); font-size: .9rem; }
 .cm-more { color: var(--cm-fg); }
+
+/* ⑬⑭ 閉じる段 */
+.cm-limit, .cm-close { padding: 20vh 0; border-top: 1px solid var(--cm-line); }
+.cm-limit h2, .cm-close h2 { font-size: clamp(1.5rem, 3.6vw, 2.4rem); margin: 0 0 1.2em; }
+.cm-close { padding-bottom: 30vh; }   /* ここで終わる。他へ誘導しない */
