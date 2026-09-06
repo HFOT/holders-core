@@ -697,3 +697,85 @@ html { scrollbar-width: thin; scrollbar-color: rgba(126,178,255,.26) transparent
   border-radius: 999px;
 }
 ::-webkit-scrollbar-thumb:hover { background: rgba(126,178,255,.44); background-clip: padding-box; }
+
+/* ==========================================================================
+   スマホ
+   ========================================================================== */
+
+@media (max-width: 720px) {
+  :root { --gap: clamp(7vh, 10vh, 13vh); }
+
+  /* 上のバー。題を小さくして、出口のピルを残す。 */
+  .cm-nav { padding: .7rem var(--pad); }
+  .cm-nav-id b { font-size: .82rem; }
+  .cm-nav .cm-pill { padding: .6em 1.05em; font-size: .78rem; }
+
+  /* ヒーロー。主題は縮めすぎない。地球儀は薄くして文字を邪魔させない。 */
+  .cm-hero { padding-top: 6.5rem; }
+  .cm-hero h1 { font-size: clamp(2.2rem, 12vw, 3.4rem); line-height: 1.04; }
+  .cm-globe { width: 118vmin; opacity: .62; }   /* 球が球に見える大きさまで戻す */
+  .cm-kicker { font-size: .6rem; letter-spacing: .2em; }
+  .cm-sub { font-size: 1.05rem; line-height: 1.7; }
+  .cm-record { font-size: .92rem; line-height: 1.95; }
+  .cm-lead { font-size: 1.2rem; }
+  .cm-pill-on { padding: .95em 1.7em; font-size: .88rem; }
+
+  /* 計器は2列。数字は詰めすぎない。 */
+  .cm-meter { padding: 1.1rem .8rem 1.2rem 0; }
+  .cm-meter b { font-size: 1.65rem; }
+
+  /* 大きな数字。折り返せるようにして、はみ出させない。 */
+  .cm-big {
+    font-size: clamp(2rem, 13vw, 3.4rem);
+    letter-spacing: -.035em;
+    overflow-wrap: anywhere;
+  }
+  .cm-big-sub { font-size: .7rem; letter-spacing: .12em; }
+
+  /* 見出しと本文 */
+  .cm-ask h2, .cm-limit h2, .cm-close h2 { font-size: 1.5rem; line-height: 1.5; }
+  .cm-fact h2, .cm-now h2, .cm-show h2 { font-size: 1.15rem; }
+  .cm-ask p, .cm-limit p, .cm-close p { font-size: .97rem; }
+  .cm-note { padding-left: 1rem; font-size: .88rem; }
+
+  /* 面の内側の余白 */
+  .cm-fact .cm-card, .cm-now .cm-card { padding: 1.5rem 1.2rem; }
+
+  /* Fund の帯。横に流す。指で送れることを示す。 */
+  .cm-band { margin-inline: calc(var(--pad) * -1); padding-inline: var(--pad); }
+  .cm-band-row, .cm-band-axis { min-width: 560px; }
+  .cm-band-row { height: 140px; }
+  .cm-band-key { font-size: .72rem; gap: 1rem; }
+
+  /* 現在地 */
+  .cm-steps li { padding: 1.2rem 0; }
+  .cm-steps a { white-space: normal; }
+
+  /* 出典のページ */
+  .cm-doc-head { padding-top: 7rem; }
+  .cm-doc-h1 { font-size: clamp(1.8rem, 9vw, 2.6rem); }
+  .cm-doc-lede { font-size: 1.05rem; }
+  .cm-doc h2 { font-size: 1.35rem; }
+  .cm-calls > li { padding: 1.2rem 1rem; }
+  .cm-calls > li > b { font-size: .98rem; padding-left: 2.2rem; }
+  .cm-calls > li > b::before { left: 1rem; }
+  .cm-src-where { font-size: .84rem; overflow-wrap: anywhere; }
+}
+
+@media (max-width: 420px) {
+  .cm-nav-id span { display: none; }
+  .cm-hero h1 { font-size: 2.05rem; }
+  .cm-meter b { font-size: 1.45rem; }
+}
+
+/* 指で操作する端末。当たり判定の演出は効かないので、触れた瞬間に応える。 */
+@media (hover: none) {
+  .cm-slot .cm-slot-tag { opacity: 1; transform: none; }  /* ラベルは常に出す */
+  .cm-slot:hover img { transform: none; }
+  .cm-pill:active { background: rgba(61,123,255,.18); }
+  .cm-pill-on:active { filter: brightness(1.15); }
+}
+
+@media (max-width: 560px) {
+  .cm-kicker-long { display: none; }   /* 一行に収まらないので前半を落とす */
+}
