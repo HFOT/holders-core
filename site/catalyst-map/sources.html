@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>出典とつくりかた — Catalyst Detailed Map</title>
+<meta name="description" content="どこから取ったか、何を書かないと決めたか、あいまいなところをどう扱ったか。公開情報だけで作っている。">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap">
+<link rel="stylesheet" href="style.css?v=cm-7">
+</head>
+<body>
+
+<nav class="cm-nav">
+  <div class="cm-nav-id">
+    <b><a href="index.html">Catalyst Detailed Map</a></b>
+    <span>Cardano / public data only</span>
+  </div>
+  <div class="cm-nav-links">
+    <a class="cm-nav-hide" href="index.html">TOP</a>
+    <a class="cm-pill" href="../region.html?view=neo">地図をひらく →</a>
+  </div>
+</nav>
+
+<header class="cm-doc-head">
+  <div class="cm-wrap">
+    <p class="cm-kicker">Provenance / rules / known limits</p>
+    <h1 class="cm-doc-h1">出典と、つくりかた</h1>
+    <p class="cm-doc-lede">どこから取ったか。何を書かないと決めたか。<br>
+       あいまいなところを、どう扱ったか。</p>
+    <p class="cm-note">ここに書いていないことは、していない。
+       書いてあることと画面が食い違っていたら、それは欠陥として直す。</p>
+  </div>
+</header>
+
+<!-- 01 公開情報だけ ───────────────────────────── -->
+<section class="cm-doc cm-in">
+  <div class="cm-wrap">
+    <span class="cm-ord">01 <b>／ 前提</b></span>
+    <h2>公開情報だけを見ている</h2>
+    <p>認証の要る場所には入らない。誰でも開けるページと、誰でも叩ける公開エンドポイントだけを読む。
+       ログインの要るデータ、非公開のダッシュボード、関係者から個別に渡された資料は、一つも使っていない。</p>
+    <p>取得したものは加工前の形で手元に残し、集計はそこから毎回作り直せるようにしてある。
+       つまり、ここに出ている数字はすべて、同じ手順をなぞれば他の人が同じものを得られる。</p>
+    <p class="cm-note">個人について、公開されている提案者名・提案内容・報告以外のものは集めていない。
+       連絡先や所在地を推定して補うこともしていない。</p>
+  </div>
+</section>
+
+<!-- 02 どこから取ったか ─────────────────────── -->
+<section class="cm-doc cm-in">
+  <div class="cm-wrap">
+    <span class="cm-ord">02 <b>／ 出典</b></span>
+    <h2>どこから取ったか</h2>
+
+    <div class="cm-src">
+      <div class="cm-src-row">
+        <div class="cm-src-what"><b>台帳</b><span>提案 11,385 件・提案者 5,699 人・投票結果</span></div>
+        <div class="cm-src-where"><a href="https://www.catalystexplorer.com">catalystexplorer.com</a>
+          <code>/api</code></div>
+      </div>
+      <div class="cm-src-row">
+        <div class="cm-src-what"><b>プロジェクト個別</b><span>状態・配分額・タグ・提案者</span></div>
+        <div class="cm-src-where"><a href="https://projectcatalyst.io">projectcatalyst.io</a>
+          <code>/api/v1/graphql</code></div>
+      </div>
+      <div class="cm-src-row">
+        <div class="cm-src-what"><b>国別の集計</b><span>96 の国に現れる 2,317 件</span></div>
+        <div class="cm-src-where"><a href="https://projectcatalyst.io/global-map">projectcatalyst.io/global-map</a></div>
+      </div>
+      <div class="cm-src-row">
+        <div class="cm-src-what"><b>Fund の規模</b><span>用意された額・配分された額</span></div>
+        <div class="cm-src-where"><a href="https://projectcatalyst.io/funds">projectcatalyst.io/funds</a></div>
+      </div>
+      <div class="cm-src-row">
+        <div class="cm-src-what"><b>マイルストーンと完了報告</b><span>提出・承認の履歴、報告書 1,761 件、動画 587 件</span></div>
+        <div class="cm-src-where"><a href="https://milestones.projectcatalyst.io/">milestones.projectcatalyst.io</a>
+          <code>+ 公開 REST</code></div>
+      </div>
+      <div class="cm-src-row">
+        <div class="cm-src-what"><b>国境の形</b><span>地図の描画</span></div>
+        <div class="cm-src-where"><a href="https://www.naturalearthdata.com/">Natural Earth</a>
+          <code>world-atlas</code></div>
+      </div>
+      <div class="cm-src-row">
+        <div class="cm-src-what"><b>ADA の日次価格</b><span>約束された額と受け取った額の差</span></div>
+        <div class="cm-src-where"><a href="https://api.binance.com">Binance</a>
+          <code>/api/v3/klines</code></div>
+      </div>
+      <div class="cm-src-row">
+        <div class="cm-src-what"><b>Fund ごとの日付・状態の判定基準</b><span>手で追われた記録から引き継いだ</span></div>
+        <div class="cm-src-where"><a href="https://hfot.github.io/Catalyst-Japan/">Catalyst Japan</a></div>
+      </div>
+      <div class="cm-src-row">
+        <div class="cm-src-what"><b>訳</b><span>原文は必ず別に残してある</span></div>
+        <div class="cm-src-where"><a href="https://translate.disroot.org/">LibreTranslate</a>
+          <code>disroot</code></div>
+      </div>
+    </div>
+
+    <p class="cm-note">取得した日: 台帳の生成 2026-09-04 ／ プロジェクトの取得 2026-09-05。
+       画面の数字はこの時点のもので、以後に起きたことは入っていない。</p>
+  </div>
+</section>
+
+<!-- 03 決めごと ──────────────────────────────── -->
+<section class="cm-doc cm-in">
+  <div class="cm-wrap">
+    <span class="cm-ord">03 <b>／ 作法</b></span>
+    <h2>書かないと決めたこと</h2>
+
+    <ul class="cm-rules">
+      <li><b>判断しない</b>達成・未達を決めない。良し悪しを書かない。並べるところまでで止める。</li>
+      <li><b>推測で埋めない</b>「測れない」を「変化なし」にしない。役割の記録が無いなら役割を書かない。</li>
+      <li><b>原文を書き換えない</b>訳は別ファイルに置く。原文は必ず開ける。訳を根拠にしない。</li>
+      <li><b>AI の判定を記録にしない</b>約束と報告を AI に渡す道具はあるが、その答えは保存しない。読む人のもの。</li>
+      <li><b>色相で優劣を作らない</b>量は一つの色の濃さで表す。種別は同じ重さの色で分ける。赤で警告しない。</li>
+      <li><b>限界を隠さない</b>取れていないものは件数を書く。合わない数はそのまま出す。</li>
+    </ul>
+
+    <p class="cm-note">この六つは、慎重さの表明ではない。
+       採択したのは投票したホルダーで、判断はその人のものだから、こちらでは決めない。</p>
+  </div>
+</section>
+
+<!-- 04 あいまいなところ ───────────────────────── -->
+<section class="cm-doc cm-in">
+  <div class="cm-wrap">
+    <span class="cm-ord">04 <b>／ 判断の記録</b></span>
+    <h2>あいまいなところを、どう扱ったか</h2>
+    <p>公開データはきれいに揃っていない。迷ったところと、その扱いを全部残す。</p>
+
+    <ol class="cm-calls">
+      <li>
+        <b>共同提案を、人物別に足すと二重に数えられる</b>
+        <p>採択の 51% が共同提案。単純に人物ごとへ足し上げると ADA が 2.0 倍、USD が 2.5 倍に膨らむ。</p>
+        <p class="cm-note">扱い — 合算した数字を正解として出さない。共同提案には <code>※</code> を付け、
+          「関わったすべて」と「単独提案だけ」を切り替えられるようにした。どちらが正しいかは決めない。</p>
+      </li>
+      <li>
+        <b>台帳の合計と、Fund 別の合計が 96 件ずれる</b>
+        <p>台帳は 11,385 件。Fund ごとに足すと 11,289 件。差の 96 件はどの Fund にも紐づかない。</p>
+        <p class="cm-note">扱い — どちらかに寄せて辻褄を合わせない。差を差として画面に出す。</p>
+      </li>
+      <li>
+        <b>9,068 件は地図に載らない</b>
+        <p>国の記録を持つのは projectcatalyst.io に載る採択分だけ。台帳の大半は国が分からない。</p>
+        <p class="cm-note">扱い — 地図の一番上に、載らない件数を先に書く。欠落を最初に示す。</p>
+      </li>
+      <li>
+        <b>「記録が止まっている」と「活動が止まっている」は別</b>
+        <p>最後に記録が動いた日は取れる。しかし完了済みにも付くので、そのまま出すと誤読される。</p>
+        <p class="cm-note">扱い — 未完了 313 件だけで数え直した。365 日を超えたものが 12 件。
+          そして記録そのものが取れていないものが 90 件あり、止まって見えるものより多い。
+          動いていたのに記録していないものと、止まっていたものを、この線は区別しない ——と画面に書いた。</p>
+      </li>
+      <li>
+        <b>Pilot と Fund 13 は、そのままでは比べられない</b>
+        <p>Pilot は 250万 ADA。Fund 13 は ADA 4,650万 と USD 4,878万の二本立て。</p>
+        <p class="cm-note">扱い — 「ADA 枠だけで比べて 1/18」と断る。規模の縮小を一つの数字で言い切らない。</p>
+      </li>
+      <li>
+        <b>採択率は、単調に下がってはいない</b>
+        <p>最初にまとめたとき「32% から 10% へ落ちた」と書いたが、データを見ると最高は F11 の 32.6%。
+          F9 で 17.8%、F10 で 13.1% まで落ちてから戻り、また落ちている。</p>
+        <p class="cm-note">扱い — 「上下しながら下がっている」に直した。応募数も「増え続けている」ではなく、
+          ピークは F13 の 1,639 件で F14 は減っている、に直した。</p>
+      </li>
+      <li>
+        <b>為替の差は、全体で見ると消える</b>
+        <p>約束された額と受け取った額の差は全体で −6%。しかし F10・F11 は +28〜30%、F13・F14 は −29〜31%。</p>
+        <p class="cm-note">扱い — 全体の一つの数字で語らない。Fund 別に並べる。逆向きが打ち消し合っていると書く。</p>
+      </li>
+      <li>
+        <b>事前の評価が「機能していない」とは書けない</b>
+        <p>中止 72 件と完了 732 件で、コミュニティレビューの中央値がどちらも 3.67。</p>
+        <p class="cm-note">扱い — 「その後を何も言い当てていない」——関係が見えない、という事実までにする。
+          評価そのものの当否は判定しない。</p>
+      </li>
+      <li>
+        <b>報告が出ていることと、書かれたとおりに起きたことは別</b>
+        <p>完了 1,722 件のうち 1,716 件に報告がある。報告の 98% に証拠リンクがある。</p>
+        <p class="cm-note">扱い — 存在は記録できるので書く。中身が果たされたかは判定しない。
+          約束と報告を左右に並べるところまでで止める。</p>
+      </li>
+      <li>
+        <b>訳は機械が付けたもの</b>
+        <p>日本語の訳は自動翻訳。誤訳が混じる。</p>
+        <p class="cm-note">扱い — 原文を書き換えず別ファイルに置き、常に開けるようにした。訳を根拠に何かを言わない。</p>
+      </li>
+      <li>
+        <b>投票の後に何が議論されたかは、測れない</b>
+        <p>レビューは 6,908 件あるが、すべて投票の前のもの。拡散も議論も、記録する場所が用意されていない。</p>
+        <p class="cm-note">扱い — 「議論されなかった」とは書かない。「測る場所が無い」と書く。</p>
+      </li>
+      <li>
+        <b>DRep については何も言えない</b>
+        <p>このサイトは Catalyst の記録しか持っていない。委任や DRep の判断のデータは持っていない。</p>
+        <p class="cm-note">扱い — 構造が引き継がれているという接続だけを示す。DRep の振る舞いを評価しない。</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- 05 直し方 ────────────────────────────────── -->
+<section class="cm-doc cm-in">
+  <div class="cm-wrap">
+    <span class="cm-ord">05 <b>／ 間違いの直し方</b></span>
+    <h2>間違っていたら</h2>
+    <p>出典と手順を全部書いてあるのは、確かめられるようにするためだ。
+       数字が違う、出典が古い、扱いがおかしい——そう思ったら、そこを指してほしい。</p>
+    <p>直したときは、何をどう直したかを残す。消して書き直すことはしない。</p>
+    <p><a class="cm-more" href="https://github.com/HFOT/holders-core/issues">間違いを指す →</a></p>
+  </div>
+</section>
+
+<footer class="cm-foot">
+  <div class="cm-wrap">
+    <p>台帳の生成 2026-09-04 ／ すべて公開情報のみ</p>
+    <p><a href="index.html">TOP</a> ／ <a href="../region.html?view=neo">地図をひらく</a> ／ <a href="../index.html">holders CORE</a></p>
+  </div>
+</footer>
+
+<script src="teaser.js?v=cm-1"></script>
+</body>
+</html>

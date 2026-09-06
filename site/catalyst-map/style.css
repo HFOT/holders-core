@@ -558,3 +558,115 @@ p { margin: 0 0 1.4rem; max-width: 44em; }
   transition: opacity var(--beat) var(--ease), transform var(--beat) var(--ease);
 }
 @media (prefers-reduced-motion: reduce) { .cm-in { opacity: 1; transform: none; } }
+
+/* ── 出典とつくりかた（sources.html） ───────────── */
+
+.cm-nav-id b a { color: inherit; text-decoration: none; }
+
+.cm-doc-head { padding: clamp(9rem, 20vh, 13rem) 0 0; }
+.cm-doc-h1 {
+  font-family: var(--sans);
+  font-weight: 900;
+  font-size: clamp(2rem, 5.4vw, 4rem);
+  line-height: 1.2;
+  letter-spacing: -.03em;
+  margin: 0 0 1.4rem;
+}
+.cm-doc-lede {
+  font-weight: 700;
+  font-size: clamp(1.05rem, 2.2vw, 1.5rem);
+  line-height: 1.7;
+  letter-spacing: -.01em;
+  color: var(--c1);
+  margin: 0 0 2rem;
+}
+.cm-doc { padding: clamp(7vh, 10vh, 13vh) 0; }
+.cm-doc h2 {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: clamp(1.4rem, 3.2vw, 2.3rem);
+  line-height: 1.45;
+  letter-spacing: -.015em;
+  margin: 0 0 1.6rem;
+}
+
+/* 出典の表 */
+.cm-src {
+  border-top: 1px solid var(--line);
+  margin: 2rem 0 1.6rem;
+}
+.cm-src-row {
+  display: grid;
+  gap: .35rem 2rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--line);
+}
+@media (min-width: 820px) {
+  .cm-src-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: baseline; }
+}
+.cm-src-what b { display: block; font-weight: 700; }
+.cm-src-what span { display: block; font-size: .86rem; color: var(--dim); line-height: 1.75; }
+.cm-src-where { font-size: .88rem; }
+.cm-src-where a { color: var(--c1); text-decoration: none; border-bottom: 1px solid var(--line-2); }
+.cm-src-where a:hover { border-color: var(--c1); }
+.cm-src-where code {
+  font-family: var(--disp);
+  font-size: .78rem;
+  letter-spacing: .04em;
+  color: var(--faint);
+  margin-left: .6em;
+}
+
+/* 作法 */
+.cm-rules { list-style: none; padding: 0; margin: 2rem 0 1.6rem; }
+.cm-rules li {
+  padding: 1.15rem 0 1.15rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--dim);
+  line-height: 1.9;
+}
+.cm-rules li:first-child { border-top: 1px solid var(--line); }
+.cm-rules b {
+  display: inline-block;
+  min-width: 12.5em;
+  color: var(--ink);
+  font-weight: 700;
+}
+@media (max-width: 700px) { .cm-rules b { display: block; margin-bottom: .2rem; } }
+
+/* 判断の記録 */
+.cm-calls { list-style: none; counter-reset: call; padding: 0; margin: 2.2rem 0 0; }
+.cm-calls > li {
+  counter-increment: call;
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: var(--surface);
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  margin-bottom: 1rem;
+}
+.cm-calls > li > b {
+  display: block;
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  margin-bottom: .8rem;
+  padding-left: 2.6rem;
+}
+.cm-calls > li > b::before {
+  content: counter(call, decimal-leading-zero);
+  position: absolute;
+  left: clamp(1.4rem, 3vw, 2.2rem);
+  font-family: var(--disp);
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: var(--c1);
+}
+.cm-calls p { margin: 0 0 .9rem; max-width: 46em; }
+.cm-calls p:last-child { margin-bottom: 0; }
+.cm-calls code {
+  font-family: var(--disp);
+  font-size: .85em;
+  color: var(--c2);
+}
