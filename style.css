@@ -2490,47 +2490,65 @@ td.rg-marks .badge { margin: 2px 6px 2px 0; }
   .rg-mappane::after { animation: none; background-position: -120% 0, 0 0; }
 }
 
-/* ---------- 大陸バッジ ---------- */
-/* 塗りつぶした円をやめ、計器のレティクルにする。
-   芯は暗く、リングは破線でゆっくり回り、脈を打つ。
+/* ---------- バッジ ---------- */
+/* 円は円のまま。周囲を光がひとつ、ゆっくり回る。
+   輪郭は drop-shadow の 0 ぼかしで作る（要素を足せないため）。
    数はデータなので青の側に置く。ティールは「選んでいる」に取ってある。 */
 
-@keyframes rg-cb-scan { to { stroke-dashoffset: -120; } }
-@keyframes rg-cb-ping {
-  0%, 100% { filter: drop-shadow(0 0 5px rgba(110,180,255,.6)) drop-shadow(0 0 14px rgba(61,123,255,.35)); }
-  50%      { filter: drop-shadow(0 0 9px rgba(170,220,255,.95)) drop-shadow(0 0 26px rgba(61,123,255,.6)); }
+/* 大陸（r=16・円周 ≒ 100.5） */
+@keyframes rg-orbit-cb { to { stroke-dashoffset: -100.5; } }
+/* 国（r=12・円周 ≒ 75.4） */
+@keyframes rg-orbit-kb { to { stroke-dashoffset: -75.4; } }
+
+.rg-cb circle,
+.rg-kb circle {
+  fill: rgba(11, 25, 48, .90);
+  stroke: #cbe8ff;
+  stroke-linecap: round;
+  transition: fill 220ms ease, stroke 220ms ease;
 }
 
 .rg-cb circle {
-  fill: rgba(8, 16, 30, .82);
-  stroke: #9fd8ff;
   stroke-width: 2.6;
-  stroke-dasharray: 13 4.5;
-  stroke-linecap: butt;
-  transform-box: fill-box;
-  transform-origin: 50% 50%;
-  animation: rg-cb-scan 16s linear infinite,
-             rg-cb-ping 3.6s ease-in-out infinite;
-  transition: stroke 200ms ease, stroke-width 200ms ease;
+  stroke-dasharray: 17 83.5;
+  filter:
+    drop-shadow(0 0 1.4px rgba(126,178,255,.75))
+    drop-shadow(0 0 10px rgba(61,123,255,.45));
+  animation: rg-orbit-cb 4.6s linear infinite;
 }
-.rg-cb:hover circle {
-  fill: rgba(10, 22, 40, .86);
-  stroke: #ffffff;
-  stroke-width: 3.2;
-  animation-duration: 5s, 1.6s;
+.rg-kb circle {
+  stroke-width: 2;
+  stroke-dasharray: 12 63.4;
+  filter:
+    drop-shadow(0 0 1.2px rgba(126,178,255,.7))
+    drop-shadow(0 0 7px rgba(61,123,255,.4));
+  animation: rg-orbit-kb 3.8s linear infinite;
 }
 
-.rg-cb .rg-cb-count {
-  fill: #eaf6ff;
-  font-size: 13px;
+/* 全部が同じ位相で回ると機械じみるので、少しずつずらす */
+.rg-cb:nth-of-type(2n) circle, .rg-kb:nth-of-type(2n) circle { animation-delay: -.9s; }
+.rg-cb:nth-of-type(3n) circle, .rg-kb:nth-of-type(3n) circle { animation-delay: -1.8s; }
+.rg-cb:nth-of-type(5n) circle, .rg-kb:nth-of-type(5n) circle { animation-delay: -2.7s; }
+.rg-cb:nth-of-type(7n) circle, .rg-kb:nth-of-type(7n) circle { animation-delay: -3.4s; }
+
+.rg-cb:hover circle, .rg-kb:hover circle {
+  fill: rgba(20, 48, 92, .95);
+  stroke: #ffffff;
+  animation-duration: 1.5s;
+}
+
+.rg-cb .rg-cb-count,
+.rg-kb .rg-kb-count {
+  fill: #eaf5ff;
   font-weight: 700;
-  letter-spacing: .01em;
   paint-order: stroke;
-  stroke: rgba(4, 8, 16, .85);
-  stroke-width: 2.4px;
+  stroke: rgba(5, 10, 20, .8);
+  stroke-width: 2.2px;
   stroke-linejoin: round;
 }
-.rg-cb:hover .rg-cb-count { fill: #ffffff; }
+.rg-cb .rg-cb-count { font-size: 13px; letter-spacing: .01em; }
+.rg-kb .rg-kb-count { font-size: 10.5px; }
+.rg-cb:hover .rg-cb-count, .rg-kb:hover .rg-kb-count { fill: #ffffff; }
 
 .rg-cb .rg-cb-namebg { fill: rgba(5, 9, 17, .72); }
 .rg-cb .rg-cb-name {
@@ -2541,29 +2559,5 @@ td.rg-marks .badge { margin: 2px 6px 2px 0; }
 .rg-cb:hover .rg-cb-name { fill: #dcefff; }
 
 @media (prefers-reduced-motion: reduce) {
-  .rg-cb circle { animation: none; }
-}
-
-/* ---------- 参考訳 ---------- */
-/* 主題は原文。訳は機械が付けたもので、意味が反転することがある。
-   明らかな壊れは手で直したが、直しきれない。だから従の位置に断りを添えて置く。
-   「訳を根拠にしない」を画面の形にする。 */
-
-.rg-original {
-  font-style: normal;
-  white-space: normal;
-  line-height: 1.6;
-  color: var(--sd-fg3);
-}
-.rg-original::before {
-  content: "参考訳";
-  display: inline-block;
-  margin-right: .6em;
-  padding: 0 .5em;
-  border: 1px solid var(--sd-line);
-  border-radius: 999px;
-  font-size: 9px;
-  letter-spacing: .1em;
-  color: var(--sd-fg3);
-  vertical-align: 1px;
+  .rg-cb circle, .rg-kb circle { animation: none; stroke-dasharray: none; opacity: .95; }
 }
