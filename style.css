@@ -2543,3 +2543,27 @@ td.rg-marks .badge { margin: 2px 6px 2px 0; }
 @media (prefers-reduced-motion: reduce) {
   .rg-cb circle { animation: none; }
 }
+
+/* ---------- 参考訳 ---------- */
+/* 主題は原文。訳は機械が付けたもので、意味が反転することがある。
+   明らかな壊れは手で直したが、直しきれない。だから従の位置に断りを添えて置く。
+   「訳を根拠にしない」を画面の形にする。 */
+
+.rg-original {
+  font-style: normal;
+  white-space: normal;
+  line-height: 1.6;
+  color: var(--sd-fg3);
+}
+.rg-original::before {
+  content: "参考訳";
+  display: inline-block;
+  margin-right: .6em;
+  padding: 0 .5em;
+  border: 1px solid var(--sd-line);
+  border-radius: 999px;
+  font-size: 9px;
+  letter-spacing: .1em;
+  color: var(--sd-fg3);
+  vertical-align: 1px;
+}
