@@ -66,8 +66,8 @@ def test_top_does_not_load_the_shared_stylesheet_map_rules():
 # 別途走っており、style.css の地図セクションはその対象。見栄えの変更は
 # 母体の破壊ではないので、ここでは追わない。
 EXPECTED = {
-    "region.html": "9c78fe62cf9697a7",
-    "region.js": "9ec4e6c17c1c5038",
+    "region.html": "6dbeeba83d468534",
+    "region.js": "a9ed25009168ad45",
     "ask.js": "32c37ce21d585fb3",
 }
 

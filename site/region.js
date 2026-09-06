@@ -817,7 +817,11 @@ function evidenceHtml(ev, r, ja) {
     .join("");
 
   return (
+    `<div class="rg-ev-head">` +
     `<p class="rg-pv-k">約束と報告</p>` +
+    `<button type="button" class="rg-copyall" id="ev-copy">` +
+    `提案・マイルストーン・完了報告をまとめてコピー</button>` +
+    `</div>` +
     `<p class="rg-ev-note">提案で何をやろうとしていたのかと、完了報告で何が報告されたのか。` +
     `どちらも記録のまま並べている。<strong>達成・未達の判断はしていない。</strong>` +
     (state.lang === "ja"
@@ -828,11 +832,190 @@ function evidenceHtml(ev, r, ja) {
   );
 }
 
+/* 全部まとめてコピーする。外のAIに自分で貼るための道具。
+   要約しない。並べ替えない。原文のまま、項目に分けて出す。
+   訳は入れない。誤訳のまま外へ持ち出されないようにする。 */
+
+const RULE = "════════════════════════════════════════";
+
+function copyText(r, ev) {
+  const L = [];
+  /* AI が読む前提なので「ラベル: 値」で固定する。桁揃えは幅の違う文字で崩れるし、
+     元データに紛れ込んだ空白やタブはそのまま渡さない。 */
+  const clean = (v) => String(v == null ? "" : v).replace(/\s+/g, " ").trim();
+  /* 約束・条件・報告の本文は改行が意味を持つ（箇条書き）。行はそのまま残し、
+     行末の空白と、空行の続きすぎだけを整える。 */
+  const body = (v) =>
+    String(v == null ? "" : v)
+      .replace(/\r\n?/g, "\n")
+      .split("\n")
+      .map((ln) => ln.replace(/[ \t　]+$/, "").replace(/^[ \t]+/, ""))
+      .join("\n")
+      .replace(/\n{3,}/g, "\n\n")
+      .trim();
+  const put = (k, v) => { const t = clean(v); if (t) L.push(k ? `${k}: ${t}` : `  ${t}`); };
+  const head = (n, title) => { L.push("", RULE, `${n}. ${title}`, RULE, ""); };
+  const usd0 = (n) => "$" + Math.round(n).toLocaleString("en-US");
+  const ms = (ev && ev.ms) || [];
+
+  L.push("Catalyst プロジェクト一括（原文・公開情報のみ）");
+  L.push(`取得: ${clean((state.projects.source || {}).fetched_at) || "—"}`);
+  L.push("");
+  L.push("このテキストは、ひとつの提案について公開記録を原文のまま並べたものです。");
+  L.push("要約も並べ替えも判断もしていません。事実として読み取れるのは次の5点です。");
+  L.push("  1. いくら受け取ったのか");
+  L.push("  2. 何をやろうとしたのか（提案）");
+  L.push("  3. 何を行うと約束したのか（マイルストーン）");
+  L.push("  4. 何ができたと報告されたのか（完了報告）");
+  L.push("  5. どれくらいの期間の予定で、実際はどうだったのか");
+
+  /* ---- 1. 金 ---- */
+  head(1, "いくら受け取ったのか");
+  put("申請", money(r.req));
+  put("配分済み（受け取った額）", money(r.dist));
+  if (r.req && r.dist && r.req.code === r.dist.code && r.req.v >= r.dist.v) {
+    const rest = r.req.v - r.dist.v;
+    if (rest > 0) put("未配分", `${num(rest)} ${r.dist.code}`);
+  }
+  if (r.val) {
+    const d = Math.round((r.val[2] - 1) * 100);
+    put("ドルに直すと", `約束された時点 ${usd0(r.val[0])} → 受け取った時点 ${usd0(r.val[1])}（${d >= 0 ? "+" : ""}${d}%）`);
+    L.push("  ※ 額は ADA で決まる。ADA の価格は日々動くので、ドルは各時点の価格で換算している。");
+  }
+  if (ms.length) {
+    const planned = ms.reduce((a, m) => a + (Number(m.cost) || 0), 0);
+    if (planned) put("マイルストーンの合計（提案時の内訳）", usd0(planned));
+  }
+
+  /* ---- 2. 提案 ---- */
+  head(2, "何をやろうとしたのか（提案）");
+  put("名称", r.n);
+  put("Fund", r.fund);
+  put("チャレンジ", r.cat);
+  put("分野", r.g);
+  put("国", r.c || "記録なし");
+  put("提案者", (r.who || []).join(" / ") || "台帳と突き合わせできず");
+  if ((r.who || []).length > 1) put("", `※ ${r.who.length} 人の共同提案。額はこの提案に対して一度だけ配分されている`);
+  put("タグ", (r.tg || []).join(", "));
+  put("提案ページ", r.url);
+
+  /* ---- 3. 約束 ---- */
+  head(3, "何を行うと約束したのか（マイルストーン）");
+  if (!ms.length) {
+    L.push("記録なし");
+  } else {
+    put("マイルストーン数", `${ms.length} 件`);
+    L.push("");
+    for (const m of ms) {
+      const h = [`マイルストーン ${m.no}`, m.month ? `${m.month} か月目` : "", m.cost ? usd0(m.cost) : ""]
+        .filter(Boolean).join(" ／ ");
+      L.push(`── ${h} ──`);
+      L.push("[やると約束したこと]");
+      L.push(body(m.promise) || "記録なし");
+      L.push("");
+      L.push("[達成したと言える条件]");
+      L.push(body(m.criteria) || "記録なし");
+      L.push("");
+    }
+  }
+
+  /* ---- 4. 報告 ---- */
+  head(4, "何ができたと報告されたのか（完了報告）");
+  put("状態", (STATUS_JA[r.st] || r.st || "") + (r.done ? `（${r.done}）` : ""));
+  put("完了報告書", r.rep && r.rep !== "n/a" ? r.rep : "");
+  L.push("");
+  if (!ms.length) {
+    L.push("記録なし");
+  } else {
+    for (const m of ms) {
+      L.push(`── マイルストーン ${m.no} ──`);
+      L.push(body(m.report) || "報告の記録なし");
+      if (m.cut) L.push("（長いので途中まで。全文は完了報告書にある）");
+      L.push("");
+    }
+  }
+
+  /* ---- 5. 期間 ---- */
+  head(5, "どれくらいの期間の予定で、実際はどうだったのか");
+  const lastMonth = ms.reduce((a, m) => Math.max(a, Number(m.month) || 0), 0);
+  if (lastMonth) put("予定", `最後のマイルストーンが ${lastMonth} か月目。提案時点の計画`);
+  if (r.yr != null) put("実際", `採択が決まってから ${r.yr} 年（約 ${Math.round(r.yr * 12)} か月）`);
+  if (r.ovr != null) put("予定に対して", `${r.ovr} 倍（1.0 が計画どおり。下回れば早い、上回れば長い）`);
+  if (r.chg) put("計画変更", `${num(r.chg)} 回`);
+  if (r.gap) put("いちばん長い空白", `${num(r.gap)} 日（承認と承認のあいだ）`);
+  const meta = (state.projects.flags || {}).labels || {};
+  const fl = (r.fl || []).map((k) => {
+    const face = FLAG_FACE[k] || { name: k };
+    let ex = "";
+    if (k === "long" && r.ly) ex = ` ${r.ly}年+`;
+    if ((k === "active_gap" || k === "past_gap") && r.gap) ex = ` ${num(r.gap)}日`;
+    /* 旗の名前と説明が二重にならないようにする（「過去ギャップ（過去ギャップ（…））」を避ける） */
+    let note = clean(meta[k] || "");
+    if (note.startsWith(face.name)) note = note.slice(face.name.length).replace(/^[（(]|[）)]$/g, "");
+    return `${face.name}${ex}${note ? ` — ${note}` : ""}`;
+  });
+  if (fl.length) {
+    L.push("");
+    L.push("状態フラグ:");
+    for (const f of fl) L.push(`  ・${f}`);
+  }
+  L.push("");
+  L.push("  ※ 「実際」と「予定に対して」は、公開されている日付から計算したもの。");
+  L.push("     起点は採択が決まった日、終点は最後の承認日（無ければ完了報告の日）。");
+  L.push("     遅い・早いを評価したものではない。");
+
+  /* ---- 末尾 ---- */
+  L.push("", RULE, "このテキストについて", RULE, "");
+  L.push("すべて公開情報。提案・マイルストーン・完了報告を原文のまま項目に分けて並べただけで、");
+  L.push("要約も並べ替えもしていない。達成・未達の判断はどこにも書かれていない。");
+  L.push("日本語訳は含めていない（機械翻訳で誤りうるため）。読んで決めるのはあなた。");
+  L.push("出典: projectcatalyst.io ／ milestones.projectcatalyst.io");
+
+  return L.join("\n");
+}
+
+async function toClipboard(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    return true;
+  } catch (e) {
+    /* クリップボードが使えない場面（安全でない接続など）の逃げ道 */
+    const ta = document.createElement("textarea");
+    ta.value = text;
+    ta.setAttribute("readonly", "");
+    ta.style.position = "fixed";
+    ta.style.opacity = "0";
+    document.body.appendChild(ta);
+    ta.select();
+    let ok = false;
+    try { ok = document.execCommand("copy"); } catch (e2) { ok = false; }
+    ta.remove();
+    return ok;
+  }
+}
+
+function wireCopyAll(ev) {
+  const btn = document.getElementById("ev-copy");
+  if (!btn) return;
+  btn.onclick = async () => {
+    const r = state.projects.rows[state.project];
+    const text = copyText(r, ev);
+    const ok = await toClipboard(text);
+    const before = btn.textContent;
+    btn.textContent = ok
+      ? `コピーしました（${num(text.length)} 文字）`
+      : "コピーできなかった。選んで手で写してください";
+    btn.classList.toggle("on", ok);
+    setTimeout(() => { btn.textContent = before; btn.classList.remove("on"); }, 2600);
+  };
+}
+
 /* 質問する。こちらからは何も指示しない。何を聞くかは読む人が決める。
    答えは保存しない。これは読む人の道具であって、サイトの記録ではない。 */
 function wireAsk(ev) {
   const slot = document.getElementById("ev-slot");
   if (!slot) return;
+  wireCopyAll(ev);
   const byNo = {};
   for (const m of ev.ms || []) byNo[String(m.no)] = m;
 
