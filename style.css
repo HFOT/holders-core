@@ -2408,7 +2408,7 @@ td.rg-marks .badge { margin: 2px 6px 2px 0; }
 
 /* 計器の切り替えと拡大縮小も同じ手触りに */
 .rg-metric .seg:hover { color: #eaf2ff; }
-.rg-zb:hover, .rg-zb:focus-visible {
+.rg-zoom button:hover, .rg-zoom button:focus-visible {
   border-color: rgba(126,178,255,.62);
   background: rgba(61,123,255,.14);
   box-shadow: 0 0 14px -2px rgba(61,123,255,.5);
@@ -2636,3 +2636,84 @@ td.rg-marks .badge { margin: 2px 6px 2px 0; }
   box-shadow: 0 0 18px -3px rgba(61,123,255,.85);
 }
 .rg-copyall.on::before { content: "✓"; opacity: 1; }
+
+/* ==========================================================================
+   スマホ
+   親指で触る前提に直す。押すものは大きく、並ぶものは縦に、はみ出すものは横に流す。
+   ========================================================================== */
+
+@media (max-width: 720px) {
+  /* 全画面の地図。上が地図、下が一覧。地図は小さめにして一覧を読ませる。 */
+  .rg-frame.rg-full { grid-template-rows: 40% minmax(0, 1fr); }
+  .rg-frame { grid-template-rows: 42% minmax(0, 1fr); height: 76vh; }
+
+  /* 計器の切り替え。4つを横一列に収める。 */
+  .rg-metric { top: 8px; left: 8px; right: 8px; }
+  .rg-metric .seg { width: 100%; }
+  .rg-metric .seg-btn { padding: 0 6px; font-size: 11px; letter-spacing: 0; }
+
+  /* 拡大縮小。計器の帯の下、地図の右上へ。指で押せる大きさにする。 */
+  .rg-zoom {
+    top: 52px;
+    bottom: auto;
+    right: 8px;
+    left: auto;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 62%;
+  }
+  .rg-zoom button { min-width: 40px; min-height: 36px; font-size: 11px; padding: 0 8px; }
+
+  /* 大陸タブは折り返さず、横一列で指で送る。 */
+  .rg-jump {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    gap: 6px;
+    padding: 6px 8px;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+  .rg-jump::-webkit-scrollbar { display: none; }
+  .rg-jb { flex: 0 0 auto; min-height: 36px; white-space: nowrap; }
+
+  /* 左バー。余白を詰めて、触るものを大きくする。 */
+  .rg-shead { padding: 12px 12px 10px; }
+  .rg-controls { flex-direction: column; gap: 8px; }
+  .rg-controls select { width: 100%; height: 40px; font-size: 13px; }
+  .rg-shead input[type=search] { height: 40px; font-size: 16px; }  /* 16px 未満だと iOS が拡大する */
+  .rg-back, .rg-langb, .rg-curb { min-height: 36px; }
+  .rg-ci-action { min-height: 36px; padding: 0 12px; }
+
+  /* 一覧の行。指で押せる高さを確保する。 */
+  .rg-pi, .rg-person { padding: 12px 10px; }
+
+  /* 約束と報告。左右に並べる幅が無いので縦に積む。 */
+  .rg-ev-pair { grid-template-columns: 1fr; }
+  .rg-ev-head { flex-direction: column; align-items: flex-start; }
+  .rg-copyall { width: 100%; justify-content: center; padding: .9em 1em; font-size: 12px; }
+
+  /* 詳細パネルの中の表組みは横に流す。 */
+  .rg-pv-grid { grid-template-columns: 1fr; }
+
+  /* バッジの名前は狭いと重なるので、大陸だけ残して国のものは消す。 */
+  .rg-kb .rg-kb-count { font-size: 11px; }
+}
+
+@media (max-width: 420px) {
+  .rg-metric .seg-btn { font-size: 10px; }
+  .rg-cb .rg-cb-name { display: none; }   /* 重なって読めなくなるので落とす */
+}
+
+/* 指で操作する端末では、当たったときだけ光る演出は効かない。
+   触れた瞬間に応えるようにする。 */
+@media (hover: none) {
+  .rg-pi:active, .rg-person:active { background: rgba(126,178,255,.14); }
+  .rg-back:active, .rg-ci-action:active, .rg-jb:active, .rg-curb:active,
+  .rg-langb:active, .rg-zoom button:active, .rg-copyall:active {
+    border-color: rgba(126,178,255,.62);
+    background: rgba(61,123,255,.18);
+  }
+}
