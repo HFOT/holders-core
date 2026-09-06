@@ -442,6 +442,9 @@ p { margin: 0 0 1.4rem; max-width: 44em; }
 .cm-show .cm-wrap { display: grid; gap: clamp(1.6rem, 3.6vw, 3.4rem); align-items: center; }
 @media (min-width: 980px) {
   .cm-show .cm-wrap { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); }
+  /* 左右を入れ替える節。文が二列目へ回るので、列幅も入れ替える。
+     忘れると図版が狭いほうの列に落ちて小さくなる。 */
+  .cm-show .cm-wrap.cm-show-flip { grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); }
   .cm-show-flip > :first-child { order: 2; }
 }
 
@@ -778,4 +781,32 @@ html { scrollbar-width: thin; scrollbar-color: rgba(126,178,255,.26) transparent
 
 @media (max-width: 560px) {
   .cm-kicker-long { display: none; }   /* 一行に収まらないので前半を落とす */
+}
+
+/* ---------- コピーで渡す5点 ---------- */
+
+.cm-copylist {
+  list-style: none;
+  counter-reset: cp;
+  padding: 0;
+  margin: 1.6rem 0;
+  border-top: 1px solid var(--line);
+}
+.cm-copylist li {
+  counter-increment: cp;
+  position: relative;
+  padding: .85rem 0 .85rem 2.6rem;
+  border-bottom: 1px solid var(--line);
+  line-height: 1.6;
+}
+.cm-copylist li::before {
+  content: counter(cp, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: .95rem;
+  font-family: var(--disp);
+  font-size: .74rem;
+  font-weight: 700;
+  letter-spacing: .04em;
+  color: var(--c1);
 }
