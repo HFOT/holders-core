@@ -6,61 +6,165 @@
 <title>Catalyst Detailed Map</title>
 <meta name="description" content="ホルダーの投票で採択された 2,221 件が、いまどうなっているか。公開情報だけで辿れる場所。">
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="style.css?v=cm-3">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap">
+<link rel="stylesheet" href="style.css?v=cm-5">
 </head>
 <body>
 
+<!-- 常設の上枠。出口を切らさない ───────────────────── -->
+<div class="cm-rail">
+  <span class="cm-rail-name">Catalyst Detailed Map <em>／ holders CORE</em></span>
+  <a href="../region.html">地図をひらく</a>
+</div>
+
 <!-- ① ヒーロー ─────────────────────────────────── -->
 <section class="cm-hero">
-  <iframe class="cm-hero-map" src="../region.html?view=neo"
-          title="Catalyst Detailed Map" loading="eager"></iframe>
-  <div class="cm-hero-copy">
-    <h1>あなたが投票した提案は、いま どうなっているか。</h1>
-    <p>6年で 2,221 件が採択された。<br>
-       完了 1,722 件。中止 269 件。報告は 1,716 件ぶん出ている。</p>
-    <p class="cm-lead">それを見渡せる場所は、まだ無い。</p>
-    <p><a class="cm-cta" href="../region.html">地図をひらく</a></p>
+
+  <div class="cm-globe" aria-hidden="true">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <circle class="g-rim" cx="100" cy="100" r="92"/>
+      <!-- 緯線 -->
+      <ellipse class="g-line g-par" cx="100" cy="100" rx="92" ry="14"/>
+      <ellipse class="g-line g-par" cx="100" cy="100" rx="92" ry="34"/>
+      <ellipse class="g-line g-par" cx="100" cy="100" rx="92" ry="55"/>
+      <ellipse class="g-line g-par" cx="100" cy="100" rx="92" ry="75"/>
+      <!-- 経線。回る -->
+      <ellipse class="g-line g-mer" cx="100" cy="100" rx="92" ry="92"/>
+      <ellipse class="g-line g-mer" cx="100" cy="100" rx="92" ry="92"/>
+      <ellipse class="g-line g-mer" cx="100" cy="100" rx="92" ry="92"/>
+      <ellipse class="g-line g-mer" cx="100" cy="100" rx="92" ry="92"/>
+      <ellipse class="g-line g-mer" cx="100" cy="100" rx="92" ry="92"/>
+      <ellipse class="g-line g-mer" cx="100" cy="100" rx="92" ry="92"/>
+      <ellipse class="g-line g-mer" cx="100" cy="100" rx="92" ry="92"/>
+      <ellipse class="g-line g-mer" cx="100" cy="100" rx="92" ry="92"/>
+    </svg>
+  </div>
+
+  <div class="cm-wrap">
+    <p class="cm-kicker">6 years / 14 funds / 2,221 funded</p>
+
+    <h1>
+      <span class="cm-h1-b">あなたが投票した提案は、</span>
+      <span class="cm-h1-b">いま どうなっているか。</span>
+    </h1>
+
+    <div class="cm-hero-grid">
+      <div>
+        <p class="cm-record">
+          6年で <b>2,221 件</b>が採択された。<br>
+          完了 <b>1,722 件</b>。中止 <b>269 件</b>。報告は <b>1,716 件</b>ぶん出ている。
+        </p>
+        <p class="cm-lead">それを見渡せる場所は、まだ無い。</p>
+        <p><a class="cm-cta" href="../region.html">地図をひらく</a></p>
+      </div>
+
+      <div class="cm-slot cm-slot-hero">
+        <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <g class="cm-slot-grid" stroke-width=".5">
+            <path d="M0 25H200M0 50H200M0 75H200M0 100H200M0 125H200"/>
+            <path d="M25 0V150M50 0V150M75 0V150M100 0V150M125 0V150M150 0V150M175 0V150"/>
+            <circle cx="100" cy="75" r="52" stroke-width=".9"/>
+            <ellipse cx="100" cy="75" rx="52" ry="18"/>
+            <ellipse cx="100" cy="75" rx="52" ry="40"/>
+            <ellipse cx="100" cy="75" rx="18" ry="52"/>
+            <ellipse cx="100" cy="75" rx="40" ry="52"/>
+          </g>
+        </svg>
+        <span class="cm-slot-tag"><b>MAP</b> ／ 地図はここに入る</span>
+      </div>
+    </div>
+
+    <p class="cm-scroll">記録を読む <span>↓</span></p>
   </div>
 </section>
 
 <!-- ② 計器 ────────────────────────────────────── -->
-<section class="cm-figures">
-  <div class="cm-wrap cm-fig-row">
-    <div class="cm-fig"><b>11,385</b><span>提案</span></div>
-    <div class="cm-fig"><b>2,221</b><span>採択</span></div>
-    <div class="cm-fig"><b>1,722</b><span>完了</span></div>
-    <div class="cm-fig"><b>269</b><span>中止</span></div>
+<section class="cm-figures cm-in">
+  <div class="cm-wrap">
+    <span class="cm-ord">02 <b>／ 計器</b></span>
+    <div class="cm-fig-row">
+      <div class="cm-fig"><b data-count="11385">11,385</b><span>提案</span></div>
+      <div class="cm-fig"><b data-count="2221">2,221</b><span>採択</span></div>
+      <div class="cm-fig"><b data-count="1722">1,722</b><span>完了</span></div>
+      <div class="cm-fig"><b data-count="269">269</b><span>中止</span></div>
+    </div>
   </div>
 </section>
 
 <!-- ③④⑤ MAP の見せ場 ──────────────────────── -->
-<section class="cm-show">
+<section class="cm-show cm-in">
   <div class="cm-wrap">
-    <h2>国から入る</h2>
-    <p>97 の国。押すとその国の採択が全部出る。</p>
+    <div>
+      <span class="cm-ord">03 <b>／ 見せ場</b></span>
+      <h2>国から入る</h2>
+      <p>97 の国。押すとその国の採択が全部出る。</p>
+    </div>
+    <div class="cm-slot cm-slot-shot">
+      <svg viewBox="0 0 200 125" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g class="cm-slot-grid" stroke-width=".5">
+          <path d="M0 25H200M0 50H200M0 75H200M0 100H200"/>
+          <path d="M40 0V125M80 0V125M120 0V125M160 0V125"/>
+          <circle cx="100" cy="62" r="40" stroke-width=".8"/>
+          <ellipse cx="100" cy="62" rx="40" ry="14"/>
+          <ellipse cx="100" cy="62" rx="14" ry="40"/>
+        </g>
+      </svg>
+      <span class="cm-slot-tag"><b>図</b> ／ 国を選んだ状態</span>
+    </div>
   </div>
 </section>
 
-<section class="cm-show">
-  <div class="cm-wrap">
-    <h2>人から入る</h2>
-    <p>5,699 人。関わった全部と、単独提案だけを切り替えられる。</p>
-    <p class="cm-note">51% が共同提案なので、人物別に足すと ADA が 2.0 倍・USD が 2.5 倍になる。それも隠さず出す。</p>
+<section class="cm-show cm-in">
+  <div class="cm-wrap cm-show-flip">
+    <div>
+      <span class="cm-ord">04 <b>／ 見せ場</b></span>
+      <h2>人から入る</h2>
+      <p>5,699 人。関わった全部と、単独提案だけを切り替えられる。</p>
+      <p class="cm-note">51% が共同提案なので、人物別に足すと ADA が 2.0 倍・USD が 2.5 倍になる。それも隠さず出す。</p>
+    </div>
+    <div class="cm-slot cm-slot-shot">
+      <svg viewBox="0 0 200 125" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g class="cm-slot-grid" stroke-width=".5">
+          <path d="M20 30H180M20 48H180M20 66H180M20 84H180M20 102H180"/>
+          <path d="M20 20V110M130 20V110"/>
+          <path d="M132 26H176M132 44H168M132 62H172M132 80H150M132 98H162" stroke-width="1.6"/>
+        </g>
+      </svg>
+      <span class="cm-slot-tag"><b>図</b> ／ 人物ランキング</span>
+    </div>
   </div>
 </section>
 
-<section class="cm-show">
+<section class="cm-show cm-in">
   <div class="cm-wrap">
-    <h2>一件まで降りる</h2>
-    <p>完了報告の動画 587 件。報告書 1,761 件。<br>
-       約束と報告を左右に並べる。判断はしない。</p>
-    <p><a class="cm-cta" href="../region.html">地図をひらく</a></p>
+    <div>
+      <span class="cm-ord">05 <b>／ 見せ場</b></span>
+      <h2>一件まで降りる</h2>
+      <p>完了報告の動画 587 件。報告書 1,761 件。<br>
+         約束と報告を左右に並べる。判断はしない。</p>
+      <p><a class="cm-cta" href="../region.html">地図をひらく</a></p>
+    </div>
+    <div class="cm-slot cm-slot-shot">
+      <svg viewBox="0 0 200 125" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g class="cm-slot-grid" stroke-width=".5">
+          <path d="M100 14V111"/>
+          <path d="M18 30H88M18 46H82M18 62H88M18 78H70"/>
+          <path d="M112 30H182M112 46H176M112 62H182M112 78H164"/>
+          <rect x="18" y="92" width="70" height="19"/>
+          <rect x="112" y="92" width="70" height="19"/>
+        </g>
+      </svg>
+      <span class="cm-slot-tag"><b>図</b> ／ 約束と報告の対比</span>
+    </div>
   </div>
 </section>
 
 <!-- ⑥ 完了報告は、存在する ─────────────────────── -->
-<section class="cm-fact">
+<section class="cm-fact cm-in">
   <div class="cm-wrap">
+    <span class="cm-ord">06 <b>／ 記録</b></span>
     <p class="cm-big">1,716 / 1,722</p>
     <h2>完了報告は、存在する</h2>
     <p>98% に証拠リンク。GitHub だけで 23,890 本。<br>
@@ -69,8 +173,9 @@
 </section>
 
 <!-- ⑦ 採択された提案は、その期間 生きていたか ──────── -->
-<section class="cm-ask">
+<section class="cm-ask cm-in">
   <div class="cm-wrap">
+    <span class="cm-ord">07 <b>／ 問い</b></span>
     <h2>採択された提案は、その期間 生きていたか</h2>
     <p>いま完了していないものが 313 件ある。<br>
        そのうち記録が動いてから 365 日を超えたものが 12 件。<br>
@@ -83,8 +188,9 @@
 </section>
 
 <!-- ⑧ 事前の評価 ──────────────────────────────── -->
-<section class="cm-fact">
+<section class="cm-fact cm-in">
   <div class="cm-wrap">
+    <span class="cm-ord">08 <b>／ 記録</b></span>
     <p class="cm-big">3.67 <span class="cm-op">=</span> 3.67</p>
     <p class="cm-big-sub">中止 72 件　　完了 732 件</p>
     <h2>事前の評価は、その後を何も言い当てていない</h2>
@@ -95,8 +201,9 @@
 </section>
 
 <!-- ⑨ 議論は、金が動く前にしかない ────────────────── -->
-<section class="cm-ask">
+<section class="cm-ask cm-in">
   <div class="cm-wrap">
+    <span class="cm-ord">09 <b>／ 問い</b></span>
     <h2>議論は、金が動く前にしかない</h2>
     <p>議論の記録は 6,908 件ある。すべて投票の前のものだ。</p>
     <p>投票の後に、これがどう見られ、どう議論され、
@@ -107,11 +214,59 @@
 </section>
 
 <!-- ⑩ 歴史 ────────────────────────────────────── -->
-<section class="cm-fact">
+<section class="cm-fact cm-in">
   <div class="cm-wrap">
+    <span class="cm-ord">10 <b>／ 歴史</b></span>
     <p class="cm-big">32.6% <span class="cm-op">→</span> 10.2%</p>
     <p class="cm-big-sub">F11 から F14 へ</p>
     <h2>採択率は、上下しながら下がっている</h2>
+
+    <div class="cm-band">
+      <div class="cm-band-row">
+        <!-- 棒の高さ = 応募数（最大 F13 の 1,639）／ 塗り = 採択数 -->
+        <div class="cm-bar cm-bar-none" title="Fund1 (pilot) 2020-08 応募 56 採択 0">
+          <div class="cm-bar-stack" style="height:3.4%"></div></div>
+        <div class="cm-bar" title="Fund2 2020-09 応募 78 採択 11（14.1%）">
+          <div class="cm-bar-stack" style="height:4.8%"><div class="cm-bar-in" style="height:14.1%"></div></div></div>
+        <div class="cm-bar" title="Fund3 2021-01 応募 150 採択 21（14.0%）">
+          <div class="cm-bar-stack" style="height:9.2%"><div class="cm-bar-in" style="height:14.0%"></div></div></div>
+        <div class="cm-bar" title="Fund4 2021-02 応募 277 採択 51（18.4%）">
+          <div class="cm-bar-stack" style="height:16.9%"><div class="cm-bar-in" style="height:18.4%"></div></div></div>
+        <div class="cm-bar" title="Fund5 2021-03 応募 267 採択 69（25.8%）">
+          <div class="cm-bar-stack" style="height:16.3%"><div class="cm-bar-in" style="height:25.8%"></div></div></div>
+        <div class="cm-bar" title="Fund6 2021-08 応募 711 採択 151（21.2%）">
+          <div class="cm-bar-stack" style="height:43.4%"><div class="cm-bar-in" style="height:21.2%"></div></div></div>
+        <div class="cm-bar" title="Fund7 2021-11 応募 936 採択 264（28.2%）">
+          <div class="cm-bar-stack" style="height:57.1%"><div class="cm-bar-in" style="height:28.2%"></div></div></div>
+        <div class="cm-bar" title="Fund8 2022-02 応募 1,134 採択 367（32.4%）">
+          <div class="cm-bar-stack" style="height:69.2%"><div class="cm-bar-in" style="height:32.4%"></div></div></div>
+        <div class="cm-bar" title="Fund9 2022-06 応募 1,166 採択 207（17.8%）">
+          <div class="cm-bar-stack" style="height:71.1%"><div class="cm-bar-in" style="height:17.8%"></div></div></div>
+        <div class="cm-bar" title="Fund10 2023-07 応募 1,467 採択 192（13.1%）">
+          <div class="cm-bar-stack" style="height:89.5%"><div class="cm-bar-in" style="height:13.1%"></div></div></div>
+        <div class="cm-bar" title="Fund11 2023-11 応募 920 採択 300（32.6%）">
+          <div class="cm-bar-stack" style="height:56.1%"><div class="cm-bar-in" style="height:32.6%"></div></div></div>
+        <div class="cm-bar" title="Fund12 2024-04 応募 1,205 採択 258（21.4%）">
+          <div class="cm-bar-stack" style="height:73.5%"><div class="cm-bar-in" style="height:21.4%"></div></div></div>
+        <div class="cm-bar" title="Fund13 2024-09 応募 1,639 採択 199（12.1%）">
+          <div class="cm-bar-stack" style="height:100%"><div class="cm-bar-in" style="height:12.1%"></div></div></div>
+        <div class="cm-bar" title="Fund14 2025-06 応募 1,283 採択 131（10.2%）">
+          <div class="cm-bar-stack" style="height:78.3%"><div class="cm-bar-in" style="height:10.2%"></div></div></div>
+        <div class="cm-bar cm-bar-none" title="Fund15 2025-11 応募・採択とも記録なし。配分ゼロでトレジャリーへ返還">
+          <div class="cm-bar-stack" style="height:2%"></div></div>
+      </div>
+      <div class="cm-band-axis">
+        <span>F1</span><span>F2</span><span>F3</span><span>F4</span><span>F5</span>
+        <span>F6</span><span>F7</span><span class="on">F8</span><span>F9</span><span>F10</span>
+        <span class="on">F11</span><span>F12</span><span>F13</span><span class="on">F14</span><span>F15</span>
+      </div>
+    </div>
+    <p class="cm-band-key">
+      <span><i class="cm-key-swatch cm-key-sub"></i>応募</span>
+      <span><i class="cm-key-swatch cm-key-won"></i>採択</span>
+      <span>棒の高さ＝応募数（最大 F13 1,639）</span>
+    </p>
+
     <p>F8 で 32.4%、F9 で 17.8%、F10 で 13.1% まで落ちてから
        F11 で 32.6% に戻り、また落ちた。<br>
        応募のピークは F13 の 1,639 件。F14 は 1,283 件で減っている。</p>
@@ -120,8 +275,9 @@
 </section>
 
 <!-- ⑪ 相場で動いた額 ──────────────────────────── -->
-<section class="cm-fact">
+<section class="cm-fact cm-in">
   <div class="cm-wrap">
+    <span class="cm-ord">11 <b>／ 記録</b></span>
     <p class="cm-big">−$674万</p>
     <h2>相場で動いた額</h2>
     <p>F10・F11 は +28〜30%、F13・F14 は −29〜31%。<br>
@@ -132,8 +288,9 @@
 </section>
 
 <!-- ⑫ 現在地 2026 ─────────────────────────────── -->
-<section class="cm-now">
+<section class="cm-now cm-in">
   <div class="cm-wrap">
+    <span class="cm-ord">12 <b>／ 現在地</b></span>
     <h2>現在地 —— 2026</h2>
     <ol class="cm-steps">
       <li><b>2026-02-24</b> 運営が IOG から Cardano Foundation へ移った。
@@ -152,8 +309,9 @@
 </section>
 
 <!-- ⑬ このサイトが埋められないもの ──────────────── -->
-<section class="cm-limit">
+<section class="cm-limit cm-in">
   <div class="cm-wrap">
+    <span class="cm-ord">13 <b>／ 限界</b></span>
     <h2>このサイトが埋められないもの</h2>
     <p>報告が出ていることと、書かれたとおりに起きたことは別である。<br>
        その誤差は、ここでは埋められない。判断はあなたがする。</p>
@@ -167,8 +325,9 @@
 </section>
 
 <!-- ⑭ 同じ感覚のまま、次が始まっている ──────────── -->
-<section class="cm-close">
+<section class="cm-close cm-in">
   <div class="cm-wrap">
+    <span class="cm-ord">14 <b>／ 次</b></span>
     <h2>同じ感覚のまま、次が始まっている</h2>
     <p>Catalyst は 6年で 2,221 件を採択した。
        完了 1,722 件、中止 269 件、報告 1,716 件。<br>
@@ -185,5 +344,13 @@
   </div>
 </section>
 
+<footer class="cm-foot">
+  <div class="cm-wrap">
+    <p>台帳の生成 2026-09-04 ／ 出典 projectcatalyst.io・Catalyst Explorer・Natural Earth・Binance</p>
+    <p><a href="../region.html">地図をひらく</a> ／ <a href="../index.html">holders CORE</a></p>
+  </div>
+</footer>
+
+<script src="teaser.js?v=cm-1"></script>
 </body>
 </html>

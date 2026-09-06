@@ -32,10 +32,16 @@ def test_top_page_exists():
     assert (CMAP / "style.css").exists()
 
 
-def test_top_embeds_the_real_map_instead_of_reimplementing_it():
+def test_top_never_reimplements_the_map():
+    """TOP は地図を作り直さない。器を置いて、本物へ送るだけ。
+
+    ヒーローの iframe は器の段階では外してある（地図が明るい平面のとき
+    文字が埋もれたため）。器 .cm-slot は残し、地図の実装が漏れていない
+    ことと、本物への導線が生きていることを守る。
+    """
     src = read("index.html")
-    assert "../region.html?view=neo" in src, "地図をはめ込んでいない"
-    # 新サイト側に地図の実装が漏れていない
+    assert "cm-slot" in src, "地図・図版の器が無い"
+    assert "../region.html" in src, "本物の地図への導線が無い"
     for w in ["orthographic", "globePath", "drawGlobe", "buildMap", "renderPlist"]:
         assert w not in src, f"地図の実装が TOP に漏れている: {w}"
 

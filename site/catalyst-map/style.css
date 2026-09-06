@@ -1,92 +1,567 @@
-/* Catalyst Detailed Map — TOP 専用。
-   地図の見た目は region.html 側（共用 style.css）が持つ。ここは触らない。 */
+/* ============================================================
+   Catalyst Detailed Map — TOP（ティザー）
+   地図の見た目は region.html 側（共用 style.css）が持つ。ここは触らない。
+
+   設計の芯:
+     記録 = 等幅。数字・ラベル・罫線。事実は測って置かれたもの。
+     問い = Light を巨大に。罫線なし、字間広め、行間ゆったり。測れないもの。
+     見出し = Bold。
+   一族の書体を「太さと組み方」だけで使い分ける（Apple の文法）。
+   意味は太さで分ける。色相で優劣を作らない（既存の作法）。
+   青は「生きているもの」——地図への導線と地図の器——にだけ使う。
+   ============================================================ */
 
 :root {
-  --cm-bg: #0b0f14;
-  --cm-fg: #e8eef5;
-  --cm-dim: #8fa3b8;
-  --cm-line: rgba(255, 255, 255, .12);
+  --ink:      #06080b;   /* 記録面 */
+  --ink-2:    #0b0f15;   /* 一段持ち上げた面 */
+  --paper:    #e8edf3;   /* 文字 */
+  --dim:      #77869a;   /* 従属する文字 */
+  --dimmer:   #4a5666;
+  --rule:     rgba(232, 237, 243, .13);
+  --rule-2:   rgba(232, 237, 243, .06);
+  --live:     #58b6ff;   /* 生きているものだけ */
+  --live-dim: rgba(88, 182, 255, .22);
+
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --sans: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+
+  --gut: clamp(20px, 5vw, 64px);
+  --max: 1180px;
+  --beat: clamp(11vh, 15vh, 20vh);   /* 節と節のあいだ */
 }
 
 * { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
 body {
   margin: 0;
-  background: var(--cm-bg);
-  color: var(--cm-fg);
-  font: 16px/1.9 system-ui, -apple-system, "Segoe UI", "Hiragino Kaku Gothic ProN", sans-serif;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--sans);
+  font-size: clamp(15px, 1.05vw, 17px);
+  line-height: 2.05;
+  font-feature-settings: "palt" 1;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
-.cm-wrap { max-width: 980px; margin: 0 auto; padding: 0 24px; }
 
-/* ① ヒーロー */
-.cm-hero { position: relative; min-height: 100vh; }
-.cm-hero-map {
-  position: absolute; inset: 0;
-  width: 100%; height: 100%;
-  border: 0;
+/* 記録面の質感。全面に薄い紙目と、上端からの淡い光。 */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(120% 70% at 50% -10%, rgba(88, 182, 255, .07), transparent 62%),
+    repeating-linear-gradient(0deg, rgba(255,255,255,.014) 0 1px, transparent 1px 3px);
 }
-.cm-hero-copy {
-  position: relative;
-  pointer-events: none;               /* 地図の操作を邪魔しない */
-  max-width: 720px;
-  margin: 0 auto;
-  padding: 12vh 24px 0;
-  text-shadow: 0 2px 24px rgba(0, 0, 0, .85);
+body > * { position: relative; z-index: 1; }
+
+::selection { background: var(--live-dim); }
+
+/* ── 常設の細い上枠。出口を切らさない ───────────────── */
+
+.cm-rail {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: .85rem var(--gut);
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--dim);
+  background: linear-gradient(to bottom, rgba(6,8,11,.94), rgba(6,8,11,.62) 70%, transparent);
+  backdrop-filter: blur(10px);
 }
-.cm-hero-copy a { pointer-events: auto; }
-.cm-hero-copy h1 {
-  font-size: clamp(1.9rem, 4.6vw, 3.4rem);
-  line-height: 1.35;
-  margin: 0 0 1.2em;
-  font-weight: 700;
-}
-.cm-lead { font-size: clamp(1.2rem, 2.6vw, 1.9rem); margin: 1.6em 0; }
-.cm-cta {
-  pointer-events: auto;
-  display: inline-block;
-  padding: .9em 2.2em;
-  border: 1px solid var(--cm-line);
-  border-radius: 999px;
-  color: var(--cm-fg);
+.cm-rail-name { color: var(--paper); }
+.cm-rail-name em { font-style: normal; color: var(--dim); }
+.cm-rail a {
+  color: var(--live);
   text-decoration: none;
-  backdrop-filter: blur(6px);
-  background: rgba(255, 255, 255, .06);
+  border-bottom: 1px solid var(--live-dim);
+  padding-bottom: 2px;
+  transition: border-color .25s;
 }
-.cm-cta:hover { background: rgba(255, 255, 255, .12); }
+.cm-rail a:hover { border-color: var(--live); }
 
-/* ② 計器 */
-.cm-figures { padding: 14vh 0; border-top: 1px solid var(--cm-line); }
-.cm-fig-row { display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center; }
-.cm-fig { text-align: center; }
-.cm-fig b { display: block; font-size: clamp(2rem, 6vw, 4rem); font-weight: 700; }
-.cm-fig span { color: var(--cm-dim); font-size: .95rem; }
+/* ── 版面 ──────────────────────────────────────── */
 
-/* ③④⑤ 見せ場 */
-.cm-show { padding: 18vh 0; border-top: 1px solid var(--cm-line); }
-.cm-show h2 { font-size: clamp(1.6rem, 4vw, 2.8rem); margin: 0 0 .8em; }
+.cm-wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 var(--gut);
+}
 
-/* ⑥⑧⑩⑪ 同じ形で4回反復する。ここがリズムになる */
-.cm-fact { padding: 20vh 0; border-top: 1px solid var(--cm-line); text-align: center; }
-.cm-big {
-  font-size: clamp(3rem, 12vw, 9rem);
+section {
+  padding: var(--beat) 0;
+  border-top: 1px solid var(--rule-2);
+}
+section:first-of-type { border-top: 0; }
+
+/* 節の通し番号。左の余白に置く。狭いときは本文の上に落ちる。 */
+.cm-ord {
+  display: block;
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .2em;
+  color: var(--dimmer);
+  margin-bottom: 2.4rem;
+}
+.cm-ord b { color: var(--dim); font-weight: 400; }
+@media (min-width: 1100px) {
+  .cm-wrap { position: relative; }
+  .cm-ord {
+    position: absolute;
+    left: calc(var(--gut) * -1 + 8px);
+    top: .55rem;
+    margin: 0;
+    writing-mode: vertical-rl;
+    letter-spacing: .3em;
+  }
+}
+
+/* ── 記録の書体 / 問いの書体 ─────────────────────── */
+
+.cm-fact h2,
+.cm-now h2,
+.cm-show h2 {
+  font-family: var(--sans);
   font-weight: 700;
-  line-height: 1.05;
-  margin: 0;
-  letter-spacing: -.02em;
+  font-size: clamp(1.15rem, 2.2vw, 1.7rem);
+  line-height: 1.7;
+  letter-spacing: .02em;
+  margin: 1.6rem 0 1rem;
 }
-.cm-op { color: var(--cm-dim); font-weight: 400; }
-.cm-big-sub { color: var(--cm-dim); margin: .6em 0 0; font-size: 1rem; }
-.cm-fact h2 { font-size: clamp(1.4rem, 3.4vw, 2.2rem); margin: 1.4em 0 .6em; }
 
-/* ⑦⑨ 問い。⑫ 現在地。形を変えて呼吸の切れ目にする */
-.cm-ask, .cm-now { padding: 20vh 0; border-top: 1px solid var(--cm-line); }
-.cm-ask h2, .cm-now h2 { font-size: clamp(1.5rem, 3.6vw, 2.4rem); margin: 0 0 1.2em; }
-.cm-note { color: var(--cm-dim); font-size: .95rem; }
-.cm-steps { list-style: none; padding: 0; }
-.cm-steps li { padding: 1.4em 0; border-top: 1px solid var(--cm-line); }
-.cm-steps b { display: block; color: var(--cm-dim); font-size: .9rem; }
-.cm-more { color: var(--cm-fg); }
+.cm-ask h2,
+.cm-limit h2,
+.cm-close h2,
+.cm-hero h1 {
+  font-family: var(--sans);
+  font-weight: 300;
+  letter-spacing: .015em;
+  line-height: 1.52;
+  margin: 0 0 1.9rem;
+}
+.cm-ask h2, .cm-limit h2, .cm-close h2 {
+  font-size: clamp(1.55rem, 3.6vw, 2.7rem);
+}
 
-/* ⑬⑭ 閉じる段 */
-.cm-limit, .cm-close { padding: 20vh 0; border-top: 1px solid var(--cm-line); }
-.cm-limit h2, .cm-close h2 { font-size: clamp(1.5rem, 3.6vw, 2.4rem); margin: 0 0 1.2em; }
-.cm-close { padding-bottom: 30vh; }   /* ここで終わる。他へ誘導しない */
+p { margin: 0 0 1.5rem; max-width: 46em; }
+.cm-ask p, .cm-limit p, .cm-close p { max-width: 40em; }
+
+.cm-note {
+  color: var(--dim);
+  font-size: .93rem;
+  line-height: 2;
+  border-left: 1px solid var(--rule);
+  padding-left: 1.4rem;
+  max-width: 38em;
+}
+
+/* ── ① ヒーロー ───────────────────────────────── */
+
+.cm-hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(8rem, 16vh, 11rem) 0 clamp(3rem, 8vh, 6rem);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* 画面外まで抜ける地球儀のワイヤーフレーム。器であり、装置でもある。 */
+.cm-globe {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  right: clamp(-46vmax, -18vw, -8vmax);
+  width: min(128vmin, 1500px);
+  aspect-ratio: 1;
+  transform: translateY(-50%);
+  pointer-events: none;
+  mask-image: radial-gradient(closest-side, #000 62%, transparent 100%);
+}
+.cm-globe svg { width: 100%; height: 100%; display: block; }
+.cm-globe .g-line { fill: none; stroke: var(--live); stroke-width: .55; opacity: .30; }
+.cm-globe .g-rim  { fill: none; stroke: var(--live); stroke-width: .9;  opacity: .50; }
+.cm-globe .g-par  { opacity: .17; }
+.cm-globe .g-mer {
+  transform-box: fill-box;
+  transform-origin: 50% 50%;
+  animation: cm-turn 26s linear infinite;
+}
+.cm-globe .g-mer:nth-of-type(2) { animation-delay: -3.25s; }
+.cm-globe .g-mer:nth-of-type(3) { animation-delay: -6.5s; }
+.cm-globe .g-mer:nth-of-type(4) { animation-delay: -9.75s; }
+.cm-globe .g-mer:nth-of-type(5) { animation-delay: -13s; }
+.cm-globe .g-mer:nth-of-type(6) { animation-delay: -16.25s; }
+.cm-globe .g-mer:nth-of-type(7) { animation-delay: -19.5s; }
+.cm-globe .g-mer:nth-of-type(8) { animation-delay: -22.75s; }
+
+@keyframes cm-turn {
+  0%   { transform: scaleX(1); }
+  25%  { transform: scaleX(.02); }
+  50%  { transform: scaleX(-1); }
+  75%  { transform: scaleX(-.02); }
+  100% { transform: scaleX(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cm-globe .g-mer { animation: none; }
+}
+
+.cm-hero h1 {
+  font-size: clamp(2.15rem, 6.6vw, 5.4rem);
+  letter-spacing: -.005em;
+  line-height: 1.34;
+  max-width: 15em;
+  text-wrap: balance;
+}
+.cm-hero h1 .cm-h1-b { display: block; }
+.cm-hero h1 .cm-h1-b:last-child { padding-left: clamp(0px, 6vw, 5rem); }
+
+.cm-kicker {
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin: 0 0 clamp(2rem, 5vh, 3.4rem);
+}
+.cm-kicker::before {
+  content: "";
+  display: inline-block;
+  width: clamp(28px, 6vw, 88px);
+  height: 1px;
+  background: var(--rule);
+  vertical-align: 5px;
+  margin-right: 1.2em;
+}
+
+.cm-hero-grid {
+  display: grid;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: end;
+  margin-top: clamp(3rem, 8vh, 5.5rem);
+}
+@media (min-width: 900px) {
+  .cm-hero-grid { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); }
+}
+
+.cm-scroll {
+  font-family: var(--mono);
+  font-size: .66rem;
+  letter-spacing: .24em;
+  text-transform: uppercase;
+  color: var(--dimmer);
+  margin: clamp(2.5rem, 7vh, 4.5rem) 0 0;
+}
+.cm-scroll span {
+  display: inline-block;
+  margin-left: .9em;
+  animation: cm-drop 2.6s ease-in-out infinite;
+}
+@keyframes cm-drop {
+  0%, 100% { transform: translateY(0); opacity: .5; }
+  50%      { transform: translateY(5px); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) { .cm-scroll span { animation: none; } }
+
+.cm-record {
+  font-family: var(--mono);
+  font-size: .95rem;
+  line-height: 2.2;
+  color: var(--dim);
+  margin: 0 0 2.2rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 1.4rem;
+}
+.cm-record b { color: var(--paper); font-weight: 500; }
+
+.cm-lead {
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: clamp(1.3rem, 3vw, 2.05rem);
+  line-height: 1.6;
+  letter-spacing: .015em;
+  margin: 0 0 2.4rem;
+}
+
+.cm-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: .9em;
+  font-family: var(--mono);
+  font-size: .82rem;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--live);
+  text-decoration: none;
+  padding: 1.05em 2.1em;
+  border: 1px solid var(--live-dim);
+  border-radius: 2px;
+  background: rgba(88, 182, 255, .05);
+  transition: background .3s, border-color .3s, letter-spacing .3s;
+}
+.cm-cta::after { content: "↗"; opacity: .7; }
+.cm-cta:hover {
+  background: rgba(88, 182, 255, .12);
+  border-color: var(--live);
+  letter-spacing: .22em;
+}
+
+/* ── 器（地図・図版がのちに入る場所） ───────────────── */
+
+.cm-slot {
+  position: relative;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  background:
+    linear-gradient(180deg, rgba(88,182,255,.05), transparent 55%),
+    var(--ink-2);
+  overflow: hidden;
+}
+.cm-slot::after {          /* 四隅のトンボ */
+  content: "";
+  position: absolute;
+  inset: 10px;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--rule), var(--rule)) 0 0 / 14px 1px no-repeat,
+    linear-gradient(var(--rule), var(--rule)) 0 0 / 1px 14px no-repeat,
+    linear-gradient(var(--rule), var(--rule)) 100% 0 / 14px 1px no-repeat,
+    linear-gradient(var(--rule), var(--rule)) 100% 0 / 1px 14px no-repeat,
+    linear-gradient(var(--rule), var(--rule)) 0 100% / 14px 1px no-repeat,
+    linear-gradient(var(--rule), var(--rule)) 0 100% / 1px 14px no-repeat,
+    linear-gradient(var(--rule), var(--rule)) 100% 100% / 14px 1px no-repeat,
+    linear-gradient(var(--rule), var(--rule)) 100% 100% / 1px 14px no-repeat;
+}
+.cm-slot-hero { aspect-ratio: 4 / 3; }
+.cm-slot-shot { aspect-ratio: 16 / 10; margin-top: 2.6rem; }
+
+.cm-slot svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.cm-slot-grid { stroke: var(--live); fill: none; opacity: .17; }
+.cm-slot-hero .cm-slot-grid { opacity: .26; }
+
+.cm-slot-tag {
+  position: absolute;
+  left: 1.6rem;
+  bottom: 1.4rem;
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  color: var(--dimmer);
+}
+.cm-slot-tag b { color: var(--dim); font-weight: 400; }
+
+/* ── ② 計器 ──────────────────────────────────── */
+
+.cm-fig-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--rule);
+}
+@media (min-width: 760px) { .cm-fig-row { grid-template-columns: repeat(4, 1fr); } }
+
+.cm-fig {
+  padding: 2.4rem 1.4rem 2.2rem 0;
+  border-bottom: 1px solid var(--rule-2);
+}
+@media (min-width: 760px) { .cm-fig { border-bottom: 0; } }
+
+.cm-fig b {
+  display: block;
+  font-family: var(--mono);
+  font-weight: 400;
+  font-size: clamp(1.9rem, 4.6vw, 3.1rem);
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  font-variant-numeric: tabular-nums;
+}
+.cm-fig span {
+  display: block;
+  margin-top: .9rem;
+  font-family: var(--mono);
+  font-size: .7rem;
+  letter-spacing: .2em;
+  color: var(--dim);
+}
+
+/* ── ③④⑤ 見せ場 ─────────────────────────────── */
+
+.cm-show .cm-wrap { display: grid; gap: clamp(1.5rem, 4vw, 3.5rem); }
+@media (min-width: 980px) {
+  .cm-show .cm-wrap { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); align-items: start; }
+  .cm-show .cm-slot-shot { margin-top: 0; }
+  .cm-show-flip > :first-child { order: 2; }
+}
+
+/* ── ⑥⑧⑩⑪ 記録（同じ形で4回反復する。これがリズム） ── */
+
+.cm-big {
+  font-family: var(--mono);
+  font-weight: 300;
+  font-size: clamp(2.6rem, 9.5vw, 7rem);
+  line-height: 1;
+  letter-spacing: -.045em;
+  font-variant-numeric: tabular-nums;
+  margin: 0;
+}
+.cm-op { color: var(--dimmer); font-weight: 200; padding: 0 .12em; }
+.cm-big-sub {
+  font-family: var(--mono);
+  font-size: .78rem;
+  letter-spacing: .18em;
+  color: var(--dim);
+  margin: 1.4rem 0 0;
+}
+
+.cm-more {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: .76rem;
+  letter-spacing: .16em;
+  color: var(--live);
+  text-decoration: none;
+  border-bottom: 1px solid var(--live-dim);
+  padding-bottom: 3px;
+  transition: border-color .25s;
+}
+.cm-more:hover { border-color: var(--live); }
+
+/* ── ⑩ Fund の歩みの帯 ───────────────────────── */
+
+.cm-band {
+  margin: 3.4rem 0 1rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  scrollbar-width: thin;
+}
+.cm-band-row {
+  display: flex;
+  align-items: flex-end;
+  gap: clamp(6px, 1.1vw, 16px);
+  min-width: 640px;
+  height: 190px;
+  border-bottom: 1px solid var(--rule);
+}
+.cm-bar {
+  flex: 1 1 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+}
+.cm-bar-stack {
+  position: relative;
+  width: 100%;
+  background: var(--rule);          /* 応募 */
+  border-top: 1px solid var(--rule);
+}
+.cm-bar-in {                        /* 採択 */
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  background: var(--paper);
+  opacity: .82;
+}
+.cm-bar-none .cm-bar-stack { background: transparent; border-top: 1px dashed var(--rule); }
+
+.cm-band-axis {
+  display: flex;
+  gap: clamp(6px, 1.1vw, 16px);
+  min-width: 640px;
+  margin-top: .8rem;
+}
+.cm-band-axis span {
+  flex: 1 1 0;
+  font-family: var(--mono);
+  font-size: .62rem;
+  letter-spacing: .04em;
+  color: var(--dimmer);
+  text-align: center;
+}
+.cm-band-axis span.on { color: var(--dim); }
+
+.cm-band-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .12em;
+  color: var(--dim);
+  margin: 0;
+}
+.cm-key-swatch {
+  display: inline-block;
+  width: 22px; height: 8px;
+  margin-right: .7em;
+  vertical-align: 1px;
+}
+.cm-key-sub { background: var(--rule); }
+.cm-key-won { background: var(--paper); opacity: .82; }
+
+/* ── ⑫ 現在地 ───────────────────────────────── */
+
+.cm-steps { list-style: none; padding: 0; margin: 2.4rem 0; max-width: 44em; }
+.cm-steps li {
+  padding: 1.9rem 0;
+  border-top: 1px solid var(--rule-2);
+  line-height: 2;
+}
+.cm-steps li:last-child { border-bottom: 1px solid var(--rule-2); }
+.cm-steps b {
+  display: block;
+  font-family: var(--mono);
+  font-weight: 400;
+  font-size: .74rem;
+  letter-spacing: .18em;
+  color: var(--dim);
+  margin-bottom: .7rem;
+}
+.cm-steps a {
+  font-family: var(--mono);
+  font-size: .72rem;
+  letter-spacing: .12em;
+  color: var(--live);
+  text-decoration: none;
+  border-bottom: 1px solid var(--live-dim);
+  white-space: nowrap;
+}
+.cm-steps a:hover { border-color: var(--live); }
+
+/* ── ⑭ 閉じ ─────────────────────────────────── */
+
+.cm-close { padding-bottom: clamp(16vh, 24vh, 30vh); }
+.cm-close .cm-lead { margin-top: 3rem; }
+
+.cm-foot {
+  border-top: 1px solid var(--rule-2);
+  padding: 2.6rem 0 4rem;
+  font-family: var(--mono);
+  font-size: .68rem;
+  letter-spacing: .12em;
+  color: var(--dimmer);
+}
+.cm-foot a { color: var(--dim); text-decoration: none; border-bottom: 1px solid var(--rule); }
+.cm-foot p { max-width: none; margin: 0 0 .8rem; }
+
+/* ── 立ち上がり ─────────────────────────────── */
+
+.cm-in { opacity: 0; transform: translateY(18px); }
+.cm-in.cm-on { opacity: 1; transform: none; transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1); }
+@media (prefers-reduced-motion: reduce) {
+  .cm-in { opacity: 1; transform: none; }
+}
