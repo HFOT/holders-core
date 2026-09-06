@@ -2678,8 +2678,8 @@ td.rg-marks .badge { margin: 2px 6px 2px 0; }
 
 @media (max-width: 720px) {
   /* 全画面の地図。上が地図、下が一覧。地図は小さめにして一覧を読ませる。 */
-  .rg-frame.rg-full { grid-template-rows: 40% minmax(0, 1fr); }
-  .rg-frame { grid-template-rows: 42% minmax(0, 1fr); height: 76vh; }
+  .rg-frame.rg-full { grid-template-rows: 34% minmax(0, 1fr); }
+  .rg-frame { grid-template-rows: 38% minmax(0, 1fr); height: 78vh; }
 
   /* 計器の切り替え。4つを横一列に収める。 */
   .rg-metric { top: 8px; left: 8px; right: 8px; }
@@ -2697,7 +2697,16 @@ td.rg-marks .badge { margin: 2px 6px 2px 0; }
     justify-content: flex-end;
     max-width: 62%;
   }
-  .rg-zoom button { min-width: 40px; min-height: 36px; font-size: 11px; padding: 0 8px; }
+  .rg-zoom button {
+    min-width: 40px;
+    min-height: 36px;
+    font-size: 11px;
+    padding: 0 8px;
+    background: rgba(6, 10, 18, .82);
+    backdrop-filter: blur(8px);
+    border-color: rgba(126, 178, 255, .30);
+    color: #dceaff;
+  }
 
   /* 大陸タブは折り返さず、横一列で指で送る。 */
   .rg-jump {
@@ -2750,4 +2759,68 @@ td.rg-marks .badge { margin: 2px 6px 2px 0; }
     border-color: rgba(126,178,255,.62);
     background: rgba(61,123,255,.18);
   }
+}
+
+/* ---------- 断りと選択肢 ---------- */
+/* 断りは畳めるようにし、選択肢を先に置く。広い画面では開いたまま出す。 */
+
+.rg-why > summary {
+  cursor: pointer;
+  list-style: none;
+  color: var(--sd-fg);
+}
+.rg-why > summary::-webkit-details-marker { display: none; }
+.rg-why[open] > summary { margin-bottom: 6px; }
+.rg-why:not([open]) > summary::after {
+  content: "　なぜか ▾";
+  color: var(--sd-fg3);
+  font-weight: 400;
+  font-size: .92em;
+}
+.rg-why-b { color: var(--sd-fg2); }
+
+@media (max-width: 720px) {
+  /* 地図の下は「選ぶ場所」にする。説明は小さく、畳んで、後ろに置く。 */
+  .rg-caution { display: flex; flex-direction: column; gap: 10px; padding: 12px 10px; }
+  .rg-caution .rg-solo-sw { order: -1; display: flex; gap: 8px; }
+  .rg-caution .rg-solo-b { flex: 1 1 0; min-height: 40px; font-size: 12.5px; }
+  .rg-why { font-size: 11.5px; line-height: 1.7; }
+
+  /* 通貨の断りと要約。読めるが、場所は取らせない。 */
+  .rg-cur-note { font-size: 10.5px; line-height: 1.6; }
+  .rg-summary { font-size: 10.5px; line-height: 1.65; gap: 2px; }
+  .rg-summary span { display: block; }
+
+  /* 見出しまわりも詰める */
+  .rg-place-n { font-size: 17px; }
+  .rg-place-c { font-size: 11px; }
+}
+
+/* ---------- 内訳の畳み ---------- */
+
+.rg-sum > summary { display: none; }          /* 広い画面では畳む口を出さない */
+.rg-sum[open] > .rg-summary { display: flex; }
+
+@media (max-width: 720px) {
+  .rg-sum > summary {
+    display: block;
+    cursor: pointer;
+    list-style: none;
+    padding: 6px 0;
+    color: var(--sd-fg3);
+    font-size: 10.5px;
+    letter-spacing: .06em;
+  }
+  .rg-sum > summary::-webkit-details-marker { display: none; }
+  .rg-sum > summary::after { content: " ▾"; }
+  .rg-sum[open] > summary::after { content: " ▴"; }
+
+  /* 並ぶものは横に戻す。縦に積むと二段ぶん場所を食う。 */
+  .rg-controls { flex-direction: row; gap: 8px; }
+  .rg-controls select { height: 38px; font-size: 12px; }
+
+  /* 見出し部の余白を詰めて、一覧に高さを返す。 */
+  .rg-shead { padding: 10px 10px 8px; gap: 8px; }
+  .rg-cur { gap: 6px; }
+  .rg-cur-note { font-size: 10px; }
 }
