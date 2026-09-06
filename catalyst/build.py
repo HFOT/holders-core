@@ -783,6 +783,14 @@ def main(argv: list[str]) -> int:
         print(json.dumps(out["milestones"], ensure_ascii=False, indent=2))
     elif cmd == "harvest-projects":
         harvest_projects()
+    elif cmd == "fix-ja":
+        from catalyst import ja_fix
+
+        rep = ja_fix.apply()
+        print(json.dumps(
+            {"総数": rep["総数"], "手直し": len(rep["手直し"]),
+             "機械": len(rep["機械"]), "捨てた": len(rep["捨てた"])},
+            ensure_ascii=False, indent=2))
     elif cmd == "build-projects":
         out = build_projects()
         print(json.dumps({"counts": out["counts"], "failures": out["failures"]}, ensure_ascii=False, indent=2))

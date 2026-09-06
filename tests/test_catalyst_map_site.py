@@ -67,7 +67,7 @@ def test_top_does_not_load_the_shared_stylesheet_map_rules():
 # 母体の破壊ではないので、ここでは追わない。
 EXPECTED = {
     "region.html": "9c78fe62cf9697a7",
-    "region.js": "773a1084007583fe",
+    "region.js": "9ec4e6c17c1c5038",
     "ask.js": "32c37ce21d585fb3",
 }
 

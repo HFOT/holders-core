@@ -196,11 +196,13 @@ const state = {
   dragged: false,
 };
 
-const projectTitle = (r) =>
-  state.lang === "ja" && state.projectJa[r.url] ? state.projectJa[r.url] : r.n;
+// 主題は必ず原文にする。訳は機械が付けたもので、意味が反転することがある
+// （Vitality を「死亡率」と訳すなど）。誤訳が記録に見えてはいけないので、
+// 太字の主題は原文、訳はその下に「機械訳」と断って小さく添える。
+const projectTitle = (r) => r.n;
 const projectOriginal = (r) =>
   state.lang === "ja" && state.projectJa[r.url] && state.projectJa[r.url] !== r.n
-    ? `<span class="rg-original" lang="en">${esc(r.n)}</span>`
+    ? `<span class="rg-original" lang="ja">${esc(state.projectJa[r.url])}</span>`
     : "";
 
 // --- 名前の対応 -------------------------------------------------------------
