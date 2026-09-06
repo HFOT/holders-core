@@ -1067,13 +1067,16 @@ table.matrix.wrapcells td:last-child { min-width: 16em; }
    海は深い夜、大地は光をわずかに受けた面、記録は単一の青が濃くなるほど増える。
    選択と操作はティール一色。アクセントで優劣は作らない。 */
 :root {
-  --land:     rgba(122, 165, 225, .12);
-  --land-ln:  rgba(138, 190, 255, .30);
-  --m1: #16294a;
-  --m2: #1f4a9e;
+  /* 記録の無い大地。沈めて、記録のある国が浮くようにする。 */
+  --land:     rgba(96, 122, 168, .10);
+  --land-ln:  rgba(126, 168, 224, .22);
+  /* 量のランプ。深い藍から青へ、そして淡い水色へ。
+     明るさが一方向に増えるので順序が読める。色相は一本道で、優劣は作らない。 */
+  --m1: #1c2450;
+  --m2: #26409a;
   --m3: #2f6fe0;
-  --m4: #5a95ff;
-  --m5: #a9d6ff;
+  --m4: #59a0ff;
+  --m5: #b9e2ff;
   --pick:     #21d4c2;
   --pin:      #21d4c2;
   --st-done:  #3ecf79;
@@ -2561,3 +2564,37 @@ td.rg-marks .badge { margin: 2px 6px 2px 0; }
 @media (prefers-reduced-motion: reduce) {
   .rg-cb circle, .rg-kb circle { animation: none; stroke-dasharray: none; opacity: .95; }
 }
+
+/* ---------- 地図の空気 ---------- */
+/* 海を一色で終わらせない。赤道あたりに淡い光、外周に紫の残りを置く。
+   国境は髪の毛ほどの線で、光を拾う。 */
+
+.rg-mappane {
+  background:
+    radial-gradient(140% 100% at 50% 120%, rgba(139,108,255,.10), transparent 58%),
+    radial-gradient(120% 150% at 30% 12%, #0e1728 0%, #090e1a 55%, #05070d 100%);
+}
+.rg-mappane::before {
+  background:
+    radial-gradient(52% 40% at 50% 50%, rgba(61,123,255,.16), transparent 74%),
+    radial-gradient(90% 60% at 50% 100%, rgba(139,108,255,.09), transparent 70%),
+    repeating-linear-gradient(0deg,  rgba(126,178,255,.05) 0 1px, transparent 1px 54px),
+    repeating-linear-gradient(90deg, rgba(126,178,255,.05) 0 1px, transparent 1px 54px);
+  mask-image: radial-gradient(108% 108% at 50% 50%, #000 52%, transparent 100%);
+}
+
+/* 記録の無い国は線だけ残して沈める */
+.rg-nodata { stroke: rgba(126, 168, 224, .17); }
+
+/* 記録のある国は縁が光を拾う */
+.rg-sh:not(.rg-nodata) { stroke: rgba(175, 214, 255, .38); }
+.rg-sh[data-bin="5"] { stroke: rgba(226, 243, 255, .68); }
+
+/* 上位の発光をランプに合わせ直す */
+.rg-sh[data-bin="3"] { filter: drop-shadow(0 0 4px rgba(47,111,224,.5)); }
+.rg-sh[data-bin="4"] { filter: drop-shadow(0 0 8px rgba(89,160,255,.62)); }
+.rg-sh[data-bin="5"] { filter: drop-shadow(0 0 14px rgba(185,226,255,.78)); }
+
+/* 凡例も同じ光り方に */
+.rg-sw[data-bin="4"] { box-shadow: 0 0 8px rgba(89,160,255,.55); }
+.rg-sw[data-bin="5"] { box-shadow: 0 0 13px rgba(185,226,255,.7); }
