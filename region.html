@@ -6,7 +6,7 @@
 <title>地域 — holders CORE / LEDGER 地域の層</title>
 <meta name="description" content="Catalyst の採択プロジェクトを世界地図から国ごとに辿る。金額順・完了順に並べ替え、提案者名と一次情報まで降りられる。">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css?v=tl-2">
+  <link rel="stylesheet" href="style.css?v=tl-3">
 </head>
 <body>
 
@@ -86,7 +86,10 @@
             <button type="button" class="rg-curb" data-cur="USD">USD</button>
             <span class="rg-cur-note">F9 以前は USD、F10 以降は ADA。換算はしない。通貨ごとに読む。</span>
           </div>
-          <div class="rg-summary" id="summary"></div>
+          <details class="rg-sum" id="sumwrap">
+            <summary>内訳</summary>
+            <div class="rg-summary" id="summary"></div>
+          </details>
         </div>
         <ul class="rg-plist" id="plist"></ul>
         <p class="rg-pempty" id="pempty" hidden>該当なし。条件に合う記録が無い。</p>
@@ -255,6 +258,6 @@
 </footer>
 
   <script src="ask.js?v=ask-2"></script>
-  <script src="region.js?v=tl-2"></script>
+  <script src="region.js?v=tl-3"></script>
 </body>
 </html>

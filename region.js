@@ -444,6 +444,9 @@ function renderSummary(idx) {
         `（${esc(pct(m.dist, m.req))}%）・未配分 ${esc(num(req - m.dist))}</span>`;
     })
     .join("");
+  /* 狭い画面では内訳が選択肢を押し下げるので畳む。広い画面では開いたまま。 */
+  const sw = $("sumwrap");
+  if (sw) sw.open = !(window.matchMedia && window.matchMedia("(max-width: 720px)").matches);
   $("summary").innerHTML =
     `<span>${esc([stText, rest].filter(Boolean).join("・"))}</span>` +
     money_lines +
@@ -531,16 +534,23 @@ function renderPlist() {
     const groups = personGroups(idx);
     $("place-count").textContent = `${num(groups.length)} 人・${num(idx.length)} 件`;
     // 二重計上は読み違えの元なので、要約に埋めずランキングの直前に置く。
+    /* 断りと選択肢を同じ塊に置くと、狭い画面では説明が選択肢を押し下げてしまう。
+       断りの一行目だけ残し、理由はたたむ。広い画面では開いたまま出す。 */
+    const wide = !(window.matchMedia && window.matchMedia("(max-width: 720px)").matches);
     const caution =
       `<li class="rg-caution">` +
-      `<strong>この順位は足し合わせられない。</strong>` +
-      `共同提案は関わった各人にプロジェクトの全額を計上している。` +
-      `${num(groups.length)} 人の額を合計すると、${num(idx.length)} 件の総額を超える。` +
-      `人物は名前の完全一致でまとめている。同姓同名は分けられない。` +
       `<span class="rg-solo-sw">` +
       `<button type="button" class="rg-solo-b${state.soloOnly ? "" : " on"}" data-solo="0">関わったすべて</button>` +
       `<button type="button" class="rg-solo-b${state.soloOnly ? " on" : ""}" data-solo="1">単独提案だけ</button>` +
-      `</span></li>`;
+      `</span>` +
+      `<details class="rg-why"${wide ? " open" : ""}>` +
+      `<summary><strong>この順位は足し合わせられない。</strong></summary>` +
+      `<span class="rg-why-b">` +
+      `共同提案は関わった各人にプロジェクトの全額を計上している。` +
+      `${num(groups.length)} 人の額を合計すると、${num(idx.length)} 件の総額を超える。` +
+      `人物は名前の完全一致でまとめている。同姓同名は分けられない。` +
+      `</span></details>` +
+      `</li>`;
     $("plist").innerHTML = caution + groups
       .slice(0, state.shown)
       .map(
