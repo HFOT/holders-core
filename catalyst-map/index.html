@@ -8,16 +8,24 @@
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap">
-<link rel="stylesheet" href="style.css?v=cm-5">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap">
+<link rel="stylesheet" href="style.css?v=cm-6">
 </head>
 <body>
 
 <!-- 常設の上枠。出口を切らさない ───────────────────── -->
-<div class="cm-rail">
-  <span class="cm-rail-name">Catalyst Detailed Map <em>／ holders CORE</em></span>
-  <a href="../region.html">地図をひらく</a>
-</div>
+<nav class="cm-nav">
+  <div class="cm-nav-id">
+    <b>Catalyst Detailed Map</b>
+    <span>Cardano / public data only</span>
+  </div>
+  <div class="cm-nav-links">
+    <a class="cm-nav-hide" href="#sec-06">記録</a>
+    <a class="cm-nav-hide" href="#sec-10">歴史</a>
+    <a class="cm-nav-hide" href="#sec-12">現在地</a>
+    <a class="cm-pill" href="../region.html">地図をひらく →</a>
+  </div>
+</nav>
 
 <!-- ① ヒーロー ─────────────────────────────────── -->
 <section class="cm-hero">
@@ -43,52 +51,50 @@
   </div>
 
   <div class="cm-wrap">
-    <p class="cm-kicker">6 years / 14 funds / 2,221 funded</p>
+    <p class="cm-kicker">Cardano / 6 years / 14 funds / public data only</p>
 
-    <h1>
-      <span class="cm-h1-b">あなたが投票した提案は、</span>
-      <span class="cm-h1-b">いま どうなっているか。</span>
-    </h1>
+    <h1>Catalyst<br>Detailed <i>Map</i></h1>
 
-    <div class="cm-hero-grid">
-      <div>
-        <p class="cm-record">
-          6年で <b>2,221 件</b>が採択された。<br>
-          完了 <b>1,722 件</b>。中止 <b>269 件</b>。報告は <b>1,716 件</b>ぶん出ている。
-        </p>
-        <p class="cm-lead">それを見渡せる場所は、まだ無い。</p>
-        <p><a class="cm-cta" href="../region.html">地図をひらく</a></p>
-      </div>
+    <p class="cm-sub">あなたが投票した提案は、いま どうなっているか。</p>
 
-      <div class="cm-slot cm-slot-hero">
-        <svg viewBox="0 0 200 150" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <g class="cm-slot-grid" stroke-width=".5">
-            <path d="M0 25H200M0 50H200M0 75H200M0 100H200M0 125H200"/>
-            <path d="M25 0V150M50 0V150M75 0V150M100 0V150M125 0V150M150 0V150M175 0V150"/>
-            <circle cx="100" cy="75" r="52" stroke-width=".9"/>
-            <ellipse cx="100" cy="75" rx="52" ry="18"/>
-            <ellipse cx="100" cy="75" rx="52" ry="40"/>
-            <ellipse cx="100" cy="75" rx="18" ry="52"/>
-            <ellipse cx="100" cy="75" rx="40" ry="52"/>
-          </g>
-        </svg>
-        <span class="cm-slot-tag"><b>MAP</b> ／ 地図はここに入る</span>
-      </div>
-    </div>
+    <p class="cm-record">
+      6年で <b>2,221 件</b>が採択された。<br>
+      完了 <b>1,722 件</b>。中止 <b>269 件</b>。報告は <b>1,716 件</b>ぶん出ている。
+    </p>
+
+    <p class="cm-lead">それを見渡せる場所は、まだ無い。</p>
+
+    <p><a class="cm-pill cm-pill-on" href="../region.html">地図をひらく →</a></p>
 
     <p class="cm-scroll">記録を読む <span>↓</span></p>
+
+    <div class="cm-meters">
+      <span class="cm-meters-tag">Measured</span>
+      <div class="cm-meter"><b data-count="11385">11,385</b><span>提案</span></div>
+      <div class="cm-meter"><b data-count="2221">2,221</b><span>採択</span></div>
+      <div class="cm-meter"><b data-count="1722">1,722</b><span>完了</span></div>
+      <div class="cm-meter"><b data-count="269">269</b><span>中止</span></div>
+    </div>
   </div>
 </section>
 
-<!-- ② 計器 ────────────────────────────────────── -->
-<section class="cm-figures cm-in">
+<!-- ② 地図の器 ───────────────────────────────── -->
+<section class="cm-stage cm-in">
   <div class="cm-wrap">
-    <span class="cm-ord">02 <b>／ 計器</b></span>
-    <div class="cm-fig-row">
-      <div class="cm-fig"><b data-count="11385">11,385</b><span>提案</span></div>
-      <div class="cm-fig"><b data-count="2221">2,221</b><span>採択</span></div>
-      <div class="cm-fig"><b data-count="1722">1,722</b><span>完了</span></div>
-      <div class="cm-fig"><b data-count="269">269</b><span>中止</span></div>
+    <span class="cm-ord">02 <b>／ 地図</b></span>
+    <div class="cm-slot cm-slot-hero">
+      <svg viewBox="0 0 200 112" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g class="cm-slot-grid" stroke-width=".45">
+          <path d="M0 14H200M0 28H200M0 42H200M0 56H200M0 70H200M0 84H200M0 98H200"/>
+          <path d="M20 0V112M40 0V112M60 0V112M80 0V112M100 0V112M120 0V112M140 0V112M160 0V112M180 0V112"/>
+          <circle cx="100" cy="56" r="40" stroke-width=".9"/>
+          <ellipse cx="100" cy="56" rx="40" ry="13"/>
+          <ellipse cx="100" cy="56" rx="40" ry="28"/>
+          <ellipse cx="100" cy="56" rx="13" ry="40"/>
+          <ellipse cx="100" cy="56" rx="28" ry="40"/>
+        </g>
+      </svg>
+      <span class="cm-slot-tag"><b>Map</b> ／ 地図はここに入る</span>
     </div>
   </div>
 </section>
@@ -111,7 +117,7 @@
           <ellipse cx="100" cy="62" rx="14" ry="40"/>
         </g>
       </svg>
-      <span class="cm-slot-tag"><b>図</b> ／ 国を選んだ状態</span>
+      <span class="cm-slot-tag"><b>Shot</b> ／ 国を選んだ状態</span>
     </div>
   </div>
 </section>
@@ -132,7 +138,7 @@
           <path d="M132 26H176M132 44H168M132 62H172M132 80H150M132 98H162" stroke-width="1.6"/>
         </g>
       </svg>
-      <span class="cm-slot-tag"><b>図</b> ／ 人物ランキング</span>
+      <span class="cm-slot-tag"><b>Shot</b> ／ 人物ランキング</span>
     </div>
   </div>
 </section>
@@ -144,7 +150,7 @@
       <h2>一件まで降りる</h2>
       <p>完了報告の動画 587 件。報告書 1,761 件。<br>
          約束と報告を左右に並べる。判断はしない。</p>
-      <p><a class="cm-cta" href="../region.html">地図をひらく</a></p>
+      <p><a class="cm-pill cm-pill-on" href="../region.html">地図をひらく →</a></p>
     </div>
     <div class="cm-slot cm-slot-shot">
       <svg viewBox="0 0 200 125" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -156,19 +162,21 @@
           <rect x="112" y="92" width="70" height="19"/>
         </g>
       </svg>
-      <span class="cm-slot-tag"><b>図</b> ／ 約束と報告の対比</span>
+      <span class="cm-slot-tag"><b>Shot</b> ／ 約束と報告の対比</span>
     </div>
   </div>
 </section>
 
 <!-- ⑥ 完了報告は、存在する ─────────────────────── -->
-<section class="cm-fact cm-in">
+<section class="cm-fact cm-in" id="sec-06">
   <div class="cm-wrap">
     <span class="cm-ord">06 <b>／ 記録</b></span>
+    <div class="cm-card">
     <p class="cm-big">1,716 / 1,722</p>
     <h2>完了報告は、存在する</h2>
     <p>98% に証拠リンク。GitHub だけで 23,890 本。<br>
        誰も並べていなかっただけ。</p>
+    </div>
   </div>
 </section>
 
@@ -191,12 +199,14 @@
 <section class="cm-fact cm-in">
   <div class="cm-wrap">
     <span class="cm-ord">08 <b>／ 記録</b></span>
+    <div class="cm-card">
     <p class="cm-big">3.67 <span class="cm-op">=</span> 3.67</p>
     <p class="cm-big-sub">中止 72 件　　完了 732 件</p>
     <h2>事前の評価は、その後を何も言い当てていない</h2>
     <p>6,908 件の 71% が 3.30〜4.00 に収まる（標準偏差 0.46）。<br>
        評価の労力は全部、金が動く前に置かれている。</p>
     <p><a class="cm-more" href="../region.html#sec-scores">事前の評価を見る →</a></p>
+    </div>
   </div>
 </section>
 
@@ -214,9 +224,10 @@
 </section>
 
 <!-- ⑩ 歴史 ────────────────────────────────────── -->
-<section class="cm-fact cm-in">
+<section class="cm-fact cm-in" id="sec-10">
   <div class="cm-wrap">
     <span class="cm-ord">10 <b>／ 歴史</b></span>
+    <div class="cm-card">
     <p class="cm-big">32.6% <span class="cm-op">→</span> 10.2%</p>
     <p class="cm-big-sub">F11 から F14 へ</p>
     <h2>採択率は、上下しながら下がっている</h2>
@@ -271,6 +282,7 @@
        F11 で 32.6% に戻り、また落ちた。<br>
        応募のピークは F13 の 1,639 件。F14 は 1,283 件で減っている。</p>
     <p><a class="cm-more" href="../region.html#sec-timeline">Fund の歩みを見る →</a></p>
+    </div>
   </div>
 </section>
 
@@ -278,19 +290,22 @@
 <section class="cm-fact cm-in">
   <div class="cm-wrap">
     <span class="cm-ord">11 <b>／ 記録</b></span>
+    <div class="cm-card">
     <p class="cm-big">−$674万</p>
     <h2>相場で動いた額</h2>
     <p>F10・F11 は +28〜30%、F13・F14 は −29〜31%。<br>
        全体の −6% は逆向きの動きが打ち消し合った結果で、
        Fund 別に見ないと構造が消える。</p>
     <p><a class="cm-more" href="../region.html#sec-value">価値の差を見る →</a></p>
+    </div>
   </div>
 </section>
 
 <!-- ⑫ 現在地 2026 ─────────────────────────────── -->
-<section class="cm-now cm-in">
+<section class="cm-now cm-in" id="sec-12">
   <div class="cm-wrap">
     <span class="cm-ord">12 <b>／ 現在地</b></span>
+    <div class="cm-card">
     <h2>現在地 —— 2026</h2>
     <ol class="cm-steps">
       <li><b>2026-02-24</b> 運営が IOG から Cardano Foundation へ移った。
@@ -305,6 +320,7 @@
     </ol>
     <p class="cm-note">F13 は ADA 4,650万 と USD 4,878万の二本立てなので、
        ADA 枠だけの比較であることを断っておく。</p>
+    </div>
   </div>
 </section>
 
